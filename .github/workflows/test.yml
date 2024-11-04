@@ -1,0 +1,28 @@
+name: 检查
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'latest'
+
+concurrency:
+  group: '检查'
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取本仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 mdBook
+        uses: peaceiris/actions-mdbook@v2
+        with:
+          mdbook-version: '0.4.37'
+          # mdbook-version: 'latest'
+
+      - name: 检查
+        run: |
+          mdbook clean && mdbook test
