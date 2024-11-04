@@ -15,7 +15,7 @@ jobs:
     name: 从引擎仓库生成并同步最新的类相关文档
     runs-on: ubuntu-latest
     env:
-      engine_rev: 'latest'
+      engine_rev: 'main'
 
     steps:
       - name: 访问本仓库
