@@ -17,12 +17,6 @@ jobs:
       - name: 拉取本仓库
         uses: actions/checkout@v4
 
-      - name: 取分支列表
-        id: get_branches
-        run: |
-          git fetch --prune
-          echo "BRANCHES=$(git branch -r | grep -v '\->' | sed 's|origin/||' | grep -v -E 'class' | tr '\n' ' ')"
-
       - name: 安装 mdBook
         uses: peaceiris/actions-mdbook@v2
         with:
@@ -30,30 +24,12 @@ jobs:
           # mdbook-version: 'latest'
 
       - name: 构建
-        env:
-          BRANCHES: ${{ env.BRANCHES }}
-        run: |
-          mkdir -p ./build
-          for branch in $BRANCHES; do
-            git fetch origin $branch
-            git checkout $branch
-            echo "切换到分支：$branch"
-            mdbook clean && mdbook build
-            cp -r ./book ./build/$branch
-          done
+        run: bash ./build.sh
 
       # HTML/CSS/JS Minifier
       # - uses: docker://devatherock/minify-js:2.0.0
       #   with:
       #     add_suffix: false     # Optional
-
-      - run: cd ./build
-      - name: 生成站点地图
-        id: sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          base-url-path: https://docs.wedot.top/
-      - run: cd ..
 
       - name: 部署
         uses: cloudflare/wrangler-action@v3
