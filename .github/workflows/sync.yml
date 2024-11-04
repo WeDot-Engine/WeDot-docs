@@ -61,9 +61,6 @@ jobs:
           commit-message: '【文档，类型】从当前 ${{ env.engine_rev }} 分支同步 (${{ steps.engine.outputs.rev_hash_short }})'
           branch: 'classref/sync-${{ steps.engine.outputs.rev_hash_short }}'
           delete-branch: true
-          add-paths: |
-            'src'
-            'src/classes'
 
           # 设置提交人信息
           author: 'WeDot Organization <noreply@wedot.top>'
