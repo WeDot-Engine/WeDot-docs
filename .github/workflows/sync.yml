@@ -1,0 +1,82 @@
+name: 同步类的文档
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1'
+
+# 涉及到仓库写入更改，不能同时运行。
+concurrency:
+  group: '同步'
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    name: 从引擎仓库生成并同步最新的类相关文档
+    runs-on: ubuntu-latest
+    env:
+      engine_rev: 'latest'
+
+    steps:
+      - name: 访问本仓库
+        uses: actions/checkout@v4
+
+      - name: 访问 WeDot 引擎仓库
+        uses: actions/checkout@v4
+        with:
+          repository: 'WeDot-Engine/WeDot'
+          ref: ${{ env.engine_rev }}
+          path: '.engine-src'
+
+      - name: 记录当前使用的 WeDot 引擎的具体版本
+        id: 'engine'
+        run: |
+          cd .engine-src
+          hash=$(git rev-parse HEAD)
+          hash_short=$(git rev-parse --short HEAD)
+          echo "已检出 WeDot-Engine/WeDot 版本为 $hash"
+          echo "rev_hash=$hash" >> $GITHUB_OUTPUT
+          echo "rev_hash_short=$hash_short" >> $GITHUB_OUTPUT
+
+      # rm -f 以保证无文档时不报错
+      - name: 删除旧文档
+        run: |
+          rm -f src/classes/class_*.md
+
+      - name: 构建新文档
+        run: |
+          pip install polib
+          chmod +x .engine-src/doc/tools/make_md.py
+          .engine-src/doc/tools/make_md.py --color -o src/classes -l zh_CN .engine-src/doc/classes .engine-src/modules .engine-src/platform
+          chmod +x scripts/classes_index_to_summary.py
+          scripts/classes_index_to_summary.py src/classes/index.md src/SUMMARY.md
+
+      - name: 清理不必要文件
+        run: |
+          rm -r .engine-src/
+
+      - name: 提交拉取请求
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: '【文档，类型】从当前 ${{ env.engine_rev }} 分支同步 (${{ steps.engine.outputs.rev_hash_short }})'
+          branch: 'classref/sync-${{ steps.engine.outputs.rev_hash_short }}'
+          delete-branch: true
+          add-paths: |
+            'src'
+            'src/classes'
+
+          # 设置提交人信息
+          author: 'WeDot Organization <noreply@wedot.top>'
+          committer: 'WeDot Organization <noreply@wedot.top>'
+
+          # 配置合并请求
+          title: '【文档，类型】从当前 ${{ env.engine_rev }} 分支同步 (${{ steps.engine.outputs.rev_hash_short }})'
+          body: '更新 WeDot API 在线类引用以匹配位于 https://github.com/WeDot-Engine/WeDot/commit/${{ steps.engine.outputs.rev_hash }} 的引擎版本 (`${{ env.engine_rev }}`)。'
+          # labels: '范围:类型,bug,enhancement'
+          labels: 'bug,enhancement'
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: '${{ env.engine_rev }}-${{ steps.engine.outputs.rev_hash_short }}'
+          path: |
+            src/**

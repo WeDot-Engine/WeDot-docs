@@ -1,0 +1,71 @@
+name: 部署
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'latest'
+
+concurrency:
+  group: '部署'
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 创建临时文件夹
+        run: mkdir -p /home/runner/temp
+
+      - name: 拉取本仓库
+        uses: actions/checkout@v4
+
+      - name: 取分支列表
+        id: get_branches
+        run: |
+          git fetch --prune
+          echo "BRANCHES=$(git branch -r | grep -v '\->' | sed 's|origin/||' | tr '\n' ' ')" >> $GITHUB_ENV
+
+      - name: 安装 mdBook
+        uses: peaceiris/actions-mdbook@v2
+        with:
+          mdbook-version: '0.4.37'
+          # mdbook-version: 'latest'
+
+      - name: 编译并检查
+        env:
+          BRANCHES: ${{ env.BRANCHES }}
+        run: |
+          cp -r home/** /home/runner/temp/
+          for branch in $BRANCHES; do
+            git fetch origin $branch
+            git checkout $branch
+            echo "切换到分支：$branch"
+            mdbook clean && mdbook build && mdbook test
+            cp -r book /home/runner/temp/$branch
+          done
+
+      # HTML/CSS/JS Minifier
+      # - uses: docker://devatherock/minify-js:2.0.0
+      #   with:
+      #     add_suffix: false     # Optional
+
+      - run: cd /home/runner/temp/
+      - name: 生成站点地图
+        id: sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: https://docs.wedot.top/
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy /home/runner/temp --project-name=wedot-docs
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: 静态文件
+          path: |
+            /home/runner/temp/**

@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+def preprocessing(src_dir):
+    """
+    预先处理 .rst 文件。
+    
+    :param src_dir: 工作目录路径
+    """
+    # 确保目标目录存在
+    if not os.path.exists(src_dir):
+        print(f"目录 {src_dir} 不存在。")
+        exit(1)
+
+    # 遍历源目录及其子目录
+    for root, dirs, files in os.walk(src_dir):
+        for file in files:
+            if file.endswith('.rst'):
+                
+
+# 示例调用
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("使用方法：python preprocessing.py <目录路径>")
+        sys.exit(1)
+    
+    src_dir = sys.argv[1]
+    preprocessing(src_dir)
