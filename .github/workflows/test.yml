@@ -3,8 +3,8 @@ name: 检查
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'latest'
+    paths:
+      - 'src/**'
 
 concurrency:
   group: '检查'
