@@ -57,12 +57,12 @@ jobs:
         with:
           base-url-path: https://docs.wedot.top/
 
-      - name: Deploy
+      - name: 部署
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy /home/runner/temp/ --project-name=wedot-docs
+          command: pages deploy /home/runner/temp/** --project-name=wedot-docs
       
       - uses: actions/upload-artifact@v4
         with:
