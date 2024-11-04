@@ -14,9 +14,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 创建临时文件夹
-        run: mkdir -p /home/runner/temp
-
       - name: 拉取本仓库
         uses: actions/checkout@v4
 
@@ -32,17 +29,17 @@ jobs:
           mdbook-version: '0.4.37'
           # mdbook-version: 'latest'
 
-      - name: 编译并检查
+      - name: 构建
         env:
           BRANCHES: ${{ env.BRANCHES }}
         run: |
-          cp -r home/** /home/runner/temp/
+          mkdir -p ./build
           for branch in $BRANCHES; do
             git fetch origin $branch
             git checkout $branch
             echo "切换到分支：$branch"
             mdbook clean && mdbook build
-            cp -r book /home/runner/temp/$branch
+            cp -r ./book ./build/$branch
           done
 
       # HTML/CSS/JS Minifier
@@ -50,22 +47,23 @@ jobs:
       #   with:
       #     add_suffix: false     # Optional
 
-      - run: cd /home/runner/temp/
+      - run: cd ./build
       - name: 生成站点地图
         id: sitemap
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://docs.wedot.top/
+      - run: cd ..
 
       - name: 部署
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy /home/runner/temp/* --project-name=wedot-docs
+          command: pages deploy ./build --project-name=wedot-docs
       
       - uses: actions/upload-artifact@v4
         with:
           name: artifact
           path: |
-            /home/runner/temp/**
+            ./build/**

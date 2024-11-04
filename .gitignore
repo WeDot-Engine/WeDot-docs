@@ -3,3 +3,6 @@
 
 # Windows 相关
 desktop.ini
+
+# workflow 相关
+/build
