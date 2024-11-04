@@ -78,9 +78,9 @@
 
 
       script.setAttribute("data-repo", "Wedot-Engine/Wedot-docs");
-      script.setAttribute("data-repo-id", "R_kgDONDfw-A");
+      script.setAttribute("data-repo-id", "R_kgDONKG4_g");
       script.setAttribute("data-category", "Announcements");
-      script.setAttribute("data-category-id", "DIC_kwDOKAX-u84CYRSk");
+      script.setAttribute("data-category-id", "DIC_kwDONKG4_s4Cj9ge");
 
       script.setAttribute("data-mapping", "pathname");
       script.setAttribute("data-strict", "1");
