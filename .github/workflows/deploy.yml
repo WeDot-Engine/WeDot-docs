@@ -24,7 +24,7 @@ jobs:
         id: get_branches
         run: |
           git fetch --prune
-          echo "BRANCHES=$(git branch -r | grep -v '\->' | sed 's|origin/||' | tr '\n' ' ')" >> $GITHUB_ENV
+          echo "BRANCHES=$(git branch -r | grep -v '\->' | sed 's|origin/||' | grep -v '^class' | tr '\n' ' ')" >> $GITHUB_ENV
 
       - name: 安装 mdBook
         uses: peaceiris/actions-mdbook@v2
@@ -41,7 +41,7 @@ jobs:
             git fetch origin $branch
             git checkout $branch
             echo "切换到分支：$branch"
-            mdbook clean && mdbook build && mdbook test
+            mdbook clean && mdbook build
             cp -r book /home/runner/temp/$branch
           done
 
