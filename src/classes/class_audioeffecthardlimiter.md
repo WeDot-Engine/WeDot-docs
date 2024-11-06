@@ -19,9 +19,9 @@ A limiter is an effect designed to disallow sound from going over a given dB thr
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`ceiling_db`](#class_audioeffecthardlimiter_property_ceiling_db)   | ``-0.3`` |
-| [`float`](class_float.md) | [`pre_gain_db`](#class_audioeffecthardlimiter_property_pre_gain_db) | ``0.0``  |
-| [`float`](class_float.md) | [`release`](#class_audioeffecthardlimiter_property_release)         | ``0.1``  |
+| [`float`](class_float.md) | [`ceiling_db`](class_audioeffecthardlimiter.md#class_audioeffecthardlimiter_property_ceiling_db)   | ``-0.3`` |
+| [`float`](class_float.md) | [`pre_gain_db`](class_audioeffecthardlimiter.md#class_audioeffecthardlimiter_property_pre_gain_db) | ``0.0``  |
+| [`float`](class_float.md) | [`release`](class_audioeffecthardlimiter.md#class_audioeffecthardlimiter_property_release)         | ``0.1``  |
 
 <!-- rst-class:: classref-section-separator -->
 

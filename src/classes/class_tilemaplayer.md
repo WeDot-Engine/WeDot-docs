@@ -17,56 +17,56 @@ Node for 2D tile-based maps. A **TileMapLayer** uses a [`TileSet`](class_tileset
 
 For performance reasons, all TileMap updates are batched at the end of a frame. Notably, this means that scene tiles from a [`TileSetScenesCollectionSource`](class_tilesetscenescollectionsource.md) may be initialized after their parent. This is only queued when inside the scene tree.
 
-To force an update earlier on, call [`update_internals`](#class_tilemaplayer_method_update_internals).
+To force an update earlier on, call [`update_internals`](class_tilemaplayer.md#class_tilemaplayer_method_update_internals).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                       | [`collision_enabled`](#class_tilemaplayer_property_collision_enabled)                   | ``true``              |
-| [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) | [`collision_visibility_mode`](#class_tilemaplayer_property_collision_visibility_mode)   | ``0``                 |
-| [`bool`](class_bool.md)                                       | [`enabled`](#class_tilemaplayer_property_enabled)                                       | ``true``              |
-| [`bool`](class_bool.md)                                       | [`navigation_enabled`](#class_tilemaplayer_property_navigation_enabled)                 | ``true``              |
-| [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) | [`navigation_visibility_mode`](#class_tilemaplayer_property_navigation_visibility_mode) | ``0``                 |
-| [`int`](class_int.md)                                         | [`rendering_quadrant_size`](#class_tilemaplayer_property_rendering_quadrant_size)       | ``16``                |
-| [`PackedByteArray`](class_packedbytearray.md)                 | [`tile_map_data`](#class_tilemaplayer_property_tile_map_data)                           | ``PackedByteArray()`` |
-| [`TileSet`](class_tileset.md)                                 | [`tile_set`](#class_tilemaplayer_property_tile_set)                                     |                       |
-| [`bool`](class_bool.md)                                       | [`use_kinematic_bodies`](#class_tilemaplayer_property_use_kinematic_bodies)             | ``false``             |
-| [`bool`](class_bool.md)                                       | [`x_draw_order_reversed`](#class_tilemaplayer_property_x_draw_order_reversed)           | ``false``             |
-| [`int`](class_int.md)                                         | [`y_sort_origin`](#class_tilemaplayer_property_y_sort_origin)                           | ``0``                 |
+| [`bool`](class_bool.md)                                       | [`collision_enabled`](class_tilemaplayer.md#class_tilemaplayer_property_collision_enabled)                   | ``true``              |
+| [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) | [`collision_visibility_mode`](class_tilemaplayer.md#class_tilemaplayer_property_collision_visibility_mode)   | ``0``                 |
+| [`bool`](class_bool.md)                                       | [`enabled`](class_tilemaplayer.md#class_tilemaplayer_property_enabled)                                       | ``true``              |
+| [`bool`](class_bool.md)                                       | [`navigation_enabled`](class_tilemaplayer.md#class_tilemaplayer_property_navigation_enabled)                 | ``true``              |
+| [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) | [`navigation_visibility_mode`](class_tilemaplayer.md#class_tilemaplayer_property_navigation_visibility_mode) | ``0``                 |
+| [`int`](class_int.md)                                         | [`rendering_quadrant_size`](class_tilemaplayer.md#class_tilemaplayer_property_rendering_quadrant_size)       | ``16``                |
+| [`PackedByteArray`](class_packedbytearray.md)                 | [`tile_map_data`](class_tilemaplayer.md#class_tilemaplayer_property_tile_map_data)                           | ``PackedByteArray()`` |
+| [`TileSet`](class_tileset.md)                                 | [`tile_set`](class_tilemaplayer.md#class_tilemaplayer_property_tile_set)                                     |                       |
+| [`bool`](class_bool.md)                                       | [`use_kinematic_bodies`](class_tilemaplayer.md#class_tilemaplayer_property_use_kinematic_bodies)             | ``false``             |
+| [`bool`](class_bool.md)                                       | [`x_draw_order_reversed`](class_tilemaplayer.md#class_tilemaplayer_property_x_draw_order_reversed)           | ``false``             |
+| [`int`](class_int.md)                                         | [`y_sort_origin`](class_tilemaplayer.md#class_tilemaplayer_property_y_sort_origin)                           | ``0``                 |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                  | [`_tile_data_runtime_update`](#class_tilemaplayer_private_method__tile_data_runtime_update) ( coords: [`Vector2i`](class_vector2i.md), tile_data: [`TileData`](class_tiledata.md) ) virtual[^virtual]                                                                             |
-| [`bool`](class_bool.md)                                 | [`_use_tile_data_runtime_update`](#class_tilemaplayer_private_method__use_tile_data_runtime_update) ( coords: [`Vector2i`](class_vector2i.md) ) virtual[^virtual]                                                                                                                 |
-| `void`                                                  | [`clear`](#class_tilemaplayer_method_clear) ( )                                                                                                                                                                                                                                   |
-| `void`                                                  | [`erase_cell`](#class_tilemaplayer_method_erase_cell) ( coords: [`Vector2i`](class_vector2i.md) )                                                                                                                                                                                 |
-| `void`                                                  | [`fix_invalid_tiles`](#class_tilemaplayer_method_fix_invalid_tiles) ( )                                                                                                                                                                                                           |
-| [`int`](class_int.md)                                   | [`get_cell_alternative_tile`](#class_tilemaplayer_method_get_cell_alternative_tile) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                     |
-| [`Vector2i`](class_vector2i.md)                         | [`get_cell_atlas_coords`](#class_tilemaplayer_method_get_cell_atlas_coords) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                             |
-| [`int`](class_int.md)                                   | [`get_cell_source_id`](#class_tilemaplayer_method_get_cell_source_id) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                   |
-| [`TileData`](class_tiledata.md)                         | [`get_cell_tile_data`](#class_tilemaplayer_method_get_cell_tile_data) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                   |
-| [`Vector2i`](class_vector2i.md)                         | [`get_coords_for_body_rid`](#class_tilemaplayer_method_get_coords_for_body_rid) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                     |
-| [`RID`](class_rid.md)                                   | [`get_navigation_map`](#class_tilemaplayer_method_get_navigation_map) ( ) const[^const]                                                                                                                                                                                           |
-| [`Vector2i`](class_vector2i.md)                         | [`get_neighbor_cell`](#class_tilemaplayer_method_get_neighbor_cell) ( coords: [`Vector2i`](class_vector2i.md), neighbor: [CellNeighbor](#enum_tileset_cellneighbor) ) const[^const]                                                                                               |
-| [`TileMapPattern`](class_tilemappattern.md)             | [`get_pattern`](#class_tilemaplayer_method_get_pattern) ( coords_array: [Array](class_array.md) [`Vector2i`](class_vector2i.md) )                                                                                                                                                 |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_surrounding_cells`](#class_tilemaplayer_method_get_surrounding_cells) ( coords: [`Vector2i`](class_vector2i.md) )                                                                                                                                                           |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells`](#class_tilemaplayer_method_get_used_cells) ( ) const[^const]                                                                                                                                                                                                   |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells_by_id`](#class_tilemaplayer_method_get_used_cells_by_id) ( source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 ) const[^const]                                 |
-| [`Rect2i`](class_rect2i.md)                             | [`get_used_rect`](#class_tilemaplayer_method_get_used_rect) ( ) const[^const]                                                                                                                                                                                                     |
-| [`bool`](class_bool.md)                                 | [`has_body_rid`](#class_tilemaplayer_method_has_body_rid) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
-| [`Vector2i`](class_vector2i.md)                         | [`local_to_map`](#class_tilemaplayer_method_local_to_map) ( local_position: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                         |
-| [`Vector2i`](class_vector2i.md)                         | [`map_pattern`](#class_tilemaplayer_method_map_pattern) ( position_in_tilemap: [`Vector2i`](class_vector2i.md), coords_in_pattern: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                        |
-| [`Vector2`](class_vector2.md)                           | [`map_to_local`](#class_tilemaplayer_method_map_to_local) ( map_position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                         |
-| `void`                                                  | [`notify_runtime_tile_data_update`](#class_tilemaplayer_method_notify_runtime_tile_data_update) ( )                                                                                                                                                                               |
-| `void`                                                  | [`set_cell`](#class_tilemaplayer_method_set_cell) ( coords: [`Vector2i`](class_vector2i.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = 0 )                               |
-| `void`                                                  | [`set_cells_terrain_connect`](#class_tilemaplayer_method_set_cells_terrain_connect) ( cells: [Array](class_array.md) [`Vector2i`](class_vector2i.md), terrain_set: [`int`](class_int.md), terrain: [`int`](class_int.md), ignore_empty_terrains: [`bool`](class_bool.md) = true ) |
-| `void`                                                  | [`set_cells_terrain_path`](#class_tilemaplayer_method_set_cells_terrain_path) ( path: [Array](class_array.md) [`Vector2i`](class_vector2i.md), terrain_set: [`int`](class_int.md), terrain: [`int`](class_int.md), ignore_empty_terrains: [`bool`](class_bool.md) = true )        |
-| `void`                                                  | [`set_navigation_map`](#class_tilemaplayer_method_set_navigation_map) ( map: [`RID`](class_rid.md) )                                                                                                                                                                              |
-| `void`                                                  | [`set_pattern`](#class_tilemaplayer_method_set_pattern) ( position: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                                                                                       |
-| `void`                                                  | [`update_internals`](#class_tilemaplayer_method_update_internals) ( )                                                                                                                                                                                                             |
+| `void`                                                  | [`_tile_data_runtime_update`](class_tilemaplayer.md#class_tilemaplayer_private_method__tile_data_runtime_update) ( coords: [`Vector2i`](class_vector2i.md), tile_data: [`TileData`](class_tiledata.md) ) virtual[^virtual]                                                                             |
+| [`bool`](class_bool.md)                                 | [`_use_tile_data_runtime_update`](class_tilemaplayer.md#class_tilemaplayer_private_method__use_tile_data_runtime_update) ( coords: [`Vector2i`](class_vector2i.md) ) virtual[^virtual]                                                                                                                 |
+| `void`                                                  | [`clear`](class_tilemaplayer.md#class_tilemaplayer_method_clear) ( )                                                                                                                                                                                                                                   |
+| `void`                                                  | [`erase_cell`](class_tilemaplayer.md#class_tilemaplayer_method_erase_cell) ( coords: [`Vector2i`](class_vector2i.md) )                                                                                                                                                                                 |
+| `void`                                                  | [`fix_invalid_tiles`](class_tilemaplayer.md#class_tilemaplayer_method_fix_invalid_tiles) ( )                                                                                                                                                                                                           |
+| [`int`](class_int.md)                                   | [`get_cell_alternative_tile`](class_tilemaplayer.md#class_tilemaplayer_method_get_cell_alternative_tile) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                     |
+| [`Vector2i`](class_vector2i.md)                         | [`get_cell_atlas_coords`](class_tilemaplayer.md#class_tilemaplayer_method_get_cell_atlas_coords) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                             |
+| [`int`](class_int.md)                                   | [`get_cell_source_id`](class_tilemaplayer.md#class_tilemaplayer_method_get_cell_source_id) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                   |
+| [`TileData`](class_tiledata.md)                         | [`get_cell_tile_data`](class_tilemaplayer.md#class_tilemaplayer_method_get_cell_tile_data) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                   |
+| [`Vector2i`](class_vector2i.md)                         | [`get_coords_for_body_rid`](class_tilemaplayer.md#class_tilemaplayer_method_get_coords_for_body_rid) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                     |
+| [`RID`](class_rid.md)                                   | [`get_navigation_map`](class_tilemaplayer.md#class_tilemaplayer_method_get_navigation_map) ( ) const[^const]                                                                                                                                                                                           |
+| [`Vector2i`](class_vector2i.md)                         | [`get_neighbor_cell`](class_tilemaplayer.md#class_tilemaplayer_method_get_neighbor_cell) ( coords: [`Vector2i`](class_vector2i.md), neighbor: [CellNeighbor](#enum_tileset_cellneighbor) ) const[^const]                                                                                               |
+| [`TileMapPattern`](class_tilemappattern.md)             | [`get_pattern`](class_tilemaplayer.md#class_tilemaplayer_method_get_pattern) ( coords_array: [Array](class_array.md) [`Vector2i`](class_vector2i.md) )                                                                                                                                                 |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_surrounding_cells`](class_tilemaplayer.md#class_tilemaplayer_method_get_surrounding_cells) ( coords: [`Vector2i`](class_vector2i.md) )                                                                                                                                                           |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells`](class_tilemaplayer.md#class_tilemaplayer_method_get_used_cells) ( ) const[^const]                                                                                                                                                                                                   |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells_by_id`](class_tilemaplayer.md#class_tilemaplayer_method_get_used_cells_by_id) ( source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 ) const[^const]                                 |
+| [`Rect2i`](class_rect2i.md)                             | [`get_used_rect`](class_tilemaplayer.md#class_tilemaplayer_method_get_used_rect) ( ) const[^const]                                                                                                                                                                                                     |
+| [`bool`](class_bool.md)                                 | [`has_body_rid`](class_tilemaplayer.md#class_tilemaplayer_method_has_body_rid) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
+| [`Vector2i`](class_vector2i.md)                         | [`local_to_map`](class_tilemaplayer.md#class_tilemaplayer_method_local_to_map) ( local_position: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                         |
+| [`Vector2i`](class_vector2i.md)                         | [`map_pattern`](class_tilemaplayer.md#class_tilemaplayer_method_map_pattern) ( position_in_tilemap: [`Vector2i`](class_vector2i.md), coords_in_pattern: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                        |
+| [`Vector2`](class_vector2.md)                           | [`map_to_local`](class_tilemaplayer.md#class_tilemaplayer_method_map_to_local) ( map_position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                         |
+| `void`                                                  | [`notify_runtime_tile_data_update`](class_tilemaplayer.md#class_tilemaplayer_method_notify_runtime_tile_data_update) ( )                                                                                                                                                                               |
+| `void`                                                  | [`set_cell`](class_tilemaplayer.md#class_tilemaplayer_method_set_cell) ( coords: [`Vector2i`](class_vector2i.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = 0 )                               |
+| `void`                                                  | [`set_cells_terrain_connect`](class_tilemaplayer.md#class_tilemaplayer_method_set_cells_terrain_connect) ( cells: [Array](class_array.md) [`Vector2i`](class_vector2i.md), terrain_set: [`int`](class_int.md), terrain: [`int`](class_int.md), ignore_empty_terrains: [`bool`](class_bool.md) = true ) |
+| `void`                                                  | [`set_cells_terrain_path`](class_tilemaplayer.md#class_tilemaplayer_method_set_cells_terrain_path) ( path: [Array](class_array.md) [`Vector2i`](class_vector2i.md), terrain_set: [`int`](class_int.md), terrain: [`int`](class_int.md), ignore_empty_terrains: [`bool`](class_bool.md) = true )        |
+| `void`                                                  | [`set_navigation_map`](class_tilemaplayer.md#class_tilemaplayer_method_set_navigation_map) ( map: [`RID`](class_rid.md) )                                                                                                                                                                              |
+| `void`                                                  | [`set_pattern`](class_tilemaplayer.md#class_tilemaplayer_method_set_pattern) ( position: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                                                                                       |
+| `void`                                                  | [`update_internals`](class_tilemaplayer.md#class_tilemaplayer_method_update_internals) ( )                                                                                                                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -80,7 +80,7 @@ To force an update earlier on, call [`update_internals`](#class_tilemaplayer_met
 
 Emitted when this **TileMapLayer**'s properties changes. This includes modified cells, properties, or changes made to its assigned [`TileSet`](class_tileset.md).
 
- **Note:** This signal may be emitted very often when batch-modifying a **TileMapLayer**. Avoid executing complex processing in a connected function, and consider delaying it to the end of the frame instead (i.e. calling [`Object.call_deferred`](#class_object_method_call_deferred)).
+ **Note:** This signal may be emitted very often when batch-modifying a **TileMapLayer**. Avoid executing complex processing in a connected function, and consider delaying it to the end of the frame instead (i.e. calling [`Object.call_deferred`](class_object.md#class_object_method_call_deferred)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -96,7 +96,7 @@ enum **DebugVisibilityMode**: <div id="enum_tilemaplayer_debugvisibilitymode"></
 
 [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) **DEBUG_VISIBILITY_MODE_DEFAULT** = ``0``
 
-Hide the collisions or navigation debug shapes in the editor, and use the debug settings to determine their visibility in game (i.e. [`SceneTree.debug_collisions_hint`](#class_scenetree_property_debug_collisions_hint) or [`SceneTree.debug_navigation_hint`](#class_scenetree_property_debug_navigation_hint)).
+Hide the collisions or navigation debug shapes in the editor, and use the debug settings to determine their visibility in game (i.e. [`SceneTree.debug_collisions_hint`](class_scenetree.md#class_scenetree_property_debug_collisions_hint) or [`SceneTree.debug_navigation_hint`](class_scenetree.md#class_scenetree_property_debug_navigation_hint)).
 
 <div id="_class_tilemaplayer_constant_debug_visibility_mode_force_hide"></div>
 
@@ -136,7 +136,7 @@ Enable or disable collisions.
 - `void` **set_collision_visibility_mode** ( value: [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) )
 - [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) **get_collision_visibility_mode** ( )
 
-Show or hide the **TileMapLayer**'s collision shapes. If set to [`DEBUG_VISIBILITY_MODE_DEFAULT`](#class_tilemaplayer_constant_debug_visibility_mode_default), this depends on the show collision debug settings.
+Show or hide the **TileMapLayer**'s collision shapes. If set to [`DEBUG_VISIBILITY_MODE_DEFAULT`](class_tilemaplayer.md#class_tilemaplayer_constant_debug_visibility_mode_default), this depends on the show collision debug settings.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -175,7 +175,7 @@ If `true`, navigation regions are enabled.
 - `void` **set_navigation_visibility_mode** ( value: [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) )
 - [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) **get_navigation_visibility_mode** ( )
 
-Show or hide the **TileMapLayer**'s navigation meshes. If set to [`DEBUG_VISIBILITY_MODE_DEFAULT`](#class_tilemaplayer_constant_debug_visibility_mode_default), this depends on the show navigation debug settings.
+Show or hide the **TileMapLayer**'s navigation meshes. If set to [`DEBUG_VISIBILITY_MODE_DEFAULT`](class_tilemaplayer.md#class_tilemaplayer_constant_debug_visibility_mode_default), this depends on the show navigation debug settings.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -188,7 +188,7 @@ Show or hide the **TileMapLayer**'s navigation meshes. If set to [`DEBUG_VISIBIL
 - `void` **set_rendering_quadrant_size** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_rendering_quadrant_size** ( )
 
-The **TileMapLayer**'s quadrant size. A quadrant is a group of tiles to be drawn together on a single canvas item, for optimization purposes. [`rendering_quadrant_size`](#class_tilemaplayer_property_rendering_quadrant_size) defines the length of a square's side, in the map's coordinate system, that forms the quadrant. Thus, the default quadrant size groups together `16 * 16 = 256` tiles.
+The **TileMapLayer**'s quadrant size. A quadrant is a group of tiles to be drawn together on a single canvas item, for optimization purposes. [`rendering_quadrant_size`](class_tilemaplayer.md#class_tilemaplayer_property_rendering_quadrant_size) defines the length of a square's side, in the map's coordinate system, that forms the quadrant. Thus, the default quadrant size groups together `16 * 16 = 256` tiles.
 
 The quadrant size does not apply on a Y-sorted **TileMapLayer**, as tiles are grouped by Y position instead in that case.
 
@@ -246,7 +246,7 @@ If `true`, this **TileMapLayer** collision shapes will be instantiated as kinema
 - `void` **set_x_draw_order_reversed** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_x_draw_order_reversed** ( )
 
-If [`CanvasItem.y_sort_enabled`](#class_canvasitem_property_y_sort_enabled) is enabled, setting this to `true` will reverse the order the tiles are drawn on the X-axis.
+If [`CanvasItem.y_sort_enabled`](class_canvasitem.md#class_canvasitem_property_y_sort_enabled) is enabled, setting this to `true` will reverse the order the tiles are drawn on the X-axis.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -273,11 +273,11 @@ This Y-sort origin value is added to each tile's Y-sort origin value. This allow
 
 Called with a [`TileData`](class_tiledata.md) object about to be used internally by the **TileMapLayer**, allowing its modification at runtime.
 
-This method is only called if [`_use_tile_data_runtime_update`](#class_tilemaplayer_private_method__use_tile_data_runtime_update) is implemented and returns `true` for the given tile `coords`.
+This method is only called if [`_use_tile_data_runtime_update`](class_tilemaplayer.md#class_tilemaplayer_private_method__use_tile_data_runtime_update) is implemented and returns `true` for the given tile `coords`.
 
  **Warning:** The `tile_data` object's sub-resources are the same as the one in the TileSet. Modifying them might impact the whole TileSet. Instead, make sure to duplicate those resources.
 
- **Note:** If the properties of `tile_data` object should change over time, use [`notify_runtime_tile_data_update`](#class_tilemaplayer_method_notify_runtime_tile_data_update) to notify the **TileMapLayer** it needs an update.
+ **Note:** If the properties of `tile_data` object should change over time, use [`notify_runtime_tile_data_update`](class_tilemaplayer.md#class_tilemaplayer_method_notify_runtime_tile_data_update) to notify the **TileMapLayer** it needs an update.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -291,7 +291,7 @@ Should return `true` if the tile at coordinates `coords` requires a runtime upda
 
  **Warning:** Make sure this function only returns `true` when needed. Any tile processed at runtime without a need for it will imply a significant performance penalty.
 
- **Note:** If the result of this function should change, use [`notify_runtime_tile_data_update`](#class_tilemaplayer_method_notify_runtime_tile_data_update) to notify the **TileMapLayer** it needs an update.
+ **Note:** If the result of this function should change, use [`notify_runtime_tile_data_update`](class_tilemaplayer.md#class_tilemaplayer_method_notify_runtime_tile_data_update) to notify the **TileMapLayer** it needs an update.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -321,7 +321,7 @@ Erases the cell at coordinates `coords`.
 
 `void` **fix_invalid_tiles** ( )<div id="class_tilemaplayer_method_fix_invalid_tiles"></div>
 
-Clears cells containing tiles that do not exist in the [`tile_set`](#class_tilemaplayer_property_tile_set).
+Clears cells containing tiles that do not exist in the [`tile_set`](class_tilemaplayer.md#class_tilemaplayer_property_tile_set).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -384,7 +384,7 @@ Returns the [`TileData`](class_tiledata.md) object associated with the given cel
 
 [`Vector2i`](class_vector2i.md) **get_coords_for_body_rid** ( body: [`RID`](class_rid.md) ) const[^const]<div id="class_tilemaplayer_method_get_coords_for_body_rid"></div>
 
-Returns the coordinates of the tile for given physics body [`RID`](class_rid.md). Such an [`RID`](class_rid.md) can be retrieved from [`KinematicCollision2D.get_collider_rid`](#class_kinematiccollision2d_method_get_collider_rid), when colliding with a tile.
+Returns the coordinates of the tile for given physics body [`RID`](class_rid.md). Such an [`RID`](class_rid.md) can be retrieved from [`KinematicCollision2D.get_collider_rid`](class_kinematiccollision2d.md#class_kinematiccollision2d_method_get_collider_rid), when colliding with a tile.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -396,7 +396,7 @@ Returns the coordinates of the tile for given physics body [`RID`](class_rid.md)
 
 Returns the [`RID`](class_rid.md) of the [`NavigationServer2D`](class_navigationserver2d.md) navigation used by this **TileMapLayer**.
 
-By default this returns the default [`World2D`](class_world2d.md) navigation map, unless a custom map was provided using [`set_navigation_map`](#class_tilemaplayer_method_set_navigation_map).
+By default this returns the default [`World2D`](class_world2d.md) navigation map, unless a custom map was provided using [`set_navigation_map`](class_tilemaplayer.md#class_tilemaplayer_method_set_navigation_map).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -416,7 +416,7 @@ Returns the neighboring cell to the one at coordinates `coords`, identified by t
 
 [`TileMapPattern`](class_tilemappattern.md) **get_pattern** ( coords_array: [Array](class_array.md) [`Vector2i`](class_vector2i.md) )<div id="class_tilemaplayer_method_get_pattern"></div>
 
-Creates and returns a new [`TileMapPattern`](class_tilemappattern.md) from the given array of cells. See also [`set_pattern`](#class_tilemaplayer_method_set_pattern).
+Creates and returns a new [`TileMapPattern`](class_tilemappattern.md) from the given array of cells. See also [`set_pattern`](class_tilemaplayer.md#class_tilemaplayer_method_set_pattern).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -448,7 +448,7 @@ Returns a [`Vector2i`](class_vector2i.md) array with the positions of all cells 
 
 Returns a [`Vector2i`](class_vector2i.md) array with the positions of all cells containing a tile. Tiles may be filtered according to their source (`source_id`), their atlas coordinates (`atlas_coords`), or alternative id (`alternative_tile`).
 
-If a parameter has its value set to the default one, this parameter is not used to filter a cell. Thus, if all parameters have their respective default values, this method returns the same result as [`get_used_cells`](#class_tilemaplayer_method_get_used_cells).
+If a parameter has its value set to the default one, this parameter is not used to filter a cell. Thus, if all parameters have their respective default values, this method returns the same result as [`get_used_cells`](class_tilemaplayer.md#class_tilemaplayer_method_get_used_cells).
 
 A cell is considered empty if its source identifier equals `-1`, its atlas coordinate identifier is `Vector2(-1, -1)` and its alternative identifier is `-1`.
 
@@ -480,7 +480,7 @@ Returns whether the provided `body` [`RID`](class_rid.md) belongs to one of this
 
 [`Vector2i`](class_vector2i.md) **local_to_map** ( local_position: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_tilemaplayer_method_local_to_map"></div>
 
-Returns the map coordinates of the cell containing the given `local_position`. If `local_position` is in global coordinates, consider using [`Node2D.to_local`](#class_node2d_method_to_local) before passing it to this method. See also [`map_to_local`](#class_tilemaplayer_method_map_to_local).
+Returns the map coordinates of the cell containing the given `local_position`. If `local_position` is in global coordinates, consider using [`Node2D.to_local`](class_node2d.md#class_node2d_method_to_local) before passing it to this method. See also [`map_to_local`](class_tilemaplayer.md#class_tilemaplayer_method_map_to_local).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -490,7 +490,7 @@ Returns the map coordinates of the cell containing the given `local_position`. I
 
 [`Vector2i`](class_vector2i.md) **map_pattern** ( position_in_tilemap: [`Vector2i`](class_vector2i.md), coords_in_pattern: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )<div id="class_tilemaplayer_method_map_pattern"></div>
 
-Returns for the given coordinates `coords_in_pattern` in a [`TileMapPattern`](class_tilemappattern.md) the corresponding cell coordinates if the pattern was pasted at the `position_in_tilemap` coordinates (see [`set_pattern`](#class_tilemaplayer_method_set_pattern)). This mapping is required as in half-offset tile shapes, the mapping might not work by calculating `position_in_tile_map + coords_in_pattern`.
+Returns for the given coordinates `coords_in_pattern` in a [`TileMapPattern`](class_tilemappattern.md) the corresponding cell coordinates if the pattern was pasted at the `position_in_tilemap` coordinates (see [`set_pattern`](class_tilemaplayer.md#class_tilemaplayer_method_set_pattern)). This mapping is required as in half-offset tile shapes, the mapping might not work by calculating `position_in_tile_map + coords_in_pattern`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -500,9 +500,9 @@ Returns for the given coordinates `coords_in_pattern` in a [`TileMapPattern`](cl
 
 [`Vector2`](class_vector2.md) **map_to_local** ( map_position: [`Vector2i`](class_vector2i.md) ) const[^const]<div id="class_tilemaplayer_method_map_to_local"></div>
 
-Returns the centered position of a cell in the **TileMapLayer**'s local coordinate space. To convert the returned value into global coordinates, use [`Node2D.to_global`](#class_node2d_method_to_global). See also [`local_to_map`](#class_tilemaplayer_method_local_to_map).
+Returns the centered position of a cell in the **TileMapLayer**'s local coordinate space. To convert the returned value into global coordinates, use [`Node2D.to_global`](class_node2d.md#class_node2d_method_to_global). See also [`local_to_map`](class_tilemaplayer.md#class_tilemaplayer_method_local_to_map).
 
- **Note:** This may not correspond to the visual position of the tile, i.e. it ignores the [`TileData.texture_origin`](#class_tiledata_property_texture_origin) property of individual tiles.
+ **Note:** This may not correspond to the visual position of the tile, i.e. it ignores the [`TileData.texture_origin`](class_tiledata.md#class_tiledata_property_texture_origin) property of individual tiles.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -512,11 +512,11 @@ Returns the centered position of a cell in the **TileMapLayer**'s local coordina
 
 `void` **notify_runtime_tile_data_update** ( )<div id="class_tilemaplayer_method_notify_runtime_tile_data_update"></div>
 
-Notifies the **TileMapLayer** node that calls to [`_use_tile_data_runtime_update`](#class_tilemaplayer_private_method__use_tile_data_runtime_update) or [`_tile_data_runtime_update`](#class_tilemaplayer_private_method__tile_data_runtime_update) will lead to different results. This will thus trigger a **TileMapLayer** update.
+Notifies the **TileMapLayer** node that calls to [`_use_tile_data_runtime_update`](class_tilemaplayer.md#class_tilemaplayer_private_method__use_tile_data_runtime_update) or [`_tile_data_runtime_update`](class_tilemaplayer.md#class_tilemaplayer_private_method__tile_data_runtime_update) will lead to different results. This will thus trigger a **TileMapLayer** update.
 
  **Warning:** Updating the **TileMapLayer** is computationally expensive and may impact performance. Try to limit the number of calls to this function to avoid unnecessary update.
 
- **Note:** This does not trigger a direct update of the **TileMapLayer**, the update will be done at the end of the frame as usual (unless you call [`update_internals`](#class_tilemaplayer_method_update_internals)).
+ **Note:** This does not trigger a direct update of the **TileMapLayer**, the update will be done at the end of the frame as usual (unless you call [`update_internals`](class_tilemaplayer.md#class_tilemaplayer_method_update_internals)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -528,7 +528,7 @@ Notifies the **TileMapLayer** node that calls to [`_use_tile_data_runtime_update
 
 Sets the tile identifiers for the cell at coordinates `coords`. Each tile of the [`TileSet`](class_tileset.md) is identified using three parts:
 
-- The source identifier `source_id` identifies a [`TileSetSource`](class_tilesetsource.md) identifier. See [`TileSet.set_source_id`](#class_tileset_method_set_source_id),
+- The source identifier `source_id` identifies a [`TileSetSource`](class_tilesetsource.md) identifier. See [`TileSet.set_source_id`](class_tileset.md#class_tileset_method_set_source_id),
 
 - The atlas coordinate identifier `atlas_coords` identifies a tile coordinates in the atlas (if the source is a [`TileSetAtlasSource`](class_tilesetatlassource.md)). For [`TileSetScenesCollectionSource`](class_tilesetscenescollectionsource.md) it should always be `Vector2i(0, 0)`,
 
@@ -582,7 +582,7 @@ Sets a custom `map` as a [`NavigationServer2D`](class_navigationserver2d.md) nav
 
 `void` **set_pattern** ( position: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )<div id="class_tilemaplayer_method_set_pattern"></div>
 
-Pastes the [`TileMapPattern`](class_tilemappattern.md) at the given `position` in the tile map. See also [`get_pattern`](#class_tilemaplayer_method_get_pattern).
+Pastes the [`TileMapPattern`](class_tilemappattern.md) at the given `position` in the tile map. See also [`get_pattern`](class_tilemaplayer.md#class_tilemaplayer_method_get_pattern).
 
 <!-- rst-class:: classref-item-separator -->
 

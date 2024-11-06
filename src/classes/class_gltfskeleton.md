@@ -15,20 +15,20 @@
 
 |||
 |:-:|:--|
-| [`PackedInt32Array`](class_packedint32array.md) | [`joints`](#class_gltfskeleton_property_joints) | ``PackedInt32Array()`` |
-| [`PackedInt32Array`](class_packedint32array.md) | [`roots`](#class_gltfskeleton_property_roots)   | ``PackedInt32Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md) | [`joints`](class_gltfskeleton.md#class_gltfskeleton_property_joints) | ``PackedInt32Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md) | [`roots`](class_gltfskeleton.md#class_gltfskeleton_property_roots)   | ``PackedInt32Array()`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`BoneAttachment3D`](class_boneattachment3d.md)     | [`get_bone_attachment`](#class_gltfskeleton_method_get_bone_attachment) ( idx: [`int`](class_int.md) )                                  |
-| [`int`](class_int.md)                               | [`get_bone_attachment_count`](#class_gltfskeleton_method_get_bone_attachment_count) ( )                                                 |
-| [`Dictionary`](class_dictionary.md)                 | [`get_godot_bone_node`](#class_gltfskeleton_method_get_godot_bone_node) ( )                                                             |
-| [`Skeleton3D`](class_skeleton3d.md)                 | [`get_godot_skeleton`](#class_gltfskeleton_method_get_godot_skeleton) ( )                                                               |
-| [Array](class_array.md) [`String`](class_string.md) | [`get_unique_names`](#class_gltfskeleton_method_get_unique_names) ( )                                                                   |
-| `void`                                              | [`set_godot_bone_node`](#class_gltfskeleton_method_set_godot_bone_node) ( godot_bone_node: [`Dictionary`](class_dictionary.md) )        |
-| `void`                                              | [`set_unique_names`](#class_gltfskeleton_method_set_unique_names) ( unique_names: [Array](class_array.md) [`String`](class_string.md) ) |
+| [`BoneAttachment3D`](class_boneattachment3d.md)     | [`get_bone_attachment`](class_gltfskeleton.md#class_gltfskeleton_method_get_bone_attachment) ( idx: [`int`](class_int.md) )                                  |
+| [`int`](class_int.md)                               | [`get_bone_attachment_count`](class_gltfskeleton.md#class_gltfskeleton_method_get_bone_attachment_count) ( )                                                 |
+| [`Dictionary`](class_dictionary.md)                 | [`get_godot_bone_node`](class_gltfskeleton.md#class_gltfskeleton_method_get_godot_bone_node) ( )                                                             |
+| [`Skeleton3D`](class_skeleton3d.md)                 | [`get_godot_skeleton`](class_gltfskeleton.md#class_gltfskeleton_method_get_godot_skeleton) ( )                                                               |
+| [Array](class_array.md) [`String`](class_string.md) | [`get_unique_names`](class_gltfskeleton.md#class_gltfskeleton_method_get_unique_names) ( )                                                                   |
+| `void`                                              | [`set_godot_bone_node`](class_gltfskeleton.md#class_gltfskeleton_method_set_godot_bone_node) ( godot_bone_node: [`Dictionary`](class_dictionary.md) )        |
+| `void`                                              | [`set_unique_names`](class_gltfskeleton.md#class_gltfskeleton_method_set_unique_names) ( unique_names: [Array](class_array.md) [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -19,29 +19,29 @@ Provides a set of helper functions to create geometric shapes, compute intersect
 
 |||
 |:-:|:--|
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`clip_polygons`](#class_geometry2d_method_clip_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                               |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`clip_polyline_with_polygon`](#class_geometry2d_method_clip_polyline_with_polygon) ( polyline: [`PackedVector2Array`](class_packedvector2array.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                        |
-| [`PackedVector2Array`](class_packedvector2array.md)                         | [`convex_hull`](#class_geometry2d_method_convex_hull) ( points: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                                      |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`decompose_polygon_in_convex`](#class_geometry2d_method_decompose_polygon_in_convex) ( polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                     |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`exclude_polygons`](#class_geometry2d_method_exclude_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                         |
-| [`Vector2`](class_vector2.md)                                               | [`get_closest_point_to_segment`](#class_geometry2d_method_get_closest_point_to_segment) ( point: [`Vector2`](class_vector2.md), s1: [`Vector2`](class_vector2.md), s2: [`Vector2`](class_vector2.md) )                                                                                     |
-| [`Vector2`](class_vector2.md)                                               | [`get_closest_point_to_segment_uncapped`](#class_geometry2d_method_get_closest_point_to_segment_uncapped) ( point: [`Vector2`](class_vector2.md), s1: [`Vector2`](class_vector2.md), s2: [`Vector2`](class_vector2.md) )                                                                   |
-| [`PackedVector2Array`](class_packedvector2array.md)                         | [`get_closest_points_between_segments`](#class_geometry2d_method_get_closest_points_between_segments) ( p1: [`Vector2`](class_vector2.md), q1: [`Vector2`](class_vector2.md), p2: [`Vector2`](class_vector2.md), q2: [`Vector2`](class_vector2.md) )                                       |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`intersect_polygons`](#class_geometry2d_method_intersect_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                     |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`intersect_polyline_with_polygon`](#class_geometry2d_method_intersect_polyline_with_polygon) ( polyline: [`PackedVector2Array`](class_packedvector2array.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                              |
-| [`bool`](class_bool.md)                                                     | [`is_point_in_circle`](#class_geometry2d_method_is_point_in_circle) ( point: [`Vector2`](class_vector2.md), circle_position: [`Vector2`](class_vector2.md), circle_radius: [`float`](class_float.md) )                                                                                     |
-| [`bool`](class_bool.md)                                                     | [`is_point_in_polygon`](#class_geometry2d_method_is_point_in_polygon) ( point: [`Vector2`](class_vector2.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                               |
-| [`bool`](class_bool.md)                                                     | [`is_polygon_clockwise`](#class_geometry2d_method_is_polygon_clockwise) ( polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                   |
-| [`Variant`](class_variant.md)                                               | [`line_intersects_line`](#class_geometry2d_method_line_intersects_line) ( from_a: [`Vector2`](class_vector2.md), dir_a: [`Vector2`](class_vector2.md), from_b: [`Vector2`](class_vector2.md), dir_b: [`Vector2`](class_vector2.md) )                                                       |
-| [`Dictionary`](class_dictionary.md)                                         | [`make_atlas`](#class_geometry2d_method_make_atlas) ( sizes: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                                         |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`merge_polygons`](#class_geometry2d_method_merge_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                             |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`offset_polygon`](#class_geometry2d_method_offset_polygon) ( polygon: [`PackedVector2Array`](class_packedvector2array.md), delta: [`float`](class_float.md), join_type: [PolyJoinType](#enum_geometry2d_polyjointype) = 0 )                                                               |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`offset_polyline`](#class_geometry2d_method_offset_polyline) ( polyline: [`PackedVector2Array`](class_packedvector2array.md), delta: [`float`](class_float.md), join_type: [PolyJoinType](#enum_geometry2d_polyjointype) = 0, end_type: [PolyEndType](#enum_geometry2d_polyendtype) = 3 ) |
-| [`bool`](class_bool.md)                                                     | [`point_is_inside_triangle`](#class_geometry2d_method_point_is_inside_triangle) ( point: [`Vector2`](class_vector2.md), a: [`Vector2`](class_vector2.md), b: [`Vector2`](class_vector2.md), c: [`Vector2`](class_vector2.md) ) const[^const]                                               |
-| [`float`](class_float.md)                                                   | [`segment_intersects_circle`](#class_geometry2d_method_segment_intersects_circle) ( segment_from: [`Vector2`](class_vector2.md), segment_to: [`Vector2`](class_vector2.md), circle_position: [`Vector2`](class_vector2.md), circle_radius: [`float`](class_float.md) )                     |
-| [`Variant`](class_variant.md)                                               | [`segment_intersects_segment`](#class_geometry2d_method_segment_intersects_segment) ( from_a: [`Vector2`](class_vector2.md), to_a: [`Vector2`](class_vector2.md), from_b: [`Vector2`](class_vector2.md), to_b: [`Vector2`](class_vector2.md) )                                             |
-| [`PackedInt32Array`](class_packedint32array.md)                             | [`triangulate_delaunay`](#class_geometry2d_method_triangulate_delaunay) ( points: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                    |
-| [`PackedInt32Array`](class_packedint32array.md)                             | [`triangulate_polygon`](#class_geometry2d_method_triangulate_polygon) ( polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                     |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`clip_polygons`](class_geometry2d.md#class_geometry2d_method_clip_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                               |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`clip_polyline_with_polygon`](class_geometry2d.md#class_geometry2d_method_clip_polyline_with_polygon) ( polyline: [`PackedVector2Array`](class_packedvector2array.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                        |
+| [`PackedVector2Array`](class_packedvector2array.md)                         | [`convex_hull`](class_geometry2d.md#class_geometry2d_method_convex_hull) ( points: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                                      |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`decompose_polygon_in_convex`](class_geometry2d.md#class_geometry2d_method_decompose_polygon_in_convex) ( polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                     |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`exclude_polygons`](class_geometry2d.md#class_geometry2d_method_exclude_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                         |
+| [`Vector2`](class_vector2.md)                                               | [`get_closest_point_to_segment`](class_geometry2d.md#class_geometry2d_method_get_closest_point_to_segment) ( point: [`Vector2`](class_vector2.md), s1: [`Vector2`](class_vector2.md), s2: [`Vector2`](class_vector2.md) )                                                                                     |
+| [`Vector2`](class_vector2.md)                                               | [`get_closest_point_to_segment_uncapped`](class_geometry2d.md#class_geometry2d_method_get_closest_point_to_segment_uncapped) ( point: [`Vector2`](class_vector2.md), s1: [`Vector2`](class_vector2.md), s2: [`Vector2`](class_vector2.md) )                                                                   |
+| [`PackedVector2Array`](class_packedvector2array.md)                         | [`get_closest_points_between_segments`](class_geometry2d.md#class_geometry2d_method_get_closest_points_between_segments) ( p1: [`Vector2`](class_vector2.md), q1: [`Vector2`](class_vector2.md), p2: [`Vector2`](class_vector2.md), q2: [`Vector2`](class_vector2.md) )                                       |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`intersect_polygons`](class_geometry2d.md#class_geometry2d_method_intersect_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                     |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`intersect_polyline_with_polygon`](class_geometry2d.md#class_geometry2d_method_intersect_polyline_with_polygon) ( polyline: [`PackedVector2Array`](class_packedvector2array.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                              |
+| [`bool`](class_bool.md)                                                     | [`is_point_in_circle`](class_geometry2d.md#class_geometry2d_method_is_point_in_circle) ( point: [`Vector2`](class_vector2.md), circle_position: [`Vector2`](class_vector2.md), circle_radius: [`float`](class_float.md) )                                                                                     |
+| [`bool`](class_bool.md)                                                     | [`is_point_in_polygon`](class_geometry2d.md#class_geometry2d_method_is_point_in_polygon) ( point: [`Vector2`](class_vector2.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                               |
+| [`bool`](class_bool.md)                                                     | [`is_polygon_clockwise`](class_geometry2d.md#class_geometry2d_method_is_polygon_clockwise) ( polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                   |
+| [`Variant`](class_variant.md)                                               | [`line_intersects_line`](class_geometry2d.md#class_geometry2d_method_line_intersects_line) ( from_a: [`Vector2`](class_vector2.md), dir_a: [`Vector2`](class_vector2.md), from_b: [`Vector2`](class_vector2.md), dir_b: [`Vector2`](class_vector2.md) )                                                       |
+| [`Dictionary`](class_dictionary.md)                                         | [`make_atlas`](class_geometry2d.md#class_geometry2d_method_make_atlas) ( sizes: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                                         |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`merge_polygons`](class_geometry2d.md#class_geometry2d_method_merge_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                             |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`offset_polygon`](class_geometry2d.md#class_geometry2d_method_offset_polygon) ( polygon: [`PackedVector2Array`](class_packedvector2array.md), delta: [`float`](class_float.md), join_type: [PolyJoinType](#enum_geometry2d_polyjointype) = 0 )                                                               |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`offset_polyline`](class_geometry2d.md#class_geometry2d_method_offset_polyline) ( polyline: [`PackedVector2Array`](class_packedvector2array.md), delta: [`float`](class_float.md), join_type: [PolyJoinType](#enum_geometry2d_polyjointype) = 0, end_type: [PolyEndType](#enum_geometry2d_polyendtype) = 3 ) |
+| [`bool`](class_bool.md)                                                     | [`point_is_inside_triangle`](class_geometry2d.md#class_geometry2d_method_point_is_inside_triangle) ( point: [`Vector2`](class_vector2.md), a: [`Vector2`](class_vector2.md), b: [`Vector2`](class_vector2.md), c: [`Vector2`](class_vector2.md) ) const[^const]                                               |
+| [`float`](class_float.md)                                                   | [`segment_intersects_circle`](class_geometry2d.md#class_geometry2d_method_segment_intersects_circle) ( segment_from: [`Vector2`](class_vector2.md), segment_to: [`Vector2`](class_vector2.md), circle_position: [`Vector2`](class_vector2.md), circle_radius: [`float`](class_float.md) )                     |
+| [`Variant`](class_variant.md)                                               | [`segment_intersects_segment`](class_geometry2d.md#class_geometry2d_method_segment_intersects_segment) ( from_a: [`Vector2`](class_vector2.md), to_a: [`Vector2`](class_vector2.md), from_b: [`Vector2`](class_vector2.md), to_b: [`Vector2`](class_vector2.md) )                                             |
+| [`PackedInt32Array`](class_packedint32array.md)                             | [`triangulate_delaunay`](class_geometry2d.md#class_geometry2d_method_triangulate_delaunay) ( points: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                    |
+| [`PackedInt32Array`](class_packedint32array.md)                             | [`triangulate_polygon`](class_geometry2d.md#class_geometry2d_method_triangulate_polygon) ( polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -151,9 +151,9 @@ Endpoints are rounded off and extended by `delta` units.
 
 [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) **clip_polygons** ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_geometry2d_method_clip_polygons"></div>
 
-Clips `polygon_a` against `polygon_b` and returns an array of clipped polygons. This performs [`OPERATION_DIFFERENCE`](#class_geometry2d_constant_operation_difference) between polygons. Returns an empty array if `polygon_b` completely overlaps `polygon_a`.
+Clips `polygon_a` against `polygon_b` and returns an array of clipped polygons. This performs [`OPERATION_DIFFERENCE`](class_geometry2d.md#class_geometry2d_constant_operation_difference) between polygons. Returns an empty array if `polygon_b` completely overlaps `polygon_a`.
 
-If `polygon_b` is enclosed by `polygon_a`, returns an outer polygon (boundary) and inner polygon (hole) which could be distinguished by calling [`is_polygon_clockwise`](#class_geometry2d_method_is_polygon_clockwise).
+If `polygon_b` is enclosed by `polygon_a`, returns an outer polygon (boundary) and inner polygon (hole) which could be distinguished by calling [`is_polygon_clockwise`](class_geometry2d.md#class_geometry2d_method_is_polygon_clockwise).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -163,7 +163,7 @@ If `polygon_b` is enclosed by `polygon_a`, returns an outer polygon (boundary) a
 
 [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) **clip_polyline_with_polygon** ( polyline: [`PackedVector2Array`](class_packedvector2array.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_geometry2d_method_clip_polyline_with_polygon"></div>
 
-Clips `polyline` against `polygon` and returns an array of clipped polylines. This performs [`OPERATION_DIFFERENCE`](#class_geometry2d_constant_operation_difference) between the polyline and the polygon. This operation can be thought of as cutting a line with a closed shape.
+Clips `polyline` against `polygon` and returns an array of clipped polylines. This performs [`OPERATION_DIFFERENCE`](class_geometry2d.md#class_geometry2d_constant_operation_difference) between the polyline and the polygon. This operation can be thought of as cutting a line with a closed shape.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -193,9 +193,9 @@ Decomposes the `polygon` into multiple convex hulls and returns an array of [`Pa
 
 [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) **exclude_polygons** ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_geometry2d_method_exclude_polygons"></div>
 
-Mutually excludes common area defined by intersection of `polygon_a` and `polygon_b` (see [`intersect_polygons`](#class_geometry2d_method_intersect_polygons)) and returns an array of excluded polygons. This performs [`OPERATION_XOR`](#class_geometry2d_constant_operation_xor) between polygons. In other words, returns all but common area between polygons.
+Mutually excludes common area defined by intersection of `polygon_a` and `polygon_b` (see [`intersect_polygons`](class_geometry2d.md#class_geometry2d_method_intersect_polygons)) and returns an array of excluded polygons. This performs [`OPERATION_XOR`](class_geometry2d.md#class_geometry2d_constant_operation_xor) between polygons. In other words, returns all but common area between polygons.
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling [`is_polygon_clockwise`](#class_geometry2d_method_is_polygon_clockwise).
+The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling [`is_polygon_clockwise`](class_geometry2d.md#class_geometry2d_method_is_polygon_clockwise).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -235,9 +235,9 @@ Given the two 2D segments (`p1`, `q1`) and (`p2`, `q2`), finds those two points 
 
 [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) **intersect_polygons** ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_geometry2d_method_intersect_polygons"></div>
 
-Intersects `polygon_a` with `polygon_b` and returns an array of intersected polygons. This performs [`OPERATION_INTERSECTION`](#class_geometry2d_constant_operation_intersection) between polygons. In other words, returns common area shared by polygons. Returns an empty array if no intersection occurs.
+Intersects `polygon_a` with `polygon_b` and returns an array of intersected polygons. This performs [`OPERATION_INTERSECTION`](class_geometry2d.md#class_geometry2d_constant_operation_intersection) between polygons. In other words, returns common area shared by polygons. Returns an empty array if no intersection occurs.
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling [`is_polygon_clockwise`](#class_geometry2d_method_is_polygon_clockwise).
+The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling [`is_polygon_clockwise`](class_geometry2d.md#class_geometry2d_method_is_polygon_clockwise).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -247,7 +247,7 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
 
 [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) **intersect_polyline_with_polygon** ( polyline: [`PackedVector2Array`](class_packedvector2array.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_geometry2d_method_intersect_polyline_with_polygon"></div>
 
-Intersects `polyline` with `polygon` and returns an array of intersected polylines. This performs [`OPERATION_INTERSECTION`](#class_geometry2d_constant_operation_intersection) between the polyline and the polygon. This operation can be thought of as chopping a line with a closed shape.
+Intersects `polyline` with `polygon` and returns an array of intersected polylines. This performs [`OPERATION_INTERSECTION`](class_geometry2d.md#class_geometry2d_constant_operation_intersection) between the polyline and the polygon. This operation can be thought of as chopping a line with a closed shape.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -311,9 +311,9 @@ Given an array of [`Vector2`](class_vector2.md) s representing tiles, builds an 
 
 [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) **merge_polygons** ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_geometry2d_method_merge_polygons"></div>
 
-Merges (combines) `polygon_a` and `polygon_b` and returns an array of merged polygons. This performs [`OPERATION_UNION`](#class_geometry2d_constant_operation_union) between polygons.
+Merges (combines) `polygon_a` and `polygon_b` and returns an array of merged polygons. This performs [`OPERATION_UNION`](class_geometry2d.md#class_geometry2d_constant_operation_union) between polygons.
 
-The operation may result in an outer polygon (boundary) and multiple inner polygons (holes) produced which could be distinguished by calling [`is_polygon_clockwise`](#class_geometry2d_method_is_polygon_clockwise).
+The operation may result in an outer polygon (boundary) and multiple inner polygons (holes) produced which could be distinguished by calling [`is_polygon_clockwise`](class_geometry2d.md#class_geometry2d_method_is_polygon_clockwise).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -327,7 +327,7 @@ Inflates or deflates `polygon` by `delta` units (pixels). If `delta` is positive
 
 Each polygon's vertices will be rounded as determined by `join_type`, see [PolyJoinType](#enum_geometry2d_polyjointype).
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling [`is_polygon_clockwise`](#class_geometry2d_method_is_polygon_clockwise).
+The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling [`is_polygon_clockwise`](class_geometry2d.md#class_geometry2d_method_is_polygon_clockwise).
 
  **Note:** To translate the polygon's vertices specifically, multiply them to a [`Transform2D`](class_transform2d.md):
 
@@ -369,7 +369,7 @@ Each polygon's vertices will be rounded as determined by `join_type`, see [PolyJ
 
 Each polygon's endpoints will be rounded as determined by `end_type`, see [PolyEndType](#enum_geometry2d_polyendtype).
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling [`is_polygon_clockwise`](#class_geometry2d_method_is_polygon_clockwise).
+The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling [`is_polygon_clockwise`](class_geometry2d.md#class_geometry2d_method_is_polygon_clockwise).
 
 <!-- rst-class:: classref-item-separator -->
 

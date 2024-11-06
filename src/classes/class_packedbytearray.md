@@ -15,7 +15,7 @@ An array specifically designed to hold bytes. Packs data tightly, so it saves me
 
  **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
- **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](#class_packedbytearray_method_duplicate). This is *not* the case for built-in properties and methods. The returned packed array of these are a copies, and changing it will *not* affect the original value. To update a built-in property you need to modify the returned array, and then assign it to the property again.
+ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](class_packedbytearray.md#class_packedbytearray_method_duplicate). This is *not* the case for built-in properties and methods. The returned packed array of these are a copies, and changing it will *not* affect the original value. To update a built-in property you need to modify the returned array, and then assign it to the property again.
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
@@ -23,73 +23,73 @@ An array specifically designed to hold bytes. Packs data tightly, so it saves me
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](#class_packedbytearray_constructor_packedbytearray) ( )                                                     |
-| [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](#class_packedbytearray_constructor_packedbytearray) ( from: [`PackedByteArray`](class_packedbytearray.md) ) |
-| [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](#class_packedbytearray_constructor_packedbytearray) ( from: [`Array`](class_array.md) )                     |
+| [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](class_packedbytearray.md#class_packedbytearray_constructor_packedbytearray) ( )                                                     |
+| [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](class_packedbytearray.md#class_packedbytearray_constructor_packedbytearray) ( from: [`PackedByteArray`](class_packedbytearray.md) ) |
+| [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](class_packedbytearray.md#class_packedbytearray_constructor_packedbytearray) ( from: [`Array`](class_array.md) )                     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`append`](#class_packedbytearray_method_append) ( value: [`int`](class_int.md) )                                                                                                     |
-| `void`                                              | [`append_array`](#class_packedbytearray_method_append_array) ( array: [`PackedByteArray`](class_packedbytearray.md) )                                                                 |
-| [`int`](class_int.md)                               | [`bsearch`](#class_packedbytearray_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )                                                           |
-| `void`                                              | [`clear`](#class_packedbytearray_method_clear) ( )                                                                                                                                    |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`compress`](#class_packedbytearray_method_compress) ( compression_mode: [`int`](class_int.md) = 0 ) const[^const]                                                                    |
-| [`int`](class_int.md)                               | [`count`](#class_packedbytearray_method_count) ( value: [`int`](class_int.md) ) const[^const]                                                                                         |
-| [`float`](class_float.md)                           | [`decode_double`](#class_packedbytearray_method_decode_double) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                   |
-| [`float`](class_float.md)                           | [`decode_float`](#class_packedbytearray_method_decode_float) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                     |
-| [`float`](class_float.md)                           | [`decode_half`](#class_packedbytearray_method_decode_half) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                       |
-| [`int`](class_int.md)                               | [`decode_s8`](#class_packedbytearray_method_decode_s8) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                           |
-| [`int`](class_int.md)                               | [`decode_s16`](#class_packedbytearray_method_decode_s16) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
-| [`int`](class_int.md)                               | [`decode_s32`](#class_packedbytearray_method_decode_s32) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
-| [`int`](class_int.md)                               | [`decode_s64`](#class_packedbytearray_method_decode_s64) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
-| [`int`](class_int.md)                               | [`decode_u8`](#class_packedbytearray_method_decode_u8) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                           |
-| [`int`](class_int.md)                               | [`decode_u16`](#class_packedbytearray_method_decode_u16) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
-| [`int`](class_int.md)                               | [`decode_u32`](#class_packedbytearray_method_decode_u32) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
-| [`int`](class_int.md)                               | [`decode_u64`](#class_packedbytearray_method_decode_u64) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
-| [`Variant`](class_variant.md)                       | [`decode_var`](#class_packedbytearray_method_decode_var) ( byte_offset: [`int`](class_int.md), allow_objects: [`bool`](class_bool.md) = false ) const[^const]                         |
-| [`int`](class_int.md)                               | [`decode_var_size`](#class_packedbytearray_method_decode_var_size) ( byte_offset: [`int`](class_int.md), allow_objects: [`bool`](class_bool.md) = false ) const[^const]               |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`decompress`](#class_packedbytearray_method_decompress) ( buffer_size: [`int`](class_int.md), compression_mode: [`int`](class_int.md) = 0 ) const[^const]                            |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`decompress_dynamic`](#class_packedbytearray_method_decompress_dynamic) ( max_output_size: [`int`](class_int.md), compression_mode: [`int`](class_int.md) = 0 ) const[^const]        |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`duplicate`](#class_packedbytearray_method_duplicate) ( )                                                                                                                            |
-| `void`                                              | [`encode_double`](#class_packedbytearray_method_encode_double) ( byte_offset: [`int`](class_int.md), value: [`float`](class_float.md) )                                               |
-| `void`                                              | [`encode_float`](#class_packedbytearray_method_encode_float) ( byte_offset: [`int`](class_int.md), value: [`float`](class_float.md) )                                                 |
-| `void`                                              | [`encode_half`](#class_packedbytearray_method_encode_half) ( byte_offset: [`int`](class_int.md), value: [`float`](class_float.md) )                                                   |
-| `void`                                              | [`encode_s8`](#class_packedbytearray_method_encode_s8) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                           |
-| `void`                                              | [`encode_s16`](#class_packedbytearray_method_encode_s16) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
-| `void`                                              | [`encode_s32`](#class_packedbytearray_method_encode_s32) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
-| `void`                                              | [`encode_s64`](#class_packedbytearray_method_encode_s64) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
-| `void`                                              | [`encode_u8`](#class_packedbytearray_method_encode_u8) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                           |
-| `void`                                              | [`encode_u16`](#class_packedbytearray_method_encode_u16) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
-| `void`                                              | [`encode_u32`](#class_packedbytearray_method_encode_u32) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
-| `void`                                              | [`encode_u64`](#class_packedbytearray_method_encode_u64) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
-| [`int`](class_int.md)                               | [`encode_var`](#class_packedbytearray_method_encode_var) ( byte_offset: [`int`](class_int.md), value: [`Variant`](class_variant.md), allow_objects: [`bool`](class_bool.md) = false ) |
-| `void`                                              | [`fill`](#class_packedbytearray_method_fill) ( value: [`int`](class_int.md) )                                                                                                         |
-| [`int`](class_int.md)                               | [`find`](#class_packedbytearray_method_find) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                          |
-| [`String`](class_string.md)                         | [`get_string_from_ascii`](#class_packedbytearray_method_get_string_from_ascii) ( ) const[^const]                                                                                      |
-| [`String`](class_string.md)                         | [`get_string_from_utf8`](#class_packedbytearray_method_get_string_from_utf8) ( ) const[^const]                                                                                        |
-| [`String`](class_string.md)                         | [`get_string_from_utf16`](#class_packedbytearray_method_get_string_from_utf16) ( ) const[^const]                                                                                      |
-| [`String`](class_string.md)                         | [`get_string_from_utf32`](#class_packedbytearray_method_get_string_from_utf32) ( ) const[^const]                                                                                      |
-| [`String`](class_string.md)                         | [`get_string_from_wchar`](#class_packedbytearray_method_get_string_from_wchar) ( ) const[^const]                                                                                      |
-| [`bool`](class_bool.md)                             | [`has`](#class_packedbytearray_method_has) ( value: [`int`](class_int.md) ) const[^const]                                                                                             |
-| [`bool`](class_bool.md)                             | [`has_encoded_var`](#class_packedbytearray_method_has_encoded_var) ( byte_offset: [`int`](class_int.md), allow_objects: [`bool`](class_bool.md) = false ) const[^const]               |
-| [`String`](class_string.md)                         | [`hex_encode`](#class_packedbytearray_method_hex_encode) ( ) const[^const]                                                                                                            |
-| [`int`](class_int.md)                               | [`insert`](#class_packedbytearray_method_insert) ( at_index: [`int`](class_int.md), value: [`int`](class_int.md) )                                                                    |
-| [`bool`](class_bool.md)                             | [`is_empty`](#class_packedbytearray_method_is_empty) ( ) const[^const]                                                                                                                |
-| [`bool`](class_bool.md)                             | [`push_back`](#class_packedbytearray_method_push_back) ( value: [`int`](class_int.md) )                                                                                               |
-| `void`                                              | [`remove_at`](#class_packedbytearray_method_remove_at) ( index: [`int`](class_int.md) )                                                                                               |
-| [`int`](class_int.md)                               | [`resize`](#class_packedbytearray_method_resize) ( new_size: [`int`](class_int.md) )                                                                                                  |
-| `void`                                              | [`reverse`](#class_packedbytearray_method_reverse) ( )                                                                                                                                |
-| [`int`](class_int.md)                               | [`rfind`](#class_packedbytearray_method_rfind) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                       |
-| `void`                                              | [`set`](#class_packedbytearray_method_set) ( index: [`int`](class_int.md), value: [`int`](class_int.md) )                                                                             |
-| [`int`](class_int.md)                               | [`size`](#class_packedbytearray_method_size) ( ) const[^const]                                                                                                                        |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`slice`](#class_packedbytearray_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const]                                                |
-| `void`                                              | [`sort`](#class_packedbytearray_method_sort) ( )                                                                                                                                      |
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`to_float32_array`](#class_packedbytearray_method_to_float32_array) ( ) const[^const]                                                                                                |
-| [`PackedFloat64Array`](class_packedfloat64array.md) | [`to_float64_array`](#class_packedbytearray_method_to_float64_array) ( ) const[^const]                                                                                                |
-| [`PackedInt32Array`](class_packedint32array.md)     | [`to_int32_array`](#class_packedbytearray_method_to_int32_array) ( ) const[^const]                                                                                                    |
-| [`PackedInt64Array`](class_packedint64array.md)     | [`to_int64_array`](#class_packedbytearray_method_to_int64_array) ( ) const[^const]                                                                                                    |
+| [`bool`](class_bool.md)                             | [`append`](class_packedbytearray.md#class_packedbytearray_method_append) ( value: [`int`](class_int.md) )                                                                                                     |
+| `void`                                              | [`append_array`](class_packedbytearray.md#class_packedbytearray_method_append_array) ( array: [`PackedByteArray`](class_packedbytearray.md) )                                                                 |
+| [`int`](class_int.md)                               | [`bsearch`](class_packedbytearray.md#class_packedbytearray_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )                                                           |
+| `void`                                              | [`clear`](class_packedbytearray.md#class_packedbytearray_method_clear) ( )                                                                                                                                    |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`compress`](class_packedbytearray.md#class_packedbytearray_method_compress) ( compression_mode: [`int`](class_int.md) = 0 ) const[^const]                                                                    |
+| [`int`](class_int.md)                               | [`count`](class_packedbytearray.md#class_packedbytearray_method_count) ( value: [`int`](class_int.md) ) const[^const]                                                                                         |
+| [`float`](class_float.md)                           | [`decode_double`](class_packedbytearray.md#class_packedbytearray_method_decode_double) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                   |
+| [`float`](class_float.md)                           | [`decode_float`](class_packedbytearray.md#class_packedbytearray_method_decode_float) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                     |
+| [`float`](class_float.md)                           | [`decode_half`](class_packedbytearray.md#class_packedbytearray_method_decode_half) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                       |
+| [`int`](class_int.md)                               | [`decode_s8`](class_packedbytearray.md#class_packedbytearray_method_decode_s8) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                           |
+| [`int`](class_int.md)                               | [`decode_s16`](class_packedbytearray.md#class_packedbytearray_method_decode_s16) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
+| [`int`](class_int.md)                               | [`decode_s32`](class_packedbytearray.md#class_packedbytearray_method_decode_s32) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
+| [`int`](class_int.md)                               | [`decode_s64`](class_packedbytearray.md#class_packedbytearray_method_decode_s64) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
+| [`int`](class_int.md)                               | [`decode_u8`](class_packedbytearray.md#class_packedbytearray_method_decode_u8) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                           |
+| [`int`](class_int.md)                               | [`decode_u16`](class_packedbytearray.md#class_packedbytearray_method_decode_u16) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
+| [`int`](class_int.md)                               | [`decode_u32`](class_packedbytearray.md#class_packedbytearray_method_decode_u32) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
+| [`int`](class_int.md)                               | [`decode_u64`](class_packedbytearray.md#class_packedbytearray_method_decode_u64) ( byte_offset: [`int`](class_int.md) ) const[^const]                                                                         |
+| [`Variant`](class_variant.md)                       | [`decode_var`](class_packedbytearray.md#class_packedbytearray_method_decode_var) ( byte_offset: [`int`](class_int.md), allow_objects: [`bool`](class_bool.md) = false ) const[^const]                         |
+| [`int`](class_int.md)                               | [`decode_var_size`](class_packedbytearray.md#class_packedbytearray_method_decode_var_size) ( byte_offset: [`int`](class_int.md), allow_objects: [`bool`](class_bool.md) = false ) const[^const]               |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`decompress`](class_packedbytearray.md#class_packedbytearray_method_decompress) ( buffer_size: [`int`](class_int.md), compression_mode: [`int`](class_int.md) = 0 ) const[^const]                            |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`decompress_dynamic`](class_packedbytearray.md#class_packedbytearray_method_decompress_dynamic) ( max_output_size: [`int`](class_int.md), compression_mode: [`int`](class_int.md) = 0 ) const[^const]        |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`duplicate`](class_packedbytearray.md#class_packedbytearray_method_duplicate) ( )                                                                                                                            |
+| `void`                                              | [`encode_double`](class_packedbytearray.md#class_packedbytearray_method_encode_double) ( byte_offset: [`int`](class_int.md), value: [`float`](class_float.md) )                                               |
+| `void`                                              | [`encode_float`](class_packedbytearray.md#class_packedbytearray_method_encode_float) ( byte_offset: [`int`](class_int.md), value: [`float`](class_float.md) )                                                 |
+| `void`                                              | [`encode_half`](class_packedbytearray.md#class_packedbytearray_method_encode_half) ( byte_offset: [`int`](class_int.md), value: [`float`](class_float.md) )                                                   |
+| `void`                                              | [`encode_s8`](class_packedbytearray.md#class_packedbytearray_method_encode_s8) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                           |
+| `void`                                              | [`encode_s16`](class_packedbytearray.md#class_packedbytearray_method_encode_s16) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
+| `void`                                              | [`encode_s32`](class_packedbytearray.md#class_packedbytearray_method_encode_s32) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
+| `void`                                              | [`encode_s64`](class_packedbytearray.md#class_packedbytearray_method_encode_s64) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
+| `void`                                              | [`encode_u8`](class_packedbytearray.md#class_packedbytearray_method_encode_u8) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                           |
+| `void`                                              | [`encode_u16`](class_packedbytearray.md#class_packedbytearray_method_encode_u16) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
+| `void`                                              | [`encode_u32`](class_packedbytearray.md#class_packedbytearray_method_encode_u32) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
+| `void`                                              | [`encode_u64`](class_packedbytearray.md#class_packedbytearray_method_encode_u64) ( byte_offset: [`int`](class_int.md), value: [`int`](class_int.md) )                                                         |
+| [`int`](class_int.md)                               | [`encode_var`](class_packedbytearray.md#class_packedbytearray_method_encode_var) ( byte_offset: [`int`](class_int.md), value: [`Variant`](class_variant.md), allow_objects: [`bool`](class_bool.md) = false ) |
+| `void`                                              | [`fill`](class_packedbytearray.md#class_packedbytearray_method_fill) ( value: [`int`](class_int.md) )                                                                                                         |
+| [`int`](class_int.md)                               | [`find`](class_packedbytearray.md#class_packedbytearray_method_find) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                          |
+| [`String`](class_string.md)                         | [`get_string_from_ascii`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_ascii) ( ) const[^const]                                                                                      |
+| [`String`](class_string.md)                         | [`get_string_from_utf8`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf8) ( ) const[^const]                                                                                        |
+| [`String`](class_string.md)                         | [`get_string_from_utf16`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf16) ( ) const[^const]                                                                                      |
+| [`String`](class_string.md)                         | [`get_string_from_utf32`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf32) ( ) const[^const]                                                                                      |
+| [`String`](class_string.md)                         | [`get_string_from_wchar`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_wchar) ( ) const[^const]                                                                                      |
+| [`bool`](class_bool.md)                             | [`has`](class_packedbytearray.md#class_packedbytearray_method_has) ( value: [`int`](class_int.md) ) const[^const]                                                                                             |
+| [`bool`](class_bool.md)                             | [`has_encoded_var`](class_packedbytearray.md#class_packedbytearray_method_has_encoded_var) ( byte_offset: [`int`](class_int.md), allow_objects: [`bool`](class_bool.md) = false ) const[^const]               |
+| [`String`](class_string.md)                         | [`hex_encode`](class_packedbytearray.md#class_packedbytearray_method_hex_encode) ( ) const[^const]                                                                                                            |
+| [`int`](class_int.md)                               | [`insert`](class_packedbytearray.md#class_packedbytearray_method_insert) ( at_index: [`int`](class_int.md), value: [`int`](class_int.md) )                                                                    |
+| [`bool`](class_bool.md)                             | [`is_empty`](class_packedbytearray.md#class_packedbytearray_method_is_empty) ( ) const[^const]                                                                                                                |
+| [`bool`](class_bool.md)                             | [`push_back`](class_packedbytearray.md#class_packedbytearray_method_push_back) ( value: [`int`](class_int.md) )                                                                                               |
+| `void`                                              | [`remove_at`](class_packedbytearray.md#class_packedbytearray_method_remove_at) ( index: [`int`](class_int.md) )                                                                                               |
+| [`int`](class_int.md)                               | [`resize`](class_packedbytearray.md#class_packedbytearray_method_resize) ( new_size: [`int`](class_int.md) )                                                                                                  |
+| `void`                                              | [`reverse`](class_packedbytearray.md#class_packedbytearray_method_reverse) ( )                                                                                                                                |
+| [`int`](class_int.md)                               | [`rfind`](class_packedbytearray.md#class_packedbytearray_method_rfind) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                       |
+| `void`                                              | [`set`](class_packedbytearray.md#class_packedbytearray_method_set) ( index: [`int`](class_int.md), value: [`int`](class_int.md) )                                                                             |
+| [`int`](class_int.md)                               | [`size`](class_packedbytearray.md#class_packedbytearray_method_size) ( ) const[^const]                                                                                                                        |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`slice`](class_packedbytearray.md#class_packedbytearray_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const]                                                |
+| `void`                                              | [`sort`](class_packedbytearray.md#class_packedbytearray_method_sort) ( )                                                                                                                                      |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`to_float32_array`](class_packedbytearray.md#class_packedbytearray_method_to_float32_array) ( ) const[^const]                                                                                                |
+| [`PackedFloat64Array`](class_packedfloat64array.md) | [`to_float64_array`](class_packedbytearray.md#class_packedbytearray_method_to_float64_array) ( ) const[^const]                                                                                                |
+| [`PackedInt32Array`](class_packedint32array.md)     | [`to_int32_array`](class_packedbytearray.md#class_packedbytearray_method_to_int32_array) ( ) const[^const]                                                                                                    |
+| [`PackedInt64Array`](class_packedint64array.md)     | [`to_int64_array`](class_packedbytearray.md#class_packedbytearray_method_to_int64_array) ( ) const[^const]                                                                                                    |
 
 ## 运算符
 
@@ -138,7 +138,7 @@ Constructs a new **PackedByteArray**. Optionally, you can pass in a generic [`Ar
 
 [`bool`](class_bool.md) **append** ( value: [`int`](class_int.md) )<div id="class_packedbytearray_method_append"></div>
 
-Appends an element at the end of the array (alias of [`push_back`](#class_packedbytearray_method_push_back)).
+Appends an element at the end of the array (alias of [`push_back`](class_packedbytearray.md#class_packedbytearray_method_push_back)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -160,7 +160,7 @@ Appends a **PackedByteArray** at the end of this array.
 
 Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a `before` specifier can be passed. If `false`, the returned index comes after all existing entries of the value in the array.
 
- **Note:** Calling [`bsearch`](#class_packedbytearray_method_bsearch) on an unsorted array results in unexpected behavior.
+ **Note:** Calling [`bsearch`](class_packedbytearray.md#class_packedbytearray_method_bsearch) on an unsorted array results in unexpected behavior.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -170,7 +170,7 @@ Finds the index of an existing value (or the insertion index that maintains sort
 
 `void` **clear** ( )<div id="class_packedbytearray_method_clear"></div>
 
-Clears the array. This is equivalent to using [`resize`](#class_packedbytearray_method_resize) with a size of `0`.
+Clears the array. This is equivalent to using [`resize`](class_packedbytearray.md#class_packedbytearray_method_resize) with a size of `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -344,7 +344,7 @@ Returns a new **PackedByteArray** with the data decompressed. Set `buffer_size` 
 
 Returns a new **PackedByteArray** with the data decompressed. Set the compression mode using one of [CompressionMode](#enum_fileaccess_compressionmode)'s constants. **This method only accepts brotli, gzip, and deflate compression modes.** 
 
-This method is potentially slower than [`decompress`](#class_packedbytearray_method_decompress), as it may have to re-allocate its output buffer multiple times while decompressing, whereas [`decompress`](#class_packedbytearray_method_decompress) knows it's output buffer size from the beginning.
+This method is potentially slower than [`decompress`](class_packedbytearray.md#class_packedbytearray_method_decompress), as it may have to re-allocate its output buffer multiple times while decompressing, whereas [`decompress`](class_packedbytearray.md#class_packedbytearray_method_decompress) knows it's output buffer size from the beginning.
 
 GZIP has a maximal compression ratio of 1032:1, meaning it's very possible for a small compressed payload to decompress to a potentially very large output. To guard against this, you may provide a maximum size this function is allowed to allocate in bytes via `max_output_size`. Passing -1 will allow for unbounded output. If any positive value is passed, and the decompression exceeds that amount in bytes, then an error will be returned.
 
@@ -488,7 +488,7 @@ Encodes a [`Variant`](class_variant.md) at the index of `byte_offset` bytes. A s
 
 `void` **fill** ( value: [`int`](class_int.md) )<div id="class_packedbytearray_method_fill"></div>
 
-Assigns the given value to all elements in the array. This can typically be used together with [`resize`](#class_packedbytearray_method_resize) to create an array with a given size and initialized elements.
+Assigns the given value to all elements in the array. This can typically be used together with [`resize`](class_packedbytearray.md#class_packedbytearray_method_resize) to create an array with a given size and initialized elements.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -508,7 +508,7 @@ Searches the array for a value and returns its index or `-1` if not found. Optio
 
 [`String`](class_string.md) **get_string_from_ascii** ( ) const[^const]<div id="class_packedbytearray_method_get_string_from_ascii"></div>
 
-Converts ASCII/Latin-1 encoded array to [`String`](class_string.md). Fast alternative to [`get_string_from_utf8`](#class_packedbytearray_method_get_string_from_utf8) if the content is ASCII/Latin-1 only. Unlike the UTF-8 function this function maps every byte to a character in the array. Multibyte sequences will not be interpreted correctly. For parsing user input always use [`get_string_from_utf8`](#class_packedbytearray_method_get_string_from_utf8). This is the inverse of [`String.to_ascii_buffer`](#class_string_method_to_ascii_buffer).
+Converts ASCII/Latin-1 encoded array to [`String`](class_string.md). Fast alternative to [`get_string_from_utf8`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf8) if the content is ASCII/Latin-1 only. Unlike the UTF-8 function this function maps every byte to a character in the array. Multibyte sequences will not be interpreted correctly. For parsing user input always use [`get_string_from_utf8`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf8). This is the inverse of [`String.to_ascii_buffer`](class_string.md#class_string_method_to_ascii_buffer).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -518,7 +518,7 @@ Converts ASCII/Latin-1 encoded array to [`String`](class_string.md). Fast altern
 
 [`String`](class_string.md) **get_string_from_utf8** ( ) const[^const]<div id="class_packedbytearray_method_get_string_from_utf8"></div>
 
-Converts UTF-8 encoded array to [`String`](class_string.md). Slower than [`get_string_from_ascii`](#class_packedbytearray_method_get_string_from_ascii) but supports UTF-8 encoded data. Use this function if you are unsure about the source of the data. For user input this function should always be preferred. Returns empty string if source array is not valid UTF-8 string. This is the inverse of [`String.to_utf8_buffer`](#class_string_method_to_utf8_buffer).
+Converts UTF-8 encoded array to [`String`](class_string.md). Slower than [`get_string_from_ascii`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_ascii) but supports UTF-8 encoded data. Use this function if you are unsure about the source of the data. For user input this function should always be preferred. Returns empty string if source array is not valid UTF-8 string. This is the inverse of [`String.to_utf8_buffer`](class_string.md#class_string_method_to_utf8_buffer).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -528,7 +528,7 @@ Converts UTF-8 encoded array to [`String`](class_string.md). Slower than [`get_s
 
 [`String`](class_string.md) **get_string_from_utf16** ( ) const[^const]<div id="class_packedbytearray_method_get_string_from_utf16"></div>
 
-Converts UTF-16 encoded array to [`String`](class_string.md). If the BOM is missing, system endianness is assumed. Returns empty string if source array is not valid UTF-16 string. This is the inverse of [`String.to_utf16_buffer`](#class_string_method_to_utf16_buffer).
+Converts UTF-16 encoded array to [`String`](class_string.md). If the BOM is missing, system endianness is assumed. Returns empty string if source array is not valid UTF-16 string. This is the inverse of [`String.to_utf16_buffer`](class_string.md#class_string_method_to_utf16_buffer).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -538,7 +538,7 @@ Converts UTF-16 encoded array to [`String`](class_string.md). If the BOM is miss
 
 [`String`](class_string.md) **get_string_from_utf32** ( ) const[^const]<div id="class_packedbytearray_method_get_string_from_utf32"></div>
 
-Converts UTF-32 encoded array to [`String`](class_string.md). System endianness is assumed. Returns empty string if source array is not valid UTF-32 string. This is the inverse of [`String.to_utf32_buffer`](#class_string_method_to_utf32_buffer).
+Converts UTF-32 encoded array to [`String`](class_string.md). System endianness is assumed. Returns empty string if source array is not valid UTF-32 string. This is the inverse of [`String.to_utf32_buffer`](class_string.md#class_string_method_to_utf32_buffer).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -548,7 +548,7 @@ Converts UTF-32 encoded array to [`String`](class_string.md). System endianness 
 
 [`String`](class_string.md) **get_string_from_wchar** ( ) const[^const]<div id="class_packedbytearray_method_get_string_from_wchar"></div>
 
-Converts wide character (`wchar_t`, UTF-16 on Windows, UTF-32 on other platforms) encoded array to [`String`](class_string.md). Returns empty string if source array is not valid wide string. This is the inverse of [`String.to_wchar_buffer`](#class_string_method_to_wchar_buffer).
+Converts wide character (`wchar_t`, UTF-16 on Windows, UTF-32 on other platforms) encoded array to [`String`](class_string.md). Returns empty string if source array is not valid wide string. This is the inverse of [`String.to_wchar_buffer`](class_string.md#class_string_method_to_wchar_buffer).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -648,7 +648,7 @@ Removes an element from the array by index.
 
 [`int`](class_int.md) **resize** ( new_size: [`int`](class_int.md) )<div id="class_packedbytearray_method_resize"></div>
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling [`resize`](#class_packedbytearray_method_resize) once and assigning the new values is faster than adding new elements one by one.
+Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling [`resize`](class_packedbytearray.md#class_packedbytearray_method_resize) once and assigning the new values is faster than adding new elements one by one.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -790,7 +790,7 @@ Returns `true` if contents of the arrays differ.
 
 [`PackedByteArray`](class_packedbytearray.md) **operator +** ( right: [`PackedByteArray`](class_packedbytearray.md) ) <div id="class_packedbytearray_operator_sum_packedbytearray"></div>
 
-Returns a new **PackedByteArray** with contents of `right` added at the end of this array. For better performance, consider using [`append_array`](#class_packedbytearray_method_append_array) instead.
+Returns a new **PackedByteArray** with contents of `right` added at the end of this array. For better performance, consider using [`append_array`](class_packedbytearray.md#class_packedbytearray_method_append_array) instead.
 
 <!-- rst-class:: classref-item-separator -->
 

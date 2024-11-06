@@ -15,7 +15,7 @@ A node used to rotate all bones of a [`Skeleton3D`](class_skeleton3d.md) bone ch
 
 ## 描述
 
-SkeletonIK3D is used to rotate all bones of a [`Skeleton3D`](class_skeleton3d.md) bone chain a way that places the end bone at a desired 3D position. A typical scenario for IK in games is to place a character's feet on the ground or a character's hands on a currently held object. SkeletonIK uses FabrikInverseKinematic internally to solve the bone chain and applies the results to the [`Skeleton3D`](class_skeleton3d.md) `bones_global_pose_override` property for all affected bones in the chain. If fully applied, this overwrites any bone transform from [`Animation`](class_animation.md) s or bone custom poses set by users. The applied amount can be controlled with the [`SkeletonModifier3D.influence`](#class_skeletonmodifier3d_property_influence) property.
+SkeletonIK3D is used to rotate all bones of a [`Skeleton3D`](class_skeleton3d.md) bone chain a way that places the end bone at a desired 3D position. A typical scenario for IK in games is to place a character's feet on the ground or a character's hands on a currently held object. SkeletonIK uses FabrikInverseKinematic internally to solve the bone chain and applies the results to the [`Skeleton3D`](class_skeleton3d.md) `bones_global_pose_override` property for all affected bones in the chain. If fully applied, this overwrites any bone transform from [`Animation`](class_animation.md) s or bone custom poses set by users. The applied amount can be controlled with the [`SkeletonModifier3D.influence`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_property_influence) property.
 
 ```
 
@@ -44,25 +44,25 @@ SkeletonIK3D is used to rotate all bones of a [`Skeleton3D`](class_skeleton3d.md
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)             | [`interpolation`](#class_skeletonik3d_property_interpolation)           |                                                     |
-| [`Vector3`](class_vector3.md)         | [`magnet`](#class_skeletonik3d_property_magnet)                         | ``Vector3(0, 0, 0)``                                |
-| [`int`](class_int.md)                 | [`max_iterations`](#class_skeletonik3d_property_max_iterations)         | ``10``                                              |
-| [`float`](class_float.md)             | [`min_distance`](#class_skeletonik3d_property_min_distance)             | ``0.01``                                            |
-| [`bool`](class_bool.md)               | [`override_tip_basis`](#class_skeletonik3d_property_override_tip_basis) | ``true``                                            |
-| [`StringName`](class_stringname.md)   | [`root_bone`](#class_skeletonik3d_property_root_bone)                   | ``&""``                                             |
-| [`Transform3D`](class_transform3d.md) | [`target`](#class_skeletonik3d_property_target)                         | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
-| [`NodePath`](class_nodepath.md)       | [`target_node`](#class_skeletonik3d_property_target_node)               | ``NodePath("")``                                    |
-| [`StringName`](class_stringname.md)   | [`tip_bone`](#class_skeletonik3d_property_tip_bone)                     | ``&""``                                             |
-| [`bool`](class_bool.md)               | [`use_magnet`](#class_skeletonik3d_property_use_magnet)                 | ``false``                                           |
+| [`float`](class_float.md)             | [`interpolation`](class_skeletonik3d.md#class_skeletonik3d_property_interpolation)           |                                                     |
+| [`Vector3`](class_vector3.md)         | [`magnet`](class_skeletonik3d.md#class_skeletonik3d_property_magnet)                         | ``Vector3(0, 0, 0)``                                |
+| [`int`](class_int.md)                 | [`max_iterations`](class_skeletonik3d.md#class_skeletonik3d_property_max_iterations)         | ``10``                                              |
+| [`float`](class_float.md)             | [`min_distance`](class_skeletonik3d.md#class_skeletonik3d_property_min_distance)             | ``0.01``                                            |
+| [`bool`](class_bool.md)               | [`override_tip_basis`](class_skeletonik3d.md#class_skeletonik3d_property_override_tip_basis) | ``true``                                            |
+| [`StringName`](class_stringname.md)   | [`root_bone`](class_skeletonik3d.md#class_skeletonik3d_property_root_bone)                   | ``&""``                                             |
+| [`Transform3D`](class_transform3d.md) | [`target`](class_skeletonik3d.md#class_skeletonik3d_property_target)                         | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
+| [`NodePath`](class_nodepath.md)       | [`target_node`](class_skeletonik3d.md#class_skeletonik3d_property_target_node)               | ``NodePath("")``                                    |
+| [`StringName`](class_stringname.md)   | [`tip_bone`](class_skeletonik3d.md#class_skeletonik3d_property_tip_bone)                     | ``&""``                                             |
+| [`bool`](class_bool.md)               | [`use_magnet`](class_skeletonik3d.md#class_skeletonik3d_property_use_magnet)                 | ``false``                                           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Skeleton3D`](class_skeleton3d.md) | [`get_parent_skeleton`](#class_skeletonik3d_method_get_parent_skeleton) ( ) const[^const] |
-| [`bool`](class_bool.md)             | [`is_running`](#class_skeletonik3d_method_is_running) ( )                                 |
-| `void`                              | [`start`](#class_skeletonik3d_method_start) ( one_time: [`bool`](class_bool.md) = false ) |
-| `void`                              | [`stop`](#class_skeletonik3d_method_stop) ( )                                             |
+| [`Skeleton3D`](class_skeleton3d.md) | [`get_parent_skeleton`](class_skeletonik3d.md#class_skeletonik3d_method_get_parent_skeleton) ( ) const[^const] |
+| [`bool`](class_bool.md)             | [`is_running`](class_skeletonik3d.md#class_skeletonik3d_method_is_running) ( )                                 |
+| `void`                              | [`start`](class_skeletonik3d.md#class_skeletonik3d_method_start) ( one_time: [`bool`](class_bool.md) = false ) |
+| `void`                              | [`stop`](class_skeletonik3d.md#class_skeletonik3d_method_stop) ( )                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -77,7 +77,7 @@ SkeletonIK3D is used to rotate all bones of a [`Skeleton3D`](class_skeleton3d.md
 - `void` **set_interpolation** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_interpolation** ( )
 
-**已弃用：** Use [`SkeletonModifier3D.influence`](#class_skeletonmodifier3d_property_influence) instead.
+**已弃用：** Use [`SkeletonModifier3D.influence`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_property_influence) instead.
 
 Interpolation value for how much the IK results are applied to the current skeleton bone chain. A value of `1.0` will overwrite all skeleton bone transforms completely while a value of `0.0` will visually disable the SkeletonIK.
 
@@ -92,7 +92,7 @@ Interpolation value for how much the IK results are applied to the current skele
 - `void` **set_magnet_position** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_magnet_position** ( )
 
-Secondary target position (first is [`target`](#class_skeletonik3d_property_target) property or [`target_node`](#class_skeletonik3d_property_target_node)) for the IK chain. Use magnet position (pole target) to control the bending of the IK chain. Only works if the bone chain has more than 2 bones. The middle chain bone position will be linearly interpolated with the magnet position.
+Secondary target position (first is [`target`](class_skeletonik3d.md#class_skeletonik3d_property_target) property or [`target_node`](class_skeletonik3d.md#class_skeletonik3d_property_target_node)) for the IK chain. Use magnet position (pole target) to control the bending of the IK chain. Only works if the bone chain has more than 2 bones. The middle chain bone position will be linearly interpolated with the magnet position.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -131,7 +131,7 @@ The minimum distance between bone and goal target. If the distance is below this
 - `void` **set_override_tip_basis** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_override_tip_basis** ( )
 
-If `true` overwrites the rotation of the tip bone with the rotation of the [`target`](#class_skeletonik3d_property_target) (or [`target_node`](#class_skeletonik3d_property_target_node) if defined).
+If `true` overwrites the rotation of the tip bone with the rotation of the [`target`](class_skeletonik3d.md#class_skeletonik3d_property_target) (or [`target_node`](class_skeletonik3d.md#class_skeletonik3d_property_target_node) if defined).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -157,7 +157,7 @@ The name of the current root bone, the first bone in the IK chain.
 - `void` **set_target_transform** ( value: [`Transform3D`](class_transform3d.md) )
 - [`Transform3D`](class_transform3d.md) **get_target_transform** ( )
 
-First target of the IK chain where the tip bone is placed and, if [`override_tip_basis`](#class_skeletonik3d_property_override_tip_basis) is `true`, how the tip bone is rotated. If a [`target_node`](#class_skeletonik3d_property_target_node) path is available the nodes transform is used instead and this property is ignored.
+First target of the IK chain where the tip bone is placed and, if [`override_tip_basis`](class_skeletonik3d.md#class_skeletonik3d_property_override_tip_basis) is `true`, how the tip bone is rotated. If a [`target_node`](class_skeletonik3d.md#class_skeletonik3d_property_target_node) path is available the nodes transform is used instead and this property is ignored.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -170,7 +170,7 @@ First target of the IK chain where the tip bone is placed and, if [`override_tip
 - `void` **set_target_node** ( value: [`NodePath`](class_nodepath.md) )
 - [`NodePath`](class_nodepath.md) **get_target_node** ( )
 
-Target node [`NodePath`](class_nodepath.md) for the IK chain. If available, the node's current [`Transform3D`](class_transform3d.md) is used instead of the [`target`](#class_skeletonik3d_property_target) property.
+Target node [`NodePath`](class_nodepath.md) for the IK chain. If available, the node's current [`Transform3D`](class_transform3d.md) is used instead of the [`target`](class_skeletonik3d.md#class_skeletonik3d_property_target) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -183,7 +183,7 @@ Target node [`NodePath`](class_nodepath.md) for the IK chain. If available, the 
 - `void` **set_tip_bone** ( value: [`StringName`](class_stringname.md) )
 - [`StringName`](class_stringname.md) **get_tip_bone** ( )
 
-The name of the current tip bone, the last bone in the IK chain placed at the [`target`](#class_skeletonik3d_property_target) transform (or [`target_node`](#class_skeletonik3d_property_target_node) if defined).
+The name of the current tip bone, the last bone in the IK chain placed at the [`target`](class_skeletonik3d.md#class_skeletonik3d_property_target) transform (or [`target_node`](class_skeletonik3d.md#class_skeletonik3d_property_target_node) if defined).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -218,7 +218,7 @@ Returns the parent [`Skeleton3D`](class_skeleton3d.md) Node that was present whe
 
 [`bool`](class_bool.md) **is_running** ( )<div id="class_skeletonik3d_method_is_running"></div>
 
-Returns `true` if SkeletonIK is applying IK effects on continues frames to the [`Skeleton3D`](class_skeleton3d.md) bones. Returns `false` if SkeletonIK is stopped or [`start`](#class_skeletonik3d_method_start) was used with the `one_time` parameter set to `true`.
+Returns `true` if SkeletonIK is applying IK effects on continues frames to the [`Skeleton3D`](class_skeleton3d.md) bones. Returns `false` if SkeletonIK is stopped or [`start`](class_skeletonik3d.md#class_skeletonik3d_method_start) was used with the `one_time` parameter set to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -238,7 +238,7 @@ Starts applying IK effects on each frame to the [`Skeleton3D`](class_skeleton3d.
 
 `void` **stop** ( )<div id="class_skeletonik3d_method_stop"></div>
 
-Stops applying IK effects on each frame to the [`Skeleton3D`](class_skeleton3d.md) bones and also calls [`Skeleton3D.clear_bones_global_pose_override`](#class_skeleton3d_method_clear_bones_global_pose_override) to remove existing overrides on all bones.
+Stops applying IK effects on each frame to the [`Skeleton3D`](class_skeleton3d.md) bones and also calls [`Skeleton3D.clear_bones_global_pose_override`](class_skeleton3d.md#class_skeleton3d_method_clear_bones_global_pose_override) to remove existing overrides on all bones.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

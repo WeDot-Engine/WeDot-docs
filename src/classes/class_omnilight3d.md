@@ -15,18 +15,18 @@ Omnidirectional light, such as a light bulb or a candle.
 
 An Omnidirectional light is a type of [`Light3D`](class_light3d.md) that emits light in all directions. The light is attenuated by distance and this attenuation can be configured by changing its energy, radius, and attenuation parameters.
 
- **Note:** When using the Mobile rendering method, only 8 omni lights can be displayed on each mesh resource. Attempting to display more than 8 omni lights on a single mesh resource will result in omni lights flickering in and out as the camera moves. When using the Compatibility rendering method, only 8 omni lights can be displayed on each mesh resource by default, but this can be increased by adjusting [`ProjectSettings.rendering/limits/opengl/max_lights_per_object`](#class_projectsettings_property_rendering/limits/opengl/max_lights_per_object).
+ **Note:** When using the Mobile rendering method, only 8 omni lights can be displayed on each mesh resource. Attempting to display more than 8 omni lights on a single mesh resource will result in omni lights flickering in and out as the camera moves. When using the Compatibility rendering method, only 8 omni lights can be displayed on each mesh resource by default, but this can be increased by adjusting [`ProjectSettings.rendering/limits/opengl/max_lights_per_object`](class_projectsettings.md#class_projectsettings_property_rendering/limits/opengl/max_lights_per_object).
 
- **Note:** When using the Mobile or Compatibility rendering methods, omni lights will only correctly affect meshes whose visibility AABB intersects with the light's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, [`GeometryInstance3D.extra_cull_margin`](#class_geometryinstance3d_property_extra_cull_margin) must be increased on the mesh. Otherwise, the light may not be visible on the mesh.
+ **Note:** When using the Mobile or Compatibility rendering methods, omni lights will only correctly affect meshes whose visibility AABB intersects with the light's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, [`GeometryInstance3D.extra_cull_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_extra_cull_margin) must be increased on the mesh. Otherwise, the light may not be visible on the mesh.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                  | [`omni_attenuation`](#class_omnilight3d_property_omni_attenuation) | ``1.0``                                                                     |
-| [`float`](class_float.md)                  | [`omni_range`](#class_omnilight3d_property_omni_range)             | ``5.0``                                                                     |
-| [ShadowMode](#enum_omnilight3d_shadowmode) | [`omni_shadow_mode`](#class_omnilight3d_property_omni_shadow_mode) | ``1``                                                                       |
-| [`float`](class_float.md)                  | shadow_normal_bias                                                 | ``1.0`` (overrides [`Light3D`](#class_light3d_property_shadow_normal_bias)) |
+| [`float`](class_float.md)                  | [`omni_attenuation`](class_omnilight3d.md#class_omnilight3d_property_omni_attenuation) | ``1.0``                                                                                     |
+| [`float`](class_float.md)                  | [`omni_range`](class_omnilight3d.md#class_omnilight3d_property_omni_range)             | ``5.0``                                                                                     |
+| [ShadowMode](#enum_omnilight3d_shadowmode) | [`omni_shadow_mode`](class_omnilight3d.md#class_omnilight3d_property_omni_shadow_mode) | ``1``                                                                                       |
+| [`float`](class_float.md)                  | shadow_normal_bias                                                                     | ``1.0`` (overrides [`Light3D`](class_light3d.md#class_light3d_property_shadow_normal_bias)) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -42,13 +42,13 @@ enum **ShadowMode**: <div id="enum_omnilight3d_shadowmode"></div>
 
 [ShadowMode](#enum_omnilight3d_shadowmode) **SHADOW_DUAL_PARABOLOID** = ``0``
 
-Shadows are rendered to a dual-paraboloid texture. Faster than [`SHADOW_CUBE`](#class_omnilight3d_constant_shadow_cube), but lower-quality.
+Shadows are rendered to a dual-paraboloid texture. Faster than [`SHADOW_CUBE`](class_omnilight3d.md#class_omnilight3d_constant_shadow_cube), but lower-quality.
 
 <div id="_class_omnilight3d_constant_shadow_cube"></div>
 
 [ShadowMode](#enum_omnilight3d_shadowmode) **SHADOW_CUBE** = ``1``
 
-Shadows are rendered to a cubemap. Slower than [`SHADOW_DUAL_PARABOLOID`](#class_omnilight3d_constant_shadow_dual_paraboloid), but higher-quality.
+Shadows are rendered to a cubemap. Slower than [`SHADOW_DUAL_PARABOLOID`](class_omnilight3d.md#class_omnilight3d_constant_shadow_dual_paraboloid), but higher-quality.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -82,9 +82,9 @@ A value of `0.0` will maintain a constant brightness through most of the range, 
 - `void` **set_param** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( )
 
-The light's radius. Note that the effectively lit area may appear to be smaller depending on the [`omni_attenuation`](#class_omnilight3d_property_omni_attenuation) in use. No matter the [`omni_attenuation`](#class_omnilight3d_property_omni_attenuation) in use, the light will never reach anything outside this radius.
+The light's radius. Note that the effectively lit area may appear to be smaller depending on the [`omni_attenuation`](class_omnilight3d.md#class_omnilight3d_property_omni_attenuation) in use. No matter the [`omni_attenuation`](class_omnilight3d.md#class_omnilight3d_property_omni_attenuation) in use, the light will never reach anything outside this radius.
 
- **Note:** [`omni_range`](#class_omnilight3d_property_omni_range) is not affected by [`Node3D.scale`](#class_node3d_property_scale) (the light's scale or its parent's scale).
+ **Note:** [`omni_range`](class_omnilight3d.md#class_omnilight3d_property_omni_range) is not affected by [`Node3D.scale`](class_node3d.md#class_node3d_property_scale) (the light's scale or its parent's scale).
 
 <!-- rst-class:: classref-item-separator -->
 

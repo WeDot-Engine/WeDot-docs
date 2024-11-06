@@ -19,19 +19,19 @@ The AudioStreamOggVorbis class is a specialized [`AudioStream`](class_audiostrea
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                             | [`bar_beats`](#class_audiostreamoggvorbis_property_bar_beats)             | ``4``     |
-| [`int`](class_int.md)                             | [`beat_count`](#class_audiostreamoggvorbis_property_beat_count)           | ``0``     |
-| [`float`](class_float.md)                         | [`bpm`](#class_audiostreamoggvorbis_property_bpm)                         | ``0.0``   |
-| [`bool`](class_bool.md)                           | [`loop`](#class_audiostreamoggvorbis_property_loop)                       | ``false`` |
-| [`float`](class_float.md)                         | [`loop_offset`](#class_audiostreamoggvorbis_property_loop_offset)         | ``0.0``   |
-| [`OggPacketSequence`](class_oggpacketsequence.md) | [`packet_sequence`](#class_audiostreamoggvorbis_property_packet_sequence) |           |
+| [`int`](class_int.md)                             | [`bar_beats`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_property_bar_beats)             | ``4``     |
+| [`int`](class_int.md)                             | [`beat_count`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_property_beat_count)           | ``0``     |
+| [`float`](class_float.md)                         | [`bpm`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_property_bpm)                         | ``0.0``   |
+| [`bool`](class_bool.md)                           | [`loop`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_property_loop)                       | ``false`` |
+| [`float`](class_float.md)                         | [`loop_offset`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_property_loop_offset)         | ``0.0``   |
+| [`OggPacketSequence`](class_oggpacketsequence.md) | [`packet_sequence`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_property_packet_sequence) |           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](#class_audiostreamoggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
-| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](#class_audiostreamoggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
+| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
+| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -85,7 +85,7 @@ The AudioStreamOggVorbis class is a specialized [`AudioStream`](class_audiostrea
 - `void` **set_loop** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **has_loop** ( )
 
-If `true`, the audio will play again from the specified [`loop_offset`](#class_audiostreamoggvorbis_property_loop_offset) once it is done playing. Useful for ambient sounds and background music.
+If `true`, the audio will play again from the specified [`loop_offset`](class_audiostreamoggvorbis.md#class_audiostreamoggvorbis_property_loop_offset) once it is done playing. Useful for ambient sounds and background music.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -15,7 +15,7 @@ An abstraction of a serialized scene.
 
 A simplified interface to a scene file. Provides access to operations and checks that can be performed on the scene resource itself.
 
-Can be used to save a node to a file. When saving, the node as well as all the nodes it owns get saved (see [`Node.owner`](#class_node_property_owner) property).
+Can be used to save a node to a file. When saving, the node as well as all the nodes it owns get saved (see [`Node.owner`](class_node.md#class_node_property_owner) property).
 
  **Note:** The node doesn't need to own itself.
 
@@ -41,7 +41,7 @@ Can be used to save a node to a file. When saving, the node as well as all the n
 
 
 
- **Example of saving a node with different owners:** The following example creates 3 objects: [`Node2D`](class_node2d.md) (`node`), [`RigidBody2D`](class_rigidbody2d.md) (`body`) and [`CollisionObject2D`](class_collisionobject2d.md) (`collision`). `collision` is a child of `body` which is a child of `node`. Only `body` is owned by `node` and [`pack`](#class_packedscene_method_pack) will therefore only save those two nodes, but not `collision`.
+ **Example of saving a node with different owners:** The following example creates 3 objects: [`Node2D`](class_node2d.md) (`node`), [`RigidBody2D`](class_rigidbody2d.md) (`body`) and [`CollisionObject2D`](class_collisionobject2d.md) (`collision`). `collision` is a child of `body` which is a child of `node`. Only `body` is owned by `node` and [`pack`](class_packedscene.md#class_packedscene_method_pack) will therefore only save those two nodes, but not `collision`.
 
 
 
@@ -109,16 +109,16 @@ Can be used to save a node to a file. When saving, the node as well as all the n
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`_bundled`](#class_packedscene_property__bundled) | ``{ "conn_count": 0, "conns": PackedInt32Array(), "editable_instances": [], "names": PackedStringArray(), "node_count": 0, "node_paths": [], "nodes": PackedInt32Array(), "variants": [], "version": 3 }`` |
+| [`Dictionary`](class_dictionary.md) | [`_bundled`](class_packedscene.md#class_packedscene_property__bundled) | ``{ "conn_count": 0, "conns": PackedInt32Array(), "editable_instances": [], "names": PackedStringArray(), "node_count": 0, "node_paths": [], "nodes": PackedInt32Array(), "variants": [], "version": 3 }`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)             | [`can_instantiate`](#class_packedscene_method_can_instantiate) ( ) const[^const]                                                        |
-| [`SceneState`](class_scenestate.md) | [`get_state`](#class_packedscene_method_get_state) ( ) const[^const]                                                                    |
-| [`Node`](class_node.md)             | [`instantiate`](#class_packedscene_method_instantiate) ( edit_state: [GenEditState](#enum_packedscene_geneditstate) = 0 ) const[^const] |
-| [Error](#enum_@globalscope_error)   | [`pack`](#class_packedscene_method_pack) ( path: [`Node`](class_node.md) )                                                              |
+| [`bool`](class_bool.md)             | [`can_instantiate`](class_packedscene.md#class_packedscene_method_can_instantiate) ( ) const[^const]                                                        |
+| [`SceneState`](class_scenestate.md) | [`get_state`](class_packedscene.md#class_packedscene_method_get_state) ( ) const[^const]                                                                    |
+| [`Node`](class_node.md)             | [`instantiate`](class_packedscene.md#class_packedscene_method_instantiate) ( edit_state: [GenEditState](#enum_packedscene_geneditstate) = 0 ) const[^const] |
+| [Error](#enum_@globalscope_error)   | [`pack`](class_packedscene.md#class_packedscene_method_pack) ( path: [`Node`](class_node.md) )                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -134,13 +134,13 @@ enum **GenEditState**: <div id="enum_packedscene_geneditstate"></div>
 
 [GenEditState](#enum_packedscene_geneditstate) **GEN_EDIT_STATE_DISABLED** = ``0``
 
-If passed to [`instantiate`](#class_packedscene_method_instantiate), blocks edits to the scene state.
+If passed to [`instantiate`](class_packedscene.md#class_packedscene_method_instantiate), blocks edits to the scene state.
 
 <div id="_class_packedscene_constant_gen_edit_state_instance"></div>
 
 [GenEditState](#enum_packedscene_geneditstate) **GEN_EDIT_STATE_INSTANCE** = ``1``
 
-If passed to [`instantiate`](#class_packedscene_method_instantiate), provides local scene resources to the local scene.
+If passed to [`instantiate`](class_packedscene.md#class_packedscene_method_instantiate), provides local scene resources to the local scene.
 
  **Note:** Only available in editor builds.
 
@@ -148,7 +148,7 @@ If passed to [`instantiate`](#class_packedscene_method_instantiate), provides lo
 
 [GenEditState](#enum_packedscene_geneditstate) **GEN_EDIT_STATE_MAIN** = ``2``
 
-If passed to [`instantiate`](#class_packedscene_method_instantiate), provides local scene resources to the local scene. Only the main scene should receive the main edit state.
+If passed to [`instantiate`](class_packedscene.md#class_packedscene_method_instantiate), provides local scene resources to the local scene. Only the main scene should receive the main edit state.
 
  **Note:** Only available in editor builds.
 
@@ -156,7 +156,7 @@ If passed to [`instantiate`](#class_packedscene_method_instantiate), provides lo
 
 [GenEditState](#enum_packedscene_geneditstate) **GEN_EDIT_STATE_MAIN_INHERITED** = ``3``
 
-It's similar to [`GEN_EDIT_STATE_MAIN`](#class_packedscene_constant_gen_edit_state_main), but for the case where the scene is being instantiated to be the base of another one.
+It's similar to [`GEN_EDIT_STATE_MAIN`](class_packedscene.md#class_packedscene_constant_gen_edit_state_main), but for the case where the scene is being instantiated to be the base of another one.
 
  **Note:** Only available in editor builds.
 
@@ -204,7 +204,7 @@ Returns the [`SceneState`](class_scenestate.md) representing the scene file cont
 
 [`Node`](class_node.md) **instantiate** ( edit_state: [GenEditState](#enum_packedscene_geneditstate) = 0 ) const[^const]<div id="class_packedscene_method_instantiate"></div>
 
-Instantiates the scene's node hierarchy. Triggers child scene instantiation(s). Triggers a [`Node.NOTIFICATION_SCENE_INSTANTIATED`](#class_node_constant_notification_scene_instantiated) notification on the root node.
+Instantiates the scene's node hierarchy. Triggers child scene instantiation(s). Triggers a [`Node.NOTIFICATION_SCENE_INSTANTIATED`](class_node.md#class_node_constant_notification_scene_instantiated) notification on the root node.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -214,7 +214,7 @@ Instantiates the scene's node hierarchy. Triggers child scene instantiation(s). 
 
 [Error](#enum_@globalscope_error) **pack** ( path: [`Node`](class_node.md) )<div id="class_packedscene_method_pack"></div>
 
-Packs the `path` node, and all owned sub-nodes, into this **PackedScene**. Any existing data will be cleared. See [`Node.owner`](#class_node_property_owner).
+Packs the `path` node, and all owned sub-nodes, into this **PackedScene**. Any existing data will be cleared. See [`Node.owner`](class_node.md#class_node_property_owner).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

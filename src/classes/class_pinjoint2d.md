@@ -19,12 +19,12 @@ A physics joint that attaches two 2D physics bodies at a single point, allowing 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`angular_limit_enabled`](#class_pinjoint2d_property_angular_limit_enabled) | ``false`` |
-| [`float`](class_float.md) | [`angular_limit_lower`](#class_pinjoint2d_property_angular_limit_lower)     | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_upper`](#class_pinjoint2d_property_angular_limit_upper)     | ``0.0``   |
-| [`bool`](class_bool.md)   | [`motor_enabled`](#class_pinjoint2d_property_motor_enabled)                 | ``false`` |
-| [`float`](class_float.md) | [`motor_target_velocity`](#class_pinjoint2d_property_motor_target_velocity) | ``0.0``   |
-| [`float`](class_float.md) | [`softness`](#class_pinjoint2d_property_softness)                           | ``0.0``   |
+| [`bool`](class_bool.md)   | [`angular_limit_enabled`](class_pinjoint2d.md#class_pinjoint2d_property_angular_limit_enabled) | ``false`` |
+| [`float`](class_float.md) | [`angular_limit_lower`](class_pinjoint2d.md#class_pinjoint2d_property_angular_limit_lower)     | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_upper`](class_pinjoint2d.md#class_pinjoint2d_property_angular_limit_upper)     | ``0.0``   |
+| [`bool`](class_bool.md)   | [`motor_enabled`](class_pinjoint2d.md#class_pinjoint2d_property_motor_enabled)                 | ``false`` |
+| [`float`](class_float.md) | [`motor_target_velocity`](class_pinjoint2d.md#class_pinjoint2d_property_motor_target_velocity) | ``0.0``   |
+| [`float`](class_float.md) | [`softness`](class_pinjoint2d.md#class_pinjoint2d_property_softness)                           | ``0.0``   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -39,7 +39,7 @@ A physics joint that attaches two 2D physics bodies at a single point, allowing 
 - `void` **set_angular_limit_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_angular_limit_enabled** ( )
 
-If `true`, the pin maximum and minimum rotation, defined by [`angular_limit_lower`](#class_pinjoint2d_property_angular_limit_lower) and [`angular_limit_upper`](#class_pinjoint2d_property_angular_limit_upper) are applied.
+If `true`, the pin maximum and minimum rotation, defined by [`angular_limit_lower`](class_pinjoint2d.md#class_pinjoint2d_property_angular_limit_lower) and [`angular_limit_upper`](class_pinjoint2d.md#class_pinjoint2d_property_angular_limit_upper) are applied.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -52,7 +52,7 @@ If `true`, the pin maximum and minimum rotation, defined by [`angular_limit_lowe
 - `void` **set_angular_limit_lower** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_angular_limit_lower** ( )
 
-The minimum rotation. Only active if [`angular_limit_enabled`](#class_pinjoint2d_property_angular_limit_enabled) is `true`.
+The minimum rotation. Only active if [`angular_limit_enabled`](class_pinjoint2d.md#class_pinjoint2d_property_angular_limit_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -65,7 +65,7 @@ The minimum rotation. Only active if [`angular_limit_enabled`](#class_pinjoint2d
 - `void` **set_angular_limit_upper** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_angular_limit_upper** ( )
 
-The maximum rotation. Only active if [`angular_limit_enabled`](#class_pinjoint2d_property_angular_limit_enabled) is `true`.
+The maximum rotation. Only active if [`angular_limit_enabled`](class_pinjoint2d.md#class_pinjoint2d_property_angular_limit_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -21,8 +21,8 @@ A parameter represents a variable in the shader which is set externally, i.e. fr
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                            | [`parameter_name`](#class_visualshadernodeparameter_property_parameter_name) | ``""`` |
-| [Qualifier](#enum_visualshadernodeparameter_qualifier) | [`qualifier`](#class_visualshadernodeparameter_property_qualifier)           | ``0``  |
+| [`String`](class_string.md)                            | [`parameter_name`](class_visualshadernodeparameter.md#class_visualshadernodeparameter_property_parameter_name) | ``""`` |
+| [Qualifier](#enum_visualshadernodeparameter_qualifier) | [`qualifier`](class_visualshadernodeparameter.md#class_visualshadernodeparameter_property_qualifier)           | ``0``  |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -23,45 +23,45 @@ Abstract base class for 2D physics objects. **CollisionObject2D** can hold any n
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                              | [`collision_layer`](#class_collisionobject2d_property_collision_layer)       | ``1``    |
-| [`int`](class_int.md)                              | [`collision_mask`](#class_collisionobject2d_property_collision_mask)         | ``1``    |
-| [`float`](class_float.md)                          | [`collision_priority`](#class_collisionobject2d_property_collision_priority) | ``1.0``  |
-| [DisableMode](#enum_collisionobject2d_disablemode) | [`disable_mode`](#class_collisionobject2d_property_disable_mode)             | ``0``    |
-| [`bool`](class_bool.md)                            | [`input_pickable`](#class_collisionobject2d_property_input_pickable)         | ``true`` |
+| [`int`](class_int.md)                              | [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer)       | ``1``    |
+| [`int`](class_int.md)                              | [`collision_mask`](class_collisionobject2d.md#class_collisionobject2d_property_collision_mask)         | ``1``    |
+| [`float`](class_float.md)                          | [`collision_priority`](class_collisionobject2d.md#class_collisionobject2d_property_collision_priority) | ``1.0``  |
+| [DisableMode](#enum_collisionobject2d_disablemode) | [`disable_mode`](class_collisionobject2d.md#class_collisionobject2d_property_disable_mode)             | ``0``    |
+| [`bool`](class_bool.md)                            | [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable)         | ``true`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                          | [`_input_event`](#class_collisionobject2d_private_method__input_event) ( viewport: [`Viewport`](class_viewport.md), event: [`InputEvent`](class_inputevent.md), shape_idx: [`int`](class_int.md) ) virtual[^virtual] |
-| `void`                                          | [`_mouse_enter`](#class_collisionobject2d_private_method__mouse_enter) ( ) virtual[^virtual]                                                                                                                         |
-| `void`                                          | [`_mouse_exit`](#class_collisionobject2d_private_method__mouse_exit) ( ) virtual[^virtual]                                                                                                                           |
-| `void`                                          | [`_mouse_shape_enter`](#class_collisionobject2d_private_method__mouse_shape_enter) ( shape_idx: [`int`](class_int.md) ) virtual[^virtual]                                                                            |
-| `void`                                          | [`_mouse_shape_exit`](#class_collisionobject2d_private_method__mouse_shape_exit) ( shape_idx: [`int`](class_int.md) ) virtual[^virtual]                                                                              |
-| [`int`](class_int.md)                           | [`create_shape_owner`](#class_collisionobject2d_method_create_shape_owner) ( owner: [`Object`](class_object.md) )                                                                                                    |
-| [`bool`](class_bool.md)                         | [`get_collision_layer_value`](#class_collisionobject2d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                       |
-| [`bool`](class_bool.md)                         | [`get_collision_mask_value`](#class_collisionobject2d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                         |
-| [`RID`](class_rid.md)                           | [`get_rid`](#class_collisionobject2d_method_get_rid) ( ) const[^const]                                                                                                                                               |
-| [`float`](class_float.md)                       | [`get_shape_owner_one_way_collision_margin`](#class_collisionobject2d_method_get_shape_owner_one_way_collision_margin) ( owner_id: [`int`](class_int.md) ) const[^const]                                             |
-| [`PackedInt32Array`](class_packedint32array.md) | [`get_shape_owners`](#class_collisionobject2d_method_get_shape_owners) ( )                                                                                                                                           |
-| [`bool`](class_bool.md)                         | [`is_shape_owner_disabled`](#class_collisionobject2d_method_is_shape_owner_disabled) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                               |
-| [`bool`](class_bool.md)                         | [`is_shape_owner_one_way_collision_enabled`](#class_collisionobject2d_method_is_shape_owner_one_way_collision_enabled) ( owner_id: [`int`](class_int.md) ) const[^const]                                             |
-| `void`                                          | [`remove_shape_owner`](#class_collisionobject2d_method_remove_shape_owner) ( owner_id: [`int`](class_int.md) )                                                                                                       |
-| `void`                                          | [`set_collision_layer_value`](#class_collisionobject2d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                     |
-| `void`                                          | [`set_collision_mask_value`](#class_collisionobject2d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                       |
-| [`int`](class_int.md)                           | [`shape_find_owner`](#class_collisionobject2d_method_shape_find_owner) ( shape_index: [`int`](class_int.md) ) const[^const]                                                                                          |
-| `void`                                          | [`shape_owner_add_shape`](#class_collisionobject2d_method_shape_owner_add_shape) ( owner_id: [`int`](class_int.md), shape: [`Shape2D`](class_shape2d.md) )                                                           |
-| `void`                                          | [`shape_owner_clear_shapes`](#class_collisionobject2d_method_shape_owner_clear_shapes) ( owner_id: [`int`](class_int.md) )                                                                                           |
-| [`Object`](class_object.md)                     | [`shape_owner_get_owner`](#class_collisionobject2d_method_shape_owner_get_owner) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                   |
-| [`Shape2D`](class_shape2d.md)                   | [`shape_owner_get_shape`](#class_collisionobject2d_method_shape_owner_get_shape) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) ) const[^const]                                                  |
-| [`int`](class_int.md)                           | [`shape_owner_get_shape_count`](#class_collisionobject2d_method_shape_owner_get_shape_count) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                       |
-| [`int`](class_int.md)                           | [`shape_owner_get_shape_index`](#class_collisionobject2d_method_shape_owner_get_shape_index) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) ) const[^const]                                      |
-| [`Transform2D`](class_transform2d.md)           | [`shape_owner_get_transform`](#class_collisionobject2d_method_shape_owner_get_transform) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                           |
-| `void`                                          | [`shape_owner_remove_shape`](#class_collisionobject2d_method_shape_owner_remove_shape) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) )                                                          |
-| `void`                                          | [`shape_owner_set_disabled`](#class_collisionobject2d_method_shape_owner_set_disabled) ( owner_id: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                        |
-| `void`                                          | [`shape_owner_set_one_way_collision`](#class_collisionobject2d_method_shape_owner_set_one_way_collision) ( owner_id: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                        |
-| `void`                                          | [`shape_owner_set_one_way_collision_margin`](#class_collisionobject2d_method_shape_owner_set_one_way_collision_margin) ( owner_id: [`int`](class_int.md), margin: [`float`](class_float.md) )                        |
-| `void`                                          | [`shape_owner_set_transform`](#class_collisionobject2d_method_shape_owner_set_transform) ( owner_id: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                       |
+| `void`                                          | [`_input_event`](class_collisionobject2d.md#class_collisionobject2d_private_method__input_event) ( viewport: [`Viewport`](class_viewport.md), event: [`InputEvent`](class_inputevent.md), shape_idx: [`int`](class_int.md) ) virtual[^virtual] |
+| `void`                                          | [`_mouse_enter`](class_collisionobject2d.md#class_collisionobject2d_private_method__mouse_enter) ( ) virtual[^virtual]                                                                                                                         |
+| `void`                                          | [`_mouse_exit`](class_collisionobject2d.md#class_collisionobject2d_private_method__mouse_exit) ( ) virtual[^virtual]                                                                                                                           |
+| `void`                                          | [`_mouse_shape_enter`](class_collisionobject2d.md#class_collisionobject2d_private_method__mouse_shape_enter) ( shape_idx: [`int`](class_int.md) ) virtual[^virtual]                                                                            |
+| `void`                                          | [`_mouse_shape_exit`](class_collisionobject2d.md#class_collisionobject2d_private_method__mouse_shape_exit) ( shape_idx: [`int`](class_int.md) ) virtual[^virtual]                                                                              |
+| [`int`](class_int.md)                           | [`create_shape_owner`](class_collisionobject2d.md#class_collisionobject2d_method_create_shape_owner) ( owner: [`Object`](class_object.md) )                                                                                                    |
+| [`bool`](class_bool.md)                         | [`get_collision_layer_value`](class_collisionobject2d.md#class_collisionobject2d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                       |
+| [`bool`](class_bool.md)                         | [`get_collision_mask_value`](class_collisionobject2d.md#class_collisionobject2d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                         |
+| [`RID`](class_rid.md)                           | [`get_rid`](class_collisionobject2d.md#class_collisionobject2d_method_get_rid) ( ) const[^const]                                                                                                                                               |
+| [`float`](class_float.md)                       | [`get_shape_owner_one_way_collision_margin`](class_collisionobject2d.md#class_collisionobject2d_method_get_shape_owner_one_way_collision_margin) ( owner_id: [`int`](class_int.md) ) const[^const]                                             |
+| [`PackedInt32Array`](class_packedint32array.md) | [`get_shape_owners`](class_collisionobject2d.md#class_collisionobject2d_method_get_shape_owners) ( )                                                                                                                                           |
+| [`bool`](class_bool.md)                         | [`is_shape_owner_disabled`](class_collisionobject2d.md#class_collisionobject2d_method_is_shape_owner_disabled) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                               |
+| [`bool`](class_bool.md)                         | [`is_shape_owner_one_way_collision_enabled`](class_collisionobject2d.md#class_collisionobject2d_method_is_shape_owner_one_way_collision_enabled) ( owner_id: [`int`](class_int.md) ) const[^const]                                             |
+| `void`                                          | [`remove_shape_owner`](class_collisionobject2d.md#class_collisionobject2d_method_remove_shape_owner) ( owner_id: [`int`](class_int.md) )                                                                                                       |
+| `void`                                          | [`set_collision_layer_value`](class_collisionobject2d.md#class_collisionobject2d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                     |
+| `void`                                          | [`set_collision_mask_value`](class_collisionobject2d.md#class_collisionobject2d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                       |
+| [`int`](class_int.md)                           | [`shape_find_owner`](class_collisionobject2d.md#class_collisionobject2d_method_shape_find_owner) ( shape_index: [`int`](class_int.md) ) const[^const]                                                                                          |
+| `void`                                          | [`shape_owner_add_shape`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_add_shape) ( owner_id: [`int`](class_int.md), shape: [`Shape2D`](class_shape2d.md) )                                                           |
+| `void`                                          | [`shape_owner_clear_shapes`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_clear_shapes) ( owner_id: [`int`](class_int.md) )                                                                                           |
+| [`Object`](class_object.md)                     | [`shape_owner_get_owner`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_get_owner) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                   |
+| [`Shape2D`](class_shape2d.md)                   | [`shape_owner_get_shape`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_get_shape) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) ) const[^const]                                                  |
+| [`int`](class_int.md)                           | [`shape_owner_get_shape_count`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_get_shape_count) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                       |
+| [`int`](class_int.md)                           | [`shape_owner_get_shape_index`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_get_shape_index) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) ) const[^const]                                      |
+| [`Transform2D`](class_transform2d.md)           | [`shape_owner_get_transform`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_get_transform) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                           |
+| `void`                                          | [`shape_owner_remove_shape`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_remove_shape) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) )                                                          |
+| `void`                                          | [`shape_owner_set_disabled`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_set_disabled) ( owner_id: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                        |
+| `void`                                          | [`shape_owner_set_one_way_collision`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_set_one_way_collision) ( owner_id: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                        |
+| `void`                                          | [`shape_owner_set_one_way_collision_margin`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_set_one_way_collision_margin) ( owner_id: [`int`](class_int.md), margin: [`float`](class_float.md) )                        |
+| `void`                                          | [`shape_owner_set_transform`](class_collisionobject2d.md#class_collisionobject2d_method_shape_owner_set_transform) ( owner_id: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -73,7 +73,7 @@ Abstract base class for 2D physics objects. **CollisionObject2D** can hold any n
 
 **input_event** ( viewport: [`Node`](class_node.md), event: [`InputEvent`](class_inputevent.md), shape_idx: [`int`](class_int.md) ) <div id="class_collisionobject2d_signal_input_event"></div>
 
-Emitted when an input event occurs. Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set. See [`_input_event`](#class_collisionobject2d_private_method__input_event) for details.
+Emitted when an input event occurs. Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set. See [`_input_event`](class_collisionobject2d.md#class_collisionobject2d_private_method__input_event) for details.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -83,7 +83,7 @@ Emitted when an input event occurs. Requires [`input_pickable`](#class_collision
 
 **mouse_entered** ( ) <div id="class_collisionobject2d_signal_mouse_entered"></div>
 
-Emitted when the mouse pointer enters any of this object's shapes. Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this signal to be emitted.
+Emitted when the mouse pointer enters any of this object's shapes. Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this signal to be emitted.
 
  **Note:** Due to the lack of continuous collision detection, this signal may not be emitted in the expected order if the mouse moves fast enough and the **CollisionObject2D**'s area is small. This signal may also not be emitted if another **CollisionObject2D** is overlapping the **CollisionObject2D** in question.
 
@@ -95,7 +95,7 @@ Emitted when the mouse pointer enters any of this object's shapes. Requires [`in
 
 **mouse_exited** ( ) <div id="class_collisionobject2d_signal_mouse_exited"></div>
 
-Emitted when the mouse pointer exits all this object's shapes. Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this signal to be emitted.
+Emitted when the mouse pointer exits all this object's shapes. Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this signal to be emitted.
 
  **Note:** Due to the lack of continuous collision detection, this signal may not be emitted in the expected order if the mouse moves fast enough and the **CollisionObject2D**'s area is small. This signal may also not be emitted if another **CollisionObject2D** is overlapping the **CollisionObject2D** in question.
 
@@ -107,7 +107,7 @@ Emitted when the mouse pointer exits all this object's shapes. Requires [`input_
 
 **mouse_shape_entered** ( shape_idx: [`int`](class_int.md) ) <div id="class_collisionobject2d_signal_mouse_shape_entered"></div>
 
-Emitted when the mouse pointer enters any of this object's shapes or moves from one shape to another. `shape_idx` is the child index of the newly entered [`Shape2D`](class_shape2d.md). Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set.
+Emitted when the mouse pointer enters any of this object's shapes or moves from one shape to another. `shape_idx` is the child index of the newly entered [`Shape2D`](class_shape2d.md). Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -117,7 +117,7 @@ Emitted when the mouse pointer enters any of this object's shapes or moves from 
 
 **mouse_shape_exited** ( shape_idx: [`int`](class_int.md) ) <div id="class_collisionobject2d_signal_mouse_shape_exited"></div>
 
-Emitted when the mouse pointer exits any of this object's shapes. `shape_idx` is the child index of the exited [`Shape2D`](class_shape2d.md). Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set.
+Emitted when the mouse pointer exits any of this object's shapes. `shape_idx` is the child index of the exited [`Shape2D`](class_shape2d.md). Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -133,7 +133,7 @@ enum **DisableMode**: <div id="enum_collisionobject2d_disablemode"></div>
 
 [DisableMode](#enum_collisionobject2d_disablemode) **DISABLE_MODE_REMOVE** = ``0``
 
-When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled), remove from the physics simulation to stop all physics interactions with this **CollisionObject2D**.
+When [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled), remove from the physics simulation to stop all physics interactions with this **CollisionObject2D**.
 
 Automatically re-added to the physics simulation when the [`Node`](class_node.md) is processed again.
 
@@ -141,7 +141,7 @@ Automatically re-added to the physics simulation when the [`Node`](class_node.md
 
 [DisableMode](#enum_collisionobject2d_disablemode) **DISABLE_MODE_MAKE_STATIC** = ``1``
 
-When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled), make the body static. Doesn't affect [`Area2D`](class_area2d.md). [`PhysicsBody2D`](class_physicsbody2d.md) can't be affected by forces or other bodies while static.
+When [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled), make the body static. Doesn't affect [`Area2D`](class_area2d.md). [`PhysicsBody2D`](class_physicsbody2d.md) can't be affected by forces or other bodies while static.
 
 Automatically set [`PhysicsBody2D`](class_physicsbody2d.md) back to its original mode when the [`Node`](class_node.md) is processed again.
 
@@ -149,7 +149,7 @@ Automatically set [`PhysicsBody2D`](class_physicsbody2d.md) back to its original
 
 [DisableMode](#enum_collisionobject2d_disablemode) **DISABLE_MODE_KEEP_ACTIVE** = ``2``
 
-When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled), do not affect the physics simulation.
+When [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled), do not affect the physics simulation.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -164,7 +164,7 @@ When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.P
 - `void` **set_collision_layer** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_collision_layer** ( )
 
-The physics layers this CollisionObject2D is in. Collision objects can exist in one or more of 32 different layers. See also [`collision_mask`](#class_collisionobject2d_property_collision_mask).
+The physics layers this CollisionObject2D is in. Collision objects can exist in one or more of 32 different layers. See also [`collision_mask`](class_collisionobject2d.md#class_collisionobject2d_property_collision_mask).
 
  **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
 
@@ -179,7 +179,7 @@ The physics layers this CollisionObject2D is in. Collision objects can exist in 
 - `void` **set_collision_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_collision_mask** ( )
 
-The physics layers this CollisionObject2D scans. Collision objects can scan one or more of 32 different layers. See also [`collision_layer`](#class_collisionobject2d_property_collision_layer).
+The physics layers this CollisionObject2D scans. Collision objects can scan one or more of 32 different layers. See also [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer).
 
  **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
 
@@ -207,7 +207,7 @@ The priority used to solve colliding when occurring penetration. The higher the 
 - `void` **set_disable_mode** ( value: [DisableMode](#enum_collisionobject2d_disablemode) )
 - [DisableMode](#enum_collisionobject2d_disablemode) **get_disable_mode** ( )
 
-Defines the behavior in physics when [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled). See [DisableMode](#enum_collisionobject2d_disablemode) for more details about the different modes.
+Defines the behavior in physics when [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled). See [DisableMode](#enum_collisionobject2d_disablemode) for more details about the different modes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -220,7 +220,7 @@ Defines the behavior in physics when [`Node.process_mode`](#class_node_property_
 - `void` **set_pickable** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_pickable** ( )
 
-If `true`, this object is pickable. A pickable object can detect the mouse pointer entering/leaving, and if the mouse is inside it, report input events. Requires at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set.
+If `true`, this object is pickable. A pickable object can detect the mouse pointer entering/leaving, and if the mouse is inside it, report input events. Requires at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -232,9 +232,9 @@ If `true`, this object is pickable. A pickable object can detect the mouse point
 
 `void` **_input_event** ( viewport: [`Viewport`](class_viewport.md), event: [`InputEvent`](class_inputevent.md), shape_idx: [`int`](class_int.md) ) virtual[^virtual]<div id="class_collisionobject2d_private_method__input_event"></div>
 
-Accepts unhandled [`InputEvent`](class_inputevent.md) s. `shape_idx` is the child index of the clicked [`Shape2D`](class_shape2d.md). Connect to [`input_event`](#class_collisionobject2d_signal_input_event) to easily pick up these events.
+Accepts unhandled [`InputEvent`](class_inputevent.md) s. `shape_idx` is the child index of the clicked [`Shape2D`](class_shape2d.md). Connect to [`input_event`](class_collisionobject2d.md#class_collisionobject2d_signal_input_event) to easily pick up these events.
 
- **Note:** [`_input_event`](#class_collisionobject2d_private_method__input_event) requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set.
+ **Note:** [`_input_event`](class_collisionobject2d.md#class_collisionobject2d_private_method__input_event) requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -244,7 +244,7 @@ Accepts unhandled [`InputEvent`](class_inputevent.md) s. `shape_idx` is the chil
 
 `void` **_mouse_enter** ( ) virtual[^virtual]<div id="class_collisionobject2d_private_method__mouse_enter"></div>
 
-Called when the mouse pointer enters any of this object's shapes. Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this function to be called.
+Called when the mouse pointer enters any of this object's shapes. Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this function to be called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -254,7 +254,7 @@ Called when the mouse pointer enters any of this object's shapes. Requires [`inp
 
 `void` **_mouse_exit** ( ) virtual[^virtual]<div id="class_collisionobject2d_private_method__mouse_exit"></div>
 
-Called when the mouse pointer exits all this object's shapes. Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this function to be called.
+Called when the mouse pointer exits all this object's shapes. Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this function to be called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -264,7 +264,7 @@ Called when the mouse pointer exits all this object's shapes. Requires [`input_p
 
 `void` **_mouse_shape_enter** ( shape_idx: [`int`](class_int.md) ) virtual[^virtual]<div id="class_collisionobject2d_private_method__mouse_shape_enter"></div>
 
-Called when the mouse pointer enters any of this object's shapes or moves from one shape to another. `shape_idx` is the child index of the newly entered [`Shape2D`](class_shape2d.md). Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be called.
+Called when the mouse pointer enters any of this object's shapes or moves from one shape to another. `shape_idx` is the child index of the newly entered [`Shape2D`](class_shape2d.md). Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -274,7 +274,7 @@ Called when the mouse pointer enters any of this object's shapes or moves from o
 
 `void` **_mouse_shape_exit** ( shape_idx: [`int`](class_int.md) ) virtual[^virtual]<div id="class_collisionobject2d_private_method__mouse_shape_exit"></div>
 
-Called when the mouse pointer exits any of this object's shapes. `shape_idx` is the child index of the exited [`Shape2D`](class_shape2d.md). Requires [`input_pickable`](#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject2d_property_collision_layer) bit to be called.
+Called when the mouse pointer exits any of this object's shapes. `shape_idx` is the child index of the exited [`Shape2D`](class_shape2d.md). Requires [`input_pickable`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) bit to be called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -294,7 +294,7 @@ Creates a new shape owner for the given object. Returns `owner_id` of the new ow
 
 [`bool`](class_bool.md) **get_collision_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_collisionobject2d_method_get_collision_layer_value"></div>
 
-Returns whether or not the specified layer of the [`collision_layer`](#class_collisionobject2d_property_collision_layer) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -304,7 +304,7 @@ Returns whether or not the specified layer of the [`collision_layer`](#class_col
 
 [`bool`](class_bool.md) **get_collision_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_collisionobject2d_method_get_collision_mask_value"></div>
 
-Returns whether or not the specified layer of the [`collision_mask`](#class_collisionobject2d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_mask`](class_collisionobject2d.md#class_collisionobject2d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -374,7 +374,7 @@ Removes the given shape owner.
 
 `void` **set_collision_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_collisionobject2d_method_set_collision_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_layer`](#class_collisionobject2d_property_collision_layer), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -384,7 +384,7 @@ Based on `value`, enables or disables the specified layer in the [`collision_lay
 
 `void` **set_collision_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_collisionobject2d_method_set_collision_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_mask`](#class_collisionobject2d_property_collision_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_mask`](class_collisionobject2d.md#class_collisionobject2d_property_collision_mask), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 

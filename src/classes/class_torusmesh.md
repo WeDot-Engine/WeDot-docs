@@ -19,10 +19,10 @@ Class representing a torus [`PrimitiveMesh`](class_primitivemesh.md).
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`inner_radius`](#class_torusmesh_property_inner_radius)   | ``0.5`` |
-| [`float`](class_float.md) | [`outer_radius`](#class_torusmesh_property_outer_radius)   | ``1.0`` |
-| [`int`](class_int.md)     | [`ring_segments`](#class_torusmesh_property_ring_segments) | ``32``  |
-| [`int`](class_int.md)     | [`rings`](#class_torusmesh_property_rings)                 | ``64``  |
+| [`float`](class_float.md) | [`inner_radius`](class_torusmesh.md#class_torusmesh_property_inner_radius)   | ``0.5`` |
+| [`float`](class_float.md) | [`outer_radius`](class_torusmesh.md#class_torusmesh_property_outer_radius)   | ``1.0`` |
+| [`int`](class_int.md)     | [`ring_segments`](class_torusmesh.md#class_torusmesh_property_ring_segments) | ``32``  |
+| [`int`](class_int.md)     | [`rings`](class_torusmesh.md#class_torusmesh_property_rings)                 | ``64``  |
 
 <!-- rst-class:: classref-section-separator -->
 

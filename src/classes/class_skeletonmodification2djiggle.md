@@ -25,38 +25,38 @@ This modification is useful for adding additional motion to things like hair, th
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)       | [`damping`](#class_skeletonmodification2djiggle_property_damping)                                   | ``0.75``          |
-| [`Vector2`](class_vector2.md)   | [`gravity`](#class_skeletonmodification2djiggle_property_gravity)                                   | ``Vector2(0, 6)`` |
-| [`int`](class_int.md)           | [`jiggle_data_chain_length`](#class_skeletonmodification2djiggle_property_jiggle_data_chain_length) | ``0``             |
-| [`float`](class_float.md)       | [`mass`](#class_skeletonmodification2djiggle_property_mass)                                         | ``0.75``          |
-| [`float`](class_float.md)       | [`stiffness`](#class_skeletonmodification2djiggle_property_stiffness)                               | ``3.0``           |
-| [`NodePath`](class_nodepath.md) | [`target_nodepath`](#class_skeletonmodification2djiggle_property_target_nodepath)                   | ``NodePath("")``  |
-| [`bool`](class_bool.md)         | [`use_gravity`](#class_skeletonmodification2djiggle_property_use_gravity)                           | ``false``         |
+| [`float`](class_float.md)       | [`damping`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_property_damping)                                   | ``0.75``          |
+| [`Vector2`](class_vector2.md)   | [`gravity`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_property_gravity)                                   | ``Vector2(0, 6)`` |
+| [`int`](class_int.md)           | [`jiggle_data_chain_length`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_property_jiggle_data_chain_length) | ``0``             |
+| [`float`](class_float.md)       | [`mass`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_property_mass)                                         | ``0.75``          |
+| [`float`](class_float.md)       | [`stiffness`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_property_stiffness)                               | ``3.0``           |
+| [`NodePath`](class_nodepath.md) | [`target_nodepath`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_property_target_nodepath)                   | ``NodePath("")``  |
+| [`bool`](class_bool.md)         | [`use_gravity`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_property_use_gravity)                           | ``false``         |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)           | [`get_collision_mask`](#class_skeletonmodification2djiggle_method_get_collision_mask) ( ) const[^const]                                                                                      |
-| [`NodePath`](class_nodepath.md) | [`get_jiggle_joint_bone2d_node`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                 |
-| [`int`](class_int.md)           | [`get_jiggle_joint_bone_index`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                   |
-| [`float`](class_float.md)       | [`get_jiggle_joint_damping`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_damping) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
-| [`Vector2`](class_vector2.md)   | [`get_jiggle_joint_gravity`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_gravity) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
-| [`float`](class_float.md)       | [`get_jiggle_joint_mass`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_mass) ( joint_idx: [`int`](class_int.md) ) const[^const]                                               |
-| [`bool`](class_bool.md)         | [`get_jiggle_joint_override`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_override) ( joint_idx: [`int`](class_int.md) ) const[^const]                                       |
-| [`float`](class_float.md)       | [`get_jiggle_joint_stiffness`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_stiffness) ( joint_idx: [`int`](class_int.md) ) const[^const]                                     |
-| [`bool`](class_bool.md)         | [`get_jiggle_joint_use_gravity`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_use_gravity) ( joint_idx: [`int`](class_int.md) ) const[^const]                                 |
-| [`bool`](class_bool.md)         | [`get_use_colliders`](#class_skeletonmodification2djiggle_method_get_use_colliders) ( ) const[^const]                                                                                        |
-| `void`                          | [`set_collision_mask`](#class_skeletonmodification2djiggle_method_set_collision_mask) ( collision_mask: [`int`](class_int.md) )                                                              |
-| `void`                          | [`set_jiggle_joint_bone2d_node`](#class_skeletonmodification2djiggle_method_set_jiggle_joint_bone2d_node) ( joint_idx: [`int`](class_int.md), bone2d_node: [`NodePath`](class_nodepath.md) ) |
-| `void`                          | [`set_jiggle_joint_bone_index`](#class_skeletonmodification2djiggle_method_set_jiggle_joint_bone_index) ( joint_idx: [`int`](class_int.md), bone_idx: [`int`](class_int.md) )                |
-| `void`                          | [`set_jiggle_joint_damping`](#class_skeletonmodification2djiggle_method_set_jiggle_joint_damping) ( joint_idx: [`int`](class_int.md), damping: [`float`](class_float.md) )                   |
-| `void`                          | [`set_jiggle_joint_gravity`](#class_skeletonmodification2djiggle_method_set_jiggle_joint_gravity) ( joint_idx: [`int`](class_int.md), gravity: [`Vector2`](class_vector2.md) )               |
-| `void`                          | [`set_jiggle_joint_mass`](#class_skeletonmodification2djiggle_method_set_jiggle_joint_mass) ( joint_idx: [`int`](class_int.md), mass: [`float`](class_float.md) )                            |
-| `void`                          | [`set_jiggle_joint_override`](#class_skeletonmodification2djiggle_method_set_jiggle_joint_override) ( joint_idx: [`int`](class_int.md), override: [`bool`](class_bool.md) )                  |
-| `void`                          | [`set_jiggle_joint_stiffness`](#class_skeletonmodification2djiggle_method_set_jiggle_joint_stiffness) ( joint_idx: [`int`](class_int.md), stiffness: [`float`](class_float.md) )             |
-| `void`                          | [`set_jiggle_joint_use_gravity`](#class_skeletonmodification2djiggle_method_set_jiggle_joint_use_gravity) ( joint_idx: [`int`](class_int.md), use_gravity: [`bool`](class_bool.md) )         |
-| `void`                          | [`set_use_colliders`](#class_skeletonmodification2djiggle_method_set_use_colliders) ( use_colliders: [`bool`](class_bool.md) )                                                               |
+| [`int`](class_int.md)           | [`get_collision_mask`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_collision_mask) ( ) const[^const]                                                                                      |
+| [`NodePath`](class_nodepath.md) | [`get_jiggle_joint_bone2d_node`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_jiggle_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                 |
+| [`int`](class_int.md)           | [`get_jiggle_joint_bone_index`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_jiggle_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                   |
+| [`float`](class_float.md)       | [`get_jiggle_joint_damping`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_jiggle_joint_damping) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
+| [`Vector2`](class_vector2.md)   | [`get_jiggle_joint_gravity`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_jiggle_joint_gravity) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
+| [`float`](class_float.md)       | [`get_jiggle_joint_mass`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_jiggle_joint_mass) ( joint_idx: [`int`](class_int.md) ) const[^const]                                               |
+| [`bool`](class_bool.md)         | [`get_jiggle_joint_override`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_jiggle_joint_override) ( joint_idx: [`int`](class_int.md) ) const[^const]                                       |
+| [`float`](class_float.md)       | [`get_jiggle_joint_stiffness`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_jiggle_joint_stiffness) ( joint_idx: [`int`](class_int.md) ) const[^const]                                     |
+| [`bool`](class_bool.md)         | [`get_jiggle_joint_use_gravity`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_jiggle_joint_use_gravity) ( joint_idx: [`int`](class_int.md) ) const[^const]                                 |
+| [`bool`](class_bool.md)         | [`get_use_colliders`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_get_use_colliders) ( ) const[^const]                                                                                        |
+| `void`                          | [`set_collision_mask`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_collision_mask) ( collision_mask: [`int`](class_int.md) )                                                              |
+| `void`                          | [`set_jiggle_joint_bone2d_node`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_jiggle_joint_bone2d_node) ( joint_idx: [`int`](class_int.md), bone2d_node: [`NodePath`](class_nodepath.md) ) |
+| `void`                          | [`set_jiggle_joint_bone_index`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_jiggle_joint_bone_index) ( joint_idx: [`int`](class_int.md), bone_idx: [`int`](class_int.md) )                |
+| `void`                          | [`set_jiggle_joint_damping`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_jiggle_joint_damping) ( joint_idx: [`int`](class_int.md), damping: [`float`](class_float.md) )                   |
+| `void`                          | [`set_jiggle_joint_gravity`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_jiggle_joint_gravity) ( joint_idx: [`int`](class_int.md), gravity: [`Vector2`](class_vector2.md) )               |
+| `void`                          | [`set_jiggle_joint_mass`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_jiggle_joint_mass) ( joint_idx: [`int`](class_int.md), mass: [`float`](class_float.md) )                            |
+| `void`                          | [`set_jiggle_joint_override`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_jiggle_joint_override) ( joint_idx: [`int`](class_int.md), override: [`bool`](class_bool.md) )                  |
+| `void`                          | [`set_jiggle_joint_stiffness`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_jiggle_joint_stiffness) ( joint_idx: [`int`](class_int.md), stiffness: [`float`](class_float.md) )             |
+| `void`                          | [`set_jiggle_joint_use_gravity`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_jiggle_joint_use_gravity) ( joint_idx: [`int`](class_int.md), use_gravity: [`bool`](class_bool.md) )         |
+| `void`                          | [`set_use_colliders`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_method_set_use_colliders) ( use_colliders: [`bool`](class_bool.md) )                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -149,7 +149,7 @@ The NodePath to the node that is the target for the Jiggle modification. This no
 - `void` **set_use_gravity** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_use_gravity** ( )
 
-Whether the gravity vector, [`gravity`](#class_skeletonmodification2djiggle_property_gravity), should be applied to the Jiggle joints, assuming they are not overriding the default settings.
+Whether the gravity vector, [`gravity`](class_skeletonmodification2djiggle.md#class_skeletonmodification2djiggle_property_gravity), should be applied to the Jiggle joints, assuming they are not overriding the default settings.
 
 <!-- rst-class:: classref-section-separator -->
 

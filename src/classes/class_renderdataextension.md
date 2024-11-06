@@ -19,10 +19,10 @@ This class allows for a RenderData implementation to be made in GDExtension.
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)                               | [`_get_camera_attributes`](#class_renderdataextension_private_method__get_camera_attributes) ( ) virtual[^virtual] const[^const]       |
-| [`RID`](class_rid.md)                               | [`_get_environment`](#class_renderdataextension_private_method__get_environment) ( ) virtual[^virtual] const[^const]                   |
-| [`RenderSceneBuffers`](class_renderscenebuffers.md) | [`_get_render_scene_buffers`](#class_renderdataextension_private_method__get_render_scene_buffers) ( ) virtual[^virtual] const[^const] |
-| [`RenderSceneData`](class_renderscenedata.md)       | [`_get_render_scene_data`](#class_renderdataextension_private_method__get_render_scene_data) ( ) virtual[^virtual] const[^const]       |
+| [`RID`](class_rid.md)                               | [`_get_camera_attributes`](class_renderdataextension.md#class_renderdataextension_private_method__get_camera_attributes) ( ) virtual[^virtual] const[^const]       |
+| [`RID`](class_rid.md)                               | [`_get_environment`](class_renderdataextension.md#class_renderdataextension_private_method__get_environment) ( ) virtual[^virtual] const[^const]                   |
+| [`RenderSceneBuffers`](class_renderscenebuffers.md) | [`_get_render_scene_buffers`](class_renderdataextension.md#class_renderdataextension_private_method__get_render_scene_buffers) ( ) virtual[^virtual] const[^const] |
+| [`RenderSceneData`](class_renderscenedata.md)       | [`_get_render_scene_data`](class_renderdataextension.md#class_renderdataextension_private_method__get_render_scene_data) ( ) virtual[^virtual] const[^const]       |
 
 <!-- rst-class:: classref-section-separator -->
 

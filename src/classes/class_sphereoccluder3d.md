@@ -21,7 +21,7 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`radius`](#class_sphereoccluder3d_property_radius) | ``1.0`` |
+| [`float`](class_float.md) | [`radius`](class_sphereoccluder3d.md#class_sphereoccluder3d_property_radius) | ``1.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

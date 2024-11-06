@@ -19,11 +19,11 @@ KHR_materials_pbrSpecularGlossiness is an archived GLTF extension. This means th
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md) | [`diffuse_factor`](#class_gltfspecgloss_property_diffuse_factor)   | ``Color(1, 1, 1, 1)`` |
-| [`Image`](class_image.md) | [`diffuse_img`](#class_gltfspecgloss_property_diffuse_img)         |                       |
-| [`float`](class_float.md) | [`gloss_factor`](#class_gltfspecgloss_property_gloss_factor)       | ``1.0``               |
-| [`Image`](class_image.md) | [`spec_gloss_img`](#class_gltfspecgloss_property_spec_gloss_img)   |                       |
-| [`Color`](class_color.md) | [`specular_factor`](#class_gltfspecgloss_property_specular_factor) | ``Color(1, 1, 1, 1)`` |
+| [`Color`](class_color.md) | [`diffuse_factor`](class_gltfspecgloss.md#class_gltfspecgloss_property_diffuse_factor)   | ``Color(1, 1, 1, 1)`` |
+| [`Image`](class_image.md) | [`diffuse_img`](class_gltfspecgloss.md#class_gltfspecgloss_property_diffuse_img)         |                       |
+| [`float`](class_float.md) | [`gloss_factor`](class_gltfspecgloss.md#class_gltfspecgloss_property_gloss_factor)       | ``1.0``               |
+| [`Image`](class_image.md) | [`spec_gloss_img`](class_gltfspecgloss.md#class_gltfspecgloss_property_spec_gloss_img)   |                       |
+| [`Color`](class_color.md) | [`specular_factor`](class_gltfspecgloss.md#class_gltfspecgloss_property_specular_factor) | ``Color(1, 1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

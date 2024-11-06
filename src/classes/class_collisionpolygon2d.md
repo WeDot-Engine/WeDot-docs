@@ -21,11 +21,11 @@ A node that provides a polygon shape to a [`CollisionObject2D`](class_collisiono
 
 |||
 |:-:|:--|
-| [BuildMode](#enum_collisionpolygon2d_buildmode)     | [`build_mode`](#class_collisionpolygon2d_property_build_mode)                             | ``0``                    |
-| [`bool`](class_bool.md)                             | [`disabled`](#class_collisionpolygon2d_property_disabled)                                 | ``false``                |
-| [`bool`](class_bool.md)                             | [`one_way_collision`](#class_collisionpolygon2d_property_one_way_collision)               | ``false``                |
-| [`float`](class_float.md)                           | [`one_way_collision_margin`](#class_collisionpolygon2d_property_one_way_collision_margin) | ``1.0``                  |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](#class_collisionpolygon2d_property_polygon)                                   | ``PackedVector2Array()`` |
+| [BuildMode](#enum_collisionpolygon2d_buildmode)     | [`build_mode`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_build_mode)                             | ``0``                    |
+| [`bool`](class_bool.md)                             | [`disabled`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_disabled)                                 | ``false``                |
+| [`bool`](class_bool.md)                             | [`one_way_collision`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_one_way_collision)               | ``false``                |
+| [`float`](class_float.md)                           | [`one_way_collision_margin`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_one_way_collision_margin) | ``1.0``                  |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_polygon)                                   | ``PackedVector2Array()`` |
 
 <!-- rst-class:: classref-section-separator -->
 

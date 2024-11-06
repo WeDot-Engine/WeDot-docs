@@ -19,7 +19,7 @@ A GUI control that displays a [`StyleBox`](class_stylebox.md).
 
 |||
 |:-:|:--|
-| [`StyleBox`](class_stylebox.md) | [`panel`](#class_panel_theme_style_panel) |
+| [`StyleBox`](class_stylebox.md) | [`panel`](class_panel.md#class_panel_theme_style_panel) |
 
 <!-- rst-class:: classref-section-separator -->
 

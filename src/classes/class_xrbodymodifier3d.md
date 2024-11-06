@@ -19,15 +19,15 @@ This node uses body tracking data from an [`XRBodyTracker`](class_xrbodytracker.
 
 Positioning of the body is performed by creating an [`XRNode3D`](class_xrnode3d.md) ancestor of the body mesh driven by the same [`XRBodyTracker`](class_xrbodytracker.md).
 
-The body tracking position-data is scaled by [`Skeleton3D.motion_scale`](#class_skeleton3d_property_motion_scale) when applied to the skeleton, which can be used to adjust the tracked body to match the scale of the body model.
+The body tracking position-data is scaled by [`Skeleton3D.motion_scale`](class_skeleton3d.md#class_skeleton3d_property_motion_scale) when applied to the skeleton, which can be used to adjust the tracked body to match the scale of the body model.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`StringName`](class_stringname.md)             | [`body_tracker`](#class_xrbodymodifier3d_property_body_tracker) | ``&"/user/body_tracker"`` |
-| [BodyUpdate](#enum_xrbodymodifier3d_bodyupdate) | [`body_update`](#class_xrbodymodifier3d_property_body_update)   | ``7``                     |
-| [BoneUpdate](#enum_xrbodymodifier3d_boneupdate) | [`bone_update`](#class_xrbodymodifier3d_property_bone_update)   | ``0``                     |
+| [`StringName`](class_stringname.md)             | [`body_tracker`](class_xrbodymodifier3d.md#class_xrbodymodifier3d_property_body_tracker) | ``&"/user/body_tracker"`` |
+| [BodyUpdate](#enum_xrbodymodifier3d_bodyupdate) | [`body_update`](class_xrbodymodifier3d.md#class_xrbodymodifier3d_property_body_update)   | ``7``                     |
+| [BoneUpdate](#enum_xrbodymodifier3d_boneupdate) | [`bone_update`](class_xrbodymodifier3d.md#class_xrbodymodifier3d_property_bone_update)   | ``0``                     |
 
 <!-- rst-class:: classref-section-separator -->
 

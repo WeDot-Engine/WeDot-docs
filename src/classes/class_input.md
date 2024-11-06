@@ -15,67 +15,67 @@ A singleton for handling inputs.
 
 The **Input** singleton handles key presses, mouse buttons and movement, gamepads, and input actions. Actions and their events can be set in the **Input Map** tab in **Project > Project Settings**, or with the [`InputMap`](class_inputmap.md) class.
 
- **Note:** **Input**'s methods reflect the global input state and are not affected by [`Control.accept_event`](#class_control_method_accept_event) or [`Viewport.set_input_as_handled`](#class_viewport_method_set_input_as_handled), as those methods only deal with the way input is propagated in the [`SceneTree`](class_scenetree.md).
+ **Note:** **Input**'s methods reflect the global input state and are not affected by [`Control.accept_event`](class_control.md#class_control_method_accept_event) or [`Viewport.set_input_as_handled`](class_viewport.md#class_viewport_method_set_input_as_handled), as those methods only deal with the way input is propagated in the [`SceneTree`](class_scenetree.md).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)            | [`emulate_mouse_from_touch`](#class_input_property_emulate_mouse_from_touch) |
-| [`bool`](class_bool.md)            | [`emulate_touch_from_mouse`](#class_input_property_emulate_touch_from_mouse) |
-| [MouseMode](#enum_input_mousemode) | [`mouse_mode`](#class_input_property_mouse_mode)                             |
-| [`bool`](class_bool.md)            | [`use_accumulated_input`](#class_input_property_use_accumulated_input)       |
+| [`bool`](class_bool.md)            | [`emulate_mouse_from_touch`](class_input.md#class_input_property_emulate_mouse_from_touch) |
+| [`bool`](class_bool.md)            | [`emulate_touch_from_mouse`](class_input.md#class_input_property_emulate_touch_from_mouse) |
+| [MouseMode](#enum_input_mousemode) | [`mouse_mode`](class_input.md#class_input_property_mouse_mode)                             |
+| [`bool`](class_bool.md)            | [`use_accumulated_input`](class_input.md#class_input_property_use_accumulated_input)       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                | [`action_press`](#class_input_method_action_press) ( action: [`StringName`](class_stringname.md), strength: [`float`](class_float.md) = 1.0 )                                                                                                                                                                   |
-| `void`                                                | [`action_release`](#class_input_method_action_release) ( action: [`StringName`](class_stringname.md) )                                                                                                                                                                                                          |
-| `void`                                                | [`add_joy_mapping`](#class_input_method_add_joy_mapping) ( mapping: [`String`](class_string.md), update_existing: [`bool`](class_bool.md) = false )                                                                                                                                                             |
-| `void`                                                | [`flush_buffered_events`](#class_input_method_flush_buffered_events) ( )                                                                                                                                                                                                                                        |
-| [`Vector3`](class_vector3.md)                         | [`get_accelerometer`](#class_input_method_get_accelerometer) ( ) const[^const]                                                                                                                                                                                                                                  |
-| [`float`](class_float.md)                             | [`get_action_raw_strength`](#class_input_method_get_action_raw_strength) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                            |
-| [`float`](class_float.md)                             | [`get_action_strength`](#class_input_method_get_action_strength) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                    |
-| [`float`](class_float.md)                             | [`get_axis`](#class_input_method_get_axis) ( negative_action: [`StringName`](class_stringname.md), positive_action: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                         |
-| [Array](class_array.md) [`int`](class_int.md)         | [`get_connected_joypads`](#class_input_method_get_connected_joypads) ( )                                                                                                                                                                                                                                        |
-| [CursorShape](#enum_input_cursorshape)                | [`get_current_cursor_shape`](#class_input_method_get_current_cursor_shape) ( ) const[^const]                                                                                                                                                                                                                    |
-| [`Vector3`](class_vector3.md)                         | [`get_gravity`](#class_input_method_get_gravity) ( ) const[^const]                                                                                                                                                                                                                                              |
-| [`Vector3`](class_vector3.md)                         | [`get_gyroscope`](#class_input_method_get_gyroscope) ( ) const[^const]                                                                                                                                                                                                                                          |
-| [`float`](class_float.md)                             | [`get_joy_axis`](#class_input_method_get_joy_axis) ( device: [`int`](class_int.md), axis: [JoyAxis](#enum_@globalscope_joyaxis) ) const[^const]                                                                                                                                                                 |
-| [`String`](class_string.md)                           | [`get_joy_guid`](#class_input_method_get_joy_guid) ( device: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                              |
-| [`Dictionary`](class_dictionary.md)                   | [`get_joy_info`](#class_input_method_get_joy_info) ( device: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                              |
-| [`String`](class_string.md)                           | [`get_joy_name`](#class_input_method_get_joy_name) ( device: [`int`](class_int.md) )                                                                                                                                                                                                                            |
-| [`float`](class_float.md)                             | [`get_joy_vibration_duration`](#class_input_method_get_joy_vibration_duration) ( device: [`int`](class_int.md) )                                                                                                                                                                                                |
-| [`Vector2`](class_vector2.md)                         | [`get_joy_vibration_strength`](#class_input_method_get_joy_vibration_strength) ( device: [`int`](class_int.md) )                                                                                                                                                                                                |
-| [`Vector2`](class_vector2.md)                         | [`get_last_mouse_screen_velocity`](#class_input_method_get_last_mouse_screen_velocity) ( )                                                                                                                                                                                                                      |
-| [`Vector2`](class_vector2.md)                         | [`get_last_mouse_velocity`](#class_input_method_get_last_mouse_velocity) ( )                                                                                                                                                                                                                                    |
-| [`Vector3`](class_vector3.md)                         | [`get_magnetometer`](#class_input_method_get_magnetometer) ( ) const[^const]                                                                                                                                                                                                                                    |
-| [MouseButtonMask](#enum_@globalscope_mousebuttonmask) | [`get_mouse_button_mask`](#class_input_method_get_mouse_button_mask) ( ) const[^const]                                                                                                                                                                                                                          |
-| [`Vector2`](class_vector2.md)                         | [`get_vector`](#class_input_method_get_vector) ( negative_x: [`StringName`](class_stringname.md), positive_x: [`StringName`](class_stringname.md), negative_y: [`StringName`](class_stringname.md), positive_y: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) = -1.0 ) const[^const] |
-| [`bool`](class_bool.md)                               | [`is_action_just_pressed`](#class_input_method_is_action_just_pressed) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                              |
-| [`bool`](class_bool.md)                               | [`is_action_just_released`](#class_input_method_is_action_just_released) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                            |
-| [`bool`](class_bool.md)                               | [`is_action_pressed`](#class_input_method_is_action_pressed) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                        |
-| [`bool`](class_bool.md)                               | [`is_anything_pressed`](#class_input_method_is_anything_pressed) ( ) const[^const]                                                                                                                                                                                                                              |
-| [`bool`](class_bool.md)                               | [`is_joy_button_pressed`](#class_input_method_is_joy_button_pressed) ( device: [`int`](class_int.md), button: [JoyButton](#enum_@globalscope_joybutton) ) const[^const]                                                                                                                                         |
-| [`bool`](class_bool.md)                               | [`is_joy_known`](#class_input_method_is_joy_known) ( device: [`int`](class_int.md) )                                                                                                                                                                                                                            |
-| [`bool`](class_bool.md)                               | [`is_key_label_pressed`](#class_input_method_is_key_label_pressed) ( keycode: [Key](#enum_@globalscope_key) ) const[^const]                                                                                                                                                                                     |
-| [`bool`](class_bool.md)                               | [`is_key_pressed`](#class_input_method_is_key_pressed) ( keycode: [Key](#enum_@globalscope_key) ) const[^const]                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)                               | [`is_mouse_button_pressed`](#class_input_method_is_mouse_button_pressed) ( button: [MouseButton](#enum_@globalscope_mousebutton) ) const[^const]                                                                                                                                                                |
-| [`bool`](class_bool.md)                               | [`is_physical_key_pressed`](#class_input_method_is_physical_key_pressed) ( keycode: [Key](#enum_@globalscope_key) ) const[^const]                                                                                                                                                                               |
-| `void`                                                | [`parse_input_event`](#class_input_method_parse_input_event) ( event: [`InputEvent`](class_inputevent.md) )                                                                                                                                                                                                     |
-| `void`                                                | [`remove_joy_mapping`](#class_input_method_remove_joy_mapping) ( guid: [`String`](class_string.md) )                                                                                                                                                                                                            |
-| `void`                                                | [`set_accelerometer`](#class_input_method_set_accelerometer) ( value: [`Vector3`](class_vector3.md) )                                                                                                                                                                                                           |
-| `void`                                                | [`set_custom_mouse_cursor`](#class_input_method_set_custom_mouse_cursor) ( image: [`Resource`](class_resource.md), shape: [CursorShape](#enum_input_cursorshape) = 0, hotspot: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                                                                  |
-| `void`                                                | [`set_default_cursor_shape`](#class_input_method_set_default_cursor_shape) ( shape: [CursorShape](#enum_input_cursorshape) = 0 )                                                                                                                                                                                |
-| `void`                                                | [`set_gravity`](#class_input_method_set_gravity) ( value: [`Vector3`](class_vector3.md) )                                                                                                                                                                                                                       |
-| `void`                                                | [`set_gyroscope`](#class_input_method_set_gyroscope) ( value: [`Vector3`](class_vector3.md) )                                                                                                                                                                                                                   |
-| `void`                                                | [`set_magnetometer`](#class_input_method_set_magnetometer) ( value: [`Vector3`](class_vector3.md) )                                                                                                                                                                                                             |
-| [`bool`](class_bool.md)                               | [`should_ignore_device`](#class_input_method_should_ignore_device) ( vendor_id: [`int`](class_int.md), product_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                        |
-| `void`                                                | [`start_joy_vibration`](#class_input_method_start_joy_vibration) ( device: [`int`](class_int.md), weak_magnitude: [`float`](class_float.md), strong_magnitude: [`float`](class_float.md), duration: [`float`](class_float.md) = 0 )                                                                             |
-| `void`                                                | [`stop_joy_vibration`](#class_input_method_stop_joy_vibration) ( device: [`int`](class_int.md) )                                                                                                                                                                                                                |
-| `void`                                                | [`vibrate_handheld`](#class_input_method_vibrate_handheld) ( duration_ms: [`int`](class_int.md) = 500, amplitude: [`float`](class_float.md) = -1.0 )                                                                                                                                                            |
-| `void`                                                | [`warp_mouse`](#class_input_method_warp_mouse) ( position: [`Vector2`](class_vector2.md) )                                                                                                                                                                                                                      |
+| `void`                                                | [`action_press`](class_input.md#class_input_method_action_press) ( action: [`StringName`](class_stringname.md), strength: [`float`](class_float.md) = 1.0 )                                                                                                                                                                   |
+| `void`                                                | [`action_release`](class_input.md#class_input_method_action_release) ( action: [`StringName`](class_stringname.md) )                                                                                                                                                                                                          |
+| `void`                                                | [`add_joy_mapping`](class_input.md#class_input_method_add_joy_mapping) ( mapping: [`String`](class_string.md), update_existing: [`bool`](class_bool.md) = false )                                                                                                                                                             |
+| `void`                                                | [`flush_buffered_events`](class_input.md#class_input_method_flush_buffered_events) ( )                                                                                                                                                                                                                                        |
+| [`Vector3`](class_vector3.md)                         | [`get_accelerometer`](class_input.md#class_input_method_get_accelerometer) ( ) const[^const]                                                                                                                                                                                                                                  |
+| [`float`](class_float.md)                             | [`get_action_raw_strength`](class_input.md#class_input_method_get_action_raw_strength) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                            |
+| [`float`](class_float.md)                             | [`get_action_strength`](class_input.md#class_input_method_get_action_strength) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                    |
+| [`float`](class_float.md)                             | [`get_axis`](class_input.md#class_input_method_get_axis) ( negative_action: [`StringName`](class_stringname.md), positive_action: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                         |
+| [Array](class_array.md) [`int`](class_int.md)         | [`get_connected_joypads`](class_input.md#class_input_method_get_connected_joypads) ( )                                                                                                                                                                                                                                        |
+| [CursorShape](#enum_input_cursorshape)                | [`get_current_cursor_shape`](class_input.md#class_input_method_get_current_cursor_shape) ( ) const[^const]                                                                                                                                                                                                                    |
+| [`Vector3`](class_vector3.md)                         | [`get_gravity`](class_input.md#class_input_method_get_gravity) ( ) const[^const]                                                                                                                                                                                                                                              |
+| [`Vector3`](class_vector3.md)                         | [`get_gyroscope`](class_input.md#class_input_method_get_gyroscope) ( ) const[^const]                                                                                                                                                                                                                                          |
+| [`float`](class_float.md)                             | [`get_joy_axis`](class_input.md#class_input_method_get_joy_axis) ( device: [`int`](class_int.md), axis: [JoyAxis](#enum_@globalscope_joyaxis) ) const[^const]                                                                                                                                                                 |
+| [`String`](class_string.md)                           | [`get_joy_guid`](class_input.md#class_input_method_get_joy_guid) ( device: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                              |
+| [`Dictionary`](class_dictionary.md)                   | [`get_joy_info`](class_input.md#class_input_method_get_joy_info) ( device: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                              |
+| [`String`](class_string.md)                           | [`get_joy_name`](class_input.md#class_input_method_get_joy_name) ( device: [`int`](class_int.md) )                                                                                                                                                                                                                            |
+| [`float`](class_float.md)                             | [`get_joy_vibration_duration`](class_input.md#class_input_method_get_joy_vibration_duration) ( device: [`int`](class_int.md) )                                                                                                                                                                                                |
+| [`Vector2`](class_vector2.md)                         | [`get_joy_vibration_strength`](class_input.md#class_input_method_get_joy_vibration_strength) ( device: [`int`](class_int.md) )                                                                                                                                                                                                |
+| [`Vector2`](class_vector2.md)                         | [`get_last_mouse_screen_velocity`](class_input.md#class_input_method_get_last_mouse_screen_velocity) ( )                                                                                                                                                                                                                      |
+| [`Vector2`](class_vector2.md)                         | [`get_last_mouse_velocity`](class_input.md#class_input_method_get_last_mouse_velocity) ( )                                                                                                                                                                                                                                    |
+| [`Vector3`](class_vector3.md)                         | [`get_magnetometer`](class_input.md#class_input_method_get_magnetometer) ( ) const[^const]                                                                                                                                                                                                                                    |
+| [MouseButtonMask](#enum_@globalscope_mousebuttonmask) | [`get_mouse_button_mask`](class_input.md#class_input_method_get_mouse_button_mask) ( ) const[^const]                                                                                                                                                                                                                          |
+| [`Vector2`](class_vector2.md)                         | [`get_vector`](class_input.md#class_input_method_get_vector) ( negative_x: [`StringName`](class_stringname.md), positive_x: [`StringName`](class_stringname.md), negative_y: [`StringName`](class_stringname.md), positive_y: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) = -1.0 ) const[^const] |
+| [`bool`](class_bool.md)                               | [`is_action_just_pressed`](class_input.md#class_input_method_is_action_just_pressed) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                              |
+| [`bool`](class_bool.md)                               | [`is_action_just_released`](class_input.md#class_input_method_is_action_just_released) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                            |
+| [`bool`](class_bool.md)                               | [`is_action_pressed`](class_input.md#class_input_method_is_action_pressed) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                        |
+| [`bool`](class_bool.md)                               | [`is_anything_pressed`](class_input.md#class_input_method_is_anything_pressed) ( ) const[^const]                                                                                                                                                                                                                              |
+| [`bool`](class_bool.md)                               | [`is_joy_button_pressed`](class_input.md#class_input_method_is_joy_button_pressed) ( device: [`int`](class_int.md), button: [JoyButton](#enum_@globalscope_joybutton) ) const[^const]                                                                                                                                         |
+| [`bool`](class_bool.md)                               | [`is_joy_known`](class_input.md#class_input_method_is_joy_known) ( device: [`int`](class_int.md) )                                                                                                                                                                                                                            |
+| [`bool`](class_bool.md)                               | [`is_key_label_pressed`](class_input.md#class_input_method_is_key_label_pressed) ( keycode: [Key](#enum_@globalscope_key) ) const[^const]                                                                                                                                                                                     |
+| [`bool`](class_bool.md)                               | [`is_key_pressed`](class_input.md#class_input_method_is_key_pressed) ( keycode: [Key](#enum_@globalscope_key) ) const[^const]                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)                               | [`is_mouse_button_pressed`](class_input.md#class_input_method_is_mouse_button_pressed) ( button: [MouseButton](#enum_@globalscope_mousebutton) ) const[^const]                                                                                                                                                                |
+| [`bool`](class_bool.md)                               | [`is_physical_key_pressed`](class_input.md#class_input_method_is_physical_key_pressed) ( keycode: [Key](#enum_@globalscope_key) ) const[^const]                                                                                                                                                                               |
+| `void`                                                | [`parse_input_event`](class_input.md#class_input_method_parse_input_event) ( event: [`InputEvent`](class_inputevent.md) )                                                                                                                                                                                                     |
+| `void`                                                | [`remove_joy_mapping`](class_input.md#class_input_method_remove_joy_mapping) ( guid: [`String`](class_string.md) )                                                                                                                                                                                                            |
+| `void`                                                | [`set_accelerometer`](class_input.md#class_input_method_set_accelerometer) ( value: [`Vector3`](class_vector3.md) )                                                                                                                                                                                                           |
+| `void`                                                | [`set_custom_mouse_cursor`](class_input.md#class_input_method_set_custom_mouse_cursor) ( image: [`Resource`](class_resource.md), shape: [CursorShape](#enum_input_cursorshape) = 0, hotspot: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                                                                  |
+| `void`                                                | [`set_default_cursor_shape`](class_input.md#class_input_method_set_default_cursor_shape) ( shape: [CursorShape](#enum_input_cursorshape) = 0 )                                                                                                                                                                                |
+| `void`                                                | [`set_gravity`](class_input.md#class_input_method_set_gravity) ( value: [`Vector3`](class_vector3.md) )                                                                                                                                                                                                                       |
+| `void`                                                | [`set_gyroscope`](class_input.md#class_input_method_set_gyroscope) ( value: [`Vector3`](class_vector3.md) )                                                                                                                                                                                                                   |
+| `void`                                                | [`set_magnetometer`](class_input.md#class_input_method_set_magnetometer) ( value: [`Vector3`](class_vector3.md) )                                                                                                                                                                                                             |
+| [`bool`](class_bool.md)                               | [`should_ignore_device`](class_input.md#class_input_method_should_ignore_device) ( vendor_id: [`int`](class_int.md), product_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                        |
+| `void`                                                | [`start_joy_vibration`](class_input.md#class_input_method_start_joy_vibration) ( device: [`int`](class_int.md), weak_magnitude: [`float`](class_float.md), strong_magnitude: [`float`](class_float.md), duration: [`float`](class_float.md) = 0 )                                                                             |
+| `void`                                                | [`stop_joy_vibration`](class_input.md#class_input_method_stop_joy_vibration) ( device: [`int`](class_int.md) )                                                                                                                                                                                                                |
+| `void`                                                | [`vibrate_handheld`](class_input.md#class_input_method_vibrate_handheld) ( duration_ms: [`int`](class_int.md) = 500, amplitude: [`float`](class_float.md) = -1.0 )                                                                                                                                                            |
+| `void`                                                | [`warp_mouse`](class_input.md#class_input_method_warp_mouse) ( position: [`Vector2`](class_vector2.md) )                                                                                                                                                                                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -117,7 +117,7 @@ Makes the mouse cursor hidden if it is visible.
 
 Captures the mouse. The mouse will be hidden and its position locked at the center of the window manager's window.
 
- **Note:** If you want to process the mouse's movement in this mode, you need to use [`InputEventMouseMotion.relative`](#class_inputeventmousemotion_property_relative).
+ **Note:** If you want to process the mouse's movement in this mode, you need to use [`InputEventMouseMotion.relative`](class_inputeventmousemotion.md#class_inputeventmousemotion_property_relative).
 
 <div id="_class_input_constant_mouse_mode_confined"></div>
 
@@ -181,7 +181,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 Drag cursor. Usually displayed when dragging something.
 
- **Note:** Windows lacks a dragging cursor, so [`CURSOR_DRAG`](#class_input_constant_cursor_drag) is the same as [`CURSOR_MOVE`](#class_input_constant_cursor_move) for this platform.
+ **Note:** Windows lacks a dragging cursor, so [`CURSOR_DRAG`](class_input.md#class_input_constant_cursor_drag) is the same as [`CURSOR_MOVE`](class_input.md#class_input_constant_cursor_move) for this platform.
 
 <div id="_class_input_constant_cursor_can_drop"></div>
 
@@ -217,7 +217,7 @@ Window resize mouse cursor. The cursor is a double-headed arrow that goes from t
 
 [CursorShape](#enum_input_cursorshape) **CURSOR_FDIAGSIZE** = ``12``
 
-Window resize mouse cursor. The cursor is a double-headed arrow that goes from the top left to the bottom right, the opposite of [`CURSOR_BDIAGSIZE`](#class_input_constant_cursor_bdiagsize). It tells the user they can resize the window or the panel both horizontally and vertically.
+Window resize mouse cursor. The cursor is a double-headed arrow that goes from the top left to the bottom right, the opposite of [`CURSOR_BDIAGSIZE`](class_input.md#class_input_constant_cursor_bdiagsize). It tells the user they can resize the window or the panel both horizontally and vertically.
 
 <div id="_class_input_constant_cursor_move"></div>
 
@@ -229,13 +229,13 @@ Move cursor. Indicates that something can be moved.
 
 [CursorShape](#enum_input_cursorshape) **CURSOR_VSPLIT** = ``14``
 
-Vertical split mouse cursor. On Windows, it's the same as [`CURSOR_VSIZE`](#class_input_constant_cursor_vsize).
+Vertical split mouse cursor. On Windows, it's the same as [`CURSOR_VSIZE`](class_input.md#class_input_constant_cursor_vsize).
 
 <div id="_class_input_constant_cursor_hsplit"></div>
 
 [CursorShape](#enum_input_cursorshape) **CURSOR_HSPLIT** = ``15``
 
-Horizontal split mouse cursor. On Windows, it's the same as [`CURSOR_HSIZE`](#class_input_constant_cursor_hsize).
+Horizontal split mouse cursor. On Windows, it's the same as [`CURSOR_HSIZE`](class_input.md#class_input_constant_cursor_hsize).
 
 <div id="_class_input_constant_cursor_help"></div>
 
@@ -256,7 +256,7 @@ Help cursor. Usually a question mark.
 - `void` **set_emulate_mouse_from_touch** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_emulating_mouse_from_touch** ( )
 
-If `true`, sends mouse input events when tapping or swiping on the touchscreen. See also [`ProjectSettings.input_devices/pointing/emulate_mouse_from_touch`](#class_projectsettings_property_input_devices/pointing/emulate_mouse_from_touch).
+If `true`, sends mouse input events when tapping or swiping on the touchscreen. See also [`ProjectSettings.input_devices/pointing/emulate_mouse_from_touch`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/emulate_mouse_from_touch).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -269,7 +269,7 @@ If `true`, sends mouse input events when tapping or swiping on the touchscreen. 
 - `void` **set_emulate_touch_from_mouse** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_emulating_touch_from_mouse** ( )
 
-If `true`, sends touch input events when clicking or dragging the mouse. See also [`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse`](#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse).
+If `true`, sends touch input events when clicking or dragging the mouse. See also [`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -315,7 +315,7 @@ This will simulate pressing the specified action.
 
 The strength can be used for non-boolean actions, it's ranged between 0 and 1 representing the intensity of the given action.
 
- **Note:** This method will not cause any [`Node._input`](#class_node_private_method__input) calls. It is intended to be used with [`is_action_pressed`](#class_input_method_is_action_pressed) and [`is_action_just_pressed`](#class_input_method_is_action_just_pressed). If you want to simulate `_input`, use [`parse_input_event`](#class_input_method_parse_input_event) instead.
+ **Note:** This method will not cause any [`Node._input`](class_node.md#class_node_private_method__input) calls. It is intended to be used with [`is_action_pressed`](class_input.md#class_input_method_is_action_pressed) and [`is_action_just_pressed`](class_input.md#class_input_method_is_action_just_pressed). If you want to simulate `_input`, use [`parse_input_event`](class_input.md#class_input_method_parse_input_event) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -345,7 +345,7 @@ Adds a new mapping entry (in SDL2 format) to the mapping database. Optionally up
 
 `void` **flush_buffered_events** ( )<div id="class_input_method_flush_buffered_events"></div>
 
-Sends all input events which are in the current buffer to the game loop. These events may have been buffered as a result of accumulated input ([`use_accumulated_input`](#class_input_property_use_accumulated_input)) or agile input flushing ([`ProjectSettings.input_devices/buffering/agile_event_flushing`](#class_projectsettings_property_input_devices/buffering/agile_event_flushing)).
+Sends all input events which are in the current buffer to the game loop. These events may have been buffered as a result of accumulated input ([`use_accumulated_input`](class_input.md#class_input_property_use_accumulated_input)) or agile input flushing ([`ProjectSettings.input_devices/buffering/agile_event_flushing`](class_projectsettings.md#class_projectsettings_property_input_devices/buffering/agile_event_flushing)).
 
 The engine will already do this itself at key execution points (at least once per frame). However, this can be useful in advanced cases where you want precise control over the timing of event handling.
 
@@ -357,11 +357,11 @@ The engine will already do this itself at key execution points (at least once pe
 
 [`Vector3`](class_vector3.md) **get_accelerometer** ( ) const[^const]<div id="class_input_method_get_accelerometer"></div>
 
-Returns the acceleration in m/s² of the device's accelerometer sensor, if the device has one. Otherwise, the method returns [`Vector3.ZERO`](#class_vector3_constant_zero).
+Returns the acceleration in m/s² of the device's accelerometer sensor, if the device has one. Otherwise, the method returns [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
 Note this method returns an empty [`Vector3`](class_vector3.md) when running from the editor even when your device has an accelerometer. You must export your project to a supported device to read values from the accelerometer.
 
- **Note:** This method only works on Android and iOS. On other platforms, it always returns [`Vector3.ZERO`](#class_vector3_constant_zero).
+ **Note:** This method only works on Android and iOS. On other platforms, it always returns [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -371,7 +371,7 @@ Note this method returns an empty [`Vector3`](class_vector3.md) when running fro
 
 [`float`](class_float.md) **get_action_raw_strength** ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]<div id="class_input_method_get_action_raw_strength"></div>
 
-Returns a value between 0 and 1 representing the raw intensity of the given action, ignoring the action's deadzone. In most cases, you should use [`get_action_strength`](#class_input_method_get_action_strength) instead.
+Returns a value between 0 and 1 representing the raw intensity of the given action, ignoring the action's deadzone. In most cases, you should use [`get_action_strength`](class_input.md#class_input_method_get_action_strength) instead.
 
 If `exact_match` is `false`, it ignores additional input modifiers for [`InputEventKey`](class_inputeventkey.md) and [`InputEventMouseButton`](class_inputeventmousebutton.md) events, and the direction for [`InputEventJoypadMotion`](class_inputeventjoypadmotion.md) events.
 
@@ -427,9 +427,9 @@ Returns the currently assigned cursor shape (see [CursorShape](#enum_input_curso
 
 [`Vector3`](class_vector3.md) **get_gravity** ( ) const[^const]<div id="class_input_method_get_gravity"></div>
 
-Returns the gravity in m/s² of the device's accelerometer sensor, if the device has one. Otherwise, the method returns [`Vector3.ZERO`](#class_vector3_constant_zero).
+Returns the gravity in m/s² of the device's accelerometer sensor, if the device has one. Otherwise, the method returns [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
- **Note:** This method only works on Android and iOS. On other platforms, it always returns [`Vector3.ZERO`](#class_vector3_constant_zero).
+ **Note:** This method only works on Android and iOS. On other platforms, it always returns [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -439,9 +439,9 @@ Returns the gravity in m/s² of the device's accelerometer sensor, if the device
 
 [`Vector3`](class_vector3.md) **get_gyroscope** ( ) const[^const]<div id="class_input_method_get_gyroscope"></div>
 
-Returns the rotation rate in rad/s around a device's X, Y, and Z axes of the gyroscope sensor, if the device has one. Otherwise, the method returns [`Vector3.ZERO`](#class_vector3_constant_zero).
+Returns the rotation rate in rad/s around a device's X, Y, and Z axes of the gyroscope sensor, if the device has one. Otherwise, the method returns [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
- **Note:** This method only works on Android and iOS. On other platforms, it always returns [`Vector3.ZERO`](#class_vector3_constant_zero).
+ **Note:** This method only works on Android and iOS. On other platforms, it always returns [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -545,9 +545,9 @@ Returns the last mouse velocity. To provide a precise and jitter-free velocity, 
 
 [`Vector3`](class_vector3.md) **get_magnetometer** ( ) const[^const]<div id="class_input_method_get_magnetometer"></div>
 
-Returns the magnetic field strength in micro-Tesla for all axes of the device's magnetometer sensor, if the device has one. Otherwise, the method returns [`Vector3.ZERO`](#class_vector3_constant_zero).
+Returns the magnetic field strength in micro-Tesla for all axes of the device's magnetometer sensor, if the device has one. Otherwise, the method returns [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
- **Note:** This method only works on Android and iOS. On other platforms, it always returns [`Vector3.ZERO`](#class_vector3_constant_zero).
+ **Note:** This method only works on Android and iOS. On other platforms, it always returns [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -557,7 +557,7 @@ Returns the magnetic field strength in micro-Tesla for all axes of the device's 
 
 [MouseButtonMask](#enum_@globalscope_mousebuttonmask) **get_mouse_button_mask** ( ) const[^const]<div id="class_input_method_get_mouse_button_mask"></div>
 
-Returns mouse buttons as a bitmask. If multiple mouse buttons are pressed at the same time, the bits are added together. Equivalent to [`DisplayServer.mouse_get_button_state`](#class_displayserver_method_mouse_get_button_state).
+Returns mouse buttons as a bitmask. If multiple mouse buttons are pressed at the same time, the bits are added together. Equivalent to [`DisplayServer.mouse_get_button_state`](class_displayserver.md#class_displayserver_method_mouse_get_button_state).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -589,9 +589,9 @@ If `exact_match` is `false`, it ignores additional input modifiers for [`InputEv
 
  **Note:** Returning `true` does not imply that the action is *still* pressed. An action can be pressed and released again rapidly, and `true` will still be returned so as not to miss input.
 
- **Note:** Due to keyboard ghosting, [`is_action_just_pressed`](#class_input_method_is_action_just_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
+ **Note:** Due to keyboard ghosting, [`is_action_just_pressed`](class_input.md#class_input_method_is_action_just_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
 
- **Note:** During input handling (e.g. [`Node._input`](#class_node_private_method__input)), use [`InputEvent.is_action_pressed`](#class_inputevent_method_is_action_pressed) instead to query the action state of the current event.
+ **Note:** During input handling (e.g. [`Node._input`](class_node.md#class_node_private_method__input)), use [`InputEvent.is_action_pressed`](class_inputevent.md#class_inputevent_method_is_action_pressed) instead to query the action state of the current event.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -607,7 +607,7 @@ Returns `true` when the user *stops* pressing the action event in the current fr
 
 If `exact_match` is `false`, it ignores additional input modifiers for [`InputEventKey`](class_inputeventkey.md) and [`InputEventMouseButton`](class_inputeventmousebutton.md) events, and the direction for [`InputEventJoypadMotion`](class_inputeventjoypadmotion.md) events.
 
- **Note:** During input handling (e.g. [`Node._input`](#class_node_private_method__input)), use [`InputEvent.is_action_released`](#class_inputevent_method_is_action_released) instead to query the action state of the current event.
+ **Note:** During input handling (e.g. [`Node._input`](class_node.md#class_node_private_method__input)), use [`InputEvent.is_action_released`](class_inputevent.md#class_inputevent_method_is_action_released) instead to query the action state of the current event.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -621,7 +621,7 @@ Returns `true` if you are pressing the action event.
 
 If `exact_match` is `false`, it ignores additional input modifiers for [`InputEventKey`](class_inputeventkey.md) and [`InputEventMouseButton`](class_inputeventmousebutton.md) events, and the direction for [`InputEventJoypadMotion`](class_inputeventjoypadmotion.md) events.
 
- **Note:** Due to keyboard ghosting, [`is_action_pressed`](#class_input_method_is_action_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
+ **Note:** Due to keyboard ghosting, [`is_action_pressed`](class_input.md#class_input_method_is_action_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -631,7 +631,7 @@ If `exact_match` is `false`, it ignores additional input modifiers for [`InputEv
 
 [`bool`](class_bool.md) **is_anything_pressed** ( ) const[^const]<div id="class_input_method_is_anything_pressed"></div>
 
-Returns `true` if any action, key, joypad button, or mouse button is being pressed. This will also return `true` if any action is simulated via code by calling [`action_press`](#class_input_method_action_press).
+Returns `true` if any action, key, joypad button, or mouse button is being pressed. This will also return `true` if any action is simulated via code by calling [`action_press`](class_input.md#class_input_method_action_press).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -673,9 +673,9 @@ Returns `true` if you are pressing the key with the `keycode` printed on it. You
 
 Returns `true` if you are pressing the Latin key in the current keyboard layout. You can pass a [Key](#enum_@globalscope_key) constant.
 
- [`is_key_pressed`](#class_input_method_is_key_pressed) is only recommended over [`is_physical_key_pressed`](#class_input_method_is_physical_key_pressed) in non-game applications. This ensures that shortcut keys behave as expected depending on the user's keyboard layout, as keyboard shortcuts are generally dependent on the keyboard layout in non-game applications. If in doubt, use [`is_physical_key_pressed`](#class_input_method_is_physical_key_pressed).
+ [`is_key_pressed`](class_input.md#class_input_method_is_key_pressed) is only recommended over [`is_physical_key_pressed`](class_input.md#class_input_method_is_physical_key_pressed) in non-game applications. This ensures that shortcut keys behave as expected depending on the user's keyboard layout, as keyboard shortcuts are generally dependent on the keyboard layout in non-game applications. If in doubt, use [`is_physical_key_pressed`](class_input.md#class_input_method_is_physical_key_pressed).
 
- **Note:** Due to keyboard ghosting, [`is_key_pressed`](#class_input_method_is_key_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
+ **Note:** Due to keyboard ghosting, [`is_key_pressed`](class_input.md#class_input_method_is_key_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -697,9 +697,9 @@ Returns `true` if you are pressing the mouse button specified with [MouseButton]
 
 Returns `true` if you are pressing the key in the physical location on the 101/102-key US QWERTY keyboard. You can pass a [Key](#enum_@globalscope_key) constant.
 
- [`is_physical_key_pressed`](#class_input_method_is_physical_key_pressed) is recommended over [`is_key_pressed`](#class_input_method_is_key_pressed) for in-game actions, as it will make <i class="fa fa-gamepad"></i>`W`/<i class="fa fa-gamepad"></i>`A`/<i class="fa fa-gamepad"></i>`S`/<i class="fa fa-gamepad"></i>`D` layouts work regardless of the user's keyboard layout. [`is_physical_key_pressed`](#class_input_method_is_physical_key_pressed) will also ensure that the top row number keys work on any keyboard layout. If in doubt, use [`is_physical_key_pressed`](#class_input_method_is_physical_key_pressed).
+ [`is_physical_key_pressed`](class_input.md#class_input_method_is_physical_key_pressed) is recommended over [`is_key_pressed`](class_input.md#class_input_method_is_key_pressed) for in-game actions, as it will make <i class="fa fa-gamepad"></i>`W`/<i class="fa fa-gamepad"></i>`A`/<i class="fa fa-gamepad"></i>`S`/<i class="fa fa-gamepad"></i>`D` layouts work regardless of the user's keyboard layout. [`is_physical_key_pressed`](class_input.md#class_input_method_is_physical_key_pressed) will also ensure that the top row number keys work on any keyboard layout. If in doubt, use [`is_physical_key_pressed`](class_input.md#class_input_method_is_physical_key_pressed).
 
- **Note:** Due to keyboard ghosting, [`is_physical_key_pressed`](#class_input_method_is_physical_key_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
+ **Note:** Due to keyboard ghosting, [`is_physical_key_pressed`](class_input.md#class_input_method_is_physical_key_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -709,7 +709,7 @@ Returns `true` if you are pressing the key in the physical location on the 101/1
 
 `void` **parse_input_event** ( event: [`InputEvent`](class_inputevent.md) )<div id="class_input_method_parse_input_event"></div>
 
-Feeds an [`InputEvent`](class_inputevent.md) to the game. Can be used to artificially trigger input events from code. Also generates [`Node._input`](#class_node_private_method__input) calls.
+Feeds an [`InputEvent`](class_inputevent.md) to the game. Can be used to artificially trigger input events from code. Also generates [`Node._input`](class_node.md#class_node_private_method__input) calls.
 
  **Example:** 
 
@@ -733,7 +733,7 @@ Feeds an [`InputEvent`](class_inputevent.md) to the game. Can be used to artific
 
 
 
- **Note:** Calling this function has no influence on the operating system. So for example sending an [`InputEventMouseMotion`](class_inputeventmousemotion.md) will not move the OS mouse cursor to the specified position (use [`warp_mouse`](#class_input_method_warp_mouse) instead) and sending <i class="fa fa-gamepad"></i>`Alt/Cmd + Tab` as [`InputEventKey`](class_inputeventkey.md) won't toggle between active windows.
+ **Note:** Calling this function has no influence on the operating system. So for example sending an [`InputEventMouseMotion`](class_inputeventmousemotion.md) will not move the OS mouse cursor to the specified position (use [`warp_mouse`](class_input.md#class_input_method_warp_mouse) instead) and sending <i class="fa fa-gamepad"></i>`Alt/Cmd + Tab` as [`InputEventKey`](class_inputeventkey.md) won't toggle between active windows.
 
 
 
@@ -789,9 +789,9 @@ Sets a custom mouse cursor image, which is only visible inside the game window. 
 
 `void` **set_default_cursor_shape** ( shape: [CursorShape](#enum_input_cursorshape) = 0 )<div id="class_input_method_set_default_cursor_shape"></div>
 
-Sets the default cursor shape to be used in the viewport instead of [`CURSOR_ARROW`](#class_input_constant_cursor_arrow).
+Sets the default cursor shape to be used in the viewport instead of [`CURSOR_ARROW`](class_input.md#class_input_constant_cursor_arrow).
 
- **Note:** If you want to change the default cursor shape for [`Control`](class_control.md)'s nodes, use [`Control.mouse_default_cursor_shape`](#class_control_property_mouse_default_cursor_shape) instead.
+ **Note:** If you want to change the default cursor shape for [`Control`](class_control.md)'s nodes, use [`Control.mouse_default_cursor_shape`](class_control.md#class_control_property_mouse_default_cursor_shape) instead.
 
  **Note:** This method generates an [`InputEventMouseMotion`](class_inputeventmousemotion.md) to update cursor immediately.
 
@@ -851,7 +851,7 @@ Queries whether an input device should be ignored or not. Devices can be ignored
 
 `void` **start_joy_vibration** ( device: [`int`](class_int.md), weak_magnitude: [`float`](class_float.md), strong_magnitude: [`float`](class_float.md), duration: [`float`](class_float.md) = 0 )<div id="class_input_method_start_joy_vibration"></div>
 
-Starts to vibrate the joypad. Joypads usually come with two rumble motors, a strong and a weak one. `weak_magnitude` is the strength of the weak motor (between 0 and 1) and `strong_magnitude` is the strength of the strong motor (between 0 and 1). `duration` is the duration of the effect in seconds (a duration of 0 will try to play the vibration indefinitely). The vibration can be stopped early by calling [`stop_joy_vibration`](#class_input_method_stop_joy_vibration).
+Starts to vibrate the joypad. Joypads usually come with two rumble motors, a strong and a weak one. `weak_magnitude` is the strength of the weak motor (between 0 and 1) and `strong_magnitude` is the strength of the strong motor (between 0 and 1). `duration` is the duration of the effect in seconds (a duration of 0 will try to play the vibration indefinitely). The vibration can be stopped early by calling [`stop_joy_vibration`](class_input.md#class_input_method_stop_joy_vibration).
 
  **Note:** Not every hardware is compatible with long effect durations; it is recommended to restart an effect if it has to be played for more than a few seconds.
 
@@ -865,7 +865,7 @@ Starts to vibrate the joypad. Joypads usually come with two rumble motors, a str
 
 `void` **stop_joy_vibration** ( device: [`int`](class_int.md) )<div id="class_input_method_stop_joy_vibration"></div>
 
-Stops the vibration of the joypad started with [`start_joy_vibration`](#class_input_method_start_joy_vibration).
+Stops the vibration of the joypad started with [`start_joy_vibration`](class_input.md#class_input_method_start_joy_vibration).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -881,13 +881,13 @@ Vibrate the handheld device for the specified duration in milliseconds.
 
  **Note:** This method is implemented on Android, iOS, and Web. It has no effect on other platforms.
 
- **Note:** For Android, [`vibrate_handheld`](#class_input_method_vibrate_handheld) requires enabling the `VIBRATE` permission in the export preset. Otherwise, [`vibrate_handheld`](#class_input_method_vibrate_handheld) will have no effect.
+ **Note:** For Android, [`vibrate_handheld`](class_input.md#class_input_method_vibrate_handheld) requires enabling the `VIBRATE` permission in the export preset. Otherwise, [`vibrate_handheld`](class_input.md#class_input_method_vibrate_handheld) will have no effect.
 
  **Note:** For iOS, specifying the duration is only supported in iOS 13 and later.
 
  **Note:** For Web, the amplitude cannot be changed.
 
- **Note:** Some web browsers such as Safari and Firefox for Android do not support [`vibrate_handheld`](#class_input_method_vibrate_handheld).
+ **Note:** Some web browsers such as Safari and Firefox for Android do not support [`vibrate_handheld`](class_input.md#class_input_method_vibrate_handheld).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -899,9 +899,9 @@ Vibrate the handheld device for the specified duration in milliseconds.
 
 Sets the mouse position to the specified vector, provided in pixels and relative to an origin at the upper left corner of the currently focused Window Manager game window.
 
-Mouse position is clipped to the limits of the screen resolution, or to the limits of the game window if [MouseMode](#enum_input_mousemode) is set to [`MOUSE_MODE_CONFINED`](#class_input_constant_mouse_mode_confined) or [`MOUSE_MODE_CONFINED_HIDDEN`](#class_input_constant_mouse_mode_confined_hidden).
+Mouse position is clipped to the limits of the screen resolution, or to the limits of the game window if [MouseMode](#enum_input_mousemode) is set to [`MOUSE_MODE_CONFINED`](class_input.md#class_input_constant_mouse_mode_confined) or [`MOUSE_MODE_CONFINED_HIDDEN`](class_input.md#class_input_constant_mouse_mode_confined_hidden).
 
- **Note:** [`warp_mouse`](#class_input_method_warp_mouse) is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
+ **Note:** [`warp_mouse`](class_input.md#class_input_method_warp_mouse) is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

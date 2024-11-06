@@ -21,27 +21,27 @@ A link between two positions on [`NavigationRegion3D`](class_navigationregion3d.
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)       | [`bidirectional`](#class_navigationlink3d_property_bidirectional)         | ``true``             |
-| [`bool`](class_bool.md)       | [`enabled`](#class_navigationlink3d_property_enabled)                     | ``true``             |
-| [`Vector3`](class_vector3.md) | [`end_position`](#class_navigationlink3d_property_end_position)           | ``Vector3(0, 0, 0)`` |
-| [`float`](class_float.md)     | [`enter_cost`](#class_navigationlink3d_property_enter_cost)               | ``0.0``              |
-| [`int`](class_int.md)         | [`navigation_layers`](#class_navigationlink3d_property_navigation_layers) | ``1``                |
-| [`Vector3`](class_vector3.md) | [`start_position`](#class_navigationlink3d_property_start_position)       | ``Vector3(0, 0, 0)`` |
-| [`float`](class_float.md)     | [`travel_cost`](#class_navigationlink3d_property_travel_cost)             | ``1.0``              |
+| [`bool`](class_bool.md)       | [`bidirectional`](class_navigationlink3d.md#class_navigationlink3d_property_bidirectional)         | ``true``             |
+| [`bool`](class_bool.md)       | [`enabled`](class_navigationlink3d.md#class_navigationlink3d_property_enabled)                     | ``true``             |
+| [`Vector3`](class_vector3.md) | [`end_position`](class_navigationlink3d.md#class_navigationlink3d_property_end_position)           | ``Vector3(0, 0, 0)`` |
+| [`float`](class_float.md)     | [`enter_cost`](class_navigationlink3d.md#class_navigationlink3d_property_enter_cost)               | ``0.0``              |
+| [`int`](class_int.md)         | [`navigation_layers`](class_navigationlink3d.md#class_navigationlink3d_property_navigation_layers) | ``1``                |
+| [`Vector3`](class_vector3.md) | [`start_position`](class_navigationlink3d.md#class_navigationlink3d_property_start_position)       | ``Vector3(0, 0, 0)`` |
+| [`float`](class_float.md)     | [`travel_cost`](class_navigationlink3d.md#class_navigationlink3d_property_travel_cost)             | ``1.0``              |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md) | [`get_global_end_position`](#class_navigationlink3d_method_get_global_end_position) ( ) const[^const]                                                             |
-| [`Vector3`](class_vector3.md) | [`get_global_start_position`](#class_navigationlink3d_method_get_global_start_position) ( ) const[^const]                                                         |
-| [`bool`](class_bool.md)       | [`get_navigation_layer_value`](#class_navigationlink3d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`RID`](class_rid.md)         | [`get_navigation_map`](#class_navigationlink3d_method_get_navigation_map) ( ) const[^const]                                                                       |
-| [`RID`](class_rid.md)         | [`get_rid`](#class_navigationlink3d_method_get_rid) ( ) const[^const]                                                                                             |
-| `void`                        | [`set_global_end_position`](#class_navigationlink3d_method_set_global_end_position) ( position: [`Vector3`](class_vector3.md) )                                   |
-| `void`                        | [`set_global_start_position`](#class_navigationlink3d_method_set_global_start_position) ( position: [`Vector3`](class_vector3.md) )                               |
-| `void`                        | [`set_navigation_layer_value`](#class_navigationlink3d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                        | [`set_navigation_map`](#class_navigationlink3d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
+| [`Vector3`](class_vector3.md) | [`get_global_end_position`](class_navigationlink3d.md#class_navigationlink3d_method_get_global_end_position) ( ) const[^const]                                                             |
+| [`Vector3`](class_vector3.md) | [`get_global_start_position`](class_navigationlink3d.md#class_navigationlink3d_method_get_global_start_position) ( ) const[^const]                                                         |
+| [`bool`](class_bool.md)       | [`get_navigation_layer_value`](class_navigationlink3d.md#class_navigationlink3d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`RID`](class_rid.md)         | [`get_navigation_map`](class_navigationlink3d.md#class_navigationlink3d_method_get_navigation_map) ( ) const[^const]                                                                       |
+| [`RID`](class_rid.md)         | [`get_rid`](class_navigationlink3d.md#class_navigationlink3d_method_get_rid) ( ) const[^const]                                                                                             |
+| `void`                        | [`set_global_end_position`](class_navigationlink3d.md#class_navigationlink3d_method_set_global_end_position) ( position: [`Vector3`](class_vector3.md) )                                   |
+| `void`                        | [`set_global_start_position`](class_navigationlink3d.md#class_navigationlink3d_method_set_global_start_position) ( position: [`Vector3`](class_vector3.md) )                               |
+| `void`                        | [`set_navigation_layer_value`](class_navigationlink3d.md#class_navigationlink3d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                        | [`set_navigation_map`](class_navigationlink3d.md#class_navigationlink3d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ A link between two positions on [`NavigationRegion3D`](class_navigationregion3d.
 - `void` **set_bidirectional** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_bidirectional** ( )
 
-Whether this link can be traveled in both directions or only from [`start_position`](#class_navigationlink3d_property_start_position) to [`end_position`](#class_navigationlink3d_property_end_position).
+Whether this link can be traveled in both directions or only from [`start_position`](class_navigationlink3d.md#class_navigationlink3d_property_start_position) to [`end_position`](class_navigationlink3d.md#class_navigationlink3d_property_end_position).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -69,7 +69,7 @@ Whether this link can be traveled in both directions or only from [`start_positi
 - `void` **set_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_enabled** ( )
 
-Whether this link is currently active. If `false`, [`NavigationServer3D.map_get_path`](#class_navigationserver3d_method_map_get_path) will ignore this link.
+Whether this link is currently active. If `false`, [`NavigationServer3D.map_get_path`](class_navigationserver3d.md#class_navigationserver3d_method_map_get_path) will ignore this link.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -86,7 +86,7 @@ Ending position of the link.
 
 This position will search out the nearest polygon in the navigation mesh to attach to.
 
-The distance the link will search is controlled by [`NavigationServer3D.map_set_link_connection_radius`](#class_navigationserver3d_method_map_set_link_connection_radius).
+The distance the link will search is controlled by [`NavigationServer3D.map_set_link_connection_radius`](class_navigationserver3d.md#class_navigationserver3d_method_map_set_link_connection_radius).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -99,7 +99,7 @@ The distance the link will search is controlled by [`NavigationServer3D.map_set_
 - `void` **set_enter_cost** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_enter_cost** ( )
 
-When pathfinding enters this link from another regions navigation mesh the [`enter_cost`](#class_navigationlink3d_property_enter_cost) value is added to the path distance for determining the shortest path.
+When pathfinding enters this link from another regions navigation mesh the [`enter_cost`](class_navigationlink3d.md#class_navigationlink3d_property_enter_cost) value is added to the path distance for determining the shortest path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -112,7 +112,7 @@ When pathfinding enters this link from another regions navigation mesh the [`ent
 - `void` **set_navigation_layers** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_navigation_layers** ( )
 
-A bitfield determining all navigation layers the link belongs to. These navigation layers will be checked when requesting a path with [`NavigationServer3D.map_get_path`](#class_navigationserver3d_method_map_get_path).
+A bitfield determining all navigation layers the link belongs to. These navigation layers will be checked when requesting a path with [`NavigationServer3D.map_get_path`](class_navigationserver3d.md#class_navigationserver3d_method_map_get_path).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -129,7 +129,7 @@ Starting position of the link.
 
 This position will search out the nearest polygon in the navigation mesh to attach to.
 
-The distance the link will search is controlled by [`NavigationServer3D.map_set_link_connection_radius`](#class_navigationserver3d_method_map_set_link_connection_radius).
+The distance the link will search is controlled by [`NavigationServer3D.map_set_link_connection_radius`](class_navigationserver3d.md#class_navigationserver3d_method_map_set_link_connection_radius).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -142,7 +142,7 @@ The distance the link will search is controlled by [`NavigationServer3D.map_set_
 - `void` **set_travel_cost** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_travel_cost** ( )
 
-When pathfinding moves along the link the traveled distance is multiplied with [`travel_cost`](#class_navigationlink3d_property_travel_cost) for determining the shortest path.
+When pathfinding moves along the link the traveled distance is multiplied with [`travel_cost`](class_navigationlink3d.md#class_navigationlink3d_property_travel_cost) for determining the shortest path.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -154,7 +154,7 @@ When pathfinding moves along the link the traveled distance is multiplied with [
 
 [`Vector3`](class_vector3.md) **get_global_end_position** ( ) const[^const]<div id="class_navigationlink3d_method_get_global_end_position"></div>
 
-Returns the [`end_position`](#class_navigationlink3d_property_end_position) that is relative to the link as a global position.
+Returns the [`end_position`](class_navigationlink3d.md#class_navigationlink3d_property_end_position) that is relative to the link as a global position.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -164,7 +164,7 @@ Returns the [`end_position`](#class_navigationlink3d_property_end_position) that
 
 [`Vector3`](class_vector3.md) **get_global_start_position** ( ) const[^const]<div id="class_navigationlink3d_method_get_global_start_position"></div>
 
-Returns the [`start_position`](#class_navigationlink3d_property_start_position) that is relative to the link as a global position.
+Returns the [`start_position`](class_navigationlink3d.md#class_navigationlink3d_property_start_position) that is relative to the link as a global position.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -174,7 +174,7 @@ Returns the [`start_position`](#class_navigationlink3d_property_start_position) 
 
 [`bool`](class_bool.md) **get_navigation_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_navigationlink3d_method_get_navigation_layer_value"></div>
 
-Returns whether or not the specified layer of the [`navigation_layers`](#class_navigationlink3d_property_navigation_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`navigation_layers`](class_navigationlink3d.md#class_navigationlink3d_property_navigation_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -204,7 +204,7 @@ Returns the [`RID`](class_rid.md) of this link on the [`NavigationServer3D`](cla
 
 `void` **set_global_end_position** ( position: [`Vector3`](class_vector3.md) )<div id="class_navigationlink3d_method_set_global_end_position"></div>
 
-Sets the [`end_position`](#class_navigationlink3d_property_end_position) that is relative to the link from a global `position`.
+Sets the [`end_position`](class_navigationlink3d.md#class_navigationlink3d_property_end_position) that is relative to the link from a global `position`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -214,7 +214,7 @@ Sets the [`end_position`](#class_navigationlink3d_property_end_position) that is
 
 `void` **set_global_start_position** ( position: [`Vector3`](class_vector3.md) )<div id="class_navigationlink3d_method_set_global_start_position"></div>
 
-Sets the [`start_position`](#class_navigationlink3d_property_start_position) that is relative to the link from a global `position`.
+Sets the [`start_position`](class_navigationlink3d.md#class_navigationlink3d_property_start_position) that is relative to the link from a global `position`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -224,7 +224,7 @@ Sets the [`start_position`](#class_navigationlink3d_property_start_position) tha
 
 `void` **set_navigation_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_navigationlink3d_method_set_navigation_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`navigation_layers`](#class_navigationlink3d_property_navigation_layers) bitmask, given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`navigation_layers`](class_navigationlink3d.md#class_navigationlink3d_property_navigation_layers) bitmask, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -19,13 +19,13 @@ Class that has everything pertaining to a world: A physics space, a visual scena
 
 |||
 |:-:|:--|
-| [`CameraAttributes`](class_cameraattributes.md)                   | [`camera_attributes`](#class_world3d_property_camera_attributes)       |
-| [`PhysicsDirectSpaceState3D`](class_physicsdirectspacestate3d.md) | [`direct_space_state`](#class_world3d_property_direct_space_state)     |
-| [`Environment`](class_environment.md)                             | [`environment`](#class_world3d_property_environment)                   |
-| [`Environment`](class_environment.md)                             | [`fallback_environment`](#class_world3d_property_fallback_environment) |
-| [`RID`](class_rid.md)                                             | [`navigation_map`](#class_world3d_property_navigation_map)             |
-| [`RID`](class_rid.md)                                             | [`scenario`](#class_world3d_property_scenario)                         |
-| [`RID`](class_rid.md)                                             | [`space`](#class_world3d_property_space)                               |
+| [`CameraAttributes`](class_cameraattributes.md)                   | [`camera_attributes`](class_world3d.md#class_world3d_property_camera_attributes)       |
+| [`PhysicsDirectSpaceState3D`](class_physicsdirectspacestate3d.md) | [`direct_space_state`](class_world3d.md#class_world3d_property_direct_space_state)     |
+| [`Environment`](class_environment.md)                             | [`environment`](class_world3d.md#class_world3d_property_environment)                   |
+| [`Environment`](class_environment.md)                             | [`fallback_environment`](class_world3d.md#class_world3d_property_fallback_environment) |
+| [`RID`](class_rid.md)                                             | [`navigation_map`](class_world3d.md#class_world3d_property_navigation_map)             |
+| [`RID`](class_rid.md)                                             | [`scenario`](class_world3d.md#class_world3d_property_scenario)                         |
+| [`RID`](class_rid.md)                                             | [`space`](class_world3d.md#class_world3d_property_space)                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,7 +52,7 @@ The default [`CameraAttributes`](class_cameraattributes.md) resource to use if n
 
 - [`PhysicsDirectSpaceState3D`](class_physicsdirectspacestate3d.md) **get_direct_space_state** ( )
 
-Direct access to the world's physics 3D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to [`Node._physics_process`](#class_node_private_method__physics_process) in the main thread.
+Direct access to the world's physics 3D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) in the main thread.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -78,7 +78,7 @@ The World3D's [`Environment`](class_environment.md).
 - `void` **set_fallback_environment** ( value: [`Environment`](class_environment.md) )
 - [`Environment`](class_environment.md) **get_fallback_environment** ( )
 
-The World3D's fallback environment will be used if [`environment`](#class_world3d_property_environment) fails or is missing.
+The World3D's fallback environment will be used if [`environment`](class_world3d.md#class_world3d_property_environment) fails or is missing.
 
 <!-- rst-class:: classref-item-separator -->
 

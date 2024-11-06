@@ -21,11 +21,11 @@ By default, Godot saves resources as `.tres` (text-based), `.res` (binary) or an
 
 |||
 |:-:|:--|
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](#class_resourceformatsaver_private_method__get_recognized_extensions) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]              |
-| [`bool`](class_bool.md)                           | [`_recognize`](#class_resourceformatsaver_private_method__recognize) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]                                              |
-| [`bool`](class_bool.md)                           | [`_recognize_path`](#class_resourceformatsaver_private_method__recognize_path) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
-| [Error](#enum_@globalscope_error)                 | [`_save`](#class_resourceformatsaver_private_method__save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md), flags: [`int`](class_int.md) ) virtual[^virtual]     |
-| [Error](#enum_@globalscope_error)                 | [`_set_uid`](#class_resourceformatsaver_private_method__set_uid) ( path: [`String`](class_string.md), uid: [`int`](class_int.md) ) virtual[^virtual]                                            |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](class_resourceformatsaver.md#class_resourceformatsaver_private_method__get_recognized_extensions) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]              |
+| [`bool`](class_bool.md)                           | [`_recognize`](class_resourceformatsaver.md#class_resourceformatsaver_private_method__recognize) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]                                              |
+| [`bool`](class_bool.md)                           | [`_recognize_path`](class_resourceformatsaver.md#class_resourceformatsaver_private_method__recognize_path) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
+| [Error](#enum_@globalscope_error)                 | [`_save`](class_resourceformatsaver.md#class_resourceformatsaver_private_method__save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md), flags: [`int`](class_int.md) ) virtual[^virtual]     |
+| [Error](#enum_@globalscope_error)                 | [`_set_uid`](class_resourceformatsaver.md#class_resourceformatsaver_private_method__set_uid) ( path: [`String`](class_string.md), uid: [`int`](class_int.md) ) virtual[^virtual]                                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -37,7 +37,7 @@ By default, Godot saves resources as `.tres` (text-based), `.res` (binary) or an
 
 [`PackedStringArray`](class_packedstringarray.md) **_get_recognized_extensions** ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]<div id="class_resourceformatsaver_private_method__get_recognized_extensions"></div>
 
-Returns the list of extensions available for saving the resource object, provided it is recognized (see [`_recognize`](#class_resourceformatsaver_private_method__recognize)).
+Returns the list of extensions available for saving the resource object, provided it is recognized (see [`_recognize`](class_resourceformatsaver.md#class_resourceformatsaver_private_method__recognize)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -59,7 +59,7 @@ Returns whether the given resource object can be saved by this saver.
 
 Returns `true` if this saver handles a given save path and `false` otherwise.
 
-If this method is not implemented, the default behavior returns whether the path's extension is within the ones provided by [`_get_recognized_extensions`](#class_resourceformatsaver_private_method__get_recognized_extensions).
+If this method is not implemented, the default behavior returns whether the path's extension is within the ones provided by [`_get_recognized_extensions`](class_resourceformatsaver.md#class_resourceformatsaver_private_method__get_recognized_extensions).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -71,7 +71,7 @@ If this method is not implemented, the default behavior returns whether the path
 
 Saves the given resource object to a file at the target `path`. `flags` is a bitmask composed with [SaverFlags](#enum_resourcesaver_saverflags) constants.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or an [Error](#enum_@globalscope_error) constant in case of failure.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or an [Error](#enum_@globalscope_error) constant in case of failure.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -81,7 +81,7 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or an [
 
 [Error](#enum_@globalscope_error) **_set_uid** ( path: [`String`](class_string.md), uid: [`int`](class_int.md) ) virtual[^virtual]<div id="class_resourceformatsaver_private_method__set_uid"></div>
 
-Sets a new UID for the resource at the given `path`. Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or an [Error](#enum_@globalscope_error) constant in case of failure.
+Sets a new UID for the resource at the given `path`. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or an [Error](#enum_@globalscope_error) constant in case of failure.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

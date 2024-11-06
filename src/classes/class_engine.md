@@ -19,42 +19,42 @@ The **Engine** singleton allows you to query and modify the project's run-time p
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)     | [`max_fps`](#class_engine_property_max_fps)                                         | ``0``    |
-| [`int`](class_int.md)     | [`max_physics_steps_per_frame`](#class_engine_property_max_physics_steps_per_frame) | ``8``    |
-| [`float`](class_float.md) | [`physics_jitter_fix`](#class_engine_property_physics_jitter_fix)                   | ``0.5``  |
-| [`int`](class_int.md)     | [`physics_ticks_per_second`](#class_engine_property_physics_ticks_per_second)       | ``60``   |
-| [`bool`](class_bool.md)   | [`print_error_messages`](#class_engine_property_print_error_messages)               | ``true`` |
-| [`float`](class_float.md) | [`time_scale`](#class_engine_property_time_scale)                                   | ``1.0``  |
+| [`int`](class_int.md)     | [`max_fps`](class_engine.md#class_engine_property_max_fps)                                         | ``0``    |
+| [`int`](class_int.md)     | [`max_physics_steps_per_frame`](class_engine.md#class_engine_property_max_physics_steps_per_frame) | ``8``    |
+| [`float`](class_float.md) | [`physics_jitter_fix`](class_engine.md#class_engine_property_physics_jitter_fix)                   | ``0.5``  |
+| [`int`](class_int.md)     | [`physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second)       | ``60``   |
+| [`bool`](class_bool.md)   | [`print_error_messages`](class_engine.md#class_engine_property_print_error_messages)               | ``true`` |
+| [`float`](class_float.md) | [`time_scale`](class_engine.md#class_engine_property_time_scale)                                   | ``1.0``  |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                                 | [`get_architecture_name`](#class_engine_method_get_architecture_name) ( ) const[^const]                                                              |
-| [`Dictionary`](class_dictionary.md)                         | [`get_author_info`](#class_engine_method_get_author_info) ( ) const[^const]                                                                          |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_copyright_info`](#class_engine_method_get_copyright_info) ( ) const[^const]                                                                    |
-| [`Dictionary`](class_dictionary.md)                         | [`get_donor_info`](#class_engine_method_get_donor_info) ( ) const[^const]                                                                            |
-| [`int`](class_int.md)                                       | [`get_frames_drawn`](#class_engine_method_get_frames_drawn) ( )                                                                                      |
-| [`float`](class_float.md)                                   | [`get_frames_per_second`](#class_engine_method_get_frames_per_second) ( ) const[^const]                                                              |
-| [`Dictionary`](class_dictionary.md)                         | [`get_license_info`](#class_engine_method_get_license_info) ( ) const[^const]                                                                        |
-| [`String`](class_string.md)                                 | [`get_license_text`](#class_engine_method_get_license_text) ( ) const[^const]                                                                        |
-| [`MainLoop`](class_mainloop.md)                             | [`get_main_loop`](#class_engine_method_get_main_loop) ( ) const[^const]                                                                              |
-| [`int`](class_int.md)                                       | [`get_physics_frames`](#class_engine_method_get_physics_frames) ( ) const[^const]                                                                    |
-| [`float`](class_float.md)                                   | [`get_physics_interpolation_fraction`](#class_engine_method_get_physics_interpolation_fraction) ( ) const[^const]                                    |
-| [`int`](class_int.md)                                       | [`get_process_frames`](#class_engine_method_get_process_frames) ( ) const[^const]                                                                    |
-| [`ScriptLanguage`](class_scriptlanguage.md)                 | [`get_script_language`](#class_engine_method_get_script_language) ( index: [`int`](class_int.md) ) const[^const]                                     |
-| [`int`](class_int.md)                                       | [`get_script_language_count`](#class_engine_method_get_script_language_count) ( )                                                                    |
-| [`Object`](class_object.md)                                 | [`get_singleton`](#class_engine_method_get_singleton) ( name: [`StringName`](class_stringname.md) ) const[^const]                                    |
-| [`PackedStringArray`](class_packedstringarray.md)           | [`get_singleton_list`](#class_engine_method_get_singleton_list) ( ) const[^const]                                                                    |
-| [`Dictionary`](class_dictionary.md)                         | [`get_version_info`](#class_engine_method_get_version_info) ( ) const[^const]                                                                        |
-| [`String`](class_string.md)                                 | [`get_write_movie_path`](#class_engine_method_get_write_movie_path) ( ) const[^const]                                                                |
-| [`bool`](class_bool.md)                                     | [`has_singleton`](#class_engine_method_has_singleton) ( name: [`StringName`](class_stringname.md) ) const[^const]                                    |
-| [`bool`](class_bool.md)                                     | [`is_editor_hint`](#class_engine_method_is_editor_hint) ( ) const[^const]                                                                            |
-| [`bool`](class_bool.md)                                     | [`is_in_physics_frame`](#class_engine_method_is_in_physics_frame) ( ) const[^const]                                                                  |
-| [Error](#enum_@globalscope_error)                           | [`register_script_language`](#class_engine_method_register_script_language) ( language: [`ScriptLanguage`](class_scriptlanguage.md) )                |
-| `void`                                                      | [`register_singleton`](#class_engine_method_register_singleton) ( name: [`StringName`](class_stringname.md), instance: [`Object`](class_object.md) ) |
-| [Error](#enum_@globalscope_error)                           | [`unregister_script_language`](#class_engine_method_unregister_script_language) ( language: [`ScriptLanguage`](class_scriptlanguage.md) )            |
-| `void`                                                      | [`unregister_singleton`](#class_engine_method_unregister_singleton) ( name: [`StringName`](class_stringname.md) )                                    |
+| [`String`](class_string.md)                                 | [`get_architecture_name`](class_engine.md#class_engine_method_get_architecture_name) ( ) const[^const]                                                              |
+| [`Dictionary`](class_dictionary.md)                         | [`get_author_info`](class_engine.md#class_engine_method_get_author_info) ( ) const[^const]                                                                          |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_copyright_info`](class_engine.md#class_engine_method_get_copyright_info) ( ) const[^const]                                                                    |
+| [`Dictionary`](class_dictionary.md)                         | [`get_donor_info`](class_engine.md#class_engine_method_get_donor_info) ( ) const[^const]                                                                            |
+| [`int`](class_int.md)                                       | [`get_frames_drawn`](class_engine.md#class_engine_method_get_frames_drawn) ( )                                                                                      |
+| [`float`](class_float.md)                                   | [`get_frames_per_second`](class_engine.md#class_engine_method_get_frames_per_second) ( ) const[^const]                                                              |
+| [`Dictionary`](class_dictionary.md)                         | [`get_license_info`](class_engine.md#class_engine_method_get_license_info) ( ) const[^const]                                                                        |
+| [`String`](class_string.md)                                 | [`get_license_text`](class_engine.md#class_engine_method_get_license_text) ( ) const[^const]                                                                        |
+| [`MainLoop`](class_mainloop.md)                             | [`get_main_loop`](class_engine.md#class_engine_method_get_main_loop) ( ) const[^const]                                                                              |
+| [`int`](class_int.md)                                       | [`get_physics_frames`](class_engine.md#class_engine_method_get_physics_frames) ( ) const[^const]                                                                    |
+| [`float`](class_float.md)                                   | [`get_physics_interpolation_fraction`](class_engine.md#class_engine_method_get_physics_interpolation_fraction) ( ) const[^const]                                    |
+| [`int`](class_int.md)                                       | [`get_process_frames`](class_engine.md#class_engine_method_get_process_frames) ( ) const[^const]                                                                    |
+| [`ScriptLanguage`](class_scriptlanguage.md)                 | [`get_script_language`](class_engine.md#class_engine_method_get_script_language) ( index: [`int`](class_int.md) ) const[^const]                                     |
+| [`int`](class_int.md)                                       | [`get_script_language_count`](class_engine.md#class_engine_method_get_script_language_count) ( )                                                                    |
+| [`Object`](class_object.md)                                 | [`get_singleton`](class_engine.md#class_engine_method_get_singleton) ( name: [`StringName`](class_stringname.md) ) const[^const]                                    |
+| [`PackedStringArray`](class_packedstringarray.md)           | [`get_singleton_list`](class_engine.md#class_engine_method_get_singleton_list) ( ) const[^const]                                                                    |
+| [`Dictionary`](class_dictionary.md)                         | [`get_version_info`](class_engine.md#class_engine_method_get_version_info) ( ) const[^const]                                                                        |
+| [`String`](class_string.md)                                 | [`get_write_movie_path`](class_engine.md#class_engine_method_get_write_movie_path) ( ) const[^const]                                                                |
+| [`bool`](class_bool.md)                                     | [`has_singleton`](class_engine.md#class_engine_method_has_singleton) ( name: [`StringName`](class_stringname.md) ) const[^const]                                    |
+| [`bool`](class_bool.md)                                     | [`is_editor_hint`](class_engine.md#class_engine_method_is_editor_hint) ( ) const[^const]                                                                            |
+| [`bool`](class_bool.md)                                     | [`is_in_physics_frame`](class_engine.md#class_engine_method_is_in_physics_frame) ( ) const[^const]                                                                  |
+| [Error](#enum_@globalscope_error)                           | [`register_script_language`](class_engine.md#class_engine_method_register_script_language) ( language: [`ScriptLanguage`](class_scriptlanguage.md) )                |
+| `void`                                                      | [`register_singleton`](class_engine.md#class_engine_method_register_singleton) ( name: [`StringName`](class_stringname.md), instance: [`Object`](class_object.md) ) |
+| [Error](#enum_@globalscope_error)                           | [`unregister_script_language`](class_engine.md#class_engine_method_unregister_script_language) ( language: [`ScriptLanguage`](class_scriptlanguage.md) )            |
+| `void`                                                      | [`unregister_singleton`](class_engine.md#class_engine_method_unregister_singleton) ( name: [`StringName`](class_stringname.md) )                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -73,15 +73,15 @@ The maximum number of frames that can be rendered every second (FPS). A value of
 
 Limiting the FPS can be useful to reduce the host machine's power consumption, which reduces heat, noise emissions, and improves battery life.
 
-If [`ProjectSettings.display/window/vsync/vsync_mode`](#class_projectsettings_property_display/window/vsync/vsync_mode) is **Enabled** or **Adaptive**, the setting takes precedence and the max FPS number cannot exceed the monitor's refresh rate.
+If [`ProjectSettings.display/window/vsync/vsync_mode`](class_projectsettings.md#class_projectsettings_property_display/window/vsync/vsync_mode) is **Enabled** or **Adaptive**, the setting takes precedence and the max FPS number cannot exceed the monitor's refresh rate.
 
-If [`ProjectSettings.display/window/vsync/vsync_mode`](#class_projectsettings_property_display/window/vsync/vsync_mode) is **Enabled**, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit a few frames lower than the monitor's refresh rate will [*reduce input lag while avoiding tearing*](https://blurbusters.com/howto-low-lag-vsync-on/).
+If [`ProjectSettings.display/window/vsync/vsync_mode`](class_projectsettings.md#class_projectsettings_property_display/window/vsync/vsync_mode) is **Enabled**, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit a few frames lower than the monitor's refresh rate will [*reduce input lag while avoiding tearing*](https://blurbusters.com/howto-low-lag-vsync-on/).
 
-See also [`physics_ticks_per_second`](#class_engine_property_physics_ticks_per_second) and [`ProjectSettings.application/run/max_fps`](#class_projectsettings_property_application/run/max_fps).
+See also [`physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second) and [`ProjectSettings.application/run/max_fps`](class_projectsettings.md#class_projectsettings_property_application/run/max_fps).
 
  **Note:** The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project's logic and rendering.
 
- **Note:** If [`ProjectSettings.display/window/vsync/vsync_mode`](#class_projectsettings_property_display/window/vsync/vsync_mode) is **Disabled**, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
+ **Note:** If [`ProjectSettings.display/window/vsync/vsync_mode`](class_projectsettings.md#class_projectsettings_property_display/window/vsync/vsync_mode) is **Disabled**, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -96,7 +96,7 @@ See also [`physics_ticks_per_second`](#class_engine_property_physics_ticks_per_s
 
 The maximum number of physics steps that can be simulated each rendered frame.
 
- **Note:** The default value is tuned to prevent expensive physics simulations from triggering even more expensive simulations indefinitely. However, the game will appear to slow down if the rendering FPS is less than `1 / max_physics_steps_per_frame` of [`physics_ticks_per_second`](#class_engine_property_physics_ticks_per_second). This occurs even if `delta` is consistently used in physics calculations. To avoid this, increase [`max_physics_steps_per_frame`](#class_engine_property_max_physics_steps_per_frame) if you have increased [`physics_ticks_per_second`](#class_engine_property_physics_ticks_per_second) significantly above its default value.
+ **Note:** The default value is tuned to prevent expensive physics simulations from triggering even more expensive simulations indefinitely. However, the game will appear to slow down if the rendering FPS is less than `1 / max_physics_steps_per_frame` of [`physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second). This occurs even if `delta` is consistently used in physics calculations. To avoid this, increase [`max_physics_steps_per_frame`](class_engine.md#class_engine_property_max_physics_steps_per_frame) if you have increased [`physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second) significantly above its default value.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -126,9 +126,9 @@ How much physics ticks are synchronized with real time. If `0` or less, the tick
 - `void` **set_physics_ticks_per_second** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_physics_ticks_per_second** ( )
 
-The number of fixed iterations per second. This controls how often physics simulation and [`Node._physics_process`](#class_node_private_method__physics_process) methods are run. This value should generally always be set to `60` or above, as Godot doesn't interpolate the physics step. As a result, values lower than `60` will look stuttery. This value can be increased to make input more reactive or work around collision tunneling issues, but keep in mind doing so will increase CPU usage. See also [`max_fps`](#class_engine_property_max_fps) and [`ProjectSettings.physics/common/physics_ticks_per_second`](#class_projectsettings_property_physics/common/physics_ticks_per_second).
+The number of fixed iterations per second. This controls how often physics simulation and [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) methods are run. This value should generally always be set to `60` or above, as Godot doesn't interpolate the physics step. As a result, values lower than `60` will look stuttery. This value can be increased to make input more reactive or work around collision tunneling issues, but keep in mind doing so will increase CPU usage. See also [`max_fps`](class_engine.md#class_engine_property_max_fps) and [`ProjectSettings.physics/common/physics_ticks_per_second`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_ticks_per_second).
 
- **Note:** Only [`max_physics_steps_per_frame`](#class_engine_property_max_physics_steps_per_frame) physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if `delta` is used consistently in physics calculations). Therefore, it is recommended to also increase [`max_physics_steps_per_frame`](#class_engine_property_max_physics_steps_per_frame) if increasing [`physics_ticks_per_second`](#class_engine_property_physics_ticks_per_second) significantly above its default value.
+ **Note:** Only [`max_physics_steps_per_frame`](class_engine.md#class_engine_property_max_physics_steps_per_frame) physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if `delta` is used consistently in physics calculations). Therefore, it is recommended to also increase [`max_physics_steps_per_frame`](class_engine.md#class_engine_property_max_physics_steps_per_frame) if increasing [`physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second) significantly above its default value.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -141,7 +141,7 @@ The number of fixed iterations per second. This controls how often physics simul
 - `void` **set_print_error_messages** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_printing_error_messages** ( )
 
-If `false`, stops printing error and warning messages to the console and editor Output log. This can be used to hide error and warning messages during unit test suite runs. This property is equivalent to the [`ProjectSettings.application/run/disable_stderr`](#class_projectsettings_property_application/run/disable_stderr) project setting.
+If `false`, stops printing error and warning messages to the console and editor Output log. This can be used to hide error and warning messages during unit test suite runs. This property is equivalent to the [`ProjectSettings.application/run/disable_stderr`](class_projectsettings.md#class_projectsettings_property_application/run/disable_stderr) project setting.
 
  **Note:** This property does not impact the editor's Errors tab when running a project from the editor.
 
@@ -160,13 +160,13 @@ If `false`, stops printing error and warning messages to the console and editor 
 
 The speed multiplier at which the in-game clock updates, compared to real time. For example, if set to `2.0` the game runs twice as fast, and if set to `0.5` the game runs half as fast.
 
-This value affects [`Timer`](class_timer.md), [`SceneTreeTimer`](class_scenetreetimer.md), and all other simulations that make use of `delta` time (such as [`Node._process`](#class_node_private_method__process) and [`Node._physics_process`](#class_node_private_method__physics_process)).
+This value affects [`Timer`](class_timer.md), [`SceneTreeTimer`](class_scenetreetimer.md), and all other simulations that make use of `delta` time (such as [`Node._process`](class_node.md#class_node_private_method__process) and [`Node._physics_process`](class_node.md#class_node_private_method__physics_process)).
 
  **Note:** It's recommended to keep this property above `0.0`, as the game may behave unexpectedly otherwise.
 
- **Note:** This does not affect audio playback speed. Use [`AudioServer.playback_speed_scale`](#class_audioserver_property_playback_speed_scale) to adjust audio playback speed independently of [`time_scale`](#class_engine_property_time_scale).
+ **Note:** This does not affect audio playback speed. Use [`AudioServer.playback_speed_scale`](class_audioserver.md#class_audioserver_property_playback_speed_scale) to adjust audio playback speed independently of [`time_scale`](class_engine.md#class_engine_property_time_scale).
 
- **Note:** This does not automatically adjust [`physics_ticks_per_second`](#class_engine_property_physics_ticks_per_second). With values above `1.0` physics simulation may become less precise, as each physics tick will stretch over a larger period of engine time. If you're modifying [`time_scale`](#class_engine_property_time_scale) to speed up simulation by a large factor, consider also increasing [`physics_ticks_per_second`](#class_engine_property_physics_ticks_per_second) to make the simulation more reliable.
+ **Note:** This does not automatically adjust [`physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second). With values above `1.0` physics simulation may become less precise, as each physics tick will stretch over a larger period of engine time. If you're modifying [`time_scale`](class_engine.md#class_engine_property_time_scale) to speed up simulation by a large factor, consider also increasing [`physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second) to make the simulation more reliable.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -202,7 +202,7 @@ To detect whether the current build is 64-bit, you can use the fact that all 64-
 
 
 
- **Note:** This method does *not* return the name of the system's CPU architecture (like [`OS.get_processor_name`](#class_os_method_get_processor_name)). For example, when running an `x86_32` Godot binary on an `x86_64` system, the returned value will still be `"x86_32"`.
+ **Note:** This method does *not* return the name of the system's CPU architecture (like [`OS.get_processor_name`](class_os.md#class_os_method_get_processor_name)). For example, when running an `x86_32` Godot binary on an `x86_64` system, the returned value will still be `"x86_32"`.
 
 
 
@@ -258,7 +258,7 @@ Returns a [`Dictionary`](class_dictionary.md) of categorized donor names. Each e
 
 Returns the total number of frames drawn since the engine started.
 
- **Note:** On headless platforms, or if rendering is disabled with `--disable-render-loop` via command line, this method always returns `0`. See also [`get_process_frames`](#class_engine_method_get_process_frames).
+ **Note:** On headless platforms, or if rendering is disabled with `--disable-render-loop` via command line, this method always returns `0`. See also [`get_process_frames`](class_engine.md#class_engine_method_get_process_frames).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -298,9 +298,9 @@ Returns the full Godot license text.
 
 [`MainLoop`](class_mainloop.md) **get_main_loop** ( ) const[^const]<div id="class_engine_method_get_main_loop"></div>
 
-Returns the instance of the [`MainLoop`](class_mainloop.md). This is usually the main [`SceneTree`](class_scenetree.md) and is the same as [`Node.get_tree`](#class_node_method_get_tree).
+Returns the instance of the [`MainLoop`](class_mainloop.md). This is usually the main [`SceneTree`](class_scenetree.md) and is the same as [`Node.get_tree`](class_node.md#class_node_method_get_tree).
 
- **Note:** The type instantiated as the main loop can changed with [`ProjectSettings.application/run/main_loop_type`](#class_projectsettings_property_application/run/main_loop_type).
+ **Note:** The type instantiated as the main loop can changed with [`ProjectSettings.application/run/main_loop_type`](class_projectsettings.md#class_projectsettings_property_application/run/main_loop_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -310,7 +310,7 @@ Returns the instance of the [`MainLoop`](class_mainloop.md). This is usually the
 
 [`int`](class_int.md) **get_physics_frames** ( ) const[^const]<div id="class_engine_method_get_physics_frames"></div>
 
-Returns the total number of frames passed since the engine started. This number is increased every **physics frame**. See also [`get_process_frames`](#class_engine_method_get_process_frames).
+Returns the total number of frames passed since the engine started. This number is increased every **physics frame**. See also [`get_process_frames`](class_engine.md#class_engine_method_get_process_frames).
 
 This method can be used to run expensive logic less often without relying on a [`Timer`](class_timer.md):
 
@@ -360,7 +360,7 @@ Returns the fraction through the current physics tick we are at the time of rend
 
 [`int`](class_int.md) **get_process_frames** ( ) const[^const]<div id="class_engine_method_get_process_frames"></div>
 
-Returns the total number of frames passed since the engine started. This number is increased every **process frame**, regardless of whether the render loop is enabled. See also [`get_frames_drawn`](#class_engine_method_get_frames_drawn) and [`get_physics_frames`](#class_engine_method_get_physics_frames).
+Returns the total number of frames passed since the engine started. This number is increased every **process frame**, regardless of whether the render loop is enabled. See also [`get_frames_drawn`](class_engine.md#class_engine_method_get_frames_drawn) and [`get_physics_frames`](class_engine.md#class_engine_method_get_physics_frames).
 
 This method can be used to run expensive logic less often without relying on a [`Timer`](class_timer.md):
 
@@ -410,7 +410,7 @@ Returns an instance of a [`ScriptLanguage`](class_scriptlanguage.md) with the gi
 
 [`int`](class_int.md) **get_script_language_count** ( )<div id="class_engine_method_get_script_language_count"></div>
 
-Returns the number of available script languages. Use with [`get_script_language`](#class_engine_method_get_script_language).
+Returns the number of available script languages. Use with [`get_script_language`](class_engine.md#class_engine_method_get_script_language).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -420,7 +420,7 @@ Returns the number of available script languages. Use with [`get_script_language
 
 [`Object`](class_object.md) **get_singleton** ( name: [`StringName`](class_stringname.md) ) const[^const]<div id="class_engine_method_get_singleton"></div>
 
-Returns the global singleton with the given `name`, or `null` if it does not exist. Often used for plugins. See also [`has_singleton`](#class_engine_method_has_singleton) and [`get_singleton_list`](#class_engine_method_get_singleton_list).
+Returns the global singleton with the given `name`, or `null` if it does not exist. Often used for plugins. See also [`has_singleton`](class_engine.md#class_engine_method_has_singleton) and [`get_singleton_list`](class_engine.md#class_engine_method_get_singleton_list).
 
  **Note:** Global singletons are not the same as autoloaded nodes, which are configurable in the project settings.
 
@@ -432,7 +432,7 @@ Returns the global singleton with the given `name`, or `null` if it does not exi
 
 [`PackedStringArray`](class_packedstringarray.md) **get_singleton_list** ( ) const[^const]<div id="class_engine_method_get_singleton_list"></div>
 
-Returns a list of names of all available global singletons. See also [`get_singleton`](#class_engine_method_get_singleton).
+Returns a list of names of all available global singletons. See also [`get_singleton`](class_engine.md#class_engine_method_get_singleton).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -502,7 +502,7 @@ The `hex` value is encoded as follows, from left to right: one byte for the majo
 
 [`String`](class_string.md) **get_write_movie_path** ( ) const[^const]<div id="class_engine_method_get_write_movie_path"></div>
 
-Returns the path to the [`MovieWriter`](class_moviewriter.md)'s output file, or an empty string if the engine wasn't started in Movie Maker mode. The default path can be changed in [`ProjectSettings.editor/movie_writer/movie_file`](#class_projectsettings_property_editor/movie_writer/movie_file).
+Returns the path to the [`MovieWriter`](class_moviewriter.md)'s output file, or an empty string if the engine wasn't started in Movie Maker mode. The default path can be changed in [`ProjectSettings.editor/movie_writer/movie_file`](class_projectsettings.md#class_projectsettings_property_editor/movie_writer/movie_file).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -512,7 +512,7 @@ Returns the path to the [`MovieWriter`](class_moviewriter.md)'s output file, or 
 
 [`bool`](class_bool.md) **has_singleton** ( name: [`StringName`](class_stringname.md) ) const[^const]<div id="class_engine_method_has_singleton"></div>
 
-Returns `true` if a singleton with the given `name` exists in the global scope. See also [`get_singleton`](#class_engine_method_get_singleton).
+Returns `true` if a singleton with the given `name` exists in the global scope. See also [`get_singleton`](class_engine.md#class_engine_method_get_singleton).
 
 
 
@@ -572,7 +572,7 @@ Returns `true` if the script is currently running inside the editor, otherwise r
 
 See [*Running code in the editor*](../tutorials/plugins/running_code_in_the_editor) in the documentation for more information.
 
- **Note:** To detect whether the script is running on an editor *build* (such as when pressing <i class="fa fa-gamepad"></i>`F5`), use [`OS.has_feature`](#class_os_method_has_feature) with the `"editor"` argument instead. `OS.has_feature("editor")` evaluate to `true` both when the script is running in the editor and when running the project from the editor, but returns `false` when run from an exported project.
+ **Note:** To detect whether the script is running on an editor *build* (such as when pressing <i class="fa fa-gamepad"></i>`F5`), use [`OS.has_feature`](class_os.md#class_os_method_has_feature) with the `"editor"` argument instead. `OS.has_feature("editor")` evaluate to `true` both when the script is running in the editor and when running the project from the editor, but returns `false` when run from an exported project.
 
 
 
@@ -616,11 +616,11 @@ Registers a [`ScriptLanguage`](class_scriptlanguage.md) instance to be available
 
 Returns:
 
-- [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success;
+- [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success;
 
-- [`@GlobalScope.ERR_UNAVAILABLE`](#class_@globalscope_constant_err_unavailable) if `ScriptServer` has reached the limit and cannot register any new language;
+- [`@GlobalScope.ERR_UNAVAILABLE`](class_@globalscope.md#class_@globalscope_constant_err_unavailable) if `ScriptServer` has reached the limit and cannot register any new language;
 
-- [`@GlobalScope.ERR_ALREADY_EXISTS`](#class_@globalscope_constant_err_already_exists) if `ScriptServer` already contains a language with similar extension/name/type.
+- [`@GlobalScope.ERR_ALREADY_EXISTS`](class_@globalscope.md#class_@globalscope_constant_err_already_exists) if `ScriptServer` already contains a language with similar extension/name/type.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -644,9 +644,9 @@ Unregisters the [`ScriptLanguage`](class_scriptlanguage.md) instance from `Scrip
 
 Returns:
 
-- [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success;
+- [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success;
 
-- [`@GlobalScope.ERR_DOES_NOT_EXIST`](#class_@globalscope_constant_err_does_not_exist) if the language is not registered in `ScriptServer`.
+- [`@GlobalScope.ERR_DOES_NOT_EXIST`](class_@globalscope.md#class_@globalscope_constant_err_does_not_exist) if the language is not registered in `ScriptServer`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -656,7 +656,7 @@ Returns:
 
 `void` **unregister_singleton** ( name: [`StringName`](class_stringname.md) )<div id="class_engine_method_unregister_singleton"></div>
 
-Removes the singleton registered under `name`. The singleton object is *not* freed. Only works with user-defined singletons registered with [`register_singleton`](#class_engine_method_register_singleton).
+Removes the singleton registered under `name`. The singleton object is *not* freed. Only works with user-defined singletons registered with [`register_singleton`](class_engine.md#class_engine_method_register_singleton).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

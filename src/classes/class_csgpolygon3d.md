@@ -21,22 +21,22 @@ An array of 2D points is extruded to quickly and easily create a variety of 3D m
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                               | [`depth`](#class_csgpolygon3d_property_depth)                             | ``1.0``                                        |
-| [`Material`](class_material.md)                         | [`material`](#class_csgpolygon3d_property_material)                       |                                                |
-| [Mode](#enum_csgpolygon3d_mode)                         | [`mode`](#class_csgpolygon3d_property_mode)                               | ``0``                                          |
-| [`bool`](class_bool.md)                                 | [`path_continuous_u`](#class_csgpolygon3d_property_path_continuous_u)     |                                                |
-| [`float`](class_float.md)                               | [`path_interval`](#class_csgpolygon3d_property_path_interval)             |                                                |
-| [PathIntervalType](#enum_csgpolygon3d_pathintervaltype) | [`path_interval_type`](#class_csgpolygon3d_property_path_interval_type)   |                                                |
-| [`bool`](class_bool.md)                                 | [`path_joined`](#class_csgpolygon3d_property_path_joined)                 |                                                |
-| [`bool`](class_bool.md)                                 | [`path_local`](#class_csgpolygon3d_property_path_local)                   |                                                |
-| [`NodePath`](class_nodepath.md)                         | [`path_node`](#class_csgpolygon3d_property_path_node)                     |                                                |
-| [PathRotation](#enum_csgpolygon3d_pathrotation)         | [`path_rotation`](#class_csgpolygon3d_property_path_rotation)             |                                                |
-| [`float`](class_float.md)                               | [`path_simplify_angle`](#class_csgpolygon3d_property_path_simplify_angle) |                                                |
-| [`float`](class_float.md)                               | [`path_u_distance`](#class_csgpolygon3d_property_path_u_distance)         |                                                |
-| [`PackedVector2Array`](class_packedvector2array.md)     | [`polygon`](#class_csgpolygon3d_property_polygon)                         | ``PackedVector2Array(0, 0, 0, 1, 1, 1, 1, 0)`` |
-| [`bool`](class_bool.md)                                 | [`smooth_faces`](#class_csgpolygon3d_property_smooth_faces)               | ``false``                                      |
-| [`float`](class_float.md)                               | [`spin_degrees`](#class_csgpolygon3d_property_spin_degrees)               |                                                |
-| [`int`](class_int.md)                                   | [`spin_sides`](#class_csgpolygon3d_property_spin_sides)                   |                                                |
+| [`float`](class_float.md)                               | [`depth`](class_csgpolygon3d.md#class_csgpolygon3d_property_depth)                             | ``1.0``                                        |
+| [`Material`](class_material.md)                         | [`material`](class_csgpolygon3d.md#class_csgpolygon3d_property_material)                       |                                                |
+| [Mode](#enum_csgpolygon3d_mode)                         | [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode)                               | ``0``                                          |
+| [`bool`](class_bool.md)                                 | [`path_continuous_u`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_continuous_u)     |                                                |
+| [`float`](class_float.md)                               | [`path_interval`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_interval)             |                                                |
+| [PathIntervalType](#enum_csgpolygon3d_pathintervaltype) | [`path_interval_type`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_interval_type)   |                                                |
+| [`bool`](class_bool.md)                                 | [`path_joined`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_joined)                 |                                                |
+| [`bool`](class_bool.md)                                 | [`path_local`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_local)                   |                                                |
+| [`NodePath`](class_nodepath.md)                         | [`path_node`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_node)                     |                                                |
+| [PathRotation](#enum_csgpolygon3d_pathrotation)         | [`path_rotation`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_rotation)             |                                                |
+| [`float`](class_float.md)                               | [`path_simplify_angle`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_simplify_angle) |                                                |
+| [`float`](class_float.md)                               | [`path_u_distance`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_u_distance)         |                                                |
+| [`PackedVector2Array`](class_packedvector2array.md)     | [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon)                         | ``PackedVector2Array(0, 0, 0, 1, 1, 1, 1, 0)`` |
+| [`bool`](class_bool.md)                                 | [`smooth_faces`](class_csgpolygon3d.md#class_csgpolygon3d_property_smooth_faces)               | ``false``                                      |
+| [`float`](class_float.md)                               | [`spin_degrees`](class_csgpolygon3d.md#class_csgpolygon3d_property_spin_degrees)               |                                                |
+| [`int`](class_int.md)                                   | [`spin_sides`](class_csgpolygon3d.md#class_csgpolygon3d_property_spin_sides)                   |                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,19 +52,19 @@ enum **Mode**: <div id="enum_csgpolygon3d_mode"></div>
 
 [Mode](#enum_csgpolygon3d_mode) **MODE_DEPTH** = ``0``
 
-The [`polygon`](#class_csgpolygon3d_property_polygon) shape is extruded along the negative Z axis.
+The [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon) shape is extruded along the negative Z axis.
 
 <div id="_class_csgpolygon3d_constant_mode_spin"></div>
 
 [Mode](#enum_csgpolygon3d_mode) **MODE_SPIN** = ``1``
 
-The [`polygon`](#class_csgpolygon3d_property_polygon) shape is extruded by rotating it around the Y axis.
+The [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon) shape is extruded by rotating it around the Y axis.
 
 <div id="_class_csgpolygon3d_constant_mode_path"></div>
 
 [Mode](#enum_csgpolygon3d_mode) **MODE_PATH** = ``2``
 
-The [`polygon`](#class_csgpolygon3d_property_polygon) shape is extruded along the [`Path3D`](class_path3d.md) specified in [`path_node`](#class_csgpolygon3d_property_path_node).
+The [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon) shape is extruded along the [`Path3D`](class_path3d.md) specified in [`path_node`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_node).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -78,7 +78,7 @@ enum **PathRotation**: <div id="enum_csgpolygon3d_pathrotation"></div>
 
 [PathRotation](#enum_csgpolygon3d_pathrotation) **PATH_ROTATION_POLYGON** = ``0``
 
-The [`polygon`](#class_csgpolygon3d_property_polygon) shape is not rotated.
+The [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon) shape is not rotated.
 
  **Note:** Requires the path Z coordinates to continually decrease to ensure viable shapes.
 
@@ -86,7 +86,7 @@ The [`polygon`](#class_csgpolygon3d_property_polygon) shape is not rotated.
 
 [PathRotation](#enum_csgpolygon3d_pathrotation) **PATH_ROTATION_PATH** = ``1``
 
-The [`polygon`](#class_csgpolygon3d_property_polygon) shape is rotated along the path, but it is not rotated around the path axis.
+The [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon) shape is rotated along the path, but it is not rotated around the path axis.
 
  **Note:** Requires the path Z coordinates to continually decrease to ensure viable shapes.
 
@@ -94,7 +94,7 @@ The [`polygon`](#class_csgpolygon3d_property_polygon) shape is rotated along the
 
 [PathRotation](#enum_csgpolygon3d_pathrotation) **PATH_ROTATION_PATH_FOLLOW** = ``2``
 
-The [`polygon`](#class_csgpolygon3d_property_polygon) shape follows the path and its rotations around the path axis.
+The [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon) shape follows the path and its rotations around the path axis.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -108,13 +108,13 @@ enum **PathIntervalType**: <div id="enum_csgpolygon3d_pathintervaltype"></div>
 
 [PathIntervalType](#enum_csgpolygon3d_pathintervaltype) **PATH_INTERVAL_DISTANCE** = ``0``
 
-When [`mode`](#class_csgpolygon3d_property_mode) is set to [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), [`path_interval`](#class_csgpolygon3d_property_path_interval) will determine the distance, in meters, each interval of the path will extrude.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is set to [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), [`path_interval`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_interval) will determine the distance, in meters, each interval of the path will extrude.
 
 <div id="_class_csgpolygon3d_constant_path_interval_subdivide"></div>
 
 [PathIntervalType](#enum_csgpolygon3d_pathintervaltype) **PATH_INTERVAL_SUBDIVIDE** = ``1``
 
-When [`mode`](#class_csgpolygon3d_property_mode) is set to [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), [`path_interval`](#class_csgpolygon3d_property_path_interval) will subdivide the polygons along the path.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is set to [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), [`path_interval`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_interval) will subdivide the polygons along the path.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -129,7 +129,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is set to [`MODE_PATH`](#class_
 - `void` **set_depth** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_depth** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_DEPTH`](#class_csgpolygon3d_constant_mode_depth), the depth of the extrusion.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_DEPTH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_depth), the depth of the extrusion.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -142,7 +142,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_DEPTH`](#class_csgpol
 - `void` **set_material** ( value: [`Material`](class_material.md) )
 - [`Material`](class_material.md) **get_material** ( )
 
-Material to use for the resulting mesh. The UV maps the top half of the material to the extruded shape (U along the length of the extrusions and V around the outline of the [`polygon`](#class_csgpolygon3d_property_polygon)), the bottom-left quarter to the front end face, and the bottom-right quarter to the back end face.
+Material to use for the resulting mesh. The UV maps the top half of the material to the extruded shape (U along the length of the extrusions and V around the outline of the [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon)), the bottom-left quarter to the front end face, and the bottom-right quarter to the back end face.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -155,7 +155,7 @@ Material to use for the resulting mesh. The UV maps the top half of the material
 - `void` **set_mode** ( value: [Mode](#enum_csgpolygon3d_mode) )
 - [Mode](#enum_csgpolygon3d_mode) **get_mode** ( )
 
-The [`mode`](#class_csgpolygon3d_property_mode) used to extrude the [`polygon`](#class_csgpolygon3d_property_polygon).
+The [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) used to extrude the [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -168,7 +168,7 @@ The [`mode`](#class_csgpolygon3d_property_mode) used to extrude the [`polygon`](
 - `void` **set_path_continuous_u** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_path_continuous_u** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), by default, the top half of the [`material`](#class_csgpolygon3d_property_material) is stretched along the entire length of the extruded shape. If `false` the top half of the material is repeated every step of the extrusion.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), by default, the top half of the [`material`](class_csgpolygon3d.md#class_csgpolygon3d_property_material) is stretched along the entire length of the extruded shape. If `false` the top half of the material is repeated every step of the extrusion.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -181,7 +181,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 - `void` **set_path_interval** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_path_interval** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), the path interval or ratio of path points to extrusions.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), the path interval or ratio of path points to extrusions.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -194,7 +194,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 - `void` **set_path_interval_type** ( value: [PathIntervalType](#enum_csgpolygon3d_pathintervaltype) )
 - [PathIntervalType](#enum_csgpolygon3d_pathintervaltype) **get_path_interval_type** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), this will determine if the interval should be by distance ([`PATH_INTERVAL_DISTANCE`](#class_csgpolygon3d_constant_path_interval_distance)) or subdivision fractions ([`PATH_INTERVAL_SUBDIVIDE`](#class_csgpolygon3d_constant_path_interval_subdivide)).
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), this will determine if the interval should be by distance ([`PATH_INTERVAL_DISTANCE`](class_csgpolygon3d.md#class_csgpolygon3d_constant_path_interval_distance)) or subdivision fractions ([`PATH_INTERVAL_SUBDIVIDE`](class_csgpolygon3d.md#class_csgpolygon3d_constant_path_interval_subdivide)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -207,7 +207,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 - `void` **set_path_joined** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_path_joined** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), if `true` the ends of the path are joined, by adding an extrusion between the last and first points of the path.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), if `true` the ends of the path are joined, by adding an extrusion between the last and first points of the path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -220,7 +220,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 - `void` **set_path_local** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_path_local** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), if `true` the [`Transform3D`](class_transform3d.md) of the **CSGPolygon3D** is used as the starting point for the extrusions, not the [`Transform3D`](class_transform3d.md) of the [`path_node`](#class_csgpolygon3d_property_path_node).
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), if `true` the [`Transform3D`](class_transform3d.md) of the **CSGPolygon3D** is used as the starting point for the extrusions, not the [`Transform3D`](class_transform3d.md) of the [`path_node`](class_csgpolygon3d.md#class_csgpolygon3d_property_path_node).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -233,7 +233,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 - `void` **set_path_node** ( value: [`NodePath`](class_nodepath.md) )
 - [`NodePath`](class_nodepath.md) **get_path_node** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), the location of the [`Path3D`](class_path3d.md) object used to extrude the [`polygon`](#class_csgpolygon3d_property_polygon).
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), the location of the [`Path3D`](class_path3d.md) object used to extrude the [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -246,7 +246,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 - `void` **set_path_rotation** ( value: [PathRotation](#enum_csgpolygon3d_pathrotation) )
 - [PathRotation](#enum_csgpolygon3d_pathrotation) **get_path_rotation** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), the path rotation method used to rotate the [`polygon`](#class_csgpolygon3d_property_polygon) as it is extruded.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), the path rotation method used to rotate the [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon) as it is extruded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -259,7 +259,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 - `void` **set_path_simplify_angle** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_path_simplify_angle** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), extrusions that are less than this angle, will be merged together to reduce polygon count.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), extrusions that are less than this angle, will be merged together to reduce polygon count.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -272,7 +272,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 - `void` **set_path_u_distance** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_path_u_distance** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpolygon3d_constant_mode_path), this is the distance along the path, in meters, the texture coordinates will tile. When set to 0, texture coordinates will match geometry exactly with no tiling.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_PATH`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_path), this is the distance along the path, in meters, the texture coordinates will tile. When set to 0, texture coordinates will match geometry exactly with no tiling.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -287,7 +287,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_PATH`](#class_csgpoly
 
 The point array that defines the 2D polygon that is extruded. This can be a convex or concave polygon with 3 or more points. The polygon must *not* have any intersecting edges. Otherwise, triangulation will fail and no mesh will be generated.
 
- **Note:** If only 1 or 2 points are defined in [`polygon`](#class_csgpolygon3d_property_polygon), no mesh will be generated.
+ **Note:** If only 1 or 2 points are defined in [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon), no mesh will be generated.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedVector2Array`](class_packedvector2array.md) for more details.
 
@@ -315,7 +315,7 @@ If `true`, applies smooth shading to the extrusions.
 - `void` **set_spin_degrees** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_spin_degrees** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_SPIN`](#class_csgpolygon3d_constant_mode_spin), the total number of degrees the [`polygon`](#class_csgpolygon3d_property_polygon) is rotated when extruding.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_SPIN`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_spin), the total number of degrees the [`polygon`](class_csgpolygon3d.md#class_csgpolygon3d_property_polygon) is rotated when extruding.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -328,7 +328,7 @@ When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_SPIN`](#class_csgpoly
 - `void` **set_spin_sides** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_spin_sides** ( )
 
-When [`mode`](#class_csgpolygon3d_property_mode) is [`MODE_SPIN`](#class_csgpolygon3d_constant_mode_spin), the number of extrusions made.
+When [`mode`](class_csgpolygon3d.md#class_csgpolygon3d_property_mode) is [`MODE_SPIN`](class_csgpolygon3d.md#class_csgpolygon3d_constant_mode_spin), the number of extrusions made.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

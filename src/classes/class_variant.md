@@ -46,7 +46,7 @@ Godot tracks all scripting API variables within Variants. Without even realizing
 
 - C# is statically typed, but uses its own implementation of the Variant type in place of Godot's **Variant** class when it needs to represent a dynamic value. C# Variant can be assigned any compatible type implicitly but converting requires an explicit cast.
 
-The global [`@GlobalScope.typeof`](#class_@globalscope_method_typeof) function returns the enumerated value of the Variant type stored in the current variable (see [Variant.Type](#enum_@globalscope_variant.type)).
+The global [`@GlobalScope.typeof`](class_@globalscope.md#class_@globalscope_method_typeof) function returns the enumerated value of the Variant type stored in the current variable (see [Variant.Type](#enum_@globalscope_variant.type)).
 
 
 

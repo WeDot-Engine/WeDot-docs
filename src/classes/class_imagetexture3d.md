@@ -21,8 +21,8 @@ Texture with 3 dimensions.
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`create`](#class_imagetexture3d_method_create) ( format: [Format](#enum_image_format), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), data: [Array](class_array.md) [`Image`](class_image.md) ) |
-| `void`                            | [`update`](#class_imagetexture3d_method_update) ( data: [Array](class_array.md) [`Image`](class_image.md) )                                                                                                                                                                        |
+| [Error](#enum_@globalscope_error) | [`create`](class_imagetexture3d.md#class_imagetexture3d_method_create) ( format: [Format](#enum_image_format), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), data: [Array](class_array.md) [`Image`](class_image.md) ) |
+| `void`                            | [`update`](class_imagetexture3d.md#class_imagetexture3d_method_update) ( data: [Array](class_array.md) [`Image`](class_image.md) )                                                                                                                                                                        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -44,7 +44,7 @@ Creates the **ImageTexture3D** with specified `width`, `height`, and `depth`. Se
 
 `void` **update** ( data: [Array](class_array.md) [`Image`](class_image.md) )<div id="class_imagetexture3d_method_update"></div>
 
-Replaces the texture's existing data with the layers specified in `data`. The size of `data` must match the parameters that were used for [`create`](#class_imagetexture3d_method_create). In other words, the texture cannot be resized or have its format changed by calling [`update`](#class_imagetexture3d_method_update).
+Replaces the texture's existing data with the layers specified in `data`. The size of `data` must match the parameters that were used for [`create`](class_imagetexture3d.md#class_imagetexture3d_method_create). In other words, the texture cannot be resized or have its format changed by calling [`update`](class_imagetexture3d.md#class_imagetexture3d_method_update).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -21,25 +21,25 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_compute`](#class_rdshaderspirv_property_bytecode_compute)                                         | ``PackedByteArray()`` |
-| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_fragment`](#class_rdshaderspirv_property_bytecode_fragment)                                       | ``PackedByteArray()`` |
-| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_tesselation_control`](#class_rdshaderspirv_property_bytecode_tesselation_control)                 | ``PackedByteArray()`` |
-| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_tesselation_evaluation`](#class_rdshaderspirv_property_bytecode_tesselation_evaluation)           | ``PackedByteArray()`` |
-| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_vertex`](#class_rdshaderspirv_property_bytecode_vertex)                                           | ``PackedByteArray()`` |
-| [`String`](class_string.md)                   | [`compile_error_compute`](#class_rdshaderspirv_property_compile_error_compute)                               | ``""``                |
-| [`String`](class_string.md)                   | [`compile_error_fragment`](#class_rdshaderspirv_property_compile_error_fragment)                             | ``""``                |
-| [`String`](class_string.md)                   | [`compile_error_tesselation_control`](#class_rdshaderspirv_property_compile_error_tesselation_control)       | ``""``                |
-| [`String`](class_string.md)                   | [`compile_error_tesselation_evaluation`](#class_rdshaderspirv_property_compile_error_tesselation_evaluation) | ``""``                |
-| [`String`](class_string.md)                   | [`compile_error_vertex`](#class_rdshaderspirv_property_compile_error_vertex)                                 | ``""``                |
+| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_compute`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_compute)                                         | ``PackedByteArray()`` |
+| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_fragment`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_fragment)                                       | ``PackedByteArray()`` |
+| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_tesselation_control`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_tesselation_control)                 | ``PackedByteArray()`` |
+| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_tesselation_evaluation`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_tesselation_evaluation)           | ``PackedByteArray()`` |
+| [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_vertex`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_vertex)                                           | ``PackedByteArray()`` |
+| [`String`](class_string.md)                   | [`compile_error_compute`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_compute)                               | ``""``                |
+| [`String`](class_string.md)                   | [`compile_error_fragment`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_fragment)                             | ``""``                |
+| [`String`](class_string.md)                   | [`compile_error_tesselation_control`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_tesselation_control)       | ``""``                |
+| [`String`](class_string.md)                   | [`compile_error_tesselation_evaluation`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_tesselation_evaluation) | ``""``                |
+| [`String`](class_string.md)                   | [`compile_error_vertex`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_vertex)                                 | ``""``                |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`get_stage_bytecode`](#class_rdshaderspirv_method_get_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                            |
-| [`String`](class_string.md)                   | [`get_stage_compile_error`](#class_rdshaderspirv_method_get_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                  |
-| `void`                                        | [`set_stage_bytecode`](#class_rdshaderspirv_method_set_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), bytecode: [`PackedByteArray`](class_packedbytearray.md) ) |
-| `void`                                        | [`set_stage_compile_error`](#class_rdshaderspirv_method_set_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), compile_error: [`String`](class_string.md) )    |
+| [`PackedByteArray`](class_packedbytearray.md) | [`get_stage_bytecode`](class_rdshaderspirv.md#class_rdshaderspirv_method_get_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                            |
+| [`String`](class_string.md)                   | [`get_stage_compile_error`](class_rdshaderspirv.md#class_rdshaderspirv_method_get_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                  |
+| `void`                                        | [`set_stage_bytecode`](class_rdshaderspirv.md#class_rdshaderspirv_method_set_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), bytecode: [`PackedByteArray`](class_packedbytearray.md) ) |
+| `void`                                        | [`set_stage_compile_error`](class_rdshaderspirv.md#class_rdshaderspirv_method_set_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), compile_error: [`String`](class_string.md) )    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -193,7 +193,7 @@ The compilation error message for the vertex shader stage (set by the SPIR-V com
 
 [`PackedByteArray`](class_packedbytearray.md) **get_stage_bytecode** ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]<div id="class_rdshaderspirv_method_get_stage_bytecode"></div>
 
-Equivalent to getting one of [`bytecode_compute`](#class_rdshaderspirv_property_bytecode_compute), [`bytecode_fragment`](#class_rdshaderspirv_property_bytecode_fragment), [`bytecode_tesselation_control`](#class_rdshaderspirv_property_bytecode_tesselation_control), [`bytecode_tesselation_evaluation`](#class_rdshaderspirv_property_bytecode_tesselation_evaluation), [`bytecode_vertex`](#class_rdshaderspirv_property_bytecode_vertex).
+Equivalent to getting one of [`bytecode_compute`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_compute), [`bytecode_fragment`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_fragment), [`bytecode_tesselation_control`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_tesselation_control), [`bytecode_tesselation_evaluation`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_tesselation_evaluation), [`bytecode_vertex`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_vertex).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -203,7 +203,7 @@ Equivalent to getting one of [`bytecode_compute`](#class_rdshaderspirv_property_
 
 [`String`](class_string.md) **get_stage_compile_error** ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]<div id="class_rdshaderspirv_method_get_stage_compile_error"></div>
 
-Returns the compilation error message for the given shader `stage`. Equivalent to getting one of [`compile_error_compute`](#class_rdshaderspirv_property_compile_error_compute), [`compile_error_fragment`](#class_rdshaderspirv_property_compile_error_fragment), [`compile_error_tesselation_control`](#class_rdshaderspirv_property_compile_error_tesselation_control), [`compile_error_tesselation_evaluation`](#class_rdshaderspirv_property_compile_error_tesselation_evaluation), [`compile_error_vertex`](#class_rdshaderspirv_property_compile_error_vertex).
+Returns the compilation error message for the given shader `stage`. Equivalent to getting one of [`compile_error_compute`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_compute), [`compile_error_fragment`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_fragment), [`compile_error_tesselation_control`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_tesselation_control), [`compile_error_tesselation_evaluation`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_tesselation_evaluation), [`compile_error_vertex`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_vertex).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -213,7 +213,7 @@ Returns the compilation error message for the given shader `stage`. Equivalent t
 
 `void` **set_stage_bytecode** ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), bytecode: [`PackedByteArray`](class_packedbytearray.md) )<div id="class_rdshaderspirv_method_set_stage_bytecode"></div>
 
-Sets the SPIR-V `bytecode` for the given shader `stage`. Equivalent to setting one of [`bytecode_compute`](#class_rdshaderspirv_property_bytecode_compute), [`bytecode_fragment`](#class_rdshaderspirv_property_bytecode_fragment), [`bytecode_tesselation_control`](#class_rdshaderspirv_property_bytecode_tesselation_control), [`bytecode_tesselation_evaluation`](#class_rdshaderspirv_property_bytecode_tesselation_evaluation), [`bytecode_vertex`](#class_rdshaderspirv_property_bytecode_vertex).
+Sets the SPIR-V `bytecode` for the given shader `stage`. Equivalent to setting one of [`bytecode_compute`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_compute), [`bytecode_fragment`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_fragment), [`bytecode_tesselation_control`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_tesselation_control), [`bytecode_tesselation_evaluation`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_tesselation_evaluation), [`bytecode_vertex`](class_rdshaderspirv.md#class_rdshaderspirv_property_bytecode_vertex).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -223,7 +223,7 @@ Sets the SPIR-V `bytecode` for the given shader `stage`. Equivalent to setting o
 
 `void` **set_stage_compile_error** ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), compile_error: [`String`](class_string.md) )<div id="class_rdshaderspirv_method_set_stage_compile_error"></div>
 
-Sets the compilation error message for the given shader `stage` to `compile_error`. Equivalent to setting one of [`compile_error_compute`](#class_rdshaderspirv_property_compile_error_compute), [`compile_error_fragment`](#class_rdshaderspirv_property_compile_error_fragment), [`compile_error_tesselation_control`](#class_rdshaderspirv_property_compile_error_tesselation_control), [`compile_error_tesselation_evaluation`](#class_rdshaderspirv_property_compile_error_tesselation_evaluation), [`compile_error_vertex`](#class_rdshaderspirv_property_compile_error_vertex).
+Sets the compilation error message for the given shader `stage` to `compile_error`. Equivalent to setting one of [`compile_error_compute`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_compute), [`compile_error_fragment`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_fragment), [`compile_error_tesselation_control`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_tesselation_control), [`compile_error_tesselation_evaluation`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_tesselation_evaluation), [`compile_error_vertex`](class_rdshaderspirv.md#class_rdshaderspirv_property_compile_error_vertex).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

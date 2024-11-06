@@ -15,21 +15,21 @@ A node that provides a [`Shape3D`](class_shape3d.md) to a [`CollisionObject3D`](
 
 A node that provides a [`Shape3D`](class_shape3d.md) to a [`CollisionObject3D`](class_collisionobject3d.md) parent and allows to edit it. This can give a detection shape to an [`Area3D`](class_area3d.md) or turn a [`PhysicsBody3D`](class_physicsbody3d.md) into a solid object.
 
- **Warning:** A non-uniformly scaled **CollisionShape3D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its [`shape`](#class_collisionshape3d_property_shape) resource instead.
+ **Warning:** A non-uniformly scaled **CollisionShape3D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its [`shape`](class_collisionshape3d.md#class_collisionshape3d_property_shape) resource instead.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)       | [`disabled`](#class_collisionshape3d_property_disabled) | ``false`` |
-| [`Shape3D`](class_shape3d.md) | [`shape`](#class_collisionshape3d_property_shape)       |           |
+| [`bool`](class_bool.md)       | [`disabled`](class_collisionshape3d.md#class_collisionshape3d_property_disabled) | ``false`` |
+| [`Shape3D`](class_shape3d.md) | [`shape`](class_collisionshape3d.md#class_collisionshape3d_property_shape)       |           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`make_convex_from_siblings`](#class_collisionshape3d_method_make_convex_from_siblings) ( )                         |
-| `void` | [`resource_changed`](#class_collisionshape3d_method_resource_changed) ( resource: [`Resource`](class_resource.md) ) |
+| `void` | [`make_convex_from_siblings`](class_collisionshape3d.md#class_collisionshape3d_method_make_convex_from_siblings) ( )                         |
+| `void` | [`resource_changed`](class_collisionshape3d.md#class_collisionshape3d_method_resource_changed) ( resource: [`Resource`](class_resource.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -79,7 +79,7 @@ Sets the collision shape's shape to the addition of all its convexed [`MeshInsta
 
 `void` **resource_changed** ( resource: [`Resource`](class_resource.md) )<div id="class_collisionshape3d_method_resource_changed"></div>
 
-**已弃用：** Use [`Resource.changed`](#class_resource_signal_changed) instead.
+**已弃用：** Use [`Resource.changed`](class_resource.md#class_resource_signal_changed) instead.
 
 This method does nothing.
 

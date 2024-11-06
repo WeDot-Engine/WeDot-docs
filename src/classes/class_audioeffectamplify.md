@@ -19,7 +19,7 @@ Increases or decreases the volume being routed through the audio bus.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`volume_db`](#class_audioeffectamplify_property_volume_db) | ``0.0`` |
+| [`float`](class_float.md) | [`volume_db`](class_audioeffectamplify.md#class_audioeffectamplify_property_volume_db) | ``0.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

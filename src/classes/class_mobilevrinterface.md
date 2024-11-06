@@ -15,7 +15,7 @@ Generic mobile VR implementation.
 
 This is a generic mobile VR implementation where you need to provide details about the phone and HMD used. It does not rely on any existing framework. This is the most basic interface we have. For the best effect, you need a mobile phone with a gyroscope and accelerometer.
 
-Note that even though there is no positional tracking, the camera will assume the headset is at a height of 1.85 meters. You can change this by setting [`eye_height`](#class_mobilevrinterface_property_eye_height).
+Note that even though there is no positional tracking, the camera will assume the headset is at a height of 1.85 meters. You can change this by setting [`eye_height`](class_mobilevrinterface.md#class_mobilevrinterface_property_eye_height).
 
 You can initialize this interface as follows:
 
@@ -32,17 +32,17 @@ You can initialize this interface as follows:
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                      | [`display_to_lens`](#class_mobilevrinterface_property_display_to_lens) | ``4.0``                                                                          |
-| [`float`](class_float.md)                      | [`display_width`](#class_mobilevrinterface_property_display_width)     | ``14.5``                                                                         |
-| [`float`](class_float.md)                      | [`eye_height`](#class_mobilevrinterface_property_eye_height)           | ``1.85``                                                                         |
-| [`float`](class_float.md)                      | [`iod`](#class_mobilevrinterface_property_iod)                         | ``6.0``                                                                          |
-| [`float`](class_float.md)                      | [`k1`](#class_mobilevrinterface_property_k1)                           | ``0.215``                                                                        |
-| [`float`](class_float.md)                      | [`k2`](#class_mobilevrinterface_property_k2)                           | ``0.215``                                                                        |
-| [`Rect2`](class_rect2.md)                      | [`offset_rect`](#class_mobilevrinterface_property_offset_rect)         | ``Rect2(0, 0, 1, 1)``                                                            |
-| [`float`](class_float.md)                      | [`oversample`](#class_mobilevrinterface_property_oversample)           | ``1.5``                                                                          |
-| [`float`](class_float.md)                      | [`vrs_min_radius`](#class_mobilevrinterface_property_vrs_min_radius)   | ``20.0``                                                                         |
-| [`float`](class_float.md)                      | [`vrs_strength`](#class_mobilevrinterface_property_vrs_strength)       | ``1.0``                                                                          |
-| [PlayAreaMode](#enum_xrinterface_playareamode) | xr_play_area_mode                                                      | ``1`` (overrides [`XRInterface`](#class_xrinterface_property_xr_play_area_mode)) |
+| [`float`](class_float.md)                      | [`display_to_lens`](class_mobilevrinterface.md#class_mobilevrinterface_property_display_to_lens) | ``4.0``                                                                                              |
+| [`float`](class_float.md)                      | [`display_width`](class_mobilevrinterface.md#class_mobilevrinterface_property_display_width)     | ``14.5``                                                                                             |
+| [`float`](class_float.md)                      | [`eye_height`](class_mobilevrinterface.md#class_mobilevrinterface_property_eye_height)           | ``1.85``                                                                                             |
+| [`float`](class_float.md)                      | [`iod`](class_mobilevrinterface.md#class_mobilevrinterface_property_iod)                         | ``6.0``                                                                                              |
+| [`float`](class_float.md)                      | [`k1`](class_mobilevrinterface.md#class_mobilevrinterface_property_k1)                           | ``0.215``                                                                                            |
+| [`float`](class_float.md)                      | [`k2`](class_mobilevrinterface.md#class_mobilevrinterface_property_k2)                           | ``0.215``                                                                                            |
+| [`Rect2`](class_rect2.md)                      | [`offset_rect`](class_mobilevrinterface.md#class_mobilevrinterface_property_offset_rect)         | ``Rect2(0, 0, 1, 1)``                                                                                |
+| [`float`](class_float.md)                      | [`oversample`](class_mobilevrinterface.md#class_mobilevrinterface_property_oversample)           | ``1.5``                                                                                              |
+| [`float`](class_float.md)                      | [`vrs_min_radius`](class_mobilevrinterface.md#class_mobilevrinterface_property_vrs_min_radius)   | ``20.0``                                                                                             |
+| [`float`](class_float.md)                      | [`vrs_strength`](class_mobilevrinterface.md#class_mobilevrinterface_property_vrs_strength)       | ``1.0``                                                                                              |
+| [PlayAreaMode](#enum_xrinterface_playareamode) | xr_play_area_mode                                                                                | ``1`` (overrides [`XRInterface`](class_xrinterface.md#class_xrinterface_property_xr_play_area_mode)) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -163,7 +163,7 @@ The oversample setting. Because of the lens distortion we have to render our buf
 
 The minimum radius around the focal point where full quality is guaranteed if VRS is used as a percentage of screen size.
 
- **Note:** Mobile and Forward+ renderers only. Requires [`Viewport.vrs_mode`](#class_viewport_property_vrs_mode) to be set to [`Viewport.VRS_XR`](#class_viewport_constant_vrs_xr).
+ **Note:** Mobile and Forward+ renderers only. Requires [`Viewport.vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode) to be set to [`Viewport.VRS_XR`](class_viewport.md#class_viewport_constant_vrs_xr).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -178,7 +178,7 @@ The minimum radius around the focal point where full quality is guaranteed if VR
 
 The strength used to calculate the VRS density map. The greater this value, the more noticeable VRS is. This improves performance at the cost of quality.
 
- **Note:** Mobile and Forward+ renderers only. Requires [`Viewport.vrs_mode`](#class_viewport_property_vrs_mode) to be set to [`Viewport.VRS_XR`](#class_viewport_constant_vrs_xr).
+ **Note:** Mobile and Forward+ renderers only. Requires [`Viewport.vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode) to be set to [`Viewport.VRS_XR`](class_viewport.md#class_viewport_constant_vrs_xr).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

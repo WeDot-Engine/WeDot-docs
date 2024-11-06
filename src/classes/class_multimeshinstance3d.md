@@ -21,7 +21,7 @@ This is useful to optimize the rendering of a high number of instances of a give
 
 |||
 |:-:|:--|
-| [`MultiMesh`](class_multimesh.md) | [`multimesh`](#class_multimeshinstance3d_property_multimesh) |
+| [`MultiMesh`](class_multimesh.md) | [`multimesh`](class_multimeshinstance3d.md#class_multimeshinstance3d_property_multimesh) |
 
 <!-- rst-class:: classref-section-separator -->
 

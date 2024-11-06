@@ -13,9 +13,9 @@ A texture that crops out part of another Texture2D.
 
 ## 描述
 
-[`Texture2D`](class_texture2d.md) resource that draws only part of its [`atlas`](#class_atlastexture_property_atlas) texture, as defined by the [`region`](#class_atlastexture_property_region). An additional [`margin`](#class_atlastexture_property_margin) can also be set, which is useful for small adjustments.
+[`Texture2D`](class_texture2d.md) resource that draws only part of its [`atlas`](class_atlastexture.md#class_atlastexture_property_atlas) texture, as defined by the [`region`](class_atlastexture.md#class_atlastexture_property_region). An additional [`margin`](class_atlastexture.md#class_atlastexture_property_margin) can also be set, which is useful for small adjustments.
 
-Multiple **AtlasTexture** resources can be cropped from the same [`atlas`](#class_atlastexture_property_atlas). Packing many smaller textures into a singular large texture helps to optimize video memory costs and render calls.
+Multiple **AtlasTexture** resources can be cropped from the same [`atlas`](class_atlastexture.md#class_atlastexture_property_atlas). Packing many smaller textures into a singular large texture helps to optimize video memory costs and render calls.
 
  **Note:** **AtlasTexture** cannot be used in an [`AnimatedTexture`](class_animatedtexture.md), and may not tile properly in nodes such as [`TextureRect`](class_texturerect.md), when inside other **AtlasTexture** resources.
 
@@ -23,11 +23,11 @@ Multiple **AtlasTexture** resources can be cropped from the same [`atlas`](#clas
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`atlas`](#class_atlastexture_property_atlas)             |                                                                                      |
-| [`bool`](class_bool.md)           | [`filter_clip`](#class_atlastexture_property_filter_clip) | ``false``                                                                            |
-| [`Rect2`](class_rect2.md)         | [`margin`](#class_atlastexture_property_margin)           | ``Rect2(0, 0, 0, 0)``                                                                |
-| [`Rect2`](class_rect2.md)         | [`region`](#class_atlastexture_property_region)           | ``Rect2(0, 0, 0, 0)``                                                                |
-| [`bool`](class_bool.md)           | resource_local_to_scene                                   | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
+| [`Texture2D`](class_texture2d.md) | [`atlas`](class_atlastexture.md#class_atlastexture_property_atlas)             |                                                                                                       |
+| [`bool`](class_bool.md)           | [`filter_clip`](class_atlastexture.md#class_atlastexture_property_filter_clip) | ``false``                                                                                             |
+| [`Rect2`](class_rect2.md)         | [`margin`](class_atlastexture.md#class_atlastexture_property_margin)           | ``Rect2(0, 0, 0, 0)``                                                                                 |
+| [`Rect2`](class_rect2.md)         | [`region`](class_atlastexture.md#class_atlastexture_property_region)           | ``Rect2(0, 0, 0, 0)``                                                                                 |
+| [`bool`](class_bool.md)           | resource_local_to_scene                                                        | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -55,7 +55,7 @@ The texture that contains the atlas. Can be any type inheriting from [`Texture2D
 - `void` **set_filter_clip** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **has_filter_clip** ( )
 
-If `true`, the area outside of the [`region`](#class_atlastexture_property_region) is clipped to avoid bleeding of the surrounding texture pixels.
+If `true`, the area outside of the [`region`](class_atlastexture.md#class_atlastexture_property_region) is clipped to avoid bleeding of the surrounding texture pixels.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -68,7 +68,7 @@ If `true`, the area outside of the [`region`](#class_atlastexture_property_regio
 - `void` **set_margin** ( value: [`Rect2`](class_rect2.md) )
 - [`Rect2`](class_rect2.md) **get_margin** ( )
 
-The margin around the [`region`](#class_atlastexture_property_region). Useful for small adjustments. If the [`Rect2.size`](#class_rect2_property_size) of this property ("w" and "h" in the editor) is set, the drawn texture is resized to fit within the margin.
+The margin around the [`region`](class_atlastexture.md#class_atlastexture_property_region). Useful for small adjustments. If the [`Rect2.size`](class_rect2.md#class_rect2_property_size) of this property ("w" and "h" in the editor) is set, the drawn texture is resized to fit within the margin.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -81,7 +81,7 @@ The margin around the [`region`](#class_atlastexture_property_region). Useful fo
 - `void` **set_region** ( value: [`Rect2`](class_rect2.md) )
 - [`Rect2`](class_rect2.md) **get_region** ( )
 
-The region used to draw the [`atlas`](#class_atlastexture_property_atlas). If either dimension of the region's size is `0`, the value from [`atlas`](#class_atlastexture_property_atlas) size will be used for that axis instead.
+The region used to draw the [`atlas`](class_atlastexture.md#class_atlastexture_property_atlas). If either dimension of the region's size is `0`, the value from [`atlas`](class_atlastexture.md#class_atlastexture_property_atlas) size will be used for that axis instead.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -19,25 +19,25 @@ A physics joint that restricts the rotation of a 3D physics body around an axis 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`angular_limit/bias`](#class_hingejoint3d_property_angular_limit/bias)             | ``0.3``     |
-| [`bool`](class_bool.md)   | [`angular_limit/enable`](#class_hingejoint3d_property_angular_limit/enable)         | ``false``   |
-| [`float`](class_float.md) | [`angular_limit/lower`](#class_hingejoint3d_property_angular_limit/lower)           | ``-1.5708`` |
-| [`float`](class_float.md) | [`angular_limit/relaxation`](#class_hingejoint3d_property_angular_limit/relaxation) | ``1.0``     |
-| [`float`](class_float.md) | [`angular_limit/softness`](#class_hingejoint3d_property_angular_limit/softness)     | ``0.9``     |
-| [`float`](class_float.md) | [`angular_limit/upper`](#class_hingejoint3d_property_angular_limit/upper)           | ``1.5708``  |
-| [`bool`](class_bool.md)   | [`motor/enable`](#class_hingejoint3d_property_motor/enable)                         | ``false``   |
-| [`float`](class_float.md) | [`motor/max_impulse`](#class_hingejoint3d_property_motor/max_impulse)               | ``1.0``     |
-| [`float`](class_float.md) | [`motor/target_velocity`](#class_hingejoint3d_property_motor/target_velocity)       | ``1.0``     |
-| [`float`](class_float.md) | [`params/bias`](#class_hingejoint3d_property_params/bias)                           | ``0.3``     |
+| [`float`](class_float.md) | [`angular_limit/bias`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/bias)             | ``0.3``     |
+| [`bool`](class_bool.md)   | [`angular_limit/enable`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/enable)         | ``false``   |
+| [`float`](class_float.md) | [`angular_limit/lower`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/lower)           | ``-1.5708`` |
+| [`float`](class_float.md) | [`angular_limit/relaxation`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/relaxation) | ``1.0``     |
+| [`float`](class_float.md) | [`angular_limit/softness`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/softness)     | ``0.9``     |
+| [`float`](class_float.md) | [`angular_limit/upper`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/upper)           | ``1.5708``  |
+| [`bool`](class_bool.md)   | [`motor/enable`](class_hingejoint3d.md#class_hingejoint3d_property_motor/enable)                         | ``false``   |
+| [`float`](class_float.md) | [`motor/max_impulse`](class_hingejoint3d.md#class_hingejoint3d_property_motor/max_impulse)               | ``1.0``     |
+| [`float`](class_float.md) | [`motor/target_velocity`](class_hingejoint3d.md#class_hingejoint3d_property_motor/target_velocity)       | ``1.0``     |
+| [`float`](class_float.md) | [`params/bias`](class_hingejoint3d.md#class_hingejoint3d_property_params/bias)                           | ``0.3``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`get_flag`](#class_hingejoint3d_method_get_flag) ( flag: [Flag](#enum_hingejoint3d_flag) ) const[^const]                          |
-| [`float`](class_float.md) | [`get_param`](#class_hingejoint3d_method_get_param) ( param: [Param](#enum_hingejoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_flag`](#class_hingejoint3d_method_set_flag) ( flag: [Flag](#enum_hingejoint3d_flag), enabled: [`bool`](class_bool.md) )      |
-| `void`                    | [`set_param`](#class_hingejoint3d_method_set_param) ( param: [Param](#enum_hingejoint3d_param), value: [`float`](class_float.md) ) |
+| [`bool`](class_bool.md)   | [`get_flag`](class_hingejoint3d.md#class_hingejoint3d_method_get_flag) ( flag: [Flag](#enum_hingejoint3d_flag) ) const[^const]                          |
+| [`float`](class_float.md) | [`get_param`](class_hingejoint3d.md#class_hingejoint3d_method_get_param) ( param: [Param](#enum_hingejoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_flag`](class_hingejoint3d.md#class_hingejoint3d_method_set_flag) ( flag: [Flag](#enum_hingejoint3d_flag), enabled: [`bool`](class_bool.md) )      |
+| `void`                    | [`set_param`](class_hingejoint3d.md#class_hingejoint3d_method_set_param) ( param: [Param](#enum_hingejoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -59,13 +59,13 @@ The speed with which the two bodies get pulled together when they move in differ
 
 [Param](#enum_hingejoint3d_param) **PARAM_LIMIT_UPPER** = ``1``
 
-The maximum rotation. Only active if [`angular_limit/enable`](#class_hingejoint3d_property_angular_limit/enable) is `true`.
+The maximum rotation. Only active if [`angular_limit/enable`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/enable) is `true`.
 
 <div id="_class_hingejoint3d_constant_param_limit_lower"></div>
 
 [Param](#enum_hingejoint3d_param) **PARAM_LIMIT_LOWER** = ``2``
 
-The minimum rotation. Only active if [`angular_limit/enable`](#class_hingejoint3d_property_angular_limit/enable) is `true`.
+The minimum rotation. Only active if [`angular_limit/enable`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/enable) is `true`.
 
 <div id="_class_hingejoint3d_constant_param_limit_bias"></div>
 
@@ -117,7 +117,7 @@ enum **Flag**: <div id="enum_hingejoint3d_flag"></div>
 
 [Flag](#enum_hingejoint3d_flag) **FLAG_USE_LIMIT** = ``0``
 
-If `true`, the hinges maximum and minimum rotation, defined by [`angular_limit/lower`](#class_hingejoint3d_property_angular_limit/lower) and [`angular_limit/upper`](#class_hingejoint3d_property_angular_limit/upper) has effects.
+If `true`, the hinges maximum and minimum rotation, defined by [`angular_limit/lower`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/lower) and [`angular_limit/upper`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/upper) has effects.
 
 <div id="_class_hingejoint3d_constant_flag_enable_motor"></div>
 
@@ -157,7 +157,7 @@ The speed with which the rotation across the axis perpendicular to the hinge get
 - `void` **set_flag** ( flag: [Flag](#enum_hingejoint3d_flag), enabled: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flag](#enum_hingejoint3d_flag) ) const[^const]
 
-If `true`, the hinges maximum and minimum rotation, defined by [`angular_limit/lower`](#class_hingejoint3d_property_angular_limit/lower) and [`angular_limit/upper`](#class_hingejoint3d_property_angular_limit/upper) has effects.
+If `true`, the hinges maximum and minimum rotation, defined by [`angular_limit/lower`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/lower) and [`angular_limit/upper`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/upper) has effects.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -170,7 +170,7 @@ If `true`, the hinges maximum and minimum rotation, defined by [`angular_limit/l
 - `void` **set_param** ( param: [Param](#enum_hingejoint3d_param), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( param: [Param](#enum_hingejoint3d_param) ) const[^const]
 
-The minimum rotation. Only active if [`angular_limit/enable`](#class_hingejoint3d_property_angular_limit/enable) is `true`.
+The minimum rotation. Only active if [`angular_limit/enable`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/enable) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -209,7 +209,7 @@ The lower this value, the more the rotation gets slowed down.
 - `void` **set_param** ( param: [Param](#enum_hingejoint3d_param), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( param: [Param](#enum_hingejoint3d_param) ) const[^const]
 
-The maximum rotation. Only active if [`angular_limit/enable`](#class_hingejoint3d_property_angular_limit/enable) is `true`.
+The maximum rotation. Only active if [`angular_limit/enable`](class_hingejoint3d.md#class_hingejoint3d_property_angular_limit/enable) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 

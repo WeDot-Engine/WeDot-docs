@@ -21,8 +21,8 @@ Usage is the same as [`MultiMeshInstance3D`](class_multimeshinstance3d.md).
 
 |||
 |:-:|:--|
-| [`MultiMesh`](class_multimesh.md) | [`multimesh`](#class_multimeshinstance2d_property_multimesh) |
-| [`Texture2D`](class_texture2d.md) | [`texture`](#class_multimeshinstance2d_property_texture)     |
+| [`MultiMesh`](class_multimesh.md) | [`multimesh`](class_multimeshinstance2d.md#class_multimeshinstance2d_property_multimesh) |
+| [`Texture2D`](class_texture2d.md) | [`texture`](class_multimeshinstance2d.md#class_multimeshinstance2d_property_texture)     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -34,7 +34,7 @@ Usage is the same as [`MultiMeshInstance3D`](class_multimeshinstance3d.md).
 
 **texture_changed** ( ) <div id="class_multimeshinstance2d_signal_texture_changed"></div>
 
-Emitted when the [`texture`](#class_multimeshinstance2d_property_texture) is changed.
+Emitted when the [`texture`](class_multimeshinstance2d.md#class_multimeshinstance2d_property_texture) is changed.
 
 <!-- rst-class:: classref-section-separator -->
 

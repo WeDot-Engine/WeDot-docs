@@ -23,40 +23,40 @@ Abstract base class for 3D physics objects. **CollisionObject3D** can hold any n
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                              | [`collision_layer`](#class_collisionobject3d_property_collision_layer)             | ``1``     |
-| [`int`](class_int.md)                              | [`collision_mask`](#class_collisionobject3d_property_collision_mask)               | ``1``     |
-| [`float`](class_float.md)                          | [`collision_priority`](#class_collisionobject3d_property_collision_priority)       | ``1.0``   |
-| [DisableMode](#enum_collisionobject3d_disablemode) | [`disable_mode`](#class_collisionobject3d_property_disable_mode)                   | ``0``     |
-| [`bool`](class_bool.md)                            | [`input_capture_on_drag`](#class_collisionobject3d_property_input_capture_on_drag) | ``false`` |
-| [`bool`](class_bool.md)                            | [`input_ray_pickable`](#class_collisionobject3d_property_input_ray_pickable)       | ``true``  |
+| [`int`](class_int.md)                              | [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer)             | ``1``     |
+| [`int`](class_int.md)                              | [`collision_mask`](class_collisionobject3d.md#class_collisionobject3d_property_collision_mask)               | ``1``     |
+| [`float`](class_float.md)                          | [`collision_priority`](class_collisionobject3d.md#class_collisionobject3d_property_collision_priority)       | ``1.0``   |
+| [DisableMode](#enum_collisionobject3d_disablemode) | [`disable_mode`](class_collisionobject3d.md#class_collisionobject3d_property_disable_mode)                   | ``0``     |
+| [`bool`](class_bool.md)                            | [`input_capture_on_drag`](class_collisionobject3d.md#class_collisionobject3d_property_input_capture_on_drag) | ``false`` |
+| [`bool`](class_bool.md)                            | [`input_ray_pickable`](class_collisionobject3d.md#class_collisionobject3d_property_input_ray_pickable)       | ``true``  |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                          | [`_input_event`](#class_collisionobject3d_private_method__input_event) ( camera: [`Camera3D`](class_camera3d.md), event: [`InputEvent`](class_inputevent.md), event_position: [`Vector3`](class_vector3.md), normal: [`Vector3`](class_vector3.md), shape_idx: [`int`](class_int.md) ) virtual[^virtual] |
-| `void`                                          | [`_mouse_enter`](#class_collisionobject3d_private_method__mouse_enter) ( ) virtual[^virtual]                                                                                                                                                                                                             |
-| `void`                                          | [`_mouse_exit`](#class_collisionobject3d_private_method__mouse_exit) ( ) virtual[^virtual]                                                                                                                                                                                                               |
-| [`int`](class_int.md)                           | [`create_shape_owner`](#class_collisionobject3d_method_create_shape_owner) ( owner: [`Object`](class_object.md) )                                                                                                                                                                                        |
-| [`bool`](class_bool.md)                         | [`get_collision_layer_value`](#class_collisionobject3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                                                                                                           |
-| [`bool`](class_bool.md)                         | [`get_collision_mask_value`](#class_collisionobject3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                                                                                                             |
-| [`RID`](class_rid.md)                           | [`get_rid`](#class_collisionobject3d_method_get_rid) ( ) const[^const]                                                                                                                                                                                                                                   |
-| [`PackedInt32Array`](class_packedint32array.md) | [`get_shape_owners`](#class_collisionobject3d_method_get_shape_owners) ( )                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)                         | [`is_shape_owner_disabled`](#class_collisionobject3d_method_is_shape_owner_disabled) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                   |
-| `void`                                          | [`remove_shape_owner`](#class_collisionobject3d_method_remove_shape_owner) ( owner_id: [`int`](class_int.md) )                                                                                                                                                                                           |
-| `void`                                          | [`set_collision_layer_value`](#class_collisionobject3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                                                                                                         |
-| `void`                                          | [`set_collision_mask_value`](#class_collisionobject3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                                                                                                           |
-| [`int`](class_int.md)                           | [`shape_find_owner`](#class_collisionobject3d_method_shape_find_owner) ( shape_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                              |
-| `void`                                          | [`shape_owner_add_shape`](#class_collisionobject3d_method_shape_owner_add_shape) ( owner_id: [`int`](class_int.md), shape: [`Shape3D`](class_shape3d.md) )                                                                                                                                               |
-| `void`                                          | [`shape_owner_clear_shapes`](#class_collisionobject3d_method_shape_owner_clear_shapes) ( owner_id: [`int`](class_int.md) )                                                                                                                                                                               |
-| [`Object`](class_object.md)                     | [`shape_owner_get_owner`](#class_collisionobject3d_method_shape_owner_get_owner) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                       |
-| [`Shape3D`](class_shape3d.md)                   | [`shape_owner_get_shape`](#class_collisionobject3d_method_shape_owner_get_shape) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) ) const[^const]                                                                                                                                      |
-| [`int`](class_int.md)                           | [`shape_owner_get_shape_count`](#class_collisionobject3d_method_shape_owner_get_shape_count) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                           |
-| [`int`](class_int.md)                           | [`shape_owner_get_shape_index`](#class_collisionobject3d_method_shape_owner_get_shape_index) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) ) const[^const]                                                                                                                          |
-| [`Transform3D`](class_transform3d.md)           | [`shape_owner_get_transform`](#class_collisionobject3d_method_shape_owner_get_transform) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                               |
-| `void`                                          | [`shape_owner_remove_shape`](#class_collisionobject3d_method_shape_owner_remove_shape) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) )                                                                                                                                              |
-| `void`                                          | [`shape_owner_set_disabled`](#class_collisionobject3d_method_shape_owner_set_disabled) ( owner_id: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                                            |
-| `void`                                          | [`shape_owner_set_transform`](#class_collisionobject3d_method_shape_owner_set_transform) ( owner_id: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )                                                                                                                           |
+| `void`                                          | [`_input_event`](class_collisionobject3d.md#class_collisionobject3d_private_method__input_event) ( camera: [`Camera3D`](class_camera3d.md), event: [`InputEvent`](class_inputevent.md), event_position: [`Vector3`](class_vector3.md), normal: [`Vector3`](class_vector3.md), shape_idx: [`int`](class_int.md) ) virtual[^virtual] |
+| `void`                                          | [`_mouse_enter`](class_collisionobject3d.md#class_collisionobject3d_private_method__mouse_enter) ( ) virtual[^virtual]                                                                                                                                                                                                             |
+| `void`                                          | [`_mouse_exit`](class_collisionobject3d.md#class_collisionobject3d_private_method__mouse_exit) ( ) virtual[^virtual]                                                                                                                                                                                                               |
+| [`int`](class_int.md)                           | [`create_shape_owner`](class_collisionobject3d.md#class_collisionobject3d_method_create_shape_owner) ( owner: [`Object`](class_object.md) )                                                                                                                                                                                        |
+| [`bool`](class_bool.md)                         | [`get_collision_layer_value`](class_collisionobject3d.md#class_collisionobject3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                                                                                                           |
+| [`bool`](class_bool.md)                         | [`get_collision_mask_value`](class_collisionobject3d.md#class_collisionobject3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                                                                                                             |
+| [`RID`](class_rid.md)                           | [`get_rid`](class_collisionobject3d.md#class_collisionobject3d_method_get_rid) ( ) const[^const]                                                                                                                                                                                                                                   |
+| [`PackedInt32Array`](class_packedint32array.md) | [`get_shape_owners`](class_collisionobject3d.md#class_collisionobject3d_method_get_shape_owners) ( )                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)                         | [`is_shape_owner_disabled`](class_collisionobject3d.md#class_collisionobject3d_method_is_shape_owner_disabled) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                   |
+| `void`                                          | [`remove_shape_owner`](class_collisionobject3d.md#class_collisionobject3d_method_remove_shape_owner) ( owner_id: [`int`](class_int.md) )                                                                                                                                                                                           |
+| `void`                                          | [`set_collision_layer_value`](class_collisionobject3d.md#class_collisionobject3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                                                                                                         |
+| `void`                                          | [`set_collision_mask_value`](class_collisionobject3d.md#class_collisionobject3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                                                                                                           |
+| [`int`](class_int.md)                           | [`shape_find_owner`](class_collisionobject3d.md#class_collisionobject3d_method_shape_find_owner) ( shape_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                              |
+| `void`                                          | [`shape_owner_add_shape`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_add_shape) ( owner_id: [`int`](class_int.md), shape: [`Shape3D`](class_shape3d.md) )                                                                                                                                               |
+| `void`                                          | [`shape_owner_clear_shapes`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_clear_shapes) ( owner_id: [`int`](class_int.md) )                                                                                                                                                                               |
+| [`Object`](class_object.md)                     | [`shape_owner_get_owner`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_get_owner) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                       |
+| [`Shape3D`](class_shape3d.md)                   | [`shape_owner_get_shape`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_get_shape) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) ) const[^const]                                                                                                                                      |
+| [`int`](class_int.md)                           | [`shape_owner_get_shape_count`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_get_shape_count) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                           |
+| [`int`](class_int.md)                           | [`shape_owner_get_shape_index`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_get_shape_index) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) ) const[^const]                                                                                                                          |
+| [`Transform3D`](class_transform3d.md)           | [`shape_owner_get_transform`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_get_transform) ( owner_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                               |
+| `void`                                          | [`shape_owner_remove_shape`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_remove_shape) ( owner_id: [`int`](class_int.md), shape_id: [`int`](class_int.md) )                                                                                                                                              |
+| `void`                                          | [`shape_owner_set_disabled`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_set_disabled) ( owner_id: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                                            |
+| `void`                                          | [`shape_owner_set_transform`](class_collisionobject3d.md#class_collisionobject3d_method_shape_owner_set_transform) ( owner_id: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )                                                                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -78,7 +78,7 @@ Emitted when the object receives an unhandled [`InputEvent`](class_inputevent.md
 
 **mouse_entered** ( ) <div id="class_collisionobject3d_signal_mouse_entered"></div>
 
-Emitted when the mouse pointer enters any of this object's shapes. Requires [`input_ray_pickable`](#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject3d_property_collision_layer) bit to be set.
+Emitted when the mouse pointer enters any of this object's shapes. Requires [`input_ray_pickable`](class_collisionobject3d.md#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer) bit to be set.
 
  **Note:** Due to the lack of continuous collision detection, this signal may not be emitted in the expected order if the mouse moves fast enough and the **CollisionObject3D**'s area is small. This signal may also not be emitted if another **CollisionObject3D** is overlapping the **CollisionObject3D** in question.
 
@@ -90,7 +90,7 @@ Emitted when the mouse pointer enters any of this object's shapes. Requires [`in
 
 **mouse_exited** ( ) <div id="class_collisionobject3d_signal_mouse_exited"></div>
 
-Emitted when the mouse pointer exits all this object's shapes. Requires [`input_ray_pickable`](#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject3d_property_collision_layer) bit to be set.
+Emitted when the mouse pointer exits all this object's shapes. Requires [`input_ray_pickable`](class_collisionobject3d.md#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer) bit to be set.
 
  **Note:** Due to the lack of continuous collision detection, this signal may not be emitted in the expected order if the mouse moves fast enough and the **CollisionObject3D**'s area is small. This signal may also not be emitted if another **CollisionObject3D** is overlapping the **CollisionObject3D** in question.
 
@@ -108,7 +108,7 @@ enum **DisableMode**: <div id="enum_collisionobject3d_disablemode"></div>
 
 [DisableMode](#enum_collisionobject3d_disablemode) **DISABLE_MODE_REMOVE** = ``0``
 
-When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled), remove from the physics simulation to stop all physics interactions with this **CollisionObject3D**.
+When [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled), remove from the physics simulation to stop all physics interactions with this **CollisionObject3D**.
 
 Automatically re-added to the physics simulation when the [`Node`](class_node.md) is processed again.
 
@@ -116,7 +116,7 @@ Automatically re-added to the physics simulation when the [`Node`](class_node.md
 
 [DisableMode](#enum_collisionobject3d_disablemode) **DISABLE_MODE_MAKE_STATIC** = ``1``
 
-When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled), make the body static. Doesn't affect [`Area3D`](class_area3d.md). [`PhysicsBody3D`](class_physicsbody3d.md) can't be affected by forces or other bodies while static.
+When [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled), make the body static. Doesn't affect [`Area3D`](class_area3d.md). [`PhysicsBody3D`](class_physicsbody3d.md) can't be affected by forces or other bodies while static.
 
 Automatically set [`PhysicsBody3D`](class_physicsbody3d.md) back to its original mode when the [`Node`](class_node.md) is processed again.
 
@@ -124,7 +124,7 @@ Automatically set [`PhysicsBody3D`](class_physicsbody3d.md) back to its original
 
 [DisableMode](#enum_collisionobject3d_disablemode) **DISABLE_MODE_KEEP_ACTIVE** = ``2``
 
-When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled), do not affect the physics simulation.
+When [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled), do not affect the physics simulation.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -139,7 +139,7 @@ When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.P
 - `void` **set_collision_layer** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_collision_layer** ( )
 
-The physics layers this CollisionObject3D **is in**. Collision objects can exist in one or more of 32 different layers. See also [`collision_mask`](#class_collisionobject3d_property_collision_mask).
+The physics layers this CollisionObject3D **is in**. Collision objects can exist in one or more of 32 different layers. See also [`collision_mask`](class_collisionobject3d.md#class_collisionobject3d_property_collision_mask).
 
  **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
 
@@ -154,7 +154,7 @@ The physics layers this CollisionObject3D **is in**. Collision objects can exist
 - `void` **set_collision_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_collision_mask** ( )
 
-The physics layers this CollisionObject3D **scans**. Collision objects can scan one or more of 32 different layers. See also [`collision_layer`](#class_collisionobject3d_property_collision_layer).
+The physics layers this CollisionObject3D **scans**. Collision objects can scan one or more of 32 different layers. See also [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer).
 
  **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
 
@@ -182,7 +182,7 @@ The priority used to solve colliding when occurring penetration. The higher the 
 - `void` **set_disable_mode** ( value: [DisableMode](#enum_collisionobject3d_disablemode) )
 - [DisableMode](#enum_collisionobject3d_disablemode) **get_disable_mode** ( )
 
-Defines the behavior in physics when [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled). See [DisableMode](#enum_collisionobject3d_disablemode) for more details about the different modes.
+Defines the behavior in physics when [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled). See [DisableMode](#enum_collisionobject3d_disablemode) for more details about the different modes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -208,7 +208,7 @@ If `true`, the **CollisionObject3D** will continue to receive input events as th
 - `void` **set_ray_pickable** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_ray_pickable** ( )
 
-If `true`, this object is pickable. A pickable object can detect the mouse pointer entering/leaving, and if the mouse is inside it, report input events. Requires at least one [`collision_layer`](#class_collisionobject3d_property_collision_layer) bit to be set.
+If `true`, this object is pickable. A pickable object can detect the mouse pointer entering/leaving, and if the mouse is inside it, report input events. Requires at least one [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer) bit to be set.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -220,9 +220,9 @@ If `true`, this object is pickable. A pickable object can detect the mouse point
 
 `void` **_input_event** ( camera: [`Camera3D`](class_camera3d.md), event: [`InputEvent`](class_inputevent.md), event_position: [`Vector3`](class_vector3.md), normal: [`Vector3`](class_vector3.md), shape_idx: [`int`](class_int.md) ) virtual[^virtual]<div id="class_collisionobject3d_private_method__input_event"></div>
 
-Receives unhandled [`InputEvent`](class_inputevent.md) s. `event_position` is the location in world space of the mouse pointer on the surface of the shape with index `shape_idx` and `normal` is the normal vector of the surface at that point. Connect to the [`input_event`](#class_collisionobject3d_signal_input_event) signal to easily pick up these events.
+Receives unhandled [`InputEvent`](class_inputevent.md) s. `event_position` is the location in world space of the mouse pointer on the surface of the shape with index `shape_idx` and `normal` is the normal vector of the surface at that point. Connect to the [`input_event`](class_collisionobject3d.md#class_collisionobject3d_signal_input_event) signal to easily pick up these events.
 
- **Note:** [`_input_event`](#class_collisionobject3d_private_method__input_event) requires [`input_ray_pickable`](#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject3d_property_collision_layer) bit to be set.
+ **Note:** [`_input_event`](class_collisionobject3d.md#class_collisionobject3d_private_method__input_event) requires [`input_ray_pickable`](class_collisionobject3d.md#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer) bit to be set.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -232,7 +232,7 @@ Receives unhandled [`InputEvent`](class_inputevent.md) s. `event_position` is th
 
 `void` **_mouse_enter** ( ) virtual[^virtual]<div id="class_collisionobject3d_private_method__mouse_enter"></div>
 
-Called when the mouse pointer enters any of this object's shapes. Requires [`input_ray_pickable`](#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject3d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject3D** won't cause this function to be called.
+Called when the mouse pointer enters any of this object's shapes. Requires [`input_ray_pickable`](class_collisionobject3d.md#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject3D** won't cause this function to be called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -242,7 +242,7 @@ Called when the mouse pointer enters any of this object's shapes. Requires [`inp
 
 `void` **_mouse_exit** ( ) virtual[^virtual]<div id="class_collisionobject3d_private_method__mouse_exit"></div>
 
-Called when the mouse pointer exits all this object's shapes. Requires [`input_ray_pickable`](#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](#class_collisionobject3d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject3D** won't cause this function to be called.
+Called when the mouse pointer exits all this object's shapes. Requires [`input_ray_pickable`](class_collisionobject3d.md#class_collisionobject3d_property_input_ray_pickable) to be `true` and at least one [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer) bit to be set. Note that moving between different shapes within a single **CollisionObject3D** won't cause this function to be called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -262,7 +262,7 @@ Creates a new shape owner for the given object. Returns `owner_id` of the new ow
 
 [`bool`](class_bool.md) **get_collision_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_collisionobject3d_method_get_collision_layer_value"></div>
 
-Returns whether or not the specified layer of the [`collision_layer`](#class_collisionobject3d_property_collision_layer) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -272,7 +272,7 @@ Returns whether or not the specified layer of the [`collision_layer`](#class_col
 
 [`bool`](class_bool.md) **get_collision_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_collisionobject3d_method_get_collision_mask_value"></div>
 
-Returns whether or not the specified layer of the [`collision_mask`](#class_collisionobject3d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_mask`](class_collisionobject3d.md#class_collisionobject3d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -322,7 +322,7 @@ Removes the given shape owner.
 
 `void` **set_collision_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_collisionobject3d_method_set_collision_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_layer`](#class_collisionobject3d_property_collision_layer), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_layer`](class_collisionobject3d.md#class_collisionobject3d_property_collision_layer), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -332,7 +332,7 @@ Based on `value`, enables or disables the specified layer in the [`collision_lay
 
 `void` **set_collision_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_collisionobject3d_method_set_collision_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_mask`](#class_collisionobject3d_property_collision_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_mask`](class_collisionobject3d.md#class_collisionobject3d_property_collision_mask), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 

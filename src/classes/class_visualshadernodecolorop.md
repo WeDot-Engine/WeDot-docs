@@ -13,13 +13,13 @@ A [`Color`](class_color.md) operator to be used within the visual shader graph.
 
 ## 描述
 
-Applies [`operator`](#class_visualshadernodecolorop_property_operator) to two color inputs.
+Applies [`operator`](class_visualshadernodecolorop.md#class_visualshadernodecolorop_property_operator) to two color inputs.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Operator](#enum_visualshadernodecolorop_operator) | [`operator`](#class_visualshadernodecolorop_property_operator) | ``0`` |
+| [Operator](#enum_visualshadernodecolorop_operator) | [`operator`](class_visualshadernodecolorop.md#class_visualshadernodecolorop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

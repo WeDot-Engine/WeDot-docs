@@ -21,24 +21,24 @@ Abstract base class for scrollbars, typically used to navigate through content t
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`custom_step`](#class_scrollbar_property_custom_step) | ``-1.0``                                                  |
-| [`float`](class_float.md) | step                                                   | ``0.0`` (overrides [`Range`](#class_range_property_step)) |
+| [`float`](class_float.md) | [`custom_step`](class_scrollbar.md#class_scrollbar_property_custom_step) | ``-1.0``                                                                |
+| [`float`](class_float.md) | step                                                                     | ``0.0`` (overrides [`Range`](class_range.md#class_range_property_step)) |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`decrement`](#class_scrollbar_theme_icon_decrement)                     |
-| [`Texture2D`](class_texture2d.md) | [`decrement_highlight`](#class_scrollbar_theme_icon_decrement_highlight) |
-| [`Texture2D`](class_texture2d.md) | [`decrement_pressed`](#class_scrollbar_theme_icon_decrement_pressed)     |
-| [`Texture2D`](class_texture2d.md) | [`increment`](#class_scrollbar_theme_icon_increment)                     |
-| [`Texture2D`](class_texture2d.md) | [`increment_highlight`](#class_scrollbar_theme_icon_increment_highlight) |
-| [`Texture2D`](class_texture2d.md) | [`increment_pressed`](#class_scrollbar_theme_icon_increment_pressed)     |
-| [`StyleBox`](class_stylebox.md)   | [`grabber`](#class_scrollbar_theme_style_grabber)                        |
-| [`StyleBox`](class_stylebox.md)   | [`grabber_highlight`](#class_scrollbar_theme_style_grabber_highlight)    |
-| [`StyleBox`](class_stylebox.md)   | [`grabber_pressed`](#class_scrollbar_theme_style_grabber_pressed)        |
-| [`StyleBox`](class_stylebox.md)   | [`scroll`](#class_scrollbar_theme_style_scroll)                          |
-| [`StyleBox`](class_stylebox.md)   | [`scroll_focus`](#class_scrollbar_theme_style_scroll_focus)              |
+| [`Texture2D`](class_texture2d.md) | [`decrement`](class_scrollbar.md#class_scrollbar_theme_icon_decrement)                     |
+| [`Texture2D`](class_texture2d.md) | [`decrement_highlight`](class_scrollbar.md#class_scrollbar_theme_icon_decrement_highlight) |
+| [`Texture2D`](class_texture2d.md) | [`decrement_pressed`](class_scrollbar.md#class_scrollbar_theme_icon_decrement_pressed)     |
+| [`Texture2D`](class_texture2d.md) | [`increment`](class_scrollbar.md#class_scrollbar_theme_icon_increment)                     |
+| [`Texture2D`](class_texture2d.md) | [`increment_highlight`](class_scrollbar.md#class_scrollbar_theme_icon_increment_highlight) |
+| [`Texture2D`](class_texture2d.md) | [`increment_pressed`](class_scrollbar.md#class_scrollbar_theme_icon_increment_pressed)     |
+| [`StyleBox`](class_stylebox.md)   | [`grabber`](class_scrollbar.md#class_scrollbar_theme_style_grabber)                        |
+| [`StyleBox`](class_stylebox.md)   | [`grabber_highlight`](class_scrollbar.md#class_scrollbar_theme_style_grabber_highlight)    |
+| [`StyleBox`](class_stylebox.md)   | [`grabber_pressed`](class_scrollbar.md#class_scrollbar_theme_style_grabber_pressed)        |
+| [`StyleBox`](class_stylebox.md)   | [`scroll`](class_scrollbar.md#class_scrollbar_theme_style_scroll)                          |
+| [`StyleBox`](class_stylebox.md)   | [`scroll_focus`](class_scrollbar.md#class_scrollbar_theme_style_scroll_focus)              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -77,7 +77,7 @@ Overrides the step used when clicking increment and decrement buttons or when us
 
 [`Texture2D`](class_texture2d.md) **decrement** <div id="class_scrollbar_theme_icon_decrement"></div>
 
-Icon used as a button to scroll the **ScrollBar** left/up. Supports custom step using the [`custom_step`](#class_scrollbar_property_custom_step) property.
+Icon used as a button to scroll the **ScrollBar** left/up. Supports custom step using the [`custom_step`](class_scrollbar.md#class_scrollbar_property_custom_step) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -107,7 +107,7 @@ Displayed when the decrement button is being pressed.
 
 [`Texture2D`](class_texture2d.md) **increment** <div id="class_scrollbar_theme_icon_increment"></div>
 
-Icon used as a button to scroll the **ScrollBar** right/down. Supports custom step using the [`custom_step`](#class_scrollbar_property_custom_step) property.
+Icon used as a button to scroll the **ScrollBar** right/down. Supports custom step using the [`custom_step`](class_scrollbar.md#class_scrollbar_property_custom_step) property.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -21,12 +21,12 @@ This node allows you to create a torus for use with the CSG system.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)       | [`inner_radius`](#class_csgtorus3d_property_inner_radius) | ``0.5``  |
-| [`Material`](class_material.md) | [`material`](#class_csgtorus3d_property_material)         |          |
-| [`float`](class_float.md)       | [`outer_radius`](#class_csgtorus3d_property_outer_radius) | ``1.0``  |
-| [`int`](class_int.md)           | [`ring_sides`](#class_csgtorus3d_property_ring_sides)     | ``6``    |
-| [`int`](class_int.md)           | [`sides`](#class_csgtorus3d_property_sides)               | ``8``    |
-| [`bool`](class_bool.md)         | [`smooth_faces`](#class_csgtorus3d_property_smooth_faces) | ``true`` |
+| [`float`](class_float.md)       | [`inner_radius`](class_csgtorus3d.md#class_csgtorus3d_property_inner_radius) | ``0.5``  |
+| [`Material`](class_material.md) | [`material`](class_csgtorus3d.md#class_csgtorus3d_property_material)         |          |
+| [`float`](class_float.md)       | [`outer_radius`](class_csgtorus3d.md#class_csgtorus3d_property_outer_radius) | ``1.0``  |
+| [`int`](class_int.md)           | [`ring_sides`](class_csgtorus3d.md#class_csgtorus3d_property_ring_sides)     | ``6``    |
+| [`int`](class_int.md)           | [`sides`](class_csgtorus3d.md#class_csgtorus3d_property_sides)               | ``8``    |
+| [`bool`](class_bool.md)         | [`smooth_faces`](class_csgtorus3d.md#class_csgtorus3d_property_smooth_faces) | ``true`` |
 
 <!-- rst-class:: classref-section-separator -->
 

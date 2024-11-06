@@ -13,15 +13,15 @@ A visual shader node that makes particles emitted in a shape defined by a [`Mesh
 
 ## 描述
 
-[`VisualShaderNodeParticleEmitter`](class_visualshadernodeparticleemitter.md) that makes the particles emitted in a shape of the assigned [`mesh`](#class_visualshadernodeparticlemeshemitter_property_mesh). It will emit from the mesh's surfaces, either all or only the specified one.
+[`VisualShaderNodeParticleEmitter`](class_visualshadernodeparticleemitter.md) that makes the particles emitted in a shape of the assigned [`mesh`](class_visualshadernodeparticlemeshemitter.md#class_visualshadernodeparticlemeshemitter_property_mesh). It will emit from the mesh's surfaces, either all or only the specified one.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Mesh`](class_mesh.md) | [`mesh`](#class_visualshadernodeparticlemeshemitter_property_mesh)                         |          |
-| [`int`](class_int.md)   | [`surface_index`](#class_visualshadernodeparticlemeshemitter_property_surface_index)       | ``0``    |
-| [`bool`](class_bool.md) | [`use_all_surfaces`](#class_visualshadernodeparticlemeshemitter_property_use_all_surfaces) | ``true`` |
+| [`Mesh`](class_mesh.md) | [`mesh`](class_visualshadernodeparticlemeshemitter.md#class_visualshadernodeparticlemeshemitter_property_mesh)                         |          |
+| [`int`](class_int.md)   | [`surface_index`](class_visualshadernodeparticlemeshemitter.md#class_visualshadernodeparticlemeshemitter_property_surface_index)       | ``0``    |
+| [`bool`](class_bool.md) | [`use_all_surfaces`](class_visualshadernodeparticlemeshemitter.md#class_visualshadernodeparticlemeshemitter_property_use_all_surfaces) | ``true`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -49,7 +49,7 @@ The [`Mesh`](class_mesh.md) that defines emission shape.
 - `void` **set_surface_index** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_surface_index** ( )
 
-Index of the surface that emits particles. [`use_all_surfaces`](#class_visualshadernodeparticlemeshemitter_property_use_all_surfaces) must be `false` for this to take effect.
+Index of the surface that emits particles. [`use_all_surfaces`](class_visualshadernodeparticlemeshemitter.md#class_visualshadernodeparticlemeshemitter_property_use_all_surfaces) must be `false` for this to take effect.
 
 <!-- rst-class:: classref-item-separator -->
 

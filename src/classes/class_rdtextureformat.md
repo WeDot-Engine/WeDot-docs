@@ -19,22 +19,22 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                                      | [`array_layers`](#class_rdtextureformat_property_array_layers) | ``1`` |
-| [`int`](class_int.md)                                      | [`depth`](#class_rdtextureformat_property_depth)               | ``1`` |
-| [DataFormat](#enum_renderingdevice_dataformat)             | [`format`](#class_rdtextureformat_property_format)             | ``8`` |
-| [`int`](class_int.md)                                      | [`height`](#class_rdtextureformat_property_height)             | ``1`` |
-| [`int`](class_int.md)                                      | [`mipmaps`](#class_rdtextureformat_property_mipmaps)           | ``1`` |
-| [TextureSamples](#enum_renderingdevice_texturesamples)     | [`samples`](#class_rdtextureformat_property_samples)           | ``0`` |
-| [TextureType](#enum_renderingdevice_texturetype)           | [`texture_type`](#class_rdtextureformat_property_texture_type) | ``1`` |
-| [TextureUsageBits](#enum_renderingdevice_textureusagebits) | [`usage_bits`](#class_rdtextureformat_property_usage_bits)     | ``0`` |
-| [`int`](class_int.md)                                      | [`width`](#class_rdtextureformat_property_width)               | ``1`` |
+| [`int`](class_int.md)                                      | [`array_layers`](class_rdtextureformat.md#class_rdtextureformat_property_array_layers) | ``1`` |
+| [`int`](class_int.md)                                      | [`depth`](class_rdtextureformat.md#class_rdtextureformat_property_depth)               | ``1`` |
+| [DataFormat](#enum_renderingdevice_dataformat)             | [`format`](class_rdtextureformat.md#class_rdtextureformat_property_format)             | ``8`` |
+| [`int`](class_int.md)                                      | [`height`](class_rdtextureformat.md#class_rdtextureformat_property_height)             | ``1`` |
+| [`int`](class_int.md)                                      | [`mipmaps`](class_rdtextureformat.md#class_rdtextureformat_property_mipmaps)           | ``1`` |
+| [TextureSamples](#enum_renderingdevice_texturesamples)     | [`samples`](class_rdtextureformat.md#class_rdtextureformat_property_samples)           | ``0`` |
+| [TextureType](#enum_renderingdevice_texturetype)           | [`texture_type`](class_rdtextureformat.md#class_rdtextureformat_property_texture_type) | ``1`` |
+| [TextureUsageBits](#enum_renderingdevice_textureusagebits) | [`usage_bits`](class_rdtextureformat.md#class_rdtextureformat_property_usage_bits)     | ``0`` |
+| [`int`](class_int.md)                                      | [`width`](class_rdtextureformat.md#class_rdtextureformat_property_width)               | ``1`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`add_shareable_format`](#class_rdtextureformat_method_add_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) )       |
-| `void` | [`remove_shareable_format`](#class_rdtextureformat_method_remove_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) ) |
+| `void` | [`add_shareable_format`](class_rdtextureformat.md#class_rdtextureformat_method_add_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) )       |
+| `void` | [`remove_shareable_format`](class_rdtextureformat.md#class_rdtextureformat_method_remove_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

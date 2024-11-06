@@ -15,33 +15,33 @@
 
 ## 描述
 
-An obstacle needs a navigation map and outline [`vertices`](#class_navigationobstacle2d_property_vertices) defined to work correctly. The outlines can not cross or overlap.
+An obstacle needs a navigation map and outline [`vertices`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_vertices) defined to work correctly. The outlines can not cross or overlap.
 
-Obstacles can be included in the navigation mesh baking process when [`affect_navigation_mesh`](#class_navigationobstacle2d_property_affect_navigation_mesh) is enabled. They do not add walkable geometry, instead their role is to discard other source geometry inside the shape. This can be used to prevent navigation mesh from appearing in unwanted places. If [`carve_navigation_mesh`](#class_navigationobstacle2d_property_carve_navigation_mesh) is enabled the baked shape will not be affected by offsets of the navigation mesh baking, e.g. the agent radius.
+Obstacles can be included in the navigation mesh baking process when [`affect_navigation_mesh`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_affect_navigation_mesh) is enabled. They do not add walkable geometry, instead their role is to discard other source geometry inside the shape. This can be used to prevent navigation mesh from appearing in unwanted places. If [`carve_navigation_mesh`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_carve_navigation_mesh) is enabled the baked shape will not be affected by offsets of the navigation mesh baking, e.g. the agent radius.
 
-With [`avoidance_enabled`](#class_navigationobstacle2d_property_avoidance_enabled) the obstacle can constrain the avoidance velocities of avoidance using agents. If the obstacle's vertices are wound in clockwise order, avoidance agents will be pushed in by the obstacle, otherwise, avoidance agents will be pushed out. Obstacles using vertices and avoidance can warp to a new position but should not be moved every single frame as each change requires a rebuild of the avoidance map.
+With [`avoidance_enabled`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_avoidance_enabled) the obstacle can constrain the avoidance velocities of avoidance using agents. If the obstacle's vertices are wound in clockwise order, avoidance agents will be pushed in by the obstacle, otherwise, avoidance agents will be pushed out. Obstacles using vertices and avoidance can warp to a new position but should not be moved every single frame as each change requires a rebuild of the avoidance map.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`affect_navigation_mesh`](#class_navigationobstacle2d_property_affect_navigation_mesh) | ``false``                |
-| [`bool`](class_bool.md)                             | [`avoidance_enabled`](#class_navigationobstacle2d_property_avoidance_enabled)           | ``true``                 |
-| [`int`](class_int.md)                               | [`avoidance_layers`](#class_navigationobstacle2d_property_avoidance_layers)             | ``1``                    |
-| [`bool`](class_bool.md)                             | [`carve_navigation_mesh`](#class_navigationobstacle2d_property_carve_navigation_mesh)   | ``false``                |
-| [`float`](class_float.md)                           | [`radius`](#class_navigationobstacle2d_property_radius)                                 | ``0.0``                  |
-| [`Vector2`](class_vector2.md)                       | [`velocity`](#class_navigationobstacle2d_property_velocity)                             | ``Vector2(0, 0)``        |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`vertices`](#class_navigationobstacle2d_property_vertices)                             | ``PackedVector2Array()`` |
+| [`bool`](class_bool.md)                             | [`affect_navigation_mesh`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_affect_navigation_mesh) | ``false``                |
+| [`bool`](class_bool.md)                             | [`avoidance_enabled`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_avoidance_enabled)           | ``true``                 |
+| [`int`](class_int.md)                               | [`avoidance_layers`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_avoidance_layers)             | ``1``                    |
+| [`bool`](class_bool.md)                             | [`carve_navigation_mesh`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_carve_navigation_mesh)   | ``false``                |
+| [`float`](class_float.md)                           | [`radius`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_radius)                                 | ``0.0``                  |
+| [`Vector2`](class_vector2.md)                       | [`velocity`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_velocity)                             | ``Vector2(0, 0)``        |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`vertices`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_vertices)                             | ``PackedVector2Array()`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`get_avoidance_layer_value`](#class_navigationobstacle2d_method_get_avoidance_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`RID`](class_rid.md)   | [`get_navigation_map`](#class_navigationobstacle2d_method_get_navigation_map) ( ) const[^const]                                                                     |
-| [`RID`](class_rid.md)   | [`get_rid`](#class_navigationobstacle2d_method_get_rid) ( ) const[^const]                                                                                           |
-| `void`                  | [`set_avoidance_layer_value`](#class_navigationobstacle2d_method_set_avoidance_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                  | [`set_navigation_map`](#class_navigationobstacle2d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                             |
+| [`bool`](class_bool.md) | [`get_avoidance_layer_value`](class_navigationobstacle2d.md#class_navigationobstacle2d_method_get_avoidance_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`RID`](class_rid.md)   | [`get_navigation_map`](class_navigationobstacle2d.md#class_navigationobstacle2d_method_get_navigation_map) ( ) const[^const]                                                                     |
+| [`RID`](class_rid.md)   | [`get_rid`](class_navigationobstacle2d.md#class_navigationobstacle2d_method_get_rid) ( ) const[^const]                                                                                           |
+| `void`                  | [`set_avoidance_layer_value`](class_navigationobstacle2d.md#class_navigationobstacle2d_method_set_avoidance_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                  | [`set_navigation_map`](class_navigationobstacle2d.md#class_navigationobstacle2d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ With [`avoidance_enabled`](#class_navigationobstacle2d_property_avoidance_enable
 - `void` **set_affect_navigation_mesh** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_affect_navigation_mesh** ( )
 
-If enabled and parsed in a navigation mesh baking process the obstacle will discard source geometry inside its [`vertices`](#class_navigationobstacle2d_property_vertices) defined shape.
+If enabled and parsed in a navigation mesh baking process the obstacle will discard source geometry inside its [`vertices`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_vertices) defined shape.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -99,7 +99,7 @@ If enabled the obstacle vertices will carve into the baked navigation mesh with 
 
 It will still be affected by further postprocessing of the baking process, like edge and polygon simplification.
 
-Requires [`affect_navigation_mesh`](#class_navigationobstacle2d_property_affect_navigation_mesh) to be enabled.
+Requires [`affect_navigation_mesh`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_affect_navigation_mesh) to be enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -125,7 +125,7 @@ Sets the avoidance radius for the obstacle.
 - `void` **set_velocity** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_velocity** ( )
 
-Sets the wanted velocity for the obstacle so other agent's can better predict the obstacle if it is moved with a velocity regularly (every frame) instead of warped to a new position. Does only affect avoidance for the obstacles [`radius`](#class_navigationobstacle2d_property_radius). Does nothing for the obstacles static vertices.
+Sets the wanted velocity for the obstacle so other agent's can better predict the obstacle if it is moved with a velocity regularly (every frame) instead of warped to a new position. Does only affect avoidance for the obstacles [`radius`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_radius). Does nothing for the obstacles static vertices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,7 +152,7 @@ The outline vertices of the obstacle. If the vertices are winded in clockwise or
 
 [`bool`](class_bool.md) **get_avoidance_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_navigationobstacle2d_method_get_avoidance_layer_value"></div>
 
-Returns whether or not the specified layer of the [`avoidance_layers`](#class_navigationobstacle2d_property_avoidance_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`avoidance_layers`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_avoidance_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -162,7 +162,7 @@ Returns whether or not the specified layer of the [`avoidance_layers`](#class_na
 
 [`RID`](class_rid.md) **get_navigation_map** ( ) const[^const]<div id="class_navigationobstacle2d_method_get_navigation_map"></div>
 
-Returns the [`RID`](class_rid.md) of the navigation map for this NavigationObstacle node. This function returns always the map set on the NavigationObstacle node and not the map of the abstract obstacle on the NavigationServer. If the obstacle map is changed directly with the NavigationServer API the NavigationObstacle node will not be aware of the map change. Use [`set_navigation_map`](#class_navigationobstacle2d_method_set_navigation_map) to change the navigation map for the NavigationObstacle and also update the obstacle on the NavigationServer.
+Returns the [`RID`](class_rid.md) of the navigation map for this NavigationObstacle node. This function returns always the map set on the NavigationObstacle node and not the map of the abstract obstacle on the NavigationServer. If the obstacle map is changed directly with the NavigationServer API the NavigationObstacle node will not be aware of the map change. Use [`set_navigation_map`](class_navigationobstacle2d.md#class_navigationobstacle2d_method_set_navigation_map) to change the navigation map for the NavigationObstacle and also update the obstacle on the NavigationServer.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -182,7 +182,7 @@ Returns the [`RID`](class_rid.md) of this obstacle on the [`NavigationServer2D`]
 
 `void` **set_avoidance_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_navigationobstacle2d_method_set_avoidance_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`avoidance_layers`](#class_navigationobstacle2d_property_avoidance_layers) bitmask, given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`avoidance_layers`](class_navigationobstacle2d.md#class_navigationobstacle2d_property_avoidance_layers) bitmask, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -23,41 +23,41 @@ After instantiating the playback information data within the extended class, the
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                                             | [`active`](#class_animationmixer_property_active)                                 | ``true``           |
-| [`int`](class_int.md)                                                               | [`audio_max_polyphony`](#class_animationmixer_property_audio_max_polyphony)       | ``32``             |
-| [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) | [`callback_mode_discrete`](#class_animationmixer_property_callback_mode_discrete) | ``1``              |
-| [AnimationCallbackModeMethod](#enum_animationmixer_animationcallbackmodemethod)     | [`callback_mode_method`](#class_animationmixer_property_callback_mode_method)     | ``0``              |
-| [AnimationCallbackModeProcess](#enum_animationmixer_animationcallbackmodeprocess)   | [`callback_mode_process`](#class_animationmixer_property_callback_mode_process)   | ``1``              |
-| [`bool`](class_bool.md)                                                             | [`deterministic`](#class_animationmixer_property_deterministic)                   | ``false``          |
-| [`bool`](class_bool.md)                                                             | [`reset_on_save`](#class_animationmixer_property_reset_on_save)                   | ``true``           |
-| [`NodePath`](class_nodepath.md)                                                     | [`root_motion_track`](#class_animationmixer_property_root_motion_track)           | ``NodePath("")``   |
-| [`NodePath`](class_nodepath.md)                                                     | [`root_node`](#class_animationmixer_property_root_node)                           | ``NodePath("..")`` |
+| [`bool`](class_bool.md)                                                             | [`active`](class_animationmixer.md#class_animationmixer_property_active)                                 | ``true``           |
+| [`int`](class_int.md)                                                               | [`audio_max_polyphony`](class_animationmixer.md#class_animationmixer_property_audio_max_polyphony)       | ``32``             |
+| [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) | [`callback_mode_discrete`](class_animationmixer.md#class_animationmixer_property_callback_mode_discrete) | ``1``              |
+| [AnimationCallbackModeMethod](#enum_animationmixer_animationcallbackmodemethod)     | [`callback_mode_method`](class_animationmixer.md#class_animationmixer_property_callback_mode_method)     | ``0``              |
+| [AnimationCallbackModeProcess](#enum_animationmixer_animationcallbackmodeprocess)   | [`callback_mode_process`](class_animationmixer.md#class_animationmixer_property_callback_mode_process)   | ``1``              |
+| [`bool`](class_bool.md)                                                             | [`deterministic`](class_animationmixer.md#class_animationmixer_property_deterministic)                   | ``false``          |
+| [`bool`](class_bool.md)                                                             | [`reset_on_save`](class_animationmixer.md#class_animationmixer_property_reset_on_save)                   | ``true``           |
+| [`NodePath`](class_nodepath.md)                                                     | [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track)           | ``NodePath("")``   |
+| [`NodePath`](class_nodepath.md)                                                     | [`root_node`](class_animationmixer.md#class_animationmixer_property_root_node)                           | ``NodePath("..")`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md)                               | [`_post_process_key_value`](#class_animationmixer_private_method__post_process_key_value) ( animation: [`Animation`](class_animation.md), track: [`int`](class_int.md), value: [`Variant`](class_variant.md), object_id: [`int`](class_int.md), object_sub_idx: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
-| [Error](#enum_@globalscope_error)                           | [`add_animation_library`](#class_animationmixer_method_add_animation_library) ( name: [`StringName`](class_stringname.md), library: [`AnimationLibrary`](class_animationlibrary.md) )                                                                                                                                   |
-| `void`                                                      | [`advance`](#class_animationmixer_method_advance) ( delta: [`float`](class_float.md) )                                                                                                                                                                                                                                  |
-| `void`                                                      | [`capture`](#class_animationmixer_method_capture) ( name: [`StringName`](class_stringname.md), duration: [`float`](class_float.md), trans_type: [TransitionType](#enum_tween_transitiontype) = 0, ease_type: [EaseType](#enum_tween_easetype) = 0 )                                                                     |
-| `void`                                                      | [`clear_caches`](#class_animationmixer_method_clear_caches) ( )                                                                                                                                                                                                                                                         |
-| [`StringName`](class_stringname.md)                         | [`find_animation`](#class_animationmixer_method_find_animation) ( animation: [`Animation`](class_animation.md) ) const[^const]                                                                                                                                                                                          |
-| [`StringName`](class_stringname.md)                         | [`find_animation_library`](#class_animationmixer_method_find_animation_library) ( animation: [`Animation`](class_animation.md) ) const[^const]                                                                                                                                                                          |
-| [`Animation`](class_animation.md)                           | [`get_animation`](#class_animationmixer_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                               |
-| [`AnimationLibrary`](class_animationlibrary.md)             | [`get_animation_library`](#class_animationmixer_method_get_animation_library) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                               |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_library_list`](#class_animationmixer_method_get_animation_library_list) ( ) const[^const]                                                                                                                                                                                                               |
-| [`PackedStringArray`](class_packedstringarray.md)           | [`get_animation_list`](#class_animationmixer_method_get_animation_list) ( ) const[^const]                                                                                                                                                                                                                               |
-| [`Vector3`](class_vector3.md)                               | [`get_root_motion_position`](#class_animationmixer_method_get_root_motion_position) ( ) const[^const]                                                                                                                                                                                                                   |
-| [`Vector3`](class_vector3.md)                               | [`get_root_motion_position_accumulator`](#class_animationmixer_method_get_root_motion_position_accumulator) ( ) const[^const]                                                                                                                                                                                           |
-| [`Quaternion`](class_quaternion.md)                         | [`get_root_motion_rotation`](#class_animationmixer_method_get_root_motion_rotation) ( ) const[^const]                                                                                                                                                                                                                   |
-| [`Quaternion`](class_quaternion.md)                         | [`get_root_motion_rotation_accumulator`](#class_animationmixer_method_get_root_motion_rotation_accumulator) ( ) const[^const]                                                                                                                                                                                           |
-| [`Vector3`](class_vector3.md)                               | [`get_root_motion_scale`](#class_animationmixer_method_get_root_motion_scale) ( ) const[^const]                                                                                                                                                                                                                         |
-| [`Vector3`](class_vector3.md)                               | [`get_root_motion_scale_accumulator`](#class_animationmixer_method_get_root_motion_scale_accumulator) ( ) const[^const]                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)                                     | [`has_animation`](#class_animationmixer_method_has_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                               |
-| [`bool`](class_bool.md)                                     | [`has_animation_library`](#class_animationmixer_method_has_animation_library) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                               |
-| `void`                                                      | [`remove_animation_library`](#class_animationmixer_method_remove_animation_library) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                       |
-| `void`                                                      | [`rename_animation_library`](#class_animationmixer_method_rename_animation_library) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) )                                                                                                                                         |
+| [`Variant`](class_variant.md)                               | [`_post_process_key_value`](class_animationmixer.md#class_animationmixer_private_method__post_process_key_value) ( animation: [`Animation`](class_animation.md), track: [`int`](class_int.md), value: [`Variant`](class_variant.md), object_id: [`int`](class_int.md), object_sub_idx: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+| [Error](#enum_@globalscope_error)                           | [`add_animation_library`](class_animationmixer.md#class_animationmixer_method_add_animation_library) ( name: [`StringName`](class_stringname.md), library: [`AnimationLibrary`](class_animationlibrary.md) )                                                                                                                                   |
+| `void`                                                      | [`advance`](class_animationmixer.md#class_animationmixer_method_advance) ( delta: [`float`](class_float.md) )                                                                                                                                                                                                                                  |
+| `void`                                                      | [`capture`](class_animationmixer.md#class_animationmixer_method_capture) ( name: [`StringName`](class_stringname.md), duration: [`float`](class_float.md), trans_type: [TransitionType](#enum_tween_transitiontype) = 0, ease_type: [EaseType](#enum_tween_easetype) = 0 )                                                                     |
+| `void`                                                      | [`clear_caches`](class_animationmixer.md#class_animationmixer_method_clear_caches) ( )                                                                                                                                                                                                                                                         |
+| [`StringName`](class_stringname.md)                         | [`find_animation`](class_animationmixer.md#class_animationmixer_method_find_animation) ( animation: [`Animation`](class_animation.md) ) const[^const]                                                                                                                                                                                          |
+| [`StringName`](class_stringname.md)                         | [`find_animation_library`](class_animationmixer.md#class_animationmixer_method_find_animation_library) ( animation: [`Animation`](class_animation.md) ) const[^const]                                                                                                                                                                          |
+| [`Animation`](class_animation.md)                           | [`get_animation`](class_animationmixer.md#class_animationmixer_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                               |
+| [`AnimationLibrary`](class_animationlibrary.md)             | [`get_animation_library`](class_animationmixer.md#class_animationmixer_method_get_animation_library) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                               |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_library_list`](class_animationmixer.md#class_animationmixer_method_get_animation_library_list) ( ) const[^const]                                                                                                                                                                                                               |
+| [`PackedStringArray`](class_packedstringarray.md)           | [`get_animation_list`](class_animationmixer.md#class_animationmixer_method_get_animation_list) ( ) const[^const]                                                                                                                                                                                                                               |
+| [`Vector3`](class_vector3.md)                               | [`get_root_motion_position`](class_animationmixer.md#class_animationmixer_method_get_root_motion_position) ( ) const[^const]                                                                                                                                                                                                                   |
+| [`Vector3`](class_vector3.md)                               | [`get_root_motion_position_accumulator`](class_animationmixer.md#class_animationmixer_method_get_root_motion_position_accumulator) ( ) const[^const]                                                                                                                                                                                           |
+| [`Quaternion`](class_quaternion.md)                         | [`get_root_motion_rotation`](class_animationmixer.md#class_animationmixer_method_get_root_motion_rotation) ( ) const[^const]                                                                                                                                                                                                                   |
+| [`Quaternion`](class_quaternion.md)                         | [`get_root_motion_rotation_accumulator`](class_animationmixer.md#class_animationmixer_method_get_root_motion_rotation_accumulator) ( ) const[^const]                                                                                                                                                                                           |
+| [`Vector3`](class_vector3.md)                               | [`get_root_motion_scale`](class_animationmixer.md#class_animationmixer_method_get_root_motion_scale) ( ) const[^const]                                                                                                                                                                                                                         |
+| [`Vector3`](class_vector3.md)                               | [`get_root_motion_scale_accumulator`](class_animationmixer.md#class_animationmixer_method_get_root_motion_scale_accumulator) ( ) const[^const]                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)                                     | [`has_animation`](class_animationmixer.md#class_animationmixer_method_has_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                               |
+| [`bool`](class_bool.md)                                     | [`has_animation_library`](class_animationmixer.md#class_animationmixer_method_has_animation_library) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                               |
+| `void`                                                      | [`remove_animation_library`](class_animationmixer.md#class_animationmixer_method_remove_animation_library) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                       |
+| `void`                                                      | [`rename_animation_library`](class_animationmixer.md#class_animationmixer_method_rename_animation_library) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) )                                                                                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -111,7 +111,7 @@ Notifies when an animation starts playing.
 
 **caches_cleared** ( ) <div id="class_animationmixer_signal_caches_cleared"></div>
 
-Notifies when the caches have been cleared, either automatically, or manually via [`clear_caches`](#class_animationmixer_method_clear_caches).
+Notifies when the caches have been cleared, either automatically, or manually via [`clear_caches`](class_animationmixer.md#class_animationmixer_method_clear_caches).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -147,19 +147,19 @@ enum **AnimationCallbackModeProcess**: <div id="enum_animationmixer_animationcal
 
 [AnimationCallbackModeProcess](#enum_animationmixer_animationcallbackmodeprocess) **ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS** = ``0``
 
-Process animation during physics frames (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](#class_node_constant_notification_internal_physics_process)). This is especially useful when animating physics bodies.
+Process animation during physics frames (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_internal_physics_process)). This is especially useful when animating physics bodies.
 
 <div id="_class_animationmixer_constant_animation_callback_mode_process_idle"></div>
 
 [AnimationCallbackModeProcess](#enum_animationmixer_animationcallbackmodeprocess) **ANIMATION_CALLBACK_MODE_PROCESS_IDLE** = ``1``
 
-Process animation during process frames (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](#class_node_constant_notification_internal_process)).
+Process animation during process frames (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](class_node.md#class_node_constant_notification_internal_process)).
 
 <div id="_class_animationmixer_constant_animation_callback_mode_process_manual"></div>
 
 [AnimationCallbackModeProcess](#enum_animationmixer_animationcallbackmodeprocess) **ANIMATION_CALLBACK_MODE_PROCESS_MANUAL** = ``2``
 
-Do not process animation. Use [`advance`](#class_animationmixer_method_advance) to process the animation manually.
+Do not process animation. Use [`advance`](class_animationmixer.md#class_animationmixer_method_advance) to process the animation manually.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -193,21 +193,21 @@ enum **AnimationCallbackModeDiscrete**: <div id="enum_animationmixer_animationca
 
 [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) **ANIMATION_CALLBACK_MODE_DISCRETE_DOMINANT** = ``0``
 
-An [`Animation.UPDATE_DISCRETE`](#class_animation_constant_update_discrete) track value takes precedence when blending [`Animation.UPDATE_CONTINUOUS`](#class_animation_constant_update_continuous) or [`Animation.UPDATE_CAPTURE`](#class_animation_constant_update_capture) track values and [`Animation.UPDATE_DISCRETE`](#class_animation_constant_update_discrete) track values.
+An [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete) track value takes precedence when blending [`Animation.UPDATE_CONTINUOUS`](class_animation.md#class_animation_constant_update_continuous) or [`Animation.UPDATE_CAPTURE`](class_animation.md#class_animation_constant_update_capture) track values and [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete) track values.
 
 <div id="_class_animationmixer_constant_animation_callback_mode_discrete_recessive"></div>
 
 [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) **ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE** = ``1``
 
-An [`Animation.UPDATE_CONTINUOUS`](#class_animation_constant_update_continuous) or [`Animation.UPDATE_CAPTURE`](#class_animation_constant_update_capture) track value takes precedence when blending the [`Animation.UPDATE_CONTINUOUS`](#class_animation_constant_update_continuous) or [`Animation.UPDATE_CAPTURE`](#class_animation_constant_update_capture) track values and the [`Animation.UPDATE_DISCRETE`](#class_animation_constant_update_discrete) track values. This is the default behavior for [`AnimationPlayer`](class_animationplayer.md).
+An [`Animation.UPDATE_CONTINUOUS`](class_animation.md#class_animation_constant_update_continuous) or [`Animation.UPDATE_CAPTURE`](class_animation.md#class_animation_constant_update_capture) track value takes precedence when blending the [`Animation.UPDATE_CONTINUOUS`](class_animation.md#class_animation_constant_update_continuous) or [`Animation.UPDATE_CAPTURE`](class_animation.md#class_animation_constant_update_capture) track values and the [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete) track values. This is the default behavior for [`AnimationPlayer`](class_animationplayer.md).
 
 <div id="_class_animationmixer_constant_animation_callback_mode_discrete_force_continuous"></div>
 
 [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) **ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS** = ``2``
 
-Always treat the [`Animation.UPDATE_DISCRETE`](#class_animation_constant_update_discrete) track value as [`Animation.UPDATE_CONTINUOUS`](#class_animation_constant_update_continuous) with [`Animation.INTERPOLATION_NEAREST`](#class_animation_constant_interpolation_nearest). This is the default behavior for [`AnimationTree`](class_animationtree.md).
+Always treat the [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete) track value as [`Animation.UPDATE_CONTINUOUS`](class_animation.md#class_animation_constant_update_continuous) with [`Animation.INTERPOLATION_NEAREST`](class_animation.md#class_animation_constant_interpolation_nearest). This is the default behavior for [`AnimationTree`](class_animationtree.md).
 
-If a value track has non-numeric type key values, it is internally converted to use [`ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE`](#class_animationmixer_constant_animation_callback_mode_discrete_recessive) with [`Animation.UPDATE_DISCRETE`](#class_animation_constant_update_discrete).
+If a value track has non-numeric type key values, it is internally converted to use [`ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_discrete_recessive) with [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -250,11 +250,11 @@ For example, if this value is `32` and the animation has two audio tracks, the t
 - `void` **set_callback_mode_discrete** ( value: [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) )
 - [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) **get_callback_mode_discrete** ( )
 
-Ordinarily, tracks can be set to [`Animation.UPDATE_DISCRETE`](#class_animation_constant_update_discrete) to update infrequently, usually when using nearest interpolation.
+Ordinarily, tracks can be set to [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete) to update infrequently, usually when using nearest interpolation.
 
-However, when blending with [`Animation.UPDATE_CONTINUOUS`](#class_animation_constant_update_continuous) several results are considered. The [`callback_mode_discrete`](#class_animationmixer_property_callback_mode_discrete) specify it explicitly. See also [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete).
+However, when blending with [`Animation.UPDATE_CONTINUOUS`](class_animation.md#class_animation_constant_update_continuous) several results are considered. The [`callback_mode_discrete`](class_animationmixer.md#class_animationmixer_property_callback_mode_discrete) specify it explicitly. See also [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete).
 
-To make the blended results look good, it is recommended to set this to [`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS`](#class_animationmixer_constant_animation_callback_mode_discrete_force_continuous) to update every frame during blending. Other values exist for compatibility and they are fine if there is no blending, but not so, may produce artifacts.
+To make the blended results look good, it is recommended to set this to [`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_discrete_force_continuous) to update every frame during blending. Other values exist for compatibility and they are fine if there is no blending, but not so, may produce artifacts.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -331,9 +331,9 @@ This makes it more convenient to preview and edit animations in the editor, as c
 - `void` **set_root_motion_track** ( value: [`NodePath`](class_nodepath.md) )
 - [`NodePath`](class_nodepath.md) **get_root_motion_track** ( )
 
-The path to the Animation track used for root motion. Paths must be valid scene-tree paths to a node, and must be specified starting from the parent node of the node that will reproduce the animation. The [`root_motion_track`](#class_animationmixer_property_root_motion_track) uses the same format as [`Animation.track_set_path`](#class_animation_method_track_set_path), but note that a bone must be specified.
+The path to the Animation track used for root motion. Paths must be valid scene-tree paths to a node, and must be specified starting from the parent node of the node that will reproduce the animation. The [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) uses the same format as [`Animation.track_set_path`](class_animation.md#class_animation_method_track_set_path), but note that a bone must be specified.
 
-If the track has type [`Animation.TYPE_POSITION_3D`](#class_animation_constant_type_position_3d), [`Animation.TYPE_ROTATION_3D`](#class_animation_constant_type_rotation_3d), or [`Animation.TYPE_SCALE_3D`](#class_animation_constant_type_scale_3d) the transformation will be canceled visually, and the animation will appear to stay in place. See also [`get_root_motion_position`](#class_animationmixer_method_get_root_motion_position), [`get_root_motion_rotation`](#class_animationmixer_method_get_root_motion_rotation), [`get_root_motion_scale`](#class_animationmixer_method_get_root_motion_scale), and [`RootMotionView`](class_rootmotionview.md).
+If the track has type [`Animation.TYPE_POSITION_3D`](class_animation.md#class_animation_constant_type_position_3d), [`Animation.TYPE_ROTATION_3D`](class_animation.md#class_animation_constant_type_rotation_3d), or [`Animation.TYPE_SCALE_3D`](class_animation.md#class_animation_constant_type_scale_3d) the transformation will be canceled visually, and the animation will appear to stay in place. See also [`get_root_motion_position`](class_animationmixer.md#class_animationmixer_method_get_root_motion_position), [`get_root_motion_rotation`](class_animationmixer.md#class_animationmixer_method_get_root_motion_rotation), [`get_root_motion_scale`](class_animationmixer.md#class_animationmixer_method_get_root_motion_scale), and [`RootMotionView`](class_rootmotionview.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -402,11 +402,11 @@ Manually advance the animations by the specified time (in seconds).
 
 `void` **capture** ( name: [`StringName`](class_stringname.md), duration: [`float`](class_float.md), trans_type: [TransitionType](#enum_tween_transitiontype) = 0, ease_type: [EaseType](#enum_tween_easetype) = 0 )<div id="class_animationmixer_method_capture"></div>
 
-If the animation track specified by `name` has an option [`Animation.UPDATE_CAPTURE`](#class_animation_constant_update_capture), stores current values of the objects indicated by the track path as a cache. If there is already a captured cache, the old cache is discarded.
+If the animation track specified by `name` has an option [`Animation.UPDATE_CAPTURE`](class_animation.md#class_animation_constant_update_capture), stores current values of the objects indicated by the track path as a cache. If there is already a captured cache, the old cache is discarded.
 
 After this it will interpolate with current animation blending result during the playback process for the time specified by `duration`, working like a crossfade.
 
-You can specify `trans_type` as the curve for the interpolation. For better results, it may be appropriate to specify [`Tween.TRANS_LINEAR`](#class_tween_constant_trans_linear) for cases where the first key of the track begins with a non-zero value or where the key value does not change, and [`Tween.TRANS_QUAD`](#class_tween_constant_trans_quad) for cases where the key value changes linearly.
+You can specify `trans_type` as the curve for the interpolation. For better results, it may be appropriate to specify [`Tween.TRANS_LINEAR`](class_tween.md#class_tween_constant_trans_linear) for cases where the first key of the track begins with a non-zero value or where the key value does not change, and [`Tween.TRANS_QUAD`](class_tween.md#class_tween_constant_trans_quad) for cases where the key value changes linearly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -416,7 +416,7 @@ You can specify `trans_type` as the curve for the interpolation. For better resu
 
 `void` **clear_caches** ( )<div id="class_animationmixer_method_clear_caches"></div>
 
-**AnimationMixer** caches animated nodes. It may not notice if a node disappears; [`clear_caches`](#class_animationmixer_method_clear_caches) forces it to update the cache again.
+**AnimationMixer** caches animated nodes. It may not notice if a node disappears; [`clear_caches`](class_animationmixer.md#class_animationmixer_method_clear_caches) forces it to update the cache again.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -488,11 +488,11 @@ Returns the list of stored animation keys.
 
 [`Vector3`](class_vector3.md) **get_root_motion_position** ( ) const[^const]<div id="class_animationmixer_method_get_root_motion_position"></div>
 
-Retrieve the motion delta of position with the [`root_motion_track`](#class_animationmixer_property_root_motion_track) as a [`Vector3`](class_vector3.md) that can be used elsewhere.
+Retrieve the motion delta of position with the [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) as a [`Vector3`](class_vector3.md) that can be used elsewhere.
 
-If [`root_motion_track`](#class_animationmixer_property_root_motion_track) is not a path to a track of type [`Animation.TYPE_POSITION_3D`](#class_animation_constant_type_position_3d), returns `Vector3(0, 0, 0)`.
+If [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) is not a path to a track of type [`Animation.TYPE_POSITION_3D`](class_animation.md#class_animation_constant_type_position_3d), returns `Vector3(0, 0, 0)`.
 
-See also [`root_motion_track`](#class_animationmixer_property_root_motion_track) and [`RootMotionView`](class_rootmotionview.md).
+See also [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) and [`RootMotionView`](class_rootmotionview.md).
 
 The most basic example is applying position to [`CharacterBody3D`](class_characterbody3d.md):
 
@@ -513,7 +513,7 @@ The most basic example is applying position to [`CharacterBody3D`](class_charact
 
 
 
-By using this in combination with [`get_root_motion_rotation_accumulator`](#class_animationmixer_method_get_root_motion_rotation_accumulator), you can apply the root motion position more correctly to account for the rotation of the node.
+By using this in combination with [`get_root_motion_rotation_accumulator`](class_animationmixer.md#class_animationmixer_method_get_root_motion_rotation_accumulator), you can apply the root motion position more correctly to account for the rotation of the node.
 
 
 
@@ -542,7 +542,7 @@ By using this in combination with [`get_root_motion_rotation_accumulator`](#clas
 
 [`Vector3`](class_vector3.md) **get_root_motion_position_accumulator** ( ) const[^const]<div id="class_animationmixer_method_get_root_motion_position_accumulator"></div>
 
-Retrieve the blended value of the position tracks with the [`root_motion_track`](#class_animationmixer_property_root_motion_track) as a [`Vector3`](class_vector3.md) that can be used elsewhere.
+Retrieve the blended value of the position tracks with the [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) as a [`Vector3`](class_vector3.md) that can be used elsewhere.
 
 This is useful in cases where you want to respect the initial key values of the animation.
 
@@ -577,11 +577,11 @@ However, if the animation loops, an unintended discrete change may occur, so thi
 
 [`Quaternion`](class_quaternion.md) **get_root_motion_rotation** ( ) const[^const]<div id="class_animationmixer_method_get_root_motion_rotation"></div>
 
-Retrieve the motion delta of rotation with the [`root_motion_track`](#class_animationmixer_property_root_motion_track) as a [`Quaternion`](class_quaternion.md) that can be used elsewhere.
+Retrieve the motion delta of rotation with the [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) as a [`Quaternion`](class_quaternion.md) that can be used elsewhere.
 
-If [`root_motion_track`](#class_animationmixer_property_root_motion_track) is not a path to a track of type [`Animation.TYPE_ROTATION_3D`](#class_animation_constant_type_rotation_3d), returns `Quaternion(0, 0, 0, 1)`.
+If [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) is not a path to a track of type [`Animation.TYPE_ROTATION_3D`](class_animation.md#class_animation_constant_type_rotation_3d), returns `Quaternion(0, 0, 0, 1)`.
 
-See also [`root_motion_track`](#class_animationmixer_property_root_motion_track) and [`RootMotionView`](class_rootmotionview.md).
+See also [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) and [`RootMotionView`](class_rootmotionview.md).
 
 The most basic example is applying rotation to [`CharacterBody3D`](class_characterbody3d.md):
 
@@ -607,9 +607,9 @@ The most basic example is applying rotation to [`CharacterBody3D`](class_charact
 
 [`Quaternion`](class_quaternion.md) **get_root_motion_rotation_accumulator** ( ) const[^const]<div id="class_animationmixer_method_get_root_motion_rotation_accumulator"></div>
 
-Retrieve the blended value of the rotation tracks with the [`root_motion_track`](#class_animationmixer_property_root_motion_track) as a [`Quaternion`](class_quaternion.md) that can be used elsewhere.
+Retrieve the blended value of the rotation tracks with the [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) as a [`Quaternion`](class_quaternion.md) that can be used elsewhere.
 
-This is necessary to apply the root motion position correctly, taking rotation into account. See also [`get_root_motion_position`](#class_animationmixer_method_get_root_motion_position).
+This is necessary to apply the root motion position correctly, taking rotation into account. See also [`get_root_motion_position`](class_animationmixer.md#class_animationmixer_method_get_root_motion_position).
 
 Also, this is useful in cases where you want to respect the initial key values of the animation.
 
@@ -644,11 +644,11 @@ However, if the animation loops, an unintended discrete change may occur, so thi
 
 [`Vector3`](class_vector3.md) **get_root_motion_scale** ( ) const[^const]<div id="class_animationmixer_method_get_root_motion_scale"></div>
 
-Retrieve the motion delta of scale with the [`root_motion_track`](#class_animationmixer_property_root_motion_track) as a [`Vector3`](class_vector3.md) that can be used elsewhere.
+Retrieve the motion delta of scale with the [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) as a [`Vector3`](class_vector3.md) that can be used elsewhere.
 
-If [`root_motion_track`](#class_animationmixer_property_root_motion_track) is not a path to a track of type [`Animation.TYPE_SCALE_3D`](#class_animation_constant_type_scale_3d), returns `Vector3(0, 0, 0)`.
+If [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) is not a path to a track of type [`Animation.TYPE_SCALE_3D`](class_animation.md#class_animation_constant_type_scale_3d), returns `Vector3(0, 0, 0)`.
 
-See also [`root_motion_track`](#class_animationmixer_property_root_motion_track) and [`RootMotionView`](class_rootmotionview.md).
+See also [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) and [`RootMotionView`](class_rootmotionview.md).
 
 The most basic example is applying scale to [`CharacterBody3D`](class_characterbody3d.md):
 
@@ -680,7 +680,7 @@ The most basic example is applying scale to [`CharacterBody3D`](class_characterb
 
 [`Vector3`](class_vector3.md) **get_root_motion_scale_accumulator** ( ) const[^const]<div id="class_animationmixer_method_get_root_motion_scale_accumulator"></div>
 
-Retrieve the blended value of the scale tracks with the [`root_motion_track`](#class_animationmixer_property_root_motion_track) as a [`Vector3`](class_vector3.md) that can be used elsewhere.
+Retrieve the blended value of the scale tracks with the [`root_motion_track`](class_animationmixer.md#class_animationmixer_property_root_motion_track) as a [`Vector3`](class_vector3.md) that can be used elsewhere.
 
 For example, if an animation with only one key `Vector3(1, 1, 1)` is played in the previous frame and then an animation with only one key `Vector3(2, 2, 2)` is played in the next frame, the difference can be calculated as follows:
 

@@ -13,9 +13,9 @@ Image datatype.
 
 ## 描述
 
-Native image datatype. Contains image data which can be converted to an [`ImageTexture`](class_imagetexture.md) and provides commonly used *image processing* methods. The maximum width and height for an **Image** are [`MAX_WIDTH`](#class_image_constant_max_width) and [`MAX_HEIGHT`](#class_image_constant_max_height).
+Native image datatype. Contains image data which can be converted to an [`ImageTexture`](class_imagetexture.md) and provides commonly used *image processing* methods. The maximum width and height for an **Image** are [`MAX_WIDTH`](class_image.md#class_image_constant_max_width) and [`MAX_HEIGHT`](class_image.md#class_image_constant_max_height).
 
-An **Image** cannot be assigned to a texture property of an object directly (such as [`Sprite2D.texture`](#class_sprite2d_property_texture)), and has to be converted manually to an [`ImageTexture`](class_imagetexture.md) first.
+An **Image** cannot be assigned to a texture property of an object directly (such as [`Sprite2D.texture`](class_sprite2d.md#class_sprite2d_property_texture)), and has to be converted manually to an [`ImageTexture`](class_imagetexture.md) first.
 
  **Note:** The maximum image size is 16384×16384 pixels due to graphics hardware limitations. Larger images may fail to import.
 
@@ -23,83 +23,83 @@ An **Image** cannot be assigned to a texture property of an object directly (suc
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`data`](#class_image_property_data) | ``{ "data": PackedByteArray(), "format": "Lum8", "height": 0, "mipmaps": false, "width": 0 }`` |
+| [`Dictionary`](class_dictionary.md) | [`data`](class_image.md#class_image_property_data) | ``{ "data": PackedByteArray(), "format": "Lum8", "height": 0, "mipmaps": false, "width": 0 }`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                        | [`adjust_bcs`](#class_image_method_adjust_bcs) ( brightness: [`float`](class_float.md), contrast: [`float`](class_float.md), saturation: [`float`](class_float.md) )                                                                                                        |
-| `void`                                        | [`blend_rect`](#class_image_method_blend_rect) ( src: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                                                              |
-| `void`                                        | [`blend_rect_mask`](#class_image_method_blend_rect_mask) ( src: [`Image`](class_image.md), mask: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                   |
-| `void`                                        | [`blit_rect`](#class_image_method_blit_rect) ( src: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                                                                |
-| `void`                                        | [`blit_rect_mask`](#class_image_method_blit_rect_mask) ( src: [`Image`](class_image.md), mask: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                     |
-| `void`                                        | [`bump_map_to_normal_map`](#class_image_method_bump_map_to_normal_map) ( bump_scale: [`float`](class_float.md) = 1.0 )                                                                                                                                                      |
-| `void`                                        | [`clear_mipmaps`](#class_image_method_clear_mipmaps) ( )                                                                                                                                                                                                                    |
-| [Error](#enum_@globalscope_error)             | [`compress`](#class_image_method_compress) ( mode: [CompressMode](#enum_image_compressmode), source: [CompressSource](#enum_image_compresssource) = 0, astc_format: [ASTCFormat](#enum_image_astcformat) = 0 )                                                              |
-| [Error](#enum_@globalscope_error)             | [`compress_from_channels`](#class_image_method_compress_from_channels) ( mode: [CompressMode](#enum_image_compressmode), channels: [UsedChannels](#enum_image_usedchannels), astc_format: [ASTCFormat](#enum_image_astcformat) = 0 )                                        |
-| [`Dictionary`](class_dictionary.md)           | [`compute_image_metrics`](#class_image_method_compute_image_metrics) ( compared_image: [`Image`](class_image.md), use_luma: [`bool`](class_bool.md) )                                                                                                                       |
-| `void`                                        | [`convert`](#class_image_method_convert) ( format: [Format](#enum_image_format) )                                                                                                                                                                                           |
-| `void`                                        | [`copy_from`](#class_image_method_copy_from) ( src: [`Image`](class_image.md) )                                                                                                                                                                                             |
-| [`Image`](class_image.md)                     | [`create`](#class_image_method_create) ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format) ) static[^static]                                                                          |
-| [`Image`](class_image.md)                     | [`create_empty`](#class_image_method_create_empty) ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format) ) static[^static]                                                              |
-| [`Image`](class_image.md)                     | [`create_from_data`](#class_image_method_create_from_data) ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format), data: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
-| `void`                                        | [`crop`](#class_image_method_crop) ( width: [`int`](class_int.md), height: [`int`](class_int.md) )                                                                                                                                                                          |
-| [Error](#enum_@globalscope_error)             | [`decompress`](#class_image_method_decompress) ( )                                                                                                                                                                                                                          |
-| [AlphaMode](#enum_image_alphamode)            | [`detect_alpha`](#class_image_method_detect_alpha) ( ) const[^const]                                                                                                                                                                                                        |
-| [UsedChannels](#enum_image_usedchannels)      | [`detect_used_channels`](#class_image_method_detect_used_channels) ( source: [CompressSource](#enum_image_compresssource) = 0 ) const[^const]                                                                                                                               |
-| `void`                                        | [`fill`](#class_image_method_fill) ( color: [`Color`](class_color.md) )                                                                                                                                                                                                     |
-| `void`                                        | [`fill_rect`](#class_image_method_fill_rect) ( rect: [`Rect2i`](class_rect2i.md), color: [`Color`](class_color.md) )                                                                                                                                                        |
-| `void`                                        | [`fix_alpha_edges`](#class_image_method_fix_alpha_edges) ( )                                                                                                                                                                                                                |
-| `void`                                        | [`flip_x`](#class_image_method_flip_x) ( )                                                                                                                                                                                                                                  |
-| `void`                                        | [`flip_y`](#class_image_method_flip_y) ( )                                                                                                                                                                                                                                  |
-| [Error](#enum_@globalscope_error)             | [`generate_mipmaps`](#class_image_method_generate_mipmaps) ( renormalize: [`bool`](class_bool.md) = false )                                                                                                                                                                 |
-| [`PackedByteArray`](class_packedbytearray.md) | [`get_data`](#class_image_method_get_data) ( ) const[^const]                                                                                                                                                                                                                |
-| [`int`](class_int.md)                         | [`get_data_size`](#class_image_method_get_data_size) ( ) const[^const]                                                                                                                                                                                                      |
-| [Format](#enum_image_format)                  | [`get_format`](#class_image_method_get_format) ( ) const[^const]                                                                                                                                                                                                            |
-| [`int`](class_int.md)                         | [`get_height`](#class_image_method_get_height) ( ) const[^const]                                                                                                                                                                                                            |
-| [`int`](class_int.md)                         | [`get_mipmap_count`](#class_image_method_get_mipmap_count) ( ) const[^const]                                                                                                                                                                                                |
-| [`int`](class_int.md)                         | [`get_mipmap_offset`](#class_image_method_get_mipmap_offset) ( mipmap: [`int`](class_int.md) ) const[^const]                                                                                                                                                                |
-| [`Color`](class_color.md)                     | [`get_pixel`](#class_image_method_get_pixel) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]                                                                                                                                                           |
-| [`Color`](class_color.md)                     | [`get_pixelv`](#class_image_method_get_pixelv) ( point: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                                     |
-| [`Image`](class_image.md)                     | [`get_region`](#class_image_method_get_region) ( region: [`Rect2i`](class_rect2i.md) ) const[^const]                                                                                                                                                                        |
-| [`Vector2i`](class_vector2i.md)               | [`get_size`](#class_image_method_get_size) ( ) const[^const]                                                                                                                                                                                                                |
-| [`Rect2i`](class_rect2i.md)                   | [`get_used_rect`](#class_image_method_get_used_rect) ( ) const[^const]                                                                                                                                                                                                      |
-| [`int`](class_int.md)                         | [`get_width`](#class_image_method_get_width) ( ) const[^const]                                                                                                                                                                                                              |
-| [`bool`](class_bool.md)                       | [`has_mipmaps`](#class_image_method_has_mipmaps) ( ) const[^const]                                                                                                                                                                                                          |
-| [`bool`](class_bool.md)                       | [`is_compressed`](#class_image_method_is_compressed) ( ) const[^const]                                                                                                                                                                                                      |
-| [`bool`](class_bool.md)                       | [`is_empty`](#class_image_method_is_empty) ( ) const[^const]                                                                                                                                                                                                                |
-| [`bool`](class_bool.md)                       | [`is_invisible`](#class_image_method_is_invisible) ( ) const[^const]                                                                                                                                                                                                        |
-| [Error](#enum_@globalscope_error)             | [`load`](#class_image_method_load) ( path: [`String`](class_string.md) )                                                                                                                                                                                                    |
-| [Error](#enum_@globalscope_error)             | [`load_bmp_from_buffer`](#class_image_method_load_bmp_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
-| [`Image`](class_image.md)                     | [`load_from_file`](#class_image_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                                                                                                                                                                |
-| [Error](#enum_@globalscope_error)             | [`load_jpg_from_buffer`](#class_image_method_load_jpg_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
-| [Error](#enum_@globalscope_error)             | [`load_ktx_from_buffer`](#class_image_method_load_ktx_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
-| [Error](#enum_@globalscope_error)             | [`load_png_from_buffer`](#class_image_method_load_png_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
-| [Error](#enum_@globalscope_error)             | [`load_svg_from_buffer`](#class_image_method_load_svg_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md), scale: [`float`](class_float.md) = 1.0 )                                                                                                        |
-| [Error](#enum_@globalscope_error)             | [`load_svg_from_string`](#class_image_method_load_svg_from_string) ( svg_str: [`String`](class_string.md), scale: [`float`](class_float.md) = 1.0 )                                                                                                                         |
-| [Error](#enum_@globalscope_error)             | [`load_tga_from_buffer`](#class_image_method_load_tga_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
-| [Error](#enum_@globalscope_error)             | [`load_webp_from_buffer`](#class_image_method_load_webp_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                              |
-| `void`                                        | [`normal_map_to_xy`](#class_image_method_normal_map_to_xy) ( )                                                                                                                                                                                                              |
-| `void`                                        | [`premultiply_alpha`](#class_image_method_premultiply_alpha) ( )                                                                                                                                                                                                            |
-| `void`                                        | [`resize`](#class_image_method_resize) ( width: [`int`](class_int.md), height: [`int`](class_int.md), interpolation: [Interpolation](#enum_image_interpolation) = 1 )                                                                                                       |
-| `void`                                        | [`resize_to_po2`](#class_image_method_resize_to_po2) ( square: [`bool`](class_bool.md) = false, interpolation: [Interpolation](#enum_image_interpolation) = 1 )                                                                                                             |
-| [`Image`](class_image.md)                     | [`rgbe_to_srgb`](#class_image_method_rgbe_to_srgb) ( )                                                                                                                                                                                                                      |
-| `void`                                        | [`rotate_90`](#class_image_method_rotate_90) ( direction: [ClockDirection](#enum_@globalscope_clockdirection) )                                                                                                                                                             |
-| `void`                                        | [`rotate_180`](#class_image_method_rotate_180) ( )                                                                                                                                                                                                                          |
-| [Error](#enum_@globalscope_error)             | [`save_exr`](#class_image_method_save_exr) ( path: [`String`](class_string.md), grayscale: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                  |
-| [`PackedByteArray`](class_packedbytearray.md) | [`save_exr_to_buffer`](#class_image_method_save_exr_to_buffer) ( grayscale: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                                 |
-| [Error](#enum_@globalscope_error)             | [`save_jpg`](#class_image_method_save_jpg) ( path: [`String`](class_string.md), quality: [`float`](class_float.md) = 0.75 ) const[^const]                                                                                                                                   |
-| [`PackedByteArray`](class_packedbytearray.md) | [`save_jpg_to_buffer`](#class_image_method_save_jpg_to_buffer) ( quality: [`float`](class_float.md) = 0.75 ) const[^const]                                                                                                                                                  |
-| [Error](#enum_@globalscope_error)             | [`save_png`](#class_image_method_save_png) ( path: [`String`](class_string.md) ) const[^const]                                                                                                                                                                              |
-| [`PackedByteArray`](class_packedbytearray.md) | [`save_png_to_buffer`](#class_image_method_save_png_to_buffer) ( ) const[^const]                                                                                                                                                                                            |
-| [Error](#enum_@globalscope_error)             | [`save_webp`](#class_image_method_save_webp) ( path: [`String`](class_string.md), lossy: [`bool`](class_bool.md) = false, quality: [`float`](class_float.md) = 0.75 ) const[^const]                                                                                         |
-| [`PackedByteArray`](class_packedbytearray.md) | [`save_webp_to_buffer`](#class_image_method_save_webp_to_buffer) ( lossy: [`bool`](class_bool.md) = false, quality: [`float`](class_float.md) = 0.75 ) const[^const]                                                                                                        |
-| `void`                                        | [`set_data`](#class_image_method_set_data) ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format), data: [`PackedByteArray`](class_packedbytearray.md) )                                 |
-| `void`                                        | [`set_pixel`](#class_image_method_set_pixel) ( x: [`int`](class_int.md), y: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                                       |
-| `void`                                        | [`set_pixelv`](#class_image_method_set_pixelv) ( point: [`Vector2i`](class_vector2i.md), color: [`Color`](class_color.md) )                                                                                                                                                 |
-| `void`                                        | [`shrink_x2`](#class_image_method_shrink_x2) ( )                                                                                                                                                                                                                            |
-| `void`                                        | [`srgb_to_linear`](#class_image_method_srgb_to_linear) ( )                                                                                                                                                                                                                  |
+| `void`                                        | [`adjust_bcs`](class_image.md#class_image_method_adjust_bcs) ( brightness: [`float`](class_float.md), contrast: [`float`](class_float.md), saturation: [`float`](class_float.md) )                                                                                                        |
+| `void`                                        | [`blend_rect`](class_image.md#class_image_method_blend_rect) ( src: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                                                              |
+| `void`                                        | [`blend_rect_mask`](class_image.md#class_image_method_blend_rect_mask) ( src: [`Image`](class_image.md), mask: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                   |
+| `void`                                        | [`blit_rect`](class_image.md#class_image_method_blit_rect) ( src: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                                                                |
+| `void`                                        | [`blit_rect_mask`](class_image.md#class_image_method_blit_rect_mask) ( src: [`Image`](class_image.md), mask: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                     |
+| `void`                                        | [`bump_map_to_normal_map`](class_image.md#class_image_method_bump_map_to_normal_map) ( bump_scale: [`float`](class_float.md) = 1.0 )                                                                                                                                                      |
+| `void`                                        | [`clear_mipmaps`](class_image.md#class_image_method_clear_mipmaps) ( )                                                                                                                                                                                                                    |
+| [Error](#enum_@globalscope_error)             | [`compress`](class_image.md#class_image_method_compress) ( mode: [CompressMode](#enum_image_compressmode), source: [CompressSource](#enum_image_compresssource) = 0, astc_format: [ASTCFormat](#enum_image_astcformat) = 0 )                                                              |
+| [Error](#enum_@globalscope_error)             | [`compress_from_channels`](class_image.md#class_image_method_compress_from_channels) ( mode: [CompressMode](#enum_image_compressmode), channels: [UsedChannels](#enum_image_usedchannels), astc_format: [ASTCFormat](#enum_image_astcformat) = 0 )                                        |
+| [`Dictionary`](class_dictionary.md)           | [`compute_image_metrics`](class_image.md#class_image_method_compute_image_metrics) ( compared_image: [`Image`](class_image.md), use_luma: [`bool`](class_bool.md) )                                                                                                                       |
+| `void`                                        | [`convert`](class_image.md#class_image_method_convert) ( format: [Format](#enum_image_format) )                                                                                                                                                                                           |
+| `void`                                        | [`copy_from`](class_image.md#class_image_method_copy_from) ( src: [`Image`](class_image.md) )                                                                                                                                                                                             |
+| [`Image`](class_image.md)                     | [`create`](class_image.md#class_image_method_create) ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format) ) static[^static]                                                                          |
+| [`Image`](class_image.md)                     | [`create_empty`](class_image.md#class_image_method_create_empty) ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format) ) static[^static]                                                              |
+| [`Image`](class_image.md)                     | [`create_from_data`](class_image.md#class_image_method_create_from_data) ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format), data: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
+| `void`                                        | [`crop`](class_image.md#class_image_method_crop) ( width: [`int`](class_int.md), height: [`int`](class_int.md) )                                                                                                                                                                          |
+| [Error](#enum_@globalscope_error)             | [`decompress`](class_image.md#class_image_method_decompress) ( )                                                                                                                                                                                                                          |
+| [AlphaMode](#enum_image_alphamode)            | [`detect_alpha`](class_image.md#class_image_method_detect_alpha) ( ) const[^const]                                                                                                                                                                                                        |
+| [UsedChannels](#enum_image_usedchannels)      | [`detect_used_channels`](class_image.md#class_image_method_detect_used_channels) ( source: [CompressSource](#enum_image_compresssource) = 0 ) const[^const]                                                                                                                               |
+| `void`                                        | [`fill`](class_image.md#class_image_method_fill) ( color: [`Color`](class_color.md) )                                                                                                                                                                                                     |
+| `void`                                        | [`fill_rect`](class_image.md#class_image_method_fill_rect) ( rect: [`Rect2i`](class_rect2i.md), color: [`Color`](class_color.md) )                                                                                                                                                        |
+| `void`                                        | [`fix_alpha_edges`](class_image.md#class_image_method_fix_alpha_edges) ( )                                                                                                                                                                                                                |
+| `void`                                        | [`flip_x`](class_image.md#class_image_method_flip_x) ( )                                                                                                                                                                                                                                  |
+| `void`                                        | [`flip_y`](class_image.md#class_image_method_flip_y) ( )                                                                                                                                                                                                                                  |
+| [Error](#enum_@globalscope_error)             | [`generate_mipmaps`](class_image.md#class_image_method_generate_mipmaps) ( renormalize: [`bool`](class_bool.md) = false )                                                                                                                                                                 |
+| [`PackedByteArray`](class_packedbytearray.md) | [`get_data`](class_image.md#class_image_method_get_data) ( ) const[^const]                                                                                                                                                                                                                |
+| [`int`](class_int.md)                         | [`get_data_size`](class_image.md#class_image_method_get_data_size) ( ) const[^const]                                                                                                                                                                                                      |
+| [Format](#enum_image_format)                  | [`get_format`](class_image.md#class_image_method_get_format) ( ) const[^const]                                                                                                                                                                                                            |
+| [`int`](class_int.md)                         | [`get_height`](class_image.md#class_image_method_get_height) ( ) const[^const]                                                                                                                                                                                                            |
+| [`int`](class_int.md)                         | [`get_mipmap_count`](class_image.md#class_image_method_get_mipmap_count) ( ) const[^const]                                                                                                                                                                                                |
+| [`int`](class_int.md)                         | [`get_mipmap_offset`](class_image.md#class_image_method_get_mipmap_offset) ( mipmap: [`int`](class_int.md) ) const[^const]                                                                                                                                                                |
+| [`Color`](class_color.md)                     | [`get_pixel`](class_image.md#class_image_method_get_pixel) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]                                                                                                                                                           |
+| [`Color`](class_color.md)                     | [`get_pixelv`](class_image.md#class_image_method_get_pixelv) ( point: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                                     |
+| [`Image`](class_image.md)                     | [`get_region`](class_image.md#class_image_method_get_region) ( region: [`Rect2i`](class_rect2i.md) ) const[^const]                                                                                                                                                                        |
+| [`Vector2i`](class_vector2i.md)               | [`get_size`](class_image.md#class_image_method_get_size) ( ) const[^const]                                                                                                                                                                                                                |
+| [`Rect2i`](class_rect2i.md)                   | [`get_used_rect`](class_image.md#class_image_method_get_used_rect) ( ) const[^const]                                                                                                                                                                                                      |
+| [`int`](class_int.md)                         | [`get_width`](class_image.md#class_image_method_get_width) ( ) const[^const]                                                                                                                                                                                                              |
+| [`bool`](class_bool.md)                       | [`has_mipmaps`](class_image.md#class_image_method_has_mipmaps) ( ) const[^const]                                                                                                                                                                                                          |
+| [`bool`](class_bool.md)                       | [`is_compressed`](class_image.md#class_image_method_is_compressed) ( ) const[^const]                                                                                                                                                                                                      |
+| [`bool`](class_bool.md)                       | [`is_empty`](class_image.md#class_image_method_is_empty) ( ) const[^const]                                                                                                                                                                                                                |
+| [`bool`](class_bool.md)                       | [`is_invisible`](class_image.md#class_image_method_is_invisible) ( ) const[^const]                                                                                                                                                                                                        |
+| [Error](#enum_@globalscope_error)             | [`load`](class_image.md#class_image_method_load) ( path: [`String`](class_string.md) )                                                                                                                                                                                                    |
+| [Error](#enum_@globalscope_error)             | [`load_bmp_from_buffer`](class_image.md#class_image_method_load_bmp_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
+| [`Image`](class_image.md)                     | [`load_from_file`](class_image.md#class_image_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                                                                                                                                                                |
+| [Error](#enum_@globalscope_error)             | [`load_jpg_from_buffer`](class_image.md#class_image_method_load_jpg_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
+| [Error](#enum_@globalscope_error)             | [`load_ktx_from_buffer`](class_image.md#class_image_method_load_ktx_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
+| [Error](#enum_@globalscope_error)             | [`load_png_from_buffer`](class_image.md#class_image_method_load_png_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
+| [Error](#enum_@globalscope_error)             | [`load_svg_from_buffer`](class_image.md#class_image_method_load_svg_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md), scale: [`float`](class_float.md) = 1.0 )                                                                                                        |
+| [Error](#enum_@globalscope_error)             | [`load_svg_from_string`](class_image.md#class_image_method_load_svg_from_string) ( svg_str: [`String`](class_string.md), scale: [`float`](class_float.md) = 1.0 )                                                                                                                         |
+| [Error](#enum_@globalscope_error)             | [`load_tga_from_buffer`](class_image.md#class_image_method_load_tga_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
+| [Error](#enum_@globalscope_error)             | [`load_webp_from_buffer`](class_image.md#class_image_method_load_webp_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                              |
+| `void`                                        | [`normal_map_to_xy`](class_image.md#class_image_method_normal_map_to_xy) ( )                                                                                                                                                                                                              |
+| `void`                                        | [`premultiply_alpha`](class_image.md#class_image_method_premultiply_alpha) ( )                                                                                                                                                                                                            |
+| `void`                                        | [`resize`](class_image.md#class_image_method_resize) ( width: [`int`](class_int.md), height: [`int`](class_int.md), interpolation: [Interpolation](#enum_image_interpolation) = 1 )                                                                                                       |
+| `void`                                        | [`resize_to_po2`](class_image.md#class_image_method_resize_to_po2) ( square: [`bool`](class_bool.md) = false, interpolation: [Interpolation](#enum_image_interpolation) = 1 )                                                                                                             |
+| [`Image`](class_image.md)                     | [`rgbe_to_srgb`](class_image.md#class_image_method_rgbe_to_srgb) ( )                                                                                                                                                                                                                      |
+| `void`                                        | [`rotate_90`](class_image.md#class_image_method_rotate_90) ( direction: [ClockDirection](#enum_@globalscope_clockdirection) )                                                                                                                                                             |
+| `void`                                        | [`rotate_180`](class_image.md#class_image_method_rotate_180) ( )                                                                                                                                                                                                                          |
+| [Error](#enum_@globalscope_error)             | [`save_exr`](class_image.md#class_image_method_save_exr) ( path: [`String`](class_string.md), grayscale: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                  |
+| [`PackedByteArray`](class_packedbytearray.md) | [`save_exr_to_buffer`](class_image.md#class_image_method_save_exr_to_buffer) ( grayscale: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                                 |
+| [Error](#enum_@globalscope_error)             | [`save_jpg`](class_image.md#class_image_method_save_jpg) ( path: [`String`](class_string.md), quality: [`float`](class_float.md) = 0.75 ) const[^const]                                                                                                                                   |
+| [`PackedByteArray`](class_packedbytearray.md) | [`save_jpg_to_buffer`](class_image.md#class_image_method_save_jpg_to_buffer) ( quality: [`float`](class_float.md) = 0.75 ) const[^const]                                                                                                                                                  |
+| [Error](#enum_@globalscope_error)             | [`save_png`](class_image.md#class_image_method_save_png) ( path: [`String`](class_string.md) ) const[^const]                                                                                                                                                                              |
+| [`PackedByteArray`](class_packedbytearray.md) | [`save_png_to_buffer`](class_image.md#class_image_method_save_png_to_buffer) ( ) const[^const]                                                                                                                                                                                            |
+| [Error](#enum_@globalscope_error)             | [`save_webp`](class_image.md#class_image_method_save_webp) ( path: [`String`](class_string.md), lossy: [`bool`](class_bool.md) = false, quality: [`float`](class_float.md) = 0.75 ) const[^const]                                                                                         |
+| [`PackedByteArray`](class_packedbytearray.md) | [`save_webp_to_buffer`](class_image.md#class_image_method_save_webp_to_buffer) ( lossy: [`bool`](class_bool.md) = false, quality: [`float`](class_float.md) = 0.75 ) const[^const]                                                                                                        |
+| `void`                                        | [`set_data`](class_image.md#class_image_method_set_data) ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format), data: [`PackedByteArray`](class_packedbytearray.md) )                                 |
+| `void`                                        | [`set_pixel`](class_image.md#class_image_method_set_pixel) ( x: [`int`](class_int.md), y: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                                       |
+| `void`                                        | [`set_pixelv`](class_image.md#class_image_method_set_pixelv) ( point: [`Vector2i`](class_vector2i.md), color: [`Color`](class_color.md) )                                                                                                                                                 |
+| `void`                                        | [`shrink_x2`](class_image.md#class_image_method_shrink_x2) ( )                                                                                                                                                                                                                            |
+| `void`                                        | [`srgb_to_linear`](class_image.md#class_image_method_srgb_to_linear) ( )                                                                                                                                                                                                                  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -331,13 +331,13 @@ Texture format that uses [*BPTC*](https://www.khronos.org/opengl/wiki/BPTC_Textu
 
 [Format](#enum_image_format) **FORMAT_ETC2_RA_AS_RG** = ``33``
 
-[*Ericsson Texture Compression format 2*](https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC) (`RGBA8` variant), which compresses RA data and interprets it as two channels (red and green). See also [`FORMAT_ETC2_RGBA8`](#class_image_constant_format_etc2_rgba8).
+[*Ericsson Texture Compression format 2*](https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC) (`RGBA8` variant), which compresses RA data and interprets it as two channels (red and green). See also [`FORMAT_ETC2_RGBA8`](class_image.md#class_image_constant_format_etc2_rgba8).
 
 <div id="_class_image_constant_format_dxt5_ra_as_rg"></div>
 
 [Format](#enum_image_format) **FORMAT_DXT5_RA_AS_RG** = ``34``
 
-The [*S3TC*](https://en.wikipedia.org/wiki/S3_Texture_Compression) texture format also known as Block Compression 3 or BC3, which compresses RA data and interprets it as two channels (red and green). See also [`FORMAT_DXT5`](#class_image_constant_format_dxt5).
+The [*S3TC*](https://en.wikipedia.org/wiki/S3_Texture_Compression) texture format also known as Block Compression 3 or BC3, which compresses RA data and interprets it as two channels (red and green). See also [`FORMAT_DXT5`](class_image.md#class_image_constant_format_dxt5).
 
 <div id="_class_image_constant_format_astc_4x4"></div>
 
@@ -349,7 +349,7 @@ The [*S3TC*](https://en.wikipedia.org/wiki/S3_Texture_Compression) texture forma
 
 [Format](#enum_image_format) **FORMAT_ASTC_4x4_HDR** = ``36``
 
-Same format as [`FORMAT_ASTC_4x4`](#class_image_constant_format_astc_4x4), but with the hint to let the GPU know it is used for HDR.
+Same format as [`FORMAT_ASTC_4x4`](class_image.md#class_image_constant_format_astc_4x4), but with the hint to let the GPU know it is used for HDR.
 
 <div id="_class_image_constant_format_astc_8x8"></div>
 
@@ -361,7 +361,7 @@ Same format as [`FORMAT_ASTC_4x4`](#class_image_constant_format_astc_4x4), but w
 
 [Format](#enum_image_format) **FORMAT_ASTC_8x8_HDR** = ``38``
 
-Same format as [`FORMAT_ASTC_8x8`](#class_image_constant_format_astc_8x8), but with the hint to let the GPU know it is used for HDR.
+Same format as [`FORMAT_ASTC_8x8`](class_image.md#class_image_constant_format_astc_8x8), but with the hint to let the GPU know it is used for HDR.
 
 <div id="_class_image_constant_format_max"></div>
 
@@ -387,13 +387,13 @@ Performs nearest-neighbor interpolation. If the image is resized, it will be pix
 
 [Interpolation](#enum_image_interpolation) **INTERPOLATE_BILINEAR** = ``1``
 
-Performs bilinear interpolation. If the image is resized, it will be blurry. This mode is faster than [`INTERPOLATE_CUBIC`](#class_image_constant_interpolate_cubic), but it results in lower quality.
+Performs bilinear interpolation. If the image is resized, it will be blurry. This mode is faster than [`INTERPOLATE_CUBIC`](class_image.md#class_image_constant_interpolate_cubic), but it results in lower quality.
 
 <div id="_class_image_constant_interpolate_cubic"></div>
 
 [Interpolation](#enum_image_interpolation) **INTERPOLATE_CUBIC** = ``2``
 
-Performs cubic interpolation. If the image is resized, it will be blurry. This mode often gives better results compared to [`INTERPOLATE_BILINEAR`](#class_image_constant_interpolate_bilinear), at the cost of being slower.
+Performs cubic interpolation. If the image is resized, it will be blurry. This mode often gives better results compared to [`INTERPOLATE_BILINEAR`](class_image.md#class_image_constant_interpolate_bilinear), at the cost of being slower.
 
 <div id="_class_image_constant_interpolate_trilinear"></div>
 
@@ -401,11 +401,11 @@ Performs cubic interpolation. If the image is resized, it will be blurry. This m
 
 Performs bilinear separately on the two most-suited mipmap levels, then linearly interpolates between them.
 
-It's slower than [`INTERPOLATE_BILINEAR`](#class_image_constant_interpolate_bilinear), but produces higher-quality results with far fewer aliasing artifacts.
+It's slower than [`INTERPOLATE_BILINEAR`](class_image.md#class_image_constant_interpolate_bilinear), but produces higher-quality results with far fewer aliasing artifacts.
 
 If the image does not have mipmaps, they will be generated and used internally, but no mipmaps will be generated on the resulting image.
 
- **Note:** If you intend to scale multiple copies of the original image, it's better to call [`generate_mipmaps`](#class_image_method_generate_mipmaps)] on it in advance, to avoid wasting processing power in generating them again and again.
+ **Note:** If you intend to scale multiple copies of the original image, it's better to call [`generate_mipmaps`](class_image.md#class_image_method_generate_mipmaps)] on it in advance, to avoid wasting processing power in generating them again and again.
 
 On the other hand, if the image already has mipmaps, they will be used, and a new set will be generated for the resulting image.
 
@@ -615,7 +615,7 @@ Holds all the image's color data in a given format. See [Format](#enum_image_for
 
 `void` **adjust_bcs** ( brightness: [`float`](class_float.md), contrast: [`float`](class_float.md), saturation: [`float`](class_float.md) )<div id="class_image_method_adjust_bcs"></div>
 
-Adjusts this image's `brightness`, `contrast`, and `saturation` by the given values. Does not work if the image is compressed (see [`is_compressed`](#class_image_method_is_compressed)).
+Adjusts this image's `brightness`, `contrast`, and `saturation` by the given values. Does not work if the image is compressed (see [`is_compressed`](class_image.md#class_image_method_is_compressed)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -701,7 +701,7 @@ For ASTC compression, the `astc_format` parameter must be supplied.
 
 Compresses the image to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.
 
-This is an alternative to [`compress`](#class_image_method_compress) that lets the user supply the channels used in order for the compressor to pick the best DXT and ETC2 formats. For other formats (non DXT or ETC2), this argument is ignored.
+This is an alternative to [`compress`](class_image.md#class_image_method_compress) that lets the user supply the channels used in order for the compressor to pick the best DXT and ETC2 formats. For other formats (non DXT or ETC2), this argument is ignored.
 
 For ASTC compression, the `astc_format` parameter must be supplied.
 
@@ -745,9 +745,9 @@ Copies `src` image to this image.
 
 [`Image`](class_image.md) **create** ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format) ) static[^static]<div id="class_image_method_create"></div>
 
-**已弃用：** Use [`create_empty`](#class_image_method_create_empty).
+**已弃用：** Use [`create_empty`](class_image.md#class_image_method_create_empty).
 
-Creates an empty image of given size and format. See [Format](#enum_image_format) constants. If `use_mipmaps` is `true`, then generate mipmaps for this image. See the [`generate_mipmaps`](#class_image_method_generate_mipmaps).
+Creates an empty image of given size and format. See [Format](#enum_image_format) constants. If `use_mipmaps` is `true`, then generate mipmaps for this image. See the [`generate_mipmaps`](class_image.md#class_image_method_generate_mipmaps).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -757,7 +757,7 @@ Creates an empty image of given size and format. See [Format](#enum_image_format
 
 [`Image`](class_image.md) **create_empty** ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format) ) static[^static]<div id="class_image_method_create_empty"></div>
 
-Creates an empty image of given size and format. See [Format](#enum_image_format) constants. If `use_mipmaps` is `true`, then generate mipmaps for this image. See the [`generate_mipmaps`](#class_image_method_generate_mipmaps).
+Creates an empty image of given size and format. See [Format](#enum_image_format) constants. If `use_mipmaps` is `true`, then generate mipmaps for this image. See the [`generate_mipmaps`](class_image.md#class_image_method_generate_mipmaps).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -767,7 +767,7 @@ Creates an empty image of given size and format. See [Format](#enum_image_format
 
 [`Image`](class_image.md) **create_from_data** ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format), data: [`PackedByteArray`](class_packedbytearray.md) ) static[^static]<div id="class_image_method_create_from_data"></div>
 
-Creates a new image of given size and format. See [Format](#enum_image_format) constants. Fills the image with the given raw data. If `use_mipmaps` is `true` then loads mipmaps for this image from `data`. See [`generate_mipmaps`](#class_image_method_generate_mipmaps).
+Creates a new image of given size and format. See [Format](#enum_image_format) constants. Fills the image with the given raw data. If `use_mipmaps` is `true` then loads mipmaps for this image from `data`. See [`generate_mipmaps`](class_image.md#class_image_method_generate_mipmaps).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -787,7 +787,7 @@ Crops the image to the given `width` and `height`. If the specified size is larg
 
 [Error](#enum_@globalscope_error) **decompress** ( )<div id="class_image_method_decompress"></div>
 
-Decompresses the image if it is VRAM compressed in a supported format. Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if the format is supported, otherwise [`@GlobalScope.ERR_UNAVAILABLE`](#class_@globalscope_constant_err_unavailable).
+Decompresses the image if it is VRAM compressed in a supported format. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if the format is supported, otherwise [`@GlobalScope.ERR_UNAVAILABLE`](class_@globalscope.md#class_@globalscope_constant_err_unavailable).
 
  **Note:** The following formats can be decompressed: DXT, RGTC, BPTC. The formats ETC1 and ETC2 are not supported.
 
@@ -799,7 +799,7 @@ Decompresses the image if it is VRAM compressed in a supported format. Returns [
 
 [AlphaMode](#enum_image_alphamode) **detect_alpha** ( ) const[^const]<div id="class_image_method_detect_alpha"></div>
 
-Returns [`ALPHA_BLEND`](#class_image_constant_alpha_blend) if the image has data for alpha values. Returns [`ALPHA_BIT`](#class_image_constant_alpha_bit) if all the alpha values are stored in a single bit. Returns [`ALPHA_NONE`](#class_image_constant_alpha_none) if no data for alpha values is found.
+Returns [`ALPHA_BLEND`](class_image.md#class_image_constant_alpha_blend) if the image has data for alpha values. Returns [`ALPHA_BIT`](class_image.md#class_image_constant_alpha_bit) if all the alpha values are stored in a single bit. Returns [`ALPHA_NONE`](class_image.md#class_image_constant_alpha_none) if no data for alpha values is found.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -871,7 +871,7 @@ Flips the image vertically.
 
 Generates mipmaps for the image. Mipmaps are precalculated lower-resolution copies of the image that are automatically used if the image needs to be scaled down when rendered. They help improve image quality and performance when rendering. This method returns an error if the image is compressed, in a custom format, or if the image's width/height is `0`. Enabling `renormalize` when generating mipmaps for normal map textures will make sure all resulting vector values are normalized.
 
-It is possible to check if the image has mipmaps by calling [`has_mipmaps`](#class_image_method_has_mipmaps) or [`get_mipmap_count`](#class_image_method_get_mipmap_count). Calling [`generate_mipmaps`](#class_image_method_generate_mipmaps) on an image that already has mipmaps will replace existing mipmaps in the image.
+It is possible to check if the image has mipmaps by calling [`has_mipmaps`](class_image.md#class_image_method_has_mipmaps) or [`get_mipmap_count`](class_image.md#class_image_method_get_mipmap_count). Calling [`generate_mipmaps`](class_image.md#class_image_method_generate_mipmaps) on an image that already has mipmaps will replace existing mipmaps in the image.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -931,7 +931,7 @@ Returns the number of mipmap levels or 0 if the image has no mipmaps. The larges
 
 [`int`](class_int.md) **get_mipmap_offset** ( mipmap: [`int`](class_int.md) ) const[^const]<div id="class_image_method_get_mipmap_offset"></div>
 
-Returns the offset where the image's mipmap with index `mipmap` is stored in the [`data`](#class_image_property_data) dictionary.
+Returns the offset where the image's mipmap with index `mipmap` is stored in the [`data`](class_image.md#class_image_property_data) dictionary.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -943,7 +943,7 @@ Returns the offset where the image's mipmap with index `mipmap` is stored in the
 
 Returns the color of the pixel at `(x, y)`.
 
-This is the same as [`get_pixelv`](#class_image_method_get_pixelv), but with two integer arguments instead of a [`Vector2i`](class_vector2i.md) argument.
+This is the same as [`get_pixelv`](class_image.md#class_image_method_get_pixelv), but with two integer arguments instead of a [`Vector2i`](class_vector2i.md) argument.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -955,7 +955,7 @@ This is the same as [`get_pixelv`](#class_image_method_get_pixelv), but with two
 
 Returns the color of the pixel at `point`.
 
-This is the same as [`get_pixel`](#class_image_method_get_pixel), but with a [`Vector2i`](class_vector2i.md) argument instead of two integer arguments.
+This is the same as [`get_pixel`](class_image.md#class_image_method_get_pixel), but with a [`Vector2i`](class_vector2i.md) argument instead of two integer arguments.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1175,7 +1175,7 @@ Converts the image's data to represent coordinates on a 3D plane. This is used w
 
 `void` **premultiply_alpha** ( )<div id="class_image_method_premultiply_alpha"></div>
 
-Multiplies color values with alpha values. Resulting color values for a pixel are `(color * alpha)/256`. See also [`CanvasItemMaterial.blend_mode`](#class_canvasitemmaterial_property_blend_mode).
+Multiplies color values with alpha values. Resulting color values for a pixel are `(color * alpha)/256`. See also [`CanvasItemMaterial.blend_mode`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_blend_mode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1235,9 +1235,9 @@ Rotates the image by `180` degrees. The width and height of the image must be gr
 
 [Error](#enum_@globalscope_error) **save_exr** ( path: [`String`](class_string.md), grayscale: [`bool`](class_bool.md) = false ) const[^const]<div id="class_image_method_save_exr"></div>
 
-Saves the image as an EXR file to `path`. If `grayscale` is `true` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return [`@GlobalScope.ERR_UNAVAILABLE`](#class_@globalscope_constant_err_unavailable) if Godot was compiled without the TinyEXR module.
+Saves the image as an EXR file to `path`. If `grayscale` is `true` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return [`@GlobalScope.ERR_UNAVAILABLE`](class_@globalscope.md#class_@globalscope_constant_err_unavailable) if Godot was compiled without the TinyEXR module.
 
- **Note:** The TinyEXR module is disabled in non-editor builds, which means [`save_exr`](#class_image_method_save_exr) will return [`@GlobalScope.ERR_UNAVAILABLE`](#class_@globalscope_constant_err_unavailable) when it is called from an exported project.
+ **Note:** The TinyEXR module is disabled in non-editor builds, which means [`save_exr`](class_image.md#class_image_method_save_exr) will return [`@GlobalScope.ERR_UNAVAILABLE`](class_@globalscope.md#class_@globalscope_constant_err_unavailable) when it is called from an exported project.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1249,7 +1249,7 @@ Saves the image as an EXR file to `path`. If `grayscale` is `true` and the image
 
 Saves the image as an EXR file to a byte array. If `grayscale` is `true` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return an empty byte array if Godot was compiled without the TinyEXR module.
 
- **Note:** The TinyEXR module is disabled in non-editor builds, which means [`save_exr`](#class_image_method_save_exr) will return an empty byte array when it is called from an exported project.
+ **Note:** The TinyEXR module is disabled in non-editor builds, which means [`save_exr`](class_image.md#class_image_method_save_exr) will return an empty byte array when it is called from an exported project.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1327,7 +1327,7 @@ Saves the image as a WebP (Web Picture) file to a byte array. By default it will
 
 `void` **set_data** ( width: [`int`](class_int.md), height: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), format: [Format](#enum_image_format), data: [`PackedByteArray`](class_packedbytearray.md) )<div id="class_image_method_set_data"></div>
 
-Overwrites data of an existing **Image**. Non-static equivalent of [`create_from_data`](#class_image_method_create_from_data).
+Overwrites data of an existing **Image**. Non-static equivalent of [`create_from_data`](class_image.md#class_image_method_create_from_data).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1363,7 +1363,7 @@ Sets the [`Color`](class_color.md) of the pixel at `(x, y)` to `color`.
 
 
 
-This is the same as [`set_pixelv`](#class_image_method_set_pixelv), but with a two integer arguments instead of a [`Vector2i`](class_vector2i.md) argument.
+This is the same as [`set_pixelv`](class_image.md#class_image_method_set_pixelv), but with a two integer arguments instead of a [`Vector2i`](class_vector2i.md) argument.
 
 
 
@@ -1403,7 +1403,7 @@ Sets the [`Color`](class_color.md) of the pixel at `point` to `color`.
 
 
 
-This is the same as [`set_pixel`](#class_image_method_set_pixel), but with a [`Vector2i`](class_vector2i.md) argument instead of two integer arguments.
+This is the same as [`set_pixel`](class_image.md#class_image_method_set_pixel), but with a [`Vector2i`](class_vector2i.md) argument instead of two integer arguments.
 
 
 

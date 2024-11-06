@@ -15,39 +15,39 @@ A physics body used to make bones in a [`Skeleton3D`](class_skeleton3d.md) react
 
 The **PhysicalBone3D** node is a physics body that can be used to make bones in a [`Skeleton3D`](class_skeleton3d.md) react to physics.
 
- **Note:** In order to detect physical bones with raycasts, the [`SkeletonModifier3D.active`](#class_skeletonmodifier3d_property_active) property of the parent [`PhysicalBoneSimulator3D`](class_physicalbonesimulator3d.md) must be `true` and the [`Skeleton3D`](class_skeleton3d.md)'s bone must be assigned to **PhysicalBone3D** correctly; it means that [`get_bone_id`](#class_physicalbone3d_method_get_bone_id) should return a valid id (`>= 0`).
+ **Note:** In order to detect physical bones with raycasts, the [`SkeletonModifier3D.active`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_property_active) property of the parent [`PhysicalBoneSimulator3D`](class_physicalbonesimulator3d.md) must be `true` and the [`Skeleton3D`](class_skeleton3d.md)'s bone must be assigned to **PhysicalBone3D** correctly; it means that [`get_bone_id`](class_physicalbone3d.md#class_physicalbone3d_method_get_bone_id) should return a valid id (`>= 0`).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                   | [`angular_damp`](#class_physicalbone3d_property_angular_damp)           | ``0.0``                                             |
-| [DampMode](#enum_physicalbone3d_dampmode)   | [`angular_damp_mode`](#class_physicalbone3d_property_angular_damp_mode) | ``0``                                               |
-| [`Vector3`](class_vector3.md)               | [`angular_velocity`](#class_physicalbone3d_property_angular_velocity)   | ``Vector3(0, 0, 0)``                                |
-| [`Transform3D`](class_transform3d.md)       | [`body_offset`](#class_physicalbone3d_property_body_offset)             | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
-| [`float`](class_float.md)                   | [`bounce`](#class_physicalbone3d_property_bounce)                       | ``0.0``                                             |
-| [`bool`](class_bool.md)                     | [`can_sleep`](#class_physicalbone3d_property_can_sleep)                 | ``true``                                            |
-| [`bool`](class_bool.md)                     | [`custom_integrator`](#class_physicalbone3d_property_custom_integrator) | ``false``                                           |
-| [`float`](class_float.md)                   | [`friction`](#class_physicalbone3d_property_friction)                   | ``1.0``                                             |
-| [`float`](class_float.md)                   | [`gravity_scale`](#class_physicalbone3d_property_gravity_scale)         | ``1.0``                                             |
-| [`Transform3D`](class_transform3d.md)       | [`joint_offset`](#class_physicalbone3d_property_joint_offset)           | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
-| [`Vector3`](class_vector3.md)               | [`joint_rotation`](#class_physicalbone3d_property_joint_rotation)       | ``Vector3(0, 0, 0)``                                |
-| [JointType](#enum_physicalbone3d_jointtype) | [`joint_type`](#class_physicalbone3d_property_joint_type)               | ``0``                                               |
-| [`float`](class_float.md)                   | [`linear_damp`](#class_physicalbone3d_property_linear_damp)             | ``0.0``                                             |
-| [DampMode](#enum_physicalbone3d_dampmode)   | [`linear_damp_mode`](#class_physicalbone3d_property_linear_damp_mode)   | ``0``                                               |
-| [`Vector3`](class_vector3.md)               | [`linear_velocity`](#class_physicalbone3d_property_linear_velocity)     | ``Vector3(0, 0, 0)``                                |
-| [`float`](class_float.md)                   | [`mass`](#class_physicalbone3d_property_mass)                           | ``1.0``                                             |
+| [`float`](class_float.md)                   | [`angular_damp`](class_physicalbone3d.md#class_physicalbone3d_property_angular_damp)           | ``0.0``                                             |
+| [DampMode](#enum_physicalbone3d_dampmode)   | [`angular_damp_mode`](class_physicalbone3d.md#class_physicalbone3d_property_angular_damp_mode) | ``0``                                               |
+| [`Vector3`](class_vector3.md)               | [`angular_velocity`](class_physicalbone3d.md#class_physicalbone3d_property_angular_velocity)   | ``Vector3(0, 0, 0)``                                |
+| [`Transform3D`](class_transform3d.md)       | [`body_offset`](class_physicalbone3d.md#class_physicalbone3d_property_body_offset)             | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
+| [`float`](class_float.md)                   | [`bounce`](class_physicalbone3d.md#class_physicalbone3d_property_bounce)                       | ``0.0``                                             |
+| [`bool`](class_bool.md)                     | [`can_sleep`](class_physicalbone3d.md#class_physicalbone3d_property_can_sleep)                 | ``true``                                            |
+| [`bool`](class_bool.md)                     | [`custom_integrator`](class_physicalbone3d.md#class_physicalbone3d_property_custom_integrator) | ``false``                                           |
+| [`float`](class_float.md)                   | [`friction`](class_physicalbone3d.md#class_physicalbone3d_property_friction)                   | ``1.0``                                             |
+| [`float`](class_float.md)                   | [`gravity_scale`](class_physicalbone3d.md#class_physicalbone3d_property_gravity_scale)         | ``1.0``                                             |
+| [`Transform3D`](class_transform3d.md)       | [`joint_offset`](class_physicalbone3d.md#class_physicalbone3d_property_joint_offset)           | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
+| [`Vector3`](class_vector3.md)               | [`joint_rotation`](class_physicalbone3d.md#class_physicalbone3d_property_joint_rotation)       | ``Vector3(0, 0, 0)``                                |
+| [JointType](#enum_physicalbone3d_jointtype) | [`joint_type`](class_physicalbone3d.md#class_physicalbone3d_property_joint_type)               | ``0``                                               |
+| [`float`](class_float.md)                   | [`linear_damp`](class_physicalbone3d.md#class_physicalbone3d_property_linear_damp)             | ``0.0``                                             |
+| [DampMode](#enum_physicalbone3d_dampmode)   | [`linear_damp_mode`](class_physicalbone3d.md#class_physicalbone3d_property_linear_damp_mode)   | ``0``                                               |
+| [`Vector3`](class_vector3.md)               | [`linear_velocity`](class_physicalbone3d.md#class_physicalbone3d_property_linear_velocity)     | ``Vector3(0, 0, 0)``                                |
+| [`float`](class_float.md)                   | [`mass`](class_physicalbone3d.md#class_physicalbone3d_property_mass)                           | ``1.0``                                             |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                  | [`_integrate_forces`](#class_physicalbone3d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual] |
-| `void`                  | [`apply_central_impulse`](#class_physicalbone3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                   |
-| `void`                  | [`apply_impulse`](#class_physicalbone3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )       |
-| [`int`](class_int.md)   | [`get_bone_id`](#class_physicalbone3d_method_get_bone_id) ( ) const[^const]                                                                                                |
-| [`bool`](class_bool.md) | [`get_simulate_physics`](#class_physicalbone3d_method_get_simulate_physics) ( )                                                                                            |
-| [`bool`](class_bool.md) | [`is_simulating_physics`](#class_physicalbone3d_method_is_simulating_physics) ( )                                                                                          |
+| `void`                  | [`_integrate_forces`](class_physicalbone3d.md#class_physicalbone3d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual] |
+| `void`                  | [`apply_central_impulse`](class_physicalbone3d.md#class_physicalbone3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                   |
+| `void`                  | [`apply_impulse`](class_physicalbone3d.md#class_physicalbone3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )       |
+| [`int`](class_int.md)   | [`get_bone_id`](class_physicalbone3d.md#class_physicalbone3d_method_get_bone_id) ( ) const[^const]                                                                                                |
+| [`bool`](class_bool.md) | [`get_simulate_physics`](class_physicalbone3d.md#class_physicalbone3d_method_get_simulate_physics) ( )                                                                                            |
+| [`bool`](class_bool.md) | [`is_simulating_physics`](class_physicalbone3d.md#class_physicalbone3d_method_is_simulating_physics) ( )                                                                                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -140,9 +140,9 @@ enum **JointType**: <div id="enum_physicalbone3d_jointtype"></div>
 - `void` **set_angular_damp** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_angular_damp** ( )
 
-Damps the body's rotation. By default, the body will use the **Default Angular Damp** in **Project > Project Settings > Physics > 3d** or any value override set by an [`Area3D`](class_area3d.md) the body is in. Depending on [`angular_damp_mode`](#class_physicalbone3d_property_angular_damp_mode), you can set [`angular_damp`](#class_physicalbone3d_property_angular_damp) to be added to or to replace the body's damping value.
+Damps the body's rotation. By default, the body will use the **Default Angular Damp** in **Project > Project Settings > Physics > 3d** or any value override set by an [`Area3D`](class_area3d.md) the body is in. Depending on [`angular_damp_mode`](class_physicalbone3d.md#class_physicalbone3d_property_angular_damp_mode), you can set [`angular_damp`](class_physicalbone3d.md#class_physicalbone3d_property_angular_damp) to be added to or to replace the body's damping value.
 
-See [`ProjectSettings.physics/3d/default_angular_damp`](#class_projectsettings_property_physics/3d/default_angular_damp) for more details about damping.
+See [`ProjectSettings.physics/3d/default_angular_damp`](class_projectsettings.md#class_projectsettings_property_physics/3d/default_angular_damp) for more details about damping.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -155,7 +155,7 @@ See [`ProjectSettings.physics/3d/default_angular_damp`](#class_projectsettings_p
 - `void` **set_angular_damp_mode** ( value: [DampMode](#enum_physicalbone3d_dampmode) )
 - [DampMode](#enum_physicalbone3d_dampmode) **get_angular_damp_mode** ( )
 
-Defines how [`angular_damp`](#class_physicalbone3d_property_angular_damp) is applied. See [DampMode](#enum_physicalbone3d_dampmode) for possible values.
+Defines how [`angular_damp`](class_physicalbone3d.md#class_physicalbone3d_property_angular_damp) is applied. See [DampMode](#enum_physicalbone3d_dampmode) for possible values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -196,7 +196,7 @@ Sets the body's transform.
 
 The body's bounciness. Values range from `0` (no bounce) to `1` (full bounciness).
 
- **Note:** Even with [`bounce`](#class_physicalbone3d_property_bounce) set to `1.0`, some energy will be lost over time due to linear and angular damping. To have a **PhysicalBone3D** that preserves all its energy over time, set [`bounce`](#class_physicalbone3d_property_bounce) to `1.0`, [`linear_damp_mode`](#class_physicalbone3d_property_linear_damp_mode) to [`DAMP_MODE_REPLACE`](#class_physicalbone3d_constant_damp_mode_replace), [`linear_damp`](#class_physicalbone3d_property_linear_damp) to `0.0`, [`angular_damp_mode`](#class_physicalbone3d_property_angular_damp_mode) to [`DAMP_MODE_REPLACE`](#class_physicalbone3d_constant_damp_mode_replace), and [`angular_damp`](#class_physicalbone3d_property_angular_damp) to `0.0`.
+ **Note:** Even with [`bounce`](class_physicalbone3d.md#class_physicalbone3d_property_bounce) set to `1.0`, some energy will be lost over time due to linear and angular damping. To have a **PhysicalBone3D** that preserves all its energy over time, set [`bounce`](class_physicalbone3d.md#class_physicalbone3d_property_bounce) to `1.0`, [`linear_damp_mode`](class_physicalbone3d.md#class_physicalbone3d_property_linear_damp_mode) to [`DAMP_MODE_REPLACE`](class_physicalbone3d.md#class_physicalbone3d_constant_damp_mode_replace), [`linear_damp`](class_physicalbone3d.md#class_physicalbone3d_property_linear_damp) to `0.0`, [`angular_damp_mode`](class_physicalbone3d.md#class_physicalbone3d_property_angular_damp_mode) to [`DAMP_MODE_REPLACE`](class_physicalbone3d.md#class_physicalbone3d_constant_damp_mode_replace), and [`angular_damp`](class_physicalbone3d.md#class_physicalbone3d_property_angular_damp) to `0.0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -222,9 +222,9 @@ If `true`, the body is deactivated when there is no movement, so it will not tak
 - `void` **set_use_custom_integrator** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_custom_integrator** ( )
 
-If `true`, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the [`_integrate_forces`](#class_physicalbone3d_private_method__integrate_forces) method, if that virtual method is overridden.
+If `true`, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the [`_integrate_forces`](class_physicalbone3d.md#class_physicalbone3d_private_method__integrate_forces) method, if that virtual method is overridden.
 
-Setting this property will call the method [`PhysicsServer3D.body_set_omit_force_integration`](#class_physicsserver3d_method_body_set_omit_force_integration) internally.
+Setting this property will call the method [`PhysicsServer3D.body_set_omit_force_integration`](class_physicsserver3d.md#class_physicsserver3d_method_body_set_omit_force_integration) internally.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -302,9 +302,9 @@ Sets the joint type. See [JointType](#enum_physicalbone3d_jointtype) for possibl
 - `void` **set_linear_damp** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_linear_damp** ( )
 
-Damps the body's movement. By default, the body will use the **Default Linear Damp** in **Project > Project Settings > Physics > 3d** or any value override set by an [`Area3D`](class_area3d.md) the body is in. Depending on [`linear_damp_mode`](#class_physicalbone3d_property_linear_damp_mode), you can set [`linear_damp`](#class_physicalbone3d_property_linear_damp) to be added to or to replace the body's damping value.
+Damps the body's movement. By default, the body will use the **Default Linear Damp** in **Project > Project Settings > Physics > 3d** or any value override set by an [`Area3D`](class_area3d.md) the body is in. Depending on [`linear_damp_mode`](class_physicalbone3d.md#class_physicalbone3d_property_linear_damp_mode), you can set [`linear_damp`](class_physicalbone3d.md#class_physicalbone3d_property_linear_damp) to be added to or to replace the body's damping value.
 
-See [`ProjectSettings.physics/3d/default_linear_damp`](#class_projectsettings_property_physics/3d/default_linear_damp) for more details about damping.
+See [`ProjectSettings.physics/3d/default_linear_damp`](class_projectsettings.md#class_projectsettings_property_physics/3d/default_linear_damp) for more details about damping.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -317,7 +317,7 @@ See [`ProjectSettings.physics/3d/default_linear_damp`](#class_projectsettings_pr
 - `void` **set_linear_damp_mode** ( value: [DampMode](#enum_physicalbone3d_dampmode) )
 - [DampMode](#enum_physicalbone3d_dampmode) **get_linear_damp_mode** ( )
 
-Defines how [`linear_damp`](#class_physicalbone3d_property_linear_damp) is applied. See [DampMode](#enum_physicalbone3d_dampmode) for possible values.
+Defines how [`linear_damp`](class_physicalbone3d.md#class_physicalbone3d_property_linear_damp) is applied. See [DampMode](#enum_physicalbone3d_dampmode) for possible values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -330,7 +330,7 @@ Defines how [`linear_damp`](#class_physicalbone3d_property_linear_damp) is appli
 - `void` **set_linear_velocity** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_linear_velocity** ( )
 
-The body's linear velocity in units per second. Can be used sporadically, but **don't set this every frame**, because physics may run in another thread and runs at a different granularity. Use [`_integrate_forces`](#class_physicalbone3d_private_method__integrate_forces) as your process loop for precise control of the body state.
+The body's linear velocity in units per second. Can be used sporadically, but **don't set this every frame**, because physics may run in another thread and runs at a different granularity. Use [`_integrate_forces`](class_physicalbone3d.md#class_physicalbone3d_private_method__integrate_forces) as your process loop for precise control of the body state.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -355,7 +355,7 @@ The body's mass.
 
 `void` **_integrate_forces** ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual]<div id="class_physicalbone3d_private_method__integrate_forces"></div>
 
-Called during physics processing, allowing you to read and safely modify the simulation state for the object. By default, it is called before the standard force integration, but the [`custom_integrator`](#class_physicalbone3d_property_custom_integrator) property allows you to disable the standard force integration and do fully custom force integration for a body.
+Called during physics processing, allowing you to read and safely modify the simulation state for the object. By default, it is called before the standard force integration, but the [`custom_integrator`](class_physicalbone3d.md#class_physicalbone3d_property_custom_integrator) property allows you to disable the standard force integration and do fully custom force integration for a body.
 
 <!-- rst-class:: classref-item-separator -->
 

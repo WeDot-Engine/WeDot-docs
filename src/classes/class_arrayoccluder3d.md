@@ -21,14 +21,14 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 |||
 |:-:|:--|
-| [`PackedInt32Array`](class_packedint32array.md)     | [`indices`](#class_arrayoccluder3d_property_indices)   | ``PackedInt32Array()``   |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`vertices`](#class_arrayoccluder3d_property_vertices) | ``PackedVector3Array()`` |
+| [`PackedInt32Array`](class_packedint32array.md)     | [`indices`](class_arrayoccluder3d.md#class_arrayoccluder3d_property_indices)   | ``PackedInt32Array()``   |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`vertices`](class_arrayoccluder3d.md#class_arrayoccluder3d_property_vertices) | ``PackedVector3Array()`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`set_arrays`](#class_arrayoccluder3d_method_set_arrays) ( vertices: [`PackedVector3Array`](class_packedvector3array.md), indices: [`PackedInt32Array`](class_packedint32array.md) ) |
+| `void` | [`set_arrays`](class_arrayoccluder3d.md#class_arrayoccluder3d_method_set_arrays) ( vertices: [`PackedVector3Array`](class_packedvector3array.md), indices: [`PackedInt32Array`](class_packedint32array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -43,9 +43,9 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 - `void` **set_indices** ( value: [`PackedInt32Array`](class_packedint32array.md) )
 - [`PackedInt32Array`](class_packedint32array.md) **get_indices** ( )
 
-The occluder's index position. Indices determine which points from the [`vertices`](#class_arrayoccluder3d_property_vertices) array should be drawn, and in which order.
+The occluder's index position. Indices determine which points from the [`vertices`](class_arrayoccluder3d.md#class_arrayoccluder3d_property_vertices) array should be drawn, and in which order.
 
- **Note:** The occluder is always updated after setting this value. If creating occluders procedurally, consider using [`set_arrays`](#class_arrayoccluder3d_method_set_arrays) instead to avoid updating the occluder twice when it's created.
+ **Note:** The occluder is always updated after setting this value. If creating occluders procedurally, consider using [`set_arrays`](class_arrayoccluder3d.md#class_arrayoccluder3d_method_set_arrays) instead to avoid updating the occluder twice when it's created.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedInt32Array`](class_packedint32array.md) for more details.
 
@@ -62,7 +62,7 @@ The occluder's index position. Indices determine which points from the [`vertice
 
 The occluder's vertex positions in local 3D coordinates.
 
- **Note:** The occluder is always updated after setting this value. If creating occluders procedurally, consider using [`set_arrays`](#class_arrayoccluder3d_method_set_arrays) instead to avoid updating the occluder twice when it's created.
+ **Note:** The occluder is always updated after setting this value. If creating occluders procedurally, consider using [`set_arrays`](class_arrayoccluder3d.md#class_arrayoccluder3d_method_set_arrays) instead to avoid updating the occluder twice when it's created.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedVector3Array`](class_packedvector3array.md) for more details.
 
@@ -76,7 +76,7 @@ The occluder's vertex positions in local 3D coordinates.
 
 `void` **set_arrays** ( vertices: [`PackedVector3Array`](class_packedvector3array.md), indices: [`PackedInt32Array`](class_packedint32array.md) )<div id="class_arrayoccluder3d_method_set_arrays"></div>
 
-Sets [`indices`](#class_arrayoccluder3d_property_indices) and [`vertices`](#class_arrayoccluder3d_property_vertices), while updating the final occluder only once after both values are set.
+Sets [`indices`](class_arrayoccluder3d.md#class_arrayoccluder3d_property_indices) and [`vertices`](class_arrayoccluder3d.md#class_arrayoccluder3d_property_vertices), while updating the final occluder only once after both values are set.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

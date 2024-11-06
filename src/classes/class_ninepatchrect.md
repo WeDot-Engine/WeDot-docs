@@ -19,23 +19,23 @@ Also known as 9-slice panels, **NinePatchRect** produces clean panels of any siz
 
 |||
 |:-:|:--|
-| [AxisStretchMode](#enum_ninepatchrect_axisstretchmode) | [`axis_stretch_horizontal`](#class_ninepatchrect_property_axis_stretch_horizontal) | ``0``                                                               |
-| [AxisStretchMode](#enum_ninepatchrect_axisstretchmode) | [`axis_stretch_vertical`](#class_ninepatchrect_property_axis_stretch_vertical)     | ``0``                                                               |
-| [`bool`](class_bool.md)                                | [`draw_center`](#class_ninepatchrect_property_draw_center)                         | ``true``                                                            |
-| [MouseFilter](#enum_control_mousefilter)               | mouse_filter                                                                       | ``2`` (overrides [`Control`](#class_control_property_mouse_filter)) |
-| [`int`](class_int.md)                                  | [`patch_margin_bottom`](#class_ninepatchrect_property_patch_margin_bottom)         | ``0``                                                               |
-| [`int`](class_int.md)                                  | [`patch_margin_left`](#class_ninepatchrect_property_patch_margin_left)             | ``0``                                                               |
-| [`int`](class_int.md)                                  | [`patch_margin_right`](#class_ninepatchrect_property_patch_margin_right)           | ``0``                                                               |
-| [`int`](class_int.md)                                  | [`patch_margin_top`](#class_ninepatchrect_property_patch_margin_top)               | ``0``                                                               |
-| [`Rect2`](class_rect2.md)                              | [`region_rect`](#class_ninepatchrect_property_region_rect)                         | ``Rect2(0, 0, 0, 0)``                                               |
-| [`Texture2D`](class_texture2d.md)                      | [`texture`](#class_ninepatchrect_property_texture)                                 |                                                                     |
+| [AxisStretchMode](#enum_ninepatchrect_axisstretchmode) | [`axis_stretch_horizontal`](class_ninepatchrect.md#class_ninepatchrect_property_axis_stretch_horizontal) | ``0``                                                                               |
+| [AxisStretchMode](#enum_ninepatchrect_axisstretchmode) | [`axis_stretch_vertical`](class_ninepatchrect.md#class_ninepatchrect_property_axis_stretch_vertical)     | ``0``                                                                               |
+| [`bool`](class_bool.md)                                | [`draw_center`](class_ninepatchrect.md#class_ninepatchrect_property_draw_center)                         | ``true``                                                                            |
+| [MouseFilter](#enum_control_mousefilter)               | mouse_filter                                                                                             | ``2`` (overrides [`Control`](class_control.md#class_control_property_mouse_filter)) |
+| [`int`](class_int.md)                                  | [`patch_margin_bottom`](class_ninepatchrect.md#class_ninepatchrect_property_patch_margin_bottom)         | ``0``                                                                               |
+| [`int`](class_int.md)                                  | [`patch_margin_left`](class_ninepatchrect.md#class_ninepatchrect_property_patch_margin_left)             | ``0``                                                                               |
+| [`int`](class_int.md)                                  | [`patch_margin_right`](class_ninepatchrect.md#class_ninepatchrect_property_patch_margin_right)           | ``0``                                                                               |
+| [`int`](class_int.md)                                  | [`patch_margin_top`](class_ninepatchrect.md#class_ninepatchrect_property_patch_margin_top)               | ``0``                                                                               |
+| [`Rect2`](class_rect2.md)                              | [`region_rect`](class_ninepatchrect.md#class_ninepatchrect_property_region_rect)                         | ``Rect2(0, 0, 0, 0)``                                                               |
+| [`Texture2D`](class_texture2d.md)                      | [`texture`](class_ninepatchrect.md#class_ninepatchrect_property_texture)                                 |                                                                                     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`get_patch_margin`](#class_ninepatchrect_method_get_patch_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                 |
-| `void`                | [`set_patch_margin`](#class_ninepatchrect_method_set_patch_margin) ( margin: [Side](#enum_@globalscope_side), value: [`int`](class_int.md) ) |
+| [`int`](class_int.md) | [`get_patch_margin`](class_ninepatchrect.md#class_ninepatchrect_method_get_patch_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                 |
+| `void`                | [`set_patch_margin`](class_ninepatchrect.md#class_ninepatchrect_method_set_patch_margin) ( margin: [Side](#enum_@globalscope_side), value: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -75,7 +75,7 @@ Repeats the center texture across the NinePatchRect. This won't cause any visibl
 
 [AxisStretchMode](#enum_ninepatchrect_axisstretchmode) **AXIS_STRETCH_MODE_TILE_FIT** = ``2``
 
-Repeats the center texture across the NinePatchRect, but will also stretch the texture to make sure each tile is visible in full. This may cause the texture to be distorted, but less than [`AXIS_STRETCH_MODE_STRETCH`](#class_ninepatchrect_constant_axis_stretch_mode_stretch). The texture must be seamless for this to work without displaying artifacts between edges.
+Repeats the center texture across the NinePatchRect, but will also stretch the texture to make sure each tile is visible in full. This may cause the texture to be distorted, but less than [`AXIS_STRETCH_MODE_STRETCH`](class_ninepatchrect.md#class_ninepatchrect_constant_axis_stretch_mode_stretch). The texture must be seamless for this to work without displaying artifacts between edges.
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -13,11 +13,11 @@ A unit quaternion used for representing 3D rotations.
 
 The **Quaternion** built-in [`Variant`](class_variant.md) type is a 4D data structure that represents rotation in the form of a [*Hamilton convention quaternion*](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation). Compared to the [`Basis`](class_basis.md) type which can store both rotation and scale, quaternions can *only* store rotation.
 
-A **Quaternion** is composed by 4 floating-point components: [`w`](#class_quaternion_property_w), [`x`](#class_quaternion_property_x), [`y`](#class_quaternion_property_y), and [`z`](#class_quaternion_property_z). These components are very compact in memory, and because of this some operations are more efficient and less likely to cause floating-point errors. Methods such as [`get_angle`](#class_quaternion_method_get_angle), [`get_axis`](#class_quaternion_method_get_axis), and [`slerp`](#class_quaternion_method_slerp) are faster than their [`Basis`](class_basis.md) counterparts.
+A **Quaternion** is composed by 4 floating-point components: [`w`](class_quaternion.md#class_quaternion_property_w), [`x`](class_quaternion.md#class_quaternion_property_x), [`y`](class_quaternion.md#class_quaternion_property_y), and [`z`](class_quaternion.md#class_quaternion_property_z). These components are very compact in memory, and because of this some operations are more efficient and less likely to cause floating-point errors. Methods such as [`get_angle`](class_quaternion.md#class_quaternion_method_get_angle), [`get_axis`](class_quaternion.md#class_quaternion_method_get_axis), and [`slerp`](class_quaternion.md#class_quaternion_method_slerp) are faster than their [`Basis`](class_basis.md) counterparts.
 
-For a great introduction to quaternions, see [*this video by 3Blue1Brown*](https://www.youtube.com/watch?v=d4EgbgTm0Bg). You do not need to know the math behind quaternions, as Godot provides several helper methods that handle it for you. These include [`slerp`](#class_quaternion_method_slerp) and [`spherical_cubic_interpolate`](#class_quaternion_method_spherical_cubic_interpolate), as well as the `*` operator.
+For a great introduction to quaternions, see [*this video by 3Blue1Brown*](https://www.youtube.com/watch?v=d4EgbgTm0Bg). You do not need to know the math behind quaternions, as Godot provides several helper methods that handle it for you. These include [`slerp`](class_quaternion.md#class_quaternion_method_slerp) and [`spherical_cubic_interpolate`](class_quaternion.md#class_quaternion_method_spherical_cubic_interpolate), as well as the `*` operator.
 
- **Note:** Quaternions must be normalized before being used for rotation (see [`normalized`](#class_quaternion_method_normalized)).
+ **Note:** Quaternions must be normalized before being used for rotation (see [`normalized`](class_quaternion.md#class_quaternion_method_normalized)).
 
  **Note:** Similarly to [`Vector2`](class_vector2.md) and [`Vector3`](class_vector3.md), the components of a quaternion use 32-bit precision by default, unlike [`float`](class_float.md) which is always 64-bit. If double precision is needed, compile the engine with the option `precision=double`.
 
@@ -27,45 +27,45 @@ For a great introduction to quaternions, see [*this video by 3Blue1Brown*](https
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`w`](#class_quaternion_property_w) | ``1.0`` |
-| [`float`](class_float.md) | [`x`](#class_quaternion_property_x) | ``0.0`` |
-| [`float`](class_float.md) | [`y`](#class_quaternion_property_y) | ``0.0`` |
-| [`float`](class_float.md) | [`z`](#class_quaternion_property_z) | ``0.0`` |
+| [`float`](class_float.md) | [`w`](class_quaternion.md#class_quaternion_property_w) | ``1.0`` |
+| [`float`](class_float.md) | [`x`](class_quaternion.md#class_quaternion_property_x) | ``0.0`` |
+| [`float`](class_float.md) | [`y`](class_quaternion.md#class_quaternion_property_y) | ``0.0`` |
+| [`float`](class_float.md) | [`z`](class_quaternion.md#class_quaternion_property_z) | ``0.0`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( )                                                                                                                        |
-| [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( from: [`Quaternion`](class_quaternion.md) )                                                                              |
-| [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( arc_from: [`Vector3`](class_vector3.md), arc_to: [`Vector3`](class_vector3.md) )                                         |
-| [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                  |
-| [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( from: [`Basis`](class_basis.md) )                                                                                        |
-| [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( x: [`float`](class_float.md), y: [`float`](class_float.md), z: [`float`](class_float.md), w: [`float`](class_float.md) ) |
+| [`Quaternion`](class_quaternion.md) | [`Quaternion`](class_quaternion.md#class_quaternion_constructor_quaternion) ( )                                                                                                                        |
+| [`Quaternion`](class_quaternion.md) | [`Quaternion`](class_quaternion.md#class_quaternion_constructor_quaternion) ( from: [`Quaternion`](class_quaternion.md) )                                                                              |
+| [`Quaternion`](class_quaternion.md) | [`Quaternion`](class_quaternion.md#class_quaternion_constructor_quaternion) ( arc_from: [`Vector3`](class_vector3.md), arc_to: [`Vector3`](class_vector3.md) )                                         |
+| [`Quaternion`](class_quaternion.md) | [`Quaternion`](class_quaternion.md#class_quaternion_constructor_quaternion) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                  |
+| [`Quaternion`](class_quaternion.md) | [`Quaternion`](class_quaternion.md#class_quaternion_constructor_quaternion) ( from: [`Basis`](class_basis.md) )                                                                                        |
+| [`Quaternion`](class_quaternion.md) | [`Quaternion`](class_quaternion.md#class_quaternion_constructor_quaternion) ( x: [`float`](class_float.md), y: [`float`](class_float.md), z: [`float`](class_float.md), w: [`float`](class_float.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)           | [`angle_to`](#class_quaternion_method_angle_to) ( to: [`Quaternion`](class_quaternion.md) ) const[^const]                                                                                                                                                                                                                                                                                           |
-| [`float`](class_float.md)           | [`dot`](#class_quaternion_method_dot) ( with: [`Quaternion`](class_quaternion.md) ) const[^const]                                                                                                                                                                                                                                                                                                   |
-| [`Quaternion`](class_quaternion.md) | [`exp`](#class_quaternion_method_exp) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                             |
-| [`Quaternion`](class_quaternion.md) | [`from_euler`](#class_quaternion_method_from_euler) ( euler: [`Vector3`](class_vector3.md) ) static[^static]                                                                                                                                                                                                                                                                                        |
-| [`float`](class_float.md)           | [`get_angle`](#class_quaternion_method_get_angle) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                 |
-| [`Vector3`](class_vector3.md)       | [`get_axis`](#class_quaternion_method_get_axis) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                   |
-| [`Vector3`](class_vector3.md)       | [`get_euler`](#class_quaternion_method_get_euler) ( order: [`int`](class_int.md) = 2 ) const[^const]                                                                                                                                                                                                                                                                                                |
-| [`Quaternion`](class_quaternion.md) | [`inverse`](#class_quaternion_method_inverse) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                     |
-| [`bool`](class_bool.md)             | [`is_equal_approx`](#class_quaternion_method_is_equal_approx) ( to: [`Quaternion`](class_quaternion.md) ) const[^const]                                                                                                                                                                                                                                                                             |
-| [`bool`](class_bool.md)             | [`is_finite`](#class_quaternion_method_is_finite) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)             | [`is_normalized`](#class_quaternion_method_is_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                                                         |
-| [`float`](class_float.md)           | [`length`](#class_quaternion_method_length) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                       |
-| [`float`](class_float.md)           | [`length_squared`](#class_quaternion_method_length_squared) ( ) const[^const]                                                                                                                                                                                                                                                                                                                       |
-| [`Quaternion`](class_quaternion.md) | [`log`](#class_quaternion_method_log) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                             |
-| [`Quaternion`](class_quaternion.md) | [`normalized`](#class_quaternion_method_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                                                               |
-| [`Quaternion`](class_quaternion.md) | [`slerp`](#class_quaternion_method_slerp) ( to: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                              |
-| [`Quaternion`](class_quaternion.md) | [`slerpni`](#class_quaternion_method_slerpni) ( to: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                          |
-| [`Quaternion`](class_quaternion.md) | [`spherical_cubic_interpolate`](#class_quaternion_method_spherical_cubic_interpolate) ( b: [`Quaternion`](class_quaternion.md), pre_a: [`Quaternion`](class_quaternion.md), post_b: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                          |
-| [`Quaternion`](class_quaternion.md) | [`spherical_cubic_interpolate_in_time`](#class_quaternion_method_spherical_cubic_interpolate_in_time) ( b: [`Quaternion`](class_quaternion.md), pre_a: [`Quaternion`](class_quaternion.md), post_b: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md), b_t: [`float`](class_float.md), pre_a_t: [`float`](class_float.md), post_b_t: [`float`](class_float.md) ) const[^const] |
+| [`float`](class_float.md)           | [`angle_to`](class_quaternion.md#class_quaternion_method_angle_to) ( to: [`Quaternion`](class_quaternion.md) ) const[^const]                                                                                                                                                                                                                                                                                           |
+| [`float`](class_float.md)           | [`dot`](class_quaternion.md#class_quaternion_method_dot) ( with: [`Quaternion`](class_quaternion.md) ) const[^const]                                                                                                                                                                                                                                                                                                   |
+| [`Quaternion`](class_quaternion.md) | [`exp`](class_quaternion.md#class_quaternion_method_exp) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                             |
+| [`Quaternion`](class_quaternion.md) | [`from_euler`](class_quaternion.md#class_quaternion_method_from_euler) ( euler: [`Vector3`](class_vector3.md) ) static[^static]                                                                                                                                                                                                                                                                                        |
+| [`float`](class_float.md)           | [`get_angle`](class_quaternion.md#class_quaternion_method_get_angle) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                 |
+| [`Vector3`](class_vector3.md)       | [`get_axis`](class_quaternion.md#class_quaternion_method_get_axis) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                   |
+| [`Vector3`](class_vector3.md)       | [`get_euler`](class_quaternion.md#class_quaternion_method_get_euler) ( order: [`int`](class_int.md) = 2 ) const[^const]                                                                                                                                                                                                                                                                                                |
+| [`Quaternion`](class_quaternion.md) | [`inverse`](class_quaternion.md#class_quaternion_method_inverse) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                     |
+| [`bool`](class_bool.md)             | [`is_equal_approx`](class_quaternion.md#class_quaternion_method_is_equal_approx) ( to: [`Quaternion`](class_quaternion.md) ) const[^const]                                                                                                                                                                                                                                                                             |
+| [`bool`](class_bool.md)             | [`is_finite`](class_quaternion.md#class_quaternion_method_is_finite) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)             | [`is_normalized`](class_quaternion.md#class_quaternion_method_is_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                                                         |
+| [`float`](class_float.md)           | [`length`](class_quaternion.md#class_quaternion_method_length) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                       |
+| [`float`](class_float.md)           | [`length_squared`](class_quaternion.md#class_quaternion_method_length_squared) ( ) const[^const]                                                                                                                                                                                                                                                                                                                       |
+| [`Quaternion`](class_quaternion.md) | [`log`](class_quaternion.md#class_quaternion_method_log) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                             |
+| [`Quaternion`](class_quaternion.md) | [`normalized`](class_quaternion.md#class_quaternion_method_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                                                               |
+| [`Quaternion`](class_quaternion.md) | [`slerp`](class_quaternion.md#class_quaternion_method_slerp) ( to: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                              |
+| [`Quaternion`](class_quaternion.md) | [`slerpni`](class_quaternion.md#class_quaternion_method_slerpni) ( to: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                          |
+| [`Quaternion`](class_quaternion.md) | [`spherical_cubic_interpolate`](class_quaternion.md#class_quaternion_method_spherical_cubic_interpolate) ( b: [`Quaternion`](class_quaternion.md), pre_a: [`Quaternion`](class_quaternion.md), post_b: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                          |
+| [`Quaternion`](class_quaternion.md) | [`spherical_cubic_interpolate_in_time`](class_quaternion.md#class_quaternion_method_spherical_cubic_interpolate_in_time) ( b: [`Quaternion`](class_quaternion.md), pre_a: [`Quaternion`](class_quaternion.md), post_b: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md), b_t: [`float`](class_float.md), pre_a_t: [`float`](class_float.md), post_b_t: [`float`](class_float.md) ) const[^const] |
 
 ## 运算符
 
@@ -95,7 +95,7 @@ For a great introduction to quaternions, see [*this video by 3Blue1Brown*](https
 
 **IDENTITY** = ``Quaternion(0, 0, 0, 1)`` <div id="class_quaternion_constant_identity"></div>
 
-The identity quaternion, representing no rotation. This has the same rotation as [`Basis.IDENTITY`](#class_basis_constant_identity).
+The identity quaternion, representing no rotation. This has the same rotation as [`Basis.IDENTITY`](class_basis.md#class_basis_constant_identity).
 
 If a [`Vector3`](class_vector3.md) is rotated (multiplied) by this quaternion, it does not change.
 
@@ -159,7 +159,7 @@ Z component of the quaternion. This is the value along the "imaginary" `k` axis.
 
 [`Quaternion`](class_quaternion.md) **Quaternion** ( )<div id="class_quaternion_constructor_quaternion"></div>
 
-Constructs a **Quaternion** identical to the [`IDENTITY`](#class_quaternion_constant_identity).
+Constructs a **Quaternion** identical to the [`IDENTITY`](class_quaternion.md#class_quaternion_constant_identity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -193,7 +193,7 @@ Constructs a **Quaternion** representing rotation around the `axis` by the given
 
 Constructs a **Quaternion** from the given rotation [`Basis`](class_basis.md).
 
-This constructor is faster than [`Basis.get_rotation_quaternion`](#class_basis_method_get_rotation_quaternion), but the given basis must be *orthonormalized* (see [`Basis.orthonormalized`](#class_basis_method_orthonormalized)). Otherwise, the constructor fails and returns [`IDENTITY`](#class_quaternion_constant_identity).
+This constructor is faster than [`Basis.get_rotation_quaternion`](class_basis.md#class_basis_method_get_rotation_quaternion), but the given basis must be *orthonormalized* (see [`Basis.orthonormalized`](class_basis.md#class_basis_method_orthonormalized)). Otherwise, the constructor fails and returns [`IDENTITY`](class_quaternion.md#class_quaternion_constant_identity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -249,7 +249,7 @@ Returns the exponential of this quaternion. The rotation axis of the result is t
 
 [`Quaternion`](class_quaternion.md) **from_euler** ( euler: [`Vector3`](class_vector3.md) ) static[^static]<div id="class_quaternion_method_from_euler"></div>
 
-Constructs a new **Quaternion** from the given [`Vector3`](class_vector3.md) of [*Euler angles*](https://en.wikipedia.org/wiki/Euler_angles), in radians. This method always uses the YXZ convention ([`@GlobalScope.EULER_ORDER_YXZ`](#class_@globalscope_constant_euler_order_yxz)).
+Constructs a new **Quaternion** from the given [`Vector3`](class_vector3.md) of [*Euler angles*](https://en.wikipedia.org/wiki/Euler_angles), in radians. This method always uses the YXZ convention ([`@GlobalScope.EULER_ORDER_YXZ`](class_@globalscope.md#class_@globalscope_constant_euler_order_yxz)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -283,7 +283,7 @@ Returns the rotation axis of the rotation represented by this quaternion.
 
 Returns this quaternion's rotation as a [`Vector3`](class_vector3.md) of [*Euler angles*](https://en.wikipedia.org/wiki/Euler_angles), in radians.
 
-The order of each consecutive rotation can be changed with `order` (see [EulerOrder](#enum_@globalscope_eulerorder) constants). By default, the YXZ convention is used ([`@GlobalScope.EULER_ORDER_YXZ`](#class_@globalscope_constant_euler_order_yxz)): Z (roll) is calculated first, then X (pitch), and lastly Y (yaw). When using the opposite method [`from_euler`](#class_quaternion_method_from_euler), this order is reversed.
+The order of each consecutive rotation can be changed with `order` (see [EulerOrder](#enum_@globalscope_eulerorder) constants). By default, the YXZ convention is used ([`@GlobalScope.EULER_ORDER_YXZ`](class_@globalscope.md#class_@globalscope_constant_euler_order_yxz)): Z (roll) is calculated first, then X (pitch), and lastly Y (yaw). When using the opposite method [`from_euler`](class_quaternion.md#class_quaternion_method_from_euler), this order is reversed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -293,7 +293,7 @@ The order of each consecutive rotation can be changed with `order` (see [EulerOr
 
 [`Quaternion`](class_quaternion.md) **inverse** ( ) const[^const]<div id="class_quaternion_method_inverse"></div>
 
-Returns the inverse version of this quaternion, inverting the sign of every component except [`w`](#class_quaternion_property_w).
+Returns the inverse version of this quaternion, inverting the sign of every component except [`w`](class_quaternion.md#class_quaternion_property_w).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -303,7 +303,7 @@ Returns the inverse version of this quaternion, inverting the sign of every comp
 
 [`bool`](class_bool.md) **is_equal_approx** ( to: [`Quaternion`](class_quaternion.md) ) const[^const]<div id="class_quaternion_method_is_equal_approx"></div>
 
-Returns `true` if this quaternion and `to` are approximately equal, by running [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) on each component.
+Returns `true` if this quaternion and `to` are approximately equal, by running [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -313,7 +313,7 @@ Returns `true` if this quaternion and `to` are approximately equal, by running [
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_quaternion_method_is_finite"></div>
 
-Returns `true` if this quaternion is finite, by calling [`@GlobalScope.is_finite`](#class_@globalscope_method_is_finite) on each component.
+Returns `true` if this quaternion is finite, by calling [`@GlobalScope.is_finite`](class_@globalscope.md#class_@globalscope_method_is_finite) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -323,7 +323,7 @@ Returns `true` if this quaternion is finite, by calling [`@GlobalScope.is_finite
 
 [`bool`](class_bool.md) **is_normalized** ( ) const[^const]<div id="class_quaternion_method_is_normalized"></div>
 
-Returns `true` if this quaternion is normalized. See also [`normalized`](#class_quaternion_method_normalized).
+Returns `true` if this quaternion is normalized. See also [`normalized`](class_quaternion.md#class_quaternion_method_normalized).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -345,7 +345,7 @@ Returns this quaternion's length, also called magnitude.
 
 Returns this quaternion's length, squared.
 
- **Note:** This method is faster than [`length`](#class_quaternion_method_length), so prefer it if you only need to compare quaternion lengths.
+ **Note:** This method is faster than [`length`](class_quaternion.md#class_quaternion_method_length), so prefer it if you only need to compare quaternion lengths.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -355,7 +355,7 @@ Returns this quaternion's length, squared.
 
 [`Quaternion`](class_quaternion.md) **log** ( ) const[^const]<div id="class_quaternion_method_log"></div>
 
-Returns the logarithm of this quaternion. Multiplies this quaternion's rotation axis by its rotation angle, and stores the result in the returned quaternion's vector part ([`x`](#class_quaternion_property_x), [`y`](#class_quaternion_property_y), and [`z`](#class_quaternion_property_z)). The returned quaternion's real part ([`w`](#class_quaternion_property_w)) is always `0.0`.
+Returns the logarithm of this quaternion. Multiplies this quaternion's rotation axis by its rotation angle, and stores the result in the returned quaternion's vector part ([`x`](class_quaternion.md#class_quaternion_property_x), [`y`](class_quaternion.md#class_quaternion_property_y), and [`z`](class_quaternion.md#class_quaternion_property_z)). The returned quaternion's real part ([`w`](class_quaternion.md#class_quaternion_property_w)) is always `0.0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -365,7 +365,7 @@ Returns the logarithm of this quaternion. Multiplies this quaternion's rotation 
 
 [`Quaternion`](class_quaternion.md) **normalized** ( ) const[^const]<div id="class_quaternion_method_normalized"></div>
 
-Returns a copy of this quaternion, normalized so that its length is `1.0`. See also [`is_normalized`](#class_quaternion_method_is_normalized).
+Returns a copy of this quaternion, normalized so that its length is `1.0`. See also [`is_normalized`](class_quaternion.md#class_quaternion_method_is_normalized).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -385,7 +385,7 @@ Performs a spherical-linear interpolation with the `to` quaternion, given a `wei
 
 [`Quaternion`](class_quaternion.md) **slerpni** ( to: [`Quaternion`](class_quaternion.md), weight: [`float`](class_float.md) ) const[^const]<div id="class_quaternion_method_slerpni"></div>
 
-Performs a spherical-linear interpolation with the `to` quaternion, given a `weight` and returns the result. Unlike [`slerp`](#class_quaternion_method_slerp), this method does not check if the rotation path is smaller than 90 degrees. Both this quaternion and `to` must be normalized.
+Performs a spherical-linear interpolation with the `to` quaternion, given a `weight` and returns the result. Unlike [`slerp`](class_quaternion.md#class_quaternion_method_slerp), this method does not check if the rotation path is smaller than 90 degrees. Both this quaternion and `to` must be normalized.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -407,7 +407,7 @@ Performs a spherical cubic interpolation between quaternions `pre_a`, this vecto
 
 Performs a spherical cubic interpolation between quaternions `pre_a`, this vector, `b`, and `post_b`, by the given amount `weight`.
 
-It can perform smoother interpolation than [`spherical_cubic_interpolate`](#class_quaternion_method_spherical_cubic_interpolate) by the time values.
+It can perform smoother interpolation than [`spherical_cubic_interpolate`](class_quaternion.md#class_quaternion_method_spherical_cubic_interpolate) by the time values.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -421,7 +421,7 @@ It can perform smoother interpolation than [`spherical_cubic_interpolate`](#clas
 
 Returns `true` if the components of both quaternions are not exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_quaternion_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_quaternion.md#class_quaternion_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -525,7 +525,7 @@ This operation is not meaningful on its own, but it can be used as a part of a l
 
 Returns `true` if the components of both quaternions are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_quaternion_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_quaternion.md#class_quaternion_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -537,7 +537,7 @@ Returns `true` if the components of both quaternions are exactly equal.
 
 Accesses each component of this quaternion by their index.
 
-Index `0` is the same as [`x`](#class_quaternion_property_x), index `1` is the same as [`y`](#class_quaternion_property_y), index `2` is the same as [`z`](#class_quaternion_property_z), and index `3` is the same as [`w`](#class_quaternion_property_w).
+Index `0` is the same as [`x`](class_quaternion.md#class_quaternion_property_x), index `1` is the same as [`y`](class_quaternion.md#class_quaternion_property_y), index `2` is the same as [`z`](class_quaternion.md#class_quaternion_property_z), and index `3` is the same as [`w`](class_quaternion.md#class_quaternion_property_w).
 
 <!-- rst-class:: classref-item-separator -->
 

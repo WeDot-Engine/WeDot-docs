@@ -21,13 +21,13 @@ Base resource type for all video streams. Classes that derive from **VideoStream
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`file`](#class_videostream_property_file) | ``""`` |
+| [`String`](class_string.md) | [`file`](class_videostream.md#class_videostream_property_file) | ``""`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`VideoStreamPlayback`](class_videostreamplayback.md) | [`_instantiate_playback`](#class_videostream_private_method__instantiate_playback) ( ) virtual[^virtual] |
+| [`VideoStreamPlayback`](class_videostreamplayback.md) | [`_instantiate_playback`](class_videostream.md#class_videostream_private_method__instantiate_playback) ( ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

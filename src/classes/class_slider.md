@@ -21,26 +21,26 @@ Abstract base class for sliders, used to adjust a value by moving a grabber alon
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)              | [`editable`](#class_slider_property_editable)                 | ``true``                                                          |
-| [FocusMode](#enum_control_focusmode) | focus_mode                                                    | ``2`` (overrides [`Control`](#class_control_property_focus_mode)) |
-| [`bool`](class_bool.md)              | [`scrollable`](#class_slider_property_scrollable)             | ``true``                                                          |
-| [`float`](class_float.md)            | step                                                          | ``1.0`` (overrides [`Range`](#class_range_property_step))         |
-| [`int`](class_int.md)                | [`tick_count`](#class_slider_property_tick_count)             | ``0``                                                             |
-| [`bool`](class_bool.md)              | [`ticks_on_borders`](#class_slider_property_ticks_on_borders) | ``false``                                                         |
+| [`bool`](class_bool.md)              | [`editable`](class_slider.md#class_slider_property_editable)                 | ``true``                                                                          |
+| [FocusMode](#enum_control_focusmode) | focus_mode                                                                   | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode)) |
+| [`bool`](class_bool.md)              | [`scrollable`](class_slider.md#class_slider_property_scrollable)             | ``true``                                                                          |
+| [`float`](class_float.md)            | step                                                                         | ``1.0`` (overrides [`Range`](class_range.md#class_range_property_step))           |
+| [`int`](class_int.md)                | [`tick_count`](class_slider.md#class_slider_property_tick_count)             | ``0``                                                                             |
+| [`bool`](class_bool.md)              | [`ticks_on_borders`](class_slider.md#class_slider_property_ticks_on_borders) | ``false``                                                                         |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`center_grabber`](#class_slider_theme_constant_center_grabber)              | ``0`` |
-| [`int`](class_int.md)             | [`grabber_offset`](#class_slider_theme_constant_grabber_offset)              | ``0`` |
-| [`Texture2D`](class_texture2d.md) | [`grabber`](#class_slider_theme_icon_grabber)                                |       |
-| [`Texture2D`](class_texture2d.md) | [`grabber_disabled`](#class_slider_theme_icon_grabber_disabled)              |       |
-| [`Texture2D`](class_texture2d.md) | [`grabber_highlight`](#class_slider_theme_icon_grabber_highlight)            |       |
-| [`Texture2D`](class_texture2d.md) | [`tick`](#class_slider_theme_icon_tick)                                      |       |
-| [`StyleBox`](class_stylebox.md)   | [`grabber_area`](#class_slider_theme_style_grabber_area)                     |       |
-| [`StyleBox`](class_stylebox.md)   | [`grabber_area_highlight`](#class_slider_theme_style_grabber_area_highlight) |       |
-| [`StyleBox`](class_stylebox.md)   | [`slider`](#class_slider_theme_style_slider)                                 |       |
+| [`int`](class_int.md)             | [`center_grabber`](class_slider.md#class_slider_theme_constant_center_grabber)              | ``0`` |
+| [`int`](class_int.md)             | [`grabber_offset`](class_slider.md#class_slider_theme_constant_grabber_offset)              | ``0`` |
+| [`Texture2D`](class_texture2d.md) | [`grabber`](class_slider.md#class_slider_theme_icon_grabber)                                |       |
+| [`Texture2D`](class_texture2d.md) | [`grabber_disabled`](class_slider.md#class_slider_theme_icon_grabber_disabled)              |       |
+| [`Texture2D`](class_texture2d.md) | [`grabber_highlight`](class_slider.md#class_slider_theme_icon_grabber_highlight)            |       |
+| [`Texture2D`](class_texture2d.md) | [`tick`](class_slider.md#class_slider_theme_icon_tick)                                      |       |
+| [`StyleBox`](class_stylebox.md)   | [`grabber_area`](class_slider.md#class_slider_theme_style_grabber_area)                     |       |
+| [`StyleBox`](class_stylebox.md)   | [`grabber_area_highlight`](class_slider.md#class_slider_theme_style_grabber_area_highlight) |       |
+| [`StyleBox`](class_stylebox.md)   | [`slider`](class_slider.md#class_slider_theme_style_slider)                                 |       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,7 +52,7 @@ Abstract base class for sliders, used to adjust a value by moving a grabber alon
 
 **drag_ended** ( value_changed: [`bool`](class_bool.md) ) <div id="class_slider_signal_drag_ended"></div>
 
-Emitted when dragging stops. If `value_changed` is true, [`Range.value`](#class_range_property_value) is different from the value when you started the dragging.
+Emitted when dragging stops. If `value_changed` is true, [`Range.value`](class_range.md#class_range_property_value) is different from the value when you started the dragging.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -62,7 +62,7 @@ Emitted when dragging stops. If `value_changed` is true, [`Range.value`](#class_
 
 **drag_started** ( ) <div id="class_slider_signal_drag_started"></div>
 
-Emitted when dragging is started. This is emitted before the corresponding [`Range.value_changed`](#class_range_signal_value_changed) signal.
+Emitted when dragging is started. This is emitted before the corresponding [`Range.value_changed`](class_range.md#class_range_signal_value_changed) signal.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -178,7 +178,7 @@ The texture for the grabber when it's focused.
 
 [`Texture2D`](class_texture2d.md) **tick** <div id="class_slider_theme_icon_tick"></div>
 
-The texture for the ticks, visible when [`tick_count`](#class_slider_property_tick_count) is greater than 0.
+The texture for the ticks, visible when [`tick_count`](class_slider.md#class_slider_property_tick_count) is greater than 0.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -208,7 +208,7 @@ The background of the area to the left or bottom of the grabber that displays wh
 
 [`StyleBox`](class_stylebox.md) **slider** <div id="class_slider_theme_style_slider"></div>
 
-The background for the whole slider. Affects the height or width of the [`grabber_area`](#class_slider_theme_style_grabber_area).
+The background for the whole slider. Affects the height or width of the [`grabber_area`](class_slider.md#class_slider_theme_style_grabber_area).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

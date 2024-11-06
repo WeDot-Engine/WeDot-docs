@@ -21,12 +21,12 @@ A stream peer that handles TLS connections. This object can be used to connect t
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)    | [`accept_stream`](#class_streampeertls_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md), server_options: [`TLSOptions`](class_tlsoptions.md) )                                                          |
-| [Error](#enum_@globalscope_error)    | [`connect_to_stream`](#class_streampeertls_method_connect_to_stream) ( stream: [`StreamPeer`](class_streampeer.md), common_name: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
-| `void`                               | [`disconnect_from_stream`](#class_streampeertls_method_disconnect_from_stream) ( )                                                                                                                                         |
-| [Status](#enum_streampeertls_status) | [`get_status`](#class_streampeertls_method_get_status) ( ) const[^const]                                                                                                                                                   |
-| [`StreamPeer`](class_streampeer.md)  | [`get_stream`](#class_streampeertls_method_get_stream) ( ) const[^const]                                                                                                                                                   |
-| `void`                               | [`poll`](#class_streampeertls_method_poll) ( )                                                                                                                                                                             |
+| [Error](#enum_@globalscope_error)    | [`accept_stream`](class_streampeertls.md#class_streampeertls_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md), server_options: [`TLSOptions`](class_tlsoptions.md) )                                                          |
+| [Error](#enum_@globalscope_error)    | [`connect_to_stream`](class_streampeertls.md#class_streampeertls_method_connect_to_stream) ( stream: [`StreamPeer`](class_streampeer.md), common_name: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
+| `void`                               | [`disconnect_from_stream`](class_streampeertls.md#class_streampeertls_method_disconnect_from_stream) ( )                                                                                                                                         |
+| [Status](#enum_streampeertls_status) | [`get_status`](class_streampeertls.md#class_streampeertls_method_get_status) ( ) const[^const]                                                                                                                                                   |
+| [`StreamPeer`](class_streampeer.md)  | [`get_stream`](class_streampeertls.md#class_streampeertls_method_get_stream) ( ) const[^const]                                                                                                                                                   |
+| `void`                               | [`poll`](class_streampeertls.md#class_streampeertls_method_poll) ( )                                                                                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -78,7 +78,7 @@ An error status that shows a mismatch in the TLS certificate domain presented by
 
 [Error](#enum_@globalscope_error) **accept_stream** ( stream: [`StreamPeer`](class_streampeer.md), server_options: [`TLSOptions`](class_tlsoptions.md) )<div id="class_streampeertls_method_accept_stream"></div>
 
-Accepts a peer connection as a server using the given `server_options`. See [`TLSOptions.server`](#class_tlsoptions_method_server).
+Accepts a peer connection as a server using the given `server_options`. See [`TLSOptions.server`](class_tlsoptions.md#class_tlsoptions_method_server).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -88,7 +88,7 @@ Accepts a peer connection as a server using the given `server_options`. See [`TL
 
 [Error](#enum_@globalscope_error) **connect_to_stream** ( stream: [`StreamPeer`](class_streampeer.md), common_name: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null )<div id="class_streampeertls_method_connect_to_stream"></div>
 
-Connects to a peer using an underlying [`StreamPeer`](class_streampeer.md) `stream` and verifying the remote certificate is correctly signed for the given `common_name`. You can pass the optional `client_options` parameter to customize the trusted certification authorities, or disable the common name verification. See [`TLSOptions.client`](#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](#class_tlsoptions_method_client_unsafe).
+Connects to a peer using an underlying [`StreamPeer`](class_streampeer.md) `stream` and verifying the remote certificate is correctly signed for the given `common_name`. You can pass the optional `client_options` parameter to customize the trusted certification authorities, or disable the common name verification. See [`TLSOptions.client`](class_tlsoptions.md#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -118,7 +118,7 @@ Returns the status of the connection. See [Status](#enum_streampeertls_status) f
 
 [`StreamPeer`](class_streampeer.md) **get_stream** ( ) const[^const]<div id="class_streampeertls_method_get_stream"></div>
 
-Returns the underlying [`StreamPeer`](class_streampeer.md) connection, used in [`accept_stream`](#class_streampeertls_method_accept_stream) or [`connect_to_stream`](#class_streampeertls_method_connect_to_stream).
+Returns the underlying [`StreamPeer`](class_streampeer.md) connection, used in [`accept_stream`](class_streampeertls.md#class_streampeertls_method_accept_stream) or [`connect_to_stream`](class_streampeertls.md#class_streampeertls_method_connect_to_stream).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -128,7 +128,7 @@ Returns the underlying [`StreamPeer`](class_streampeer.md) connection, used in [
 
 `void` **poll** ( )<div id="class_streampeertls_method_poll"></div>
 
-Poll the connection to check for incoming bytes. Call this right before [`StreamPeer.get_available_bytes`](#class_streampeer_method_get_available_bytes) for it to work properly.
+Poll the connection to check for incoming bytes. Call this right before [`StreamPeer.get_available_bytes`](class_streampeer.md#class_streampeer_method_get_available_bytes) for it to work properly.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

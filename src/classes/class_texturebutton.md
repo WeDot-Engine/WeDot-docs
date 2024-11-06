@@ -15,7 +15,7 @@ Texture-based button. Supports Pressed, Hover, Disabled and Focused states.
 
 **TextureButton** has the same functionality as [`Button`](class_button.md), except it uses sprites instead of Godot's [`Theme`](class_theme.md) resource. It is faster to create, but it doesn't support localization like more complex [`Control`](class_control.md) s.
 
-The "normal" state must contain a texture ([`texture_normal`](#class_texturebutton_property_texture_normal)); other textures are optional.
+The "normal" state must contain a texture ([`texture_normal`](class_texturebutton.md#class_texturebutton_property_texture_normal)); other textures are optional.
 
 See also [`BaseButton`](class_basebutton.md) which contains common properties and methods associated with this node.
 
@@ -23,16 +23,16 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                        | [`flip_h`](#class_texturebutton_property_flip_h)                           | ``false`` |
-| [`bool`](class_bool.md)                        | [`flip_v`](#class_texturebutton_property_flip_v)                           | ``false`` |
-| [`bool`](class_bool.md)                        | [`ignore_texture_size`](#class_texturebutton_property_ignore_texture_size) | ``false`` |
-| [StretchMode](#enum_texturebutton_stretchmode) | [`stretch_mode`](#class_texturebutton_property_stretch_mode)               | ``2``     |
-| [`BitMap`](class_bitmap.md)                    | [`texture_click_mask`](#class_texturebutton_property_texture_click_mask)   |           |
-| [`Texture2D`](class_texture2d.md)              | [`texture_disabled`](#class_texturebutton_property_texture_disabled)       |           |
-| [`Texture2D`](class_texture2d.md)              | [`texture_focused`](#class_texturebutton_property_texture_focused)         |           |
-| [`Texture2D`](class_texture2d.md)              | [`texture_hover`](#class_texturebutton_property_texture_hover)             |           |
-| [`Texture2D`](class_texture2d.md)              | [`texture_normal`](#class_texturebutton_property_texture_normal)           |           |
-| [`Texture2D`](class_texture2d.md)              | [`texture_pressed`](#class_texturebutton_property_texture_pressed)         |           |
+| [`bool`](class_bool.md)                        | [`flip_h`](class_texturebutton.md#class_texturebutton_property_flip_h)                           | ``false`` |
+| [`bool`](class_bool.md)                        | [`flip_v`](class_texturebutton.md#class_texturebutton_property_flip_v)                           | ``false`` |
+| [`bool`](class_bool.md)                        | [`ignore_texture_size`](class_texturebutton.md#class_texturebutton_property_ignore_texture_size) | ``false`` |
+| [StretchMode](#enum_texturebutton_stretchmode) | [`stretch_mode`](class_texturebutton.md#class_texturebutton_property_stretch_mode)               | ``2``     |
+| [`BitMap`](class_bitmap.md)                    | [`texture_click_mask`](class_texturebutton.md#class_texturebutton_property_texture_click_mask)   |           |
+| [`Texture2D`](class_texture2d.md)              | [`texture_disabled`](class_texturebutton.md#class_texturebutton_property_texture_disabled)       |           |
+| [`Texture2D`](class_texture2d.md)              | [`texture_focused`](class_texturebutton.md#class_texturebutton_property_texture_focused)         |           |
+| [`Texture2D`](class_texture2d.md)              | [`texture_hover`](class_texturebutton.md#class_texturebutton_property_texture_hover)             |           |
+| [`Texture2D`](class_texture2d.md)              | [`texture_normal`](class_texturebutton.md#class_texturebutton_property_texture_normal)           |           |
+| [`Texture2D`](class_texture2d.md)              | [`texture_pressed`](class_texturebutton.md#class_texturebutton_property_texture_pressed)         |           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -164,7 +164,7 @@ Pure black and white [`BitMap`](class_bitmap.md) image to use for click detectio
 - `void` **set_texture_disabled** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture_disabled** ( )
 
-Texture to display when the node is disabled. See [`BaseButton.disabled`](#class_basebutton_property_disabled).
+Texture to display when the node is disabled. See [`BaseButton.disabled`](class_basebutton.md#class_basebutton_property_disabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -177,7 +177,7 @@ Texture to display when the node is disabled. See [`BaseButton.disabled`](#class
 - `void` **set_texture_focused** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture_focused** ( )
 
-Texture to display when the node has mouse or keyboard focus. [`texture_focused`](#class_texturebutton_property_texture_focused) is displayed *over* the base texture, so a partially transparent texture should be used to ensure the base texture remains visible. A texture that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a fully transparent texture of any size. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+Texture to display when the node has mouse or keyboard focus. [`texture_focused`](class_texturebutton.md#class_texturebutton_property_texture_focused) is displayed *over* the base texture, so a partially transparent texture should be used to ensure the base texture remains visible. A texture that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a fully transparent texture of any size. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -203,7 +203,7 @@ Texture to display when the mouse hovers the node.
 - `void` **set_texture_normal** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture_normal** ( )
 
-Texture to display by default, when the node is **not** in the disabled, hover or pressed state. This texture is still displayed in the focused state, with [`texture_focused`](#class_texturebutton_property_texture_focused) drawn on top.
+Texture to display by default, when the node is **not** in the disabled, hover or pressed state. This texture is still displayed in the focused state, with [`texture_focused`](class_texturebutton.md#class_texturebutton_property_texture_focused) drawn on top.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -216,7 +216,7 @@ Texture to display by default, when the node is **not** in the disabled, hover o
 - `void` **set_texture_pressed** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture_pressed** ( )
 
-Texture to display on mouse down over the node, if the node has keyboard focus and the player presses the Enter key or if the player presses the [`BaseButton.shortcut`](#class_basebutton_property_shortcut) key.
+Texture to display on mouse down over the node, if the node has keyboard focus and the player presses the Enter key or if the player presses the [`BaseButton.shortcut`](class_basebutton.md#class_basebutton_property_shortcut) key.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

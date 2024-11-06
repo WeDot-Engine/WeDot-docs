@@ -19,10 +19,10 @@ A 1D texture that obtains colors from a [`Gradient`](class_gradient.md) to fill 
 
 |||
 |:-:|:--|
-| [`Gradient`](class_gradient.md) | [`gradient`](#class_gradienttexture1d_property_gradient) |                                                                                      |
-| [`bool`](class_bool.md)         | resource_local_to_scene                                  | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [`bool`](class_bool.md)         | [`use_hdr`](#class_gradienttexture1d_property_use_hdr)   | ``false``                                                                            |
-| [`int`](class_int.md)           | [`width`](#class_gradienttexture1d_property_width)       | ``256``                                                                              |
+| [`Gradient`](class_gradient.md) | [`gradient`](class_gradienttexture1d.md#class_gradienttexture1d_property_gradient) |                                                                                                       |
+| [`bool`](class_bool.md)         | resource_local_to_scene                                                            | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [`bool`](class_bool.md)         | [`use_hdr`](class_gradienttexture1d.md#class_gradienttexture1d_property_use_hdr)   | ``false``                                                                                             |
+| [`int`](class_int.md)           | [`width`](class_gradienttexture1d.md#class_gradienttexture1d_property_width)       | ``256``                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -50,7 +50,7 @@ The [`Gradient`](class_gradient.md) used to fill the texture.
 - `void` **set_use_hdr** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_hdr** ( )
 
-If `true`, the generated texture will support high dynamic range ([`Image.FORMAT_RGBAF`](#class_image_constant_format_rgbaf) format). This allows for glow effects to work if [`Environment.glow_enabled`](#class_environment_property_glow_enabled) is `true`. If `false`, the generated texture will use low dynamic range; overbright colors will be clamped ([`Image.FORMAT_RGBA8`](#class_image_constant_format_rgba8) format).
+If `true`, the generated texture will support high dynamic range ([`Image.FORMAT_RGBAF`](class_image.md#class_image_constant_format_rgbaf) format). This allows for glow effects to work if [`Environment.glow_enabled`](class_environment.md#class_environment_property_glow_enabled) is `true`. If `false`, the generated texture will use low dynamic range; overbright colors will be clamped ([`Image.FORMAT_RGBA8`](class_image.md#class_image_constant_format_rgba8) format).
 
 <!-- rst-class:: classref-item-separator -->
 

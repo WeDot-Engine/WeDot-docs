@@ -13,7 +13,7 @@ A parallax scrolling layer to be used with [`ParallaxBackground`](class_parallax
 
 ## 描述
 
-A ParallaxLayer must be the child of a [`ParallaxBackground`](class_parallaxbackground.md) node. Each ParallaxLayer can be set to move at different speeds relative to the camera movement or the [`ParallaxBackground.scroll_offset`](#class_parallaxbackground_property_scroll_offset) value.
+A ParallaxLayer must be the child of a [`ParallaxBackground`](class_parallaxbackground.md) node. Each ParallaxLayer can be set to move at different speeds relative to the camera movement or the [`ParallaxBackground.scroll_offset`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_offset) value.
 
 This node's children will be affected by its scroll offset.
 
@@ -23,10 +23,10 @@ This node's children will be affected by its scroll offset.
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md)                                   | [`motion_mirroring`](#class_parallaxlayer_property_motion_mirroring) | ``Vector2(0, 0)``                                                           |
-| [`Vector2`](class_vector2.md)                                   | [`motion_offset`](#class_parallaxlayer_property_motion_offset)       | ``Vector2(0, 0)``                                                           |
-| [`Vector2`](class_vector2.md)                                   | [`motion_scale`](#class_parallaxlayer_property_motion_scale)         | ``Vector2(1, 1)``                                                           |
-| [PhysicsInterpolationMode](#enum_node_physicsinterpolationmode) | physics_interpolation_mode                                           | ``2`` (overrides [`Node`](#class_node_property_physics_interpolation_mode)) |
+| [`Vector2`](class_vector2.md)                                   | [`motion_mirroring`](class_parallaxlayer.md#class_parallaxlayer_property_motion_mirroring) | ``Vector2(0, 0)``                                                                        |
+| [`Vector2`](class_vector2.md)                                   | [`motion_offset`](class_parallaxlayer.md#class_parallaxlayer_property_motion_offset)       | ``Vector2(0, 0)``                                                                        |
+| [`Vector2`](class_vector2.md)                                   | [`motion_scale`](class_parallaxlayer.md#class_parallaxlayer_property_motion_scale)         | ``Vector2(1, 1)``                                                                        |
+| [PhysicsInterpolationMode](#enum_node_physicsinterpolationmode) | physics_interpolation_mode                                                                 | ``2`` (overrides [`Node`](class_node.md#class_node_property_physics_interpolation_mode)) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -45,7 +45,7 @@ The interval, in pixels, at which the **ParallaxLayer** is drawn repeatedly. Use
 
  **Note:** If you want the repetition to pixel-perfect match a [`Texture2D`](class_texture2d.md) displayed by a child node, you should account for any scale applied to the texture when defining this interval. For example, if you use a child [`Sprite2D`](class_sprite2d.md) scaled to `0.5` to display a 600x600 texture, and want this sprite to be repeated continuously horizontally, you should set the mirroring to `Vector2(300, 0)`.
 
- **Note:** If the length of the viewport axis is bigger than twice the repeated axis size, it will not repeat infinitely, as the parallax layer only draws 2 instances of the layer at any given time. The visibility window is calculated from the parent [`ParallaxBackground`](class_parallaxbackground.md)'s position, not the layer's own position. So, if you use mirroring, **do not** change the **ParallaxLayer** position relative to its parent. Instead, if you need to adjust the background's position, set the [`CanvasLayer.offset`](#class_canvaslayer_property_offset) property in the parent [`ParallaxBackground`](class_parallaxbackground.md).
+ **Note:** If the length of the viewport axis is bigger than twice the repeated axis size, it will not repeat infinitely, as the parallax layer only draws 2 instances of the layer at any given time. The visibility window is calculated from the parent [`ParallaxBackground`](class_parallaxbackground.md)'s position, not the layer's own position. So, if you use mirroring, **do not** change the **ParallaxLayer** position relative to its parent. Instead, if you need to adjust the background's position, set the [`CanvasLayer.offset`](class_canvaslayer.md#class_canvaslayer_property_offset) property in the parent [`ParallaxBackground`](class_parallaxbackground.md).
 
  **Note:** Despite the name, the layer will not be mirrored, it will only be repeated.
 
@@ -60,7 +60,7 @@ The interval, in pixels, at which the **ParallaxLayer** is drawn repeatedly. Use
 - `void` **set_motion_offset** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_motion_offset** ( )
 
-The ParallaxLayer's offset relative to the parent ParallaxBackground's [`ParallaxBackground.scroll_offset`](#class_parallaxbackground_property_scroll_offset).
+The ParallaxLayer's offset relative to the parent ParallaxBackground's [`ParallaxBackground.scroll_offset`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_offset).
 
 <!-- rst-class:: classref-item-separator -->
 

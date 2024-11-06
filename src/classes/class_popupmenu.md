@@ -15,11 +15,11 @@ A modal window used to display a list of options.
 
 **PopupMenu** is a modal window used to display a list of options. Useful for toolbars and context menus.
 
-The size of a **PopupMenu** can be limited by using [`Window.max_size`](#class_window_property_max_size). If the height of the list of items is larger than the maximum height of the **PopupMenu**, a [`ScrollContainer`](class_scrollcontainer.md) within the popup will allow the user to scroll the contents. If no maximum size is set, or if it is set to `0`, the **PopupMenu** height will be limited by its parent rect.
+The size of a **PopupMenu** can be limited by using [`Window.max_size`](class_window.md#class_window_property_max_size). If the height of the list of items is larger than the maximum height of the **PopupMenu**, a [`ScrollContainer`](class_scrollcontainer.md) within the popup will allow the user to scroll the contents. If no maximum size is set, or if it is set to `0`, the **PopupMenu** height will be limited by its parent rect.
 
 All `set_*` methods allow negative item indices, i.e. `-1` to access the last item, `-2` to select the second-to-last item, and so on.
 
- **Incremental search:** Like [`ItemList`](class_itemlist.md) and [`Tree`](class_tree.md), **PopupMenu** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing [`ProjectSettings.gui/timers/incremental_search_max_interval_msec`](#class_projectsettings_property_gui/timers/incremental_search_max_interval_msec).
+ **Incremental search:** Like [`ItemList`](class_itemlist.md) and [`Tree`](class_tree.md), **PopupMenu** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing [`ProjectSettings.gui/timers/incremental_search_max_interval_msec`](class_projectsettings.md#class_projectsettings_property_gui/timers/incremental_search_max_interval_msec).
 
  **Note:** The ID values used for items are limited to 32 bits, not full 64 bits of [`int`](class_int.md). This has a range of `-2^32` to `2^32 - 1`, i.e. `-2147483648` to `2147483647`.
 
@@ -27,129 +27,129 @@ All `set_*` methods allow negative item indices, i.e. `-1` to access the last it
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                     | [`allow_search`](#class_popupmenu_property_allow_search)                                         | ``true``  |
-| [`bool`](class_bool.md)                     | [`hide_on_checkable_item_selection`](#class_popupmenu_property_hide_on_checkable_item_selection) | ``true``  |
-| [`bool`](class_bool.md)                     | [`hide_on_item_selection`](#class_popupmenu_property_hide_on_item_selection)                     | ``true``  |
-| [`bool`](class_bool.md)                     | [`hide_on_state_item_selection`](#class_popupmenu_property_hide_on_state_item_selection)         | ``false`` |
-| [`int`](class_int.md)                       | [`item_count`](#class_popupmenu_property_item_count)                                             | ``0``     |
-| [`bool`](class_bool.md)                     | [`prefer_native_menu`](#class_popupmenu_property_prefer_native_menu)                             | ``false`` |
-| [`float`](class_float.md)                   | [`submenu_popup_delay`](#class_popupmenu_property_submenu_popup_delay)                           | ``0.3``   |
-| [SystemMenus](#enum_nativemenu_systemmenus) | [`system_menu_id`](#class_popupmenu_property_system_menu_id)                                     | ``0``     |
+| [`bool`](class_bool.md)                     | [`allow_search`](class_popupmenu.md#class_popupmenu_property_allow_search)                                         | ``true``  |
+| [`bool`](class_bool.md)                     | [`hide_on_checkable_item_selection`](class_popupmenu.md#class_popupmenu_property_hide_on_checkable_item_selection) | ``true``  |
+| [`bool`](class_bool.md)                     | [`hide_on_item_selection`](class_popupmenu.md#class_popupmenu_property_hide_on_item_selection)                     | ``true``  |
+| [`bool`](class_bool.md)                     | [`hide_on_state_item_selection`](class_popupmenu.md#class_popupmenu_property_hide_on_state_item_selection)         | ``false`` |
+| [`int`](class_int.md)                       | [`item_count`](class_popupmenu.md#class_popupmenu_property_item_count)                                             | ``0``     |
+| [`bool`](class_bool.md)                     | [`prefer_native_menu`](class_popupmenu.md#class_popupmenu_property_prefer_native_menu)                             | ``false`` |
+| [`float`](class_float.md)                   | [`submenu_popup_delay`](class_popupmenu.md#class_popupmenu_property_submenu_popup_delay)                           | ``0.3``   |
+| [SystemMenus](#enum_nativemenu_systemmenus) | [`system_menu_id`](class_popupmenu.md#class_popupmenu_property_system_menu_id)                                     | ``0``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                      | [`activate_item_by_event`](#class_popupmenu_method_activate_item_by_event) ( event: [`InputEvent`](class_inputevent.md), for_global_only: [`bool`](class_bool.md) = false )                                                                                                      |
-| `void`                                       | [`add_check_item`](#class_popupmenu_method_add_check_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                                                                      |
-| `void`                                       | [`add_check_shortcut`](#class_popupmenu_method_add_check_shortcut) ( shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                                                                                        |
-| `void`                                       | [`add_icon_check_item`](#class_popupmenu_method_add_icon_check_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                |
-| `void`                                       | [`add_icon_check_shortcut`](#class_popupmenu_method_add_icon_check_shortcut) ( texture: [`Texture2D`](class_texture2d.md), shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                                  |
-| `void`                                       | [`add_icon_item`](#class_popupmenu_method_add_icon_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                            |
-| `void`                                       | [`add_icon_radio_check_item`](#class_popupmenu_method_add_icon_radio_check_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                    |
-| `void`                                       | [`add_icon_radio_check_shortcut`](#class_popupmenu_method_add_icon_radio_check_shortcut) ( texture: [`Texture2D`](class_texture2d.md), shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                      |
-| `void`                                       | [`add_icon_shortcut`](#class_popupmenu_method_add_icon_shortcut) ( texture: [`Texture2D`](class_texture2d.md), shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false, allow_echo: [`bool`](class_bool.md) = false ) |
-| `void`                                       | [`add_item`](#class_popupmenu_method_add_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                                                                                  |
-| `void`                                       | [`add_multistate_item`](#class_popupmenu_method_add_multistate_item) ( label: [`String`](class_string.md), max_states: [`int`](class_int.md), default_state: [`int`](class_int.md) = 0, id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )               |
-| `void`                                       | [`add_radio_check_item`](#class_popupmenu_method_add_radio_check_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                                                          |
-| `void`                                       | [`add_radio_check_shortcut`](#class_popupmenu_method_add_radio_check_shortcut) ( shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                                                                            |
-| `void`                                       | [`add_separator`](#class_popupmenu_method_add_separator) ( label: [`String`](class_string.md) = "", id: [`int`](class_int.md) = -1 )                                                                                                                                             |
-| `void`                                       | [`add_shortcut`](#class_popupmenu_method_add_shortcut) ( shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false, allow_echo: [`bool`](class_bool.md) = false )                                                       |
-| `void`                                       | [`add_submenu_item`](#class_popupmenu_method_add_submenu_item) ( label: [`String`](class_string.md), submenu: [`String`](class_string.md), id: [`int`](class_int.md) = -1 )                                                                                                      |
-| `void`                                       | [`add_submenu_node_item`](#class_popupmenu_method_add_submenu_node_item) ( label: [`String`](class_string.md), submenu: [`PopupMenu`](class_popupmenu.md), id: [`int`](class_int.md) = -1 )                                                                                      |
-| `void`                                       | [`clear`](#class_popupmenu_method_clear) ( free_submenus: [`bool`](class_bool.md) = false )                                                                                                                                                                                      |
-| [`int`](class_int.md)                        | [`get_focused_item`](#class_popupmenu_method_get_focused_item) ( ) const[^const]                                                                                                                                                                                                 |
-| [Key](#enum_@globalscope_key)                | [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                            |
-| [`Texture2D`](class_texture2d.md)            | [`get_item_icon`](#class_popupmenu_method_get_item_icon) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                          |
-| [`int`](class_int.md)                        | [`get_item_icon_max_width`](#class_popupmenu_method_get_item_icon_max_width) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
-| [`Color`](class_color.md)                    | [`get_item_icon_modulate`](#class_popupmenu_method_get_item_icon_modulate) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                        |
-| [`int`](class_int.md)                        | [`get_item_id`](#class_popupmenu_method_get_item_id) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                              |
-| [`int`](class_int.md)                        | [`get_item_indent`](#class_popupmenu_method_get_item_indent) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                      |
-| [`int`](class_int.md)                        | [`get_item_index`](#class_popupmenu_method_get_item_index) ( id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                           |
-| [`String`](class_string.md)                  | [`get_item_language`](#class_popupmenu_method_get_item_language) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
-| [`Variant`](class_variant.md)                | [`get_item_metadata`](#class_popupmenu_method_get_item_metadata) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
-| [`int`](class_int.md)                        | [`get_item_multistate`](#class_popupmenu_method_get_item_multistate) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
-| [`int`](class_int.md)                        | [`get_item_multistate_max`](#class_popupmenu_method_get_item_multistate_max) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
-| [`Shortcut`](class_shortcut.md)              | [`get_item_shortcut`](#class_popupmenu_method_get_item_shortcut) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
-| [`String`](class_string.md)                  | [`get_item_submenu`](#class_popupmenu_method_get_item_submenu) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                    |
-| [`PopupMenu`](class_popupmenu.md)            | [`get_item_submenu_node`](#class_popupmenu_method_get_item_submenu_node) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                          |
-| [`String`](class_string.md)                  | [`get_item_text`](#class_popupmenu_method_get_item_text) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                          |
-| [TextDirection](#enum_control_textdirection) | [`get_item_text_direction`](#class_popupmenu_method_get_item_text_direction) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
-| [`String`](class_string.md)                  | [`get_item_tooltip`](#class_popupmenu_method_get_item_tooltip) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                    |
-| [`bool`](class_bool.md)                      | [`is_item_checkable`](#class_popupmenu_method_is_item_checkable) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
-| [`bool`](class_bool.md)                      | [`is_item_checked`](#class_popupmenu_method_is_item_checked) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                      |
-| [`bool`](class_bool.md)                      | [`is_item_disabled`](#class_popupmenu_method_is_item_disabled) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                    |
-| [`bool`](class_bool.md)                      | [`is_item_radio_checkable`](#class_popupmenu_method_is_item_radio_checkable) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
-| [`bool`](class_bool.md)                      | [`is_item_separator`](#class_popupmenu_method_is_item_separator) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
-| [`bool`](class_bool.md)                      | [`is_item_shortcut_disabled`](#class_popupmenu_method_is_item_shortcut_disabled) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                  |
-| [`bool`](class_bool.md)                      | [`is_native_menu`](#class_popupmenu_method_is_native_menu) ( ) const[^const]                                                                                                                                                                                                     |
-| [`bool`](class_bool.md)                      | [`is_system_menu`](#class_popupmenu_method_is_system_menu) ( ) const[^const]                                                                                                                                                                                                     |
-| `void`                                       | [`remove_item`](#class_popupmenu_method_remove_item) ( index: [`int`](class_int.md) )                                                                                                                                                                                            |
-| `void`                                       | [`scroll_to_item`](#class_popupmenu_method_scroll_to_item) ( index: [`int`](class_int.md) )                                                                                                                                                                                      |
-| `void`                                       | [`set_focused_item`](#class_popupmenu_method_set_focused_item) ( index: [`int`](class_int.md) )                                                                                                                                                                                  |
-| `void`                                       | [`set_item_accelerator`](#class_popupmenu_method_set_item_accelerator) ( index: [`int`](class_int.md), accel: [Key](#enum_@globalscope_key) )                                                                                                                                    |
-| `void`                                       | [`set_item_as_checkable`](#class_popupmenu_method_set_item_as_checkable) ( index: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                                       |
-| `void`                                       | [`set_item_as_radio_checkable`](#class_popupmenu_method_set_item_as_radio_checkable) ( index: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                           |
-| `void`                                       | [`set_item_as_separator`](#class_popupmenu_method_set_item_as_separator) ( index: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                                       |
-| `void`                                       | [`set_item_checked`](#class_popupmenu_method_set_item_checked) ( index: [`int`](class_int.md), checked: [`bool`](class_bool.md) )                                                                                                                                                |
-| `void`                                       | [`set_item_disabled`](#class_popupmenu_method_set_item_disabled) ( index: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                                             |
-| `void`                                       | [`set_item_icon`](#class_popupmenu_method_set_item_icon) ( index: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                                                                                                                                               |
-| `void`                                       | [`set_item_icon_max_width`](#class_popupmenu_method_set_item_icon_max_width) ( index: [`int`](class_int.md), width: [`int`](class_int.md) )                                                                                                                                      |
-| `void`                                       | [`set_item_icon_modulate`](#class_popupmenu_method_set_item_icon_modulate) ( index: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                                                                                                                 |
-| `void`                                       | [`set_item_id`](#class_popupmenu_method_set_item_id) ( index: [`int`](class_int.md), id: [`int`](class_int.md) )                                                                                                                                                                 |
-| `void`                                       | [`set_item_indent`](#class_popupmenu_method_set_item_indent) ( index: [`int`](class_int.md), indent: [`int`](class_int.md) )                                                                                                                                                     |
-| `void`                                       | [`set_item_language`](#class_popupmenu_method_set_item_language) ( index: [`int`](class_int.md), language: [`String`](class_string.md) )                                                                                                                                         |
-| `void`                                       | [`set_item_metadata`](#class_popupmenu_method_set_item_metadata) ( index: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                                                                                                                                       |
-| `void`                                       | [`set_item_multistate`](#class_popupmenu_method_set_item_multistate) ( index: [`int`](class_int.md), state: [`int`](class_int.md) )                                                                                                                                              |
-| `void`                                       | [`set_item_multistate_max`](#class_popupmenu_method_set_item_multistate_max) ( index: [`int`](class_int.md), max_states: [`int`](class_int.md) )                                                                                                                                 |
-| `void`                                       | [`set_item_shortcut`](#class_popupmenu_method_set_item_shortcut) ( index: [`int`](class_int.md), shortcut: [`Shortcut`](class_shortcut.md), global: [`bool`](class_bool.md) = false )                                                                                            |
-| `void`                                       | [`set_item_shortcut_disabled`](#class_popupmenu_method_set_item_shortcut_disabled) ( index: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                           |
-| `void`                                       | [`set_item_submenu`](#class_popupmenu_method_set_item_submenu) ( index: [`int`](class_int.md), submenu: [`String`](class_string.md) )                                                                                                                                            |
-| `void`                                       | [`set_item_submenu_node`](#class_popupmenu_method_set_item_submenu_node) ( index: [`int`](class_int.md), submenu: [`PopupMenu`](class_popupmenu.md) )                                                                                                                            |
-| `void`                                       | [`set_item_text`](#class_popupmenu_method_set_item_text) ( index: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                                                                     |
-| `void`                                       | [`set_item_text_direction`](#class_popupmenu_method_set_item_text_direction) ( index: [`int`](class_int.md), direction: [TextDirection](#enum_control_textdirection) )                                                                                                           |
-| `void`                                       | [`set_item_tooltip`](#class_popupmenu_method_set_item_tooltip) ( index: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                                                                                                                            |
-| `void`                                       | [`toggle_item_checked`](#class_popupmenu_method_toggle_item_checked) ( index: [`int`](class_int.md) )                                                                                                                                                                            |
-| `void`                                       | [`toggle_item_multistate`](#class_popupmenu_method_toggle_item_multistate) ( index: [`int`](class_int.md) )                                                                                                                                                                      |
+| [`bool`](class_bool.md)                      | [`activate_item_by_event`](class_popupmenu.md#class_popupmenu_method_activate_item_by_event) ( event: [`InputEvent`](class_inputevent.md), for_global_only: [`bool`](class_bool.md) = false )                                                                                                      |
+| `void`                                       | [`add_check_item`](class_popupmenu.md#class_popupmenu_method_add_check_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                                                                      |
+| `void`                                       | [`add_check_shortcut`](class_popupmenu.md#class_popupmenu_method_add_check_shortcut) ( shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                                                                                        |
+| `void`                                       | [`add_icon_check_item`](class_popupmenu.md#class_popupmenu_method_add_icon_check_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                |
+| `void`                                       | [`add_icon_check_shortcut`](class_popupmenu.md#class_popupmenu_method_add_icon_check_shortcut) ( texture: [`Texture2D`](class_texture2d.md), shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                                  |
+| `void`                                       | [`add_icon_item`](class_popupmenu.md#class_popupmenu_method_add_icon_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                            |
+| `void`                                       | [`add_icon_radio_check_item`](class_popupmenu.md#class_popupmenu_method_add_icon_radio_check_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                    |
+| `void`                                       | [`add_icon_radio_check_shortcut`](class_popupmenu.md#class_popupmenu_method_add_icon_radio_check_shortcut) ( texture: [`Texture2D`](class_texture2d.md), shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                      |
+| `void`                                       | [`add_icon_shortcut`](class_popupmenu.md#class_popupmenu_method_add_icon_shortcut) ( texture: [`Texture2D`](class_texture2d.md), shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false, allow_echo: [`bool`](class_bool.md) = false ) |
+| `void`                                       | [`add_item`](class_popupmenu.md#class_popupmenu_method_add_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                                                                                  |
+| `void`                                       | [`add_multistate_item`](class_popupmenu.md#class_popupmenu_method_add_multistate_item) ( label: [`String`](class_string.md), max_states: [`int`](class_int.md), default_state: [`int`](class_int.md) = 0, id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )               |
+| `void`                                       | [`add_radio_check_item`](class_popupmenu.md#class_popupmenu_method_add_radio_check_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                                                          |
+| `void`                                       | [`add_radio_check_shortcut`](class_popupmenu.md#class_popupmenu_method_add_radio_check_shortcut) ( shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                                                                            |
+| `void`                                       | [`add_separator`](class_popupmenu.md#class_popupmenu_method_add_separator) ( label: [`String`](class_string.md) = "", id: [`int`](class_int.md) = -1 )                                                                                                                                             |
+| `void`                                       | [`add_shortcut`](class_popupmenu.md#class_popupmenu_method_add_shortcut) ( shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false, allow_echo: [`bool`](class_bool.md) = false )                                                       |
+| `void`                                       | [`add_submenu_item`](class_popupmenu.md#class_popupmenu_method_add_submenu_item) ( label: [`String`](class_string.md), submenu: [`String`](class_string.md), id: [`int`](class_int.md) = -1 )                                                                                                      |
+| `void`                                       | [`add_submenu_node_item`](class_popupmenu.md#class_popupmenu_method_add_submenu_node_item) ( label: [`String`](class_string.md), submenu: [`PopupMenu`](class_popupmenu.md), id: [`int`](class_int.md) = -1 )                                                                                      |
+| `void`                                       | [`clear`](class_popupmenu.md#class_popupmenu_method_clear) ( free_submenus: [`bool`](class_bool.md) = false )                                                                                                                                                                                      |
+| [`int`](class_int.md)                        | [`get_focused_item`](class_popupmenu.md#class_popupmenu_method_get_focused_item) ( ) const[^const]                                                                                                                                                                                                 |
+| [Key](#enum_@globalscope_key)                | [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                            |
+| [`Texture2D`](class_texture2d.md)            | [`get_item_icon`](class_popupmenu.md#class_popupmenu_method_get_item_icon) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                          |
+| [`int`](class_int.md)                        | [`get_item_icon_max_width`](class_popupmenu.md#class_popupmenu_method_get_item_icon_max_width) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
+| [`Color`](class_color.md)                    | [`get_item_icon_modulate`](class_popupmenu.md#class_popupmenu_method_get_item_icon_modulate) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                        |
+| [`int`](class_int.md)                        | [`get_item_id`](class_popupmenu.md#class_popupmenu_method_get_item_id) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                              |
+| [`int`](class_int.md)                        | [`get_item_indent`](class_popupmenu.md#class_popupmenu_method_get_item_indent) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                      |
+| [`int`](class_int.md)                        | [`get_item_index`](class_popupmenu.md#class_popupmenu_method_get_item_index) ( id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                           |
+| [`String`](class_string.md)                  | [`get_item_language`](class_popupmenu.md#class_popupmenu_method_get_item_language) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
+| [`Variant`](class_variant.md)                | [`get_item_metadata`](class_popupmenu.md#class_popupmenu_method_get_item_metadata) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
+| [`int`](class_int.md)                        | [`get_item_multistate`](class_popupmenu.md#class_popupmenu_method_get_item_multistate) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
+| [`int`](class_int.md)                        | [`get_item_multistate_max`](class_popupmenu.md#class_popupmenu_method_get_item_multistate_max) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
+| [`Shortcut`](class_shortcut.md)              | [`get_item_shortcut`](class_popupmenu.md#class_popupmenu_method_get_item_shortcut) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
+| [`String`](class_string.md)                  | [`get_item_submenu`](class_popupmenu.md#class_popupmenu_method_get_item_submenu) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                    |
+| [`PopupMenu`](class_popupmenu.md)            | [`get_item_submenu_node`](class_popupmenu.md#class_popupmenu_method_get_item_submenu_node) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                          |
+| [`String`](class_string.md)                  | [`get_item_text`](class_popupmenu.md#class_popupmenu_method_get_item_text) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                          |
+| [TextDirection](#enum_control_textdirection) | [`get_item_text_direction`](class_popupmenu.md#class_popupmenu_method_get_item_text_direction) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
+| [`String`](class_string.md)                  | [`get_item_tooltip`](class_popupmenu.md#class_popupmenu_method_get_item_tooltip) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                    |
+| [`bool`](class_bool.md)                      | [`is_item_checkable`](class_popupmenu.md#class_popupmenu_method_is_item_checkable) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
+| [`bool`](class_bool.md)                      | [`is_item_checked`](class_popupmenu.md#class_popupmenu_method_is_item_checked) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                      |
+| [`bool`](class_bool.md)                      | [`is_item_disabled`](class_popupmenu.md#class_popupmenu_method_is_item_disabled) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                    |
+| [`bool`](class_bool.md)                      | [`is_item_radio_checkable`](class_popupmenu.md#class_popupmenu_method_is_item_radio_checkable) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
+| [`bool`](class_bool.md)                      | [`is_item_separator`](class_popupmenu.md#class_popupmenu_method_is_item_separator) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                  |
+| [`bool`](class_bool.md)                      | [`is_item_shortcut_disabled`](class_popupmenu.md#class_popupmenu_method_is_item_shortcut_disabled) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                  |
+| [`bool`](class_bool.md)                      | [`is_native_menu`](class_popupmenu.md#class_popupmenu_method_is_native_menu) ( ) const[^const]                                                                                                                                                                                                     |
+| [`bool`](class_bool.md)                      | [`is_system_menu`](class_popupmenu.md#class_popupmenu_method_is_system_menu) ( ) const[^const]                                                                                                                                                                                                     |
+| `void`                                       | [`remove_item`](class_popupmenu.md#class_popupmenu_method_remove_item) ( index: [`int`](class_int.md) )                                                                                                                                                                                            |
+| `void`                                       | [`scroll_to_item`](class_popupmenu.md#class_popupmenu_method_scroll_to_item) ( index: [`int`](class_int.md) )                                                                                                                                                                                      |
+| `void`                                       | [`set_focused_item`](class_popupmenu.md#class_popupmenu_method_set_focused_item) ( index: [`int`](class_int.md) )                                                                                                                                                                                  |
+| `void`                                       | [`set_item_accelerator`](class_popupmenu.md#class_popupmenu_method_set_item_accelerator) ( index: [`int`](class_int.md), accel: [Key](#enum_@globalscope_key) )                                                                                                                                    |
+| `void`                                       | [`set_item_as_checkable`](class_popupmenu.md#class_popupmenu_method_set_item_as_checkable) ( index: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                                       |
+| `void`                                       | [`set_item_as_radio_checkable`](class_popupmenu.md#class_popupmenu_method_set_item_as_radio_checkable) ( index: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                           |
+| `void`                                       | [`set_item_as_separator`](class_popupmenu.md#class_popupmenu_method_set_item_as_separator) ( index: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                                       |
+| `void`                                       | [`set_item_checked`](class_popupmenu.md#class_popupmenu_method_set_item_checked) ( index: [`int`](class_int.md), checked: [`bool`](class_bool.md) )                                                                                                                                                |
+| `void`                                       | [`set_item_disabled`](class_popupmenu.md#class_popupmenu_method_set_item_disabled) ( index: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                                             |
+| `void`                                       | [`set_item_icon`](class_popupmenu.md#class_popupmenu_method_set_item_icon) ( index: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                                                                                                                                               |
+| `void`                                       | [`set_item_icon_max_width`](class_popupmenu.md#class_popupmenu_method_set_item_icon_max_width) ( index: [`int`](class_int.md), width: [`int`](class_int.md) )                                                                                                                                      |
+| `void`                                       | [`set_item_icon_modulate`](class_popupmenu.md#class_popupmenu_method_set_item_icon_modulate) ( index: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                                                                                                                 |
+| `void`                                       | [`set_item_id`](class_popupmenu.md#class_popupmenu_method_set_item_id) ( index: [`int`](class_int.md), id: [`int`](class_int.md) )                                                                                                                                                                 |
+| `void`                                       | [`set_item_indent`](class_popupmenu.md#class_popupmenu_method_set_item_indent) ( index: [`int`](class_int.md), indent: [`int`](class_int.md) )                                                                                                                                                     |
+| `void`                                       | [`set_item_language`](class_popupmenu.md#class_popupmenu_method_set_item_language) ( index: [`int`](class_int.md), language: [`String`](class_string.md) )                                                                                                                                         |
+| `void`                                       | [`set_item_metadata`](class_popupmenu.md#class_popupmenu_method_set_item_metadata) ( index: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                                                                                                                                       |
+| `void`                                       | [`set_item_multistate`](class_popupmenu.md#class_popupmenu_method_set_item_multistate) ( index: [`int`](class_int.md), state: [`int`](class_int.md) )                                                                                                                                              |
+| `void`                                       | [`set_item_multistate_max`](class_popupmenu.md#class_popupmenu_method_set_item_multistate_max) ( index: [`int`](class_int.md), max_states: [`int`](class_int.md) )                                                                                                                                 |
+| `void`                                       | [`set_item_shortcut`](class_popupmenu.md#class_popupmenu_method_set_item_shortcut) ( index: [`int`](class_int.md), shortcut: [`Shortcut`](class_shortcut.md), global: [`bool`](class_bool.md) = false )                                                                                            |
+| `void`                                       | [`set_item_shortcut_disabled`](class_popupmenu.md#class_popupmenu_method_set_item_shortcut_disabled) ( index: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                           |
+| `void`                                       | [`set_item_submenu`](class_popupmenu.md#class_popupmenu_method_set_item_submenu) ( index: [`int`](class_int.md), submenu: [`String`](class_string.md) )                                                                                                                                            |
+| `void`                                       | [`set_item_submenu_node`](class_popupmenu.md#class_popupmenu_method_set_item_submenu_node) ( index: [`int`](class_int.md), submenu: [`PopupMenu`](class_popupmenu.md) )                                                                                                                            |
+| `void`                                       | [`set_item_text`](class_popupmenu.md#class_popupmenu_method_set_item_text) ( index: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                                                                     |
+| `void`                                       | [`set_item_text_direction`](class_popupmenu.md#class_popupmenu_method_set_item_text_direction) ( index: [`int`](class_int.md), direction: [TextDirection](#enum_control_textdirection) )                                                                                                           |
+| `void`                                       | [`set_item_tooltip`](class_popupmenu.md#class_popupmenu_method_set_item_tooltip) ( index: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                                                                                                                            |
+| `void`                                       | [`toggle_item_checked`](class_popupmenu.md#class_popupmenu_method_toggle_item_checked) ( index: [`int`](class_int.md) )                                                                                                                                                                            |
+| `void`                                       | [`toggle_item_multistate`](class_popupmenu.md#class_popupmenu_method_toggle_item_multistate) ( index: [`int`](class_int.md) )                                                                                                                                                                      |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)         | [`font_accelerator_color`](#class_popupmenu_theme_color_font_accelerator_color)             | ``Color(0.7, 0.7, 0.7, 0.8)``     |
-| [`Color`](class_color.md)         | [`font_color`](#class_popupmenu_theme_color_font_color)                                     | ``Color(0.875, 0.875, 0.875, 1)`` |
-| [`Color`](class_color.md)         | [`font_disabled_color`](#class_popupmenu_theme_color_font_disabled_color)                   | ``Color(0.4, 0.4, 0.4, 0.8)``     |
-| [`Color`](class_color.md)         | [`font_hover_color`](#class_popupmenu_theme_color_font_hover_color)                         | ``Color(0.875, 0.875, 0.875, 1)`` |
-| [`Color`](class_color.md)         | [`font_outline_color`](#class_popupmenu_theme_color_font_outline_color)                     | ``Color(0, 0, 0, 1)``             |
-| [`Color`](class_color.md)         | [`font_separator_color`](#class_popupmenu_theme_color_font_separator_color)                 | ``Color(0.875, 0.875, 0.875, 1)`` |
-| [`Color`](class_color.md)         | [`font_separator_outline_color`](#class_popupmenu_theme_color_font_separator_outline_color) | ``Color(0, 0, 0, 1)``             |
-| [`int`](class_int.md)             | [`h_separation`](#class_popupmenu_theme_constant_h_separation)                              | ``4``                             |
-| [`int`](class_int.md)             | [`icon_max_width`](#class_popupmenu_theme_constant_icon_max_width)                          | ``0``                             |
-| [`int`](class_int.md)             | [`indent`](#class_popupmenu_theme_constant_indent)                                          | ``10``                            |
-| [`int`](class_int.md)             | [`item_end_padding`](#class_popupmenu_theme_constant_item_end_padding)                      | ``2``                             |
-| [`int`](class_int.md)             | [`item_start_padding`](#class_popupmenu_theme_constant_item_start_padding)                  | ``2``                             |
-| [`int`](class_int.md)             | [`outline_size`](#class_popupmenu_theme_constant_outline_size)                              | ``0``                             |
-| [`int`](class_int.md)             | [`separator_outline_size`](#class_popupmenu_theme_constant_separator_outline_size)          | ``0``                             |
-| [`int`](class_int.md)             | [`v_separation`](#class_popupmenu_theme_constant_v_separation)                              | ``4``                             |
-| [`Font`](class_font.md)           | [`font`](#class_popupmenu_theme_font_font)                                                  |                                   |
-| [`Font`](class_font.md)           | [`font_separator`](#class_popupmenu_theme_font_font_separator)                              |                                   |
-| [`int`](class_int.md)             | [`font_separator_size`](#class_popupmenu_theme_font_size_font_separator_size)               |                                   |
-| [`int`](class_int.md)             | [`font_size`](#class_popupmenu_theme_font_size_font_size)                                   |                                   |
-| [`Texture2D`](class_texture2d.md) | [`checked`](#class_popupmenu_theme_icon_checked)                                            |                                   |
-| [`Texture2D`](class_texture2d.md) | [`checked_disabled`](#class_popupmenu_theme_icon_checked_disabled)                          |                                   |
-| [`Texture2D`](class_texture2d.md) | [`radio_checked`](#class_popupmenu_theme_icon_radio_checked)                                |                                   |
-| [`Texture2D`](class_texture2d.md) | [`radio_checked_disabled`](#class_popupmenu_theme_icon_radio_checked_disabled)              |                                   |
-| [`Texture2D`](class_texture2d.md) | [`radio_unchecked`](#class_popupmenu_theme_icon_radio_unchecked)                            |                                   |
-| [`Texture2D`](class_texture2d.md) | [`radio_unchecked_disabled`](#class_popupmenu_theme_icon_radio_unchecked_disabled)          |                                   |
-| [`Texture2D`](class_texture2d.md) | [`submenu`](#class_popupmenu_theme_icon_submenu)                                            |                                   |
-| [`Texture2D`](class_texture2d.md) | [`submenu_mirrored`](#class_popupmenu_theme_icon_submenu_mirrored)                          |                                   |
-| [`Texture2D`](class_texture2d.md) | [`unchecked`](#class_popupmenu_theme_icon_unchecked)                                        |                                   |
-| [`Texture2D`](class_texture2d.md) | [`unchecked_disabled`](#class_popupmenu_theme_icon_unchecked_disabled)                      |                                   |
-| [`StyleBox`](class_stylebox.md)   | [`hover`](#class_popupmenu_theme_style_hover)                                               |                                   |
-| [`StyleBox`](class_stylebox.md)   | [`labeled_separator_left`](#class_popupmenu_theme_style_labeled_separator_left)             |                                   |
-| [`StyleBox`](class_stylebox.md)   | [`labeled_separator_right`](#class_popupmenu_theme_style_labeled_separator_right)           |                                   |
-| [`StyleBox`](class_stylebox.md)   | [`panel`](#class_popupmenu_theme_style_panel)                                               |                                   |
-| [`StyleBox`](class_stylebox.md)   | [`separator`](#class_popupmenu_theme_style_separator)                                       |                                   |
+| [`Color`](class_color.md)         | [`font_accelerator_color`](class_popupmenu.md#class_popupmenu_theme_color_font_accelerator_color)             | ``Color(0.7, 0.7, 0.7, 0.8)``     |
+| [`Color`](class_color.md)         | [`font_color`](class_popupmenu.md#class_popupmenu_theme_color_font_color)                                     | ``Color(0.875, 0.875, 0.875, 1)`` |
+| [`Color`](class_color.md)         | [`font_disabled_color`](class_popupmenu.md#class_popupmenu_theme_color_font_disabled_color)                   | ``Color(0.4, 0.4, 0.4, 0.8)``     |
+| [`Color`](class_color.md)         | [`font_hover_color`](class_popupmenu.md#class_popupmenu_theme_color_font_hover_color)                         | ``Color(0.875, 0.875, 0.875, 1)`` |
+| [`Color`](class_color.md)         | [`font_outline_color`](class_popupmenu.md#class_popupmenu_theme_color_font_outline_color)                     | ``Color(0, 0, 0, 1)``             |
+| [`Color`](class_color.md)         | [`font_separator_color`](class_popupmenu.md#class_popupmenu_theme_color_font_separator_color)                 | ``Color(0.875, 0.875, 0.875, 1)`` |
+| [`Color`](class_color.md)         | [`font_separator_outline_color`](class_popupmenu.md#class_popupmenu_theme_color_font_separator_outline_color) | ``Color(0, 0, 0, 1)``             |
+| [`int`](class_int.md)             | [`h_separation`](class_popupmenu.md#class_popupmenu_theme_constant_h_separation)                              | ``4``                             |
+| [`int`](class_int.md)             | [`icon_max_width`](class_popupmenu.md#class_popupmenu_theme_constant_icon_max_width)                          | ``0``                             |
+| [`int`](class_int.md)             | [`indent`](class_popupmenu.md#class_popupmenu_theme_constant_indent)                                          | ``10``                            |
+| [`int`](class_int.md)             | [`item_end_padding`](class_popupmenu.md#class_popupmenu_theme_constant_item_end_padding)                      | ``2``                             |
+| [`int`](class_int.md)             | [`item_start_padding`](class_popupmenu.md#class_popupmenu_theme_constant_item_start_padding)                  | ``2``                             |
+| [`int`](class_int.md)             | [`outline_size`](class_popupmenu.md#class_popupmenu_theme_constant_outline_size)                              | ``0``                             |
+| [`int`](class_int.md)             | [`separator_outline_size`](class_popupmenu.md#class_popupmenu_theme_constant_separator_outline_size)          | ``0``                             |
+| [`int`](class_int.md)             | [`v_separation`](class_popupmenu.md#class_popupmenu_theme_constant_v_separation)                              | ``4``                             |
+| [`Font`](class_font.md)           | [`font`](class_popupmenu.md#class_popupmenu_theme_font_font)                                                  |                                   |
+| [`Font`](class_font.md)           | [`font_separator`](class_popupmenu.md#class_popupmenu_theme_font_font_separator)                              |                                   |
+| [`int`](class_int.md)             | [`font_separator_size`](class_popupmenu.md#class_popupmenu_theme_font_size_font_separator_size)               |                                   |
+| [`int`](class_int.md)             | [`font_size`](class_popupmenu.md#class_popupmenu_theme_font_size_font_size)                                   |                                   |
+| [`Texture2D`](class_texture2d.md) | [`checked`](class_popupmenu.md#class_popupmenu_theme_icon_checked)                                            |                                   |
+| [`Texture2D`](class_texture2d.md) | [`checked_disabled`](class_popupmenu.md#class_popupmenu_theme_icon_checked_disabled)                          |                                   |
+| [`Texture2D`](class_texture2d.md) | [`radio_checked`](class_popupmenu.md#class_popupmenu_theme_icon_radio_checked)                                |                                   |
+| [`Texture2D`](class_texture2d.md) | [`radio_checked_disabled`](class_popupmenu.md#class_popupmenu_theme_icon_radio_checked_disabled)              |                                   |
+| [`Texture2D`](class_texture2d.md) | [`radio_unchecked`](class_popupmenu.md#class_popupmenu_theme_icon_radio_unchecked)                            |                                   |
+| [`Texture2D`](class_texture2d.md) | [`radio_unchecked_disabled`](class_popupmenu.md#class_popupmenu_theme_icon_radio_unchecked_disabled)          |                                   |
+| [`Texture2D`](class_texture2d.md) | [`submenu`](class_popupmenu.md#class_popupmenu_theme_icon_submenu)                                            |                                   |
+| [`Texture2D`](class_texture2d.md) | [`submenu_mirrored`](class_popupmenu.md#class_popupmenu_theme_icon_submenu_mirrored)                          |                                   |
+| [`Texture2D`](class_texture2d.md) | [`unchecked`](class_popupmenu.md#class_popupmenu_theme_icon_unchecked)                                        |                                   |
+| [`Texture2D`](class_texture2d.md) | [`unchecked_disabled`](class_popupmenu.md#class_popupmenu_theme_icon_unchecked_disabled)                      |                                   |
+| [`StyleBox`](class_stylebox.md)   | [`hover`](class_popupmenu.md#class_popupmenu_theme_style_hover)                                               |                                   |
+| [`StyleBox`](class_stylebox.md)   | [`labeled_separator_left`](class_popupmenu.md#class_popupmenu_theme_style_labeled_separator_left)             |                                   |
+| [`StyleBox`](class_stylebox.md)   | [`labeled_separator_right`](class_popupmenu.md#class_popupmenu_theme_style_labeled_separator_right)           |                                   |
+| [`StyleBox`](class_stylebox.md)   | [`panel`](class_popupmenu.md#class_popupmenu_theme_style_panel)                                               |                                   |
+| [`StyleBox`](class_stylebox.md)   | [`separator`](class_popupmenu.md#class_popupmenu_theme_style_separator)                                       |                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -161,7 +161,7 @@ All `set_*` methods allow negative item indices, i.e. `-1` to access the last it
 
 **id_focused** ( id: [`int`](class_int.md) ) <div id="class_popupmenu_signal_id_focused"></div>
 
-Emitted when the user navigated to an item of some `id` using the [`ProjectSettings.input/ui_up`](#class_projectsettings_property_input/ui_up) or [`ProjectSettings.input/ui_down`](#class_projectsettings_property_input/ui_down) input action.
+Emitted when the user navigated to an item of some `id` using the [`ProjectSettings.input/ui_up`](class_projectsettings.md#class_projectsettings_property_input/ui_up) or [`ProjectSettings.input/ui_down`](class_projectsettings.md#class_projectsettings_property_input/ui_down) input action.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -275,7 +275,7 @@ The number of items currently in the list.
 
 If `true`, [`MenuBar`](class_menubar.md) will use native menu when supported.
 
- **Note:** If **PopupMenu** is linked to [`StatusIndicator`](class_statusindicator.md), [`MenuBar`](class_menubar.md), or another **PopupMenu** item it can use native menu regardless of this property, use [`is_native_menu`](#class_popupmenu_method_is_native_menu) to check it.
+ **Note:** If **PopupMenu** is linked to [`StatusIndicator`](class_statusindicator.md), [`MenuBar`](class_menubar.md), or another **PopupMenu** item it can use native menu regardless of this property, use [`is_native_menu`](class_popupmenu.md#class_popupmenu_method_is_native_menu) to check it.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -329,9 +329,9 @@ Returns `true` if an item was successfully activated.
 
 Adds a new checkable item with text `label`.
 
-An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
+An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](class_@globalscope.md#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
 
- **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](#class_popupmenu_method_set_item_checked) for more info on how to control it.
+ **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](class_popupmenu.md#class_popupmenu_method_set_item_checked) for more info on how to control it.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -345,7 +345,7 @@ Adds a new checkable item and assigns the specified [`Shortcut`](class_shortcut.
 
 An `id` can optionally be provided. If no `id` is provided, one will be created from the index.
 
- **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](#class_popupmenu_method_set_item_checked) for more info on how to control it.
+ **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](class_popupmenu.md#class_popupmenu_method_set_item_checked) for more info on how to control it.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -357,9 +357,9 @@ An `id` can optionally be provided. If no `id` is provided, one will be created 
 
 Adds a new checkable item with text `label` and icon `texture`.
 
-An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
+An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](class_@globalscope.md#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
 
- **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](#class_popupmenu_method_set_item_checked) for more info on how to control it.
+ **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](class_popupmenu.md#class_popupmenu_method_set_item_checked) for more info on how to control it.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -373,7 +373,7 @@ Adds a new checkable item and assigns the specified [`Shortcut`](class_shortcut.
 
 An `id` can optionally be provided. If no `id` is provided, one will be created from the index.
 
- **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](#class_popupmenu_method_set_item_checked) for more info on how to control it.
+ **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](class_popupmenu.md#class_popupmenu_method_set_item_checked) for more info on how to control it.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -385,7 +385,7 @@ An `id` can optionally be provided. If no `id` is provided, one will be created 
 
 Adds a new item with text `label` and icon `texture`.
 
-An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
+An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](class_@globalscope.md#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -395,7 +395,7 @@ An `id` can optionally be provided, as well as an accelerator (`accel`). If no `
 
 `void` **add_icon_radio_check_item** ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )<div id="class_popupmenu_method_add_icon_radio_check_item"></div>
 
-Same as [`add_icon_check_item`](#class_popupmenu_method_add_icon_check_item), but uses a radio check button.
+Same as [`add_icon_check_item`](class_popupmenu.md#class_popupmenu_method_add_icon_check_item), but uses a radio check button.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -405,7 +405,7 @@ Same as [`add_icon_check_item`](#class_popupmenu_method_add_icon_check_item), bu
 
 `void` **add_icon_radio_check_shortcut** ( texture: [`Texture2D`](class_texture2d.md), shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )<div id="class_popupmenu_method_add_icon_radio_check_shortcut"></div>
 
-Same as [`add_icon_check_shortcut`](#class_popupmenu_method_add_icon_check_shortcut), but uses a radio check button.
+Same as [`add_icon_check_shortcut`](class_popupmenu.md#class_popupmenu_method_add_icon_check_shortcut), but uses a radio check button.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -431,9 +431,9 @@ If `allow_echo` is `true`, the shortcut can be activated with echo events.
 
 Adds a new item with text `label`.
 
-An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
+An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](class_@globalscope.md#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
 
- **Note:** The provided `id` is used only in [`id_pressed`](#class_popupmenu_signal_id_pressed) and [`id_focused`](#class_popupmenu_signal_id_focused) signals. It's not related to the `index` arguments in e.g. [`set_item_checked`](#class_popupmenu_method_set_item_checked).
+ **Note:** The provided `id` is used only in [`id_pressed`](class_popupmenu.md#class_popupmenu_signal_id_pressed) and [`id_focused`](class_popupmenu.md#class_popupmenu_signal_id_focused) signals. It's not related to the `index` arguments in e.g. [`set_item_checked`](class_popupmenu.md#class_popupmenu_method_set_item_checked).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -447,9 +447,9 @@ Adds a new multistate item with text `label`.
 
 Contrarily to normal binary items, multistate items can have more than two states, as defined by `max_states`. The default value is defined by `default_state`.
 
-An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
+An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](class_@globalscope.md#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
 
- **Note:** Multistate items don't update their state automatically and must be done manually. See [`toggle_item_multistate`](#class_popupmenu_method_toggle_item_multistate), [`set_item_multistate`](#class_popupmenu_method_set_item_multistate) and [`get_item_multistate`](#class_popupmenu_method_get_item_multistate) for more info on how to control it.
+ **Note:** Multistate items don't update their state automatically and must be done manually. See [`toggle_item_multistate`](class_popupmenu.md#class_popupmenu_method_toggle_item_multistate), [`set_item_multistate`](class_popupmenu.md#class_popupmenu_method_set_item_multistate) and [`get_item_multistate`](class_popupmenu.md#class_popupmenu_method_get_item_multistate) for more info on how to control it.
 
 Example usage:
 
@@ -482,9 +482,9 @@ Example usage:
 
 Adds a new radio check button with text `label`.
 
-An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
+An `id` can optionally be provided, as well as an accelerator (`accel`). If no `id` is provided, one will be created from the index. If no `accel` is provided, then the default value of 0 (corresponding to [`@GlobalScope.KEY_NONE`](class_@globalscope.md#class_@globalscope_constant_key_none)) will be assigned to the item (which means it won't have any accelerator). See [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
 
- **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](#class_popupmenu_method_set_item_checked) for more info on how to control it.
+ **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](class_popupmenu.md#class_popupmenu_method_set_item_checked) for more info on how to control it.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -498,7 +498,7 @@ Adds a new radio check button and assigns a [`Shortcut`](class_shortcut.md) to i
 
 An `id` can optionally be provided. If no `id` is provided, one will be created from the index.
 
- **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](#class_popupmenu_method_set_item_checked) for more info on how to control it.
+ **Note:** Checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See [`set_item_checked`](class_popupmenu.md#class_popupmenu_method_set_item_checked) for more info on how to control it.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -534,7 +534,7 @@ If `allow_echo` is `true`, the shortcut can be activated with echo events.
 
 `void` **add_submenu_item** ( label: [`String`](class_string.md), submenu: [`String`](class_string.md), id: [`int`](class_int.md) = -1 )<div id="class_popupmenu_method_add_submenu_item"></div>
 
-**已弃用：** Prefer using [`add_submenu_node_item`](#class_popupmenu_method_add_submenu_node_item) instead.
+**已弃用：** Prefer using [`add_submenu_node_item`](class_popupmenu.md#class_popupmenu_method_add_submenu_node_item) instead.
 
 Adds an item that will act as a submenu of the parent **PopupMenu** node when clicked. The `submenu` argument must be the name of an existing **PopupMenu** that has been added as a child to this node. This submenu will be shown when the item is clicked, hovered for long enough, or activated using the `ui_select` or `ui_right` input actions.
 
@@ -582,7 +582,7 @@ Returns the index of the currently focused item. Returns `-1` if no item is focu
 
 [Key](#enum_@globalscope_key) **get_item_accelerator** ( index: [`int`](class_int.md) ) const[^const]<div id="class_popupmenu_method_get_item_accelerator"></div>
 
-Returns the accelerator of the item at the given `index`. An accelerator is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The return value is an integer which is generally a combination of [KeyModifierMask](#enum_@globalscope_keymodifiermask) s and [Key](#enum_@globalscope_key) s using bitwise OR such as `KEY_MASK_CTRL | KEY_A` (<i class="fa fa-gamepad"></i>`Ctrl + A`). If no accelerator is defined for the specified `index`, [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) returns `0` (corresponding to [`@GlobalScope.KEY_NONE`](#class_@globalscope_constant_key_none)).
+Returns the accelerator of the item at the given `index`. An accelerator is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The return value is an integer which is generally a combination of [KeyModifierMask](#enum_@globalscope_keymodifiermask) s and [Key](#enum_@globalscope_key) s using bitwise OR such as `KEY_MASK_CTRL | KEY_A` (<i class="fa fa-gamepad"></i>`Ctrl + A`). If no accelerator is defined for the specified `index`, [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) returns `0` (corresponding to [`@GlobalScope.KEY_NONE`](class_@globalscope.md#class_@globalscope_constant_key_none)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -662,7 +662,7 @@ Returns item's text language code.
 
 [`Variant`](class_variant.md) **get_item_metadata** ( index: [`int`](class_int.md) ) const[^const]<div id="class_popupmenu_method_get_item_metadata"></div>
 
-Returns the metadata of the specified item, which might be of any type. You can set it with [`set_item_metadata`](#class_popupmenu_method_set_item_metadata), which provides a simple way of assigning context data to items.
+Returns the metadata of the specified item, which might be of any type. You can set it with [`set_item_metadata`](class_popupmenu.md#class_popupmenu_method_set_item_metadata), which provides a simple way of assigning context data to items.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -702,9 +702,9 @@ Returns the [`Shortcut`](class_shortcut.md) associated with the item at the give
 
 [`String`](class_string.md) **get_item_submenu** ( index: [`int`](class_int.md) ) const[^const]<div id="class_popupmenu_method_get_item_submenu"></div>
 
-**已弃用：** Prefer using [`get_item_submenu_node`](#class_popupmenu_method_get_item_submenu_node) instead.
+**已弃用：** Prefer using [`get_item_submenu_node`](class_popupmenu.md#class_popupmenu_method_get_item_submenu_node) instead.
 
-Returns the submenu name of the item at the given `index`. See [`add_submenu_item`](#class_popupmenu_method_add_submenu_item) for more info on how to add a submenu.
+Returns the submenu name of the item at the given `index`. See [`add_submenu_item`](class_popupmenu.md#class_popupmenu_method_add_submenu_item) for more info on how to add a submenu.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -714,7 +714,7 @@ Returns the submenu name of the item at the given `index`. See [`add_submenu_ite
 
 [`PopupMenu`](class_popupmenu.md) **get_item_submenu_node** ( index: [`int`](class_int.md) ) const[^const]<div id="class_popupmenu_method_get_item_submenu_node"></div>
 
-Returns the submenu of the item at the given `index`, or `null` if no submenu was added. See [`add_submenu_node_item`](#class_popupmenu_method_add_submenu_node_item) for more info on how to add a submenu.
+Returns the submenu of the item at the given `index`, or `null` if no submenu was added. See [`add_submenu_node_item`](class_popupmenu.md#class_popupmenu_method_add_submenu_node_item) for more info on how to add a submenu.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -778,7 +778,7 @@ Returns `true` if the item at the given `index` is checked.
 
 Returns `true` if the item at the given `index` is disabled. When it is disabled it can't be selected, or its action invoked.
 
-See [`set_item_disabled`](#class_popupmenu_method_set_item_disabled) for more info on how to disable an item.
+See [`set_item_disabled`](class_popupmenu.md#class_popupmenu_method_set_item_disabled) for more info on how to disable an item.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -800,7 +800,7 @@ Returns `true` if the item at the given `index` has radio button-style checkabil
 
 [`bool`](class_bool.md) **is_item_separator** ( index: [`int`](class_int.md) ) const[^const]<div id="class_popupmenu_method_is_item_separator"></div>
 
-Returns `true` if the item is a separator. If it is, it will be displayed as a line. See [`add_separator`](#class_popupmenu_method_add_separator) for more info on how to add a separator.
+Returns `true` if the item is a separator. If it is, it will be displayed as a line. See [`add_separator`](class_popupmenu.md#class_popupmenu_method_add_separator) for more info on how to add a separator.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -946,7 +946,7 @@ Replaces the [`Texture2D`](class_texture2d.md) icon of the item at the given `in
 
 `void` **set_item_icon_max_width** ( index: [`int`](class_int.md), width: [`int`](class_int.md) )<div id="class_popupmenu_method_set_item_icon_max_width"></div>
 
-Sets the maximum allowed width of the icon for the item at the given `index`. This limit is applied on top of the default size of the icon and on top of [`icon_max_width`](#class_popupmenu_theme_constant_icon_max_width). The height is adjusted according to the icon's ratio.
+Sets the maximum allowed width of the icon for the item at the given `index`. This limit is applied on top of the default size of the icon and on top of [`icon_max_width`](class_popupmenu.md#class_popupmenu_theme_constant_icon_max_width). The height is adjusted according to the icon's ratio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -968,7 +968,7 @@ Sets a modulating [`Color`](class_color.md) of the item's icon at the given `ind
 
 Sets the `id` of the item at the given `index`.
 
-The `id` is used in [`id_pressed`](#class_popupmenu_signal_id_pressed) and [`id_focused`](#class_popupmenu_signal_id_focused) signals.
+The `id` is used in [`id_pressed`](class_popupmenu.md#class_popupmenu_signal_id_pressed) and [`id_focused`](class_popupmenu.md#class_popupmenu_signal_id_focused) signals.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -998,7 +998,7 @@ Sets language code of item's text used for line-breaking and text shaping algori
 
 `void` **set_item_metadata** ( index: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )<div id="class_popupmenu_method_set_item_metadata"></div>
 
-Sets the metadata of an item, which may be of any type. You can later get it with [`get_item_metadata`](#class_popupmenu_method_get_item_metadata), which provides a simple way of assigning context data to items.
+Sets the metadata of an item, which may be of any type. You can later get it with [`get_item_metadata`](class_popupmenu.md#class_popupmenu_method_get_item_metadata), which provides a simple way of assigning context data to items.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1008,7 +1008,7 @@ Sets the metadata of an item, which may be of any type. You can later get it wit
 
 `void` **set_item_multistate** ( index: [`int`](class_int.md), state: [`int`](class_int.md) )<div id="class_popupmenu_method_set_item_multistate"></div>
 
-Sets the state of a multistate item. See [`add_multistate_item`](#class_popupmenu_method_add_multistate_item) for details.
+Sets the state of a multistate item. See [`add_multistate_item`](class_popupmenu.md#class_popupmenu_method_add_multistate_item) for details.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1018,7 +1018,7 @@ Sets the state of a multistate item. See [`add_multistate_item`](#class_popupmen
 
 `void` **set_item_multistate_max** ( index: [`int`](class_int.md), max_states: [`int`](class_int.md) )<div id="class_popupmenu_method_set_item_multistate_max"></div>
 
-Sets the max states of a multistate item. See [`add_multistate_item`](#class_popupmenu_method_add_multistate_item) for details.
+Sets the max states of a multistate item. See [`add_multistate_item`](class_popupmenu.md#class_popupmenu_method_add_multistate_item) for details.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1048,7 +1048,7 @@ Disables the [`Shortcut`](class_shortcut.md) of the item at the given `index`.
 
 `void` **set_item_submenu** ( index: [`int`](class_int.md), submenu: [`String`](class_string.md) )<div id="class_popupmenu_method_set_item_submenu"></div>
 
-**已弃用：** Prefer using [`set_item_submenu_node`](#class_popupmenu_method_set_item_submenu_node) instead.
+**已弃用：** Prefer using [`set_item_submenu_node`](class_popupmenu.md#class_popupmenu_method_set_item_submenu_node) instead.
 
 Sets the submenu of the item at the given `index`. The submenu is the name of a child **PopupMenu** node that would be shown when the item is clicked.
 
@@ -1110,7 +1110,7 @@ Toggles the check state of the item at the given `index`.
 
 `void` **toggle_item_multistate** ( index: [`int`](class_int.md) )<div id="class_popupmenu_method_toggle_item_multistate"></div>
 
-Cycle to the next state of a multistate item. See [`add_multistate_item`](#class_popupmenu_method_add_multistate_item) for details.
+Cycle to the next state of a multistate item. See [`add_multistate_item`](class_popupmenu.md#class_popupmenu_method_add_multistate_item) for details.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -1122,7 +1122,7 @@ Cycle to the next state of a multistate item. See [`add_multistate_item`](#class
 
 [`Color`](class_color.md) **font_accelerator_color** = ``Color(0.7, 0.7, 0.7, 0.8)`` <div id="class_popupmenu_theme_color_font_accelerator_color"></div>
 
-The text [`Color`](class_color.md) used for shortcuts and accelerators that show next to the menu item name when defined. See [`get_item_accelerator`](#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
+The text [`Color`](class_color.md) used for shortcuts and accelerators that show next to the menu item name when defined. See [`get_item_accelerator`](class_popupmenu.md#class_popupmenu_method_get_item_accelerator) for more info on accelerators.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1172,7 +1172,7 @@ The tint of text outline of the menu item.
 
 [`Color`](class_color.md) **font_separator_color** = ``Color(0.875, 0.875, 0.875, 1)`` <div id="class_popupmenu_theme_color_font_separator_color"></div>
 
-[`Color`](class_color.md) used for labeled separators' text. See [`add_separator`](#class_popupmenu_method_add_separator).
+[`Color`](class_color.md) used for labeled separators' text. See [`add_separator`](class_popupmenu.md#class_popupmenu_method_add_separator).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1202,7 +1202,7 @@ The horizontal space between the item's elements.
 
 [`int`](class_int.md) **icon_max_width** = ``0`` <div id="class_popupmenu_theme_constant_icon_max_width"></div>
 
-The maximum allowed width of the item's icon. This limit is applied on top of the default size of the icon, but before the value set with [`set_item_icon_max_width`](#class_popupmenu_method_set_item_icon_max_width). The height is adjusted according to the icon's ratio.
+The maximum allowed width of the item's icon. This limit is applied on top of the default size of the icon, but before the value set with [`set_item_icon_max_width`](class_popupmenu.md#class_popupmenu_method_set_item_icon_max_width). The height is adjusted according to the icon's ratio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1244,7 +1244,7 @@ Horizontal padding to the left of the items (or right, in RTL layout).
 
 The size of the item text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_popupmenu_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_popupmenu.md#class_popupmenu_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1424,7 +1424,7 @@ Font size of the menu items.
 
 [`StyleBox`](class_stylebox.md) **labeled_separator_left** <div id="class_popupmenu_theme_style_labeled_separator_left"></div>
 
-[`StyleBox`](class_stylebox.md) for the left side of labeled separator. See [`add_separator`](#class_popupmenu_method_add_separator).
+[`StyleBox`](class_stylebox.md) for the left side of labeled separator. See [`add_separator`](class_popupmenu.md#class_popupmenu_method_add_separator).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1434,7 +1434,7 @@ Font size of the menu items.
 
 [`StyleBox`](class_stylebox.md) **labeled_separator_right** <div id="class_popupmenu_theme_style_labeled_separator_right"></div>
 
-[`StyleBox`](class_stylebox.md) for the right side of labeled separator. See [`add_separator`](#class_popupmenu_method_add_separator).
+[`StyleBox`](class_stylebox.md) for the right side of labeled separator. See [`add_separator`](class_popupmenu.md#class_popupmenu_method_add_separator).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1454,7 +1454,7 @@ Font size of the menu items.
 
 [`StyleBox`](class_stylebox.md) **separator** <div id="class_popupmenu_theme_style_separator"></div>
 
-[`StyleBox`](class_stylebox.md) used for the separators. See [`add_separator`](#class_popupmenu_method_add_separator).
+[`StyleBox`](class_stylebox.md) used for the separators. See [`add_separator`](class_popupmenu.md#class_popupmenu_method_add_separator).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

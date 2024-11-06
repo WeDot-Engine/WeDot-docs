@@ -19,13 +19,13 @@ Gives access to input variables (built-ins) available for the shader. See the sh
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`input_name`](#class_visualshadernodeinput_property_input_name) | ``"[None]"`` |
+| [`String`](class_string.md) | [`input_name`](class_visualshadernodeinput.md#class_visualshadernodeinput_property_input_name) | ``"[None]"`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_input_real_name`](#class_visualshadernodeinput_method_get_input_real_name) ( ) const[^const] |
+| [`String`](class_string.md) | [`get_input_real_name`](class_visualshadernodeinput.md#class_visualshadernodeinput_method_get_input_real_name) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -37,7 +37,7 @@ Gives access to input variables (built-ins) available for the shader. See the sh
 
 **input_type_changed** ( ) <div id="class_visualshadernodeinput_signal_input_type_changed"></div>
 
-Emitted when input is changed via [`input_name`](#class_visualshadernodeinput_property_input_name).
+Emitted when input is changed via [`input_name`](class_visualshadernodeinput.md#class_visualshadernodeinput_property_input_name).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -64,7 +64,7 @@ One of the several input constants in lower-case style like: "vertex" (`VERTEX`)
 
 [`String`](class_string.md) **get_input_real_name** ( ) const[^const]<div id="class_visualshadernodeinput_method_get_input_real_name"></div>
 
-Returns a translated name of the current constant in the Godot Shader Language. E.g. `"ALBEDO"` if the [`input_name`](#class_visualshadernodeinput_property_input_name) equal to `"albedo"`.
+Returns a translated name of the current constant in the Godot Shader Language. E.g. `"ALBEDO"` if the [`input_name`](class_visualshadernodeinput.md#class_visualshadernodeinput_property_input_name) equal to `"albedo"`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

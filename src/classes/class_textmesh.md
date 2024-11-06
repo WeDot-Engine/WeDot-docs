@@ -23,24 +23,24 @@ The UV layout is arranged in 4 horizontal strips, top to bottom: 40% of the heig
 
 |||
 |:-:|:--|
-| [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](#class_textmesh_property_autowrap_mode)                                                 | ``0``             |
-| [`float`](class_float.md)                                     | [`curve_step`](#class_textmesh_property_curve_step)                                                       | ``0.5``           |
-| [`float`](class_float.md)                                     | [`depth`](#class_textmesh_property_depth)                                                                 | ``0.05``          |
-| [`Font`](class_font.md)                                       | [`font`](#class_textmesh_property_font)                                                                   |                   |
-| [`int`](class_int.md)                                         | [`font_size`](#class_textmesh_property_font_size)                                                         | ``16``            |
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`horizontal_alignment`](#class_textmesh_property_horizontal_alignment)                                   | ``1``             |
-| [JustificationFlag](#enum_textserver_justificationflag)       | [`justification_flags`](#class_textmesh_property_justification_flags)                                     | ``163``           |
-| [`String`](class_string.md)                                   | [`language`](#class_textmesh_property_language)                                                           | ``""``            |
-| [`float`](class_float.md)                                     | [`line_spacing`](#class_textmesh_property_line_spacing)                                                   | ``0.0``           |
-| [`Vector2`](class_vector2.md)                                 | [`offset`](#class_textmesh_property_offset)                                                               | ``Vector2(0, 0)`` |
-| [`float`](class_float.md)                                     | [`pixel_size`](#class_textmesh_property_pixel_size)                                                       | ``0.01``          |
-| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`structured_text_bidi_override`](#class_textmesh_property_structured_text_bidi_override)                 | ``0``             |
-| [`Array`](class_array.md)                                     | [`structured_text_bidi_override_options`](#class_textmesh_property_structured_text_bidi_override_options) | ``[]``            |
-| [`String`](class_string.md)                                   | [`text`](#class_textmesh_property_text)                                                                   | ``""``            |
-| [Direction](#enum_textserver_direction)                       | [`text_direction`](#class_textmesh_property_text_direction)                                               | ``0``             |
-| [`bool`](class_bool.md)                                       | [`uppercase`](#class_textmesh_property_uppercase)                                                         | ``false``         |
-| [VerticalAlignment](#enum_@globalscope_verticalalignment)     | [`vertical_alignment`](#class_textmesh_property_vertical_alignment)                                       | ``1``             |
-| [`float`](class_float.md)                                     | [`width`](#class_textmesh_property_width)                                                                 | ``500.0``         |
+| [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](class_textmesh.md#class_textmesh_property_autowrap_mode)                                                 | ``0``             |
+| [`float`](class_float.md)                                     | [`curve_step`](class_textmesh.md#class_textmesh_property_curve_step)                                                       | ``0.5``           |
+| [`float`](class_float.md)                                     | [`depth`](class_textmesh.md#class_textmesh_property_depth)                                                                 | ``0.05``          |
+| [`Font`](class_font.md)                                       | [`font`](class_textmesh.md#class_textmesh_property_font)                                                                   |                   |
+| [`int`](class_int.md)                                         | [`font_size`](class_textmesh.md#class_textmesh_property_font_size)                                                         | ``16``            |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`horizontal_alignment`](class_textmesh.md#class_textmesh_property_horizontal_alignment)                                   | ``1``             |
+| [JustificationFlag](#enum_textserver_justificationflag)       | [`justification_flags`](class_textmesh.md#class_textmesh_property_justification_flags)                                     | ``163``           |
+| [`String`](class_string.md)                                   | [`language`](class_textmesh.md#class_textmesh_property_language)                                                           | ``""``            |
+| [`float`](class_float.md)                                     | [`line_spacing`](class_textmesh.md#class_textmesh_property_line_spacing)                                                   | ``0.0``           |
+| [`Vector2`](class_vector2.md)                                 | [`offset`](class_textmesh.md#class_textmesh_property_offset)                                                               | ``Vector2(0, 0)`` |
+| [`float`](class_float.md)                                     | [`pixel_size`](class_textmesh.md#class_textmesh_property_pixel_size)                                                       | ``0.01``          |
+| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`structured_text_bidi_override`](class_textmesh.md#class_textmesh_property_structured_text_bidi_override)                 | ``0``             |
+| [`Array`](class_array.md)                                     | [`structured_text_bidi_override_options`](class_textmesh.md#class_textmesh_property_structured_text_bidi_override_options) | ``[]``            |
+| [`String`](class_string.md)                                   | [`text`](class_textmesh.md#class_textmesh_property_text)                                                                   | ``""``            |
+| [Direction](#enum_textserver_direction)                       | [`text_direction`](class_textmesh.md#class_textmesh_property_text_direction)                                               | ``0``             |
+| [`bool`](class_bool.md)                                       | [`uppercase`](class_textmesh.md#class_textmesh_property_uppercase)                                                         | ``false``         |
+| [VerticalAlignment](#enum_@globalscope_verticalalignment)     | [`vertical_alignment`](class_textmesh.md#class_textmesh_property_vertical_alignment)                                       | ``1``             |
+| [`float`](class_float.md)                                     | [`width`](class_textmesh.md#class_textmesh_property_width)                                                                 | ``500.0``         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -55,7 +55,7 @@ The UV layout is arranged in 4 horizontal strips, top to bottom: 40% of the heig
 - `void` **set_autowrap_mode** ( value: [AutowrapMode](#enum_textserver_autowrapmode) )
 - [AutowrapMode](#enum_textserver_autowrapmode) **get_autowrap_mode** ( )
 
-If set to something other than [`TextServer.AUTOWRAP_OFF`](#class_textserver_constant_autowrap_off), the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
+If set to something other than [`TextServer.AUTOWRAP_OFF`](class_textserver.md#class_textserver_constant_autowrap_off), the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -226,7 +226,7 @@ Set additional options for BiDi override.
 
 The text to generate mesh from.
 
- **Note:** Due to being a [`Resource`](class_resource.md), it doesn't follow the rules of [`Node.auto_translate_mode`](#class_node_property_auto_translate_mode). If disabling translation is desired, it should be done manually with [`Object.set_message_translation`](#class_object_method_set_message_translation).
+ **Note:** Due to being a [`Resource`](class_resource.md), it doesn't follow the rules of [`Node.auto_translate_mode`](class_node.md#class_node_property_auto_translate_mode). If disabling translation is desired, it should be done manually with [`Object.set_message_translation`](class_object.md#class_object_method_set_message_translation).
 
 <!-- rst-class:: classref-item-separator -->
 

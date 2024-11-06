@@ -23,14 +23,14 @@ Abstract base class for all 3D shapes, intended for use in physics.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`custom_solver_bias`](#class_shape3d_property_custom_solver_bias) | ``0.0``  |
-| [`float`](class_float.md) | [`margin`](#class_shape3d_property_margin)                         | ``0.04`` |
+| [`float`](class_float.md) | [`custom_solver_bias`](class_shape3d.md#class_shape3d_property_custom_solver_bias) | ``0.0``  |
+| [`float`](class_float.md) | [`margin`](class_shape3d.md#class_shape3d_property_margin)                         | ``0.04`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`ArrayMesh`](class_arraymesh.md) | [`get_debug_mesh`](#class_shape3d_method_get_debug_mesh) ( ) |
+| [`ArrayMesh`](class_arraymesh.md) | [`get_debug_mesh`](class_shape3d.md#class_shape3d_method_get_debug_mesh) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -47,7 +47,7 @@ Abstract base class for all 3D shapes, intended for use in physics.
 
 The shape's custom solver bias. Defines how much bodies react to enforce contact separation when this shape is involved.
 
-When set to `0`, the default value from [`ProjectSettings.physics/3d/solver/default_contact_bias`](#class_projectsettings_property_physics/3d/solver/default_contact_bias) is used.
+When set to `0`, the default value from [`ProjectSettings.physics/3d/solver/default_contact_bias`](class_projectsettings.md#class_projectsettings_property_physics/3d/solver/default_contact_bias) is used.
 
 <!-- rst-class:: classref-item-separator -->
 

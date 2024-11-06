@@ -23,24 +23,24 @@ This is the CSG base class that provides CSG operation support to the various CS
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                 | [`calculate_tangents`](#class_csgshape3d_property_calculate_tangents) | ``true``  |
-| [`int`](class_int.md)                   | [`collision_layer`](#class_csgshape3d_property_collision_layer)       | ``1``     |
-| [`int`](class_int.md)                   | [`collision_mask`](#class_csgshape3d_property_collision_mask)         | ``1``     |
-| [`float`](class_float.md)               | [`collision_priority`](#class_csgshape3d_property_collision_priority) | ``1.0``   |
-| [Operation](#enum_csgshape3d_operation) | [`operation`](#class_csgshape3d_property_operation)                   | ``0``     |
-| [`float`](class_float.md)               | [`snap`](#class_csgshape3d_property_snap)                             | ``0.001`` |
-| [`bool`](class_bool.md)                 | [`use_collision`](#class_csgshape3d_property_use_collision)           | ``false`` |
+| [`bool`](class_bool.md)                 | [`calculate_tangents`](class_csgshape3d.md#class_csgshape3d_property_calculate_tangents) | ``true``  |
+| [`int`](class_int.md)                   | [`collision_layer`](class_csgshape3d.md#class_csgshape3d_property_collision_layer)       | ``1``     |
+| [`int`](class_int.md)                   | [`collision_mask`](class_csgshape3d.md#class_csgshape3d_property_collision_mask)         | ``1``     |
+| [`float`](class_float.md)               | [`collision_priority`](class_csgshape3d.md#class_csgshape3d_property_collision_priority) | ``1.0``   |
+| [Operation](#enum_csgshape3d_operation) | [`operation`](class_csgshape3d.md#class_csgshape3d_property_operation)                   | ``0``     |
+| [`float`](class_float.md)               | [`snap`](class_csgshape3d.md#class_csgshape3d_property_snap)                             | ``0.001`` |
+| [`bool`](class_bool.md)                 | [`use_collision`](class_csgshape3d.md#class_csgshape3d_property_use_collision)           | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`get_collision_layer_value`](#class_csgshape3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`bool`](class_bool.md)   | [`get_collision_mask_value`](#class_csgshape3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
-| [`Array`](class_array.md) | [`get_meshes`](#class_csgshape3d_method_get_meshes) ( ) const[^const]                                                                                     |
-| [`bool`](class_bool.md)   | [`is_root_shape`](#class_csgshape3d_method_is_root_shape) ( ) const[^const]                                                                               |
-| `void`                    | [`set_collision_layer_value`](#class_csgshape3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                    | [`set_collision_mask_value`](#class_csgshape3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )   |
+| [`bool`](class_bool.md)   | [`get_collision_layer_value`](class_csgshape3d.md#class_csgshape3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`bool`](class_bool.md)   | [`get_collision_mask_value`](class_csgshape3d.md#class_csgshape3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
+| [`Array`](class_array.md) | [`get_meshes`](class_csgshape3d.md#class_csgshape3d_method_get_meshes) ( ) const[^const]                                                                                     |
+| [`bool`](class_bool.md)   | [`is_root_shape`](class_csgshape3d.md#class_csgshape3d_method_is_root_shape) ( ) const[^const]                                                                               |
+| `void`                    | [`set_collision_layer_value`](class_csgshape3d.md#class_csgshape3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                    | [`set_collision_mask_value`](class_csgshape3d.md#class_csgshape3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -113,7 +113,7 @@ A contact is detected if object A is in any of the layers that object B scans, o
 - `void` **set_collision_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_collision_mask** ( )
 
-The physics layers this CSG shape scans for collisions. Only effective if [`use_collision`](#class_csgshape3d_property_use_collision) is `true`. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
+The physics layers this CSG shape scans for collisions. Only effective if [`use_collision`](class_csgshape3d.md#class_csgshape3d_property_use_collision) is `true`. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -126,7 +126,7 @@ The physics layers this CSG shape scans for collisions. Only effective if [`use_
 - `void` **set_collision_priority** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_collision_priority** ( )
 
-The priority used to solve colliding when occurring penetration. Only effective if [`use_collision`](#class_csgshape3d_property_use_collision) is `true`. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.
+The priority used to solve colliding when occurring penetration. Only effective if [`use_collision`](class_csgshape3d.md#class_csgshape3d_property_use_collision) is `true`. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,7 +165,7 @@ Snap makes the mesh vertices snap to a given distance so that the faces of two m
 - `void` **set_use_collision** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_collision** ( )
 
-Adds a collision shape to the physics engine for our CSG shape. This will always act like a static body. Note that the collision shape is still active even if the CSG shape itself is hidden. See also [`collision_mask`](#class_csgshape3d_property_collision_mask) and [`collision_priority`](#class_csgshape3d_property_collision_priority).
+Adds a collision shape to the physics engine for our CSG shape. This will always act like a static body. Note that the collision shape is still active even if the CSG shape itself is hidden. See also [`collision_mask`](class_csgshape3d.md#class_csgshape3d_property_collision_mask) and [`collision_priority`](class_csgshape3d.md#class_csgshape3d_property_collision_priority).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -177,7 +177,7 @@ Adds a collision shape to the physics engine for our CSG shape. This will always
 
 [`bool`](class_bool.md) **get_collision_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_csgshape3d_method_get_collision_layer_value"></div>
 
-Returns whether or not the specified layer of the [`collision_layer`](#class_csgshape3d_property_collision_layer) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_layer`](class_csgshape3d.md#class_csgshape3d_property_collision_layer) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -187,7 +187,7 @@ Returns whether or not the specified layer of the [`collision_layer`](#class_csg
 
 [`bool`](class_bool.md) **get_collision_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_csgshape3d_method_get_collision_mask_value"></div>
 
-Returns whether or not the specified layer of the [`collision_mask`](#class_csgshape3d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_mask`](class_csgshape3d.md#class_csgshape3d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -217,7 +217,7 @@ Returns `true` if this is a root shape and is thus the object that is rendered.
 
 `void` **set_collision_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_csgshape3d_method_set_collision_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_layer`](#class_csgshape3d_property_collision_layer), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_layer`](class_csgshape3d.md#class_csgshape3d_property_collision_layer), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -227,7 +227,7 @@ Based on `value`, enables or disables the specified layer in the [`collision_lay
 
 `void` **set_collision_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_csgshape3d_method_set_collision_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_mask`](#class_csgshape3d_property_collision_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_mask`](class_csgshape3d.md#class_csgshape3d_property_collision_mask), given a `layer_number` between 1 and 32.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

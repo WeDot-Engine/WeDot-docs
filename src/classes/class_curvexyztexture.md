@@ -21,11 +21,11 @@ If you only need to store one curve within a single texture, use [`CurveTexture`
 
 |||
 |:-:|:--|
-| [`Curve`](class_curve.md) | [`curve_x`](#class_curvexyztexture_property_curve_x) |                                                                                      |
-| [`Curve`](class_curve.md) | [`curve_y`](#class_curvexyztexture_property_curve_y) |                                                                                      |
-| [`Curve`](class_curve.md) | [`curve_z`](#class_curvexyztexture_property_curve_z) |                                                                                      |
-| [`bool`](class_bool.md)   | resource_local_to_scene                              | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [`int`](class_int.md)     | [`width`](#class_curvexyztexture_property_width)     | ``256``                                                                              |
+| [`Curve`](class_curve.md) | [`curve_x`](class_curvexyztexture.md#class_curvexyztexture_property_curve_x) |                                                                                                       |
+| [`Curve`](class_curve.md) | [`curve_y`](class_curvexyztexture.md#class_curvexyztexture_property_curve_y) |                                                                                                       |
+| [`Curve`](class_curve.md) | [`curve_z`](class_curvexyztexture.md#class_curvexyztexture_property_curve_z) |                                                                                                       |
+| [`bool`](class_bool.md)   | resource_local_to_scene                                                      | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [`int`](class_int.md)     | [`width`](class_curvexyztexture.md#class_curvexyztexture_property_width)     | ``256``                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 

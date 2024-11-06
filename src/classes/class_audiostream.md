@@ -21,19 +21,19 @@ Base class for audio streams. Audio streams are used for sound effects and music
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                                       | [`_get_beat_count`](#class_audiostream_private_method__get_beat_count) ( ) virtual[^virtual] const[^const]             |
-| [`float`](class_float.md)                                   | [`_get_bpm`](#class_audiostream_private_method__get_bpm) ( ) virtual[^virtual] const[^const]                           |
-| [`float`](class_float.md)                                   | [`_get_length`](#class_audiostream_private_method__get_length) ( ) virtual[^virtual] const[^const]                     |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_get_parameter_list`](#class_audiostream_private_method__get_parameter_list) ( ) virtual[^virtual] const[^const]     |
-| [`String`](class_string.md)                                 | [`_get_stream_name`](#class_audiostream_private_method__get_stream_name) ( ) virtual[^virtual] const[^const]           |
-| [`AudioStreamPlayback`](class_audiostreamplayback.md)       | [`_instantiate_playback`](#class_audiostream_private_method__instantiate_playback) ( ) virtual[^virtual] const[^const] |
-| [`bool`](class_bool.md)                                     | [`_is_monophonic`](#class_audiostream_private_method__is_monophonic) ( ) virtual[^virtual] const[^const]               |
-| [`bool`](class_bool.md)                                     | [`can_be_sampled`](#class_audiostream_method_can_be_sampled) ( ) const[^const]                                         |
-| [`AudioSample`](class_audiosample.md)                       | [`generate_sample`](#class_audiostream_method_generate_sample) ( ) const[^const]                                       |
-| [`float`](class_float.md)                                   | [`get_length`](#class_audiostream_method_get_length) ( ) const[^const]                                                 |
-| [`AudioStreamPlayback`](class_audiostreamplayback.md)       | [`instantiate_playback`](#class_audiostream_method_instantiate_playback) ( )                                           |
-| [`bool`](class_bool.md)                                     | [`is_meta_stream`](#class_audiostream_method_is_meta_stream) ( ) const[^const]                                         |
-| [`bool`](class_bool.md)                                     | [`is_monophonic`](#class_audiostream_method_is_monophonic) ( ) const[^const]                                           |
+| [`int`](class_int.md)                                       | [`_get_beat_count`](class_audiostream.md#class_audiostream_private_method__get_beat_count) ( ) virtual[^virtual] const[^const]             |
+| [`float`](class_float.md)                                   | [`_get_bpm`](class_audiostream.md#class_audiostream_private_method__get_bpm) ( ) virtual[^virtual] const[^const]                           |
+| [`float`](class_float.md)                                   | [`_get_length`](class_audiostream.md#class_audiostream_private_method__get_length) ( ) virtual[^virtual] const[^const]                     |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_get_parameter_list`](class_audiostream.md#class_audiostream_private_method__get_parameter_list) ( ) virtual[^virtual] const[^const]     |
+| [`String`](class_string.md)                                 | [`_get_stream_name`](class_audiostream.md#class_audiostream_private_method__get_stream_name) ( ) virtual[^virtual] const[^const]           |
+| [`AudioStreamPlayback`](class_audiostreamplayback.md)       | [`_instantiate_playback`](class_audiostream.md#class_audiostream_private_method__instantiate_playback) ( ) virtual[^virtual] const[^const] |
+| [`bool`](class_bool.md)                                     | [`_is_monophonic`](class_audiostream.md#class_audiostream_private_method__is_monophonic) ( ) virtual[^virtual] const[^const]               |
+| [`bool`](class_bool.md)                                     | [`can_be_sampled`](class_audiostream.md#class_audiostream_method_can_be_sampled) ( ) const[^const]                                         |
+| [`AudioSample`](class_audiosample.md)                       | [`generate_sample`](class_audiostream.md#class_audiostream_method_generate_sample) ( ) const[^const]                                       |
+| [`float`](class_float.md)                                   | [`get_length`](class_audiostream.md#class_audiostream_method_get_length) ( ) const[^const]                                                 |
+| [`AudioStreamPlayback`](class_audiostreamplayback.md)       | [`instantiate_playback`](class_audiostream.md#class_audiostream_method_instantiate_playback) ( )                                           |
+| [`bool`](class_bool.md)                                     | [`is_meta_stream`](class_audiostream.md#class_audiostream_method_is_meta_stream) ( ) const[^const]                                         |
+| [`bool`](class_bool.md)                                     | [`is_monophonic`](class_audiostream.md#class_audiostream_method_is_monophonic) ( ) const[^const]                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -59,7 +59,7 @@ Signal to be emitted to notify when the parameter list changed.
 
 Overridable method. Should return the total number of beats of this audio stream. Used by the engine to determine the position of every beat.
 
-Ideally, the returned value should be based off the stream's sample rate ([`AudioStreamWAV.mix_rate`](#class_audiostreamwav_property_mix_rate), for example).
+Ideally, the returned value should be based off the stream's sample rate ([`AudioStreamWAV.mix_rate`](class_audiostreamwav.md#class_audiostreamwav_property_mix_rate), for example).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -71,7 +71,7 @@ Ideally, the returned value should be based off the stream's sample rate ([`Audi
 
 Overridable method. Should return the tempo of this audio stream, in beats per minute (BPM). Used by the engine to determine the position of every beat.
 
-Ideally, the returned value should be based off the stream's sample rate ([`AudioStreamWAV.mix_rate`](#class_audiostreamwav_property_mix_rate), for example).
+Ideally, the returned value should be based off the stream's sample rate ([`AudioStreamWAV.mix_rate`](class_audiostreamwav.md#class_audiostreamwav_property_mix_rate), for example).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -81,7 +81,7 @@ Ideally, the returned value should be based off the stream's sample rate ([`Audi
 
 [`float`](class_float.md) **_get_length** ( ) virtual[^virtual] const[^const]<div id="class_audiostream_private_method__get_length"></div>
 
-Override this method to customize the returned value of [`get_length`](#class_audiostream_method_get_length). Should return the length of this audio stream, in seconds.
+Override this method to customize the returned value of [`get_length`](class_audiostream.md#class_audiostream_method_get_length). Should return the length of this audio stream, in seconds.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -91,7 +91,7 @@ Override this method to customize the returned value of [`get_length`](#class_au
 
 [Array](class_array.md) [`Dictionary`](class_dictionary.md) **_get_parameter_list** ( ) virtual[^virtual] const[^const]<div id="class_audiostream_private_method__get_parameter_list"></div>
 
-Return the controllable parameters of this stream. This array contains dictionaries with a property info description format (see [`Object.get_property_list`](#class_object_method_get_property_list)). Additionally, the default value for this parameter must be added tho each dictionary in "default_value" field.
+Return the controllable parameters of this stream. This array contains dictionaries with a property info description format (see [`Object.get_property_list`](class_object.md#class_object_method_get_property_list)). Additionally, the default value for this parameter must be added tho each dictionary in "default_value" field.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -111,7 +111,7 @@ Override this method to customize the name assigned to this audio stream. Unused
 
 [`AudioStreamPlayback`](class_audiostreamplayback.md) **_instantiate_playback** ( ) virtual[^virtual] const[^const]<div id="class_audiostream_private_method__instantiate_playback"></div>
 
-Override this method to customize the returned value of [`instantiate_playback`](#class_audiostream_method_instantiate_playback). Should returned a new [`AudioStreamPlayback`](class_audiostreamplayback.md) created when the stream is played (such as by an [`AudioStreamPlayer`](class_audiostreamplayer.md))..
+Override this method to customize the returned value of [`instantiate_playback`](class_audiostream.md#class_audiostream_method_instantiate_playback). Should returned a new [`AudioStreamPlayback`](class_audiostreamplayback.md) created when the stream is played (such as by an [`AudioStreamPlayer`](class_audiostreamplayer.md))..
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -121,7 +121,7 @@ Override this method to customize the returned value of [`instantiate_playback`]
 
 [`bool`](class_bool.md) **_is_monophonic** ( ) virtual[^virtual] const[^const]<div id="class_audiostream_private_method__is_monophonic"></div>
 
-Override this method to customize the returned value of [`is_monophonic`](#class_audiostream_method_is_monophonic). Should return `true` if this audio stream only supports one channel.
+Override this method to customize the returned value of [`is_monophonic`](class_audiostream.md#class_audiostream_method_is_monophonic). Should return `true` if this audio stream only supports one channel.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,7 +165,7 @@ Returns the length of the audio stream in seconds.
 
 [`AudioStreamPlayback`](class_audiostreamplayback.md) **instantiate_playback** ( )<div id="class_audiostream_method_instantiate_playback"></div>
 
-Returns a newly created [`AudioStreamPlayback`](class_audiostreamplayback.md) intended to play this audio stream. Useful for when you want to extend [`_instantiate_playback`](#class_audiostream_private_method__instantiate_playback) but call [`instantiate_playback`](#class_audiostream_method_instantiate_playback) from an internally held AudioStream subresource. An example of this can be found in the source code for `AudioStreamRandomPitch::instantiate_playback`.
+Returns a newly created [`AudioStreamPlayback`](class_audiostreamplayback.md) intended to play this audio stream. Useful for when you want to extend [`_instantiate_playback`](class_audiostream.md#class_audiostream_private_method__instantiate_playback) but call [`instantiate_playback`](class_audiostream.md#class_audiostream_method_instantiate_playback) from an internally held AudioStream subresource. An example of this can be found in the source code for `AudioStreamRandomPitch::instantiate_playback`.
 
 <!-- rst-class:: classref-item-separator -->
 

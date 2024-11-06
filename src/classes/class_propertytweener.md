@@ -13,21 +13,21 @@ Interpolates an [`Object`](class_object.md)'s property over time.
 
 ## 描述
 
-**PropertyTweener** is used to interpolate a property in an object. See [`Tween.tween_property`](#class_tween_method_tween_property) for more usage information.
+**PropertyTweener** is used to interpolate a property in an object. See [`Tween.tween_property`](class_tween.md#class_tween_method_tween_property) for more usage information.
 
- **Note:** [`Tween.tween_property`](#class_tween_method_tween_property) is the only correct way to create **PropertyTweener**. Any **PropertyTweener** created manually will not function correctly.
+ **Note:** [`Tween.tween_property`](class_tween.md#class_tween_method_tween_property) is the only correct way to create **PropertyTweener**. Any **PropertyTweener** created manually will not function correctly.
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PropertyTweener`](class_propertytweener.md) | [`as_relative`](#class_propertytweener_method_as_relative) ( )                                                                              |
-| [`PropertyTweener`](class_propertytweener.md) | [`from`](#class_propertytweener_method_from) ( value: [`Variant`](class_variant.md) )                                                       |
-| [`PropertyTweener`](class_propertytweener.md) | [`from_current`](#class_propertytweener_method_from_current) ( )                                                                            |
-| [`PropertyTweener`](class_propertytweener.md) | [`set_custom_interpolator`](#class_propertytweener_method_set_custom_interpolator) ( interpolator_method: [`Callable`](class_callable.md) ) |
-| [`PropertyTweener`](class_propertytweener.md) | [`set_delay`](#class_propertytweener_method_set_delay) ( delay: [`float`](class_float.md) )                                                 |
-| [`PropertyTweener`](class_propertytweener.md) | [`set_ease`](#class_propertytweener_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                                             |
-| [`PropertyTweener`](class_propertytweener.md) | [`set_trans`](#class_propertytweener_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) )                              |
+| [`PropertyTweener`](class_propertytweener.md) | [`as_relative`](class_propertytweener.md#class_propertytweener_method_as_relative) ( )                                                                              |
+| [`PropertyTweener`](class_propertytweener.md) | [`from`](class_propertytweener.md#class_propertytweener_method_from) ( value: [`Variant`](class_variant.md) )                                                       |
+| [`PropertyTweener`](class_propertytweener.md) | [`from_current`](class_propertytweener.md#class_propertytweener_method_from_current) ( )                                                                            |
+| [`PropertyTweener`](class_propertytweener.md) | [`set_custom_interpolator`](class_propertytweener.md#class_propertytweener_method_set_custom_interpolator) ( interpolator_method: [`Callable`](class_callable.md) ) |
+| [`PropertyTweener`](class_propertytweener.md) | [`set_delay`](class_propertytweener.md#class_propertytweener_method_set_delay) ( delay: [`float`](class_float.md) )                                                 |
+| [`PropertyTweener`](class_propertytweener.md) | [`set_ease`](class_propertytweener.md#class_propertytweener_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                                             |
+| [`PropertyTweener`](class_propertytweener.md) | [`set_trans`](class_propertytweener.md#class_propertytweener_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) )                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -79,7 +79,7 @@ Sets a custom initial value to the **PropertyTweener**.
 
 [`PropertyTweener`](class_propertytweener.md) **from_current** ( )<div id="class_propertytweener_method_from_current"></div>
 
-Makes the **PropertyTweener** use the current property value (i.e. at the time of creating this **PropertyTweener**) as a starting point. This is equivalent of using [`from`](#class_propertytweener_method_from) with the current value. These two calls will do the same:
+Makes the **PropertyTweener** use the current property value (i.e. at the time of creating this **PropertyTweener**) as a starting point. This is equivalent of using [`from`](class_propertytweener.md#class_propertytweener_method_from) with the current value. These two calls will do the same:
 
 ```
 

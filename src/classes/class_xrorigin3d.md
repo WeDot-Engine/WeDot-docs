@@ -25,8 +25,8 @@ For example, if your character is driving a car, the **XROrigin3D** node should 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`current`](#class_xrorigin3d_property_current)         | ``false`` |
-| [`float`](class_float.md) | [`world_scale`](#class_xrorigin3d_property_world_scale) | ``1.0``   |
+| [`bool`](class_bool.md)   | [`current`](class_xrorigin3d.md#class_xrorigin3d_property_current)         | ``false`` |
+| [`float`](class_float.md) | [`world_scale`](class_xrorigin3d.md#class_xrorigin3d_property_world_scale) | ``1.0``   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -54,7 +54,7 @@ If `true`, this origin node is currently being used by the [`XRServer`](class_xr
 - `void` **set_world_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_world_scale** ( )
 
-The scale of the game world compared to the real world. This is the same as [`XRServer.world_scale`](#class_xrserver_property_world_scale). By default, most AR/VR platforms assume that 1 game unit corresponds to 1 real world meter.
+The scale of the game world compared to the real world. This is the same as [`XRServer.world_scale`](class_xrserver.md#class_xrserver_property_world_scale). By default, most AR/VR platforms assume that 1 game unit corresponds to 1 real world meter.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

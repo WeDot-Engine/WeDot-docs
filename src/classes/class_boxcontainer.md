@@ -21,20 +21,20 @@ A container that arranges its child controls horizontally or vertically, rearran
 
 |||
 |:-:|:--|
-| [AlignmentMode](#enum_boxcontainer_alignmentmode) | [`alignment`](#class_boxcontainer_property_alignment) | ``0``     |
-| [`bool`](class_bool.md)                           | [`vertical`](#class_boxcontainer_property_vertical)   | ``false`` |
+| [AlignmentMode](#enum_boxcontainer_alignmentmode) | [`alignment`](class_boxcontainer.md#class_boxcontainer_property_alignment) | ``0``     |
+| [`bool`](class_bool.md)                           | [`vertical`](class_boxcontainer.md#class_boxcontainer_property_vertical)   | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Control`](class_control.md) | [`add_spacer`](#class_boxcontainer_method_add_spacer) ( begin: [`bool`](class_bool.md) ) |
+| [`Control`](class_control.md) | [`add_spacer`](class_boxcontainer.md#class_boxcontainer_method_add_spacer) ( begin: [`bool`](class_bool.md) ) |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`separation`](#class_boxcontainer_theme_constant_separation) | ``4`` |
+| [`int`](class_int.md) | [`separation`](class_boxcontainer.md#class_boxcontainer_theme_constant_separation) | ``4`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -77,7 +77,7 @@ The child controls will be arranged at the end of the container, i.e. bottom if 
 - `void` **set_alignment** ( value: [AlignmentMode](#enum_boxcontainer_alignmentmode) )
 - [AlignmentMode](#enum_boxcontainer_alignmentmode) **get_alignment** ( )
 
-The alignment of the container's children (must be one of [`ALIGNMENT_BEGIN`](#class_boxcontainer_constant_alignment_begin), [`ALIGNMENT_CENTER`](#class_boxcontainer_constant_alignment_center), or [`ALIGNMENT_END`](#class_boxcontainer_constant_alignment_end)).
+The alignment of the container's children (must be one of [`ALIGNMENT_BEGIN`](class_boxcontainer.md#class_boxcontainer_constant_alignment_begin), [`ALIGNMENT_CENTER`](class_boxcontainer.md#class_boxcontainer_constant_alignment_center), or [`ALIGNMENT_END`](class_boxcontainer.md#class_boxcontainer_constant_alignment_end)).
 
 <!-- rst-class:: classref-item-separator -->
 

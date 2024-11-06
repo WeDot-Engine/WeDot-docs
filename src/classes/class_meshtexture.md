@@ -19,10 +19,10 @@ Simple texture that uses a mesh to draw itself. It's limited because flags can't
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`base_texture`](#class_meshtexture_property_base_texture) |                                                                                      |
-| [`Vector2`](class_vector2.md)     | [`image_size`](#class_meshtexture_property_image_size)     | ``Vector2(0, 0)``                                                                    |
-| [`Mesh`](class_mesh.md)           | [`mesh`](#class_meshtexture_property_mesh)                 |                                                                                      |
-| [`bool`](class_bool.md)           | resource_local_to_scene                                    | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
+| [`Texture2D`](class_texture2d.md) | [`base_texture`](class_meshtexture.md#class_meshtexture_property_base_texture) |                                                                                                       |
+| [`Vector2`](class_vector2.md)     | [`image_size`](class_meshtexture.md#class_meshtexture_property_image_size)     | ``Vector2(0, 0)``                                                                                     |
+| [`Mesh`](class_mesh.md)           | [`mesh`](class_meshtexture.md#class_meshtexture_property_mesh)                 |                                                                                                       |
+| [`bool`](class_bool.md)           | resource_local_to_scene                                                        | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -23,34 +23,34 @@ The [`Texture2D`](class_texture2d.md) s associated with the Decal are automatica
 
  **Note:** Decals are only supported in the Forward+ and Mobile rendering methods, not Compatibility. When using the Mobile rendering method, only 8 decals can be displayed on each mesh resource. Attempting to display more than 8 decals on a single mesh resource will result in decals flickering in and out as the camera moves.
 
- **Note:** When using the Mobile rendering method, decals will only correctly affect meshes whose visibility AABB intersects with the decal's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, [`GeometryInstance3D.extra_cull_margin`](#class_geometryinstance3d_property_extra_cull_margin) must be increased on the mesh. Otherwise, the decal may not be visible on the mesh.
+ **Note:** When using the Mobile rendering method, decals will only correctly affect meshes whose visibility AABB intersects with the decal's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, [`GeometryInstance3D.extra_cull_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_extra_cull_margin) must be increased on the mesh. Otherwise, the decal may not be visible on the mesh.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)         | [`albedo_mix`](#class_decal_property_albedo_mix)                       | ``1.0``               |
-| [`int`](class_int.md)             | [`cull_mask`](#class_decal_property_cull_mask)                         | ``1048575``           |
-| [`float`](class_float.md)         | [`distance_fade_begin`](#class_decal_property_distance_fade_begin)     | ``40.0``              |
-| [`bool`](class_bool.md)           | [`distance_fade_enabled`](#class_decal_property_distance_fade_enabled) | ``false``             |
-| [`float`](class_float.md)         | [`distance_fade_length`](#class_decal_property_distance_fade_length)   | ``10.0``              |
-| [`float`](class_float.md)         | [`emission_energy`](#class_decal_property_emission_energy)             | ``1.0``               |
-| [`float`](class_float.md)         | [`lower_fade`](#class_decal_property_lower_fade)                       | ``0.3``               |
-| [`Color`](class_color.md)         | [`modulate`](#class_decal_property_modulate)                           | ``Color(1, 1, 1, 1)`` |
-| [`float`](class_float.md)         | [`normal_fade`](#class_decal_property_normal_fade)                     | ``0.0``               |
-| [`Vector3`](class_vector3.md)     | [`size`](#class_decal_property_size)                                   | ``Vector3(2, 2, 2)``  |
-| [`Texture2D`](class_texture2d.md) | [`texture_albedo`](#class_decal_property_texture_albedo)               |                       |
-| [`Texture2D`](class_texture2d.md) | [`texture_emission`](#class_decal_property_texture_emission)           |                       |
-| [`Texture2D`](class_texture2d.md) | [`texture_normal`](#class_decal_property_texture_normal)               |                       |
-| [`Texture2D`](class_texture2d.md) | [`texture_orm`](#class_decal_property_texture_orm)                     |                       |
-| [`float`](class_float.md)         | [`upper_fade`](#class_decal_property_upper_fade)                       | ``0.3``               |
+| [`float`](class_float.md)         | [`albedo_mix`](class_decal.md#class_decal_property_albedo_mix)                       | ``1.0``               |
+| [`int`](class_int.md)             | [`cull_mask`](class_decal.md#class_decal_property_cull_mask)                         | ``1048575``           |
+| [`float`](class_float.md)         | [`distance_fade_begin`](class_decal.md#class_decal_property_distance_fade_begin)     | ``40.0``              |
+| [`bool`](class_bool.md)           | [`distance_fade_enabled`](class_decal.md#class_decal_property_distance_fade_enabled) | ``false``             |
+| [`float`](class_float.md)         | [`distance_fade_length`](class_decal.md#class_decal_property_distance_fade_length)   | ``10.0``              |
+| [`float`](class_float.md)         | [`emission_energy`](class_decal.md#class_decal_property_emission_energy)             | ``1.0``               |
+| [`float`](class_float.md)         | [`lower_fade`](class_decal.md#class_decal_property_lower_fade)                       | ``0.3``               |
+| [`Color`](class_color.md)         | [`modulate`](class_decal.md#class_decal_property_modulate)                           | ``Color(1, 1, 1, 1)`` |
+| [`float`](class_float.md)         | [`normal_fade`](class_decal.md#class_decal_property_normal_fade)                     | ``0.0``               |
+| [`Vector3`](class_vector3.md)     | [`size`](class_decal.md#class_decal_property_size)                                   | ``Vector3(2, 2, 2)``  |
+| [`Texture2D`](class_texture2d.md) | [`texture_albedo`](class_decal.md#class_decal_property_texture_albedo)               |                       |
+| [`Texture2D`](class_texture2d.md) | [`texture_emission`](class_decal.md#class_decal_property_texture_emission)           |                       |
+| [`Texture2D`](class_texture2d.md) | [`texture_normal`](class_decal.md#class_decal_property_texture_normal)               |                       |
+| [`Texture2D`](class_texture2d.md) | [`texture_orm`](class_decal.md#class_decal_property_texture_orm)                     |                       |
+| [`float`](class_float.md)         | [`upper_fade`](class_decal.md#class_decal_property_upper_fade)                       | ``0.3``               |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`get_texture`](#class_decal_method_get_texture) ( type: [DecalTexture](#enum_decal_decaltexture) ) const[^const]                               |
-| `void`                            | [`set_texture`](#class_decal_method_set_texture) ( type: [DecalTexture](#enum_decal_decaltexture), texture: [`Texture2D`](class_texture2d.md) ) |
+| [`Texture2D`](class_texture2d.md) | [`get_texture`](class_decal.md#class_decal_method_get_texture) ( type: [DecalTexture](#enum_decal_decaltexture) ) const[^const]                               |
+| `void`                            | [`set_texture`](class_decal.md#class_decal_method_set_texture) ( type: [DecalTexture](#enum_decal_decaltexture), texture: [`Texture2D`](class_texture2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -66,25 +66,25 @@ enum **DecalTexture**: <div id="enum_decal_decaltexture"></div>
 
 [DecalTexture](#enum_decal_decaltexture) **TEXTURE_ALBEDO** = ``0``
 
-[`Texture2D`](class_texture2d.md) corresponding to [`texture_albedo`](#class_decal_property_texture_albedo).
+[`Texture2D`](class_texture2d.md) corresponding to [`texture_albedo`](class_decal.md#class_decal_property_texture_albedo).
 
 <div id="_class_decal_constant_texture_normal"></div>
 
 [DecalTexture](#enum_decal_decaltexture) **TEXTURE_NORMAL** = ``1``
 
-[`Texture2D`](class_texture2d.md) corresponding to [`texture_normal`](#class_decal_property_texture_normal).
+[`Texture2D`](class_texture2d.md) corresponding to [`texture_normal`](class_decal.md#class_decal_property_texture_normal).
 
 <div id="_class_decal_constant_texture_orm"></div>
 
 [DecalTexture](#enum_decal_decaltexture) **TEXTURE_ORM** = ``2``
 
-[`Texture2D`](class_texture2d.md) corresponding to [`texture_orm`](#class_decal_property_texture_orm).
+[`Texture2D`](class_texture2d.md) corresponding to [`texture_orm`](class_decal.md#class_decal_property_texture_orm).
 
 <div id="_class_decal_constant_texture_emission"></div>
 
 [DecalTexture](#enum_decal_decaltexture) **TEXTURE_EMISSION** = ``3``
 
-[`Texture2D`](class_texture2d.md) corresponding to [`texture_emission`](#class_decal_property_texture_emission).
+[`Texture2D`](class_texture2d.md) corresponding to [`texture_emission`](class_decal.md#class_decal_property_texture_emission).
 
 <div id="_class_decal_constant_texture_max"></div>
 
@@ -105,7 +105,7 @@ Max size of [DecalTexture](#enum_decal_decaltexture) enum.
 - `void` **set_albedo_mix** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_albedo_mix** ( )
 
-Blends the albedo [`Color`](class_color.md) of the decal with albedo [`Color`](class_color.md) of the underlying mesh. This can be set to `0.0` to create a decal that only affects normal or ORM. In this case, an albedo texture is still required as its alpha channel will determine where the normal and ORM will be overridden. See also [`modulate`](#class_decal_property_modulate).
+Blends the albedo [`Color`](class_color.md) of the decal with albedo [`Color`](class_color.md) of the underlying mesh. This can be set to `0.0` to create a decal that only affects normal or ORM. In this case, an albedo texture is still required as its alpha channel will determine where the normal and ORM will be overridden. See also [`modulate`](class_decal.md#class_decal_property_modulate).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -118,7 +118,7 @@ Blends the albedo [`Color`](class_color.md) of the decal with albedo [`Color`](c
 - `void` **set_cull_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_cull_mask** ( )
 
-Specifies which [`VisualInstance3D.layers`](#class_visualinstance3d_property_layers) this decal will project on. By default, Decals affect all layers. This is used so you can specify which types of objects receive the Decal and which do not. This is especially useful so you can ensure that dynamic objects don't accidentally receive a Decal intended for the terrain under them.
+Specifies which [`VisualInstance3D.layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers) this decal will project on. By default, Decals affect all layers. This is used so you can specify which types of objects receive the Decal and which do not. This is especially useful so you can ensure that dynamic objects don't accidentally receive a Decal intended for the terrain under them.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -144,7 +144,7 @@ The distance from the camera at which the Decal begins to fade away (in 3D units
 - `void` **set_enable_distance_fade** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_distance_fade_enabled** ( )
 
-If `true`, decals will smoothly fade away when far from the active [`Camera3D`](class_camera3d.md) starting at [`distance_fade_begin`](#class_decal_property_distance_fade_begin). The Decal will fade out over [`distance_fade_begin`](#class_decal_property_distance_fade_begin) + [`distance_fade_length`](#class_decal_property_distance_fade_length), after which it will be culled and not sent to the shader at all. Use this to reduce the number of active Decals in a scene and thus improve performance.
+If `true`, decals will smoothly fade away when far from the active [`Camera3D`](class_camera3d.md) starting at [`distance_fade_begin`](class_decal.md#class_decal_property_distance_fade_begin). The Decal will fade out over [`distance_fade_begin`](class_decal.md#class_decal_property_distance_fade_begin) + [`distance_fade_length`](class_decal.md#class_decal_property_distance_fade_length), after which it will be culled and not sent to the shader at all. Use this to reduce the number of active Decals in a scene and thus improve performance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -170,7 +170,7 @@ The distance over which the Decal fades (in 3D units). The Decal becomes slowly 
 - `void` **set_emission_energy** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_energy** ( )
 
-Energy multiplier for the emission texture. This will make the decal emit light at a higher or lower intensity, independently of the albedo color. See also [`modulate`](#class_decal_property_modulate).
+Energy multiplier for the emission texture. This will make the decal emit light at a higher or lower intensity, independently of the albedo color. See also [`modulate`](class_decal.md#class_decal_property_modulate).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -183,7 +183,7 @@ Energy multiplier for the emission texture. This will make the decal emit light 
 - `void` **set_lower_fade** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_lower_fade** ( )
 
-Sets the curve over which the decal will fade as the surface gets further from the center of the [`AABB`](class_aabb.md). Only positive values are valid (negative values will be clamped to `0.0`). See also [`upper_fade`](#class_decal_property_upper_fade).
+Sets the curve over which the decal will fade as the surface gets further from the center of the [`AABB`](class_aabb.md). Only positive values are valid (negative values will be clamped to `0.0`). See also [`upper_fade`](class_decal.md#class_decal_property_upper_fade).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -196,7 +196,7 @@ Sets the curve over which the decal will fade as the surface gets further from t
 - `void` **set_modulate** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_modulate** ( )
 
-Changes the [`Color`](class_color.md) of the Decal by multiplying the albedo and emission colors with this value. The alpha component is only taken into account when multiplying the albedo color, not the emission color. See also [`emission_energy`](#class_decal_property_emission_energy) and [`albedo_mix`](#class_decal_property_albedo_mix) to change the emission and albedo intensity independently of each other.
+Changes the [`Color`](class_color.md) of the Decal by multiplying the albedo and emission colors with this value. The alpha component is only taken into account when multiplying the albedo color, not the emission color. See also [`emission_energy`](class_decal.md#class_decal_property_emission_energy) and [`albedo_mix`](class_decal.md#class_decal_property_albedo_mix) to change the emission and albedo intensity independently of each other.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -211,7 +211,7 @@ Changes the [`Color`](class_color.md) of the Decal by multiplying the albedo and
 
 Fades the Decal if the angle between the Decal's [`AABB`](class_aabb.md) and the target surface becomes too large. A value of `0` projects the Decal regardless of angle, a value of `1` limits the Decal to surfaces that are nearly perpendicular.
 
- **Note:** Setting [`normal_fade`](#class_decal_property_normal_fade) to a value greater than `0.0` has a small performance cost due to the added normal angle computations.
+ **Note:** Setting [`normal_fade`](class_decal.md#class_decal_property_normal_fade) to a value greater than `0.0` has a small performance cost due to the added normal angle computations.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -226,7 +226,7 @@ Fades the Decal if the angle between the Decal's [`AABB`](class_aabb.md) and the
 
 Sets the size of the [`AABB`](class_aabb.md) used by the decal. All dimensions must be set to a value greater than zero (they will be clamped to `0.001` if this is not the case). The AABB goes from `-size/2` to `size/2`.
 
- **Note:** To improve culling efficiency of "hard surface" decals, set their [`upper_fade`](#class_decal_property_upper_fade) and [`lower_fade`](#class_decal_property_lower_fade) to `0.0` and set the Y component of the [`size`](#class_decal_property_size) as low as possible. This will reduce the decals' AABB size without affecting their appearance.
+ **Note:** To improve culling efficiency of "hard surface" decals, set their [`upper_fade`](class_decal.md#class_decal_property_upper_fade) and [`lower_fade`](class_decal.md#class_decal_property_lower_fade) to `0.0` and set the Y component of the [`size`](class_decal.md#class_decal_property_size) as low as possible. This will reduce the decals' AABB size without affecting their appearance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -239,9 +239,9 @@ Sets the size of the [`AABB`](class_aabb.md) used by the decal. All dimensions m
 - `void` **set_texture** ( type: [DecalTexture](#enum_decal_decaltexture), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( type: [DecalTexture](#enum_decal_decaltexture) ) const[^const]
 
-[`Texture2D`](class_texture2d.md) with the base [`Color`](class_color.md) of the Decal. Either this or the [`texture_emission`](#class_decal_property_texture_emission) must be set for the Decal to be visible. Use the alpha channel like a mask to smoothly blend the edges of the decal with the underlying object.
+[`Texture2D`](class_texture2d.md) with the base [`Color`](class_color.md) of the Decal. Either this or the [`texture_emission`](class_decal.md#class_decal_property_texture_emission) must be set for the Decal to be visible. Use the alpha channel like a mask to smoothly blend the edges of the decal with the underlying object.
 
- **Note:** Unlike [`BaseMaterial3D`](class_basematerial3d.md) whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with [`ProjectSettings.rendering/textures/decals/filter`](#class_projectsettings_property_rendering/textures/decals/filter).
+ **Note:** Unlike [`BaseMaterial3D`](class_basematerial3d.md) whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with [`ProjectSettings.rendering/textures/decals/filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/decals/filter).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -254,9 +254,9 @@ Sets the size of the [`AABB`](class_aabb.md) used by the decal. All dimensions m
 - `void` **set_texture** ( type: [DecalTexture](#enum_decal_decaltexture), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( type: [DecalTexture](#enum_decal_decaltexture) ) const[^const]
 
-[`Texture2D`](class_texture2d.md) with the emission [`Color`](class_color.md) of the Decal. Either this or the [`texture_albedo`](#class_decal_property_texture_albedo) must be set for the Decal to be visible. Use the alpha channel like a mask to smoothly blend the edges of the decal with the underlying object.
+[`Texture2D`](class_texture2d.md) with the emission [`Color`](class_color.md) of the Decal. Either this or the [`texture_albedo`](class_decal.md#class_decal_property_texture_albedo) must be set for the Decal to be visible. Use the alpha channel like a mask to smoothly blend the edges of the decal with the underlying object.
 
- **Note:** Unlike [`BaseMaterial3D`](class_basematerial3d.md) whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with [`ProjectSettings.rendering/textures/decals/filter`](#class_projectsettings_property_rendering/textures/decals/filter).
+ **Note:** Unlike [`BaseMaterial3D`](class_basematerial3d.md) whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with [`ProjectSettings.rendering/textures/decals/filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/decals/filter).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -271,9 +271,9 @@ Sets the size of the [`AABB`](class_aabb.md) used by the decal. All dimensions m
 
 [`Texture2D`](class_texture2d.md) with the per-pixel normal map for the decal. Use this to add extra detail to decals.
 
- **Note:** Unlike [`BaseMaterial3D`](class_basematerial3d.md) whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with [`ProjectSettings.rendering/textures/decals/filter`](#class_projectsettings_property_rendering/textures/decals/filter).
+ **Note:** Unlike [`BaseMaterial3D`](class_basematerial3d.md) whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with [`ProjectSettings.rendering/textures/decals/filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/decals/filter).
 
- **Note:** Setting this texture alone will not result in a visible decal, as [`texture_albedo`](#class_decal_property_texture_albedo) must also be set. To create a normal-only decal, load an albedo texture into [`texture_albedo`](#class_decal_property_texture_albedo) and set [`albedo_mix`](#class_decal_property_albedo_mix) to `0.0`. The albedo texture's alpha channel will be used to determine where the underlying surface's normal map should be overridden (and its intensity).
+ **Note:** Setting this texture alone will not result in a visible decal, as [`texture_albedo`](class_decal.md#class_decal_property_texture_albedo) must also be set. To create a normal-only decal, load an albedo texture into [`texture_albedo`](class_decal.md#class_decal_property_texture_albedo) and set [`albedo_mix`](class_decal.md#class_decal_property_albedo_mix) to `0.0`. The albedo texture's alpha channel will be used to determine where the underlying surface's normal map should be overridden (and its intensity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -288,9 +288,9 @@ Sets the size of the [`AABB`](class_aabb.md) used by the decal. All dimensions m
 
 [`Texture2D`](class_texture2d.md) storing ambient occlusion, roughness, and metallic for the decal. Use this to add extra detail to decals.
 
- **Note:** Unlike [`BaseMaterial3D`](class_basematerial3d.md) whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with [`ProjectSettings.rendering/textures/decals/filter`](#class_projectsettings_property_rendering/textures/decals/filter).
+ **Note:** Unlike [`BaseMaterial3D`](class_basematerial3d.md) whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with [`ProjectSettings.rendering/textures/decals/filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/decals/filter).
 
- **Note:** Setting this texture alone will not result in a visible decal, as [`texture_albedo`](#class_decal_property_texture_albedo) must also be set. To create an ORM-only decal, load an albedo texture into [`texture_albedo`](#class_decal_property_texture_albedo) and set [`albedo_mix`](#class_decal_property_albedo_mix) to `0.0`. The albedo texture's alpha channel will be used to determine where the underlying surface's ORM map should be overridden (and its intensity).
+ **Note:** Setting this texture alone will not result in a visible decal, as [`texture_albedo`](class_decal.md#class_decal_property_texture_albedo) must also be set. To create an ORM-only decal, load an albedo texture into [`texture_albedo`](class_decal.md#class_decal_property_texture_albedo) and set [`albedo_mix`](class_decal.md#class_decal_property_albedo_mix) to `0.0`. The albedo texture's alpha channel will be used to determine where the underlying surface's ORM map should be overridden (and its intensity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -303,7 +303,7 @@ Sets the size of the [`AABB`](class_aabb.md) used by the decal. All dimensions m
 - `void` **set_upper_fade** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_upper_fade** ( )
 
-Sets the curve over which the decal will fade as the surface gets further from the center of the [`AABB`](class_aabb.md). Only positive values are valid (negative values will be clamped to `0.0`). See also [`lower_fade`](#class_decal_property_lower_fade).
+Sets the curve over which the decal will fade as the surface gets further from the center of the [`AABB`](class_aabb.md). Only positive values are valid (negative values will be clamped to `0.0`). See also [`lower_fade`](class_decal.md#class_decal_property_lower_fade).
 
 <!-- rst-class:: classref-section-separator -->
 

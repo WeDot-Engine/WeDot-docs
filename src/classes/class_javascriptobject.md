@@ -13,7 +13,7 @@ A wrapper class for web native JavaScript objects.
 
 ## 描述
 
-JavaScriptObject is used to interact with JavaScript objects retrieved or created via [`JavaScriptBridge.get_interface`](#class_javascriptbridge_method_get_interface), [`JavaScriptBridge.create_object`](#class_javascriptbridge_method_create_object), or [`JavaScriptBridge.create_callback`](#class_javascriptbridge_method_create_callback).
+JavaScriptObject is used to interact with JavaScript objects retrieved or created via [`JavaScriptBridge.get_interface`](class_javascriptbridge.md#class_javascriptbridge_method_get_interface), [`JavaScriptBridge.create_object`](class_javascriptbridge.md#class_javascriptbridge_method_create_object), or [`JavaScriptBridge.create_callback`](class_javascriptbridge.md#class_javascriptbridge_method_create_callback).
 
  **Example:** 
 

@@ -21,9 +21,9 @@ This object is the base of all XR trackers.
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)               | [`description`](#class_xrtracker_property_description) | ``""``         |
-| [`StringName`](class_stringname.md)       | [`name`](#class_xrtracker_property_name)               | ``&"Unknown"`` |
-| [TrackerType](#enum_xrserver_trackertype) | [`type`](#class_xrtracker_property_type)               | ``128``        |
+| [`String`](class_string.md)               | [`description`](class_xrtracker.md#class_xrtracker_property_description) | ``""``         |
+| [`StringName`](class_stringname.md)       | [`name`](class_xrtracker.md#class_xrtracker_property_name)               | ``&"Unknown"`` |
+| [TrackerType](#enum_xrserver_trackertype) | [`type`](class_xrtracker.md#class_xrtracker_property_type)               | ``128``        |
 
 <!-- rst-class:: classref-section-separator -->
 

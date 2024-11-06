@@ -21,20 +21,20 @@ Tiles in a source are indexed with two IDs, coordinates ID (of type Vector2i) an
 
 Depending on the TileSet source type, those IDs might have restrictions on their values, this is why the base **TileSetSource** class only exposes getters for them.
 
-You can iterate over all tiles exposed by a TileSetSource by first iterating over coordinates IDs using [`get_tiles_count`](#class_tilesetsource_method_get_tiles_count) and [`get_tile_id`](#class_tilesetsource_method_get_tile_id), then over alternative IDs using [`get_alternative_tiles_count`](#class_tilesetsource_method_get_alternative_tiles_count) and [`get_alternative_tile_id`](#class_tilesetsource_method_get_alternative_tile_id).
+You can iterate over all tiles exposed by a TileSetSource by first iterating over coordinates IDs using [`get_tiles_count`](class_tilesetsource.md#class_tilesetsource_method_get_tiles_count) and [`get_tile_id`](class_tilesetsource.md#class_tilesetsource_method_get_tile_id), then over alternative IDs using [`get_alternative_tiles_count`](class_tilesetsource.md#class_tilesetsource_method_get_alternative_tiles_count) and [`get_alternative_tile_id`](class_tilesetsource.md#class_tilesetsource_method_get_alternative_tile_id).
 
- **Warning:** **TileSetSource** can only be added to one TileSet at the same time. Calling [`TileSet.add_source`](#class_tileset_method_add_source) on a second [`TileSet`](class_tileset.md) will remove the source from the first one.
+ **Warning:** **TileSetSource** can only be added to one TileSet at the same time. Calling [`TileSet.add_source`](class_tileset.md#class_tileset_method_add_source) on a second [`TileSet`](class_tileset.md) will remove the source from the first one.
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)           | [`get_alternative_tile_id`](#class_tilesetsource_method_get_alternative_tile_id) ( atlas_coords: [`Vector2i`](class_vector2i.md), index: [`int`](class_int.md) ) const[^const]      |
-| [`int`](class_int.md)           | [`get_alternative_tiles_count`](#class_tilesetsource_method_get_alternative_tiles_count) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
-| [`Vector2i`](class_vector2i.md) | [`get_tile_id`](#class_tilesetsource_method_get_tile_id) ( index: [`int`](class_int.md) ) const[^const]                                                                             |
-| [`int`](class_int.md)           | [`get_tiles_count`](#class_tilesetsource_method_get_tiles_count) ( ) const[^const]                                                                                                  |
-| [`bool`](class_bool.md)         | [`has_alternative_tile`](#class_tilesetsource_method_has_alternative_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md), alternative_tile: [`int`](class_int.md) ) const[^const] |
-| [`bool`](class_bool.md)         | [`has_tile`](#class_tilesetsource_method_has_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                  |
+| [`int`](class_int.md)           | [`get_alternative_tile_id`](class_tilesetsource.md#class_tilesetsource_method_get_alternative_tile_id) ( atlas_coords: [`Vector2i`](class_vector2i.md), index: [`int`](class_int.md) ) const[^const]      |
+| [`int`](class_int.md)           | [`get_alternative_tiles_count`](class_tilesetsource.md#class_tilesetsource_method_get_alternative_tiles_count) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
+| [`Vector2i`](class_vector2i.md) | [`get_tile_id`](class_tilesetsource.md#class_tilesetsource_method_get_tile_id) ( index: [`int`](class_int.md) ) const[^const]                                                                             |
+| [`int`](class_int.md)           | [`get_tiles_count`](class_tilesetsource.md#class_tilesetsource_method_get_tiles_count) ( ) const[^const]                                                                                                  |
+| [`bool`](class_bool.md)         | [`has_alternative_tile`](class_tilesetsource.md#class_tilesetsource_method_has_alternative_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md), alternative_tile: [`int`](class_int.md) ) const[^const] |
+| [`bool`](class_bool.md)         | [`has_tile`](class_tilesetsource.md#class_tilesetsource_method_has_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                  |
 
 <!-- rst-class:: classref-section-separator -->
 

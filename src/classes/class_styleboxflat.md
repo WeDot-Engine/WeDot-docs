@@ -42,44 +42,44 @@ The relative system now would take the 1:2 ratio of the two left corners to calc
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)       | [`anti_aliasing`](#class_styleboxflat_property_anti_aliasing)                           | ``true``                    |
-| [`float`](class_float.md)     | [`anti_aliasing_size`](#class_styleboxflat_property_anti_aliasing_size)                 | ``1.0``                     |
-| [`Color`](class_color.md)     | [`bg_color`](#class_styleboxflat_property_bg_color)                                     | ``Color(0.6, 0.6, 0.6, 1)`` |
-| [`bool`](class_bool.md)       | [`border_blend`](#class_styleboxflat_property_border_blend)                             | ``false``                   |
-| [`Color`](class_color.md)     | [`border_color`](#class_styleboxflat_property_border_color)                             | ``Color(0.8, 0.8, 0.8, 1)`` |
-| [`int`](class_int.md)         | [`border_width_bottom`](#class_styleboxflat_property_border_width_bottom)               | ``0``                       |
-| [`int`](class_int.md)         | [`border_width_left`](#class_styleboxflat_property_border_width_left)                   | ``0``                       |
-| [`int`](class_int.md)         | [`border_width_right`](#class_styleboxflat_property_border_width_right)                 | ``0``                       |
-| [`int`](class_int.md)         | [`border_width_top`](#class_styleboxflat_property_border_width_top)                     | ``0``                       |
-| [`int`](class_int.md)         | [`corner_detail`](#class_styleboxflat_property_corner_detail)                           | ``8``                       |
-| [`int`](class_int.md)         | [`corner_radius_bottom_left`](#class_styleboxflat_property_corner_radius_bottom_left)   | ``0``                       |
-| [`int`](class_int.md)         | [`corner_radius_bottom_right`](#class_styleboxflat_property_corner_radius_bottom_right) | ``0``                       |
-| [`int`](class_int.md)         | [`corner_radius_top_left`](#class_styleboxflat_property_corner_radius_top_left)         | ``0``                       |
-| [`int`](class_int.md)         | [`corner_radius_top_right`](#class_styleboxflat_property_corner_radius_top_right)       | ``0``                       |
-| [`bool`](class_bool.md)       | [`draw_center`](#class_styleboxflat_property_draw_center)                               | ``true``                    |
-| [`float`](class_float.md)     | [`expand_margin_bottom`](#class_styleboxflat_property_expand_margin_bottom)             | ``0.0``                     |
-| [`float`](class_float.md)     | [`expand_margin_left`](#class_styleboxflat_property_expand_margin_left)                 | ``0.0``                     |
-| [`float`](class_float.md)     | [`expand_margin_right`](#class_styleboxflat_property_expand_margin_right)               | ``0.0``                     |
-| [`float`](class_float.md)     | [`expand_margin_top`](#class_styleboxflat_property_expand_margin_top)                   | ``0.0``                     |
-| [`Color`](class_color.md)     | [`shadow_color`](#class_styleboxflat_property_shadow_color)                             | ``Color(0, 0, 0, 0.6)``     |
-| [`Vector2`](class_vector2.md) | [`shadow_offset`](#class_styleboxflat_property_shadow_offset)                           | ``Vector2(0, 0)``           |
-| [`int`](class_int.md)         | [`shadow_size`](#class_styleboxflat_property_shadow_size)                               | ``0``                       |
-| [`Vector2`](class_vector2.md) | [`skew`](#class_styleboxflat_property_skew)                                             | ``Vector2(0, 0)``           |
+| [`bool`](class_bool.md)       | [`anti_aliasing`](class_styleboxflat.md#class_styleboxflat_property_anti_aliasing)                           | ``true``                    |
+| [`float`](class_float.md)     | [`anti_aliasing_size`](class_styleboxflat.md#class_styleboxflat_property_anti_aliasing_size)                 | ``1.0``                     |
+| [`Color`](class_color.md)     | [`bg_color`](class_styleboxflat.md#class_styleboxflat_property_bg_color)                                     | ``Color(0.6, 0.6, 0.6, 1)`` |
+| [`bool`](class_bool.md)       | [`border_blend`](class_styleboxflat.md#class_styleboxflat_property_border_blend)                             | ``false``                   |
+| [`Color`](class_color.md)     | [`border_color`](class_styleboxflat.md#class_styleboxflat_property_border_color)                             | ``Color(0.8, 0.8, 0.8, 1)`` |
+| [`int`](class_int.md)         | [`border_width_bottom`](class_styleboxflat.md#class_styleboxflat_property_border_width_bottom)               | ``0``                       |
+| [`int`](class_int.md)         | [`border_width_left`](class_styleboxflat.md#class_styleboxflat_property_border_width_left)                   | ``0``                       |
+| [`int`](class_int.md)         | [`border_width_right`](class_styleboxflat.md#class_styleboxflat_property_border_width_right)                 | ``0``                       |
+| [`int`](class_int.md)         | [`border_width_top`](class_styleboxflat.md#class_styleboxflat_property_border_width_top)                     | ``0``                       |
+| [`int`](class_int.md)         | [`corner_detail`](class_styleboxflat.md#class_styleboxflat_property_corner_detail)                           | ``8``                       |
+| [`int`](class_int.md)         | [`corner_radius_bottom_left`](class_styleboxflat.md#class_styleboxflat_property_corner_radius_bottom_left)   | ``0``                       |
+| [`int`](class_int.md)         | [`corner_radius_bottom_right`](class_styleboxflat.md#class_styleboxflat_property_corner_radius_bottom_right) | ``0``                       |
+| [`int`](class_int.md)         | [`corner_radius_top_left`](class_styleboxflat.md#class_styleboxflat_property_corner_radius_top_left)         | ``0``                       |
+| [`int`](class_int.md)         | [`corner_radius_top_right`](class_styleboxflat.md#class_styleboxflat_property_corner_radius_top_right)       | ``0``                       |
+| [`bool`](class_bool.md)       | [`draw_center`](class_styleboxflat.md#class_styleboxflat_property_draw_center)                               | ``true``                    |
+| [`float`](class_float.md)     | [`expand_margin_bottom`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_bottom)             | ``0.0``                     |
+| [`float`](class_float.md)     | [`expand_margin_left`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_left)                 | ``0.0``                     |
+| [`float`](class_float.md)     | [`expand_margin_right`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_right)               | ``0.0``                     |
+| [`float`](class_float.md)     | [`expand_margin_top`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_top)                   | ``0.0``                     |
+| [`Color`](class_color.md)     | [`shadow_color`](class_styleboxflat.md#class_styleboxflat_property_shadow_color)                             | ``Color(0, 0, 0, 0.6)``     |
+| [`Vector2`](class_vector2.md) | [`shadow_offset`](class_styleboxflat.md#class_styleboxflat_property_shadow_offset)                           | ``Vector2(0, 0)``           |
+| [`int`](class_int.md)         | [`shadow_size`](class_styleboxflat.md#class_styleboxflat_property_shadow_size)                               | ``0``                       |
+| [`Vector2`](class_vector2.md) | [`skew`](class_styleboxflat.md#class_styleboxflat_property_skew)                                             | ``Vector2(0, 0)``           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)     | [`get_border_width`](#class_styleboxflat_method_get_border_width) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                        |
-| [`int`](class_int.md)     | [`get_border_width_min`](#class_styleboxflat_method_get_border_width_min) ( ) const[^const]                                                        |
-| [`int`](class_int.md)     | [`get_corner_radius`](#class_styleboxflat_method_get_corner_radius) ( corner: [Corner](#enum_@globalscope_corner) ) const[^const]                  |
-| [`float`](class_float.md) | [`get_expand_margin`](#class_styleboxflat_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
-| `void`                    | [`set_border_width`](#class_styleboxflat_method_set_border_width) ( margin: [Side](#enum_@globalscope_side), width: [`int`](class_int.md) )        |
-| `void`                    | [`set_border_width_all`](#class_styleboxflat_method_set_border_width_all) ( width: [`int`](class_int.md) )                                         |
-| `void`                    | [`set_corner_radius`](#class_styleboxflat_method_set_corner_radius) ( corner: [Corner](#enum_@globalscope_corner), radius: [`int`](class_int.md) ) |
-| `void`                    | [`set_corner_radius_all`](#class_styleboxflat_method_set_corner_radius_all) ( radius: [`int`](class_int.md) )                                      |
-| `void`                    | [`set_expand_margin`](#class_styleboxflat_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |
-| `void`                    | [`set_expand_margin_all`](#class_styleboxflat_method_set_expand_margin_all) ( size: [`float`](class_float.md) )                                    |
+| [`int`](class_int.md)     | [`get_border_width`](class_styleboxflat.md#class_styleboxflat_method_get_border_width) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                        |
+| [`int`](class_int.md)     | [`get_border_width_min`](class_styleboxflat.md#class_styleboxflat_method_get_border_width_min) ( ) const[^const]                                                        |
+| [`int`](class_int.md)     | [`get_corner_radius`](class_styleboxflat.md#class_styleboxflat_method_get_corner_radius) ( corner: [Corner](#enum_@globalscope_corner) ) const[^const]                  |
+| [`float`](class_float.md) | [`get_expand_margin`](class_styleboxflat.md#class_styleboxflat_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
+| `void`                    | [`set_border_width`](class_styleboxflat.md#class_styleboxflat_method_set_border_width) ( margin: [Side](#enum_@globalscope_side), width: [`int`](class_int.md) )        |
+| `void`                    | [`set_border_width_all`](class_styleboxflat.md#class_styleboxflat_method_set_border_width_all) ( width: [`int`](class_int.md) )                                         |
+| `void`                    | [`set_corner_radius`](class_styleboxflat.md#class_styleboxflat_method_set_corner_radius) ( corner: [Corner](#enum_@globalscope_corner), radius: [`int`](class_int.md) ) |
+| `void`                    | [`set_corner_radius_all`](class_styleboxflat.md#class_styleboxflat_method_set_corner_radius_all) ( radius: [`int`](class_int.md) )                                      |
+| `void`                    | [`set_expand_margin`](class_styleboxflat.md#class_styleboxflat_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |
+| `void`                    | [`set_expand_margin_all`](class_styleboxflat.md#class_styleboxflat_method_set_expand_margin_all) ( size: [`float`](class_float.md) )                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -94,9 +94,9 @@ The relative system now would take the 1:2 ratio of the two left corners to calc
 - `void` **set_anti_aliased** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_anti_aliased** ( )
 
-Antialiasing draws a small ring around the edges, which fades to transparency. As a result, edges look much smoother. This is only noticeable when using rounded corners or [`skew`](#class_styleboxflat_property_skew).
+Antialiasing draws a small ring around the edges, which fades to transparency. As a result, edges look much smoother. This is only noticeable when using rounded corners or [`skew`](class_styleboxflat.md#class_styleboxflat_property_skew).
 
- **Note:** When using beveled corners with 45-degree angles ([`corner_detail`](#class_styleboxflat_property_corner_detail) = 1), it is recommended to set [`anti_aliasing`](#class_styleboxflat_property_anti_aliasing) to `false` to ensure crisp visuals and avoid possible visual glitches.
+ **Note:** When using beveled corners with 45-degree angles ([`corner_detail`](class_styleboxflat.md#class_styleboxflat_property_corner_detail) = 1), it is recommended to set [`anti_aliasing`](class_styleboxflat.md#class_styleboxflat_property_anti_aliasing) to `false` to ensure crisp visuals and avoid possible visual glitches.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -215,7 +215,7 @@ Border width for the top border.
 - `void` **set_corner_detail** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_corner_detail** ( )
 
-This sets the number of vertices used for each corner. Higher values result in rounder corners but take more processing power to compute. When choosing a value, you should take the corner radius ([`set_corner_radius_all`](#class_styleboxflat_method_set_corner_radius_all)) into account.
+This sets the number of vertices used for each corner. Higher values result in rounder corners but take more processing power to compute. When choosing a value, you should take the corner radius ([`set_corner_radius_all`](class_styleboxflat.md#class_styleboxflat_method_set_corner_radius_all)) into account.
 
 For corner radii less than 10, `4` or `5` should be enough. For corner radii less than 30, values between `8` and `12` should be enough.
 
@@ -297,9 +297,9 @@ Toggles drawing of the inner part of the stylebox.
 - `void` **set_expand_margin** ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_expand_margin** ( margin: [Side](#enum_@globalscope_side) ) const[^const]
 
-Expands the stylebox outside of the control rect on the bottom edge. Useful in combination with [`border_width_bottom`](#class_styleboxflat_property_border_width_bottom) to draw a border outside the control rect.
+Expands the stylebox outside of the control rect on the bottom edge. Useful in combination with [`border_width_bottom`](class_styleboxflat.md#class_styleboxflat_property_border_width_bottom) to draw a border outside the control rect.
 
- **Note:** Unlike [`StyleBox.content_margin_bottom`](#class_stylebox_property_content_margin_bottom), [`expand_margin_bottom`](#class_styleboxflat_property_expand_margin_bottom) does *not* affect the size of the clickable area for [`Control`](class_control.md) s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
+ **Note:** Unlike [`StyleBox.content_margin_bottom`](class_stylebox.md#class_stylebox_property_content_margin_bottom), [`expand_margin_bottom`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_bottom) does *not* affect the size of the clickable area for [`Control`](class_control.md) s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -312,9 +312,9 @@ Expands the stylebox outside of the control rect on the bottom edge. Useful in c
 - `void` **set_expand_margin** ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_expand_margin** ( margin: [Side](#enum_@globalscope_side) ) const[^const]
 
-Expands the stylebox outside of the control rect on the left edge. Useful in combination with [`border_width_left`](#class_styleboxflat_property_border_width_left) to draw a border outside the control rect.
+Expands the stylebox outside of the control rect on the left edge. Useful in combination with [`border_width_left`](class_styleboxflat.md#class_styleboxflat_property_border_width_left) to draw a border outside the control rect.
 
- **Note:** Unlike [`StyleBox.content_margin_left`](#class_stylebox_property_content_margin_left), [`expand_margin_left`](#class_styleboxflat_property_expand_margin_left) does *not* affect the size of the clickable area for [`Control`](class_control.md) s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
+ **Note:** Unlike [`StyleBox.content_margin_left`](class_stylebox.md#class_stylebox_property_content_margin_left), [`expand_margin_left`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_left) does *not* affect the size of the clickable area for [`Control`](class_control.md) s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -327,9 +327,9 @@ Expands the stylebox outside of the control rect on the left edge. Useful in com
 - `void` **set_expand_margin** ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_expand_margin** ( margin: [Side](#enum_@globalscope_side) ) const[^const]
 
-Expands the stylebox outside of the control rect on the right edge. Useful in combination with [`border_width_right`](#class_styleboxflat_property_border_width_right) to draw a border outside the control rect.
+Expands the stylebox outside of the control rect on the right edge. Useful in combination with [`border_width_right`](class_styleboxflat.md#class_styleboxflat_property_border_width_right) to draw a border outside the control rect.
 
- **Note:** Unlike [`StyleBox.content_margin_right`](#class_stylebox_property_content_margin_right), [`expand_margin_right`](#class_styleboxflat_property_expand_margin_right) does *not* affect the size of the clickable area for [`Control`](class_control.md) s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
+ **Note:** Unlike [`StyleBox.content_margin_right`](class_stylebox.md#class_stylebox_property_content_margin_right), [`expand_margin_right`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_right) does *not* affect the size of the clickable area for [`Control`](class_control.md) s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -342,9 +342,9 @@ Expands the stylebox outside of the control rect on the right edge. Useful in co
 - `void` **set_expand_margin** ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_expand_margin** ( margin: [Side](#enum_@globalscope_side) ) const[^const]
 
-Expands the stylebox outside of the control rect on the top edge. Useful in combination with [`border_width_top`](#class_styleboxflat_property_border_width_top) to draw a border outside the control rect.
+Expands the stylebox outside of the control rect on the top edge. Useful in combination with [`border_width_top`](class_styleboxflat.md#class_styleboxflat_property_border_width_top) to draw a border outside the control rect.
 
- **Note:** Unlike [`StyleBox.content_margin_top`](#class_stylebox_property_content_margin_top), [`expand_margin_top`](#class_styleboxflat_property_expand_margin_top) does *not* affect the size of the clickable area for [`Control`](class_control.md) s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
+ **Note:** Unlike [`StyleBox.content_margin_top`](class_stylebox.md#class_stylebox_property_content_margin_top), [`expand_margin_top`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_top) does *not* affect the size of the clickable area for [`Control`](class_control.md) s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -357,7 +357,7 @@ Expands the stylebox outside of the control rect on the top edge. Useful in comb
 - `void` **set_shadow_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_shadow_color** ( )
 
-The color of the shadow. This has no effect if [`shadow_size`](#class_styleboxflat_property_shadow_size) is lower than 1.
+The color of the shadow. This has no effect if [`shadow_size`](class_styleboxflat.md#class_styleboxflat_property_shadow_size) is lower than 1.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -396,9 +396,9 @@ The shadow size in pixels.
 - `void` **set_skew** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_skew** ( )
 
-If set to a non-zero value on either axis, [`skew`](#class_styleboxflat_property_skew) distorts the StyleBox horizontally and/or vertically. This can be used for "futuristic"-style UIs. Positive values skew the StyleBox towards the right (X axis) and upwards (Y axis), while negative values skew the StyleBox towards the left (X axis) and downwards (Y axis).
+If set to a non-zero value on either axis, [`skew`](class_styleboxflat.md#class_styleboxflat_property_skew) distorts the StyleBox horizontally and/or vertically. This can be used for "futuristic"-style UIs. Positive values skew the StyleBox towards the right (X axis) and upwards (Y axis), while negative values skew the StyleBox towards the left (X axis) and downwards (Y axis).
 
- **Note:** To ensure text does not touch the StyleBox's edges, consider increasing the [`StyleBox`](class_stylebox.md)'s content margin (see [`StyleBox.content_margin_bottom`](#class_stylebox_property_content_margin_bottom)). It is preferable to increase the content margin instead of the expand margin (see [`expand_margin_bottom`](#class_styleboxflat_property_expand_margin_bottom)), as increasing the expand margin does not increase the size of the clickable area for [`Control`](class_control.md) s.
+ **Note:** To ensure text does not touch the StyleBox's edges, consider increasing the [`StyleBox`](class_stylebox.md)'s content margin (see [`StyleBox.content_margin_bottom`](class_stylebox.md#class_stylebox_property_content_margin_bottom)). It is preferable to increase the content margin instead of the expand margin (see [`expand_margin_bottom`](class_styleboxflat.md#class_styleboxflat_property_expand_margin_bottom)), as increasing the expand margin does not increase the size of the clickable area for [`Control`](class_control.md) s.
 
 <!-- rst-class:: classref-section-separator -->
 

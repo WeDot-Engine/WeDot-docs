@@ -29,9 +29,9 @@ This is a reentrant mutex, meaning that it can be locked multiple times by one t
 
 |||
 |:-:|:--|
-| `void`                  | [`lock`](#class_mutex_method_lock) ( )         |
-| [`bool`](class_bool.md) | [`try_lock`](#class_mutex_method_try_lock) ( ) |
-| `void`                  | [`unlock`](#class_mutex_method_unlock) ( )     |
+| `void`                  | [`lock`](class_mutex.md#class_mutex_method_lock) ( )         |
+| [`bool`](class_bool.md) | [`try_lock`](class_mutex.md#class_mutex_method_try_lock) ( ) |
+| `void`                  | [`unlock`](class_mutex.md#class_mutex_method_unlock) ( )     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -69,9 +69,9 @@ Tries locking this **Mutex**, but does not block. Returns `true` on success, `fa
 
 Unlocks this **Mutex**, leaving it to other threads.
 
- **Note:** If a thread called [`lock`](#class_mutex_method_lock) or [`try_lock`](#class_mutex_method_try_lock) multiple times while already having ownership of the mutex, it must also call [`unlock`](#class_mutex_method_unlock) the same number of times in order to unlock it correctly.
+ **Note:** If a thread called [`lock`](class_mutex.md#class_mutex_method_lock) or [`try_lock`](class_mutex.md#class_mutex_method_try_lock) multiple times while already having ownership of the mutex, it must also call [`unlock`](class_mutex.md#class_mutex_method_unlock) the same number of times in order to unlock it correctly.
 
- **Warning:** Calling [`unlock`](#class_mutex_method_unlock) more times that [`lock`](#class_mutex_method_lock) on a given thread, thus ending up trying to unlock a non-locked mutex, is wrong and may causes crashes or deadlocks.
+ **Warning:** Calling [`unlock`](class_mutex.md#class_mutex_method_unlock) more times that [`lock`](class_mutex.md#class_mutex_method_lock) on a given thread, thus ending up trying to unlock a non-locked mutex, is wrong and may causes crashes or deadlocks.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -11,11 +11,11 @@
 
 **派生：** [`AnimationNodeAnimation`](class_animationnodeanimation.md), [`AnimationNodeBlendSpace1D`](class_animationnodeblendspace1d.md), [`AnimationNodeBlendSpace2D`](class_animationnodeblendspace2d.md), [`AnimationNodeBlendTree`](class_animationnodeblendtree.md), [`AnimationNodeStateMachine`](class_animationnodestatemachine.md)
 
-Base class for [`AnimationNode`](class_animationnode.md) s that hold one or multiple composite animations. Usually used for [`AnimationTree.tree_root`](#class_animationtree_property_tree_root).
+Base class for [`AnimationNode`](class_animationnode.md) s that hold one or multiple composite animations. Usually used for [`AnimationTree.tree_root`](class_animationtree.md#class_animationtree_property_tree_root).
 
 ## 描述
 
-**AnimationRootNode** is a base class for [`AnimationNode`](class_animationnode.md) s that hold a complete animation. A complete animation refers to the output of an [`AnimationNodeOutput`](class_animationnodeoutput.md) in an [`AnimationNodeBlendTree`](class_animationnodeblendtree.md) or the output of another **AnimationRootNode**. Used for [`AnimationTree.tree_root`](#class_animationtree_property_tree_root) or in other **AnimationRootNode** s.
+**AnimationRootNode** is a base class for [`AnimationNode`](class_animationnode.md) s that hold a complete animation. A complete animation refers to the output of an [`AnimationNodeOutput`](class_animationnodeoutput.md) in an [`AnimationNodeBlendTree`](class_animationnodeblendtree.md) or the output of another **AnimationRootNode**. Used for [`AnimationTree.tree_root`](class_animationtree.md#class_animationtree_property_tree_root) or in other **AnimationRootNode** s.
 
 Examples of built-in root nodes include [`AnimationNodeBlendTree`](class_animationnodeblendtree.md) (allows blending nodes between each other using various modes), [`AnimationNodeStateMachine`](class_animationnodestatemachine.md) (allows to configure blending and transitions between nodes using a state machine pattern), [`AnimationNodeBlendSpace2D`](class_animationnodeblendspace2d.md) (allows linear blending between **three** [`AnimationNode`](class_animationnode.md) s), [`AnimationNodeBlendSpace1D`](class_animationnodeblendspace1d.md) (allows linear blending only between **two** [`AnimationNode`](class_animationnode.md) s).
 

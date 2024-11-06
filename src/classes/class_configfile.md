@@ -111,7 +111,7 @@ This example shows how the above file could be loaded:
 
 
 
-Any operation that mutates the ConfigFile such as [`set_value`](#class_configfile_method_set_value), [`clear`](#class_configfile_method_clear), or [`erase_section`](#class_configfile_method_erase_section), only changes what is loaded in memory. If you want to write the change to a file, you have to save the changes with [`save`](#class_configfile_method_save), [`save_encrypted`](#class_configfile_method_save_encrypted), or [`save_encrypted_pass`](#class_configfile_method_save_encrypted_pass).
+Any operation that mutates the ConfigFile such as [`set_value`](class_configfile.md#class_configfile_method_set_value), [`clear`](class_configfile.md#class_configfile_method_clear), or [`erase_section`](class_configfile.md#class_configfile_method_erase_section), only changes what is loaded in memory. If you want to write the change to a file, you have to save the changes with [`save`](class_configfile.md#class_configfile_method_save), [`save_encrypted`](class_configfile.md#class_configfile_method_save_encrypted), or [`save_encrypted_pass`](class_configfile.md#class_configfile_method_save_encrypted_pass).
 
 Keep in mind that section and property names can't contain spaces. Anything after a space will be ignored on save and on load.
 
@@ -133,23 +133,23 @@ ConfigFiles can also contain manually written comment lines starting with a semi
 
 |||
 |:-:|:--|
-| `void`                                            | [`clear`](#class_configfile_method_clear) ( )                                                                                                                                             |
-| [`String`](class_string.md)                       | [`encode_to_text`](#class_configfile_method_encode_to_text) ( ) const[^const]                                                                                                             |
-| `void`                                            | [`erase_section`](#class_configfile_method_erase_section) ( section: [`String`](class_string.md) )                                                                                        |
-| `void`                                            | [`erase_section_key`](#class_configfile_method_erase_section_key) ( section: [`String`](class_string.md), key: [`String`](class_string.md) )                                              |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_section_keys`](#class_configfile_method_get_section_keys) ( section: [`String`](class_string.md) ) const[^const]                                                                    |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_sections`](#class_configfile_method_get_sections) ( ) const[^const]                                                                                                                 |
-| [`Variant`](class_variant.md)                     | [`get_value`](#class_configfile_method_get_value) ( section: [`String`](class_string.md), key: [`String`](class_string.md), default: [`Variant`](class_variant.md) = null ) const[^const] |
-| [`bool`](class_bool.md)                           | [`has_section`](#class_configfile_method_has_section) ( section: [`String`](class_string.md) ) const[^const]                                                                              |
-| [`bool`](class_bool.md)                           | [`has_section_key`](#class_configfile_method_has_section_key) ( section: [`String`](class_string.md), key: [`String`](class_string.md) ) const[^const]                                    |
-| [Error](#enum_@globalscope_error)                 | [`load`](#class_configfile_method_load) ( path: [`String`](class_string.md) )                                                                                                             |
-| [Error](#enum_@globalscope_error)                 | [`load_encrypted`](#class_configfile_method_load_encrypted) ( path: [`String`](class_string.md), key: [`PackedByteArray`](class_packedbytearray.md) )                                     |
-| [Error](#enum_@globalscope_error)                 | [`load_encrypted_pass`](#class_configfile_method_load_encrypted_pass) ( path: [`String`](class_string.md), password: [`String`](class_string.md) )                                        |
-| [Error](#enum_@globalscope_error)                 | [`parse`](#class_configfile_method_parse) ( data: [`String`](class_string.md) )                                                                                                           |
-| [Error](#enum_@globalscope_error)                 | [`save`](#class_configfile_method_save) ( path: [`String`](class_string.md) )                                                                                                             |
-| [Error](#enum_@globalscope_error)                 | [`save_encrypted`](#class_configfile_method_save_encrypted) ( path: [`String`](class_string.md), key: [`PackedByteArray`](class_packedbytearray.md) )                                     |
-| [Error](#enum_@globalscope_error)                 | [`save_encrypted_pass`](#class_configfile_method_save_encrypted_pass) ( path: [`String`](class_string.md), password: [`String`](class_string.md) )                                        |
-| `void`                                            | [`set_value`](#class_configfile_method_set_value) ( section: [`String`](class_string.md), key: [`String`](class_string.md), value: [`Variant`](class_variant.md) )                        |
+| `void`                                            | [`clear`](class_configfile.md#class_configfile_method_clear) ( )                                                                                                                                             |
+| [`String`](class_string.md)                       | [`encode_to_text`](class_configfile.md#class_configfile_method_encode_to_text) ( ) const[^const]                                                                                                             |
+| `void`                                            | [`erase_section`](class_configfile.md#class_configfile_method_erase_section) ( section: [`String`](class_string.md) )                                                                                        |
+| `void`                                            | [`erase_section_key`](class_configfile.md#class_configfile_method_erase_section_key) ( section: [`String`](class_string.md), key: [`String`](class_string.md) )                                              |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_section_keys`](class_configfile.md#class_configfile_method_get_section_keys) ( section: [`String`](class_string.md) ) const[^const]                                                                    |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_sections`](class_configfile.md#class_configfile_method_get_sections) ( ) const[^const]                                                                                                                 |
+| [`Variant`](class_variant.md)                     | [`get_value`](class_configfile.md#class_configfile_method_get_value) ( section: [`String`](class_string.md), key: [`String`](class_string.md), default: [`Variant`](class_variant.md) = null ) const[^const] |
+| [`bool`](class_bool.md)                           | [`has_section`](class_configfile.md#class_configfile_method_has_section) ( section: [`String`](class_string.md) ) const[^const]                                                                              |
+| [`bool`](class_bool.md)                           | [`has_section_key`](class_configfile.md#class_configfile_method_has_section_key) ( section: [`String`](class_string.md), key: [`String`](class_string.md) ) const[^const]                                    |
+| [Error](#enum_@globalscope_error)                 | [`load`](class_configfile.md#class_configfile_method_load) ( path: [`String`](class_string.md) )                                                                                                             |
+| [Error](#enum_@globalscope_error)                 | [`load_encrypted`](class_configfile.md#class_configfile_method_load_encrypted) ( path: [`String`](class_string.md), key: [`PackedByteArray`](class_packedbytearray.md) )                                     |
+| [Error](#enum_@globalscope_error)                 | [`load_encrypted_pass`](class_configfile.md#class_configfile_method_load_encrypted_pass) ( path: [`String`](class_string.md), password: [`String`](class_string.md) )                                        |
+| [Error](#enum_@globalscope_error)                 | [`parse`](class_configfile.md#class_configfile_method_parse) ( data: [`String`](class_string.md) )                                                                                                           |
+| [Error](#enum_@globalscope_error)                 | [`save`](class_configfile.md#class_configfile_method_save) ( path: [`String`](class_string.md) )                                                                                                             |
+| [Error](#enum_@globalscope_error)                 | [`save_encrypted`](class_configfile.md#class_configfile_method_save_encrypted) ( path: [`String`](class_string.md), key: [`PackedByteArray`](class_packedbytearray.md) )                                     |
+| [Error](#enum_@globalscope_error)                 | [`save_encrypted_pass`](class_configfile.md#class_configfile_method_save_encrypted_pass) ( path: [`String`](class_string.md), password: [`String`](class_string.md) )                                        |
+| `void`                                            | [`set_value`](class_configfile.md#class_configfile_method_set_value) ( section: [`String`](class_string.md), key: [`String`](class_string.md), value: [`Variant`](class_variant.md) )                        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -253,7 +253,7 @@ Returns `true` if the specified section-key pair exists.
 
 Loads the config file specified as a parameter. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -265,7 +265,7 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one 
 
 Loads the encrypted config file specified as a parameter, using the provided `key` to decrypt it. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -277,7 +277,7 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one 
 
 Loads the encrypted config file specified as a parameter, using the provided `password` to decrypt it. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -289,7 +289,7 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one 
 
 Parses the passed string as the contents of a config file. The string is parsed and loaded in the ConfigFile object which the method was called on.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -301,7 +301,7 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one 
 
 Saves the contents of the **ConfigFile** object to the file specified as a parameter. The output file uses an INI-style structure.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -313,7 +313,7 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one 
 
 Saves the contents of the **ConfigFile** object to the AES-256 encrypted file specified as a parameter, using the provided `key` to encrypt it. The output file uses an INI-style structure.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -325,7 +325,7 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one 
 
 Saves the contents of the **ConfigFile** object to the AES-256 encrypted file specified as a parameter, using the provided `password` to encrypt it. The output file uses an INI-style structure.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) values if the operation failed.
 
 <!-- rst-class:: classref-item-separator -->
 

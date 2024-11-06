@@ -17,7 +17,7 @@ A multiline text editor.
 
 A multiline text editor. It also has limited facilities for editing code, such as syntax highlighting support. For more advanced facilities for editing code, see [`CodeEdit`](class_codeedit.md).
 
- **Note:** Most viewport, caret, and edit methods contain a `caret_index` argument for [`caret_multiple`](#class_textedit_property_caret_multiple) support. The argument should be one of the following: `-1` for all carets, `0` for the main caret, or greater than `0` for secondary carets in the order they were created.
+ **Note:** Most viewport, caret, and edit methods contain a `caret_index` argument for [`caret_multiple`](class_textedit.md#class_textedit_property_caret_multiple) support. The argument should be one of the following: `-1` for all carets, `0` for the main caret, or greater than `0` for secondary carets in the order they were created.
 
  **Note:** When holding down <i class="fa fa-gamepad"></i>`Alt`, the vertical scroll wheel will scroll 5 times as fast as it would normally do. This also works in the Godot script editor.
 
@@ -25,240 +25,240 @@ A multiline text editor. It also has limited facilities for editing code, such a
 
 |||
 |:-:|:--|
-| [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](#class_textedit_property_autowrap_mode)                                                 | ``3``                                                                             |
-| [`bool`](class_bool.md)                                       | [`caret_blink`](#class_textedit_property_caret_blink)                                                     | ``false``                                                                         |
-| [`float`](class_float.md)                                     | [`caret_blink_interval`](#class_textedit_property_caret_blink_interval)                                   | ``0.65``                                                                          |
-| [`bool`](class_bool.md)                                       | [`caret_draw_when_editable_disabled`](#class_textedit_property_caret_draw_when_editable_disabled)         | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`caret_mid_grapheme`](#class_textedit_property_caret_mid_grapheme)                                       | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`caret_move_on_right_click`](#class_textedit_property_caret_move_on_right_click)                         | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`caret_multiple`](#class_textedit_property_caret_multiple)                                               | ``true``                                                                          |
-| [CaretType](#enum_textedit_carettype)                         | [`caret_type`](#class_textedit_property_caret_type)                                                       | ``0``                                                                             |
-| [`bool`](class_bool.md)                                       | clip_contents                                                                                             | ``true`` (overrides [`Control`](#class_control_property_clip_contents))           |
-| [`bool`](class_bool.md)                                       | [`context_menu_enabled`](#class_textedit_property_context_menu_enabled)                                   | ``true``                                                                          |
-| [`String`](class_string.md)                                   | [`custom_word_separators`](#class_textedit_property_custom_word_separators)                               | ``""``                                                                            |
-| [`bool`](class_bool.md)                                       | [`deselect_on_focus_loss_enabled`](#class_textedit_property_deselect_on_focus_loss_enabled)               | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`drag_and_drop_selection_enabled`](#class_textedit_property_drag_and_drop_selection_enabled)             | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`draw_control_chars`](#class_textedit_property_draw_control_chars)                                       | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`draw_spaces`](#class_textedit_property_draw_spaces)                                                     | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`draw_tabs`](#class_textedit_property_draw_tabs)                                                         | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`editable`](#class_textedit_property_editable)                                                           | ``true``                                                                          |
-| [FocusMode](#enum_control_focusmode)                          | focus_mode                                                                                                | ``2`` (overrides [`Control`](#class_control_property_focus_mode))                 |
-| [`bool`](class_bool.md)                                       | [`highlight_all_occurrences`](#class_textedit_property_highlight_all_occurrences)                         | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`highlight_current_line`](#class_textedit_property_highlight_current_line)                               | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`indent_wrapped_lines`](#class_textedit_property_indent_wrapped_lines)                                   | ``false``                                                                         |
-| [`String`](class_string.md)                                   | [`language`](#class_textedit_property_language)                                                           | ``""``                                                                            |
-| [`bool`](class_bool.md)                                       | [`middle_mouse_paste_enabled`](#class_textedit_property_middle_mouse_paste_enabled)                       | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`minimap_draw`](#class_textedit_property_minimap_draw)                                                   | ``false``                                                                         |
-| [`int`](class_int.md)                                         | [`minimap_width`](#class_textedit_property_minimap_width)                                                 | ``80``                                                                            |
-| [CursorShape](#enum_control_cursorshape)                      | mouse_default_cursor_shape                                                                                | ``1`` (overrides [`Control`](#class_control_property_mouse_default_cursor_shape)) |
-| [`String`](class_string.md)                                   | [`placeholder_text`](#class_textedit_property_placeholder_text)                                           | ``""``                                                                            |
-| [`bool`](class_bool.md)                                       | [`scroll_fit_content_height`](#class_textedit_property_scroll_fit_content_height)                         | ``false``                                                                         |
-| [`int`](class_int.md)                                         | [`scroll_horizontal`](#class_textedit_property_scroll_horizontal)                                         | ``0``                                                                             |
-| [`bool`](class_bool.md)                                       | [`scroll_past_end_of_file`](#class_textedit_property_scroll_past_end_of_file)                             | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`scroll_smooth`](#class_textedit_property_scroll_smooth)                                                 | ``false``                                                                         |
-| [`float`](class_float.md)                                     | [`scroll_v_scroll_speed`](#class_textedit_property_scroll_v_scroll_speed)                                 | ``80.0``                                                                          |
-| [`float`](class_float.md)                                     | [`scroll_vertical`](#class_textedit_property_scroll_vertical)                                             | ``0.0``                                                                           |
-| [`bool`](class_bool.md)                                       | [`selecting_enabled`](#class_textedit_property_selecting_enabled)                                         | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`shortcut_keys_enabled`](#class_textedit_property_shortcut_keys_enabled)                                 | ``true``                                                                          |
-| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`structured_text_bidi_override`](#class_textedit_property_structured_text_bidi_override)                 | ``0``                                                                             |
-| [`Array`](class_array.md)                                     | [`structured_text_bidi_override_options`](#class_textedit_property_structured_text_bidi_override_options) | ``[]``                                                                            |
-| [`SyntaxHighlighter`](class_syntaxhighlighter.md)             | [`syntax_highlighter`](#class_textedit_property_syntax_highlighter)                                       |                                                                                   |
-| [`String`](class_string.md)                                   | [`text`](#class_textedit_property_text)                                                                   | ``""``                                                                            |
-| [TextDirection](#enum_control_textdirection)                  | [`text_direction`](#class_textedit_property_text_direction)                                               | ``0``                                                                             |
-| [`bool`](class_bool.md)                                       | [`use_custom_word_separators`](#class_textedit_property_use_custom_word_separators)                       | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`use_default_word_separators`](#class_textedit_property_use_default_word_separators)                     | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`virtual_keyboard_enabled`](#class_textedit_property_virtual_keyboard_enabled)                           | ``true``                                                                          |
-| [LineWrappingMode](#enum_textedit_linewrappingmode)           | [`wrap_mode`](#class_textedit_property_wrap_mode)                                                         | ``0``                                                                             |
+| [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](class_textedit.md#class_textedit_property_autowrap_mode)                                                 | ``3``                                                                                             |
+| [`bool`](class_bool.md)                                       | [`caret_blink`](class_textedit.md#class_textedit_property_caret_blink)                                                     | ``false``                                                                                         |
+| [`float`](class_float.md)                                     | [`caret_blink_interval`](class_textedit.md#class_textedit_property_caret_blink_interval)                                   | ``0.65``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`caret_draw_when_editable_disabled`](class_textedit.md#class_textedit_property_caret_draw_when_editable_disabled)         | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`caret_mid_grapheme`](class_textedit.md#class_textedit_property_caret_mid_grapheme)                                       | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`caret_move_on_right_click`](class_textedit.md#class_textedit_property_caret_move_on_right_click)                         | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`caret_multiple`](class_textedit.md#class_textedit_property_caret_multiple)                                               | ``true``                                                                                          |
+| [CaretType](#enum_textedit_carettype)                         | [`caret_type`](class_textedit.md#class_textedit_property_caret_type)                                                       | ``0``                                                                                             |
+| [`bool`](class_bool.md)                                       | clip_contents                                                                                                              | ``true`` (overrides [`Control`](class_control.md#class_control_property_clip_contents))           |
+| [`bool`](class_bool.md)                                       | [`context_menu_enabled`](class_textedit.md#class_textedit_property_context_menu_enabled)                                   | ``true``                                                                                          |
+| [`String`](class_string.md)                                   | [`custom_word_separators`](class_textedit.md#class_textedit_property_custom_word_separators)                               | ``""``                                                                                            |
+| [`bool`](class_bool.md)                                       | [`deselect_on_focus_loss_enabled`](class_textedit.md#class_textedit_property_deselect_on_focus_loss_enabled)               | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`drag_and_drop_selection_enabled`](class_textedit.md#class_textedit_property_drag_and_drop_selection_enabled)             | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`draw_control_chars`](class_textedit.md#class_textedit_property_draw_control_chars)                                       | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`draw_spaces`](class_textedit.md#class_textedit_property_draw_spaces)                                                     | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`draw_tabs`](class_textedit.md#class_textedit_property_draw_tabs)                                                         | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`editable`](class_textedit.md#class_textedit_property_editable)                                                           | ``true``                                                                                          |
+| [FocusMode](#enum_control_focusmode)                          | focus_mode                                                                                                                 | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))                 |
+| [`bool`](class_bool.md)                                       | [`highlight_all_occurrences`](class_textedit.md#class_textedit_property_highlight_all_occurrences)                         | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`highlight_current_line`](class_textedit.md#class_textedit_property_highlight_current_line)                               | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`indent_wrapped_lines`](class_textedit.md#class_textedit_property_indent_wrapped_lines)                                   | ``false``                                                                                         |
+| [`String`](class_string.md)                                   | [`language`](class_textedit.md#class_textedit_property_language)                                                           | ``""``                                                                                            |
+| [`bool`](class_bool.md)                                       | [`middle_mouse_paste_enabled`](class_textedit.md#class_textedit_property_middle_mouse_paste_enabled)                       | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`minimap_draw`](class_textedit.md#class_textedit_property_minimap_draw)                                                   | ``false``                                                                                         |
+| [`int`](class_int.md)                                         | [`minimap_width`](class_textedit.md#class_textedit_property_minimap_width)                                                 | ``80``                                                                                            |
+| [CursorShape](#enum_control_cursorshape)                      | mouse_default_cursor_shape                                                                                                 | ``1`` (overrides [`Control`](class_control.md#class_control_property_mouse_default_cursor_shape)) |
+| [`String`](class_string.md)                                   | [`placeholder_text`](class_textedit.md#class_textedit_property_placeholder_text)                                           | ``""``                                                                                            |
+| [`bool`](class_bool.md)                                       | [`scroll_fit_content_height`](class_textedit.md#class_textedit_property_scroll_fit_content_height)                         | ``false``                                                                                         |
+| [`int`](class_int.md)                                         | [`scroll_horizontal`](class_textedit.md#class_textedit_property_scroll_horizontal)                                         | ``0``                                                                                             |
+| [`bool`](class_bool.md)                                       | [`scroll_past_end_of_file`](class_textedit.md#class_textedit_property_scroll_past_end_of_file)                             | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`scroll_smooth`](class_textedit.md#class_textedit_property_scroll_smooth)                                                 | ``false``                                                                                         |
+| [`float`](class_float.md)                                     | [`scroll_v_scroll_speed`](class_textedit.md#class_textedit_property_scroll_v_scroll_speed)                                 | ``80.0``                                                                                          |
+| [`float`](class_float.md)                                     | [`scroll_vertical`](class_textedit.md#class_textedit_property_scroll_vertical)                                             | ``0.0``                                                                                           |
+| [`bool`](class_bool.md)                                       | [`selecting_enabled`](class_textedit.md#class_textedit_property_selecting_enabled)                                         | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`shortcut_keys_enabled`](class_textedit.md#class_textedit_property_shortcut_keys_enabled)                                 | ``true``                                                                                          |
+| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`structured_text_bidi_override`](class_textedit.md#class_textedit_property_structured_text_bidi_override)                 | ``0``                                                                                             |
+| [`Array`](class_array.md)                                     | [`structured_text_bidi_override_options`](class_textedit.md#class_textedit_property_structured_text_bidi_override_options) | ``[]``                                                                                            |
+| [`SyntaxHighlighter`](class_syntaxhighlighter.md)             | [`syntax_highlighter`](class_textedit.md#class_textedit_property_syntax_highlighter)                                       |                                                                                                   |
+| [`String`](class_string.md)                                   | [`text`](class_textedit.md#class_textedit_property_text)                                                                   | ``""``                                                                                            |
+| [TextDirection](#enum_control_textdirection)                  | [`text_direction`](class_textedit.md#class_textedit_property_text_direction)                                               | ``0``                                                                                             |
+| [`bool`](class_bool.md)                                       | [`use_custom_word_separators`](class_textedit.md#class_textedit_property_use_custom_word_separators)                       | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`use_default_word_separators`](class_textedit.md#class_textedit_property_use_default_word_separators)                     | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`virtual_keyboard_enabled`](class_textedit.md#class_textedit_property_virtual_keyboard_enabled)                           | ``true``                                                                                          |
+| [LineWrappingMode](#enum_textedit_linewrappingmode)           | [`wrap_mode`](class_textedit.md#class_textedit_property_wrap_mode)                                                         | ``0``                                                                                             |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                  | [`_backspace`](#class_textedit_private_method__backspace) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                       |
-| `void`                                                  | [`_copy`](#class_textedit_private_method__copy) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                                 |
-| `void`                                                  | [`_cut`](#class_textedit_private_method__cut) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                                   |
-| `void`                                                  | [`_handle_unicode_input`](#class_textedit_private_method__handle_unicode_input) ( unicode_char: [`int`](class_int.md), caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                            |
-| `void`                                                  | [`_paste`](#class_textedit_private_method__paste) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                               |
-| `void`                                                  | [`_paste_primary_clipboard`](#class_textedit_private_method__paste_primary_clipboard) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                           |
-| [`int`](class_int.md)                                   | [`add_caret`](#class_textedit_method_add_caret) ( line: [`int`](class_int.md), column: [`int`](class_int.md) )                                                                                                                                                           |
-| `void`                                                  | [`add_caret_at_carets`](#class_textedit_method_add_caret_at_carets) ( below: [`bool`](class_bool.md) )                                                                                                                                                                   |
-| `void`                                                  | [`add_gutter`](#class_textedit_method_add_gutter) ( at: [`int`](class_int.md) = -1 )                                                                                                                                                                                     |
-| `void`                                                  | [`add_selection_for_next_occurrence`](#class_textedit_method_add_selection_for_next_occurrence) ( )                                                                                                                                                                      |
-| `void`                                                  | [`adjust_carets_after_edit`](#class_textedit_method_adjust_carets_after_edit) ( caret: [`int`](class_int.md), from_line: [`int`](class_int.md), from_col: [`int`](class_int.md), to_line: [`int`](class_int.md), to_col: [`int`](class_int.md) )                         |
-| `void`                                                  | [`adjust_viewport_to_caret`](#class_textedit_method_adjust_viewport_to_caret) ( caret_index: [`int`](class_int.md) = 0 )                                                                                                                                                 |
-| `void`                                                  | [`apply_ime`](#class_textedit_method_apply_ime) ( )                                                                                                                                                                                                                      |
-| `void`                                                  | [`backspace`](#class_textedit_method_backspace) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                              |
-| `void`                                                  | [`begin_complex_operation`](#class_textedit_method_begin_complex_operation) ( )                                                                                                                                                                                          |
-| `void`                                                  | [`begin_multicaret_edit`](#class_textedit_method_begin_multicaret_edit) ( )                                                                                                                                                                                              |
-| `void`                                                  | [`cancel_ime`](#class_textedit_method_cancel_ime) ( )                                                                                                                                                                                                                    |
-| `void`                                                  | [`center_viewport_to_caret`](#class_textedit_method_center_viewport_to_caret) ( caret_index: [`int`](class_int.md) = 0 )                                                                                                                                                 |
-| `void`                                                  | [`clear`](#class_textedit_method_clear) ( )                                                                                                                                                                                                                              |
-| `void`                                                  | [`clear_undo_history`](#class_textedit_method_clear_undo_history) ( )                                                                                                                                                                                                    |
-| `void`                                                  | [`collapse_carets`](#class_textedit_method_collapse_carets) ( from_line: [`int`](class_int.md), from_column: [`int`](class_int.md), to_line: [`int`](class_int.md), to_column: [`int`](class_int.md), inclusive: [`bool`](class_bool.md) = false )                       |
-| `void`                                                  | [`copy`](#class_textedit_method_copy) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                                        |
-| `void`                                                  | [`cut`](#class_textedit_method_cut) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                                          |
-| `void`                                                  | [`delete_selection`](#class_textedit_method_delete_selection) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                |
-| `void`                                                  | [`deselect`](#class_textedit_method_deselect) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                                |
-| `void`                                                  | [`end_action`](#class_textedit_method_end_action) ( )                                                                                                                                                                                                                    |
-| `void`                                                  | [`end_complex_operation`](#class_textedit_method_end_complex_operation) ( )                                                                                                                                                                                              |
-| `void`                                                  | [`end_multicaret_edit`](#class_textedit_method_end_multicaret_edit) ( )                                                                                                                                                                                                  |
-| [`int`](class_int.md)                                   | [`get_caret_column`](#class_textedit_method_get_caret_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                   |
-| [`int`](class_int.md)                                   | [`get_caret_count`](#class_textedit_method_get_caret_count) ( ) const[^const]                                                                                                                                                                                            |
-| [`Vector2`](class_vector2.md)                           | [`get_caret_draw_pos`](#class_textedit_method_get_caret_draw_pos) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                               |
-| [`PackedInt32Array`](class_packedint32array.md)         | [`get_caret_index_edit_order`](#class_textedit_method_get_caret_index_edit_order) ( )                                                                                                                                                                                    |
-| [`int`](class_int.md)                                   | [`get_caret_line`](#class_textedit_method_get_caret_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                       |
-| [`int`](class_int.md)                                   | [`get_caret_wrap_index`](#class_textedit_method_get_caret_wrap_index) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                           |
-| [`int`](class_int.md)                                   | [`get_first_non_whitespace_column`](#class_textedit_method_get_first_non_whitespace_column) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                |
-| [`int`](class_int.md)                                   | [`get_first_visible_line`](#class_textedit_method_get_first_visible_line) ( ) const[^const]                                                                                                                                                                              |
-| [`int`](class_int.md)                                   | [`get_gutter_count`](#class_textedit_method_get_gutter_count) ( ) const[^const]                                                                                                                                                                                          |
-| [`String`](class_string.md)                             | [`get_gutter_name`](#class_textedit_method_get_gutter_name) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
-| [GutterType](#enum_textedit_guttertype)                 | [`get_gutter_type`](#class_textedit_method_get_gutter_type) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
-| [`int`](class_int.md)                                   | [`get_gutter_width`](#class_textedit_method_get_gutter_width) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                            |
-| [`HScrollBar`](class_hscrollbar.md)                     | [`get_h_scroll_bar`](#class_textedit_method_get_h_scroll_bar) ( ) const[^const]                                                                                                                                                                                          |
-| [`int`](class_int.md)                                   | [`get_indent_level`](#class_textedit_method_get_indent_level) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
-| [`int`](class_int.md)                                   | [`get_last_full_visible_line`](#class_textedit_method_get_last_full_visible_line) ( ) const[^const]                                                                                                                                                                      |
-| [`int`](class_int.md)                                   | [`get_last_full_visible_line_wrap_index`](#class_textedit_method_get_last_full_visible_line_wrap_index) ( ) const[^const]                                                                                                                                                |
-| [`int`](class_int.md)                                   | [`get_last_unhidden_line`](#class_textedit_method_get_last_unhidden_line) ( ) const[^const]                                                                                                                                                                              |
-| [`String`](class_string.md)                             | [`get_line`](#class_textedit_method_get_line) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                                              |
-| [`Color`](class_color.md)                               | [`get_line_background_color`](#class_textedit_method_get_line_background_color) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                            |
-| [`Vector2i`](class_vector2i.md)                         | [`get_line_column_at_pos`](#class_textedit_method_get_line_column_at_pos) ( position: [`Vector2i`](class_vector2i.md), allow_out_of_bounds: [`bool`](class_bool.md) = true ) const[^const]                                                                               |
-| [`int`](class_int.md)                                   | [`get_line_count`](#class_textedit_method_get_line_count) ( ) const[^const]                                                                                                                                                                                              |
-| [`Texture2D`](class_texture2d.md)                       | [`get_line_gutter_icon`](#class_textedit_method_get_line_gutter_icon) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                                       |
-| [`Color`](class_color.md)                               | [`get_line_gutter_item_color`](#class_textedit_method_get_line_gutter_item_color) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                           |
-| [`Variant`](class_variant.md)                           | [`get_line_gutter_metadata`](#class_textedit_method_get_line_gutter_metadata) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                               |
-| [`String`](class_string.md)                             | [`get_line_gutter_text`](#class_textedit_method_get_line_gutter_text) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                                       |
-| [`int`](class_int.md)                                   | [`get_line_height`](#class_textedit_method_get_line_height) ( ) const[^const]                                                                                                                                                                                            |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_line_ranges_from_carets`](#class_textedit_method_get_line_ranges_from_carets) ( only_selections: [`bool`](class_bool.md) = false, merge_adjacent: [`bool`](class_bool.md) = true ) const[^const]                                                                   |
-| [`int`](class_int.md)                                   | [`get_line_width`](#class_textedit_method_get_line_width) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = -1 ) const[^const]                                                                                                                          |
-| [`int`](class_int.md)                                   | [`get_line_wrap_count`](#class_textedit_method_get_line_wrap_count) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                        |
-| [`int`](class_int.md)                                   | [`get_line_wrap_index_at_column`](#class_textedit_method_get_line_wrap_index_at_column) ( line: [`int`](class_int.md), column: [`int`](class_int.md) ) const[^const]                                                                                                     |
-| [`PackedStringArray`](class_packedstringarray.md)       | [`get_line_wrapped_text`](#class_textedit_method_get_line_wrapped_text) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                    |
-| [`Vector2`](class_vector2.md)                           | [`get_local_mouse_pos`](#class_textedit_method_get_local_mouse_pos) ( ) const[^const]                                                                                                                                                                                    |
-| [`PopupMenu`](class_popupmenu.md)                       | [`get_menu`](#class_textedit_method_get_menu) ( ) const[^const]                                                                                                                                                                                                          |
-| [`int`](class_int.md)                                   | [`get_minimap_line_at_pos`](#class_textedit_method_get_minimap_line_at_pos) ( position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                  |
-| [`int`](class_int.md)                                   | [`get_minimap_visible_lines`](#class_textedit_method_get_minimap_visible_lines) ( ) const[^const]                                                                                                                                                                        |
-| [`Vector2i`](class_vector2i.md)                         | [`get_next_visible_line_index_offset_from`](#class_textedit_method_get_next_visible_line_index_offset_from) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md), visible_amount: [`int`](class_int.md) ) const[^const]                                      |
-| [`int`](class_int.md)                                   | [`get_next_visible_line_offset_from`](#class_textedit_method_get_next_visible_line_offset_from) ( line: [`int`](class_int.md), visible_amount: [`int`](class_int.md) ) const[^const]                                                                                     |
-| [`Vector2i`](class_vector2i.md)                         | [`get_pos_at_line_column`](#class_textedit_method_get_pos_at_line_column) ( line: [`int`](class_int.md), column: [`int`](class_int.md) ) const[^const]                                                                                                                   |
-| [`Rect2i`](class_rect2i.md)                             | [`get_rect_at_line_column`](#class_textedit_method_get_rect_at_line_column) ( line: [`int`](class_int.md), column: [`int`](class_int.md) ) const[^const]                                                                                                                 |
-| [`int`](class_int.md)                                   | [`get_saved_version`](#class_textedit_method_get_saved_version) ( ) const[^const]                                                                                                                                                                                        |
-| [`float`](class_float.md)                               | [`get_scroll_pos_for_line`](#class_textedit_method_get_scroll_pos_for_line) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                         |
-| [`String`](class_string.md)                             | [`get_selected_text`](#class_textedit_method_get_selected_text) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                              |
-| [`int`](class_int.md)                                   | [`get_selection_at_line_column`](#class_textedit_method_get_selection_at_line_column) ( line: [`int`](class_int.md), column: [`int`](class_int.md), include_edges: [`bool`](class_bool.md) = true, only_selections: [`bool`](class_bool.md) = true ) const[^const]       |
-| [`int`](class_int.md)                                   | [`get_selection_column`](#class_textedit_method_get_selection_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                           |
-| [`int`](class_int.md)                                   | [`get_selection_from_column`](#class_textedit_method_get_selection_from_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                 |
-| [`int`](class_int.md)                                   | [`get_selection_from_line`](#class_textedit_method_get_selection_from_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                     |
-| [`int`](class_int.md)                                   | [`get_selection_line`](#class_textedit_method_get_selection_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                               |
-| [SelectionMode](#enum_textedit_selectionmode)           | [`get_selection_mode`](#class_textedit_method_get_selection_mode) ( ) const[^const]                                                                                                                                                                                      |
-| [`int`](class_int.md)                                   | [`get_selection_origin_column`](#class_textedit_method_get_selection_origin_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                             |
-| [`int`](class_int.md)                                   | [`get_selection_origin_line`](#class_textedit_method_get_selection_origin_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                 |
-| [`int`](class_int.md)                                   | [`get_selection_to_column`](#class_textedit_method_get_selection_to_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                     |
-| [`int`](class_int.md)                                   | [`get_selection_to_line`](#class_textedit_method_get_selection_to_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                         |
-| [`PackedInt32Array`](class_packedint32array.md)         | [`get_sorted_carets`](#class_textedit_method_get_sorted_carets) ( include_ignored_carets: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                |
-| [`int`](class_int.md)                                   | [`get_tab_size`](#class_textedit_method_get_tab_size) ( ) const[^const]                                                                                                                                                                                                  |
-| [`int`](class_int.md)                                   | [`get_total_gutter_width`](#class_textedit_method_get_total_gutter_width) ( ) const[^const]                                                                                                                                                                              |
-| [`int`](class_int.md)                                   | [`get_total_visible_line_count`](#class_textedit_method_get_total_visible_line_count) ( ) const[^const]                                                                                                                                                                  |
-| [`VScrollBar`](class_vscrollbar.md)                     | [`get_v_scroll_bar`](#class_textedit_method_get_v_scroll_bar) ( ) const[^const]                                                                                                                                                                                          |
-| [`int`](class_int.md)                                   | [`get_version`](#class_textedit_method_get_version) ( ) const[^const]                                                                                                                                                                                                    |
-| [`int`](class_int.md)                                   | [`get_visible_line_count`](#class_textedit_method_get_visible_line_count) ( ) const[^const]                                                                                                                                                                              |
-| [`int`](class_int.md)                                   | [`get_visible_line_count_in_range`](#class_textedit_method_get_visible_line_count_in_range) ( from_line: [`int`](class_int.md), to_line: [`int`](class_int.md) ) const[^const]                                                                                           |
-| [`String`](class_string.md)                             | [`get_word_at_pos`](#class_textedit_method_get_word_at_pos) ( position: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                    |
-| [`String`](class_string.md)                             | [`get_word_under_caret`](#class_textedit_method_get_word_under_caret) ( caret_index: [`int`](class_int.md) = -1 ) const[^const]                                                                                                                                          |
-| [`bool`](class_bool.md)                                 | [`has_ime_text`](#class_textedit_method_has_ime_text) ( ) const[^const]                                                                                                                                                                                                  |
-| [`bool`](class_bool.md)                                 | [`has_redo`](#class_textedit_method_has_redo) ( ) const[^const]                                                                                                                                                                                                          |
-| [`bool`](class_bool.md)                                 | [`has_selection`](#class_textedit_method_has_selection) ( caret_index: [`int`](class_int.md) = -1 ) const[^const]                                                                                                                                                        |
-| [`bool`](class_bool.md)                                 | [`has_undo`](#class_textedit_method_has_undo) ( ) const[^const]                                                                                                                                                                                                          |
-| `void`                                                  | [`insert_line_at`](#class_textedit_method_insert_line_at) ( line: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                                                             |
-| `void`                                                  | [`insert_text`](#class_textedit_method_insert_text) ( text: [`String`](class_string.md), line: [`int`](class_int.md), column: [`int`](class_int.md), before_selection_begin: [`bool`](class_bool.md) = true, before_selection_end: [`bool`](class_bool.md) = false )     |
-| `void`                                                  | [`insert_text_at_caret`](#class_textedit_method_insert_text_at_caret) ( text: [`String`](class_string.md), caret_index: [`int`](class_int.md) = -1 )                                                                                                                     |
-| [`bool`](class_bool.md)                                 | [`is_caret_after_selection_origin`](#class_textedit_method_is_caret_after_selection_origin) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                     |
-| [`bool`](class_bool.md)                                 | [`is_caret_visible`](#class_textedit_method_is_caret_visible) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                   |
-| [`bool`](class_bool.md)                                 | [`is_dragging_cursor`](#class_textedit_method_is_dragging_cursor) ( ) const[^const]                                                                                                                                                                                      |
-| [`bool`](class_bool.md)                                 | [`is_gutter_clickable`](#class_textedit_method_is_gutter_clickable) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
-| [`bool`](class_bool.md)                                 | [`is_gutter_drawn`](#class_textedit_method_is_gutter_drawn) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
-| [`bool`](class_bool.md)                                 | [`is_gutter_overwritable`](#class_textedit_method_is_gutter_overwritable) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                |
-| [`bool`](class_bool.md)                                 | [`is_in_mulitcaret_edit`](#class_textedit_method_is_in_mulitcaret_edit) ( ) const[^const]                                                                                                                                                                                |
-| [`bool`](class_bool.md)                                 | [`is_line_gutter_clickable`](#class_textedit_method_is_line_gutter_clickable) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                               |
-| [`bool`](class_bool.md)                                 | [`is_line_wrapped`](#class_textedit_method_is_line_wrapped) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                                |
-| [`bool`](class_bool.md)                                 | [`is_menu_visible`](#class_textedit_method_is_menu_visible) ( ) const[^const]                                                                                                                                                                                            |
-| [`bool`](class_bool.md)                                 | [`is_mouse_over_selection`](#class_textedit_method_is_mouse_over_selection) ( edges: [`bool`](class_bool.md), caret_index: [`int`](class_int.md) = -1 ) const[^const]                                                                                                    |
-| [`bool`](class_bool.md)                                 | [`is_overtype_mode_enabled`](#class_textedit_method_is_overtype_mode_enabled) ( ) const[^const]                                                                                                                                                                          |
-| `void`                                                  | [`menu_option`](#class_textedit_method_menu_option) ( option: [`int`](class_int.md) )                                                                                                                                                                                    |
-| `void`                                                  | [`merge_gutters`](#class_textedit_method_merge_gutters) ( from_line: [`int`](class_int.md), to_line: [`int`](class_int.md) )                                                                                                                                             |
-| `void`                                                  | [`merge_overlapping_carets`](#class_textedit_method_merge_overlapping_carets) ( )                                                                                                                                                                                        |
-| [`bool`](class_bool.md)                                 | [`multicaret_edit_ignore_caret`](#class_textedit_method_multicaret_edit_ignore_caret) ( caret_index: [`int`](class_int.md) ) const[^const]                                                                                                                               |
-| `void`                                                  | [`paste`](#class_textedit_method_paste) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                                      |
-| `void`                                                  | [`paste_primary_clipboard`](#class_textedit_method_paste_primary_clipboard) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                  |
-| `void`                                                  | [`redo`](#class_textedit_method_redo) ( )                                                                                                                                                                                                                                |
-| `void`                                                  | [`remove_caret`](#class_textedit_method_remove_caret) ( caret: [`int`](class_int.md) )                                                                                                                                                                                   |
-| `void`                                                  | [`remove_gutter`](#class_textedit_method_remove_gutter) ( gutter: [`int`](class_int.md) )                                                                                                                                                                                |
-| `void`                                                  | [`remove_line_at`](#class_textedit_method_remove_line_at) ( line: [`int`](class_int.md), move_carets_down: [`bool`](class_bool.md) = true )                                                                                                                              |
-| `void`                                                  | [`remove_secondary_carets`](#class_textedit_method_remove_secondary_carets) ( )                                                                                                                                                                                          |
-| `void`                                                  | [`remove_text`](#class_textedit_method_remove_text) ( from_line: [`int`](class_int.md), from_column: [`int`](class_int.md), to_line: [`int`](class_int.md), to_column: [`int`](class_int.md) )                                                                           |
-| [`Vector2i`](class_vector2i.md)                         | [`search`](#class_textedit_method_search) ( text: [`String`](class_string.md), flags: [`int`](class_int.md), from_line: [`int`](class_int.md), from_column: [`int`](class_int.md) ) const[^const]                                                                        |
-| `void`                                                  | [`select`](#class_textedit_method_select) ( origin_line: [`int`](class_int.md), origin_column: [`int`](class_int.md), caret_line: [`int`](class_int.md), caret_column: [`int`](class_int.md), caret_index: [`int`](class_int.md) = 0 )                                   |
-| `void`                                                  | [`select_all`](#class_textedit_method_select_all) ( )                                                                                                                                                                                                                    |
-| `void`                                                  | [`select_word_under_caret`](#class_textedit_method_select_word_under_caret) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                  |
-| `void`                                                  | [`set_caret_column`](#class_textedit_method_set_caret_column) ( column: [`int`](class_int.md), adjust_viewport: [`bool`](class_bool.md) = true, caret_index: [`int`](class_int.md) = 0 )                                                                                 |
-| `void`                                                  | [`set_caret_line`](#class_textedit_method_set_caret_line) ( line: [`int`](class_int.md), adjust_viewport: [`bool`](class_bool.md) = true, can_be_hidden: [`bool`](class_bool.md) = true, wrap_index: [`int`](class_int.md) = 0, caret_index: [`int`](class_int.md) = 0 ) |
-| `void`                                                  | [`set_gutter_clickable`](#class_textedit_method_set_gutter_clickable) ( gutter: [`int`](class_int.md), clickable: [`bool`](class_bool.md) )                                                                                                                              |
-| `void`                                                  | [`set_gutter_custom_draw`](#class_textedit_method_set_gutter_custom_draw) ( column: [`int`](class_int.md), draw_callback: [`Callable`](class_callable.md) )                                                                                                              |
-| `void`                                                  | [`set_gutter_draw`](#class_textedit_method_set_gutter_draw) ( gutter: [`int`](class_int.md), draw: [`bool`](class_bool.md) )                                                                                                                                             |
-| `void`                                                  | [`set_gutter_name`](#class_textedit_method_set_gutter_name) ( gutter: [`int`](class_int.md), name: [`String`](class_string.md) )                                                                                                                                         |
-| `void`                                                  | [`set_gutter_overwritable`](#class_textedit_method_set_gutter_overwritable) ( gutter: [`int`](class_int.md), overwritable: [`bool`](class_bool.md) )                                                                                                                     |
-| `void`                                                  | [`set_gutter_type`](#class_textedit_method_set_gutter_type) ( gutter: [`int`](class_int.md), type: [GutterType](#enum_textedit_guttertype) )                                                                                                                             |
-| `void`                                                  | [`set_gutter_width`](#class_textedit_method_set_gutter_width) ( gutter: [`int`](class_int.md), width: [`int`](class_int.md) )                                                                                                                                            |
-| `void`                                                  | [`set_line`](#class_textedit_method_set_line) ( line: [`int`](class_int.md), new_text: [`String`](class_string.md) )                                                                                                                                                     |
-| `void`                                                  | [`set_line_as_center_visible`](#class_textedit_method_set_line_as_center_visible) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = 0 )                                                                                                                 |
-| `void`                                                  | [`set_line_as_first_visible`](#class_textedit_method_set_line_as_first_visible) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = 0 )                                                                                                                   |
-| `void`                                                  | [`set_line_as_last_visible`](#class_textedit_method_set_line_as_last_visible) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = 0 )                                                                                                                     |
-| `void`                                                  | [`set_line_background_color`](#class_textedit_method_set_line_background_color) ( line: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                        |
-| `void`                                                  | [`set_line_gutter_clickable`](#class_textedit_method_set_line_gutter_clickable) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), clickable: [`bool`](class_bool.md) )                                                                                       |
-| `void`                                                  | [`set_line_gutter_icon`](#class_textedit_method_set_line_gutter_icon) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                                                                                            |
-| `void`                                                  | [`set_line_gutter_item_color`](#class_textedit_method_set_line_gutter_item_color) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                       |
-| `void`                                                  | [`set_line_gutter_metadata`](#class_textedit_method_set_line_gutter_metadata) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                                                                                    |
-| `void`                                                  | [`set_line_gutter_text`](#class_textedit_method_set_line_gutter_text) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                  |
-| `void`                                                  | [`set_overtype_mode_enabled`](#class_textedit_method_set_overtype_mode_enabled) ( enabled: [`bool`](class_bool.md) )                                                                                                                                                     |
-| `void`                                                  | [`set_search_flags`](#class_textedit_method_set_search_flags) ( flags: [`int`](class_int.md) )                                                                                                                                                                           |
-| `void`                                                  | [`set_search_text`](#class_textedit_method_set_search_text) ( search_text: [`String`](class_string.md) )                                                                                                                                                                 |
-| `void`                                                  | [`set_selection_mode`](#class_textedit_method_set_selection_mode) ( mode: [SelectionMode](#enum_textedit_selectionmode) )                                                                                                                                                |
-| `void`                                                  | [`set_selection_origin_column`](#class_textedit_method_set_selection_origin_column) ( column: [`int`](class_int.md), caret_index: [`int`](class_int.md) = 0 )                                                                                                            |
-| `void`                                                  | [`set_selection_origin_line`](#class_textedit_method_set_selection_origin_line) ( line: [`int`](class_int.md), can_be_hidden: [`bool`](class_bool.md) = true, wrap_index: [`int`](class_int.md) = -1, caret_index: [`int`](class_int.md) = 0 )                           |
-| `void`                                                  | [`set_tab_size`](#class_textedit_method_set_tab_size) ( size: [`int`](class_int.md) )                                                                                                                                                                                    |
-| `void`                                                  | [`set_tooltip_request_func`](#class_textedit_method_set_tooltip_request_func) ( callback: [`Callable`](class_callable.md) )                                                                                                                                              |
-| `void`                                                  | [`skip_selection_for_next_occurrence`](#class_textedit_method_skip_selection_for_next_occurrence) ( )                                                                                                                                                                    |
-| `void`                                                  | [`start_action`](#class_textedit_method_start_action) ( action: [EditAction](#enum_textedit_editaction) )                                                                                                                                                                |
-| `void`                                                  | [`swap_lines`](#class_textedit_method_swap_lines) ( from_line: [`int`](class_int.md), to_line: [`int`](class_int.md) )                                                                                                                                                   |
-| `void`                                                  | [`tag_saved_version`](#class_textedit_method_tag_saved_version) ( )                                                                                                                                                                                                      |
-| `void`                                                  | [`undo`](#class_textedit_method_undo) ( )                                                                                                                                                                                                                                |
+| `void`                                                  | [`_backspace`](class_textedit.md#class_textedit_private_method__backspace) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                       |
+| `void`                                                  | [`_copy`](class_textedit.md#class_textedit_private_method__copy) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                                 |
+| `void`                                                  | [`_cut`](class_textedit.md#class_textedit_private_method__cut) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                                   |
+| `void`                                                  | [`_handle_unicode_input`](class_textedit.md#class_textedit_private_method__handle_unicode_input) ( unicode_char: [`int`](class_int.md), caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                            |
+| `void`                                                  | [`_paste`](class_textedit.md#class_textedit_private_method__paste) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                               |
+| `void`                                                  | [`_paste_primary_clipboard`](class_textedit.md#class_textedit_private_method__paste_primary_clipboard) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                           |
+| [`int`](class_int.md)                                   | [`add_caret`](class_textedit.md#class_textedit_method_add_caret) ( line: [`int`](class_int.md), column: [`int`](class_int.md) )                                                                                                                                                           |
+| `void`                                                  | [`add_caret_at_carets`](class_textedit.md#class_textedit_method_add_caret_at_carets) ( below: [`bool`](class_bool.md) )                                                                                                                                                                   |
+| `void`                                                  | [`add_gutter`](class_textedit.md#class_textedit_method_add_gutter) ( at: [`int`](class_int.md) = -1 )                                                                                                                                                                                     |
+| `void`                                                  | [`add_selection_for_next_occurrence`](class_textedit.md#class_textedit_method_add_selection_for_next_occurrence) ( )                                                                                                                                                                      |
+| `void`                                                  | [`adjust_carets_after_edit`](class_textedit.md#class_textedit_method_adjust_carets_after_edit) ( caret: [`int`](class_int.md), from_line: [`int`](class_int.md), from_col: [`int`](class_int.md), to_line: [`int`](class_int.md), to_col: [`int`](class_int.md) )                         |
+| `void`                                                  | [`adjust_viewport_to_caret`](class_textedit.md#class_textedit_method_adjust_viewport_to_caret) ( caret_index: [`int`](class_int.md) = 0 )                                                                                                                                                 |
+| `void`                                                  | [`apply_ime`](class_textedit.md#class_textedit_method_apply_ime) ( )                                                                                                                                                                                                                      |
+| `void`                                                  | [`backspace`](class_textedit.md#class_textedit_method_backspace) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                              |
+| `void`                                                  | [`begin_complex_operation`](class_textedit.md#class_textedit_method_begin_complex_operation) ( )                                                                                                                                                                                          |
+| `void`                                                  | [`begin_multicaret_edit`](class_textedit.md#class_textedit_method_begin_multicaret_edit) ( )                                                                                                                                                                                              |
+| `void`                                                  | [`cancel_ime`](class_textedit.md#class_textedit_method_cancel_ime) ( )                                                                                                                                                                                                                    |
+| `void`                                                  | [`center_viewport_to_caret`](class_textedit.md#class_textedit_method_center_viewport_to_caret) ( caret_index: [`int`](class_int.md) = 0 )                                                                                                                                                 |
+| `void`                                                  | [`clear`](class_textedit.md#class_textedit_method_clear) ( )                                                                                                                                                                                                                              |
+| `void`                                                  | [`clear_undo_history`](class_textedit.md#class_textedit_method_clear_undo_history) ( )                                                                                                                                                                                                    |
+| `void`                                                  | [`collapse_carets`](class_textedit.md#class_textedit_method_collapse_carets) ( from_line: [`int`](class_int.md), from_column: [`int`](class_int.md), to_line: [`int`](class_int.md), to_column: [`int`](class_int.md), inclusive: [`bool`](class_bool.md) = false )                       |
+| `void`                                                  | [`copy`](class_textedit.md#class_textedit_method_copy) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                                        |
+| `void`                                                  | [`cut`](class_textedit.md#class_textedit_method_cut) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                                          |
+| `void`                                                  | [`delete_selection`](class_textedit.md#class_textedit_method_delete_selection) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                |
+| `void`                                                  | [`deselect`](class_textedit.md#class_textedit_method_deselect) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                                |
+| `void`                                                  | [`end_action`](class_textedit.md#class_textedit_method_end_action) ( )                                                                                                                                                                                                                    |
+| `void`                                                  | [`end_complex_operation`](class_textedit.md#class_textedit_method_end_complex_operation) ( )                                                                                                                                                                                              |
+| `void`                                                  | [`end_multicaret_edit`](class_textedit.md#class_textedit_method_end_multicaret_edit) ( )                                                                                                                                                                                                  |
+| [`int`](class_int.md)                                   | [`get_caret_column`](class_textedit.md#class_textedit_method_get_caret_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                   |
+| [`int`](class_int.md)                                   | [`get_caret_count`](class_textedit.md#class_textedit_method_get_caret_count) ( ) const[^const]                                                                                                                                                                                            |
+| [`Vector2`](class_vector2.md)                           | [`get_caret_draw_pos`](class_textedit.md#class_textedit_method_get_caret_draw_pos) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                               |
+| [`PackedInt32Array`](class_packedint32array.md)         | [`get_caret_index_edit_order`](class_textedit.md#class_textedit_method_get_caret_index_edit_order) ( )                                                                                                                                                                                    |
+| [`int`](class_int.md)                                   | [`get_caret_line`](class_textedit.md#class_textedit_method_get_caret_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                       |
+| [`int`](class_int.md)                                   | [`get_caret_wrap_index`](class_textedit.md#class_textedit_method_get_caret_wrap_index) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                           |
+| [`int`](class_int.md)                                   | [`get_first_non_whitespace_column`](class_textedit.md#class_textedit_method_get_first_non_whitespace_column) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                |
+| [`int`](class_int.md)                                   | [`get_first_visible_line`](class_textedit.md#class_textedit_method_get_first_visible_line) ( ) const[^const]                                                                                                                                                                              |
+| [`int`](class_int.md)                                   | [`get_gutter_count`](class_textedit.md#class_textedit_method_get_gutter_count) ( ) const[^const]                                                                                                                                                                                          |
+| [`String`](class_string.md)                             | [`get_gutter_name`](class_textedit.md#class_textedit_method_get_gutter_name) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
+| [GutterType](#enum_textedit_guttertype)                 | [`get_gutter_type`](class_textedit.md#class_textedit_method_get_gutter_type) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
+| [`int`](class_int.md)                                   | [`get_gutter_width`](class_textedit.md#class_textedit_method_get_gutter_width) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                            |
+| [`HScrollBar`](class_hscrollbar.md)                     | [`get_h_scroll_bar`](class_textedit.md#class_textedit_method_get_h_scroll_bar) ( ) const[^const]                                                                                                                                                                                          |
+| [`int`](class_int.md)                                   | [`get_indent_level`](class_textedit.md#class_textedit_method_get_indent_level) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
+| [`int`](class_int.md)                                   | [`get_last_full_visible_line`](class_textedit.md#class_textedit_method_get_last_full_visible_line) ( ) const[^const]                                                                                                                                                                      |
+| [`int`](class_int.md)                                   | [`get_last_full_visible_line_wrap_index`](class_textedit.md#class_textedit_method_get_last_full_visible_line_wrap_index) ( ) const[^const]                                                                                                                                                |
+| [`int`](class_int.md)                                   | [`get_last_unhidden_line`](class_textedit.md#class_textedit_method_get_last_unhidden_line) ( ) const[^const]                                                                                                                                                                              |
+| [`String`](class_string.md)                             | [`get_line`](class_textedit.md#class_textedit_method_get_line) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                                              |
+| [`Color`](class_color.md)                               | [`get_line_background_color`](class_textedit.md#class_textedit_method_get_line_background_color) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                            |
+| [`Vector2i`](class_vector2i.md)                         | [`get_line_column_at_pos`](class_textedit.md#class_textedit_method_get_line_column_at_pos) ( position: [`Vector2i`](class_vector2i.md), allow_out_of_bounds: [`bool`](class_bool.md) = true ) const[^const]                                                                               |
+| [`int`](class_int.md)                                   | [`get_line_count`](class_textedit.md#class_textedit_method_get_line_count) ( ) const[^const]                                                                                                                                                                                              |
+| [`Texture2D`](class_texture2d.md)                       | [`get_line_gutter_icon`](class_textedit.md#class_textedit_method_get_line_gutter_icon) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                                       |
+| [`Color`](class_color.md)                               | [`get_line_gutter_item_color`](class_textedit.md#class_textedit_method_get_line_gutter_item_color) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                           |
+| [`Variant`](class_variant.md)                           | [`get_line_gutter_metadata`](class_textedit.md#class_textedit_method_get_line_gutter_metadata) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                               |
+| [`String`](class_string.md)                             | [`get_line_gutter_text`](class_textedit.md#class_textedit_method_get_line_gutter_text) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                                       |
+| [`int`](class_int.md)                                   | [`get_line_height`](class_textedit.md#class_textedit_method_get_line_height) ( ) const[^const]                                                                                                                                                                                            |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_line_ranges_from_carets`](class_textedit.md#class_textedit_method_get_line_ranges_from_carets) ( only_selections: [`bool`](class_bool.md) = false, merge_adjacent: [`bool`](class_bool.md) = true ) const[^const]                                                                   |
+| [`int`](class_int.md)                                   | [`get_line_width`](class_textedit.md#class_textedit_method_get_line_width) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = -1 ) const[^const]                                                                                                                          |
+| [`int`](class_int.md)                                   | [`get_line_wrap_count`](class_textedit.md#class_textedit_method_get_line_wrap_count) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                        |
+| [`int`](class_int.md)                                   | [`get_line_wrap_index_at_column`](class_textedit.md#class_textedit_method_get_line_wrap_index_at_column) ( line: [`int`](class_int.md), column: [`int`](class_int.md) ) const[^const]                                                                                                     |
+| [`PackedStringArray`](class_packedstringarray.md)       | [`get_line_wrapped_text`](class_textedit.md#class_textedit_method_get_line_wrapped_text) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                    |
+| [`Vector2`](class_vector2.md)                           | [`get_local_mouse_pos`](class_textedit.md#class_textedit_method_get_local_mouse_pos) ( ) const[^const]                                                                                                                                                                                    |
+| [`PopupMenu`](class_popupmenu.md)                       | [`get_menu`](class_textedit.md#class_textedit_method_get_menu) ( ) const[^const]                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                   | [`get_minimap_line_at_pos`](class_textedit.md#class_textedit_method_get_minimap_line_at_pos) ( position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                  |
+| [`int`](class_int.md)                                   | [`get_minimap_visible_lines`](class_textedit.md#class_textedit_method_get_minimap_visible_lines) ( ) const[^const]                                                                                                                                                                        |
+| [`Vector2i`](class_vector2i.md)                         | [`get_next_visible_line_index_offset_from`](class_textedit.md#class_textedit_method_get_next_visible_line_index_offset_from) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md), visible_amount: [`int`](class_int.md) ) const[^const]                                      |
+| [`int`](class_int.md)                                   | [`get_next_visible_line_offset_from`](class_textedit.md#class_textedit_method_get_next_visible_line_offset_from) ( line: [`int`](class_int.md), visible_amount: [`int`](class_int.md) ) const[^const]                                                                                     |
+| [`Vector2i`](class_vector2i.md)                         | [`get_pos_at_line_column`](class_textedit.md#class_textedit_method_get_pos_at_line_column) ( line: [`int`](class_int.md), column: [`int`](class_int.md) ) const[^const]                                                                                                                   |
+| [`Rect2i`](class_rect2i.md)                             | [`get_rect_at_line_column`](class_textedit.md#class_textedit_method_get_rect_at_line_column) ( line: [`int`](class_int.md), column: [`int`](class_int.md) ) const[^const]                                                                                                                 |
+| [`int`](class_int.md)                                   | [`get_saved_version`](class_textedit.md#class_textedit_method_get_saved_version) ( ) const[^const]                                                                                                                                                                                        |
+| [`float`](class_float.md)                               | [`get_scroll_pos_for_line`](class_textedit.md#class_textedit_method_get_scroll_pos_for_line) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                         |
+| [`String`](class_string.md)                             | [`get_selected_text`](class_textedit.md#class_textedit_method_get_selected_text) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                              |
+| [`int`](class_int.md)                                   | [`get_selection_at_line_column`](class_textedit.md#class_textedit_method_get_selection_at_line_column) ( line: [`int`](class_int.md), column: [`int`](class_int.md), include_edges: [`bool`](class_bool.md) = true, only_selections: [`bool`](class_bool.md) = true ) const[^const]       |
+| [`int`](class_int.md)                                   | [`get_selection_column`](class_textedit.md#class_textedit_method_get_selection_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                           |
+| [`int`](class_int.md)                                   | [`get_selection_from_column`](class_textedit.md#class_textedit_method_get_selection_from_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                 |
+| [`int`](class_int.md)                                   | [`get_selection_from_line`](class_textedit.md#class_textedit_method_get_selection_from_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                     |
+| [`int`](class_int.md)                                   | [`get_selection_line`](class_textedit.md#class_textedit_method_get_selection_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                               |
+| [SelectionMode](#enum_textedit_selectionmode)           | [`get_selection_mode`](class_textedit.md#class_textedit_method_get_selection_mode) ( ) const[^const]                                                                                                                                                                                      |
+| [`int`](class_int.md)                                   | [`get_selection_origin_column`](class_textedit.md#class_textedit_method_get_selection_origin_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                             |
+| [`int`](class_int.md)                                   | [`get_selection_origin_line`](class_textedit.md#class_textedit_method_get_selection_origin_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                 |
+| [`int`](class_int.md)                                   | [`get_selection_to_column`](class_textedit.md#class_textedit_method_get_selection_to_column) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                     |
+| [`int`](class_int.md)                                   | [`get_selection_to_line`](class_textedit.md#class_textedit_method_get_selection_to_line) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                         |
+| [`PackedInt32Array`](class_packedint32array.md)         | [`get_sorted_carets`](class_textedit.md#class_textedit_method_get_sorted_carets) ( include_ignored_carets: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                |
+| [`int`](class_int.md)                                   | [`get_tab_size`](class_textedit.md#class_textedit_method_get_tab_size) ( ) const[^const]                                                                                                                                                                                                  |
+| [`int`](class_int.md)                                   | [`get_total_gutter_width`](class_textedit.md#class_textedit_method_get_total_gutter_width) ( ) const[^const]                                                                                                                                                                              |
+| [`int`](class_int.md)                                   | [`get_total_visible_line_count`](class_textedit.md#class_textedit_method_get_total_visible_line_count) ( ) const[^const]                                                                                                                                                                  |
+| [`VScrollBar`](class_vscrollbar.md)                     | [`get_v_scroll_bar`](class_textedit.md#class_textedit_method_get_v_scroll_bar) ( ) const[^const]                                                                                                                                                                                          |
+| [`int`](class_int.md)                                   | [`get_version`](class_textedit.md#class_textedit_method_get_version) ( ) const[^const]                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                   | [`get_visible_line_count`](class_textedit.md#class_textedit_method_get_visible_line_count) ( ) const[^const]                                                                                                                                                                              |
+| [`int`](class_int.md)                                   | [`get_visible_line_count_in_range`](class_textedit.md#class_textedit_method_get_visible_line_count_in_range) ( from_line: [`int`](class_int.md), to_line: [`int`](class_int.md) ) const[^const]                                                                                           |
+| [`String`](class_string.md)                             | [`get_word_at_pos`](class_textedit.md#class_textedit_method_get_word_at_pos) ( position: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                    |
+| [`String`](class_string.md)                             | [`get_word_under_caret`](class_textedit.md#class_textedit_method_get_word_under_caret) ( caret_index: [`int`](class_int.md) = -1 ) const[^const]                                                                                                                                          |
+| [`bool`](class_bool.md)                                 | [`has_ime_text`](class_textedit.md#class_textedit_method_has_ime_text) ( ) const[^const]                                                                                                                                                                                                  |
+| [`bool`](class_bool.md)                                 | [`has_redo`](class_textedit.md#class_textedit_method_has_redo) ( ) const[^const]                                                                                                                                                                                                          |
+| [`bool`](class_bool.md)                                 | [`has_selection`](class_textedit.md#class_textedit_method_has_selection) ( caret_index: [`int`](class_int.md) = -1 ) const[^const]                                                                                                                                                        |
+| [`bool`](class_bool.md)                                 | [`has_undo`](class_textedit.md#class_textedit_method_has_undo) ( ) const[^const]                                                                                                                                                                                                          |
+| `void`                                                  | [`insert_line_at`](class_textedit.md#class_textedit_method_insert_line_at) ( line: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                                                             |
+| `void`                                                  | [`insert_text`](class_textedit.md#class_textedit_method_insert_text) ( text: [`String`](class_string.md), line: [`int`](class_int.md), column: [`int`](class_int.md), before_selection_begin: [`bool`](class_bool.md) = true, before_selection_end: [`bool`](class_bool.md) = false )     |
+| `void`                                                  | [`insert_text_at_caret`](class_textedit.md#class_textedit_method_insert_text_at_caret) ( text: [`String`](class_string.md), caret_index: [`int`](class_int.md) = -1 )                                                                                                                     |
+| [`bool`](class_bool.md)                                 | [`is_caret_after_selection_origin`](class_textedit.md#class_textedit_method_is_caret_after_selection_origin) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                     |
+| [`bool`](class_bool.md)                                 | [`is_caret_visible`](class_textedit.md#class_textedit_method_is_caret_visible) ( caret_index: [`int`](class_int.md) = 0 ) const[^const]                                                                                                                                                   |
+| [`bool`](class_bool.md)                                 | [`is_dragging_cursor`](class_textedit.md#class_textedit_method_is_dragging_cursor) ( ) const[^const]                                                                                                                                                                                      |
+| [`bool`](class_bool.md)                                 | [`is_gutter_clickable`](class_textedit.md#class_textedit_method_is_gutter_clickable) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                      |
+| [`bool`](class_bool.md)                                 | [`is_gutter_drawn`](class_textedit.md#class_textedit_method_is_gutter_drawn) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                              |
+| [`bool`](class_bool.md)                                 | [`is_gutter_overwritable`](class_textedit.md#class_textedit_method_is_gutter_overwritable) ( gutter: [`int`](class_int.md) ) const[^const]                                                                                                                                                |
+| [`bool`](class_bool.md)                                 | [`is_in_mulitcaret_edit`](class_textedit.md#class_textedit_method_is_in_mulitcaret_edit) ( ) const[^const]                                                                                                                                                                                |
+| [`bool`](class_bool.md)                                 | [`is_line_gutter_clickable`](class_textedit.md#class_textedit_method_is_line_gutter_clickable) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]                                                                                                               |
+| [`bool`](class_bool.md)                                 | [`is_line_wrapped`](class_textedit.md#class_textedit_method_is_line_wrapped) ( line: [`int`](class_int.md) ) const[^const]                                                                                                                                                                |
+| [`bool`](class_bool.md)                                 | [`is_menu_visible`](class_textedit.md#class_textedit_method_is_menu_visible) ( ) const[^const]                                                                                                                                                                                            |
+| [`bool`](class_bool.md)                                 | [`is_mouse_over_selection`](class_textedit.md#class_textedit_method_is_mouse_over_selection) ( edges: [`bool`](class_bool.md), caret_index: [`int`](class_int.md) = -1 ) const[^const]                                                                                                    |
+| [`bool`](class_bool.md)                                 | [`is_overtype_mode_enabled`](class_textedit.md#class_textedit_method_is_overtype_mode_enabled) ( ) const[^const]                                                                                                                                                                          |
+| `void`                                                  | [`menu_option`](class_textedit.md#class_textedit_method_menu_option) ( option: [`int`](class_int.md) )                                                                                                                                                                                    |
+| `void`                                                  | [`merge_gutters`](class_textedit.md#class_textedit_method_merge_gutters) ( from_line: [`int`](class_int.md), to_line: [`int`](class_int.md) )                                                                                                                                             |
+| `void`                                                  | [`merge_overlapping_carets`](class_textedit.md#class_textedit_method_merge_overlapping_carets) ( )                                                                                                                                                                                        |
+| [`bool`](class_bool.md)                                 | [`multicaret_edit_ignore_caret`](class_textedit.md#class_textedit_method_multicaret_edit_ignore_caret) ( caret_index: [`int`](class_int.md) ) const[^const]                                                                                                                               |
+| `void`                                                  | [`paste`](class_textedit.md#class_textedit_method_paste) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                                                      |
+| `void`                                                  | [`paste_primary_clipboard`](class_textedit.md#class_textedit_method_paste_primary_clipboard) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                  |
+| `void`                                                  | [`redo`](class_textedit.md#class_textedit_method_redo) ( )                                                                                                                                                                                                                                |
+| `void`                                                  | [`remove_caret`](class_textedit.md#class_textedit_method_remove_caret) ( caret: [`int`](class_int.md) )                                                                                                                                                                                   |
+| `void`                                                  | [`remove_gutter`](class_textedit.md#class_textedit_method_remove_gutter) ( gutter: [`int`](class_int.md) )                                                                                                                                                                                |
+| `void`                                                  | [`remove_line_at`](class_textedit.md#class_textedit_method_remove_line_at) ( line: [`int`](class_int.md), move_carets_down: [`bool`](class_bool.md) = true )                                                                                                                              |
+| `void`                                                  | [`remove_secondary_carets`](class_textedit.md#class_textedit_method_remove_secondary_carets) ( )                                                                                                                                                                                          |
+| `void`                                                  | [`remove_text`](class_textedit.md#class_textedit_method_remove_text) ( from_line: [`int`](class_int.md), from_column: [`int`](class_int.md), to_line: [`int`](class_int.md), to_column: [`int`](class_int.md) )                                                                           |
+| [`Vector2i`](class_vector2i.md)                         | [`search`](class_textedit.md#class_textedit_method_search) ( text: [`String`](class_string.md), flags: [`int`](class_int.md), from_line: [`int`](class_int.md), from_column: [`int`](class_int.md) ) const[^const]                                                                        |
+| `void`                                                  | [`select`](class_textedit.md#class_textedit_method_select) ( origin_line: [`int`](class_int.md), origin_column: [`int`](class_int.md), caret_line: [`int`](class_int.md), caret_column: [`int`](class_int.md), caret_index: [`int`](class_int.md) = 0 )                                   |
+| `void`                                                  | [`select_all`](class_textedit.md#class_textedit_method_select_all) ( )                                                                                                                                                                                                                    |
+| `void`                                                  | [`select_word_under_caret`](class_textedit.md#class_textedit_method_select_word_under_caret) ( caret_index: [`int`](class_int.md) = -1 )                                                                                                                                                  |
+| `void`                                                  | [`set_caret_column`](class_textedit.md#class_textedit_method_set_caret_column) ( column: [`int`](class_int.md), adjust_viewport: [`bool`](class_bool.md) = true, caret_index: [`int`](class_int.md) = 0 )                                                                                 |
+| `void`                                                  | [`set_caret_line`](class_textedit.md#class_textedit_method_set_caret_line) ( line: [`int`](class_int.md), adjust_viewport: [`bool`](class_bool.md) = true, can_be_hidden: [`bool`](class_bool.md) = true, wrap_index: [`int`](class_int.md) = 0, caret_index: [`int`](class_int.md) = 0 ) |
+| `void`                                                  | [`set_gutter_clickable`](class_textedit.md#class_textedit_method_set_gutter_clickable) ( gutter: [`int`](class_int.md), clickable: [`bool`](class_bool.md) )                                                                                                                              |
+| `void`                                                  | [`set_gutter_custom_draw`](class_textedit.md#class_textedit_method_set_gutter_custom_draw) ( column: [`int`](class_int.md), draw_callback: [`Callable`](class_callable.md) )                                                                                                              |
+| `void`                                                  | [`set_gutter_draw`](class_textedit.md#class_textedit_method_set_gutter_draw) ( gutter: [`int`](class_int.md), draw: [`bool`](class_bool.md) )                                                                                                                                             |
+| `void`                                                  | [`set_gutter_name`](class_textedit.md#class_textedit_method_set_gutter_name) ( gutter: [`int`](class_int.md), name: [`String`](class_string.md) )                                                                                                                                         |
+| `void`                                                  | [`set_gutter_overwritable`](class_textedit.md#class_textedit_method_set_gutter_overwritable) ( gutter: [`int`](class_int.md), overwritable: [`bool`](class_bool.md) )                                                                                                                     |
+| `void`                                                  | [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type) ( gutter: [`int`](class_int.md), type: [GutterType](#enum_textedit_guttertype) )                                                                                                                             |
+| `void`                                                  | [`set_gutter_width`](class_textedit.md#class_textedit_method_set_gutter_width) ( gutter: [`int`](class_int.md), width: [`int`](class_int.md) )                                                                                                                                            |
+| `void`                                                  | [`set_line`](class_textedit.md#class_textedit_method_set_line) ( line: [`int`](class_int.md), new_text: [`String`](class_string.md) )                                                                                                                                                     |
+| `void`                                                  | [`set_line_as_center_visible`](class_textedit.md#class_textedit_method_set_line_as_center_visible) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = 0 )                                                                                                                 |
+| `void`                                                  | [`set_line_as_first_visible`](class_textedit.md#class_textedit_method_set_line_as_first_visible) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = 0 )                                                                                                                   |
+| `void`                                                  | [`set_line_as_last_visible`](class_textedit.md#class_textedit_method_set_line_as_last_visible) ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md) = 0 )                                                                                                                     |
+| `void`                                                  | [`set_line_background_color`](class_textedit.md#class_textedit_method_set_line_background_color) ( line: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                        |
+| `void`                                                  | [`set_line_gutter_clickable`](class_textedit.md#class_textedit_method_set_line_gutter_clickable) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), clickable: [`bool`](class_bool.md) )                                                                                       |
+| `void`                                                  | [`set_line_gutter_icon`](class_textedit.md#class_textedit_method_set_line_gutter_icon) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                                                                                            |
+| `void`                                                  | [`set_line_gutter_item_color`](class_textedit.md#class_textedit_method_set_line_gutter_item_color) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                       |
+| `void`                                                  | [`set_line_gutter_metadata`](class_textedit.md#class_textedit_method_set_line_gutter_metadata) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                                                                                    |
+| `void`                                                  | [`set_line_gutter_text`](class_textedit.md#class_textedit_method_set_line_gutter_text) ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                  |
+| `void`                                                  | [`set_overtype_mode_enabled`](class_textedit.md#class_textedit_method_set_overtype_mode_enabled) ( enabled: [`bool`](class_bool.md) )                                                                                                                                                     |
+| `void`                                                  | [`set_search_flags`](class_textedit.md#class_textedit_method_set_search_flags) ( flags: [`int`](class_int.md) )                                                                                                                                                                           |
+| `void`                                                  | [`set_search_text`](class_textedit.md#class_textedit_method_set_search_text) ( search_text: [`String`](class_string.md) )                                                                                                                                                                 |
+| `void`                                                  | [`set_selection_mode`](class_textedit.md#class_textedit_method_set_selection_mode) ( mode: [SelectionMode](#enum_textedit_selectionmode) )                                                                                                                                                |
+| `void`                                                  | [`set_selection_origin_column`](class_textedit.md#class_textedit_method_set_selection_origin_column) ( column: [`int`](class_int.md), caret_index: [`int`](class_int.md) = 0 )                                                                                                            |
+| `void`                                                  | [`set_selection_origin_line`](class_textedit.md#class_textedit_method_set_selection_origin_line) ( line: [`int`](class_int.md), can_be_hidden: [`bool`](class_bool.md) = true, wrap_index: [`int`](class_int.md) = -1, caret_index: [`int`](class_int.md) = 0 )                           |
+| `void`                                                  | [`set_tab_size`](class_textedit.md#class_textedit_method_set_tab_size) ( size: [`int`](class_int.md) )                                                                                                                                                                                    |
+| `void`                                                  | [`set_tooltip_request_func`](class_textedit.md#class_textedit_method_set_tooltip_request_func) ( callback: [`Callable`](class_callable.md) )                                                                                                                                              |
+| `void`                                                  | [`skip_selection_for_next_occurrence`](class_textedit.md#class_textedit_method_skip_selection_for_next_occurrence) ( )                                                                                                                                                                    |
+| `void`                                                  | [`start_action`](class_textedit.md#class_textedit_method_start_action) ( action: [EditAction](#enum_textedit_editaction) )                                                                                                                                                                |
+| `void`                                                  | [`swap_lines`](class_textedit.md#class_textedit_method_swap_lines) ( from_line: [`int`](class_int.md), to_line: [`int`](class_int.md) )                                                                                                                                                   |
+| `void`                                                  | [`tag_saved_version`](class_textedit.md#class_textedit_method_tag_saved_version) ( )                                                                                                                                                                                                      |
+| `void`                                                  | [`undo`](class_textedit.md#class_textedit_method_undo) ( )                                                                                                                                                                                                                                |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)         | [`background_color`](#class_textedit_theme_color_background_color)                     | ``Color(0, 0, 0, 0)``               |
-| [`Color`](class_color.md)         | [`caret_background_color`](#class_textedit_theme_color_caret_background_color)         | ``Color(0, 0, 0, 1)``               |
-| [`Color`](class_color.md)         | [`caret_color`](#class_textedit_theme_color_caret_color)                               | ``Color(0.875, 0.875, 0.875, 1)``   |
-| [`Color`](class_color.md)         | [`current_line_color`](#class_textedit_theme_color_current_line_color)                 | ``Color(0.25, 0.25, 0.26, 0.8)``    |
-| [`Color`](class_color.md)         | [`font_color`](#class_textedit_theme_color_font_color)                                 | ``Color(0.875, 0.875, 0.875, 1)``   |
-| [`Color`](class_color.md)         | [`font_outline_color`](#class_textedit_theme_color_font_outline_color)                 | ``Color(0, 0, 0, 1)``               |
-| [`Color`](class_color.md)         | [`font_placeholder_color`](#class_textedit_theme_color_font_placeholder_color)         | ``Color(0.875, 0.875, 0.875, 0.6)`` |
-| [`Color`](class_color.md)         | [`font_readonly_color`](#class_textedit_theme_color_font_readonly_color)               | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-| [`Color`](class_color.md)         | [`font_selected_color`](#class_textedit_theme_color_font_selected_color)               | ``Color(0, 0, 0, 0)``               |
-| [`Color`](class_color.md)         | [`search_result_border_color`](#class_textedit_theme_color_search_result_border_color) | ``Color(0.3, 0.3, 0.3, 0.4)``       |
-| [`Color`](class_color.md)         | [`search_result_color`](#class_textedit_theme_color_search_result_color)               | ``Color(0.3, 0.3, 0.3, 1)``         |
-| [`Color`](class_color.md)         | [`selection_color`](#class_textedit_theme_color_selection_color)                       | ``Color(0.5, 0.5, 0.5, 1)``         |
-| [`Color`](class_color.md)         | [`word_highlighted_color`](#class_textedit_theme_color_word_highlighted_color)         | ``Color(0.5, 0.5, 0.5, 0.25)``      |
-| [`int`](class_int.md)             | [`caret_width`](#class_textedit_theme_constant_caret_width)                            | ``1``                               |
-| [`int`](class_int.md)             | [`line_spacing`](#class_textedit_theme_constant_line_spacing)                          | ``4``                               |
-| [`int`](class_int.md)             | [`outline_size`](#class_textedit_theme_constant_outline_size)                          | ``0``                               |
-| [`Font`](class_font.md)           | [`font`](#class_textedit_theme_font_font)                                              |                                     |
-| [`int`](class_int.md)             | [`font_size`](#class_textedit_theme_font_size_font_size)                               |                                     |
-| [`Texture2D`](class_texture2d.md) | [`space`](#class_textedit_theme_icon_space)                                            |                                     |
-| [`Texture2D`](class_texture2d.md) | [`tab`](#class_textedit_theme_icon_tab)                                                |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`focus`](#class_textedit_theme_style_focus)                                           |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`normal`](#class_textedit_theme_style_normal)                                         |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`read_only`](#class_textedit_theme_style_read_only)                                   |                                     |
+| [`Color`](class_color.md)         | [`background_color`](class_textedit.md#class_textedit_theme_color_background_color)                     | ``Color(0, 0, 0, 0)``               |
+| [`Color`](class_color.md)         | [`caret_background_color`](class_textedit.md#class_textedit_theme_color_caret_background_color)         | ``Color(0, 0, 0, 1)``               |
+| [`Color`](class_color.md)         | [`caret_color`](class_textedit.md#class_textedit_theme_color_caret_color)                               | ``Color(0.875, 0.875, 0.875, 1)``   |
+| [`Color`](class_color.md)         | [`current_line_color`](class_textedit.md#class_textedit_theme_color_current_line_color)                 | ``Color(0.25, 0.25, 0.26, 0.8)``    |
+| [`Color`](class_color.md)         | [`font_color`](class_textedit.md#class_textedit_theme_color_font_color)                                 | ``Color(0.875, 0.875, 0.875, 1)``   |
+| [`Color`](class_color.md)         | [`font_outline_color`](class_textedit.md#class_textedit_theme_color_font_outline_color)                 | ``Color(0, 0, 0, 1)``               |
+| [`Color`](class_color.md)         | [`font_placeholder_color`](class_textedit.md#class_textedit_theme_color_font_placeholder_color)         | ``Color(0.875, 0.875, 0.875, 0.6)`` |
+| [`Color`](class_color.md)         | [`font_readonly_color`](class_textedit.md#class_textedit_theme_color_font_readonly_color)               | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+| [`Color`](class_color.md)         | [`font_selected_color`](class_textedit.md#class_textedit_theme_color_font_selected_color)               | ``Color(0, 0, 0, 0)``               |
+| [`Color`](class_color.md)         | [`search_result_border_color`](class_textedit.md#class_textedit_theme_color_search_result_border_color) | ``Color(0.3, 0.3, 0.3, 0.4)``       |
+| [`Color`](class_color.md)         | [`search_result_color`](class_textedit.md#class_textedit_theme_color_search_result_color)               | ``Color(0.3, 0.3, 0.3, 1)``         |
+| [`Color`](class_color.md)         | [`selection_color`](class_textedit.md#class_textedit_theme_color_selection_color)                       | ``Color(0.5, 0.5, 0.5, 1)``         |
+| [`Color`](class_color.md)         | [`word_highlighted_color`](class_textedit.md#class_textedit_theme_color_word_highlighted_color)         | ``Color(0.5, 0.5, 0.5, 0.25)``      |
+| [`int`](class_int.md)             | [`caret_width`](class_textedit.md#class_textedit_theme_constant_caret_width)                            | ``1``                               |
+| [`int`](class_int.md)             | [`line_spacing`](class_textedit.md#class_textedit_theme_constant_line_spacing)                          | ``4``                               |
+| [`int`](class_int.md)             | [`outline_size`](class_textedit.md#class_textedit_theme_constant_outline_size)                          | ``0``                               |
+| [`Font`](class_font.md)           | [`font`](class_textedit.md#class_textedit_theme_font_font)                                              |                                     |
+| [`int`](class_int.md)             | [`font_size`](class_textedit.md#class_textedit_theme_font_size_font_size)                               |                                     |
+| [`Texture2D`](class_texture2d.md) | [`space`](class_textedit.md#class_textedit_theme_icon_space)                                            |                                     |
+| [`Texture2D`](class_texture2d.md) | [`tab`](class_textedit.md#class_textedit_theme_icon_tab)                                                |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`focus`](class_textedit.md#class_textedit_theme_style_focus)                                           |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`normal`](class_textedit.md#class_textedit_theme_style_normal)                                         |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`read_only`](class_textedit.md#class_textedit_theme_style_read_only)                                   |                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -332,7 +332,7 @@ Emitted when the text changes.
 
 **text_set** ( ) <div id="class_textedit_signal_text_set"></div>
 
-Emitted when [`clear`](#class_textedit_method_clear) is called or [`text`](#class_textedit_property_text) is set.
+Emitted when [`clear`](class_textedit.md#class_textedit_method_clear) is called or [`text`](class_textedit.md#class_textedit_property_text) is set.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -678,19 +678,19 @@ enum **GutterType**: <div id="enum_textedit_guttertype"></div>
 
 [GutterType](#enum_textedit_guttertype) **GUTTER_TYPE_STRING** = ``0``
 
-When a gutter is set to string using [`set_gutter_type`](#class_textedit_method_set_gutter_type), it is used to contain text set via the [`set_line_gutter_text`](#class_textedit_method_set_line_gutter_text) method.
+When a gutter is set to string using [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type), it is used to contain text set via the [`set_line_gutter_text`](class_textedit.md#class_textedit_method_set_line_gutter_text) method.
 
 <div id="_class_textedit_constant_gutter_type_icon"></div>
 
 [GutterType](#enum_textedit_guttertype) **GUTTER_TYPE_ICON** = ``1``
 
-When a gutter is set to icon using [`set_gutter_type`](#class_textedit_method_set_gutter_type), it is used to contain an icon set via the [`set_line_gutter_icon`](#class_textedit_method_set_line_gutter_icon) method.
+When a gutter is set to icon using [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type), it is used to contain an icon set via the [`set_line_gutter_icon`](class_textedit.md#class_textedit_method_set_line_gutter_icon) method.
 
 <div id="_class_textedit_constant_gutter_type_custom"></div>
 
 [GutterType](#enum_textedit_guttertype) **GUTTER_TYPE_CUSTOM** = ``2``
 
-When a gutter is set to custom using [`set_gutter_type`](#class_textedit_method_set_gutter_type), it is used to contain custom visuals controlled by a callback method set via the [`set_gutter_custom_draw`](#class_textedit_method_set_gutter_custom_draw) method.
+When a gutter is set to custom using [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type), it is used to contain custom visuals controlled by a callback method set via the [`set_gutter_custom_draw`](class_textedit.md#class_textedit_method_set_gutter_custom_draw) method.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -705,7 +705,7 @@ When a gutter is set to custom using [`set_gutter_type`](#class_textedit_method_
 - `void` **set_autowrap_mode** ( value: [AutowrapMode](#enum_textserver_autowrapmode) )
 - [AutowrapMode](#enum_textserver_autowrapmode) **get_autowrap_mode** ( )
 
-If [`wrap_mode`](#class_textedit_property_wrap_mode) is set to [`LINE_WRAPPING_BOUNDARY`](#class_textedit_constant_line_wrapping_boundary), sets text wrapping mode. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
+If [`wrap_mode`](class_textedit.md#class_textedit_property_wrap_mode) is set to [`LINE_WRAPPING_BOUNDARY`](class_textedit.md#class_textedit_constant_line_wrapping_boundary), sets text wrapping mode. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -744,7 +744,7 @@ The interval at which the caret blinks (in seconds).
 - `void` **set_draw_caret_when_editable_disabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_drawing_caret_when_editable_disabled** ( )
 
-If `true`, caret will be visible when [`editable`](#class_textedit_property_editable) is disabled.
+If `true`, caret will be visible when [`editable`](class_textedit.md#class_textedit_property_editable) is disabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -826,7 +826,7 @@ If `true`, a right-click displays the context menu.
 - `void` **set_custom_word_separators** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_custom_word_separators** ( )
 
-The characters to consider as word delimiters if [`use_custom_word_separators`](#class_textedit_property_use_custom_word_separators) is `true`. The characters should be defined without separation, for example `#_!`.
+The characters to consider as word delimiters if [`use_custom_word_separators`](class_textedit.md#class_textedit_property_use_custom_word_separators) is `true`. The characters should be defined without separation, for example `#_!`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1010,7 +1010,7 @@ The width, in pixels, of the minimap.
 - `void` **set_placeholder** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_placeholder** ( )
 
-Text shown when the **TextEdit** is empty. It is **not** the **TextEdit**'s default value (see [`text`](#class_textedit_property_text)).
+Text shown when the **TextEdit** is empty. It is **not** the **TextEdit**'s default value (see [`text`](class_textedit.md#class_textedit_property_text)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1075,7 +1075,7 @@ Scroll smoothly over the text rather than jumping to the next location.
 - `void` **set_v_scroll_speed** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_v_scroll_speed** ( )
 
-Sets the scroll speed with the minimap or when [`scroll_smooth`](#class_textedit_property_scroll_smooth) is enabled.
+Sets the scroll speed with the minimap or when [`scroll_smooth`](class_textedit.md#class_textedit_property_scroll_smooth) is enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1103,7 +1103,7 @@ If there is a vertical scrollbar, this determines the current vertical scroll va
 
 If `true`, text can be selected.
 
-If `false`, text can not be selected by the user or by the [`select`](#class_textedit_method_select) or [`select_all`](#class_textedit_method_select_all) methods.
+If `false`, text can not be selected by the user or by the [`select`](class_textedit.md#class_textedit_method_select) or [`select_all`](class_textedit.md#class_textedit_method_select_all) methods.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1194,7 +1194,7 @@ Base text writing direction.
 - `void` **set_use_custom_word_separators** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_custom_word_separators_enabled** ( )
 
-If `false`, using <i class="fa fa-gamepad"></i>`Ctrl + Left` or <i class="fa fa-gamepad"></i>`Ctrl + Right` (<i class="fa fa-gamepad"></i>`Cmd + Left` or <i class="fa fa-gamepad"></i>`Cmd + Right` on macOS) bindings will use the behavior of [`use_default_word_separators`](#class_textedit_property_use_default_word_separators). If `true`, it will also stop the caret if a character within [`custom_word_separators`](#class_textedit_property_custom_word_separators) is detected. Useful for subword moving. This behavior also will be applied to the behavior of text selection.
+If `false`, using <i class="fa fa-gamepad"></i>`Ctrl + Left` or <i class="fa fa-gamepad"></i>`Ctrl + Right` (<i class="fa fa-gamepad"></i>`Cmd + Left` or <i class="fa fa-gamepad"></i>`Cmd + Right` on macOS) bindings will use the behavior of [`use_default_word_separators`](class_textedit.md#class_textedit_property_use_default_word_separators). If `true`, it will also stop the caret if a character within [`custom_word_separators`](class_textedit.md#class_textedit_property_custom_word_separators) is detected. Useful for subword moving. This behavior also will be applied to the behavior of text selection.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1379,7 +1379,7 @@ Applies text from the [*Input Method Editor*](https://en.wikipedia.org/wiki/Inpu
 
 `void` **backspace** ( caret_index: [`int`](class_int.md) = -1 )<div id="class_textedit_method_backspace"></div>
 
-Called when the user presses the backspace key. Can be overridden with [`_backspace`](#class_textedit_private_method__backspace).
+Called when the user presses the backspace key. Can be overridden with [`_backspace`](class_textedit.md#class_textedit_private_method__backspace).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1389,7 +1389,7 @@ Called when the user presses the backspace key. Can be overridden with [`_backsp
 
 `void` **begin_complex_operation** ( )<div id="class_textedit_method_begin_complex_operation"></div>
 
-Starts a multipart edit. All edits will be treated as one action until [`end_complex_operation`](#class_textedit_method_end_complex_operation) is called.
+Starts a multipart edit. All edits will be treated as one action until [`end_complex_operation`](class_textedit.md#class_textedit_method_end_complex_operation) is called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1399,7 +1399,7 @@ Starts a multipart edit. All edits will be treated as one action until [`end_com
 
 `void` **begin_multicaret_edit** ( )<div id="class_textedit_method_begin_multicaret_edit"></div>
 
-Starts an edit for multiple carets. The edit must be ended with [`end_multicaret_edit`](#class_textedit_method_end_multicaret_edit). Multicaret edits can be used to edit text at multiple carets and delay merging the carets until the end, so the caret indexes aren't affected immediately. [`begin_multicaret_edit`](#class_textedit_method_begin_multicaret_edit) and [`end_multicaret_edit`](#class_textedit_method_end_multicaret_edit) can be nested, and the merge will happen at the last [`end_multicaret_edit`](#class_textedit_method_end_multicaret_edit).
+Starts an edit for multiple carets. The edit must be ended with [`end_multicaret_edit`](class_textedit.md#class_textedit_method_end_multicaret_edit). Multicaret edits can be used to edit text at multiple carets and delay merging the carets until the end, so the caret indexes aren't affected immediately. [`begin_multicaret_edit`](class_textedit.md#class_textedit_method_begin_multicaret_edit) and [`end_multicaret_edit`](class_textedit.md#class_textedit_method_end_multicaret_edit) can be nested, and the merge will happen at the last [`end_multicaret_edit`](class_textedit.md#class_textedit_method_end_multicaret_edit).
 
 Example usage:
 
@@ -1435,7 +1435,7 @@ Closes the [*Input Method Editor*](https://en.wikipedia.org/wiki/Input_method) (
 
 `void` **center_viewport_to_caret** ( caret_index: [`int`](class_int.md) = 0 )<div id="class_textedit_method_center_viewport_to_caret"></div>
 
-Centers the viewport on the line the editing caret is at. This also resets the [`scroll_horizontal`](#class_textedit_property_scroll_horizontal) value to `0`.
+Centers the viewport on the line the editing caret is at. This also resets the [`scroll_horizontal`](class_textedit.md#class_textedit_property_scroll_horizontal) value to `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1469,9 +1469,9 @@ Collapse all carets in the given range to the `from_line` and `from_column` posi
 
  `inclusive` applies to both ends.
 
-If [`is_in_mulitcaret_edit`](#class_textedit_method_is_in_mulitcaret_edit) is `true`, carets that are collapsed will be `true` for [`multicaret_edit_ignore_caret`](#class_textedit_method_multicaret_edit_ignore_caret).
+If [`is_in_mulitcaret_edit`](class_textedit.md#class_textedit_method_is_in_mulitcaret_edit) is `true`, carets that are collapsed will be `true` for [`multicaret_edit_ignore_caret`](class_textedit.md#class_textedit_method_multicaret_edit_ignore_caret).
 
- [`merge_overlapping_carets`](#class_textedit_method_merge_overlapping_carets) will be called if any carets were collapsed.
+ [`merge_overlapping_carets`](class_textedit.md#class_textedit_method_merge_overlapping_carets) will be called if any carets were collapsed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1481,7 +1481,7 @@ If [`is_in_mulitcaret_edit`](#class_textedit_method_is_in_mulitcaret_edit) is `t
 
 `void` **copy** ( caret_index: [`int`](class_int.md) = -1 )<div id="class_textedit_method_copy"></div>
 
-Copies the current text selection. Can be overridden with [`_copy`](#class_textedit_private_method__copy).
+Copies the current text selection. Can be overridden with [`_copy`](class_textedit.md#class_textedit_private_method__copy).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1491,7 +1491,7 @@ Copies the current text selection. Can be overridden with [`_copy`](#class_texte
 
 `void` **cut** ( caret_index: [`int`](class_int.md) = -1 )<div id="class_textedit_method_cut"></div>
 
-Cut's the current selection. Can be overridden with [`_cut`](#class_textedit_private_method__cut).
+Cut's the current selection. Can be overridden with [`_cut`](class_textedit.md#class_textedit_private_method__cut).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1521,7 +1521,7 @@ Deselects the current selection.
 
 `void` **end_action** ( )<div id="class_textedit_method_end_action"></div>
 
-Marks the end of steps in the current action started with [`start_action`](#class_textedit_method_start_action).
+Marks the end of steps in the current action started with [`start_action`](class_textedit.md#class_textedit_method_start_action).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1531,7 +1531,7 @@ Marks the end of steps in the current action started with [`start_action`](#clas
 
 `void` **end_complex_operation** ( )<div id="class_textedit_method_end_complex_operation"></div>
 
-Ends a multipart edit, started with [`begin_complex_operation`](#class_textedit_method_begin_complex_operation). If called outside a complex operation, the current operation is pushed onto the undo/redo stack.
+Ends a multipart edit, started with [`begin_complex_operation`](class_textedit.md#class_textedit_method_begin_complex_operation). If called outside a complex operation, the current operation is pushed onto the undo/redo stack.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1541,7 +1541,7 @@ Ends a multipart edit, started with [`begin_complex_operation`](#class_textedit_
 
 `void` **end_multicaret_edit** ( )<div id="class_textedit_method_end_multicaret_edit"></div>
 
-Ends an edit for multiple carets, that was started with [`begin_multicaret_edit`](#class_textedit_method_begin_multicaret_edit). If this was the last [`end_multicaret_edit`](#class_textedit_method_end_multicaret_edit) and [`merge_overlapping_carets`](#class_textedit_method_merge_overlapping_carets) was called, carets will be merged.
+Ends an edit for multiple carets, that was started with [`begin_multicaret_edit`](class_textedit.md#class_textedit_method_begin_multicaret_edit). If this was the last [`end_multicaret_edit`](class_textedit.md#class_textedit_method_end_multicaret_edit) and [`merge_overlapping_carets`](class_textedit.md#class_textedit_method_merge_overlapping_carets) was called, carets will be merged.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1581,9 +1581,9 @@ Returns the caret pixel draw position.
 
 [`PackedInt32Array`](class_packedint32array.md) **get_caret_index_edit_order** ( )<div id="class_textedit_method_get_caret_index_edit_order"></div>
 
-**已弃用：** Carets no longer need to be edited in any specific order. If the carets need to be sorted, use [`get_sorted_carets`](#class_textedit_method_get_sorted_carets) instead.
+**已弃用：** Carets no longer need to be edited in any specific order. If the carets need to be sorted, use [`get_sorted_carets`](class_textedit.md#class_textedit_method_get_sorted_carets) instead.
 
-Returns a list of caret indexes in their edit order, this done from bottom to top. Edit order refers to the way actions such as [`insert_text_at_caret`](#class_textedit_method_insert_text_at_caret) are applied.
+Returns a list of caret indexes in their edit order, this done from bottom to top. Edit order refers to the way actions such as [`insert_text_at_caret`](class_textedit.md#class_textedit_method_insert_text_at_caret) are applied.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1693,7 +1693,7 @@ Returns the number of spaces and `tab * tab_size` before the first char.
 
 [`int`](class_int.md) **get_last_full_visible_line** ( ) const[^const]<div id="class_textedit_method_get_last_full_visible_line"></div>
 
-Returns the last visible line. Use [`get_last_full_visible_line_wrap_index`](#class_textedit_method_get_last_full_visible_line_wrap_index) for the wrap index.
+Returns the last visible line. Use [`get_last_full_visible_line_wrap_index`](class_textedit.md#class_textedit_method_get_last_full_visible_line_wrap_index) for the wrap index.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1763,7 +1763,7 @@ Returns the number of lines in the text.
 
 [`Texture2D`](class_texture2d.md) **get_line_gutter_icon** ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]<div id="class_textedit_method_get_line_gutter_icon"></div>
 
-Returns the icon currently in `gutter` at `line`. This only works when the gutter type is [`GUTTER_TYPE_ICON`](#class_textedit_constant_gutter_type_icon) (see [`set_gutter_type`](#class_textedit_method_set_gutter_type)).
+Returns the icon currently in `gutter` at `line`. This only works when the gutter type is [`GUTTER_TYPE_ICON`](class_textedit.md#class_textedit_constant_gutter_type_icon) (see [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1793,7 +1793,7 @@ Returns the metadata currently in `gutter` at `line`.
 
 [`String`](class_string.md) **get_line_gutter_text** ( line: [`int`](class_int.md), gutter: [`int`](class_int.md) ) const[^const]<div id="class_textedit_method_get_line_gutter_text"></div>
 
-Returns the text currently in `gutter` at `line`. This only works when the gutter type is [`GUTTER_TYPE_STRING`](#class_textedit_constant_gutter_type_string) (see [`set_gutter_type`](#class_textedit_method_set_gutter_type)).
+Returns the text currently in `gutter` at `line`. This only works when the gutter type is [`GUTTER_TYPE_STRING`](class_textedit.md#class_textedit_constant_gutter_type_string) (see [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1805,7 +1805,7 @@ Returns the text currently in `gutter` at `line`. This only works when the gutte
 
 Returns the maximum value of the line height among all lines.
 
- **Note:** The return value is influenced by [`line_spacing`](#class_textedit_theme_constant_line_spacing) and [`font_size`](#class_textedit_theme_font_size_font_size). And it will not be less than `1`.
+ **Note:** The return value is influenced by [`line_spacing`](class_textedit.md#class_textedit_theme_constant_line_spacing) and [`font_size`](class_textedit.md#class_textedit_theme_font_size_font_size). And it will not be less than `1`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1817,7 +1817,7 @@ Returns the maximum value of the line height among all lines.
 
 Returns an [`Array`](class_array.md) of line ranges where `x` is the first line and `y` is the last line. All lines within these ranges will have a caret on them or be part of a selection. Each line will only be part of one line range, even if it has multiple carets on it.
 
-If a selection's end column ([`get_selection_to_column`](#class_textedit_method_get_selection_to_column)) is at column `0`, that line will not be included. If a selection begins on the line after another selection ends and `merge_adjacent` is `true`, or they begin and end on the same line, one line range will include both selections.
+If a selection's end column ([`get_selection_to_column`](class_textedit.md#class_textedit_method_get_selection_to_column)) is at column `0`, that line will not be included. If a selection begins on the line after another selection ends and `merge_adjacent` is `true`, or they begin and end on the same line, one line range will include both selections.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1925,7 +1925,7 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
 
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](#class_window_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](class_window.md#class_window_property_visible) property.
 
 
 
@@ -1959,7 +1959,7 @@ Returns the number of lines that may be drawn on the minimap.
 
 [`Vector2i`](class_vector2i.md) **get_next_visible_line_index_offset_from** ( line: [`int`](class_int.md), wrap_index: [`int`](class_int.md), visible_amount: [`int`](class_int.md) ) const[^const]<div id="class_textedit_method_get_next_visible_line_index_offset_from"></div>
 
-Similar to [`get_next_visible_line_offset_from`](#class_textedit_method_get_next_visible_line_offset_from), but takes into account the line wrap indexes. In the returned vector, `x` is the line, `y` is the wrap index.
+Similar to [`get_next_visible_line_offset_from`](class_textedit.md#class_textedit_method_get_next_visible_line_offset_from), but takes into account the line wrap indexes. In the returned vector, `x` is the line, `y` is the wrap index.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1981,7 +1981,7 @@ Returns the count to the next visible line from `line` to `line + visible_amount
 
 Returns the local position for the given `line` and `column`. If `x` or `y` of the returned vector equal `-1`, the position is outside of the viewable area of the control.
 
- **Note:** The Y position corresponds to the bottom side of the line. Use [`get_rect_at_line_column`](#class_textedit_method_get_rect_at_line_column) to get the top side position.
+ **Note:** The Y position corresponds to the bottom side of the line. Use [`get_rect_at_line_column`](class_textedit.md#class_textedit_method_get_rect_at_line_column) to get the top side position.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1993,7 +1993,7 @@ Returns the local position for the given `line` and `column`. If `x` or `y` of t
 
 Returns the local position and size for the grapheme at the given `line` and `column`. If `x` or `y` position of the returned rect equal `-1`, the position is outside of the viewable area of the control.
 
- **Note:** The Y position of the returned rect corresponds to the top side of the line, unlike [`get_pos_at_line_column`](#class_textedit_method_get_pos_at_line_column) which returns the bottom side.
+ **Note:** The Y position of the returned rect corresponds to the top side of the line, unlike [`get_pos_at_line_column`](class_textedit.md#class_textedit_method_get_pos_at_line_column) which returns the bottom side.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2003,7 +2003,7 @@ Returns the local position and size for the grapheme at the given `line` and `co
 
 [`int`](class_int.md) **get_saved_version** ( ) const[^const]<div id="class_textedit_method_get_saved_version"></div>
 
-Returns the last tagged saved version from [`tag_saved_version`](#class_textedit_method_tag_saved_version).
+Returns the last tagged saved version from [`tag_saved_version`](class_textedit.md#class_textedit_method_tag_saved_version).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2045,7 +2045,7 @@ If `include_edges` is `false`, the position must be inside the selection and not
 
 [`int`](class_int.md) **get_selection_column** ( caret_index: [`int`](class_int.md) = 0 ) const[^const]<div id="class_textedit_method_get_selection_column"></div>
 
-**已弃用：** Use [`get_selection_origin_column`](#class_textedit_method_get_selection_origin_column) instead.
+**已弃用：** Use [`get_selection_origin_column`](class_textedit.md#class_textedit_method_get_selection_origin_column) instead.
 
 Returns the original start column of the selection.
 
@@ -2077,7 +2077,7 @@ Returns the selection begin line. Returns the caret line if there is no selectio
 
 [`int`](class_int.md) **get_selection_line** ( caret_index: [`int`](class_int.md) = 0 ) const[^const]<div id="class_textedit_method_get_selection_line"></div>
 
-**已弃用：** Use [`get_selection_origin_line`](#class_textedit_method_get_selection_origin_line) instead.
+**已弃用：** Use [`get_selection_origin_line`](class_textedit.md#class_textedit_method_get_selection_origin_line) instead.
 
 Returns the original start line of the selection.
 
@@ -2141,7 +2141,7 @@ Returns the selection end line. Returns the caret line if there is no selection.
 
 Returns the carets sorted by selection beginning from lowest line and column to highest (from top to bottom of text).
 
-If `include_ignored_carets` is `false`, carets from [`multicaret_edit_ignore_caret`](#class_textedit_method_multicaret_edit_ignore_caret) will be ignored.
+If `include_ignored_carets` is `false`, carets from [`multicaret_edit_ignore_caret`](class_textedit.md#class_textedit_method_multicaret_edit_ignore_caret) will be ignored.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2375,7 +2375,7 @@ Returns whether the gutter is overwritable.
 
 [`bool`](class_bool.md) **is_in_mulitcaret_edit** ( ) const[^const]<div id="class_textedit_method_is_in_mulitcaret_edit"></div>
 
-Returns `true` if a [`begin_multicaret_edit`](#class_textedit_method_begin_multicaret_edit) has been called and [`end_multicaret_edit`](#class_textedit_method_end_multicaret_edit) has not yet been called.
+Returns `true` if a [`begin_multicaret_edit`](class_textedit.md#class_textedit_method_begin_multicaret_edit) has been called and [`end_multicaret_edit`](class_textedit.md#class_textedit_method_end_multicaret_edit) has not yet been called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2457,7 +2457,7 @@ Merge the gutters from `from_line` into `to_line`. Only overwritable gutters wil
 
 Merges any overlapping carets. Will favor the newest caret, or the caret with a selection.
 
-If [`is_in_mulitcaret_edit`](#class_textedit_method_is_in_mulitcaret_edit) is `true`, the merge will be queued to happen at the end of the multicaret edit. See [`begin_multicaret_edit`](#class_textedit_method_begin_multicaret_edit) and [`end_multicaret_edit`](#class_textedit_method_end_multicaret_edit).
+If [`is_in_mulitcaret_edit`](class_textedit.md#class_textedit_method_is_in_mulitcaret_edit) is `true`, the merge will be queued to happen at the end of the multicaret edit. See [`begin_multicaret_edit`](class_textedit.md#class_textedit_method_begin_multicaret_edit) and [`end_multicaret_edit`](class_textedit.md#class_textedit_method_end_multicaret_edit).
 
  **Note:** This is not called when a caret changes position but after certain actions, so it is possible to get into a state where carets overlap.
 
@@ -2469,7 +2469,7 @@ If [`is_in_mulitcaret_edit`](#class_textedit_method_is_in_mulitcaret_edit) is `t
 
 [`bool`](class_bool.md) **multicaret_edit_ignore_caret** ( caret_index: [`int`](class_int.md) ) const[^const]<div id="class_textedit_method_multicaret_edit_ignore_caret"></div>
 
-Returns `true` if the given `caret_index` should be ignored as part of a multicaret edit. See [`begin_multicaret_edit`](#class_textedit_method_begin_multicaret_edit) and [`end_multicaret_edit`](#class_textedit_method_end_multicaret_edit). Carets that should be ignored are ones that were part of removed text and will likely be merged at the end of the edit, or carets that were added during the edit.
+Returns `true` if the given `caret_index` should be ignored as part of a multicaret edit. See [`begin_multicaret_edit`](class_textedit.md#class_textedit_method_begin_multicaret_edit) and [`end_multicaret_edit`](class_textedit.md#class_textedit_method_end_multicaret_edit). Carets that should be ignored are ones that were part of removed text and will likely be merged at the end of the edit, or carets that were added during the edit.
 
 It is recommended to `continue` within a loop iterating on multiple carets if a caret should be ignored.
 
@@ -2481,7 +2481,7 @@ It is recommended to `continue` within a loop iterating on multiple carets if a 
 
 `void` **paste** ( caret_index: [`int`](class_int.md) = -1 )<div id="class_textedit_method_paste"></div>
 
-Paste at the current location. Can be overridden with [`_paste`](#class_textedit_private_method__paste).
+Paste at the current location. Can be overridden with [`_paste`](class_textedit.md#class_textedit_private_method__paste).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2607,9 +2607,9 @@ In the returned vector, `x` is the column, `y` is the line. If no results are fo
 
 Selects text from `origin_line` and `origin_column` to `caret_line` and `caret_column` for the given `caret_index`. This moves the selection origin and the caret. If the positions are the same, the selection will be deselected.
 
-If [`selecting_enabled`](#class_textedit_property_selecting_enabled) is `false`, no selection will occur.
+If [`selecting_enabled`](class_textedit.md#class_textedit_property_selecting_enabled) is `false`, no selection will occur.
 
- **Note:** If supporting multiple carets this will not check for any overlap. See [`merge_overlapping_carets`](#class_textedit_method_merge_overlapping_carets).
+ **Note:** If supporting multiple carets this will not check for any overlap. See [`merge_overlapping_carets`](class_textedit.md#class_textedit_method_merge_overlapping_carets).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2621,7 +2621,7 @@ If [`selecting_enabled`](#class_textedit_property_selecting_enabled) is `false`,
 
 Select all the text.
 
-If [`selecting_enabled`](#class_textedit_property_selecting_enabled) is `false`, no selection will occur.
+If [`selecting_enabled`](class_textedit.md#class_textedit_property_selecting_enabled) is `false`, no selection will occur.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2645,7 +2645,7 @@ Moves the caret to the specified `column` index.
 
 If `adjust_viewport` is `true`, the viewport will center at the caret position after the move occurs.
 
- **Note:** If supporting multiple carets this will not check for any overlap. See [`merge_overlapping_carets`](#class_textedit_method_merge_overlapping_carets).
+ **Note:** If supporting multiple carets this will not check for any overlap. See [`merge_overlapping_carets`](class_textedit.md#class_textedit_method_merge_overlapping_carets).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2655,15 +2655,15 @@ If `adjust_viewport` is `true`, the viewport will center at the caret position a
 
 `void` **set_caret_line** ( line: [`int`](class_int.md), adjust_viewport: [`bool`](class_bool.md) = true, can_be_hidden: [`bool`](class_bool.md) = true, wrap_index: [`int`](class_int.md) = 0, caret_index: [`int`](class_int.md) = 0 )<div id="class_textedit_method_set_caret_line"></div>
 
-Moves the caret to the specified `line` index. The caret column will be moved to the same visual position it was at the last time [`set_caret_column`](#class_textedit_method_set_caret_column) was called, or clamped to the end of the line.
+Moves the caret to the specified `line` index. The caret column will be moved to the same visual position it was at the last time [`set_caret_column`](class_textedit.md#class_textedit_method_set_caret_column) was called, or clamped to the end of the line.
 
 If `adjust_viewport` is `true`, the viewport will center at the caret position after the move occurs.
 
 If `can_be_hidden` is `true`, the specified `line` can be hidden.
 
-If `wrap_index` is `-1`, the caret column will be clamped to the `line`'s length. If `wrap_index` is greater than `-1`, the column will be moved to attempt to match the visual x position on the line's `wrap_index` to the position from the last time [`set_caret_column`](#class_textedit_method_set_caret_column) was called.
+If `wrap_index` is `-1`, the caret column will be clamped to the `line`'s length. If `wrap_index` is greater than `-1`, the column will be moved to attempt to match the visual x position on the line's `wrap_index` to the position from the last time [`set_caret_column`](class_textedit.md#class_textedit_method_set_caret_column) was called.
 
- **Note:** If supporting multiple carets this will not check for any overlap. See [`merge_overlapping_carets`](#class_textedit_method_merge_overlapping_carets).
+ **Note:** If supporting multiple carets this will not check for any overlap. See [`merge_overlapping_carets`](class_textedit.md#class_textedit_method_merge_overlapping_carets).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2683,7 +2683,7 @@ Sets the gutter as clickable. This will change the mouse cursor to a pointing ha
 
 `void` **set_gutter_custom_draw** ( column: [`int`](class_int.md), draw_callback: [`Callable`](class_callable.md) )<div id="class_textedit_method_set_gutter_custom_draw"></div>
 
-Set a custom draw method for the gutter. The callback method must take the following args: `line: int, gutter: int, Area: Rect2`. This only works when the gutter type is [`GUTTER_TYPE_CUSTOM`](#class_textedit_constant_gutter_type_custom) (see [`set_gutter_type`](#class_textedit_method_set_gutter_type)).
+Set a custom draw method for the gutter. The callback method must take the following args: `line: int, gutter: int, Area: Rect2`. This only works when the gutter type is [`GUTTER_TYPE_CUSTOM`](class_textedit.md#class_textedit_constant_gutter_type_custom) (see [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2713,7 +2713,7 @@ Sets the name of the gutter.
 
 `void` **set_gutter_overwritable** ( gutter: [`int`](class_int.md), overwritable: [`bool`](class_bool.md) )<div id="class_textedit_method_set_gutter_overwritable"></div>
 
-Sets the gutter to overwritable. See [`merge_gutters`](#class_textedit_method_merge_gutters).
+Sets the gutter to overwritable. See [`merge_gutters`](class_textedit.md#class_textedit_method_merge_gutters).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2795,7 +2795,7 @@ Sets the current background color of the line. Set to `Color(0, 0, 0, 0)` for no
 
 `void` **set_line_gutter_clickable** ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), clickable: [`bool`](class_bool.md) )<div id="class_textedit_method_set_line_gutter_clickable"></div>
 
-If `clickable` is `true`, makes the `gutter` on `line` clickable. See [`gutter_clicked`](#class_textedit_signal_gutter_clicked).
+If `clickable` is `true`, makes the `gutter` on `line` clickable. See [`gutter_clicked`](class_textedit.md#class_textedit_signal_gutter_clicked).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2805,7 +2805,7 @@ If `clickable` is `true`, makes the `gutter` on `line` clickable. See [`gutter_c
 
 `void` **set_line_gutter_icon** ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )<div id="class_textedit_method_set_line_gutter_icon"></div>
 
-Sets the icon for `gutter` on `line` to `icon`. This only works when the gutter type is [`GUTTER_TYPE_ICON`](#class_textedit_constant_gutter_type_icon) (see [`set_gutter_type`](#class_textedit_method_set_gutter_type)).
+Sets the icon for `gutter` on `line` to `icon`. This only works when the gutter type is [`GUTTER_TYPE_ICON`](class_textedit.md#class_textedit_constant_gutter_type_icon) (see [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2835,7 +2835,7 @@ Sets the metadata for `gutter` on `line` to `metadata`.
 
 `void` **set_line_gutter_text** ( line: [`int`](class_int.md), gutter: [`int`](class_int.md), text: [`String`](class_string.md) )<div id="class_textedit_method_set_line_gutter_text"></div>
 
-Sets the text for `gutter` on `line` to `text`. This only works when the gutter type is [`GUTTER_TYPE_STRING`](#class_textedit_constant_gutter_type_string) (see [`set_gutter_type`](#class_textedit_method_set_gutter_type)).
+Sets the text for `gutter` on `line` to `text`. This only works when the gutter type is [`GUTTER_TYPE_STRING`](class_textedit.md#class_textedit_constant_gutter_type_string) (see [`set_gutter_type`](class_textedit.md#class_textedit_method_set_gutter_type)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2855,7 +2855,7 @@ If `true`, sets the user into overtype mode. When the user types in this mode, i
 
 `void` **set_search_flags** ( flags: [`int`](class_int.md) )<div id="class_textedit_method_set_search_flags"></div>
 
-Sets the search `flags`. This is used with [`set_search_text`](#class_textedit_method_set_search_text) to highlight occurrences of the searched text. Search flags can be specified from the [SearchFlags](#enum_textedit_searchflags) enum.
+Sets the search `flags`. This is used with [`set_search_text`](class_textedit.md#class_textedit_method_set_search_text) to highlight occurrences of the searched text. Search flags can be specified from the [SearchFlags](#enum_textedit_searchflags) enum.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2865,7 +2865,7 @@ Sets the search `flags`. This is used with [`set_search_text`](#class_textedit_m
 
 `void` **set_search_text** ( search_text: [`String`](class_string.md) )<div id="class_textedit_method_set_search_text"></div>
 
-Sets the search text. See [`set_search_flags`](#class_textedit_method_set_search_flags).
+Sets the search text. See [`set_search_flags`](class_textedit.md#class_textedit_method_set_search_flags).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2899,7 +2899,7 @@ Sets the selection origin line to the `line` for the given `caret_index`. If the
 
 If `can_be_hidden` is `false`, The line will be set to the nearest unhidden line below or above.
 
-If `wrap_index` is `-1`, the selection origin column will be clamped to the `line`'s length. If `wrap_index` is greater than `-1`, the column will be moved to attempt to match the visual x position on the line's `wrap_index` to the position from the last time [`set_selection_origin_column`](#class_textedit_method_set_selection_origin_column) or [`select`](#class_textedit_method_select) was called.
+If `wrap_index` is `-1`, the selection origin column will be clamped to the `line`'s length. If `wrap_index` is greater than `-1`, the column will be moved to attempt to match the visual x position on the line's `wrap_index` to the position from the last time [`set_selection_origin_column`](class_textedit.md#class_textedit_method_set_selection_origin_column) or [`select`](class_textedit.md#class_textedit_method_select) was called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2941,7 +2941,7 @@ Moves a selection and a caret for the next occurrence of the current selection. 
 
 Starts an action, will end the current action if `action` is different.
 
-An action will also end after a call to [`end_action`](#class_textedit_method_end_action), after [`ProjectSettings.gui/timers/text_edit_idle_detect_sec`](#class_projectsettings_property_gui/timers/text_edit_idle_detect_sec) is triggered or a new undoable step outside the [`start_action`](#class_textedit_method_start_action) and [`end_action`](#class_textedit_method_end_action) calls.
+An action will also end after a call to [`end_action`](class_textedit.md#class_textedit_method_end_action), after [`ProjectSettings.gui/timers/text_edit_idle_detect_sec`](class_projectsettings.md#class_projectsettings_property_gui/timers/text_edit_idle_detect_sec) is triggered or a new undoable step outside the [`start_action`](class_textedit.md#class_textedit_method_start_action) and [`end_action`](class_textedit.md#class_textedit_method_end_action) calls.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3043,7 +3043,7 @@ The tint of text outline of the **TextEdit**.
 
 [`Color`](class_color.md) **font_placeholder_color** = ``Color(0.875, 0.875, 0.875, 0.6)`` <div id="class_textedit_theme_color_font_placeholder_color"></div>
 
-Font color for [`placeholder_text`](#class_textedit_property_placeholder_text).
+Font color for [`placeholder_text`](class_textedit.md#class_textedit_property_placeholder_text).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3053,7 +3053,7 @@ Font color for [`placeholder_text`](#class_textedit_property_placeholder_text).
 
 [`Color`](class_color.md) **font_readonly_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` <div id="class_textedit_theme_color_font_readonly_color"></div>
 
-Sets the font [`Color`](class_color.md) when [`editable`](#class_textedit_property_editable) is disabled.
+Sets the font [`Color`](class_color.md) when [`editable`](class_textedit.md#class_textedit_property_editable) is disabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3103,7 +3103,7 @@ Sets the highlight [`Color`](class_color.md) of text selections.
 
 [`Color`](class_color.md) **word_highlighted_color** = ``Color(0.5, 0.5, 0.5, 0.25)`` <div id="class_textedit_theme_color_word_highlighted_color"></div>
 
-Sets the highlight [`Color`](class_color.md) of multiple occurrences. [`highlight_all_occurrences`](#class_textedit_property_highlight_all_occurrences) has to be enabled.
+Sets the highlight [`Color`](class_color.md) of multiple occurrences. [`highlight_all_occurrences`](class_textedit.md#class_textedit_property_highlight_all_occurrences) has to be enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3135,7 +3135,7 @@ Sets the spacing between the lines.
 
 The size of the text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_textedit_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_textedit.md#class_textedit_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3185,7 +3185,7 @@ Sets a custom [`Texture2D`](class_texture2d.md) for tab text characters.
 
 [`StyleBox`](class_stylebox.md) **focus** <div id="class_textedit_theme_style_focus"></div>
 
-Sets the [`StyleBox`](class_stylebox.md) when in focus. The [`focus`](#class_textedit_theme_style_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md), so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+Sets the [`StyleBox`](class_stylebox.md) when in focus. The [`focus`](class_textedit.md#class_textedit_theme_style_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md), so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3205,7 +3205,7 @@ Sets the [`StyleBox`](class_stylebox.md) of this **TextEdit**.
 
 [`StyleBox`](class_stylebox.md) **read_only** <div id="class_textedit_theme_style_read_only"></div>
 
-Sets the [`StyleBox`](class_stylebox.md) of this **TextEdit** when [`editable`](#class_textedit_property_editable) is disabled.
+Sets the [`StyleBox`](class_stylebox.md) of this **TextEdit** when [`editable`](class_textedit.md#class_textedit_property_editable) is disabled.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

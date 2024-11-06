@@ -23,25 +23,25 @@ Additional options (such as extracting individual meshes or materials to files) 
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`_subresources`](#class_resourceimporterscene_property__subresources)                                         | ``{}``    |
-| [`float`](class_float.md)           | [`animation/fps`](#class_resourceimporterscene_property_animation/fps)                                         | ``30``    |
-| [`bool`](class_bool.md)             | [`animation/import`](#class_resourceimporterscene_property_animation/import)                                   | ``true``  |
-| [`bool`](class_bool.md)             | [`animation/import_rest_as_RESET`](#class_resourceimporterscene_property_animation/import_rest_as_reset)       | ``false`` |
-| [`bool`](class_bool.md)             | [`animation/remove_immutable_tracks`](#class_resourceimporterscene_property_animation/remove_immutable_tracks) | ``true``  |
-| [`bool`](class_bool.md)             | [`animation/trimming`](#class_resourceimporterscene_property_animation/trimming)                               | ``false`` |
-| [`String`](class_string.md)         | [`import_script/path`](#class_resourceimporterscene_property_import_script/path)                               | ``""``    |
-| [`bool`](class_bool.md)             | [`meshes/create_shadow_meshes`](#class_resourceimporterscene_property_meshes/create_shadow_meshes)             | ``true``  |
-| [`bool`](class_bool.md)             | [`meshes/ensure_tangents`](#class_resourceimporterscene_property_meshes/ensure_tangents)                       | ``true``  |
-| [`bool`](class_bool.md)             | [`meshes/force_disable_compression`](#class_resourceimporterscene_property_meshes/force_disable_compression)   | ``false`` |
-| [`bool`](class_bool.md)             | [`meshes/generate_lods`](#class_resourceimporterscene_property_meshes/generate_lods)                           | ``true``  |
-| [`int`](class_int.md)               | [`meshes/light_baking`](#class_resourceimporterscene_property_meshes/light_baking)                             | ``1``     |
-| [`float`](class_float.md)           | [`meshes/lightmap_texel_size`](#class_resourceimporterscene_property_meshes/lightmap_texel_size)               | ``0.2``   |
-| [`bool`](class_bool.md)             | [`nodes/apply_root_scale`](#class_resourceimporterscene_property_nodes/apply_root_scale)                       | ``true``  |
-| [`bool`](class_bool.md)             | [`nodes/import_as_skeleton_bones`](#class_resourceimporterscene_property_nodes/import_as_skeleton_bones)       | ``false`` |
-| [`String`](class_string.md)         | [`nodes/root_name`](#class_resourceimporterscene_property_nodes/root_name)                                     | ``""``    |
-| [`float`](class_float.md)           | [`nodes/root_scale`](#class_resourceimporterscene_property_nodes/root_scale)                                   | ``1.0``   |
-| [`String`](class_string.md)         | [`nodes/root_type`](#class_resourceimporterscene_property_nodes/root_type)                                     | ``""``    |
-| [`bool`](class_bool.md)             | [`skins/use_named_skins`](#class_resourceimporterscene_property_skins/use_named_skins)                         | ``true``  |
+| [`Dictionary`](class_dictionary.md) | [`_subresources`](class_resourceimporterscene.md#class_resourceimporterscene_property__subresources)                                         | ``{}``    |
+| [`float`](class_float.md)           | [`animation/fps`](class_resourceimporterscene.md#class_resourceimporterscene_property_animation/fps)                                         | ``30``    |
+| [`bool`](class_bool.md)             | [`animation/import`](class_resourceimporterscene.md#class_resourceimporterscene_property_animation/import)                                   | ``true``  |
+| [`bool`](class_bool.md)             | [`animation/import_rest_as_RESET`](class_resourceimporterscene.md#class_resourceimporterscene_property_animation/import_rest_as_reset)       | ``false`` |
+| [`bool`](class_bool.md)             | [`animation/remove_immutable_tracks`](class_resourceimporterscene.md#class_resourceimporterscene_property_animation/remove_immutable_tracks) | ``true``  |
+| [`bool`](class_bool.md)             | [`animation/trimming`](class_resourceimporterscene.md#class_resourceimporterscene_property_animation/trimming)                               | ``false`` |
+| [`String`](class_string.md)         | [`import_script/path`](class_resourceimporterscene.md#class_resourceimporterscene_property_import_script/path)                               | ``""``    |
+| [`bool`](class_bool.md)             | [`meshes/create_shadow_meshes`](class_resourceimporterscene.md#class_resourceimporterscene_property_meshes/create_shadow_meshes)             | ``true``  |
+| [`bool`](class_bool.md)             | [`meshes/ensure_tangents`](class_resourceimporterscene.md#class_resourceimporterscene_property_meshes/ensure_tangents)                       | ``true``  |
+| [`bool`](class_bool.md)             | [`meshes/force_disable_compression`](class_resourceimporterscene.md#class_resourceimporterscene_property_meshes/force_disable_compression)   | ``false`` |
+| [`bool`](class_bool.md)             | [`meshes/generate_lods`](class_resourceimporterscene.md#class_resourceimporterscene_property_meshes/generate_lods)                           | ``true``  |
+| [`int`](class_int.md)               | [`meshes/light_baking`](class_resourceimporterscene.md#class_resourceimporterscene_property_meshes/light_baking)                             | ``1``     |
+| [`float`](class_float.md)           | [`meshes/lightmap_texel_size`](class_resourceimporterscene.md#class_resourceimporterscene_property_meshes/lightmap_texel_size)               | ``0.2``   |
+| [`bool`](class_bool.md)             | [`nodes/apply_root_scale`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/apply_root_scale)                       | ``true``  |
+| [`bool`](class_bool.md)             | [`nodes/import_as_skeleton_bones`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/import_as_skeleton_bones)       | ``false`` |
+| [`String`](class_string.md)         | [`nodes/root_name`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/root_name)                                     | ``""``    |
+| [`float`](class_float.md)           | [`nodes/root_scale`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/root_scale)                                   | ``1.0``   |
+| [`String`](class_string.md)         | [`nodes/root_type`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/root_type)                                     | ``""``    |
+| [`bool`](class_bool.md)             | [`skins/use_named_skins`](class_resourceimporterscene.md#class_resourceimporterscene_property_skins/use_named_skins)                         | ``true``  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -83,7 +83,7 @@ If `true`, import animations from the 3D scene.
 
 [`bool`](class_bool.md) **animation/import_rest_as_RESET** = ``false`` <div id="class_resourceimporterscene_property_animation/import_rest_as_reset"></div>
 
-If `true`, adds an [`Animation`](class_animation.md) named `RESET`, containing the [`Skeleton3D.get_bone_rest`](#class_skeleton3d_method_get_bone_rest) from [`Skeleton3D`](class_skeleton3d.md) nodes. This can be useful to extract an animation in the reference pose.
+If `true`, adds an [`Animation`](class_animation.md) named `RESET`, containing the [`Skeleton3D.get_bone_rest`](class_skeleton3d.md#class_skeleton3d_method_get_bone_rest) from [`Skeleton3D`](class_skeleton3d.md) nodes. This can be useful to extract an animation in the reference pose.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,7 +165,7 @@ If `true`, generates lower detail variants of the mesh which will be displayed i
 
 [`int`](class_int.md) **meshes/light_baking** = ``1`` <div id="class_resourceimporterscene_property_meshes/light_baking"></div>
 
-Configures the meshes' [`GeometryInstance3D.gi_mode`](#class_geometryinstance3d_property_gi_mode) in the 3D scene. If set to **Static Lightmaps**, sets the meshes' GI mode to Static and generates UV2 on import for [`LightmapGI`](class_lightmapgi.md) baking.
+Configures the meshes' [`GeometryInstance3D.gi_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode) in the 3D scene. If set to **Static Lightmaps**, sets the meshes' GI mode to Static and generates UV2 on import for [`LightmapGI`](class_lightmapgi.md) baking.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -177,7 +177,7 @@ Configures the meshes' [`GeometryInstance3D.gi_mode`](#class_geometryinstance3d_
 
 Controls the size of each texel on the baked lightmap. A smaller value results in more precise lightmaps, at the cost of larger lightmap sizes and longer bake times.
 
- **Note:** Only effective if [`meshes/light_baking`](#class_resourceimporterscene_property_meshes/light_baking) is set to **Static Lightmaps**.
+ **Note:** Only effective if [`meshes/light_baking`](class_resourceimporterscene.md#class_resourceimporterscene_property_meshes/light_baking) is set to **Static Lightmaps**.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -187,7 +187,7 @@ Controls the size of each texel on the baked lightmap. A smaller value results i
 
 [`bool`](class_bool.md) **nodes/apply_root_scale** = ``true`` <div id="class_resourceimporterscene_property_nodes/apply_root_scale"></div>
 
-If `true`, [`nodes/root_scale`](#class_resourceimporterscene_property_nodes/root_scale) will be applied to the descendant nodes, meshes, animations, bones, etc. This means that if you add a child node later on within the imported scene, it won't be scaled. If `false`, [`nodes/root_scale`](#class_resourceimporterscene_property_nodes/root_scale) will multiply the scale of the root node instead.
+If `true`, [`nodes/root_scale`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/root_scale) will be applied to the descendant nodes, meshes, animations, bones, etc. This means that if you add a child node later on within the imported scene, it won't be scaled. If `false`, [`nodes/root_scale`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/root_scale) will multiply the scale of the root node instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -217,7 +217,7 @@ Override for the root node name. If empty, the root node will use what the scene
 
 [`float`](class_float.md) **nodes/root_scale** = ``1.0`` <div id="class_resourceimporterscene_property_nodes/root_scale"></div>
 
-The uniform scale to use for the scene root. The default value of `1.0` will not perform any rescaling. See [`nodes/apply_root_scale`](#class_resourceimporterscene_property_nodes/apply_root_scale) for details of how this scale is applied.
+The uniform scale to use for the scene root. The default value of `1.0` will not perform any rescaling. See [`nodes/apply_root_scale`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/apply_root_scale) for details of how this scale is applied.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -243,7 +243,7 @@ If checked, use named [`Skin`](class_skin.md) s for animation. The [`MeshInstanc
 
 - The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For every one of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the [`Skin`](class_skin.md) contains each bone's name (if [`skins/use_named_skins`](#class_resourceimporterscene_property_skins/use_named_skins) is `true`), or the bone's index within the [`Skeleton3D`](class_skeleton3d.md) list (if [`skins/use_named_skins`](#class_resourceimporterscene_property_skins/use_named_skins) is `false`).
+- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For every one of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the [`Skin`](class_skin.md) contains each bone's name (if [`skins/use_named_skins`](class_resourceimporterscene.md#class_resourceimporterscene_property_skins/use_named_skins) is `true`), or the bone's index within the [`Skeleton3D`](class_skeleton3d.md) list (if [`skins/use_named_skins`](class_resourceimporterscene.md#class_resourceimporterscene_property_skins/use_named_skins) is `false`).
 
 Together, this information is enough to tell Godot how to use the bone poses in the [`Skeleton3D`](class_skeleton3d.md) node to render the mesh from each [`MeshInstance3D`](class_meshinstance3d.md). Note that each [`MeshInstance3D`](class_meshinstance3d.md) may share binds, as is common in models exported from Blender, or each [`MeshInstance3D`](class_meshinstance3d.md) may use a separate [`Skin`](class_skin.md) object, as is common in models exported from other tools such as Maya.
 

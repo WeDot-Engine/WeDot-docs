@@ -37,7 +37,7 @@ Below shows an example of a basic plugin that will convert an [`ImageTexture`](c
 
 
 
-To use an **EditorResourceConversionPlugin**, register it using the [`EditorPlugin.add_resource_conversion_plugin`](#class_editorplugin_method_add_resource_conversion_plugin) method first.
+To use an **EditorResourceConversionPlugin**, register it using the [`EditorPlugin.add_resource_conversion_plugin`](class_editorplugin.md#class_editorplugin_method_add_resource_conversion_plugin) method first.
 
 
 
@@ -45,9 +45,9 @@ To use an **EditorResourceConversionPlugin**, register it using the [`EditorPlug
 
 |||
 |:-:|:--|
-| [`Resource`](class_resource.md) | [`_convert`](#class_editorresourceconversionplugin_private_method__convert) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
-| [`String`](class_string.md)     | [`_converts_to`](#class_editorresourceconversionplugin_private_method__converts_to) ( ) virtual[^virtual] const[^const]                                   |
-| [`bool`](class_bool.md)         | [`_handles`](#class_editorresourceconversionplugin_private_method__handles) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
+| [`Resource`](class_resource.md) | [`_convert`](class_editorresourceconversionplugin.md#class_editorresourceconversionplugin_private_method__convert) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
+| [`String`](class_string.md)     | [`_converts_to`](class_editorresourceconversionplugin.md#class_editorresourceconversionplugin_private_method__converts_to) ( ) virtual[^virtual] const[^const]                                   |
+| [`bool`](class_bool.md)         | [`_handles`](class_editorresourceconversionplugin.md#class_editorresourceconversionplugin_private_method__handles) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -59,7 +59,7 @@ To use an **EditorResourceConversionPlugin**, register it using the [`EditorPlug
 
 [`Resource`](class_resource.md) **_convert** ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]<div id="class_editorresourceconversionplugin_private_method__convert"></div>
 
-Takes an input [`Resource`](class_resource.md) and converts it to the type given in [`_converts_to`](#class_editorresourceconversionplugin_private_method__converts_to). The returned [`Resource`](class_resource.md) is the result of the conversion, and the input [`Resource`](class_resource.md) remains unchanged.
+Takes an input [`Resource`](class_resource.md) and converts it to the type given in [`_converts_to`](class_editorresourceconversionplugin.md#class_editorresourceconversionplugin_private_method__converts_to). The returned [`Resource`](class_resource.md) is the result of the conversion, and the input [`Resource`](class_resource.md) remains unchanged.
 
 <!-- rst-class:: classref-item-separator -->
 

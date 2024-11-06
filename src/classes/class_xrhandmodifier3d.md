@@ -17,14 +17,14 @@ This node uses hand tracking data from an [`XRHandTracker`](class_xrhandtracker.
 
 Positioning of hands is performed by creating an [`XRNode3D`](class_xrnode3d.md) ancestor of the hand mesh driven by the same [`XRHandTracker`](class_xrhandtracker.md).
 
-The hand tracking position-data is scaled by [`Skeleton3D.motion_scale`](#class_skeleton3d_property_motion_scale) when applied to the skeleton, which can be used to adjust the tracked hand to match the scale of the hand model.
+The hand tracking position-data is scaled by [`Skeleton3D.motion_scale`](class_skeleton3d.md#class_skeleton3d_property_motion_scale) when applied to the skeleton, which can be used to adjust the tracked hand to match the scale of the hand model.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [BoneUpdate](#enum_xrhandmodifier3d_boneupdate) | [`bone_update`](#class_xrhandmodifier3d_property_bone_update)   | ``0``                          |
-| [`StringName`](class_stringname.md)             | [`hand_tracker`](#class_xrhandmodifier3d_property_hand_tracker) | ``&"/user/hand_tracker/left"`` |
+| [BoneUpdate](#enum_xrhandmodifier3d_boneupdate) | [`bone_update`](class_xrhandmodifier3d.md#class_xrhandmodifier3d_property_bone_update)   | ``0``                          |
+| [`StringName`](class_stringname.md)             | [`hand_tracker`](class_xrhandmodifier3d.md#class_xrhandmodifier3d_property_hand_tracker) | ``&"/user/hand_tracker/left"`` |
 
 <!-- rst-class:: classref-section-separator -->
 

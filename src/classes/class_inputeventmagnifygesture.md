@@ -15,13 +15,13 @@ Represents a magnifying touch gesture.
 
 Stores the factor of a magnifying touch gesture. This is usually performed when the user pinches the touch screen and used for zooming in/out.
 
- **Note:** On Android, this requires the [`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures`](#class_projectsettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures) project setting to be enabled.
+ **Note:** On Android, this requires the [`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures) project setting to be enabled.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`factor`](#class_inputeventmagnifygesture_property_factor) | ``1.0`` |
+| [`float`](class_float.md) | [`factor`](class_inputeventmagnifygesture.md#class_inputeventmagnifygesture_property_factor) | ``1.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

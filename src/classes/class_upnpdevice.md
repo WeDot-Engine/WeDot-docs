@@ -19,21 +19,21 @@ Universal Plug and Play (UPnP) device. See [`UPNP`](class_upnp.md) for UPnP disc
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)             | [`description_url`](#class_upnpdevice_property_description_url)   | ``""`` |
-| [`String`](class_string.md)             | [`igd_control_url`](#class_upnpdevice_property_igd_control_url)   | ``""`` |
-| [`String`](class_string.md)             | [`igd_our_addr`](#class_upnpdevice_property_igd_our_addr)         | ``""`` |
-| [`String`](class_string.md)             | [`igd_service_type`](#class_upnpdevice_property_igd_service_type) | ``""`` |
-| [IGDStatus](#enum_upnpdevice_igdstatus) | [`igd_status`](#class_upnpdevice_property_igd_status)             | ``9``  |
-| [`String`](class_string.md)             | [`service_type`](#class_upnpdevice_property_service_type)         | ``""`` |
+| [`String`](class_string.md)             | [`description_url`](class_upnpdevice.md#class_upnpdevice_property_description_url)   | ``""`` |
+| [`String`](class_string.md)             | [`igd_control_url`](class_upnpdevice.md#class_upnpdevice_property_igd_control_url)   | ``""`` |
+| [`String`](class_string.md)             | [`igd_our_addr`](class_upnpdevice.md#class_upnpdevice_property_igd_our_addr)         | ``""`` |
+| [`String`](class_string.md)             | [`igd_service_type`](class_upnpdevice.md#class_upnpdevice_property_igd_service_type) | ``""`` |
+| [IGDStatus](#enum_upnpdevice_igdstatus) | [`igd_status`](class_upnpdevice.md#class_upnpdevice_property_igd_status)             | ``9``  |
+| [`String`](class_string.md)             | [`service_type`](class_upnpdevice.md#class_upnpdevice_property_service_type)         | ``""`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)       | [`add_port_mapping`](#class_upnpdevice_method_add_port_mapping) ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const] |
-| [`int`](class_int.md)       | [`delete_port_mapping`](#class_upnpdevice_method_delete_port_mapping) ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]                                                                                                                  |
-| [`bool`](class_bool.md)     | [`is_valid_gateway`](#class_upnpdevice_method_is_valid_gateway) ( ) const[^const]                                                                                                                                                                                                |
-| [`String`](class_string.md) | [`query_external_address`](#class_upnpdevice_method_query_external_address) ( ) const[^const]                                                                                                                                                                                    |
+| [`int`](class_int.md)       | [`add_port_mapping`](class_upnpdevice.md#class_upnpdevice_method_add_port_mapping) ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const] |
+| [`int`](class_int.md)       | [`delete_port_mapping`](class_upnpdevice.md#class_upnpdevice_method_delete_port_mapping) ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]                                                                                                                  |
+| [`bool`](class_bool.md)     | [`is_valid_gateway`](class_upnpdevice.md#class_upnpdevice_method_is_valid_gateway) ( ) const[^const]                                                                                                                                                                                                |
+| [`String`](class_string.md) | [`query_external_address`](class_upnpdevice.md#class_upnpdevice_method_query_external_address) ( ) const[^const]                                                                                                                                                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -199,7 +199,7 @@ Service type.
 
 [`int`](class_int.md) **add_port_mapping** ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const]<div id="class_upnpdevice_method_add_port_mapping"></div>
 
-Adds a port mapping to forward the given external port on this **UPNPDevice** for the given protocol to the local machine. See [`UPNP.add_port_mapping`](#class_upnp_method_add_port_mapping).
+Adds a port mapping to forward the given external port on this **UPNPDevice** for the given protocol to the local machine. See [`UPNP.add_port_mapping`](class_upnp.md#class_upnp_method_add_port_mapping).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -209,7 +209,7 @@ Adds a port mapping to forward the given external port on this **UPNPDevice** fo
 
 [`int`](class_int.md) **delete_port_mapping** ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]<div id="class_upnpdevice_method_delete_port_mapping"></div>
 
-Deletes the port mapping identified by the given port and protocol combination on this device. See [`UPNP.delete_port_mapping`](#class_upnp_method_delete_port_mapping).
+Deletes the port mapping identified by the given port and protocol combination on this device. See [`UPNP.delete_port_mapping`](class_upnp.md#class_upnp_method_delete_port_mapping).
 
 <!-- rst-class:: classref-item-separator -->
 

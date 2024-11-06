@@ -21,21 +21,21 @@ Most custom data stored in GLTF does not need accessors, only buffer views (see 
 
 |||
 |:-:|:--|
-| [GLTFAccessorType](#enum_gltfaccessor_gltfaccessortype) | [`accessor_type`](#class_gltfaccessor_property_accessor_type)                                 | ``0``                    |
-| [`int`](class_int.md)                                   | [`buffer_view`](#class_gltfaccessor_property_buffer_view)                                     | ``-1``                   |
-| [`int`](class_int.md)                                   | [`byte_offset`](#class_gltfaccessor_property_byte_offset)                                     | ``0``                    |
-| [`int`](class_int.md)                                   | [`component_type`](#class_gltfaccessor_property_component_type)                               | ``0``                    |
-| [`int`](class_int.md)                                   | [`count`](#class_gltfaccessor_property_count)                                                 | ``0``                    |
-| [`PackedFloat64Array`](class_packedfloat64array.md)     | [`max`](#class_gltfaccessor_property_max)                                                     | ``PackedFloat64Array()`` |
-| [`PackedFloat64Array`](class_packedfloat64array.md)     | [`min`](#class_gltfaccessor_property_min)                                                     | ``PackedFloat64Array()`` |
-| [`bool`](class_bool.md)                                 | [`normalized`](#class_gltfaccessor_property_normalized)                                       | ``false``                |
-| [`int`](class_int.md)                                   | [`sparse_count`](#class_gltfaccessor_property_sparse_count)                                   | ``0``                    |
-| [`int`](class_int.md)                                   | [`sparse_indices_buffer_view`](#class_gltfaccessor_property_sparse_indices_buffer_view)       | ``0``                    |
-| [`int`](class_int.md)                                   | [`sparse_indices_byte_offset`](#class_gltfaccessor_property_sparse_indices_byte_offset)       | ``0``                    |
-| [`int`](class_int.md)                                   | [`sparse_indices_component_type`](#class_gltfaccessor_property_sparse_indices_component_type) | ``0``                    |
-| [`int`](class_int.md)                                   | [`sparse_values_buffer_view`](#class_gltfaccessor_property_sparse_values_buffer_view)         | ``0``                    |
-| [`int`](class_int.md)                                   | [`sparse_values_byte_offset`](#class_gltfaccessor_property_sparse_values_byte_offset)         | ``0``                    |
-| [`int`](class_int.md)                                   | [`type`](#class_gltfaccessor_property_type)                                                   |                          |
+| [GLTFAccessorType](#enum_gltfaccessor_gltfaccessortype) | [`accessor_type`](class_gltfaccessor.md#class_gltfaccessor_property_accessor_type)                                 | ``0``                    |
+| [`int`](class_int.md)                                   | [`buffer_view`](class_gltfaccessor.md#class_gltfaccessor_property_buffer_view)                                     | ``-1``                   |
+| [`int`](class_int.md)                                   | [`byte_offset`](class_gltfaccessor.md#class_gltfaccessor_property_byte_offset)                                     | ``0``                    |
+| [`int`](class_int.md)                                   | [`component_type`](class_gltfaccessor.md#class_gltfaccessor_property_component_type)                               | ``0``                    |
+| [`int`](class_int.md)                                   | [`count`](class_gltfaccessor.md#class_gltfaccessor_property_count)                                                 | ``0``                    |
+| [`PackedFloat64Array`](class_packedfloat64array.md)     | [`max`](class_gltfaccessor.md#class_gltfaccessor_property_max)                                                     | ``PackedFloat64Array()`` |
+| [`PackedFloat64Array`](class_packedfloat64array.md)     | [`min`](class_gltfaccessor.md#class_gltfaccessor_property_min)                                                     | ``PackedFloat64Array()`` |
+| [`bool`](class_bool.md)                                 | [`normalized`](class_gltfaccessor.md#class_gltfaccessor_property_normalized)                                       | ``false``                |
+| [`int`](class_int.md)                                   | [`sparse_count`](class_gltfaccessor.md#class_gltfaccessor_property_sparse_count)                                   | ``0``                    |
+| [`int`](class_int.md)                                   | [`sparse_indices_buffer_view`](class_gltfaccessor.md#class_gltfaccessor_property_sparse_indices_buffer_view)       | ``0``                    |
+| [`int`](class_int.md)                                   | [`sparse_indices_byte_offset`](class_gltfaccessor.md#class_gltfaccessor_property_sparse_indices_byte_offset)       | ``0``                    |
+| [`int`](class_int.md)                                   | [`sparse_indices_component_type`](class_gltfaccessor.md#class_gltfaccessor_property_sparse_indices_component_type) | ``0``                    |
+| [`int`](class_int.md)                                   | [`sparse_values_buffer_view`](class_gltfaccessor.md#class_gltfaccessor_property_sparse_values_buffer_view)         | ``0``                    |
+| [`int`](class_int.md)                                   | [`sparse_values_byte_offset`](class_gltfaccessor.md#class_gltfaccessor_property_sparse_values_byte_offset)         | ``0``                    |
+| [`int`](class_int.md)                                   | [`type`](class_gltfaccessor.md#class_gltfaccessor_property_type)                                                   |                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -284,9 +284,9 @@ The offset relative to the start of the bufferView in bytes.
 - `void` **set_type** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_type** ( )
 
-**已弃用：** Use [`accessor_type`](#class_gltfaccessor_property_accessor_type) instead.
+**已弃用：** Use [`accessor_type`](class_gltfaccessor.md#class_gltfaccessor_property_accessor_type) instead.
 
-The GLTF accessor type as an enum. Use [`accessor_type`](#class_gltfaccessor_property_accessor_type) instead.
+The GLTF accessor type as an enum. Use [`accessor_type`](class_gltfaccessor.md#class_gltfaccessor_property_accessor_type) instead.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

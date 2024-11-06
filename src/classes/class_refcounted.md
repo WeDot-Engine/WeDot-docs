@@ -17,9 +17,9 @@ Base class for reference-counted objects.
 
 Base class for any object that keeps a reference count. [`Resource`](class_resource.md) and many other helper objects inherit this class.
 
-Unlike other [`Object`](class_object.md) types, **RefCounted** s keep an internal reference counter so that they are automatically released when no longer in use, and only then. **RefCounted** s therefore do not need to be freed manually with [`Object.free`](#class_object_method_free).
+Unlike other [`Object`](class_object.md) types, **RefCounted** s keep an internal reference counter so that they are automatically released when no longer in use, and only then. **RefCounted** s therefore do not need to be freed manually with [`Object.free`](class_object.md#class_object_method_free).
 
- **RefCounted** instances caught in a cyclic reference will **not** be freed automatically. For example, if a node holds a reference to instance `A`, which directly or indirectly holds a reference back to `A`, `A`'s reference count will be 2. Destruction of the node will leave `A` dangling with a reference count of 1, and there will be a memory leak. To prevent this, one of the references in the cycle can be made weak with [`@GlobalScope.weakref`](#class_@globalscope_method_weakref).
+ **RefCounted** instances caught in a cyclic reference will **not** be freed automatically. For example, if a node holds a reference to instance `A`, which directly or indirectly holds a reference back to `A`, `A`'s reference count will be 2. Destruction of the node will leave `A` dangling with a reference count of 1, and there will be a memory leak. To prevent this, one of the references in the cycle can be made weak with [`@GlobalScope.weakref`](class_@globalscope.md#class_@globalscope_method_weakref).
 
 In the vast majority of use cases, instantiating and using **RefCounted**-derived types is all you need to do. The methods provided in this class are only for advanced users, and can cause issues if misused.
 
@@ -29,10 +29,10 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)   | [`get_reference_count`](#class_refcounted_method_get_reference_count) ( ) const[^const] |
-| [`bool`](class_bool.md) | [`init_ref`](#class_refcounted_method_init_ref) ( )                                     |
-| [`bool`](class_bool.md) | [`reference`](#class_refcounted_method_reference) ( )                                   |
-| [`bool`](class_bool.md) | [`unreference`](#class_refcounted_method_unreference) ( )                               |
+| [`int`](class_int.md)   | [`get_reference_count`](class_refcounted.md#class_refcounted_method_get_reference_count) ( ) const[^const] |
+| [`bool`](class_bool.md) | [`init_ref`](class_refcounted.md#class_refcounted_method_init_ref) ( )                                     |
+| [`bool`](class_bool.md) | [`reference`](class_refcounted.md#class_refcounted_method_reference) ( )                                   |
+| [`bool`](class_bool.md) | [`unreference`](class_refcounted.md#class_refcounted_method_unreference) ( )                               |
 
 <!-- rst-class:: classref-section-separator -->
 

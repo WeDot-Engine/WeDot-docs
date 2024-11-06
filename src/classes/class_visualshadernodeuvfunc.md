@@ -19,7 +19,7 @@ UV functions are similar to [`Vector2`](class_vector2.md) functions, but the inp
 
 |||
 |:-:|:--|
-| [Function](#enum_visualshadernodeuvfunc_function) | [`function`](#class_visualshadernodeuvfunc_property_function) | ``0`` |
+| [Function](#enum_visualshadernodeuvfunc_function) | [`function`](class_visualshadernodeuvfunc.md#class_visualshadernodeuvfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

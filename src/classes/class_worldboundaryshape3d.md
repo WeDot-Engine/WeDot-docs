@@ -13,13 +13,13 @@ A 3D world boundary (half-space) shape used for physics collision.
 
 ## 描述
 
-A 3D world boundary shape, intended for use in physics. **WorldBoundaryShape3D** works like an infinite plane that forces all physics bodies to stay above it. The [`plane`](#class_worldboundaryshape3d_property_plane)'s normal determines which direction is considered as "above" and in the editor, the line over the plane represents this direction. It can for example be used for endless flat floors.
+A 3D world boundary shape, intended for use in physics. **WorldBoundaryShape3D** works like an infinite plane that forces all physics bodies to stay above it. The [`plane`](class_worldboundaryshape3d.md#class_worldboundaryshape3d_property_plane)'s normal determines which direction is considered as "above" and in the editor, the line over the plane represents this direction. It can for example be used for endless flat floors.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Plane`](class_plane.md) | [`plane`](#class_worldboundaryshape3d_property_plane) | ``Plane(0, 1, 0, 0)`` |
+| [`Plane`](class_plane.md) | [`plane`](class_worldboundaryshape3d.md#class_worldboundaryshape3d_property_plane) | ``Plane(0, 1, 0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

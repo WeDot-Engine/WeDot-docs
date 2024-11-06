@@ -21,19 +21,19 @@ UDP packet peer. Can be used to send raw UDP packets as well as [`Variant`](clas
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`bind`](#class_packetpeerudp_method_bind) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*", recv_buf_size: [`int`](class_int.md) = 65536 )    |
-| `void`                            | [`close`](#class_packetpeerudp_method_close) ( )                                                                                                                             |
-| [Error](#enum_@globalscope_error) | [`connect_to_host`](#class_packetpeerudp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                          |
-| [`int`](class_int.md)             | [`get_local_port`](#class_packetpeerudp_method_get_local_port) ( ) const[^const]                                                                                             |
-| [`String`](class_string.md)       | [`get_packet_ip`](#class_packetpeerudp_method_get_packet_ip) ( ) const[^const]                                                                                               |
-| [`int`](class_int.md)             | [`get_packet_port`](#class_packetpeerudp_method_get_packet_port) ( ) const[^const]                                                                                           |
-| [`bool`](class_bool.md)           | [`is_bound`](#class_packetpeerudp_method_is_bound) ( ) const[^const]                                                                                                         |
-| [`bool`](class_bool.md)           | [`is_socket_connected`](#class_packetpeerudp_method_is_socket_connected) ( ) const[^const]                                                                                   |
-| [Error](#enum_@globalscope_error) | [`join_multicast_group`](#class_packetpeerudp_method_join_multicast_group) ( multicast_address: [`String`](class_string.md), interface_name: [`String`](class_string.md) )   |
-| [Error](#enum_@globalscope_error) | [`leave_multicast_group`](#class_packetpeerudp_method_leave_multicast_group) ( multicast_address: [`String`](class_string.md), interface_name: [`String`](class_string.md) ) |
-| `void`                            | [`set_broadcast_enabled`](#class_packetpeerudp_method_set_broadcast_enabled) ( enabled: [`bool`](class_bool.md) )                                                            |
-| [Error](#enum_@globalscope_error) | [`set_dest_address`](#class_packetpeerudp_method_set_dest_address) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                        |
-| [Error](#enum_@globalscope_error) | [`wait`](#class_packetpeerudp_method_wait) ( )                                                                                                                               |
+| [Error](#enum_@globalscope_error) | [`bind`](class_packetpeerudp.md#class_packetpeerudp_method_bind) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*", recv_buf_size: [`int`](class_int.md) = 65536 )    |
+| `void`                            | [`close`](class_packetpeerudp.md#class_packetpeerudp_method_close) ( )                                                                                                                             |
+| [Error](#enum_@globalscope_error) | [`connect_to_host`](class_packetpeerudp.md#class_packetpeerudp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                          |
+| [`int`](class_int.md)             | [`get_local_port`](class_packetpeerudp.md#class_packetpeerudp_method_get_local_port) ( ) const[^const]                                                                                             |
+| [`String`](class_string.md)       | [`get_packet_ip`](class_packetpeerudp.md#class_packetpeerudp_method_get_packet_ip) ( ) const[^const]                                                                                               |
+| [`int`](class_int.md)             | [`get_packet_port`](class_packetpeerudp.md#class_packetpeerudp_method_get_packet_port) ( ) const[^const]                                                                                           |
+| [`bool`](class_bool.md)           | [`is_bound`](class_packetpeerudp.md#class_packetpeerudp_method_is_bound) ( ) const[^const]                                                                                                         |
+| [`bool`](class_bool.md)           | [`is_socket_connected`](class_packetpeerudp.md#class_packetpeerudp_method_is_socket_connected) ( ) const[^const]                                                                                   |
+| [Error](#enum_@globalscope_error) | [`join_multicast_group`](class_packetpeerudp.md#class_packetpeerudp_method_join_multicast_group) ( multicast_address: [`String`](class_string.md), interface_name: [`String`](class_string.md) )   |
+| [Error](#enum_@globalscope_error) | [`leave_multicast_group`](class_packetpeerudp.md#class_packetpeerudp_method_leave_multicast_group) ( multicast_address: [`String`](class_string.md), interface_name: [`String`](class_string.md) ) |
+| `void`                            | [`set_broadcast_enabled`](class_packetpeerudp.md#class_packetpeerudp_method_set_broadcast_enabled) ( enabled: [`bool`](class_bool.md) )                                                            |
+| [Error](#enum_@globalscope_error) | [`set_dest_address`](class_packetpeerudp.md#class_packetpeerudp_method_set_dest_address) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                        |
+| [Error](#enum_@globalscope_error) | [`wait`](class_packetpeerudp.md#class_packetpeerudp_method_wait) ( )                                                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -71,7 +71,7 @@ Closes the **PacketPeerUDP**'s underlying UDP socket.
 
 [Error](#enum_@globalscope_error) **connect_to_host** ( host: [`String`](class_string.md), port: [`int`](class_int.md) )<div id="class_packetpeerudp_method_connect_to_host"></div>
 
-Calling this method connects this UDP peer to the given `host`/`port` pair. UDP is in reality connectionless, so this option only means that incoming packets from different addresses are automatically discarded, and that outgoing packets are always sent to the connected address (future calls to [`set_dest_address`](#class_packetpeerudp_method_set_dest_address) are not allowed). This method does not send any data to the remote peer, to do that, use [`PacketPeer.put_var`](#class_packetpeer_method_put_var) or [`PacketPeer.put_packet`](#class_packetpeer_method_put_packet) as usual. See also [`UDPServer`](class_udpserver.md).
+Calling this method connects this UDP peer to the given `host`/`port` pair. UDP is in reality connectionless, so this option only means that incoming packets from different addresses are automatically discarded, and that outgoing packets are always sent to the connected address (future calls to [`set_dest_address`](class_packetpeerudp.md#class_packetpeerudp_method_set_dest_address) are not allowed). This method does not send any data to the remote peer, to do that, use [`PacketPeer.put_var`](class_packetpeer.md#class_packetpeer_method_put_var) or [`PacketPeer.put_packet`](class_packetpeer.md#class_packetpeer_method_put_packet) as usual. See also [`UDPServer`](class_udpserver.md).
 
  **Note:** Connecting to the remote peer does not help to protect from malicious attacks like IP spoofing, etc. Think about using an encryption technique like TLS or DTLS if you feel like your application is transferring sensitive information.
 
@@ -93,7 +93,7 @@ Returns the local port to which this peer is bound.
 
 [`String`](class_string.md) **get_packet_ip** ( ) const[^const]<div id="class_packetpeerudp_method_get_packet_ip"></div>
 
-Returns the IP of the remote peer that sent the last packet(that was received with [`PacketPeer.get_packet`](#class_packetpeer_method_get_packet) or [`PacketPeer.get_var`](#class_packetpeer_method_get_var)).
+Returns the IP of the remote peer that sent the last packet(that was received with [`PacketPeer.get_packet`](class_packetpeer.md#class_packetpeer_method_get_packet) or [`PacketPeer.get_var`](class_packetpeer.md#class_packetpeer_method_get_var)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -103,7 +103,7 @@ Returns the IP of the remote peer that sent the last packet(that was received wi
 
 [`int`](class_int.md) **get_packet_port** ( ) const[^const]<div id="class_packetpeerudp_method_get_packet_port"></div>
 
-Returns the port of the remote peer that sent the last packet(that was received with [`PacketPeer.get_packet`](#class_packetpeer_method_get_packet) or [`PacketPeer.get_var`](#class_packetpeer_method_get_var)).
+Returns the port of the remote peer that sent the last packet(that was received with [`PacketPeer.get_packet`](class_packetpeer.md#class_packetpeer_method_get_packet) or [`PacketPeer.get_var`](class_packetpeer.md#class_packetpeer_method_get_var)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -123,7 +123,7 @@ Returns whether this **PacketPeerUDP** is bound to an address and can receive pa
 
 [`bool`](class_bool.md) **is_socket_connected** ( ) const[^const]<div id="class_packetpeerudp_method_is_socket_connected"></div>
 
-Returns `true` if the UDP socket is open and has been connected to a remote address. See [`connect_to_host`](#class_packetpeerudp_method_connect_to_host).
+Returns `true` if the UDP socket is open and has been connected to a remote address. See [`connect_to_host`](class_packetpeerudp.md#class_packetpeerudp_method_connect_to_host).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -135,7 +135,7 @@ Returns `true` if the UDP socket is open and has been connected to a remote addr
 
 Joins the multicast group specified by `multicast_address` using the interface identified by `interface_name`.
 
-You can join the same multicast group with multiple interfaces. Use [`IP.get_local_interfaces`](#class_ip_method_get_local_interfaces) to know which are available.
+You can join the same multicast group with multiple interfaces. Use [`IP.get_local_interfaces`](class_ip.md#class_ip_method_get_local_interfaces) to know which are available.
 
  **Note:** Some Android devices might require the `CHANGE_WIFI_MULTICAST_STATE` permission for multicast to work.
 
@@ -171,7 +171,7 @@ Enable or disable sending of broadcast packets (e.g. `set_dest_address("255.255.
 
 Sets the destination address and port for sending packets and variables. A hostname will be resolved using DNS if needed.
 
- **Note:** [`set_broadcast_enabled`](#class_packetpeerudp_method_set_broadcast_enabled) must be enabled before sending packets to a broadcast address (e.g. `255.255.255.255`).
+ **Note:** [`set_broadcast_enabled`](class_packetpeerudp.md#class_packetpeerudp_method_set_broadcast_enabled) must be enabled before sending packets to a broadcast address (e.g. `255.255.255.255`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -181,9 +181,9 @@ Sets the destination address and port for sending packets and variables. A hostn
 
 [Error](#enum_@globalscope_error) **wait** ( )<div id="class_packetpeerudp_method_wait"></div>
 
-Waits for a packet to arrive on the bound address. See [`bind`](#class_packetpeerudp_method_bind).
+Waits for a packet to arrive on the bound address. See [`bind`](class_packetpeerudp.md#class_packetpeerudp_method_bind).
 
- **Note:** [`wait`](#class_packetpeerudp_method_wait) can't be interrupted once it has been called. This can be worked around by allowing the other party to send a specific "death pill" packet like this:
+ **Note:** [`wait`](class_packetpeerudp.md#class_packetpeerudp_method_wait) can't be interrupted once it has been called. This can be worked around by allowing the other party to send a specific "death pill" packet like this:
 
 
 

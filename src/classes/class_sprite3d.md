@@ -19,13 +19,13 @@ A node that displays a 2D texture in a 3D environment. The texture displayed can
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`frame`](#class_sprite3d_property_frame)                   | ``0``                 |
-| [`Vector2i`](class_vector2i.md)   | [`frame_coords`](#class_sprite3d_property_frame_coords)     | ``Vector2i(0, 0)``    |
-| [`int`](class_int.md)             | [`hframes`](#class_sprite3d_property_hframes)               | ``1``                 |
-| [`bool`](class_bool.md)           | [`region_enabled`](#class_sprite3d_property_region_enabled) | ``false``             |
-| [`Rect2`](class_rect2.md)         | [`region_rect`](#class_sprite3d_property_region_rect)       | ``Rect2(0, 0, 0, 0)`` |
-| [`Texture2D`](class_texture2d.md) | [`texture`](#class_sprite3d_property_texture)               |                       |
-| [`int`](class_int.md)             | [`vframes`](#class_sprite3d_property_vframes)               | ``1``                 |
+| [`int`](class_int.md)             | [`frame`](class_sprite3d.md#class_sprite3d_property_frame)                   | ``0``                 |
+| [`Vector2i`](class_vector2i.md)   | [`frame_coords`](class_sprite3d.md#class_sprite3d_property_frame_coords)     | ``Vector2i(0, 0)``    |
+| [`int`](class_int.md)             | [`hframes`](class_sprite3d.md#class_sprite3d_property_hframes)               | ``1``                 |
+| [`bool`](class_bool.md)           | [`region_enabled`](class_sprite3d.md#class_sprite3d_property_region_enabled) | ``false``             |
+| [`Rect2`](class_rect2.md)         | [`region_rect`](class_sprite3d.md#class_sprite3d_property_region_rect)       | ``Rect2(0, 0, 0, 0)`` |
+| [`Texture2D`](class_texture2d.md) | [`texture`](class_sprite3d.md#class_sprite3d_property_texture)               |                       |
+| [`int`](class_int.md)             | [`vframes`](class_sprite3d.md#class_sprite3d_property_vframes)               | ``1``                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -37,7 +37,7 @@ A node that displays a 2D texture in a 3D environment. The texture displayed can
 
 **frame_changed** ( ) <div id="class_sprite3d_signal_frame_changed"></div>
 
-Emitted when the [`frame`](#class_sprite3d_property_frame) changes.
+Emitted when the [`frame`](class_sprite3d.md#class_sprite3d_property_frame) changes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -47,7 +47,7 @@ Emitted when the [`frame`](#class_sprite3d_property_frame) changes.
 
 **texture_changed** ( ) <div id="class_sprite3d_signal_texture_changed"></div>
 
-Emitted when the [`texture`](#class_sprite3d_property_texture) changes.
+Emitted when the [`texture`](class_sprite3d.md#class_sprite3d_property_texture) changes.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -62,7 +62,7 @@ Emitted when the [`texture`](#class_sprite3d_property_texture) changes.
 - `void` **set_frame** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_frame** ( )
 
-Current frame to display from sprite sheet. [`hframes`](#class_sprite3d_property_hframes) or [`vframes`](#class_sprite3d_property_vframes) must be greater than 1. This property is automatically adjusted when [`hframes`](#class_sprite3d_property_hframes) or [`vframes`](#class_sprite3d_property_vframes) are changed to keep pointing to the same visual frame (same column and row). If that's impossible, this value is reset to `0`.
+Current frame to display from sprite sheet. [`hframes`](class_sprite3d.md#class_sprite3d_property_hframes) or [`vframes`](class_sprite3d.md#class_sprite3d_property_vframes) must be greater than 1. This property is automatically adjusted when [`hframes`](class_sprite3d.md#class_sprite3d_property_hframes) or [`vframes`](class_sprite3d.md#class_sprite3d_property_vframes) are changed to keep pointing to the same visual frame (same column and row). If that's impossible, this value is reset to `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -75,7 +75,7 @@ Current frame to display from sprite sheet. [`hframes`](#class_sprite3d_property
 - `void` **set_frame_coords** ( value: [`Vector2i`](class_vector2i.md) )
 - [`Vector2i`](class_vector2i.md) **get_frame_coords** ( )
 
-Coordinates of the frame to display from sprite sheet. This is as an alias for the [`frame`](#class_sprite3d_property_frame) property. [`hframes`](#class_sprite3d_property_hframes) or [`vframes`](#class_sprite3d_property_vframes) must be greater than 1.
+Coordinates of the frame to display from sprite sheet. This is as an alias for the [`frame`](class_sprite3d.md#class_sprite3d_property_frame) property. [`hframes`](class_sprite3d.md#class_sprite3d_property_hframes) or [`vframes`](class_sprite3d.md#class_sprite3d_property_vframes) must be greater than 1.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -88,7 +88,7 @@ Coordinates of the frame to display from sprite sheet. This is as an alias for t
 - `void` **set_hframes** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_hframes** ( )
 
-The number of columns in the sprite sheet. When this property is changed, [`frame`](#class_sprite3d_property_frame) is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, [`frame`](#class_sprite3d_property_frame) is reset to `0`.
+The number of columns in the sprite sheet. When this property is changed, [`frame`](class_sprite3d.md#class_sprite3d_property_frame) is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, [`frame`](class_sprite3d.md#class_sprite3d_property_frame) is reset to `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -101,7 +101,7 @@ The number of columns in the sprite sheet. When this property is changed, [`fram
 - `void` **set_region_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_region_enabled** ( )
 
-If `true`, the sprite will use [`region_rect`](#class_sprite3d_property_region_rect) and display only the specified part of its texture.
+If `true`, the sprite will use [`region_rect`](class_sprite3d.md#class_sprite3d_property_region_rect) and display only the specified part of its texture.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -114,7 +114,7 @@ If `true`, the sprite will use [`region_rect`](#class_sprite3d_property_region_r
 - `void` **set_region_rect** ( value: [`Rect2`](class_rect2.md) )
 - [`Rect2`](class_rect2.md) **get_region_rect** ( )
 
-The region of the atlas texture to display. [`region_enabled`](#class_sprite3d_property_region_enabled) must be `true`.
+The region of the atlas texture to display. [`region_enabled`](class_sprite3d.md#class_sprite3d_property_region_enabled) must be `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -127,7 +127,7 @@ The region of the atlas texture to display. [`region_enabled`](#class_sprite3d_p
 - `void` **set_texture** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( )
 
-[`Texture2D`](class_texture2d.md) object to draw. If [`GeometryInstance3D.material_override`](#class_geometryinstance3d_property_material_override) is used, this will be overridden. The size information is still used.
+[`Texture2D`](class_texture2d.md) object to draw. If [`GeometryInstance3D.material_override`](class_geometryinstance3d.md#class_geometryinstance3d_property_material_override) is used, this will be overridden. The size information is still used.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -140,7 +140,7 @@ The region of the atlas texture to display. [`region_enabled`](#class_sprite3d_p
 - `void` **set_vframes** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_vframes** ( )
 
-The number of rows in the sprite sheet. When this property is changed, [`frame`](#class_sprite3d_property_frame) is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, [`frame`](#class_sprite3d_property_frame) is reset to `0`.
+The number of rows in the sprite sheet. When this property is changed, [`frame`](class_sprite3d.md#class_sprite3d_property_frame) is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, [`frame`](class_sprite3d.md#class_sprite3d_property_frame) is reset to `0`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

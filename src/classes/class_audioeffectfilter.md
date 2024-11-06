@@ -15,16 +15,16 @@ Adds a filter to the audio bus.
 
 ## 描述
 
-Allows frequencies other than the [`cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz) to pass.
+Allows frequencies other than the [`cutoff_hz`](class_audioeffectfilter.md#class_audioeffectfilter_property_cutoff_hz) to pass.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                    | [`cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz) | ``2000.0`` |
-| [FilterDB](#enum_audioeffectfilter_filterdb) | [`db`](#class_audioeffectfilter_property_db)               | ``0``      |
-| [`float`](class_float.md)                    | [`gain`](#class_audioeffectfilter_property_gain)           | ``1.0``    |
-| [`float`](class_float.md)                    | [`resonance`](#class_audioeffectfilter_property_resonance) | ``0.5``    |
+| [`float`](class_float.md)                    | [`cutoff_hz`](class_audioeffectfilter.md#class_audioeffectfilter_property_cutoff_hz) | ``2000.0`` |
+| [FilterDB](#enum_audioeffectfilter_filterdb) | [`db`](class_audioeffectfilter.md#class_audioeffectfilter_property_db)               | ``0``      |
+| [`float`](class_float.md)                    | [`gain`](class_audioeffectfilter.md#class_audioeffectfilter_property_gain)           | ``1.0``    |
+| [`float`](class_float.md)                    | [`resonance`](class_audioeffectfilter.md#class_audioeffectfilter_property_resonance) | ``0.5``    |
 
 <!-- rst-class:: classref-section-separator -->
 

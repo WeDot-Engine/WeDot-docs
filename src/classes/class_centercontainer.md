@@ -19,7 +19,7 @@ A container that keeps child controls in its center.
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`use_top_left`](#class_centercontainer_property_use_top_left) | ``false`` |
+| [`bool`](class_bool.md) | [`use_top_left`](class_centercontainer.md#class_centercontainer_property_use_top_left) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

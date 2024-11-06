@@ -21,10 +21,10 @@ This texture gives access to the camera texture provided by a [`CameraFeed`](cla
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                     | [`camera_feed_id`](#class_cameratexture_property_camera_feed_id)     | ``0``                                                                                |
-| [`bool`](class_bool.md)                   | [`camera_is_active`](#class_cameratexture_property_camera_is_active) | ``false``                                                                            |
-| [`bool`](class_bool.md)                   | resource_local_to_scene                                              | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [FeedImage](#enum_cameraserver_feedimage) | [`which_feed`](#class_cameratexture_property_which_feed)             | ``0``                                                                                |
+| [`int`](class_int.md)                     | [`camera_feed_id`](class_cameratexture.md#class_cameratexture_property_camera_feed_id)     | ``0``                                                                                                 |
+| [`bool`](class_bool.md)                   | [`camera_is_active`](class_cameratexture.md#class_cameratexture_property_camera_is_active) | ``false``                                                                                             |
+| [`bool`](class_bool.md)                   | resource_local_to_scene                                                                    | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [FeedImage](#enum_cameraserver_feedimage) | [`which_feed`](class_cameratexture.md#class_cameratexture_property_which_feed)             | ``0``                                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 

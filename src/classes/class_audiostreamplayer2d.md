@@ -15,40 +15,40 @@ Plays positional sound in 2D space.
 
 Plays audio that is attenuated with distance to the listener.
 
-By default, audio is heard from the screen center. This can be changed by adding an [`AudioListener2D`](class_audiolistener2d.md) node to the scene and enabling it by calling [`AudioListener2D.make_current`](#class_audiolistener2d_method_make_current) on it.
+By default, audio is heard from the screen center. This can be changed by adding an [`AudioListener2D`](class_audiolistener2d.md) node to the scene and enabling it by calling [`AudioListener2D.make_current`](class_audiolistener2d.md#class_audiolistener2d_method_make_current) on it.
 
 See also [`AudioStreamPlayer`](class_audiostreamplayer.md) to play a sound non-positionally.
 
- **Note:** Hiding an **AudioStreamPlayer2D** node does not disable its audio output. To temporarily disable an **AudioStreamPlayer2D**'s audio output, set [`volume_db`](#class_audiostreamplayer2d_property_volume_db) to a very low value like `-100` (which isn't audible to human hearing).
+ **Note:** Hiding an **AudioStreamPlayer2D** node does not disable its audio output. To temporarily disable an **AudioStreamPlayer2D**'s audio output, set [`volume_db`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_volume_db) to a very low value like `-100` (which isn't audible to human hearing).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                          | [`area_mask`](#class_audiostreamplayer2d_property_area_mask)               | ``1``         |
-| [`float`](class_float.md)                      | [`attenuation`](#class_audiostreamplayer2d_property_attenuation)           | ``1.0``       |
-| [`bool`](class_bool.md)                        | [`autoplay`](#class_audiostreamplayer2d_property_autoplay)                 | ``false``     |
-| [`StringName`](class_stringname.md)            | [`bus`](#class_audiostreamplayer2d_property_bus)                           | ``&"Master"`` |
-| [`float`](class_float.md)                      | [`max_distance`](#class_audiostreamplayer2d_property_max_distance)         | ``2000.0``    |
-| [`int`](class_int.md)                          | [`max_polyphony`](#class_audiostreamplayer2d_property_max_polyphony)       | ``1``         |
-| [`float`](class_float.md)                      | [`panning_strength`](#class_audiostreamplayer2d_property_panning_strength) | ``1.0``       |
-| [`float`](class_float.md)                      | [`pitch_scale`](#class_audiostreamplayer2d_property_pitch_scale)           | ``1.0``       |
-| [PlaybackType](#enum_audioserver_playbacktype) | [`playback_type`](#class_audiostreamplayer2d_property_playback_type)       | ``0``         |
-| [`bool`](class_bool.md)                        | [`playing`](#class_audiostreamplayer2d_property_playing)                   | ``false``     |
-| [`AudioStream`](class_audiostream.md)          | [`stream`](#class_audiostreamplayer2d_property_stream)                     |               |
-| [`bool`](class_bool.md)                        | [`stream_paused`](#class_audiostreamplayer2d_property_stream_paused)       | ``false``     |
-| [`float`](class_float.md)                      | [`volume_db`](#class_audiostreamplayer2d_property_volume_db)               | ``0.0``       |
+| [`int`](class_int.md)                          | [`area_mask`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_area_mask)               | ``1``         |
+| [`float`](class_float.md)                      | [`attenuation`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_attenuation)           | ``1.0``       |
+| [`bool`](class_bool.md)                        | [`autoplay`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_autoplay)                 | ``false``     |
+| [`StringName`](class_stringname.md)            | [`bus`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_bus)                           | ``&"Master"`` |
+| [`float`](class_float.md)                      | [`max_distance`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_max_distance)         | ``2000.0``    |
+| [`int`](class_int.md)                          | [`max_polyphony`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_max_polyphony)       | ``1``         |
+| [`float`](class_float.md)                      | [`panning_strength`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_panning_strength) | ``1.0``       |
+| [`float`](class_float.md)                      | [`pitch_scale`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_pitch_scale)           | ``1.0``       |
+| [PlaybackType](#enum_audioserver_playbacktype) | [`playback_type`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_playback_type)       | ``0``         |
+| [`bool`](class_bool.md)                        | [`playing`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_playing)                   | ``false``     |
+| [`AudioStream`](class_audiostream.md)          | [`stream`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_stream)                     |               |
+| [`bool`](class_bool.md)                        | [`stream_paused`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_stream_paused)       | ``false``     |
+| [`float`](class_float.md)                      | [`volume_db`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_volume_db)               | ``0.0``       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                             | [`get_playback_position`](#class_audiostreamplayer2d_method_get_playback_position) ( )              |
-| [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](#class_audiostreamplayer2d_method_get_stream_playback) ( )                  |
-| [`bool`](class_bool.md)                               | [`has_stream_playback`](#class_audiostreamplayer2d_method_has_stream_playback) ( )                  |
-| `void`                                                | [`play`](#class_audiostreamplayer2d_method_play) ( from_position: [`float`](class_float.md) = 0.0 ) |
-| `void`                                                | [`seek`](#class_audiostreamplayer2d_method_seek) ( to_position: [`float`](class_float.md) )         |
-| `void`                                                | [`stop`](#class_audiostreamplayer2d_method_stop) ( )                                                |
+| [`float`](class_float.md)                             | [`get_playback_position`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_method_get_playback_position) ( )              |
+| [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_method_get_stream_playback) ( )                  |
+| [`bool`](class_bool.md)                               | [`has_stream_playback`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_method_has_stream_playback) ( )                  |
+| `void`                                                | [`play`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_method_play) ( from_position: [`float`](class_float.md) = 0.0 ) |
+| `void`                                                | [`seek`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_method_seek) ( to_position: [`float`](class_float.md) )         |
+| `void`                                                | [`stop`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_method_stop) ( )                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -155,7 +155,7 @@ The maximum number of sounds this node can play at the same time. Playing additi
 - `void` **set_panning_strength** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_panning_strength** ( )
 
-Scales the panning strength for this node by multiplying the base [`ProjectSettings.audio/general/2d_panning_strength`](#class_projectsettings_property_audio/general/2d_panning_strength) with this factor. Higher values will pan audio from left to right more dramatically than lower values.
+Scales the panning strength for this node by multiplying the base [`ProjectSettings.audio/general/2d_panning_strength`](class_projectsettings.md#class_projectsettings_property_audio/general/2d_panning_strength) with this factor. Higher values will pan audio from left to right more dramatically than lower values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -195,7 +195,7 @@ The playback type of the stream player. If set other than to the default value, 
 
 - [`bool`](class_bool.md) **is_playing** ( )
 
-If `true`, audio is playing or is queued to be played (see [`play`](#class_audiostreamplayer2d_method_play)).
+If `true`, audio is playing or is queued to be played (see [`play`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_method_play)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -221,7 +221,7 @@ The [`AudioStream`](class_audiostream.md) object to be played.
 - `void` **set_stream_paused** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_stream_paused** ( )
 
-If `true`, the playback is paused. You can resume it by setting [`stream_paused`](#class_audiostreamplayer2d_property_stream_paused) to `false`.
+If `true`, the playback is paused. You can resume it by setting [`stream_paused`](class_audiostreamplayer2d.md#class_audiostreamplayer2d_property_stream_paused) to `false`.
 
 <!-- rst-class:: classref-item-separator -->
 

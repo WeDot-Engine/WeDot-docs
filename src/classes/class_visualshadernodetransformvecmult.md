@@ -19,7 +19,7 @@ A multiplication operation on a transform (4×4 matrix) and a vector, with suppo
 
 |||
 |:-:|:--|
-| [Operator](#enum_visualshadernodetransformvecmult_operator) | [`operator`](#class_visualshadernodetransformvecmult_property_operator) | ``0`` |
+| [Operator](#enum_visualshadernodetransformvecmult_operator) | [`operator`](class_visualshadernodetransformvecmult.md#class_visualshadernodetransformvecmult_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -19,31 +19,31 @@ A texture-based nine-patch [`StyleBox`](class_stylebox.md), in a way similar to 
 
 |||
 |:-:|:--|
-| [AxisStretchMode](#enum_styleboxtexture_axisstretchmode) | [`axis_stretch_horizontal`](#class_styleboxtexture_property_axis_stretch_horizontal) | ``0``                 |
-| [AxisStretchMode](#enum_styleboxtexture_axisstretchmode) | [`axis_stretch_vertical`](#class_styleboxtexture_property_axis_stretch_vertical)     | ``0``                 |
-| [`bool`](class_bool.md)                                  | [`draw_center`](#class_styleboxtexture_property_draw_center)                         | ``true``              |
-| [`float`](class_float.md)                                | [`expand_margin_bottom`](#class_styleboxtexture_property_expand_margin_bottom)       | ``0.0``               |
-| [`float`](class_float.md)                                | [`expand_margin_left`](#class_styleboxtexture_property_expand_margin_left)           | ``0.0``               |
-| [`float`](class_float.md)                                | [`expand_margin_right`](#class_styleboxtexture_property_expand_margin_right)         | ``0.0``               |
-| [`float`](class_float.md)                                | [`expand_margin_top`](#class_styleboxtexture_property_expand_margin_top)             | ``0.0``               |
-| [`Color`](class_color.md)                                | [`modulate_color`](#class_styleboxtexture_property_modulate_color)                   | ``Color(1, 1, 1, 1)`` |
-| [`Rect2`](class_rect2.md)                                | [`region_rect`](#class_styleboxtexture_property_region_rect)                         | ``Rect2(0, 0, 0, 0)`` |
-| [`Texture2D`](class_texture2d.md)                        | [`texture`](#class_styleboxtexture_property_texture)                                 |                       |
-| [`float`](class_float.md)                                | [`texture_margin_bottom`](#class_styleboxtexture_property_texture_margin_bottom)     | ``0.0``               |
-| [`float`](class_float.md)                                | [`texture_margin_left`](#class_styleboxtexture_property_texture_margin_left)         | ``0.0``               |
-| [`float`](class_float.md)                                | [`texture_margin_right`](#class_styleboxtexture_property_texture_margin_right)       | ``0.0``               |
-| [`float`](class_float.md)                                | [`texture_margin_top`](#class_styleboxtexture_property_texture_margin_top)           | ``0.0``               |
+| [AxisStretchMode](#enum_styleboxtexture_axisstretchmode) | [`axis_stretch_horizontal`](class_styleboxtexture.md#class_styleboxtexture_property_axis_stretch_horizontal) | ``0``                 |
+| [AxisStretchMode](#enum_styleboxtexture_axisstretchmode) | [`axis_stretch_vertical`](class_styleboxtexture.md#class_styleboxtexture_property_axis_stretch_vertical)     | ``0``                 |
+| [`bool`](class_bool.md)                                  | [`draw_center`](class_styleboxtexture.md#class_styleboxtexture_property_draw_center)                         | ``true``              |
+| [`float`](class_float.md)                                | [`expand_margin_bottom`](class_styleboxtexture.md#class_styleboxtexture_property_expand_margin_bottom)       | ``0.0``               |
+| [`float`](class_float.md)                                | [`expand_margin_left`](class_styleboxtexture.md#class_styleboxtexture_property_expand_margin_left)           | ``0.0``               |
+| [`float`](class_float.md)                                | [`expand_margin_right`](class_styleboxtexture.md#class_styleboxtexture_property_expand_margin_right)         | ``0.0``               |
+| [`float`](class_float.md)                                | [`expand_margin_top`](class_styleboxtexture.md#class_styleboxtexture_property_expand_margin_top)             | ``0.0``               |
+| [`Color`](class_color.md)                                | [`modulate_color`](class_styleboxtexture.md#class_styleboxtexture_property_modulate_color)                   | ``Color(1, 1, 1, 1)`` |
+| [`Rect2`](class_rect2.md)                                | [`region_rect`](class_styleboxtexture.md#class_styleboxtexture_property_region_rect)                         | ``Rect2(0, 0, 0, 0)`` |
+| [`Texture2D`](class_texture2d.md)                        | [`texture`](class_styleboxtexture.md#class_styleboxtexture_property_texture)                                 |                       |
+| [`float`](class_float.md)                                | [`texture_margin_bottom`](class_styleboxtexture.md#class_styleboxtexture_property_texture_margin_bottom)     | ``0.0``               |
+| [`float`](class_float.md)                                | [`texture_margin_left`](class_styleboxtexture.md#class_styleboxtexture_property_texture_margin_left)         | ``0.0``               |
+| [`float`](class_float.md)                                | [`texture_margin_right`](class_styleboxtexture.md#class_styleboxtexture_property_texture_margin_right)       | ``0.0``               |
+| [`float`](class_float.md)                                | [`texture_margin_top`](class_styleboxtexture.md#class_styleboxtexture_property_texture_margin_top)           | ``0.0``               |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_expand_margin`](#class_styleboxtexture_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
-| [`float`](class_float.md) | [`get_texture_margin`](#class_styleboxtexture_method_get_texture_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                    |
-| `void`                    | [`set_expand_margin`](#class_styleboxtexture_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |
-| `void`                    | [`set_expand_margin_all`](#class_styleboxtexture_method_set_expand_margin_all) ( size: [`float`](class_float.md) )                                    |
-| `void`                    | [`set_texture_margin`](#class_styleboxtexture_method_set_texture_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) ) |
-| `void`                    | [`set_texture_margin_all`](#class_styleboxtexture_method_set_texture_margin_all) ( size: [`float`](class_float.md) )                                  |
+| [`float`](class_float.md) | [`get_expand_margin`](class_styleboxtexture.md#class_styleboxtexture_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
+| [`float`](class_float.md) | [`get_texture_margin`](class_styleboxtexture.md#class_styleboxtexture_method_get_texture_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                    |
+| `void`                    | [`set_expand_margin`](class_styleboxtexture.md#class_styleboxtexture_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |
+| `void`                    | [`set_expand_margin_all`](class_styleboxtexture.md#class_styleboxtexture_method_set_expand_margin_all) ( size: [`float`](class_float.md) )                                    |
+| `void`                    | [`set_texture_margin`](class_styleboxtexture.md#class_styleboxtexture_method_set_texture_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) ) |
+| `void`                    | [`set_texture_margin_all`](class_styleboxtexture.md#class_styleboxtexture_method_set_texture_margin_all) ( size: [`float`](class_float.md) )                                  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -71,7 +71,7 @@ Repeats the stylebox's texture to match the stylebox's size according to the nin
 
 [AxisStretchMode](#enum_styleboxtexture_axisstretchmode) **AXIS_STRETCH_MODE_TILE_FIT** = ``2``
 
-Repeats the stylebox's texture to match the stylebox's size according to the nine-patch system. Unlike [`AXIS_STRETCH_MODE_TILE`](#class_styleboxtexture_constant_axis_stretch_mode_tile), the texture may be slightly stretched to make the nine-patch texture tile seamlessly.
+Repeats the stylebox's texture to match the stylebox's size according to the nine-patch system. Unlike [`AXIS_STRETCH_MODE_TILE`](class_styleboxtexture.md#class_styleboxtexture_constant_axis_stretch_mode_tile), the texture may be slightly stretched to make the nine-patch texture tile seamlessly.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -224,7 +224,7 @@ Increases the bottom margin of the 3×3 texture box.
 
 A higher value means more of the source texture is considered to be part of the bottom border of the 3×3 box.
 
-This is also the value used as fallback for [`StyleBox.content_margin_bottom`](#class_stylebox_property_content_margin_bottom) if it is negative.
+This is also the value used as fallback for [`StyleBox.content_margin_bottom`](class_stylebox.md#class_stylebox_property_content_margin_bottom) if it is negative.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -241,7 +241,7 @@ Increases the left margin of the 3×3 texture box.
 
 A higher value means more of the source texture is considered to be part of the left border of the 3×3 box.
 
-This is also the value used as fallback for [`StyleBox.content_margin_left`](#class_stylebox_property_content_margin_left) if it is negative.
+This is also the value used as fallback for [`StyleBox.content_margin_left`](class_stylebox.md#class_stylebox_property_content_margin_left) if it is negative.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -258,7 +258,7 @@ Increases the right margin of the 3×3 texture box.
 
 A higher value means more of the source texture is considered to be part of the right border of the 3×3 box.
 
-This is also the value used as fallback for [`StyleBox.content_margin_right`](#class_stylebox_property_content_margin_right) if it is negative.
+This is also the value used as fallback for [`StyleBox.content_margin_right`](class_stylebox.md#class_stylebox_property_content_margin_right) if it is negative.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -275,7 +275,7 @@ Increases the top margin of the 3×3 texture box.
 
 A higher value means more of the source texture is considered to be part of the top border of the 3×3 box.
 
-This is also the value used as fallback for [`StyleBox.content_margin_top`](#class_stylebox_property_content_margin_top) if it is negative.
+This is also the value used as fallback for [`StyleBox.content_margin_top`](class_stylebox.md#class_stylebox_property_content_margin_top) if it is negative.
 
 <!-- rst-class:: classref-section-separator -->
 

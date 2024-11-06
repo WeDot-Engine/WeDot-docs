@@ -59,23 +59,23 @@ To set the coordinate of multiple variation axes:
 
 |||
 |:-:|:--|
-| [`Font`](class_font.md)               | [`base_font`](#class_fontvariation_property_base_font)                       |                                   |
-| [`float`](class_float.md)             | [`baseline_offset`](#class_fontvariation_property_baseline_offset)           | ``0.0``                           |
-| [`Dictionary`](class_dictionary.md)   | [`opentype_features`](#class_fontvariation_property_opentype_features)       | ``{}``                            |
-| [`int`](class_int.md)                 | [`spacing_bottom`](#class_fontvariation_property_spacing_bottom)             | ``0``                             |
-| [`int`](class_int.md)                 | [`spacing_glyph`](#class_fontvariation_property_spacing_glyph)               | ``0``                             |
-| [`int`](class_int.md)                 | [`spacing_space`](#class_fontvariation_property_spacing_space)               | ``0``                             |
-| [`int`](class_int.md)                 | [`spacing_top`](#class_fontvariation_property_spacing_top)                   | ``0``                             |
-| [`float`](class_float.md)             | [`variation_embolden`](#class_fontvariation_property_variation_embolden)     | ``0.0``                           |
-| [`int`](class_int.md)                 | [`variation_face_index`](#class_fontvariation_property_variation_face_index) | ``0``                             |
-| [`Dictionary`](class_dictionary.md)   | [`variation_opentype`](#class_fontvariation_property_variation_opentype)     | ``{}``                            |
-| [`Transform2D`](class_transform2d.md) | [`variation_transform`](#class_fontvariation_property_variation_transform)   | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
+| [`Font`](class_font.md)               | [`base_font`](class_fontvariation.md#class_fontvariation_property_base_font)                       |                                   |
+| [`float`](class_float.md)             | [`baseline_offset`](class_fontvariation.md#class_fontvariation_property_baseline_offset)           | ``0.0``                           |
+| [`Dictionary`](class_dictionary.md)   | [`opentype_features`](class_fontvariation.md#class_fontvariation_property_opentype_features)       | ``{}``                            |
+| [`int`](class_int.md)                 | [`spacing_bottom`](class_fontvariation.md#class_fontvariation_property_spacing_bottom)             | ``0``                             |
+| [`int`](class_int.md)                 | [`spacing_glyph`](class_fontvariation.md#class_fontvariation_property_spacing_glyph)               | ``0``                             |
+| [`int`](class_int.md)                 | [`spacing_space`](class_fontvariation.md#class_fontvariation_property_spacing_space)               | ``0``                             |
+| [`int`](class_int.md)                 | [`spacing_top`](class_fontvariation.md#class_fontvariation_property_spacing_top)                   | ``0``                             |
+| [`float`](class_float.md)             | [`variation_embolden`](class_fontvariation.md#class_fontvariation_property_variation_embolden)     | ``0.0``                           |
+| [`int`](class_int.md)                 | [`variation_face_index`](class_fontvariation.md#class_fontvariation_property_variation_face_index) | ``0``                             |
+| [`Dictionary`](class_dictionary.md)   | [`variation_opentype`](class_fontvariation.md#class_fontvariation_property_variation_opentype)     | ``{}``                            |
+| [`Transform2D`](class_transform2d.md) | [`variation_transform`](class_fontvariation.md#class_fontvariation_property_variation_transform)   | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`set_spacing`](#class_fontvariation_method_set_spacing) ( spacing: [SpacingType](#enum_textserver_spacingtype), value: [`int`](class_int.md) ) |
+| `void` | [`set_spacing`](class_fontvariation.md#class_fontvariation_method_set_spacing) ( spacing: [SpacingType](#enum_textserver_spacingtype), value: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -211,9 +211,9 @@ Active face index in the TrueType / OpenType collection file.
 
 Font OpenType variation coordinates. More info: [*OpenType variation tags*](https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg).
 
- **Note:** This [`Dictionary`](class_dictionary.md) uses OpenType tags as keys. Variation axes can be identified both by tags ([`int`](class_int.md), e.g. `0x77678674`) and names ([`String`](class_string.md), e.g. `wght`). Some axes might be accessible by multiple names. For example, `wght` refers to the same axis as `weight`. Tags on the other hand are unique. To convert between names and tags, use [`TextServer.name_to_tag`](#class_textserver_method_name_to_tag) and [`TextServer.tag_to_name`](#class_textserver_method_tag_to_name).
+ **Note:** This [`Dictionary`](class_dictionary.md) uses OpenType tags as keys. Variation axes can be identified both by tags ([`int`](class_int.md), e.g. `0x77678674`) and names ([`String`](class_string.md), e.g. `wght`). Some axes might be accessible by multiple names. For example, `wght` refers to the same axis as `weight`. Tags on the other hand are unique. To convert between names and tags, use [`TextServer.name_to_tag`](class_textserver.md#class_textserver_method_name_to_tag) and [`TextServer.tag_to_name`](class_textserver.md#class_textserver_method_tag_to_name).
 
- **Note:** To get available variation axes of a font, use [`Font.get_supported_variation_list`](#class_font_method_get_supported_variation_list).
+ **Note:** To get available variation axes of a font, use [`Font.get_supported_variation_list`](class_font.md#class_font_method_get_supported_variation_list).
 
 <!-- rst-class:: classref-item-separator -->
 

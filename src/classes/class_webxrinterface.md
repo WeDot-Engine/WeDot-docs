@@ -106,9 +106,9 @@ Here's the minimum code required to start an immersive VR session:
 
 There are a couple ways to handle "controller" input:
 
-- Using [`XRController3D`](class_xrcontroller3d.md) nodes and their [`XRController3D.button_pressed`](#class_xrcontroller3d_signal_button_pressed) and [`XRController3D.button_released`](#class_xrcontroller3d_signal_button_released) signals. This is how controllers are typically handled in XR apps in Godot, however, this will only work with advanced VR controllers like the Oculus Touch or Index controllers, for example.
+- Using [`XRController3D`](class_xrcontroller3d.md) nodes and their [`XRController3D.button_pressed`](class_xrcontroller3d.md#class_xrcontroller3d_signal_button_pressed) and [`XRController3D.button_released`](class_xrcontroller3d.md#class_xrcontroller3d_signal_button_released) signals. This is how controllers are typically handled in XR apps in Godot, however, this will only work with advanced VR controllers like the Oculus Touch or Index controllers, for example.
 
-- Using the [`select`](#class_webxrinterface_signal_select), [`squeeze`](#class_webxrinterface_signal_squeeze) and related signals. This method will work for both advanced VR controllers, and non-traditional input sources like a tap on the screen, a spoken voice command or a button press on the device itself.
+- Using the [`select`](class_webxrinterface.md#class_webxrinterface_signal_select), [`squeeze`](class_webxrinterface.md#class_webxrinterface_signal_squeeze) and related signals. This method will work for both advanced VR controllers, and non-traditional input sources like a tap on the screen, a spoken voice command or a button press on the device itself.
 
 You can use both methods to allow your game or app to support a wider or narrower set of devices and input methods, or to allow more advanced interactions with more advanced devices.
 
@@ -118,25 +118,25 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`enabled_features`](#class_webxrinterface_property_enabled_features)                               |
-| [`String`](class_string.md) | [`optional_features`](#class_webxrinterface_property_optional_features)                             |
-| [`String`](class_string.md) | [`reference_space_type`](#class_webxrinterface_property_reference_space_type)                       |
-| [`String`](class_string.md) | [`requested_reference_space_types`](#class_webxrinterface_property_requested_reference_space_types) |
-| [`String`](class_string.md) | [`required_features`](#class_webxrinterface_property_required_features)                             |
-| [`String`](class_string.md) | [`session_mode`](#class_webxrinterface_property_session_mode)                                       |
-| [`String`](class_string.md) | [`visibility_state`](#class_webxrinterface_property_visibility_state)                               |
+| [`String`](class_string.md) | [`enabled_features`](class_webxrinterface.md#class_webxrinterface_property_enabled_features)                               |
+| [`String`](class_string.md) | [`optional_features`](class_webxrinterface.md#class_webxrinterface_property_optional_features)                             |
+| [`String`](class_string.md) | [`reference_space_type`](class_webxrinterface.md#class_webxrinterface_property_reference_space_type)                       |
+| [`String`](class_string.md) | [`requested_reference_space_types`](class_webxrinterface.md#class_webxrinterface_property_requested_reference_space_types) |
+| [`String`](class_string.md) | [`required_features`](class_webxrinterface.md#class_webxrinterface_property_required_features)                             |
+| [`String`](class_string.md) | [`session_mode`](class_webxrinterface.md#class_webxrinterface_property_session_mode)                                       |
+| [`String`](class_string.md) | [`visibility_state`](class_webxrinterface.md#class_webxrinterface_property_visibility_state)                               |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md)                             | [`get_available_display_refresh_rates`](#class_webxrinterface_method_get_available_display_refresh_rates) ( ) const[^const]                                  |
-| [`float`](class_float.md)                             | [`get_display_refresh_rate`](#class_webxrinterface_method_get_display_refresh_rate) ( ) const[^const]                                                        |
-| [TargetRayMode](#enum_webxrinterface_targetraymode)   | [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) ( input_source_id: [`int`](class_int.md) ) const[^const] |
-| [`XRControllerTracker`](class_xrcontrollertracker.md) | [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_tracker) ( input_source_id: [`int`](class_int.md) ) const[^const]                 |
-| [`bool`](class_bool.md)                               | [`is_input_source_active`](#class_webxrinterface_method_is_input_source_active) ( input_source_id: [`int`](class_int.md) ) const[^const]                     |
-| `void`                                                | [`is_session_supported`](#class_webxrinterface_method_is_session_supported) ( session_mode: [`String`](class_string.md) )                                    |
-| `void`                                                | [`set_display_refresh_rate`](#class_webxrinterface_method_set_display_refresh_rate) ( refresh_rate: [`float`](class_float.md) )                              |
+| [`Array`](class_array.md)                             | [`get_available_display_refresh_rates`](class_webxrinterface.md#class_webxrinterface_method_get_available_display_refresh_rates) ( ) const[^const]                                  |
+| [`float`](class_float.md)                             | [`get_display_refresh_rate`](class_webxrinterface.md#class_webxrinterface_method_get_display_refresh_rate) ( ) const[^const]                                                        |
+| [TargetRayMode](#enum_webxrinterface_targetraymode)   | [`get_input_source_target_ray_mode`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_target_ray_mode) ( input_source_id: [`int`](class_int.md) ) const[^const] |
+| [`XRControllerTracker`](class_xrcontrollertracker.md) | [`get_input_source_tracker`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_tracker) ( input_source_id: [`int`](class_int.md) ) const[^const]                 |
+| [`bool`](class_bool.md)                               | [`is_input_source_active`](class_webxrinterface.md#class_webxrinterface_method_is_input_source_active) ( input_source_id: [`int`](class_int.md) ) const[^const]                     |
+| `void`                                                | [`is_session_supported`](class_webxrinterface.md#class_webxrinterface_method_is_session_supported) ( session_mode: [`String`](class_string.md) )                                    |
+| `void`                                                | [`set_display_refresh_rate`](class_webxrinterface.md#class_webxrinterface_method_set_display_refresh_rate) ( refresh_rate: [`float`](class_float.md) )                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -160,7 +160,7 @@ Emitted after the display's refresh rate has changed.
 
 Emitted to indicate that the reference space has been reset or reconfigured.
 
-When (or whether) this is emitted depends on the user's browser or device, but may include when the user has changed the dimensions of their play space (which you may be able to access via [`XRInterface.get_play_area`](#class_xrinterface_method_get_play_area)) or pressed/held a button to recenter their position.
+When (or whether) this is emitted depends on the user's browser or device, but may include when the user has changed the dimensions of their play space (which you may be able to access via [`XRInterface.get_play_area`](class_xrinterface.md#class_xrinterface_method_get_play_area)) or pressed/held a button to recenter their position.
 
 See [*WebXR's XRReferenceSpace reset event*](https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/reset_event) for more information.
 
@@ -174,7 +174,7 @@ See [*WebXR's XRReferenceSpace reset event*](https://developer.mozilla.org/en-US
 
 Emitted after one of the input sources has finished its "primary action".
 
-Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
+Use [`get_input_source_tracker`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -186,7 +186,7 @@ Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_t
 
 Emitted when one of the input sources has finished its "primary action".
 
-Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
+Use [`get_input_source_tracker`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -198,7 +198,7 @@ Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_t
 
 Emitted when one of the input source has started its "primary action".
 
-Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
+Use [`get_input_source_tracker`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -220,7 +220,7 @@ At this point, you should do `get_viewport().use_xr = false` to instruct Godot t
 
 **session_failed** ( message: [`String`](class_string.md) ) <div id="class_webxrinterface_signal_session_failed"></div>
 
-Emitted by [`XRInterface.initialize`](#class_xrinterface_method_initialize) if the session fails to start.
+Emitted by [`XRInterface.initialize`](class_xrinterface.md#class_xrinterface_method_initialize) if the session fails to start.
 
  `message` may optionally contain an error message from WebXR, or an empty string if no message is available.
 
@@ -232,7 +232,7 @@ Emitted by [`XRInterface.initialize`](#class_xrinterface_method_initialize) if t
 
 **session_started** ( ) <div id="class_webxrinterface_signal_session_started"></div>
 
-Emitted by [`XRInterface.initialize`](#class_xrinterface_method_initialize) if the session is successfully started.
+Emitted by [`XRInterface.initialize`](class_xrinterface.md#class_xrinterface_method_initialize) if the session is successfully started.
 
 At this point, it's safe to do `get_viewport().use_xr = true` to instruct Godot to start rendering to the XR device.
 
@@ -244,7 +244,7 @@ At this point, it's safe to do `get_viewport().use_xr = true` to instruct Godot 
 
 **session_supported** ( session_mode: [`String`](class_string.md), supported: [`bool`](class_bool.md) ) <div id="class_webxrinterface_signal_session_supported"></div>
 
-Emitted by [`is_session_supported`](#class_webxrinterface_method_is_session_supported) to indicate if the given `session_mode` is supported or not.
+Emitted by [`is_session_supported`](class_webxrinterface.md#class_webxrinterface_method_is_session_supported) to indicate if the given `session_mode` is supported or not.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -256,7 +256,7 @@ Emitted by [`is_session_supported`](#class_webxrinterface_method_is_session_supp
 
 Emitted after one of the input sources has finished its "primary squeeze action".
 
-Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
+Use [`get_input_source_tracker`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -268,7 +268,7 @@ Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_t
 
 Emitted when one of the input sources has finished its "primary squeeze action".
 
-Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
+Use [`get_input_source_tracker`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -280,7 +280,7 @@ Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_t
 
 Emitted when one of the input sources has started its "primary squeeze action".
 
-Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
+Use [`get_input_source_tracker`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_tracker) and [`get_input_source_target_ray_mode`](class_webxrinterface.md#class_webxrinterface_method_get_input_source_target_ray_mode) to get more information about the input source.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -290,7 +290,7 @@ Use [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_t
 
 **visibility_state_changed** ( ) <div id="class_webxrinterface_signal_visibility_state_changed"></div>
 
-Emitted when [`visibility_state`](#class_webxrinterface_property_visibility_state) has changed.
+Emitted when [`visibility_state`](class_webxrinterface.md#class_webxrinterface_property_visibility_state) has changed.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -338,9 +338,9 @@ Target ray from touch screen, mouse or other tactile input device.
 
 - [`String`](class_string.md) **get_enabled_features** ( )
 
-A comma-separated list of features that were successfully enabled by [`XRInterface.initialize`](#class_xrinterface_method_initialize) when setting up the WebXR session.
+A comma-separated list of features that were successfully enabled by [`XRInterface.initialize`](class_xrinterface.md#class_xrinterface_method_initialize) when setting up the WebXR session.
 
-This may include features requested by setting [`required_features`](#class_webxrinterface_property_required_features) and [`optional_features`](#class_webxrinterface_property_optional_features), and will only be available after [`session_started`](#class_webxrinterface_signal_session_started) has been emitted.
+This may include features requested by setting [`required_features`](class_webxrinterface.md#class_webxrinterface_property_required_features) and [`optional_features`](class_webxrinterface.md#class_webxrinterface_property_optional_features), and will only be available after [`session_started`](class_webxrinterface.md#class_webxrinterface_signal_session_started) has been emitted.
 
  **Note:** This may not be support by all web browsers, in which case it will be an empty string.
 
@@ -355,7 +355,7 @@ This may include features requested by setting [`required_features`](#class_webx
 - `void` **set_optional_features** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_optional_features** ( )
 
-A comma-seperated list of optional features used by [`XRInterface.initialize`](#class_xrinterface_method_initialize) when setting up the WebXR session.
+A comma-seperated list of optional features used by [`XRInterface.initialize`](class_xrinterface.md#class_xrinterface_method_initialize) when setting up the WebXR session.
 
 If a user's browser or device doesn't support one of the given features, initialization will continue, but you won't be able to use the requested feature.
 
@@ -373,9 +373,9 @@ Possible values come from [*WebXR's XRReferenceSpaceType*](https://developer.moz
 
 - [`String`](class_string.md) **get_reference_space_type** ( )
 
-The reference space type (from the list of requested types set in the [`requested_reference_space_types`](#class_webxrinterface_property_requested_reference_space_types) property), that was ultimately used by [`XRInterface.initialize`](#class_xrinterface_method_initialize) when setting up the WebXR session.
+The reference space type (from the list of requested types set in the [`requested_reference_space_types`](class_webxrinterface.md#class_webxrinterface_property_requested_reference_space_types) property), that was ultimately used by [`XRInterface.initialize`](class_xrinterface.md#class_xrinterface_method_initialize) when setting up the WebXR session.
 
-Possible values come from [*WebXR's XRReferenceSpaceType*](https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType). If you want to use a particular reference space type, it must be listed in either [`required_features`](#class_webxrinterface_property_required_features) or [`optional_features`](#class_webxrinterface_property_optional_features).
+Possible values come from [*WebXR's XRReferenceSpaceType*](https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType). If you want to use a particular reference space type, it must be listed in either [`required_features`](class_webxrinterface.md#class_webxrinterface_property_required_features) or [`optional_features`](class_webxrinterface.md#class_webxrinterface_property_optional_features).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -388,13 +388,13 @@ Possible values come from [*WebXR's XRReferenceSpaceType*](https://developer.moz
 - `void` **set_requested_reference_space_types** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_requested_reference_space_types** ( )
 
-A comma-seperated list of reference space types used by [`XRInterface.initialize`](#class_xrinterface_method_initialize) when setting up the WebXR session.
+A comma-seperated list of reference space types used by [`XRInterface.initialize`](class_xrinterface.md#class_xrinterface_method_initialize) when setting up the WebXR session.
 
-The reference space types are requested in order, and the first one supported by the users device or browser will be used. The [`reference_space_type`](#class_webxrinterface_property_reference_space_type) property contains the reference space type that was ultimately selected.
+The reference space types are requested in order, and the first one supported by the users device or browser will be used. The [`reference_space_type`](class_webxrinterface.md#class_webxrinterface_property_reference_space_type) property contains the reference space type that was ultimately selected.
 
 This doesn't have any effect on the interface when already initialized.
 
-Possible values come from [*WebXR's XRReferenceSpaceType*](https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType). If you want to use a particular reference space type, it must be listed in either [`required_features`](#class_webxrinterface_property_required_features) or [`optional_features`](#class_webxrinterface_property_optional_features).
+Possible values come from [*WebXR's XRReferenceSpaceType*](https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType). If you want to use a particular reference space type, it must be listed in either [`required_features`](class_webxrinterface.md#class_webxrinterface_property_required_features) or [`optional_features`](class_webxrinterface.md#class_webxrinterface_property_optional_features).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -407,9 +407,9 @@ Possible values come from [*WebXR's XRReferenceSpaceType*](https://developer.moz
 - `void` **set_required_features** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_required_features** ( )
 
-A comma-seperated list of required features used by [`XRInterface.initialize`](#class_xrinterface_method_initialize) when setting up the WebXR session.
+A comma-seperated list of required features used by [`XRInterface.initialize`](class_xrinterface.md#class_xrinterface_method_initialize) when setting up the WebXR session.
 
-If a user's browser or device doesn't support one of the given features, initialization will fail and [`session_failed`](#class_webxrinterface_signal_session_failed) will be emitted.
+If a user's browser or device doesn't support one of the given features, initialization will fail and [`session_failed`](class_webxrinterface.md#class_webxrinterface_signal_session_failed) will be emitted.
 
 This doesn't have any effect on the interface when already initialized.
 
@@ -426,7 +426,7 @@ Possible values come from [*WebXR's XRReferenceSpaceType*](https://developer.moz
 - `void` **set_session_mode** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_session_mode** ( )
 
-The session mode used by [`XRInterface.initialize`](#class_xrinterface_method_initialize) when setting up the WebXR session.
+The session mode used by [`XRInterface.initialize`](class_xrinterface.md#class_xrinterface_method_initialize) when setting up the WebXR session.
 
 This doesn't have any effect on the interface when already initialized.
 
@@ -466,7 +466,7 @@ Returns display refresh rates supported by the current HMD. Only returned if thi
 
 [`float`](class_float.md) **get_display_refresh_rate** ( ) const[^const]<div id="class_webxrinterface_method_get_display_refresh_rate"></div>
 
-Returns the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It may not report an accurate value until after using [`set_display_refresh_rate`](#class_webxrinterface_method_set_display_refresh_rate).
+Returns the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It may not report an accurate value until after using [`set_display_refresh_rate`](class_webxrinterface.md#class_webxrinterface_method_set_display_refresh_rate).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -494,17 +494,17 @@ In the context of WebXR, an input source can be an advanced VR controller like t
 
 Use this method to get information about the input source that triggered one of these signals:
 
-- [`selectstart`](#class_webxrinterface_signal_selectstart) 
+- [`selectstart`](class_webxrinterface.md#class_webxrinterface_signal_selectstart) 
 
-- [`select`](#class_webxrinterface_signal_select) 
+- [`select`](class_webxrinterface.md#class_webxrinterface_signal_select) 
 
-- [`selectend`](#class_webxrinterface_signal_selectend) 
+- [`selectend`](class_webxrinterface.md#class_webxrinterface_signal_selectend) 
 
-- [`squeezestart`](#class_webxrinterface_signal_squeezestart) 
+- [`squeezestart`](class_webxrinterface.md#class_webxrinterface_signal_squeezestart) 
 
-- [`squeeze`](#class_webxrinterface_signal_squeeze) 
+- [`squeeze`](class_webxrinterface.md#class_webxrinterface_signal_squeeze) 
 
-- [`squeezestart`](#class_webxrinterface_signal_squeezestart)
+- [`squeezestart`](class_webxrinterface.md#class_webxrinterface_signal_squeezestart)
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -528,7 +528,7 @@ Checks if the given `session_mode` is supported by the user's browser.
 
 Possible values come from [*WebXR's XRSessionMode*](https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode), including: `"immersive-vr"`, `"immersive-ar"`, and `"inline"`.
 
-This method returns nothing, instead it emits the [`session_supported`](#class_webxrinterface_signal_session_supported) signal with the result.
+This method returns nothing, instead it emits the [`session_supported`](class_webxrinterface.md#class_webxrinterface_signal_session_supported) signal with the result.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -538,7 +538,7 @@ This method returns nothing, instead it emits the [`session_supported`](#class_w
 
 `void` **set_display_refresh_rate** ( refresh_rate: [`float`](class_float.md) )<div id="class_webxrinterface_method_set_display_refresh_rate"></div>
 
-Sets the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It won't take effect right away until after [`display_refresh_rate_changed`](#class_webxrinterface_signal_display_refresh_rate_changed) is emitted.
+Sets the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It won't take effect right away until after [`display_refresh_rate_changed`](class_webxrinterface.md#class_webxrinterface_signal_display_refresh_rate_changed) is emitted.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

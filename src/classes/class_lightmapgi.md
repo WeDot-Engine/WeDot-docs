@@ -13,9 +13,9 @@ Computes and stores baked lightmaps for fast global illumination.
 
 ## 描述
 
-The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps are used to provide high-quality indirect lighting with very little light leaking. **LightmapGI** can also provide rough reflections using spherical harmonics if [`directional`](#class_lightmapgi_property_directional) is enabled. Dynamic objects can receive indirect lighting thanks to *light probes*, which can be automatically placed by setting [`generate_probes_subdiv`](#class_lightmapgi_property_generate_probes_subdiv) to a value other than [`GENERATE_PROBES_DISABLED`](#class_lightmapgi_constant_generate_probes_disabled). Additional lightmap probes can also be added by creating [`LightmapProbe`](class_lightmapprobe.md) nodes. The downside is that lightmaps are fully static and cannot be baked in an exported project. Baking a **LightmapGI** node is also slower compared to [`VoxelGI`](class_voxelgi.md).
+The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps are used to provide high-quality indirect lighting with very little light leaking. **LightmapGI** can also provide rough reflections using spherical harmonics if [`directional`](class_lightmapgi.md#class_lightmapgi_property_directional) is enabled. Dynamic objects can receive indirect lighting thanks to *light probes*, which can be automatically placed by setting [`generate_probes_subdiv`](class_lightmapgi.md#class_lightmapgi_property_generate_probes_subdiv) to a value other than [`GENERATE_PROBES_DISABLED`](class_lightmapgi.md#class_lightmapgi_constant_generate_probes_disabled). Additional lightmap probes can also be added by creating [`LightmapProbe`](class_lightmapprobe.md) nodes. The downside is that lightmaps are fully static and cannot be baked in an exported project. Baking a **LightmapGI** node is also slower compared to [`VoxelGI`](class_voxelgi.md).
 
- **Procedural generation:** Lightmap baking functionality is only available in the editor. This means **LightmapGI** is not suited to procedurally generated or user-built levels. For procedurally generated or user-built levels, use [`VoxelGI`](class_voxelgi.md) or SDFGI instead (see [`Environment.sdfgi_enabled`](#class_environment_property_sdfgi_enabled)).
+ **Procedural generation:** Lightmap baking functionality is only available in the editor. This means **LightmapGI** is not suited to procedurally generated or user-built levels. For procedurally generated or user-built levels, use [`VoxelGI`](class_voxelgi.md) or SDFGI instead (see [`Environment.sdfgi_enabled`](class_environment.md#class_environment_property_sdfgi_enabled)).
 
  **Performance:** **LightmapGI** provides the best possible run-time performance for global illumination. It is suitable for low-end hardware including integrated graphics and mobile devices.
 
@@ -29,25 +29,25 @@ The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                           | [`bias`](#class_lightmapgi_property_bias)                                           | ``0.0005`` |
-| [`float`](class_float.md)                           | [`bounce_indirect_energy`](#class_lightmapgi_property_bounce_indirect_energy)       | ``1.0``    |
-| [`int`](class_int.md)                               | [`bounces`](#class_lightmapgi_property_bounces)                                     | ``3``      |
-| [`CameraAttributes`](class_cameraattributes.md)     | [`camera_attributes`](#class_lightmapgi_property_camera_attributes)                 |            |
-| [`int`](class_int.md)                               | [`denoiser_range`](#class_lightmapgi_property_denoiser_range)                       | ``10``     |
-| [`float`](class_float.md)                           | [`denoiser_strength`](#class_lightmapgi_property_denoiser_strength)                 | ``0.1``    |
-| [`bool`](class_bool.md)                             | [`directional`](#class_lightmapgi_property_directional)                             | ``false``  |
-| [`Color`](class_color.md)                           | [`environment_custom_color`](#class_lightmapgi_property_environment_custom_color)   |            |
-| [`float`](class_float.md)                           | [`environment_custom_energy`](#class_lightmapgi_property_environment_custom_energy) |            |
-| [`Sky`](class_sky.md)                               | [`environment_custom_sky`](#class_lightmapgi_property_environment_custom_sky)       |            |
-| [EnvironmentMode](#enum_lightmapgi_environmentmode) | [`environment_mode`](#class_lightmapgi_property_environment_mode)                   | ``1``      |
-| [GenerateProbes](#enum_lightmapgi_generateprobes)   | [`generate_probes_subdiv`](#class_lightmapgi_property_generate_probes_subdiv)       | ``2``      |
-| [`bool`](class_bool.md)                             | [`interior`](#class_lightmapgi_property_interior)                                   | ``false``  |
-| [`LightmapGIData`](class_lightmapgidata.md)         | [`light_data`](#class_lightmapgi_property_light_data)                               |            |
-| [`int`](class_int.md)                               | [`max_texture_size`](#class_lightmapgi_property_max_texture_size)                   | ``16384``  |
-| [BakeQuality](#enum_lightmapgi_bakequality)         | [`quality`](#class_lightmapgi_property_quality)                                     | ``1``      |
-| [`float`](class_float.md)                           | [`texel_scale`](#class_lightmapgi_property_texel_scale)                             | ``1.0``    |
-| [`bool`](class_bool.md)                             | [`use_denoiser`](#class_lightmapgi_property_use_denoiser)                           | ``true``   |
-| [`bool`](class_bool.md)                             | [`use_texture_for_bounces`](#class_lightmapgi_property_use_texture_for_bounces)     | ``true``   |
+| [`float`](class_float.md)                           | [`bias`](class_lightmapgi.md#class_lightmapgi_property_bias)                                           | ``0.0005`` |
+| [`float`](class_float.md)                           | [`bounce_indirect_energy`](class_lightmapgi.md#class_lightmapgi_property_bounce_indirect_energy)       | ``1.0``    |
+| [`int`](class_int.md)                               | [`bounces`](class_lightmapgi.md#class_lightmapgi_property_bounces)                                     | ``3``      |
+| [`CameraAttributes`](class_cameraattributes.md)     | [`camera_attributes`](class_lightmapgi.md#class_lightmapgi_property_camera_attributes)                 |            |
+| [`int`](class_int.md)                               | [`denoiser_range`](class_lightmapgi.md#class_lightmapgi_property_denoiser_range)                       | ``10``     |
+| [`float`](class_float.md)                           | [`denoiser_strength`](class_lightmapgi.md#class_lightmapgi_property_denoiser_strength)                 | ``0.1``    |
+| [`bool`](class_bool.md)                             | [`directional`](class_lightmapgi.md#class_lightmapgi_property_directional)                             | ``false``  |
+| [`Color`](class_color.md)                           | [`environment_custom_color`](class_lightmapgi.md#class_lightmapgi_property_environment_custom_color)   |            |
+| [`float`](class_float.md)                           | [`environment_custom_energy`](class_lightmapgi.md#class_lightmapgi_property_environment_custom_energy) |            |
+| [`Sky`](class_sky.md)                               | [`environment_custom_sky`](class_lightmapgi.md#class_lightmapgi_property_environment_custom_sky)       |            |
+| [EnvironmentMode](#enum_lightmapgi_environmentmode) | [`environment_mode`](class_lightmapgi.md#class_lightmapgi_property_environment_mode)                   | ``1``      |
+| [GenerateProbes](#enum_lightmapgi_generateprobes)   | [`generate_probes_subdiv`](class_lightmapgi.md#class_lightmapgi_property_generate_probes_subdiv)       | ``2``      |
+| [`bool`](class_bool.md)                             | [`interior`](class_lightmapgi.md#class_lightmapgi_property_interior)                                   | ``false``  |
+| [`LightmapGIData`](class_lightmapgidata.md)         | [`light_data`](class_lightmapgi.md#class_lightmapgi_property_light_data)                               |            |
+| [`int`](class_int.md)                               | [`max_texture_size`](class_lightmapgi.md#class_lightmapgi_property_max_texture_size)                   | ``16384``  |
+| [BakeQuality](#enum_lightmapgi_bakequality)         | [`quality`](class_lightmapgi.md#class_lightmapgi_property_quality)                                     | ``1``      |
+| [`float`](class_float.md)                           | [`texel_scale`](class_lightmapgi.md#class_lightmapgi_property_texel_scale)                             | ``1.0``    |
+| [`bool`](class_bool.md)                             | [`use_denoiser`](class_lightmapgi.md#class_lightmapgi_property_use_denoiser)                           | ``true``   |
+| [`bool`](class_bool.md)                             | [`use_texture_for_bounces`](class_lightmapgi.md#class_lightmapgi_property_use_texture_for_bounces)     | ``true``   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -63,25 +63,25 @@ enum **BakeQuality**: <div id="enum_lightmapgi_bakequality"></div>
 
 [BakeQuality](#enum_lightmapgi_bakequality) **BAKE_QUALITY_LOW** = ``0``
 
-Low bake quality (fastest bake times). The quality of this preset can be adjusted by changing [`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_ray_count`](#class_projectsettings_property_rendering/lightmapping/bake_quality/low_quality_ray_count) and [`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_probe_ray_count`](#class_projectsettings_property_rendering/lightmapping/bake_quality/low_quality_probe_ray_count).
+Low bake quality (fastest bake times). The quality of this preset can be adjusted by changing [`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/low_quality_ray_count) and [`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_probe_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/low_quality_probe_ray_count).
 
 <div id="_class_lightmapgi_constant_bake_quality_medium"></div>
 
 [BakeQuality](#enum_lightmapgi_bakequality) **BAKE_QUALITY_MEDIUM** = ``1``
 
-Medium bake quality (fast bake times). The quality of this preset can be adjusted by changing [`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_ray_count`](#class_projectsettings_property_rendering/lightmapping/bake_quality/medium_quality_ray_count) and [`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_probe_ray_count`](#class_projectsettings_property_rendering/lightmapping/bake_quality/medium_quality_probe_ray_count).
+Medium bake quality (fast bake times). The quality of this preset can be adjusted by changing [`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/medium_quality_ray_count) and [`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_probe_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/medium_quality_probe_ray_count).
 
 <div id="_class_lightmapgi_constant_bake_quality_high"></div>
 
 [BakeQuality](#enum_lightmapgi_bakequality) **BAKE_QUALITY_HIGH** = ``2``
 
-High bake quality (slow bake times). The quality of this preset can be adjusted by changing [`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_ray_count`](#class_projectsettings_property_rendering/lightmapping/bake_quality/high_quality_ray_count) and [`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_probe_ray_count`](#class_projectsettings_property_rendering/lightmapping/bake_quality/high_quality_probe_ray_count).
+High bake quality (slow bake times). The quality of this preset can be adjusted by changing [`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/high_quality_ray_count) and [`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_probe_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/high_quality_probe_ray_count).
 
 <div id="_class_lightmapgi_constant_bake_quality_ultra"></div>
 
 [BakeQuality](#enum_lightmapgi_bakequality) **BAKE_QUALITY_ULTRA** = ``3``
 
-Highest bake quality (slowest bake times). The quality of this preset can be adjusted by changing [`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_ray_count`](#class_projectsettings_property_rendering/lightmapping/bake_quality/ultra_quality_ray_count) and [`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count`](#class_projectsettings_property_rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count).
+Highest bake quality (slowest bake times). The quality of this preset can be adjusted by changing [`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/ultra_quality_ray_count) and [`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -163,7 +163,7 @@ Lightmap baking failed as the [`LightmapGIData`](class_lightmapgidata.md) save p
 
 [BakeError](#enum_lightmapgi_bakeerror) **BAKE_ERROR_NO_MESHES** = ``5``
 
-Lightmap baking failed as there are no meshes whose [`GeometryInstance3D.gi_mode`](#class_geometryinstance3d_property_gi_mode) is [`GeometryInstance3D.GI_MODE_STATIC`](#class_geometryinstance3d_constant_gi_mode_static) and with valid UV2 mapping in the current scene. You may need to select 3D scenes in the Import dock and change their global illumination mode accordingly.
+Lightmap baking failed as there are no meshes whose [`GeometryInstance3D.gi_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode) is [`GeometryInstance3D.GI_MODE_STATIC`](class_geometryinstance3d.md#class_geometryinstance3d_constant_gi_mode_static) and with valid UV2 mapping in the current scene. You may need to select 3D scenes in the Import dock and change their global illumination mode accordingly.
 
 <div id="_class_lightmapgi_constant_bake_error_meshes_invalid"></div>
 
@@ -221,19 +221,19 @@ Ignore environment lighting when baking lightmaps.
 
 Use the scene's environment lighting when baking lightmaps.
 
- **Note:** If baking lightmaps in a scene with no [`WorldEnvironment`](class_worldenvironment.md) node, this will act like [`ENVIRONMENT_MODE_DISABLED`](#class_lightmapgi_constant_environment_mode_disabled). The editor's preview sky and sun is *not* taken into account by **LightmapGI** when baking lightmaps.
+ **Note:** If baking lightmaps in a scene with no [`WorldEnvironment`](class_worldenvironment.md) node, this will act like [`ENVIRONMENT_MODE_DISABLED`](class_lightmapgi.md#class_lightmapgi_constant_environment_mode_disabled). The editor's preview sky and sun is *not* taken into account by **LightmapGI** when baking lightmaps.
 
 <div id="_class_lightmapgi_constant_environment_mode_custom_sky"></div>
 
 [EnvironmentMode](#enum_lightmapgi_environmentmode) **ENVIRONMENT_MODE_CUSTOM_SKY** = ``2``
 
-Use [`environment_custom_sky`](#class_lightmapgi_property_environment_custom_sky) as a source of environment lighting when baking lightmaps.
+Use [`environment_custom_sky`](class_lightmapgi.md#class_lightmapgi_property_environment_custom_sky) as a source of environment lighting when baking lightmaps.
 
 <div id="_class_lightmapgi_constant_environment_mode_custom_color"></div>
 
 [EnvironmentMode](#enum_lightmapgi_environmentmode) **ENVIRONMENT_MODE_CUSTOM_COLOR** = ``3``
 
-Use [`environment_custom_color`](#class_lightmapgi_property_environment_custom_color) multiplied by [`environment_custom_energy`](#class_lightmapgi_property_environment_custom_energy) as a constant source of environment lighting when baking lightmaps.
+Use [`environment_custom_color`](class_lightmapgi.md#class_lightmapgi_property_environment_custom_color) multiplied by [`environment_custom_energy`](class_lightmapgi.md#class_lightmapgi_property_environment_custom_energy) as a constant source of environment lighting when baking lightmaps.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -248,7 +248,7 @@ Use [`environment_custom_color`](#class_lightmapgi_property_environment_custom_c
 - `void` **set_bias** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_bias** ( )
 
-The bias to use when computing shadows. Increasing [`bias`](#class_lightmapgi_property_bias) can fix shadow acne on the resulting baked lightmap, but can introduce peter-panning (shadows not connecting to their casters). Real-time [`Light3D`](class_light3d.md) shadows are not affected by this [`bias`](#class_lightmapgi_property_bias) property.
+The bias to use when computing shadows. Increasing [`bias`](class_lightmapgi.md#class_lightmapgi_property_bias) can fix shadow acne on the resulting baked lightmap, but can introduce peter-panning (shadows not connecting to their casters). Real-time [`Light3D`](class_light3d.md) shadows are not affected by this [`bias`](class_lightmapgi.md#class_lightmapgi_property_bias) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -261,9 +261,9 @@ The bias to use when computing shadows. Increasing [`bias`](#class_lightmapgi_pr
 - `void` **set_bounce_indirect_energy** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_bounce_indirect_energy** ( )
 
-The energy multiplier for each bounce. Higher values will make indirect lighting brighter. A value of `1.0` represents physically accurate behavior, but higher values can be used to make indirect lighting propagate more visibly when using a low number of bounces. This can be used to speed up bake times by lowering the number of [`bounces`](#class_lightmapgi_property_bounces) then increasing [`bounce_indirect_energy`](#class_lightmapgi_property_bounce_indirect_energy).
+The energy multiplier for each bounce. Higher values will make indirect lighting brighter. A value of `1.0` represents physically accurate behavior, but higher values can be used to make indirect lighting propagate more visibly when using a low number of bounces. This can be used to speed up bake times by lowering the number of [`bounces`](class_lightmapgi.md#class_lightmapgi_property_bounces) then increasing [`bounce_indirect_energy`](class_lightmapgi.md#class_lightmapgi_property_bounce_indirect_energy).
 
- **Note:** [`bounce_indirect_energy`](#class_lightmapgi_property_bounce_indirect_energy) only has an effect if [`bounces`](#class_lightmapgi_property_bounces) is set to a value greater than or equal to `1`.
+ **Note:** [`bounce_indirect_energy`](class_lightmapgi.md#class_lightmapgi_property_bounce_indirect_energy) only has an effect if [`bounces`](class_lightmapgi.md#class_lightmapgi_property_bounces) is set to a value greater than or equal to `1`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -302,7 +302,7 @@ The [`CameraAttributes`](class_cameraattributes.md) resource that specifies expo
 - `void` **set_denoiser_range** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_denoiser_range** ( )
 
-The distance in pixels from which the denoiser samples. Lower values preserve more details, but may give blotchy results if the lightmap quality is not high enough. Only effective if [`use_denoiser`](#class_lightmapgi_property_use_denoiser) is `true` and [`ProjectSettings.rendering/lightmapping/denoising/denoiser`](#class_projectsettings_property_rendering/lightmapping/denoising/denoiser) is set to JNLM.
+The distance in pixels from which the denoiser samples. Lower values preserve more details, but may give blotchy results if the lightmap quality is not high enough. Only effective if [`use_denoiser`](class_lightmapgi.md#class_lightmapgi_property_use_denoiser) is `true` and [`ProjectSettings.rendering/lightmapping/denoising/denoiser`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/denoising/denoiser) is set to JNLM.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -315,7 +315,7 @@ The distance in pixels from which the denoiser samples. Lower values preserve mo
 - `void` **set_denoiser_strength** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_denoiser_strength** ( )
 
-The strength of denoising step applied to the generated lightmaps. Only effective if [`use_denoiser`](#class_lightmapgi_property_use_denoiser) is `true` and [`ProjectSettings.rendering/lightmapping/denoising/denoiser`](#class_projectsettings_property_rendering/lightmapping/denoising/denoiser) is set to JNLM.
+The strength of denoising step applied to the generated lightmaps. Only effective if [`use_denoiser`](class_lightmapgi.md#class_lightmapgi_property_use_denoiser) is `true` and [`ProjectSettings.rendering/lightmapping/denoising/denoiser`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/denoising/denoiser) is set to JNLM.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -328,9 +328,9 @@ The strength of denoising step applied to the generated lightmaps. Only effectiv
 - `void` **set_directional** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_directional** ( )
 
-If `true`, bakes lightmaps to contain directional information as spherical harmonics. This results in more realistic lighting appearance, especially with normal mapped materials and for lights that have their direct light baked ([`Light3D.light_bake_mode`](#class_light3d_property_light_bake_mode) set to [`Light3D.BAKE_STATIC`](#class_light3d_constant_bake_static) and with [`Light3D.editor_only`](#class_light3d_property_editor_only) set to `false`). The directional information is also used to provide rough reflections for static and dynamic objects. This has a small run-time performance cost as the shader has to perform more work to interpret the direction information from the lightmap. Directional lightmaps also take longer to bake and result in larger file sizes.
+If `true`, bakes lightmaps to contain directional information as spherical harmonics. This results in more realistic lighting appearance, especially with normal mapped materials and for lights that have their direct light baked ([`Light3D.light_bake_mode`](class_light3d.md#class_light3d_property_light_bake_mode) set to [`Light3D.BAKE_STATIC`](class_light3d.md#class_light3d_constant_bake_static) and with [`Light3D.editor_only`](class_light3d.md#class_light3d_property_editor_only) set to `false`). The directional information is also used to provide rough reflections for static and dynamic objects. This has a small run-time performance cost as the shader has to perform more work to interpret the direction information from the lightmap. Directional lightmaps also take longer to bake and result in larger file sizes.
 
- **Note:** The property's name has no relationship with [`DirectionalLight3D`](class_directionallight3d.md). [`directional`](#class_lightmapgi_property_directional) works with all light types.
+ **Note:** The property's name has no relationship with [`DirectionalLight3D`](class_directionallight3d.md). [`directional`](class_lightmapgi.md#class_lightmapgi_property_directional) works with all light types.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -343,7 +343,7 @@ If `true`, bakes lightmaps to contain directional information as spherical harmo
 - `void` **set_environment_custom_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_environment_custom_color** ( )
 
-The color to use for environment lighting. Only effective if [`environment_mode`](#class_lightmapgi_property_environment_mode) is [`ENVIRONMENT_MODE_CUSTOM_COLOR`](#class_lightmapgi_constant_environment_mode_custom_color).
+The color to use for environment lighting. Only effective if [`environment_mode`](class_lightmapgi.md#class_lightmapgi_property_environment_mode) is [`ENVIRONMENT_MODE_CUSTOM_COLOR`](class_lightmapgi.md#class_lightmapgi_constant_environment_mode_custom_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -356,7 +356,7 @@ The color to use for environment lighting. Only effective if [`environment_mode`
 - `void` **set_environment_custom_energy** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_environment_custom_energy** ( )
 
-The color multiplier to use for environment lighting. Only effective if [`environment_mode`](#class_lightmapgi_property_environment_mode) is [`ENVIRONMENT_MODE_CUSTOM_COLOR`](#class_lightmapgi_constant_environment_mode_custom_color).
+The color multiplier to use for environment lighting. Only effective if [`environment_mode`](class_lightmapgi.md#class_lightmapgi_property_environment_mode) is [`ENVIRONMENT_MODE_CUSTOM_COLOR`](class_lightmapgi.md#class_lightmapgi_constant_environment_mode_custom_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -369,7 +369,7 @@ The color multiplier to use for environment lighting. Only effective if [`enviro
 - `void` **set_environment_custom_sky** ( value: [`Sky`](class_sky.md) )
 - [`Sky`](class_sky.md) **get_environment_custom_sky** ( )
 
-The sky to use as a source of environment lighting. Only effective if [`environment_mode`](#class_lightmapgi_property_environment_mode) is [`ENVIRONMENT_MODE_CUSTOM_SKY`](#class_lightmapgi_constant_environment_mode_custom_sky).
+The sky to use as a source of environment lighting. Only effective if [`environment_mode`](class_lightmapgi.md#class_lightmapgi_property_environment_mode) is [`ENVIRONMENT_MODE_CUSTOM_SKY`](class_lightmapgi.md#class_lightmapgi_constant_environment_mode_custom_sky).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -399,7 +399,7 @@ The level of subdivision to use when automatically generating [`LightmapProbe`](
 
  **Note:** Automatically generated [`LightmapProbe`](class_lightmapprobe.md) s are not visible as nodes in the Scene tree dock, and cannot be modified this way after they are generated.
 
- **Note:** Regardless of [`generate_probes_subdiv`](#class_lightmapgi_property_generate_probes_subdiv), direct lighting on dynamic objects is always applied using [`Light3D`](class_light3d.md) nodes in real-time.
+ **Note:** Regardless of [`generate_probes_subdiv`](class_lightmapgi.md#class_lightmapgi_property_generate_probes_subdiv), direct lighting on dynamic objects is always applied using [`Light3D`](class_light3d.md) nodes in real-time.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -438,7 +438,7 @@ The [`LightmapGIData`](class_lightmapgidata.md) associated to this **LightmapGI*
 - `void` **set_max_texture_size** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_max_texture_size** ( )
 
-The maximum texture size for the generated texture atlas. Higher values will result in fewer slices being generated, but may not work on all hardware as a result of hardware limitations on texture sizes. Leave [`max_texture_size`](#class_lightmapgi_property_max_texture_size) at its default value of `16384` if unsure.
+The maximum texture size for the generated texture atlas. Higher values will result in fewer slices being generated, but may not work on all hardware as a result of hardware limitations on texture sizes. Leave [`max_texture_size`](class_lightmapgi.md#class_lightmapgi_property_max_texture_size) at its default value of `16384` if unsure.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -453,7 +453,7 @@ The maximum texture size for the generated texture atlas. Higher values will res
 
 The quality preset to use when baking lightmaps. This affects bake times, but output file sizes remain mostly identical across quality levels.
 
-To further speed up bake times, decrease [`bounces`](#class_lightmapgi_property_bounces), disable [`use_denoiser`](#class_lightmapgi_property_use_denoiser) and increase the lightmap texel size on 3D scenes in the Import doc.
+To further speed up bake times, decrease [`bounces`](class_lightmapgi.md#class_lightmapgi_property_bounces), disable [`use_denoiser`](class_lightmapgi.md#class_lightmapgi_property_use_denoiser) and increase the lightmap texel size on 3D scenes in the Import doc.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -492,9 +492,9 @@ If `true`, uses a GPU-based denoising algorithm on the generated lightmap. This 
 - `void` **set_use_texture_for_bounces** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_texture_for_bounces** ( )
 
-If `true`, a texture with the lighting information will be generated to speed up the generation of indirect lighting at the cost of some accuracy. The geometry might exhibit extra light leak artifacts when using low resolution lightmaps or UVs that stretch the lightmap significantly across surfaces. Leave [`use_texture_for_bounces`](#class_lightmapgi_property_use_texture_for_bounces) at its default value of `true` if unsure.
+If `true`, a texture with the lighting information will be generated to speed up the generation of indirect lighting at the cost of some accuracy. The geometry might exhibit extra light leak artifacts when using low resolution lightmaps or UVs that stretch the lightmap significantly across surfaces. Leave [`use_texture_for_bounces`](class_lightmapgi.md#class_lightmapgi_property_use_texture_for_bounces) at its default value of `true` if unsure.
 
- **Note:** [`use_texture_for_bounces`](#class_lightmapgi_property_use_texture_for_bounces) only has an effect if [`bounces`](#class_lightmapgi_property_bounces) is set to a value greater than or equal to `1`.
+ **Note:** [`use_texture_for_bounces`](class_lightmapgi.md#class_lightmapgi_property_use_texture_for_bounces) only has an effect if [`bounces`](class_lightmapgi.md#class_lightmapgi_property_bounces) is set to a value greater than or equal to `1`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

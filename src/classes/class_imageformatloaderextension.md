@@ -15,16 +15,16 @@ Base class for creating [`ImageFormatLoader`](class_imageformatloader.md) extens
 
 The engine supports multiple image formats out of the box (PNG, SVG, JPEG, WebP to name a few), but you can choose to implement support for additional image formats by extending this class.
 
-Be sure to respect the documented return types and values. You should create an instance of it, and call [`add_format_loader`](#class_imageformatloaderextension_method_add_format_loader) to register that loader during the initialization phase.
+Be sure to respect the documented return types and values. You should create an instance of it, and call [`add_format_loader`](class_imageformatloaderextension.md#class_imageformatloaderextension_method_add_format_loader) to register that loader during the initialization phase.
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](#class_imageformatloaderextension_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                                    |
-| [Error](#enum_@globalscope_error)                 | [`_load_image`](#class_imageformatloaderextension_private_method__load_image) ( image: [`Image`](class_image.md), fileaccess: [`FileAccess`](class_fileaccess.md), flags: [LoaderFlags](#enum_imageformatloader_loaderflags), scale: [`float`](class_float.md) ) virtual[^virtual] |
-| `void`                                            | [`add_format_loader`](#class_imageformatloaderextension_method_add_format_loader) ( )                                                                                                                                                                                              |
-| `void`                                            | [`remove_format_loader`](#class_imageformatloaderextension_method_remove_format_loader) ( )                                                                                                                                                                                        |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](class_imageformatloaderextension.md#class_imageformatloaderextension_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                                    |
+| [Error](#enum_@globalscope_error)                 | [`_load_image`](class_imageformatloaderextension.md#class_imageformatloaderextension_private_method__load_image) ( image: [`Image`](class_image.md), fileaccess: [`FileAccess`](class_fileaccess.md), flags: [LoaderFlags](#enum_imageformatloader_loaderflags), scale: [`float`](class_float.md) ) virtual[^virtual] |
+| `void`                                            | [`add_format_loader`](class_imageformatloaderextension.md#class_imageformatloaderextension_method_add_format_loader) ( )                                                                                                                                                                                              |
+| `void`                                            | [`remove_format_loader`](class_imageformatloaderextension.md#class_imageformatloaderextension_method_remove_format_loader) ( )                                                                                                                                                                                        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ Loads the content of `fileaccess` into the provided `image`.
 
 `void` **add_format_loader** ( )<div id="class_imageformatloaderextension_method_add_format_loader"></div>
 
-Add this format loader to the engine, allowing it to recognize the file extensions returned by [`_get_recognized_extensions`](#class_imageformatloaderextension_private_method__get_recognized_extensions).
+Add this format loader to the engine, allowing it to recognize the file extensions returned by [`_get_recognized_extensions`](class_imageformatloaderextension.md#class_imageformatloaderextension_private_method__get_recognized_extensions).
 
 <!-- rst-class:: classref-item-separator -->
 

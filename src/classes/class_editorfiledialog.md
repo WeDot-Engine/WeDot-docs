@@ -19,38 +19,38 @@ A modified version of [`FileDialog`](class_filedialog.md) used by the editor.
 
 |||
 |:-:|:--|
-| [Access](#enum_editorfiledialog_access)           | [`access`](#class_editorfiledialog_property_access)                                       | ``0``                                                                                  |
-| [`String`](class_string.md)                       | [`current_dir`](#class_editorfiledialog_property_current_dir)                             |                                                                                        |
-| [`String`](class_string.md)                       | [`current_file`](#class_editorfiledialog_property_current_file)                           |                                                                                        |
-| [`String`](class_string.md)                       | [`current_path`](#class_editorfiledialog_property_current_path)                           |                                                                                        |
-| [`bool`](class_bool.md)                           | dialog_hide_on_ok                                                                         | ``false`` (overrides [`AcceptDialog`](#class_acceptdialog_property_dialog_hide_on_ok)) |
-| [`bool`](class_bool.md)                           | [`disable_overwrite_warning`](#class_editorfiledialog_property_disable_overwrite_warning) | ``false``                                                                              |
-| [DisplayMode](#enum_editorfiledialog_displaymode) | [`display_mode`](#class_editorfiledialog_property_display_mode)                           | ``0``                                                                                  |
-| [FileMode](#enum_editorfiledialog_filemode)       | [`file_mode`](#class_editorfiledialog_property_file_mode)                                 | ``4``                                                                                  |
-| [`PackedStringArray`](class_packedstringarray.md) | [`filters`](#class_editorfiledialog_property_filters)                                     | ``PackedStringArray()``                                                                |
-| [`int`](class_int.md)                             | [`option_count`](#class_editorfiledialog_property_option_count)                           | ``0``                                                                                  |
-| [`bool`](class_bool.md)                           | [`show_hidden_files`](#class_editorfiledialog_property_show_hidden_files)                 | ``false``                                                                              |
-| [`String`](class_string.md)                       | title                                                                                     | ``"Save a File"`` (overrides [`Window`](#class_window_property_title))                 |
+| [Access](#enum_editorfiledialog_access)           | [`access`](class_editorfiledialog.md#class_editorfiledialog_property_access)                                       | ``0``                                                                                                       |
+| [`String`](class_string.md)                       | [`current_dir`](class_editorfiledialog.md#class_editorfiledialog_property_current_dir)                             |                                                                                                             |
+| [`String`](class_string.md)                       | [`current_file`](class_editorfiledialog.md#class_editorfiledialog_property_current_file)                           |                                                                                                             |
+| [`String`](class_string.md)                       | [`current_path`](class_editorfiledialog.md#class_editorfiledialog_property_current_path)                           |                                                                                                             |
+| [`bool`](class_bool.md)                           | dialog_hide_on_ok                                                                                                  | ``false`` (overrides [`AcceptDialog`](class_acceptdialog.md#class_acceptdialog_property_dialog_hide_on_ok)) |
+| [`bool`](class_bool.md)                           | [`disable_overwrite_warning`](class_editorfiledialog.md#class_editorfiledialog_property_disable_overwrite_warning) | ``false``                                                                                                   |
+| [DisplayMode](#enum_editorfiledialog_displaymode) | [`display_mode`](class_editorfiledialog.md#class_editorfiledialog_property_display_mode)                           | ``0``                                                                                                       |
+| [FileMode](#enum_editorfiledialog_filemode)       | [`file_mode`](class_editorfiledialog.md#class_editorfiledialog_property_file_mode)                                 | ``4``                                                                                                       |
+| [`PackedStringArray`](class_packedstringarray.md) | [`filters`](class_editorfiledialog.md#class_editorfiledialog_property_filters)                                     | ``PackedStringArray()``                                                                                     |
+| [`int`](class_int.md)                             | [`option_count`](class_editorfiledialog.md#class_editorfiledialog_property_option_count)                           | ``0``                                                                                                       |
+| [`bool`](class_bool.md)                           | [`show_hidden_files`](class_editorfiledialog.md#class_editorfiledialog_property_show_hidden_files)                 | ``false``                                                                                                   |
+| [`String`](class_string.md)                       | title                                                                                                              | ``"Save a File"`` (overrides [`Window`](class_window.md#class_window_property_title))                       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                            | [`add_filter`](#class_editorfiledialog_method_add_filter) ( filter: [`String`](class_string.md), description: [`String`](class_string.md) = "" )                                                       |
-| `void`                                            | [`add_option`](#class_editorfiledialog_method_add_option) ( name: [`String`](class_string.md), values: [`PackedStringArray`](class_packedstringarray.md), default_value_index: [`int`](class_int.md) ) |
-| `void`                                            | [`add_side_menu`](#class_editorfiledialog_method_add_side_menu) ( menu: [`Control`](class_control.md), title: [`String`](class_string.md) = "" )                                                       |
-| `void`                                            | [`clear_filters`](#class_editorfiledialog_method_clear_filters) ( )                                                                                                                                    |
-| [`LineEdit`](class_lineedit.md)                   | [`get_line_edit`](#class_editorfiledialog_method_get_line_edit) ( )                                                                                                                                    |
-| [`int`](class_int.md)                             | [`get_option_default`](#class_editorfiledialog_method_get_option_default) ( option: [`int`](class_int.md) ) const[^const]                                                                              |
-| [`String`](class_string.md)                       | [`get_option_name`](#class_editorfiledialog_method_get_option_name) ( option: [`int`](class_int.md) ) const[^const]                                                                                    |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_option_values`](#class_editorfiledialog_method_get_option_values) ( option: [`int`](class_int.md) ) const[^const]                                                                                |
-| [`Dictionary`](class_dictionary.md)               | [`get_selected_options`](#class_editorfiledialog_method_get_selected_options) ( ) const[^const]                                                                                                        |
-| [`VBoxContainer`](class_vboxcontainer.md)         | [`get_vbox`](#class_editorfiledialog_method_get_vbox) ( )                                                                                                                                              |
-| `void`                                            | [`invalidate`](#class_editorfiledialog_method_invalidate) ( )                                                                                                                                          |
-| `void`                                            | [`popup_file_dialog`](#class_editorfiledialog_method_popup_file_dialog) ( )                                                                                                                            |
-| `void`                                            | [`set_option_default`](#class_editorfiledialog_method_set_option_default) ( option: [`int`](class_int.md), default_value_index: [`int`](class_int.md) )                                                |
-| `void`                                            | [`set_option_name`](#class_editorfiledialog_method_set_option_name) ( option: [`int`](class_int.md), name: [`String`](class_string.md) )                                                               |
-| `void`                                            | [`set_option_values`](#class_editorfiledialog_method_set_option_values) ( option: [`int`](class_int.md), values: [`PackedStringArray`](class_packedstringarray.md) )                                   |
+| `void`                                            | [`add_filter`](class_editorfiledialog.md#class_editorfiledialog_method_add_filter) ( filter: [`String`](class_string.md), description: [`String`](class_string.md) = "" )                                                       |
+| `void`                                            | [`add_option`](class_editorfiledialog.md#class_editorfiledialog_method_add_option) ( name: [`String`](class_string.md), values: [`PackedStringArray`](class_packedstringarray.md), default_value_index: [`int`](class_int.md) ) |
+| `void`                                            | [`add_side_menu`](class_editorfiledialog.md#class_editorfiledialog_method_add_side_menu) ( menu: [`Control`](class_control.md), title: [`String`](class_string.md) = "" )                                                       |
+| `void`                                            | [`clear_filters`](class_editorfiledialog.md#class_editorfiledialog_method_clear_filters) ( )                                                                                                                                    |
+| [`LineEdit`](class_lineedit.md)                   | [`get_line_edit`](class_editorfiledialog.md#class_editorfiledialog_method_get_line_edit) ( )                                                                                                                                    |
+| [`int`](class_int.md)                             | [`get_option_default`](class_editorfiledialog.md#class_editorfiledialog_method_get_option_default) ( option: [`int`](class_int.md) ) const[^const]                                                                              |
+| [`String`](class_string.md)                       | [`get_option_name`](class_editorfiledialog.md#class_editorfiledialog_method_get_option_name) ( option: [`int`](class_int.md) ) const[^const]                                                                                    |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_option_values`](class_editorfiledialog.md#class_editorfiledialog_method_get_option_values) ( option: [`int`](class_int.md) ) const[^const]                                                                                |
+| [`Dictionary`](class_dictionary.md)               | [`get_selected_options`](class_editorfiledialog.md#class_editorfiledialog_method_get_selected_options) ( ) const[^const]                                                                                                        |
+| [`VBoxContainer`](class_vboxcontainer.md)         | [`get_vbox`](class_editorfiledialog.md#class_editorfiledialog_method_get_vbox) ( )                                                                                                                                              |
+| `void`                                            | [`invalidate`](class_editorfiledialog.md#class_editorfiledialog_method_invalidate) ( )                                                                                                                                          |
+| `void`                                            | [`popup_file_dialog`](class_editorfiledialog.md#class_editorfiledialog_method_popup_file_dialog) ( )                                                                                                                            |
+| `void`                                            | [`set_option_default`](class_editorfiledialog.md#class_editorfiledialog_method_set_option_default) ( option: [`int`](class_int.md), default_value_index: [`int`](class_int.md) )                                                |
+| `void`                                            | [`set_option_name`](class_editorfiledialog.md#class_editorfiledialog_method_set_option_name) ( option: [`int`](class_int.md), name: [`String`](class_string.md) )                                                               |
+| `void`                                            | [`set_option_values`](class_editorfiledialog.md#class_editorfiledialog_method_set_option_values) ( option: [`int`](class_int.md), values: [`PackedStringArray`](class_packedstringarray.md) )                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -302,7 +302,7 @@ The number of additional [`OptionButton`](class_optionbutton.md) s and [`CheckBo
 - `void` **set_show_hidden_files** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_showing_hidden_files** ( )
 
-If `true`, hidden files and directories will be visible in the **EditorFileDialog**. This property is synchronized with [`EditorSettings.filesystem/file_dialog/show_hidden_files`](#class_editorsettings_property_filesystem/file_dialog/show_hidden_files).
+If `true`, hidden files and directories will be visible in the **EditorFileDialog**. This property is synchronized with [`EditorSettings.filesystem/file_dialog/show_hidden_files`](class_editorsettings.md#class_editorsettings_property_filesystem/file_dialog/show_hidden_files).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -362,7 +362,7 @@ Removes all filters except for "All Files (\*)".
 
 Returns the LineEdit for the selected file.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -414,7 +414,7 @@ Returns a [`Dictionary`](class_dictionary.md) with the selected values of the ad
 
 Returns the [`VBoxContainer`](class_vboxcontainer.md) used to display the file system.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 

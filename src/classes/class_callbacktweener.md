@@ -13,17 +13,17 @@ Calls the specified method after optional delay.
 
 ## 描述
 
-**CallbackTweener** is used to call a method in a tweening sequence. See [`Tween.tween_callback`](#class_tween_method_tween_callback) for more usage information.
+**CallbackTweener** is used to call a method in a tweening sequence. See [`Tween.tween_callback`](class_tween.md#class_tween_method_tween_callback) for more usage information.
 
 The tweener will finish automatically if the callback's target object is freed.
 
- **Note:** [`Tween.tween_callback`](#class_tween_method_tween_callback) is the only correct way to create **CallbackTweener**. Any **CallbackTweener** created manually will not function correctly.
+ **Note:** [`Tween.tween_callback`](class_tween.md#class_tween_method_tween_callback) is the only correct way to create **CallbackTweener**. Any **CallbackTweener** created manually will not function correctly.
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`CallbackTweener`](class_callbacktweener.md) | [`set_delay`](#class_callbacktweener_method_set_delay) ( delay: [`float`](class_float.md) ) |
+| [`CallbackTweener`](class_callbacktweener.md) | [`set_delay`](class_callbacktweener.md#class_callbacktweener_method_set_delay) ( delay: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

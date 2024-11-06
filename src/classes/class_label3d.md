@@ -19,48 +19,48 @@ A node for displaying plain text in 3D space. By adjusting various properties of
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                             | [`alpha_antialiasing_edge`](#class_label3d_property_alpha_antialiasing_edge)                             | ``0.0``                                                                                  |
-| [AlphaAntiAliasing](#enum_basematerial3d_alphaantialiasing)           | [`alpha_antialiasing_mode`](#class_label3d_property_alpha_antialiasing_mode)                             | ``0``                                                                                    |
-| [AlphaCutMode](#enum_label3d_alphacutmode)                            | [`alpha_cut`](#class_label3d_property_alpha_cut)                                                         | ``0``                                                                                    |
-| [`float`](class_float.md)                                             | [`alpha_hash_scale`](#class_label3d_property_alpha_hash_scale)                                           | ``1.0``                                                                                  |
-| [`float`](class_float.md)                                             | [`alpha_scissor_threshold`](#class_label3d_property_alpha_scissor_threshold)                             | ``0.5``                                                                                  |
-| [AutowrapMode](#enum_textserver_autowrapmode)                         | [`autowrap_mode`](#class_label3d_property_autowrap_mode)                                                 | ``0``                                                                                    |
-| [BillboardMode](#enum_basematerial3d_billboardmode)                   | [`billboard`](#class_label3d_property_billboard)                                                         | ``0``                                                                                    |
-| [ShadowCastingSetting](#enum_geometryinstance3d_shadowcastingsetting) | cast_shadow                                                                                              | ``0`` (overrides [`GeometryInstance3D`](#class_geometryinstance3d_property_cast_shadow)) |
-| [`bool`](class_bool.md)                                               | [`double_sided`](#class_label3d_property_double_sided)                                                   | ``true``                                                                                 |
-| [`bool`](class_bool.md)                                               | [`fixed_size`](#class_label3d_property_fixed_size)                                                       | ``false``                                                                                |
-| [`Font`](class_font.md)                                               | [`font`](#class_label3d_property_font)                                                                   |                                                                                          |
-| [`int`](class_int.md)                                                 | [`font_size`](#class_label3d_property_font_size)                                                         | ``32``                                                                                   |
-| [GIMode](#enum_geometryinstance3d_gimode)                             | gi_mode                                                                                                  | ``0`` (overrides [`GeometryInstance3D`](#class_geometryinstance3d_property_gi_mode))     |
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment)         | [`horizontal_alignment`](#class_label3d_property_horizontal_alignment)                                   | ``1``                                                                                    |
-| [JustificationFlag](#enum_textserver_justificationflag)               | [`justification_flags`](#class_label3d_property_justification_flags)                                     | ``163``                                                                                  |
-| [`String`](class_string.md)                                           | [`language`](#class_label3d_property_language)                                                           | ``""``                                                                                   |
-| [`float`](class_float.md)                                             | [`line_spacing`](#class_label3d_property_line_spacing)                                                   | ``0.0``                                                                                  |
-| [`Color`](class_color.md)                                             | [`modulate`](#class_label3d_property_modulate)                                                           | ``Color(1, 1, 1, 1)``                                                                    |
-| [`bool`](class_bool.md)                                               | [`no_depth_test`](#class_label3d_property_no_depth_test)                                                 | ``false``                                                                                |
-| [`Vector2`](class_vector2.md)                                         | [`offset`](#class_label3d_property_offset)                                                               | ``Vector2(0, 0)``                                                                        |
-| [`Color`](class_color.md)                                             | [`outline_modulate`](#class_label3d_property_outline_modulate)                                           | ``Color(0, 0, 0, 1)``                                                                    |
-| [`int`](class_int.md)                                                 | [`outline_render_priority`](#class_label3d_property_outline_render_priority)                             | ``-1``                                                                                   |
-| [`int`](class_int.md)                                                 | [`outline_size`](#class_label3d_property_outline_size)                                                   | ``12``                                                                                   |
-| [`float`](class_float.md)                                             | [`pixel_size`](#class_label3d_property_pixel_size)                                                       | ``0.005``                                                                                |
-| [`int`](class_int.md)                                                 | [`render_priority`](#class_label3d_property_render_priority)                                             | ``0``                                                                                    |
-| [`bool`](class_bool.md)                                               | [`shaded`](#class_label3d_property_shaded)                                                               | ``false``                                                                                |
-| [StructuredTextParser](#enum_textserver_structuredtextparser)         | [`structured_text_bidi_override`](#class_label3d_property_structured_text_bidi_override)                 | ``0``                                                                                    |
-| [`Array`](class_array.md)                                             | [`structured_text_bidi_override_options`](#class_label3d_property_structured_text_bidi_override_options) | ``[]``                                                                                   |
-| [`String`](class_string.md)                                           | [`text`](#class_label3d_property_text)                                                                   | ``""``                                                                                   |
-| [Direction](#enum_textserver_direction)                               | [`text_direction`](#class_label3d_property_text_direction)                                               | ``0``                                                                                    |
-| [TextureFilter](#enum_basematerial3d_texturefilter)                   | [`texture_filter`](#class_label3d_property_texture_filter)                                               | ``3``                                                                                    |
-| [`bool`](class_bool.md)                                               | [`uppercase`](#class_label3d_property_uppercase)                                                         | ``false``                                                                                |
-| [VerticalAlignment](#enum_@globalscope_verticalalignment)             | [`vertical_alignment`](#class_label3d_property_vertical_alignment)                                       | ``1``                                                                                    |
-| [`float`](class_float.md)                                             | [`width`](#class_label3d_property_width)                                                                 | ``500.0``                                                                                |
+| [`float`](class_float.md)                                             | [`alpha_antialiasing_edge`](class_label3d.md#class_label3d_property_alpha_antialiasing_edge)                             | ``0.0``                                                                                                             |
+| [AlphaAntiAliasing](#enum_basematerial3d_alphaantialiasing)           | [`alpha_antialiasing_mode`](class_label3d.md#class_label3d_property_alpha_antialiasing_mode)                             | ``0``                                                                                                               |
+| [AlphaCutMode](#enum_label3d_alphacutmode)                            | [`alpha_cut`](class_label3d.md#class_label3d_property_alpha_cut)                                                         | ``0``                                                                                                               |
+| [`float`](class_float.md)                                             | [`alpha_hash_scale`](class_label3d.md#class_label3d_property_alpha_hash_scale)                                           | ``1.0``                                                                                                             |
+| [`float`](class_float.md)                                             | [`alpha_scissor_threshold`](class_label3d.md#class_label3d_property_alpha_scissor_threshold)                             | ``0.5``                                                                                                             |
+| [AutowrapMode](#enum_textserver_autowrapmode)                         | [`autowrap_mode`](class_label3d.md#class_label3d_property_autowrap_mode)                                                 | ``0``                                                                                                               |
+| [BillboardMode](#enum_basematerial3d_billboardmode)                   | [`billboard`](class_label3d.md#class_label3d_property_billboard)                                                         | ``0``                                                                                                               |
+| [ShadowCastingSetting](#enum_geometryinstance3d_shadowcastingsetting) | cast_shadow                                                                                                              | ``0`` (overrides [`GeometryInstance3D`](class_geometryinstance3d.md#class_geometryinstance3d_property_cast_shadow)) |
+| [`bool`](class_bool.md)                                               | [`double_sided`](class_label3d.md#class_label3d_property_double_sided)                                                   | ``true``                                                                                                            |
+| [`bool`](class_bool.md)                                               | [`fixed_size`](class_label3d.md#class_label3d_property_fixed_size)                                                       | ``false``                                                                                                           |
+| [`Font`](class_font.md)                                               | [`font`](class_label3d.md#class_label3d_property_font)                                                                   |                                                                                                                     |
+| [`int`](class_int.md)                                                 | [`font_size`](class_label3d.md#class_label3d_property_font_size)                                                         | ``32``                                                                                                              |
+| [GIMode](#enum_geometryinstance3d_gimode)                             | gi_mode                                                                                                                  | ``0`` (overrides [`GeometryInstance3D`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode))     |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment)         | [`horizontal_alignment`](class_label3d.md#class_label3d_property_horizontal_alignment)                                   | ``1``                                                                                                               |
+| [JustificationFlag](#enum_textserver_justificationflag)               | [`justification_flags`](class_label3d.md#class_label3d_property_justification_flags)                                     | ``163``                                                                                                             |
+| [`String`](class_string.md)                                           | [`language`](class_label3d.md#class_label3d_property_language)                                                           | ``""``                                                                                                              |
+| [`float`](class_float.md)                                             | [`line_spacing`](class_label3d.md#class_label3d_property_line_spacing)                                                   | ``0.0``                                                                                                             |
+| [`Color`](class_color.md)                                             | [`modulate`](class_label3d.md#class_label3d_property_modulate)                                                           | ``Color(1, 1, 1, 1)``                                                                                               |
+| [`bool`](class_bool.md)                                               | [`no_depth_test`](class_label3d.md#class_label3d_property_no_depth_test)                                                 | ``false``                                                                                                           |
+| [`Vector2`](class_vector2.md)                                         | [`offset`](class_label3d.md#class_label3d_property_offset)                                                               | ``Vector2(0, 0)``                                                                                                   |
+| [`Color`](class_color.md)                                             | [`outline_modulate`](class_label3d.md#class_label3d_property_outline_modulate)                                           | ``Color(0, 0, 0, 1)``                                                                                               |
+| [`int`](class_int.md)                                                 | [`outline_render_priority`](class_label3d.md#class_label3d_property_outline_render_priority)                             | ``-1``                                                                                                              |
+| [`int`](class_int.md)                                                 | [`outline_size`](class_label3d.md#class_label3d_property_outline_size)                                                   | ``12``                                                                                                              |
+| [`float`](class_float.md)                                             | [`pixel_size`](class_label3d.md#class_label3d_property_pixel_size)                                                       | ``0.005``                                                                                                           |
+| [`int`](class_int.md)                                                 | [`render_priority`](class_label3d.md#class_label3d_property_render_priority)                                             | ``0``                                                                                                               |
+| [`bool`](class_bool.md)                                               | [`shaded`](class_label3d.md#class_label3d_property_shaded)                                                               | ``false``                                                                                                           |
+| [StructuredTextParser](#enum_textserver_structuredtextparser)         | [`structured_text_bidi_override`](class_label3d.md#class_label3d_property_structured_text_bidi_override)                 | ``0``                                                                                                               |
+| [`Array`](class_array.md)                                             | [`structured_text_bidi_override_options`](class_label3d.md#class_label3d_property_structured_text_bidi_override_options) | ``[]``                                                                                                              |
+| [`String`](class_string.md)                                           | [`text`](class_label3d.md#class_label3d_property_text)                                                                   | ``""``                                                                                                              |
+| [Direction](#enum_textserver_direction)                               | [`text_direction`](class_label3d.md#class_label3d_property_text_direction)                                               | ``0``                                                                                                               |
+| [TextureFilter](#enum_basematerial3d_texturefilter)                   | [`texture_filter`](class_label3d.md#class_label3d_property_texture_filter)                                               | ``3``                                                                                                               |
+| [`bool`](class_bool.md)                                               | [`uppercase`](class_label3d.md#class_label3d_property_uppercase)                                                         | ``false``                                                                                                           |
+| [VerticalAlignment](#enum_@globalscope_verticalalignment)             | [`vertical_alignment`](class_label3d.md#class_label3d_property_vertical_alignment)                                       | ``1``                                                                                                               |
+| [`float`](class_float.md)                                             | [`width`](class_label3d.md#class_label3d_property_width)                                                                 | ``500.0``                                                                                                           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](#class_label3d_method_generate_triangle_mesh) ( ) const[^const]                                              |
-| [`bool`](class_bool.md)                 | [`get_draw_flag`](#class_label3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags) ) const[^const]                     |
-| `void`                                  | [`set_draw_flag`](#class_label3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags), enabled: [`bool`](class_bool.md) ) |
+| [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](class_label3d.md#class_label3d_method_generate_triangle_mesh) ( ) const[^const]                                              |
+| [`bool`](class_bool.md)                 | [`get_draw_flag`](class_label3d.md#class_label3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags) ) const[^const]                     |
+| `void`                                  | [`set_draw_flag`](class_label3d.md#class_label3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags), enabled: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -114,15 +114,15 @@ enum **AlphaCutMode**: <div id="enum_label3d_alphacutmode"></div>
 
 [AlphaCutMode](#enum_label3d_alphacutmode) **ALPHA_CUT_DISABLED** = ``0``
 
-This mode performs standard alpha blending. It can display translucent areas, but transparency sorting issues may be visible when multiple transparent materials are overlapping. [`GeometryInstance3D.cast_shadow`](#class_geometryinstance3d_property_cast_shadow) has no effect when this transparency mode is used; the **Label3D** will never cast shadows.
+This mode performs standard alpha blending. It can display translucent areas, but transparency sorting issues may be visible when multiple transparent materials are overlapping. [`GeometryInstance3D.cast_shadow`](class_geometryinstance3d.md#class_geometryinstance3d_property_cast_shadow) has no effect when this transparency mode is used; the **Label3D** will never cast shadows.
 
 <div id="_class_label3d_constant_alpha_cut_discard"></div>
 
 [AlphaCutMode](#enum_label3d_alphacutmode) **ALPHA_CUT_DISCARD** = ``1``
 
-This mode only allows fully transparent or fully opaque pixels. Harsh edges will be visible unless some form of screen-space antialiasing is enabled (see [`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa`](#class_projectsettings_property_rendering/anti_aliasing/quality/screen_space_aa)). This mode is also known as *alpha testing* or *1-bit transparency*.
+This mode only allows fully transparent or fully opaque pixels. Harsh edges will be visible unless some form of screen-space antialiasing is enabled (see [`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/screen_space_aa)). This mode is also known as *alpha testing* or *1-bit transparency*.
 
- **Note:** This mode might have issues with anti-aliased fonts and outlines, try adjusting [`alpha_scissor_threshold`](#class_label3d_property_alpha_scissor_threshold) or using MSDF font.
+ **Note:** This mode might have issues with anti-aliased fonts and outlines, try adjusting [`alpha_scissor_threshold`](class_label3d.md#class_label3d_property_alpha_scissor_threshold) or using MSDF font.
 
  **Note:** When using text with overlapping glyphs (e.g., cursive scripts), this mode might have transparency sorting issues between the main text and the outline.
 
@@ -130,7 +130,7 @@ This mode only allows fully transparent or fully opaque pixels. Harsh edges will
 
 [AlphaCutMode](#enum_label3d_alphacutmode) **ALPHA_CUT_OPAQUE_PREPASS** = ``2``
 
-This mode draws fully opaque pixels in the depth prepass. This is slower than [`ALPHA_CUT_DISABLED`](#class_label3d_constant_alpha_cut_disabled) or [`ALPHA_CUT_DISCARD`](#class_label3d_constant_alpha_cut_discard), but it allows displaying translucent areas and smooth edges while using proper sorting.
+This mode draws fully opaque pixels in the depth prepass. This is slower than [`ALPHA_CUT_DISABLED`](class_label3d.md#class_label3d_constant_alpha_cut_disabled) or [`ALPHA_CUT_DISCARD`](class_label3d.md#class_label3d_constant_alpha_cut_discard), but it allows displaying translucent areas and smooth edges while using proper sorting.
 
  **Note:** When using text with overlapping glyphs (e.g., cursive scripts), this mode might have transparency sorting issues between the main text and the outline.
 
@@ -218,7 +218,7 @@ Threshold at which the alpha scissor will discard values.
 - `void` **set_autowrap_mode** ( value: [AutowrapMode](#enum_textserver_autowrapmode) )
 - [AutowrapMode](#enum_textserver_autowrapmode) **get_autowrap_mode** ( )
 
-If set to something other than [`TextServer.AUTOWRAP_OFF`](#class_textserver_constant_autowrap_off), the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
+If set to something other than [`TextServer.AUTOWRAP_OFF`](class_textserver.md#class_textserver_constant_autowrap_off), the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -283,7 +283,7 @@ Font configuration used to display text.
 - `void` **set_font_size** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_font_size** ( )
 
-Font size of the **Label3D**'s text. To make the font look more detailed when up close, increase [`font_size`](#class_label3d_property_font_size) while decreasing [`pixel_size`](#class_label3d_property_pixel_size) at the same time.
+Font size of the **Label3D**'s text. To make the font look more detailed when up close, increase [`font_size`](class_label3d.md#class_label3d_property_font_size) while decreasing [`pixel_size`](class_label3d.md#class_label3d_property_pixel_size) at the same time.
 
 Higher font sizes require more time to render new characters, which can cause stuttering during gameplay.
 
@@ -404,7 +404,7 @@ The tint of text outline.
 
 Sets the render priority for the text outline. Higher priority objects will be sorted in front of lower priority objects.
 
- **Note:** This only applies if [`alpha_cut`](#class_label3d_property_alpha_cut) is set to [`ALPHA_CUT_DISABLED`](#class_label3d_constant_alpha_cut_disabled) (default value).
+ **Note:** This only applies if [`alpha_cut`](class_label3d.md#class_label3d_property_alpha_cut) is set to [`ALPHA_CUT_DISABLED`](class_label3d.md#class_label3d_constant_alpha_cut_disabled) (default value).
 
  **Note:** This only applies to sorting of transparent objects. This will not impact how transparent objects are sorted relative to opaque objects. This is because opaque objects are not sorted, while transparent objects are sorted from back to front (subject to priority).
 
@@ -432,7 +432,7 @@ Text outline size.
 - `void` **set_pixel_size** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_pixel_size** ( )
 
-The size of one pixel's width on the label to scale it in 3D. To make the font look more detailed when up close, increase [`font_size`](#class_label3d_property_font_size) while decreasing [`pixel_size`](#class_label3d_property_pixel_size) at the same time.
+The size of one pixel's width on the label to scale it in 3D. To make the font look more detailed when up close, increase [`font_size`](class_label3d.md#class_label3d_property_font_size) while decreasing [`pixel_size`](class_label3d.md#class_label3d_property_pixel_size) at the same time.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -447,7 +447,7 @@ The size of one pixel's width on the label to scale it in 3D. To make the font l
 
 Sets the render priority for the text. Higher priority objects will be sorted in front of lower priority objects.
 
- **Note:** This only applies if [`alpha_cut`](#class_label3d_property_alpha_cut) is set to [`ALPHA_CUT_DISABLED`](#class_label3d_constant_alpha_cut_disabled) (default value).
+ **Note:** This only applies if [`alpha_cut`](class_label3d.md#class_label3d_property_alpha_cut) is set to [`ALPHA_CUT_DISABLED`](class_label3d.md#class_label3d_constant_alpha_cut_disabled) (default value).
 
  **Note:** This only applies to sorting of transparent objects. This will not impact how transparent objects are sorted relative to opaque objects. This is because opaque objects are not sorted, while transparent objects are sorted from back to front (subject to priority).
 
@@ -578,7 +578,7 @@ Text width (in pixels), used for autowrap and fill alignment.
 
 [`TriangleMesh`](class_trianglemesh.md) **generate_triangle_mesh** ( ) const[^const]<div id="class_label3d_method_generate_triangle_mesh"></div>
 
-Returns a [`TriangleMesh`](class_trianglemesh.md) with the label's vertices following its current configuration (such as its [`pixel_size`](#class_label3d_property_pixel_size)).
+Returns a [`TriangleMesh`](class_trianglemesh.md) with the label's vertices following its current configuration (such as its [`pixel_size`](class_label3d.md#class_label3d_property_pixel_size)).
 
 <!-- rst-class:: classref-item-separator -->
 

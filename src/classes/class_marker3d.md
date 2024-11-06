@@ -19,7 +19,7 @@ Generic 3D position hint for editing. It's just like a plain [`Node3D`](class_no
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`gizmo_extents`](#class_marker3d_property_gizmo_extents) | ``0.25`` |
+| [`float`](class_float.md) | [`gizmo_extents`](class_marker3d.md#class_marker3d_property_gizmo_extents) | ``0.25`` |
 
 <!-- rst-class:: classref-section-separator -->
 

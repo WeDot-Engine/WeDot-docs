@@ -17,11 +17,11 @@ A baked signed distance field 3D particle collision shape affecting [`GPUParticl
 
 Signed distance fields (SDF) allow for efficiently representing approximate collision shapes for convex and concave objects of any shape. This is more flexible than [`GPUParticlesCollisionHeightField3D`](class_gpuparticlescollisionheightfield3d.md), but it requires a baking step.
 
- **Baking:** The signed distance field texture can be baked by selecting the **GPUParticlesCollisionSDF3D** node in the editor, then clicking **Bake SDF** at the top of the 3D viewport. Any *visible* [`MeshInstance3D`](class_meshinstance3d.md) s within the [`size`](#class_gpuparticlescollisionsdf3d_property_size) will be taken into account for baking, regardless of their [`GeometryInstance3D.gi_mode`](#class_geometryinstance3d_property_gi_mode).
+ **Baking:** The signed distance field texture can be baked by selecting the **GPUParticlesCollisionSDF3D** node in the editor, then clicking **Bake SDF** at the top of the 3D viewport. Any *visible* [`MeshInstance3D`](class_meshinstance3d.md) s within the [`size`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_size) will be taken into account for baking, regardless of their [`GeometryInstance3D.gi_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode).
 
- **Note:** Baking a **GPUParticlesCollisionSDF3D**'s [`texture`](#class_gpuparticlescollisionsdf3d_property_texture) is only possible within the editor, as there is no bake method exposed for use in exported projects. However, it's still possible to load pre-baked [`Texture3D`](class_texture3d.md) s into its [`texture`](#class_gpuparticlescollisionsdf3d_property_texture) property in an exported project.
+ **Note:** Baking a **GPUParticlesCollisionSDF3D**'s [`texture`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_texture) is only possible within the editor, as there is no bake method exposed for use in exported projects. However, it's still possible to load pre-baked [`Texture3D`](class_texture3d.md) s into its [`texture`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_texture) property in an exported project.
 
- **Note:** [`ParticleProcessMaterial.collision_mode`](#class_particleprocessmaterial_property_collision_mode) must be [`ParticleProcessMaterial.COLLISION_RIGID`](#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](#class_particleprocessmaterial_constant_collision_hide_on_contact) on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
+ **Note:** [`ParticleProcessMaterial.collision_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_collision_mode) must be [`ParticleProcessMaterial.COLLISION_RIGID`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_hide_on_contact) on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
 
  **Note:** Particle collision only affects [`GPUParticles3D`](class_gpuparticles3d.md), not [`CPUParticles3D`](class_cpuparticles3d.md).
 
@@ -29,18 +29,18 @@ Signed distance fields (SDF) allow for efficiently representing approximate coll
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                                     | [`bake_mask`](#class_gpuparticlescollisionsdf3d_property_bake_mask)   | ``4294967295``       |
-| [Resolution](#enum_gpuparticlescollisionsdf3d_resolution) | [`resolution`](#class_gpuparticlescollisionsdf3d_property_resolution) | ``2``                |
-| [`Vector3`](class_vector3.md)                             | [`size`](#class_gpuparticlescollisionsdf3d_property_size)             | ``Vector3(2, 2, 2)`` |
-| [`Texture3D`](class_texture3d.md)                         | [`texture`](#class_gpuparticlescollisionsdf3d_property_texture)       |                      |
-| [`float`](class_float.md)                                 | [`thickness`](#class_gpuparticlescollisionsdf3d_property_thickness)   | ``1.0``              |
+| [`int`](class_int.md)                                     | [`bake_mask`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_bake_mask)   | ``4294967295``       |
+| [Resolution](#enum_gpuparticlescollisionsdf3d_resolution) | [`resolution`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_resolution) | ``2``                |
+| [`Vector3`](class_vector3.md)                             | [`size`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_size)             | ``Vector3(2, 2, 2)`` |
+| [`Texture3D`](class_texture3d.md)                         | [`texture`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_texture)       |                      |
+| [`float`](class_float.md)                                 | [`thickness`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_thickness)   | ``1.0``              |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`get_bake_mask_value`](#class_gpuparticlescollisionsdf3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| `void`                  | [`set_bake_mask_value`](#class_gpuparticlescollisionsdf3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| [`bool`](class_bool.md) | [`get_bake_mask_value`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| `void`                  | [`set_bake_mask_value`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -107,7 +107,7 @@ Represents the size of the [Resolution](#enum_gpuparticlescollisionsdf3d_resolut
 - `void` **set_bake_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_bake_mask** ( )
 
-The visual layers to account for when baking the particle collision SDF. Only [`MeshInstance3D`](class_meshinstance3d.md) s whose [`VisualInstance3D.layers`](#class_visualinstance3d_property_layers) match with this [`bake_mask`](#class_gpuparticlescollisionsdf3d_property_bake_mask) will be included in the generated particle collision SDF. By default, all objects are taken into account for the particle collision SDF baking.
+The visual layers to account for when baking the particle collision SDF. Only [`MeshInstance3D`](class_meshinstance3d.md) s whose [`VisualInstance3D.layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers) match with this [`bake_mask`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_bake_mask) will be included in the generated particle collision SDF. By default, all objects are taken into account for the particle collision SDF baking.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -120,7 +120,7 @@ The visual layers to account for when baking the particle collision SDF. Only [`
 - `void` **set_resolution** ( value: [Resolution](#enum_gpuparticlescollisionsdf3d_resolution) )
 - [Resolution](#enum_gpuparticlescollisionsdf3d_resolution) **get_resolution** ( )
 
-The bake resolution to use for the signed distance field [`texture`](#class_gpuparticlescollisionsdf3d_property_texture). The texture must be baked again for changes to the [`resolution`](#class_gpuparticlescollisionsdf3d_property_resolution) property to be effective. Higher resolutions have a greater performance cost and take more time to bake. Higher resolutions also result in larger baked textures, leading to increased VRAM and storage space requirements. To improve performance and reduce bake times, use the lowest resolution possible for the object you're representing the collision of.
+The bake resolution to use for the signed distance field [`texture`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_texture). The texture must be baked again for changes to the [`resolution`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_resolution) property to be effective. Higher resolutions have a greater performance cost and take more time to bake. Higher resolutions also result in larger baked textures, leading to increased VRAM and storage space requirements. To improve performance and reduce bake times, use the lowest resolution possible for the object you're representing the collision of.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -133,7 +133,7 @@ The bake resolution to use for the signed distance field [`texture`](#class_gpup
 - `void` **set_size** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_size** ( )
 
-The collision SDF's size in 3D units. To improve SDF quality, the [`size`](#class_gpuparticlescollisionsdf3d_property_size) should be set as small as possible while covering the parts of the scene you need.
+The collision SDF's size in 3D units. To improve SDF quality, the [`size`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_size) should be set as small as possible while covering the parts of the scene you need.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -159,7 +159,7 @@ The 3D texture representing the signed distance field.
 - `void` **set_thickness** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_thickness** ( )
 
-The collision shape's thickness. Unlike other particle colliders, **GPUParticlesCollisionSDF3D** is actually hollow on the inside. [`thickness`](#class_gpuparticlescollisionsdf3d_property_thickness) can be increased to prevent particles from tunneling through the collision shape at high speeds, or when the **GPUParticlesCollisionSDF3D** is moved.
+The collision shape's thickness. Unlike other particle colliders, **GPUParticlesCollisionSDF3D** is actually hollow on the inside. [`thickness`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_thickness) can be increased to prevent particles from tunneling through the collision shape at high speeds, or when the **GPUParticlesCollisionSDF3D** is moved.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -171,7 +171,7 @@ The collision shape's thickness. Unlike other particle colliders, **GPUParticles
 
 [`bool`](class_bool.md) **get_bake_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_gpuparticlescollisionsdf3d_method_get_bake_mask_value"></div>
 
-Returns whether or not the specified layer of the [`bake_mask`](#class_gpuparticlescollisionsdf3d_property_bake_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`bake_mask`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_bake_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -181,7 +181,7 @@ Returns whether or not the specified layer of the [`bake_mask`](#class_gpupartic
 
 `void` **set_bake_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_gpuparticlescollisionsdf3d_method_set_bake_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`bake_mask`](#class_gpuparticlescollisionsdf3d_property_bake_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`bake_mask`](class_gpuparticlescollisionsdf3d.md#class_gpuparticlescollisionsdf3d_property_bake_mask), given a `layer_number` between 1 and 32.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -13,19 +13,19 @@ Represents a mouse button being pressed or released.
 
 ## 描述
 
-Stores information about mouse click events. See [`Node._input`](#class_node_private_method__input).
+Stores information about mouse click events. See [`Node._input`](class_node.md#class_node_private_method__input).
 
- **Note:** On Wear OS devices, rotary input is mapped to [`@GlobalScope.MOUSE_BUTTON_WHEEL_UP`](#class_@globalscope_constant_mouse_button_wheel_up) and [`@GlobalScope.MOUSE_BUTTON_WHEEL_DOWN`](#class_@globalscope_constant_mouse_button_wheel_down). This can be changed to [`@GlobalScope.MOUSE_BUTTON_WHEEL_LEFT`](#class_@globalscope_constant_mouse_button_wheel_left) and [`@GlobalScope.MOUSE_BUTTON_WHEEL_RIGHT`](#class_@globalscope_constant_mouse_button_wheel_right) with the [`ProjectSettings.input_devices/pointing/android/rotary_input_scroll_axis`](#class_projectsettings_property_input_devices/pointing/android/rotary_input_scroll_axis) setting.
+ **Note:** On Wear OS devices, rotary input is mapped to [`@GlobalScope.MOUSE_BUTTON_WHEEL_UP`](class_@globalscope.md#class_@globalscope_constant_mouse_button_wheel_up) and [`@GlobalScope.MOUSE_BUTTON_WHEEL_DOWN`](class_@globalscope.md#class_@globalscope_constant_mouse_button_wheel_down). This can be changed to [`@GlobalScope.MOUSE_BUTTON_WHEEL_LEFT`](class_@globalscope.md#class_@globalscope_constant_mouse_button_wheel_left) and [`@GlobalScope.MOUSE_BUTTON_WHEEL_RIGHT`](class_@globalscope.md#class_@globalscope_constant_mouse_button_wheel_right) with the [`ProjectSettings.input_devices/pointing/android/rotary_input_scroll_axis`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/android/rotary_input_scroll_axis) setting.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [MouseButton](#enum_@globalscope_mousebutton) | [`button_index`](#class_inputeventmousebutton_property_button_index) | ``0``     |
-| [`bool`](class_bool.md)                       | [`canceled`](#class_inputeventmousebutton_property_canceled)         | ``false`` |
-| [`bool`](class_bool.md)                       | [`double_click`](#class_inputeventmousebutton_property_double_click) | ``false`` |
-| [`float`](class_float.md)                     | [`factor`](#class_inputeventmousebutton_property_factor)             | ``1.0``   |
-| [`bool`](class_bool.md)                       | [`pressed`](#class_inputeventmousebutton_property_pressed)           | ``false`` |
+| [MouseButton](#enum_@globalscope_mousebutton) | [`button_index`](class_inputeventmousebutton.md#class_inputeventmousebutton_property_button_index) | ``0``     |
+| [`bool`](class_bool.md)                       | [`canceled`](class_inputeventmousebutton.md#class_inputeventmousebutton_property_canceled)         | ``false`` |
+| [`bool`](class_bool.md)                       | [`double_click`](class_inputeventmousebutton.md#class_inputeventmousebutton_property_double_click) | ``false`` |
+| [`float`](class_float.md)                     | [`factor`](class_inputeventmousebutton.md#class_inputeventmousebutton_property_factor)             | ``1.0``   |
+| [`bool`](class_bool.md)                       | [`pressed`](class_inputeventmousebutton.md#class_inputeventmousebutton_property_pressed)           | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

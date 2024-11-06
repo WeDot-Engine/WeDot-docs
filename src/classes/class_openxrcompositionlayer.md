@@ -25,17 +25,17 @@ Composition layers allow 2D viewports to be displayed inside of the headset by t
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)               | [`alpha_blend`](#class_openxrcompositionlayer_property_alpha_blend)             | ``false`` |
-| [`bool`](class_bool.md)               | [`enable_hole_punch`](#class_openxrcompositionlayer_property_enable_hole_punch) | ``false`` |
-| [`SubViewport`](class_subviewport.md) | [`layer_viewport`](#class_openxrcompositionlayer_property_layer_viewport)       |           |
-| [`int`](class_int.md)                 | [`sort_order`](#class_openxrcompositionlayer_property_sort_order)               | ``1``     |
+| [`bool`](class_bool.md)               | [`alpha_blend`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_alpha_blend)             | ``false`` |
+| [`bool`](class_bool.md)               | [`enable_hole_punch`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_enable_hole_punch) | ``false`` |
+| [`SubViewport`](class_subviewport.md) | [`layer_viewport`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_layer_viewport)       |           |
+| [`int`](class_int.md)                 | [`sort_order`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_sort_order)               | ``1``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`intersects_ray`](#class_openxrcompositionlayer_method_intersects_ray) ( origin: [`Vector3`](class_vector3.md), direction: [`Vector3`](class_vector3.md) ) const[^const] |
-| [`bool`](class_bool.md)       | [`is_natively_supported`](#class_openxrcompositionlayer_method_is_natively_supported) ( ) const[^const]                                                                   |
+| [`Vector2`](class_vector2.md) | [`intersects_ray`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_method_intersects_ray) ( origin: [`Vector3`](class_vector3.md), direction: [`Vector3`](class_vector3.md) ) const[^const] |
+| [`bool`](class_bool.md)       | [`is_natively_supported`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_method_is_natively_supported) ( ) const[^const]                                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,7 +52,7 @@ Composition layers allow 2D viewports to be displayed inside of the headset by t
 
 Enables the blending the layer using its alpha channel.
 
-Can be combined with [`Viewport.transparent_bg`](#class_viewport_property_transparent_bg) to give the layer a transparent background.
+Can be combined with [`Viewport.transparent_bg`](class_viewport.md#class_viewport_property_transparent_bg) to give the layer a transparent background.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -65,7 +65,7 @@ Can be combined with [`Viewport.transparent_bg`](#class_viewport_property_transp
 - `void` **set_enable_hole_punch** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_enable_hole_punch** ( )
 
-Enables a technique called "hole punching", which allows putting the composition layer behind the main projection layer (i.e. setting [`sort_order`](#class_openxrcompositionlayer_property_sort_order) to a negative value) while "punching a hole" through everything rendered by Godot so that the layer is still visible.
+Enables a technique called "hole punching", which allows putting the composition layer behind the main projection layer (i.e. setting [`sort_order`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_sort_order) to a negative value) while "punching a hole" through everything rendered by Godot so that the layer is still visible.
 
 This can be used to create the illusion that the composition layer exists in the same 3D space as everything rendered by Godot, allowing objects to appear to pass both behind or in front of the composition layer.
 

@@ -17,7 +17,7 @@ A box-shaped 3D particle collision shape affecting [`GPUParticles3D`](class_gpup
 
 Particle collision shapes work in real-time and can be moved, rotated and scaled during gameplay. Unlike attractors, non-uniform scaling of collision shapes is *not* supported.
 
- **Note:** [`ParticleProcessMaterial.collision_mode`](#class_particleprocessmaterial_property_collision_mode) must be [`ParticleProcessMaterial.COLLISION_RIGID`](#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](#class_particleprocessmaterial_constant_collision_hide_on_contact) on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
+ **Note:** [`ParticleProcessMaterial.collision_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_collision_mode) must be [`ParticleProcessMaterial.COLLISION_RIGID`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_hide_on_contact) on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
 
  **Note:** Particle collision only affects [`GPUParticles3D`](class_gpuparticles3d.md), not [`CPUParticles3D`](class_cpuparticles3d.md).
 
@@ -25,7 +25,7 @@ Particle collision shapes work in real-time and can be moved, rotated and scaled
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md) | [`size`](#class_gpuparticlescollisionbox3d_property_size) | ``Vector3(2, 2, 2)`` |
+| [`Vector3`](class_vector3.md) | [`size`](class_gpuparticlescollisionbox3d.md#class_gpuparticlescollisionbox3d_property_size) | ``Vector3(2, 2, 2)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

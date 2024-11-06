@@ -15,59 +15,59 @@ Provides direct access to a physics body in the [`PhysicsServer3D`](class_physic
 
 ## 描述
 
-Provides direct access to a physics body in the [`PhysicsServer3D`](class_physicsserver3d.md), allowing safe changes to physics properties. This object is passed via the direct state callback of [`RigidBody3D`](class_rigidbody3d.md), and is intended for changing the direct state of that body. See [`RigidBody3D._integrate_forces`](#class_rigidbody3d_private_method__integrate_forces).
+Provides direct access to a physics body in the [`PhysicsServer3D`](class_physicsserver3d.md), allowing safe changes to physics properties. This object is passed via the direct state callback of [`RigidBody3D`](class_rigidbody3d.md), and is intended for changing the direct state of that body. See [`RigidBody3D._integrate_forces`](class_rigidbody3d.md#class_rigidbody3d_private_method__integrate_forces).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md)         | [`angular_velocity`](#class_physicsdirectbodystate3d_property_angular_velocity)             |
-| [`Vector3`](class_vector3.md)         | [`center_of_mass`](#class_physicsdirectbodystate3d_property_center_of_mass)                 |
-| [`Vector3`](class_vector3.md)         | [`center_of_mass_local`](#class_physicsdirectbodystate3d_property_center_of_mass_local)     |
-| [`Vector3`](class_vector3.md)         | [`inverse_inertia`](#class_physicsdirectbodystate3d_property_inverse_inertia)               |
-| [`Basis`](class_basis.md)             | [`inverse_inertia_tensor`](#class_physicsdirectbodystate3d_property_inverse_inertia_tensor) |
-| [`float`](class_float.md)             | [`inverse_mass`](#class_physicsdirectbodystate3d_property_inverse_mass)                     |
-| [`Vector3`](class_vector3.md)         | [`linear_velocity`](#class_physicsdirectbodystate3d_property_linear_velocity)               |
-| [`Basis`](class_basis.md)             | [`principal_inertia_axes`](#class_physicsdirectbodystate3d_property_principal_inertia_axes) |
-| [`bool`](class_bool.md)               | [`sleeping`](#class_physicsdirectbodystate3d_property_sleeping)                             |
-| [`float`](class_float.md)             | [`step`](#class_physicsdirectbodystate3d_property_step)                                     |
-| [`float`](class_float.md)             | [`total_angular_damp`](#class_physicsdirectbodystate3d_property_total_angular_damp)         |
-| [`Vector3`](class_vector3.md)         | [`total_gravity`](#class_physicsdirectbodystate3d_property_total_gravity)                   |
-| [`float`](class_float.md)             | [`total_linear_damp`](#class_physicsdirectbodystate3d_property_total_linear_damp)           |
-| [`Transform3D`](class_transform3d.md) | [`transform`](#class_physicsdirectbodystate3d_property_transform)                           |
+| [`Vector3`](class_vector3.md)         | [`angular_velocity`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_angular_velocity)             |
+| [`Vector3`](class_vector3.md)         | [`center_of_mass`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_center_of_mass)                 |
+| [`Vector3`](class_vector3.md)         | [`center_of_mass_local`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_center_of_mass_local)     |
+| [`Vector3`](class_vector3.md)         | [`inverse_inertia`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_inertia)               |
+| [`Basis`](class_basis.md)             | [`inverse_inertia_tensor`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_inertia_tensor) |
+| [`float`](class_float.md)             | [`inverse_mass`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_mass)                     |
+| [`Vector3`](class_vector3.md)         | [`linear_velocity`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_linear_velocity)               |
+| [`Basis`](class_basis.md)             | [`principal_inertia_axes`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_principal_inertia_axes) |
+| [`bool`](class_bool.md)               | [`sleeping`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_sleeping)                             |
+| [`float`](class_float.md)             | [`step`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_step)                                     |
+| [`float`](class_float.md)             | [`total_angular_damp`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_total_angular_damp)         |
+| [`Vector3`](class_vector3.md)         | [`total_gravity`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_total_gravity)                   |
+| [`float`](class_float.md)             | [`total_linear_damp`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_total_linear_damp)           |
+| [`Transform3D`](class_transform3d.md) | [`transform`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_transform)                           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                            | [`add_constant_central_force`](#class_physicsdirectbodystate3d_method_add_constant_central_force) ( force: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )                          |
-| `void`                                                            | [`add_constant_force`](#class_physicsdirectbodystate3d_method_add_constant_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) ) |
-| `void`                                                            | [`add_constant_torque`](#class_physicsdirectbodystate3d_method_add_constant_torque) ( torque: [`Vector3`](class_vector3.md) )                                                          |
-| `void`                                                            | [`apply_central_force`](#class_physicsdirectbodystate3d_method_apply_central_force) ( force: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )                                        |
-| `void`                                                            | [`apply_central_impulse`](#class_physicsdirectbodystate3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )                                  |
-| `void`                                                            | [`apply_force`](#class_physicsdirectbodystate3d_method_apply_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )               |
-| `void`                                                            | [`apply_impulse`](#class_physicsdirectbodystate3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )         |
-| `void`                                                            | [`apply_torque`](#class_physicsdirectbodystate3d_method_apply_torque) ( torque: [`Vector3`](class_vector3.md) )                                                                        |
-| `void`                                                            | [`apply_torque_impulse`](#class_physicsdirectbodystate3d_method_apply_torque_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                       |
-| [`Vector3`](class_vector3.md)                                     | [`get_constant_force`](#class_physicsdirectbodystate3d_method_get_constant_force) ( ) const[^const]                                                                                    |
-| [`Vector3`](class_vector3.md)                                     | [`get_constant_torque`](#class_physicsdirectbodystate3d_method_get_constant_torque) ( ) const[^const]                                                                                  |
-| [`RID`](class_rid.md)                                             | [`get_contact_collider`](#class_physicsdirectbodystate3d_method_get_contact_collider) ( contact_idx: [`int`](class_int.md) ) const[^const]                                             |
-| [`int`](class_int.md)                                             | [`get_contact_collider_id`](#class_physicsdirectbodystate3d_method_get_contact_collider_id) ( contact_idx: [`int`](class_int.md) ) const[^const]                                       |
-| [`Object`](class_object.md)                                       | [`get_contact_collider_object`](#class_physicsdirectbodystate3d_method_get_contact_collider_object) ( contact_idx: [`int`](class_int.md) ) const[^const]                               |
-| [`Vector3`](class_vector3.md)                                     | [`get_contact_collider_position`](#class_physicsdirectbodystate3d_method_get_contact_collider_position) ( contact_idx: [`int`](class_int.md) ) const[^const]                           |
-| [`int`](class_int.md)                                             | [`get_contact_collider_shape`](#class_physicsdirectbodystate3d_method_get_contact_collider_shape) ( contact_idx: [`int`](class_int.md) ) const[^const]                                 |
-| [`Vector3`](class_vector3.md)                                     | [`get_contact_collider_velocity_at_position`](#class_physicsdirectbodystate3d_method_get_contact_collider_velocity_at_position) ( contact_idx: [`int`](class_int.md) ) const[^const]   |
-| [`int`](class_int.md)                                             | [`get_contact_count`](#class_physicsdirectbodystate3d_method_get_contact_count) ( ) const[^const]                                                                                      |
-| [`Vector3`](class_vector3.md)                                     | [`get_contact_impulse`](#class_physicsdirectbodystate3d_method_get_contact_impulse) ( contact_idx: [`int`](class_int.md) ) const[^const]                                               |
-| [`Vector3`](class_vector3.md)                                     | [`get_contact_local_normal`](#class_physicsdirectbodystate3d_method_get_contact_local_normal) ( contact_idx: [`int`](class_int.md) ) const[^const]                                     |
-| [`Vector3`](class_vector3.md)                                     | [`get_contact_local_position`](#class_physicsdirectbodystate3d_method_get_contact_local_position) ( contact_idx: [`int`](class_int.md) ) const[^const]                                 |
-| [`int`](class_int.md)                                             | [`get_contact_local_shape`](#class_physicsdirectbodystate3d_method_get_contact_local_shape) ( contact_idx: [`int`](class_int.md) ) const[^const]                                       |
-| [`Vector3`](class_vector3.md)                                     | [`get_contact_local_velocity_at_position`](#class_physicsdirectbodystate3d_method_get_contact_local_velocity_at_position) ( contact_idx: [`int`](class_int.md) ) const[^const]         |
-| [`PhysicsDirectSpaceState3D`](class_physicsdirectspacestate3d.md) | [`get_space_state`](#class_physicsdirectbodystate3d_method_get_space_state) ( )                                                                                                        |
-| [`Vector3`](class_vector3.md)                                     | [`get_velocity_at_local_position`](#class_physicsdirectbodystate3d_method_get_velocity_at_local_position) ( local_position: [`Vector3`](class_vector3.md) ) const[^const]              |
-| `void`                                                            | [`integrate_forces`](#class_physicsdirectbodystate3d_method_integrate_forces) ( )                                                                                                      |
-| `void`                                                            | [`set_constant_force`](#class_physicsdirectbodystate3d_method_set_constant_force) ( force: [`Vector3`](class_vector3.md) )                                                             |
-| `void`                                                            | [`set_constant_torque`](#class_physicsdirectbodystate3d_method_set_constant_torque) ( torque: [`Vector3`](class_vector3.md) )                                                          |
+| `void`                                                            | [`add_constant_central_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_central_force) ( force: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )                          |
+| `void`                                                            | [`add_constant_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) ) |
+| `void`                                                            | [`add_constant_torque`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_torque) ( torque: [`Vector3`](class_vector3.md) )                                                          |
+| `void`                                                            | [`apply_central_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_apply_central_force) ( force: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )                                        |
+| `void`                                                            | [`apply_central_impulse`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )                                  |
+| `void`                                                            | [`apply_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_apply_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )               |
+| `void`                                                            | [`apply_impulse`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )         |
+| `void`                                                            | [`apply_torque`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_apply_torque) ( torque: [`Vector3`](class_vector3.md) )                                                                        |
+| `void`                                                            | [`apply_torque_impulse`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_apply_torque_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                       |
+| [`Vector3`](class_vector3.md)                                     | [`get_constant_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_constant_force) ( ) const[^const]                                                                                    |
+| [`Vector3`](class_vector3.md)                                     | [`get_constant_torque`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_constant_torque) ( ) const[^const]                                                                                  |
+| [`RID`](class_rid.md)                                             | [`get_contact_collider`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_collider) ( contact_idx: [`int`](class_int.md) ) const[^const]                                             |
+| [`int`](class_int.md)                                             | [`get_contact_collider_id`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_collider_id) ( contact_idx: [`int`](class_int.md) ) const[^const]                                       |
+| [`Object`](class_object.md)                                       | [`get_contact_collider_object`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_collider_object) ( contact_idx: [`int`](class_int.md) ) const[^const]                               |
+| [`Vector3`](class_vector3.md)                                     | [`get_contact_collider_position`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_collider_position) ( contact_idx: [`int`](class_int.md) ) const[^const]                           |
+| [`int`](class_int.md)                                             | [`get_contact_collider_shape`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_collider_shape) ( contact_idx: [`int`](class_int.md) ) const[^const]                                 |
+| [`Vector3`](class_vector3.md)                                     | [`get_contact_collider_velocity_at_position`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_collider_velocity_at_position) ( contact_idx: [`int`](class_int.md) ) const[^const]   |
+| [`int`](class_int.md)                                             | [`get_contact_count`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_count) ( ) const[^const]                                                                                      |
+| [`Vector3`](class_vector3.md)                                     | [`get_contact_impulse`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_impulse) ( contact_idx: [`int`](class_int.md) ) const[^const]                                               |
+| [`Vector3`](class_vector3.md)                                     | [`get_contact_local_normal`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_local_normal) ( contact_idx: [`int`](class_int.md) ) const[^const]                                     |
+| [`Vector3`](class_vector3.md)                                     | [`get_contact_local_position`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_local_position) ( contact_idx: [`int`](class_int.md) ) const[^const]                                 |
+| [`int`](class_int.md)                                             | [`get_contact_local_shape`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_local_shape) ( contact_idx: [`int`](class_int.md) ) const[^const]                                       |
+| [`Vector3`](class_vector3.md)                                     | [`get_contact_local_velocity_at_position`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_contact_local_velocity_at_position) ( contact_idx: [`int`](class_int.md) ) const[^const]         |
+| [`PhysicsDirectSpaceState3D`](class_physicsdirectspacestate3d.md) | [`get_space_state`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_space_state) ( )                                                                                                        |
+| [`Vector3`](class_vector3.md)                                     | [`get_velocity_at_local_position`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_get_velocity_at_local_position) ( local_position: [`Vector3`](class_vector3.md) ) const[^const]              |
+| `void`                                                            | [`integrate_forces`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_integrate_forces) ( )                                                                                                      |
+| `void`                                                            | [`set_constant_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_set_constant_force) ( force: [`Vector3`](class_vector3.md) )                                                             |
+| `void`                                                            | [`set_constant_torque`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_set_constant_torque) ( torque: [`Vector3`](class_vector3.md) )                                                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -255,7 +255,7 @@ The body's transformation matrix.
 
 Adds a constant directional force without affecting rotation that keeps being applied over time until cleared with `constant_force = Vector3(0, 0, 0)`.
 
-This is equivalent to using [`add_constant_force`](#class_physicsdirectbodystate3d_method_add_constant_force) at the body's center of mass.
+This is equivalent to using [`add_constant_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_force) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -289,7 +289,7 @@ Adds a constant rotational force without affecting position that keeps being app
 
 Applies a directional force without affecting rotation. A force is time dependent and meant to be applied every physics update.
 
-This is equivalent to using [`apply_force`](#class_physicsdirectbodystate3d_method_apply_force) at the body's center of mass.
+This is equivalent to using [`apply_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_apply_force) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -303,7 +303,7 @@ Applies a directional impulse without affecting rotation.
 
 An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-This is equivalent to using [`apply_impulse`](#class_physicsdirectbodystate3d_method_apply_impulse) at the body's center of mass.
+This is equivalent to using [`apply_impulse`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_apply_impulse) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -341,7 +341,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 Applies a rotational force without affecting position. A force is time dependent and meant to be applied every physics update.
 
- **Note:** [`inverse_inertia`](#class_physicsdirectbodystate3d_property_inverse_inertia) is required for this to work. To have [`inverse_inertia`](#class_physicsdirectbodystate3d_property_inverse_inertia), an active [`CollisionShape3D`](class_collisionshape3d.md) must be a child of the node, or you can manually set [`inverse_inertia`](#class_physicsdirectbodystate3d_property_inverse_inertia).
+ **Note:** [`inverse_inertia`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_inertia) is required for this to work. To have [`inverse_inertia`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_inertia), an active [`CollisionShape3D`](class_collisionshape3d.md) must be a child of the node, or you can manually set [`inverse_inertia`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_inertia).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -355,7 +355,7 @@ Applies a rotational impulse to the body without affecting the position.
 
 An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
- **Note:** [`inverse_inertia`](#class_physicsdirectbodystate3d_property_inverse_inertia) is required for this to work. To have [`inverse_inertia`](#class_physicsdirectbodystate3d_property_inverse_inertia), an active [`CollisionShape3D`](class_collisionshape3d.md) must be a child of the node, or you can manually set [`inverse_inertia`](#class_physicsdirectbodystate3d_property_inverse_inertia).
+ **Note:** [`inverse_inertia`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_inertia) is required for this to work. To have [`inverse_inertia`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_inertia), an active [`CollisionShape3D`](class_collisionshape3d.md) must be a child of the node, or you can manually set [`inverse_inertia`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_property_inverse_inertia).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -367,7 +367,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 Returns the body's total constant positional forces applied during each physics update.
 
-See [`add_constant_force`](#class_physicsdirectbodystate3d_method_add_constant_force) and [`add_constant_central_force`](#class_physicsdirectbodystate3d_method_add_constant_central_force).
+See [`add_constant_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_force) and [`add_constant_central_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_central_force).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -379,7 +379,7 @@ See [`add_constant_force`](#class_physicsdirectbodystate3d_method_add_constant_f
 
 Returns the body's total constant rotational forces applied during each physics update.
 
-See [`add_constant_torque`](#class_physicsdirectbodystate3d_method_add_constant_torque).
+See [`add_constant_torque`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_torque).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -451,7 +451,7 @@ Returns the linear velocity vector at the collider's contact point.
 
 Returns the number of contacts this body has with other bodies.
 
- **Note:** By default, this returns 0 unless bodies are configured to monitor contacts. See [`RigidBody3D.contact_monitor`](#class_rigidbody3d_property_contact_monitor).
+ **Note:** By default, this returns 0 unless bodies are configured to monitor contacts. See [`RigidBody3D.contact_monitor`](class_rigidbody3d.md#class_rigidbody3d_property_contact_monitor).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -543,7 +543,7 @@ Updates the body's linear and angular velocity by applying gravity and damping f
 
 Sets the body's total constant positional forces applied during each physics update.
 
-See [`add_constant_force`](#class_physicsdirectbodystate3d_method_add_constant_force) and [`add_constant_central_force`](#class_physicsdirectbodystate3d_method_add_constant_central_force).
+See [`add_constant_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_force) and [`add_constant_central_force`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_central_force).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -555,7 +555,7 @@ See [`add_constant_force`](#class_physicsdirectbodystate3d_method_add_constant_f
 
 Sets the body's total constant rotational forces applied during each physics update.
 
-See [`add_constant_torque`](#class_physicsdirectbodystate3d_method_add_constant_torque).
+See [`add_constant_torque`](class_physicsdirectbodystate3d.md#class_physicsdirectbodystate3d_method_add_constant_torque).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -15,7 +15,7 @@ Base class for audio effect resources.
 
 ## 描述
 
-The base [`Resource`](class_resource.md) for every audio effect. In the editor, an audio effect can be added to the current bus layout through the Audio panel. At run-time, it is also possible to manipulate audio effects through [`AudioServer.add_bus_effect`](#class_audioserver_method_add_bus_effect), [`AudioServer.remove_bus_effect`](#class_audioserver_method_remove_bus_effect), and [`AudioServer.get_bus_effect`](#class_audioserver_method_get_bus_effect).
+The base [`Resource`](class_resource.md) for every audio effect. In the editor, an audio effect can be added to the current bus layout through the Audio panel. At run-time, it is also possible to manipulate audio effects through [`AudioServer.add_bus_effect`](class_audioserver.md#class_audioserver_method_add_bus_effect), [`AudioServer.remove_bus_effect`](class_audioserver.md#class_audioserver_method_remove_bus_effect), and [`AudioServer.get_bus_effect`](class_audioserver.md#class_audioserver_method_get_bus_effect).
 
 When applied on a bus, an audio effect creates a corresponding [`AudioEffectInstance`](class_audioeffectinstance.md). The instance is directly responsible for manipulating the sound, based on the original audio effect's properties.
 
@@ -23,7 +23,7 @@ When applied on a bus, an audio effect creates a corresponding [`AudioEffectInst
 
 |||
 |:-:|:--|
-| [`AudioEffectInstance`](class_audioeffectinstance.md) | [`_instantiate`](#class_audioeffect_private_method__instantiate) ( ) virtual[^virtual] |
+| [`AudioEffectInstance`](class_audioeffectinstance.md) | [`_instantiate`](class_audioeffect.md#class_audioeffect_private_method__instantiate) ( ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -35,7 +35,7 @@ When applied on a bus, an audio effect creates a corresponding [`AudioEffectInst
 
 [`AudioEffectInstance`](class_audioeffectinstance.md) **_instantiate** ( ) virtual[^virtual]<div id="class_audioeffect_private_method__instantiate"></div>
 
-Override this method to customize the [`AudioEffectInstance`](class_audioeffectinstance.md) created when this effect is applied on a bus in the editor's Audio panel, or through [`AudioServer.add_bus_effect`](#class_audioserver_method_add_bus_effect).
+Override this method to customize the [`AudioEffectInstance`](class_audioeffectinstance.md) created when this effect is applied on a bus in the editor's Audio panel, or through [`AudioServer.add_bus_effect`](class_audioserver.md#class_audioserver_method_add_bus_effect).
 
 ```
 

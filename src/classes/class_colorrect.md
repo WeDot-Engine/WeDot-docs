@@ -13,13 +13,13 @@ A control that displays a solid color rectangle.
 
 ## 描述
 
-Displays a rectangle filled with a solid [`color`](#class_colorrect_property_color). If you need to display the border alone, consider using a [`Panel`](class_panel.md) instead.
+Displays a rectangle filled with a solid [`color`](class_colorrect.md#class_colorrect_property_color). If you need to display the border alone, consider using a [`Panel`](class_panel.md) instead.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md) | [`color`](#class_colorrect_property_color) | ``Color(1, 1, 1, 1)`` |
+| [`Color`](class_color.md) | [`color`](class_colorrect.md#class_colorrect_property_color) | ``Color(1, 1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

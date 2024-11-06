@@ -23,18 +23,18 @@ The **PhysicalBone2D** node is a [`RigidBody2D`](class_rigidbody2d.md)-based nod
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)         | [`auto_configure_joint`](#class_physicalbone2d_property_auto_configure_joint)               | ``true``         |
-| [`int`](class_int.md)           | [`bone2d_index`](#class_physicalbone2d_property_bone2d_index)                               | ``-1``           |
-| [`NodePath`](class_nodepath.md) | [`bone2d_nodepath`](#class_physicalbone2d_property_bone2d_nodepath)                         | ``NodePath("")`` |
-| [`bool`](class_bool.md)         | [`follow_bone_when_simulating`](#class_physicalbone2d_property_follow_bone_when_simulating) | ``false``        |
-| [`bool`](class_bool.md)         | [`simulate_physics`](#class_physicalbone2d_property_simulate_physics)                       | ``false``        |
+| [`bool`](class_bool.md)         | [`auto_configure_joint`](class_physicalbone2d.md#class_physicalbone2d_property_auto_configure_joint)               | ``true``         |
+| [`int`](class_int.md)           | [`bone2d_index`](class_physicalbone2d.md#class_physicalbone2d_property_bone2d_index)                               | ``-1``           |
+| [`NodePath`](class_nodepath.md) | [`bone2d_nodepath`](class_physicalbone2d.md#class_physicalbone2d_property_bone2d_nodepath)                         | ``NodePath("")`` |
+| [`bool`](class_bool.md)         | [`follow_bone_when_simulating`](class_physicalbone2d.md#class_physicalbone2d_property_follow_bone_when_simulating) | ``false``        |
+| [`bool`](class_bool.md)         | [`simulate_physics`](class_physicalbone2d.md#class_physicalbone2d_property_simulate_physics)                       | ``false``        |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Joint2D`](class_joint2d.md) | [`get_joint`](#class_physicalbone2d_method_get_joint) ( ) const[^const]                         |
-| [`bool`](class_bool.md)       | [`is_simulating_physics`](#class_physicalbone2d_method_is_simulating_physics) ( ) const[^const] |
+| [`Joint2D`](class_joint2d.md) | [`get_joint`](class_physicalbone2d.md#class_physicalbone2d_method_get_joint) ( ) const[^const]                         |
+| [`bool`](class_bool.md)       | [`is_simulating_physics`](class_physicalbone2d.md#class_physicalbone2d_method_is_simulating_physics) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

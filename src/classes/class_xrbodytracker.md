@@ -23,18 +23,18 @@ Use [`XRBodyModifier3D`](class_xrbodymodifier3d.md) to animate a body mesh using
 
 |||
 |:-:|:--|
-| [BodyFlags](#enum_xrbodytracker_bodyflags) | [`body_flags`](#class_xrbodytracker_property_body_flags)               | ``0``                                                            |
-| [`bool`](class_bool.md)                    | [`has_tracking_data`](#class_xrbodytracker_property_has_tracking_data) | ``false``                                                        |
-| [TrackerType](#enum_xrserver_trackertype)  | type                                                                   | ``32`` (overrides [`XRTracker`](#class_xrtracker_property_type)) |
+| [BodyFlags](#enum_xrbodytracker_bodyflags) | [`body_flags`](class_xrbodytracker.md#class_xrbodytracker_property_body_flags)               | ``0``                                                                              |
+| [`bool`](class_bool.md)                    | [`has_tracking_data`](class_xrbodytracker.md#class_xrbodytracker_property_has_tracking_data) | ``false``                                                                          |
+| [TrackerType](#enum_xrserver_trackertype)  | type                                                                                         | ``32`` (overrides [`XRTracker`](class_xrtracker.md#class_xrtracker_property_type)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [JointFlags](#enum_xrbodytracker_jointflags) | [`get_joint_flags`](#class_xrbodytracker_method_get_joint_flags) ( joint: [Joint](#enum_xrbodytracker_joint) ) const[^const]                                             |
-| [`Transform3D`](class_transform3d.md)        | [`get_joint_transform`](#class_xrbodytracker_method_get_joint_transform) ( joint: [Joint](#enum_xrbodytracker_joint) ) const[^const]                                     |
-| `void`                                       | [`set_joint_flags`](#class_xrbodytracker_method_set_joint_flags) ( joint: [Joint](#enum_xrbodytracker_joint), flags: [JointFlags](#enum_xrbodytracker_jointflags) )      |
-| `void`                                       | [`set_joint_transform`](#class_xrbodytracker_method_set_joint_transform) ( joint: [Joint](#enum_xrbodytracker_joint), transform: [`Transform3D`](class_transform3d.md) ) |
+| [JointFlags](#enum_xrbodytracker_jointflags) | [`get_joint_flags`](class_xrbodytracker.md#class_xrbodytracker_method_get_joint_flags) ( joint: [Joint](#enum_xrbodytracker_joint) ) const[^const]                                             |
+| [`Transform3D`](class_transform3d.md)        | [`get_joint_transform`](class_xrbodytracker.md#class_xrbodytracker_method_get_joint_transform) ( joint: [Joint](#enum_xrbodytracker_joint) ) const[^const]                                     |
+| `void`                                       | [`set_joint_flags`](class_xrbodytracker.md#class_xrbodytracker_method_set_joint_flags) ( joint: [Joint](#enum_xrbodytracker_joint), flags: [JointFlags](#enum_xrbodytracker_jointflags) )      |
+| `void`                                       | [`set_joint_transform`](class_xrbodytracker.md#class_xrbodytracker_method_set_joint_transform) ( joint: [Joint](#enum_xrbodytracker_joint), transform: [`Transform3D`](class_transform3d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

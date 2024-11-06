@@ -25,23 +25,23 @@ This resource also controls how strongly all of the modifications are applied to
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`enabled`](#class_skeletonmodificationstack2d_property_enabled)                       | ``false`` |
-| [`int`](class_int.md)     | [`modification_count`](#class_skeletonmodificationstack2d_property_modification_count) | ``0``     |
-| [`float`](class_float.md) | [`strength`](#class_skeletonmodificationstack2d_property_strength)                     | ``1.0``   |
+| [`bool`](class_bool.md)   | [`enabled`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_property_enabled)                       | ``false`` |
+| [`int`](class_int.md)     | [`modification_count`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_property_modification_count) | ``0``     |
+| [`float`](class_float.md) | [`strength`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_property_strength)                     | ``1.0``   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                      | [`add_modification`](#class_skeletonmodificationstack2d_method_add_modification) ( modification: [`SkeletonModification2D`](class_skeletonmodification2d.md) )                                 |
-| `void`                                                      | [`delete_modification`](#class_skeletonmodificationstack2d_method_delete_modification) ( mod_idx: [`int`](class_int.md) )                                                                      |
-| `void`                                                      | [`enable_all_modifications`](#class_skeletonmodificationstack2d_method_enable_all_modifications) ( enabled: [`bool`](class_bool.md) )                                                          |
-| `void`                                                      | [`execute`](#class_skeletonmodificationstack2d_method_execute) ( delta: [`float`](class_float.md), execution_mode: [`int`](class_int.md) )                                                     |
-| [`bool`](class_bool.md)                                     | [`get_is_setup`](#class_skeletonmodificationstack2d_method_get_is_setup) ( ) const[^const]                                                                                                     |
-| [`SkeletonModification2D`](class_skeletonmodification2d.md) | [`get_modification`](#class_skeletonmodificationstack2d_method_get_modification) ( mod_idx: [`int`](class_int.md) ) const[^const]                                                              |
-| [`Skeleton2D`](class_skeleton2d.md)                         | [`get_skeleton`](#class_skeletonmodificationstack2d_method_get_skeleton) ( ) const[^const]                                                                                                     |
-| `void`                                                      | [`set_modification`](#class_skeletonmodificationstack2d_method_set_modification) ( mod_idx: [`int`](class_int.md), modification: [`SkeletonModification2D`](class_skeletonmodification2d.md) ) |
-| `void`                                                      | [`setup`](#class_skeletonmodificationstack2d_method_setup) ( )                                                                                                                                 |
+| `void`                                                      | [`add_modification`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_add_modification) ( modification: [`SkeletonModification2D`](class_skeletonmodification2d.md) )                                 |
+| `void`                                                      | [`delete_modification`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_delete_modification) ( mod_idx: [`int`](class_int.md) )                                                                      |
+| `void`                                                      | [`enable_all_modifications`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_enable_all_modifications) ( enabled: [`bool`](class_bool.md) )                                                          |
+| `void`                                                      | [`execute`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_execute) ( delta: [`float`](class_float.md), execution_mode: [`int`](class_int.md) )                                                     |
+| [`bool`](class_bool.md)                                     | [`get_is_setup`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_get_is_setup) ( ) const[^const]                                                                                                     |
+| [`SkeletonModification2D`](class_skeletonmodification2d.md) | [`get_modification`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_get_modification) ( mod_idx: [`int`](class_int.md) ) const[^const]                                                              |
+| [`Skeleton2D`](class_skeleton2d.md)                         | [`get_skeleton`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_get_skeleton) ( ) const[^const]                                                                                                     |
+| `void`                                                      | [`set_modification`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_set_modification) ( mod_idx: [`int`](class_int.md), modification: [`SkeletonModification2D`](class_skeletonmodification2d.md) ) |
+| `void`                                                      | [`setup`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_setup) ( )                                                                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -124,7 +124,7 @@ Enables all [`SkeletonModification2D`](class_skeletonmodification2d.md) s in the
 
 `void` **execute** ( delta: [`float`](class_float.md), execution_mode: [`int`](class_int.md) )<div id="class_skeletonmodificationstack2d_method_execute"></div>
 
-Executes all of the [`SkeletonModification2D`](class_skeletonmodification2d.md) s in the stack that use the same execution mode as the passed-in `execution_mode`, starting from index `0` to [`modification_count`](#class_skeletonmodificationstack2d_property_modification_count).
+Executes all of the [`SkeletonModification2D`](class_skeletonmodification2d.md) s in the stack that use the same execution mode as the passed-in `execution_mode`, starting from index `0` to [`modification_count`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_property_modification_count).
 
  **Note:** The order of the modifications can matter depending on the modifications. For example, modifications on a spine should operate before modifications on the arms in order to get proper results.
 

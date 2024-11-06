@@ -21,8 +21,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)         | [`constant_id`](#class_rdpipelinespecializationconstant_property_constant_id) | ``0`` |
-| [`Variant`](class_variant.md) | [`value`](#class_rdpipelinespecializationconstant_property_value)             |       |
+| [`int`](class_int.md)         | [`constant_id`](class_rdpipelinespecializationconstant.md#class_rdpipelinespecializationconstant_property_constant_id) | ``0`` |
+| [`Variant`](class_variant.md) | [`value`](class_rdpipelinespecializationconstant.md#class_rdpipelinespecializationconstant_property_value)             |       |
 
 <!-- rst-class:: classref-section-separator -->
 

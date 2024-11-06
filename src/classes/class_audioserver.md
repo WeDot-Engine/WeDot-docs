@@ -19,56 +19,56 @@ Server interface for low-level audio access.
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)       | [`bus_count`](#class_audioserver_property_bus_count)                       | ``1``         |
-| [`String`](class_string.md) | [`input_device`](#class_audioserver_property_input_device)                 | ``"Default"`` |
-| [`String`](class_string.md) | [`output_device`](#class_audioserver_property_output_device)               | ``"Default"`` |
-| [`float`](class_float.md)   | [`playback_speed_scale`](#class_audioserver_property_playback_speed_scale) | ``1.0``       |
+| [`int`](class_int.md)       | [`bus_count`](class_audioserver.md#class_audioserver_property_bus_count)                       | ``1``         |
+| [`String`](class_string.md) | [`input_device`](class_audioserver.md#class_audioserver_property_input_device)                 | ``"Default"`` |
+| [`String`](class_string.md) | [`output_device`](class_audioserver.md#class_audioserver_property_output_device)               | ``"Default"`` |
+| [`float`](class_float.md)   | [`playback_speed_scale`](class_audioserver.md#class_audioserver_property_playback_speed_scale) | ``1.0``       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                | [`add_bus`](#class_audioserver_method_add_bus) ( at_position: [`int`](class_int.md) = -1 )                                                                                               |
-| `void`                                                | [`add_bus_effect`](#class_audioserver_method_add_bus_effect) ( bus_idx: [`int`](class_int.md), effect: [`AudioEffect`](class_audioeffect.md), at_position: [`int`](class_int.md) = -1 )  |
-| [`AudioBusLayout`](class_audiobuslayout.md)           | [`generate_bus_layout`](#class_audioserver_method_generate_bus_layout) ( ) const[^const]                                                                                                 |
-| [`int`](class_int.md)                                 | [`get_bus_channels`](#class_audioserver_method_get_bus_channels) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                        |
-| [`AudioEffect`](class_audioeffect.md)                 | [`get_bus_effect`](#class_audioserver_method_get_bus_effect) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md) )                                                       |
-| [`int`](class_int.md)                                 | [`get_bus_effect_count`](#class_audioserver_method_get_bus_effect_count) ( bus_idx: [`int`](class_int.md) )                                                                              |
-| [`AudioEffectInstance`](class_audioeffectinstance.md) | [`get_bus_effect_instance`](#class_audioserver_method_get_bus_effect_instance) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md), channel: [`int`](class_int.md) = 0 ) |
-| [`int`](class_int.md)                                 | [`get_bus_index`](#class_audioserver_method_get_bus_index) ( bus_name: [`StringName`](class_stringname.md) ) const[^const]                                                               |
-| [`String`](class_string.md)                           | [`get_bus_name`](#class_audioserver_method_get_bus_name) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                |
-| [`float`](class_float.md)                             | [`get_bus_peak_volume_left_db`](#class_audioserver_method_get_bus_peak_volume_left_db) ( bus_idx: [`int`](class_int.md), channel: [`int`](class_int.md) ) const[^const]                  |
-| [`float`](class_float.md)                             | [`get_bus_peak_volume_right_db`](#class_audioserver_method_get_bus_peak_volume_right_db) ( bus_idx: [`int`](class_int.md), channel: [`int`](class_int.md) ) const[^const]                |
-| [`StringName`](class_stringname.md)                   | [`get_bus_send`](#class_audioserver_method_get_bus_send) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                |
-| [`float`](class_float.md)                             | [`get_bus_volume_db`](#class_audioserver_method_get_bus_volume_db) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                      |
-| [`PackedStringArray`](class_packedstringarray.md)     | [`get_input_device_list`](#class_audioserver_method_get_input_device_list) ( )                                                                                                           |
-| [`float`](class_float.md)                             | [`get_mix_rate`](#class_audioserver_method_get_mix_rate) ( ) const[^const]                                                                                                               |
-| [`PackedStringArray`](class_packedstringarray.md)     | [`get_output_device_list`](#class_audioserver_method_get_output_device_list) ( )                                                                                                         |
-| [`float`](class_float.md)                             | [`get_output_latency`](#class_audioserver_method_get_output_latency) ( ) const[^const]                                                                                                   |
-| [SpeakerMode](#enum_audioserver_speakermode)          | [`get_speaker_mode`](#class_audioserver_method_get_speaker_mode) ( ) const[^const]                                                                                                       |
-| [`float`](class_float.md)                             | [`get_time_since_last_mix`](#class_audioserver_method_get_time_since_last_mix) ( ) const[^const]                                                                                         |
-| [`float`](class_float.md)                             | [`get_time_to_next_mix`](#class_audioserver_method_get_time_to_next_mix) ( ) const[^const]                                                                                               |
-| [`bool`](class_bool.md)                               | [`is_bus_bypassing_effects`](#class_audioserver_method_is_bus_bypassing_effects) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                        |
-| [`bool`](class_bool.md)                               | [`is_bus_effect_enabled`](#class_audioserver_method_is_bus_effect_enabled) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md) ) const[^const]                           |
-| [`bool`](class_bool.md)                               | [`is_bus_mute`](#class_audioserver_method_is_bus_mute) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                  |
-| [`bool`](class_bool.md)                               | [`is_bus_solo`](#class_audioserver_method_is_bus_solo) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                  |
-| [`bool`](class_bool.md)                               | [`is_stream_registered_as_sample`](#class_audioserver_method_is_stream_registered_as_sample) ( stream: [`AudioStream`](class_audiostream.md) )                                           |
-| `void`                                                | [`lock`](#class_audioserver_method_lock) ( )                                                                                                                                             |
-| `void`                                                | [`move_bus`](#class_audioserver_method_move_bus) ( index: [`int`](class_int.md), to_index: [`int`](class_int.md) )                                                                       |
-| `void`                                                | [`register_stream_as_sample`](#class_audioserver_method_register_stream_as_sample) ( stream: [`AudioStream`](class_audiostream.md) )                                                     |
-| `void`                                                | [`remove_bus`](#class_audioserver_method_remove_bus) ( index: [`int`](class_int.md) )                                                                                                    |
-| `void`                                                | [`remove_bus_effect`](#class_audioserver_method_remove_bus_effect) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md) )                                                 |
-| `void`                                                | [`set_bus_bypass_effects`](#class_audioserver_method_set_bus_bypass_effects) ( bus_idx: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                         |
-| `void`                                                | [`set_bus_effect_enabled`](#class_audioserver_method_set_bus_effect_enabled) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )     |
-| `void`                                                | [`set_bus_layout`](#class_audioserver_method_set_bus_layout) ( bus_layout: [`AudioBusLayout`](class_audiobuslayout.md) )                                                                 |
-| `void`                                                | [`set_bus_mute`](#class_audioserver_method_set_bus_mute) ( bus_idx: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                             |
-| `void`                                                | [`set_bus_name`](#class_audioserver_method_set_bus_name) ( bus_idx: [`int`](class_int.md), name: [`String`](class_string.md) )                                                           |
-| `void`                                                | [`set_bus_send`](#class_audioserver_method_set_bus_send) ( bus_idx: [`int`](class_int.md), send: [`StringName`](class_stringname.md) )                                                   |
-| `void`                                                | [`set_bus_solo`](#class_audioserver_method_set_bus_solo) ( bus_idx: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                             |
-| `void`                                                | [`set_bus_volume_db`](#class_audioserver_method_set_bus_volume_db) ( bus_idx: [`int`](class_int.md), volume_db: [`float`](class_float.md) )                                              |
-| `void`                                                | [`set_enable_tagging_used_audio_streams`](#class_audioserver_method_set_enable_tagging_used_audio_streams) ( enable: [`bool`](class_bool.md) )                                           |
-| `void`                                                | [`swap_bus_effects`](#class_audioserver_method_swap_bus_effects) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md), by_effect_idx: [`int`](class_int.md) )             |
-| `void`                                                | [`unlock`](#class_audioserver_method_unlock) ( )                                                                                                                                         |
+| `void`                                                | [`add_bus`](class_audioserver.md#class_audioserver_method_add_bus) ( at_position: [`int`](class_int.md) = -1 )                                                                                               |
+| `void`                                                | [`add_bus_effect`](class_audioserver.md#class_audioserver_method_add_bus_effect) ( bus_idx: [`int`](class_int.md), effect: [`AudioEffect`](class_audioeffect.md), at_position: [`int`](class_int.md) = -1 )  |
+| [`AudioBusLayout`](class_audiobuslayout.md)           | [`generate_bus_layout`](class_audioserver.md#class_audioserver_method_generate_bus_layout) ( ) const[^const]                                                                                                 |
+| [`int`](class_int.md)                                 | [`get_bus_channels`](class_audioserver.md#class_audioserver_method_get_bus_channels) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                        |
+| [`AudioEffect`](class_audioeffect.md)                 | [`get_bus_effect`](class_audioserver.md#class_audioserver_method_get_bus_effect) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md) )                                                       |
+| [`int`](class_int.md)                                 | [`get_bus_effect_count`](class_audioserver.md#class_audioserver_method_get_bus_effect_count) ( bus_idx: [`int`](class_int.md) )                                                                              |
+| [`AudioEffectInstance`](class_audioeffectinstance.md) | [`get_bus_effect_instance`](class_audioserver.md#class_audioserver_method_get_bus_effect_instance) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md), channel: [`int`](class_int.md) = 0 ) |
+| [`int`](class_int.md)                                 | [`get_bus_index`](class_audioserver.md#class_audioserver_method_get_bus_index) ( bus_name: [`StringName`](class_stringname.md) ) const[^const]                                                               |
+| [`String`](class_string.md)                           | [`get_bus_name`](class_audioserver.md#class_audioserver_method_get_bus_name) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                |
+| [`float`](class_float.md)                             | [`get_bus_peak_volume_left_db`](class_audioserver.md#class_audioserver_method_get_bus_peak_volume_left_db) ( bus_idx: [`int`](class_int.md), channel: [`int`](class_int.md) ) const[^const]                  |
+| [`float`](class_float.md)                             | [`get_bus_peak_volume_right_db`](class_audioserver.md#class_audioserver_method_get_bus_peak_volume_right_db) ( bus_idx: [`int`](class_int.md), channel: [`int`](class_int.md) ) const[^const]                |
+| [`StringName`](class_stringname.md)                   | [`get_bus_send`](class_audioserver.md#class_audioserver_method_get_bus_send) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                |
+| [`float`](class_float.md)                             | [`get_bus_volume_db`](class_audioserver.md#class_audioserver_method_get_bus_volume_db) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                      |
+| [`PackedStringArray`](class_packedstringarray.md)     | [`get_input_device_list`](class_audioserver.md#class_audioserver_method_get_input_device_list) ( )                                                                                                           |
+| [`float`](class_float.md)                             | [`get_mix_rate`](class_audioserver.md#class_audioserver_method_get_mix_rate) ( ) const[^const]                                                                                                               |
+| [`PackedStringArray`](class_packedstringarray.md)     | [`get_output_device_list`](class_audioserver.md#class_audioserver_method_get_output_device_list) ( )                                                                                                         |
+| [`float`](class_float.md)                             | [`get_output_latency`](class_audioserver.md#class_audioserver_method_get_output_latency) ( ) const[^const]                                                                                                   |
+| [SpeakerMode](#enum_audioserver_speakermode)          | [`get_speaker_mode`](class_audioserver.md#class_audioserver_method_get_speaker_mode) ( ) const[^const]                                                                                                       |
+| [`float`](class_float.md)                             | [`get_time_since_last_mix`](class_audioserver.md#class_audioserver_method_get_time_since_last_mix) ( ) const[^const]                                                                                         |
+| [`float`](class_float.md)                             | [`get_time_to_next_mix`](class_audioserver.md#class_audioserver_method_get_time_to_next_mix) ( ) const[^const]                                                                                               |
+| [`bool`](class_bool.md)                               | [`is_bus_bypassing_effects`](class_audioserver.md#class_audioserver_method_is_bus_bypassing_effects) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                        |
+| [`bool`](class_bool.md)                               | [`is_bus_effect_enabled`](class_audioserver.md#class_audioserver_method_is_bus_effect_enabled) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md) ) const[^const]                           |
+| [`bool`](class_bool.md)                               | [`is_bus_mute`](class_audioserver.md#class_audioserver_method_is_bus_mute) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                  |
+| [`bool`](class_bool.md)                               | [`is_bus_solo`](class_audioserver.md#class_audioserver_method_is_bus_solo) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                  |
+| [`bool`](class_bool.md)                               | [`is_stream_registered_as_sample`](class_audioserver.md#class_audioserver_method_is_stream_registered_as_sample) ( stream: [`AudioStream`](class_audiostream.md) )                                           |
+| `void`                                                | [`lock`](class_audioserver.md#class_audioserver_method_lock) ( )                                                                                                                                             |
+| `void`                                                | [`move_bus`](class_audioserver.md#class_audioserver_method_move_bus) ( index: [`int`](class_int.md), to_index: [`int`](class_int.md) )                                                                       |
+| `void`                                                | [`register_stream_as_sample`](class_audioserver.md#class_audioserver_method_register_stream_as_sample) ( stream: [`AudioStream`](class_audiostream.md) )                                                     |
+| `void`                                                | [`remove_bus`](class_audioserver.md#class_audioserver_method_remove_bus) ( index: [`int`](class_int.md) )                                                                                                    |
+| `void`                                                | [`remove_bus_effect`](class_audioserver.md#class_audioserver_method_remove_bus_effect) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md) )                                                 |
+| `void`                                                | [`set_bus_bypass_effects`](class_audioserver.md#class_audioserver_method_set_bus_bypass_effects) ( bus_idx: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                         |
+| `void`                                                | [`set_bus_effect_enabled`](class_audioserver.md#class_audioserver_method_set_bus_effect_enabled) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )     |
+| `void`                                                | [`set_bus_layout`](class_audioserver.md#class_audioserver_method_set_bus_layout) ( bus_layout: [`AudioBusLayout`](class_audiobuslayout.md) )                                                                 |
+| `void`                                                | [`set_bus_mute`](class_audioserver.md#class_audioserver_method_set_bus_mute) ( bus_idx: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                             |
+| `void`                                                | [`set_bus_name`](class_audioserver.md#class_audioserver_method_set_bus_name) ( bus_idx: [`int`](class_int.md), name: [`String`](class_string.md) )                                                           |
+| `void`                                                | [`set_bus_send`](class_audioserver.md#class_audioserver_method_set_bus_send) ( bus_idx: [`int`](class_int.md), send: [`StringName`](class_stringname.md) )                                                   |
+| `void`                                                | [`set_bus_solo`](class_audioserver.md#class_audioserver_method_set_bus_solo) ( bus_idx: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                             |
+| `void`                                                | [`set_bus_volume_db`](class_audioserver.md#class_audioserver_method_set_bus_volume_db) ( bus_idx: [`int`](class_int.md), volume_db: [`float`](class_float.md) )                                              |
+| `void`                                                | [`set_enable_tagging_used_audio_streams`](class_audioserver.md#class_audioserver_method_set_enable_tagging_used_audio_streams) ( enable: [`bool`](class_bool.md) )                                           |
+| `void`                                                | [`swap_bus_effects`](class_audioserver.md#class_audioserver_method_swap_bus_effects) ( bus_idx: [`int`](class_int.md), effect_idx: [`int`](class_int.md), by_effect_idx: [`int`](class_int.md) )             |
+| `void`                                                | [`unlock`](class_audioserver.md#class_audioserver_method_unlock) ( )                                                                                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -140,7 +140,7 @@ enum **PlaybackType**: <div id="enum_audioserver_playbacktype"></div>
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-The playback will be considered of the type declared at [`ProjectSettings.audio/general/default_playback_type`](#class_projectsettings_property_audio/general/default_playback_type).
+The playback will be considered of the type declared at [`ProjectSettings.audio/general/default_playback_type`](class_projectsettings.md#class_projectsettings_property_audio/general/default_playback_type).
 
 <div id="_class_audioserver_constant_playback_type_stream"></div>
 
@@ -196,9 +196,9 @@ Number of available audio buses.
 - `void` **set_input_device** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_input_device** ( )
 
-Name of the current device for audio input (see [`get_input_device_list`](#class_audioserver_method_get_input_device_list)). On systems with multiple audio inputs (such as analog, USB and HDMI audio), this can be used to select the audio input device. The value `"Default"` will record audio on the system-wide default audio input. If an invalid device name is set, the value will be reverted back to `"Default"`.
+Name of the current device for audio input (see [`get_input_device_list`](class_audioserver.md#class_audioserver_method_get_input_device_list)). On systems with multiple audio inputs (such as analog, USB and HDMI audio), this can be used to select the audio input device. The value `"Default"` will record audio on the system-wide default audio input. If an invalid device name is set, the value will be reverted back to `"Default"`.
 
- **Note:** [`ProjectSettings.audio/driver/enable_input`](#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+ **Note:** [`ProjectSettings.audio/driver/enable_input`](class_projectsettings.md#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -211,7 +211,7 @@ Name of the current device for audio input (see [`get_input_device_list`](#class
 - `void` **set_output_device** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_output_device** ( )
 
-Name of the current device for audio output (see [`get_output_device_list`](#class_audioserver_method_get_output_device_list)). On systems with multiple audio outputs (such as analog, USB and HDMI audio), this can be used to select the audio output device. The value `"Default"` will play audio on the system-wide default audio output. If an invalid device name is set, the value will be reverted back to `"Default"`.
+Name of the current device for audio output (see [`get_output_device_list`](class_audioserver.md#class_audioserver_method_get_output_device_list)). On systems with multiple audio outputs (such as analog, USB and HDMI audio), this can be used to select the audio output device. The value `"Default"` will play audio on the system-wide default audio output. If an invalid device name is set, the value will be reverted back to `"Default"`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -224,7 +224,7 @@ Name of the current device for audio output (see [`get_output_device_list`](#cla
 - `void` **set_playback_speed_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_playback_speed_scale** ( )
 
-Scales the rate at which audio is played (i.e. setting it to `0.5` will make the audio be played at half its speed). See also [`Engine.time_scale`](#class_engine_property_time_scale) to affect the general simulation speed, which is independent from [`playback_speed_scale`](#class_audioserver_property_playback_speed_scale).
+Scales the rate at which audio is played (i.e. setting it to `0.5` will make the audio be played at half its speed). See also [`Engine.time_scale`](class_engine.md#class_engine_property_time_scale) to affect the general simulation speed, which is independent from [`playback_speed_scale`](class_audioserver.md#class_audioserver_property_playback_speed_scale).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -368,7 +368,7 @@ Returns the volume of the bus at index `bus_idx` in dB.
 
 Returns the names of all audio input devices detected on the system.
 
- **Note:** [`ProjectSettings.audio/driver/enable_input`](#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+ **Note:** [`ProjectSettings.audio/driver/enable_input`](class_projectsettings.md#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -398,9 +398,9 @@ Returns the names of all audio output devices detected on the system.
 
 [`float`](class_float.md) **get_output_latency** ( ) const[^const]<div id="class_audioserver_method_get_output_latency"></div>
 
-Returns the audio driver's effective output latency. This is based on [`ProjectSettings.audio/driver/output_latency`](#class_projectsettings_property_audio/driver/output_latency), but the exact returned value will differ depending on the operating system and audio driver.
+Returns the audio driver's effective output latency. This is based on [`ProjectSettings.audio/driver/output_latency`](class_projectsettings.md#class_projectsettings_property_audio/driver/output_latency), but the exact returned value will differ depending on the operating system and audio driver.
 
- **Note:** This can be expensive; it is not recommended to call [`get_output_latency`](#class_audioserver_method_get_output_latency) every frame.
+ **Note:** This can be expensive; it is not recommended to call [`get_output_latency`](class_audioserver.md#class_audioserver_method_get_output_latency) every frame.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -484,7 +484,7 @@ If `true`, the bus at index `bus_idx` is in solo mode.
 
 If `true`, the stream is registered as a sample. The engine will not have to register it before playing the sample.
 
-If `false`, the stream will have to be registered before playing it. To prevent lag spikes, register the stream as sample with [`register_stream_as_sample`](#class_audioserver_method_register_stream_as_sample).
+If `false`, the stream will have to be registered before playing it. To prevent lag spikes, register the stream as sample with [`register_stream_as_sample`](class_audioserver.md#class_audioserver_method_register_stream_as_sample).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -630,7 +630,7 @@ Sets the volume of the bus at index `bus_idx` to `volume_db`.
 
 `void` **set_enable_tagging_used_audio_streams** ( enable: [`bool`](class_bool.md) )<div id="class_audioserver_method_set_enable_tagging_used_audio_streams"></div>
 
-If set to `true`, all instances of [`AudioStreamPlayback`](class_audiostreamplayback.md) will call [`AudioStreamPlayback._tag_used_streams`](#class_audiostreamplayback_private_method__tag_used_streams) every mix step.
+If set to `true`, all instances of [`AudioStreamPlayback`](class_audiostreamplayback.md) will call [`AudioStreamPlayback._tag_used_streams`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__tag_used_streams) every mix step.
 
  **Note:** This is enabled by default in the editor, as it is used by editor plugins for the audio stream previews.
 

@@ -13,18 +13,18 @@ MP3 audio stream driver.
 
 ## 描述
 
-MP3 audio stream driver. See [`data`](#class_audiostreammp3_property_data) if you want to load an MP3 file at run-time.
+MP3 audio stream driver. See [`data`](class_audiostreammp3.md#class_audiostreammp3_property_data) if you want to load an MP3 file at run-time.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                         | [`bar_beats`](#class_audiostreammp3_property_bar_beats)     | ``4``                 |
-| [`int`](class_int.md)                         | [`beat_count`](#class_audiostreammp3_property_beat_count)   | ``0``                 |
-| [`float`](class_float.md)                     | [`bpm`](#class_audiostreammp3_property_bpm)                 | ``0.0``               |
-| [`PackedByteArray`](class_packedbytearray.md) | [`data`](#class_audiostreammp3_property_data)               | ``PackedByteArray()`` |
-| [`bool`](class_bool.md)                       | [`loop`](#class_audiostreammp3_property_loop)               | ``false``             |
-| [`float`](class_float.md)                     | [`loop_offset`](#class_audiostreammp3_property_loop_offset) | ``0.0``               |
+| [`int`](class_int.md)                         | [`bar_beats`](class_audiostreammp3.md#class_audiostreammp3_property_bar_beats)     | ``4``                 |
+| [`int`](class_int.md)                         | [`beat_count`](class_audiostreammp3.md#class_audiostreammp3_property_beat_count)   | ``0``                 |
+| [`float`](class_float.md)                     | [`bpm`](class_audiostreammp3.md#class_audiostreammp3_property_bpm)                 | ``0.0``               |
+| [`PackedByteArray`](class_packedbytearray.md) | [`data`](class_audiostreammp3.md#class_audiostreammp3_property_data)               | ``PackedByteArray()`` |
+| [`bool`](class_bool.md)                       | [`loop`](class_audiostreammp3.md#class_audiostreammp3_property_loop)               | ``false``             |
+| [`float`](class_float.md)                     | [`loop_offset`](class_audiostreammp3.md#class_audiostreammp3_property_loop_offset) | ``0.0``               |
 
 <!-- rst-class:: classref-section-separator -->
 

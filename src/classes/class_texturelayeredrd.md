@@ -21,7 +21,7 @@ Base class for [`Texture2DArrayRD`](class_texture2darrayrd.md), [`TextureCubemap
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md) | [`texture_rd_rid`](#class_texturelayeredrd_property_texture_rd_rid) |
+| [`RID`](class_rid.md) | [`texture_rd_rid`](class_texturelayeredrd.md#class_texturelayeredrd_property_texture_rd_rid) |
 
 <!-- rst-class:: classref-section-separator -->
 

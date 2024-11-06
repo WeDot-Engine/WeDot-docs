@@ -23,28 +23,28 @@ Supported video formats are [*Ogg Theora*](https://www.theora.org/) (`.ogv`, [`V
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                 | [`audio_track`](#class_videostreamplayer_property_audio_track)         | ``0``         |
-| [`bool`](class_bool.md)               | [`autoplay`](#class_videostreamplayer_property_autoplay)               | ``false``     |
-| [`int`](class_int.md)                 | [`buffering_msec`](#class_videostreamplayer_property_buffering_msec)   | ``500``       |
-| [`StringName`](class_stringname.md)   | [`bus`](#class_videostreamplayer_property_bus)                         | ``&"Master"`` |
-| [`bool`](class_bool.md)               | [`expand`](#class_videostreamplayer_property_expand)                   | ``false``     |
-| [`bool`](class_bool.md)               | [`loop`](#class_videostreamplayer_property_loop)                       | ``false``     |
-| [`bool`](class_bool.md)               | [`paused`](#class_videostreamplayer_property_paused)                   | ``false``     |
-| [`VideoStream`](class_videostream.md) | [`stream`](#class_videostreamplayer_property_stream)                   |               |
-| [`float`](class_float.md)             | [`stream_position`](#class_videostreamplayer_property_stream_position) |               |
-| [`float`](class_float.md)             | [`volume`](#class_videostreamplayer_property_volume)                   |               |
-| [`float`](class_float.md)             | [`volume_db`](#class_videostreamplayer_property_volume_db)             | ``0.0``       |
+| [`int`](class_int.md)                 | [`audio_track`](class_videostreamplayer.md#class_videostreamplayer_property_audio_track)         | ``0``         |
+| [`bool`](class_bool.md)               | [`autoplay`](class_videostreamplayer.md#class_videostreamplayer_property_autoplay)               | ``false``     |
+| [`int`](class_int.md)                 | [`buffering_msec`](class_videostreamplayer.md#class_videostreamplayer_property_buffering_msec)   | ``500``       |
+| [`StringName`](class_stringname.md)   | [`bus`](class_videostreamplayer.md#class_videostreamplayer_property_bus)                         | ``&"Master"`` |
+| [`bool`](class_bool.md)               | [`expand`](class_videostreamplayer.md#class_videostreamplayer_property_expand)                   | ``false``     |
+| [`bool`](class_bool.md)               | [`loop`](class_videostreamplayer.md#class_videostreamplayer_property_loop)                       | ``false``     |
+| [`bool`](class_bool.md)               | [`paused`](class_videostreamplayer.md#class_videostreamplayer_property_paused)                   | ``false``     |
+| [`VideoStream`](class_videostream.md) | [`stream`](class_videostreamplayer.md#class_videostreamplayer_property_stream)                   |               |
+| [`float`](class_float.md)             | [`stream_position`](class_videostreamplayer.md#class_videostreamplayer_property_stream_position) |               |
+| [`float`](class_float.md)             | [`volume`](class_videostreamplayer.md#class_videostreamplayer_property_volume)                   |               |
+| [`float`](class_float.md)             | [`volume_db`](class_videostreamplayer.md#class_videostreamplayer_property_volume_db)             | ``0.0``       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)         | [`get_stream_length`](#class_videostreamplayer_method_get_stream_length) ( ) const[^const] |
-| [`String`](class_string.md)       | [`get_stream_name`](#class_videostreamplayer_method_get_stream_name) ( ) const[^const]     |
-| [`Texture2D`](class_texture2d.md) | [`get_video_texture`](#class_videostreamplayer_method_get_video_texture) ( ) const[^const] |
-| [`bool`](class_bool.md)           | [`is_playing`](#class_videostreamplayer_method_is_playing) ( ) const[^const]               |
-| `void`                            | [`play`](#class_videostreamplayer_method_play) ( )                                         |
-| `void`                            | [`stop`](#class_videostreamplayer_method_stop) ( )                                         |
+| [`float`](class_float.md)         | [`get_stream_length`](class_videostreamplayer.md#class_videostreamplayer_method_get_stream_length) ( ) const[^const] |
+| [`String`](class_string.md)       | [`get_stream_name`](class_videostreamplayer.md#class_videostreamplayer_method_get_stream_name) ( ) const[^const]     |
+| [`Texture2D`](class_texture2d.md) | [`get_video_texture`](class_videostreamplayer.md#class_videostreamplayer_method_get_video_texture) ( ) const[^const] |
+| [`bool`](class_bool.md)           | [`is_playing`](class_videostreamplayer.md#class_videostreamplayer_method_is_playing) ( ) const[^const]               |
+| `void`                            | [`play`](class_videostreamplayer.md#class_videostreamplayer_method_play) ( )                                         |
+| `void`                            | [`stop`](class_videostreamplayer.md#class_videostreamplayer_method_stop) ( )                                         |
 
 <!-- rst-class:: classref-section-separator -->
 

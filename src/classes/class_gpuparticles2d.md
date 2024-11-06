@@ -15,7 +15,7 @@ A 2D particle emitter.
 
 2D particle node used to create a variety of particle systems and effects. **GPUParticles2D** features an emitter that generates some number of particles at a given rate.
 
-Use the [`process_material`](#class_gpuparticles2d_property_process_material) property to add a [`ParticleProcessMaterial`](class_particleprocessmaterial.md) to configure particle appearance and behavior. Alternatively, you can add a [`ShaderMaterial`](class_shadermaterial.md) which will be applied to all particles.
+Use the [`process_material`](class_gpuparticles2d.md#class_gpuparticles2d_property_process_material) property to add a [`ParticleProcessMaterial`](class_particleprocessmaterial.md) to configure particle appearance and behavior. Alternatively, you can add a [`ShaderMaterial`](class_shadermaterial.md) which will be applied to all particles.
 
 2D particles can optionally collide with [`LightOccluder2D`](class_lightoccluder2d.md), but they don't collide with [`PhysicsBody2D`](class_physicsbody2d.md) nodes.
 
@@ -23,39 +23,39 @@ Use the [`process_material`](#class_gpuparticles2d_property_process_material) pr
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                       | [`amount`](#class_gpuparticles2d_property_amount)                                         | ``8``                           |
-| [`float`](class_float.md)                   | [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio)                             | ``1.0``                         |
-| [`float`](class_float.md)                   | [`collision_base_size`](#class_gpuparticles2d_property_collision_base_size)               | ``1.0``                         |
-| [DrawOrder](#enum_gpuparticles2d_draworder) | [`draw_order`](#class_gpuparticles2d_property_draw_order)                                 | ``1``                           |
-| [`bool`](class_bool.md)                     | [`emitting`](#class_gpuparticles2d_property_emitting)                                     | ``true``                        |
-| [`float`](class_float.md)                   | [`explosiveness`](#class_gpuparticles2d_property_explosiveness)                           | ``0.0``                         |
-| [`int`](class_int.md)                       | [`fixed_fps`](#class_gpuparticles2d_property_fixed_fps)                                   | ``30``                          |
-| [`bool`](class_bool.md)                     | [`fract_delta`](#class_gpuparticles2d_property_fract_delta)                               | ``true``                        |
-| [`float`](class_float.md)                   | [`interp_to_end`](#class_gpuparticles2d_property_interp_to_end)                           | ``0.0``                         |
-| [`bool`](class_bool.md)                     | [`interpolate`](#class_gpuparticles2d_property_interpolate)                               | ``true``                        |
-| [`float`](class_float.md)                   | [`lifetime`](#class_gpuparticles2d_property_lifetime)                                     | ``1.0``                         |
-| [`bool`](class_bool.md)                     | [`local_coords`](#class_gpuparticles2d_property_local_coords)                             | ``false``                       |
-| [`bool`](class_bool.md)                     | [`one_shot`](#class_gpuparticles2d_property_one_shot)                                     | ``false``                       |
-| [`float`](class_float.md)                   | [`preprocess`](#class_gpuparticles2d_property_preprocess)                                 | ``0.0``                         |
-| [`Material`](class_material.md)             | [`process_material`](#class_gpuparticles2d_property_process_material)                     |                                 |
-| [`float`](class_float.md)                   | [`randomness`](#class_gpuparticles2d_property_randomness)                                 | ``0.0``                         |
-| [`float`](class_float.md)                   | [`speed_scale`](#class_gpuparticles2d_property_speed_scale)                               | ``1.0``                         |
-| [`NodePath`](class_nodepath.md)             | [`sub_emitter`](#class_gpuparticles2d_property_sub_emitter)                               | ``NodePath("")``                |
-| [`Texture2D`](class_texture2d.md)           | [`texture`](#class_gpuparticles2d_property_texture)                                       |                                 |
-| [`bool`](class_bool.md)                     | [`trail_enabled`](#class_gpuparticles2d_property_trail_enabled)                           | ``false``                       |
-| [`float`](class_float.md)                   | [`trail_lifetime`](#class_gpuparticles2d_property_trail_lifetime)                         | ``0.3``                         |
-| [`int`](class_int.md)                       | [`trail_section_subdivisions`](#class_gpuparticles2d_property_trail_section_subdivisions) | ``4``                           |
-| [`int`](class_int.md)                       | [`trail_sections`](#class_gpuparticles2d_property_trail_sections)                         | ``8``                           |
-| [`Rect2`](class_rect2.md)                   | [`visibility_rect`](#class_gpuparticles2d_property_visibility_rect)                       | ``Rect2(-100, -100, 200, 200)`` |
+| [`int`](class_int.md)                       | [`amount`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount)                                         | ``8``                           |
+| [`float`](class_float.md)                   | [`amount_ratio`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount_ratio)                             | ``1.0``                         |
+| [`float`](class_float.md)                   | [`collision_base_size`](class_gpuparticles2d.md#class_gpuparticles2d_property_collision_base_size)               | ``1.0``                         |
+| [DrawOrder](#enum_gpuparticles2d_draworder) | [`draw_order`](class_gpuparticles2d.md#class_gpuparticles2d_property_draw_order)                                 | ``1``                           |
+| [`bool`](class_bool.md)                     | [`emitting`](class_gpuparticles2d.md#class_gpuparticles2d_property_emitting)                                     | ``true``                        |
+| [`float`](class_float.md)                   | [`explosiveness`](class_gpuparticles2d.md#class_gpuparticles2d_property_explosiveness)                           | ``0.0``                         |
+| [`int`](class_int.md)                       | [`fixed_fps`](class_gpuparticles2d.md#class_gpuparticles2d_property_fixed_fps)                                   | ``30``                          |
+| [`bool`](class_bool.md)                     | [`fract_delta`](class_gpuparticles2d.md#class_gpuparticles2d_property_fract_delta)                               | ``true``                        |
+| [`float`](class_float.md)                   | [`interp_to_end`](class_gpuparticles2d.md#class_gpuparticles2d_property_interp_to_end)                           | ``0.0``                         |
+| [`bool`](class_bool.md)                     | [`interpolate`](class_gpuparticles2d.md#class_gpuparticles2d_property_interpolate)                               | ``true``                        |
+| [`float`](class_float.md)                   | [`lifetime`](class_gpuparticles2d.md#class_gpuparticles2d_property_lifetime)                                     | ``1.0``                         |
+| [`bool`](class_bool.md)                     | [`local_coords`](class_gpuparticles2d.md#class_gpuparticles2d_property_local_coords)                             | ``false``                       |
+| [`bool`](class_bool.md)                     | [`one_shot`](class_gpuparticles2d.md#class_gpuparticles2d_property_one_shot)                                     | ``false``                       |
+| [`float`](class_float.md)                   | [`preprocess`](class_gpuparticles2d.md#class_gpuparticles2d_property_preprocess)                                 | ``0.0``                         |
+| [`Material`](class_material.md)             | [`process_material`](class_gpuparticles2d.md#class_gpuparticles2d_property_process_material)                     |                                 |
+| [`float`](class_float.md)                   | [`randomness`](class_gpuparticles2d.md#class_gpuparticles2d_property_randomness)                                 | ``0.0``                         |
+| [`float`](class_float.md)                   | [`speed_scale`](class_gpuparticles2d.md#class_gpuparticles2d_property_speed_scale)                               | ``1.0``                         |
+| [`NodePath`](class_nodepath.md)             | [`sub_emitter`](class_gpuparticles2d.md#class_gpuparticles2d_property_sub_emitter)                               | ``NodePath("")``                |
+| [`Texture2D`](class_texture2d.md)           | [`texture`](class_gpuparticles2d.md#class_gpuparticles2d_property_texture)                                       |                                 |
+| [`bool`](class_bool.md)                     | [`trail_enabled`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_enabled)                           | ``false``                       |
+| [`float`](class_float.md)                   | [`trail_lifetime`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_lifetime)                         | ``0.3``                         |
+| [`int`](class_int.md)                       | [`trail_section_subdivisions`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_section_subdivisions) | ``4``                           |
+| [`int`](class_int.md)                       | [`trail_sections`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_sections)                         | ``8``                           |
+| [`Rect2`](class_rect2.md)                   | [`visibility_rect`](class_gpuparticles2d.md#class_gpuparticles2d_property_visibility_rect)                       | ``Rect2(-100, -100, 200, 200)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`capture_rect`](#class_gpuparticles2d_method_capture_rect) ( ) const[^const]                                                                                                                                                                              |
-| `void`                    | [`convert_from_particles`](#class_gpuparticles2d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                                                                                                     |
-| `void`                    | [`emit_particle`](#class_gpuparticles2d_method_emit_particle) ( xform: [`Transform2D`](class_transform2d.md), velocity: [`Vector2`](class_vector2.md), color: [`Color`](class_color.md), custom: [`Color`](class_color.md), flags: [`int`](class_int.md) ) |
-| `void`                    | [`restart`](#class_gpuparticles2d_method_restart) ( )                                                                                                                                                                                                      |
+| [`Rect2`](class_rect2.md) | [`capture_rect`](class_gpuparticles2d.md#class_gpuparticles2d_method_capture_rect) ( ) const[^const]                                                                                                                                                                              |
+| `void`                    | [`convert_from_particles`](class_gpuparticles2d.md#class_gpuparticles2d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                                                                                                     |
+| `void`                    | [`emit_particle`](class_gpuparticles2d.md#class_gpuparticles2d_method_emit_particle) ( xform: [`Transform2D`](class_transform2d.md), velocity: [`Vector2`](class_vector2.md), color: [`Color`](class_color.md), custom: [`Color`](class_color.md), flags: [`int`](class_int.md) ) |
+| `void`                    | [`restart`](class_gpuparticles2d.md#class_gpuparticles2d_method_restart) ( )                                                                                                                                                                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -67,11 +67,11 @@ Use the [`process_material`](#class_gpuparticles2d_property_process_material) pr
 
 **finished** ( ) <div id="class_gpuparticles2d_signal_finished"></div>
 
-Emitted when all active particles have finished processing. To immediately restart the emission cycle, call [`restart`](#class_gpuparticles2d_method_restart).
+Emitted when all active particles have finished processing. To immediately restart the emission cycle, call [`restart`](class_gpuparticles2d.md#class_gpuparticles2d_method_restart).
 
-Never emitted when [`one_shot`](#class_gpuparticles2d_property_one_shot) is disabled, as particles will be emitted and processed continuously.
+Never emitted when [`one_shot`](class_gpuparticles2d.md#class_gpuparticles2d_property_one_shot) is disabled, as particles will be emitted and processed continuously.
 
- **Note:** For [`one_shot`](#class_gpuparticles2d_property_one_shot) emitters, due to the particles being computed on the GPU, there may be a short period after receiving the signal during which setting [`emitting`](#class_gpuparticles2d_property_emitting) to `true` will not restart the emission cycle. This delay is avoided by instead calling [`restart`](#class_gpuparticles2d_method_restart).
+ **Note:** For [`one_shot`](class_gpuparticles2d.md#class_gpuparticles2d_property_one_shot) emitters, due to the particles being computed on the GPU, there may be a short period after receiving the signal during which setting [`emitting`](class_gpuparticles2d.md#class_gpuparticles2d_property_emitting) to `true` will not restart the emission cycle. This delay is avoided by instead calling [`restart`](class_gpuparticles2d.md#class_gpuparticles2d_method_restart).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -152,9 +152,9 @@ Particle starts with specified `CUSTOM` data.
 - `void` **set_amount** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_amount** ( )
 
-The number of particles to emit in one emission cycle. The effective emission rate is `(amount * amount_ratio) / lifetime` particles per second. Higher values will increase GPU requirements, even if not all particles are visible at a given time or if [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio) is decreased.
+The number of particles to emit in one emission cycle. The effective emission rate is `(amount * amount_ratio) / lifetime` particles per second. Higher values will increase GPU requirements, even if not all particles are visible at a given time or if [`amount_ratio`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount_ratio) is decreased.
 
- **Note:** Changing this value will cause the particle system to restart. To avoid this, change [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio) instead.
+ **Note:** Changing this value will cause the particle system to restart. To avoid this, change [`amount_ratio`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount_ratio) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -167,9 +167,9 @@ The number of particles to emit in one emission cycle. The effective emission ra
 - `void` **set_amount_ratio** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_amount_ratio** ( )
 
-The ratio of particles that should actually be emitted. If set to a value lower than `1.0`, this will set the amount of emitted particles throughout the lifetime to `amount * amount_ratio`. Unlike changing [`amount`](#class_gpuparticles2d_property_amount), changing [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio) while emitting does not affect already-emitted particles and doesn't cause the particle system to restart. [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio) can be used to create effects that make the number of emitted particles vary over time.
+The ratio of particles that should actually be emitted. If set to a value lower than `1.0`, this will set the amount of emitted particles throughout the lifetime to `amount * amount_ratio`. Unlike changing [`amount`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount), changing [`amount_ratio`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount_ratio) while emitting does not affect already-emitted particles and doesn't cause the particle system to restart. [`amount_ratio`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount_ratio) can be used to create effects that make the number of emitted particles vary over time.
 
- **Note:** Reducing the [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio) has no performance benefit, since resources need to be allocated and processed for the total [`amount`](#class_gpuparticles2d_property_amount) of particles regardless of the [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio). If you don't intend to change the number of particles emitted while the particles are emitting, make sure [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio) is set to `1` and change [`amount`](#class_gpuparticles2d_property_amount) to your liking instead.
+ **Note:** Reducing the [`amount_ratio`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount_ratio) has no performance benefit, since resources need to be allocated and processed for the total [`amount`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount) of particles regardless of the [`amount_ratio`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount_ratio). If you don't intend to change the number of particles emitted while the particles are emitting, make sure [`amount_ratio`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount_ratio) is set to `1` and change [`amount`](class_gpuparticles2d.md#class_gpuparticles2d_property_amount) to your liking instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -182,7 +182,7 @@ The ratio of particles that should actually be emitted. If set to a value lower 
 - `void` **set_collision_base_size** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_collision_base_size** ( )
 
-Multiplier for particle's collision radius. `1.0` corresponds to the size of the sprite. If particles appear to sink into the ground when colliding, increase this value. If particles appear to float when colliding, decrease this value. Only effective if [`ParticleProcessMaterial.collision_mode`](#class_particleprocessmaterial_property_collision_mode) is [`ParticleProcessMaterial.COLLISION_RIGID`](#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](#class_particleprocessmaterial_constant_collision_hide_on_contact).
+Multiplier for particle's collision radius. `1.0` corresponds to the size of the sprite. If particles appear to sink into the ground when colliding, increase this value. If particles appear to float when colliding, decrease this value. Only effective if [`ParticleProcessMaterial.collision_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_collision_mode) is [`ParticleProcessMaterial.COLLISION_RIGID`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_hide_on_contact).
 
  **Note:** Particles always have a spherical collision shape.
 
@@ -210,11 +210,11 @@ Particle draw order. Uses [DrawOrder](#enum_gpuparticles2d_draworder) values.
 - `void` **set_emitting** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_emitting** ( )
 
-If `true`, particles are being emitted. [`emitting`](#class_gpuparticles2d_property_emitting) can be used to start and stop particles from emitting. However, if [`one_shot`](#class_gpuparticles2d_property_one_shot) is `true` setting [`emitting`](#class_gpuparticles2d_property_emitting) to `true` will not restart the emission cycle unless all active particles have finished processing. Use the [`finished`](#class_gpuparticles2d_signal_finished) signal to be notified once all active particles finish processing.
+If `true`, particles are being emitted. [`emitting`](class_gpuparticles2d.md#class_gpuparticles2d_property_emitting) can be used to start and stop particles from emitting. However, if [`one_shot`](class_gpuparticles2d.md#class_gpuparticles2d_property_one_shot) is `true` setting [`emitting`](class_gpuparticles2d.md#class_gpuparticles2d_property_emitting) to `true` will not restart the emission cycle unless all active particles have finished processing. Use the [`finished`](class_gpuparticles2d.md#class_gpuparticles2d_signal_finished) signal to be notified once all active particles finish processing.
 
- **Note:** For [`one_shot`](#class_gpuparticles2d_property_one_shot) emitters, due to the particles being computed on the GPU, there may be a short period after receiving the [`finished`](#class_gpuparticles2d_signal_finished) signal during which setting this to `true` will not restart the emission cycle.
+ **Note:** For [`one_shot`](class_gpuparticles2d.md#class_gpuparticles2d_property_one_shot) emitters, due to the particles being computed on the GPU, there may be a short period after receiving the [`finished`](class_gpuparticles2d.md#class_gpuparticles2d_signal_finished) signal during which setting this to `true` will not restart the emission cycle.
 
- **Tip:** If your [`one_shot`](#class_gpuparticles2d_property_one_shot) emitter needs to immediately restart emitting particles once [`finished`](#class_gpuparticles2d_signal_finished) signal is received, consider calling [`restart`](#class_gpuparticles2d_method_restart) instead of setting [`emitting`](#class_gpuparticles2d_property_emitting).
+ **Tip:** If your [`one_shot`](class_gpuparticles2d.md#class_gpuparticles2d_property_one_shot) emitter needs to immediately restart emitting particles once [`finished`](class_gpuparticles2d.md#class_gpuparticles2d_signal_finished) signal is received, consider calling [`restart`](class_gpuparticles2d.md#class_gpuparticles2d_method_restart) instead of setting [`emitting`](class_gpuparticles2d.md#class_gpuparticles2d_property_emitting).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -281,7 +281,7 @@ Causes all the particles in this node to interpolate towards the end of their li
 - `void` **set_interpolate** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_interpolate** ( )
 
-Enables particle interpolation, which makes the particle movement smoother when their [`fixed_fps`](#class_gpuparticles2d_property_fixed_fps) is lower than the screen refresh rate.
+Enables particle interpolation, which makes the particle movement smoother when their [`fixed_fps`](class_gpuparticles2d.md#class_gpuparticles2d_property_fixed_fps) is lower than the screen refresh rate.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -385,9 +385,9 @@ Particle system's running speed scaling ratio. A value of `0` can be used to pau
 - `void` **set_sub_emitter** ( value: [`NodePath`](class_nodepath.md) )
 - [`NodePath`](class_nodepath.md) **get_sub_emitter** ( )
 
-Path to another **GPUParticles2D** node that will be used as a subemitter (see [`ParticleProcessMaterial.sub_emitter_mode`](#class_particleprocessmaterial_property_sub_emitter_mode)). Subemitters can be used to achieve effects such as fireworks, sparks on collision, bubbles popping into water drops, and more.
+Path to another **GPUParticles2D** node that will be used as a subemitter (see [`ParticleProcessMaterial.sub_emitter_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_sub_emitter_mode)). Subemitters can be used to achieve effects such as fireworks, sparks on collision, bubbles popping into water drops, and more.
 
- **Note:** When [`sub_emitter`](#class_gpuparticles2d_property_sub_emitter) is set, the target **GPUParticles2D** node will no longer emit particles on its own.
+ **Note:** When [`sub_emitter`](class_gpuparticles2d.md#class_gpuparticles2d_property_sub_emitter) is set, the target **GPUParticles2D** node will no longer emit particles on its own.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -402,7 +402,7 @@ Path to another **GPUParticles2D** node that will be used as a subemitter (see [
 
 Particle texture. If `null`, particles will be squares with a size of 1×1 pixels.
 
- **Note:** To use a flipbook texture, assign a new [`CanvasItemMaterial`](class_canvasitemmaterial.md) to the **GPUParticles2D**'s [`CanvasItem.material`](#class_canvasitem_property_material) property, then enable [`CanvasItemMaterial.particles_animation`](#class_canvasitemmaterial_property_particles_animation) and set [`CanvasItemMaterial.particles_anim_h_frames`](#class_canvasitemmaterial_property_particles_anim_h_frames), [`CanvasItemMaterial.particles_anim_v_frames`](#class_canvasitemmaterial_property_particles_anim_v_frames), and [`CanvasItemMaterial.particles_anim_loop`](#class_canvasitemmaterial_property_particles_anim_loop) to match the flipbook texture.
+ **Note:** To use a flipbook texture, assign a new [`CanvasItemMaterial`](class_canvasitemmaterial.md) to the **GPUParticles2D**'s [`CanvasItem.material`](class_canvasitem.md#class_canvasitem_property_material) property, then enable [`CanvasItemMaterial.particles_animation`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_animation) and set [`CanvasItemMaterial.particles_anim_h_frames`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_anim_h_frames), [`CanvasItemMaterial.particles_anim_v_frames`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_anim_v_frames), and [`CanvasItemMaterial.particles_anim_loop`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_anim_loop) to match the flipbook texture.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -417,7 +417,7 @@ Particle texture. If `null`, particles will be squares with a size of 1×1 pixel
 
 If `true`, enables particle trails using a mesh skinning system.
 
- **Note:** Unlike [`GPUParticles3D`](class_gpuparticles3d.md), the number of trail sections and subdivisions is set with the [`trail_sections`](#class_gpuparticles2d_property_trail_sections) and [`trail_section_subdivisions`](#class_gpuparticles2d_property_trail_section_subdivisions) properties.
+ **Note:** Unlike [`GPUParticles3D`](class_gpuparticles3d.md), the number of trail sections and subdivisions is set with the [`trail_sections`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_sections) and [`trail_section_subdivisions`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_section_subdivisions) properties.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -430,7 +430,7 @@ If `true`, enables particle trails using a mesh skinning system.
 - `void` **set_trail_lifetime** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_trail_lifetime** ( )
 
-The amount of time the particle's trail should represent (in seconds). Only effective if [`trail_enabled`](#class_gpuparticles2d_property_trail_enabled) is `true`.
+The amount of time the particle's trail should represent (in seconds). Only effective if [`trail_enabled`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -443,7 +443,7 @@ The amount of time the particle's trail should represent (in seconds). Only effe
 - `void` **set_trail_section_subdivisions** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_trail_section_subdivisions** ( )
 
-The number of subdivisions to use for the particle trail rendering. Higher values can result in smoother trail curves, at the cost of performance due to increased mesh complexity. See also [`trail_sections`](#class_gpuparticles2d_property_trail_sections). Only effective if [`trail_enabled`](#class_gpuparticles2d_property_trail_enabled) is `true`.
+The number of subdivisions to use for the particle trail rendering. Higher values can result in smoother trail curves, at the cost of performance due to increased mesh complexity. See also [`trail_sections`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_sections). Only effective if [`trail_enabled`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -456,7 +456,7 @@ The number of subdivisions to use for the particle trail rendering. Higher value
 - `void` **set_trail_sections** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_trail_sections** ( )
 
-The number of sections to use for the particle trail rendering. Higher values can result in smoother trail curves, at the cost of performance due to increased mesh complexity. See also [`trail_section_subdivisions`](#class_gpuparticles2d_property_trail_section_subdivisions). Only effective if [`trail_enabled`](#class_gpuparticles2d_property_trail_enabled) is `true`.
+The number of sections to use for the particle trail rendering. Higher values can result in smoother trail curves, at the cost of performance due to increased mesh complexity. See also [`trail_section_subdivisions`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_section_subdivisions). Only effective if [`trail_enabled`](class_gpuparticles2d.md#class_gpuparticles2d_property_trail_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -517,9 +517,9 @@ The default ParticleProcessMaterial will overwrite `color` and use the contents 
 
 `void` **restart** ( )<div id="class_gpuparticles2d_method_restart"></div>
 
-Restarts the particle emission cycle, clearing existing particles. To avoid particles vanishing from the viewport, wait for the [`finished`](#class_gpuparticles2d_signal_finished) signal before calling.
+Restarts the particle emission cycle, clearing existing particles. To avoid particles vanishing from the viewport, wait for the [`finished`](class_gpuparticles2d.md#class_gpuparticles2d_signal_finished) signal before calling.
 
- **Note:** The [`finished`](#class_gpuparticles2d_signal_finished) signal is only emitted by [`one_shot`](#class_gpuparticles2d_property_one_shot) emitters.
+ **Note:** The [`finished`](class_gpuparticles2d.md#class_gpuparticles2d_signal_finished) signal is only emitted by [`one_shot`](class_gpuparticles2d.md#class_gpuparticles2d_property_one_shot) emitters.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

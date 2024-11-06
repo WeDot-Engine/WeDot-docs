@@ -19,7 +19,7 @@ A visual shader node able to perform different functions using vectors.
 
 |||
 |:-:|:--|
-| [Function](#enum_visualshadernodevectorfunc_function) | [`function`](#class_visualshadernodevectorfunc_property_function) | ``0`` |
+| [Function](#enum_visualshadernodevectorfunc_function) | [`function`](class_visualshadernodevectorfunc.md#class_visualshadernodevectorfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -15,11 +15,11 @@ A base class to implement debugger plugins.
 
 **EditorDebuggerPlugin** provides functions related to the editor side of the debugger.
 
-To interact with the debugger, an instance of this class must be added to the editor via [`EditorPlugin.add_debugger_plugin`](#class_editorplugin_method_add_debugger_plugin).
+To interact with the debugger, an instance of this class must be added to the editor via [`EditorPlugin.add_debugger_plugin`](class_editorplugin.md#class_editorplugin_method_add_debugger_plugin).
 
-Once added, the [`_setup_session`](#class_editordebuggerplugin_private_method__setup_session) callback will be called for every [`EditorDebuggerSession`](class_editordebuggersession.md) available to the plugin, and when new ones are created (the sessions may be inactive during this stage).
+Once added, the [`_setup_session`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__setup_session) callback will be called for every [`EditorDebuggerSession`](class_editordebuggersession.md) available to the plugin, and when new ones are created (the sessions may be inactive during this stage).
 
-You can retrieve the available [`EditorDebuggerSession`](class_editordebuggersession.md) s via [`get_sessions`](#class_editordebuggerplugin_method_get_sessions) or get a specific one via [`get_session`](#class_editordebuggerplugin_method_get_session).
+You can retrieve the available [`EditorDebuggerSession`](class_editordebuggersession.md) s via [`get_sessions`](class_editordebuggerplugin.md#class_editordebuggerplugin_method_get_sessions) or get a specific one via [`get_session`](class_editordebuggerplugin.md#class_editordebuggerplugin_method_get_session).
 
 
 
@@ -66,14 +66,14 @@ You can retrieve the available [`EditorDebuggerSession`](class_editordebuggerses
 
 |||
 |:-:|:--|
-| `void`                                                    | [`_breakpoint_set_in_tree`](#class_editordebuggerplugin_private_method__breakpoint_set_in_tree) ( script: [`Script`](class_script.md), line: [`int`](class_int.md), enabled: [`bool`](class_bool.md) ) virtual[^virtual] |
-| `void`                                                    | [`_breakpoints_cleared_in_tree`](#class_editordebuggerplugin_private_method__breakpoints_cleared_in_tree) ( ) virtual[^virtual]                                                                                          |
-| [`bool`](class_bool.md)                                   | [`_capture`](#class_editordebuggerplugin_private_method__capture) ( message: [`String`](class_string.md), data: [`Array`](class_array.md), session_id: [`int`](class_int.md) ) virtual[^virtual]                         |
-| `void`                                                    | [`_goto_script_line`](#class_editordebuggerplugin_private_method__goto_script_line) ( script: [`Script`](class_script.md), line: [`int`](class_int.md) ) virtual[^virtual]                                               |
-| [`bool`](class_bool.md)                                   | [`_has_capture`](#class_editordebuggerplugin_private_method__has_capture) ( capture: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                       |
-| `void`                                                    | [`_setup_session`](#class_editordebuggerplugin_private_method__setup_session) ( session_id: [`int`](class_int.md) ) virtual[^virtual]                                                                                    |
-| [`EditorDebuggerSession`](class_editordebuggersession.md) | [`get_session`](#class_editordebuggerplugin_method_get_session) ( id: [`int`](class_int.md) )                                                                                                                            |
-| [`Array`](class_array.md)                                 | [`get_sessions`](#class_editordebuggerplugin_method_get_sessions) ( )                                                                                                                                                    |
+| `void`                                                    | [`_breakpoint_set_in_tree`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__breakpoint_set_in_tree) ( script: [`Script`](class_script.md), line: [`int`](class_int.md), enabled: [`bool`](class_bool.md) ) virtual[^virtual] |
+| `void`                                                    | [`_breakpoints_cleared_in_tree`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__breakpoints_cleared_in_tree) ( ) virtual[^virtual]                                                                                          |
+| [`bool`](class_bool.md)                                   | [`_capture`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__capture) ( message: [`String`](class_string.md), data: [`Array`](class_array.md), session_id: [`int`](class_int.md) ) virtual[^virtual]                         |
+| `void`                                                    | [`_goto_script_line`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__goto_script_line) ( script: [`Script`](class_script.md), line: [`int`](class_int.md) ) virtual[^virtual]                                               |
+| [`bool`](class_bool.md)                                   | [`_has_capture`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__has_capture) ( capture: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                       |
+| `void`                                                    | [`_setup_session`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__setup_session) ( session_id: [`int`](class_int.md) ) virtual[^virtual]                                                                                    |
+| [`EditorDebuggerSession`](class_editordebuggersession.md) | [`get_session`](class_editordebuggerplugin.md#class_editordebuggerplugin_method_get_session) ( id: [`int`](class_int.md) )                                                                                                                            |
+| [`Array`](class_array.md)                                 | [`get_sessions`](class_editordebuggerplugin.md#class_editordebuggerplugin_method_get_sessions) ( )                                                                                                                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -105,7 +105,7 @@ Override this method to be notified when all breakpoints are cleared in the edit
 
 [`bool`](class_bool.md) **_capture** ( message: [`String`](class_string.md), data: [`Array`](class_array.md), session_id: [`int`](class_int.md) ) virtual[^virtual]<div id="class_editordebuggerplugin_private_method__capture"></div>
 
-Override this method to process incoming messages. The `session_id` is the ID of the [`EditorDebuggerSession`](class_editordebuggersession.md) that received the message (which you can retrieve via [`get_session`](#class_editordebuggerplugin_method_get_session)).
+Override this method to process incoming messages. The `session_id` is the ID of the [`EditorDebuggerSession`](class_editordebuggersession.md) that received the message (which you can retrieve via [`get_session`](class_editordebuggerplugin.md#class_editordebuggerplugin_method_get_session)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -125,7 +125,7 @@ Override this method to be notified when a breakpoint line has been clicked in t
 
 [`bool`](class_bool.md) **_has_capture** ( capture: [`String`](class_string.md) ) virtual[^virtual] const[^const]<div id="class_editordebuggerplugin_private_method__has_capture"></div>
 
-Override this method to enable receiving messages from the debugger. If `capture` is "my_message" then messages starting with "my_message:" will be passes to the [`_capture`](#class_editordebuggerplugin_private_method__capture) method.
+Override this method to enable receiving messages from the debugger. If `capture` is "my_message" then messages starting with "my_message:" will be passes to the [`_capture`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__capture) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -157,7 +157,7 @@ Returns the [`EditorDebuggerSession`](class_editordebuggersession.md) with the g
 
 Returns an array of [`EditorDebuggerSession`](class_editordebuggersession.md) currently available to this debugger plugin.
 
- **Note:** Sessions in the array may be inactive, check their state via [`EditorDebuggerSession.is_active`](#class_editordebuggersession_method_is_active).
+ **Note:** Sessions in the array may be inactive, check their state via [`EditorDebuggerSession.is_active`](class_editordebuggersession.md#class_editordebuggersession_method_is_active).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

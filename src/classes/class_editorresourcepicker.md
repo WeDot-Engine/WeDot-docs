@@ -23,19 +23,19 @@ This [`Control`](class_control.md) node is used in the editor's Inspector dock t
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)     | [`base_type`](#class_editorresourcepicker_property_base_type)             | ``""``    |
-| [`bool`](class_bool.md)         | [`editable`](#class_editorresourcepicker_property_editable)               | ``true``  |
-| [`Resource`](class_resource.md) | [`edited_resource`](#class_editorresourcepicker_property_edited_resource) |           |
-| [`bool`](class_bool.md)         | [`toggle_mode`](#class_editorresourcepicker_property_toggle_mode)         | ``false`` |
+| [`String`](class_string.md)     | [`base_type`](class_editorresourcepicker.md#class_editorresourcepicker_property_base_type)             | ``""``    |
+| [`bool`](class_bool.md)         | [`editable`](class_editorresourcepicker.md#class_editorresourcepicker_property_editable)               | ``true``  |
+| [`Resource`](class_resource.md) | [`edited_resource`](class_editorresourcepicker.md#class_editorresourcepicker_property_edited_resource) |           |
+| [`bool`](class_bool.md)         | [`toggle_mode`](class_editorresourcepicker.md#class_editorresourcepicker_property_toggle_mode)         | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                           | [`_handle_menu_selected`](#class_editorresourcepicker_private_method__handle_menu_selected) ( id: [`int`](class_int.md) ) virtual[^virtual]          |
-| `void`                                            | [`_set_create_options`](#class_editorresourcepicker_private_method__set_create_options) ( menu_node: [`Object`](class_object.md) ) virtual[^virtual] |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_allowed_types`](#class_editorresourcepicker_method_get_allowed_types) ( ) const[^const]                                                        |
-| `void`                                            | [`set_toggle_pressed`](#class_editorresourcepicker_method_set_toggle_pressed) ( pressed: [`bool`](class_bool.md) )                                   |
+| [`bool`](class_bool.md)                           | [`_handle_menu_selected`](class_editorresourcepicker.md#class_editorresourcepicker_private_method__handle_menu_selected) ( id: [`int`](class_int.md) ) virtual[^virtual]          |
+| `void`                                            | [`_set_create_options`](class_editorresourcepicker.md#class_editorresourcepicker_private_method__set_create_options) ( menu_node: [`Object`](class_object.md) ) virtual[^virtual] |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_allowed_types`](class_editorresourcepicker.md#class_editorresourcepicker_method_get_allowed_types) ( ) const[^const]                                                        |
+| `void`                                            | [`set_toggle_pressed`](class_editorresourcepicker.md#class_editorresourcepicker_method_set_toggle_pressed) ( pressed: [`bool`](class_bool.md) )                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -111,7 +111,7 @@ The edited resource value.
 - `void` **set_toggle_mode** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_toggle_mode** ( )
 
-If `true`, the main button with the resource preview works in the toggle mode. Use [`set_toggle_pressed`](#class_editorresourcepicker_method_set_toggle_pressed) to manually set the state.
+If `true`, the main button with the resource preview works in the toggle mode. Use [`set_toggle_pressed`](class_editorresourcepicker.md#class_editorresourcepicker_method_set_toggle_pressed) to manually set the state.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -123,7 +123,7 @@ If `true`, the main button with the resource preview works in the toggle mode. U
 
 [`bool`](class_bool.md) **_handle_menu_selected** ( id: [`int`](class_int.md) ) virtual[^virtual]<div id="class_editorresourcepicker_private_method__handle_menu_selected"></div>
 
-This virtual method can be implemented to handle context menu items not handled by default. See [`_set_create_options`](#class_editorresourcepicker_private_method__set_create_options).
+This virtual method can be implemented to handle context menu items not handled by default. See [`_set_create_options`](class_editorresourcepicker.md#class_editorresourcepicker_private_method__set_create_options).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -135,7 +135,7 @@ This virtual method can be implemented to handle context menu items not handled 
 
 This virtual method is called when updating the context menu of **EditorResourcePicker**. Implement this method to override the "New ..." items with your own options. `menu_node` is a reference to the [`PopupMenu`](class_popupmenu.md) node.
 
- **Note:** Implement [`_handle_menu_selected`](#class_editorresourcepicker_private_method__handle_menu_selected) to handle these custom items.
+ **Note:** Implement [`_handle_menu_selected`](class_editorresourcepicker.md#class_editorresourcepicker_private_method__handle_menu_selected) to handle these custom items.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -145,7 +145,7 @@ This virtual method is called when updating the context menu of **EditorResource
 
 [`PackedStringArray`](class_packedstringarray.md) **get_allowed_types** ( ) const[^const]<div id="class_editorresourcepicker_method_get_allowed_types"></div>
 
-Returns a list of all allowed types and subtypes corresponding to the [`base_type`](#class_editorresourcepicker_property_base_type). If the [`base_type`](#class_editorresourcepicker_property_base_type) is empty, an empty list is returned.
+Returns a list of all allowed types and subtypes corresponding to the [`base_type`](class_editorresourcepicker.md#class_editorresourcepicker_property_base_type). If the [`base_type`](class_editorresourcepicker.md#class_editorresourcepicker_property_base_type) is empty, an empty list is returned.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -155,7 +155,7 @@ Returns a list of all allowed types and subtypes corresponding to the [`base_typ
 
 `void` **set_toggle_pressed** ( pressed: [`bool`](class_bool.md) )<div id="class_editorresourcepicker_method_set_toggle_pressed"></div>
 
-Sets the toggle mode state for the main button. Works only if [`toggle_mode`](#class_editorresourcepicker_property_toggle_mode) is set to `true`.
+Sets the toggle mode state for the main button. Works only if [`toggle_mode`](class_editorresourcepicker.md#class_editorresourcepicker_property_toggle_mode) is set to `true`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

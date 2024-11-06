@@ -13,7 +13,7 @@ A visual shader node that sets a value of a varying.
 
 ## 描述
 
-Inputs a value to a varying defined in the shader. You need to first create a varying that can be used in the given function, e.g. varying setter in Fragment shader requires a varying with mode set to [`VisualShader.VARYING_MODE_FRAG_TO_LIGHT`](#class_visualshader_constant_varying_mode_frag_to_light).
+Inputs a value to a varying defined in the shader. You need to first create a varying that can be used in the given function, e.g. varying setter in Fragment shader requires a varying with mode set to [`VisualShader.VARYING_MODE_FRAG_TO_LIGHT`](class_visualshader.md#class_visualshader_constant_varying_mode_frag_to_light).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -13,7 +13,7 @@ A custom effect for a [`RichTextLabel`](class_richtextlabel.md).
 
 ## 描述
 
-A custom effect for a [`RichTextLabel`](class_richtextlabel.md), which can be loaded in the [`RichTextLabel`](class_richtextlabel.md) inspector or using [`RichTextLabel.install_effect`](#class_richtextlabel_method_install_effect).
+A custom effect for a [`RichTextLabel`](class_richtextlabel.md), which can be loaded in the [`RichTextLabel`](class_richtextlabel.md) inspector or using [`RichTextLabel.install_effect`](class_richtextlabel.md#class_richtextlabel_method_install_effect).
 
  **Note:** For a **RichTextEffect** to be usable, a BBCode tag must be defined as a member variable called `bbcode` in the script.
 
@@ -43,7 +43,7 @@ A custom effect for a [`RichTextLabel`](class_richtextlabel.md), which can be lo
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`_process_custom_fx`](#class_richtexteffect_private_method__process_custom_fx) ( char_fx: [`CharFXTransform`](class_charfxtransform.md) ) virtual[^virtual] const[^const] |
+| [`bool`](class_bool.md) | [`_process_custom_fx`](class_richtexteffect.md#class_richtexteffect_private_method__process_custom_fx) ( char_fx: [`CharFXTransform`](class_charfxtransform.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

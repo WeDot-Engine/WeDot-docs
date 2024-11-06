@@ -15,81 +15,81 @@ Used by the editor to extend its functionality.
 
 Plugins are used by the editor to extend functionality. The most common types of plugins are those which edit a given node or resource type, import plugins and export plugins. See also [`EditorScript`](class_editorscript.md) to add functions to the editor.
 
- **Note:** Some names in this class contain "left" or "right" (e.g. [`DOCK_SLOT_LEFT_UL`](#class_editorplugin_constant_dock_slot_left_ul)). These APIs assume left-to-right layout, and would be backwards when using right-to-left layout. These names are kept for compatibility reasons.
+ **Note:** Some names in this class contain "left" or "right" (e.g. [`DOCK_SLOT_LEFT_UL`](class_editorplugin.md#class_editorplugin_constant_dock_slot_left_ul)). These APIs assume left-to-right layout, and would be backwards when using right-to-left layout. These names are kept for compatibility reasons.
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                    | [`_apply_changes`](#class_editorplugin_private_method__apply_changes) ( ) virtual[^virtual]                                                                                                                                                     |
-| [`bool`](class_bool.md)                                   | [`_build`](#class_editorplugin_private_method__build) ( ) virtual[^virtual]                                                                                                                                                                     |
-| `void`                                                    | [`_clear`](#class_editorplugin_private_method__clear) ( ) virtual[^virtual]                                                                                                                                                                     |
-| `void`                                                    | [`_disable_plugin`](#class_editorplugin_private_method__disable_plugin) ( ) virtual[^virtual]                                                                                                                                                   |
-| `void`                                                    | [`_edit`](#class_editorplugin_private_method__edit) ( object: [`Object`](class_object.md) ) virtual[^virtual]                                                                                                                                   |
-| `void`                                                    | [`_enable_plugin`](#class_editorplugin_private_method__enable_plugin) ( ) virtual[^virtual]                                                                                                                                                     |
-| `void`                                                    | [`_forward_3d_draw_over_viewport`](#class_editorplugin_private_method__forward_3d_draw_over_viewport) ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]                                                                     |
-| `void`                                                    | [`_forward_3d_force_draw_over_viewport`](#class_editorplugin_private_method__forward_3d_force_draw_over_viewport) ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]                                                         |
-| [`int`](class_int.md)                                     | [`_forward_3d_gui_input`](#class_editorplugin_private_method__forward_3d_gui_input) ( viewport_camera: [`Camera3D`](class_camera3d.md), event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual]                                          |
-| `void`                                                    | [`_forward_canvas_draw_over_viewport`](#class_editorplugin_private_method__forward_canvas_draw_over_viewport) ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]                                                             |
-| `void`                                                    | [`_forward_canvas_force_draw_over_viewport`](#class_editorplugin_private_method__forward_canvas_force_draw_over_viewport) ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]                                                 |
-| [`bool`](class_bool.md)                                   | [`_forward_canvas_gui_input`](#class_editorplugin_private_method__forward_canvas_gui_input) ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual]                                                                                    |
-| [`PackedStringArray`](class_packedstringarray.md)         | [`_get_breakpoints`](#class_editorplugin_private_method__get_breakpoints) ( ) virtual[^virtual] const[^const]                                                                                                                                   |
-| [`Texture2D`](class_texture2d.md)                         | [`_get_plugin_icon`](#class_editorplugin_private_method__get_plugin_icon) ( ) virtual[^virtual] const[^const]                                                                                                                                   |
-| [`String`](class_string.md)                               | [`_get_plugin_name`](#class_editorplugin_private_method__get_plugin_name) ( ) virtual[^virtual] const[^const]                                                                                                                                   |
-| [`Dictionary`](class_dictionary.md)                       | [`_get_state`](#class_editorplugin_private_method__get_state) ( ) virtual[^virtual] const[^const]                                                                                                                                               |
-| [`String`](class_string.md)                               | [`_get_unsaved_status`](#class_editorplugin_private_method__get_unsaved_status) ( for_scene: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                      |
-| `void`                                                    | [`_get_window_layout`](#class_editorplugin_private_method__get_window_layout) ( configuration: [`ConfigFile`](class_configfile.md) ) virtual[^virtual]                                                                                          |
-| [`bool`](class_bool.md)                                   | [`_handles`](#class_editorplugin_private_method__handles) ( object: [`Object`](class_object.md) ) virtual[^virtual] const[^const]                                                                                                               |
-| [`bool`](class_bool.md)                                   | [`_has_main_screen`](#class_editorplugin_private_method__has_main_screen) ( ) virtual[^virtual] const[^const]                                                                                                                                   |
-| `void`                                                    | [`_make_visible`](#class_editorplugin_private_method__make_visible) ( visible: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                      |
-| `void`                                                    | [`_save_external_data`](#class_editorplugin_private_method__save_external_data) ( ) virtual[^virtual]                                                                                                                                           |
-| `void`                                                    | [`_set_state`](#class_editorplugin_private_method__set_state) ( state: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                                                                                                  |
-| `void`                                                    | [`_set_window_layout`](#class_editorplugin_private_method__set_window_layout) ( configuration: [`ConfigFile`](class_configfile.md) ) virtual[^virtual]                                                                                          |
-| `void`                                                    | [`add_autoload_singleton`](#class_editorplugin_method_add_autoload_singleton) ( name: [`String`](class_string.md), path: [`String`](class_string.md) )                                                                                          |
-| [`Button`](class_button.md)                               | [`add_control_to_bottom_panel`](#class_editorplugin_method_add_control_to_bottom_panel) ( control: [`Control`](class_control.md), title: [`String`](class_string.md), shortcut: [`Shortcut`](class_shortcut.md) = null )                        |
-| `void`                                                    | [`add_control_to_container`](#class_editorplugin_method_add_control_to_container) ( container: [CustomControlContainer](#enum_editorplugin_customcontrolcontainer), control: [`Control`](class_control.md) )                                    |
-| `void`                                                    | [`add_control_to_dock`](#class_editorplugin_method_add_control_to_dock) ( slot: [DockSlot](#enum_editorplugin_dockslot), control: [`Control`](class_control.md), shortcut: [`Shortcut`](class_shortcut.md) = null )                             |
-| `void`                                                    | [`add_custom_type`](#class_editorplugin_method_add_custom_type) ( type: [`String`](class_string.md), base: [`String`](class_string.md), script: [`Script`](class_script.md), icon: [`Texture2D`](class_texture2d.md) )                          |
-| `void`                                                    | [`add_debugger_plugin`](#class_editorplugin_method_add_debugger_plugin) ( script: [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) )                                                                                                     |
-| `void`                                                    | [`add_export_plugin`](#class_editorplugin_method_add_export_plugin) ( plugin: [`EditorExportPlugin`](class_editorexportplugin.md) )                                                                                                             |
-| `void`                                                    | [`add_import_plugin`](#class_editorplugin_method_add_import_plugin) ( importer: [`EditorImportPlugin`](class_editorimportplugin.md), first_priority: [`bool`](class_bool.md) = false )                                                          |
-| `void`                                                    | [`add_inspector_plugin`](#class_editorplugin_method_add_inspector_plugin) ( plugin: [`EditorInspectorPlugin`](class_editorinspectorplugin.md) )                                                                                                 |
-| `void`                                                    | [`add_node_3d_gizmo_plugin`](#class_editorplugin_method_add_node_3d_gizmo_plugin) ( plugin: [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) )                                                                                     |
-| `void`                                                    | [`add_resource_conversion_plugin`](#class_editorplugin_method_add_resource_conversion_plugin) ( plugin: [`EditorResourceConversionPlugin`](class_editorresourceconversionplugin.md) )                                                           |
-| `void`                                                    | [`add_scene_format_importer_plugin`](#class_editorplugin_method_add_scene_format_importer_plugin) ( scene_format_importer: [`EditorSceneFormatImporter`](class_editorsceneformatimporter.md), first_priority: [`bool`](class_bool.md) = false ) |
-| `void`                                                    | [`add_scene_post_import_plugin`](#class_editorplugin_method_add_scene_post_import_plugin) ( scene_import_plugin: [`EditorScenePostImportPlugin`](class_editorscenepostimportplugin.md), first_priority: [`bool`](class_bool.md) = false )       |
-| `void`                                                    | [`add_tool_menu_item`](#class_editorplugin_method_add_tool_menu_item) ( name: [`String`](class_string.md), callable: [`Callable`](class_callable.md) )                                                                                          |
-| `void`                                                    | [`add_tool_submenu_item`](#class_editorplugin_method_add_tool_submenu_item) ( name: [`String`](class_string.md), submenu: [`PopupMenu`](class_popupmenu.md) )                                                                                   |
-| `void`                                                    | [`add_translation_parser_plugin`](#class_editorplugin_method_add_translation_parser_plugin) ( parser: [`EditorTranslationParserPlugin`](class_editortranslationparserplugin.md) )                                                               |
-| `void`                                                    | [`add_undo_redo_inspector_hook_callback`](#class_editorplugin_method_add_undo_redo_inspector_hook_callback) ( callable: [`Callable`](class_callable.md) )                                                                                       |
-| [`EditorInterface`](class_editorinterface.md)             | [`get_editor_interface`](#class_editorplugin_method_get_editor_interface) ( )                                                                                                                                                                   |
-| [`PopupMenu`](class_popupmenu.md)                         | [`get_export_as_menu`](#class_editorplugin_method_get_export_as_menu) ( )                                                                                                                                                                       |
-| [`String`](class_string.md)                               | [`get_plugin_version`](#class_editorplugin_method_get_plugin_version) ( ) const[^const]                                                                                                                                                         |
-| [`ScriptCreateDialog`](class_scriptcreatedialog.md)       | [`get_script_create_dialog`](#class_editorplugin_method_get_script_create_dialog) ( )                                                                                                                                                           |
-| [`EditorUndoRedoManager`](class_editorundoredomanager.md) | [`get_undo_redo`](#class_editorplugin_method_get_undo_redo) ( )                                                                                                                                                                                 |
-| `void`                                                    | [`hide_bottom_panel`](#class_editorplugin_method_hide_bottom_panel) ( )                                                                                                                                                                         |
-| `void`                                                    | [`make_bottom_panel_item_visible`](#class_editorplugin_method_make_bottom_panel_item_visible) ( item: [`Control`](class_control.md) )                                                                                                           |
-| `void`                                                    | [`queue_save_layout`](#class_editorplugin_method_queue_save_layout) ( )                                                                                                                                                                         |
-| `void`                                                    | [`remove_autoload_singleton`](#class_editorplugin_method_remove_autoload_singleton) ( name: [`String`](class_string.md) )                                                                                                                       |
-| `void`                                                    | [`remove_control_from_bottom_panel`](#class_editorplugin_method_remove_control_from_bottom_panel) ( control: [`Control`](class_control.md) )                                                                                                    |
-| `void`                                                    | [`remove_control_from_container`](#class_editorplugin_method_remove_control_from_container) ( container: [CustomControlContainer](#enum_editorplugin_customcontrolcontainer), control: [`Control`](class_control.md) )                          |
-| `void`                                                    | [`remove_control_from_docks`](#class_editorplugin_method_remove_control_from_docks) ( control: [`Control`](class_control.md) )                                                                                                                  |
-| `void`                                                    | [`remove_custom_type`](#class_editorplugin_method_remove_custom_type) ( type: [`String`](class_string.md) )                                                                                                                                     |
-| `void`                                                    | [`remove_debugger_plugin`](#class_editorplugin_method_remove_debugger_plugin) ( script: [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) )                                                                                               |
-| `void`                                                    | [`remove_export_plugin`](#class_editorplugin_method_remove_export_plugin) ( plugin: [`EditorExportPlugin`](class_editorexportplugin.md) )                                                                                                       |
-| `void`                                                    | [`remove_import_plugin`](#class_editorplugin_method_remove_import_plugin) ( importer: [`EditorImportPlugin`](class_editorimportplugin.md) )                                                                                                     |
-| `void`                                                    | [`remove_inspector_plugin`](#class_editorplugin_method_remove_inspector_plugin) ( plugin: [`EditorInspectorPlugin`](class_editorinspectorplugin.md) )                                                                                           |
-| `void`                                                    | [`remove_node_3d_gizmo_plugin`](#class_editorplugin_method_remove_node_3d_gizmo_plugin) ( plugin: [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) )                                                                               |
-| `void`                                                    | [`remove_resource_conversion_plugin`](#class_editorplugin_method_remove_resource_conversion_plugin) ( plugin: [`EditorResourceConversionPlugin`](class_editorresourceconversionplugin.md) )                                                     |
-| `void`                                                    | [`remove_scene_format_importer_plugin`](#class_editorplugin_method_remove_scene_format_importer_plugin) ( scene_format_importer: [`EditorSceneFormatImporter`](class_editorsceneformatimporter.md) )                                            |
-| `void`                                                    | [`remove_scene_post_import_plugin`](#class_editorplugin_method_remove_scene_post_import_plugin) ( scene_import_plugin: [`EditorScenePostImportPlugin`](class_editorscenepostimportplugin.md) )                                                  |
-| `void`                                                    | [`remove_tool_menu_item`](#class_editorplugin_method_remove_tool_menu_item) ( name: [`String`](class_string.md) )                                                                                                                               |
-| `void`                                                    | [`remove_translation_parser_plugin`](#class_editorplugin_method_remove_translation_parser_plugin) ( parser: [`EditorTranslationParserPlugin`](class_editortranslationparserplugin.md) )                                                         |
-| `void`                                                    | [`remove_undo_redo_inspector_hook_callback`](#class_editorplugin_method_remove_undo_redo_inspector_hook_callback) ( callable: [`Callable`](class_callable.md) )                                                                                 |
-| `void`                                                    | [`set_dock_tab_icon`](#class_editorplugin_method_set_dock_tab_icon) ( control: [`Control`](class_control.md), icon: [`Texture2D`](class_texture2d.md) )                                                                                         |
-| `void`                                                    | [`set_force_draw_over_forwarding_enabled`](#class_editorplugin_method_set_force_draw_over_forwarding_enabled) ( )                                                                                                                               |
-| `void`                                                    | [`set_input_event_forwarding_always_enabled`](#class_editorplugin_method_set_input_event_forwarding_always_enabled) ( )                                                                                                                         |
-| [`int`](class_int.md)                                     | [`update_overlays`](#class_editorplugin_method_update_overlays) ( ) const[^const]                                                                                                                                                               |
+| `void`                                                    | [`_apply_changes`](class_editorplugin.md#class_editorplugin_private_method__apply_changes) ( ) virtual[^virtual]                                                                                                                                                     |
+| [`bool`](class_bool.md)                                   | [`_build`](class_editorplugin.md#class_editorplugin_private_method__build) ( ) virtual[^virtual]                                                                                                                                                                     |
+| `void`                                                    | [`_clear`](class_editorplugin.md#class_editorplugin_private_method__clear) ( ) virtual[^virtual]                                                                                                                                                                     |
+| `void`                                                    | [`_disable_plugin`](class_editorplugin.md#class_editorplugin_private_method__disable_plugin) ( ) virtual[^virtual]                                                                                                                                                   |
+| `void`                                                    | [`_edit`](class_editorplugin.md#class_editorplugin_private_method__edit) ( object: [`Object`](class_object.md) ) virtual[^virtual]                                                                                                                                   |
+| `void`                                                    | [`_enable_plugin`](class_editorplugin.md#class_editorplugin_private_method__enable_plugin) ( ) virtual[^virtual]                                                                                                                                                     |
+| `void`                                                    | [`_forward_3d_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_draw_over_viewport) ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]                                                                     |
+| `void`                                                    | [`_forward_3d_force_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_force_draw_over_viewport) ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]                                                         |
+| [`int`](class_int.md)                                     | [`_forward_3d_gui_input`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_gui_input) ( viewport_camera: [`Camera3D`](class_camera3d.md), event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual]                                          |
+| `void`                                                    | [`_forward_canvas_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_canvas_draw_over_viewport) ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]                                                             |
+| `void`                                                    | [`_forward_canvas_force_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_canvas_force_draw_over_viewport) ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]                                                 |
+| [`bool`](class_bool.md)                                   | [`_forward_canvas_gui_input`](class_editorplugin.md#class_editorplugin_private_method__forward_canvas_gui_input) ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual]                                                                                    |
+| [`PackedStringArray`](class_packedstringarray.md)         | [`_get_breakpoints`](class_editorplugin.md#class_editorplugin_private_method__get_breakpoints) ( ) virtual[^virtual] const[^const]                                                                                                                                   |
+| [`Texture2D`](class_texture2d.md)                         | [`_get_plugin_icon`](class_editorplugin.md#class_editorplugin_private_method__get_plugin_icon) ( ) virtual[^virtual] const[^const]                                                                                                                                   |
+| [`String`](class_string.md)                               | [`_get_plugin_name`](class_editorplugin.md#class_editorplugin_private_method__get_plugin_name) ( ) virtual[^virtual] const[^const]                                                                                                                                   |
+| [`Dictionary`](class_dictionary.md)                       | [`_get_state`](class_editorplugin.md#class_editorplugin_private_method__get_state) ( ) virtual[^virtual] const[^const]                                                                                                                                               |
+| [`String`](class_string.md)                               | [`_get_unsaved_status`](class_editorplugin.md#class_editorplugin_private_method__get_unsaved_status) ( for_scene: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                      |
+| `void`                                                    | [`_get_window_layout`](class_editorplugin.md#class_editorplugin_private_method__get_window_layout) ( configuration: [`ConfigFile`](class_configfile.md) ) virtual[^virtual]                                                                                          |
+| [`bool`](class_bool.md)                                   | [`_handles`](class_editorplugin.md#class_editorplugin_private_method__handles) ( object: [`Object`](class_object.md) ) virtual[^virtual] const[^const]                                                                                                               |
+| [`bool`](class_bool.md)                                   | [`_has_main_screen`](class_editorplugin.md#class_editorplugin_private_method__has_main_screen) ( ) virtual[^virtual] const[^const]                                                                                                                                   |
+| `void`                                                    | [`_make_visible`](class_editorplugin.md#class_editorplugin_private_method__make_visible) ( visible: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                      |
+| `void`                                                    | [`_save_external_data`](class_editorplugin.md#class_editorplugin_private_method__save_external_data) ( ) virtual[^virtual]                                                                                                                                           |
+| `void`                                                    | [`_set_state`](class_editorplugin.md#class_editorplugin_private_method__set_state) ( state: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                                                                                                  |
+| `void`                                                    | [`_set_window_layout`](class_editorplugin.md#class_editorplugin_private_method__set_window_layout) ( configuration: [`ConfigFile`](class_configfile.md) ) virtual[^virtual]                                                                                          |
+| `void`                                                    | [`add_autoload_singleton`](class_editorplugin.md#class_editorplugin_method_add_autoload_singleton) ( name: [`String`](class_string.md), path: [`String`](class_string.md) )                                                                                          |
+| [`Button`](class_button.md)                               | [`add_control_to_bottom_panel`](class_editorplugin.md#class_editorplugin_method_add_control_to_bottom_panel) ( control: [`Control`](class_control.md), title: [`String`](class_string.md), shortcut: [`Shortcut`](class_shortcut.md) = null )                        |
+| `void`                                                    | [`add_control_to_container`](class_editorplugin.md#class_editorplugin_method_add_control_to_container) ( container: [CustomControlContainer](#enum_editorplugin_customcontrolcontainer), control: [`Control`](class_control.md) )                                    |
+| `void`                                                    | [`add_control_to_dock`](class_editorplugin.md#class_editorplugin_method_add_control_to_dock) ( slot: [DockSlot](#enum_editorplugin_dockslot), control: [`Control`](class_control.md), shortcut: [`Shortcut`](class_shortcut.md) = null )                             |
+| `void`                                                    | [`add_custom_type`](class_editorplugin.md#class_editorplugin_method_add_custom_type) ( type: [`String`](class_string.md), base: [`String`](class_string.md), script: [`Script`](class_script.md), icon: [`Texture2D`](class_texture2d.md) )                          |
+| `void`                                                    | [`add_debugger_plugin`](class_editorplugin.md#class_editorplugin_method_add_debugger_plugin) ( script: [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) )                                                                                                     |
+| `void`                                                    | [`add_export_plugin`](class_editorplugin.md#class_editorplugin_method_add_export_plugin) ( plugin: [`EditorExportPlugin`](class_editorexportplugin.md) )                                                                                                             |
+| `void`                                                    | [`add_import_plugin`](class_editorplugin.md#class_editorplugin_method_add_import_plugin) ( importer: [`EditorImportPlugin`](class_editorimportplugin.md), first_priority: [`bool`](class_bool.md) = false )                                                          |
+| `void`                                                    | [`add_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_add_inspector_plugin) ( plugin: [`EditorInspectorPlugin`](class_editorinspectorplugin.md) )                                                                                                 |
+| `void`                                                    | [`add_node_3d_gizmo_plugin`](class_editorplugin.md#class_editorplugin_method_add_node_3d_gizmo_plugin) ( plugin: [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) )                                                                                     |
+| `void`                                                    | [`add_resource_conversion_plugin`](class_editorplugin.md#class_editorplugin_method_add_resource_conversion_plugin) ( plugin: [`EditorResourceConversionPlugin`](class_editorresourceconversionplugin.md) )                                                           |
+| `void`                                                    | [`add_scene_format_importer_plugin`](class_editorplugin.md#class_editorplugin_method_add_scene_format_importer_plugin) ( scene_format_importer: [`EditorSceneFormatImporter`](class_editorsceneformatimporter.md), first_priority: [`bool`](class_bool.md) = false ) |
+| `void`                                                    | [`add_scene_post_import_plugin`](class_editorplugin.md#class_editorplugin_method_add_scene_post_import_plugin) ( scene_import_plugin: [`EditorScenePostImportPlugin`](class_editorscenepostimportplugin.md), first_priority: [`bool`](class_bool.md) = false )       |
+| `void`                                                    | [`add_tool_menu_item`](class_editorplugin.md#class_editorplugin_method_add_tool_menu_item) ( name: [`String`](class_string.md), callable: [`Callable`](class_callable.md) )                                                                                          |
+| `void`                                                    | [`add_tool_submenu_item`](class_editorplugin.md#class_editorplugin_method_add_tool_submenu_item) ( name: [`String`](class_string.md), submenu: [`PopupMenu`](class_popupmenu.md) )                                                                                   |
+| `void`                                                    | [`add_translation_parser_plugin`](class_editorplugin.md#class_editorplugin_method_add_translation_parser_plugin) ( parser: [`EditorTranslationParserPlugin`](class_editortranslationparserplugin.md) )                                                               |
+| `void`                                                    | [`add_undo_redo_inspector_hook_callback`](class_editorplugin.md#class_editorplugin_method_add_undo_redo_inspector_hook_callback) ( callable: [`Callable`](class_callable.md) )                                                                                       |
+| [`EditorInterface`](class_editorinterface.md)             | [`get_editor_interface`](class_editorplugin.md#class_editorplugin_method_get_editor_interface) ( )                                                                                                                                                                   |
+| [`PopupMenu`](class_popupmenu.md)                         | [`get_export_as_menu`](class_editorplugin.md#class_editorplugin_method_get_export_as_menu) ( )                                                                                                                                                                       |
+| [`String`](class_string.md)                               | [`get_plugin_version`](class_editorplugin.md#class_editorplugin_method_get_plugin_version) ( ) const[^const]                                                                                                                                                         |
+| [`ScriptCreateDialog`](class_scriptcreatedialog.md)       | [`get_script_create_dialog`](class_editorplugin.md#class_editorplugin_method_get_script_create_dialog) ( )                                                                                                                                                           |
+| [`EditorUndoRedoManager`](class_editorundoredomanager.md) | [`get_undo_redo`](class_editorplugin.md#class_editorplugin_method_get_undo_redo) ( )                                                                                                                                                                                 |
+| `void`                                                    | [`hide_bottom_panel`](class_editorplugin.md#class_editorplugin_method_hide_bottom_panel) ( )                                                                                                                                                                         |
+| `void`                                                    | [`make_bottom_panel_item_visible`](class_editorplugin.md#class_editorplugin_method_make_bottom_panel_item_visible) ( item: [`Control`](class_control.md) )                                                                                                           |
+| `void`                                                    | [`queue_save_layout`](class_editorplugin.md#class_editorplugin_method_queue_save_layout) ( )                                                                                                                                                                         |
+| `void`                                                    | [`remove_autoload_singleton`](class_editorplugin.md#class_editorplugin_method_remove_autoload_singleton) ( name: [`String`](class_string.md) )                                                                                                                       |
+| `void`                                                    | [`remove_control_from_bottom_panel`](class_editorplugin.md#class_editorplugin_method_remove_control_from_bottom_panel) ( control: [`Control`](class_control.md) )                                                                                                    |
+| `void`                                                    | [`remove_control_from_container`](class_editorplugin.md#class_editorplugin_method_remove_control_from_container) ( container: [CustomControlContainer](#enum_editorplugin_customcontrolcontainer), control: [`Control`](class_control.md) )                          |
+| `void`                                                    | [`remove_control_from_docks`](class_editorplugin.md#class_editorplugin_method_remove_control_from_docks) ( control: [`Control`](class_control.md) )                                                                                                                  |
+| `void`                                                    | [`remove_custom_type`](class_editorplugin.md#class_editorplugin_method_remove_custom_type) ( type: [`String`](class_string.md) )                                                                                                                                     |
+| `void`                                                    | [`remove_debugger_plugin`](class_editorplugin.md#class_editorplugin_method_remove_debugger_plugin) ( script: [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) )                                                                                               |
+| `void`                                                    | [`remove_export_plugin`](class_editorplugin.md#class_editorplugin_method_remove_export_plugin) ( plugin: [`EditorExportPlugin`](class_editorexportplugin.md) )                                                                                                       |
+| `void`                                                    | [`remove_import_plugin`](class_editorplugin.md#class_editorplugin_method_remove_import_plugin) ( importer: [`EditorImportPlugin`](class_editorimportplugin.md) )                                                                                                     |
+| `void`                                                    | [`remove_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_remove_inspector_plugin) ( plugin: [`EditorInspectorPlugin`](class_editorinspectorplugin.md) )                                                                                           |
+| `void`                                                    | [`remove_node_3d_gizmo_plugin`](class_editorplugin.md#class_editorplugin_method_remove_node_3d_gizmo_plugin) ( plugin: [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) )                                                                               |
+| `void`                                                    | [`remove_resource_conversion_plugin`](class_editorplugin.md#class_editorplugin_method_remove_resource_conversion_plugin) ( plugin: [`EditorResourceConversionPlugin`](class_editorresourceconversionplugin.md) )                                                     |
+| `void`                                                    | [`remove_scene_format_importer_plugin`](class_editorplugin.md#class_editorplugin_method_remove_scene_format_importer_plugin) ( scene_format_importer: [`EditorSceneFormatImporter`](class_editorsceneformatimporter.md) )                                            |
+| `void`                                                    | [`remove_scene_post_import_plugin`](class_editorplugin.md#class_editorplugin_method_remove_scene_post_import_plugin) ( scene_import_plugin: [`EditorScenePostImportPlugin`](class_editorscenepostimportplugin.md) )                                                  |
+| `void`                                                    | [`remove_tool_menu_item`](class_editorplugin.md#class_editorplugin_method_remove_tool_menu_item) ( name: [`String`](class_string.md) )                                                                                                                               |
+| `void`                                                    | [`remove_translation_parser_plugin`](class_editorplugin.md#class_editorplugin_method_remove_translation_parser_plugin) ( parser: [`EditorTranslationParserPlugin`](class_editortranslationparserplugin.md) )                                                         |
+| `void`                                                    | [`remove_undo_redo_inspector_hook_callback`](class_editorplugin.md#class_editorplugin_method_remove_undo_redo_inspector_hook_callback) ( callable: [`Callable`](class_callable.md) )                                                                                 |
+| `void`                                                    | [`set_dock_tab_icon`](class_editorplugin.md#class_editorplugin_method_set_dock_tab_icon) ( control: [`Control`](class_control.md), icon: [`Texture2D`](class_texture2d.md) )                                                                                         |
+| `void`                                                    | [`set_force_draw_over_forwarding_enabled`](class_editorplugin.md#class_editorplugin_method_set_force_draw_over_forwarding_enabled) ( )                                                                                                                               |
+| `void`                                                    | [`set_input_event_forwarding_always_enabled`](class_editorplugin.md#class_editorplugin_method_set_input_event_forwarding_always_enabled) ( )                                                                                                                         |
+| [`int`](class_int.md)                                     | [`update_overlays`](class_editorplugin.md#class_editorplugin_method_update_overlays) ( ) const[^const]                                                                                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -111,7 +111,7 @@ Emitted when user changes the workspace (**2D**, **3D**, **Script**, **AssetLib*
 
 **project_settings_changed** ( ) <div id="class_editorplugin_signal_project_settings_changed"></div>
 
-**已弃用：** Use [`ProjectSettings.settings_changed`](#class_projectsettings_signal_settings_changed) instead.
+**已弃用：** Use [`ProjectSettings.settings_changed`](class_projectsettings.md#class_projectsettings_signal_settings_changed) instead.
 
 Emitted when any project setting has changed.
 
@@ -123,7 +123,7 @@ Emitted when any project setting has changed.
 
 **resource_saved** ( resource: [`Resource`](class_resource.md) ) <div id="class_editorplugin_signal_resource_saved"></div>
 
-Emitted when the given `resource` was saved on disc. See also [`scene_saved`](#class_editorplugin_signal_scene_saved).
+Emitted when the given `resource` was saved on disc. See also [`scene_saved`](class_editorplugin.md#class_editorplugin_signal_scene_saved).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -153,7 +153,7 @@ Emitted when user closes a scene. The argument is a file path to the closed scen
 
 **scene_saved** ( filepath: [`String`](class_string.md) ) <div id="class_editorplugin_signal_scene_saved"></div>
 
-Emitted when a scene was saved on disc. The argument is a file path to the saved scene. See also [`resource_saved`](#class_editorplugin_signal_resource_saved).
+Emitted when a scene was saved on disc. The argument is a file path to the saved scene. See also [`resource_saved`](class_editorplugin.md#class_editorplugin_signal_resource_saved).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -349,7 +349,7 @@ This is used, for example, in shader editors to let the plugin know that it must
 
 This method is called when the editor is about to run the project. The plugin can then perform required operations before the project runs.
 
-This method must return a boolean. If this method returns `false`, the project will not run. The run is aborted immediately, so this also prevents all other plugins' [`_build`](#class_editorplugin_private_method__build) methods from running.
+This method must return a boolean. If this method returns `false`, the project will not run. The run is aborted immediately, so this also prevents all other plugins' [`_build`](class_editorplugin.md#class_editorplugin_private_method__build) methods from running.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -401,7 +401,7 @@ Called by the engine when the user enables the **EditorPlugin** in the Plugin ta
 
 `void` **_forward_3d_draw_over_viewport** ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__forward_3d_draw_over_viewport"></div>
 
-Called by the engine when the 3D editor's viewport is updated. Use the `overlay` [`Control`](class_control.md) for drawing. You can update the viewport manually by calling [`update_overlays`](#class_editorplugin_method_update_overlays).
+Called by the engine when the 3D editor's viewport is updated. Use the `overlay` [`Control`](class_control.md) for drawing. You can update the viewport manually by calling [`update_overlays`](class_editorplugin.md#class_editorplugin_method_update_overlays).
 
 
 
@@ -453,9 +453,9 @@ Called by the engine when the 3D editor's viewport is updated. Use the `overlay`
 
 `void` **_forward_3d_force_draw_over_viewport** ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__forward_3d_force_draw_over_viewport"></div>
 
-This method is the same as [`_forward_3d_draw_over_viewport`](#class_editorplugin_private_method__forward_3d_draw_over_viewport), except it draws on top of everything. Useful when you need an extra layer that shows over anything else.
+This method is the same as [`_forward_3d_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_draw_over_viewport), except it draws on top of everything. Useful when you need an extra layer that shows over anything else.
 
-You need to enable calling of this method by using [`set_force_draw_over_forwarding_enabled`](#class_editorplugin_method_set_force_draw_over_forwarding_enabled).
+You need to enable calling of this method by using [`set_force_draw_over_forwarding_enabled`](class_editorplugin.md#class_editorplugin_method_set_force_draw_over_forwarding_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -465,7 +465,7 @@ You need to enable calling of this method by using [`set_force_draw_over_forward
 
 [`int`](class_int.md) **_forward_3d_gui_input** ( viewport_camera: [`Camera3D`](class_camera3d.md), event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__forward_3d_gui_input"></div>
 
-Called when there is a root node in the current edited scene, [`_handles`](#class_editorplugin_private_method__handles) is implemented, and an [`InputEvent`](class_inputevent.md) happens in the 3D viewport. The return value decides whether the [`InputEvent`](class_inputevent.md) is consumed or forwarded to other **EditorPlugin** s. See [AfterGUIInput](#enum_editorplugin_afterguiinput) for options.
+Called when there is a root node in the current edited scene, [`_handles`](class_editorplugin.md#class_editorplugin_private_method__handles) is implemented, and an [`InputEvent`](class_inputevent.md) happens in the 3D viewport. The return value decides whether the [`InputEvent`](class_inputevent.md) is consumed or forwarded to other **EditorPlugin** s. See [AfterGUIInput](#enum_editorplugin_afterguiinput) for options.
 
  **Example:** 
 
@@ -529,7 +529,7 @@ Must `return EditorPlugin.AFTER_GUI_INPUT_PASS` in order to forward the [`InputE
 
 `void` **_forward_canvas_draw_over_viewport** ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__forward_canvas_draw_over_viewport"></div>
 
-Called by the engine when the 2D editor's viewport is updated. Use the `overlay` [`Control`](class_control.md) for drawing. You can update the viewport manually by calling [`update_overlays`](#class_editorplugin_method_update_overlays).
+Called by the engine when the 2D editor's viewport is updated. Use the `overlay` [`Control`](class_control.md) for drawing. You can update the viewport manually by calling [`update_overlays`](class_editorplugin.md#class_editorplugin_method_update_overlays).
 
 
 
@@ -581,9 +581,9 @@ Called by the engine when the 2D editor's viewport is updated. Use the `overlay`
 
 `void` **_forward_canvas_force_draw_over_viewport** ( viewport_control: [`Control`](class_control.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__forward_canvas_force_draw_over_viewport"></div>
 
-This method is the same as [`_forward_canvas_draw_over_viewport`](#class_editorplugin_private_method__forward_canvas_draw_over_viewport), except it draws on top of everything. Useful when you need an extra layer that shows over anything else.
+This method is the same as [`_forward_canvas_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_canvas_draw_over_viewport), except it draws on top of everything. Useful when you need an extra layer that shows over anything else.
 
-You need to enable calling of this method by using [`set_force_draw_over_forwarding_enabled`](#class_editorplugin_method_set_force_draw_over_forwarding_enabled).
+You need to enable calling of this method by using [`set_force_draw_over_forwarding_enabled`](class_editorplugin.md#class_editorplugin_method_set_force_draw_over_forwarding_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -593,7 +593,7 @@ You need to enable calling of this method by using [`set_force_draw_over_forward
 
 [`bool`](class_bool.md) **_forward_canvas_gui_input** ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__forward_canvas_gui_input"></div>
 
-Called when there is a root node in the current edited scene, [`_handles`](#class_editorplugin_private_method__handles) is implemented and an [`InputEvent`](class_inputevent.md) happens in the 2D viewport. Intercepts the [`InputEvent`](class_inputevent.md), if `return true` **EditorPlugin** consumes the `event`, otherwise forwards `event` to other Editor classes.
+Called when there is a root node in the current edited scene, [`_handles`](class_editorplugin.md#class_editorplugin_private_method__handles) is implemented and an [`InputEvent`](class_inputevent.md) happens in the 2D viewport. Intercepts the [`InputEvent`](class_inputevent.md), if `return true` **EditorPlugin** consumes the `event`, otherwise forwards `event` to other Editor classes.
 
  **Example:** 
 
@@ -727,13 +727,13 @@ For main screen plugins, this appears at the top of the screen, to the right of 
 
 [`Dictionary`](class_dictionary.md) **_get_state** ( ) virtual[^virtual] const[^const]<div id="class_editorplugin_private_method__get_state"></div>
 
-Override this method to provide a state data you want to be saved, like view position, grid settings, folding, etc. This is used when saving the scene (so state is kept when opening it again) and for switching tabs (so state can be restored when the tab returns). This data is automatically saved for each scene in an `editstate` file in the editor metadata folder. If you want to store global (scene-independent) editor data for your plugin, you can use [`_get_window_layout`](#class_editorplugin_private_method__get_window_layout) instead.
+Override this method to provide a state data you want to be saved, like view position, grid settings, folding, etc. This is used when saving the scene (so state is kept when opening it again) and for switching tabs (so state can be restored when the tab returns). This data is automatically saved for each scene in an `editstate` file in the editor metadata folder. If you want to store global (scene-independent) editor data for your plugin, you can use [`_get_window_layout`](class_editorplugin.md#class_editorplugin_private_method__get_window_layout) instead.
 
-Use [`_set_state`](#class_editorplugin_private_method__set_state) to restore your saved state.
+Use [`_set_state`](class_editorplugin.md#class_editorplugin_private_method__set_state) to restore your saved state.
 
  **Note:** This method should not be used to save important settings that should persist with the project.
 
- **Note:** You must implement [`_get_plugin_name`](#class_editorplugin_private_method__get_plugin_name) for the state to be stored and restored correctly.
+ **Note:** You must implement [`_get_plugin_name`](class_editorplugin.md#class_editorplugin_private_method__get_plugin_name) for the state to be stored and restored correctly.
 
 ```
 
@@ -756,7 +756,7 @@ Override this method to provide a custom message that lists unsaved changes. The
 
 When closing a scene, `for_scene` is the path to the scene being closed. You can use it to handle built-in resources in that scene.
 
-If the user confirms saving, [`_save_external_data`](#class_editorplugin_private_method__save_external_data) will be called, before closing the editor.
+If the user confirms saving, [`_save_external_data`](class_editorplugin.md#class_editorplugin_private_method__save_external_data) will be called, before closing the editor.
 
 ```
 
@@ -794,9 +794,9 @@ If the plugin has no scene-specific changes, you can ignore the calls when closi
 
 `void` **_get_window_layout** ( configuration: [`ConfigFile`](class_configfile.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__get_window_layout"></div>
 
-Override this method to provide the GUI layout of the plugin or any other data you want to be stored. This is used to save the project's editor layout when [`queue_save_layout`](#class_editorplugin_method_queue_save_layout) is called or the editor layout was changed (for example changing the position of a dock). The data is stored in the `editor_layout.cfg` file in the editor metadata directory.
+Override this method to provide the GUI layout of the plugin or any other data you want to be stored. This is used to save the project's editor layout when [`queue_save_layout`](class_editorplugin.md#class_editorplugin_method_queue_save_layout) is called or the editor layout was changed (for example changing the position of a dock). The data is stored in the `editor_layout.cfg` file in the editor metadata directory.
 
-Use [`_set_window_layout`](#class_editorplugin_private_method__set_window_layout) to restore your saved layout.
+Use [`_set_window_layout`](class_editorplugin.md#class_editorplugin_private_method__set_window_layout) to restore your saved layout.
 
 ```
 
@@ -815,7 +815,7 @@ Use [`_set_window_layout`](#class_editorplugin_private_method__set_window_layout
 
 [`bool`](class_bool.md) **_handles** ( object: [`Object`](class_object.md) ) virtual[^virtual] const[^const]<div id="class_editorplugin_private_method__handles"></div>
 
-Implement this function if your plugin edits a specific type of object (Resource or Node). If you return `true`, then you will get the functions [`_edit`](#class_editorplugin_private_method__edit) and [`_make_visible`](#class_editorplugin_private_method__make_visible) called when the editor requests them. If you have declared the methods [`_forward_canvas_gui_input`](#class_editorplugin_private_method__forward_canvas_gui_input) and [`_forward_3d_gui_input`](#class_editorplugin_private_method__forward_3d_gui_input) these will be called too.
+Implement this function if your plugin edits a specific type of object (Resource or Node). If you return `true`, then you will get the functions [`_edit`](class_editorplugin.md#class_editorplugin_private_method__edit) and [`_make_visible`](class_editorplugin.md#class_editorplugin_private_method__make_visible) called when the editor requests them. If you have declared the methods [`_forward_canvas_gui_input`](class_editorplugin.md#class_editorplugin_private_method__forward_canvas_gui_input) and [`_forward_3d_gui_input`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_gui_input) these will be called too.
 
  **Note:** Each plugin should handle only one type of objects at a time. If a plugin handles more types of objects and they are edited at the same time, it will result in errors.
 
@@ -829,9 +829,9 @@ Implement this function if your plugin edits a specific type of object (Resource
 
 Returns `true` if this is a main screen editor plugin (it goes in the workspace selector together with **2D**, **3D**, **Script** and **AssetLib**).
 
-When the plugin's workspace is selected, other main screen plugins will be hidden, but your plugin will not appear automatically. It needs to be added as a child of [`EditorInterface.get_editor_main_screen`](#class_editorinterface_method_get_editor_main_screen) and made visible inside [`_make_visible`](#class_editorplugin_private_method__make_visible).
+When the plugin's workspace is selected, other main screen plugins will be hidden, but your plugin will not appear automatically. It needs to be added as a child of [`EditorInterface.get_editor_main_screen`](class_editorinterface.md#class_editorinterface_method_get_editor_main_screen) and made visible inside [`_make_visible`](class_editorplugin.md#class_editorplugin_private_method__make_visible).
 
-Use [`_get_plugin_name`](#class_editorplugin_private_method__get_plugin_name) and [`_get_plugin_icon`](#class_editorplugin_private_method__get_plugin_icon) to customize the plugin button's appearance.
+Use [`_get_plugin_name`](class_editorplugin.md#class_editorplugin_private_method__get_plugin_name) and [`_get_plugin_icon`](class_editorplugin.md#class_editorplugin_private_method__get_plugin_icon) to customize the plugin button's appearance.
 
 ```
 
@@ -887,9 +887,9 @@ This method is called after the editor saves the project or when it's closed. It
 
 `void` **_set_state** ( state: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__set_state"></div>
 
-Restore the state saved by [`_get_state`](#class_editorplugin_private_method__get_state). This method is called when the current scene tab is changed in the editor.
+Restore the state saved by [`_get_state`](class_editorplugin.md#class_editorplugin_private_method__get_state). This method is called when the current scene tab is changed in the editor.
 
- **Note:** Your plugin must implement [`_get_plugin_name`](#class_editorplugin_private_method__get_plugin_name), otherwise it will not be recognized and this method will not be called.
+ **Note:** Your plugin must implement [`_get_plugin_name`](class_editorplugin.md#class_editorplugin_private_method__get_plugin_name), otherwise it will not be recognized and this method will not be called.
 
 ```
 
@@ -908,7 +908,7 @@ Restore the state saved by [`_get_state`](#class_editorplugin_private_method__ge
 
 `void` **_set_window_layout** ( configuration: [`ConfigFile`](class_configfile.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__set_window_layout"></div>
 
-Restore the plugin GUI layout and data saved by [`_get_window_layout`](#class_editorplugin_private_method__get_window_layout). This method is called for every plugin on editor startup. Use the provided `configuration` file to read your saved data.
+Restore the plugin GUI layout and data saved by [`_get_window_layout`](class_editorplugin.md#class_editorplugin_private_method__get_window_layout). This method is called for every plugin on editor startup. Use the provided `configuration` file to read your saved data.
 
 ```
 
@@ -937,7 +937,7 @@ Adds a script at `path` to the Autoload list as `name`.
 
 [`Button`](class_button.md) **add_control_to_bottom_panel** ( control: [`Control`](class_control.md), title: [`String`](class_string.md), shortcut: [`Shortcut`](class_shortcut.md) = null )<div id="class_editorplugin_method_add_control_to_bottom_panel"></div>
 
-Adds a control to the bottom panel (together with Output, Debug, Animation, etc). Returns a reference to the button added. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with [`remove_control_from_bottom_panel`](#class_editorplugin_method_remove_control_from_bottom_panel) and free it with [`Node.queue_free`](#class_node_method_queue_free).
+Adds a control to the bottom panel (together with Output, Debug, Animation, etc). Returns a reference to the button added. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with [`remove_control_from_bottom_panel`](class_editorplugin.md#class_editorplugin_method_remove_control_from_bottom_panel) and free it with [`Node.queue_free`](class_node.md#class_node_method_queue_free).
 
 Optionally, you can specify a shortcut parameter. When pressed, this shortcut will toggle the bottom panel's visibility. See the default editor bottom panel shortcuts in the Editor Settings for inspiration. Per convention, they all use <i class="fa fa-gamepad"></i>`Alt` modifier.
 
@@ -953,7 +953,7 @@ Adds a custom control to a container (see [CustomControlContainer](#enum_editorp
 
 Please remember that you have to manage the visibility of your custom controls yourself (and likely hide it after adding it).
 
-When your plugin is deactivated, make sure to remove your custom control with [`remove_control_from_container`](#class_editorplugin_method_remove_control_from_container) and free it with [`Node.queue_free`](#class_node_method_queue_free).
+When your plugin is deactivated, make sure to remove your custom control with [`remove_control_from_container`](class_editorplugin.md#class_editorplugin_method_remove_control_from_container) and free it with [`Node.queue_free`](class_node.md#class_node_method_queue_free).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -967,7 +967,7 @@ Adds the control to a specific dock slot (see [DockSlot](#enum_editorplugin_dock
 
 If the dock is repositioned and as long as the plugin is active, the editor will save the dock position on further sessions.
 
-When your plugin is deactivated, make sure to remove your custom control with [`remove_control_from_docks`](#class_editorplugin_method_remove_control_from_docks) and free it with [`Node.queue_free`](#class_node_method_queue_free).
+When your plugin is deactivated, make sure to remove your custom control with [`remove_control_from_docks`](class_editorplugin.md#class_editorplugin_method_remove_control_from_docks) and free it with [`Node.queue_free`](class_node.md#class_node_method_queue_free).
 
 Optionally, you can specify a shortcut parameter. When pressed, this shortcut will toggle the dock's visibility once it's moved to the bottom panel (this shortcut does not affect the dock otherwise). See the default editor bottom panel shortcuts in the Editor Settings for inspiration. Per convention, they all use <i class="fa fa-gamepad"></i>`Alt` modifier.
 
@@ -985,7 +985,7 @@ When a given node or resource is selected, the base type will be instantiated (e
 
  **Note:** The base type is the base engine class which this type's class hierarchy inherits, not any custom type parent classes.
 
-You can use the virtual method [`_handles`](#class_editorplugin_private_method__handles) to check if your custom object is being edited by checking the script or using the `is` keyword.
+You can use the virtual method [`_handles`](class_editorplugin.md#class_editorplugin_private_method__handles) to check if your custom object is being edited by checking the script or using the `is` keyword.
 
 During run-time, this will be a simple object with a script so this function does not need to be called then.
 
@@ -1011,7 +1011,7 @@ Adds a [`Script`](class_script.md) as debugger plugin to the Debugger. The scrip
 
 Registers a new [`EditorExportPlugin`](class_editorexportplugin.md). Export plugins are used to perform tasks when the project is being exported.
 
-See [`add_inspector_plugin`](#class_editorplugin_method_add_inspector_plugin) for an example of how to register a plugin.
+See [`add_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_add_inspector_plugin) for an example of how to register a plugin.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1025,9 +1025,9 @@ Registers a new [`EditorImportPlugin`](class_editorimportplugin.md). Import plug
 
 If `first_priority` is `true`, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.
 
- **Note:** If you want to import custom 3D asset formats use [`add_scene_format_importer_plugin`](#class_editorplugin_method_add_scene_format_importer_plugin) instead.
+ **Note:** If you want to import custom 3D asset formats use [`add_scene_format_importer_plugin`](class_editorplugin.md#class_editorplugin_method_add_scene_format_importer_plugin) instead.
 
-See [`add_inspector_plugin`](#class_editorplugin_method_add_inspector_plugin) for an example of how to register a plugin.
+See [`add_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_add_inspector_plugin) for an example of how to register a plugin.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1039,7 +1039,7 @@ See [`add_inspector_plugin`](#class_editorplugin_method_add_inspector_plugin) fo
 
 Registers a new [`EditorInspectorPlugin`](class_editorinspectorplugin.md). Inspector plugins are used to extend [`EditorInspector`](class_editorinspector.md) and provide custom configuration tools for your object's properties.
 
- **Note:** Always use [`remove_inspector_plugin`](#class_editorplugin_method_remove_inspector_plugin) to remove the registered [`EditorInspectorPlugin`](class_editorinspectorplugin.md) when your **EditorPlugin** is disabled to prevent leaks and an unexpected behavior.
+ **Note:** Always use [`remove_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_remove_inspector_plugin) to remove the registered [`EditorInspectorPlugin`](class_editorinspectorplugin.md) when your **EditorPlugin** is disabled to prevent leaks and an unexpected behavior.
 
 
 
@@ -1069,7 +1069,7 @@ Registers a new [`EditorInspectorPlugin`](class_editorinspectorplugin.md). Inspe
 
 Registers a new [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md). Gizmo plugins are used to add custom gizmos to the 3D preview viewport for a [`Node3D`](class_node3d.md).
 
-See [`add_inspector_plugin`](#class_editorplugin_method_add_inspector_plugin) for an example of how to register a plugin.
+See [`add_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_add_inspector_plugin) for an example of how to register a plugin.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1125,7 +1125,7 @@ Adds a custom menu item to **Project > Tools** named `name`. When clicked, the p
 
 `void` **add_tool_submenu_item** ( name: [`String`](class_string.md), submenu: [`PopupMenu`](class_popupmenu.md) )<div id="class_editorplugin_method_add_tool_submenu_item"></div>
 
-Adds a custom [`PopupMenu`](class_popupmenu.md) submenu under **Project > Tools >** `name`. Use [`remove_tool_menu_item`](#class_editorplugin_method_remove_tool_menu_item) on plugin clean up to remove the menu.
+Adds a custom [`PopupMenu`](class_popupmenu.md) submenu under **Project > Tools >** `name`. Use [`remove_tool_menu_item`](class_editorplugin.md#class_editorplugin_method_remove_tool_menu_item) on plugin clean up to remove the menu.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1253,7 +1253,7 @@ Removes an Autoload `name` from the list.
 
 `void` **remove_control_from_bottom_panel** ( control: [`Control`](class_control.md) )<div id="class_editorplugin_method_remove_control_from_bottom_panel"></div>
 
-Removes the control from the bottom panel. You have to manually [`Node.queue_free`](#class_node_method_queue_free) the control.
+Removes the control from the bottom panel. You have to manually [`Node.queue_free`](class_node.md#class_node_method_queue_free) the control.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1263,7 +1263,7 @@ Removes the control from the bottom panel. You have to manually [`Node.queue_fre
 
 `void` **remove_control_from_container** ( container: [CustomControlContainer](#enum_editorplugin_customcontrolcontainer), control: [`Control`](class_control.md) )<div id="class_editorplugin_method_remove_control_from_container"></div>
 
-Removes the control from the specified container. You have to manually [`Node.queue_free`](#class_node_method_queue_free) the control.
+Removes the control from the specified container. You have to manually [`Node.queue_free`](class_node.md#class_node_method_queue_free) the control.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1273,7 +1273,7 @@ Removes the control from the specified container. You have to manually [`Node.qu
 
 `void` **remove_control_from_docks** ( control: [`Control`](class_control.md) )<div id="class_editorplugin_method_remove_control_from_docks"></div>
 
-Removes the control from the dock. You have to manually [`Node.queue_free`](#class_node_method_queue_free) the control.
+Removes the control from the dock. You have to manually [`Node.queue_free`](class_node.md#class_node_method_queue_free) the control.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1283,7 +1283,7 @@ Removes the control from the dock. You have to manually [`Node.queue_free`](#cla
 
 `void` **remove_custom_type** ( type: [`String`](class_string.md) )<div id="class_editorplugin_method_remove_custom_type"></div>
 
-Removes a custom type added by [`add_custom_type`](#class_editorplugin_method_add_custom_type).
+Removes a custom type added by [`add_custom_type`](class_editorplugin.md#class_editorplugin_method_add_custom_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1303,7 +1303,7 @@ Removes the debugger plugin with given script from the Debugger.
 
 `void` **remove_export_plugin** ( plugin: [`EditorExportPlugin`](class_editorexportplugin.md) )<div id="class_editorplugin_method_remove_export_plugin"></div>
 
-Removes an export plugin registered by [`add_export_plugin`](#class_editorplugin_method_add_export_plugin).
+Removes an export plugin registered by [`add_export_plugin`](class_editorplugin.md#class_editorplugin_method_add_export_plugin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1313,7 +1313,7 @@ Removes an export plugin registered by [`add_export_plugin`](#class_editorplugin
 
 `void` **remove_import_plugin** ( importer: [`EditorImportPlugin`](class_editorimportplugin.md) )<div id="class_editorplugin_method_remove_import_plugin"></div>
 
-Removes an import plugin registered by [`add_import_plugin`](#class_editorplugin_method_add_import_plugin).
+Removes an import plugin registered by [`add_import_plugin`](class_editorplugin.md#class_editorplugin_method_add_import_plugin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1323,7 +1323,7 @@ Removes an import plugin registered by [`add_import_plugin`](#class_editorplugin
 
 `void` **remove_inspector_plugin** ( plugin: [`EditorInspectorPlugin`](class_editorinspectorplugin.md) )<div id="class_editorplugin_method_remove_inspector_plugin"></div>
 
-Removes an inspector plugin registered by [`add_import_plugin`](#class_editorplugin_method_add_import_plugin)
+Removes an inspector plugin registered by [`add_import_plugin`](class_editorplugin.md#class_editorplugin_method_add_import_plugin)
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1333,7 +1333,7 @@ Removes an inspector plugin registered by [`add_import_plugin`](#class_editorplu
 
 `void` **remove_node_3d_gizmo_plugin** ( plugin: [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) )<div id="class_editorplugin_method_remove_node_3d_gizmo_plugin"></div>
 
-Removes a gizmo plugin registered by [`add_node_3d_gizmo_plugin`](#class_editorplugin_method_add_node_3d_gizmo_plugin).
+Removes a gizmo plugin registered by [`add_node_3d_gizmo_plugin`](class_editorplugin.md#class_editorplugin_method_add_node_3d_gizmo_plugin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1343,7 +1343,7 @@ Removes a gizmo plugin registered by [`add_node_3d_gizmo_plugin`](#class_editorp
 
 `void` **remove_resource_conversion_plugin** ( plugin: [`EditorResourceConversionPlugin`](class_editorresourceconversionplugin.md) )<div id="class_editorplugin_method_remove_resource_conversion_plugin"></div>
 
-Removes a resource conversion plugin registered by [`add_resource_conversion_plugin`](#class_editorplugin_method_add_resource_conversion_plugin).
+Removes a resource conversion plugin registered by [`add_resource_conversion_plugin`](class_editorplugin.md#class_editorplugin_method_add_resource_conversion_plugin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1353,7 +1353,7 @@ Removes a resource conversion plugin registered by [`add_resource_conversion_plu
 
 `void` **remove_scene_format_importer_plugin** ( scene_format_importer: [`EditorSceneFormatImporter`](class_editorsceneformatimporter.md) )<div id="class_editorplugin_method_remove_scene_format_importer_plugin"></div>
 
-Removes a scene format importer registered by [`add_scene_format_importer_plugin`](#class_editorplugin_method_add_scene_format_importer_plugin).
+Removes a scene format importer registered by [`add_scene_format_importer_plugin`](class_editorplugin.md#class_editorplugin_method_add_scene_format_importer_plugin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1363,7 +1363,7 @@ Removes a scene format importer registered by [`add_scene_format_importer_plugin
 
 `void` **remove_scene_post_import_plugin** ( scene_import_plugin: [`EditorScenePostImportPlugin`](class_editorscenepostimportplugin.md) )<div id="class_editorplugin_method_remove_scene_post_import_plugin"></div>
 
-Remove the [`EditorScenePostImportPlugin`](class_editorscenepostimportplugin.md), added with [`add_scene_post_import_plugin`](#class_editorplugin_method_add_scene_post_import_plugin).
+Remove the [`EditorScenePostImportPlugin`](class_editorscenepostimportplugin.md), added with [`add_scene_post_import_plugin`](class_editorplugin.md#class_editorplugin_method_add_scene_post_import_plugin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1383,7 +1383,7 @@ Removes a menu `name` from **Project > Tools**.
 
 `void` **remove_translation_parser_plugin** ( parser: [`EditorTranslationParserPlugin`](class_editortranslationparserplugin.md) )<div id="class_editorplugin_method_remove_translation_parser_plugin"></div>
 
-Removes a custom translation parser plugin registered by [`add_translation_parser_plugin`](#class_editorplugin_method_add_translation_parser_plugin).
+Removes a custom translation parser plugin registered by [`add_translation_parser_plugin`](class_editorplugin.md#class_editorplugin_method_add_translation_parser_plugin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1393,7 +1393,7 @@ Removes a custom translation parser plugin registered by [`add_translation_parse
 
 `void` **remove_undo_redo_inspector_hook_callback** ( callable: [`Callable`](class_callable.md) )<div id="class_editorplugin_method_remove_undo_redo_inspector_hook_callback"></div>
 
-Removes a callback previously added by [`add_undo_redo_inspector_hook_callback`](#class_editorplugin_method_add_undo_redo_inspector_hook_callback).
+Removes a callback previously added by [`add_undo_redo_inspector_hook_callback`](class_editorplugin.md#class_editorplugin_method_add_undo_redo_inspector_hook_callback).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1413,7 +1413,7 @@ Sets the tab icon for the given control in a dock slot. Setting to `null` remove
 
 `void` **set_force_draw_over_forwarding_enabled** ( )<div id="class_editorplugin_method_set_force_draw_over_forwarding_enabled"></div>
 
-Enables calling of [`_forward_canvas_force_draw_over_viewport`](#class_editorplugin_private_method__forward_canvas_force_draw_over_viewport) for the 2D editor and [`_forward_3d_force_draw_over_viewport`](#class_editorplugin_private_method__forward_3d_force_draw_over_viewport) for the 3D editor when their viewports are updated. You need to call this method only once and it will work permanently for this plugin.
+Enables calling of [`_forward_canvas_force_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_canvas_force_draw_over_viewport) for the 2D editor and [`_forward_3d_force_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_force_draw_over_viewport) for the 3D editor when their viewports are updated. You need to call this method only once and it will work permanently for this plugin.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1423,7 +1423,7 @@ Enables calling of [`_forward_canvas_force_draw_over_viewport`](#class_editorplu
 
 `void` **set_input_event_forwarding_always_enabled** ( )<div id="class_editorplugin_method_set_input_event_forwarding_always_enabled"></div>
 
-Use this method if you always want to receive inputs from 3D view screen inside [`_forward_3d_gui_input`](#class_editorplugin_private_method__forward_3d_gui_input). It might be especially usable if your plugin will want to use raycast in the scene.
+Use this method if you always want to receive inputs from 3D view screen inside [`_forward_3d_gui_input`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_gui_input). It might be especially usable if your plugin will want to use raycast in the scene.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1433,7 +1433,7 @@ Use this method if you always want to receive inputs from 3D view screen inside 
 
 [`int`](class_int.md) **update_overlays** ( ) const[^const]<div id="class_editorplugin_method_update_overlays"></div>
 
-Updates the overlays of the 2D and 3D editor viewport. Causes methods [`_forward_canvas_draw_over_viewport`](#class_editorplugin_private_method__forward_canvas_draw_over_viewport), [`_forward_canvas_force_draw_over_viewport`](#class_editorplugin_private_method__forward_canvas_force_draw_over_viewport), [`_forward_3d_draw_over_viewport`](#class_editorplugin_private_method__forward_3d_draw_over_viewport) and [`_forward_3d_force_draw_over_viewport`](#class_editorplugin_private_method__forward_3d_force_draw_over_viewport) to be called.
+Updates the overlays of the 2D and 3D editor viewport. Causes methods [`_forward_canvas_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_canvas_draw_over_viewport), [`_forward_canvas_force_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_canvas_force_draw_over_viewport), [`_forward_3d_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_draw_over_viewport) and [`_forward_3d_force_draw_over_viewport`](class_editorplugin.md#class_editorplugin_private_method__forward_3d_force_draw_over_viewport) to be called.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

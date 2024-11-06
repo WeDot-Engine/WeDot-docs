@@ -19,21 +19,21 @@ For the list of the global functions and constants see [`@GlobalScope`](class_@g
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)           | [`Color8`](#class_@gdscript_method_color8) ( r8: [`int`](class_int.md), g8: [`int`](class_int.md), b8: [`int`](class_int.md), a8: [`int`](class_int.md) = 255 ) |
-| `void`                              | [`assert`](#class_@gdscript_method_assert) ( condition: [`bool`](class_bool.md), message: [`String`](class_string.md) = "" )                                    |
-| [`String`](class_string.md)         | [`char`](#class_@gdscript_method_char) ( char: [`int`](class_int.md) )                                                                                          |
-| [`Variant`](class_variant.md)       | [`convert`](#class_@gdscript_method_convert) ( what: [`Variant`](class_variant.md), type: [`int`](class_int.md) )                                               |
-| [`Object`](class_object.md)         | [`dict_to_inst`](#class_@gdscript_method_dict_to_inst) ( dictionary: [`Dictionary`](class_dictionary.md) )                                                      |
-| [`Array`](class_array.md)           | [`get_stack`](#class_@gdscript_method_get_stack) ( )                                                                                                            |
-| [`Dictionary`](class_dictionary.md) | [`inst_to_dict`](#class_@gdscript_method_inst_to_dict) ( instance: [`Object`](class_object.md) )                                                                |
-| [`bool`](class_bool.md)             | [`is_instance_of`](#class_@gdscript_method_is_instance_of) ( value: [`Variant`](class_variant.md), type: [`Variant`](class_variant.md) )                        |
-| [`int`](class_int.md)               | [`len`](#class_@gdscript_method_len) ( var: [`Variant`](class_variant.md) )                                                                                     |
-| [`Resource`](class_resource.md)     | [`load`](#class_@gdscript_method_load) ( path: [`String`](class_string.md) )                                                                                    |
-| [`Resource`](class_resource.md)     | [`preload`](#class_@gdscript_method_preload) ( path: [`String`](class_string.md) )                                                                              |
-| `void`                              | [`print_debug`](#class_@gdscript_method_print_debug) ( ... ) vararg[^vararg]                                                                                    |
-| `void`                              | [`print_stack`](#class_@gdscript_method_print_stack) ( )                                                                                                        |
-| [`Array`](class_array.md)           | [`range`](#class_@gdscript_method_range) ( ... ) vararg[^vararg]                                                                                                |
-| [`bool`](class_bool.md)             | [`type_exists`](#class_@gdscript_method_type_exists) ( type: [`StringName`](class_stringname.md) )                                                              |
+| [`Color`](class_color.md)           | [`Color8`](class_@gdscript.md#class_@gdscript_method_color8) ( r8: [`int`](class_int.md), g8: [`int`](class_int.md), b8: [`int`](class_int.md), a8: [`int`](class_int.md) = 255 ) |
+| `void`                              | [`assert`](class_@gdscript.md#class_@gdscript_method_assert) ( condition: [`bool`](class_bool.md), message: [`String`](class_string.md) = "" )                                    |
+| [`String`](class_string.md)         | [`char`](class_@gdscript.md#class_@gdscript_method_char) ( char: [`int`](class_int.md) )                                                                                          |
+| [`Variant`](class_variant.md)       | [`convert`](class_@gdscript.md#class_@gdscript_method_convert) ( what: [`Variant`](class_variant.md), type: [`int`](class_int.md) )                                               |
+| [`Object`](class_object.md)         | [`dict_to_inst`](class_@gdscript.md#class_@gdscript_method_dict_to_inst) ( dictionary: [`Dictionary`](class_dictionary.md) )                                                      |
+| [`Array`](class_array.md)           | [`get_stack`](class_@gdscript.md#class_@gdscript_method_get_stack) ( )                                                                                                            |
+| [`Dictionary`](class_dictionary.md) | [`inst_to_dict`](class_@gdscript.md#class_@gdscript_method_inst_to_dict) ( instance: [`Object`](class_object.md) )                                                                |
+| [`bool`](class_bool.md)             | [`is_instance_of`](class_@gdscript.md#class_@gdscript_method_is_instance_of) ( value: [`Variant`](class_variant.md), type: [`Variant`](class_variant.md) )                        |
+| [`int`](class_int.md)               | [`len`](class_@gdscript.md#class_@gdscript_method_len) ( var: [`Variant`](class_variant.md) )                                                                                     |
+| [`Resource`](class_resource.md)     | [`load`](class_@gdscript.md#class_@gdscript_method_load) ( path: [`String`](class_string.md) )                                                                                    |
+| [`Resource`](class_resource.md)     | [`preload`](class_@gdscript.md#class_@gdscript_method_preload) ( path: [`String`](class_string.md) )                                                                              |
+| `void`                              | [`print_debug`](class_@gdscript.md#class_@gdscript_method_print_debug) ( ... ) vararg[^vararg]                                                                                    |
+| `void`                              | [`print_stack`](class_@gdscript.md#class_@gdscript_method_print_stack) ( )                                                                                                        |
+| [`Array`](class_array.md)           | [`range`](class_@gdscript.md#class_@gdscript_method_range) ( ... ) vararg[^vararg]                                                                                                |
+| [`bool`](class_bool.md)             | [`type_exists`](class_@gdscript.md#class_@gdscript_method_type_exists) ( type: [`StringName`](class_stringname.md) )                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -59,15 +59,15 @@ The circle constant, the circumference of the unit circle in radians. This is eq
 
 Positive floating-point infinity. This is the result of floating-point division when the divisor is `0.0`. For negative infinity, use `-INF`. Dividing by `-0.0` will result in negative infinity if the numerator is positive, so dividing by `0.0` is not the same as dividing by `-0.0` (despite `0.0 == -0.0` returning `true`).
 
- **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by `0` will not result in [`INF`](#class_@gdscript_constant_inf) and will result in a run-time error instead.
+ **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by `0` will not result in [`INF`](class_@gdscript.md#class_@gdscript_constant_inf) and will result in a run-time error instead.
 
 <div id="_class_@gdscript_constant_nan"></div>
 
 **NAN** = ``nan`` <div id="class_@gdscript_constant_nan"></div>
 
-"Not a Number", an invalid floating-point value. [`NAN`](#class_@gdscript_constant_nan) has special properties, including that `!=` always returns `true`, while other comparison operators always return `false`. This is true even when comparing with itself (`NAN == NAN` returns `false` and `NAN != NAN` returns `true`). It is returned by some invalid operations, such as dividing floating-point `0.0` by `0.0`.
+"Not a Number", an invalid floating-point value. [`NAN`](class_@gdscript.md#class_@gdscript_constant_nan) has special properties, including that `!=` always returns `true`, while other comparison operators always return `false`. This is true even when comparing with itself (`NAN == NAN` returns `false` and `NAN != NAN` returns `true`). It is returned by some invalid operations, such as dividing floating-point `0.0` by `0.0`.
 
- **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer `0` by `0` will not result in [`NAN`](#class_@gdscript_constant_nan) and will result in a run-time error instead.
+ **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer `0` by `0` will not result in [`NAN`](class_@gdscript.md#class_@gdscript_constant_nan) and will result in a run-time error instead.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -128,7 +128,7 @@ Mark the following property as exported (editable in the Inspector dock and save
 
 Define a new category for the following exported properties. This helps to organize properties in the Inspector dock.
 
-See also [`@GlobalScope.PROPERTY_USAGE_CATEGORY`](#class_@globalscope_constant_property_usage_category).
+See also [`@GlobalScope.PROPERTY_USAGE_CATEGORY`](class_@globalscope.md#class_@globalscope_constant_property_usage_category).
 
 ```
 
@@ -137,7 +137,7 @@ See also [`@GlobalScope.PROPERTY_USAGE_CATEGORY`](#class_@globalscope_constant_p
     @export var speed = 1.25
 ```
 
- **Note:** Categories in the Inspector dock's list usually divide properties coming from different classes (Node, Node2D, Sprite, etc.). For better clarity, it's recommended to use [`@export_group`](#class_@gdscript_annotation_@export_group) and [`@export_subgroup`](#class_@gdscript_annotation_@export_subgroup), instead.
+ **Note:** Categories in the Inspector dock's list usually divide properties coming from different classes (Node, Node2D, Sprite, etc.). For better clarity, it's recommended to use [`@export_group`](class_@gdscript.md#class_@gdscript_annotation_@export_group) and [`@export_subgroup`](class_@gdscript.md#class_@gdscript_annotation_@export_subgroup), instead.
 
 
 
@@ -149,9 +149,9 @@ See also [`@GlobalScope.PROPERTY_USAGE_CATEGORY`](#class_@globalscope_constant_p
 
 **@export_color_no_alpha** ( )<div id="class_@gdscript_annotation_@export_color_no_alpha"></div>
 
-Export a [`Color`](class_color.md), [`Array`](class_array.md) [[`Color`](class_color.md) ], or [`PackedColorArray`](class_packedcolorarray.md) property without allowing its transparency ([`Color.a`](#class_color_property_a)) to be edited.
+Export a [`Color`](class_color.md), [`Array`](class_array.md) [[`Color`](class_color.md) ], or [`PackedColorArray`](class_packedcolorarray.md) property without allowing its transparency ([`Color.a`](class_color.md#class_color_property_a)) to be edited.
 
-See also [`@GlobalScope.PROPERTY_HINT_COLOR_NO_ALPHA`](#class_@globalscope_constant_property_hint_color_no_alpha).
+See also [`@GlobalScope.PROPERTY_HINT_COLOR_NO_ALPHA`](class_@globalscope.md#class_@globalscope_constant_property_hint_color_no_alpha).
 
 ```
 
@@ -176,7 +176,7 @@ Allows you to set a custom hint, hint string, and usage flags for the exported p
     @export_custom(PROPERTY_HINT_NONE, "suffix:m") var suffix: Vector3
 ```
 
- **Note:** Regardless of the `usage` value, the [`@GlobalScope.PROPERTY_USAGE_SCRIPT_VARIABLE`](#class_@globalscope_constant_property_usage_script_variable) flag is always added, as with any explicitly declared script variable.
+ **Note:** Regardless of the `usage` value, the [`@GlobalScope.PROPERTY_USAGE_SCRIPT_VARIABLE`](class_@globalscope.md#class_@globalscope_constant_property_usage_script_variable) flag is always added, as with any explicitly declared script variable.
 
 
 
@@ -188,9 +188,9 @@ Allows you to set a custom hint, hint string, and usage flags for the exported p
 
 **@export_dir** ( )<div id="class_@gdscript_annotation_@export_dir"></div>
 
-Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property as a path to a directory. The path will be limited to the project folder and its subfolders. See [`@export_global_dir`](#class_@gdscript_annotation_@export_global_dir) to allow picking from the entire filesystem.
+Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property as a path to a directory. The path will be limited to the project folder and its subfolders. See [`@export_global_dir`](class_@gdscript.md#class_@gdscript_annotation_@export_global_dir) to allow picking from the entire filesystem.
 
-See also [`@GlobalScope.PROPERTY_HINT_DIR`](#class_@globalscope_constant_property_hint_dir).
+See also [`@GlobalScope.PROPERTY_HINT_DIR`](class_@globalscope.md#class_@globalscope_constant_property_hint_dir).
 
 ```
 
@@ -210,7 +210,7 @@ See also [`@GlobalScope.PROPERTY_HINT_DIR`](#class_@globalscope_constant_propert
 
 Export an [`int`](class_int.md), [`String`](class_string.md), [`Array`](class_array.md) [[`int`](class_int.md) ], [`Array`](class_array.md) [[`String`](class_string.md) ], [`PackedByteArray`](class_packedbytearray.md), [`PackedInt32Array`](class_packedint32array.md), [`PackedInt64Array`](class_packedint64array.md), or [`PackedStringArray`](class_packedstringarray.md) property as an enumerated list of options (or an array of options). If the property is an [`int`](class_int.md), then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a [`String`](class_string.md), then the value is stored.
 
-See also [`@GlobalScope.PROPERTY_HINT_ENUM`](#class_@globalscope_constant_property_hint_enum).
+See also [`@GlobalScope.PROPERTY_HINT_ENUM`](class_@globalscope.md#class_@globalscope_constant_property_hint_enum).
 
 ```
 
@@ -229,7 +229,7 @@ If you want to set an initial value, you must specify it explicitly:
     @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
 ```
 
-If you want to use named GDScript enums, then use [`@export`](#class_@gdscript_annotation_@export) instead:
+If you want to use named GDScript enums, then use [`@export`](class_@gdscript.md#class_@gdscript_annotation_@export) instead:
 
 ```
 
@@ -256,7 +256,7 @@ If you want to use named GDScript enums, then use [`@export`](#class_@gdscript_a
 
 Export a floating-point property with an easing editor widget. Additional hints can be provided to adjust the behavior of the widget. `"attenuation"` flips the curve, which makes it more intuitive for editing attenuation properties. `"positive_only"` limits values to only be greater than or equal to zero.
 
-See also [`@GlobalScope.PROPERTY_HINT_EXP_EASING`](#class_@globalscope_constant_property_hint_exp_easing).
+See also [`@GlobalScope.PROPERTY_HINT_EXP_EASING`](class_@globalscope.md#class_@globalscope_constant_property_hint_exp_easing).
 
 ```
 
@@ -276,11 +276,11 @@ See also [`@GlobalScope.PROPERTY_HINT_EXP_EASING`](#class_@globalscope_constant_
 
 **@export_file** ( filter: [`String`](class_string.md) = "", ... ) vararg[^vararg]<div id="class_@gdscript_annotation_@export_file"></div>
 
-Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property as a path to a file. The path will be limited to the project folder and its subfolders. See [`@export_global_file`](#class_@gdscript_annotation_@export_global_file) to allow picking from the entire filesystem.
+Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property as a path to a file. The path will be limited to the project folder and its subfolders. See [`@export_global_file`](class_@gdscript.md#class_@gdscript_annotation_@export_global_file) to allow picking from the entire filesystem.
 
 If `filter` is provided, only matching files will be available for picking.
 
-See also [`@GlobalScope.PROPERTY_HINT_FILE`](#class_@globalscope_constant_property_hint_file).
+See also [`@GlobalScope.PROPERTY_HINT_FILE`](class_@globalscope.md#class_@globalscope_constant_property_hint_file).
 
 ```
 
@@ -301,7 +301,7 @@ See also [`@GlobalScope.PROPERTY_HINT_FILE`](#class_@globalscope_constant_proper
 
 Export an integer property as a bit flag field. This allows to store several "checked" or `true` values with one property, and comfortably select them from the Inspector dock.
 
-See also [`@GlobalScope.PROPERTY_HINT_FLAGS`](#class_@globalscope_constant_property_hint_flags).
+See also [`@GlobalScope.PROPERTY_HINT_FLAGS`](class_@globalscope.md#class_@globalscope_constant_property_hint_flags).
 
 ```
 
@@ -325,7 +325,7 @@ You can also combine several flags:
 
  **Note:** A flag value must be at least `1` and at most `2 ** 32 - 1`.
 
- **Note:** Unlike [`@export_enum`](#class_@gdscript_annotation_@export_enum), the previous explicit value is not taken into account. In the following example, A is 16, B is 2, C is 4.
+ **Note:** Unlike [`@export_enum`](class_@gdscript.md#class_@gdscript_annotation_@export_enum), the previous explicit value is not taken into account. In the following example, A is 16, B is 2, C is 4.
 
 ```
 
@@ -357,9 +357,9 @@ You can also use the annotation on [`Array`](class_array.md) [[`int`](class_int.
 
 **@export_flags_2d_navigation** ( )<div id="class_@gdscript_annotation_@export_flags_2d_navigation"></div>
 
-Export an integer property as a bit flag field for 2D navigation layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/2d_navigation/layer_1`](#class_projectsettings_property_layer_names/2d_navigation/layer_1).
+Export an integer property as a bit flag field for 2D navigation layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/2d_navigation/layer_1`](class_projectsettings.md#class_projectsettings_property_layer_names/2d_navigation/layer_1).
 
-See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION`](#class_@globalscope_constant_property_hint_layers_2d_navigation).
+See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION`](class_@globalscope.md#class_@globalscope_constant_property_hint_layers_2d_navigation).
 
 ```
 
@@ -377,9 +377,9 @@ See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION`](#class_@globalscope
 
 **@export_flags_2d_physics** ( )<div id="class_@gdscript_annotation_@export_flags_2d_physics"></div>
 
-Export an integer property as a bit flag field for 2D physics layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/2d_physics/layer_1`](#class_projectsettings_property_layer_names/2d_physics/layer_1).
+Export an integer property as a bit flag field for 2D physics layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/2d_physics/layer_1`](class_projectsettings.md#class_projectsettings_property_layer_names/2d_physics/layer_1).
 
-See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS`](#class_@globalscope_constant_property_hint_layers_2d_physics).
+See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS`](class_@globalscope.md#class_@globalscope_constant_property_hint_layers_2d_physics).
 
 ```
 
@@ -397,9 +397,9 @@ See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS`](#class_@globalscope_co
 
 **@export_flags_2d_render** ( )<div id="class_@gdscript_annotation_@export_flags_2d_render"></div>
 
-Export an integer property as a bit flag field for 2D render layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/2d_render/layer_1`](#class_projectsettings_property_layer_names/2d_render/layer_1).
+Export an integer property as a bit flag field for 2D render layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/2d_render/layer_1`](class_projectsettings.md#class_projectsettings_property_layer_names/2d_render/layer_1).
 
-See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER`](#class_@globalscope_constant_property_hint_layers_2d_render).
+See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER`](class_@globalscope.md#class_@globalscope_constant_property_hint_layers_2d_render).
 
 ```
 
@@ -417,9 +417,9 @@ See also [`@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER`](#class_@globalscope_con
 
 **@export_flags_3d_navigation** ( )<div id="class_@gdscript_annotation_@export_flags_3d_navigation"></div>
 
-Export an integer property as a bit flag field for 3D navigation layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/3d_navigation/layer_1`](#class_projectsettings_property_layer_names/3d_navigation/layer_1).
+Export an integer property as a bit flag field for 3D navigation layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/3d_navigation/layer_1`](class_projectsettings.md#class_projectsettings_property_layer_names/3d_navigation/layer_1).
 
-See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION`](#class_@globalscope_constant_property_hint_layers_3d_navigation).
+See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION`](class_@globalscope.md#class_@globalscope_constant_property_hint_layers_3d_navigation).
 
 ```
 
@@ -437,9 +437,9 @@ See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION`](#class_@globalscope
 
 **@export_flags_3d_physics** ( )<div id="class_@gdscript_annotation_@export_flags_3d_physics"></div>
 
-Export an integer property as a bit flag field for 3D physics layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/3d_physics/layer_1`](#class_projectsettings_property_layer_names/3d_physics/layer_1).
+Export an integer property as a bit flag field for 3D physics layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/3d_physics/layer_1`](class_projectsettings.md#class_projectsettings_property_layer_names/3d_physics/layer_1).
 
-See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS`](#class_@globalscope_constant_property_hint_layers_3d_physics).
+See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS`](class_@globalscope.md#class_@globalscope_constant_property_hint_layers_3d_physics).
 
 ```
 
@@ -457,9 +457,9 @@ See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS`](#class_@globalscope_co
 
 **@export_flags_3d_render** ( )<div id="class_@gdscript_annotation_@export_flags_3d_render"></div>
 
-Export an integer property as a bit flag field for 3D render layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/3d_render/layer_1`](#class_projectsettings_property_layer_names/3d_render/layer_1).
+Export an integer property as a bit flag field for 3D render layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/3d_render/layer_1`](class_projectsettings.md#class_projectsettings_property_layer_names/3d_render/layer_1).
 
-See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER`](#class_@globalscope_constant_property_hint_layers_3d_render).
+See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER`](class_@globalscope.md#class_@globalscope_constant_property_hint_layers_3d_render).
 
 ```
 
@@ -477,9 +477,9 @@ See also [`@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER`](#class_@globalscope_con
 
 **@export_flags_avoidance** ( )<div id="class_@gdscript_annotation_@export_flags_avoidance"></div>
 
-Export an integer property as a bit flag field for navigation avoidance layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/avoidance/layer_1`](#class_projectsettings_property_layer_names/avoidance/layer_1).
+Export an integer property as a bit flag field for navigation avoidance layers. The widget in the Inspector dock will use the layer names defined in [`ProjectSettings.layer_names/avoidance/layer_1`](class_projectsettings.md#class_projectsettings_property_layer_names/avoidance/layer_1).
 
-See also [`@GlobalScope.PROPERTY_HINT_LAYERS_AVOIDANCE`](#class_@globalscope_constant_property_hint_layers_avoidance).
+See also [`@GlobalScope.PROPERTY_HINT_LAYERS_AVOIDANCE`](class_@globalscope.md#class_@globalscope_constant_property_hint_layers_avoidance).
 
 ```
 
@@ -497,9 +497,9 @@ See also [`@GlobalScope.PROPERTY_HINT_LAYERS_AVOIDANCE`](#class_@globalscope_con
 
 **@export_global_dir** ( )<div id="class_@gdscript_annotation_@export_global_dir"></div>
 
-Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property as an absolute path to a directory. The path can be picked from the entire filesystem. See [`@export_dir`](#class_@gdscript_annotation_@export_dir) to limit it to the project folder and its subfolders.
+Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property as an absolute path to a directory. The path can be picked from the entire filesystem. See [`@export_dir`](class_@gdscript.md#class_@gdscript_annotation_@export_dir) to limit it to the project folder and its subfolders.
 
-See also [`@GlobalScope.PROPERTY_HINT_GLOBAL_DIR`](#class_@globalscope_constant_property_hint_global_dir).
+See also [`@GlobalScope.PROPERTY_HINT_GLOBAL_DIR`](class_@globalscope.md#class_@globalscope_constant_property_hint_global_dir).
 
 ```
 
@@ -517,11 +517,11 @@ See also [`@GlobalScope.PROPERTY_HINT_GLOBAL_DIR`](#class_@globalscope_constant_
 
 **@export_global_file** ( filter: [`String`](class_string.md) = "", ... ) vararg[^vararg]<div id="class_@gdscript_annotation_@export_global_file"></div>
 
-Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property as an absolute path to a file. The path can be picked from the entire filesystem. See [`@export_file`](#class_@gdscript_annotation_@export_file) to limit it to the project folder and its subfolders.
+Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property as an absolute path to a file. The path can be picked from the entire filesystem. See [`@export_file`](class_@gdscript.md#class_@gdscript_annotation_@export_file) to limit it to the project folder and its subfolders.
 
 If `filter` is provided, only matching files will be available for picking.
 
-See also [`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE`](#class_@globalscope_constant_property_hint_global_file).
+See also [`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE`](class_@globalscope.md#class_@globalscope_constant_property_hint_global_file).
 
 ```
 
@@ -544,9 +544,9 @@ Define a new group for the following exported properties. This helps to organize
 
 If no `prefix` is provided, then every following property will be added to the group. The group ends when then next group or category is defined. You can also force end a group by using this annotation with empty strings for parameters, `@export_group("", "")`.
 
-Groups cannot be nested, use [`@export_subgroup`](#class_@gdscript_annotation_@export_subgroup) to add subgroups within groups.
+Groups cannot be nested, use [`@export_subgroup`](class_@gdscript.md#class_@gdscript_annotation_@export_subgroup) to add subgroups within groups.
 
-See also [`@GlobalScope.PROPERTY_USAGE_GROUP`](#class_@globalscope_constant_property_usage_group).
+See also [`@GlobalScope.PROPERTY_USAGE_GROUP`](class_@globalscope.md#class_@globalscope_constant_property_usage_group).
 
 ```
 
@@ -574,7 +574,7 @@ See also [`@GlobalScope.PROPERTY_USAGE_GROUP`](#class_@globalscope_constant_prop
 
 Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], [`PackedStringArray`](class_packedstringarray.md), [`Dictionary`](class_dictionary.md) or [`Array`](class_array.md) [[`Dictionary`](class_dictionary.md) ] property with a large [`TextEdit`](class_textedit.md) widget instead of a [`LineEdit`](class_lineedit.md). This adds support for multiline content and makes it easier to edit large amount of text stored in the property.
 
-See also [`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT`](#class_@globalscope_constant_property_hint_multiline_text).
+See also [`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT`](class_@globalscope.md#class_@globalscope_constant_property_hint_multiline_text).
 
 ```
 
@@ -594,7 +594,7 @@ See also [`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT`](#class_@globalscope_const
 
 Export a [`NodePath`](class_nodepath.md) or [`Array`](class_array.md) [[`NodePath`](class_nodepath.md) ] property with a filter for allowed node types.
 
-See also [`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES`](#class_@globalscope_constant_property_hint_node_path_valid_types).
+See also [`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES`](class_@globalscope.md#class_@globalscope_constant_property_hint_node_path_valid_types).
 
 ```
 
@@ -616,7 +616,7 @@ See also [`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES`](#class_@globalscop
 
 Export a [`String`](class_string.md), [`Array`](class_array.md) [[`String`](class_string.md) ], or [`PackedStringArray`](class_packedstringarray.md) property with a placeholder text displayed in the editor widget when no value is present.
 
-See also [`@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT`](#class_@globalscope_constant_property_hint_placeholder_text).
+See also [`@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT`](class_@globalscope.md#class_@globalscope_constant_property_hint_placeholder_text).
 
 ```
 
@@ -634,13 +634,13 @@ See also [`@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT`](#class_@globalscope_con
 
 **@export_range** ( min: [`float`](class_float.md), max: [`float`](class_float.md), step: [`float`](class_float.md) = 1.0, extra_hints: [`String`](class_string.md) = "", ... ) vararg[^vararg]<div id="class_@gdscript_annotation_@export_range"></div>
 
-Export an [`int`](class_int.md), [`float`](class_float.md), [`Array`](class_array.md) [[`int`](class_int.md) ], [`Array`](class_array.md) [[`float`](class_float.md) ], [`PackedByteArray`](class_packedbytearray.md), [`PackedInt32Array`](class_packedint32array.md), [`PackedInt64Array`](class_packedint64array.md), [`PackedFloat32Array`](class_packedfloat32array.md), or [`PackedFloat64Array`](class_packedfloat64array.md) property as a range value. The range must be defined by `min` and `max`, as well as an optional `step` and a variety of extra hints. The `step` defaults to `1` for integer properties. For floating-point numbers this value depends on your [`EditorSettings.interface/inspector/default_float_step`](#class_editorsettings_property_interface/inspector/default_float_step) setting.
+Export an [`int`](class_int.md), [`float`](class_float.md), [`Array`](class_array.md) [[`int`](class_int.md) ], [`Array`](class_array.md) [[`float`](class_float.md) ], [`PackedByteArray`](class_packedbytearray.md), [`PackedInt32Array`](class_packedint32array.md), [`PackedInt64Array`](class_packedint64array.md), [`PackedFloat32Array`](class_packedfloat32array.md), or [`PackedFloat64Array`](class_packedfloat64array.md) property as a range value. The range must be defined by `min` and `max`, as well as an optional `step` and a variety of extra hints. The `step` defaults to `1` for integer properties. For floating-point numbers this value depends on your [`EditorSettings.interface/inspector/default_float_step`](class_editorsettings.md#class_editorsettings_property_interface/inspector/default_float_step) setting.
 
 If hints `"or_greater"` and `"or_less"` are provided, the editor widget will not cap the value at range boundaries. The `"exp"` hint will make the edited values on range to change exponentially. The `"hide_slider"` hint will hide the slider element of the editor widget.
 
 Hints also allow to indicate the units for the edited value. Using `"radians_as_degrees"` you can specify that the actual value is in radians, but should be displayed in degrees in the Inspector dock (the range values are also in degrees). `"degrees"` allows to add a degree sign as a unit suffix (the value is unchanged). Finally, a custom suffix can be provided using `"suffix:unit"`, where "unit" can be any string.
 
-See also [`@GlobalScope.PROPERTY_HINT_RANGE`](#class_@globalscope_constant_property_hint_range).
+See also [`@GlobalScope.PROPERTY_HINT_RANGE`](class_@globalscope.md#class_@globalscope_constant_property_hint_range).
 
 ```
 
@@ -667,7 +667,7 @@ See also [`@GlobalScope.PROPERTY_HINT_RANGE`](#class_@globalscope_constant_prope
 
 **@export_storage** ( )<div id="class_@gdscript_annotation_@export_storage"></div>
 
-Export a property with [`@GlobalScope.PROPERTY_USAGE_STORAGE`](#class_@globalscope_constant_property_usage_storage) flag. The property is not displayed in the editor, but it is serialized and stored in the scene or resource file. This can be useful for [`@tool`](#class_@gdscript_annotation_@tool) scripts. Also the property value is copied when [`Resource.duplicate`](#class_resource_method_duplicate) or [`Node.duplicate`](#class_node_method_duplicate) is called, unlike non-exported variables.
+Export a property with [`@GlobalScope.PROPERTY_USAGE_STORAGE`](class_@globalscope.md#class_@globalscope_constant_property_usage_storage) flag. The property is not displayed in the editor, but it is serialized and stored in the scene or resource file. This can be useful for [`@tool`](class_@gdscript.md#class_@gdscript_annotation_@tool) scripts. Also the property value is copied when [`Resource.duplicate`](class_resource.md#class_resource_method_duplicate) or [`Node.duplicate`](class_node.md#class_node_method_duplicate) is called, unlike non-exported variables.
 
 ```
 
@@ -686,9 +686,9 @@ Export a property with [`@GlobalScope.PROPERTY_USAGE_STORAGE`](#class_@globalsco
 
 **@export_subgroup** ( name: [`String`](class_string.md), prefix: [`String`](class_string.md) = "" )<div id="class_@gdscript_annotation_@export_subgroup"></div>
 
-Define a new subgroup for the following exported properties. This helps to organize properties in the Inspector dock. Subgroups work exactly like groups, except they need a parent group to exist. See [`@export_group`](#class_@gdscript_annotation_@export_group).
+Define a new subgroup for the following exported properties. This helps to organize properties in the Inspector dock. Subgroups work exactly like groups, except they need a parent group to exist. See [`@export_group`](class_@gdscript.md#class_@gdscript_annotation_@export_group).
 
-See also [`@GlobalScope.PROPERTY_USAGE_SUBGROUP`](#class_@globalscope_constant_property_usage_subgroup).
+See also [`@GlobalScope.PROPERTY_USAGE_SUBGROUP`](class_@globalscope.md#class_@globalscope_constant_property_usage_subgroup).
 
 ```
 
@@ -722,9 +722,9 @@ Add a custom icon to the current script. The icon specified at `icon_path` is di
 
  **Note:** Only the script can have a custom icon. Inner classes are not supported.
 
- **Note:** As annotations describe their subject, the [`@icon`](#class_@gdscript_annotation_@icon) annotation must be placed before the class definition and inheritance.
+ **Note:** As annotations describe their subject, the [`@icon`](class_@gdscript.md#class_@gdscript_annotation_@icon) annotation must be placed before the class definition and inheritance.
 
- **Note:** Unlike other annotations, the argument of the [`@icon`](#class_@gdscript_annotation_@icon) annotation must be a string literal (constant expressions are not supported).
+ **Note:** Unlike other annotations, the argument of the [`@icon`](class_@gdscript.md#class_@gdscript_annotation_@icon) annotation must be a string literal (constant expressions are not supported).
 
 
 
@@ -736,7 +736,7 @@ Add a custom icon to the current script. The icon specified at `icon_path` is di
 
 **@onready** ( )<div id="class_@gdscript_annotation_@onready"></div>
 
-Mark the following property as assigned when the [`Node`](class_node.md) is ready. Values for these properties are not assigned immediately when the node is initialized ([`Object._init`](#class_object_private_method__init)), and instead are computed and stored right before [`Node._ready`](#class_node_private_method__ready).
+Mark the following property as assigned when the [`Node`](class_node.md) is ready. Values for these properties are not assigned immediately when the node is initialized ([`Object._init`](class_object.md#class_object_private_method__init)), and instead are computed and stored right before [`Node._ready`](class_node.md#class_node_private_method__ready).
 
 ```
 
@@ -755,13 +755,13 @@ Mark the following property as assigned when the [`Node`](class_node.md) is read
 
 Mark the following method for remote procedure calls. See [*High-level multiplayer*](../tutorials/networking/high_level_multiplayer).
 
-If `mode` is set as `"any_peer"`, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and `mode` should be kept as `"authority"`. When configuring functions as RPCs with [`Node.rpc_config`](#class_node_method_rpc_config), each of these modes respectively corresponds to the [`MultiplayerAPI.RPC_MODE_AUTHORITY`](#class_multiplayerapi_constant_rpc_mode_authority) and [`MultiplayerAPI.RPC_MODE_ANY_PEER`](#class_multiplayerapi_constant_rpc_mode_any_peer) RPC modes. See [RPCMode](#enum_multiplayerapi_rpcmode). If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
+If `mode` is set as `"any_peer"`, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and `mode` should be kept as `"authority"`. When configuring functions as RPCs with [`Node.rpc_config`](class_node.md#class_node_method_rpc_config), each of these modes respectively corresponds to the [`MultiplayerAPI.RPC_MODE_AUTHORITY`](class_multiplayerapi.md#class_multiplayerapi_constant_rpc_mode_authority) and [`MultiplayerAPI.RPC_MODE_ANY_PEER`](class_multiplayerapi.md#class_multiplayerapi_constant_rpc_mode_any_peer) RPC modes. See [RPCMode](#enum_multiplayerapi_rpcmode). If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
 
-If `sync` is set as `"call_remote"`, the function will only be executed on the remote peer, but not locally. To run this function locally too, set `sync` to `"call_local"`. When configuring functions as RPCs with [`Node.rpc_config`](#class_node_method_rpc_config), this is equivalent to setting `call_local` to `true`.
+If `sync` is set as `"call_remote"`, the function will only be executed on the remote peer, but not locally. To run this function locally too, set `sync` to `"call_local"`. When configuring functions as RPCs with [`Node.rpc_config`](class_node.md#class_node_method_rpc_config), this is equivalent to setting `call_local` to `true`.
 
-The `transfer_mode` accepted values are `"unreliable"`, `"unreliable_ordered"`, or `"reliable"`. It sets the transfer mode of the underlying [`MultiplayerPeer`](class_multiplayerpeer.md). See [`MultiplayerPeer.transfer_mode`](#class_multiplayerpeer_property_transfer_mode).
+The `transfer_mode` accepted values are `"unreliable"`, `"unreliable_ordered"`, or `"reliable"`. It sets the transfer mode of the underlying [`MultiplayerPeer`](class_multiplayerpeer.md). See [`MultiplayerPeer.transfer_mode`](class_multiplayerpeer.md#class_multiplayerpeer_property_transfer_mode).
 
-The `transfer_channel` defines the channel of the underlying [`MultiplayerPeer`](class_multiplayerpeer.md). See [`MultiplayerPeer.transfer_channel`](#class_multiplayerpeer_property_transfer_channel).
+The `transfer_channel` defines the channel of the underlying [`MultiplayerPeer`](class_multiplayerpeer.md). See [`MultiplayerPeer.transfer_channel`](class_multiplayerpeer.md#class_multiplayerpeer_property_transfer_channel).
 
 The order of `mode`, `sync` and `transfer_mode` does not matter, but values related to the same argument must not be used more than once. `transfer_channel` always has to be the 4th argument (you must specify 3 preceding arguments).
 
@@ -789,9 +789,9 @@ The order of `mode`, `sync` and `transfer_mode` does not matter, but values rela
 
 Make a script with static variables to not persist after all references are lost. If the script is loaded again the static variables will revert to their default values.
 
- **Note:** As annotations describe their subject, the [`@static_unload`](#class_@gdscript_annotation_@static_unload) annotation must be placed before the class definition and inheritance.
+ **Note:** As annotations describe their subject, the [`@static_unload`](class_@gdscript.md#class_@gdscript_annotation_@static_unload) annotation must be placed before the class definition and inheritance.
 
- **Warning:** Currently, due to a bug, scripts are never freed, even if [`@static_unload`](#class_@gdscript_annotation_@static_unload) annotation is used.
+ **Warning:** Currently, due to a bug, scripts are never freed, even if [`@static_unload`](class_@gdscript.md#class_@gdscript_annotation_@static_unload) annotation is used.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -809,7 +809,7 @@ Mark the current script as a tool script, allowing it to be loaded and executed 
     extends Node
 ```
 
- **Note:** As annotations describe their subject, the [`@tool`](#class_@gdscript_annotation_@tool) annotation must be placed before the class definition and inheritance.
+ **Note:** As annotations describe their subject, the [`@tool`](class_@gdscript.md#class_@gdscript_annotation_@tool) annotation must be placed before the class definition and inheritance.
 
 
 
@@ -844,7 +844,7 @@ Mark the following statement to ignore the specified `warning`. See [*GDScript w
 
 [`Color`](class_color.md) **Color8** ( r8: [`int`](class_int.md), g8: [`int`](class_int.md), b8: [`int`](class_int.md), a8: [`int`](class_int.md) = 255 )<div id="class_@gdscript_method_color8"></div>
 
-Returns a [`Color`](class_color.md) constructed from red (`r8`), green (`g8`), blue (`b8`), and optionally alpha (`a8`) integer channels, each divided by `255.0` for their final value. Using [`Color8`](#class_@gdscript_method_color8) instead of the standard [`Color`](class_color.md) constructor is useful when you need to match exact color values in an [`Image`](class_image.md).
+Returns a [`Color`](class_color.md) constructed from red (`r8`), green (`g8`), blue (`b8`), and optionally alpha (`a8`) integer channels, each divided by `255.0` for their final value. Using [`Color8`](class_@gdscript.md#class_@gdscript_method_color8) instead of the standard [`Color`](class_color.md) constructor is useful when you need to match exact color values in an [`Image`](class_image.md).
 
 ```
 
@@ -853,7 +853,7 @@ Returns a [`Color`](class_color.md) constructed from red (`r8`), green (`g8`), b
     var my_color = Color8(306, 255, 0, 102) # Same as Color(1.2, 1, 0, 0.4).
 ```
 
- **Note:** Due to the lower precision of [`Color8`](#class_@gdscript_method_color8) compared to the standard [`Color`](class_color.md) constructor, a color created with [`Color8`](#class_@gdscript_method_color8) will generally not be equal to the same color created with the standard [`Color`](class_color.md) constructor. Use [`Color.is_equal_approx`](#class_color_method_is_equal_approx) for comparisons to avoid issues with floating-point precision error.
+ **Note:** Due to the lower precision of [`Color8`](class_@gdscript.md#class_@gdscript_method_color8) compared to the standard [`Color`](class_color.md) constructor, a color created with [`Color8`](class_@gdscript.md#class_@gdscript_method_color8) will generally not be equal to the same color created with the standard [`Color`](class_color.md) constructor. Use [`Color.is_equal_approx`](class_color.md#class_color_method_is_equal_approx) for comparisons to avoid issues with floating-point precision error.
 
 
 
@@ -865,11 +865,11 @@ Returns a [`Color`](class_color.md) constructed from red (`r8`), green (`g8`), b
 
 `void` **assert** ( condition: [`bool`](class_bool.md), message: [`String`](class_string.md) = "" )<div id="class_@gdscript_method_assert"></div>
 
-Asserts that the `condition` is `true`. If the `condition` is `false`, an error is generated. When running from the editor, the running project will also be paused until you resume it. This can be used as a stronger form of [`@GlobalScope.push_error`](#class_@globalscope_method_push_error) for reporting errors to project developers or add-on users.
+Asserts that the `condition` is `true`. If the `condition` is `false`, an error is generated. When running from the editor, the running project will also be paused until you resume it. This can be used as a stronger form of [`@GlobalScope.push_error`](class_@globalscope.md#class_@globalscope_method_push_error) for reporting errors to project developers or add-on users.
 
 An optional `message` can be shown in addition to the generic "Assertion failed" message. You can use this to provide additional details about why the assertion failed.
 
- **Warning:** For performance reasons, the code inside [`assert`](#class_@gdscript_method_assert) is only executed in debug builds or when running the project from the editor. Don't include code that has side effects in an [`assert`](#class_@gdscript_method_assert) call. Otherwise, the project will behave differently when exported in release mode.
+ **Warning:** For performance reasons, the code inside [`assert`](class_@gdscript.md#class_@gdscript_method_assert) is only executed in debug builds or when running the project from the editor. Don't include code that has side effects in an [`assert`](class_@gdscript.md#class_@gdscript_method_assert) call. Otherwise, the project will behave differently when exported in release mode.
 
 ```
 
@@ -881,7 +881,7 @@ An optional `message` can be shown in addition to the generic "Assertion failed"
     assert(speed < 20, "the speed limit is 20") # Show a message.
 ```
 
- **Note:** [`assert`](#class_@gdscript_method_assert) is a keyword, not a function. So you cannot access it as a [`Callable`](class_callable.md) or use it inside expressions.
+ **Note:** [`assert`](class_@gdscript.md#class_@gdscript_method_assert) is a keyword, not a function. So you cannot access it as a [`Callable`](class_callable.md) or use it inside expressions.
 
 
 
@@ -912,7 +912,7 @@ Returns a single character (as a [`String`](class_string.md)) of the given Unico
 
 [`Variant`](class_variant.md) **convert** ( what: [`Variant`](class_variant.md), type: [`int`](class_int.md) )<div id="class_@gdscript_method_convert"></div>
 
-**已弃用：** Use [`@GlobalScope.type_convert`](#class_@globalscope_method_type_convert) instead.
+**已弃用：** Use [`@GlobalScope.type_convert`](class_@globalscope.md#class_@globalscope_method_type_convert) instead.
 
 Converts `what` to `type` in the best way possible. The `type` uses the [Variant.Type](#enum_@globalscope_variant.type) values.
 
@@ -936,7 +936,7 @@ Converts `what` to `type` in the best way possible. The `type` uses the [Variant
 
 [`Object`](class_object.md) **dict_to_inst** ( dictionary: [`Dictionary`](class_dictionary.md) )<div id="class_@gdscript_method_dict_to_inst"></div>
 
-Converts a `dictionary` (created with [`inst_to_dict`](#class_@gdscript_method_inst_to_dict)) back to an Object instance. Can be useful for deserializing.
+Converts a `dictionary` (created with [`inst_to_dict`](class_@gdscript.md#class_@gdscript_method_inst_to_dict)) back to an Object instance. Can be useful for deserializing.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -946,7 +946,7 @@ Converts a `dictionary` (created with [`inst_to_dict`](#class_@gdscript_method_i
 
 [`Array`](class_array.md) **get_stack** ( )<div id="class_@gdscript_method_get_stack"></div>
 
-Returns an array of dictionaries representing the current call stack. See also [`print_stack`](#class_@gdscript_method_print_stack).
+Returns an array of dictionaries representing the current call stack. See also [`print_stack`](class_@gdscript.md#class_@gdscript_method_print_stack).
 
 ```
 
@@ -967,7 +967,7 @@ Starting from `_ready()`, `bar()` would print:
     [{function:bar, line:12, source:res://script.gd}, {function:foo, line:9, source:res://script.gd}, {function:_ready, line:6, source:res://script.gd}]
 ```
 
- **Note:** This function only works if the running instance is connected to a debugging server (i.e. an editor instance). [`get_stack`](#class_@gdscript_method_get_stack) will not work in projects exported in release mode, or in projects exported in debug mode if not connected to a debugging server.
+ **Note:** This function only works if the running instance is connected to a debugging server (i.e. an editor instance). [`get_stack`](class_@gdscript.md#class_@gdscript_method_get_stack) will not work in projects exported in release mode, or in projects exported in debug mode if not connected to a debugging server.
 
  **Note:** Calling this function from a [`Thread`](class_thread.md) is not supported. Doing so will return an empty array.
 
@@ -1018,7 +1018,7 @@ Prints out:
 
 Returns `true` if `value` is an instance of `type`. The `type` value must be one of the following:
 
-- A constant from the [Variant.Type](#enum_@globalscope_variant.type) enumeration, for example [`@GlobalScope.TYPE_INT`](#class_@globalscope_constant_type_int).
+- A constant from the [Variant.Type](#enum_@globalscope_variant.type) enumeration, for example [`@GlobalScope.TYPE_INT`](class_@globalscope.md#class_@globalscope_constant_type_int).
 
 - An [`Object`](class_object.md)-derived class which exists in [`ClassDB`](class_classdb.md), for example [`Node`](class_node.md).
 
@@ -1036,9 +1036,9 @@ Examples:
     print(is_instance_of(a, MyClass.InnerClass))
 ```
 
- **Note:** If `value` and/or `type` are freed objects (see [`@GlobalScope.is_instance_valid`](#class_@globalscope_method_is_instance_valid)), or `type` is not one of the above options, this method will raise a runtime error.
+ **Note:** If `value` and/or `type` are freed objects (see [`@GlobalScope.is_instance_valid`](class_@globalscope.md#class_@globalscope_method_is_instance_valid)), or `type` is not one of the above options, this method will raise a runtime error.
 
-See also [`@GlobalScope.typeof`](#class_@globalscope_method_typeof), [`type_exists`](#class_@gdscript_method_type_exists), [`Array.is_same_typed`](#class_array_method_is_same_typed) (and other [`Array`](class_array.md) methods).
+See also [`@GlobalScope.typeof`](class_@globalscope.md#class_@globalscope_method_typeof), [`type_exists`](class_@gdscript.md#class_@gdscript_method_type_exists), [`Array.is_same_typed`](class_array.md#class_array_method_is_same_typed) (and other [`Array`](class_array.md) methods).
 
 
 
@@ -1071,7 +1071,7 @@ Returns the length of the given Variant `var`. The length can be the character c
 
 [`Resource`](class_resource.md) **load** ( path: [`String`](class_string.md) )<div id="class_@gdscript_method_load"></div>
 
-Returns a [`Resource`](class_resource.md) from the filesystem located at the absolute `path`. Unless it's already referenced elsewhere (such as in another script or in the scene), the resource is loaded from disk on function call, which might cause a slight delay, especially when loading large scenes. To avoid unnecessary delays when loading something multiple times, either store the resource in a variable or use [`preload`](#class_@gdscript_method_preload). This method is equivalent of using [`ResourceLoader.load`](#class_resourceloader_method_load) with [`ResourceLoader.CACHE_MODE_REUSE`](#class_resourceloader_constant_cache_mode_reuse).
+Returns a [`Resource`](class_resource.md) from the filesystem located at the absolute `path`. Unless it's already referenced elsewhere (such as in another script or in the scene), the resource is loaded from disk on function call, which might cause a slight delay, especially when loading large scenes. To avoid unnecessary delays when loading something multiple times, either store the resource in a variable or use [`preload`](class_@gdscript.md#class_@gdscript_method_preload). This method is equivalent of using [`ResourceLoader.load`](class_resourceloader.md#class_resourceloader_method_load) with [`ResourceLoader.CACHE_MODE_REUSE`](class_resourceloader.md#class_resourceloader_constant_cache_mode_reuse).
 
  **Note:** Resource paths can be obtained by right-clicking on a resource in the FileSystem dock and choosing "Copy Path", or by dragging the file from the FileSystem dock into the current script.
 
@@ -1083,11 +1083,11 @@ Returns a [`Resource`](class_resource.md) from the filesystem located at the abs
 
  **Important:** Relative paths are *not* relative to the script calling this method, instead it is prefixed with `"res://"`. Loading from relative paths might not work as expected.
 
-This function is a simplified version of [`ResourceLoader.load`](#class_resourceloader_method_load), which can be used for more advanced scenarios.
+This function is a simplified version of [`ResourceLoader.load`](class_resourceloader.md#class_resourceloader_method_load), which can be used for more advanced scenarios.
 
- **Note:** Files have to be imported into the engine first to load them using this function. If you want to load [`Image`](class_image.md) s at run-time, you may use [`Image.load`](#class_image_method_load). If you want to import audio files, you can use the snippet described in [`AudioStreamMP3.data`](#class_audiostreammp3_property_data).
+ **Note:** Files have to be imported into the engine first to load them using this function. If you want to load [`Image`](class_image.md) s at run-time, you may use [`Image.load`](class_image.md#class_image_method_load). If you want to import audio files, you can use the snippet described in [`AudioStreamMP3.data`](class_audiostreammp3.md#class_audiostreammp3_property_data).
 
- **Note:** If [`ProjectSettings.editor/export/convert_text_resources_to_binary`](#class_projectsettings_property_editor/export/convert_text_resources_to_binary) is `true`, [`load`](#class_@gdscript_method_load) will not be able to read converted files in an exported project. If you rely on run-time loading of files present within the PCK, set [`ProjectSettings.editor/export/convert_text_resources_to_binary`](#class_projectsettings_property_editor/export/convert_text_resources_to_binary) to `false`.
+ **Note:** If [`ProjectSettings.editor/export/convert_text_resources_to_binary`](class_projectsettings.md#class_projectsettings_property_editor/export/convert_text_resources_to_binary) is `true`, [`load`](class_@gdscript.md#class_@gdscript_method_load) will not be able to read converted files in an exported project. If you rely on run-time loading of files present within the PCK, set [`ProjectSettings.editor/export/convert_text_resources_to_binary`](class_projectsettings.md#class_projectsettings_property_editor/export/convert_text_resources_to_binary) to `false`.
 
 
 
@@ -1099,7 +1099,7 @@ This function is a simplified version of [`ResourceLoader.load`](#class_resource
 
 [`Resource`](class_resource.md) **preload** ( path: [`String`](class_string.md) )<div id="class_@gdscript_method_preload"></div>
 
-Returns a [`Resource`](class_resource.md) from the filesystem located at `path`. During run-time, the resource is loaded when the script is being parsed. This function effectively acts as a reference to that resource. Note that this function requires `path` to be a constant [`String`](class_string.md). If you want to load a resource from a dynamic/variable path, use [`load`](#class_@gdscript_method_load).
+Returns a [`Resource`](class_resource.md) from the filesystem located at `path`. During run-time, the resource is loaded when the script is being parsed. This function effectively acts as a reference to that resource. Note that this function requires `path` to be a constant [`String`](class_string.md). If you want to load a resource from a dynamic/variable path, use [`load`](class_@gdscript.md#class_@gdscript_method_load).
 
  **Note:** Resource paths can be obtained by right-clicking on a resource in the Assets Panel and choosing "Copy Path", or by dragging the file from the FileSystem dock into the current script.
 
@@ -1109,7 +1109,7 @@ Returns a [`Resource`](class_resource.md) from the filesystem located at `path`.
     var diamond = preload("res://diamond.tscn").instantiate()
 ```
 
- **Note:** [`preload`](#class_@gdscript_method_preload) is a keyword, not a function. So you cannot access it as a [`Callable`](class_callable.md).
+ **Note:** [`preload`](class_@gdscript.md#class_@gdscript_method_preload) is a keyword, not a function. So you cannot access it as a [`Callable`](class_callable.md).
 
 
 
@@ -1121,7 +1121,7 @@ Returns a [`Resource`](class_resource.md) from the filesystem located at `path`.
 
 `void` **print_debug** ( ... ) vararg[^vararg]<div id="class_@gdscript_method_print_debug"></div>
 
-Like [`@GlobalScope.print`](#class_@globalscope_method_print), but includes the current stack frame when running with the debugger turned on.
+Like [`@GlobalScope.print`](class_@globalscope.md#class_@globalscope_method_print), but includes the current stack frame when running with the debugger turned on.
 
 The output in the console may look like the following:
 
@@ -1143,7 +1143,7 @@ The output in the console may look like the following:
 
 `void` **print_stack** ( )<div id="class_@gdscript_method_print_stack"></div>
 
-Prints a stack trace at the current code location. See also [`get_stack`](#class_@gdscript_method_get_stack).
+Prints a stack trace at the current code location. See also [`get_stack`](class_@gdscript.md#class_@gdscript_method_get_stack).
 
 The output in the console may look like the following:
 
@@ -1152,7 +1152,7 @@ The output in the console may look like the following:
     Frame 0 - res://test.gd:16 in function '_process'
 ```
 
- **Note:** This function only works if the running instance is connected to a debugging server (i.e. an editor instance). [`print_stack`](#class_@gdscript_method_print_stack) will not work in projects exported in release mode, or in projects exported in debug mode if not connected to a debugging server.
+ **Note:** This function only works if the running instance is connected to a debugging server (i.e. an editor instance). [`print_stack`](class_@gdscript.md#class_@gdscript_method_print_stack) will not work in projects exported in release mode, or in projects exported in debug mode if not connected to a debugging server.
 
  **Note:** Calling this function from a [`Thread`](class_thread.md) is not supported. Doing so will instead print the thread ID.
 
@@ -1166,7 +1166,7 @@ The output in the console may look like the following:
 
 [`Array`](class_array.md) **range** ( ... ) vararg[^vararg]<div id="class_@gdscript_method_range"></div>
 
-Returns an array with the given range. [`range`](#class_@gdscript_method_range) can be called in three ways:
+Returns an array with the given range. [`range`](class_@gdscript.md#class_@gdscript_method_range) can be called in three ways:
 
  `range(n: int)`: Starts from 0, increases by steps of 1, and stops *before* `n`. The argument `n` is **exclusive**.
 
@@ -1174,7 +1174,7 @@ Returns an array with the given range. [`range`](#class_@gdscript_method_range) 
 
  `range(b: int, n: int, s: int)`: Starts from `b`, increases/decreases by steps of `s`, and stops *before* `n`. The arguments `b` and `n` are **inclusive** and **exclusive**, respectively. The argument `s` **can** be negative, but not `0`. If `s` is `0`, an error message is printed.
 
- [`range`](#class_@gdscript_method_range) converts all arguments to [`int`](class_int.md) before processing.
+ [`range`](class_@gdscript.md#class_@gdscript_method_range) converts all arguments to [`int`](class_int.md) before processing.
 
  **Note:** Returns an empty array if no value meets the value constraint (e.g. `range(2, 5, -1)` or `range(5, 5, 1)`).
 

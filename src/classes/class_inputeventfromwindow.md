@@ -21,7 +21,7 @@ InputEventFromWindow represents events specifically received by windows. This in
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`window_id`](#class_inputeventfromwindow_property_window_id) | ``0`` |
+| [`int`](class_int.md) | [`window_id`](class_inputeventfromwindow.md#class_inputeventfromwindow_property_window_id) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

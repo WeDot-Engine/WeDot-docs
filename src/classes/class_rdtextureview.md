@@ -19,11 +19,11 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| [DataFormat](#enum_renderingdevice_dataformat)         | [`format_override`](#class_rdtextureview_property_format_override) | ``218`` |
-| [TextureSwizzle](#enum_renderingdevice_textureswizzle) | [`swizzle_a`](#class_rdtextureview_property_swizzle_a)             | ``6``   |
-| [TextureSwizzle](#enum_renderingdevice_textureswizzle) | [`swizzle_b`](#class_rdtextureview_property_swizzle_b)             | ``5``   |
-| [TextureSwizzle](#enum_renderingdevice_textureswizzle) | [`swizzle_g`](#class_rdtextureview_property_swizzle_g)             | ``4``   |
-| [TextureSwizzle](#enum_renderingdevice_textureswizzle) | [`swizzle_r`](#class_rdtextureview_property_swizzle_r)             | ``3``   |
+| [DataFormat](#enum_renderingdevice_dataformat)         | [`format_override`](class_rdtextureview.md#class_rdtextureview_property_format_override) | ``218`` |
+| [TextureSwizzle](#enum_renderingdevice_textureswizzle) | [`swizzle_a`](class_rdtextureview.md#class_rdtextureview_property_swizzle_a)             | ``6``   |
+| [TextureSwizzle](#enum_renderingdevice_textureswizzle) | [`swizzle_b`](class_rdtextureview.md#class_rdtextureview_property_swizzle_b)             | ``5``   |
+| [TextureSwizzle](#enum_renderingdevice_textureswizzle) | [`swizzle_g`](class_rdtextureview.md#class_rdtextureview_property_swizzle_g)             | ``4``   |
+| [TextureSwizzle](#enum_renderingdevice_textureswizzle) | [`swizzle_r`](class_rdtextureview.md#class_rdtextureview_property_swizzle_r)             | ``3``   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -38,7 +38,7 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 - `void` **set_format_override** ( value: [DataFormat](#enum_renderingdevice_dataformat) )
 - [DataFormat](#enum_renderingdevice_dataformat) **get_format_override** ( )
 
-Optional override for the data format to return sampled values in. The default value of [`RenderingDevice.DATA_FORMAT_MAX`](#class_renderingdevice_constant_data_format_max) does not override the format.
+Optional override for the data format to return sampled values in. The default value of [`RenderingDevice.DATA_FORMAT_MAX`](class_renderingdevice.md#class_renderingdevice_constant_data_format_max) does not override the format.
 
 <!-- rst-class:: classref-item-separator -->
 

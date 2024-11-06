@@ -11,7 +11,7 @@ A pre-parsed scene tree path.
 
 ## 描述
 
-The **NodePath** built-in [`Variant`](class_variant.md) type represents a path to a node or property in a hierarchy of nodes. It is designed to be efficiently passed into many built-in methods (such as [`Node.get_node`](#class_node_method_get_node), [`Object.set_indexed`](#class_object_method_set_indexed), [`Tween.tween_property`](#class_tween_method_tween_property), etc.) without a hard dependence on the node or property they point to.
+The **NodePath** built-in [`Variant`](class_variant.md) type represents a path to a node or property in a hierarchy of nodes. It is designed to be efficiently passed into many built-in methods (such as [`Node.get_node`](class_node.md#class_node_method_get_node), [`Object.set_indexed`](class_object.md#class_object_method_set_indexed), [`Tween.tween_property`](class_tween.md#class_tween_method_tween_property), etc.) without a hard dependence on the node or property they point to.
 
 A node path is represented as a [`String`](class_string.md) composed of slash-separated (`/`) node names and colon-separated (`:`) property names (also called "subnames"). Similar to a filesystem path, `".."` and `"."` are special node names. They refer to the parent node and the current node, respectively.
 
@@ -46,11 +46,11 @@ Despite their name, node paths may also point to a property:
     ^"/root:size:x"        # Points to the root Window and its width.
 ```
 
-In some situations, it's possible to omit the leading `:` when pointing to an object's property. As an example, this is the case with [`Object.set_indexed`](#class_object_method_set_indexed) and [`Tween.tween_property`](#class_tween_method_tween_property), as those methods call [`get_as_property_path`](#class_nodepath_method_get_as_property_path) under the hood. However, it's generally recommended to keep the `:` prefix.
+In some situations, it's possible to omit the leading `:` when pointing to an object's property. As an example, this is the case with [`Object.set_indexed`](class_object.md#class_object_method_set_indexed) and [`Tween.tween_property`](class_tween.md#class_tween_method_tween_property), as those methods call [`get_as_property_path`](class_nodepath.md#class_nodepath_method_get_as_property_path) under the hood. However, it's generally recommended to keep the `:` prefix.
 
 Node paths cannot check whether they are valid and may point to nodes or properties that do not exist. Their meaning depends entirely on the context in which they're used.
 
-You usually do not have to worry about the **NodePath** type, as strings are automatically converted to the type when necessary. There are still times when defining node paths is useful. For example, exported **NodePath** properties allow you to easily select any node within the currently edited scene. They are also automatically updated when moving, renaming or deleting nodes in the scene tree editor. See also [`@GDScript.@export_node_path`](#class_@gdscript_annotation_@export_node_path).
+You usually do not have to worry about the **NodePath** type, as strings are automatically converted to the type when necessary. There are still times when defining node paths is useful. For example, exported **NodePath** properties allow you to easily select any node within the currently edited scene. They are also automatically updated when moving, renaming or deleting nodes in the scene tree editor. See also [`@GDScript.@export_node_path`](class_@gdscript.md#class_@gdscript_annotation_@export_node_path).
 
 See also [`StringName`](class_stringname.md), which is a similar type designed for optimized strings.
 
@@ -68,25 +68,25 @@ See also [`StringName`](class_stringname.md), which is a similar type designed f
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md) | [`NodePath`](#class_nodepath_constructor_nodepath) ( )                                       |
-| [`NodePath`](class_nodepath.md) | [`NodePath`](#class_nodepath_constructor_nodepath) ( from: [`NodePath`](class_nodepath.md) ) |
-| [`NodePath`](class_nodepath.md) | [`NodePath`](#class_nodepath_constructor_nodepath) ( from: [`String`](class_string.md) )     |
+| [`NodePath`](class_nodepath.md) | [`NodePath`](class_nodepath.md#class_nodepath_constructor_nodepath) ( )                                       |
+| [`NodePath`](class_nodepath.md) | [`NodePath`](class_nodepath.md#class_nodepath_constructor_nodepath) ( from: [`NodePath`](class_nodepath.md) ) |
+| [`NodePath`](class_nodepath.md) | [`NodePath`](class_nodepath.md#class_nodepath_constructor_nodepath) ( from: [`String`](class_string.md) )     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md)     | [`get_as_property_path`](#class_nodepath_method_get_as_property_path) ( ) const[^const]                                         |
-| [`StringName`](class_stringname.md) | [`get_concatenated_names`](#class_nodepath_method_get_concatenated_names) ( ) const[^const]                                     |
-| [`StringName`](class_stringname.md) | [`get_concatenated_subnames`](#class_nodepath_method_get_concatenated_subnames) ( ) const[^const]                               |
-| [`StringName`](class_stringname.md) | [`get_name`](#class_nodepath_method_get_name) ( idx: [`int`](class_int.md) ) const[^const]                                      |
-| [`int`](class_int.md)               | [`get_name_count`](#class_nodepath_method_get_name_count) ( ) const[^const]                                                     |
-| [`StringName`](class_stringname.md) | [`get_subname`](#class_nodepath_method_get_subname) ( idx: [`int`](class_int.md) ) const[^const]                                |
-| [`int`](class_int.md)               | [`get_subname_count`](#class_nodepath_method_get_subname_count) ( ) const[^const]                                               |
-| [`int`](class_int.md)               | [`hash`](#class_nodepath_method_hash) ( ) const[^const]                                                                         |
-| [`bool`](class_bool.md)             | [`is_absolute`](#class_nodepath_method_is_absolute) ( ) const[^const]                                                           |
-| [`bool`](class_bool.md)             | [`is_empty`](#class_nodepath_method_is_empty) ( ) const[^const]                                                                 |
-| [`NodePath`](class_nodepath.md)     | [`slice`](#class_nodepath_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
+| [`NodePath`](class_nodepath.md)     | [`get_as_property_path`](class_nodepath.md#class_nodepath_method_get_as_property_path) ( ) const[^const]                                         |
+| [`StringName`](class_stringname.md) | [`get_concatenated_names`](class_nodepath.md#class_nodepath_method_get_concatenated_names) ( ) const[^const]                                     |
+| [`StringName`](class_stringname.md) | [`get_concatenated_subnames`](class_nodepath.md#class_nodepath_method_get_concatenated_subnames) ( ) const[^const]                               |
+| [`StringName`](class_stringname.md) | [`get_name`](class_nodepath.md#class_nodepath_method_get_name) ( idx: [`int`](class_int.md) ) const[^const]                                      |
+| [`int`](class_int.md)               | [`get_name_count`](class_nodepath.md#class_nodepath_method_get_name_count) ( ) const[^const]                                                     |
+| [`StringName`](class_stringname.md) | [`get_subname`](class_nodepath.md#class_nodepath_method_get_subname) ( idx: [`int`](class_int.md) ) const[^const]                                |
+| [`int`](class_int.md)               | [`get_subname_count`](class_nodepath.md#class_nodepath_method_get_subname_count) ( ) const[^const]                                               |
+| [`int`](class_int.md)               | [`hash`](class_nodepath.md#class_nodepath_method_hash) ( ) const[^const]                                                                         |
+| [`bool`](class_bool.md)             | [`is_absolute`](class_nodepath.md#class_nodepath_method_is_absolute) ( ) const[^const]                                                           |
+| [`bool`](class_bool.md)             | [`is_empty`](class_nodepath.md#class_nodepath_method_is_empty) ( ) const[^const]                                                                 |
+| [`NodePath`](class_nodepath.md)     | [`slice`](class_nodepath.md#class_nodepath_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
 
 ## 运算符
 
@@ -121,7 +121,7 @@ Constructs a **NodePath** as a copy of the given **NodePath**.
 
 [`NodePath`](class_nodepath.md) **NodePath** ( from: [`String`](class_string.md) )
 
-Constructs a **NodePath** from a [`String`](class_string.md). The created path is absolute if prefixed with a slash (see [`is_absolute`](#class_nodepath_method_is_absolute)).
+Constructs a **NodePath** from a [`String`](class_string.md). The created path is absolute if prefixed with a slash (see [`is_absolute`](class_nodepath.md#class_nodepath_method_is_absolute)).
 
 The "subnames" optionally included after the path to the target node can point to properties, and can also be nested.
 
@@ -239,7 +239,7 @@ Returns all property subnames concatenated with a colon character (`:`) as a sin
 
 [`StringName`](class_stringname.md) **get_name** ( idx: [`int`](class_int.md) ) const[^const]<div id="class_nodepath_method_get_name"></div>
 
-Returns the node name indicated by `idx`, starting from 0. If `idx` is out of bounds, an error is generated. See also [`get_subname_count`](#class_nodepath_method_get_subname_count) and [`get_name_count`](#class_nodepath_method_get_name_count).
+Returns the node name indicated by `idx`, starting from 0. If `idx` is out of bounds, an error is generated. See also [`get_subname_count`](class_nodepath.md#class_nodepath_method_get_subname_count) and [`get_name_count`](class_nodepath.md#class_nodepath_method_get_name_count).
 
 
 
@@ -285,7 +285,7 @@ For example, `"../RigidBody2D/Sprite2D:texture"` contains 3 node names.
 
 [`StringName`](class_stringname.md) **get_subname** ( idx: [`int`](class_int.md) ) const[^const]<div id="class_nodepath_method_get_subname"></div>
 
-Returns the property name indicated by `idx`, starting from 0. If `idx` is out of bounds, an error is generated. See also [`get_subname_count`](#class_nodepath_method_get_subname_count).
+Returns the property name indicated by `idx`, starting from 0. If `idx` is out of bounds, an error is generated. See also [`get_subname_count`](class_nodepath.md#class_nodepath_method_get_subname_count).
 
 
 
@@ -363,7 +363,7 @@ Returns `true` if the node path has been constructed from an empty [`String`](cl
 
 Returns the slice of the **NodePath**, from `begin` (inclusive) to `end` (exclusive), as a new **NodePath**.
 
-The absolute value of `begin` and `end` will be clamped to the sum of [`get_name_count`](#class_nodepath_method_get_name_count) and [`get_subname_count`](#class_nodepath_method_get_subname_count), so the default value for `end` makes it slice to the end of the **NodePath** by default (i.e. `path.slice(1)` is a shorthand for `path.slice(1, path.get_name_count() + path.get_subname_count())`).
+The absolute value of `begin` and `end` will be clamped to the sum of [`get_name_count`](class_nodepath.md#class_nodepath_method_get_name_count) and [`get_subname_count`](class_nodepath.md#class_nodepath_method_get_subname_count), so the default value for `end` makes it slice to the end of the **NodePath** by default (i.e. `path.slice(1)` is a shorthand for `path.slice(1, path.get_name_count() + path.get_subname_count())`).
 
 If either `begin` or `end` are negative, they will be relative to the end of the **NodePath** (i.e. `path.slice(0, -2)` is a shorthand for `path.slice(0, path.get_name_count() + path.get_subname_count() - 2)`).
 

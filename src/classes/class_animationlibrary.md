@@ -19,12 +19,12 @@ An animation library stores a set of animations accessible through [`StringName`
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)                           | [`add_animation`](#class_animationlibrary_method_add_animation) ( name: [`StringName`](class_stringname.md), animation: [`Animation`](class_animation.md) )       |
-| [`Animation`](class_animation.md)                           | [`get_animation`](#class_animationlibrary_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_list`](#class_animationlibrary_method_get_animation_list) ( ) const[^const]                                                                       |
-| [`bool`](class_bool.md)                                     | [`has_animation`](#class_animationlibrary_method_has_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
-| `void`                                                      | [`remove_animation`](#class_animationlibrary_method_remove_animation) ( name: [`StringName`](class_stringname.md) )                                               |
-| `void`                                                      | [`rename_animation`](#class_animationlibrary_method_rename_animation) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) ) |
+| [Error](#enum_@globalscope_error)                           | [`add_animation`](class_animationlibrary.md#class_animationlibrary_method_add_animation) ( name: [`StringName`](class_stringname.md), animation: [`Animation`](class_animation.md) )       |
+| [`Animation`](class_animation.md)                           | [`get_animation`](class_animationlibrary.md#class_animationlibrary_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_list`](class_animationlibrary.md#class_animationlibrary_method_get_animation_list) ( ) const[^const]                                                                       |
+| [`bool`](class_bool.md)                                     | [`has_animation`](class_animationlibrary.md#class_animationlibrary_method_has_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
+| `void`                                                      | [`remove_animation`](class_animationlibrary.md#class_animationlibrary_method_remove_animation) ( name: [`StringName`](class_stringname.md) )                                               |
+| `void`                                                      | [`rename_animation`](class_animationlibrary.md#class_animationlibrary_method_rename_animation) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -48,7 +48,7 @@ Emitted when an [`Animation`](class_animation.md) is added, under the key `name`
 
 Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. `name` is the key of the animation that was changed.
 
-See also [`Resource.changed`](#class_resource_signal_changed), which this acts as a relay for.
+See also [`Resource.changed`](class_resource.md#class_resource_signal_changed), which this acts as a relay for.
 
 <!-- rst-class:: classref-item-separator -->
 

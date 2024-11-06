@@ -19,8 +19,8 @@ Translated to `uniform bool` in the shader language.
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`default_value`](#class_visualshadernodebooleanparameter_property_default_value)                 | ``false`` |
-| [`bool`](class_bool.md) | [`default_value_enabled`](#class_visualshadernodebooleanparameter_property_default_value_enabled) | ``false`` |
+| [`bool`](class_bool.md) | [`default_value`](class_visualshadernodebooleanparameter.md#class_visualshadernodebooleanparameter_property_default_value)                 | ``false`` |
+| [`bool`](class_bool.md) | [`default_value_enabled`](class_visualshadernodebooleanparameter.md#class_visualshadernodebooleanparameter_property_default_value_enabled) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -48,7 +48,7 @@ A default value to be assigned within the shader.
 - `void` **set_default_value_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_default_value_enabled** ( )
 
-Enables usage of the [`default_value`](#class_visualshadernodebooleanparameter_property_default_value).
+Enables usage of the [`default_value`](class_visualshadernodebooleanparameter.md#class_visualshadernodebooleanparameter_property_default_value).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

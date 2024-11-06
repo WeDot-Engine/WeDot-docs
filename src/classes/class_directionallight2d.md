@@ -15,14 +15,14 @@ Directional 2D light from a distance.
 
 A directional light is a type of [`Light2D`](class_light2d.md) node that models an infinite number of parallel rays covering the entire scene. It is used for lights with strong intensity that are located far away from the scene (for example: to model sunlight or moonlight).
 
- **Note:** **DirectionalLight2D** does not support light cull masks (but it supports shadow cull masks). It will always light up 2D nodes, regardless of the 2D node's [`CanvasItem.light_mask`](#class_canvasitem_property_light_mask).
+ **Note:** **DirectionalLight2D** does not support light cull masks (but it supports shadow cull masks). It will always light up 2D nodes, regardless of the 2D node's [`CanvasItem.light_mask`](class_canvasitem.md#class_canvasitem_property_light_mask).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`height`](#class_directionallight2d_property_height)             | ``0.0``     |
-| [`float`](class_float.md) | [`max_distance`](#class_directionallight2d_property_max_distance) | ``10000.0`` |
+| [`float`](class_float.md) | [`height`](class_directionallight2d.md#class_directionallight2d_property_height)             | ``0.0``     |
+| [`float`](class_float.md) | [`max_distance`](class_directionallight2d.md#class_directionallight2d_property_max_distance) | ``10000.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -50,7 +50,7 @@ The height of the light. Used with 2D normal mapping. Ranges from 0 (parallel to
 - `void` **set_max_distance** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_max_distance** ( )
 
-The maximum distance from the camera center objects can be before their shadows are culled (in pixels). Decreasing this value can prevent objects located outside the camera from casting shadows (while also improving performance). [`Camera2D.zoom`](#class_camera2d_property_zoom) is not taken into account by [`max_distance`](#class_directionallight2d_property_max_distance), which means that at higher zoom values, shadows will appear to fade out sooner when zooming onto a given point.
+The maximum distance from the camera center objects can be before their shadows are culled (in pixels). Decreasing this value can prevent objects located outside the camera from casting shadows (while also improving performance). [`Camera2D.zoom`](class_camera2d.md#class_camera2d_property_zoom) is not taken into account by [`max_distance`](class_directionallight2d.md#class_directionallight2d_property_max_distance), which means that at higher zoom values, shadows will appear to fade out sooner when zooming onto a given point.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

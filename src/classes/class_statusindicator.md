@@ -17,16 +17,16 @@ Application status indicator (aka notification area icon).
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`icon`](#class_statusindicator_property_icon)       |                  |
-| [`NodePath`](class_nodepath.md)   | [`menu`](#class_statusindicator_property_menu)       | ``NodePath("")`` |
-| [`String`](class_string.md)       | [`tooltip`](#class_statusindicator_property_tooltip) | ``""``           |
-| [`bool`](class_bool.md)           | [`visible`](#class_statusindicator_property_visible) | ``true``         |
+| [`Texture2D`](class_texture2d.md) | [`icon`](class_statusindicator.md#class_statusindicator_property_icon)       |                  |
+| [`NodePath`](class_nodepath.md)   | [`menu`](class_statusindicator.md#class_statusindicator_property_menu)       | ``NodePath("")`` |
+| [`String`](class_string.md)       | [`tooltip`](class_statusindicator.md#class_statusindicator_property_tooltip) | ``""``           |
+| [`bool`](class_bool.md)           | [`visible`](class_statusindicator.md#class_statusindicator_property_visible) | ``true``         |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`get_rect`](#class_statusindicator_method_get_rect) ( ) const[^const] |
+| [`Rect2`](class_rect2.md) | [`get_rect`](class_statusindicator.md#class_statusindicator_method_get_rect) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -66,9 +66,9 @@ Status indicator icon.
 - `void` **set_menu** ( value: [`NodePath`](class_nodepath.md) )
 - [`NodePath`](class_nodepath.md) **get_menu** ( )
 
-Status indicator native popup menu. If this is set, the [`pressed`](#class_statusindicator_signal_pressed) signal is not emitted.
+Status indicator native popup menu. If this is set, the [`pressed`](class_statusindicator.md#class_statusindicator_signal_pressed) signal is not emitted.
 
- **Note:** Native popup is only supported if [`NativeMenu`](class_nativemenu.md) supports [`NativeMenu.FEATURE_POPUP_MENU`](#class_nativemenu_constant_feature_popup_menu) feature.
+ **Note:** Native popup is only supported if [`NativeMenu`](class_nativemenu.md) supports [`NativeMenu.FEATURE_POPUP_MENU`](class_nativemenu.md#class_nativemenu_constant_feature_popup_menu) feature.
 
 <!-- rst-class:: classref-item-separator -->
 

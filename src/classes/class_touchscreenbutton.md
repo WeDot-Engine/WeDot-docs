@@ -23,21 +23,21 @@ You can configure TouchScreenButton to be visible only on touch devices, helping
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                              | [`action`](#class_touchscreenbutton_property_action)                   | ``""``    |
-| [`BitMap`](class_bitmap.md)                              | [`bitmask`](#class_touchscreenbutton_property_bitmask)                 |           |
-| [`bool`](class_bool.md)                                  | [`passby_press`](#class_touchscreenbutton_property_passby_press)       | ``false`` |
-| [`Shape2D`](class_shape2d.md)                            | [`shape`](#class_touchscreenbutton_property_shape)                     |           |
-| [`bool`](class_bool.md)                                  | [`shape_centered`](#class_touchscreenbutton_property_shape_centered)   | ``true``  |
-| [`bool`](class_bool.md)                                  | [`shape_visible`](#class_touchscreenbutton_property_shape_visible)     | ``true``  |
-| [`Texture2D`](class_texture2d.md)                        | [`texture_normal`](#class_touchscreenbutton_property_texture_normal)   |           |
-| [`Texture2D`](class_texture2d.md)                        | [`texture_pressed`](#class_touchscreenbutton_property_texture_pressed) |           |
-| [VisibilityMode](#enum_touchscreenbutton_visibilitymode) | [`visibility_mode`](#class_touchscreenbutton_property_visibility_mode) | ``0``     |
+| [`String`](class_string.md)                              | [`action`](class_touchscreenbutton.md#class_touchscreenbutton_property_action)                   | ``""``    |
+| [`BitMap`](class_bitmap.md)                              | [`bitmask`](class_touchscreenbutton.md#class_touchscreenbutton_property_bitmask)                 |           |
+| [`bool`](class_bool.md)                                  | [`passby_press`](class_touchscreenbutton.md#class_touchscreenbutton_property_passby_press)       | ``false`` |
+| [`Shape2D`](class_shape2d.md)                            | [`shape`](class_touchscreenbutton.md#class_touchscreenbutton_property_shape)                     |           |
+| [`bool`](class_bool.md)                                  | [`shape_centered`](class_touchscreenbutton.md#class_touchscreenbutton_property_shape_centered)   | ``true``  |
+| [`bool`](class_bool.md)                                  | [`shape_visible`](class_touchscreenbutton.md#class_touchscreenbutton_property_shape_visible)     | ``true``  |
+| [`Texture2D`](class_texture2d.md)                        | [`texture_normal`](class_touchscreenbutton.md#class_touchscreenbutton_property_texture_normal)   |           |
+| [`Texture2D`](class_texture2d.md)                        | [`texture_pressed`](class_touchscreenbutton.md#class_touchscreenbutton_property_texture_pressed) |           |
+| [VisibilityMode](#enum_touchscreenbutton_visibilitymode) | [`visibility_mode`](class_touchscreenbutton.md#class_touchscreenbutton_property_visibility_mode) | ``0``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`is_pressed`](#class_touchscreenbutton_method_is_pressed) ( ) const[^const] |
+| [`bool`](class_bool.md) | [`is_pressed`](class_touchscreenbutton.md#class_touchscreenbutton_method_is_pressed) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -122,7 +122,7 @@ The button's bitmask.
 - `void` **set_passby_press** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_passby_press_enabled** ( )
 
-If `true`, the [`pressed`](#class_touchscreenbutton_signal_pressed) and [`released`](#class_touchscreenbutton_signal_released) signals are emitted whenever a pressed finger goes in and out of the button, even if the pressure started outside the active area of the button.
+If `true`, the [`pressed`](class_touchscreenbutton.md#class_touchscreenbutton_signal_pressed) and [`released`](class_touchscreenbutton.md#class_touchscreenbutton_signal_released) signals are emitted whenever a pressed finger goes in and out of the button, even if the pressure started outside the active area of the button.
 
  **Note:** This is a "pass-by" (not "bypass") press mode.
 

@@ -23,10 +23,10 @@ Soft clipping starts to reduce the peaks a little below the threshold level and 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`ceiling_db`](#class_audioeffectlimiter_property_ceiling_db)           | ``-0.1`` |
-| [`float`](class_float.md) | [`soft_clip_db`](#class_audioeffectlimiter_property_soft_clip_db)       | ``2.0``  |
-| [`float`](class_float.md) | [`soft_clip_ratio`](#class_audioeffectlimiter_property_soft_clip_ratio) | ``10.0`` |
-| [`float`](class_float.md) | [`threshold_db`](#class_audioeffectlimiter_property_threshold_db)       | ``0.0``  |
+| [`float`](class_float.md) | [`ceiling_db`](class_audioeffectlimiter.md#class_audioeffectlimiter_property_ceiling_db)           | ``-0.1`` |
+| [`float`](class_float.md) | [`soft_clip_db`](class_audioeffectlimiter.md#class_audioeffectlimiter_property_soft_clip_db)       | ``2.0``  |
+| [`float`](class_float.md) | [`soft_clip_ratio`](class_audioeffectlimiter.md#class_audioeffectlimiter_property_soft_clip_ratio) | ``10.0`` |
+| [`float`](class_float.md) | [`threshold_db`](class_audioeffectlimiter.md#class_audioeffectlimiter_property_threshold_db)       | ``0.0``  |
 
 <!-- rst-class:: classref-section-separator -->
 

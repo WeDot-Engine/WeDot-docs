@@ -78,7 +78,7 @@ The following example augment the default implementation ([`SceneMultiplayer`](c
 
 
 
-Then in your main scene or in an autoload call [`SceneTree.set_multiplayer`](#class_scenetree_method_set_multiplayer) to start using your custom [`MultiplayerAPI`](class_multiplayerapi.md):
+Then in your main scene or in an autoload call [`SceneTree.set_multiplayer`](class_scenetree.md#class_scenetree_method_set_multiplayer) to start using your custom [`MultiplayerAPI`](class_multiplayerapi.md):
 
 
 
@@ -92,7 +92,7 @@ Then in your main scene or in an autoload call [`SceneTree.set_multiplayer`](#cl
 
 
 
-Native extensions can alternatively use the [`MultiplayerAPI.set_default_interface`](#class_multiplayerapi_method_set_default_interface) method during initialization to configure themselves as the default implementation.
+Native extensions can alternatively use the [`MultiplayerAPI.set_default_interface`](class_multiplayerapi.md#class_multiplayerapi_method_set_default_interface) method during initialization to configure themselves as the default implementation.
 
 
 
@@ -102,15 +102,15 @@ Native extensions can alternatively use the [`MultiplayerAPI.set_default_interfa
 
 |||
 |:-:|:--|
-| [`MultiplayerPeer`](class_multiplayerpeer.md)   | [`_get_multiplayer_peer`](#class_multiplayerapiextension_private_method__get_multiplayer_peer) ( ) virtual[^virtual]                                                                                                              |
-| [`PackedInt32Array`](class_packedint32array.md) | [`_get_peer_ids`](#class_multiplayerapiextension_private_method__get_peer_ids) ( ) virtual[^virtual] const[^const]                                                                                                                |
-| [`int`](class_int.md)                           | [`_get_remote_sender_id`](#class_multiplayerapiextension_private_method__get_remote_sender_id) ( ) virtual[^virtual] const[^const]                                                                                                |
-| [`int`](class_int.md)                           | [`_get_unique_id`](#class_multiplayerapiextension_private_method__get_unique_id) ( ) virtual[^virtual] const[^const]                                                                                                              |
-| [Error](#enum_@globalscope_error)               | [`_object_configuration_add`](#class_multiplayerapiextension_private_method__object_configuration_add) ( object: [`Object`](class_object.md), configuration: [`Variant`](class_variant.md) ) virtual[^virtual]                    |
-| [Error](#enum_@globalscope_error)               | [`_object_configuration_remove`](#class_multiplayerapiextension_private_method__object_configuration_remove) ( object: [`Object`](class_object.md), configuration: [`Variant`](class_variant.md) ) virtual[^virtual]              |
-| [Error](#enum_@globalscope_error)               | [`_poll`](#class_multiplayerapiextension_private_method__poll) ( ) virtual[^virtual]                                                                                                                                              |
-| [Error](#enum_@globalscope_error)               | [`_rpc`](#class_multiplayerapiextension_private_method__rpc) ( peer: [`int`](class_int.md), object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), args: [`Array`](class_array.md) ) virtual[^virtual] |
-| `void`                                          | [`_set_multiplayer_peer`](#class_multiplayerapiextension_private_method__set_multiplayer_peer) ( multiplayer_peer: [`MultiplayerPeer`](class_multiplayerpeer.md) ) virtual[^virtual]                                              |
+| [`MultiplayerPeer`](class_multiplayerpeer.md)   | [`_get_multiplayer_peer`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__get_multiplayer_peer) ( ) virtual[^virtual]                                                                                                              |
+| [`PackedInt32Array`](class_packedint32array.md) | [`_get_peer_ids`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__get_peer_ids) ( ) virtual[^virtual] const[^const]                                                                                                                |
+| [`int`](class_int.md)                           | [`_get_remote_sender_id`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__get_remote_sender_id) ( ) virtual[^virtual] const[^const]                                                                                                |
+| [`int`](class_int.md)                           | [`_get_unique_id`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__get_unique_id) ( ) virtual[^virtual] const[^const]                                                                                                              |
+| [Error](#enum_@globalscope_error)               | [`_object_configuration_add`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__object_configuration_add) ( object: [`Object`](class_object.md), configuration: [`Variant`](class_variant.md) ) virtual[^virtual]                    |
+| [Error](#enum_@globalscope_error)               | [`_object_configuration_remove`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__object_configuration_remove) ( object: [`Object`](class_object.md), configuration: [`Variant`](class_variant.md) ) virtual[^virtual]              |
+| [Error](#enum_@globalscope_error)               | [`_poll`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__poll) ( ) virtual[^virtual]                                                                                                                                              |
+| [Error](#enum_@globalscope_error)               | [`_rpc`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__rpc) ( peer: [`int`](class_int.md), object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), args: [`Array`](class_array.md) ) virtual[^virtual] |
+| `void`                                          | [`_set_multiplayer_peer`](class_multiplayerapiextension.md#class_multiplayerapiextension_private_method__set_multiplayer_peer) ( multiplayer_peer: [`MultiplayerPeer`](class_multiplayerpeer.md) ) virtual[^virtual]                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -122,7 +122,7 @@ Native extensions can alternatively use the [`MultiplayerAPI.set_default_interfa
 
 [`MultiplayerPeer`](class_multiplayerpeer.md) **_get_multiplayer_peer** ( ) virtual[^virtual]<div id="class_multiplayerapiextension_private_method__get_multiplayer_peer"></div>
 
-Called when the [`MultiplayerAPI.multiplayer_peer`](#class_multiplayerapi_property_multiplayer_peer) is retrieved.
+Called when the [`MultiplayerAPI.multiplayer_peer`](class_multiplayerapi.md#class_multiplayerapi_property_multiplayer_peer) is retrieved.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -132,7 +132,7 @@ Called when the [`MultiplayerAPI.multiplayer_peer`](#class_multiplayerapi_proper
 
 [`PackedInt32Array`](class_packedint32array.md) **_get_peer_ids** ( ) virtual[^virtual] const[^const]<div id="class_multiplayerapiextension_private_method__get_peer_ids"></div>
 
-Callback for [`MultiplayerAPI.get_peers`](#class_multiplayerapi_method_get_peers).
+Callback for [`MultiplayerAPI.get_peers`](class_multiplayerapi.md#class_multiplayerapi_method_get_peers).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -142,7 +142,7 @@ Callback for [`MultiplayerAPI.get_peers`](#class_multiplayerapi_method_get_peers
 
 [`int`](class_int.md) **_get_remote_sender_id** ( ) virtual[^virtual] const[^const]<div id="class_multiplayerapiextension_private_method__get_remote_sender_id"></div>
 
-Callback for [`MultiplayerAPI.get_remote_sender_id`](#class_multiplayerapi_method_get_remote_sender_id).
+Callback for [`MultiplayerAPI.get_remote_sender_id`](class_multiplayerapi.md#class_multiplayerapi_method_get_remote_sender_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,7 +152,7 @@ Callback for [`MultiplayerAPI.get_remote_sender_id`](#class_multiplayerapi_metho
 
 [`int`](class_int.md) **_get_unique_id** ( ) virtual[^virtual] const[^const]<div id="class_multiplayerapiextension_private_method__get_unique_id"></div>
 
-Callback for [`MultiplayerAPI.get_unique_id`](#class_multiplayerapi_method_get_unique_id).
+Callback for [`MultiplayerAPI.get_unique_id`](class_multiplayerapi.md#class_multiplayerapi_method_get_unique_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -162,7 +162,7 @@ Callback for [`MultiplayerAPI.get_unique_id`](#class_multiplayerapi_method_get_u
 
 [Error](#enum_@globalscope_error) **_object_configuration_add** ( object: [`Object`](class_object.md), configuration: [`Variant`](class_variant.md) ) virtual[^virtual]<div id="class_multiplayerapiextension_private_method__object_configuration_add"></div>
 
-Callback for [`MultiplayerAPI.object_configuration_add`](#class_multiplayerapi_method_object_configuration_add).
+Callback for [`MultiplayerAPI.object_configuration_add`](class_multiplayerapi.md#class_multiplayerapi_method_object_configuration_add).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -172,7 +172,7 @@ Callback for [`MultiplayerAPI.object_configuration_add`](#class_multiplayerapi_m
 
 [Error](#enum_@globalscope_error) **_object_configuration_remove** ( object: [`Object`](class_object.md), configuration: [`Variant`](class_variant.md) ) virtual[^virtual]<div id="class_multiplayerapiextension_private_method__object_configuration_remove"></div>
 
-Callback for [`MultiplayerAPI.object_configuration_remove`](#class_multiplayerapi_method_object_configuration_remove).
+Callback for [`MultiplayerAPI.object_configuration_remove`](class_multiplayerapi.md#class_multiplayerapi_method_object_configuration_remove).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -182,7 +182,7 @@ Callback for [`MultiplayerAPI.object_configuration_remove`](#class_multiplayerap
 
 [Error](#enum_@globalscope_error) **_poll** ( ) virtual[^virtual]<div id="class_multiplayerapiextension_private_method__poll"></div>
 
-Callback for [`MultiplayerAPI.poll`](#class_multiplayerapi_method_poll).
+Callback for [`MultiplayerAPI.poll`](class_multiplayerapi.md#class_multiplayerapi_method_poll).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -192,7 +192,7 @@ Callback for [`MultiplayerAPI.poll`](#class_multiplayerapi_method_poll).
 
 [Error](#enum_@globalscope_error) **_rpc** ( peer: [`int`](class_int.md), object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), args: [`Array`](class_array.md) ) virtual[^virtual]<div id="class_multiplayerapiextension_private_method__rpc"></div>
 
-Callback for [`MultiplayerAPI.rpc`](#class_multiplayerapi_method_rpc).
+Callback for [`MultiplayerAPI.rpc`](class_multiplayerapi.md#class_multiplayerapi_method_rpc).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -202,7 +202,7 @@ Callback for [`MultiplayerAPI.rpc`](#class_multiplayerapi_method_rpc).
 
 `void` **_set_multiplayer_peer** ( multiplayer_peer: [`MultiplayerPeer`](class_multiplayerpeer.md) ) virtual[^virtual]<div id="class_multiplayerapiextension_private_method__set_multiplayer_peer"></div>
 
-Called when the [`MultiplayerAPI.multiplayer_peer`](#class_multiplayerapi_property_multiplayer_peer) is set.
+Called when the [`MultiplayerAPI.multiplayer_peer`](class_multiplayerapi.md#class_multiplayerapi_property_multiplayer_peer) is set.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

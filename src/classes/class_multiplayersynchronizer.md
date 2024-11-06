@@ -15,34 +15,34 @@ Synchronizes properties from the multiplayer authority to the remote peers.
 
 By default, **MultiplayerSynchronizer** synchronizes configured properties to all peers.
 
-Visibility can be handled directly with [`set_visibility_for`](#class_multiplayersynchronizer_method_set_visibility_for) or as-needed with [`add_visibility_filter`](#class_multiplayersynchronizer_method_add_visibility_filter) and [`update_visibility`](#class_multiplayersynchronizer_method_update_visibility).
+Visibility can be handled directly with [`set_visibility_for`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_set_visibility_for) or as-needed with [`add_visibility_filter`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_add_visibility_filter) and [`update_visibility`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_update_visibility).
 
- [`MultiplayerSpawner`](class_multiplayerspawner.md) s will handle nodes according to visibility of synchronizers as long as the node at [`root_path`](#class_multiplayersynchronizer_property_root_path) was spawned by one.
+ [`MultiplayerSpawner`](class_multiplayerspawner.md) s will handle nodes according to visibility of synchronizers as long as the node at [`root_path`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_root_path) was spawned by one.
 
-Internally, **MultiplayerSynchronizer** uses [`MultiplayerAPI.object_configuration_add`](#class_multiplayerapi_method_object_configuration_add) to notify synchronization start passing the [`Node`](class_node.md) at [`root_path`](#class_multiplayersynchronizer_property_root_path) as the `object` and itself as the `configuration`, and uses [`MultiplayerAPI.object_configuration_remove`](#class_multiplayerapi_method_object_configuration_remove) to notify synchronization end in a similar way.
+Internally, **MultiplayerSynchronizer** uses [`MultiplayerAPI.object_configuration_add`](class_multiplayerapi.md#class_multiplayerapi_method_object_configuration_add) to notify synchronization start passing the [`Node`](class_node.md) at [`root_path`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_root_path) as the `object` and itself as the `configuration`, and uses [`MultiplayerAPI.object_configuration_remove`](class_multiplayerapi.md#class_multiplayerapi_method_object_configuration_remove) to notify synchronization end in a similar way.
 
- **Note:** Synchronization is not supported for [`Object`](class_object.md) type properties, like [`Resource`](class_resource.md). Properties that are unique to each peer, like the instance IDs of [`Object`](class_object.md) s (see [`Object.get_instance_id`](#class_object_method_get_instance_id)) or [`RID`](class_rid.md) s, will also not work in synchronization.
+ **Note:** Synchronization is not supported for [`Object`](class_object.md) type properties, like [`Resource`](class_resource.md). Properties that are unique to each peer, like the instance IDs of [`Object`](class_object.md) s (see [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id)) or [`RID`](class_rid.md) s, will also not work in synchronization.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                                  | [`delta_interval`](#class_multiplayersynchronizer_property_delta_interval)                 | ``0.0``            |
-| [`bool`](class_bool.md)                                                    | [`public_visibility`](#class_multiplayersynchronizer_property_public_visibility)           | ``true``           |
-| [`SceneReplicationConfig`](class_scenereplicationconfig.md)                | [`replication_config`](#class_multiplayersynchronizer_property_replication_config)         |                    |
-| [`float`](class_float.md)                                                  | [`replication_interval`](#class_multiplayersynchronizer_property_replication_interval)     | ``0.0``            |
-| [`NodePath`](class_nodepath.md)                                            | [`root_path`](#class_multiplayersynchronizer_property_root_path)                           | ``NodePath("..")`` |
-| [VisibilityUpdateMode](#enum_multiplayersynchronizer_visibilityupdatemode) | [`visibility_update_mode`](#class_multiplayersynchronizer_property_visibility_update_mode) | ``0``              |
+| [`float`](class_float.md)                                                  | [`delta_interval`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_delta_interval)                 | ``0.0``            |
+| [`bool`](class_bool.md)                                                    | [`public_visibility`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_public_visibility)           | ``true``           |
+| [`SceneReplicationConfig`](class_scenereplicationconfig.md)                | [`replication_config`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_replication_config)         |                    |
+| [`float`](class_float.md)                                                  | [`replication_interval`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_replication_interval)     | ``0.0``            |
+| [`NodePath`](class_nodepath.md)                                            | [`root_path`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_root_path)                           | ``NodePath("..")`` |
+| [VisibilityUpdateMode](#enum_multiplayersynchronizer_visibilityupdatemode) | [`visibility_update_mode`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_visibility_update_mode) | ``0``              |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                  | [`add_visibility_filter`](#class_multiplayersynchronizer_method_add_visibility_filter) ( filter: [`Callable`](class_callable.md) )                 |
-| [`bool`](class_bool.md) | [`get_visibility_for`](#class_multiplayersynchronizer_method_get_visibility_for) ( peer: [`int`](class_int.md) ) const[^const]                     |
-| `void`                  | [`remove_visibility_filter`](#class_multiplayersynchronizer_method_remove_visibility_filter) ( filter: [`Callable`](class_callable.md) )           |
-| `void`                  | [`set_visibility_for`](#class_multiplayersynchronizer_method_set_visibility_for) ( peer: [`int`](class_int.md), visible: [`bool`](class_bool.md) ) |
-| `void`                  | [`update_visibility`](#class_multiplayersynchronizer_method_update_visibility) ( for_peer: [`int`](class_int.md) = 0 )                             |
+| `void`                  | [`add_visibility_filter`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_add_visibility_filter) ( filter: [`Callable`](class_callable.md) )                 |
+| [`bool`](class_bool.md) | [`get_visibility_for`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_get_visibility_for) ( peer: [`int`](class_int.md) ) const[^const]                     |
+| `void`                  | [`remove_visibility_filter`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_remove_visibility_filter) ( filter: [`Callable`](class_callable.md) )           |
+| `void`                  | [`set_visibility_for`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_set_visibility_for) ( peer: [`int`](class_int.md), visible: [`bool`](class_bool.md) ) |
+| `void`                  | [`update_visibility`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_update_visibility) ( for_peer: [`int`](class_int.md) = 0 )                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -74,7 +74,7 @@ Emitted when a new synchronization state is received by this synchronizer after 
 
 **visibility_changed** ( for_peer: [`int`](class_int.md) ) <div id="class_multiplayersynchronizer_signal_visibility_changed"></div>
 
-Emitted when visibility of `for_peer` is updated. See [`update_visibility`](#class_multiplayersynchronizer_method_update_visibility).
+Emitted when visibility of `for_peer` is updated. See [`update_visibility`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_update_visibility).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -90,19 +90,19 @@ enum **VisibilityUpdateMode**: <div id="enum_multiplayersynchronizer_visibilityu
 
 [VisibilityUpdateMode](#enum_multiplayersynchronizer_visibilityupdatemode) **VISIBILITY_PROCESS_IDLE** = ``0``
 
-Visibility filters are updated during process frames (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](#class_node_constant_notification_internal_process)).
+Visibility filters are updated during process frames (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](class_node.md#class_node_constant_notification_internal_process)).
 
 <div id="_class_multiplayersynchronizer_constant_visibility_process_physics"></div>
 
 [VisibilityUpdateMode](#enum_multiplayersynchronizer_visibilityupdatemode) **VISIBILITY_PROCESS_PHYSICS** = ``1``
 
-Visibility filters are updated during physics frames (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](#class_node_constant_notification_internal_physics_process)).
+Visibility filters are updated during physics frames (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_internal_physics_process)).
 
 <div id="_class_multiplayersynchronizer_constant_visibility_process_none"></div>
 
 [VisibilityUpdateMode](#enum_multiplayersynchronizer_visibilityupdatemode) **VISIBILITY_PROCESS_NONE** = ``2``
 
-Visibility filters are not updated automatically, and must be updated manually by calling [`update_visibility`](#class_multiplayersynchronizer_method_update_visibility).
+Visibility filters are not updated automatically, and must be updated manually by calling [`update_visibility`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_update_visibility).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -130,7 +130,7 @@ Time interval between delta synchronizations. When set to `0.0` (the default), d
 - `void` **set_visibility_public** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_visibility_public** ( )
 
-Whether synchronization should be visible to all peers by default. See [`set_visibility_for`](#class_multiplayersynchronizer_method_set_visibility_for) and [`add_visibility_filter`](#class_multiplayersynchronizer_method_add_visibility_filter) for ways of configuring fine-grained visibility options.
+Whether synchronization should be visible to all peers by default. See [`set_visibility_for`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_set_visibility_for) and [`add_visibility_filter`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_method_add_visibility_filter) for ways of configuring fine-grained visibility options.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -171,7 +171,7 @@ Time interval between synchronizations. When set to `0.0` (the default), synchro
 
 Node path that replicated properties are relative to.
 
-If [`root_path`](#class_multiplayersynchronizer_property_root_path) was spawned by a [`MultiplayerSpawner`](class_multiplayerspawner.md), the node will be also be spawned and despawned based on this synchronizer visibility options.
+If [`root_path`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_root_path) was spawned by a [`MultiplayerSpawner`](class_multiplayerspawner.md), the node will be also be spawned and despawned based on this synchronizer visibility options.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -228,7 +228,7 @@ Removes a peer visibility filter from this synchronizer.
 
 `void` **set_visibility_for** ( peer: [`int`](class_int.md), visible: [`bool`](class_bool.md) )<div id="class_multiplayersynchronizer_method_set_visibility_for"></div>
 
-Sets the visibility of `peer` to `visible`. If `peer` is `0`, the value of [`public_visibility`](#class_multiplayersynchronizer_property_public_visibility) will be updated instead.
+Sets the visibility of `peer` to `visible`. If `peer` is `0`, the value of [`public_visibility`](class_multiplayersynchronizer.md#class_multiplayersynchronizer_property_public_visibility) will be updated instead.
 
 <!-- rst-class:: classref-item-separator -->
 

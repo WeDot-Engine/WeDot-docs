@@ -13,25 +13,25 @@ A singleton that manages all [`InputEventAction`](class_inputeventaction.md) s.
 
 ## 描述
 
-Manages all [`InputEventAction`](class_inputeventaction.md) which can be created/modified from the project settings menu **Project > Project Settings > Input Map** or in code with [`add_action`](#class_inputmap_method_add_action) and [`action_add_event`](#class_inputmap_method_action_add_event). See [`Node._input`](#class_node_private_method__input).
+Manages all [`InputEventAction`](class_inputeventaction.md) which can be created/modified from the project settings menu **Project > Project Settings > Input Map** or in code with [`add_action`](class_inputmap.md#class_inputmap_method_add_action) and [`action_add_event`](class_inputmap.md#class_inputmap_method_action_add_event). See [`Node._input`](class_node.md#class_node_private_method__input).
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                      | [`action_add_event`](#class_inputmap_method_action_add_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                           |
-| `void`                                                      | [`action_erase_event`](#class_inputmap_method_action_erase_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                       |
-| `void`                                                      | [`action_erase_events`](#class_inputmap_method_action_erase_events) ( action: [`StringName`](class_stringname.md) )                                                                                                 |
-| [`float`](class_float.md)                                   | [`action_get_deadzone`](#class_inputmap_method_action_get_deadzone) ( action: [`StringName`](class_stringname.md) )                                                                                                 |
-| [Array](class_array.md) [`InputEvent`](class_inputevent.md) | [`action_get_events`](#class_inputmap_method_action_get_events) ( action: [`StringName`](class_stringname.md) )                                                                                                     |
-| [`bool`](class_bool.md)                                     | [`action_has_event`](#class_inputmap_method_action_has_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                           |
-| `void`                                                      | [`action_set_deadzone`](#class_inputmap_method_action_set_deadzone) ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) )                                                            |
-| `void`                                                      | [`add_action`](#class_inputmap_method_add_action) ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) = 0.5 )                                                                        |
-| `void`                                                      | [`erase_action`](#class_inputmap_method_erase_action) ( action: [`StringName`](class_stringname.md) )                                                                                                               |
-| [`bool`](class_bool.md)                                     | [`event_is_action`](#class_inputmap_method_event_is_action) ( event: [`InputEvent`](class_inputevent.md), action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const] |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_actions`](#class_inputmap_method_get_actions) ( )                                                                                                                                                             |
-| [`bool`](class_bool.md)                                     | [`has_action`](#class_inputmap_method_has_action) ( action: [`StringName`](class_stringname.md) ) const[^const]                                                                                                     |
-| `void`                                                      | [`load_from_project_settings`](#class_inputmap_method_load_from_project_settings) ( )                                                                                                                               |
+| `void`                                                      | [`action_add_event`](class_inputmap.md#class_inputmap_method_action_add_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                           |
+| `void`                                                      | [`action_erase_event`](class_inputmap.md#class_inputmap_method_action_erase_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                       |
+| `void`                                                      | [`action_erase_events`](class_inputmap.md#class_inputmap_method_action_erase_events) ( action: [`StringName`](class_stringname.md) )                                                                                                 |
+| [`float`](class_float.md)                                   | [`action_get_deadzone`](class_inputmap.md#class_inputmap_method_action_get_deadzone) ( action: [`StringName`](class_stringname.md) )                                                                                                 |
+| [Array](class_array.md) [`InputEvent`](class_inputevent.md) | [`action_get_events`](class_inputmap.md#class_inputmap_method_action_get_events) ( action: [`StringName`](class_stringname.md) )                                                                                                     |
+| [`bool`](class_bool.md)                                     | [`action_has_event`](class_inputmap.md#class_inputmap_method_action_has_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                           |
+| `void`                                                      | [`action_set_deadzone`](class_inputmap.md#class_inputmap_method_action_set_deadzone) ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) )                                                            |
+| `void`                                                      | [`add_action`](class_inputmap.md#class_inputmap_method_add_action) ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) = 0.5 )                                                                        |
+| `void`                                                      | [`erase_action`](class_inputmap.md#class_inputmap_method_erase_action) ( action: [`StringName`](class_stringname.md) )                                                                                                               |
+| [`bool`](class_bool.md)                                     | [`event_is_action`](class_inputmap.md#class_inputmap_method_event_is_action) ( event: [`InputEvent`](class_inputevent.md), action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const] |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_actions`](class_inputmap.md#class_inputmap_method_get_actions) ( )                                                                                                                                                             |
+| [`bool`](class_bool.md)                                     | [`has_action`](class_inputmap.md#class_inputmap_method_has_action) ( action: [`StringName`](class_stringname.md) ) const[^const]                                                                                                     |
+| `void`                                                      | [`load_from_project_settings`](class_inputmap.md#class_inputmap_method_load_from_project_settings) ( )                                                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -117,7 +117,7 @@ Sets a deadzone value for the action.
 
 Adds an empty action to the **InputMap** with a configurable `deadzone`.
 
-An [`InputEvent`](class_inputevent.md) can then be added to this action with [`action_add_event`](#class_inputmap_method_action_add_event).
+An [`InputEvent`](class_inputevent.md) can then be added to this action with [`action_add_event`](class_inputmap.md#class_inputmap_method_action_add_event).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -137,7 +137,7 @@ Removes an action from the **InputMap**.
 
 [`bool`](class_bool.md) **event_is_action** ( event: [`InputEvent`](class_inputevent.md), action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]<div id="class_inputmap_method_event_is_action"></div>
 
-Returns `true` if the given event is part of an existing action. This method ignores keyboard modifiers if the given [`InputEvent`](class_inputevent.md) is not pressed (for proper release detection). See [`action_has_event`](#class_inputmap_method_action_has_event) if you don't want this behavior.
+Returns `true` if the given event is part of an existing action. This method ignores keyboard modifiers if the given [`InputEvent`](class_inputevent.md) is not pressed (for proper release detection). See [`action_has_event`](class_inputmap.md#class_inputmap_method_action_has_event) if you don't want this behavior.
 
 If `exact_match` is `false`, it ignores additional input modifiers for [`InputEventKey`](class_inputeventkey.md) and [`InputEventMouseButton`](class_inputeventmousebutton.md) events, and the direction for [`InputEventJoypadMotion`](class_inputeventjoypadmotion.md) events.
 

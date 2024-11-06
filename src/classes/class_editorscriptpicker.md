@@ -15,13 +15,13 @@ Godot editor's control for selecting the `script` property of a [`Node`](class_n
 
 Similar to [`EditorResourcePicker`](class_editorresourcepicker.md) this [`Control`](class_control.md) node is used in the editor's Inspector dock, but only to edit the `script` property of a [`Node`](class_node.md). Default options for creating new resources of all possible subtypes are replaced with dedicated buttons that open the "Attach Node Script" dialog. Can be used with [`EditorInspectorPlugin`](class_editorinspectorplugin.md) to recreate the same behavior.
 
- **Note:** You must set the [`script_owner`](#class_editorscriptpicker_property_script_owner) for the custom context menu items to work.
+ **Note:** You must set the [`script_owner`](class_editorscriptpicker.md#class_editorscriptpicker_property_script_owner) for the custom context menu items to work.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Node`](class_node.md) | [`script_owner`](#class_editorscriptpicker_property_script_owner) |
+| [`Node`](class_node.md) | [`script_owner`](class_editorscriptpicker.md#class_editorscriptpicker_property_script_owner) |
 
 <!-- rst-class:: classref-section-separator -->
 

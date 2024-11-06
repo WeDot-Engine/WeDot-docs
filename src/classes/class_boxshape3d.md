@@ -21,7 +21,7 @@ A 3D box shape, intended for use in physics. Usually used to provide a shape for
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md) | [`size`](#class_boxshape3d_property_size) | ``Vector3(1, 1, 1)`` |
+| [`Vector3`](class_vector3.md) | [`size`](class_boxshape3d.md#class_boxshape3d_property_size) | ``Vector3(1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

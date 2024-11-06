@@ -19,7 +19,7 @@ Translated to `int` in the shader language.
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`constant`](#class_visualshadernodeintconstant_property_constant) | ``0`` |
+| [`int`](class_int.md) | [`constant`](class_visualshadernodeintconstant.md#class_visualshadernodeintconstant_property_constant) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

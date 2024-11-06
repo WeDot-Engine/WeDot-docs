@@ -21,19 +21,19 @@ This resource defines a custom rendering effect that can be applied to [`Viewpor
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                         | [`access_resolved_color`](#class_compositoreffect_property_access_resolved_color)     |
-| [`bool`](class_bool.md)                                         | [`access_resolved_depth`](#class_compositoreffect_property_access_resolved_depth)     |
-| [EffectCallbackType](#enum_compositoreffect_effectcallbacktype) | [`effect_callback_type`](#class_compositoreffect_property_effect_callback_type)       |
-| [`bool`](class_bool.md)                                         | [`enabled`](#class_compositoreffect_property_enabled)                                 |
-| [`bool`](class_bool.md)                                         | [`needs_motion_vectors`](#class_compositoreffect_property_needs_motion_vectors)       |
-| [`bool`](class_bool.md)                                         | [`needs_normal_roughness`](#class_compositoreffect_property_needs_normal_roughness)   |
-| [`bool`](class_bool.md)                                         | [`needs_separate_specular`](#class_compositoreffect_property_needs_separate_specular) |
+| [`bool`](class_bool.md)                                         | [`access_resolved_color`](class_compositoreffect.md#class_compositoreffect_property_access_resolved_color)     |
+| [`bool`](class_bool.md)                                         | [`access_resolved_depth`](class_compositoreffect.md#class_compositoreffect_property_access_resolved_depth)     |
+| [EffectCallbackType](#enum_compositoreffect_effectcallbacktype) | [`effect_callback_type`](class_compositoreffect.md#class_compositoreffect_property_effect_callback_type)       |
+| [`bool`](class_bool.md)                                         | [`enabled`](class_compositoreffect.md#class_compositoreffect_property_enabled)                                 |
+| [`bool`](class_bool.md)                                         | [`needs_motion_vectors`](class_compositoreffect.md#class_compositoreffect_property_needs_motion_vectors)       |
+| [`bool`](class_bool.md)                                         | [`needs_normal_roughness`](class_compositoreffect.md#class_compositoreffect_property_needs_normal_roughness)   |
+| [`bool`](class_bool.md)                                         | [`needs_separate_specular`](class_compositoreffect.md#class_compositoreffect_property_needs_separate_specular) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`_render_callback`](#class_compositoreffect_private_method__render_callback) ( effect_callback_type: [`int`](class_int.md), render_data: [`RenderData`](class_renderdata.md) ) virtual[^virtual] |
+| `void` | [`_render_callback`](class_compositoreffect.md#class_compositoreffect_private_method__render_callback) ( effect_callback_type: [`int`](class_int.md), render_data: [`RenderData`](class_renderdata.md) ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -96,7 +96,7 @@ Represents the size of the [EffectCallbackType](#enum_compositoreffect_effectcal
 
 If `true` and MSAA is enabled, this will trigger a color buffer resolve before the effect is run.
 
- **Note:** In [`_render_callback`](#class_compositoreffect_private_method__render_callback), to access the resolved buffer use:
+ **Note:** In [`_render_callback`](class_compositoreffect.md#class_compositoreffect_private_method__render_callback), to access the resolved buffer use:
 
 ```
 
@@ -119,7 +119,7 @@ If `true` and MSAA is enabled, this will trigger a color buffer resolve before t
 
 If `true` and MSAA is enabled, this will trigger a depth buffer resolve before the effect is run.
 
- **Note:** In [`_render_callback`](#class_compositoreffect_private_method__render_callback), to access the resolved buffer use:
+ **Note:** In [`_render_callback`](class_compositoreffect.md#class_compositoreffect_private_method__render_callback), to access the resolved buffer use:
 
 ```
 
@@ -168,7 +168,7 @@ If `true` this rendering effect is applied to any viewport it is added to.
 
 If `true` this triggers motion vectors being calculated during the opaque render state.
 
- **Note:** In [`_render_callback`](#class_compositoreffect_private_method__render_callback), to access the motion vector buffer use:
+ **Note:** In [`_render_callback`](class_compositoreffect.md#class_compositoreffect_private_method__render_callback), to access the motion vector buffer use:
 
 ```
 
@@ -191,7 +191,7 @@ If `true` this triggers motion vectors being calculated during the opaque render
 
 If `true` this triggers normal and roughness data to be output during our depth pre-pass, only applicable for the Forward+ renderer.
 
- **Note:** In [`_render_callback`](#class_compositoreffect_private_method__render_callback), to access the roughness buffer use:
+ **Note:** In [`_render_callback`](class_compositoreffect.md#class_compositoreffect_private_method__render_callback), to access the roughness buffer use:
 
 ```
 
@@ -224,7 +224,7 @@ If `true` this triggers specular data being rendered to a separate buffer and co
 
 `void` **_render_callback** ( effect_callback_type: [`int`](class_int.md), render_data: [`RenderData`](class_renderdata.md) ) virtual[^virtual]<div id="class_compositoreffect_private_method__render_callback"></div>
 
-Implement this function with your custom rendering code. `effect_callback_type` should always match the effect callback type you've specified in [`effect_callback_type`](#class_compositoreffect_property_effect_callback_type). `render_data` provides access to the rendering state, it is only valid during rendering and should not be stored.
+Implement this function with your custom rendering code. `effect_callback_type` should always match the effect callback type you've specified in [`effect_callback_type`](class_compositoreffect.md#class_compositoreffect_property_effect_callback_type). `render_data` provides access to the rendering state, it is only valid during rendering and should not be stored.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

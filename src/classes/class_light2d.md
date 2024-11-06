@@ -21,28 +21,28 @@ Casts light in a 2D environment. A light is defined as a color, an energy value,
 
 |||
 |:-:|:--|
-| [BlendMode](#enum_light2d_blendmode)       | [`blend_mode`](#class_light2d_property_blend_mode)                       | ``0``                 |
-| [`Color`](class_color.md)                  | [`color`](#class_light2d_property_color)                                 | ``Color(1, 1, 1, 1)`` |
-| [`bool`](class_bool.md)                    | [`editor_only`](#class_light2d_property_editor_only)                     | ``false``             |
-| [`bool`](class_bool.md)                    | [`enabled`](#class_light2d_property_enabled)                             | ``true``              |
-| [`float`](class_float.md)                  | [`energy`](#class_light2d_property_energy)                               | ``1.0``               |
-| [`int`](class_int.md)                      | [`range_item_cull_mask`](#class_light2d_property_range_item_cull_mask)   | ``1``                 |
-| [`int`](class_int.md)                      | [`range_layer_max`](#class_light2d_property_range_layer_max)             | ``0``                 |
-| [`int`](class_int.md)                      | [`range_layer_min`](#class_light2d_property_range_layer_min)             | ``0``                 |
-| [`int`](class_int.md)                      | [`range_z_max`](#class_light2d_property_range_z_max)                     | ``1024``              |
-| [`int`](class_int.md)                      | [`range_z_min`](#class_light2d_property_range_z_min)                     | ``-1024``             |
-| [`Color`](class_color.md)                  | [`shadow_color`](#class_light2d_property_shadow_color)                   | ``Color(0, 0, 0, 0)`` |
-| [`bool`](class_bool.md)                    | [`shadow_enabled`](#class_light2d_property_shadow_enabled)               | ``false``             |
-| [ShadowFilter](#enum_light2d_shadowfilter) | [`shadow_filter`](#class_light2d_property_shadow_filter)                 | ``0``                 |
-| [`float`](class_float.md)                  | [`shadow_filter_smooth`](#class_light2d_property_shadow_filter_smooth)   | ``0.0``               |
-| [`int`](class_int.md)                      | [`shadow_item_cull_mask`](#class_light2d_property_shadow_item_cull_mask) | ``1``                 |
+| [BlendMode](#enum_light2d_blendmode)       | [`blend_mode`](class_light2d.md#class_light2d_property_blend_mode)                       | ``0``                 |
+| [`Color`](class_color.md)                  | [`color`](class_light2d.md#class_light2d_property_color)                                 | ``Color(1, 1, 1, 1)`` |
+| [`bool`](class_bool.md)                    | [`editor_only`](class_light2d.md#class_light2d_property_editor_only)                     | ``false``             |
+| [`bool`](class_bool.md)                    | [`enabled`](class_light2d.md#class_light2d_property_enabled)                             | ``true``              |
+| [`float`](class_float.md)                  | [`energy`](class_light2d.md#class_light2d_property_energy)                               | ``1.0``               |
+| [`int`](class_int.md)                      | [`range_item_cull_mask`](class_light2d.md#class_light2d_property_range_item_cull_mask)   | ``1``                 |
+| [`int`](class_int.md)                      | [`range_layer_max`](class_light2d.md#class_light2d_property_range_layer_max)             | ``0``                 |
+| [`int`](class_int.md)                      | [`range_layer_min`](class_light2d.md#class_light2d_property_range_layer_min)             | ``0``                 |
+| [`int`](class_int.md)                      | [`range_z_max`](class_light2d.md#class_light2d_property_range_z_max)                     | ``1024``              |
+| [`int`](class_int.md)                      | [`range_z_min`](class_light2d.md#class_light2d_property_range_z_min)                     | ``-1024``             |
+| [`Color`](class_color.md)                  | [`shadow_color`](class_light2d.md#class_light2d_property_shadow_color)                   | ``Color(0, 0, 0, 0)`` |
+| [`bool`](class_bool.md)                    | [`shadow_enabled`](class_light2d.md#class_light2d_property_shadow_enabled)               | ``false``             |
+| [ShadowFilter](#enum_light2d_shadowfilter) | [`shadow_filter`](class_light2d.md#class_light2d_property_shadow_filter)                 | ``0``                 |
+| [`float`](class_float.md)                  | [`shadow_filter_smooth`](class_light2d.md#class_light2d_property_shadow_filter_smooth)   | ``0.0``               |
+| [`int`](class_int.md)                      | [`shadow_item_cull_mask`](class_light2d.md#class_light2d_property_shadow_item_cull_mask) | ``1``                 |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_height`](#class_light2d_method_get_height) ( ) const[^const]                     |
-| `void`                    | [`set_height`](#class_light2d_method_set_height) ( height: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_height`](class_light2d.md#class_light2d_method_get_height) ( ) const[^const]                     |
+| `void`                    | [`set_height`](class_light2d.md#class_light2d_method_set_height) ( height: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -58,19 +58,19 @@ enum **ShadowFilter**: <div id="enum_light2d_shadowfilter"></div>
 
 [ShadowFilter](#enum_light2d_shadowfilter) **SHADOW_FILTER_NONE** = ``0``
 
-No filter applies to the shadow map. This provides hard shadow edges and is the fastest to render. See [`shadow_filter`](#class_light2d_property_shadow_filter).
+No filter applies to the shadow map. This provides hard shadow edges and is the fastest to render. See [`shadow_filter`](class_light2d.md#class_light2d_property_shadow_filter).
 
 <div id="_class_light2d_constant_shadow_filter_pcf5"></div>
 
 [ShadowFilter](#enum_light2d_shadowfilter) **SHADOW_FILTER_PCF5** = ``1``
 
-Percentage closer filtering (5 samples) applies to the shadow map. This is slower compared to hard shadow rendering. See [`shadow_filter`](#class_light2d_property_shadow_filter).
+Percentage closer filtering (5 samples) applies to the shadow map. This is slower compared to hard shadow rendering. See [`shadow_filter`](class_light2d.md#class_light2d_property_shadow_filter).
 
 <div id="_class_light2d_constant_shadow_filter_pcf13"></div>
 
 [ShadowFilter](#enum_light2d_shadowfilter) **SHADOW_FILTER_PCF13** = ``2``
 
-Percentage closer filtering (13 samples) applies to the shadow map. This is the slowest shadow filtering mode, and should be used sparingly. See [`shadow_filter`](#class_light2d_property_shadow_filter).
+Percentage closer filtering (13 samples) applies to the shadow map. This is the slowest shadow filtering mode, and should be used sparingly. See [`shadow_filter`](class_light2d.md#class_light2d_property_shadow_filter).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -176,9 +176,9 @@ The Light2D's energy value. The larger the value, the stronger the light.
 - `void` **set_item_cull_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_item_cull_mask** ( )
 
-The layer mask. Only objects with a matching [`CanvasItem.light_mask`](#class_canvasitem_property_light_mask) will be affected by the Light2D. See also [`shadow_item_cull_mask`](#class_light2d_property_shadow_item_cull_mask), which affects which objects can cast shadows.
+The layer mask. Only objects with a matching [`CanvasItem.light_mask`](class_canvasitem.md#class_canvasitem_property_light_mask) will be affected by the Light2D. See also [`shadow_item_cull_mask`](class_light2d.md#class_light2d_property_shadow_item_cull_mask), which affects which objects can cast shadows.
 
- **Note:** [`range_item_cull_mask`](#class_light2d_property_range_item_cull_mask) is ignored by [`DirectionalLight2D`](class_directionallight2d.md), which will always light a 2D node regardless of the 2D node's [`CanvasItem.light_mask`](#class_canvasitem_property_light_mask).
+ **Note:** [`range_item_cull_mask`](class_light2d.md#class_light2d_property_range_item_cull_mask) is ignored by [`DirectionalLight2D`](class_directionallight2d.md), which will always light a 2D node regardless of the 2D node's [`CanvasItem.light_mask`](class_canvasitem.md#class_canvasitem_property_light_mask).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -282,7 +282,7 @@ Shadow filter type. See [ShadowFilter](#enum_light2d_shadowfilter) for possible 
 - `void` **set_shadow_smooth** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_shadow_smooth** ( )
 
-Smoothing value for shadows. Higher values will result in softer shadows, at the cost of visible streaks that can appear in shadow rendering. [`shadow_filter_smooth`](#class_light2d_property_shadow_filter_smooth) only has an effect if [`shadow_filter`](#class_light2d_property_shadow_filter) is [`SHADOW_FILTER_PCF5`](#class_light2d_constant_shadow_filter_pcf5) or [`SHADOW_FILTER_PCF13`](#class_light2d_constant_shadow_filter_pcf13).
+Smoothing value for shadows. Higher values will result in softer shadows, at the cost of visible streaks that can appear in shadow rendering. [`shadow_filter_smooth`](class_light2d.md#class_light2d_property_shadow_filter_smooth) only has an effect if [`shadow_filter`](class_light2d.md#class_light2d_property_shadow_filter) is [`SHADOW_FILTER_PCF5`](class_light2d.md#class_light2d_constant_shadow_filter_pcf5) or [`SHADOW_FILTER_PCF13`](class_light2d.md#class_light2d_constant_shadow_filter_pcf13).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -295,7 +295,7 @@ Smoothing value for shadows. Higher values will result in softer shadows, at the
 - `void` **set_item_shadow_cull_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_item_shadow_cull_mask** ( )
 
-The shadow mask. Used with [`LightOccluder2D`](class_lightoccluder2d.md) to cast shadows. Only occluders with a matching [`CanvasItem.light_mask`](#class_canvasitem_property_light_mask) will cast shadows. See also [`range_item_cull_mask`](#class_light2d_property_range_item_cull_mask), which affects which objects can *receive* the light.
+The shadow mask. Used with [`LightOccluder2D`](class_lightoccluder2d.md) to cast shadows. Only occluders with a matching [`CanvasItem.light_mask`](class_canvasitem.md#class_canvasitem_property_light_mask) will cast shadows. See also [`range_item_cull_mask`](class_light2d.md#class_light2d_property_range_item_cull_mask), which affects which objects can *receive* the light.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -307,7 +307,7 @@ The shadow mask. Used with [`LightOccluder2D`](class_lightoccluder2d.md) to cast
 
 [`float`](class_float.md) **get_height** ( ) const[^const]<div id="class_light2d_method_get_height"></div>
 
-Returns the light's height, which is used in 2D normal mapping. See [`PointLight2D.height`](#class_pointlight2d_property_height) and [`DirectionalLight2D.height`](#class_directionallight2d_property_height).
+Returns the light's height, which is used in 2D normal mapping. See [`PointLight2D.height`](class_pointlight2d.md#class_pointlight2d_property_height) and [`DirectionalLight2D.height`](class_directionallight2d.md#class_directionallight2d_property_height).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -317,7 +317,7 @@ Returns the light's height, which is used in 2D normal mapping. See [`PointLight
 
 `void` **set_height** ( height: [`float`](class_float.md) )<div id="class_light2d_method_set_height"></div>
 
-Sets the light's height, which is used in 2D normal mapping. See [`PointLight2D.height`](#class_pointlight2d_property_height) and [`DirectionalLight2D.height`](#class_directionallight2d_property_height).
+Sets the light's height, which is used in 2D normal mapping. See [`PointLight2D.height`](class_pointlight2d.md#class_pointlight2d_property_height) and [`DirectionalLight2D.height`](class_directionallight2d.md#class_directionallight2d_property_height).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

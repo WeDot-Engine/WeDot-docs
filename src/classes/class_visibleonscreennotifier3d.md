@@ -15,23 +15,23 @@ A box-shaped region of 3D space that detects whether it is visible on screen.
 
 ## 描述
 
-**VisibleOnScreenNotifier3D** represents a box-shaped region of 3D space. When any part of this region becomes visible on screen or in a [`Camera3D`](class_camera3d.md)'s view, it will emit a [`screen_entered`](#class_visibleonscreennotifier3d_signal_screen_entered) signal, and likewise it will emit a [`screen_exited`](#class_visibleonscreennotifier3d_signal_screen_exited) signal when no part of it remains visible.
+**VisibleOnScreenNotifier3D** represents a box-shaped region of 3D space. When any part of this region becomes visible on screen or in a [`Camera3D`](class_camera3d.md)'s view, it will emit a [`screen_entered`](class_visibleonscreennotifier3d.md#class_visibleonscreennotifier3d_signal_screen_entered) signal, and likewise it will emit a [`screen_exited`](class_visibleonscreennotifier3d.md#class_visibleonscreennotifier3d_signal_screen_exited) signal when no part of it remains visible.
 
 If you want a node to be enabled automatically when this region is visible on screen, use [`VisibleOnScreenEnabler3D`](class_visibleonscreenenabler3d.md).
 
- **Note:** **VisibleOnScreenNotifier3D** uses an approximate heuristic that doesn't take walls and other occlusion into account, unless occlusion culling is used. It also won't function unless [`Node3D.visible`](#class_node3d_property_visible) is set to `true`.
+ **Note:** **VisibleOnScreenNotifier3D** uses an approximate heuristic that doesn't take walls and other occlusion into account, unless occlusion culling is used. It also won't function unless [`Node3D.visible`](class_node3d.md#class_node3d_property_visible) is set to `true`.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md) | [`aabb`](#class_visibleonscreennotifier3d_property_aabb) | ``AABB(-1, -1, -1, 2, 2, 2)`` |
+| [`AABB`](class_aabb.md) | [`aabb`](class_visibleonscreennotifier3d.md#class_visibleonscreennotifier3d_property_aabb) | ``AABB(-1, -1, -1, 2, 2, 2)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`is_on_screen`](#class_visibleonscreennotifier3d_method_is_on_screen) ( ) const[^const] |
+| [`bool`](class_bool.md) | [`is_on_screen`](class_visibleonscreennotifier3d.md#class_visibleonscreennotifier3d_method_is_on_screen) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -15,15 +15,15 @@
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | [`loop`](#class_gltfanimation_property_loop)                   | ``false`` |
-| [`String`](class_string.md) | [`original_name`](#class_gltfanimation_property_original_name) | ``""``    |
+| [`bool`](class_bool.md)     | [`loop`](class_gltfanimation.md#class_gltfanimation_property_loop)                   | ``false`` |
+| [`String`](class_string.md) | [`original_name`](class_gltfanimation.md#class_gltfanimation_property_original_name) | ``""``    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_additional_data`](#class_gltfanimation_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                        | [`set_additional_data`](#class_gltfanimation_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+| [`Variant`](class_variant.md) | [`get_additional_data`](class_gltfanimation.md#class_gltfanimation_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| `void`                        | [`set_additional_data`](class_gltfanimation.md#class_gltfanimation_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

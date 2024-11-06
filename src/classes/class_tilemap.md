@@ -19,72 +19,72 @@ Node for 2D tile-based maps. Tilemaps use a [`TileSet`](class_tileset.md) which 
 
 For performance reasons, all TileMap updates are batched at the end of a frame. Notably, this means that scene tiles from a [`TileSetScenesCollectionSource`](class_tilesetscenescollectionsource.md) may be initialized after their parent. This is only queued when inside the scene tree.
 
-To force an update earlier on, call [`update_internals`](#class_tilemap_method_update_internals).
+To force an update earlier on, call [`update_internals`](class_tilemap.md#class_tilemap_method_update_internals).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                        | [`collision_animatable`](#class_tilemap_property_collision_animatable)             | ``false`` |
-| [VisibilityMode](#enum_tilemap_visibilitymode) | [`collision_visibility_mode`](#class_tilemap_property_collision_visibility_mode)   | ``0``     |
-| [VisibilityMode](#enum_tilemap_visibilitymode) | [`navigation_visibility_mode`](#class_tilemap_property_navigation_visibility_mode) | ``0``     |
-| [`int`](class_int.md)                          | [`rendering_quadrant_size`](#class_tilemap_property_rendering_quadrant_size)       | ``16``    |
-| [`TileSet`](class_tileset.md)                  | [`tile_set`](#class_tilemap_property_tile_set)                                     |           |
+| [`bool`](class_bool.md)                        | [`collision_animatable`](class_tilemap.md#class_tilemap_property_collision_animatable)             | ``false`` |
+| [VisibilityMode](#enum_tilemap_visibilitymode) | [`collision_visibility_mode`](class_tilemap.md#class_tilemap_property_collision_visibility_mode)   | ``0``     |
+| [VisibilityMode](#enum_tilemap_visibilitymode) | [`navigation_visibility_mode`](class_tilemap.md#class_tilemap_property_navigation_visibility_mode) | ``0``     |
+| [`int`](class_int.md)                          | [`rendering_quadrant_size`](class_tilemap.md#class_tilemap_property_rendering_quadrant_size)       | ``16``    |
+| [`TileSet`](class_tileset.md)                  | [`tile_set`](class_tilemap.md#class_tilemap_property_tile_set)                                     |           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                  | [`_tile_data_runtime_update`](#class_tilemap_private_method__tile_data_runtime_update) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), tile_data: [`TileData`](class_tiledata.md) ) virtual[^virtual]                                                                             |
-| [`bool`](class_bool.md)                                 | [`_use_tile_data_runtime_update`](#class_tilemap_private_method__use_tile_data_runtime_update) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md) ) virtual[^virtual]                                                                                                                 |
-| `void`                                                  | [`add_layer`](#class_tilemap_method_add_layer) ( to_position: [`int`](class_int.md) )                                                                                                                                                                                                                      |
-| `void`                                                  | [`clear`](#class_tilemap_method_clear) ( )                                                                                                                                                                                                                                                                 |
-| `void`                                                  | [`clear_layer`](#class_tilemap_method_clear_layer) ( layer: [`int`](class_int.md) )                                                                                                                                                                                                                        |
-| `void`                                                  | [`erase_cell`](#class_tilemap_method_erase_cell) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md) )                                                                                                                                                                                 |
-| `void`                                                  | [`fix_invalid_tiles`](#class_tilemap_method_fix_invalid_tiles) ( )                                                                                                                                                                                                                                         |
-| `void`                                                  | [`force_update`](#class_tilemap_method_force_update) ( layer: [`int`](class_int.md) = -1 )                                                                                                                                                                                                                 |
-| [`int`](class_int.md)                                   | [`get_cell_alternative_tile`](#class_tilemap_method_get_cell_alternative_tile) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                       |
-| [`Vector2i`](class_vector2i.md)                         | [`get_cell_atlas_coords`](#class_tilemap_method_get_cell_atlas_coords) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                               |
-| [`int`](class_int.md)                                   | [`get_cell_source_id`](#class_tilemap_method_get_cell_source_id) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                                     |
-| [`TileData`](class_tiledata.md)                         | [`get_cell_tile_data`](#class_tilemap_method_get_cell_tile_data) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                                     |
-| [`Vector2i`](class_vector2i.md)                         | [`get_coords_for_body_rid`](#class_tilemap_method_get_coords_for_body_rid) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                                 |
-| [`int`](class_int.md)                                   | [`get_layer_for_body_rid`](#class_tilemap_method_get_layer_for_body_rid) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                                   |
-| [`Color`](class_color.md)                               | [`get_layer_modulate`](#class_tilemap_method_get_layer_modulate) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                            |
-| [`String`](class_string.md)                             | [`get_layer_name`](#class_tilemap_method_get_layer_name) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                    |
-| [`RID`](class_rid.md)                                   | [`get_layer_navigation_map`](#class_tilemap_method_get_layer_navigation_map) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                |
-| [`int`](class_int.md)                                   | [`get_layer_y_sort_origin`](#class_tilemap_method_get_layer_y_sort_origin) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                  |
-| [`int`](class_int.md)                                   | [`get_layer_z_index`](#class_tilemap_method_get_layer_z_index) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                              |
-| [`int`](class_int.md)                                   | [`get_layers_count`](#class_tilemap_method_get_layers_count) ( ) const[^const]                                                                                                                                                                                                                             |
-| [`RID`](class_rid.md)                                   | [`get_navigation_map`](#class_tilemap_method_get_navigation_map) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                            |
-| [`Vector2i`](class_vector2i.md)                         | [`get_neighbor_cell`](#class_tilemap_method_get_neighbor_cell) ( coords: [`Vector2i`](class_vector2i.md), neighbor: [CellNeighbor](#enum_tileset_cellneighbor) ) const[^const]                                                                                                                             |
-| [`TileMapPattern`](class_tilemappattern.md)             | [`get_pattern`](#class_tilemap_method_get_pattern) ( layer: [`int`](class_int.md), coords_array: [Array](class_array.md) [`Vector2i`](class_vector2i.md) )                                                                                                                                                 |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_surrounding_cells`](#class_tilemap_method_get_surrounding_cells) ( coords: [`Vector2i`](class_vector2i.md) )                                                                                                                                                                                         |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells`](#class_tilemap_method_get_used_cells) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                    |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells_by_id`](#class_tilemap_method_get_used_cells_by_id) ( layer: [`int`](class_int.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 ) const[^const]                                 |
-| [`Rect2i`](class_rect2i.md)                             | [`get_used_rect`](#class_tilemap_method_get_used_rect) ( ) const[^const]                                                                                                                                                                                                                                   |
-| [`bool`](class_bool.md)                                 | [`is_layer_enabled`](#class_tilemap_method_is_layer_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                |
-| [`bool`](class_bool.md)                                 | [`is_layer_navigation_enabled`](#class_tilemap_method_is_layer_navigation_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                          |
-| [`bool`](class_bool.md)                                 | [`is_layer_y_sort_enabled`](#class_tilemap_method_is_layer_y_sort_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                  |
-| [`Vector2i`](class_vector2i.md)                         | [`local_to_map`](#class_tilemap_method_local_to_map) ( local_position: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                                                       |
-| [`Vector2i`](class_vector2i.md)                         | [`map_pattern`](#class_tilemap_method_map_pattern) ( position_in_tilemap: [`Vector2i`](class_vector2i.md), coords_in_pattern: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                                                      |
-| [`Vector2`](class_vector2.md)                           | [`map_to_local`](#class_tilemap_method_map_to_local) ( map_position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                                                       |
-| `void`                                                  | [`move_layer`](#class_tilemap_method_move_layer) ( layer: [`int`](class_int.md), to_position: [`int`](class_int.md) )                                                                                                                                                                                      |
-| `void`                                                  | [`notify_runtime_tile_data_update`](#class_tilemap_method_notify_runtime_tile_data_update) ( layer: [`int`](class_int.md) = -1 )                                                                                                                                                                           |
-| `void`                                                  | [`remove_layer`](#class_tilemap_method_remove_layer) ( layer: [`int`](class_int.md) )                                                                                                                                                                                                                      |
-| `void`                                                  | [`set_cell`](#class_tilemap_method_set_cell) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = 0 )                               |
-| `void`                                                  | [`set_cells_terrain_connect`](#class_tilemap_method_set_cells_terrain_connect) ( layer: [`int`](class_int.md), cells: [Array](class_array.md) [`Vector2i`](class_vector2i.md), terrain_set: [`int`](class_int.md), terrain: [`int`](class_int.md), ignore_empty_terrains: [`bool`](class_bool.md) = true ) |
-| `void`                                                  | [`set_cells_terrain_path`](#class_tilemap_method_set_cells_terrain_path) ( layer: [`int`](class_int.md), path: [Array](class_array.md) [`Vector2i`](class_vector2i.md), terrain_set: [`int`](class_int.md), terrain: [`int`](class_int.md), ignore_empty_terrains: [`bool`](class_bool.md) = true )        |
-| `void`                                                  | [`set_layer_enabled`](#class_tilemap_method_set_layer_enabled) ( layer: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )                                                                                                                                                                          |
-| `void`                                                  | [`set_layer_modulate`](#class_tilemap_method_set_layer_modulate) ( layer: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                                                                                                                                                     |
-| `void`                                                  | [`set_layer_name`](#class_tilemap_method_set_layer_name) ( layer: [`int`](class_int.md), name: [`String`](class_string.md) )                                                                                                                                                                               |
-| `void`                                                  | [`set_layer_navigation_enabled`](#class_tilemap_method_set_layer_navigation_enabled) ( layer: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )                                                                                                                                                    |
-| `void`                                                  | [`set_layer_navigation_map`](#class_tilemap_method_set_layer_navigation_map) ( layer: [`int`](class_int.md), map: [`RID`](class_rid.md) )                                                                                                                                                                  |
-| `void`                                                  | [`set_layer_y_sort_enabled`](#class_tilemap_method_set_layer_y_sort_enabled) ( layer: [`int`](class_int.md), y_sort_enabled: [`bool`](class_bool.md) )                                                                                                                                                     |
-| `void`                                                  | [`set_layer_y_sort_origin`](#class_tilemap_method_set_layer_y_sort_origin) ( layer: [`int`](class_int.md), y_sort_origin: [`int`](class_int.md) )                                                                                                                                                          |
-| `void`                                                  | [`set_layer_z_index`](#class_tilemap_method_set_layer_z_index) ( layer: [`int`](class_int.md), z_index: [`int`](class_int.md) )                                                                                                                                                                            |
-| `void`                                                  | [`set_navigation_map`](#class_tilemap_method_set_navigation_map) ( layer: [`int`](class_int.md), map: [`RID`](class_rid.md) )                                                                                                                                                                              |
-| `void`                                                  | [`set_pattern`](#class_tilemap_method_set_pattern) ( layer: [`int`](class_int.md), position: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                                                                                       |
-| `void`                                                  | [`update_internals`](#class_tilemap_method_update_internals) ( )                                                                                                                                                                                                                                           |
+| `void`                                                  | [`_tile_data_runtime_update`](class_tilemap.md#class_tilemap_private_method__tile_data_runtime_update) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), tile_data: [`TileData`](class_tiledata.md) ) virtual[^virtual]                                                                             |
+| [`bool`](class_bool.md)                                 | [`_use_tile_data_runtime_update`](class_tilemap.md#class_tilemap_private_method__use_tile_data_runtime_update) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md) ) virtual[^virtual]                                                                                                                 |
+| `void`                                                  | [`add_layer`](class_tilemap.md#class_tilemap_method_add_layer) ( to_position: [`int`](class_int.md) )                                                                                                                                                                                                                      |
+| `void`                                                  | [`clear`](class_tilemap.md#class_tilemap_method_clear) ( )                                                                                                                                                                                                                                                                 |
+| `void`                                                  | [`clear_layer`](class_tilemap.md#class_tilemap_method_clear_layer) ( layer: [`int`](class_int.md) )                                                                                                                                                                                                                        |
+| `void`                                                  | [`erase_cell`](class_tilemap.md#class_tilemap_method_erase_cell) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md) )                                                                                                                                                                                 |
+| `void`                                                  | [`fix_invalid_tiles`](class_tilemap.md#class_tilemap_method_fix_invalid_tiles) ( )                                                                                                                                                                                                                                         |
+| `void`                                                  | [`force_update`](class_tilemap.md#class_tilemap_method_force_update) ( layer: [`int`](class_int.md) = -1 )                                                                                                                                                                                                                 |
+| [`int`](class_int.md)                                   | [`get_cell_alternative_tile`](class_tilemap.md#class_tilemap_method_get_cell_alternative_tile) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                       |
+| [`Vector2i`](class_vector2i.md)                         | [`get_cell_atlas_coords`](class_tilemap.md#class_tilemap_method_get_cell_atlas_coords) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                               |
+| [`int`](class_int.md)                                   | [`get_cell_source_id`](class_tilemap.md#class_tilemap_method_get_cell_source_id) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                                     |
+| [`TileData`](class_tiledata.md)                         | [`get_cell_tile_data`](class_tilemap.md#class_tilemap_method_get_cell_tile_data) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                                     |
+| [`Vector2i`](class_vector2i.md)                         | [`get_coords_for_body_rid`](class_tilemap.md#class_tilemap_method_get_coords_for_body_rid) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                                 |
+| [`int`](class_int.md)                                   | [`get_layer_for_body_rid`](class_tilemap.md#class_tilemap_method_get_layer_for_body_rid) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                                   |
+| [`Color`](class_color.md)                               | [`get_layer_modulate`](class_tilemap.md#class_tilemap_method_get_layer_modulate) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                            |
+| [`String`](class_string.md)                             | [`get_layer_name`](class_tilemap.md#class_tilemap_method_get_layer_name) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                    |
+| [`RID`](class_rid.md)                                   | [`get_layer_navigation_map`](class_tilemap.md#class_tilemap_method_get_layer_navigation_map) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                |
+| [`int`](class_int.md)                                   | [`get_layer_y_sort_origin`](class_tilemap.md#class_tilemap_method_get_layer_y_sort_origin) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                  |
+| [`int`](class_int.md)                                   | [`get_layer_z_index`](class_tilemap.md#class_tilemap_method_get_layer_z_index) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                              |
+| [`int`](class_int.md)                                   | [`get_layers_count`](class_tilemap.md#class_tilemap_method_get_layers_count) ( ) const[^const]                                                                                                                                                                                                                             |
+| [`RID`](class_rid.md)                                   | [`get_navigation_map`](class_tilemap.md#class_tilemap_method_get_navigation_map) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                            |
+| [`Vector2i`](class_vector2i.md)                         | [`get_neighbor_cell`](class_tilemap.md#class_tilemap_method_get_neighbor_cell) ( coords: [`Vector2i`](class_vector2i.md), neighbor: [CellNeighbor](#enum_tileset_cellneighbor) ) const[^const]                                                                                                                             |
+| [`TileMapPattern`](class_tilemappattern.md)             | [`get_pattern`](class_tilemap.md#class_tilemap_method_get_pattern) ( layer: [`int`](class_int.md), coords_array: [Array](class_array.md) [`Vector2i`](class_vector2i.md) )                                                                                                                                                 |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_surrounding_cells`](class_tilemap.md#class_tilemap_method_get_surrounding_cells) ( coords: [`Vector2i`](class_vector2i.md) )                                                                                                                                                                                         |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells`](class_tilemap.md#class_tilemap_method_get_used_cells) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                    |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells_by_id`](class_tilemap.md#class_tilemap_method_get_used_cells_by_id) ( layer: [`int`](class_int.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 ) const[^const]                                 |
+| [`Rect2i`](class_rect2i.md)                             | [`get_used_rect`](class_tilemap.md#class_tilemap_method_get_used_rect) ( ) const[^const]                                                                                                                                                                                                                                   |
+| [`bool`](class_bool.md)                                 | [`is_layer_enabled`](class_tilemap.md#class_tilemap_method_is_layer_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                |
+| [`bool`](class_bool.md)                                 | [`is_layer_navigation_enabled`](class_tilemap.md#class_tilemap_method_is_layer_navigation_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                          |
+| [`bool`](class_bool.md)                                 | [`is_layer_y_sort_enabled`](class_tilemap.md#class_tilemap_method_is_layer_y_sort_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                  |
+| [`Vector2i`](class_vector2i.md)                         | [`local_to_map`](class_tilemap.md#class_tilemap_method_local_to_map) ( local_position: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                                                       |
+| [`Vector2i`](class_vector2i.md)                         | [`map_pattern`](class_tilemap.md#class_tilemap_method_map_pattern) ( position_in_tilemap: [`Vector2i`](class_vector2i.md), coords_in_pattern: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                                                      |
+| [`Vector2`](class_vector2.md)                           | [`map_to_local`](class_tilemap.md#class_tilemap_method_map_to_local) ( map_position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                                                       |
+| `void`                                                  | [`move_layer`](class_tilemap.md#class_tilemap_method_move_layer) ( layer: [`int`](class_int.md), to_position: [`int`](class_int.md) )                                                                                                                                                                                      |
+| `void`                                                  | [`notify_runtime_tile_data_update`](class_tilemap.md#class_tilemap_method_notify_runtime_tile_data_update) ( layer: [`int`](class_int.md) = -1 )                                                                                                                                                                           |
+| `void`                                                  | [`remove_layer`](class_tilemap.md#class_tilemap_method_remove_layer) ( layer: [`int`](class_int.md) )                                                                                                                                                                                                                      |
+| `void`                                                  | [`set_cell`](class_tilemap.md#class_tilemap_method_set_cell) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = 0 )                               |
+| `void`                                                  | [`set_cells_terrain_connect`](class_tilemap.md#class_tilemap_method_set_cells_terrain_connect) ( layer: [`int`](class_int.md), cells: [Array](class_array.md) [`Vector2i`](class_vector2i.md), terrain_set: [`int`](class_int.md), terrain: [`int`](class_int.md), ignore_empty_terrains: [`bool`](class_bool.md) = true ) |
+| `void`                                                  | [`set_cells_terrain_path`](class_tilemap.md#class_tilemap_method_set_cells_terrain_path) ( layer: [`int`](class_int.md), path: [Array](class_array.md) [`Vector2i`](class_vector2i.md), terrain_set: [`int`](class_int.md), terrain: [`int`](class_int.md), ignore_empty_terrains: [`bool`](class_bool.md) = true )        |
+| `void`                                                  | [`set_layer_enabled`](class_tilemap.md#class_tilemap_method_set_layer_enabled) ( layer: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )                                                                                                                                                                          |
+| `void`                                                  | [`set_layer_modulate`](class_tilemap.md#class_tilemap_method_set_layer_modulate) ( layer: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                                                                                                                                                     |
+| `void`                                                  | [`set_layer_name`](class_tilemap.md#class_tilemap_method_set_layer_name) ( layer: [`int`](class_int.md), name: [`String`](class_string.md) )                                                                                                                                                                               |
+| `void`                                                  | [`set_layer_navigation_enabled`](class_tilemap.md#class_tilemap_method_set_layer_navigation_enabled) ( layer: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )                                                                                                                                                    |
+| `void`                                                  | [`set_layer_navigation_map`](class_tilemap.md#class_tilemap_method_set_layer_navigation_map) ( layer: [`int`](class_int.md), map: [`RID`](class_rid.md) )                                                                                                                                                                  |
+| `void`                                                  | [`set_layer_y_sort_enabled`](class_tilemap.md#class_tilemap_method_set_layer_y_sort_enabled) ( layer: [`int`](class_int.md), y_sort_enabled: [`bool`](class_bool.md) )                                                                                                                                                     |
+| `void`                                                  | [`set_layer_y_sort_origin`](class_tilemap.md#class_tilemap_method_set_layer_y_sort_origin) ( layer: [`int`](class_int.md), y_sort_origin: [`int`](class_int.md) )                                                                                                                                                          |
+| `void`                                                  | [`set_layer_z_index`](class_tilemap.md#class_tilemap_method_set_layer_z_index) ( layer: [`int`](class_int.md), z_index: [`int`](class_int.md) )                                                                                                                                                                            |
+| `void`                                                  | [`set_navigation_map`](class_tilemap.md#class_tilemap_method_set_navigation_map) ( layer: [`int`](class_int.md), map: [`RID`](class_rid.md) )                                                                                                                                                                              |
+| `void`                                                  | [`set_pattern`](class_tilemap.md#class_tilemap_method_set_pattern) ( layer: [`int`](class_int.md), position: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                                                                                       |
+| `void`                                                  | [`update_internals`](class_tilemap.md#class_tilemap_method_update_internals) ( )                                                                                                                                                                                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -141,7 +141,7 @@ Always show.
 
 If enabled, the TileMap will see its collisions synced to the physics tick and change its collision type from static to kinematic. This is required to create TileMap-based moving platform.
 
- **Note:** Enabling [`collision_animatable`](#class_tilemap_property_collision_animatable) may have a small performance impact, only do it if the TileMap is moving and has colliding tiles.
+ **Note:** Enabling [`collision_animatable`](class_tilemap.md#class_tilemap_property_collision_animatable) may have a small performance impact, only do it if the TileMap is moving and has colliding tiles.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -154,7 +154,7 @@ If enabled, the TileMap will see its collisions synced to the physics tick and c
 - `void` **set_collision_visibility_mode** ( value: [VisibilityMode](#enum_tilemap_visibilitymode) )
 - [VisibilityMode](#enum_tilemap_visibilitymode) **get_collision_visibility_mode** ( )
 
-Show or hide the TileMap's collision shapes. If set to [`VISIBILITY_MODE_DEFAULT`](#class_tilemap_constant_visibility_mode_default), this depends on the show collision debug settings.
+Show or hide the TileMap's collision shapes. If set to [`VISIBILITY_MODE_DEFAULT`](class_tilemap.md#class_tilemap_constant_visibility_mode_default), this depends on the show collision debug settings.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -167,7 +167,7 @@ Show or hide the TileMap's collision shapes. If set to [`VISIBILITY_MODE_DEFAULT
 - `void` **set_navigation_visibility_mode** ( value: [VisibilityMode](#enum_tilemap_visibilitymode) )
 - [VisibilityMode](#enum_tilemap_visibilitymode) **get_navigation_visibility_mode** ( )
 
-Show or hide the TileMap's navigation meshes. If set to [`VISIBILITY_MODE_DEFAULT`](#class_tilemap_constant_visibility_mode_default), this depends on the show navigation debug settings.
+Show or hide the TileMap's navigation meshes. If set to [`VISIBILITY_MODE_DEFAULT`](class_tilemap.md#class_tilemap_constant_visibility_mode_default), this depends on the show navigation debug settings.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -180,7 +180,7 @@ Show or hide the TileMap's navigation meshes. If set to [`VISIBILITY_MODE_DEFAUL
 - `void` **set_rendering_quadrant_size** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_rendering_quadrant_size** ( )
 
-The TileMap's quadrant size. A quadrant is a group of tiles to be drawn together on a single canvas item, for optimization purposes. [`rendering_quadrant_size`](#class_tilemap_property_rendering_quadrant_size) defines the length of a square's side, in the map's coordinate system, that forms the quadrant. Thus, the default quadrant size groups together `16 * 16 = 256` tiles.
+The TileMap's quadrant size. A quadrant is a group of tiles to be drawn together on a single canvas item, for optimization purposes. [`rendering_quadrant_size`](class_tilemap.md#class_tilemap_property_rendering_quadrant_size) defines the length of a square's side, in the map's coordinate system, that forms the quadrant. Thus, the default quadrant size groups together `16 * 16 = 256` tiles.
 
 The quadrant size does not apply on Y-sorted layers, as tiles are grouped by Y position instead in that case.
 
@@ -211,11 +211,11 @@ The [`TileSet`](class_tileset.md) used by this **TileMap**. The textures, collis
 
 Called with a TileData object about to be used internally by the TileMap, allowing its modification at runtime.
 
-This method is only called if [`_use_tile_data_runtime_update`](#class_tilemap_private_method__use_tile_data_runtime_update) is implemented and returns `true` for the given tile `coords` and `layer`.
+This method is only called if [`_use_tile_data_runtime_update`](class_tilemap.md#class_tilemap_private_method__use_tile_data_runtime_update) is implemented and returns `true` for the given tile `coords` and `layer`.
 
  **Warning:** The `tile_data` object's sub-resources are the same as the one in the TileSet. Modifying them might impact the whole TileSet. Instead, make sure to duplicate those resources.
 
- **Note:** If the properties of `tile_data` object should change over time, use [`notify_runtime_tile_data_update`](#class_tilemap_method_notify_runtime_tile_data_update) to notify the TileMap it needs an update.
+ **Note:** If the properties of `tile_data` object should change over time, use [`notify_runtime_tile_data_update`](class_tilemap.md#class_tilemap_method_notify_runtime_tile_data_update) to notify the TileMap it needs an update.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -229,7 +229,7 @@ Should return `true` if the tile at coordinates `coords` on layer `layer` requir
 
  **Warning:** Make sure this function only return `true` when needed. Any tile processed at runtime without a need for it will imply a significant performance penalty.
 
- **Note:** If the result of this function should changed, use [`notify_runtime_tile_data_update`](#class_tilemap_method_notify_runtime_tile_data_update) to notify the TileMap it needs an update.
+ **Note:** If the result of this function should changed, use [`notify_runtime_tile_data_update`](class_tilemap.md#class_tilemap_method_notify_runtime_tile_data_update) to notify the TileMap it needs an update.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -293,7 +293,7 @@ Clears cells that do not exist in the tileset.
 
 `void` **force_update** ( layer: [`int`](class_int.md) = -1 )<div id="class_tilemap_method_force_update"></div>
 
-**已弃用：** Use [`notify_runtime_tile_data_update`](#class_tilemap_method_notify_runtime_tile_data_update) and/or [`update_internals`](#class_tilemap_method_update_internals) instead.
+**已弃用：** Use [`notify_runtime_tile_data_update`](class_tilemap.md#class_tilemap_method_notify_runtime_tile_data_update) and/or [`update_internals`](class_tilemap.md#class_tilemap_method_update_internals) instead.
 
 Forces the TileMap and the layer `layer` to update.
 
@@ -307,7 +307,7 @@ Forces the TileMap and the layer `layer` to update.
 
 Returns the tile alternative ID of the cell on layer `layer` at `coords`.
 
-If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile proxies, returning the raw alternative identifier. See [`TileSet.map_tile_proxy`](#class_tileset_method_map_tile_proxy).
+If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile proxies, returning the raw alternative identifier. See [`TileSet.map_tile_proxy`](class_tileset.md#class_tileset_method_map_tile_proxy).
 
 If `layer` is negative, the layers are accessed from the last one.
 
@@ -321,7 +321,7 @@ If `layer` is negative, the layers are accessed from the last one.
 
 Returns the tile atlas coordinates ID of the cell on layer `layer` at coordinates `coords`. Returns `Vector2i(-1, -1)` if the cell does not exist.
 
-If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile proxies, returning the raw atlas coordinate identifier. See [`TileSet.map_tile_proxy`](#class_tileset_method_map_tile_proxy).
+If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile proxies, returning the raw atlas coordinate identifier. See [`TileSet.map_tile_proxy`](class_tileset.md#class_tileset_method_map_tile_proxy).
 
 If `layer` is negative, the layers are accessed from the last one.
 
@@ -335,7 +335,7 @@ If `layer` is negative, the layers are accessed from the last one.
 
 Returns the tile source ID of the cell on layer `layer` at coordinates `coords`. Returns `-1` if the cell does not exist.
 
-If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile proxies, returning the raw source identifier. See [`TileSet.map_tile_proxy`](#class_tileset_method_map_tile_proxy).
+If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile proxies, returning the raw source identifier. See [`TileSet.map_tile_proxy`](class_tileset.md#class_tileset_method_map_tile_proxy).
 
 If `layer` is negative, the layers are accessed from the last one.
 
@@ -362,7 +362,7 @@ If `layer` is negative, the layers are accessed from the last one.
             return 0
 ```
 
-If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile proxies. See [`TileSet.map_tile_proxy`](#class_tileset_method_map_tile_proxy).
+If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile proxies. See [`TileSet.map_tile_proxy`](class_tileset.md#class_tileset_method_map_tile_proxy).
 
 
 
@@ -374,7 +374,7 @@ If `use_proxies` is `false`, ignores the [`TileSet`](class_tileset.md)'s tile pr
 
 [`Vector2i`](class_vector2i.md) **get_coords_for_body_rid** ( body: [`RID`](class_rid.md) )<div id="class_tilemap_method_get_coords_for_body_rid"></div>
 
-Returns the coordinates of the tile for given physics body RID. Such RID can be retrieved from [`KinematicCollision2D.get_collider_rid`](#class_kinematiccollision2d_method_get_collider_rid), when colliding with a tile.
+Returns the coordinates of the tile for given physics body RID. Such RID can be retrieved from [`KinematicCollision2D.get_collider_rid`](class_kinematiccollision2d.md#class_kinematiccollision2d_method_get_collider_rid), when colliding with a tile.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -384,7 +384,7 @@ Returns the coordinates of the tile for given physics body RID. Such RID can be 
 
 [`int`](class_int.md) **get_layer_for_body_rid** ( body: [`RID`](class_rid.md) )<div id="class_tilemap_method_get_layer_for_body_rid"></div>
 
-Returns the tilemap layer of the tile for given physics body RID. Such RID can be retrieved from [`KinematicCollision2D.get_collider_rid`](#class_kinematiccollision2d_method_get_collider_rid), when colliding with a tile.
+Returns the tilemap layer of the tile for given physics body RID. Such RID can be retrieved from [`KinematicCollision2D.get_collider_rid`](class_kinematiccollision2d.md#class_kinematiccollision2d_method_get_collider_rid), when colliding with a tile.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -422,7 +422,7 @@ Returns the [`RID`](class_rid.md) of the [`NavigationServer2D`](class_navigation
 
 By default the TileMap uses the default [`World2D`](class_world2d.md) navigation map for the first TileMap layer. For each additional TileMap layer a new navigation map is created for the additional layer.
 
-In order to make [`NavigationAgent2D`](class_navigationagent2d.md) switch between TileMap layer navigation maps use [`NavigationAgent2D.set_navigation_map`](#class_navigationagent2d_method_set_navigation_map) with the navigation map received from [`get_layer_navigation_map`](#class_tilemap_method_get_layer_navigation_map).
+In order to make [`NavigationAgent2D`](class_navigationagent2d.md) switch between TileMap layer navigation maps use [`NavigationAgent2D.set_navigation_map`](class_navigationagent2d.md#class_navigationagent2d_method_set_navigation_map) with the navigation map received from [`get_layer_navigation_map`](class_tilemap.md#class_tilemap_method_get_layer_navigation_map).
 
 If `layer` is negative, the layers are accessed from the last one.
 
@@ -468,7 +468,7 @@ Returns the number of layers in the TileMap.
 
 [`RID`](class_rid.md) **get_navigation_map** ( layer: [`int`](class_int.md) ) const[^const]<div id="class_tilemap_method_get_navigation_map"></div>
 
-**已弃用：** Use [`get_layer_navigation_map`](#class_tilemap_method_get_layer_navigation_map) instead.
+**已弃用：** Use [`get_layer_navigation_map`](class_tilemap.md#class_tilemap_method_get_layer_navigation_map) instead.
 
 Returns the [`RID`](class_rid.md) of the [`NavigationServer2D`](class_navigationserver2d.md) navigation map assigned to the specified TileMap layer `layer`.
 
@@ -526,7 +526,7 @@ If `layer` is negative, the layers are accessed from the last one.
 
 Returns a [`Vector2i`](class_vector2i.md) array with the positions of all cells containing a tile in the given layer. Tiles may be filtered according to their source (`source_id`), their atlas coordinates (`atlas_coords`) or alternative id (`alternative_tile`).
 
-If a parameter has its value set to the default one, this parameter is not used to filter a cell. Thus, if all parameters have their respective default value, this method returns the same result as [`get_used_cells`](#class_tilemap_method_get_used_cells).
+If a parameter has its value set to the default one, this parameter is not used to filter a cell. Thus, if all parameters have their respective default value, this method returns the same result as [`get_used_cells`](class_tilemap.md#class_tilemap_method_get_used_cells).
 
 A cell is considered empty if its source identifier equals -1, its atlas coordinates identifiers is `Vector2(-1, -1)` and its alternative identifier is -1.
 
@@ -584,7 +584,7 @@ If `layer` is negative, the layers are accessed from the last one.
 
 [`Vector2i`](class_vector2i.md) **local_to_map** ( local_position: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_tilemap_method_local_to_map"></div>
 
-Returns the map coordinates of the cell containing the given `local_position`. If `local_position` is in global coordinates, consider using [`Node2D.to_local`](#class_node2d_method_to_local) before passing it to this method. See also [`map_to_local`](#class_tilemap_method_map_to_local).
+Returns the map coordinates of the cell containing the given `local_position`. If `local_position` is in global coordinates, consider using [`Node2D.to_local`](class_node2d.md#class_node2d_method_to_local) before passing it to this method. See also [`map_to_local`](class_tilemap.md#class_tilemap_method_map_to_local).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -594,7 +594,7 @@ Returns the map coordinates of the cell containing the given `local_position`. I
 
 [`Vector2i`](class_vector2i.md) **map_pattern** ( position_in_tilemap: [`Vector2i`](class_vector2i.md), coords_in_pattern: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )<div id="class_tilemap_method_map_pattern"></div>
 
-Returns for the given coordinate `coords_in_pattern` in a [`TileMapPattern`](class_tilemappattern.md) the corresponding cell coordinates if the pattern was pasted at the `position_in_tilemap` coordinates (see [`set_pattern`](#class_tilemap_method_set_pattern)). This mapping is required as in half-offset tile shapes, the mapping might not work by calculating `position_in_tile_map + coords_in_pattern`.
+Returns for the given coordinate `coords_in_pattern` in a [`TileMapPattern`](class_tilemappattern.md) the corresponding cell coordinates if the pattern was pasted at the `position_in_tilemap` coordinates (see [`set_pattern`](class_tilemap.md#class_tilemap_method_set_pattern)). This mapping is required as in half-offset tile shapes, the mapping might not work by calculating `position_in_tile_map + coords_in_pattern`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -604,9 +604,9 @@ Returns for the given coordinate `coords_in_pattern` in a [`TileMapPattern`](cla
 
 [`Vector2`](class_vector2.md) **map_to_local** ( map_position: [`Vector2i`](class_vector2i.md) ) const[^const]<div id="class_tilemap_method_map_to_local"></div>
 
-Returns the centered position of a cell in the TileMap's local coordinate space. To convert the returned value into global coordinates, use [`Node2D.to_global`](#class_node2d_method_to_global). See also [`local_to_map`](#class_tilemap_method_local_to_map).
+Returns the centered position of a cell in the TileMap's local coordinate space. To convert the returned value into global coordinates, use [`Node2D.to_global`](class_node2d.md#class_node2d_method_to_global). See also [`local_to_map`](class_tilemap.md#class_tilemap_method_local_to_map).
 
- **Note:** This may not correspond to the visual position of the tile, i.e. it ignores the [`TileData.texture_origin`](#class_tiledata_property_texture_origin) property of individual tiles.
+ **Note:** This may not correspond to the visual position of the tile, i.e. it ignores the [`TileData.texture_origin`](class_tiledata.md#class_tiledata_property_texture_origin) property of individual tiles.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -626,13 +626,13 @@ Moves the layer at index `layer` to the given position `to_position` in the arra
 
 `void` **notify_runtime_tile_data_update** ( layer: [`int`](class_int.md) = -1 )<div id="class_tilemap_method_notify_runtime_tile_data_update"></div>
 
-Notifies the TileMap node that calls to [`_use_tile_data_runtime_update`](#class_tilemap_private_method__use_tile_data_runtime_update) or [`_tile_data_runtime_update`](#class_tilemap_private_method__tile_data_runtime_update) will lead to different results. This will thus trigger a TileMap update.
+Notifies the TileMap node that calls to [`_use_tile_data_runtime_update`](class_tilemap.md#class_tilemap_private_method__use_tile_data_runtime_update) or [`_tile_data_runtime_update`](class_tilemap.md#class_tilemap_private_method__tile_data_runtime_update) will lead to different results. This will thus trigger a TileMap update.
 
 If `layer` is provided, only notifies changes for the given layer. Providing the `layer` argument (when applicable) is usually preferred for performance reasons.
 
  **Warning:** Updating the TileMap is computationally expensive and may impact performance. Try to limit the number of calls to this function to avoid unnecessary update.
 
- **Note:** This does not trigger a direct update of the TileMap, the update will be done at the end of the frame as usual (unless you call [`update_internals`](#class_tilemap_method_update_internals)).
+ **Note:** This does not trigger a direct update of the TileMap, the update will be done at the end of the frame as usual (unless you call [`update_internals`](class_tilemap.md#class_tilemap_method_update_internals)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -654,7 +654,7 @@ Removes the layer at index `layer`.
 
 Sets the tile identifiers for the cell on layer `layer` at coordinates `coords`. Each tile of the [`TileSet`](class_tileset.md) is identified using three parts:
 
-- The source identifier `source_id` identifies a [`TileSetSource`](class_tilesetsource.md) identifier. See [`TileSet.set_source_id`](#class_tileset_method_set_source_id),
+- The source identifier `source_id` identifies a [`TileSetSource`](class_tilesetsource.md) identifier. See [`TileSet.set_source_id`](class_tileset.md#class_tileset_method_set_source_id),
 
 - The atlas coordinates identifier `atlas_coords` identifies a tile coordinates in the atlas (if the source is a [`TileSetAtlasSource`](class_tilesetatlassource.md)). For [`TileSetScenesCollectionSource`](class_tilesetscenescollectionsource.md) it should always be `Vector2i(0, 0)`),
 
@@ -754,7 +754,7 @@ Assigns `map` as a [`NavigationServer2D`](class_navigationserver2d.md) navigatio
 
 By default the TileMap uses the default [`World2D`](class_world2d.md) navigation map for the first TileMap layer. For each additional TileMap layer a new navigation map is created for the additional layer.
 
-In order to make [`NavigationAgent2D`](class_navigationagent2d.md) switch between TileMap layer navigation maps use [`NavigationAgent2D.set_navigation_map`](#class_navigationagent2d_method_set_navigation_map) with the navigation map received from [`get_layer_navigation_map`](#class_tilemap_method_get_layer_navigation_map).
+In order to make [`NavigationAgent2D`](class_navigationagent2d.md) switch between TileMap layer navigation maps use [`NavigationAgent2D.set_navigation_map`](class_navigationagent2d.md#class_navigationagent2d_method_set_navigation_map) with the navigation map received from [`get_layer_navigation_map`](class_tilemap.md#class_tilemap_method_get_layer_navigation_map).
 
 If `layer` is negative, the layers are accessed from the last one.
 
@@ -806,7 +806,7 @@ If `layer` is negative, the layers are accessed from the last one.
 
 `void` **set_navigation_map** ( layer: [`int`](class_int.md), map: [`RID`](class_rid.md) )<div id="class_tilemap_method_set_navigation_map"></div>
 
-**已弃用：** Use [`set_layer_navigation_map`](#class_tilemap_method_set_layer_navigation_map) instead.
+**已弃用：** Use [`set_layer_navigation_map`](class_tilemap.md#class_tilemap_method_set_layer_navigation_map) instead.
 
 Assigns `map` as a [`NavigationServer2D`](class_navigationserver2d.md) navigation map for the specified TileMap layer `layer`.
 

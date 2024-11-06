@@ -23,18 +23,18 @@ PacketPeer is an abstraction and base class for packet-based protocols (such as 
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`encode_buffer_max_size`](#class_packetpeer_property_encode_buffer_max_size) | ``8388608`` |
+| [`int`](class_int.md) | [`encode_buffer_max_size`](class_packetpeer.md#class_packetpeer_property_encode_buffer_max_size) | ``8388608`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                         | [`get_available_packet_count`](#class_packetpeer_method_get_available_packet_count) ( ) const[^const]                               |
-| [`PackedByteArray`](class_packedbytearray.md) | [`get_packet`](#class_packetpeer_method_get_packet) ( )                                                                             |
-| [Error](#enum_@globalscope_error)             | [`get_packet_error`](#class_packetpeer_method_get_packet_error) ( ) const[^const]                                                   |
-| [`Variant`](class_variant.md)                 | [`get_var`](#class_packetpeer_method_get_var) ( allow_objects: [`bool`](class_bool.md) = false )                                    |
-| [Error](#enum_@globalscope_error)             | [`put_packet`](#class_packetpeer_method_put_packet) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                       |
-| [Error](#enum_@globalscope_error)             | [`put_var`](#class_packetpeer_method_put_var) ( var: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false ) |
+| [`int`](class_int.md)                         | [`get_available_packet_count`](class_packetpeer.md#class_packetpeer_method_get_available_packet_count) ( ) const[^const]                               |
+| [`PackedByteArray`](class_packedbytearray.md) | [`get_packet`](class_packetpeer.md#class_packetpeer_method_get_packet) ( )                                                                             |
+| [Error](#enum_@globalscope_error)             | [`get_packet_error`](class_packetpeer.md#class_packetpeer_method_get_packet_error) ( ) const[^const]                                                   |
+| [`Variant`](class_variant.md)                 | [`get_var`](class_packetpeer.md#class_packetpeer_method_get_var) ( allow_objects: [`bool`](class_bool.md) = false )                                    |
+| [Error](#enum_@globalscope_error)             | [`put_packet`](class_packetpeer.md#class_packetpeer_method_put_packet) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                       |
+| [Error](#enum_@globalscope_error)             | [`put_var`](class_packetpeer.md#class_packetpeer_method_put_var) ( var: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -51,7 +51,7 @@ PacketPeer is an abstraction and base class for packet-based protocols (such as 
 
 Maximum buffer size allowed when encoding [`Variant`](class_variant.md) s. Raise this value to support heavier memory allocations.
 
-The [`put_var`](#class_packetpeer_method_put_var) method allocates memory on the stack, and the buffer used will grow automatically to the closest power of two to match the size of the [`Variant`](class_variant.md). If the [`Variant`](class_variant.md) is bigger than [`encode_buffer_max_size`](#class_packetpeer_property_encode_buffer_max_size), the method will error out with [`@GlobalScope.ERR_OUT_OF_MEMORY`](#class_@globalscope_constant_err_out_of_memory).
+The [`put_var`](class_packetpeer.md#class_packetpeer_method_put_var) method allocates memory on the stack, and the buffer used will grow automatically to the closest power of two to match the size of the [`Variant`](class_variant.md). If the [`Variant`](class_variant.md) is bigger than [`encode_buffer_max_size`](class_packetpeer.md#class_packetpeer_property_encode_buffer_max_size), the method will error out with [`@GlobalScope.ERR_OUT_OF_MEMORY`](class_@globalscope.md#class_@globalscope_constant_err_out_of_memory).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -83,7 +83,7 @@ Gets a raw packet.
 
 [Error](#enum_@globalscope_error) **get_packet_error** ( ) const[^const]<div id="class_packetpeer_method_get_packet_error"></div>
 
-Returns the error state of the last packet received (via [`get_packet`](#class_packetpeer_method_get_packet) and [`get_var`](#class_packetpeer_method_get_var)).
+Returns the error state of the last packet received (via [`get_packet`](class_packetpeer.md#class_packetpeer_method_get_packet) and [`get_var`](class_packetpeer.md#class_packetpeer_method_get_var)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -95,7 +95,7 @@ Returns the error state of the last packet received (via [`get_packet`](#class_p
 
 Gets a Variant. If `allow_objects` is `true`, decoding objects is allowed.
 
-Internally, this uses the same decoding mechanism as the [`@GlobalScope.bytes_to_var`](#class_@globalscope_method_bytes_to_var) method.
+Internally, this uses the same decoding mechanism as the [`@GlobalScope.bytes_to_var`](class_@globalscope.md#class_@globalscope_method_bytes_to_var) method.
 
  **Warning:** Deserialized objects can contain code which gets executed. Do not use this option if the serialized object comes from untrusted sources to avoid potential security threats such as remote code execution.
 
@@ -119,7 +119,7 @@ Sends a raw packet.
 
 Sends a [`Variant`](class_variant.md) as a packet. If `full_objects` is `true`, encoding objects is allowed (and can potentially include code).
 
-Internally, this uses the same encoding mechanism as the [`@GlobalScope.var_to_bytes`](#class_@globalscope_method_var_to_bytes) method.
+Internally, this uses the same encoding mechanism as the [`@GlobalScope.var_to_bytes`](class_@globalscope.md#class_@globalscope_method_var_to_bytes) method.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

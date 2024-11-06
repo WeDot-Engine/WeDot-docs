@@ -13,7 +13,7 @@ Placeholder for the root [`Node`](class_node.md) of a [`PackedScene`](class_pack
 
 ## 描述
 
-Turning on the option **Load As Placeholder** for an instantiated scene in the editor causes it to be replaced by an **InstancePlaceholder** when running the game, this will not replace the node in the editor. This makes it possible to delay actually loading the scene until calling [`create_instance`](#class_instanceplaceholder_method_create_instance). This is useful to avoid loading large scenes all at once by loading parts of it selectively.
+Turning on the option **Load As Placeholder** for an instantiated scene in the editor causes it to be replaced by an **InstancePlaceholder** when running the game, this will not replace the node in the editor. This makes it possible to delay actually loading the scene until calling [`create_instance`](class_instanceplaceholder.md#class_instanceplaceholder_method_create_instance). This is useful to avoid loading large scenes all at once by loading parts of it selectively.
 
 The **InstancePlaceholder** does not have a transform. This causes any child nodes to be positioned relatively to the [`Viewport`](class_viewport.md) from point (0,0), rather than their parent as displayed in the editor. Replacing the placeholder with a scene with a transform will transform children relatively to their parent again.
 
@@ -21,9 +21,9 @@ The **InstancePlaceholder** does not have a transform. This causes any child nod
 
 |||
 |:-:|:--|
-| [`Node`](class_node.md)             | [`create_instance`](#class_instanceplaceholder_method_create_instance) ( replace: [`bool`](class_bool.md) = false, custom_scene: [`PackedScene`](class_packedscene.md) = null ) |
-| [`String`](class_string.md)         | [`get_instance_path`](#class_instanceplaceholder_method_get_instance_path) ( ) const[^const]                                                                                    |
-| [`Dictionary`](class_dictionary.md) | [`get_stored_values`](#class_instanceplaceholder_method_get_stored_values) ( with_order: [`bool`](class_bool.md) = false )                                                      |
+| [`Node`](class_node.md)             | [`create_instance`](class_instanceplaceholder.md#class_instanceplaceholder_method_create_instance) ( replace: [`bool`](class_bool.md) = false, custom_scene: [`PackedScene`](class_packedscene.md) = null ) |
+| [`String`](class_string.md)         | [`get_instance_path`](class_instanceplaceholder.md#class_instanceplaceholder_method_get_instance_path) ( ) const[^const]                                                                                    |
+| [`Dictionary`](class_dictionary.md) | [`get_stored_values`](class_instanceplaceholder.md#class_instanceplaceholder_method_get_stored_values) ( with_order: [`bool`](class_bool.md) = false )                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -37,7 +37,7 @@ The **InstancePlaceholder** does not have a transform. This causes any child nod
 
 Call this method to actually load in the node. The created node will be placed as a sibling *above* the **InstancePlaceholder** in the scene tree. The [`Node`](class_node.md)'s reference is also returned for convenience.
 
- **Note:** [`create_instance`](#class_instanceplaceholder_method_create_instance) is not thread-safe. Use [`Object.call_deferred`](#class_object_method_call_deferred) if calling from a thread.
+ **Note:** [`create_instance`](class_instanceplaceholder.md#class_instanceplaceholder_method_create_instance) is not thread-safe. Use [`Object.call_deferred`](class_object.md#class_object_method_call_deferred) if calling from a thread.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -47,7 +47,7 @@ Call this method to actually load in the node. The created node will be placed a
 
 [`String`](class_string.md) **get_instance_path** ( ) const[^const]<div id="class_instanceplaceholder_method_get_instance_path"></div>
 
-Gets the path to the [`PackedScene`](class_packedscene.md) resource file that is loaded by default when calling [`create_instance`](#class_instanceplaceholder_method_create_instance). Not thread-safe. Use [`Object.call_deferred`](#class_object_method_call_deferred) if calling from a thread.
+Gets the path to the [`PackedScene`](class_packedscene.md) resource file that is loaded by default when calling [`create_instance`](class_instanceplaceholder.md#class_instanceplaceholder_method_create_instance). Not thread-safe. Use [`Object.call_deferred`](class_object.md#class_object_method_call_deferred) if calling from a thread.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -57,7 +57,7 @@ Gets the path to the [`PackedScene`](class_packedscene.md) resource file that is
 
 [`Dictionary`](class_dictionary.md) **get_stored_values** ( with_order: [`bool`](class_bool.md) = false )<div id="class_instanceplaceholder_method_get_stored_values"></div>
 
-Returns the list of properties that will be applied to the node when [`create_instance`](#class_instanceplaceholder_method_create_instance) is called.
+Returns the list of properties that will be applied to the node when [`create_instance`](class_instanceplaceholder.md#class_instanceplaceholder_method_create_instance) is called.
 
 If `with_order` is `true`, a key named `.order` (note the leading period) is added to the dictionary. This `.order` key is an [`Array`](class_array.md) of [`String`](class_string.md) property names specifying the order in which properties will be applied (with index 0 being the first).
 

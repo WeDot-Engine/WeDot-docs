@@ -19,10 +19,10 @@ Class that has everything pertaining to a 2D world: A physics space, a canvas, a
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)                                             | [`canvas`](#class_world2d_property_canvas)                         |
-| [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) | [`direct_space_state`](#class_world2d_property_direct_space_state) |
-| [`RID`](class_rid.md)                                             | [`navigation_map`](#class_world2d_property_navigation_map)         |
-| [`RID`](class_rid.md)                                             | [`space`](#class_world2d_property_space)                           |
+| [`RID`](class_rid.md)                                             | [`canvas`](class_world2d.md#class_world2d_property_canvas)                         |
+| [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) | [`direct_space_state`](class_world2d.md#class_world2d_property_direct_space_state) |
+| [`RID`](class_rid.md)                                             | [`navigation_map`](class_world2d.md#class_world2d_property_navigation_map)         |
+| [`RID`](class_rid.md)                                             | [`space`](class_world2d.md#class_world2d_property_space)                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -48,7 +48,7 @@ The [`RID`](class_rid.md) of this world's canvas resource. Used by the [`Renderi
 
 - [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) **get_direct_space_state** ( )
 
-Direct access to the world's physics 2D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to [`Node._physics_process`](#class_node_private_method__physics_process) in the main thread.
+Direct access to the world's physics 2D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) in the main thread.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -15,25 +15,25 @@ A node used to create a parallax scrolling background.
 
 ## 描述
 
-A **Parallax2D** is used to create a parallax effect. It can move at a different speed relative to the camera movement using [`scroll_scale`](#class_parallax2d_property_scroll_scale). This creates an illusion of depth in a 2D game. If manual scrolling is desired, the [`Camera2D`](class_camera2d.md) position can be ignored with [`ignore_camera_scroll`](#class_parallax2d_property_ignore_camera_scroll).
+A **Parallax2D** is used to create a parallax effect. It can move at a different speed relative to the camera movement using [`scroll_scale`](class_parallax2d.md#class_parallax2d_property_scroll_scale). This creates an illusion of depth in a 2D game. If manual scrolling is desired, the [`Camera2D`](class_camera2d.md) position can be ignored with [`ignore_camera_scroll`](class_parallax2d.md#class_parallax2d_property_ignore_camera_scroll).
 
- **Note:** Any changes to this node's position made after it enters the scene tree will be overridden if [`ignore_camera_scroll`](#class_parallax2d_property_ignore_camera_scroll) is `false` or [`screen_offset`](#class_parallax2d_property_screen_offset) is modified.
+ **Note:** Any changes to this node's position made after it enters the scene tree will be overridden if [`ignore_camera_scroll`](class_parallax2d.md#class_parallax2d_property_ignore_camera_scroll) is `false` or [`screen_offset`](class_parallax2d.md#class_parallax2d_property_screen_offset) is modified.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md)                                   | [`autoscroll`](#class_parallax2d_property_autoscroll)                     | ``Vector2(0, 0)``                                                           |
-| [`bool`](class_bool.md)                                         | [`follow_viewport`](#class_parallax2d_property_follow_viewport)           | ``true``                                                                    |
-| [`bool`](class_bool.md)                                         | [`ignore_camera_scroll`](#class_parallax2d_property_ignore_camera_scroll) | ``false``                                                                   |
-| [`Vector2`](class_vector2.md)                                   | [`limit_begin`](#class_parallax2d_property_limit_begin)                   | ``Vector2(-1e+07, -1e+07)``                                                 |
-| [`Vector2`](class_vector2.md)                                   | [`limit_end`](#class_parallax2d_property_limit_end)                       | ``Vector2(1e+07, 1e+07)``                                                   |
-| [PhysicsInterpolationMode](#enum_node_physicsinterpolationmode) | physics_interpolation_mode                                                | ``2`` (overrides [`Node`](#class_node_property_physics_interpolation_mode)) |
-| [`Vector2`](class_vector2.md)                                   | [`repeat_size`](#class_parallax2d_property_repeat_size)                   | ``Vector2(0, 0)``                                                           |
-| [`int`](class_int.md)                                           | [`repeat_times`](#class_parallax2d_property_repeat_times)                 | ``1``                                                                       |
-| [`Vector2`](class_vector2.md)                                   | [`screen_offset`](#class_parallax2d_property_screen_offset)               | ``Vector2(0, 0)``                                                           |
-| [`Vector2`](class_vector2.md)                                   | [`scroll_offset`](#class_parallax2d_property_scroll_offset)               | ``Vector2(0, 0)``                                                           |
-| [`Vector2`](class_vector2.md)                                   | [`scroll_scale`](#class_parallax2d_property_scroll_scale)                 | ``Vector2(1, 1)``                                                           |
+| [`Vector2`](class_vector2.md)                                   | [`autoscroll`](class_parallax2d.md#class_parallax2d_property_autoscroll)                     | ``Vector2(0, 0)``                                                                        |
+| [`bool`](class_bool.md)                                         | [`follow_viewport`](class_parallax2d.md#class_parallax2d_property_follow_viewport)           | ``true``                                                                                 |
+| [`bool`](class_bool.md)                                         | [`ignore_camera_scroll`](class_parallax2d.md#class_parallax2d_property_ignore_camera_scroll) | ``false``                                                                                |
+| [`Vector2`](class_vector2.md)                                   | [`limit_begin`](class_parallax2d.md#class_parallax2d_property_limit_begin)                   | ``Vector2(-1e+07, -1e+07)``                                                              |
+| [`Vector2`](class_vector2.md)                                   | [`limit_end`](class_parallax2d.md#class_parallax2d_property_limit_end)                       | ``Vector2(1e+07, 1e+07)``                                                                |
+| [PhysicsInterpolationMode](#enum_node_physicsinterpolationmode) | physics_interpolation_mode                                                                   | ``2`` (overrides [`Node`](class_node.md#class_node_property_physics_interpolation_mode)) |
+| [`Vector2`](class_vector2.md)                                   | [`repeat_size`](class_parallax2d.md#class_parallax2d_property_repeat_size)                   | ``Vector2(0, 0)``                                                                        |
+| [`int`](class_int.md)                                           | [`repeat_times`](class_parallax2d.md#class_parallax2d_property_repeat_times)                 | ``1``                                                                                    |
+| [`Vector2`](class_vector2.md)                                   | [`screen_offset`](class_parallax2d.md#class_parallax2d_property_screen_offset)               | ``Vector2(0, 0)``                                                                        |
+| [`Vector2`](class_vector2.md)                                   | [`scroll_offset`](class_parallax2d.md#class_parallax2d_property_scroll_offset)               | ``Vector2(0, 0)``                                                                        |
+| [`Vector2`](class_vector2.md)                                   | [`scroll_scale`](class_parallax2d.md#class_parallax2d_property_scroll_scale)                 | ``Vector2(1, 1)``                                                                        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -61,7 +61,7 @@ Velocity at which the offset scrolls automatically, in pixels per second.
 - `void` **set_follow_viewport** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_follow_viewport** ( )
 
-If `true`, this **Parallax2D** is offset by the current camera's position. If the **Parallax2D** is in a [`CanvasLayer`](class_canvaslayer.md) separate from the current camera, it may be desired to match the value with [`CanvasLayer.follow_viewport_enabled`](#class_canvaslayer_property_follow_viewport_enabled).
+If `true`, this **Parallax2D** is offset by the current camera's position. If the **Parallax2D** is in a [`CanvasLayer`](class_canvaslayer.md) separate from the current camera, it may be desired to match the value with [`CanvasLayer.follow_viewport_enabled`](class_canvaslayer.md#class_canvaslayer_property_follow_viewport_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -87,7 +87,7 @@ If `true`, **Parallax2D**'s position is not affected by the position of the came
 - `void` **set_limit_begin** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_limit_begin** ( )
 
-Top-left limits for scrolling to begin. If the camera is outside of this limit, the **Parallax2D** stops scrolling. Must be lower than [`limit_end`](#class_parallax2d_property_limit_end) minus the viewport size to work.
+Top-left limits for scrolling to begin. If the camera is outside of this limit, the **Parallax2D** stops scrolling. Must be lower than [`limit_end`](class_parallax2d.md#class_parallax2d_property_limit_end) minus the viewport size to work.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -100,7 +100,7 @@ Top-left limits for scrolling to begin. If the camera is outside of this limit, 
 - `void` **set_limit_end** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_limit_end** ( )
 
-Bottom-right limits for scrolling to end. If the camera is outside of this limit, the **Parallax2D** will stop scrolling. Must be higher than [`limit_begin`](#class_parallax2d_property_limit_begin) and the viewport size combined to work.
+Bottom-right limits for scrolling to end. If the camera is outside of this limit, the **Parallax2D** will stop scrolling. Must be higher than [`limit_begin`](class_parallax2d.md#class_parallax2d_property_limit_begin) and the viewport size combined to work.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -126,7 +126,7 @@ Repeats the [`Texture2D`](class_texture2d.md) of each of this node's children an
 - `void` **set_repeat_times** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_repeat_times** ( )
 
-Overrides the amount of times the texture repeats. Each texture copy spreads evenly from the original by [`repeat_size`](#class_parallax2d_property_repeat_size). Useful for when zooming out with a camera.
+Overrides the amount of times the texture repeats. Each texture copy spreads evenly from the original by [`repeat_size`](class_parallax2d.md#class_parallax2d_property_repeat_size). Useful for when zooming out with a camera.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -139,7 +139,7 @@ Overrides the amount of times the texture repeats. Each texture copy spreads eve
 - `void` **set_screen_offset** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_screen_offset** ( )
 
-Offset used to scroll this **Parallax2D**. This value is updated automatically unless [`ignore_camera_scroll`](#class_parallax2d_property_ignore_camera_scroll) is `true`.
+Offset used to scroll this **Parallax2D**. This value is updated automatically unless [`ignore_camera_scroll`](class_parallax2d.md#class_parallax2d_property_ignore_camera_scroll) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,9 +152,9 @@ Offset used to scroll this **Parallax2D**. This value is updated automatically u
 - `void` **set_scroll_offset** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_scroll_offset** ( )
 
-The **Parallax2D**'s offset. Similar to [`screen_offset`](#class_parallax2d_property_screen_offset) and [`Node2D.position`](#class_node2d_property_position), but will not be overridden.
+The **Parallax2D**'s offset. Similar to [`screen_offset`](class_parallax2d.md#class_parallax2d_property_screen_offset) and [`Node2D.position`](class_node2d.md#class_node2d_property_position), but will not be overridden.
 
- **Note:** Values will loop if [`repeat_size`](#class_parallax2d_property_repeat_size) is set higher than `0`.
+ **Note:** Values will loop if [`repeat_size`](class_parallax2d.md#class_parallax2d_property_repeat_size) is set higher than `0`.
 
 <!-- rst-class:: classref-item-separator -->
 

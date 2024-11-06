@@ -21,7 +21,7 @@ A virtual class, use the descendants instead.
 
 |||
 |:-:|:--|
-| [Source](#enum_visualshadernodesample3d_source) | [`source`](#class_visualshadernodesample3d_property_source) | ``0`` |
+| [Source](#enum_visualshadernodesample3d_source) | [`source`](class_visualshadernodesample3d.md#class_visualshadernodesample3d_property_source) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

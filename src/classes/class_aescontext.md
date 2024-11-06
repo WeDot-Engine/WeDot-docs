@@ -99,10 +99,10 @@ This class holds the context information required for encryption and decryption 
 
 |||
 |:-:|:--|
-| `void`                                        | [`finish`](#class_aescontext_method_finish) ( )                                                                                                                                                              |
-| [`PackedByteArray`](class_packedbytearray.md) | [`get_iv_state`](#class_aescontext_method_get_iv_state) ( )                                                                                                                                                  |
-| [Error](#enum_@globalscope_error)             | [`start`](#class_aescontext_method_start) ( mode: [Mode](#enum_aescontext_mode), key: [`PackedByteArray`](class_packedbytearray.md), iv: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() ) |
-| [`PackedByteArray`](class_packedbytearray.md) | [`update`](#class_aescontext_method_update) ( src: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                           |
+| `void`                                        | [`finish`](class_aescontext.md#class_aescontext_method_finish) ( )                                                                                                                                                              |
+| [`PackedByteArray`](class_packedbytearray.md) | [`get_iv_state`](class_aescontext.md#class_aescontext_method_get_iv_state) ( )                                                                                                                                                  |
+| [Error](#enum_@globalscope_error)             | [`start`](class_aescontext.md#class_aescontext_method_start) ( mode: [Mode](#enum_aescontext_mode), key: [`PackedByteArray`](class_packedbytearray.md), iv: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() ) |
+| [`PackedByteArray`](class_packedbytearray.md) | [`update`](class_aescontext.md#class_aescontext_method_update) ( src: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -154,7 +154,7 @@ Maximum value for the mode enum.
 
 `void` **finish** ( )<div id="class_aescontext_method_finish"></div>
 
-Close this AES context so it can be started again. See [`start`](#class_aescontext_method_start).
+Close this AES context so it can be started again. See [`start`](class_aescontext.md#class_aescontext_method_start).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -164,9 +164,9 @@ Close this AES context so it can be started again. See [`start`](#class_aesconte
 
 [`PackedByteArray`](class_packedbytearray.md) **get_iv_state** ( )<div id="class_aescontext_method_get_iv_state"></div>
 
-Get the current IV state for this context (IV gets updated when calling [`update`](#class_aescontext_method_update)). You normally don't need this function.
+Get the current IV state for this context (IV gets updated when calling [`update`](class_aescontext.md#class_aescontext_method_update)). You normally don't need this function.
 
- **Note:** This function only makes sense when the context is started with [`MODE_CBC_ENCRYPT`](#class_aescontext_constant_mode_cbc_encrypt) or [`MODE_CBC_DECRYPT`](#class_aescontext_constant_mode_cbc_decrypt).
+ **Note:** This function only makes sense when the context is started with [`MODE_CBC_ENCRYPT`](class_aescontext.md#class_aescontext_constant_mode_cbc_encrypt) or [`MODE_CBC_DECRYPT`](class_aescontext.md#class_aescontext_constant_mode_cbc_decrypt).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -176,7 +176,7 @@ Get the current IV state for this context (IV gets updated when calling [`update
 
 [Error](#enum_@globalscope_error) **start** ( mode: [Mode](#enum_aescontext_mode), key: [`PackedByteArray`](class_packedbytearray.md), iv: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() )<div id="class_aescontext_method_start"></div>
 
-Start the AES context in the given `mode`. A `key` of either 16 or 32 bytes must always be provided, while an `iv` (initialization vector) of exactly 16 bytes, is only needed when `mode` is either [`MODE_CBC_ENCRYPT`](#class_aescontext_constant_mode_cbc_encrypt) or [`MODE_CBC_DECRYPT`](#class_aescontext_constant_mode_cbc_decrypt).
+Start the AES context in the given `mode`. A `key` of either 16 or 32 bytes must always be provided, while an `iv` (initialization vector) of exactly 16 bytes, is only needed when `mode` is either [`MODE_CBC_ENCRYPT`](class_aescontext.md#class_aescontext_constant_mode_cbc_encrypt) or [`MODE_CBC_DECRYPT`](class_aescontext.md#class_aescontext_constant_mode_cbc_decrypt).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -186,7 +186,7 @@ Start the AES context in the given `mode`. A `key` of either 16 or 32 bytes must
 
 [`PackedByteArray`](class_packedbytearray.md) **update** ( src: [`PackedByteArray`](class_packedbytearray.md) )<div id="class_aescontext_method_update"></div>
 
-Run the desired operation for this AES context. Will return a [`PackedByteArray`](class_packedbytearray.md) containing the result of encrypting (or decrypting) the given `src`. See [`start`](#class_aescontext_method_start) for mode of operation.
+Run the desired operation for this AES context. Will return a [`PackedByteArray`](class_packedbytearray.md) containing the result of encrypting (or decrypting) the given `src`. See [`start`](class_aescontext.md#class_aescontext_method_start) for mode of operation.
 
  **Note:** The size of `src` must be a multiple of 16. Apply some padding if needed.
 

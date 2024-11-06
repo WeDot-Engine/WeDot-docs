@@ -21,28 +21,28 @@ MeshInstance3D is a node that takes a [`Mesh`](class_mesh.md) resource and adds 
 
 |||
 |:-:|:--|
-| [`Mesh`](class_mesh.md)         | [`mesh`](#class_meshinstance3d_property_mesh)         |                    |
-| [`NodePath`](class_nodepath.md) | [`skeleton`](#class_meshinstance3d_property_skeleton) | ``NodePath("..")`` |
-| [`Skin`](class_skin.md)         | [`skin`](#class_meshinstance3d_property_skin)         |                    |
+| [`Mesh`](class_mesh.md)         | [`mesh`](class_meshinstance3d.md#class_meshinstance3d_property_mesh)         |                    |
+| [`NodePath`](class_nodepath.md) | [`skeleton`](class_meshinstance3d.md#class_meshinstance3d_property_skeleton) | ``NodePath("..")`` |
+| [`Skin`](class_skin.md)         | [`skin`](class_meshinstance3d.md#class_meshinstance3d_property_skin)         |                    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`ArrayMesh`](class_arraymesh.md)         | [`bake_mesh_from_current_blend_shape_mix`](#class_meshinstance3d_method_bake_mesh_from_current_blend_shape_mix) ( existing: [`ArrayMesh`](class_arraymesh.md) = null )                                   |
-| `void`                                    | [`create_convex_collision`](#class_meshinstance3d_method_create_convex_collision) ( clean: [`bool`](class_bool.md) = true, simplify: [`bool`](class_bool.md) = false )                                   |
-| `void`                                    | [`create_debug_tangents`](#class_meshinstance3d_method_create_debug_tangents) ( )                                                                                                                        |
-| `void`                                    | [`create_multiple_convex_collisions`](#class_meshinstance3d_method_create_multiple_convex_collisions) ( settings: [`MeshConvexDecompositionSettings`](class_meshconvexdecompositionsettings.md) = null ) |
-| `void`                                    | [`create_trimesh_collision`](#class_meshinstance3d_method_create_trimesh_collision) ( )                                                                                                                  |
-| [`int`](class_int.md)                     | [`find_blend_shape_by_name`](#class_meshinstance3d_method_find_blend_shape_by_name) ( name: [`StringName`](class_stringname.md) )                                                                        |
-| [`Material`](class_material.md)           | [`get_active_material`](#class_meshinstance3d_method_get_active_material) ( surface: [`int`](class_int.md) ) const[^const]                                                                               |
-| [`int`](class_int.md)                     | [`get_blend_shape_count`](#class_meshinstance3d_method_get_blend_shape_count) ( ) const[^const]                                                                                                          |
-| [`float`](class_float.md)                 | [`get_blend_shape_value`](#class_meshinstance3d_method_get_blend_shape_value) ( blend_shape_idx: [`int`](class_int.md) ) const[^const]                                                                   |
-| [`SkinReference`](class_skinreference.md) | [`get_skin_reference`](#class_meshinstance3d_method_get_skin_reference) ( ) const[^const]                                                                                                                |
-| [`Material`](class_material.md)           | [`get_surface_override_material`](#class_meshinstance3d_method_get_surface_override_material) ( surface: [`int`](class_int.md) ) const[^const]                                                           |
-| [`int`](class_int.md)                     | [`get_surface_override_material_count`](#class_meshinstance3d_method_get_surface_override_material_count) ( ) const[^const]                                                                              |
-| `void`                                    | [`set_blend_shape_value`](#class_meshinstance3d_method_set_blend_shape_value) ( blend_shape_idx: [`int`](class_int.md), value: [`float`](class_float.md) )                                               |
-| `void`                                    | [`set_surface_override_material`](#class_meshinstance3d_method_set_surface_override_material) ( surface: [`int`](class_int.md), material: [`Material`](class_material.md) )                              |
+| [`ArrayMesh`](class_arraymesh.md)         | [`bake_mesh_from_current_blend_shape_mix`](class_meshinstance3d.md#class_meshinstance3d_method_bake_mesh_from_current_blend_shape_mix) ( existing: [`ArrayMesh`](class_arraymesh.md) = null )                                   |
+| `void`                                    | [`create_convex_collision`](class_meshinstance3d.md#class_meshinstance3d_method_create_convex_collision) ( clean: [`bool`](class_bool.md) = true, simplify: [`bool`](class_bool.md) = false )                                   |
+| `void`                                    | [`create_debug_tangents`](class_meshinstance3d.md#class_meshinstance3d_method_create_debug_tangents) ( )                                                                                                                        |
+| `void`                                    | [`create_multiple_convex_collisions`](class_meshinstance3d.md#class_meshinstance3d_method_create_multiple_convex_collisions) ( settings: [`MeshConvexDecompositionSettings`](class_meshconvexdecompositionsettings.md) = null ) |
+| `void`                                    | [`create_trimesh_collision`](class_meshinstance3d.md#class_meshinstance3d_method_create_trimesh_collision) ( )                                                                                                                  |
+| [`int`](class_int.md)                     | [`find_blend_shape_by_name`](class_meshinstance3d.md#class_meshinstance3d_method_find_blend_shape_by_name) ( name: [`StringName`](class_stringname.md) )                                                                        |
+| [`Material`](class_material.md)           | [`get_active_material`](class_meshinstance3d.md#class_meshinstance3d_method_get_active_material) ( surface: [`int`](class_int.md) ) const[^const]                                                                               |
+| [`int`](class_int.md)                     | [`get_blend_shape_count`](class_meshinstance3d.md#class_meshinstance3d_method_get_blend_shape_count) ( ) const[^const]                                                                                                          |
+| [`float`](class_float.md)                 | [`get_blend_shape_value`](class_meshinstance3d.md#class_meshinstance3d_method_get_blend_shape_value) ( blend_shape_idx: [`int`](class_int.md) ) const[^const]                                                                   |
+| [`SkinReference`](class_skinreference.md) | [`get_skin_reference`](class_meshinstance3d.md#class_meshinstance3d_method_get_skin_reference) ( ) const[^const]                                                                                                                |
+| [`Material`](class_material.md)           | [`get_surface_override_material`](class_meshinstance3d.md#class_meshinstance3d_method_get_surface_override_material) ( surface: [`int`](class_int.md) ) const[^const]                                                           |
+| [`int`](class_int.md)                     | [`get_surface_override_material_count`](class_meshinstance3d.md#class_meshinstance3d_method_get_surface_override_material_count) ( ) const[^const]                                                                              |
+| `void`                                    | [`set_blend_shape_value`](class_meshinstance3d.md#class_meshinstance3d_method_set_blend_shape_value) ( blend_shape_idx: [`int`](class_int.md), value: [`float`](class_float.md) )                                               |
+| `void`                                    | [`set_surface_override_material`](class_meshinstance3d.md#class_meshinstance3d_method_set_surface_override_material) ( surface: [`int`](class_int.md), material: [`Material`](class_material.md) )                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -151,7 +151,7 @@ This helper creates a [`StaticBody3D`](class_staticbody3d.md) child node with a 
 
 [`int`](class_int.md) **find_blend_shape_by_name** ( name: [`StringName`](class_stringname.md) )<div id="class_meshinstance3d_method_find_blend_shape_by_name"></div>
 
-Returns the index of the blend shape with the given `name`. Returns `-1` if no blend shape with this name exists, including when [`mesh`](#class_meshinstance3d_property_mesh) is `null`.
+Returns the index of the blend shape with the given `name`. Returns `-1` if no blend shape with this name exists, including when [`mesh`](class_meshinstance3d.md#class_meshinstance3d_property_mesh) is `null`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -161,9 +161,9 @@ Returns the index of the blend shape with the given `name`. Returns `-1` if no b
 
 [`Material`](class_material.md) **get_active_material** ( surface: [`int`](class_int.md) ) const[^const]<div id="class_meshinstance3d_method_get_active_material"></div>
 
-Returns the [`Material`](class_material.md) that will be used by the [`Mesh`](class_mesh.md) when drawing. This can return the [`GeometryInstance3D.material_override`](#class_geometryinstance3d_property_material_override), the surface override [`Material`](class_material.md) defined in this **MeshInstance3D**, or the surface [`Material`](class_material.md) defined in the [`mesh`](#class_meshinstance3d_property_mesh). For example, if [`GeometryInstance3D.material_override`](#class_geometryinstance3d_property_material_override) is used, all surfaces will return the override material.
+Returns the [`Material`](class_material.md) that will be used by the [`Mesh`](class_mesh.md) when drawing. This can return the [`GeometryInstance3D.material_override`](class_geometryinstance3d.md#class_geometryinstance3d_property_material_override), the surface override [`Material`](class_material.md) defined in this **MeshInstance3D**, or the surface [`Material`](class_material.md) defined in the [`mesh`](class_meshinstance3d.md#class_meshinstance3d_property_mesh). For example, if [`GeometryInstance3D.material_override`](class_geometryinstance3d.md#class_geometryinstance3d_property_material_override) is used, all surfaces will return the override material.
 
-Returns `null` if no material is active, including when [`mesh`](#class_meshinstance3d_property_mesh) is `null`.
+Returns `null` if no material is active, including when [`mesh`](class_meshinstance3d.md#class_meshinstance3d_property_mesh) is `null`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -173,7 +173,7 @@ Returns `null` if no material is active, including when [`mesh`](#class_meshinst
 
 [`int`](class_int.md) **get_blend_shape_count** ( ) const[^const]<div id="class_meshinstance3d_method_get_blend_shape_count"></div>
 
-Returns the number of blend shapes available. Produces an error if [`mesh`](#class_meshinstance3d_property_mesh) is `null`.
+Returns the number of blend shapes available. Produces an error if [`mesh`](class_meshinstance3d.md#class_meshinstance3d_property_mesh) is `null`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -183,7 +183,7 @@ Returns the number of blend shapes available. Produces an error if [`mesh`](#cla
 
 [`float`](class_float.md) **get_blend_shape_value** ( blend_shape_idx: [`int`](class_int.md) ) const[^const]<div id="class_meshinstance3d_method_get_blend_shape_value"></div>
 
-Returns the value of the blend shape at the given `blend_shape_idx`. Returns `0.0` and produces an error if [`mesh`](#class_meshinstance3d_property_mesh) is `null` or doesn't have a blend shape at that index.
+Returns the value of the blend shape at the given `blend_shape_idx`. Returns `0.0` and produces an error if [`mesh`](class_meshinstance3d.md#class_meshinstance3d_property_mesh) is `null` or doesn't have a blend shape at that index.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -193,7 +193,7 @@ Returns the value of the blend shape at the given `blend_shape_idx`. Returns `0.
 
 [`SkinReference`](class_skinreference.md) **get_skin_reference** ( ) const[^const]<div id="class_meshinstance3d_method_get_skin_reference"></div>
 
-Returns the internal [`SkinReference`](class_skinreference.md) containing the skeleton's [`RID`](class_rid.md) attached to this RID. See also [`Resource.get_rid`](#class_resource_method_get_rid), [`SkinReference.get_skeleton`](#class_skinreference_method_get_skeleton), and [`RenderingServer.instance_attach_skeleton`](#class_renderingserver_method_instance_attach_skeleton).
+Returns the internal [`SkinReference`](class_skinreference.md) containing the skeleton's [`RID`](class_rid.md) attached to this RID. See also [`Resource.get_rid`](class_resource.md#class_resource_method_get_rid), [`SkinReference.get_skeleton`](class_skinreference.md#class_skinreference_method_get_skeleton), and [`RenderingServer.instance_attach_skeleton`](class_renderingserver.md#class_renderingserver_method_instance_attach_skeleton).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -203,9 +203,9 @@ Returns the internal [`SkinReference`](class_skinreference.md) containing the sk
 
 [`Material`](class_material.md) **get_surface_override_material** ( surface: [`int`](class_int.md) ) const[^const]<div id="class_meshinstance3d_method_get_surface_override_material"></div>
 
-Returns the override [`Material`](class_material.md) for the specified `surface` of the [`Mesh`](class_mesh.md) resource. See also [`get_surface_override_material_count`](#class_meshinstance3d_method_get_surface_override_material_count).
+Returns the override [`Material`](class_material.md) for the specified `surface` of the [`Mesh`](class_mesh.md) resource. See also [`get_surface_override_material_count`](class_meshinstance3d.md#class_meshinstance3d_method_get_surface_override_material_count).
 
- **Note:** This returns the [`Material`](class_material.md) associated to the **MeshInstance3D**'s Surface Material Override properties, not the material within the [`Mesh`](class_mesh.md) resource. To get the material within the [`Mesh`](class_mesh.md) resource, use [`Mesh.surface_get_material`](#class_mesh_method_surface_get_material) instead.
+ **Note:** This returns the [`Material`](class_material.md) associated to the **MeshInstance3D**'s Surface Material Override properties, not the material within the [`Mesh`](class_mesh.md) resource. To get the material within the [`Mesh`](class_mesh.md) resource, use [`Mesh.surface_get_material`](class_mesh.md#class_mesh_method_surface_get_material) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -215,7 +215,7 @@ Returns the override [`Material`](class_material.md) for the specified `surface`
 
 [`int`](class_int.md) **get_surface_override_material_count** ( ) const[^const]<div id="class_meshinstance3d_method_get_surface_override_material_count"></div>
 
-Returns the number of surface override materials. This is equivalent to [`Mesh.get_surface_count`](#class_mesh_method_get_surface_count). See also [`get_surface_override_material`](#class_meshinstance3d_method_get_surface_override_material).
+Returns the number of surface override materials. This is equivalent to [`Mesh.get_surface_count`](class_mesh.md#class_mesh_method_get_surface_count). See also [`get_surface_override_material`](class_meshinstance3d.md#class_meshinstance3d_method_get_surface_override_material).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -225,7 +225,7 @@ Returns the number of surface override materials. This is equivalent to [`Mesh.g
 
 `void` **set_blend_shape_value** ( blend_shape_idx: [`int`](class_int.md), value: [`float`](class_float.md) )<div id="class_meshinstance3d_method_set_blend_shape_value"></div>
 
-Sets the value of the blend shape at `blend_shape_idx` to `value`. Produces an error if [`mesh`](#class_meshinstance3d_property_mesh) is `null` or doesn't have a blend shape at that index.
+Sets the value of the blend shape at `blend_shape_idx` to `value`. Produces an error if [`mesh`](class_meshinstance3d.md#class_meshinstance3d_property_mesh) is `null` or doesn't have a blend shape at that index.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -235,9 +235,9 @@ Sets the value of the blend shape at `blend_shape_idx` to `value`. Produces an e
 
 `void` **set_surface_override_material** ( surface: [`int`](class_int.md), material: [`Material`](class_material.md) )<div id="class_meshinstance3d_method_set_surface_override_material"></div>
 
-Sets the override `material` for the specified `surface` of the [`Mesh`](class_mesh.md) resource. This material is associated with this **MeshInstance3D** rather than with [`mesh`](#class_meshinstance3d_property_mesh).
+Sets the override `material` for the specified `surface` of the [`Mesh`](class_mesh.md) resource. This material is associated with this **MeshInstance3D** rather than with [`mesh`](class_meshinstance3d.md#class_meshinstance3d_property_mesh).
 
- **Note:** This assigns the [`Material`](class_material.md) associated to the **MeshInstance3D**'s Surface Material Override properties, not the material within the [`Mesh`](class_mesh.md) resource. To set the material within the [`Mesh`](class_mesh.md) resource, use [`Mesh.surface_get_material`](#class_mesh_method_surface_get_material) instead.
+ **Note:** This assigns the [`Material`](class_material.md) associated to the **MeshInstance3D**'s Surface Material Override properties, not the material within the [`Mesh`](class_mesh.md) resource. To set the material within the [`Mesh`](class_mesh.md) resource, use [`Mesh.surface_get_material`](class_mesh.md#class_mesh_method_surface_get_material) instead.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

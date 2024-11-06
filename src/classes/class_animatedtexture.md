@@ -17,7 +17,7 @@ Proxy texture for simple frame-based animations.
 
 **AnimatedTexture** is a resource format for frame-based animations, where multiple textures can be chained automatically with a predefined delay for each frame. Unlike [`AnimationPlayer`](class_animationplayer.md) or [`AnimatedSprite2D`](class_animatedsprite2d.md), it isn't a [`Node`](class_node.md), but has the advantage of being usable anywhere a [`Texture2D`](class_texture2d.md) resource can be used, e.g. in a [`TileSet`](class_tileset.md).
 
-The playback of the animation is controlled by the [`speed_scale`](#class_animatedtexture_property_speed_scale) property, as well as each frame's duration (see [`set_frame_duration`](#class_animatedtexture_method_set_frame_duration)). The animation loops, i.e. it will restart at frame 0 automatically after playing the last frame.
+The playback of the animation is controlled by the [`speed_scale`](class_animatedtexture.md#class_animatedtexture_property_speed_scale) property, as well as each frame's duration (see [`set_frame_duration`](class_animatedtexture.md#class_animatedtexture_method_set_frame_duration)). The animation loops, i.e. it will restart at frame 0 automatically after playing the last frame.
 
  **AnimatedTexture** currently requires all frame textures to have the same size, otherwise the bigger ones will be cropped to match the smallest one.
 
@@ -29,21 +29,21 @@ The playback of the animation is controlled by the [`speed_scale`](#class_animat
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)     | [`current_frame`](#class_animatedtexture_property_current_frame) |                                                                                      |
-| [`int`](class_int.md)     | [`frames`](#class_animatedtexture_property_frames)               | ``1``                                                                                |
-| [`bool`](class_bool.md)   | [`one_shot`](#class_animatedtexture_property_one_shot)           | ``false``                                                                            |
-| [`bool`](class_bool.md)   | [`pause`](#class_animatedtexture_property_pause)                 | ``false``                                                                            |
-| [`bool`](class_bool.md)   | resource_local_to_scene                                          | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [`float`](class_float.md) | [`speed_scale`](#class_animatedtexture_property_speed_scale)     | ``1.0``                                                                              |
+| [`int`](class_int.md)     | [`current_frame`](class_animatedtexture.md#class_animatedtexture_property_current_frame) |                                                                                                       |
+| [`int`](class_int.md)     | [`frames`](class_animatedtexture.md#class_animatedtexture_property_frames)               | ``1``                                                                                                 |
+| [`bool`](class_bool.md)   | [`one_shot`](class_animatedtexture.md#class_animatedtexture_property_one_shot)           | ``false``                                                                                             |
+| [`bool`](class_bool.md)   | [`pause`](class_animatedtexture.md#class_animatedtexture_property_pause)                 | ``false``                                                                                             |
+| [`bool`](class_bool.md)   | resource_local_to_scene                                                                  | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [`float`](class_float.md) | [`speed_scale`](class_animatedtexture.md#class_animatedtexture_property_speed_scale)     | ``1.0``                                                                                               |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)         | [`get_frame_duration`](#class_animatedtexture_method_get_frame_duration) ( frame: [`int`](class_int.md) ) const[^const]                             |
-| [`Texture2D`](class_texture2d.md) | [`get_frame_texture`](#class_animatedtexture_method_get_frame_texture) ( frame: [`int`](class_int.md) ) const[^const]                               |
-| `void`                            | [`set_frame_duration`](#class_animatedtexture_method_set_frame_duration) ( frame: [`int`](class_int.md), duration: [`float`](class_float.md) )      |
-| `void`                            | [`set_frame_texture`](#class_animatedtexture_method_set_frame_texture) ( frame: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) ) |
+| [`float`](class_float.md)         | [`get_frame_duration`](class_animatedtexture.md#class_animatedtexture_method_get_frame_duration) ( frame: [`int`](class_int.md) ) const[^const]                             |
+| [`Texture2D`](class_texture2d.md) | [`get_frame_texture`](class_animatedtexture.md#class_animatedtexture_method_get_frame_texture) ( frame: [`int`](class_int.md) ) const[^const]                               |
+| `void`                            | [`set_frame_duration`](class_animatedtexture.md#class_animatedtexture_method_set_frame_duration) ( frame: [`int`](class_int.md), duration: [`float`](class_float.md) )      |
+| `void`                            | [`set_frame_texture`](class_animatedtexture.md#class_animatedtexture_method_set_frame_texture) ( frame: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -83,7 +83,7 @@ Sets the currently visible frame of the texture. Setting this frame while playin
 - `void` **set_frames** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_frames** ( )
 
-Number of frames to use in the animation. While you can create the frames independently with [`set_frame_texture`](#class_animatedtexture_method_set_frame_texture), you need to set this value for the animation to take new frames into account. The maximum number of frames is [`MAX_FRAMES`](#class_animatedtexture_constant_max_frames).
+Number of frames to use in the animation. While you can create the frames independently with [`set_frame_texture`](class_animatedtexture.md#class_animatedtexture_method_set_frame_texture), you need to set this value for the animation to take new frames into account. The maximum number of frames is [`MAX_FRAMES`](class_animatedtexture.md#class_animatedtexture_constant_max_frames).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -96,7 +96,7 @@ Number of frames to use in the animation. While you can create the frames indepe
 - `void` **set_one_shot** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_one_shot** ( )
 
-If `true`, the animation will only play once and will not loop back to the first frame after reaching the end. Note that reaching the end will not set [`pause`](#class_animatedtexture_property_pause) to `true`.
+If `true`, the animation will only play once and will not loop back to the first frame after reaching the end. Note that reaching the end will not set [`pause`](class_animatedtexture.md#class_animatedtexture_property_pause) to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -109,7 +109,7 @@ If `true`, the animation will only play once and will not loop back to the first
 - `void` **set_pause** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_pause** ( )
 
-If `true`, the animation will pause where it currently is (i.e. at [`current_frame`](#class_animatedtexture_property_current_frame)). The animation will continue from where it was paused when changing this property to `false`.
+If `true`, the animation will pause where it currently is (i.e. at [`current_frame`](class_animatedtexture.md#class_animatedtexture_property_current_frame)). The animation will continue from where it was paused when changing this property to `false`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -154,7 +154,7 @@ Returns the given frame's [`Texture2D`](class_texture2d.md).
 
 `void` **set_frame_duration** ( frame: [`int`](class_int.md), duration: [`float`](class_float.md) )<div id="class_animatedtexture_method_set_frame_duration"></div>
 
-Sets the duration of any given `frame`. The final duration is affected by the [`speed_scale`](#class_animatedtexture_property_speed_scale). If set to `0`, the frame is skipped during playback.
+Sets the duration of any given `frame`. The final duration is affected by the [`speed_scale`](class_animatedtexture.md#class_animatedtexture_property_speed_scale). If set to `0`, the frame is skipped during playback.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -164,9 +164,9 @@ Sets the duration of any given `frame`. The final duration is affected by the [`
 
 `void` **set_frame_texture** ( frame: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )<div id="class_animatedtexture_method_set_frame_texture"></div>
 
-Assigns a [`Texture2D`](class_texture2d.md) to the given frame. Frame IDs start at 0, so the first frame has ID 0, and the last frame of the animation has ID [`frames`](#class_animatedtexture_property_frames) - 1.
+Assigns a [`Texture2D`](class_texture2d.md) to the given frame. Frame IDs start at 0, so the first frame has ID 0, and the last frame of the animation has ID [`frames`](class_animatedtexture.md#class_animatedtexture_property_frames) - 1.
 
-You can define any number of textures up to [`MAX_FRAMES`](#class_animatedtexture_constant_max_frames), but keep in mind that only frames from 0 to [`frames`](#class_animatedtexture_property_frames) - 1 will be part of the animation.
+You can define any number of textures up to [`MAX_FRAMES`](class_animatedtexture.md#class_animatedtexture_constant_max_frames), but keep in mind that only frames from 0 to [`frames`](class_animatedtexture.md#class_animatedtexture_property_frames) - 1 will be part of the animation.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

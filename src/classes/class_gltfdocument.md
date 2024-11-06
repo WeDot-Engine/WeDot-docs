@@ -19,28 +19,28 @@ GLTFDocument supports reading data from a glTF file, buffer, or Godot scene. Thi
 
 All of the data in a GLTF scene is stored in the [`GLTFState`](class_gltfstate.md) class. GLTFDocument processes state objects, but does not contain any scene data itself. GLTFDocument has member variables to store export configuration settings such as the image format, but is otherwise stateless. Multiple scenes can be processed with the same settings using the same GLTFDocument object and different [`GLTFState`](class_gltfstate.md) objects.
 
-GLTFDocument can be extended with arbitrary functionality by extending the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) class and registering it with GLTFDocument via [`register_gltf_document_extension`](#class_gltfdocument_method_register_gltf_document_extension). This allows for custom data to be imported and exported.
+GLTFDocument can be extended with arbitrary functionality by extending the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) class and registering it with GLTFDocument via [`register_gltf_document_extension`](class_gltfdocument.md#class_gltfdocument_method_register_gltf_document_extension). This allows for custom data to be imported and exported.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                     | [`image_format`](#class_gltfdocument_property_image_format)     | ``"PNG"`` |
-| [`float`](class_float.md)                       | [`lossy_quality`](#class_gltfdocument_property_lossy_quality)   | ``0.75``  |
-| [RootNodeMode](#enum_gltfdocument_rootnodemode) | [`root_node_mode`](#class_gltfdocument_property_root_node_mode) | ``0``     |
+| [`String`](class_string.md)                     | [`image_format`](class_gltfdocument.md#class_gltfdocument_property_image_format)     | ``"PNG"`` |
+| [`float`](class_float.md)                       | [`lossy_quality`](class_gltfdocument.md#class_gltfdocument_property_lossy_quality)   | ``0.75``  |
+| [RootNodeMode](#enum_gltfdocument_rootnodemode) | [`root_node_mode`](class_gltfdocument.md#class_gltfdocument_property_root_node_mode) | ``0``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)             | [`append_from_buffer`](#class_gltfdocument_method_append_from_buffer) ( bytes: [`PackedByteArray`](class_packedbytearray.md), base_path: [`String`](class_string.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0 )       |
-| [Error](#enum_@globalscope_error)             | [`append_from_file`](#class_gltfdocument_method_append_from_file) ( path: [`String`](class_string.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0, base_path: [`String`](class_string.md) = "" )                         |
-| [Error](#enum_@globalscope_error)             | [`append_from_scene`](#class_gltfdocument_method_append_from_scene) ( node: [`Node`](class_node.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0 )                                                                        |
-| [`PackedByteArray`](class_packedbytearray.md) | [`generate_buffer`](#class_gltfdocument_method_generate_buffer) ( state: [`GLTFState`](class_gltfstate.md) )                                                                                                                                             |
-| [`Node`](class_node.md)                       | [`generate_scene`](#class_gltfdocument_method_generate_scene) ( state: [`GLTFState`](class_gltfstate.md), bake_fps: [`float`](class_float.md) = 30, trimming: [`bool`](class_bool.md) = false, remove_immutable_tracks: [`bool`](class_bool.md) = true ) |
-| `void`                                        | [`register_gltf_document_extension`](#class_gltfdocument_method_register_gltf_document_extension) ( extension: [`GLTFDocumentExtension`](class_gltfdocumentextension.md), first_priority: [`bool`](class_bool.md) = false ) static[^static]              |
-| `void`                                        | [`unregister_gltf_document_extension`](#class_gltfdocument_method_unregister_gltf_document_extension) ( extension: [`GLTFDocumentExtension`](class_gltfdocumentextension.md) ) static[^static]                                                           |
-| [Error](#enum_@globalscope_error)             | [`write_to_filesystem`](#class_gltfdocument_method_write_to_filesystem) ( state: [`GLTFState`](class_gltfstate.md), path: [`String`](class_string.md) )                                                                                                  |
+| [Error](#enum_@globalscope_error)             | [`append_from_buffer`](class_gltfdocument.md#class_gltfdocument_method_append_from_buffer) ( bytes: [`PackedByteArray`](class_packedbytearray.md), base_path: [`String`](class_string.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0 )       |
+| [Error](#enum_@globalscope_error)             | [`append_from_file`](class_gltfdocument.md#class_gltfdocument_method_append_from_file) ( path: [`String`](class_string.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0, base_path: [`String`](class_string.md) = "" )                         |
+| [Error](#enum_@globalscope_error)             | [`append_from_scene`](class_gltfdocument.md#class_gltfdocument_method_append_from_scene) ( node: [`Node`](class_node.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0 )                                                                        |
+| [`PackedByteArray`](class_packedbytearray.md) | [`generate_buffer`](class_gltfdocument.md#class_gltfdocument_method_generate_buffer) ( state: [`GLTFState`](class_gltfstate.md) )                                                                                                                                             |
+| [`Node`](class_node.md)                       | [`generate_scene`](class_gltfdocument.md#class_gltfdocument_method_generate_scene) ( state: [`GLTFState`](class_gltfstate.md), bake_fps: [`float`](class_float.md) = 30, trimming: [`bool`](class_bool.md) = false, remove_immutable_tracks: [`bool`](class_bool.md) = true ) |
+| `void`                                        | [`register_gltf_document_extension`](class_gltfdocument.md#class_gltfdocument_method_register_gltf_document_extension) ( extension: [`GLTFDocumentExtension`](class_gltfdocumentextension.md), first_priority: [`bool`](class_bool.md) = false ) static[^static]              |
+| `void`                                        | [`unregister_gltf_document_extension`](class_gltfdocument.md#class_gltfdocument_method_unregister_gltf_document_extension) ( extension: [`GLTFDocumentExtension`](class_gltfdocumentextension.md) ) static[^static]                                                           |
+| [Error](#enum_@globalscope_error)             | [`write_to_filesystem`](class_gltfdocument.md#class_gltfdocument_method_write_to_filesystem) ( state: [`GLTFState`](class_gltfstate.md), path: [`String`](class_string.md) )                                                                                                  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ enum **RootNodeMode**: <div id="enum_gltfdocument_rootnodemode"></div>
 
 [RootNodeMode](#enum_gltfdocument_rootnodemode) **ROOT_NODE_MODE_SINGLE_ROOT** = ``0``
 
-Treat the Godot scene's root node as the root node of the glTF file, and mark it as the single root node via the `GODOT_single_root` glTF extension. This will be parsed the same as [`ROOT_NODE_MODE_KEEP_ROOT`](#class_gltfdocument_constant_root_node_mode_keep_root) if the implementation does not support `GODOT_single_root`.
+Treat the Godot scene's root node as the root node of the glTF file, and mark it as the single root node via the `GODOT_single_root` glTF extension. This will be parsed the same as [`ROOT_NODE_MODE_KEEP_ROOT`](class_gltfdocument.md#class_gltfdocument_constant_root_node_mode_keep_root) if the implementation does not support `GODOT_single_root`.
 
 <div id="_class_gltfdocument_constant_root_node_mode_keep_root"></div>
 
@@ -98,7 +98,7 @@ By default, Godot allows the following options: "None", "PNG", "JPEG", "Lossless
 - `void` **set_lossy_quality** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_lossy_quality** ( )
 
-If [`image_format`](#class_gltfdocument_property_image_format) is a lossy image format, this determines the lossy quality of the image. On a range of `0.0` to `1.0`, where `0.0` is the lowest quality and `1.0` is the highest quality. A lossy quality of `1.0` is not the same as lossless.
+If [`image_format`](class_gltfdocument.md#class_gltfdocument_property_image_format) is a lossy image format, this determines the lossy quality of the image. On a range of `0.0` to `1.0`, where `0.0` is the lowest quality and `1.0` is the highest quality. A lossy quality of `1.0` is not the same as lossless.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -111,7 +111,7 @@ If [`image_format`](#class_gltfdocument_property_image_format) is a lossy image 
 - `void` **set_root_node_mode** ( value: [RootNodeMode](#enum_gltfdocument_rootnodemode) )
 - [RootNodeMode](#enum_gltfdocument_rootnodemode) **get_root_node_mode** ( )
 
-How to process the root node during export. See [RootNodeMode](#enum_gltfdocument_rootnodemode) for details. The default and recommended value is [`ROOT_NODE_MODE_SINGLE_ROOT`](#class_gltfdocument_constant_root_node_mode_single_root).
+How to process the root node during export. See [RootNodeMode](#enum_gltfdocument_rootnodemode) for details. The default and recommended value is [`ROOT_NODE_MODE_SINGLE_ROOT`](class_gltfdocument.md#class_gltfdocument_constant_root_node_mode_single_root).
 
  **Note:** Regardless of how the glTF file is exported, when importing, the root node type and name can be overridden in the scene import settings tab.
 
@@ -127,7 +127,7 @@ How to process the root node during export. See [RootNodeMode](#enum_gltfdocumen
 
 Takes a [`PackedByteArray`](class_packedbytearray.md) defining a GLTF and imports the data to the given [`GLTFState`](class_gltfstate.md) object through the `state` parameter.
 
- **Note:** The `base_path` tells [`append_from_buffer`](#class_gltfdocument_method_append_from_buffer) where to find dependencies and can be empty.
+ **Note:** The `base_path` tells [`append_from_buffer`](class_gltfdocument.md#class_gltfdocument_method_append_from_buffer) where to find dependencies and can be empty.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -139,7 +139,7 @@ Takes a [`PackedByteArray`](class_packedbytearray.md) defining a GLTF and import
 
 Takes a path to a GLTF file and imports the data at that file path to the given [`GLTFState`](class_gltfstate.md) object through the `state` parameter.
 
- **Note:** The `base_path` tells [`append_from_file`](#class_gltfdocument_method_append_from_file) where to find dependencies and can be empty.
+ **Note:** The `base_path` tells [`append_from_file`](class_gltfdocument.md#class_gltfdocument_method_append_from_file) where to find dependencies and can be empty.
 
 <!-- rst-class:: classref-item-separator -->
 

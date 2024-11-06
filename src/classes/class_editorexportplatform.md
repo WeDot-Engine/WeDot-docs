@@ -17,13 +17,13 @@ Identifies a supported export platform, and internally provides the functionalit
 
 Base resource that provides the functionality of exporting a release build of a project to a platform, from the editor. Stores platform-specific metadata such as the name and supported features of the platform, and performs the exporting of projects, PCK files, and ZIP files. Uses an export template for the platform provided at the time of project exporting.
 
-Used in scripting by [`EditorExportPlugin`](class_editorexportplugin.md) to configure platform-specific customization of scenes and resources. See [`EditorExportPlugin._begin_customize_scenes`](#class_editorexportplugin_private_method__begin_customize_scenes) and [`EditorExportPlugin._begin_customize_resources`](#class_editorexportplugin_private_method__begin_customize_resources) for more details.
+Used in scripting by [`EditorExportPlugin`](class_editorexportplugin.md) to configure platform-specific customization of scenes and resources. See [`EditorExportPlugin._begin_customize_scenes`](class_editorexportplugin.md#class_editorexportplugin_private_method__begin_customize_scenes) and [`EditorExportPlugin._begin_customize_resources`](class_editorexportplugin.md#class_editorexportplugin_private_method__begin_customize_resources) for more details.
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_os_name`](#class_editorexportplatform_method_get_os_name) ( ) const[^const] |
+| [`String`](class_string.md) | [`get_os_name`](class_editorexportplatform.md#class_editorexportplatform_method_get_os_name) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

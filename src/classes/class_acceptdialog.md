@@ -15,43 +15,43 @@ A base dialog used for user notification.
 
 ## 描述
 
-The default use of **AcceptDialog** is to allow it to only be accepted or closed, with the same result. However, the [`confirmed`](#class_acceptdialog_signal_confirmed) and [`canceled`](#class_acceptdialog_signal_canceled) signals allow to make the two actions different, and the [`add_button`](#class_acceptdialog_method_add_button) method allows to add custom buttons and actions.
+The default use of **AcceptDialog** is to allow it to only be accepted or closed, with the same result. However, the [`confirmed`](class_acceptdialog.md#class_acceptdialog_signal_confirmed) and [`canceled`](class_acceptdialog.md#class_acceptdialog_signal_canceled) signals allow to make the two actions different, and the [`add_button`](class_acceptdialog.md#class_acceptdialog_method_add_button) method allows to add custom buttons and actions.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | [`dialog_autowrap`](#class_acceptdialog_property_dialog_autowrap)               | ``false``                                                                  |
-| [`bool`](class_bool.md)     | [`dialog_close_on_escape`](#class_acceptdialog_property_dialog_close_on_escape) | ``true``                                                                   |
-| [`bool`](class_bool.md)     | [`dialog_hide_on_ok`](#class_acceptdialog_property_dialog_hide_on_ok)           | ``true``                                                                   |
-| [`String`](class_string.md) | [`dialog_text`](#class_acceptdialog_property_dialog_text)                       | ``""``                                                                     |
-| [`bool`](class_bool.md)     | exclusive                                                                       | ``true`` (overrides [`Window`](#class_window_property_exclusive))          |
-| [`bool`](class_bool.md)     | keep_title_visible                                                              | ``true`` (overrides [`Window`](#class_window_property_keep_title_visible)) |
-| [`String`](class_string.md) | [`ok_button_text`](#class_acceptdialog_property_ok_button_text)                 | ``"OK"``                                                                   |
-| [`String`](class_string.md) | title                                                                           | ``"Alert!"`` (overrides [`Window`](#class_window_property_title))          |
-| [`bool`](class_bool.md)     | transient                                                                       | ``true`` (overrides [`Window`](#class_window_property_transient))          |
-| [`bool`](class_bool.md)     | visible                                                                         | ``false`` (overrides [`Window`](#class_window_property_visible))           |
-| [`bool`](class_bool.md)     | wrap_controls                                                                   | ``true`` (overrides [`Window`](#class_window_property_wrap_controls))      |
+| [`bool`](class_bool.md)     | [`dialog_autowrap`](class_acceptdialog.md#class_acceptdialog_property_dialog_autowrap)               | ``false``                                                                                 |
+| [`bool`](class_bool.md)     | [`dialog_close_on_escape`](class_acceptdialog.md#class_acceptdialog_property_dialog_close_on_escape) | ``true``                                                                                  |
+| [`bool`](class_bool.md)     | [`dialog_hide_on_ok`](class_acceptdialog.md#class_acceptdialog_property_dialog_hide_on_ok)           | ``true``                                                                                  |
+| [`String`](class_string.md) | [`dialog_text`](class_acceptdialog.md#class_acceptdialog_property_dialog_text)                       | ``""``                                                                                    |
+| [`bool`](class_bool.md)     | exclusive                                                                                            | ``true`` (overrides [`Window`](class_window.md#class_window_property_exclusive))          |
+| [`bool`](class_bool.md)     | keep_title_visible                                                                                   | ``true`` (overrides [`Window`](class_window.md#class_window_property_keep_title_visible)) |
+| [`String`](class_string.md) | [`ok_button_text`](class_acceptdialog.md#class_acceptdialog_property_ok_button_text)                 | ``"OK"``                                                                                  |
+| [`String`](class_string.md) | title                                                                                                | ``"Alert!"`` (overrides [`Window`](class_window.md#class_window_property_title))          |
+| [`bool`](class_bool.md)     | transient                                                                                            | ``true`` (overrides [`Window`](class_window.md#class_window_property_transient))          |
+| [`bool`](class_bool.md)     | visible                                                                                              | ``false`` (overrides [`Window`](class_window.md#class_window_property_visible))           |
+| [`bool`](class_bool.md)     | wrap_controls                                                                                        | ``true`` (overrides [`Window`](class_window.md#class_window_property_wrap_controls))      |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Button`](class_button.md) | [`add_button`](#class_acceptdialog_method_add_button) ( text: [`String`](class_string.md), right: [`bool`](class_bool.md) = false, action: [`String`](class_string.md) = "" ) |
-| [`Button`](class_button.md) | [`add_cancel_button`](#class_acceptdialog_method_add_cancel_button) ( name: [`String`](class_string.md) )                                                                     |
-| [`Label`](class_label.md)   | [`get_label`](#class_acceptdialog_method_get_label) ( )                                                                                                                       |
-| [`Button`](class_button.md) | [`get_ok_button`](#class_acceptdialog_method_get_ok_button) ( )                                                                                                               |
-| `void`                      | [`register_text_enter`](#class_acceptdialog_method_register_text_enter) ( line_edit: [`LineEdit`](class_lineedit.md) )                                                        |
-| `void`                      | [`remove_button`](#class_acceptdialog_method_remove_button) ( button: [`Button`](class_button.md) )                                                                           |
+| [`Button`](class_button.md) | [`add_button`](class_acceptdialog.md#class_acceptdialog_method_add_button) ( text: [`String`](class_string.md), right: [`bool`](class_bool.md) = false, action: [`String`](class_string.md) = "" ) |
+| [`Button`](class_button.md) | [`add_cancel_button`](class_acceptdialog.md#class_acceptdialog_method_add_cancel_button) ( name: [`String`](class_string.md) )                                                                     |
+| [`Label`](class_label.md)   | [`get_label`](class_acceptdialog.md#class_acceptdialog_method_get_label) ( )                                                                                                                       |
+| [`Button`](class_button.md) | [`get_ok_button`](class_acceptdialog.md#class_acceptdialog_method_get_ok_button) ( )                                                                                                               |
+| `void`                      | [`register_text_enter`](class_acceptdialog.md#class_acceptdialog_method_register_text_enter) ( line_edit: [`LineEdit`](class_lineedit.md) )                                                        |
+| `void`                      | [`remove_button`](class_acceptdialog.md#class_acceptdialog_method_remove_button) ( button: [`Button`](class_button.md) )                                                                           |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)           | [`buttons_min_height`](#class_acceptdialog_theme_constant_buttons_min_height) | ``0``  |
-| [`int`](class_int.md)           | [`buttons_min_width`](#class_acceptdialog_theme_constant_buttons_min_width)   | ``0``  |
-| [`int`](class_int.md)           | [`buttons_separation`](#class_acceptdialog_theme_constant_buttons_separation) | ``10`` |
-| [`StyleBox`](class_stylebox.md) | [`panel`](#class_acceptdialog_theme_style_panel)                              |        |
+| [`int`](class_int.md)           | [`buttons_min_height`](class_acceptdialog.md#class_acceptdialog_theme_constant_buttons_min_height) | ``0``  |
+| [`int`](class_int.md)           | [`buttons_min_width`](class_acceptdialog.md#class_acceptdialog_theme_constant_buttons_min_width)   | ``0``  |
+| [`int`](class_int.md)           | [`buttons_separation`](class_acceptdialog.md#class_acceptdialog_theme_constant_buttons_separation) | ``10`` |
+| [`StyleBox`](class_stylebox.md) | [`panel`](class_acceptdialog.md#class_acceptdialog_theme_style_panel)                              |        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -63,7 +63,7 @@ The default use of **AcceptDialog** is to allow it to only be accepted or closed
 
 **canceled** ( ) <div id="class_acceptdialog_signal_canceled"></div>
 
-Emitted when the dialog is closed or the button created with [`add_cancel_button`](#class_acceptdialog_method_add_cancel_button) is pressed.
+Emitted when the dialog is closed or the button created with [`add_cancel_button`](class_acceptdialog.md#class_acceptdialog_method_add_cancel_button) is pressed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -83,7 +83,7 @@ Emitted when the dialog is accepted, i.e. the OK button is pressed.
 
 **custom_action** ( action: [`StringName`](class_stringname.md) ) <div id="class_acceptdialog_signal_custom_action"></div>
 
-Emitted when a custom button is pressed. See [`add_button`](#class_acceptdialog_method_add_button).
+Emitted when a custom button is pressed. See [`add_button`](class_acceptdialog.md#class_acceptdialog_method_add_button).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -111,7 +111,7 @@ Sets autowrapping for the text in the dialog.
 - `void` **set_close_on_escape** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_close_on_escape** ( )
 
-If `true`, the dialog will be hidden when the escape key ([`@GlobalScope.KEY_ESCAPE`](#class_@globalscope_constant_key_escape)) is pressed.
+If `true`, the dialog will be hidden when the escape key ([`@GlobalScope.KEY_ESCAPE`](class_@globalscope.md#class_@globalscope_constant_key_escape)) is pressed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,7 +124,7 @@ If `true`, the dialog will be hidden when the escape key ([`@GlobalScope.KEY_ESC
 - `void` **set_hide_on_ok** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_hide_on_ok** ( )
 
-If `true`, the dialog is hidden when the OK button is pressed. You can set it to `false` if you want to do e.g. input validation when receiving the [`confirmed`](#class_acceptdialog_signal_confirmed) signal, and handle hiding the dialog in your own logic.
+If `true`, the dialog is hidden when the OK button is pressed. You can set it to `false` if you want to do e.g. input validation when receiving the [`confirmed`](class_acceptdialog.md#class_acceptdialog_signal_confirmed) signal, and handle hiding the dialog in your own logic.
 
  **Note:** Some nodes derived from this class can have a different default value, and potentially their own built-in logic overriding this setting. For example [`FileDialog`](class_filedialog.md) defaults to `false`, and has its own input validation code that is called when you press OK, which eventually hides the dialog if the input is valid. As such, this property can't be used in [`FileDialog`](class_filedialog.md) to disable hiding the dialog when pressing OK.
 
@@ -152,7 +152,7 @@ The text displayed by the dialog.
 - `void` **set_ok_button_text** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_ok_button_text** ( )
 
-The text displayed by the OK button (see [`get_ok_button`](#class_acceptdialog_method_get_ok_button)).
+The text displayed by the OK button (see [`get_ok_button`](class_acceptdialog.md#class_acceptdialog_method_get_ok_button)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -164,11 +164,11 @@ The text displayed by the OK button (see [`get_ok_button`](#class_acceptdialog_m
 
 [`Button`](class_button.md) **add_button** ( text: [`String`](class_string.md), right: [`bool`](class_bool.md) = false, action: [`String`](class_string.md) = "" )<div id="class_acceptdialog_method_add_button"></div>
 
-Adds a button with label `text` and a custom `action` to the dialog and returns the created button. `action` will be passed to the [`custom_action`](#class_acceptdialog_signal_custom_action) signal when pressed.
+Adds a button with label `text` and a custom `action` to the dialog and returns the created button. `action` will be passed to the [`custom_action`](class_acceptdialog.md#class_acceptdialog_signal_custom_action) signal when pressed.
 
 If `true`, `right` will place the button to the right of any sibling buttons.
 
-You can use [`remove_button`](#class_acceptdialog_method_remove_button) method to remove a button created with this method from the dialog.
+You can use [`remove_button`](class_acceptdialog.md#class_acceptdialog_method_remove_button) method to remove a button created with this method from the dialog.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -180,7 +180,7 @@ You can use [`remove_button`](#class_acceptdialog_method_remove_button) method t
 
 Adds a button with label `name` and a cancel action to the dialog and returns the created button.
 
-You can use [`remove_button`](#class_acceptdialog_method_remove_button) method to remove a button created with this method from the dialog.
+You can use [`remove_button`](class_acceptdialog.md#class_acceptdialog_method_remove_button) method to remove a button created with this method from the dialog.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -192,7 +192,7 @@ You can use [`remove_button`](#class_acceptdialog_method_remove_button) method t
 
 Returns the label used for built-in text.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -204,7 +204,7 @@ Returns the label used for built-in text.
 
 Returns the OK [`Button`](class_button.md) instance.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -224,7 +224,7 @@ Registers a [`LineEdit`](class_lineedit.md) in the dialog. When the enter key is
 
 `void` **remove_button** ( button: [`Button`](class_button.md) )<div id="class_acceptdialog_method_remove_button"></div>
 
-Removes the `button` from the dialog. Does NOT free the `button`. The `button` must be a [`Button`](class_button.md) added with [`add_button`](#class_acceptdialog_method_add_button) or [`add_cancel_button`](#class_acceptdialog_method_add_cancel_button) method. After removal, pressing the `button` will no longer emit this dialog's [`custom_action`](#class_acceptdialog_signal_custom_action) or [`canceled`](#class_acceptdialog_signal_canceled) signals.
+Removes the `button` from the dialog. Does NOT free the `button`. The `button` must be a [`Button`](class_button.md) added with [`add_button`](class_acceptdialog.md#class_acceptdialog_method_add_button) or [`add_cancel_button`](class_acceptdialog.md#class_acceptdialog_method_add_cancel_button) method. After removal, pressing the `button` will no longer emit this dialog's [`custom_action`](class_acceptdialog.md#class_acceptdialog_signal_custom_action) or [`canceled`](class_acceptdialog.md#class_acceptdialog_signal_canceled) signals.
 
 <!-- rst-class:: classref-section-separator -->
 

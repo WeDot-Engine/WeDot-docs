@@ -13,21 +13,21 @@ Provides common settings to customize the text in a [`Label`](class_label.md).
 
 ## 描述
 
-**LabelSettings** is a resource that provides common settings to customize the text in a [`Label`](class_label.md). It will take priority over the properties defined in [`Control.theme`](#class_control_property_theme). The resource can be shared between multiple labels and changed on the fly, so it's convenient and flexible way to setup text style.
+**LabelSettings** is a resource that provides common settings to customize the text in a [`Label`](class_label.md). It will take priority over the properties defined in [`Control.theme`](class_control.md#class_control_property_theme). The resource can be shared between multiple labels and changed on the fly, so it's convenient and flexible way to setup text style.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Font`](class_font.md)       | [`font`](#class_labelsettings_property_font)                   |                       |
-| [`Color`](class_color.md)     | [`font_color`](#class_labelsettings_property_font_color)       | ``Color(1, 1, 1, 1)`` |
-| [`int`](class_int.md)         | [`font_size`](#class_labelsettings_property_font_size)         | ``16``                |
-| [`float`](class_float.md)     | [`line_spacing`](#class_labelsettings_property_line_spacing)   | ``3.0``               |
-| [`Color`](class_color.md)     | [`outline_color`](#class_labelsettings_property_outline_color) | ``Color(1, 1, 1, 1)`` |
-| [`int`](class_int.md)         | [`outline_size`](#class_labelsettings_property_outline_size)   | ``0``                 |
-| [`Color`](class_color.md)     | [`shadow_color`](#class_labelsettings_property_shadow_color)   | ``Color(0, 0, 0, 0)`` |
-| [`Vector2`](class_vector2.md) | [`shadow_offset`](#class_labelsettings_property_shadow_offset) | ``Vector2(1, 1)``     |
-| [`int`](class_int.md)         | [`shadow_size`](#class_labelsettings_property_shadow_size)     | ``1``                 |
+| [`Font`](class_font.md)       | [`font`](class_labelsettings.md#class_labelsettings_property_font)                   |                       |
+| [`Color`](class_color.md)     | [`font_color`](class_labelsettings.md#class_labelsettings_property_font_color)       | ``Color(1, 1, 1, 1)`` |
+| [`int`](class_int.md)         | [`font_size`](class_labelsettings.md#class_labelsettings_property_font_size)         | ``16``                |
+| [`float`](class_float.md)     | [`line_spacing`](class_labelsettings.md#class_labelsettings_property_line_spacing)   | ``3.0``               |
+| [`Color`](class_color.md)     | [`outline_color`](class_labelsettings.md#class_labelsettings_property_outline_color) | ``Color(1, 1, 1, 1)`` |
+| [`int`](class_int.md)         | [`outline_size`](class_labelsettings.md#class_labelsettings_property_outline_size)   | ``0``                 |
+| [`Color`](class_color.md)     | [`shadow_color`](class_labelsettings.md#class_labelsettings_property_shadow_color)   | ``Color(0, 0, 0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`shadow_offset`](class_labelsettings.md#class_labelsettings_property_shadow_offset) | ``Vector2(1, 1)``     |
+| [`int`](class_int.md)         | [`shadow_size`](class_labelsettings.md#class_labelsettings_property_shadow_size)     | ``1``                 |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -23,28 +23,28 @@ Abstract base class for defining stylized boxes for UI elements.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`content_margin_bottom`](#class_stylebox_property_content_margin_bottom) | ``-1.0`` |
-| [`float`](class_float.md) | [`content_margin_left`](#class_stylebox_property_content_margin_left)     | ``-1.0`` |
-| [`float`](class_float.md) | [`content_margin_right`](#class_stylebox_property_content_margin_right)   | ``-1.0`` |
-| [`float`](class_float.md) | [`content_margin_top`](#class_stylebox_property_content_margin_top)       | ``-1.0`` |
+| [`float`](class_float.md) | [`content_margin_bottom`](class_stylebox.md#class_stylebox_property_content_margin_bottom) | ``-1.0`` |
+| [`float`](class_float.md) | [`content_margin_left`](class_stylebox.md#class_stylebox_property_content_margin_left)     | ``-1.0`` |
+| [`float`](class_float.md) | [`content_margin_right`](class_stylebox.md#class_stylebox_property_content_margin_right)   | ``-1.0`` |
+| [`float`](class_float.md) | [`content_margin_top`](class_stylebox.md#class_stylebox_property_content_margin_top)       | ``-1.0`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                              | [`_draw`](#class_stylebox_private_method__draw) ( to_canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]          |
-| [`Rect2`](class_rect2.md)           | [`_get_draw_rect`](#class_stylebox_private_method__get_draw_rect) ( rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]                               |
-| [`Vector2`](class_vector2.md)       | [`_get_minimum_size`](#class_stylebox_private_method__get_minimum_size) ( ) virtual[^virtual] const[^const]                                                         |
-| [`bool`](class_bool.md)             | [`_test_mask`](#class_stylebox_private_method__test_mask) ( point: [`Vector2`](class_vector2.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const] |
-| `void`                              | [`draw`](#class_stylebox_method_draw) ( canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) const[^const]                                         |
-| [`float`](class_float.md)           | [`get_content_margin`](#class_stylebox_method_get_content_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                         |
-| [`CanvasItem`](class_canvasitem.md) | [`get_current_item_drawn`](#class_stylebox_method_get_current_item_drawn) ( ) const[^const]                                                                         |
-| [`float`](class_float.md)           | [`get_margin`](#class_stylebox_method_get_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                                         |
-| [`Vector2`](class_vector2.md)       | [`get_minimum_size`](#class_stylebox_method_get_minimum_size) ( ) const[^const]                                                                                     |
-| [`Vector2`](class_vector2.md)       | [`get_offset`](#class_stylebox_method_get_offset) ( ) const[^const]                                                                                                 |
-| `void`                              | [`set_content_margin`](#class_stylebox_method_set_content_margin) ( margin: [Side](#enum_@globalscope_side), offset: [`float`](class_float.md) )                    |
-| `void`                              | [`set_content_margin_all`](#class_stylebox_method_set_content_margin_all) ( offset: [`float`](class_float.md) )                                                     |
-| [`bool`](class_bool.md)             | [`test_mask`](#class_stylebox_method_test_mask) ( point: [`Vector2`](class_vector2.md), rect: [`Rect2`](class_rect2.md) ) const[^const]                             |
+| `void`                              | [`_draw`](class_stylebox.md#class_stylebox_private_method__draw) ( to_canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]          |
+| [`Rect2`](class_rect2.md)           | [`_get_draw_rect`](class_stylebox.md#class_stylebox_private_method__get_draw_rect) ( rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]                               |
+| [`Vector2`](class_vector2.md)       | [`_get_minimum_size`](class_stylebox.md#class_stylebox_private_method__get_minimum_size) ( ) virtual[^virtual] const[^const]                                                         |
+| [`bool`](class_bool.md)             | [`_test_mask`](class_stylebox.md#class_stylebox_private_method__test_mask) ( point: [`Vector2`](class_vector2.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const] |
+| `void`                              | [`draw`](class_stylebox.md#class_stylebox_method_draw) ( canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) const[^const]                                         |
+| [`float`](class_float.md)           | [`get_content_margin`](class_stylebox.md#class_stylebox_method_get_content_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                         |
+| [`CanvasItem`](class_canvasitem.md) | [`get_current_item_drawn`](class_stylebox.md#class_stylebox_method_get_current_item_drawn) ( ) const[^const]                                                                         |
+| [`float`](class_float.md)           | [`get_margin`](class_stylebox.md#class_stylebox_method_get_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                                         |
+| [`Vector2`](class_vector2.md)       | [`get_minimum_size`](class_stylebox.md#class_stylebox_method_get_minimum_size) ( ) const[^const]                                                                                     |
+| [`Vector2`](class_vector2.md)       | [`get_offset`](class_stylebox.md#class_stylebox_method_get_offset) ( ) const[^const]                                                                                                 |
+| `void`                              | [`set_content_margin`](class_stylebox.md#class_stylebox_method_set_content_margin) ( margin: [Side](#enum_@globalscope_side), offset: [`float`](class_float.md) )                    |
+| `void`                              | [`set_content_margin_all`](class_stylebox.md#class_stylebox_method_set_content_margin_all) ( offset: [`float`](class_float.md) )                                                     |
+| [`bool`](class_bool.md)             | [`test_mask`](class_stylebox.md#class_stylebox_method_test_mask) ( point: [`Vector2`](class_vector2.md), rect: [`Rect2`](class_rect2.md) ) const[^const]                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -65,7 +65,7 @@ If this value is negative, it is ignored and a child-specific margin is used ins
 
 It is up to the code using this style box to decide what these contents are: for example, a [`Button`](class_button.md) respects this content margin for the textual contents of the button.
 
- [`get_margin`](#class_stylebox_method_get_margin) should be used to fetch this value as consumer instead of reading these properties directly. This is because it correctly respects negative values and the fallback mentioned above.
+ [`get_margin`](class_stylebox.md#class_stylebox_method_get_margin) should be used to fetch this value as consumer instead of reading these properties directly. This is because it correctly respects negative values and the fallback mentioned above.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -80,7 +80,7 @@ It is up to the code using this style box to decide what these contents are: for
 
 The left margin for the contents of this style box. Increasing this value reduces the space available to the contents from the left.
 
-Refer to [`content_margin_bottom`](#class_stylebox_property_content_margin_bottom) for extra considerations.
+Refer to [`content_margin_bottom`](class_stylebox.md#class_stylebox_property_content_margin_bottom) for extra considerations.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -95,7 +95,7 @@ Refer to [`content_margin_bottom`](#class_stylebox_property_content_margin_botto
 
 The right margin for the contents of this style box. Increasing this value reduces the space available to the contents from the right.
 
-Refer to [`content_margin_bottom`](#class_stylebox_property_content_margin_bottom) for extra considerations.
+Refer to [`content_margin_bottom`](class_stylebox.md#class_stylebox_property_content_margin_bottom) for extra considerations.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -110,7 +110,7 @@ Refer to [`content_margin_bottom`](#class_stylebox_property_content_margin_botto
 
 The top margin for the contents of this style box. Increasing this value reduces the space available to the contents from the top.
 
-Refer to [`content_margin_bottom`](#class_stylebox_property_content_margin_bottom) for extra considerations.
+Refer to [`content_margin_bottom`](class_stylebox.md#class_stylebox_property_content_margin_bottom) for extra considerations.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -142,7 +142,7 @@ Refer to [`content_margin_bottom`](#class_stylebox_property_content_margin_botto
 
 [`Vector2`](class_vector2.md) **_get_minimum_size** ( ) virtual[^virtual] const[^const]<div id="class_stylebox_private_method__get_minimum_size"></div>
 
-Virtual method to be implemented by the user. Returns a custom minimum size that the stylebox must respect when drawing. By default [`get_minimum_size`](#class_stylebox_method_get_minimum_size) only takes content margins into account. This method can be overridden to add another size restriction. A combination of the default behavior and the output of this method will be used, to account for both sizes.
+Virtual method to be implemented by the user. Returns a custom minimum size that the stylebox must respect when drawing. By default [`get_minimum_size`](class_stylebox.md#class_stylebox_method_get_minimum_size) only takes content margins into account. This method can be overridden to add another size restriction. A combination of the default behavior and the output of this method will be used, to account for both sizes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -164,7 +164,7 @@ Virtual method to be implemented by the user. Returns a custom minimum size that
 
 Draws this stylebox using a canvas item identified by the given [`RID`](class_rid.md).
 
-The [`RID`](class_rid.md) value can either be the result of [`CanvasItem.get_canvas_item`](#class_canvasitem_method_get_canvas_item) called on an existing [`CanvasItem`](class_canvasitem.md)-derived node, or directly from creating a canvas item in the [`RenderingServer`](class_renderingserver.md) with [`RenderingServer.canvas_item_create`](#class_renderingserver_method_canvas_item_create).
+The [`RID`](class_rid.md) value can either be the result of [`CanvasItem.get_canvas_item`](class_canvasitem.md#class_canvasitem_method_get_canvas_item) called on an existing [`CanvasItem`](class_canvasitem.md)-derived node, or directly from creating a canvas item in the [`RenderingServer`](class_renderingserver.md) with [`RenderingServer.canvas_item_create`](class_renderingserver.md#class_renderingserver_method_canvas_item_create).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -184,7 +184,7 @@ Returns the default margin of the specified [Side](#enum_@globalscope_side).
 
 [`CanvasItem`](class_canvasitem.md) **get_current_item_drawn** ( ) const[^const]<div id="class_stylebox_method_get_current_item_drawn"></div>
 
-Returns the [`CanvasItem`](class_canvasitem.md) that handles its [`CanvasItem.NOTIFICATION_DRAW`](#class_canvasitem_constant_notification_draw) or [`CanvasItem._draw`](#class_canvasitem_private_method__draw) callback at this moment.
+Returns the [`CanvasItem`](class_canvasitem.md) that handles its [`CanvasItem.NOTIFICATION_DRAW`](class_canvasitem.md#class_canvasitem_constant_notification_draw) or [`CanvasItem._draw`](class_canvasitem.md#class_canvasitem_private_method__draw) callback at this moment.
 
 <!-- rst-class:: classref-item-separator -->
 

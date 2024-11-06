@@ -13,13 +13,13 @@ A [`Color`](class_color.md) function to be used within the visual shader graph.
 
 ## 描述
 
-Accept a [`Color`](class_color.md) to the input port and transform it according to [`function`](#class_visualshadernodecolorfunc_property_function).
+Accept a [`Color`](class_color.md) to the input port and transform it according to [`function`](class_visualshadernodecolorfunc.md#class_visualshadernodecolorfunc_property_function).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Function](#enum_visualshadernodecolorfunc_function) | [`function`](#class_visualshadernodecolorfunc_property_function) | ``0`` |
+| [Function](#enum_visualshadernodecolorfunc_function) | [`function`](class_visualshadernodecolorfunc.md#class_visualshadernodecolorfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

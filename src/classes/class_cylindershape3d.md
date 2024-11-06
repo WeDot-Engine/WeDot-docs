@@ -23,8 +23,8 @@ A 3D cylinder shape, intended for use in physics. Usually used to provide a shap
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`height`](#class_cylindershape3d_property_height) | ``2.0`` |
-| [`float`](class_float.md) | [`radius`](#class_cylindershape3d_property_radius) | ``0.5`` |
+| [`float`](class_float.md) | [`height`](class_cylindershape3d.md#class_cylindershape3d_property_height) | ``2.0`` |
+| [`float`](class_float.md) | [`radius`](class_cylindershape3d.md#class_cylindershape3d_property_radius) | ``0.5`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -19,8 +19,8 @@ A 2D world boundary shape, intended for use in physics. **WorldBoundaryShape2D**
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)     | [`distance`](#class_worldboundaryshape2d_property_distance) | ``0.0``            |
-| [`Vector2`](class_vector2.md) | [`normal`](#class_worldboundaryshape2d_property_normal)     | ``Vector2(0, -1)`` |
+| [`float`](class_float.md)     | [`distance`](class_worldboundaryshape2d.md#class_worldboundaryshape2d_property_distance) | ``0.0``            |
+| [`Vector2`](class_vector2.md) | [`normal`](class_worldboundaryshape2d.md#class_worldboundaryshape2d_property_normal)     | ``Vector2(0, -1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -35,9 +35,9 @@ A 2D world boundary shape, intended for use in physics. **WorldBoundaryShape2D**
 - `void` **set_distance** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_distance** ( )
 
-The distance from the origin to the line, expressed in terms of [`normal`](#class_worldboundaryshape2d_property_normal) (according to its direction and magnitude). Actual absolute distance from the origin to the line can be calculated as `abs(distance) / normal.length()`.
+The distance from the origin to the line, expressed in terms of [`normal`](class_worldboundaryshape2d.md#class_worldboundaryshape2d_property_normal) (according to its direction and magnitude). Actual absolute distance from the origin to the line can be calculated as `abs(distance) / normal.length()`.
 
-In the scalar equation of the line `ax + by = d`, this is `d`, while the `(a, b)` coordinates are represented by the [`normal`](#class_worldboundaryshape2d_property_normal) property.
+In the scalar equation of the line `ax + by = d`, this is `d`, while the `(a, b)` coordinates are represented by the [`normal`](class_worldboundaryshape2d.md#class_worldboundaryshape2d_property_normal) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -50,7 +50,7 @@ In the scalar equation of the line `ax + by = d`, this is `d`, while the `(a, b)
 - `void` **set_normal** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_normal** ( )
 
-The line's normal, typically a unit vector. Its direction indicates the non-colliding half-plane. Can be of any length but zero. Defaults to [`Vector2.UP`](#class_vector2_constant_up).
+The line's normal, typically a unit vector. Its direction indicates the non-colliding half-plane. Can be of any length but zero. Defaults to [`Vector2.UP`](class_vector2.md#class_vector2_constant_up).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

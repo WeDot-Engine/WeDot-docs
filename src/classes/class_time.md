@@ -19,35 +19,35 @@ This class conforms with as many of the ISO 8601 standards as possible. All date
 
 Conversion methods assume "the same timezone", and do not handle timezone conversions or DST automatically. Leap seconds are also not handled, they must be done manually if desired. Suffixes such as "Z" are not handled, you need to strip them away manually.
 
-When getting time information from the system, the time can either be in the local timezone or UTC depending on the `utc` parameter. However, the [`get_unix_time_from_system`](#class_time_method_get_unix_time_from_system) method always uses UTC as it returns the seconds passed since the [*Unix epoch*](https://en.wikipedia.org/wiki/Unix_time).
+When getting time information from the system, the time can either be in the local timezone or UTC depending on the `utc` parameter. However, the [`get_unix_time_from_system`](class_time.md#class_time_method_get_unix_time_from_system) method always uses UTC as it returns the seconds passed since the [*Unix epoch*](https://en.wikipedia.org/wiki/Unix_time).
 
- **Important:** The `_from_system` methods use the system clock that the user can manually set. **Never use** this method for precise time calculation since its results are subject to automatic adjustments by the user or the operating system. **Always use** [`get_ticks_usec`](#class_time_method_get_ticks_usec) or [`get_ticks_msec`](#class_time_method_get_ticks_msec) for precise time calculation instead, since they are guaranteed to be monotonic (i.e. never decrease).
+ **Important:** The `_from_system` methods use the system clock that the user can manually set. **Never use** this method for precise time calculation since its results are subject to automatic adjustments by the user or the operating system. **Always use** [`get_ticks_usec`](class_time.md#class_time_method_get_ticks_usec) or [`get_ticks_msec`](class_time.md#class_time_method_get_ticks_msec) for precise time calculation instead, since they are guaranteed to be monotonic (i.e. never decrease).
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`get_date_dict_from_system`](#class_time_method_get_date_dict_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                        |
-| [`Dictionary`](class_dictionary.md) | [`get_date_dict_from_unix_time`](#class_time_method_get_date_dict_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                                  |
-| [`String`](class_string.md)         | [`get_date_string_from_system`](#class_time_method_get_date_string_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                    |
-| [`String`](class_string.md)         | [`get_date_string_from_unix_time`](#class_time_method_get_date_string_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                              |
-| [`Dictionary`](class_dictionary.md) | [`get_datetime_dict_from_datetime_string`](#class_time_method_get_datetime_dict_from_datetime_string) ( datetime: [`String`](class_string.md), weekday: [`bool`](class_bool.md) ) const[^const]           |
-| [`Dictionary`](class_dictionary.md) | [`get_datetime_dict_from_system`](#class_time_method_get_datetime_dict_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                |
-| [`Dictionary`](class_dictionary.md) | [`get_datetime_dict_from_unix_time`](#class_time_method_get_datetime_dict_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                          |
-| [`String`](class_string.md)         | [`get_datetime_string_from_datetime_dict`](#class_time_method_get_datetime_string_from_datetime_dict) ( datetime: [`Dictionary`](class_dictionary.md), use_space: [`bool`](class_bool.md) ) const[^const] |
-| [`String`](class_string.md)         | [`get_datetime_string_from_system`](#class_time_method_get_datetime_string_from_system) ( utc: [`bool`](class_bool.md) = false, use_space: [`bool`](class_bool.md) = false ) const[^const]                |
-| [`String`](class_string.md)         | [`get_datetime_string_from_unix_time`](#class_time_method_get_datetime_string_from_unix_time) ( unix_time_val: [`int`](class_int.md), use_space: [`bool`](class_bool.md) = false ) const[^const]          |
-| [`String`](class_string.md)         | [`get_offset_string_from_offset_minutes`](#class_time_method_get_offset_string_from_offset_minutes) ( offset_minutes: [`int`](class_int.md) ) const[^const]                                               |
-| [`int`](class_int.md)               | [`get_ticks_msec`](#class_time_method_get_ticks_msec) ( ) const[^const]                                                                                                                                   |
-| [`int`](class_int.md)               | [`get_ticks_usec`](#class_time_method_get_ticks_usec) ( ) const[^const]                                                                                                                                   |
-| [`Dictionary`](class_dictionary.md) | [`get_time_dict_from_system`](#class_time_method_get_time_dict_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                        |
-| [`Dictionary`](class_dictionary.md) | [`get_time_dict_from_unix_time`](#class_time_method_get_time_dict_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                                  |
-| [`String`](class_string.md)         | [`get_time_string_from_system`](#class_time_method_get_time_string_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                    |
-| [`String`](class_string.md)         | [`get_time_string_from_unix_time`](#class_time_method_get_time_string_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                              |
-| [`Dictionary`](class_dictionary.md) | [`get_time_zone_from_system`](#class_time_method_get_time_zone_from_system) ( ) const[^const]                                                                                                             |
-| [`int`](class_int.md)               | [`get_unix_time_from_datetime_dict`](#class_time_method_get_unix_time_from_datetime_dict) ( datetime: [`Dictionary`](class_dictionary.md) ) const[^const]                                                 |
-| [`int`](class_int.md)               | [`get_unix_time_from_datetime_string`](#class_time_method_get_unix_time_from_datetime_string) ( datetime: [`String`](class_string.md) ) const[^const]                                                     |
-| [`float`](class_float.md)           | [`get_unix_time_from_system`](#class_time_method_get_unix_time_from_system) ( ) const[^const]                                                                                                             |
+| [`Dictionary`](class_dictionary.md) | [`get_date_dict_from_system`](class_time.md#class_time_method_get_date_dict_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                        |
+| [`Dictionary`](class_dictionary.md) | [`get_date_dict_from_unix_time`](class_time.md#class_time_method_get_date_dict_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                                  |
+| [`String`](class_string.md)         | [`get_date_string_from_system`](class_time.md#class_time_method_get_date_string_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                    |
+| [`String`](class_string.md)         | [`get_date_string_from_unix_time`](class_time.md#class_time_method_get_date_string_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                              |
+| [`Dictionary`](class_dictionary.md) | [`get_datetime_dict_from_datetime_string`](class_time.md#class_time_method_get_datetime_dict_from_datetime_string) ( datetime: [`String`](class_string.md), weekday: [`bool`](class_bool.md) ) const[^const]           |
+| [`Dictionary`](class_dictionary.md) | [`get_datetime_dict_from_system`](class_time.md#class_time_method_get_datetime_dict_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                |
+| [`Dictionary`](class_dictionary.md) | [`get_datetime_dict_from_unix_time`](class_time.md#class_time_method_get_datetime_dict_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                          |
+| [`String`](class_string.md)         | [`get_datetime_string_from_datetime_dict`](class_time.md#class_time_method_get_datetime_string_from_datetime_dict) ( datetime: [`Dictionary`](class_dictionary.md), use_space: [`bool`](class_bool.md) ) const[^const] |
+| [`String`](class_string.md)         | [`get_datetime_string_from_system`](class_time.md#class_time_method_get_datetime_string_from_system) ( utc: [`bool`](class_bool.md) = false, use_space: [`bool`](class_bool.md) = false ) const[^const]                |
+| [`String`](class_string.md)         | [`get_datetime_string_from_unix_time`](class_time.md#class_time_method_get_datetime_string_from_unix_time) ( unix_time_val: [`int`](class_int.md), use_space: [`bool`](class_bool.md) = false ) const[^const]          |
+| [`String`](class_string.md)         | [`get_offset_string_from_offset_minutes`](class_time.md#class_time_method_get_offset_string_from_offset_minutes) ( offset_minutes: [`int`](class_int.md) ) const[^const]                                               |
+| [`int`](class_int.md)               | [`get_ticks_msec`](class_time.md#class_time_method_get_ticks_msec) ( ) const[^const]                                                                                                                                   |
+| [`int`](class_int.md)               | [`get_ticks_usec`](class_time.md#class_time_method_get_ticks_usec) ( ) const[^const]                                                                                                                                   |
+| [`Dictionary`](class_dictionary.md) | [`get_time_dict_from_system`](class_time.md#class_time_method_get_time_dict_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                        |
+| [`Dictionary`](class_dictionary.md) | [`get_time_dict_from_unix_time`](class_time.md#class_time_method_get_time_dict_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                                  |
+| [`String`](class_string.md)         | [`get_time_string_from_system`](class_time.md#class_time_method_get_time_string_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                    |
+| [`String`](class_string.md)         | [`get_time_string_from_unix_time`](class_time.md#class_time_method_get_time_string_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                              |
+| [`Dictionary`](class_dictionary.md) | [`get_time_zone_from_system`](class_time.md#class_time_method_get_time_zone_from_system) ( ) const[^const]                                                                                                             |
+| [`int`](class_int.md)               | [`get_unix_time_from_datetime_dict`](class_time.md#class_time_method_get_unix_time_from_datetime_dict) ( datetime: [`Dictionary`](class_dictionary.md) ) const[^const]                                                 |
+| [`int`](class_int.md)               | [`get_unix_time_from_datetime_string`](class_time.md#class_time_method_get_unix_time_from_datetime_string) ( datetime: [`String`](class_string.md) ) const[^const]                                                     |
+| [`float`](class_float.md)           | [`get_unix_time_from_system`](class_time.md#class_time_method_get_unix_time_from_system) ( ) const[^const]                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -261,7 +261,7 @@ Returns the current date as a dictionary of keys: `year`, `month`, `day`, `weekd
 
 Converts the given Unix timestamp to a dictionary of keys: `year`, `month`, `day`, `weekday`, `hour`, `minute`, and `second`.
 
-The returned Dictionary's values will be the same as the [`get_datetime_dict_from_system`](#class_time_method_get_datetime_dict_from_system) if the Unix timestamp is the current time, with the exception of Daylight Savings Time as it cannot be determined from the epoch.
+The returned Dictionary's values will be the same as the [`get_datetime_dict_from_system`](class_time.md#class_time_method_get_datetime_dict_from_system) if the Unix timestamp is the current time, with the exception of Daylight Savings Time as it cannot be determined from the epoch.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -411,7 +411,7 @@ The given dictionary can be populated with the following keys: `year`, `month`, 
 
 If the dictionary is empty, `0` is returned. If some keys are omitted, they default to the equivalent values for the Unix epoch timestamp 0 (1970-01-01 at 00:00:00).
 
-You can pass the output from [`get_datetime_dict_from_unix_time`](#class_time_method_get_datetime_dict_from_unix_time) directly into this function and get the same as what was put in.
+You can pass the output from [`get_datetime_dict_from_unix_time`](class_time.md#class_time_method_get_datetime_dict_from_unix_time) directly into this function and get the same as what was put in.
 
  **Note:** Unix timestamps are often in UTC. This method does not do any timezone conversion, so the timestamp will be in the same timezone as the given datetime dictionary.
 

@@ -21,15 +21,15 @@ When used in a [`WorldEnvironment`](class_worldenvironment.md) it provides defau
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`auto_exposure_max_sensitivity`](#class_cameraattributespractical_property_auto_exposure_max_sensitivity) | ``800.0`` |
-| [`float`](class_float.md) | [`auto_exposure_min_sensitivity`](#class_cameraattributespractical_property_auto_exposure_min_sensitivity) | ``0.0``   |
-| [`float`](class_float.md) | [`dof_blur_amount`](#class_cameraattributespractical_property_dof_blur_amount)                             | ``0.1``   |
-| [`float`](class_float.md) | [`dof_blur_far_distance`](#class_cameraattributespractical_property_dof_blur_far_distance)                 | ``10.0``  |
-| [`bool`](class_bool.md)   | [`dof_blur_far_enabled`](#class_cameraattributespractical_property_dof_blur_far_enabled)                   | ``false`` |
-| [`float`](class_float.md) | [`dof_blur_far_transition`](#class_cameraattributespractical_property_dof_blur_far_transition)             | ``5.0``   |
-| [`float`](class_float.md) | [`dof_blur_near_distance`](#class_cameraattributespractical_property_dof_blur_near_distance)               | ``2.0``   |
-| [`bool`](class_bool.md)   | [`dof_blur_near_enabled`](#class_cameraattributespractical_property_dof_blur_near_enabled)                 | ``false`` |
-| [`float`](class_float.md) | [`dof_blur_near_transition`](#class_cameraattributespractical_property_dof_blur_near_transition)           | ``1.0``   |
+| [`float`](class_float.md) | [`auto_exposure_max_sensitivity`](class_cameraattributespractical.md#class_cameraattributespractical_property_auto_exposure_max_sensitivity) | ``800.0`` |
+| [`float`](class_float.md) | [`auto_exposure_min_sensitivity`](class_cameraattributespractical.md#class_cameraattributespractical_property_auto_exposure_min_sensitivity) | ``0.0``   |
+| [`float`](class_float.md) | [`dof_blur_amount`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_amount)                             | ``0.1``   |
+| [`float`](class_float.md) | [`dof_blur_far_distance`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_far_distance)                 | ``10.0``  |
+| [`bool`](class_bool.md)   | [`dof_blur_far_enabled`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_far_enabled)                   | ``false`` |
+| [`float`](class_float.md) | [`dof_blur_far_transition`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_far_transition)             | ``5.0``   |
+| [`float`](class_float.md) | [`dof_blur_near_distance`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_near_distance)               | ``2.0``   |
+| [`bool`](class_bool.md)   | [`dof_blur_near_enabled`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_near_enabled)                 | ``false`` |
+| [`float`](class_float.md) | [`dof_blur_near_transition`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_near_transition)           | ``1.0``   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -96,7 +96,7 @@ Objects further from the [`Camera3D`](class_camera3d.md) by this amount will be 
 - `void` **set_dof_blur_far_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_dof_blur_far_enabled** ( )
 
-Enables depth of field blur for objects further than [`dof_blur_far_distance`](#class_cameraattributespractical_property_dof_blur_far_distance). Strength of blur is controlled by [`dof_blur_amount`](#class_cameraattributespractical_property_dof_blur_amount) and modulated by [`dof_blur_far_transition`](#class_cameraattributespractical_property_dof_blur_far_transition).
+Enables depth of field blur for objects further than [`dof_blur_far_distance`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_far_distance). Strength of blur is controlled by [`dof_blur_amount`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_amount) and modulated by [`dof_blur_far_transition`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_far_transition).
 
  **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
@@ -111,7 +111,7 @@ Enables depth of field blur for objects further than [`dof_blur_far_distance`](#
 - `void` **set_dof_blur_far_transition** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_dof_blur_far_transition** ( )
 
-When positive, distance over which (starting from [`dof_blur_far_distance`](#class_cameraattributespractical_property_dof_blur_far_distance)) blur effect will scale from 0 to [`dof_blur_amount`](#class_cameraattributespractical_property_dof_blur_amount). When negative, uses physically-based scaling so depth of field effect will scale from 0 at [`dof_blur_far_distance`](#class_cameraattributespractical_property_dof_blur_far_distance) and will increase in a physically accurate way as objects get further from the [`Camera3D`](class_camera3d.md).
+When positive, distance over which (starting from [`dof_blur_far_distance`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_far_distance)) blur effect will scale from 0 to [`dof_blur_amount`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_amount). When negative, uses physically-based scaling so depth of field effect will scale from 0 at [`dof_blur_far_distance`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_far_distance) and will increase in a physically accurate way as objects get further from the [`Camera3D`](class_camera3d.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -137,7 +137,7 @@ Objects closer from the [`Camera3D`](class_camera3d.md) by this amount will be b
 - `void` **set_dof_blur_near_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_dof_blur_near_enabled** ( )
 
-Enables depth of field blur for objects closer than [`dof_blur_near_distance`](#class_cameraattributespractical_property_dof_blur_near_distance). Strength of blur is controlled by [`dof_blur_amount`](#class_cameraattributespractical_property_dof_blur_amount) and modulated by [`dof_blur_near_transition`](#class_cameraattributespractical_property_dof_blur_near_transition).
+Enables depth of field blur for objects closer than [`dof_blur_near_distance`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_near_distance). Strength of blur is controlled by [`dof_blur_amount`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_amount) and modulated by [`dof_blur_near_transition`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_near_transition).
 
  **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
@@ -152,7 +152,7 @@ Enables depth of field blur for objects closer than [`dof_blur_near_distance`](#
 - `void` **set_dof_blur_near_transition** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_dof_blur_near_transition** ( )
 
-When positive, distance over which blur effect will scale from 0 to [`dof_blur_amount`](#class_cameraattributespractical_property_dof_blur_amount), ending at [`dof_blur_near_distance`](#class_cameraattributespractical_property_dof_blur_near_distance). When negative, uses physically-based scaling so depth of field effect will scale from 0 at [`dof_blur_near_distance`](#class_cameraattributespractical_property_dof_blur_near_distance) and will increase in a physically accurate way as objects get closer to the [`Camera3D`](class_camera3d.md).
+When positive, distance over which blur effect will scale from 0 to [`dof_blur_amount`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_amount), ending at [`dof_blur_near_distance`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_near_distance). When negative, uses physically-based scaling so depth of field effect will scale from 0 at [`dof_blur_near_distance`](class_cameraattributespractical.md#class_cameraattributespractical_property_dof_blur_near_distance) and will increase in a physically accurate way as objects get closer to the [`Camera3D`](class_camera3d.md).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -23,17 +23,17 @@ A container that represents a basic element that can be placed inside a [`GraphE
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)       | [`draggable`](#class_graphelement_property_draggable)             | ``true``          |
-| [`Vector2`](class_vector2.md) | [`position_offset`](#class_graphelement_property_position_offset) | ``Vector2(0, 0)`` |
-| [`bool`](class_bool.md)       | [`resizable`](#class_graphelement_property_resizable)             | ``false``         |
-| [`bool`](class_bool.md)       | [`selectable`](#class_graphelement_property_selectable)           | ``true``          |
-| [`bool`](class_bool.md)       | [`selected`](#class_graphelement_property_selected)               | ``false``         |
+| [`bool`](class_bool.md)       | [`draggable`](class_graphelement.md#class_graphelement_property_draggable)             | ``true``          |
+| [`Vector2`](class_vector2.md) | [`position_offset`](class_graphelement.md#class_graphelement_property_position_offset) | ``Vector2(0, 0)`` |
+| [`bool`](class_bool.md)       | [`resizable`](class_graphelement.md#class_graphelement_property_resizable)             | ``false``         |
+| [`bool`](class_bool.md)       | [`selectable`](class_graphelement.md#class_graphelement_property_selectable)           | ``true``          |
+| [`bool`](class_bool.md)       | [`selected`](class_graphelement.md#class_graphelement_property_selected)               | ``false``         |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`resizer`](#class_graphelement_theme_icon_resizer) |
+| [`Texture2D`](class_texture2d.md) | [`resizer`](class_graphelement.md#class_graphelement_theme_icon_resizer) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -105,7 +105,7 @@ Emitted when displaying the GraphElement over other ones is requested. Happens o
 
 **resize_end** ( new_size: [`Vector2`](class_vector2.md) ) <div id="class_graphelement_signal_resize_end"></div>
 
-Emitted when releasing the mouse button after dragging the resizer handle (see [`resizable`](#class_graphelement_property_resizable)).
+Emitted when releasing the mouse button after dragging the resizer handle (see [`resizable`](class_graphelement.md#class_graphelement_property_resizable)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -115,7 +115,7 @@ Emitted when releasing the mouse button after dragging the resizer handle (see [
 
 **resize_request** ( new_size: [`Vector2`](class_vector2.md) ) <div id="class_graphelement_signal_resize_request"></div>
 
-Emitted when resizing the GraphElement is requested. Happens on dragging the resizer handle (see [`resizable`](#class_graphelement_property_resizable)).
+Emitted when resizing the GraphElement is requested. Happens on dragging the resizer handle (see [`resizable`](class_graphelement.md#class_graphelement_property_resizable)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -158,7 +158,7 @@ The offset of the GraphElement, relative to the scroll offset of the [`GraphEdit
 
 If `true`, the user can resize the GraphElement.
 
- **Note:** Dragging the handle will only emit the [`resize_request`](#class_graphelement_signal_resize_request) and [`resize_end`](#class_graphelement_signal_resize_end) signals, the GraphElement needs to be resized manually.
+ **Note:** Dragging the handle will only emit the [`resize_request`](class_graphelement.md#class_graphelement_signal_resize_request) and [`resize_end`](class_graphelement.md#class_graphelement_signal_resize_end) signals, the GraphElement needs to be resized manually.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -196,7 +196,7 @@ If `true`, the GraphElement is selected.
 
 [`Texture2D`](class_texture2d.md) **resizer** <div id="class_graphelement_theme_icon_resizer"></div>
 
-The icon used for the resizer, visible when [`resizable`](#class_graphelement_property_resizable) is enabled.
+The icon used for the resizer, visible when [`resizable`](class_graphelement.md#class_graphelement_property_resizable) is enabled.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -19,11 +19,11 @@ Class representing a prism-shaped [`PrimitiveMesh`](class_primitivemesh.md).
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)     | [`left_to_right`](#class_prismmesh_property_left_to_right)       | ``0.5``              |
-| [`Vector3`](class_vector3.md) | [`size`](#class_prismmesh_property_size)                         | ``Vector3(1, 1, 1)`` |
-| [`int`](class_int.md)         | [`subdivide_depth`](#class_prismmesh_property_subdivide_depth)   | ``0``                |
-| [`int`](class_int.md)         | [`subdivide_height`](#class_prismmesh_property_subdivide_height) | ``0``                |
-| [`int`](class_int.md)         | [`subdivide_width`](#class_prismmesh_property_subdivide_width)   | ``0``                |
+| [`float`](class_float.md)     | [`left_to_right`](class_prismmesh.md#class_prismmesh_property_left_to_right)       | ``0.5``              |
+| [`Vector3`](class_vector3.md) | [`size`](class_prismmesh.md#class_prismmesh_property_size)                         | ``Vector3(1, 1, 1)`` |
+| [`int`](class_int.md)         | [`subdivide_depth`](class_prismmesh.md#class_prismmesh_property_subdivide_depth)   | ``0``                |
+| [`int`](class_int.md)         | [`subdivide_height`](class_prismmesh.md#class_prismmesh_property_subdivide_height) | ``0``                |
+| [`int`](class_int.md)         | [`subdivide_width`](class_prismmesh.md#class_prismmesh_property_subdivide_width)   | ``0``                |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -19,8 +19,8 @@ A [`VisualShaderNodeParameter`](class_visualshadernodeparameter.md) of type unsi
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)   | [`default_value`](#class_visualshadernodeuintparameter_property_default_value)                 | ``0``     |
-| [`bool`](class_bool.md) | [`default_value_enabled`](#class_visualshadernodeuintparameter_property_default_value_enabled) | ``false`` |
+| [`int`](class_int.md)   | [`default_value`](class_visualshadernodeuintparameter.md#class_visualshadernodeuintparameter_property_default_value)                 | ``0``     |
+| [`bool`](class_bool.md) | [`default_value_enabled`](class_visualshadernodeuintparameter.md#class_visualshadernodeuintparameter_property_default_value_enabled) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -35,7 +35,7 @@ A [`VisualShaderNodeParameter`](class_visualshadernodeparameter.md) of type unsi
 - `void` **set_default_value** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_default_value** ( )
 
-Default value of this parameter, which will be used if not set externally. [`default_value_enabled`](#class_visualshadernodeuintparameter_property_default_value_enabled) must be enabled; defaults to `0` otherwise.
+Default value of this parameter, which will be used if not set externally. [`default_value_enabled`](class_visualshadernodeuintparameter.md#class_visualshadernodeuintparameter_property_default_value_enabled) must be enabled; defaults to `0` otherwise.
 
 <!-- rst-class:: classref-item-separator -->
 

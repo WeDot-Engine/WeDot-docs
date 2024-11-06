@@ -21,7 +21,7 @@ The occlusion culling system works by rendering the occluders on the CPU in para
 
  **Baking:** Select an **OccluderInstance3D** node, then use the **Bake Occluders** button at the top of the 3D editor. Only opaque materials will be taken into account; transparent materials (alpha-blended or alpha-tested) will be ignored by the occluder generation.
 
- **Note:** Occlusion culling is only effective if [`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling`](#class_projectsettings_property_rendering/occlusion_culling/use_occlusion_culling) is `true`. Enabling occlusion culling has a cost on the CPU. Only enable occlusion culling if you actually plan to use it. Large open scenes with few or no objects blocking the view will generally not benefit much from occlusion culling. Large open scenes generally benefit more from mesh LOD and visibility ranges ([`GeometryInstance3D.visibility_range_begin`](#class_geometryinstance3d_property_visibility_range_begin) and [`GeometryInstance3D.visibility_range_end`](#class_geometryinstance3d_property_visibility_range_end)) compared to occlusion culling.
+ **Note:** Occlusion culling is only effective if [`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling`](class_projectsettings.md#class_projectsettings_property_rendering/occlusion_culling/use_occlusion_culling) is `true`. Enabling occlusion culling has a cost on the CPU. Only enable occlusion culling if you actually plan to use it. Large open scenes with few or no objects blocking the view will generally not benefit much from occlusion culling. Large open scenes generally benefit more from mesh LOD and visibility ranges ([`GeometryInstance3D.visibility_range_begin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin) and [`GeometryInstance3D.visibility_range_end`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end)) compared to occlusion culling.
 
  **Note:** Due to memory constraints, occlusion culling is not supported by default in Web export templates. It can be enabled by compiling custom Web export templates with `module_raycast_enabled=yes`.
 
@@ -29,16 +29,16 @@ The occlusion culling system works by rendering the occluders on the CPU in para
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)               | [`bake_mask`](#class_occluderinstance3d_property_bake_mask)                                       | ``4294967295`` |
-| [`float`](class_float.md)           | [`bake_simplification_distance`](#class_occluderinstance3d_property_bake_simplification_distance) | ``0.1``        |
-| [`Occluder3D`](class_occluder3d.md) | [`occluder`](#class_occluderinstance3d_property_occluder)                                         |                |
+| [`int`](class_int.md)               | [`bake_mask`](class_occluderinstance3d.md#class_occluderinstance3d_property_bake_mask)                                       | ``4294967295`` |
+| [`float`](class_float.md)           | [`bake_simplification_distance`](class_occluderinstance3d.md#class_occluderinstance3d_property_bake_simplification_distance) | ``0.1``        |
+| [`Occluder3D`](class_occluder3d.md) | [`occluder`](class_occluderinstance3d.md#class_occluderinstance3d_property_occluder)                                         |                |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`get_bake_mask_value`](#class_occluderinstance3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| `void`                  | [`set_bake_mask_value`](#class_occluderinstance3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| [`bool`](class_bool.md) | [`get_bake_mask_value`](class_occluderinstance3d.md#class_occluderinstance3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| `void`                  | [`set_bake_mask_value`](class_occluderinstance3d.md#class_occluderinstance3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -53,9 +53,9 @@ The occlusion culling system works by rendering the occluders on the CPU in para
 - `void` **set_bake_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_bake_mask** ( )
 
-The visual layers to account for when baking for occluders. Only [`MeshInstance3D`](class_meshinstance3d.md) s whose [`VisualInstance3D.layers`](#class_visualinstance3d_property_layers) match with this [`bake_mask`](#class_occluderinstance3d_property_bake_mask) will be included in the generated occluder mesh. By default, all objects with *opaque* materials are taken into account for the occluder baking.
+The visual layers to account for when baking for occluders. Only [`MeshInstance3D`](class_meshinstance3d.md) s whose [`VisualInstance3D.layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers) match with this [`bake_mask`](class_occluderinstance3d.md#class_occluderinstance3d_property_bake_mask) will be included in the generated occluder mesh. By default, all objects with *opaque* materials are taken into account for the occluder baking.
 
-To improve performance and avoid artifacts, it is recommended to exclude dynamic objects, small objects and fixtures from the baking process by moving them to a separate visual layer and excluding this layer in [`bake_mask`](#class_occluderinstance3d_property_bake_mask).
+To improve performance and avoid artifacts, it is recommended to exclude dynamic objects, small objects and fixtures from the baking process by moving them to a separate visual layer and excluding this layer in [`bake_mask`](class_occluderinstance3d.md#class_occluderinstance3d_property_bake_mask).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -89,7 +89,7 @@ Setting this to `0.0` disables simplification entirely, but vertices in the exac
 
 The occluder resource for this **OccluderInstance3D**. You can generate an occluder resource by selecting an **OccluderInstance3D** node then using the **Bake Occluders** button at the top of the editor.
 
-You can also draw your own 2D occluder polygon by adding a new [`PolygonOccluder3D`](class_polygonoccluder3d.md) resource to the [`occluder`](#class_occluderinstance3d_property_occluder) property in the Inspector.
+You can also draw your own 2D occluder polygon by adding a new [`PolygonOccluder3D`](class_polygonoccluder3d.md) resource to the [`occluder`](class_occluderinstance3d.md#class_occluderinstance3d_property_occluder) property in the Inspector.
 
 Alternatively, you can select a primitive occluder to use: [`QuadOccluder3D`](class_quadoccluder3d.md), [`BoxOccluder3D`](class_boxoccluder3d.md) or [`SphereOccluder3D`](class_sphereoccluder3d.md).
 
@@ -103,7 +103,7 @@ Alternatively, you can select a primitive occluder to use: [`QuadOccluder3D`](cl
 
 [`bool`](class_bool.md) **get_bake_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_occluderinstance3d_method_get_bake_mask_value"></div>
 
-Returns whether or not the specified layer of the [`bake_mask`](#class_occluderinstance3d_property_bake_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`bake_mask`](class_occluderinstance3d.md#class_occluderinstance3d_property_bake_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -113,7 +113,7 @@ Returns whether or not the specified layer of the [`bake_mask`](#class_occluderi
 
 `void` **set_bake_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_occluderinstance3d_method_set_bake_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`bake_mask`](#class_occluderinstance3d_property_bake_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`bake_mask`](class_occluderinstance3d.md#class_occluderinstance3d_property_bake_mask), given a `layer_number` between 1 and 32.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

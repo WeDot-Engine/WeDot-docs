@@ -23,11 +23,11 @@ It is notably used to provide AR modules with a video feed from the camera.
 
 |||
 |:-:|:--|
-| `void`                                                      | [`add_feed`](#class_cameraserver_method_add_feed) ( feed: [`CameraFeed`](class_camerafeed.md) )       |
-| [Array](class_array.md) [`CameraFeed`](class_camerafeed.md) | [`feeds`](#class_cameraserver_method_feeds) ( )                                                       |
-| [`CameraFeed`](class_camerafeed.md)                         | [`get_feed`](#class_cameraserver_method_get_feed) ( index: [`int`](class_int.md) )                    |
-| [`int`](class_int.md)                                       | [`get_feed_count`](#class_cameraserver_method_get_feed_count) ( )                                     |
-| `void`                                                      | [`remove_feed`](#class_cameraserver_method_remove_feed) ( feed: [`CameraFeed`](class_camerafeed.md) ) |
+| `void`                                                      | [`add_feed`](class_cameraserver.md#class_cameraserver_method_add_feed) ( feed: [`CameraFeed`](class_camerafeed.md) )       |
+| [Array](class_array.md) [`CameraFeed`](class_camerafeed.md) | [`feeds`](class_cameraserver.md#class_cameraserver_method_feeds) ( )                                                       |
+| [`CameraFeed`](class_camerafeed.md)                         | [`get_feed`](class_cameraserver.md#class_cameraserver_method_get_feed) ( index: [`int`](class_int.md) )                    |
+| [`int`](class_int.md)                                       | [`get_feed_count`](class_cameraserver.md#class_cameraserver_method_get_feed_count) ( )                                     |
+| `void`                                                      | [`remove_feed`](class_cameraserver.md#class_cameraserver_method_remove_feed) ( feed: [`CameraFeed`](class_camerafeed.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

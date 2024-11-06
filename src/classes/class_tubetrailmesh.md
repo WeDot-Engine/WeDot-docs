@@ -13,7 +13,7 @@ Represents a straight tube-shaped [`PrimitiveMesh`](class_primitivemesh.md) with
 
 ## 描述
 
-**TubeTrailMesh** represents a straight tube-shaped mesh with variable width. The tube is composed of a number of cylindrical sections, each with the same [`section_length`](#class_tubetrailmesh_property_section_length) and number of [`section_rings`](#class_tubetrailmesh_property_section_rings). A [`curve`](#class_tubetrailmesh_property_curve) is sampled along the total length of the tube, meaning that the curve determines the radius of the tube along its length.
+**TubeTrailMesh** represents a straight tube-shaped mesh with variable width. The tube is composed of a number of cylindrical sections, each with the same [`section_length`](class_tubetrailmesh.md#class_tubetrailmesh_property_section_length) and number of [`section_rings`](class_tubetrailmesh.md#class_tubetrailmesh_property_section_rings). A [`curve`](class_tubetrailmesh.md#class_tubetrailmesh_property_curve) is sampled along the total length of the tube, meaning that the curve determines the radius of the tube along its length.
 
 This primitive mesh is usually used for particle trails.
 
@@ -21,14 +21,14 @@ This primitive mesh is usually used for particle trails.
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`cap_bottom`](#class_tubetrailmesh_property_cap_bottom)         | ``true`` |
-| [`bool`](class_bool.md)   | [`cap_top`](#class_tubetrailmesh_property_cap_top)               | ``true`` |
-| [`Curve`](class_curve.md) | [`curve`](#class_tubetrailmesh_property_curve)                   |          |
-| [`int`](class_int.md)     | [`radial_steps`](#class_tubetrailmesh_property_radial_steps)     | ``8``    |
-| [`float`](class_float.md) | [`radius`](#class_tubetrailmesh_property_radius)                 | ``0.5``  |
-| [`float`](class_float.md) | [`section_length`](#class_tubetrailmesh_property_section_length) | ``0.2``  |
-| [`int`](class_int.md)     | [`section_rings`](#class_tubetrailmesh_property_section_rings)   | ``3``    |
-| [`int`](class_int.md)     | [`sections`](#class_tubetrailmesh_property_sections)             | ``5``    |
+| [`bool`](class_bool.md)   | [`cap_bottom`](class_tubetrailmesh.md#class_tubetrailmesh_property_cap_bottom)         | ``true`` |
+| [`bool`](class_bool.md)   | [`cap_top`](class_tubetrailmesh.md#class_tubetrailmesh_property_cap_top)               | ``true`` |
+| [`Curve`](class_curve.md) | [`curve`](class_tubetrailmesh.md#class_tubetrailmesh_property_curve)                   |          |
+| [`int`](class_int.md)     | [`radial_steps`](class_tubetrailmesh.md#class_tubetrailmesh_property_radial_steps)     | ``8``    |
+| [`float`](class_float.md) | [`radius`](class_tubetrailmesh.md#class_tubetrailmesh_property_radius)                 | ``0.5``  |
+| [`float`](class_float.md) | [`section_length`](class_tubetrailmesh.md#class_tubetrailmesh_property_section_length) | ``0.2``  |
+| [`int`](class_int.md)     | [`section_rings`](class_tubetrailmesh.md#class_tubetrailmesh_property_section_rings)   | ``3``    |
+| [`int`](class_int.md)     | [`sections`](class_tubetrailmesh.md#class_tubetrailmesh_property_sections)             | ``5``    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -69,7 +69,7 @@ If `true`, generates a cap at the top of the tube. This can be set to `false` to
 - `void` **set_curve** ( value: [`Curve`](class_curve.md) )
 - [`Curve`](class_curve.md) **get_curve** ( )
 
-Determines the radius of the tube along its length. The radius of a particular section ring is obtained by multiplying the baseline [`radius`](#class_tubetrailmesh_property_radius) by the value of this curve at the given distance. For values smaller than `0`, the faces will be inverted.
+Determines the radius of the tube along its length. The radius of a particular section ring is obtained by multiplying the baseline [`radius`](class_tubetrailmesh.md#class_tubetrailmesh_property_radius) by the value of this curve at the given distance. For values smaller than `0`, the faces will be inverted.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -95,7 +95,7 @@ The number of sides on the tube. For example, a value of `5` means the tube will
 - `void` **set_radius** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_radius** ( )
 
-The baseline radius of the tube. The radius of a particular section ring is obtained by multiplying this radius by the value of the [`curve`](#class_tubetrailmesh_property_curve) at the given distance.
+The baseline radius of the tube. The radius of a particular section ring is obtained by multiplying this radius by the value of the [`curve`](class_tubetrailmesh.md#class_tubetrailmesh_property_curve) at the given distance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -121,7 +121,7 @@ The length of a section of the tube.
 - `void` **set_section_rings** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_section_rings** ( )
 
-The number of rings in a section. The [`curve`](#class_tubetrailmesh_property_curve) is sampled on each ring to determine its radius. Higher values result in a more detailed tube at the cost of performance.
+The number of rings in a section. The [`curve`](class_tubetrailmesh.md#class_tubetrailmesh_property_curve) is sampled on each ring to determine its radius. Higher values result in a more detailed tube at the cost of performance.
 
 <!-- rst-class:: classref-item-separator -->
 

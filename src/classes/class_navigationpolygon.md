@@ -79,38 +79,38 @@ Adding vertices and polygon indices manually.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                        | [`agent_radius`](#class_navigationpolygon_property_agent_radius)                             | ``10.0``                                        |
-| [`Rect2`](class_rect2.md)                                        | [`baking_rect`](#class_navigationpolygon_property_baking_rect)                               | ``Rect2(0, 0, 0, 0)``                           |
-| [`Vector2`](class_vector2.md)                                    | [`baking_rect_offset`](#class_navigationpolygon_property_baking_rect_offset)                 | ``Vector2(0, 0)``                               |
-| [`float`](class_float.md)                                        | [`border_size`](#class_navigationpolygon_property_border_size)                               | ``0.0``                                         |
-| [`float`](class_float.md)                                        | [`cell_size`](#class_navigationpolygon_property_cell_size)                                   | ``1.0``                                         |
-| [`int`](class_int.md)                                            | [`parsed_collision_mask`](#class_navigationpolygon_property_parsed_collision_mask)           | ``4294967295``                                  |
-| [ParsedGeometryType](#enum_navigationpolygon_parsedgeometrytype) | [`parsed_geometry_type`](#class_navigationpolygon_property_parsed_geometry_type)             | ``2``                                           |
-| [`StringName`](class_stringname.md)                              | [`source_geometry_group_name`](#class_navigationpolygon_property_source_geometry_group_name) | ``&"navigation_polygon_source_geometry_group"`` |
-| [SourceGeometryMode](#enum_navigationpolygon_sourcegeometrymode) | [`source_geometry_mode`](#class_navigationpolygon_property_source_geometry_mode)             | ``0``                                           |
+| [`float`](class_float.md)                                        | [`agent_radius`](class_navigationpolygon.md#class_navigationpolygon_property_agent_radius)                             | ``10.0``                                        |
+| [`Rect2`](class_rect2.md)                                        | [`baking_rect`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect)                               | ``Rect2(0, 0, 0, 0)``                           |
+| [`Vector2`](class_vector2.md)                                    | [`baking_rect_offset`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect_offset)                 | ``Vector2(0, 0)``                               |
+| [`float`](class_float.md)                                        | [`border_size`](class_navigationpolygon.md#class_navigationpolygon_property_border_size)                               | ``0.0``                                         |
+| [`float`](class_float.md)                                        | [`cell_size`](class_navigationpolygon.md#class_navigationpolygon_property_cell_size)                                   | ``1.0``                                         |
+| [`int`](class_int.md)                                            | [`parsed_collision_mask`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_collision_mask)           | ``4294967295``                                  |
+| [ParsedGeometryType](#enum_navigationpolygon_parsedgeometrytype) | [`parsed_geometry_type`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_geometry_type)             | ``2``                                           |
+| [`StringName`](class_stringname.md)                              | [`source_geometry_group_name`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_group_name) | ``&"navigation_polygon_source_geometry_group"`` |
+| [SourceGeometryMode](#enum_navigationpolygon_sourcegeometrymode) | [`source_geometry_mode`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_mode)             | ``0``                                           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                              | [`add_outline`](#class_navigationpolygon_method_add_outline) ( outline: [`PackedVector2Array`](class_packedvector2array.md) )                                                 |
-| `void`                                              | [`add_outline_at_index`](#class_navigationpolygon_method_add_outline_at_index) ( outline: [`PackedVector2Array`](class_packedvector2array.md), index: [`int`](class_int.md) ) |
-| `void`                                              | [`add_polygon`](#class_navigationpolygon_method_add_polygon) ( polygon: [`PackedInt32Array`](class_packedint32array.md) )                                                     |
-| `void`                                              | [`clear`](#class_navigationpolygon_method_clear) ( )                                                                                                                          |
-| `void`                                              | [`clear_outlines`](#class_navigationpolygon_method_clear_outlines) ( )                                                                                                        |
-| `void`                                              | [`clear_polygons`](#class_navigationpolygon_method_clear_polygons) ( )                                                                                                        |
-| [`NavigationMesh`](class_navigationmesh.md)         | [`get_navigation_mesh`](#class_navigationpolygon_method_get_navigation_mesh) ( )                                                                                              |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`get_outline`](#class_navigationpolygon_method_get_outline) ( idx: [`int`](class_int.md) ) const[^const]                                                                     |
-| [`int`](class_int.md)                               | [`get_outline_count`](#class_navigationpolygon_method_get_outline_count) ( ) const[^const]                                                                                    |
-| [`bool`](class_bool.md)                             | [`get_parsed_collision_mask_value`](#class_navigationpolygon_method_get_parsed_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                    |
-| [`PackedInt32Array`](class_packedint32array.md)     | [`get_polygon`](#class_navigationpolygon_method_get_polygon) ( idx: [`int`](class_int.md) )                                                                                   |
-| [`int`](class_int.md)                               | [`get_polygon_count`](#class_navigationpolygon_method_get_polygon_count) ( ) const[^const]                                                                                    |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`get_vertices`](#class_navigationpolygon_method_get_vertices) ( ) const[^const]                                                                                              |
-| `void`                                              | [`make_polygons_from_outlines`](#class_navigationpolygon_method_make_polygons_from_outlines) ( )                                                                              |
-| `void`                                              | [`remove_outline`](#class_navigationpolygon_method_remove_outline) ( idx: [`int`](class_int.md) )                                                                             |
-| `void`                                              | [`set_outline`](#class_navigationpolygon_method_set_outline) ( idx: [`int`](class_int.md), outline: [`PackedVector2Array`](class_packedvector2array.md) )                     |
-| `void`                                              | [`set_parsed_collision_mask_value`](#class_navigationpolygon_method_set_parsed_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )  |
-| `void`                                              | [`set_vertices`](#class_navigationpolygon_method_set_vertices) ( vertices: [`PackedVector2Array`](class_packedvector2array.md) )                                              |
+| `void`                                              | [`add_outline`](class_navigationpolygon.md#class_navigationpolygon_method_add_outline) ( outline: [`PackedVector2Array`](class_packedvector2array.md) )                                                 |
+| `void`                                              | [`add_outline_at_index`](class_navigationpolygon.md#class_navigationpolygon_method_add_outline_at_index) ( outline: [`PackedVector2Array`](class_packedvector2array.md), index: [`int`](class_int.md) ) |
+| `void`                                              | [`add_polygon`](class_navigationpolygon.md#class_navigationpolygon_method_add_polygon) ( polygon: [`PackedInt32Array`](class_packedint32array.md) )                                                     |
+| `void`                                              | [`clear`](class_navigationpolygon.md#class_navigationpolygon_method_clear) ( )                                                                                                                          |
+| `void`                                              | [`clear_outlines`](class_navigationpolygon.md#class_navigationpolygon_method_clear_outlines) ( )                                                                                                        |
+| `void`                                              | [`clear_polygons`](class_navigationpolygon.md#class_navigationpolygon_method_clear_polygons) ( )                                                                                                        |
+| [`NavigationMesh`](class_navigationmesh.md)         | [`get_navigation_mesh`](class_navigationpolygon.md#class_navigationpolygon_method_get_navigation_mesh) ( )                                                                                              |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`get_outline`](class_navigationpolygon.md#class_navigationpolygon_method_get_outline) ( idx: [`int`](class_int.md) ) const[^const]                                                                     |
+| [`int`](class_int.md)                               | [`get_outline_count`](class_navigationpolygon.md#class_navigationpolygon_method_get_outline_count) ( ) const[^const]                                                                                    |
+| [`bool`](class_bool.md)                             | [`get_parsed_collision_mask_value`](class_navigationpolygon.md#class_navigationpolygon_method_get_parsed_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                    |
+| [`PackedInt32Array`](class_packedint32array.md)     | [`get_polygon`](class_navigationpolygon.md#class_navigationpolygon_method_get_polygon) ( idx: [`int`](class_int.md) )                                                                                   |
+| [`int`](class_int.md)                               | [`get_polygon_count`](class_navigationpolygon.md#class_navigationpolygon_method_get_polygon_count) ( ) const[^const]                                                                                    |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`get_vertices`](class_navigationpolygon.md#class_navigationpolygon_method_get_vertices) ( ) const[^const]                                                                                              |
+| `void`                                              | [`make_polygons_from_outlines`](class_navigationpolygon.md#class_navigationpolygon_method_make_polygons_from_outlines) ( )                                                                              |
+| `void`                                              | [`remove_outline`](class_navigationpolygon.md#class_navigationpolygon_method_remove_outline) ( idx: [`int`](class_int.md) )                                                                             |
+| `void`                                              | [`set_outline`](class_navigationpolygon.md#class_navigationpolygon_method_set_outline) ( idx: [`int`](class_int.md), outline: [`PackedVector2Array`](class_packedvector2array.md) )                     |
+| `void`                                              | [`set_parsed_collision_mask_value`](class_navigationpolygon.md#class_navigationpolygon_method_set_parsed_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )  |
+| `void`                                              | [`set_vertices`](class_navigationpolygon.md#class_navigationpolygon_method_set_vertices) ( vertices: [`PackedVector2Array`](class_packedvector2array.md) )                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -134,13 +134,13 @@ Meshes are only parsed when they use a 2D vertices surface format.
 
 [ParsedGeometryType](#enum_navigationpolygon_parsedgeometrytype) **PARSED_GEOMETRY_STATIC_COLLIDERS** = ``1``
 
-Parses [`StaticBody2D`](class_staticbody2d.md) and [`TileMap`](class_tilemap.md) colliders as obstruction geometry. The collider should be in any of the layers specified by [`parsed_collision_mask`](#class_navigationpolygon_property_parsed_collision_mask).
+Parses [`StaticBody2D`](class_staticbody2d.md) and [`TileMap`](class_tilemap.md) colliders as obstruction geometry. The collider should be in any of the layers specified by [`parsed_collision_mask`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_collision_mask).
 
 <div id="_class_navigationpolygon_constant_parsed_geometry_both"></div>
 
 [ParsedGeometryType](#enum_navigationpolygon_parsedgeometrytype) **PARSED_GEOMETRY_BOTH** = ``2``
 
-Both [`PARSED_GEOMETRY_MESH_INSTANCES`](#class_navigationpolygon_constant_parsed_geometry_mesh_instances) and [`PARSED_GEOMETRY_STATIC_COLLIDERS`](#class_navigationpolygon_constant_parsed_geometry_static_colliders).
+Both [`PARSED_GEOMETRY_MESH_INSTANCES`](class_navigationpolygon.md#class_navigationpolygon_constant_parsed_geometry_mesh_instances) and [`PARSED_GEOMETRY_STATIC_COLLIDERS`](class_navigationpolygon.md#class_navigationpolygon_constant_parsed_geometry_static_colliders).
 
 <div id="_class_navigationpolygon_constant_parsed_geometry_max"></div>
 
@@ -166,13 +166,13 @@ Scans the child nodes of the root node recursively for geometry.
 
 [SourceGeometryMode](#enum_navigationpolygon_sourcegeometrymode) **SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN** = ``1``
 
-Scans nodes in a group and their child nodes recursively for geometry. The group is specified by [`source_geometry_group_name`](#class_navigationpolygon_property_source_geometry_group_name).
+Scans nodes in a group and their child nodes recursively for geometry. The group is specified by [`source_geometry_group_name`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_group_name).
 
 <div id="_class_navigationpolygon_constant_source_geometry_groups_explicit"></div>
 
 [SourceGeometryMode](#enum_navigationpolygon_sourcegeometrymode) **SOURCE_GEOMETRY_GROUPS_EXPLICIT** = ``2``
 
-Uses nodes in a group for geometry. The group is specified by [`source_geometry_group_name`](#class_navigationpolygon_property_source_geometry_group_name).
+Uses nodes in a group for geometry. The group is specified by [`source_geometry_group_name`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_group_name).
 
 <div id="_class_navigationpolygon_constant_source_geometry_max"></div>
 
@@ -219,7 +219,7 @@ If the baking [`Rect2`](class_rect2.md) has an area the navigation mesh baking w
 - `void` **set_baking_rect_offset** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_baking_rect_offset** ( )
 
-The position offset applied to the [`baking_rect`](#class_navigationpolygon_property_baking_rect) [`Rect2`](class_rect2.md).
+The position offset applied to the [`baking_rect`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect) [`Rect2`](class_rect2.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -232,9 +232,9 @@ The position offset applied to the [`baking_rect`](#class_navigationpolygon_prop
 - `void` **set_border_size** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_border_size** ( )
 
-The size of the non-navigable border around the bake bounding area defined by the [`baking_rect`](#class_navigationpolygon_property_baking_rect) [`Rect2`](class_rect2.md).
+The size of the non-navigable border around the bake bounding area defined by the [`baking_rect`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect) [`Rect2`](class_rect2.md).
 
-In conjunction with the [`baking_rect`](#class_navigationpolygon_property_baking_rect) the border size can be used to bake tile aligned navigation meshes without the tile edges being shrunk by [`agent_radius`](#class_navigationpolygon_property_agent_radius).
+In conjunction with the [`baking_rect`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect) the border size can be used to bake tile aligned navigation meshes without the tile edges being shrunk by [`agent_radius`](class_navigationpolygon.md#class_navigationpolygon_property_agent_radius).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -262,7 +262,7 @@ The cell size used to rasterize the navigation mesh vertices. Must match with th
 
 The physics layers to scan for static colliders.
 
-Only used when [`parsed_geometry_type`](#class_navigationpolygon_property_parsed_geometry_type) is [`PARSED_GEOMETRY_STATIC_COLLIDERS`](#class_navigationpolygon_constant_parsed_geometry_static_colliders) or [`PARSED_GEOMETRY_BOTH`](#class_navigationpolygon_constant_parsed_geometry_both).
+Only used when [`parsed_geometry_type`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_geometry_type) is [`PARSED_GEOMETRY_STATIC_COLLIDERS`](class_navigationpolygon.md#class_navigationpolygon_constant_parsed_geometry_static_colliders) or [`PARSED_GEOMETRY_BOTH`](class_navigationpolygon.md#class_navigationpolygon_constant_parsed_geometry_both).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -290,7 +290,7 @@ Determines which type of nodes will be parsed as geometry. See [ParsedGeometryTy
 
 The group name of nodes that should be parsed for baking source geometry.
 
-Only used when [`source_geometry_mode`](#class_navigationpolygon_property_source_geometry_mode) is [`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN`](#class_navigationpolygon_constant_source_geometry_groups_with_children) or [`SOURCE_GEOMETRY_GROUPS_EXPLICIT`](#class_navigationpolygon_constant_source_geometry_groups_explicit).
+Only used when [`source_geometry_mode`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_mode) is [`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN`](class_navigationpolygon.md#class_navigationpolygon_constant_source_geometry_groups_with_children) or [`SOURCE_GEOMETRY_GROUPS_EXPLICIT`](class_navigationpolygon.md#class_navigationpolygon_constant_source_geometry_groups_explicit).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -335,7 +335,7 @@ Adds a [`PackedVector2Array`](class_packedvector2array.md) that contains the ver
 
 `void` **add_polygon** ( polygon: [`PackedInt32Array`](class_packedint32array.md) )<div id="class_navigationpolygon_method_add_polygon"></div>
 
-Adds a polygon using the indices of the vertices you get when calling [`get_vertices`](#class_navigationpolygon_method_get_vertices).
+Adds a polygon using the indices of the vertices you get when calling [`get_vertices`](class_navigationpolygon.md#class_navigationpolygon_method_get_vertices).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -375,7 +375,7 @@ Clears the array of polygons, but it doesn't clear the array of outlines and ver
 
 [`NavigationMesh`](class_navigationmesh.md) **get_navigation_mesh** ( )<div id="class_navigationpolygon_method_get_navigation_mesh"></div>
 
-Returns the [`NavigationMesh`](class_navigationmesh.md) resulting from this navigation polygon. This navigation mesh can be used to update the navigation mesh of a region with the [`NavigationServer3D.region_set_navigation_mesh`](#class_navigationserver3d_method_region_set_navigation_mesh) API directly (as 2D uses the 3D server behind the scene).
+Returns the [`NavigationMesh`](class_navigationmesh.md) resulting from this navigation polygon. This navigation mesh can be used to update the navigation mesh of a region with the [`NavigationServer3D.region_set_navigation_mesh`](class_navigationserver3d.md#class_navigationserver3d_method_region_set_navigation_mesh) API directly (as 2D uses the 3D server behind the scene).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -405,7 +405,7 @@ Returns the number of outlines that were created in the editor or by script.
 
 [`bool`](class_bool.md) **get_parsed_collision_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_navigationpolygon_method_get_parsed_collision_mask_value"></div>
 
-Returns whether or not the specified layer of the [`parsed_collision_mask`](#class_navigationpolygon_property_parsed_collision_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`parsed_collision_mask`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_collision_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -445,7 +445,7 @@ Returns a [`PackedVector2Array`](class_packedvector2array.md) containing all the
 
 `void` **make_polygons_from_outlines** ( )<div id="class_navigationpolygon_method_make_polygons_from_outlines"></div>
 
-**已弃用：** Use [`NavigationServer2D.parse_source_geometry_data`](#class_navigationserver2d_method_parse_source_geometry_data) and [`NavigationServer2D.bake_from_source_geometry_data`](#class_navigationserver2d_method_bake_from_source_geometry_data) instead.
+**已弃用：** Use [`NavigationServer2D.parse_source_geometry_data`](class_navigationserver2d.md#class_navigationserver2d_method_parse_source_geometry_data) and [`NavigationServer2D.bake_from_source_geometry_data`](class_navigationserver2d.md#class_navigationserver2d_method_bake_from_source_geometry_data) instead.
 
 Creates polygons from the outlines added in the editor or by script.
 
@@ -457,7 +457,7 @@ Creates polygons from the outlines added in the editor or by script.
 
 `void` **remove_outline** ( idx: [`int`](class_int.md) )<div id="class_navigationpolygon_method_remove_outline"></div>
 
-Removes an outline created in the editor or by script. You have to call [`make_polygons_from_outlines`](#class_navigationpolygon_method_make_polygons_from_outlines) for the polygons to update.
+Removes an outline created in the editor or by script. You have to call [`make_polygons_from_outlines`](class_navigationpolygon.md#class_navigationpolygon_method_make_polygons_from_outlines) for the polygons to update.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -467,7 +467,7 @@ Removes an outline created in the editor or by script. You have to call [`make_p
 
 `void` **set_outline** ( idx: [`int`](class_int.md), outline: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_navigationpolygon_method_set_outline"></div>
 
-Changes an outline created in the editor or by script. You have to call [`make_polygons_from_outlines`](#class_navigationpolygon_method_make_polygons_from_outlines) for the polygons to update.
+Changes an outline created in the editor or by script. You have to call [`make_polygons_from_outlines`](class_navigationpolygon.md#class_navigationpolygon_method_make_polygons_from_outlines) for the polygons to update.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -477,7 +477,7 @@ Changes an outline created in the editor or by script. You have to call [`make_p
 
 `void` **set_parsed_collision_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_navigationpolygon_method_set_parsed_collision_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`parsed_collision_mask`](#class_navigationpolygon_property_parsed_collision_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`parsed_collision_mask`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_collision_mask), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -487,7 +487,7 @@ Based on `value`, enables or disables the specified layer in the [`parsed_collis
 
 `void` **set_vertices** ( vertices: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_navigationpolygon_method_set_vertices"></div>
 
-Sets the vertices that can be then indexed to create polygons with the [`add_polygon`](#class_navigationpolygon_method_add_polygon) method.
+Sets the vertices that can be then indexed to create polygons with the [`add_polygon`](class_navigationpolygon.md#class_navigationpolygon_method_add_polygon) method.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

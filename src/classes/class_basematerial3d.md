@@ -21,134 +21,134 @@ This class serves as a default material with a wide variety of rendering feature
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)                                   | [`albedo_color`](#class_basematerial3d_property_albedo_color)                                                   | ``Color(1, 1, 1, 1)`` |
-| [`Texture2D`](class_texture2d.md)                           | [`albedo_texture`](#class_basematerial3d_property_albedo_texture)                                               |                       |
-| [`bool`](class_bool.md)                                     | [`albedo_texture_force_srgb`](#class_basematerial3d_property_albedo_texture_force_srgb)                         | ``false``             |
-| [`bool`](class_bool.md)                                     | [`albedo_texture_msdf`](#class_basematerial3d_property_albedo_texture_msdf)                                     | ``false``             |
-| [`float`](class_float.md)                                   | [`alpha_antialiasing_edge`](#class_basematerial3d_property_alpha_antialiasing_edge)                             |                       |
-| [AlphaAntiAliasing](#enum_basematerial3d_alphaantialiasing) | [`alpha_antialiasing_mode`](#class_basematerial3d_property_alpha_antialiasing_mode)                             |                       |
-| [`float`](class_float.md)                                   | [`alpha_hash_scale`](#class_basematerial3d_property_alpha_hash_scale)                                           |                       |
-| [`float`](class_float.md)                                   | [`alpha_scissor_threshold`](#class_basematerial3d_property_alpha_scissor_threshold)                             |                       |
-| [`float`](class_float.md)                                   | [`anisotropy`](#class_basematerial3d_property_anisotropy)                                                       | ``0.0``               |
-| [`bool`](class_bool.md)                                     | [`anisotropy_enabled`](#class_basematerial3d_property_anisotropy_enabled)                                       | ``false``             |
-| [`Texture2D`](class_texture2d.md)                           | [`anisotropy_flowmap`](#class_basematerial3d_property_anisotropy_flowmap)                                       |                       |
-| [`bool`](class_bool.md)                                     | [`ao_enabled`](#class_basematerial3d_property_ao_enabled)                                                       | ``false``             |
-| [`float`](class_float.md)                                   | [`ao_light_affect`](#class_basematerial3d_property_ao_light_affect)                                             | ``0.0``               |
-| [`bool`](class_bool.md)                                     | [`ao_on_uv2`](#class_basematerial3d_property_ao_on_uv2)                                                         | ``false``             |
-| [`Texture2D`](class_texture2d.md)                           | [`ao_texture`](#class_basematerial3d_property_ao_texture)                                                       |                       |
-| [TextureChannel](#enum_basematerial3d_texturechannel)       | [`ao_texture_channel`](#class_basematerial3d_property_ao_texture_channel)                                       | ``0``                 |
-| [`Color`](class_color.md)                                   | [`backlight`](#class_basematerial3d_property_backlight)                                                         | ``Color(0, 0, 0, 1)`` |
-| [`bool`](class_bool.md)                                     | [`backlight_enabled`](#class_basematerial3d_property_backlight_enabled)                                         | ``false``             |
-| [`Texture2D`](class_texture2d.md)                           | [`backlight_texture`](#class_basematerial3d_property_backlight_texture)                                         |                       |
-| [`bool`](class_bool.md)                                     | [`billboard_keep_scale`](#class_basematerial3d_property_billboard_keep_scale)                                   | ``false``             |
-| [BillboardMode](#enum_basematerial3d_billboardmode)         | [`billboard_mode`](#class_basematerial3d_property_billboard_mode)                                               | ``0``                 |
-| [BlendMode](#enum_basematerial3d_blendmode)                 | [`blend_mode`](#class_basematerial3d_property_blend_mode)                                                       | ``0``                 |
-| [`float`](class_float.md)                                   | [`clearcoat`](#class_basematerial3d_property_clearcoat)                                                         | ``1.0``               |
-| [`bool`](class_bool.md)                                     | [`clearcoat_enabled`](#class_basematerial3d_property_clearcoat_enabled)                                         | ``false``             |
-| [`float`](class_float.md)                                   | [`clearcoat_roughness`](#class_basematerial3d_property_clearcoat_roughness)                                     | ``0.5``               |
-| [`Texture2D`](class_texture2d.md)                           | [`clearcoat_texture`](#class_basematerial3d_property_clearcoat_texture)                                         |                       |
-| [CullMode](#enum_basematerial3d_cullmode)                   | [`cull_mode`](#class_basematerial3d_property_cull_mode)                                                         | ``0``                 |
-| [DepthDrawMode](#enum_basematerial3d_depthdrawmode)         | [`depth_draw_mode`](#class_basematerial3d_property_depth_draw_mode)                                             | ``0``                 |
-| [`Texture2D`](class_texture2d.md)                           | [`detail_albedo`](#class_basematerial3d_property_detail_albedo)                                                 |                       |
-| [BlendMode](#enum_basematerial3d_blendmode)                 | [`detail_blend_mode`](#class_basematerial3d_property_detail_blend_mode)                                         | ``0``                 |
-| [`bool`](class_bool.md)                                     | [`detail_enabled`](#class_basematerial3d_property_detail_enabled)                                               | ``false``             |
-| [`Texture2D`](class_texture2d.md)                           | [`detail_mask`](#class_basematerial3d_property_detail_mask)                                                     |                       |
-| [`Texture2D`](class_texture2d.md)                           | [`detail_normal`](#class_basematerial3d_property_detail_normal)                                                 |                       |
-| [DetailUV](#enum_basematerial3d_detailuv)                   | [`detail_uv_layer`](#class_basematerial3d_property_detail_uv_layer)                                             | ``0``                 |
-| [DiffuseMode](#enum_basematerial3d_diffusemode)             | [`diffuse_mode`](#class_basematerial3d_property_diffuse_mode)                                                   | ``0``                 |
-| [`bool`](class_bool.md)                                     | [`disable_ambient_light`](#class_basematerial3d_property_disable_ambient_light)                                 | ``false``             |
-| [`bool`](class_bool.md)                                     | [`disable_fog`](#class_basematerial3d_property_disable_fog)                                                     | ``false``             |
-| [`bool`](class_bool.md)                                     | [`disable_receive_shadows`](#class_basematerial3d_property_disable_receive_shadows)                             | ``false``             |
-| [`float`](class_float.md)                                   | [`distance_fade_max_distance`](#class_basematerial3d_property_distance_fade_max_distance)                       | ``10.0``              |
-| [`float`](class_float.md)                                   | [`distance_fade_min_distance`](#class_basematerial3d_property_distance_fade_min_distance)                       | ``0.0``               |
-| [DistanceFadeMode](#enum_basematerial3d_distancefademode)   | [`distance_fade_mode`](#class_basematerial3d_property_distance_fade_mode)                                       | ``0``                 |
-| [`Color`](class_color.md)                                   | [`emission`](#class_basematerial3d_property_emission)                                                           | ``Color(0, 0, 0, 1)`` |
-| [`bool`](class_bool.md)                                     | [`emission_enabled`](#class_basematerial3d_property_emission_enabled)                                           | ``false``             |
-| [`float`](class_float.md)                                   | [`emission_energy_multiplier`](#class_basematerial3d_property_emission_energy_multiplier)                       | ``1.0``               |
-| [`float`](class_float.md)                                   | [`emission_intensity`](#class_basematerial3d_property_emission_intensity)                                       |                       |
-| [`bool`](class_bool.md)                                     | [`emission_on_uv2`](#class_basematerial3d_property_emission_on_uv2)                                             | ``false``             |
-| [EmissionOperator](#enum_basematerial3d_emissionoperator)   | [`emission_operator`](#class_basematerial3d_property_emission_operator)                                         | ``0``                 |
-| [`Texture2D`](class_texture2d.md)                           | [`emission_texture`](#class_basematerial3d_property_emission_texture)                                           |                       |
-| [`bool`](class_bool.md)                                     | [`fixed_size`](#class_basematerial3d_property_fixed_size)                                                       | ``false``             |
-| [`bool`](class_bool.md)                                     | [`grow`](#class_basematerial3d_property_grow)                                                                   | ``false``             |
-| [`float`](class_float.md)                                   | [`grow_amount`](#class_basematerial3d_property_grow_amount)                                                     | ``0.0``               |
-| [`bool`](class_bool.md)                                     | [`heightmap_deep_parallax`](#class_basematerial3d_property_heightmap_deep_parallax)                             | ``false``             |
-| [`bool`](class_bool.md)                                     | [`heightmap_enabled`](#class_basematerial3d_property_heightmap_enabled)                                         | ``false``             |
-| [`bool`](class_bool.md)                                     | [`heightmap_flip_binormal`](#class_basematerial3d_property_heightmap_flip_binormal)                             | ``false``             |
-| [`bool`](class_bool.md)                                     | [`heightmap_flip_tangent`](#class_basematerial3d_property_heightmap_flip_tangent)                               | ``false``             |
-| [`bool`](class_bool.md)                                     | [`heightmap_flip_texture`](#class_basematerial3d_property_heightmap_flip_texture)                               | ``false``             |
-| [`int`](class_int.md)                                       | [`heightmap_max_layers`](#class_basematerial3d_property_heightmap_max_layers)                                   |                       |
-| [`int`](class_int.md)                                       | [`heightmap_min_layers`](#class_basematerial3d_property_heightmap_min_layers)                                   |                       |
-| [`float`](class_float.md)                                   | [`heightmap_scale`](#class_basematerial3d_property_heightmap_scale)                                             | ``5.0``               |
-| [`Texture2D`](class_texture2d.md)                           | [`heightmap_texture`](#class_basematerial3d_property_heightmap_texture)                                         |                       |
-| [`float`](class_float.md)                                   | [`metallic`](#class_basematerial3d_property_metallic)                                                           | ``0.0``               |
-| [`float`](class_float.md)                                   | [`metallic_specular`](#class_basematerial3d_property_metallic_specular)                                         | ``0.5``               |
-| [`Texture2D`](class_texture2d.md)                           | [`metallic_texture`](#class_basematerial3d_property_metallic_texture)                                           |                       |
-| [TextureChannel](#enum_basematerial3d_texturechannel)       | [`metallic_texture_channel`](#class_basematerial3d_property_metallic_texture_channel)                           | ``0``                 |
-| [`float`](class_float.md)                                   | [`msdf_outline_size`](#class_basematerial3d_property_msdf_outline_size)                                         | ``0.0``               |
-| [`float`](class_float.md)                                   | [`msdf_pixel_range`](#class_basematerial3d_property_msdf_pixel_range)                                           | ``4.0``               |
-| [`bool`](class_bool.md)                                     | [`no_depth_test`](#class_basematerial3d_property_no_depth_test)                                                 | ``false``             |
-| [`bool`](class_bool.md)                                     | [`normal_enabled`](#class_basematerial3d_property_normal_enabled)                                               | ``false``             |
-| [`float`](class_float.md)                                   | [`normal_scale`](#class_basematerial3d_property_normal_scale)                                                   | ``1.0``               |
-| [`Texture2D`](class_texture2d.md)                           | [`normal_texture`](#class_basematerial3d_property_normal_texture)                                               |                       |
-| [`Texture2D`](class_texture2d.md)                           | [`orm_texture`](#class_basematerial3d_property_orm_texture)                                                     |                       |
-| [`int`](class_int.md)                                       | [`particles_anim_h_frames`](#class_basematerial3d_property_particles_anim_h_frames)                             |                       |
-| [`bool`](class_bool.md)                                     | [`particles_anim_loop`](#class_basematerial3d_property_particles_anim_loop)                                     |                       |
-| [`int`](class_int.md)                                       | [`particles_anim_v_frames`](#class_basematerial3d_property_particles_anim_v_frames)                             |                       |
-| [`float`](class_float.md)                                   | [`point_size`](#class_basematerial3d_property_point_size)                                                       | ``1.0``               |
-| [`float`](class_float.md)                                   | [`proximity_fade_distance`](#class_basematerial3d_property_proximity_fade_distance)                             | ``1.0``               |
-| [`bool`](class_bool.md)                                     | [`proximity_fade_enabled`](#class_basematerial3d_property_proximity_fade_enabled)                               | ``false``             |
-| [`bool`](class_bool.md)                                     | [`refraction_enabled`](#class_basematerial3d_property_refraction_enabled)                                       | ``false``             |
-| [`float`](class_float.md)                                   | [`refraction_scale`](#class_basematerial3d_property_refraction_scale)                                           | ``0.05``              |
-| [`Texture2D`](class_texture2d.md)                           | [`refraction_texture`](#class_basematerial3d_property_refraction_texture)                                       |                       |
-| [TextureChannel](#enum_basematerial3d_texturechannel)       | [`refraction_texture_channel`](#class_basematerial3d_property_refraction_texture_channel)                       | ``0``                 |
-| [`float`](class_float.md)                                   | [`rim`](#class_basematerial3d_property_rim)                                                                     | ``1.0``               |
-| [`bool`](class_bool.md)                                     | [`rim_enabled`](#class_basematerial3d_property_rim_enabled)                                                     | ``false``             |
-| [`Texture2D`](class_texture2d.md)                           | [`rim_texture`](#class_basematerial3d_property_rim_texture)                                                     |                       |
-| [`float`](class_float.md)                                   | [`rim_tint`](#class_basematerial3d_property_rim_tint)                                                           | ``0.5``               |
-| [`float`](class_float.md)                                   | [`roughness`](#class_basematerial3d_property_roughness)                                                         | ``1.0``               |
-| [`Texture2D`](class_texture2d.md)                           | [`roughness_texture`](#class_basematerial3d_property_roughness_texture)                                         |                       |
-| [TextureChannel](#enum_basematerial3d_texturechannel)       | [`roughness_texture_channel`](#class_basematerial3d_property_roughness_texture_channel)                         | ``0``                 |
-| [ShadingMode](#enum_basematerial3d_shadingmode)             | [`shading_mode`](#class_basematerial3d_property_shading_mode)                                                   | ``1``                 |
-| [`bool`](class_bool.md)                                     | [`shadow_to_opacity`](#class_basematerial3d_property_shadow_to_opacity)                                         | ``false``             |
-| [SpecularMode](#enum_basematerial3d_specularmode)           | [`specular_mode`](#class_basematerial3d_property_specular_mode)                                                 | ``0``                 |
-| [`bool`](class_bool.md)                                     | [`subsurf_scatter_enabled`](#class_basematerial3d_property_subsurf_scatter_enabled)                             | ``false``             |
-| [`bool`](class_bool.md)                                     | [`subsurf_scatter_skin_mode`](#class_basematerial3d_property_subsurf_scatter_skin_mode)                         | ``false``             |
-| [`float`](class_float.md)                                   | [`subsurf_scatter_strength`](#class_basematerial3d_property_subsurf_scatter_strength)                           | ``0.0``               |
-| [`Texture2D`](class_texture2d.md)                           | [`subsurf_scatter_texture`](#class_basematerial3d_property_subsurf_scatter_texture)                             |                       |
-| [`float`](class_float.md)                                   | [`subsurf_scatter_transmittance_boost`](#class_basematerial3d_property_subsurf_scatter_transmittance_boost)     | ``0.0``               |
-| [`Color`](class_color.md)                                   | [`subsurf_scatter_transmittance_color`](#class_basematerial3d_property_subsurf_scatter_transmittance_color)     | ``Color(1, 1, 1, 1)`` |
-| [`float`](class_float.md)                                   | [`subsurf_scatter_transmittance_depth`](#class_basematerial3d_property_subsurf_scatter_transmittance_depth)     | ``0.1``               |
-| [`bool`](class_bool.md)                                     | [`subsurf_scatter_transmittance_enabled`](#class_basematerial3d_property_subsurf_scatter_transmittance_enabled) | ``false``             |
-| [`Texture2D`](class_texture2d.md)                           | [`subsurf_scatter_transmittance_texture`](#class_basematerial3d_property_subsurf_scatter_transmittance_texture) |                       |
-| [TextureFilter](#enum_basematerial3d_texturefilter)         | [`texture_filter`](#class_basematerial3d_property_texture_filter)                                               | ``3``                 |
-| [`bool`](class_bool.md)                                     | [`texture_repeat`](#class_basematerial3d_property_texture_repeat)                                               | ``true``              |
-| [Transparency](#enum_basematerial3d_transparency)           | [`transparency`](#class_basematerial3d_property_transparency)                                                   | ``0``                 |
-| [`bool`](class_bool.md)                                     | [`use_particle_trails`](#class_basematerial3d_property_use_particle_trails)                                     | ``false``             |
-| [`bool`](class_bool.md)                                     | [`use_point_size`](#class_basematerial3d_property_use_point_size)                                               | ``false``             |
-| [`Vector3`](class_vector3.md)                               | [`uv1_offset`](#class_basematerial3d_property_uv1_offset)                                                       | ``Vector3(0, 0, 0)``  |
-| [`Vector3`](class_vector3.md)                               | [`uv1_scale`](#class_basematerial3d_property_uv1_scale)                                                         | ``Vector3(1, 1, 1)``  |
-| [`bool`](class_bool.md)                                     | [`uv1_triplanar`](#class_basematerial3d_property_uv1_triplanar)                                                 | ``false``             |
-| [`float`](class_float.md)                                   | [`uv1_triplanar_sharpness`](#class_basematerial3d_property_uv1_triplanar_sharpness)                             | ``1.0``               |
-| [`bool`](class_bool.md)                                     | [`uv1_world_triplanar`](#class_basematerial3d_property_uv1_world_triplanar)                                     | ``false``             |
-| [`Vector3`](class_vector3.md)                               | [`uv2_offset`](#class_basematerial3d_property_uv2_offset)                                                       | ``Vector3(0, 0, 0)``  |
-| [`Vector3`](class_vector3.md)                               | [`uv2_scale`](#class_basematerial3d_property_uv2_scale)                                                         | ``Vector3(1, 1, 1)``  |
-| [`bool`](class_bool.md)                                     | [`uv2_triplanar`](#class_basematerial3d_property_uv2_triplanar)                                                 | ``false``             |
-| [`float`](class_float.md)                                   | [`uv2_triplanar_sharpness`](#class_basematerial3d_property_uv2_triplanar_sharpness)                             | ``1.0``               |
-| [`bool`](class_bool.md)                                     | [`uv2_world_triplanar`](#class_basematerial3d_property_uv2_world_triplanar)                                     | ``false``             |
-| [`bool`](class_bool.md)                                     | [`vertex_color_is_srgb`](#class_basematerial3d_property_vertex_color_is_srgb)                                   | ``false``             |
-| [`bool`](class_bool.md)                                     | [`vertex_color_use_as_albedo`](#class_basematerial3d_property_vertex_color_use_as_albedo)                       | ``false``             |
+| [`Color`](class_color.md)                                   | [`albedo_color`](class_basematerial3d.md#class_basematerial3d_property_albedo_color)                                                   | ``Color(1, 1, 1, 1)`` |
+| [`Texture2D`](class_texture2d.md)                           | [`albedo_texture`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture)                                               |                       |
+| [`bool`](class_bool.md)                                     | [`albedo_texture_force_srgb`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture_force_srgb)                         | ``false``             |
+| [`bool`](class_bool.md)                                     | [`albedo_texture_msdf`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture_msdf)                                     | ``false``             |
+| [`float`](class_float.md)                                   | [`alpha_antialiasing_edge`](class_basematerial3d.md#class_basematerial3d_property_alpha_antialiasing_edge)                             |                       |
+| [AlphaAntiAliasing](#enum_basematerial3d_alphaantialiasing) | [`alpha_antialiasing_mode`](class_basematerial3d.md#class_basematerial3d_property_alpha_antialiasing_mode)                             |                       |
+| [`float`](class_float.md)                                   | [`alpha_hash_scale`](class_basematerial3d.md#class_basematerial3d_property_alpha_hash_scale)                                           |                       |
+| [`float`](class_float.md)                                   | [`alpha_scissor_threshold`](class_basematerial3d.md#class_basematerial3d_property_alpha_scissor_threshold)                             |                       |
+| [`float`](class_float.md)                                   | [`anisotropy`](class_basematerial3d.md#class_basematerial3d_property_anisotropy)                                                       | ``0.0``               |
+| [`bool`](class_bool.md)                                     | [`anisotropy_enabled`](class_basematerial3d.md#class_basematerial3d_property_anisotropy_enabled)                                       | ``false``             |
+| [`Texture2D`](class_texture2d.md)                           | [`anisotropy_flowmap`](class_basematerial3d.md#class_basematerial3d_property_anisotropy_flowmap)                                       |                       |
+| [`bool`](class_bool.md)                                     | [`ao_enabled`](class_basematerial3d.md#class_basematerial3d_property_ao_enabled)                                                       | ``false``             |
+| [`float`](class_float.md)                                   | [`ao_light_affect`](class_basematerial3d.md#class_basematerial3d_property_ao_light_affect)                                             | ``0.0``               |
+| [`bool`](class_bool.md)                                     | [`ao_on_uv2`](class_basematerial3d.md#class_basematerial3d_property_ao_on_uv2)                                                         | ``false``             |
+| [`Texture2D`](class_texture2d.md)                           | [`ao_texture`](class_basematerial3d.md#class_basematerial3d_property_ao_texture)                                                       |                       |
+| [TextureChannel](#enum_basematerial3d_texturechannel)       | [`ao_texture_channel`](class_basematerial3d.md#class_basematerial3d_property_ao_texture_channel)                                       | ``0``                 |
+| [`Color`](class_color.md)                                   | [`backlight`](class_basematerial3d.md#class_basematerial3d_property_backlight)                                                         | ``Color(0, 0, 0, 1)`` |
+| [`bool`](class_bool.md)                                     | [`backlight_enabled`](class_basematerial3d.md#class_basematerial3d_property_backlight_enabled)                                         | ``false``             |
+| [`Texture2D`](class_texture2d.md)                           | [`backlight_texture`](class_basematerial3d.md#class_basematerial3d_property_backlight_texture)                                         |                       |
+| [`bool`](class_bool.md)                                     | [`billboard_keep_scale`](class_basematerial3d.md#class_basematerial3d_property_billboard_keep_scale)                                   | ``false``             |
+| [BillboardMode](#enum_basematerial3d_billboardmode)         | [`billboard_mode`](class_basematerial3d.md#class_basematerial3d_property_billboard_mode)                                               | ``0``                 |
+| [BlendMode](#enum_basematerial3d_blendmode)                 | [`blend_mode`](class_basematerial3d.md#class_basematerial3d_property_blend_mode)                                                       | ``0``                 |
+| [`float`](class_float.md)                                   | [`clearcoat`](class_basematerial3d.md#class_basematerial3d_property_clearcoat)                                                         | ``1.0``               |
+| [`bool`](class_bool.md)                                     | [`clearcoat_enabled`](class_basematerial3d.md#class_basematerial3d_property_clearcoat_enabled)                                         | ``false``             |
+| [`float`](class_float.md)                                   | [`clearcoat_roughness`](class_basematerial3d.md#class_basematerial3d_property_clearcoat_roughness)                                     | ``0.5``               |
+| [`Texture2D`](class_texture2d.md)                           | [`clearcoat_texture`](class_basematerial3d.md#class_basematerial3d_property_clearcoat_texture)                                         |                       |
+| [CullMode](#enum_basematerial3d_cullmode)                   | [`cull_mode`](class_basematerial3d.md#class_basematerial3d_property_cull_mode)                                                         | ``0``                 |
+| [DepthDrawMode](#enum_basematerial3d_depthdrawmode)         | [`depth_draw_mode`](class_basematerial3d.md#class_basematerial3d_property_depth_draw_mode)                                             | ``0``                 |
+| [`Texture2D`](class_texture2d.md)                           | [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo)                                                 |                       |
+| [BlendMode](#enum_basematerial3d_blendmode)                 | [`detail_blend_mode`](class_basematerial3d.md#class_basematerial3d_property_detail_blend_mode)                                         | ``0``                 |
+| [`bool`](class_bool.md)                                     | [`detail_enabled`](class_basematerial3d.md#class_basematerial3d_property_detail_enabled)                                               | ``false``             |
+| [`Texture2D`](class_texture2d.md)                           | [`detail_mask`](class_basematerial3d.md#class_basematerial3d_property_detail_mask)                                                     |                       |
+| [`Texture2D`](class_texture2d.md)                           | [`detail_normal`](class_basematerial3d.md#class_basematerial3d_property_detail_normal)                                                 |                       |
+| [DetailUV](#enum_basematerial3d_detailuv)                   | [`detail_uv_layer`](class_basematerial3d.md#class_basematerial3d_property_detail_uv_layer)                                             | ``0``                 |
+| [DiffuseMode](#enum_basematerial3d_diffusemode)             | [`diffuse_mode`](class_basematerial3d.md#class_basematerial3d_property_diffuse_mode)                                                   | ``0``                 |
+| [`bool`](class_bool.md)                                     | [`disable_ambient_light`](class_basematerial3d.md#class_basematerial3d_property_disable_ambient_light)                                 | ``false``             |
+| [`bool`](class_bool.md)                                     | [`disable_fog`](class_basematerial3d.md#class_basematerial3d_property_disable_fog)                                                     | ``false``             |
+| [`bool`](class_bool.md)                                     | [`disable_receive_shadows`](class_basematerial3d.md#class_basematerial3d_property_disable_receive_shadows)                             | ``false``             |
+| [`float`](class_float.md)                                   | [`distance_fade_max_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_max_distance)                       | ``10.0``              |
+| [`float`](class_float.md)                                   | [`distance_fade_min_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_min_distance)                       | ``0.0``               |
+| [DistanceFadeMode](#enum_basematerial3d_distancefademode)   | [`distance_fade_mode`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_mode)                                       | ``0``                 |
+| [`Color`](class_color.md)                                   | [`emission`](class_basematerial3d.md#class_basematerial3d_property_emission)                                                           | ``Color(0, 0, 0, 1)`` |
+| [`bool`](class_bool.md)                                     | [`emission_enabled`](class_basematerial3d.md#class_basematerial3d_property_emission_enabled)                                           | ``false``             |
+| [`float`](class_float.md)                                   | [`emission_energy_multiplier`](class_basematerial3d.md#class_basematerial3d_property_emission_energy_multiplier)                       | ``1.0``               |
+| [`float`](class_float.md)                                   | [`emission_intensity`](class_basematerial3d.md#class_basematerial3d_property_emission_intensity)                                       |                       |
+| [`bool`](class_bool.md)                                     | [`emission_on_uv2`](class_basematerial3d.md#class_basematerial3d_property_emission_on_uv2)                                             | ``false``             |
+| [EmissionOperator](#enum_basematerial3d_emissionoperator)   | [`emission_operator`](class_basematerial3d.md#class_basematerial3d_property_emission_operator)                                         | ``0``                 |
+| [`Texture2D`](class_texture2d.md)                           | [`emission_texture`](class_basematerial3d.md#class_basematerial3d_property_emission_texture)                                           |                       |
+| [`bool`](class_bool.md)                                     | [`fixed_size`](class_basematerial3d.md#class_basematerial3d_property_fixed_size)                                                       | ``false``             |
+| [`bool`](class_bool.md)                                     | [`grow`](class_basematerial3d.md#class_basematerial3d_property_grow)                                                                   | ``false``             |
+| [`float`](class_float.md)                                   | [`grow_amount`](class_basematerial3d.md#class_basematerial3d_property_grow_amount)                                                     | ``0.0``               |
+| [`bool`](class_bool.md)                                     | [`heightmap_deep_parallax`](class_basematerial3d.md#class_basematerial3d_property_heightmap_deep_parallax)                             | ``false``             |
+| [`bool`](class_bool.md)                                     | [`heightmap_enabled`](class_basematerial3d.md#class_basematerial3d_property_heightmap_enabled)                                         | ``false``             |
+| [`bool`](class_bool.md)                                     | [`heightmap_flip_binormal`](class_basematerial3d.md#class_basematerial3d_property_heightmap_flip_binormal)                             | ``false``             |
+| [`bool`](class_bool.md)                                     | [`heightmap_flip_tangent`](class_basematerial3d.md#class_basematerial3d_property_heightmap_flip_tangent)                               | ``false``             |
+| [`bool`](class_bool.md)                                     | [`heightmap_flip_texture`](class_basematerial3d.md#class_basematerial3d_property_heightmap_flip_texture)                               | ``false``             |
+| [`int`](class_int.md)                                       | [`heightmap_max_layers`](class_basematerial3d.md#class_basematerial3d_property_heightmap_max_layers)                                   |                       |
+| [`int`](class_int.md)                                       | [`heightmap_min_layers`](class_basematerial3d.md#class_basematerial3d_property_heightmap_min_layers)                                   |                       |
+| [`float`](class_float.md)                                   | [`heightmap_scale`](class_basematerial3d.md#class_basematerial3d_property_heightmap_scale)                                             | ``5.0``               |
+| [`Texture2D`](class_texture2d.md)                           | [`heightmap_texture`](class_basematerial3d.md#class_basematerial3d_property_heightmap_texture)                                         |                       |
+| [`float`](class_float.md)                                   | [`metallic`](class_basematerial3d.md#class_basematerial3d_property_metallic)                                                           | ``0.0``               |
+| [`float`](class_float.md)                                   | [`metallic_specular`](class_basematerial3d.md#class_basematerial3d_property_metallic_specular)                                         | ``0.5``               |
+| [`Texture2D`](class_texture2d.md)                           | [`metallic_texture`](class_basematerial3d.md#class_basematerial3d_property_metallic_texture)                                           |                       |
+| [TextureChannel](#enum_basematerial3d_texturechannel)       | [`metallic_texture_channel`](class_basematerial3d.md#class_basematerial3d_property_metallic_texture_channel)                           | ``0``                 |
+| [`float`](class_float.md)                                   | [`msdf_outline_size`](class_basematerial3d.md#class_basematerial3d_property_msdf_outline_size)                                         | ``0.0``               |
+| [`float`](class_float.md)                                   | [`msdf_pixel_range`](class_basematerial3d.md#class_basematerial3d_property_msdf_pixel_range)                                           | ``4.0``               |
+| [`bool`](class_bool.md)                                     | [`no_depth_test`](class_basematerial3d.md#class_basematerial3d_property_no_depth_test)                                                 | ``false``             |
+| [`bool`](class_bool.md)                                     | [`normal_enabled`](class_basematerial3d.md#class_basematerial3d_property_normal_enabled)                                               | ``false``             |
+| [`float`](class_float.md)                                   | [`normal_scale`](class_basematerial3d.md#class_basematerial3d_property_normal_scale)                                                   | ``1.0``               |
+| [`Texture2D`](class_texture2d.md)                           | [`normal_texture`](class_basematerial3d.md#class_basematerial3d_property_normal_texture)                                               |                       |
+| [`Texture2D`](class_texture2d.md)                           | [`orm_texture`](class_basematerial3d.md#class_basematerial3d_property_orm_texture)                                                     |                       |
+| [`int`](class_int.md)                                       | [`particles_anim_h_frames`](class_basematerial3d.md#class_basematerial3d_property_particles_anim_h_frames)                             |                       |
+| [`bool`](class_bool.md)                                     | [`particles_anim_loop`](class_basematerial3d.md#class_basematerial3d_property_particles_anim_loop)                                     |                       |
+| [`int`](class_int.md)                                       | [`particles_anim_v_frames`](class_basematerial3d.md#class_basematerial3d_property_particles_anim_v_frames)                             |                       |
+| [`float`](class_float.md)                                   | [`point_size`](class_basematerial3d.md#class_basematerial3d_property_point_size)                                                       | ``1.0``               |
+| [`float`](class_float.md)                                   | [`proximity_fade_distance`](class_basematerial3d.md#class_basematerial3d_property_proximity_fade_distance)                             | ``1.0``               |
+| [`bool`](class_bool.md)                                     | [`proximity_fade_enabled`](class_basematerial3d.md#class_basematerial3d_property_proximity_fade_enabled)                               | ``false``             |
+| [`bool`](class_bool.md)                                     | [`refraction_enabled`](class_basematerial3d.md#class_basematerial3d_property_refraction_enabled)                                       | ``false``             |
+| [`float`](class_float.md)                                   | [`refraction_scale`](class_basematerial3d.md#class_basematerial3d_property_refraction_scale)                                           | ``0.05``              |
+| [`Texture2D`](class_texture2d.md)                           | [`refraction_texture`](class_basematerial3d.md#class_basematerial3d_property_refraction_texture)                                       |                       |
+| [TextureChannel](#enum_basematerial3d_texturechannel)       | [`refraction_texture_channel`](class_basematerial3d.md#class_basematerial3d_property_refraction_texture_channel)                       | ``0``                 |
+| [`float`](class_float.md)                                   | [`rim`](class_basematerial3d.md#class_basematerial3d_property_rim)                                                                     | ``1.0``               |
+| [`bool`](class_bool.md)                                     | [`rim_enabled`](class_basematerial3d.md#class_basematerial3d_property_rim_enabled)                                                     | ``false``             |
+| [`Texture2D`](class_texture2d.md)                           | [`rim_texture`](class_basematerial3d.md#class_basematerial3d_property_rim_texture)                                                     |                       |
+| [`float`](class_float.md)                                   | [`rim_tint`](class_basematerial3d.md#class_basematerial3d_property_rim_tint)                                                           | ``0.5``               |
+| [`float`](class_float.md)                                   | [`roughness`](class_basematerial3d.md#class_basematerial3d_property_roughness)                                                         | ``1.0``               |
+| [`Texture2D`](class_texture2d.md)                           | [`roughness_texture`](class_basematerial3d.md#class_basematerial3d_property_roughness_texture)                                         |                       |
+| [TextureChannel](#enum_basematerial3d_texturechannel)       | [`roughness_texture_channel`](class_basematerial3d.md#class_basematerial3d_property_roughness_texture_channel)                         | ``0``                 |
+| [ShadingMode](#enum_basematerial3d_shadingmode)             | [`shading_mode`](class_basematerial3d.md#class_basematerial3d_property_shading_mode)                                                   | ``1``                 |
+| [`bool`](class_bool.md)                                     | [`shadow_to_opacity`](class_basematerial3d.md#class_basematerial3d_property_shadow_to_opacity)                                         | ``false``             |
+| [SpecularMode](#enum_basematerial3d_specularmode)           | [`specular_mode`](class_basematerial3d.md#class_basematerial3d_property_specular_mode)                                                 | ``0``                 |
+| [`bool`](class_bool.md)                                     | [`subsurf_scatter_enabled`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_enabled)                             | ``false``             |
+| [`bool`](class_bool.md)                                     | [`subsurf_scatter_skin_mode`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_skin_mode)                         | ``false``             |
+| [`float`](class_float.md)                                   | [`subsurf_scatter_strength`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_strength)                           | ``0.0``               |
+| [`Texture2D`](class_texture2d.md)                           | [`subsurf_scatter_texture`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_texture)                             |                       |
+| [`float`](class_float.md)                                   | [`subsurf_scatter_transmittance_boost`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_transmittance_boost)     | ``0.0``               |
+| [`Color`](class_color.md)                                   | [`subsurf_scatter_transmittance_color`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_transmittance_color)     | ``Color(1, 1, 1, 1)`` |
+| [`float`](class_float.md)                                   | [`subsurf_scatter_transmittance_depth`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_transmittance_depth)     | ``0.1``               |
+| [`bool`](class_bool.md)                                     | [`subsurf_scatter_transmittance_enabled`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_transmittance_enabled) | ``false``             |
+| [`Texture2D`](class_texture2d.md)                           | [`subsurf_scatter_transmittance_texture`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_transmittance_texture) |                       |
+| [TextureFilter](#enum_basematerial3d_texturefilter)         | [`texture_filter`](class_basematerial3d.md#class_basematerial3d_property_texture_filter)                                               | ``3``                 |
+| [`bool`](class_bool.md)                                     | [`texture_repeat`](class_basematerial3d.md#class_basematerial3d_property_texture_repeat)                                               | ``true``              |
+| [Transparency](#enum_basematerial3d_transparency)           | [`transparency`](class_basematerial3d.md#class_basematerial3d_property_transparency)                                                   | ``0``                 |
+| [`bool`](class_bool.md)                                     | [`use_particle_trails`](class_basematerial3d.md#class_basematerial3d_property_use_particle_trails)                                     | ``false``             |
+| [`bool`](class_bool.md)                                     | [`use_point_size`](class_basematerial3d.md#class_basematerial3d_property_use_point_size)                                               | ``false``             |
+| [`Vector3`](class_vector3.md)                               | [`uv1_offset`](class_basematerial3d.md#class_basematerial3d_property_uv1_offset)                                                       | ``Vector3(0, 0, 0)``  |
+| [`Vector3`](class_vector3.md)                               | [`uv1_scale`](class_basematerial3d.md#class_basematerial3d_property_uv1_scale)                                                         | ``Vector3(1, 1, 1)``  |
+| [`bool`](class_bool.md)                                     | [`uv1_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv1_triplanar)                                                 | ``false``             |
+| [`float`](class_float.md)                                   | [`uv1_triplanar_sharpness`](class_basematerial3d.md#class_basematerial3d_property_uv1_triplanar_sharpness)                             | ``1.0``               |
+| [`bool`](class_bool.md)                                     | [`uv1_world_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv1_world_triplanar)                                     | ``false``             |
+| [`Vector3`](class_vector3.md)                               | [`uv2_offset`](class_basematerial3d.md#class_basematerial3d_property_uv2_offset)                                                       | ``Vector3(0, 0, 0)``  |
+| [`Vector3`](class_vector3.md)                               | [`uv2_scale`](class_basematerial3d.md#class_basematerial3d_property_uv2_scale)                                                         | ``Vector3(1, 1, 1)``  |
+| [`bool`](class_bool.md)                                     | [`uv2_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv2_triplanar)                                                 | ``false``             |
+| [`float`](class_float.md)                                   | [`uv2_triplanar_sharpness`](class_basematerial3d.md#class_basematerial3d_property_uv2_triplanar_sharpness)                             | ``1.0``               |
+| [`bool`](class_bool.md)                                     | [`uv2_world_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv2_world_triplanar)                                     | ``false``             |
+| [`bool`](class_bool.md)                                     | [`vertex_color_is_srgb`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_is_srgb)                                   | ``false``             |
+| [`bool`](class_bool.md)                                     | [`vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo)                       | ``false``             |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)           | [`get_feature`](#class_basematerial3d_method_get_feature) ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]                                       |
-| [`bool`](class_bool.md)           | [`get_flag`](#class_basematerial3d_method_get_flag) ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]                                                    |
-| [`Texture2D`](class_texture2d.md) | [`get_texture`](#class_basematerial3d_method_get_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]                               |
-| `void`                            | [`set_feature`](#class_basematerial3d_method_set_feature) ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )                    |
-| `void`                            | [`set_flag`](#class_basematerial3d_method_set_flag) ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )                                 |
-| `void`                            | [`set_texture`](#class_basematerial3d_method_set_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) ) |
+| [`bool`](class_bool.md)           | [`get_feature`](class_basematerial3d.md#class_basematerial3d_method_get_feature) ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]                                       |
+| [`bool`](class_bool.md)           | [`get_flag`](class_basematerial3d.md#class_basematerial3d_method_get_flag) ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]                                                    |
+| [`Texture2D`](class_texture2d.md) | [`get_texture`](class_basematerial3d.md#class_basematerial3d_method_get_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]                               |
+| `void`                            | [`set_feature`](class_basematerial3d.md#class_basematerial3d_method_set_feature) ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )                    |
+| `void`                            | [`set_flag`](class_basematerial3d.md#class_basematerial3d_method_set_flag) ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )                                 |
+| `void`                            | [`set_texture`](class_basematerial3d.md#class_basematerial3d_method_set_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -206,7 +206,7 @@ Texture specifying per-pixel clearcoat value.
 
 [TextureParam](#enum_basematerial3d_textureparam) **TEXTURE_FLOWMAP** = ``7``
 
-Texture specifying per-pixel flowmap direction for use with [`anisotropy`](#class_basematerial3d_property_anisotropy).
+Texture specifying per-pixel flowmap direction for use with [`anisotropy`](class_basematerial3d.md#class_basematerial3d_property_anisotropy).
 
 <div id="_class_basematerial3d_constant_texture_ambient_occlusion"></div>
 
@@ -298,25 +298,25 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 [TextureFilter](#enum_basematerial3d_texturefilter) **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS** = ``2``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look pixelated from up close, and smooth from a distance.
+The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look pixelated from up close, and smooth from a distance.
 
 <div id="_class_basematerial3d_constant_texture_filter_linear_with_mipmaps"></div>
 
 [TextureFilter](#enum_basematerial3d_texturefilter) **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS** = ``3``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look smooth from up close, and smooth from a distance.
+The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look smooth from up close, and smooth from a distance.
 
 <div id="_class_basematerial3d_constant_texture_filter_nearest_with_mipmaps_anisotropic"></div>
 
 [TextureFilter](#enum_basematerial3d_texturefilter) **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC** = ``4``
 
-The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting [`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level`](#class_projectsettings_property_rendering/textures/default_filters/anisotropic_filtering_level).
+The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting [`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/anisotropic_filtering_level).
 
 <div id="_class_basematerial3d_constant_texture_filter_linear_with_mipmaps_anisotropic"></div>
 
 [TextureFilter](#enum_basematerial3d_texturefilter) **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC** = ``5``
 
-The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting [`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level`](#class_projectsettings_property_rendering/textures/default_filters/anisotropic_filtering_level).
+The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting [`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/anisotropic_filtering_level).
 
 <div id="_class_basematerial3d_constant_texture_filter_max"></div>
 
@@ -412,7 +412,7 @@ The object will be shaded per pixel. Useful for realistic shading effects.
 
 [ShadingMode](#enum_basematerial3d_shadingmode) **SHADING_MODE_PER_VERTEX** = ``2``
 
-The object will be shaded per vertex. Useful when you want cheaper shaders and do not care about visual quality. Not implemented yet (this mode will act like [`SHADING_MODE_PER_PIXEL`](#class_basematerial3d_constant_shading_mode_per_pixel)).
+The object will be shaded per vertex. Useful when you want cheaper shaders and do not care about visual quality. Not implemented yet (this mode will act like [`SHADING_MODE_PER_PIXEL`](class_basematerial3d.md#class_basematerial3d_constant_shading_mode_per_pixel)).
 
 <div id="_class_basematerial3d_constant_shading_mode_max"></div>
 
@@ -432,73 +432,73 @@ enum **Feature**: <div id="enum_basematerial3d_feature"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_EMISSION** = ``0``
 
-Constant for setting [`emission_enabled`](#class_basematerial3d_property_emission_enabled).
+Constant for setting [`emission_enabled`](class_basematerial3d.md#class_basematerial3d_property_emission_enabled).
 
 <div id="_class_basematerial3d_constant_feature_normal_mapping"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_NORMAL_MAPPING** = ``1``
 
-Constant for setting [`normal_enabled`](#class_basematerial3d_property_normal_enabled).
+Constant for setting [`normal_enabled`](class_basematerial3d.md#class_basematerial3d_property_normal_enabled).
 
 <div id="_class_basematerial3d_constant_feature_rim"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_RIM** = ``2``
 
-Constant for setting [`rim_enabled`](#class_basematerial3d_property_rim_enabled).
+Constant for setting [`rim_enabled`](class_basematerial3d.md#class_basematerial3d_property_rim_enabled).
 
 <div id="_class_basematerial3d_constant_feature_clearcoat"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_CLEARCOAT** = ``3``
 
-Constant for setting [`clearcoat_enabled`](#class_basematerial3d_property_clearcoat_enabled).
+Constant for setting [`clearcoat_enabled`](class_basematerial3d.md#class_basematerial3d_property_clearcoat_enabled).
 
 <div id="_class_basematerial3d_constant_feature_anisotropy"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_ANISOTROPY** = ``4``
 
-Constant for setting [`anisotropy_enabled`](#class_basematerial3d_property_anisotropy_enabled).
+Constant for setting [`anisotropy_enabled`](class_basematerial3d.md#class_basematerial3d_property_anisotropy_enabled).
 
 <div id="_class_basematerial3d_constant_feature_ambient_occlusion"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_AMBIENT_OCCLUSION** = ``5``
 
-Constant for setting [`ao_enabled`](#class_basematerial3d_property_ao_enabled).
+Constant for setting [`ao_enabled`](class_basematerial3d.md#class_basematerial3d_property_ao_enabled).
 
 <div id="_class_basematerial3d_constant_feature_height_mapping"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_HEIGHT_MAPPING** = ``6``
 
-Constant for setting [`heightmap_enabled`](#class_basematerial3d_property_heightmap_enabled).
+Constant for setting [`heightmap_enabled`](class_basematerial3d.md#class_basematerial3d_property_heightmap_enabled).
 
 <div id="_class_basematerial3d_constant_feature_subsurface_scattering"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_SUBSURFACE_SCATTERING** = ``7``
 
-Constant for setting [`subsurf_scatter_enabled`](#class_basematerial3d_property_subsurf_scatter_enabled).
+Constant for setting [`subsurf_scatter_enabled`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_enabled).
 
 <div id="_class_basematerial3d_constant_feature_subsurface_transmittance"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_SUBSURFACE_TRANSMITTANCE** = ``8``
 
-Constant for setting [`subsurf_scatter_transmittance_enabled`](#class_basematerial3d_property_subsurf_scatter_transmittance_enabled).
+Constant for setting [`subsurf_scatter_transmittance_enabled`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_transmittance_enabled).
 
 <div id="_class_basematerial3d_constant_feature_backlight"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_BACKLIGHT** = ``9``
 
-Constant for setting [`backlight_enabled`](#class_basematerial3d_property_backlight_enabled).
+Constant for setting [`backlight_enabled`](class_basematerial3d.md#class_basematerial3d_property_backlight_enabled).
 
 <div id="_class_basematerial3d_constant_feature_refraction"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_REFRACTION** = ``10``
 
-Constant for setting [`refraction_enabled`](#class_basematerial3d_property_refraction_enabled).
+Constant for setting [`refraction_enabled`](class_basematerial3d.md#class_basematerial3d_property_refraction_enabled).
 
 <div id="_class_basematerial3d_constant_feature_detail"></div>
 
 [Feature](#enum_basematerial3d_feature) **FEATURE_DETAIL** = ``11``
 
-Constant for setting [`detail_enabled`](#class_basematerial3d_property_detail_enabled).
+Constant for setting [`detail_enabled`](class_basematerial3d.md#class_basematerial3d_property_detail_enabled).
 
 <div id="_class_basematerial3d_constant_feature_max"></div>
 
@@ -648,7 +648,7 @@ Set `ALBEDO` to the per-vertex color specified in the mesh.
 
 [Flags](#enum_basematerial3d_flags) **FLAG_SRGB_VERTEX_COLOR** = ``2``
 
-Vertex colors are considered to be stored in sRGB color space and are converted to linear color space during rendering. See also [`vertex_color_is_srgb`](#class_basematerial3d_property_vertex_color_is_srgb).
+Vertex colors are considered to be stored in sRGB color space and are converted to linear color space during rendering. See also [`vertex_color_is_srgb`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_is_srgb).
 
  **Note:** Only effective when using the Forward+ and Mobile rendering methods.
 
@@ -668,7 +668,7 @@ Object is scaled by depth so that it always appears the same size on screen.
 
 [Flags](#enum_basematerial3d_flags) **FLAG_BILLBOARD_KEEP_SCALE** = ``5``
 
-Shader will keep the scale set for the mesh. Otherwise the scale is lost when billboarding. Only applies when [`billboard_mode`](#class_basematerial3d_property_billboard_mode) is [`BILLBOARD_ENABLED`](#class_basematerial3d_constant_billboard_enabled).
+Shader will keep the scale set for the mesh. Otherwise the scale is lost when billboarding. Only applies when [`billboard_mode`](class_basematerial3d.md#class_basematerial3d_property_billboard_mode) is [`BILLBOARD_ENABLED`](class_basematerial3d.md#class_basematerial3d_constant_billboard_enabled).
 
 <div id="_class_basematerial3d_constant_flag_uv1_use_triplanar"></div>
 
@@ -698,19 +698,19 @@ Use triplanar texture lookup for all texture lookups that would normally use `UV
 
 [Flags](#enum_basematerial3d_flags) **FLAG_AO_ON_UV2** = ``10``
 
-Use `UV2` coordinates to look up from the [`ao_texture`](#class_basematerial3d_property_ao_texture).
+Use `UV2` coordinates to look up from the [`ao_texture`](class_basematerial3d.md#class_basematerial3d_property_ao_texture).
 
 <div id="_class_basematerial3d_constant_flag_emission_on_uv2"></div>
 
 [Flags](#enum_basematerial3d_flags) **FLAG_EMISSION_ON_UV2** = ``11``
 
-Use `UV2` coordinates to look up from the [`emission_texture`](#class_basematerial3d_property_emission_texture).
+Use `UV2` coordinates to look up from the [`emission_texture`](class_basematerial3d.md#class_basematerial3d_property_emission_texture).
 
 <div id="_class_basematerial3d_constant_flag_albedo_texture_force_srgb"></div>
 
 [Flags](#enum_basematerial3d_flags) **FLAG_ALBEDO_TEXTURE_FORCE_SRGB** = ``12``
 
-Forces the shader to convert albedo from sRGB space to linear space. See also [`albedo_texture_force_srgb`](#class_basematerial3d_property_albedo_texture_force_srgb).
+Forces the shader to convert albedo from sRGB space to linear space. See also [`albedo_texture_force_srgb`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture_force_srgb).
 
 <div id="_class_basematerial3d_constant_flag_dont_receive_shadows"></div>
 
@@ -862,7 +862,7 @@ The object's X axis will always face the camera.
 
 Used for particle systems when assigned to [`GPUParticles3D`](class_gpuparticles3d.md) and [`CPUParticles3D`](class_cpuparticles3d.md) nodes (flipbook animation). Enables `particles_anim_*` properties.
 
-The [`ParticleProcessMaterial.anim_speed_min`](#class_particleprocessmaterial_property_anim_speed_min) or [`CPUParticles3D.anim_speed_min`](#class_cpuparticles3d_property_anim_speed_min) should also be set to a value bigger than zero for the animation to play.
+The [`ParticleProcessMaterial.anim_speed_min`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_anim_speed_min) or [`CPUParticles3D.anim_speed_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_anim_speed_min) should also be set to a value bigger than zero for the animation to play.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -946,13 +946,13 @@ Smoothly fades the object out based on each pixel's distance from the camera usi
 
 [DistanceFadeMode](#enum_basematerial3d_distancefademode) **DISTANCE_FADE_PIXEL_DITHER** = ``2``
 
-Smoothly fades the object out based on each pixel's distance from the camera using a dithering approach. Dithering discards pixels based on a set pattern to smoothly fade without enabling transparency. On certain hardware, this can be faster than [`DISTANCE_FADE_PIXEL_ALPHA`](#class_basematerial3d_constant_distance_fade_pixel_alpha).
+Smoothly fades the object out based on each pixel's distance from the camera using a dithering approach. Dithering discards pixels based on a set pattern to smoothly fade without enabling transparency. On certain hardware, this can be faster than [`DISTANCE_FADE_PIXEL_ALPHA`](class_basematerial3d.md#class_basematerial3d_constant_distance_fade_pixel_alpha).
 
 <div id="_class_basematerial3d_constant_distance_fade_object_dither"></div>
 
 [DistanceFadeMode](#enum_basematerial3d_distancefademode) **DISTANCE_FADE_OBJECT_DITHER** = ``3``
 
-Smoothly fades the object out based on the object's distance from the camera using a dithering approach. Dithering discards pixels based on a set pattern to smoothly fade without enabling transparency. On certain hardware, this can be faster than [`DISTANCE_FADE_PIXEL_ALPHA`](#class_basematerial3d_constant_distance_fade_pixel_alpha) and [`DISTANCE_FADE_PIXEL_DITHER`](#class_basematerial3d_constant_distance_fade_pixel_dither).
+Smoothly fades the object out based on the object's distance from the camera using a dithering approach. Dithering discards pixels based on a set pattern to smoothly fade without enabling transparency. On certain hardware, this can be faster than [`DISTANCE_FADE_PIXEL_ALPHA`](class_basematerial3d.md#class_basematerial3d_constant_distance_fade_pixel_alpha) and [`DISTANCE_FADE_PIXEL_DITHER`](class_basematerial3d.md#class_basematerial3d_constant_distance_fade_pixel_dither).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -969,7 +969,7 @@ Smoothly fades the object out based on the object's distance from the camera usi
 
 The material's base color.
 
- **Note:** If [`detail_enabled`](#class_basematerial3d_property_detail_enabled) is `true` and a [`detail_albedo`](#class_basematerial3d_property_detail_albedo) texture is specified, [`albedo_color`](#class_basematerial3d_property_albedo_color) will *not* modulate the detail texture. This can be used to color partial areas of a material by not specifying an albedo texture and using a transparent [`detail_albedo`](#class_basematerial3d_property_detail_albedo) texture instead.
+ **Note:** If [`detail_enabled`](class_basematerial3d.md#class_basematerial3d_property_detail_enabled) is `true` and a [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo) texture is specified, [`albedo_color`](class_basematerial3d.md#class_basematerial3d_property_albedo_color) will *not* modulate the detail texture. This can be used to color partial areas of a material by not specifying an albedo texture and using a transparent [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo) texture instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -982,9 +982,9 @@ The material's base color.
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture to multiply by [`albedo_color`](#class_basematerial3d_property_albedo_color). Used for basic texturing of objects.
+Texture to multiply by [`albedo_color`](class_basematerial3d.md#class_basematerial3d_property_albedo_color). Used for basic texturing of objects.
 
-If the texture appears unexpectedly too dark or too bright, check [`albedo_texture_force_srgb`](#class_basematerial3d_property_albedo_texture_force_srgb).
+If the texture appears unexpectedly too dark or too bright, check [`albedo_texture_force_srgb`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture_force_srgb).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -997,9 +997,9 @@ If the texture appears unexpectedly too dark or too bright, check [`albedo_textu
 - `void` **set_flag** ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]
 
-If `true`, forces a conversion of the [`albedo_texture`](#class_basematerial3d_property_albedo_texture) from sRGB color space to linear color space. See also [`vertex_color_is_srgb`](#class_basematerial3d_property_vertex_color_is_srgb).
+If `true`, forces a conversion of the [`albedo_texture`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture) from sRGB color space to linear color space. See also [`vertex_color_is_srgb`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_is_srgb).
 
-This should only be enabled when needed (typically when using a [`ViewportTexture`](class_viewporttexture.md) as [`albedo_texture`](#class_basematerial3d_property_albedo_texture)). If [`albedo_texture_force_srgb`](#class_basematerial3d_property_albedo_texture_force_srgb) is `true` when it shouldn't be, the texture will appear to be too dark. If [`albedo_texture_force_srgb`](#class_basematerial3d_property_albedo_texture_force_srgb) is `false` when it shouldn't be, the texture will appear to be too bright.
+This should only be enabled when needed (typically when using a [`ViewportTexture`](class_viewporttexture.md) as [`albedo_texture`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture)). If [`albedo_texture_force_srgb`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture_force_srgb) is `true` when it shouldn't be, the texture will appear to be too dark. If [`albedo_texture_force_srgb`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture_force_srgb) is `false` when it shouldn't be, the texture will appear to be too bright.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1012,7 +1012,7 @@ This should only be enabled when needed (typically when using a [`ViewportTextur
 - `void` **set_flag** ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]
 
-Enables multichannel signed distance field rendering shader. Use [`msdf_pixel_range`](#class_basematerial3d_property_msdf_pixel_range) and [`msdf_outline_size`](#class_basematerial3d_property_msdf_outline_size) to configure MSDF parameters.
+Enables multichannel signed distance field rendering shader. Use [`msdf_pixel_range`](class_basematerial3d.md#class_basematerial3d_property_msdf_pixel_range) and [`msdf_outline_size`](class_basematerial3d.md#class_basematerial3d_property_msdf_outline_size) to configure MSDF parameters.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1064,7 +1064,7 @@ The hashing scale for Alpha Hash. Recommended values between `0` and `2`.
 - `void` **set_alpha_scissor_threshold** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_alpha_scissor_threshold** ( )
 
-Threshold at which the alpha scissor will discard values. Higher values will result in more pixels being discarded. If the material becomes too opaque at a distance, try increasing [`alpha_scissor_threshold`](#class_basematerial3d_property_alpha_scissor_threshold). If the material disappears at a distance, try decreasing [`alpha_scissor_threshold`](#class_basematerial3d_property_alpha_scissor_threshold).
+Threshold at which the alpha scissor will discard values. Higher values will result in more pixels being discarded. If the material becomes too opaque at a distance, try increasing [`alpha_scissor_threshold`](class_basematerial3d.md#class_basematerial3d_property_alpha_scissor_threshold). If the material disappears at a distance, try decreasing [`alpha_scissor_threshold`](class_basematerial3d.md#class_basematerial3d_property_alpha_scissor_threshold).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1077,7 +1077,7 @@ Threshold at which the alpha scissor will discard values. Higher values will res
 - `void` **set_anisotropy** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_anisotropy** ( )
 
-The strength of the anisotropy effect. This is multiplied by [`anisotropy_flowmap`](#class_basematerial3d_property_anisotropy_flowmap)'s alpha channel if a texture is defined there and the texture contains an alpha channel.
+The strength of the anisotropy effect. This is multiplied by [`anisotropy_flowmap`](class_basematerial3d.md#class_basematerial3d_property_anisotropy_flowmap)'s alpha channel if a texture is defined there and the texture contains an alpha channel.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1094,7 +1094,7 @@ If `true`, anisotropy is enabled. Anisotropy changes the shape of the specular b
 
  **Note:** Mesh tangents are needed for anisotropy to work. If the mesh does not contain tangents, the anisotropy effect will appear broken.
 
- **Note:** Material anisotropy should not to be confused with anisotropic texture filtering, which can be enabled by setting [`texture_filter`](#class_basematerial3d_property_texture_filter) to [`TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC`](#class_basematerial3d_constant_texture_filter_linear_with_mipmaps_anisotropic).
+ **Note:** Material anisotropy should not to be confused with anisotropic texture filtering, which can be enabled by setting [`texture_filter`](class_basematerial3d.md#class_basematerial3d_property_texture_filter) to [`TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC`](class_basematerial3d.md#class_basematerial3d_constant_texture_filter_linear_with_mipmaps_anisotropic).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1109,7 +1109,7 @@ If `true`, anisotropy is enabled. Anisotropy changes the shape of the specular b
 
 Texture that offsets the tangent map for anisotropy calculations and optionally controls the anisotropy effect (if an alpha channel is present). The flowmap texture is expected to be a derivative map, with the red channel representing distortion on the X axis and green channel representing distortion on the Y axis. Values below 0.5 will result in negative distortion, whereas values above 0.5 will result in positive distortion.
 
-If present, the texture's alpha channel will be used to multiply the strength of the [`anisotropy`](#class_basematerial3d_property_anisotropy) effect. Fully opaque pixels will keep the anisotropy effect's original strength while fully transparent pixels will disable the anisotropy effect entirely. The flowmap texture's blue channel is ignored.
+If present, the texture's alpha channel will be used to multiply the strength of the [`anisotropy`](class_basematerial3d.md#class_basematerial3d_property_anisotropy) effect. Fully opaque pixels will keep the anisotropy effect's original strength while fully transparent pixels will disable the anisotropy effect entirely. The flowmap texture's blue channel is ignored.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1122,7 +1122,7 @@ If present, the texture's alpha channel will be used to multiply the strength of
 - `void` **set_feature** ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_feature** ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]
 
-If `true`, ambient occlusion is enabled. Ambient occlusion darkens areas based on the [`ao_texture`](#class_basematerial3d_property_ao_texture).
+If `true`, ambient occlusion is enabled. Ambient occlusion darkens areas based on the [`ao_texture`](class_basematerial3d.md#class_basematerial3d_property_ao_texture).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1148,7 +1148,7 @@ Amount that ambient occlusion affects lighting from lights. If `0`, ambient occl
 - `void` **set_flag** ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]
 
-If `true`, use `UV2` coordinates to look up from the [`ao_texture`](#class_basematerial3d_property_ao_texture).
+If `true`, use `UV2` coordinates to look up from the [`ao_texture`](class_basematerial3d.md#class_basematerial3d_property_ao_texture).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1174,7 +1174,7 @@ Texture that defines the amount of ambient occlusion for a given point on the ob
 - `void` **set_ao_texture_channel** ( value: [TextureChannel](#enum_basematerial3d_texturechannel) )
 - [TextureChannel](#enum_basematerial3d_texturechannel) **get_ao_texture_channel** ( )
 
-Specifies the channel of the [`ao_texture`](#class_basematerial3d_property_ao_texture) in which the ambient occlusion information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
+Specifies the channel of the [`ao_texture`](class_basematerial3d.md#class_basematerial3d_property_ao_texture) in which the ambient occlusion information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1200,7 +1200,7 @@ The color used by the backlight effect. Represents the light passing through an 
 - `void` **set_feature** ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_feature** ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]
 
-If `true`, the backlight effect is enabled. See also [`subsurf_scatter_transmittance_enabled`](#class_basematerial3d_property_subsurf_scatter_transmittance_enabled).
+If `true`, the backlight effect is enabled. See also [`subsurf_scatter_transmittance_enabled`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_transmittance_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1213,7 +1213,7 @@ If `true`, the backlight effect is enabled. See also [`subsurf_scatter_transmitt
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture used to control the backlight effect per-pixel. Added to [`backlight`](#class_basematerial3d_property_backlight).
+Texture used to control the backlight effect per-pixel. Added to [`backlight`](class_basematerial3d.md#class_basematerial3d_property_backlight).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1226,7 +1226,7 @@ Texture used to control the backlight effect per-pixel. Added to [`backlight`](#
 - `void` **set_flag** ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]
 
-If `true`, the shader will keep the scale set for the mesh. Otherwise, the scale is lost when billboarding. Only applies when [`billboard_mode`](#class_basematerial3d_property_billboard_mode) is not [`BILLBOARD_DISABLED`](#class_basematerial3d_constant_billboard_disabled).
+If `true`, the shader will keep the scale set for the mesh. Otherwise, the scale is lost when billboarding. Only applies when [`billboard_mode`](class_basematerial3d.md#class_basematerial3d_property_billboard_mode) is not [`BILLBOARD_DISABLED`](class_basematerial3d.md#class_basematerial3d_constant_billboard_disabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1286,7 +1286,7 @@ Sets the strength of the clearcoat effect. Setting to `0` looks the same as disa
 
 If `true`, clearcoat rendering is enabled. Adds a secondary transparent pass to the lighting calculation resulting in an added specular blob. This makes materials appear as if they have a clear layer on them that can be either glossy or rough.
 
- **Note:** Clearcoat rendering is not visible if the material's [`shading_mode`](#class_basematerial3d_property_shading_mode) is [`SHADING_MODE_UNSHADED`](#class_basematerial3d_constant_shading_mode_unshaded).
+ **Note:** Clearcoat rendering is not visible if the material's [`shading_mode`](class_basematerial3d.md#class_basematerial3d_property_shading_mode) is [`SHADING_MODE_UNSHADED`](class_basematerial3d.md#class_basematerial3d_constant_shading_mode_unshaded).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1338,7 +1338,7 @@ Determines which side of the triangle to cull depending on whether the triangle 
 - `void` **set_depth_draw_mode** ( value: [DepthDrawMode](#enum_basematerial3d_depthdrawmode) )
 - [DepthDrawMode](#enum_basematerial3d_depthdrawmode) **get_depth_draw_mode** ( )
 
-Determines when depth rendering takes place. See [DepthDrawMode](#enum_basematerial3d_depthdrawmode). See also [`transparency`](#class_basematerial3d_property_transparency).
+Determines when depth rendering takes place. See [DepthDrawMode](#enum_basematerial3d_depthdrawmode). See also [`transparency`](class_basematerial3d.md#class_basematerial3d_property_transparency).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1351,9 +1351,9 @@ Determines when depth rendering takes place. See [DepthDrawMode](#enum_basemater
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture that specifies the color of the detail overlay. [`detail_albedo`](#class_basematerial3d_property_detail_albedo)'s alpha channel is used as a mask, even when the material is opaque. To use a dedicated texture as a mask, see [`detail_mask`](#class_basematerial3d_property_detail_mask).
+Texture that specifies the color of the detail overlay. [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo)'s alpha channel is used as a mask, even when the material is opaque. To use a dedicated texture as a mask, see [`detail_mask`](class_basematerial3d.md#class_basematerial3d_property_detail_mask).
 
- **Note:** [`detail_albedo`](#class_basematerial3d_property_detail_albedo) is *not* modulated by [`albedo_color`](#class_basematerial3d_property_albedo_color).
+ **Note:** [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo) is *not* modulated by [`albedo_color`](class_basematerial3d.md#class_basematerial3d_property_albedo_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1366,7 +1366,7 @@ Texture that specifies the color of the detail overlay. [`detail_albedo`](#class
 - `void` **set_detail_blend_mode** ( value: [BlendMode](#enum_basematerial3d_blendmode) )
 - [BlendMode](#enum_basematerial3d_blendmode) **get_detail_blend_mode** ( )
 
-Specifies how the [`detail_albedo`](#class_basematerial3d_property_detail_albedo) should blend with the current `ALBEDO`. See [BlendMode](#enum_basematerial3d_blendmode) for options.
+Specifies how the [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo) should blend with the current `ALBEDO`. See [BlendMode](#enum_basematerial3d_blendmode) for options.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1379,7 +1379,7 @@ Specifies how the [`detail_albedo`](#class_basematerial3d_property_detail_albedo
 - `void` **set_feature** ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_feature** ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]
 
-If `true`, enables the detail overlay. Detail is a second texture that gets mixed over the surface of the object based on [`detail_mask`](#class_basematerial3d_property_detail_mask) and [`detail_albedo`](#class_basematerial3d_property_detail_albedo)'s alpha channel. This can be used to add variation to objects, or to blend between two different albedo/normal textures.
+If `true`, enables the detail overlay. Detail is a second texture that gets mixed over the surface of the object based on [`detail_mask`](class_basematerial3d.md#class_basematerial3d_property_detail_mask) and [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo)'s alpha channel. This can be used to add variation to objects, or to blend between two different albedo/normal textures.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1392,7 +1392,7 @@ If `true`, enables the detail overlay. Detail is a second texture that gets mixe
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture used to specify how the detail textures get blended with the base textures. [`detail_mask`](#class_basematerial3d_property_detail_mask) can be used together with [`detail_albedo`](#class_basematerial3d_property_detail_albedo)'s alpha channel (if any).
+Texture used to specify how the detail textures get blended with the base textures. [`detail_mask`](class_basematerial3d.md#class_basematerial3d_property_detail_mask) can be used together with [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo)'s alpha channel (if any).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1405,7 +1405,7 @@ Texture used to specify how the detail textures get blended with the base textur
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture that specifies the per-pixel normal of the detail overlay. The [`detail_normal`](#class_basematerial3d_property_detail_normal) texture only uses the red and green channels; the blue and alpha channels are ignored. The normal read from [`detail_normal`](#class_basematerial3d_property_detail_normal) is oriented around the surface normal provided by the [`Mesh`](class_mesh.md).
+Texture that specifies the per-pixel normal of the detail overlay. The [`detail_normal`](class_basematerial3d.md#class_basematerial3d_property_detail_normal) texture only uses the red and green channels; the blue and alpha channels are ignored. The normal read from [`detail_normal`](class_basematerial3d.md#class_basematerial3d_property_detail_normal) is oriented around the surface normal provided by the [`Mesh`](class_mesh.md).
 
  **Note:** Godot expects the normal map to use X+, Y+, and Z+ coordinates. See [*this page*](http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates) for a comparison of normal map coordinates expected by popular engines.
 
@@ -1487,7 +1487,7 @@ If `true`, the object receives no shadow that would otherwise be cast onto it.
 
 Distance at which the object appears fully opaque.
 
- **Note:** If [`distance_fade_max_distance`](#class_basematerial3d_property_distance_fade_max_distance) is less than [`distance_fade_min_distance`](#class_basematerial3d_property_distance_fade_min_distance), the behavior will be reversed. The object will start to fade away at [`distance_fade_max_distance`](#class_basematerial3d_property_distance_fade_max_distance) and will fully disappear once it reaches [`distance_fade_min_distance`](#class_basematerial3d_property_distance_fade_min_distance).
+ **Note:** If [`distance_fade_max_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_max_distance) is less than [`distance_fade_min_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_min_distance), the behavior will be reversed. The object will start to fade away at [`distance_fade_max_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_max_distance) and will fully disappear once it reaches [`distance_fade_min_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_min_distance).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1502,7 +1502,7 @@ Distance at which the object appears fully opaque.
 
 Distance at which the object starts to become visible. If the object is less than this distance away, it will be invisible.
 
- **Note:** If [`distance_fade_min_distance`](#class_basematerial3d_property_distance_fade_min_distance) is greater than [`distance_fade_max_distance`](#class_basematerial3d_property_distance_fade_max_distance), the behavior will be reversed. The object will start to fade away at [`distance_fade_max_distance`](#class_basematerial3d_property_distance_fade_max_distance) and will fully disappear once it reaches [`distance_fade_min_distance`](#class_basematerial3d_property_distance_fade_min_distance).
+ **Note:** If [`distance_fade_min_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_min_distance) is greater than [`distance_fade_max_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_max_distance), the behavior will be reversed. The object will start to fade away at [`distance_fade_max_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_max_distance) and will fully disappear once it reaches [`distance_fade_min_distance`](class_basematerial3d.md#class_basematerial3d_property_distance_fade_min_distance).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1528,7 +1528,7 @@ Specifies which type of fade to use. Can be any of the [DistanceFadeMode](#enum_
 - `void` **set_emission** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_emission** ( )
 
-The emitted light's color. See [`emission_enabled`](#class_basematerial3d_property_emission_enabled).
+The emitted light's color. See [`emission_enabled`](class_basematerial3d.md#class_basematerial3d_property_emission_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1554,7 +1554,7 @@ If `true`, the body emits light. Emitting light makes the object appear brighter
 - `void` **set_emission_energy_multiplier** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_energy_multiplier** ( )
 
-Multiplier for emitted light. See [`emission_enabled`](#class_basematerial3d_property_emission_enabled).
+Multiplier for emitted light. See [`emission_enabled`](class_basematerial3d.md#class_basematerial3d_property_emission_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1567,7 +1567,7 @@ Multiplier for emitted light. See [`emission_enabled`](#class_basematerial3d_pro
 - `void` **set_emission_intensity** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_intensity** ( )
 
-Luminance of emitted light, measured in nits (candela per square meter). Only available when [`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units`](#class_projectsettings_property_rendering/lights_and_shadows/use_physical_light_units) is enabled. The default is roughly equivalent to an indoor lightbulb.
+Luminance of emitted light, measured in nits (candela per square meter). Only available when [`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units`](class_projectsettings.md#class_projectsettings_property_rendering/lights_and_shadows/use_physical_light_units) is enabled. The default is roughly equivalent to an indoor lightbulb.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1580,7 +1580,7 @@ Luminance of emitted light, measured in nits (candela per square meter). Only av
 - `void` **set_flag** ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]
 
-Use `UV2` to read from the [`emission_texture`](#class_basematerial3d_property_emission_texture).
+Use `UV2` to read from the [`emission_texture`](class_basematerial3d.md#class_basematerial3d_property_emission_texture).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1593,7 +1593,7 @@ Use `UV2` to read from the [`emission_texture`](#class_basematerial3d_property_e
 - `void` **set_emission_operator** ( value: [EmissionOperator](#enum_basematerial3d_emissionoperator) )
 - [EmissionOperator](#enum_basematerial3d_emissionoperator) **get_emission_operator** ( )
 
-Sets how [`emission`](#class_basematerial3d_property_emission) interacts with [`emission_texture`](#class_basematerial3d_property_emission_texture). Can either add or multiply. See [EmissionOperator](#enum_basematerial3d_emissionoperator) for options.
+Sets how [`emission`](class_basematerial3d.md#class_basematerial3d_property_emission) interacts with [`emission_texture`](class_basematerial3d.md#class_basematerial3d_property_emission_texture). Can either add or multiply. See [EmissionOperator](#enum_basematerial3d_emissionoperator) for options.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1632,7 +1632,7 @@ If `true`, the object is rendered at the same size regardless of distance.
 - `void` **set_grow_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_grow_enabled** ( )
 
-If `true`, enables the vertex grow setting. This can be used to create mesh-based outlines using a second material pass and its [`cull_mode`](#class_basematerial3d_property_cull_mode) set to [`CULL_FRONT`](#class_basematerial3d_constant_cull_front). See also [`grow_amount`](#class_basematerial3d_property_grow_amount).
+If `true`, enables the vertex grow setting. This can be used to create mesh-based outlines using a second material pass and its [`cull_mode`](class_basematerial3d.md#class_basematerial3d_property_cull_mode) set to [`CULL_FRONT`](class_basematerial3d.md#class_basematerial3d_constant_cull_front). See also [`grow_amount`](class_basematerial3d.md#class_basematerial3d_property_grow_amount).
 
  **Note:** Vertex growth cannot create new vertices, which means that visible gaps may occur in sharp corners. This can be alleviated by designing the mesh to use smooth normals exclusively using [*face weighted normals*](https://wiki.polycount.com/wiki/Face_weighted_normals) in the 3D authoring software. In this case, grow will be able to join every outline together, just like in the original mesh.
 
@@ -1647,7 +1647,7 @@ If `true`, enables the vertex grow setting. This can be used to create mesh-base
 - `void` **set_grow** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_grow** ( )
 
-Grows object vertices in the direction of their normals. Only effective if [`grow`](#class_basematerial3d_property_grow) is `true`.
+Grows object vertices in the direction of their normals. Only effective if [`grow`](class_basematerial3d.md#class_basematerial3d_property_grow) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1660,7 +1660,7 @@ Grows object vertices in the direction of their normals. Only effective if [`gro
 - `void` **set_heightmap_deep_parallax** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_heightmap_deep_parallax_enabled** ( )
 
-If `true`, uses parallax occlusion mapping to represent depth in the material instead of simple offset mapping (see [`heightmap_enabled`](#class_basematerial3d_property_heightmap_enabled)). This results in a more convincing depth effect, but is much more expensive on the GPU. Only enable this on materials where it makes a significant visual difference.
+If `true`, uses parallax occlusion mapping to represent depth in the material instead of simple offset mapping (see [`heightmap_enabled`](class_basematerial3d.md#class_basematerial3d_property_heightmap_enabled)). This results in a more convincing depth effect, but is much more expensive on the GPU. Only enable this on materials where it makes a significant visual difference.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1673,9 +1673,9 @@ If `true`, uses parallax occlusion mapping to represent depth in the material in
 - `void` **set_feature** ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_feature** ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]
 
-If `true`, height mapping is enabled (also called "parallax mapping" or "depth mapping"). See also [`normal_enabled`](#class_basematerial3d_property_normal_enabled). Height mapping is a demanding feature on the GPU, so it should only be used on materials where it makes a significant visual difference.
+If `true`, height mapping is enabled (also called "parallax mapping" or "depth mapping"). See also [`normal_enabled`](class_basematerial3d.md#class_basematerial3d_property_normal_enabled). Height mapping is a demanding feature on the GPU, so it should only be used on materials where it makes a significant visual difference.
 
- **Note:** Height mapping is not supported if triplanar mapping is used on the same material. The value of [`heightmap_enabled`](#class_basematerial3d_property_heightmap_enabled) will be ignored if [`uv1_triplanar`](#class_basematerial3d_property_uv1_triplanar) is enabled.
+ **Note:** Height mapping is not supported if triplanar mapping is used on the same material. The value of [`heightmap_enabled`](class_basematerial3d.md#class_basematerial3d_property_heightmap_enabled) will be ignored if [`uv1_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv1_triplanar) is enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1688,7 +1688,7 @@ If `true`, height mapping is enabled (also called "parallax mapping" or "depth m
 - `void` **set_heightmap_deep_parallax_flip_binormal** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_heightmap_deep_parallax_flip_binormal** ( )
 
-If `true`, flips the mesh's binormal vectors when interpreting the height map. If the heightmap effect looks strange when the camera moves (even with a reasonable [`heightmap_scale`](#class_basematerial3d_property_heightmap_scale)), try setting this to `true`.
+If `true`, flips the mesh's binormal vectors when interpreting the height map. If the heightmap effect looks strange when the camera moves (even with a reasonable [`heightmap_scale`](class_basematerial3d.md#class_basematerial3d_property_heightmap_scale)), try setting this to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1701,7 +1701,7 @@ If `true`, flips the mesh's binormal vectors when interpreting the height map. I
 - `void` **set_heightmap_deep_parallax_flip_tangent** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_heightmap_deep_parallax_flip_tangent** ( )
 
-If `true`, flips the mesh's tangent vectors when interpreting the height map. If the heightmap effect looks strange when the camera moves (even with a reasonable [`heightmap_scale`](#class_basematerial3d_property_heightmap_scale)), try setting this to `true`.
+If `true`, flips the mesh's tangent vectors when interpreting the height map. If the heightmap effect looks strange when the camera moves (even with a reasonable [`heightmap_scale`](class_basematerial3d.md#class_basematerial3d_property_heightmap_scale)), try setting this to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1716,7 +1716,7 @@ If `true`, flips the mesh's tangent vectors when interpreting the height map. If
 
 If `true`, interprets the height map texture as a depth map, with brighter values appearing to be "lower" in altitude compared to darker values.
 
-This can be enabled for compatibility with some materials authored for Godot 3.x. This is not necessary if the Invert import option was used to invert the depth map in Godot 3.x, in which case [`heightmap_flip_texture`](#class_basematerial3d_property_heightmap_flip_texture) should remain `false`.
+This can be enabled for compatibility with some materials authored for Godot 3.x. This is not necessary if the Invert import option was used to invert the depth map in Godot 3.x, in which case [`heightmap_flip_texture`](class_basematerial3d.md#class_basematerial3d_property_heightmap_flip_texture) should remain `false`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1731,7 +1731,7 @@ This can be enabled for compatibility with some materials authored for Godot 3.x
 
 The number of layers to use for parallax occlusion mapping when the camera is up close to the material. Higher values result in a more convincing depth effect, especially in materials that have steep height changes. Higher values have a significant cost on the GPU, so it should only be increased on materials where it makes a significant visual difference.
 
- **Note:** Only effective if [`heightmap_deep_parallax`](#class_basematerial3d_property_heightmap_deep_parallax) is `true`.
+ **Note:** Only effective if [`heightmap_deep_parallax`](class_basematerial3d.md#class_basematerial3d_property_heightmap_deep_parallax) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1746,7 +1746,7 @@ The number of layers to use for parallax occlusion mapping when the camera is up
 
 The number of layers to use for parallax occlusion mapping when the camera is far away from the material. Higher values result in a more convincing depth effect, especially in materials that have steep height changes. Higher values have a significant cost on the GPU, so it should only be increased on materials where it makes a significant visual difference.
 
- **Note:** Only effective if [`heightmap_deep_parallax`](#class_basematerial3d_property_heightmap_deep_parallax) is `true`.
+ **Note:** Only effective if [`heightmap_deep_parallax`](class_basematerial3d.md#class_basematerial3d_property_heightmap_deep_parallax) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1759,9 +1759,9 @@ The number of layers to use for parallax occlusion mapping when the camera is fa
 - `void` **set_heightmap_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_heightmap_scale** ( )
 
-The heightmap scale to use for the parallax effect (see [`heightmap_enabled`](#class_basematerial3d_property_heightmap_enabled)). The default value is tuned so that the highest point (value = 255) appears to be 5 cm higher than the lowest point (value = 0). Higher values result in a deeper appearance, but may result in artifacts appearing when looking at the material from oblique angles, especially when the camera moves. Negative values can be used to invert the parallax effect, but this is different from inverting the texture using [`heightmap_flip_texture`](#class_basematerial3d_property_heightmap_flip_texture) as the material will also appear to be "closer" to the camera. In most cases, [`heightmap_scale`](#class_basematerial3d_property_heightmap_scale) should be kept to a positive value.
+The heightmap scale to use for the parallax effect (see [`heightmap_enabled`](class_basematerial3d.md#class_basematerial3d_property_heightmap_enabled)). The default value is tuned so that the highest point (value = 255) appears to be 5 cm higher than the lowest point (value = 0). Higher values result in a deeper appearance, but may result in artifacts appearing when looking at the material from oblique angles, especially when the camera moves. Negative values can be used to invert the parallax effect, but this is different from inverting the texture using [`heightmap_flip_texture`](class_basematerial3d.md#class_basematerial3d_property_heightmap_flip_texture) as the material will also appear to be "closer" to the camera. In most cases, [`heightmap_scale`](class_basematerial3d.md#class_basematerial3d_property_heightmap_scale) should be kept to a positive value.
 
- **Note:** If the height map effect looks strange regardless of this value, try adjusting [`heightmap_flip_binormal`](#class_basematerial3d_property_heightmap_flip_binormal) and [`heightmap_flip_tangent`](#class_basematerial3d_property_heightmap_flip_tangent). See also [`heightmap_texture`](#class_basematerial3d_property_heightmap_texture) for recommendations on authoring heightmap textures, as the way the heightmap texture is authored affects how [`heightmap_scale`](#class_basematerial3d_property_heightmap_scale) behaves.
+ **Note:** If the height map effect looks strange regardless of this value, try adjusting [`heightmap_flip_binormal`](class_basematerial3d.md#class_basematerial3d_property_heightmap_flip_binormal) and [`heightmap_flip_tangent`](class_basematerial3d.md#class_basematerial3d_property_heightmap_flip_tangent). See also [`heightmap_texture`](class_basematerial3d.md#class_basematerial3d_property_heightmap_texture) for recommendations on authoring heightmap textures, as the way the heightmap texture is authored affects how [`heightmap_scale`](class_basematerial3d.md#class_basematerial3d_property_heightmap_scale) behaves.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1774,9 +1774,9 @@ The heightmap scale to use for the parallax effect (see [`heightmap_enabled`](#c
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-The texture to use as a height map. See also [`heightmap_enabled`](#class_basematerial3d_property_heightmap_enabled).
+The texture to use as a height map. See also [`heightmap_enabled`](class_basematerial3d.md#class_basematerial3d_property_heightmap_enabled).
 
-For best results, the texture should be normalized (with [`heightmap_scale`](#class_basematerial3d_property_heightmap_scale) reduced to compensate). In [*GIMP*](https://gimp.org), this can be done using **Colors > Auto > Equalize**. If the texture only uses a small part of its available range, the parallax effect may look strange, especially when the camera moves.
+For best results, the texture should be normalized (with [`heightmap_scale`](class_basematerial3d.md#class_basematerial3d_property_heightmap_scale) reduced to compensate). In [*GIMP*](https://gimp.org), this can be done using **Colors > Auto > Equalize**. If the texture only uses a small part of its available range, the parallax effect may look strange, especially when the camera moves.
 
  **Note:** To reduce memory usage and improve loading times, you may be able to use a lower-resolution heightmap texture as most heightmaps are only comprised of low-frequency data.
 
@@ -1791,7 +1791,7 @@ For best results, the texture should be normalized (with [`heightmap_scale`](#cl
 - `void` **set_metallic** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_metallic** ( )
 
-A high value makes the material appear more like a metal. Non-metals use their albedo as the diffuse color and add diffuse to the specular reflection. With non-metals, the reflection appears on top of the albedo color. Metals use their albedo as a multiplier to the specular reflection and set the diffuse color to black resulting in a tinted reflection. Materials work better when fully metal or fully non-metal, values between `0` and `1` should only be used for blending between metal and non-metal sections. To alter the amount of reflection use [`roughness`](#class_basematerial3d_property_roughness).
+A high value makes the material appear more like a metal. Non-metals use their albedo as the diffuse color and add diffuse to the specular reflection. With non-metals, the reflection appears on top of the albedo color. Metals use their albedo as a multiplier to the specular reflection and set the diffuse color to black resulting in a tinted reflection. Materials work better when fully metal or fully non-metal, values between `0` and `1` should only be used for blending between metal and non-metal sections. To alter the amount of reflection use [`roughness`](class_basematerial3d.md#class_basematerial3d_property_roughness).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1804,9 +1804,9 @@ A high value makes the material appear more like a metal. Non-metals use their a
 - `void` **set_specular** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_specular** ( )
 
-Adjusts the strength of specular reflections. Specular reflections are composed of scene reflections and the specular lobe which is the bright spot that is reflected from light sources. When set to `0.0`, no specular reflections will be visible. This differs from the [`SPECULAR_DISABLED`](#class_basematerial3d_constant_specular_disabled) [SpecularMode](#enum_basematerial3d_specularmode) as [`SPECULAR_DISABLED`](#class_basematerial3d_constant_specular_disabled) only applies to the specular lobe from the light source.
+Adjusts the strength of specular reflections. Specular reflections are composed of scene reflections and the specular lobe which is the bright spot that is reflected from light sources. When set to `0.0`, no specular reflections will be visible. This differs from the [`SPECULAR_DISABLED`](class_basematerial3d.md#class_basematerial3d_constant_specular_disabled) [SpecularMode](#enum_basematerial3d_specularmode) as [`SPECULAR_DISABLED`](class_basematerial3d.md#class_basematerial3d_constant_specular_disabled) only applies to the specular lobe from the light source.
 
- **Note:** Unlike [`metallic`](#class_basematerial3d_property_metallic), this is not energy-conserving, so it should be left at `0.5` in most cases. See also [`roughness`](#class_basematerial3d_property_roughness).
+ **Note:** Unlike [`metallic`](class_basematerial3d.md#class_basematerial3d_property_metallic), this is not energy-conserving, so it should be left at `0.5` in most cases. See also [`roughness`](class_basematerial3d.md#class_basematerial3d_property_roughness).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1819,7 +1819,7 @@ Adjusts the strength of specular reflections. Specular reflections are composed 
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture used to specify metallic for an object. This is multiplied by [`metallic`](#class_basematerial3d_property_metallic).
+Texture used to specify metallic for an object. This is multiplied by [`metallic`](class_basematerial3d.md#class_basematerial3d_property_metallic).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1832,7 +1832,7 @@ Texture used to specify metallic for an object. This is multiplied by [`metallic
 - `void` **set_metallic_texture_channel** ( value: [TextureChannel](#enum_basematerial3d_texturechannel) )
 - [TextureChannel](#enum_basematerial3d_texturechannel) **get_metallic_texture_channel** ( )
 
-Specifies the channel of the [`metallic_texture`](#class_basematerial3d_property_metallic_texture) in which the metallic information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
+Specifies the channel of the [`metallic_texture`](class_basematerial3d.md#class_basematerial3d_property_metallic_texture) in which the metallic information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1910,13 +1910,13 @@ The strength of the normal map's effect.
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture used to specify the normal at a given pixel. The [`normal_texture`](#class_basematerial3d_property_normal_texture) only uses the red and green channels; the blue and alpha channels are ignored. The normal read from [`normal_texture`](#class_basematerial3d_property_normal_texture) is oriented around the surface normal provided by the [`Mesh`](class_mesh.md).
+Texture used to specify the normal at a given pixel. The [`normal_texture`](class_basematerial3d.md#class_basematerial3d_property_normal_texture) only uses the red and green channels; the blue and alpha channels are ignored. The normal read from [`normal_texture`](class_basematerial3d.md#class_basematerial3d_property_normal_texture) is oriented around the surface normal provided by the [`Mesh`](class_mesh.md).
 
- **Note:** The mesh must have both normals and tangents defined in its vertex data. Otherwise, the normal map won't render correctly and will only appear to darken the whole surface. If creating geometry with [`SurfaceTool`](class_surfacetool.md), you can use [`SurfaceTool.generate_normals`](#class_surfacetool_method_generate_normals) and [`SurfaceTool.generate_tangents`](#class_surfacetool_method_generate_tangents) to automatically generate normals and tangents respectively.
+ **Note:** The mesh must have both normals and tangents defined in its vertex data. Otherwise, the normal map won't render correctly and will only appear to darken the whole surface. If creating geometry with [`SurfaceTool`](class_surfacetool.md), you can use [`SurfaceTool.generate_normals`](class_surfacetool.md#class_surfacetool_method_generate_normals) and [`SurfaceTool.generate_tangents`](class_surfacetool.md#class_surfacetool_method_generate_tangents) to automatically generate normals and tangents respectively.
 
  **Note:** Godot expects the normal map to use X+, Y+, and Z+ coordinates. See [*this page*](http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates) for a comparison of normal map coordinates expected by popular engines.
 
- **Note:** If [`detail_enabled`](#class_basematerial3d_property_detail_enabled) is `true`, the [`detail_albedo`](#class_basematerial3d_property_detail_albedo) texture is drawn *below* the [`normal_texture`](#class_basematerial3d_property_normal_texture). To display a normal map *above* the [`detail_albedo`](#class_basematerial3d_property_detail_albedo) texture, use [`detail_normal`](#class_basematerial3d_property_detail_normal) instead.
+ **Note:** If [`detail_enabled`](class_basematerial3d.md#class_basematerial3d_property_detail_enabled) is `true`, the [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo) texture is drawn *below* the [`normal_texture`](class_basematerial3d.md#class_basematerial3d_property_normal_texture). To display a normal map *above* the [`detail_albedo`](class_basematerial3d.md#class_basematerial3d_property_detail_albedo) texture, use [`detail_normal`](class_basematerial3d.md#class_basematerial3d_property_detail_normal) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1929,7 +1929,7 @@ Texture used to specify the normal at a given pixel. The [`normal_texture`](#cla
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-The Occlusion/Roughness/Metallic texture to use. This is a more efficient replacement of [`ao_texture`](#class_basematerial3d_property_ao_texture), [`roughness_texture`](#class_basematerial3d_property_roughness_texture) and [`metallic_texture`](#class_basematerial3d_property_metallic_texture) in [`ORMMaterial3D`](class_ormmaterial3d.md). Ambient occlusion is stored in the red channel. Roughness map is stored in the green channel. Metallic map is stored in the blue channel. The alpha channel is ignored.
+The Occlusion/Roughness/Metallic texture to use. This is a more efficient replacement of [`ao_texture`](class_basematerial3d.md#class_basematerial3d_property_ao_texture), [`roughness_texture`](class_basematerial3d.md#class_basematerial3d_property_roughness_texture) and [`metallic_texture`](class_basematerial3d.md#class_basematerial3d_property_metallic_texture) in [`ORMMaterial3D`](class_ormmaterial3d.md). Ambient occlusion is stored in the red channel. Roughness map is stored in the green channel. Metallic map is stored in the blue channel. The alpha channel is ignored.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1942,7 +1942,7 @@ The Occlusion/Roughness/Metallic texture to use. This is a more efficient replac
 - `void` **set_particles_anim_h_frames** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_particles_anim_h_frames** ( )
 
-The number of horizontal frames in the particle sprite sheet. Only enabled when using [`BILLBOARD_PARTICLES`](#class_basematerial3d_constant_billboard_particles). See [`billboard_mode`](#class_basematerial3d_property_billboard_mode).
+The number of horizontal frames in the particle sprite sheet. Only enabled when using [`BILLBOARD_PARTICLES`](class_basematerial3d.md#class_basematerial3d_constant_billboard_particles). See [`billboard_mode`](class_basematerial3d.md#class_basematerial3d_property_billboard_mode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1955,7 +1955,7 @@ The number of horizontal frames in the particle sprite sheet. Only enabled when 
 - `void` **set_particles_anim_loop** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_particles_anim_loop** ( )
 
-If `true`, particle animations are looped. Only enabled when using [`BILLBOARD_PARTICLES`](#class_basematerial3d_constant_billboard_particles). See [`billboard_mode`](#class_basematerial3d_property_billboard_mode).
+If `true`, particle animations are looped. Only enabled when using [`BILLBOARD_PARTICLES`](class_basematerial3d.md#class_basematerial3d_constant_billboard_particles). See [`billboard_mode`](class_basematerial3d.md#class_basematerial3d_property_billboard_mode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1968,7 +1968,7 @@ If `true`, particle animations are looped. Only enabled when using [`BILLBOARD_P
 - `void` **set_particles_anim_v_frames** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_particles_anim_v_frames** ( )
 
-The number of vertical frames in the particle sprite sheet. Only enabled when using [`BILLBOARD_PARTICLES`](#class_basematerial3d_constant_billboard_particles). See [`billboard_mode`](#class_basematerial3d_property_billboard_mode).
+The number of vertical frames in the particle sprite sheet. Only enabled when using [`BILLBOARD_PARTICLES`](class_basematerial3d.md#class_basematerial3d_constant_billboard_particles). See [`billboard_mode`](class_basematerial3d.md#class_basematerial3d_property_billboard_mode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1981,7 +1981,7 @@ The number of vertical frames in the particle sprite sheet. Only enabled when us
 - `void` **set_point_size** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_point_size** ( )
 
-The point size in pixels. See [`use_point_size`](#class_basematerial3d_property_use_point_size).
+The point size in pixels. See [`use_point_size`](class_basematerial3d.md#class_basematerial3d_property_use_point_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2046,7 +2046,7 @@ The strength of the refraction effect.
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture that controls the strength of the refraction per-pixel. Multiplied by [`refraction_scale`](#class_basematerial3d_property_refraction_scale).
+Texture that controls the strength of the refraction per-pixel. Multiplied by [`refraction_scale`](class_basematerial3d.md#class_basematerial3d_property_refraction_scale).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2059,7 +2059,7 @@ Texture that controls the strength of the refraction per-pixel. Multiplied by [`
 - `void` **set_refraction_texture_channel** ( value: [TextureChannel](#enum_basematerial3d_texturechannel) )
 - [TextureChannel](#enum_basematerial3d_texturechannel) **get_refraction_texture_channel** ( )
 
-Specifies the channel of the [`refraction_texture`](#class_basematerial3d_property_refraction_texture) in which the refraction information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored refraction in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
+Specifies the channel of the [`refraction_texture`](class_basematerial3d.md#class_basematerial3d_property_refraction_texture) in which the refraction information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored refraction in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2087,7 +2087,7 @@ Sets the strength of the rim lighting effect.
 
 If `true`, rim effect is enabled. Rim lighting increases the brightness at glancing angles on an object.
 
- **Note:** Rim lighting is not visible if the material's [`shading_mode`](#class_basematerial3d_property_shading_mode) is [`SHADING_MODE_UNSHADED`](#class_basematerial3d_constant_shading_mode_unshaded).
+ **Note:** Rim lighting is not visible if the material's [`shading_mode`](class_basematerial3d.md#class_basematerial3d_property_shading_mode) is [`SHADING_MODE_UNSHADED`](class_basematerial3d.md#class_basematerial3d_constant_shading_mode_unshaded).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2100,7 +2100,7 @@ If `true`, rim effect is enabled. Rim lighting increases the brightness at glanc
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture used to set the strength of the rim lighting effect per-pixel. Multiplied by [`rim`](#class_basematerial3d_property_rim).
+Texture used to set the strength of the rim lighting effect per-pixel. Multiplied by [`rim`](class_basematerial3d.md#class_basematerial3d_property_rim).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2126,7 +2126,7 @@ The amount of to blend light and albedo color when rendering rim effect. If `0` 
 - `void` **set_roughness** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_roughness** ( )
 
-Surface reflection. A value of `0` represents a perfect mirror while a value of `1` completely blurs the reflection. See also [`metallic`](#class_basematerial3d_property_metallic).
+Surface reflection. A value of `0` represents a perfect mirror while a value of `1` completely blurs the reflection. See also [`metallic`](class_basematerial3d.md#class_basematerial3d_property_metallic).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2139,7 +2139,7 @@ Surface reflection. A value of `0` represents a perfect mirror while a value of 
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture used to control the roughness per-pixel. Multiplied by [`roughness`](#class_basematerial3d_property_roughness).
+Texture used to control the roughness per-pixel. Multiplied by [`roughness`](class_basematerial3d.md#class_basematerial3d_property_roughness).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2152,7 +2152,7 @@ Texture used to control the roughness per-pixel. Multiplied by [`roughness`](#cl
 - `void` **set_roughness_texture_channel** ( value: [TextureChannel](#enum_basematerial3d_texturechannel) )
 - [TextureChannel](#enum_basematerial3d_texturechannel) **get_roughness_texture_channel** ( )
 
-Specifies the channel of the [`roughness_texture`](#class_basematerial3d_property_roughness_texture) in which the roughness information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
+Specifies the channel of the [`roughness_texture`](class_basematerial3d.md#class_basematerial3d_property_roughness_texture) in which the roughness information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2195,7 +2195,7 @@ If `true`, enables the "shadow to opacity" render mode where lighting modifies t
 
 The method for rendering the specular blob. See [SpecularMode](#enum_basematerial3d_specularmode).
 
- **Note:** [`specular_mode`](#class_basematerial3d_property_specular_mode) only applies to the specular blob. It does not affect specular reflections from the sky, screen-space reflections, [`VoxelGI`](class_voxelgi.md), SDFGI or [`ReflectionProbe`](class_reflectionprobe.md) s. To disable reflections from these sources as well, set [`metallic_specular`](#class_basematerial3d_property_metallic_specular) to `0.0` instead.
+ **Note:** [`specular_mode`](class_basematerial3d.md#class_basematerial3d_property_specular_mode) only applies to the specular blob. It does not affect specular reflections from the sky, screen-space reflections, [`VoxelGI`](class_voxelgi.md), SDFGI or [`ReflectionProbe`](class_reflectionprobe.md) s. To disable reflections from these sources as well, set [`metallic_specular`](class_basematerial3d.md#class_basematerial3d_property_metallic_specular) to `0.0` instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2208,7 +2208,7 @@ The method for rendering the specular blob. See [SpecularMode](#enum_basemateria
 - `void` **set_feature** ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_feature** ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]
 
-If `true`, subsurface scattering is enabled. Emulates light that penetrates an object's surface, is scattered, and then emerges. Subsurface scattering quality is controlled by [`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality`](#class_projectsettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality).
+If `true`, subsurface scattering is enabled. Emulates light that penetrates an object's surface, is scattered, and then emerges. Subsurface scattering quality is controlled by [`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality`](class_projectsettings.md#class_projectsettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2234,7 +2234,7 @@ If `true`, subsurface scattering will use a special mode optimized for the color
 - `void` **set_subsurface_scattering_strength** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_subsurface_scattering_strength** ( )
 
-The strength of the subsurface scattering effect. The depth of the effect is also controlled by [`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale`](#class_projectsettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale), which is set globally.
+The strength of the subsurface scattering effect. The depth of the effect is also controlled by [`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale`](class_projectsettings.md#class_projectsettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale), which is set globally.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2247,7 +2247,7 @@ The strength of the subsurface scattering effect. The depth of the effect is als
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-Texture used to control the subsurface scattering strength. Stored in the red texture channel. Multiplied by [`subsurf_scatter_strength`](#class_basematerial3d_property_subsurf_scatter_strength).
+Texture used to control the subsurface scattering strength. Stored in the red texture channel. Multiplied by [`subsurf_scatter_strength`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_strength).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2273,7 +2273,7 @@ The intensity of the subsurface scattering transmittance effect.
 - `void` **set_transmittance_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_transmittance_color** ( )
 
-The color to multiply the subsurface scattering transmittance effect with. Ignored if [`subsurf_scatter_skin_mode`](#class_basematerial3d_property_subsurf_scatter_skin_mode) is `true`.
+The color to multiply the subsurface scattering transmittance effect with. Ignored if [`subsurf_scatter_skin_mode`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_skin_mode) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2299,7 +2299,7 @@ The depth of the subsurface scattering transmittance effect.
 - `void` **set_feature** ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_feature** ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]
 
-If `true`, enables subsurface scattering transmittance. Only effective if [`subsurf_scatter_enabled`](#class_basematerial3d_property_subsurf_scatter_enabled) is `true`. See also [`backlight_enabled`](#class_basematerial3d_property_backlight_enabled).
+If `true`, enables subsurface scattering transmittance. Only effective if [`subsurf_scatter_enabled`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_enabled) is `true`. See also [`backlight_enabled`](class_basematerial3d.md#class_basematerial3d_property_backlight_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2312,7 +2312,7 @@ If `true`, enables subsurface scattering transmittance. Only effective if [`subs
 - `void` **set_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]
 
-The texture to use for multiplying the intensity of the subsurface scattering transmittance intensity. See also [`subsurf_scatter_texture`](#class_basematerial3d_property_subsurf_scatter_texture). Ignored if [`subsurf_scatter_skin_mode`](#class_basematerial3d_property_subsurf_scatter_skin_mode) is `true`.
+The texture to use for multiplying the intensity of the subsurface scattering transmittance intensity. See also [`subsurf_scatter_texture`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_texture). Ignored if [`subsurf_scatter_skin_mode`](class_basematerial3d.md#class_basematerial3d_property_subsurf_scatter_skin_mode) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2327,7 +2327,7 @@ The texture to use for multiplying the intensity of the subsurface scattering tr
 
 Filter flags for the texture. See [TextureFilter](#enum_basematerial3d_texturefilter) for options.
 
- **Note:** [`heightmap_texture`](#class_basematerial3d_property_heightmap_texture) is always sampled with linear filtering, even if nearest-neighbor filtering is selected here. This is to ensure the heightmap effect looks as intended. If you need sharper height transitions between pixels, resize the heightmap texture in an image editor with nearest-neighbor filtering.
+ **Note:** [`heightmap_texture`](class_basematerial3d.md#class_basematerial3d_property_heightmap_texture) is always sampled with linear filtering, even if nearest-neighbor filtering is selected here. This is to ensure the heightmap effect looks as intended. If you need sharper height transitions between pixels, resize the heightmap texture in an image editor with nearest-neighbor filtering.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2353,7 +2353,7 @@ Repeat flags for the texture. See [TextureFilter](#enum_basematerial3d_texturefi
 - `void` **set_transparency** ( value: [Transparency](#enum_basematerial3d_transparency) )
 - [Transparency](#enum_basematerial3d_transparency) **get_transparency** ( )
 
-The material's transparency mode. Some transparency modes will disable shadow casting. Any transparency mode other than [`TRANSPARENCY_DISABLED`](#class_basematerial3d_constant_transparency_disabled) has a greater performance impact compared to opaque rendering. See also [`blend_mode`](#class_basematerial3d_property_blend_mode).
+The material's transparency mode. Some transparency modes will disable shadow casting. Any transparency mode other than [`TRANSPARENCY_DISABLED`](class_basematerial3d.md#class_basematerial3d_constant_transparency_disabled) has a greater performance impact compared to opaque rendering. See also [`blend_mode`](class_basematerial3d.md#class_basematerial3d_property_blend_mode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2381,7 +2381,7 @@ If `true`, enables parts of the shader required for [`GPUParticles3D`](class_gpu
 
 If `true`, render point size can be changed.
 
- **Note:** This is only effective for objects whose geometry is point-based rather than triangle-based. See also [`point_size`](#class_basematerial3d_property_point_size).
+ **Note:** This is only effective for objects whose geometry is point-based rather than triangle-based. See also [`point_size`](class_basematerial3d.md#class_basematerial3d_property_point_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2394,7 +2394,7 @@ If `true`, render point size can be changed.
 - `void` **set_uv1_offset** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_uv1_offset** ( )
 
-How much to offset the `UV` coordinates. This amount will be added to `UV` in the vertex function. This can be used to offset a texture. The Z component is used when [`uv1_triplanar`](#class_basematerial3d_property_uv1_triplanar) is enabled, but it is not used anywhere else.
+How much to offset the `UV` coordinates. This amount will be added to `UV` in the vertex function. This can be used to offset a texture. The Z component is used when [`uv1_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv1_triplanar) is enabled, but it is not used anywhere else.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2407,7 +2407,7 @@ How much to offset the `UV` coordinates. This amount will be added to `UV` in th
 - `void` **set_uv1_scale** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_uv1_scale** ( )
 
-How much to scale the `UV` coordinates. This is multiplied by `UV` in the vertex function. The Z component is used when [`uv1_triplanar`](#class_basematerial3d_property_uv1_triplanar) is enabled, but it is not used anywhere else.
+How much to scale the `UV` coordinates. This is multiplied by `UV` in the vertex function. The Z component is used when [`uv1_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv1_triplanar) is enabled, but it is not used anywhere else.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2435,7 +2435,7 @@ If `true`, instead of using `UV` textures will use a triplanar texture lookup to
 
 A lower number blends the texture more softly while a higher number blends the texture more sharply.
 
- **Note:** [`uv1_triplanar_sharpness`](#class_basematerial3d_property_uv1_triplanar_sharpness) is clamped between `0.0` and `150.0` (inclusive) as values outside that range can look broken depending on the mesh.
+ **Note:** [`uv1_triplanar_sharpness`](class_basematerial3d.md#class_basematerial3d_property_uv1_triplanar_sharpness) is clamped between `0.0` and `150.0` (inclusive) as values outside that range can look broken depending on the mesh.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2448,7 +2448,7 @@ A lower number blends the texture more softly while a higher number blends the t
 - `void` **set_flag** ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]
 
-If `true`, triplanar mapping for `UV` is calculated in world space rather than object local space. See also [`uv1_triplanar`](#class_basematerial3d_property_uv1_triplanar).
+If `true`, triplanar mapping for `UV` is calculated in world space rather than object local space. See also [`uv1_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv1_triplanar).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2461,7 +2461,7 @@ If `true`, triplanar mapping for `UV` is calculated in world space rather than o
 - `void` **set_uv2_offset** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_uv2_offset** ( )
 
-How much to offset the `UV2` coordinates. This amount will be added to `UV2` in the vertex function. This can be used to offset a texture. The Z component is used when [`uv2_triplanar`](#class_basematerial3d_property_uv2_triplanar) is enabled, but it is not used anywhere else.
+How much to offset the `UV2` coordinates. This amount will be added to `UV2` in the vertex function. This can be used to offset a texture. The Z component is used when [`uv2_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv2_triplanar) is enabled, but it is not used anywhere else.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2474,7 +2474,7 @@ How much to offset the `UV2` coordinates. This amount will be added to `UV2` in 
 - `void` **set_uv2_scale** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_uv2_scale** ( )
 
-How much to scale the `UV2` coordinates. This is multiplied by `UV2` in the vertex function. The Z component is used when [`uv2_triplanar`](#class_basematerial3d_property_uv2_triplanar) is enabled, but it is not used anywhere else.
+How much to scale the `UV2` coordinates. This is multiplied by `UV2` in the vertex function. The Z component is used when [`uv2_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv2_triplanar) is enabled, but it is not used anywhere else.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2502,7 +2502,7 @@ If `true`, instead of using `UV2` textures will use a triplanar texture lookup t
 
 A lower number blends the texture more softly while a higher number blends the texture more sharply.
 
- **Note:** [`uv2_triplanar_sharpness`](#class_basematerial3d_property_uv2_triplanar_sharpness) is clamped between `0.0` and `150.0` (inclusive) as values outside that range can look broken depending on the mesh.
+ **Note:** [`uv2_triplanar_sharpness`](class_basematerial3d.md#class_basematerial3d_property_uv2_triplanar_sharpness) is clamped between `0.0` and `150.0` (inclusive) as values outside that range can look broken depending on the mesh.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2515,7 +2515,7 @@ A lower number blends the texture more softly while a higher number blends the t
 - `void` **set_flag** ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]
 
-If `true`, triplanar mapping for `UV2` is calculated in world space rather than object local space. See also [`uv2_triplanar`](#class_basematerial3d_property_uv2_triplanar).
+If `true`, triplanar mapping for `UV2` is calculated in world space rather than object local space. See also [`uv2_triplanar`](class_basematerial3d.md#class_basematerial3d_property_uv2_triplanar).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2528,7 +2528,7 @@ If `true`, triplanar mapping for `UV2` is calculated in world space rather than 
 - `void` **set_flag** ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]
 
-If `true`, vertex colors are considered to be stored in sRGB color space and are converted to linear color space during rendering. If `false`, vertex colors are considered to be stored in linear color space and are rendered as-is. See also [`albedo_texture_force_srgb`](#class_basematerial3d_property_albedo_texture_force_srgb).
+If `true`, vertex colors are considered to be stored in sRGB color space and are converted to linear color space during rendering. If `false`, vertex colors are considered to be stored in linear color space and are rendered as-is. See also [`albedo_texture_force_srgb`](class_basematerial3d.md#class_basematerial3d_property_albedo_texture_force_srgb).
 
  **Note:** Only effective when using the Forward+ and Mobile rendering methods, not Compatibility.
 

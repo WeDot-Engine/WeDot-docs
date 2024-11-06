@@ -15,13 +15,13 @@ Queryable instance of an [`AudioEffectSpectrumAnalyzer`](class_audioeffectspectr
 
 The runtime part of an [`AudioEffectSpectrumAnalyzer`](class_audioeffectspectrumanalyzer.md), which can be used to query the magnitude of a frequency range on its host bus.
 
-An instance of this class can be acquired with [`AudioServer.get_bus_effect_instance`](#class_audioserver_method_get_bus_effect_instance).
+An instance of this class can be acquired with [`AudioServer.get_bus_effect_instance`](class_audioserver.md#class_audioserver_method_get_bus_effect_instance).
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`get_magnitude_for_frequency_range`](#class_audioeffectspectrumanalyzerinstance_method_get_magnitude_for_frequency_range) ( from_hz: [`float`](class_float.md), to_hz: [`float`](class_float.md), mode: [MagnitudeMode](#enum_audioeffectspectrumanalyzerinstance_magnitudemode) = 1 ) const[^const] |
+| [`Vector2`](class_vector2.md) | [`get_magnitude_for_frequency_range`](class_audioeffectspectrumanalyzerinstance.md#class_audioeffectspectrumanalyzerinstance_method_get_magnitude_for_frequency_range) ( from_hz: [`float`](class_float.md), to_hz: [`float`](class_float.md), mode: [MagnitudeMode](#enum_audioeffectspectrumanalyzerinstance_magnitudemode) = 1 ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

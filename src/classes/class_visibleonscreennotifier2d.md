@@ -15,23 +15,23 @@ A rectangular region of 2D space that detects whether it is visible on screen.
 
 ## 描述
 
-**VisibleOnScreenNotifier2D** represents a rectangular region of 2D space. When any part of this region becomes visible on screen or in a viewport, it will emit a [`screen_entered`](#class_visibleonscreennotifier2d_signal_screen_entered) signal, and likewise it will emit a [`screen_exited`](#class_visibleonscreennotifier2d_signal_screen_exited) signal when no part of it remains visible.
+**VisibleOnScreenNotifier2D** represents a rectangular region of 2D space. When any part of this region becomes visible on screen or in a viewport, it will emit a [`screen_entered`](class_visibleonscreennotifier2d.md#class_visibleonscreennotifier2d_signal_screen_entered) signal, and likewise it will emit a [`screen_exited`](class_visibleonscreennotifier2d.md#class_visibleonscreennotifier2d_signal_screen_exited) signal when no part of it remains visible.
 
 If you want a node to be enabled automatically when this region is visible on screen, use [`VisibleOnScreenEnabler2D`](class_visibleonscreenenabler2d.md).
 
- **Note:** **VisibleOnScreenNotifier2D** uses the render culling code to determine whether it's visible on screen, so it won't function unless [`CanvasItem.visible`](#class_canvasitem_property_visible) is set to `true`.
+ **Note:** **VisibleOnScreenNotifier2D** uses the render culling code to determine whether it's visible on screen, so it won't function unless [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) is set to `true`.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`rect`](#class_visibleonscreennotifier2d_property_rect) | ``Rect2(-10, -10, 20, 20)`` |
+| [`Rect2`](class_rect2.md) | [`rect`](class_visibleonscreennotifier2d.md#class_visibleonscreennotifier2d_property_rect) | ``Rect2(-10, -10, 20, 20)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`is_on_screen`](#class_visibleonscreennotifier2d_method_is_on_screen) ( ) const[^const] |
+| [`bool`](class_bool.md) | [`is_on_screen`](class_visibleonscreennotifier2d.md#class_visibleonscreennotifier2d_method_is_on_screen) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -19,54 +19,54 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 |||
 |:-:|:--|
-| [AutowrapMode](#enum_textserver_autowrapmode)                           | [`autowrap_mode`](#class_label_property_autowrap_mode)                                                 | ``0``                                                                      |
-| [`bool`](class_bool.md)                                                 | [`clip_text`](#class_label_property_clip_text)                                                         | ``false``                                                                  |
-| [`String`](class_string.md)                                             | [`ellipsis_char`](#class_label_property_ellipsis_char)                                                 | ``"…"``                                                                    |
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment)           | [`horizontal_alignment`](#class_label_property_horizontal_alignment)                                   | ``0``                                                                      |
-| [JustificationFlag](#enum_textserver_justificationflag)                 | [`justification_flags`](#class_label_property_justification_flags)                                     | ``163``                                                                    |
-| [`LabelSettings`](class_labelsettings.md)                               | [`label_settings`](#class_label_property_label_settings)                                               |                                                                            |
-| [`String`](class_string.md)                                             | [`language`](#class_label_property_language)                                                           | ``""``                                                                     |
-| [`int`](class_int.md)                                                   | [`lines_skipped`](#class_label_property_lines_skipped)                                                 | ``0``                                                                      |
-| [`int`](class_int.md)                                                   | [`max_lines_visible`](#class_label_property_max_lines_visible)                                         | ``-1``                                                                     |
-| [MouseFilter](#enum_control_mousefilter)                                | mouse_filter                                                                                           | ``2`` (overrides [`Control`](#class_control_property_mouse_filter))        |
-| [SizeFlags](#enum_control_sizeflags)                                    | size_flags_vertical                                                                                    | ``4`` (overrides [`Control`](#class_control_property_size_flags_vertical)) |
-| [StructuredTextParser](#enum_textserver_structuredtextparser)           | [`structured_text_bidi_override`](#class_label_property_structured_text_bidi_override)                 | ``0``                                                                      |
-| [`Array`](class_array.md)                                               | [`structured_text_bidi_override_options`](#class_label_property_structured_text_bidi_override_options) | ``[]``                                                                     |
-| [`PackedFloat32Array`](class_packedfloat32array.md)                     | [`tab_stops`](#class_label_property_tab_stops)                                                         | ``PackedFloat32Array()``                                                   |
-| [`String`](class_string.md)                                             | [`text`](#class_label_property_text)                                                                   | ``""``                                                                     |
-| [TextDirection](#enum_control_textdirection)                            | [`text_direction`](#class_label_property_text_direction)                                               | ``0``                                                                      |
-| [OverrunBehavior](#enum_textserver_overrunbehavior)                     | [`text_overrun_behavior`](#class_label_property_text_overrun_behavior)                                 | ``0``                                                                      |
-| [`bool`](class_bool.md)                                                 | [`uppercase`](#class_label_property_uppercase)                                                         | ``false``                                                                  |
-| [VerticalAlignment](#enum_@globalscope_verticalalignment)               | [`vertical_alignment`](#class_label_property_vertical_alignment)                                       | ``0``                                                                      |
-| [`int`](class_int.md)                                                   | [`visible_characters`](#class_label_property_visible_characters)                                       | ``-1``                                                                     |
-| [VisibleCharactersBehavior](#enum_textserver_visiblecharactersbehavior) | [`visible_characters_behavior`](#class_label_property_visible_characters_behavior)                     | ``0``                                                                      |
-| [`float`](class_float.md)                                               | [`visible_ratio`](#class_label_property_visible_ratio)                                                 | ``1.0``                                                                    |
+| [AutowrapMode](#enum_textserver_autowrapmode)                           | [`autowrap_mode`](class_label.md#class_label_property_autowrap_mode)                                                 | ``0``                                                                                      |
+| [`bool`](class_bool.md)                                                 | [`clip_text`](class_label.md#class_label_property_clip_text)                                                         | ``false``                                                                                  |
+| [`String`](class_string.md)                                             | [`ellipsis_char`](class_label.md#class_label_property_ellipsis_char)                                                 | ``"…"``                                                                                    |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment)           | [`horizontal_alignment`](class_label.md#class_label_property_horizontal_alignment)                                   | ``0``                                                                                      |
+| [JustificationFlag](#enum_textserver_justificationflag)                 | [`justification_flags`](class_label.md#class_label_property_justification_flags)                                     | ``163``                                                                                    |
+| [`LabelSettings`](class_labelsettings.md)                               | [`label_settings`](class_label.md#class_label_property_label_settings)                                               |                                                                                            |
+| [`String`](class_string.md)                                             | [`language`](class_label.md#class_label_property_language)                                                           | ``""``                                                                                     |
+| [`int`](class_int.md)                                                   | [`lines_skipped`](class_label.md#class_label_property_lines_skipped)                                                 | ``0``                                                                                      |
+| [`int`](class_int.md)                                                   | [`max_lines_visible`](class_label.md#class_label_property_max_lines_visible)                                         | ``-1``                                                                                     |
+| [MouseFilter](#enum_control_mousefilter)                                | mouse_filter                                                                                                         | ``2`` (overrides [`Control`](class_control.md#class_control_property_mouse_filter))        |
+| [SizeFlags](#enum_control_sizeflags)                                    | size_flags_vertical                                                                                                  | ``4`` (overrides [`Control`](class_control.md#class_control_property_size_flags_vertical)) |
+| [StructuredTextParser](#enum_textserver_structuredtextparser)           | [`structured_text_bidi_override`](class_label.md#class_label_property_structured_text_bidi_override)                 | ``0``                                                                                      |
+| [`Array`](class_array.md)                                               | [`structured_text_bidi_override_options`](class_label.md#class_label_property_structured_text_bidi_override_options) | ``[]``                                                                                     |
+| [`PackedFloat32Array`](class_packedfloat32array.md)                     | [`tab_stops`](class_label.md#class_label_property_tab_stops)                                                         | ``PackedFloat32Array()``                                                                   |
+| [`String`](class_string.md)                                             | [`text`](class_label.md#class_label_property_text)                                                                   | ``""``                                                                                     |
+| [TextDirection](#enum_control_textdirection)                            | [`text_direction`](class_label.md#class_label_property_text_direction)                                               | ``0``                                                                                      |
+| [OverrunBehavior](#enum_textserver_overrunbehavior)                     | [`text_overrun_behavior`](class_label.md#class_label_property_text_overrun_behavior)                                 | ``0``                                                                                      |
+| [`bool`](class_bool.md)                                                 | [`uppercase`](class_label.md#class_label_property_uppercase)                                                         | ``false``                                                                                  |
+| [VerticalAlignment](#enum_@globalscope_verticalalignment)               | [`vertical_alignment`](class_label.md#class_label_property_vertical_alignment)                                       | ``0``                                                                                      |
+| [`int`](class_int.md)                                                   | [`visible_characters`](class_label.md#class_label_property_visible_characters)                                       | ``-1``                                                                                     |
+| [VisibleCharactersBehavior](#enum_textserver_visiblecharactersbehavior) | [`visible_characters_behavior`](class_label.md#class_label_property_visible_characters_behavior)                     | ``0``                                                                                      |
+| [`float`](class_float.md)                                               | [`visible_ratio`](class_label.md#class_label_property_visible_ratio)                                                 | ``1.0``                                                                                    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`get_character_bounds`](#class_label_method_get_character_bounds) ( pos: [`int`](class_int.md) ) const[^const] |
-| [`int`](class_int.md)     | [`get_line_count`](#class_label_method_get_line_count) ( ) const[^const]                                        |
-| [`int`](class_int.md)     | [`get_line_height`](#class_label_method_get_line_height) ( line: [`int`](class_int.md) = -1 ) const[^const]     |
-| [`int`](class_int.md)     | [`get_total_character_count`](#class_label_method_get_total_character_count) ( ) const[^const]                  |
-| [`int`](class_int.md)     | [`get_visible_line_count`](#class_label_method_get_visible_line_count) ( ) const[^const]                        |
+| [`Rect2`](class_rect2.md) | [`get_character_bounds`](class_label.md#class_label_method_get_character_bounds) ( pos: [`int`](class_int.md) ) const[^const] |
+| [`int`](class_int.md)     | [`get_line_count`](class_label.md#class_label_method_get_line_count) ( ) const[^const]                                        |
+| [`int`](class_int.md)     | [`get_line_height`](class_label.md#class_label_method_get_line_height) ( line: [`int`](class_int.md) = -1 ) const[^const]     |
+| [`int`](class_int.md)     | [`get_total_character_count`](class_label.md#class_label_method_get_total_character_count) ( ) const[^const]                  |
+| [`int`](class_int.md)     | [`get_visible_line_count`](class_label.md#class_label_method_get_visible_line_count) ( ) const[^const]                        |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)       | [`font_color`](#class_label_theme_color_font_color)                      | ``Color(1, 1, 1, 1)`` |
-| [`Color`](class_color.md)       | [`font_outline_color`](#class_label_theme_color_font_outline_color)      | ``Color(0, 0, 0, 1)`` |
-| [`Color`](class_color.md)       | [`font_shadow_color`](#class_label_theme_color_font_shadow_color)        | ``Color(0, 0, 0, 0)`` |
-| [`int`](class_int.md)           | [`line_spacing`](#class_label_theme_constant_line_spacing)               | ``3``                 |
-| [`int`](class_int.md)           | [`outline_size`](#class_label_theme_constant_outline_size)               | ``0``                 |
-| [`int`](class_int.md)           | [`shadow_offset_x`](#class_label_theme_constant_shadow_offset_x)         | ``1``                 |
-| [`int`](class_int.md)           | [`shadow_offset_y`](#class_label_theme_constant_shadow_offset_y)         | ``1``                 |
-| [`int`](class_int.md)           | [`shadow_outline_size`](#class_label_theme_constant_shadow_outline_size) | ``1``                 |
-| [`Font`](class_font.md)         | [`font`](#class_label_theme_font_font)                                   |                       |
-| [`int`](class_int.md)           | [`font_size`](#class_label_theme_font_size_font_size)                    |                       |
-| [`StyleBox`](class_stylebox.md) | [`normal`](#class_label_theme_style_normal)                              |                       |
+| [`Color`](class_color.md)       | [`font_color`](class_label.md#class_label_theme_color_font_color)                      | ``Color(1, 1, 1, 1)`` |
+| [`Color`](class_color.md)       | [`font_outline_color`](class_label.md#class_label_theme_color_font_outline_color)      | ``Color(0, 0, 0, 1)`` |
+| [`Color`](class_color.md)       | [`font_shadow_color`](class_label.md#class_label_theme_color_font_shadow_color)        | ``Color(0, 0, 0, 0)`` |
+| [`int`](class_int.md)           | [`line_spacing`](class_label.md#class_label_theme_constant_line_spacing)               | ``3``                 |
+| [`int`](class_int.md)           | [`outline_size`](class_label.md#class_label_theme_constant_outline_size)               | ``0``                 |
+| [`int`](class_int.md)           | [`shadow_offset_x`](class_label.md#class_label_theme_constant_shadow_offset_x)         | ``1``                 |
+| [`int`](class_int.md)           | [`shadow_offset_y`](class_label.md#class_label_theme_constant_shadow_offset_y)         | ``1``                 |
+| [`int`](class_int.md)           | [`shadow_outline_size`](class_label.md#class_label_theme_constant_shadow_outline_size) | ``1``                 |
+| [`Font`](class_font.md)         | [`font`](class_label.md#class_label_theme_font_font)                                   |                       |
+| [`int`](class_int.md)           | [`font_size`](class_label.md#class_label_theme_font_size_font_size)                    |                       |
+| [`StyleBox`](class_stylebox.md) | [`normal`](class_label.md#class_label_theme_style_normal)                              |                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -81,7 +81,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 - `void` **set_autowrap_mode** ( value: [AutowrapMode](#enum_textserver_autowrapmode) )
 - [AutowrapMode](#enum_textserver_autowrapmode) **get_autowrap_mode** ( )
 
-If set to something other than [`TextServer.AUTOWRAP_OFF`](#class_textserver_constant_autowrap_off), the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
+If set to something other than [`TextServer.AUTOWRAP_OFF`](class_textserver.md#class_textserver_constant_autowrap_off), the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text. To see how each mode behaves, see [AutowrapMode](#enum_textserver_autowrapmode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -172,7 +172,7 @@ Language code used for line-breaking and text shaping algorithms, if left empty 
 - `void` **set_lines_skipped** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_lines_skipped** ( )
 
-The number of the lines ignored and not displayed from the start of the [`text`](#class_label_property_text) value.
+The number of the lines ignored and not displayed from the start of the [`text`](class_label.md#class_label_property_text) value.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -306,7 +306,7 @@ Controls the text's vertical alignment. Supports top, center, bottom, and fill. 
 
 The number of characters to display. If set to `-1`, all characters are displayed. This can be useful when animating the text appearing in a dialog box.
 
- **Note:** Setting this property updates [`visible_ratio`](#class_label_property_visible_ratio) accordingly.
+ **Note:** Setting this property updates [`visible_ratio`](class_label.md#class_label_property_visible_ratio) accordingly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -319,7 +319,7 @@ The number of characters to display. If set to `-1`, all characters are displaye
 - `void` **set_visible_characters_behavior** ( value: [VisibleCharactersBehavior](#enum_textserver_visiblecharactersbehavior) )
 - [VisibleCharactersBehavior](#enum_textserver_visiblecharactersbehavior) **get_visible_characters_behavior** ( )
 
-Sets the clipping behavior when [`visible_characters`](#class_label_property_visible_characters) or [`visible_ratio`](#class_label_property_visible_ratio) is set. See [VisibleCharactersBehavior](#enum_textserver_visiblecharactersbehavior) for more info.
+Sets the clipping behavior when [`visible_characters`](class_label.md#class_label_property_visible_characters) or [`visible_ratio`](class_label.md#class_label_property_visible_ratio) is set. See [VisibleCharactersBehavior](#enum_textserver_visiblecharactersbehavior) for more info.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -332,9 +332,9 @@ Sets the clipping behavior when [`visible_characters`](#class_label_property_vis
 - `void` **set_visible_ratio** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_visible_ratio** ( )
 
-The fraction of characters to display, relative to the total number of characters (see [`get_total_character_count`](#class_label_method_get_total_character_count)). If set to `1.0`, all characters are displayed. If set to `0.5`, only half of the characters will be displayed. This can be useful when animating the text appearing in a dialog box.
+The fraction of characters to display, relative to the total number of characters (see [`get_total_character_count`](class_label.md#class_label_method_get_total_character_count)). If set to `1.0`, all characters are displayed. If set to `0.5`, only half of the characters will be displayed. This can be useful when animating the text appearing in a dialog box.
 
- **Note:** Setting this property updates [`visible_characters`](#class_label_property_visible_characters) accordingly.
+ **Note:** Setting this property updates [`visible_characters`](class_label.md#class_label_property_visible_characters) accordingly.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -444,7 +444,7 @@ Vertical space between lines in multiline **Label**.
 
 Text outline size.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_label_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_label.md#class_label_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
  **Note:** Using a value that is larger than half the font size is not recommended, as the font outline may fail to be fully closed in this case.
 

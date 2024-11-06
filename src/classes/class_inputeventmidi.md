@@ -17,7 +17,7 @@ InputEventMIDI stores information about messages from [*MIDI*](https://en.wikipe
 
 MIDI messages can be received over a 5-pin MIDI connector or over USB. If your device supports both be sure to check the settings in the device to see which output it is using.
 
-By default, Godot does not detect MIDI devices. You need to call [`OS.open_midi_inputs`](#class_os_method_open_midi_inputs), first. You can check which devices are detected with [`OS.get_connected_midi_inputs`](#class_os_method_get_connected_midi_inputs), and close the connection with [`OS.close_midi_inputs`](#class_os_method_close_midi_inputs).
+By default, Godot does not detect MIDI devices. You need to call [`OS.open_midi_inputs`](class_os.md#class_os_method_open_midi_inputs), first. You can check which devices are detected with [`OS.get_connected_midi_inputs`](class_os.md#class_os_method_get_connected_midi_inputs), and close the connection with [`OS.close_midi_inputs`](class_os.md#class_os_method_close_midi_inputs).
 
 
 
@@ -85,14 +85,14 @@ By default, Godot does not detect MIDI devices. You need to call [`OS.open_midi_
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                         | [`channel`](#class_inputeventmidi_property_channel)                     | ``0`` |
-| [`int`](class_int.md)                         | [`controller_number`](#class_inputeventmidi_property_controller_number) | ``0`` |
-| [`int`](class_int.md)                         | [`controller_value`](#class_inputeventmidi_property_controller_value)   | ``0`` |
-| [`int`](class_int.md)                         | [`instrument`](#class_inputeventmidi_property_instrument)               | ``0`` |
-| [MIDIMessage](#enum_@globalscope_midimessage) | [`message`](#class_inputeventmidi_property_message)                     | ``0`` |
-| [`int`](class_int.md)                         | [`pitch`](#class_inputeventmidi_property_pitch)                         | ``0`` |
-| [`int`](class_int.md)                         | [`pressure`](#class_inputeventmidi_property_pressure)                   | ``0`` |
-| [`int`](class_int.md)                         | [`velocity`](#class_inputeventmidi_property_velocity)                   | ``0`` |
+| [`int`](class_int.md)                         | [`channel`](class_inputeventmidi.md#class_inputeventmidi_property_channel)                     | ``0`` |
+| [`int`](class_int.md)                         | [`controller_number`](class_inputeventmidi.md#class_inputeventmidi_property_controller_number) | ``0`` |
+| [`int`](class_int.md)                         | [`controller_value`](class_inputeventmidi.md#class_inputeventmidi_property_controller_value)   | ``0`` |
+| [`int`](class_int.md)                         | [`instrument`](class_inputeventmidi.md#class_inputeventmidi_property_instrument)               | ``0`` |
+| [MIDIMessage](#enum_@globalscope_midimessage) | [`message`](class_inputeventmidi.md#class_inputeventmidi_property_message)                     | ``0`` |
+| [`int`](class_int.md)                         | [`pitch`](class_inputeventmidi.md#class_inputeventmidi_property_pitch)                         | ``0`` |
+| [`int`](class_int.md)                         | [`pressure`](class_inputeventmidi.md#class_inputeventmidi_property_pressure)                   | ``0`` |
+| [`int`](class_int.md)                         | [`velocity`](class_inputeventmidi.md#class_inputeventmidi_property_velocity)                   | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -120,7 +120,7 @@ The MIDI channel of this message, ranging from `0` to `15`. MIDI channel `9` is 
 - `void` **set_controller_number** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_controller_number** ( )
 
-The unique number of the controller, if [`message`](#class_inputeventmidi_property_message) is [`@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE`](#class_@globalscope_constant_midi_message_control_change), otherwise this is `0`. This value can be used to identify sliders for volume, balance, and panning, as well as switches and pedals on the MIDI device. See the [*General MIDI specification*](https://en.wikipedia.org/wiki/General_MIDI#Controller_events) for a small list.
+The unique number of the controller, if [`message`](class_inputeventmidi.md#class_inputeventmidi_property_message) is [`@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE`](class_@globalscope.md#class_@globalscope_constant_midi_message_control_change), otherwise this is `0`. This value can be used to identify sliders for volume, balance, and panning, as well as switches and pedals on the MIDI device. See the [*General MIDI specification*](https://en.wikipedia.org/wiki/General_MIDI#Controller_events) for a small list.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -133,7 +133,7 @@ The unique number of the controller, if [`message`](#class_inputeventmidi_proper
 - `void` **set_controller_value** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_controller_value** ( )
 
-The value applied to the controller. If [`message`](#class_inputeventmidi_property_message) is [`@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE`](#class_@globalscope_constant_midi_message_control_change), this value ranges from `0` to `127`, otherwise it is `0`. See also [`controller_value`](#class_inputeventmidi_property_controller_value).
+The value applied to the controller. If [`message`](class_inputeventmidi.md#class_inputeventmidi_property_message) is [`@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE`](class_@globalscope.md#class_@globalscope_constant_midi_message_control_change), this value ranges from `0` to `127`, otherwise it is `0`. See also [`controller_value`](class_inputeventmidi.md#class_inputeventmidi_property_controller_value).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -193,7 +193,7 @@ On a piano, the **middle C** is `60`, followed by a **C-sharp** (`61`), then a *
 
 The strength of the key being pressed. This value ranges from `0` to `127`.
 
- **Note:** For many devices, this value is always `0`. Other devices such as musical keyboards may simulate pressure by changing the [`velocity`](#class_inputeventmidi_property_velocity), instead.
+ **Note:** For many devices, this value is always `0`. Other devices such as musical keyboards may simulate pressure by changing the [`velocity`](class_inputeventmidi.md#class_inputeventmidi_property_velocity), instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -208,7 +208,7 @@ The strength of the key being pressed. This value ranges from `0` to `127`.
 
 The velocity of the MIDI message. This value ranges from `0` to `127`. For a musical keyboard, this corresponds to how quickly the key was pressed, and is rarely above `110` in practice.
 
- **Note:** Some MIDI devices may send a [`@GlobalScope.MIDI_MESSAGE_NOTE_ON`](#class_@globalscope_constant_midi_message_note_on) message with `0` velocity and expect it to be treated the same as a [`@GlobalScope.MIDI_MESSAGE_NOTE_OFF`](#class_@globalscope_constant_midi_message_note_off) message. If necessary, this can be handled with a few lines of code:
+ **Note:** Some MIDI devices may send a [`@GlobalScope.MIDI_MESSAGE_NOTE_ON`](class_@globalscope.md#class_@globalscope_constant_midi_message_note_on) message with `0` velocity and expect it to be treated the same as a [`@GlobalScope.MIDI_MESSAGE_NOTE_OFF`](class_@globalscope.md#class_@globalscope_constant_midi_message_note_off) message. If necessary, this can be handled with a few lines of code:
 
 ```
 

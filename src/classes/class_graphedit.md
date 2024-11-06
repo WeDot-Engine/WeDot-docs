@@ -19,96 +19,96 @@ An editor for graph-like structures, using [`GraphNode`](class_graphnode.md) s.
 
  **GraphEdit** by itself is only an empty container, representing an infinite grid where [`GraphNode`](class_graphnode.md) s can be placed. Each [`GraphNode`](class_graphnode.md) represents a node in the graph, a single unit of data in the connected scheme. **GraphEdit**, in turn, helps to control various interactions with nodes and between nodes. When the user attempts to connect, disconnect, or delete a [`GraphNode`](class_graphnode.md), a signal is emitted in the **GraphEdit**, but no action is taken by default. It is the responsibility of the programmer utilizing this control to implement the necessary logic to determine how each request should be handled.
 
- **Performance:** It is greatly advised to enable low-processor usage mode (see [`OS.low_processor_usage_mode`](#class_os_property_low_processor_usage_mode)) when using GraphEdits.
+ **Performance:** It is greatly advised to enable low-processor usage mode (see [`OS.low_processor_usage_mode`](class_os.md#class_os_property_low_processor_usage_mode)) when using GraphEdits.
 
- **Note:** Keep in mind that [`Node.get_children`](#class_node_method_get_children) will also return the connection layer node named `_connection_layer` due to technical limitations. This behavior may change in future releases.
+ **Note:** Keep in mind that [`Node.get_children`](class_node.md#class_node_method_get_children) will also return the connection layer node named `_connection_layer` due to technical limitations. This behavior may change in future releases.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                        | clip_contents                                                                            | ``true`` (overrides [`Control`](#class_control_property_clip_contents)) |
-| [`bool`](class_bool.md)                        | [`connection_lines_antialiased`](#class_graphedit_property_connection_lines_antialiased) | ``true``                                                                |
-| [`float`](class_float.md)                      | [`connection_lines_curvature`](#class_graphedit_property_connection_lines_curvature)     | ``0.5``                                                                 |
-| [`float`](class_float.md)                      | [`connection_lines_thickness`](#class_graphedit_property_connection_lines_thickness)     | ``4.0``                                                                 |
-| [FocusMode](#enum_control_focusmode)           | focus_mode                                                                               | ``2`` (overrides [`Control`](#class_control_property_focus_mode))       |
-| [GridPattern](#enum_graphedit_gridpattern)     | [`grid_pattern`](#class_graphedit_property_grid_pattern)                                 | ``0``                                                                   |
-| [`bool`](class_bool.md)                        | [`minimap_enabled`](#class_graphedit_property_minimap_enabled)                           | ``true``                                                                |
-| [`float`](class_float.md)                      | [`minimap_opacity`](#class_graphedit_property_minimap_opacity)                           | ``0.65``                                                                |
-| [`Vector2`](class_vector2.md)                  | [`minimap_size`](#class_graphedit_property_minimap_size)                                 | ``Vector2(240, 160)``                                                   |
-| [PanningScheme](#enum_graphedit_panningscheme) | [`panning_scheme`](#class_graphedit_property_panning_scheme)                             | ``0``                                                                   |
-| [`bool`](class_bool.md)                        | [`right_disconnects`](#class_graphedit_property_right_disconnects)                       | ``false``                                                               |
-| [`Vector2`](class_vector2.md)                  | [`scroll_offset`](#class_graphedit_property_scroll_offset)                               | ``Vector2(0, 0)``                                                       |
-| [`bool`](class_bool.md)                        | [`show_arrange_button`](#class_graphedit_property_show_arrange_button)                   | ``true``                                                                |
-| [`bool`](class_bool.md)                        | [`show_grid`](#class_graphedit_property_show_grid)                                       | ``true``                                                                |
-| [`bool`](class_bool.md)                        | [`show_grid_buttons`](#class_graphedit_property_show_grid_buttons)                       | ``true``                                                                |
-| [`bool`](class_bool.md)                        | [`show_menu`](#class_graphedit_property_show_menu)                                       | ``true``                                                                |
-| [`bool`](class_bool.md)                        | [`show_minimap_button`](#class_graphedit_property_show_minimap_button)                   | ``true``                                                                |
-| [`bool`](class_bool.md)                        | [`show_zoom_buttons`](#class_graphedit_property_show_zoom_buttons)                       | ``true``                                                                |
-| [`bool`](class_bool.md)                        | [`show_zoom_label`](#class_graphedit_property_show_zoom_label)                           | ``false``                                                               |
-| [`int`](class_int.md)                          | [`snapping_distance`](#class_graphedit_property_snapping_distance)                       | ``20``                                                                  |
-| [`bool`](class_bool.md)                        | [`snapping_enabled`](#class_graphedit_property_snapping_enabled)                         | ``true``                                                                |
-| [`float`](class_float.md)                      | [`zoom`](#class_graphedit_property_zoom)                                                 | ``1.0``                                                                 |
-| [`float`](class_float.md)                      | [`zoom_max`](#class_graphedit_property_zoom_max)                                         | ``2.0736``                                                              |
-| [`float`](class_float.md)                      | [`zoom_min`](#class_graphedit_property_zoom_min)                                         | ``0.232568``                                                            |
-| [`float`](class_float.md)                      | [`zoom_step`](#class_graphedit_property_zoom_step)                                       | ``1.2``                                                                 |
+| [`bool`](class_bool.md)                        | clip_contents                                                                                              | ``true`` (overrides [`Control`](class_control.md#class_control_property_clip_contents)) |
+| [`bool`](class_bool.md)                        | [`connection_lines_antialiased`](class_graphedit.md#class_graphedit_property_connection_lines_antialiased) | ``true``                                                                                |
+| [`float`](class_float.md)                      | [`connection_lines_curvature`](class_graphedit.md#class_graphedit_property_connection_lines_curvature)     | ``0.5``                                                                                 |
+| [`float`](class_float.md)                      | [`connection_lines_thickness`](class_graphedit.md#class_graphedit_property_connection_lines_thickness)     | ``4.0``                                                                                 |
+| [FocusMode](#enum_control_focusmode)           | focus_mode                                                                                                 | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))       |
+| [GridPattern](#enum_graphedit_gridpattern)     | [`grid_pattern`](class_graphedit.md#class_graphedit_property_grid_pattern)                                 | ``0``                                                                                   |
+| [`bool`](class_bool.md)                        | [`minimap_enabled`](class_graphedit.md#class_graphedit_property_minimap_enabled)                           | ``true``                                                                                |
+| [`float`](class_float.md)                      | [`minimap_opacity`](class_graphedit.md#class_graphedit_property_minimap_opacity)                           | ``0.65``                                                                                |
+| [`Vector2`](class_vector2.md)                  | [`minimap_size`](class_graphedit.md#class_graphedit_property_minimap_size)                                 | ``Vector2(240, 160)``                                                                   |
+| [PanningScheme](#enum_graphedit_panningscheme) | [`panning_scheme`](class_graphedit.md#class_graphedit_property_panning_scheme)                             | ``0``                                                                                   |
+| [`bool`](class_bool.md)                        | [`right_disconnects`](class_graphedit.md#class_graphedit_property_right_disconnects)                       | ``false``                                                                               |
+| [`Vector2`](class_vector2.md)                  | [`scroll_offset`](class_graphedit.md#class_graphedit_property_scroll_offset)                               | ``Vector2(0, 0)``                                                                       |
+| [`bool`](class_bool.md)                        | [`show_arrange_button`](class_graphedit.md#class_graphedit_property_show_arrange_button)                   | ``true``                                                                                |
+| [`bool`](class_bool.md)                        | [`show_grid`](class_graphedit.md#class_graphedit_property_show_grid)                                       | ``true``                                                                                |
+| [`bool`](class_bool.md)                        | [`show_grid_buttons`](class_graphedit.md#class_graphedit_property_show_grid_buttons)                       | ``true``                                                                                |
+| [`bool`](class_bool.md)                        | [`show_menu`](class_graphedit.md#class_graphedit_property_show_menu)                                       | ``true``                                                                                |
+| [`bool`](class_bool.md)                        | [`show_minimap_button`](class_graphedit.md#class_graphedit_property_show_minimap_button)                   | ``true``                                                                                |
+| [`bool`](class_bool.md)                        | [`show_zoom_buttons`](class_graphedit.md#class_graphedit_property_show_zoom_buttons)                       | ``true``                                                                                |
+| [`bool`](class_bool.md)                        | [`show_zoom_label`](class_graphedit.md#class_graphedit_property_show_zoom_label)                           | ``false``                                                                               |
+| [`int`](class_int.md)                          | [`snapping_distance`](class_graphedit.md#class_graphedit_property_snapping_distance)                       | ``20``                                                                                  |
+| [`bool`](class_bool.md)                        | [`snapping_enabled`](class_graphedit.md#class_graphedit_property_snapping_enabled)                         | ``true``                                                                                |
+| [`float`](class_float.md)                      | [`zoom`](class_graphedit.md#class_graphedit_property_zoom)                                                 | ``1.0``                                                                                 |
+| [`float`](class_float.md)                      | [`zoom_max`](class_graphedit.md#class_graphedit_property_zoom_max)                                         | ``2.0736``                                                                              |
+| [`float`](class_float.md)                      | [`zoom_min`](class_graphedit.md#class_graphedit_property_zoom_min)                                         | ``0.232568``                                                                            |
+| [`float`](class_float.md)                      | [`zoom_step`](class_graphedit.md#class_graphedit_property_zoom_step)                                       | ``1.2``                                                                                 |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PackedVector2Array`](class_packedvector2array.md)         | [`_get_connection_line`](#class_graphedit_private_method__get_connection_line) ( from_position: [`Vector2`](class_vector2.md), to_position: [`Vector2`](class_vector2.md) ) virtual[^virtual] const[^const]                                                                        |
-| [`bool`](class_bool.md)                                     | [`_is_in_input_hotzone`](#class_graphedit_private_method__is_in_input_hotzone) ( in_node: [`Object`](class_object.md), in_port: [`int`](class_int.md), mouse_position: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                           |
-| [`bool`](class_bool.md)                                     | [`_is_in_output_hotzone`](#class_graphedit_private_method__is_in_output_hotzone) ( in_node: [`Object`](class_object.md), in_port: [`int`](class_int.md), mouse_position: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                         |
-| [`bool`](class_bool.md)                                     | [`_is_node_hover_valid`](#class_graphedit_private_method__is_node_hover_valid) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md) ) virtual[^virtual]                |
-| `void`                                                      | [`add_valid_connection_type`](#class_graphedit_method_add_valid_connection_type) ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) )                                                                                                                              |
-| `void`                                                      | [`add_valid_left_disconnect_type`](#class_graphedit_method_add_valid_left_disconnect_type) ( type: [`int`](class_int.md) )                                                                                                                                                         |
-| `void`                                                      | [`add_valid_right_disconnect_type`](#class_graphedit_method_add_valid_right_disconnect_type) ( type: [`int`](class_int.md) )                                                                                                                                                       |
-| `void`                                                      | [`arrange_nodes`](#class_graphedit_method_arrange_nodes) ( )                                                                                                                                                                                                                       |
-| `void`                                                      | [`attach_graph_element_to_frame`](#class_graphedit_method_attach_graph_element_to_frame) ( element: [`StringName`](class_stringname.md), frame: [`StringName`](class_stringname.md) )                                                                                              |
-| `void`                                                      | [`clear_connections`](#class_graphedit_method_clear_connections) ( )                                                                                                                                                                                                               |
-| [Error](#enum_@globalscope_error)                           | [`connect_node`](#class_graphedit_method_connect_node) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md) )                                                          |
-| `void`                                                      | [`detach_graph_element_from_frame`](#class_graphedit_method_detach_graph_element_from_frame) ( element: [`StringName`](class_stringname.md) )                                                                                                                                      |
-| `void`                                                      | [`disconnect_node`](#class_graphedit_method_disconnect_node) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md) )                                                    |
-| `void`                                                      | [`force_connection_drag_end`](#class_graphedit_method_force_connection_drag_end) ( )                                                                                                                                                                                               |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_attached_nodes_of_frame`](#class_graphedit_method_get_attached_nodes_of_frame) ( frame: [`StringName`](class_stringname.md) )                                                                                                                                                |
-| [`Dictionary`](class_dictionary.md)                         | [`get_closest_connection_at_point`](#class_graphedit_method_get_closest_connection_at_point) ( point: [`Vector2`](class_vector2.md), max_distance: [`float`](class_float.md) = 4.0 ) const[^const]                                                                                 |
-| [`PackedVector2Array`](class_packedvector2array.md)         | [`get_connection_line`](#class_graphedit_method_get_connection_line) ( from_node: [`Vector2`](class_vector2.md), to_node: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                            |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_connection_list`](#class_graphedit_method_get_connection_list) ( ) const[^const]                                                                                                                                                                                             |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_connections_intersecting_with_rect`](#class_graphedit_method_get_connections_intersecting_with_rect) ( rect: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                       |
-| [`GraphFrame`](class_graphframe.md)                         | [`get_element_frame`](#class_graphedit_method_get_element_frame) ( element: [`StringName`](class_stringname.md) )                                                                                                                                                                  |
-| [`HBoxContainer`](class_hboxcontainer.md)                   | [`get_menu_hbox`](#class_graphedit_method_get_menu_hbox) ( )                                                                                                                                                                                                                       |
-| [`bool`](class_bool.md)                                     | [`is_node_connected`](#class_graphedit_method_is_node_connected) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md) )                                                |
-| [`bool`](class_bool.md)                                     | [`is_valid_connection_type`](#class_graphedit_method_is_valid_connection_type) ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) ) const[^const]                                                                                                                  |
-| `void`                                                      | [`remove_valid_connection_type`](#class_graphedit_method_remove_valid_connection_type) ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) )                                                                                                                        |
-| `void`                                                      | [`remove_valid_left_disconnect_type`](#class_graphedit_method_remove_valid_left_disconnect_type) ( type: [`int`](class_int.md) )                                                                                                                                                   |
-| `void`                                                      | [`remove_valid_right_disconnect_type`](#class_graphedit_method_remove_valid_right_disconnect_type) ( type: [`int`](class_int.md) )                                                                                                                                                 |
-| `void`                                                      | [`set_connection_activity`](#class_graphedit_method_set_connection_activity) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md), amount: [`float`](class_float.md) ) |
-| `void`                                                      | [`set_selected`](#class_graphedit_method_set_selected) ( node: [`Node`](class_node.md) )                                                                                                                                                                                           |
+| [`PackedVector2Array`](class_packedvector2array.md)         | [`_get_connection_line`](class_graphedit.md#class_graphedit_private_method__get_connection_line) ( from_position: [`Vector2`](class_vector2.md), to_position: [`Vector2`](class_vector2.md) ) virtual[^virtual] const[^const]                                                                        |
+| [`bool`](class_bool.md)                                     | [`_is_in_input_hotzone`](class_graphedit.md#class_graphedit_private_method__is_in_input_hotzone) ( in_node: [`Object`](class_object.md), in_port: [`int`](class_int.md), mouse_position: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                           |
+| [`bool`](class_bool.md)                                     | [`_is_in_output_hotzone`](class_graphedit.md#class_graphedit_private_method__is_in_output_hotzone) ( in_node: [`Object`](class_object.md), in_port: [`int`](class_int.md), mouse_position: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                         |
+| [`bool`](class_bool.md)                                     | [`_is_node_hover_valid`](class_graphedit.md#class_graphedit_private_method__is_node_hover_valid) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md) ) virtual[^virtual]                |
+| `void`                                                      | [`add_valid_connection_type`](class_graphedit.md#class_graphedit_method_add_valid_connection_type) ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) )                                                                                                                              |
+| `void`                                                      | [`add_valid_left_disconnect_type`](class_graphedit.md#class_graphedit_method_add_valid_left_disconnect_type) ( type: [`int`](class_int.md) )                                                                                                                                                         |
+| `void`                                                      | [`add_valid_right_disconnect_type`](class_graphedit.md#class_graphedit_method_add_valid_right_disconnect_type) ( type: [`int`](class_int.md) )                                                                                                                                                       |
+| `void`                                                      | [`arrange_nodes`](class_graphedit.md#class_graphedit_method_arrange_nodes) ( )                                                                                                                                                                                                                       |
+| `void`                                                      | [`attach_graph_element_to_frame`](class_graphedit.md#class_graphedit_method_attach_graph_element_to_frame) ( element: [`StringName`](class_stringname.md), frame: [`StringName`](class_stringname.md) )                                                                                              |
+| `void`                                                      | [`clear_connections`](class_graphedit.md#class_graphedit_method_clear_connections) ( )                                                                                                                                                                                                               |
+| [Error](#enum_@globalscope_error)                           | [`connect_node`](class_graphedit.md#class_graphedit_method_connect_node) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md) )                                                          |
+| `void`                                                      | [`detach_graph_element_from_frame`](class_graphedit.md#class_graphedit_method_detach_graph_element_from_frame) ( element: [`StringName`](class_stringname.md) )                                                                                                                                      |
+| `void`                                                      | [`disconnect_node`](class_graphedit.md#class_graphedit_method_disconnect_node) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md) )                                                    |
+| `void`                                                      | [`force_connection_drag_end`](class_graphedit.md#class_graphedit_method_force_connection_drag_end) ( )                                                                                                                                                                                               |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_attached_nodes_of_frame`](class_graphedit.md#class_graphedit_method_get_attached_nodes_of_frame) ( frame: [`StringName`](class_stringname.md) )                                                                                                                                                |
+| [`Dictionary`](class_dictionary.md)                         | [`get_closest_connection_at_point`](class_graphedit.md#class_graphedit_method_get_closest_connection_at_point) ( point: [`Vector2`](class_vector2.md), max_distance: [`float`](class_float.md) = 4.0 ) const[^const]                                                                                 |
+| [`PackedVector2Array`](class_packedvector2array.md)         | [`get_connection_line`](class_graphedit.md#class_graphedit_method_get_connection_line) ( from_node: [`Vector2`](class_vector2.md), to_node: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                            |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_connection_list`](class_graphedit.md#class_graphedit_method_get_connection_list) ( ) const[^const]                                                                                                                                                                                             |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_connections_intersecting_with_rect`](class_graphedit.md#class_graphedit_method_get_connections_intersecting_with_rect) ( rect: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                       |
+| [`GraphFrame`](class_graphframe.md)                         | [`get_element_frame`](class_graphedit.md#class_graphedit_method_get_element_frame) ( element: [`StringName`](class_stringname.md) )                                                                                                                                                                  |
+| [`HBoxContainer`](class_hboxcontainer.md)                   | [`get_menu_hbox`](class_graphedit.md#class_graphedit_method_get_menu_hbox) ( )                                                                                                                                                                                                                       |
+| [`bool`](class_bool.md)                                     | [`is_node_connected`](class_graphedit.md#class_graphedit_method_is_node_connected) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md) )                                                |
+| [`bool`](class_bool.md)                                     | [`is_valid_connection_type`](class_graphedit.md#class_graphedit_method_is_valid_connection_type) ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) ) const[^const]                                                                                                                  |
+| `void`                                                      | [`remove_valid_connection_type`](class_graphedit.md#class_graphedit_method_remove_valid_connection_type) ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) )                                                                                                                        |
+| `void`                                                      | [`remove_valid_left_disconnect_type`](class_graphedit.md#class_graphedit_method_remove_valid_left_disconnect_type) ( type: [`int`](class_int.md) )                                                                                                                                                   |
+| `void`                                                      | [`remove_valid_right_disconnect_type`](class_graphedit.md#class_graphedit_method_remove_valid_right_disconnect_type) ( type: [`int`](class_int.md) )                                                                                                                                                 |
+| `void`                                                      | [`set_connection_activity`](class_graphedit.md#class_graphedit_method_set_connection_activity) ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md), amount: [`float`](class_float.md) ) |
+| `void`                                                      | [`set_selected`](class_graphedit.md#class_graphedit_method_set_selected) ( node: [`Node`](class_node.md) )                                                                                                                                                                                           |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)         | [`activity`](#class_graphedit_theme_color_activity)                                                     | ``Color(1, 1, 1, 1)``         |
-| [`Color`](class_color.md)         | [`connection_hover_tint_color`](#class_graphedit_theme_color_connection_hover_tint_color)               | ``Color(0, 0, 0, 0.3)``       |
-| [`Color`](class_color.md)         | [`connection_rim_color`](#class_graphedit_theme_color_connection_rim_color)                             | ``Color(0.1, 0.1, 0.1, 0.6)`` |
-| [`Color`](class_color.md)         | [`connection_valid_target_tint_color`](#class_graphedit_theme_color_connection_valid_target_tint_color) | ``Color(1, 1, 1, 0.4)``       |
-| [`Color`](class_color.md)         | [`grid_major`](#class_graphedit_theme_color_grid_major)                                                 | ``Color(1, 1, 1, 0.2)``       |
-| [`Color`](class_color.md)         | [`grid_minor`](#class_graphedit_theme_color_grid_minor)                                                 | ``Color(1, 1, 1, 0.05)``      |
-| [`Color`](class_color.md)         | [`selection_fill`](#class_graphedit_theme_color_selection_fill)                                         | ``Color(1, 1, 1, 0.3)``       |
-| [`Color`](class_color.md)         | [`selection_stroke`](#class_graphedit_theme_color_selection_stroke)                                     | ``Color(1, 1, 1, 0.8)``       |
-| [`int`](class_int.md)             | [`port_hotzone_inner_extent`](#class_graphedit_theme_constant_port_hotzone_inner_extent)                | ``22``                        |
-| [`int`](class_int.md)             | [`port_hotzone_outer_extent`](#class_graphedit_theme_constant_port_hotzone_outer_extent)                | ``26``                        |
-| [`Texture2D`](class_texture2d.md) | [`grid_toggle`](#class_graphedit_theme_icon_grid_toggle)                                                |                               |
-| [`Texture2D`](class_texture2d.md) | [`layout`](#class_graphedit_theme_icon_layout)                                                          |                               |
-| [`Texture2D`](class_texture2d.md) | [`minimap_toggle`](#class_graphedit_theme_icon_minimap_toggle)                                          |                               |
-| [`Texture2D`](class_texture2d.md) | [`snapping_toggle`](#class_graphedit_theme_icon_snapping_toggle)                                        |                               |
-| [`Texture2D`](class_texture2d.md) | [`zoom_in`](#class_graphedit_theme_icon_zoom_in)                                                        |                               |
-| [`Texture2D`](class_texture2d.md) | [`zoom_out`](#class_graphedit_theme_icon_zoom_out)                                                      |                               |
-| [`Texture2D`](class_texture2d.md) | [`zoom_reset`](#class_graphedit_theme_icon_zoom_reset)                                                  |                               |
-| [`StyleBox`](class_stylebox.md)   | [`menu_panel`](#class_graphedit_theme_style_menu_panel)                                                 |                               |
-| [`StyleBox`](class_stylebox.md)   | [`panel`](#class_graphedit_theme_style_panel)                                                           |                               |
+| [`Color`](class_color.md)         | [`activity`](class_graphedit.md#class_graphedit_theme_color_activity)                                                     | ``Color(1, 1, 1, 1)``         |
+| [`Color`](class_color.md)         | [`connection_hover_tint_color`](class_graphedit.md#class_graphedit_theme_color_connection_hover_tint_color)               | ``Color(0, 0, 0, 0.3)``       |
+| [`Color`](class_color.md)         | [`connection_rim_color`](class_graphedit.md#class_graphedit_theme_color_connection_rim_color)                             | ``Color(0.1, 0.1, 0.1, 0.6)`` |
+| [`Color`](class_color.md)         | [`connection_valid_target_tint_color`](class_graphedit.md#class_graphedit_theme_color_connection_valid_target_tint_color) | ``Color(1, 1, 1, 0.4)``       |
+| [`Color`](class_color.md)         | [`grid_major`](class_graphedit.md#class_graphedit_theme_color_grid_major)                                                 | ``Color(1, 1, 1, 0.2)``       |
+| [`Color`](class_color.md)         | [`grid_minor`](class_graphedit.md#class_graphedit_theme_color_grid_minor)                                                 | ``Color(1, 1, 1, 0.05)``      |
+| [`Color`](class_color.md)         | [`selection_fill`](class_graphedit.md#class_graphedit_theme_color_selection_fill)                                         | ``Color(1, 1, 1, 0.3)``       |
+| [`Color`](class_color.md)         | [`selection_stroke`](class_graphedit.md#class_graphedit_theme_color_selection_stroke)                                     | ``Color(1, 1, 1, 0.8)``       |
+| [`int`](class_int.md)             | [`port_hotzone_inner_extent`](class_graphedit.md#class_graphedit_theme_constant_port_hotzone_inner_extent)                | ``22``                        |
+| [`int`](class_int.md)             | [`port_hotzone_outer_extent`](class_graphedit.md#class_graphedit_theme_constant_port_hotzone_outer_extent)                | ``26``                        |
+| [`Texture2D`](class_texture2d.md) | [`grid_toggle`](class_graphedit.md#class_graphedit_theme_icon_grid_toggle)                                                |                               |
+| [`Texture2D`](class_texture2d.md) | [`layout`](class_graphedit.md#class_graphedit_theme_icon_layout)                                                          |                               |
+| [`Texture2D`](class_texture2d.md) | [`minimap_toggle`](class_graphedit.md#class_graphedit_theme_icon_minimap_toggle)                                          |                               |
+| [`Texture2D`](class_texture2d.md) | [`snapping_toggle`](class_graphedit.md#class_graphedit_theme_icon_snapping_toggle)                                        |                               |
+| [`Texture2D`](class_texture2d.md) | [`zoom_in`](class_graphedit.md#class_graphedit_theme_icon_zoom_in)                                                        |                               |
+| [`Texture2D`](class_texture2d.md) | [`zoom_out`](class_graphedit.md#class_graphedit_theme_icon_zoom_out)                                                      |                               |
+| [`Texture2D`](class_texture2d.md) | [`zoom_reset`](class_graphedit.md#class_graphedit_theme_icon_zoom_reset)                                                  |                               |
+| [`StyleBox`](class_stylebox.md)   | [`menu_panel`](class_graphedit.md#class_graphedit_theme_style_menu_panel)                                                 |                               |
+| [`StyleBox`](class_stylebox.md)   | [`panel`](class_graphedit.md#class_graphedit_theme_style_panel)                                                           |                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -661,7 +661,7 @@ Virtual method which can be overridden to customize how connections are drawn.
 
 Returns whether the `mouse_position` is in the input hot zone.
 
-By default, a hot zone is a [`Rect2`](class_rect2.md) positioned such that its center is at `in_node`. [`GraphNode.get_input_port_position`](#class_graphnode_method_get_input_port_position) (`in_port`) (For output's case, call [`GraphNode.get_output_port_position`](#class_graphnode_method_get_output_port_position) instead). The hot zone's width is twice the Theme Property `port_grab_distance_horizontal`, and its height is twice the `port_grab_distance_vertical`.
+By default, a hot zone is a [`Rect2`](class_rect2.md) positioned such that its center is at `in_node`. [`GraphNode.get_input_port_position`](class_graphnode.md#class_graphnode_method_get_input_port_position) (`in_port`) (For output's case, call [`GraphNode.get_output_port_position`](class_graphnode.md#class_graphnode_method_get_output_port_position) instead). The hot zone's width is twice the Theme Property `port_grab_distance_horizontal`, and its height is twice the `port_grab_distance_vertical`.
 
 Below is a sample code to help get started:
 
@@ -685,7 +685,7 @@ Below is a sample code to help get started:
 
 [`bool`](class_bool.md) **_is_in_output_hotzone** ( in_node: [`Object`](class_object.md), in_port: [`int`](class_int.md), mouse_position: [`Vector2`](class_vector2.md) ) virtual[^virtual]<div id="class_graphedit_private_method__is_in_output_hotzone"></div>
 
-Returns whether the `mouse_position` is in the output hot zone. For more information on hot zones, see [`_is_in_input_hotzone`](#class_graphedit_private_method__is_in_input_hotzone).
+Returns whether the `mouse_position` is in the output hot zone. For more information on hot zones, see [`_is_in_input_hotzone`](class_graphedit.md#class_graphedit_private_method__is_in_input_hotzone).
 
 Below is a sample code to help get started:
 
@@ -745,9 +745,9 @@ In this example a connection to same node is suppressed:
 
 `void` **add_valid_connection_type** ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) )<div id="class_graphedit_method_add_valid_connection_type"></div>
 
-Allows the connection between two different port types. The port type is defined individually for the left and the right port of each slot with the [`GraphNode.set_slot`](#class_graphnode_method_set_slot) method.
+Allows the connection between two different port types. The port type is defined individually for the left and the right port of each slot with the [`GraphNode.set_slot`](class_graphnode.md#class_graphnode_method_set_slot) method.
 
-See also [`is_valid_connection_type`](#class_graphedit_method_is_valid_connection_type) and [`remove_valid_connection_type`](#class_graphedit_method_remove_valid_connection_type).
+See also [`is_valid_connection_type`](class_graphedit.md#class_graphedit_method_is_valid_connection_type) and [`remove_valid_connection_type`](class_graphedit.md#class_graphedit_method_remove_valid_connection_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -757,7 +757,7 @@ See also [`is_valid_connection_type`](#class_graphedit_method_is_valid_connectio
 
 `void` **add_valid_left_disconnect_type** ( type: [`int`](class_int.md) )<div id="class_graphedit_method_add_valid_left_disconnect_type"></div>
 
-Allows to disconnect nodes when dragging from the left port of the [`GraphNode`](class_graphnode.md)'s slot if it has the specified type. See also [`remove_valid_left_disconnect_type`](#class_graphedit_method_remove_valid_left_disconnect_type).
+Allows to disconnect nodes when dragging from the left port of the [`GraphNode`](class_graphnode.md)'s slot if it has the specified type. See also [`remove_valid_left_disconnect_type`](class_graphedit.md#class_graphedit_method_remove_valid_left_disconnect_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -767,7 +767,7 @@ Allows to disconnect nodes when dragging from the left port of the [`GraphNode`]
 
 `void` **add_valid_right_disconnect_type** ( type: [`int`](class_int.md) )<div id="class_graphedit_method_add_valid_right_disconnect_type"></div>
 
-Allows to disconnect nodes when dragging from the right port of the [`GraphNode`](class_graphnode.md)'s slot if it has the specified type. See also [`remove_valid_right_disconnect_type`](#class_graphedit_method_remove_valid_right_disconnect_type).
+Allows to disconnect nodes when dragging from the right port of the [`GraphNode`](class_graphnode.md)'s slot if it has the specified type. See also [`remove_valid_right_disconnect_type`](class_graphedit.md#class_graphedit_method_remove_valid_right_disconnect_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -839,9 +839,9 @@ Removes the connection between the `from_port` of the `from_node` [`GraphNode`](
 
 Ends the creation of the current connection. In other words, if you are dragging a connection you can use this method to abort the process and remove the line that followed your cursor.
 
-This is best used together with [`connection_drag_started`](#class_graphedit_signal_connection_drag_started) and [`connection_drag_ended`](#class_graphedit_signal_connection_drag_ended) to add custom behavior like node addition through shortcuts.
+This is best used together with [`connection_drag_started`](class_graphedit.md#class_graphedit_signal_connection_drag_started) and [`connection_drag_ended`](class_graphedit.md#class_graphedit_signal_connection_drag_ended) to add custom behavior like node addition through shortcuts.
 
- **Note:** This method suppresses any other connection request signals apart from [`connection_drag_ended`](#class_graphedit_signal_connection_drag_ended).
+ **Note:** This method suppresses any other connection request signals apart from [`connection_drag_ended`](class_graphedit.md#class_graphedit_signal_connection_drag_ended).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -928,7 +928,7 @@ Returns the [`GraphFrame`](class_graphframe.md) that contains the [`GraphElement
 
 Gets the [`HBoxContainer`](class_hboxcontainer.md) that contains the zooming and grid snap controls in the top left of the graph. You can use this method to reposition the toolbar or to add your own custom controls to it.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -948,9 +948,9 @@ Returns `true` if the `from_port` of the `from_node` [`GraphNode`](class_graphno
 
 [`bool`](class_bool.md) **is_valid_connection_type** ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) ) const[^const]<div id="class_graphedit_method_is_valid_connection_type"></div>
 
-Returns whether it's possible to make a connection between two different port types. The port type is defined individually for the left and the right port of each slot with the [`GraphNode.set_slot`](#class_graphnode_method_set_slot) method.
+Returns whether it's possible to make a connection between two different port types. The port type is defined individually for the left and the right port of each slot with the [`GraphNode.set_slot`](class_graphnode.md#class_graphnode_method_set_slot) method.
 
-See also [`add_valid_connection_type`](#class_graphedit_method_add_valid_connection_type) and [`remove_valid_connection_type`](#class_graphedit_method_remove_valid_connection_type).
+See also [`add_valid_connection_type`](class_graphedit.md#class_graphedit_method_add_valid_connection_type) and [`remove_valid_connection_type`](class_graphedit.md#class_graphedit_method_remove_valid_connection_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -960,9 +960,9 @@ See also [`add_valid_connection_type`](#class_graphedit_method_add_valid_connect
 
 `void` **remove_valid_connection_type** ( from_type: [`int`](class_int.md), to_type: [`int`](class_int.md) )<div id="class_graphedit_method_remove_valid_connection_type"></div>
 
-Disallows the connection between two different port types previously allowed by [`add_valid_connection_type`](#class_graphedit_method_add_valid_connection_type). The port type is defined individually for the left and the right port of each slot with the [`GraphNode.set_slot`](#class_graphnode_method_set_slot) method.
+Disallows the connection between two different port types previously allowed by [`add_valid_connection_type`](class_graphedit.md#class_graphedit_method_add_valid_connection_type). The port type is defined individually for the left and the right port of each slot with the [`GraphNode.set_slot`](class_graphnode.md#class_graphnode_method_set_slot) method.
 
-See also [`is_valid_connection_type`](#class_graphedit_method_is_valid_connection_type).
+See also [`is_valid_connection_type`](class_graphedit.md#class_graphedit_method_is_valid_connection_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -972,7 +972,7 @@ See also [`is_valid_connection_type`](#class_graphedit_method_is_valid_connectio
 
 `void` **remove_valid_left_disconnect_type** ( type: [`int`](class_int.md) )<div id="class_graphedit_method_remove_valid_left_disconnect_type"></div>
 
-Disallows to disconnect nodes when dragging from the left port of the [`GraphNode`](class_graphnode.md)'s slot if it has the specified type. Use this to disable disconnection previously allowed with [`add_valid_left_disconnect_type`](#class_graphedit_method_add_valid_left_disconnect_type).
+Disallows to disconnect nodes when dragging from the left port of the [`GraphNode`](class_graphnode.md)'s slot if it has the specified type. Use this to disable disconnection previously allowed with [`add_valid_left_disconnect_type`](class_graphedit.md#class_graphedit_method_add_valid_left_disconnect_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -982,7 +982,7 @@ Disallows to disconnect nodes when dragging from the left port of the [`GraphNod
 
 `void` **remove_valid_right_disconnect_type** ( type: [`int`](class_int.md) )<div id="class_graphedit_method_remove_valid_right_disconnect_type"></div>
 
-Disallows to disconnect nodes when dragging from the right port of the [`GraphNode`](class_graphnode.md)'s slot if it has the specified type. Use this to disable disconnection previously allowed with [`add_valid_right_disconnect_type`](#class_graphedit_method_add_valid_right_disconnect_type).
+Disallows to disconnect nodes when dragging from the right port of the [`GraphNode`](class_graphnode.md)'s slot if it has the specified type. Use this to disable disconnection previously allowed with [`add_valid_right_disconnect_type`](class_graphedit.md#class_graphedit_method_add_valid_right_disconnect_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -992,7 +992,7 @@ Disallows to disconnect nodes when dragging from the right port of the [`GraphNo
 
 `void` **set_connection_activity** ( from_node: [`StringName`](class_stringname.md), from_port: [`int`](class_int.md), to_node: [`StringName`](class_stringname.md), to_port: [`int`](class_int.md), amount: [`float`](class_float.md) )<div id="class_graphedit_method_set_connection_activity"></div>
 
-Sets the coloration of the connection between `from_node`'s `from_port` and `to_node`'s `to_port` with the color provided in the [`activity`](#class_graphedit_theme_color_activity) theme property. The color is linearly interpolated between the connection color and the activity color using `amount` as weight.
+Sets the coloration of the connection between `from_node`'s `from_port` and `to_node`'s `to_port` with the color provided in the [`activity`](class_graphedit.md#class_graphedit_theme_color_activity) theme property. The color is linearly interpolated between the connection color and the activity color using `amount` as weight.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1014,7 +1014,7 @@ Sets the specified `node` as the one selected.
 
 [`Color`](class_color.md) **activity** = ``Color(1, 1, 1, 1)`` <div id="class_graphedit_theme_color_activity"></div>
 
-Color the connection line is interpolated to based on the activity value of a connection (see [`set_connection_activity`](#class_graphedit_method_set_connection_activity)).
+Color the connection line is interpolated to based on the activity value of a connection (see [`set_connection_activity`](class_graphedit.md#class_graphedit_method_set_connection_activity)).
 
 <!-- rst-class:: classref-item-separator -->
 

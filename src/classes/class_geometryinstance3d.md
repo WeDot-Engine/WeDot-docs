@@ -21,28 +21,28 @@ Base node for geometry-based visual instances. Shares some common functionality 
 
 |||
 |:-:|:--|
-| [ShadowCastingSetting](#enum_geometryinstance3d_shadowcastingsetting)       | [`cast_shadow`](#class_geometryinstance3d_property_cast_shadow)                                     | ``1``                      |
-| [`AABB`](class_aabb.md)                                                     | [`custom_aabb`](#class_geometryinstance3d_property_custom_aabb)                                     | ``AABB(0, 0, 0, 0, 0, 0)`` |
-| [`float`](class_float.md)                                                   | [`extra_cull_margin`](#class_geometryinstance3d_property_extra_cull_margin)                         | ``0.0``                    |
-| [LightmapScale](#enum_geometryinstance3d_lightmapscale)                     | [`gi_lightmap_scale`](#class_geometryinstance3d_property_gi_lightmap_scale)                         | ``0``                      |
-| [GIMode](#enum_geometryinstance3d_gimode)                                   | [`gi_mode`](#class_geometryinstance3d_property_gi_mode)                                             | ``1``                      |
-| [`bool`](class_bool.md)                                                     | [`ignore_occlusion_culling`](#class_geometryinstance3d_property_ignore_occlusion_culling)           | ``false``                  |
-| [`float`](class_float.md)                                                   | [`lod_bias`](#class_geometryinstance3d_property_lod_bias)                                           | ``1.0``                    |
-| [`Material`](class_material.md)                                             | [`material_overlay`](#class_geometryinstance3d_property_material_overlay)                           |                            |
-| [`Material`](class_material.md)                                             | [`material_override`](#class_geometryinstance3d_property_material_override)                         |                            |
-| [`float`](class_float.md)                                                   | [`transparency`](#class_geometryinstance3d_property_transparency)                                   | ``0.0``                    |
-| [`float`](class_float.md)                                                   | [`visibility_range_begin`](#class_geometryinstance3d_property_visibility_range_begin)               | ``0.0``                    |
-| [`float`](class_float.md)                                                   | [`visibility_range_begin_margin`](#class_geometryinstance3d_property_visibility_range_begin_margin) | ``0.0``                    |
-| [`float`](class_float.md)                                                   | [`visibility_range_end`](#class_geometryinstance3d_property_visibility_range_end)                   | ``0.0``                    |
-| [`float`](class_float.md)                                                   | [`visibility_range_end_margin`](#class_geometryinstance3d_property_visibility_range_end_margin)     | ``0.0``                    |
-| [VisibilityRangeFadeMode](#enum_geometryinstance3d_visibilityrangefademode) | [`visibility_range_fade_mode`](#class_geometryinstance3d_property_visibility_range_fade_mode)       | ``0``                      |
+| [ShadowCastingSetting](#enum_geometryinstance3d_shadowcastingsetting)       | [`cast_shadow`](class_geometryinstance3d.md#class_geometryinstance3d_property_cast_shadow)                                     | ``1``                      |
+| [`AABB`](class_aabb.md)                                                     | [`custom_aabb`](class_geometryinstance3d.md#class_geometryinstance3d_property_custom_aabb)                                     | ``AABB(0, 0, 0, 0, 0, 0)`` |
+| [`float`](class_float.md)                                                   | [`extra_cull_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_extra_cull_margin)                         | ``0.0``                    |
+| [LightmapScale](#enum_geometryinstance3d_lightmapscale)                     | [`gi_lightmap_scale`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_lightmap_scale)                         | ``0``                      |
+| [GIMode](#enum_geometryinstance3d_gimode)                                   | [`gi_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode)                                             | ``1``                      |
+| [`bool`](class_bool.md)                                                     | [`ignore_occlusion_culling`](class_geometryinstance3d.md#class_geometryinstance3d_property_ignore_occlusion_culling)           | ``false``                  |
+| [`float`](class_float.md)                                                   | [`lod_bias`](class_geometryinstance3d.md#class_geometryinstance3d_property_lod_bias)                                           | ``1.0``                    |
+| [`Material`](class_material.md)                                             | [`material_overlay`](class_geometryinstance3d.md#class_geometryinstance3d_property_material_overlay)                           |                            |
+| [`Material`](class_material.md)                                             | [`material_override`](class_geometryinstance3d.md#class_geometryinstance3d_property_material_override)                         |                            |
+| [`float`](class_float.md)                                                   | [`transparency`](class_geometryinstance3d.md#class_geometryinstance3d_property_transparency)                                   | ``0.0``                    |
+| [`float`](class_float.md)                                                   | [`visibility_range_begin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin)               | ``0.0``                    |
+| [`float`](class_float.md)                                                   | [`visibility_range_begin_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin_margin) | ``0.0``                    |
+| [`float`](class_float.md)                                                   | [`visibility_range_end`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end)                   | ``0.0``                    |
+| [`float`](class_float.md)                                                   | [`visibility_range_end_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end_margin)     | ``0.0``                    |
+| [VisibilityRangeFadeMode](#enum_geometryinstance3d_visibilityrangefademode) | [`visibility_range_fade_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_fade_mode)       | ``0``                      |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_instance_shader_parameter`](#class_geometryinstance3d_method_get_instance_shader_parameter) ( name: [`StringName`](class_stringname.md) ) const[^const]                         |
-| `void`                        | [`set_instance_shader_parameter`](#class_geometryinstance3d_method_set_instance_shader_parameter) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) |
+| [`Variant`](class_variant.md) | [`get_instance_shader_parameter`](class_geometryinstance3d.md#class_geometryinstance3d_method_get_instance_shader_parameter) ( name: [`StringName`](class_stringname.md) ) const[^const]                         |
+| `void`                        | [`set_instance_shader_parameter`](class_geometryinstance3d.md#class_geometryinstance3d_method_set_instance_shader_parameter) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -108,7 +108,7 @@ Baked global illumination mode. Use for static objects that contribute to global
 
 [GIMode](#enum_geometryinstance3d_gimode) **GI_MODE_DYNAMIC** = ``2``
 
-Dynamic global illumination mode. Use for dynamic objects that contribute to global illumination. This GI mode is only effective when using [`VoxelGI`](class_voxelgi.md), but it has a higher performance impact than [`GI_MODE_STATIC`](#class_geometryinstance3d_constant_gi_mode_static). When using other GI methods, this will act the same as [`GI_MODE_DISABLED`](#class_geometryinstance3d_constant_gi_mode_disabled). When using [`LightmapGI`](class_lightmapgi.md), the object will receive indirect lighting using lightmap probes instead of using the baked lightmap texture.
+Dynamic global illumination mode. Use for dynamic objects that contribute to global illumination. This GI mode is only effective when using [`VoxelGI`](class_voxelgi.md), but it has a higher performance impact than [`GI_MODE_STATIC`](class_geometryinstance3d.md#class_geometryinstance3d_constant_gi_mode_static). When using other GI methods, this will act the same as [`GI_MODE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_gi_mode_disabled). When using [`LightmapGI`](class_lightmapgi.md), the object will receive indirect lighting using lightmap probes instead of using the baked lightmap texture.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -160,23 +160,23 @@ enum **VisibilityRangeFadeMode**: <div id="enum_geometryinstance3d_visibilityran
 
 [VisibilityRangeFadeMode](#enum_geometryinstance3d_visibilityrangefademode) **VISIBILITY_RANGE_FADE_DISABLED** = ``0``
 
-Will not fade itself nor its visibility dependencies, hysteresis will be used instead. This is the fastest approach to manual LOD, but it can result in noticeable LOD transitions depending on how the LOD meshes are authored. See [`visibility_range_begin`](#class_geometryinstance3d_property_visibility_range_begin) and [`Node3D.visibility_parent`](#class_node3d_property_visibility_parent) for more information.
+Will not fade itself nor its visibility dependencies, hysteresis will be used instead. This is the fastest approach to manual LOD, but it can result in noticeable LOD transitions depending on how the LOD meshes are authored. See [`visibility_range_begin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin) and [`Node3D.visibility_parent`](class_node3d.md#class_node3d_property_visibility_parent) for more information.
 
 <div id="_class_geometryinstance3d_constant_visibility_range_fade_self"></div>
 
 [VisibilityRangeFadeMode](#enum_geometryinstance3d_visibilityrangefademode) **VISIBILITY_RANGE_FADE_SELF** = ``1``
 
-Will fade-out itself when reaching the limits of its own visibility range. This is slower than [`VISIBILITY_RANGE_FADE_DISABLED`](#class_geometryinstance3d_constant_visibility_range_fade_disabled), but it can provide smoother transitions. The fading range is determined by [`visibility_range_begin_margin`](#class_geometryinstance3d_property_visibility_range_begin_margin) and [`visibility_range_end_margin`](#class_geometryinstance3d_property_visibility_range_end_margin).
+Will fade-out itself when reaching the limits of its own visibility range. This is slower than [`VISIBILITY_RANGE_FADE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_disabled), but it can provide smoother transitions. The fading range is determined by [`visibility_range_begin_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin_margin) and [`visibility_range_end_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end_margin).
 
- **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, this mode acts like [`VISIBILITY_RANGE_FADE_DISABLED`](#class_geometryinstance3d_constant_visibility_range_fade_disabled) but with hysteresis disabled.
+ **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, this mode acts like [`VISIBILITY_RANGE_FADE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_disabled) but with hysteresis disabled.
 
 <div id="_class_geometryinstance3d_constant_visibility_range_fade_dependencies"></div>
 
 [VisibilityRangeFadeMode](#enum_geometryinstance3d_visibilityrangefademode) **VISIBILITY_RANGE_FADE_DEPENDENCIES** = ``2``
 
-Will fade-in its visibility dependencies (see [`Node3D.visibility_parent`](#class_node3d_property_visibility_parent)) when reaching the limits of its own visibility range. This is slower than [`VISIBILITY_RANGE_FADE_DISABLED`](#class_geometryinstance3d_constant_visibility_range_fade_disabled), but it can provide smoother transitions. The fading range is determined by [`visibility_range_begin_margin`](#class_geometryinstance3d_property_visibility_range_begin_margin) and [`visibility_range_end_margin`](#class_geometryinstance3d_property_visibility_range_end_margin).
+Will fade-in its visibility dependencies (see [`Node3D.visibility_parent`](class_node3d.md#class_node3d_property_visibility_parent)) when reaching the limits of its own visibility range. This is slower than [`VISIBILITY_RANGE_FADE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_disabled), but it can provide smoother transitions. The fading range is determined by [`visibility_range_begin_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin_margin) and [`visibility_range_end_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end_margin).
 
- **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, this mode acts like [`VISIBILITY_RANGE_FADE_DISABLED`](#class_geometryinstance3d_constant_visibility_range_fade_disabled) but with hysteresis disabled.
+ **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, this mode acts like [`VISIBILITY_RANGE_FADE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_disabled) but with hysteresis disabled.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -204,7 +204,7 @@ The selected shadow casting flag. See [ShadowCastingSetting](#enum_geometryinsta
 - `void` **set_custom_aabb** ( value: [`AABB`](class_aabb.md) )
 - [`AABB`](class_aabb.md) **get_custom_aabb** ( )
 
-Overrides the bounding box of this node with a custom one. This can be used to avoid the expensive [`AABB`](class_aabb.md) recalculation that happens when a skeleton is used with a [`MeshInstance3D`](class_meshinstance3d.md) or to have precise control over the [`MeshInstance3D`](class_meshinstance3d.md)'s bounding box. To use the default AABB, set value to an [`AABB`](class_aabb.md) with all fields set to `0.0`. To avoid frustum culling, set [`custom_aabb`](#class_geometryinstance3d_property_custom_aabb) to a very large AABB that covers your entire game world such as `AABB(-10000, -10000, -10000, 20000, 20000, 20000)`. To disable all forms of culling (including occlusion culling), call [`RenderingServer.instance_set_ignore_culling`](#class_renderingserver_method_instance_set_ignore_culling) on the **GeometryInstance3D**'s [`RID`](class_rid.md).
+Overrides the bounding box of this node with a custom one. This can be used to avoid the expensive [`AABB`](class_aabb.md) recalculation that happens when a skeleton is used with a [`MeshInstance3D`](class_meshinstance3d.md) or to have precise control over the [`MeshInstance3D`](class_meshinstance3d.md)'s bounding box. To use the default AABB, set value to an [`AABB`](class_aabb.md) with all fields set to `0.0`. To avoid frustum culling, set [`custom_aabb`](class_geometryinstance3d.md#class_geometryinstance3d_property_custom_aabb) to a very large AABB that covers your entire game world such as `AABB(-10000, -10000, -10000, 20000, 20000, 20000)`. To disable all forms of culling (including occlusion culling), call [`RenderingServer.instance_set_ignore_culling`](class_renderingserver.md#class_renderingserver_method_instance_set_ignore_culling) on the **GeometryInstance3D**'s [`RID`](class_rid.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -245,7 +245,7 @@ The texel density to use for lightmapping in [`LightmapGI`](class_lightmapgi.md)
 
 The global illumination mode to use for the whole geometry. To avoid inconsistent results, use a mode that matches the purpose of the mesh during gameplay (static/dynamic).
 
- **Note:** Lights' bake mode will also affect the global illumination rendering. See [`Light3D.light_bake_mode`](#class_light3d_property_light_bake_mode).
+ **Note:** Lights' bake mode will also affect the global illumination rendering. See [`Light3D.light_bake_mode`](class_light3d.md#class_light3d_property_light_bake_mode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -260,7 +260,7 @@ The global illumination mode to use for the whole geometry. To avoid inconsisten
 
 If `true`, disables occlusion culling for this instance. Useful for gizmos that must be rendered even when occlusion culling is in use.
 
- **Note:** [`ignore_occlusion_culling`](#class_geometryinstance3d_property_ignore_occlusion_culling) does not affect frustum culling (which is what happens when an object is not visible given the camera's angle). To avoid frustum culling, set [`custom_aabb`](#class_geometryinstance3d_property_custom_aabb) to a very large AABB that covers your entire game world such as `AABB(-10000, -10000, -10000, 20000, 20000, 20000)`.
+ **Note:** [`ignore_occlusion_culling`](class_geometryinstance3d.md#class_geometryinstance3d_property_ignore_occlusion_culling) does not affect frustum culling (which is what happens when an object is not visible given the camera's angle). To avoid frustum culling, set [`custom_aabb`](class_geometryinstance3d.md#class_geometryinstance3d_property_custom_aabb) to a very large AABB that covers your entire game world such as `AABB(-10000, -10000, -10000, 20000, 20000, 20000)`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -318,13 +318,13 @@ If a material is assigned to this property, it will be used instead of any mater
 - `void` **set_transparency** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_transparency** ( )
 
-The transparency applied to the whole geometry (as a multiplier of the materials' existing transparency). `0.0` is fully opaque, while `1.0` is fully transparent. Values greater than `0.0` (exclusive) will force the geometry's materials to go through the transparent pipeline, which is slower to render and can exhibit rendering issues due to incorrect transparency sorting. However, unlike using a transparent material, setting [`transparency`](#class_geometryinstance3d_property_transparency) to a value greater than `0.0` (exclusive) will *not* disable shadow rendering.
+The transparency applied to the whole geometry (as a multiplier of the materials' existing transparency). `0.0` is fully opaque, while `1.0` is fully transparent. Values greater than `0.0` (exclusive) will force the geometry's materials to go through the transparent pipeline, which is slower to render and can exhibit rendering issues due to incorrect transparency sorting. However, unlike using a transparent material, setting [`transparency`](class_geometryinstance3d.md#class_geometryinstance3d_property_transparency) to a value greater than `0.0` (exclusive) will *not* disable shadow rendering.
 
 In spatial shaders, `1.0 - transparency` is set as the default value of the `ALPHA` built-in.
 
- **Note:** [`transparency`](#class_geometryinstance3d_property_transparency) is clamped between `0.0` and `1.0`, so this property cannot be used to make transparent materials more opaque than they originally are.
+ **Note:** [`transparency`](class_geometryinstance3d.md#class_geometryinstance3d_property_transparency) is clamped between `0.0` and `1.0`, so this property cannot be used to make transparent materials more opaque than they originally are.
 
- **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, [`transparency`](#class_geometryinstance3d_property_transparency) is ignored and is considered as always being `0.0`.
+ **Note:** Only supported when using the Forward+ rendering method. When using the Mobile or Compatibility rendering method, [`transparency`](class_geometryinstance3d.md#class_geometryinstance3d_property_transparency) is ignored and is considered as always being `0.0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -337,7 +337,7 @@ In spatial shaders, `1.0 - transparency` is set as the default value of the `ALP
 - `void` **set_visibility_range_begin** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_visibility_range_begin** ( )
 
-Starting distance from which the GeometryInstance3D will be visible, taking [`visibility_range_begin_margin`](#class_geometryinstance3d_property_visibility_range_begin_margin) into account as well. The default value of 0 is used to disable the range check.
+Starting distance from which the GeometryInstance3D will be visible, taking [`visibility_range_begin_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin_margin) into account as well. The default value of 0 is used to disable the range check.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -350,9 +350,9 @@ Starting distance from which the GeometryInstance3D will be visible, taking [`vi
 - `void` **set_visibility_range_begin_margin** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_visibility_range_begin_margin** ( )
 
-Margin for the [`visibility_range_begin`](#class_geometryinstance3d_property_visibility_range_begin) threshold. The GeometryInstance3D will only change its visibility state when it goes over or under the [`visibility_range_begin`](#class_geometryinstance3d_property_visibility_range_begin) threshold by this amount.
+Margin for the [`visibility_range_begin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin) threshold. The GeometryInstance3D will only change its visibility state when it goes over or under the [`visibility_range_begin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin) threshold by this amount.
 
-If [`visibility_range_fade_mode`](#class_geometryinstance3d_property_visibility_range_fade_mode) is [`VISIBILITY_RANGE_FADE_DISABLED`](#class_geometryinstance3d_constant_visibility_range_fade_disabled), this acts as a hysteresis distance. If [`visibility_range_fade_mode`](#class_geometryinstance3d_property_visibility_range_fade_mode) is [`VISIBILITY_RANGE_FADE_SELF`](#class_geometryinstance3d_constant_visibility_range_fade_self) or [`VISIBILITY_RANGE_FADE_DEPENDENCIES`](#class_geometryinstance3d_constant_visibility_range_fade_dependencies), this acts as a fade transition distance and must be set to a value greater than `0.0` for the effect to be noticeable.
+If [`visibility_range_fade_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_fade_mode) is [`VISIBILITY_RANGE_FADE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_disabled), this acts as a hysteresis distance. If [`visibility_range_fade_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_fade_mode) is [`VISIBILITY_RANGE_FADE_SELF`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_self) or [`VISIBILITY_RANGE_FADE_DEPENDENCIES`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_dependencies), this acts as a fade transition distance and must be set to a value greater than `0.0` for the effect to be noticeable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -365,7 +365,7 @@ If [`visibility_range_fade_mode`](#class_geometryinstance3d_property_visibility_
 - `void` **set_visibility_range_end** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_visibility_range_end** ( )
 
-Distance from which the GeometryInstance3D will be hidden, taking [`visibility_range_end_margin`](#class_geometryinstance3d_property_visibility_range_end_margin) into account as well. The default value of 0 is used to disable the range check.
+Distance from which the GeometryInstance3D will be hidden, taking [`visibility_range_end_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end_margin) into account as well. The default value of 0 is used to disable the range check.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -378,9 +378,9 @@ Distance from which the GeometryInstance3D will be hidden, taking [`visibility_r
 - `void` **set_visibility_range_end_margin** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_visibility_range_end_margin** ( )
 
-Margin for the [`visibility_range_end`](#class_geometryinstance3d_property_visibility_range_end) threshold. The GeometryInstance3D will only change its visibility state when it goes over or under the [`visibility_range_end`](#class_geometryinstance3d_property_visibility_range_end) threshold by this amount.
+Margin for the [`visibility_range_end`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end) threshold. The GeometryInstance3D will only change its visibility state when it goes over or under the [`visibility_range_end`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end) threshold by this amount.
 
-If [`visibility_range_fade_mode`](#class_geometryinstance3d_property_visibility_range_fade_mode) is [`VISIBILITY_RANGE_FADE_DISABLED`](#class_geometryinstance3d_constant_visibility_range_fade_disabled), this acts as a hysteresis distance. If [`visibility_range_fade_mode`](#class_geometryinstance3d_property_visibility_range_fade_mode) is [`VISIBILITY_RANGE_FADE_SELF`](#class_geometryinstance3d_constant_visibility_range_fade_self) or [`VISIBILITY_RANGE_FADE_DEPENDENCIES`](#class_geometryinstance3d_constant_visibility_range_fade_dependencies), this acts as a fade transition distance and must be set to a value greater than `0.0` for the effect to be noticeable.
+If [`visibility_range_fade_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_fade_mode) is [`VISIBILITY_RANGE_FADE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_disabled), this acts as a hysteresis distance. If [`visibility_range_fade_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_fade_mode) is [`VISIBILITY_RANGE_FADE_SELF`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_self) or [`VISIBILITY_RANGE_FADE_DEPENDENCIES`](class_geometryinstance3d.md#class_geometryinstance3d_constant_visibility_range_fade_dependencies), this acts as a fade transition distance and must be set to a value greater than `0.0` for the effect to be noticeable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -415,7 +415,7 @@ Get the value of a shader parameter as set on this instance.
 
 `void` **set_instance_shader_parameter** ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )<div id="class_geometryinstance3d_method_set_instance_shader_parameter"></div>
 
-Set the value of a shader uniform for this instance only ([*per-instance uniform*](../tutorials/shaders/shader_reference/shading_language.md#per-instance-uniforms)). See also [`ShaderMaterial.set_shader_parameter`](#class_shadermaterial_method_set_shader_parameter) to assign a uniform on all instances using the same [`ShaderMaterial`](class_shadermaterial.md).
+Set the value of a shader uniform for this instance only ([*per-instance uniform*](../tutorials/shaders/shader_reference/shading_language.md#per-instance-uniforms)). See also [`ShaderMaterial.set_shader_parameter`](class_shadermaterial.md#class_shadermaterial_method_set_shader_parameter) to assign a uniform on all instances using the same [`ShaderMaterial`](class_shadermaterial.md).
 
  **Note:** For a shader uniform to be assignable on a per-instance basis, it *must* be defined with `instance uniform ...` rather than `uniform ...` in the shader code.
 

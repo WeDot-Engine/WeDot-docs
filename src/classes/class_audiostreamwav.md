@@ -21,19 +21,19 @@ This class can also be used to store dynamically-generated PCM audio data. See a
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`data`](#class_audiostreamwav_property_data)             | ``PackedByteArray()`` |
-| [Format](#enum_audiostreamwav_format)         | [`format`](#class_audiostreamwav_property_format)         | ``0``                 |
-| [`int`](class_int.md)                         | [`loop_begin`](#class_audiostreamwav_property_loop_begin) | ``0``                 |
-| [`int`](class_int.md)                         | [`loop_end`](#class_audiostreamwav_property_loop_end)     | ``0``                 |
-| [LoopMode](#enum_audiostreamwav_loopmode)     | [`loop_mode`](#class_audiostreamwav_property_loop_mode)   | ``0``                 |
-| [`int`](class_int.md)                         | [`mix_rate`](#class_audiostreamwav_property_mix_rate)     | ``44100``             |
-| [`bool`](class_bool.md)                       | [`stereo`](#class_audiostreamwav_property_stereo)         | ``false``             |
+| [`PackedByteArray`](class_packedbytearray.md) | [`data`](class_audiostreamwav.md#class_audiostreamwav_property_data)             | ``PackedByteArray()`` |
+| [Format](#enum_audiostreamwav_format)         | [`format`](class_audiostreamwav.md#class_audiostreamwav_property_format)         | ``0``                 |
+| [`int`](class_int.md)                         | [`loop_begin`](class_audiostreamwav.md#class_audiostreamwav_property_loop_begin) | ``0``                 |
+| [`int`](class_int.md)                         | [`loop_end`](class_audiostreamwav.md#class_audiostreamwav_property_loop_end)     | ``0``                 |
+| [LoopMode](#enum_audiostreamwav_loopmode)     | [`loop_mode`](class_audiostreamwav.md#class_audiostreamwav_property_loop_mode)   | ``0``                 |
+| [`int`](class_int.md)                         | [`mix_rate`](class_audiostreamwav.md#class_audiostreamwav_property_mix_rate)     | ``44100``             |
+| [`bool`](class_bool.md)                       | [`stereo`](class_audiostreamwav.md#class_audiostreamwav_property_stereo)         | ``false``             |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`save_to_wav`](#class_audiostreamwav_method_save_to_wav) ( path: [`String`](class_string.md) ) |
+| [Error](#enum_@globalscope_error) | [`save_to_wav`](class_audiostreamwav.md#class_audiostreamwav_method_save_to_wav) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -87,19 +87,19 @@ Audio does not loop.
 
 [LoopMode](#enum_audiostreamwav_loopmode) **LOOP_FORWARD** = ``1``
 
-Audio loops the data between [`loop_begin`](#class_audiostreamwav_property_loop_begin) and [`loop_end`](#class_audiostreamwav_property_loop_end), playing forward only.
+Audio loops the data between [`loop_begin`](class_audiostreamwav.md#class_audiostreamwav_property_loop_begin) and [`loop_end`](class_audiostreamwav.md#class_audiostreamwav_property_loop_end), playing forward only.
 
 <div id="_class_audiostreamwav_constant_loop_pingpong"></div>
 
 [LoopMode](#enum_audiostreamwav_loopmode) **LOOP_PINGPONG** = ``2``
 
-Audio loops the data between [`loop_begin`](#class_audiostreamwav_property_loop_begin) and [`loop_end`](#class_audiostreamwav_property_loop_end), playing back and forth.
+Audio loops the data between [`loop_begin`](class_audiostreamwav.md#class_audiostreamwav_property_loop_begin) and [`loop_end`](class_audiostreamwav.md#class_audiostreamwav_property_loop_end), playing back and forth.
 
 <div id="_class_audiostreamwav_constant_loop_backward"></div>
 
 [LoopMode](#enum_audiostreamwav_loopmode) **LOOP_BACKWARD** = ``3``
 
-Audio loops the data between [`loop_begin`](#class_audiostreamwav_property_loop_begin) and [`loop_end`](#class_audiostreamwav_property_loop_end), playing backward only.
+Audio loops the data between [`loop_begin`](class_audiostreamwav.md#class_audiostreamwav_property_loop_begin) and [`loop_end`](class_audiostreamwav.md#class_audiostreamwav_property_loop_end), playing backward only.
 
 <!-- rst-class:: classref-section-separator -->
 

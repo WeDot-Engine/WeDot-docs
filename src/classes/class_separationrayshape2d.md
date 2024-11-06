@@ -19,8 +19,8 @@ A 2D ray shape, intended for use in physics. Usually used to provide a shape for
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`length`](#class_separationrayshape2d_property_length)                 | ``20.0``  |
-| [`bool`](class_bool.md)   | [`slide_on_slope`](#class_separationrayshape2d_property_slide_on_slope) | ``false`` |
+| [`float`](class_float.md) | [`length`](class_separationrayshape2d.md#class_separationrayshape2d_property_length)                 | ``20.0``  |
+| [`bool`](class_bool.md)   | [`slide_on_slope`](class_separationrayshape2d.md#class_separationrayshape2d_property_slide_on_slope) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -9,29 +9,29 @@
 
 **继承：** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Provides parameters for [`PhysicsDirectSpaceState2D.intersect_ray`](#class_physicsdirectspacestate2d_method_intersect_ray).
+Provides parameters for [`PhysicsDirectSpaceState2D.intersect_ray`](class_physicsdirectspacestate2d.md#class_physicsdirectspacestate2d_method_intersect_ray).
 
 ## 描述
 
-By changing various properties of this object, such as the ray position, you can configure the parameters for [`PhysicsDirectSpaceState2D.intersect_ray`](#class_physicsdirectspacestate2d_method_intersect_ray).
+By changing various properties of this object, such as the ray position, you can configure the parameters for [`PhysicsDirectSpaceState2D.intersect_ray`](class_physicsdirectspacestate2d.md#class_physicsdirectspacestate2d_method_intersect_ray).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                       | [`collide_with_areas`](#class_physicsrayqueryparameters2d_property_collide_with_areas)   | ``false``         |
-| [`bool`](class_bool.md)                       | [`collide_with_bodies`](#class_physicsrayqueryparameters2d_property_collide_with_bodies) | ``true``          |
-| [`int`](class_int.md)                         | [`collision_mask`](#class_physicsrayqueryparameters2d_property_collision_mask)           | ``4294967295``    |
-| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude`](#class_physicsrayqueryparameters2d_property_exclude)                         | ``[]``            |
-| [`Vector2`](class_vector2.md)                 | [`from`](#class_physicsrayqueryparameters2d_property_from)                               | ``Vector2(0, 0)`` |
-| [`bool`](class_bool.md)                       | [`hit_from_inside`](#class_physicsrayqueryparameters2d_property_hit_from_inside)         | ``false``         |
-| [`Vector2`](class_vector2.md)                 | [`to`](#class_physicsrayqueryparameters2d_property_to)                                   | ``Vector2(0, 0)`` |
+| [`bool`](class_bool.md)                       | [`collide_with_areas`](class_physicsrayqueryparameters2d.md#class_physicsrayqueryparameters2d_property_collide_with_areas)   | ``false``         |
+| [`bool`](class_bool.md)                       | [`collide_with_bodies`](class_physicsrayqueryparameters2d.md#class_physicsrayqueryparameters2d_property_collide_with_bodies) | ``true``          |
+| [`int`](class_int.md)                         | [`collision_mask`](class_physicsrayqueryparameters2d.md#class_physicsrayqueryparameters2d_property_collision_mask)           | ``4294967295``    |
+| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude`](class_physicsrayqueryparameters2d.md#class_physicsrayqueryparameters2d_property_exclude)                         | ``[]``            |
+| [`Vector2`](class_vector2.md)                 | [`from`](class_physicsrayqueryparameters2d.md#class_physicsrayqueryparameters2d_property_from)                               | ``Vector2(0, 0)`` |
+| [`bool`](class_bool.md)                       | [`hit_from_inside`](class_physicsrayqueryparameters2d.md#class_physicsrayqueryparameters2d_property_hit_from_inside)         | ``false``         |
+| [`Vector2`](class_vector2.md)                 | [`to`](class_physicsrayqueryparameters2d.md#class_physicsrayqueryparameters2d_property_to)                                   | ``Vector2(0, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PhysicsRayQueryParameters2D`](class_physicsrayqueryparameters2d.md) | [`create`](#class_physicsrayqueryparameters2d_method_create) ( from: [`Vector2`](class_vector2.md), to: [`Vector2`](class_vector2.md), collision_mask: [`int`](class_int.md) = 4294967295, exclude: [Array](class_array.md) [`RID`](class_rid.md) = [] ) static[^static] |
+| [`PhysicsRayQueryParameters2D`](class_physicsrayqueryparameters2d.md) | [`create`](class_physicsrayqueryparameters2d.md#class_physicsrayqueryparameters2d_method_create) ( from: [`Vector2`](class_vector2.md), to: [`Vector2`](class_vector2.md), collision_mask: [`int`](class_int.md) = 4294967295, exclude: [Array](class_array.md) [`RID`](class_rid.md) = [] ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -85,7 +85,7 @@ The physics layers the query will detect (as a bitmask). By default, all collisi
 - `void` **set_exclude** ( value: [Array](class_array.md) [`RID`](class_rid.md) )
 - [Array](class_array.md) [`RID`](class_rid.md) **get_exclude** ( )
 
-The list of object [`RID`](class_rid.md) s that will be excluded from collisions. Use [`CollisionObject2D.get_rid`](#class_collisionobject2d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject2D`](class_collisionobject2d.md)-derived node.
+The list of object [`RID`](class_rid.md) s that will be excluded from collisions. Use [`CollisionObject2D.get_rid`](class_collisionobject2d.md#class_collisionobject2d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject2D`](class_collisionobject2d.md)-derived node.
 
  **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then assign it to the property again.
 

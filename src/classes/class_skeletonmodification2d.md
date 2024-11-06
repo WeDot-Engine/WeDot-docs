@@ -25,22 +25,22 @@ This is used to provide Godot with a flexible and powerful Inverse Kinematics so
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`enabled`](#class_skeletonmodification2d_property_enabled)               | ``true`` |
-| [`int`](class_int.md)   | [`execution_mode`](#class_skeletonmodification2d_property_execution_mode) | ``0``    |
+| [`bool`](class_bool.md) | [`enabled`](class_skeletonmodification2d.md#class_skeletonmodification2d_property_enabled)               | ``true`` |
+| [`int`](class_int.md)   | [`execution_mode`](class_skeletonmodification2d.md#class_skeletonmodification2d_property_execution_mode) | ``0``    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                                | [`_draw_editor_gizmo`](#class_skeletonmodification2d_private_method__draw_editor_gizmo) ( ) virtual[^virtual]                                                                                             |
-| `void`                                                                | [`_execute`](#class_skeletonmodification2d_private_method__execute) ( delta: [`float`](class_float.md) ) virtual[^virtual]                                                                                |
-| `void`                                                                | [`_setup_modification`](#class_skeletonmodification2d_private_method__setup_modification) ( modification_stack: [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) ) virtual[^virtual] |
-| [`float`](class_float.md)                                             | [`clamp_angle`](#class_skeletonmodification2d_method_clamp_angle) ( angle: [`float`](class_float.md), min: [`float`](class_float.md), max: [`float`](class_float.md), invert: [`bool`](class_bool.md) )   |
-| [`bool`](class_bool.md)                                               | [`get_editor_draw_gizmo`](#class_skeletonmodification2d_method_get_editor_draw_gizmo) ( ) const[^const]                                                                                                   |
-| [`bool`](class_bool.md)                                               | [`get_is_setup`](#class_skeletonmodification2d_method_get_is_setup) ( ) const[^const]                                                                                                                     |
-| [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) | [`get_modification_stack`](#class_skeletonmodification2d_method_get_modification_stack) ( )                                                                                                               |
-| `void`                                                                | [`set_editor_draw_gizmo`](#class_skeletonmodification2d_method_set_editor_draw_gizmo) ( draw_gizmo: [`bool`](class_bool.md) )                                                                             |
-| `void`                                                                | [`set_is_setup`](#class_skeletonmodification2d_method_set_is_setup) ( is_setup: [`bool`](class_bool.md) )                                                                                                 |
+| `void`                                                                | [`_draw_editor_gizmo`](class_skeletonmodification2d.md#class_skeletonmodification2d_private_method__draw_editor_gizmo) ( ) virtual[^virtual]                                                                                             |
+| `void`                                                                | [`_execute`](class_skeletonmodification2d.md#class_skeletonmodification2d_private_method__execute) ( delta: [`float`](class_float.md) ) virtual[^virtual]                                                                                |
+| `void`                                                                | [`_setup_modification`](class_skeletonmodification2d.md#class_skeletonmodification2d_private_method__setup_modification) ( modification_stack: [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) ) virtual[^virtual] |
+| [`float`](class_float.md)                                             | [`clamp_angle`](class_skeletonmodification2d.md#class_skeletonmodification2d_method_clamp_angle) ( angle: [`float`](class_float.md), min: [`float`](class_float.md), max: [`float`](class_float.md), invert: [`bool`](class_bool.md) )   |
+| [`bool`](class_bool.md)                                               | [`get_editor_draw_gizmo`](class_skeletonmodification2d.md#class_skeletonmodification2d_method_get_editor_draw_gizmo) ( ) const[^const]                                                                                                   |
+| [`bool`](class_bool.md)                                               | [`get_is_setup`](class_skeletonmodification2d.md#class_skeletonmodification2d_method_get_is_setup) ( ) const[^const]                                                                                                                     |
+| [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) | [`get_modification_stack`](class_skeletonmodification2d.md#class_skeletonmodification2d_method_get_modification_stack) ( )                                                                                                               |
+| `void`                                                                | [`set_editor_draw_gizmo`](class_skeletonmodification2d.md#class_skeletonmodification2d_method_set_editor_draw_gizmo) ( draw_gizmo: [`bool`](class_bool.md) )                                                                             |
+| `void`                                                                | [`set_is_setup`](class_skeletonmodification2d.md#class_skeletonmodification2d_method_set_is_setup) ( is_setup: [`bool`](class_bool.md) )                                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -55,7 +55,7 @@ This is used to provide Godot with a flexible and powerful Inverse Kinematics so
 - `void` **set_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_enabled** ( )
 
-If `true`, the modification's [`_execute`](#class_skeletonmodification2d_private_method__execute) function will be called by the [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md).
+If `true`, the modification's [`_execute`](class_skeletonmodification2d.md#class_skeletonmodification2d_private_method__execute) function will be called by the [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -82,7 +82,7 @@ The execution mode for the modification. This tells the modification stack when 
 
 Used for drawing **editor-only** modification gizmos. This function will only be called in the Godot editor and can be overridden to draw custom gizmos.
 
- **Note:** You will need to use the Skeleton2D from [`SkeletonModificationStack2D.get_skeleton`](#class_skeletonmodificationstack2d_method_get_skeleton) and it's draw functions, as the **SkeletonModification2D** resource cannot draw on its own.
+ **Note:** You will need to use the Skeleton2D from [`SkeletonModificationStack2D.get_skeleton`](class_skeletonmodificationstack2d.md#class_skeletonmodificationstack2d_method_get_skeleton) and it's draw functions, as the **SkeletonModification2D** resource cannot draw on its own.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -122,7 +122,7 @@ Takes an angle and clamps it so it is within the passed-in `min` and `max` range
 
 [`bool`](class_bool.md) **get_editor_draw_gizmo** ( ) const[^const]<div id="class_skeletonmodification2d_method_get_editor_draw_gizmo"></div>
 
-Returns whether this modification will call [`_draw_editor_gizmo`](#class_skeletonmodification2d_private_method__draw_editor_gizmo) in the Godot editor to draw modification-specific gizmos.
+Returns whether this modification will call [`_draw_editor_gizmo`](class_skeletonmodification2d.md#class_skeletonmodification2d_private_method__draw_editor_gizmo) in the Godot editor to draw modification-specific gizmos.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,7 +152,7 @@ Returns the [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md
 
 `void` **set_editor_draw_gizmo** ( draw_gizmo: [`bool`](class_bool.md) )<div id="class_skeletonmodification2d_method_set_editor_draw_gizmo"></div>
 
-Sets whether this modification will call [`_draw_editor_gizmo`](#class_skeletonmodification2d_private_method__draw_editor_gizmo) in the Godot editor to draw modification-specific gizmos.
+Sets whether this modification will call [`_draw_editor_gizmo`](class_skeletonmodification2d.md#class_skeletonmodification2d_private_method__draw_editor_gizmo) in the Godot editor to draw modification-specific gizmos.
 
 <!-- rst-class:: classref-item-separator -->
 

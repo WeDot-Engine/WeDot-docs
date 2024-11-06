@@ -63,54 +63,54 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 |||
 |:-:|:--|
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_button_property_alignment)                             | ``1``     |
-| [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](#class_button_property_autowrap_mode)                     | ``0``     |
-| [`bool`](class_bool.md)                                       | [`clip_text`](#class_button_property_clip_text)                             | ``false`` |
-| [`bool`](class_bool.md)                                       | [`expand_icon`](#class_button_property_expand_icon)                         | ``false`` |
-| [`bool`](class_bool.md)                                       | [`flat`](#class_button_property_flat)                                       | ``false`` |
-| [`Texture2D`](class_texture2d.md)                             | [`icon`](#class_button_property_icon)                                       |           |
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`icon_alignment`](#class_button_property_icon_alignment)                   | ``0``     |
-| [`String`](class_string.md)                                   | [`language`](#class_button_property_language)                               | ``""``    |
-| [`String`](class_string.md)                                   | [`text`](#class_button_property_text)                                       | ``""``    |
-| [TextDirection](#enum_control_textdirection)                  | [`text_direction`](#class_button_property_text_direction)                   | ``0``     |
-| [OverrunBehavior](#enum_textserver_overrunbehavior)           | [`text_overrun_behavior`](#class_button_property_text_overrun_behavior)     | ``0``     |
-| [VerticalAlignment](#enum_@globalscope_verticalalignment)     | [`vertical_icon_alignment`](#class_button_property_vertical_icon_alignment) | ``1``     |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](class_button.md#class_button_property_alignment)                             | ``1``     |
+| [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](class_button.md#class_button_property_autowrap_mode)                     | ``0``     |
+| [`bool`](class_bool.md)                                       | [`clip_text`](class_button.md#class_button_property_clip_text)                             | ``false`` |
+| [`bool`](class_bool.md)                                       | [`expand_icon`](class_button.md#class_button_property_expand_icon)                         | ``false`` |
+| [`bool`](class_bool.md)                                       | [`flat`](class_button.md#class_button_property_flat)                                       | ``false`` |
+| [`Texture2D`](class_texture2d.md)                             | [`icon`](class_button.md#class_button_property_icon)                                       |           |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`icon_alignment`](class_button.md#class_button_property_icon_alignment)                   | ``0``     |
+| [`String`](class_string.md)                                   | [`language`](class_button.md#class_button_property_language)                               | ``""``    |
+| [`String`](class_string.md)                                   | [`text`](class_button.md#class_button_property_text)                                       | ``""``    |
+| [TextDirection](#enum_control_textdirection)                  | [`text_direction`](class_button.md#class_button_property_text_direction)                   | ``0``     |
+| [OverrunBehavior](#enum_textserver_overrunbehavior)           | [`text_overrun_behavior`](class_button.md#class_button_property_text_overrun_behavior)     | ``0``     |
+| [VerticalAlignment](#enum_@globalscope_verticalalignment)     | [`vertical_icon_alignment`](class_button.md#class_button_property_vertical_icon_alignment) | ``1``     |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)         | [`font_color`](#class_button_theme_color_font_color)                                  | ``Color(0.875, 0.875, 0.875, 1)``   |
-| [`Color`](class_color.md)         | [`font_disabled_color`](#class_button_theme_color_font_disabled_color)                | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-| [`Color`](class_color.md)         | [`font_focus_color`](#class_button_theme_color_font_focus_color)                      | ``Color(0.95, 0.95, 0.95, 1)``      |
-| [`Color`](class_color.md)         | [`font_hover_color`](#class_button_theme_color_font_hover_color)                      | ``Color(0.95, 0.95, 0.95, 1)``      |
-| [`Color`](class_color.md)         | [`font_hover_pressed_color`](#class_button_theme_color_font_hover_pressed_color)      | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`font_outline_color`](#class_button_theme_color_font_outline_color)                  | ``Color(0, 0, 0, 1)``               |
-| [`Color`](class_color.md)         | [`font_pressed_color`](#class_button_theme_color_font_pressed_color)                  | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`icon_disabled_color`](#class_button_theme_color_icon_disabled_color)                | ``Color(1, 1, 1, 0.4)``             |
-| [`Color`](class_color.md)         | [`icon_focus_color`](#class_button_theme_color_icon_focus_color)                      | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`icon_hover_color`](#class_button_theme_color_icon_hover_color)                      | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`icon_hover_pressed_color`](#class_button_theme_color_icon_hover_pressed_color)      | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`icon_normal_color`](#class_button_theme_color_icon_normal_color)                    | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`icon_pressed_color`](#class_button_theme_color_icon_pressed_color)                  | ``Color(1, 1, 1, 1)``               |
-| [`int`](class_int.md)             | [`align_to_largest_stylebox`](#class_button_theme_constant_align_to_largest_stylebox) | ``0``                               |
-| [`int`](class_int.md)             | [`h_separation`](#class_button_theme_constant_h_separation)                           | ``4``                               |
-| [`int`](class_int.md)             | [`icon_max_width`](#class_button_theme_constant_icon_max_width)                       | ``0``                               |
-| [`int`](class_int.md)             | [`outline_size`](#class_button_theme_constant_outline_size)                           | ``0``                               |
-| [`Font`](class_font.md)           | [`font`](#class_button_theme_font_font)                                               |                                     |
-| [`int`](class_int.md)             | [`font_size`](#class_button_theme_font_size_font_size)                                |                                     |
-| [`Texture2D`](class_texture2d.md) | [`icon`](#class_button_theme_icon_icon)                                               |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`disabled`](#class_button_theme_style_disabled)                                      |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`disabled_mirrored`](#class_button_theme_style_disabled_mirrored)                    |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`focus`](#class_button_theme_style_focus)                                            |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`hover`](#class_button_theme_style_hover)                                            |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`hover_mirrored`](#class_button_theme_style_hover_mirrored)                          |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`hover_pressed`](#class_button_theme_style_hover_pressed)                            |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`hover_pressed_mirrored`](#class_button_theme_style_hover_pressed_mirrored)          |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`normal`](#class_button_theme_style_normal)                                          |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`normal_mirrored`](#class_button_theme_style_normal_mirrored)                        |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`pressed`](#class_button_theme_style_pressed)                                        |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`pressed_mirrored`](#class_button_theme_style_pressed_mirrored)                      |                                     |
+| [`Color`](class_color.md)         | [`font_color`](class_button.md#class_button_theme_color_font_color)                                  | ``Color(0.875, 0.875, 0.875, 1)``   |
+| [`Color`](class_color.md)         | [`font_disabled_color`](class_button.md#class_button_theme_color_font_disabled_color)                | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+| [`Color`](class_color.md)         | [`font_focus_color`](class_button.md#class_button_theme_color_font_focus_color)                      | ``Color(0.95, 0.95, 0.95, 1)``      |
+| [`Color`](class_color.md)         | [`font_hover_color`](class_button.md#class_button_theme_color_font_hover_color)                      | ``Color(0.95, 0.95, 0.95, 1)``      |
+| [`Color`](class_color.md)         | [`font_hover_pressed_color`](class_button.md#class_button_theme_color_font_hover_pressed_color)      | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`font_outline_color`](class_button.md#class_button_theme_color_font_outline_color)                  | ``Color(0, 0, 0, 1)``               |
+| [`Color`](class_color.md)         | [`font_pressed_color`](class_button.md#class_button_theme_color_font_pressed_color)                  | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`icon_disabled_color`](class_button.md#class_button_theme_color_icon_disabled_color)                | ``Color(1, 1, 1, 0.4)``             |
+| [`Color`](class_color.md)         | [`icon_focus_color`](class_button.md#class_button_theme_color_icon_focus_color)                      | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`icon_hover_color`](class_button.md#class_button_theme_color_icon_hover_color)                      | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`icon_hover_pressed_color`](class_button.md#class_button_theme_color_icon_hover_pressed_color)      | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`icon_normal_color`](class_button.md#class_button_theme_color_icon_normal_color)                    | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`icon_pressed_color`](class_button.md#class_button_theme_color_icon_pressed_color)                  | ``Color(1, 1, 1, 1)``               |
+| [`int`](class_int.md)             | [`align_to_largest_stylebox`](class_button.md#class_button_theme_constant_align_to_largest_stylebox) | ``0``                               |
+| [`int`](class_int.md)             | [`h_separation`](class_button.md#class_button_theme_constant_h_separation)                           | ``4``                               |
+| [`int`](class_int.md)             | [`icon_max_width`](class_button.md#class_button_theme_constant_icon_max_width)                       | ``0``                               |
+| [`int`](class_int.md)             | [`outline_size`](class_button.md#class_button_theme_constant_outline_size)                           | ``0``                               |
+| [`Font`](class_font.md)           | [`font`](class_button.md#class_button_theme_font_font)                                               |                                     |
+| [`int`](class_int.md)             | [`font_size`](class_button.md#class_button_theme_font_size_font_size)                                |                                     |
+| [`Texture2D`](class_texture2d.md) | [`icon`](class_button.md#class_button_theme_icon_icon)                                               |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`disabled`](class_button.md#class_button_theme_style_disabled)                                      |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`disabled_mirrored`](class_button.md#class_button_theme_style_disabled_mirrored)                    |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`focus`](class_button.md#class_button_theme_style_focus)                                            |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`hover`](class_button.md#class_button_theme_style_hover)                                            |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`hover_mirrored`](class_button.md#class_button_theme_style_hover_mirrored)                          |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`hover_pressed`](class_button.md#class_button_theme_style_hover_pressed)                            |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`hover_pressed_mirrored`](class_button.md#class_button_theme_style_hover_pressed_mirrored)          |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`normal`](class_button.md#class_button_theme_style_normal)                                          |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`normal_mirrored`](class_button.md#class_button_theme_style_normal_mirrored)                        |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`pressed`](class_button.md#class_button_theme_style_pressed)                                        |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`pressed_mirrored`](class_button.md#class_button_theme_style_pressed_mirrored)                      |                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -138,7 +138,7 @@ Text alignment policy for the button's text, use one of the [HorizontalAlignment
 - `void` **set_autowrap_mode** ( value: [AutowrapMode](#enum_textserver_autowrapmode) )
 - [AutowrapMode](#enum_textserver_autowrapmode) **get_autowrap_mode** ( )
 
-If set to something other than [`TextServer.AUTOWRAP_OFF`](#class_textserver_constant_autowrap_off), the text gets wrapped inside the node's bounding rectangle.
+If set to something other than [`TextServer.AUTOWRAP_OFF`](class_textserver.md#class_textserver_constant_autowrap_off), the text gets wrapped inside the node's bounding rectangle.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -164,7 +164,7 @@ When this property is enabled, text that is too large to fit the button is clipp
 - `void` **set_expand_icon** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_expand_icon** ( )
 
-When enabled, the button's icon will expand/shrink to fit the button's size while keeping its aspect. See also [`icon_max_width`](#class_button_theme_constant_icon_max_width).
+When enabled, the button's icon will expand/shrink to fit the button's size while keeping its aspect. See also [`icon_max_width`](class_button.md#class_button_theme_constant_icon_max_width).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -192,7 +192,7 @@ Flat buttons don't display decoration.
 
 Button's icon, if text is present the icon will be placed before the text.
 
-To edit margin and spacing of the icon, use [`h_separation`](#class_button_theme_constant_h_separation) theme property and `content_margin_*` properties of the used [`StyleBox`](class_stylebox.md) es.
+To edit margin and spacing of the icon, use [`h_separation`](class_button.md#class_button_theme_constant_h_separation) theme property and `content_margin_*` properties of the used [`StyleBox`](class_stylebox.md) es.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -432,7 +432,7 @@ The horizontal space between **Button**'s icon and text. Negative values will be
 
 [`int`](class_int.md) **icon_max_width** = ``0`` <div id="class_button_theme_constant_icon_max_width"></div>
 
-The maximum allowed width of the **Button**'s icon. This limit is applied on top of the default size of the icon, or its expanded size if [`expand_icon`](#class_button_property_expand_icon) is `true`. The height is adjusted according to the icon's ratio. If the button has additional icons (e.g. [`CheckBox`](class_checkbox.md)), they will also be limited.
+The maximum allowed width of the **Button**'s icon. This limit is applied on top of the default size of the icon, or its expanded size if [`expand_icon`](class_button.md#class_button_property_expand_icon) is `true`. The height is adjusted according to the icon's ratio. If the button has additional icons (e.g. [`CheckBox`](class_checkbox.md)), they will also be limited.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -444,7 +444,7 @@ The maximum allowed width of the **Button**'s icon. This limit is applied on top
 
 The size of the text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_button_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_button.md#class_button_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -474,7 +474,7 @@ Font size of the **Button**'s text.
 
 [`Texture2D`](class_texture2d.md) **icon** <div id="class_button_theme_icon_icon"></div>
 
-Default icon for the **Button**. Appears only if [`icon`](#class_button_property_icon) is not assigned.
+Default icon for the **Button**. Appears only if [`icon`](class_button.md#class_button_property_icon) is not assigned.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -504,7 +504,7 @@ Default icon for the **Button**. Appears only if [`icon`](#class_button_property
 
 [`StyleBox`](class_stylebox.md) **focus** <div id="class_button_theme_style_focus"></div>
 
-[`StyleBox`](class_stylebox.md) used when the **Button** is focused. The [`focus`](#class_button_theme_style_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md), so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+[`StyleBox`](class_stylebox.md) used when the **Button** is focused. The [`focus`](class_button.md#class_button_theme_style_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md), so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
 
 <!-- rst-class:: classref-item-separator -->
 

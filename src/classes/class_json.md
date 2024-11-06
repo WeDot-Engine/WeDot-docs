@@ -15,9 +15,9 @@ Helper class for creating and parsing JSON data.
 
 The **JSON** class enables all data types to be converted to and from a JSON string. This is useful for serializing data, e.g. to save to a file or send over the network.
 
- [`stringify`](#class_json_method_stringify) is used to convert any data type into a JSON string.
+ [`stringify`](class_json.md#class_json_method_stringify) is used to convert any data type into a JSON string.
 
- [`parse`](#class_json_method_parse) is used to convert any existing JSON data into a [`Variant`](class_variant.md) that can be used within Godot. If successfully parsed, use [`data`](#class_json_property_data) to retrieve the [`Variant`](class_variant.md), and use `typeof` to check if the Variant's type is what you expect. JSON Objects are converted into a [`Dictionary`](class_dictionary.md), but JSON data can be used to store [`Array`](class_array.md) s, numbers, [`String`](class_string.md) s and even just a boolean.
+ [`parse`](class_json.md#class_json_method_parse) is used to convert any existing JSON data into a [`Variant`](class_variant.md) that can be used within Godot. If successfully parsed, use [`data`](class_json.md#class_json_property_data) to retrieve the [`Variant`](class_variant.md), and use `typeof` to check if the Variant's type is what you expect. JSON Objects are converted into a [`Dictionary`](class_dictionary.md), but JSON data can be used to store [`Array`](class_array.md) s, numbers, [`String`](class_string.md) s and even just a boolean.
 
  **Example** 
 
@@ -40,7 +40,7 @@ The **JSON** class enables all data types to be converted to and from a JSON str
         print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
 ```
 
-Alternatively, you can parse strings using the static [`parse_string`](#class_json_method_parse_string) method, but it doesn't handle errors.
+Alternatively, you can parse strings using the static [`parse_string`](class_json.md#class_json_method_parse_string) method, but it doesn't handle errors.
 
 ```
 
@@ -53,7 +53,7 @@ Alternatively, you can parse strings using the static [`parse_string`](#class_js
 
 - New line and tab characters are accepted in string literals, and are treated like their corresponding escape sequences `\n` and `\t`.
 
-- Numbers are parsed using [`String.to_float`](#class_string_method_to_float) which is generally more lax than the JSON specification.
+- Numbers are parsed using [`String.to_float`](class_string.md#class_string_method_to_float) which is generally more lax than the JSON specification.
 
 - Certain errors, such as invalid Unicode sequences, do not cause a parser error. Instead, the string is cleansed and an error is logged to the console.
 
@@ -65,18 +65,18 @@ Alternatively, you can parse strings using the static [`parse_string`](#class_js
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`data`](#class_json_property_data) | ``null`` |
+| [`Variant`](class_variant.md) | [`data`](class_json.md#class_json_property_data) | ``null`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`get_error_line`](#class_json_method_get_error_line) ( ) const[^const]                                                                                                                                                                   |
-| [`String`](class_string.md)       | [`get_error_message`](#class_json_method_get_error_message) ( ) const[^const]                                                                                                                                                             |
-| [`String`](class_string.md)       | [`get_parsed_text`](#class_json_method_get_parsed_text) ( ) const[^const]                                                                                                                                                                 |
-| [Error](#enum_@globalscope_error) | [`parse`](#class_json_method_parse) ( json_text: [`String`](class_string.md), keep_text: [`bool`](class_bool.md) = false )                                                                                                                |
-| [`Variant`](class_variant.md)     | [`parse_string`](#class_json_method_parse_string) ( json_string: [`String`](class_string.md) ) static[^static]                                                                                                                            |
-| [`String`](class_string.md)       | [`stringify`](#class_json_method_stringify) ( data: [`Variant`](class_variant.md), indent: [`String`](class_string.md) = "", sort_keys: [`bool`](class_bool.md) = true, full_precision: [`bool`](class_bool.md) = false ) static[^static] |
+| [`int`](class_int.md)             | [`get_error_line`](class_json.md#class_json_method_get_error_line) ( ) const[^const]                                                                                                                                                                   |
+| [`String`](class_string.md)       | [`get_error_message`](class_json.md#class_json_method_get_error_message) ( ) const[^const]                                                                                                                                                             |
+| [`String`](class_string.md)       | [`get_parsed_text`](class_json.md#class_json_method_get_parsed_text) ( ) const[^const]                                                                                                                                                                 |
+| [Error](#enum_@globalscope_error) | [`parse`](class_json.md#class_json_method_parse) ( json_text: [`String`](class_string.md), keep_text: [`bool`](class_bool.md) = false )                                                                                                                |
+| [`Variant`](class_variant.md)     | [`parse_string`](class_json.md#class_json_method_parse_string) ( json_string: [`String`](class_string.md) ) static[^static]                                                                                                                            |
+| [`String`](class_string.md)       | [`stringify`](class_json.md#class_json_method_stringify) ( data: [`Variant`](class_variant.md), indent: [`String`](class_string.md) = "", sort_keys: [`bool`](class_bool.md) = true, full_precision: [`bool`](class_bool.md) = false ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -103,7 +103,7 @@ Contains the parsed JSON data in [`Variant`](class_variant.md) form.
 
 [`int`](class_int.md) **get_error_line** ( ) const[^const]<div id="class_json_method_get_error_line"></div>
 
-Returns `0` if the last call to [`parse`](#class_json_method_parse) was successful, or the line number where the parse failed.
+Returns `0` if the last call to [`parse`](class_json.md#class_json_method_parse) was successful, or the line number where the parse failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -113,7 +113,7 @@ Returns `0` if the last call to [`parse`](#class_json_method_parse) was successf
 
 [`String`](class_string.md) **get_error_message** ( ) const[^const]<div id="class_json_method_get_error_message"></div>
 
-Returns an empty string if the last call to [`parse`](#class_json_method_parse) was successful, or the error message if it failed.
+Returns an empty string if the last call to [`parse`](class_json.md#class_json_method_parse) was successful, or the error message if it failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -123,7 +123,7 @@ Returns an empty string if the last call to [`parse`](#class_json_method_parse) 
 
 [`String`](class_string.md) **get_parsed_text** ( ) const[^const]<div id="class_json_method_get_parsed_text"></div>
 
-Return the text parsed by [`parse`](#class_json_method_parse) (requires passing `keep_text` to [`parse`](#class_json_method_parse)).
+Return the text parsed by [`parse`](class_json.md#class_json_method_parse) (requires passing `keep_text` to [`parse`](class_json.md#class_json_method_parse)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -135,11 +135,11 @@ Return the text parsed by [`parse`](#class_json_method_parse) (requires passing 
 
 Attempts to parse the `json_text` provided.
 
-Returns an [Error](#enum_@globalscope_error). If the parse was successful, it returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) and the result can be retrieved using [`data`](#class_json_property_data). If unsuccessful, use [`get_error_line`](#class_json_method_get_error_line) and [`get_error_message`](#class_json_method_get_error_message) to identify the source of the failure.
+Returns an [Error](#enum_@globalscope_error). If the parse was successful, it returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) and the result can be retrieved using [`data`](class_json.md#class_json_property_data). If unsuccessful, use [`get_error_line`](class_json.md#class_json_method_get_error_line) and [`get_error_message`](class_json.md#class_json_method_get_error_message) to identify the source of the failure.
 
-Non-static variant of [`parse_string`](#class_json_method_parse_string), if you want custom error handling.
+Non-static variant of [`parse_string`](class_json.md#class_json_method_parse_string), if you want custom error handling.
 
-The optional `keep_text` argument instructs the parser to keep a copy of the original text. This text can be obtained later by using the [`get_parsed_text`](#class_json_method_get_parsed_text) function and is used when saving the resource (instead of generating new text from [`data`](#class_json_property_data)).
+The optional `keep_text` argument instructs the parser to keep a copy of the original text. This text can be obtained later by using the [`get_parsed_text`](class_json.md#class_json_method_get_parsed_text) function and is used when saving the resource (instead of generating new text from [`data`](class_json.md#class_json_property_data)).
 
 <!-- rst-class:: classref-item-separator -->
 

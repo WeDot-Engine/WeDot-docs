@@ -17,28 +17,28 @@ Encapsulates a [`ColorPicker`](class_colorpicker.md), making it accessible by pr
 
 See also [`BaseButton`](class_basebutton.md) which contains common properties and methods associated with this node.
 
- **Note:** By default, the button may not be wide enough for the color preview swatch to be visible. Make sure to set [`Control.custom_minimum_size`](#class_control_property_custom_minimum_size) to a big enough value to give the button enough space.
+ **Note:** By default, the button may not be wide enough for the color preview swatch to be visible. Make sure to set [`Control.custom_minimum_size`](class_control.md#class_control_property_custom_minimum_size) to a big enough value to give the button enough space.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md) | [`color`](#class_colorpickerbutton_property_color)           | ``Color(0, 0, 0, 1)``                                                       |
-| [`bool`](class_bool.md)   | [`edit_alpha`](#class_colorpickerbutton_property_edit_alpha) | ``true``                                                                    |
-| [`bool`](class_bool.md)   | toggle_mode                                                  | ``true`` (overrides [`BaseButton`](#class_basebutton_property_toggle_mode)) |
+| [`Color`](class_color.md) | [`color`](class_colorpickerbutton.md#class_colorpickerbutton_property_color)           | ``Color(0, 0, 0, 1)``                                                                          |
+| [`bool`](class_bool.md)   | [`edit_alpha`](class_colorpickerbutton.md#class_colorpickerbutton_property_edit_alpha) | ``true``                                                                                       |
+| [`bool`](class_bool.md)   | toggle_mode                                                                            | ``true`` (overrides [`BaseButton`](class_basebutton.md#class_basebutton_property_toggle_mode)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`ColorPicker`](class_colorpicker.md) | [`get_picker`](#class_colorpickerbutton_method_get_picker) ( ) |
-| [`PopupPanel`](class_popuppanel.md)   | [`get_popup`](#class_colorpickerbutton_method_get_popup) ( )   |
+| [`ColorPicker`](class_colorpicker.md) | [`get_picker`](class_colorpickerbutton.md#class_colorpickerbutton_method_get_picker) ( ) |
+| [`PopupPanel`](class_popuppanel.md)   | [`get_popup`](class_colorpickerbutton.md#class_colorpickerbutton_method_get_popup) ( )   |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`bg`](#class_colorpickerbutton_theme_icon_bg) |
+| [`Texture2D`](class_texture2d.md) | [`bg`](class_colorpickerbutton.md#class_colorpickerbutton_theme_icon_bg) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -112,7 +112,7 @@ If `true`, the alpha channel in the displayed [`ColorPicker`](class_colorpicker.
 
 Returns the [`ColorPicker`](class_colorpicker.md) that this node toggles.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,7 +124,7 @@ Returns the [`ColorPicker`](class_colorpicker.md) that this node toggles.
 
 Returns the control's [`PopupPanel`](class_popuppanel.md) which allows you to connect to popup signals. This allows you to handle events when the ColorPicker is shown or hidden.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](#class_window_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](class_window.md#class_window_property_visible) property.
 
 <!-- rst-class:: classref-section-separator -->
 

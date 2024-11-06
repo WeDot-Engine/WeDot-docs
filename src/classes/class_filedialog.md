@@ -13,60 +13,60 @@ A dialog for selecting files or directories in the filesystem.
 
 ## 描述
 
-**FileDialog** is a preset dialog used to choose files and directories in the filesystem. It supports filter masks. **FileDialog** automatically sets its window title according to the [`file_mode`](#class_filedialog_property_file_mode). If you want to use a custom title, disable this by setting [`mode_overrides_title`](#class_filedialog_property_mode_overrides_title) to `false`.
+**FileDialog** is a preset dialog used to choose files and directories in the filesystem. It supports filter masks. **FileDialog** automatically sets its window title according to the [`file_mode`](class_filedialog.md#class_filedialog_property_file_mode). If you want to use a custom title, disable this by setting [`mode_overrides_title`](class_filedialog.md#class_filedialog_property_mode_overrides_title) to `false`.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Access](#enum_filedialog_access)                 | [`access`](#class_filedialog_property_access)                             | ``0``                                                                                  |
-| [`String`](class_string.md)                       | [`current_dir`](#class_filedialog_property_current_dir)                   |                                                                                        |
-| [`String`](class_string.md)                       | [`current_file`](#class_filedialog_property_current_file)                 |                                                                                        |
-| [`String`](class_string.md)                       | [`current_path`](#class_filedialog_property_current_path)                 |                                                                                        |
-| [`bool`](class_bool.md)                           | dialog_hide_on_ok                                                         | ``false`` (overrides [`AcceptDialog`](#class_acceptdialog_property_dialog_hide_on_ok)) |
-| [FileMode](#enum_filedialog_filemode)             | [`file_mode`](#class_filedialog_property_file_mode)                       | ``4``                                                                                  |
-| [`PackedStringArray`](class_packedstringarray.md) | [`filters`](#class_filedialog_property_filters)                           | ``PackedStringArray()``                                                                |
-| [`bool`](class_bool.md)                           | [`mode_overrides_title`](#class_filedialog_property_mode_overrides_title) | ``true``                                                                               |
-| [`int`](class_int.md)                             | [`option_count`](#class_filedialog_property_option_count)                 | ``0``                                                                                  |
-| [`String`](class_string.md)                       | [`root_subfolder`](#class_filedialog_property_root_subfolder)             | ``""``                                                                                 |
-| [`bool`](class_bool.md)                           | [`show_hidden_files`](#class_filedialog_property_show_hidden_files)       | ``false``                                                                              |
-| [`String`](class_string.md)                       | title                                                                     | ``"Save a File"`` (overrides [`Window`](#class_window_property_title))                 |
-| [`bool`](class_bool.md)                           | [`use_native_dialog`](#class_filedialog_property_use_native_dialog)       | ``false``                                                                              |
+| [Access](#enum_filedialog_access)                 | [`access`](class_filedialog.md#class_filedialog_property_access)                             | ``0``                                                                                                       |
+| [`String`](class_string.md)                       | [`current_dir`](class_filedialog.md#class_filedialog_property_current_dir)                   |                                                                                                             |
+| [`String`](class_string.md)                       | [`current_file`](class_filedialog.md#class_filedialog_property_current_file)                 |                                                                                                             |
+| [`String`](class_string.md)                       | [`current_path`](class_filedialog.md#class_filedialog_property_current_path)                 |                                                                                                             |
+| [`bool`](class_bool.md)                           | dialog_hide_on_ok                                                                            | ``false`` (overrides [`AcceptDialog`](class_acceptdialog.md#class_acceptdialog_property_dialog_hide_on_ok)) |
+| [FileMode](#enum_filedialog_filemode)             | [`file_mode`](class_filedialog.md#class_filedialog_property_file_mode)                       | ``4``                                                                                                       |
+| [`PackedStringArray`](class_packedstringarray.md) | [`filters`](class_filedialog.md#class_filedialog_property_filters)                           | ``PackedStringArray()``                                                                                     |
+| [`bool`](class_bool.md)                           | [`mode_overrides_title`](class_filedialog.md#class_filedialog_property_mode_overrides_title) | ``true``                                                                                                    |
+| [`int`](class_int.md)                             | [`option_count`](class_filedialog.md#class_filedialog_property_option_count)                 | ``0``                                                                                                       |
+| [`String`](class_string.md)                       | [`root_subfolder`](class_filedialog.md#class_filedialog_property_root_subfolder)             | ``""``                                                                                                      |
+| [`bool`](class_bool.md)                           | [`show_hidden_files`](class_filedialog.md#class_filedialog_property_show_hidden_files)       | ``false``                                                                                                   |
+| [`String`](class_string.md)                       | title                                                                                        | ``"Save a File"`` (overrides [`Window`](class_window.md#class_window_property_title))                       |
+| [`bool`](class_bool.md)                           | [`use_native_dialog`](class_filedialog.md#class_filedialog_property_use_native_dialog)       | ``false``                                                                                                   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                            | [`add_filter`](#class_filedialog_method_add_filter) ( filter: [`String`](class_string.md), description: [`String`](class_string.md) = "" )                                                       |
-| `void`                                            | [`add_option`](#class_filedialog_method_add_option) ( name: [`String`](class_string.md), values: [`PackedStringArray`](class_packedstringarray.md), default_value_index: [`int`](class_int.md) ) |
-| `void`                                            | [`clear_filters`](#class_filedialog_method_clear_filters) ( )                                                                                                                                    |
-| `void`                                            | [`deselect_all`](#class_filedialog_method_deselect_all) ( )                                                                                                                                      |
-| [`LineEdit`](class_lineedit.md)                   | [`get_line_edit`](#class_filedialog_method_get_line_edit) ( )                                                                                                                                    |
-| [`int`](class_int.md)                             | [`get_option_default`](#class_filedialog_method_get_option_default) ( option: [`int`](class_int.md) ) const[^const]                                                                              |
-| [`String`](class_string.md)                       | [`get_option_name`](#class_filedialog_method_get_option_name) ( option: [`int`](class_int.md) ) const[^const]                                                                                    |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_option_values`](#class_filedialog_method_get_option_values) ( option: [`int`](class_int.md) ) const[^const]                                                                                |
-| [`Dictionary`](class_dictionary.md)               | [`get_selected_options`](#class_filedialog_method_get_selected_options) ( ) const[^const]                                                                                                        |
-| [`VBoxContainer`](class_vboxcontainer.md)         | [`get_vbox`](#class_filedialog_method_get_vbox) ( )                                                                                                                                              |
-| `void`                                            | [`invalidate`](#class_filedialog_method_invalidate) ( )                                                                                                                                          |
-| `void`                                            | [`set_option_default`](#class_filedialog_method_set_option_default) ( option: [`int`](class_int.md), default_value_index: [`int`](class_int.md) )                                                |
-| `void`                                            | [`set_option_name`](#class_filedialog_method_set_option_name) ( option: [`int`](class_int.md), name: [`String`](class_string.md) )                                                               |
-| `void`                                            | [`set_option_values`](#class_filedialog_method_set_option_values) ( option: [`int`](class_int.md), values: [`PackedStringArray`](class_packedstringarray.md) )                                   |
+| `void`                                            | [`add_filter`](class_filedialog.md#class_filedialog_method_add_filter) ( filter: [`String`](class_string.md), description: [`String`](class_string.md) = "" )                                                       |
+| `void`                                            | [`add_option`](class_filedialog.md#class_filedialog_method_add_option) ( name: [`String`](class_string.md), values: [`PackedStringArray`](class_packedstringarray.md), default_value_index: [`int`](class_int.md) ) |
+| `void`                                            | [`clear_filters`](class_filedialog.md#class_filedialog_method_clear_filters) ( )                                                                                                                                    |
+| `void`                                            | [`deselect_all`](class_filedialog.md#class_filedialog_method_deselect_all) ( )                                                                                                                                      |
+| [`LineEdit`](class_lineedit.md)                   | [`get_line_edit`](class_filedialog.md#class_filedialog_method_get_line_edit) ( )                                                                                                                                    |
+| [`int`](class_int.md)                             | [`get_option_default`](class_filedialog.md#class_filedialog_method_get_option_default) ( option: [`int`](class_int.md) ) const[^const]                                                                              |
+| [`String`](class_string.md)                       | [`get_option_name`](class_filedialog.md#class_filedialog_method_get_option_name) ( option: [`int`](class_int.md) ) const[^const]                                                                                    |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_option_values`](class_filedialog.md#class_filedialog_method_get_option_values) ( option: [`int`](class_int.md) ) const[^const]                                                                                |
+| [`Dictionary`](class_dictionary.md)               | [`get_selected_options`](class_filedialog.md#class_filedialog_method_get_selected_options) ( ) const[^const]                                                                                                        |
+| [`VBoxContainer`](class_vboxcontainer.md)         | [`get_vbox`](class_filedialog.md#class_filedialog_method_get_vbox) ( )                                                                                                                                              |
+| `void`                                            | [`invalidate`](class_filedialog.md#class_filedialog_method_invalidate) ( )                                                                                                                                          |
+| `void`                                            | [`set_option_default`](class_filedialog.md#class_filedialog_method_set_option_default) ( option: [`int`](class_int.md), default_value_index: [`int`](class_int.md) )                                                |
+| `void`                                            | [`set_option_name`](class_filedialog.md#class_filedialog_method_set_option_name) ( option: [`int`](class_int.md), name: [`String`](class_string.md) )                                                               |
+| `void`                                            | [`set_option_values`](class_filedialog.md#class_filedialog_method_set_option_values) ( option: [`int`](class_int.md), values: [`PackedStringArray`](class_packedstringarray.md) )                                   |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)         | [`file_disabled_color`](#class_filedialog_theme_color_file_disabled_color) | ``Color(1, 1, 1, 0.25)`` |
-| [`Color`](class_color.md)         | [`file_icon_color`](#class_filedialog_theme_color_file_icon_color)         | ``Color(1, 1, 1, 1)``    |
-| [`Color`](class_color.md)         | [`folder_icon_color`](#class_filedialog_theme_color_folder_icon_color)     | ``Color(1, 1, 1, 1)``    |
-| [`Texture2D`](class_texture2d.md) | [`back_folder`](#class_filedialog_theme_icon_back_folder)                  |                          |
-| [`Texture2D`](class_texture2d.md) | [`create_folder`](#class_filedialog_theme_icon_create_folder)              |                          |
-| [`Texture2D`](class_texture2d.md) | [`file`](#class_filedialog_theme_icon_file)                                |                          |
-| [`Texture2D`](class_texture2d.md) | [`folder`](#class_filedialog_theme_icon_folder)                            |                          |
-| [`Texture2D`](class_texture2d.md) | [`forward_folder`](#class_filedialog_theme_icon_forward_folder)            |                          |
-| [`Texture2D`](class_texture2d.md) | [`parent_folder`](#class_filedialog_theme_icon_parent_folder)              |                          |
-| [`Texture2D`](class_texture2d.md) | [`reload`](#class_filedialog_theme_icon_reload)                            |                          |
-| [`Texture2D`](class_texture2d.md) | [`toggle_hidden`](#class_filedialog_theme_icon_toggle_hidden)              |                          |
+| [`Color`](class_color.md)         | [`file_disabled_color`](class_filedialog.md#class_filedialog_theme_color_file_disabled_color) | ``Color(1, 1, 1, 0.25)`` |
+| [`Color`](class_color.md)         | [`file_icon_color`](class_filedialog.md#class_filedialog_theme_color_file_icon_color)         | ``Color(1, 1, 1, 1)``    |
+| [`Color`](class_color.md)         | [`folder_icon_color`](class_filedialog.md#class_filedialog_theme_color_folder_icon_color)     | ``Color(1, 1, 1, 1)``    |
+| [`Texture2D`](class_texture2d.md) | [`back_folder`](class_filedialog.md#class_filedialog_theme_icon_back_folder)                  |                          |
+| [`Texture2D`](class_texture2d.md) | [`create_folder`](class_filedialog.md#class_filedialog_theme_icon_create_folder)              |                          |
+| [`Texture2D`](class_texture2d.md) | [`file`](class_filedialog.md#class_filedialog_theme_icon_file)                                |                          |
+| [`Texture2D`](class_texture2d.md) | [`folder`](class_filedialog.md#class_filedialog_theme_icon_folder)                            |                          |
+| [`Texture2D`](class_texture2d.md) | [`forward_folder`](class_filedialog.md#class_filedialog_theme_icon_forward_folder)            |                          |
+| [`Texture2D`](class_texture2d.md) | [`parent_folder`](class_filedialog.md#class_filedialog_theme_icon_parent_folder)              |                          |
+| [`Texture2D`](class_texture2d.md) | [`reload`](class_filedialog.md#class_filedialog_theme_icon_reload)                            |                          |
+| [`Texture2D`](class_texture2d.md) | [`toggle_hidden`](class_filedialog.md#class_filedialog_theme_icon_toggle_hidden)              |                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -181,7 +181,7 @@ The dialog allows accessing files on the whole file system.
 
 The file system access scope. See [Access](#enum_filedialog_access) constants.
 
- **Warning:** In Web builds, FileDialog cannot access the host file system. In sandboxed Linux and macOS environments, [`use_native_dialog`](#class_filedialog_property_use_native_dialog) is automatically used to allow limited access to host file system.
+ **Warning:** In Web builds, FileDialog cannot access the host file system. In sandboxed Linux and macOS environments, [`use_native_dialog`](class_filedialog.md#class_filedialog_property_use_native_dialog) is automatically used to allow limited access to host file system.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -263,7 +263,7 @@ The available file type filters. Each filter string in the array should be forma
 - `void` **set_mode_overrides_title** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_mode_overriding_title** ( )
 
-If `true`, changing the [`file_mode`](#class_filedialog_property_file_mode) property will set the window title accordingly (e.g. setting [`file_mode`](#class_filedialog_property_file_mode) to [`FILE_MODE_OPEN_FILE`](#class_filedialog_constant_file_mode_open_file) will change the window title to "Open a File").
+If `true`, changing the [`file_mode`](class_filedialog.md#class_filedialog_property_file_mode) property will set the window title accordingly (e.g. setting [`file_mode`](class_filedialog.md#class_filedialog_property_file_mode) to [`FILE_MODE_OPEN_FILE`](class_filedialog.md#class_filedialog_constant_file_mode_open_file) will change the window title to "Open a File").
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -319,11 +319,11 @@ If `true`, the dialog will show hidden files.
 - `void` **set_use_native_dialog** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_use_native_dialog** ( )
 
-If `true`, [`access`](#class_filedialog_property_access) is set to [`ACCESS_FILESYSTEM`](#class_filedialog_constant_access_filesystem), and it is supported by the current [`DisplayServer`](class_displayserver.md), OS native dialog will be used instead of custom one.
+If `true`, [`access`](class_filedialog.md#class_filedialog_property_access) is set to [`ACCESS_FILESYSTEM`](class_filedialog.md#class_filedialog_constant_access_filesystem), and it is supported by the current [`DisplayServer`](class_displayserver.md), OS native dialog will be used instead of custom one.
 
  **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
 
- **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use [`OS.get_granted_permissions`](#class_os_method_get_granted_permissions) to get a list of saved bookmarks.
+ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use [`OS.get_granted_permissions`](class_os.md#class_os_method_get_granted_permissions) to get a list of saved bookmarks.
 
  **Note:** Native dialogs are isolated from the base process, file dialog properties can't be modified once the dialog is shown.
 
@@ -385,7 +385,7 @@ Clear all currently selected items in the dialog.
 
 Returns the LineEdit for the selected file.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -437,9 +437,9 @@ Returns a [`Dictionary`](class_dictionary.md) with the selected values of the ad
 
 Returns the vertical box container of the dialog, custom controls can be added to it.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
- **Note:** Changes to this node are ignored by native file dialogs, use [`add_option`](#class_filedialog_method_add_option) to add custom elements to the dialog instead.
+ **Note:** Changes to this node are ignored by native file dialogs, use [`add_option`](class_filedialog.md#class_filedialog_method_add_option) to add custom elements to the dialog instead.
 
 <!-- rst-class:: classref-item-separator -->
 

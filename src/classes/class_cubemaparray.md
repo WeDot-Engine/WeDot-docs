@@ -17,7 +17,7 @@ An array of [`Cubemap`](class_cubemap.md) s, stored together and with a single r
 
 The primary benefit of **CubemapArray** s is that they can be accessed in shader code using a single texture reference. In other words, you can pass multiple [`Cubemap`](class_cubemap.md) s into a shader using a single **CubemapArray**. [`Cubemap`](class_cubemap.md) s are allocated in adjacent cache regions on the GPU, which makes **CubemapArray** s the most efficient way to store multiple [`Cubemap`](class_cubemap.md) s.
 
- **Note:** Godot uses **CubemapArray** s internally for many effects, including the [`Sky`](class_sky.md) if you set [`ProjectSettings.rendering/reflections/sky_reflections/texture_array_reflections`](#class_projectsettings_property_rendering/reflections/sky_reflections/texture_array_reflections) to `true`. To create such a texture file yourself, reimport your image files using the import presets of the File System dock.
+ **Note:** Godot uses **CubemapArray** s internally for many effects, including the [`Sky`](class_sky.md) if you set [`ProjectSettings.rendering/reflections/sky_reflections/texture_array_reflections`](class_projectsettings.md#class_projectsettings_property_rendering/reflections/sky_reflections/texture_array_reflections) to `true`. To create such a texture file yourself, reimport your image files using the import presets of the File System dock.
 
  **Note:** **CubemapArray** is not supported in the OpenGL 3 rendering backend.
 
@@ -25,7 +25,7 @@ The primary benefit of **CubemapArray** s is that they can be accessed in shader
 
 |||
 |:-:|:--|
-| [`Resource`](class_resource.md) | [`create_placeholder`](#class_cubemaparray_method_create_placeholder) ( ) const[^const] |
+| [`Resource`](class_resource.md) | [`create_placeholder`](class_cubemaparray.md#class_cubemaparray_method_create_placeholder) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

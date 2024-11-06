@@ -19,14 +19,14 @@ Simulates the sound of acoustic environments such as rooms, concert halls, caver
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`damping`](#class_audioeffectreverb_property_damping)                     | ``0.5``   |
-| [`float`](class_float.md) | [`dry`](#class_audioeffectreverb_property_dry)                             | ``1.0``   |
-| [`float`](class_float.md) | [`hipass`](#class_audioeffectreverb_property_hipass)                       | ``0.0``   |
-| [`float`](class_float.md) | [`predelay_feedback`](#class_audioeffectreverb_property_predelay_feedback) | ``0.4``   |
-| [`float`](class_float.md) | [`predelay_msec`](#class_audioeffectreverb_property_predelay_msec)         | ``150.0`` |
-| [`float`](class_float.md) | [`room_size`](#class_audioeffectreverb_property_room_size)                 | ``0.8``   |
-| [`float`](class_float.md) | [`spread`](#class_audioeffectreverb_property_spread)                       | ``1.0``   |
-| [`float`](class_float.md) | [`wet`](#class_audioeffectreverb_property_wet)                             | ``0.5``   |
+| [`float`](class_float.md) | [`damping`](class_audioeffectreverb.md#class_audioeffectreverb_property_damping)                     | ``0.5``   |
+| [`float`](class_float.md) | [`dry`](class_audioeffectreverb.md#class_audioeffectreverb_property_dry)                             | ``1.0``   |
+| [`float`](class_float.md) | [`hipass`](class_audioeffectreverb.md#class_audioeffectreverb_property_hipass)                       | ``0.0``   |
+| [`float`](class_float.md) | [`predelay_feedback`](class_audioeffectreverb.md#class_audioeffectreverb_property_predelay_feedback) | ``0.4``   |
+| [`float`](class_float.md) | [`predelay_msec`](class_audioeffectreverb.md#class_audioeffectreverb_property_predelay_msec)         | ``150.0`` |
+| [`float`](class_float.md) | [`room_size`](class_audioeffectreverb.md#class_audioeffectreverb_property_room_size)                 | ``0.8``   |
+| [`float`](class_float.md) | [`spread`](class_audioeffectreverb.md#class_audioeffectreverb_property_spread)                       | ``1.0``   |
+| [`float`](class_float.md) | [`wet`](class_audioeffectreverb.md#class_audioeffectreverb_property_wet)                             | ``0.5``   |
 
 <!-- rst-class:: classref-section-separator -->
 

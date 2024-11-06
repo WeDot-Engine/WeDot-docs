@@ -67,7 +67,7 @@ Booleans can be combined with the logical operators `and`, `or`, `not` to create
 
  **Note:** In modern programming languages, logical operators are evaluated in order. All remaining conditions are skipped if their result would have no effect on the final value. This concept is known as [*short-circuit evaluation*](https://en.wikipedia.org/wiki/Short-circuit_evaluation) and can be useful to avoid evaluating expensive conditions in some performance-critical cases.
 
- **Note:** By convention, built-in methods and properties that return booleans are usually defined as yes-no questions, single adjectives, or similar ([`String.is_empty`](#class_string_method_is_empty), [`Node.can_process`](#class_node_method_can_process), [`Camera2D.enabled`](#class_camera2d_property_enabled), etc.).
+ **Note:** By convention, built-in methods and properties that return booleans are usually defined as yes-no questions, single adjectives, or similar ([`String.is_empty`](class_string.md#class_string_method_is_empty), [`Node.can_process`](class_node.md#class_node_method_can_process), [`Camera2D.enabled`](class_camera2d.md#class_camera2d_property_enabled), etc.).
 
 
 
@@ -81,10 +81,10 @@ Booleans can be combined with the logical operators `and`, `or`, `not` to create
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( )                                 |
-| [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( from: [`bool`](class_bool.md) )   |
-| [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( from: [`float`](class_float.md) ) |
-| [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( from: [`int`](class_int.md) )     |
+| [`bool`](class_bool.md) | [`bool`](class_bool.md#class_bool_constructor_bool) ( )                                 |
+| [`bool`](class_bool.md) | [`bool`](class_bool.md#class_bool_constructor_bool) ( from: [`bool`](class_bool.md) )   |
+| [`bool`](class_bool.md) | [`bool`](class_bool.md#class_bool_constructor_bool) ( from: [`float`](class_float.md) ) |
+| [`bool`](class_bool.md) | [`bool`](class_bool.md#class_bool_constructor_bool) ( from: [`int`](class_int.md) )     |
 
 ## 运算符
 
@@ -121,7 +121,7 @@ Constructs a **bool** as a copy of the given **bool**.
 
 [`bool`](class_bool.md) **bool** ( from: [`float`](class_float.md) )
 
-Cast a [`float`](class_float.md) value to a boolean value. Returns `false` if `from` is equal to `0.0` (including `-0.0`), and `true` for all other values (including [`@GDScript.INF`](#class_@gdscript_constant_inf) and [`@GDScript.NAN`](#class_@gdscript_constant_nan)).
+Cast a [`float`](class_float.md) value to a boolean value. Returns `false` if `from` is equal to `0.0` (including `-0.0`), and `true` for all other values (including [`@GDScript.INF`](class_@gdscript.md#class_@gdscript_constant_inf) and [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan)).
 
 <!-- rst-class:: classref-item-separator -->
 

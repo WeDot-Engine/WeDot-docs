@@ -15,16 +15,16 @@ An input event type for actions.
 
 Contains a generic action which can be targeted from several types of inputs. Actions and their events can be set in the **Input Map** tab in **Project > Project Settings**, or with the [`InputMap`](class_inputmap.md) class.
 
- **Note:** Unlike the other [`InputEvent`](class_inputevent.md) subclasses which map to unique physical events, this virtual one is not emitted by the engine. This class is useful to emit actions manually with [`Input.parse_input_event`](#class_input_method_parse_input_event), which are then received in [`Node._input`](#class_node_private_method__input). To check if a physical event matches an action from the Input Map, use [`InputEvent.is_action`](#class_inputevent_method_is_action) and [`InputEvent.is_action_pressed`](#class_inputevent_method_is_action_pressed).
+ **Note:** Unlike the other [`InputEvent`](class_inputevent.md) subclasses which map to unique physical events, this virtual one is not emitted by the engine. This class is useful to emit actions manually with [`Input.parse_input_event`](class_input.md#class_input_method_parse_input_event), which are then received in [`Node._input`](class_node.md#class_node_private_method__input). To check if a physical event matches an action from the Input Map, use [`InputEvent.is_action`](class_inputevent.md#class_inputevent_method_is_action) and [`InputEvent.is_action_pressed`](class_inputevent.md#class_inputevent_method_is_action_pressed).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`StringName`](class_stringname.md) | [`action`](#class_inputeventaction_property_action)           | ``&""``   |
-| [`int`](class_int.md)               | [`event_index`](#class_inputeventaction_property_event_index) | ``-1``    |
-| [`bool`](class_bool.md)             | [`pressed`](#class_inputeventaction_property_pressed)         | ``false`` |
-| [`float`](class_float.md)           | [`strength`](#class_inputeventaction_property_strength)       | ``1.0``   |
+| [`StringName`](class_stringname.md) | [`action`](class_inputeventaction.md#class_inputeventaction_property_action)           | ``&""``   |
+| [`int`](class_int.md)               | [`event_index`](class_inputeventaction.md#class_inputeventaction_property_event_index) | ``-1``    |
+| [`bool`](class_bool.md)             | [`pressed`](class_inputeventaction.md#class_inputeventaction_property_pressed)         | ``false`` |
+| [`float`](class_float.md)           | [`strength`](class_inputeventaction.md#class_inputeventaction_property_strength)       | ``1.0``   |
 
 <!-- rst-class:: classref-section-separator -->
 

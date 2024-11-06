@@ -13,7 +13,7 @@ A container that arranges its child controls in a grid layout.
 
 ## 描述
 
-**GridContainer** arranges its child controls in a grid layout. The number of columns is specified by the [`columns`](#class_gridcontainer_property_columns) property, whereas the number of rows depends on how many are needed for the child controls. The number of rows and columns is preserved for every size of the container.
+**GridContainer** arranges its child controls in a grid layout. The number of columns is specified by the [`columns`](class_gridcontainer.md#class_gridcontainer_property_columns) property, whereas the number of rows depends on how many are needed for the child controls. The number of rows and columns is preserved for every size of the container.
 
  **Note:** **GridContainer** only works with child nodes inheriting from [`Control`](class_control.md). It won't rearrange child nodes inheriting from [`Node2D`](class_node2d.md).
 
@@ -21,14 +21,14 @@ A container that arranges its child controls in a grid layout.
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`columns`](#class_gridcontainer_property_columns) | ``1`` |
+| [`int`](class_int.md) | [`columns`](class_gridcontainer.md#class_gridcontainer_property_columns) | ``1`` |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`h_separation`](#class_gridcontainer_theme_constant_h_separation) | ``4`` |
-| [`int`](class_int.md) | [`v_separation`](#class_gridcontainer_theme_constant_v_separation) | ``4`` |
+| [`int`](class_int.md) | [`h_separation`](class_gridcontainer.md#class_gridcontainer_theme_constant_h_separation) | ``4`` |
+| [`int`](class_int.md) | [`v_separation`](class_gridcontainer.md#class_gridcontainer_theme_constant_v_separation) | ``4`` |
 
 <!-- rst-class:: classref-section-separator -->
 

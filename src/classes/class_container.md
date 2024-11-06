@@ -21,16 +21,16 @@ Base class for all GUI containers. A **Container** automatically arranges its ch
 
 |||
 |:-:|:--|
-| [MouseFilter](#enum_control_mousefilter) | mouse_filter | ``1`` (overrides [`Control`](#class_control_property_mouse_filter)) |
+| [MouseFilter](#enum_control_mousefilter) | mouse_filter | ``1`` (overrides [`Control`](class_control.md#class_control_property_mouse_filter)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_horizontal`](#class_container_private_method__get_allowed_size_flags_horizontal) ( ) virtual[^virtual] const[^const] |
-| [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_vertical`](#class_container_private_method__get_allowed_size_flags_vertical) ( ) virtual[^virtual] const[^const]     |
-| `void`                                          | [`fit_child_in_rect`](#class_container_method_fit_child_in_rect) ( child: [`Control`](class_control.md), rect: [`Rect2`](class_rect2.md) )     |
-| `void`                                          | [`queue_sort`](#class_container_method_queue_sort) ( )                                                                                         |
+| [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_horizontal`](class_container.md#class_container_private_method__get_allowed_size_flags_horizontal) ( ) virtual[^virtual] const[^const] |
+| [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_vertical`](class_container.md#class_container_private_method__get_allowed_size_flags_vertical) ( ) virtual[^virtual] const[^const]     |
+| `void`                                          | [`fit_child_in_rect`](class_container.md#class_container_method_fit_child_in_rect) ( child: [`Control`](class_control.md), rect: [`Rect2`](class_rect2.md) )     |
+| `void`                                          | [`queue_sort`](class_container.md#class_container_method_queue_sort) ( )                                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -84,7 +84,7 @@ Notification for when sorting the children, it must be obeyed immediately.
 
 Implement to return a list of allowed horizontal [SizeFlags](#enum_control_sizeflags) for child nodes. This doesn't technically prevent the usages of any other size flags, if your implementation requires that. This only limits the options available to the user in the Inspector dock.
 
- **Note:** Having no size flags is equal to having [`Control.SIZE_SHRINK_BEGIN`](#class_control_constant_size_shrink_begin). As such, this value is always implicitly allowed.
+ **Note:** Having no size flags is equal to having [`Control.SIZE_SHRINK_BEGIN`](class_control.md#class_control_constant_size_shrink_begin). As such, this value is always implicitly allowed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -96,7 +96,7 @@ Implement to return a list of allowed horizontal [SizeFlags](#enum_control_sizef
 
 Implement to return a list of allowed vertical [SizeFlags](#enum_control_sizeflags) for child nodes. This doesn't technically prevent the usages of any other size flags, if your implementation requires that. This only limits the options available to the user in the Inspector dock.
 
- **Note:** Having no size flags is equal to having [`Control.SIZE_SHRINK_BEGIN`](#class_control_constant_size_shrink_begin). As such, this value is always implicitly allowed.
+ **Note:** Having no size flags is equal to having [`Control.SIZE_SHRINK_BEGIN`](class_control.md#class_control_constant_size_shrink_begin). As such, this value is always implicitly allowed.
 
 <!-- rst-class:: classref-item-separator -->
 

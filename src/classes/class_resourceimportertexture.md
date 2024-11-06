@@ -19,26 +19,26 @@ This importer imports [`CompressedTexture2D`](class_compressedtexture2d.md) reso
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)       | [`compress/channel_pack`](#class_resourceimportertexture_property_compress/channel_pack)                                     | ``0``     |
-| [`int`](class_int.md)       | [`compress/hdr_compression`](#class_resourceimportertexture_property_compress/hdr_compression)                               | ``1``     |
-| [`bool`](class_bool.md)     | [`compress/high_quality`](#class_resourceimportertexture_property_compress/high_quality)                                     | ``false`` |
-| [`float`](class_float.md)   | [`compress/lossy_quality`](#class_resourceimportertexture_property_compress/lossy_quality)                                   | ``0.7``   |
-| [`int`](class_int.md)       | [`compress/mode`](#class_resourceimportertexture_property_compress/mode)                                                     | ``0``     |
-| [`int`](class_int.md)       | [`compress/normal_map`](#class_resourceimportertexture_property_compress/normal_map)                                         | ``0``     |
-| [`int`](class_int.md)       | [`detect_3d/compress_to`](#class_resourceimportertexture_property_detect_3d/compress_to)                                     | ``1``     |
-| [`bool`](class_bool.md)     | [`editor/convert_colors_with_editor_theme`](#class_resourceimportertexture_property_editor/convert_colors_with_editor_theme) | ``false`` |
-| [`bool`](class_bool.md)     | [`editor/scale_with_editor_scale`](#class_resourceimportertexture_property_editor/scale_with_editor_scale)                   | ``false`` |
-| [`bool`](class_bool.md)     | [`mipmaps/generate`](#class_resourceimportertexture_property_mipmaps/generate)                                               | ``false`` |
-| [`int`](class_int.md)       | [`mipmaps/limit`](#class_resourceimportertexture_property_mipmaps/limit)                                                     | ``-1``    |
-| [`bool`](class_bool.md)     | [`process/fix_alpha_border`](#class_resourceimportertexture_property_process/fix_alpha_border)                               | ``true``  |
-| [`bool`](class_bool.md)     | [`process/hdr_as_srgb`](#class_resourceimportertexture_property_process/hdr_as_srgb)                                         | ``false`` |
-| [`bool`](class_bool.md)     | [`process/hdr_clamp_exposure`](#class_resourceimportertexture_property_process/hdr_clamp_exposure)                           | ``false`` |
-| [`bool`](class_bool.md)     | [`process/normal_map_invert_y`](#class_resourceimportertexture_property_process/normal_map_invert_y)                         | ``false`` |
-| [`bool`](class_bool.md)     | [`process/premult_alpha`](#class_resourceimportertexture_property_process/premult_alpha)                                     | ``false`` |
-| [`int`](class_int.md)       | [`process/size_limit`](#class_resourceimportertexture_property_process/size_limit)                                           | ``0``     |
-| [`int`](class_int.md)       | [`roughness/mode`](#class_resourceimportertexture_property_roughness/mode)                                                   | ``0``     |
-| [`String`](class_string.md) | [`roughness/src_normal`](#class_resourceimportertexture_property_roughness/src_normal)                                       | ``""``    |
-| [`float`](class_float.md)   | [`svg/scale`](#class_resourceimportertexture_property_svg/scale)                                                             | ``1.0``   |
+| [`int`](class_int.md)       | [`compress/channel_pack`](class_resourceimportertexture.md#class_resourceimportertexture_property_compress/channel_pack)                                     | ``0``     |
+| [`int`](class_int.md)       | [`compress/hdr_compression`](class_resourceimportertexture.md#class_resourceimportertexture_property_compress/hdr_compression)                               | ``1``     |
+| [`bool`](class_bool.md)     | [`compress/high_quality`](class_resourceimportertexture.md#class_resourceimportertexture_property_compress/high_quality)                                     | ``false`` |
+| [`float`](class_float.md)   | [`compress/lossy_quality`](class_resourceimportertexture.md#class_resourceimportertexture_property_compress/lossy_quality)                                   | ``0.7``   |
+| [`int`](class_int.md)       | [`compress/mode`](class_resourceimportertexture.md#class_resourceimportertexture_property_compress/mode)                                                     | ``0``     |
+| [`int`](class_int.md)       | [`compress/normal_map`](class_resourceimportertexture.md#class_resourceimportertexture_property_compress/normal_map)                                         | ``0``     |
+| [`int`](class_int.md)       | [`detect_3d/compress_to`](class_resourceimportertexture.md#class_resourceimportertexture_property_detect_3d/compress_to)                                     | ``1``     |
+| [`bool`](class_bool.md)     | [`editor/convert_colors_with_editor_theme`](class_resourceimportertexture.md#class_resourceimportertexture_property_editor/convert_colors_with_editor_theme) | ``false`` |
+| [`bool`](class_bool.md)     | [`editor/scale_with_editor_scale`](class_resourceimportertexture.md#class_resourceimportertexture_property_editor/scale_with_editor_scale)                   | ``false`` |
+| [`bool`](class_bool.md)     | [`mipmaps/generate`](class_resourceimportertexture.md#class_resourceimportertexture_property_mipmaps/generate)                                               | ``false`` |
+| [`int`](class_int.md)       | [`mipmaps/limit`](class_resourceimportertexture.md#class_resourceimportertexture_property_mipmaps/limit)                                                     | ``-1``    |
+| [`bool`](class_bool.md)     | [`process/fix_alpha_border`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/fix_alpha_border)                               | ``true``  |
+| [`bool`](class_bool.md)     | [`process/hdr_as_srgb`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/hdr_as_srgb)                                         | ``false`` |
+| [`bool`](class_bool.md)     | [`process/hdr_clamp_exposure`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/hdr_clamp_exposure)                           | ``false`` |
+| [`bool`](class_bool.md)     | [`process/normal_map_invert_y`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/normal_map_invert_y)                         | ``false`` |
+| [`bool`](class_bool.md)     | [`process/premult_alpha`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/premult_alpha)                                     | ``false`` |
+| [`int`](class_int.md)       | [`process/size_limit`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/size_limit)                                           | ``0``     |
+| [`int`](class_int.md)       | [`roughness/mode`](class_resourceimportertexture.md#class_resourceimportertexture_property_roughness/mode)                                                   | ``0``     |
+| [`String`](class_string.md) | [`roughness/src_normal`](class_resourceimportertexture.md#class_resourceimportertexture_property_roughness/src_normal)                                       | ``""``    |
+| [`float`](class_float.md)   | [`svg/scale`](class_resourceimportertexture.md#class_resourceimportertexture_property_svg/scale)                                                             | ``1.0``   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -86,7 +86,7 @@ If `true`, uses BPTC compression on desktop platforms and ASTC compression on mo
 
 If `false`, uses the faster but lower-quality S3TC compression on desktop platforms and ETC2 on mobile/web platforms. When using S3TC, DXT1 (BC1) is used for opaque textures and DXT5 (BC3) is used for transparent or normal map (RGTC) textures.
 
-BPTC and ASTC support VRAM compression for HDR textures, but S3TC and ETC2 do not (see [`compress/hdr_compression`](#class_resourceimportertexture_property_compress/hdr_compression)).
+BPTC and ASTC support VRAM compression for HDR textures, but S3TC and ETC2 do not (see [`compress/hdr_compression`](class_resourceimportertexture.md#class_resourceimportertexture_property_compress/hdr_compression)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -140,7 +140,7 @@ Note that RGTC compression affects the resulting normal map image. You will have
 
 [`int`](class_int.md) **detect_3d/compress_to** = ``1`` <div id="class_resourceimportertexture_property_detect_3d/compress_to"></div>
 
-This changes the [`compress/mode`](#class_resourceimportertexture_property_compress/mode) option that is used when a texture is detected as being used in 3D.
+This changes the [`compress/mode`](class_resourceimportertexture.md#class_resourceimportertexture_property_compress/mode) option that is used when a texture is detected as being used in 3D.
 
 Changing this import option only has an effect if a texture is detected as being used in 3D. Changing this to **Disabled** then reimporting will not change the existing compress mode on a texture (if it's detected to be used in 3D), but choosing **VRAM Compressed** or **Basis Universal** will.
 
@@ -152,7 +152,7 @@ Changing this import option only has an effect if a texture is detected as being
 
 [`bool`](class_bool.md) **editor/convert_colors_with_editor_theme** = ``false`` <div id="class_resourceimportertexture_property_editor/convert_colors_with_editor_theme"></div>
 
-If `true`, converts the imported image's colors to match [`EditorSettings.interface/theme/icon_and_font_color`](#class_editorsettings_property_interface/theme/icon_and_font_color). This assumes the image uses the exact same colors as [*Godot's own color palette for editor icons*](../contributing/development/editor/creating_icons), with the source file designed for a dark editor theme. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
+If `true`, converts the imported image's colors to match [`EditorSettings.interface/theme/icon_and_font_color`](class_editorsettings.md#class_editorsettings_property_interface/theme/icon_and_font_color). This assumes the image uses the exact same colors as [*Godot's own color palette for editor icons*](../contributing/development/editor/creating_icons), with the source file designed for a dark editor theme. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
 
  **Note:** Only available for SVG images.
 
@@ -164,7 +164,7 @@ If `true`, converts the imported image's colors to match [`EditorSettings.interf
 
 [`bool`](class_bool.md) **editor/scale_with_editor_scale** = ``false`` <div id="class_resourceimportertexture_property_editor/scale_with_editor_scale"></div>
 
-If `true`, scales the imported image to match [`EditorSettings.interface/editor/custom_display_scale`](#class_editorsettings_property_interface/editor/custom_display_scale). This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
+If `true`, scales the imported image to match [`EditorSettings.interface/editor/custom_display_scale`](class_editorsettings.md#class_editorsettings_property_interface/editor/custom_display_scale). This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
 
  **Note:** Only available for SVG images.
 
@@ -216,9 +216,9 @@ It's recommended to leave this enabled (as it is by default), unless this causes
 
 [`bool`](class_bool.md) **process/hdr_as_srgb** = ``false`` <div id="class_resourceimportertexture_property_process/hdr_as_srgb"></div>
 
-Some HDR images you can find online may be broken and contain sRGB color data (instead of linear color data). It is advised not to use those files. If you absolutely have to, enabling [`process/hdr_as_srgb`](#class_resourceimportertexture_property_process/hdr_as_srgb) will make them look correct.
+Some HDR images you can find online may be broken and contain sRGB color data (instead of linear color data). It is advised not to use those files. If you absolutely have to, enabling [`process/hdr_as_srgb`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/hdr_as_srgb) will make them look correct.
 
- **Warning:** Enabling [`process/hdr_as_srgb`](#class_resourceimportertexture_property_process/hdr_as_srgb) on well-formatted HDR images will cause the resulting image to look too dark, so leave this on `false` if unsure.
+ **Warning:** Enabling [`process/hdr_as_srgb`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/hdr_as_srgb) on well-formatted HDR images will cause the resulting image to look too dark, so leave this on `false` if unsure.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -232,7 +232,7 @@ If `true`, clamps exposure in the imported high dynamic range images using a sma
 
 Some HDR panorama images you can find online may contain extremely bright pixels, due to being taken from real life sources without any clipping.
 
-While these HDR panorama images are accurate to real life, this can cause the radiance map generated by Godot to contain sparkles when used as a background sky. This can be seen in material reflections (even on rough materials in extreme cases). Enabling [`process/hdr_clamp_exposure`](#class_resourceimportertexture_property_process/hdr_clamp_exposure) can resolve this.
+While these HDR panorama images are accurate to real life, this can cause the radiance map generated by Godot to contain sparkles when used as a background sky. This can be seen in material reflections (even on rough materials in extreme cases). Enabling [`process/hdr_clamp_exposure`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/hdr_clamp_exposure) can resolve this.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -254,11 +254,11 @@ More information about normal maps (including a coordinate order table for popul
 
 [`bool`](class_bool.md) **process/premult_alpha** = ``false`` <div id="class_resourceimportertexture_property_process/premult_alpha"></div>
 
-An alternative to fixing darkened borders with [`process/fix_alpha_border`](#class_resourceimportertexture_property_process/fix_alpha_border) is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
+An alternative to fixing darkened borders with [`process/fix_alpha_border`](class_resourceimportertexture.md#class_resourceimportertexture_property_process/fix_alpha_border) is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
 
-- In 2D, a [`CanvasItemMaterial`](class_canvasitemmaterial.md) will need to be created and configured to use the [`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA`](#class_canvasitemmaterial_constant_blend_mode_premult_alpha) blend mode on [`CanvasItem`](class_canvasitem.md) s that use this texture. In custom `@canvas_item` shaders, `render_mode blend_premul_alpha;` should be used.
+- In 2D, a [`CanvasItemMaterial`](class_canvasitemmaterial.md) will need to be created and configured to use the [`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA`](class_canvasitemmaterial.md#class_canvasitemmaterial_constant_blend_mode_premult_alpha) blend mode on [`CanvasItem`](class_canvasitem.md) s that use this texture. In custom `@canvas_item` shaders, `render_mode blend_premul_alpha;` should be used.
 
-- In 3D, a [`BaseMaterial3D`](class_basematerial3d.md) will need to be created and configured to use the [`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA`](#class_basematerial3d_constant_blend_mode_premult_alpha) blend mode on materials that use this texture. In custom `spatial` shaders, `render_mode blend_premul_alpha;` should be used.
+- In 3D, a [`BaseMaterial3D`](class_basematerial3d.md) will need to be created and configured to use the [`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA`](class_basematerial3d.md#class_basematerial3d_constant_blend_mode_premult_alpha) blend mode on materials that use this texture. In custom `spatial` shaders, `render_mode blend_premul_alpha;` should be used.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -302,7 +302,7 @@ Roughness filtering on import is only used in 3D rendering, not 2D.
 
 [`float`](class_float.md) **svg/scale** = ``1.0`` <div id="class_resourceimportertexture_property_svg/scale"></div>
 
-The scale the SVG should be rendered at, with `1.0` being the original design size. Higher values result in a larger image. Note that unlike font oversampling, this affects the size the SVG is rendered at in 2D. See also [`editor/scale_with_editor_scale`](#class_resourceimportertexture_property_editor/scale_with_editor_scale).
+The scale the SVG should be rendered at, with `1.0` being the original design size. Higher values result in a larger image. Note that unlike font oversampling, this affects the size the SVG is rendered at in 2D. See also [`editor/scale_with_editor_scale`](class_resourceimportertexture.md#class_resourceimportertexture_property_editor/scale_with_editor_scale).
 
  **Note:** Only available for SVG images.
 

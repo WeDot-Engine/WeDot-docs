@@ -21,11 +21,11 @@ Combines phase-shifted signals with the original signal. The movement of the pha
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`depth`](#class_audioeffectphaser_property_depth)               | ``1.0``    |
-| [`float`](class_float.md) | [`feedback`](#class_audioeffectphaser_property_feedback)         | ``0.7``    |
-| [`float`](class_float.md) | [`range_max_hz`](#class_audioeffectphaser_property_range_max_hz) | ``1600.0`` |
-| [`float`](class_float.md) | [`range_min_hz`](#class_audioeffectphaser_property_range_min_hz) | ``440.0``  |
-| [`float`](class_float.md) | [`rate_hz`](#class_audioeffectphaser_property_rate_hz)           | ``0.5``    |
+| [`float`](class_float.md) | [`depth`](class_audioeffectphaser.md#class_audioeffectphaser_property_depth)               | ``1.0``    |
+| [`float`](class_float.md) | [`feedback`](class_audioeffectphaser.md#class_audioeffectphaser_property_feedback)         | ``0.7``    |
+| [`float`](class_float.md) | [`range_max_hz`](class_audioeffectphaser.md#class_audioeffectphaser_property_range_max_hz) | ``1600.0`` |
+| [`float`](class_float.md) | [`range_min_hz`](class_audioeffectphaser.md#class_audioeffectphaser_property_range_min_hz) | ``440.0``  |
+| [`float`](class_float.md) | [`rate_hz`](class_audioeffectphaser.md#class_audioeffectphaser_property_rate_hz)           | ``0.5``    |
 
 <!-- rst-class:: classref-section-separator -->
 

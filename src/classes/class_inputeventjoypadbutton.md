@@ -19,9 +19,9 @@ Input event type for gamepad buttons. For gamepad analog sticks and joysticks, s
 
 |||
 |:-:|:--|
-| [JoyButton](#enum_@globalscope_joybutton) | [`button_index`](#class_inputeventjoypadbutton_property_button_index) | ``0``     |
-| [`bool`](class_bool.md)                   | [`pressed`](#class_inputeventjoypadbutton_property_pressed)           | ``false`` |
-| [`float`](class_float.md)                 | [`pressure`](#class_inputeventjoypadbutton_property_pressure)         | ``0.0``   |
+| [JoyButton](#enum_@globalscope_joybutton) | [`button_index`](class_inputeventjoypadbutton.md#class_inputeventjoypadbutton_property_button_index) | ``0``     |
+| [`bool`](class_bool.md)                   | [`pressed`](class_inputeventjoypadbutton.md#class_inputeventjoypadbutton_property_pressed)           | ``false`` |
+| [`float`](class_float.md)                 | [`pressure`](class_inputeventjoypadbutton.md#class_inputeventjoypadbutton_property_pressure)         | ``0.0``   |
 
 <!-- rst-class:: classref-section-separator -->
 

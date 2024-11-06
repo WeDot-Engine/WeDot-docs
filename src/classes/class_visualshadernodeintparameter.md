@@ -19,12 +19,12 @@ A [`VisualShaderNodeParameter`](class_visualshadernodeparameter.md) of type [`in
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                           | [`default_value`](#class_visualshadernodeintparameter_property_default_value)                 | ``0``     |
-| [`bool`](class_bool.md)                         | [`default_value_enabled`](#class_visualshadernodeintparameter_property_default_value_enabled) | ``false`` |
-| [Hint](#enum_visualshadernodeintparameter_hint) | [`hint`](#class_visualshadernodeintparameter_property_hint)                                   | ``0``     |
-| [`int`](class_int.md)                           | [`max`](#class_visualshadernodeintparameter_property_max)                                     | ``100``   |
-| [`int`](class_int.md)                           | [`min`](#class_visualshadernodeintparameter_property_min)                                     | ``0``     |
-| [`int`](class_int.md)                           | [`step`](#class_visualshadernodeintparameter_property_step)                                   | ``1``     |
+| [`int`](class_int.md)                           | [`default_value`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_default_value)                 | ``0``     |
+| [`bool`](class_bool.md)                         | [`default_value_enabled`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_default_value_enabled) | ``false`` |
+| [Hint](#enum_visualshadernodeintparameter_hint) | [`hint`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_hint)                                   | ``0``     |
+| [`int`](class_int.md)                           | [`max`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_max)                                     | ``100``   |
+| [`int`](class_int.md)                           | [`min`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_min)                                     | ``0``     |
+| [`int`](class_int.md)                           | [`step`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_step)                                   | ``1``     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,13 +46,13 @@ The parameter will not constrain its value.
 
 [Hint](#enum_visualshadernodeintparameter_hint) **HINT_RANGE** = ``1``
 
-The parameter's value must be within the specified [`min`](#class_visualshadernodeintparameter_property_min)/[`max`](#class_visualshadernodeintparameter_property_max) range.
+The parameter's value must be within the specified [`min`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_min)/[`max`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_max) range.
 
 <div id="_class_visualshadernodeintparameter_constant_hint_range_step"></div>
 
 [Hint](#enum_visualshadernodeintparameter_hint) **HINT_RANGE_STEP** = ``2``
 
-The parameter's value must be within the specified range, with the given [`step`](#class_visualshadernodeintparameter_property_step) between values.
+The parameter's value must be within the specified range, with the given [`step`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_step) between values.
 
 <div id="_class_visualshadernodeintparameter_constant_hint_max"></div>
 
@@ -73,7 +73,7 @@ Represents the size of the [Hint](#enum_visualshadernodeintparameter_hint) enum.
 - `void` **set_default_value** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_default_value** ( )
 
-Default value of this parameter, which will be used if not set externally. [`default_value_enabled`](#class_visualshadernodeintparameter_property_default_value_enabled) must be enabled; defaults to `0` otherwise.
+Default value of this parameter, which will be used if not set externally. [`default_value_enabled`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_default_value_enabled) must be enabled; defaults to `0` otherwise.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -112,7 +112,7 @@ Range hint of this node. Use it to customize valid parameter range.
 - `void` **set_max** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_max** ( )
 
-The maximum value this parameter can take. [`hint`](#class_visualshadernodeintparameter_property_hint) must be either [`HINT_RANGE`](#class_visualshadernodeintparameter_constant_hint_range) or [`HINT_RANGE_STEP`](#class_visualshadernodeintparameter_constant_hint_range_step) for this to take effect.
+The maximum value this parameter can take. [`hint`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_hint) must be either [`HINT_RANGE`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_constant_hint_range) or [`HINT_RANGE_STEP`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_constant_hint_range_step) for this to take effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -125,7 +125,7 @@ The maximum value this parameter can take. [`hint`](#class_visualshadernodeintpa
 - `void` **set_min** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_min** ( )
 
-The minimum value this parameter can take. [`hint`](#class_visualshadernodeintparameter_property_hint) must be either [`HINT_RANGE`](#class_visualshadernodeintparameter_constant_hint_range) or [`HINT_RANGE_STEP`](#class_visualshadernodeintparameter_constant_hint_range_step) for this to take effect.
+The minimum value this parameter can take. [`hint`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_hint) must be either [`HINT_RANGE`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_constant_hint_range) or [`HINT_RANGE_STEP`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_constant_hint_range_step) for this to take effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -138,7 +138,7 @@ The minimum value this parameter can take. [`hint`](#class_visualshadernodeintpa
 - `void` **set_step** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_step** ( )
 
-The step between parameter's values. Forces the parameter to be a multiple of the given value. [`hint`](#class_visualshadernodeintparameter_property_hint) must be [`HINT_RANGE_STEP`](#class_visualshadernodeintparameter_constant_hint_range_step) for this to take effect.
+The step between parameter's values. Forces the parameter to be a multiple of the given value. [`hint`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_property_hint) must be [`HINT_RANGE_STEP`](class_visualshadernodeintparameter.md#class_visualshadernodeintparameter_constant_hint_range_step) for this to take effect.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -19,7 +19,7 @@ Translated to `uniform sampler2DArray` in the shader language.
 
 |||
 |:-:|:--|
-| [`Texture2DArray`](class_texture2darray.md) | [`texture_array`](#class_visualshadernodetexture2darray_property_texture_array) |
+| [`Texture2DArray`](class_texture2darray.md) | [`texture_array`](class_visualshadernodetexture2darray.md#class_visualshadernodetexture2darray_property_texture_array) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -34,7 +34,7 @@ Translated to `uniform sampler2DArray` in the shader language.
 - `void` **set_texture_array** ( value: [`Texture2DArray`](class_texture2darray.md) )
 - [`Texture2DArray`](class_texture2darray.md) **get_texture_array** ( )
 
-A source texture array. Used if [`VisualShaderNodeSample3D.source`](#class_visualshadernodesample3d_property_source) is set to [`VisualShaderNodeSample3D.SOURCE_TEXTURE`](#class_visualshadernodesample3d_constant_source_texture).
+A source texture array. Used if [`VisualShaderNodeSample3D.source`](class_visualshadernodesample3d.md#class_visualshadernodesample3d_property_source) is set to [`VisualShaderNodeSample3D.SOURCE_TEXTURE`](class_visualshadernodesample3d.md#class_visualshadernodesample3d_constant_source_texture).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

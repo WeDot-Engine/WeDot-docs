@@ -21,82 +21,82 @@ The **OS** class wraps the most common functionalities for communicating with th
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`delta_smoothing`](#class_os_property_delta_smoothing)                                         | ``true``  |
-| [`bool`](class_bool.md) | [`low_processor_usage_mode`](#class_os_property_low_processor_usage_mode)                       | ``false`` |
-| [`int`](class_int.md)   | [`low_processor_usage_mode_sleep_usec`](#class_os_property_low_processor_usage_mode_sleep_usec) | ``6900``  |
+| [`bool`](class_bool.md) | [`delta_smoothing`](class_os.md#class_os_property_delta_smoothing)                                         | ``true``  |
+| [`bool`](class_bool.md) | [`low_processor_usage_mode`](class_os.md#class_os_property_low_processor_usage_mode)                       | ``false`` |
+| [`int`](class_int.md)   | [`low_processor_usage_mode_sleep_usec`](class_os.md#class_os_property_low_processor_usage_mode_sleep_usec) | ``6900``  |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                            | [`alert`](#class_os_method_alert) ( text: [`String`](class_string.md), title: [`String`](class_string.md) = "Alert!" )                                                                                                                                                                                                                                                                |
-| `void`                                            | [`close_midi_inputs`](#class_os_method_close_midi_inputs) ( )                                                                                                                                                                                                                                                                                                                         |
-| `void`                                            | [`crash`](#class_os_method_crash) ( message: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                            |
-| [`int`](class_int.md)                             | [`create_instance`](#class_os_method_create_instance) ( arguments: [`PackedStringArray`](class_packedstringarray.md) )                                                                                                                                                                                                                                                                |
-| [`int`](class_int.md)                             | [`create_process`](#class_os_method_create_process) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md), open_console: [`bool`](class_bool.md) = false )                                                                                                                                                                                |
-| `void`                                            | [`delay_msec`](#class_os_method_delay_msec) ( msec: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                             |
-| `void`                                            | [`delay_usec`](#class_os_method_delay_usec) ( usec: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                             |
-| [`int`](class_int.md)                             | [`execute`](#class_os_method_execute) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md), output: [`Array`](class_array.md) = [], read_stderr: [`bool`](class_bool.md) = false, open_console: [`bool`](class_bool.md) = false )                                                                                                        |
-| [`Dictionary`](class_dictionary.md)               | [`execute_with_pipe`](#class_os_method_execute_with_pipe) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md) )                                                                                                                                                                                                                         |
-| [Key](#enum_@globalscope_key)                     | [`find_keycode_from_string`](#class_os_method_find_keycode_from_string) ( string: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                         |
-| [`String`](class_string.md)                       | [`get_cache_dir`](#class_os_method_get_cache_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                                   |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_cmdline_args`](#class_os_method_get_cmdline_args) ( )                                                                                                                                                                                                                                                                                                                           |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_cmdline_user_args`](#class_os_method_get_cmdline_user_args) ( )                                                                                                                                                                                                                                                                                                                 |
-| [`String`](class_string.md)                       | [`get_config_dir`](#class_os_method_get_config_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                                 |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_connected_midi_inputs`](#class_os_method_get_connected_midi_inputs) ( )                                                                                                                                                                                                                                                                                                         |
-| [`String`](class_string.md)                       | [`get_data_dir`](#class_os_method_get_data_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                                     |
-| [`String`](class_string.md)                       | [`get_distribution_name`](#class_os_method_get_distribution_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
-| [`PackedByteArray`](class_packedbytearray.md)     | [`get_entropy`](#class_os_method_get_entropy) ( size: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                         |
-| [`String`](class_string.md)                       | [`get_environment`](#class_os_method_get_environment) ( variable: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                         |
-| [`String`](class_string.md)                       | [`get_executable_path`](#class_os_method_get_executable_path) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_granted_permissions`](#class_os_method_get_granted_permissions) ( ) const[^const]                                                                                                                                                                                                                                                                                               |
-| [`String`](class_string.md)                       | [`get_keycode_string`](#class_os_method_get_keycode_string) ( code: [Key](#enum_@globalscope_key) ) const[^const]                                                                                                                                                                                                                                                                     |
-| [`String`](class_string.md)                       | [`get_locale`](#class_os_method_get_locale) ( ) const[^const]                                                                                                                                                                                                                                                                                                                         |
-| [`String`](class_string.md)                       | [`get_locale_language`](#class_os_method_get_locale_language) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
-| [`int`](class_int.md)                             | [`get_main_thread_id`](#class_os_method_get_main_thread_id) ( ) const[^const]                                                                                                                                                                                                                                                                                                         |
-| [`Dictionary`](class_dictionary.md)               | [`get_memory_info`](#class_os_method_get_memory_info) ( ) const[^const]                                                                                                                                                                                                                                                                                                               |
-| [`String`](class_string.md)                       | [`get_model_name`](#class_os_method_get_model_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                 |
-| [`String`](class_string.md)                       | [`get_name`](#class_os_method_get_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                             |
-| [`int`](class_int.md)                             | [`get_process_exit_code`](#class_os_method_get_process_exit_code) ( pid: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                        |
-| [`int`](class_int.md)                             | [`get_process_id`](#class_os_method_get_process_id) ( ) const[^const]                                                                                                                                                                                                                                                                                                                 |
-| [`int`](class_int.md)                             | [`get_processor_count`](#class_os_method_get_processor_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
-| [`String`](class_string.md)                       | [`get_processor_name`](#class_os_method_get_processor_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                         |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_restart_on_exit_arguments`](#class_os_method_get_restart_on_exit_arguments) ( ) const[^const]                                                                                                                                                                                                                                                                                   |
-| [`int`](class_int.md)                             | [`get_static_memory_peak_usage`](#class_os_method_get_static_memory_peak_usage) ( ) const[^const]                                                                                                                                                                                                                                                                                     |
-| [`int`](class_int.md)                             | [`get_static_memory_usage`](#class_os_method_get_static_memory_usage) ( ) const[^const]                                                                                                                                                                                                                                                                                               |
-| [`String`](class_string.md)                       | [`get_system_ca_certificates`](#class_os_method_get_system_ca_certificates) ( )                                                                                                                                                                                                                                                                                                       |
-| [`String`](class_string.md)                       | [`get_system_dir`](#class_os_method_get_system_dir) ( dir: [SystemDir](#enum_os_systemdir), shared_storage: [`bool`](class_bool.md) = true ) const[^const]                                                                                                                                                                                                                            |
-| [`String`](class_string.md)                       | [`get_system_font_path`](#class_os_method_get_system_font_path) ( font_name: [`String`](class_string.md), weight: [`int`](class_int.md) = 400, stretch: [`int`](class_int.md) = 100, italic: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                          |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_system_font_path_for_text`](#class_os_method_get_system_font_path_for_text) ( font_name: [`String`](class_string.md), text: [`String`](class_string.md), locale: [`String`](class_string.md) = "", script: [`String`](class_string.md) = "", weight: [`int`](class_int.md) = 400, stretch: [`int`](class_int.md) = 100, italic: [`bool`](class_bool.md) = false ) const[^const] |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_system_fonts`](#class_os_method_get_system_fonts) ( ) const[^const]                                                                                                                                                                                                                                                                                                             |
-| [`int`](class_int.md)                             | [`get_thread_caller_id`](#class_os_method_get_thread_caller_id) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
-| [`String`](class_string.md)                       | [`get_unique_id`](#class_os_method_get_unique_id) ( ) const[^const]                                                                                                                                                                                                                                                                                                                   |
-| [`String`](class_string.md)                       | [`get_user_data_dir`](#class_os_method_get_user_data_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                           |
-| [`String`](class_string.md)                       | [`get_version`](#class_os_method_get_version) ( ) const[^const]                                                                                                                                                                                                                                                                                                                       |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_video_adapter_driver_info`](#class_os_method_get_video_adapter_driver_info) ( ) const[^const]                                                                                                                                                                                                                                                                                   |
-| [`bool`](class_bool.md)                           | [`has_environment`](#class_os_method_has_environment) ( variable: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                         |
-| [`bool`](class_bool.md)                           | [`has_feature`](#class_os_method_has_feature) ( tag_name: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)                           | [`is_debug_build`](#class_os_method_is_debug_build) ( ) const[^const]                                                                                                                                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)                           | [`is_keycode_unicode`](#class_os_method_is_keycode_unicode) ( code: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                             |
-| [`bool`](class_bool.md)                           | [`is_process_running`](#class_os_method_is_process_running) ( pid: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                              |
-| [`bool`](class_bool.md)                           | [`is_restart_on_exit_set`](#class_os_method_is_restart_on_exit_set) ( ) const[^const]                                                                                                                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)                           | [`is_sandboxed`](#class_os_method_is_sandboxed) ( ) const[^const]                                                                                                                                                                                                                                                                                                                     |
-| [`bool`](class_bool.md)                           | [`is_stdout_verbose`](#class_os_method_is_stdout_verbose) ( ) const[^const]                                                                                                                                                                                                                                                                                                           |
-| [`bool`](class_bool.md)                           | [`is_userfs_persistent`](#class_os_method_is_userfs_persistent) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
-| [Error](#enum_@globalscope_error)                 | [`kill`](#class_os_method_kill) ( pid: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                        |
-| [Error](#enum_@globalscope_error)                 | [`move_to_trash`](#class_os_method_move_to_trash) ( path: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                                 |
-| `void`                                            | [`open_midi_inputs`](#class_os_method_open_midi_inputs) ( )                                                                                                                                                                                                                                                                                                                           |
-| [`String`](class_string.md)                       | [`read_string_from_stdin`](#class_os_method_read_string_from_stdin) ( )                                                                                                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)                           | [`request_permission`](#class_os_method_request_permission) ( name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                     |
-| [`bool`](class_bool.md)                           | [`request_permissions`](#class_os_method_request_permissions) ( )                                                                                                                                                                                                                                                                                                                     |
-| `void`                                            | [`revoke_granted_permissions`](#class_os_method_revoke_granted_permissions) ( )                                                                                                                                                                                                                                                                                                       |
-| `void`                                            | [`set_environment`](#class_os_method_set_environment) ( variable: [`String`](class_string.md), value: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                     |
-| `void`                                            | [`set_restart_on_exit`](#class_os_method_set_restart_on_exit) ( restart: [`bool`](class_bool.md), arguments: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray() )                                                                                                                                                                                                |
-| [Error](#enum_@globalscope_error)                 | [`set_thread_name`](#class_os_method_set_thread_name) ( name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                           |
-| `void`                                            | [`set_use_file_access_save_and_swap`](#class_os_method_set_use_file_access_save_and_swap) ( enabled: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                        |
-| [Error](#enum_@globalscope_error)                 | [`shell_open`](#class_os_method_shell_open) ( uri: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                      |
-| [Error](#enum_@globalscope_error)                 | [`shell_show_in_file_manager`](#class_os_method_shell_show_in_file_manager) ( file_or_dir_path: [`String`](class_string.md), open_folder: [`bool`](class_bool.md) = true )                                                                                                                                                                                                            |
-| `void`                                            | [`unset_environment`](#class_os_method_unset_environment) ( variable: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                     |
+| `void`                                            | [`alert`](class_os.md#class_os_method_alert) ( text: [`String`](class_string.md), title: [`String`](class_string.md) = "Alert!" )                                                                                                                                                                                                                                                                |
+| `void`                                            | [`close_midi_inputs`](class_os.md#class_os_method_close_midi_inputs) ( )                                                                                                                                                                                                                                                                                                                         |
+| `void`                                            | [`crash`](class_os.md#class_os_method_crash) ( message: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                            |
+| [`int`](class_int.md)                             | [`create_instance`](class_os.md#class_os_method_create_instance) ( arguments: [`PackedStringArray`](class_packedstringarray.md) )                                                                                                                                                                                                                                                                |
+| [`int`](class_int.md)                             | [`create_process`](class_os.md#class_os_method_create_process) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md), open_console: [`bool`](class_bool.md) = false )                                                                                                                                                                                |
+| `void`                                            | [`delay_msec`](class_os.md#class_os_method_delay_msec) ( msec: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                             |
+| `void`                                            | [`delay_usec`](class_os.md#class_os_method_delay_usec) ( usec: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                             | [`execute`](class_os.md#class_os_method_execute) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md), output: [`Array`](class_array.md) = [], read_stderr: [`bool`](class_bool.md) = false, open_console: [`bool`](class_bool.md) = false )                                                                                                        |
+| [`Dictionary`](class_dictionary.md)               | [`execute_with_pipe`](class_os.md#class_os_method_execute_with_pipe) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md) )                                                                                                                                                                                                                         |
+| [Key](#enum_@globalscope_key)                     | [`find_keycode_from_string`](class_os.md#class_os_method_find_keycode_from_string) ( string: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                         |
+| [`String`](class_string.md)                       | [`get_cache_dir`](class_os.md#class_os_method_get_cache_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                                   |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_cmdline_args`](class_os.md#class_os_method_get_cmdline_args) ( )                                                                                                                                                                                                                                                                                                                           |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_cmdline_user_args`](class_os.md#class_os_method_get_cmdline_user_args) ( )                                                                                                                                                                                                                                                                                                                 |
+| [`String`](class_string.md)                       | [`get_config_dir`](class_os.md#class_os_method_get_config_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                                 |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_connected_midi_inputs`](class_os.md#class_os_method_get_connected_midi_inputs) ( )                                                                                                                                                                                                                                                                                                         |
+| [`String`](class_string.md)                       | [`get_data_dir`](class_os.md#class_os_method_get_data_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                                     |
+| [`String`](class_string.md)                       | [`get_distribution_name`](class_os.md#class_os_method_get_distribution_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
+| [`PackedByteArray`](class_packedbytearray.md)     | [`get_entropy`](class_os.md#class_os_method_get_entropy) ( size: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                         |
+| [`String`](class_string.md)                       | [`get_environment`](class_os.md#class_os_method_get_environment) ( variable: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                         |
+| [`String`](class_string.md)                       | [`get_executable_path`](class_os.md#class_os_method_get_executable_path) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_granted_permissions`](class_os.md#class_os_method_get_granted_permissions) ( ) const[^const]                                                                                                                                                                                                                                                                                               |
+| [`String`](class_string.md)                       | [`get_keycode_string`](class_os.md#class_os_method_get_keycode_string) ( code: [Key](#enum_@globalscope_key) ) const[^const]                                                                                                                                                                                                                                                                     |
+| [`String`](class_string.md)                       | [`get_locale`](class_os.md#class_os_method_get_locale) ( ) const[^const]                                                                                                                                                                                                                                                                                                                         |
+| [`String`](class_string.md)                       | [`get_locale_language`](class_os.md#class_os_method_get_locale_language) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
+| [`int`](class_int.md)                             | [`get_main_thread_id`](class_os.md#class_os_method_get_main_thread_id) ( ) const[^const]                                                                                                                                                                                                                                                                                                         |
+| [`Dictionary`](class_dictionary.md)               | [`get_memory_info`](class_os.md#class_os_method_get_memory_info) ( ) const[^const]                                                                                                                                                                                                                                                                                                               |
+| [`String`](class_string.md)                       | [`get_model_name`](class_os.md#class_os_method_get_model_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                 |
+| [`String`](class_string.md)                       | [`get_name`](class_os.md#class_os_method_get_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                             | [`get_process_exit_code`](class_os.md#class_os_method_get_process_exit_code) ( pid: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                        |
+| [`int`](class_int.md)                             | [`get_process_id`](class_os.md#class_os_method_get_process_id) ( ) const[^const]                                                                                                                                                                                                                                                                                                                 |
+| [`int`](class_int.md)                             | [`get_processor_count`](class_os.md#class_os_method_get_processor_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
+| [`String`](class_string.md)                       | [`get_processor_name`](class_os.md#class_os_method_get_processor_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                         |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_restart_on_exit_arguments`](class_os.md#class_os_method_get_restart_on_exit_arguments) ( ) const[^const]                                                                                                                                                                                                                                                                                   |
+| [`int`](class_int.md)                             | [`get_static_memory_peak_usage`](class_os.md#class_os_method_get_static_memory_peak_usage) ( ) const[^const]                                                                                                                                                                                                                                                                                     |
+| [`int`](class_int.md)                             | [`get_static_memory_usage`](class_os.md#class_os_method_get_static_memory_usage) ( ) const[^const]                                                                                                                                                                                                                                                                                               |
+| [`String`](class_string.md)                       | [`get_system_ca_certificates`](class_os.md#class_os_method_get_system_ca_certificates) ( )                                                                                                                                                                                                                                                                                                       |
+| [`String`](class_string.md)                       | [`get_system_dir`](class_os.md#class_os_method_get_system_dir) ( dir: [SystemDir](#enum_os_systemdir), shared_storage: [`bool`](class_bool.md) = true ) const[^const]                                                                                                                                                                                                                            |
+| [`String`](class_string.md)                       | [`get_system_font_path`](class_os.md#class_os_method_get_system_font_path) ( font_name: [`String`](class_string.md), weight: [`int`](class_int.md) = 400, stretch: [`int`](class_int.md) = 100, italic: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                          |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_system_font_path_for_text`](class_os.md#class_os_method_get_system_font_path_for_text) ( font_name: [`String`](class_string.md), text: [`String`](class_string.md), locale: [`String`](class_string.md) = "", script: [`String`](class_string.md) = "", weight: [`int`](class_int.md) = 400, stretch: [`int`](class_int.md) = 100, italic: [`bool`](class_bool.md) = false ) const[^const] |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_system_fonts`](class_os.md#class_os_method_get_system_fonts) ( ) const[^const]                                                                                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                             | [`get_thread_caller_id`](class_os.md#class_os_method_get_thread_caller_id) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
+| [`String`](class_string.md)                       | [`get_unique_id`](class_os.md#class_os_method_get_unique_id) ( ) const[^const]                                                                                                                                                                                                                                                                                                                   |
+| [`String`](class_string.md)                       | [`get_user_data_dir`](class_os.md#class_os_method_get_user_data_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                           |
+| [`String`](class_string.md)                       | [`get_version`](class_os.md#class_os_method_get_version) ( ) const[^const]                                                                                                                                                                                                                                                                                                                       |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_video_adapter_driver_info`](class_os.md#class_os_method_get_video_adapter_driver_info) ( ) const[^const]                                                                                                                                                                                                                                                                                   |
+| [`bool`](class_bool.md)                           | [`has_environment`](class_os.md#class_os_method_has_environment) ( variable: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                         |
+| [`bool`](class_bool.md)                           | [`has_feature`](class_os.md#class_os_method_has_feature) ( tag_name: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)                           | [`is_debug_build`](class_os.md#class_os_method_is_debug_build) ( ) const[^const]                                                                                                                                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)                           | [`is_keycode_unicode`](class_os.md#class_os_method_is_keycode_unicode) ( code: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                             |
+| [`bool`](class_bool.md)                           | [`is_process_running`](class_os.md#class_os_method_is_process_running) ( pid: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                              |
+| [`bool`](class_bool.md)                           | [`is_restart_on_exit_set`](class_os.md#class_os_method_is_restart_on_exit_set) ( ) const[^const]                                                                                                                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)                           | [`is_sandboxed`](class_os.md#class_os_method_is_sandboxed) ( ) const[^const]                                                                                                                                                                                                                                                                                                                     |
+| [`bool`](class_bool.md)                           | [`is_stdout_verbose`](class_os.md#class_os_method_is_stdout_verbose) ( ) const[^const]                                                                                                                                                                                                                                                                                                           |
+| [`bool`](class_bool.md)                           | [`is_userfs_persistent`](class_os.md#class_os_method_is_userfs_persistent) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
+| [Error](#enum_@globalscope_error)                 | [`kill`](class_os.md#class_os_method_kill) ( pid: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                        |
+| [Error](#enum_@globalscope_error)                 | [`move_to_trash`](class_os.md#class_os_method_move_to_trash) ( path: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                                 |
+| `void`                                            | [`open_midi_inputs`](class_os.md#class_os_method_open_midi_inputs) ( )                                                                                                                                                                                                                                                                                                                           |
+| [`String`](class_string.md)                       | [`read_string_from_stdin`](class_os.md#class_os_method_read_string_from_stdin) ( )                                                                                                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)                           | [`request_permission`](class_os.md#class_os_method_request_permission) ( name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                     |
+| [`bool`](class_bool.md)                           | [`request_permissions`](class_os.md#class_os_method_request_permissions) ( )                                                                                                                                                                                                                                                                                                                     |
+| `void`                                            | [`revoke_granted_permissions`](class_os.md#class_os_method_revoke_granted_permissions) ( )                                                                                                                                                                                                                                                                                                       |
+| `void`                                            | [`set_environment`](class_os.md#class_os_method_set_environment) ( variable: [`String`](class_string.md), value: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                     |
+| `void`                                            | [`set_restart_on_exit`](class_os.md#class_os_method_set_restart_on_exit) ( restart: [`bool`](class_bool.md), arguments: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray() )                                                                                                                                                                                                |
+| [Error](#enum_@globalscope_error)                 | [`set_thread_name`](class_os.md#class_os_method_set_thread_name) ( name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                           |
+| `void`                                            | [`set_use_file_access_save_and_swap`](class_os.md#class_os_method_set_use_file_access_save_and_swap) ( enabled: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                        |
+| [Error](#enum_@globalscope_error)                 | [`shell_open`](class_os.md#class_os_method_shell_open) ( uri: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                      |
+| [Error](#enum_@globalscope_error)                 | [`shell_show_in_file_manager`](class_os.md#class_os_method_shell_show_in_file_manager) ( file_or_dir_path: [`String`](class_string.md), open_folder: [`bool`](class_bool.md) = true )                                                                                                                                                                                                            |
+| `void`                                            | [`unset_environment`](class_os.md#class_os_method_unset_environment) ( variable: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -197,7 +197,7 @@ Refers to the Ringtones directory path.
 
 If `true`, the engine filters the time delta measured between each frame, and attempts to compensate for random variation. This only works on systems where V-Sync is active.
 
- **Note:** On start-up, this is the same as [`ProjectSettings.application/run/delta_smoothing`](#class_projectsettings_property_application/run/delta_smoothing).
+ **Note:** On start-up, this is the same as [`ProjectSettings.application/run/delta_smoothing`](class_projectsettings.md#class_projectsettings_property_application/run/delta_smoothing).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -212,7 +212,7 @@ If `true`, the engine filters the time delta measured between each frame, and at
 
 If `true`, the engine optimizes for low processor usage by only refreshing the screen if needed. Can improve battery consumption on mobile.
 
- **Note:** On start-up, this is the same as [`ProjectSettings.application/run/low_processor_mode`](#class_projectsettings_property_application/run/low_processor_mode).
+ **Note:** On start-up, this is the same as [`ProjectSettings.application/run/low_processor_mode`](class_projectsettings.md#class_projectsettings_property_application/run/low_processor_mode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -225,9 +225,9 @@ If `true`, the engine optimizes for low processor usage by only refreshing the s
 - `void` **set_low_processor_usage_mode_sleep_usec** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_low_processor_usage_mode_sleep_usec** ( )
 
-The amount of sleeping between frames when the low-processor usage mode is enabled, in microseconds. Higher values will result in lower CPU usage. See also [`low_processor_usage_mode`](#class_os_property_low_processor_usage_mode).
+The amount of sleeping between frames when the low-processor usage mode is enabled, in microseconds. Higher values will result in lower CPU usage. See also [`low_processor_usage_mode`](class_os.md#class_os_property_low_processor_usage_mode).
 
- **Note:** On start-up, this is the same as [`ProjectSettings.application/run/low_processor_mode_sleep_usec`](#class_projectsettings_property_application/run/low_processor_mode_sleep_usec).
+ **Note:** On start-up, this is the same as [`ProjectSettings.application/run/low_processor_mode_sleep_usec`](class_projectsettings.md#class_projectsettings_property_application/run/low_processor_mode_sleep_usec).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -249,7 +249,7 @@ Displays a modal dialog box using the host platform's implementation. The engine
 
 `void` **close_midi_inputs** ( )<div id="class_os_method_close_midi_inputs"></div>
 
-Shuts down the system MIDI driver. Godot will no longer receive [`InputEventMIDI`](class_inputeventmidi.md). See also [`open_midi_inputs`](#class_os_method_open_midi_inputs) and [`get_connected_midi_inputs`](#class_os_method_get_connected_midi_inputs).
+Shuts down the system MIDI driver. Godot will no longer receive [`InputEventMIDI`](class_inputeventmidi.md). See also [`open_midi_inputs`](class_os.md#class_os_method_open_midi_inputs) and [`get_connected_midi_inputs`](class_os.md#class_os_method_get_connected_midi_inputs).
 
  **Note:** This method is implemented on Linux, macOS and Windows.
 
@@ -261,9 +261,9 @@ Shuts down the system MIDI driver. Godot will no longer receive [`InputEventMIDI
 
 `void` **crash** ( message: [`String`](class_string.md) )<div id="class_os_method_crash"></div>
 
-Crashes the engine (or the editor if called within a `@tool` script). See also [`kill`](#class_os_method_kill).
+Crashes the engine (or the editor if called within a `@tool` script). See also [`kill`](class_os.md#class_os_method_kill).
 
- **Note:** This method should *only* be used for testing the system's crash handler, not for any other purpose. For general error reporting, use (in order of preference) [`@GDScript.assert`](#class_@gdscript_method_assert), [`@GlobalScope.push_error`](#class_@globalscope_method_push_error), or [`alert`](#class_os_method_alert).
+ **Note:** This method should *only* be used for testing the system's crash handler, not for any other purpose. For general error reporting, use (in order of preference) [`@GDScript.assert`](class_@gdscript.md#class_@gdscript_method_assert), [`@GlobalScope.push_error`](class_@globalscope.md#class_@globalscope_method_push_error), or [`alert`](class_os.md#class_os_method_alert).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -275,9 +275,9 @@ Crashes the engine (or the editor if called within a `@tool` script). See also [
 
 Creates a new instance of Godot that runs independently. The `arguments` are used in the given order and separated by a space.
 
-If the process is successfully created, this method returns the new process' ID, which you can use to monitor the process (and potentially terminate it with [`kill`](#class_os_method_kill)). If the process cannot be created, this method returns `-1`.
+If the process is successfully created, this method returns the new process' ID, which you can use to monitor the process (and potentially terminate it with [`kill`](class_os.md#class_os_method_kill)). If the process cannot be created, this method returns `-1`.
 
-See [`create_process`](#class_os_method_create_process) if you wish to run a different process.
+See [`create_process`](class_os.md#class_os_method_create_process) if you wish to run a different process.
 
  **Note:** This method is implemented on Android, Linux, macOS and Windows.
 
@@ -293,7 +293,7 @@ Creates a new process that runs independently of Godot. It will not terminate wh
 
 On Windows, if `open_console` is `true` and the process is a console app, a new terminal window will be opened.
 
-If the process is successfully created, this method returns its process ID, which you can use to monitor the process (and potentially terminate it with [`kill`](#class_os_method_kill)). Otherwise, this method returns `-1`.
+If the process is successfully created, this method returns its process ID, which you can use to monitor the process (and potentially terminate it with [`kill`](class_os.md#class_os_method_kill)). Otherwise, this method returns `-1`.
 
 For example, running another instance of the project:
 
@@ -311,7 +311,7 @@ For example, running another instance of the project:
 
 
 
-See [`execute`](#class_os_method_execute) if you wish to run an external command and retrieve the results.
+See [`execute`](class_os.md#class_os_method_execute) if you wish to run an external command and retrieve the results.
 
  **Note:** This method is implemented on Android, Linux, macOS, and Windows.
 
@@ -329,11 +329,11 @@ See [`execute`](#class_os_method_execute) if you wish to run an external command
 
 `void` **delay_msec** ( msec: [`int`](class_int.md) ) const[^const]<div id="class_os_method_delay_msec"></div>
 
-Delays execution of the current thread by `msec` milliseconds. `msec` must be greater than or equal to `0`. Otherwise, [`delay_msec`](#class_os_method_delay_msec) does nothing and prints an error message.
+Delays execution of the current thread by `msec` milliseconds. `msec` must be greater than or equal to `0`. Otherwise, [`delay_msec`](class_os.md#class_os_method_delay_msec) does nothing and prints an error message.
 
- **Note:** [`delay_msec`](#class_os_method_delay_msec) is a *blocking* way to delay code execution. To delay code execution in a non-blocking way, you may use [`SceneTree.create_timer`](#class_scenetree_method_create_timer). Awaiting with [`SceneTreeTimer`](class_scenetreetimer.md) delays the execution of code placed below the `await` without affecting the rest of the project (or editor, for [`EditorPlugin`](class_editorplugin.md) s and [`EditorScript`](class_editorscript.md) s).
+ **Note:** [`delay_msec`](class_os.md#class_os_method_delay_msec) is a *blocking* way to delay code execution. To delay code execution in a non-blocking way, you may use [`SceneTree.create_timer`](class_scenetree.md#class_scenetree_method_create_timer). Awaiting with [`SceneTreeTimer`](class_scenetreetimer.md) delays the execution of code placed below the `await` without affecting the rest of the project (or editor, for [`EditorPlugin`](class_editorplugin.md) s and [`EditorScript`](class_editorscript.md) s).
 
- **Note:** When [`delay_msec`](#class_os_method_delay_msec) is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using [`delay_msec`](#class_os_method_delay_msec) as part of an [`EditorPlugin`](class_editorplugin.md) or [`EditorScript`](class_editorscript.md), it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).
+ **Note:** When [`delay_msec`](class_os.md#class_os_method_delay_msec) is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using [`delay_msec`](class_os.md#class_os_method_delay_msec) as part of an [`EditorPlugin`](class_editorplugin.md) or [`EditorScript`](class_editorscript.md), it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -343,11 +343,11 @@ Delays execution of the current thread by `msec` milliseconds. `msec` must be gr
 
 `void` **delay_usec** ( usec: [`int`](class_int.md) ) const[^const]<div id="class_os_method_delay_usec"></div>
 
-Delays execution of the current thread by `usec` microseconds. `usec` must be greater than or equal to `0`. Otherwise, [`delay_usec`](#class_os_method_delay_usec) does nothing and prints an error message.
+Delays execution of the current thread by `usec` microseconds. `usec` must be greater than or equal to `0`. Otherwise, [`delay_usec`](class_os.md#class_os_method_delay_usec) does nothing and prints an error message.
 
- **Note:** [`delay_usec`](#class_os_method_delay_usec) is a *blocking* way to delay code execution. To delay code execution in a non-blocking way, you may use [`SceneTree.create_timer`](#class_scenetree_method_create_timer). Awaiting with a [`SceneTreeTimer`](class_scenetreetimer.md) delays the execution of code placed below the `await` without affecting the rest of the project (or editor, for [`EditorPlugin`](class_editorplugin.md) s and [`EditorScript`](class_editorscript.md) s).
+ **Note:** [`delay_usec`](class_os.md#class_os_method_delay_usec) is a *blocking* way to delay code execution. To delay code execution in a non-blocking way, you may use [`SceneTree.create_timer`](class_scenetree.md#class_scenetree_method_create_timer). Awaiting with a [`SceneTreeTimer`](class_scenetreetimer.md) delays the execution of code placed below the `await` without affecting the rest of the project (or editor, for [`EditorPlugin`](class_editorplugin.md) s and [`EditorScript`](class_editorscript.md) s).
 
- **Note:** When [`delay_usec`](#class_os_method_delay_usec) is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using [`delay_usec`](#class_os_method_delay_usec) as part of an [`EditorPlugin`](class_editorplugin.md) or [`EditorScript`](class_editorscript.md), it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).
+ **Note:** When [`delay_usec`](class_os.md#class_os_method_delay_usec) is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using [`delay_usec`](class_os.md#class_os_method_delay_usec) as part of an [`EditorPlugin`](class_editorplugin.md) or [`EditorScript`](class_editorscript.md), it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -365,7 +365,7 @@ On Windows, if `open_console` is `true` and the process is a console app, a new 
 
 This method returns the exit code of the command, or `-1` if the process fails to execute.
 
- **Note:** The main thread will be blocked until the executed command terminates. Use [`Thread`](class_thread.md) to create a separate thread that will not block the main thread, or use [`create_process`](#class_os_method_create_process) to create a completely independent process.
+ **Note:** The main thread will be blocked until the executed command terminates. Use [`Thread`](class_thread.md) to create a separate thread that will not block the main thread, or use [`create_process`](class_os.md#class_os_method_create_process) to create a completely independent process.
 
 For example, to retrieve a list of the working directory's contents:
 
@@ -439,7 +439,7 @@ If the process cannot be created, this method returns an empty [`Dictionary`](cl
 
 - `"stderr"` - [`FileAccess`](class_fileaccess.md) to access the process stderr pipe (read only).
 
-- `"pid"` - Process ID as an [`int`](class_int.md), which you can use to monitor the process (and potentially terminate it with [`kill`](#class_os_method_kill)).
+- `"pid"` - Process ID as an [`int`](class_int.md), which you can use to monitor the process (and potentially terminate it with [`kill`](class_os.md#class_os_method_kill)).
 
  **Note:** This method is implemented on Android, Linux, macOS, and Windows.
 
@@ -481,7 +481,7 @@ Finds the keycode for the given string. The returned values are equivalent to th
 
 
 
-See also [`get_keycode_string`](#class_os_method_get_keycode_string).
+See also [`get_keycode_string`](class_os.md#class_os_method_get_keycode_string).
 
 
 
@@ -497,9 +497,9 @@ See also [`get_keycode_string`](#class_os_method_get_keycode_string).
 
 Returns the *global* cache data directory according to the operating system's standards.
 
-On the Linux/BSD platform, this path can be overridden by setting the `XDG_CACHE_HOME` environment variable before starting the project. See [*File paths in Godot projects*](../tutorials/io/data_paths) in the documentation for more information. See also [`get_config_dir`](#class_os_method_get_config_dir) and [`get_data_dir`](#class_os_method_get_data_dir).
+On the Linux/BSD platform, this path can be overridden by setting the `XDG_CACHE_HOME` environment variable before starting the project. See [*File paths in Godot projects*](../tutorials/io/data_paths) in the documentation for more information. See also [`get_config_dir`](class_os.md#class_os_method_get_config_dir) and [`get_data_dir`](class_os.md#class_os_method_get_data_dir).
 
-Not to be confused with [`get_user_data_dir`](#class_os_method_get_user_data_dir), which returns the *project-specific* user data path.
+Not to be confused with [`get_user_data_dir`](class_os.md#class_os_method_get_user_data_dir), which returns the *project-specific* user data path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -513,9 +513,9 @@ Returns the command-line arguments passed to the engine.
 
 Command-line arguments can be written in any form, including both `--key value` and `--key=value` forms so they can be properly parsed, as long as custom command-line arguments do not conflict with engine arguments.
 
-You can also incorporate environment variables using the [`get_environment`](#class_os_method_get_environment) method.
+You can also incorporate environment variables using the [`get_environment`](class_os.md#class_os_method_get_environment) method.
 
-You can set [`ProjectSettings.editor/run/main_run_args`](#class_projectsettings_property_editor/run/main_run_args) to define command-line arguments to be passed by the editor when running the project.
+You can set [`ProjectSettings.editor/run/main_run_args`](class_projectsettings.md#class_projectsettings_property_editor/run/main_run_args) to define command-line arguments to be passed by the editor when running the project.
 
 Here's a minimal example on how to parse command-line arguments into a [`Dictionary`](class_dictionary.md) using the `--key=value` form for arguments:
 
@@ -555,7 +555,7 @@ Here's a minimal example on how to parse command-line arguments into a [`Diction
 
 
 
- **Note:** Passing custom user arguments directly is not recommended, as the engine may discard or modify them. Instead, pass the standard UNIX double dash (`--`) and then the custom arguments, which the engine will ignore by design. These can be read via [`get_cmdline_user_args`](#class_os_method_get_cmdline_user_args).
+ **Note:** Passing custom user arguments directly is not recommended, as the engine may discard or modify them. Instead, pass the standard UNIX double dash (`--`) and then the custom arguments, which the engine will ignore by design. These can be read via [`get_cmdline_user_args`](class_os.md#class_os_method_get_cmdline_user_args).
 
 
 
@@ -580,7 +580,7 @@ Returns the command-line user arguments passed to the engine. User arguments are
     OS.get_cmdline_user_args() # Returns ["--level=2", "--hardcore"]
 ```
 
-To get all passed arguments, use [`get_cmdline_args`](#class_os_method_get_cmdline_args).
+To get all passed arguments, use [`get_cmdline_args`](class_os.md#class_os_method_get_cmdline_args).
 
 
 
@@ -594,9 +594,9 @@ To get all passed arguments, use [`get_cmdline_args`](#class_os_method_get_cmdli
 
 Returns the *global* user configuration directory according to the operating system's standards.
 
-On the Linux/BSD platform, this path can be overridden by setting the `XDG_CONFIG_HOME` environment variable before starting the project. See [*File paths in Godot projects*](../tutorials/io/data_paths) in the documentation for more information. See also [`get_cache_dir`](#class_os_method_get_cache_dir) and [`get_data_dir`](#class_os_method_get_data_dir).
+On the Linux/BSD platform, this path can be overridden by setting the `XDG_CONFIG_HOME` environment variable before starting the project. See [*File paths in Godot projects*](../tutorials/io/data_paths) in the documentation for more information. See also [`get_cache_dir`](class_os.md#class_os_method_get_cache_dir) and [`get_data_dir`](class_os.md#class_os_method_get_data_dir).
 
-Not to be confused with [`get_user_data_dir`](#class_os_method_get_user_data_dir), which returns the *project-specific* user data path.
+Not to be confused with [`get_user_data_dir`](class_os.md#class_os_method_get_user_data_dir), which returns the *project-specific* user data path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -606,7 +606,7 @@ Not to be confused with [`get_user_data_dir`](#class_os_method_get_user_data_dir
 
 [`PackedStringArray`](class_packedstringarray.md) **get_connected_midi_inputs** ( )<div id="class_os_method_get_connected_midi_inputs"></div>
 
-Returns an array of connected MIDI device names, if they exist. Returns an empty array if the system MIDI driver has not previously been initialized with [`open_midi_inputs`](#class_os_method_open_midi_inputs). See also [`close_midi_inputs`](#class_os_method_close_midi_inputs).
+Returns an array of connected MIDI device names, if they exist. Returns an empty array if the system MIDI driver has not previously been initialized with [`open_midi_inputs`](class_os.md#class_os_method_open_midi_inputs). See also [`close_midi_inputs`](class_os.md#class_os_method_close_midi_inputs).
 
  **Note:** This method is implemented on Linux, macOS and Windows.
 
@@ -620,9 +620,9 @@ Returns an array of connected MIDI device names, if they exist. Returns an empty
 
 Returns the *global* user data directory according to the operating system's standards.
 
-On the Linux/BSD platform, this path can be overridden by setting the `XDG_DATA_HOME` environment variable before starting the project. See [*File paths in Godot projects*](../tutorials/io/data_paths) in the documentation for more information. See also [`get_cache_dir`](#class_os_method_get_cache_dir) and [`get_config_dir`](#class_os_method_get_config_dir).
+On the Linux/BSD platform, this path can be overridden by setting the `XDG_DATA_HOME` environment variable before starting the project. See [*File paths in Godot projects*](../tutorials/io/data_paths) in the documentation for more information. See also [`get_cache_dir`](class_os.md#class_os_method_get_cache_dir) and [`get_config_dir`](class_os.md#class_os_method_get_config_dir).
 
-Not to be confused with [`get_user_data_dir`](#class_os_method_get_user_data_dir), which returns the *project-specific* user data path.
+Not to be confused with [`get_user_data_dir`](class_os.md#class_os_method_get_user_data_dir), which returns the *project-specific* user data path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -634,9 +634,9 @@ Not to be confused with [`get_user_data_dir`](#class_os_method_get_user_data_dir
 
 Returns the name of the distribution for Linux and BSD platforms (e.g. "Ubuntu", "Manjaro", "OpenBSD", etc.).
 
-Returns the same value as [`get_name`](#class_os_method_get_name) for stock Android ROMs, but attempts to return the custom ROM name for popular Android derivatives such as "LineageOS".
+Returns the same value as [`get_name`](class_os.md#class_os_method_get_name) for stock Android ROMs, but attempts to return the custom ROM name for popular Android derivatives such as "LineageOS".
 
-Returns the same value as [`get_name`](#class_os_method_get_name) for other platforms.
+Returns the same value as [`get_name`](class_os.md#class_os_method_get_name) for other platforms.
 
  **Note:** This method is not supported on the Web platform. It returns an empty string.
 
@@ -650,7 +650,7 @@ Returns the same value as [`get_name`](#class_os_method_get_name) for other plat
 
 Generates a [`PackedByteArray`](class_packedbytearray.md) of cryptographically secure random bytes with given `size`.
 
- **Note:** Generating large quantities of bytes using this method can result in locking and entropy of lower quality on most platforms. Using [`Crypto.generate_random_bytes`](#class_crypto_method_generate_random_bytes) is preferred in most cases.
+ **Note:** Generating large quantities of bytes using this method can result in locking and entropy of lower quality on most platforms. Using [`Crypto.generate_random_bytes`](class_crypto.md#class_crypto_method_generate_random_bytes) is preferred in most cases.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -676,7 +676,7 @@ Returns the value of the given environment variable, or an empty string if `vari
 
 Returns the file path to the current engine executable.
 
- **Note:** On macOS, if you want to launch another instance of Godot, always use [`create_instance`](#class_os_method_create_instance) instead of relying on the executable path.
+ **Note:** On macOS, if you want to launch another instance of Godot, always use [`create_instance`](class_os.md#class_os_method_create_instance) instead of relying on the executable path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -718,7 +718,7 @@ Returns the given keycode as a [`String`](class_string.md).
 
 
 
-See also [`find_keycode_from_string`](#class_os_method_find_keycode_from_string), [`InputEventKey.keycode`](#class_inputeventkey_property_keycode), and [`InputEventKey.get_keycode_with_modifiers`](#class_inputeventkey_method_get_keycode_with_modifiers).
+See also [`find_keycode_from_string`](class_os.md#class_os_method_find_keycode_from_string), [`InputEventKey.keycode`](class_inputeventkey.md#class_inputeventkey_property_keycode), and [`InputEventKey.get_keycode_with_modifiers`](class_inputeventkey.md#class_inputeventkey_method_get_keycode_with_modifiers).
 
 
 
@@ -744,7 +744,7 @@ Returns the host OS locale as a [`String`](class_string.md) of the form `languag
 
 - `extra` - semicolon separated list of additional key words. This may include currency, calendar, sort order and numbering system information.
 
-If you want only the language code and not the fully specified locale from the OS, you can use [`get_locale_language`](#class_os_method_get_locale_language).
+If you want only the language code and not the fully specified locale from the OS, you can use [`get_locale_language`](class_os.md#class_os_method_get_locale_language).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -754,7 +754,7 @@ If you want only the language code and not the fully specified locale from the O
 
 [`String`](class_string.md) **get_locale_language** ( ) const[^const]<div id="class_os_method_get_locale_language"></div>
 
-Returns the host OS locale's 2 or 3-letter [*language code*](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) as a string which should be consistent on all platforms. This is equivalent to extracting the `language` part of the [`get_locale`](#class_os_method_get_locale) string.
+Returns the host OS locale's 2 or 3-letter [*language code*](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) as a string which should be consistent on all platforms. This is equivalent to extracting the `language` part of the [`get_locale`](class_os.md#class_os_method_get_locale) string.
 
 This can be used to narrow down fully specified locale strings to only the "common" language code, when you don't need the additional information about country code or variants. For example, for a French Canadian user with `fr_CA` locale, this would return `fr`.
 
@@ -766,7 +766,7 @@ This can be used to narrow down fully specified locale strings to only the "comm
 
 [`int`](class_int.md) **get_main_thread_id** ( ) const[^const]<div id="class_os_method_get_main_thread_id"></div>
 
-Returns the ID of the main thread. See [`get_thread_caller_id`](#class_os_method_get_thread_caller_id).
+Returns the ID of the main thread. See [`get_thread_caller_id`](class_os.md#class_os_method_get_thread_caller_id).
 
  **Note:** Thread IDs are not deterministic and may be reused across application restarts.
 
@@ -878,7 +878,7 @@ Returns the name of the host platform.
 
 
 
- **Note:** On Web platforms, it is still possible to determine the host platform's OS with feature tags. See [`has_feature`](#class_os_method_has_feature).
+ **Note:** On Web platforms, it is still possible to determine the host platform's OS with feature tags. See [`has_feature`](class_os.md#class_os_method_has_feature).
 
 
 
@@ -892,7 +892,7 @@ Returns the name of the host platform.
 
 [`int`](class_int.md) **get_process_exit_code** ( pid: [`int`](class_int.md) ) const[^const]<div id="class_os_method_get_process_exit_code"></div>
 
-Returns the exit code of a spawned process once it has finished running (see [`is_process_running`](#class_os_method_is_process_running)).
+Returns the exit code of a spawned process once it has finished running (see [`is_process_running`](class_os.md#class_os_method_is_process_running)).
 
 Returns `-1` if the `pid` is not a PID of a spawned child process, the process is still running, or the method is not implemented for the current platform.
 
@@ -932,7 +932,7 @@ Returns the number of *logical* CPU cores available on the host machine. On CPUs
 
 Returns the full name of the CPU model on the host machine (e.g. `"Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"`).
 
- **Note:** This method is only implemented on Windows, macOS, Linux and iOS. On Android and Web, [`get_processor_name`](#class_os_method_get_processor_name) returns an empty string.
+ **Note:** This method is only implemented on Windows, macOS, Linux and iOS. On Android and Web, [`get_processor_name`](class_os.md#class_os_method_get_processor_name) returns an empty string.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -942,7 +942,7 @@ Returns the full name of the CPU model on the host machine (e.g. `"Intel(R) Core
 
 [`PackedStringArray`](class_packedstringarray.md) **get_restart_on_exit_arguments** ( ) const[^const]<div id="class_os_method_get_restart_on_exit_arguments"></div>
 
-Returns the list of command line arguments that will be used when the project automatically restarts using [`set_restart_on_exit`](#class_os_method_set_restart_on_exit). See also [`is_restart_on_exit_set`](#class_os_method_is_restart_on_exit_set).
+Returns the list of command line arguments that will be used when the project automatically restarts using [`set_restart_on_exit`](class_os.md#class_os_method_set_restart_on_exit). See also [`is_restart_on_exit_set`](class_os.md#class_os_method_is_restart_on_exit_set).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1068,7 +1068,7 @@ Returns a string that is unique to the device.
 
 [`String`](class_string.md) **get_user_data_dir** ( ) const[^const]<div id="class_os_method_get_user_data_dir"></div>
 
-Returns the absolute directory path where user data is written (the `user://` directory in Godot). The path depends on the project name and [`ProjectSettings.application/config/use_custom_user_dir`](#class_projectsettings_property_application/config/use_custom_user_dir).
+Returns the absolute directory path where user data is written (the `user://` directory in Godot). The path depends on the project name and [`ProjectSettings.application/config/use_custom_user_dir`](class_projectsettings.md#class_projectsettings_property_application/config/use_custom_user_dir).
 
 - On Windows, this is `%AppData%\Godot\app_userdata\[project_name]`, or `%AppData%\[custom_name]` if `use_custom_user_dir` is set. `%AppData%` expands to `%UserProfile%\AppData\Roaming`.
 
@@ -1082,7 +1082,7 @@ Returns the absolute directory path where user data is written (the `user://` di
 
 If the project name is empty, `[project_name]` falls back to `[unnamed project]`.
 
-Not to be confused with [`get_data_dir`](#class_os_method_get_data_dir), which returns the *global* (non-project-specific) user home directory.
+Not to be confused with [`get_data_dir`](class_os.md#class_os_method_get_data_dir), which returns the *global* (non-project-specific) user home directory.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1112,7 +1112,7 @@ Returns the exact production and build version of the operating system. This is 
 
 [`PackedStringArray`](class_packedstringarray.md) **get_video_adapter_driver_info** ( ) const[^const]<div id="class_os_method_get_video_adapter_driver_info"></div>
 
-Returns the video adapter driver name and version for the user's currently active graphics card, as a [`PackedStringArray`](class_packedstringarray.md). See also [`RenderingServer.get_video_adapter_api_version`](#class_renderingserver_method_get_video_adapter_api_version).
+Returns the video adapter driver name and version for the user's currently active graphics card, as a [`PackedStringArray`](class_packedstringarray.md). See also [`RenderingServer.get_video_adapter_api_version`](class_renderingserver.md#class_renderingserver_method_get_video_adapter_api_version).
 
 The first element holds the driver name, such as `nvidia`, `amdgpu`, etc.
 
@@ -1202,7 +1202,7 @@ Returns `true` if the input keycode corresponds to a Unicode character. For a li
 
 [`bool`](class_bool.md) **is_process_running** ( pid: [`int`](class_int.md) ) const[^const]<div id="class_os_method_is_process_running"></div>
 
-Returns `true` if the child process ID (`pid`) is still running or `false` if it has terminated. `pid` must be a valid ID generated from [`create_process`](#class_os_method_create_process).
+Returns `true` if the child process ID (`pid`) is still running or `false` if it has terminated. `pid` must be a valid ID generated from [`create_process`](class_os.md#class_os_method_create_process).
 
  **Note:** This method is implemented on Android, iOS, Linux, macOS, and Windows.
 
@@ -1214,7 +1214,7 @@ Returns `true` if the child process ID (`pid`) is still running or `false` if it
 
 [`bool`](class_bool.md) **is_restart_on_exit_set** ( ) const[^const]<div id="class_os_method_is_restart_on_exit_set"></div>
 
-Returns `true` if the project will automatically restart when it exits for any reason, `false` otherwise. See also [`set_restart_on_exit`](#class_os_method_set_restart_on_exit) and [`get_restart_on_exit_arguments`](#class_os_method_get_restart_on_exit_arguments).
+Returns `true` if the project will automatically restart when it exits for any reason, `false` otherwise. See also [`set_restart_on_exit`](class_os.md#class_os_method_set_restart_on_exit) and [`get_restart_on_exit_arguments`](class_os.md#class_os_method_get_restart_on_exit_arguments).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1236,7 +1236,7 @@ Returns `true` if the application is running in the sandbox.
 
 [`bool`](class_bool.md) **is_stdout_verbose** ( ) const[^const]<div id="class_os_method_is_stdout_verbose"></div>
 
-Returns `true` if the engine was executed with the `--verbose` or `-v` command line argument, or if [`ProjectSettings.debug/settings/stdout/verbose_stdout`](#class_projectsettings_property_debug/settings/stdout/verbose_stdout) is `true`. See also [`@GlobalScope.print_verbose`](#class_@globalscope_method_print_verbose).
+Returns `true` if the engine was executed with the `--verbose` or `-v` command line argument, or if [`ProjectSettings.debug/settings/stdout/verbose_stdout`](class_projectsettings.md#class_projectsettings_property_debug/settings/stdout/verbose_stdout) is `true`. See also [`@GlobalScope.print_verbose`](class_@globalscope.md#class_@globalscope_method_print_verbose).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1256,7 +1256,7 @@ Returns `true` if the `user://` file system is persistent, that is, its state is
 
 [Error](#enum_@globalscope_error) **kill** ( pid: [`int`](class_int.md) )<div id="class_os_method_kill"></div>
 
-Kill (terminate) the process identified by the given process ID (`pid`), such as the ID returned by [`execute`](#class_os_method_execute) in non-blocking mode. See also [`crash`](#class_os_method_crash).
+Kill (terminate) the process identified by the given process ID (`pid`), such as the ID returned by [`execute`](class_os.md#class_os_method_execute) in non-blocking mode. See also [`crash`](class_os.md#class_os_method_crash).
 
  **Note:** This method can also be used to kill processes that were not spawned by the engine.
 
@@ -1270,11 +1270,11 @@ Kill (terminate) the process identified by the given process ID (`pid`), such as
 
 [Error](#enum_@globalscope_error) **move_to_trash** ( path: [`String`](class_string.md) ) const[^const]<div id="class_os_method_move_to_trash"></div>
 
-Moves the file or directory at the given `path` to the system's recycle bin. See also [`DirAccess.remove`](#class_diraccess_method_remove).
+Moves the file or directory at the given `path` to the system's recycle bin. See also [`DirAccess.remove`](class_diraccess.md#class_diraccess_method_remove).
 
-The method takes only global paths, so you may need to use [`ProjectSettings.globalize_path`](#class_projectsettings_method_globalize_path). Do not use it for files in `res://` as it will not work in exported projects.
+The method takes only global paths, so you may need to use [`ProjectSettings.globalize_path`](class_projectsettings.md#class_projectsettings_method_globalize_path). Do not use it for files in `res://` as it will not work in exported projects.
 
-Returns [`@GlobalScope.FAILED`](#class_@globalscope_constant_failed) if the file or directory cannot be found, or the system does not support this method.
+Returns [`@GlobalScope.FAILED`](class_@globalscope.md#class_@globalscope_constant_failed) if the file or directory cannot be found, or the system does not support this method.
 
 
 
@@ -1308,7 +1308,7 @@ Returns [`@GlobalScope.FAILED`](#class_@globalscope_constant_failed) if the file
 
 `void` **open_midi_inputs** ( )<div id="class_os_method_open_midi_inputs"></div>
 
-Initializes the singleton for the system MIDI driver, allowing Godot to receive [`InputEventMIDI`](class_inputeventmidi.md). See also [`get_connected_midi_inputs`](#class_os_method_get_connected_midi_inputs) and [`close_midi_inputs`](#class_os_method_close_midi_inputs).
+Initializes the singleton for the system MIDI driver, allowing Godot to receive [`InputEventMIDI`](class_inputeventmidi.md). See also [`get_connected_midi_inputs`](class_os.md#class_os_method_get_connected_midi_inputs) and [`close_midi_inputs`](class_os.md#class_os_method_close_midi_inputs).
 
  **Note:** This method is implemented on Linux, macOS and Windows.
 
@@ -1320,7 +1320,7 @@ Initializes the singleton for the system MIDI driver, allowing Godot to receive 
 
 [`String`](class_string.md) **read_string_from_stdin** ( )<div id="class_os_method_read_string_from_stdin"></div>
 
-Reads a user input string from the standard input (usually the terminal). This operation is *blocking*, which causes the window to freeze if [`read_string_from_stdin`](#class_os_method_read_string_from_stdin) is called on the main thread. The thread calling [`read_string_from_stdin`](#class_os_method_read_string_from_stdin) will block until the program receives a line break in standard input (usually by the user pressing <i class="fa fa-gamepad"></i>`Enter`).
+Reads a user input string from the standard input (usually the terminal). This operation is *blocking*, which causes the window to freeze if [`read_string_from_stdin`](class_os.md#class_os_method_read_string_from_stdin) is called on the main thread. The thread calling [`read_string_from_stdin`](class_os.md#class_os_method_read_string_from_stdin) will block until the program receives a line break in standard input (usually by the user pressing <i class="fa fa-gamepad"></i>`Enter`).
 
  **Note:** This method is implemented on Linux, macOS and Windows.
 
@@ -1368,7 +1368,7 @@ On macOS (sandboxed applications only), this function clears list of user select
 
 `void` **set_environment** ( variable: [`String`](class_string.md), value: [`String`](class_string.md) ) const[^const]<div id="class_os_method_set_environment"></div>
 
-Sets the value of the environment variable `variable` to `value`. The environment variable will be set for the Godot process and any process executed with [`execute`](#class_os_method_execute) after running [`set_environment`](#class_os_method_set_environment). The environment variable will *not* persist to processes run after the Godot process was terminated.
+Sets the value of the environment variable `variable` to `value`. The environment variable will be set for the Godot process and any process executed with [`execute`](class_os.md#class_os_method_execute) after running [`set_environment`](class_os.md#class_os_method_set_environment). The environment variable will *not* persist to processes run after the Godot process was terminated.
 
  **Note:** Environment variable names are case-sensitive on all platforms except Windows. The `variable` name cannot be empty or include the `=` character. On Windows, there is a 32767 characters limit for the combined length of `variable`, `value`, and the `=` and null terminator characters that will be registered in the environment block.
 
@@ -1380,9 +1380,9 @@ Sets the value of the environment variable `variable` to `value`. The environmen
 
 `void` **set_restart_on_exit** ( restart: [`bool`](class_bool.md), arguments: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray() )<div id="class_os_method_set_restart_on_exit"></div>
 
-If `restart` is `true`, restarts the project automatically when it is exited with [`SceneTree.quit`](#class_scenetree_method_quit) or [`Node.NOTIFICATION_WM_CLOSE_REQUEST`](#class_node_constant_notification_wm_close_request). Command-line `arguments` can be supplied. To restart the project with the same command line arguments as originally used to run the project, pass [`get_cmdline_args`](#class_os_method_get_cmdline_args) as the value for `arguments`.
+If `restart` is `true`, restarts the project automatically when it is exited with [`SceneTree.quit`](class_scenetree.md#class_scenetree_method_quit) or [`Node.NOTIFICATION_WM_CLOSE_REQUEST`](class_node.md#class_node_constant_notification_wm_close_request). Command-line `arguments` can be supplied. To restart the project with the same command line arguments as originally used to run the project, pass [`get_cmdline_args`](class_os.md#class_os_method_get_cmdline_args) as the value for `arguments`.
 
-This method can be used to apply setting changes that require a restart. See also [`is_restart_on_exit_set`](#class_os_method_is_restart_on_exit_set) and [`get_restart_on_exit_arguments`](#class_os_method_get_restart_on_exit_arguments).
+This method can be used to apply setting changes that require a restart. See also [`is_restart_on_exit_set`](class_os.md#class_os_method_is_restart_on_exit_set) and [`get_restart_on_exit_arguments`](class_os.md#class_os_method_get_restart_on_exit_arguments).
 
  **Note:** This method is only effective on desktop platforms, and only when the project isn't started from the editor. It will have no effect on mobile and Web platforms, or when the project is started from the editor.
 
@@ -1396,7 +1396,7 @@ This method can be used to apply setting changes that require a restart. See als
 
 [Error](#enum_@globalscope_error) **set_thread_name** ( name: [`String`](class_string.md) )<div id="class_os_method_set_thread_name"></div>
 
-Assigns the given name to the current thread. Returns [`@GlobalScope.ERR_UNAVAILABLE`](#class_@globalscope_constant_err_unavailable) if unavailable on the current platform.
+Assigns the given name to the current thread. Returns [`@GlobalScope.ERR_UNAVAILABLE`](class_@globalscope.md#class_@globalscope_constant_err_unavailable) if unavailable on the current platform.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1426,9 +1426,9 @@ Requests the OS to open a resource identified by `uri` with the most appropriate
 
 - `OS.shell_open("mailto:example@example.com")` opens the default email client with the "To" field set to `example@example.com`. See [*RFC 2368 - The [code]mailto[/code] URL scheme*](https://datatracker.ietf.org/doc/html/rfc2368) for a list of fields that can be added.
 
-Use [`ProjectSettings.globalize_path`](#class_projectsettings_method_globalize_path) to convert a `res://` or `user://` project path into a system path for use with this method.
+Use [`ProjectSettings.globalize_path`](class_projectsettings.md#class_projectsettings_method_globalize_path) to convert a `res://` or `user://` project path into a system path for use with this method.
 
- **Note:** Use [`String.uri_encode`](#class_string_method_uri_encode) to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, [`shell_open`](#class_os_method_shell_open) may not work correctly in a project exported to the Web platform.
+ **Note:** Use [`String.uri_encode`](class_string.md#class_string_method_uri_encode) to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, [`shell_open`](class_os.md#class_os_method_shell_open) may not work correctly in a project exported to the Web platform.
 
  **Note:** This method is implemented on Android, iOS, Web, Linux, macOS and Windows.
 
@@ -1444,9 +1444,9 @@ Requests the OS to open the file manager, navigate to the given `file_or_dir_pat
 
 If `open_folder` is `true` and `file_or_dir_path` is a valid directory path, the OS will open the file manager and navigate to the target folder without selecting anything.
 
-Use [`ProjectSettings.globalize_path`](#class_projectsettings_method_globalize_path) to convert a `res://` or `user://` project path into a system path to use with this method.
+Use [`ProjectSettings.globalize_path`](class_projectsettings.md#class_projectsettings_method_globalize_path) to convert a `res://` or `user://` project path into a system path to use with this method.
 
- **Note:** This method is currently only implemented on Windows and macOS. On other platforms, it will fallback to [`shell_open`](#class_os_method_shell_open) with a directory path of `file_or_dir_path` prefixed with `file://`.
+ **Note:** This method is currently only implemented on Windows and macOS. On other platforms, it will fallback to [`shell_open`](class_os.md#class_os_method_shell_open) with a directory path of `file_or_dir_path` prefixed with `file://`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1456,7 +1456,7 @@ Use [`ProjectSettings.globalize_path`](#class_projectsettings_method_globalize_p
 
 `void` **unset_environment** ( variable: [`String`](class_string.md) ) const[^const]<div id="class_os_method_unset_environment"></div>
 
-Removes the given environment variable from the current environment, if it exists. The `variable` name cannot be empty or include the `=` character. The environment variable will be removed for the Godot process and any process executed with [`execute`](#class_os_method_execute) after running [`unset_environment`](#class_os_method_unset_environment). The removal of the environment variable will *not* persist to processes run after the Godot process was terminated.
+Removes the given environment variable from the current environment, if it exists. The `variable` name cannot be empty or include the `=` character. The environment variable will be removed for the Godot process and any process executed with [`execute`](class_os.md#class_os_method_execute) after running [`unset_environment`](class_os.md#class_os_method_unset_environment). The removal of the environment variable will *not* persist to processes run after the Godot process was terminated.
 
  **Note:** Environment variable names are case-sensitive on all platforms except Windows.
 

@@ -19,8 +19,8 @@ Translated to `uniform vec2` in the shader language.
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`default_value`](#class_visualshadernodevec2parameter_property_default_value)                 | ``Vector2(0, 0)`` |
-| [`bool`](class_bool.md)       | [`default_value_enabled`](#class_visualshadernodevec2parameter_property_default_value_enabled) | ``false``         |
+| [`Vector2`](class_vector2.md) | [`default_value`](class_visualshadernodevec2parameter.md#class_visualshadernodevec2parameter_property_default_value)                 | ``Vector2(0, 0)`` |
+| [`bool`](class_bool.md)       | [`default_value_enabled`](class_visualshadernodevec2parameter.md#class_visualshadernodevec2parameter_property_default_value_enabled) | ``false``         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -48,7 +48,7 @@ A default value to be assigned within the shader.
 - `void` **set_default_value_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_default_value_enabled** ( )
 
-Enables usage of the [`default_value`](#class_visualshadernodevec2parameter_property_default_value).
+Enables usage of the [`default_value`](class_visualshadernodevec2parameter.md#class_visualshadernodevec2parameter_property_default_value).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

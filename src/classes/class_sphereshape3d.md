@@ -21,7 +21,7 @@ A 3D sphere shape, intended for use in physics. Usually used to provide a shape 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`radius`](#class_sphereshape3d_property_radius) | ``0.5`` |
+| [`float`](class_float.md) | [`radius`](class_sphereshape3d.md#class_sphereshape3d_property_radius) | ``0.5`` |
 
 <!-- rst-class:: classref-section-separator -->
 

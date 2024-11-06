@@ -19,7 +19,7 @@ Most basic 3D game object, with a [`Transform3D`](class_transform3d.md) and visi
 
 Affine operations (rotate, scale, translate) happen in parent's local coordinate system, unless the **Node3D** object is set as top-level. Affine operations in this coordinate system correspond to direct affine operations on the **Node3D**'s transform. The word local below refers to this coordinate system. The coordinate system that is attached to the **Node3D** object itself is referred to as object-local coordinate system.
 
- **Note:** Unless otherwise specified, all methods that have angle parameters must have angles specified as *radians*. To convert degrees to radians, use [`@GlobalScope.deg_to_rad`](#class_@globalscope_method_deg_to_rad).
+ **Note:** Unless otherwise specified, all methods that have angle parameters must have angles specified as *radians*. To convert degrees to radians, use [`@GlobalScope.deg_to_rad`](class_@globalscope.md#class_@globalscope_method_deg_to_rad).
 
  **Note:** Be aware that "Spatial" nodes are now called "Node3D" starting with Godot 4. Any Godot 3.x references to "Spatial" nodes refer to "Node3D" in Godot 4.
 
@@ -27,64 +27,64 @@ Affine operations (rotate, scale, translate) happen in parent's local coordinate
 
 |||
 |:-:|:--|
-| [`Basis`](class_basis.md)                         | [`basis`](#class_node3d_property_basis)                                     |                                                     |
-| [`Basis`](class_basis.md)                         | [`global_basis`](#class_node3d_property_global_basis)                       |                                                     |
-| [`Vector3`](class_vector3.md)                     | [`global_position`](#class_node3d_property_global_position)                 |                                                     |
-| [`Vector3`](class_vector3.md)                     | [`global_rotation`](#class_node3d_property_global_rotation)                 |                                                     |
-| [`Vector3`](class_vector3.md)                     | [`global_rotation_degrees`](#class_node3d_property_global_rotation_degrees) |                                                     |
-| [`Transform3D`](class_transform3d.md)             | [`global_transform`](#class_node3d_property_global_transform)               |                                                     |
-| [`Vector3`](class_vector3.md)                     | [`position`](#class_node3d_property_position)                               | ``Vector3(0, 0, 0)``                                |
-| [`Quaternion`](class_quaternion.md)               | [`quaternion`](#class_node3d_property_quaternion)                           |                                                     |
-| [`Vector3`](class_vector3.md)                     | [`rotation`](#class_node3d_property_rotation)                               | ``Vector3(0, 0, 0)``                                |
-| [`Vector3`](class_vector3.md)                     | [`rotation_degrees`](#class_node3d_property_rotation_degrees)               |                                                     |
-| [RotationEditMode](#enum_node3d_rotationeditmode) | [`rotation_edit_mode`](#class_node3d_property_rotation_edit_mode)           | ``0``                                               |
-| [EulerOrder](#enum_@globalscope_eulerorder)       | [`rotation_order`](#class_node3d_property_rotation_order)                   | ``2``                                               |
-| [`Vector3`](class_vector3.md)                     | [`scale`](#class_node3d_property_scale)                                     | ``Vector3(1, 1, 1)``                                |
-| [`bool`](class_bool.md)                           | [`top_level`](#class_node3d_property_top_level)                             | ``false``                                           |
-| [`Transform3D`](class_transform3d.md)             | [`transform`](#class_node3d_property_transform)                             | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
-| [`NodePath`](class_nodepath.md)                   | [`visibility_parent`](#class_node3d_property_visibility_parent)             | ``NodePath("")``                                    |
-| [`bool`](class_bool.md)                           | [`visible`](#class_node3d_property_visible)                                 | ``true``                                            |
+| [`Basis`](class_basis.md)                         | [`basis`](class_node3d.md#class_node3d_property_basis)                                     |                                                     |
+| [`Basis`](class_basis.md)                         | [`global_basis`](class_node3d.md#class_node3d_property_global_basis)                       |                                                     |
+| [`Vector3`](class_vector3.md)                     | [`global_position`](class_node3d.md#class_node3d_property_global_position)                 |                                                     |
+| [`Vector3`](class_vector3.md)                     | [`global_rotation`](class_node3d.md#class_node3d_property_global_rotation)                 |                                                     |
+| [`Vector3`](class_vector3.md)                     | [`global_rotation_degrees`](class_node3d.md#class_node3d_property_global_rotation_degrees) |                                                     |
+| [`Transform3D`](class_transform3d.md)             | [`global_transform`](class_node3d.md#class_node3d_property_global_transform)               |                                                     |
+| [`Vector3`](class_vector3.md)                     | [`position`](class_node3d.md#class_node3d_property_position)                               | ``Vector3(0, 0, 0)``                                |
+| [`Quaternion`](class_quaternion.md)               | [`quaternion`](class_node3d.md#class_node3d_property_quaternion)                           |                                                     |
+| [`Vector3`](class_vector3.md)                     | [`rotation`](class_node3d.md#class_node3d_property_rotation)                               | ``Vector3(0, 0, 0)``                                |
+| [`Vector3`](class_vector3.md)                     | [`rotation_degrees`](class_node3d.md#class_node3d_property_rotation_degrees)               |                                                     |
+| [RotationEditMode](#enum_node3d_rotationeditmode) | [`rotation_edit_mode`](class_node3d.md#class_node3d_property_rotation_edit_mode)           | ``0``                                               |
+| [EulerOrder](#enum_@globalscope_eulerorder)       | [`rotation_order`](class_node3d.md#class_node3d_property_rotation_order)                   | ``2``                                               |
+| [`Vector3`](class_vector3.md)                     | [`scale`](class_node3d.md#class_node3d_property_scale)                                     | ``Vector3(1, 1, 1)``                                |
+| [`bool`](class_bool.md)                           | [`top_level`](class_node3d.md#class_node3d_property_top_level)                             | ``false``                                           |
+| [`Transform3D`](class_transform3d.md)             | [`transform`](class_node3d.md#class_node3d_property_transform)                             | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
+| [`NodePath`](class_nodepath.md)                   | [`visibility_parent`](class_node3d.md#class_node3d_property_visibility_parent)             | ``NodePath("")``                                    |
+| [`bool`](class_bool.md)                           | [`visible`](class_node3d.md#class_node3d_property_visible)                                 | ``true``                                            |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                        | [`add_gizmo`](#class_node3d_method_add_gizmo) ( gizmo: [`Node3DGizmo`](class_node3dgizmo.md) )                                                                                                                                                                   |
-| `void`                                                        | [`clear_gizmos`](#class_node3d_method_clear_gizmos) ( )                                                                                                                                                                                                          |
-| `void`                                                        | [`clear_subgizmo_selection`](#class_node3d_method_clear_subgizmo_selection) ( )                                                                                                                                                                                  |
-| `void`                                                        | [`force_update_transform`](#class_node3d_method_force_update_transform) ( )                                                                                                                                                                                      |
-| [Array](class_array.md) [`Node3DGizmo`](class_node3dgizmo.md) | [`get_gizmos`](#class_node3d_method_get_gizmos) ( ) const[^const]                                                                                                                                                                                                |
-| [`Node3D`](class_node3d.md)                                   | [`get_parent_node_3d`](#class_node3d_method_get_parent_node_3d) ( ) const[^const]                                                                                                                                                                                |
-| [`World3D`](class_world3d.md)                                 | [`get_world_3d`](#class_node3d_method_get_world_3d) ( ) const[^const]                                                                                                                                                                                            |
-| `void`                                                        | [`global_rotate`](#class_node3d_method_global_rotate) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                                                                                                  |
-| `void`                                                        | [`global_scale`](#class_node3d_method_global_scale) ( scale: [`Vector3`](class_vector3.md) )                                                                                                                                                                     |
-| `void`                                                        | [`global_translate`](#class_node3d_method_global_translate) ( offset: [`Vector3`](class_vector3.md) )                                                                                                                                                            |
-| `void`                                                        | [`hide`](#class_node3d_method_hide) ( )                                                                                                                                                                                                                          |
-| [`bool`](class_bool.md)                                       | [`is_local_transform_notification_enabled`](#class_node3d_method_is_local_transform_notification_enabled) ( ) const[^const]                                                                                                                                      |
-| [`bool`](class_bool.md)                                       | [`is_scale_disabled`](#class_node3d_method_is_scale_disabled) ( ) const[^const]                                                                                                                                                                                  |
-| [`bool`](class_bool.md)                                       | [`is_transform_notification_enabled`](#class_node3d_method_is_transform_notification_enabled) ( ) const[^const]                                                                                                                                                  |
-| [`bool`](class_bool.md)                                       | [`is_visible_in_tree`](#class_node3d_method_is_visible_in_tree) ( ) const[^const]                                                                                                                                                                                |
-| `void`                                                        | [`look_at`](#class_node3d_method_look_at) ( target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false )                                                                      |
-| `void`                                                        | [`look_at_from_position`](#class_node3d_method_look_at_from_position) ( position: [`Vector3`](class_vector3.md), target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false ) |
-| `void`                                                        | [`orthonormalize`](#class_node3d_method_orthonormalize) ( )                                                                                                                                                                                                      |
-| `void`                                                        | [`rotate`](#class_node3d_method_rotate) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                                                                                                                |
-| `void`                                                        | [`rotate_object_local`](#class_node3d_method_rotate_object_local) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                                                                                      |
-| `void`                                                        | [`rotate_x`](#class_node3d_method_rotate_x) ( angle: [`float`](class_float.md) )                                                                                                                                                                                 |
-| `void`                                                        | [`rotate_y`](#class_node3d_method_rotate_y) ( angle: [`float`](class_float.md) )                                                                                                                                                                                 |
-| `void`                                                        | [`rotate_z`](#class_node3d_method_rotate_z) ( angle: [`float`](class_float.md) )                                                                                                                                                                                 |
-| `void`                                                        | [`scale_object_local`](#class_node3d_method_scale_object_local) ( scale: [`Vector3`](class_vector3.md) )                                                                                                                                                         |
-| `void`                                                        | [`set_disable_scale`](#class_node3d_method_set_disable_scale) ( disable: [`bool`](class_bool.md) )                                                                                                                                                               |
-| `void`                                                        | [`set_identity`](#class_node3d_method_set_identity) ( )                                                                                                                                                                                                          |
-| `void`                                                        | [`set_ignore_transform_notification`](#class_node3d_method_set_ignore_transform_notification) ( enabled: [`bool`](class_bool.md) )                                                                                                                               |
-| `void`                                                        | [`set_notify_local_transform`](#class_node3d_method_set_notify_local_transform) ( enable: [`bool`](class_bool.md) )                                                                                                                                              |
-| `void`                                                        | [`set_notify_transform`](#class_node3d_method_set_notify_transform) ( enable: [`bool`](class_bool.md) )                                                                                                                                                          |
-| `void`                                                        | [`set_subgizmo_selection`](#class_node3d_method_set_subgizmo_selection) ( gizmo: [`Node3DGizmo`](class_node3dgizmo.md), id: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )                                                            |
-| `void`                                                        | [`show`](#class_node3d_method_show) ( )                                                                                                                                                                                                                          |
-| [`Vector3`](class_vector3.md)                                 | [`to_global`](#class_node3d_method_to_global) ( local_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                       |
-| [`Vector3`](class_vector3.md)                                 | [`to_local`](#class_node3d_method_to_local) ( global_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                        |
-| `void`                                                        | [`translate`](#class_node3d_method_translate) ( offset: [`Vector3`](class_vector3.md) )                                                                                                                                                                          |
-| `void`                                                        | [`translate_object_local`](#class_node3d_method_translate_object_local) ( offset: [`Vector3`](class_vector3.md) )                                                                                                                                                |
-| `void`                                                        | [`update_gizmos`](#class_node3d_method_update_gizmos) ( )                                                                                                                                                                                                        |
+| `void`                                                        | [`add_gizmo`](class_node3d.md#class_node3d_method_add_gizmo) ( gizmo: [`Node3DGizmo`](class_node3dgizmo.md) )                                                                                                                                                                   |
+| `void`                                                        | [`clear_gizmos`](class_node3d.md#class_node3d_method_clear_gizmos) ( )                                                                                                                                                                                                          |
+| `void`                                                        | [`clear_subgizmo_selection`](class_node3d.md#class_node3d_method_clear_subgizmo_selection) ( )                                                                                                                                                                                  |
+| `void`                                                        | [`force_update_transform`](class_node3d.md#class_node3d_method_force_update_transform) ( )                                                                                                                                                                                      |
+| [Array](class_array.md) [`Node3DGizmo`](class_node3dgizmo.md) | [`get_gizmos`](class_node3d.md#class_node3d_method_get_gizmos) ( ) const[^const]                                                                                                                                                                                                |
+| [`Node3D`](class_node3d.md)                                   | [`get_parent_node_3d`](class_node3d.md#class_node3d_method_get_parent_node_3d) ( ) const[^const]                                                                                                                                                                                |
+| [`World3D`](class_world3d.md)                                 | [`get_world_3d`](class_node3d.md#class_node3d_method_get_world_3d) ( ) const[^const]                                                                                                                                                                                            |
+| `void`                                                        | [`global_rotate`](class_node3d.md#class_node3d_method_global_rotate) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                                                                                                  |
+| `void`                                                        | [`global_scale`](class_node3d.md#class_node3d_method_global_scale) ( scale: [`Vector3`](class_vector3.md) )                                                                                                                                                                     |
+| `void`                                                        | [`global_translate`](class_node3d.md#class_node3d_method_global_translate) ( offset: [`Vector3`](class_vector3.md) )                                                                                                                                                            |
+| `void`                                                        | [`hide`](class_node3d.md#class_node3d_method_hide) ( )                                                                                                                                                                                                                          |
+| [`bool`](class_bool.md)                                       | [`is_local_transform_notification_enabled`](class_node3d.md#class_node3d_method_is_local_transform_notification_enabled) ( ) const[^const]                                                                                                                                      |
+| [`bool`](class_bool.md)                                       | [`is_scale_disabled`](class_node3d.md#class_node3d_method_is_scale_disabled) ( ) const[^const]                                                                                                                                                                                  |
+| [`bool`](class_bool.md)                                       | [`is_transform_notification_enabled`](class_node3d.md#class_node3d_method_is_transform_notification_enabled) ( ) const[^const]                                                                                                                                                  |
+| [`bool`](class_bool.md)                                       | [`is_visible_in_tree`](class_node3d.md#class_node3d_method_is_visible_in_tree) ( ) const[^const]                                                                                                                                                                                |
+| `void`                                                        | [`look_at`](class_node3d.md#class_node3d_method_look_at) ( target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false )                                                                      |
+| `void`                                                        | [`look_at_from_position`](class_node3d.md#class_node3d_method_look_at_from_position) ( position: [`Vector3`](class_vector3.md), target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false ) |
+| `void`                                                        | [`orthonormalize`](class_node3d.md#class_node3d_method_orthonormalize) ( )                                                                                                                                                                                                      |
+| `void`                                                        | [`rotate`](class_node3d.md#class_node3d_method_rotate) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                                                                                                                |
+| `void`                                                        | [`rotate_object_local`](class_node3d.md#class_node3d_method_rotate_object_local) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                                                                                      |
+| `void`                                                        | [`rotate_x`](class_node3d.md#class_node3d_method_rotate_x) ( angle: [`float`](class_float.md) )                                                                                                                                                                                 |
+| `void`                                                        | [`rotate_y`](class_node3d.md#class_node3d_method_rotate_y) ( angle: [`float`](class_float.md) )                                                                                                                                                                                 |
+| `void`                                                        | [`rotate_z`](class_node3d.md#class_node3d_method_rotate_z) ( angle: [`float`](class_float.md) )                                                                                                                                                                                 |
+| `void`                                                        | [`scale_object_local`](class_node3d.md#class_node3d_method_scale_object_local) ( scale: [`Vector3`](class_vector3.md) )                                                                                                                                                         |
+| `void`                                                        | [`set_disable_scale`](class_node3d.md#class_node3d_method_set_disable_scale) ( disable: [`bool`](class_bool.md) )                                                                                                                                                               |
+| `void`                                                        | [`set_identity`](class_node3d.md#class_node3d_method_set_identity) ( )                                                                                                                                                                                                          |
+| `void`                                                        | [`set_ignore_transform_notification`](class_node3d.md#class_node3d_method_set_ignore_transform_notification) ( enabled: [`bool`](class_bool.md) )                                                                                                                               |
+| `void`                                                        | [`set_notify_local_transform`](class_node3d.md#class_node3d_method_set_notify_local_transform) ( enable: [`bool`](class_bool.md) )                                                                                                                                              |
+| `void`                                                        | [`set_notify_transform`](class_node3d.md#class_node3d_method_set_notify_transform) ( enable: [`bool`](class_bool.md) )                                                                                                                                                          |
+| `void`                                                        | [`set_subgizmo_selection`](class_node3d.md#class_node3d_method_set_subgizmo_selection) ( gizmo: [`Node3DGizmo`](class_node3dgizmo.md), id: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )                                                            |
+| `void`                                                        | [`show`](class_node3d.md#class_node3d_method_show) ( )                                                                                                                                                                                                                          |
+| [`Vector3`](class_vector3.md)                                 | [`to_global`](class_node3d.md#class_node3d_method_to_global) ( local_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                       |
+| [`Vector3`](class_vector3.md)                                 | [`to_local`](class_node3d.md#class_node3d_method_to_local) ( global_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                        |
+| `void`                                                        | [`translate`](class_node3d.md#class_node3d_method_translate) ( offset: [`Vector3`](class_vector3.md) )                                                                                                                                                                          |
+| `void`                                                        | [`translate_object_local`](class_node3d.md#class_node3d_method_translate_object_local) ( offset: [`Vector3`](class_vector3.md) )                                                                                                                                                |
+| `void`                                                        | [`update_gizmos`](class_node3d.md#class_node3d_method_update_gizmos) ( )                                                                                                                                                                                                        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -124,7 +124,7 @@ The rotation is edited using a [`Quaternion`](class_quaternion.md).
 
 [RotationEditMode](#enum_node3d_rotationeditmode) **ROTATION_EDIT_MODE_BASIS** = ``2``
 
-The rotation is edited using a [`Basis`](class_basis.md). In this mode, [`scale`](#class_node3d_property_scale) can't be edited separately.
+The rotation is edited using a [`Basis`](class_basis.md). In this mode, [`scale`](class_node3d.md#class_node3d_property_scale) can't be edited separately.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -138,7 +138,7 @@ The rotation is edited using a [`Basis`](class_basis.md). In this mode, [`scale`
 
 **Node3D** nodes receive this notification when their global transform changes. This means that either the current or a parent node changed its transform.
 
-In order for [`NOTIFICATION_TRANSFORM_CHANGED`](#class_node3d_constant_notification_transform_changed) to work, users first need to ask for it, with [`set_notify_transform`](#class_node3d_method_set_notify_transform). The notification is also sent if the node is in the editor context and it has at least one valid gizmo.
+In order for [`NOTIFICATION_TRANSFORM_CHANGED`](class_node3d.md#class_node3d_constant_notification_transform_changed) to work, users first need to ask for it, with [`set_notify_transform`](class_node3d.md#class_node3d_method_set_notify_transform). The notification is also sent if the node is in the editor context and it has at least one valid gizmo.
 
 <div id="_class_node3d_constant_notification_enter_world"></div>
 
@@ -164,7 +164,7 @@ In order for [`NOTIFICATION_TRANSFORM_CHANGED`](#class_node3d_constant_notificat
 
 **Node3D** nodes receive this notification when their local transform changes. This is not received when the transform of a parent node is changed.
 
-In order for [`NOTIFICATION_LOCAL_TRANSFORM_CHANGED`](#class_node3d_constant_notification_local_transform_changed) to work, users first need to ask for it, with [`set_notify_local_transform`](#class_node3d_method_set_notify_local_transform).
+In order for [`NOTIFICATION_LOCAL_TRANSFORM_CHANGED`](class_node3d.md#class_node3d_constant_notification_local_transform_changed) to work, users first need to ask for it, with [`set_notify_local_transform`](class_node3d.md#class_node3d_method_set_notify_local_transform).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -179,7 +179,7 @@ In order for [`NOTIFICATION_LOCAL_TRANSFORM_CHANGED`](#class_node3d_constant_not
 - `void` **set_basis** ( value: [`Basis`](class_basis.md) )
 - [`Basis`](class_basis.md) **get_basis** ( )
 
-Basis of the [`transform`](#class_node3d_property_transform) property. Represents the rotation, scale, and shear of this node.
+Basis of the [`transform`](class_node3d.md#class_node3d_property_transform) property. Represents the rotation, scale, and shear of this node.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -233,7 +233,7 @@ Rotation part of the global transformation in radians, specified in terms of YXZ
 - `void` **set_global_rotation_degrees** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_global_rotation_degrees** ( )
 
-Helper property to access [`global_rotation`](#class_node3d_property_global_rotation) in degrees instead of radians.
+Helper property to access [`global_rotation`](class_node3d.md#class_node3d_property_global_rotation) in degrees instead of radians.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -285,11 +285,11 @@ Access to the node rotation as a [`Quaternion`](class_quaternion.md). This prope
 - `void` **set_rotation** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_rotation** ( )
 
-Rotation part of the local transformation in radians, specified in terms of Euler angles. The angles construct a rotation in the order specified by the [`rotation_order`](#class_node3d_property_rotation_order) property.
+Rotation part of the local transformation in radians, specified in terms of Euler angles. The angles construct a rotation in the order specified by the [`rotation_order`](class_node3d.md#class_node3d_property_rotation_order) property.
 
  **Note:** In the mathematical sense, rotation is a matrix and not a vector. The three Euler angles, which are the three independent parameters of the Euler-angle parametrization of the rotation matrix, are stored in a [`Vector3`](class_vector3.md) data structure not because the rotation is a vector, but only because [`Vector3`](class_vector3.md) exists as a convenient data-structure to store 3 floating-point numbers. Therefore, applying affine operations on the rotation "vector" is not meaningful.
 
- **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use [`rotation_degrees`](#class_node3d_property_rotation_degrees).
+ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use [`rotation_degrees`](class_node3d.md#class_node3d_property_rotation_degrees).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -302,7 +302,7 @@ Rotation part of the local transformation in radians, specified in terms of Eule
 - `void` **set_rotation_degrees** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_rotation_degrees** ( )
 
-Helper property to access [`rotation`](#class_node3d_property_rotation) in degrees instead of radians.
+Helper property to access [`rotation`](class_node3d.md#class_node3d_property_rotation) in degrees instead of radians.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -328,7 +328,7 @@ Specify how rotation (and scale) will be presented in the editor.
 - `void` **set_rotation_order** ( value: [EulerOrder](#enum_@globalscope_eulerorder) )
 - [EulerOrder](#enum_@globalscope_eulerorder) **get_rotation_order** ( )
 
-Specify the axis rotation order of the [`rotation`](#class_node3d_property_rotation) property. The final orientation is constructed by rotating the Euler angles in the order specified by this property.
+Specify the axis rotation order of the [`rotation`](class_node3d.md#class_node3d_property_rotation) property. The final orientation is constructed by rotating the Euler angles in the order specified by this property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -345,7 +345,7 @@ Scale part of the local transformation.
 
  **Note:** Mixed negative scales in 3D are not decomposable from the transformation matrix. Due to the way scale is represented with transformation matrices in Godot, the scale values will either be all positive or all negative.
 
- **Note:** Not all nodes are visually scaled by the [`scale`](#class_node3d_property_scale) property. For example, [`Light3D`](class_light3d.md) s are not visually affected by [`scale`](#class_node3d_property_scale).
+ **Note:** Not all nodes are visually scaled by the [`scale`](class_node3d.md#class_node3d_property_scale) property. For example, [`Light3D`](class_light3d.md) s are not visually affected by [`scale`](class_node3d.md#class_node3d_property_scale).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -384,7 +384,7 @@ Local space [`Transform3D`](class_transform3d.md) of this node, with respect to 
 - `void` **set_visibility_parent** ( value: [`NodePath`](class_nodepath.md) )
 - [`NodePath`](class_nodepath.md) **get_visibility_parent** ( )
 
-Defines the visibility range parent for this node and its subtree. The visibility parent must be a GeometryInstance3D. Any visual instance will only be visible if the visibility parent (and all of its visibility ancestors) is hidden by being closer to the camera than its own [`GeometryInstance3D.visibility_range_begin`](#class_geometryinstance3d_property_visibility_range_begin). Nodes hidden via the [`visible`](#class_node3d_property_visible) property are essentially removed from the visibility dependency tree, so dependent instances will not take the hidden node or its ancestors into account.
+Defines the visibility range parent for this node and its subtree. The visibility parent must be a GeometryInstance3D. Any visual instance will only be visible if the visibility parent (and all of its visibility ancestors) is hidden by being closer to the camera than its own [`GeometryInstance3D.visibility_range_begin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin). Nodes hidden via the [`visible`](class_node3d.md#class_node3d_property_visible) property are essentially removed from the visibility dependency tree, so dependent instances will not take the hidden node or its ancestors into account.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -397,7 +397,7 @@ Defines the visibility range parent for this node and its subtree. The visibilit
 - `void` **set_visible** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_visible** ( )
 
-If `true`, this node is drawn. The node is only visible if all of its ancestors are visible as well (in other words, [`is_visible_in_tree`](#class_node3d_method_is_visible_in_tree) must return `true`).
+If `true`, this node is drawn. The node is only visible if all of its ancestors are visible as well (in other words, [`is_visible_in_tree`](class_node3d.md#class_node3d_method_is_visible_in_tree) must return `true`).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -461,9 +461,9 @@ Returns all the gizmos attached to this **Node3D**.
 
 [`Node3D`](class_node3d.md) **get_parent_node_3d** ( ) const[^const]<div id="class_node3d_method_get_parent_node_3d"></div>
 
-Returns the parent **Node3D**, or `null` if no parent exists, the parent is not of type **Node3D**, or [`top_level`](#class_node3d_property_top_level) is `true`.
+Returns the parent **Node3D**, or `null` if no parent exists, the parent is not of type **Node3D**, or [`top_level`](class_node3d.md#class_node3d_property_top_level) is `true`.
 
- **Note:** Calling this method is not equivalent to `get_parent() as Node3D`, which does not take [`top_level`](#class_node3d_property_top_level) into account.
+ **Note:** Calling this method is not equivalent to `get_parent() as Node3D`, which does not take [`top_level`](class_node3d.md#class_node3d_property_top_level) into account.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -513,7 +513,7 @@ Moves the global (world) transformation by [`Vector3`](class_vector3.md) offset.
 
 `void` **hide** ( )<div id="class_node3d_method_hide"></div>
 
-Disables rendering of this node. Changes [`visible`](#class_node3d_property_visible) to `false`.
+Disables rendering of this node. Changes [`visible`](class_node3d.md#class_node3d_property_visible) to `false`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -553,7 +553,7 @@ Returns whether the node notifies about its global and local transformation chan
 
 [`bool`](class_bool.md) **is_visible_in_tree** ( ) const[^const]<div id="class_node3d_method_is_visible_in_tree"></div>
 
-Returns `true` if the node is present in the [`SceneTree`](class_scenetree.md), its [`visible`](#class_node3d_property_visible) property is `true` and all its ancestors are also visible. If any ancestor is hidden, this node will not be visible in the scene tree.
+Returns `true` if the node is present in the [`SceneTree`](class_scenetree.md), its [`visible`](class_node3d.md#class_node3d_property_visible) property is `true` and all its ancestors are also visible. If any ancestor is hidden, this node will not be visible in the scene tree.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -563,7 +563,7 @@ Returns `true` if the node is present in the [`SceneTree`](class_scenetree.md), 
 
 `void` **look_at** ( target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false )<div id="class_node3d_method_look_at"></div>
 
-Rotates the node so that the local forward axis (-Z, [`Vector3.FORWARD`](#class_vector3_constant_forward)) points toward the `target` position.
+Rotates the node so that the local forward axis (-Z, [`Vector3.FORWARD`](class_vector3.md#class_vector3_constant_forward)) points toward the `target` position.
 
 The local up axis (+Y) points as close to the `up` vector as possible while staying perpendicular to the local forward axis. The resulting transform is orthogonal, and the scale is preserved. Non-uniform scaling may not work correctly.
 
@@ -581,7 +581,7 @@ If `use_model_front` is `true`, the +Z axis (asset front) is treated as forward 
 
 `void` **look_at_from_position** ( position: [`Vector3`](class_vector3.md), target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false )<div id="class_node3d_method_look_at_from_position"></div>
 
-Moves the node to the specified `position`, and then rotates the node to point toward the `target` as per [`look_at`](#class_node3d_method_look_at). Operations take place in global space.
+Moves the node to the specified `position`, and then rotates the node to point toward the `target` as per [`look_at`](class_node3d.md#class_node3d_method_look_at). Operations take place in global space.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -723,7 +723,7 @@ Set subgizmo selection for this node in the editor.
 
 `void` **show** ( )<div id="class_node3d_method_show"></div>
 
-Enables rendering of this node. Changes [`visible`](#class_node3d_property_visible) to `true`.
+Enables rendering of this node. Changes [`visible`](class_node3d.md#class_node3d_property_visible) to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 

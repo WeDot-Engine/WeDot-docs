@@ -23,10 +23,10 @@ Abstract render data object, exists for the duration of rendering a single viewp
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)                               | [`get_camera_attributes`](#class_renderdata_method_get_camera_attributes) ( ) const[^const]       |
-| [`RID`](class_rid.md)                               | [`get_environment`](#class_renderdata_method_get_environment) ( ) const[^const]                   |
-| [`RenderSceneBuffers`](class_renderscenebuffers.md) | [`get_render_scene_buffers`](#class_renderdata_method_get_render_scene_buffers) ( ) const[^const] |
-| [`RenderSceneData`](class_renderscenedata.md)       | [`get_render_scene_data`](#class_renderdata_method_get_render_scene_data) ( ) const[^const]       |
+| [`RID`](class_rid.md)                               | [`get_camera_attributes`](class_renderdata.md#class_renderdata_method_get_camera_attributes) ( ) const[^const]       |
+| [`RID`](class_rid.md)                               | [`get_environment`](class_renderdata.md#class_renderdata_method_get_environment) ( ) const[^const]                   |
+| [`RenderSceneBuffers`](class_renderscenebuffers.md) | [`get_render_scene_buffers`](class_renderdata.md#class_renderdata_method_get_render_scene_buffers) ( ) const[^const] |
+| [`RenderSceneData`](class_renderscenedata.md)       | [`get_render_scene_data`](class_renderdata.md#class_renderdata_method_get_render_scene_data) ( ) const[^const]       |
 
 <!-- rst-class:: classref-section-separator -->
 

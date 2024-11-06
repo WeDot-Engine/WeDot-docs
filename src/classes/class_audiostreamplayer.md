@@ -15,7 +15,7 @@ A node for audio playback.
 
 The **AudioStreamPlayer** node plays an audio stream non-positionally. It is ideal for user interfaces, menus, or background music.
 
-To use this node, [`stream`](#class_audiostreamplayer_property_stream) needs to be set to a valid [`AudioStream`](class_audiostream.md) resource. Playing more than one sound at the same time is also supported, see [`max_polyphony`](#class_audiostreamplayer_property_max_polyphony).
+To use this node, [`stream`](class_audiostreamplayer.md#class_audiostreamplayer_property_stream) needs to be set to a valid [`AudioStream`](class_audiostream.md) resource. Playing more than one sound at the same time is also supported, see [`max_polyphony`](class_audiostreamplayer.md#class_audiostreamplayer_property_max_polyphony).
 
 If you need to play audio at a specific position, use [`AudioStreamPlayer2D`](class_audiostreamplayer2d.md) or [`AudioStreamPlayer3D`](class_audiostreamplayer3d.md) instead.
 
@@ -23,27 +23,27 @@ If you need to play audio at a specific position, use [`AudioStreamPlayer2D`](cl
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                        | [`autoplay`](#class_audiostreamplayer_property_autoplay)           | ``false``     |
-| [`StringName`](class_stringname.md)            | [`bus`](#class_audiostreamplayer_property_bus)                     | ``&"Master"`` |
-| [`int`](class_int.md)                          | [`max_polyphony`](#class_audiostreamplayer_property_max_polyphony) | ``1``         |
-| [MixTarget](#enum_audiostreamplayer_mixtarget) | [`mix_target`](#class_audiostreamplayer_property_mix_target)       | ``0``         |
-| [`float`](class_float.md)                      | [`pitch_scale`](#class_audiostreamplayer_property_pitch_scale)     | ``1.0``       |
-| [PlaybackType](#enum_audioserver_playbacktype) | [`playback_type`](#class_audiostreamplayer_property_playback_type) | ``0``         |
-| [`bool`](class_bool.md)                        | [`playing`](#class_audiostreamplayer_property_playing)             | ``false``     |
-| [`AudioStream`](class_audiostream.md)          | [`stream`](#class_audiostreamplayer_property_stream)               |               |
-| [`bool`](class_bool.md)                        | [`stream_paused`](#class_audiostreamplayer_property_stream_paused) | ``false``     |
-| [`float`](class_float.md)                      | [`volume_db`](#class_audiostreamplayer_property_volume_db)         | ``0.0``       |
+| [`bool`](class_bool.md)                        | [`autoplay`](class_audiostreamplayer.md#class_audiostreamplayer_property_autoplay)           | ``false``     |
+| [`StringName`](class_stringname.md)            | [`bus`](class_audiostreamplayer.md#class_audiostreamplayer_property_bus)                     | ``&"Master"`` |
+| [`int`](class_int.md)                          | [`max_polyphony`](class_audiostreamplayer.md#class_audiostreamplayer_property_max_polyphony) | ``1``         |
+| [MixTarget](#enum_audiostreamplayer_mixtarget) | [`mix_target`](class_audiostreamplayer.md#class_audiostreamplayer_property_mix_target)       | ``0``         |
+| [`float`](class_float.md)                      | [`pitch_scale`](class_audiostreamplayer.md#class_audiostreamplayer_property_pitch_scale)     | ``1.0``       |
+| [PlaybackType](#enum_audioserver_playbacktype) | [`playback_type`](class_audiostreamplayer.md#class_audiostreamplayer_property_playback_type) | ``0``         |
+| [`bool`](class_bool.md)                        | [`playing`](class_audiostreamplayer.md#class_audiostreamplayer_property_playing)             | ``false``     |
+| [`AudioStream`](class_audiostream.md)          | [`stream`](class_audiostreamplayer.md#class_audiostreamplayer_property_stream)               |               |
+| [`bool`](class_bool.md)                        | [`stream_paused`](class_audiostreamplayer.md#class_audiostreamplayer_property_stream_paused) | ``false``     |
+| [`float`](class_float.md)                      | [`volume_db`](class_audiostreamplayer.md#class_audiostreamplayer_property_volume_db)         | ``0.0``       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                             | [`get_playback_position`](#class_audiostreamplayer_method_get_playback_position) ( )              |
-| [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](#class_audiostreamplayer_method_get_stream_playback) ( )                  |
-| [`bool`](class_bool.md)                               | [`has_stream_playback`](#class_audiostreamplayer_method_has_stream_playback) ( )                  |
-| `void`                                                | [`play`](#class_audiostreamplayer_method_play) ( from_position: [`float`](class_float.md) = 0.0 ) |
-| `void`                                                | [`seek`](#class_audiostreamplayer_method_seek) ( to_position: [`float`](class_float.md) )         |
-| `void`                                                | [`stop`](#class_audiostreamplayer_method_stop) ( )                                                |
+| [`float`](class_float.md)                             | [`get_playback_position`](class_audiostreamplayer.md#class_audiostreamplayer_method_get_playback_position) ( )              |
+| [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](class_audiostreamplayer.md#class_audiostreamplayer_method_get_stream_playback) ( )                  |
+| [`bool`](class_bool.md)                               | [`has_stream_playback`](class_audiostreamplayer.md#class_audiostreamplayer_method_has_stream_playback) ( )                  |
+| `void`                                                | [`play`](class_audiostreamplayer.md#class_audiostreamplayer_method_play) ( from_position: [`float`](class_float.md) = 0.0 ) |
+| `void`                                                | [`seek`](class_audiostreamplayer.md#class_audiostreamplayer_method_seek) ( to_position: [`float`](class_float.md) )         |
+| `void`                                                | [`stop`](class_audiostreamplayer.md#class_audiostreamplayer_method_stop) ( )                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -55,7 +55,7 @@ If you need to play audio at a specific position, use [`AudioStreamPlayer2D`](cl
 
 **finished** ( ) <div id="class_audiostreamplayer_signal_finished"></div>
 
-Emitted when a sound finishes playing without interruptions. This signal is *not* emitted when calling [`stop`](#class_audiostreamplayer_method_stop), or when exiting the tree while sounds are playing.
+Emitted when a sound finishes playing without interruptions. This signal is *not* emitted when calling [`stop`](class_audiostreamplayer.md#class_audiostreamplayer_method_stop), or when exiting the tree while sounds are playing.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -98,7 +98,7 @@ The audio will be played on the second channel, which is usually the center.
 - `void` **set_autoplay** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_autoplay_enabled** ( )
 
-If `true`, this node calls [`play`](#class_audiostreamplayer_method_play) when entering the tree.
+If `true`, this node calls [`play`](class_audiostreamplayer.md#class_audiostreamplayer_method_play) when entering the tree.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -113,7 +113,7 @@ If `true`, this node calls [`play`](#class_audiostreamplayer_method_play) when e
 
 The target bus name. All sounds from this node will be playing on this bus.
 
- **Note:** At runtime, if no bus with the given name exists, all sounds will fall back on `"Master"`. See also [`AudioServer.get_bus_name`](#class_audioserver_method_get_bus_name).
+ **Note:** At runtime, if no bus with the given name exists, all sounds will fall back on `"Master"`. See also [`AudioServer.get_bus_name`](class_audioserver.md#class_audioserver_method_get_bus_name).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -126,7 +126,7 @@ The target bus name. All sounds from this node will be playing on this bus.
 - `void` **set_max_polyphony** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_max_polyphony** ( )
 
-The maximum number of sounds this node can play at the same time. Calling [`play`](#class_audiostreamplayer_method_play) after this value is reached will cut off the oldest sounds.
+The maximum number of sounds this node can play at the same time. Calling [`play`](class_audiostreamplayer.md#class_audiostreamplayer_method_play) after this value is reached will cut off the oldest sounds.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,7 +152,7 @@ The mix target channels, as one of the [MixTarget](#enum_audiostreamplayer_mixta
 - `void` **set_pitch_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_pitch_scale** ( )
 
-The audio's pitch and tempo, as a multiplier of the [`stream`](#class_audiostreamplayer_property_stream)'s sample rate. A value of `2.0` doubles the audio's pitch, while a value of `0.5` halves the pitch.
+The audio's pitch and tempo, as a multiplier of the [`stream`](class_audiostreamplayer.md#class_audiostreamplayer_property_stream)'s sample rate. A value of `2.0` doubles the audio's pitch, while a value of `0.5` halves the pitch.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -179,7 +179,7 @@ The playback type of the stream player. If set other than to the default value, 
 
 - [`bool`](class_bool.md) **is_playing** ( )
 
-If `true`, this node is playing sounds. Setting this property has the same effect as [`play`](#class_audiostreamplayer_method_play) and [`stop`](#class_audiostreamplayer_method_stop).
+If `true`, this node is playing sounds. Setting this property has the same effect as [`play`](class_audiostreamplayer.md#class_audiostreamplayer_method_play) and [`stop`](class_audiostreamplayer.md#class_audiostreamplayer_method_stop).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -205,9 +205,9 @@ The [`AudioStream`](class_audiostream.md) resource to be played. Setting this pr
 - `void` **set_stream_paused** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_stream_paused** ( )
 
-If `true`, the sounds are paused. Setting [`stream_paused`](#class_audiostreamplayer_property_stream_paused) to `false` resumes all sounds.
+If `true`, the sounds are paused. Setting [`stream_paused`](class_audiostreamplayer.md#class_audiostreamplayer_property_stream_paused) to `false` resumes all sounds.
 
- **Note:** This property is automatically changed when exiting or entering the tree, or this node is paused (see [`Node.process_mode`](#class_node_property_process_mode)).
+ **Note:** This property is automatically changed when exiting or entering the tree, or this node is paused (see [`Node.process_mode`](class_node.md#class_node_property_process_mode)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -220,9 +220,9 @@ If `true`, the sounds are paused. Setting [`stream_paused`](#class_audiostreampl
 - `void` **set_volume_db** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_volume_db** ( )
 
-Volume of sound, in decibel. This is an offset of the [`stream`](#class_audiostreamplayer_property_stream)'s volume.
+Volume of sound, in decibel. This is an offset of the [`stream`](class_audiostreamplayer.md#class_audiostreamplayer_property_stream)'s volume.
 
- **Note:** To convert between decibel and linear energy (like most volume sliders do), use [`@GlobalScope.db_to_linear`](#class_@globalscope_method_db_to_linear) and [`@GlobalScope.linear_to_db`](#class_@globalscope_method_linear_to_db).
+ **Note:** To convert between decibel and linear energy (like most volume sliders do), use [`@GlobalScope.db_to_linear`](class_@globalscope.md#class_@globalscope_method_db_to_linear) and [`@GlobalScope.linear_to_db`](class_@globalscope.md#class_@globalscope_method_linear_to_db).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -236,7 +236,7 @@ Volume of sound, in decibel. This is an offset of the [`stream`](#class_audiostr
 
 Returns the position in the [`AudioStream`](class_audiostream.md) of the latest sound, in seconds. Returns `0.0` if no sounds are playing.
 
- **Note:** The position is not always accurate, as the [`AudioServer`](class_audioserver.md) does not mix audio every processed frame. To get more accurate results, add [`AudioServer.get_time_since_last_mix`](#class_audioserver_method_get_time_since_last_mix) to the returned position.
+ **Note:** The position is not always accurate, as the [`AudioServer`](class_audioserver.md) does not mix audio every processed frame. To get more accurate results, add [`AudioServer.get_time_since_last_mix`](class_audioserver.md#class_audioserver_method_get_time_since_last_mix) to the returned position.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -246,7 +246,7 @@ Returns the position in the [`AudioStream`](class_audiostream.md) of the latest 
 
 [`AudioStreamPlayback`](class_audiostreamplayback.md) **get_stream_playback** ( )<div id="class_audiostreamplayer_method_get_stream_playback"></div>
 
-Returns the latest [`AudioStreamPlayback`](class_audiostreamplayback.md) of this node, usually the most recently created by [`play`](#class_audiostreamplayer_method_play). If no sounds are playing, this method fails and returns an empty playback.
+Returns the latest [`AudioStreamPlayback`](class_audiostreamplayback.md) of this node, usually the most recently created by [`play`](class_audiostreamplayer.md#class_audiostreamplayer_method_play). If no sounds are playing, this method fails and returns an empty playback.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -256,7 +256,7 @@ Returns the latest [`AudioStreamPlayback`](class_audiostreamplayback.md) of this
 
 [`bool`](class_bool.md) **has_stream_playback** ( )<div id="class_audiostreamplayer_method_has_stream_playback"></div>
 
-Returns `true` if any sound is active, even if [`stream_paused`](#class_audiostreamplayer_property_stream_paused) is set to `true`. See also [`playing`](#class_audiostreamplayer_property_playing) and [`get_stream_playback`](#class_audiostreamplayer_method_get_stream_playback).
+Returns `true` if any sound is active, even if [`stream_paused`](class_audiostreamplayer.md#class_audiostreamplayer_property_stream_paused) is set to `true`. See also [`playing`](class_audiostreamplayer.md#class_audiostreamplayer_property_playing) and [`get_stream_playback`](class_audiostreamplayer.md#class_audiostreamplayer_method_get_stream_playback).
 
 <!-- rst-class:: classref-item-separator -->
 

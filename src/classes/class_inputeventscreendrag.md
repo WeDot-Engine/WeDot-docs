@@ -13,21 +13,21 @@ Represents a screen drag event.
 
 ## 描述
 
-Stores information about screen drag events. See [`Node._input`](#class_node_private_method__input).
+Stores information about screen drag events. See [`Node._input`](class_node.md#class_node_private_method__input).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)         | [`index`](#class_inputeventscreendrag_property_index)                     | ``0``             |
-| [`bool`](class_bool.md)       | [`pen_inverted`](#class_inputeventscreendrag_property_pen_inverted)       | ``false``         |
-| [`Vector2`](class_vector2.md) | [`position`](#class_inputeventscreendrag_property_position)               | ``Vector2(0, 0)`` |
-| [`float`](class_float.md)     | [`pressure`](#class_inputeventscreendrag_property_pressure)               | ``0.0``           |
-| [`Vector2`](class_vector2.md) | [`relative`](#class_inputeventscreendrag_property_relative)               | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md) | [`screen_relative`](#class_inputeventscreendrag_property_screen_relative) | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md) | [`screen_velocity`](#class_inputeventscreendrag_property_screen_velocity) | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md) | [`tilt`](#class_inputeventscreendrag_property_tilt)                       | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md) | [`velocity`](#class_inputeventscreendrag_property_velocity)               | ``Vector2(0, 0)`` |
+| [`int`](class_int.md)         | [`index`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_index)                     | ``0``             |
+| [`bool`](class_bool.md)       | [`pen_inverted`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_pen_inverted)       | ``false``         |
+| [`Vector2`](class_vector2.md) | [`position`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_position)               | ``Vector2(0, 0)`` |
+| [`float`](class_float.md)     | [`pressure`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_pressure)               | ``0.0``           |
+| [`Vector2`](class_vector2.md) | [`relative`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_relative)               | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`screen_relative`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_screen_relative) | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`screen_velocity`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_screen_velocity) | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`tilt`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_tilt)                       | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`velocity`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_velocity)               | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -96,7 +96,7 @@ Represents the pressure the user puts on the pen. Ranges from `0.0` to `1.0`.
 
 The drag position relative to the previous position (position at the last frame).
 
- **Note:** [`relative`](#class_inputeventscreendrag_property_relative) is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using [`relative`](#class_inputeventscreendrag_property_relative) in a script that handles touch aiming. To avoid this, use [`screen_relative`](#class_inputeventscreendrag_property_screen_relative) instead.
+ **Note:** [`relative`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_relative) is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using [`relative`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_relative) in a script that handles touch aiming. To avoid this, use [`screen_relative`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_screen_relative) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -109,7 +109,7 @@ The drag position relative to the previous position (position at the last frame)
 - `void` **set_screen_relative** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_screen_relative** ( )
 
-The unscaled drag position relative to the previous position in screen coordinates (position at the last frame). This position is *not* scaled according to the content scale factor or calls to [`InputEvent.xformed_by`](#class_inputevent_method_xformed_by). This should be preferred over [`relative`](#class_inputeventscreendrag_property_relative) for touch aiming regardless of the project's stretch mode.
+The unscaled drag position relative to the previous position in screen coordinates (position at the last frame). This position is *not* scaled according to the content scale factor or calls to [`InputEvent.xformed_by`](class_inputevent.md#class_inputevent_method_xformed_by). This should be preferred over [`relative`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_relative) for touch aiming regardless of the project's stretch mode.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -122,7 +122,7 @@ The unscaled drag position relative to the previous position in screen coordinat
 - `void` **set_screen_velocity** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_screen_velocity** ( )
 
-The unscaled drag velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to [`InputEvent.xformed_by`](#class_inputevent_method_xformed_by). This should be preferred over [`velocity`](#class_inputeventscreendrag_property_velocity) for touch aiming regardless of the project's stretch mode.
+The unscaled drag velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to [`InputEvent.xformed_by`](class_inputevent.md#class_inputevent_method_xformed_by). This should be preferred over [`velocity`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_velocity) for touch aiming regardless of the project's stretch mode.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -150,7 +150,7 @@ Represents the angles of tilt of the pen. Positive X-coordinate value indicates 
 
 The drag velocity.
 
- **Note:** [`velocity`](#class_inputeventscreendrag_property_velocity) is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using [`velocity`](#class_inputeventscreendrag_property_velocity) in a script that handles touch aiming. To avoid this, use [`screen_velocity`](#class_inputeventscreendrag_property_screen_velocity) instead.
+ **Note:** [`velocity`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_velocity) is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using [`velocity`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_velocity) in a script that handles touch aiming. To avoid this, use [`screen_velocity`](class_inputeventscreendrag.md#class_inputeventscreendrag_property_screen_velocity) instead.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

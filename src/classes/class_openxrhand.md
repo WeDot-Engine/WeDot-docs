@@ -21,17 +21,17 @@ If the skeleton is a hand (one of the hand bones is the root node of the skeleto
 
 If the hand bones are part of a full skeleton, then the root of the hand will keep its location with the assumption that IK is used to position the hand and arm.
 
-By default the skeleton hand bones are repositioned to match the size of the tracked hand. To preserve the modeled bone sizes change [`bone_update`](#class_openxrhand_property_bone_update) to apply rotation only.
+By default the skeleton hand bones are repositioned to match the size of the tracked hand. To preserve the modeled bone sizes change [`bone_update`](class_openxrhand.md#class_openxrhand_property_bone_update) to apply rotation only.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [BoneUpdate](#enum_openxrhand_boneupdate)   | [`bone_update`](#class_openxrhand_property_bone_update)     | ``0``            |
-| [Hands](#enum_openxrhand_hands)             | [`hand`](#class_openxrhand_property_hand)                   | ``0``            |
-| [`NodePath`](class_nodepath.md)             | [`hand_skeleton`](#class_openxrhand_property_hand_skeleton) | ``NodePath("")`` |
-| [MotionRange](#enum_openxrhand_motionrange) | [`motion_range`](#class_openxrhand_property_motion_range)   | ``0``            |
-| [SkeletonRig](#enum_openxrhand_skeletonrig) | [`skeleton_rig`](#class_openxrhand_property_skeleton_rig)   | ``0``            |
+| [BoneUpdate](#enum_openxrhand_boneupdate)   | [`bone_update`](class_openxrhand.md#class_openxrhand_property_bone_update)     | ``0``            |
+| [Hands](#enum_openxrhand_hands)             | [`hand`](class_openxrhand.md#class_openxrhand_property_hand)                   | ``0``            |
+| [`NodePath`](class_nodepath.md)             | [`hand_skeleton`](class_openxrhand.md#class_openxrhand_property_hand_skeleton) | ``NodePath("")`` |
+| [MotionRange](#enum_openxrhand_motionrange) | [`motion_range`](class_openxrhand.md#class_openxrhand_property_motion_range)   | ``0``            |
+| [SkeletonRig](#enum_openxrhand_skeletonrig) | [`skeleton_rig`](class_openxrhand.md#class_openxrhand_property_skeleton_rig)   | ``0``            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -204,7 +204,7 @@ Set the motion range (if supported) limiting the hand motion.
 - `void` **set_skeleton_rig** ( value: [SkeletonRig](#enum_openxrhand_skeletonrig) )
 - [SkeletonRig](#enum_openxrhand_skeletonrig) **get_skeleton_rig** ( )
 
-Set the type of skeleton rig the [`hand_skeleton`](#class_openxrhand_property_hand_skeleton) is compliant with.
+Set the type of skeleton rig the [`hand_skeleton`](class_openxrhand.md#class_openxrhand_property_hand_skeleton) is compliant with.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

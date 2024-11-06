@@ -21,7 +21,7 @@ The JavaClassWrapper singleton provides a way for the Godot application to send 
 
 |||
 |:-:|:--|
-| [`JavaClass`](class_javaclass.md) | [`wrap`](#class_javaclasswrapper_method_wrap) ( name: [`String`](class_string.md) ) |
+| [`JavaClass`](class_javaclass.md) | [`wrap`](class_javaclasswrapper.md#class_javaclasswrapper_method_wrap) ( name: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

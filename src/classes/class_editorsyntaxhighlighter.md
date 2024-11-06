@@ -15,14 +15,14 @@ Base class for [`SyntaxHighlighter`](class_syntaxhighlighter.md) used by the [`S
 
 Base class that all [`SyntaxHighlighter`](class_syntaxhighlighter.md) s used by the [`ScriptEditor`](class_scripteditor.md) extend from.
 
-Add a syntax highlighter to an individual script by calling [`ScriptEditorBase.add_syntax_highlighter`](#class_scripteditorbase_method_add_syntax_highlighter). To apply to all scripts on open, call [`ScriptEditor.register_syntax_highlighter`](#class_scripteditor_method_register_syntax_highlighter).
+Add a syntax highlighter to an individual script by calling [`ScriptEditorBase.add_syntax_highlighter`](class_scripteditorbase.md#class_scripteditorbase_method_add_syntax_highlighter). To apply to all scripts on open, call [`ScriptEditor.register_syntax_highlighter`](class_scripteditor.md#class_scripteditor_method_register_syntax_highlighter).
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                       | [`_get_name`](#class_editorsyntaxhighlighter_private_method__get_name) ( ) virtual[^virtual] const[^const]                               |
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_supported_languages`](#class_editorsyntaxhighlighter_private_method__get_supported_languages) ( ) virtual[^virtual] const[^const] |
+| [`String`](class_string.md)                       | [`_get_name`](class_editorsyntaxhighlighter.md#class_editorsyntaxhighlighter_private_method__get_name) ( ) virtual[^virtual] const[^const]                               |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_supported_languages`](class_editorsyntaxhighlighter.md#class_editorsyntaxhighlighter_private_method__get_supported_languages) ( ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

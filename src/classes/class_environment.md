@@ -27,111 +27,111 @@ Resource for environment nodes (like [`WorldEnvironment`](class_worldenvironment
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                              | [`adjustment_brightness`](#class_environment_property_adjustment_brightness)                                               | ``1.0``                           |
-| [`Texture`](class_texture.md)                          | [`adjustment_color_correction`](#class_environment_property_adjustment_color_correction)                                   |                                   |
-| [`float`](class_float.md)                              | [`adjustment_contrast`](#class_environment_property_adjustment_contrast)                                                   | ``1.0``                           |
-| [`bool`](class_bool.md)                                | [`adjustment_enabled`](#class_environment_property_adjustment_enabled)                                                     | ``false``                         |
-| [`float`](class_float.md)                              | [`adjustment_saturation`](#class_environment_property_adjustment_saturation)                                               | ``1.0``                           |
-| [`Color`](class_color.md)                              | [`ambient_light_color`](#class_environment_property_ambient_light_color)                                                   | ``Color(0, 0, 0, 1)``             |
-| [`float`](class_float.md)                              | [`ambient_light_energy`](#class_environment_property_ambient_light_energy)                                                 | ``1.0``                           |
-| [`float`](class_float.md)                              | [`ambient_light_sky_contribution`](#class_environment_property_ambient_light_sky_contribution)                             | ``1.0``                           |
-| [AmbientSource](#enum_environment_ambientsource)       | [`ambient_light_source`](#class_environment_property_ambient_light_source)                                                 | ``0``                             |
-| [`int`](class_int.md)                                  | [`background_camera_feed_id`](#class_environment_property_background_camera_feed_id)                                       | ``1``                             |
-| [`int`](class_int.md)                                  | [`background_canvas_max_layer`](#class_environment_property_background_canvas_max_layer)                                   | ``0``                             |
-| [`Color`](class_color.md)                              | [`background_color`](#class_environment_property_background_color)                                                         | ``Color(0, 0, 0, 1)``             |
-| [`float`](class_float.md)                              | [`background_energy_multiplier`](#class_environment_property_background_energy_multiplier)                                 | ``1.0``                           |
-| [`float`](class_float.md)                              | [`background_intensity`](#class_environment_property_background_intensity)                                                 | ``30000.0``                       |
-| [BGMode](#enum_environment_bgmode)                     | [`background_mode`](#class_environment_property_background_mode)                                                           | ``0``                             |
-| [`float`](class_float.md)                              | [`fog_aerial_perspective`](#class_environment_property_fog_aerial_perspective)                                             | ``0.0``                           |
-| [`float`](class_float.md)                              | [`fog_density`](#class_environment_property_fog_density)                                                                   | ``0.01``                          |
-| [`float`](class_float.md)                              | [`fog_depth_begin`](#class_environment_property_fog_depth_begin)                                                           | ``10.0``                          |
-| [`float`](class_float.md)                              | [`fog_depth_curve`](#class_environment_property_fog_depth_curve)                                                           | ``1.0``                           |
-| [`float`](class_float.md)                              | [`fog_depth_end`](#class_environment_property_fog_depth_end)                                                               | ``100.0``                         |
-| [`bool`](class_bool.md)                                | [`fog_enabled`](#class_environment_property_fog_enabled)                                                                   | ``false``                         |
-| [`float`](class_float.md)                              | [`fog_height`](#class_environment_property_fog_height)                                                                     | ``0.0``                           |
-| [`float`](class_float.md)                              | [`fog_height_density`](#class_environment_property_fog_height_density)                                                     | ``0.0``                           |
-| [`Color`](class_color.md)                              | [`fog_light_color`](#class_environment_property_fog_light_color)                                                           | ``Color(0.518, 0.553, 0.608, 1)`` |
-| [`float`](class_float.md)                              | [`fog_light_energy`](#class_environment_property_fog_light_energy)                                                         | ``1.0``                           |
-| [FogMode](#enum_environment_fogmode)                   | [`fog_mode`](#class_environment_property_fog_mode)                                                                         | ``0``                             |
-| [`float`](class_float.md)                              | [`fog_sky_affect`](#class_environment_property_fog_sky_affect)                                                             | ``1.0``                           |
-| [`float`](class_float.md)                              | [`fog_sun_scatter`](#class_environment_property_fog_sun_scatter)                                                           | ``0.0``                           |
-| [GlowBlendMode](#enum_environment_glowblendmode)       | [`glow_blend_mode`](#class_environment_property_glow_blend_mode)                                                           | ``2``                             |
-| [`float`](class_float.md)                              | [`glow_bloom`](#class_environment_property_glow_bloom)                                                                     | ``0.0``                           |
-| [`bool`](class_bool.md)                                | [`glow_enabled`](#class_environment_property_glow_enabled)                                                                 | ``false``                         |
-| [`float`](class_float.md)                              | [`glow_hdr_luminance_cap`](#class_environment_property_glow_hdr_luminance_cap)                                             | ``12.0``                          |
-| [`float`](class_float.md)                              | [`glow_hdr_scale`](#class_environment_property_glow_hdr_scale)                                                             | ``2.0``                           |
-| [`float`](class_float.md)                              | [`glow_hdr_threshold`](#class_environment_property_glow_hdr_threshold)                                                     | ``1.0``                           |
-| [`float`](class_float.md)                              | [`glow_intensity`](#class_environment_property_glow_intensity)                                                             | ``0.8``                           |
-| [`float`](class_float.md)                              | [`glow_levels/1`](#class_environment_property_glow_levels/1)                                                               | ``0.0``                           |
-| [`float`](class_float.md)                              | [`glow_levels/2`](#class_environment_property_glow_levels/2)                                                               | ``0.0``                           |
-| [`float`](class_float.md)                              | [`glow_levels/3`](#class_environment_property_glow_levels/3)                                                               | ``1.0``                           |
-| [`float`](class_float.md)                              | [`glow_levels/4`](#class_environment_property_glow_levels/4)                                                               | ``0.0``                           |
-| [`float`](class_float.md)                              | [`glow_levels/5`](#class_environment_property_glow_levels/5)                                                               | ``1.0``                           |
-| [`float`](class_float.md)                              | [`glow_levels/6`](#class_environment_property_glow_levels/6)                                                               | ``0.0``                           |
-| [`float`](class_float.md)                              | [`glow_levels/7`](#class_environment_property_glow_levels/7)                                                               | ``0.0``                           |
-| [`Texture`](class_texture.md)                          | [`glow_map`](#class_environment_property_glow_map)                                                                         |                                   |
-| [`float`](class_float.md)                              | [`glow_map_strength`](#class_environment_property_glow_map_strength)                                                       | ``0.8``                           |
-| [`float`](class_float.md)                              | [`glow_mix`](#class_environment_property_glow_mix)                                                                         | ``0.05``                          |
-| [`bool`](class_bool.md)                                | [`glow_normalized`](#class_environment_property_glow_normalized)                                                           | ``false``                         |
-| [`float`](class_float.md)                              | [`glow_strength`](#class_environment_property_glow_strength)                                                               | ``1.0``                           |
-| [ReflectionSource](#enum_environment_reflectionsource) | [`reflected_light_source`](#class_environment_property_reflected_light_source)                                             | ``0``                             |
-| [`float`](class_float.md)                              | [`sdfgi_bounce_feedback`](#class_environment_property_sdfgi_bounce_feedback)                                               | ``0.5``                           |
-| [`float`](class_float.md)                              | [`sdfgi_cascade0_distance`](#class_environment_property_sdfgi_cascade0_distance)                                           | ``12.8``                          |
-| [`int`](class_int.md)                                  | [`sdfgi_cascades`](#class_environment_property_sdfgi_cascades)                                                             | ``4``                             |
-| [`bool`](class_bool.md)                                | [`sdfgi_enabled`](#class_environment_property_sdfgi_enabled)                                                               | ``false``                         |
-| [`float`](class_float.md)                              | [`sdfgi_energy`](#class_environment_property_sdfgi_energy)                                                                 | ``1.0``                           |
-| [`float`](class_float.md)                              | [`sdfgi_max_distance`](#class_environment_property_sdfgi_max_distance)                                                     | ``204.8``                         |
-| [`float`](class_float.md)                              | [`sdfgi_min_cell_size`](#class_environment_property_sdfgi_min_cell_size)                                                   | ``0.2``                           |
-| [`float`](class_float.md)                              | [`sdfgi_normal_bias`](#class_environment_property_sdfgi_normal_bias)                                                       | ``1.1``                           |
-| [`float`](class_float.md)                              | [`sdfgi_probe_bias`](#class_environment_property_sdfgi_probe_bias)                                                         | ``1.1``                           |
-| [`bool`](class_bool.md)                                | [`sdfgi_read_sky_light`](#class_environment_property_sdfgi_read_sky_light)                                                 | ``true``                          |
-| [`bool`](class_bool.md)                                | [`sdfgi_use_occlusion`](#class_environment_property_sdfgi_use_occlusion)                                                   | ``false``                         |
-| [SDFGIYScale](#enum_environment_sdfgiyscale)           | [`sdfgi_y_scale`](#class_environment_property_sdfgi_y_scale)                                                               | ``1``                             |
-| [`Sky`](class_sky.md)                                  | [`sky`](#class_environment_property_sky)                                                                                   |                                   |
-| [`float`](class_float.md)                              | [`sky_custom_fov`](#class_environment_property_sky_custom_fov)                                                             | ``0.0``                           |
-| [`Vector3`](class_vector3.md)                          | [`sky_rotation`](#class_environment_property_sky_rotation)                                                                 | ``Vector3(0, 0, 0)``              |
-| [`float`](class_float.md)                              | [`ssao_ao_channel_affect`](#class_environment_property_ssao_ao_channel_affect)                                             | ``0.0``                           |
-| [`float`](class_float.md)                              | [`ssao_detail`](#class_environment_property_ssao_detail)                                                                   | ``0.5``                           |
-| [`bool`](class_bool.md)                                | [`ssao_enabled`](#class_environment_property_ssao_enabled)                                                                 | ``false``                         |
-| [`float`](class_float.md)                              | [`ssao_horizon`](#class_environment_property_ssao_horizon)                                                                 | ``0.06``                          |
-| [`float`](class_float.md)                              | [`ssao_intensity`](#class_environment_property_ssao_intensity)                                                             | ``2.0``                           |
-| [`float`](class_float.md)                              | [`ssao_light_affect`](#class_environment_property_ssao_light_affect)                                                       | ``0.0``                           |
-| [`float`](class_float.md)                              | [`ssao_power`](#class_environment_property_ssao_power)                                                                     | ``1.5``                           |
-| [`float`](class_float.md)                              | [`ssao_radius`](#class_environment_property_ssao_radius)                                                                   | ``1.0``                           |
-| [`float`](class_float.md)                              | [`ssao_sharpness`](#class_environment_property_ssao_sharpness)                                                             | ``0.98``                          |
-| [`bool`](class_bool.md)                                | [`ssil_enabled`](#class_environment_property_ssil_enabled)                                                                 | ``false``                         |
-| [`float`](class_float.md)                              | [`ssil_intensity`](#class_environment_property_ssil_intensity)                                                             | ``1.0``                           |
-| [`float`](class_float.md)                              | [`ssil_normal_rejection`](#class_environment_property_ssil_normal_rejection)                                               | ``1.0``                           |
-| [`float`](class_float.md)                              | [`ssil_radius`](#class_environment_property_ssil_radius)                                                                   | ``5.0``                           |
-| [`float`](class_float.md)                              | [`ssil_sharpness`](#class_environment_property_ssil_sharpness)                                                             | ``0.98``                          |
-| [`float`](class_float.md)                              | [`ssr_depth_tolerance`](#class_environment_property_ssr_depth_tolerance)                                                   | ``0.2``                           |
-| [`bool`](class_bool.md)                                | [`ssr_enabled`](#class_environment_property_ssr_enabled)                                                                   | ``false``                         |
-| [`float`](class_float.md)                              | [`ssr_fade_in`](#class_environment_property_ssr_fade_in)                                                                   | ``0.15``                          |
-| [`float`](class_float.md)                              | [`ssr_fade_out`](#class_environment_property_ssr_fade_out)                                                                 | ``2.0``                           |
-| [`int`](class_int.md)                                  | [`ssr_max_steps`](#class_environment_property_ssr_max_steps)                                                               | ``64``                            |
-| [`float`](class_float.md)                              | [`tonemap_exposure`](#class_environment_property_tonemap_exposure)                                                         | ``1.0``                           |
-| [ToneMapper](#enum_environment_tonemapper)             | [`tonemap_mode`](#class_environment_property_tonemap_mode)                                                                 | ``0``                             |
-| [`float`](class_float.md)                              | [`tonemap_white`](#class_environment_property_tonemap_white)                                                               | ``1.0``                           |
-| [`Color`](class_color.md)                              | [`volumetric_fog_albedo`](#class_environment_property_volumetric_fog_albedo)                                               | ``Color(1, 1, 1, 1)``             |
-| [`float`](class_float.md)                              | [`volumetric_fog_ambient_inject`](#class_environment_property_volumetric_fog_ambient_inject)                               | ``0.0``                           |
-| [`float`](class_float.md)                              | [`volumetric_fog_anisotropy`](#class_environment_property_volumetric_fog_anisotropy)                                       | ``0.2``                           |
-| [`float`](class_float.md)                              | [`volumetric_fog_density`](#class_environment_property_volumetric_fog_density)                                             | ``0.05``                          |
-| [`float`](class_float.md)                              | [`volumetric_fog_detail_spread`](#class_environment_property_volumetric_fog_detail_spread)                                 | ``2.0``                           |
-| [`Color`](class_color.md)                              | [`volumetric_fog_emission`](#class_environment_property_volumetric_fog_emission)                                           | ``Color(0, 0, 0, 1)``             |
-| [`float`](class_float.md)                              | [`volumetric_fog_emission_energy`](#class_environment_property_volumetric_fog_emission_energy)                             | ``1.0``                           |
-| [`bool`](class_bool.md)                                | [`volumetric_fog_enabled`](#class_environment_property_volumetric_fog_enabled)                                             | ``false``                         |
-| [`float`](class_float.md)                              | [`volumetric_fog_gi_inject`](#class_environment_property_volumetric_fog_gi_inject)                                         | ``1.0``                           |
-| [`float`](class_float.md)                              | [`volumetric_fog_length`](#class_environment_property_volumetric_fog_length)                                               | ``64.0``                          |
-| [`float`](class_float.md)                              | [`volumetric_fog_sky_affect`](#class_environment_property_volumetric_fog_sky_affect)                                       | ``1.0``                           |
-| [`float`](class_float.md)                              | [`volumetric_fog_temporal_reprojection_amount`](#class_environment_property_volumetric_fog_temporal_reprojection_amount)   | ``0.9``                           |
-| [`bool`](class_bool.md)                                | [`volumetric_fog_temporal_reprojection_enabled`](#class_environment_property_volumetric_fog_temporal_reprojection_enabled) | ``true``                          |
+| [`float`](class_float.md)                              | [`adjustment_brightness`](class_environment.md#class_environment_property_adjustment_brightness)                                               | ``1.0``                           |
+| [`Texture`](class_texture.md)                          | [`adjustment_color_correction`](class_environment.md#class_environment_property_adjustment_color_correction)                                   |                                   |
+| [`float`](class_float.md)                              | [`adjustment_contrast`](class_environment.md#class_environment_property_adjustment_contrast)                                                   | ``1.0``                           |
+| [`bool`](class_bool.md)                                | [`adjustment_enabled`](class_environment.md#class_environment_property_adjustment_enabled)                                                     | ``false``                         |
+| [`float`](class_float.md)                              | [`adjustment_saturation`](class_environment.md#class_environment_property_adjustment_saturation)                                               | ``1.0``                           |
+| [`Color`](class_color.md)                              | [`ambient_light_color`](class_environment.md#class_environment_property_ambient_light_color)                                                   | ``Color(0, 0, 0, 1)``             |
+| [`float`](class_float.md)                              | [`ambient_light_energy`](class_environment.md#class_environment_property_ambient_light_energy)                                                 | ``1.0``                           |
+| [`float`](class_float.md)                              | [`ambient_light_sky_contribution`](class_environment.md#class_environment_property_ambient_light_sky_contribution)                             | ``1.0``                           |
+| [AmbientSource](#enum_environment_ambientsource)       | [`ambient_light_source`](class_environment.md#class_environment_property_ambient_light_source)                                                 | ``0``                             |
+| [`int`](class_int.md)                                  | [`background_camera_feed_id`](class_environment.md#class_environment_property_background_camera_feed_id)                                       | ``1``                             |
+| [`int`](class_int.md)                                  | [`background_canvas_max_layer`](class_environment.md#class_environment_property_background_canvas_max_layer)                                   | ``0``                             |
+| [`Color`](class_color.md)                              | [`background_color`](class_environment.md#class_environment_property_background_color)                                                         | ``Color(0, 0, 0, 1)``             |
+| [`float`](class_float.md)                              | [`background_energy_multiplier`](class_environment.md#class_environment_property_background_energy_multiplier)                                 | ``1.0``                           |
+| [`float`](class_float.md)                              | [`background_intensity`](class_environment.md#class_environment_property_background_intensity)                                                 | ``30000.0``                       |
+| [BGMode](#enum_environment_bgmode)                     | [`background_mode`](class_environment.md#class_environment_property_background_mode)                                                           | ``0``                             |
+| [`float`](class_float.md)                              | [`fog_aerial_perspective`](class_environment.md#class_environment_property_fog_aerial_perspective)                                             | ``0.0``                           |
+| [`float`](class_float.md)                              | [`fog_density`](class_environment.md#class_environment_property_fog_density)                                                                   | ``0.01``                          |
+| [`float`](class_float.md)                              | [`fog_depth_begin`](class_environment.md#class_environment_property_fog_depth_begin)                                                           | ``10.0``                          |
+| [`float`](class_float.md)                              | [`fog_depth_curve`](class_environment.md#class_environment_property_fog_depth_curve)                                                           | ``1.0``                           |
+| [`float`](class_float.md)                              | [`fog_depth_end`](class_environment.md#class_environment_property_fog_depth_end)                                                               | ``100.0``                         |
+| [`bool`](class_bool.md)                                | [`fog_enabled`](class_environment.md#class_environment_property_fog_enabled)                                                                   | ``false``                         |
+| [`float`](class_float.md)                              | [`fog_height`](class_environment.md#class_environment_property_fog_height)                                                                     | ``0.0``                           |
+| [`float`](class_float.md)                              | [`fog_height_density`](class_environment.md#class_environment_property_fog_height_density)                                                     | ``0.0``                           |
+| [`Color`](class_color.md)                              | [`fog_light_color`](class_environment.md#class_environment_property_fog_light_color)                                                           | ``Color(0.518, 0.553, 0.608, 1)`` |
+| [`float`](class_float.md)                              | [`fog_light_energy`](class_environment.md#class_environment_property_fog_light_energy)                                                         | ``1.0``                           |
+| [FogMode](#enum_environment_fogmode)                   | [`fog_mode`](class_environment.md#class_environment_property_fog_mode)                                                                         | ``0``                             |
+| [`float`](class_float.md)                              | [`fog_sky_affect`](class_environment.md#class_environment_property_fog_sky_affect)                                                             | ``1.0``                           |
+| [`float`](class_float.md)                              | [`fog_sun_scatter`](class_environment.md#class_environment_property_fog_sun_scatter)                                                           | ``0.0``                           |
+| [GlowBlendMode](#enum_environment_glowblendmode)       | [`glow_blend_mode`](class_environment.md#class_environment_property_glow_blend_mode)                                                           | ``2``                             |
+| [`float`](class_float.md)                              | [`glow_bloom`](class_environment.md#class_environment_property_glow_bloom)                                                                     | ``0.0``                           |
+| [`bool`](class_bool.md)                                | [`glow_enabled`](class_environment.md#class_environment_property_glow_enabled)                                                                 | ``false``                         |
+| [`float`](class_float.md)                              | [`glow_hdr_luminance_cap`](class_environment.md#class_environment_property_glow_hdr_luminance_cap)                                             | ``12.0``                          |
+| [`float`](class_float.md)                              | [`glow_hdr_scale`](class_environment.md#class_environment_property_glow_hdr_scale)                                                             | ``2.0``                           |
+| [`float`](class_float.md)                              | [`glow_hdr_threshold`](class_environment.md#class_environment_property_glow_hdr_threshold)                                                     | ``1.0``                           |
+| [`float`](class_float.md)                              | [`glow_intensity`](class_environment.md#class_environment_property_glow_intensity)                                                             | ``0.8``                           |
+| [`float`](class_float.md)                              | [`glow_levels/1`](class_environment.md#class_environment_property_glow_levels/1)                                                               | ``0.0``                           |
+| [`float`](class_float.md)                              | [`glow_levels/2`](class_environment.md#class_environment_property_glow_levels/2)                                                               | ``0.0``                           |
+| [`float`](class_float.md)                              | [`glow_levels/3`](class_environment.md#class_environment_property_glow_levels/3)                                                               | ``1.0``                           |
+| [`float`](class_float.md)                              | [`glow_levels/4`](class_environment.md#class_environment_property_glow_levels/4)                                                               | ``0.0``                           |
+| [`float`](class_float.md)                              | [`glow_levels/5`](class_environment.md#class_environment_property_glow_levels/5)                                                               | ``1.0``                           |
+| [`float`](class_float.md)                              | [`glow_levels/6`](class_environment.md#class_environment_property_glow_levels/6)                                                               | ``0.0``                           |
+| [`float`](class_float.md)                              | [`glow_levels/7`](class_environment.md#class_environment_property_glow_levels/7)                                                               | ``0.0``                           |
+| [`Texture`](class_texture.md)                          | [`glow_map`](class_environment.md#class_environment_property_glow_map)                                                                         |                                   |
+| [`float`](class_float.md)                              | [`glow_map_strength`](class_environment.md#class_environment_property_glow_map_strength)                                                       | ``0.8``                           |
+| [`float`](class_float.md)                              | [`glow_mix`](class_environment.md#class_environment_property_glow_mix)                                                                         | ``0.05``                          |
+| [`bool`](class_bool.md)                                | [`glow_normalized`](class_environment.md#class_environment_property_glow_normalized)                                                           | ``false``                         |
+| [`float`](class_float.md)                              | [`glow_strength`](class_environment.md#class_environment_property_glow_strength)                                                               | ``1.0``                           |
+| [ReflectionSource](#enum_environment_reflectionsource) | [`reflected_light_source`](class_environment.md#class_environment_property_reflected_light_source)                                             | ``0``                             |
+| [`float`](class_float.md)                              | [`sdfgi_bounce_feedback`](class_environment.md#class_environment_property_sdfgi_bounce_feedback)                                               | ``0.5``                           |
+| [`float`](class_float.md)                              | [`sdfgi_cascade0_distance`](class_environment.md#class_environment_property_sdfgi_cascade0_distance)                                           | ``12.8``                          |
+| [`int`](class_int.md)                                  | [`sdfgi_cascades`](class_environment.md#class_environment_property_sdfgi_cascades)                                                             | ``4``                             |
+| [`bool`](class_bool.md)                                | [`sdfgi_enabled`](class_environment.md#class_environment_property_sdfgi_enabled)                                                               | ``false``                         |
+| [`float`](class_float.md)                              | [`sdfgi_energy`](class_environment.md#class_environment_property_sdfgi_energy)                                                                 | ``1.0``                           |
+| [`float`](class_float.md)                              | [`sdfgi_max_distance`](class_environment.md#class_environment_property_sdfgi_max_distance)                                                     | ``204.8``                         |
+| [`float`](class_float.md)                              | [`sdfgi_min_cell_size`](class_environment.md#class_environment_property_sdfgi_min_cell_size)                                                   | ``0.2``                           |
+| [`float`](class_float.md)                              | [`sdfgi_normal_bias`](class_environment.md#class_environment_property_sdfgi_normal_bias)                                                       | ``1.1``                           |
+| [`float`](class_float.md)                              | [`sdfgi_probe_bias`](class_environment.md#class_environment_property_sdfgi_probe_bias)                                                         | ``1.1``                           |
+| [`bool`](class_bool.md)                                | [`sdfgi_read_sky_light`](class_environment.md#class_environment_property_sdfgi_read_sky_light)                                                 | ``true``                          |
+| [`bool`](class_bool.md)                                | [`sdfgi_use_occlusion`](class_environment.md#class_environment_property_sdfgi_use_occlusion)                                                   | ``false``                         |
+| [SDFGIYScale](#enum_environment_sdfgiyscale)           | [`sdfgi_y_scale`](class_environment.md#class_environment_property_sdfgi_y_scale)                                                               | ``1``                             |
+| [`Sky`](class_sky.md)                                  | [`sky`](class_environment.md#class_environment_property_sky)                                                                                   |                                   |
+| [`float`](class_float.md)                              | [`sky_custom_fov`](class_environment.md#class_environment_property_sky_custom_fov)                                                             | ``0.0``                           |
+| [`Vector3`](class_vector3.md)                          | [`sky_rotation`](class_environment.md#class_environment_property_sky_rotation)                                                                 | ``Vector3(0, 0, 0)``              |
+| [`float`](class_float.md)                              | [`ssao_ao_channel_affect`](class_environment.md#class_environment_property_ssao_ao_channel_affect)                                             | ``0.0``                           |
+| [`float`](class_float.md)                              | [`ssao_detail`](class_environment.md#class_environment_property_ssao_detail)                                                                   | ``0.5``                           |
+| [`bool`](class_bool.md)                                | [`ssao_enabled`](class_environment.md#class_environment_property_ssao_enabled)                                                                 | ``false``                         |
+| [`float`](class_float.md)                              | [`ssao_horizon`](class_environment.md#class_environment_property_ssao_horizon)                                                                 | ``0.06``                          |
+| [`float`](class_float.md)                              | [`ssao_intensity`](class_environment.md#class_environment_property_ssao_intensity)                                                             | ``2.0``                           |
+| [`float`](class_float.md)                              | [`ssao_light_affect`](class_environment.md#class_environment_property_ssao_light_affect)                                                       | ``0.0``                           |
+| [`float`](class_float.md)                              | [`ssao_power`](class_environment.md#class_environment_property_ssao_power)                                                                     | ``1.5``                           |
+| [`float`](class_float.md)                              | [`ssao_radius`](class_environment.md#class_environment_property_ssao_radius)                                                                   | ``1.0``                           |
+| [`float`](class_float.md)                              | [`ssao_sharpness`](class_environment.md#class_environment_property_ssao_sharpness)                                                             | ``0.98``                          |
+| [`bool`](class_bool.md)                                | [`ssil_enabled`](class_environment.md#class_environment_property_ssil_enabled)                                                                 | ``false``                         |
+| [`float`](class_float.md)                              | [`ssil_intensity`](class_environment.md#class_environment_property_ssil_intensity)                                                             | ``1.0``                           |
+| [`float`](class_float.md)                              | [`ssil_normal_rejection`](class_environment.md#class_environment_property_ssil_normal_rejection)                                               | ``1.0``                           |
+| [`float`](class_float.md)                              | [`ssil_radius`](class_environment.md#class_environment_property_ssil_radius)                                                                   | ``5.0``                           |
+| [`float`](class_float.md)                              | [`ssil_sharpness`](class_environment.md#class_environment_property_ssil_sharpness)                                                             | ``0.98``                          |
+| [`float`](class_float.md)                              | [`ssr_depth_tolerance`](class_environment.md#class_environment_property_ssr_depth_tolerance)                                                   | ``0.2``                           |
+| [`bool`](class_bool.md)                                | [`ssr_enabled`](class_environment.md#class_environment_property_ssr_enabled)                                                                   | ``false``                         |
+| [`float`](class_float.md)                              | [`ssr_fade_in`](class_environment.md#class_environment_property_ssr_fade_in)                                                                   | ``0.15``                          |
+| [`float`](class_float.md)                              | [`ssr_fade_out`](class_environment.md#class_environment_property_ssr_fade_out)                                                                 | ``2.0``                           |
+| [`int`](class_int.md)                                  | [`ssr_max_steps`](class_environment.md#class_environment_property_ssr_max_steps)                                                               | ``64``                            |
+| [`float`](class_float.md)                              | [`tonemap_exposure`](class_environment.md#class_environment_property_tonemap_exposure)                                                         | ``1.0``                           |
+| [ToneMapper](#enum_environment_tonemapper)             | [`tonemap_mode`](class_environment.md#class_environment_property_tonemap_mode)                                                                 | ``0``                             |
+| [`float`](class_float.md)                              | [`tonemap_white`](class_environment.md#class_environment_property_tonemap_white)                                                               | ``1.0``                           |
+| [`Color`](class_color.md)                              | [`volumetric_fog_albedo`](class_environment.md#class_environment_property_volumetric_fog_albedo)                                               | ``Color(1, 1, 1, 1)``             |
+| [`float`](class_float.md)                              | [`volumetric_fog_ambient_inject`](class_environment.md#class_environment_property_volumetric_fog_ambient_inject)                               | ``0.0``                           |
+| [`float`](class_float.md)                              | [`volumetric_fog_anisotropy`](class_environment.md#class_environment_property_volumetric_fog_anisotropy)                                       | ``0.2``                           |
+| [`float`](class_float.md)                              | [`volumetric_fog_density`](class_environment.md#class_environment_property_volumetric_fog_density)                                             | ``0.05``                          |
+| [`float`](class_float.md)                              | [`volumetric_fog_detail_spread`](class_environment.md#class_environment_property_volumetric_fog_detail_spread)                                 | ``2.0``                           |
+| [`Color`](class_color.md)                              | [`volumetric_fog_emission`](class_environment.md#class_environment_property_volumetric_fog_emission)                                           | ``Color(0, 0, 0, 1)``             |
+| [`float`](class_float.md)                              | [`volumetric_fog_emission_energy`](class_environment.md#class_environment_property_volumetric_fog_emission_energy)                             | ``1.0``                           |
+| [`bool`](class_bool.md)                                | [`volumetric_fog_enabled`](class_environment.md#class_environment_property_volumetric_fog_enabled)                                             | ``false``                         |
+| [`float`](class_float.md)                              | [`volumetric_fog_gi_inject`](class_environment.md#class_environment_property_volumetric_fog_gi_inject)                                         | ``1.0``                           |
+| [`float`](class_float.md)                              | [`volumetric_fog_length`](class_environment.md#class_environment_property_volumetric_fog_length)                                               | ``64.0``                          |
+| [`float`](class_float.md)                              | [`volumetric_fog_sky_affect`](class_environment.md#class_environment_property_volumetric_fog_sky_affect)                                       | ``1.0``                           |
+| [`float`](class_float.md)                              | [`volumetric_fog_temporal_reprojection_amount`](class_environment.md#class_environment_property_volumetric_fog_temporal_reprojection_amount)   | ``0.9``                           |
+| [`bool`](class_bool.md)                                | [`volumetric_fog_temporal_reprojection_enabled`](class_environment.md#class_environment_property_volumetric_fog_temporal_reprojection_enabled) | ``true``                          |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_glow_level`](#class_environment_method_get_glow_level) ( idx: [`int`](class_int.md) ) const[^const]                         |
-| `void`                    | [`set_glow_level`](#class_environment_method_set_glow_level) ( idx: [`int`](class_int.md), intensity: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_glow_level`](class_environment.md#class_environment_method_get_glow_level) ( idx: [`int`](class_int.md) ) const[^const]                         |
+| `void`                    | [`set_glow_level`](class_environment.md#class_environment_method_set_glow_level) ( idx: [`int`](class_int.md), intensity: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -147,7 +147,7 @@ enum **BGMode**: <div id="enum_environment_bgmode"></div>
 
 [BGMode](#enum_environment_bgmode) **BG_CLEAR_COLOR** = ``0``
 
-Clears the background using the clear color defined in [`ProjectSettings.rendering/environment/defaults/default_clear_color`](#class_projectsettings_property_rendering/environment/defaults/default_clear_color).
+Clears the background using the clear color defined in [`ProjectSettings.rendering/environment/defaults/default_clear_color`](class_projectsettings.md#class_projectsettings_property_rendering/environment/defaults/default_clear_color).
 
 <div id="_class_environment_constant_bg_color"></div>
 
@@ -203,13 +203,13 @@ Gather ambient light from whichever source is specified as the background.
 
 [AmbientSource](#enum_environment_ambientsource) **AMBIENT_SOURCE_DISABLED** = ``1``
 
-Disable ambient light. This provides a slight performance boost over [`AMBIENT_SOURCE_SKY`](#class_environment_constant_ambient_source_sky).
+Disable ambient light. This provides a slight performance boost over [`AMBIENT_SOURCE_SKY`](class_environment.md#class_environment_constant_ambient_source_sky).
 
 <div id="_class_environment_constant_ambient_source_color"></div>
 
 [AmbientSource](#enum_environment_ambientsource) **AMBIENT_SOURCE_COLOR** = ``2``
 
-Specify a specific [`Color`](class_color.md) for ambient light. This provides a slight performance boost over [`AMBIENT_SOURCE_SKY`](#class_environment_constant_ambient_source_sky).
+Specify a specific [`Color`](class_color.md) for ambient light. This provides a slight performance boost over [`AMBIENT_SOURCE_SKY`](class_environment.md#class_environment_constant_ambient_source_sky).
 
 <div id="_class_environment_constant_ambient_source_sky"></div>
 
@@ -267,13 +267,13 @@ Reinhardt tonemapper operator. Performs a variation on rendered pixels' colors b
 
 [ToneMapper](#enum_environment_tonemapper) **TONE_MAPPER_FILMIC** = ``2``
 
-Filmic tonemapper operator. This avoids clipping bright highlights, with a resulting image that usually looks more vivid than [`TONE_MAPPER_REINHARDT`](#class_environment_constant_tone_mapper_reinhardt).
+Filmic tonemapper operator. This avoids clipping bright highlights, with a resulting image that usually looks more vivid than [`TONE_MAPPER_REINHARDT`](class_environment.md#class_environment_constant_tone_mapper_reinhardt).
 
 <div id="_class_environment_constant_tone_mapper_aces"></div>
 
 [ToneMapper](#enum_environment_tonemapper) **TONE_MAPPER_ACES** = ``3``
 
-Use the Academy Color Encoding System tonemapper. ACES is slightly more expensive than other options, but it handles bright lighting in a more realistic fashion by desaturating it as it becomes brighter. ACES typically has a more contrasted output compared to [`TONE_MAPPER_REINHARDT`](#class_environment_constant_tone_mapper_reinhardt) and [`TONE_MAPPER_FILMIC`](#class_environment_constant_tone_mapper_filmic).
+Use the Academy Color Encoding System tonemapper. ACES is slightly more expensive than other options, but it handles bright lighting in a more realistic fashion by desaturating it as it becomes brighter. ACES typically has a more contrasted output compared to [`TONE_MAPPER_REINHARDT`](class_environment.md#class_environment_constant_tone_mapper_reinhardt) and [`TONE_MAPPER_FILMIC`](class_environment.md#class_environment_constant_tone_mapper_filmic).
 
  **Note:** This tonemapping operator is called "ACES Fitted" in Godot 3.x.
 
@@ -374,7 +374,7 @@ Use 100% scale for SDFGI on the Y (vertical) axis. SDFGI cells will be as tall a
 - `void` **set_adjustment_brightness** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_adjustment_brightness** ( )
 
-The global brightness value of the rendered scene. Effective only if [`adjustment_enabled`](#class_environment_property_adjustment_enabled) is `true`.
+The global brightness value of the rendered scene. Effective only if [`adjustment_enabled`](class_environment.md#class_environment_property_adjustment_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -387,7 +387,7 @@ The global brightness value of the rendered scene. Effective only if [`adjustmen
 - `void` **set_adjustment_color_correction** ( value: [`Texture`](class_texture.md) )
 - [`Texture`](class_texture.md) **get_adjustment_color_correction** ( )
 
-The [`Texture2D`](class_texture2d.md) or [`Texture3D`](class_texture3d.md) lookup table (LUT) to use for the built-in post-process color grading. Can use a [`GradientTexture1D`](class_gradienttexture1d.md) for a 1-dimensional LUT, or a [`Texture3D`](class_texture3d.md) for a more complex LUT. Effective only if [`adjustment_enabled`](#class_environment_property_adjustment_enabled) is `true`.
+The [`Texture2D`](class_texture2d.md) or [`Texture3D`](class_texture3d.md) lookup table (LUT) to use for the built-in post-process color grading. Can use a [`GradientTexture1D`](class_gradienttexture1d.md) for a 1-dimensional LUT, or a [`Texture3D`](class_texture3d.md) for a more complex LUT. Effective only if [`adjustment_enabled`](class_environment.md#class_environment_property_adjustment_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -400,7 +400,7 @@ The [`Texture2D`](class_texture2d.md) or [`Texture3D`](class_texture3d.md) looku
 - `void` **set_adjustment_contrast** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_adjustment_contrast** ( )
 
-The global contrast value of the rendered scene (default value is 1). Effective only if [`adjustment_enabled`](#class_environment_property_adjustment_enabled) is `true`.
+The global contrast value of the rendered scene (default value is 1). Effective only if [`adjustment_enabled`](class_environment.md#class_environment_property_adjustment_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -426,7 +426,7 @@ If `true`, enables the `adjustment_*` properties provided by this resource. If `
 - `void` **set_adjustment_saturation** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_adjustment_saturation** ( )
 
-The global color saturation value of the rendered scene (default value is 1). Effective only if [`adjustment_enabled`](#class_environment_property_adjustment_enabled) is `true`.
+The global color saturation value of the rendered scene (default value is 1). Effective only if [`adjustment_enabled`](class_environment.md#class_environment_property_adjustment_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -439,7 +439,7 @@ The global color saturation value of the rendered scene (default value is 1). Ef
 - `void` **set_ambient_light_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_ambient_light_color** ( )
 
-The ambient light's [`Color`](class_color.md). Only effective if [`ambient_light_sky_contribution`](#class_environment_property_ambient_light_sky_contribution) is lower than `1.0` (exclusive).
+The ambient light's [`Color`](class_color.md). Only effective if [`ambient_light_sky_contribution`](class_environment.md#class_environment_property_ambient_light_sky_contribution) is lower than `1.0` (exclusive).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -452,7 +452,7 @@ The ambient light's [`Color`](class_color.md). Only effective if [`ambient_light
 - `void` **set_ambient_light_energy** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_ambient_light_energy** ( )
 
-The ambient light's energy. The higher the value, the stronger the light. Only effective if [`ambient_light_sky_contribution`](#class_environment_property_ambient_light_sky_contribution) is lower than `1.0` (exclusive).
+The ambient light's energy. The higher the value, the stronger the light. Only effective if [`ambient_light_sky_contribution`](class_environment.md#class_environment_property_ambient_light_sky_contribution) is lower than `1.0` (exclusive).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -467,7 +467,7 @@ The ambient light's energy. The higher the value, the stronger the light. Only e
 
 Defines the amount of light that the sky brings on the scene. A value of `0.0` means that the sky's light emission has no effect on the scene illumination, thus all ambient illumination is provided by the ambient light. On the contrary, a value of `1.0` means that *all* the light that affects the scene is provided by the sky, thus the ambient light parameter has no effect on the scene.
 
- **Note:** [`ambient_light_sky_contribution`](#class_environment_property_ambient_light_sky_contribution) is internally clamped between `0.0` and `1.0` (inclusive).
+ **Note:** [`ambient_light_sky_contribution`](class_environment.md#class_environment_property_ambient_light_sky_contribution) is internally clamped between `0.0` and `1.0` (inclusive).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -506,7 +506,7 @@ The ID of the camera feed to show in the background.
 - `void` **set_canvas_max_layer** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_canvas_max_layer** ( )
 
-The maximum layer ID to display. Only effective when using the [`BG_CANVAS`](#class_environment_constant_bg_canvas) background mode.
+The maximum layer ID to display. Only effective when using the [`BG_CANVAS`](class_environment.md#class_environment_constant_bg_canvas) background mode.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -519,7 +519,7 @@ The maximum layer ID to display. Only effective when using the [`BG_CANVAS`](#cl
 - `void` **set_bg_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_bg_color** ( )
 
-The [`Color`](class_color.md) displayed for clear areas of the scene. Only effective when using the [`BG_COLOR`](#class_environment_constant_bg_color) background mode.
+The [`Color`](class_color.md) displayed for clear areas of the scene. Only effective when using the [`BG_COLOR`](class_environment.md#class_environment_constant_bg_color) background mode.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -545,7 +545,7 @@ Multiplier for background energy. Increase to make background brighter, decrease
 - `void` **set_bg_intensity** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_bg_intensity** ( )
 
-Luminance of background measured in nits (candela per square meter). Only used when [`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units`](#class_projectsettings_property_rendering/lights_and_shadows/use_physical_light_units) is enabled. The default value is roughly equivalent to the sky at midday.
+Luminance of background measured in nits (candela per square meter). Only used when [`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units`](class_projectsettings.md#class_projectsettings_property_rendering/lights_and_shadows/use_physical_light_units) is enabled. The default value is roughly equivalent to the sky at midday.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -571,7 +571,7 @@ The background mode. See [BGMode](#enum_environment_bgmode) for possible values.
 - `void` **set_fog_aerial_perspective** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_fog_aerial_perspective** ( )
 
-If set above `0.0` (exclusive), blends between the fog's color and the color of the background [`Sky`](class_sky.md). This has a small performance cost when set above `0.0`. Must have [`background_mode`](#class_environment_property_background_mode) set to [`BG_SKY`](#class_environment_constant_bg_sky).
+If set above `0.0` (exclusive), blends between the fog's color and the color of the background [`Sky`](class_sky.md). This has a small performance cost when set above `0.0`. Must have [`background_mode`](class_environment.md#class_environment_property_background_mode) set to [`BG_SKY`](class_environment.md#class_environment_constant_bg_sky).
 
 This is useful to simulate [*aerial perspective*](https://en.wikipedia.org/wiki/Aerial_perspective) in large scenes with low density fog. However, it is not very useful for high-density fog, as the sky will shine through. When set to `1.0`, the fog color comes completely from the [`Sky`](class_sky.md). If set to `0.0`, aerial perspective is disabled.
 
@@ -586,7 +586,7 @@ This is useful to simulate [*aerial perspective*](https://en.wikipedia.org/wiki/
 - `void` **set_fog_density** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_fog_density** ( )
 
-The fog density to be used. This is demonstrated in different ways depending on the [`fog_mode`](#class_environment_property_fog_mode) mode chosen:
+The fog density to be used. This is demonstrated in different ways depending on the [`fog_mode`](class_environment.md#class_environment_property_fog_mode) mode chosen:
 
  **Exponential Fog Mode:** Higher values result in denser fog. The fog rendering is exponential like in real life.
 
@@ -603,7 +603,7 @@ The fog density to be used. This is demonstrated in different ways depending on 
 - `void` **set_fog_depth_begin** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_fog_depth_begin** ( )
 
-The fog's depth starting distance from the camera. Only available when [`fog_mode`](#class_environment_property_fog_mode) is set to [`FOG_MODE_DEPTH`](#class_environment_constant_fog_mode_depth).
+The fog's depth starting distance from the camera. Only available when [`fog_mode`](class_environment.md#class_environment_property_fog_mode) is set to [`FOG_MODE_DEPTH`](class_environment.md#class_environment_constant_fog_mode_depth).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -616,7 +616,7 @@ The fog's depth starting distance from the camera. Only available when [`fog_mod
 - `void` **set_fog_depth_curve** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_fog_depth_curve** ( )
 
-The fog depth's intensity curve. A number of presets are available in the Inspector by right-clicking the curve. Only available when [`fog_mode`](#class_environment_property_fog_mode) is set to [`FOG_MODE_DEPTH`](#class_environment_constant_fog_mode_depth).
+The fog depth's intensity curve. A number of presets are available in the Inspector by right-clicking the curve. Only available when [`fog_mode`](class_environment.md#class_environment_property_fog_mode) is set to [`FOG_MODE_DEPTH`](class_environment.md#class_environment_constant_fog_mode_depth).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -629,7 +629,7 @@ The fog depth's intensity curve. A number of presets are available in the Inspec
 - `void` **set_fog_depth_end** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_fog_depth_end** ( )
 
-The fog's depth end distance from the camera. If this value is set to `0`, it will be equal to the current camera's [`Camera3D.far`](#class_camera3d_property_far) value. Only available when [`fog_mode`](#class_environment_property_fog_mode) is set to [`FOG_MODE_DEPTH`](#class_environment_constant_fog_mode_depth).
+The fog's depth end distance from the camera. If this value is set to `0`, it will be equal to the current camera's [`Camera3D.far`](class_camera3d.md#class_camera3d_property_far) value. Only available when [`fog_mode`](class_environment.md#class_environment_property_fog_mode) is set to [`FOG_MODE_DEPTH`](class_environment.md#class_environment_constant_fog_mode_depth).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -722,7 +722,7 @@ The fog mode. See [FogMode](#enum_environment_fogmode) for possible values.
 
 The factor to use when affecting the sky with non-volumetric fog. `1.0` means that fog can fully obscure the sky. Lower values reduce the impact of fog on sky rendering, with `0.0` not affecting sky rendering at all.
 
- **Note:** [`fog_sky_affect`](#class_environment_property_fog_sky_affect) has no visual effect if [`fog_aerial_perspective`](#class_environment_property_fog_aerial_perspective) is `1.0`.
+ **Note:** [`fog_sky_affect`](class_environment.md#class_environment_property_fog_sky_affect) has no visual effect if [`fog_aerial_perspective`](class_environment.md#class_environment_property_fog_aerial_perspective) is `1.0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -750,7 +750,7 @@ If set above `0.0`, renders the scene's directional light(s) in the fog color de
 
 The glow blending mode.
 
- **Note:** [`glow_blend_mode`](#class_environment_property_glow_blend_mode) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_blend_mode`](class_environment.md#class_environment_property_glow_blend_mode) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -763,7 +763,7 @@ The glow blending mode.
 - `void` **set_glow_bloom** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_glow_bloom** ( )
 
-The bloom's intensity. If set to a value higher than `0`, this will make glow visible in areas darker than the [`glow_hdr_threshold`](#class_environment_property_glow_hdr_threshold).
+The bloom's intensity. If set to a value higher than `0`, this will make glow visible in areas darker than the [`glow_hdr_threshold`](class_environment.md#class_environment_property_glow_hdr_threshold).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -780,7 +780,7 @@ If `true`, the glow effect is enabled. This simulates real world eye/camera beha
 
  **Note:** When using the Mobile rendering method, glow looks different due to the lower dynamic range available in the Mobile rendering method.
 
- **Note:** When using the Compatibility rendering method, glow uses a different implementation with some properties being unavailable and hidden from the inspector: `glow_levels/*`, [`glow_normalized`](#class_environment_property_glow_normalized), [`glow_strength`](#class_environment_property_glow_strength), [`glow_blend_mode`](#class_environment_property_glow_blend_mode), [`glow_mix`](#class_environment_property_glow_mix), [`glow_map`](#class_environment_property_glow_map), and [`glow_map_strength`](#class_environment_property_glow_map_strength). This implementation is optimized to run on low-end devices and is less flexible as a result.
+ **Note:** When using the Compatibility rendering method, glow uses a different implementation with some properties being unavailable and hidden from the inspector: `glow_levels/*`, [`glow_normalized`](class_environment.md#class_environment_property_glow_normalized), [`glow_strength`](class_environment.md#class_environment_property_glow_strength), [`glow_blend_mode`](class_environment.md#class_environment_property_glow_blend_mode), [`glow_mix`](class_environment.md#class_environment_property_glow_mix), [`glow_map`](class_environment.md#class_environment_property_glow_map), and [`glow_map_strength`](class_environment.md#class_environment_property_glow_map_strength). This implementation is optimized to run on low-end devices and is less flexible as a result.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -847,7 +847,7 @@ The overall brightness multiplier of the glow effect. When using the Mobile rend
 
 The intensity of the 1st level of glow. This is the most "local" level (least blurry).
 
- **Note:** [`glow_levels/1`](#class_environment_property_glow_levels/1) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_levels/1`](class_environment.md#class_environment_property_glow_levels/1) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -862,7 +862,7 @@ The intensity of the 1st level of glow. This is the most "local" level (least bl
 
 The intensity of the 2nd level of glow.
 
- **Note:** [`glow_levels/2`](#class_environment_property_glow_levels/2) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_levels/2`](class_environment.md#class_environment_property_glow_levels/2) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -877,7 +877,7 @@ The intensity of the 2nd level of glow.
 
 The intensity of the 3rd level of glow.
 
- **Note:** [`glow_levels/3`](#class_environment_property_glow_levels/3) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_levels/3`](class_environment.md#class_environment_property_glow_levels/3) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -892,7 +892,7 @@ The intensity of the 3rd level of glow.
 
 The intensity of the 4th level of glow.
 
- **Note:** [`glow_levels/4`](#class_environment_property_glow_levels/4) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_levels/4`](class_environment.md#class_environment_property_glow_levels/4) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -907,7 +907,7 @@ The intensity of the 4th level of glow.
 
 The intensity of the 5th level of glow.
 
- **Note:** [`glow_levels/5`](#class_environment_property_glow_levels/5) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_levels/5`](class_environment.md#class_environment_property_glow_levels/5) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -922,7 +922,7 @@ The intensity of the 5th level of glow.
 
 The intensity of the 6th level of glow.
 
- **Note:** [`glow_levels/6`](#class_environment_property_glow_levels/6) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_levels/6`](class_environment.md#class_environment_property_glow_levels/6) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -937,7 +937,7 @@ The intensity of the 6th level of glow.
 
 The intensity of the 7th level of glow. This is the most "global" level (blurriest).
 
- **Note:** [`glow_levels/7`](#class_environment_property_glow_levels/7) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_levels/7`](class_environment.md#class_environment_property_glow_levels/7) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -950,11 +950,11 @@ The intensity of the 7th level of glow. This is the most "global" level (blurrie
 - `void` **set_glow_map** ( value: [`Texture`](class_texture.md) )
 - [`Texture`](class_texture.md) **get_glow_map** ( )
 
-The texture that should be used as a glow map to *multiply* the resulting glow color according to [`glow_map_strength`](#class_environment_property_glow_map_strength). This can be used to create a "lens dirt" effect. The texture's RGB color channels are used for modulation, but the alpha channel is ignored.
+The texture that should be used as a glow map to *multiply* the resulting glow color according to [`glow_map_strength`](class_environment.md#class_environment_property_glow_map_strength). This can be used to create a "lens dirt" effect. The texture's RGB color channels are used for modulation, but the alpha channel is ignored.
 
  **Note:** The texture will be stretched to fit the screen. Therefore, it's recommended to use a texture with an aspect ratio that matches your project's base aspect ratio (typically 16:9).
 
- **Note:** [`glow_map`](#class_environment_property_glow_map) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_map`](class_environment.md#class_environment_property_glow_map) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -967,9 +967,9 @@ The texture that should be used as a glow map to *multiply* the resulting glow c
 - `void` **set_glow_map_strength** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_glow_map_strength** ( )
 
-How strong of an impact the [`glow_map`](#class_environment_property_glow_map) should have on the overall glow effect. A strength of `0.0` means the glow map has no effect on the overall glow effect. A strength of `1.0` means the glow has a full effect on the overall glow effect (and can turn off glow entirely in specific areas of the screen if the glow map has black areas).
+How strong of an impact the [`glow_map`](class_environment.md#class_environment_property_glow_map) should have on the overall glow effect. A strength of `0.0` means the glow map has no effect on the overall glow effect. A strength of `1.0` means the glow has a full effect on the overall glow effect (and can turn off glow entirely in specific areas of the screen if the glow map has black areas).
 
- **Note:** [`glow_map_strength`](#class_environment_property_glow_map_strength) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_map_strength`](class_environment.md#class_environment_property_glow_map_strength) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -982,9 +982,9 @@ How strong of an impact the [`glow_map`](#class_environment_property_glow_map) s
 - `void` **set_glow_mix** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_glow_mix** ( )
 
-When using the [`GLOW_BLEND_MODE_MIX`](#class_environment_constant_glow_blend_mode_mix) [`glow_blend_mode`](#class_environment_property_glow_blend_mode), this controls how much the source image is blended with the glow layer. A value of `0.0` makes the glow rendering invisible, while a value of `1.0` is equivalent to [`GLOW_BLEND_MODE_REPLACE`](#class_environment_constant_glow_blend_mode_replace).
+When using the [`GLOW_BLEND_MODE_MIX`](class_environment.md#class_environment_constant_glow_blend_mode_mix) [`glow_blend_mode`](class_environment.md#class_environment_property_glow_blend_mode), this controls how much the source image is blended with the glow layer. A value of `0.0` makes the glow rendering invisible, while a value of `1.0` is equivalent to [`GLOW_BLEND_MODE_REPLACE`](class_environment.md#class_environment_constant_glow_blend_mode_replace).
 
- **Note:** [`glow_mix`](#class_environment_property_glow_mix) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_mix`](class_environment.md#class_environment_property_glow_mix) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -999,7 +999,7 @@ When using the [`GLOW_BLEND_MODE_MIX`](#class_environment_constant_glow_blend_mo
 
 If `true`, glow levels will be normalized so that summed together their intensities equal `1.0`.
 
- **Note:** [`glow_normalized`](#class_environment_property_glow_normalized) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_normalized`](class_environment.md#class_environment_property_glow_normalized) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1014,7 +1014,7 @@ If `true`, glow levels will be normalized so that summed together their intensit
 
 The strength of the glow effect. This applies as the glow is blurred across the screen and increases the distance and intensity of the blur. When using the Mobile rendering method, this should be increased to compensate for the lower dynamic range.
 
- **Note:** [`glow_strength`](#class_environment_property_glow_strength) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+ **Note:** [`glow_strength`](class_environment.md#class_environment_property_glow_strength) has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1040,11 +1040,11 @@ The reflected (specular) light source.
 - `void` **set_sdfgi_bounce_feedback** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_sdfgi_bounce_feedback** ( )
 
-The energy multiplier applied to light every time it bounces from a surface when using SDFGI. Values greater than `0.0` will simulate multiple bounces, resulting in a more realistic appearance. Increasing [`sdfgi_bounce_feedback`](#class_environment_property_sdfgi_bounce_feedback) generally has no performance impact. See also [`sdfgi_energy`](#class_environment_property_sdfgi_energy).
+The energy multiplier applied to light every time it bounces from a surface when using SDFGI. Values greater than `0.0` will simulate multiple bounces, resulting in a more realistic appearance. Increasing [`sdfgi_bounce_feedback`](class_environment.md#class_environment_property_sdfgi_bounce_feedback) generally has no performance impact. See also [`sdfgi_energy`](class_environment.md#class_environment_property_sdfgi_energy).
 
  **Note:** Values greater than `0.5` can cause infinite feedback loops and should be avoided in scenes with bright materials.
 
- **Note:** If [`sdfgi_bounce_feedback`](#class_environment_property_sdfgi_bounce_feedback) is `0.0`, indirect lighting will not be represented in reflections as light will only bounce one time.
+ **Note:** If [`sdfgi_bounce_feedback`](class_environment.md#class_environment_property_sdfgi_bounce_feedback) is `0.0`, indirect lighting will not be represented in reflections as light will only bounce one time.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1057,7 +1057,7 @@ The energy multiplier applied to light every time it bounces from a surface when
 - `void` **set_sdfgi_cascade0_distance** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_sdfgi_cascade0_distance** ( )
 
-**Note:** This property is linked to [`sdfgi_min_cell_size`](#class_environment_property_sdfgi_min_cell_size) and [`sdfgi_max_distance`](#class_environment_property_sdfgi_max_distance). Changing its value will automatically change those properties as well.
+**Note:** This property is linked to [`sdfgi_min_cell_size`](class_environment.md#class_environment_property_sdfgi_min_cell_size) and [`sdfgi_max_distance`](class_environment.md#class_environment_property_sdfgi_max_distance). Changing its value will automatically change those properties as well.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1070,7 +1070,7 @@ The energy multiplier applied to light every time it bounces from a surface when
 - `void` **set_sdfgi_cascades** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_sdfgi_cascades** ( )
 
-The number of cascades to use for SDFGI (between 1 and 8). A higher number of cascades allows displaying SDFGI further away while preserving detail up close, at the cost of performance. When using SDFGI on small-scale levels, [`sdfgi_cascades`](#class_environment_property_sdfgi_cascades) can often be decreased between `1` and `4` to improve performance.
+The number of cascades to use for SDFGI (between 1 and 8). A higher number of cascades allows displaying SDFGI further away while preserving detail up close, at the cost of performance. When using SDFGI on small-scale levels, [`sdfgi_cascades`](class_environment.md#class_environment_property_sdfgi_cascades) can often be decreased between `1` and `4` to improve performance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1083,11 +1083,11 @@ The number of cascades to use for SDFGI (between 1 and 8). A higher number of ca
 - `void` **set_sdfgi_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_sdfgi_enabled** ( )
 
-If `true`, enables signed distance field global illumination for meshes that have their [`GeometryInstance3D.gi_mode`](#class_geometryinstance3d_property_gi_mode) set to [`GeometryInstance3D.GI_MODE_STATIC`](#class_geometryinstance3d_constant_gi_mode_static). SDFGI is a real-time global illumination technique that works well with procedurally generated and user-built levels, including in situations where geometry is created during gameplay. The signed distance field is automatically generated around the camera as it moves. Dynamic lights are supported, but dynamic occluders and emissive surfaces are not.
+If `true`, enables signed distance field global illumination for meshes that have their [`GeometryInstance3D.gi_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode) set to [`GeometryInstance3D.GI_MODE_STATIC`](class_geometryinstance3d.md#class_geometryinstance3d_constant_gi_mode_static). SDFGI is a real-time global illumination technique that works well with procedurally generated and user-built levels, including in situations where geometry is created during gameplay. The signed distance field is automatically generated around the camera as it moves. Dynamic lights are supported, but dynamic occluders and emissive surfaces are not.
 
  **Note:** SDFGI is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
- **Performance:** SDFGI is relatively demanding on the GPU and is not suited to low-end hardware such as integrated graphics (consider [`LightmapGI`](class_lightmapgi.md) instead). To improve SDFGI performance, enable [`ProjectSettings.rendering/global_illumination/gi/use_half_resolution`](#class_projectsettings_property_rendering/global_illumination/gi/use_half_resolution) in the Project Settings.
+ **Performance:** SDFGI is relatively demanding on the GPU and is not suited to low-end hardware such as integrated graphics (consider [`LightmapGI`](class_lightmapgi.md) instead). To improve SDFGI performance, enable [`ProjectSettings.rendering/global_illumination/gi/use_half_resolution`](class_projectsettings.md#class_projectsettings_property_rendering/global_illumination/gi/use_half_resolution) in the Project Settings.
 
  **Note:** Meshes should have sufficiently thick walls to avoid light leaks (avoid one-sided walls). For interior levels, enclose your level geometry in a sufficiently large box and bridge the loops to close the mesh.
 
@@ -1102,7 +1102,7 @@ If `true`, enables signed distance field global illumination for meshes that hav
 - `void` **set_sdfgi_energy** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_sdfgi_energy** ( )
 
-The energy multiplier to use for SDFGI. Higher values will result in brighter indirect lighting and reflections. See also [`sdfgi_bounce_feedback`](#class_environment_property_sdfgi_bounce_feedback).
+The energy multiplier to use for SDFGI. Higher values will result in brighter indirect lighting and reflections. See also [`sdfgi_bounce_feedback`](class_environment.md#class_environment_property_sdfgi_bounce_feedback).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1117,7 +1117,7 @@ The energy multiplier to use for SDFGI. Higher values will result in brighter in
 
 The maximum distance at which SDFGI is visible. Beyond this distance, environment lighting or other sources of GI such as [`ReflectionProbe`](class_reflectionprobe.md) will be used as a fallback.
 
- **Note:** This property is linked to [`sdfgi_min_cell_size`](#class_environment_property_sdfgi_min_cell_size) and [`sdfgi_cascade0_distance`](#class_environment_property_sdfgi_cascade0_distance). Changing its value will automatically change those properties as well.
+ **Note:** This property is linked to [`sdfgi_min_cell_size`](class_environment.md#class_environment_property_sdfgi_min_cell_size) and [`sdfgi_cascade0_distance`](class_environment.md#class_environment_property_sdfgi_cascade0_distance). Changing its value will automatically change those properties as well.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1132,7 +1132,7 @@ The maximum distance at which SDFGI is visible. Beyond this distance, environmen
 
 The cell size to use for the closest SDFGI cascade (in 3D units). Lower values allow SDFGI to be more precise up close, at the cost of making SDFGI updates more demanding. This can cause stuttering when the camera moves fast. Higher values allow SDFGI to cover more ground, while also reducing the performance impact of SDFGI updates.
 
- **Note:** This property is linked to [`sdfgi_max_distance`](#class_environment_property_sdfgi_max_distance) and [`sdfgi_cascade0_distance`](#class_environment_property_sdfgi_cascade0_distance). Changing its value will automatically change those properties as well.
+ **Note:** This property is linked to [`sdfgi_max_distance`](class_environment.md#class_environment_property_sdfgi_max_distance) and [`sdfgi_cascade0_distance`](class_environment.md#class_environment_property_sdfgi_cascade0_distance). Changing its value will automatically change those properties as well.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1184,7 +1184,7 @@ If `true`, SDFGI takes the environment lighting into account. This should be set
 - `void` **set_sdfgi_use_occlusion** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_sdfgi_using_occlusion** ( )
 
-If `true`, SDFGI uses an occlusion detection approach to reduce light leaking. Occlusion may however introduce dark blotches in certain spots, which may be undesired in mostly outdoor scenes. [`sdfgi_use_occlusion`](#class_environment_property_sdfgi_use_occlusion) has a performance impact and should only be enabled when needed.
+If `true`, SDFGI uses an occlusion detection approach to reduce light leaking. Occlusion may however introduce dark blotches in certain spots, which may be undesired in mostly outdoor scenes. [`sdfgi_use_occlusion`](class_environment.md#class_environment_property_sdfgi_use_occlusion) has a performance impact and should only be enabled when needed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1197,7 +1197,7 @@ If `true`, SDFGI uses an occlusion detection approach to reduce light leaking. O
 - `void` **set_sdfgi_y_scale** ( value: [SDFGIYScale](#enum_environment_sdfgiyscale) )
 - [SDFGIYScale](#enum_environment_sdfgiyscale) **get_sdfgi_y_scale** ( )
 
-The Y scale to use for SDFGI cells. Lower values will result in SDFGI cells being packed together more closely on the Y axis. This is used to balance between quality and covering a lot of vertical ground. [`sdfgi_y_scale`](#class_environment_property_sdfgi_y_scale) should be set depending on how vertical your scene is (and how fast your camera may move on the Y axis).
+The Y scale to use for SDFGI cells. Lower values will result in SDFGI cells being packed together more closely on the Y axis. This is used to balance between quality and covering a lot of vertical ground. [`sdfgi_y_scale`](class_environment.md#class_environment_property_sdfgi_y_scale) should be set depending on how vertical your scene is (and how fast your camera may move on the Y axis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1329,7 +1329,7 @@ The screen-space ambient occlusion intensity in direct light. In real life, ambi
 - `void` **set_ssao_power** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_ssao_power** ( )
 
-The distribution of occlusion. A higher value results in darker occlusion, similar to [`ssao_intensity`](#class_environment_property_ssao_intensity), but with a sharper falloff.
+The distribution of occlusion. A higher value results in darker occlusion, similar to [`ssao_intensity`](class_environment.md#class_environment_property_ssao_intensity), but with a sharper falloff.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1368,7 +1368,7 @@ The amount that the screen-space ambient occlusion effect is allowed to blur ove
 - `void` **set_ssil_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_ssil_enabled** ( )
 
-If `true`, the screen-space indirect lighting effect is enabled. Screen space indirect lighting is a form of indirect lighting that allows diffuse light to bounce between nearby objects. Screen-space indirect lighting works very similarly to screen-space ambient occlusion, in that it only affects a limited range. It is intended to be used along with a form of proper global illumination like SDFGI or [`VoxelGI`](class_voxelgi.md). Screen-space indirect lighting is not affected by individual light's [`Light3D.light_indirect_energy`](#class_light3d_property_light_indirect_energy).
+If `true`, the screen-space indirect lighting effect is enabled. Screen space indirect lighting is a form of indirect lighting that allows diffuse light to bounce between nearby objects. Screen-space indirect lighting works very similarly to screen-space ambient occlusion, in that it only affects a limited range. It is intended to be used along with a form of proper global illumination like SDFGI or [`VoxelGI`](class_voxelgi.md). Screen-space indirect lighting is not affected by individual light's [`Light3D.light_indirect_energy`](class_light3d.md#class_light3d_property_light_indirect_energy).
 
  **Note:** SSIL is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
@@ -1502,7 +1502,7 @@ The maximum number of steps for screen-space reflections. Higher values are slow
 - `void` **set_tonemap_exposure** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_tonemap_exposure** ( )
 
-The default exposure used for tonemapping. Higher values result in a brighter image. See also [`tonemap_white`](#class_environment_property_tonemap_white).
+The default exposure used for tonemapping. Higher values result in a brighter image. See also [`tonemap_white`](class_environment.md#class_environment_property_tonemap_white).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1528,7 +1528,7 @@ The tonemapping mode to use. Tonemapping is the process that "converts" HDR valu
 - `void` **set_tonemap_white** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_tonemap_white** ( )
 
-The white reference value for tonemapping (also called "whitepoint"). Higher values can make highlights look less blown out, and will also slightly darken the whole scene as a result. Only effective if the [`tonemap_mode`](#class_environment_property_tonemap_mode) isn't set to [`TONE_MAPPER_LINEAR`](#class_environment_constant_tone_mapper_linear). See also [`tonemap_exposure`](#class_environment_property_tonemap_exposure).
+The white reference value for tonemapping (also called "whitepoint"). Higher values can make highlights look less blown out, and will also slightly darken the whole scene as a result. Only effective if the [`tonemap_mode`](class_environment.md#class_environment_property_tonemap_mode) isn't set to [`TONE_MAPPER_LINEAR`](class_environment.md#class_environment_constant_tone_mapper_linear). See also [`tonemap_exposure`](class_environment.md#class_environment_property_tonemap_exposure).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1554,9 +1554,9 @@ The [`Color`](class_color.md) of the volumetric fog when interacting with lights
 - `void` **set_volumetric_fog_ambient_inject** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_volumetric_fog_ambient_inject** ( )
 
-Scales the strength of ambient light used in the volumetric fog. A value of `0.0` means that ambient light will not impact the volumetric fog. [`volumetric_fog_ambient_inject`](#class_environment_property_volumetric_fog_ambient_inject) has a small performance cost when set above `0.0`.
+Scales the strength of ambient light used in the volumetric fog. A value of `0.0` means that ambient light will not impact the volumetric fog. [`volumetric_fog_ambient_inject`](class_environment.md#class_environment_property_volumetric_fog_ambient_inject) has a small performance cost when set above `0.0`.
 
- **Note:** This has no visible effect if [`volumetric_fog_density`](#class_environment_property_volumetric_fog_density) is `0.0` or if [`volumetric_fog_albedo`](#class_environment_property_volumetric_fog_albedo) is a fully black color.
+ **Note:** This has no visible effect if [`volumetric_fog_density`](class_environment.md#class_environment_property_volumetric_fog_density) is `0.0` or if [`volumetric_fog_albedo`](class_environment.md#class_environment_property_volumetric_fog_albedo) is a fully black color.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1586,7 +1586,7 @@ The base *exponential* density of the volumetric fog. Set this to the lowest den
 
 A value of `0.0` disables global volumetric fog while allowing [`FogVolume`](class_fogvolume.md) s to display volumetric fog in specific areas.
 
-To make volumetric fog work as a volumetric *lighting* solution, set [`volumetric_fog_density`](#class_environment_property_volumetric_fog_density) to the lowest non-zero value (`0.0001`) then increase lights' [`Light3D.light_volumetric_fog_energy`](#class_light3d_property_light_volumetric_fog_energy) to values between `10000` and `100000` to compensate for the very low density.
+To make volumetric fog work as a volumetric *lighting* solution, set [`volumetric_fog_density`](class_environment.md#class_environment_property_volumetric_fog_density) to the lowest non-zero value (`0.0001`) then increase lights' [`Light3D.light_volumetric_fog_energy`](class_light3d.md#class_light3d_property_light_volumetric_fog_energy) to values between `10000` and `100000` to compensate for the very low density.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1653,11 +1653,11 @@ Enables the volumetric fog effect. Volumetric fog uses a screen-aligned froxel b
 - `void` **set_volumetric_fog_gi_inject** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_volumetric_fog_gi_inject** ( )
 
-Scales the strength of Global Illumination used in the volumetric fog's albedo color. A value of `0.0` means that Global Illumination will not impact the volumetric fog. [`volumetric_fog_gi_inject`](#class_environment_property_volumetric_fog_gi_inject) has a small performance cost when set above `0.0`.
+Scales the strength of Global Illumination used in the volumetric fog's albedo color. A value of `0.0` means that Global Illumination will not impact the volumetric fog. [`volumetric_fog_gi_inject`](class_environment.md#class_environment_property_volumetric_fog_gi_inject) has a small performance cost when set above `0.0`.
 
- **Note:** This has no visible effect if [`volumetric_fog_density`](#class_environment_property_volumetric_fog_density) is `0.0` or if [`volumetric_fog_albedo`](#class_environment_property_volumetric_fog_albedo) is a fully black color.
+ **Note:** This has no visible effect if [`volumetric_fog_density`](class_environment.md#class_environment_property_volumetric_fog_density) is `0.0` or if [`volumetric_fog_albedo`](class_environment.md#class_environment_property_volumetric_fog_albedo) is a fully black color.
 
- **Note:** Only [`VoxelGI`](class_voxelgi.md) and SDFGI ([`sdfgi_enabled`](#class_environment_property_sdfgi_enabled)) are taken into account when using [`volumetric_fog_gi_inject`](#class_environment_property_volumetric_fog_gi_inject). Global illumination from [`LightmapGI`](class_lightmapgi.md), [`ReflectionProbe`](class_reflectionprobe.md) and SSIL (see [`ssil_enabled`](#class_environment_property_ssil_enabled)) will be ignored by volumetric fog.
+ **Note:** Only [`VoxelGI`](class_voxelgi.md) and SDFGI ([`sdfgi_enabled`](class_environment.md#class_environment_property_sdfgi_enabled)) are taken into account when using [`volumetric_fog_gi_inject`](class_environment.md#class_environment_property_volumetric_fog_gi_inject). Global illumination from [`LightmapGI`](class_lightmapgi.md), [`ReflectionProbe`](class_reflectionprobe.md) and SSIL (see [`ssil_enabled`](class_environment.md#class_environment_property_ssil_enabled)) will be ignored by volumetric fog.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1670,7 +1670,7 @@ Scales the strength of Global Illumination used in the volumetric fog's albedo c
 - `void` **set_volumetric_fog_length** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_volumetric_fog_length** ( )
 
-The distance over which the volumetric fog is computed. Increase to compute fog over a greater range, decrease to add more detail when a long range is not needed. For best quality fog, keep this as low as possible. See also [`ProjectSettings.rendering/environment/volumetric_fog/volume_depth`](#class_projectsettings_property_rendering/environment/volumetric_fog/volume_depth).
+The distance over which the volumetric fog is computed. Increase to compute fog over a greater range, decrease to add more detail when a long range is not needed. For best quality fog, keep this as low as possible. See also [`ProjectSettings.rendering/environment/volumetric_fog/volume_depth`](class_projectsettings.md#class_projectsettings_property_rendering/environment/volumetric_fog/volume_depth).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1685,7 +1685,7 @@ The distance over which the volumetric fog is computed. Increase to compute fog 
 
 The factor to use when affecting the sky with volumetric fog. `1.0` means that volumetric fog can fully obscure the sky. Lower values reduce the impact of volumetric fog on sky rendering, with `0.0` not affecting sky rendering at all.
 
- **Note:** [`volumetric_fog_sky_affect`](#class_environment_property_volumetric_fog_sky_affect) also affects [`FogVolume`](class_fogvolume.md) s, even if [`volumetric_fog_density`](#class_environment_property_volumetric_fog_density) is `0.0`. If you notice [`FogVolume`](class_fogvolume.md) s are disappearing when looking towards the sky, set [`volumetric_fog_sky_affect`](#class_environment_property_volumetric_fog_sky_affect) to `1.0`.
+ **Note:** [`volumetric_fog_sky_affect`](class_environment.md#class_environment_property_volumetric_fog_sky_affect) also affects [`FogVolume`](class_fogvolume.md) s, even if [`volumetric_fog_density`](class_environment.md#class_environment_property_volumetric_fog_density) is `0.0`. If you notice [`FogVolume`](class_fogvolume.md) s are disappearing when looking towards the sky, set [`volumetric_fog_sky_affect`](class_environment.md#class_environment_property_volumetric_fog_sky_affect) to `1.0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1711,7 +1711,7 @@ The amount by which to blend the last frame with the current frame. A higher num
 - `void` **set_volumetric_fog_temporal_reprojection_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_volumetric_fog_temporal_reprojection_enabled** ( )
 
-Enables temporal reprojection in the volumetric fog. Temporal reprojection blends the current frame's volumetric fog with the last frame's volumetric fog to smooth out jagged edges. The performance cost is minimal; however, it leads to moving [`FogVolume`](class_fogvolume.md) s and [`Light3D`](class_light3d.md) s "ghosting" and leaving a trail behind them. When temporal reprojection is enabled, try to avoid moving [`FogVolume`](class_fogvolume.md) s or [`Light3D`](class_light3d.md) s too fast. Short-lived dynamic lighting effects should have [`Light3D.light_volumetric_fog_energy`](#class_light3d_property_light_volumetric_fog_energy) set to `0.0` to avoid ghosting.
+Enables temporal reprojection in the volumetric fog. Temporal reprojection blends the current frame's volumetric fog with the last frame's volumetric fog to smooth out jagged edges. The performance cost is minimal; however, it leads to moving [`FogVolume`](class_fogvolume.md) s and [`Light3D`](class_light3d.md) s "ghosting" and leaving a trail behind them. When temporal reprojection is enabled, try to avoid moving [`FogVolume`](class_fogvolume.md) s or [`Light3D`](class_light3d.md) s too fast. Short-lived dynamic lighting effects should have [`Light3D.light_volumetric_fog_energy`](class_light3d.md#class_light3d_property_light_volumetric_fog_energy) set to `0.0` to avoid ghosting.
 
 <!-- rst-class:: classref-section-separator -->
 

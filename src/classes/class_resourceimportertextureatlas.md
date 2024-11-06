@@ -21,10 +21,10 @@ This imports a collection of textures from a PNG image into an [`AtlasTexture`](
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`atlas_file`](#class_resourceimportertextureatlas_property_atlas_file)                                       | ``""``    |
-| [`bool`](class_bool.md)     | [`crop_to_region`](#class_resourceimportertextureatlas_property_crop_to_region)                               | ``false`` |
-| [`int`](class_int.md)       | [`import_mode`](#class_resourceimportertextureatlas_property_import_mode)                                     | ``0``     |
-| [`bool`](class_bool.md)     | [`trim_alpha_border_from_region`](#class_resourceimportertextureatlas_property_trim_alpha_border_from_region) | ``true``  |
+| [`String`](class_string.md) | [`atlas_file`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_atlas_file)                                       | ``""``    |
+| [`bool`](class_bool.md)     | [`crop_to_region`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_crop_to_region)                               | ``false`` |
+| [`int`](class_int.md)       | [`import_mode`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_import_mode)                                     | ``0``     |
+| [`bool`](class_bool.md)     | [`trim_alpha_border_from_region`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_trim_alpha_border_from_region) | ``true``  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,9 +46,9 @@ Path to the atlas spritesheet. This *must* be set to valid path to a PNG image. 
 
 [`bool`](class_bool.md) **crop_to_region** = ``false`` <div id="class_resourceimportertextureatlas_property_crop_to_region"></div>
 
-If `true`, discards empty areas from the atlas. This only affects final sprite positioning, not storage. See also [`trim_alpha_border_from_region`](#class_resourceimportertextureatlas_property_trim_alpha_border_from_region).
+If `true`, discards empty areas from the atlas. This only affects final sprite positioning, not storage. See also [`trim_alpha_border_from_region`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_trim_alpha_border_from_region).
 
- **Note:** Only effective if [`import_mode`](#class_resourceimportertextureatlas_property_import_mode) is **Region**.
+ **Note:** Only effective if [`import_mode`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_import_mode) is **Region**.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -58,7 +58,7 @@ If `true`, discards empty areas from the atlas. This only affects final sprite p
 
 [`int`](class_int.md) **import_mode** = ``0`` <div id="class_resourceimportertextureatlas_property_import_mode"></div>
 
-**Region:** Imports the atlas in an [`AtlasTexture`](class_atlastexture.md) resource, which is rendered as a rectangle. This is fast to render, but transparent areas still have to be rendered if they can't be trimmed effectively by [`trim_alpha_border_from_region`](#class_resourceimportertextureatlas_property_trim_alpha_border_from_region). This can reduce performance when rendering large sprites on screen.
+**Region:** Imports the atlas in an [`AtlasTexture`](class_atlastexture.md) resource, which is rendered as a rectangle. This is fast to render, but transparent areas still have to be rendered if they can't be trimmed effectively by [`trim_alpha_border_from_region`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_trim_alpha_border_from_region). This can reduce performance when rendering large sprites on screen.
 
  **Mesh:** Imports the atlas as an [`ArrayMesh`](class_arraymesh.md) resource, keeping the original bitmap visible (but rendered as a polygon). This can be used to reduce fill rate when rendering large transparent sprites, at the cost of slower rendering if there are little to no transparent areas in the sprite.
 
@@ -70,9 +70,9 @@ If `true`, discards empty areas from the atlas. This only affects final sprite p
 
 [`bool`](class_bool.md) **trim_alpha_border_from_region** = ``true`` <div id="class_resourceimportertextureatlas_property_trim_alpha_border_from_region"></div>
 
-If `true`, trims the region to exclude fully transparent pixels using a clipping rectangle (which is never rotated). This can be used to save memory. See also [`crop_to_region`](#class_resourceimportertextureatlas_property_crop_to_region).
+If `true`, trims the region to exclude fully transparent pixels using a clipping rectangle (which is never rotated). This can be used to save memory. See also [`crop_to_region`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_crop_to_region).
 
- **Note:** Only effective if [`import_mode`](#class_resourceimportertextureatlas_property_import_mode) is **Region**.
+ **Note:** Only effective if [`import_mode`](class_resourceimportertextureatlas.md#class_resourceimportertextureatlas_property_import_mode) is **Region**.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

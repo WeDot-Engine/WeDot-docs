@@ -19,12 +19,12 @@ A material for [`CanvasItem`](class_canvasitem.md) s.
 
 |||
 |:-:|:--|
-| [BlendMode](#enum_canvasitemmaterial_blendmode) | [`blend_mode`](#class_canvasitemmaterial_property_blend_mode)                           | ``0``     |
-| [LightMode](#enum_canvasitemmaterial_lightmode) | [`light_mode`](#class_canvasitemmaterial_property_light_mode)                           | ``0``     |
-| [`int`](class_int.md)                           | [`particles_anim_h_frames`](#class_canvasitemmaterial_property_particles_anim_h_frames) |           |
-| [`bool`](class_bool.md)                         | [`particles_anim_loop`](#class_canvasitemmaterial_property_particles_anim_loop)         |           |
-| [`int`](class_int.md)                           | [`particles_anim_v_frames`](#class_canvasitemmaterial_property_particles_anim_v_frames) |           |
-| [`bool`](class_bool.md)                         | [`particles_animation`](#class_canvasitemmaterial_property_particles_animation)         | ``false`` |
+| [BlendMode](#enum_canvasitemmaterial_blendmode) | [`blend_mode`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_blend_mode)                           | ``0``     |
+| [LightMode](#enum_canvasitemmaterial_lightmode) | [`light_mode`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_light_mode)                           | ``0``     |
+| [`int`](class_int.md)                           | [`particles_anim_h_frames`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_anim_h_frames) |           |
+| [`bool`](class_bool.md)                         | [`particles_anim_loop`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_anim_loop)         |           |
+| [`int`](class_int.md)                           | [`particles_anim_v_frames`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_anim_v_frames) |           |
+| [`bool`](class_bool.md)                         | [`particles_animation`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_animation)         | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -133,7 +133,7 @@ The manner in which material reacts to lighting.
 
 The number of columns in the spritesheet assigned as [`Texture2D`](class_texture2d.md) for a [`GPUParticles2D`](class_gpuparticles2d.md) or [`CPUParticles2D`](class_cpuparticles2d.md).
 
- **Note:** This property is only used and visible in the editor if [`particles_animation`](#class_canvasitemmaterial_property_particles_animation) is `true`.
+ **Note:** This property is only used and visible in the editor if [`particles_animation`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_animation) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -148,7 +148,7 @@ The number of columns in the spritesheet assigned as [`Texture2D`](class_texture
 
 If `true`, the particles animation will loop.
 
- **Note:** This property is only used and visible in the editor if [`particles_animation`](#class_canvasitemmaterial_property_particles_animation) is `true`.
+ **Note:** This property is only used and visible in the editor if [`particles_animation`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_animation) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -163,7 +163,7 @@ If `true`, the particles animation will loop.
 
 The number of rows in the spritesheet assigned as [`Texture2D`](class_texture2d.md) for a [`GPUParticles2D`](class_gpuparticles2d.md) or [`CPUParticles2D`](class_cpuparticles2d.md).
 
- **Note:** This property is only used and visible in the editor if [`particles_animation`](#class_canvasitemmaterial_property_particles_animation) is `true`.
+ **Note:** This property is only used and visible in the editor if [`particles_animation`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_animation) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -176,7 +176,7 @@ The number of rows in the spritesheet assigned as [`Texture2D`](class_texture2d.
 - `void` **set_particles_animation** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_particles_animation** ( )
 
-If `true`, enable spritesheet-based animation features when assigned to [`GPUParticles2D`](class_gpuparticles2d.md) and [`CPUParticles2D`](class_cpuparticles2d.md) nodes. The [`ParticleProcessMaterial.anim_speed_max`](#class_particleprocessmaterial_property_anim_speed_max) or [`CPUParticles2D.anim_speed_max`](#class_cpuparticles2d_property_anim_speed_max) should also be set to a positive value for the animation to play.
+If `true`, enable spritesheet-based animation features when assigned to [`GPUParticles2D`](class_gpuparticles2d.md) and [`CPUParticles2D`](class_cpuparticles2d.md) nodes. The [`ParticleProcessMaterial.anim_speed_max`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_anim_speed_max) or [`CPUParticles2D.anim_speed_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_speed_max) should also be set to a positive value for the animation to play.
 
 This property (and other `particles_anim_*` properties that depend on it) has no effect on other types of nodes.
 

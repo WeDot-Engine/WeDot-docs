@@ -23,32 +23,32 @@ This node can also locally alter or override physics parameters (gravity, dampin
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                   | [`angular_damp`](#class_area2d_property_angular_damp)                               | ``1.0``           |
-| [SpaceOverride](#enum_area2d_spaceoverride) | [`angular_damp_space_override`](#class_area2d_property_angular_damp_space_override) | ``0``             |
-| [`StringName`](class_stringname.md)         | [`audio_bus_name`](#class_area2d_property_audio_bus_name)                           | ``&"Master"``     |
-| [`bool`](class_bool.md)                     | [`audio_bus_override`](#class_area2d_property_audio_bus_override)                   | ``false``         |
-| [`float`](class_float.md)                   | [`gravity`](#class_area2d_property_gravity)                                         | ``980.0``         |
-| [`Vector2`](class_vector2.md)               | [`gravity_direction`](#class_area2d_property_gravity_direction)                     | ``Vector2(0, 1)`` |
-| [`bool`](class_bool.md)                     | [`gravity_point`](#class_area2d_property_gravity_point)                             | ``false``         |
-| [`Vector2`](class_vector2.md)               | [`gravity_point_center`](#class_area2d_property_gravity_point_center)               | ``Vector2(0, 1)`` |
-| [`float`](class_float.md)                   | [`gravity_point_unit_distance`](#class_area2d_property_gravity_point_unit_distance) | ``0.0``           |
-| [SpaceOverride](#enum_area2d_spaceoverride) | [`gravity_space_override`](#class_area2d_property_gravity_space_override)           | ``0``             |
-| [`float`](class_float.md)                   | [`linear_damp`](#class_area2d_property_linear_damp)                                 | ``0.1``           |
-| [SpaceOverride](#enum_area2d_spaceoverride) | [`linear_damp_space_override`](#class_area2d_property_linear_damp_space_override)   | ``0``             |
-| [`bool`](class_bool.md)                     | [`monitorable`](#class_area2d_property_monitorable)                                 | ``true``          |
-| [`bool`](class_bool.md)                     | [`monitoring`](#class_area2d_property_monitoring)                                   | ``true``          |
-| [`int`](class_int.md)                       | [`priority`](#class_area2d_property_priority)                                       | ``0``             |
+| [`float`](class_float.md)                   | [`angular_damp`](class_area2d.md#class_area2d_property_angular_damp)                               | ``1.0``           |
+| [SpaceOverride](#enum_area2d_spaceoverride) | [`angular_damp_space_override`](class_area2d.md#class_area2d_property_angular_damp_space_override) | ``0``             |
+| [`StringName`](class_stringname.md)         | [`audio_bus_name`](class_area2d.md#class_area2d_property_audio_bus_name)                           | ``&"Master"``     |
+| [`bool`](class_bool.md)                     | [`audio_bus_override`](class_area2d.md#class_area2d_property_audio_bus_override)                   | ``false``         |
+| [`float`](class_float.md)                   | [`gravity`](class_area2d.md#class_area2d_property_gravity)                                         | ``980.0``         |
+| [`Vector2`](class_vector2.md)               | [`gravity_direction`](class_area2d.md#class_area2d_property_gravity_direction)                     | ``Vector2(0, 1)`` |
+| [`bool`](class_bool.md)                     | [`gravity_point`](class_area2d.md#class_area2d_property_gravity_point)                             | ``false``         |
+| [`Vector2`](class_vector2.md)               | [`gravity_point_center`](class_area2d.md#class_area2d_property_gravity_point_center)               | ``Vector2(0, 1)`` |
+| [`float`](class_float.md)                   | [`gravity_point_unit_distance`](class_area2d.md#class_area2d_property_gravity_point_unit_distance) | ``0.0``           |
+| [SpaceOverride](#enum_area2d_spaceoverride) | [`gravity_space_override`](class_area2d.md#class_area2d_property_gravity_space_override)           | ``0``             |
+| [`float`](class_float.md)                   | [`linear_damp`](class_area2d.md#class_area2d_property_linear_damp)                                 | ``0.1``           |
+| [SpaceOverride](#enum_area2d_spaceoverride) | [`linear_damp_space_override`](class_area2d.md#class_area2d_property_linear_damp_space_override)   | ``0``             |
+| [`bool`](class_bool.md)                     | [`monitorable`](class_area2d.md#class_area2d_property_monitorable)                                 | ``true``          |
+| [`bool`](class_bool.md)                     | [`monitoring`](class_area2d.md#class_area2d_property_monitoring)                                   | ``true``          |
+| [`int`](class_int.md)                       | [`priority`](class_area2d.md#class_area2d_property_priority)                                       | ``0``             |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [Array](class_array.md) [`Area2D`](class_area2d.md) | [`get_overlapping_areas`](#class_area2d_method_get_overlapping_areas) ( ) const[^const]               |
-| [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_overlapping_bodies`](#class_area2d_method_get_overlapping_bodies) ( ) const[^const]             |
-| [`bool`](class_bool.md)                             | [`has_overlapping_areas`](#class_area2d_method_has_overlapping_areas) ( ) const[^const]               |
-| [`bool`](class_bool.md)                             | [`has_overlapping_bodies`](#class_area2d_method_has_overlapping_bodies) ( ) const[^const]             |
-| [`bool`](class_bool.md)                             | [`overlaps_area`](#class_area2d_method_overlaps_area) ( area: [`Node`](class_node.md) ) const[^const] |
-| [`bool`](class_bool.md)                             | [`overlaps_body`](#class_area2d_method_overlaps_body) ( body: [`Node`](class_node.md) ) const[^const] |
+| [Array](class_array.md) [`Area2D`](class_area2d.md) | [`get_overlapping_areas`](class_area2d.md#class_area2d_method_get_overlapping_areas) ( ) const[^const]               |
+| [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_overlapping_bodies`](class_area2d.md#class_area2d_method_get_overlapping_bodies) ( ) const[^const]             |
+| [`bool`](class_bool.md)                             | [`has_overlapping_areas`](class_area2d.md#class_area2d_method_has_overlapping_areas) ( ) const[^const]               |
+| [`bool`](class_bool.md)                             | [`has_overlapping_bodies`](class_area2d.md#class_area2d_method_has_overlapping_bodies) ( ) const[^const]             |
+| [`bool`](class_bool.md)                             | [`overlaps_area`](class_area2d.md#class_area2d_method_overlaps_area) ( area: [`Node`](class_node.md) ) const[^const] |
+| [`bool`](class_bool.md)                             | [`overlaps_body`](class_area2d.md#class_area2d_method_overlaps_body) ( body: [`Node`](class_node.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -60,7 +60,7 @@ This node can also locally alter or override physics parameters (gravity, dampin
 
 **area_entered** ( area: [`Area2D`](class_area2d.md) ) <div id="class_area2d_signal_area_entered"></div>
 
-Emitted when the received `area` enters this area. Requires [`monitoring`](#class_area2d_property_monitoring) to be set to `true`.
+Emitted when the received `area` enters this area. Requires [`monitoring`](class_area2d.md#class_area2d_property_monitoring) to be set to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -70,7 +70,7 @@ Emitted when the received `area` enters this area. Requires [`monitoring`](#clas
 
 **area_exited** ( area: [`Area2D`](class_area2d.md) ) <div id="class_area2d_signal_area_exited"></div>
 
-Emitted when the received `area` exits this area. Requires [`monitoring`](#class_area2d_property_monitoring) to be set to `true`.
+Emitted when the received `area` exits this area. Requires [`monitoring`](class_area2d.md#class_area2d_property_monitoring) to be set to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -80,7 +80,7 @@ Emitted when the received `area` exits this area. Requires [`monitoring`](#class
 
 **area_shape_entered** ( area_rid: [`RID`](class_rid.md), area: [`Area2D`](class_area2d.md), area_shape_index: [`int`](class_int.md), local_shape_index: [`int`](class_int.md) ) <div id="class_area2d_signal_area_shape_entered"></div>
 
-Emitted when a [`Shape2D`](class_shape2d.md) of the received `area` enters a shape of this area. Requires [`monitoring`](#class_area2d_property_monitoring) to be set to `true`.
+Emitted when a [`Shape2D`](class_shape2d.md) of the received `area` enters a shape of this area. Requires [`monitoring`](class_area2d.md#class_area2d_property_monitoring) to be set to `true`.
 
  `local_shape_index` and `area_shape_index` contain indices of the interacting shapes from this area and the other area, respectively. `area_rid` contains the [`RID`](class_rid.md) of the other area. These values can be used with the [`PhysicsServer2D`](class_physicsserver2d.md).
 
@@ -109,9 +109,9 @@ Emitted when a [`Shape2D`](class_shape2d.md) of the received `area` enters a sha
 
 **area_shape_exited** ( area_rid: [`RID`](class_rid.md), area: [`Area2D`](class_area2d.md), area_shape_index: [`int`](class_int.md), local_shape_index: [`int`](class_int.md) ) <div id="class_area2d_signal_area_shape_exited"></div>
 
-Emitted when a [`Shape2D`](class_shape2d.md) of the received `area` exits a shape of this area. Requires [`monitoring`](#class_area2d_property_monitoring) to be set to `true`.
+Emitted when a [`Shape2D`](class_shape2d.md) of the received `area` exits a shape of this area. Requires [`monitoring`](class_area2d.md#class_area2d_property_monitoring) to be set to `true`.
 
-See also [`area_shape_entered`](#class_area2d_signal_area_shape_entered).
+See also [`area_shape_entered`](class_area2d.md#class_area2d_signal_area_shape_entered).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -121,7 +121,7 @@ See also [`area_shape_entered`](#class_area2d_signal_area_shape_entered).
 
 **body_entered** ( body: [`Node2D`](class_node2d.md) ) <div id="class_area2d_signal_body_entered"></div>
 
-Emitted when the received `body` enters this area. `body` can be a [`PhysicsBody2D`](class_physicsbody2d.md) or a [`TileMap`](class_tilemap.md). [`TileMap`](class_tilemap.md) s are detected if their [`TileSet`](class_tileset.md) has collision shapes configured. Requires [`monitoring`](#class_area2d_property_monitoring) to be set to `true`.
+Emitted when the received `body` enters this area. `body` can be a [`PhysicsBody2D`](class_physicsbody2d.md) or a [`TileMap`](class_tilemap.md). [`TileMap`](class_tilemap.md) s are detected if their [`TileSet`](class_tileset.md) has collision shapes configured. Requires [`monitoring`](class_area2d.md#class_area2d_property_monitoring) to be set to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -131,7 +131,7 @@ Emitted when the received `body` enters this area. `body` can be a [`PhysicsBody
 
 **body_exited** ( body: [`Node2D`](class_node2d.md) ) <div id="class_area2d_signal_body_exited"></div>
 
-Emitted when the received `body` exits this area. `body` can be a [`PhysicsBody2D`](class_physicsbody2d.md) or a [`TileMap`](class_tilemap.md). [`TileMap`](class_tilemap.md) s are detected if their [`TileSet`](class_tileset.md) has collision shapes configured. Requires [`monitoring`](#class_area2d_property_monitoring) to be set to `true`.
+Emitted when the received `body` exits this area. `body` can be a [`PhysicsBody2D`](class_physicsbody2d.md) or a [`TileMap`](class_tilemap.md). [`TileMap`](class_tilemap.md) s are detected if their [`TileSet`](class_tileset.md) has collision shapes configured. Requires [`monitoring`](class_area2d.md#class_area2d_property_monitoring) to be set to `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -141,7 +141,7 @@ Emitted when the received `body` exits this area. `body` can be a [`PhysicsBody2
 
 **body_shape_entered** ( body_rid: [`RID`](class_rid.md), body: [`Node2D`](class_node2d.md), body_shape_index: [`int`](class_int.md), local_shape_index: [`int`](class_int.md) ) <div id="class_area2d_signal_body_shape_entered"></div>
 
-Emitted when a [`Shape2D`](class_shape2d.md) of the received `body` enters a shape of this area. `body` can be a [`PhysicsBody2D`](class_physicsbody2d.md) or a [`TileMap`](class_tilemap.md). [`TileMap`](class_tilemap.md) s are detected if their [`TileSet`](class_tileset.md) has collision shapes configured. Requires [`monitoring`](#class_area2d_property_monitoring) to be set to `true`.
+Emitted when a [`Shape2D`](class_shape2d.md) of the received `body` enters a shape of this area. `body` can be a [`PhysicsBody2D`](class_physicsbody2d.md) or a [`TileMap`](class_tilemap.md). [`TileMap`](class_tilemap.md) s are detected if their [`TileSet`](class_tileset.md) has collision shapes configured. Requires [`monitoring`](class_area2d.md#class_area2d_property_monitoring) to be set to `true`.
 
  `local_shape_index` and `body_shape_index` contain indices of the interacting shapes from this area and the interacting body, respectively. `body_rid` contains the [`RID`](class_rid.md) of the body. These values can be used with the [`PhysicsServer2D`](class_physicsserver2d.md).
 
@@ -170,9 +170,9 @@ Emitted when a [`Shape2D`](class_shape2d.md) of the received `body` enters a sha
 
 **body_shape_exited** ( body_rid: [`RID`](class_rid.md), body: [`Node2D`](class_node2d.md), body_shape_index: [`int`](class_int.md), local_shape_index: [`int`](class_int.md) ) <div id="class_area2d_signal_body_shape_exited"></div>
 
-Emitted when a [`Shape2D`](class_shape2d.md) of the received `body` exits a shape of this area. `body` can be a [`PhysicsBody2D`](class_physicsbody2d.md) or a [`TileMap`](class_tilemap.md). [`TileMap`](class_tilemap.md) s are detected if their [`TileSet`](class_tileset.md) has collision shapes configured. Requires [`monitoring`](#class_area2d_property_monitoring) to be set to `true`.
+Emitted when a [`Shape2D`](class_shape2d.md) of the received `body` exits a shape of this area. `body` can be a [`PhysicsBody2D`](class_physicsbody2d.md) or a [`TileMap`](class_tilemap.md). [`TileMap`](class_tilemap.md) s are detected if their [`TileSet`](class_tileset.md) has collision shapes configured. Requires [`monitoring`](class_area2d.md#class_area2d_property_monitoring) to be set to `true`.
 
-See also [`body_shape_entered`](#class_area2d_signal_body_shape_entered).
+See also [`body_shape_entered`](class_area2d.md#class_area2d_signal_body_shape_entered).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -194,13 +194,13 @@ This area does not affect gravity/damping.
 
 [SpaceOverride](#enum_area2d_spaceoverride) **SPACE_OVERRIDE_COMBINE** = ``1``
 
-This area adds its gravity/damping values to whatever has been calculated so far (in [`priority`](#class_area2d_property_priority) order).
+This area adds its gravity/damping values to whatever has been calculated so far (in [`priority`](class_area2d.md#class_area2d_property_priority) order).
 
 <div id="_class_area2d_constant_space_override_combine_replace"></div>
 
 [SpaceOverride](#enum_area2d_spaceoverride) **SPACE_OVERRIDE_COMBINE_REPLACE** = ``2``
 
-This area adds its gravity/damping values to whatever has been calculated so far (in [`priority`](#class_area2d_property_priority) order), ignoring any lower priority areas.
+This area adds its gravity/damping values to whatever has been calculated so far (in [`priority`](class_area2d.md#class_area2d_property_priority) order), ignoring any lower priority areas.
 
 <div id="_class_area2d_constant_space_override_replace"></div>
 
@@ -212,7 +212,7 @@ This area replaces any gravity/damping, even the defaults, ignoring any lower pr
 
 [SpaceOverride](#enum_area2d_spaceoverride) **SPACE_OVERRIDE_REPLACE_COMBINE** = ``4``
 
-This area replaces any gravity/damping calculated so far (in [`priority`](#class_area2d_property_priority) order), but keeps calculating the rest of the areas.
+This area replaces any gravity/damping calculated so far (in [`priority`](class_area2d.md#class_area2d_property_priority) order), but keeps calculating the rest of the areas.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -229,7 +229,7 @@ This area replaces any gravity/damping calculated so far (in [`priority`](#class
 
 The rate at which objects stop spinning in this area. Represents the angular velocity lost per second.
 
-See [`ProjectSettings.physics/2d/default_angular_damp`](#class_projectsettings_property_physics/2d/default_angular_damp) for more details about damping.
+See [`ProjectSettings.physics/2d/default_angular_damp`](class_projectsettings.md#class_projectsettings_property_physics/2d/default_angular_damp) for more details about damping.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -307,7 +307,7 @@ The area's gravity vector (not normalized).
 - `void` **set_gravity_is_point** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_gravity_a_point** ( )
 
-If `true`, gravity is calculated from a point (set via [`gravity_point_center`](#class_area2d_property_gravity_point_center)). See also [`gravity_space_override`](#class_area2d_property_gravity_space_override).
+If `true`, gravity is calculated from a point (set via [`gravity_point_center`](class_area2d.md#class_area2d_property_gravity_point_center)). See also [`gravity_space_override`](class_area2d.md#class_area2d_property_gravity_space_override).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -320,7 +320,7 @@ If `true`, gravity is calculated from a point (set via [`gravity_point_center`](
 - `void` **set_gravity_point_center** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_gravity_point_center** ( )
 
-If gravity is a point (see [`gravity_point`](#class_area2d_property_gravity_point)), this will be the point of attraction.
+If gravity is a point (see [`gravity_point`](class_area2d.md#class_area2d_property_gravity_point)), this will be the point of attraction.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -333,7 +333,7 @@ If gravity is a point (see [`gravity_point`](#class_area2d_property_gravity_poin
 - `void` **set_gravity_point_unit_distance** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_gravity_point_unit_distance** ( )
 
-The distance at which the gravity strength is equal to [`gravity`](#class_area2d_property_gravity). For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the [`gravity`](#class_area2d_property_gravity) to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4x the gravity), and so on.
+The distance at which the gravity strength is equal to [`gravity`](class_area2d.md#class_area2d_property_gravity). For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the [`gravity`](class_area2d.md#class_area2d_property_gravity) to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4x the gravity), and so on.
 
 The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
 
@@ -363,7 +363,7 @@ Override mode for gravity calculations within this area. See [SpaceOverride](#en
 
 The rate at which objects stop moving in this area. Represents the linear velocity lost per second.
 
-See [`ProjectSettings.physics/2d/default_linear_damp`](#class_projectsettings_property_physics/2d/default_linear_damp) for more details about damping.
+See [`ProjectSettings.physics/2d/default_linear_damp`](class_projectsettings.md#class_projectsettings_property_physics/2d/default_linear_damp) for more details about damping.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -427,7 +427,7 @@ The area's priority. Higher priority areas are processed first. The [`World2D`](
 
 [Array](class_array.md) [`Area2D`](class_area2d.md) **get_overlapping_areas** ( ) const[^const]<div id="class_area2d_method_get_overlapping_areas"></div>
 
-Returns a list of intersecting **Area2D** s. The overlapping area's [`CollisionObject2D.collision_layer`](#class_collisionobject2d_property_collision_layer) must be part of this area's [`CollisionObject2D.collision_mask`](#class_collisionobject2d_property_collision_mask) in order to be detected.
+Returns a list of intersecting **Area2D** s. The overlapping area's [`CollisionObject2D.collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) must be part of this area's [`CollisionObject2D.collision_mask`](class_collisionobject2d.md#class_collisionobject2d_property_collision_mask) in order to be detected.
 
 For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
 
@@ -439,7 +439,7 @@ For performance reasons (collisions are all processed at the same time) this lis
 
 [Array](class_array.md) [`Node2D`](class_node2d.md) **get_overlapping_bodies** ( ) const[^const]<div id="class_area2d_method_get_overlapping_bodies"></div>
 
-Returns a list of intersecting [`PhysicsBody2D`](class_physicsbody2d.md) s and [`TileMap`](class_tilemap.md) s. The overlapping body's [`CollisionObject2D.collision_layer`](#class_collisionobject2d_property_collision_layer) must be part of this area's [`CollisionObject2D.collision_mask`](#class_collisionobject2d_property_collision_mask) in order to be detected.
+Returns a list of intersecting [`PhysicsBody2D`](class_physicsbody2d.md) s and [`TileMap`](class_tilemap.md) s. The overlapping body's [`CollisionObject2D.collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) must be part of this area's [`CollisionObject2D.collision_mask`](class_collisionobject2d.md#class_collisionobject2d_property_collision_mask) in order to be detected.
 
 For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
 
@@ -451,7 +451,7 @@ For performance reasons (collisions are all processed at the same time) this lis
 
 [`bool`](class_bool.md) **has_overlapping_areas** ( ) const[^const]<div id="class_area2d_method_has_overlapping_areas"></div>
 
-Returns `true` if intersecting any **Area2D** s, otherwise returns `false`. The overlapping area's [`CollisionObject2D.collision_layer`](#class_collisionobject2d_property_collision_layer) must be part of this area's [`CollisionObject2D.collision_mask`](#class_collisionobject2d_property_collision_mask) in order to be detected.
+Returns `true` if intersecting any **Area2D** s, otherwise returns `false`. The overlapping area's [`CollisionObject2D.collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) must be part of this area's [`CollisionObject2D.collision_mask`](class_collisionobject2d.md#class_collisionobject2d_property_collision_mask) in order to be detected.
 
 For performance reasons (collisions are all processed at the same time) the list of overlapping areas is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
 
@@ -463,7 +463,7 @@ For performance reasons (collisions are all processed at the same time) the list
 
 [`bool`](class_bool.md) **has_overlapping_bodies** ( ) const[^const]<div id="class_area2d_method_has_overlapping_bodies"></div>
 
-Returns `true` if intersecting any [`PhysicsBody2D`](class_physicsbody2d.md) s or [`TileMap`](class_tilemap.md) s, otherwise returns `false`. The overlapping body's [`CollisionObject2D.collision_layer`](#class_collisionobject2d_property_collision_layer) must be part of this area's [`CollisionObject2D.collision_mask`](#class_collisionobject2d_property_collision_mask) in order to be detected.
+Returns `true` if intersecting any [`PhysicsBody2D`](class_physicsbody2d.md) s or [`TileMap`](class_tilemap.md) s, otherwise returns `false`. The overlapping body's [`CollisionObject2D.collision_layer`](class_collisionobject2d.md#class_collisionobject2d_property_collision_layer) must be part of this area's [`CollisionObject2D.collision_mask`](class_collisionobject2d.md#class_collisionobject2d_property_collision_mask) in order to be detected.
 
 For performance reasons (collisions are all processed at the same time) the list of overlapping bodies is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
 

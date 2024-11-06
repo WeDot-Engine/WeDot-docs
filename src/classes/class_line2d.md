@@ -23,31 +23,31 @@ This node draws a 2D polyline, i.e. a shape consisting of several points connect
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`antialiased`](#class_line2d_property_antialiased)         | ``false``                |
-| [LineCapMode](#enum_line2d_linecapmode)             | [`begin_cap_mode`](#class_line2d_property_begin_cap_mode)   | ``0``                    |
-| [`bool`](class_bool.md)                             | [`closed`](#class_line2d_property_closed)                   | ``false``                |
-| [`Color`](class_color.md)                           | [`default_color`](#class_line2d_property_default_color)     | ``Color(1, 1, 1, 1)``    |
-| [LineCapMode](#enum_line2d_linecapmode)             | [`end_cap_mode`](#class_line2d_property_end_cap_mode)       | ``0``                    |
-| [`Gradient`](class_gradient.md)                     | [`gradient`](#class_line2d_property_gradient)               |                          |
-| [LineJointMode](#enum_line2d_linejointmode)         | [`joint_mode`](#class_line2d_property_joint_mode)           | ``0``                    |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`points`](#class_line2d_property_points)                   | ``PackedVector2Array()`` |
-| [`int`](class_int.md)                               | [`round_precision`](#class_line2d_property_round_precision) | ``8``                    |
-| [`float`](class_float.md)                           | [`sharp_limit`](#class_line2d_property_sharp_limit)         | ``2.0``                  |
-| [`Texture2D`](class_texture2d.md)                   | [`texture`](#class_line2d_property_texture)                 |                          |
-| [LineTextureMode](#enum_line2d_linetexturemode)     | [`texture_mode`](#class_line2d_property_texture_mode)       | ``0``                    |
-| [`float`](class_float.md)                           | [`width`](#class_line2d_property_width)                     | ``10.0``                 |
-| [`Curve`](class_curve.md)                           | [`width_curve`](#class_line2d_property_width_curve)         |                          |
+| [`bool`](class_bool.md)                             | [`antialiased`](class_line2d.md#class_line2d_property_antialiased)         | ``false``                |
+| [LineCapMode](#enum_line2d_linecapmode)             | [`begin_cap_mode`](class_line2d.md#class_line2d_property_begin_cap_mode)   | ``0``                    |
+| [`bool`](class_bool.md)                             | [`closed`](class_line2d.md#class_line2d_property_closed)                   | ``false``                |
+| [`Color`](class_color.md)                           | [`default_color`](class_line2d.md#class_line2d_property_default_color)     | ``Color(1, 1, 1, 1)``    |
+| [LineCapMode](#enum_line2d_linecapmode)             | [`end_cap_mode`](class_line2d.md#class_line2d_property_end_cap_mode)       | ``0``                    |
+| [`Gradient`](class_gradient.md)                     | [`gradient`](class_line2d.md#class_line2d_property_gradient)               |                          |
+| [LineJointMode](#enum_line2d_linejointmode)         | [`joint_mode`](class_line2d.md#class_line2d_property_joint_mode)           | ``0``                    |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`points`](class_line2d.md#class_line2d_property_points)                   | ``PackedVector2Array()`` |
+| [`int`](class_int.md)                               | [`round_precision`](class_line2d.md#class_line2d_property_round_precision) | ``8``                    |
+| [`float`](class_float.md)                           | [`sharp_limit`](class_line2d.md#class_line2d_property_sharp_limit)         | ``2.0``                  |
+| [`Texture2D`](class_texture2d.md)                   | [`texture`](class_line2d.md#class_line2d_property_texture)                 |                          |
+| [LineTextureMode](#enum_line2d_linetexturemode)     | [`texture_mode`](class_line2d.md#class_line2d_property_texture_mode)       | ``0``                    |
+| [`float`](class_float.md)                           | [`width`](class_line2d.md#class_line2d_property_width)                     | ``10.0``                 |
+| [`Curve`](class_curve.md)                           | [`width_curve`](class_line2d.md#class_line2d_property_width_curve)         |                          |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                        | [`add_point`](#class_line2d_method_add_point) ( position: [`Vector2`](class_vector2.md), index: [`int`](class_int.md) = -1 )              |
-| `void`                        | [`clear_points`](#class_line2d_method_clear_points) ( )                                                                                   |
-| [`int`](class_int.md)         | [`get_point_count`](#class_line2d_method_get_point_count) ( ) const[^const]                                                               |
-| [`Vector2`](class_vector2.md) | [`get_point_position`](#class_line2d_method_get_point_position) ( index: [`int`](class_int.md) ) const[^const]                            |
-| `void`                        | [`remove_point`](#class_line2d_method_remove_point) ( index: [`int`](class_int.md) )                                                      |
-| `void`                        | [`set_point_position`](#class_line2d_method_set_point_position) ( index: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) ) |
+| `void`                        | [`add_point`](class_line2d.md#class_line2d_method_add_point) ( position: [`Vector2`](class_vector2.md), index: [`int`](class_int.md) = -1 )              |
+| `void`                        | [`clear_points`](class_line2d.md#class_line2d_method_clear_points) ( )                                                                                   |
+| [`int`](class_int.md)         | [`get_point_count`](class_line2d.md#class_line2d_method_get_point_count) ( ) const[^const]                                                               |
+| [`Vector2`](class_vector2.md) | [`get_point_position`](class_line2d.md#class_line2d_method_get_point_position) ( index: [`int`](class_int.md) ) const[^const]                            |
+| `void`                        | [`remove_point`](class_line2d.md#class_line2d_method_remove_point) ( index: [`int`](class_int.md) )                                                      |
+| `void`                        | [`set_point_position`](class_line2d.md#class_line2d_method_set_point_position) ( index: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -63,7 +63,7 @@ enum **LineJointMode**: <div id="enum_line2d_linejointmode"></div>
 
 [LineJointMode](#enum_line2d_linejointmode) **LINE_JOINT_SHARP** = ``0``
 
-Makes the polyline's joints pointy, connecting the sides of the two segments by extending them until they intersect. If the rotation of a joint is too big (based on [`sharp_limit`](#class_line2d_property_sharp_limit)), the joint falls back to [`LINE_JOINT_BEVEL`](#class_line2d_constant_line_joint_bevel) to prevent very long miters.
+Makes the polyline's joints pointy, connecting the sides of the two segments by extending them until they intersect. If the rotation of a joint is too big (based on [`sharp_limit`](class_line2d.md#class_line2d_property_sharp_limit)), the joint falls back to [`LINE_JOINT_BEVEL`](class_line2d.md#class_line2d_constant_line_joint_bevel) to prevent very long miters.
 
 <div id="_class_line2d_constant_line_joint_bevel"></div>
 
@@ -75,7 +75,7 @@ Makes the polyline's joints bevelled/chamfered, connecting the sides of the two 
 
 [LineJointMode](#enum_line2d_linejointmode) **LINE_JOINT_ROUND** = ``2``
 
-Makes the polyline's joints rounded, connecting the sides of the two segments with an arc. The detail of this arc depends on [`round_precision`](#class_line2d_property_round_precision).
+Makes the polyline's joints rounded, connecting the sides of the two segments with an arc. The detail of this arc depends on [`round_precision`](class_line2d.md#class_line2d_property_round_precision).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -121,13 +121,13 @@ Takes the left pixels of the texture and renders them over the whole polyline.
 
 [LineTextureMode](#enum_line2d_linetexturemode) **LINE_TEXTURE_TILE** = ``1``
 
-Tiles the texture over the polyline. [`CanvasItem.texture_repeat`](#class_canvasitem_property_texture_repeat) of the **Line2D** node must be [`CanvasItem.TEXTURE_REPEAT_ENABLED`](#class_canvasitem_constant_texture_repeat_enabled) or [`CanvasItem.TEXTURE_REPEAT_MIRROR`](#class_canvasitem_constant_texture_repeat_mirror) for it to work properly.
+Tiles the texture over the polyline. [`CanvasItem.texture_repeat`](class_canvasitem.md#class_canvasitem_property_texture_repeat) of the **Line2D** node must be [`CanvasItem.TEXTURE_REPEAT_ENABLED`](class_canvasitem.md#class_canvasitem_constant_texture_repeat_enabled) or [`CanvasItem.TEXTURE_REPEAT_MIRROR`](class_canvasitem.md#class_canvasitem_constant_texture_repeat_mirror) for it to work properly.
 
 <div id="_class_line2d_constant_line_texture_stretch"></div>
 
 [LineTextureMode](#enum_line2d_linetexturemode) **LINE_TEXTURE_STRETCH** = ``2``
 
-Stretches the texture across the polyline. [`CanvasItem.texture_repeat`](#class_canvasitem_property_texture_repeat) of the **Line2D** node must be [`CanvasItem.TEXTURE_REPEAT_DISABLED`](#class_canvasitem_constant_texture_repeat_disabled) for best results.
+Stretches the texture across the polyline. [`CanvasItem.texture_repeat`](class_canvasitem.md#class_canvasitem_property_texture_repeat) of the **Line2D** node must be [`CanvasItem.TEXTURE_REPEAT_DISABLED`](class_canvasitem.md#class_canvasitem_constant_texture_repeat_disabled) for best results.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -157,7 +157,7 @@ If `true`, the polyline's border will be anti-aliased.
 - `void` **set_begin_cap_mode** ( value: [LineCapMode](#enum_line2d_linecapmode) )
 - [LineCapMode](#enum_line2d_linecapmode) **get_begin_cap_mode** ( )
 
-The style of the beginning of the polyline, if [`closed`](#class_line2d_property_closed) is `false`. Use [LineCapMode](#enum_line2d_linecapmode) constants.
+The style of the beginning of the polyline, if [`closed`](class_line2d.md#class_line2d_property_closed) is `false`. Use [LineCapMode](#enum_line2d_linecapmode) constants.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -172,9 +172,9 @@ The style of the beginning of the polyline, if [`closed`](#class_line2d_property
 
 If `true` and the polyline has more than 2 points, the last point and the first one will be connected by a segment.
 
- **Note:** The shape of the closing segment is not guaranteed to be seamless if a [`width_curve`](#class_line2d_property_width_curve) is provided.
+ **Note:** The shape of the closing segment is not guaranteed to be seamless if a [`width_curve`](class_line2d.md#class_line2d_property_width_curve) is provided.
 
- **Note:** The joint between the closing segment and the first segment is drawn first and it samples the [`gradient`](#class_line2d_property_gradient) and the [`width_curve`](#class_line2d_property_width_curve) at the beginning. This is an implementation detail that might change in a future version.
+ **Note:** The joint between the closing segment and the first segment is drawn first and it samples the [`gradient`](class_line2d.md#class_line2d_property_gradient) and the [`width_curve`](class_line2d.md#class_line2d_property_width_curve) at the beginning. This is an implementation detail that might change in a future version.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -200,7 +200,7 @@ The color of the polyline. Will not be used if a gradient is set.
 - `void` **set_end_cap_mode** ( value: [LineCapMode](#enum_line2d_linecapmode) )
 - [LineCapMode](#enum_line2d_linecapmode) **get_end_cap_mode** ( )
 
-The style of the end of the polyline, if [`closed`](#class_line2d_property_closed) is `false`. Use [LineCapMode](#enum_line2d_linecapmode) constants.
+The style of the end of the polyline, if [`closed`](class_line2d.md#class_line2d_property_closed) is `false`. Use [LineCapMode](#enum_line2d_linecapmode) constants.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -213,7 +213,7 @@ The style of the end of the polyline, if [`closed`](#class_line2d_property_close
 - `void` **set_gradient** ( value: [`Gradient`](class_gradient.md) )
 - [`Gradient`](class_gradient.md) **get_gradient** ( )
 
-The gradient is drawn through the whole line from start to finish. The [`default_color`](#class_line2d_property_default_color) will not be used if this property is set.
+The gradient is drawn through the whole line from start to finish. The [`default_color`](class_line2d.md#class_line2d_property_default_color) will not be used if this property is set.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -267,7 +267,7 @@ The smoothness used for rounded joints and caps. Higher values result in smoothe
 - `void` **set_sharp_limit** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_sharp_limit** ( )
 
-Determines the miter limit of the polyline. Normally, when [`joint_mode`](#class_line2d_property_joint_mode) is set to [`LINE_JOINT_SHARP`](#class_line2d_constant_line_joint_sharp), sharp angles fall back to using the logic of [`LINE_JOINT_BEVEL`](#class_line2d_constant_line_joint_bevel) joints to prevent very long miters. Higher values of this property mean that the fallback to a bevel joint will happen at sharper angles.
+Determines the miter limit of the polyline. Normally, when [`joint_mode`](class_line2d.md#class_line2d_property_joint_mode) is set to [`LINE_JOINT_SHARP`](class_line2d.md#class_line2d_constant_line_joint_sharp), sharp angles fall back to using the logic of [`LINE_JOINT_BEVEL`](class_line2d.md#class_line2d_constant_line_joint_bevel) joints to prevent very long miters. Higher values of this property mean that the fallback to a bevel joint will happen at sharper angles.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -280,7 +280,7 @@ Determines the miter limit of the polyline. Normally, when [`joint_mode`](#class
 - `void` **set_texture** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( )
 
-The texture used for the polyline. Uses [`texture_mode`](#class_line2d_property_texture_mode) for drawing style.
+The texture used for the polyline. Uses [`texture_mode`](class_line2d.md#class_line2d_property_texture_mode) for drawing style.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -293,7 +293,7 @@ The texture used for the polyline. Uses [`texture_mode`](#class_line2d_property_
 - `void` **set_texture_mode** ( value: [LineTextureMode](#enum_line2d_linetexturemode) )
 - [LineTextureMode](#enum_line2d_linetexturemode) **get_texture_mode** ( )
 
-The style to render the [`texture`](#class_line2d_property_texture) of the polyline. Use [LineTextureMode](#enum_line2d_linetexturemode) constants.
+The style to render the [`texture`](class_line2d.md#class_line2d_property_texture) of the polyline. Use [LineTextureMode](#enum_line2d_linetexturemode) constants.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -333,7 +333,7 @@ The polyline's width curve. The width of the polyline over its length will be eq
 
 Adds a point with the specified `position` relative to the polyline's own position. If no `index` is provided, the new point will be added to the end of the points array.
 
-If `index` is given, the new point is inserted before the existing point identified by index `index`. The indices of the points after the new point get increased by 1. The provided `index` must not exceed the number of existing points in the polyline. See [`get_point_count`](#class_line2d_method_get_point_count).
+If `index` is given, the new point is inserted before the existing point identified by index `index`. The indices of the points after the new point get increased by 1. The provided `index` must not exceed the number of existing points in the polyline. See [`get_point_count`](class_line2d.md#class_line2d_method_get_point_count).
 
 <!-- rst-class:: classref-item-separator -->
 

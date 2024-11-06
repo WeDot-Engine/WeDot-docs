@@ -25,25 +25,25 @@ Manages the connection with one or more remote peers acting as server or client 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                            | [`refuse_new_connections`](#class_multiplayerpeer_property_refuse_new_connections) | ``false`` |
-| [`int`](class_int.md)                              | [`transfer_channel`](#class_multiplayerpeer_property_transfer_channel)             | ``0``     |
-| [TransferMode](#enum_multiplayerpeer_transfermode) | [`transfer_mode`](#class_multiplayerpeer_property_transfer_mode)                   | ``2``     |
+| [`bool`](class_bool.md)                            | [`refuse_new_connections`](class_multiplayerpeer.md#class_multiplayerpeer_property_refuse_new_connections) | ``false`` |
+| [`int`](class_int.md)                              | [`transfer_channel`](class_multiplayerpeer.md#class_multiplayerpeer_property_transfer_channel)             | ``0``     |
+| [TransferMode](#enum_multiplayerpeer_transfermode) | [`transfer_mode`](class_multiplayerpeer.md#class_multiplayerpeer_property_transfer_mode)                   | ``2``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                     | [`close`](#class_multiplayerpeer_method_close) ( )                                                                                         |
-| `void`                                                     | [`disconnect_peer`](#class_multiplayerpeer_method_disconnect_peer) ( peer: [`int`](class_int.md), force: [`bool`](class_bool.md) = false ) |
-| [`int`](class_int.md)                                      | [`generate_unique_id`](#class_multiplayerpeer_method_generate_unique_id) ( ) const[^const]                                                 |
-| [ConnectionStatus](#enum_multiplayerpeer_connectionstatus) | [`get_connection_status`](#class_multiplayerpeer_method_get_connection_status) ( ) const[^const]                                           |
-| [`int`](class_int.md)                                      | [`get_packet_channel`](#class_multiplayerpeer_method_get_packet_channel) ( ) const[^const]                                                 |
-| [TransferMode](#enum_multiplayerpeer_transfermode)         | [`get_packet_mode`](#class_multiplayerpeer_method_get_packet_mode) ( ) const[^const]                                                       |
-| [`int`](class_int.md)                                      | [`get_packet_peer`](#class_multiplayerpeer_method_get_packet_peer) ( ) const[^const]                                                       |
-| [`int`](class_int.md)                                      | [`get_unique_id`](#class_multiplayerpeer_method_get_unique_id) ( ) const[^const]                                                           |
-| [`bool`](class_bool.md)                                    | [`is_server_relay_supported`](#class_multiplayerpeer_method_is_server_relay_supported) ( ) const[^const]                                   |
-| `void`                                                     | [`poll`](#class_multiplayerpeer_method_poll) ( )                                                                                           |
-| `void`                                                     | [`set_target_peer`](#class_multiplayerpeer_method_set_target_peer) ( id: [`int`](class_int.md) )                                           |
+| `void`                                                     | [`close`](class_multiplayerpeer.md#class_multiplayerpeer_method_close) ( )                                                                                         |
+| `void`                                                     | [`disconnect_peer`](class_multiplayerpeer.md#class_multiplayerpeer_method_disconnect_peer) ( peer: [`int`](class_int.md), force: [`bool`](class_bool.md) = false ) |
+| [`int`](class_int.md)                                      | [`generate_unique_id`](class_multiplayerpeer.md#class_multiplayerpeer_method_generate_unique_id) ( ) const[^const]                                                 |
+| [ConnectionStatus](#enum_multiplayerpeer_connectionstatus) | [`get_connection_status`](class_multiplayerpeer.md#class_multiplayerpeer_method_get_connection_status) ( ) const[^const]                                           |
+| [`int`](class_int.md)                                      | [`get_packet_channel`](class_multiplayerpeer.md#class_multiplayerpeer_method_get_packet_channel) ( ) const[^const]                                                 |
+| [TransferMode](#enum_multiplayerpeer_transfermode)         | [`get_packet_mode`](class_multiplayerpeer.md#class_multiplayerpeer_method_get_packet_mode) ( ) const[^const]                                                       |
+| [`int`](class_int.md)                                      | [`get_packet_peer`](class_multiplayerpeer.md#class_multiplayerpeer_method_get_packet_peer) ( ) const[^const]                                                       |
+| [`int`](class_int.md)                                      | [`get_unique_id`](class_multiplayerpeer.md#class_multiplayerpeer_method_get_unique_id) ( ) const[^const]                                                           |
+| [`bool`](class_bool.md)                                    | [`is_server_relay_supported`](class_multiplayerpeer.md#class_multiplayerpeer_method_is_server_relay_supported) ( ) const[^const]                                   |
+| `void`                                                     | [`poll`](class_multiplayerpeer.md#class_multiplayerpeer_method_poll) ( )                                                                                           |
+| `void`                                                     | [`set_target_peer`](class_multiplayerpeer.md#class_multiplayerpeer_method_set_target_peer) ( id: [`int`](class_int.md) )                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -107,13 +107,13 @@ enum **TransferMode**: <div id="enum_multiplayerpeer_transfermode"></div>
 
 [TransferMode](#enum_multiplayerpeer_transfermode) **TRANSFER_MODE_UNRELIABLE** = ``0``
 
-Packets are not acknowledged, no resend attempts are made for lost packets. Packets may arrive in any order. Potentially faster than [`TRANSFER_MODE_UNRELIABLE_ORDERED`](#class_multiplayerpeer_constant_transfer_mode_unreliable_ordered). Use for non-critical data, and always consider whether the order matters.
+Packets are not acknowledged, no resend attempts are made for lost packets. Packets may arrive in any order. Potentially faster than [`TRANSFER_MODE_UNRELIABLE_ORDERED`](class_multiplayerpeer.md#class_multiplayerpeer_constant_transfer_mode_unreliable_ordered). Use for non-critical data, and always consider whether the order matters.
 
 <div id="_class_multiplayerpeer_constant_transfer_mode_unreliable_ordered"></div>
 
 [TransferMode](#enum_multiplayerpeer_transfermode) **TRANSFER_MODE_UNRELIABLE_ORDERED** = ``1``
 
-Packets are not acknowledged, no resend attempts are made for lost packets. Packets are received in the order they were sent in. Potentially faster than [`TRANSFER_MODE_RELIABLE`](#class_multiplayerpeer_constant_transfer_mode_reliable). Use for non-critical data or data that would be outdated if received late due to resend attempt(s) anyway, for example movement and positional data.
+Packets are not acknowledged, no resend attempts are made for lost packets. Packets are received in the order they were sent in. Potentially faster than [`TRANSFER_MODE_RELIABLE`](class_multiplayerpeer.md#class_multiplayerpeer_constant_transfer_mode_reliable). Use for non-critical data or data that would be outdated if received late due to resend attempt(s) anyway, for example movement and positional data.
 
 <div id="_class_multiplayerpeer_constant_transfer_mode_reliable"></div>
 
@@ -167,7 +167,7 @@ If `true`, this **MultiplayerPeer** refuses new connections.
 
 The channel to use to send packets. Many network APIs such as ENet and WebRTC allow the creation of multiple independent channels which behaves, in a way, like separate connections. This means that reliable data will only block delivery of other packets on that channel, and ordering will only be in respect to the channel the packet is being sent on. Using different channels to send **different and independent** state updates is a common way to optimize network usage and decrease latency in fast-paced games.
 
- **Note:** The default channel (`0`) actually works as 3 separate channels (one for each [TransferMode](#enum_multiplayerpeer_transfermode)) so that [`TRANSFER_MODE_RELIABLE`](#class_multiplayerpeer_constant_transfer_mode_reliable) and [`TRANSFER_MODE_UNRELIABLE_ORDERED`](#class_multiplayerpeer_constant_transfer_mode_unreliable_ordered) does not interact with each other by default. Refer to the specific network API documentation (e.g. ENet or WebRTC) to learn how to set up channels correctly.
+ **Note:** The default channel (`0`) actually works as 3 separate channels (one for each [TransferMode](#enum_multiplayerpeer_transfermode)) so that [`TRANSFER_MODE_RELIABLE`](class_multiplayerpeer.md#class_multiplayerpeer_constant_transfer_mode_reliable) and [`TRANSFER_MODE_UNRELIABLE_ORDERED`](class_multiplayerpeer.md#class_multiplayerpeer_constant_transfer_mode_unreliable_ordered) does not interact with each other by default. Refer to the specific network API documentation (e.g. ENet or WebRTC) to learn how to set up channels correctly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -180,7 +180,7 @@ The channel to use to send packets. Many network APIs such as ENet and WebRTC al
 - `void` **set_transfer_mode** ( value: [TransferMode](#enum_multiplayerpeer_transfermode) )
 - [TransferMode](#enum_multiplayerpeer_transfermode) **get_transfer_mode** ( )
 
-The manner in which to send packets to the target peer. See [TransferMode](#enum_multiplayerpeer_transfermode), and the [`set_target_peer`](#class_multiplayerpeer_method_set_target_peer) method.
+The manner in which to send packets to the target peer. See [TransferMode](#enum_multiplayerpeer_transfermode), and the [`set_target_peer`](class_multiplayerpeer.md#class_multiplayerpeer_method_set_target_peer) method.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -192,7 +192,7 @@ The manner in which to send packets to the target peer. See [TransferMode](#enum
 
 `void` **close** ( )<div id="class_multiplayerpeer_method_close"></div>
 
-Immediately close the multiplayer peer returning to the state [`CONNECTION_DISCONNECTED`](#class_multiplayerpeer_constant_connection_disconnected). Connected peers will be dropped without emitting [`peer_disconnected`](#class_multiplayerpeer_signal_peer_disconnected).
+Immediately close the multiplayer peer returning to the state [`CONNECTION_DISCONNECTED`](class_multiplayerpeer.md#class_multiplayerpeer_constant_connection_disconnected). Connected peers will be dropped without emitting [`peer_disconnected`](class_multiplayerpeer.md#class_multiplayerpeer_signal_peer_disconnected).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -202,7 +202,7 @@ Immediately close the multiplayer peer returning to the state [`CONNECTION_DISCO
 
 `void` **disconnect_peer** ( peer: [`int`](class_int.md), force: [`bool`](class_bool.md) = false )<div id="class_multiplayerpeer_method_disconnect_peer"></div>
 
-Disconnects the given `peer` from this host. If `force` is `true` the [`peer_disconnected`](#class_multiplayerpeer_signal_peer_disconnected) signal will not be emitted for this peer.
+Disconnects the given `peer` from this host. If `force` is `true` the [`peer_disconnected`](class_multiplayerpeer.md#class_multiplayerpeer_signal_peer_disconnected) signal will not be emitted for this peer.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -232,7 +232,7 @@ Returns the current state of the connection. See [ConnectionStatus](#enum_multip
 
 [`int`](class_int.md) **get_packet_channel** ( ) const[^const]<div id="class_multiplayerpeer_method_get_packet_channel"></div>
 
-Returns the channel over which the next available packet was received. See [`PacketPeer.get_available_packet_count`](#class_packetpeer_method_get_available_packet_count).
+Returns the channel over which the next available packet was received. See [`PacketPeer.get_available_packet_count`](class_packetpeer.md#class_packetpeer_method_get_available_packet_count).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -242,7 +242,7 @@ Returns the channel over which the next available packet was received. See [`Pac
 
 [TransferMode](#enum_multiplayerpeer_transfermode) **get_packet_mode** ( ) const[^const]<div id="class_multiplayerpeer_method_get_packet_mode"></div>
 
-Returns the transfer mode the remote peer used to send the next available packet. See [`PacketPeer.get_available_packet_count`](#class_packetpeer_method_get_available_packet_count).
+Returns the transfer mode the remote peer used to send the next available packet. See [`PacketPeer.get_available_packet_count`](class_packetpeer.md#class_packetpeer_method_get_available_packet_count).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -252,7 +252,7 @@ Returns the transfer mode the remote peer used to send the next available packet
 
 [`int`](class_int.md) **get_packet_peer** ( ) const[^const]<div id="class_multiplayerpeer_method_get_packet_peer"></div>
 
-Returns the ID of the **MultiplayerPeer** who sent the next available packet. See [`PacketPeer.get_available_packet_count`](#class_packetpeer_method_get_available_packet_count).
+Returns the ID of the **MultiplayerPeer** who sent the next available packet. See [`PacketPeer.get_available_packet_count`](class_packetpeer.md#class_packetpeer_method_get_available_packet_count).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -294,7 +294,7 @@ Waits up to 1 second to receive a new network event.
 
 Sets the peer to which packets will be sent.
 
-The `id` can be one of: [`TARGET_PEER_BROADCAST`](#class_multiplayerpeer_constant_target_peer_broadcast) to send to all connected peers, [`TARGET_PEER_SERVER`](#class_multiplayerpeer_constant_target_peer_server) to send to the peer acting as server, a valid peer ID to send to that specific peer, a negative peer ID to send to all peers except that one. By default, the target peer is [`TARGET_PEER_BROADCAST`](#class_multiplayerpeer_constant_target_peer_broadcast).
+The `id` can be one of: [`TARGET_PEER_BROADCAST`](class_multiplayerpeer.md#class_multiplayerpeer_constant_target_peer_broadcast) to send to all connected peers, [`TARGET_PEER_SERVER`](class_multiplayerpeer.md#class_multiplayerpeer_constant_target_peer_server) to send to the peer acting as server, a valid peer ID to send to that specific peer, a negative peer ID to send to all peers except that one. By default, the target peer is [`TARGET_PEER_BROADCAST`](class_multiplayerpeer.md#class_multiplayerpeer_constant_target_peer_broadcast).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

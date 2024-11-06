@@ -19,7 +19,7 @@ Heightmap shapes allow for efficiently representing collisions for convex and co
 
  **GPUParticlesCollisionHeightField3D** can also be regenerated in real-time when it is moved, when the camera moves, or even continuously. This makes **GPUParticlesCollisionHeightField3D** a good choice for weather effects such as rain and snow and games with highly dynamic geometry. However, this class is limited since heightmaps cannot represent overhangs (e.g. indoors or caves).
 
- **Note:** [`ParticleProcessMaterial.collision_mode`](#class_particleprocessmaterial_property_collision_mode) must be `true` on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
+ **Note:** [`ParticleProcessMaterial.collision_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_collision_mode) must be `true` on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
 
  **Note:** Particle collision only affects [`GPUParticles3D`](class_gpuparticles3d.md), not [`CPUParticles3D`](class_cpuparticles3d.md).
 
@@ -27,10 +27,10 @@ Heightmap shapes allow for efficiently representing collisions for convex and co
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                           | [`follow_camera_enabled`](#class_gpuparticlescollisionheightfield3d_property_follow_camera_enabled) | ``false``            |
-| [Resolution](#enum_gpuparticlescollisionheightfield3d_resolution) | [`resolution`](#class_gpuparticlescollisionheightfield3d_property_resolution)                       | ``2``                |
-| [`Vector3`](class_vector3.md)                                     | [`size`](#class_gpuparticlescollisionheightfield3d_property_size)                                   | ``Vector3(2, 2, 2)`` |
-| [UpdateMode](#enum_gpuparticlescollisionheightfield3d_updatemode) | [`update_mode`](#class_gpuparticlescollisionheightfield3d_property_update_mode)                     | ``0``                |
+| [`bool`](class_bool.md)                                           | [`follow_camera_enabled`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_follow_camera_enabled) | ``false``            |
+| [Resolution](#enum_gpuparticlescollisionheightfield3d_resolution) | [`resolution`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_resolution)                       | ``2``                |
+| [`Vector3`](class_vector3.md)                                     | [`size`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_size)                                   | ``Vector3(2, 2, 2)`` |
+| [UpdateMode](#enum_gpuparticlescollisionheightfield3d_updatemode) | [`update_mode`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_update_mode)                     | ``0``                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -96,7 +96,7 @@ enum **UpdateMode**: <div id="enum_gpuparticlescollisionheightfield3d_updatemode
 
 [UpdateMode](#enum_gpuparticlescollisionheightfield3d_updatemode) **UPDATE_MODE_WHEN_MOVED** = ``0``
 
-Only update the heightmap when the **GPUParticlesCollisionHeightField3D** node is moved, or when the camera moves if [`follow_camera_enabled`](#class_gpuparticlescollisionheightfield3d_property_follow_camera_enabled) is `true`. An update can be forced by slightly moving the **GPUParticlesCollisionHeightField3D** in any direction, or by calling [`RenderingServer.particles_collision_height_field_update`](#class_renderingserver_method_particles_collision_height_field_update).
+Only update the heightmap when the **GPUParticlesCollisionHeightField3D** node is moved, or when the camera moves if [`follow_camera_enabled`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_follow_camera_enabled) is `true`. An update can be forced by slightly moving the **GPUParticlesCollisionHeightField3D** in any direction, or by calling [`RenderingServer.particles_collision_height_field_update`](class_renderingserver.md#class_renderingserver_method_particles_collision_height_field_update).
 
 <div id="_class_gpuparticlescollisionheightfield3d_constant_update_mode_always"></div>
 
@@ -119,7 +119,7 @@ Update the heightmap every frame. This has a significant performance cost. This 
 
 If `true`, the **GPUParticlesCollisionHeightField3D** will follow the current camera in global space. The **GPUParticlesCollisionHeightField3D** does not need to be a child of the [`Camera3D`](class_camera3d.md) node for this to work.
 
-Following the camera has a performance cost, as it will force the heightmap to update whenever the camera moves. Consider lowering [`resolution`](#class_gpuparticlescollisionheightfield3d_property_resolution) to improve performance if [`follow_camera_enabled`](#class_gpuparticlescollisionheightfield3d_property_follow_camera_enabled) is `true`.
+Following the camera has a performance cost, as it will force the heightmap to update whenever the camera moves. Consider lowering [`resolution`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_resolution) to improve performance if [`follow_camera_enabled`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_follow_camera_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -132,7 +132,7 @@ Following the camera has a performance cost, as it will force the heightmap to u
 - `void` **set_resolution** ( value: [Resolution](#enum_gpuparticlescollisionheightfield3d_resolution) )
 - [Resolution](#enum_gpuparticlescollisionheightfield3d_resolution) **get_resolution** ( )
 
-Higher resolutions can represent small details more accurately in large scenes, at the cost of lower performance. If [`update_mode`](#class_gpuparticlescollisionheightfield3d_property_update_mode) is [`UPDATE_MODE_ALWAYS`](#class_gpuparticlescollisionheightfield3d_constant_update_mode_always), consider using the lowest resolution possible.
+Higher resolutions can represent small details more accurately in large scenes, at the cost of lower performance. If [`update_mode`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_update_mode) is [`UPDATE_MODE_ALWAYS`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_constant_update_mode_always), consider using the lowest resolution possible.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -145,7 +145,7 @@ Higher resolutions can represent small details more accurately in large scenes, 
 - `void` **set_size** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_size** ( )
 
-The collision heightmap's size in 3D units. To improve heightmap quality, [`size`](#class_gpuparticlescollisionheightfield3d_property_size) should be set as small as possible while covering the parts of the scene you need.
+The collision heightmap's size in 3D units. To improve heightmap quality, [`size`](class_gpuparticlescollisionheightfield3d.md#class_gpuparticlescollisionheightfield3d_property_size) should be set as small as possible while covering the parts of the scene you need.
 
 <!-- rst-class:: classref-item-separator -->
 

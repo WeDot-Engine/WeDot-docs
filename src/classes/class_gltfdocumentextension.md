@@ -17,7 +17,7 @@
 
 Extends the functionality of the [`GLTFDocument`](class_gltfdocument.md) class by allowing you to run arbitrary code at various stages of GLTF import or export.
 
-To use, make a new class extending GLTFDocumentExtension, override any methods you need, make an instance of your class, and register it using [`GLTFDocument.register_gltf_document_extension`](#class_gltfdocument_method_register_gltf_document_extension).
+To use, make a new class extending GLTFDocumentExtension, override any methods you need, make an instance of your class, and register it using [`GLTFDocument.register_gltf_document_extension`](class_gltfdocument.md#class_gltfdocument_method_register_gltf_document_extension).
 
  **Note:** Like GLTFDocument itself, all GLTFDocumentExtension classes must be stateless in order to function properly. If you need to store data, use the `set_additional_data` and `get_additional_data` methods in [`GLTFState`](class_gltfstate.md) or [`GLTFNode`](class_gltfnode.md).
 
@@ -25,25 +25,25 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
 
 |||
 |:-:|:--|
-| `void`                                            | [`_convert_scene_node`](#class_gltfdocumentextension_private_method__convert_scene_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), scene_node: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                    |
-| [Error](#enum_@globalscope_error)                 | [`_export_node`](#class_gltfdocumentextension_private_method__export_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), json: [`Dictionary`](class_dictionary.md), node: [`Node`](class_node.md) ) virtual[^virtual]                                                                             |
-| [Error](#enum_@globalscope_error)                 | [`_export_post`](#class_gltfdocumentextension_private_method__export_post) ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]                                                                                                                                                                                                   |
-| [Error](#enum_@globalscope_error)                 | [`_export_preflight`](#class_gltfdocumentextension_private_method__export_preflight) ( state: [`GLTFState`](class_gltfstate.md), root: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                                                                          |
-| [Error](#enum_@globalscope_error)                 | [`_export_preserialize`](#class_gltfdocumentextension_private_method__export_preserialize) ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]                                                                                                                                                                                   |
-| [`Node3D`](class_node3d.md)                       | [`_generate_scene_node`](#class_gltfdocumentextension_private_method__generate_scene_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), scene_parent: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                |
-| [`String`](class_string.md)                       | [`_get_image_file_extension`](#class_gltfdocumentextension_private_method__get_image_file_extension) ( ) virtual[^virtual]                                                                                                                                                                                                                  |
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_saveable_image_formats`](#class_gltfdocumentextension_private_method__get_saveable_image_formats) ( ) virtual[^virtual]                                                                                                                                                                                                              |
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_supported_extensions`](#class_gltfdocumentextension_private_method__get_supported_extensions) ( ) virtual[^virtual]                                                                                                                                                                                                                  |
-| [Error](#enum_@globalscope_error)                 | [`_import_node`](#class_gltfdocumentextension_private_method__import_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), json: [`Dictionary`](class_dictionary.md), node: [`Node`](class_node.md) ) virtual[^virtual]                                                                             |
-| [Error](#enum_@globalscope_error)                 | [`_import_post`](#class_gltfdocumentextension_private_method__import_post) ( state: [`GLTFState`](class_gltfstate.md), root: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                                                                                    |
-| [Error](#enum_@globalscope_error)                 | [`_import_post_parse`](#class_gltfdocumentextension_private_method__import_post_parse) ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]                                                                                                                                                                                       |
-| [Error](#enum_@globalscope_error)                 | [`_import_preflight`](#class_gltfdocumentextension_private_method__import_preflight) ( state: [`GLTFState`](class_gltfstate.md), extensions: [`PackedStringArray`](class_packedstringarray.md) ) virtual[^virtual]                                                                                                                          |
-| [Error](#enum_@globalscope_error)                 | [`_parse_image_data`](#class_gltfdocumentextension_private_method__parse_image_data) ( state: [`GLTFState`](class_gltfstate.md), image_data: [`PackedByteArray`](class_packedbytearray.md), mime_type: [`String`](class_string.md), ret_image: [`Image`](class_image.md) ) virtual[^virtual]                                                |
-| [Error](#enum_@globalscope_error)                 | [`_parse_node_extensions`](#class_gltfdocumentextension_private_method__parse_node_extensions) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), extensions: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                                                                  |
-| [Error](#enum_@globalscope_error)                 | [`_parse_texture_json`](#class_gltfdocumentextension_private_method__parse_texture_json) ( state: [`GLTFState`](class_gltfstate.md), texture_json: [`Dictionary`](class_dictionary.md), ret_gltf_texture: [`GLTFTexture`](class_gltftexture.md) ) virtual[^virtual]                                                                         |
-| [Error](#enum_@globalscope_error)                 | [`_save_image_at_path`](#class_gltfdocumentextension_private_method__save_image_at_path) ( state: [`GLTFState`](class_gltfstate.md), image: [`Image`](class_image.md), file_path: [`String`](class_string.md), image_format: [`String`](class_string.md), lossy_quality: [`float`](class_float.md) ) virtual[^virtual]                      |
-| [`PackedByteArray`](class_packedbytearray.md)     | [`_serialize_image_to_bytes`](#class_gltfdocumentextension_private_method__serialize_image_to_bytes) ( state: [`GLTFState`](class_gltfstate.md), image: [`Image`](class_image.md), image_dict: [`Dictionary`](class_dictionary.md), image_format: [`String`](class_string.md), lossy_quality: [`float`](class_float.md) ) virtual[^virtual] |
-| [Error](#enum_@globalscope_error)                 | [`_serialize_texture_json`](#class_gltfdocumentextension_private_method__serialize_texture_json) ( state: [`GLTFState`](class_gltfstate.md), texture_json: [`Dictionary`](class_dictionary.md), gltf_texture: [`GLTFTexture`](class_gltftexture.md), image_format: [`String`](class_string.md) ) virtual[^virtual]                          |
+| `void`                                            | [`_convert_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__convert_scene_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), scene_node: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                    |
+| [Error](#enum_@globalscope_error)                 | [`_export_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), json: [`Dictionary`](class_dictionary.md), node: [`Node`](class_node.md) ) virtual[^virtual]                                                                             |
+| [Error](#enum_@globalscope_error)                 | [`_export_post`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_post) ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]                                                                                                                                                                                                   |
+| [Error](#enum_@globalscope_error)                 | [`_export_preflight`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_preflight) ( state: [`GLTFState`](class_gltfstate.md), root: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                                                                          |
+| [Error](#enum_@globalscope_error)                 | [`_export_preserialize`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_preserialize) ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]                                                                                                                                                                                   |
+| [`Node3D`](class_node3d.md)                       | [`_generate_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__generate_scene_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), scene_parent: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                |
+| [`String`](class_string.md)                       | [`_get_image_file_extension`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__get_image_file_extension) ( ) virtual[^virtual]                                                                                                                                                                                                                  |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_saveable_image_formats`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__get_saveable_image_formats) ( ) virtual[^virtual]                                                                                                                                                                                                              |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_supported_extensions`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__get_supported_extensions) ( ) virtual[^virtual]                                                                                                                                                                                                                  |
+| [Error](#enum_@globalscope_error)                 | [`_import_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), json: [`Dictionary`](class_dictionary.md), node: [`Node`](class_node.md) ) virtual[^virtual]                                                                             |
+| [Error](#enum_@globalscope_error)                 | [`_import_post`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_post) ( state: [`GLTFState`](class_gltfstate.md), root: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                                                                                    |
+| [Error](#enum_@globalscope_error)                 | [`_import_post_parse`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_post_parse) ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]                                                                                                                                                                                       |
+| [Error](#enum_@globalscope_error)                 | [`_import_preflight`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_preflight) ( state: [`GLTFState`](class_gltfstate.md), extensions: [`PackedStringArray`](class_packedstringarray.md) ) virtual[^virtual]                                                                                                                          |
+| [Error](#enum_@globalscope_error)                 | [`_parse_image_data`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__parse_image_data) ( state: [`GLTFState`](class_gltfstate.md), image_data: [`PackedByteArray`](class_packedbytearray.md), mime_type: [`String`](class_string.md), ret_image: [`Image`](class_image.md) ) virtual[^virtual]                                                |
+| [Error](#enum_@globalscope_error)                 | [`_parse_node_extensions`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__parse_node_extensions) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), extensions: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                                                                  |
+| [Error](#enum_@globalscope_error)                 | [`_parse_texture_json`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__parse_texture_json) ( state: [`GLTFState`](class_gltfstate.md), texture_json: [`Dictionary`](class_dictionary.md), ret_gltf_texture: [`GLTFTexture`](class_gltftexture.md) ) virtual[^virtual]                                                                         |
+| [Error](#enum_@globalscope_error)                 | [`_save_image_at_path`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__save_image_at_path) ( state: [`GLTFState`](class_gltfstate.md), image: [`Image`](class_image.md), file_path: [`String`](class_string.md), image_format: [`String`](class_string.md), lossy_quality: [`float`](class_float.md) ) virtual[^virtual]                      |
+| [`PackedByteArray`](class_packedbytearray.md)     | [`_serialize_image_to_bytes`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__serialize_image_to_bytes) ( state: [`GLTFState`](class_gltfstate.md), image: [`Image`](class_image.md), image_dict: [`Dictionary`](class_dictionary.md), image_format: [`String`](class_string.md), lossy_quality: [`float`](class_float.md) ) virtual[^virtual] |
+| [Error](#enum_@globalscope_error)                 | [`_serialize_texture_json`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__serialize_texture_json) ( state: [`GLTFState`](class_gltfstate.md), texture_json: [`Dictionary`](class_dictionary.md), gltf_texture: [`GLTFTexture`](class_gltftexture.md), image_format: [`String`](class_string.md) ) virtual[^virtual]                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -55,9 +55,9 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
 
 `void` **_convert_scene_node** ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), scene_node: [`Node`](class_node.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__convert_scene_node"></div>
 
-Part of the export process. This method is run after [`_export_preflight`](#class_gltfdocumentextension_private_method__export_preflight) and before [`_export_preserialize`](#class_gltfdocumentextension_private_method__export_preserialize).
+Part of the export process. This method is run after [`_export_preflight`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_preflight) and before [`_export_preserialize`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_preserialize).
 
-Runs when converting the data from a Godot scene node. This method can be used to process the Godot scene node data into a format that can be used by [`_export_node`](#class_gltfdocumentextension_private_method__export_node).
+Runs when converting the data from a Godot scene node. This method can be used to process the Godot scene node data into a format that can be used by [`_export_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_node).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -67,7 +67,7 @@ Runs when converting the data from a Godot scene node. This method can be used t
 
 [Error](#enum_@globalscope_error) **_export_node** ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), json: [`Dictionary`](class_dictionary.md), node: [`Node`](class_node.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__export_node"></div>
 
-Part of the export process. This method is run after [`_get_saveable_image_formats`](#class_gltfdocumentextension_private_method__get_saveable_image_formats) and before [`_export_post`](#class_gltfdocumentextension_private_method__export_post). If this **GLTFDocumentExtension** is used for exporting images, this runs after [`_serialize_texture_json`](#class_gltfdocumentextension_private_method__serialize_texture_json).
+Part of the export process. This method is run after [`_get_saveable_image_formats`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__get_saveable_image_formats) and before [`_export_post`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_post). If this **GLTFDocumentExtension** is used for exporting images, this runs after [`_serialize_texture_json`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__serialize_texture_json).
 
 This method can be used to modify the final JSON of each node. Data should be primarily stored in `gltf_node` prior to serializing the JSON, but the original Godot `node` is also provided if available. The node may be null if not available, such as when exporting GLTF data not generated from a Godot scene.
 
@@ -93,7 +93,7 @@ This method can be used to modify the final JSON of the generated GLTF file.
 
 Part of the export process. This method is run first, before all other parts of the export process.
 
-The return value is used to determine if this **GLTFDocumentExtension** instance should be used for exporting a given GLTF file. If [`@GlobalScope.OK`](#class_@globalscope_constant_ok), the export will use this **GLTFDocumentExtension** instance. If not overridden, [`@GlobalScope.OK`](#class_@globalscope_constant_ok) is returned.
+The return value is used to determine if this **GLTFDocumentExtension** instance should be used for exporting a given GLTF file. If [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok), the export will use this **GLTFDocumentExtension** instance. If not overridden, [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) is returned.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -103,9 +103,9 @@ The return value is used to determine if this **GLTFDocumentExtension** instance
 
 [Error](#enum_@globalscope_error) **_export_preserialize** ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__export_preserialize"></div>
 
-Part of the export process. This method is run after [`_convert_scene_node`](#class_gltfdocumentextension_private_method__convert_scene_node) and before [`_get_saveable_image_formats`](#class_gltfdocumentextension_private_method__get_saveable_image_formats).
+Part of the export process. This method is run after [`_convert_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__convert_scene_node) and before [`_get_saveable_image_formats`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__get_saveable_image_formats).
 
-This method can be used to alter the state before performing serialization. It runs every time when generating a buffer with [`GLTFDocument.generate_buffer`](#class_gltfdocument_method_generate_buffer) or writing to the file system with [`GLTFDocument.write_to_filesystem`](#class_gltfdocument_method_write_to_filesystem).
+This method can be used to alter the state before performing serialization. It runs every time when generating a buffer with [`GLTFDocument.generate_buffer`](class_gltfdocument.md#class_gltfdocument_method_generate_buffer) or writing to the file system with [`GLTFDocument.write_to_filesystem`](class_gltfdocument.md#class_gltfdocument_method_write_to_filesystem).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -115,7 +115,7 @@ This method can be used to alter the state before performing serialization. It r
 
 [`Node3D`](class_node3d.md) **_generate_scene_node** ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), scene_parent: [`Node`](class_node.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__generate_scene_node"></div>
 
-Part of the import process. This method is run after [`_import_post_parse`](#class_gltfdocumentextension_private_method__import_post_parse) and before [`_import_node`](#class_gltfdocumentextension_private_method__import_node).
+Part of the import process. This method is run after [`_import_post_parse`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_post_parse) and before [`_import_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_node).
 
 Runs when generating a Godot scene node from a GLTFNode. The returned node will be added to the scene tree. Multiple nodes can be generated in this step if they are added as a child of the returned node.
 
@@ -139,9 +139,9 @@ Returns the file extension to use for saving image data into, for example, `".pn
 
 [`PackedStringArray`](class_packedstringarray.md) **_get_saveable_image_formats** ( ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__get_saveable_image_formats"></div>
 
-Part of the export process. This method is run after [`_convert_scene_node`](#class_gltfdocumentextension_private_method__convert_scene_node) and before [`_export_node`](#class_gltfdocumentextension_private_method__export_node).
+Part of the export process. This method is run after [`_convert_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__convert_scene_node) and before [`_export_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_node).
 
-Returns an array of the image formats that can be saved/exported by this extension. This extension will only be selected as the image exporter if the [`GLTFDocument`](class_gltfdocument.md)'s [`GLTFDocument.image_format`](#class_gltfdocument_property_image_format) is in this array. If this **GLTFDocumentExtension** is selected as the image exporter, one of the [`_save_image_at_path`](#class_gltfdocumentextension_private_method__save_image_at_path) or [`_serialize_image_to_bytes`](#class_gltfdocumentextension_private_method__serialize_image_to_bytes) methods will run next, otherwise [`_export_node`](#class_gltfdocumentextension_private_method__export_node) will run next. If the format name contains `"Lossy"`, the lossy quality slider will be displayed.
+Returns an array of the image formats that can be saved/exported by this extension. This extension will only be selected as the image exporter if the [`GLTFDocument`](class_gltfdocument.md)'s [`GLTFDocument.image_format`](class_gltfdocument.md#class_gltfdocument_property_image_format) is in this array. If this **GLTFDocumentExtension** is selected as the image exporter, one of the [`_save_image_at_path`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__save_image_at_path) or [`_serialize_image_to_bytes`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__serialize_image_to_bytes) methods will run next, otherwise [`_export_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_node) will run next. If the format name contains `"Lossy"`, the lossy quality slider will be displayed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -151,7 +151,7 @@ Returns an array of the image formats that can be saved/exported by this extensi
 
 [`PackedStringArray`](class_packedstringarray.md) **_get_supported_extensions** ( ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__get_supported_extensions"></div>
 
-Part of the import process. This method is run after [`_import_preflight`](#class_gltfdocumentextension_private_method__import_preflight) and before [`_parse_node_extensions`](#class_gltfdocumentextension_private_method__parse_node_extensions).
+Part of the import process. This method is run after [`_import_preflight`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_preflight) and before [`_parse_node_extensions`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__parse_node_extensions).
 
 Returns an array of the GLTF extensions supported by this GLTFDocumentExtension class. This is used to validate if a GLTF file with required extensions can be loaded.
 
@@ -163,7 +163,7 @@ Returns an array of the GLTF extensions supported by this GLTFDocumentExtension 
 
 [Error](#enum_@globalscope_error) **_import_node** ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), json: [`Dictionary`](class_dictionary.md), node: [`Node`](class_node.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__import_node"></div>
 
-Part of the import process. This method is run after [`_generate_scene_node`](#class_gltfdocumentextension_private_method__generate_scene_node) and before [`_import_post`](#class_gltfdocumentextension_private_method__import_post).
+Part of the import process. This method is run after [`_generate_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__generate_scene_node) and before [`_import_post`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_post).
 
 This method can be used to make modifications to each of the generated Godot scene nodes.
 
@@ -187,7 +187,7 @@ This method can be used to modify the final Godot scene generated by the import 
 
 [Error](#enum_@globalscope_error) **_import_post_parse** ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__import_post_parse"></div>
 
-Part of the import process. This method is run after [`_parse_node_extensions`](#class_gltfdocumentextension_private_method__parse_node_extensions) and before [`_generate_scene_node`](#class_gltfdocumentextension_private_method__generate_scene_node).
+Part of the import process. This method is run after [`_parse_node_extensions`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__parse_node_extensions) and before [`_generate_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__generate_scene_node).
 
 This method can be used to modify any of the data imported so far after parsing, before generating the nodes and then running the final per-node import step.
 
@@ -201,7 +201,7 @@ This method can be used to modify any of the data imported so far after parsing,
 
 Part of the import process. This method is run first, before all other parts of the import process.
 
-The return value is used to determine if this **GLTFDocumentExtension** instance should be used for importing a given GLTF file. If [`@GlobalScope.OK`](#class_@globalscope_constant_ok), the import will use this **GLTFDocumentExtension** instance. If not overridden, [`@GlobalScope.OK`](#class_@globalscope_constant_ok) is returned.
+The return value is used to determine if this **GLTFDocumentExtension** instance should be used for importing a given GLTF file. If [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok), the import will use this **GLTFDocumentExtension** instance. If not overridden, [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) is returned.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -211,7 +211,7 @@ The return value is used to determine if this **GLTFDocumentExtension** instance
 
 [Error](#enum_@globalscope_error) **_parse_image_data** ( state: [`GLTFState`](class_gltfstate.md), image_data: [`PackedByteArray`](class_packedbytearray.md), mime_type: [`String`](class_string.md), ret_image: [`Image`](class_image.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__parse_image_data"></div>
 
-Part of the import process. This method is run after [`_parse_node_extensions`](#class_gltfdocumentextension_private_method__parse_node_extensions) and before [`_parse_texture_json`](#class_gltfdocumentextension_private_method__parse_texture_json).
+Part of the import process. This method is run after [`_parse_node_extensions`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__parse_node_extensions) and before [`_parse_texture_json`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__parse_texture_json).
 
 Runs when parsing image data from a GLTF file. The data could be sourced from a separate file, a URI, or a buffer, and then is passed as a byte array.
 
@@ -223,9 +223,9 @@ Runs when parsing image data from a GLTF file. The data could be sourced from a 
 
 [Error](#enum_@globalscope_error) **_parse_node_extensions** ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), extensions: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__parse_node_extensions"></div>
 
-Part of the import process. This method is run after [`_get_supported_extensions`](#class_gltfdocumentextension_private_method__get_supported_extensions) and before [`_import_post_parse`](#class_gltfdocumentextension_private_method__import_post_parse).
+Part of the import process. This method is run after [`_get_supported_extensions`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__get_supported_extensions) and before [`_import_post_parse`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__import_post_parse).
 
-Runs when parsing the node extensions of a GLTFNode. This method can be used to process the extension JSON data into a format that can be used by [`_generate_scene_node`](#class_gltfdocumentextension_private_method__generate_scene_node). The return value should be a member of the [Error](#enum_@globalscope_error) enum.
+Runs when parsing the node extensions of a GLTFNode. This method can be used to process the extension JSON data into a format that can be used by [`_generate_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__generate_scene_node). The return value should be a member of the [Error](#enum_@globalscope_error) enum.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -235,7 +235,7 @@ Runs when parsing the node extensions of a GLTFNode. This method can be used to 
 
 [Error](#enum_@globalscope_error) **_parse_texture_json** ( state: [`GLTFState`](class_gltfstate.md), texture_json: [`Dictionary`](class_dictionary.md), ret_gltf_texture: [`GLTFTexture`](class_gltftexture.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__parse_texture_json"></div>
 
-Part of the import process. This method is run after [`_parse_image_data`](#class_gltfdocumentextension_private_method__parse_image_data) and before [`_generate_scene_node`](#class_gltfdocumentextension_private_method__generate_scene_node).
+Part of the import process. This method is run after [`_parse_image_data`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__parse_image_data) and before [`_generate_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__generate_scene_node).
 
 Runs when parsing the texture JSON from the GLTF textures array. This can be used to set the source image index to use as the texture.
 
@@ -247,9 +247,9 @@ Runs when parsing the texture JSON from the GLTF textures array. This can be use
 
 [Error](#enum_@globalscope_error) **_save_image_at_path** ( state: [`GLTFState`](class_gltfstate.md), image: [`Image`](class_image.md), file_path: [`String`](class_string.md), image_format: [`String`](class_string.md), lossy_quality: [`float`](class_float.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__save_image_at_path"></div>
 
-Part of the export process. This method is run after [`_get_saveable_image_formats`](#class_gltfdocumentextension_private_method__get_saveable_image_formats) and before [`_serialize_texture_json`](#class_gltfdocumentextension_private_method__serialize_texture_json).
+Part of the export process. This method is run after [`_get_saveable_image_formats`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__get_saveable_image_formats) and before [`_serialize_texture_json`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__serialize_texture_json).
 
-This method is run when saving images separately from the GLTF file. When images are embedded, [`_serialize_image_to_bytes`](#class_gltfdocumentextension_private_method__serialize_image_to_bytes) runs instead. Note that these methods only run when this **GLTFDocumentExtension** is selected as the image exporter.
+This method is run when saving images separately from the GLTF file. When images are embedded, [`_serialize_image_to_bytes`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__serialize_image_to_bytes) runs instead. Note that these methods only run when this **GLTFDocumentExtension** is selected as the image exporter.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -259,9 +259,9 @@ This method is run when saving images separately from the GLTF file. When images
 
 [`PackedByteArray`](class_packedbytearray.md) **_serialize_image_to_bytes** ( state: [`GLTFState`](class_gltfstate.md), image: [`Image`](class_image.md), image_dict: [`Dictionary`](class_dictionary.md), image_format: [`String`](class_string.md), lossy_quality: [`float`](class_float.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__serialize_image_to_bytes"></div>
 
-Part of the export process. This method is run after [`_get_saveable_image_formats`](#class_gltfdocumentextension_private_method__get_saveable_image_formats) and before [`_serialize_texture_json`](#class_gltfdocumentextension_private_method__serialize_texture_json).
+Part of the export process. This method is run after [`_get_saveable_image_formats`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__get_saveable_image_formats) and before [`_serialize_texture_json`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__serialize_texture_json).
 
-This method is run when embedding images in the GLTF file. When images are saved separately, [`_save_image_at_path`](#class_gltfdocumentextension_private_method__save_image_at_path) runs instead. Note that these methods only run when this **GLTFDocumentExtension** is selected as the image exporter.
+This method is run when embedding images in the GLTF file. When images are saved separately, [`_save_image_at_path`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__save_image_at_path) runs instead. Note that these methods only run when this **GLTFDocumentExtension** is selected as the image exporter.
 
 This method must set the image MIME type in the `image_dict` with the `"mimeType"` key. For example, for a PNG image, it would be set to `"image/png"`. The return value must be a [`PackedByteArray`](class_packedbytearray.md) containing the image data.
 
@@ -273,9 +273,9 @@ This method must set the image MIME type in the `image_dict` with the `"mimeType
 
 [Error](#enum_@globalscope_error) **_serialize_texture_json** ( state: [`GLTFState`](class_gltfstate.md), texture_json: [`Dictionary`](class_dictionary.md), gltf_texture: [`GLTFTexture`](class_gltftexture.md), image_format: [`String`](class_string.md) ) virtual[^virtual]<div id="class_gltfdocumentextension_private_method__serialize_texture_json"></div>
 
-Part of the export process. This method is run after [`_save_image_at_path`](#class_gltfdocumentextension_private_method__save_image_at_path) or [`_serialize_image_to_bytes`](#class_gltfdocumentextension_private_method__serialize_image_to_bytes), and before [`_export_node`](#class_gltfdocumentextension_private_method__export_node). Note that this method only runs when this **GLTFDocumentExtension** is selected as the image exporter.
+Part of the export process. This method is run after [`_save_image_at_path`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__save_image_at_path) or [`_serialize_image_to_bytes`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__serialize_image_to_bytes), and before [`_export_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_node). Note that this method only runs when this **GLTFDocumentExtension** is selected as the image exporter.
 
-This method can be used to set up the extensions for the texture JSON by editing `texture_json`. The extension must also be added as used extension with [`GLTFState.add_used_extension`](#class_gltfstate_method_add_used_extension), be sure to set `required` to `true` if you are not providing a fallback.
+This method can be used to set up the extensions for the texture JSON by editing `texture_json`. The extension must also be added as used extension with [`GLTFState.add_used_extension`](class_gltfstate.md#class_gltfstate_method_add_used_extension), be sure to set `required` to `true` if you are not providing a fallback.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

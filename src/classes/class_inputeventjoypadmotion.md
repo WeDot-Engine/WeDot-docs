@@ -19,8 +19,8 @@ Stores information about joystick motions. One **InputEventJoypadMotion** repres
 
 |||
 |:-:|:--|
-| [JoyAxis](#enum_@globalscope_joyaxis) | [`axis`](#class_inputeventjoypadmotion_property_axis)             | ``0``   |
-| [`float`](class_float.md)             | [`axis_value`](#class_inputeventjoypadmotion_property_axis_value) | ``0.0`` |
+| [JoyAxis](#enum_@globalscope_joyaxis) | [`axis`](class_inputeventjoypadmotion.md#class_inputeventjoypadmotion_property_axis)             | ``0``   |
+| [`float`](class_float.md)             | [`axis_value`](class_inputeventjoypadmotion.md#class_inputeventjoypadmotion_property_axis_value) | ``0.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

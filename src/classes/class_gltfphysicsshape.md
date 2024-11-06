@@ -19,24 +19,24 @@ Represents a physics shape as defined by the `OMI_physics_shape` or `OMI_collide
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)               | [`height`](#class_gltfphysicsshape_property_height)               | ``2.0``              |
-| [`ImporterMesh`](class_importermesh.md) | [`importer_mesh`](#class_gltfphysicsshape_property_importer_mesh) |                      |
-| [`bool`](class_bool.md)                 | [`is_trigger`](#class_gltfphysicsshape_property_is_trigger)       | ``false``            |
-| [`int`](class_int.md)                   | [`mesh_index`](#class_gltfphysicsshape_property_mesh_index)       | ``-1``               |
-| [`float`](class_float.md)               | [`radius`](#class_gltfphysicsshape_property_radius)               | ``0.5``              |
-| [`String`](class_string.md)             | [`shape_type`](#class_gltfphysicsshape_property_shape_type)       | ``""``               |
-| [`Vector3`](class_vector3.md)           | [`size`](#class_gltfphysicsshape_property_size)                   | ``Vector3(1, 1, 1)`` |
+| [`float`](class_float.md)               | [`height`](class_gltfphysicsshape.md#class_gltfphysicsshape_property_height)               | ``2.0``              |
+| [`ImporterMesh`](class_importermesh.md) | [`importer_mesh`](class_gltfphysicsshape.md#class_gltfphysicsshape_property_importer_mesh) |                      |
+| [`bool`](class_bool.md)                 | [`is_trigger`](class_gltfphysicsshape.md#class_gltfphysicsshape_property_is_trigger)       | ``false``            |
+| [`int`](class_int.md)                   | [`mesh_index`](class_gltfphysicsshape.md#class_gltfphysicsshape_property_mesh_index)       | ``-1``               |
+| [`float`](class_float.md)               | [`radius`](class_gltfphysicsshape.md#class_gltfphysicsshape_property_radius)               | ``0.5``              |
+| [`String`](class_string.md)             | [`shape_type`](class_gltfphysicsshape.md#class_gltfphysicsshape_property_shape_type)       | ``""``               |
+| [`Vector3`](class_vector3.md)           | [`size`](class_gltfphysicsshape.md#class_gltfphysicsshape_property_size)                   | ``Vector3(1, 1, 1)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_dictionary`](#class_gltfphysicsshape_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
-| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_node`](#class_gltfphysicsshape_method_from_node) ( shape_node: [`CollisionShape3D`](class_collisionshape3d.md) ) static[^static] |
-| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_resource`](#class_gltfphysicsshape_method_from_resource) ( shape_resource: [`Shape3D`](class_shape3d.md) ) static[^static]       |
-| [`Dictionary`](class_dictionary.md)             | [`to_dictionary`](#class_gltfphysicsshape_method_to_dictionary) ( ) const[^const]                                                       |
-| [`CollisionShape3D`](class_collisionshape3d.md) | [`to_node`](#class_gltfphysicsshape_method_to_node) ( cache_shapes: [`bool`](class_bool.md) = false )                                   |
-| [`Shape3D`](class_shape3d.md)                   | [`to_resource`](#class_gltfphysicsshape_method_to_resource) ( cache_shapes: [`bool`](class_bool.md) = false )                           |
+| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_dictionary`](class_gltfphysicsshape.md#class_gltfphysicsshape_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
+| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_node`](class_gltfphysicsshape.md#class_gltfphysicsshape_method_from_node) ( shape_node: [`CollisionShape3D`](class_collisionshape3d.md) ) static[^static] |
+| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_resource`](class_gltfphysicsshape.md#class_gltfphysicsshape_method_from_resource) ( shape_resource: [`Shape3D`](class_shape3d.md) ) static[^static]       |
+| [`Dictionary`](class_dictionary.md)             | [`to_dictionary`](class_gltfphysicsshape.md#class_gltfphysicsshape_method_to_dictionary) ( ) const[^const]                                                       |
+| [`CollisionShape3D`](class_collisionshape3d.md) | [`to_node`](class_gltfphysicsshape.md#class_gltfphysicsshape_method_to_node) ( cache_shapes: [`bool`](class_bool.md) = false )                                   |
+| [`Shape3D`](class_shape3d.md)                   | [`to_resource`](class_gltfphysicsshape.md#class_gltfphysicsshape_method_to_resource) ( cache_shapes: [`bool`](class_bool.md) = false )                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -79,7 +79,7 @@ The [`ImporterMesh`](class_importermesh.md) resource of the shape. This is only 
 
 If `true`, indicates that this shape is a trigger. For Godot, this means that the shape should be a child of an Area3D node.
 
-This is the only variable not used in the [`to_node`](#class_gltfphysicsshape_method_to_node) method, it's intended to be used alongside when deciding where to add the generated node as a child.
+This is the only variable not used in the [`to_node`](class_gltfphysicsshape.md#class_gltfphysicsshape_method_to_node) method, it's intended to be used alongside when deciding where to add the generated node as a child.
 
 <!-- rst-class:: classref-item-separator -->
 

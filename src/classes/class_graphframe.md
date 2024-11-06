@@ -23,29 +23,29 @@ A GraphFrame is always kept behind the connection layer and other [`GraphElement
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                  | [`autoshrink_enabled`](#class_graphframe_property_autoshrink_enabled) | ``true``                                                            |
-| [`int`](class_int.md)                    | [`autoshrink_margin`](#class_graphframe_property_autoshrink_margin)   | ``40``                                                              |
-| [`int`](class_int.md)                    | [`drag_margin`](#class_graphframe_property_drag_margin)               | ``16``                                                              |
-| [MouseFilter](#enum_control_mousefilter) | mouse_filter                                                          | ``0`` (overrides [`Control`](#class_control_property_mouse_filter)) |
-| [`Color`](class_color.md)                | [`tint_color`](#class_graphframe_property_tint_color)                 | ``Color(0.3, 0.3, 0.3, 0.75)``                                      |
-| [`bool`](class_bool.md)                  | [`tint_color_enabled`](#class_graphframe_property_tint_color_enabled) | ``false``                                                           |
-| [`String`](class_string.md)              | [`title`](#class_graphframe_property_title)                           | ``""``                                                              |
+| [`bool`](class_bool.md)                  | [`autoshrink_enabled`](class_graphframe.md#class_graphframe_property_autoshrink_enabled) | ``true``                                                                            |
+| [`int`](class_int.md)                    | [`autoshrink_margin`](class_graphframe.md#class_graphframe_property_autoshrink_margin)   | ``40``                                                                              |
+| [`int`](class_int.md)                    | [`drag_margin`](class_graphframe.md#class_graphframe_property_drag_margin)               | ``16``                                                                              |
+| [MouseFilter](#enum_control_mousefilter) | mouse_filter                                                                             | ``0`` (overrides [`Control`](class_control.md#class_control_property_mouse_filter)) |
+| [`Color`](class_color.md)                | [`tint_color`](class_graphframe.md#class_graphframe_property_tint_color)                 | ``Color(0.3, 0.3, 0.3, 0.75)``                                                      |
+| [`bool`](class_bool.md)                  | [`tint_color_enabled`](class_graphframe.md#class_graphframe_property_tint_color_enabled) | ``false``                                                                           |
+| [`String`](class_string.md)              | [`title`](class_graphframe.md#class_graphframe_property_title)                           | ``""``                                                                              |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`HBoxContainer`](class_hboxcontainer.md) | [`get_titlebar_hbox`](#class_graphframe_method_get_titlebar_hbox) ( ) |
+| [`HBoxContainer`](class_hboxcontainer.md) | [`get_titlebar_hbox`](class_graphframe.md#class_graphframe_method_get_titlebar_hbox) ( ) |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)       | [`resizer_color`](#class_graphframe_theme_color_resizer_color)         | ``Color(0.875, 0.875, 0.875, 1)`` |
-| [`StyleBox`](class_stylebox.md) | [`panel`](#class_graphframe_theme_style_panel)                         |                                   |
-| [`StyleBox`](class_stylebox.md) | [`panel_selected`](#class_graphframe_theme_style_panel_selected)       |                                   |
-| [`StyleBox`](class_stylebox.md) | [`titlebar`](#class_graphframe_theme_style_titlebar)                   |                                   |
-| [`StyleBox`](class_stylebox.md) | [`titlebar_selected`](#class_graphframe_theme_style_titlebar_selected) |                                   |
+| [`Color`](class_color.md)       | [`resizer_color`](class_graphframe.md#class_graphframe_theme_color_resizer_color)         | ``Color(0.875, 0.875, 0.875, 1)`` |
+| [`StyleBox`](class_stylebox.md) | [`panel`](class_graphframe.md#class_graphframe_theme_style_panel)                         |                                   |
+| [`StyleBox`](class_stylebox.md) | [`panel_selected`](class_graphframe.md#class_graphframe_theme_style_panel_selected)       |                                   |
+| [`StyleBox`](class_stylebox.md) | [`titlebar`](class_graphframe.md#class_graphframe_theme_style_titlebar)                   |                                   |
+| [`StyleBox`](class_stylebox.md) | [`titlebar_selected`](class_graphframe.md#class_graphframe_theme_style_titlebar_selected) |                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -57,7 +57,7 @@ A GraphFrame is always kept behind the connection layer and other [`GraphElement
 
 **autoshrink_changed** ( ) <div id="class_graphframe_signal_autoshrink_changed"></div>
 
-Emitted when [`autoshrink_enabled`](#class_graphframe_property_autoshrink_enabled) or [`autoshrink_margin`](#class_graphframe_property_autoshrink_margin) changes.
+Emitted when [`autoshrink_enabled`](class_graphframe.md#class_graphframe_property_autoshrink_enabled) or [`autoshrink_margin`](class_graphframe.md#class_graphframe_property_autoshrink_margin) changes.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -85,7 +85,7 @@ If `true`, the frame's rect will be adjusted automatically to enclose all attach
 - `void` **set_autoshrink_margin** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_autoshrink_margin** ( )
 
-The margin around the attached nodes that is used to calculate the size of the frame when [`autoshrink_enabled`](#class_graphframe_property_autoshrink_enabled) is `true`.
+The margin around the attached nodes that is used to calculate the size of the frame when [`autoshrink_enabled`](class_graphframe.md#class_graphframe_property_autoshrink_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -111,7 +111,7 @@ The margin inside the frame that can be used to drag the frame.
 - `void` **set_tint_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_tint_color** ( )
 
-The color of the frame when [`tint_color_enabled`](#class_graphframe_property_tint_color_enabled) is `true`.
+The color of the frame when [`tint_color_enabled`](class_graphframe.md#class_graphframe_property_tint_color_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -11,45 +11,45 @@ A plane in Hessian normal form.
 
 ## 描述
 
-Represents a normalized plane equation. [`normal`](#class_plane_property_normal) is the normal of the plane (a, b, c normalized), and [`d`](#class_plane_property_d) is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.
+Represents a normalized plane equation. [`normal`](class_plane.md#class_plane_property_normal) is the normal of the plane (a, b, c normalized), and [`d`](class_plane.md#class_plane_property_d) is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)     | [`d`](#class_plane_property_d)           | ``0.0``              |
-| [`Vector3`](class_vector3.md) | [`normal`](#class_plane_property_normal) | ``Vector3(0, 0, 0)`` |
-| [`float`](class_float.md)     | [`x`](#class_plane_property_x)           | ``0.0``              |
-| [`float`](class_float.md)     | [`y`](#class_plane_property_y)           | ``0.0``              |
-| [`float`](class_float.md)     | [`z`](#class_plane_property_z)           | ``0.0``              |
+| [`float`](class_float.md)     | [`d`](class_plane.md#class_plane_property_d)           | ``0.0``              |
+| [`Vector3`](class_vector3.md) | [`normal`](class_plane.md#class_plane_property_normal) | ``Vector3(0, 0, 0)`` |
+| [`float`](class_float.md)     | [`x`](class_plane.md#class_plane_property_x)           | ``0.0``              |
+| [`float`](class_float.md)     | [`y`](class_plane.md#class_plane_property_y)           | ``0.0``              |
+| [`float`](class_float.md)     | [`z`](class_plane.md#class_plane_property_z)           | ``0.0``              |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( )                                                                                                                        |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( from: [`Plane`](class_plane.md) )                                                                                        |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( a: [`float`](class_float.md), b: [`float`](class_float.md), c: [`float`](class_float.md), d: [`float`](class_float.md) ) |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md) )                                                                                  |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md), d: [`float`](class_float.md) )                                                    |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md), point: [`Vector3`](class_vector3.md) )                                            |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( point1: [`Vector3`](class_vector3.md), point2: [`Vector3`](class_vector3.md), point3: [`Vector3`](class_vector3.md) )    |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( )                                                                                                                        |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( from: [`Plane`](class_plane.md) )                                                                                        |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( a: [`float`](class_float.md), b: [`float`](class_float.md), c: [`float`](class_float.md), d: [`float`](class_float.md) ) |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md) )                                                                                  |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md), d: [`float`](class_float.md) )                                                    |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md), point: [`Vector3`](class_vector3.md) )                                            |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( point1: [`Vector3`](class_vector3.md), point2: [`Vector3`](class_vector3.md), point3: [`Vector3`](class_vector3.md) )    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)     | [`distance_to`](#class_plane_method_distance_to) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                 |
-| [`Vector3`](class_vector3.md) | [`get_center`](#class_plane_method_get_center) ( ) const[^const]                                                                                        |
-| [`bool`](class_bool.md)       | [`has_point`](#class_plane_method_has_point) ( point: [`Vector3`](class_vector3.md), tolerance: [`float`](class_float.md) = 1e-05 ) const[^const]       |
-| [`Variant`](class_variant.md) | [`intersect_3`](#class_plane_method_intersect_3) ( b: [`Plane`](class_plane.md), c: [`Plane`](class_plane.md) ) const[^const]                           |
-| [`Variant`](class_variant.md) | [`intersects_ray`](#class_plane_method_intersects_ray) ( from: [`Vector3`](class_vector3.md), dir: [`Vector3`](class_vector3.md) ) const[^const]        |
-| [`Variant`](class_variant.md) | [`intersects_segment`](#class_plane_method_intersects_segment) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md) ) const[^const] |
-| [`bool`](class_bool.md)       | [`is_equal_approx`](#class_plane_method_is_equal_approx) ( to_plane: [`Plane`](class_plane.md) ) const[^const]                                          |
-| [`bool`](class_bool.md)       | [`is_finite`](#class_plane_method_is_finite) ( ) const[^const]                                                                                          |
-| [`bool`](class_bool.md)       | [`is_point_over`](#class_plane_method_is_point_over) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                             |
-| [`Plane`](class_plane.md)     | [`normalized`](#class_plane_method_normalized) ( ) const[^const]                                                                                        |
-| [`Vector3`](class_vector3.md) | [`project`](#class_plane_method_project) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                         |
+| [`float`](class_float.md)     | [`distance_to`](class_plane.md#class_plane_method_distance_to) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                 |
+| [`Vector3`](class_vector3.md) | [`get_center`](class_plane.md#class_plane_method_get_center) ( ) const[^const]                                                                                        |
+| [`bool`](class_bool.md)       | [`has_point`](class_plane.md#class_plane_method_has_point) ( point: [`Vector3`](class_vector3.md), tolerance: [`float`](class_float.md) = 1e-05 ) const[^const]       |
+| [`Variant`](class_variant.md) | [`intersect_3`](class_plane.md#class_plane_method_intersect_3) ( b: [`Plane`](class_plane.md), c: [`Plane`](class_plane.md) ) const[^const]                           |
+| [`Variant`](class_variant.md) | [`intersects_ray`](class_plane.md#class_plane_method_intersects_ray) ( from: [`Vector3`](class_vector3.md), dir: [`Vector3`](class_vector3.md) ) const[^const]        |
+| [`Variant`](class_variant.md) | [`intersects_segment`](class_plane.md#class_plane_method_intersects_segment) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md) ) const[^const] |
+| [`bool`](class_bool.md)       | [`is_equal_approx`](class_plane.md#class_plane_method_is_equal_approx) ( to_plane: [`Plane`](class_plane.md) ) const[^const]                                          |
+| [`bool`](class_bool.md)       | [`is_finite`](class_plane.md#class_plane_method_is_finite) ( ) const[^const]                                                                                          |
+| [`bool`](class_bool.md)       | [`is_point_over`](class_plane.md#class_plane_method_is_point_over) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                             |
+| [`Plane`](class_plane.md)     | [`normalized`](class_plane.md#class_plane_method_normalized) ( ) const[^const]                                                                                        |
+| [`Vector3`](class_vector3.md) | [`project`](class_plane.md#class_plane_method_project) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                         |
 
 ## 运算符
 
@@ -95,9 +95,9 @@ A plane that extends in the X and Y axes (normal vector points +Z).
 
 [`float`](class_float.md) **d** = ``0.0`` <div id="class_plane_property_d"></div>
 
-The distance from the origin to the plane, expressed in terms of [`normal`](#class_plane_property_normal) (according to its direction and magnitude). Actual absolute distance from the origin to the plane can be calculated as `abs(d) / normal.length()` (if [`normal`](#class_plane_property_normal) has zero length then this **Plane** does not represent a valid plane).
+The distance from the origin to the plane, expressed in terms of [`normal`](class_plane.md#class_plane_property_normal) (according to its direction and magnitude). Actual absolute distance from the origin to the plane can be calculated as `abs(d) / normal.length()` (if [`normal`](class_plane.md#class_plane_property_normal) has zero length then this **Plane** does not represent a valid plane).
 
-In the scalar equation of the plane `ax + by + cz = d`, this is `d`, while the `(a, b, c)` coordinates are represented by the [`normal`](#class_plane_property_normal) property.
+In the scalar equation of the plane `ax + by + cz = d`, this is `d`, while the `(a, b, c)` coordinates are represented by the [`normal`](class_plane.md#class_plane_property_normal) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -107,9 +107,9 @@ In the scalar equation of the plane `ax + by + cz = d`, this is `d`, while the `
 
 [`Vector3`](class_vector3.md) **normal** = ``Vector3(0, 0, 0)`` <div id="class_plane_property_normal"></div>
 
-The normal of the plane, typically a unit vector. Shouldn't be a zero vector as **Plane** with such [`normal`](#class_plane_property_normal) does not represent a valid plane.
+The normal of the plane, typically a unit vector. Shouldn't be a zero vector as **Plane** with such [`normal`](class_plane.md#class_plane_property_normal) does not represent a valid plane.
 
-In the scalar equation of the plane `ax + by + cz = d`, this is the vector `(a, b, c)`, where `d` is the [`d`](#class_plane_property_d) property.
+In the scalar equation of the plane `ax + by + cz = d`, this is the vector `(a, b, c)`, where `d` is the [`d`](class_plane.md#class_plane_property_d) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -119,7 +119,7 @@ In the scalar equation of the plane `ax + by + cz = d`, this is the vector `(a, 
 
 [`float`](class_float.md) **x** = ``0.0`` <div id="class_plane_property_x"></div>
 
-The X component of the plane's [`normal`](#class_plane_property_normal) vector.
+The X component of the plane's [`normal`](class_plane.md#class_plane_property_normal) vector.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -129,7 +129,7 @@ The X component of the plane's [`normal`](#class_plane_property_normal) vector.
 
 [`float`](class_float.md) **y** = ``0.0`` <div id="class_plane_property_y"></div>
 
-The Y component of the plane's [`normal`](#class_plane_property_normal) vector.
+The Y component of the plane's [`normal`](class_plane.md#class_plane_property_normal) vector.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -139,7 +139,7 @@ The Y component of the plane's [`normal`](#class_plane_property_normal) vector.
 
 [`float`](class_float.md) **z** = ``0.0`` <div id="class_plane_property_z"></div>
 
-The Z component of the plane's [`normal`](#class_plane_property_normal) vector.
+The Z component of the plane's [`normal`](class_plane.md#class_plane_property_normal) vector.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -167,7 +167,7 @@ Constructs a **Plane** as a copy of the given **Plane**.
 
 [`Plane`](class_plane.md) **Plane** ( a: [`float`](class_float.md), b: [`float`](class_float.md), c: [`float`](class_float.md), d: [`float`](class_float.md) )
 
-Creates a plane from the four parameters. The three components of the resulting plane's [`normal`](#class_plane_property_normal) are `a`, `b` and `c`, and the plane has a distance of `d` from the origin.
+Creates a plane from the four parameters. The three components of the resulting plane's [`normal`](class_plane.md#class_plane_property_normal) are `a`, `b` and `c`, and the plane has a distance of `d` from the origin.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -277,7 +277,7 @@ Returns the intersection point of a segment from position `from` to position `to
 
 [`bool`](class_bool.md) **is_equal_approx** ( to_plane: [`Plane`](class_plane.md) ) const[^const]<div id="class_plane_method_is_equal_approx"></div>
 
-Returns `true` if this plane and `to_plane` are approximately equal, by running [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) on each component.
+Returns `true` if this plane and `to_plane` are approximately equal, by running [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -287,7 +287,7 @@ Returns `true` if this plane and `to_plane` are approximately equal, by running 
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_plane_method_is_finite"></div>
 
-Returns `true` if this plane is finite, by calling [`@GlobalScope.is_finite`](#class_@globalscope_method_is_finite) on each component.
+Returns `true` if this plane is finite, by calling [`@GlobalScope.is_finite`](class_@globalscope.md#class_@globalscope_method_is_finite) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -307,7 +307,7 @@ Returns `true` if `point` is located above the plane.
 
 [`Plane`](class_plane.md) **normalized** ( ) const[^const]<div id="class_plane_method_normalized"></div>
 
-Returns a copy of the plane, with normalized [`normal`](#class_plane_property_normal) (so it's a unit vector). Returns `Plane(0, 0, 0, 0)` if [`normal`](#class_plane_property_normal) can't be normalized (it has zero length).
+Returns a copy of the plane, with normalized [`normal`](class_plane.md#class_plane_property_normal) (so it's a unit vector). Returns `Plane(0, 0, 0, 0)` if [`normal`](class_plane.md#class_plane_property_normal) can't be normalized (it has zero length).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -331,7 +331,7 @@ Returns the orthogonal projection of `point` into a point in the plane.
 
 Returns `true` if the planes are not equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_plane_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_plane.md#class_plane_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -343,7 +343,7 @@ Returns `true` if the planes are not equal.
 
 Inversely transforms (multiplies) the **Plane** by the given [`Transform3D`](class_transform3d.md) transformation matrix.
 
- `plane * transform` is equivalent to `transform.affine_inverse() * plane`. See [`Transform3D.affine_inverse`](#class_transform3d_method_affine_inverse).
+ `plane * transform` is equivalent to `transform.affine_inverse() * plane`. See [`Transform3D.affine_inverse`](class_transform3d.md#class_transform3d_method_affine_inverse).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -355,7 +355,7 @@ Inversely transforms (multiplies) the **Plane** by the given [`Transform3D`](cla
 
 Returns `true` if the planes are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_plane_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_plane.md#class_plane_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -19,50 +19,50 @@ Adds a chorus audio effect. The effect applies a filter with voices to duplicate
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`dry`](#class_audioeffectchorus_property_dry)                             | ``1.0``    |
-| [`float`](class_float.md) | [`voice/1/cutoff_hz`](#class_audioeffectchorus_property_voice/1/cutoff_hz) | ``8000.0`` |
-| [`float`](class_float.md) | [`voice/1/delay_ms`](#class_audioeffectchorus_property_voice/1/delay_ms)   | ``15.0``   |
-| [`float`](class_float.md) | [`voice/1/depth_ms`](#class_audioeffectchorus_property_voice/1/depth_ms)   | ``2.0``    |
-| [`float`](class_float.md) | [`voice/1/level_db`](#class_audioeffectchorus_property_voice/1/level_db)   | ``0.0``    |
-| [`float`](class_float.md) | [`voice/1/pan`](#class_audioeffectchorus_property_voice/1/pan)             | ``-0.5``   |
-| [`float`](class_float.md) | [`voice/1/rate_hz`](#class_audioeffectchorus_property_voice/1/rate_hz)     | ``0.8``    |
-| [`float`](class_float.md) | [`voice/2/cutoff_hz`](#class_audioeffectchorus_property_voice/2/cutoff_hz) | ``8000.0`` |
-| [`float`](class_float.md) | [`voice/2/delay_ms`](#class_audioeffectchorus_property_voice/2/delay_ms)   | ``20.0``   |
-| [`float`](class_float.md) | [`voice/2/depth_ms`](#class_audioeffectchorus_property_voice/2/depth_ms)   | ``3.0``    |
-| [`float`](class_float.md) | [`voice/2/level_db`](#class_audioeffectchorus_property_voice/2/level_db)   | ``0.0``    |
-| [`float`](class_float.md) | [`voice/2/pan`](#class_audioeffectchorus_property_voice/2/pan)             | ``0.5``    |
-| [`float`](class_float.md) | [`voice/2/rate_hz`](#class_audioeffectchorus_property_voice/2/rate_hz)     | ``1.2``    |
-| [`float`](class_float.md) | [`voice/3/cutoff_hz`](#class_audioeffectchorus_property_voice/3/cutoff_hz) |            |
-| [`float`](class_float.md) | [`voice/3/delay_ms`](#class_audioeffectchorus_property_voice/3/delay_ms)   |            |
-| [`float`](class_float.md) | [`voice/3/depth_ms`](#class_audioeffectchorus_property_voice/3/depth_ms)   |            |
-| [`float`](class_float.md) | [`voice/3/level_db`](#class_audioeffectchorus_property_voice/3/level_db)   |            |
-| [`float`](class_float.md) | [`voice/3/pan`](#class_audioeffectchorus_property_voice/3/pan)             |            |
-| [`float`](class_float.md) | [`voice/3/rate_hz`](#class_audioeffectchorus_property_voice/3/rate_hz)     |            |
-| [`float`](class_float.md) | [`voice/4/cutoff_hz`](#class_audioeffectchorus_property_voice/4/cutoff_hz) |            |
-| [`float`](class_float.md) | [`voice/4/delay_ms`](#class_audioeffectchorus_property_voice/4/delay_ms)   |            |
-| [`float`](class_float.md) | [`voice/4/depth_ms`](#class_audioeffectchorus_property_voice/4/depth_ms)   |            |
-| [`float`](class_float.md) | [`voice/4/level_db`](#class_audioeffectchorus_property_voice/4/level_db)   |            |
-| [`float`](class_float.md) | [`voice/4/pan`](#class_audioeffectchorus_property_voice/4/pan)             |            |
-| [`float`](class_float.md) | [`voice/4/rate_hz`](#class_audioeffectchorus_property_voice/4/rate_hz)     |            |
-| [`int`](class_int.md)     | [`voice_count`](#class_audioeffectchorus_property_voice_count)             | ``2``      |
-| [`float`](class_float.md) | [`wet`](#class_audioeffectchorus_property_wet)                             | ``0.5``    |
+| [`float`](class_float.md) | [`dry`](class_audioeffectchorus.md#class_audioeffectchorus_property_dry)                             | ``1.0``    |
+| [`float`](class_float.md) | [`voice/1/cutoff_hz`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/1/cutoff_hz) | ``8000.0`` |
+| [`float`](class_float.md) | [`voice/1/delay_ms`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/1/delay_ms)   | ``15.0``   |
+| [`float`](class_float.md) | [`voice/1/depth_ms`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/1/depth_ms)   | ``2.0``    |
+| [`float`](class_float.md) | [`voice/1/level_db`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/1/level_db)   | ``0.0``    |
+| [`float`](class_float.md) | [`voice/1/pan`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/1/pan)             | ``-0.5``   |
+| [`float`](class_float.md) | [`voice/1/rate_hz`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/1/rate_hz)     | ``0.8``    |
+| [`float`](class_float.md) | [`voice/2/cutoff_hz`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/2/cutoff_hz) | ``8000.0`` |
+| [`float`](class_float.md) | [`voice/2/delay_ms`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/2/delay_ms)   | ``20.0``   |
+| [`float`](class_float.md) | [`voice/2/depth_ms`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/2/depth_ms)   | ``3.0``    |
+| [`float`](class_float.md) | [`voice/2/level_db`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/2/level_db)   | ``0.0``    |
+| [`float`](class_float.md) | [`voice/2/pan`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/2/pan)             | ``0.5``    |
+| [`float`](class_float.md) | [`voice/2/rate_hz`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/2/rate_hz)     | ``1.2``    |
+| [`float`](class_float.md) | [`voice/3/cutoff_hz`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/3/cutoff_hz) |            |
+| [`float`](class_float.md) | [`voice/3/delay_ms`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/3/delay_ms)   |            |
+| [`float`](class_float.md) | [`voice/3/depth_ms`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/3/depth_ms)   |            |
+| [`float`](class_float.md) | [`voice/3/level_db`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/3/level_db)   |            |
+| [`float`](class_float.md) | [`voice/3/pan`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/3/pan)             |            |
+| [`float`](class_float.md) | [`voice/3/rate_hz`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/3/rate_hz)     |            |
+| [`float`](class_float.md) | [`voice/4/cutoff_hz`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/4/cutoff_hz) |            |
+| [`float`](class_float.md) | [`voice/4/delay_ms`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/4/delay_ms)   |            |
+| [`float`](class_float.md) | [`voice/4/depth_ms`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/4/depth_ms)   |            |
+| [`float`](class_float.md) | [`voice/4/level_db`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/4/level_db)   |            |
+| [`float`](class_float.md) | [`voice/4/pan`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/4/pan)             |            |
+| [`float`](class_float.md) | [`voice/4/rate_hz`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice/4/rate_hz)     |            |
+| [`int`](class_int.md)     | [`voice_count`](class_audioeffectchorus.md#class_audioeffectchorus_property_voice_count)             | ``2``      |
+| [`float`](class_float.md) | [`wet`](class_audioeffectchorus.md#class_audioeffectchorus_property_wet)                             | ``0.5``    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_voice_cutoff_hz`](#class_audioeffectchorus_method_get_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                         |
-| [`float`](class_float.md) | [`get_voice_delay_ms`](#class_audioeffectchorus_method_get_voice_delay_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
-| [`float`](class_float.md) | [`get_voice_depth_ms`](#class_audioeffectchorus_method_get_voice_depth_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
-| [`float`](class_float.md) | [`get_voice_level_db`](#class_audioeffectchorus_method_get_voice_level_db) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
-| [`float`](class_float.md) | [`get_voice_pan`](#class_audioeffectchorus_method_get_voice_pan) ( voice_idx: [`int`](class_int.md) ) const[^const]                                     |
-| [`float`](class_float.md) | [`get_voice_rate_hz`](#class_audioeffectchorus_method_get_voice_rate_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                             |
-| `void`                    | [`set_voice_cutoff_hz`](#class_audioeffectchorus_method_set_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md), cutoff_hz: [`float`](class_float.md) ) |
-| `void`                    | [`set_voice_delay_ms`](#class_audioeffectchorus_method_set_voice_delay_ms) ( voice_idx: [`int`](class_int.md), delay_ms: [`float`](class_float.md) )    |
-| `void`                    | [`set_voice_depth_ms`](#class_audioeffectchorus_method_set_voice_depth_ms) ( voice_idx: [`int`](class_int.md), depth_ms: [`float`](class_float.md) )    |
-| `void`                    | [`set_voice_level_db`](#class_audioeffectchorus_method_set_voice_level_db) ( voice_idx: [`int`](class_int.md), level_db: [`float`](class_float.md) )    |
-| `void`                    | [`set_voice_pan`](#class_audioeffectchorus_method_set_voice_pan) ( voice_idx: [`int`](class_int.md), pan: [`float`](class_float.md) )                   |
-| `void`                    | [`set_voice_rate_hz`](#class_audioeffectchorus_method_set_voice_rate_hz) ( voice_idx: [`int`](class_int.md), rate_hz: [`float`](class_float.md) )       |
+| [`float`](class_float.md) | [`get_voice_cutoff_hz`](class_audioeffectchorus.md#class_audioeffectchorus_method_get_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                         |
+| [`float`](class_float.md) | [`get_voice_delay_ms`](class_audioeffectchorus.md#class_audioeffectchorus_method_get_voice_delay_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
+| [`float`](class_float.md) | [`get_voice_depth_ms`](class_audioeffectchorus.md#class_audioeffectchorus_method_get_voice_depth_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
+| [`float`](class_float.md) | [`get_voice_level_db`](class_audioeffectchorus.md#class_audioeffectchorus_method_get_voice_level_db) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
+| [`float`](class_float.md) | [`get_voice_pan`](class_audioeffectchorus.md#class_audioeffectchorus_method_get_voice_pan) ( voice_idx: [`int`](class_int.md) ) const[^const]                                     |
+| [`float`](class_float.md) | [`get_voice_rate_hz`](class_audioeffectchorus.md#class_audioeffectchorus_method_get_voice_rate_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                             |
+| `void`                    | [`set_voice_cutoff_hz`](class_audioeffectchorus.md#class_audioeffectchorus_method_set_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md), cutoff_hz: [`float`](class_float.md) ) |
+| `void`                    | [`set_voice_delay_ms`](class_audioeffectchorus.md#class_audioeffectchorus_method_set_voice_delay_ms) ( voice_idx: [`int`](class_int.md), delay_ms: [`float`](class_float.md) )    |
+| `void`                    | [`set_voice_depth_ms`](class_audioeffectchorus.md#class_audioeffectchorus_method_set_voice_depth_ms) ( voice_idx: [`int`](class_int.md), depth_ms: [`float`](class_float.md) )    |
+| `void`                    | [`set_voice_level_db`](class_audioeffectchorus.md#class_audioeffectchorus_method_set_voice_level_db) ( voice_idx: [`int`](class_int.md), level_db: [`float`](class_float.md) )    |
+| `void`                    | [`set_voice_pan`](class_audioeffectchorus.md#class_audioeffectchorus_method_set_voice_pan) ( voice_idx: [`int`](class_int.md), pan: [`float`](class_float.md) )                   |
+| `void`                    | [`set_voice_rate_hz`](class_audioeffectchorus.md#class_audioeffectchorus_method_set_voice_rate_hz) ( voice_idx: [`int`](class_int.md), rate_hz: [`float`](class_float.md) )       |
 
 <!-- rst-class:: classref-section-separator -->
 

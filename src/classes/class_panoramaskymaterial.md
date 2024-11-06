@@ -23,9 +23,9 @@ You can use [*this tool*](https://danilw.github.io/GLSL-howto/cubemap_to_panoram
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)         | [`energy_multiplier`](#class_panoramaskymaterial_property_energy_multiplier) | ``1.0``  |
-| [`bool`](class_bool.md)           | [`filter`](#class_panoramaskymaterial_property_filter)                       | ``true`` |
-| [`Texture2D`](class_texture2d.md) | [`panorama`](#class_panoramaskymaterial_property_panorama)                   |          |
+| [`float`](class_float.md)         | [`energy_multiplier`](class_panoramaskymaterial.md#class_panoramaskymaterial_property_energy_multiplier) | ``1.0``  |
+| [`bool`](class_bool.md)           | [`filter`](class_panoramaskymaterial.md#class_panoramaskymaterial_property_filter)                       | ``true`` |
+| [`Texture2D`](class_texture2d.md) | [`panorama`](class_panoramaskymaterial.md#class_panoramaskymaterial_property_panorama)                   |          |
 
 <!-- rst-class:: classref-section-separator -->
 

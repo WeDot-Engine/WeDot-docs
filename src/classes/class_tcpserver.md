@@ -21,12 +21,12 @@ A TCP server. Listens to connections on a port and returns a [`StreamPeerTCP`](c
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                     | [`get_local_port`](#class_tcpserver_method_get_local_port) ( ) const[^const]                                                |
-| [`bool`](class_bool.md)                   | [`is_connection_available`](#class_tcpserver_method_is_connection_available) ( ) const[^const]                              |
-| [`bool`](class_bool.md)                   | [`is_listening`](#class_tcpserver_method_is_listening) ( ) const[^const]                                                    |
-| [Error](#enum_@globalscope_error)         | [`listen`](#class_tcpserver_method_listen) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" ) |
-| `void`                                    | [`stop`](#class_tcpserver_method_stop) ( )                                                                                  |
-| [`StreamPeerTCP`](class_streampeertcp.md) | [`take_connection`](#class_tcpserver_method_take_connection) ( )                                                            |
+| [`int`](class_int.md)                     | [`get_local_port`](class_tcpserver.md#class_tcpserver_method_get_local_port) ( ) const[^const]                                                |
+| [`bool`](class_bool.md)                   | [`is_connection_available`](class_tcpserver.md#class_tcpserver_method_is_connection_available) ( ) const[^const]                              |
+| [`bool`](class_bool.md)                   | [`is_listening`](class_tcpserver.md#class_tcpserver_method_is_listening) ( ) const[^const]                                                    |
+| [Error](#enum_@globalscope_error)         | [`listen`](class_tcpserver.md#class_tcpserver_method_listen) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" ) |
+| `void`                                    | [`stop`](class_tcpserver.md#class_tcpserver_method_stop) ( )                                                                                  |
+| [`StreamPeerTCP`](class_streampeertcp.md) | [`take_connection`](class_tcpserver.md#class_tcpserver_method_take_connection) ( )                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 

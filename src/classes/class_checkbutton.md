@@ -21,22 +21,22 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 |||
 |:-:|:--|
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | alignment   | ``0`` (overrides [`Button`](#class_button_property_alignment))              |
-| [`bool`](class_bool.md)                                       | toggle_mode | ``true`` (overrides [`BaseButton`](#class_basebutton_property_toggle_mode)) |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | alignment   | ``0`` (overrides [`Button`](class_button.md#class_button_property_alignment))                  |
+| [`bool`](class_bool.md)                                       | toggle_mode | ``true`` (overrides [`BaseButton`](class_basebutton.md#class_basebutton_property_toggle_mode)) |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`check_v_offset`](#class_checkbutton_theme_constant_check_v_offset)                       | ``0`` |
-| [`Texture2D`](class_texture2d.md) | [`checked`](#class_checkbutton_theme_icon_checked)                                         |       |
-| [`Texture2D`](class_texture2d.md) | [`checked_disabled`](#class_checkbutton_theme_icon_checked_disabled)                       |       |
-| [`Texture2D`](class_texture2d.md) | [`checked_disabled_mirrored`](#class_checkbutton_theme_icon_checked_disabled_mirrored)     |       |
-| [`Texture2D`](class_texture2d.md) | [`checked_mirrored`](#class_checkbutton_theme_icon_checked_mirrored)                       |       |
-| [`Texture2D`](class_texture2d.md) | [`unchecked`](#class_checkbutton_theme_icon_unchecked)                                     |       |
-| [`Texture2D`](class_texture2d.md) | [`unchecked_disabled`](#class_checkbutton_theme_icon_unchecked_disabled)                   |       |
-| [`Texture2D`](class_texture2d.md) | [`unchecked_disabled_mirrored`](#class_checkbutton_theme_icon_unchecked_disabled_mirrored) |       |
-| [`Texture2D`](class_texture2d.md) | [`unchecked_mirrored`](#class_checkbutton_theme_icon_unchecked_mirrored)                   |       |
+| [`int`](class_int.md)             | [`check_v_offset`](class_checkbutton.md#class_checkbutton_theme_constant_check_v_offset)                       | ``0`` |
+| [`Texture2D`](class_texture2d.md) | [`checked`](class_checkbutton.md#class_checkbutton_theme_icon_checked)                                         |       |
+| [`Texture2D`](class_texture2d.md) | [`checked_disabled`](class_checkbutton.md#class_checkbutton_theme_icon_checked_disabled)                       |       |
+| [`Texture2D`](class_texture2d.md) | [`checked_disabled_mirrored`](class_checkbutton.md#class_checkbutton_theme_icon_checked_disabled_mirrored)     |       |
+| [`Texture2D`](class_texture2d.md) | [`checked_mirrored`](class_checkbutton.md#class_checkbutton_theme_icon_checked_mirrored)                       |       |
+| [`Texture2D`](class_texture2d.md) | [`unchecked`](class_checkbutton.md#class_checkbutton_theme_icon_unchecked)                                     |       |
+| [`Texture2D`](class_texture2d.md) | [`unchecked_disabled`](class_checkbutton.md#class_checkbutton_theme_icon_unchecked_disabled)                   |       |
+| [`Texture2D`](class_texture2d.md) | [`unchecked_disabled_mirrored`](class_checkbutton.md#class_checkbutton_theme_icon_unchecked_disabled_mirrored) |       |
+| [`Texture2D`](class_texture2d.md) | [`unchecked_mirrored`](class_checkbutton.md#class_checkbutton_theme_icon_unchecked_mirrored)                   |       |
 
 <!-- rst-class:: classref-section-separator -->
 

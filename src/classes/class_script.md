@@ -19,33 +19,33 @@ A class stored as a resource. A script extends the functionality of all objects 
 
 This is the base class for all scripts and should not be used directly. Trying to create a new script with this class will result in an error.
 
-The `new` method of a script subclass creates a new instance. [`Object.set_script`](#class_object_method_set_script) extends an existing object, if that object's class matches one of the script's base classes.
+The `new` method of a script subclass creates a new instance. [`Object.set_script`](class_object.md#class_object_method_set_script) extends an existing object, if that object's class matches one of the script's base classes.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`source_code`](#class_script_property_source_code) |
+| [`String`](class_string.md) | [`source_code`](class_script.md#class_script_property_source_code) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                     | [`can_instantiate`](#class_script_method_can_instantiate) ( ) const[^const]                                                       |
-| [`Script`](class_script.md)                                 | [`get_base_script`](#class_script_method_get_base_script) ( ) const[^const]                                                       |
-| [`StringName`](class_stringname.md)                         | [`get_global_name`](#class_script_method_get_global_name) ( ) const[^const]                                                       |
-| [`StringName`](class_stringname.md)                         | [`get_instance_base_type`](#class_script_method_get_instance_base_type) ( ) const[^const]                                         |
-| [`Variant`](class_variant.md)                               | [`get_property_default_value`](#class_script_method_get_property_default_value) ( property: [`StringName`](class_stringname.md) ) |
-| [`Dictionary`](class_dictionary.md)                         | [`get_script_constant_map`](#class_script_method_get_script_constant_map) ( )                                                     |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_method_list`](#class_script_method_get_script_method_list) ( )                                                       |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_property_list`](#class_script_method_get_script_property_list) ( )                                                   |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_signal_list`](#class_script_method_get_script_signal_list) ( )                                                       |
-| [`bool`](class_bool.md)                                     | [`has_script_signal`](#class_script_method_has_script_signal) ( signal_name: [`StringName`](class_stringname.md) ) const[^const]  |
-| [`bool`](class_bool.md)                                     | [`has_source_code`](#class_script_method_has_source_code) ( ) const[^const]                                                       |
-| [`bool`](class_bool.md)                                     | [`instance_has`](#class_script_method_instance_has) ( base_object: [`Object`](class_object.md) ) const[^const]                    |
-| [`bool`](class_bool.md)                                     | [`is_abstract`](#class_script_method_is_abstract) ( ) const[^const]                                                               |
-| [`bool`](class_bool.md)                                     | [`is_tool`](#class_script_method_is_tool) ( ) const[^const]                                                                       |
-| [Error](#enum_@globalscope_error)                           | [`reload`](#class_script_method_reload) ( keep_state: [`bool`](class_bool.md) = false )                                           |
+| [`bool`](class_bool.md)                                     | [`can_instantiate`](class_script.md#class_script_method_can_instantiate) ( ) const[^const]                                                       |
+| [`Script`](class_script.md)                                 | [`get_base_script`](class_script.md#class_script_method_get_base_script) ( ) const[^const]                                                       |
+| [`StringName`](class_stringname.md)                         | [`get_global_name`](class_script.md#class_script_method_get_global_name) ( ) const[^const]                                                       |
+| [`StringName`](class_stringname.md)                         | [`get_instance_base_type`](class_script.md#class_script_method_get_instance_base_type) ( ) const[^const]                                         |
+| [`Variant`](class_variant.md)                               | [`get_property_default_value`](class_script.md#class_script_method_get_property_default_value) ( property: [`StringName`](class_stringname.md) ) |
+| [`Dictionary`](class_dictionary.md)                         | [`get_script_constant_map`](class_script.md#class_script_method_get_script_constant_map) ( )                                                     |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_method_list`](class_script.md#class_script_method_get_script_method_list) ( )                                                       |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_property_list`](class_script.md#class_script_method_get_script_property_list) ( )                                                   |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_signal_list`](class_script.md#class_script_method_get_script_signal_list) ( )                                                       |
+| [`bool`](class_bool.md)                                     | [`has_script_signal`](class_script.md#class_script_method_has_script_signal) ( signal_name: [`StringName`](class_stringname.md) ) const[^const]  |
+| [`bool`](class_bool.md)                                     | [`has_source_code`](class_script.md#class_script_method_has_source_code) ( ) const[^const]                                                       |
+| [`bool`](class_bool.md)                                     | [`instance_has`](class_script.md#class_script_method_instance_has) ( base_object: [`Object`](class_object.md) ) const[^const]                    |
+| [`bool`](class_bool.md)                                     | [`is_abstract`](class_script.md#class_script_method_is_abstract) ( ) const[^const]                                                               |
+| [`bool`](class_bool.md)                                     | [`is_tool`](class_script.md#class_script_method_is_tool) ( ) const[^const]                                                                       |
+| [Error](#enum_@globalscope_error)                           | [`reload`](class_script.md#class_script_method_reload) ( keep_state: [`bool`](class_bool.md) = false )                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -200,7 +200,7 @@ Returns `true` if the script, or a base class, defines a signal with the given n
 
 Returns `true` if the script contains non-empty source code.
 
- **Note:** If a script does not have source code, this does not mean that it is invalid or unusable. For example, a [`GDScript`](class_gdscript.md) that was exported with binary tokenization has no source code, but still behaves as expected and could be instantiated. This can be checked with [`can_instantiate`](#class_script_method_can_instantiate).
+ **Note:** If a script does not have source code, this does not mean that it is invalid or unusable. For example, a [`GDScript`](class_gdscript.md) that was exported with binary tokenization has no source code, but still behaves as expected and could be instantiated. This can be checked with [`can_instantiate`](class_script.md#class_script_method_can_instantiate).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -11,13 +11,13 @@ A 3D axis-aligned bounding box.
 
 ## 描述
 
-The **AABB** built-in [`Variant`](class_variant.md) type represents an axis-aligned bounding box in a 3D space. It is defined by its [`position`](#class_aabb_property_position) and [`size`](#class_aabb_property_size), which are [`Vector3`](class_vector3.md). It is frequently used for fast overlap tests (see [`intersects`](#class_aabb_method_intersects)). Although **AABB** itself is axis-aligned, it can be combined with [`Transform3D`](class_transform3d.md) to represent a rotated or skewed bounding box.
+The **AABB** built-in [`Variant`](class_variant.md) type represents an axis-aligned bounding box in a 3D space. It is defined by its [`position`](class_aabb.md#class_aabb_property_position) and [`size`](class_aabb.md#class_aabb_property_size), which are [`Vector3`](class_vector3.md). It is frequently used for fast overlap tests (see [`intersects`](class_aabb.md#class_aabb_method_intersects)). Although **AABB** itself is axis-aligned, it can be combined with [`Transform3D`](class_transform3d.md) to represent a rotated or skewed bounding box.
 
 It uses floating-point coordinates. The 2D counterpart to **AABB** is [`Rect2`](class_rect2.md). There is no version of **AABB** that uses integer coordinates.
 
- **Note:** Negative values for [`size`](#class_aabb_property_size) are not supported. With negative size, most **AABB** methods do not work correctly. Use [`abs`](#class_aabb_method_abs) to get an equivalent **AABB** with a non-negative size.
+ **Note:** Negative values for [`size`](class_aabb.md#class_aabb_property_size) are not supported. With negative size, most **AABB** methods do not work correctly. Use [`abs`](class_aabb.md#class_aabb_method_abs) to get an equivalent **AABB** with a non-negative size.
 
- **Note:** In a boolean context, a **AABB** evaluates to `false` if both [`position`](#class_aabb_property_position) and [`size`](#class_aabb_property_size) are zero (equal to [`Vector3.ZERO`](#class_vector3_constant_zero)). Otherwise, it always evaluates to `true`.
+ **Note:** In a boolean context, a **AABB** evaluates to `false` if both [`position`](class_aabb.md#class_aabb_property_position) and [`size`](class_aabb.md#class_aabb_property_size) are zero (equal to [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero)). Otherwise, it always evaluates to `true`.
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
@@ -25,47 +25,47 @@ It uses floating-point coordinates. The 2D counterpart to **AABB** is [`Rect2`](
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md) | [`end`](#class_aabb_property_end)           | ``Vector3(0, 0, 0)`` |
-| [`Vector3`](class_vector3.md) | [`position`](#class_aabb_property_position) | ``Vector3(0, 0, 0)`` |
-| [`Vector3`](class_vector3.md) | [`size`](#class_aabb_property_size)         | ``Vector3(0, 0, 0)`` |
+| [`Vector3`](class_vector3.md) | [`end`](class_aabb.md#class_aabb_property_end)           | ``Vector3(0, 0, 0)`` |
+| [`Vector3`](class_vector3.md) | [`position`](class_aabb.md#class_aabb_property_position) | ``Vector3(0, 0, 0)`` |
+| [`Vector3`](class_vector3.md) | [`size`](class_aabb.md#class_aabb_property_size)         | ``Vector3(0, 0, 0)`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( )                                                                              |
-| [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( from: [`AABB`](class_aabb.md) )                                                |
-| [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( position: [`Vector3`](class_vector3.md), size: [`Vector3`](class_vector3.md) ) |
+| [`AABB`](class_aabb.md) | [`AABB`](class_aabb.md#class_aabb_constructor_aabb) ( )                                                                              |
+| [`AABB`](class_aabb.md) | [`AABB`](class_aabb.md#class_aabb_constructor_aabb) ( from: [`AABB`](class_aabb.md) )                                                |
+| [`AABB`](class_aabb.md) | [`AABB`](class_aabb.md#class_aabb_constructor_aabb) ( position: [`Vector3`](class_vector3.md), size: [`Vector3`](class_vector3.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md)       | [`abs`](#class_aabb_method_abs) ( ) const[^const]                                                                                                      |
-| [`bool`](class_bool.md)       | [`encloses`](#class_aabb_method_encloses) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                              |
-| [`AABB`](class_aabb.md)       | [`expand`](#class_aabb_method_expand) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                        |
-| [`Vector3`](class_vector3.md) | [`get_center`](#class_aabb_method_get_center) ( ) const[^const]                                                                                        |
-| [`Vector3`](class_vector3.md) | [`get_endpoint`](#class_aabb_method_get_endpoint) ( idx: [`int`](class_int.md) ) const[^const]                                                         |
-| [`Vector3`](class_vector3.md) | [`get_longest_axis`](#class_aabb_method_get_longest_axis) ( ) const[^const]                                                                            |
-| [`int`](class_int.md)         | [`get_longest_axis_index`](#class_aabb_method_get_longest_axis_index) ( ) const[^const]                                                                |
-| [`float`](class_float.md)     | [`get_longest_axis_size`](#class_aabb_method_get_longest_axis_size) ( ) const[^const]                                                                  |
-| [`Vector3`](class_vector3.md) | [`get_shortest_axis`](#class_aabb_method_get_shortest_axis) ( ) const[^const]                                                                          |
-| [`int`](class_int.md)         | [`get_shortest_axis_index`](#class_aabb_method_get_shortest_axis_index) ( ) const[^const]                                                              |
-| [`float`](class_float.md)     | [`get_shortest_axis_size`](#class_aabb_method_get_shortest_axis_size) ( ) const[^const]                                                                |
-| [`Vector3`](class_vector3.md) | [`get_support`](#class_aabb_method_get_support) ( dir: [`Vector3`](class_vector3.md) ) const[^const]                                                   |
-| [`float`](class_float.md)     | [`get_volume`](#class_aabb_method_get_volume) ( ) const[^const]                                                                                        |
-| [`AABB`](class_aabb.md)       | [`grow`](#class_aabb_method_grow) ( by: [`float`](class_float.md) ) const[^const]                                                                      |
-| [`bool`](class_bool.md)       | [`has_point`](#class_aabb_method_has_point) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                     |
-| [`bool`](class_bool.md)       | [`has_surface`](#class_aabb_method_has_surface) ( ) const[^const]                                                                                      |
-| [`bool`](class_bool.md)       | [`has_volume`](#class_aabb_method_has_volume) ( ) const[^const]                                                                                        |
-| [`AABB`](class_aabb.md)       | [`intersection`](#class_aabb_method_intersection) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                      |
-| [`bool`](class_bool.md)       | [`intersects`](#class_aabb_method_intersects) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                          |
-| [`bool`](class_bool.md)       | [`intersects_plane`](#class_aabb_method_intersects_plane) ( plane: [`Plane`](class_plane.md) ) const[^const]                                           |
-| [`Variant`](class_variant.md) | [`intersects_ray`](#class_aabb_method_intersects_ray) ( from: [`Vector3`](class_vector3.md), dir: [`Vector3`](class_vector3.md) ) const[^const]        |
-| [`Variant`](class_variant.md) | [`intersects_segment`](#class_aabb_method_intersects_segment) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md) ) const[^const] |
-| [`bool`](class_bool.md)       | [`is_equal_approx`](#class_aabb_method_is_equal_approx) ( aabb: [`AABB`](class_aabb.md) ) const[^const]                                                |
-| [`bool`](class_bool.md)       | [`is_finite`](#class_aabb_method_is_finite) ( ) const[^const]                                                                                          |
-| [`AABB`](class_aabb.md)       | [`merge`](#class_aabb_method_merge) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                                    |
+| [`AABB`](class_aabb.md)       | [`abs`](class_aabb.md#class_aabb_method_abs) ( ) const[^const]                                                                                                      |
+| [`bool`](class_bool.md)       | [`encloses`](class_aabb.md#class_aabb_method_encloses) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                              |
+| [`AABB`](class_aabb.md)       | [`expand`](class_aabb.md#class_aabb_method_expand) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                        |
+| [`Vector3`](class_vector3.md) | [`get_center`](class_aabb.md#class_aabb_method_get_center) ( ) const[^const]                                                                                        |
+| [`Vector3`](class_vector3.md) | [`get_endpoint`](class_aabb.md#class_aabb_method_get_endpoint) ( idx: [`int`](class_int.md) ) const[^const]                                                         |
+| [`Vector3`](class_vector3.md) | [`get_longest_axis`](class_aabb.md#class_aabb_method_get_longest_axis) ( ) const[^const]                                                                            |
+| [`int`](class_int.md)         | [`get_longest_axis_index`](class_aabb.md#class_aabb_method_get_longest_axis_index) ( ) const[^const]                                                                |
+| [`float`](class_float.md)     | [`get_longest_axis_size`](class_aabb.md#class_aabb_method_get_longest_axis_size) ( ) const[^const]                                                                  |
+| [`Vector3`](class_vector3.md) | [`get_shortest_axis`](class_aabb.md#class_aabb_method_get_shortest_axis) ( ) const[^const]                                                                          |
+| [`int`](class_int.md)         | [`get_shortest_axis_index`](class_aabb.md#class_aabb_method_get_shortest_axis_index) ( ) const[^const]                                                              |
+| [`float`](class_float.md)     | [`get_shortest_axis_size`](class_aabb.md#class_aabb_method_get_shortest_axis_size) ( ) const[^const]                                                                |
+| [`Vector3`](class_vector3.md) | [`get_support`](class_aabb.md#class_aabb_method_get_support) ( dir: [`Vector3`](class_vector3.md) ) const[^const]                                                   |
+| [`float`](class_float.md)     | [`get_volume`](class_aabb.md#class_aabb_method_get_volume) ( ) const[^const]                                                                                        |
+| [`AABB`](class_aabb.md)       | [`grow`](class_aabb.md#class_aabb_method_grow) ( by: [`float`](class_float.md) ) const[^const]                                                                      |
+| [`bool`](class_bool.md)       | [`has_point`](class_aabb.md#class_aabb_method_has_point) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                     |
+| [`bool`](class_bool.md)       | [`has_surface`](class_aabb.md#class_aabb_method_has_surface) ( ) const[^const]                                                                                      |
+| [`bool`](class_bool.md)       | [`has_volume`](class_aabb.md#class_aabb_method_has_volume) ( ) const[^const]                                                                                        |
+| [`AABB`](class_aabb.md)       | [`intersection`](class_aabb.md#class_aabb_method_intersection) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                      |
+| [`bool`](class_bool.md)       | [`intersects`](class_aabb.md#class_aabb_method_intersects) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                          |
+| [`bool`](class_bool.md)       | [`intersects_plane`](class_aabb.md#class_aabb_method_intersects_plane) ( plane: [`Plane`](class_plane.md) ) const[^const]                                           |
+| [`Variant`](class_variant.md) | [`intersects_ray`](class_aabb.md#class_aabb_method_intersects_ray) ( from: [`Vector3`](class_vector3.md), dir: [`Vector3`](class_vector3.md) ) const[^const]        |
+| [`Variant`](class_variant.md) | [`intersects_segment`](class_aabb.md#class_aabb_method_intersects_segment) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md) ) const[^const] |
+| [`bool`](class_bool.md)       | [`is_equal_approx`](class_aabb.md#class_aabb_method_is_equal_approx) ( aabb: [`AABB`](class_aabb.md) ) const[^const]                                                |
+| [`bool`](class_bool.md)       | [`is_finite`](class_aabb.md#class_aabb_method_is_finite) ( ) const[^const]                                                                                          |
+| [`AABB`](class_aabb.md)       | [`merge`](class_aabb.md#class_aabb_method_merge) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                                    |
 
 ## 运算符
 
@@ -85,7 +85,7 @@ It uses floating-point coordinates. The 2D counterpart to **AABB** is [`Rect2`](
 
 [`Vector3`](class_vector3.md) **end** = ``Vector3(0, 0, 0)`` <div id="class_aabb_property_end"></div>
 
-The ending point. This is usually the corner on the top-right and forward of the bounding box, and is equivalent to `position + size`. Setting this point affects the [`size`](#class_aabb_property_size).
+The ending point. This is usually the corner on the top-right and forward of the bounding box, and is equivalent to `position + size`. Setting this point affects the [`size`](class_aabb.md#class_aabb_property_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -105,9 +105,9 @@ The origin point. This is usually the corner on the bottom-left and back of the 
 
 [`Vector3`](class_vector3.md) **size** = ``Vector3(0, 0, 0)`` <div id="class_aabb_property_size"></div>
 
-The bounding box's width, height, and depth starting from [`position`](#class_aabb_property_position). Setting this value also affects the [`end`](#class_aabb_property_end) point.
+The bounding box's width, height, and depth starting from [`position`](class_aabb.md#class_aabb_property_position). Setting this value also affects the [`end`](class_aabb.md#class_aabb_property_end) point.
 
- **Note:** It's recommended setting the width, height, and depth to non-negative values. This is because most methods in Godot assume that the [`position`](#class_aabb_property_position) is the bottom-left-back corner, and the [`end`](#class_aabb_property_end) is the top-right-forward corner. To get an equivalent bounding box with non-negative size, use [`abs`](#class_aabb_method_abs).
+ **Note:** It's recommended setting the width, height, and depth to non-negative values. This is because most methods in Godot assume that the [`position`](class_aabb.md#class_aabb_property_position) is the bottom-left-back corner, and the [`end`](class_aabb.md#class_aabb_property_end) is the top-right-forward corner. To get an equivalent bounding box with non-negative size, use [`abs`](class_aabb.md#class_aabb_method_abs).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -119,7 +119,7 @@ The bounding box's width, height, and depth starting from [`position`](#class_aa
 
 [`AABB`](class_aabb.md) **AABB** ( )<div id="class_aabb_constructor_aabb"></div>
 
-Constructs an **AABB** with its [`position`](#class_aabb_property_position) and [`size`](#class_aabb_property_size) set to [`Vector3.ZERO`](#class_vector3_constant_zero).
+Constructs an **AABB** with its [`position`](class_aabb.md#class_aabb_property_position) and [`size`](class_aabb.md#class_aabb_property_size) set to [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -169,7 +169,7 @@ Returns an **AABB** equivalent to this bounding box, with its width, height, and
 
 
 
- **Note:** It's recommended to use this method when [`size`](#class_aabb_property_size) is negative, as most other methods in Godot assume that the [`size`](#class_aabb_property_size)'s components are greater than `0`.
+ **Note:** It's recommended to use this method when [`size`](class_aabb.md#class_aabb_property_size) is negative, as most other methods in Godot assume that the [`size`](class_aabb.md#class_aabb_property_size)'s components are greater than `0`.
 
 
 
@@ -277,7 +277,7 @@ Returns the center point of the bounding box. This is the same as `position + (s
 
 [`Vector3`](class_vector3.md) **get_endpoint** ( idx: [`int`](class_int.md) ) const[^const]<div id="class_aabb_method_get_endpoint"></div>
 
-Returns the position of one of the 8 vertices that compose this bounding box. With a `idx` of `0` this is the same as [`position`](#class_aabb_property_position), and a `idx` of `7` is the same as [`end`](#class_aabb_property_end).
+Returns the position of one of the 8 vertices that compose this bounding box. With a `idx` of `0` this is the same as [`position`](class_aabb.md#class_aabb_property_position), and a `idx` of `7` is the same as [`end`](class_aabb.md#class_aabb_property_end).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -287,7 +287,7 @@ Returns the position of one of the 8 vertices that compose this bounding box. Wi
 
 [`Vector3`](class_vector3.md) **get_longest_axis** ( ) const[^const]<div id="class_aabb_method_get_longest_axis"></div>
 
-Returns the longest normalized axis of this bounding box's [`size`](#class_aabb_property_size), as a [`Vector3`](class_vector3.md) ([`Vector3.RIGHT`](#class_vector3_constant_right), [`Vector3.UP`](#class_vector3_constant_up), or [`Vector3.BACK`](#class_vector3_constant_back)).
+Returns the longest normalized axis of this bounding box's [`size`](class_aabb.md#class_aabb_property_size), as a [`Vector3`](class_vector3.md) ([`Vector3.RIGHT`](class_vector3.md#class_vector3_constant_right), [`Vector3.UP`](class_vector3.md#class_vector3_constant_up), or [`Vector3.BACK`](class_vector3.md#class_vector3_constant_back)).
 
 
 
@@ -311,7 +311,7 @@ Returns the longest normalized axis of this bounding box's [`size`](#class_aabb_
 
 
 
-See also [`get_longest_axis_index`](#class_aabb_method_get_longest_axis_index) and [`get_longest_axis_size`](#class_aabb_method_get_longest_axis_size).
+See also [`get_longest_axis_index`](class_aabb.md#class_aabb_method_get_longest_axis_index) and [`get_longest_axis_size`](class_aabb.md#class_aabb_method_get_longest_axis_size).
 
 
 
@@ -325,9 +325,9 @@ See also [`get_longest_axis_index`](#class_aabb_method_get_longest_axis_index) a
 
 [`int`](class_int.md) **get_longest_axis_index** ( ) const[^const]<div id="class_aabb_method_get_longest_axis_index"></div>
 
-Returns the index to the longest axis of this bounding box's [`size`](#class_aabb_property_size) (see [`Vector3.AXIS_X`](#class_vector3_constant_axis_x), [`Vector3.AXIS_Y`](#class_vector3_constant_axis_y), and [`Vector3.AXIS_Z`](#class_vector3_constant_axis_z)).
+Returns the index to the longest axis of this bounding box's [`size`](class_aabb.md#class_aabb_property_size) (see [`Vector3.AXIS_X`](class_vector3.md#class_vector3_constant_axis_x), [`Vector3.AXIS_Y`](class_vector3.md#class_vector3_constant_axis_y), and [`Vector3.AXIS_Z`](class_vector3.md#class_vector3_constant_axis_z)).
 
-For an example, see [`get_longest_axis`](#class_aabb_method_get_longest_axis).
+For an example, see [`get_longest_axis`](class_aabb.md#class_aabb_method_get_longest_axis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -337,9 +337,9 @@ For an example, see [`get_longest_axis`](#class_aabb_method_get_longest_axis).
 
 [`float`](class_float.md) **get_longest_axis_size** ( ) const[^const]<div id="class_aabb_method_get_longest_axis_size"></div>
 
-Returns the longest dimension of this bounding box's [`size`](#class_aabb_property_size).
+Returns the longest dimension of this bounding box's [`size`](class_aabb.md#class_aabb_property_size).
 
-For an example, see [`get_longest_axis`](#class_aabb_method_get_longest_axis).
+For an example, see [`get_longest_axis`](class_aabb.md#class_aabb_method_get_longest_axis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -349,7 +349,7 @@ For an example, see [`get_longest_axis`](#class_aabb_method_get_longest_axis).
 
 [`Vector3`](class_vector3.md) **get_shortest_axis** ( ) const[^const]<div id="class_aabb_method_get_shortest_axis"></div>
 
-Returns the shortest normalized axis of this bounding box's [`size`](#class_aabb_property_size), as a [`Vector3`](class_vector3.md) ([`Vector3.RIGHT`](#class_vector3_constant_right), [`Vector3.UP`](#class_vector3_constant_up), or [`Vector3.BACK`](#class_vector3_constant_back)).
+Returns the shortest normalized axis of this bounding box's [`size`](class_aabb.md#class_aabb_property_size), as a [`Vector3`](class_vector3.md) ([`Vector3.RIGHT`](class_vector3.md#class_vector3_constant_right), [`Vector3.UP`](class_vector3.md#class_vector3_constant_up), or [`Vector3.BACK`](class_vector3.md#class_vector3_constant_back)).
 
 
 
@@ -373,7 +373,7 @@ Returns the shortest normalized axis of this bounding box's [`size`](#class_aabb
 
 
 
-See also [`get_shortest_axis_index`](#class_aabb_method_get_shortest_axis_index) and [`get_shortest_axis_size`](#class_aabb_method_get_shortest_axis_size).
+See also [`get_shortest_axis_index`](class_aabb.md#class_aabb_method_get_shortest_axis_index) and [`get_shortest_axis_size`](class_aabb.md#class_aabb_method_get_shortest_axis_size).
 
 
 
@@ -387,9 +387,9 @@ See also [`get_shortest_axis_index`](#class_aabb_method_get_shortest_axis_index)
 
 [`int`](class_int.md) **get_shortest_axis_index** ( ) const[^const]<div id="class_aabb_method_get_shortest_axis_index"></div>
 
-Returns the index to the shortest axis of this bounding box's [`size`](#class_aabb_property_size) (see [`Vector3.AXIS_X`](#class_vector3_constant_axis_x), [`Vector3.AXIS_Y`](#class_vector3_constant_axis_y), and [`Vector3.AXIS_Z`](#class_vector3_constant_axis_z)).
+Returns the index to the shortest axis of this bounding box's [`size`](class_aabb.md#class_aabb_property_size) (see [`Vector3.AXIS_X`](class_vector3.md#class_vector3_constant_axis_x), [`Vector3.AXIS_Y`](class_vector3.md#class_vector3_constant_axis_y), and [`Vector3.AXIS_Z`](class_vector3.md#class_vector3_constant_axis_z)).
 
-For an example, see [`get_shortest_axis`](#class_aabb_method_get_shortest_axis).
+For an example, see [`get_shortest_axis`](class_aabb.md#class_aabb_method_get_shortest_axis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -399,9 +399,9 @@ For an example, see [`get_shortest_axis`](#class_aabb_method_get_shortest_axis).
 
 [`float`](class_float.md) **get_shortest_axis_size** ( ) const[^const]<div id="class_aabb_method_get_shortest_axis_size"></div>
 
-Returns the shortest dimension of this bounding box's [`size`](#class_aabb_property_size).
+Returns the shortest dimension of this bounding box's [`size`](class_aabb.md#class_aabb_property_size).
 
-For an example, see [`get_shortest_axis`](#class_aabb_method_get_shortest_axis).
+For an example, see [`get_shortest_axis`](class_aabb.md#class_aabb_method_get_shortest_axis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -421,7 +421,7 @@ Returns the vertex's position of this bounding box that's the farthest in the gi
 
 [`float`](class_float.md) **get_volume** ( ) const[^const]<div id="class_aabb_method_get_volume"></div>
 
-Returns the bounding box's volume. This is equivalent to `size.x * size.y * size.z`. See also [`has_volume`](#class_aabb_method_has_volume).
+Returns the bounding box's volume. This is equivalent to `size.x * size.y * size.z`. See also [`has_volume`](class_aabb.md#class_aabb_method_has_volume).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -473,7 +473,7 @@ Returns a copy of this bounding box extended on all sides by the given amount `b
 
 Returns `true` if the bounding box contains the given `point`. By convention, points exactly on the right, top, and front sides are **not** included.
 
- **Note:** This method is not reliable for **AABB** with a *negative* [`size`](#class_aabb_property_size). Use [`abs`](#class_aabb_method_abs) first to get a valid bounding box.
+ **Note:** This method is not reliable for **AABB** with a *negative* [`size`](class_aabb.md#class_aabb_property_size). Use [`abs`](class_aabb.md#class_aabb_method_abs) first to get a valid bounding box.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -483,7 +483,7 @@ Returns `true` if the bounding box contains the given `point`. By convention, po
 
 [`bool`](class_bool.md) **has_surface** ( ) const[^const]<div id="class_aabb_method_has_surface"></div>
 
-Returns `true` if this bounding box has a surface or a length, that is, at least one component of [`size`](#class_aabb_property_size) is greater than `0`. Otherwise, returns `false`.
+Returns `true` if this bounding box has a surface or a length, that is, at least one component of [`size`](class_aabb.md#class_aabb_property_size) is greater than `0`. Otherwise, returns `false`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -493,7 +493,7 @@ Returns `true` if this bounding box has a surface or a length, that is, at least
 
 [`bool`](class_bool.md) **has_volume** ( ) const[^const]<div id="class_aabb_method_has_volume"></div>
 
-Returns `true` if this bounding box's width, height, and depth are all positive. See also [`get_volume`](#class_aabb_method_get_volume).
+Returns `true` if this bounding box's width, height, and depth are all positive. See also [`get_volume`](class_aabb.md#class_aabb_method_get_volume).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -503,7 +503,7 @@ Returns `true` if this bounding box's width, height, and depth are all positive.
 
 [`AABB`](class_aabb.md) **intersection** ( with: [`AABB`](class_aabb.md) ) const[^const]<div id="class_aabb_method_intersection"></div>
 
-Returns the intersection between this bounding box and `with`. If the boxes do not intersect, returns an empty **AABB**. If the boxes intersect at the edge, returns a flat **AABB** with no volume (see [`has_surface`](#class_aabb_method_has_surface) and [`has_volume`](#class_aabb_method_has_volume)).
+Returns the intersection between this bounding box and `with`. If the boxes do not intersect, returns an empty **AABB**. If the boxes intersect at the edge, returns a flat **AABB** with no volume (see [`has_surface`](class_aabb.md#class_aabb_method_has_surface) and [`has_volume`](class_aabb.md#class_aabb_method_has_volume)).
 
 
 
@@ -529,7 +529,7 @@ Returns the intersection between this bounding box and `with`. If the boxes do n
 
 
 
- **Note:** If you only need to know whether two bounding boxes are intersecting, use [`intersects`](#class_aabb_method_intersects), instead.
+ **Note:** If you only need to know whether two bounding boxes are intersecting, use [`intersects`](class_aabb.md#class_aabb_method_intersects), instead.
 
 
 
@@ -587,7 +587,7 @@ The segment begins at `from` and ends at `to`.
 
 [`bool`](class_bool.md) **is_equal_approx** ( aabb: [`AABB`](class_aabb.md) ) const[^const]<div id="class_aabb_method_is_equal_approx"></div>
 
-Returns `true` if this bounding box and `aabb` are approximately equal, by calling [`Vector2.is_equal_approx`](#class_vector2_method_is_equal_approx) on the [`position`](#class_aabb_property_position) and the [`size`](#class_aabb_property_size).
+Returns `true` if this bounding box and `aabb` are approximately equal, by calling [`Vector2.is_equal_approx`](class_vector2.md#class_vector2_method_is_equal_approx) on the [`position`](class_aabb.md#class_aabb_property_position) and the [`size`](class_aabb.md#class_aabb_property_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -597,7 +597,7 @@ Returns `true` if this bounding box and `aabb` are approximately equal, by calli
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_aabb_method_is_finite"></div>
 
-Returns `true` if this bounding box's values are finite, by calling [`Vector2.is_finite`](#class_vector2_method_is_finite) on the [`position`](#class_aabb_property_position) and the [`size`](#class_aabb_property_size).
+Returns `true` if this bounding box's values are finite, by calling [`Vector2.is_finite`](class_vector2.md#class_vector2_method_is_finite) on the [`position`](class_aabb.md#class_aabb_property_position) and the [`size`](class_aabb.md#class_aabb_property_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -607,7 +607,7 @@ Returns `true` if this bounding box's values are finite, by calling [`Vector2.is
 
 [`AABB`](class_aabb.md) **merge** ( with: [`AABB`](class_aabb.md) ) const[^const]<div id="class_aabb_method_merge"></div>
 
-Returns an **AABB** that encloses both this bounding box and `with` around the edges. See also [`encloses`](#class_aabb_method_encloses).
+Returns an **AABB** that encloses both this bounding box and `with` around the edges. See also [`encloses`](class_aabb.md#class_aabb_method_encloses).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -619,9 +619,9 @@ Returns an **AABB** that encloses both this bounding box and `with` around the e
 
 [`bool`](class_bool.md) **operator !=** ( right: [`AABB`](class_aabb.md) ) <div id="class_aabb_operator_neq_aabb"></div>
 
-Returns `true` if the [`position`](#class_aabb_property_position) or [`size`](#class_aabb_property_size) of both bounding boxes are not equal.
+Returns `true` if the [`position`](class_aabb.md#class_aabb_property_position) or [`size`](class_aabb.md#class_aabb_property_size) of both bounding boxes are not equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_aabb_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_aabb.md#class_aabb_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -633,9 +633,9 @@ Returns `true` if the [`position`](#class_aabb_property_position) or [`size`](#c
 
 Inversely transforms (multiplies) the **AABB** by the given [`Transform3D`](class_transform3d.md) transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
 
- `aabb * transform` is equivalent to `transform.inverse() * aabb`. See [`Transform3D.inverse`](#class_transform3d_method_inverse).
+ `aabb * transform` is equivalent to `transform.inverse() * aabb`. See [`Transform3D.inverse`](class_transform3d.md#class_transform3d_method_inverse).
 
-For transforming by inverse of an affine transformation (e.g. with scaling) `transform.affine_inverse() * aabb` can be used instead. See [`Transform3D.affine_inverse`](#class_transform3d_method_affine_inverse).
+For transforming by inverse of an affine transformation (e.g. with scaling) `transform.affine_inverse() * aabb` can be used instead. See [`Transform3D.affine_inverse`](class_transform3d.md#class_transform3d_method_affine_inverse).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -645,9 +645,9 @@ For transforming by inverse of an affine transformation (e.g. with scaling) `tra
 
 [`bool`](class_bool.md) **operator ==** ( right: [`AABB`](class_aabb.md) ) <div id="class_aabb_operator_eq_aabb"></div>
 
-Returns `true` if both [`position`](#class_aabb_property_position) and [`size`](#class_aabb_property_size) of the bounding boxes are exactly equal, respectively.
+Returns `true` if both [`position`](class_aabb.md#class_aabb_property_position) and [`size`](class_aabb.md#class_aabb_property_size) of the bounding boxes are exactly equal, respectively.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_aabb_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_aabb.md#class_aabb_method_is_equal_approx) instead, which is more reliable.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

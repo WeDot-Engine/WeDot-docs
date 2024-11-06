@@ -15,32 +15,32 @@ GLTF node class.
 
 Represents a GLTF node. GLTF nodes may have names, transforms, children (other GLTF nodes), and more specialized properties (represented by their own classes).
 
-GLTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which represents all data of a GLTF file. Most of GLTFNode's properties are indices of other data in the GLTF file. You can extend a GLTF node with additional properties by using [`get_additional_data`](#class_gltfnode_method_get_additional_data) and [`set_additional_data`](#class_gltfnode_method_set_additional_data).
+GLTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which represents all data of a GLTF file. Most of GLTFNode's properties are indices of other data in the GLTF file. You can extend a GLTF node with additional properties by using [`get_additional_data`](class_gltfnode.md#class_gltfnode_method_get_additional_data) and [`set_additional_data`](class_gltfnode.md#class_gltfnode_method_set_additional_data).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                           | [`camera`](#class_gltfnode_property_camera)               | ``-1``                                              |
-| [`PackedInt32Array`](class_packedint32array.md) | [`children`](#class_gltfnode_property_children)           | ``PackedInt32Array()``                              |
-| [`int`](class_int.md)                           | [`height`](#class_gltfnode_property_height)               | ``-1``                                              |
-| [`int`](class_int.md)                           | [`light`](#class_gltfnode_property_light)                 | ``-1``                                              |
-| [`int`](class_int.md)                           | [`mesh`](#class_gltfnode_property_mesh)                   | ``-1``                                              |
-| [`String`](class_string.md)                     | [`original_name`](#class_gltfnode_property_original_name) | ``""``                                              |
-| [`int`](class_int.md)                           | [`parent`](#class_gltfnode_property_parent)               | ``-1``                                              |
-| [`Vector3`](class_vector3.md)                   | [`position`](#class_gltfnode_property_position)           | ``Vector3(0, 0, 0)``                                |
-| [`Quaternion`](class_quaternion.md)             | [`rotation`](#class_gltfnode_property_rotation)           | ``Quaternion(0, 0, 0, 1)``                          |
-| [`Vector3`](class_vector3.md)                   | [`scale`](#class_gltfnode_property_scale)                 | ``Vector3(1, 1, 1)``                                |
-| [`int`](class_int.md)                           | [`skeleton`](#class_gltfnode_property_skeleton)           | ``-1``                                              |
-| [`int`](class_int.md)                           | [`skin`](#class_gltfnode_property_skin)                   | ``-1``                                              |
-| [`Transform3D`](class_transform3d.md)           | [`xform`](#class_gltfnode_property_xform)                 | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
+| [`int`](class_int.md)                           | [`camera`](class_gltfnode.md#class_gltfnode_property_camera)               | ``-1``                                              |
+| [`PackedInt32Array`](class_packedint32array.md) | [`children`](class_gltfnode.md#class_gltfnode_property_children)           | ``PackedInt32Array()``                              |
+| [`int`](class_int.md)                           | [`height`](class_gltfnode.md#class_gltfnode_property_height)               | ``-1``                                              |
+| [`int`](class_int.md)                           | [`light`](class_gltfnode.md#class_gltfnode_property_light)                 | ``-1``                                              |
+| [`int`](class_int.md)                           | [`mesh`](class_gltfnode.md#class_gltfnode_property_mesh)                   | ``-1``                                              |
+| [`String`](class_string.md)                     | [`original_name`](class_gltfnode.md#class_gltfnode_property_original_name) | ``""``                                              |
+| [`int`](class_int.md)                           | [`parent`](class_gltfnode.md#class_gltfnode_property_parent)               | ``-1``                                              |
+| [`Vector3`](class_vector3.md)                   | [`position`](class_gltfnode.md#class_gltfnode_property_position)           | ``Vector3(0, 0, 0)``                                |
+| [`Quaternion`](class_quaternion.md)             | [`rotation`](class_gltfnode.md#class_gltfnode_property_rotation)           | ``Quaternion(0, 0, 0, 1)``                          |
+| [`Vector3`](class_vector3.md)                   | [`scale`](class_gltfnode.md#class_gltfnode_property_scale)                 | ``Vector3(1, 1, 1)``                                |
+| [`int`](class_int.md)                           | [`skeleton`](class_gltfnode.md#class_gltfnode_property_skeleton)           | ``-1``                                              |
+| [`int`](class_int.md)                           | [`skin`](class_gltfnode.md#class_gltfnode_property_skin)                   | ``-1``                                              |
+| [`Transform3D`](class_transform3d.md)           | [`xform`](class_gltfnode.md#class_gltfnode_property_xform)                 | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_additional_data`](#class_gltfnode_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                        | [`set_additional_data`](#class_gltfnode_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+| [`Variant`](class_variant.md) | [`get_additional_data`](class_gltfnode.md#class_gltfnode_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| `void`                        | [`set_additional_data`](class_gltfnode.md#class_gltfnode_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

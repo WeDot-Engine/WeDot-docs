@@ -21,25 +21,25 @@ Use [`XRHandModifier3D`](class_xrhandmodifier3d.md) to animate a hand mesh using
 
 |||
 |:-:|:--|
-| [TrackerHand](#enum_xrpositionaltracker_trackerhand)         | hand                                                                         | ``1`` (overrides [`XRPositionalTracker`](#class_xrpositionaltracker_property_hand)) |
-| [HandTrackingSource](#enum_xrhandtracker_handtrackingsource) | [`hand_tracking_source`](#class_xrhandtracker_property_hand_tracking_source) | ``0``                                                                               |
-| [`bool`](class_bool.md)                                      | [`has_tracking_data`](#class_xrhandtracker_property_has_tracking_data)       | ``false``                                                                           |
-| [TrackerType](#enum_xrserver_trackertype)                    | type                                                                         | ``16`` (overrides [`XRTracker`](#class_xrtracker_property_type))                    |
+| [TrackerHand](#enum_xrpositionaltracker_trackerhand)         | hand                                                                                               | ``1`` (overrides [`XRPositionalTracker`](class_xrpositionaltracker.md#class_xrpositionaltracker_property_hand)) |
+| [HandTrackingSource](#enum_xrhandtracker_handtrackingsource) | [`hand_tracking_source`](class_xrhandtracker.md#class_xrhandtracker_property_hand_tracking_source) | ``0``                                                                                                           |
+| [`bool`](class_bool.md)                                      | [`has_tracking_data`](class_xrhandtracker.md#class_xrhandtracker_property_has_tracking_data)       | ``false``                                                                                                       |
+| [TrackerType](#enum_xrserver_trackertype)                    | type                                                                                               | ``16`` (overrides [`XRTracker`](class_xrtracker.md#class_xrtracker_property_type))                              |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md)                        | [`get_hand_joint_angular_velocity`](#class_xrhandtracker_method_get_hand_joint_angular_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                    |
-| [HandJointFlags](#enum_xrhandtracker_handjointflags) | [`get_hand_joint_flags`](#class_xrhandtracker_method_get_hand_joint_flags) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                                          |
-| [`Vector3`](class_vector3.md)                        | [`get_hand_joint_linear_velocity`](#class_xrhandtracker_method_get_hand_joint_linear_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                      |
-| [`float`](class_float.md)                            | [`get_hand_joint_radius`](#class_xrhandtracker_method_get_hand_joint_radius) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                                        |
-| [`Transform3D`](class_transform3d.md)                | [`get_hand_joint_transform`](#class_xrhandtracker_method_get_hand_joint_transform) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                                  |
-| `void`                                               | [`set_hand_joint_angular_velocity`](#class_xrhandtracker_method_set_hand_joint_angular_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), angular_velocity: [`Vector3`](class_vector3.md) ) |
-| `void`                                               | [`set_hand_joint_flags`](#class_xrhandtracker_method_set_hand_joint_flags) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), flags: [HandJointFlags](#enum_xrhandtracker_handjointflags) )           |
-| `void`                                               | [`set_hand_joint_linear_velocity`](#class_xrhandtracker_method_set_hand_joint_linear_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), linear_velocity: [`Vector3`](class_vector3.md) )    |
-| `void`                                               | [`set_hand_joint_radius`](#class_xrhandtracker_method_set_hand_joint_radius) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), radius: [`float`](class_float.md) )                                   |
-| `void`                                               | [`set_hand_joint_transform`](#class_xrhandtracker_method_set_hand_joint_transform) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), transform: [`Transform3D`](class_transform3d.md) )              |
+| [`Vector3`](class_vector3.md)                        | [`get_hand_joint_angular_velocity`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_angular_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                    |
+| [HandJointFlags](#enum_xrhandtracker_handjointflags) | [`get_hand_joint_flags`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_flags) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                                          |
+| [`Vector3`](class_vector3.md)                        | [`get_hand_joint_linear_velocity`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_linear_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                      |
+| [`float`](class_float.md)                            | [`get_hand_joint_radius`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_radius) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                                        |
+| [`Transform3D`](class_transform3d.md)                | [`get_hand_joint_transform`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_transform) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                                  |
+| `void`                                               | [`set_hand_joint_angular_velocity`](class_xrhandtracker.md#class_xrhandtracker_method_set_hand_joint_angular_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), angular_velocity: [`Vector3`](class_vector3.md) ) |
+| `void`                                               | [`set_hand_joint_flags`](class_xrhandtracker.md#class_xrhandtracker_method_set_hand_joint_flags) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), flags: [HandJointFlags](#enum_xrhandtracker_handjointflags) )           |
+| `void`                                               | [`set_hand_joint_linear_velocity`](class_xrhandtracker.md#class_xrhandtracker_method_set_hand_joint_linear_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), linear_velocity: [`Vector3`](class_vector3.md) )    |
+| `void`                                               | [`set_hand_joint_radius`](class_xrhandtracker.md#class_xrhandtracker_method_set_hand_joint_radius) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), radius: [`float`](class_float.md) )                                   |
+| `void`                                               | [`set_hand_joint_transform`](class_xrhandtracker.md#class_xrhandtracker_method_set_hand_joint_transform) ( joint: [HandJoint](#enum_xrhandtracker_handjoint), transform: [`Transform3D`](class_transform3d.md) )              |
 
 <!-- rst-class:: classref-section-separator -->
 

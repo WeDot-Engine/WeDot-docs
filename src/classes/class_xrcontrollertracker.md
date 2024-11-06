@@ -23,7 +23,7 @@ The [`XRController3D`](class_xrcontroller3d.md) consumes objects of this type an
 
 |||
 |:-:|:--|
-| [TrackerType](#enum_xrserver_trackertype) | type | ``2`` (overrides [`XRTracker`](#class_xrtracker_property_type)) |
+| [TrackerType](#enum_xrserver_trackertype) | type | ``2`` (overrides [`XRTracker`](class_xrtracker.md#class_xrtracker_property_type)) |
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。
