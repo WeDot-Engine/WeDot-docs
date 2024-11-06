@@ -23,12 +23,16 @@ For floating-point coordinates, see [`Rect2`](class_rect2.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2i`](class_vector2i.md) | [`end`](#class_rect2i_property_end)           | ``Vector2i(0, 0)`` |
 | [`Vector2i`](class_vector2i.md) | [`position`](#class_rect2i_property_position) | ``Vector2i(0, 0)`` |
 | [`Vector2i`](class_vector2i.md) | [`size`](#class_rect2i_property_size)         | ``Vector2i(0, 0)`` |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Rect2i`](class_rect2i.md) | [`Rect2i`](#class_rect2i_constructor_rect2i) ( )                                                                                                                 |
 | [`Rect2i`](class_rect2i.md) | [`Rect2i`](#class_rect2i_constructor_rect2i) ( from: [`Rect2i`](class_rect2i.md) )                                                                               |
 | [`Rect2i`](class_rect2i.md) | [`Rect2i`](#class_rect2i_constructor_rect2i) ( from: [`Rect2`](class_rect2.md) )                                                                                 |
@@ -37,6 +41,8 @@ For floating-point coordinates, see [`Rect2`](class_rect2.md).
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Rect2i`](class_rect2i.md)     | [`abs`](#class_rect2i_method_abs) ( ) const[^const]                                                                                                                                              |
 | [`bool`](class_bool.md)         | [`encloses`](#class_rect2i_method_encloses) ( b: [`Rect2i`](class_rect2i.md) ) const[^const]                                                                                                     |
 | [`Rect2i`](class_rect2i.md)     | [`expand`](#class_rect2i_method_expand) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                    |
@@ -53,6 +59,8 @@ For floating-point coordinates, see [`Rect2`](class_rect2.md).
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`operator !=`](class_Rect2i.md#operator_neq_Rect2i) ( right: [`Rect2i`](class_rect2i.md) ) |
 | [`bool`](class_bool.md) | [`operator ==`](class_Rect2i.md#operator_eq_Rect2i) ( right: [`Rect2i`](class_rect2i.md) )  |
 

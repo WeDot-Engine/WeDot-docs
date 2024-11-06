@@ -17,6 +17,8 @@ Class representing a square [`PrimitiveMesh`](class_primitivemesh.md). This flat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Orientation](#enum_planemesh_orientation) | orientation | ``2`` (overrides [`PlaneMesh`](#class_planemesh_property_orientation))      |
 | [`Vector2`](class_vector2.md)              | size        | ``Vector2(1, 1)`` (overrides [`PlaneMesh`](#class_planemesh_property_size)) |
 

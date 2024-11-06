@@ -17,6 +17,8 @@ Class representing a cylindrical [`PrimitiveMesh`](class_primitivemesh.md). This
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`bottom_radius`](#class_cylindermesh_property_bottom_radius)     | ``0.5``  |
 | [`bool`](class_bool.md)   | [`cap_bottom`](#class_cylindermesh_property_cap_bottom)           | ``true`` |
 | [`bool`](class_bool.md)   | [`cap_top`](#class_cylindermesh_property_cap_top)                 | ``true`` |

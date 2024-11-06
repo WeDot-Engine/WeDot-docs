@@ -17,6 +17,8 @@ Class representing a spherical [`PrimitiveMesh`](class_primitivemesh.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`height`](#class_spheremesh_property_height)                   | ``1.0``   |
 | [`bool`](class_bool.md)   | [`is_hemisphere`](#class_spheremesh_property_is_hemisphere)     | ``false`` |
 | [`int`](class_int.md)     | [`radial_segments`](#class_spheremesh_property_radial_segments) | ``64``    |

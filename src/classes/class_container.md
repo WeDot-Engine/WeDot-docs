@@ -19,10 +19,14 @@ Base class for all GUI containers. A **Container** automatically arranges its ch
 
 ## 属性
 
+|||
+|:-:|:--|
 | [MouseFilter](#enum_control_mousefilter) | mouse_filter | ``1`` (overrides [`Control`](#class_control_property_mouse_filter)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_horizontal`](#class_container_private_method__get_allowed_size_flags_horizontal) ( ) virtual[^virtual] const[^const] |
 | [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_vertical`](#class_container_private_method__get_allowed_size_flags_vertical) ( ) virtual[^virtual] const[^const]     |
 | `void`                                          | [`fit_child_in_rect`](#class_container_method_fit_child_in_rect) ( child: [`Control`](class_control.md), rect: [`Rect2`](class_rect2.md) )     |

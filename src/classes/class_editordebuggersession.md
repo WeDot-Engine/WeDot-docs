@@ -19,6 +19,8 @@ You can add tabs to the session UI via [`add_session_tab`](#class_editordebugger
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`add_session_tab`](#class_editordebuggersession_method_add_session_tab) ( control: [`Control`](class_control.md) )                                                                       |
 | [`bool`](class_bool.md) | [`is_active`](#class_editordebuggersession_method_is_active) ( )                                                                                                                          |
 | [`bool`](class_bool.md) | [`is_breaked`](#class_editordebuggersession_method_is_breaked) ( )                                                                                                                        |

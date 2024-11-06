@@ -21,6 +21,8 @@ It is notably used to provide AR modules with a video feed from the camera.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`add_feed`](#class_cameraserver_method_add_feed) ( feed: [`CameraFeed`](class_camerafeed.md) )       |
 | [Array](class_array.md) [`CameraFeed`](class_camerafeed.md) | [`feeds`](#class_cameraserver_method_feeds) ( )                                                       |
 | [`CameraFeed`](class_camerafeed.md)                         | [`get_feed`](#class_cameraserver_method_get_feed) ( index: [`int`](class_int.md) )                    |

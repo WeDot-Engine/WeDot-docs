@@ -19,6 +19,8 @@ Can have [`PathFollow2D`](class_pathfollow2d.md) child nodes moving along the [`
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Curve2D`](class_curve2d.md) | [`curve`](#class_path2d_property_curve) |
 
 <!-- rst-class:: classref-section-separator -->

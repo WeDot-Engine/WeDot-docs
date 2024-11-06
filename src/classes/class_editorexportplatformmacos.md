@@ -13,6 +13,8 @@ Exporter for macOS.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                       | [`application/additional_plist_content`](#class_editorexportplatformmacos_property_application/additional_plist_content)                                                             |
 | [`String`](class_string.md)                       | [`application/app_category`](#class_editorexportplatformmacos_property_application/app_category)                                                                                     |
 | [`String`](class_string.md)                       | [`application/bundle_identifier`](#class_editorexportplatformmacos_property_application/bundle_identifier)                                                                           |

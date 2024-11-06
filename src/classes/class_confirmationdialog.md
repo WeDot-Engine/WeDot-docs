@@ -39,6 +39,8 @@ To get cancel action, you can use:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)     | [`cancel_button_text`](#class_confirmationdialog_property_cancel_button_text) | ``"Cancel"``                                                                  |
 | [`Vector2i`](class_vector2i.md) | min_size                                                                      | ``Vector2i(200, 70)`` (overrides [`Window`](#class_window_property_min_size)) |
 | [`Vector2i`](class_vector2i.md) | size                                                                          | ``Vector2i(200, 100)`` (overrides [`Window`](#class_window_property_size))    |
@@ -46,6 +48,8 @@ To get cancel action, you can use:
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Button`](class_button.md) | [`get_cancel_button`](#class_confirmationdialog_method_get_cancel_button) ( ) |
 
 <!-- rst-class:: classref-section-separator -->

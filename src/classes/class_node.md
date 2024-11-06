@@ -41,6 +41,8 @@ Finally, when a node is freed with [`Object.free`](#class_object_method_free) or
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AutoTranslateMode](#enum_node_autotranslatemode)               | [`auto_translate_mode`](#class_node_property_auto_translate_mode)               | ``0``     |
 | [`String`](class_string.md)                                     | [`editor_description`](#class_node_property_editor_description)                 | ``""``    |
 | [`MultiplayerAPI`](class_multiplayerapi.md)                     | [`multiplayer`](#class_node_property_multiplayer)                               |           |
@@ -58,6 +60,8 @@ Finally, when a node is freed with [`Object.free`](#class_object_method_free) or
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`_enter_tree`](#class_node_private_method__enter_tree) ( ) virtual[^virtual]                                                                                                                                                        |
 | `void`                                                      | [`_exit_tree`](#class_node_private_method__exit_tree) ( ) virtual[^virtual]                                                                                                                                                          |
 | [`PackedStringArray`](class_packedstringarray.md)           | [`_get_configuration_warnings`](#class_node_private_method__get_configuration_warnings) ( ) virtual[^virtual] const[^const]                                                                                                          |

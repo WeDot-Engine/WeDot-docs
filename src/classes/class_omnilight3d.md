@@ -21,6 +21,8 @@ An Omnidirectional light is a type of [`Light3D`](class_light3d.md) that emits l
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                  | [`omni_attenuation`](#class_omnilight3d_property_omni_attenuation) | ``1.0``                                                                     |
 | [`float`](class_float.md)                  | [`omni_range`](#class_omnilight3d_property_omni_range)             | ``5.0``                                                                     |
 | [ShadowMode](#enum_omnilight3d_shadowmode) | [`omni_shadow_mode`](#class_omnilight3d_property_omni_shadow_mode) | ``1``                                                                       |

@@ -83,6 +83,8 @@ By default, Godot does not detect MIDI devices. You need to call [`OS.open_midi_
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                         | [`channel`](#class_inputeventmidi_property_channel)                     | ``0`` |
 | [`int`](class_int.md)                         | [`controller_number`](#class_inputeventmidi_property_controller_number) | ``0`` |
 | [`int`](class_int.md)                         | [`controller_value`](#class_inputeventmidi_property_controller_value)   | ``0`` |

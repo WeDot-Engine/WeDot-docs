@@ -155,10 +155,14 @@ Below a small example of how it can be used:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`max_pending_connections`](#class_udpserver_property_max_pending_connections) | ``16`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                     | [`get_local_port`](#class_udpserver_method_get_local_port) ( ) const[^const]                                                |
 | [`bool`](class_bool.md)                   | [`is_connection_available`](#class_udpserver_method_is_connection_available) ( ) const[^const]                              |
 | [`bool`](class_bool.md)                   | [`is_listening`](#class_udpserver_method_is_listening) ( ) const[^const]                                                    |

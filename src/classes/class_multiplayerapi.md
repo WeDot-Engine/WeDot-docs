@@ -25,10 +25,14 @@ It is also possible to extend or replace the default implementation via scriptin
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`MultiplayerPeer`](class_multiplayerpeer.md) | [`multiplayer_peer`](#class_multiplayerapi_property_multiplayer_peer) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`MultiplayerAPI`](class_multiplayerapi.md)     | [`create_default_interface`](#class_multiplayerapi_method_create_default_interface) ( ) static[^static]                                                                                                |
 | [`StringName`](class_stringname.md)             | [`get_default_interface`](#class_multiplayerapi_method_get_default_interface) ( ) static[^static]                                                                                                      |
 | [`PackedInt32Array`](class_packedint32array.md) | [`get_peers`](#class_multiplayerapi_method_get_peers) ( )                                                                                                                                              |

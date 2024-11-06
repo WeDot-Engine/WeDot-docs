@@ -19,6 +19,8 @@ Most generated noise values are in the range of `[-1, 1]`, but not always. Some 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [CellularDistanceFunction](#enum_fastnoiselite_cellulardistancefunction) | [`cellular_distance_function`](#class_fastnoiselite_property_cellular_distance_function)         | ``0``                |
 | [`float`](class_float.md)                                                | [`cellular_jitter`](#class_fastnoiselite_property_cellular_jitter)                               | ``1.0``              |
 | [CellularReturnType](#enum_fastnoiselite_cellularreturntype)             | [`cellular_return_type`](#class_fastnoiselite_property_cellular_return_type)                     | ``1``                |

@@ -17,6 +17,8 @@ Settings for a single tile in a [`TileSet`](class_tileset.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`flip_h`](#class_tiledata_property_flip_h)                 | ``false``             |
 | [`bool`](class_bool.md)         | [`flip_v`](#class_tiledata_property_flip_v)                 | ``false``             |
 | [`Material`](class_material.md) | [`material`](#class_tiledata_property_material)             |                       |
@@ -31,6 +33,8 @@ Settings for a single tile in a [`TileSet`](class_tileset.md).
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`add_collision_polygon`](#class_tiledata_method_add_collision_polygon) ( layer_id: [`int`](class_int.md) )                                                                                                                                               |
 | [`float`](class_float.md)                           | [`get_collision_polygon_one_way_margin`](#class_tiledata_method_get_collision_polygon_one_way_margin) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]                                                             |
 | [`PackedVector2Array`](class_packedvector2array.md) | [`get_collision_polygon_points`](#class_tiledata_method_get_collision_polygon_points) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]                                                                             |

@@ -27,6 +27,8 @@ Internally, Godot maps these files to their respective counterparts in the targe
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Format](#enum_image_format)                    | [`_get_format`](#class_texturelayered_private_method__get_format) ( ) virtual[^virtual] const[^const]                                            |
 | [`int`](class_int.md)                           | [`_get_height`](#class_texturelayered_private_method__get_height) ( ) virtual[^virtual] const[^const]                                            |
 | [`Image`](class_image.md)                       | [`_get_layer_data`](#class_texturelayered_private_method__get_layer_data) ( layer_index: [`int`](class_int.md) ) virtual[^virtual] const[^const] |

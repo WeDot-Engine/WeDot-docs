@@ -217,11 +217,15 @@ The keys of a dictionary can be iterated with the `for` keyword:
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md) | [`Dictionary`](#class_dictionary_constructor_dictionary) ( )                                           |
 | [`Dictionary`](class_dictionary.md) | [`Dictionary`](#class_dictionary_constructor_dictionary) ( from: [`Dictionary`](class_dictionary.md) ) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                              | [`clear`](#class_dictionary_method_clear) ( )                                                                                                                           |
 | [`Dictionary`](class_dictionary.md) | [`duplicate`](#class_dictionary_method_duplicate) ( deep: [`bool`](class_bool.md) = false ) const[^const]                                                               |
 | [`bool`](class_bool.md)             | [`erase`](#class_dictionary_method_erase) ( key: [`Variant`](class_variant.md) )                                                                                        |
@@ -243,6 +247,8 @@ The keys of a dictionary can be iterated with the `for` keyword:
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`operator !=`](class_Dictionary.md#operator_neq_Dictionary) ( right: [`Dictionary`](class_dictionary.md) ) |
 | [`bool`](class_bool.md)       | [`operator ==`](class_Dictionary.md#operator_eq_Dictionary) ( right: [`Dictionary`](class_dictionary.md) )  |
 | [`Variant`](class_variant.md) | [`operator []`](class_Dictionary.md#operator_idx_Variant) ( key: [`Variant`](class_variant.md) )            |

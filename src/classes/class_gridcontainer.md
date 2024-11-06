@@ -19,10 +19,14 @@ A container that arranges its child controls in a grid layout.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`columns`](#class_gridcontainer_property_columns) | ``1`` |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`h_separation`](#class_gridcontainer_theme_constant_h_separation) | ``4`` |
 | [`int`](class_int.md) | [`v_separation`](#class_gridcontainer_theme_constant_v_separation) | ``4`` |
 

@@ -23,6 +23,8 @@ As many XR runtimes now use a configurable action map all inputs are named.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                            | [`get_float`](#class_xrcontroller3d_method_get_float) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
 | [`Variant`](class_variant.md)                        | [`get_input`](#class_xrcontroller3d_method_get_input) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
 | [TrackerHand](#enum_xrpositionaltracker_trackerhand) | [`get_tracker_hand`](#class_xrcontroller3d_method_get_tracker_hand) ( ) const[^const]                                             |

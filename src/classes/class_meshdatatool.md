@@ -73,6 +73,8 @@ See also [`ArrayMesh`](class_arraymesh.md), [`ImmediateMesh`](class_immediatemes
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`clear`](#class_meshdatatool_method_clear) ( )                                                                                                                    |
 | [Error](#enum_@globalscope_error)                   | [`commit_to_surface`](#class_meshdatatool_method_commit_to_surface) ( mesh: [`ArrayMesh`](class_arraymesh.md), compression_flags: [`int`](class_int.md) = 0 )      |
 | [Error](#enum_@globalscope_error)                   | [`create_from_surface`](#class_meshdatatool_method_create_from_surface) ( mesh: [`ArrayMesh`](class_arraymesh.md), surface: [`int`](class_int.md) )                |

@@ -25,12 +25,16 @@ Slots can be configured in the Inspector dock once you add at least one child [`
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                  | [`ignore_invalid_connection_type`](#class_graphnode_property_ignore_invalid_connection_type) | ``false``                                                           |
 | [MouseFilter](#enum_control_mousefilter) | mouse_filter                                                                                 | ``0`` (overrides [`Control`](#class_control_property_mouse_filter)) |
 | [`String`](class_string.md)              | [`title`](#class_graphnode_property_title)                                                   | ``""``                                                              |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                    | [`_draw_port`](#class_graphnode_private_method__draw_port) ( slot_index: [`int`](class_int.md), position: [`Vector2i`](class_vector2i.md), left: [`bool`](class_bool.md), color: [`Color`](class_color.md) ) virtual[^virtual]                                                                                                                                                                                                                                                                          |
 | `void`                                    | [`clear_all_slots`](#class_graphnode_method_clear_all_slots) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `void`                                    | [`clear_slot`](#class_graphnode_method_clear_slot) ( slot_index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -67,6 +71,8 @@ Slots can be configured in the Inspector dock once you add at least one child [`
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`resizer_color`](#class_graphnode_theme_color_resizer_color)         | ``Color(0.875, 0.875, 0.875, 1)`` |
 | [`int`](class_int.md)             | [`port_h_offset`](#class_graphnode_theme_constant_port_h_offset)      | ``0``                             |
 | [`int`](class_int.md)             | [`separation`](#class_graphnode_theme_constant_separation)            | ``2``                             |

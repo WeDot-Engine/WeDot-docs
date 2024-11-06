@@ -34,6 +34,8 @@ This class implements a writer that allows storing the multiple blobs in a zip a
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error) | [`close`](#class_zippacker_method_close) ( )                                                                                     |
 | [Error](#enum_@globalscope_error) | [`close_file`](#class_zippacker_method_close_file) ( )                                                                           |
 | [Error](#enum_@globalscope_error) | [`open`](#class_zippacker_method_open) ( path: [`String`](class_string.md), append: [ZipAppend](#enum_zippacker_zipappend) = 0 ) |

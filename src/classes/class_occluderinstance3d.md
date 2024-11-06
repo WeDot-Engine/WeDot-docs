@@ -27,12 +27,16 @@ The occlusion culling system works by rendering the occluders on the CPU in para
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)               | [`bake_mask`](#class_occluderinstance3d_property_bake_mask)                                       | ``4294967295`` |
 | [`float`](class_float.md)           | [`bake_simplification_distance`](#class_occluderinstance3d_property_bake_simplification_distance) | ``0.1``        |
 | [`Occluder3D`](class_occluder3d.md) | [`occluder`](#class_occluderinstance3d_property_occluder)                                         |                |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`get_bake_mask_value`](#class_occluderinstance3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
 | `void`                  | [`set_bake_mask_value`](#class_occluderinstance3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 

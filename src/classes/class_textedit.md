@@ -23,6 +23,8 @@ A multiline text editor. It also has limited facilities for editing code, such a
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](#class_textedit_property_autowrap_mode)                                                 | ``3``                                                                             |
 | [`bool`](class_bool.md)                                       | [`caret_blink`](#class_textedit_property_caret_blink)                                                     | ``false``                                                                         |
 | [`float`](class_float.md)                                     | [`caret_blink_interval`](#class_textedit_property_caret_blink_interval)                                   | ``0.65``                                                                          |
@@ -70,6 +72,8 @@ A multiline text editor. It also has limited facilities for editing code, such a
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                  | [`_backspace`](#class_textedit_private_method__backspace) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                       |
 | `void`                                                  | [`_copy`](#class_textedit_private_method__copy) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                                 |
 | `void`                                                  | [`_cut`](#class_textedit_private_method__cut) ( caret_index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                                   |
@@ -230,6 +234,8 @@ A multiline text editor. It also has limited facilities for editing code, such a
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`background_color`](#class_textedit_theme_color_background_color)                     | ``Color(0, 0, 0, 0)``               |
 | [`Color`](class_color.md)         | [`caret_background_color`](#class_textedit_theme_color_caret_background_color)         | ``Color(0, 0, 0, 1)``               |
 | [`Color`](class_color.md)         | [`caret_color`](#class_textedit_theme_color_caret_color)                               | ``Color(0.875, 0.875, 0.875, 1)``   |

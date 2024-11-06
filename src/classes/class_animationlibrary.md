@@ -17,6 +17,8 @@ An animation library stores a set of animations accessible through [`StringName`
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)                           | [`add_animation`](#class_animationlibrary_method_add_animation) ( name: [`StringName`](class_stringname.md), animation: [`Animation`](class_animation.md) )       |
 | [`Animation`](class_animation.md)                           | [`get_animation`](#class_animationlibrary_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
 | [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_list`](#class_animationlibrary_method_get_animation_list) ( ) const[^const]                                                                       |

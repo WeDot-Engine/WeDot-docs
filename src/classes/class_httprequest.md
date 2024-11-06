@@ -189,6 +189,8 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`accept_gzip`](#class_httprequest_property_accept_gzip)                 | ``true``  |
 | [`int`](class_int.md)       | [`body_size_limit`](#class_httprequest_property_body_size_limit)         | ``-1``    |
 | [`int`](class_int.md)       | [`download_chunk_size`](#class_httprequest_property_download_chunk_size) | ``65536`` |
@@ -199,6 +201,8 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                            | [`cancel_request`](#class_httprequest_method_cancel_request) ( )                                                                                                                                                                                                                                                         |
 | [`int`](class_int.md)             | [`get_body_size`](#class_httprequest_method_get_body_size) ( ) const[^const]                                                                                                                                                                                                                                             |
 | [`int`](class_int.md)             | [`get_downloaded_bytes`](#class_httprequest_method_get_downloaded_bytes) ( ) const[^const]                                                                                                                                                                                                                               |

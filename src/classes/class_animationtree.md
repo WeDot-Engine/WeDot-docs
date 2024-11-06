@@ -19,6 +19,8 @@ A node used for advanced animation transitions in an [`AnimationPlayer`](class_a
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md)                                                     | [`advance_expression_base_node`](#class_animationtree_property_advance_expression_base_node) | ``NodePath(".")``                                                                           |
 | [`NodePath`](class_nodepath.md)                                                     | [`anim_player`](#class_animationtree_property_anim_player)                                   | ``NodePath("")``                                                                            |
 | [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) | callback_mode_discrete                                                                       | ``2`` (overrides [`AnimationMixer`](#class_animationmixer_property_callback_mode_discrete)) |
@@ -27,6 +29,8 @@ A node used for advanced animation transitions in an [`AnimationPlayer`](class_a
 
 ## 方法
 
+|||
+|:-:|:--|
 | [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) | [`get_process_callback`](#class_animationtree_method_get_process_callback) ( ) const[^const]                                                                  |
 | `void`                                                                   | [`set_process_callback`](#class_animationtree_method_set_process_callback) ( mode: [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) ) |
 

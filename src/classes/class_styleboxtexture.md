@@ -17,6 +17,8 @@ A texture-based nine-patch [`StyleBox`](class_stylebox.md), in a way similar to 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AxisStretchMode](#enum_styleboxtexture_axisstretchmode) | [`axis_stretch_horizontal`](#class_styleboxtexture_property_axis_stretch_horizontal) | ``0``                 |
 | [AxisStretchMode](#enum_styleboxtexture_axisstretchmode) | [`axis_stretch_vertical`](#class_styleboxtexture_property_axis_stretch_vertical)     | ``0``                 |
 | [`bool`](class_bool.md)                                  | [`draw_center`](#class_styleboxtexture_property_draw_center)                         | ``true``              |
@@ -34,6 +36,8 @@ A texture-based nine-patch [`StyleBox`](class_stylebox.md), in a way similar to 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_expand_margin`](#class_styleboxtexture_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
 | [`float`](class_float.md) | [`get_texture_margin`](#class_styleboxtexture_method_get_texture_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                    |
 | `void`                    | [`set_expand_margin`](#class_styleboxtexture_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |

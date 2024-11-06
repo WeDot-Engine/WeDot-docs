@@ -17,6 +17,8 @@ Sprite frame library for an [`AnimatedSprite2D`](class_animatedsprite2d.md) or [
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_animation`](#class_spriteframes_method_add_animation) ( anim: [`StringName`](class_stringname.md) )                                                                                                                         |
 | `void`                                            | [`add_frame`](#class_spriteframes_method_add_frame) ( anim: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), duration: [`float`](class_float.md) = 1.0, at_position: [`int`](class_int.md) = -1 ) |
 | `void`                                            | [`clear`](#class_spriteframes_method_clear) ( anim: [`StringName`](class_stringname.md) )                                                                                                                                         |

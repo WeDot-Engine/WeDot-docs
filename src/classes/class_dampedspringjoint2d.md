@@ -17,6 +17,8 @@ A physics joint that connects two 2D physics bodies with a spring-like force. Th
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`damping`](#class_dampedspringjoint2d_property_damping)         | ``1.0``  |
 | [`float`](class_float.md) | [`length`](#class_dampedspringjoint2d_property_length)           | ``50.0`` |
 | [`float`](class_float.md) | [`rest_length`](#class_dampedspringjoint2d_property_rest_length) | ``0.0``  |

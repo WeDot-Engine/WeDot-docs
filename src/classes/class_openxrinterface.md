@@ -19,6 +19,8 @@ Due to the needs of OpenXR this interface works slightly different than other pl
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`display_refresh_rate`](#class_openxrinterface_property_display_refresh_rate)                   | ``0.0``   |
 | [`bool`](class_bool.md)   | [`foveation_dynamic`](#class_openxrinterface_property_foveation_dynamic)                         | ``false`` |
 | [`int`](class_int.md)     | [`foveation_level`](#class_openxrinterface_property_foveation_level)                             | ``0``     |
@@ -28,6 +30,8 @@ Due to the needs of OpenXR this interface works slightly different than other pl
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Array`](class_array.md)                                    | [`get_action_sets`](#class_openxrinterface_method_get_action_sets) ( ) const[^const]                                                                                                                                 |
 | [`Array`](class_array.md)                                    | [`get_available_display_refresh_rates`](#class_openxrinterface_method_get_available_display_refresh_rates) ( ) const[^const]                                                                                         |
 | [`Vector3`](class_vector3.md)                                | [`get_hand_joint_angular_velocity`](#class_openxrinterface_method_get_hand_joint_angular_velocity) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const] |

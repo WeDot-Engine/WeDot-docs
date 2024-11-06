@@ -17,6 +17,8 @@ WAV is an uncompressed format, which can provide higher quality compared to Ogg 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`compress/mode`](#class_resourceimporterwav_property_compress/mode)         | ``0``     |
 | [`int`](class_int.md)     | [`edit/loop_begin`](#class_resourceimporterwav_property_edit/loop_begin)     | ``0``     |
 | [`int`](class_int.md)     | [`edit/loop_end`](#class_resourceimporterwav_property_edit/loop_end)         | ``-1``    |

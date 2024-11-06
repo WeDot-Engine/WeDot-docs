@@ -25,12 +25,16 @@ CCDIK also fully supports angle constraints, allowing for more control over how 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)           | [`ccdik_data_chain_length`](#class_skeletonmodification2dccdik_property_ccdik_data_chain_length) | ``0``            |
 | [`NodePath`](class_nodepath.md) | [`target_nodepath`](#class_skeletonmodification2dccdik_property_target_nodepath)                 | ``NodePath("")`` |
 | [`NodePath`](class_nodepath.md) | [`tip_nodepath`](#class_skeletonmodification2dccdik_property_tip_nodepath)                       | ``NodePath("")`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md) | [`get_ccdik_joint_bone2d_node`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                            |
 | [`int`](class_int.md)           | [`get_ccdik_joint_bone_index`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                              |
 | [`bool`](class_bool.md)         | [`get_ccdik_joint_constraint_angle_invert`](#class_skeletonmodification2dccdik_method_get_ccdik_joint_constraint_angle_invert) ( joint_idx: [`int`](class_int.md) ) const[^const]                    |

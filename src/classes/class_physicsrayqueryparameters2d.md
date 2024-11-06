@@ -17,6 +17,8 @@ By changing various properties of this object, such as the ray position, you can
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`collide_with_areas`](#class_physicsrayqueryparameters2d_property_collide_with_areas)   | ``false``         |
 | [`bool`](class_bool.md)                       | [`collide_with_bodies`](#class_physicsrayqueryparameters2d_property_collide_with_bodies) | ``true``          |
 | [`int`](class_int.md)                         | [`collision_mask`](#class_physicsrayqueryparameters2d_property_collision_mask)           | ``4294967295``    |
@@ -27,6 +29,8 @@ By changing various properties of this object, such as the ray position, you can
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PhysicsRayQueryParameters2D`](class_physicsrayqueryparameters2d.md) | [`create`](#class_physicsrayqueryparameters2d_method_create) ( from: [`Vector2`](class_vector2.md), to: [`Vector2`](class_vector2.md), collision_mask: [`int`](class_int.md) = 4294967295, exclude: [Array](class_array.md) [`RID`](class_rid.md) = [] ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->

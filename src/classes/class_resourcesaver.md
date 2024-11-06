@@ -19,6 +19,8 @@ It uses the many [`ResourceFormatSaver`](class_resourceformatsaver.md) classes r
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_resource_format_saver`](#class_resourcesaver_method_add_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md), at_front: [`bool`](class_bool.md) = false ) |
 | [`PackedStringArray`](class_packedstringarray.md) | [`get_recognized_extensions`](#class_resourcesaver_method_get_recognized_extensions) ( type: [`Resource`](class_resource.md) )                                                                          |
 | `void`                                            | [`remove_resource_format_saver`](#class_resourcesaver_method_remove_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md) )                                      |

@@ -17,6 +17,8 @@ Represents a physics body as an intermediary between the `OMI_physics_body` GLTF
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md)       | [`angular_velocity`](#class_gltfphysicsbody_property_angular_velocity)       | ``Vector3(0, 0, 0)``                 |
 | [`String`](class_string.md)         | [`body_type`](#class_gltfphysicsbody_property_body_type)                     | ``"rigid"``                          |
 | [`Vector3`](class_vector3.md)       | [`center_of_mass`](#class_gltfphysicsbody_property_center_of_mass)           | ``Vector3(0, 0, 0)``                 |
@@ -28,6 +30,8 @@ Represents a physics body as an intermediary between the `OMI_physics_body` GLTF
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_dictionary`](#class_gltfphysicsbody_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]  |
 | [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_node`](#class_gltfphysicsbody_method_from_node) ( body_node: [`CollisionObject3D`](class_collisionobject3d.md) ) static[^static] |
 | [`Dictionary`](class_dictionary.md)               | [`to_dictionary`](#class_gltfphysicsbody_method_to_dictionary) ( ) const[^const]                                                        |

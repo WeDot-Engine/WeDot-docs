@@ -19,10 +19,14 @@ Abstract base class for different font types. It has methods for drawing text an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`Font`](class_font.md) | [`fallbacks`](#class_font_property_fallbacks) | ``[]`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                     | [`draw_char`](#class_font_method_draw_char) ( canvas_item: [`RID`](class_rid.md), pos: [`Vector2`](class_vector2.md), char: [`int`](class_int.md), font_size: [`int`](class_int.md), modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | [`float`](class_float.md)                     | [`draw_char_outline`](#class_font_method_draw_char_outline) ( canvas_item: [`RID`](class_rid.md), pos: [`Vector2`](class_vector2.md), char: [`int`](class_int.md), font_size: [`int`](class_int.md), size: [`int`](class_int.md) = -1, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `void`                                        | [`draw_multiline_string`](#class_font_method_draw_multiline_string) ( canvas_item: [`RID`](class_rid.md), pos: [`Vector2`](class_vector2.md), text: [`String`](class_string.md), alignment: [HorizontalAlignment](#enum_@globalscope_horizontalalignment) = 0, width: [`float`](class_float.md) = -1, font_size: [`int`](class_int.md) = 16, max_lines: [`int`](class_int.md) = -1, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1), brk_flags: [LineBreakFlag](#enum_textserver_linebreakflag) = 3, justification_flags: [JustificationFlag](#enum_textserver_justificationflag) = 3, direction: [Direction](#enum_textserver_direction) = 0, orientation: [Orientation](#enum_textserver_orientation) = 0 ) const[^const]                                                  |

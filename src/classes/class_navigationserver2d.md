@@ -33,6 +33,8 @@ This server keeps tracks of any call and executes them during the sync phase. Th
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md)                               | [`agent_create`](#class_navigationserver2d_method_agent_create) ( )                                                                                                                                                                                                                                                                                                          |
 | [`bool`](class_bool.md)                             | [`agent_get_avoidance_enabled`](#class_navigationserver2d_method_agent_get_avoidance_enabled) ( agent: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                 |
 | [`int`](class_int.md)                               | [`agent_get_avoidance_layers`](#class_navigationserver2d_method_agent_get_avoidance_layers) ( agent: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                   |

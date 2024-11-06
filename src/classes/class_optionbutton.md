@@ -23,6 +23,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ActionMode](#enum_basebutton_actionmode)                     | action_mode                                                               | ``0`` (overrides [`BaseButton`](#class_basebutton_property_action_mode))    |
 | [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | alignment                                                                 | ``0`` (overrides [`Button`](#class_button_property_alignment))              |
 | [`bool`](class_bool.md)                                       | [`allow_reselect`](#class_optionbutton_property_allow_reselect)           | ``false``                                                                   |
@@ -33,6 +35,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                            | [`add_icon_item`](#class_optionbutton_method_add_icon_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1 ) |
 | `void`                            | [`add_item`](#class_optionbutton_method_add_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1 )                                                       |
 | `void`                            | [`add_separator`](#class_optionbutton_method_add_separator) ( text: [`String`](class_string.md) = "" )                                                                         |
@@ -63,6 +67,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`arrow_margin`](#class_optionbutton_theme_constant_arrow_margin)     | ``4`` |
 | [`int`](class_int.md)             | [`modulate_arrow`](#class_optionbutton_theme_constant_modulate_arrow) | ``0`` |
 | [`Texture2D`](class_texture2d.md) | [`arrow`](#class_optionbutton_theme_icon_arrow)                       |       |

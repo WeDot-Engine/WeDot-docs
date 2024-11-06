@@ -37,6 +37,8 @@ Sets [`mouse_filter`](#class_control_property_mouse_filter) to [`MOUSE_FILTER_IG
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                       | [`anchor_bottom`](#class_control_property_anchor_bottom)                                   | ``0.0``                                                                     |
 | [`float`](class_float.md)                                       | [`anchor_left`](#class_control_property_anchor_left)                                       | ``0.0``                                                                     |
 | [`float`](class_float.md)                                       | [`anchor_right`](#class_control_property_anchor_right)                                     | ``0.0``                                                                     |
@@ -80,6 +82,8 @@ Sets [`mouse_filter`](#class_control_property_mouse_filter) to [`MOUSE_FILTER_IG
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                 | [`_can_drop_data`](#class_control_private_method__can_drop_data) ( at_position: [`Vector2`](class_vector2.md), data: [`Variant`](class_variant.md) ) virtual[^virtual] const[^const]                                                                    |
 | `void`                                                  | [`_drop_data`](#class_control_private_method__drop_data) ( at_position: [`Vector2`](class_vector2.md), data: [`Variant`](class_variant.md) ) virtual[^virtual]                                                                                          |
 | [`Variant`](class_variant.md)                           | [`_get_drag_data`](#class_control_private_method__get_drag_data) ( at_position: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                                                                                       |

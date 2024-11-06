@@ -19,6 +19,8 @@ A stream peer that handles TLS connections. This object can be used to connect t
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)    | [`accept_stream`](#class_streampeertls_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md), server_options: [`TLSOptions`](class_tlsoptions.md) )                                                          |
 | [Error](#enum_@globalscope_error)    | [`connect_to_stream`](#class_streampeertls_method_connect_to_stream) ( stream: [`StreamPeer`](class_streampeer.md), common_name: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
 | `void`                               | [`disconnect_from_stream`](#class_streampeertls_method_disconnect_from_stream) ( )                                                                                                                                         |

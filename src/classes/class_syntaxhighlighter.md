@@ -21,6 +21,8 @@ Base class for syntax highlighters. Provides syntax highlighting data to a [`Tex
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                              | [`_clear_highlighting_cache`](#class_syntaxhighlighter_private_method__clear_highlighting_cache) ( ) virtual[^virtual]                                                   |
 | [`Dictionary`](class_dictionary.md) | [`_get_line_syntax_highlighting`](#class_syntaxhighlighter_private_method__get_line_syntax_highlighting) ( line: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
 | `void`                              | [`_update_cache`](#class_syntaxhighlighter_private_method__update_cache) ( ) virtual[^virtual]                                                                           |

@@ -39,10 +39,14 @@ Allows control of [`AnimationTree`](class_animationtree.md) state machines creat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | resource_local_to_scene | ``true`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                   | [`get_current_length`](#class_animationnodestatemachineplayback_method_get_current_length) ( ) const[^const]                                                           |
 | [`StringName`](class_stringname.md)                         | [`get_current_node`](#class_animationnodestatemachineplayback_method_get_current_node) ( ) const[^const]                                                               |
 | [`float`](class_float.md)                                   | [`get_current_play_position`](#class_animationnodestatemachineplayback_method_get_current_play_position) ( ) const[^const]                                             |

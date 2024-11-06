@@ -19,6 +19,8 @@ They can be used to generate a self-signed [`X509Certificate`](class_x509certifi
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)           | [`is_public_only`](#class_cryptokey_method_is_public_only) ( ) const[^const]                                                                             |
 | [Error](#enum_@globalscope_error) | [`load`](#class_cryptokey_method_load) ( path: [`String`](class_string.md), public_only: [`bool`](class_bool.md) = false )                               |
 | [Error](#enum_@globalscope_error) | [`load_from_string`](#class_cryptokey_method_load_from_string) ( string_key: [`String`](class_string.md), public_only: [`bool`](class_bool.md) = false ) |

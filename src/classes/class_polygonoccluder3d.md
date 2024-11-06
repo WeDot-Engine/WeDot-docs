@@ -19,6 +19,8 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](#class_polygonoccluder3d_property_polygon) | ``PackedVector2Array()`` |
 
 <!-- rst-class:: classref-section-separator -->

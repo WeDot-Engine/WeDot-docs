@@ -23,10 +23,14 @@ Can be used (with an [`AudioStreamMicrophone`](class_audiostreammicrophone.md)) 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Format](#enum_audiostreamwav_format) | [`format`](#class_audioeffectrecord_property_format) | ``1`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`AudioStreamWAV`](class_audiostreamwav.md) | [`get_recording`](#class_audioeffectrecord_method_get_recording) ( ) const[^const]                                 |
 | [`bool`](class_bool.md)                     | [`is_recording_active`](#class_audioeffectrecord_method_is_recording_active) ( ) const[^const]                     |
 | `void`                                      | [`set_recording_active`](#class_audioeffectrecord_method_set_recording_active) ( record: [`bool`](class_bool.md) ) |

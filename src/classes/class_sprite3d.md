@@ -17,6 +17,8 @@ A node that displays a 2D texture in a 3D environment. The texture displayed can
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`frame`](#class_sprite3d_property_frame)                   | ``0``                 |
 | [`Vector2i`](class_vector2i.md)   | [`frame_coords`](#class_sprite3d_property_frame_coords)     | ``Vector2i(0, 0)``    |
 | [`int`](class_int.md)             | [`hframes`](#class_sprite3d_property_hframes)               | ``1``                 |

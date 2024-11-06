@@ -19,6 +19,8 @@ This texture gives access to the camera texture provided by a [`CameraFeed`](cla
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                     | [`camera_feed_id`](#class_cameratexture_property_camera_feed_id)     | ``0``                                                                                |
 | [`bool`](class_bool.md)                   | [`camera_is_active`](#class_cameratexture_property_camera_is_active) | ``false``                                                                            |
 | [`bool`](class_bool.md)                   | resource_local_to_scene                                              | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |

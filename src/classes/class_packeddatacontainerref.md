@@ -42,6 +42,8 @@ When packing nested containers using [`PackedDataContainer`](class_packeddatacon
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`size`](#class_packeddatacontainerref_method_size) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

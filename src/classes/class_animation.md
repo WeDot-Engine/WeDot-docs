@@ -53,6 +53,8 @@ Animations are just data containers, and must be added to nodes such as an [`Ani
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)              | [`capture_included`](#class_animation_property_capture_included) | ``false``     |
 | [`float`](class_float.md)            | [`length`](#class_animation_property_length)                     | ``1.0``       |
 | [LoopMode](#enum_animation_loopmode) | [`loop_mode`](#class_animation_property_loop_mode)               | ``0``         |
@@ -60,6 +62,8 @@ Animations are just data containers, and must be added to nodes such as an [`Ani
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                  | [`add_track`](#class_animation_method_add_track) ( type: [TrackType](#enum_animation_tracktype), at_position: [`int`](class_int.md) = -1 )                                                                                                                                                                |
 | [`StringName`](class_stringname.md)                    | [`animation_track_get_key_animation`](#class_animation_method_animation_track_get_key_animation) ( track_idx: [`int`](class_int.md), key_idx: [`int`](class_int.md) ) const[^const]                                                                                                                       |
 | [`int`](class_int.md)                                  | [`animation_track_insert_key`](#class_animation_method_animation_track_insert_key) ( track_idx: [`int`](class_int.md), time: [`float`](class_float.md), animation: [`StringName`](class_stringname.md) )                                                                                                  |

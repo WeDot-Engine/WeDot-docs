@@ -19,6 +19,8 @@ Intended for use with GDExtension to create custom implementations of [`PhysicsD
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`_cast_motion`](#class_physicsdirectspacestate3dextension_private_method__cast_motion) ( shape_rid: [`RID`](class_rid.md), transform: [`Transform3D`](class_transform3d.md), motion: [`Vector3`](class_vector3.md), margin: [`float`](class_float.md), collision_mask: [`int`](class_int.md), collide_with_bodies: [`bool`](class_bool.md), collide_with_areas: [`bool`](class_bool.md), closest_safe: `float*`, closest_unsafe: `float*`, info: `PhysicsServer3DExtensionShapeRestInfo*` ) virtual[^virtual] |
 | [`bool`](class_bool.md)       | [`_collide_shape`](#class_physicsdirectspacestate3dextension_private_method__collide_shape) ( shape_rid: [`RID`](class_rid.md), transform: [`Transform3D`](class_transform3d.md), motion: [`Vector3`](class_vector3.md), margin: [`float`](class_float.md), collision_mask: [`int`](class_int.md), collide_with_bodies: [`bool`](class_bool.md), collide_with_areas: [`bool`](class_bool.md), results: `void*`, max_results: [`int`](class_int.md), result_count: `int32_t*` ) virtual[^virtual]               |
 | [`Vector3`](class_vector3.md) | [`_get_closest_point_to_object_volume`](#class_physicsdirectspacestate3dextension_private_method__get_closest_point_to_object_volume) ( object: [`RID`](class_rid.md), point: [`Vector3`](class_vector3.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                                  |

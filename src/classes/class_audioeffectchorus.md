@@ -17,6 +17,8 @@ Adds a chorus audio effect. The effect applies a filter with voices to duplicate
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`dry`](#class_audioeffectchorus_property_dry)                             | ``1.0``    |
 | [`float`](class_float.md) | [`voice/1/cutoff_hz`](#class_audioeffectchorus_property_voice/1/cutoff_hz) | ``8000.0`` |
 | [`float`](class_float.md) | [`voice/1/delay_ms`](#class_audioeffectchorus_property_voice/1/delay_ms)   | ``15.0``   |
@@ -47,6 +49,8 @@ Adds a chorus audio effect. The effect applies a filter with voices to duplicate
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_voice_cutoff_hz`](#class_audioeffectchorus_method_get_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                         |
 | [`float`](class_float.md) | [`get_voice_delay_ms`](#class_audioeffectchorus_method_get_voice_delay_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
 | [`float`](class_float.md) | [`get_voice_depth_ms`](#class_audioeffectchorus_method_get_voice_depth_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |

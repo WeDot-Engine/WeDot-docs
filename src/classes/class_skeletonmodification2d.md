@@ -23,11 +23,15 @@ This is used to provide Godot with a flexible and powerful Inverse Kinematics so
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`enabled`](#class_skeletonmodification2d_property_enabled)               | ``true`` |
 | [`int`](class_int.md)   | [`execution_mode`](#class_skeletonmodification2d_property_execution_mode) | ``0``    |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                                | [`_draw_editor_gizmo`](#class_skeletonmodification2d_private_method__draw_editor_gizmo) ( ) virtual[^virtual]                                                                                             |
 | `void`                                                                | [`_execute`](#class_skeletonmodification2d_private_method__execute) ( delta: [`float`](class_float.md) ) virtual[^virtual]                                                                                |
 | `void`                                                                | [`_setup_modification`](#class_skeletonmodification2d_private_method__setup_modification) ( modification_stack: [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) ) virtual[^virtual] |

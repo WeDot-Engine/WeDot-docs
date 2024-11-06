@@ -17,6 +17,8 @@ Abstraction over [`TextServer`](class_textserver.md) for handling a single parag
 
 ## 属性
 
+|||
+|:-:|:--|
 | [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_textparagraph_property_alignment)                         | ``0``     |
 | [LineBreakFlag](#enum_textserver_linebreakflag)               | [`break_flags`](#class_textparagraph_property_break_flags)                     | ``3``     |
 | [`String`](class_string.md)                                   | [`custom_punctuation`](#class_textparagraph_property_custom_punctuation)       | ``""``    |
@@ -32,6 +34,8 @@ Abstraction over [`TextServer`](class_textserver.md) for handling a single parag
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`add_object`](#class_textparagraph_method_add_object) ( key: [`Variant`](class_variant.md), size: [`Vector2`](class_vector2.md), inline_align: [InlineAlignment](#enum_@globalscope_inlinealignment) = 5, length: [`int`](class_int.md) = 1, baseline: [`float`](class_float.md) = 0.0 )              |
 | [`bool`](class_bool.md)         | [`add_string`](#class_textparagraph_method_add_string) ( text: [`String`](class_string.md), font: [`Font`](class_font.md), font_size: [`int`](class_int.md), language: [`String`](class_string.md) = "", meta: [`Variant`](class_variant.md) = null )                                                  |
 | `void`                          | [`clear`](#class_textparagraph_method_clear) ( )                                                                                                                                                                                                                                                       |

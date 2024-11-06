@@ -49,6 +49,8 @@ To remove a point from the pathfinding grid, it must be set as "solid" with [`se
 
 ## 属性
 
+|||
+|:-:|:--|
 | [CellShape](#enum_astargrid2d_cellshape)       | [`cell_shape`](#class_astargrid2d_property_cell_shape)                                 | ``0``                  |
 | [`Vector2`](class_vector2.md)                  | [`cell_size`](#class_astargrid2d_property_cell_size)                                   | ``Vector2(1, 1)``      |
 | [Heuristic](#enum_astargrid2d_heuristic)       | [`default_compute_heuristic`](#class_astargrid2d_property_default_compute_heuristic)   | ``0``                  |
@@ -61,6 +63,8 @@ To remove a point from the pathfinding grid, it must be set as "solid" with [`se
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                               | [`_compute_cost`](#class_astargrid2d_private_method__compute_cost) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]                |
 | [`float`](class_float.md)                               | [`_estimate_cost`](#class_astargrid2d_private_method__estimate_cost) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]              |
 | `void`                                                  | [`clear`](#class_astargrid2d_method_clear) ( )                                                                                                                                                         |

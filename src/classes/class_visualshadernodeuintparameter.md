@@ -17,6 +17,8 @@ A [`VisualShaderNodeParameter`](class_visualshadernodeparameter.md) of type unsi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)   | [`default_value`](#class_visualshadernodeuintparameter_property_default_value)                 | ``0``     |
 | [`bool`](class_bool.md) | [`default_value_enabled`](#class_visualshadernodeuintparameter_property_default_value_enabled) | ``false`` |
 

@@ -17,6 +17,8 @@ Custom code to generate previews. Please check `file_dialog/thumbnail_size` in [
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)           | [`_can_generate_small_preview`](#class_editorresourcepreviewgenerator_private_method__can_generate_small_preview) ( ) virtual[^virtual] const[^const]                                                                                                         |
 | [`Texture2D`](class_texture2d.md) | [`_generate`](#class_editorresourcepreviewgenerator_private_method__generate) ( resource: [`Resource`](class_resource.md), size: [`Vector2i`](class_vector2i.md), metadata: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const]             |
 | [`Texture2D`](class_texture2d.md) | [`_generate_from_path`](#class_editorresourcepreviewgenerator_private_method__generate_from_path) ( path: [`String`](class_string.md), size: [`Vector2i`](class_vector2i.md), metadata: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const] |

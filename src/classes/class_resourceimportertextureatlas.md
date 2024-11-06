@@ -19,6 +19,8 @@ This imports a collection of textures from a PNG image into an [`AtlasTexture`](
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`atlas_file`](#class_resourceimportertextureatlas_property_atlas_file)                                       | ``""``    |
 | [`bool`](class_bool.md)     | [`crop_to_region`](#class_resourceimportertextureatlas_property_crop_to_region)                               | ``false`` |
 | [`int`](class_int.md)       | [`import_mode`](#class_resourceimportertextureatlas_property_import_mode)                                     | ``0``     |

@@ -32,12 +32,16 @@ If you want to join the strings in the array, use [`String.join`](#class_string_
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](#class_packedstringarray_constructor_packedstringarray) ( )                                                         |
 | [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](#class_packedstringarray_constructor_packedstringarray) ( from: [`PackedStringArray`](class_packedstringarray.md) ) |
 | [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](#class_packedstringarray_constructor_packedstringarray) ( from: [`Array`](class_array.md) )                         |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                           | [`append`](#class_packedstringarray_method_append) ( value: [`String`](class_string.md) )                                                |
 | `void`                                            | [`append_array`](#class_packedstringarray_method_append_array) ( array: [`PackedStringArray`](class_packedstringarray.md) )              |
 | [`int`](class_int.md)                             | [`bsearch`](#class_packedstringarray_method_bsearch) ( value: [`String`](class_string.md), before: [`bool`](class_bool.md) = true )      |
@@ -62,6 +66,8 @@ If you want to join the strings in the array, use [`String.join`](#class_string_
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                           | [`operator !=`](class_PackedStringArray.md#operator_neq_PackedStringArray) ( right: [`PackedStringArray`](class_packedstringarray.md) ) |
 | [`PackedStringArray`](class_packedstringarray.md) | [`operator +`](class_PackedStringArray.md#operator_sum_PackedStringArray) ( right: [`PackedStringArray`](class_packedstringarray.md) )  |
 | [`bool`](class_bool.md)                           | [`operator ==`](class_PackedStringArray.md#operator_eq_PackedStringArray) ( right: [`PackedStringArray`](class_packedstringarray.md) )  |

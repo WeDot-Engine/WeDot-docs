@@ -21,6 +21,8 @@ To create a **TreeItem**, use [`Tree.create_item`](#class_tree_method_create_ite
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`collapsed`](#class_treeitem_property_collapsed)                         |
 | [`int`](class_int.md)   | [`custom_minimum_height`](#class_treeitem_property_custom_minimum_height) |
 | [`bool`](class_bool.md) | [`disable_folding`](#class_treeitem_property_disable_folding)             |
@@ -28,6 +30,8 @@ To create a **TreeItem**, use [`Tree.create_item`](#class_tree_method_create_ite
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                        | [`add_button`](#class_treeitem_method_add_button) ( column: [`int`](class_int.md), button: [`Texture2D`](class_texture2d.md), id: [`int`](class_int.md) = -1, disabled: [`bool`](class_bool.md) = false, tooltip_text: [`String`](class_string.md) = "" ) |
 | `void`                                                        | [`add_child`](#class_treeitem_method_add_child) ( child: [`TreeItem`](class_treeitem.md) )                                                                                                                                                                |
 | `void`                                                        | [`call_recursive`](#class_treeitem_method_call_recursive) ( method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                                                            |

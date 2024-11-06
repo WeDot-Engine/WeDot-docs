@@ -23,6 +23,8 @@ Particle collision shapes work in real-time and can be moved, rotated and scaled
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md) | [`size`](#class_gpuparticlescollisionbox3d_property_size) | ``Vector3(2, 2, 2)`` |
 
 <!-- rst-class:: classref-section-separator -->

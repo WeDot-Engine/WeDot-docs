@@ -17,6 +17,8 @@ This texture class allows you to use a 2D texture created directly on the [`Rend
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | resource_local_to_scene                                        | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
 | [`RID`](class_rid.md)   | [`texture_rd_rid`](#class_texture2drd_property_texture_rd_rid) |                                                                                      |
 

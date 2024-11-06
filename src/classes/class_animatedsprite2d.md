@@ -17,6 +17,8 @@ Sprite node that contains multiple textures as frames to play for animation.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md)     | [`animation`](#class_animatedsprite2d_property_animation)           | ``&"default"``    |
 | [`String`](class_string.md)             | [`autoplay`](#class_animatedsprite2d_property_autoplay)             | ``""``            |
 | [`bool`](class_bool.md)                 | [`centered`](#class_animatedsprite2d_property_centered)             | ``true``          |
@@ -30,6 +32,8 @@ Sprite node that contains multiple textures as frames to play for animation.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_playing_speed`](#class_animatedsprite2d_method_get_playing_speed) ( ) const[^const]                                                                                                   |
 | [`bool`](class_bool.md)   | [`is_playing`](#class_animatedsprite2d_method_is_playing) ( ) const[^const]                                                                                                                 |
 | `void`                    | [`pause`](#class_animatedsprite2d_method_pause) ( )                                                                                                                                         |

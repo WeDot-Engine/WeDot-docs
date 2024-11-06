@@ -19,11 +19,15 @@ It uses integer coordinates and is therefore preferable to [`Vector2`](class_vec
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`x`](#class_vector2i_property_x) | ``0`` |
 | [`int`](class_int.md) | [`y`](#class_vector2i_property_y) | ``0`` |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( )                                                    |
 | [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( from: [`Vector2i`](class_vector2i.md) )              |
 | [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( from: [`Vector2`](class_vector2.md) )                |
@@ -31,6 +35,8 @@ It uses integer coordinates and is therefore preferable to [`Vector2`](class_vec
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector2i`](class_vector2i.md) | [`abs`](#class_vector2i_method_abs) ( ) const[^const]                                                                                |
 | [`float`](class_float.md)       | [`aspect`](#class_vector2i_method_aspect) ( ) const[^const]                                                                          |
 | [`Vector2i`](class_vector2i.md) | [`clamp`](#class_vector2i_method_clamp) ( min: [`Vector2i`](class_vector2i.md), max: [`Vector2i`](class_vector2i.md) ) const[^const] |
@@ -51,6 +57,8 @@ It uses integer coordinates and is therefore preferable to [`Vector2`](class_vec
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`operator !=`](class_Vector2i.md#operator_neq_Vector2i) ( right: [`Vector2i`](class_vector2i.md) ) |
 | [`Vector2i`](class_vector2i.md) | [`operator %`](class_Vector2i.md#operator_mod_Vector2i) ( right: [`Vector2i`](class_vector2i.md) )  |
 | [`Vector2i`](class_vector2i.md) | [`operator %`](class_Vector2i.md#operator_mod_int) ( right: [`int`](class_int.md) )                 |

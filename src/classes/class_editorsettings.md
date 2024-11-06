@@ -51,6 +51,8 @@ Accessing the settings can be done using the following methods, such as:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                           | [`debugger/auto_switch_to_remote_scene_tree`](#class_editorsettings_property_debugger/auto_switch_to_remote_scene_tree)                                                                                         |
 | [`bool`](class_bool.md)                           | [`debugger/profile_native_calls`](#class_editorsettings_property_debugger/profile_native_calls)                                                                                                                 |
 | [`int`](class_int.md)                             | [`debugger/profiler_frame_history_size`](#class_editorsettings_property_debugger/profiler_frame_history_size)                                                                                                   |
@@ -378,6 +380,8 @@ Accessing the settings can be done using the following methods, such as:
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_property_info`](#class_editorsettings_method_add_property_info) ( info: [`Dictionary`](class_dictionary.md) )                                                                                                 |
 | [`bool`](class_bool.md)                           | [`check_changed_settings_in_group`](#class_editorsettings_method_check_changed_settings_in_group) ( setting_prefix: [`String`](class_string.md) ) const[^const]                                                     |
 | `void`                                            | [`erase`](#class_editorsettings_method_erase) ( property: [`String`](class_string.md) )                                                                                                                             |

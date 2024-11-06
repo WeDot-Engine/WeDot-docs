@@ -23,6 +23,8 @@ Inheriting noise classes can optionally override this function to provide a more
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Image`](class_image.md)                         | [`get_image`](#class_noise_method_get_image) ( width: [`int`](class_int.md), height: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, in_3d_space: [`bool`](class_bool.md) = false, normalize: [`bool`](class_bool.md) = true ) const[^const]                                                           |
 | [Array](class_array.md) [`Image`](class_image.md) | [`get_image_3d`](#class_noise_method_get_image_3d) ( width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, normalize: [`bool`](class_bool.md) = true ) const[^const]                                                                     |
 | [`float`](class_float.md)                         | [`get_noise_1d`](#class_noise_method_get_noise_1d) ( x: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                      |

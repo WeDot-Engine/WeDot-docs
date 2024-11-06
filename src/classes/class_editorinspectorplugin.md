@@ -29,6 +29,8 @@ To use **EditorInspectorPlugin**, register it using the [`EditorPlugin.add_inspe
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`_can_handle`](#class_editorinspectorplugin_private_method__can_handle) ( object: [`Object`](class_object.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                                                                    |
 | `void`                  | [`_parse_begin`](#class_editorinspectorplugin_private_method__parse_begin) ( object: [`Object`](class_object.md) ) virtual[^virtual]                                                                                                                                                                                                                                                                                                                |
 | `void`                  | [`_parse_category`](#class_editorinspectorplugin_private_method__parse_category) ( object: [`Object`](class_object.md), category: [`String`](class_string.md) ) virtual[^virtual]                                                                                                                                                                                                                                                                   |

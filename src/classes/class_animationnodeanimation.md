@@ -17,6 +17,8 @@ A resource to add to an [`AnimationNodeBlendTree`](class_animationnodeblendtree.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md)               | [`animation`](#class_animationnodeanimation_property_animation)                     | ``&""``   |
 | [LoopMode](#enum_animation_loopmode)              | [`loop_mode`](#class_animationnodeanimation_property_loop_mode)                     |           |
 | [PlayMode](#enum_animationnodeanimation_playmode) | [`play_mode`](#class_animationnodeanimation_property_play_mode)                     | ``0``     |

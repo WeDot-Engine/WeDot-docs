@@ -17,6 +17,8 @@ Defines the API that the editor uses to extract information from the underlying 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`_checkout_branch`](#class_editorvcsinterface_private_method__checkout_branch) ( branch_name: [`String`](class_string.md) ) virtual[^virtual]                                                                                                                                                                                       |
 | `void`                                                      | [`_commit`](#class_editorvcsinterface_private_method__commit) ( msg: [`String`](class_string.md) ) virtual[^virtual]                                                                                                                                                                                                                 |
 | `void`                                                      | [`_create_branch`](#class_editorvcsinterface_private_method__create_branch) ( branch_name: [`String`](class_string.md) ) virtual[^virtual]                                                                                                                                                                                           |

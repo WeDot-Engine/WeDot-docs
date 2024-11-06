@@ -17,6 +17,8 @@ A node that provides a [`Shape2D`](class_shape2d.md) to a [`CollisionObject2D`](
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)     | [`debug_color`](#class_collisionshape2d_property_debug_color)                           | ``Color(0, 0, 0, 1)`` |
 | [`bool`](class_bool.md)       | [`disabled`](#class_collisionshape2d_property_disabled)                                 | ``false``             |
 | [`bool`](class_bool.md)       | [`one_way_collision`](#class_collisionshape2d_property_one_way_collision)               | ``false``             |

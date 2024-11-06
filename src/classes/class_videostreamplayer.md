@@ -21,6 +21,8 @@ Supported video formats are [*Ogg Theora*](https://www.theora.org/) (`.ogv`, [`V
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                 | [`audio_track`](#class_videostreamplayer_property_audio_track)         | ``0``         |
 | [`bool`](class_bool.md)               | [`autoplay`](#class_videostreamplayer_property_autoplay)               | ``false``     |
 | [`int`](class_int.md)                 | [`buffering_msec`](#class_videostreamplayer_property_buffering_msec)   | ``500``       |
@@ -35,6 +37,8 @@ Supported video formats are [*Ogg Theora*](https://www.theora.org/) (`.ogv`, [`V
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)         | [`get_stream_length`](#class_videostreamplayer_method_get_stream_length) ( ) const[^const] |
 | [`String`](class_string.md)       | [`get_stream_name`](#class_videostreamplayer_method_get_stream_name) ( ) const[^const]     |
 | [`Texture2D`](class_texture2d.md) | [`get_video_texture`](#class_videostreamplayer_method_get_video_texture) ( ) const[^const] |

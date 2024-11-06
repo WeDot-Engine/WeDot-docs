@@ -19,6 +19,8 @@ It also provides methods for querying the status of OpenXR initialization, and h
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                                             | [`can_render`](#class_openxrapiextension_method_can_render) ( )                                                                                                                                                |
 | [`String`](class_string.md)                                                         | [`get_error_string`](#class_openxrapiextension_method_get_error_string) ( result: [`int`](class_int.md) )                                                                                                      |
 | [`int`](class_int.md)                                                               | [`get_hand_tracker`](#class_openxrapiextension_method_get_hand_tracker) ( hand_index: [`int`](class_int.md) )                                                                                                  |

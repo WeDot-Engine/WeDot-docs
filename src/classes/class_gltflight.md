@@ -17,6 +17,8 @@ Represents a light as defined by the `KHR_lights_punctual` GLTF extension.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)   | [`color`](#class_gltflight_property_color)                       | ``Color(1, 1, 1, 1)`` |
 | [`float`](class_float.md)   | [`inner_cone_angle`](#class_gltflight_property_inner_cone_angle) | ``0.0``               |
 | [`float`](class_float.md)   | [`intensity`](#class_gltflight_property_intensity)               | ``1.0``               |
@@ -26,6 +28,8 @@ Represents a light as defined by the `KHR_lights_punctual` GLTF extension.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`GLTFLight`](class_gltflight.md)   | [`from_dictionary`](#class_gltflight_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]                                             |
 | [`GLTFLight`](class_gltflight.md)   | [`from_node`](#class_gltflight_method_from_node) ( light_node: [`Light3D`](class_light3d.md) ) static[^static]                                                               |
 | [`Variant`](class_variant.md)       | [`get_additional_data`](#class_gltflight_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |

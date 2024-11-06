@@ -94,6 +94,8 @@ Currently, this includes asymmetric key encryption/decryption, signing/verificat
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`constant_time_compare`](#class_crypto_method_constant_time_compare) ( trusted: [`PackedByteArray`](class_packedbytearray.md), received: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                     |
 | [`PackedByteArray`](class_packedbytearray.md) | [`decrypt`](#class_crypto_method_decrypt) ( key: [`CryptoKey`](class_cryptokey.md), ciphertext: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                               |
 | [`PackedByteArray`](class_packedbytearray.md) | [`encrypt`](#class_crypto_method_encrypt) ( key: [`CryptoKey`](class_cryptokey.md), plaintext: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                |

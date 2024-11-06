@@ -23,12 +23,16 @@ An array specifically designed to hold 64-bit integer values. Packs data tightly
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](#class_packedint64array_constructor_packedint64array) ( )                                                       |
 | [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](#class_packedint64array_constructor_packedint64array) ( from: [`PackedInt64Array`](class_packedint64array.md) ) |
 | [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](#class_packedint64array_constructor_packedint64array) ( from: [`Array`](class_array.md) )                       |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                         | [`append`](#class_packedint64array_method_append) ( value: [`int`](class_int.md) )                                                      |
 | `void`                                          | [`append_array`](#class_packedint64array_method_append_array) ( array: [`PackedInt64Array`](class_packedint64array.md) )                |
 | [`int`](class_int.md)                           | [`bsearch`](#class_packedint64array_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )            |
@@ -53,6 +57,8 @@ An array specifically designed to hold 64-bit integer values. Packs data tightly
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                         | [`operator !=`](class_PackedInt64Array.md#operator_neq_PackedInt64Array) ( right: [`PackedInt64Array`](class_packedint64array.md) ) |
 | [`PackedInt64Array`](class_packedint64array.md) | [`operator +`](class_PackedInt64Array.md#operator_sum_PackedInt64Array) ( right: [`PackedInt64Array`](class_packedint64array.md) )  |
 | [`bool`](class_bool.md)                         | [`operator ==`](class_PackedInt64Array.md#operator_eq_PackedInt64Array) ( right: [`PackedInt64Array`](class_packedint64array.md) )  |

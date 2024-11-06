@@ -19,6 +19,8 @@ InputEventGestures are sent when a user performs a supported gesture on a touch 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`position`](#class_inputeventgesture_property_position) | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->

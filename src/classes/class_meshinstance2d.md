@@ -17,6 +17,8 @@ Node used for displaying a [`Mesh`](class_mesh.md) in 2D. A **MeshInstance2D** c
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Mesh`](class_mesh.md)           | [`mesh`](#class_meshinstance2d_property_mesh)       |
 | [`Texture2D`](class_texture2d.md) | [`texture`](#class_meshinstance2d_property_texture) |
 

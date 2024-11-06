@@ -19,6 +19,8 @@ Intended for use with GDExtension to create custom implementations of [`PhysicsD
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`_cast_motion`](#class_physicsdirectspacestate2dextension_private_method__cast_motion) ( shape_rid: [`RID`](class_rid.md), transform: [`Transform2D`](class_transform2d.md), motion: [`Vector2`](class_vector2.md), margin: [`float`](class_float.md), collision_mask: [`int`](class_int.md), collide_with_bodies: [`bool`](class_bool.md), collide_with_areas: [`bool`](class_bool.md), closest_safe: `float*`, closest_unsafe: `float*` ) virtual[^virtual]                                           |
 | [`bool`](class_bool.md) | [`_collide_shape`](#class_physicsdirectspacestate2dextension_private_method__collide_shape) ( shape_rid: [`RID`](class_rid.md), transform: [`Transform2D`](class_transform2d.md), motion: [`Vector2`](class_vector2.md), margin: [`float`](class_float.md), collision_mask: [`int`](class_int.md), collide_with_bodies: [`bool`](class_bool.md), collide_with_areas: [`bool`](class_bool.md), results: `void*`, max_results: [`int`](class_int.md), result_count: `int32_t*` ) virtual[^virtual]         |
 | [`int`](class_int.md)   | [`_intersect_point`](#class_physicsdirectspacestate2dextension_private_method__intersect_point) ( position: [`Vector2`](class_vector2.md), canvas_instance_id: [`int`](class_int.md), collision_mask: [`int`](class_int.md), collide_with_bodies: [`bool`](class_bool.md), collide_with_areas: [`bool`](class_bool.md), results: `PhysicsServer2DExtensionShapeResult*`, max_results: [`int`](class_int.md) ) virtual[^virtual]                                                                          |

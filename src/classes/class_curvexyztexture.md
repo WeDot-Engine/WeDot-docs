@@ -19,6 +19,8 @@ If you only need to store one curve within a single texture, use [`CurveTexture`
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Curve`](class_curve.md) | [`curve_x`](#class_curvexyztexture_property_curve_x) |                                                                                      |
 | [`Curve`](class_curve.md) | [`curve_y`](#class_curvexyztexture_property_curve_y) |                                                                                      |
 | [`Curve`](class_curve.md) | [`curve_z`](#class_curvexyztexture_property_curve_z) |                                                                                      |

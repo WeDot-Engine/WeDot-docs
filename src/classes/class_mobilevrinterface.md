@@ -30,6 +30,8 @@ You can initialize this interface as follows:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                      | [`display_to_lens`](#class_mobilevrinterface_property_display_to_lens) | ``4.0``                                                                          |
 | [`float`](class_float.md)                      | [`display_width`](#class_mobilevrinterface_property_display_width)     | ``14.5``                                                                         |
 | [`float`](class_float.md)                      | [`eye_height`](#class_mobilevrinterface_property_eye_height)           | ``1.85``                                                                         |

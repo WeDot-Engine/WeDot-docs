@@ -19,6 +19,8 @@ GLTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which rep
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                           | [`camera`](#class_gltfnode_property_camera)               | ``-1``                                              |
 | [`PackedInt32Array`](class_packedint32array.md) | [`children`](#class_gltfnode_property_children)           | ``PackedInt32Array()``                              |
 | [`int`](class_int.md)                           | [`height`](#class_gltfnode_property_height)               | ``-1``                                              |
@@ -35,6 +37,8 @@ GLTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which rep
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md) | [`get_additional_data`](#class_gltfnode_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
 | `void`                        | [`set_additional_data`](#class_gltfnode_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 

@@ -21,6 +21,8 @@ This [`Control`](class_control.md) node is used in the editor's Inspector dock t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)     | [`base_type`](#class_editorresourcepicker_property_base_type)             | ``""``    |
 | [`bool`](class_bool.md)         | [`editable`](#class_editorresourcepicker_property_editable)               | ``true``  |
 | [`Resource`](class_resource.md) | [`edited_resource`](#class_editorresourcepicker_property_edited_resource) |           |
@@ -28,6 +30,8 @@ This [`Control`](class_control.md) node is used in the editor's Inspector dock t
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                           | [`_handle_menu_selected`](#class_editorresourcepicker_private_method__handle_menu_selected) ( id: [`int`](class_int.md) ) virtual[^virtual]          |
 | `void`                                            | [`_set_create_options`](#class_editorresourcepicker_private_method__set_create_options) ( menu_node: [`Object`](class_object.md) ) virtual[^virtual] |
 | [`PackedStringArray`](class_packedstringarray.md) | [`get_allowed_types`](#class_editorresourcepicker_method_get_allowed_types) ( ) const[^const]                                                        |

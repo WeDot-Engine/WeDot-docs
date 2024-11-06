@@ -39,12 +39,16 @@ A heightmap collision shape can also be build by using an [`Image`](class_image.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedFloat32Array`](class_packedfloat32array.md) | [`map_data`](#class_heightmapshape3d_property_map_data)   | ``PackedFloat32Array(0, 0, 0, 0)`` |
 | [`int`](class_int.md)                               | [`map_depth`](#class_heightmapshape3d_property_map_depth) | ``2``                              |
 | [`int`](class_int.md)                               | [`map_width`](#class_heightmapshape3d_property_map_width) | ``2``                              |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_max_height`](#class_heightmapshape3d_method_get_max_height) ( ) const[^const]                                                                                                                          |
 | [`float`](class_float.md) | [`get_min_height`](#class_heightmapshape3d_method_get_min_height) ( ) const[^const]                                                                                                                          |
 | `void`                    | [`update_map_data_from_image`](#class_heightmapshape3d_method_update_map_data_from_image) ( image: [`Image`](class_image.md), height_min: [`float`](class_float.md), height_max: [`float`](class_float.md) ) |

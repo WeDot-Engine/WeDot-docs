@@ -19,6 +19,8 @@ This node allows you to create a sphere for use with the CSG system.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Material`](class_material.md) | [`material`](#class_csgsphere3d_property_material)               |          |
 | [`int`](class_int.md)           | [`radial_segments`](#class_csgsphere3d_property_radial_segments) | ``12``   |
 | [`float`](class_float.md)       | [`radius`](#class_csgsphere3d_property_radius)                   | ``0.5``  |

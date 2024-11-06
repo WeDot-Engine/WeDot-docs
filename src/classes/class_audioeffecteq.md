@@ -21,6 +21,8 @@ AudioEffectEQ gives you control over frequencies. Use it to compensate for exist
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`get_band_count`](#class_audioeffecteq_method_get_band_count) ( ) const[^const]                                                             |
 | [`float`](class_float.md) | [`get_band_gain_db`](#class_audioeffecteq_method_get_band_gain_db) ( band_idx: [`int`](class_int.md) ) const[^const]                         |
 | `void`                    | [`set_band_gain_db`](#class_audioeffecteq_method_set_band_gain_db) ( band_idx: [`int`](class_int.md), volume_db: [`float`](class_float.md) ) |

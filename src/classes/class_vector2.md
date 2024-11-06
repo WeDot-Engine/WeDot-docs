@@ -21,11 +21,15 @@ See [`Vector2i`](class_vector2i.md) for its integer counterpart.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`x`](#class_vector2_property_x) | ``0.0`` |
 | [`float`](class_float.md) | [`y`](#class_vector2_property_y) | ``0.0`` |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`Vector2`](#class_vector2_constructor_vector2) ( )                                                            |
 | [`Vector2`](class_vector2.md) | [`Vector2`](#class_vector2_constructor_vector2) ( from: [`Vector2`](class_vector2.md) )                        |
 | [`Vector2`](class_vector2.md) | [`Vector2`](#class_vector2_constructor_vector2) ( from: [`Vector2i`](class_vector2i.md) )                      |
@@ -33,6 +37,8 @@ See [`Vector2i`](class_vector2i.md) for its integer counterpart.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`abs`](#class_vector2_method_abs) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
 | [`float`](class_float.md)     | [`angle`](#class_vector2_method_angle) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
 | [`float`](class_float.md)     | [`angle_to`](#class_vector2_method_angle_to) ( to: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                                                                                                                           |
@@ -84,6 +90,8 @@ See [`Vector2i`](class_vector2i.md) for its integer counterpart.
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`operator !=`](class_Vector2.md#operator_neq_Vector2) ( right: [`Vector2`](class_vector2.md) )            |
 | [`Vector2`](class_vector2.md) | [`operator *`](class_Vector2.md#operator_mul_Transform2D) ( right: [`Transform2D`](class_transform2d.md) ) |
 | [`Vector2`](class_vector2.md) | [`operator *`](class_Vector2.md#operator_mul_Vector2) ( right: [`Vector2`](class_vector2.md) )             |

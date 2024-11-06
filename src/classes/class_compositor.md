@@ -19,6 +19,8 @@ The compositor resource stores attributes used to customize how a [`Viewport`](c
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`CompositorEffect`](class_compositoreffect.md) | [`compositor_effects`](#class_compositor_property_compositor_effects) | ``[]`` |
 
 <!-- rst-class:: classref-section-separator -->

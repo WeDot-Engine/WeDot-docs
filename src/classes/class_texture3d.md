@@ -23,6 +23,8 @@ To create such a texture file yourself, reimport your image files using the Godo
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`Image`](class_image.md) | [`_get_data`](#class_texture3d_private_method__get_data) ( ) virtual[^virtual] const[^const]       |
 | [`int`](class_int.md)                             | [`_get_depth`](#class_texture3d_private_method__get_depth) ( ) virtual[^virtual] const[^const]     |
 | [Format](#enum_image_format)                      | [`_get_format`](#class_texture3d_private_method__get_format) ( ) virtual[^virtual] const[^const]   |

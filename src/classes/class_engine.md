@@ -17,6 +17,8 @@ The **Engine** singleton allows you to query and modify the project's run-time p
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`max_fps`](#class_engine_property_max_fps)                                         | ``0``    |
 | [`int`](class_int.md)     | [`max_physics_steps_per_frame`](#class_engine_property_max_physics_steps_per_frame) | ``8``    |
 | [`float`](class_float.md) | [`physics_jitter_fix`](#class_engine_property_physics_jitter_fix)                   | ``0.5``  |
@@ -26,6 +28,8 @@ The **Engine** singleton allows you to query and modify the project's run-time p
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                                 | [`get_architecture_name`](#class_engine_method_get_architecture_name) ( ) const[^const]                                                              |
 | [`Dictionary`](class_dictionary.md)                         | [`get_author_info`](#class_engine_method_get_author_info) ( ) const[^const]                                                                          |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_copyright_info`](#class_engine_method_get_copyright_info) ( ) const[^const]                                                                    |

@@ -19,6 +19,8 @@ This CSG node allows you to use any mesh resource as a CSG shape, provided it is
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Material`](class_material.md) | [`material`](#class_csgmesh3d_property_material) |
 | [`Mesh`](class_mesh.md)         | [`mesh`](#class_csgmesh3d_property_mesh)         |
 

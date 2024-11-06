@@ -25,6 +25,8 @@ Internally, **MultiplayerSynchronizer** uses [`MultiplayerAPI.object_configurati
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                                  | [`delta_interval`](#class_multiplayersynchronizer_property_delta_interval)                 | ``0.0``            |
 | [`bool`](class_bool.md)                                                    | [`public_visibility`](#class_multiplayersynchronizer_property_public_visibility)           | ``true``           |
 | [`SceneReplicationConfig`](class_scenereplicationconfig.md)                | [`replication_config`](#class_multiplayersynchronizer_property_replication_config)         |                    |
@@ -34,6 +36,8 @@ Internally, **MultiplayerSynchronizer** uses [`MultiplayerAPI.object_configurati
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`add_visibility_filter`](#class_multiplayersynchronizer_method_add_visibility_filter) ( filter: [`Callable`](class_callable.md) )                 |
 | [`bool`](class_bool.md) | [`get_visibility_for`](#class_multiplayersynchronizer_method_get_visibility_for) ( peer: [`int`](class_int.md) ) const[^const]                     |
 | `void`                  | [`remove_visibility_filter`](#class_multiplayersynchronizer_method_remove_visibility_filter) ( filter: [`Callable`](class_callable.md) )           |

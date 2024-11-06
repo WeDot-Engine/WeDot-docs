@@ -17,6 +17,8 @@ Translated to `uniform vec4` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md) | [`default_value`](#class_visualshadernodecolorparameter_property_default_value)                 | ``Color(1, 1, 1, 1)`` |
 | [`bool`](class_bool.md)   | [`default_value_enabled`](#class_visualshadernodecolorparameter_property_default_value_enabled) | ``false``             |
 

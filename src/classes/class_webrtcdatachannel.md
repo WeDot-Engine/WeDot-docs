@@ -15,10 +15,14 @@
 
 ## 属性
 
+|||
+|:-:|:--|
 | [WriteMode](#enum_webrtcdatachannel_writemode) | [`write_mode`](#class_webrtcdatachannel_property_write_mode) | ``1`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                               | [`close`](#class_webrtcdatachannel_method_close) ( )                                                     |
 | [`int`](class_int.md)                                | [`get_buffered_amount`](#class_webrtcdatachannel_method_get_buffered_amount) ( ) const[^const]           |
 | [`int`](class_int.md)                                | [`get_id`](#class_webrtcdatachannel_method_get_id) ( ) const[^const]                                     |

@@ -21,6 +21,8 @@ If you need to play audio at a specific position, use [`AudioStreamPlayer2D`](cl
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                        | [`autoplay`](#class_audiostreamplayer_property_autoplay)           | ``false``     |
 | [`StringName`](class_stringname.md)            | [`bus`](#class_audiostreamplayer_property_bus)                     | ``&"Master"`` |
 | [`int`](class_int.md)                          | [`max_polyphony`](#class_audiostreamplayer_property_max_polyphony) | ``1``         |
@@ -34,6 +36,8 @@ If you need to play audio at a specific position, use [`AudioStreamPlayer2D`](cl
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                             | [`get_playback_position`](#class_audiostreamplayer_method_get_playback_position) ( )              |
 | [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](#class_audiostreamplayer_method_get_stream_playback) ( )                  |
 | [`bool`](class_bool.md)                               | [`has_stream_playback`](#class_audiostreamplayer_method_has_stream_playback) ( )                  |

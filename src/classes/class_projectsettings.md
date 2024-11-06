@@ -23,6 +23,8 @@ When naming a Project Settings property, use the full path to the setting includ
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                           | [`animation/warnings/check_angle_interpolation_type_conflicting`](#class_projectsettings_property_animation/warnings/check_angle_interpolation_type_conflicting)                                         | ``true``                                                                                         |
 | [`bool`](class_bool.md)                           | [`animation/warnings/check_invalid_track_paths`](#class_projectsettings_property_animation/warnings/check_invalid_track_paths)                                                                           | ``true``                                                                                         |
 | [`Color`](class_color.md)                         | [`application/boot_splash/bg_color`](#class_projectsettings_property_application/boot_splash/bg_color)                                                                                                   | ``Color(0.14, 0.14, 0.14, 1)``                                                                   |
@@ -818,6 +820,8 @@ When naming a Project Settings property, use the full path to the setting includ
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`add_property_info`](#class_projectsettings_method_add_property_info) ( hint: [`Dictionary`](class_dictionary.md) )                                                                             |
 | `void`                                                      | [`clear`](#class_projectsettings_method_clear) ( name: [`String`](class_string.md) )                                                                                                             |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_global_class_list`](#class_projectsettings_method_get_global_class_list) ( )                                                                                                               |

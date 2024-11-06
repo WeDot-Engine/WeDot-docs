@@ -25,6 +25,8 @@ By default the skeleton hand bones are repositioned to match the size of the tra
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BoneUpdate](#enum_openxrhand_boneupdate)   | [`bone_update`](#class_openxrhand_property_bone_update)     | ``0``            |
 | [Hands](#enum_openxrhand_hands)             | [`hand`](#class_openxrhand_property_hand)                   | ``0``            |
 | [`NodePath`](class_nodepath.md)             | [`hand_skeleton`](#class_openxrhand_property_hand_skeleton) | ``NodePath("")`` |

@@ -17,6 +17,8 @@ Displays a rectangle filled with a solid [`color`](#class_colorrect_property_col
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md) | [`color`](#class_colorrect_property_color) | ``Color(1, 1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->

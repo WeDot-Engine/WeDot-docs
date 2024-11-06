@@ -19,6 +19,8 @@ A node used as a child of a [`VehicleBody3D`](class_vehiclebody3d.md) parent to 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`brake`](#class_vehiclewheel3d_property_brake)                               | ``0.0``    |
 | [`float`](class_float.md) | [`damping_compression`](#class_vehiclewheel3d_property_damping_compression)   | ``0.83``   |
 | [`float`](class_float.md) | [`damping_relaxation`](#class_vehiclewheel3d_property_damping_relaxation)     | ``0.88``   |
@@ -36,6 +38,8 @@ A node used as a child of a [`VehicleBody3D`](class_vehiclebody3d.md) parent to 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Node3D`](class_node3d.md) | [`get_contact_body`](#class_vehiclewheel3d_method_get_contact_body) ( ) const[^const] |
 | [`float`](class_float.md)   | [`get_rpm`](#class_vehiclewheel3d_method_get_rpm) ( ) const[^const]                   |
 | [`float`](class_float.md)   | [`get_skidinfo`](#class_vehiclewheel3d_method_get_skidinfo) ( ) const[^const]         |

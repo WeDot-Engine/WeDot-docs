@@ -23,6 +23,8 @@ For example, if your character is driving a car, the **XROrigin3D** node should 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`current`](#class_xrorigin3d_property_current)         | ``false`` |
 | [`float`](class_float.md) | [`world_scale`](#class_xrorigin3d_property_world_scale) | ``1.0``   |
 

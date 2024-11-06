@@ -17,10 +17,14 @@ The server that manages all language translations. Translations can be added to 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`pseudolocalization_enabled`](#class_translationserver_property_pseudolocalization_enabled) | ``false`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_translation`](#class_translationserver_method_add_translation) ( translation: [`Translation`](class_translation.md) )                                                                                                                                              |
 | `void`                                            | [`clear`](#class_translationserver_method_clear) ( )                                                                                                                                                                                                                     |
 | [`int`](class_int.md)                             | [`compare_locales`](#class_translationserver_method_compare_locales) ( locale_a: [`String`](class_string.md), locale_b: [`String`](class_string.md) ) const[^const]                                                                                                      |

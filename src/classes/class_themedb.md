@@ -19,6 +19,8 @@ This singleton provides access to static information about [`Theme`](class_theme
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)         | [`fallback_base_scale`](#class_themedb_property_fallback_base_scale) | ``1.0`` |
 | [`Font`](class_font.md)           | [`fallback_font`](#class_themedb_property_fallback_font)             |         |
 | [`int`](class_int.md)             | [`fallback_font_size`](#class_themedb_property_fallback_font_size)   | ``16``  |
@@ -27,6 +29,8 @@ This singleton provides access to static information about [`Theme`](class_theme
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Theme`](class_theme.md) | [`get_default_theme`](#class_themedb_method_get_default_theme) ( ) |
 | [`Theme`](class_theme.md) | [`get_project_theme`](#class_themedb_method_get_project_theme) ( ) |
 

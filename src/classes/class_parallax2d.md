@@ -21,6 +21,8 @@ A **Parallax2D** is used to create a parallax effect. It can move at a different
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md)                                   | [`autoscroll`](#class_parallax2d_property_autoscroll)                     | ``Vector2(0, 0)``                                                           |
 | [`bool`](class_bool.md)                                         | [`follow_viewport`](#class_parallax2d_property_follow_viewport)           | ``true``                                                                    |
 | [`bool`](class_bool.md)                                         | [`ignore_camera_scroll`](#class_parallax2d_property_ignore_camera_scroll) | ``false``                                                                   |

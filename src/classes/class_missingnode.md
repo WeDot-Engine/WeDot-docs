@@ -19,6 +19,8 @@ This is an internal editor class intended for keeping data of nodes of unknown t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`original_class`](#class_missingnode_property_original_class)             |
 | [`String`](class_string.md) | [`original_scene`](#class_missingnode_property_original_scene)             |
 | [`bool`](class_bool.md)     | [`recording_properties`](#class_missingnode_property_recording_properties) |

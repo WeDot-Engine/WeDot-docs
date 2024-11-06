@@ -19,6 +19,8 @@ Texture with optional normal and specular maps for use in 2D rendering.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md)               | [`diffuse_texture`](#class_canvastexture_property_diffuse_texture)       |                                                                                      |
 | [`Texture2D`](class_texture2d.md)               | [`normal_texture`](#class_canvastexture_property_normal_texture)         |                                                                                      |
 | [`bool`](class_bool.md)                         | resource_local_to_scene                                                  | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |

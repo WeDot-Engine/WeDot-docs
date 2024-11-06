@@ -21,6 +21,8 @@ Particle attractors work in real-time and can be moved, rotated and scaled durin
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`radius`](#class_gpuparticlesattractorsphere3d_property_radius) | ``1.0`` |
 
 <!-- rst-class:: classref-section-separator -->

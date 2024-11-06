@@ -23,6 +23,8 @@ When creating the peer via [`create_client`](#class_webrtcmultiplayerpeer_method
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)   | [`add_peer`](#class_webrtcmultiplayerpeer_method_add_peer) ( peer: [`WebRTCPeerConnection`](class_webrtcpeerconnection.md), peer_id: [`int`](class_int.md), unreliable_lifetime: [`int`](class_int.md) = 1 ) |
 | [Error](#enum_@globalscope_error)   | [`create_client`](#class_webrtcmultiplayerpeer_method_create_client) ( peer_id: [`int`](class_int.md), channels_config: [`Array`](class_array.md) = [] )                                                     |
 | [Error](#enum_@globalscope_error)   | [`create_mesh`](#class_webrtcmultiplayerpeer_method_create_mesh) ( peer_id: [`int`](class_int.md), channels_config: [`Array`](class_array.md) = [] )                                                         |

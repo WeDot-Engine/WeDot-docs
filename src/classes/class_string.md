@@ -21,6 +21,8 @@ Some string methods have corresponding variations. Variations suffixed with `n` 
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`String`](#class_string_constructor_string) ( )                                           |
 | [`String`](class_string.md) | [`String`](#class_string_constructor_string) ( from: [`String`](class_string.md) )         |
 | [`String`](class_string.md) | [`String`](#class_string_constructor_string) ( from: [`NodePath`](class_nodepath.md) )     |
@@ -28,6 +30,8 @@ Some string methods have corresponding variations. Variations suffixed with `n` 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`begins_with`](#class_string_method_begins_with) ( text: [`String`](class_string.md) ) const[^const]                                                                                   |
 | [`PackedStringArray`](class_packedstringarray.md)   | [`bigrams`](#class_string_method_bigrams) ( ) const[^const]                                                                                                                             |
 | [`int`](class_int.md)                               | [`bin_to_int`](#class_string_method_bin_to_int) ( ) const[^const]                                                                                                                       |
@@ -138,6 +142,8 @@ Some string methods have corresponding variations. Variations suffixed with `n` 
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`operator !=`](class_String.md#operator_neq_String) ( right: [`String`](class_string.md) )             |
 | [`bool`](class_bool.md)     | [`operator !=`](class_String.md#operator_neq_StringName) ( right: [`StringName`](class_stringname.md) ) |
 | [`String`](class_string.md) | [`operator %`](class_String.md#operator_mod_Variant) ( right: [`Variant`](class_variant.md) )           |

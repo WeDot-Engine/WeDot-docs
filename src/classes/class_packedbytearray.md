@@ -21,12 +21,16 @@ An array specifically designed to hold bytes. Packs data tightly, so it saves me
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](#class_packedbytearray_constructor_packedbytearray) ( )                                                     |
 | [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](#class_packedbytearray_constructor_packedbytearray) ( from: [`PackedByteArray`](class_packedbytearray.md) ) |
 | [`PackedByteArray`](class_packedbytearray.md) | [`PackedByteArray`](#class_packedbytearray_constructor_packedbytearray) ( from: [`Array`](class_array.md) )                     |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`append`](#class_packedbytearray_method_append) ( value: [`int`](class_int.md) )                                                                                                     |
 | `void`                                              | [`append_array`](#class_packedbytearray_method_append_array) ( array: [`PackedByteArray`](class_packedbytearray.md) )                                                                 |
 | [`int`](class_int.md)                               | [`bsearch`](#class_packedbytearray_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )                                                           |
@@ -89,6 +93,8 @@ An array specifically designed to hold bytes. Packs data tightly, so it saves me
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`operator !=`](class_PackedByteArray.md#operator_neq_PackedByteArray) ( right: [`PackedByteArray`](class_packedbytearray.md) ) |
 | [`PackedByteArray`](class_packedbytearray.md) | [`operator +`](class_PackedByteArray.md#operator_sum_PackedByteArray) ( right: [`PackedByteArray`](class_packedbytearray.md) )  |
 | [`bool`](class_bool.md)                       | [`operator ==`](class_PackedByteArray.md#operator_eq_PackedByteArray) ( right: [`PackedByteArray`](class_packedbytearray.md) )  |

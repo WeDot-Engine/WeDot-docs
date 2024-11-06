@@ -21,6 +21,8 @@ You can add vertices to the blend space with [`add_blend_point`](#class_animatio
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                | [`auto_triangles`](#class_animationnodeblendspace2d_property_auto_triangles) | ``true``              |
 | [BlendMode](#enum_animationnodeblendspace2d_blendmode) | [`blend_mode`](#class_animationnodeblendspace2d_property_blend_mode)         | ``0``                 |
 | [`Vector2`](class_vector2.md)                          | [`max_space`](#class_animationnodeblendspace2d_property_max_space)           | ``Vector2(1, 1)``     |
@@ -32,6 +34,8 @@ You can add vertices to the blend space with [`add_blend_point`](#class_animatio
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_blend_point`](#class_animationnodeblendspace2d_method_add_blend_point) ( node: [`AnimationRootNode`](class_animationrootnode.md), pos: [`Vector2`](class_vector2.md), at_index: [`int`](class_int.md) = -1 ) |
 | `void`                                            | [`add_triangle`](#class_animationnodeblendspace2d_method_add_triangle) ( x: [`int`](class_int.md), y: [`int`](class_int.md), z: [`int`](class_int.md), at_index: [`int`](class_int.md) = -1 )                      |
 | [`int`](class_int.md)                             | [`get_blend_point_count`](#class_animationnodeblendspace2d_method_get_blend_point_count) ( ) const[^const]                                                                                                         |

@@ -19,6 +19,8 @@ A container that accepts only two child controls, then arranges them horizontall
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`collapsed`](#class_splitcontainer_property_collapsed)                   | ``false`` |
 | [DraggerVisibility](#enum_splitcontainer_draggervisibility) | [`dragger_visibility`](#class_splitcontainer_property_dragger_visibility) | ``0``     |
 | [`int`](class_int.md)                                       | [`split_offset`](#class_splitcontainer_property_split_offset)             | ``0``     |
@@ -26,10 +28,14 @@ A container that accepts only two child controls, then arranges them horizontall
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`clamp_split_offset`](#class_splitcontainer_method_clamp_split_offset) ( ) |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`autohide`](#class_splitcontainer_theme_constant_autohide)                             | ``1``  |
 | [`int`](class_int.md)             | [`minimum_grab_thickness`](#class_splitcontainer_theme_constant_minimum_grab_thickness) | ``6``  |
 | [`int`](class_int.md)             | [`separation`](#class_splitcontainer_theme_constant_separation)                         | ``12`` |

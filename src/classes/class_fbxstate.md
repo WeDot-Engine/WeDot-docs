@@ -17,6 +17,8 @@ The FBXState handles the state data imported from FBX files.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`allow_geometry_helper_nodes`](#class_fbxstate_property_allow_geometry_helper_nodes) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->

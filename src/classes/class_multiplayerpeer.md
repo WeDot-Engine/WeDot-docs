@@ -23,12 +23,16 @@ Manages the connection with one or more remote peers acting as server or client 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                            | [`refuse_new_connections`](#class_multiplayerpeer_property_refuse_new_connections) | ``false`` |
 | [`int`](class_int.md)                              | [`transfer_channel`](#class_multiplayerpeer_property_transfer_channel)             | ``0``     |
 | [TransferMode](#enum_multiplayerpeer_transfermode) | [`transfer_mode`](#class_multiplayerpeer_property_transfer_mode)                   | ``2``     |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                     | [`close`](#class_multiplayerpeer_method_close) ( )                                                                                         |
 | `void`                                                     | [`disconnect_peer`](#class_multiplayerpeer_method_disconnect_peer) ( peer: [`int`](class_int.md), force: [`bool`](class_bool.md) = false ) |
 | [`int`](class_int.md)                                      | [`generate_unique_id`](#class_multiplayerpeer_method_generate_unique_id) ( ) const[^const]                                                 |

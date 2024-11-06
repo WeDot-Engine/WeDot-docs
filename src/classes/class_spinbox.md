@@ -55,6 +55,8 @@ See [`Range`](class_range.md) class for more options over the **SpinBox**.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_spinbox_property_alignment)                           | ``0``                                                                      |
 | [`float`](class_float.md)                                     | [`custom_arrow_step`](#class_spinbox_property_custom_arrow_step)           | ``0.0``                                                                    |
 | [`bool`](class_bool.md)                                       | [`editable`](#class_spinbox_property_editable)                             | ``true``                                                                   |
@@ -67,11 +69,15 @@ See [`Range`](class_range.md) class for more options over the **SpinBox**.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                          | [`apply`](#class_spinbox_method_apply) ( )                 |
 | [`LineEdit`](class_lineedit.md) | [`get_line_edit`](#class_spinbox_method_get_line_edit) ( ) |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md) | [`updown`](#class_spinbox_theme_icon_updown) |
 
 <!-- rst-class:: classref-section-separator -->

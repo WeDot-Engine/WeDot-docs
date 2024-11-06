@@ -23,6 +23,8 @@ The default settings are intended for use in an outdoor environment, tips for se
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`auto_exposure_max_exposure_value`](#class_cameraattributesphysical_property_auto_exposure_max_exposure_value) | ``10.0``   |
 | [`float`](class_float.md) | [`auto_exposure_min_exposure_value`](#class_cameraattributesphysical_property_auto_exposure_min_exposure_value) | ``-8.0``   |
 | [`float`](class_float.md) | [`exposure_aperture`](#class_cameraattributesphysical_property_exposure_aperture)                               | ``16.0``   |
@@ -34,6 +36,8 @@ The default settings are intended for use in an outdoor environment, tips for se
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_fov`](#class_cameraattributesphysical_method_get_fov) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

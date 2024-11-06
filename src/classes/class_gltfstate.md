@@ -21,6 +21,8 @@ GLTFState can be populated by [`GLTFDocument`](class_gltfdocument.md) reading a 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                             | [`bake_fps`](#class_gltfstate_property_bake_fps)                                 | ``30.0``               |
 | [`String`](class_string.md)                                           | [`base_path`](#class_gltfstate_property_base_path)                               | ``""``                 |
 | [Array](class_array.md) [`PackedByteArray`](class_packedbytearray.md) | [`buffers`](#class_gltfstate_property_buffers)                                   | ``[]``                 |
@@ -38,6 +40,8 @@ GLTFState can be populated by [`GLTFDocument`](class_gltfdocument.md) reading a 
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                                      | [`add_used_extension`](#class_gltfstate_method_add_used_extension) ( extension_name: [`String`](class_string.md), required: [`bool`](class_bool.md) )                        |
 | [`int`](class_int.md)                                                       | [`append_data_to_buffers`](#class_gltfstate_method_append_data_to_buffers) ( data: [`PackedByteArray`](class_packedbytearray.md), deduplication: [`bool`](class_bool.md) )   |
 | [Array](class_array.md) [`GLTFAccessor`](class_gltfaccessor.md)             | [`get_accessors`](#class_gltfstate_method_get_accessors) ( )                                                                                                                 |

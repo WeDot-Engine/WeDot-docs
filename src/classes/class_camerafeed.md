@@ -19,11 +19,15 @@ A camera feed gives you access to a single physical camera attached to your devi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)               | [`feed_is_active`](#class_camerafeed_property_feed_is_active) | ``false``                          |
 | [`Transform2D`](class_transform2d.md) | [`feed_transform`](#class_camerafeed_property_feed_transform) | ``Transform2D(1, 0, 0, -1, 0, 1)`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [FeedDataType](#enum_camerafeed_feeddatatype) | [`get_datatype`](#class_camerafeed_method_get_datatype) ( ) const[^const] |
 | [`int`](class_int.md)                         | [`get_id`](#class_camerafeed_method_get_id) ( ) const[^const]             |
 | [`String`](class_string.md)                   | [`get_name`](#class_camerafeed_method_get_name) ( ) const[^const]         |

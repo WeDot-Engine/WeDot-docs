@@ -21,10 +21,14 @@ Abstract base class for all 2D shapes, intended for use in physics.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`custom_solver_bias`](#class_shape2d_property_custom_solver_bias) | ``0.0`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`collide`](#class_shape2d_method_collide) ( local_xform: [`Transform2D`](class_transform2d.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md) )                                                                                                                                                     |
 | [`PackedVector2Array`](class_packedvector2array.md) | [`collide_and_get_contacts`](#class_shape2d_method_collide_and_get_contacts) ( local_xform: [`Transform2D`](class_transform2d.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md) )                                                                                                                   |
 | [`bool`](class_bool.md)                             | [`collide_with_motion`](#class_shape2d_method_collide_with_motion) ( local_xform: [`Transform2D`](class_transform2d.md), local_motion: [`Vector2`](class_vector2.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md), shape_motion: [`Vector2`](class_vector2.md) )                                   |

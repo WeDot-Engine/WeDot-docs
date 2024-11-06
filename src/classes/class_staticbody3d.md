@@ -23,6 +23,8 @@ When **StaticBody3D** is moved, it is teleported to its new position without aff
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md)                 | [`constant_angular_velocity`](#class_staticbody3d_property_constant_angular_velocity) | ``Vector3(0, 0, 0)`` |
 | [`Vector3`](class_vector3.md)                 | [`constant_linear_velocity`](#class_staticbody3d_property_constant_linear_velocity)   | ``Vector3(0, 0, 0)`` |
 | [`PhysicsMaterial`](class_physicsmaterial.md) | [`physics_material_override`](#class_staticbody3d_property_physics_material_override) |                      |

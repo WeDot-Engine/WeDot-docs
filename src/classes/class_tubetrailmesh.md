@@ -19,6 +19,8 @@ This primitive mesh is usually used for particle trails.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`cap_bottom`](#class_tubetrailmesh_property_cap_bottom)         | ``true`` |
 | [`bool`](class_bool.md)   | [`cap_top`](#class_tubetrailmesh_property_cap_top)               | ``true`` |
 | [`Curve`](class_curve.md) | [`curve`](#class_tubetrailmesh_property_curve)                   |          |

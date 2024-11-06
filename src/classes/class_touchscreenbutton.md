@@ -21,6 +21,8 @@ You can configure TouchScreenButton to be visible only on touch devices, helping
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                              | [`action`](#class_touchscreenbutton_property_action)                   | ``""``    |
 | [`BitMap`](class_bitmap.md)                              | [`bitmask`](#class_touchscreenbutton_property_bitmask)                 |           |
 | [`bool`](class_bool.md)                                  | [`passby_press`](#class_touchscreenbutton_property_passby_press)       | ``false`` |
@@ -33,6 +35,8 @@ You can configure TouchScreenButton to be visible only on touch devices, helping
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`is_pressed`](#class_touchscreenbutton_method_is_pressed) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

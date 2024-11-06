@@ -39,12 +39,16 @@ Contains multiple [`AnimationRootNode`](class_animationrootnode.md) s representi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                              | [`allow_transition_to_self`](#class_animationnodestatemachine_property_allow_transition_to_self) | ``false`` |
 | [`bool`](class_bool.md)                                              | [`reset_ends`](#class_animationnodestatemachine_property_reset_ends)                             | ``false`` |
 | [StateMachineType](#enum_animationnodestatemachine_statemachinetype) | [`state_machine_type`](#class_animationnodestatemachine_property_state_machine_type)             | ``0``     |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                                                | [`add_node`](#class_animationnodestatemachine_method_add_node) ( name: [`StringName`](class_stringname.md), node: [`AnimationNode`](class_animationnode.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                               |
 | `void`                                                                                | [`add_transition`](#class_animationnodestatemachine_method_add_transition) ( from: [`StringName`](class_stringname.md), to: [`StringName`](class_stringname.md), transition: [`AnimationNodeStateMachineTransition`](class_animationnodestatemachinetransition.md) ) |
 | [`Vector2`](class_vector2.md)                                                         | [`get_graph_offset`](#class_animationnodestatemachine_method_get_graph_offset) ( ) const[^const]                                                                                                                                                                     |

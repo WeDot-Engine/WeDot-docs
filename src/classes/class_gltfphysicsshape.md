@@ -17,6 +17,8 @@ Represents a physics shape as defined by the `OMI_physics_shape` or `OMI_collide
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)               | [`height`](#class_gltfphysicsshape_property_height)               | ``2.0``              |
 | [`ImporterMesh`](class_importermesh.md) | [`importer_mesh`](#class_gltfphysicsshape_property_importer_mesh) |                      |
 | [`bool`](class_bool.md)                 | [`is_trigger`](#class_gltfphysicsshape_property_is_trigger)       | ``false``            |
@@ -27,6 +29,8 @@ Represents a physics shape as defined by the `OMI_physics_shape` or `OMI_collide
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_dictionary`](#class_gltfphysicsshape_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
 | [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_node`](#class_gltfphysicsshape_method_from_node) ( shape_node: [`CollisionShape3D`](class_collisionshape3d.md) ) static[^static] |
 | [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_resource`](#class_gltfphysicsshape_method_from_resource) ( shape_resource: [`Shape3D`](class_shape3d.md) ) static[^static]       |

@@ -17,6 +17,8 @@ Compares `a` and `b` of [`type`](#class_visualshadernodecompare_property_type) b
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Condition](#enum_visualshadernodecompare_condition)           | [`condition`](#class_visualshadernodecompare_property_condition) | ``0`` |
 | [Function](#enum_visualshadernodecompare_function)             | [`function`](#class_visualshadernodecompare_property_function)   | ``0`` |
 | [ComparisonType](#enum_visualshadernodecompare_comparisontype) | [`type`](#class_visualshadernodecompare_property_type)           | ``0`` |

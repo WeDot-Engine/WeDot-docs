@@ -27,6 +27,8 @@ To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s refer
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)       | [`get_id`](#class_thread_method_get_id) ( ) const[^const]                                                                                        |
 | [`bool`](class_bool.md)           | [`is_alive`](#class_thread_method_is_alive) ( ) const[^const]                                                                                    |
 | [`bool`](class_bool.md)           | [`is_started`](#class_thread_method_is_started) ( ) const[^const]                                                                                |

@@ -13,6 +13,8 @@
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`_add_global_constant`](#class_scriptlanguageextension_private_method__add_global_constant) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) virtual[^virtual]                                                                                                                                                                 |
 | `void`                                                      | [`_add_named_global_constant`](#class_scriptlanguageextension_private_method__add_named_global_constant) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) virtual[^virtual]                                                                                                                                                     |
 | [`String`](class_string.md)                                 | [`_auto_indent_code`](#class_scriptlanguageextension_private_method__auto_indent_code) ( code: [`String`](class_string.md), from_line: [`int`](class_int.md), to_line: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                                                                                                                     |

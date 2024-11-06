@@ -25,6 +25,8 @@ This is a pure virtual class that is inherited by [`CameraAttributesPhysical`](c
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`auto_exposure_enabled`](#class_cameraattributes_property_auto_exposure_enabled) | ``false`` |
 | [`float`](class_float.md) | [`auto_exposure_scale`](#class_cameraattributes_property_auto_exposure_scale)     | ``0.4``   |
 | [`float`](class_float.md) | [`auto_exposure_speed`](#class_cameraattributes_property_auto_exposure_speed)     | ``0.5``   |

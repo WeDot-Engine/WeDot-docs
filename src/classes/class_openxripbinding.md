@@ -17,11 +17,15 @@ This binding resource binds an [`OpenXRAction`](class_openxraction.md) to inputs
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`OpenXRAction`](class_openxraction.md)           | [`action`](#class_openxripbinding_property_action) |                         |
 | [`PackedStringArray`](class_packedstringarray.md) | [`paths`](#class_openxripbinding_property_paths)   | ``PackedStringArray()`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`add_path`](#class_openxripbinding_method_add_path) ( path: [`String`](class_string.md) )               |
 | [`int`](class_int.md)   | [`get_path_count`](#class_openxripbinding_method_get_path_count) ( ) const[^const]                       |
 | [`bool`](class_bool.md) | [`has_path`](#class_openxripbinding_method_has_path) ( path: [`String`](class_string.md) ) const[^const] |

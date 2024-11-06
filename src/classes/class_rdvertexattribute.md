@@ -17,6 +17,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [DataFormat](#enum_renderingdevice_dataformat)           | [`format`](#class_rdvertexattribute_property_format)       | ``218`` |
 | [VertexFrequency](#enum_renderingdevice_vertexfrequency) | [`frequency`](#class_rdvertexattribute_property_frequency) | ``0``   |
 | [`int`](class_int.md)                                    | [`location`](#class_rdvertexattribute_property_location)   | ``0``   |

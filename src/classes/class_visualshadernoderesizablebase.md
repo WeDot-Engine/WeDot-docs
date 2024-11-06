@@ -19,6 +19,8 @@ Resizable nodes have a handle that allows the user to adjust their size as neede
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`size`](#class_visualshadernoderesizablebase_property_size) | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->

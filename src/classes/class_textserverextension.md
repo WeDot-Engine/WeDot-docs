@@ -19,6 +19,8 @@ External [`TextServer`](class_textserver.md) implementations should inherit from
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`_cleanup`](#class_textserverextension_private_method__cleanup) ( ) virtual[^virtual]                                                                                                                                                                                                                                                                                                                       |
 | [`RID`](class_rid.md)                                       | [`_create_font`](#class_textserverextension_private_method__create_font) ( ) virtual[^virtual]                                                                                                                                                                                                                                                                                                               |
 | [`RID`](class_rid.md)                                       | [`_create_font_linked_variation`](#class_textserverextension_private_method__create_font_linked_variation) ( font_rid: [`RID`](class_rid.md) ) virtual[^virtual]                                                                                                                                                                                                                                             |

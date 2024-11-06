@@ -19,6 +19,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [FocusMode](#enum_control_focusmode)                          | focus_mode                                                                                                  | ``0`` (overrides [`Control`](#class_control_property_focus_mode))                 |
 | [`String`](class_string.md)                                   | [`language`](#class_linkbutton_property_language)                                                           | ``""``                                                                            |
 | [CursorShape](#enum_control_cursorshape)                      | mouse_default_cursor_shape                                                                                  | ``2`` (overrides [`Control`](#class_control_property_mouse_default_cursor_shape)) |
@@ -31,6 +33,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)       | [`font_color`](#class_linkbutton_theme_color_font_color)                             | ``Color(0.875, 0.875, 0.875, 1)`` |
 | [`Color`](class_color.md)       | [`font_disabled_color`](#class_linkbutton_theme_color_font_disabled_color)           | ``Color(0, 0, 0, 1)``             |
 | [`Color`](class_color.md)       | [`font_focus_color`](#class_linkbutton_theme_color_font_focus_color)                 | ``Color(0.95, 0.95, 0.95, 1)``    |

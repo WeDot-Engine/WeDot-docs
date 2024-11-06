@@ -19,6 +19,8 @@ This class cannot be instantiated directly, it is retrieved for a given scene as
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Array`](class_array.md)                         | [`get_connection_binds`](#class_scenestate_method_get_connection_binds) ( idx: [`int`](class_int.md) ) const[^const]                                        |
 | [`int`](class_int.md)                             | [`get_connection_count`](#class_scenestate_method_get_connection_count) ( ) const[^const]                                                                   |
 | [`int`](class_int.md)                             | [`get_connection_flags`](#class_scenestate_method_get_connection_flags) ( idx: [`int`](class_int.md) ) const[^const]                                        |

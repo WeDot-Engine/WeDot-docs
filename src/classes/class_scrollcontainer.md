@@ -19,6 +19,8 @@ A container used to provide a child control with scrollbars when needed. Scrollb
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                        | clip_contents                                                                                    | ``true`` (overrides [`Control`](#class_control_property_clip_contents)) |
 | [`bool`](class_bool.md)                        | [`follow_focus`](#class_scrollcontainer_property_follow_focus)                                   | ``false``                                                               |
 | [ScrollMode](#enum_scrollcontainer_scrollmode) | [`horizontal_scroll_mode`](#class_scrollcontainer_property_horizontal_scroll_mode)               | ``1``                                                                   |
@@ -31,12 +33,16 @@ A container used to provide a child control with scrollbars when needed. Scrollb
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                              | [`ensure_control_visible`](#class_scrollcontainer_method_ensure_control_visible) ( control: [`Control`](class_control.md) ) |
 | [`HScrollBar`](class_hscrollbar.md) | [`get_h_scroll_bar`](#class_scrollcontainer_method_get_h_scroll_bar) ( )                                                    |
 | [`VScrollBar`](class_vscrollbar.md) | [`get_v_scroll_bar`](#class_scrollcontainer_method_get_v_scroll_bar) ( )                                                    |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`StyleBox`](class_stylebox.md) | [`panel`](#class_scrollcontainer_theme_style_panel) |
 
 <!-- rst-class:: classref-section-separator -->

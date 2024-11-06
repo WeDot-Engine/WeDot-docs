@@ -21,6 +21,8 @@ MP3 requires more CPU to decode than [`ResourceImporterWAV`](class_resourceimpor
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`bar_beats`](#class_resourceimportermp3_property_bar_beats)     | ``4``     |
 | [`int`](class_int.md)     | [`beat_count`](#class_resourceimportermp3_property_beat_count)   | ``0``     |
 | [`float`](class_float.md) | [`bpm`](#class_resourceimportermp3_property_bpm)                 | ``0``     |

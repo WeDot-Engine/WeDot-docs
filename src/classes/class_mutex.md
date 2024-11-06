@@ -27,6 +27,8 @@ This is a reentrant mutex, meaning that it can be locked multiple times by one t
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`lock`](#class_mutex_method_lock) ( )         |
 | [`bool`](class_bool.md) | [`try_lock`](#class_mutex_method_try_lock) ( ) |
 | `void`                  | [`unlock`](#class_mutex_method_unlock) ( )     |

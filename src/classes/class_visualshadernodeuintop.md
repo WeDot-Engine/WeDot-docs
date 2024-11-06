@@ -17,6 +17,8 @@ Applies [`operator`](#class_visualshadernodeuintop_property_operator) to two uns
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Operator](#enum_visualshadernodeuintop_operator) | [`operator`](#class_visualshadernodeuintop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

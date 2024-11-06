@@ -19,6 +19,8 @@ This object is the base of all XR trackers.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)               | [`description`](#class_xrtracker_property_description) | ``""``         |
 | [`StringName`](class_stringname.md)       | [`name`](#class_xrtracker_property_name)               | ``&"Unknown"`` |
 | [TrackerType](#enum_xrserver_trackertype) | [`type`](#class_xrtracker_property_type)               | ``128``        |

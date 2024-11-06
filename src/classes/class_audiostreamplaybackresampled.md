@@ -15,6 +15,8 @@
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`_get_stream_sampling_rate`](#class_audiostreamplaybackresampled_private_method__get_stream_sampling_rate) ( ) virtual[^virtual] const[^const]                           |
 | [`int`](class_int.md)     | [`_mix_resampled`](#class_audiostreamplaybackresampled_private_method__mix_resampled) ( dst_buffer: `AudioFrame*`, frame_count: [`int`](class_int.md) ) virtual[^virtual] |
 | `void`                    | [`begin_resample`](#class_audiostreamplaybackresampled_method_begin_resample) ( )                                                                                         |

@@ -19,6 +19,8 @@ The **InstancePlaceholder** does not have a transform. This causes any child nod
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Node`](class_node.md)             | [`create_instance`](#class_instanceplaceholder_method_create_instance) ( replace: [`bool`](class_bool.md) = false, custom_scene: [`PackedScene`](class_packedscene.md) = null ) |
 | [`String`](class_string.md)         | [`get_instance_path`](#class_instanceplaceholder_method_get_instance_path) ( ) const[^const]                                                                                    |
 | [`Dictionary`](class_dictionary.md) | [`get_stored_values`](#class_instanceplaceholder_method_get_stored_values) ( with_order: [`bool`](class_bool.md) = false )                                                      |

@@ -17,6 +17,8 @@ By changing various properties of this object, such as the motion, you can confi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`collide_separation_ray`](#class_physicstestmotionparameters3d_property_collide_separation_ray) | ``false``                                           |
 | [Array](class_array.md) [`RID`](class_rid.md) | [`exclude_bodies`](#class_physicstestmotionparameters3d_property_exclude_bodies)                 | ``[]``                                              |
 | [Array](class_array.md) [`int`](class_int.md) | [`exclude_objects`](#class_physicstestmotionparameters3d_property_exclude_objects)               | ``[]``                                              |

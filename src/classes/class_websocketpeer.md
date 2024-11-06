@@ -54,6 +54,8 @@ To use the peer as part of a WebSocket server refer to [`accept_stream`](#class_
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedStringArray`](class_packedstringarray.md) | [`handshake_headers`](#class_websocketpeer_property_handshake_headers)       | ``PackedStringArray()`` |
 | [`int`](class_int.md)                             | [`inbound_buffer_size`](#class_websocketpeer_property_inbound_buffer_size)   | ``65535``               |
 | [`int`](class_int.md)                             | [`max_queued_packets`](#class_websocketpeer_property_max_queued_packets)     | ``2048``                |
@@ -62,6 +64,8 @@ To use the peer as part of a WebSocket server refer to [`accept_stream`](#class_
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)  | [`accept_stream`](#class_websocketpeer_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md) )                                                        |
 | `void`                             | [`close`](#class_websocketpeer_method_close) ( code: [`int`](class_int.md) = 1000, reason: [`String`](class_string.md) = "" )                                       |
 | [Error](#enum_@globalscope_error)  | [`connect_to_url`](#class_websocketpeer_method_connect_to_url) ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |

@@ -19,6 +19,8 @@ Use [`process_material`](#class_gpuparticles3d_property_process_material) to add
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                 | [`amount`](#class_gpuparticles3d_property_amount)                           | ``8``                         |
 | [`float`](class_float.md)                             | [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio)               | ``1.0``                       |
 | [`float`](class_float.md)                             | [`collision_base_size`](#class_gpuparticles3d_property_collision_base_size) | ``0.01``                      |
@@ -50,6 +52,8 @@ Use [`process_material`](#class_gpuparticles3d_property_process_material) to add
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`AABB`](class_aabb.md) | [`capture_aabb`](#class_gpuparticles3d_method_capture_aabb) ( ) const[^const]                                                                                                                                                                              |
 | `void`                  | [`convert_from_particles`](#class_gpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                                                                                                     |
 | `void`                  | [`emit_particle`](#class_gpuparticles3d_method_emit_particle) ( xform: [`Transform3D`](class_transform3d.md), velocity: [`Vector3`](class_vector3.md), color: [`Color`](class_color.md), custom: [`Color`](class_color.md), flags: [`int`](class_int.md) ) |

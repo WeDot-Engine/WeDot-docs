@@ -19,6 +19,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)         | [`constant_id`](#class_rdpipelinespecializationconstant_property_constant_id) | ``0`` |
 | [`Variant`](class_variant.md) | [`value`](#class_rdpipelinespecializationconstant_property_value)             |       |
 

@@ -17,6 +17,8 @@ Class that has everything pertaining to a world: A physics space, a visual scena
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`CameraAttributes`](class_cameraattributes.md)                   | [`camera_attributes`](#class_world3d_property_camera_attributes)       |
 | [`PhysicsDirectSpaceState3D`](class_physicsdirectspacestate3d.md) | [`direct_space_state`](#class_world3d_property_direct_space_state)     |
 | [`Environment`](class_environment.md)                             | [`environment`](#class_world3d_property_environment)                   |

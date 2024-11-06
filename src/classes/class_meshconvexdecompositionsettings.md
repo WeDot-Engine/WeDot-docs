@@ -17,6 +17,8 @@ Parameters to be used with a [`Mesh`](class_mesh.md) convex decomposition operat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                            | [`convex_hull_approximation`](#class_meshconvexdecompositionsettings_property_convex_hull_approximation)               | ``true``   |
 | [`int`](class_int.md)                              | [`convex_hull_downsampling`](#class_meshconvexdecompositionsettings_property_convex_hull_downsampling)                 | ``4``      |
 | [`float`](class_float.md)                          | [`max_concavity`](#class_meshconvexdecompositionsettings_property_max_concavity)                                       | ``1.0``    |

@@ -25,6 +25,8 @@ The **ReflectionProbe** is used to create high-quality reflections at a low perf
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)                        | [`ambient_color`](#class_reflectionprobe_property_ambient_color)               | ``Color(0, 0, 0, 1)``   |
 | [`float`](class_float.md)                        | [`ambient_color_energy`](#class_reflectionprobe_property_ambient_color_energy) | ``1.0``                 |
 | [AmbientMode](#enum_reflectionprobe_ambientmode) | [`ambient_mode`](#class_reflectionprobe_property_ambient_mode)                 | ``1``                   |

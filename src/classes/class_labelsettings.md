@@ -17,6 +17,8 @@ Provides common settings to customize the text in a [`Label`](class_label.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Font`](class_font.md)       | [`font`](#class_labelsettings_property_font)                   |                       |
 | [`Color`](class_color.md)     | [`font_color`](#class_labelsettings_property_font_color)       | ``Color(1, 1, 1, 1)`` |
 | [`int`](class_int.md)         | [`font_size`](#class_labelsettings_property_font_size)         | ``16``                |

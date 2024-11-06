@@ -54,10 +54,14 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | resource_local_to_scene | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`ImageTexture`](class_imagetexture.md) | [`create_from_image`](#class_imagetexture_method_create_from_image) ( image: [`Image`](class_image.md) ) static[^static] |
 | [Format](#enum_image_format)            | [`get_format`](#class_imagetexture_method_get_format) ( ) const[^const]                                                  |
 | `void`                                  | [`set_image`](#class_imagetexture_method_set_image) ( image: [`Image`](class_image.md) )                                 |

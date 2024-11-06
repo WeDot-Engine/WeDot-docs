@@ -17,6 +17,8 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AutowrapMode](#enum_textserver_autowrapmode)                           | [`autowrap_mode`](#class_label_property_autowrap_mode)                                                 | ``0``                                                                      |
 | [`bool`](class_bool.md)                                                 | [`clip_text`](#class_label_property_clip_text)                                                         | ``false``                                                                  |
 | [`String`](class_string.md)                                             | [`ellipsis_char`](#class_label_property_ellipsis_char)                                                 | ``"…"``                                                                    |
@@ -42,6 +44,8 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Rect2`](class_rect2.md) | [`get_character_bounds`](#class_label_method_get_character_bounds) ( pos: [`int`](class_int.md) ) const[^const] |
 | [`int`](class_int.md)     | [`get_line_count`](#class_label_method_get_line_count) ( ) const[^const]                                        |
 | [`int`](class_int.md)     | [`get_line_height`](#class_label_method_get_line_height) ( line: [`int`](class_int.md) = -1 ) const[^const]     |
@@ -50,6 +54,8 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)       | [`font_color`](#class_label_theme_color_font_color)                      | ``Color(1, 1, 1, 1)`` |
 | [`Color`](class_color.md)       | [`font_outline_color`](#class_label_theme_color_font_outline_color)      | ``Color(0, 0, 0, 1)`` |
 | [`Color`](class_color.md)       | [`font_shadow_color`](#class_label_theme_color_font_shadow_color)        | ``Color(0, 0, 0, 0)`` |

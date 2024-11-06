@@ -17,6 +17,8 @@ By changing various properties of this object, such as the point position, you c
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                         | [`canvas_instance_id`](#class_physicspointqueryparameters2d_property_canvas_instance_id)   | ``0``             |
 | [`bool`](class_bool.md)                       | [`collide_with_areas`](#class_physicspointqueryparameters2d_property_collide_with_areas)   | ``false``         |
 | [`bool`](class_bool.md)                       | [`collide_with_bodies`](#class_physicspointqueryparameters2d_property_collide_with_bodies) | ``true``          |

@@ -63,10 +63,14 @@ In the example above, the file will be saved in the user data folder as specifie
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`big_endian`](#class_fileaccess_property_big_endian) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`close`](#class_fileaccess_method_close) ( )                                                                                                                                                                                                       |
 | [`bool`](class_bool.md)                                     | [`eof_reached`](#class_fileaccess_method_eof_reached) ( ) const[^const]                                                                                                                                                                             |
 | [`bool`](class_bool.md)                                     | [`file_exists`](#class_fileaccess_method_file_exists) ( path: [`String`](class_string.md) ) static[^static]                                                                                                                                         |

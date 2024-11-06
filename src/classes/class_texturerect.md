@@ -17,6 +17,8 @@ A control that displays a texture, for example an icon inside a GUI. The texture
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ExpandMode](#enum_texturerect_expandmode)   | [`expand_mode`](#class_texturerect_property_expand_mode)   | ``0``                                                               |
 | [`bool`](class_bool.md)                      | [`flip_h`](#class_texturerect_property_flip_h)             | ``false``                                                           |
 | [`bool`](class_bool.md)                      | [`flip_v`](#class_texturerect_property_flip_v)             | ``false``                                                           |

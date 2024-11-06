@@ -41,6 +41,8 @@ A custom effect for a [`RichTextLabel`](class_richtextlabel.md), which can be lo
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`_process_custom_fx`](#class_richtexteffect_private_method__process_custom_fx) ( char_fx: [`CharFXTransform`](class_charfxtransform.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

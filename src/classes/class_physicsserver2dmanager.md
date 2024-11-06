@@ -19,6 +19,8 @@ A singleton for managing [`PhysicsServer2D`](class_physicsserver2d.md) implement
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`register_server`](#class_physicsserver2dmanager_method_register_server) ( name: [`String`](class_string.md), create_callback: [`Callable`](class_callable.md) ) |
 | `void` | [`set_default_server`](#class_physicsserver2dmanager_method_set_default_server) ( name: [`String`](class_string.md), priority: [`int`](class_int.md) )            |
 

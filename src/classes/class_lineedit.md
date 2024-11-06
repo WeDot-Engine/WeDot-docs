@@ -59,6 +59,8 @@ On macOS, some extra keyboard shortcuts are available:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_lineedit_property_alignment)                                                         | ``0``                                                                             |
 | [`bool`](class_bool.md)                                       | [`caret_blink`](#class_lineedit_property_caret_blink)                                                     | ``false``                                                                         |
 | [`float`](class_float.md)                                     | [`caret_blink_interval`](#class_lineedit_property_caret_blink_interval)                                   | ``0.65``                                                                          |
@@ -94,6 +96,8 @@ On macOS, some extra keyboard shortcuts are available:
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                            | [`clear`](#class_lineedit_method_clear) ( )                                                                                  |
 | `void`                            | [`delete_char_at_caret`](#class_lineedit_method_delete_char_at_caret) ( )                                                    |
 | `void`                            | [`delete_text`](#class_lineedit_method_delete_text) ( from_column: [`int`](class_int.md), to_column: [`int`](class_int.md) ) |
@@ -112,6 +116,8 @@ On macOS, some extra keyboard shortcuts are available:
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`caret_color`](#class_lineedit_theme_color_caret_color)                               | ``Color(0.95, 0.95, 0.95, 1)``      |
 | [`Color`](class_color.md)         | [`clear_button_color`](#class_lineedit_theme_color_clear_button_color)                 | ``Color(0.875, 0.875, 0.875, 1)``   |
 | [`Color`](class_color.md)         | [`clear_button_color_pressed`](#class_lineedit_theme_color_clear_button_color_pressed) | ``Color(1, 1, 1, 1)``               |

@@ -19,6 +19,8 @@ To set up different types of inverse kinematics for the given Skeleton2D, a [`Sk
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                                | [`execute_modifications`](#class_skeleton2d_method_execute_modifications) ( delta: [`float`](class_float.md), execution_mode: [`int`](class_int.md) )                                                                                                       |
 | [`Bone2D`](class_bone2d.md)                                           | [`get_bone`](#class_skeleton2d_method_get_bone) ( idx: [`int`](class_int.md) )                                                                                                                                                                              |
 | [`int`](class_int.md)                                                 | [`get_bone_count`](#class_skeleton2d_method_get_bone_count) ( ) const[^const]                                                                                                                                                                               |

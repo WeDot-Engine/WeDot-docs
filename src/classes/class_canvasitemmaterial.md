@@ -17,6 +17,8 @@ A material for [`CanvasItem`](class_canvasitem.md) s.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BlendMode](#enum_canvasitemmaterial_blendmode) | [`blend_mode`](#class_canvasitemmaterial_property_blend_mode)                           | ``0``     |
 | [LightMode](#enum_canvasitemmaterial_lightmode) | [`light_mode`](#class_canvasitemmaterial_property_light_mode)                           | ``0``     |
 | [`int`](class_int.md)                           | [`particles_anim_h_frames`](#class_canvasitemmaterial_property_particles_anim_h_frames) |           |

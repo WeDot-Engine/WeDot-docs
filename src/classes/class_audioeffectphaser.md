@@ -19,6 +19,8 @@ Combines phase-shifted signals with the original signal. The movement of the pha
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`depth`](#class_audioeffectphaser_property_depth)               | ``1.0``    |
 | [`float`](class_float.md) | [`feedback`](#class_audioeffectphaser_property_feedback)         | ``0.7``    |
 | [`float`](class_float.md) | [`range_max_hz`](#class_audioeffectphaser_property_range_max_hz) | ``1600.0`` |

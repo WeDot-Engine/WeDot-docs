@@ -19,6 +19,8 @@ Provides direct access to a physics space in the [`PhysicsServer2D`](class_physi
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedFloat32Array`](class_packedfloat32array.md)         | [`cast_motion`](#class_physicsdirectspacestate2d_method_cast_motion) ( parameters: [`PhysicsShapeQueryParameters2D`](class_physicsshapequeryparameters2d.md) )                                                  |
 | [Array](class_array.md) [`Vector2`](class_vector2.md)       | [`collide_shape`](#class_physicsdirectspacestate2d_method_collide_shape) ( parameters: [`PhysicsShapeQueryParameters2D`](class_physicsshapequeryparameters2d.md), max_results: [`int`](class_int.md) = 32 )     |
 | [`Dictionary`](class_dictionary.md)                         | [`get_rest_info`](#class_physicsdirectspacestate2d_method_get_rest_info) ( parameters: [`PhysicsShapeQueryParameters2D`](class_physicsshapequeryparameters2d.md) )                                              |

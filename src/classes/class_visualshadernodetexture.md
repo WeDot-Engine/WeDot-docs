@@ -17,6 +17,8 @@ Performs a lookup operation on the provided texture, with support for multiple t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Source](#enum_visualshadernodetexture_source)           | [`source`](#class_visualshadernodetexture_property_source)             | ``0`` |
 | [`Texture2D`](class_texture2d.md)                        | [`texture`](#class_visualshadernodetexture_property_texture)           |       |
 | [TextureType](#enum_visualshadernodetexture_texturetype) | [`texture_type`](#class_visualshadernodetexture_property_texture_type) | ``0`` |

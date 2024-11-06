@@ -23,12 +23,16 @@ For integer coordinates, use [`Rect2i`](class_rect2i.md). The 3D equivalent to *
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`end`](#class_rect2_property_end)           | ``Vector2(0, 0)`` |
 | [`Vector2`](class_vector2.md) | [`position`](#class_rect2_property_position) | ``Vector2(0, 0)`` |
 | [`Vector2`](class_vector2.md) | [`size`](#class_rect2_property_size)         | ``Vector2(0, 0)`` |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( )                                                                                                                                 |
 | [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( from: [`Rect2`](class_rect2.md) )                                                                                                 |
 | [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( from: [`Rect2i`](class_rect2i.md) )                                                                                               |
@@ -37,6 +41,8 @@ For integer coordinates, use [`Rect2i`](class_rect2i.md). The 3D equivalent to *
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Rect2`](class_rect2.md)     | [`abs`](#class_rect2_method_abs) ( ) const[^const]                                                                                                                                                              |
 | [`bool`](class_bool.md)       | [`encloses`](#class_rect2_method_encloses) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                       |
 | [`Rect2`](class_rect2.md)     | [`expand`](#class_rect2_method_expand) ( to: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                      |
@@ -55,6 +61,8 @@ For integer coordinates, use [`Rect2i`](class_rect2i.md). The 3D equivalent to *
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`operator !=`](class_Rect2.md#operator_neq_Rect2) ( right: [`Rect2`](class_rect2.md) )                  |
 | [`Rect2`](class_rect2.md) | [`operator *`](class_Rect2.md#operator_mul_Transform2D) ( right: [`Transform2D`](class_transform2d.md) ) |
 | [`bool`](class_bool.md)   | [`operator ==`](class_Rect2.md#operator_eq_Rect2) ( right: [`Rect2`](class_rect2.md) )                   |

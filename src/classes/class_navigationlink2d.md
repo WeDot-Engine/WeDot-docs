@@ -19,6 +19,8 @@ A link between two positions on [`NavigationRegion2D`](class_navigationregion2d.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`bidirectional`](#class_navigationlink2d_property_bidirectional)         | ``true``          |
 | [`bool`](class_bool.md)       | [`enabled`](#class_navigationlink2d_property_enabled)                     | ``true``          |
 | [`Vector2`](class_vector2.md) | [`end_position`](#class_navigationlink2d_property_end_position)           | ``Vector2(0, 0)`` |
@@ -29,6 +31,8 @@ A link between two positions on [`NavigationRegion2D`](class_navigationregion2d.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`get_global_end_position`](#class_navigationlink2d_method_get_global_end_position) ( ) const[^const]                                                             |
 | [`Vector2`](class_vector2.md) | [`get_global_start_position`](#class_navigationlink2d_method_get_global_start_position) ( ) const[^const]                                                         |
 | [`bool`](class_bool.md)       | [`get_navigation_layer_value`](#class_navigationlink2d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |

@@ -17,6 +17,8 @@ Translated to `uniform vec2` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`default_value`](#class_visualshadernodevec2parameter_property_default_value)                 | ``Vector2(0, 0)`` |
 | [`bool`](class_bool.md)       | [`default_value_enabled`](#class_visualshadernodevec2parameter_property_default_value_enabled) | ``false``         |
 

@@ -21,6 +21,8 @@ A GraphFrame is always kept behind the connection layer and other [`GraphElement
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                  | [`autoshrink_enabled`](#class_graphframe_property_autoshrink_enabled) | ``true``                                                            |
 | [`int`](class_int.md)                    | [`autoshrink_margin`](#class_graphframe_property_autoshrink_margin)   | ``40``                                                              |
 | [`int`](class_int.md)                    | [`drag_margin`](#class_graphframe_property_drag_margin)               | ``16``                                                              |
@@ -31,10 +33,14 @@ A GraphFrame is always kept behind the connection layer and other [`GraphElement
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`HBoxContainer`](class_hboxcontainer.md) | [`get_titlebar_hbox`](#class_graphframe_method_get_titlebar_hbox) ( ) |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)       | [`resizer_color`](#class_graphframe_theme_color_resizer_color)         | ``Color(0.875, 0.875, 0.875, 1)`` |
 | [`StyleBox`](class_stylebox.md) | [`panel`](#class_graphframe_theme_style_panel)                         |                                   |
 | [`StyleBox`](class_stylebox.md) | [`panel_selected`](#class_graphframe_theme_style_panel_selected)       |                                   |

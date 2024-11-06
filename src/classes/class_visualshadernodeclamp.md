@@ -17,6 +17,8 @@ Constrains a value to lie between `min` and `max` values.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [OpType](#enum_visualshadernodeclamp_optype) | [`op_type`](#class_visualshadernodeclamp_property_op_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

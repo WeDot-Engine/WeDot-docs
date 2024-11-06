@@ -19,10 +19,14 @@ Unlike its runtime counterpart, **ImporterMesh** contains mesh data before vario
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md) | [`_data`](#class_importermesh_property__data) | ``{ "surfaces": [] }`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                          | [`add_blend_shape`](#class_importermesh_method_add_blend_shape) ( name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                 |
 | `void`                                          | [`add_surface`](#class_importermesh_method_add_surface) ( primitive: [PrimitiveType](#enum_mesh_primitivetype), arrays: [`Array`](class_array.md), blend_shapes: [Array](class_array.md) [`Array`](class_array.md) = [], lods: [`Dictionary`](class_dictionary.md) = {}, material: [`Material`](class_material.md) = null, name: [`String`](class_string.md) = "", flags: [`int`](class_int.md) = 0 ) |
 | `void`                                          | [`clear`](#class_importermesh_method_clear) ( )                                                                                                                                                                                                                                                                                                                                                       |

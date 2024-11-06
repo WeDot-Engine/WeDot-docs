@@ -17,6 +17,8 @@ GLTFMesh handles 3D mesh data imported from GLTF files. It includes properties f
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedFloat32Array`](class_packedfloat32array.md)     | [`blend_weights`](#class_gltfmesh_property_blend_weights)           | ``PackedFloat32Array()`` |
 | [Array](class_array.md) [`Material`](class_material.md) | [`instance_materials`](#class_gltfmesh_property_instance_materials) | ``[]``                   |
 | [`ImporterMesh`](class_importermesh.md)                 | [`mesh`](#class_gltfmesh_property_mesh)                             |                          |
@@ -24,6 +26,8 @@ GLTFMesh handles 3D mesh data imported from GLTF files. It includes properties f
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md) | [`get_additional_data`](#class_gltfmesh_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
 | `void`                        | [`set_additional_data`](#class_gltfmesh_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 

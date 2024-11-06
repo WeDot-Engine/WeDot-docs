@@ -17,6 +17,8 @@ Manages all [`InputEventAction`](class_inputeventaction.md) which can be created
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`action_add_event`](#class_inputmap_method_action_add_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                           |
 | `void`                                                      | [`action_erase_event`](#class_inputmap_method_action_erase_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                       |
 | `void`                                                      | [`action_erase_events`](#class_inputmap_method_action_erase_events) ( action: [`StringName`](class_stringname.md) )                                                                                                 |

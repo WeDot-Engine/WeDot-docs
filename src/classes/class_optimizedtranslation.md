@@ -17,6 +17,8 @@ An optimized translation, used by default for CSV Translations. Uses real-time c
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`generate`](#class_optimizedtranslation_method_generate) ( from: [`Translation`](class_translation.md) ) |
 
 <!-- rst-class:: classref-section-separator -->

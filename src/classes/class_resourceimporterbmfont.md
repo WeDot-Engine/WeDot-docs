@@ -21,6 +21,8 @@ See also [`ResourceImporterDynamicFont`](class_resourceimporterdynamicfont.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`compress`](#class_resourceimporterbmfont_property_compress)         | ``true`` |
 | [`Array`](class_array.md) | [`fallbacks`](#class_resourceimporterbmfont_property_fallbacks)       | ``[]``   |
 | [`int`](class_int.md)     | [`scaling_mode`](#class_resourceimporterbmfont_property_scaling_mode) | ``2``    |

@@ -17,6 +17,8 @@ Applies [`operator`](#class_visualshadernodecolorop_property_operator) to two co
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Operator](#enum_visualshadernodecolorop_operator) | [`operator`](#class_visualshadernodecolorop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

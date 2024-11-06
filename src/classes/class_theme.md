@@ -21,12 +21,16 @@ Use [`Control.theme`](#class_control_property_theme) of any control node to set 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`default_base_scale`](#class_theme_property_default_base_scale) | ``0.0`` |
 | [`Font`](class_font.md)   | [`default_font`](#class_theme_property_default_font)             |         |
 | [`int`](class_int.md)     | [`default_font_size`](#class_theme_property_default_font_size)   | ``-1``  |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_type`](#class_theme_method_add_type) ( theme_type: [`StringName`](class_stringname.md) )                                                                                                                                                          |
 | `void`                                            | [`clear`](#class_theme_method_clear) ( )                                                                                                                                                                                                                |
 | `void`                                            | [`clear_color`](#class_theme_method_clear_color) ( name: [`StringName`](class_stringname.md), theme_type: [`StringName`](class_stringname.md) )                                                                                                         |

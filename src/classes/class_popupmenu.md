@@ -25,6 +25,8 @@ All `set_*` methods allow negative item indices, i.e. `-1` to access the last it
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                     | [`allow_search`](#class_popupmenu_property_allow_search)                                         | ``true``  |
 | [`bool`](class_bool.md)                     | [`hide_on_checkable_item_selection`](#class_popupmenu_property_hide_on_checkable_item_selection) | ``true``  |
 | [`bool`](class_bool.md)                     | [`hide_on_item_selection`](#class_popupmenu_property_hide_on_item_selection)                     | ``true``  |
@@ -36,6 +38,8 @@ All `set_*` methods allow negative item indices, i.e. `-1` to access the last it
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                      | [`activate_item_by_event`](#class_popupmenu_method_activate_item_by_event) ( event: [`InputEvent`](class_inputevent.md), for_global_only: [`bool`](class_bool.md) = false )                                                                                                      |
 | `void`                                       | [`add_check_item`](#class_popupmenu_method_add_check_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1, accel: [Key](#enum_@globalscope_key) = 0 )                                                                                                      |
 | `void`                                       | [`add_check_shortcut`](#class_popupmenu_method_add_check_shortcut) ( shortcut: [`Shortcut`](class_shortcut.md), id: [`int`](class_int.md) = -1, global: [`bool`](class_bool.md) = false )                                                                                        |
@@ -110,6 +114,8 @@ All `set_*` methods allow negative item indices, i.e. `-1` to access the last it
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`font_accelerator_color`](#class_popupmenu_theme_color_font_accelerator_color)             | ``Color(0.7, 0.7, 0.7, 0.8)``     |
 | [`Color`](class_color.md)         | [`font_color`](#class_popupmenu_theme_color_font_color)                                     | ``Color(0.875, 0.875, 0.875, 1)`` |
 | [`Color`](class_color.md)         | [`font_disabled_color`](#class_popupmenu_theme_color_font_disabled_color)                   | ``Color(0.4, 0.4, 0.4, 0.8)``     |

@@ -21,17 +21,23 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md) | [`color`](#class_colorpickerbutton_property_color)           | ``Color(0, 0, 0, 1)``                                                       |
 | [`bool`](class_bool.md)   | [`edit_alpha`](#class_colorpickerbutton_property_edit_alpha) | ``true``                                                                    |
 | [`bool`](class_bool.md)   | toggle_mode                                                  | ``true`` (overrides [`BaseButton`](#class_basebutton_property_toggle_mode)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`ColorPicker`](class_colorpicker.md) | [`get_picker`](#class_colorpickerbutton_method_get_picker) ( ) |
 | [`PopupPanel`](class_popuppanel.md)   | [`get_popup`](#class_colorpickerbutton_method_get_popup) ( )   |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md) | [`bg`](#class_colorpickerbutton_theme_icon_bg) |
 
 <!-- rst-class:: classref-section-separator -->

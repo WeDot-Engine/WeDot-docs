@@ -23,6 +23,8 @@ See also [`AudioStreamPlayer`](class_audiostreamplayer.md) to play a sound non-p
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                          | [`area_mask`](#class_audiostreamplayer3d_property_area_mask)                                                       | ``1``         |
 | [`float`](class_float.md)                                      | [`attenuation_filter_cutoff_hz`](#class_audiostreamplayer3d_property_attenuation_filter_cutoff_hz)                 | ``5000.0``    |
 | [`float`](class_float.md)                                      | [`attenuation_filter_db`](#class_audiostreamplayer3d_property_attenuation_filter_db)                               | ``-24.0``     |
@@ -47,6 +49,8 @@ See also [`AudioStreamPlayer`](class_audiostreamplayer.md) to play a sound non-p
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                             | [`get_playback_position`](#class_audiostreamplayer3d_method_get_playback_position) ( )              |
 | [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](#class_audiostreamplayer3d_method_get_stream_playback) ( )                  |
 | [`bool`](class_bool.md)                               | [`has_stream_playback`](#class_audiostreamplayer3d_method_has_stream_playback) ( )                  |

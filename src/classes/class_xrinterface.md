@@ -21,6 +21,8 @@ Interfaces should be written in such a way that simply enabling them will give u
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                        | [`ar_is_anchor_detection_enabled`](#class_xrinterface_property_ar_is_anchor_detection_enabled) | ``false`` |
 | [EnvironmentBlendMode](#enum_xrinterface_environmentblendmode) | [`environment_blend_mode`](#class_xrinterface_property_environment_blend_mode)                 | ``0``     |
 | [`bool`](class_bool.md)                                        | [`interface_is_primary`](#class_xrinterface_property_interface_is_primary)                     | ``false`` |
@@ -28,6 +30,8 @@ Interfaces should be written in such a way that simply enabling them will give u
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                               | [`get_camera_feed_id`](#class_xrinterface_method_get_camera_feed_id) ( )                                                                                                                                                                                                                                                            |
 | [`int`](class_int.md)                               | [`get_capabilities`](#class_xrinterface_method_get_capabilities) ( ) const[^const]                                                                                                                                                                                                                                                  |
 | [`StringName`](class_stringname.md)                 | [`get_name`](#class_xrinterface_method_get_name) ( ) const[^const]                                                                                                                                                                                                                                                                  |

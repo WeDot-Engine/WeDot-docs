@@ -23,6 +23,8 @@ The node attempts to identify blend shapes based on name matching. Blend shapes 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md) | [`face_tracker`](#class_xrfacemodifier3d_property_face_tracker) | ``&"/user/face_tracker"`` |
 | [`NodePath`](class_nodepath.md)     | [`target`](#class_xrfacemodifier3d_property_target)             | ``NodePath("")``          |
 

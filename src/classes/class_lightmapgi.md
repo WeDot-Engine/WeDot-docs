@@ -27,6 +27,8 @@ The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                           | [`bias`](#class_lightmapgi_property_bias)                                           | ``0.0005`` |
 | [`float`](class_float.md)                           | [`bounce_indirect_energy`](#class_lightmapgi_property_bounce_indirect_energy)       | ``1.0``    |
 | [`int`](class_int.md)                               | [`bounces`](#class_lightmapgi_property_bounces)                                     | ``3``      |

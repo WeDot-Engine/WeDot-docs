@@ -17,6 +17,8 @@ Returns an associated value of the [`op_type`](#class_visualshadernodeswitch_pro
 
 ## 属性
 
+|||
+|:-:|:--|
 | [OpType](#enum_visualshadernodeswitch_optype) | [`op_type`](#class_visualshadernodeswitch_property_op_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

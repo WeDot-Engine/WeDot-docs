@@ -13,6 +13,8 @@ Exporter for Linux/BSD.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`binary_format/architecture`](#class_editorexportplatformlinuxbsd_property_binary_format/architecture)             |
 | [`bool`](class_bool.md)     | [`binary_format/embed_pck`](#class_editorexportplatformlinuxbsd_property_binary_format/embed_pck)                   |
 | [`String`](class_string.md) | [`custom_template/debug`](#class_editorexportplatformlinuxbsd_property_custom_template/debug)                       |

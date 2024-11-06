@@ -49,6 +49,8 @@ Here's a sample on how to generate a triangular face:
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`clear_surfaces`](#class_immediatemesh_method_clear_surfaces) ( )                                                                                                      |
 | `void` | [`surface_add_vertex`](#class_immediatemesh_method_surface_add_vertex) ( vertex: [`Vector3`](class_vector3.md) )                                                        |
 | `void` | [`surface_add_vertex_2d`](#class_immediatemesh_method_surface_add_vertex_2d) ( vertex: [`Vector2`](class_vector2.md) )                                                  |

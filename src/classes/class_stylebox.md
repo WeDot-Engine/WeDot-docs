@@ -21,6 +21,8 @@ Abstract base class for defining stylized boxes for UI elements.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`content_margin_bottom`](#class_stylebox_property_content_margin_bottom) | ``-1.0`` |
 | [`float`](class_float.md) | [`content_margin_left`](#class_stylebox_property_content_margin_left)     | ``-1.0`` |
 | [`float`](class_float.md) | [`content_margin_right`](#class_stylebox_property_content_margin_right)   | ``-1.0`` |
@@ -28,6 +30,8 @@ Abstract base class for defining stylized boxes for UI elements.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                              | [`_draw`](#class_stylebox_private_method__draw) ( to_canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]          |
 | [`Rect2`](class_rect2.md)           | [`_get_draw_rect`](#class_stylebox_private_method__get_draw_rect) ( rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]                               |
 | [`Vector2`](class_vector2.md)       | [`_get_minimum_size`](#class_stylebox_private_method__get_minimum_size) ( ) virtual[^virtual] const[^const]                                                         |

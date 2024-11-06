@@ -17,12 +17,16 @@ Contains the results of a single [`RegEx`](class_regex.md) match returned by [`R
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md)               | [`names`](#class_regexmatch_property_names)     | ``{}``                  |
 | [`PackedStringArray`](class_packedstringarray.md) | [`strings`](#class_regexmatch_property_strings) | ``PackedStringArray()`` |
 | [`String`](class_string.md)                       | [`subject`](#class_regexmatch_property_subject) | ``""``                  |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)       | [`get_end`](#class_regexmatch_method_get_end) ( name: [`Variant`](class_variant.md) = 0 ) const[^const]       |
 | [`int`](class_int.md)       | [`get_group_count`](#class_regexmatch_method_get_group_count) ( ) const[^const]                               |
 | [`int`](class_int.md)       | [`get_start`](#class_regexmatch_method_get_start) ( name: [`Variant`](class_variant.md) = 0 ) const[^const]   |

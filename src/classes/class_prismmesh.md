@@ -17,6 +17,8 @@ Class representing a prism-shaped [`PrimitiveMesh`](class_primitivemesh.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)     | [`left_to_right`](#class_prismmesh_property_left_to_right)       | ``0.5``              |
 | [`Vector3`](class_vector3.md) | [`size`](#class_prismmesh_property_size)                         | ``Vector3(1, 1, 1)`` |
 | [`int`](class_int.md)         | [`subdivide_depth`](#class_prismmesh_property_subdivide_depth)   | ``0``                |

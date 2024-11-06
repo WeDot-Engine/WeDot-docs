@@ -19,6 +19,8 @@ Varying values are shader variables that can be passed between shader functions,
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                   | [`varying_name`](#class_visualshadernodevarying_property_varying_name) | ``"[None]"`` |
 | [VaryingType](#enum_visualshader_varyingtype) | [`varying_type`](#class_visualshadernodevarying_property_varying_type) | ``0``        |
 

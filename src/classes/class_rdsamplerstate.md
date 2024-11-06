@@ -17,6 +17,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                      | [`anisotropy_max`](#class_rdsamplerstate_property_anisotropy_max)     | ``1.0``   |
 | [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) | [`border_color`](#class_rdsamplerstate_property_border_color)         | ``2``     |
 | [CompareOperator](#enum_renderingdevice_compareoperator)       | [`compare_op`](#class_rdsamplerstate_property_compare_op)             | ``7``     |

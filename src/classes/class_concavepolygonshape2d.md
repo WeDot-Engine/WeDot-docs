@@ -25,6 +25,8 @@ Being just a collection of interconnected line segments, **ConcavePolygonShape2D
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedVector2Array`](class_packedvector2array.md) | [`segments`](#class_concavepolygonshape2d_property_segments) | ``PackedVector2Array()`` |
 
 <!-- rst-class:: classref-section-separator -->

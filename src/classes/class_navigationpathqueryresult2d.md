@@ -19,6 +19,8 @@ This class stores the result of a 2D navigation path query from the [`Navigation
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedVector2Array`](class_packedvector2array.md) | [`path`](#class_navigationpathqueryresult2d_property_path)                     | ``PackedVector2Array()`` |
 | [`PackedInt64Array`](class_packedint64array.md)     | [`path_owner_ids`](#class_navigationpathqueryresult2d_property_path_owner_ids) | ``PackedInt64Array()``   |
 | [Array](class_array.md) [`RID`](class_rid.md)       | [`path_rids`](#class_navigationpathqueryresult2d_property_path_rids)           | ``[]``                   |
@@ -26,6 +28,8 @@ This class stores the result of a 2D navigation path query from the [`Navigation
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`reset`](#class_navigationpathqueryresult2d_method_reset) ( ) |
 
 <!-- rst-class:: classref-section-separator -->

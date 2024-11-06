@@ -21,6 +21,8 @@ This physics body implements all the physics logic needed to simulate a car. It 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`brake`](#class_vehiclebody3d_property_brake)               | ``0.0``                                                                |
 | [`float`](class_float.md) | [`engine_force`](#class_vehiclebody3d_property_engine_force) | ``0.0``                                                                |
 | [`float`](class_float.md) | mass                                                         | ``40.0`` (overrides [`RigidBody3D`](#class_rigidbody3d_property_mass)) |

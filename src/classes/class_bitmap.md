@@ -17,6 +17,8 @@ A two-dimensional array of boolean values, can be used to efficiently store a bi
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Image`](class_image.md)                                                   | [`convert_to_image`](#class_bitmap_method_convert_to_image) ( ) const[^const]                                                                                 |
 | `void`                                                                      | [`create`](#class_bitmap_method_create) ( size: [`Vector2i`](class_vector2i.md) )                                                                             |
 | `void`                                                                      | [`create_from_image_alpha`](#class_bitmap_method_create_from_image_alpha) ( image: [`Image`](class_image.md), threshold: [`float`](class_float.md) = 0.1 )    |

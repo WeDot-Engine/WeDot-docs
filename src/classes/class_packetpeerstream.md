@@ -19,6 +19,8 @@ PacketStreamPeer provides a wrapper for working using packets over a stream. Thi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)               | [`input_buffer_max_size`](#class_packetpeerstream_property_input_buffer_max_size)   | ``65532`` |
 | [`int`](class_int.md)               | [`output_buffer_max_size`](#class_packetpeerstream_property_output_buffer_max_size) | ``65532`` |
 | [`StreamPeer`](class_streampeer.md) | [`stream_peer`](#class_packetpeerstream_property_stream_peer)                       |           |

@@ -19,11 +19,15 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedInt32Array`](class_packedint32array.md)     | [`indices`](#class_arrayoccluder3d_property_indices)   | ``PackedInt32Array()``   |
 | [`PackedVector3Array`](class_packedvector3array.md) | [`vertices`](#class_arrayoccluder3d_property_vertices) | ``PackedVector3Array()`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`set_arrays`](#class_arrayoccluder3d_method_set_arrays) ( vertices: [`PackedVector3Array`](class_packedvector3array.md), indices: [`PackedInt32Array`](class_packedint32array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->

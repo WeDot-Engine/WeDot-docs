@@ -19,6 +19,8 @@ Use [`XRHandModifier3D`](class_xrhandmodifier3d.md) to animate a hand mesh using
 
 ## 属性
 
+|||
+|:-:|:--|
 | [TrackerHand](#enum_xrpositionaltracker_trackerhand)         | hand                                                                         | ``1`` (overrides [`XRPositionalTracker`](#class_xrpositionaltracker_property_hand)) |
 | [HandTrackingSource](#enum_xrhandtracker_handtrackingsource) | [`hand_tracking_source`](#class_xrhandtracker_property_hand_tracking_source) | ``0``                                                                               |
 | [`bool`](class_bool.md)                                      | [`has_tracking_data`](#class_xrhandtracker_property_has_tracking_data)       | ``false``                                                                           |
@@ -26,6 +28,8 @@ Use [`XRHandModifier3D`](class_xrhandmodifier3d.md) to animate a hand mesh using
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md)                        | [`get_hand_joint_angular_velocity`](#class_xrhandtracker_method_get_hand_joint_angular_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                    |
 | [HandJointFlags](#enum_xrhandtracker_handjointflags) | [`get_hand_joint_flags`](#class_xrhandtracker_method_get_hand_joint_flags) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                                          |
 | [`Vector3`](class_vector3.md)                        | [`get_hand_joint_linear_velocity`](#class_xrhandtracker_method_get_hand_joint_linear_velocity) ( joint: [HandJoint](#enum_xrhandtracker_handjoint) ) const[^const]                                      |

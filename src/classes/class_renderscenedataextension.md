@@ -17,6 +17,8 @@ This class allows for a RenderSceneData implementation to be made in GDExtension
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Projection`](class_projection.md)   | [`_get_cam_projection`](#class_renderscenedataextension_private_method__get_cam_projection) ( ) virtual[^virtual] const[^const]                               |
 | [`Transform3D`](class_transform3d.md) | [`_get_cam_transform`](#class_renderscenedataextension_private_method__get_cam_transform) ( ) virtual[^virtual] const[^const]                                 |
 | [`RID`](class_rid.md)                 | [`_get_uniform_buffer`](#class_renderscenedataextension_private_method__get_uniform_buffer) ( ) virtual[^virtual] const[^const]                               |

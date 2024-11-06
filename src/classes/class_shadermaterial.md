@@ -21,10 +21,14 @@ Multiple **ShaderMaterial** s can use the same shader and configure different va
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Shader`](class_shader.md) | [`shader`](#class_shadermaterial_property_shader) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md) | [`get_shader_parameter`](#class_shadermaterial_method_get_shader_parameter) ( param: [`StringName`](class_stringname.md) ) const[^const]                         |
 | `void`                        | [`set_shader_parameter`](#class_shadermaterial_method_set_shader_parameter) ( param: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) |
 

@@ -19,6 +19,8 @@ Abstract base class for all joints in 3D physics. 3D joints bind together two ph
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`exclude_nodes_from_collision`](#class_joint3d_property_exclude_nodes_from_collision) | ``true``         |
 | [`NodePath`](class_nodepath.md) | [`node_a`](#class_joint3d_property_node_a)                                             | ``NodePath("")`` |
 | [`NodePath`](class_nodepath.md) | [`node_b`](#class_joint3d_property_node_b)                                             | ``NodePath("")`` |
@@ -26,6 +28,8 @@ Abstract base class for all joints in 3D physics. 3D joints bind together two ph
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md) | [`get_rid`](#class_joint3d_method_get_rid) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

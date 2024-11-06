@@ -21,6 +21,8 @@ Note that "global pose" below refers to the overall transform of the bone with r
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                                     | [`animate_physical_bones`](#class_skeleton3d_property_animate_physical_bones)                 | ``true``  |
 | [ModifierCallbackModeProcess](#enum_skeleton3d_modifiercallbackmodeprocess) | [`modifier_callback_mode_process`](#class_skeleton3d_property_modifier_callback_mode_process) | ``1``     |
 | [`float`](class_float.md)                                                   | [`motion_scale`](#class_skeleton3d_property_motion_scale)                                     | ``1.0``   |
@@ -28,6 +30,8 @@ Note that "global pose" below refers to the overall transform of the bone with r
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                           | [`add_bone`](#class_skeleton3d_method_add_bone) ( name: [`String`](class_string.md) )                                                                                                                                                                      |
 | `void`                                          | [`clear_bones`](#class_skeleton3d_method_clear_bones) ( )                                                                                                                                                                                                  |
 | `void`                                          | [`clear_bones_global_pose_override`](#class_skeleton3d_method_clear_bones_global_pose_override) ( )                                                                                                                                                        |

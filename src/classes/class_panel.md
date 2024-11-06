@@ -17,6 +17,8 @@ A GUI control that displays a [`StyleBox`](class_stylebox.md).
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`StyleBox`](class_stylebox.md) | [`panel`](#class_panel_theme_style_panel) |
 
 <!-- rst-class:: classref-section-separator -->

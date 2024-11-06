@@ -17,6 +17,8 @@ Stores information about multi-touch press/release input events. Supports touch 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`canceled`](#class_inputeventscreentouch_property_canceled)     | ``false``         |
 | [`bool`](class_bool.md)       | [`double_tap`](#class_inputeventscreentouch_property_double_tap) | ``false``         |
 | [`int`](class_int.md)         | [`index`](#class_inputeventscreentouch_property_index)           | ``0``             |

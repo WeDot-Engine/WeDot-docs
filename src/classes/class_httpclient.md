@@ -35,12 +35,16 @@ For more information on HTTP, see [*MDN's documentation on HTTP*](https://develo
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`blocking_mode_enabled`](#class_httpclient_property_blocking_mode_enabled) | ``false`` |
 | [`StreamPeer`](class_streampeer.md) | [`connection`](#class_httpclient_property_connection)                       |           |
 | [`int`](class_int.md)               | [`read_chunk_size`](#class_httpclient_property_read_chunk_size)             | ``65536`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`close`](#class_httpclient_method_close) ( )                                                                                                                                                                                                          |
 | [Error](#enum_@globalscope_error)                 | [`connect_to_host`](#class_httpclient_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) = -1, tls_options: [`TLSOptions`](class_tlsoptions.md) = null )                                                         |
 | [`int`](class_int.md)                             | [`get_response_body_length`](#class_httpclient_method_get_response_body_length) ( ) const[^const]                                                                                                                                                      |

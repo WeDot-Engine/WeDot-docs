@@ -19,6 +19,8 @@ The first 3 DOF represent the linear motion of the physics bodies and the last 3
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`angular_limit_x/damping`](#class_generic6dofjoint3d_property_angular_limit_x/damping)                       | ``1.0``   |
 | [`bool`](class_bool.md)   | [`angular_limit_x/enabled`](#class_generic6dofjoint3d_property_angular_limit_x/enabled)                       | ``true``  |
 | [`float`](class_float.md) | [`angular_limit_x/erp`](#class_generic6dofjoint3d_property_angular_limit_x/erp)                               | ``0.5``   |
@@ -106,6 +108,8 @@ The first 3 DOF represent the linear motion of the physics bodies and the last 3
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`get_flag_x`](#class_generic6dofjoint3d_method_get_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
 | [`bool`](class_bool.md)   | [`get_flag_y`](#class_generic6dofjoint3d_method_get_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
 | [`bool`](class_bool.md)   | [`get_flag_z`](#class_generic6dofjoint3d_method_get_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |

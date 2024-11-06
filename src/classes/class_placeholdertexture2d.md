@@ -23,6 +23,8 @@ This class is used when loading a project that uses a [`Texture2D`](class_textur
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | resource_local_to_scene                             | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
 | [`Vector2`](class_vector2.md) | [`size`](#class_placeholdertexture2d_property_size) | ``Vector2(1, 1)``                                                                    |
 

@@ -67,6 +67,8 @@ The above code relies on the number of elements in the `enemies` array remaining
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`add_group_task`](#class_workerthreadpool_method_add_group_task) ( action: [`Callable`](class_callable.md), elements: [`int`](class_int.md), tasks_needed: [`int`](class_int.md) = -1, high_priority: [`bool`](class_bool.md) = false, description: [`String`](class_string.md) = "" ) |
 | [`int`](class_int.md)             | [`add_task`](#class_workerthreadpool_method_add_task) ( action: [`Callable`](class_callable.md), high_priority: [`bool`](class_bool.md) = false, description: [`String`](class_string.md) = "" )                                                                                        |
 | [`int`](class_int.md)             | [`get_group_processed_element_count`](#class_workerthreadpool_method_get_group_processed_element_count) ( group_id: [`int`](class_int.md) ) const[^const]                                                                                                                               |

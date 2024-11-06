@@ -23,18 +23,24 @@ It uses floating-point coordinates. The 2D counterpart to **AABB** is [`Rect2`](
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md) | [`end`](#class_aabb_property_end)           | ``Vector3(0, 0, 0)`` |
 | [`Vector3`](class_vector3.md) | [`position`](#class_aabb_property_position) | ``Vector3(0, 0, 0)`` |
 | [`Vector3`](class_vector3.md) | [`size`](#class_aabb_property_size)         | ``Vector3(0, 0, 0)`` |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( )                                                                              |
 | [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( from: [`AABB`](class_aabb.md) )                                                |
 | [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( position: [`Vector3`](class_vector3.md), size: [`Vector3`](class_vector3.md) ) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`AABB`](class_aabb.md)       | [`abs`](#class_aabb_method_abs) ( ) const[^const]                                                                                                      |
 | [`bool`](class_bool.md)       | [`encloses`](#class_aabb_method_encloses) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                              |
 | [`AABB`](class_aabb.md)       | [`expand`](#class_aabb_method_expand) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                        |
@@ -63,6 +69,8 @@ It uses floating-point coordinates. The 2D counterpart to **AABB** is [`Rect2`](
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`operator !=`](class_AABB.md#operator_neq_AABB) ( right: [`AABB`](class_aabb.md) )                     |
 | [`AABB`](class_aabb.md) | [`operator *`](class_AABB.md#operator_mul_Transform3D) ( right: [`Transform3D`](class_transform3d.md) ) |
 | [`bool`](class_bool.md) | [`operator ==`](class_AABB.md#operator_eq_AABB) ( right: [`AABB`](class_aabb.md) )                      |

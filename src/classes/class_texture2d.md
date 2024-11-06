@@ -25,6 +25,8 @@ Textures are often created by loading them from a file. See [`@GDScript.load`](#
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                          | [`_draw`](#class_texture2d_private_method__draw) ( to_canvas_item: [`RID`](class_rid.md), pos: [`Vector2`](class_vector2.md), modulate: [`Color`](class_color.md), transpose: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                                                                 |
 | `void`                          | [`_draw_rect`](#class_texture2d_private_method__draw_rect) ( to_canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md), tile: [`bool`](class_bool.md), modulate: [`Color`](class_color.md), transpose: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                           |
 | `void`                          | [`_draw_rect_region`](#class_texture2d_private_method__draw_rect_region) ( to_canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md), src_rect: [`Rect2`](class_rect2.md), modulate: [`Color`](class_color.md), transpose: [`bool`](class_bool.md), clip_uv: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]     |

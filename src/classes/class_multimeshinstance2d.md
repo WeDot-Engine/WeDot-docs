@@ -19,6 +19,8 @@ Usage is the same as [`MultiMeshInstance3D`](class_multimeshinstance3d.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`MultiMesh`](class_multimesh.md) | [`multimesh`](#class_multimeshinstance2d_property_multimesh) |
 | [`Texture2D`](class_texture2d.md) | [`texture`](#class_multimeshinstance2d_property_texture)     |
 

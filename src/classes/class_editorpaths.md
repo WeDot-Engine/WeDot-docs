@@ -21,6 +21,8 @@ This editor-only singleton returns OS-specific paths to various data folders and
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`get_cache_dir`](#class_editorpaths_method_get_cache_dir) ( ) const[^const]                       |
 | [`String`](class_string.md) | [`get_config_dir`](#class_editorpaths_method_get_config_dir) ( ) const[^const]                     |
 | [`String`](class_string.md) | [`get_data_dir`](#class_editorpaths_method_get_data_dir) ( ) const[^const]                         |

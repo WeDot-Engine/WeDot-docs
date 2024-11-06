@@ -19,6 +19,8 @@ Math done using the **float** type is not guaranteed to be exact and will often 
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( )                                   |
 | [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`float`](class_float.md) )   |
 | [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`String`](class_string.md) ) |
@@ -27,6 +29,8 @@ Math done using the **float** type is not guaranteed to be exact and will often 
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`operator !=`](class_float.md#operator_neq_float) ( right: [`float`](class_float.md) )               |
 | [`bool`](class_bool.md)             | [`operator !=`](class_float.md#operator_neq_int) ( right: [`int`](class_int.md) )                     |
 | [`Color`](class_color.md)           | [`operator *`](class_float.md#operator_mul_Color) ( right: [`Color`](class_color.md) )                |

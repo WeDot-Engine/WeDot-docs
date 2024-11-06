@@ -17,6 +17,8 @@ ENet's purpose is to provide a relatively thin, simple and robust network commun
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                              | [`bandwidth_limit`](#class_enetconnection_method_bandwidth_limit) ( in_bandwidth: [`int`](class_int.md) = 0, out_bandwidth: [`int`](class_int.md) = 0 )                                                                                                                                                                  |
 | `void`                                                              | [`broadcast`](#class_enetconnection_method_broadcast) ( channel: [`int`](class_int.md), packet: [`PackedByteArray`](class_packedbytearray.md), flags: [`int`](class_int.md) )                                                                                                                                            |
 | `void`                                                              | [`channel_limit`](#class_enetconnection_method_channel_limit) ( limit: [`int`](class_int.md) )                                                                                                                                                                                                                           |

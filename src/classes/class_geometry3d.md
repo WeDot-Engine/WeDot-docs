@@ -17,6 +17,8 @@ Provides a set of helper functions to create geometric shapes, compute intersect
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`Plane`](class_plane.md)   | [`build_box_planes`](#class_geometry3d_method_build_box_planes) ( extents: [`Vector3`](class_vector3.md) )                                                                                                                                                             |
 | [Array](class_array.md) [`Plane`](class_plane.md)   | [`build_capsule_planes`](#class_geometry3d_method_build_capsule_planes) ( radius: [`float`](class_float.md), height: [`float`](class_float.md), sides: [`int`](class_int.md), lats: [`int`](class_int.md), axis: Vector3.Axis = 2 )                                    |
 | [Array](class_array.md) [`Plane`](class_plane.md)   | [`build_cylinder_planes`](#class_geometry3d_method_build_cylinder_planes) ( radius: [`float`](class_float.md), height: [`float`](class_float.md), sides: [`int`](class_int.md), axis: Vector3.Axis = 2 )                                                               |

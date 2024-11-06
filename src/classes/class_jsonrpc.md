@@ -17,6 +17,8 @@ A helper to handle dictionaries which look like JSONRPC documents.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md) | [`make_notification`](#class_jsonrpc_method_make_notification) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md) )                                                    |
 | [`Dictionary`](class_dictionary.md) | [`make_request`](#class_jsonrpc_method_make_request) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                           |
 | [`Dictionary`](class_dictionary.md) | [`make_response`](#class_jsonrpc_method_make_response) ( result: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                                                              |

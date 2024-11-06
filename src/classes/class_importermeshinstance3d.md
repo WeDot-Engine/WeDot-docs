@@ -13,6 +13,8 @@
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ShadowCastingSetting](#enum_geometryinstance3d_shadowcastingsetting)       | [`cast_shadow`](#class_importermeshinstance3d_property_cast_shadow)                                     | ``1``            |
 | [`int`](class_int.md)                                                       | [`layer_mask`](#class_importermeshinstance3d_property_layer_mask)                                       | ``1``            |
 | [`ImporterMesh`](class_importermesh.md)                                     | [`mesh`](#class_importermeshinstance3d_property_mesh)                                                   |                  |

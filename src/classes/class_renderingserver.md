@@ -33,10 +33,14 @@ Similarly, in 2D, a canvas is needed to draw all canvas items.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`render_loop_enabled`](#class_renderingserver_property_render_loop_enabled) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`Image`](class_image.md)                            | [`bake_render_uv2`](#class_renderingserver_method_bake_render_uv2) ( base: [`RID`](class_rid.md), material_overrides: [Array](class_array.md) [`RID`](class_rid.md), image_size: [`Vector2i`](class_vector2i.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `void`                                                                       | [`call_on_render_thread`](#class_renderingserver_method_call_on_render_thread) ( callable: [`Callable`](class_callable.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | [`RID`](class_rid.md)                                                        | [`camera_attributes_create`](#class_renderingserver_method_camera_attributes_create) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |

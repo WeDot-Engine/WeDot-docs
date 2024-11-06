@@ -27,6 +27,8 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)   | [`get_reference_count`](#class_refcounted_method_get_reference_count) ( ) const[^const] |
 | [`bool`](class_bool.md) | [`init_ref`](#class_refcounted_method_init_ref) ( )                                     |
 | [`bool`](class_bool.md) | [`reference`](#class_refcounted_method_reference) ( )                                   |

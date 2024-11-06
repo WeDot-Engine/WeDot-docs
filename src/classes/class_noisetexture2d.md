@@ -30,6 +30,8 @@ The class uses [`Thread`](class_thread.md) s to generate the texture data intern
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`as_normal_map`](#class_noisetexture2d_property_as_normal_map)               | ``false``                                                                            |
 | [`float`](class_float.md)       | [`bump_strength`](#class_noisetexture2d_property_bump_strength)               | ``8.0``                                                                              |
 | [`Gradient`](class_gradient.md) | [`color_ramp`](#class_noisetexture2d_property_color_ramp)                     |                                                                                      |

@@ -17,6 +17,8 @@ A custom control for editing properties that can be added to the [`EditorInspect
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`checkable`](#class_editorproperty_property_checkable)       | ``false`` |
 | [`bool`](class_bool.md)     | [`checked`](#class_editorproperty_property_checked)           | ``false`` |
 | [`bool`](class_bool.md)     | [`deletable`](#class_editorproperty_property_deletable)       | ``false`` |
@@ -27,6 +29,8 @@ A custom control for editing properties that can be added to the [`EditorInspect
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                              | [`_set_read_only`](#class_editorproperty_private_method__set_read_only) ( read_only: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                 |
 | `void`                              | [`_update_property`](#class_editorproperty_private_method__update_property) ( ) virtual[^virtual]                                                                                                                                                |
 | `void`                              | [`add_focusable`](#class_editorproperty_method_add_focusable) ( control: [`Control`](class_control.md) )                                                                                                                                         |

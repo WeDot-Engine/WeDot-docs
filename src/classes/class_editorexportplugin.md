@@ -19,6 +19,8 @@ To use **EditorExportPlugin**, register it using the [`EditorPlugin.add_export_p
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`_begin_customize_resources`](#class_editorexportplugin_private_method__begin_customize_resources) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md), features: [`PackedStringArray`](class_packedstringarray.md) ) virtual[^virtual] const[^const]                    |
 | [`bool`](class_bool.md)                                     | [`_begin_customize_scenes`](#class_editorexportplugin_private_method__begin_customize_scenes) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md), features: [`PackedStringArray`](class_packedstringarray.md) ) virtual[^virtual] const[^const]                          |
 | [`Resource`](class_resource.md)                             | [`_customize_resource`](#class_editorexportplugin_private_method__customize_resource) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) ) virtual[^virtual]                                                                                                  |

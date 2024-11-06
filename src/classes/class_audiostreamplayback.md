@@ -19,6 +19,8 @@ Can play, loop, pause a scroll through audio. See [`AudioStream`](class_audiostr
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                 | [`_get_loop_count`](#class_audiostreamplayback_private_method__get_loop_count) ( ) virtual[^virtual] const[^const]                                                                 |
 | [`Variant`](class_variant.md)                         | [`_get_parameter`](#class_audiostreamplayback_private_method__get_parameter) ( name: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                         |
 | [`float`](class_float.md)                             | [`_get_playback_position`](#class_audiostreamplayback_private_method__get_playback_position) ( ) virtual[^virtual] const[^const]                                                   |

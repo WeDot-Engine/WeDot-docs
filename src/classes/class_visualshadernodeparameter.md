@@ -19,6 +19,8 @@ A parameter represents a variable in the shader which is set externally, i.e. fr
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                            | [`parameter_name`](#class_visualshadernodeparameter_property_parameter_name) | ``""`` |
 | [Qualifier](#enum_visualshadernodeparameter_qualifier) | [`qualifier`](#class_visualshadernodeparameter_property_qualifier)           | ``0``  |
 

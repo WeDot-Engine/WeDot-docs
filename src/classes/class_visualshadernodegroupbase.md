@@ -19,6 +19,8 @@ Currently, has no direct usage, use the derived classes instead.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                      | [`add_input_port`](#class_visualshadernodegroupbase_method_add_input_port) ( id: [`int`](class_int.md), type: [`int`](class_int.md), name: [`String`](class_string.md) )   |
 | `void`                      | [`add_output_port`](#class_visualshadernodegroupbase_method_add_output_port) ( id: [`int`](class_int.md), type: [`int`](class_int.md), name: [`String`](class_string.md) ) |
 | `void`                      | [`clear_input_ports`](#class_visualshadernodegroupbase_method_clear_input_ports) ( )                                                                                       |

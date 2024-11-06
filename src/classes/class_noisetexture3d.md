@@ -29,6 +29,8 @@ The class uses [`Thread`](class_thread.md) s to generate the texture data intern
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Gradient`](class_gradient.md) | [`color_ramp`](#class_noisetexture3d_property_color_ramp)                     |           |
 | [`int`](class_int.md)           | [`depth`](#class_noisetexture3d_property_depth)                               | ``64``    |
 | [`int`](class_int.md)           | [`height`](#class_noisetexture3d_property_height)                             | ``64``    |

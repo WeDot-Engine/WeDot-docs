@@ -19,6 +19,8 @@ A node that displays 2D texture information in a 3D environment. See also [`Spri
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                   | [`alpha_antialiasing_edge`](#class_spritebase3d_property_alpha_antialiasing_edge) | ``0.0``               |
 | [AlphaAntiAliasing](#enum_basematerial3d_alphaantialiasing) | [`alpha_antialiasing_mode`](#class_spritebase3d_property_alpha_antialiasing_mode) | ``0``                 |
 | [AlphaCutMode](#enum_spritebase3d_alphacutmode)             | [`alpha_cut`](#class_spritebase3d_property_alpha_cut)                             | ``0``                 |
@@ -42,6 +44,8 @@ A node that displays 2D texture information in a 3D environment. See also [`Spri
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](#class_spritebase3d_method_generate_triangle_mesh) ( ) const[^const]                                                   |
 | [`bool`](class_bool.md)                 | [`get_draw_flag`](#class_spritebase3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags) ) const[^const]                     |
 | [`Rect2`](class_rect2.md)               | [`get_item_rect`](#class_spritebase3d_method_get_item_rect) ( ) const[^const]                                                                     |

@@ -19,6 +19,8 @@ A 2D circle shape, intended for use in physics. Usually used to provide a shape 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`radius`](#class_circleshape2d_property_radius) | ``10.0`` |
 
 <!-- rst-class:: classref-section-separator -->

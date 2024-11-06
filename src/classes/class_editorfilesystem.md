@@ -19,6 +19,8 @@ This object holds information of all resources in the filesystem, their types, e
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                                       | [`get_file_type`](#class_editorfilesystem_method_get_file_type) ( path: [`String`](class_string.md) ) const[^const]            |
 | [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem`](#class_editorfilesystem_method_get_filesystem) ( )                                                          |
 | [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem_path`](#class_editorfilesystem_method_get_filesystem_path) ( path: [`String`](class_string.md) )              |

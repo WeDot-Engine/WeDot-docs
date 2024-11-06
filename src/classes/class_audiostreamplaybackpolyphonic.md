@@ -17,6 +17,8 @@ Playback instance for [`AudioStreamPolyphonic`](class_audiostreampolyphonic.md).
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`is_stream_playing`](#class_audiostreamplaybackpolyphonic_method_is_stream_playing) ( stream: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                    |
 | [`int`](class_int.md)   | [`play_stream`](#class_audiostreamplaybackpolyphonic_method_play_stream) ( stream: [`AudioStream`](class_audiostream.md), from_offset: [`float`](class_float.md) = 0, volume_db: [`float`](class_float.md) = 0, pitch_scale: [`float`](class_float.md) = 1.0, playback_type: [PlaybackType](#enum_audioserver_playbacktype) = 0, bus: [`StringName`](class_stringname.md) = &"Master" ) |
 | `void`                  | [`set_stream_pitch_scale`](#class_audiostreamplaybackpolyphonic_method_set_stream_pitch_scale) ( stream: [`int`](class_int.md), pitch_scale: [`float`](class_float.md) )                                                                                                                                                                                                                |

@@ -17,6 +17,8 @@ Holds physics-related properties of a surface, namely its roughness and bouncine
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`absorbent`](#class_physicsmaterial_property_absorbent) | ``false`` |
 | [`float`](class_float.md) | [`bounce`](#class_physicsmaterial_property_bounce)       | ``0.0``   |
 | [`float`](class_float.md) | [`friction`](#class_physicsmaterial_property_friction)   | ``1.0``   |

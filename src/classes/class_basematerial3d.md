@@ -19,6 +19,8 @@ This class serves as a default material with a wide variety of rendering feature
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)                                   | [`albedo_color`](#class_basematerial3d_property_albedo_color)                                                   | ``Color(1, 1, 1, 1)`` |
 | [`Texture2D`](class_texture2d.md)                           | [`albedo_texture`](#class_basematerial3d_property_albedo_texture)                                               |                       |
 | [`bool`](class_bool.md)                                     | [`albedo_texture_force_srgb`](#class_basematerial3d_property_albedo_texture_force_srgb)                         | ``false``             |
@@ -139,6 +141,8 @@ This class serves as a default material with a wide variety of rendering feature
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)           | [`get_feature`](#class_basematerial3d_method_get_feature) ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]                                       |
 | [`bool`](class_bool.md)           | [`get_flag`](#class_basematerial3d_method_get_flag) ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]                                                    |
 | [`Texture2D`](class_texture2d.md) | [`get_texture`](#class_basematerial3d_method_get_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]                               |

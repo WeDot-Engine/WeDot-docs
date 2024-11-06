@@ -27,11 +27,15 @@ To help control how the FABRIK joints move, a magnet vector can be passed, which
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)           | [`fabrik_data_chain_length`](#class_skeletonmodification2dfabrik_property_fabrik_data_chain_length) | ``0``            |
 | [`NodePath`](class_nodepath.md) | [`target_nodepath`](#class_skeletonmodification2dfabrik_property_target_nodepath)                   | ``NodePath("")`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md) | [`get_fabrik_joint_bone2d_node`](#class_skeletonmodification2dfabrik_method_get_fabrik_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                                 |
 | [`int`](class_int.md)           | [`get_fabrik_joint_bone_index`](#class_skeletonmodification2dfabrik_method_get_fabrik_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                                   |
 | [`Vector2`](class_vector2.md)   | [`get_fabrik_joint_magnet_position`](#class_skeletonmodification2dfabrik_method_get_fabrik_joint_magnet_position) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |

@@ -17,6 +17,8 @@ A [`VisualShaderNodeParameter`](class_visualshadernodeparameter.md) of type [`in
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                           | [`default_value`](#class_visualshadernodeintparameter_property_default_value)                 | ``0``     |
 | [`bool`](class_bool.md)                         | [`default_value_enabled`](#class_visualshadernodeintparameter_property_default_value_enabled) | ``false`` |
 | [Hint](#enum_visualshadernodeintparameter_hint) | [`hint`](#class_visualshadernodeintparameter_property_hint)                                   | ``0``     |

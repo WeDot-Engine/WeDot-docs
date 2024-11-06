@@ -17,10 +17,14 @@ This class provides a graph-like visual editor for creating a [`Shader`](class_s
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`graph_offset`](#class_visualshader_property_graph_offset) | ``Vector2(0, 0)`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`add_node`](#class_visualshader_method_add_node) ( type: [Type](#enum_visualshader_type), node: [`VisualShaderNode`](class_visualshadernode.md), position: [`Vector2`](class_vector2.md), id: [`int`](class_int.md) )                                            |
 | `void`                                                      | [`add_varying`](#class_visualshader_method_add_varying) ( name: [`String`](class_string.md), mode: [VaryingMode](#enum_visualshader_varyingmode), type: [VaryingType](#enum_visualshader_varyingtype) )                                                           |
 | `void`                                                      | [`attach_node_to_frame`](#class_visualshader_method_attach_node_to_frame) ( type: [Type](#enum_visualshader_type), id: [`int`](class_int.md), frame: [`int`](class_int.md) )                                                                                      |

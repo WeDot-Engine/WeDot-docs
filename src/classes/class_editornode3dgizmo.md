@@ -17,6 +17,8 @@ Gizmo that is used for providing custom visualization and editing (handles and s
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                        | [`_begin_handle_action`](#class_editornode3dgizmo_private_method__begin_handle_action) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                                             |
 | `void`                                                        | [`_commit_handle`](#class_editornode3dgizmo_private_method__commit_handle) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md), restore: [`Variant`](class_variant.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                |
 | `void`                                                        | [`_commit_subgizmos`](#class_editornode3dgizmo_private_method__commit_subgizmos) ( ids: [`PackedInt32Array`](class_packedint32array.md), restores: [Array](class_array.md) [`Transform3D`](class_transform3d.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]                                                  |

@@ -99,6 +99,8 @@ For reference, this is how common user-facing blend modes are implemented in God
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BlendOperation](#enum_renderingdevice_blendoperation) | [`alpha_blend_op`](#class_rdpipelinecolorblendstateattachment_property_alpha_blend_op)                 | ``0``     |
 | [BlendOperation](#enum_renderingdevice_blendoperation) | [`color_blend_op`](#class_rdpipelinecolorblendstateattachment_property_color_blend_op)                 | ``0``     |
 | [BlendFactor](#enum_renderingdevice_blendfactor)       | [`dst_alpha_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_dst_alpha_blend_factor) | ``0``     |
@@ -113,6 +115,8 @@ For reference, this is how common user-facing blend modes are implemented in God
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`set_as_mix`](#class_rdpipelinecolorblendstateattachment_method_set_as_mix) ( ) |
 
 <!-- rst-class:: classref-section-separator -->

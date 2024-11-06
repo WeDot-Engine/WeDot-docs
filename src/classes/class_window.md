@@ -21,6 +21,8 @@ At runtime, **Window** s will not close automatically when requested. You need t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`always_on_top`](#class_window_property_always_on_top)                         | ``false``                |
 | [`bool`](class_bool.md)                                     | [`auto_translate`](#class_window_property_auto_translate)                       | ``true``                 |
 | [`bool`](class_bool.md)                                     | [`borderless`](#class_window_property_borderless)                               | ``false``                |
@@ -56,6 +58,8 @@ At runtime, **Window** s will not close automatically when requested. You need t
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md)                   | [`_get_contents_minimum_size`](#class_window_private_method__get_contents_minimum_size) ( ) virtual[^virtual] const[^const]                                                                                                                     |
 | `void`                                          | [`add_theme_color_override`](#class_window_method_add_theme_color_override) ( name: [`StringName`](class_stringname.md), color: [`Color`](class_color.md) )                                                                                     |
 | `void`                                          | [`add_theme_constant_override`](#class_window_method_add_theme_constant_override) ( name: [`StringName`](class_stringname.md), constant: [`int`](class_int.md) )                                                                                |
@@ -131,6 +135,8 @@ At runtime, **Window** s will not close automatically when requested. You need t
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`title_color`](#class_window_theme_color_title_color)                             | ``Color(0.875, 0.875, 0.875, 1)`` |
 | [`Color`](class_color.md)         | [`title_outline_modulate`](#class_window_theme_color_title_outline_modulate)       | ``Color(0, 0, 0, 1)``             |
 | [`int`](class_int.md)             | [`close_h_offset`](#class_window_theme_constant_close_h_offset)                    | ``18``                            |

@@ -19,6 +19,8 @@ See also [`GPUParticles3D`](class_gpuparticles3d.md), which provides the same fu
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                               | [`amount`](#class_cpuparticles3d_property_amount)                                         | ``8``                      |
 | [`Curve`](class_curve.md)                           | [`angle_curve`](#class_cpuparticles3d_property_angle_curve)                               |                            |
 | [`float`](class_float.md)                           | [`angle_max`](#class_cpuparticles3d_property_angle_max)                                   | ``0.0``                    |
@@ -96,6 +98,8 @@ See also [`GPUParticles3D`](class_gpuparticles3d.md), which provides the same fu
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                    | [`convert_from_particles`](#class_cpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                        |
 | [`Curve`](class_curve.md) | [`get_param_curve`](#class_cpuparticles3d_method_get_param_curve) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                        |
 | [`float`](class_float.md) | [`get_param_max`](#class_cpuparticles3d_method_get_param_max) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                            |

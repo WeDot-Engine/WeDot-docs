@@ -17,6 +17,8 @@ An audio effect that can be used to adjust the intensity of stereo panning.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`pan_pullout`](#class_audioeffectstereoenhance_property_pan_pullout)         | ``1.0`` |
 | [`float`](class_float.md) | [`surround`](#class_audioeffectstereoenhance_property_surround)               | ``0.0`` |
 | [`float`](class_float.md) | [`time_pullout_ms`](#class_audioeffectstereoenhance_property_time_pullout_ms) | ``0.0`` |

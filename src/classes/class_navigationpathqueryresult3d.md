@@ -19,6 +19,8 @@ This class stores the result of a 3D navigation path query from the [`Navigation
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedVector3Array`](class_packedvector3array.md) | [`path`](#class_navigationpathqueryresult3d_property_path)                     | ``PackedVector3Array()`` |
 | [`PackedInt64Array`](class_packedint64array.md)     | [`path_owner_ids`](#class_navigationpathqueryresult3d_property_path_owner_ids) | ``PackedInt64Array()``   |
 | [Array](class_array.md) [`RID`](class_rid.md)       | [`path_rids`](#class_navigationpathqueryresult3d_property_path_rids)           | ``[]``                   |
@@ -26,6 +28,8 @@ This class stores the result of a 3D navigation path query from the [`Navigation
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`reset`](#class_navigationpathqueryresult3d_method_reset) ( ) |
 
 <!-- rst-class:: classref-section-separator -->

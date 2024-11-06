@@ -25,6 +25,8 @@ Internally, a GridMap is split into a sparse collection of octants for efficient
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`bake_navigation`](#class_gridmap_property_bake_navigation)       | ``false``            |
 | [`bool`](class_bool.md)                       | [`cell_center_x`](#class_gridmap_property_cell_center_x)           | ``true``             |
 | [`bool`](class_bool.md)                       | [`cell_center_y`](#class_gridmap_property_cell_center_y)           | ``true``             |
@@ -40,6 +42,8 @@ Internally, a GridMap is split into a sparse collection of octants for efficient
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                  | [`clear`](#class_gridmap_method_clear) ( )                                                                                                                                   |
 | `void`                                                  | [`clear_baked_meshes`](#class_gridmap_method_clear_baked_meshes) ( )                                                                                                         |
 | [`RID`](class_rid.md)                                   | [`get_bake_mesh_instance`](#class_gridmap_method_get_bake_mesh_instance) ( idx: [`int`](class_int.md) )                                                                      |

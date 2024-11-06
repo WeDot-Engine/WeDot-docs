@@ -17,6 +17,8 @@ This class is intended to be overridden by video decoder extensions with custom 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`_get_channels`](#class_videostreamplayback_private_method__get_channels) ( ) virtual[^virtual] const[^const]                                                                                                          |
 | [`float`](class_float.md)         | [`_get_length`](#class_videostreamplayback_private_method__get_length) ( ) virtual[^virtual] const[^const]                                                                                                              |
 | [`int`](class_int.md)             | [`_get_mix_rate`](#class_videostreamplayback_private_method__get_mix_rate) ( ) virtual[^virtual] const[^const]                                                                                                          |

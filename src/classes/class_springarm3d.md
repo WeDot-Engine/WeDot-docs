@@ -17,6 +17,8 @@ A 3D raycast that dynamically moves its children near the collision point.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)         | [`collision_mask`](#class_springarm3d_property_collision_mask) | ``1``    |
 | [`float`](class_float.md)     | [`margin`](#class_springarm3d_property_margin)                 | ``0.01`` |
 | [`Shape3D`](class_shape3d.md) | [`shape`](#class_springarm3d_property_shape)                   |          |
@@ -24,6 +26,8 @@ A 3D raycast that dynamically moves its children near the collision point.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                    | [`add_excluded_object`](#class_springarm3d_method_add_excluded_object) ( RID: [`RID`](class_rid.md) )       |
 | `void`                    | [`clear_excluded_objects`](#class_springarm3d_method_clear_excluded_objects) ( )                            |
 | [`float`](class_float.md) | [`get_hit_length`](#class_springarm3d_method_get_hit_length) ( )                                            |

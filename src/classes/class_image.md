@@ -21,10 +21,14 @@ An **Image** cannot be assigned to a texture property of an object directly (suc
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md) | [`data`](#class_image_property_data) | ``{ "data": PackedByteArray(), "format": "Lum8", "height": 0, "mipmaps": false, "width": 0 }`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                        | [`adjust_bcs`](#class_image_method_adjust_bcs) ( brightness: [`float`](class_float.md), contrast: [`float`](class_float.md), saturation: [`float`](class_float.md) )                                                                                                        |
 | `void`                                        | [`blend_rect`](#class_image_method_blend_rect) ( src: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                                                              |
 | `void`                                        | [`blend_rect_mask`](#class_image_method_blend_rect_mask) ( src: [`Image`](class_image.md), mask: [`Image`](class_image.md), src_rect: [`Rect2i`](class_rect2i.md), dst: [`Vector2i`](class_vector2i.md) )                                                                   |

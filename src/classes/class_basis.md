@@ -27,12 +27,16 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md) | [`x`](#class_basis_property_x) | ``Vector3(1, 0, 0)`` |
 | [`Vector3`](class_vector3.md) | [`y`](#class_basis_property_y) | ``Vector3(0, 1, 0)`` |
 | [`Vector3`](class_vector3.md) | [`z`](#class_basis_property_z) | ``Vector3(0, 0, 1)`` |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Basis`](class_basis.md) | [`Basis`](#class_basis_constructor_basis) ( )                                                                                                                     |
 | [`Basis`](class_basis.md) | [`Basis`](#class_basis_constructor_basis) ( from: [`Basis`](class_basis.md) )                                                                                     |
 | [`Basis`](class_basis.md) | [`Basis`](#class_basis_constructor_basis) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                               |
@@ -41,6 +45,8 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)           | [`determinant`](#class_basis_method_determinant) ( ) const[^const]                                                                                                                                               |
 | [`Basis`](class_basis.md)           | [`from_euler`](#class_basis_method_from_euler) ( euler: [`Vector3`](class_vector3.md), order: [`int`](class_int.md) = 2 ) static[^static]                                                                        |
 | [`Basis`](class_basis.md)           | [`from_scale`](#class_basis_method_from_scale) ( scale: [`Vector3`](class_vector3.md) ) static[^static]                                                                                                          |
@@ -63,6 +69,8 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`operator !=`](class_Basis.md#operator_neq_Basis) ( right: [`Basis`](class_basis.md) )      |
 | [`Basis`](class_basis.md)     | [`operator *`](class_Basis.md#operator_mul_Basis) ( right: [`Basis`](class_basis.md) )       |
 | [`Vector3`](class_vector3.md) | [`operator *`](class_Basis.md#operator_mul_Vector3) ( right: [`Vector3`](class_vector3.md) ) |

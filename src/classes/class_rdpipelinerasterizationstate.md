@@ -17,6 +17,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [PolygonCullMode](#enum_renderingdevice_polygoncullmode)   | [`cull_mode`](#class_rdpipelinerasterizationstate_property_cull_mode)                                   | ``0``     |
 | [`float`](class_float.md)                                  | [`depth_bias_clamp`](#class_rdpipelinerasterizationstate_property_depth_bias_clamp)                     | ``0.0``   |
 | [`float`](class_float.md)                                  | [`depth_bias_constant_factor`](#class_rdpipelinerasterizationstate_property_depth_bias_constant_factor) | ``0.0``   |

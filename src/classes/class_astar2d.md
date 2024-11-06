@@ -19,6 +19,8 @@ See [`AStar3D`](class_astar3d.md) for a more thorough explanation on how to use 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                           | [`_compute_cost`](#class_astar2d_private_method__compute_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                               |
 | [`float`](class_float.md)                           | [`_estimate_cost`](#class_astar2d_private_method__estimate_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                             |
 | `void`                                              | [`add_point`](#class_astar2d_method_add_point) ( id: [`int`](class_int.md), position: [`Vector2`](class_vector2.md), weight_scale: [`float`](class_float.md) = 1.0 )                          |

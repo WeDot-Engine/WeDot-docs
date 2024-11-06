@@ -19,6 +19,8 @@ The **Input** singleton handles key presses, mouse buttons and movement, gamepad
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)            | [`emulate_mouse_from_touch`](#class_input_property_emulate_mouse_from_touch) |
 | [`bool`](class_bool.md)            | [`emulate_touch_from_mouse`](#class_input_property_emulate_touch_from_mouse) |
 | [MouseMode](#enum_input_mousemode) | [`mouse_mode`](#class_input_property_mouse_mode)                             |
@@ -26,6 +28,8 @@ The **Input** singleton handles key presses, mouse buttons and movement, gamepad
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                | [`action_press`](#class_input_method_action_press) ( action: [`StringName`](class_stringname.md), strength: [`float`](class_float.md) = 1.0 )                                                                                                                                                                   |
 | `void`                                                | [`action_release`](#class_input_method_action_release) ( action: [`StringName`](class_stringname.md) )                                                                                                                                                                                                          |
 | `void`                                                | [`add_joy_mapping`](#class_input_method_add_joy_mapping) ( mapping: [`String`](class_string.md), update_existing: [`bool`](class_bool.md) = false )                                                                                                                                                             |

@@ -116,6 +116,8 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`enabled_features`](#class_webxrinterface_property_enabled_features)                               |
 | [`String`](class_string.md) | [`optional_features`](#class_webxrinterface_property_optional_features)                             |
 | [`String`](class_string.md) | [`reference_space_type`](#class_webxrinterface_property_reference_space_type)                       |
@@ -126,6 +128,8 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Array`](class_array.md)                             | [`get_available_display_refresh_rates`](#class_webxrinterface_method_get_available_display_refresh_rates) ( ) const[^const]                                  |
 | [`float`](class_float.md)                             | [`get_display_refresh_rate`](#class_webxrinterface_method_get_display_refresh_rate) ( ) const[^const]                                                        |
 | [TargetRayMode](#enum_webxrinterface_targetraymode)   | [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) ( input_source_id: [`int`](class_int.md) ) const[^const] |

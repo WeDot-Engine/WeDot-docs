@@ -21,6 +21,8 @@ A Spotlight is a type of [`Light3D`](class_light3d.md) node that emits lights in
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | shadow_bias                                                                    | ``0.03`` (overrides [`Light3D`](#class_light3d_property_shadow_bias))       |
 | [`float`](class_float.md) | shadow_normal_bias                                                             | ``1.0`` (overrides [`Light3D`](#class_light3d_property_shadow_normal_bias)) |
 | [`float`](class_float.md) | [`spot_angle`](#class_spotlight3d_property_spot_angle)                         | ``45.0``                                                                    |

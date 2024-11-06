@@ -17,6 +17,8 @@ Picks a random AudioStream from the pool, depending on the playback mode, and ap
 
 ## 属性
 
+|||
+|:-:|:--|
 | [PlaybackMode](#enum_audiostreamrandomizer_playbackmode) | [`playback_mode`](#class_audiostreamrandomizer_property_playback_mode)                     | ``0``   |
 | [`float`](class_float.md)                                | [`random_pitch`](#class_audiostreamrandomizer_property_random_pitch)                       | ``1.0`` |
 | [`float`](class_float.md)                                | [`random_volume_offset_db`](#class_audiostreamrandomizer_property_random_volume_offset_db) | ``0.0`` |
@@ -24,6 +26,8 @@ Picks a random AudioStream from the pool, depending on the playback mode, and ap
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                | [`add_stream`](#class_audiostreamrandomizer_method_add_stream) ( index: [`int`](class_int.md), stream: [`AudioStream`](class_audiostream.md), weight: [`float`](class_float.md) = 1.0 ) |
 | [`AudioStream`](class_audiostream.md) | [`get_stream`](#class_audiostreamrandomizer_method_get_stream) ( index: [`int`](class_int.md) ) const[^const]                                                                           |
 | [`float`](class_float.md)             | [`get_stream_probability_weight`](#class_audiostreamrandomizer_method_get_stream_probability_weight) ( index: [`int`](class_int.md) ) const[^const]                                     |

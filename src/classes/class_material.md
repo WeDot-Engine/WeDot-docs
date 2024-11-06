@@ -21,11 +21,15 @@ Importantly, you can inherit from **Material** to create your own custom materia
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Material`](class_material.md) | [`next_pass`](#class_material_property_next_pass)             |
 | [`int`](class_int.md)           | [`render_priority`](#class_material_property_render_priority) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`_can_do_next_pass`](#class_material_private_method__can_do_next_pass) ( ) virtual[^virtual] const[^const]               |
 | [`bool`](class_bool.md)         | [`_can_use_render_priority`](#class_material_private_method__can_use_render_priority) ( ) virtual[^virtual] const[^const] |
 | [Mode](#enum_shader_mode)       | [`_get_shader_mode`](#class_material_private_method__get_shader_mode) ( ) virtual[^virtual] const[^const]                 |

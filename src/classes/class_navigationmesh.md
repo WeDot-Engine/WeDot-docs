@@ -19,6 +19,8 @@ A navigation mesh is a collection of polygons that define which areas of an envi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                       | [`agent_height`](#class_navigationmesh_property_agent_height)                                         | ``1.5``                             |
 | [`float`](class_float.md)                                       | [`agent_max_climb`](#class_navigationmesh_property_agent_max_climb)                                   | ``0.25``                            |
 | [`float`](class_float.md)                                       | [`agent_max_slope`](#class_navigationmesh_property_agent_max_slope)                                   | ``45.0``                            |
@@ -46,6 +48,8 @@ A navigation mesh is a collection of polygons that define which areas of an envi
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`add_polygon`](#class_navigationmesh_method_add_polygon) ( polygon: [`PackedInt32Array`](class_packedint32array.md) )                                      |
 | `void`                                              | [`clear`](#class_navigationmesh_method_clear) ( )                                                                                                           |
 | `void`                                              | [`clear_polygons`](#class_navigationmesh_method_clear_polygons) ( )                                                                                         |

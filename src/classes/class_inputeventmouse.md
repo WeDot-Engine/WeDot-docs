@@ -19,6 +19,8 @@ Stores general information about mouse events.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [MouseButtonMask](#enum_@globalscope_mousebuttonmask) | [`button_mask`](#class_inputeventmouse_property_button_mask)         | ``0``             |
 | [`Vector2`](class_vector2.md)                         | [`global_position`](#class_inputeventmouse_property_global_position) | ``Vector2(0, 0)`` |
 | [`Vector2`](class_vector2.md)                         | [`position`](#class_inputeventmouse_property_position)               | ``Vector2(0, 0)`` |

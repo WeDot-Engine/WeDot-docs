@@ -59,6 +59,8 @@ After setting the request and changing the animation playback, the transition no
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`allow_transition_to_self`](#class_animationnodetransition_property_allow_transition_to_self) | ``false`` |
 | [`int`](class_int.md)     | [`input_count`](#class_animationnodetransition_property_input_count)                           | ``0``     |
 | [`Curve`](class_curve.md) | [`xfade_curve`](#class_animationnodetransition_property_xfade_curve)                           |           |
@@ -66,6 +68,8 @@ After setting the request and changing the animation playback, the transition no
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`is_input_loop_broken_at_end`](#class_animationnodetransition_method_is_input_loop_broken_at_end) ( input: [`int`](class_int.md) ) const[^const]                    |
 | [`bool`](class_bool.md) | [`is_input_reset`](#class_animationnodetransition_method_is_input_reset) ( input: [`int`](class_int.md) ) const[^const]                                              |
 | [`bool`](class_bool.md) | [`is_input_set_as_auto_advance`](#class_animationnodetransition_method_is_input_set_as_auto_advance) ( input: [`int`](class_int.md) ) const[^const]                  |

@@ -19,10 +19,14 @@ Mesh is a type of [`Resource`](class_resource.md) that contains vertex array-bas
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2i`](class_vector2i.md) | [`lightmap_size_hint`](#class_mesh_property_lightmap_size_hint) | ``Vector2i(0, 0)`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`AABB`](class_aabb.md)                                   | [`_get_aabb`](#class_mesh_private_method__get_aabb) ( ) virtual[^virtual] const[^const]                                                                                   |
 | [`int`](class_int.md)                                     | [`_get_blend_shape_count`](#class_mesh_private_method__get_blend_shape_count) ( ) virtual[^virtual] const[^const]                                                         |
 | [`StringName`](class_stringname.md)                       | [`_get_blend_shape_name`](#class_mesh_private_method__get_blend_shape_name) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                              |

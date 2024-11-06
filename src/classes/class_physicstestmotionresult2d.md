@@ -17,6 +17,8 @@ Describes the motion and collision result from [`PhysicsServer2D.body_test_motio
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Object`](class_object.md)   | [`get_collider`](#class_physicstestmotionresult2d_method_get_collider) ( ) const[^const]                                   |
 | [`int`](class_int.md)         | [`get_collider_id`](#class_physicstestmotionresult2d_method_get_collider_id) ( ) const[^const]                             |
 | [`RID`](class_rid.md)         | [`get_collider_rid`](#class_physicstestmotionresult2d_method_get_collider_rid) ( ) const[^const]                           |

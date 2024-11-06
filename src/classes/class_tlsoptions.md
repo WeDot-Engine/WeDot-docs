@@ -37,6 +37,8 @@ Objects of this class cannot be instantiated directly, and one of the static met
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`TLSOptions`](class_tlsoptions.md)           | [`client`](#class_tlsoptions_method_client) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null, common_name_override: [`String`](class_string.md) = "" ) static[^static] |
 | [`TLSOptions`](class_tlsoptions.md)           | [`client_unsafe`](#class_tlsoptions_method_client_unsafe) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null ) static[^static]                                           |
 | [`String`](class_string.md)                   | [`get_common_name_override`](#class_tlsoptions_method_get_common_name_override) ( ) const[^const]                                                                                           |

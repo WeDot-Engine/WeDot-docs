@@ -19,6 +19,8 @@ Contains baked voxel global illumination data for use in a [`VoxelGI`](class_vox
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`bias`](#class_voxelgidata_property_bias)                       | ``1.5``   |
 | [`float`](class_float.md) | [`dynamic_range`](#class_voxelgidata_property_dynamic_range)     | ``2.0``   |
 | [`float`](class_float.md) | [`energy`](#class_voxelgidata_property_energy)                   | ``1.0``   |
@@ -29,6 +31,8 @@ Contains baked voxel global illumination data for use in a [`VoxelGI`](class_vox
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                          | [`allocate`](#class_voxelgidata_method_allocate) ( to_cell_xform: [`Transform3D`](class_transform3d.md), aabb: [`AABB`](class_aabb.md), octree_size: [`Vector3`](class_vector3.md), octree_cells: [`PackedByteArray`](class_packedbytearray.md), data_cells: [`PackedByteArray`](class_packedbytearray.md), distance_field: [`PackedByteArray`](class_packedbytearray.md), level_counts: [`PackedInt32Array`](class_packedint32array.md) ) |
 | [`AABB`](class_aabb.md)                         | [`get_bounds`](#class_voxelgidata_method_get_bounds) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                     |
 | [`PackedByteArray`](class_packedbytearray.md)   | [`get_data_cells`](#class_voxelgidata_method_get_data_cells) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                             |

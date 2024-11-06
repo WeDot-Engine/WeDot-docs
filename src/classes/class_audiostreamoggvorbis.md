@@ -17,6 +17,8 @@ The AudioStreamOggVorbis class is a specialized [`AudioStream`](class_audiostrea
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                             | [`bar_beats`](#class_audiostreamoggvorbis_property_bar_beats)             | ``4``     |
 | [`int`](class_int.md)                             | [`beat_count`](#class_audiostreamoggvorbis_property_beat_count)           | ``0``     |
 | [`float`](class_float.md)                         | [`bpm`](#class_audiostreamoggvorbis_property_bpm)                         | ``0.0``   |
@@ -26,6 +28,8 @@ The AudioStreamOggVorbis class is a specialized [`AudioStream`](class_audiostrea
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](#class_audiostreamoggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
 | [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](#class_audiostreamoggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
 

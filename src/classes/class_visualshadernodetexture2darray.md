@@ -17,6 +17,8 @@ Translated to `uniform sampler2DArray` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Texture2DArray`](class_texture2darray.md) | [`texture_array`](#class_visualshadernodetexture2darray_property_texture_array) |
 
 <!-- rst-class:: classref-section-separator -->

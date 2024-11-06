@@ -21,6 +21,8 @@ Immediate collision overlaps can be done with the [`target_position`](#class_sha
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`collide_with_areas`](#class_shapecast3d_property_collide_with_areas)             | ``false``             |
 | [`bool`](class_bool.md)       | [`collide_with_bodies`](#class_shapecast3d_property_collide_with_bodies)           | ``true``              |
 | [`int`](class_int.md)         | [`collision_mask`](#class_shapecast3d_property_collision_mask)                     | ``1``                 |
@@ -35,6 +37,8 @@ Immediate collision overlaps can be done with the [`target_position`](#class_sha
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                        | [`add_exception`](#class_shapecast3d_method_add_exception) ( node: [`CollisionObject3D`](class_collisionobject3d.md) )                                   |
 | `void`                        | [`add_exception_rid`](#class_shapecast3d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
 | `void`                        | [`clear_exceptions`](#class_shapecast3d_method_clear_exceptions) ( )                                                                                     |

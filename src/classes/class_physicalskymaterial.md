@@ -19,6 +19,8 @@ The **PhysicalSkyMaterial** only supports one sun. The color, energy, and direct
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)         | [`energy_multiplier`](#class_physicalskymaterial_property_energy_multiplier)       | ``1.0``                          |
 | [`Color`](class_color.md)         | [`ground_color`](#class_physicalskymaterial_property_ground_color)                 | ``Color(0.1, 0.07, 0.034, 1)``   |
 | [`float`](class_float.md)         | [`mie_coefficient`](#class_physicalskymaterial_property_mie_coefficient)           | ``0.005``                        |

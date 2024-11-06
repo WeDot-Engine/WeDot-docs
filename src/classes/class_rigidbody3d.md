@@ -27,6 +27,8 @@ If you need to override the default physics behavior, you can write a custom for
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                              | [`angular_damp`](#class_rigidbody3d_property_angular_damp)                           | ``0.0``              |
 | [DampMode](#enum_rigidbody3d_dampmode)                 | [`angular_damp_mode`](#class_rigidbody3d_property_angular_damp_mode)                 | ``0``                |
 | [`Vector3`](class_vector3.md)                          | [`angular_velocity`](#class_rigidbody3d_property_angular_velocity)                   | ``Vector3(0, 0, 0)`` |
@@ -53,6 +55,8 @@ If you need to override the default physics behavior, you can write a custom for
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`_integrate_forces`](#class_rigidbody3d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual]   |
 | `void`                                              | [`add_constant_central_force`](#class_rigidbody3d_method_add_constant_central_force) ( force: [`Vector3`](class_vector3.md) )                                             |
 | `void`                                              | [`add_constant_force`](#class_rigidbody3d_method_add_constant_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) ) |

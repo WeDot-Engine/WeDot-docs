@@ -19,6 +19,8 @@ This object manages the SceneTree selection in the editor.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                          | [`add_node`](#class_editorselection_method_add_node) ( node: [`Node`](class_node.md) )                   |
 | `void`                                          | [`clear`](#class_editorselection_method_clear) ( )                                                       |
 | [Array](class_array.md) [`Node`](class_node.md) | [`get_selected_nodes`](#class_editorselection_method_get_selected_nodes) ( )                             |

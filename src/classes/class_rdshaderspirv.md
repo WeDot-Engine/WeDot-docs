@@ -19,6 +19,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_compute`](#class_rdshaderspirv_property_bytecode_compute)                                         | ``PackedByteArray()`` |
 | [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_fragment`](#class_rdshaderspirv_property_bytecode_fragment)                                       | ``PackedByteArray()`` |
 | [`PackedByteArray`](class_packedbytearray.md) | [`bytecode_tesselation_control`](#class_rdshaderspirv_property_bytecode_tesselation_control)                 | ``PackedByteArray()`` |
@@ -32,6 +34,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedByteArray`](class_packedbytearray.md) | [`get_stage_bytecode`](#class_rdshaderspirv_method_get_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                            |
 | [`String`](class_string.md)                   | [`get_stage_compile_error`](#class_rdshaderspirv_method_get_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                  |
 | `void`                                        | [`set_stage_bytecode`](#class_rdshaderspirv_method_set_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), bytecode: [`PackedByteArray`](class_packedbytearray.md) ) |

@@ -17,6 +17,8 @@ A container type that arranges its child controls in a way that preserves their 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AlignmentMode](#enum_aspectratiocontainer_alignmentmode) | [`alignment_horizontal`](#class_aspectratiocontainer_property_alignment_horizontal) | ``1``   |
 | [AlignmentMode](#enum_aspectratiocontainer_alignmentmode) | [`alignment_vertical`](#class_aspectratiocontainer_property_alignment_vertical)     | ``1``   |
 | [`float`](class_float.md)                                 | [`ratio`](#class_aspectratiocontainer_property_ratio)                               | ``1.0`` |

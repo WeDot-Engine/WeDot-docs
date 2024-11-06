@@ -19,12 +19,16 @@ It uses integer coordinates and is therefore preferable to [`Vector3`](class_vec
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`x`](#class_vector3i_property_x) | ``0`` |
 | [`int`](class_int.md) | [`y`](#class_vector3i_property_y) | ``0`` |
 | [`int`](class_int.md) | [`z`](#class_vector3i_property_z) | ``0`` |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Vector3i`](class_vector3i.md) | [`Vector3i`](#class_vector3i_constructor_vector3i) ( )                                                                              |
 | [`Vector3i`](class_vector3i.md) | [`Vector3i`](#class_vector3i_constructor_vector3i) ( from: [`Vector3i`](class_vector3i.md) )                                        |
 | [`Vector3i`](class_vector3i.md) | [`Vector3i`](#class_vector3i_constructor_vector3i) ( from: [`Vector3`](class_vector3.md) )                                          |
@@ -32,6 +36,8 @@ It uses integer coordinates and is therefore preferable to [`Vector3`](class_vec
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector3i`](class_vector3i.md) | [`abs`](#class_vector3i_method_abs) ( ) const[^const]                                                                                |
 | [`Vector3i`](class_vector3i.md) | [`clamp`](#class_vector3i_method_clamp) ( min: [`Vector3i`](class_vector3i.md), max: [`Vector3i`](class_vector3i.md) ) const[^const] |
 | [`Vector3i`](class_vector3i.md) | [`clampi`](#class_vector3i_method_clampi) ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]                   |
@@ -51,6 +57,8 @@ It uses integer coordinates and is therefore preferable to [`Vector3`](class_vec
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`operator !=`](class_Vector3i.md#operator_neq_Vector3i) ( right: [`Vector3i`](class_vector3i.md) ) |
 | [`Vector3i`](class_vector3i.md) | [`operator %`](class_Vector3i.md#operator_mod_Vector3i) ( right: [`Vector3i`](class_vector3i.md) )  |
 | [`Vector3i`](class_vector3i.md) | [`operator %`](class_Vector3i.md#operator_mod_int) ( right: [`int`](class_int.md) )                 |

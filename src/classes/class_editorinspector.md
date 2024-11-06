@@ -27,10 +27,14 @@ If a property has [`@GlobalScope.PROPERTY_USAGE_SUBGROUP`](#class_@globalscope_c
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ScrollMode](#enum_scrollcontainer_scrollmode) | horizontal_scroll_mode | ``0`` (overrides [`ScrollContainer`](#class_scrollcontainer_property_horizontal_scroll_mode)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Object`](class_object.md) | [`get_edited_object`](#class_editorinspector_method_get_edited_object) ( )               |
 | [`String`](class_string.md) | [`get_selected_path`](#class_editorinspector_method_get_selected_path) ( ) const[^const] |
 

@@ -21,6 +21,8 @@ The box's UV layout is arranged in a 3×2 layout that allows texturing each face
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md) | [`size`](#class_boxmesh_property_size)                         | ``Vector3(1, 1, 1)`` |
 | [`int`](class_int.md)         | [`subdivide_depth`](#class_boxmesh_property_subdivide_depth)   | ``0``                |
 | [`int`](class_int.md)         | [`subdivide_height`](#class_boxmesh_property_subdivide_height) | ``0``                |

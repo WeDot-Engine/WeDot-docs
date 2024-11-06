@@ -25,6 +25,8 @@ Attractors can be temporarily disabled by hiding them, or by setting their [`str
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`attenuation`](#class_gpuparticlesattractor3d_property_attenuation)       | ``1.0``        |
 | [`int`](class_int.md)     | [`cull_mask`](#class_gpuparticlesattractor3d_property_cull_mask)           | ``4294967295`` |
 | [`float`](class_float.md) | [`directionality`](#class_gpuparticlesattractor3d_property_directionality) | ``0.0``        |

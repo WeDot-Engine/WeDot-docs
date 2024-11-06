@@ -19,6 +19,8 @@ If you need to store up to 3 curves within a single texture, use [`CurveXYZTextu
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Curve`](class_curve.md)                     | [`curve`](#class_curvetexture_property_curve)               |                                                                                      |
 | [`bool`](class_bool.md)                       | resource_local_to_scene                                     | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
 | [TextureMode](#enum_curvetexture_texturemode) | [`texture_mode`](#class_curvetexture_property_texture_mode) | ``0``                                                                                |

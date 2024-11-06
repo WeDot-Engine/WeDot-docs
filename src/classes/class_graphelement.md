@@ -21,6 +21,8 @@ A container that represents a basic element that can be placed inside a [`GraphE
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`draggable`](#class_graphelement_property_draggable)             | ``true``          |
 | [`Vector2`](class_vector2.md) | [`position_offset`](#class_graphelement_property_position_offset) | ``Vector2(0, 0)`` |
 | [`bool`](class_bool.md)       | [`resizable`](#class_graphelement_property_resizable)             | ``false``         |
@@ -29,6 +31,8 @@ A container that represents a basic element that can be placed inside a [`GraphE
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md) | [`resizer`](#class_graphelement_theme_icon_resizer) |
 
 <!-- rst-class:: classref-section-separator -->

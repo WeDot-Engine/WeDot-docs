@@ -21,11 +21,15 @@ As face trackers are turned on they are registered with the [`XRServer`](class_x
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedFloat32Array`](class_packedfloat32array.md) | [`blend_shapes`](#class_xrfacetracker_property_blend_shapes) | ``PackedFloat32Array()``                                         |
 | [TrackerType](#enum_xrserver_trackertype)           | type                                                         | ``64`` (overrides [`XRTracker`](#class_xrtracker_property_type)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_blend_shape`](#class_xrfacetracker_method_get_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry) ) const[^const]                      |
 | `void`                    | [`set_blend_shape`](#class_xrfacetracker_method_set_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry), weight: [`float`](class_float.md) ) |
 

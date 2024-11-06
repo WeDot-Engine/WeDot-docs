@@ -19,6 +19,8 @@ Base node for geometry-based visual instances. Shares some common functionality 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ShadowCastingSetting](#enum_geometryinstance3d_shadowcastingsetting)       | [`cast_shadow`](#class_geometryinstance3d_property_cast_shadow)                                     | ``1``                      |
 | [`AABB`](class_aabb.md)                                                     | [`custom_aabb`](#class_geometryinstance3d_property_custom_aabb)                                     | ``AABB(0, 0, 0, 0, 0, 0)`` |
 | [`float`](class_float.md)                                                   | [`extra_cull_margin`](#class_geometryinstance3d_property_extra_cull_margin)                         | ``0.0``                    |
@@ -37,6 +39,8 @@ Base node for geometry-based visual instances. Shares some common functionality 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md) | [`get_instance_shader_parameter`](#class_geometryinstance3d_method_get_instance_shader_parameter) ( name: [`StringName`](class_stringname.md) ) const[^const]                         |
 | `void`                        | [`set_instance_shader_parameter`](#class_geometryinstance3d_method_set_instance_shader_parameter) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) |
 

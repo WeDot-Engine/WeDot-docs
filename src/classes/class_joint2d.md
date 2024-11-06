@@ -19,6 +19,8 @@ Abstract base class for all joints in 2D physics. 2D joints bind together two ph
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)       | [`bias`](#class_joint2d_property_bias)                           | ``0.0``          |
 | [`bool`](class_bool.md)         | [`disable_collision`](#class_joint2d_property_disable_collision) | ``true``         |
 | [`NodePath`](class_nodepath.md) | [`node_a`](#class_joint2d_property_node_a)                       | ``NodePath("")`` |
@@ -26,6 +28,8 @@ Abstract base class for all joints in 2D physics. 2D joints bind together two ph
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md) | [`get_rid`](#class_joint2d_method_get_rid) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

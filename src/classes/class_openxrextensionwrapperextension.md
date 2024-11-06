@@ -17,6 +17,8 @@ Allows clients to implement OpenXR extensions with GDExtension.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                       | [`_get_composition_layer`](#class_openxrextensionwrapperextension_private_method__get_composition_layer) ( index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                  |
 | [`int`](class_int.md)                                       | [`_get_composition_layer_count`](#class_openxrextensionwrapperextension_private_method__get_composition_layer_count) ( ) virtual[^virtual]                                                                                                                                                   |
 | [`int`](class_int.md)                                       | [`_get_composition_layer_order`](#class_openxrextensionwrapperextension_private_method__get_composition_layer_order) ( index: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                      |

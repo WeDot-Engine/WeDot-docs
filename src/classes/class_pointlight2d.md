@@ -17,6 +17,8 @@ Casts light in a 2D environment. This light's shape is defined by a (usually gra
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)         | [`height`](#class_pointlight2d_property_height)               | ``0.0``           |
 | [`Vector2`](class_vector2.md)     | [`offset`](#class_pointlight2d_property_offset)               | ``Vector2(0, 0)`` |
 | [`Texture2D`](class_texture2d.md) | [`texture`](#class_pointlight2d_property_texture)             |                   |

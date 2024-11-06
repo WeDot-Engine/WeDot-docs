@@ -17,6 +17,8 @@ A control used for visual representation of a percentage. Shows fill percentage 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`editor_preview_indeterminate`](#class_progressbar_property_editor_preview_indeterminate) |           |
 | [`int`](class_int.md)   | [`fill_mode`](#class_progressbar_property_fill_mode)                                       | ``0``     |
 | [`bool`](class_bool.md) | [`indeterminate`](#class_progressbar_property_indeterminate)                               | ``false`` |
@@ -24,6 +26,8 @@ A control used for visual representation of a percentage. Shows fill percentage 
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)       | [`font_color`](#class_progressbar_theme_color_font_color)                 | ``Color(0.95, 0.95, 0.95, 1)`` |
 | [`Color`](class_color.md)       | [`font_outline_color`](#class_progressbar_theme_color_font_outline_color) | ``Color(0, 0, 0, 1)``          |
 | [`int`](class_int.md)           | [`outline_size`](#class_progressbar_theme_constant_outline_size)          | ``0``                          |

@@ -23,6 +23,8 @@ To force an update earlier on, call [`update_internals`](#class_tilemap_method_u
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                        | [`collision_animatable`](#class_tilemap_property_collision_animatable)             | ``false`` |
 | [VisibilityMode](#enum_tilemap_visibilitymode) | [`collision_visibility_mode`](#class_tilemap_property_collision_visibility_mode)   | ``0``     |
 | [VisibilityMode](#enum_tilemap_visibilitymode) | [`navigation_visibility_mode`](#class_tilemap_property_navigation_visibility_mode) | ``0``     |
@@ -31,6 +33,8 @@ To force an update earlier on, call [`update_internals`](#class_tilemap_method_u
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                  | [`_tile_data_runtime_update`](#class_tilemap_private_method__tile_data_runtime_update) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), tile_data: [`TileData`](class_tiledata.md) ) virtual[^virtual]                                                                             |
 | [`bool`](class_bool.md)                                 | [`_use_tile_data_runtime_update`](#class_tilemap_private_method__use_tile_data_runtime_update) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md) ) virtual[^virtual]                                                                                                                 |
 | `void`                                                  | [`add_layer`](#class_tilemap_method_add_layer) ( to_position: [`int`](class_int.md) )                                                                                                                                                                                                                      |

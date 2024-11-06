@@ -76,6 +76,8 @@ The [`_post_import`](#class_editorscenepostimport_private_method__post_import) c
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Object`](class_object.md) | [`_post_import`](#class_editorscenepostimport_private_method__post_import) ( scene: [`Node`](class_node.md) ) virtual[^virtual] |
 | [`String`](class_string.md) | [`get_source_file`](#class_editorscenepostimport_method_get_source_file) ( ) const[^const]                                      |
 

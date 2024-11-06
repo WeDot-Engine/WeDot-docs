@@ -21,6 +21,8 @@ See [`Vector4i`](class_vector4i.md) for its integer counterpart.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`w`](#class_vector4_property_w) | ``0.0`` |
 | [`float`](class_float.md) | [`x`](#class_vector4_property_x) | ``0.0`` |
 | [`float`](class_float.md) | [`y`](#class_vector4_property_y) | ``0.0`` |
@@ -28,6 +30,8 @@ See [`Vector4i`](class_vector4i.md) for its integer counterpart.
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Vector4`](class_vector4.md) | [`Vector4`](#class_vector4_constructor_vector4) ( )                                                                                                                        |
 | [`Vector4`](class_vector4.md) | [`Vector4`](#class_vector4_constructor_vector4) ( from: [`Vector4`](class_vector4.md) )                                                                                    |
 | [`Vector4`](class_vector4.md) | [`Vector4`](#class_vector4_constructor_vector4) ( from: [`Vector4i`](class_vector4i.md) )                                                                                  |
@@ -35,6 +39,8 @@ See [`Vector4i`](class_vector4i.md) for its integer counterpart.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector4`](class_vector4.md) | [`abs`](#class_vector4_method_abs) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
 | [`Vector4`](class_vector4.md) | [`ceil`](#class_vector4_method_ceil) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
 | [`Vector4`](class_vector4.md) | [`clamp`](#class_vector4_method_clamp) ( min: [`Vector4`](class_vector4.md), max: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                            |
@@ -70,6 +76,8 @@ See [`Vector4i`](class_vector4i.md) for its integer counterpart.
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`operator !=`](class_Vector4.md#operator_neq_Vector4) ( right: [`Vector4`](class_vector4.md) )         |
 | [`Vector4`](class_vector4.md) | [`operator *`](class_Vector4.md#operator_mul_Projection) ( right: [`Projection`](class_projection.md) ) |
 | [`Vector4`](class_vector4.md) | [`operator *`](class_Vector4.md#operator_mul_Vector4) ( right: [`Vector4`](class_vector4.md) )          |

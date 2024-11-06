@@ -19,10 +19,14 @@ This modification takes the transforms of [`PhysicalBone2D`](class_physicalbone2
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`physical_bone_chain_length`](#class_skeletonmodification2dphysicalbones_property_physical_bone_chain_length) | ``0`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                          | [`fetch_physical_bones`](#class_skeletonmodification2dphysicalbones_method_fetch_physical_bones) ( )                                                                                            |
 | [`NodePath`](class_nodepath.md) | [`get_physical_bone_node`](#class_skeletonmodification2dphysicalbones_method_get_physical_bone_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
 | `void`                          | [`set_physical_bone_node`](#class_skeletonmodification2dphysicalbones_method_set_physical_bone_node) ( joint_idx: [`int`](class_int.md), physicalbone2d_node: [`NodePath`](class_nodepath.md) ) |

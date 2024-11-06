@@ -17,6 +17,8 @@ A modified version of [`FileDialog`](class_filedialog.md) used by the editor.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Access](#enum_editorfiledialog_access)           | [`access`](#class_editorfiledialog_property_access)                                       | ``0``                                                                                  |
 | [`String`](class_string.md)                       | [`current_dir`](#class_editorfiledialog_property_current_dir)                             |                                                                                        |
 | [`String`](class_string.md)                       | [`current_file`](#class_editorfiledialog_property_current_file)                           |                                                                                        |
@@ -32,6 +34,8 @@ A modified version of [`FileDialog`](class_filedialog.md) used by the editor.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_filter`](#class_editorfiledialog_method_add_filter) ( filter: [`String`](class_string.md), description: [`String`](class_string.md) = "" )                                                       |
 | `void`                                            | [`add_option`](#class_editorfiledialog_method_add_option) ( name: [`String`](class_string.md), values: [`PackedStringArray`](class_packedstringarray.md), default_value_index: [`int`](class_int.md) ) |
 | `void`                                            | [`add_side_menu`](#class_editorfiledialog_method_add_side_menu) ( menu: [`Control`](class_control.md), title: [`String`](class_string.md) = "" )                                                       |

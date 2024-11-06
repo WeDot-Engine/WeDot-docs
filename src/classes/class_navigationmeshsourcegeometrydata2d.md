@@ -19,6 +19,8 @@ Container for parsed source geometry data used in navigation mesh baking.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                                      | [`add_obstruction_outline`](#class_navigationmeshsourcegeometrydata2d_method_add_obstruction_outline) ( shape_outline: [`PackedVector2Array`](class_packedvector2array.md) )                                        |
 | `void`                                                                      | [`add_projected_obstruction`](#class_navigationmeshsourcegeometrydata2d_method_add_projected_obstruction) ( vertices: [`PackedVector2Array`](class_packedvector2array.md), carve: [`bool`](class_bool.md) )         |
 | `void`                                                                      | [`add_traversable_outline`](#class_navigationmeshsourcegeometrydata2d_method_add_traversable_outline) ( shape_outline: [`PackedVector2Array`](class_packedvector2array.md) )                                        |

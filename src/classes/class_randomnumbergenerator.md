@@ -30,11 +30,15 @@ To generate a random float number (within a given range) based on a time-depende
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`seed`](#class_randomnumbergenerator_property_seed)   | ``0`` |
 | [`int`](class_int.md) | [`state`](#class_randomnumbergenerator_property_state) | ``0`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`rand_weighted`](#class_randomnumbergenerator_method_rand_weighted) ( weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
 | [`float`](class_float.md) | [`randf`](#class_randomnumbergenerator_method_randf) ( )                                                                                     |
 | [`float`](class_float.md) | [`randf_range`](#class_randomnumbergenerator_method_randf_range) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )          |

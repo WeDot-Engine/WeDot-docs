@@ -19,6 +19,8 @@ See also [`Curve`](class_curve.md) which supports more complex easing methods, b
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedColorArray`](class_packedcolorarray.md)       | [`colors`](#class_gradient_property_colors)                                       | ``PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1)`` |
 | [ColorSpace](#enum_gradient_colorspace)               | [`interpolation_color_space`](#class_gradient_property_interpolation_color_space) | ``0``                                        |
 | [InterpolationMode](#enum_gradient_interpolationmode) | [`interpolation_mode`](#class_gradient_property_interpolation_mode)               | ``0``                                        |
@@ -26,6 +28,8 @@ See also [`Curve`](class_curve.md) which supports more complex easing methods, b
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                    | [`add_point`](#class_gradient_method_add_point) ( offset: [`float`](class_float.md), color: [`Color`](class_color.md) ) |
 | [`Color`](class_color.md) | [`get_color`](#class_gradient_method_get_color) ( point: [`int`](class_int.md) )                                        |
 | [`float`](class_float.md) | [`get_offset`](#class_gradient_method_get_offset) ( point: [`int`](class_int.md) )                                      |

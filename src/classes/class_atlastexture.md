@@ -21,6 +21,8 @@ Multiple **AtlasTexture** resources can be cropped from the same [`atlas`](#clas
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md) | [`atlas`](#class_atlastexture_property_atlas)             |                                                                                      |
 | [`bool`](class_bool.md)           | [`filter_clip`](#class_atlastexture_property_filter_clip) | ``false``                                                                            |
 | [`Rect2`](class_rect2.md)         | [`margin`](#class_atlastexture_property_margin)           | ``Rect2(0, 0, 0, 0)``                                                                |

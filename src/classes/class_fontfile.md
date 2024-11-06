@@ -57,6 +57,8 @@ Supported font formats:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`allow_system_fallback`](#class_fontfile_property_allow_system_fallback)                           | ``true``              |
 | [FontAntialiasing](#enum_textserver_fontantialiasing)       | [`antialiasing`](#class_fontfile_property_antialiasing)                                             | ``1``                 |
 | [`PackedByteArray`](class_packedbytearray.md)               | [`data`](#class_fontfile_property_data)                                                             | ``PackedByteArray()`` |
@@ -80,6 +82,8 @@ Supported font formats:
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                  | [`clear_cache`](#class_fontfile_method_clear_cache) ( )                                                                                                                                                                                          |
 | `void`                                                  | [`clear_glyphs`](#class_fontfile_method_clear_glyphs) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) )                                                                                                              |
 | `void`                                                  | [`clear_kerning_map`](#class_fontfile_method_clear_kerning_map) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) )                                                                                                              |

@@ -17,6 +17,8 @@ Describes the motion and collision result from [`PhysicsServer3D.body_test_motio
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Object`](class_object.md)   | [`get_collider`](#class_physicstestmotionresult3d_method_get_collider) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                           |
 | [`int`](class_int.md)         | [`get_collider_id`](#class_physicstestmotionresult3d_method_get_collider_id) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                     |
 | [`RID`](class_rid.md)         | [`get_collider_rid`](#class_physicstestmotionresult3d_method_get_collider_rid) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                   |

@@ -17,6 +17,8 @@ Performs a lookup operation on the provided texture, with support for multiple t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Texture3D`](class_texture3d.md) | [`texture`](#class_visualshadernodetexture3d_property_texture) |
 
 <!-- rst-class:: classref-section-separator -->

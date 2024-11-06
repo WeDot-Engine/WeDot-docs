@@ -19,6 +19,8 @@ This is an abstract class. See the derived types for descriptions of the possibl
 
 ## 属性
 
+|||
+|:-:|:--|
 | [OpType](#enum_visualshadernodevectorbase_optype) | [`op_type`](#class_visualshadernodevectorbase_property_op_type) | ``1`` |
 
 <!-- rst-class:: classref-section-separator -->

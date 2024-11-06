@@ -21,6 +21,8 @@ To create such a texture file yourself, reimport your image files using the Godo
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Resource`](class_resource.md) | [`create_placeholder`](#class_texture2darray_method_create_placeholder) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

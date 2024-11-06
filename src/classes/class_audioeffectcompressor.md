@@ -29,6 +29,8 @@ Compressor has many uses in the mix:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)           | [`attack_us`](#class_audioeffectcompressor_property_attack_us)   | ``20.0``  |
 | [`float`](class_float.md)           | [`gain`](#class_audioeffectcompressor_property_gain)             | ``0.0``   |
 | [`float`](class_float.md)           | [`mix`](#class_audioeffectcompressor_property_mix)               | ``1.0``   |

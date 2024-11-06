@@ -17,6 +17,8 @@ The Windows exporter customizes how a Windows build is handled. In the editor's 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                       | [`application/company_name`](#class_editorexportplatformwindows_property_application/company_name)                               |
 | [`String`](class_string.md)                       | [`application/console_wrapper_icon`](#class_editorexportplatformwindows_property_application/console_wrapper_icon)               |
 | [`String`](class_string.md)                       | [`application/copyright`](#class_editorexportplatformwindows_property_application/copyright)                                     |

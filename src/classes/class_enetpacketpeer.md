@@ -21,6 +21,8 @@ This class cannot be instantiated directly but can be retrieved during [`ENetCon
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                       | [`get_channels`](#class_enetpacketpeer_method_get_channels) ( ) const[^const]                                                                                                         |
 | [`String`](class_string.md)                 | [`get_remote_address`](#class_enetpacketpeer_method_get_remote_address) ( ) const[^const]                                                                                             |
 | [`int`](class_int.md)                       | [`get_remote_port`](#class_enetpacketpeer_method_get_remote_port) ( ) const[^const]                                                                                                   |

@@ -48,6 +48,8 @@ Lastly, every object can also contain metadata (data about data). [`set_meta`](#
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md)                               | [`_get`](#class_object_private_method__get) ( property: [`StringName`](class_stringname.md) ) virtual[^virtual]                                                                                                                       |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_get_property_list`](#class_object_private_method__get_property_list) ( ) virtual[^virtual]                                                                                                                                         |
 | `void`                                                      | [`_init`](#class_object_private_method__init) ( ) virtual[^virtual]                                                                                                                                                                   |

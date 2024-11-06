@@ -13,6 +13,8 @@
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)                             | [`_add_ice_candidate`](#class_webrtcpeerconnectionextension_private_method__add_ice_candidate) ( p_sdp_mid_name: [`String`](class_string.md), p_sdp_mline_index: [`int`](class_int.md), p_sdp_name: [`String`](class_string.md) ) virtual[^virtual] |
 | `void`                                                        | [`_close`](#class_webrtcpeerconnectionextension_private_method__close) ( ) virtual[^virtual]                                                                                                                                                        |
 | [`WebRTCDataChannel`](class_webrtcdatachannel.md)             | [`_create_data_channel`](#class_webrtcpeerconnectionextension_private_method__create_data_channel) ( p_label: [`String`](class_string.md), p_config: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                        |

@@ -27,12 +27,16 @@ All of [`String`](class_string.md)'s methods are available in this class too. Th
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md) | [`StringName`](#class_stringname_constructor_stringname) ( )                                           |
 | [`StringName`](class_stringname.md) | [`StringName`](#class_stringname_constructor_stringname) ( from: [`StringName`](class_stringname.md) ) |
 | [`StringName`](class_stringname.md) | [`StringName`](#class_stringname_constructor_stringname) ( from: [`String`](class_string.md) )         |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`begins_with`](#class_stringname_method_begins_with) ( text: [`String`](class_string.md) ) const[^const]                                                                                   |
 | [`PackedStringArray`](class_packedstringarray.md)   | [`bigrams`](#class_stringname_method_bigrams) ( ) const[^const]                                                                                                                             |
 | [`int`](class_int.md)                               | [`bin_to_int`](#class_stringname_method_bin_to_int) ( ) const[^const]                                                                                                                       |
@@ -137,6 +141,8 @@ All of [`String`](class_string.md)'s methods are available in this class too. Th
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`operator !=`](class_StringName.md#operator_neq_String) ( right: [`String`](class_string.md) )             |
 | [`bool`](class_bool.md)     | [`operator !=`](class_StringName.md#operator_neq_StringName) ( right: [`StringName`](class_stringname.md) ) |
 | [`String`](class_string.md) | [`operator %`](class_StringName.md#operator_mod_Variant) ( right: [`Variant`](class_variant.md) )           |

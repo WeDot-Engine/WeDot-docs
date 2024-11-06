@@ -21,10 +21,14 @@ Unlike [`AudioEffectRecord`](class_audioeffectrecord.md), this effect only retur
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`buffer_length`](#class_audioeffectcapture_property_buffer_length) | ``0.1`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`can_get_buffer`](#class_audioeffectcapture_method_can_get_buffer) ( frames: [`int`](class_int.md) ) const[^const] |
 | `void`                                              | [`clear_buffer`](#class_audioeffectcapture_method_clear_buffer) ( )                                                 |
 | [`PackedVector2Array`](class_packedvector2array.md) | [`get_buffer`](#class_audioeffectcapture_method_get_buffer) ( frames: [`int`](class_int.md) )                       |

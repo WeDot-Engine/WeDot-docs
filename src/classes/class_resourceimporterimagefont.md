@@ -19,6 +19,8 @@ See also [`ResourceImporterDynamicFont`](class_resourceimporterdynamicfont.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                             | [`ascent`](#class_resourceimporterimagefont_property_ascent)                     | ``0``                   |
 | [`Rect2i`](class_rect2i.md)                       | [`character_margin`](#class_resourceimporterimagefont_property_character_margin) | ``Rect2i(0, 0, 0, 0)``  |
 | [`PackedStringArray`](class_packedstringarray.md) | [`character_ranges`](#class_resourceimporterimagefont_property_character_ranges) | ``PackedStringArray()`` |

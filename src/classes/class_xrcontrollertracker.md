@@ -21,6 +21,8 @@ The [`XRController3D`](class_xrcontroller3d.md) consumes objects of this type an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [TrackerType](#enum_xrserver_trackertype) | type | ``2`` (overrides [`XRTracker`](#class_xrtracker_property_type)) |
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。

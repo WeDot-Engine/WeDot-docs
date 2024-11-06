@@ -28,6 +28,8 @@ In order for the node to be registered as an editor addon, you must use the `@to
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                       | [`_get_category`](#class_visualshadernodecustom_private_method__get_category) ( ) virtual[^virtual] const[^const]                                                                                                                                                                                                   |
 | [`String`](class_string.md)                       | [`_get_code`](#class_visualshadernodecustom_private_method__get_code) ( input_vars: [Array](class_array.md) [`String`](class_string.md), output_vars: [Array](class_array.md) [`String`](class_string.md), mode: [Mode](#enum_shader_mode), type: [Type](#enum_visualshader_type) ) virtual[^virtual] const[^const] |
 | [`int`](class_int.md)                             | [`_get_default_input_port`](#class_visualshadernodecustom_private_method__get_default_input_port) ( type: [PortType](#enum_visualshadernode_porttype) ) virtual[^virtual] const[^const]                                                                                                                             |

@@ -126,10 +126,14 @@ If you are registering multiple properties/method which depend on one another, b
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`max_steps`](#class_undoredo_property_max_steps) | ``0`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                      | [`add_do_method`](#class_undoredo_method_add_do_method) ( callable: [`Callable`](class_callable.md) )                                                                                                    |
 | `void`                      | [`add_do_property`](#class_undoredo_method_add_do_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                 |
 | `void`                      | [`add_do_reference`](#class_undoredo_method_add_do_reference) ( object: [`Object`](class_object.md) )                                                                                                    |

@@ -17,6 +17,8 @@ Holds a particle configuration for [`GPUParticles2D`](class_gpuparticles2d.md) o
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md)                              | [`alpha_curve`](#class_particleprocessmaterial_property_alpha_curve)                                                 |                         |
 | [`Texture2D`](class_texture2d.md)                              | [`angle_curve`](#class_particleprocessmaterial_property_angle_curve)                                                 |                         |
 | [`float`](class_float.md)                                      | [`angle_max`](#class_particleprocessmaterial_property_angle_max)                                                     | ``0.0``                 |
@@ -114,6 +116,8 @@ Holds a particle configuration for [`GPUParticles2D`](class_gpuparticles2d.md) o
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md)     | [`get_param`](#class_particleprocessmaterial_method_get_param) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                                    |
 | [`float`](class_float.md)         | [`get_param_max`](#class_particleprocessmaterial_method_get_param_max) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                            |
 | [`float`](class_float.md)         | [`get_param_min`](#class_particleprocessmaterial_method_get_param_min) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                            |

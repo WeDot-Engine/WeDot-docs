@@ -19,6 +19,8 @@ Abstract base class for GUI buttons.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ActionMode](#enum_basebutton_actionmode)             | [`action_mode`](#class_basebutton_property_action_mode)                   | ``1``                                                             |
 | [`ButtonGroup`](class_buttongroup.md)                 | [`button_group`](#class_basebutton_property_button_group)                 |                                                                   |
 | [MouseButtonMask](#enum_@globalscope_mousebuttonmask) | [`button_mask`](#class_basebutton_property_button_mask)                   | ``1``                                                             |
@@ -33,6 +35,8 @@ Abstract base class for GUI buttons.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                | [`_pressed`](#class_basebutton_private_method__pressed) ( ) virtual[^virtual]                                     |
 | `void`                                | [`_toggled`](#class_basebutton_private_method__toggled) ( toggled_on: [`bool`](class_bool.md) ) virtual[^virtual] |
 | [DrawMode](#enum_basebutton_drawmode) | [`get_draw_mode`](#class_basebutton_method_get_draw_mode) ( ) const[^const]                                       |

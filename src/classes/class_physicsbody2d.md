@@ -19,10 +19,14 @@ Abstract base class for 2D game objects affected by physics.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | input_pickable | ``false`` (overrides [`CollisionObject2D`](#class_collisionobject2d_property_input_pickable)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                            | [`add_collision_exception_with`](#class_physicsbody2d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                                  |
 | [Array](class_array.md) [`PhysicsBody2D`](class_physicsbody2d.md) | [`get_collision_exceptions`](#class_physicsbody2d_method_get_collision_exceptions) ( )                                                                                                                                                                                                                                        |
 | [`Vector2`](class_vector2.md)                                     | [`get_gravity`](#class_physicsbody2d_method_get_gravity) ( ) const[^const]                                                                                                                                                                                                                                                    |

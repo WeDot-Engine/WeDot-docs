@@ -25,6 +25,8 @@ A control for displaying text that can contain custom fonts, images, and basic f
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AutowrapMode](#enum_textserver_autowrapmode)                           | [`autowrap_mode`](#class_richtextlabel_property_autowrap_mode)                                                 | ``3``                                                                   |
 | [`bool`](class_bool.md)                                                 | [`bbcode_enabled`](#class_richtextlabel_property_bbcode_enabled)                                               | ``false``                                                               |
 | [`bool`](class_bool.md)                                                 | clip_contents                                                                                                  | ``true`` (overrides [`Control`](#class_control_property_clip_contents)) |
@@ -53,6 +55,8 @@ A control for displaying text that can contain custom fonts, images, and basic f
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                              | [`add_image`](#class_richtextlabel_method_add_image) ( image: [`Texture2D`](class_texture2d.md), width: [`int`](class_int.md) = 0, height: [`int`](class_int.md) = 0, color: [`Color`](class_color.md) = Color(1, 1, 1, 1), inline_align: [InlineAlignment](#enum_@globalscope_inlinealignment) = 5, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0), key: [`Variant`](class_variant.md) = null, pad: [`bool`](class_bool.md) = false, tooltip: [`String`](class_string.md) = "", size_in_percent: [`bool`](class_bool.md) = false )                                                              |
 | `void`                              | [`add_text`](#class_richtextlabel_method_add_text) ( text: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `void`                              | [`append_text`](#class_richtextlabel_method_append_text) ( bbcode: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -125,6 +129,8 @@ A control for displaying text that can contain custom fonts, images, and basic f
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)       | [`default_color`](#class_richtextlabel_theme_color_default_color)                          | ``Color(1, 1, 1, 1)``       |
 | [`Color`](class_color.md)       | [`font_outline_color`](#class_richtextlabel_theme_color_font_outline_color)                | ``Color(0, 0, 0, 1)``       |
 | [`Color`](class_color.md)       | [`font_selected_color`](#class_richtextlabel_theme_color_font_selected_color)              | ``Color(0, 0, 0, 0)``       |

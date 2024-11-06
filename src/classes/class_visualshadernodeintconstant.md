@@ -17,6 +17,8 @@ Translated to `int` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`constant`](#class_visualshadernodeintconstant_property_constant) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

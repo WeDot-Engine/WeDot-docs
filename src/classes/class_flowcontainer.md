@@ -19,6 +19,8 @@ A container that arranges its child controls horizontally or vertically and wrap
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AlignmentMode](#enum_flowcontainer_alignmentmode)                 | [`alignment`](#class_flowcontainer_property_alignment)                     | ``0``     |
 | [LastWrapAlignmentMode](#enum_flowcontainer_lastwrapalignmentmode) | [`last_wrap_alignment`](#class_flowcontainer_property_last_wrap_alignment) | ``0``     |
 | [`bool`](class_bool.md)                                            | [`reverse_fill`](#class_flowcontainer_property_reverse_fill)               | ``false`` |
@@ -26,10 +28,14 @@ A container that arranges its child controls horizontally or vertically and wrap
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`get_line_count`](#class_flowcontainer_method_get_line_count) ( ) const[^const] |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`h_separation`](#class_flowcontainer_theme_constant_h_separation) | ``4`` |
 | [`int`](class_int.md) | [`v_separation`](#class_flowcontainer_theme_constant_v_separation) | ``4`` |
 

@@ -23,6 +23,8 @@ Note that the name of the resource is used to register the action with.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ActionType](#enum_openxraction_actiontype)       | [`action_type`](#class_openxraction_property_action_type)       | ``1``                   |
 | [`String`](class_string.md)                       | [`localized_name`](#class_openxraction_property_localized_name) | ``""``                  |
 | [`PackedStringArray`](class_packedstringarray.md) | [`toplevel_paths`](#class_openxraction_property_toplevel_paths) | ``PackedStringArray()`` |

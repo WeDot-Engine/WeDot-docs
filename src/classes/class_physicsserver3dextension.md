@@ -19,6 +19,8 @@ Intended for use with GDExtension to create custom implementations of [`PhysicsS
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                            | [`_area_add_shape`](#class_physicsserver3dextension_private_method__area_add_shape) ( area: [`RID`](class_rid.md), shape: [`RID`](class_rid.md), transform: [`Transform3D`](class_transform3d.md), disabled: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                                                                                                                |
 | `void`                                                            | [`_area_attach_object_instance_id`](#class_physicsserver3dextension_private_method__area_attach_object_instance_id) ( area: [`RID`](class_rid.md), id: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                                                                                                                                        |
 | `void`                                                            | [`_area_clear_shapes`](#class_physicsserver3dextension_private_method__area_clear_shapes) ( area: [`RID`](class_rid.md) ) virtual[^virtual]                                                                                                                                                                                                                                                                                                                             |

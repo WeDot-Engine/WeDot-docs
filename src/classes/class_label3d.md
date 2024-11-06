@@ -17,6 +17,8 @@ A node for displaying plain text in 3D space. By adjusting various properties of
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                             | [`alpha_antialiasing_edge`](#class_label3d_property_alpha_antialiasing_edge)                             | ``0.0``                                                                                  |
 | [AlphaAntiAliasing](#enum_basematerial3d_alphaantialiasing)           | [`alpha_antialiasing_mode`](#class_label3d_property_alpha_antialiasing_mode)                             | ``0``                                                                                    |
 | [AlphaCutMode](#enum_label3d_alphacutmode)                            | [`alpha_cut`](#class_label3d_property_alpha_cut)                                                         | ``0``                                                                                    |
@@ -54,6 +56,8 @@ A node for displaying plain text in 3D space. By adjusting various properties of
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](#class_label3d_method_generate_triangle_mesh) ( ) const[^const]                                              |
 | [`bool`](class_bool.md)                 | [`get_draw_flag`](#class_label3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags) ) const[^const]                     |
 | `void`                                  | [`set_draw_flag`](#class_label3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags), enabled: [`bool`](class_bool.md) ) |

@@ -17,6 +17,8 @@ A 2D world boundary shape, intended for use in physics. **WorldBoundaryShape2D**
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)     | [`distance`](#class_worldboundaryshape2d_property_distance) | ``0.0``            |
 | [`Vector2`](class_vector2.md) | [`normal`](#class_worldboundaryshape2d_property_normal)     | ``Vector2(0, -1)`` |
 

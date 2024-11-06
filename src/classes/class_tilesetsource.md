@@ -27,6 +27,8 @@ You can iterate over all tiles exposed by a TileSetSource by first iterating ove
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)           | [`get_alternative_tile_id`](#class_tilesetsource_method_get_alternative_tile_id) ( atlas_coords: [`Vector2i`](class_vector2i.md), index: [`int`](class_int.md) ) const[^const]      |
 | [`int`](class_int.md)           | [`get_alternative_tiles_count`](#class_tilesetsource_method_get_alternative_tiles_count) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
 | [`Vector2i`](class_vector2i.md) | [`get_tile_id`](#class_tilesetsource_method_get_tile_id) ( index: [`int`](class_int.md) ) const[^const]                                                                             |

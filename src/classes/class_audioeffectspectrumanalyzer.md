@@ -21,6 +21,8 @@ See also [`AudioStreamGenerator`](class_audiostreamgenerator.md) for procedurall
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                            | [`buffer_length`](#class_audioeffectspectrumanalyzer_property_buffer_length) | ``2.0``  |
 | [FFTSize](#enum_audioeffectspectrumanalyzer_fftsize) | [`fft_size`](#class_audioeffectspectrumanalyzer_property_fft_size)           | ``2``    |
 | [`float`](class_float.md)                            | [`tap_back_pos`](#class_audioeffectspectrumanalyzer_property_tap_back_pos)   | ``0.01`` |

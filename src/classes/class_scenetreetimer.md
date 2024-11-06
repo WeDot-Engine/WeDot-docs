@@ -49,6 +49,8 @@ The timer will be dereferenced after its time elapses. To preserve the timer, yo
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`time_left`](#class_scenetreetimer_property_time_left) |
 
 <!-- rst-class:: classref-section-separator -->

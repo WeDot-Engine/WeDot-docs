@@ -27,6 +27,8 @@ The [`Texture2D`](class_texture2d.md) s associated with the Decal are automatica
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)         | [`albedo_mix`](#class_decal_property_albedo_mix)                       | ``1.0``               |
 | [`int`](class_int.md)             | [`cull_mask`](#class_decal_property_cull_mask)                         | ``1048575``           |
 | [`float`](class_float.md)         | [`distance_fade_begin`](#class_decal_property_distance_fade_begin)     | ``40.0``              |
@@ -45,6 +47,8 @@ The [`Texture2D`](class_texture2d.md) s associated with the Decal are automatica
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md) | [`get_texture`](#class_decal_method_get_texture) ( type: [DecalTexture](#enum_decal_decaltexture) ) const[^const]                               |
 | `void`                            | [`set_texture`](#class_decal_method_set_texture) ( type: [DecalTexture](#enum_decal_decaltexture), texture: [`Texture2D`](class_texture2d.md) ) |
 

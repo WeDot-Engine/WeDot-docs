@@ -19,6 +19,8 @@ Editor-only helper for setting up root motion in [`AnimationMixer`](class_animat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md) | [`animation_path`](#class_rootmotionview_property_animation_path) | ``NodePath("")``          |
 | [`float`](class_float.md)       | [`cell_size`](#class_rootmotionview_property_cell_size)           | ``1.0``                   |
 | [`Color`](class_color.md)       | [`color`](#class_rootmotionview_property_color)                   | ``Color(0.5, 0.5, 1, 1)`` |

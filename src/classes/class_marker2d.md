@@ -17,6 +17,8 @@ Generic 2D position hint for editing. It's just like a plain [`Node2D`](class_no
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`gizmo_extents`](#class_marker2d_property_gizmo_extents) | ``10.0`` |
 
 <!-- rst-class:: classref-section-separator -->

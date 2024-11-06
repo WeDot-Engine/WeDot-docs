@@ -19,6 +19,8 @@ This is an internal editor class intended for keeping data of resources of unkno
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`original_class`](#class_missingresource_property_original_class)             |
 | [`bool`](class_bool.md)     | [`recording_properties`](#class_missingresource_property_recording_properties) |
 

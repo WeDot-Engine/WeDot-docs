@@ -19,6 +19,8 @@ An array of 2D points is extruded to quickly and easily create a variety of 3D m
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                               | [`depth`](#class_csgpolygon3d_property_depth)                             | ``1.0``                                        |
 | [`Material`](class_material.md)                         | [`material`](#class_csgpolygon3d_property_material)                       |                                                |
 | [Mode](#enum_csgpolygon3d_mode)                         | [`mode`](#class_csgpolygon3d_property_mode)                               | ``0``                                          |

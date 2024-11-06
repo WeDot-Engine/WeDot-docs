@@ -21,6 +21,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                        | [`flip_h`](#class_texturebutton_property_flip_h)                           | ``false`` |
 | [`bool`](class_bool.md)                        | [`flip_v`](#class_texturebutton_property_flip_v)                           | ``false`` |
 | [`bool`](class_bool.md)                        | [`ignore_texture_size`](#class_texturebutton_property_ignore_texture_size) | ``false`` |

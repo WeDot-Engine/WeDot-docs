@@ -23,6 +23,8 @@ Updating the target properties of animations occurs at the process frame.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                  | [`assigned_animation`](#class_animationplayer_property_assigned_animation)                                       |           |
 | [`String`](class_string.md)                  | [`autoplay`](#class_animationplayer_property_autoplay)                                                           | ``""``    |
 | [`String`](class_string.md)                  | [`current_animation`](#class_animationplayer_property_current_animation)                                         | ``""``    |
@@ -38,6 +40,8 @@ Updating the target properties of animations occurs at the process frame.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md)                                        | [`animation_get_next`](#class_animationplayer_method_animation_get_next) ( animation_from: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                                                                                |
 | `void`                                                                     | [`animation_set_next`](#class_animationplayer_method_animation_set_next) ( animation_from: [`StringName`](class_stringname.md), animation_to: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                           |
 | `void`                                                                     | [`clear_queue`](#class_animationplayer_method_clear_queue) ( )                                                                                                                                                                                                                                                                                                                                                                |

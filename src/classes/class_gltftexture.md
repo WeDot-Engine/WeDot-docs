@@ -13,6 +13,8 @@ GLTFTexture represents a texture in a GLTF file.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`sampler`](#class_gltftexture_property_sampler)     | ``-1`` |
 | [`int`](class_int.md) | [`src_image`](#class_gltftexture_property_src_image) | ``-1`` |
 

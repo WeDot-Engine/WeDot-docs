@@ -23,12 +23,16 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`origin`](#class_transform2d_property_origin) | ``Vector2(0, 0)`` |
 | [`Vector2`](class_vector2.md) | [`x`](#class_transform2d_property_x)           | ``Vector2(1, 0)`` |
 | [`Vector2`](class_vector2.md) | [`y`](#class_transform2d_property_y)           | ``Vector2(0, 1)`` |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( )                                                                                                                                                     |
 | [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( from: [`Transform2D`](class_transform2d.md) )                                                                                                         |
 | [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) )                                                                        |
@@ -37,6 +41,8 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Transform2D`](class_transform2d.md) | [`affine_inverse`](#class_transform2d_method_affine_inverse) ( ) const[^const]                                                                                     |
 | [`Vector2`](class_vector2.md)         | [`basis_xform`](#class_transform2d_method_basis_xform) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                          |
 | [`Vector2`](class_vector2.md)         | [`basis_xform_inv`](#class_transform2d_method_basis_xform_inv) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                  |
@@ -61,6 +67,8 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`operator !=`](class_Transform2D.md#operator_neq_Transform2D) ( right: [`Transform2D`](class_transform2d.md) )                     |
 | [`PackedVector2Array`](class_packedvector2array.md) | [`operator *`](class_Transform2D.md#operator_mul_PackedVector2Array) ( right: [`PackedVector2Array`](class_packedvector2array.md) ) |
 | [`Rect2`](class_rect2.md)                           | [`operator *`](class_Transform2D.md#operator_mul_Rect2) ( right: [`Rect2`](class_rect2.md) )                                        |
