@@ -132,7 +132,7 @@
       var originalLang = translate.language.getLocal();
       if (currentLang !== originalLang) {
         const translateInfo = document.querySelectorAll('#translate-info');
-        if (translateInfo.length) {
+        if (translateInfo) {
           translateInfo.forEach(function (item) {
             item.remove();
           })
