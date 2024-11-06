@@ -9,7 +9,8 @@
 
 ## 离线文档
 
-> 离线文档暂未发行。请耐心等待。
+- PDF
+  - [最新](https://docs.wedot.top/latest/print.html)
 
 ## 贡献
 
