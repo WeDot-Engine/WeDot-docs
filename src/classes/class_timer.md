@@ -13,11 +13,11 @@ A countdown timer.
 
 ## 描述
 
-The **Timer** node is a countdown timer and is the simplest way to handle time-based logic in the engine. When a timer reaches the end of its [`wait_time`](#class_timer_property_wait_time), it will emit the [`timeout`](#class_timer_signal_timeout) signal.
+The **Timer** node is a countdown timer and is the simplest way to handle time-based logic in the engine. When a timer reaches the end of its [`wait_time`](class_timer.md#class_timer_property_wait_time), it will emit the [`timeout`](class_timer.md#class_timer_signal_timeout) signal.
 
-After a timer enters the tree, it can be manually started with [`start`](#class_timer_method_start). A timer node is also started automatically if [`autostart`](#class_timer_property_autostart) is `true`.
+After a timer enters the tree, it can be manually started with [`start`](class_timer.md#class_timer_method_start). A timer node is also started automatically if [`autostart`](class_timer.md#class_timer_property_autostart) is `true`.
 
-Without requiring much code, a timer node can be added and configured in the editor. The [`timeout`](#class_timer_signal_timeout) signal it emits can also be connected through the Node dock in the editor:
+Without requiring much code, a timer node can be added and configured in the editor. The [`timeout`](class_timer.md#class_timer_signal_timeout) signal it emits can also be connected through the Node dock in the editor:
 
 ```
 
@@ -25,9 +25,9 @@ Without requiring much code, a timer node can be added and configured in the edi
         print("Time to attack!")
 ```
 
- **Note:** To create a one-shot timer without instantiating a node, use [`SceneTree.create_timer`](#class_scenetree_method_create_timer).
+ **Note:** To create a one-shot timer without instantiating a node, use [`SceneTree.create_timer`](class_scenetree.md#class_scenetree_method_create_timer).
 
- **Note:** Timers are affected by [`Engine.time_scale`](#class_engine_property_time_scale). The higher the time scale, the sooner timers will end. How often a timer processes may depend on the framerate or [`Engine.physics_ticks_per_second`](#class_engine_property_physics_ticks_per_second).
+ **Note:** Timers are affected by [`Engine.time_scale`](class_engine.md#class_engine_property_time_scale). The higher the time scale, the sooner timers will end. How often a timer processes may depend on the framerate or [`Engine.physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second).
 
 
 
@@ -35,20 +35,20 @@ Without requiring much code, a timer node can be added and configured in the edi
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                  | [`autostart`](#class_timer_property_autostart)               | ``false`` |
-| [`bool`](class_bool.md)                                  | [`one_shot`](#class_timer_property_one_shot)                 | ``false`` |
-| [`bool`](class_bool.md)                                  | [`paused`](#class_timer_property_paused)                     |           |
-| [TimerProcessCallback](#enum_timer_timerprocesscallback) | [`process_callback`](#class_timer_property_process_callback) | ``1``     |
-| [`float`](class_float.md)                                | [`time_left`](#class_timer_property_time_left)               |           |
-| [`float`](class_float.md)                                | [`wait_time`](#class_timer_property_wait_time)               | ``1.0``   |
+| [`bool`](class_bool.md)                                  | [`autostart`](class_timer.md#class_timer_property_autostart)               | ``false`` |
+| [`bool`](class_bool.md)                                  | [`one_shot`](class_timer.md#class_timer_property_one_shot)                 | ``false`` |
+| [`bool`](class_bool.md)                                  | [`paused`](class_timer.md#class_timer_property_paused)                     |           |
+| [TimerProcessCallback](#enum_timer_timerprocesscallback) | [`process_callback`](class_timer.md#class_timer_property_process_callback) | ``1``     |
+| [`float`](class_float.md)                                | [`time_left`](class_timer.md#class_timer_property_time_left)               |           |
+| [`float`](class_float.md)                                | [`wait_time`](class_timer.md#class_timer_property_wait_time)               | ``1.0``   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`is_stopped`](#class_timer_method_is_stopped) ( ) const[^const]                  |
-| `void`                  | [`start`](#class_timer_method_start) ( time_sec: [`float`](class_float.md) = -1 ) |
-| `void`                  | [`stop`](#class_timer_method_stop) ( )                                            |
+| [`bool`](class_bool.md) | [`is_stopped`](class_timer.md#class_timer_method_is_stopped) ( ) const[^const]                  |
+| `void`                  | [`start`](class_timer.md#class_timer_method_start) ( time_sec: [`float`](class_float.md) = -1 ) |
+| `void`                  | [`stop`](class_timer.md#class_timer_method_stop) ( )                                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -76,13 +76,13 @@ enum **TimerProcessCallback**: <div id="enum_timer_timerprocesscallback"></div>
 
 [TimerProcessCallback](#enum_timer_timerprocesscallback) **TIMER_PROCESS_PHYSICS** = ``0``
 
-Update the timer every physics process frame (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](#class_node_constant_notification_internal_physics_process)).
+Update the timer every physics process frame (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_internal_physics_process)).
 
 <div id="_class_timer_constant_timer_process_idle"></div>
 
 [TimerProcessCallback](#enum_timer_timerprocesscallback) **TIMER_PROCESS_IDLE** = ``1``
 
-Update the timer every process (rendered) frame (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](#class_node_constant_notification_internal_process)).
+Update the timer every process (rendered) frame (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](class_node.md#class_node_constant_notification_internal_process)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -125,7 +125,7 @@ If `true`, the timer will stop after reaching the end. Otherwise, as by default,
 - `void` **set_paused** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_paused** ( )
 
-If `true`, the timer is paused. A paused timer does not process until this property is set back to `false`, even when [`start`](#class_timer_method_start) is called.
+If `true`, the timer is paused. A paused timer does not process until this property is set back to `false`, even when [`start`](class_timer.md#class_timer_method_start) is called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,7 +152,7 @@ Specifies when the timer is updated during the main loop (see [TimerProcessCallb
 
 The timer's remaining time in seconds. This is always `0` if the timer is stopped.
 
- **Note:** This property is read-only and cannot be modified. It is based on [`wait_time`](#class_timer_property_wait_time).
+ **Note:** This property is read-only and cannot be modified. It is based on [`wait_time`](class_timer.md#class_timer_property_wait_time).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,9 +165,9 @@ The timer's remaining time in seconds. This is always `0` if the timer is stoppe
 - `void` **set_wait_time** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_wait_time** ( )
 
-The time required for the timer to end, in seconds. This property can also be set every time [`start`](#class_timer_method_start) is called.
+The time required for the timer to end, in seconds. This property can also be set every time [`start`](class_timer.md#class_timer_method_start) is called.
 
- **Note:** Timers can only process once per physics or process frame (depending on the [`process_callback`](#class_timer_property_process_callback)). An unstable framerate may cause the timer to end inconsistently, which is especially noticeable if the wait time is lower than roughly `0.05` seconds. For very short timers, it is recommended to write your own code instead of using a **Timer** node. Timers are also affected by [`Engine.time_scale`](#class_engine_property_time_scale).
+ **Note:** Timers can only process once per physics or process frame (depending on the [`process_callback`](class_timer.md#class_timer_property_process_callback)). An unstable framerate may cause the timer to end inconsistently, which is especially noticeable if the wait time is lower than roughly `0.05` seconds. For very short timers, it is recommended to write your own code instead of using a **Timer** node. Timers are also affected by [`Engine.time_scale`](class_engine.md#class_engine_property_time_scale).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -189,9 +189,9 @@ Returns `true` if the timer is stopped or has not started.
 
 `void` **start** ( time_sec: [`float`](class_float.md) = -1 )<div id="class_timer_method_start"></div>
 
-Starts the timer, if it was not started already. Fails if the timer is not inside the tree. If `time_sec` is greater than `0`, this value is used for the [`wait_time`](#class_timer_property_wait_time).
+Starts the timer, if it was not started already. Fails if the timer is not inside the tree. If `time_sec` is greater than `0`, this value is used for the [`wait_time`](class_timer.md#class_timer_property_wait_time).
 
- **Note:** This method does not resume a paused timer. See [`paused`](#class_timer_property_paused).
+ **Note:** This method does not resume a paused timer. See [`paused`](class_timer.md#class_timer_property_paused).
 
 <!-- rst-class:: classref-item-separator -->
 

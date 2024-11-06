@@ -19,15 +19,15 @@ A directional light is a type of [`Light3D`](class_light3d.md) node that models 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                           | [`directional_shadow_blend_splits`](#class_directionallight3d_property_directional_shadow_blend_splits) | ``false`` |
-| [`float`](class_float.md)                         | [`directional_shadow_fade_start`](#class_directionallight3d_property_directional_shadow_fade_start)     | ``0.8``   |
-| [`float`](class_float.md)                         | [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance) | ``100.0`` |
-| [ShadowMode](#enum_directionallight3d_shadowmode) | [`directional_shadow_mode`](#class_directionallight3d_property_directional_shadow_mode)                 | ``2``     |
-| [`float`](class_float.md)                         | [`directional_shadow_pancake_size`](#class_directionallight3d_property_directional_shadow_pancake_size) | ``20.0``  |
-| [`float`](class_float.md)                         | [`directional_shadow_split_1`](#class_directionallight3d_property_directional_shadow_split_1)           | ``0.1``   |
-| [`float`](class_float.md)                         | [`directional_shadow_split_2`](#class_directionallight3d_property_directional_shadow_split_2)           | ``0.2``   |
-| [`float`](class_float.md)                         | [`directional_shadow_split_3`](#class_directionallight3d_property_directional_shadow_split_3)           | ``0.5``   |
-| [SkyMode](#enum_directionallight3d_skymode)       | [`sky_mode`](#class_directionallight3d_property_sky_mode)                                               | ``0``     |
+| [`bool`](class_bool.md)                           | [`directional_shadow_blend_splits`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_blend_splits) | ``false`` |
+| [`float`](class_float.md)                         | [`directional_shadow_fade_start`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_fade_start)     | ``0.8``   |
+| [`float`](class_float.md)                         | [`directional_shadow_max_distance`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_max_distance) | ``100.0`` |
+| [ShadowMode](#enum_directionallight3d_shadowmode) | [`directional_shadow_mode`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_mode)                 | ``2``     |
+| [`float`](class_float.md)                         | [`directional_shadow_pancake_size`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_pancake_size) | ``20.0``  |
+| [`float`](class_float.md)                         | [`directional_shadow_split_1`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_split_1)           | ``0.1``   |
+| [`float`](class_float.md)                         | [`directional_shadow_split_2`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_split_2)           | ``0.2``   |
+| [`float`](class_float.md)                         | [`directional_shadow_split_3`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_split_3)           | ``0.5``   |
+| [SkyMode](#enum_directionallight3d_skymode)       | [`sky_mode`](class_directionallight3d.md#class_directionallight3d_property_sky_mode)                                               | ``0``     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -49,7 +49,7 @@ Renders the entire scene's shadow map from an orthogonal point of view. This is 
 
 [ShadowMode](#enum_directionallight3d_shadowmode) **SHADOW_PARALLEL_2_SPLITS** = ``1``
 
-Splits the view frustum in 2 areas, each with its own shadow map. This shadow mode is a compromise between [`SHADOW_ORTHOGONAL`](#class_directionallight3d_constant_shadow_orthogonal) and [`SHADOW_PARALLEL_4_SPLITS`](#class_directionallight3d_constant_shadow_parallel_4_splits) in terms of performance.
+Splits the view frustum in 2 areas, each with its own shadow map. This shadow mode is a compromise between [`SHADOW_ORTHOGONAL`](class_directionallight3d.md#class_directionallight3d_constant_shadow_orthogonal) and [`SHADOW_PARALLEL_4_SPLITS`](class_directionallight3d.md#class_directionallight3d_constant_shadow_parallel_4_splits) in terms of performance.
 
 <div id="_class_directionallight3d_constant_shadow_parallel_4_splits"></div>
 
@@ -96,7 +96,7 @@ Makes the light visible to sky shaders only. When using this mode the light will
 - `void` **set_blend_splits** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_blend_splits_enabled** ( )
 
-If `true`, shadow detail is sacrificed in exchange for smoother transitions between splits. Enabling shadow blend splitting also has a moderate performance cost. This is ignored when [`directional_shadow_mode`](#class_directionallight3d_property_directional_shadow_mode) is [`SHADOW_ORTHOGONAL`](#class_directionallight3d_constant_shadow_orthogonal).
+If `true`, shadow detail is sacrificed in exchange for smoother transitions between splits. Enabling shadow blend splitting also has a moderate performance cost. This is ignored when [`directional_shadow_mode`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_mode) is [`SHADOW_ORTHOGONAL`](class_directionallight3d.md#class_directionallight3d_constant_shadow_orthogonal).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -109,7 +109,7 @@ If `true`, shadow detail is sacrificed in exchange for smoother transitions betw
 - `void` **set_param** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( )
 
-Proportion of [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance) at which point the shadow starts to fade. At [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance), the shadow will disappear. The default value is a balance between smooth fading and distant shadow visibility. If the camera moves fast and the [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance) is low, consider lowering [`directional_shadow_fade_start`](#class_directionallight3d_property_directional_shadow_fade_start) below `0.8` to make shadow transitions less noticeable. On the other hand, if you tuned [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance) to cover the entire scene, you can set [`directional_shadow_fade_start`](#class_directionallight3d_property_directional_shadow_fade_start) to `1.0` to prevent the shadow from fading in the distance (it will suddenly cut off instead).
+Proportion of [`directional_shadow_max_distance`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_max_distance) at which point the shadow starts to fade. At [`directional_shadow_max_distance`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_max_distance), the shadow will disappear. The default value is a balance between smooth fading and distant shadow visibility. If the camera moves fast and the [`directional_shadow_max_distance`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_max_distance) is low, consider lowering [`directional_shadow_fade_start`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_fade_start) below `0.8` to make shadow transitions less noticeable. On the other hand, if you tuned [`directional_shadow_max_distance`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_max_distance) to cover the entire scene, you can set [`directional_shadow_fade_start`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_fade_start) to `1.0` to prevent the shadow from fading in the distance (it will suddenly cut off instead).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -161,7 +161,7 @@ Sets the size of the directional shadow pancake. The pancake offsets the start o
 - `void` **set_param** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( )
 
-The distance from camera to shadow split 1. Relative to [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance). Only used when [`directional_shadow_mode`](#class_directionallight3d_property_directional_shadow_mode) is [`SHADOW_PARALLEL_2_SPLITS`](#class_directionallight3d_constant_shadow_parallel_2_splits) or [`SHADOW_PARALLEL_4_SPLITS`](#class_directionallight3d_constant_shadow_parallel_4_splits).
+The distance from camera to shadow split 1. Relative to [`directional_shadow_max_distance`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_max_distance). Only used when [`directional_shadow_mode`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_mode) is [`SHADOW_PARALLEL_2_SPLITS`](class_directionallight3d.md#class_directionallight3d_constant_shadow_parallel_2_splits) or [`SHADOW_PARALLEL_4_SPLITS`](class_directionallight3d.md#class_directionallight3d_constant_shadow_parallel_4_splits).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -174,7 +174,7 @@ The distance from camera to shadow split 1. Relative to [`directional_shadow_max
 - `void` **set_param** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( )
 
-The distance from shadow split 1 to split 2. Relative to [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance). Only used when [`directional_shadow_mode`](#class_directionallight3d_property_directional_shadow_mode) is [`SHADOW_PARALLEL_4_SPLITS`](#class_directionallight3d_constant_shadow_parallel_4_splits).
+The distance from shadow split 1 to split 2. Relative to [`directional_shadow_max_distance`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_max_distance). Only used when [`directional_shadow_mode`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_mode) is [`SHADOW_PARALLEL_4_SPLITS`](class_directionallight3d.md#class_directionallight3d_constant_shadow_parallel_4_splits).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -187,7 +187,7 @@ The distance from shadow split 1 to split 2. Relative to [`directional_shadow_ma
 - `void` **set_param** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( )
 
-The distance from shadow split 2 to split 3. Relative to [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance). Only used when [`directional_shadow_mode`](#class_directionallight3d_property_directional_shadow_mode) is [`SHADOW_PARALLEL_4_SPLITS`](#class_directionallight3d_constant_shadow_parallel_4_splits).
+The distance from shadow split 2 to split 3. Relative to [`directional_shadow_max_distance`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_max_distance). Only used when [`directional_shadow_mode`](class_directionallight3d.md#class_directionallight3d_property_directional_shadow_mode) is [`SHADOW_PARALLEL_4_SPLITS`](class_directionallight3d.md#class_directionallight3d_constant_shadow_parallel_4_splits).
 
 <!-- rst-class:: classref-item-separator -->
 

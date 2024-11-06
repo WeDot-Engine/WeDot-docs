@@ -17,36 +17,36 @@ A resource used by [`AnimationNodeBlendTree`](class_animationnodeblendtree.md).
 
  **AnimationNodeBlendSpace2D** represents a virtual 2D space on which [`AnimationRootNode`](class_animationrootnode.md) s are placed. Outputs the linear blend of the three adjacent animations using a [`Vector2`](class_vector2.md) weight. Adjacent in this context means the three [`AnimationRootNode`](class_animationrootnode.md) s making up the triangle that contains the current value.
 
-You can add vertices to the blend space with [`add_blend_point`](#class_animationnodeblendspace2d_method_add_blend_point) and automatically triangulate it by setting [`auto_triangles`](#class_animationnodeblendspace2d_property_auto_triangles) to `true`. Otherwise, use [`add_triangle`](#class_animationnodeblendspace2d_method_add_triangle) and [`remove_triangle`](#class_animationnodeblendspace2d_method_remove_triangle) to triangulate the blend space by hand.
+You can add vertices to the blend space with [`add_blend_point`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_add_blend_point) and automatically triangulate it by setting [`auto_triangles`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_auto_triangles) to `true`. Otherwise, use [`add_triangle`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_add_triangle) and [`remove_triangle`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_remove_triangle) to triangulate the blend space by hand.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                | [`auto_triangles`](#class_animationnodeblendspace2d_property_auto_triangles) | ``true``              |
-| [BlendMode](#enum_animationnodeblendspace2d_blendmode) | [`blend_mode`](#class_animationnodeblendspace2d_property_blend_mode)         | ``0``                 |
-| [`Vector2`](class_vector2.md)                          | [`max_space`](#class_animationnodeblendspace2d_property_max_space)           | ``Vector2(1, 1)``     |
-| [`Vector2`](class_vector2.md)                          | [`min_space`](#class_animationnodeblendspace2d_property_min_space)           | ``Vector2(-1, -1)``   |
-| [`Vector2`](class_vector2.md)                          | [`snap`](#class_animationnodeblendspace2d_property_snap)                     | ``Vector2(0.1, 0.1)`` |
-| [`bool`](class_bool.md)                                | [`sync`](#class_animationnodeblendspace2d_property_sync)                     | ``false``             |
-| [`String`](class_string.md)                            | [`x_label`](#class_animationnodeblendspace2d_property_x_label)               | ``"x"``               |
-| [`String`](class_string.md)                            | [`y_label`](#class_animationnodeblendspace2d_property_y_label)               | ``"y"``               |
+| [`bool`](class_bool.md)                                | [`auto_triangles`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_auto_triangles) | ``true``              |
+| [BlendMode](#enum_animationnodeblendspace2d_blendmode) | [`blend_mode`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_blend_mode)         | ``0``                 |
+| [`Vector2`](class_vector2.md)                          | [`max_space`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_max_space)           | ``Vector2(1, 1)``     |
+| [`Vector2`](class_vector2.md)                          | [`min_space`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_min_space)           | ``Vector2(-1, -1)``   |
+| [`Vector2`](class_vector2.md)                          | [`snap`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_snap)                     | ``Vector2(0.1, 0.1)`` |
+| [`bool`](class_bool.md)                                | [`sync`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_sync)                     | ``false``             |
+| [`String`](class_string.md)                            | [`x_label`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_x_label)               | ``"x"``               |
+| [`String`](class_string.md)                            | [`y_label`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_property_y_label)               | ``"y"``               |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                            | [`add_blend_point`](#class_animationnodeblendspace2d_method_add_blend_point) ( node: [`AnimationRootNode`](class_animationrootnode.md), pos: [`Vector2`](class_vector2.md), at_index: [`int`](class_int.md) = -1 ) |
-| `void`                                            | [`add_triangle`](#class_animationnodeblendspace2d_method_add_triangle) ( x: [`int`](class_int.md), y: [`int`](class_int.md), z: [`int`](class_int.md), at_index: [`int`](class_int.md) = -1 )                      |
-| [`int`](class_int.md)                             | [`get_blend_point_count`](#class_animationnodeblendspace2d_method_get_blend_point_count) ( ) const[^const]                                                                                                         |
-| [`AnimationRootNode`](class_animationrootnode.md) | [`get_blend_point_node`](#class_animationnodeblendspace2d_method_get_blend_point_node) ( point: [`int`](class_int.md) ) const[^const]                                                                              |
-| [`Vector2`](class_vector2.md)                     | [`get_blend_point_position`](#class_animationnodeblendspace2d_method_get_blend_point_position) ( point: [`int`](class_int.md) ) const[^const]                                                                      |
-| [`int`](class_int.md)                             | [`get_triangle_count`](#class_animationnodeblendspace2d_method_get_triangle_count) ( ) const[^const]                                                                                                               |
-| [`int`](class_int.md)                             | [`get_triangle_point`](#class_animationnodeblendspace2d_method_get_triangle_point) ( triangle: [`int`](class_int.md), point: [`int`](class_int.md) )                                                               |
-| `void`                                            | [`remove_blend_point`](#class_animationnodeblendspace2d_method_remove_blend_point) ( point: [`int`](class_int.md) )                                                                                                |
-| `void`                                            | [`remove_triangle`](#class_animationnodeblendspace2d_method_remove_triangle) ( triangle: [`int`](class_int.md) )                                                                                                   |
-| `void`                                            | [`set_blend_point_node`](#class_animationnodeblendspace2d_method_set_blend_point_node) ( point: [`int`](class_int.md), node: [`AnimationRootNode`](class_animationrootnode.md) )                                   |
-| `void`                                            | [`set_blend_point_position`](#class_animationnodeblendspace2d_method_set_blend_point_position) ( point: [`int`](class_int.md), pos: [`Vector2`](class_vector2.md) )                                                |
+| `void`                                            | [`add_blend_point`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_add_blend_point) ( node: [`AnimationRootNode`](class_animationrootnode.md), pos: [`Vector2`](class_vector2.md), at_index: [`int`](class_int.md) = -1 ) |
+| `void`                                            | [`add_triangle`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_add_triangle) ( x: [`int`](class_int.md), y: [`int`](class_int.md), z: [`int`](class_int.md), at_index: [`int`](class_int.md) = -1 )                      |
+| [`int`](class_int.md)                             | [`get_blend_point_count`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_get_blend_point_count) ( ) const[^const]                                                                                                         |
+| [`AnimationRootNode`](class_animationrootnode.md) | [`get_blend_point_node`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_get_blend_point_node) ( point: [`int`](class_int.md) ) const[^const]                                                                              |
+| [`Vector2`](class_vector2.md)                     | [`get_blend_point_position`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_get_blend_point_position) ( point: [`int`](class_int.md) ) const[^const]                                                                      |
+| [`int`](class_int.md)                             | [`get_triangle_count`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_get_triangle_count) ( ) const[^const]                                                                                                               |
+| [`int`](class_int.md)                             | [`get_triangle_point`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_get_triangle_point) ( triangle: [`int`](class_int.md), point: [`int`](class_int.md) )                                                               |
+| `void`                                            | [`remove_blend_point`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_remove_blend_point) ( point: [`int`](class_int.md) )                                                                                                |
+| `void`                                            | [`remove_triangle`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_remove_triangle) ( triangle: [`int`](class_int.md) )                                                                                                   |
+| `void`                                            | [`set_blend_point_node`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_set_blend_point_node) ( point: [`int`](class_int.md), node: [`AnimationRootNode`](class_animationrootnode.md) )                                   |
+| `void`                                            | [`set_blend_point_position`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_set_blend_point_position) ( point: [`int`](class_int.md), pos: [`Vector2`](class_vector2.md) )                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -86,7 +86,7 @@ The blend space plays the animation of the animation node which blending positio
 
 [BlendMode](#enum_animationnodeblendspace2d_blendmode) **BLEND_MODE_DISCRETE_CARRY** = ``2``
 
-Similar to [`BLEND_MODE_DISCRETE`](#class_animationnodeblendspace2d_constant_blend_mode_discrete), but starts the new animation at the last animation's playback position.
+Similar to [`BLEND_MODE_DISCRETE`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_constant_blend_mode_discrete), but starts the new animation at the last animation's playback position.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -101,7 +101,7 @@ Similar to [`BLEND_MODE_DISCRETE`](#class_animationnodeblendspace2d_constant_ble
 - `void` **set_auto_triangles** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_auto_triangles** ( )
 
-If `true`, the blend space is triangulated automatically. The mesh updates every time you add or remove points with [`add_blend_point`](#class_animationnodeblendspace2d_method_add_blend_point) and [`remove_blend_point`](#class_animationnodeblendspace2d_method_remove_blend_point).
+If `true`, the blend space is triangulated automatically. The mesh updates every time you add or remove points with [`add_blend_point`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_add_blend_point) and [`remove_blend_point`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_remove_blend_point).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -127,7 +127,7 @@ Controls the interpolation between animations. See [BlendMode](#enum_animationno
 - `void` **set_max_space** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_max_space** ( )
 
-The blend space's X and Y axes' upper limit for the points' position. See [`add_blend_point`](#class_animationnodeblendspace2d_method_add_blend_point).
+The blend space's X and Y axes' upper limit for the points' position. See [`add_blend_point`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_add_blend_point).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -140,7 +140,7 @@ The blend space's X and Y axes' upper limit for the points' position. See [`add_
 - `void` **set_min_space** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_min_space** ( )
 
-The blend space's X and Y axes' lower limit for the points' position. See [`add_blend_point`](#class_animationnodeblendspace2d_method_add_blend_point).
+The blend space's X and Y axes' lower limit for the points' position. See [`add_blend_point`](class_animationnodeblendspace2d.md#class_animationnodeblendspace2d_method_add_blend_point).
 
 <!-- rst-class:: classref-item-separator -->
 

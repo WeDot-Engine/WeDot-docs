@@ -13,7 +13,7 @@ One-shot timer.
 
 ## 描述
 
-A one-shot timer managed by the scene tree, which emits [`timeout`](#class_scenetreetimer_signal_timeout) on completion. See also [`SceneTree.create_timer`](#class_scenetree_method_create_timer).
+A one-shot timer managed by the scene tree, which emits [`timeout`](class_scenetreetimer.md#class_scenetreetimer_signal_timeout) on completion. See also [`SceneTree.create_timer`](class_scenetree.md#class_scenetree_method_create_timer).
 
 As opposed to [`Timer`](class_timer.md), it does not require the instantiation of a node. Commonly used to create a one-shot delay timer as in the following example:
 
@@ -41,7 +41,7 @@ As opposed to [`Timer`](class_timer.md), it does not require the instantiation o
 
 The timer will be dereferenced after its time elapses. To preserve the timer, you can keep a reference to it. See [`RefCounted`](class_refcounted.md).
 
- **Note:** The timer is processed after all of the nodes in the current frame, i.e. node's [`Node._process`](#class_node_private_method__process) method would be called before the timer (or [`Node._physics_process`](#class_node_private_method__physics_process) if `process_in_physics` in [`SceneTree.create_timer`](#class_scenetree_method_create_timer) has been set to `true`).
+ **Note:** The timer is processed after all of the nodes in the current frame, i.e. node's [`Node._process`](class_node.md#class_node_private_method__process) method would be called before the timer (or [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) if `process_in_physics` in [`SceneTree.create_timer`](class_scenetree.md#class_scenetree_method_create_timer) has been set to `true`).
 
 
 
@@ -51,7 +51,7 @@ The timer will be dereferenced after its time elapses. To preserve the timer, yo
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`time_left`](#class_scenetreetimer_property_time_left) |
+| [`float`](class_float.md) | [`time_left`](class_scenetreetimer.md#class_scenetreetimer_property_time_left) |
 
 <!-- rst-class:: classref-section-separator -->
 

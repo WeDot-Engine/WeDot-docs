@@ -19,7 +19,7 @@ Performs a lookup operation on the provided texture, with support for multiple t
 
 |||
 |:-:|:--|
-| [`Texture3D`](class_texture3d.md) | [`texture`](#class_visualshadernodetexture3d_property_texture) |
+| [`Texture3D`](class_texture3d.md) | [`texture`](class_visualshadernodetexture3d.md#class_visualshadernodetexture3d_property_texture) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -34,7 +34,7 @@ Performs a lookup operation on the provided texture, with support for multiple t
 - `void` **set_texture** ( value: [`Texture3D`](class_texture3d.md) )
 - [`Texture3D`](class_texture3d.md) **get_texture** ( )
 
-A source texture. Used if [`VisualShaderNodeSample3D.source`](#class_visualshadernodesample3d_property_source) is set to [`VisualShaderNodeSample3D.SOURCE_TEXTURE`](#class_visualshadernodesample3d_constant_source_texture).
+A source texture. Used if [`VisualShaderNodeSample3D.source`](class_visualshadernodesample3d.md#class_visualshadernodesample3d_property_source) is set to [`VisualShaderNodeSample3D.SOURCE_TEXTURE`](class_visualshadernodesample3d.md#class_visualshadernodesample3d_constant_source_texture).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

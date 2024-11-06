@@ -19,8 +19,8 @@ A 2D line segment shape, intended for use in physics. Usually used to provide a 
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`a`](#class_segmentshape2d_property_a) | ``Vector2(0, 0)``  |
-| [`Vector2`](class_vector2.md) | [`b`](#class_segmentshape2d_property_b) | ``Vector2(0, 10)`` |
+| [`Vector2`](class_vector2.md) | [`a`](class_segmentshape2d.md#class_segmentshape2d_property_a) | ``Vector2(0, 0)``  |
+| [`Vector2`](class_vector2.md) | [`b`](class_segmentshape2d.md#class_segmentshape2d_property_b) | ``Vector2(0, 10)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

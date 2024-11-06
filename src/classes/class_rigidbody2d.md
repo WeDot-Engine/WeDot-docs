@@ -17,59 +17,59 @@ A 2D physics body that is moved by a physics simulation.
 
 **RigidBody2D** implements full 2D physics. It cannot be controlled directly, instead, you must apply forces to it (gravity, impulses, etc.), and the physics simulation will calculate the resulting movement, rotation, react to collisions, and affect other physics bodies in its path.
 
-The body's behavior can be adjusted via [`lock_rotation`](#class_rigidbody2d_property_lock_rotation), [`freeze`](#class_rigidbody2d_property_freeze), and [`freeze_mode`](#class_rigidbody2d_property_freeze_mode). By changing various properties of the object, such as [`mass`](#class_rigidbody2d_property_mass), you can control how the physics simulation acts on it.
+The body's behavior can be adjusted via [`lock_rotation`](class_rigidbody2d.md#class_rigidbody2d_property_lock_rotation), [`freeze`](class_rigidbody2d.md#class_rigidbody2d_property_freeze), and [`freeze_mode`](class_rigidbody2d.md#class_rigidbody2d_property_freeze_mode). By changing various properties of the object, such as [`mass`](class_rigidbody2d.md#class_rigidbody2d_property_mass), you can control how the physics simulation acts on it.
 
 A rigid body will always maintain its shape and size, even when forces are applied to it. It is useful for objects that can be interacted with in an environment, such as a tree that can be knocked over or a stack of crates that can be pushed around.
 
-If you need to override the default physics behavior, you can write a custom force integration function. See [`custom_integrator`](#class_rigidbody2d_property_custom_integrator).
+If you need to override the default physics behavior, you can write a custom force integration function. See [`custom_integrator`](class_rigidbody2d.md#class_rigidbody2d_property_custom_integrator).
 
- **Note:** Changing the 2D transform or [`linear_velocity`](#class_rigidbody2d_property_linear_velocity) of a **RigidBody2D** very often may lead to some unpredictable behaviors. If you need to directly affect the body, prefer [`_integrate_forces`](#class_rigidbody2d_private_method__integrate_forces) as it allows you to directly access the physics state.
+ **Note:** Changing the 2D transform or [`linear_velocity`](class_rigidbody2d.md#class_rigidbody2d_property_linear_velocity) of a **RigidBody2D** very often may lead to some unpredictable behaviors. If you need to directly affect the body, prefer [`_integrate_forces`](class_rigidbody2d.md#class_rigidbody2d_private_method__integrate_forces) as it allows you to directly access the physics state.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                              | [`angular_damp`](#class_rigidbody2d_property_angular_damp)                           | ``0.0``           |
-| [DampMode](#enum_rigidbody2d_dampmode)                 | [`angular_damp_mode`](#class_rigidbody2d_property_angular_damp_mode)                 | ``0``             |
-| [`float`](class_float.md)                              | [`angular_velocity`](#class_rigidbody2d_property_angular_velocity)                   | ``0.0``           |
-| [`bool`](class_bool.md)                                | [`can_sleep`](#class_rigidbody2d_property_can_sleep)                                 | ``true``          |
-| [`Vector2`](class_vector2.md)                          | [`center_of_mass`](#class_rigidbody2d_property_center_of_mass)                       | ``Vector2(0, 0)`` |
-| [CenterOfMassMode](#enum_rigidbody2d_centerofmassmode) | [`center_of_mass_mode`](#class_rigidbody2d_property_center_of_mass_mode)             | ``0``             |
-| [`Vector2`](class_vector2.md)                          | [`constant_force`](#class_rigidbody2d_property_constant_force)                       | ``Vector2(0, 0)`` |
-| [`float`](class_float.md)                              | [`constant_torque`](#class_rigidbody2d_property_constant_torque)                     | ``0.0``           |
-| [`bool`](class_bool.md)                                | [`contact_monitor`](#class_rigidbody2d_property_contact_monitor)                     | ``false``         |
-| [CCDMode](#enum_rigidbody2d_ccdmode)                   | [`continuous_cd`](#class_rigidbody2d_property_continuous_cd)                         | ``0``             |
-| [`bool`](class_bool.md)                                | [`custom_integrator`](#class_rigidbody2d_property_custom_integrator)                 | ``false``         |
-| [`bool`](class_bool.md)                                | [`freeze`](#class_rigidbody2d_property_freeze)                                       | ``false``         |
-| [FreezeMode](#enum_rigidbody2d_freezemode)             | [`freeze_mode`](#class_rigidbody2d_property_freeze_mode)                             | ``0``             |
-| [`float`](class_float.md)                              | [`gravity_scale`](#class_rigidbody2d_property_gravity_scale)                         | ``1.0``           |
-| [`float`](class_float.md)                              | [`inertia`](#class_rigidbody2d_property_inertia)                                     | ``0.0``           |
-| [`float`](class_float.md)                              | [`linear_damp`](#class_rigidbody2d_property_linear_damp)                             | ``0.0``           |
-| [DampMode](#enum_rigidbody2d_dampmode)                 | [`linear_damp_mode`](#class_rigidbody2d_property_linear_damp_mode)                   | ``0``             |
-| [`Vector2`](class_vector2.md)                          | [`linear_velocity`](#class_rigidbody2d_property_linear_velocity)                     | ``Vector2(0, 0)`` |
-| [`bool`](class_bool.md)                                | [`lock_rotation`](#class_rigidbody2d_property_lock_rotation)                         | ``false``         |
-| [`float`](class_float.md)                              | [`mass`](#class_rigidbody2d_property_mass)                                           | ``1.0``           |
-| [`int`](class_int.md)                                  | [`max_contacts_reported`](#class_rigidbody2d_property_max_contacts_reported)         | ``0``             |
-| [`PhysicsMaterial`](class_physicsmaterial.md)          | [`physics_material_override`](#class_rigidbody2d_property_physics_material_override) |                   |
-| [`bool`](class_bool.md)                                | [`sleeping`](#class_rigidbody2d_property_sleeping)                                   | ``false``         |
+| [`float`](class_float.md)                              | [`angular_damp`](class_rigidbody2d.md#class_rigidbody2d_property_angular_damp)                           | ``0.0``           |
+| [DampMode](#enum_rigidbody2d_dampmode)                 | [`angular_damp_mode`](class_rigidbody2d.md#class_rigidbody2d_property_angular_damp_mode)                 | ``0``             |
+| [`float`](class_float.md)                              | [`angular_velocity`](class_rigidbody2d.md#class_rigidbody2d_property_angular_velocity)                   | ``0.0``           |
+| [`bool`](class_bool.md)                                | [`can_sleep`](class_rigidbody2d.md#class_rigidbody2d_property_can_sleep)                                 | ``true``          |
+| [`Vector2`](class_vector2.md)                          | [`center_of_mass`](class_rigidbody2d.md#class_rigidbody2d_property_center_of_mass)                       | ``Vector2(0, 0)`` |
+| [CenterOfMassMode](#enum_rigidbody2d_centerofmassmode) | [`center_of_mass_mode`](class_rigidbody2d.md#class_rigidbody2d_property_center_of_mass_mode)             | ``0``             |
+| [`Vector2`](class_vector2.md)                          | [`constant_force`](class_rigidbody2d.md#class_rigidbody2d_property_constant_force)                       | ``Vector2(0, 0)`` |
+| [`float`](class_float.md)                              | [`constant_torque`](class_rigidbody2d.md#class_rigidbody2d_property_constant_torque)                     | ``0.0``           |
+| [`bool`](class_bool.md)                                | [`contact_monitor`](class_rigidbody2d.md#class_rigidbody2d_property_contact_monitor)                     | ``false``         |
+| [CCDMode](#enum_rigidbody2d_ccdmode)                   | [`continuous_cd`](class_rigidbody2d.md#class_rigidbody2d_property_continuous_cd)                         | ``0``             |
+| [`bool`](class_bool.md)                                | [`custom_integrator`](class_rigidbody2d.md#class_rigidbody2d_property_custom_integrator)                 | ``false``         |
+| [`bool`](class_bool.md)                                | [`freeze`](class_rigidbody2d.md#class_rigidbody2d_property_freeze)                                       | ``false``         |
+| [FreezeMode](#enum_rigidbody2d_freezemode)             | [`freeze_mode`](class_rigidbody2d.md#class_rigidbody2d_property_freeze_mode)                             | ``0``             |
+| [`float`](class_float.md)                              | [`gravity_scale`](class_rigidbody2d.md#class_rigidbody2d_property_gravity_scale)                         | ``1.0``           |
+| [`float`](class_float.md)                              | [`inertia`](class_rigidbody2d.md#class_rigidbody2d_property_inertia)                                     | ``0.0``           |
+| [`float`](class_float.md)                              | [`linear_damp`](class_rigidbody2d.md#class_rigidbody2d_property_linear_damp)                             | ``0.0``           |
+| [DampMode](#enum_rigidbody2d_dampmode)                 | [`linear_damp_mode`](class_rigidbody2d.md#class_rigidbody2d_property_linear_damp_mode)                   | ``0``             |
+| [`Vector2`](class_vector2.md)                          | [`linear_velocity`](class_rigidbody2d.md#class_rigidbody2d_property_linear_velocity)                     | ``Vector2(0, 0)`` |
+| [`bool`](class_bool.md)                                | [`lock_rotation`](class_rigidbody2d.md#class_rigidbody2d_property_lock_rotation)                         | ``false``         |
+| [`float`](class_float.md)                              | [`mass`](class_rigidbody2d.md#class_rigidbody2d_property_mass)                                           | ``1.0``           |
+| [`int`](class_int.md)                                  | [`max_contacts_reported`](class_rigidbody2d.md#class_rigidbody2d_property_max_contacts_reported)         | ``0``             |
+| [`PhysicsMaterial`](class_physicsmaterial.md)          | [`physics_material_override`](class_rigidbody2d.md#class_rigidbody2d_property_physics_material_override) |                   |
+| [`bool`](class_bool.md)                                | [`sleeping`](class_rigidbody2d.md#class_rigidbody2d_property_sleeping)                                   | ``false``         |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                              | [`_integrate_forces`](#class_rigidbody2d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState2D`](class_physicsdirectbodystate2d.md) ) virtual[^virtual] |
-| `void`                                              | [`add_constant_central_force`](#class_rigidbody2d_method_add_constant_central_force) ( force: [`Vector2`](class_vector2.md) )                                           |
-| `void`                                              | [`add_constant_force`](#class_rigidbody2d_method_add_constant_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )  |
-| `void`                                              | [`add_constant_torque`](#class_rigidbody2d_method_add_constant_torque) ( torque: [`float`](class_float.md) )                                                            |
-| `void`                                              | [`apply_central_force`](#class_rigidbody2d_method_apply_central_force) ( force: [`Vector2`](class_vector2.md) )                                                         |
-| `void`                                              | [`apply_central_impulse`](#class_rigidbody2d_method_apply_central_impulse) ( impulse: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                   |
-| `void`                                              | [`apply_force`](#class_rigidbody2d_method_apply_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                |
-| `void`                                              | [`apply_impulse`](#class_rigidbody2d_method_apply_impulse) ( impulse: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )          |
-| `void`                                              | [`apply_torque`](#class_rigidbody2d_method_apply_torque) ( torque: [`float`](class_float.md) )                                                                          |
-| `void`                                              | [`apply_torque_impulse`](#class_rigidbody2d_method_apply_torque_impulse) ( torque: [`float`](class_float.md) )                                                          |
-| [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_colliding_bodies`](#class_rigidbody2d_method_get_colliding_bodies) ( ) const[^const]                                                                              |
-| [`int`](class_int.md)                               | [`get_contact_count`](#class_rigidbody2d_method_get_contact_count) ( ) const[^const]                                                                                    |
-| `void`                                              | [`set_axis_velocity`](#class_rigidbody2d_method_set_axis_velocity) ( axis_velocity: [`Vector2`](class_vector2.md) )                                                     |
+| `void`                                              | [`_integrate_forces`](class_rigidbody2d.md#class_rigidbody2d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState2D`](class_physicsdirectbodystate2d.md) ) virtual[^virtual] |
+| `void`                                              | [`add_constant_central_force`](class_rigidbody2d.md#class_rigidbody2d_method_add_constant_central_force) ( force: [`Vector2`](class_vector2.md) )                                           |
+| `void`                                              | [`add_constant_force`](class_rigidbody2d.md#class_rigidbody2d_method_add_constant_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )  |
+| `void`                                              | [`add_constant_torque`](class_rigidbody2d.md#class_rigidbody2d_method_add_constant_torque) ( torque: [`float`](class_float.md) )                                                            |
+| `void`                                              | [`apply_central_force`](class_rigidbody2d.md#class_rigidbody2d_method_apply_central_force) ( force: [`Vector2`](class_vector2.md) )                                                         |
+| `void`                                              | [`apply_central_impulse`](class_rigidbody2d.md#class_rigidbody2d_method_apply_central_impulse) ( impulse: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                   |
+| `void`                                              | [`apply_force`](class_rigidbody2d.md#class_rigidbody2d_method_apply_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                |
+| `void`                                              | [`apply_impulse`](class_rigidbody2d.md#class_rigidbody2d_method_apply_impulse) ( impulse: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )          |
+| `void`                                              | [`apply_torque`](class_rigidbody2d.md#class_rigidbody2d_method_apply_torque) ( torque: [`float`](class_float.md) )                                                                          |
+| `void`                                              | [`apply_torque_impulse`](class_rigidbody2d.md#class_rigidbody2d_method_apply_torque_impulse) ( torque: [`float`](class_float.md) )                                                          |
+| [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_colliding_bodies`](class_rigidbody2d.md#class_rigidbody2d_method_get_colliding_bodies) ( ) const[^const]                                                                              |
+| [`int`](class_int.md)                               | [`get_contact_count`](class_rigidbody2d.md#class_rigidbody2d_method_get_contact_count) ( ) const[^const]                                                                                    |
+| `void`                                              | [`set_axis_velocity`](class_rigidbody2d.md#class_rigidbody2d_method_set_axis_velocity) ( axis_velocity: [`Vector2`](class_vector2.md) )                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -81,7 +81,7 @@ If you need to override the default physics behavior, you can write a custom for
 
 **body_entered** ( body: [`Node`](class_node.md) ) <div id="class_rigidbody2d_signal_body_entered"></div>
 
-Emitted when a collision with another [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md) occurs. Requires [`contact_monitor`](#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions. [`TileMap`](class_tilemap.md) s are detected if the [`TileSet`](class_tileset.md) has Collision [`Shape2D`](class_shape2d.md) s.
+Emitted when a collision with another [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md) occurs. Requires [`contact_monitor`](class_rigidbody2d.md#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](class_rigidbody2d.md#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions. [`TileMap`](class_tilemap.md) s are detected if the [`TileSet`](class_tileset.md) has Collision [`Shape2D`](class_shape2d.md) s.
 
  `body` the [`Node`](class_node.md), if it exists in the tree, of the other [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md).
 
@@ -93,7 +93,7 @@ Emitted when a collision with another [`PhysicsBody2D`](class_physicsbody2d.md) 
 
 **body_exited** ( body: [`Node`](class_node.md) ) <div id="class_rigidbody2d_signal_body_exited"></div>
 
-Emitted when the collision with another [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md) ends. Requires [`contact_monitor`](#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions. [`TileMap`](class_tilemap.md) s are detected if the [`TileSet`](class_tileset.md) has Collision [`Shape2D`](class_shape2d.md) s.
+Emitted when the collision with another [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md) ends. Requires [`contact_monitor`](class_rigidbody2d.md#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](class_rigidbody2d.md#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions. [`TileMap`](class_tilemap.md) s are detected if the [`TileSet`](class_tileset.md) has Collision [`Shape2D`](class_shape2d.md) s.
 
  `body` the [`Node`](class_node.md), if it exists in the tree, of the other [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md).
 
@@ -105,7 +105,7 @@ Emitted when the collision with another [`PhysicsBody2D`](class_physicsbody2d.md
 
 **body_shape_entered** ( body_rid: [`RID`](class_rid.md), body: [`Node`](class_node.md), body_shape_index: [`int`](class_int.md), local_shape_index: [`int`](class_int.md) ) <div id="class_rigidbody2d_signal_body_shape_entered"></div>
 
-Emitted when one of this RigidBody2D's [`Shape2D`](class_shape2d.md) s collides with another [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md)'s [`Shape2D`](class_shape2d.md) s. Requires [`contact_monitor`](#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions. [`TileMap`](class_tilemap.md) s are detected if the [`TileSet`](class_tileset.md) has Collision [`Shape2D`](class_shape2d.md) s.
+Emitted when one of this RigidBody2D's [`Shape2D`](class_shape2d.md) s collides with another [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md)'s [`Shape2D`](class_shape2d.md) s. Requires [`contact_monitor`](class_rigidbody2d.md#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](class_rigidbody2d.md#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions. [`TileMap`](class_tilemap.md) s are detected if the [`TileSet`](class_tileset.md) has Collision [`Shape2D`](class_shape2d.md) s.
 
  `body_rid` the [`RID`](class_rid.md) of the other [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileSet`](class_tileset.md)'s [`CollisionObject2D`](class_collisionobject2d.md) used by the [`PhysicsServer2D`](class_physicsserver2d.md).
 
@@ -123,7 +123,7 @@ Emitted when one of this RigidBody2D's [`Shape2D`](class_shape2d.md) s collides 
 
 **body_shape_exited** ( body_rid: [`RID`](class_rid.md), body: [`Node`](class_node.md), body_shape_index: [`int`](class_int.md), local_shape_index: [`int`](class_int.md) ) <div id="class_rigidbody2d_signal_body_shape_exited"></div>
 
-Emitted when the collision between one of this RigidBody2D's [`Shape2D`](class_shape2d.md) s and another [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md)'s [`Shape2D`](class_shape2d.md) s ends. Requires [`contact_monitor`](#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions. [`TileMap`](class_tilemap.md) s are detected if the [`TileSet`](class_tileset.md) has Collision [`Shape2D`](class_shape2d.md) s.
+Emitted when the collision between one of this RigidBody2D's [`Shape2D`](class_shape2d.md) s and another [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileMap`](class_tilemap.md)'s [`Shape2D`](class_shape2d.md) s ends. Requires [`contact_monitor`](class_rigidbody2d.md#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](class_rigidbody2d.md#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions. [`TileMap`](class_tilemap.md) s are detected if the [`TileSet`](class_tileset.md) has Collision [`Shape2D`](class_shape2d.md) s.
 
  `body_rid` the [`RID`](class_rid.md) of the other [`PhysicsBody2D`](class_physicsbody2d.md) or [`TileSet`](class_tileset.md)'s [`CollisionObject2D`](class_collisionobject2d.md) used by the [`PhysicsServer2D`](class_physicsserver2d.md).
 
@@ -143,7 +143,7 @@ Emitted when the collision between one of this RigidBody2D's [`Shape2D`](class_s
 
 Emitted when the physics engine changes the body's sleeping state.
 
- **Note:** Changing the value [`sleeping`](#class_rigidbody2d_property_sleeping) will not trigger this signal. It is only emitted if the sleeping state is changed by the physics engine or `emit_signal("sleeping_state_changed")` is used.
+ **Note:** Changing the value [`sleeping`](class_rigidbody2d.md#class_rigidbody2d_property_sleeping) will not trigger this signal. It is only emitted if the sleeping state is changed by the physics engine or `emit_signal("sleeping_state_changed")` is used.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -165,7 +165,7 @@ Static body freeze mode (default). The body is not affected by gravity and force
 
 [FreezeMode](#enum_rigidbody2d_freezemode) **FREEZE_MODE_KINEMATIC** = ``1``
 
-Kinematic body freeze mode. Similar to [`FREEZE_MODE_STATIC`](#class_rigidbody2d_constant_freeze_mode_static), but collides with other bodies along its path when moved. Useful for a frozen body that needs to be animated.
+Kinematic body freeze mode. Similar to [`FREEZE_MODE_STATIC`](class_rigidbody2d.md#class_rigidbody2d_constant_freeze_mode_static), but collides with other bodies along its path when moved. Useful for a frozen body that needs to be animated.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -185,7 +185,7 @@ In this mode, the body's center of mass is calculated automatically based on its
 
 [CenterOfMassMode](#enum_rigidbody2d_centerofmassmode) **CENTER_OF_MASS_MODE_CUSTOM** = ``1``
 
-In this mode, the body's center of mass is set through [`center_of_mass`](#class_rigidbody2d_property_center_of_mass). Defaults to the body's origin position.
+In this mode, the body's center of mass is set through [`center_of_mass`](class_rigidbody2d.md#class_rigidbody2d_property_center_of_mass). Defaults to the body's origin position.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -246,9 +246,9 @@ Continuous collision detection enabled using shapecasting. This is the slowest C
 - `void` **set_angular_damp** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_angular_damp** ( )
 
-Damps the body's rotation. By default, the body will use the **Default Angular Damp** in **Project > Project Settings > Physics > 2d** or any value override set by an [`Area2D`](class_area2d.md) the body is in. Depending on [`angular_damp_mode`](#class_rigidbody2d_property_angular_damp_mode), you can set [`angular_damp`](#class_rigidbody2d_property_angular_damp) to be added to or to replace the body's damping value.
+Damps the body's rotation. By default, the body will use the **Default Angular Damp** in **Project > Project Settings > Physics > 2d** or any value override set by an [`Area2D`](class_area2d.md) the body is in. Depending on [`angular_damp_mode`](class_rigidbody2d.md#class_rigidbody2d_property_angular_damp_mode), you can set [`angular_damp`](class_rigidbody2d.md#class_rigidbody2d_property_angular_damp) to be added to or to replace the body's damping value.
 
-See [`ProjectSettings.physics/2d/default_angular_damp`](#class_projectsettings_property_physics/2d/default_angular_damp) for more details about damping.
+See [`ProjectSettings.physics/2d/default_angular_damp`](class_projectsettings.md#class_projectsettings_property_physics/2d/default_angular_damp) for more details about damping.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -261,7 +261,7 @@ See [`ProjectSettings.physics/2d/default_angular_damp`](#class_projectsettings_p
 - `void` **set_angular_damp_mode** ( value: [DampMode](#enum_rigidbody2d_dampmode) )
 - [DampMode](#enum_rigidbody2d_dampmode) **get_angular_damp_mode** ( )
 
-Defines how [`angular_damp`](#class_rigidbody2d_property_angular_damp) is applied. See [DampMode](#enum_rigidbody2d_dampmode) for possible values.
+Defines how [`angular_damp`](class_rigidbody2d.md#class_rigidbody2d_property_angular_damp) is applied. See [DampMode](#enum_rigidbody2d_dampmode) for possible values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -287,7 +287,7 @@ The body's rotational velocity in *radians* per second.
 - `void` **set_can_sleep** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_able_to_sleep** ( )
 
-If `true`, the body can enter sleep mode when there is no movement. See [`sleeping`](#class_rigidbody2d_property_sleeping).
+If `true`, the body can enter sleep mode when there is no movement. See [`sleeping`](class_rigidbody2d.md#class_rigidbody2d_property_sleeping).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -300,9 +300,9 @@ If `true`, the body can enter sleep mode when there is no movement. See [`sleepi
 - `void` **set_center_of_mass** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_center_of_mass** ( )
 
-The body's custom center of mass, relative to the body's origin position, when [`center_of_mass_mode`](#class_rigidbody2d_property_center_of_mass_mode) is set to [`CENTER_OF_MASS_MODE_CUSTOM`](#class_rigidbody2d_constant_center_of_mass_mode_custom). This is the balanced point of the body, where applied forces only cause linear acceleration. Applying forces outside of the center of mass causes angular acceleration.
+The body's custom center of mass, relative to the body's origin position, when [`center_of_mass_mode`](class_rigidbody2d.md#class_rigidbody2d_property_center_of_mass_mode) is set to [`CENTER_OF_MASS_MODE_CUSTOM`](class_rigidbody2d.md#class_rigidbody2d_constant_center_of_mass_mode_custom). This is the balanced point of the body, where applied forces only cause linear acceleration. Applying forces outside of the center of mass causes angular acceleration.
 
-When [`center_of_mass_mode`](#class_rigidbody2d_property_center_of_mass_mode) is set to [`CENTER_OF_MASS_MODE_AUTO`](#class_rigidbody2d_constant_center_of_mass_mode_auto) (default value), the center of mass is automatically computed.
+When [`center_of_mass_mode`](class_rigidbody2d.md#class_rigidbody2d_property_center_of_mass_mode) is set to [`CENTER_OF_MASS_MODE_AUTO`](class_rigidbody2d.md#class_rigidbody2d_constant_center_of_mass_mode_auto) (default value), the center of mass is automatically computed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -330,7 +330,7 @@ Defines the way the body's center of mass is set. See [CenterOfMassMode](#enum_r
 
 The body's total constant positional forces applied during each physics update.
 
-See [`add_constant_force`](#class_rigidbody2d_method_add_constant_force) and [`add_constant_central_force`](#class_rigidbody2d_method_add_constant_central_force).
+See [`add_constant_force`](class_rigidbody2d.md#class_rigidbody2d_method_add_constant_force) and [`add_constant_central_force`](class_rigidbody2d.md#class_rigidbody2d_method_add_constant_central_force).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -345,7 +345,7 @@ See [`add_constant_force`](#class_rigidbody2d_method_add_constant_force) and [`a
 
 The body's total constant rotational forces applied during each physics update.
 
-See [`add_constant_torque`](#class_rigidbody2d_method_add_constant_torque).
+See [`add_constant_torque`](class_rigidbody2d.md#class_rigidbody2d_method_add_constant_torque).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -360,7 +360,7 @@ See [`add_constant_torque`](#class_rigidbody2d_method_add_constant_torque).
 
 If `true`, the RigidBody2D will emit signals when it collides with another body.
 
- **Note:** By default the maximum contacts reported is set to 0, meaning nothing will be recorded, see [`max_contacts_reported`](#class_rigidbody2d_property_max_contacts_reported).
+ **Note:** By default the maximum contacts reported is set to 0, meaning nothing will be recorded, see [`max_contacts_reported`](class_rigidbody2d.md#class_rigidbody2d_property_max_contacts_reported).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -388,9 +388,9 @@ Continuous collision detection tries to predict where a moving body will collide
 - `void` **set_use_custom_integrator** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_custom_integrator** ( )
 
-If `true`, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the [`_integrate_forces`](#class_rigidbody2d_private_method__integrate_forces) method, if that virtual method is overridden.
+If `true`, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the [`_integrate_forces`](class_rigidbody2d.md#class_rigidbody2d_private_method__integrate_forces) method, if that virtual method is overridden.
 
-Setting this property will call the method [`PhysicsServer2D.body_set_omit_force_integration`](#class_physicsserver2d_method_body_set_omit_force_integration) internally.
+Setting this property will call the method [`PhysicsServer2D.body_set_omit_force_integration`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_omit_force_integration) internally.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -405,7 +405,7 @@ Setting this property will call the method [`PhysicsServer2D.body_set_omit_force
 
 If `true`, the body is frozen. Gravity and forces are not applied anymore.
 
-See [`freeze_mode`](#class_rigidbody2d_property_freeze_mode) to set the body's behavior when frozen.
+See [`freeze_mode`](class_rigidbody2d.md#class_rigidbody2d_property_freeze_mode) to set the body's behavior when frozen.
 
 For a body that is always frozen, use [`StaticBody2D`](class_staticbody2d.md) or [`AnimatableBody2D`](class_animatablebody2d.md) instead.
 
@@ -420,7 +420,7 @@ For a body that is always frozen, use [`StaticBody2D`](class_staticbody2d.md) or
 - `void` **set_freeze_mode** ( value: [FreezeMode](#enum_rigidbody2d_freezemode) )
 - [FreezeMode](#enum_rigidbody2d_freezemode) **get_freeze_mode** ( )
 
-The body's freeze mode. Can be used to set the body's behavior when [`freeze`](#class_rigidbody2d_property_freeze) is enabled. See [FreezeMode](#enum_rigidbody2d_freezemode) for possible values.
+The body's freeze mode. Can be used to set the body's behavior when [`freeze`](class_rigidbody2d.md#class_rigidbody2d_property_freeze) is enabled. See [FreezeMode](#enum_rigidbody2d_freezemode) for possible values.
 
 For a body that is always frozen, use [`StaticBody2D`](class_staticbody2d.md) or [`AnimatableBody2D`](class_animatablebody2d.md) instead.
 
@@ -496,9 +496,9 @@ If set to `0`, inertia is automatically computed (default value).
 - `void` **set_linear_damp** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_linear_damp** ( )
 
-Damps the body's movement. By default, the body will use the **Default Linear Damp** in **Project > Project Settings > Physics > 2d** or any value override set by an [`Area2D`](class_area2d.md) the body is in. Depending on [`linear_damp_mode`](#class_rigidbody2d_property_linear_damp_mode), you can set [`linear_damp`](#class_rigidbody2d_property_linear_damp) to be added to or to replace the body's damping value.
+Damps the body's movement. By default, the body will use the **Default Linear Damp** in **Project > Project Settings > Physics > 2d** or any value override set by an [`Area2D`](class_area2d.md) the body is in. Depending on [`linear_damp_mode`](class_rigidbody2d.md#class_rigidbody2d_property_linear_damp_mode), you can set [`linear_damp`](class_rigidbody2d.md#class_rigidbody2d_property_linear_damp) to be added to or to replace the body's damping value.
 
-See [`ProjectSettings.physics/2d/default_linear_damp`](#class_projectsettings_property_physics/2d/default_linear_damp) for more details about damping.
+See [`ProjectSettings.physics/2d/default_linear_damp`](class_projectsettings.md#class_projectsettings_property_physics/2d/default_linear_damp) for more details about damping.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -511,7 +511,7 @@ See [`ProjectSettings.physics/2d/default_linear_damp`](#class_projectsettings_pr
 - `void` **set_linear_damp_mode** ( value: [DampMode](#enum_rigidbody2d_dampmode) )
 - [DampMode](#enum_rigidbody2d_dampmode) **get_linear_damp_mode** ( )
 
-Defines how [`linear_damp`](#class_rigidbody2d_property_linear_damp) is applied. See [DampMode](#enum_rigidbody2d_dampmode) for possible values.
+Defines how [`linear_damp`](class_rigidbody2d.md#class_rigidbody2d_property_linear_damp) is applied. See [DampMode](#enum_rigidbody2d_dampmode) for possible values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -524,7 +524,7 @@ Defines how [`linear_damp`](#class_rigidbody2d_property_linear_damp) is applied.
 - `void` **set_linear_velocity** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_linear_velocity** ( )
 
-The body's linear velocity in pixels per second. Can be used sporadically, but **don't set this every frame**, because physics may run in another thread and runs at a different granularity. Use [`_integrate_forces`](#class_rigidbody2d_private_method__integrate_forces) as your process loop for precise control of the body state.
+The body's linear velocity in pixels per second. Can be used sporadically, but **don't set this every frame**, because physics may run in another thread and runs at a different granularity. Use [`_integrate_forces`](class_rigidbody2d.md#class_rigidbody2d_private_method__integrate_forces) as your process loop for precise control of the body state.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -563,7 +563,7 @@ The body's mass.
 - `void` **set_max_contacts_reported** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_max_contacts_reported** ( )
 
-The maximum number of contacts that will be recorded. Requires a value greater than 0 and [`contact_monitor`](#class_rigidbody2d_property_contact_monitor) to be set to `true` to start to register contacts. Use [`get_contact_count`](#class_rigidbody2d_method_get_contact_count) to retrieve the count or [`get_colliding_bodies`](#class_rigidbody2d_method_get_colliding_bodies) to retrieve bodies that have been collided with.
+The maximum number of contacts that will be recorded. Requires a value greater than 0 and [`contact_monitor`](class_rigidbody2d.md#class_rigidbody2d_property_contact_monitor) to be set to `true` to start to register contacts. Use [`get_contact_count`](class_rigidbody2d.md#class_rigidbody2d_method_get_contact_count) to retrieve the count or [`get_colliding_bodies`](class_rigidbody2d.md#class_rigidbody2d_method_get_colliding_bodies) to retrieve bodies that have been collided with.
 
  **Note:** The number of contacts is different from the number of collisions. Collisions between parallel edges will result in two contacts (one at each end), and collisions between parallel faces will result in four contacts (one at each corner).
 
@@ -593,7 +593,7 @@ If a material is assigned to this property, it will be used instead of any other
 - `void` **set_sleeping** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_sleeping** ( )
 
-If `true`, the body will not move and will not calculate forces until woken up by another body through, for example, a collision, or by using the [`apply_impulse`](#class_rigidbody2d_method_apply_impulse) or [`apply_force`](#class_rigidbody2d_method_apply_force) methods.
+If `true`, the body will not move and will not calculate forces until woken up by another body through, for example, a collision, or by using the [`apply_impulse`](class_rigidbody2d.md#class_rigidbody2d_method_apply_impulse) or [`apply_force`](class_rigidbody2d.md#class_rigidbody2d_method_apply_force) methods.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -605,7 +605,7 @@ If `true`, the body will not move and will not calculate forces until woken up b
 
 `void` **_integrate_forces** ( state: [`PhysicsDirectBodyState2D`](class_physicsdirectbodystate2d.md) ) virtual[^virtual]<div id="class_rigidbody2d_private_method__integrate_forces"></div>
 
-Called during physics processing, allowing you to read and safely modify the simulation state for the object. By default, it is called before the standard force integration, but the [`custom_integrator`](#class_rigidbody2d_property_custom_integrator) property allows you to disable the standard force integration and do fully custom force integration for a body.
+Called during physics processing, allowing you to read and safely modify the simulation state for the object. By default, it is called before the standard force integration, but the [`custom_integrator`](class_rigidbody2d.md#class_rigidbody2d_property_custom_integrator) property allows you to disable the standard force integration and do fully custom force integration for a body.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -617,7 +617,7 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 Adds a constant directional force without affecting rotation that keeps being applied over time until cleared with `constant_force = Vector2(0, 0)`.
 
-This is equivalent to using [`add_constant_force`](#class_rigidbody2d_method_add_constant_force) at the body's center of mass.
+This is equivalent to using [`add_constant_force`](class_rigidbody2d.md#class_rigidbody2d_method_add_constant_force) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -651,7 +651,7 @@ Adds a constant rotational force without affecting position that keeps being app
 
 Applies a directional force without affecting rotation. A force is time dependent and meant to be applied every physics update.
 
-This is equivalent to using [`apply_force`](#class_rigidbody2d_method_apply_force) at the body's center of mass.
+This is equivalent to using [`apply_force`](class_rigidbody2d.md#class_rigidbody2d_method_apply_force) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -665,7 +665,7 @@ Applies a directional impulse without affecting rotation.
 
 An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-This is equivalent to using [`apply_impulse`](#class_rigidbody2d_method_apply_impulse) at the body's center of mass.
+This is equivalent to using [`apply_impulse`](class_rigidbody2d.md#class_rigidbody2d_method_apply_impulse) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -703,7 +703,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 Applies a rotational force without affecting position. A force is time dependent and meant to be applied every physics update.
 
- **Note:** [`inertia`](#class_rigidbody2d_property_inertia) is required for this to work. To have [`inertia`](#class_rigidbody2d_property_inertia), an active [`CollisionShape2D`](class_collisionshape2d.md) must be a child of the node, or you can manually set [`inertia`](#class_rigidbody2d_property_inertia).
+ **Note:** [`inertia`](class_rigidbody2d.md#class_rigidbody2d_property_inertia) is required for this to work. To have [`inertia`](class_rigidbody2d.md#class_rigidbody2d_property_inertia), an active [`CollisionShape2D`](class_collisionshape2d.md) must be a child of the node, or you can manually set [`inertia`](class_rigidbody2d.md#class_rigidbody2d_property_inertia).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -717,7 +717,7 @@ Applies a rotational impulse to the body without affecting the position.
 
 An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
- **Note:** [`inertia`](#class_rigidbody2d_property_inertia) is required for this to work. To have [`inertia`](#class_rigidbody2d_property_inertia), an active [`CollisionShape2D`](class_collisionshape2d.md) must be a child of the node, or you can manually set [`inertia`](#class_rigidbody2d_property_inertia).
+ **Note:** [`inertia`](class_rigidbody2d.md#class_rigidbody2d_property_inertia) is required for this to work. To have [`inertia`](class_rigidbody2d.md#class_rigidbody2d_property_inertia), an active [`CollisionShape2D`](class_collisionshape2d.md) must be a child of the node, or you can manually set [`inertia`](class_rigidbody2d.md#class_rigidbody2d_property_inertia).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -727,7 +727,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 [Array](class_array.md) [`Node2D`](class_node2d.md) **get_colliding_bodies** ( ) const[^const]<div id="class_rigidbody2d_method_get_colliding_bodies"></div>
 
-Returns a list of the bodies colliding with this one. Requires [`contact_monitor`](#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions.
+Returns a list of the bodies colliding with this one. Requires [`contact_monitor`](class_rigidbody2d.md#class_rigidbody2d_property_contact_monitor) to be set to `true` and [`max_contacts_reported`](class_rigidbody2d.md#class_rigidbody2d_property_max_contacts_reported) to be set high enough to detect all the collisions.
 
  **Note:** The result of this test is not immediate after moving objects. For performance, list of collisions is updated once per frame and before the physics step. Consider using signals instead.
 
@@ -739,9 +739,9 @@ Returns a list of the bodies colliding with this one. Requires [`contact_monitor
 
 [`int`](class_int.md) **get_contact_count** ( ) const[^const]<div id="class_rigidbody2d_method_get_contact_count"></div>
 
-Returns the number of contacts this body has with other bodies. By default, this returns 0 unless bodies are configured to monitor contacts (see [`contact_monitor`](#class_rigidbody2d_property_contact_monitor)).
+Returns the number of contacts this body has with other bodies. By default, this returns 0 unless bodies are configured to monitor contacts (see [`contact_monitor`](class_rigidbody2d.md#class_rigidbody2d_property_contact_monitor)).
 
- **Note:** To retrieve the colliding bodies, use [`get_colliding_bodies`](#class_rigidbody2d_method_get_colliding_bodies).
+ **Note:** To retrieve the colliding bodies, use [`get_colliding_bodies`](class_rigidbody2d.md#class_rigidbody2d_method_get_colliding_bodies).
 
 <!-- rst-class:: classref-item-separator -->
 

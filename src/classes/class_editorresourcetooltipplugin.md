@@ -15,15 +15,15 @@ A plugin that advanced tooltip for its handled resource type.
 
 Resource tooltip plugins are used by [`FileSystemDock`](class_filesystemdock.md) to generate customized tooltips for specific resources. E.g. tooltip for a [`Texture2D`](class_texture2d.md) displays a bigger preview and the texture's dimensions.
 
-A plugin must be first registered with [`FileSystemDock.add_resource_tooltip_plugin`](#class_filesystemdock_method_add_resource_tooltip_plugin). When the user hovers a resource in filesystem dock which is handled by the plugin, [`_make_tooltip_for_path`](#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) is called to create the tooltip. It works similarly to [`Control._make_custom_tooltip`](#class_control_private_method__make_custom_tooltip).
+A plugin must be first registered with [`FileSystemDock.add_resource_tooltip_plugin`](class_filesystemdock.md#class_filesystemdock_method_add_resource_tooltip_plugin). When the user hovers a resource in filesystem dock which is handled by the plugin, [`_make_tooltip_for_path`](class_editorresourcetooltipplugin.md#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) is called to create the tooltip. It works similarly to [`Control._make_custom_tooltip`](class_control.md#class_control_private_method__make_custom_tooltip).
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)       | [`_handles`](#class_editorresourcetooltipplugin_private_method__handles) ( type: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                                 |
-| [`Control`](class_control.md) | [`_make_tooltip_for_path`](#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) ( path: [`String`](class_string.md), metadata: [`Dictionary`](class_dictionary.md), base: [`Control`](class_control.md) ) virtual[^virtual] const[^const] |
-| `void`                        | [`request_thumbnail`](#class_editorresourcetooltipplugin_method_request_thumbnail) ( path: [`String`](class_string.md), control: [`TextureRect`](class_texturerect.md) ) const[^const]                                                                         |
+| [`bool`](class_bool.md)       | [`_handles`](class_editorresourcetooltipplugin.md#class_editorresourcetooltipplugin_private_method__handles) ( type: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                                 |
+| [`Control`](class_control.md) | [`_make_tooltip_for_path`](class_editorresourcetooltipplugin.md#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) ( path: [`String`](class_string.md), metadata: [`Dictionary`](class_dictionary.md), base: [`Control`](class_control.md) ) virtual[^virtual] const[^const] |
+| `void`                        | [`request_thumbnail`](class_editorresourcetooltipplugin.md#class_editorresourcetooltipplugin_method_request_thumbnail) ( path: [`String`](class_string.md), control: [`TextureRect`](class_texturerect.md) ) const[^const]                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -47,13 +47,13 @@ Return `true` if the plugin is going to handle the given [`Resource`](class_reso
 
 Create and return a tooltip that will be displayed when the user hovers a resource under the given `path` in filesystem dock.
 
-The `metadata` dictionary is provided by preview generator (see [`EditorResourcePreviewGenerator._generate`](#class_editorresourcepreviewgenerator_private_method__generate)).
+The `metadata` dictionary is provided by preview generator (see [`EditorResourcePreviewGenerator._generate`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate)).
 
  `base` is the base default tooltip, which is a [`VBoxContainer`](class_vboxcontainer.md) with a file name, type and size labels. If another plugin handled the same file type, `base` will be output from the previous plugin. For best result, make sure the base tooltip is part of the returned [`Control`](class_control.md).
 
- **Note:** It's unadvised to use [`ResourceLoader.load`](#class_resourceloader_method_load), especially with heavy resources like models or textures, because it will make the editor unresponsive when creating the tooltip. You can use [`request_thumbnail`](#class_editorresourcetooltipplugin_method_request_thumbnail) if you want to display a preview in your tooltip.
+ **Note:** It's unadvised to use [`ResourceLoader.load`](class_resourceloader.md#class_resourceloader_method_load), especially with heavy resources like models or textures, because it will make the editor unresponsive when creating the tooltip. You can use [`request_thumbnail`](class_editorresourcetooltipplugin.md#class_editorresourcetooltipplugin_method_request_thumbnail) if you want to display a preview in your tooltip.
 
- **Note:** If you decide to discard the `base`, make sure to call [`Node.queue_free`](#class_node_method_queue_free), because it's not freed automatically.
+ **Note:** If you decide to discard the `base`, make sure to call [`Node.queue_free`](class_node.md#class_node_method_queue_free), because it's not freed automatically.
 
 ```
 

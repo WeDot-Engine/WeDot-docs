@@ -19,16 +19,16 @@ WAV is an uncompressed format, which can provide higher quality compared to Ogg 
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)     | [`compress/mode`](#class_resourceimporterwav_property_compress/mode)         | ``0``     |
-| [`int`](class_int.md)     | [`edit/loop_begin`](#class_resourceimporterwav_property_edit/loop_begin)     | ``0``     |
-| [`int`](class_int.md)     | [`edit/loop_end`](#class_resourceimporterwav_property_edit/loop_end)         | ``-1``    |
-| [`int`](class_int.md)     | [`edit/loop_mode`](#class_resourceimporterwav_property_edit/loop_mode)       | ``0``     |
-| [`bool`](class_bool.md)   | [`edit/normalize`](#class_resourceimporterwav_property_edit/normalize)       | ``false`` |
-| [`bool`](class_bool.md)   | [`edit/trim`](#class_resourceimporterwav_property_edit/trim)                 | ``false`` |
-| [`bool`](class_bool.md)   | [`force/8_bit`](#class_resourceimporterwav_property_force/8_bit)             | ``false`` |
-| [`bool`](class_bool.md)   | [`force/max_rate`](#class_resourceimporterwav_property_force/max_rate)       | ``false`` |
-| [`float`](class_float.md) | [`force/max_rate_hz`](#class_resourceimporterwav_property_force/max_rate_hz) | ``44100`` |
-| [`bool`](class_bool.md)   | [`force/mono`](#class_resourceimporterwav_property_force/mono)               | ``false`` |
+| [`int`](class_int.md)     | [`compress/mode`](class_resourceimporterwav.md#class_resourceimporterwav_property_compress/mode)         | ``0``     |
+| [`int`](class_int.md)     | [`edit/loop_begin`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_begin)     | ``0``     |
+| [`int`](class_int.md)     | [`edit/loop_end`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_end)         | ``-1``    |
+| [`int`](class_int.md)     | [`edit/loop_mode`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_mode)       | ``0``     |
+| [`bool`](class_bool.md)   | [`edit/normalize`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/normalize)       | ``false`` |
+| [`bool`](class_bool.md)   | [`edit/trim`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/trim)                 | ``false`` |
+| [`bool`](class_bool.md)   | [`force/8_bit`](class_resourceimporterwav.md#class_resourceimporterwav_property_force/8_bit)             | ``false`` |
+| [`bool`](class_bool.md)   | [`force/max_rate`](class_resourceimporterwav.md#class_resourceimporterwav_property_force/max_rate)       | ``false`` |
+| [`float`](class_float.md) | [`force/max_rate_hz`](class_resourceimporterwav.md#class_resourceimporterwav_property_force/max_rate_hz) | ``44100`` |
+| [`bool`](class_bool.md)   | [`force/mono`](class_resourceimporterwav.md#class_resourceimporterwav_property_force/mono)               | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ The compression mode to use on import.
 
 [`int`](class_int.md) **edit/loop_begin** = ``0`` <div id="class_resourceimporterwav_property_edit/loop_begin"></div>
 
-The begin loop point to use when [`edit/loop_mode`](#class_resourceimporterwav_property_edit/loop_mode) is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file.
+The begin loop point to use when [`edit/loop_mode`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_mode) is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -66,7 +66,7 @@ The begin loop point to use when [`edit/loop_mode`](#class_resourceimporterwav_p
 
 [`int`](class_int.md) **edit/loop_end** = ``-1`` <div id="class_resourceimporterwav_property_edit/loop_end"></div>
 
-The end loop point to use when [`edit/loop_mode`](#class_resourceimporterwav_property_edit/loop_mode) is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file. A value of `-1` uses the end of the audio file as the end loop point.
+The end loop point to use when [`edit/loop_mode`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_mode) is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file. A value of `-1` uses the end of the audio file as the end loop point.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -86,7 +86,7 @@ Controls how audio should loop. This is automatically read from the WAV metadata
 
  **Backward:** Play audio in reverse and loop back to the end when done playing.
 
- **Note:** In [`AudioStreamPlayer`](class_audiostreamplayer.md), the [`AudioStreamPlayer.finished`](#class_audiostreamplayer_signal_finished) signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+ **Note:** In [`AudioStreamPlayer`](class_audiostreamplayer.md), the [`AudioStreamPlayer.finished`](class_audiostreamplayer.md#class_audiostreamplayer_signal_finished) signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -106,7 +106,7 @@ If `true`, normalize the audio volume so that its peak volume is equal to 0 dB. 
 
 [`bool`](class_bool.md) **edit/trim** = ``false`` <div id="class_resourceimporterwav_property_edit/trim"></div>
 
-If `true`, automatically trim the beginning and end of the audio if it's lower than -50 dB after normalization (see [`edit/normalize`](#class_resourceimporterwav_property_edit/normalize)). This prevents having files with silence at the beginning or end, which increases their size unnecessarily and adds latency to the moment they are played back. A fade-in/fade-out period of 500 samples is also used during trimming to avoid audible pops.
+If `true`, automatically trim the beginning and end of the audio if it's lower than -50 dB after normalization (see [`edit/normalize`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/normalize)). This prevents having files with silence at the beginning or end, which increases their size unnecessarily and adds latency to the moment they are played back. A fade-in/fade-out period of 500 samples is also used during trimming to avoid audible pops.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -128,7 +128,7 @@ Enabling this is generally not recommended, as 8-bit quantization decreases audi
 
 [`bool`](class_bool.md) **force/max_rate** = ``false`` <div id="class_resourceimporterwav_property_force/max_rate"></div>
 
-If set to a value greater than `0`, forces the audio's sample rate to be reduced to a value lower than or equal to the value specified in [`force/max_rate_hz`](#class_resourceimporterwav_property_force/max_rate_hz).
+If set to a value greater than `0`, forces the audio's sample rate to be reduced to a value lower than or equal to the value specified in [`force/max_rate_hz`](class_resourceimporterwav.md#class_resourceimporterwav_property_force/max_rate_hz).
 
 This can decrease file size noticeably on certain sounds, without impacting quality depending on the actual sound's contents. See [*Best practices*](../tutorials/assets_pipeline/importing_audio_samples.md#doc-importing-audio-samples-best-practices) for more information.
 
@@ -140,7 +140,7 @@ This can decrease file size noticeably on certain sounds, without impacting qual
 
 [`float`](class_float.md) **force/max_rate_hz** = ``44100`` <div id="class_resourceimporterwav_property_force/max_rate_hz"></div>
 
-The frequency to limit the imported audio sample to (in Hz). Only effective if [`force/max_rate`](#class_resourceimporterwav_property_force/max_rate) is `true`.
+The frequency to limit the imported audio sample to (in Hz). Only effective if [`force/max_rate`](class_resourceimporterwav.md#class_resourceimporterwav_property_force/max_rate) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 

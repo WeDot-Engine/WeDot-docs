@@ -11,13 +11,13 @@ A 2D axis-aligned bounding box using floating-point coordinates.
 
 ## 描述
 
-The **Rect2** built-in [`Variant`](class_variant.md) type represents an axis-aligned rectangle in a 2D space. It is defined by its [`position`](#class_rect2_property_position) and [`size`](#class_rect2_property_size), which are [`Vector2`](class_vector2.md). It is frequently used for fast overlap tests (see [`intersects`](#class_rect2_method_intersects)). Although **Rect2** itself is axis-aligned, it can be combined with [`Transform2D`](class_transform2d.md) to represent a rotated or skewed rectangle.
+The **Rect2** built-in [`Variant`](class_variant.md) type represents an axis-aligned rectangle in a 2D space. It is defined by its [`position`](class_rect2.md#class_rect2_property_position) and [`size`](class_rect2.md#class_rect2_property_size), which are [`Vector2`](class_vector2.md). It is frequently used for fast overlap tests (see [`intersects`](class_rect2.md#class_rect2_method_intersects)). Although **Rect2** itself is axis-aligned, it can be combined with [`Transform2D`](class_transform2d.md) to represent a rotated or skewed rectangle.
 
 For integer coordinates, use [`Rect2i`](class_rect2i.md). The 3D equivalent to **Rect2** is [`AABB`](class_aabb.md).
 
- **Note:** Negative values for [`size`](#class_rect2_property_size) are not supported. With negative size, most **Rect2** methods do not work correctly. Use [`abs`](#class_rect2_method_abs) to get an equivalent **Rect2** with a non-negative size.
+ **Note:** Negative values for [`size`](class_rect2.md#class_rect2_property_size) are not supported. With negative size, most **Rect2** methods do not work correctly. Use [`abs`](class_rect2.md#class_rect2_method_abs) to get an equivalent **Rect2** with a non-negative size.
 
- **Note:** In a boolean context, a **Rect2** evaluates to `false` if both [`position`](#class_rect2_property_position) and [`size`](#class_rect2_property_size) are zero (equal to [`Vector2.ZERO`](#class_vector2_constant_zero)). Otherwise, it always evaluates to `true`.
+ **Note:** In a boolean context, a **Rect2** evaluates to `false` if both [`position`](class_rect2.md#class_rect2_property_position) and [`size`](class_rect2.md#class_rect2_property_size) are zero (equal to [`Vector2.ZERO`](class_vector2.md#class_vector2_constant_zero)). Otherwise, it always evaluates to `true`.
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
@@ -25,39 +25,39 @@ For integer coordinates, use [`Rect2i`](class_rect2i.md). The 3D equivalent to *
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`end`](#class_rect2_property_end)           | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md) | [`position`](#class_rect2_property_position) | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md) | [`size`](#class_rect2_property_size)         | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`end`](class_rect2.md#class_rect2_property_end)           | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`position`](class_rect2.md#class_rect2_property_position) | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`size`](class_rect2.md#class_rect2_property_size)         | ``Vector2(0, 0)`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( )                                                                                                                                 |
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( from: [`Rect2`](class_rect2.md) )                                                                                                 |
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( from: [`Rect2i`](class_rect2i.md) )                                                                                               |
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( position: [`Vector2`](class_vector2.md), size: [`Vector2`](class_vector2.md) )                                                    |
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( x: [`float`](class_float.md), y: [`float`](class_float.md), width: [`float`](class_float.md), height: [`float`](class_float.md) ) |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( )                                                                                                                                 |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( from: [`Rect2`](class_rect2.md) )                                                                                                 |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( from: [`Rect2i`](class_rect2i.md) )                                                                                               |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( position: [`Vector2`](class_vector2.md), size: [`Vector2`](class_vector2.md) )                                                    |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( x: [`float`](class_float.md), y: [`float`](class_float.md), width: [`float`](class_float.md), height: [`float`](class_float.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md)     | [`abs`](#class_rect2_method_abs) ( ) const[^const]                                                                                                                                                              |
-| [`bool`](class_bool.md)       | [`encloses`](#class_rect2_method_encloses) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                       |
-| [`Rect2`](class_rect2.md)     | [`expand`](#class_rect2_method_expand) ( to: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                      |
-| [`float`](class_float.md)     | [`get_area`](#class_rect2_method_get_area) ( ) const[^const]                                                                                                                                                    |
-| [`Vector2`](class_vector2.md) | [`get_center`](#class_rect2_method_get_center) ( ) const[^const]                                                                                                                                                |
-| [`Rect2`](class_rect2.md)     | [`grow`](#class_rect2_method_grow) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                                          |
-| [`Rect2`](class_rect2.md)     | [`grow_individual`](#class_rect2_method_grow_individual) ( left: [`float`](class_float.md), top: [`float`](class_float.md), right: [`float`](class_float.md), bottom: [`float`](class_float.md) ) const[^const] |
-| [`Rect2`](class_rect2.md)     | [`grow_side`](#class_rect2_method_grow_side) ( side: [`int`](class_int.md), amount: [`float`](class_float.md) ) const[^const]                                                                                   |
-| [`bool`](class_bool.md)       | [`has_area`](#class_rect2_method_has_area) ( ) const[^const]                                                                                                                                                    |
-| [`bool`](class_bool.md)       | [`has_point`](#class_rect2_method_has_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                             |
-| [`Rect2`](class_rect2.md)     | [`intersection`](#class_rect2_method_intersection) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                               |
-| [`bool`](class_bool.md)       | [`intersects`](#class_rect2_method_intersects) ( b: [`Rect2`](class_rect2.md), include_borders: [`bool`](class_bool.md) = false ) const[^const]                                                                 |
-| [`bool`](class_bool.md)       | [`is_equal_approx`](#class_rect2_method_is_equal_approx) ( rect: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                      |
-| [`bool`](class_bool.md)       | [`is_finite`](#class_rect2_method_is_finite) ( ) const[^const]                                                                                                                                                  |
-| [`Rect2`](class_rect2.md)     | [`merge`](#class_rect2_method_merge) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                             |
+| [`Rect2`](class_rect2.md)     | [`abs`](class_rect2.md#class_rect2_method_abs) ( ) const[^const]                                                                                                                                                              |
+| [`bool`](class_bool.md)       | [`encloses`](class_rect2.md#class_rect2_method_encloses) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                       |
+| [`Rect2`](class_rect2.md)     | [`expand`](class_rect2.md#class_rect2_method_expand) ( to: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                      |
+| [`float`](class_float.md)     | [`get_area`](class_rect2.md#class_rect2_method_get_area) ( ) const[^const]                                                                                                                                                    |
+| [`Vector2`](class_vector2.md) | [`get_center`](class_rect2.md#class_rect2_method_get_center) ( ) const[^const]                                                                                                                                                |
+| [`Rect2`](class_rect2.md)     | [`grow`](class_rect2.md#class_rect2_method_grow) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                                          |
+| [`Rect2`](class_rect2.md)     | [`grow_individual`](class_rect2.md#class_rect2_method_grow_individual) ( left: [`float`](class_float.md), top: [`float`](class_float.md), right: [`float`](class_float.md), bottom: [`float`](class_float.md) ) const[^const] |
+| [`Rect2`](class_rect2.md)     | [`grow_side`](class_rect2.md#class_rect2_method_grow_side) ( side: [`int`](class_int.md), amount: [`float`](class_float.md) ) const[^const]                                                                                   |
+| [`bool`](class_bool.md)       | [`has_area`](class_rect2.md#class_rect2_method_has_area) ( ) const[^const]                                                                                                                                                    |
+| [`bool`](class_bool.md)       | [`has_point`](class_rect2.md#class_rect2_method_has_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                             |
+| [`Rect2`](class_rect2.md)     | [`intersection`](class_rect2.md#class_rect2_method_intersection) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                               |
+| [`bool`](class_bool.md)       | [`intersects`](class_rect2.md#class_rect2_method_intersects) ( b: [`Rect2`](class_rect2.md), include_borders: [`bool`](class_bool.md) = false ) const[^const]                                                                 |
+| [`bool`](class_bool.md)       | [`is_equal_approx`](class_rect2.md#class_rect2_method_is_equal_approx) ( rect: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                      |
+| [`bool`](class_bool.md)       | [`is_finite`](class_rect2.md#class_rect2_method_is_finite) ( ) const[^const]                                                                                                                                                  |
+| [`Rect2`](class_rect2.md)     | [`merge`](class_rect2.md#class_rect2_method_merge) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                             |
 
 ## 运算符
 
@@ -77,7 +77,7 @@ For integer coordinates, use [`Rect2i`](class_rect2i.md). The 3D equivalent to *
 
 [`Vector2`](class_vector2.md) **end** = ``Vector2(0, 0)`` <div id="class_rect2_property_end"></div>
 
-The ending point. This is usually the bottom-right corner of the rectangle, and is equivalent to `position + size`. Setting this point affects the [`size`](#class_rect2_property_size).
+The ending point. This is usually the bottom-right corner of the rectangle, and is equivalent to `position + size`. Setting this point affects the [`size`](class_rect2.md#class_rect2_property_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -97,9 +97,9 @@ The origin point. This is usually the top-left corner of the rectangle.
 
 [`Vector2`](class_vector2.md) **size** = ``Vector2(0, 0)`` <div id="class_rect2_property_size"></div>
 
-The rectangle's width and height, starting from [`position`](#class_rect2_property_position). Setting this value also affects the [`end`](#class_rect2_property_end) point.
+The rectangle's width and height, starting from [`position`](class_rect2.md#class_rect2_property_position). Setting this value also affects the [`end`](class_rect2.md#class_rect2_property_end) point.
 
- **Note:** It's recommended setting the width and height to non-negative values, as most methods in Godot assume that the [`position`](#class_rect2_property_position) is the top-left corner, and the [`end`](#class_rect2_property_end) is the bottom-right corner. To get an equivalent rectangle with non-negative size, use [`abs`](#class_rect2_method_abs).
+ **Note:** It's recommended setting the width and height to non-negative values, as most methods in Godot assume that the [`position`](class_rect2.md#class_rect2_property_position) is the top-left corner, and the [`end`](class_rect2.md#class_rect2_property_end) is the bottom-right corner. To get an equivalent rectangle with non-negative size, use [`abs`](class_rect2.md#class_rect2_method_abs).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -111,7 +111,7 @@ The rectangle's width and height, starting from [`position`](#class_rect2_proper
 
 [`Rect2`](class_rect2.md) **Rect2** ( )<div id="class_rect2_constructor_rect2"></div>
 
-Constructs a **Rect2** with its [`position`](#class_rect2_property_position) and [`size`](#class_rect2_property_size) set to [`Vector2.ZERO`](#class_vector2_constant_zero).
+Constructs a **Rect2** with its [`position`](class_rect2.md#class_rect2_property_position) and [`size`](class_rect2.md#class_rect2_property_size) set to [`Vector2.ZERO`](class_vector2.md#class_vector2_constant_zero).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -143,7 +143,7 @@ Constructs a **Rect2** by `position` and `size`.
 
 [`Rect2`](class_rect2.md) **Rect2** ( x: [`float`](class_float.md), y: [`float`](class_float.md), width: [`float`](class_float.md), height: [`float`](class_float.md) )
 
-Constructs a **Rect2** by setting its [`position`](#class_rect2_property_position) to (`x`, `y`), and its [`size`](#class_rect2_property_size) to (`width`, `height`).
+Constructs a **Rect2** by setting its [`position`](class_rect2.md#class_rect2_property_position) to (`x`, `y`), and its [`size`](class_rect2.md#class_rect2_property_size) to (`width`, `height`).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -155,7 +155,7 @@ Constructs a **Rect2** by setting its [`position`](#class_rect2_property_positio
 
 [`Rect2`](class_rect2.md) **abs** ( ) const[^const]<div id="class_rect2_method_abs"></div>
 
-Returns a **Rect2** equivalent to this rectangle, with its width and height modified to be non-negative values, and with its [`position`](#class_rect2_property_position) being the top-left corner of the rectangle.
+Returns a **Rect2** equivalent to this rectangle, with its width and height modified to be non-negative values, and with its [`position`](class_rect2.md#class_rect2_property_position) being the top-left corner of the rectangle.
 
 
 
@@ -173,7 +173,7 @@ Returns a **Rect2** equivalent to this rectangle, with its width and height modi
 
 
 
- **Note:** It's recommended to use this method when [`size`](#class_rect2_property_size) is negative, as most other methods in Godot assume that the [`position`](#class_rect2_property_position) is the top-left corner, and the [`end`](#class_rect2_property_end) is the bottom-right corner.
+ **Note:** It's recommended to use this method when [`size`](class_rect2.md#class_rect2_property_size) is negative, as most other methods in Godot assume that the [`position`](class_rect2.md#class_rect2_property_position) is the top-left corner, and the [`end`](class_rect2.md#class_rect2_property_end) is the bottom-right corner.
 
 
 
@@ -231,7 +231,7 @@ Returns a copy of this rectangle expanded to align the edges with the given `to`
 
 [`float`](class_float.md) **get_area** ( ) const[^const]<div id="class_rect2_method_get_area"></div>
 
-Returns the rectangle's area. This is equivalent to `size.x * size.y`. See also [`has_area`](#class_rect2_method_has_area).
+Returns the rectangle's area. This is equivalent to `size.x * size.y`. See also [`has_area`](class_rect2.md#class_rect2_method_has_area).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -251,7 +251,7 @@ Returns the center point of the rectangle. This is the same as `position + (size
 
 [`Rect2`](class_rect2.md) **grow** ( amount: [`float`](class_float.md) ) const[^const]<div id="class_rect2_method_grow"></div>
 
-Returns a copy of this rectangle extended on all sides by the given `amount`. A negative `amount` shrinks the rectangle instead. See also [`grow_individual`](#class_rect2_method_grow_individual) and [`grow_side`](#class_rect2_method_grow_side).
+Returns a copy of this rectangle extended on all sides by the given `amount`. A negative `amount` shrinks the rectangle instead. See also [`grow_individual`](class_rect2.md#class_rect2_method_grow_individual) and [`grow_side`](class_rect2.md#class_rect2_method_grow_side).
 
 
 
@@ -281,7 +281,7 @@ Returns a copy of this rectangle extended on all sides by the given `amount`. A 
 
 [`Rect2`](class_rect2.md) **grow_individual** ( left: [`float`](class_float.md), top: [`float`](class_float.md), right: [`float`](class_float.md), bottom: [`float`](class_float.md) ) const[^const]<div id="class_rect2_method_grow_individual"></div>
 
-Returns a copy of this rectangle with its `left`, `top`, `right`, and `bottom` sides extended by the given amounts. Negative values shrink the sides, instead. See also [`grow`](#class_rect2_method_grow) and [`grow_side`](#class_rect2_method_grow_side).
+Returns a copy of this rectangle with its `left`, `top`, `right`, and `bottom` sides extended by the given amounts. Negative values shrink the sides, instead. See also [`grow`](class_rect2.md#class_rect2_method_grow) and [`grow_side`](class_rect2.md#class_rect2_method_grow_side).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -291,7 +291,7 @@ Returns a copy of this rectangle with its `left`, `top`, `right`, and `bottom` s
 
 [`Rect2`](class_rect2.md) **grow_side** ( side: [`int`](class_int.md), amount: [`float`](class_float.md) ) const[^const]<div id="class_rect2_method_grow_side"></div>
 
-Returns a copy of this rectangle with its `side` extended by the given `amount` (see [Side](#enum_@globalscope_side) constants). A negative `amount` shrinks the rectangle, instead. See also [`grow`](#class_rect2_method_grow) and [`grow_individual`](#class_rect2_method_grow_individual).
+Returns a copy of this rectangle with its `side` extended by the given `amount` (see [Side](#enum_@globalscope_side) constants). A negative `amount` shrinks the rectangle, instead. See also [`grow`](class_rect2.md#class_rect2_method_grow) and [`grow_individual`](class_rect2.md#class_rect2_method_grow_individual).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -301,7 +301,7 @@ Returns a copy of this rectangle with its `side` extended by the given `amount` 
 
 [`bool`](class_bool.md) **has_area** ( ) const[^const]<div id="class_rect2_method_has_area"></div>
 
-Returns `true` if this rectangle has positive width and height. See also [`get_area`](#class_rect2_method_get_area).
+Returns `true` if this rectangle has positive width and height. See also [`get_area`](class_rect2.md#class_rect2_method_get_area).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -313,7 +313,7 @@ Returns `true` if this rectangle has positive width and height. See also [`get_a
 
 Returns `true` if the rectangle contains the given `point`. By convention, points on the right and bottom edges are **not** included.
 
- **Note:** This method is not reliable for **Rect2** with a *negative* [`size`](#class_rect2_property_size). Use [`abs`](#class_rect2_method_abs) first to get a valid rectangle.
+ **Note:** This method is not reliable for **Rect2** with a *negative* [`size`](class_rect2.md#class_rect2_property_size). Use [`abs`](class_rect2.md#class_rect2_method_abs) first to get a valid rectangle.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -345,7 +345,7 @@ Returns the intersection between this rectangle and `b`. If the rectangles do no
 
 
 
- **Note:** If you only need to know whether two rectangles are overlapping, use [`intersects`](#class_rect2_method_intersects), instead.
+ **Note:** If you only need to know whether two rectangles are overlapping, use [`intersects`](class_rect2.md#class_rect2_method_intersects), instead.
 
 
 
@@ -369,7 +369,7 @@ Returns `true` if this rectangle overlaps with the `b` rectangle. The edges of b
 
 [`bool`](class_bool.md) **is_equal_approx** ( rect: [`Rect2`](class_rect2.md) ) const[^const]<div id="class_rect2_method_is_equal_approx"></div>
 
-Returns `true` if this rectangle and `rect` are approximately equal, by calling [`Vector2.is_equal_approx`](#class_vector2_method_is_equal_approx) on the [`position`](#class_rect2_property_position) and the [`size`](#class_rect2_property_size).
+Returns `true` if this rectangle and `rect` are approximately equal, by calling [`Vector2.is_equal_approx`](class_vector2.md#class_vector2_method_is_equal_approx) on the [`position`](class_rect2.md#class_rect2_property_position) and the [`size`](class_rect2.md#class_rect2_property_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -379,7 +379,7 @@ Returns `true` if this rectangle and `rect` are approximately equal, by calling 
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_rect2_method_is_finite"></div>
 
-Returns `true` if this rectangle's values are finite, by calling [`Vector2.is_finite`](#class_vector2_method_is_finite) on the [`position`](#class_rect2_property_position) and the [`size`](#class_rect2_property_size).
+Returns `true` if this rectangle's values are finite, by calling [`Vector2.is_finite`](class_vector2.md#class_vector2_method_is_finite) on the [`position`](class_rect2.md#class_rect2_property_position) and the [`size`](class_rect2.md#class_rect2_property_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -389,7 +389,7 @@ Returns `true` if this rectangle's values are finite, by calling [`Vector2.is_fi
 
 [`Rect2`](class_rect2.md) **merge** ( b: [`Rect2`](class_rect2.md) ) const[^const]<div id="class_rect2_method_merge"></div>
 
-Returns a **Rect2** that encloses both this rectangle and `b` around the edges. See also [`encloses`](#class_rect2_method_encloses).
+Returns a **Rect2** that encloses both this rectangle and `b` around the edges. See also [`encloses`](class_rect2.md#class_rect2_method_encloses).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -401,9 +401,9 @@ Returns a **Rect2** that encloses both this rectangle and `b` around the edges. 
 
 [`bool`](class_bool.md) **operator !=** ( right: [`Rect2`](class_rect2.md) ) <div id="class_rect2_operator_neq_rect2"></div>
 
-Returns `true` if the [`position`](#class_rect2_property_position) or [`size`](#class_rect2_property_size) of both rectangles are not equal.
+Returns `true` if the [`position`](class_rect2.md#class_rect2_property_position) or [`size`](class_rect2.md#class_rect2_property_size) of both rectangles are not equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_rect2_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_rect2.md#class_rect2_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -415,9 +415,9 @@ Returns `true` if the [`position`](#class_rect2_property_position) or [`size`](#
 
 Inversely transforms (multiplies) the **Rect2** by the given [`Transform2D`](class_transform2d.md) transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
 
- `rect * transform` is equivalent to `transform.inverse() * rect`. See [`Transform2D.inverse`](#class_transform2d_method_inverse).
+ `rect * transform` is equivalent to `transform.inverse() * rect`. See [`Transform2D.inverse`](class_transform2d.md#class_transform2d_method_inverse).
 
-For transforming by inverse of an affine transformation (e.g. with scaling) `transform.affine_inverse() * rect` can be used instead. See [`Transform2D.affine_inverse`](#class_transform2d_method_affine_inverse).
+For transforming by inverse of an affine transformation (e.g. with scaling) `transform.affine_inverse() * rect` can be used instead. See [`Transform2D.affine_inverse`](class_transform2d.md#class_transform2d_method_affine_inverse).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -427,9 +427,9 @@ For transforming by inverse of an affine transformation (e.g. with scaling) `tra
 
 [`bool`](class_bool.md) **operator ==** ( right: [`Rect2`](class_rect2.md) ) <div id="class_rect2_operator_eq_rect2"></div>
 
-Returns `true` if both [`position`](#class_rect2_property_position) and [`size`](#class_rect2_property_size) of the rectangles are exactly equal, respectively.
+Returns `true` if both [`position`](class_rect2.md#class_rect2_property_position) and [`size`](class_rect2.md#class_rect2_property_size) of the rectangles are exactly equal, respectively.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_rect2_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_rect2.md#class_rect2_method_is_equal_approx) instead, which is more reliable.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

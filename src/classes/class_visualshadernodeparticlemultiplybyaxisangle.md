@@ -19,7 +19,7 @@ This node helps to multiply a position input vector by rotation using specific a
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`degrees_mode`](#class_visualshadernodeparticlemultiplybyaxisangle_property_degrees_mode) | ``true`` |
+| [`bool`](class_bool.md) | [`degrees_mode`](class_visualshadernodeparticlemultiplybyaxisangle.md#class_visualshadernodeparticlemultiplybyaxisangle_property_degrees_mode) | ``true`` |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -23,58 +23,58 @@ Note that "global pose" below refers to the overall transform of the bone with r
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                                     | [`animate_physical_bones`](#class_skeleton3d_property_animate_physical_bones)                 | ``true``  |
-| [ModifierCallbackModeProcess](#enum_skeleton3d_modifiercallbackmodeprocess) | [`modifier_callback_mode_process`](#class_skeleton3d_property_modifier_callback_mode_process) | ``1``     |
-| [`float`](class_float.md)                                                   | [`motion_scale`](#class_skeleton3d_property_motion_scale)                                     | ``1.0``   |
-| [`bool`](class_bool.md)                                                     | [`show_rest_only`](#class_skeleton3d_property_show_rest_only)                                 | ``false`` |
+| [`bool`](class_bool.md)                                                     | [`animate_physical_bones`](class_skeleton3d.md#class_skeleton3d_property_animate_physical_bones)                 | ``true``  |
+| [ModifierCallbackModeProcess](#enum_skeleton3d_modifiercallbackmodeprocess) | [`modifier_callback_mode_process`](class_skeleton3d.md#class_skeleton3d_property_modifier_callback_mode_process) | ``1``     |
+| [`float`](class_float.md)                                                   | [`motion_scale`](class_skeleton3d.md#class_skeleton3d_property_motion_scale)                                     | ``1.0``   |
+| [`bool`](class_bool.md)                                                     | [`show_rest_only`](class_skeleton3d.md#class_skeleton3d_property_show_rest_only)                                 | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                           | [`add_bone`](#class_skeleton3d_method_add_bone) ( name: [`String`](class_string.md) )                                                                                                                                                                      |
-| `void`                                          | [`clear_bones`](#class_skeleton3d_method_clear_bones) ( )                                                                                                                                                                                                  |
-| `void`                                          | [`clear_bones_global_pose_override`](#class_skeleton3d_method_clear_bones_global_pose_override) ( )                                                                                                                                                        |
-| [`Skin`](class_skin.md)                         | [`create_skin_from_rest_transforms`](#class_skeleton3d_method_create_skin_from_rest_transforms) ( )                                                                                                                                                        |
-| [`int`](class_int.md)                           | [`find_bone`](#class_skeleton3d_method_find_bone) ( name: [`String`](class_string.md) ) const[^const]                                                                                                                                                      |
-| `void`                                          | [`force_update_all_bone_transforms`](#class_skeleton3d_method_force_update_all_bone_transforms) ( )                                                                                                                                                        |
-| `void`                                          | [`force_update_bone_child_transform`](#class_skeleton3d_method_force_update_bone_child_transform) ( bone_idx: [`int`](class_int.md) )                                                                                                                      |
-| [`PackedInt32Array`](class_packedint32array.md) | [`get_bone_children`](#class_skeleton3d_method_get_bone_children) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)                           | [`get_bone_count`](#class_skeleton3d_method_get_bone_count) ( ) const[^const]                                                                                                                                                                              |
-| [`Transform3D`](class_transform3d.md)           | [`get_bone_global_pose`](#class_skeleton3d_method_get_bone_global_pose) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                  |
-| [`Transform3D`](class_transform3d.md)           | [`get_bone_global_pose_no_override`](#class_skeleton3d_method_get_bone_global_pose_no_override) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                          |
-| [`Transform3D`](class_transform3d.md)           | [`get_bone_global_pose_override`](#class_skeleton3d_method_get_bone_global_pose_override) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                |
-| [`Transform3D`](class_transform3d.md)           | [`get_bone_global_rest`](#class_skeleton3d_method_get_bone_global_rest) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                  |
-| [`String`](class_string.md)                     | [`get_bone_name`](#class_skeleton3d_method_get_bone_name) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                |
-| [`int`](class_int.md)                           | [`get_bone_parent`](#class_skeleton3d_method_get_bone_parent) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                            |
-| [`Transform3D`](class_transform3d.md)           | [`get_bone_pose`](#class_skeleton3d_method_get_bone_pose) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                |
-| [`Vector3`](class_vector3.md)                   | [`get_bone_pose_position`](#class_skeleton3d_method_get_bone_pose_position) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                              |
-| [`Quaternion`](class_quaternion.md)             | [`get_bone_pose_rotation`](#class_skeleton3d_method_get_bone_pose_rotation) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                              |
-| [`Vector3`](class_vector3.md)                   | [`get_bone_pose_scale`](#class_skeleton3d_method_get_bone_pose_scale) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                    |
-| [`Transform3D`](class_transform3d.md)           | [`get_bone_rest`](#class_skeleton3d_method_get_bone_rest) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                |
-| [`StringName`](class_stringname.md)             | [`get_concatenated_bone_names`](#class_skeleton3d_method_get_concatenated_bone_names) ( ) const[^const]                                                                                                                                                    |
-| [`PackedInt32Array`](class_packedint32array.md) | [`get_parentless_bones`](#class_skeleton3d_method_get_parentless_bones) ( ) const[^const]                                                                                                                                                                  |
-| [`int`](class_int.md)                           | [`get_version`](#class_skeleton3d_method_get_version) ( ) const[^const]                                                                                                                                                                                    |
-| [`bool`](class_bool.md)                         | [`is_bone_enabled`](#class_skeleton3d_method_is_bone_enabled) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                            |
-| `void`                                          | [`localize_rests`](#class_skeleton3d_method_localize_rests) ( )                                                                                                                                                                                            |
-| `void`                                          | [`physical_bones_add_collision_exception`](#class_skeleton3d_method_physical_bones_add_collision_exception) ( exception: [`RID`](class_rid.md) )                                                                                                           |
-| `void`                                          | [`physical_bones_remove_collision_exception`](#class_skeleton3d_method_physical_bones_remove_collision_exception) ( exception: [`RID`](class_rid.md) )                                                                                                     |
-| `void`                                          | [`physical_bones_start_simulation`](#class_skeleton3d_method_physical_bones_start_simulation) ( bones: [Array](class_array.md) [`StringName`](class_stringname.md) = [] )                                                                                  |
-| `void`                                          | [`physical_bones_stop_simulation`](#class_skeleton3d_method_physical_bones_stop_simulation) ( )                                                                                                                                                            |
-| [`SkinReference`](class_skinreference.md)       | [`register_skin`](#class_skeleton3d_method_register_skin) ( skin: [`Skin`](class_skin.md) )                                                                                                                                                                |
-| `void`                                          | [`reset_bone_pose`](#class_skeleton3d_method_reset_bone_pose) ( bone_idx: [`int`](class_int.md) )                                                                                                                                                          |
-| `void`                                          | [`reset_bone_poses`](#class_skeleton3d_method_reset_bone_poses) ( )                                                                                                                                                                                        |
-| `void`                                          | [`set_bone_enabled`](#class_skeleton3d_method_set_bone_enabled) ( bone_idx: [`int`](class_int.md), enabled: [`bool`](class_bool.md) = true )                                                                                                               |
-| `void`                                          | [`set_bone_global_pose`](#class_skeleton3d_method_set_bone_global_pose) ( bone_idx: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )                                                                                                   |
-| `void`                                          | [`set_bone_global_pose_override`](#class_skeleton3d_method_set_bone_global_pose_override) ( bone_idx: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md), amount: [`float`](class_float.md), persistent: [`bool`](class_bool.md) = false ) |
-| `void`                                          | [`set_bone_name`](#class_skeleton3d_method_set_bone_name) ( bone_idx: [`int`](class_int.md), name: [`String`](class_string.md) )                                                                                                                           |
-| `void`                                          | [`set_bone_parent`](#class_skeleton3d_method_set_bone_parent) ( bone_idx: [`int`](class_int.md), parent_idx: [`int`](class_int.md) )                                                                                                                       |
-| `void`                                          | [`set_bone_pose`](#class_skeleton3d_method_set_bone_pose) ( bone_idx: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )                                                                                                                 |
-| `void`                                          | [`set_bone_pose_position`](#class_skeleton3d_method_set_bone_pose_position) ( bone_idx: [`int`](class_int.md), position: [`Vector3`](class_vector3.md) )                                                                                                   |
-| `void`                                          | [`set_bone_pose_rotation`](#class_skeleton3d_method_set_bone_pose_rotation) ( bone_idx: [`int`](class_int.md), rotation: [`Quaternion`](class_quaternion.md) )                                                                                             |
-| `void`                                          | [`set_bone_pose_scale`](#class_skeleton3d_method_set_bone_pose_scale) ( bone_idx: [`int`](class_int.md), scale: [`Vector3`](class_vector3.md) )                                                                                                            |
-| `void`                                          | [`set_bone_rest`](#class_skeleton3d_method_set_bone_rest) ( bone_idx: [`int`](class_int.md), rest: [`Transform3D`](class_transform3d.md) )                                                                                                                 |
-| `void`                                          | [`unparent_bone_and_rest`](#class_skeleton3d_method_unparent_bone_and_rest) ( bone_idx: [`int`](class_int.md) )                                                                                                                                            |
+| [`int`](class_int.md)                           | [`add_bone`](class_skeleton3d.md#class_skeleton3d_method_add_bone) ( name: [`String`](class_string.md) )                                                                                                                                                                      |
+| `void`                                          | [`clear_bones`](class_skeleton3d.md#class_skeleton3d_method_clear_bones) ( )                                                                                                                                                                                                  |
+| `void`                                          | [`clear_bones_global_pose_override`](class_skeleton3d.md#class_skeleton3d_method_clear_bones_global_pose_override) ( )                                                                                                                                                        |
+| [`Skin`](class_skin.md)                         | [`create_skin_from_rest_transforms`](class_skeleton3d.md#class_skeleton3d_method_create_skin_from_rest_transforms) ( )                                                                                                                                                        |
+| [`int`](class_int.md)                           | [`find_bone`](class_skeleton3d.md#class_skeleton3d_method_find_bone) ( name: [`String`](class_string.md) ) const[^const]                                                                                                                                                      |
+| `void`                                          | [`force_update_all_bone_transforms`](class_skeleton3d.md#class_skeleton3d_method_force_update_all_bone_transforms) ( )                                                                                                                                                        |
+| `void`                                          | [`force_update_bone_child_transform`](class_skeleton3d.md#class_skeleton3d_method_force_update_bone_child_transform) ( bone_idx: [`int`](class_int.md) )                                                                                                                      |
+| [`PackedInt32Array`](class_packedint32array.md) | [`get_bone_children`](class_skeleton3d.md#class_skeleton3d_method_get_bone_children) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)                           | [`get_bone_count`](class_skeleton3d.md#class_skeleton3d_method_get_bone_count) ( ) const[^const]                                                                                                                                                                              |
+| [`Transform3D`](class_transform3d.md)           | [`get_bone_global_pose`](class_skeleton3d.md#class_skeleton3d_method_get_bone_global_pose) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                  |
+| [`Transform3D`](class_transform3d.md)           | [`get_bone_global_pose_no_override`](class_skeleton3d.md#class_skeleton3d_method_get_bone_global_pose_no_override) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                          |
+| [`Transform3D`](class_transform3d.md)           | [`get_bone_global_pose_override`](class_skeleton3d.md#class_skeleton3d_method_get_bone_global_pose_override) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                |
+| [`Transform3D`](class_transform3d.md)           | [`get_bone_global_rest`](class_skeleton3d.md#class_skeleton3d_method_get_bone_global_rest) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                  |
+| [`String`](class_string.md)                     | [`get_bone_name`](class_skeleton3d.md#class_skeleton3d_method_get_bone_name) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                |
+| [`int`](class_int.md)                           | [`get_bone_parent`](class_skeleton3d.md#class_skeleton3d_method_get_bone_parent) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                            |
+| [`Transform3D`](class_transform3d.md)           | [`get_bone_pose`](class_skeleton3d.md#class_skeleton3d_method_get_bone_pose) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                |
+| [`Vector3`](class_vector3.md)                   | [`get_bone_pose_position`](class_skeleton3d.md#class_skeleton3d_method_get_bone_pose_position) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                              |
+| [`Quaternion`](class_quaternion.md)             | [`get_bone_pose_rotation`](class_skeleton3d.md#class_skeleton3d_method_get_bone_pose_rotation) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                              |
+| [`Vector3`](class_vector3.md)                   | [`get_bone_pose_scale`](class_skeleton3d.md#class_skeleton3d_method_get_bone_pose_scale) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                    |
+| [`Transform3D`](class_transform3d.md)           | [`get_bone_rest`](class_skeleton3d.md#class_skeleton3d_method_get_bone_rest) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                |
+| [`StringName`](class_stringname.md)             | [`get_concatenated_bone_names`](class_skeleton3d.md#class_skeleton3d_method_get_concatenated_bone_names) ( ) const[^const]                                                                                                                                                    |
+| [`PackedInt32Array`](class_packedint32array.md) | [`get_parentless_bones`](class_skeleton3d.md#class_skeleton3d_method_get_parentless_bones) ( ) const[^const]                                                                                                                                                                  |
+| [`int`](class_int.md)                           | [`get_version`](class_skeleton3d.md#class_skeleton3d_method_get_version) ( ) const[^const]                                                                                                                                                                                    |
+| [`bool`](class_bool.md)                         | [`is_bone_enabled`](class_skeleton3d.md#class_skeleton3d_method_is_bone_enabled) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                            |
+| `void`                                          | [`localize_rests`](class_skeleton3d.md#class_skeleton3d_method_localize_rests) ( )                                                                                                                                                                                            |
+| `void`                                          | [`physical_bones_add_collision_exception`](class_skeleton3d.md#class_skeleton3d_method_physical_bones_add_collision_exception) ( exception: [`RID`](class_rid.md) )                                                                                                           |
+| `void`                                          | [`physical_bones_remove_collision_exception`](class_skeleton3d.md#class_skeleton3d_method_physical_bones_remove_collision_exception) ( exception: [`RID`](class_rid.md) )                                                                                                     |
+| `void`                                          | [`physical_bones_start_simulation`](class_skeleton3d.md#class_skeleton3d_method_physical_bones_start_simulation) ( bones: [Array](class_array.md) [`StringName`](class_stringname.md) = [] )                                                                                  |
+| `void`                                          | [`physical_bones_stop_simulation`](class_skeleton3d.md#class_skeleton3d_method_physical_bones_stop_simulation) ( )                                                                                                                                                            |
+| [`SkinReference`](class_skinreference.md)       | [`register_skin`](class_skeleton3d.md#class_skeleton3d_method_register_skin) ( skin: [`Skin`](class_skin.md) )                                                                                                                                                                |
+| `void`                                          | [`reset_bone_pose`](class_skeleton3d.md#class_skeleton3d_method_reset_bone_pose) ( bone_idx: [`int`](class_int.md) )                                                                                                                                                          |
+| `void`                                          | [`reset_bone_poses`](class_skeleton3d.md#class_skeleton3d_method_reset_bone_poses) ( )                                                                                                                                                                                        |
+| `void`                                          | [`set_bone_enabled`](class_skeleton3d.md#class_skeleton3d_method_set_bone_enabled) ( bone_idx: [`int`](class_int.md), enabled: [`bool`](class_bool.md) = true )                                                                                                               |
+| `void`                                          | [`set_bone_global_pose`](class_skeleton3d.md#class_skeleton3d_method_set_bone_global_pose) ( bone_idx: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )                                                                                                   |
+| `void`                                          | [`set_bone_global_pose_override`](class_skeleton3d.md#class_skeleton3d_method_set_bone_global_pose_override) ( bone_idx: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md), amount: [`float`](class_float.md), persistent: [`bool`](class_bool.md) = false ) |
+| `void`                                          | [`set_bone_name`](class_skeleton3d.md#class_skeleton3d_method_set_bone_name) ( bone_idx: [`int`](class_int.md), name: [`String`](class_string.md) )                                                                                                                           |
+| `void`                                          | [`set_bone_parent`](class_skeleton3d.md#class_skeleton3d_method_set_bone_parent) ( bone_idx: [`int`](class_int.md), parent_idx: [`int`](class_int.md) )                                                                                                                       |
+| `void`                                          | [`set_bone_pose`](class_skeleton3d.md#class_skeleton3d_method_set_bone_pose) ( bone_idx: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )                                                                                                                 |
+| `void`                                          | [`set_bone_pose_position`](class_skeleton3d.md#class_skeleton3d_method_set_bone_pose_position) ( bone_idx: [`int`](class_int.md), position: [`Vector3`](class_vector3.md) )                                                                                                   |
+| `void`                                          | [`set_bone_pose_rotation`](class_skeleton3d.md#class_skeleton3d_method_set_bone_pose_rotation) ( bone_idx: [`int`](class_int.md), rotation: [`Quaternion`](class_quaternion.md) )                                                                                             |
+| `void`                                          | [`set_bone_pose_scale`](class_skeleton3d.md#class_skeleton3d_method_set_bone_pose_scale) ( bone_idx: [`int`](class_int.md), scale: [`Vector3`](class_vector3.md) )                                                                                                            |
+| `void`                                          | [`set_bone_rest`](class_skeleton3d.md#class_skeleton3d_method_set_bone_rest) ( bone_idx: [`int`](class_int.md), rest: [`Transform3D`](class_transform3d.md) )                                                                                                                 |
+| `void`                                          | [`unparent_bone_and_rest`](class_skeleton3d.md#class_skeleton3d_method_unparent_bone_and_rest) ( bone_idx: [`int`](class_int.md) )                                                                                                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -86,7 +86,7 @@ Note that "global pose" below refers to the overall transform of the bone with r
 
 **bone_enabled_changed** ( bone_idx: [`int`](class_int.md) ) <div id="class_skeleton3d_signal_bone_enabled_changed"></div>
 
-Emitted when the bone at `bone_idx` is toggled with [`set_bone_enabled`](#class_skeleton3d_method_set_bone_enabled). Use [`is_bone_enabled`](#class_skeleton3d_method_is_bone_enabled) to check the new value.
+Emitted when the bone at `bone_idx` is toggled with [`set_bone_enabled`](class_skeleton3d.md#class_skeleton3d_method_set_bone_enabled). Use [`is_bone_enabled`](class_skeleton3d.md#class_skeleton3d_method_is_bone_enabled) to check the new value.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -118,7 +118,7 @@ Emitted when the pose is updated.
 
 **show_rest_only_changed** ( ) <div id="class_skeleton3d_signal_show_rest_only_changed"></div>
 
-Emitted when the value of [`show_rest_only`](#class_skeleton3d_property_show_rest_only) changes.
+Emitted when the value of [`show_rest_only`](class_skeleton3d.md#class_skeleton3d_property_show_rest_only) changes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -130,7 +130,7 @@ Emitted when the value of [`show_rest_only`](#class_skeleton3d_property_show_res
 
 Emitted when the final pose has been calculated will be applied to the skin in the update process.
 
-This means that all [`SkeletonModifier3D`](class_skeletonmodifier3d.md) processing is complete. In order to detect the completion of the processing of each [`SkeletonModifier3D`](class_skeletonmodifier3d.md), use [`SkeletonModifier3D.modification_processed`](#class_skeletonmodifier3d_signal_modification_processed).
+This means that all [`SkeletonModifier3D`](class_skeletonmodifier3d.md) processing is complete. In order to detect the completion of the processing of each [`SkeletonModifier3D`](class_skeletonmodifier3d.md), use [`SkeletonModifier3D.modification_processed`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_signal_modification_processed).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -146,13 +146,13 @@ enum **ModifierCallbackModeProcess**: <div id="enum_skeleton3d_modifiercallbackm
 
 [ModifierCallbackModeProcess](#enum_skeleton3d_modifiercallbackmodeprocess) **MODIFIER_CALLBACK_MODE_PROCESS_PHYSICS** = ``0``
 
-Set a flag to process modification during physics frames (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](#class_node_constant_notification_internal_physics_process)).
+Set a flag to process modification during physics frames (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_internal_physics_process)).
 
 <div id="_class_skeleton3d_constant_modifier_callback_mode_process_idle"></div>
 
 [ModifierCallbackModeProcess](#enum_skeleton3d_modifiercallbackmodeprocess) **MODIFIER_CALLBACK_MODE_PROCESS_IDLE** = ``1``
 
-Set a flag to process modification during process frames (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](#class_node_constant_notification_internal_process)).
+Set a flag to process modification during process frames (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](class_node.md#class_node_constant_notification_internal_process)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -181,9 +181,9 @@ Notification received when this skeleton's pose needs to be updated. In that cas
 
 **已弃用：** 未来版本中可能会修改或移除该属性。
 
-If you follow the recommended workflow and explicitly have [`PhysicalBoneSimulator3D`](class_physicalbonesimulator3d.md) as a child of **Skeleton3D**, you can control whether it is affected by raycasting without running [`physical_bones_start_simulation`](#class_skeleton3d_method_physical_bones_start_simulation), by its [`SkeletonModifier3D.active`](#class_skeletonmodifier3d_property_active).
+If you follow the recommended workflow and explicitly have [`PhysicalBoneSimulator3D`](class_physicalbonesimulator3d.md) as a child of **Skeleton3D**, you can control whether it is affected by raycasting without running [`physical_bones_start_simulation`](class_skeleton3d.md#class_skeleton3d_method_physical_bones_start_simulation), by its [`SkeletonModifier3D.active`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_property_active).
 
-However, for old (deprecated) configurations, **Skeleton3D** has an internal virtual [`PhysicalBoneSimulator3D`](class_physicalbonesimulator3d.md) for compatibility. This property controls the internal virtual [`PhysicalBoneSimulator3D`](class_physicalbonesimulator3d.md)'s [`SkeletonModifier3D.active`](#class_skeletonmodifier3d_property_active).
+However, for old (deprecated) configurations, **Skeleton3D** has an internal virtual [`PhysicalBoneSimulator3D`](class_physicalbonesimulator3d.md) for compatibility. This property controls the internal virtual [`PhysicalBoneSimulator3D`](class_physicalbonesimulator3d.md)'s [`SkeletonModifier3D.active`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_property_active).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -334,7 +334,7 @@ Returns the number of bones in the skeleton.
 
 Returns the overall transform of the specified bone, with respect to the skeleton. Being relative to the skeleton frame, this is not the actual "global" transform of the bone.
 
- **Note:** This is the global pose you set to the skeleton in the process, the final global pose can get overridden by modifiers in the deferred process, if you want to access the final global pose, use [`SkeletonModifier3D.modification_processed`](#class_skeletonmodifier3d_signal_modification_processed).
+ **Note:** This is the global pose you set to the skeleton in the process, the final global pose can get overridden by modifiers in the deferred process, if you want to access the final global pose, use [`SkeletonModifier3D.modification_processed`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_signal_modification_processed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -402,7 +402,7 @@ Returns the bone index which is the parent of the bone at `bone_idx`. If -1, the
 
 Returns the pose transform of the specified bone.
 
- **Note:** This is the pose you set to the skeleton in the process, the final pose can get overridden by modifiers in the deferred process, if you want to access the final pose, use [`SkeletonModifier3D.modification_processed`](#class_skeletonmodifier3d_signal_modification_processed).
+ **Note:** This is the pose you set to the skeleton in the process, the final pose can get overridden by modifiers in the deferred process, if you want to access the final pose, use [`SkeletonModifier3D.modification_processed`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_signal_modification_processed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -604,7 +604,7 @@ Disables the pose for the bone at `bone_idx` if `false`, enables the bone pose i
 
 Sets the global pose transform, `pose`, for the bone at `bone_idx`.
 
- **Note:** If other bone poses have been changed, this method executes a dirty poses recalculation and will cause performance to deteriorate. If you know that multiple global poses will be applied, consider using [`set_bone_pose`](#class_skeleton3d_method_set_bone_pose) with precalculation.
+ **Note:** If other bone poses have been changed, this method executes a dirty poses recalculation and will cause performance to deteriorate. If you know that multiple global poses will be applied, consider using [`set_bone_pose`](class_skeleton3d.md#class_skeleton3d_method_set_bone_pose) with precalculation.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -620,7 +620,7 @@ Sets the global pose transform, `pose`, for the bone at `bone_idx`.
 
  `amount` is the interpolation strength that will be used when applying the pose, and `persistent` determines if the applied pose will remain.
 
- **Note:** The pose transform needs to be a global pose! To convert a world transform from a [`Node3D`](class_node3d.md) to a global bone pose, multiply the [`Transform3D.affine_inverse`](#class_transform3d_method_affine_inverse) of the node's [`Node3D.global_transform`](#class_node3d_property_global_transform) by the desired world transform.
+ **Note:** The pose transform needs to be a global pose! To convert a world transform from a [`Node3D`](class_node3d.md) to a global bone pose, multiply the [`Transform3D.affine_inverse`](class_transform3d.md#class_transform3d_method_affine_inverse) of the node's [`Node3D.global_transform`](class_node3d.md#class_node3d_property_global_transform) by the desired world transform.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -13,7 +13,7 @@ Creates packages that can be loaded into a running project.
 
 ## 描述
 
-The **PCKPacker** is used to create packages that can be loaded into a running project using [`ProjectSettings.load_resource_pack`](#class_projectsettings_method_load_resource_pack).
+The **PCKPacker** is used to create packages that can be loaded into a running project using [`ProjectSettings.load_resource_pack`](class_projectsettings.md#class_projectsettings_method_load_resource_pack).
 
 
 
@@ -45,9 +45,9 @@ The above **PCKPacker** creates package `test.pck`, then adds a file named `text
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`add_file`](#class_pckpacker_method_add_file) ( pck_path: [`String`](class_string.md), source_path: [`String`](class_string.md), encrypt: [`bool`](class_bool.md) = false )                                                                                                                 |
-| [Error](#enum_@globalscope_error) | [`flush`](#class_pckpacker_method_flush) ( verbose: [`bool`](class_bool.md) = false )                                                                                                                                                                                                        |
-| [Error](#enum_@globalscope_error) | [`pck_start`](#class_pckpacker_method_pck_start) ( pck_name: [`String`](class_string.md), alignment: [`int`](class_int.md) = 32, key: [`String`](class_string.md) = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory: [`bool`](class_bool.md) = false ) |
+| [Error](#enum_@globalscope_error) | [`add_file`](class_pckpacker.md#class_pckpacker_method_add_file) ( pck_path: [`String`](class_string.md), source_path: [`String`](class_string.md), encrypt: [`bool`](class_bool.md) = false )                                                                                                                 |
+| [Error](#enum_@globalscope_error) | [`flush`](class_pckpacker.md#class_pckpacker_method_flush) ( verbose: [`bool`](class_bool.md) = false )                                                                                                                                                                                                        |
+| [Error](#enum_@globalscope_error) | [`pck_start`](class_pckpacker.md#class_pckpacker_method_pck_start) ( pck_name: [`String`](class_string.md), alignment: [`int`](class_int.md) = 32, key: [`String`](class_string.md) = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory: [`bool`](class_bool.md) = false ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -69,7 +69,7 @@ Adds the `source_path` file to the current PCK package at the `pck_path` interna
 
 [Error](#enum_@globalscope_error) **flush** ( verbose: [`bool`](class_bool.md) = false )<div id="class_pckpacker_method_flush"></div>
 
-Writes the files specified using all [`add_file`](#class_pckpacker_method_add_file) calls since the last flush. If `verbose` is `true`, a list of files added will be printed to the console for easier debugging.
+Writes the files specified using all [`add_file`](class_pckpacker.md#class_pckpacker_method_add_file) calls since the last flush. If `verbose` is `true`, a list of files added will be printed to the console for easier debugging.
 
 <!-- rst-class:: classref-item-separator -->
 

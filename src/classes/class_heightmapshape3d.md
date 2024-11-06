@@ -41,17 +41,17 @@ A heightmap collision shape can also be build by using an [`Image`](class_image.
 
 |||
 |:-:|:--|
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`map_data`](#class_heightmapshape3d_property_map_data)   | ``PackedFloat32Array(0, 0, 0, 0)`` |
-| [`int`](class_int.md)                               | [`map_depth`](#class_heightmapshape3d_property_map_depth) | ``2``                              |
-| [`int`](class_int.md)                               | [`map_width`](#class_heightmapshape3d_property_map_width) | ``2``                              |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`map_data`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_data)   | ``PackedFloat32Array(0, 0, 0, 0)`` |
+| [`int`](class_int.md)                               | [`map_depth`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_depth) | ``2``                              |
+| [`int`](class_int.md)                               | [`map_width`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_width) | ``2``                              |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_max_height`](#class_heightmapshape3d_method_get_max_height) ( ) const[^const]                                                                                                                          |
-| [`float`](class_float.md) | [`get_min_height`](#class_heightmapshape3d_method_get_min_height) ( ) const[^const]                                                                                                                          |
-| `void`                    | [`update_map_data_from_image`](#class_heightmapshape3d_method_update_map_data_from_image) ( image: [`Image`](class_image.md), height_min: [`float`](class_float.md), height_max: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_max_height`](class_heightmapshape3d.md#class_heightmapshape3d_method_get_max_height) ( ) const[^const]                                                                                                                          |
+| [`float`](class_float.md) | [`get_min_height`](class_heightmapshape3d.md#class_heightmapshape3d_method_get_min_height) ( ) const[^const]                                                                                                                          |
+| `void`                    | [`update_map_data_from_image`](class_heightmapshape3d.md#class_heightmapshape3d_method_update_map_data_from_image) ( image: [`Image`](class_image.md), height_min: [`float`](class_float.md), height_max: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -66,7 +66,7 @@ A heightmap collision shape can also be build by using an [`Image`](class_image.
 - `void` **set_map_data** ( value: [`PackedFloat32Array`](class_packedfloat32array.md) )
 - [`PackedFloat32Array`](class_packedfloat32array.md) **get_map_data** ( )
 
-Height map data. The array's size must be equal to [`map_width`](#class_heightmapshape3d_property_map_width) multiplied by [`map_depth`](#class_heightmapshape3d_property_map_depth).
+Height map data. The array's size must be equal to [`map_width`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_width) multiplied by [`map_depth`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_depth).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedFloat32Array`](class_packedfloat32array.md) for more details.
 
@@ -81,7 +81,7 @@ Height map data. The array's size must be equal to [`map_width`](#class_heightma
 - `void` **set_map_depth** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_map_depth** ( )
 
-Number of vertices in the depth of the height map. Changing this will resize the [`map_data`](#class_heightmapshape3d_property_map_data).
+Number of vertices in the depth of the height map. Changing this will resize the [`map_data`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_data).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -94,7 +94,7 @@ Number of vertices in the depth of the height map. Changing this will resize the
 - `void` **set_map_width** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_map_width** ( )
 
-Number of vertices in the width of the height map. Changing this will resize the [`map_data`](#class_heightmapshape3d_property_map_data).
+Number of vertices in the width of the height map. Changing this will resize the [`map_data`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_data).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -106,7 +106,7 @@ Number of vertices in the width of the height map. Changing this will resize the
 
 [`float`](class_float.md) **get_max_height** ( ) const[^const]<div id="class_heightmapshape3d_method_get_max_height"></div>
 
-Returns the largest height value found in [`map_data`](#class_heightmapshape3d_property_map_data). Recalculates only when [`map_data`](#class_heightmapshape3d_property_map_data) changes.
+Returns the largest height value found in [`map_data`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_data). Recalculates only when [`map_data`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_data) changes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -116,7 +116,7 @@ Returns the largest height value found in [`map_data`](#class_heightmapshape3d_p
 
 [`float`](class_float.md) **get_min_height** ( ) const[^const]<div id="class_heightmapshape3d_method_get_min_height"></div>
 
-Returns the smallest height value found in [`map_data`](#class_heightmapshape3d_property_map_data). Recalculates only when [`map_data`](#class_heightmapshape3d_property_map_data) changes.
+Returns the smallest height value found in [`map_data`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_data). Recalculates only when [`map_data`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_data) changes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -126,9 +126,9 @@ Returns the smallest height value found in [`map_data`](#class_heightmapshape3d_
 
 `void` **update_map_data_from_image** ( image: [`Image`](class_image.md), height_min: [`float`](class_float.md), height_max: [`float`](class_float.md) )<div id="class_heightmapshape3d_method_update_map_data_from_image"></div>
 
-Updates [`map_data`](#class_heightmapshape3d_property_map_data) with data read from an [`Image`](class_image.md) reference. Automatically resizes heightmap [`map_width`](#class_heightmapshape3d_property_map_width) and [`map_depth`](#class_heightmapshape3d_property_map_depth) to fit the full image width and height.
+Updates [`map_data`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_data) with data read from an [`Image`](class_image.md) reference. Automatically resizes heightmap [`map_width`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_width) and [`map_depth`](class_heightmapshape3d.md#class_heightmapshape3d_property_map_depth) to fit the full image width and height.
 
-The image needs to be in either [`Image.FORMAT_RF`](#class_image_constant_format_rf) (32 bit), [`Image.FORMAT_RH`](#class_image_constant_format_rh) (16 bit), or [`Image.FORMAT_R8`](#class_image_constant_format_r8) (8 bit).
+The image needs to be in either [`Image.FORMAT_RF`](class_image.md#class_image_constant_format_rf) (32 bit), [`Image.FORMAT_RH`](class_image.md#class_image_constant_format_rh) (16 bit), or [`Image.FORMAT_R8`](class_image.md#class_image_constant_format_r8) (8 bit).
 
 Each image pixel is read in as a float on the range from `0.0` (black pixel) to `1.0` (white pixel). This range value gets remapped to `height_min` and `height_max` to form the final height value.
 

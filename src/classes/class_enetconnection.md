@@ -19,24 +19,24 @@ ENet's purpose is to provide a relatively thin, simple and robust network commun
 
 |||
 |:-:|:--|
-| `void`                                                              | [`bandwidth_limit`](#class_enetconnection_method_bandwidth_limit) ( in_bandwidth: [`int`](class_int.md) = 0, out_bandwidth: [`int`](class_int.md) = 0 )                                                                                                                                                                  |
-| `void`                                                              | [`broadcast`](#class_enetconnection_method_broadcast) ( channel: [`int`](class_int.md), packet: [`PackedByteArray`](class_packedbytearray.md), flags: [`int`](class_int.md) )                                                                                                                                            |
-| `void`                                                              | [`channel_limit`](#class_enetconnection_method_channel_limit) ( limit: [`int`](class_int.md) )                                                                                                                                                                                                                           |
-| `void`                                                              | [`compress`](#class_enetconnection_method_compress) ( mode: [CompressionMode](#enum_enetconnection_compressionmode) )                                                                                                                                                                                                    |
-| [`ENetPacketPeer`](class_enetpacketpeer.md)                         | [`connect_to_host`](#class_enetconnection_method_connect_to_host) ( address: [`String`](class_string.md), port: [`int`](class_int.md), channels: [`int`](class_int.md) = 0, data: [`int`](class_int.md) = 0 )                                                                                                            |
-| [Error](#enum_@globalscope_error)                                   | [`create_host`](#class_enetconnection_method_create_host) ( max_peers: [`int`](class_int.md) = 32, max_channels: [`int`](class_int.md) = 0, in_bandwidth: [`int`](class_int.md) = 0, out_bandwidth: [`int`](class_int.md) = 0 )                                                                                          |
-| [Error](#enum_@globalscope_error)                                   | [`create_host_bound`](#class_enetconnection_method_create_host_bound) ( bind_address: [`String`](class_string.md), bind_port: [`int`](class_int.md), max_peers: [`int`](class_int.md) = 32, max_channels: [`int`](class_int.md) = 0, in_bandwidth: [`int`](class_int.md) = 0, out_bandwidth: [`int`](class_int.md) = 0 ) |
-| `void`                                                              | [`destroy`](#class_enetconnection_method_destroy) ( )                                                                                                                                                                                                                                                                    |
-| [Error](#enum_@globalscope_error)                                   | [`dtls_client_setup`](#class_enetconnection_method_dtls_client_setup) ( hostname: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null )                                                                                                                                              |
-| [Error](#enum_@globalscope_error)                                   | [`dtls_server_setup`](#class_enetconnection_method_dtls_server_setup) ( server_options: [`TLSOptions`](class_tlsoptions.md) )                                                                                                                                                                                            |
-| `void`                                                              | [`flush`](#class_enetconnection_method_flush) ( )                                                                                                                                                                                                                                                                        |
-| [`int`](class_int.md)                                               | [`get_local_port`](#class_enetconnection_method_get_local_port) ( ) const[^const]                                                                                                                                                                                                                                        |
-| [`int`](class_int.md)                                               | [`get_max_channels`](#class_enetconnection_method_get_max_channels) ( ) const[^const]                                                                                                                                                                                                                                    |
-| [Array](class_array.md) [`ENetPacketPeer`](class_enetpacketpeer.md) | [`get_peers`](#class_enetconnection_method_get_peers) ( )                                                                                                                                                                                                                                                                |
-| [`float`](class_float.md)                                           | [`pop_statistic`](#class_enetconnection_method_pop_statistic) ( statistic: [HostStatistic](#enum_enetconnection_hoststatistic) )                                                                                                                                                                                         |
-| `void`                                                              | [`refuse_new_connections`](#class_enetconnection_method_refuse_new_connections) ( refuse: [`bool`](class_bool.md) )                                                                                                                                                                                                      |
-| [`Array`](class_array.md)                                           | [`service`](#class_enetconnection_method_service) ( timeout: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                 |
-| `void`                                                              | [`socket_send`](#class_enetconnection_method_socket_send) ( destination_address: [`String`](class_string.md), destination_port: [`int`](class_int.md), packet: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                           |
+| `void`                                                              | [`bandwidth_limit`](class_enetconnection.md#class_enetconnection_method_bandwidth_limit) ( in_bandwidth: [`int`](class_int.md) = 0, out_bandwidth: [`int`](class_int.md) = 0 )                                                                                                                                                                  |
+| `void`                                                              | [`broadcast`](class_enetconnection.md#class_enetconnection_method_broadcast) ( channel: [`int`](class_int.md), packet: [`PackedByteArray`](class_packedbytearray.md), flags: [`int`](class_int.md) )                                                                                                                                            |
+| `void`                                                              | [`channel_limit`](class_enetconnection.md#class_enetconnection_method_channel_limit) ( limit: [`int`](class_int.md) )                                                                                                                                                                                                                           |
+| `void`                                                              | [`compress`](class_enetconnection.md#class_enetconnection_method_compress) ( mode: [CompressionMode](#enum_enetconnection_compressionmode) )                                                                                                                                                                                                    |
+| [`ENetPacketPeer`](class_enetpacketpeer.md)                         | [`connect_to_host`](class_enetconnection.md#class_enetconnection_method_connect_to_host) ( address: [`String`](class_string.md), port: [`int`](class_int.md), channels: [`int`](class_int.md) = 0, data: [`int`](class_int.md) = 0 )                                                                                                            |
+| [Error](#enum_@globalscope_error)                                   | [`create_host`](class_enetconnection.md#class_enetconnection_method_create_host) ( max_peers: [`int`](class_int.md) = 32, max_channels: [`int`](class_int.md) = 0, in_bandwidth: [`int`](class_int.md) = 0, out_bandwidth: [`int`](class_int.md) = 0 )                                                                                          |
+| [Error](#enum_@globalscope_error)                                   | [`create_host_bound`](class_enetconnection.md#class_enetconnection_method_create_host_bound) ( bind_address: [`String`](class_string.md), bind_port: [`int`](class_int.md), max_peers: [`int`](class_int.md) = 32, max_channels: [`int`](class_int.md) = 0, in_bandwidth: [`int`](class_int.md) = 0, out_bandwidth: [`int`](class_int.md) = 0 ) |
+| `void`                                                              | [`destroy`](class_enetconnection.md#class_enetconnection_method_destroy) ( )                                                                                                                                                                                                                                                                    |
+| [Error](#enum_@globalscope_error)                                   | [`dtls_client_setup`](class_enetconnection.md#class_enetconnection_method_dtls_client_setup) ( hostname: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null )                                                                                                                                              |
+| [Error](#enum_@globalscope_error)                                   | [`dtls_server_setup`](class_enetconnection.md#class_enetconnection_method_dtls_server_setup) ( server_options: [`TLSOptions`](class_tlsoptions.md) )                                                                                                                                                                                            |
+| `void`                                                              | [`flush`](class_enetconnection.md#class_enetconnection_method_flush) ( )                                                                                                                                                                                                                                                                        |
+| [`int`](class_int.md)                                               | [`get_local_port`](class_enetconnection.md#class_enetconnection_method_get_local_port) ( ) const[^const]                                                                                                                                                                                                                                        |
+| [`int`](class_int.md)                                               | [`get_max_channels`](class_enetconnection.md#class_enetconnection_method_get_max_channels) ( ) const[^const]                                                                                                                                                                                                                                    |
+| [Array](class_array.md) [`ENetPacketPeer`](class_enetpacketpeer.md) | [`get_peers`](class_enetconnection.md#class_enetconnection_method_get_peers) ( )                                                                                                                                                                                                                                                                |
+| [`float`](class_float.md)                                           | [`pop_statistic`](class_enetconnection.md#class_enetconnection_method_pop_statistic) ( statistic: [HostStatistic](#enum_enetconnection_hoststatistic) )                                                                                                                                                                                         |
+| `void`                                                              | [`refuse_new_connections`](class_enetconnection.md#class_enetconnection_method_refuse_new_connections) ( refuse: [`bool`](class_bool.md) )                                                                                                                                                                                                      |
+| [`Array`](class_array.md)                                           | [`service`](class_enetconnection.md#class_enetconnection_method_service) ( timeout: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                 |
+| `void`                                                              | [`socket_send`](class_enetconnection.md#class_enetconnection_method_socket_send) ( destination_address: [`String`](class_string.md), destination_port: [`int`](class_int.md), packet: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -64,13 +64,13 @@ ENet's built-in range encoding. Works well on small packets, but is not the most
 
 [CompressionMode](#enum_enetconnection_compressionmode) **COMPRESS_FASTLZ** = ``2``
 
-[*FastLZ*](https://fastlz.org/) compression. This option uses less CPU resources compared to [`COMPRESS_ZLIB`](#class_enetconnection_constant_compress_zlib), at the expense of using more bandwidth.
+[*FastLZ*](https://fastlz.org/) compression. This option uses less CPU resources compared to [`COMPRESS_ZLIB`](class_enetconnection.md#class_enetconnection_constant_compress_zlib), at the expense of using more bandwidth.
 
 <div id="_class_enetconnection_constant_compress_zlib"></div>
 
 [CompressionMode](#enum_enetconnection_compressionmode) **COMPRESS_ZLIB** = ``3``
 
-[*Zlib*](https://www.zlib.net/) compression. This option uses less bandwidth compared to [`COMPRESS_FASTLZ`](#class_enetconnection_constant_compress_fastlz), at the expense of using more CPU resources.
+[*Zlib*](https://www.zlib.net/) compression. This option uses less bandwidth compared to [`COMPRESS_FASTLZ`](class_enetconnection.md#class_enetconnection_constant_compress_fastlz), at the expense of using more CPU resources.
 
 <div id="_class_enetconnection_constant_compress_zstd"></div>
 
@@ -90,7 +90,7 @@ enum **EventType**: <div id="enum_enetconnection_eventtype"></div>
 
 [EventType](#enum_enetconnection_eventtype) **EVENT_ERROR** = ``-1``
 
-An error occurred during [`service`](#class_enetconnection_method_service). You will likely need to [`destroy`](#class_enetconnection_method_destroy) the host and recreate it.
+An error occurred during [`service`](class_enetconnection.md#class_enetconnection_method_service). You will likely need to [`destroy`](class_enetconnection.md#class_enetconnection_method_destroy) the host and recreate it.
 
 <div id="_class_enetconnection_constant_event_none"></div>
 
@@ -108,7 +108,7 @@ A connection request initiated by enet_host_connect has completed. The array wil
 
 [EventType](#enum_enetconnection_eventtype) **EVENT_DISCONNECT** = ``2``
 
-A peer has disconnected. This event is generated on a successful completion of a disconnect initiated by [`ENetPacketPeer.peer_disconnect`](#class_enetpacketpeer_method_peer_disconnect), if a peer has timed out, or if a connection request initialized by [`connect_to_host`](#class_enetconnection_method_connect_to_host) has timed out. The array will contain the peer which disconnected. The data field contains user supplied data describing the disconnection, or 0, if none is available.
+A peer has disconnected. This event is generated on a successful completion of a disconnect initiated by [`ENetPacketPeer.peer_disconnect`](class_enetpacketpeer.md#class_enetpacketpeer_method_peer_disconnect), if a peer has timed out, or if a connection request initialized by [`connect_to_host`](class_enetconnection.md#class_enetconnection_method_connect_to_host) has timed out. The array will contain the peer which disconnected. The data field contains user supplied data describing the disconnection, or 0, if none is available.
 
 <div id="_class_enetconnection_constant_event_receive"></div>
 
@@ -204,7 +204,7 @@ Sets the compression method used for network packets. These have different trade
 
 Initiates a connection to a foreign `address` using the specified `port` and allocating the requested `channels`. Optional `data` can be passed during connection in the form of a 32 bit integer.
 
- **Note:** You must call either [`create_host`](#class_enetconnection_method_create_host) or [`create_host_bound`](#class_enetconnection_method_create_host_bound) on both ends before calling this method.
+ **Note:** You must call either [`create_host`](class_enetconnection.md#class_enetconnection_method_create_host) or [`create_host_bound`](class_enetconnection.md#class_enetconnection_method_create_host_bound) on both ends before calling this method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -216,7 +216,7 @@ Initiates a connection to a foreign `address` using the specified `port` and all
 
 Creates an ENetHost that allows up to `max_peers` connected peers, each allocating up to `max_channels` channels, optionally limiting bandwidth to `in_bandwidth` and `out_bandwidth` (if greater than zero).
 
-This method binds a random available dynamic UDP port on the host machine at the *unspecified* address. Use [`create_host_bound`](#class_enetconnection_method_create_host_bound) to specify the address and port.
+This method binds a random available dynamic UDP port on the host machine at the *unspecified* address. Use [`create_host_bound`](class_enetconnection.md#class_enetconnection_method_create_host_bound) to specify the address and port.
 
  **Note:** It is necessary to create a host in both client and server in order to establish a connection.
 
@@ -250,7 +250,7 @@ Destroys the host and all resources associated with it.
 
 [Error](#enum_@globalscope_error) **dtls_client_setup** ( hostname: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null )<div id="class_enetconnection_method_dtls_client_setup"></div>
 
-Configure this ENetHost to use the custom Godot extension allowing DTLS encryption for ENet clients. Call this before [`connect_to_host`](#class_enetconnection_method_connect_to_host) to have ENet connect using DTLS validating the server certificate against `hostname`. You can pass the optional `client_options` parameter to customize the trusted certification authorities, or disable the common name verification. See [`TLSOptions.client`](#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](#class_tlsoptions_method_client_unsafe).
+Configure this ENetHost to use the custom Godot extension allowing DTLS encryption for ENet clients. Call this before [`connect_to_host`](class_enetconnection.md#class_enetconnection_method_connect_to_host) to have ENet connect using DTLS validating the server certificate against `hostname`. You can pass the optional `client_options` parameter to customize the trusted certification authorities, or disable the common name verification. See [`TLSOptions.client`](class_tlsoptions.md#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -260,7 +260,7 @@ Configure this ENetHost to use the custom Godot extension allowing DTLS encrypti
 
 [Error](#enum_@globalscope_error) **dtls_server_setup** ( server_options: [`TLSOptions`](class_tlsoptions.md) )<div id="class_enetconnection_method_dtls_server_setup"></div>
 
-Configure this ENetHost to use the custom Godot extension allowing DTLS encryption for ENet servers. Call this right after [`create_host_bound`](#class_enetconnection_method_create_host_bound) to have ENet expect peers to connect using DTLS. See [`TLSOptions.server`](#class_tlsoptions_method_server).
+Configure this ENetHost to use the custom Godot extension allowing DTLS encryption for ENet servers. Call this right after [`create_host_bound`](class_enetconnection.md#class_enetconnection_method_create_host_bound) to have ENet expect peers to connect using DTLS. See [`TLSOptions.server`](class_tlsoptions.md#class_tlsoptions_method_server).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -324,7 +324,7 @@ Returns and resets host statistics. See [HostStatistic](#enum_enetconnection_hos
 
 Configures the DTLS server to automatically drop new connections.
 
- **Note:** This method is only relevant after calling [`dtls_server_setup`](#class_enetconnection_method_dtls_server_setup).
+ **Note:** This method is only relevant after calling [`dtls_server_setup`](class_enetconnection.md#class_enetconnection_method_dtls_server_setup).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -334,7 +334,7 @@ Configures the DTLS server to automatically drop new connections.
 
 [`Array`](class_array.md) **service** ( timeout: [`int`](class_int.md) = 0 )<div id="class_enetconnection_method_service"></div>
 
-Waits for events on this connection and shuttles packets between the host and its peers, with the given `timeout` (in milliseconds). The returned [`Array`](class_array.md) will have 4 elements. An [EventType](#enum_enetconnection_eventtype), the [`ENetPacketPeer`](class_enetpacketpeer.md) which generated the event, the event associated data (if any), the event associated channel (if any). If the generated event is [`EVENT_RECEIVE`](#class_enetconnection_constant_event_receive), the received packet will be queued to the associated [`ENetPacketPeer`](class_enetpacketpeer.md).
+Waits for events on this connection and shuttles packets between the host and its peers, with the given `timeout` (in milliseconds). The returned [`Array`](class_array.md) will have 4 elements. An [EventType](#enum_enetconnection_eventtype), the [`ENetPacketPeer`](class_enetpacketpeer.md) which generated the event, the event associated data (if any), the event associated channel (if any). If the generated event is [`EVENT_RECEIVE`](class_enetconnection.md#class_enetconnection_constant_event_receive), the received packet will be queued to the associated [`ENetPacketPeer`](class_enetpacketpeer.md).
 
 Call this function regularly to handle connections, disconnections, and to receive new packets.
 

@@ -101,23 +101,23 @@ For reference, this is how common user-facing blend modes are implemented in God
 
 |||
 |:-:|:--|
-| [BlendOperation](#enum_renderingdevice_blendoperation) | [`alpha_blend_op`](#class_rdpipelinecolorblendstateattachment_property_alpha_blend_op)                 | ``0``     |
-| [BlendOperation](#enum_renderingdevice_blendoperation) | [`color_blend_op`](#class_rdpipelinecolorblendstateattachment_property_color_blend_op)                 | ``0``     |
-| [BlendFactor](#enum_renderingdevice_blendfactor)       | [`dst_alpha_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_dst_alpha_blend_factor) | ``0``     |
-| [BlendFactor](#enum_renderingdevice_blendfactor)       | [`dst_color_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_dst_color_blend_factor) | ``0``     |
-| [`bool`](class_bool.md)                                | [`enable_blend`](#class_rdpipelinecolorblendstateattachment_property_enable_blend)                     | ``false`` |
-| [BlendFactor](#enum_renderingdevice_blendfactor)       | [`src_alpha_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_src_alpha_blend_factor) | ``0``     |
-| [BlendFactor](#enum_renderingdevice_blendfactor)       | [`src_color_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_src_color_blend_factor) | ``0``     |
-| [`bool`](class_bool.md)                                | [`write_a`](#class_rdpipelinecolorblendstateattachment_property_write_a)                               | ``true``  |
-| [`bool`](class_bool.md)                                | [`write_b`](#class_rdpipelinecolorblendstateattachment_property_write_b)                               | ``true``  |
-| [`bool`](class_bool.md)                                | [`write_g`](#class_rdpipelinecolorblendstateattachment_property_write_g)                               | ``true``  |
-| [`bool`](class_bool.md)                                | [`write_r`](#class_rdpipelinecolorblendstateattachment_property_write_r)                               | ``true``  |
+| [BlendOperation](#enum_renderingdevice_blendoperation) | [`alpha_blend_op`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_alpha_blend_op)                 | ``0``     |
+| [BlendOperation](#enum_renderingdevice_blendoperation) | [`color_blend_op`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_color_blend_op)                 | ``0``     |
+| [BlendFactor](#enum_renderingdevice_blendfactor)       | [`dst_alpha_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_dst_alpha_blend_factor) | ``0``     |
+| [BlendFactor](#enum_renderingdevice_blendfactor)       | [`dst_color_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_dst_color_blend_factor) | ``0``     |
+| [`bool`](class_bool.md)                                | [`enable_blend`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_enable_blend)                     | ``false`` |
+| [BlendFactor](#enum_renderingdevice_blendfactor)       | [`src_alpha_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_src_alpha_blend_factor) | ``0``     |
+| [BlendFactor](#enum_renderingdevice_blendfactor)       | [`src_color_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_src_color_blend_factor) | ``0``     |
+| [`bool`](class_bool.md)                                | [`write_a`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_write_a)                               | ``true``  |
+| [`bool`](class_bool.md)                                | [`write_b`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_write_b)                               | ``true``  |
+| [`bool`](class_bool.md)                                | [`write_g`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_write_g)                               | ``true``  |
+| [`bool`](class_bool.md)                                | [`write_r`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_write_r)                               | ``true``  |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`set_as_mix`](#class_rdpipelinecolorblendstateattachment_method_set_as_mix) ( ) |
+| `void` | [`set_as_mix`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_method_set_as_mix) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -184,7 +184,7 @@ Controls how the blend factor for the color channels is determined based on the 
 - `void` **set_enable_blend** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_enable_blend** ( )
 
-If `true`, performs blending between the source and destination according to the factors defined in [`src_color_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_src_color_blend_factor), [`dst_color_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_dst_color_blend_factor), [`src_alpha_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_src_alpha_blend_factor) and [`dst_alpha_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_dst_alpha_blend_factor). The blend modes [`color_blend_op`](#class_rdpipelinecolorblendstateattachment_property_color_blend_op) and [`alpha_blend_op`](#class_rdpipelinecolorblendstateattachment_property_alpha_blend_op) are also taken into account, with [`write_r`](#class_rdpipelinecolorblendstateattachment_property_write_r), [`write_g`](#class_rdpipelinecolorblendstateattachment_property_write_g), [`write_b`](#class_rdpipelinecolorblendstateattachment_property_write_b) and [`write_a`](#class_rdpipelinecolorblendstateattachment_property_write_a) controlling the output.
+If `true`, performs blending between the source and destination according to the factors defined in [`src_color_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_src_color_blend_factor), [`dst_color_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_dst_color_blend_factor), [`src_alpha_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_src_alpha_blend_factor) and [`dst_alpha_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_dst_alpha_blend_factor). The blend modes [`color_blend_op`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_color_blend_op) and [`alpha_blend_op`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_alpha_blend_op) are also taken into account, with [`write_r`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_write_r), [`write_g`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_write_g), [`write_b`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_write_b) and [`write_a`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_write_a) controlling the output.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -274,7 +274,7 @@ If `true`, writes the new red color channel to the final result.
 
 `void` **set_as_mix** ( )<div id="class_rdpipelinecolorblendstateattachment_method_set_as_mix"></div>
 
-Convenience method to perform standard mix blending with straight (non-premultiplied) alpha. This sets [`enable_blend`](#class_rdpipelinecolorblendstateattachment_property_enable_blend) to `true`, [`src_color_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_src_color_blend_factor) to [`RenderingDevice.BLEND_FACTOR_SRC_ALPHA`](#class_renderingdevice_constant_blend_factor_src_alpha), [`dst_color_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_dst_color_blend_factor) to [`RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA`](#class_renderingdevice_constant_blend_factor_one_minus_src_alpha), [`src_alpha_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_src_alpha_blend_factor) to [`RenderingDevice.BLEND_FACTOR_SRC_ALPHA`](#class_renderingdevice_constant_blend_factor_src_alpha) and [`dst_alpha_blend_factor`](#class_rdpipelinecolorblendstateattachment_property_dst_alpha_blend_factor) to [`RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA`](#class_renderingdevice_constant_blend_factor_one_minus_src_alpha).
+Convenience method to perform standard mix blending with straight (non-premultiplied) alpha. This sets [`enable_blend`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_enable_blend) to `true`, [`src_color_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_src_color_blend_factor) to [`RenderingDevice.BLEND_FACTOR_SRC_ALPHA`](class_renderingdevice.md#class_renderingdevice_constant_blend_factor_src_alpha), [`dst_color_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_dst_color_blend_factor) to [`RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA`](class_renderingdevice.md#class_renderingdevice_constant_blend_factor_one_minus_src_alpha), [`src_alpha_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_src_alpha_blend_factor) to [`RenderingDevice.BLEND_FACTOR_SRC_ALPHA`](class_renderingdevice.md#class_renderingdevice_constant_blend_factor_src_alpha) and [`dst_alpha_blend_factor`](class_rdpipelinecolorblendstateattachment.md#class_rdpipelinecolorblendstateattachment_property_dst_alpha_blend_factor) to [`RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA`](class_renderingdevice.md#class_renderingdevice_constant_blend_factor_one_minus_src_alpha).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

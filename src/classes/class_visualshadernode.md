@@ -21,20 +21,20 @@ Visual shader graphs consist of various nodes. Each node in the graph is a separ
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`linked_parent_graph_frame`](#class_visualshadernode_property_linked_parent_graph_frame) | ``-1`` |
-| [`int`](class_int.md) | [`output_port_for_preview`](#class_visualshadernode_property_output_port_for_preview)     | ``-1`` |
+| [`int`](class_int.md) | [`linked_parent_graph_frame`](class_visualshadernode.md#class_visualshadernode_property_linked_parent_graph_frame) | ``-1`` |
+| [`int`](class_int.md) | [`output_port_for_preview`](class_visualshadernode.md#class_visualshadernode_property_output_port_for_preview)     | ``-1`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                        | [`clear_default_input_values`](#class_visualshadernode_method_clear_default_input_values) ( )                                                                                                                         |
-| [`int`](class_int.md)         | [`get_default_input_port`](#class_visualshadernode_method_get_default_input_port) ( type: [PortType](#enum_visualshadernode_porttype) ) const[^const]                                                                 |
-| [`Array`](class_array.md)     | [`get_default_input_values`](#class_visualshadernode_method_get_default_input_values) ( ) const[^const]                                                                                                               |
-| [`Variant`](class_variant.md) | [`get_input_port_default_value`](#class_visualshadernode_method_get_input_port_default_value) ( port: [`int`](class_int.md) ) const[^const]                                                                           |
-| `void`                        | [`remove_input_port_default_value`](#class_visualshadernode_method_remove_input_port_default_value) ( port: [`int`](class_int.md) )                                                                                   |
-| `void`                        | [`set_default_input_values`](#class_visualshadernode_method_set_default_input_values) ( values: [`Array`](class_array.md) )                                                                                           |
-| `void`                        | [`set_input_port_default_value`](#class_visualshadernode_method_set_input_port_default_value) ( port: [`int`](class_int.md), value: [`Variant`](class_variant.md), prev_value: [`Variant`](class_variant.md) = null ) |
+| `void`                        | [`clear_default_input_values`](class_visualshadernode.md#class_visualshadernode_method_clear_default_input_values) ( )                                                                                                                         |
+| [`int`](class_int.md)         | [`get_default_input_port`](class_visualshadernode.md#class_visualshadernode_method_get_default_input_port) ( type: [PortType](#enum_visualshadernode_porttype) ) const[^const]                                                                 |
+| [`Array`](class_array.md)     | [`get_default_input_values`](class_visualshadernode.md#class_visualshadernode_method_get_default_input_values) ( ) const[^const]                                                                                                               |
+| [`Variant`](class_variant.md) | [`get_input_port_default_value`](class_visualshadernode.md#class_visualshadernode_method_get_input_port_default_value) ( port: [`int`](class_int.md) ) const[^const]                                                                           |
+| `void`                        | [`remove_input_port_default_value`](class_visualshadernode.md#class_visualshadernode_method_remove_input_port_default_value) ( port: [`int`](class_int.md) )                                                                                   |
+| `void`                        | [`set_default_input_values`](class_visualshadernode.md#class_visualshadernode_method_set_default_input_values) ( values: [`Array`](class_array.md) )                                                                                           |
+| `void`                        | [`set_input_port_default_value`](class_visualshadernode.md#class_visualshadernode_method_set_input_port_default_value) ( port: [`int`](class_int.md), value: [`Variant`](class_variant.md), prev_value: [`Variant`](class_variant.md) = null ) |
 
 <!-- rst-class:: classref-section-separator -->
 

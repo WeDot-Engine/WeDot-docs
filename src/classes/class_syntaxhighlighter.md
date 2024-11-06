@@ -23,13 +23,13 @@ Base class for syntax highlighters. Provides syntax highlighting data to a [`Tex
 
 |||
 |:-:|:--|
-| `void`                              | [`_clear_highlighting_cache`](#class_syntaxhighlighter_private_method__clear_highlighting_cache) ( ) virtual[^virtual]                                                   |
-| [`Dictionary`](class_dictionary.md) | [`_get_line_syntax_highlighting`](#class_syntaxhighlighter_private_method__get_line_syntax_highlighting) ( line: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
-| `void`                              | [`_update_cache`](#class_syntaxhighlighter_private_method__update_cache) ( ) virtual[^virtual]                                                                           |
-| `void`                              | [`clear_highlighting_cache`](#class_syntaxhighlighter_method_clear_highlighting_cache) ( )                                                                               |
-| [`Dictionary`](class_dictionary.md) | [`get_line_syntax_highlighting`](#class_syntaxhighlighter_method_get_line_syntax_highlighting) ( line: [`int`](class_int.md) )                                           |
-| [`TextEdit`](class_textedit.md)     | [`get_text_edit`](#class_syntaxhighlighter_method_get_text_edit) ( ) const[^const]                                                                                       |
-| `void`                              | [`update_cache`](#class_syntaxhighlighter_method_update_cache) ( )                                                                                                       |
+| `void`                              | [`_clear_highlighting_cache`](class_syntaxhighlighter.md#class_syntaxhighlighter_private_method__clear_highlighting_cache) ( ) virtual[^virtual]                                                   |
+| [`Dictionary`](class_dictionary.md) | [`_get_line_syntax_highlighting`](class_syntaxhighlighter.md#class_syntaxhighlighter_private_method__get_line_syntax_highlighting) ( line: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+| `void`                              | [`_update_cache`](class_syntaxhighlighter.md#class_syntaxhighlighter_private_method__update_cache) ( ) virtual[^virtual]                                                                           |
+| `void`                              | [`clear_highlighting_cache`](class_syntaxhighlighter.md#class_syntaxhighlighter_method_clear_highlighting_cache) ( )                                                                               |
+| [`Dictionary`](class_dictionary.md) | [`get_line_syntax_highlighting`](class_syntaxhighlighter.md#class_syntaxhighlighter_method_get_line_syntax_highlighting) ( line: [`int`](class_int.md) )                                           |
+| [`TextEdit`](class_textedit.md)     | [`get_text_edit`](class_syntaxhighlighter.md#class_syntaxhighlighter_method_get_text_edit) ( ) const[^const]                                                                                       |
+| `void`                              | [`update_cache`](class_syntaxhighlighter.md#class_syntaxhighlighter_method_update_cache) ( )                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -53,7 +53,7 @@ Virtual method which can be overridden to clear any local caches.
 
 Virtual method which can be overridden to return syntax highlighting data.
 
-See [`get_line_syntax_highlighting`](#class_syntaxhighlighter_method_get_line_syntax_highlighting) for more details.
+See [`get_line_syntax_highlighting`](class_syntaxhighlighter.md#class_syntaxhighlighter_method_get_line_syntax_highlighting) for more details.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -75,7 +75,7 @@ Virtual method which can be overridden to update any local caches.
 
 Clears all cached syntax highlighting data.
 
-Then calls overridable method [`_clear_highlighting_cache`](#class_syntaxhighlighter_private_method__clear_highlighting_cache).
+Then calls overridable method [`_clear_highlighting_cache`](class_syntaxhighlighter.md#class_syntaxhighlighter_private_method__clear_highlighting_cache).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -85,7 +85,7 @@ Then calls overridable method [`_clear_highlighting_cache`](#class_syntaxhighlig
 
 [`Dictionary`](class_dictionary.md) **get_line_syntax_highlighting** ( line: [`int`](class_int.md) )<div id="class_syntaxhighlighter_method_get_line_syntax_highlighting"></div>
 
-Returns syntax highlighting data for a single line. If the line is not cached, calls [`_get_line_syntax_highlighting`](#class_syntaxhighlighter_private_method__get_line_syntax_highlighting) to calculate the data.
+Returns syntax highlighting data for a single line. If the line is not cached, calls [`_get_line_syntax_highlighting`](class_syntaxhighlighter.md#class_syntaxhighlighter_private_method__get_line_syntax_highlighting) to calculate the data.
 
 The return [`Dictionary`](class_dictionary.md) is column number to [`Dictionary`](class_dictionary.md). The column number notes the start of a region, the region will end if another region is found, or at the end of the line. The nested [`Dictionary`](class_dictionary.md) contains the data for that region, currently only the key "color" is supported.
 
@@ -125,7 +125,7 @@ Returns the associated [`TextEdit`](class_textedit.md) node.
 
 `void` **update_cache** ( )<div id="class_syntaxhighlighter_method_update_cache"></div>
 
-Clears then updates the **SyntaxHighlighter** caches. Override [`_update_cache`](#class_syntaxhighlighter_private_method__update_cache) for a callback.
+Clears then updates the **SyntaxHighlighter** caches. Override [`_update_cache`](class_syntaxhighlighter.md#class_syntaxhighlighter_private_method__update_cache) for a callback.
 
  **Note:** This is called automatically when the associated [`TextEdit`](class_textedit.md) node, updates its own cache.
 

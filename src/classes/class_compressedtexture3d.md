@@ -23,13 +23,13 @@ See [`Texture3D`](class_texture3d.md) for a general description of 3D textures.
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`load_path`](#class_compressedtexture3d_property_load_path) | ``""`` |
+| [`String`](class_string.md) | [`load_path`](class_compressedtexture3d.md#class_compressedtexture3d_property_load_path) | ``""`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`load`](#class_compressedtexture3d_method_load) ( path: [`String`](class_string.md) ) |
+| [Error](#enum_@globalscope_error) | [`load`](class_compressedtexture3d.md#class_compressedtexture3d_method_load) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

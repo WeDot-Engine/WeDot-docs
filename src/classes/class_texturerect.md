@@ -13,18 +13,18 @@ A control that displays a texture.
 
 ## 描述
 
-A control that displays a texture, for example an icon inside a GUI. The texture's placement can be controlled with the [`stretch_mode`](#class_texturerect_property_stretch_mode) property. It can scale, tile, or stay centered inside its bounding rectangle.
+A control that displays a texture, for example an icon inside a GUI. The texture's placement can be controlled with the [`stretch_mode`](class_texturerect.md#class_texturerect_property_stretch_mode) property. It can scale, tile, or stay centered inside its bounding rectangle.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [ExpandMode](#enum_texturerect_expandmode)   | [`expand_mode`](#class_texturerect_property_expand_mode)   | ``0``                                                               |
-| [`bool`](class_bool.md)                      | [`flip_h`](#class_texturerect_property_flip_h)             | ``false``                                                           |
-| [`bool`](class_bool.md)                      | [`flip_v`](#class_texturerect_property_flip_v)             | ``false``                                                           |
-| [MouseFilter](#enum_control_mousefilter)     | mouse_filter                                               | ``1`` (overrides [`Control`](#class_control_property_mouse_filter)) |
-| [StretchMode](#enum_texturerect_stretchmode) | [`stretch_mode`](#class_texturerect_property_stretch_mode) | ``0``                                                               |
-| [`Texture2D`](class_texture2d.md)            | [`texture`](#class_texturerect_property_texture)           |                                                                     |
+| [ExpandMode](#enum_texturerect_expandmode)   | [`expand_mode`](class_texturerect.md#class_texturerect_property_expand_mode)   | ``0``                                                                               |
+| [`bool`](class_bool.md)                      | [`flip_h`](class_texturerect.md#class_texturerect_property_flip_h)             | ``false``                                                                           |
+| [`bool`](class_bool.md)                      | [`flip_v`](class_texturerect.md#class_texturerect_property_flip_v)             | ``false``                                                                           |
+| [MouseFilter](#enum_control_mousefilter)     | mouse_filter                                                                   | ``1`` (overrides [`Control`](class_control.md#class_control_property_mouse_filter)) |
+| [StretchMode](#enum_texturerect_stretchmode) | [`stretch_mode`](class_texturerect.md#class_texturerect_property_stretch_mode) | ``0``                                                                               |
+| [`Texture2D`](class_texture2d.md)            | [`texture`](class_texturerect.md#class_texturerect_property_texture)           |                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -58,7 +58,7 @@ The height of the texture will be ignored. Minimum width will be equal to the cu
 
 [ExpandMode](#enum_texturerect_expandmode) **EXPAND_FIT_WIDTH_PROPORTIONAL** = ``3``
 
-Same as [`EXPAND_FIT_WIDTH`](#class_texturerect_constant_expand_fit_width), but keeps texture's aspect ratio.
+Same as [`EXPAND_FIT_WIDTH`](class_texturerect.md#class_texturerect_constant_expand_fit_width), but keeps texture's aspect ratio.
 
 <div id="_class_texturerect_constant_expand_fit_height"></div>
 
@@ -70,7 +70,7 @@ The width of the texture will be ignored. Minimum height will be equal to the cu
 
 [ExpandMode](#enum_texturerect_expandmode) **EXPAND_FIT_HEIGHT_PROPORTIONAL** = ``5``
 
-Same as [`EXPAND_FIT_HEIGHT`](#class_texturerect_constant_expand_fit_height), but keeps texture's aspect ratio.
+Same as [`EXPAND_FIT_HEIGHT`](class_texturerect.md#class_texturerect_constant_expand_fit_height), but keeps texture's aspect ratio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -135,7 +135,7 @@ Scale the texture so that the shorter side fits the bounding rectangle. The othe
 - `void` **set_expand_mode** ( value: [ExpandMode](#enum_texturerect_expandmode) )
 - [ExpandMode](#enum_texturerect_expandmode) **get_expand_mode** ( )
 
-**实验性：** Using [`EXPAND_FIT_WIDTH`](#class_texturerect_constant_expand_fit_width), [`EXPAND_FIT_WIDTH_PROPORTIONAL`](#class_texturerect_constant_expand_fit_width_proportional), [`EXPAND_FIT_HEIGHT`](#class_texturerect_constant_expand_fit_height), or [`EXPAND_FIT_HEIGHT_PROPORTIONAL`](#class_texturerect_constant_expand_fit_height_proportional) may result in unstable behavior in some [`Container`](class_container.md) controls. This behavior may be re-evaluated and changed in the future.
+**实验性：** Using [`EXPAND_FIT_WIDTH`](class_texturerect.md#class_texturerect_constant_expand_fit_width), [`EXPAND_FIT_WIDTH_PROPORTIONAL`](class_texturerect.md#class_texturerect_constant_expand_fit_width_proportional), [`EXPAND_FIT_HEIGHT`](class_texturerect.md#class_texturerect_constant_expand_fit_height), or [`EXPAND_FIT_HEIGHT_PROPORTIONAL`](class_texturerect.md#class_texturerect_constant_expand_fit_height_proportional) may result in unstable behavior in some [`Container`](class_container.md) controls. This behavior may be re-evaluated and changed in the future.
 
 Defines how minimum size is determined based on the texture's size. See [ExpandMode](#enum_texturerect_expandmode) for options.
 

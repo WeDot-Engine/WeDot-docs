@@ -21,14 +21,14 @@ Texture with optional normal and specular maps for use in 2D rendering.
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md)               | [`diffuse_texture`](#class_canvastexture_property_diffuse_texture)       |                                                                                      |
-| [`Texture2D`](class_texture2d.md)               | [`normal_texture`](#class_canvastexture_property_normal_texture)         |                                                                                      |
-| [`bool`](class_bool.md)                         | resource_local_to_scene                                                  | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [`Color`](class_color.md)                       | [`specular_color`](#class_canvastexture_property_specular_color)         | ``Color(1, 1, 1, 1)``                                                                |
-| [`float`](class_float.md)                       | [`specular_shininess`](#class_canvastexture_property_specular_shininess) | ``1.0``                                                                              |
-| [`Texture2D`](class_texture2d.md)               | [`specular_texture`](#class_canvastexture_property_specular_texture)     |                                                                                      |
-| [TextureFilter](#enum_canvasitem_texturefilter) | [`texture_filter`](#class_canvastexture_property_texture_filter)         | ``0``                                                                                |
-| [TextureRepeat](#enum_canvasitem_texturerepeat) | [`texture_repeat`](#class_canvastexture_property_texture_repeat)         | ``0``                                                                                |
+| [`Texture2D`](class_texture2d.md)               | [`diffuse_texture`](class_canvastexture.md#class_canvastexture_property_diffuse_texture)       |                                                                                                       |
+| [`Texture2D`](class_texture2d.md)               | [`normal_texture`](class_canvastexture.md#class_canvastexture_property_normal_texture)         |                                                                                                       |
+| [`bool`](class_bool.md)                         | resource_local_to_scene                                                                        | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [`Color`](class_color.md)                       | [`specular_color`](class_canvastexture.md#class_canvastexture_property_specular_color)         | ``Color(1, 1, 1, 1)``                                                                                 |
+| [`float`](class_float.md)                       | [`specular_shininess`](class_canvastexture.md#class_canvastexture_property_specular_shininess) | ``1.0``                                                                                               |
+| [`Texture2D`](class_texture2d.md)               | [`specular_texture`](class_canvastexture.md#class_canvastexture_property_specular_texture)     |                                                                                                       |
+| [TextureFilter](#enum_canvasitem_texturefilter) | [`texture_filter`](class_canvastexture.md#class_canvastexture_property_texture_filter)         | ``0``                                                                                                 |
+| [TextureRepeat](#enum_canvasitem_texturerepeat) | [`texture_repeat`](class_canvastexture.md#class_canvastexture_property_texture_repeat)         | ``0``                                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -97,7 +97,7 @@ The specular exponent for [`Light2D`](class_light2d.md) specular reflections. Hi
 - `void` **set_specular_texture** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_specular_texture** ( )
 
-The specular map to use for [`Light2D`](class_light2d.md) specular reflections. This should be a grayscale or colored texture, with brighter areas resulting in a higher [`specular_shininess`](#class_canvastexture_property_specular_shininess) value. Using a colored [`specular_texture`](#class_canvastexture_property_specular_texture) allows controlling specular shininess on a per-channel basis. Only has a visible effect if [`Light2D`](class_light2d.md) s are affecting this **CanvasTexture**.
+The specular map to use for [`Light2D`](class_light2d.md) specular reflections. This should be a grayscale or colored texture, with brighter areas resulting in a higher [`specular_shininess`](class_canvastexture.md#class_canvastexture_property_specular_shininess) value. Using a colored [`specular_texture`](class_canvastexture.md#class_canvastexture_property_specular_texture) allows controlling specular shininess on a per-channel basis. Only has a visible effect if [`Light2D`](class_light2d.md) s are affecting this **CanvasTexture**.
 
 <!-- rst-class:: classref-item-separator -->
 

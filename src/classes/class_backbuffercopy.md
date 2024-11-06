@@ -13,7 +13,7 @@ A node that copies a region of the screen to a buffer for access in shader code.
 
 ## 描述
 
-Node for back-buffering the currently-displayed screen. The region defined in the **BackBufferCopy** node is buffered with the content of the screen it covers, or the entire screen according to the [`copy_mode`](#class_backbuffercopy_property_copy_mode). It can be accessed in shader scripts using the screen texture (i.e. a uniform sampler with `hint_screen_texture`).
+Node for back-buffering the currently-displayed screen. The region defined in the **BackBufferCopy** node is buffered with the content of the screen it covers, or the entire screen according to the [`copy_mode`](class_backbuffercopy.md#class_backbuffercopy_property_copy_mode). It can be accessed in shader scripts using the screen texture (i.e. a uniform sampler with `hint_screen_texture`).
 
  **Note:** Since this node inherits from [`Node2D`](class_node2d.md) (and not [`Control`](class_control.md)), anchors and margins won't apply to child [`Control`](class_control.md)-derived nodes. This can be problematic when resizing the window. To avoid this, add [`Control`](class_control.md)-derived nodes as *siblings* to the **BackBufferCopy** node instead of adding them as children.
 
@@ -21,8 +21,8 @@ Node for back-buffering the currently-displayed screen. The region defined in th
 
 |||
 |:-:|:--|
-| [CopyMode](#enum_backbuffercopy_copymode) | [`copy_mode`](#class_backbuffercopy_property_copy_mode) | ``1``                           |
-| [`Rect2`](class_rect2.md)                 | [`rect`](#class_backbuffercopy_property_rect)           | ``Rect2(-100, -100, 200, 200)`` |
+| [CopyMode](#enum_backbuffercopy_copymode) | [`copy_mode`](class_backbuffercopy.md#class_backbuffercopy_property_copy_mode) | ``1``                           |
+| [`Rect2`](class_rect2.md)                 | [`rect`](class_backbuffercopy.md#class_backbuffercopy_property_rect)           | ``Rect2(-100, -100, 200, 200)`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -78,7 +78,7 @@ Buffer mode. See [CopyMode](#enum_backbuffercopy_copymode) constants.
 - `void` **set_rect** ( value: [`Rect2`](class_rect2.md) )
 - [`Rect2`](class_rect2.md) **get_rect** ( )
 
-The area covered by the **BackBufferCopy**. Only used if [`copy_mode`](#class_backbuffercopy_property_copy_mode) is [`COPY_MODE_RECT`](#class_backbuffercopy_constant_copy_mode_rect).
+The area covered by the **BackBufferCopy**. Only used if [`copy_mode`](class_backbuffercopy.md#class_backbuffercopy_property_copy_mode) is [`COPY_MODE_RECT`](class_backbuffercopy.md#class_backbuffercopy_constant_copy_mode_rect).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

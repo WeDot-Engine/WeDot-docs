@@ -21,7 +21,7 @@ A 2D rectangle shape, intended for use in physics. Usually used to provide a sha
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`size`](#class_rectangleshape2d_property_size) | ``Vector2(20, 20)`` |
+| [`Vector2`](class_vector2.md) | [`size`](class_rectangleshape2d.md#class_rectangleshape2d_property_size) | ``Vector2(20, 20)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

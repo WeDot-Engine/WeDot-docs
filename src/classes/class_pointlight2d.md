@@ -19,10 +19,10 @@ Casts light in a 2D environment. This light's shape is defined by a (usually gra
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)         | [`height`](#class_pointlight2d_property_height)               | ``0.0``           |
-| [`Vector2`](class_vector2.md)     | [`offset`](#class_pointlight2d_property_offset)               | ``Vector2(0, 0)`` |
-| [`Texture2D`](class_texture2d.md) | [`texture`](#class_pointlight2d_property_texture)             |                   |
-| [`float`](class_float.md)         | [`texture_scale`](#class_pointlight2d_property_texture_scale) | ``1.0``           |
+| [`float`](class_float.md)         | [`height`](class_pointlight2d.md#class_pointlight2d_property_height)               | ``0.0``           |
+| [`Vector2`](class_vector2.md)     | [`offset`](class_pointlight2d.md#class_pointlight2d_property_offset)               | ``Vector2(0, 0)`` |
+| [`Texture2D`](class_texture2d.md) | [`texture`](class_pointlight2d.md#class_pointlight2d_property_texture)             |                   |
+| [`float`](class_float.md)         | [`texture_scale`](class_pointlight2d.md#class_pointlight2d_property_texture_scale) | ``1.0``           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -50,7 +50,7 @@ The height of the light. Used with 2D normal mapping. The units are in pixels, e
 - `void` **set_texture_offset** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_texture_offset** ( )
 
-The offset of the light's [`texture`](#class_pointlight2d_property_texture).
+The offset of the light's [`texture`](class_pointlight2d.md#class_pointlight2d_property_texture).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -76,7 +76,7 @@ The offset of the light's [`texture`](#class_pointlight2d_property_texture).
 - `void` **set_texture_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_texture_scale** ( )
 
-The [`texture`](#class_pointlight2d_property_texture)'s scale factor.
+The [`texture`](class_pointlight2d.md#class_pointlight2d_property_texture)'s scale factor.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

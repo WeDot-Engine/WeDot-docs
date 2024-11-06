@@ -13,50 +13,50 @@ Plays positional sound in 3D space.
 
 ## 描述
 
-Plays audio with positional sound effects, based on the relative position of the audio listener. Positional effects include distance attenuation, directionality, and the Doppler effect. For greater realism, a low-pass filter is applied to distant sounds. This can be disabled by setting [`attenuation_filter_cutoff_hz`](#class_audiostreamplayer3d_property_attenuation_filter_cutoff_hz) to `20500`.
+Plays audio with positional sound effects, based on the relative position of the audio listener. Positional effects include distance attenuation, directionality, and the Doppler effect. For greater realism, a low-pass filter is applied to distant sounds. This can be disabled by setting [`attenuation_filter_cutoff_hz`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_attenuation_filter_cutoff_hz) to `20500`.
 
-By default, audio is heard from the camera position. This can be changed by adding an [`AudioListener3D`](class_audiolistener3d.md) node to the scene and enabling it by calling [`AudioListener3D.make_current`](#class_audiolistener3d_method_make_current) on it.
+By default, audio is heard from the camera position. This can be changed by adding an [`AudioListener3D`](class_audiolistener3d.md) node to the scene and enabling it by calling [`AudioListener3D.make_current`](class_audiolistener3d.md#class_audiolistener3d_method_make_current) on it.
 
 See also [`AudioStreamPlayer`](class_audiostreamplayer.md) to play a sound non-positionally.
 
- **Note:** Hiding an **AudioStreamPlayer3D** node does not disable its audio output. To temporarily disable an **AudioStreamPlayer3D**'s audio output, set [`volume_db`](#class_audiostreamplayer3d_property_volume_db) to a very low value like `-100` (which isn't audible to human hearing).
+ **Note:** Hiding an **AudioStreamPlayer3D** node does not disable its audio output. To temporarily disable an **AudioStreamPlayer3D**'s audio output, set [`volume_db`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_volume_db) to a very low value like `-100` (which isn't audible to human hearing).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                                          | [`area_mask`](#class_audiostreamplayer3d_property_area_mask)                                                       | ``1``         |
-| [`float`](class_float.md)                                      | [`attenuation_filter_cutoff_hz`](#class_audiostreamplayer3d_property_attenuation_filter_cutoff_hz)                 | ``5000.0``    |
-| [`float`](class_float.md)                                      | [`attenuation_filter_db`](#class_audiostreamplayer3d_property_attenuation_filter_db)                               | ``-24.0``     |
-| [AttenuationModel](#enum_audiostreamplayer3d_attenuationmodel) | [`attenuation_model`](#class_audiostreamplayer3d_property_attenuation_model)                                       | ``0``         |
-| [`bool`](class_bool.md)                                        | [`autoplay`](#class_audiostreamplayer3d_property_autoplay)                                                         | ``false``     |
-| [`StringName`](class_stringname.md)                            | [`bus`](#class_audiostreamplayer3d_property_bus)                                                                   | ``&"Master"`` |
-| [DopplerTracking](#enum_audiostreamplayer3d_dopplertracking)   | [`doppler_tracking`](#class_audiostreamplayer3d_property_doppler_tracking)                                         | ``0``         |
-| [`float`](class_float.md)                                      | [`emission_angle_degrees`](#class_audiostreamplayer3d_property_emission_angle_degrees)                             | ``45.0``      |
-| [`bool`](class_bool.md)                                        | [`emission_angle_enabled`](#class_audiostreamplayer3d_property_emission_angle_enabled)                             | ``false``     |
-| [`float`](class_float.md)                                      | [`emission_angle_filter_attenuation_db`](#class_audiostreamplayer3d_property_emission_angle_filter_attenuation_db) | ``-12.0``     |
-| [`float`](class_float.md)                                      | [`max_db`](#class_audiostreamplayer3d_property_max_db)                                                             | ``3.0``       |
-| [`float`](class_float.md)                                      | [`max_distance`](#class_audiostreamplayer3d_property_max_distance)                                                 | ``0.0``       |
-| [`int`](class_int.md)                                          | [`max_polyphony`](#class_audiostreamplayer3d_property_max_polyphony)                                               | ``1``         |
-| [`float`](class_float.md)                                      | [`panning_strength`](#class_audiostreamplayer3d_property_panning_strength)                                         | ``1.0``       |
-| [`float`](class_float.md)                                      | [`pitch_scale`](#class_audiostreamplayer3d_property_pitch_scale)                                                   | ``1.0``       |
-| [PlaybackType](#enum_audioserver_playbacktype)                 | [`playback_type`](#class_audiostreamplayer3d_property_playback_type)                                               | ``0``         |
-| [`bool`](class_bool.md)                                        | [`playing`](#class_audiostreamplayer3d_property_playing)                                                           | ``false``     |
-| [`AudioStream`](class_audiostream.md)                          | [`stream`](#class_audiostreamplayer3d_property_stream)                                                             |               |
-| [`bool`](class_bool.md)                                        | [`stream_paused`](#class_audiostreamplayer3d_property_stream_paused)                                               | ``false``     |
-| [`float`](class_float.md)                                      | [`unit_size`](#class_audiostreamplayer3d_property_unit_size)                                                       | ``10.0``      |
-| [`float`](class_float.md)                                      | [`volume_db`](#class_audiostreamplayer3d_property_volume_db)                                                       | ``0.0``       |
+| [`int`](class_int.md)                                          | [`area_mask`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_area_mask)                                                       | ``1``         |
+| [`float`](class_float.md)                                      | [`attenuation_filter_cutoff_hz`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_attenuation_filter_cutoff_hz)                 | ``5000.0``    |
+| [`float`](class_float.md)                                      | [`attenuation_filter_db`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_attenuation_filter_db)                               | ``-24.0``     |
+| [AttenuationModel](#enum_audiostreamplayer3d_attenuationmodel) | [`attenuation_model`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_attenuation_model)                                       | ``0``         |
+| [`bool`](class_bool.md)                                        | [`autoplay`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_autoplay)                                                         | ``false``     |
+| [`StringName`](class_stringname.md)                            | [`bus`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_bus)                                                                   | ``&"Master"`` |
+| [DopplerTracking](#enum_audiostreamplayer3d_dopplertracking)   | [`doppler_tracking`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_doppler_tracking)                                         | ``0``         |
+| [`float`](class_float.md)                                      | [`emission_angle_degrees`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_emission_angle_degrees)                             | ``45.0``      |
+| [`bool`](class_bool.md)                                        | [`emission_angle_enabled`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_emission_angle_enabled)                             | ``false``     |
+| [`float`](class_float.md)                                      | [`emission_angle_filter_attenuation_db`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_emission_angle_filter_attenuation_db) | ``-12.0``     |
+| [`float`](class_float.md)                                      | [`max_db`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_max_db)                                                             | ``3.0``       |
+| [`float`](class_float.md)                                      | [`max_distance`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_max_distance)                                                 | ``0.0``       |
+| [`int`](class_int.md)                                          | [`max_polyphony`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_max_polyphony)                                               | ``1``         |
+| [`float`](class_float.md)                                      | [`panning_strength`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_panning_strength)                                         | ``1.0``       |
+| [`float`](class_float.md)                                      | [`pitch_scale`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_pitch_scale)                                                   | ``1.0``       |
+| [PlaybackType](#enum_audioserver_playbacktype)                 | [`playback_type`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_playback_type)                                               | ``0``         |
+| [`bool`](class_bool.md)                                        | [`playing`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_playing)                                                           | ``false``     |
+| [`AudioStream`](class_audiostream.md)                          | [`stream`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_stream)                                                             |               |
+| [`bool`](class_bool.md)                                        | [`stream_paused`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_stream_paused)                                               | ``false``     |
+| [`float`](class_float.md)                                      | [`unit_size`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_unit_size)                                                       | ``10.0``      |
+| [`float`](class_float.md)                                      | [`volume_db`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_volume_db)                                                       | ``0.0``       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                             | [`get_playback_position`](#class_audiostreamplayer3d_method_get_playback_position) ( )              |
-| [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](#class_audiostreamplayer3d_method_get_stream_playback) ( )                  |
-| [`bool`](class_bool.md)                               | [`has_stream_playback`](#class_audiostreamplayer3d_method_has_stream_playback) ( )                  |
-| `void`                                                | [`play`](#class_audiostreamplayer3d_method_play) ( from_position: [`float`](class_float.md) = 0.0 ) |
-| `void`                                                | [`seek`](#class_audiostreamplayer3d_method_seek) ( to_position: [`float`](class_float.md) )         |
-| `void`                                                | [`stop`](#class_audiostreamplayer3d_method_stop) ( )                                                |
+| [`float`](class_float.md)                             | [`get_playback_position`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_get_playback_position) ( )              |
+| [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_get_stream_playback) ( )                  |
+| [`bool`](class_bool.md)                               | [`has_stream_playback`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_has_stream_playback) ( )                  |
+| `void`                                                | [`play`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_play) ( from_position: [`float`](class_float.md) = 0.0 ) |
+| `void`                                                | [`seek`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_seek) ( to_position: [`float`](class_float.md) )         |
+| `void`                                                | [`stop`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_stop) ( )                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -102,7 +102,7 @@ Attenuation of loudness according to logarithmic distance.
 
 [AttenuationModel](#enum_audiostreamplayer3d_attenuationmodel) **ATTENUATION_DISABLED** = ``3``
 
-No attenuation of loudness according to distance. The sound will still be heard positionally, unlike an [`AudioStreamPlayer`](class_audiostreamplayer.md). [`ATTENUATION_DISABLED`](#class_audiostreamplayer3d_constant_attenuation_disabled) can be combined with a [`max_distance`](#class_audiostreamplayer3d_property_max_distance) value greater than `0.0` to achieve linear attenuation clamped to a sphere of a defined size.
+No attenuation of loudness according to distance. The sound will still be heard positionally, unlike an [`AudioStreamPlayer`](class_audiostreamplayer.md). [`ATTENUATION_DISABLED`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_constant_attenuation_disabled) can be combined with a [`max_distance`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_max_distance) value greater than `0.0` to achieve linear attenuation clamped to a sphere of a defined size.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -122,13 +122,13 @@ Disables doppler tracking.
 
 [DopplerTracking](#enum_audiostreamplayer3d_dopplertracking) **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-Executes doppler tracking during process frames (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](#class_node_constant_notification_internal_process)).
+Executes doppler tracking during process frames (see [`Node.NOTIFICATION_INTERNAL_PROCESS`](class_node.md#class_node_constant_notification_internal_process)).
 
 <div id="_class_audiostreamplayer3d_constant_doppler_tracking_physics_step"></div>
 
 [DopplerTracking](#enum_audiostreamplayer3d_dopplertracking) **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-Executes doppler tracking during physics frames (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](#class_node_constant_notification_internal_physics_process)).
+Executes doppler tracking during physics frames (see [`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_internal_physics_process)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -262,7 +262,7 @@ If `true`, the audio should be attenuated according to the direction of the soun
 - `void` **set_emission_angle_filter_attenuation_db** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_angle_filter_attenuation_db** ( )
 
-Attenuation factor used if listener is outside of [`emission_angle_degrees`](#class_audiostreamplayer3d_property_emission_angle_degrees) and [`emission_angle_enabled`](#class_audiostreamplayer3d_property_emission_angle_enabled) is set, in decibels.
+Attenuation factor used if listener is outside of [`emission_angle_degrees`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_emission_angle_degrees) and [`emission_angle_enabled`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_emission_angle_enabled) is set, in decibels.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -288,7 +288,7 @@ Sets the absolute maximum of the sound level, in decibels.
 - `void` **set_max_distance** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_max_distance** ( )
 
-The distance past which the sound can no longer be heard at all. Only has an effect if set to a value greater than `0.0`. [`max_distance`](#class_audiostreamplayer3d_property_max_distance) works in tandem with [`unit_size`](#class_audiostreamplayer3d_property_unit_size). However, unlike [`unit_size`](#class_audiostreamplayer3d_property_unit_size) whose behavior depends on the [`attenuation_model`](#class_audiostreamplayer3d_property_attenuation_model), [`max_distance`](#class_audiostreamplayer3d_property_max_distance) always works in a linear fashion. This can be used to prevent the **AudioStreamPlayer3D** from requiring audio mixing when the listener is far away, which saves CPU resources.
+The distance past which the sound can no longer be heard at all. Only has an effect if set to a value greater than `0.0`. [`max_distance`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_max_distance) works in tandem with [`unit_size`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_unit_size). However, unlike [`unit_size`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_unit_size) whose behavior depends on the [`attenuation_model`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_attenuation_model), [`max_distance`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_max_distance) always works in a linear fashion. This can be used to prevent the **AudioStreamPlayer3D** from requiring audio mixing when the listener is far away, which saves CPU resources.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -314,7 +314,7 @@ The maximum number of sounds this node can play at the same time. Playing additi
 - `void` **set_panning_strength** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_panning_strength** ( )
 
-Scales the panning strength for this node by multiplying the base [`ProjectSettings.audio/general/3d_panning_strength`](#class_projectsettings_property_audio/general/3d_panning_strength) with this factor. Higher values will pan audio from left to right more dramatically than lower values.
+Scales the panning strength for this node by multiplying the base [`ProjectSettings.audio/general/3d_panning_strength`](class_projectsettings.md#class_projectsettings_property_audio/general/3d_panning_strength) with this factor. Higher values will pan audio from left to right more dramatically than lower values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -354,7 +354,7 @@ The playback type of the stream player. If set other than to the default value, 
 
 - [`bool`](class_bool.md) **is_playing** ( )
 
-If `true`, audio is playing or is queued to be played (see [`play`](#class_audiostreamplayer3d_method_play)).
+If `true`, audio is playing or is queued to be played (see [`play`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_play)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -380,7 +380,7 @@ The [`AudioStream`](class_audiostream.md) resource to be played.
 - `void` **set_stream_paused** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_stream_paused** ( )
 
-If `true`, the playback is paused. You can resume it by setting [`stream_paused`](#class_audiostreamplayer3d_property_stream_paused) to `false`.
+If `true`, the playback is paused. You can resume it by setting [`stream_paused`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_stream_paused) to `false`.
 
 <!-- rst-class:: classref-item-separator -->
 

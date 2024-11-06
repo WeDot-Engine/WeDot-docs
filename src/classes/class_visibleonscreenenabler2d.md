@@ -13,18 +13,18 @@ A rectangular region of 2D space that, when visible on screen, enables a target 
 
 ## 描述
 
-**VisibleOnScreenEnabler2D** contains a rectangular region of 2D space and a target node. The target node will be automatically enabled (via its [`Node.process_mode`](#class_node_property_process_mode) property) when any part of this region becomes visible on the screen, and automatically disabled otherwise. This can for example be used to activate enemies only when the player approaches them.
+**VisibleOnScreenEnabler2D** contains a rectangular region of 2D space and a target node. The target node will be automatically enabled (via its [`Node.process_mode`](class_node.md#class_node_property_process_mode) property) when any part of this region becomes visible on the screen, and automatically disabled otherwise. This can for example be used to activate enemies only when the player approaches them.
 
 See [`VisibleOnScreenNotifier2D`](class_visibleonscreennotifier2d.md) if you only want to be notified when the region is visible on screen.
 
- **Note:** **VisibleOnScreenEnabler2D** uses the render culling code to determine whether it's visible on screen, so it won't function unless [`CanvasItem.visible`](#class_canvasitem_property_visible) is set to `true`.
+ **Note:** **VisibleOnScreenEnabler2D** uses the render culling code to determine whether it's visible on screen, so it won't function unless [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) is set to `true`.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [EnableMode](#enum_visibleonscreenenabler2d_enablemode) | [`enable_mode`](#class_visibleonscreenenabler2d_property_enable_mode)           | ``0``              |
-| [`NodePath`](class_nodepath.md)                         | [`enable_node_path`](#class_visibleonscreenenabler2d_property_enable_node_path) | ``NodePath("..")`` |
+| [EnableMode](#enum_visibleonscreenenabler2d_enablemode) | [`enable_mode`](class_visibleonscreenenabler2d.md#class_visibleonscreenenabler2d_property_enable_mode)           | ``0``              |
+| [`NodePath`](class_nodepath.md)                         | [`enable_node_path`](class_visibleonscreenenabler2d.md#class_visibleonscreenenabler2d_property_enable_node_path) | ``NodePath("..")`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -40,19 +40,19 @@ enum **EnableMode**: <div id="enum_visibleonscreenenabler2d_enablemode"></div>
 
 [EnableMode](#enum_visibleonscreenenabler2d_enablemode) **ENABLE_MODE_INHERIT** = ``0``
 
-Corresponds to [`Node.PROCESS_MODE_INHERIT`](#class_node_constant_process_mode_inherit).
+Corresponds to [`Node.PROCESS_MODE_INHERIT`](class_node.md#class_node_constant_process_mode_inherit).
 
 <div id="_class_visibleonscreenenabler2d_constant_enable_mode_always"></div>
 
 [EnableMode](#enum_visibleonscreenenabler2d_enablemode) **ENABLE_MODE_ALWAYS** = ``1``
 
-Corresponds to [`Node.PROCESS_MODE_ALWAYS`](#class_node_constant_process_mode_always).
+Corresponds to [`Node.PROCESS_MODE_ALWAYS`](class_node.md#class_node_constant_process_mode_always).
 
 <div id="_class_visibleonscreenenabler2d_constant_enable_mode_when_paused"></div>
 
 [EnableMode](#enum_visibleonscreenenabler2d_enablemode) **ENABLE_MODE_WHEN_PAUSED** = ``2``
 
-Corresponds to [`Node.PROCESS_MODE_WHEN_PAUSED`](#class_node_constant_process_mode_when_paused).
+Corresponds to [`Node.PROCESS_MODE_WHEN_PAUSED`](class_node.md#class_node_constant_process_mode_when_paused).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -67,7 +67,7 @@ Corresponds to [`Node.PROCESS_MODE_WHEN_PAUSED`](#class_node_constant_process_mo
 - `void` **set_enable_mode** ( value: [EnableMode](#enum_visibleonscreenenabler2d_enablemode) )
 - [EnableMode](#enum_visibleonscreenenabler2d_enablemode) **get_enable_mode** ( )
 
-Determines how the target node is enabled. Corresponds to [ProcessMode](#enum_node_processmode). When the node is disabled, it always uses [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled).
+Determines how the target node is enabled. Corresponds to [ProcessMode](#enum_node_processmode). When the node is disabled, it always uses [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -21,15 +21,15 @@ One shortcut can contain multiple [`InputEvent`](class_inputevent.md)'s, allowin
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md) | [`events`](#class_shortcut_property_events) | ``[]`` |
+| [`Array`](class_array.md) | [`events`](class_shortcut.md#class_shortcut_property_events) | ``[]`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_as_text`](#class_shortcut_method_get_as_text) ( ) const[^const]                                                |
-| [`bool`](class_bool.md)     | [`has_valid_event`](#class_shortcut_method_has_valid_event) ( ) const[^const]                                        |
-| [`bool`](class_bool.md)     | [`matches_event`](#class_shortcut_method_matches_event) ( event: [`InputEvent`](class_inputevent.md) ) const[^const] |
+| [`String`](class_string.md) | [`get_as_text`](class_shortcut.md#class_shortcut_method_get_as_text) ( ) const[^const]                                                |
+| [`bool`](class_bool.md)     | [`has_valid_event`](class_shortcut.md#class_shortcut_method_has_valid_event) ( ) const[^const]                                        |
+| [`bool`](class_bool.md)     | [`matches_event`](class_shortcut.md#class_shortcut_method_matches_event) ( event: [`InputEvent`](class_inputevent.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -68,7 +68,7 @@ Returns the shortcut's first valid [`InputEvent`](class_inputevent.md) as a [`St
 
 [`bool`](class_bool.md) **has_valid_event** ( ) const[^const]<div id="class_shortcut_method_has_valid_event"></div>
 
-Returns whether [`events`](#class_shortcut_property_events) contains an [`InputEvent`](class_inputevent.md) which is valid.
+Returns whether [`events`](class_shortcut.md#class_shortcut_property_events) contains an [`InputEvent`](class_inputevent.md) which is valid.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -78,7 +78,7 @@ Returns whether [`events`](#class_shortcut_property_events) contains an [`InputE
 
 [`bool`](class_bool.md) **matches_event** ( event: [`InputEvent`](class_inputevent.md) ) const[^const]<div id="class_shortcut_method_matches_event"></div>
 
-Returns whether any [`InputEvent`](class_inputevent.md) in [`events`](#class_shortcut_property_events) equals `event`.
+Returns whether any [`InputEvent`](class_inputevent.md) in [`events`](class_shortcut.md#class_shortcut_property_events) equals `event`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

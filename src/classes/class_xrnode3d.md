@@ -15,24 +15,24 @@ A spatial node that has its position automatically updated by the [`XRServer`](c
 
 ## 描述
 
-This node can be bound to a specific pose of a [`XRPositionalTracker`](class_xrpositionaltracker.md) and will automatically have its [`Node3D.transform`](#class_node3d_property_transform) updated by the [`XRServer`](class_xrserver.md). Nodes of this type must be added as children of the [`XROrigin3D`](class_xrorigin3d.md) node.
+This node can be bound to a specific pose of a [`XRPositionalTracker`](class_xrpositionaltracker.md) and will automatically have its [`Node3D.transform`](class_node3d.md#class_node3d_property_transform) updated by the [`XRServer`](class_xrserver.md). Nodes of this type must be added as children of the [`XROrigin3D`](class_xrorigin3d.md) node.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`StringName`](class_stringname.md) | [`pose`](#class_xrnode3d_property_pose)                           | ``&"default"`` |
-| [`bool`](class_bool.md)             | [`show_when_tracked`](#class_xrnode3d_property_show_when_tracked) | ``false``      |
-| [`StringName`](class_stringname.md) | [`tracker`](#class_xrnode3d_property_tracker)                     | ``&""``        |
+| [`StringName`](class_stringname.md) | [`pose`](class_xrnode3d.md#class_xrnode3d_property_pose)                           | ``&"default"`` |
+| [`bool`](class_bool.md)             | [`show_when_tracked`](class_xrnode3d.md#class_xrnode3d_property_show_when_tracked) | ``false``      |
+| [`StringName`](class_stringname.md) | [`tracker`](class_xrnode3d.md#class_xrnode3d_property_tracker)                     | ``&""``        |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | [`get_has_tracking_data`](#class_xrnode3d_method_get_has_tracking_data) ( ) const[^const]                                                                                                                                                                                     |
-| [`bool`](class_bool.md)     | [`get_is_active`](#class_xrnode3d_method_get_is_active) ( ) const[^const]                                                                                                                                                                                                     |
-| [`XRPose`](class_xrpose.md) | [`get_pose`](#class_xrnode3d_method_get_pose) ( )                                                                                                                                                                                                                             |
-| `void`                      | [`trigger_haptic_pulse`](#class_xrnode3d_method_trigger_haptic_pulse) ( action_name: [`String`](class_string.md), frequency: [`float`](class_float.md), amplitude: [`float`](class_float.md), duration_sec: [`float`](class_float.md), delay_sec: [`float`](class_float.md) ) |
+| [`bool`](class_bool.md)     | [`get_has_tracking_data`](class_xrnode3d.md#class_xrnode3d_method_get_has_tracking_data) ( ) const[^const]                                                                                                                                                                                     |
+| [`bool`](class_bool.md)     | [`get_is_active`](class_xrnode3d.md#class_xrnode3d_method_get_is_active) ( ) const[^const]                                                                                                                                                                                                     |
+| [`XRPose`](class_xrpose.md) | [`get_pose`](class_xrnode3d.md#class_xrnode3d_method_get_pose) ( )                                                                                                                                                                                                                             |
+| `void`                      | [`trigger_haptic_pulse`](class_xrnode3d.md#class_xrnode3d_method_trigger_haptic_pulse) ( action_name: [`String`](class_string.md), frequency: [`float`](class_float.md), amplitude: [`float`](class_float.md), duration_sec: [`float`](class_float.md), delay_sec: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -44,7 +44,7 @@ This node can be bound to a specific pose of a [`XRPositionalTracker`](class_xrp
 
 **tracking_changed** ( tracking: [`bool`](class_bool.md) ) <div id="class_xrnode3d_signal_tracking_changed"></div>
 
-Emitted when the [`tracker`](#class_xrnode3d_property_tracker) starts or stops receiving updated tracking data for the [`pose`](#class_xrnode3d_property_pose) being tracked. The `tracking` argument indicates whether the tracker is getting updated tracking data.
+Emitted when the [`tracker`](class_xrnode3d.md#class_xrnode3d_property_tracker) starts or stops receiving updated tracking data for the [`pose`](class_xrnode3d.md#class_xrnode3d_property_pose) being tracked. The `tracking` argument indicates whether the tracker is getting updated tracking data.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -101,7 +101,7 @@ Godot defines a number of standard trackers such as `left_hand` and `right_hand`
 
 [`bool`](class_bool.md) **get_has_tracking_data** ( ) const[^const]<div id="class_xrnode3d_method_get_has_tracking_data"></div>
 
-Returns `true` if the [`tracker`](#class_xrnode3d_property_tracker) has current tracking data for the [`pose`](#class_xrnode3d_property_pose) being tracked.
+Returns `true` if the [`tracker`](class_xrnode3d.md#class_xrnode3d_property_tracker) has current tracking data for the [`pose`](class_xrnode3d.md#class_xrnode3d_property_pose) being tracked.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -111,7 +111,7 @@ Returns `true` if the [`tracker`](#class_xrnode3d_property_tracker) has current 
 
 [`bool`](class_bool.md) **get_is_active** ( ) const[^const]<div id="class_xrnode3d_method_get_is_active"></div>
 
-Returns `true` if the [`tracker`](#class_xrnode3d_property_tracker) has been registered and the [`pose`](#class_xrnode3d_property_pose) is being tracked.
+Returns `true` if the [`tracker`](class_xrnode3d.md#class_xrnode3d_property_tracker) has been registered and the [`pose`](class_xrnode3d.md#class_xrnode3d_property_pose) is being tracked.
 
 <!-- rst-class:: classref-item-separator -->
 

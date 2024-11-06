@@ -13,7 +13,7 @@ Holds collision data from the movement of a [`PhysicsBody3D`](class_physicsbody3
 
 ## 描述
 
-Holds collision data from the movement of a [`PhysicsBody3D`](class_physicsbody3d.md), usually from [`PhysicsBody3D.move_and_collide`](#class_physicsbody3d_method_move_and_collide). When a [`PhysicsBody3D`](class_physicsbody3d.md) is moved, it stops if it detects a collision with another body. If a collision is detected, a **KinematicCollision3D** object is returned.
+Holds collision data from the movement of a [`PhysicsBody3D`](class_physicsbody3d.md), usually from [`PhysicsBody3D.move_and_collide`](class_physicsbody3d.md#class_physicsbody3d_method_move_and_collide). When a [`PhysicsBody3D`](class_physicsbody3d.md) is moved, it stops if it detects a collision with another body. If a collision is detected, a **KinematicCollision3D** object is returned.
 
 The collision data includes the colliding object, the remaining motion, and the collision position. This data can be used to determine a custom response to the collision.
 
@@ -21,20 +21,20 @@ The collision data includes the colliding object, the remaining motion, and the 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)     | [`get_angle`](#class_kinematiccollision3d_method_get_angle) ( collision_index: [`int`](class_int.md) = 0, up_direction: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0) ) const[^const] |
-| [`Object`](class_object.md)   | [`get_collider`](#class_kinematiccollision3d_method_get_collider) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                           |
-| [`int`](class_int.md)         | [`get_collider_id`](#class_kinematiccollision3d_method_get_collider_id) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                     |
-| [`RID`](class_rid.md)         | [`get_collider_rid`](#class_kinematiccollision3d_method_get_collider_rid) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                   |
-| [`Object`](class_object.md)   | [`get_collider_shape`](#class_kinematiccollision3d_method_get_collider_shape) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                               |
-| [`int`](class_int.md)         | [`get_collider_shape_index`](#class_kinematiccollision3d_method_get_collider_shape_index) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                   |
-| [`Vector3`](class_vector3.md) | [`get_collider_velocity`](#class_kinematiccollision3d_method_get_collider_velocity) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                         |
-| [`int`](class_int.md)         | [`get_collision_count`](#class_kinematiccollision3d_method_get_collision_count) ( ) const[^const]                                                                                        |
-| [`float`](class_float.md)     | [`get_depth`](#class_kinematiccollision3d_method_get_depth) ( ) const[^const]                                                                                                            |
-| [`Object`](class_object.md)   | [`get_local_shape`](#class_kinematiccollision3d_method_get_local_shape) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                     |
-| [`Vector3`](class_vector3.md) | [`get_normal`](#class_kinematiccollision3d_method_get_normal) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                               |
-| [`Vector3`](class_vector3.md) | [`get_position`](#class_kinematiccollision3d_method_get_position) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                           |
-| [`Vector3`](class_vector3.md) | [`get_remainder`](#class_kinematiccollision3d_method_get_remainder) ( ) const[^const]                                                                                                    |
-| [`Vector3`](class_vector3.md) | [`get_travel`](#class_kinematiccollision3d_method_get_travel) ( ) const[^const]                                                                                                          |
+| [`float`](class_float.md)     | [`get_angle`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_angle) ( collision_index: [`int`](class_int.md) = 0, up_direction: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0) ) const[^const] |
+| [`Object`](class_object.md)   | [`get_collider`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_collider) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                           |
+| [`int`](class_int.md)         | [`get_collider_id`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_collider_id) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                     |
+| [`RID`](class_rid.md)         | [`get_collider_rid`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_collider_rid) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                   |
+| [`Object`](class_object.md)   | [`get_collider_shape`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_collider_shape) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                               |
+| [`int`](class_int.md)         | [`get_collider_shape_index`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_collider_shape_index) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                   |
+| [`Vector3`](class_vector3.md) | [`get_collider_velocity`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_collider_velocity) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                         |
+| [`int`](class_int.md)         | [`get_collision_count`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_collision_count) ( ) const[^const]                                                                                        |
+| [`float`](class_float.md)     | [`get_depth`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_depth) ( ) const[^const]                                                                                                            |
+| [`Object`](class_object.md)   | [`get_local_shape`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_local_shape) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                     |
+| [`Vector3`](class_vector3.md) | [`get_normal`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_normal) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                               |
+| [`Vector3`](class_vector3.md) | [`get_position`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_position) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                                                           |
+| [`Vector3`](class_vector3.md) | [`get_remainder`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_remainder) ( ) const[^const]                                                                                                    |
+| [`Vector3`](class_vector3.md) | [`get_travel`](class_kinematiccollision3d.md#class_kinematiccollision3d_method_get_travel) ( ) const[^const]                                                                                                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,7 +46,7 @@ The collision data includes the colliding object, the remaining motion, and the 
 
 [`float`](class_float.md) **get_angle** ( collision_index: [`int`](class_int.md) = 0, up_direction: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0) ) const[^const]<div id="class_kinematiccollision3d_method_get_angle"></div>
 
-Returns the collision angle according to `up_direction`, which is [`Vector3.UP`](#class_vector3_constant_up) by default. This value is always positive.
+Returns the collision angle according to `up_direction`, which is [`Vector3.UP`](class_vector3.md#class_vector3_constant_up) by default. This value is always positive.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -66,7 +66,7 @@ Returns the colliding body's attached [`Object`](class_object.md) given a collis
 
 [`int`](class_int.md) **get_collider_id** ( collision_index: [`int`](class_int.md) = 0 ) const[^const]<div id="class_kinematiccollision3d_method_get_collider_id"></div>
 
-Returns the unique instance ID of the colliding body's attached [`Object`](class_object.md) given a collision index (the deepest collision by default). See [`Object.get_instance_id`](#class_object_method_get_instance_id).
+Returns the unique instance ID of the colliding body's attached [`Object`](class_object.md) given a collision index (the deepest collision by default). See [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id).
 
 <!-- rst-class:: classref-item-separator -->
 

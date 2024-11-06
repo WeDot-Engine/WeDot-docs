@@ -21,20 +21,20 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 |||
 |:-:|:--|
-| [ActionMode](#enum_basebutton_actionmode) | action_mode                                                     | ``0`` (overrides [`BaseButton`](#class_basebutton_property_action_mode))    |
-| [`bool`](class_bool.md)                   | flat                                                            | ``true`` (overrides [`Button`](#class_button_property_flat))                |
-| [FocusMode](#enum_control_focusmode)      | focus_mode                                                      | ``0`` (overrides [`Control`](#class_control_property_focus_mode))           |
-| [`int`](class_int.md)                     | [`item_count`](#class_menubutton_property_item_count)           | ``0``                                                                       |
-| [`bool`](class_bool.md)                   | [`switch_on_hover`](#class_menubutton_property_switch_on_hover) | ``false``                                                                   |
-| [`bool`](class_bool.md)                   | toggle_mode                                                     | ``true`` (overrides [`BaseButton`](#class_basebutton_property_toggle_mode)) |
+| [ActionMode](#enum_basebutton_actionmode) | action_mode                                                                        | ``0`` (overrides [`BaseButton`](class_basebutton.md#class_basebutton_property_action_mode))    |
+| [`bool`](class_bool.md)                   | flat                                                                               | ``true`` (overrides [`Button`](class_button.md#class_button_property_flat))                    |
+| [FocusMode](#enum_control_focusmode)      | focus_mode                                                                         | ``0`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))              |
+| [`int`](class_int.md)                     | [`item_count`](class_menubutton.md#class_menubutton_property_item_count)           | ``0``                                                                                          |
+| [`bool`](class_bool.md)                   | [`switch_on_hover`](class_menubutton.md#class_menubutton_property_switch_on_hover) | ``false``                                                                                      |
+| [`bool`](class_bool.md)                   | toggle_mode                                                                        | ``true`` (overrides [`BaseButton`](class_basebutton.md#class_basebutton_property_toggle_mode)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PopupMenu`](class_popupmenu.md) | [`get_popup`](#class_menubutton_method_get_popup) ( ) const[^const]                                             |
-| `void`                            | [`set_disable_shortcuts`](#class_menubutton_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) ) |
-| `void`                            | [`show_popup`](#class_menubutton_method_show_popup) ( )                                                         |
+| [`PopupMenu`](class_popupmenu.md) | [`get_popup`](class_menubutton.md#class_menubutton_method_get_popup) ( ) const[^const]                                             |
+| `void`                            | [`set_disable_shortcuts`](class_menubutton.md#class_menubutton_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) ) |
+| `void`                            | [`show_popup`](class_menubutton.md#class_menubutton_method_show_popup) ( )                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -74,7 +74,7 @@ The number of items currently in the list.
 - `void` **set_switch_on_hover** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_switch_on_hover** ( )
 
-If `true`, when the cursor hovers above another **MenuButton** within the same parent which also has [`switch_on_hover`](#class_menubutton_property_switch_on_hover) enabled, it will close the current **MenuButton** and open the other one.
+If `true`, when the cursor hovers above another **MenuButton** within the same parent which also has [`switch_on_hover`](class_menubutton.md#class_menubutton_property_switch_on_hover) enabled, it will close the current **MenuButton** and open the other one.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -88,7 +88,7 @@ If `true`, when the cursor hovers above another **MenuButton** within the same p
 
 Returns the [`PopupMenu`](class_popupmenu.md) contained in this button.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](#class_window_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](class_window.md#class_window_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 

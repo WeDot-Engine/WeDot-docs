@@ -13,9 +13,9 @@ A 2D shape that sweeps a region of space to detect [`CollisionObject2D`](class_c
 
 ## 描述
 
-Shape casting allows to detect collision objects by sweeping its [`shape`](#class_shapecast2d_property_shape) along the cast direction determined by [`target_position`](#class_shapecast2d_property_target_position). This is similar to [`RayCast2D`](class_raycast2d.md), but it allows for sweeping a region of space, rather than just a straight line. **ShapeCast2D** can detect multiple collision objects. It is useful for things like wide laser beams or snapping a simple shape to a floor.
+Shape casting allows to detect collision objects by sweeping its [`shape`](class_shapecast2d.md#class_shapecast2d_property_shape) along the cast direction determined by [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position). This is similar to [`RayCast2D`](class_raycast2d.md), but it allows for sweeping a region of space, rather than just a straight line. **ShapeCast2D** can detect multiple collision objects. It is useful for things like wide laser beams or snapping a simple shape to a floor.
 
-Immediate collision overlaps can be done with the [`target_position`](#class_shapecast2d_property_target_position) set to `Vector2(0, 0)` and by calling [`force_shapecast_update`](#class_shapecast2d_method_force_shapecast_update) within the same physics frame. This helps to overcome some limitations of [`Area2D`](class_area2d.md) when used as an instantaneous detection area, as collision information isn't immediately available to it.
+Immediate collision overlaps can be done with the [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position) set to `Vector2(0, 0)` and by calling [`force_shapecast_update`](class_shapecast2d.md#class_shapecast2d_method_force_shapecast_update) within the same physics frame. This helps to overcome some limitations of [`Area2D`](class_area2d.md) when used as an instantaneous detection area, as collision information isn't immediately available to it.
 
  **Note:** Shape casting is more computationally expensive than ray casting.
 
@@ -23,38 +23,38 @@ Immediate collision overlaps can be done with the [`target_position`](#class_sha
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)       | [`collide_with_areas`](#class_shapecast2d_property_collide_with_areas)   | ``false``          |
-| [`bool`](class_bool.md)       | [`collide_with_bodies`](#class_shapecast2d_property_collide_with_bodies) | ``true``           |
-| [`int`](class_int.md)         | [`collision_mask`](#class_shapecast2d_property_collision_mask)           | ``1``              |
-| [`Array`](class_array.md)     | [`collision_result`](#class_shapecast2d_property_collision_result)       | ``[]``             |
-| [`bool`](class_bool.md)       | [`enabled`](#class_shapecast2d_property_enabled)                         | ``true``           |
-| [`bool`](class_bool.md)       | [`exclude_parent`](#class_shapecast2d_property_exclude_parent)           | ``true``           |
-| [`float`](class_float.md)     | [`margin`](#class_shapecast2d_property_margin)                           | ``0.0``            |
-| [`int`](class_int.md)         | [`max_results`](#class_shapecast2d_property_max_results)                 | ``32``             |
-| [`Shape2D`](class_shape2d.md) | [`shape`](#class_shapecast2d_property_shape)                             |                    |
-| [`Vector2`](class_vector2.md) | [`target_position`](#class_shapecast2d_property_target_position)         | ``Vector2(0, 50)`` |
+| [`bool`](class_bool.md)       | [`collide_with_areas`](class_shapecast2d.md#class_shapecast2d_property_collide_with_areas)   | ``false``          |
+| [`bool`](class_bool.md)       | [`collide_with_bodies`](class_shapecast2d.md#class_shapecast2d_property_collide_with_bodies) | ``true``           |
+| [`int`](class_int.md)         | [`collision_mask`](class_shapecast2d.md#class_shapecast2d_property_collision_mask)           | ``1``              |
+| [`Array`](class_array.md)     | [`collision_result`](class_shapecast2d.md#class_shapecast2d_property_collision_result)       | ``[]``             |
+| [`bool`](class_bool.md)       | [`enabled`](class_shapecast2d.md#class_shapecast2d_property_enabled)                         | ``true``           |
+| [`bool`](class_bool.md)       | [`exclude_parent`](class_shapecast2d.md#class_shapecast2d_property_exclude_parent)           | ``true``           |
+| [`float`](class_float.md)     | [`margin`](class_shapecast2d.md#class_shapecast2d_property_margin)                           | ``0.0``            |
+| [`int`](class_int.md)         | [`max_results`](class_shapecast2d.md#class_shapecast2d_property_max_results)                 | ``32``             |
+| [`Shape2D`](class_shape2d.md) | [`shape`](class_shapecast2d.md#class_shapecast2d_property_shape)                             |                    |
+| [`Vector2`](class_vector2.md) | [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position)         | ``Vector2(0, 50)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                        | [`add_exception`](#class_shapecast2d_method_add_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                                   |
-| `void`                        | [`add_exception_rid`](#class_shapecast2d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
-| `void`                        | [`clear_exceptions`](#class_shapecast2d_method_clear_exceptions) ( )                                                                                     |
-| `void`                        | [`force_shapecast_update`](#class_shapecast2d_method_force_shapecast_update) ( )                                                                         |
-| [`float`](class_float.md)     | [`get_closest_collision_safe_fraction`](#class_shapecast2d_method_get_closest_collision_safe_fraction) ( ) const[^const]                                 |
-| [`float`](class_float.md)     | [`get_closest_collision_unsafe_fraction`](#class_shapecast2d_method_get_closest_collision_unsafe_fraction) ( ) const[^const]                             |
-| [`Object`](class_object.md)   | [`get_collider`](#class_shapecast2d_method_get_collider) ( index: [`int`](class_int.md) ) const[^const]                                                  |
-| [`RID`](class_rid.md)         | [`get_collider_rid`](#class_shapecast2d_method_get_collider_rid) ( index: [`int`](class_int.md) ) const[^const]                                          |
-| [`int`](class_int.md)         | [`get_collider_shape`](#class_shapecast2d_method_get_collider_shape) ( index: [`int`](class_int.md) ) const[^const]                                      |
-| [`int`](class_int.md)         | [`get_collision_count`](#class_shapecast2d_method_get_collision_count) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)       | [`get_collision_mask_value`](#class_shapecast2d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`Vector2`](class_vector2.md) | [`get_collision_normal`](#class_shapecast2d_method_get_collision_normal) ( index: [`int`](class_int.md) ) const[^const]                                  |
-| [`Vector2`](class_vector2.md) | [`get_collision_point`](#class_shapecast2d_method_get_collision_point) ( index: [`int`](class_int.md) ) const[^const]                                    |
-| [`bool`](class_bool.md)       | [`is_colliding`](#class_shapecast2d_method_is_colliding) ( ) const[^const]                                                                               |
-| `void`                        | [`remove_exception`](#class_shapecast2d_method_remove_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                             |
-| `void`                        | [`remove_exception_rid`](#class_shapecast2d_method_remove_exception_rid) ( rid: [`RID`](class_rid.md) )                                                  |
-| `void`                        | [`set_collision_mask_value`](#class_shapecast2d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                        | [`add_exception`](class_shapecast2d.md#class_shapecast2d_method_add_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                                   |
+| `void`                        | [`add_exception_rid`](class_shapecast2d.md#class_shapecast2d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
+| `void`                        | [`clear_exceptions`](class_shapecast2d.md#class_shapecast2d_method_clear_exceptions) ( )                                                                                     |
+| `void`                        | [`force_shapecast_update`](class_shapecast2d.md#class_shapecast2d_method_force_shapecast_update) ( )                                                                         |
+| [`float`](class_float.md)     | [`get_closest_collision_safe_fraction`](class_shapecast2d.md#class_shapecast2d_method_get_closest_collision_safe_fraction) ( ) const[^const]                                 |
+| [`float`](class_float.md)     | [`get_closest_collision_unsafe_fraction`](class_shapecast2d.md#class_shapecast2d_method_get_closest_collision_unsafe_fraction) ( ) const[^const]                             |
+| [`Object`](class_object.md)   | [`get_collider`](class_shapecast2d.md#class_shapecast2d_method_get_collider) ( index: [`int`](class_int.md) ) const[^const]                                                  |
+| [`RID`](class_rid.md)         | [`get_collider_rid`](class_shapecast2d.md#class_shapecast2d_method_get_collider_rid) ( index: [`int`](class_int.md) ) const[^const]                                          |
+| [`int`](class_int.md)         | [`get_collider_shape`](class_shapecast2d.md#class_shapecast2d_method_get_collider_shape) ( index: [`int`](class_int.md) ) const[^const]                                      |
+| [`int`](class_int.md)         | [`get_collision_count`](class_shapecast2d.md#class_shapecast2d_method_get_collision_count) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)       | [`get_collision_mask_value`](class_shapecast2d.md#class_shapecast2d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`Vector2`](class_vector2.md) | [`get_collision_normal`](class_shapecast2d.md#class_shapecast2d_method_get_collision_normal) ( index: [`int`](class_int.md) ) const[^const]                                  |
+| [`Vector2`](class_vector2.md) | [`get_collision_point`](class_shapecast2d.md#class_shapecast2d_method_get_collision_point) ( index: [`int`](class_int.md) ) const[^const]                                    |
+| [`bool`](class_bool.md)       | [`is_colliding`](class_shapecast2d.md#class_shapecast2d_method_is_colliding) ( ) const[^const]                                                                               |
+| `void`                        | [`remove_exception`](class_shapecast2d.md#class_shapecast2d_method_remove_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                             |
+| `void`                        | [`remove_exception_rid`](class_shapecast2d.md#class_shapecast2d_method_remove_exception_rid) ( rid: [`RID`](class_rid.md) )                                                  |
+| `void`                        | [`set_collision_mask_value`](class_shapecast2d.md#class_shapecast2d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -105,7 +105,7 @@ The shape's collision mask. Only objects in at least one collision layer enabled
 
 [`Array`](class_array.md) **collision_result** = ``[]`` <div id="class_shapecast2d_property_collision_result"></div>
 
-Returns the complete collision information from the collision sweep. The data returned is the same as in the [`PhysicsDirectSpaceState2D.get_rest_info`](#class_physicsdirectspacestate2d_method_get_rest_info) method.
+Returns the complete collision information from the collision sweep. The data returned is the same as in the [`PhysicsDirectSpaceState2D.get_rest_info`](class_physicsdirectspacestate2d.md#class_physicsdirectspacestate2d_method_get_rest_info) method.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -237,7 +237,7 @@ Updates the collision information for the shape immediately, without waiting for
 
 [`float`](class_float.md) **get_closest_collision_safe_fraction** ( ) const[^const]<div id="class_shapecast2d_method_get_closest_collision_safe_fraction"></div>
 
-The fraction from the **ShapeCast2D**'s origin to its [`target_position`](#class_shapecast2d_property_target_position) (between 0 and 1) of how far the shape can move without triggering a collision.
+The fraction from the **ShapeCast2D**'s origin to its [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position) (between 0 and 1) of how far the shape can move without triggering a collision.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -247,9 +247,9 @@ The fraction from the **ShapeCast2D**'s origin to its [`target_position`](#class
 
 [`float`](class_float.md) **get_closest_collision_unsafe_fraction** ( ) const[^const]<div id="class_shapecast2d_method_get_closest_collision_unsafe_fraction"></div>
 
-The fraction from the **ShapeCast2D**'s origin to its [`target_position`](#class_shapecast2d_property_target_position) (between 0 and 1) of how far the shape must move to trigger a collision.
+The fraction from the **ShapeCast2D**'s origin to its [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position) (between 0 and 1) of how far the shape must move to trigger a collision.
 
-In ideal conditions this would be the same as [`get_closest_collision_safe_fraction`](#class_shapecast2d_method_get_closest_collision_safe_fraction), however shape casting is calculated in discrete steps, so the precise point of collision can occur between two calculated positions.
+In ideal conditions this would be the same as [`get_closest_collision_safe_fraction`](class_shapecast2d.md#class_shapecast2d_method_get_closest_collision_safe_fraction), however shape casting is calculated in discrete steps, so the precise point of collision can occur between two calculated positions.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -259,7 +259,7 @@ In ideal conditions this would be the same as [`get_closest_collision_safe_fract
 
 [`Object`](class_object.md) **get_collider** ( index: [`int`](class_int.md) ) const[^const]<div id="class_shapecast2d_method_get_collider"></div>
 
-Returns the collided [`Object`](class_object.md) of one of the multiple collisions at `index`, or `null` if no object is intersecting the shape (i.e. [`is_colliding`](#class_shapecast2d_method_is_colliding) returns `false`).
+Returns the collided [`Object`](class_object.md) of one of the multiple collisions at `index`, or `null` if no object is intersecting the shape (i.e. [`is_colliding`](class_shapecast2d.md#class_shapecast2d_method_is_colliding) returns `false`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -279,7 +279,7 @@ Returns the [`RID`](class_rid.md) of the collided object of one of the multiple 
 
 [`int`](class_int.md) **get_collider_shape** ( index: [`int`](class_int.md) ) const[^const]<div id="class_shapecast2d_method_get_collider_shape"></div>
 
-Returns the shape ID of the colliding shape of one of the multiple collisions at `index`, or `0` if no object is intersecting the shape (i.e. [`is_colliding`](#class_shapecast2d_method_is_colliding) returns `false`).
+Returns the shape ID of the colliding shape of one of the multiple collisions at `index`, or `0` if no object is intersecting the shape (i.e. [`is_colliding`](class_shapecast2d.md#class_shapecast2d_method_is_colliding) returns `false`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -289,7 +289,7 @@ Returns the shape ID of the colliding shape of one of the multiple collisions at
 
 [`int`](class_int.md) **get_collision_count** ( ) const[^const]<div id="class_shapecast2d_method_get_collision_count"></div>
 
-The number of collisions detected at the point of impact. Use this to iterate over multiple collisions as provided by [`get_collider`](#class_shapecast2d_method_get_collider), [`get_collider_shape`](#class_shapecast2d_method_get_collider_shape), [`get_collision_point`](#class_shapecast2d_method_get_collision_point), and [`get_collision_normal`](#class_shapecast2d_method_get_collision_normal) methods.
+The number of collisions detected at the point of impact. Use this to iterate over multiple collisions as provided by [`get_collider`](class_shapecast2d.md#class_shapecast2d_method_get_collider), [`get_collider_shape`](class_shapecast2d.md#class_shapecast2d_method_get_collider_shape), [`get_collision_point`](class_shapecast2d.md#class_shapecast2d_method_get_collision_point), and [`get_collision_normal`](class_shapecast2d.md#class_shapecast2d_method_get_collision_normal) methods.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -299,7 +299,7 @@ The number of collisions detected at the point of impact. Use this to iterate ov
 
 [`bool`](class_bool.md) **get_collision_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_shapecast2d_method_get_collision_mask_value"></div>
 
-Returns whether or not the specified layer of the [`collision_mask`](#class_shapecast2d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_mask`](class_shapecast2d.md#class_shapecast2d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -361,7 +361,7 @@ Removes a collision exception so the shape does report collisions with the speci
 
 `void` **set_collision_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_shapecast2d_method_set_collision_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_mask`](#class_shapecast2d_property_collision_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_mask`](class_shapecast2d.md#class_shapecast2d_property_collision_mask), given a `layer_number` between 1 and 32.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

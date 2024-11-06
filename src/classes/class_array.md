@@ -43,11 +43,11 @@ An array data structure that can contain a sequence of elements of any [`Variant
 
 
 
- **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](#class_array_method_duplicate).
+ **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](class_array.md#class_array_method_duplicate).
 
  **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
 
- **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. [`PackedInt64Array`](class_packedint64array.md) versus `Array[int]`). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as [`map`](#class_array_method_map). Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. [`PackedInt64Array`](class_packedint64array.md) versus `Array[int]`). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as [`map`](class_array.md#class_array_method_map). Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
 
 
@@ -59,70 +59,70 @@ An array data structure that can contain a sequence of elements of any [`Variant
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( )                                                                                                                                                      |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( base: [`Array`](class_array.md), type: [`int`](class_int.md), class_name: [`StringName`](class_stringname.md), script: [`Variant`](class_variant.md) ) |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`Array`](class_array.md) )                                                                                                                      |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                  |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedColorArray`](class_packedcolorarray.md) )                                                                                                |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedFloat32Array`](class_packedfloat32array.md) )                                                                                            |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedFloat64Array`](class_packedfloat64array.md) )                                                                                            |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedInt32Array`](class_packedint32array.md) )                                                                                                |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedInt64Array`](class_packedint64array.md) )                                                                                                |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedStringArray`](class_packedstringarray.md) )                                                                                              |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                            |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedVector3Array`](class_packedvector3array.md) )                                                                                            |
-| [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`PackedVector4Array`](class_packedvector4array.md) )                                                                                            |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( )                                                                                                                                                      |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( base: [`Array`](class_array.md), type: [`int`](class_int.md), class_name: [`StringName`](class_stringname.md), script: [`Variant`](class_variant.md) ) |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`Array`](class_array.md) )                                                                                                                      |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                  |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedColorArray`](class_packedcolorarray.md) )                                                                                                |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedFloat32Array`](class_packedfloat32array.md) )                                                                                            |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedFloat64Array`](class_packedfloat64array.md) )                                                                                            |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedInt32Array`](class_packedint32array.md) )                                                                                                |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedInt64Array`](class_packedint64array.md) )                                                                                                |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedStringArray`](class_packedstringarray.md) )                                                                                              |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                            |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedVector3Array`](class_packedvector3array.md) )                                                                                            |
+| [`Array`](class_array.md) | [`Array`](class_array.md#class_array_constructor_array) ( from: [`PackedVector4Array`](class_packedvector4array.md) )                                                                                            |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)             | [`all`](#class_array_method_all) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                           |
-| [`bool`](class_bool.md)             | [`any`](#class_array_method_any) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                           |
-| `void`                              | [`append`](#class_array_method_append) ( value: [`Variant`](class_variant.md) )                                                                                                                      |
-| `void`                              | [`append_array`](#class_array_method_append_array) ( array: [`Array`](class_array.md) )                                                                                                              |
-| `void`                              | [`assign`](#class_array_method_assign) ( array: [`Array`](class_array.md) )                                                                                                                          |
-| [`Variant`](class_variant.md)       | [`back`](#class_array_method_back) ( ) const[^const]                                                                                                                                                 |
-| [`int`](class_int.md)               | [`bsearch`](#class_array_method_bsearch) ( value: [`Variant`](class_variant.md), before: [`bool`](class_bool.md) = true ) const[^const]                                                              |
-| [`int`](class_int.md)               | [`bsearch_custom`](#class_array_method_bsearch_custom) ( value: [`Variant`](class_variant.md), func: [`Callable`](class_callable.md), before: [`bool`](class_bool.md) = true ) const[^const]         |
-| `void`                              | [`clear`](#class_array_method_clear) ( )                                                                                                                                                             |
-| [`int`](class_int.md)               | [`count`](#class_array_method_count) ( value: [`Variant`](class_variant.md) ) const[^const]                                                                                                          |
-| [`Array`](class_array.md)           | [`duplicate`](#class_array_method_duplicate) ( deep: [`bool`](class_bool.md) = false ) const[^const]                                                                                                 |
-| `void`                              | [`erase`](#class_array_method_erase) ( value: [`Variant`](class_variant.md) )                                                                                                                        |
-| `void`                              | [`fill`](#class_array_method_fill) ( value: [`Variant`](class_variant.md) )                                                                                                                          |
-| [`Array`](class_array.md)           | [`filter`](#class_array_method_filter) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                     |
-| [`int`](class_int.md)               | [`find`](#class_array_method_find) ( what: [`Variant`](class_variant.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                                            |
-| [`Variant`](class_variant.md)       | [`front`](#class_array_method_front) ( ) const[^const]                                                                                                                                               |
-| [`int`](class_int.md)               | [`get_typed_builtin`](#class_array_method_get_typed_builtin) ( ) const[^const]                                                                                                                       |
-| [`StringName`](class_stringname.md) | [`get_typed_class_name`](#class_array_method_get_typed_class_name) ( ) const[^const]                                                                                                                 |
-| [`Variant`](class_variant.md)       | [`get_typed_script`](#class_array_method_get_typed_script) ( ) const[^const]                                                                                                                         |
-| [`bool`](class_bool.md)             | [`has`](#class_array_method_has) ( value: [`Variant`](class_variant.md) ) const[^const]                                                                                                              |
-| [`int`](class_int.md)               | [`hash`](#class_array_method_hash) ( ) const[^const]                                                                                                                                                 |
-| [`int`](class_int.md)               | [`insert`](#class_array_method_insert) ( position: [`int`](class_int.md), value: [`Variant`](class_variant.md) )                                                                                     |
-| [`bool`](class_bool.md)             | [`is_empty`](#class_array_method_is_empty) ( ) const[^const]                                                                                                                                         |
-| [`bool`](class_bool.md)             | [`is_read_only`](#class_array_method_is_read_only) ( ) const[^const]                                                                                                                                 |
-| [`bool`](class_bool.md)             | [`is_same_typed`](#class_array_method_is_same_typed) ( array: [`Array`](class_array.md) ) const[^const]                                                                                              |
-| [`bool`](class_bool.md)             | [`is_typed`](#class_array_method_is_typed) ( ) const[^const]                                                                                                                                         |
-| `void`                              | [`make_read_only`](#class_array_method_make_read_only) ( )                                                                                                                                           |
-| [`Array`](class_array.md)           | [`map`](#class_array_method_map) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                           |
-| [`Variant`](class_variant.md)       | [`max`](#class_array_method_max) ( ) const[^const]                                                                                                                                                   |
-| [`Variant`](class_variant.md)       | [`min`](#class_array_method_min) ( ) const[^const]                                                                                                                                                   |
-| [`Variant`](class_variant.md)       | [`pick_random`](#class_array_method_pick_random) ( ) const[^const]                                                                                                                                   |
-| [`Variant`](class_variant.md)       | [`pop_at`](#class_array_method_pop_at) ( position: [`int`](class_int.md) )                                                                                                                           |
-| [`Variant`](class_variant.md)       | [`pop_back`](#class_array_method_pop_back) ( )                                                                                                                                                       |
-| [`Variant`](class_variant.md)       | [`pop_front`](#class_array_method_pop_front) ( )                                                                                                                                                     |
-| `void`                              | [`push_back`](#class_array_method_push_back) ( value: [`Variant`](class_variant.md) )                                                                                                                |
-| `void`                              | [`push_front`](#class_array_method_push_front) ( value: [`Variant`](class_variant.md) )                                                                                                              |
-| [`Variant`](class_variant.md)       | [`reduce`](#class_array_method_reduce) ( method: [`Callable`](class_callable.md), accum: [`Variant`](class_variant.md) = null ) const[^const]                                                        |
-| `void`                              | [`remove_at`](#class_array_method_remove_at) ( position: [`int`](class_int.md) )                                                                                                                     |
-| [`int`](class_int.md)               | [`resize`](#class_array_method_resize) ( size: [`int`](class_int.md) )                                                                                                                               |
-| `void`                              | [`reverse`](#class_array_method_reverse) ( )                                                                                                                                                         |
-| [`int`](class_int.md)               | [`rfind`](#class_array_method_rfind) ( what: [`Variant`](class_variant.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                                         |
-| `void`                              | [`shuffle`](#class_array_method_shuffle) ( )                                                                                                                                                         |
-| [`int`](class_int.md)               | [`size`](#class_array_method_size) ( ) const[^const]                                                                                                                                                 |
-| [`Array`](class_array.md)           | [`slice`](#class_array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647, step: [`int`](class_int.md) = 1, deep: [`bool`](class_bool.md) = false ) const[^const] |
-| `void`                              | [`sort`](#class_array_method_sort) ( )                                                                                                                                                               |
-| `void`                              | [`sort_custom`](#class_array_method_sort_custom) ( func: [`Callable`](class_callable.md) )                                                                                                           |
+| [`bool`](class_bool.md)             | [`all`](class_array.md#class_array_method_all) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                           |
+| [`bool`](class_bool.md)             | [`any`](class_array.md#class_array_method_any) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                           |
+| `void`                              | [`append`](class_array.md#class_array_method_append) ( value: [`Variant`](class_variant.md) )                                                                                                                      |
+| `void`                              | [`append_array`](class_array.md#class_array_method_append_array) ( array: [`Array`](class_array.md) )                                                                                                              |
+| `void`                              | [`assign`](class_array.md#class_array_method_assign) ( array: [`Array`](class_array.md) )                                                                                                                          |
+| [`Variant`](class_variant.md)       | [`back`](class_array.md#class_array_method_back) ( ) const[^const]                                                                                                                                                 |
+| [`int`](class_int.md)               | [`bsearch`](class_array.md#class_array_method_bsearch) ( value: [`Variant`](class_variant.md), before: [`bool`](class_bool.md) = true ) const[^const]                                                              |
+| [`int`](class_int.md)               | [`bsearch_custom`](class_array.md#class_array_method_bsearch_custom) ( value: [`Variant`](class_variant.md), func: [`Callable`](class_callable.md), before: [`bool`](class_bool.md) = true ) const[^const]         |
+| `void`                              | [`clear`](class_array.md#class_array_method_clear) ( )                                                                                                                                                             |
+| [`int`](class_int.md)               | [`count`](class_array.md#class_array_method_count) ( value: [`Variant`](class_variant.md) ) const[^const]                                                                                                          |
+| [`Array`](class_array.md)           | [`duplicate`](class_array.md#class_array_method_duplicate) ( deep: [`bool`](class_bool.md) = false ) const[^const]                                                                                                 |
+| `void`                              | [`erase`](class_array.md#class_array_method_erase) ( value: [`Variant`](class_variant.md) )                                                                                                                        |
+| `void`                              | [`fill`](class_array.md#class_array_method_fill) ( value: [`Variant`](class_variant.md) )                                                                                                                          |
+| [`Array`](class_array.md)           | [`filter`](class_array.md#class_array_method_filter) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                     |
+| [`int`](class_int.md)               | [`find`](class_array.md#class_array_method_find) ( what: [`Variant`](class_variant.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                                            |
+| [`Variant`](class_variant.md)       | [`front`](class_array.md#class_array_method_front) ( ) const[^const]                                                                                                                                               |
+| [`int`](class_int.md)               | [`get_typed_builtin`](class_array.md#class_array_method_get_typed_builtin) ( ) const[^const]                                                                                                                       |
+| [`StringName`](class_stringname.md) | [`get_typed_class_name`](class_array.md#class_array_method_get_typed_class_name) ( ) const[^const]                                                                                                                 |
+| [`Variant`](class_variant.md)       | [`get_typed_script`](class_array.md#class_array_method_get_typed_script) ( ) const[^const]                                                                                                                         |
+| [`bool`](class_bool.md)             | [`has`](class_array.md#class_array_method_has) ( value: [`Variant`](class_variant.md) ) const[^const]                                                                                                              |
+| [`int`](class_int.md)               | [`hash`](class_array.md#class_array_method_hash) ( ) const[^const]                                                                                                                                                 |
+| [`int`](class_int.md)               | [`insert`](class_array.md#class_array_method_insert) ( position: [`int`](class_int.md), value: [`Variant`](class_variant.md) )                                                                                     |
+| [`bool`](class_bool.md)             | [`is_empty`](class_array.md#class_array_method_is_empty) ( ) const[^const]                                                                                                                                         |
+| [`bool`](class_bool.md)             | [`is_read_only`](class_array.md#class_array_method_is_read_only) ( ) const[^const]                                                                                                                                 |
+| [`bool`](class_bool.md)             | [`is_same_typed`](class_array.md#class_array_method_is_same_typed) ( array: [`Array`](class_array.md) ) const[^const]                                                                                              |
+| [`bool`](class_bool.md)             | [`is_typed`](class_array.md#class_array_method_is_typed) ( ) const[^const]                                                                                                                                         |
+| `void`                              | [`make_read_only`](class_array.md#class_array_method_make_read_only) ( )                                                                                                                                           |
+| [`Array`](class_array.md)           | [`map`](class_array.md#class_array_method_map) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                           |
+| [`Variant`](class_variant.md)       | [`max`](class_array.md#class_array_method_max) ( ) const[^const]                                                                                                                                                   |
+| [`Variant`](class_variant.md)       | [`min`](class_array.md#class_array_method_min) ( ) const[^const]                                                                                                                                                   |
+| [`Variant`](class_variant.md)       | [`pick_random`](class_array.md#class_array_method_pick_random) ( ) const[^const]                                                                                                                                   |
+| [`Variant`](class_variant.md)       | [`pop_at`](class_array.md#class_array_method_pop_at) ( position: [`int`](class_int.md) )                                                                                                                           |
+| [`Variant`](class_variant.md)       | [`pop_back`](class_array.md#class_array_method_pop_back) ( )                                                                                                                                                       |
+| [`Variant`](class_variant.md)       | [`pop_front`](class_array.md#class_array_method_pop_front) ( )                                                                                                                                                     |
+| `void`                              | [`push_back`](class_array.md#class_array_method_push_back) ( value: [`Variant`](class_variant.md) )                                                                                                                |
+| `void`                              | [`push_front`](class_array.md#class_array_method_push_front) ( value: [`Variant`](class_variant.md) )                                                                                                              |
+| [`Variant`](class_variant.md)       | [`reduce`](class_array.md#class_array_method_reduce) ( method: [`Callable`](class_callable.md), accum: [`Variant`](class_variant.md) = null ) const[^const]                                                        |
+| `void`                              | [`remove_at`](class_array.md#class_array_method_remove_at) ( position: [`int`](class_int.md) )                                                                                                                     |
+| [`int`](class_int.md)               | [`resize`](class_array.md#class_array_method_resize) ( size: [`int`](class_int.md) )                                                                                                                               |
+| `void`                              | [`reverse`](class_array.md#class_array_method_reverse) ( )                                                                                                                                                         |
+| [`int`](class_int.md)               | [`rfind`](class_array.md#class_array_method_rfind) ( what: [`Variant`](class_variant.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                                         |
+| `void`                              | [`shuffle`](class_array.md#class_array_method_shuffle) ( )                                                                                                                                                         |
+| [`int`](class_int.md)               | [`size`](class_array.md#class_array_method_size) ( ) const[^const]                                                                                                                                                 |
+| [`Array`](class_array.md)           | [`slice`](class_array.md#class_array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647, step: [`int`](class_int.md) = 1, deep: [`bool`](class_bool.md) = false ) const[^const] |
+| `void`                              | [`sort`](class_array.md#class_array_method_sort) ( )                                                                                                                                                               |
+| `void`                              | [`sort_custom`](class_array.md#class_array_method_sort_custom) ( func: [`Callable`](class_callable.md) )                                                                                                           |
 
 ## 运算符
 
@@ -159,11 +159,11 @@ Creates a typed array from the `base` array. A typed array can only contain elem
 
 - `type` is the built-in [`Variant`](class_variant.md) type, as one the [Variant.Type](#enum_@globalscope_variant.type) constants.
 
-- `class_name` is the built-in class name (see [`Object.get_class`](#class_object_method_get_class)).
+- `class_name` is the built-in class name (see [`Object.get_class`](class_object.md#class_object_method_get_class)).
 
 - `script` is the associated script. It must be a [`Script`](class_script.md) instance or `null`.
 
-If `type` is not [`@GlobalScope.TYPE_OBJECT`](#class_@globalscope_constant_type_object), `class_name` must be an empty [`StringName`](class_stringname.md) and `script` must be `null`.
+If `type` is not [`@GlobalScope.TYPE_OBJECT`](class_@globalscope.md#class_@globalscope_constant_type_object), `class_name` must be an empty [`StringName`](class_stringname.md) and `script` must be `null`.
 
 ```
 
@@ -203,7 +203,7 @@ In GDScript, this constructor is usually not necessary, as it is possible to cre
 
 [`Array`](class_array.md) **Array** ( from: [`Array`](class_array.md) )
 
-Returns the same array as `from`. If you need a copy of the array, use [`duplicate`](#class_array_method_duplicate).
+Returns the same array as `from`. If you need a copy of the array, use [`duplicate`](class_array.md#class_array_method_duplicate).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -341,9 +341,9 @@ The `method` should take one [`Variant`](class_variant.md) parameter (the curren
 
 
 
-See also [`any`](#class_array_method_any), [`filter`](#class_array_method_filter), [`map`](#class_array_method_map) and [`reduce`](#class_array_method_reduce).
+See also [`any`](class_array.md#class_array_method_any), [`filter`](class_array.md#class_array_method_filter), [`map`](class_array.md#class_array_method_map) and [`reduce`](class_array.md#class_array_method_reduce).
 
- **Note:** Unlike relying on the size of an array returned by [`filter`](#class_array_method_filter), this method will return as early as possible to improve performance (especially with large arrays).
+ **Note:** Unlike relying on the size of an array returned by [`filter`](class_array.md#class_array_method_filter), this method will return as early as possible to improve performance (especially with large arrays).
 
  **Note:** For an empty array, this method [*always*](https://en.wikipedia.org/wiki/Vacuous_truth) returns `true`.
 
@@ -378,9 +378,9 @@ The `method` should take one [`Variant`](class_variant.md) parameter (the curren
         print([6, 10, 6].any(func(number): return number > 5)) # Prints true
 ```
 
-See also [`all`](#class_array_method_all), [`filter`](#class_array_method_filter), [`map`](#class_array_method_map) and [`reduce`](#class_array_method_reduce).
+See also [`all`](class_array.md#class_array_method_all), [`filter`](class_array.md#class_array_method_filter), [`map`](class_array.md#class_array_method_map) and [`reduce`](class_array.md#class_array_method_reduce).
 
- **Note:** Unlike relying on the size of an array returned by [`filter`](#class_array_method_filter), this method will return as early as possible to improve performance (especially with large arrays).
+ **Note:** Unlike relying on the size of an array returned by [`filter`](class_array.md#class_array_method_filter), this method will return as early as possible to improve performance (especially with large arrays).
 
  **Note:** For an empty array, this method always returns `false`.
 
@@ -394,7 +394,7 @@ See also [`all`](#class_array_method_all), [`filter`](#class_array_method_filter
 
 `void` **append** ( value: [`Variant`](class_variant.md) )<div id="class_array_method_append"></div>
 
-Appends `value` at the end of the array (alias of [`push_back`](#class_array_method_push_back)).
+Appends `value` at the end of the array (alias of [`push_back`](class_array.md#class_array_method_push_back)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -434,7 +434,7 @@ Assigns elements of another `array` into the array. Resizes the array to match `
 
 [`Variant`](class_variant.md) **back** ( ) const[^const]<div id="class_array_method_back"></div>
 
-Returns the last element of the array. If the array is empty, fails and returns `null`. See also [`front`](#class_array_method_front).
+Returns the last element of the array. If the array is empty, fails and returns `null`. See also [`front`](class_array.md#class_array_method_front).
 
  **Note:** Unlike with the `[]` operator (`array[-1]`), an error is generated without stopping project execution.
 
@@ -463,7 +463,7 @@ If `before` is `true` (as by default), the returned index comes before all exist
     print(fruits.bsearch("Lemon", false)) # Prints 3, points at "Orange".
 ```
 
- **Note:** Calling [`bsearch`](#class_array_method_bsearch) on an *unsorted* array will result in unexpected behavior. Use [`sort`](#class_array_method_sort) before calling this method.
+ **Note:** Calling [`bsearch`](class_array.md#class_array_method_bsearch) on an *unsorted* array will result in unexpected behavior. Use [`sort`](class_array.md#class_array_method_sort) before calling this method.
 
 
 
@@ -477,7 +477,7 @@ If `before` is `true` (as by default), the returned index comes before all exist
 
 Returns the index of `value` in the sorted array. If it cannot be found, returns where `value` should be inserted to keep the array sorted (using `func` for the comparisons). The algorithm used is [*binary search*](https://en.wikipedia.org/wiki/Binary_search_algorithm).
 
-Similar to [`sort_custom`](#class_array_method_sort_custom), `func` is called as many times as necessary, receiving one array element and `value` as arguments. The function should return `true` if the array element should be *behind* `value`, otherwise it should return `false`.
+Similar to [`sort_custom`](class_array.md#class_array_method_sort_custom), `func` is called as many times as necessary, receiving one array element and `value` as arguments. The function should return `true` if the array element should be *behind* `value`, otherwise it should return `false`.
 
 If `before` is `true` (as by default), the returned index comes before all existing elements equal to `value` in the array.
 
@@ -503,7 +503,7 @@ If `before` is `true` (as by default), the returned index comes before all exist
         print(my_items)
 ```
 
- **Note:** Calling [`bsearch_custom`](#class_array_method_bsearch_custom) on an *unsorted* array will result in unexpected behavior. Use [`sort_custom`](#class_array_method_sort_custom) with `func` before calling this method.
+ **Note:** Calling [`bsearch_custom`](class_array.md#class_array_method_bsearch_custom) on an *unsorted* array will result in unexpected behavior. Use [`sort_custom`](class_array.md#class_array_method_sort_custom) with `func` before calling this method.
 
 
 
@@ -515,7 +515,7 @@ If `before` is `true` (as by default), the returned index comes before all exist
 
 `void` **clear** ( )<div id="class_array_method_clear"></div>
 
-Removes all elements from the array. This is equivalent to using [`resize`](#class_array_method_resize) with a size of `0`.
+Removes all elements from the array. This is equivalent to using [`resize`](class_array.md#class_array_method_resize) with a size of `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -549,7 +549,7 @@ If `deep` is `true`, a **deep** copy is returned: all nested arrays and dictiona
 
 `void` **erase** ( value: [`Variant`](class_variant.md) )<div id="class_array_method_erase"></div>
 
-Finds and removes the first occurrence of `value` from the array. If `value` does not exist in the array, nothing happens. To remove an element by index, use [`remove_at`](#class_array_method_remove_at) instead.
+Finds and removes the first occurrence of `value` from the array. If `value` does not exist in the array, nothing happens. To remove an element by index, use [`remove_at`](class_array.md#class_array_method_remove_at) instead.
 
  **Note:** This method shifts every element's index after the removed `value` back, which may have a noticeable performance cost, especially on larger arrays.
 
@@ -565,7 +565,7 @@ Finds and removes the first occurrence of `value` from the array. If `value` doe
 
 Assigns the given `value` to all elements in the array.
 
-This method can often be combined with [`resize`](#class_array_method_resize) to create an array with a given size and initialized elements:
+This method can often be combined with [`resize`](class_array.md#class_array_method_resize) to create an array with a given size and initialized elements:
 
 
 
@@ -617,7 +617,7 @@ The `method` receives one of the array elements as an argument, and should retur
         print([1, 4, 5, 8].filter(func(number): return number % 2 == 0))
 ```
 
-See also [`any`](#class_array_method_any), [`all`](#class_array_method_all), [`map`](#class_array_method_map) and [`reduce`](#class_array_method_reduce).
+See also [`any`](class_array.md#class_array_method_any), [`all`](class_array.md#class_array_method_all), [`map`](class_array.md#class_array_method_map) and [`reduce`](class_array.md#class_array_method_reduce).
 
 
 
@@ -631,7 +631,7 @@ See also [`any`](#class_array_method_any), [`all`](#class_array_method_all), [`m
 
 Returns the index of the **first** occurrence of `what` in this array, or `-1` if there are none. The search's start can be specified with `from`, continuing to the end of the array.
 
- **Note:** If you just want to know whether the array contains `what`, use [`has`](#class_array_method_has) (`Contains` in C#). In GDScript, you may also use the `in` operator.
+ **Note:** If you just want to know whether the array contains `what`, use [`has`](class_array.md#class_array_method_has) (`Contains` in C#). In GDScript, you may also use the `in` operator.
 
  **Note:** For performance reasons, the search is affected by `what`'s [Variant.Type](#enum_@globalscope_variant.type). For example, `7` ([`int`](class_int.md)) and `7.0` ([`float`](class_float.md)) are not considered equal for this method.
 
@@ -643,7 +643,7 @@ Returns the index of the **first** occurrence of `what` in this array, or `-1` i
 
 [`Variant`](class_variant.md) **front** ( ) const[^const]<div id="class_array_method_front"></div>
 
-Returns the first element of the array. If the array is empty, fails and returns `null`. See also [`back`](#class_array_method_back).
+Returns the first element of the array. If the array is empty, fails and returns `null`. See also [`back`](class_array.md#class_array_method_back).
 
  **Note:** Unlike with the `[]` operator (`array[0]`), an error is generated without stopping project execution.
 
@@ -655,7 +655,7 @@ Returns the first element of the array. If the array is empty, fails and returns
 
 [`int`](class_int.md) **get_typed_builtin** ( ) const[^const]<div id="class_array_method_get_typed_builtin"></div>
 
-Returns the built-in [`Variant`](class_variant.md) type of the typed array as a [Variant.Type](#enum_@globalscope_variant.type) constant. If the array is not typed, returns [`@GlobalScope.TYPE_NIL`](#class_@globalscope_constant_type_nil). See also [`is_typed`](#class_array_method_is_typed).
+Returns the built-in [`Variant`](class_variant.md) type of the typed array as a [Variant.Type](#enum_@globalscope_variant.type) constant. If the array is not typed, returns [`@GlobalScope.TYPE_NIL`](class_@globalscope.md#class_@globalscope_constant_type_nil). See also [`is_typed`](class_array.md#class_array_method_is_typed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -665,7 +665,7 @@ Returns the built-in [`Variant`](class_variant.md) type of the typed array as a 
 
 [`StringName`](class_stringname.md) **get_typed_class_name** ( ) const[^const]<div id="class_array_method_get_typed_class_name"></div>
 
-Returns the **built-in** class name of the typed array, if the built-in [`Variant`](class_variant.md) type [`@GlobalScope.TYPE_OBJECT`](#class_@globalscope_constant_type_object). Otherwise, returns an empty [`StringName`](class_stringname.md). See also [`is_typed`](#class_array_method_is_typed) and [`Object.get_class`](#class_object_method_get_class).
+Returns the **built-in** class name of the typed array, if the built-in [`Variant`](class_variant.md) type [`@GlobalScope.TYPE_OBJECT`](class_@globalscope.md#class_@globalscope_constant_type_object). Otherwise, returns an empty [`StringName`](class_stringname.md). See also [`is_typed`](class_array.md#class_array_method_is_typed) and [`Object.get_class`](class_object.md#class_object_method_get_class).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -675,7 +675,7 @@ Returns the **built-in** class name of the typed array, if the built-in [`Varian
 
 [`Variant`](class_variant.md) **get_typed_script** ( ) const[^const]<div id="class_array_method_get_typed_script"></div>
 
-Returns the [`Script`](class_script.md) instance associated with this typed array, or `null` if it does not exist. See also [`is_typed`](#class_array_method_is_typed).
+Returns the [`Script`](class_script.md) instance associated with this typed array, or `null` if it does not exist. See also [`is_typed`](class_array.md#class_array_method_is_typed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -745,9 +745,9 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 [`int`](class_int.md) **insert** ( position: [`int`](class_int.md), value: [`Variant`](class_variant.md) )<div id="class_array_method_insert"></div>
 
-Inserts a new element (`value`) at a given index (`position`) in the array. `position` should be between `0` and the array's [`size`](#class_array_method_size).
+Inserts a new element (`value`) at a given index (`position`) in the array. `position` should be between `0` and the array's [`size`](class_array.md#class_array_method_size).
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) constants if this method fails.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) constants if this method fails.
 
  **Note:** Every element's index after `position` needs to be shifted forward, which may have a noticeable performance cost, especially on larger arrays.
 
@@ -759,7 +759,7 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one 
 
 [`bool`](class_bool.md) **is_empty** ( ) const[^const]<div id="class_array_method_is_empty"></div>
 
-Returns `true` if the array is empty (`[]`). See also [`size`](#class_array_method_size).
+Returns `true` if the array is empty (`[]`). See also [`size`](class_array.md#class_array_method_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -769,7 +769,7 @@ Returns `true` if the array is empty (`[]`). See also [`size`](#class_array_meth
 
 [`bool`](class_bool.md) **is_read_only** ( ) const[^const]<div id="class_array_method_is_read_only"></div>
 
-Returns `true` if the array is read-only. See [`make_read_only`](#class_array_method_make_read_only).
+Returns `true` if the array is read-only. See [`make_read_only`](class_array.md#class_array_method_make_read_only).
 
 In GDScript, arrays are automatically read-only if declared with the `const` keyword.
 
@@ -781,7 +781,7 @@ In GDScript, arrays are automatically read-only if declared with the `const` key
 
 [`bool`](class_bool.md) **is_same_typed** ( array: [`Array`](class_array.md) ) const[^const]<div id="class_array_method_is_same_typed"></div>
 
-Returns `true` if this array is typed the same as the given `array`. See also [`is_typed`](#class_array_method_is_typed).
+Returns `true` if this array is typed the same as the given `array`. See also [`is_typed`](class_array.md#class_array_method_is_typed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -839,7 +839,7 @@ The `method` should take one [`Variant`](class_variant.md) parameter (the curren
         print([1, 2, 3].map(func(element): return element * 2))
 ```
 
-See also [`filter`](#class_array_method_filter), [`reduce`](#class_array_method_reduce), [`any`](#class_array_method_any) and [`all`](#class_array_method_all).
+See also [`filter`](class_array.md#class_array_method_filter), [`reduce`](class_array.md#class_array_method_reduce), [`any`](class_array.md#class_array_method_any) and [`all`](class_array.md#class_array_method_all).
 
 
 
@@ -851,9 +851,9 @@ See also [`filter`](#class_array_method_filter), [`reduce`](#class_array_method_
 
 [`Variant`](class_variant.md) **max** ( ) const[^const]<div id="class_array_method_max"></div>
 
-Returns the maximum value contained in the array, if all elements can be compared. Otherwise, returns `null`. See also [`min`](#class_array_method_min).
+Returns the maximum value contained in the array, if all elements can be compared. Otherwise, returns `null`. See also [`min`](class_array.md#class_array_method_min).
 
-To find the maximum value using a custom comparator, you can use [`reduce`](#class_array_method_reduce).
+To find the maximum value using a custom comparator, you can use [`reduce`](class_array.md#class_array_method_reduce).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -863,7 +863,7 @@ To find the maximum value using a custom comparator, you can use [`reduce`](#cla
 
 [`Variant`](class_variant.md) **min** ( ) const[^const]<div id="class_array_method_min"></div>
 
-Returns the minimum value contained in the array, if all elements can be compared. Otherwise, returns `null`. See also [`max`](#class_array_method_max).
+Returns the minimum value contained in the array, if all elements can be compared. Otherwise, returns `null`. See also [`max`](class_array.md#class_array_method_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -891,7 +891,7 @@ Returns a random element from the array. Generates an error and returns `null` i
 
 
 
- **Note:** Like many similar functions in the engine (such as [`@GlobalScope.randi`](#class_@globalscope_method_randi) or [`shuffle`](#class_array_method_shuffle)), this method uses a common, global random seed. To get a predictable outcome from this method, see [`@GlobalScope.seed`](#class_@globalscope_method_seed).
+ **Note:** Like many similar functions in the engine (such as [`@GlobalScope.randi`](class_@globalscope.md#class_@globalscope_method_randi) or [`shuffle`](class_array.md#class_array_method_shuffle)), this method uses a common, global random seed. To get a predictable outcome from this method, see [`@GlobalScope.seed`](class_@globalscope.md#class_@globalscope_method_seed).
 
 
 
@@ -917,7 +917,7 @@ Removes and returns the element of the array at index `position`. If negative, `
 
 [`Variant`](class_variant.md) **pop_back** ( )<div id="class_array_method_pop_back"></div>
 
-Removes and returns the last element of the array. Returns `null` if the array is empty, without generating an error. See also [`pop_front`](#class_array_method_pop_front).
+Removes and returns the last element of the array. Returns `null` if the array is empty, without generating an error. See also [`pop_front`](class_array.md#class_array_method_pop_front).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -927,7 +927,7 @@ Removes and returns the last element of the array. Returns `null` if the array i
 
 [`Variant`](class_variant.md) **pop_front** ( )<div id="class_array_method_pop_front"></div>
 
-Removes and returns the first element of the array. Returns `null` if the array is empty, without generating an error. See also [`pop_back`](#class_array_method_pop_back).
+Removes and returns the first element of the array. Returns `null` if the array is empty, without generating an error. See also [`pop_back`](class_array.md#class_array_method_pop_back).
 
  **Note:** This method shifts every other element's index back, which may have a noticeable performance cost, especially on larger arrays.
 
@@ -939,7 +939,7 @@ Removes and returns the first element of the array. Returns `null` if the array 
 
 `void` **push_back** ( value: [`Variant`](class_variant.md) )<div id="class_array_method_push_back"></div>
 
-Appends an element at the end of the array. See also [`push_front`](#class_array_method_push_front).
+Appends an element at the end of the array. See also [`push_front`](class_array.md#class_array_method_push_front).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -949,7 +949,7 @@ Appends an element at the end of the array. See also [`push_front`](#class_array
 
 `void` **push_front** ( value: [`Variant`](class_variant.md) )<div id="class_array_method_push_front"></div>
 
-Adds an element at the beginning of the array. See also [`push_back`](#class_array_method_push_back).
+Adds an element at the beginning of the array. See also [`push_back`](class_array.md#class_array_method_push_back).
 
  **Note:** This method shifts every other element's index forward, which may have a noticeable performance cost, especially on larger arrays.
 
@@ -978,7 +978,7 @@ The `method` takes two arguments: the current value of `accum` and the current a
         print([1, 2, 3].reduce(func(accum, number): return accum + number, 10))
 ```
 
-If [`max`](#class_array_method_max) is not desirable, this method may also be used to implement a custom comparator:
+If [`max`](class_array.md#class_array_method_max) is not desirable, this method may also be used to implement a custom comparator:
 
 ```
 
@@ -992,7 +992,7 @@ If [`max`](#class_array_method_max) is not desirable, this method may also be us
         return a.length() > b.length()
 ```
 
-See also [`map`](#class_array_method_map), [`filter`](#class_array_method_filter), [`any`](#class_array_method_any) and [`all`](#class_array_method_all).
+See also [`map`](class_array.md#class_array_method_map), [`filter`](class_array.md#class_array_method_filter), [`any`](class_array.md#class_array_method_any) and [`all`](class_array.md#class_array_method_all).
 
 
 
@@ -1008,7 +1008,7 @@ See also [`map`](#class_array_method_map), [`filter`](#class_array_method_filter
 
 Removes the element from the array at the given index (`position`). If the index is out of bounds, this method fails.
 
-If you need to return the removed element, use [`pop_at`](#class_array_method_pop_at). To remove an element by value, use [`erase`](#class_array_method_erase) instead.
+If you need to return the removed element, use [`pop_at`](class_array.md#class_array_method_pop_at). To remove an element by value, use [`erase`](class_array.md#class_array_method_erase) instead.
 
  **Note:** This method shifts every element's index after `position` back, which may have a noticeable performance cost, especially on larger arrays.
 
@@ -1024,9 +1024,9 @@ If you need to return the removed element, use [`pop_at`](#class_array_method_po
 
 Sets the array's number of elements to `size`. If `size` is smaller than the array's current size, the elements at the end are removed. If `size` is greater, new default elements (usually `null`) are added, depending on the array's type.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) constants if this method fails.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or one of the other [Error](#enum_@globalscope_error) constants if this method fails.
 
- **Note:** Calling this method once and assigning the new values is faster than calling [`append`](#class_array_method_append) for every new element.
+ **Note:** Calling this method once and assigning the new values is faster than calling [`append`](class_array.md#class_array_method_append) for every new element.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1046,7 +1046,7 @@ Reverses the order of all elements in the array.
 
 [`int`](class_int.md) **rfind** ( what: [`Variant`](class_variant.md), from: [`int`](class_int.md) = -1 ) const[^const]<div id="class_array_method_rfind"></div>
 
-Returns the index of the **last** occurrence of `what` in this array, or `-1` if there are none. The search's start can be specified with `from`, continuing to the beginning of the array. This method is the reverse of [`find`](#class_array_method_find).
+Returns the index of the **last** occurrence of `what` in this array, or `-1` if there are none. The search's start can be specified with `from`, continuing to the beginning of the array. This method is the reverse of [`find`](class_array.md#class_array_method_find).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1058,7 +1058,7 @@ Returns the index of the **last** occurrence of `what` in this array, or `-1` if
 
 Shuffles all elements of the array in a random order.
 
- **Note:** Like many similar functions in the engine (such as [`@GlobalScope.randi`](#class_@globalscope_method_randi) or [`pick_random`](#class_array_method_pick_random)), this method uses a common, global random seed. To get a predictable outcome from this method, see [`@GlobalScope.seed`](#class_@globalscope_method_seed).
+ **Note:** Like many similar functions in the engine (such as [`@GlobalScope.randi`](class_@globalscope.md#class_@globalscope_method_randi) or [`pick_random`](class_array.md#class_array_method_pick_random)), this method uses a common, global random seed. To get a predictable outcome from this method, see [`@GlobalScope.seed`](class_@globalscope.md#class_@globalscope_method_seed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1068,7 +1068,7 @@ Shuffles all elements of the array in a random order.
 
 [`int`](class_int.md) **size** ( ) const[^const]<div id="class_array_method_size"></div>
 
-Returns the number of elements in the array. Empty arrays (`[]`) always return `0`. See also [`is_empty`](#class_array_method_is_empty).
+Returns the number of elements in the array. Empty arrays (`[]`) always return `0`. See also [`is_empty`](class_array.md#class_array_method_is_empty).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1084,7 +1084,7 @@ If either `begin` or `end` are negative, their value is relative to the end of t
 
 If `step` is negative, this method iterates through the array in reverse, returning a slice ordered backwards. For this to work, `begin` must be greater than `end`.
 
-If `deep` is `true`, all nested **Array** and [`Dictionary`](class_dictionary.md) elements in the slice are duplicated from the original, recursively. See also [`duplicate`](#class_array_method_duplicate)).
+If `deep` is `true`, all nested **Array** and [`Dictionary`](class_dictionary.md) elements in the slice are duplicated from the original, recursively. See also [`duplicate`](class_array.md#class_array_method_duplicate)).
 
 ```
 
@@ -1128,7 +1128,7 @@ Sorts the array in ascending order. The final order is dependent on the "less th
 
 
 
- **Note:** The sorting algorithm used is not [*stable*](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability). This means that equivalent elements (such as `2` and `2.0`) may have their order changed when calling [`sort`](#class_array_method_sort).
+ **Note:** The sorting algorithm used is not [*stable*](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability). This means that equivalent elements (such as `2` and `2.0`) may have their order changed when calling [`sort`](class_array.md#class_array_method_sort).
 
 
 
@@ -1163,7 +1163,7 @@ Sorts the array using a custom [`Callable`](class_callable.md).
         print(my_items) # Prints [["Apple", 9], ["Tomato", 5], ["Rice", 4]]
 ```
 
-It may also be necessary to use this method to sort strings by natural order, with [`String.naturalnocasecmp_to`](#class_string_method_naturalnocasecmp_to), as in the following example:
+It may also be necessary to use this method to sort strings by natural order, with [`String.naturalnocasecmp_to`](class_string.md#class_string_method_naturalnocasecmp_to), as in the following example:
 
 ```
 
@@ -1223,7 +1223,7 @@ Appends the `right` array to the left operand, creating a new **Array**. This is
 
 
 
- **Note:** For existing arrays, [`append_array`](#class_array_method_append_array) is much more efficient than concatenation and assignment with the `+=` operator.
+ **Note:** For existing arrays, [`append_array`](class_array.md#class_array_method_append_array) is much more efficient than concatenation and assignment with the `+=` operator.
 
 
 

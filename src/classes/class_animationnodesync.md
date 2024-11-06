@@ -21,7 +21,7 @@ An animation node used to combine, mix, or blend two or more animations together
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`sync`](#class_animationnodesync_property_sync) | ``false`` |
+| [`bool`](class_bool.md) | [`sync`](class_animationnodesync.md#class_animationnodesync_property_sync) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

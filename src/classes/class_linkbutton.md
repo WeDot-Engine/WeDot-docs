@@ -21,32 +21,32 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 |||
 |:-:|:--|
-| [FocusMode](#enum_control_focusmode)                          | focus_mode                                                                                                  | ``0`` (overrides [`Control`](#class_control_property_focus_mode))                 |
-| [`String`](class_string.md)                                   | [`language`](#class_linkbutton_property_language)                                                           | ``""``                                                                            |
-| [CursorShape](#enum_control_cursorshape)                      | mouse_default_cursor_shape                                                                                  | ``2`` (overrides [`Control`](#class_control_property_mouse_default_cursor_shape)) |
-| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`structured_text_bidi_override`](#class_linkbutton_property_structured_text_bidi_override)                 | ``0``                                                                             |
-| [`Array`](class_array.md)                                     | [`structured_text_bidi_override_options`](#class_linkbutton_property_structured_text_bidi_override_options) | ``[]``                                                                            |
-| [`String`](class_string.md)                                   | [`text`](#class_linkbutton_property_text)                                                                   | ``""``                                                                            |
-| [TextDirection](#enum_control_textdirection)                  | [`text_direction`](#class_linkbutton_property_text_direction)                                               | ``0``                                                                             |
-| [UnderlineMode](#enum_linkbutton_underlinemode)               | [`underline`](#class_linkbutton_property_underline)                                                         | ``0``                                                                             |
-| [`String`](class_string.md)                                   | [`uri`](#class_linkbutton_property_uri)                                                                     | ``""``                                                                            |
+| [FocusMode](#enum_control_focusmode)                          | focus_mode                                                                                                                     | ``0`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))                 |
+| [`String`](class_string.md)                                   | [`language`](class_linkbutton.md#class_linkbutton_property_language)                                                           | ``""``                                                                                            |
+| [CursorShape](#enum_control_cursorshape)                      | mouse_default_cursor_shape                                                                                                     | ``2`` (overrides [`Control`](class_control.md#class_control_property_mouse_default_cursor_shape)) |
+| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`structured_text_bidi_override`](class_linkbutton.md#class_linkbutton_property_structured_text_bidi_override)                 | ``0``                                                                                             |
+| [`Array`](class_array.md)                                     | [`structured_text_bidi_override_options`](class_linkbutton.md#class_linkbutton_property_structured_text_bidi_override_options) | ``[]``                                                                                            |
+| [`String`](class_string.md)                                   | [`text`](class_linkbutton.md#class_linkbutton_property_text)                                                                   | ``""``                                                                                            |
+| [TextDirection](#enum_control_textdirection)                  | [`text_direction`](class_linkbutton.md#class_linkbutton_property_text_direction)                                               | ``0``                                                                                             |
+| [UnderlineMode](#enum_linkbutton_underlinemode)               | [`underline`](class_linkbutton.md#class_linkbutton_property_underline)                                                         | ``0``                                                                                             |
+| [`String`](class_string.md)                                   | [`uri`](class_linkbutton.md#class_linkbutton_property_uri)                                                                     | ``""``                                                                                            |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)       | [`font_color`](#class_linkbutton_theme_color_font_color)                             | ``Color(0.875, 0.875, 0.875, 1)`` |
-| [`Color`](class_color.md)       | [`font_disabled_color`](#class_linkbutton_theme_color_font_disabled_color)           | ``Color(0, 0, 0, 1)``             |
-| [`Color`](class_color.md)       | [`font_focus_color`](#class_linkbutton_theme_color_font_focus_color)                 | ``Color(0.95, 0.95, 0.95, 1)``    |
-| [`Color`](class_color.md)       | [`font_hover_color`](#class_linkbutton_theme_color_font_hover_color)                 | ``Color(0.95, 0.95, 0.95, 1)``    |
-| [`Color`](class_color.md)       | [`font_hover_pressed_color`](#class_linkbutton_theme_color_font_hover_pressed_color) | ``Color(0, 0, 0, 1)``             |
-| [`Color`](class_color.md)       | [`font_outline_color`](#class_linkbutton_theme_color_font_outline_color)             | ``Color(0, 0, 0, 1)``             |
-| [`Color`](class_color.md)       | [`font_pressed_color`](#class_linkbutton_theme_color_font_pressed_color)             | ``Color(1, 1, 1, 1)``             |
-| [`int`](class_int.md)           | [`outline_size`](#class_linkbutton_theme_constant_outline_size)                      | ``0``                             |
-| [`int`](class_int.md)           | [`underline_spacing`](#class_linkbutton_theme_constant_underline_spacing)            | ``2``                             |
-| [`Font`](class_font.md)         | [`font`](#class_linkbutton_theme_font_font)                                          |                                   |
-| [`int`](class_int.md)           | [`font_size`](#class_linkbutton_theme_font_size_font_size)                           |                                   |
-| [`StyleBox`](class_stylebox.md) | [`focus`](#class_linkbutton_theme_style_focus)                                       |                                   |
+| [`Color`](class_color.md)       | [`font_color`](class_linkbutton.md#class_linkbutton_theme_color_font_color)                             | ``Color(0.875, 0.875, 0.875, 1)`` |
+| [`Color`](class_color.md)       | [`font_disabled_color`](class_linkbutton.md#class_linkbutton_theme_color_font_disabled_color)           | ``Color(0, 0, 0, 1)``             |
+| [`Color`](class_color.md)       | [`font_focus_color`](class_linkbutton.md#class_linkbutton_theme_color_font_focus_color)                 | ``Color(0.95, 0.95, 0.95, 1)``    |
+| [`Color`](class_color.md)       | [`font_hover_color`](class_linkbutton.md#class_linkbutton_theme_color_font_hover_color)                 | ``Color(0.95, 0.95, 0.95, 1)``    |
+| [`Color`](class_color.md)       | [`font_hover_pressed_color`](class_linkbutton.md#class_linkbutton_theme_color_font_hover_pressed_color) | ``Color(0, 0, 0, 1)``             |
+| [`Color`](class_color.md)       | [`font_outline_color`](class_linkbutton.md#class_linkbutton_theme_color_font_outline_color)             | ``Color(0, 0, 0, 1)``             |
+| [`Color`](class_color.md)       | [`font_pressed_color`](class_linkbutton.md#class_linkbutton_theme_color_font_pressed_color)             | ``Color(1, 1, 1, 1)``             |
+| [`int`](class_int.md)           | [`outline_size`](class_linkbutton.md#class_linkbutton_theme_constant_outline_size)                      | ``0``                             |
+| [`int`](class_int.md)           | [`underline_spacing`](class_linkbutton.md#class_linkbutton_theme_constant_underline_spacing)            | ``2``                             |
+| [`Font`](class_font.md)         | [`font`](class_linkbutton.md#class_linkbutton_theme_font_font)                                          |                                   |
+| [`int`](class_int.md)           | [`font_size`](class_linkbutton.md#class_linkbutton_theme_font_size_font_size)                           |                                   |
+| [`StyleBox`](class_stylebox.md) | [`focus`](class_linkbutton.md#class_linkbutton_theme_style_focus)                                       |                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -167,7 +167,7 @@ The underline mode to use for the text. See [UnderlineMode](#enum_linkbutton_und
 - `void` **set_uri** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_uri** ( )
 
-The [*URI*](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) for this **LinkButton**. If set to a valid URI, pressing the button opens the URI using the operating system's default program for the protocol (via [`OS.shell_open`](#class_os_method_shell_open)). HTTP and HTTPS URLs open the default web browser.
+The [*URI*](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) for this **LinkButton**. If set to a valid URI, pressing the button opens the URI using the operating system's default program for the protocol (via [`OS.shell_open`](class_os.md#class_os_method_shell_open)). HTTP and HTTPS URLs open the default web browser.
 
  **Examples:** 
 
@@ -275,7 +275,7 @@ Text [`Color`](class_color.md) used when the **LinkButton** is being pressed.
 
 The size of the text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_linkbutton_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_linkbutton.md#class_linkbutton_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -315,7 +315,7 @@ Font size of the **LinkButton**'s text.
 
 [`StyleBox`](class_stylebox.md) **focus** <div id="class_linkbutton_theme_style_focus"></div>
 
-[`StyleBox`](class_stylebox.md) used when the **LinkButton** is focused. The [`focus`](#class_linkbutton_theme_style_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md), so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+[`StyleBox`](class_stylebox.md) used when the **LinkButton** is focused. The [`focus`](class_linkbutton.md#class_linkbutton_theme_style_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md), so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

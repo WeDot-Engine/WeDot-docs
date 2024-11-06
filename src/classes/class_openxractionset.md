@@ -21,17 +21,17 @@ Action sets can contain the same action with the same name, if such action sets 
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md)   | [`actions`](#class_openxractionset_property_actions)               | ``[]`` |
-| [`String`](class_string.md) | [`localized_name`](#class_openxractionset_property_localized_name) | ``""`` |
-| [`int`](class_int.md)       | [`priority`](#class_openxractionset_property_priority)             | ``0``  |
+| [`Array`](class_array.md)   | [`actions`](class_openxractionset.md#class_openxractionset_property_actions)               | ``[]`` |
+| [`String`](class_string.md) | [`localized_name`](class_openxractionset.md#class_openxractionset_property_localized_name) | ``""`` |
+| [`int`](class_int.md)       | [`priority`](class_openxractionset.md#class_openxractionset_property_priority)             | ``0``  |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                | [`add_action`](#class_openxractionset_method_add_action) ( action: [`OpenXRAction`](class_openxraction.md) )       |
-| [`int`](class_int.md) | [`get_action_count`](#class_openxractionset_method_get_action_count) ( ) const[^const]                             |
-| `void`                | [`remove_action`](#class_openxractionset_method_remove_action) ( action: [`OpenXRAction`](class_openxraction.md) ) |
+| `void`                | [`add_action`](class_openxractionset.md#class_openxractionset_method_add_action) ( action: [`OpenXRAction`](class_openxraction.md) )       |
+| [`int`](class_int.md) | [`get_action_count`](class_openxractionset.md#class_openxractionset_method_get_action_count) ( ) const[^const]                             |
+| `void`                | [`remove_action`](class_openxractionset.md#class_openxractionset_method_remove_action) ( action: [`OpenXRAction`](class_openxraction.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

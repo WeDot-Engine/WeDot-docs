@@ -21,18 +21,18 @@ Abstract base class for 2D game objects affected by physics.
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | input_pickable | ``false`` (overrides [`CollisionObject2D`](#class_collisionobject2d_property_input_pickable)) |
+| [`bool`](class_bool.md) | input_pickable | ``false`` (overrides [`CollisionObject2D`](class_collisionobject2d.md#class_collisionobject2d_property_input_pickable)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                            | [`add_collision_exception_with`](#class_physicsbody2d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                                  |
-| [Array](class_array.md) [`PhysicsBody2D`](class_physicsbody2d.md) | [`get_collision_exceptions`](#class_physicsbody2d_method_get_collision_exceptions) ( )                                                                                                                                                                                                                                        |
-| [`Vector2`](class_vector2.md)                                     | [`get_gravity`](#class_physicsbody2d_method_get_gravity) ( ) const[^const]                                                                                                                                                                                                                                                    |
-| [`KinematicCollision2D`](class_kinematiccollision2d.md)           | [`move_and_collide`](#class_physicsbody2d_method_move_and_collide) ( motion: [`Vector2`](class_vector2.md), test_only: [`bool`](class_bool.md) = false, safe_margin: [`float`](class_float.md) = 0.08, recovery_as_collision: [`bool`](class_bool.md) = false )                                                               |
-| `void`                                                            | [`remove_collision_exception_with`](#class_physicsbody2d_method_remove_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                            |
-| [`bool`](class_bool.md)                                           | [`test_move`](#class_physicsbody2d_method_test_move) ( from: [`Transform2D`](class_transform2d.md), motion: [`Vector2`](class_vector2.md), collision: [`KinematicCollision2D`](class_kinematiccollision2d.md) = null, safe_margin: [`float`](class_float.md) = 0.08, recovery_as_collision: [`bool`](class_bool.md) = false ) |
+| `void`                                                            | [`add_collision_exception_with`](class_physicsbody2d.md#class_physicsbody2d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                                  |
+| [Array](class_array.md) [`PhysicsBody2D`](class_physicsbody2d.md) | [`get_collision_exceptions`](class_physicsbody2d.md#class_physicsbody2d_method_get_collision_exceptions) ( )                                                                                                                                                                                                                                        |
+| [`Vector2`](class_vector2.md)                                     | [`get_gravity`](class_physicsbody2d.md#class_physicsbody2d_method_get_gravity) ( ) const[^const]                                                                                                                                                                                                                                                    |
+| [`KinematicCollision2D`](class_kinematiccollision2d.md)           | [`move_and_collide`](class_physicsbody2d.md#class_physicsbody2d_method_move_and_collide) ( motion: [`Vector2`](class_vector2.md), test_only: [`bool`](class_bool.md) = false, safe_margin: [`float`](class_float.md) = 0.08, recovery_as_collision: [`bool`](class_bool.md) = false )                                                               |
+| `void`                                                            | [`remove_collision_exception_with`](class_physicsbody2d.md#class_physicsbody2d_method_remove_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                            |
+| [`bool`](class_bool.md)                                           | [`test_move`](class_physicsbody2d.md#class_physicsbody2d_method_test_move) ( from: [`Transform2D`](class_transform2d.md), motion: [`Vector2`](class_vector2.md), collision: [`KinematicCollision2D`](class_kinematiccollision2d.md) = null, safe_margin: [`float`](class_float.md) = 0.08, recovery_as_collision: [`bool`](class_bool.md) = false ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -74,13 +74,13 @@ Returns the gravity vector computed from all sources that can affect the body, i
 
 [`KinematicCollision2D`](class_kinematiccollision2d.md) **move_and_collide** ( motion: [`Vector2`](class_vector2.md), test_only: [`bool`](class_bool.md) = false, safe_margin: [`float`](class_float.md) = 0.08, recovery_as_collision: [`bool`](class_bool.md) = false )<div id="class_physicsbody2d_method_move_and_collide"></div>
 
-Moves the body along the vector `motion`. In order to be frame rate independent in [`Node._physics_process`](#class_node_private_method__physics_process) or [`Node._process`](#class_node_private_method__process), `motion` should be computed using `delta`.
+Moves the body along the vector `motion`. In order to be frame rate independent in [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) or [`Node._process`](class_node.md#class_node_private_method__process), `motion` should be computed using `delta`.
 
 Returns a [`KinematicCollision2D`](class_kinematiccollision2d.md), which contains information about the collision when stopped, or when touching another body along the motion.
 
 If `test_only` is `true`, the body does not move but the would-be collision information is given.
 
- `safe_margin` is the extra margin used for collision recovery (see [`CharacterBody2D.safe_margin`](#class_characterbody2d_property_safe_margin) for more details).
+ `safe_margin` is the extra margin used for collision recovery (see [`CharacterBody2D.safe_margin`](class_characterbody2d.md#class_characterbody2d_property_safe_margin) for more details).
 
 If `recovery_as_collision` is `true`, any depenetration from the recovery phase is also reported as a collision; this is used e.g. by [`CharacterBody2D`](class_characterbody2d.md) for improving floor detection during floor snapping.
 
@@ -102,13 +102,13 @@ Removes a body from the list of bodies that this body can't collide with.
 
 [`bool`](class_bool.md) **test_move** ( from: [`Transform2D`](class_transform2d.md), motion: [`Vector2`](class_vector2.md), collision: [`KinematicCollision2D`](class_kinematiccollision2d.md) = null, safe_margin: [`float`](class_float.md) = 0.08, recovery_as_collision: [`bool`](class_bool.md) = false )<div id="class_physicsbody2d_method_test_move"></div>
 
-Checks for collisions without moving the body. In order to be frame rate independent in [`Node._physics_process`](#class_node_private_method__physics_process) or [`Node._process`](#class_node_private_method__process), `motion` should be computed using `delta`.
+Checks for collisions without moving the body. In order to be frame rate independent in [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) or [`Node._process`](class_node.md#class_node_private_method__process), `motion` should be computed using `delta`.
 
 Virtually sets the node's position, scale and rotation to that of the given [`Transform2D`](class_transform2d.md), then tries to move the body along the vector `motion`. Returns `true` if a collision would stop the body from moving along the whole path.
 
  `collision` is an optional object of type [`KinematicCollision2D`](class_kinematiccollision2d.md), which contains additional information about the collision when stopped, or when touching another body along the motion.
 
- `safe_margin` is the extra margin used for collision recovery (see [`CharacterBody2D.safe_margin`](#class_characterbody2d_property_safe_margin) for more details).
+ `safe_margin` is the extra margin used for collision recovery (see [`CharacterBody2D.safe_margin`](class_characterbody2d.md#class_characterbody2d_property_safe_margin) for more details).
 
 If `recovery_as_collision` is `true`, any depenetration from the recovery phase is also reported as a collision; this is useful for checking whether the body would *touch* any other bodies.
 

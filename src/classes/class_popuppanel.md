@@ -19,7 +19,7 @@ A popup with a configurable panel background. Any child controls added to this n
 
 |||
 |:-:|:--|
-| [`StyleBox`](class_stylebox.md) | [`panel`](#class_popuppanel_theme_style_panel) |
+| [`StyleBox`](class_stylebox.md) | [`panel`](class_popuppanel.md#class_popuppanel_theme_style_panel) |
 
 <!-- rst-class:: classref-section-separator -->
 

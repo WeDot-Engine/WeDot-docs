@@ -13,7 +13,7 @@ A 3D physics body that can't be moved by external forces. When moved manually, i
 
 ## 描述
 
-An animatable 3D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, [`AnimationMixer`](class_animationmixer.md) s (with [`AnimationMixer.callback_mode_process`](#class_animationmixer_property_callback_mode_process) set to [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](#class_animationmixer_constant_animation_callback_mode_process_physics)), and [`RemoteTransform3D`](class_remotetransform3d.md).
+An animatable 3D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, [`AnimationMixer`](class_animationmixer.md) s (with [`AnimationMixer.callback_mode_process`](class_animationmixer.md#class_animationmixer_property_callback_mode_process) set to [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_physics)), and [`RemoteTransform3D`](class_remotetransform3d.md).
 
 When **AnimatableBody3D** is moved, its linear and angular velocity are estimated and used to affect other physics bodies in its path. This makes it useful for moving platforms, doors, and other moving objects.
 
@@ -21,7 +21,7 @@ When **AnimatableBody3D** is moved, its linear and angular velocity are estimate
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`sync_to_physics`](#class_animatablebody3d_property_sync_to_physics) | ``true`` |
+| [`bool`](class_bool.md) | [`sync_to_physics`](class_animatablebody3d.md#class_animatablebody3d_property_sync_to_physics) | ``true`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -36,7 +36,7 @@ When **AnimatableBody3D** is moved, its linear and angular velocity are estimate
 - `void` **set_sync_to_physics** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_sync_to_physics_enabled** ( )
 
-If `true`, the body's movement will be synchronized to the physics frame. This is useful when animating movement via [`AnimationPlayer`](class_animationplayer.md), for example on moving platforms. Do **not** use together with [`PhysicsBody3D.move_and_collide`](#class_physicsbody3d_method_move_and_collide).
+If `true`, the body's movement will be synchronized to the physics frame. This is useful when animating movement via [`AnimationPlayer`](class_animationplayer.md), for example on moving platforms. Do **not** use together with [`PhysicsBody3D.move_and_collide`](class_physicsbody3d.md#class_physicsbody3d_method_move_and_collide).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

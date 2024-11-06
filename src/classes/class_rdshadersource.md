@@ -21,19 +21,19 @@ See also [`RDShaderFile`](class_rdshaderfile.md). **RDShaderSource** is only mea
 
 |||
 |:-:|:--|
-| [ShaderLanguage](#enum_renderingdevice_shaderlanguage) | [`language`](#class_rdshadersource_property_language)                                           | ``0``  |
-| [`String`](class_string.md)                            | [`source_compute`](#class_rdshadersource_property_source_compute)                               | ``""`` |
-| [`String`](class_string.md)                            | [`source_fragment`](#class_rdshadersource_property_source_fragment)                             | ``""`` |
-| [`String`](class_string.md)                            | [`source_tesselation_control`](#class_rdshadersource_property_source_tesselation_control)       | ``""`` |
-| [`String`](class_string.md)                            | [`source_tesselation_evaluation`](#class_rdshadersource_property_source_tesselation_evaluation) | ``""`` |
-| [`String`](class_string.md)                            | [`source_vertex`](#class_rdshadersource_property_source_vertex)                                 | ``""`` |
+| [ShaderLanguage](#enum_renderingdevice_shaderlanguage) | [`language`](class_rdshadersource.md#class_rdshadersource_property_language)                                           | ``0``  |
+| [`String`](class_string.md)                            | [`source_compute`](class_rdshadersource.md#class_rdshadersource_property_source_compute)                               | ``""`` |
+| [`String`](class_string.md)                            | [`source_fragment`](class_rdshadersource.md#class_rdshadersource_property_source_fragment)                             | ``""`` |
+| [`String`](class_string.md)                            | [`source_tesselation_control`](class_rdshadersource.md#class_rdshadersource_property_source_tesselation_control)       | ``""`` |
+| [`String`](class_string.md)                            | [`source_tesselation_evaluation`](class_rdshadersource.md#class_rdshadersource_property_source_tesselation_evaluation) | ``""`` |
+| [`String`](class_string.md)                            | [`source_vertex`](class_rdshadersource.md#class_rdshadersource_property_source_vertex)                                 | ``""`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_stage_source`](#class_rdshadersource_method_get_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                        |
-| `void`                      | [`set_stage_source`](#class_rdshadersource_method_set_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), source: [`String`](class_string.md) ) |
+| [`String`](class_string.md) | [`get_stage_source`](class_rdshadersource.md#class_rdshadersource_method_get_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                        |
+| `void`                      | [`set_stage_source`](class_rdshadersource.md#class_rdshadersource_method_set_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), source: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -125,7 +125,7 @@ Source code for the shader's vertex stage.
 
 [`String`](class_string.md) **get_stage_source** ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]<div id="class_rdshadersource_method_get_stage_source"></div>
 
-Returns source code for the specified shader `stage`. Equivalent to getting one of [`source_compute`](#class_rdshadersource_property_source_compute), [`source_fragment`](#class_rdshadersource_property_source_fragment), [`source_tesselation_control`](#class_rdshadersource_property_source_tesselation_control), [`source_tesselation_evaluation`](#class_rdshadersource_property_source_tesselation_evaluation) or [`source_vertex`](#class_rdshadersource_property_source_vertex).
+Returns source code for the specified shader `stage`. Equivalent to getting one of [`source_compute`](class_rdshadersource.md#class_rdshadersource_property_source_compute), [`source_fragment`](class_rdshadersource.md#class_rdshadersource_property_source_fragment), [`source_tesselation_control`](class_rdshadersource.md#class_rdshadersource_property_source_tesselation_control), [`source_tesselation_evaluation`](class_rdshadersource.md#class_rdshadersource_property_source_tesselation_evaluation) or [`source_vertex`](class_rdshadersource.md#class_rdshadersource_property_source_vertex).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -135,7 +135,7 @@ Returns source code for the specified shader `stage`. Equivalent to getting one 
 
 `void` **set_stage_source** ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), source: [`String`](class_string.md) )<div id="class_rdshadersource_method_set_stage_source"></div>
 
-Sets `source` code for the specified shader `stage`. Equivalent to setting one of [`source_compute`](#class_rdshadersource_property_source_compute), [`source_fragment`](#class_rdshadersource_property_source_fragment), [`source_tesselation_control`](#class_rdshadersource_property_source_tesselation_control), [`source_tesselation_evaluation`](#class_rdshadersource_property_source_tesselation_evaluation) or [`source_vertex`](#class_rdshadersource_property_source_vertex).
+Sets `source` code for the specified shader `stage`. Equivalent to setting one of [`source_compute`](class_rdshadersource.md#class_rdshadersource_property_source_compute), [`source_fragment`](class_rdshadersource.md#class_rdshadersource_property_source_fragment), [`source_tesselation_control`](class_rdshadersource.md#class_rdshadersource_property_source_tesselation_control), [`source_tesselation_evaluation`](class_rdshadersource.md#class_rdshadersource_property_source_tesselation_evaluation) or [`source_vertex`](class_rdshadersource.md#class_rdshadersource_property_source_vertex).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

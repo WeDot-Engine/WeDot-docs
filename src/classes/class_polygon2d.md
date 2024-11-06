@@ -19,35 +19,35 @@ A Polygon2D is defined by a set of points. Each point is connected to the next, 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`antialiased`](#class_polygon2d_property_antialiased)                     | ``false``                |
-| [`Array`](class_array.md)                           | [`bones`](#class_polygon2d_property_bones)                                 | ``[]``                   |
-| [`Color`](class_color.md)                           | [`color`](#class_polygon2d_property_color)                                 | ``Color(1, 1, 1, 1)``    |
-| [`int`](class_int.md)                               | [`internal_vertex_count`](#class_polygon2d_property_internal_vertex_count) | ``0``                    |
-| [`float`](class_float.md)                           | [`invert_border`](#class_polygon2d_property_invert_border)                 | ``100.0``                |
-| [`bool`](class_bool.md)                             | [`invert_enabled`](#class_polygon2d_property_invert_enabled)               | ``false``                |
-| [`Vector2`](class_vector2.md)                       | [`offset`](#class_polygon2d_property_offset)                               | ``Vector2(0, 0)``        |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](#class_polygon2d_property_polygon)                             | ``PackedVector2Array()`` |
-| [`Array`](class_array.md)                           | [`polygons`](#class_polygon2d_property_polygons)                           | ``[]``                   |
-| [`NodePath`](class_nodepath.md)                     | [`skeleton`](#class_polygon2d_property_skeleton)                           | ``NodePath("")``         |
-| [`Texture2D`](class_texture2d.md)                   | [`texture`](#class_polygon2d_property_texture)                             |                          |
-| [`Vector2`](class_vector2.md)                       | [`texture_offset`](#class_polygon2d_property_texture_offset)               | ``Vector2(0, 0)``        |
-| [`float`](class_float.md)                           | [`texture_rotation`](#class_polygon2d_property_texture_rotation)           | ``0.0``                  |
-| [`Vector2`](class_vector2.md)                       | [`texture_scale`](#class_polygon2d_property_texture_scale)                 | ``Vector2(1, 1)``        |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`uv`](#class_polygon2d_property_uv)                                       | ``PackedVector2Array()`` |
-| [`PackedColorArray`](class_packedcolorarray.md)     | [`vertex_colors`](#class_polygon2d_property_vertex_colors)                 | ``PackedColorArray()``   |
+| [`bool`](class_bool.md)                             | [`antialiased`](class_polygon2d.md#class_polygon2d_property_antialiased)                     | ``false``                |
+| [`Array`](class_array.md)                           | [`bones`](class_polygon2d.md#class_polygon2d_property_bones)                                 | ``[]``                   |
+| [`Color`](class_color.md)                           | [`color`](class_polygon2d.md#class_polygon2d_property_color)                                 | ``Color(1, 1, 1, 1)``    |
+| [`int`](class_int.md)                               | [`internal_vertex_count`](class_polygon2d.md#class_polygon2d_property_internal_vertex_count) | ``0``                    |
+| [`float`](class_float.md)                           | [`invert_border`](class_polygon2d.md#class_polygon2d_property_invert_border)                 | ``100.0``                |
+| [`bool`](class_bool.md)                             | [`invert_enabled`](class_polygon2d.md#class_polygon2d_property_invert_enabled)               | ``false``                |
+| [`Vector2`](class_vector2.md)                       | [`offset`](class_polygon2d.md#class_polygon2d_property_offset)                               | ``Vector2(0, 0)``        |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](class_polygon2d.md#class_polygon2d_property_polygon)                             | ``PackedVector2Array()`` |
+| [`Array`](class_array.md)                           | [`polygons`](class_polygon2d.md#class_polygon2d_property_polygons)                           | ``[]``                   |
+| [`NodePath`](class_nodepath.md)                     | [`skeleton`](class_polygon2d.md#class_polygon2d_property_skeleton)                           | ``NodePath("")``         |
+| [`Texture2D`](class_texture2d.md)                   | [`texture`](class_polygon2d.md#class_polygon2d_property_texture)                             |                          |
+| [`Vector2`](class_vector2.md)                       | [`texture_offset`](class_polygon2d.md#class_polygon2d_property_texture_offset)               | ``Vector2(0, 0)``        |
+| [`float`](class_float.md)                           | [`texture_rotation`](class_polygon2d.md#class_polygon2d_property_texture_rotation)           | ``0.0``                  |
+| [`Vector2`](class_vector2.md)                       | [`texture_scale`](class_polygon2d.md#class_polygon2d_property_texture_scale)                 | ``Vector2(1, 1)``        |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`uv`](class_polygon2d.md#class_polygon2d_property_uv)                                       | ``PackedVector2Array()`` |
+| [`PackedColorArray`](class_packedcolorarray.md)     | [`vertex_colors`](class_polygon2d.md#class_polygon2d_property_vertex_colors)                 | ``PackedColorArray()``   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                              | [`add_bone`](#class_polygon2d_method_add_bone) ( path: [`NodePath`](class_nodepath.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
-| `void`                                              | [`clear_bones`](#class_polygon2d_method_clear_bones) ( )                                                                                                      |
-| `void`                                              | [`erase_bone`](#class_polygon2d_method_erase_bone) ( index: [`int`](class_int.md) )                                                                           |
-| [`int`](class_int.md)                               | [`get_bone_count`](#class_polygon2d_method_get_bone_count) ( ) const[^const]                                                                                  |
-| [`NodePath`](class_nodepath.md)                     | [`get_bone_path`](#class_polygon2d_method_get_bone_path) ( index: [`int`](class_int.md) ) const[^const]                                                       |
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`get_bone_weights`](#class_polygon2d_method_get_bone_weights) ( index: [`int`](class_int.md) ) const[^const]                                                 |
-| `void`                                              | [`set_bone_path`](#class_polygon2d_method_set_bone_path) ( index: [`int`](class_int.md), path: [`NodePath`](class_nodepath.md) )                              |
-| `void`                                              | [`set_bone_weights`](#class_polygon2d_method_set_bone_weights) ( index: [`int`](class_int.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) ) |
+| `void`                                              | [`add_bone`](class_polygon2d.md#class_polygon2d_method_add_bone) ( path: [`NodePath`](class_nodepath.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
+| `void`                                              | [`clear_bones`](class_polygon2d.md#class_polygon2d_method_clear_bones) ( )                                                                                                      |
+| `void`                                              | [`erase_bone`](class_polygon2d.md#class_polygon2d_method_erase_bone) ( index: [`int`](class_int.md) )                                                                           |
+| [`int`](class_int.md)                               | [`get_bone_count`](class_polygon2d.md#class_polygon2d_method_get_bone_count) ( ) const[^const]                                                                                  |
+| [`NodePath`](class_nodepath.md)                     | [`get_bone_path`](class_polygon2d.md#class_polygon2d_method_get_bone_path) ( index: [`int`](class_int.md) ) const[^const]                                                       |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`get_bone_weights`](class_polygon2d.md#class_polygon2d_method_get_bone_weights) ( index: [`int`](class_int.md) ) const[^const]                                                 |
+| `void`                                              | [`set_bone_path`](class_polygon2d.md#class_polygon2d_method_set_bone_path) ( index: [`int`](class_int.md), path: [`NodePath`](class_nodepath.md) )                              |
+| `void`                                              | [`set_bone_weights`](class_polygon2d.md#class_polygon2d_method_set_bone_weights) ( index: [`int`](class_int.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -72,7 +72,7 @@ If `true`, polygon edges will be anti-aliased.
 
 [`Array`](class_array.md) **bones** = ``[]`` <div id="class_polygon2d_property_bones"></div>
 
-Internal list of [`Bone2D`](class_bone2d.md) nodes used by the assigned [`skeleton`](#class_polygon2d_property_skeleton). Edited using the Polygon2D editor ("UV" button on the top toolbar).
+Internal list of [`Bone2D`](class_bone2d.md) nodes used by the assigned [`skeleton`](class_polygon2d.md#class_polygon2d_property_skeleton). Edited using the Polygon2D editor ("UV" button on the top toolbar).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -85,7 +85,7 @@ Internal list of [`Bone2D`](class_bone2d.md) nodes used by the assigned [`skelet
 - `void` **set_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_color** ( )
 
-The polygon's fill color. If [`texture`](#class_polygon2d_property_texture) is set, it will be multiplied by this color. It will also be the default color for vertices not set in [`vertex_colors`](#class_polygon2d_property_vertex_colors).
+The polygon's fill color. If [`texture`](class_polygon2d.md#class_polygon2d_property_texture) is set, it will be multiplied by this color. It will also be the default color for vertices not set in [`vertex_colors`](class_polygon2d.md#class_polygon2d_property_vertex_colors).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -111,7 +111,7 @@ Number of internal vertices, used for UV mapping.
 - `void` **set_invert_border** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_invert_border** ( )
 
-Added padding applied to the bounding box when [`invert_enabled`](#class_polygon2d_property_invert_enabled) is set to `true`. Setting this value too small may result in a "Bad Polygon" error.
+Added padding applied to the bounding box when [`invert_enabled`](class_polygon2d.md#class_polygon2d_property_invert_enabled) is set to `true`. Setting this value too small may result in a "Bad Polygon" error.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,7 +124,7 @@ Added padding applied to the bounding box when [`invert_enabled`](#class_polygon
 - `void` **set_invert_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_invert_enabled** ( )
 
-If `true`, the polygon will be inverted, containing the area outside the defined points and extending to the [`invert_border`](#class_polygon2d_property_invert_border).
+If `true`, the polygon will be inverted, containing the area outside the defined points and extending to the [`invert_border`](class_polygon2d.md#class_polygon2d_property_invert_border).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,7 +165,7 @@ The polygon's list of vertices. The final point will be connected to the first.
 - `void` **set_polygons** ( value: [`Array`](class_array.md) )
 - [`Array`](class_array.md) **get_polygons** ( )
 
-The list of polygons, in case more than one is being represented. Every individual polygon is stored as a [`PackedInt32Array`](class_packedint32array.md) where each [`int`](class_int.md) is an index to a point in [`polygon`](#class_polygon2d_property_polygon). If empty, this property will be ignored, and the resulting single polygon will be composed of all points in [`polygon`](#class_polygon2d_property_polygon), using the order they are stored in.
+The list of polygons, in case more than one is being represented. Every individual polygon is stored as a [`PackedInt32Array`](class_packedint32array.md) where each [`int`](class_int.md) is an index to a point in [`polygon`](class_polygon2d.md#class_polygon2d_property_polygon). If empty, this property will be ignored, and the resulting single polygon will be composed of all points in [`polygon`](class_polygon2d.md#class_polygon2d_property_polygon), using the order they are stored in.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -191,7 +191,7 @@ Path to a [`Skeleton2D`](class_skeleton2d.md) node used for skeleton-based defor
 - `void` **set_texture** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_texture** ( )
 
-The polygon's fill texture. Use [`uv`](#class_polygon2d_property_uv) to set texture coordinates.
+The polygon's fill texture. Use [`uv`](class_polygon2d.md#class_polygon2d_property_uv) to set texture coordinates.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -204,7 +204,7 @@ The polygon's fill texture. Use [`uv`](#class_polygon2d_property_uv) to set text
 - `void` **set_texture_offset** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_texture_offset** ( )
 
-Amount to offset the polygon's [`texture`](#class_polygon2d_property_texture). If set to `Vector2(0, 0)`, the texture's origin (its top-left corner) will be placed at the polygon's position.
+Amount to offset the polygon's [`texture`](class_polygon2d.md#class_polygon2d_property_texture). If set to `Vector2(0, 0)`, the texture's origin (its top-left corner) will be placed at the polygon's position.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -230,7 +230,7 @@ The texture's rotation in radians.
 - `void` **set_texture_scale** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_texture_scale** ( )
 
-Amount to multiply the [`uv`](#class_polygon2d_property_uv) coordinates when using [`texture`](#class_polygon2d_property_texture). Larger values make the texture smaller, and vice versa.
+Amount to multiply the [`uv`](class_polygon2d.md#class_polygon2d_property_uv) coordinates when using [`texture`](class_polygon2d.md#class_polygon2d_property_texture). Larger values make the texture smaller, and vice versa.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -258,7 +258,7 @@ Texture coordinates for each vertex of the polygon. There should be one UV value
 - `void` **set_vertex_colors** ( value: [`PackedColorArray`](class_packedcolorarray.md) )
 - [`PackedColorArray`](class_packedcolorarray.md) **get_vertex_colors** ( )
 
-Color for each vertex. Colors are interpolated between vertices, resulting in smooth gradients. There should be one per polygon vertex. If there are fewer, undefined vertices will use [`color`](#class_polygon2d_property_color).
+Color for each vertex. Colors are interpolated between vertices, resulting in smooth gradients. There should be one per polygon vertex. If there are fewer, undefined vertices will use [`color`](class_polygon2d.md#class_polygon2d_property_color).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedColorArray`](class_packedcolorarray.md) for more details.
 

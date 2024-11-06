@@ -21,11 +21,11 @@ Performs a lookup operation on the texture provided as a uniform for the shader.
 
 |||
 |:-:|:--|
-| [ColorDefault](#enum_visualshadernodetextureparameter_colordefault)   | [`color_default`](#class_visualshadernodetextureparameter_property_color_default)   | ``0`` |
-| [TextureFilter](#enum_visualshadernodetextureparameter_texturefilter) | [`texture_filter`](#class_visualshadernodetextureparameter_property_texture_filter) | ``0`` |
-| [TextureRepeat](#enum_visualshadernodetextureparameter_texturerepeat) | [`texture_repeat`](#class_visualshadernodetextureparameter_property_texture_repeat) | ``0`` |
-| [TextureSource](#enum_visualshadernodetextureparameter_texturesource) | [`texture_source`](#class_visualshadernodetextureparameter_property_texture_source) | ``0`` |
-| [TextureType](#enum_visualshadernodetextureparameter_texturetype)     | [`texture_type`](#class_visualshadernodetextureparameter_property_texture_type)     | ``0`` |
+| [ColorDefault](#enum_visualshadernodetextureparameter_colordefault)   | [`color_default`](class_visualshadernodetextureparameter.md#class_visualshadernodetextureparameter_property_color_default)   | ``0`` |
+| [TextureFilter](#enum_visualshadernodetextureparameter_texturefilter) | [`texture_filter`](class_visualshadernodetextureparameter.md#class_visualshadernodetextureparameter_property_texture_filter) | ``0`` |
+| [TextureRepeat](#enum_visualshadernodetextureparameter_texturerepeat) | [`texture_repeat`](class_visualshadernodetextureparameter.md#class_visualshadernodetextureparameter_property_texture_repeat) | ``0`` |
+| [TextureSource](#enum_visualshadernodetextureparameter_texturesource) | [`texture_source`](class_visualshadernodetextureparameter.md#class_visualshadernodetextureparameter_property_texture_source) | ``0`` |
+| [TextureType](#enum_visualshadernodetextureparameter_texturetype)     | [`texture_type`](class_visualshadernodetextureparameter.md#class_visualshadernodetextureparameter_property_texture_type)     | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -129,7 +129,7 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 [TextureFilter](#enum_visualshadernodetextureparameter_texturefilter) **FILTER_NEAREST_MIPMAP** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look pixelated from up close, and smooth from a distance.
+The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look pixelated from up close, and smooth from a distance.
 
 Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to [`Camera2D`](class_camera2d.md) zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
 
@@ -137,7 +137,7 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 [TextureFilter](#enum_visualshadernodetextureparameter_texturefilter) **FILTER_LINEAR_MIPMAP** = ``4``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look smooth from up close, and smooth from a distance.
+The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look smooth from up close, and smooth from a distance.
 
 Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to [`Camera2D`](class_camera2d.md) zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
 
@@ -145,17 +145,17 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 [TextureFilter](#enum_visualshadernodetextureparameter_texturefilter) **FILTER_NEAREST_MIPMAP_ANISOTROPIC** = ``5``
 
-The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting [`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level`](#class_projectsettings_property_rendering/textures/default_filters/anisotropic_filtering_level).
+The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting [`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/anisotropic_filtering_level).
 
- **Note:** This texture filter is rarely useful in 2D projects. [`FILTER_NEAREST_MIPMAP`](#class_visualshadernodetextureparameter_constant_filter_nearest_mipmap) is usually more appropriate in this case.
+ **Note:** This texture filter is rarely useful in 2D projects. [`FILTER_NEAREST_MIPMAP`](class_visualshadernodetextureparameter.md#class_visualshadernodetextureparameter_constant_filter_nearest_mipmap) is usually more appropriate in this case.
 
 <div id="_class_visualshadernodetextureparameter_constant_filter_linear_mipmap_anisotropic"></div>
 
 [TextureFilter](#enum_visualshadernodetextureparameter_texturefilter) **FILTER_LINEAR_MIPMAP_ANISOTROPIC** = ``6``
 
-The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting [`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level`](#class_projectsettings_property_rendering/textures/default_filters/anisotropic_filtering_level).
+The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting [`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/anisotropic_filtering_level).
 
- **Note:** This texture filter is rarely useful in 2D projects. [`FILTER_LINEAR_MIPMAP`](#class_visualshadernodetextureparameter_constant_filter_linear_mipmap) is usually more appropriate in this case.
+ **Note:** This texture filter is rarely useful in 2D projects. [`FILTER_LINEAR_MIPMAP`](class_visualshadernodetextureparameter.md#class_visualshadernodetextureparameter_constant_filter_linear_mipmap) is usually more appropriate in this case.
 
 <div id="_class_visualshadernodetextureparameter_constant_filter_max"></div>
 

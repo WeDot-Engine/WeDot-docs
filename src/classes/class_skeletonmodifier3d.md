@@ -25,15 +25,15 @@ This node should be used to implement custom IK solvers, constraints, or skeleto
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`active`](#class_skeletonmodifier3d_property_active)       | ``true`` |
-| [`float`](class_float.md) | [`influence`](#class_skeletonmodifier3d_property_influence) | ``1.0``  |
+| [`bool`](class_bool.md)   | [`active`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_property_active)       | ``true`` |
+| [`float`](class_float.md) | [`influence`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_property_influence) | ``1.0``  |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                              | [`_process_modification`](#class_skeletonmodifier3d_private_method__process_modification) ( ) virtual[^virtual] |
-| [`Skeleton3D`](class_skeleton3d.md) | [`get_skeleton`](#class_skeletonmodifier3d_method_get_skeleton) ( ) const[^const]                               |
+| `void`                              | [`_process_modification`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_private_method__process_modification) ( ) virtual[^virtual] |
+| [`Skeleton3D`](class_skeleton3d.md) | [`get_skeleton`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_method_get_skeleton) ( ) const[^const]                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -47,7 +47,7 @@ This node should be used to implement custom IK solvers, constraints, or skeleto
 
 Notifies when the modification have been finished.
 
- **Note:** If you want to get the modified bone pose by the modifier, you must use [`Skeleton3D.get_bone_pose`](#class_skeleton3d_method_get_bone_pose) or [`Skeleton3D.get_bone_global_pose`](#class_skeleton3d_method_get_bone_global_pose) at the moment this signal is fired.
+ **Note:** If you want to get the modified bone pose by the modifier, you must use [`Skeleton3D.get_bone_pose`](class_skeleton3d.md#class_skeleton3d_method_get_bone_pose) or [`Skeleton3D.get_bone_global_pose`](class_skeleton3d.md#class_skeleton3d_method_get_bone_global_pose) at the moment this signal is fired.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -91,7 +91,7 @@ Sets the influence of the modification.
 
 Override this virtual method to implement a custom skeleton modifier. You should do things like get the [`Skeleton3D`](class_skeleton3d.md)'s current pose and apply the pose here.
 
- [`_process_modification`](#class_skeletonmodifier3d_private_method__process_modification) must not apply [`influence`](#class_skeletonmodifier3d_property_influence) to bone poses because the [`Skeleton3D`](class_skeleton3d.md) automatically applies influence to all bone poses set by the modifier.
+ [`_process_modification`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_private_method__process_modification) must not apply [`influence`](class_skeletonmodifier3d.md#class_skeletonmodifier3d_property_influence) to bone poses because the [`Skeleton3D`](class_skeleton3d.md) automatically applies influence to all bone poses set by the modifier.
 
 <!-- rst-class:: classref-item-separator -->
 

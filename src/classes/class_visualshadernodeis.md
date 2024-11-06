@@ -19,7 +19,7 @@ Returns the boolean result of the comparison between `INF` or `NaN` and a scalar
 
 |||
 |:-:|:--|
-| [Function](#enum_visualshadernodeis_function) | [`function`](#class_visualshadernodeis_property_function) | ``0`` |
+| [Function](#enum_visualshadernodeis_function) | [`function`](class_visualshadernodeis.md#class_visualshadernodeis_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

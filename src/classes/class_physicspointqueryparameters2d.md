@@ -9,22 +9,22 @@
 
 **继承：** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Provides parameters for [`PhysicsDirectSpaceState2D.intersect_point`](#class_physicsdirectspacestate2d_method_intersect_point).
+Provides parameters for [`PhysicsDirectSpaceState2D.intersect_point`](class_physicsdirectspacestate2d.md#class_physicsdirectspacestate2d_method_intersect_point).
 
 ## 描述
 
-By changing various properties of this object, such as the point position, you can configure the parameters for [`PhysicsDirectSpaceState2D.intersect_point`](#class_physicsdirectspacestate2d_method_intersect_point).
+By changing various properties of this object, such as the point position, you can configure the parameters for [`PhysicsDirectSpaceState2D.intersect_point`](class_physicsdirectspacestate2d.md#class_physicsdirectspacestate2d_method_intersect_point).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                         | [`canvas_instance_id`](#class_physicspointqueryparameters2d_property_canvas_instance_id)   | ``0``             |
-| [`bool`](class_bool.md)                       | [`collide_with_areas`](#class_physicspointqueryparameters2d_property_collide_with_areas)   | ``false``         |
-| [`bool`](class_bool.md)                       | [`collide_with_bodies`](#class_physicspointqueryparameters2d_property_collide_with_bodies) | ``true``          |
-| [`int`](class_int.md)                         | [`collision_mask`](#class_physicspointqueryparameters2d_property_collision_mask)           | ``4294967295``    |
-| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude`](#class_physicspointqueryparameters2d_property_exclude)                         | ``[]``            |
-| [`Vector2`](class_vector2.md)                 | [`position`](#class_physicspointqueryparameters2d_property_position)                       | ``Vector2(0, 0)`` |
+| [`int`](class_int.md)                         | [`canvas_instance_id`](class_physicspointqueryparameters2d.md#class_physicspointqueryparameters2d_property_canvas_instance_id)   | ``0``             |
+| [`bool`](class_bool.md)                       | [`collide_with_areas`](class_physicspointqueryparameters2d.md#class_physicspointqueryparameters2d_property_collide_with_areas)   | ``false``         |
+| [`bool`](class_bool.md)                       | [`collide_with_bodies`](class_physicspointqueryparameters2d.md#class_physicspointqueryparameters2d_property_collide_with_bodies) | ``true``          |
+| [`int`](class_int.md)                         | [`collision_mask`](class_physicspointqueryparameters2d.md#class_physicspointqueryparameters2d_property_collision_mask)           | ``4294967295``    |
+| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude`](class_physicspointqueryparameters2d.md#class_physicspointqueryparameters2d_property_exclude)                         | ``[]``            |
+| [`Vector2`](class_vector2.md)                 | [`position`](class_physicspointqueryparameters2d.md#class_physicspointqueryparameters2d_property_position)                       | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -39,7 +39,7 @@ By changing various properties of this object, such as the point position, you c
 - `void` **set_canvas_instance_id** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_canvas_instance_id** ( )
 
-If different from `0`, restricts the query to a specific canvas layer specified by its instance ID. See [`Object.get_instance_id`](#class_object_method_get_instance_id).
+If different from `0`, restricts the query to a specific canvas layer specified by its instance ID. See [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id).
 
 If `0`, restricts the query to the Viewport's default canvas layer.
 
@@ -93,7 +93,7 @@ The physics layers the query will detect (as a bitmask). By default, all collisi
 - `void` **set_exclude** ( value: [Array](class_array.md) [`RID`](class_rid.md) )
 - [Array](class_array.md) [`RID`](class_rid.md) **get_exclude** ( )
 
-The list of object [`RID`](class_rid.md) s that will be excluded from collisions. Use [`CollisionObject2D.get_rid`](#class_collisionobject2d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject2D`](class_collisionobject2d.md)-derived node.
+The list of object [`RID`](class_rid.md) s that will be excluded from collisions. Use [`CollisionObject2D.get_rid`](class_collisionobject2d.md#class_collisionobject2d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject2D`](class_collisionobject2d.md)-derived node.
 
  **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then assign it to the property again.
 

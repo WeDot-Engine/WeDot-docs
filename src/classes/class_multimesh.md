@@ -29,32 +29,32 @@ Since instances may have any behavior, the AABB used for visibility must be prov
 
 |||
 |:-:|:--|
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`buffer`](#class_multimesh_property_buffer)                                 | ``PackedFloat32Array()``   |
-| [`PackedColorArray`](class_packedcolorarray.md)     | [`color_array`](#class_multimesh_property_color_array)                       |                            |
-| [`AABB`](class_aabb.md)                             | [`custom_aabb`](#class_multimesh_property_custom_aabb)                       | ``AABB(0, 0, 0, 0, 0, 0)`` |
-| [`PackedColorArray`](class_packedcolorarray.md)     | [`custom_data_array`](#class_multimesh_property_custom_data_array)           |                            |
-| [`int`](class_int.md)                               | [`instance_count`](#class_multimesh_property_instance_count)                 | ``0``                      |
-| [`Mesh`](class_mesh.md)                             | [`mesh`](#class_multimesh_property_mesh)                                     |                            |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`transform_2d_array`](#class_multimesh_property_transform_2d_array)         |                            |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`transform_array`](#class_multimesh_property_transform_array)               |                            |
-| [TransformFormat](#enum_multimesh_transformformat)  | [`transform_format`](#class_multimesh_property_transform_format)             | ``0``                      |
-| [`bool`](class_bool.md)                             | [`use_colors`](#class_multimesh_property_use_colors)                         | ``false``                  |
-| [`bool`](class_bool.md)                             | [`use_custom_data`](#class_multimesh_property_use_custom_data)               | ``false``                  |
-| [`int`](class_int.md)                               | [`visible_instance_count`](#class_multimesh_property_visible_instance_count) | ``-1``                     |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`buffer`](class_multimesh.md#class_multimesh_property_buffer)                                 | ``PackedFloat32Array()``   |
+| [`PackedColorArray`](class_packedcolorarray.md)     | [`color_array`](class_multimesh.md#class_multimesh_property_color_array)                       |                            |
+| [`AABB`](class_aabb.md)                             | [`custom_aabb`](class_multimesh.md#class_multimesh_property_custom_aabb)                       | ``AABB(0, 0, 0, 0, 0, 0)`` |
+| [`PackedColorArray`](class_packedcolorarray.md)     | [`custom_data_array`](class_multimesh.md#class_multimesh_property_custom_data_array)           |                            |
+| [`int`](class_int.md)                               | [`instance_count`](class_multimesh.md#class_multimesh_property_instance_count)                 | ``0``                      |
+| [`Mesh`](class_mesh.md)                             | [`mesh`](class_multimesh.md#class_multimesh_property_mesh)                                     |                            |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`transform_2d_array`](class_multimesh.md#class_multimesh_property_transform_2d_array)         |                            |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`transform_array`](class_multimesh.md#class_multimesh_property_transform_array)               |                            |
+| [TransformFormat](#enum_multimesh_transformformat)  | [`transform_format`](class_multimesh.md#class_multimesh_property_transform_format)             | ``0``                      |
+| [`bool`](class_bool.md)                             | [`use_colors`](class_multimesh.md#class_multimesh_property_use_colors)                         | ``false``                  |
+| [`bool`](class_bool.md)                             | [`use_custom_data`](class_multimesh.md#class_multimesh_property_use_custom_data)               | ``false``                  |
+| [`int`](class_int.md)                               | [`visible_instance_count`](class_multimesh.md#class_multimesh_property_visible_instance_count) | ``-1``                     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md)               | [`get_aabb`](#class_multimesh_method_get_aabb) ( ) const[^const]                                                                                                       |
-| [`Color`](class_color.md)             | [`get_instance_color`](#class_multimesh_method_get_instance_color) ( instance: [`int`](class_int.md) ) const[^const]                                                   |
-| [`Color`](class_color.md)             | [`get_instance_custom_data`](#class_multimesh_method_get_instance_custom_data) ( instance: [`int`](class_int.md) ) const[^const]                                       |
-| [`Transform3D`](class_transform3d.md) | [`get_instance_transform`](#class_multimesh_method_get_instance_transform) ( instance: [`int`](class_int.md) ) const[^const]                                           |
-| [`Transform2D`](class_transform2d.md) | [`get_instance_transform_2d`](#class_multimesh_method_get_instance_transform_2d) ( instance: [`int`](class_int.md) ) const[^const]                                     |
-| `void`                                | [`set_instance_color`](#class_multimesh_method_set_instance_color) ( instance: [`int`](class_int.md), color: [`Color`](class_color.md) )                               |
-| `void`                                | [`set_instance_custom_data`](#class_multimesh_method_set_instance_custom_data) ( instance: [`int`](class_int.md), custom_data: [`Color`](class_color.md) )             |
-| `void`                                | [`set_instance_transform`](#class_multimesh_method_set_instance_transform) ( instance: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )       |
-| `void`                                | [`set_instance_transform_2d`](#class_multimesh_method_set_instance_transform_2d) ( instance: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) ) |
+| [`AABB`](class_aabb.md)               | [`get_aabb`](class_multimesh.md#class_multimesh_method_get_aabb) ( ) const[^const]                                                                                                       |
+| [`Color`](class_color.md)             | [`get_instance_color`](class_multimesh.md#class_multimesh_method_get_instance_color) ( instance: [`int`](class_int.md) ) const[^const]                                                   |
+| [`Color`](class_color.md)             | [`get_instance_custom_data`](class_multimesh.md#class_multimesh_method_get_instance_custom_data) ( instance: [`int`](class_int.md) ) const[^const]                                       |
+| [`Transform3D`](class_transform3d.md) | [`get_instance_transform`](class_multimesh.md#class_multimesh_method_get_instance_transform) ( instance: [`int`](class_int.md) ) const[^const]                                           |
+| [`Transform2D`](class_transform2d.md) | [`get_instance_transform_2d`](class_multimesh.md#class_multimesh_method_get_instance_transform_2d) ( instance: [`int`](class_int.md) ) const[^const]                                     |
+| `void`                                | [`set_instance_color`](class_multimesh.md#class_multimesh_method_set_instance_color) ( instance: [`int`](class_int.md), color: [`Color`](class_color.md) )                               |
+| `void`                                | [`set_instance_custom_data`](class_multimesh.md#class_multimesh_method_set_instance_custom_data) ( instance: [`int`](class_int.md), custom_data: [`Color`](class_color.md) )             |
+| `void`                                | [`set_instance_transform`](class_multimesh.md#class_multimesh_method_set_instance_transform) ( instance: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )       |
+| `void`                                | [`set_instance_transform_2d`](class_multimesh.md#class_multimesh_method_set_instance_transform_2d) ( instance: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -101,7 +101,7 @@ Use this when using 3D transforms.
 
 [`PackedColorArray`](class_packedcolorarray.md) **color_array** <div id="class_multimesh_property_color_array"></div>
 
-**已弃用：** Accessing this property is very slow. Use [`set_instance_color`](#class_multimesh_method_set_instance_color) and [`get_instance_color`](#class_multimesh_method_get_instance_color) instead.
+**已弃用：** Accessing this property is very slow. Use [`set_instance_color`](class_multimesh.md#class_multimesh_method_set_instance_color) and [`get_instance_color`](class_multimesh.md#class_multimesh_method_get_instance_color) instead.
 
 Array containing each [`Color`](class_color.md) used by all instances of this mesh.
 
@@ -128,7 +128,7 @@ Custom AABB for this MultiMesh resource. Setting this manually prevents costly r
 
 [`PackedColorArray`](class_packedcolorarray.md) **custom_data_array** <div id="class_multimesh_property_custom_data_array"></div>
 
-**已弃用：** Accessing this property is very slow. Use [`set_instance_custom_data`](#class_multimesh_method_set_instance_custom_data) and [`get_instance_custom_data`](#class_multimesh_method_get_instance_custom_data) instead.
+**已弃用：** Accessing this property is very slow. Use [`set_instance_custom_data`](class_multimesh.md#class_multimesh_method_set_instance_custom_data) and [`get_instance_custom_data`](class_multimesh.md#class_multimesh_method_get_instance_custom_data) instead.
 
 Array containing each custom data value used by all instances of this mesh, as a [`PackedColorArray`](class_packedcolorarray.md).
 
@@ -147,7 +147,7 @@ Array containing each custom data value used by all instances of this mesh, as a
 
 Number of instances that will get drawn. This clears and (re)sizes the buffers. Setting data format or flags afterwards will have no effect.
 
-By default, all instances are drawn but you can limit this with [`visible_instance_count`](#class_multimesh_property_visible_instance_count).
+By default, all instances are drawn but you can limit this with [`visible_instance_count`](class_multimesh.md#class_multimesh_property_visible_instance_count).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -162,7 +162,7 @@ By default, all instances are drawn but you can limit this with [`visible_instan
 
 [`Mesh`](class_mesh.md) resource to be instanced.
 
-The looks of the individual instances can be modified using [`set_instance_color`](#class_multimesh_method_set_instance_color) and [`set_instance_custom_data`](#class_multimesh_method_set_instance_custom_data).
+The looks of the individual instances can be modified using [`set_instance_color`](class_multimesh.md#class_multimesh_method_set_instance_color) and [`set_instance_custom_data`](class_multimesh.md#class_multimesh_method_set_instance_custom_data).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -172,7 +172,7 @@ The looks of the individual instances can be modified using [`set_instance_color
 
 [`PackedVector2Array`](class_packedvector2array.md) **transform_2d_array** <div id="class_multimesh_property_transform_2d_array"></div>
 
-**已弃用：** Accessing this property is very slow. Use [`set_instance_transform_2d`](#class_multimesh_method_set_instance_transform_2d) and [`get_instance_transform_2d`](#class_multimesh_method_get_instance_transform_2d) instead.
+**已弃用：** Accessing this property is very slow. Use [`set_instance_transform_2d`](class_multimesh.md#class_multimesh_method_set_instance_transform_2d) and [`get_instance_transform_2d`](class_multimesh.md#class_multimesh_method_get_instance_transform_2d) instead.
 
 Array containing each [`Transform2D`](class_transform2d.md) value used by all instances of this mesh, as a [`PackedVector2Array`](class_packedvector2array.md). Each transform is divided into 3 [`Vector2`](class_vector2.md) values corresponding to the transforms' `x`, `y`, and `origin`.
 
@@ -186,7 +186,7 @@ Array containing each [`Transform2D`](class_transform2d.md) value used by all in
 
 [`PackedVector3Array`](class_packedvector3array.md) **transform_array** <div id="class_multimesh_property_transform_array"></div>
 
-**已弃用：** Accessing this property is very slow. Use [`set_instance_transform`](#class_multimesh_method_set_instance_transform) and [`get_instance_transform`](#class_multimesh_method_get_instance_transform) instead.
+**已弃用：** Accessing this property is very slow. Use [`set_instance_transform`](class_multimesh.md#class_multimesh_method_set_instance_transform) and [`get_instance_transform`](class_multimesh.md#class_multimesh_method_get_instance_transform) instead.
 
 Array containing each [`Transform3D`](class_transform3d.md) value used by all instances of this mesh, as a [`PackedVector3Array`](class_packedvector3array.md). Each transform is divided into 4 [`Vector3`](class_vector3.md) values corresponding to the transforms' `x`, `y`, `z`, and `origin`.
 
@@ -216,7 +216,7 @@ Format of transform used to transform mesh, either 2D or 3D.
 - `void` **set_use_colors** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_colors** ( )
 
-If `true`, the **MultiMesh** will use color data (see [`set_instance_color`](#class_multimesh_method_set_instance_color)). Can only be set when [`instance_count`](#class_multimesh_property_instance_count) is `0` or less. This means that you need to call this method before setting the instance count, or temporarily reset it to `0`.
+If `true`, the **MultiMesh** will use color data (see [`set_instance_color`](class_multimesh.md#class_multimesh_method_set_instance_color)). Can only be set when [`instance_count`](class_multimesh.md#class_multimesh_property_instance_count) is `0` or less. This means that you need to call this method before setting the instance count, or temporarily reset it to `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -229,7 +229,7 @@ If `true`, the **MultiMesh** will use color data (see [`set_instance_color`](#cl
 - `void` **set_use_custom_data** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_custom_data** ( )
 
-If `true`, the **MultiMesh** will use custom data (see [`set_instance_custom_data`](#class_multimesh_method_set_instance_custom_data)). Can only be set when [`instance_count`](#class_multimesh_property_instance_count) is `0` or less. This means that you need to call this method before setting the instance count, or temporarily reset it to `0`.
+If `true`, the **MultiMesh** will use custom data (see [`set_instance_custom_data`](class_multimesh.md#class_multimesh_method_set_instance_custom_data)). Can only be set when [`instance_count`](class_multimesh.md#class_multimesh_property_instance_count) is `0` or less. This means that you need to call this method before setting the instance count, or temporarily reset it to `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -308,7 +308,7 @@ Sets the color of a specific instance by *multiplying* the mesh's existing verte
 
  **Note:** Each component is stored in 32 bits in the Forward+ and Mobile rendering methods, but is packed into 16 bits in the Compatibility rendering method.
 
-For the color to take effect, ensure that [`use_colors`](#class_multimesh_property_use_colors) is `true` on the **MultiMesh** and [`BaseMaterial3D.vertex_color_use_as_albedo`](#class_basematerial3d_property_vertex_color_use_as_albedo) is `true` on the material. If you intend to set an absolute color instead of tinting, make sure the material's albedo color is set to pure white (`Color(1, 1, 1)`).
+For the color to take effect, ensure that [`use_colors`](class_multimesh.md#class_multimesh_property_use_colors) is `true` on the **MultiMesh** and [`BaseMaterial3D.vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo) is `true` on the material. If you intend to set an absolute color instead of tinting, make sure the material's albedo color is set to pure white (`Color(1, 1, 1)`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -322,7 +322,7 @@ Sets custom data for a specific instance. `custom_data` is a [`Color`](class_col
 
  **Note:** Each number is stored in 32 bits in the Forward+ and Mobile rendering methods, but is packed into 16 bits in the Compatibility rendering method.
 
-For the custom data to be used, ensure that [`use_custom_data`](#class_multimesh_property_use_custom_data) is `true`.
+For the custom data to be used, ensure that [`use_custom_data`](class_multimesh.md#class_multimesh_property_use_custom_data) is `true`.
 
 This custom instance data has to be manually accessed in your custom shader using `INSTANCE_CUSTOM`.
 

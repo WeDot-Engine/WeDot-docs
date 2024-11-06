@@ -13,14 +13,14 @@ Class representing a square mesh facing the camera.
 
 ## 描述
 
-Class representing a square [`PrimitiveMesh`](class_primitivemesh.md). This flat mesh does not have a thickness. By default, this mesh is aligned on the X and Y axes; this rotation is more suited for use with billboarded materials. A **QuadMesh** is equivalent to a [`PlaneMesh`](class_planemesh.md) except its default [`PlaneMesh.orientation`](#class_planemesh_property_orientation) is [`PlaneMesh.FACE_Z`](#class_planemesh_constant_face_z).
+Class representing a square [`PrimitiveMesh`](class_primitivemesh.md). This flat mesh does not have a thickness. By default, this mesh is aligned on the X and Y axes; this rotation is more suited for use with billboarded materials. A **QuadMesh** is equivalent to a [`PlaneMesh`](class_planemesh.md) except its default [`PlaneMesh.orientation`](class_planemesh.md#class_planemesh_property_orientation) is [`PlaneMesh.FACE_Z`](class_planemesh.md#class_planemesh_constant_face_z).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Orientation](#enum_planemesh_orientation) | orientation | ``2`` (overrides [`PlaneMesh`](#class_planemesh_property_orientation))      |
-| [`Vector2`](class_vector2.md)              | size        | ``Vector2(1, 1)`` (overrides [`PlaneMesh`](#class_planemesh_property_size)) |
+| [Orientation](#enum_planemesh_orientation) | orientation | ``2`` (overrides [`PlaneMesh`](class_planemesh.md#class_planemesh_property_orientation))      |
+| [`Vector2`](class_vector2.md)              | size        | ``Vector2(1, 1)`` (overrides [`PlaneMesh`](class_planemesh.md#class_planemesh_property_size)) |
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -13,9 +13,9 @@ Creates an idle interval in a [`Tween`](class_tween.md) animation.
 
 ## 描述
 
-**IntervalTweener** is used to make delays in a tweening sequence. See [`Tween.tween_interval`](#class_tween_method_tween_interval) for more usage information.
+**IntervalTweener** is used to make delays in a tweening sequence. See [`Tween.tween_interval`](class_tween.md#class_tween_method_tween_interval) for more usage information.
 
- **Note:** [`Tween.tween_interval`](#class_tween_method_tween_interval) is the only correct way to create **IntervalTweener**. Any **IntervalTweener** created manually will not function correctly.
+ **Note:** [`Tween.tween_interval`](class_tween.md#class_tween_method_tween_interval) is the only correct way to create **IntervalTweener**. Any **IntervalTweener** created manually will not function correctly.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

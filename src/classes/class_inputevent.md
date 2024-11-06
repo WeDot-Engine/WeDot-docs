@@ -15,31 +15,31 @@ Abstract base class for input events.
 
 ## 描述
 
-Abstract base class of all types of input events. See [`Node._input`](#class_node_private_method__input).
+Abstract base class of all types of input events. See [`Node._input`](class_node.md#class_node_private_method__input).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`device`](#class_inputevent_property_device) | ``0`` |
+| [`int`](class_int.md) | [`device`](class_inputevent.md#class_inputevent_property_device) | ``0`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)             | [`accumulate`](#class_inputevent_method_accumulate) ( with_event: [`InputEvent`](class_inputevent.md) )                                                                                                                    |
-| [`String`](class_string.md)         | [`as_text`](#class_inputevent_method_as_text) ( ) const[^const]                                                                                                                                                            |
-| [`float`](class_float.md)           | [`get_action_strength`](#class_inputevent_method_get_action_strength) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                          |
-| [`bool`](class_bool.md)             | [`is_action`](#class_inputevent_method_is_action) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                              |
-| [`bool`](class_bool.md)             | [`is_action_pressed`](#class_inputevent_method_is_action_pressed) ( action: [`StringName`](class_stringname.md), allow_echo: [`bool`](class_bool.md) = false, exact_match: [`bool`](class_bool.md) = false ) const[^const] |
-| [`bool`](class_bool.md)             | [`is_action_released`](#class_inputevent_method_is_action_released) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                            |
-| [`bool`](class_bool.md)             | [`is_action_type`](#class_inputevent_method_is_action_type) ( ) const[^const]                                                                                                                                              |
-| [`bool`](class_bool.md)             | [`is_canceled`](#class_inputevent_method_is_canceled) ( ) const[^const]                                                                                                                                                    |
-| [`bool`](class_bool.md)             | [`is_echo`](#class_inputevent_method_is_echo) ( ) const[^const]                                                                                                                                                            |
-| [`bool`](class_bool.md)             | [`is_match`](#class_inputevent_method_is_match) ( event: [`InputEvent`](class_inputevent.md), exact_match: [`bool`](class_bool.md) = true ) const[^const]                                                                  |
-| [`bool`](class_bool.md)             | [`is_pressed`](#class_inputevent_method_is_pressed) ( ) const[^const]                                                                                                                                                      |
-| [`bool`](class_bool.md)             | [`is_released`](#class_inputevent_method_is_released) ( ) const[^const]                                                                                                                                                    |
-| [`InputEvent`](class_inputevent.md) | [`xformed_by`](#class_inputevent_method_xformed_by) ( xform: [`Transform2D`](class_transform2d.md), local_ofs: [`Vector2`](class_vector2.md) = Vector2(0, 0) ) const[^const]                                               |
+| [`bool`](class_bool.md)             | [`accumulate`](class_inputevent.md#class_inputevent_method_accumulate) ( with_event: [`InputEvent`](class_inputevent.md) )                                                                                                                    |
+| [`String`](class_string.md)         | [`as_text`](class_inputevent.md#class_inputevent_method_as_text) ( ) const[^const]                                                                                                                                                            |
+| [`float`](class_float.md)           | [`get_action_strength`](class_inputevent.md#class_inputevent_method_get_action_strength) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                          |
+| [`bool`](class_bool.md)             | [`is_action`](class_inputevent.md#class_inputevent_method_is_action) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                                              |
+| [`bool`](class_bool.md)             | [`is_action_pressed`](class_inputevent.md#class_inputevent_method_is_action_pressed) ( action: [`StringName`](class_stringname.md), allow_echo: [`bool`](class_bool.md) = false, exact_match: [`bool`](class_bool.md) = false ) const[^const] |
+| [`bool`](class_bool.md)             | [`is_action_released`](class_inputevent.md#class_inputevent_method_is_action_released) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                            |
+| [`bool`](class_bool.md)             | [`is_action_type`](class_inputevent.md#class_inputevent_method_is_action_type) ( ) const[^const]                                                                                                                                              |
+| [`bool`](class_bool.md)             | [`is_canceled`](class_inputevent.md#class_inputevent_method_is_canceled) ( ) const[^const]                                                                                                                                                    |
+| [`bool`](class_bool.md)             | [`is_echo`](class_inputevent.md#class_inputevent_method_is_echo) ( ) const[^const]                                                                                                                                                            |
+| [`bool`](class_bool.md)             | [`is_match`](class_inputevent.md#class_inputevent_method_is_match) ( event: [`InputEvent`](class_inputevent.md), exact_match: [`bool`](class_bool.md) = true ) const[^const]                                                                  |
+| [`bool`](class_bool.md)             | [`is_pressed`](class_inputevent.md#class_inputevent_method_is_pressed) ( ) const[^const]                                                                                                                                                      |
+| [`bool`](class_bool.md)             | [`is_released`](class_inputevent.md#class_inputevent_method_is_released) ( ) const[^const]                                                                                                                                                    |
+| [`InputEvent`](class_inputevent.md) | [`xformed_by`](class_inputevent.md#class_inputevent_method_xformed_by) ( xform: [`Transform2D`](class_transform2d.md), local_ofs: [`Vector2`](class_vector2.md) = Vector2(0, 0) ) const[^const]                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -68,7 +68,7 @@ Device ID used for emulated mouse input from a touchscreen, or for emulated touc
 
 The event's device ID.
 
- **Note:** [`device`](#class_inputevent_property_device) can be negative for special use cases that don't refer to devices physically present on the system. See [`DEVICE_ID_EMULATION`](#class_inputevent_constant_device_id_emulation).
+ **Note:** [`device`](class_inputevent.md#class_inputevent_property_device) can be negative for special use cases that don't refer to devices physically present on the system. See [`DEVICE_ID_EMULATION`](class_inputevent.md#class_inputevent_constant_device_id_emulation).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -130,7 +130,7 @@ Returns `true` if the given action is being pressed (and is not an echo event fo
 
 If `exact_match` is `false`, it ignores additional input modifiers for [`InputEventKey`](class_inputeventkey.md) and [`InputEventMouseButton`](class_inputeventmousebutton.md) events, and the direction for [`InputEventJoypadMotion`](class_inputeventjoypadmotion.md) events.
 
- **Note:** Due to keyboard ghosting, [`is_action_pressed`](#class_inputevent_method_is_action_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
+ **Note:** Due to keyboard ghosting, [`is_action_pressed`](class_inputevent.md#class_inputevent_method_is_action_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -198,7 +198,7 @@ If `exact_match` is `false`, it ignores additional input modifiers for [`InputEv
 
 Returns `true` if this input event is pressed. Not relevant for events of type [`InputEventMouseMotion`](class_inputeventmousemotion.md) or [`InputEventScreenDrag`](class_inputeventscreendrag.md).
 
- **Note:** Due to keyboard ghosting, [`is_pressed`](#class_inputevent_method_is_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
+ **Note:** Due to keyboard ghosting, [`is_pressed`](class_inputevent.md#class_inputevent_method_is_pressed) may return `false` even if one of the action's keys is pressed. See [*Input examples*](../tutorials/inputs/input_examples.md#keyboard-events) in the documentation for more information.
 
 <!-- rst-class:: classref-item-separator -->
 

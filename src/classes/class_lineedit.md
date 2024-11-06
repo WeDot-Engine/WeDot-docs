@@ -61,81 +61,81 @@ On macOS, some extra keyboard shortcuts are available:
 
 |||
 |:-:|:--|
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_lineedit_property_alignment)                                                         | ``0``                                                                             |
-| [`bool`](class_bool.md)                                       | [`caret_blink`](#class_lineedit_property_caret_blink)                                                     | ``false``                                                                         |
-| [`float`](class_float.md)                                     | [`caret_blink_interval`](#class_lineedit_property_caret_blink_interval)                                   | ``0.65``                                                                          |
-| [`int`](class_int.md)                                         | [`caret_column`](#class_lineedit_property_caret_column)                                                   | ``0``                                                                             |
-| [`bool`](class_bool.md)                                       | [`caret_force_displayed`](#class_lineedit_property_caret_force_displayed)                                 | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`caret_mid_grapheme`](#class_lineedit_property_caret_mid_grapheme)                                       | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`clear_button_enabled`](#class_lineedit_property_clear_button_enabled)                                   | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`context_menu_enabled`](#class_lineedit_property_context_menu_enabled)                                   | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`deselect_on_focus_loss_enabled`](#class_lineedit_property_deselect_on_focus_loss_enabled)               | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`drag_and_drop_selection_enabled`](#class_lineedit_property_drag_and_drop_selection_enabled)             | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`draw_control_chars`](#class_lineedit_property_draw_control_chars)                                       | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`editable`](#class_lineedit_property_editable)                                                           | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`expand_to_text_length`](#class_lineedit_property_expand_to_text_length)                                 | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`flat`](#class_lineedit_property_flat)                                                                   | ``false``                                                                         |
-| [FocusMode](#enum_control_focusmode)                          | focus_mode                                                                                                | ``2`` (overrides [`Control`](#class_control_property_focus_mode))                 |
-| [`String`](class_string.md)                                   | [`language`](#class_lineedit_property_language)                                                           | ``""``                                                                            |
-| [`int`](class_int.md)                                         | [`max_length`](#class_lineedit_property_max_length)                                                       | ``0``                                                                             |
-| [`bool`](class_bool.md)                                       | [`middle_mouse_paste_enabled`](#class_lineedit_property_middle_mouse_paste_enabled)                       | ``true``                                                                          |
-| [CursorShape](#enum_control_cursorshape)                      | mouse_default_cursor_shape                                                                                | ``1`` (overrides [`Control`](#class_control_property_mouse_default_cursor_shape)) |
-| [`String`](class_string.md)                                   | [`placeholder_text`](#class_lineedit_property_placeholder_text)                                           | ``""``                                                                            |
-| [`Texture2D`](class_texture2d.md)                             | [`right_icon`](#class_lineedit_property_right_icon)                                                       |                                                                                   |
-| [`bool`](class_bool.md)                                       | [`secret`](#class_lineedit_property_secret)                                                               | ``false``                                                                         |
-| [`String`](class_string.md)                                   | [`secret_character`](#class_lineedit_property_secret_character)                                           | ``"•"``                                                                           |
-| [`bool`](class_bool.md)                                       | [`select_all_on_focus`](#class_lineedit_property_select_all_on_focus)                                     | ``false``                                                                         |
-| [`bool`](class_bool.md)                                       | [`selecting_enabled`](#class_lineedit_property_selecting_enabled)                                         | ``true``                                                                          |
-| [`bool`](class_bool.md)                                       | [`shortcut_keys_enabled`](#class_lineedit_property_shortcut_keys_enabled)                                 | ``true``                                                                          |
-| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`structured_text_bidi_override`](#class_lineedit_property_structured_text_bidi_override)                 | ``0``                                                                             |
-| [`Array`](class_array.md)                                     | [`structured_text_bidi_override_options`](#class_lineedit_property_structured_text_bidi_override_options) | ``[]``                                                                            |
-| [`String`](class_string.md)                                   | [`text`](#class_lineedit_property_text)                                                                   | ``""``                                                                            |
-| [TextDirection](#enum_control_textdirection)                  | [`text_direction`](#class_lineedit_property_text_direction)                                               | ``0``                                                                             |
-| [`bool`](class_bool.md)                                       | [`virtual_keyboard_enabled`](#class_lineedit_property_virtual_keyboard_enabled)                           | ``true``                                                                          |
-| [VirtualKeyboardType](#enum_lineedit_virtualkeyboardtype)     | [`virtual_keyboard_type`](#class_lineedit_property_virtual_keyboard_type)                                 | ``0``                                                                             |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](class_lineedit.md#class_lineedit_property_alignment)                                                         | ``0``                                                                                             |
+| [`bool`](class_bool.md)                                       | [`caret_blink`](class_lineedit.md#class_lineedit_property_caret_blink)                                                     | ``false``                                                                                         |
+| [`float`](class_float.md)                                     | [`caret_blink_interval`](class_lineedit.md#class_lineedit_property_caret_blink_interval)                                   | ``0.65``                                                                                          |
+| [`int`](class_int.md)                                         | [`caret_column`](class_lineedit.md#class_lineedit_property_caret_column)                                                   | ``0``                                                                                             |
+| [`bool`](class_bool.md)                                       | [`caret_force_displayed`](class_lineedit.md#class_lineedit_property_caret_force_displayed)                                 | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`caret_mid_grapheme`](class_lineedit.md#class_lineedit_property_caret_mid_grapheme)                                       | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`clear_button_enabled`](class_lineedit.md#class_lineedit_property_clear_button_enabled)                                   | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`context_menu_enabled`](class_lineedit.md#class_lineedit_property_context_menu_enabled)                                   | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`deselect_on_focus_loss_enabled`](class_lineedit.md#class_lineedit_property_deselect_on_focus_loss_enabled)               | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`drag_and_drop_selection_enabled`](class_lineedit.md#class_lineedit_property_drag_and_drop_selection_enabled)             | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`draw_control_chars`](class_lineedit.md#class_lineedit_property_draw_control_chars)                                       | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`editable`](class_lineedit.md#class_lineedit_property_editable)                                                           | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`expand_to_text_length`](class_lineedit.md#class_lineedit_property_expand_to_text_length)                                 | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`flat`](class_lineedit.md#class_lineedit_property_flat)                                                                   | ``false``                                                                                         |
+| [FocusMode](#enum_control_focusmode)                          | focus_mode                                                                                                                 | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))                 |
+| [`String`](class_string.md)                                   | [`language`](class_lineedit.md#class_lineedit_property_language)                                                           | ``""``                                                                                            |
+| [`int`](class_int.md)                                         | [`max_length`](class_lineedit.md#class_lineedit_property_max_length)                                                       | ``0``                                                                                             |
+| [`bool`](class_bool.md)                                       | [`middle_mouse_paste_enabled`](class_lineedit.md#class_lineedit_property_middle_mouse_paste_enabled)                       | ``true``                                                                                          |
+| [CursorShape](#enum_control_cursorshape)                      | mouse_default_cursor_shape                                                                                                 | ``1`` (overrides [`Control`](class_control.md#class_control_property_mouse_default_cursor_shape)) |
+| [`String`](class_string.md)                                   | [`placeholder_text`](class_lineedit.md#class_lineedit_property_placeholder_text)                                           | ``""``                                                                                            |
+| [`Texture2D`](class_texture2d.md)                             | [`right_icon`](class_lineedit.md#class_lineedit_property_right_icon)                                                       |                                                                                                   |
+| [`bool`](class_bool.md)                                       | [`secret`](class_lineedit.md#class_lineedit_property_secret)                                                               | ``false``                                                                                         |
+| [`String`](class_string.md)                                   | [`secret_character`](class_lineedit.md#class_lineedit_property_secret_character)                                           | ``"•"``                                                                                           |
+| [`bool`](class_bool.md)                                       | [`select_all_on_focus`](class_lineedit.md#class_lineedit_property_select_all_on_focus)                                     | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`selecting_enabled`](class_lineedit.md#class_lineedit_property_selecting_enabled)                                         | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`shortcut_keys_enabled`](class_lineedit.md#class_lineedit_property_shortcut_keys_enabled)                                 | ``true``                                                                                          |
+| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`structured_text_bidi_override`](class_lineedit.md#class_lineedit_property_structured_text_bidi_override)                 | ``0``                                                                                             |
+| [`Array`](class_array.md)                                     | [`structured_text_bidi_override_options`](class_lineedit.md#class_lineedit_property_structured_text_bidi_override_options) | ``[]``                                                                                            |
+| [`String`](class_string.md)                                   | [`text`](class_lineedit.md#class_lineedit_property_text)                                                                   | ``""``                                                                                            |
+| [TextDirection](#enum_control_textdirection)                  | [`text_direction`](class_lineedit.md#class_lineedit_property_text_direction)                                               | ``0``                                                                                             |
+| [`bool`](class_bool.md)                                       | [`virtual_keyboard_enabled`](class_lineedit.md#class_lineedit_property_virtual_keyboard_enabled)                           | ``true``                                                                                          |
+| [VirtualKeyboardType](#enum_lineedit_virtualkeyboardtype)     | [`virtual_keyboard_type`](class_lineedit.md#class_lineedit_property_virtual_keyboard_type)                                 | ``0``                                                                                             |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                            | [`clear`](#class_lineedit_method_clear) ( )                                                                                  |
-| `void`                            | [`delete_char_at_caret`](#class_lineedit_method_delete_char_at_caret) ( )                                                    |
-| `void`                            | [`delete_text`](#class_lineedit_method_delete_text) ( from_column: [`int`](class_int.md), to_column: [`int`](class_int.md) ) |
-| `void`                            | [`deselect`](#class_lineedit_method_deselect) ( )                                                                            |
-| [`PopupMenu`](class_popupmenu.md) | [`get_menu`](#class_lineedit_method_get_menu) ( ) const[^const]                                                              |
-| [`float`](class_float.md)         | [`get_scroll_offset`](#class_lineedit_method_get_scroll_offset) ( ) const[^const]                                            |
-| [`String`](class_string.md)       | [`get_selected_text`](#class_lineedit_method_get_selected_text) ( )                                                          |
-| [`int`](class_int.md)             | [`get_selection_from_column`](#class_lineedit_method_get_selection_from_column) ( ) const[^const]                            |
-| [`int`](class_int.md)             | [`get_selection_to_column`](#class_lineedit_method_get_selection_to_column) ( ) const[^const]                                |
-| [`bool`](class_bool.md)           | [`has_selection`](#class_lineedit_method_has_selection) ( ) const[^const]                                                    |
-| `void`                            | [`insert_text_at_caret`](#class_lineedit_method_insert_text_at_caret) ( text: [`String`](class_string.md) )                  |
-| [`bool`](class_bool.md)           | [`is_menu_visible`](#class_lineedit_method_is_menu_visible) ( ) const[^const]                                                |
-| `void`                            | [`menu_option`](#class_lineedit_method_menu_option) ( option: [`int`](class_int.md) )                                        |
-| `void`                            | [`select`](#class_lineedit_method_select) ( from: [`int`](class_int.md) = 0, to: [`int`](class_int.md) = -1 )                |
-| `void`                            | [`select_all`](#class_lineedit_method_select_all) ( )                                                                        |
+| `void`                            | [`clear`](class_lineedit.md#class_lineedit_method_clear) ( )                                                                                  |
+| `void`                            | [`delete_char_at_caret`](class_lineedit.md#class_lineedit_method_delete_char_at_caret) ( )                                                    |
+| `void`                            | [`delete_text`](class_lineedit.md#class_lineedit_method_delete_text) ( from_column: [`int`](class_int.md), to_column: [`int`](class_int.md) ) |
+| `void`                            | [`deselect`](class_lineedit.md#class_lineedit_method_deselect) ( )                                                                            |
+| [`PopupMenu`](class_popupmenu.md) | [`get_menu`](class_lineedit.md#class_lineedit_method_get_menu) ( ) const[^const]                                                              |
+| [`float`](class_float.md)         | [`get_scroll_offset`](class_lineedit.md#class_lineedit_method_get_scroll_offset) ( ) const[^const]                                            |
+| [`String`](class_string.md)       | [`get_selected_text`](class_lineedit.md#class_lineedit_method_get_selected_text) ( )                                                          |
+| [`int`](class_int.md)             | [`get_selection_from_column`](class_lineedit.md#class_lineedit_method_get_selection_from_column) ( ) const[^const]                            |
+| [`int`](class_int.md)             | [`get_selection_to_column`](class_lineedit.md#class_lineedit_method_get_selection_to_column) ( ) const[^const]                                |
+| [`bool`](class_bool.md)           | [`has_selection`](class_lineedit.md#class_lineedit_method_has_selection) ( ) const[^const]                                                    |
+| `void`                            | [`insert_text_at_caret`](class_lineedit.md#class_lineedit_method_insert_text_at_caret) ( text: [`String`](class_string.md) )                  |
+| [`bool`](class_bool.md)           | [`is_menu_visible`](class_lineedit.md#class_lineedit_method_is_menu_visible) ( ) const[^const]                                                |
+| `void`                            | [`menu_option`](class_lineedit.md#class_lineedit_method_menu_option) ( option: [`int`](class_int.md) )                                        |
+| `void`                            | [`select`](class_lineedit.md#class_lineedit_method_select) ( from: [`int`](class_int.md) = 0, to: [`int`](class_int.md) = -1 )                |
+| `void`                            | [`select_all`](class_lineedit.md#class_lineedit_method_select_all) ( )                                                                        |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)         | [`caret_color`](#class_lineedit_theme_color_caret_color)                               | ``Color(0.95, 0.95, 0.95, 1)``      |
-| [`Color`](class_color.md)         | [`clear_button_color`](#class_lineedit_theme_color_clear_button_color)                 | ``Color(0.875, 0.875, 0.875, 1)``   |
-| [`Color`](class_color.md)         | [`clear_button_color_pressed`](#class_lineedit_theme_color_clear_button_color_pressed) | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`font_color`](#class_lineedit_theme_color_font_color)                                 | ``Color(0.875, 0.875, 0.875, 1)``   |
-| [`Color`](class_color.md)         | [`font_outline_color`](#class_lineedit_theme_color_font_outline_color)                 | ``Color(0, 0, 0, 1)``               |
-| [`Color`](class_color.md)         | [`font_placeholder_color`](#class_lineedit_theme_color_font_placeholder_color)         | ``Color(0.875, 0.875, 0.875, 0.6)`` |
-| [`Color`](class_color.md)         | [`font_selected_color`](#class_lineedit_theme_color_font_selected_color)               | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`font_uneditable_color`](#class_lineedit_theme_color_font_uneditable_color)           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-| [`Color`](class_color.md)         | [`selection_color`](#class_lineedit_theme_color_selection_color)                       | ``Color(0.5, 0.5, 0.5, 1)``         |
-| [`int`](class_int.md)             | [`caret_width`](#class_lineedit_theme_constant_caret_width)                            | ``1``                               |
-| [`int`](class_int.md)             | [`minimum_character_width`](#class_lineedit_theme_constant_minimum_character_width)    | ``4``                               |
-| [`int`](class_int.md)             | [`outline_size`](#class_lineedit_theme_constant_outline_size)                          | ``0``                               |
-| [`Font`](class_font.md)           | [`font`](#class_lineedit_theme_font_font)                                              |                                     |
-| [`int`](class_int.md)             | [`font_size`](#class_lineedit_theme_font_size_font_size)                               |                                     |
-| [`Texture2D`](class_texture2d.md) | [`clear`](#class_lineedit_theme_icon_clear)                                            |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`focus`](#class_lineedit_theme_style_focus)                                           |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`normal`](#class_lineedit_theme_style_normal)                                         |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`read_only`](#class_lineedit_theme_style_read_only)                                   |                                     |
+| [`Color`](class_color.md)         | [`caret_color`](class_lineedit.md#class_lineedit_theme_color_caret_color)                               | ``Color(0.95, 0.95, 0.95, 1)``      |
+| [`Color`](class_color.md)         | [`clear_button_color`](class_lineedit.md#class_lineedit_theme_color_clear_button_color)                 | ``Color(0.875, 0.875, 0.875, 1)``   |
+| [`Color`](class_color.md)         | [`clear_button_color_pressed`](class_lineedit.md#class_lineedit_theme_color_clear_button_color_pressed) | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`font_color`](class_lineedit.md#class_lineedit_theme_color_font_color)                                 | ``Color(0.875, 0.875, 0.875, 1)``   |
+| [`Color`](class_color.md)         | [`font_outline_color`](class_lineedit.md#class_lineedit_theme_color_font_outline_color)                 | ``Color(0, 0, 0, 1)``               |
+| [`Color`](class_color.md)         | [`font_placeholder_color`](class_lineedit.md#class_lineedit_theme_color_font_placeholder_color)         | ``Color(0.875, 0.875, 0.875, 0.6)`` |
+| [`Color`](class_color.md)         | [`font_selected_color`](class_lineedit.md#class_lineedit_theme_color_font_selected_color)               | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`font_uneditable_color`](class_lineedit.md#class_lineedit_theme_color_font_uneditable_color)           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+| [`Color`](class_color.md)         | [`selection_color`](class_lineedit.md#class_lineedit_theme_color_selection_color)                       | ``Color(0.5, 0.5, 0.5, 1)``         |
+| [`int`](class_int.md)             | [`caret_width`](class_lineedit.md#class_lineedit_theme_constant_caret_width)                            | ``1``                               |
+| [`int`](class_int.md)             | [`minimum_character_width`](class_lineedit.md#class_lineedit_theme_constant_minimum_character_width)    | ``4``                               |
+| [`int`](class_int.md)             | [`outline_size`](class_lineedit.md#class_lineedit_theme_constant_outline_size)                          | ``0``                               |
+| [`Font`](class_font.md)           | [`font`](class_lineedit.md#class_lineedit_theme_font_font)                                              |                                     |
+| [`int`](class_int.md)             | [`font_size`](class_lineedit.md#class_lineedit_theme_font_size_font_size)                               |                                     |
+| [`Texture2D`](class_texture2d.md) | [`clear`](class_lineedit.md#class_lineedit_theme_icon_clear)                                            |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`focus`](class_lineedit.md#class_lineedit_theme_style_focus)                                           |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`normal`](class_lineedit.md#class_lineedit_theme_style_normal)                                         |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`read_only`](class_lineedit.md#class_lineedit_theme_style_read_only)                                   |                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -147,7 +147,7 @@ On macOS, some extra keyboard shortcuts are available:
 
 **text_change_rejected** ( rejected_substring: [`String`](class_string.md) ) <div id="class_lineedit_signal_text_change_rejected"></div>
 
-Emitted when appending text that overflows the [`max_length`](#class_lineedit_property_max_length). The appended text is truncated to fit [`max_length`](#class_lineedit_property_max_length), and the part that couldn't fit is passed as the `rejected_substring` argument.
+Emitted when appending text that overflows the [`max_length`](class_lineedit.md#class_lineedit_property_max_length). The appended text is truncated to fit [`max_length`](class_lineedit.md#class_lineedit_property_max_length), and the part that couldn't fit is passed as the `rejected_substring` argument.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -167,7 +167,7 @@ Emitted when the text changes.
 
 **text_submitted** ( new_text: [`String`](class_string.md) ) <div id="class_lineedit_signal_text_submitted"></div>
 
-Emitted when the user presses [`@GlobalScope.KEY_ENTER`](#class_@globalscope_constant_key_enter) on the **LineEdit**.
+Emitted when the user presses [`@GlobalScope.KEY_ENTER`](class_@globalscope.md#class_@globalscope_constant_key_enter) on the **LineEdit**.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -197,7 +197,7 @@ Copies the selected text.
 
 Pastes the clipboard text over the selected text (or at the caret's position).
 
-Non-printable escape characters are automatically stripped from the OS clipboard via [`String.strip_escapes`](#class_string_method_strip_escapes).
+Non-printable escape characters are automatically stripped from the OS clipboard via [`String.strip_escapes`](class_string.md#class_string_method_strip_escapes).
 
 <div id="_class_lineedit_constant_menu_clear"></div>
 
@@ -417,7 +417,7 @@ Virtual keyboard with additional keys to assist with typing email addresses.
 
 Virtual keyboard for entering a password. On most platforms, this should disable autocomplete and autocapitalization.
 
- **Note:** This is not supported on Web. Instead, this behaves identically to [`KEYBOARD_TYPE_DEFAULT`](#class_lineedit_constant_keyboard_type_default).
+ **Note:** This is not supported on Web. Instead, this behaves identically to [`KEYBOARD_TYPE_DEFAULT`](class_lineedit.md#class_lineedit_constant_keyboard_type_default).
 
 <div id="_class_lineedit_constant_keyboard_type_url"></div>
 
@@ -518,7 +518,7 @@ Allow moving caret, selecting and removing the individual composite character co
 - `void` **set_clear_button_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_clear_button_enabled** ( )
 
-If `true`, the **LineEdit** will show a clear button if [`text`](#class_lineedit_property_text) is not empty, which can be used to clear the text quickly.
+If `true`, the **LineEdit** will show a clear button if [`text`](class_lineedit.md#class_lineedit_property_text) is not empty, which can be used to clear the text quickly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -596,7 +596,7 @@ If `false`, existing text cannot be modified and new text cannot be added.
 - `void` **set_expand_to_text_length_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_expand_to_text_length_enabled** ( )
 
-If `true`, the **LineEdit** width will increase to stay longer than the [`text`](#class_lineedit_property_text). It will **not** compress if the [`text`](#class_lineedit_property_text) is shortened.
+If `true`, the **LineEdit** width will increase to stay longer than the [`text`](class_lineedit.md#class_lineedit_property_text). It will **not** compress if the [`text`](class_lineedit.md#class_lineedit_property_text) is shortened.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -637,7 +637,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 Maximum number of characters that can be entered inside the **LineEdit**. If `0`, there is no limit.
 
-When a limit is defined, characters that would exceed [`max_length`](#class_lineedit_property_max_length) are truncated. This happens both for existing [`text`](#class_lineedit_property_text) contents when setting the max length, or for new text inserted in the **LineEdit**, including pasting. If any input text is truncated, the [`text_change_rejected`](#class_lineedit_signal_text_change_rejected) signal is emitted with the truncated substring as parameter.
+When a limit is defined, characters that would exceed [`max_length`](class_lineedit.md#class_lineedit_property_max_length) are truncated. This happens both for existing [`text`](class_lineedit.md#class_lineedit_property_text) contents when setting the max length, or for new text inserted in the **LineEdit**, including pasting. If any input text is truncated, the [`text_change_rejected`](class_lineedit.md#class_lineedit_signal_text_change_rejected) signal is emitted with the truncated substring as parameter.
 
  **Example:** 
 
@@ -697,7 +697,7 @@ If `false`, using middle mouse button to paste clipboard will be disabled.
 - `void` **set_placeholder** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_placeholder** ( )
 
-Text shown when the **LineEdit** is empty. It is **not** the **LineEdit**'s default value (see [`text`](#class_lineedit_property_text)).
+Text shown when the **LineEdit** is empty. It is **not** the **LineEdit**'s default value (see [`text`](class_lineedit.md#class_lineedit_property_text)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -710,7 +710,7 @@ Text shown when the **LineEdit** is empty. It is **not** the **LineEdit**'s defa
 - `void` **set_right_icon** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_right_icon** ( )
 
-Sets the icon that will appear in the right end of the **LineEdit** if there's no [`text`](#class_lineedit_property_text), or always, if [`clear_button_enabled`](#class_lineedit_property_clear_button_enabled) is set to `false`.
+Sets the icon that will appear in the right end of the **LineEdit** if there's no [`text`](class_lineedit.md#class_lineedit_property_text), or always, if [`clear_button_enabled`](class_lineedit.md#class_lineedit_property_clear_button_enabled) is set to `false`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -723,7 +723,7 @@ Sets the icon that will appear in the right end of the **LineEdit** if there's n
 - `void` **set_secret** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_secret** ( )
 
-If `true`, every character is replaced with the secret character (see [`secret_character`](#class_lineedit_property_secret_character)).
+If `true`, every character is replaced with the secret character (see [`secret_character`](class_lineedit.md#class_lineedit_property_secret_character)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -816,7 +816,7 @@ Set additional options for BiDi override.
 
 String value of the **LineEdit**.
 
- **Note:** Changing text using this property won't emit the [`text_changed`](#class_lineedit_signal_text_changed) signal.
+ **Note:** Changing text using this property won't emit the [`text_changed`](class_lineedit.md#class_lineedit_signal_text_changed) signal.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -867,7 +867,7 @@ Specifies the type of virtual keyboard to show.
 
 `void` **clear** ( )<div id="class_lineedit_method_clear"></div>
 
-Erases the **LineEdit**'s [`text`](#class_lineedit_property_text).
+Erases the **LineEdit**'s [`text`](class_lineedit.md#class_lineedit_property_text).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -887,7 +887,7 @@ Deletes one character at the caret's current position (equivalent to pressing <i
 
 `void` **delete_text** ( from_column: [`int`](class_int.md), to_column: [`int`](class_int.md) )<div id="class_lineedit_method_delete_text"></div>
 
-Deletes a section of the [`text`](#class_lineedit_property_text) going from position `from_column` to `to_column`. Both parameters should be within the text's length.
+Deletes a section of the [`text`](class_lineedit.md#class_lineedit_property_text) going from position `from_column` to `to_column`. Both parameters should be within the text's length.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -955,7 +955,7 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
 
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](#class_window_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](class_window.md#class_window_property_visible) property.
 
 
 
@@ -969,7 +969,7 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
 [`float`](class_float.md) **get_scroll_offset** ( ) const[^const]<div id="class_lineedit_method_get_scroll_offset"></div>
 
-Returns the scroll offset due to [`caret_column`](#class_lineedit_property_caret_column), as a number of characters.
+Returns the scroll offset due to [`caret_column`](class_lineedit.md#class_lineedit_property_caret_column), as a number of characters.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1019,7 +1019,7 @@ Returns `true` if the user has selected text.
 
 `void` **insert_text_at_caret** ( text: [`String`](class_string.md) )<div id="class_lineedit_method_insert_text_at_caret"></div>
 
-Inserts `text` at the caret. If the resulting value is longer than [`max_length`](#class_lineedit_property_max_length), nothing happens.
+Inserts `text` at the caret. If the resulting value is longer than [`max_length`](class_lineedit.md#class_lineedit_property_max_length), nothing happens.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1145,7 +1145,7 @@ The tint of text outline of the **LineEdit**.
 
 [`Color`](class_color.md) **font_placeholder_color** = ``Color(0.875, 0.875, 0.875, 0.6)`` <div id="class_lineedit_theme_color_font_placeholder_color"></div>
 
-Font color for [`placeholder_text`](#class_lineedit_property_placeholder_text).
+Font color for [`placeholder_text`](class_lineedit.md#class_lineedit_property_placeholder_text).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1207,7 +1207,7 @@ Minimum horizontal space for the text (not counting the clear button and content
 
 The size of the text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_lineedit_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_lineedit.md#class_lineedit_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1237,7 +1237,7 @@ Font size of the **LineEdit**'s text.
 
 [`Texture2D`](class_texture2d.md) **clear** <div id="class_lineedit_theme_icon_clear"></div>
 
-Texture for the clear button. See [`clear_button_enabled`](#class_lineedit_property_clear_button_enabled).
+Texture for the clear button. See [`clear_button_enabled`](class_lineedit.md#class_lineedit_property_clear_button_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1247,7 +1247,7 @@ Texture for the clear button. See [`clear_button_enabled`](#class_lineedit_prope
 
 [`StyleBox`](class_stylebox.md) **focus** <div id="class_lineedit_theme_style_focus"></div>
 
-Background used when **LineEdit** has GUI focus. The [`focus`](#class_lineedit_theme_style_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md), so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+Background used when **LineEdit** has GUI focus. The [`focus`](class_lineedit.md#class_lineedit_theme_style_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md), so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1267,7 +1267,7 @@ Default background for the **LineEdit**.
 
 [`StyleBox`](class_stylebox.md) **read_only** <div id="class_lineedit_theme_style_read_only"></div>
 
-Background used when **LineEdit** is in read-only mode ([`editable`](#class_lineedit_property_editable) is set to `false`).
+Background used when **LineEdit** is in read-only mode ([`editable`](class_lineedit.md#class_lineedit_property_editable) is set to `false`).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

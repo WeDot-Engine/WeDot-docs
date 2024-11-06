@@ -13,7 +13,7 @@ Audio stream that can playback music interactively, combining clips and a transi
 
 ## 描述
 
-This is an audio stream that can playback music interactively, combining clips and a transition table. Clips must be added first, and the transition rules via the [`add_transition`](#class_audiostreaminteractive_method_add_transition). Additionally, this stream export a property parameter to control the playback via [`AudioStreamPlayer`](class_audiostreamplayer.md), [`AudioStreamPlayer2D`](class_audiostreamplayer2d.md), or [`AudioStreamPlayer3D`](class_audiostreamplayer3d.md).
+This is an audio stream that can playback music interactively, combining clips and a transition table. Clips must be added first, and the transition rules via the [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition). Additionally, this stream export a property parameter to control the playback via [`AudioStreamPlayer`](class_audiostreamplayer.md), [`AudioStreamPlayer2D`](class_audiostreamplayer2d.md), or [`AudioStreamPlayer3D`](class_audiostreamplayer3d.md).
 
 The way this is used is by filling a number of clips, then configuring the transition table. From there, clips are selected for playback and the music will smoothly go from the current to the new one while using the corresponding transition rule defined in the transition table.
 
@@ -21,32 +21,32 @@ The way this is used is by filling a number of clips, then configuring the trans
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`clip_count`](#class_audiostreaminteractive_property_clip_count)     | ``0`` |
-| [`int`](class_int.md) | [`initial_clip`](#class_audiostreaminteractive_property_initial_clip) | ``0`` |
+| [`int`](class_int.md) | [`clip_count`](class_audiostreaminteractive.md#class_audiostreaminteractive_property_clip_count)     | ``0`` |
+| [`int`](class_int.md) | [`initial_clip`](class_audiostreaminteractive.md#class_audiostreaminteractive_property_initial_clip) | ``0`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                                | [`add_transition`](#class_audiostreaminteractive_method_add_transition) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md), from_time: [TransitionFromTime](#enum_audiostreaminteractive_transitionfromtime), to_time: [TransitionToTime](#enum_audiostreaminteractive_transitiontotime), fade_mode: [FadeMode](#enum_audiostreaminteractive_fademode), fade_beats: [`float`](class_float.md), use_filler_clip: [`bool`](class_bool.md) = false, filler_clip: [`int`](class_int.md) = -1, hold_previous: [`bool`](class_bool.md) = false ) |
-| `void`                                                                | [`erase_transition`](#class_audiostreaminteractive_method_erase_transition) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [AutoAdvanceMode](#enum_audiostreaminteractive_autoadvancemode)       | [`get_clip_auto_advance`](#class_audiostreaminteractive_method_get_clip_auto_advance) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [`int`](class_int.md)                                                 | [`get_clip_auto_advance_next_clip`](#class_audiostreaminteractive_method_get_clip_auto_advance_next_clip) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                              |
-| [`StringName`](class_stringname.md)                                   | [`get_clip_name`](#class_audiostreaminteractive_method_get_clip_name) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [`AudioStream`](class_audiostream.md)                                 | [`get_clip_stream`](#class_audiostreaminteractive_method_get_clip_stream) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [`float`](class_float.md)                                             | [`get_transition_fade_beats`](#class_audiostreaminteractive_method_get_transition_fade_beats) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                           |
-| [FadeMode](#enum_audiostreaminteractive_fademode)                     | [`get_transition_fade_mode`](#class_audiostreaminteractive_method_get_transition_fade_mode) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                             |
-| [`int`](class_int.md)                                                 | [`get_transition_filler_clip`](#class_audiostreaminteractive_method_get_transition_filler_clip) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                         |
-| [TransitionFromTime](#enum_audiostreaminteractive_transitionfromtime) | [`get_transition_from_time`](#class_audiostreaminteractive_method_get_transition_from_time) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                             |
-| [`PackedInt32Array`](class_packedint32array.md)                       | [`get_transition_list`](#class_audiostreaminteractive_method_get_transition_list) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [TransitionToTime](#enum_audiostreaminteractive_transitiontotime)     | [`get_transition_to_time`](#class_audiostreaminteractive_method_get_transition_to_time) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)                                               | [`has_transition`](#class_audiostreaminteractive_method_has_transition) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)                                               | [`is_transition_holding_previous`](#class_audiostreaminteractive_method_is_transition_holding_previous) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                 |
-| [`bool`](class_bool.md)                                               | [`is_transition_using_filler_clip`](#class_audiostreaminteractive_method_is_transition_using_filler_clip) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                               |
-| `void`                                                                | [`set_clip_auto_advance`](#class_audiostreaminteractive_method_set_clip_auto_advance) ( clip_index: [`int`](class_int.md), mode: [AutoAdvanceMode](#enum_audiostreaminteractive_autoadvancemode) )                                                                                                                                                                                                                                                                                                                                                         |
-| `void`                                                                | [`set_clip_auto_advance_next_clip`](#class_audiostreaminteractive_method_set_clip_auto_advance_next_clip) ( clip_index: [`int`](class_int.md), auto_advance_next_clip: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                             |
-| `void`                                                                | [`set_clip_name`](#class_audiostreaminteractive_method_set_clip_name) ( clip_index: [`int`](class_int.md), name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `void`                                                                | [`set_clip_stream`](#class_audiostreaminteractive_method_set_clip_stream) ( clip_index: [`int`](class_int.md), stream: [`AudioStream`](class_audiostream.md) )                                                                                                                                                                                                                                                                                                                                                                                             |
+| `void`                                                                | [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md), from_time: [TransitionFromTime](#enum_audiostreaminteractive_transitionfromtime), to_time: [TransitionToTime](#enum_audiostreaminteractive_transitiontotime), fade_mode: [FadeMode](#enum_audiostreaminteractive_fademode), fade_beats: [`float`](class_float.md), use_filler_clip: [`bool`](class_bool.md) = false, filler_clip: [`int`](class_int.md) = -1, hold_previous: [`bool`](class_bool.md) = false ) |
+| `void`                                                                | [`erase_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_erase_transition) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [AutoAdvanceMode](#enum_audiostreaminteractive_autoadvancemode)       | [`get_clip_auto_advance`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_clip_auto_advance) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`int`](class_int.md)                                                 | [`get_clip_auto_advance_next_clip`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_clip_auto_advance_next_clip) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                              |
+| [`StringName`](class_stringname.md)                                   | [`get_clip_name`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_clip_name) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`AudioStream`](class_audiostream.md)                                 | [`get_clip_stream`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_clip_stream) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| [`float`](class_float.md)                                             | [`get_transition_fade_beats`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_transition_fade_beats) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                           |
+| [FadeMode](#enum_audiostreaminteractive_fademode)                     | [`get_transition_fade_mode`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_transition_fade_mode) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                                                 | [`get_transition_filler_clip`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_transition_filler_clip) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                         |
+| [TransitionFromTime](#enum_audiostreaminteractive_transitionfromtime) | [`get_transition_from_time`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_transition_from_time) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                             |
+| [`PackedInt32Array`](class_packedint32array.md)                       | [`get_transition_list`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_transition_list) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [TransitionToTime](#enum_audiostreaminteractive_transitiontotime)     | [`get_transition_to_time`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_get_transition_to_time) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)                                               | [`has_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_has_transition) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)                                               | [`is_transition_holding_previous`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_is_transition_holding_previous) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                 |
+| [`bool`](class_bool.md)                                               | [`is_transition_using_filler_clip`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_is_transition_using_filler_clip) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                               |
+| `void`                                                                | [`set_clip_auto_advance`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_set_clip_auto_advance) ( clip_index: [`int`](class_int.md), mode: [AutoAdvanceMode](#enum_audiostreaminteractive_autoadvancemode) )                                                                                                                                                                                                                                                                                                                                                         |
+| `void`                                                                | [`set_clip_auto_advance_next_clip`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_set_clip_auto_advance_next_clip) ( clip_index: [`int`](class_int.md), auto_advance_next_clip: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                             |
+| `void`                                                                | [`set_clip_name`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_set_clip_name) ( clip_index: [`int`](class_int.md), name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `void`                                                                | [`set_clip_stream`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_set_clip_stream) ( clip_index: [`int`](class_int.md), stream: [`AudioStream`](class_audiostream.md) )                                                                                                                                                                                                                                                                                                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -164,7 +164,7 @@ Enable auto-advance, a clip must be specified.
 
 [AutoAdvanceMode](#enum_audiostreaminteractive_autoadvancemode) **AUTO_ADVANCE_RETURN_TO_HOLD** = ``2``
 
-Enable auto-advance, but instead of specifying a clip, the playback will return to hold (see [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Enable auto-advance, but instead of specifying a clip, the playback will return to hold (see [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -216,13 +216,13 @@ Index of the initial clip, which will be played first when this stream is played
 
 `void` **add_transition** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md), from_time: [TransitionFromTime](#enum_audiostreaminteractive_transitionfromtime), to_time: [TransitionToTime](#enum_audiostreaminteractive_transitiontotime), fade_mode: [FadeMode](#enum_audiostreaminteractive_fademode), fade_beats: [`float`](class_float.md), use_filler_clip: [`bool`](class_bool.md) = false, filler_clip: [`int`](class_int.md) = -1, hold_previous: [`bool`](class_bool.md) = false )<div id="class_audiostreaminteractive_method_add_transition"></div>
 
-Add a transition between two clips. Provide the indices of the source and destination clips, or use the [`CLIP_ANY`](#class_audiostreaminteractive_constant_clip_any) constant to indicate that transition happens to/from any clip to this one.
+Add a transition between two clips. Provide the indices of the source and destination clips, or use the [`CLIP_ANY`](class_audiostreaminteractive.md#class_audiostreaminteractive_constant_clip_any) constant to indicate that transition happens to/from any clip to this one.
 
 * `from_time` indicates the moment in the current clip the transition will begin after triggered.
 
 * `to_time` indicates the time in the next clip that the playback will start from.
 
-* `fade_mode` indicates how the fade will happen between clips. If unsure, just use [`FADE_AUTOMATIC`](#class_audiostreaminteractive_constant_fade_automatic) which uses the most common type of fade for each situation.
+* `fade_mode` indicates how the fade will happen between clips. If unsure, just use [`FADE_AUTOMATIC`](class_audiostreaminteractive.md#class_audiostreaminteractive_constant_fade_automatic) which uses the most common type of fade for each situation.
 
 * `fade_beats` indicates how many beats the fade will take. Using decimals is allowed.
 
@@ -230,7 +230,7 @@ Add a transition between two clips. Provide the indices of the source and destin
 
 * `filler_clip` the index of the filler clip.
 
-* If `hold_previous` is used, then this clip will be remembered. This can be used together with [`AUTO_ADVANCE_RETURN_TO_HOLD`](#class_audiostreaminteractive_constant_auto_advance_return_to_hold) to return to this clip after another is done playing.
+* If `hold_previous` is used, then this clip will be remembered. This can be used together with [`AUTO_ADVANCE_RETURN_TO_HOLD`](class_audiostreaminteractive.md#class_audiostreaminteractive_constant_auto_advance_return_to_hold) to return to this clip after another is done playing.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -240,7 +240,7 @@ Add a transition between two clips. Provide the indices of the source and destin
 
 `void` **erase_transition** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) )<div id="class_audiostreaminteractive_method_erase_transition"></div>
 
-Erase a transition by providing `from_clip` and `to_clip` clip indices. [`CLIP_ANY`](#class_audiostreaminteractive_constant_clip_any) can be used for either argument or both.
+Erase a transition by providing `from_clip` and `to_clip` clip indices. [`CLIP_ANY`](class_audiostreaminteractive.md#class_audiostreaminteractive_constant_clip_any) can be used for either argument or both.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -250,7 +250,7 @@ Erase a transition by providing `from_clip` and `to_clip` clip indices. [`CLIP_A
 
 [AutoAdvanceMode](#enum_audiostreaminteractive_autoadvancemode) **get_clip_auto_advance** ( clip_index: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_get_clip_auto_advance"></div>
 
-Return whether a clip has auto-advance enabled. See [`set_clip_auto_advance`](#class_audiostreaminteractive_method_set_clip_auto_advance).
+Return whether a clip has auto-advance enabled. See [`set_clip_auto_advance`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_set_clip_auto_advance).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -290,7 +290,7 @@ Return the [`AudioStream`](class_audiostream.md) associated with a clip.
 
 [`float`](class_float.md) **get_transition_fade_beats** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_get_transition_fade_beats"></div>
 
-Return the time (in beats) for a transition (see [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Return the time (in beats) for a transition (see [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -300,7 +300,7 @@ Return the time (in beats) for a transition (see [`add_transition`](#class_audio
 
 [FadeMode](#enum_audiostreaminteractive_fademode) **get_transition_fade_mode** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_get_transition_fade_mode"></div>
 
-Return the mode for a transition (see [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Return the mode for a transition (see [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -310,7 +310,7 @@ Return the mode for a transition (see [`add_transition`](#class_audiostreaminter
 
 [`int`](class_int.md) **get_transition_filler_clip** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_get_transition_filler_clip"></div>
 
-Return the filler clip for a transition (see [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Return the filler clip for a transition (see [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -320,7 +320,7 @@ Return the filler clip for a transition (see [`add_transition`](#class_audiostre
 
 [TransitionFromTime](#enum_audiostreaminteractive_transitionfromtime) **get_transition_from_time** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_get_transition_from_time"></div>
 
-Return the source time position for a transition (see [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Return the source time position for a transition (see [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -340,7 +340,7 @@ Return the list of transitions (from, to interleaved).
 
 [TransitionToTime](#enum_audiostreaminteractive_transitiontotime) **get_transition_to_time** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_get_transition_to_time"></div>
 
-Return the destination time position for a transition (see [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Return the destination time position for a transition (see [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -350,7 +350,7 @@ Return the destination time position for a transition (see [`add_transition`](#c
 
 [`bool`](class_bool.md) **has_transition** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_has_transition"></div>
 
-Return true if a given transition exists (was added via [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Return true if a given transition exists (was added via [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -360,7 +360,7 @@ Return true if a given transition exists (was added via [`add_transition`](#clas
 
 [`bool`](class_bool.md) **is_transition_holding_previous** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_is_transition_holding_previous"></div>
 
-Return whether a transition uses the *hold previous* functionality (see [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Return whether a transition uses the *hold previous* functionality (see [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -370,7 +370,7 @@ Return whether a transition uses the *hold previous* functionality (see [`add_tr
 
 [`bool`](class_bool.md) **is_transition_using_filler_clip** ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) ) const[^const]<div id="class_audiostreaminteractive_method_is_transition_using_filler_clip"></div>
 
-Return whether a transition uses the *filler clip* functionality (see [`add_transition`](#class_audiostreaminteractive_method_add_transition)).
+Return whether a transition uses the *filler clip* functionality (see [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition)).
 
 <!-- rst-class:: classref-item-separator -->
 

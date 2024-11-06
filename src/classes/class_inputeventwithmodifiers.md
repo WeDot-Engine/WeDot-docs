@@ -15,24 +15,24 @@ Abstract base class for input events affected by modifier keys like <i class="fa
 
 ## 描述
 
-Stores information about mouse, keyboard, and touch gesture input events. This includes information about which modifier keys are pressed, such as <i class="fa fa-gamepad"></i>`Shift` or <i class="fa fa-gamepad"></i>`Alt`. See [`Node._input`](#class_node_private_method__input).
+Stores information about mouse, keyboard, and touch gesture input events. This includes information about which modifier keys are pressed, such as <i class="fa fa-gamepad"></i>`Shift` or <i class="fa fa-gamepad"></i>`Alt`. See [`Node._input`](class_node.md#class_node_private_method__input).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`alt_pressed`](#class_inputeventwithmodifiers_property_alt_pressed)                                   | ``false`` |
-| [`bool`](class_bool.md) | [`command_or_control_autoremap`](#class_inputeventwithmodifiers_property_command_or_control_autoremap) | ``false`` |
-| [`bool`](class_bool.md) | [`ctrl_pressed`](#class_inputeventwithmodifiers_property_ctrl_pressed)                                 | ``false`` |
-| [`bool`](class_bool.md) | [`meta_pressed`](#class_inputeventwithmodifiers_property_meta_pressed)                                 | ``false`` |
-| [`bool`](class_bool.md) | [`shift_pressed`](#class_inputeventwithmodifiers_property_shift_pressed)                               | ``false`` |
+| [`bool`](class_bool.md) | [`alt_pressed`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_property_alt_pressed)                                   | ``false`` |
+| [`bool`](class_bool.md) | [`command_or_control_autoremap`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_property_command_or_control_autoremap) | ``false`` |
+| [`bool`](class_bool.md) | [`ctrl_pressed`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_property_ctrl_pressed)                                 | ``false`` |
+| [`bool`](class_bool.md) | [`meta_pressed`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_property_meta_pressed)                                 | ``false`` |
+| [`bool`](class_bool.md) | [`shift_pressed`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_property_shift_pressed)                               | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [KeyModifierMask](#enum_@globalscope_keymodifiermask) | [`get_modifiers_mask`](#class_inputeventwithmodifiers_method_get_modifiers_mask) ( ) const[^const]                       |
-| [`bool`](class_bool.md)                               | [`is_command_or_control_pressed`](#class_inputeventwithmodifiers_method_is_command_or_control_pressed) ( ) const[^const] |
+| [KeyModifierMask](#enum_@globalscope_keymodifiermask) | [`get_modifiers_mask`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_method_get_modifiers_mask) ( ) const[^const]                       |
+| [`bool`](class_bool.md)                               | [`is_command_or_control_pressed`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_method_is_command_or_control_pressed) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -60,7 +60,7 @@ State of the <i class="fa fa-gamepad"></i>`Alt` modifier.
 - `void` **set_command_or_control_autoremap** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_command_or_control_autoremap** ( )
 
-Automatically use <i class="fa fa-gamepad"></i>`Meta` (<i class="fa fa-gamepad"></i>`Cmd`) on macOS and <i class="fa fa-gamepad"></i>`Ctrl` on other platforms. If `true`, [`ctrl_pressed`](#class_inputeventwithmodifiers_property_ctrl_pressed) and [`meta_pressed`](#class_inputeventwithmodifiers_property_meta_pressed) cannot be set.
+Automatically use <i class="fa fa-gamepad"></i>`Meta` (<i class="fa fa-gamepad"></i>`Cmd`) on macOS and <i class="fa fa-gamepad"></i>`Ctrl` on other platforms. If `true`, [`ctrl_pressed`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_property_ctrl_pressed) and [`meta_pressed`](class_inputeventwithmodifiers.md#class_inputeventwithmodifiers_property_meta_pressed) cannot be set.
 
 <!-- rst-class:: classref-item-separator -->
 

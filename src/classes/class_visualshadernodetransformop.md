@@ -13,13 +13,13 @@ A [`Transform3D`](class_transform3d.md) operator to be used within the visual sh
 
 ## 描述
 
-Applies [`operator`](#class_visualshadernodetransformop_property_operator) to two transform (4×4 matrices) inputs.
+Applies [`operator`](class_visualshadernodetransformop.md#class_visualshadernodetransformop_property_operator) to two transform (4×4 matrices) inputs.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Operator](#enum_visualshadernodetransformop_operator) | [`operator`](#class_visualshadernodetransformop_property_operator) | ``0`` |
+| [Operator](#enum_visualshadernodetransformop_operator) | [`operator`](class_visualshadernodetransformop.md#class_visualshadernodetransformop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

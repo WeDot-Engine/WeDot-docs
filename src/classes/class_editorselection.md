@@ -15,17 +15,17 @@ Manages the SceneTree selection in the editor.
 
 This object manages the SceneTree selection in the editor.
 
- **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_selection`](#class_editorinterface_method_get_selection).
+ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_selection`](class_editorinterface.md#class_editorinterface_method_get_selection).
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                          | [`add_node`](#class_editorselection_method_add_node) ( node: [`Node`](class_node.md) )                   |
-| `void`                                          | [`clear`](#class_editorselection_method_clear) ( )                                                       |
-| [Array](class_array.md) [`Node`](class_node.md) | [`get_selected_nodes`](#class_editorselection_method_get_selected_nodes) ( )                             |
-| [Array](class_array.md) [`Node`](class_node.md) | [`get_transformable_selected_nodes`](#class_editorselection_method_get_transformable_selected_nodes) ( ) |
-| `void`                                          | [`remove_node`](#class_editorselection_method_remove_node) ( node: [`Node`](class_node.md) )             |
+| `void`                                          | [`add_node`](class_editorselection.md#class_editorselection_method_add_node) ( node: [`Node`](class_node.md) )                   |
+| `void`                                          | [`clear`](class_editorselection.md#class_editorselection_method_clear) ( )                                                       |
+| [Array](class_array.md) [`Node`](class_node.md) | [`get_selected_nodes`](class_editorselection.md#class_editorselection_method_get_selected_nodes) ( )                             |
+| [Array](class_array.md) [`Node`](class_node.md) | [`get_transformable_selected_nodes`](class_editorselection.md#class_editorselection_method_get_transformable_selected_nodes) ( ) |
+| `void`                                          | [`remove_node`](class_editorselection.md#class_editorselection_method_remove_node) ( node: [`Node`](class_node.md) )             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -51,7 +51,7 @@ Emitted when the selection changes.
 
 Adds a node to the selection.
 
- **Note:** The newly selected node will not be automatically edited in the inspector. If you want to edit a node, use [`EditorInterface.edit_node`](#class_editorinterface_method_edit_node).
+ **Note:** The newly selected node will not be automatically edited in the inspector. If you want to edit a node, use [`EditorInterface.edit_node`](class_editorinterface.md#class_editorinterface_method_edit_node).
 
 <!-- rst-class:: classref-item-separator -->
 

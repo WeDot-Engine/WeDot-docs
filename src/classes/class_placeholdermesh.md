@@ -23,7 +23,7 @@ This class is used when loading a project that uses a [`Mesh`](class_mesh.md) su
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md) | [`aabb`](#class_placeholdermesh_property_aabb) | ``AABB(0, 0, 0, 0, 0, 0)`` |
+| [`AABB`](class_aabb.md) | [`aabb`](class_placeholdermesh.md#class_placeholdermesh_property_aabb) | ``AABB(0, 0, 0, 0, 0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

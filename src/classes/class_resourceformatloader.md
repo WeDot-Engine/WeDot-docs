@@ -23,17 +23,17 @@ Extending this class allows you to define your own loader. Be sure to respect th
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                           | [`_exists`](#class_resourceformatloader_private_method__exists) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                                      |
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_classes_used`](#class_resourceformatloader_private_method__get_classes_used) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                  |
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_dependencies`](#class_resourceformatloader_private_method__get_dependencies) ( path: [`String`](class_string.md), add_types: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                              |
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](#class_resourceformatloader_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                  |
-| [`String`](class_string.md)                       | [`_get_resource_script_class`](#class_resourceformatloader_private_method__get_resource_script_class) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                |
-| [`String`](class_string.md)                       | [`_get_resource_type`](#class_resourceformatloader_private_method__get_resource_type) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                |
-| [`int`](class_int.md)                             | [`_get_resource_uid`](#class_resourceformatloader_private_method__get_resource_uid) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                  |
-| [`bool`](class_bool.md)                           | [`_handles_type`](#class_resourceformatloader_private_method__handles_type) ( type: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                                                                                                  |
-| [`Variant`](class_variant.md)                     | [`_load`](#class_resourceformatloader_private_method__load) ( path: [`String`](class_string.md), original_path: [`String`](class_string.md), use_sub_threads: [`bool`](class_bool.md), cache_mode: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
-| [`bool`](class_bool.md)                           | [`_recognize_path`](#class_resourceformatloader_private_method__recognize_path) ( path: [`String`](class_string.md), type: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                                                           |
-| [Error](#enum_@globalscope_error)                 | [`_rename_dependencies`](#class_resourceformatloader_private_method__rename_dependencies) ( path: [`String`](class_string.md), renames: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const]                                              |
+| [`bool`](class_bool.md)                           | [`_exists`](class_resourceformatloader.md#class_resourceformatloader_private_method__exists) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                                      |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_classes_used`](class_resourceformatloader.md#class_resourceformatloader_private_method__get_classes_used) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                  |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_dependencies`](class_resourceformatloader.md#class_resourceformatloader_private_method__get_dependencies) ( path: [`String`](class_string.md), add_types: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                              |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](class_resourceformatloader.md#class_resourceformatloader_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                  |
+| [`String`](class_string.md)                       | [`_get_resource_script_class`](class_resourceformatloader.md#class_resourceformatloader_private_method__get_resource_script_class) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                |
+| [`String`](class_string.md)                       | [`_get_resource_type`](class_resourceformatloader.md#class_resourceformatloader_private_method__get_resource_type) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                |
+| [`int`](class_int.md)                             | [`_get_resource_uid`](class_resourceformatloader.md#class_resourceformatloader_private_method__get_resource_uid) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                  |
+| [`bool`](class_bool.md)                           | [`_handles_type`](class_resourceformatloader.md#class_resourceformatloader_private_method__handles_type) ( type: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                                                                                                  |
+| [`Variant`](class_variant.md)                     | [`_load`](class_resourceformatloader.md#class_resourceformatloader_private_method__load) ( path: [`String`](class_string.md), original_path: [`String`](class_string.md), use_sub_threads: [`bool`](class_bool.md), cache_mode: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+| [`bool`](class_bool.md)                           | [`_recognize_path`](class_resourceformatloader.md#class_resourceformatloader_private_method__recognize_path) ( path: [`String`](class_string.md), type: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                                                           |
+| [Error](#enum_@globalscope_error)                 | [`_rename_dependencies`](class_resourceformatloader.md#class_resourceformatloader_private_method__rename_dependencies) ( path: [`String`](class_string.md), renames: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const]                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -49,7 +49,7 @@ enum **CacheMode**: <div id="enum_resourceformatloader_cachemode"></div>
 
 [CacheMode](#enum_resourceformatloader_cachemode) **CACHE_MODE_IGNORE** = ``0``
 
-Neither the main resource (the one requested to be loaded) nor any of its subresources are retrieved from cache nor stored into it. Dependencies (external resources) are loaded with [`CACHE_MODE_REUSE`](#class_resourceformatloader_constant_cache_mode_reuse).
+Neither the main resource (the one requested to be loaded) nor any of its subresources are retrieved from cache nor stored into it. Dependencies (external resources) are loaded with [`CACHE_MODE_REUSE`](class_resourceformatloader.md#class_resourceformatloader_constant_cache_mode_reuse).
 
 <div id="_class_resourceformatloader_constant_cache_mode_reuse"></div>
 
@@ -61,19 +61,19 @@ The main resource (the one requested to be loaded), its subresources, and its de
 
 [CacheMode](#enum_resourceformatloader_cachemode) **CACHE_MODE_REPLACE** = ``2``
 
-Like [`CACHE_MODE_REUSE`](#class_resourceformatloader_constant_cache_mode_reuse), but the cache is checked for the main resource (the one requested to be loaded) as well as for each of its subresources. Those already in the cache, as long as the loaded and cached types match, have their data refreshed from storage into the already existing instances. Otherwise, they are recreated as completely new objects.
+Like [`CACHE_MODE_REUSE`](class_resourceformatloader.md#class_resourceformatloader_constant_cache_mode_reuse), but the cache is checked for the main resource (the one requested to be loaded) as well as for each of its subresources. Those already in the cache, as long as the loaded and cached types match, have their data refreshed from storage into the already existing instances. Otherwise, they are recreated as completely new objects.
 
 <div id="_class_resourceformatloader_constant_cache_mode_ignore_deep"></div>
 
 [CacheMode](#enum_resourceformatloader_cachemode) **CACHE_MODE_IGNORE_DEEP** = ``3``
 
-Like [`CACHE_MODE_IGNORE`](#class_resourceformatloader_constant_cache_mode_ignore), but propagated recursively down the tree of dependencies (external resources).
+Like [`CACHE_MODE_IGNORE`](class_resourceformatloader.md#class_resourceformatloader_constant_cache_mode_ignore), but propagated recursively down the tree of dependencies (external resources).
 
 <div id="_class_resourceformatloader_constant_cache_mode_replace_deep"></div>
 
 [CacheMode](#enum_resourceformatloader_cachemode) **CACHE_MODE_REPLACE_DEEP** = ``4``
 
-Like [`CACHE_MODE_REPLACE`](#class_resourceformatloader_constant_cache_mode_replace), but propagated recursively down the tree of dependencies (external resources).
+Like [`CACHE_MODE_REPLACE`](class_resourceformatloader.md#class_resourceformatloader_constant_cache_mode_replace), but propagated recursively down the tree of dependencies (external resources).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -185,7 +185,7 @@ The `cache_mode` property defines whether and how the cache should be used or up
 
 Tells whether or not this loader should load a resource from its resource path for a given type.
 
-If it is not implemented, the default behavior returns whether the path's extension is within the ones provided by [`_get_recognized_extensions`](#class_resourceformatloader_private_method__get_recognized_extensions), and if the type is within the ones provided by [`_get_resource_type`](#class_resourceformatloader_private_method__get_resource_type).
+If it is not implemented, the default behavior returns whether the path's extension is within the ones provided by [`_get_recognized_extensions`](class_resourceformatloader.md#class_resourceformatloader_private_method__get_recognized_extensions), and if the type is within the ones provided by [`_get_resource_type`](class_resourceformatloader.md#class_resourceformatloader_private_method__get_resource_type).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -197,7 +197,7 @@ If it is not implemented, the default behavior returns whether the path's extens
 
 If implemented, renames dependencies within the given resource and saves it. `renames` is a dictionary `{ String => String }` mapping old dependency paths to new paths.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or an [Error](#enum_@globalscope_error) constant in case of failure.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or an [Error](#enum_@globalscope_error) constant in case of failure.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

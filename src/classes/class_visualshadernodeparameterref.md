@@ -19,7 +19,7 @@ Creating a reference to a [`VisualShaderNodeParameter`](class_visualshadernodepa
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`parameter_name`](#class_visualshadernodeparameterref_property_parameter_name) | ``"[None]"`` |
+| [`String`](class_string.md) | [`parameter_name`](class_visualshadernodeparameterref.md#class_visualshadernodeparameterref_property_parameter_name) | ``"[None]"`` |
 
 <!-- rst-class:: classref-section-separator -->
 

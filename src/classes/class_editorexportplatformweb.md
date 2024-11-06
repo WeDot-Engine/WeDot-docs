@@ -21,27 +21,27 @@ The Web exporter customizes how a web build is handled. In the editor's "Export"
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`custom_template/debug`](#class_editorexportplatformweb_property_custom_template/debug)                                                                         |
-| [`String`](class_string.md) | [`custom_template/release`](#class_editorexportplatformweb_property_custom_template/release)                                                                     |
-| [`int`](class_int.md)       | [`html/canvas_resize_policy`](#class_editorexportplatformweb_property_html/canvas_resize_policy)                                                                 |
-| [`String`](class_string.md) | [`html/custom_html_shell`](#class_editorexportplatformweb_property_html/custom_html_shell)                                                                       |
-| [`bool`](class_bool.md)     | [`html/experimental_virtual_keyboard`](#class_editorexportplatformweb_property_html/experimental_virtual_keyboard)                                               |
-| [`bool`](class_bool.md)     | [`html/export_icon`](#class_editorexportplatformweb_property_html/export_icon)                                                                                   |
-| [`bool`](class_bool.md)     | [`html/focus_canvas_on_start`](#class_editorexportplatformweb_property_html/focus_canvas_on_start)                                                               |
-| [`String`](class_string.md) | [`html/head_include`](#class_editorexportplatformweb_property_html/head_include)                                                                                 |
-| [`Color`](class_color.md)   | [`progressive_web_app/background_color`](#class_editorexportplatformweb_property_progressive_web_app/background_color)                                           |
-| [`int`](class_int.md)       | [`progressive_web_app/display`](#class_editorexportplatformweb_property_progressive_web_app/display)                                                             |
-| [`bool`](class_bool.md)     | [`progressive_web_app/enabled`](#class_editorexportplatformweb_property_progressive_web_app/enabled)                                                             |
-| [`bool`](class_bool.md)     | [`progressive_web_app/ensure_cross_origin_isolation_headers`](#class_editorexportplatformweb_property_progressive_web_app/ensure_cross_origin_isolation_headers) |
-| [`String`](class_string.md) | [`progressive_web_app/icon_144x144`](#class_editorexportplatformweb_property_progressive_web_app/icon_144x144)                                                   |
-| [`String`](class_string.md) | [`progressive_web_app/icon_180x180`](#class_editorexportplatformweb_property_progressive_web_app/icon_180x180)                                                   |
-| [`String`](class_string.md) | [`progressive_web_app/icon_512x512`](#class_editorexportplatformweb_property_progressive_web_app/icon_512x512)                                                   |
-| [`String`](class_string.md) | [`progressive_web_app/offline_page`](#class_editorexportplatformweb_property_progressive_web_app/offline_page)                                                   |
-| [`int`](class_int.md)       | [`progressive_web_app/orientation`](#class_editorexportplatformweb_property_progressive_web_app/orientation)                                                     |
-| [`bool`](class_bool.md)     | [`variant/extensions_support`](#class_editorexportplatformweb_property_variant/extensions_support)                                                               |
-| [`bool`](class_bool.md)     | [`variant/thread_support`](#class_editorexportplatformweb_property_variant/thread_support)                                                                       |
-| [`bool`](class_bool.md)     | [`vram_texture_compression/for_desktop`](#class_editorexportplatformweb_property_vram_texture_compression/for_desktop)                                           |
-| [`bool`](class_bool.md)     | [`vram_texture_compression/for_mobile`](#class_editorexportplatformweb_property_vram_texture_compression/for_mobile)                                             |
+| [`String`](class_string.md) | [`custom_template/debug`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_custom_template/debug)                                                                         |
+| [`String`](class_string.md) | [`custom_template/release`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_custom_template/release)                                                                     |
+| [`int`](class_int.md)       | [`html/canvas_resize_policy`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_html/canvas_resize_policy)                                                                 |
+| [`String`](class_string.md) | [`html/custom_html_shell`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_html/custom_html_shell)                                                                       |
+| [`bool`](class_bool.md)     | [`html/experimental_virtual_keyboard`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_html/experimental_virtual_keyboard)                                               |
+| [`bool`](class_bool.md)     | [`html/export_icon`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_html/export_icon)                                                                                   |
+| [`bool`](class_bool.md)     | [`html/focus_canvas_on_start`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_html/focus_canvas_on_start)                                                               |
+| [`String`](class_string.md) | [`html/head_include`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_html/head_include)                                                                                 |
+| [`Color`](class_color.md)   | [`progressive_web_app/background_color`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/background_color)                                           |
+| [`int`](class_int.md)       | [`progressive_web_app/display`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/display)                                                             |
+| [`bool`](class_bool.md)     | [`progressive_web_app/enabled`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/enabled)                                                             |
+| [`bool`](class_bool.md)     | [`progressive_web_app/ensure_cross_origin_isolation_headers`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/ensure_cross_origin_isolation_headers) |
+| [`String`](class_string.md) | [`progressive_web_app/icon_144x144`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/icon_144x144)                                                   |
+| [`String`](class_string.md) | [`progressive_web_app/icon_180x180`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/icon_180x180)                                                   |
+| [`String`](class_string.md) | [`progressive_web_app/icon_512x512`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/icon_512x512)                                                   |
+| [`String`](class_string.md) | [`progressive_web_app/offline_page`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/offline_page)                                                   |
+| [`int`](class_int.md)       | [`progressive_web_app/orientation`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_progressive_web_app/orientation)                                                     |
+| [`bool`](class_bool.md)     | [`variant/extensions_support`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_variant/extensions_support)                                                               |
+| [`bool`](class_bool.md)     | [`variant/thread_support`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_variant/thread_support)                                                                       |
+| [`bool`](class_bool.md)     | [`vram_texture_compression/for_desktop`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_vram_texture_compression/for_desktop)                                           |
+| [`bool`](class_bool.md)     | [`vram_texture_compression/for_mobile`](class_editorexportplatformweb.md#class_editorexportplatformweb_property_vram_texture_compression/for_mobile)                                             |
 
 <!-- rst-class:: classref-section-separator -->
 

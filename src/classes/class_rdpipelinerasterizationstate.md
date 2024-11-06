@@ -19,17 +19,17 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| [PolygonCullMode](#enum_renderingdevice_polygoncullmode)   | [`cull_mode`](#class_rdpipelinerasterizationstate_property_cull_mode)                                   | ``0``     |
-| [`float`](class_float.md)                                  | [`depth_bias_clamp`](#class_rdpipelinerasterizationstate_property_depth_bias_clamp)                     | ``0.0``   |
-| [`float`](class_float.md)                                  | [`depth_bias_constant_factor`](#class_rdpipelinerasterizationstate_property_depth_bias_constant_factor) | ``0.0``   |
-| [`bool`](class_bool.md)                                    | [`depth_bias_enabled`](#class_rdpipelinerasterizationstate_property_depth_bias_enabled)                 | ``false`` |
-| [`float`](class_float.md)                                  | [`depth_bias_slope_factor`](#class_rdpipelinerasterizationstate_property_depth_bias_slope_factor)       | ``0.0``   |
-| [`bool`](class_bool.md)                                    | [`discard_primitives`](#class_rdpipelinerasterizationstate_property_discard_primitives)                 | ``false`` |
-| [`bool`](class_bool.md)                                    | [`enable_depth_clamp`](#class_rdpipelinerasterizationstate_property_enable_depth_clamp)                 | ``false`` |
-| [PolygonFrontFace](#enum_renderingdevice_polygonfrontface) | [`front_face`](#class_rdpipelinerasterizationstate_property_front_face)                                 | ``0``     |
-| [`float`](class_float.md)                                  | [`line_width`](#class_rdpipelinerasterizationstate_property_line_width)                                 | ``1.0``   |
-| [`int`](class_int.md)                                      | [`patch_control_points`](#class_rdpipelinerasterizationstate_property_patch_control_points)             | ``1``     |
-| [`bool`](class_bool.md)                                    | [`wireframe`](#class_rdpipelinerasterizationstate_property_wireframe)                                   | ``false`` |
+| [PolygonCullMode](#enum_renderingdevice_polygoncullmode)   | [`cull_mode`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_cull_mode)                                   | ``0``     |
+| [`float`](class_float.md)                                  | [`depth_bias_clamp`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_depth_bias_clamp)                     | ``0.0``   |
+| [`float`](class_float.md)                                  | [`depth_bias_constant_factor`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_depth_bias_constant_factor) | ``0.0``   |
+| [`bool`](class_bool.md)                                    | [`depth_bias_enabled`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_depth_bias_enabled)                 | ``false`` |
+| [`float`](class_float.md)                                  | [`depth_bias_slope_factor`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_depth_bias_slope_factor)       | ``0.0``   |
+| [`bool`](class_bool.md)                                    | [`discard_primitives`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_discard_primitives)                 | ``false`` |
+| [`bool`](class_bool.md)                                    | [`enable_depth_clamp`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_enable_depth_clamp)                 | ``false`` |
+| [PolygonFrontFace](#enum_renderingdevice_polygonfrontface) | [`front_face`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_front_face)                                 | ``0``     |
+| [`float`](class_float.md)                                  | [`line_width`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_line_width)                                 | ``1.0``   |
+| [`int`](class_int.md)                                      | [`patch_control_points`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_patch_control_points)             | ``1``     |
+| [`bool`](class_bool.md)                                    | [`wireframe`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_wireframe)                                   | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -70,7 +70,7 @@ A limit for how much each depth value can be offset. If negative, it serves as a
 - `void` **set_depth_bias_constant_factor** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_depth_bias_constant_factor** ( )
 
-A constant offset added to each depth value. Applied after [`depth_bias_slope_factor`](#class_rdpipelinerasterizationstate_property_depth_bias_slope_factor).
+A constant offset added to each depth value. Applied after [`depth_bias_slope_factor`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_depth_bias_slope_factor).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -83,7 +83,7 @@ A constant offset added to each depth value. Applied after [`depth_bias_slope_fa
 - `void` **set_depth_bias_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_depth_bias_enabled** ( )
 
-If `true`, each generated depth value will by offset by some amount. The specific amount is generated per polygon based on the values of [`depth_bias_slope_factor`](#class_rdpipelinerasterizationstate_property_depth_bias_slope_factor) and [`depth_bias_constant_factor`](#class_rdpipelinerasterizationstate_property_depth_bias_constant_factor).
+If `true`, each generated depth value will by offset by some amount. The specific amount is generated per polygon based on the values of [`depth_bias_slope_factor`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_depth_bias_slope_factor) and [`depth_bias_constant_factor`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_depth_bias_constant_factor).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -96,7 +96,7 @@ If `true`, each generated depth value will by offset by some amount. The specifi
 - `void` **set_depth_bias_slope_factor** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_depth_bias_slope_factor** ( )
 
-A constant scale applied to the slope of each polygons' depth. Applied before [`depth_bias_constant_factor`](#class_rdpipelinerasterizationstate_property_depth_bias_constant_factor).
+A constant scale applied to the slope of each polygons' depth. Applied before [`depth_bias_constant_factor`](class_rdpipelinerasterizationstate.md#class_rdpipelinerasterizationstate_property_depth_bias_constant_factor).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -17,106 +17,106 @@ This control provides a vertical list of selectable items that may be in a singl
 
 Selectable items in the list may be selected or deselected and multiple selection may be enabled. Selection with right mouse button may also be enabled to allow use of popup context menus. Items may also be "activated" by double-clicking them or by pressing <i class="fa fa-gamepad"></i>`Enter`.
 
-Item text only supports single-line strings. Newline characters (e.g. `\n`) in the string won't produce a newline. Text wrapping is enabled in [`ICON_MODE_TOP`](#class_itemlist_constant_icon_mode_top) mode, but the column's width is adjusted to fully fit its content by default. You need to set [`fixed_column_width`](#class_itemlist_property_fixed_column_width) greater than zero to wrap the text.
+Item text only supports single-line strings. Newline characters (e.g. `\n`) in the string won't produce a newline. Text wrapping is enabled in [`ICON_MODE_TOP`](class_itemlist.md#class_itemlist_constant_icon_mode_top) mode, but the column's width is adjusted to fully fit its content by default. You need to set [`fixed_column_width`](class_itemlist.md#class_itemlist_property_fixed_column_width) greater than zero to wrap the text.
 
 All `set_*` methods allow negative item indices, i.e. `-1` to access the last item, `-2` to select the second-to-last item, and so on.
 
- **Incremental search:** Like [`PopupMenu`](class_popupmenu.md) and [`Tree`](class_tree.md), **ItemList** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing [`ProjectSettings.gui/timers/incremental_search_max_interval_msec`](#class_projectsettings_property_gui/timers/incremental_search_max_interval_msec).
+ **Incremental search:** Like [`PopupMenu`](class_popupmenu.md) and [`Tree`](class_tree.md), **ItemList** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing [`ProjectSettings.gui/timers/incremental_search_max_interval_msec`](class_projectsettings.md#class_projectsettings_property_gui/timers/incremental_search_max_interval_msec).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`allow_reselect`](#class_itemlist_property_allow_reselect)               | ``false``                                                               |
-| [`bool`](class_bool.md)                             | [`allow_rmb_select`](#class_itemlist_property_allow_rmb_select)           | ``false``                                                               |
-| [`bool`](class_bool.md)                             | [`allow_search`](#class_itemlist_property_allow_search)                   | ``true``                                                                |
-| [`bool`](class_bool.md)                             | [`auto_height`](#class_itemlist_property_auto_height)                     | ``false``                                                               |
-| [`bool`](class_bool.md)                             | clip_contents                                                             | ``true`` (overrides [`Control`](#class_control_property_clip_contents)) |
-| [`int`](class_int.md)                               | [`fixed_column_width`](#class_itemlist_property_fixed_column_width)       | ``0``                                                                   |
-| [`Vector2i`](class_vector2i.md)                     | [`fixed_icon_size`](#class_itemlist_property_fixed_icon_size)             | ``Vector2i(0, 0)``                                                      |
-| [FocusMode](#enum_control_focusmode)                | focus_mode                                                                | ``2`` (overrides [`Control`](#class_control_property_focus_mode))       |
-| [IconMode](#enum_itemlist_iconmode)                 | [`icon_mode`](#class_itemlist_property_icon_mode)                         | ``1``                                                                   |
-| [`float`](class_float.md)                           | [`icon_scale`](#class_itemlist_property_icon_scale)                       | ``1.0``                                                                 |
-| [`int`](class_int.md)                               | [`item_count`](#class_itemlist_property_item_count)                       | ``0``                                                                   |
-| [`int`](class_int.md)                               | [`max_columns`](#class_itemlist_property_max_columns)                     | ``1``                                                                   |
-| [`int`](class_int.md)                               | [`max_text_lines`](#class_itemlist_property_max_text_lines)               | ``1``                                                                   |
-| [`bool`](class_bool.md)                             | [`same_column_width`](#class_itemlist_property_same_column_width)         | ``false``                                                               |
-| [SelectMode](#enum_itemlist_selectmode)             | [`select_mode`](#class_itemlist_property_select_mode)                     | ``0``                                                                   |
-| [OverrunBehavior](#enum_textserver_overrunbehavior) | [`text_overrun_behavior`](#class_itemlist_property_text_overrun_behavior) | ``3``                                                                   |
+| [`bool`](class_bool.md)                             | [`allow_reselect`](class_itemlist.md#class_itemlist_property_allow_reselect)               | ``false``                                                                               |
+| [`bool`](class_bool.md)                             | [`allow_rmb_select`](class_itemlist.md#class_itemlist_property_allow_rmb_select)           | ``false``                                                                               |
+| [`bool`](class_bool.md)                             | [`allow_search`](class_itemlist.md#class_itemlist_property_allow_search)                   | ``true``                                                                                |
+| [`bool`](class_bool.md)                             | [`auto_height`](class_itemlist.md#class_itemlist_property_auto_height)                     | ``false``                                                                               |
+| [`bool`](class_bool.md)                             | clip_contents                                                                              | ``true`` (overrides [`Control`](class_control.md#class_control_property_clip_contents)) |
+| [`int`](class_int.md)                               | [`fixed_column_width`](class_itemlist.md#class_itemlist_property_fixed_column_width)       | ``0``                                                                                   |
+| [`Vector2i`](class_vector2i.md)                     | [`fixed_icon_size`](class_itemlist.md#class_itemlist_property_fixed_icon_size)             | ``Vector2i(0, 0)``                                                                      |
+| [FocusMode](#enum_control_focusmode)                | focus_mode                                                                                 | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))       |
+| [IconMode](#enum_itemlist_iconmode)                 | [`icon_mode`](class_itemlist.md#class_itemlist_property_icon_mode)                         | ``1``                                                                                   |
+| [`float`](class_float.md)                           | [`icon_scale`](class_itemlist.md#class_itemlist_property_icon_scale)                       | ``1.0``                                                                                 |
+| [`int`](class_int.md)                               | [`item_count`](class_itemlist.md#class_itemlist_property_item_count)                       | ``0``                                                                                   |
+| [`int`](class_int.md)                               | [`max_columns`](class_itemlist.md#class_itemlist_property_max_columns)                     | ``1``                                                                                   |
+| [`int`](class_int.md)                               | [`max_text_lines`](class_itemlist.md#class_itemlist_property_max_text_lines)               | ``1``                                                                                   |
+| [`bool`](class_bool.md)                             | [`same_column_width`](class_itemlist.md#class_itemlist_property_same_column_width)         | ``false``                                                                               |
+| [SelectMode](#enum_itemlist_selectmode)             | [`select_mode`](class_itemlist.md#class_itemlist_property_select_mode)                     | ``0``                                                                                   |
+| [OverrunBehavior](#enum_textserver_overrunbehavior) | [`text_overrun_behavior`](class_itemlist.md#class_itemlist_property_text_overrun_behavior) | ``3``                                                                                   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                           | [`add_icon_item`](#class_itemlist_method_add_icon_item) ( icon: [`Texture2D`](class_texture2d.md), selectable: [`bool`](class_bool.md) = true )                                 |
-| [`int`](class_int.md)                           | [`add_item`](#class_itemlist_method_add_item) ( text: [`String`](class_string.md), icon: [`Texture2D`](class_texture2d.md) = null, selectable: [`bool`](class_bool.md) = true ) |
-| `void`                                          | [`clear`](#class_itemlist_method_clear) ( )                                                                                                                                     |
-| `void`                                          | [`deselect`](#class_itemlist_method_deselect) ( idx: [`int`](class_int.md) )                                                                                                    |
-| `void`                                          | [`deselect_all`](#class_itemlist_method_deselect_all) ( )                                                                                                                       |
-| `void`                                          | [`ensure_current_is_visible`](#class_itemlist_method_ensure_current_is_visible) ( )                                                                                             |
-| `void`                                          | [`force_update_list_size`](#class_itemlist_method_force_update_list_size) ( )                                                                                                   |
-| [`int`](class_int.md)                           | [`get_item_at_position`](#class_itemlist_method_get_item_at_position) ( position: [`Vector2`](class_vector2.md), exact: [`bool`](class_bool.md) = false ) const[^const]         |
-| [`Color`](class_color.md)                       | [`get_item_custom_bg_color`](#class_itemlist_method_get_item_custom_bg_color) ( idx: [`int`](class_int.md) ) const[^const]                                                      |
-| [`Color`](class_color.md)                       | [`get_item_custom_fg_color`](#class_itemlist_method_get_item_custom_fg_color) ( idx: [`int`](class_int.md) ) const[^const]                                                      |
-| [`Texture2D`](class_texture2d.md)               | [`get_item_icon`](#class_itemlist_method_get_item_icon) ( idx: [`int`](class_int.md) ) const[^const]                                                                            |
-| [`Color`](class_color.md)                       | [`get_item_icon_modulate`](#class_itemlist_method_get_item_icon_modulate) ( idx: [`int`](class_int.md) ) const[^const]                                                          |
-| [`Rect2`](class_rect2.md)                       | [`get_item_icon_region`](#class_itemlist_method_get_item_icon_region) ( idx: [`int`](class_int.md) ) const[^const]                                                              |
-| [`String`](class_string.md)                     | [`get_item_language`](#class_itemlist_method_get_item_language) ( idx: [`int`](class_int.md) ) const[^const]                                                                    |
-| [`Variant`](class_variant.md)                   | [`get_item_metadata`](#class_itemlist_method_get_item_metadata) ( idx: [`int`](class_int.md) ) const[^const]                                                                    |
-| [`Rect2`](class_rect2.md)                       | [`get_item_rect`](#class_itemlist_method_get_item_rect) ( idx: [`int`](class_int.md), expand: [`bool`](class_bool.md) = true ) const[^const]                                    |
-| [`String`](class_string.md)                     | [`get_item_text`](#class_itemlist_method_get_item_text) ( idx: [`int`](class_int.md) ) const[^const]                                                                            |
-| [TextDirection](#enum_control_textdirection)    | [`get_item_text_direction`](#class_itemlist_method_get_item_text_direction) ( idx: [`int`](class_int.md) ) const[^const]                                                        |
-| [`String`](class_string.md)                     | [`get_item_tooltip`](#class_itemlist_method_get_item_tooltip) ( idx: [`int`](class_int.md) ) const[^const]                                                                      |
-| [`PackedInt32Array`](class_packedint32array.md) | [`get_selected_items`](#class_itemlist_method_get_selected_items) ( )                                                                                                           |
-| [`VScrollBar`](class_vscrollbar.md)             | [`get_v_scroll_bar`](#class_itemlist_method_get_v_scroll_bar) ( )                                                                                                               |
-| [`bool`](class_bool.md)                         | [`is_anything_selected`](#class_itemlist_method_is_anything_selected) ( )                                                                                                       |
-| [`bool`](class_bool.md)                         | [`is_item_disabled`](#class_itemlist_method_is_item_disabled) ( idx: [`int`](class_int.md) ) const[^const]                                                                      |
-| [`bool`](class_bool.md)                         | [`is_item_icon_transposed`](#class_itemlist_method_is_item_icon_transposed) ( idx: [`int`](class_int.md) ) const[^const]                                                        |
-| [`bool`](class_bool.md)                         | [`is_item_selectable`](#class_itemlist_method_is_item_selectable) ( idx: [`int`](class_int.md) ) const[^const]                                                                  |
-| [`bool`](class_bool.md)                         | [`is_item_tooltip_enabled`](#class_itemlist_method_is_item_tooltip_enabled) ( idx: [`int`](class_int.md) ) const[^const]                                                        |
-| [`bool`](class_bool.md)                         | [`is_selected`](#class_itemlist_method_is_selected) ( idx: [`int`](class_int.md) ) const[^const]                                                                                |
-| `void`                                          | [`move_item`](#class_itemlist_method_move_item) ( from_idx: [`int`](class_int.md), to_idx: [`int`](class_int.md) )                                                              |
-| `void`                                          | [`remove_item`](#class_itemlist_method_remove_item) ( idx: [`int`](class_int.md) )                                                                                              |
-| `void`                                          | [`select`](#class_itemlist_method_select) ( idx: [`int`](class_int.md), single: [`bool`](class_bool.md) = true )                                                                |
-| `void`                                          | [`set_item_custom_bg_color`](#class_itemlist_method_set_item_custom_bg_color) ( idx: [`int`](class_int.md), custom_bg_color: [`Color`](class_color.md) )                        |
-| `void`                                          | [`set_item_custom_fg_color`](#class_itemlist_method_set_item_custom_fg_color) ( idx: [`int`](class_int.md), custom_fg_color: [`Color`](class_color.md) )                        |
-| `void`                                          | [`set_item_disabled`](#class_itemlist_method_set_item_disabled) ( idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                               |
-| `void`                                          | [`set_item_icon`](#class_itemlist_method_set_item_icon) ( idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                                                 |
-| `void`                                          | [`set_item_icon_modulate`](#class_itemlist_method_set_item_icon_modulate) ( idx: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                   |
-| `void`                                          | [`set_item_icon_region`](#class_itemlist_method_set_item_icon_region) ( idx: [`int`](class_int.md), rect: [`Rect2`](class_rect2.md) )                                           |
-| `void`                                          | [`set_item_icon_transposed`](#class_itemlist_method_set_item_icon_transposed) ( idx: [`int`](class_int.md), transposed: [`bool`](class_bool.md) )                               |
-| `void`                                          | [`set_item_language`](#class_itemlist_method_set_item_language) ( idx: [`int`](class_int.md), language: [`String`](class_string.md) )                                           |
-| `void`                                          | [`set_item_metadata`](#class_itemlist_method_set_item_metadata) ( idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                                         |
-| `void`                                          | [`set_item_selectable`](#class_itemlist_method_set_item_selectable) ( idx: [`int`](class_int.md), selectable: [`bool`](class_bool.md) )                                         |
-| `void`                                          | [`set_item_text`](#class_itemlist_method_set_item_text) ( idx: [`int`](class_int.md), text: [`String`](class_string.md) )                                                       |
-| `void`                                          | [`set_item_text_direction`](#class_itemlist_method_set_item_text_direction) ( idx: [`int`](class_int.md), direction: [TextDirection](#enum_control_textdirection) )             |
-| `void`                                          | [`set_item_tooltip`](#class_itemlist_method_set_item_tooltip) ( idx: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                              |
-| `void`                                          | [`set_item_tooltip_enabled`](#class_itemlist_method_set_item_tooltip_enabled) ( idx: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                   |
-| `void`                                          | [`sort_items_by_text`](#class_itemlist_method_sort_items_by_text) ( )                                                                                                           |
+| [`int`](class_int.md)                           | [`add_icon_item`](class_itemlist.md#class_itemlist_method_add_icon_item) ( icon: [`Texture2D`](class_texture2d.md), selectable: [`bool`](class_bool.md) = true )                                 |
+| [`int`](class_int.md)                           | [`add_item`](class_itemlist.md#class_itemlist_method_add_item) ( text: [`String`](class_string.md), icon: [`Texture2D`](class_texture2d.md) = null, selectable: [`bool`](class_bool.md) = true ) |
+| `void`                                          | [`clear`](class_itemlist.md#class_itemlist_method_clear) ( )                                                                                                                                     |
+| `void`                                          | [`deselect`](class_itemlist.md#class_itemlist_method_deselect) ( idx: [`int`](class_int.md) )                                                                                                    |
+| `void`                                          | [`deselect_all`](class_itemlist.md#class_itemlist_method_deselect_all) ( )                                                                                                                       |
+| `void`                                          | [`ensure_current_is_visible`](class_itemlist.md#class_itemlist_method_ensure_current_is_visible) ( )                                                                                             |
+| `void`                                          | [`force_update_list_size`](class_itemlist.md#class_itemlist_method_force_update_list_size) ( )                                                                                                   |
+| [`int`](class_int.md)                           | [`get_item_at_position`](class_itemlist.md#class_itemlist_method_get_item_at_position) ( position: [`Vector2`](class_vector2.md), exact: [`bool`](class_bool.md) = false ) const[^const]         |
+| [`Color`](class_color.md)                       | [`get_item_custom_bg_color`](class_itemlist.md#class_itemlist_method_get_item_custom_bg_color) ( idx: [`int`](class_int.md) ) const[^const]                                                      |
+| [`Color`](class_color.md)                       | [`get_item_custom_fg_color`](class_itemlist.md#class_itemlist_method_get_item_custom_fg_color) ( idx: [`int`](class_int.md) ) const[^const]                                                      |
+| [`Texture2D`](class_texture2d.md)               | [`get_item_icon`](class_itemlist.md#class_itemlist_method_get_item_icon) ( idx: [`int`](class_int.md) ) const[^const]                                                                            |
+| [`Color`](class_color.md)                       | [`get_item_icon_modulate`](class_itemlist.md#class_itemlist_method_get_item_icon_modulate) ( idx: [`int`](class_int.md) ) const[^const]                                                          |
+| [`Rect2`](class_rect2.md)                       | [`get_item_icon_region`](class_itemlist.md#class_itemlist_method_get_item_icon_region) ( idx: [`int`](class_int.md) ) const[^const]                                                              |
+| [`String`](class_string.md)                     | [`get_item_language`](class_itemlist.md#class_itemlist_method_get_item_language) ( idx: [`int`](class_int.md) ) const[^const]                                                                    |
+| [`Variant`](class_variant.md)                   | [`get_item_metadata`](class_itemlist.md#class_itemlist_method_get_item_metadata) ( idx: [`int`](class_int.md) ) const[^const]                                                                    |
+| [`Rect2`](class_rect2.md)                       | [`get_item_rect`](class_itemlist.md#class_itemlist_method_get_item_rect) ( idx: [`int`](class_int.md), expand: [`bool`](class_bool.md) = true ) const[^const]                                    |
+| [`String`](class_string.md)                     | [`get_item_text`](class_itemlist.md#class_itemlist_method_get_item_text) ( idx: [`int`](class_int.md) ) const[^const]                                                                            |
+| [TextDirection](#enum_control_textdirection)    | [`get_item_text_direction`](class_itemlist.md#class_itemlist_method_get_item_text_direction) ( idx: [`int`](class_int.md) ) const[^const]                                                        |
+| [`String`](class_string.md)                     | [`get_item_tooltip`](class_itemlist.md#class_itemlist_method_get_item_tooltip) ( idx: [`int`](class_int.md) ) const[^const]                                                                      |
+| [`PackedInt32Array`](class_packedint32array.md) | [`get_selected_items`](class_itemlist.md#class_itemlist_method_get_selected_items) ( )                                                                                                           |
+| [`VScrollBar`](class_vscrollbar.md)             | [`get_v_scroll_bar`](class_itemlist.md#class_itemlist_method_get_v_scroll_bar) ( )                                                                                                               |
+| [`bool`](class_bool.md)                         | [`is_anything_selected`](class_itemlist.md#class_itemlist_method_is_anything_selected) ( )                                                                                                       |
+| [`bool`](class_bool.md)                         | [`is_item_disabled`](class_itemlist.md#class_itemlist_method_is_item_disabled) ( idx: [`int`](class_int.md) ) const[^const]                                                                      |
+| [`bool`](class_bool.md)                         | [`is_item_icon_transposed`](class_itemlist.md#class_itemlist_method_is_item_icon_transposed) ( idx: [`int`](class_int.md) ) const[^const]                                                        |
+| [`bool`](class_bool.md)                         | [`is_item_selectable`](class_itemlist.md#class_itemlist_method_is_item_selectable) ( idx: [`int`](class_int.md) ) const[^const]                                                                  |
+| [`bool`](class_bool.md)                         | [`is_item_tooltip_enabled`](class_itemlist.md#class_itemlist_method_is_item_tooltip_enabled) ( idx: [`int`](class_int.md) ) const[^const]                                                        |
+| [`bool`](class_bool.md)                         | [`is_selected`](class_itemlist.md#class_itemlist_method_is_selected) ( idx: [`int`](class_int.md) ) const[^const]                                                                                |
+| `void`                                          | [`move_item`](class_itemlist.md#class_itemlist_method_move_item) ( from_idx: [`int`](class_int.md), to_idx: [`int`](class_int.md) )                                                              |
+| `void`                                          | [`remove_item`](class_itemlist.md#class_itemlist_method_remove_item) ( idx: [`int`](class_int.md) )                                                                                              |
+| `void`                                          | [`select`](class_itemlist.md#class_itemlist_method_select) ( idx: [`int`](class_int.md), single: [`bool`](class_bool.md) = true )                                                                |
+| `void`                                          | [`set_item_custom_bg_color`](class_itemlist.md#class_itemlist_method_set_item_custom_bg_color) ( idx: [`int`](class_int.md), custom_bg_color: [`Color`](class_color.md) )                        |
+| `void`                                          | [`set_item_custom_fg_color`](class_itemlist.md#class_itemlist_method_set_item_custom_fg_color) ( idx: [`int`](class_int.md), custom_fg_color: [`Color`](class_color.md) )                        |
+| `void`                                          | [`set_item_disabled`](class_itemlist.md#class_itemlist_method_set_item_disabled) ( idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                               |
+| `void`                                          | [`set_item_icon`](class_itemlist.md#class_itemlist_method_set_item_icon) ( idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                                                 |
+| `void`                                          | [`set_item_icon_modulate`](class_itemlist.md#class_itemlist_method_set_item_icon_modulate) ( idx: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                   |
+| `void`                                          | [`set_item_icon_region`](class_itemlist.md#class_itemlist_method_set_item_icon_region) ( idx: [`int`](class_int.md), rect: [`Rect2`](class_rect2.md) )                                           |
+| `void`                                          | [`set_item_icon_transposed`](class_itemlist.md#class_itemlist_method_set_item_icon_transposed) ( idx: [`int`](class_int.md), transposed: [`bool`](class_bool.md) )                               |
+| `void`                                          | [`set_item_language`](class_itemlist.md#class_itemlist_method_set_item_language) ( idx: [`int`](class_int.md), language: [`String`](class_string.md) )                                           |
+| `void`                                          | [`set_item_metadata`](class_itemlist.md#class_itemlist_method_set_item_metadata) ( idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                                         |
+| `void`                                          | [`set_item_selectable`](class_itemlist.md#class_itemlist_method_set_item_selectable) ( idx: [`int`](class_int.md), selectable: [`bool`](class_bool.md) )                                         |
+| `void`                                          | [`set_item_text`](class_itemlist.md#class_itemlist_method_set_item_text) ( idx: [`int`](class_int.md), text: [`String`](class_string.md) )                                                       |
+| `void`                                          | [`set_item_text_direction`](class_itemlist.md#class_itemlist_method_set_item_text_direction) ( idx: [`int`](class_int.md), direction: [TextDirection](#enum_control_textdirection) )             |
+| `void`                                          | [`set_item_tooltip`](class_itemlist.md#class_itemlist_method_set_item_tooltip) ( idx: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                              |
+| `void`                                          | [`set_item_tooltip_enabled`](class_itemlist.md#class_itemlist_method_set_item_tooltip_enabled) ( idx: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                   |
+| `void`                                          | [`sort_items_by_text`](class_itemlist.md#class_itemlist_method_sort_items_by_text) ( )                                                                                                           |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)       | [`font_color`](#class_itemlist_theme_color_font_color)                   | ``Color(0.65, 0.65, 0.65, 1)`` |
-| [`Color`](class_color.md)       | [`font_hovered_color`](#class_itemlist_theme_color_font_hovered_color)   | ``Color(0.95, 0.95, 0.95, 1)`` |
-| [`Color`](class_color.md)       | [`font_outline_color`](#class_itemlist_theme_color_font_outline_color)   | ``Color(0, 0, 0, 1)``          |
-| [`Color`](class_color.md)       | [`font_selected_color`](#class_itemlist_theme_color_font_selected_color) | ``Color(1, 1, 1, 1)``          |
-| [`Color`](class_color.md)       | [`guide_color`](#class_itemlist_theme_color_guide_color)                 | ``Color(0.7, 0.7, 0.7, 0.25)`` |
-| [`int`](class_int.md)           | [`h_separation`](#class_itemlist_theme_constant_h_separation)            | ``4``                          |
-| [`int`](class_int.md)           | [`icon_margin`](#class_itemlist_theme_constant_icon_margin)              | ``4``                          |
-| [`int`](class_int.md)           | [`line_separation`](#class_itemlist_theme_constant_line_separation)      | ``2``                          |
-| [`int`](class_int.md)           | [`outline_size`](#class_itemlist_theme_constant_outline_size)            | ``0``                          |
-| [`int`](class_int.md)           | [`v_separation`](#class_itemlist_theme_constant_v_separation)            | ``4``                          |
-| [`Font`](class_font.md)         | [`font`](#class_itemlist_theme_font_font)                                |                                |
-| [`int`](class_int.md)           | [`font_size`](#class_itemlist_theme_font_size_font_size)                 |                                |
-| [`StyleBox`](class_stylebox.md) | [`cursor`](#class_itemlist_theme_style_cursor)                           |                                |
-| [`StyleBox`](class_stylebox.md) | [`cursor_unfocused`](#class_itemlist_theme_style_cursor_unfocused)       |                                |
-| [`StyleBox`](class_stylebox.md) | [`focus`](#class_itemlist_theme_style_focus)                             |                                |
-| [`StyleBox`](class_stylebox.md) | [`hovered`](#class_itemlist_theme_style_hovered)                         |                                |
-| [`StyleBox`](class_stylebox.md) | [`panel`](#class_itemlist_theme_style_panel)                             |                                |
-| [`StyleBox`](class_stylebox.md) | [`selected`](#class_itemlist_theme_style_selected)                       |                                |
-| [`StyleBox`](class_stylebox.md) | [`selected_focus`](#class_itemlist_theme_style_selected_focus)           |                                |
+| [`Color`](class_color.md)       | [`font_color`](class_itemlist.md#class_itemlist_theme_color_font_color)                   | ``Color(0.65, 0.65, 0.65, 1)`` |
+| [`Color`](class_color.md)       | [`font_hovered_color`](class_itemlist.md#class_itemlist_theme_color_font_hovered_color)   | ``Color(0.95, 0.95, 0.95, 1)`` |
+| [`Color`](class_color.md)       | [`font_outline_color`](class_itemlist.md#class_itemlist_theme_color_font_outline_color)   | ``Color(0, 0, 0, 1)``          |
+| [`Color`](class_color.md)       | [`font_selected_color`](class_itemlist.md#class_itemlist_theme_color_font_selected_color) | ``Color(1, 1, 1, 1)``          |
+| [`Color`](class_color.md)       | [`guide_color`](class_itemlist.md#class_itemlist_theme_color_guide_color)                 | ``Color(0.7, 0.7, 0.7, 0.25)`` |
+| [`int`](class_int.md)           | [`h_separation`](class_itemlist.md#class_itemlist_theme_constant_h_separation)            | ``4``                          |
+| [`int`](class_int.md)           | [`icon_margin`](class_itemlist.md#class_itemlist_theme_constant_icon_margin)              | ``4``                          |
+| [`int`](class_int.md)           | [`line_separation`](class_itemlist.md#class_itemlist_theme_constant_line_separation)      | ``2``                          |
+| [`int`](class_int.md)           | [`outline_size`](class_itemlist.md#class_itemlist_theme_constant_outline_size)            | ``0``                          |
+| [`int`](class_int.md)           | [`v_separation`](class_itemlist.md#class_itemlist_theme_constant_v_separation)            | ``4``                          |
+| [`Font`](class_font.md)         | [`font`](class_itemlist.md#class_itemlist_theme_font_font)                                |                                |
+| [`int`](class_int.md)           | [`font_size`](class_itemlist.md#class_itemlist_theme_font_size_font_size)                 |                                |
+| [`StyleBox`](class_stylebox.md) | [`cursor`](class_itemlist.md#class_itemlist_theme_style_cursor)                           |                                |
+| [`StyleBox`](class_stylebox.md) | [`cursor_unfocused`](class_itemlist.md#class_itemlist_theme_style_cursor_unfocused)       |                                |
+| [`StyleBox`](class_stylebox.md) | [`focus`](class_itemlist.md#class_itemlist_theme_style_focus)                             |                                |
+| [`StyleBox`](class_stylebox.md) | [`hovered`](class_itemlist.md#class_itemlist_theme_style_hovered)                         |                                |
+| [`StyleBox`](class_stylebox.md) | [`panel`](class_itemlist.md#class_itemlist_theme_style_panel)                             |                                |
+| [`StyleBox`](class_stylebox.md) | [`selected`](class_itemlist.md#class_itemlist_theme_style_selected)                       |                                |
+| [`StyleBox`](class_stylebox.md) | [`selected_focus`](class_itemlist.md#class_itemlist_theme_style_selected_focus)           |                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -162,7 +162,7 @@ The click position is also provided to allow appropriate popup of context menus 
 
 Triggered when specified item has been selected.
 
- [`allow_reselect`](#class_itemlist_property_allow_reselect) must be enabled to reselect an item.
+ [`allow_reselect`](class_itemlist.md#class_itemlist_property_allow_reselect) must be enabled to reselect an item.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -324,7 +324,7 @@ The icon position, whether above or to the left of the text. See the [IconMode](
 - `void` **set_icon_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_icon_scale** ( )
 
-The scale of icon applied after [`fixed_icon_size`](#class_itemlist_property_fixed_icon_size) and transposing takes effect.
+The scale of icon applied after [`fixed_icon_size`](class_itemlist.md#class_itemlist_property_fixed_icon_size) and transposing takes effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -369,7 +369,7 @@ A value of zero means unlimited columns, i.e. all items will be put in the same 
 
 Maximum lines of text allowed in each item. Space will be reserved even when there is not enough lines of text to display.
 
- **Note:** This property takes effect only when [`icon_mode`](#class_itemlist_property_icon_mode) is [`ICON_MODE_TOP`](#class_itemlist_constant_icon_mode_top). To make the text wrap, [`fixed_column_width`](#class_itemlist_property_fixed_column_width) should be greater than zero.
+ **Note:** This property takes effect only when [`icon_mode`](class_itemlist.md#class_itemlist_property_icon_mode) is [`ICON_MODE_TOP`](class_itemlist.md#class_itemlist_constant_icon_mode_top). To make the text wrap, [`fixed_column_width`](class_itemlist.md#class_itemlist_property_fixed_column_width) should be greater than zero.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -486,7 +486,7 @@ Ensure current selection is visible, adjusting the scroll position as necessary.
 
 `void` **force_update_list_size** ( )<div id="class_itemlist_method_force_update_list_size"></div>
 
-Forces an update to the list size based on its items. This happens automatically whenever size of the items, or other relevant settings like [`auto_height`](#class_itemlist_property_auto_height), change. The method can be used to trigger the update ahead of next drawing pass.
+Forces an update to the list size based on its items. This happens automatically whenever size of the items, or other relevant settings like [`auto_height`](class_itemlist.md#class_itemlist_property_auto_height), change. The method can be used to trigger the update ahead of next drawing pass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -634,7 +634,7 @@ Returns an array with the indexes of the selected items.
 
 Returns the vertical scrollbar.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -972,7 +972,7 @@ The vertical spacing between each line of text.
 
 The size of the item text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_itemlist_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_itemlist.md#class_itemlist_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -21,11 +21,11 @@ An OpenXR composition layer that allows rendering a [`SubViewport`](class_subvie
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`central_horizontal_angle`](#class_openxrcompositionlayerequirect_property_central_horizontal_angle) | ``1.5708``   |
-| [`int`](class_int.md)     | [`fallback_segments`](#class_openxrcompositionlayerequirect_property_fallback_segments)               | ``10``       |
-| [`float`](class_float.md) | [`lower_vertical_angle`](#class_openxrcompositionlayerequirect_property_lower_vertical_angle)         | ``0.785398`` |
-| [`float`](class_float.md) | [`radius`](#class_openxrcompositionlayerequirect_property_radius)                                     | ``1.0``      |
-| [`float`](class_float.md) | [`upper_vertical_angle`](#class_openxrcompositionlayerequirect_property_upper_vertical_angle)         | ``0.785398`` |
+| [`float`](class_float.md) | [`central_horizontal_angle`](class_openxrcompositionlayerequirect.md#class_openxrcompositionlayerequirect_property_central_horizontal_angle) | ``1.5708``   |
+| [`int`](class_int.md)     | [`fallback_segments`](class_openxrcompositionlayerequirect.md#class_openxrcompositionlayerequirect_property_fallback_segments)               | ``10``       |
+| [`float`](class_float.md) | [`lower_vertical_angle`](class_openxrcompositionlayerequirect.md#class_openxrcompositionlayerequirect_property_lower_vertical_angle)         | ``0.785398`` |
+| [`float`](class_float.md) | [`radius`](class_openxrcompositionlayerequirect.md#class_openxrcompositionlayerequirect_property_radius)                                     | ``1.0``      |
+| [`float`](class_float.md) | [`upper_vertical_angle`](class_openxrcompositionlayerequirect.md#class_openxrcompositionlayerequirect_property_upper_vertical_angle)         | ``0.785398`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -66,7 +66,7 @@ The number of segments to use in the fallback mesh.
 - `void` **set_lower_vertical_angle** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_lower_vertical_angle** ( )
 
-The lower vertical angle of the sphere. Used (together with [`upper_vertical_angle`](#class_openxrcompositionlayerequirect_property_upper_vertical_angle)) to set the height.
+The lower vertical angle of the sphere. Used (together with [`upper_vertical_angle`](class_openxrcompositionlayerequirect.md#class_openxrcompositionlayerequirect_property_upper_vertical_angle)) to set the height.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -92,7 +92,7 @@ The radius of the sphere.
 - `void` **set_upper_vertical_angle** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_upper_vertical_angle** ( )
 
-The upper vertical angle of the sphere. Used (together with [`lower_vertical_angle`](#class_openxrcompositionlayerequirect_property_lower_vertical_angle)) to set the height.
+The upper vertical angle of the sphere. Used (together with [`lower_vertical_angle`](class_openxrcompositionlayerequirect.md#class_openxrcompositionlayerequirect_property_lower_vertical_angle)) to set the height.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

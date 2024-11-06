@@ -19,19 +19,19 @@ This node selects a bone in a [`Skeleton3D`](class_skeleton3d.md) and attaches t
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)       | [`bone_idx`](#class_boneattachment3d_property_bone_idx)           | ``-1``    |
-| [`String`](class_string.md) | [`bone_name`](#class_boneattachment3d_property_bone_name)         | ``""``    |
-| [`bool`](class_bool.md)     | [`override_pose`](#class_boneattachment3d_property_override_pose) | ``false`` |
+| [`int`](class_int.md)       | [`bone_idx`](class_boneattachment3d.md#class_boneattachment3d_property_bone_idx)           | ``-1``    |
+| [`String`](class_string.md) | [`bone_name`](class_boneattachment3d.md#class_boneattachment3d_property_bone_name)         | ``""``    |
+| [`bool`](class_bool.md)     | [`override_pose`](class_boneattachment3d.md#class_boneattachment3d_property_override_pose) | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md) | [`get_external_skeleton`](#class_boneattachment3d_method_get_external_skeleton) ( ) const[^const]                                          |
-| [`bool`](class_bool.md)         | [`get_use_external_skeleton`](#class_boneattachment3d_method_get_use_external_skeleton) ( ) const[^const]                                  |
-| `void`                          | [`on_skeleton_update`](#class_boneattachment3d_method_on_skeleton_update) ( )                                                              |
-| `void`                          | [`set_external_skeleton`](#class_boneattachment3d_method_set_external_skeleton) ( external_skeleton: [`NodePath`](class_nodepath.md) )     |
-| `void`                          | [`set_use_external_skeleton`](#class_boneattachment3d_method_set_use_external_skeleton) ( use_external_skeleton: [`bool`](class_bool.md) ) |
+| [`NodePath`](class_nodepath.md) | [`get_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_get_external_skeleton) ( ) const[^const]                                          |
+| [`bool`](class_bool.md)         | [`get_use_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_get_use_external_skeleton) ( ) const[^const]                                  |
+| `void`                          | [`on_skeleton_update`](class_boneattachment3d.md#class_boneattachment3d_method_on_skeleton_update) ( )                                                              |
+| `void`                          | [`set_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_set_external_skeleton) ( external_skeleton: [`NodePath`](class_nodepath.md) )     |
+| `void`                          | [`set_use_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_set_use_external_skeleton) ( use_external_skeleton: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -116,7 +116,7 @@ A function that is called automatically when the [`Skeleton3D`](class_skeleton3d
 
 `void` **set_external_skeleton** ( external_skeleton: [`NodePath`](class_nodepath.md) )<div id="class_boneattachment3d_method_set_external_skeleton"></div>
 
-Sets the [`NodePath`](class_nodepath.md) to the external skeleton that the BoneAttachment3D node should use. See [`set_use_external_skeleton`](#class_boneattachment3d_method_set_use_external_skeleton) to enable the external [`Skeleton3D`](class_skeleton3d.md) node.
+Sets the [`NodePath`](class_nodepath.md) to the external skeleton that the BoneAttachment3D node should use. See [`set_use_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_set_use_external_skeleton) to enable the external [`Skeleton3D`](class_skeleton3d.md) node.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -126,7 +126,7 @@ Sets the [`NodePath`](class_nodepath.md) to the external skeleton that the BoneA
 
 `void` **set_use_external_skeleton** ( use_external_skeleton: [`bool`](class_bool.md) )<div id="class_boneattachment3d_method_set_use_external_skeleton"></div>
 
-Sets whether the BoneAttachment3D node will use an external [`Skeleton3D`](class_skeleton3d.md) node rather than attempting to use its parent node as the [`Skeleton3D`](class_skeleton3d.md). When set to `true`, the BoneAttachment3D node will use the external [`Skeleton3D`](class_skeleton3d.md) node set in [`set_external_skeleton`](#class_boneattachment3d_method_set_external_skeleton).
+Sets whether the BoneAttachment3D node will use an external [`Skeleton3D`](class_skeleton3d.md) node rather than attempting to use its parent node as the [`Skeleton3D`](class_skeleton3d.md). When set to `true`, the BoneAttachment3D node will use the external [`Skeleton3D`](class_skeleton3d.md) node set in [`set_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_set_external_skeleton).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

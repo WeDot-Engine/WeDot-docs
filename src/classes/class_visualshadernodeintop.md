@@ -13,13 +13,13 @@ An integer scalar operator to be used within the visual shader graph.
 
 ## 描述
 
-Applies [`operator`](#class_visualshadernodeintop_property_operator) to two integer inputs: `a` and `b`.
+Applies [`operator`](class_visualshadernodeintop.md#class_visualshadernodeintop_property_operator) to two integer inputs: `a` and `b`.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Operator](#enum_visualshadernodeintop_operator) | [`operator`](#class_visualshadernodeintop_property_operator) | ``0`` |
+| [Operator](#enum_visualshadernodeintop_operator) | [`operator`](class_visualshadernodeintop.md#class_visualshadernodeintop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

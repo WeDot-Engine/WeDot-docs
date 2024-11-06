@@ -191,27 +191,27 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | [`accept_gzip`](#class_httprequest_property_accept_gzip)                 | ``true``  |
-| [`int`](class_int.md)       | [`body_size_limit`](#class_httprequest_property_body_size_limit)         | ``-1``    |
-| [`int`](class_int.md)       | [`download_chunk_size`](#class_httprequest_property_download_chunk_size) | ``65536`` |
-| [`String`](class_string.md) | [`download_file`](#class_httprequest_property_download_file)             | ``""``    |
-| [`int`](class_int.md)       | [`max_redirects`](#class_httprequest_property_max_redirects)             | ``8``     |
-| [`float`](class_float.md)   | [`timeout`](#class_httprequest_property_timeout)                         | ``0.0``   |
-| [`bool`](class_bool.md)     | [`use_threads`](#class_httprequest_property_use_threads)                 | ``false`` |
+| [`bool`](class_bool.md)     | [`accept_gzip`](class_httprequest.md#class_httprequest_property_accept_gzip)                 | ``true``  |
+| [`int`](class_int.md)       | [`body_size_limit`](class_httprequest.md#class_httprequest_property_body_size_limit)         | ``-1``    |
+| [`int`](class_int.md)       | [`download_chunk_size`](class_httprequest.md#class_httprequest_property_download_chunk_size) | ``65536`` |
+| [`String`](class_string.md) | [`download_file`](class_httprequest.md#class_httprequest_property_download_file)             | ``""``    |
+| [`int`](class_int.md)       | [`max_redirects`](class_httprequest.md#class_httprequest_property_max_redirects)             | ``8``     |
+| [`float`](class_float.md)   | [`timeout`](class_httprequest.md#class_httprequest_property_timeout)                         | ``0.0``   |
+| [`bool`](class_bool.md)     | [`use_threads`](class_httprequest.md#class_httprequest_property_use_threads)                 | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                            | [`cancel_request`](#class_httprequest_method_cancel_request) ( )                                                                                                                                                                                                                                                         |
-| [`int`](class_int.md)             | [`get_body_size`](#class_httprequest_method_get_body_size) ( ) const[^const]                                                                                                                                                                                                                                             |
-| [`int`](class_int.md)             | [`get_downloaded_bytes`](#class_httprequest_method_get_downloaded_bytes) ( ) const[^const]                                                                                                                                                                                                                               |
-| [Status](#enum_httpclient_status) | [`get_http_client_status`](#class_httprequest_method_get_http_client_status) ( ) const[^const]                                                                                                                                                                                                                           |
-| [Error](#enum_@globalscope_error) | [`request`](#class_httprequest_method_request) ( url: [`String`](class_string.md), custom_headers: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray(), method: [Method](#enum_httpclient_method) = 0, request_data: [`String`](class_string.md) = "" )                                              |
-| [Error](#enum_@globalscope_error) | [`request_raw`](#class_httprequest_method_request_raw) ( url: [`String`](class_string.md), custom_headers: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray(), method: [Method](#enum_httpclient_method) = 0, request_data_raw: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() ) |
-| `void`                            | [`set_http_proxy`](#class_httprequest_method_set_http_proxy) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                                                                                                                                                                          |
-| `void`                            | [`set_https_proxy`](#class_httprequest_method_set_https_proxy) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                                                                                                                                                                        |
-| `void`                            | [`set_tls_options`](#class_httprequest_method_set_tls_options) ( client_options: [`TLSOptions`](class_tlsoptions.md) )                                                                                                                                                                                                   |
+| `void`                            | [`cancel_request`](class_httprequest.md#class_httprequest_method_cancel_request) ( )                                                                                                                                                                                                                                                         |
+| [`int`](class_int.md)             | [`get_body_size`](class_httprequest.md#class_httprequest_method_get_body_size) ( ) const[^const]                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)             | [`get_downloaded_bytes`](class_httprequest.md#class_httprequest_method_get_downloaded_bytes) ( ) const[^const]                                                                                                                                                                                                                               |
+| [Status](#enum_httpclient_status) | [`get_http_client_status`](class_httprequest.md#class_httprequest_method_get_http_client_status) ( ) const[^const]                                                                                                                                                                                                                           |
+| [Error](#enum_@globalscope_error) | [`request`](class_httprequest.md#class_httprequest_method_request) ( url: [`String`](class_string.md), custom_headers: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray(), method: [Method](#enum_httpclient_method) = 0, request_data: [`String`](class_string.md) = "" )                                              |
+| [Error](#enum_@globalscope_error) | [`request_raw`](class_httprequest.md#class_httprequest_method_request_raw) ( url: [`String`](class_string.md), custom_headers: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray(), method: [Method](#enum_httpclient_method) = 0, request_data_raw: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() ) |
+| `void`                            | [`set_http_proxy`](class_httprequest.md#class_httprequest_method_set_http_proxy) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                                                                                                                                                                          |
+| `void`                            | [`set_https_proxy`](class_httprequest.md#class_httprequest_method_set_https_proxy) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                                                                                                                                                                        |
+| `void`                            | [`set_tls_options`](class_httprequest.md#class_httprequest_method_set_tls_options) ( client_options: [`TLSOptions`](class_tlsoptions.md) )                                                                                                                                                                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -283,7 +283,7 @@ Request does not have a response (yet).
 
 [Result](#enum_httprequest_result) **RESULT_BODY_SIZE_LIMIT_EXCEEDED** = ``7``
 
-Request exceeded its maximum size limit, see [`body_size_limit`](#class_httprequest_property_body_size_limit).
+Request exceeded its maximum size limit, see [`body_size_limit`](class_httprequest.md#class_httprequest_property_body_size_limit).
 
 <div id="_class_httprequest_constant_result_body_decompress_failed"></div>
 
@@ -315,13 +315,13 @@ HTTPRequest couldn't write to the download file.
 
 [Result](#enum_httprequest_result) **RESULT_REDIRECT_LIMIT_REACHED** = ``12``
 
-Request reached its maximum redirect limit, see [`max_redirects`](#class_httprequest_property_max_redirects).
+Request reached its maximum redirect limit, see [`max_redirects`](class_httprequest.md#class_httprequest_property_max_redirects).
 
 <div id="_class_httprequest_constant_result_timeout"></div>
 
 [Result](#enum_httprequest_result) **RESULT_TIMEOUT** = ``13``
 
-Request failed due to a timeout. If you expect requests to take a long time, try increasing the value of [`timeout`](#class_httprequest_property_timeout) or setting it to `0.0` to remove the timeout completely.
+Request failed due to a timeout. If you expect requests to take a long time, try increasing the value of [`timeout`](class_httprequest.md#class_httprequest_property_timeout) or setting it to `0.0` to remove the timeout completely.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -338,11 +338,11 @@ Request failed due to a timeout. If you expect requests to take a long time, try
 
 If `true`, this header will be added to each request: `Accept-Encoding: gzip, deflate` telling servers that it's okay to compress response bodies.
 
-Any Response body declaring a `Content-Encoding` of either `gzip` or `deflate` will then be automatically decompressed, and the uncompressed bytes will be delivered via [`request_completed`](#class_httprequest_signal_request_completed).
+Any Response body declaring a `Content-Encoding` of either `gzip` or `deflate` will then be automatically decompressed, and the uncompressed bytes will be delivered via [`request_completed`](class_httprequest.md#class_httprequest_signal_request_completed).
 
-If the user has specified their own `Accept-Encoding` header, then no header will be added regardless of [`accept_gzip`](#class_httprequest_property_accept_gzip).
+If the user has specified their own `Accept-Encoding` header, then no header will be added regardless of [`accept_gzip`](class_httprequest.md#class_httprequest_property_accept_gzip).
 
-If `false` no header will be added, and no decompression will be performed on response bodies. The raw bytes of the response body will be returned via [`request_completed`](#class_httprequest_signal_request_completed).
+If `false` no header will be added, and no decompression will be performed on response bodies. The raw bytes of the response body will be returned via [`request_completed`](class_httprequest.md#class_httprequest_signal_request_completed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -368,7 +368,7 @@ Maximum allowed size for response bodies. If the response body is compressed, th
 - `void` **set_download_chunk_size** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_download_chunk_size** ( )
 
-The size of the buffer used and maximum bytes to read per iteration. See [`HTTPClient.read_chunk_size`](#class_httpclient_property_read_chunk_size).
+The size of the buffer used and maximum bytes to read per iteration. See [`HTTPClient.read_chunk_size`](class_httpclient.md#class_httpclient_property_read_chunk_size).
 
 Set this to a lower value (e.g. 4096 for 4 KiB) when downloading small files to decrease memory usage at the cost of download speeds.
 
@@ -409,7 +409,7 @@ Maximum number of allowed redirects.
 - `void` **set_timeout** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_timeout** ( )
 
-The duration to wait in seconds before a request times out. If [`timeout`](#class_httprequest_property_timeout) is set to `0.0` then the request will never time out. For simple requests, such as communication with a REST API, it is recommended that [`timeout`](#class_httprequest_property_timeout) is set to a value suitable for the server response time (e.g. between `1.0` and `10.0`). This will help prevent unwanted timeouts caused by variation in server response times while still allowing the application to detect when a request has timed out. For larger requests such as file downloads it is suggested the [`timeout`](#class_httprequest_property_timeout) be set to `0.0`, disabling the timeout functionality. This will help to prevent large transfers from failing due to exceeding the timeout value.
+The duration to wait in seconds before a request times out. If [`timeout`](class_httprequest.md#class_httprequest_property_timeout) is set to `0.0` then the request will never time out. For simple requests, such as communication with a REST API, it is recommended that [`timeout`](class_httprequest.md#class_httprequest_property_timeout) is set to a value suitable for the server response time (e.g. between `1.0` and `10.0`). This will help prevent unwanted timeouts caused by variation in server response times while still allowing the application to detect when a request has timed out. For larger requests such as file downloads it is suggested the [`timeout`](class_httprequest.md#class_httprequest_property_timeout) be set to `0.0`, disabling the timeout functionality. This will help to prevent large transfers from failing due to exceeding the timeout value.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -476,11 +476,11 @@ Returns the current status of the underlying [`HTTPClient`](class_httpclient.md)
 
 [Error](#enum_@globalscope_error) **request** ( url: [`String`](class_string.md), custom_headers: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray(), method: [Method](#enum_httpclient_method) = 0, request_data: [`String`](class_string.md) = "" )<div id="class_httprequest_method_request"></div>
 
-Creates request on the underlying [`HTTPClient`](class_httpclient.md). If there is no configuration errors, it tries to connect using [`HTTPClient.connect_to_host`](#class_httpclient_method_connect_to_host) and passes parameters onto [`HTTPClient.request`](#class_httpclient_method_request).
+Creates request on the underlying [`HTTPClient`](class_httpclient.md). If there is no configuration errors, it tries to connect using [`HTTPClient.connect_to_host`](class_httpclient.md#class_httpclient_method_connect_to_host) and passes parameters onto [`HTTPClient.request`](class_httpclient.md#class_httpclient_method_request).
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if request is successfully created. (Does not imply that the server has responded), [`@GlobalScope.ERR_UNCONFIGURED`](#class_@globalscope_constant_err_unconfigured) if not in the tree, [`@GlobalScope.ERR_BUSY`](#class_@globalscope_constant_err_busy) if still processing previous request, [`@GlobalScope.ERR_INVALID_PARAMETER`](#class_@globalscope_constant_err_invalid_parameter) if given string is not a valid URL format, or [`@GlobalScope.ERR_CANT_CONNECT`](#class_@globalscope_constant_err_cant_connect) if not using thread and the [`HTTPClient`](class_httpclient.md) cannot connect to host.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if request is successfully created. (Does not imply that the server has responded), [`@GlobalScope.ERR_UNCONFIGURED`](class_@globalscope.md#class_@globalscope_constant_err_unconfigured) if not in the tree, [`@GlobalScope.ERR_BUSY`](class_@globalscope.md#class_@globalscope_constant_err_busy) if still processing previous request, [`@GlobalScope.ERR_INVALID_PARAMETER`](class_@globalscope.md#class_@globalscope_constant_err_invalid_parameter) if given string is not a valid URL format, or [`@GlobalScope.ERR_CANT_CONNECT`](class_@globalscope.md#class_@globalscope_constant_err_cant_connect) if not using thread and the [`HTTPClient`](class_httpclient.md) cannot connect to host.
 
- **Note:** When `method` is [`HTTPClient.METHOD_GET`](#class_httpclient_constant_method_get), the payload sent via `request_data` might be ignored by the server or even cause the server to reject the request (check [*RFC 7231 section 4.3.1*](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1) for more details). As a workaround, you can send data as a query string in the URL (see [`String.uri_encode`](#class_string_method_uri_encode) for an example).
+ **Note:** When `method` is [`HTTPClient.METHOD_GET`](class_httpclient.md#class_httpclient_constant_method_get), the payload sent via `request_data` might be ignored by the server or even cause the server to reject the request (check [*RFC 7231 section 4.3.1*](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1) for more details). As a workaround, you can send data as a query string in the URL (see [`String.uri_encode`](class_string.md#class_string_method_uri_encode) for an example).
 
  **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
 
@@ -492,9 +492,9 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if request is succe
 
 [Error](#enum_@globalscope_error) **request_raw** ( url: [`String`](class_string.md), custom_headers: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray(), method: [Method](#enum_httpclient_method) = 0, request_data_raw: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray() )<div id="class_httprequest_method_request_raw"></div>
 
-Creates request on the underlying [`HTTPClient`](class_httpclient.md) using a raw array of bytes for the request body. If there is no configuration errors, it tries to connect using [`HTTPClient.connect_to_host`](#class_httpclient_method_connect_to_host) and passes parameters onto [`HTTPClient.request`](#class_httpclient_method_request).
+Creates request on the underlying [`HTTPClient`](class_httpclient.md) using a raw array of bytes for the request body. If there is no configuration errors, it tries to connect using [`HTTPClient.connect_to_host`](class_httpclient.md#class_httpclient_method_connect_to_host) and passes parameters onto [`HTTPClient.request`](class_httpclient.md#class_httpclient_method_request).
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if request is successfully created. (Does not imply that the server has responded), [`@GlobalScope.ERR_UNCONFIGURED`](#class_@globalscope_constant_err_unconfigured) if not in the tree, [`@GlobalScope.ERR_BUSY`](#class_@globalscope_constant_err_busy) if still processing previous request, [`@GlobalScope.ERR_INVALID_PARAMETER`](#class_@globalscope_constant_err_invalid_parameter) if given string is not a valid URL format, or [`@GlobalScope.ERR_CANT_CONNECT`](#class_@globalscope_constant_err_cant_connect) if not using thread and the [`HTTPClient`](class_httpclient.md) cannot connect to host.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if request is successfully created. (Does not imply that the server has responded), [`@GlobalScope.ERR_UNCONFIGURED`](class_@globalscope.md#class_@globalscope_constant_err_unconfigured) if not in the tree, [`@GlobalScope.ERR_BUSY`](class_@globalscope.md#class_@globalscope_constant_err_busy) if still processing previous request, [`@GlobalScope.ERR_INVALID_PARAMETER`](class_@globalscope.md#class_@globalscope_constant_err_invalid_parameter) if given string is not a valid URL format, or [`@GlobalScope.ERR_CANT_CONNECT`](class_@globalscope.md#class_@globalscope_constant_err_cant_connect) if not using thread and the [`HTTPClient`](class_httpclient.md) cannot connect to host.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -528,7 +528,7 @@ The proxy server is unset if `host` is empty or `port` is -1.
 
 `void` **set_tls_options** ( client_options: [`TLSOptions`](class_tlsoptions.md) )<div id="class_httprequest_method_set_tls_options"></div>
 
-Sets the [`TLSOptions`](class_tlsoptions.md) to be used when connecting to an HTTPS server. See [`TLSOptions.client`](#class_tlsoptions_method_client).
+Sets the [`TLSOptions`](class_tlsoptions.md) to be used when connecting to an HTTPS server. See [`TLSOptions.client`](class_tlsoptions.md#class_tlsoptions_method_client).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

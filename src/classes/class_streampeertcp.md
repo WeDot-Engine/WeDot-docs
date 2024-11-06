@@ -21,15 +21,15 @@ A stream peer that handles TCP connections. This object can be used to connect t
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)    | [`bind`](#class_streampeertcp_method_bind) ( port: [`int`](class_int.md), host: [`String`](class_string.md) = "*" )                 |
-| [Error](#enum_@globalscope_error)    | [`connect_to_host`](#class_streampeertcp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) ) |
-| `void`                               | [`disconnect_from_host`](#class_streampeertcp_method_disconnect_from_host) ( )                                                      |
-| [`String`](class_string.md)          | [`get_connected_host`](#class_streampeertcp_method_get_connected_host) ( ) const[^const]                                            |
-| [`int`](class_int.md)                | [`get_connected_port`](#class_streampeertcp_method_get_connected_port) ( ) const[^const]                                            |
-| [`int`](class_int.md)                | [`get_local_port`](#class_streampeertcp_method_get_local_port) ( ) const[^const]                                                    |
-| [Status](#enum_streampeertcp_status) | [`get_status`](#class_streampeertcp_method_get_status) ( ) const[^const]                                                            |
-| [Error](#enum_@globalscope_error)    | [`poll`](#class_streampeertcp_method_poll) ( )                                                                                      |
-| `void`                               | [`set_no_delay`](#class_streampeertcp_method_set_no_delay) ( enabled: [`bool`](class_bool.md) )                                     |
+| [Error](#enum_@globalscope_error)    | [`bind`](class_streampeertcp.md#class_streampeertcp_method_bind) ( port: [`int`](class_int.md), host: [`String`](class_string.md) = "*" )                 |
+| [Error](#enum_@globalscope_error)    | [`connect_to_host`](class_streampeertcp.md#class_streampeertcp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) ) |
+| `void`                               | [`disconnect_from_host`](class_streampeertcp.md#class_streampeertcp_method_disconnect_from_host) ( )                                                      |
+| [`String`](class_string.md)          | [`get_connected_host`](class_streampeertcp.md#class_streampeertcp_method_get_connected_host) ( ) const[^const]                                            |
+| [`int`](class_int.md)                | [`get_connected_port`](class_streampeertcp.md#class_streampeertcp_method_get_connected_port) ( ) const[^const]                                            |
+| [`int`](class_int.md)                | [`get_local_port`](class_streampeertcp.md#class_streampeertcp_method_get_local_port) ( ) const[^const]                                                    |
+| [Status](#enum_streampeertcp_status) | [`get_status`](class_streampeertcp.md#class_streampeertcp_method_get_status) ( ) const[^const]                                                            |
+| [Error](#enum_@globalscope_error)    | [`poll`](class_streampeertcp.md#class_streampeertcp_method_poll) ( )                                                                                      |
+| `void`                               | [`set_no_delay`](class_streampeertcp.md#class_streampeertcp_method_set_no_delay) ( enabled: [`bool`](class_bool.md) )                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -77,7 +77,7 @@ A status representing a **StreamPeerTCP** in error state.
 
 Opens the TCP socket, and binds it to the specified local address.
 
-This method is generally not needed, and only used to force the subsequent call to [`connect_to_host`](#class_streampeertcp_method_connect_to_host) to use the specified `host` and `port` as source address. This can be desired in some NAT punchthrough techniques, or when forcing the source network interface.
+This method is generally not needed, and only used to force the subsequent call to [`connect_to_host`](class_streampeertcp.md#class_streampeertcp_method_connect_to_host) to use the specified `host` and `port` as source address. This can be desired in some NAT punchthrough techniques, or when forcing the source network interface.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -87,7 +87,7 @@ This method is generally not needed, and only used to force the subsequent call 
 
 [Error](#enum_@globalscope_error) **connect_to_host** ( host: [`String`](class_string.md), port: [`int`](class_int.md) )<div id="class_streampeertcp_method_connect_to_host"></div>
 
-Connects to the specified `host:port` pair. A hostname will be resolved if valid. Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success.
+Connects to the specified `host:port` pair. A hostname will be resolved if valid. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -147,7 +147,7 @@ Returns the status of the connection, see [Status](#enum_streampeertcp_status).
 
 [Error](#enum_@globalscope_error) **poll** ( )<div id="class_streampeertcp_method_poll"></div>
 
-Poll the socket, updating its state. See [`get_status`](#class_streampeertcp_method_get_status).
+Poll the socket, updating its state. See [`get_status`](class_streampeertcp.md#class_streampeertcp_method_get_status).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -19,15 +19,15 @@ This configuration object is created and populated by the render engine on a vie
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                            | [`fsr_sharpness`](#class_renderscenebuffersconfiguration_property_fsr_sharpness)             | ``0.0``            |
-| [`Vector2i`](class_vector2i.md)                                      | [`internal_size`](#class_renderscenebuffersconfiguration_property_internal_size)             | ``Vector2i(0, 0)`` |
-| [ViewportMSAA](#enum_renderingserver_viewportmsaa)                   | [`msaa_3d`](#class_renderscenebuffersconfiguration_property_msaa_3d)                         | ``0``              |
-| [`RID`](class_rid.md)                                                | [`render_target`](#class_renderscenebuffersconfiguration_property_render_target)             | ``RID()``          |
-| [ViewportScaling3DMode](#enum_renderingserver_viewportscaling3dmode) | [`scaling_3d_mode`](#class_renderscenebuffersconfiguration_property_scaling_3d_mode)         | ``255``            |
-| [ViewportScreenSpaceAA](#enum_renderingserver_viewportscreenspaceaa) | [`screen_space_aa`](#class_renderscenebuffersconfiguration_property_screen_space_aa)         | ``0``              |
-| [`Vector2i`](class_vector2i.md)                                      | [`target_size`](#class_renderscenebuffersconfiguration_property_target_size)                 | ``Vector2i(0, 0)`` |
-| [`float`](class_float.md)                                            | [`texture_mipmap_bias`](#class_renderscenebuffersconfiguration_property_texture_mipmap_bias) | ``0.0``            |
-| [`int`](class_int.md)                                                | [`view_count`](#class_renderscenebuffersconfiguration_property_view_count)                   | ``1``              |
+| [`float`](class_float.md)                                            | [`fsr_sharpness`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_fsr_sharpness)             | ``0.0``            |
+| [`Vector2i`](class_vector2i.md)                                      | [`internal_size`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_internal_size)             | ``Vector2i(0, 0)`` |
+| [ViewportMSAA](#enum_renderingserver_viewportmsaa)                   | [`msaa_3d`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_msaa_3d)                         | ``0``              |
+| [`RID`](class_rid.md)                                                | [`render_target`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_render_target)             | ``RID()``          |
+| [ViewportScaling3DMode](#enum_renderingserver_viewportscaling3dmode) | [`scaling_3d_mode`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_scaling_3d_mode)         | ``255``            |
+| [ViewportScreenSpaceAA](#enum_renderingserver_viewportscreenspaceaa) | [`screen_space_aa`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_screen_space_aa)         | ``0``              |
+| [`Vector2i`](class_vector2i.md)                                      | [`target_size`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_target_size)                 | ``Vector2i(0, 0)`` |
+| [`float`](class_float.md)                                            | [`texture_mipmap_bias`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_texture_mipmap_bias) | ``0.0``            |
+| [`int`](class_int.md)                                                | [`view_count`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_view_count)                   | ``1``              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -94,7 +94,7 @@ The render target associated with these buffer.
 - `void` **set_scaling_3d_mode** ( value: [ViewportScaling3DMode](#enum_renderingserver_viewportscaling3dmode) )
 - [ViewportScaling3DMode](#enum_renderingserver_viewportscaling3dmode) **get_scaling_3d_mode** ( )
 
-The requested scaling mode with which we upscale/downscale if [`internal_size`](#class_renderscenebuffersconfiguration_property_internal_size) and [`target_size`](#class_renderscenebuffersconfiguration_property_target_size) are not equal.
+The requested scaling mode with which we upscale/downscale if [`internal_size`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_internal_size) and [`target_size`](class_renderscenebuffersconfiguration.md#class_renderscenebuffersconfiguration_property_target_size) are not equal.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -15,14 +15,14 @@ Manipulates the audio it receives for a given effect.
 
 ## 描述
 
-An audio effect instance manipulates the audio it receives for a given effect. This instance is automatically created by an [`AudioEffect`](class_audioeffect.md) when it is added to a bus, and should usually not be created directly. If necessary, it can be fetched at run-time with [`AudioServer.get_bus_effect_instance`](#class_audioserver_method_get_bus_effect_instance).
+An audio effect instance manipulates the audio it receives for a given effect. This instance is automatically created by an [`AudioEffect`](class_audioeffect.md) when it is added to a bus, and should usually not be created directly. If necessary, it can be fetched at run-time with [`AudioServer.get_bus_effect_instance`](class_audioserver.md#class_audioserver_method_get_bus_effect_instance).
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                  | [`_process`](#class_audioeffectinstance_private_method__process) ( src_buffer: `const void*`, dst_buffer: `AudioFrame*`, frame_count: [`int`](class_int.md) ) virtual[^virtual] |
-| [`bool`](class_bool.md) | [`_process_silence`](#class_audioeffectinstance_private_method__process_silence) ( ) virtual[^virtual] const[^const]                                                            |
+| `void`                  | [`_process`](class_audioeffectinstance.md#class_audioeffectinstance_private_method__process) ( src_buffer: `const void*`, dst_buffer: `AudioFrame*`, frame_count: [`int`](class_int.md) ) virtual[^virtual] |
+| [`bool`](class_bool.md) | [`_process_silence`](class_audioeffectinstance.md#class_audioeffectinstance_private_method__process_silence) ( ) virtual[^virtual] const[^const]                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -34,7 +34,7 @@ An audio effect instance manipulates the audio it receives for a given effect. T
 
 `void` **_process** ( src_buffer: `const void*`, dst_buffer: `AudioFrame*`, frame_count: [`int`](class_int.md) ) virtual[^virtual]<div id="class_audioeffectinstance_private_method__process"></div>
 
-Called by the [`AudioServer`](class_audioserver.md) to process this effect. When [`_process_silence`](#class_audioeffectinstance_private_method__process_silence) is not overridden or it returns `false`, this method is called only when the bus is active.
+Called by the [`AudioServer`](class_audioserver.md) to process this effect. When [`_process_silence`](class_audioeffectinstance.md#class_audioeffectinstance_private_method__process_silence) is not overridden or it returns `false`, this method is called only when the bus is active.
 
  **Note:** It is not useful to override this method in GDScript or C#. Only GDExtension can take advantage of it.
 
@@ -48,7 +48,7 @@ Called by the [`AudioServer`](class_audioserver.md) to process this effect. When
 
 Override this method to customize the processing behavior of this effect instance.
 
-Should return `true` to force the [`AudioServer`](class_audioserver.md) to always call [`_process`](#class_audioeffectinstance_private_method__process), even if the bus has been muted or cannot otherwise be heard.
+Should return `true` to force the [`AudioServer`](class_audioserver.md) to always call [`_process`](class_audioeffectinstance.md#class_audioeffectinstance_private_method__process), even if the bus has been muted or cannot otherwise be heard.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

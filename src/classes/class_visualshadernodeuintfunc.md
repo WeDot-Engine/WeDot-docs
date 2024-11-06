@@ -13,13 +13,13 @@ An unsigned scalar integer function to be used within the visual shader graph.
 
 ## 描述
 
-Accept an unsigned integer scalar (`x`) to the input port and transform it according to [`function`](#class_visualshadernodeuintfunc_property_function).
+Accept an unsigned integer scalar (`x`) to the input port and transform it according to [`function`](class_visualshadernodeuintfunc.md#class_visualshadernodeuintfunc_property_function).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Function](#enum_visualshadernodeuintfunc_function) | [`function`](#class_visualshadernodeuintfunc_property_function) | ``0`` |
+| [Function](#enum_visualshadernodeuintfunc_function) | [`function`](class_visualshadernodeuintfunc.md#class_visualshadernodeuintfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

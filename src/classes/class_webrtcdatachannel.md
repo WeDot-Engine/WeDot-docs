@@ -17,24 +17,24 @@
 
 |||
 |:-:|:--|
-| [WriteMode](#enum_webrtcdatachannel_writemode) | [`write_mode`](#class_webrtcdatachannel_property_write_mode) | ``1`` |
+| [WriteMode](#enum_webrtcdatachannel_writemode) | [`write_mode`](class_webrtcdatachannel.md#class_webrtcdatachannel_property_write_mode) | ``1`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                               | [`close`](#class_webrtcdatachannel_method_close) ( )                                                     |
-| [`int`](class_int.md)                                | [`get_buffered_amount`](#class_webrtcdatachannel_method_get_buffered_amount) ( ) const[^const]           |
-| [`int`](class_int.md)                                | [`get_id`](#class_webrtcdatachannel_method_get_id) ( ) const[^const]                                     |
-| [`String`](class_string.md)                          | [`get_label`](#class_webrtcdatachannel_method_get_label) ( ) const[^const]                               |
-| [`int`](class_int.md)                                | [`get_max_packet_life_time`](#class_webrtcdatachannel_method_get_max_packet_life_time) ( ) const[^const] |
-| [`int`](class_int.md)                                | [`get_max_retransmits`](#class_webrtcdatachannel_method_get_max_retransmits) ( ) const[^const]           |
-| [`String`](class_string.md)                          | [`get_protocol`](#class_webrtcdatachannel_method_get_protocol) ( ) const[^const]                         |
-| [ChannelState](#enum_webrtcdatachannel_channelstate) | [`get_ready_state`](#class_webrtcdatachannel_method_get_ready_state) ( ) const[^const]                   |
-| [`bool`](class_bool.md)                              | [`is_negotiated`](#class_webrtcdatachannel_method_is_negotiated) ( ) const[^const]                       |
-| [`bool`](class_bool.md)                              | [`is_ordered`](#class_webrtcdatachannel_method_is_ordered) ( ) const[^const]                             |
-| [Error](#enum_@globalscope_error)                    | [`poll`](#class_webrtcdatachannel_method_poll) ( )                                                       |
-| [`bool`](class_bool.md)                              | [`was_string_packet`](#class_webrtcdatachannel_method_was_string_packet) ( ) const[^const]               |
+| `void`                                               | [`close`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_close) ( )                                                     |
+| [`int`](class_int.md)                                | [`get_buffered_amount`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_get_buffered_amount) ( ) const[^const]           |
+| [`int`](class_int.md)                                | [`get_id`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_get_id) ( ) const[^const]                                     |
+| [`String`](class_string.md)                          | [`get_label`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_get_label) ( ) const[^const]                               |
+| [`int`](class_int.md)                                | [`get_max_packet_life_time`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_get_max_packet_life_time) ( ) const[^const] |
+| [`int`](class_int.md)                                | [`get_max_retransmits`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_get_max_retransmits) ( ) const[^const]           |
+| [`String`](class_string.md)                          | [`get_protocol`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_get_protocol) ( ) const[^const]                         |
+| [ChannelState](#enum_webrtcdatachannel_channelstate) | [`get_ready_state`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_get_ready_state) ( ) const[^const]                   |
+| [`bool`](class_bool.md)                              | [`is_negotiated`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_is_negotiated) ( ) const[^const]                       |
+| [`bool`](class_bool.md)                              | [`is_ordered`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_is_ordered) ( ) const[^const]                             |
+| [Error](#enum_@globalscope_error)                    | [`poll`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_poll) ( )                                                       |
+| [`bool`](class_bool.md)                              | [`was_string_packet`](class_webrtcdatachannel.md#class_webrtcdatachannel_method_was_string_packet) ( ) const[^const]               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -231,7 +231,7 @@ Reserved, but not used for now.
 
 [`bool`](class_bool.md) **was_string_packet** ( ) const[^const]<div id="class_webrtcdatachannel_method_was_string_packet"></div>
 
-Returns `true` if the last received packet was transferred as text. See [`write_mode`](#class_webrtcdatachannel_property_write_mode).
+Returns `true` if the last received packet was transferred as text. See [`write_mode`](class_webrtcdatachannel.md#class_webrtcdatachannel_property_write_mode).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

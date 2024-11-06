@@ -21,38 +21,38 @@ It keeps a cache of precalculated points along the curve, to speed up further ca
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`bake_interval`](#class_curve3d_property_bake_interval)         | ``0.2``  |
-| [`int`](class_int.md)     | [`point_count`](#class_curve3d_property_point_count)             | ``0``    |
-| [`bool`](class_bool.md)   | [`up_vector_enabled`](#class_curve3d_property_up_vector_enabled) | ``true`` |
+| [`float`](class_float.md) | [`bake_interval`](class_curve3d.md#class_curve3d_property_bake_interval)         | ``0.2``  |
+| [`int`](class_int.md)     | [`point_count`](class_curve3d.md#class_curve3d_property_point_count)             | ``0``    |
+| [`bool`](class_bool.md)   | [`up_vector_enabled`](class_curve3d.md#class_curve3d_property_up_vector_enabled) | ``true`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                              | [`add_point`](#class_curve3d_method_add_point) ( position: [`Vector3`](class_vector3.md), in: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0), out: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0), index: [`int`](class_int.md) = -1 ) |
-| `void`                                              | [`clear_points`](#class_curve3d_method_clear_points) ( )                                                                                                                                                                                   |
-| [`float`](class_float.md)                           | [`get_baked_length`](#class_curve3d_method_get_baked_length) ( ) const[^const]                                                                                                                                                             |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`get_baked_points`](#class_curve3d_method_get_baked_points) ( ) const[^const]                                                                                                                                                             |
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`get_baked_tilts`](#class_curve3d_method_get_baked_tilts) ( ) const[^const]                                                                                                                                                               |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`get_baked_up_vectors`](#class_curve3d_method_get_baked_up_vectors) ( ) const[^const]                                                                                                                                                     |
-| [`float`](class_float.md)                           | [`get_closest_offset`](#class_curve3d_method_get_closest_offset) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                 |
-| [`Vector3`](class_vector3.md)                       | [`get_closest_point`](#class_curve3d_method_get_closest_point) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                   |
-| [`Vector3`](class_vector3.md)                       | [`get_point_in`](#class_curve3d_method_get_point_in) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                          |
-| [`Vector3`](class_vector3.md)                       | [`get_point_out`](#class_curve3d_method_get_point_out) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                        |
-| [`Vector3`](class_vector3.md)                       | [`get_point_position`](#class_curve3d_method_get_point_position) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                              |
-| [`float`](class_float.md)                           | [`get_point_tilt`](#class_curve3d_method_get_point_tilt) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                      |
-| `void`                                              | [`remove_point`](#class_curve3d_method_remove_point) ( idx: [`int`](class_int.md) )                                                                                                                                                        |
-| [`Vector3`](class_vector3.md)                       | [`sample`](#class_curve3d_method_sample) ( idx: [`int`](class_int.md), t: [`float`](class_float.md) ) const[^const]                                                                                                                        |
-| [`Vector3`](class_vector3.md)                       | [`sample_baked`](#class_curve3d_method_sample_baked) ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false ) const[^const]                                                                                     |
-| [`Vector3`](class_vector3.md)                       | [`sample_baked_up_vector`](#class_curve3d_method_sample_baked_up_vector) ( offset: [`float`](class_float.md), apply_tilt: [`bool`](class_bool.md) = false ) const[^const]                                                                  |
-| [`Transform3D`](class_transform3d.md)               | [`sample_baked_with_rotation`](#class_curve3d_method_sample_baked_with_rotation) ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false, apply_tilt: [`bool`](class_bool.md) = false ) const[^const]            |
-| [`Vector3`](class_vector3.md)                       | [`samplef`](#class_curve3d_method_samplef) ( fofs: [`float`](class_float.md) ) const[^const]                                                                                                                                               |
-| `void`                                              | [`set_point_in`](#class_curve3d_method_set_point_in) ( idx: [`int`](class_int.md), position: [`Vector3`](class_vector3.md) )                                                                                                               |
-| `void`                                              | [`set_point_out`](#class_curve3d_method_set_point_out) ( idx: [`int`](class_int.md), position: [`Vector3`](class_vector3.md) )                                                                                                             |
-| `void`                                              | [`set_point_position`](#class_curve3d_method_set_point_position) ( idx: [`int`](class_int.md), position: [`Vector3`](class_vector3.md) )                                                                                                   |
-| `void`                                              | [`set_point_tilt`](#class_curve3d_method_set_point_tilt) ( idx: [`int`](class_int.md), tilt: [`float`](class_float.md) )                                                                                                                   |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`tessellate`](#class_curve3d_method_tessellate) ( max_stages: [`int`](class_int.md) = 5, tolerance_degrees: [`float`](class_float.md) = 4 ) const[^const]                                                                                 |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`tessellate_even_length`](#class_curve3d_method_tessellate_even_length) ( max_stages: [`int`](class_int.md) = 5, tolerance_length: [`float`](class_float.md) = 0.2 ) const[^const]                                                        |
+| `void`                                              | [`add_point`](class_curve3d.md#class_curve3d_method_add_point) ( position: [`Vector3`](class_vector3.md), in: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0), out: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0), index: [`int`](class_int.md) = -1 ) |
+| `void`                                              | [`clear_points`](class_curve3d.md#class_curve3d_method_clear_points) ( )                                                                                                                                                                                   |
+| [`float`](class_float.md)                           | [`get_baked_length`](class_curve3d.md#class_curve3d_method_get_baked_length) ( ) const[^const]                                                                                                                                                             |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`get_baked_points`](class_curve3d.md#class_curve3d_method_get_baked_points) ( ) const[^const]                                                                                                                                                             |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`get_baked_tilts`](class_curve3d.md#class_curve3d_method_get_baked_tilts) ( ) const[^const]                                                                                                                                                               |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`get_baked_up_vectors`](class_curve3d.md#class_curve3d_method_get_baked_up_vectors) ( ) const[^const]                                                                                                                                                     |
+| [`float`](class_float.md)                           | [`get_closest_offset`](class_curve3d.md#class_curve3d_method_get_closest_offset) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                 |
+| [`Vector3`](class_vector3.md)                       | [`get_closest_point`](class_curve3d.md#class_curve3d_method_get_closest_point) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                   |
+| [`Vector3`](class_vector3.md)                       | [`get_point_in`](class_curve3d.md#class_curve3d_method_get_point_in) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                          |
+| [`Vector3`](class_vector3.md)                       | [`get_point_out`](class_curve3d.md#class_curve3d_method_get_point_out) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                        |
+| [`Vector3`](class_vector3.md)                       | [`get_point_position`](class_curve3d.md#class_curve3d_method_get_point_position) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                              |
+| [`float`](class_float.md)                           | [`get_point_tilt`](class_curve3d.md#class_curve3d_method_get_point_tilt) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                      |
+| `void`                                              | [`remove_point`](class_curve3d.md#class_curve3d_method_remove_point) ( idx: [`int`](class_int.md) )                                                                                                                                                        |
+| [`Vector3`](class_vector3.md)                       | [`sample`](class_curve3d.md#class_curve3d_method_sample) ( idx: [`int`](class_int.md), t: [`float`](class_float.md) ) const[^const]                                                                                                                        |
+| [`Vector3`](class_vector3.md)                       | [`sample_baked`](class_curve3d.md#class_curve3d_method_sample_baked) ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false ) const[^const]                                                                                     |
+| [`Vector3`](class_vector3.md)                       | [`sample_baked_up_vector`](class_curve3d.md#class_curve3d_method_sample_baked_up_vector) ( offset: [`float`](class_float.md), apply_tilt: [`bool`](class_bool.md) = false ) const[^const]                                                                  |
+| [`Transform3D`](class_transform3d.md)               | [`sample_baked_with_rotation`](class_curve3d.md#class_curve3d_method_sample_baked_with_rotation) ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false, apply_tilt: [`bool`](class_bool.md) = false ) const[^const]            |
+| [`Vector3`](class_vector3.md)                       | [`samplef`](class_curve3d.md#class_curve3d_method_samplef) ( fofs: [`float`](class_float.md) ) const[^const]                                                                                                                                               |
+| `void`                                              | [`set_point_in`](class_curve3d.md#class_curve3d_method_set_point_in) ( idx: [`int`](class_int.md), position: [`Vector3`](class_vector3.md) )                                                                                                               |
+| `void`                                              | [`set_point_out`](class_curve3d.md#class_curve3d_method_set_point_out) ( idx: [`int`](class_int.md), position: [`Vector3`](class_vector3.md) )                                                                                                             |
+| `void`                                              | [`set_point_position`](class_curve3d.md#class_curve3d_method_set_point_position) ( idx: [`int`](class_int.md), position: [`Vector3`](class_vector3.md) )                                                                                                   |
+| `void`                                              | [`set_point_tilt`](class_curve3d.md#class_curve3d_method_set_point_tilt) ( idx: [`int`](class_int.md), tilt: [`float`](class_float.md) )                                                                                                                   |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`tessellate`](class_curve3d.md#class_curve3d_method_tessellate) ( max_stages: [`int`](class_int.md) = 5, tolerance_degrees: [`float`](class_float.md) = 4 ) const[^const]                                                                                 |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`tessellate_even_length`](class_curve3d.md#class_curve3d_method_tessellate_even_length) ( max_stages: [`int`](class_int.md) = 5, tolerance_length: [`float`](class_float.md) = 0.2 ) const[^const]                                                        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -67,7 +67,7 @@ It keeps a cache of precalculated points along the curve, to speed up further ca
 - `void` **set_bake_interval** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_bake_interval** ( )
 
-The distance in meters between two adjacent cached points. Changing it forces the cache to be recomputed the next time the [`get_baked_points`](#class_curve3d_method_get_baked_points) or [`get_baked_length`](#class_curve3d_method_get_baked_length) function is called. The smaller the distance, the more points in the cache and the more memory it will consume, so use with care.
+The distance in meters between two adjacent cached points. Changing it forces the cache to be recomputed the next time the [`get_baked_points`](class_curve3d.md#class_curve3d_method_get_baked_points) or [`get_baked_length`](class_curve3d.md#class_curve3d_method_get_baked_length) function is called. The smaller the distance, the more points in the cache and the more memory it will consume, so use with care.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -93,7 +93,7 @@ The number of points describing the curve.
 - `void` **set_up_vector_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_up_vector_enabled** ( )
 
-If `true`, the curve will bake up vectors used for orientation. This is used when [`PathFollow3D.rotation_mode`](#class_pathfollow3d_property_rotation_mode) is set to [`PathFollow3D.ROTATION_ORIENTED`](#class_pathfollow3d_constant_rotation_oriented). Changing it forces the cache to be recomputed.
+If `true`, the curve will bake up vectors used for orientation. This is used when [`PathFollow3D.rotation_mode`](class_pathfollow3d.md#class_pathfollow3d_property_rotation_mode) is set to [`PathFollow3D.ROTATION_ORIENTED`](class_pathfollow3d.md#class_pathfollow3d_constant_rotation_oriented). Changing it forces the cache to be recomputed.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -107,7 +107,7 @@ If `true`, the curve will bake up vectors used for orientation. This is used whe
 
 Adds a point with the specified `position` relative to the curve's own position, with control points `in` and `out`. Appends the new point at the end of the point list.
 
-If `index` is given, the new point is inserted before the existing point identified by index `index`. Every existing point starting from `index` is shifted further down the list of points. The index must be greater than or equal to `0` and must not exceed the number of existing points in the line. See [`point_count`](#class_curve3d_property_point_count).
+If `index` is given, the new point is inserted before the existing point identified by index `index`. Every existing point starting from `index` is shifted further down the list of points. The index must be greater than or equal to `0` and must not exceed the number of existing points in the line. See [`point_count`](class_curve3d.md#class_curve3d_property_point_count).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -127,7 +127,7 @@ Removes all points from the curve.
 
 [`float`](class_float.md) **get_baked_length** ( ) const[^const]<div id="class_curve3d_method_get_baked_length"></div>
 
-Returns the total length of the curve, based on the cached points. Given enough density (see [`bake_interval`](#class_curve3d_property_bake_interval)), it should be approximate enough.
+Returns the total length of the curve, based on the cached points. Given enough density (see [`bake_interval`](class_curve3d.md#class_curve3d_property_bake_interval)), it should be approximate enough.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -159,7 +159,7 @@ Returns the cache of tilts as a [`PackedFloat32Array`](class_packedfloat32array.
 
 Returns the cache of up vectors as a [`PackedVector3Array`](class_packedvector3array.md).
 
-If [`up_vector_enabled`](#class_curve3d_property_up_vector_enabled) is `false`, the cache will be empty.
+If [`up_vector_enabled`](class_curve3d.md#class_curve3d_property_up_vector_enabled) is `false`, the cache will be empty.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -169,7 +169,7 @@ If [`up_vector_enabled`](#class_curve3d_property_up_vector_enabled) is `false`, 
 
 [`float`](class_float.md) **get_closest_offset** ( to_point: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_curve3d_method_get_closest_offset"></div>
 
-Returns the closest offset to `to_point`. This offset is meant to be used in [`sample_baked`](#class_curve3d_method_sample_baked) or [`sample_baked_up_vector`](#class_curve3d_method_sample_baked_up_vector).
+Returns the closest offset to `to_point`. This offset is meant to be used in [`sample_baked`](class_curve3d.md#class_curve3d_method_sample_baked) or [`sample_baked_up_vector`](class_curve3d.md#class_curve3d_method_sample_baked_up_vector).
 
  `to_point` must be in this curve's local space.
 
@@ -279,7 +279,7 @@ If the curve has no up vectors, the function sends an error to the console, and 
 
 [`Transform3D`](class_transform3d.md) **sample_baked_with_rotation** ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false, apply_tilt: [`bool`](class_bool.md) = false ) const[^const]<div id="class_curve3d_method_sample_baked_with_rotation"></div>
 
-Returns a [`Transform3D`](class_transform3d.md) with `origin` as point position, `basis.x` as sideway vector, `basis.y` as up vector, `basis.z` as forward vector. When the curve length is 0, there is no reasonable way to calculate the rotation, all vectors aligned with global space axes. See also [`sample_baked`](#class_curve3d_method_sample_baked).
+Returns a [`Transform3D`](class_transform3d.md) with `origin` as point position, `basis.x` as sideway vector, `basis.y` as up vector, `basis.z` as forward vector. When the curve length is 0, there is no reasonable way to calculate the rotation, all vectors aligned with global space axes. See also [`sample_baked`](class_curve3d.md#class_curve3d_method_sample_baked).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -289,7 +289,7 @@ Returns a [`Transform3D`](class_transform3d.md) with `origin` as point position,
 
 [`Vector3`](class_vector3.md) **samplef** ( fofs: [`float`](class_float.md) ) const[^const]<div id="class_curve3d_method_samplef"></div>
 
-Returns the position at the vertex `fofs`. It calls [`sample`](#class_curve3d_method_sample) using the integer part of `fofs` as `idx`, and its fractional part as `t`.
+Returns the position at the vertex `fofs`. It calls [`sample`](class_curve3d.md#class_curve3d_method_sample) using the integer part of `fofs` as `idx`, and its fractional part as `t`.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -21,12 +21,12 @@ The GDExtensionManager loads, initializes, and keeps track of all available [`GD
 
 |||
 |:-:|:--|
-| [`GDExtension`](class_gdextension.md)             | [`get_extension`](#class_gdextensionmanager_method_get_extension) ( path: [`String`](class_string.md) )                           |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_loaded_extensions`](#class_gdextensionmanager_method_get_loaded_extensions) ( ) const[^const]                               |
-| [`bool`](class_bool.md)                           | [`is_extension_loaded`](#class_gdextensionmanager_method_is_extension_loaded) ( path: [`String`](class_string.md) ) const[^const] |
-| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`load_extension`](#class_gdextensionmanager_method_load_extension) ( path: [`String`](class_string.md) )                         |
-| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`reload_extension`](#class_gdextensionmanager_method_reload_extension) ( path: [`String`](class_string.md) )                     |
-| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`unload_extension`](#class_gdextensionmanager_method_unload_extension) ( path: [`String`](class_string.md) )                     |
+| [`GDExtension`](class_gdextension.md)             | [`get_extension`](class_gdextensionmanager.md#class_gdextensionmanager_method_get_extension) ( path: [`String`](class_string.md) )                           |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_loaded_extensions`](class_gdextensionmanager.md#class_gdextensionmanager_method_get_loaded_extensions) ( ) const[^const]                               |
+| [`bool`](class_bool.md)                           | [`is_extension_loaded`](class_gdextensionmanager.md#class_gdextensionmanager_method_is_extension_loaded) ( path: [`String`](class_string.md) ) const[^const] |
+| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`load_extension`](class_gdextensionmanager.md#class_gdextensionmanager_method_load_extension) ( path: [`String`](class_string.md) )                         |
+| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`reload_extension`](class_gdextensionmanager.md#class_gdextensionmanager_method_reload_extension) ( path: [`String`](class_string.md) )                     |
+| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`unload_extension`](class_gdextensionmanager.md#class_gdextensionmanager_method_unload_extension) ( path: [`String`](class_string.md) )                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -110,7 +110,7 @@ Returns the file paths of all currently loaded extensions.
 
 [`bool`](class_bool.md) **is_extension_loaded** ( path: [`String`](class_string.md) ) const[^const]<div id="class_gdextensionmanager_method_is_extension_loaded"></div>
 
-Returns `true` if the extension at the given file `path` has already been loaded successfully. See also [`get_loaded_extensions`](#class_gdextensionmanager_method_get_loaded_extensions).
+Returns `true` if the extension at the given file `path` has already been loaded successfully. See also [`get_loaded_extensions`](class_gdextensionmanager.md#class_gdextensionmanager_method_get_loaded_extensions).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -120,7 +120,7 @@ Returns `true` if the extension at the given file `path` has already been loaded
 
 [LoadStatus](#enum_gdextensionmanager_loadstatus) **load_extension** ( path: [`String`](class_string.md) )<div id="class_gdextensionmanager_method_load_extension"></div>
 
-Loads an extension by absolute file path. The `path` needs to point to a valid [`GDExtension`](class_gdextension.md). Returns [`LOAD_STATUS_OK`](#class_gdextensionmanager_constant_load_status_ok) if successful.
+Loads an extension by absolute file path. The `path` needs to point to a valid [`GDExtension`](class_gdextension.md). Returns [`LOAD_STATUS_OK`](class_gdextensionmanager.md#class_gdextensionmanager_constant_load_status_ok) if successful.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -130,9 +130,9 @@ Loads an extension by absolute file path. The `path` needs to point to a valid [
 
 [LoadStatus](#enum_gdextensionmanager_loadstatus) **reload_extension** ( path: [`String`](class_string.md) )<div id="class_gdextensionmanager_method_reload_extension"></div>
 
-Reloads the extension at the given file path. The `path` needs to point to a valid [`GDExtension`](class_gdextension.md), otherwise this method may return either [`LOAD_STATUS_NOT_LOADED`](#class_gdextensionmanager_constant_load_status_not_loaded) or [`LOAD_STATUS_FAILED`](#class_gdextensionmanager_constant_load_status_failed).
+Reloads the extension at the given file path. The `path` needs to point to a valid [`GDExtension`](class_gdextension.md), otherwise this method may return either [`LOAD_STATUS_NOT_LOADED`](class_gdextensionmanager.md#class_gdextensionmanager_constant_load_status_not_loaded) or [`LOAD_STATUS_FAILED`](class_gdextensionmanager.md#class_gdextensionmanager_constant_load_status_failed).
 
- **Note:** You can only reload extensions in the editor. In release builds, this method always fails and returns [`LOAD_STATUS_FAILED`](#class_gdextensionmanager_constant_load_status_failed).
+ **Note:** You can only reload extensions in the editor. In release builds, this method always fails and returns [`LOAD_STATUS_FAILED`](class_gdextensionmanager.md#class_gdextensionmanager_constant_load_status_failed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -142,7 +142,7 @@ Reloads the extension at the given file path. The `path` needs to point to a val
 
 [LoadStatus](#enum_gdextensionmanager_loadstatus) **unload_extension** ( path: [`String`](class_string.md) )<div id="class_gdextensionmanager_method_unload_extension"></div>
 
-Unloads an extension by file path. The `path` needs to point to an already loaded [`GDExtension`](class_gdextension.md), otherwise this method returns [`LOAD_STATUS_NOT_LOADED`](#class_gdextensionmanager_constant_load_status_not_loaded).
+Unloads an extension by file path. The `path` needs to point to an already loaded [`GDExtension`](class_gdextension.md), otherwise this method returns [`LOAD_STATUS_NOT_LOADED`](class_gdextensionmanager.md#class_gdextensionmanager_constant_load_status_not_loaded).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

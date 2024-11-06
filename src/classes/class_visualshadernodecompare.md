@@ -13,15 +13,15 @@ A comparison function for common types within the visual shader graph.
 
 ## 描述
 
-Compares `a` and `b` of [`type`](#class_visualshadernodecompare_property_type) by [`function`](#class_visualshadernodecompare_property_function). Returns a boolean scalar. Translates to `if` instruction in shader code.
+Compares `a` and `b` of [`type`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_type) by [`function`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_function). Returns a boolean scalar. Translates to `if` instruction in shader code.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Condition](#enum_visualshadernodecompare_condition)           | [`condition`](#class_visualshadernodecompare_property_condition) | ``0`` |
-| [Function](#enum_visualshadernodecompare_function)             | [`function`](#class_visualshadernodecompare_property_function)   | ``0`` |
-| [ComparisonType](#enum_visualshadernodecompare_comparisontype) | [`type`](#class_visualshadernodecompare_property_type)           | ``0`` |
+| [Condition](#enum_visualshadernodecompare_condition)           | [`condition`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_condition) | ``0`` |
+| [Function](#enum_visualshadernodecompare_function)             | [`function`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_function)   | ``0`` |
+| [ComparisonType](#enum_visualshadernodecompare_comparisontype) | [`type`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_type)           | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -111,25 +111,25 @@ Comparison for inequality (`a != b`).
 
 [Function](#enum_visualshadernodecompare_function) **FUNC_GREATER_THAN** = ``2``
 
-Comparison for greater than (`a > b`). Cannot be used if [`type`](#class_visualshadernodecompare_property_type) set to [`CTYPE_BOOLEAN`](#class_visualshadernodecompare_constant_ctype_boolean) or [`CTYPE_TRANSFORM`](#class_visualshadernodecompare_constant_ctype_transform).
+Comparison for greater than (`a > b`). Cannot be used if [`type`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_type) set to [`CTYPE_BOOLEAN`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_boolean) or [`CTYPE_TRANSFORM`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_transform).
 
 <div id="_class_visualshadernodecompare_constant_func_greater_than_equal"></div>
 
 [Function](#enum_visualshadernodecompare_function) **FUNC_GREATER_THAN_EQUAL** = ``3``
 
-Comparison for greater than or equal (`a >= b`). Cannot be used if [`type`](#class_visualshadernodecompare_property_type) set to [`CTYPE_BOOLEAN`](#class_visualshadernodecompare_constant_ctype_boolean) or [`CTYPE_TRANSFORM`](#class_visualshadernodecompare_constant_ctype_transform).
+Comparison for greater than or equal (`a >= b`). Cannot be used if [`type`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_type) set to [`CTYPE_BOOLEAN`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_boolean) or [`CTYPE_TRANSFORM`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_transform).
 
 <div id="_class_visualshadernodecompare_constant_func_less_than"></div>
 
 [Function](#enum_visualshadernodecompare_function) **FUNC_LESS_THAN** = ``4``
 
-Comparison for less than (`a < b`). Cannot be used if [`type`](#class_visualshadernodecompare_property_type) set to [`CTYPE_BOOLEAN`](#class_visualshadernodecompare_constant_ctype_boolean) or [`CTYPE_TRANSFORM`](#class_visualshadernodecompare_constant_ctype_transform).
+Comparison for less than (`a < b`). Cannot be used if [`type`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_type) set to [`CTYPE_BOOLEAN`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_boolean) or [`CTYPE_TRANSFORM`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_transform).
 
 <div id="_class_visualshadernodecompare_constant_func_less_than_equal"></div>
 
 [Function](#enum_visualshadernodecompare_function) **FUNC_LESS_THAN_EQUAL** = ``5``
 
-Comparison for less than or equal (`a <= b`). Cannot be used if [`type`](#class_visualshadernodecompare_property_type) set to [`CTYPE_BOOLEAN`](#class_visualshadernodecompare_constant_ctype_boolean) or [`CTYPE_TRANSFORM`](#class_visualshadernodecompare_constant_ctype_transform).
+Comparison for less than or equal (`a <= b`). Cannot be used if [`type`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_type) set to [`CTYPE_BOOLEAN`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_boolean) or [`CTYPE_TRANSFORM`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_transform).
 
 <div id="_class_visualshadernodecompare_constant_func_max"></div>
 
@@ -176,7 +176,7 @@ Represents the size of the [Condition](#enum_visualshadernodecompare_condition) 
 - `void` **set_condition** ( value: [Condition](#enum_visualshadernodecompare_condition) )
 - [Condition](#enum_visualshadernodecompare_condition) **get_condition** ( )
 
-Extra condition which is applied if [`type`](#class_visualshadernodecompare_property_type) is set to [`CTYPE_VECTOR_3D`](#class_visualshadernodecompare_constant_ctype_vector_3d).
+Extra condition which is applied if [`type`](class_visualshadernodecompare.md#class_visualshadernodecompare_property_type) is set to [`CTYPE_VECTOR_3D`](class_visualshadernodecompare.md#class_visualshadernodecompare_constant_ctype_vector_3d).
 
 <!-- rst-class:: classref-item-separator -->
 

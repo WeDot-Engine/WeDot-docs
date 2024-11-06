@@ -15,7 +15,7 @@ Provides a low-level interface for creating parsers for XML files.
 
 Provides a low-level interface for creating parsers for [*XML*](https://en.wikipedia.org/wiki/XML) files. This class can serve as base to make custom XML parsers.
 
-To parse XML, you must open a file with the [`open`](#class_xmlparser_method_open) method or a buffer with the [`open_buffer`](#class_xmlparser_method_open_buffer) method. Then, the [`read`](#class_xmlparser_method_read) method must be called to parse the next nodes. Most of the methods take into consideration the currently parsed node.
+To parse XML, you must open a file with the [`open`](class_xmlparser.md#class_xmlparser_method_open) method or a buffer with the [`open_buffer`](class_xmlparser.md#class_xmlparser_method_open_buffer) method. Then, the [`read`](class_xmlparser.md#class_xmlparser_method_read) method must be called to parse the next nodes. Most of the methods take into consideration the currently parsed node.
 
 Here is an example of using **XMLParser** to parse an SVG file (which is based on XML), printing each element and its attributes as a dictionary:
 
@@ -63,23 +63,23 @@ Here is an example of using **XMLParser** to parse an SVG file (which is based o
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                | [`get_attribute_count`](#class_xmlparser_method_get_attribute_count) ( ) const[^const]                                                         |
-| [`String`](class_string.md)          | [`get_attribute_name`](#class_xmlparser_method_get_attribute_name) ( idx: [`int`](class_int.md) ) const[^const]                                |
-| [`String`](class_string.md)          | [`get_attribute_value`](#class_xmlparser_method_get_attribute_value) ( idx: [`int`](class_int.md) ) const[^const]                              |
-| [`int`](class_int.md)                | [`get_current_line`](#class_xmlparser_method_get_current_line) ( ) const[^const]                                                               |
-| [`String`](class_string.md)          | [`get_named_attribute_value`](#class_xmlparser_method_get_named_attribute_value) ( name: [`String`](class_string.md) ) const[^const]           |
-| [`String`](class_string.md)          | [`get_named_attribute_value_safe`](#class_xmlparser_method_get_named_attribute_value_safe) ( name: [`String`](class_string.md) ) const[^const] |
-| [`String`](class_string.md)          | [`get_node_data`](#class_xmlparser_method_get_node_data) ( ) const[^const]                                                                     |
-| [`String`](class_string.md)          | [`get_node_name`](#class_xmlparser_method_get_node_name) ( ) const[^const]                                                                     |
-| [`int`](class_int.md)                | [`get_node_offset`](#class_xmlparser_method_get_node_offset) ( ) const[^const]                                                                 |
-| [NodeType](#enum_xmlparser_nodetype) | [`get_node_type`](#class_xmlparser_method_get_node_type) ( )                                                                                   |
-| [`bool`](class_bool.md)              | [`has_attribute`](#class_xmlparser_method_has_attribute) ( name: [`String`](class_string.md) ) const[^const]                                   |
-| [`bool`](class_bool.md)              | [`is_empty`](#class_xmlparser_method_is_empty) ( ) const[^const]                                                                               |
-| [Error](#enum_@globalscope_error)    | [`open`](#class_xmlparser_method_open) ( file: [`String`](class_string.md) )                                                                   |
-| [Error](#enum_@globalscope_error)    | [`open_buffer`](#class_xmlparser_method_open_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                 |
-| [Error](#enum_@globalscope_error)    | [`read`](#class_xmlparser_method_read) ( )                                                                                                     |
-| [Error](#enum_@globalscope_error)    | [`seek`](#class_xmlparser_method_seek) ( position: [`int`](class_int.md) )                                                                     |
-| `void`                               | [`skip_section`](#class_xmlparser_method_skip_section) ( )                                                                                     |
+| [`int`](class_int.md)                | [`get_attribute_count`](class_xmlparser.md#class_xmlparser_method_get_attribute_count) ( ) const[^const]                                                         |
+| [`String`](class_string.md)          | [`get_attribute_name`](class_xmlparser.md#class_xmlparser_method_get_attribute_name) ( idx: [`int`](class_int.md) ) const[^const]                                |
+| [`String`](class_string.md)          | [`get_attribute_value`](class_xmlparser.md#class_xmlparser_method_get_attribute_value) ( idx: [`int`](class_int.md) ) const[^const]                              |
+| [`int`](class_int.md)                | [`get_current_line`](class_xmlparser.md#class_xmlparser_method_get_current_line) ( ) const[^const]                                                               |
+| [`String`](class_string.md)          | [`get_named_attribute_value`](class_xmlparser.md#class_xmlparser_method_get_named_attribute_value) ( name: [`String`](class_string.md) ) const[^const]           |
+| [`String`](class_string.md)          | [`get_named_attribute_value_safe`](class_xmlparser.md#class_xmlparser_method_get_named_attribute_value_safe) ( name: [`String`](class_string.md) ) const[^const] |
+| [`String`](class_string.md)          | [`get_node_data`](class_xmlparser.md#class_xmlparser_method_get_node_data) ( ) const[^const]                                                                     |
+| [`String`](class_string.md)          | [`get_node_name`](class_xmlparser.md#class_xmlparser_method_get_node_name) ( ) const[^const]                                                                     |
+| [`int`](class_int.md)                | [`get_node_offset`](class_xmlparser.md#class_xmlparser_method_get_node_offset) ( ) const[^const]                                                                 |
+| [NodeType](#enum_xmlparser_nodetype) | [`get_node_type`](class_xmlparser.md#class_xmlparser_method_get_node_type) ( )                                                                                   |
+| [`bool`](class_bool.md)              | [`has_attribute`](class_xmlparser.md#class_xmlparser_method_has_attribute) ( name: [`String`](class_string.md) ) const[^const]                                   |
+| [`bool`](class_bool.md)              | [`is_empty`](class_xmlparser.md#class_xmlparser_method_is_empty) ( ) const[^const]                                                                               |
+| [Error](#enum_@globalscope_error)    | [`open`](class_xmlparser.md#class_xmlparser_method_open) ( file: [`String`](class_string.md) )                                                                   |
+| [Error](#enum_@globalscope_error)    | [`open_buffer`](class_xmlparser.md#class_xmlparser_method_open_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                 |
+| [Error](#enum_@globalscope_error)    | [`read`](class_xmlparser.md#class_xmlparser_method_read) ( )                                                                                                     |
+| [Error](#enum_@globalscope_error)    | [`seek`](class_xmlparser.md#class_xmlparser_method_seek) ( position: [`int`](class_int.md) )                                                                     |
+| `void`                               | [`skip_section`](class_xmlparser.md#class_xmlparser_method_skip_section) ( )                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -145,7 +145,7 @@ An unknown node type.
 
 Returns the number of attributes in the currently parsed element.
 
- **Note:** If this method is used while the currently parsed node is not [`NODE_ELEMENT`](#class_xmlparser_constant_node_element) or [`NODE_ELEMENT_END`](#class_xmlparser_constant_node_element_end), this count will not be updated and will still reflect the last element.
+ **Note:** If this method is used while the currently parsed node is not [`NODE_ELEMENT`](class_xmlparser.md#class_xmlparser_constant_node_element) or [`NODE_ELEMENT_END`](class_xmlparser.md#class_xmlparser_constant_node_element_end), this count will not be updated and will still reflect the last element.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -217,7 +217,7 @@ Returns the contents of a text node. This method will raise an error if the curr
 
 Returns the name of a node. This method will raise an error if the currently parsed node is a text node.
 
- **Note:** The content of a [`NODE_CDATA`](#class_xmlparser_constant_node_cdata) node and the comment string of a [`NODE_COMMENT`](#class_xmlparser_constant_node_comment) node are also considered names.
+ **Note:** The content of a [`NODE_CDATA`](class_xmlparser.md#class_xmlparser_constant_node_cdata) node and the comment string of a [`NODE_COMMENT`](class_xmlparser.md#class_xmlparser_constant_node_comment) node are also considered names.
 
 <!-- rst-class:: classref-item-separator -->
 

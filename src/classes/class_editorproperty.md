@@ -19,26 +19,26 @@ A custom control for editing properties that can be added to the [`EditorInspect
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | [`checkable`](#class_editorproperty_property_checkable)       | ``false`` |
-| [`bool`](class_bool.md)     | [`checked`](#class_editorproperty_property_checked)           | ``false`` |
-| [`bool`](class_bool.md)     | [`deletable`](#class_editorproperty_property_deletable)       | ``false`` |
-| [`bool`](class_bool.md)     | [`draw_warning`](#class_editorproperty_property_draw_warning) | ``false`` |
-| [`bool`](class_bool.md)     | [`keying`](#class_editorproperty_property_keying)             | ``false`` |
-| [`String`](class_string.md) | [`label`](#class_editorproperty_property_label)               | ``""``    |
-| [`bool`](class_bool.md)     | [`read_only`](#class_editorproperty_property_read_only)       | ``false`` |
+| [`bool`](class_bool.md)     | [`checkable`](class_editorproperty.md#class_editorproperty_property_checkable)       | ``false`` |
+| [`bool`](class_bool.md)     | [`checked`](class_editorproperty.md#class_editorproperty_property_checked)           | ``false`` |
+| [`bool`](class_bool.md)     | [`deletable`](class_editorproperty.md#class_editorproperty_property_deletable)       | ``false`` |
+| [`bool`](class_bool.md)     | [`draw_warning`](class_editorproperty.md#class_editorproperty_property_draw_warning) | ``false`` |
+| [`bool`](class_bool.md)     | [`keying`](class_editorproperty.md#class_editorproperty_property_keying)             | ``false`` |
+| [`String`](class_string.md) | [`label`](class_editorproperty.md#class_editorproperty_property_label)               | ``""``    |
+| [`bool`](class_bool.md)     | [`read_only`](class_editorproperty.md#class_editorproperty_property_read_only)       | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                              | [`_set_read_only`](#class_editorproperty_private_method__set_read_only) ( read_only: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                 |
-| `void`                              | [`_update_property`](#class_editorproperty_private_method__update_property) ( ) virtual[^virtual]                                                                                                                                                |
-| `void`                              | [`add_focusable`](#class_editorproperty_method_add_focusable) ( control: [`Control`](class_control.md) )                                                                                                                                         |
-| `void`                              | [`emit_changed`](#class_editorproperty_method_emit_changed) ( property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md), field: [`StringName`](class_stringname.md) = &"", changing: [`bool`](class_bool.md) = false ) |
-| [`Object`](class_object.md)         | [`get_edited_object`](#class_editorproperty_method_get_edited_object) ( )                                                                                                                                                                        |
-| [`StringName`](class_stringname.md) | [`get_edited_property`](#class_editorproperty_method_get_edited_property) ( ) const[^const]                                                                                                                                                      |
-| `void`                              | [`set_bottom_editor`](#class_editorproperty_method_set_bottom_editor) ( editor: [`Control`](class_control.md) )                                                                                                                                  |
-| `void`                              | [`update_property`](#class_editorproperty_method_update_property) ( )                                                                                                                                                                            |
+| `void`                              | [`_set_read_only`](class_editorproperty.md#class_editorproperty_private_method__set_read_only) ( read_only: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                 |
+| `void`                              | [`_update_property`](class_editorproperty.md#class_editorproperty_private_method__update_property) ( ) virtual[^virtual]                                                                                                                                                |
+| `void`                              | [`add_focusable`](class_editorproperty.md#class_editorproperty_method_add_focusable) ( control: [`Control`](class_control.md) )                                                                                                                                         |
+| `void`                              | [`emit_changed`](class_editorproperty.md#class_editorproperty_method_emit_changed) ( property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md), field: [`StringName`](class_stringname.md) = &"", changing: [`bool`](class_bool.md) = false ) |
+| [`Object`](class_object.md)         | [`get_edited_object`](class_editorproperty.md#class_editorproperty_method_get_edited_object) ( )                                                                                                                                                                        |
+| [`StringName`](class_stringname.md) | [`get_edited_property`](class_editorproperty.md#class_editorproperty_method_get_edited_property) ( ) const[^const]                                                                                                                                                      |
+| `void`                              | [`set_bottom_editor`](class_editorproperty.md#class_editorproperty_method_set_bottom_editor) ( editor: [`Control`](class_control.md) )                                                                                                                                  |
+| `void`                              | [`update_property`](class_editorproperty.md#class_editorproperty_method_update_property) ( )                                                                                                                                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -50,7 +50,7 @@ A custom control for editing properties that can be added to the [`EditorInspect
 
 **multiple_properties_changed** ( properties: [`PackedStringArray`](class_packedstringarray.md), value: [`Array`](class_array.md) ) <div id="class_editorproperty_signal_multiple_properties_changed"></div>
 
-Emit it if you want multiple properties modified at the same time. Do not use if added via [`EditorInspectorPlugin._parse_property`](#class_editorinspectorplugin_private_method__parse_property).
+Emit it if you want multiple properties modified at the same time. Do not use if added via [`EditorInspectorPlugin._parse_property`](class_editorinspectorplugin.md#class_editorinspectorplugin_private_method__parse_property).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -80,7 +80,7 @@ Emitted when the revertability (i.e., whether it has a non-default value and thu
 
 **property_changed** ( property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md), field: [`StringName`](class_stringname.md), changing: [`bool`](class_bool.md) ) <div id="class_editorproperty_signal_property_changed"></div>
 
-Do not emit this manually, use the [`emit_changed`](#class_editorproperty_method_emit_changed) method instead.
+Do not emit this manually, use the [`emit_changed`](class_editorproperty.md#class_editorproperty_method_emit_changed) method instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -307,7 +307,7 @@ Gets the edited object.
 
 [`StringName`](class_stringname.md) **get_edited_property** ( ) const[^const]<div id="class_editorproperty_method_get_edited_property"></div>
 
-Gets the edited property. If your editor is for a single property (added via [`EditorInspectorPlugin._parse_property`](#class_editorinspectorplugin_private_method__parse_property)), then this will return the property.
+Gets the edited property. If your editor is for a single property (added via [`EditorInspectorPlugin._parse_property`](class_editorinspectorplugin.md#class_editorinspectorplugin_private_method__parse_property)), then this will return the property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -317,7 +317,7 @@ Gets the edited property. If your editor is for a single property (added via [`E
 
 `void` **set_bottom_editor** ( editor: [`Control`](class_control.md) )<div id="class_editorproperty_method_set_bottom_editor"></div>
 
-Puts the `editor` control below the property label. The control must be previously added using [`Node.add_child`](#class_node_method_add_child).
+Puts the `editor` control below the property label. The control must be previously added using [`Node.add_child`](class_node.md#class_node_method_add_child).
 
 <!-- rst-class:: classref-item-separator -->
 

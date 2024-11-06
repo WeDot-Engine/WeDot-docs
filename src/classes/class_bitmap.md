@@ -19,19 +19,19 @@ A two-dimensional array of boolean values, can be used to efficiently store a bi
 
 |||
 |:-:|:--|
-| [`Image`](class_image.md)                                                   | [`convert_to_image`](#class_bitmap_method_convert_to_image) ( ) const[^const]                                                                                 |
-| `void`                                                                      | [`create`](#class_bitmap_method_create) ( size: [`Vector2i`](class_vector2i.md) )                                                                             |
-| `void`                                                                      | [`create_from_image_alpha`](#class_bitmap_method_create_from_image_alpha) ( image: [`Image`](class_image.md), threshold: [`float`](class_float.md) = 0.1 )    |
-| [`bool`](class_bool.md)                                                     | [`get_bit`](#class_bitmap_method_get_bit) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]                                                |
-| [`bool`](class_bool.md)                                                     | [`get_bitv`](#class_bitmap_method_get_bitv) ( position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                       |
-| [`Vector2i`](class_vector2i.md)                                             | [`get_size`](#class_bitmap_method_get_size) ( ) const[^const]                                                                                                 |
-| [`int`](class_int.md)                                                       | [`get_true_bit_count`](#class_bitmap_method_get_true_bit_count) ( ) const[^const]                                                                             |
-| `void`                                                                      | [`grow_mask`](#class_bitmap_method_grow_mask) ( pixels: [`int`](class_int.md), rect: [`Rect2i`](class_rect2i.md) )                                            |
-| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`opaque_to_polygons`](#class_bitmap_method_opaque_to_polygons) ( rect: [`Rect2i`](class_rect2i.md), epsilon: [`float`](class_float.md) = 2.0 ) const[^const] |
-| `void`                                                                      | [`resize`](#class_bitmap_method_resize) ( new_size: [`Vector2i`](class_vector2i.md) )                                                                         |
-| `void`                                                                      | [`set_bit`](#class_bitmap_method_set_bit) ( x: [`int`](class_int.md), y: [`int`](class_int.md), bit: [`bool`](class_bool.md) )                                |
-| `void`                                                                      | [`set_bit_rect`](#class_bitmap_method_set_bit_rect) ( rect: [`Rect2i`](class_rect2i.md), bit: [`bool`](class_bool.md) )                                       |
-| `void`                                                                      | [`set_bitv`](#class_bitmap_method_set_bitv) ( position: [`Vector2i`](class_vector2i.md), bit: [`bool`](class_bool.md) )                                       |
+| [`Image`](class_image.md)                                                   | [`convert_to_image`](class_bitmap.md#class_bitmap_method_convert_to_image) ( ) const[^const]                                                                                 |
+| `void`                                                                      | [`create`](class_bitmap.md#class_bitmap_method_create) ( size: [`Vector2i`](class_vector2i.md) )                                                                             |
+| `void`                                                                      | [`create_from_image_alpha`](class_bitmap.md#class_bitmap_method_create_from_image_alpha) ( image: [`Image`](class_image.md), threshold: [`float`](class_float.md) = 0.1 )    |
+| [`bool`](class_bool.md)                                                     | [`get_bit`](class_bitmap.md#class_bitmap_method_get_bit) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]                                                |
+| [`bool`](class_bool.md)                                                     | [`get_bitv`](class_bitmap.md#class_bitmap_method_get_bitv) ( position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                       |
+| [`Vector2i`](class_vector2i.md)                                             | [`get_size`](class_bitmap.md#class_bitmap_method_get_size) ( ) const[^const]                                                                                                 |
+| [`int`](class_int.md)                                                       | [`get_true_bit_count`](class_bitmap.md#class_bitmap_method_get_true_bit_count) ( ) const[^const]                                                                             |
+| `void`                                                                      | [`grow_mask`](class_bitmap.md#class_bitmap_method_grow_mask) ( pixels: [`int`](class_int.md), rect: [`Rect2i`](class_rect2i.md) )                                            |
+| [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`opaque_to_polygons`](class_bitmap.md#class_bitmap_method_opaque_to_polygons) ( rect: [`Rect2i`](class_rect2i.md), epsilon: [`float`](class_float.md) = 2.0 ) const[^const] |
+| `void`                                                                      | [`resize`](class_bitmap.md#class_bitmap_method_resize) ( new_size: [`Vector2i`](class_vector2i.md) )                                                                         |
+| `void`                                                                      | [`set_bit`](class_bitmap.md#class_bitmap_method_set_bit) ( x: [`int`](class_int.md), y: [`int`](class_int.md), bit: [`bool`](class_bool.md) )                                |
+| `void`                                                                      | [`set_bit_rect`](class_bitmap.md#class_bitmap_method_set_bit_rect) ( rect: [`Rect2i`](class_rect2i.md), bit: [`bool`](class_bool.md) )                                       |
+| `void`                                                                      | [`set_bitv`](class_bitmap.md#class_bitmap_method_set_bitv) ( position: [`Vector2i`](class_vector2i.md), bit: [`bool`](class_bool.md) )                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -43,7 +43,7 @@ A two-dimensional array of boolean values, can be used to efficiently store a bi
 
 [`Image`](class_image.md) **convert_to_image** ( ) const[^const]<div id="class_bitmap_method_convert_to_image"></div>
 
-Returns an image of the same size as the bitmap and with a [Format](#enum_image_format) of type [`Image.FORMAT_L8`](#class_image_constant_format_l8). `true` bits of the bitmap are being converted into white pixels, and `false` bits into black.
+Returns an image of the same size as the bitmap and with a [Format](#enum_image_format) of type [`Image.FORMAT_L8`](class_image.md#class_image_constant_format_l8). `true` bits of the bitmap are being converted into white pixels, and `false` bits into black.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -113,7 +113,7 @@ Returns the number of bitmap elements that are set to `true`.
 
 `void` **grow_mask** ( pixels: [`int`](class_int.md), rect: [`Rect2i`](class_rect2i.md) )<div id="class_bitmap_method_grow_mask"></div>
 
-Applies morphological dilation or erosion to the bitmap. If `pixels` is positive, dilation is applied to the bitmap. If `pixels` is negative, erosion is applied to the bitmap. `rect` defines the area where the morphological operation is applied. Pixels located outside the `rect` are unaffected by [`grow_mask`](#class_bitmap_method_grow_mask).
+Applies morphological dilation or erosion to the bitmap. If `pixels` is positive, dilation is applied to the bitmap. If `pixels` is negative, erosion is applied to the bitmap. `rect` defines the area where the morphological operation is applied. Pixels located outside the `rect` are unaffected by [`grow_mask`](class_bitmap.md#class_bitmap_method_grow_mask).
 
 <!-- rst-class:: classref-item-separator -->
 

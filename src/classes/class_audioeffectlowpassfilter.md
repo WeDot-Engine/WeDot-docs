@@ -13,7 +13,7 @@ Adds a low-pass filter to the audio bus.
 
 ## 描述
 
-Cuts frequencies higher than the [`AudioEffectFilter.cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz) and allows lower frequencies to pass.
+Cuts frequencies higher than the [`AudioEffectFilter.cutoff_hz`](class_audioeffectfilter.md#class_audioeffectfilter_property_cutoff_hz) and allows lower frequencies to pass.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

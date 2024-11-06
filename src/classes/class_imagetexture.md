@@ -13,7 +13,7 @@ A [`Texture2D`](class_texture2d.md) based on an [`Image`](class_image.md).
 
 ## 描述
 
-A [`Texture2D`](class_texture2d.md) based on an [`Image`](class_image.md). For an image to be displayed, an **ImageTexture** has to be created from it using the [`create_from_image`](#class_imagetexture_method_create_from_image) method:
+A [`Texture2D`](class_texture2d.md) based on an [`Image`](class_image.md). For an image to be displayed, an **ImageTexture** has to be created from it using the [`create_from_image`](class_imagetexture.md#class_imagetexture_method_create_from_image) method:
 
 ```
 
@@ -24,7 +24,7 @@ A [`Texture2D`](class_texture2d.md) based on an [`Image`](class_image.md). For a
 
 This way, textures can be created at run-time by loading images both from within the editor and externally.
 
- **Warning:** Prefer to load imported textures with [`@GDScript.load`](#class_@gdscript_method_load) over loading them from within the filesystem dynamically with [`Image.load`](#class_image_method_load), as it may not work in exported projects:
+ **Warning:** Prefer to load imported textures with [`@GDScript.load`](class_@gdscript.md#class_@gdscript_method_load) over loading them from within the filesystem dynamically with [`Image.load`](class_image.md#class_image_method_load), as it may not work in exported projects:
 
 ```
 
@@ -32,9 +32,9 @@ This way, textures can be created at run-time by loading images both from within
     $Sprite2D.texture = texture
 ```
 
-This is because images have to be imported as a [`CompressedTexture2D`](class_compressedtexture2d.md) first to be loaded with [`@GDScript.load`](#class_@gdscript_method_load). If you'd still like to load an image file just like any other [`Resource`](class_resource.md), import it as an [`Image`](class_image.md) resource instead, and then load it normally using the [`@GDScript.load`](#class_@gdscript_method_load) method.
+This is because images have to be imported as a [`CompressedTexture2D`](class_compressedtexture2d.md) first to be loaded with [`@GDScript.load`](class_@gdscript.md#class_@gdscript_method_load). If you'd still like to load an image file just like any other [`Resource`](class_resource.md), import it as an [`Image`](class_image.md) resource instead, and then load it normally using the [`@GDScript.load`](class_@gdscript.md#class_@gdscript_method_load) method.
 
- **Note:** The image can be retrieved from an imported texture using the [`Texture2D.get_image`](#class_texture2d_method_get_image) method, which returns a copy of the image:
+ **Note:** The image can be retrieved from an imported texture using the [`Texture2D.get_image`](class_texture2d.md#class_texture2d_method_get_image) method, which returns a copy of the image:
 
 ```
 
@@ -56,17 +56,17 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | resource_local_to_scene | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
+| [`bool`](class_bool.md) | resource_local_to_scene | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`ImageTexture`](class_imagetexture.md) | [`create_from_image`](#class_imagetexture_method_create_from_image) ( image: [`Image`](class_image.md) ) static[^static] |
-| [Format](#enum_image_format)            | [`get_format`](#class_imagetexture_method_get_format) ( ) const[^const]                                                  |
-| `void`                                  | [`set_image`](#class_imagetexture_method_set_image) ( image: [`Image`](class_image.md) )                                 |
-| `void`                                  | [`set_size_override`](#class_imagetexture_method_set_size_override) ( size: [`Vector2i`](class_vector2i.md) )            |
-| `void`                                  | [`update`](#class_imagetexture_method_update) ( image: [`Image`](class_image.md) )                                       |
+| [`ImageTexture`](class_imagetexture.md) | [`create_from_image`](class_imagetexture.md#class_imagetexture_method_create_from_image) ( image: [`Image`](class_image.md) ) static[^static] |
+| [Format](#enum_image_format)            | [`get_format`](class_imagetexture.md#class_imagetexture_method_get_format) ( ) const[^const]                                                  |
+| `void`                                  | [`set_image`](class_imagetexture.md#class_imagetexture_method_set_image) ( image: [`Image`](class_image.md) )                                 |
+| `void`                                  | [`set_size_override`](class_imagetexture.md#class_imagetexture_method_set_size_override) ( size: [`Vector2i`](class_vector2i.md) )            |
+| `void`                                  | [`update`](class_imagetexture.md#class_imagetexture_method_update) ( image: [`Image`](class_image.md) )                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -100,7 +100,7 @@ Returns the format of the texture, one of [Format](#enum_image_format).
 
 Replaces the texture's data with a new [`Image`](class_image.md). This will re-allocate new memory for the texture.
 
-If you want to update the image, but don't need to change its parameters (format, size), use [`update`](#class_imagetexture_method_update) instead for better performance.
+If you want to update the image, but don't need to change its parameters (format, size), use [`update`](class_imagetexture.md#class_imagetexture_method_update) instead for better performance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -122,9 +122,9 @@ Resizes the texture to the specified dimensions.
 
 Replaces the texture's data with a new [`Image`](class_image.md).
 
- **Note:** The texture has to be created using [`create_from_image`](#class_imagetexture_method_create_from_image) or initialized first with the [`set_image`](#class_imagetexture_method_set_image) method before it can be updated. The new image dimensions, format, and mipmaps configuration should match the existing texture's image configuration.
+ **Note:** The texture has to be created using [`create_from_image`](class_imagetexture.md#class_imagetexture_method_create_from_image) or initialized first with the [`set_image`](class_imagetexture.md#class_imagetexture_method_set_image) method before it can be updated. The new image dimensions, format, and mipmaps configuration should match the existing texture's image configuration.
 
-Use this method over [`set_image`](#class_imagetexture_method_set_image) if you need to update the texture frequently, which is faster than allocating additional memory for a new texture each time.
+Use this method over [`set_image`](class_imagetexture.md#class_imagetexture_method_set_image) if you need to update the texture frequently, which is faster than allocating additional memory for a new texture each time.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

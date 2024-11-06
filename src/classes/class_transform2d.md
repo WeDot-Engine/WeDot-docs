@@ -11,13 +11,13 @@ A 2×3 matrix representing a 2D transformation.
 
 ## 描述
 
-The **Transform2D** built-in [`Variant`](class_variant.md) type is a 2×3 [*matrix*](https://en.wikipedia.org/wiki/Matrix_(mathematics)) representing a transformation in 2D space. It contains three [`Vector2`](class_vector2.md) values: [`x`](#class_transform2d_property_x), [`y`](#class_transform2d_property_y), and [`origin`](#class_transform2d_property_origin). Together, they can represent translation, rotation, scale, and skew.
+The **Transform2D** built-in [`Variant`](class_variant.md) type is a 2×3 [*matrix*](https://en.wikipedia.org/wiki/Matrix_(mathematics)) representing a transformation in 2D space. It contains three [`Vector2`](class_vector2.md) values: [`x`](class_transform2d.md#class_transform2d_property_x), [`y`](class_transform2d.md#class_transform2d_property_y), and [`origin`](class_transform2d.md#class_transform2d_property_origin). Together, they can represent translation, rotation, scale, and skew.
 
-The [`x`](#class_transform2d_property_x) and [`y`](#class_transform2d_property_y) axes form a 2×2 matrix, known as the transform's **basis**. The length of each axis ([`Vector2.length`](#class_vector2_method_length)) influences the transform's scale, while the direction of all axes influence the rotation. Usually, both axes are perpendicular to one another. However, when you rotate one axis individually, the transform becomes skewed. Applying a skewed transform to a 2D sprite will make the sprite appear distorted.
+The [`x`](class_transform2d.md#class_transform2d_property_x) and [`y`](class_transform2d.md#class_transform2d_property_y) axes form a 2×2 matrix, known as the transform's **basis**. The length of each axis ([`Vector2.length`](class_vector2.md#class_vector2_method_length)) influences the transform's scale, while the direction of all axes influence the rotation. Usually, both axes are perpendicular to one another. However, when you rotate one axis individually, the transform becomes skewed. Applying a skewed transform to a 2D sprite will make the sprite appear distorted.
 
 For a general introduction, see the [*Matrices and transforms*](../tutorials/math/matrices_and_transforms) tutorial.
 
- **Note:** Unlike [`Transform3D`](class_transform3d.md), there is no 2D equivalent to the [`Basis`](class_basis.md) type. All mentions of "basis" refer to the [`x`](#class_transform2d_property_x) and [`y`](#class_transform2d_property_y) components of **Transform2D**.
+ **Note:** Unlike [`Transform3D`](class_transform3d.md), there is no 2D equivalent to the [`Basis`](class_basis.md) type. All mentions of "basis" refer to the [`x`](class_transform2d.md#class_transform2d_property_x) and [`y`](class_transform2d.md#class_transform2d_property_y) components of **Transform2D**.
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
@@ -25,45 +25,45 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`origin`](#class_transform2d_property_origin) | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md) | [`x`](#class_transform2d_property_x)           | ``Vector2(1, 0)`` |
-| [`Vector2`](class_vector2.md) | [`y`](#class_transform2d_property_y)           | ``Vector2(0, 1)`` |
+| [`Vector2`](class_vector2.md) | [`origin`](class_transform2d.md#class_transform2d_property_origin) | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`x`](class_transform2d.md#class_transform2d_property_x)           | ``Vector2(1, 0)`` |
+| [`Vector2`](class_vector2.md) | [`y`](class_transform2d.md#class_transform2d_property_y)           | ``Vector2(0, 1)`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( )                                                                                                                                                     |
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( from: [`Transform2D`](class_transform2d.md) )                                                                                                         |
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) )                                                                        |
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), scale: [`Vector2`](class_vector2.md), skew: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) ) |
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( x_axis: [`Vector2`](class_vector2.md), y_axis: [`Vector2`](class_vector2.md), origin: [`Vector2`](class_vector2.md) )                                 |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( )                                                                                                                                                     |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( from: [`Transform2D`](class_transform2d.md) )                                                                                                         |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) )                                                                        |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), scale: [`Vector2`](class_vector2.md), skew: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) ) |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( x_axis: [`Vector2`](class_vector2.md), y_axis: [`Vector2`](class_vector2.md), origin: [`Vector2`](class_vector2.md) )                                 |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Transform2D`](class_transform2d.md) | [`affine_inverse`](#class_transform2d_method_affine_inverse) ( ) const[^const]                                                                                     |
-| [`Vector2`](class_vector2.md)         | [`basis_xform`](#class_transform2d_method_basis_xform) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                          |
-| [`Vector2`](class_vector2.md)         | [`basis_xform_inv`](#class_transform2d_method_basis_xform_inv) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                  |
-| [`float`](class_float.md)             | [`determinant`](#class_transform2d_method_determinant) ( ) const[^const]                                                                                           |
-| [`Vector2`](class_vector2.md)         | [`get_origin`](#class_transform2d_method_get_origin) ( ) const[^const]                                                                                             |
-| [`float`](class_float.md)             | [`get_rotation`](#class_transform2d_method_get_rotation) ( ) const[^const]                                                                                         |
-| [`Vector2`](class_vector2.md)         | [`get_scale`](#class_transform2d_method_get_scale) ( ) const[^const]                                                                                               |
-| [`float`](class_float.md)             | [`get_skew`](#class_transform2d_method_get_skew) ( ) const[^const]                                                                                                 |
-| [`Transform2D`](class_transform2d.md) | [`interpolate_with`](#class_transform2d_method_interpolate_with) ( xform: [`Transform2D`](class_transform2d.md), weight: [`float`](class_float.md) ) const[^const] |
-| [`Transform2D`](class_transform2d.md) | [`inverse`](#class_transform2d_method_inverse) ( ) const[^const]                                                                                                   |
-| [`bool`](class_bool.md)               | [`is_conformal`](#class_transform2d_method_is_conformal) ( ) const[^const]                                                                                         |
-| [`bool`](class_bool.md)               | [`is_equal_approx`](#class_transform2d_method_is_equal_approx) ( xform: [`Transform2D`](class_transform2d.md) ) const[^const]                                      |
-| [`bool`](class_bool.md)               | [`is_finite`](#class_transform2d_method_is_finite) ( ) const[^const]                                                                                               |
-| [`Transform2D`](class_transform2d.md) | [`looking_at`](#class_transform2d_method_looking_at) ( target: [`Vector2`](class_vector2.md) = Vector2(0, 0) ) const[^const]                                       |
-| [`Transform2D`](class_transform2d.md) | [`orthonormalized`](#class_transform2d_method_orthonormalized) ( ) const[^const]                                                                                   |
-| [`Transform2D`](class_transform2d.md) | [`rotated`](#class_transform2d_method_rotated) ( angle: [`float`](class_float.md) ) const[^const]                                                                  |
-| [`Transform2D`](class_transform2d.md) | [`rotated_local`](#class_transform2d_method_rotated_local) ( angle: [`float`](class_float.md) ) const[^const]                                                      |
-| [`Transform2D`](class_transform2d.md) | [`scaled`](#class_transform2d_method_scaled) ( scale: [`Vector2`](class_vector2.md) ) const[^const]                                                                |
-| [`Transform2D`](class_transform2d.md) | [`scaled_local`](#class_transform2d_method_scaled_local) ( scale: [`Vector2`](class_vector2.md) ) const[^const]                                                    |
-| [`Transform2D`](class_transform2d.md) | [`translated`](#class_transform2d_method_translated) ( offset: [`Vector2`](class_vector2.md) ) const[^const]                                                       |
-| [`Transform2D`](class_transform2d.md) | [`translated_local`](#class_transform2d_method_translated_local) ( offset: [`Vector2`](class_vector2.md) ) const[^const]                                           |
+| [`Transform2D`](class_transform2d.md) | [`affine_inverse`](class_transform2d.md#class_transform2d_method_affine_inverse) ( ) const[^const]                                                                                     |
+| [`Vector2`](class_vector2.md)         | [`basis_xform`](class_transform2d.md#class_transform2d_method_basis_xform) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                          |
+| [`Vector2`](class_vector2.md)         | [`basis_xform_inv`](class_transform2d.md#class_transform2d_method_basis_xform_inv) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                  |
+| [`float`](class_float.md)             | [`determinant`](class_transform2d.md#class_transform2d_method_determinant) ( ) const[^const]                                                                                           |
+| [`Vector2`](class_vector2.md)         | [`get_origin`](class_transform2d.md#class_transform2d_method_get_origin) ( ) const[^const]                                                                                             |
+| [`float`](class_float.md)             | [`get_rotation`](class_transform2d.md#class_transform2d_method_get_rotation) ( ) const[^const]                                                                                         |
+| [`Vector2`](class_vector2.md)         | [`get_scale`](class_transform2d.md#class_transform2d_method_get_scale) ( ) const[^const]                                                                                               |
+| [`float`](class_float.md)             | [`get_skew`](class_transform2d.md#class_transform2d_method_get_skew) ( ) const[^const]                                                                                                 |
+| [`Transform2D`](class_transform2d.md) | [`interpolate_with`](class_transform2d.md#class_transform2d_method_interpolate_with) ( xform: [`Transform2D`](class_transform2d.md), weight: [`float`](class_float.md) ) const[^const] |
+| [`Transform2D`](class_transform2d.md) | [`inverse`](class_transform2d.md#class_transform2d_method_inverse) ( ) const[^const]                                                                                                   |
+| [`bool`](class_bool.md)               | [`is_conformal`](class_transform2d.md#class_transform2d_method_is_conformal) ( ) const[^const]                                                                                         |
+| [`bool`](class_bool.md)               | [`is_equal_approx`](class_transform2d.md#class_transform2d_method_is_equal_approx) ( xform: [`Transform2D`](class_transform2d.md) ) const[^const]                                      |
+| [`bool`](class_bool.md)               | [`is_finite`](class_transform2d.md#class_transform2d_method_is_finite) ( ) const[^const]                                                                                               |
+| [`Transform2D`](class_transform2d.md) | [`looking_at`](class_transform2d.md#class_transform2d_method_looking_at) ( target: [`Vector2`](class_vector2.md) = Vector2(0, 0) ) const[^const]                                       |
+| [`Transform2D`](class_transform2d.md) | [`orthonormalized`](class_transform2d.md#class_transform2d_method_orthonormalized) ( ) const[^const]                                                                                   |
+| [`Transform2D`](class_transform2d.md) | [`rotated`](class_transform2d.md#class_transform2d_method_rotated) ( angle: [`float`](class_float.md) ) const[^const]                                                                  |
+| [`Transform2D`](class_transform2d.md) | [`rotated_local`](class_transform2d.md#class_transform2d_method_rotated_local) ( angle: [`float`](class_float.md) ) const[^const]                                                      |
+| [`Transform2D`](class_transform2d.md) | [`scaled`](class_transform2d.md#class_transform2d_method_scaled) ( scale: [`Vector2`](class_vector2.md) ) const[^const]                                                                |
+| [`Transform2D`](class_transform2d.md) | [`scaled_local`](class_transform2d.md#class_transform2d_method_scaled_local) ( scale: [`Vector2`](class_vector2.md) ) const[^const]                                                    |
+| [`Transform2D`](class_transform2d.md) | [`translated`](class_transform2d.md#class_transform2d_method_translated) ( offset: [`Vector2`](class_vector2.md) ) const[^const]                                                       |
+| [`Transform2D`](class_transform2d.md) | [`translated_local`](class_transform2d.md#class_transform2d_method_translated_local) ( offset: [`Vector2`](class_vector2.md) ) const[^const]                                           |
 
 ## 运算符
 
@@ -93,9 +93,9 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 The identity **Transform2D**. A transform with no translation, no rotation, and its scale being `1`. When multiplied by another [`Variant`](class_variant.md) such as [`Rect2`](class_rect2.md) or another **Transform2D**, no transformation occurs. This means that:
 
-- The [`x`](#class_transform2d_property_x) points right ([`Vector2.RIGHT`](#class_vector2_constant_right));
+- The [`x`](class_transform2d.md#class_transform2d_property_x) points right ([`Vector2.RIGHT`](class_vector2.md#class_vector2_constant_right));
 
-- The [`y`](#class_transform2d_property_y) points up ([`Vector2.UP`](#class_vector2_constant_up)).
+- The [`y`](class_transform2d.md#class_transform2d_property_y) points up ([`Vector2.UP`](class_vector2.md#class_vector2_constant_up)).
 
 ```
 
@@ -109,7 +109,7 @@ The identity **Transform2D**. A transform with no translation, no rotation, and 
     # | 0 | 1 | 0
 ```
 
-This is identical to creating [`Transform2D`](#class_transform2d_constructor_transform2d) without any parameters. This constant can be used to make your code clearer, and for consistency with C#.
+This is identical to creating [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) without any parameters. This constant can be used to make your code clearer, and for consistency with C#.
 
 
 
@@ -117,17 +117,17 @@ This is identical to creating [`Transform2D`](#class_transform2d_constructor_tra
 
 **FLIP_X** = ``Transform2D(-1, 0, 0, 1, 0, 0)`` <div id="class_transform2d_constant_flip_x"></div>
 
-When any transform is multiplied by [`FLIP_X`](#class_transform2d_constant_flip_x), it negates all components of the [`x`](#class_transform2d_property_x) axis (the X column).
+When any transform is multiplied by [`FLIP_X`](class_transform2d.md#class_transform2d_constant_flip_x), it negates all components of the [`x`](class_transform2d.md#class_transform2d_property_x) axis (the X column).
 
-When [`FLIP_X`](#class_transform2d_constant_flip_x) is multiplied by any basis, it negates the [`Vector2.x`](#class_vector2_property_x) component of all axes (the X row).
+When [`FLIP_X`](class_transform2d.md#class_transform2d_constant_flip_x) is multiplied by any basis, it negates the [`Vector2.x`](class_vector2.md#class_vector2_property_x) component of all axes (the X row).
 
 <div id="_class_transform2d_constant_flip_y"></div>
 
 **FLIP_Y** = ``Transform2D(1, 0, 0, -1, 0, 0)`` <div id="class_transform2d_constant_flip_y"></div>
 
-When any transform is multiplied by [`FLIP_Y`](#class_transform2d_constant_flip_y), it negates all components of the [`y`](#class_transform2d_property_y) axis (the Y column).
+When any transform is multiplied by [`FLIP_Y`](class_transform2d.md#class_transform2d_constant_flip_y), it negates all components of the [`y`](class_transform2d.md#class_transform2d_property_y) axis (the Y column).
 
-When [`FLIP_Y`](#class_transform2d_constant_flip_y) is multiplied by any basis, it negates the [`Vector2.y`](#class_vector2_property_y) component of all axes (the Y row).
+When [`FLIP_Y`](class_transform2d.md#class_transform2d_constant_flip_y) is multiplied by any basis, it negates the [`Vector2.y`](class_vector2.md#class_vector2_property_y) component of all axes (the Y row).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -149,9 +149,9 @@ The translation offset of this transform, and the column `2` of the matrix. In 2
 
 [`Vector2`](class_vector2.md) **x** = ``Vector2(1, 0)`` <div id="class_transform2d_property_x"></div>
 
-The transform basis's X axis, and the column `0` of the matrix. Combined with [`y`](#class_transform2d_property_y), this represents the transform's rotation, scale, and skew.
+The transform basis's X axis, and the column `0` of the matrix. Combined with [`y`](class_transform2d.md#class_transform2d_property_y), this represents the transform's rotation, scale, and skew.
 
-On the identity transform, this vector points right ([`Vector2.RIGHT`](#class_vector2_constant_right)).
+On the identity transform, this vector points right ([`Vector2.RIGHT`](class_vector2.md#class_vector2_constant_right)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -161,9 +161,9 @@ On the identity transform, this vector points right ([`Vector2.RIGHT`](#class_ve
 
 [`Vector2`](class_vector2.md) **y** = ``Vector2(0, 1)`` <div id="class_transform2d_property_y"></div>
 
-The transform basis's Y axis, and the column `1` of the matrix. Combined with [`x`](#class_transform2d_property_x), this represents the transform's rotation, scale, and skew.
+The transform basis's Y axis, and the column `1` of the matrix. Combined with [`x`](class_transform2d.md#class_transform2d_property_x), this represents the transform's rotation, scale, and skew.
 
-On the identity transform, this vector points up ([`Vector2.UP`](#class_vector2_constant_up)).
+On the identity transform, this vector points up ([`Vector2.UP`](class_vector2.md#class_vector2_constant_up)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -175,7 +175,7 @@ On the identity transform, this vector points up ([`Vector2.UP`](#class_vector2_
 
 [`Transform2D`](class_transform2d.md) **Transform2D** ( )<div id="class_transform2d_constructor_transform2d"></div>
 
-Constructs a **Transform2D** identical to [`IDENTITY`](#class_transform2d_constant_identity).
+Constructs a **Transform2D** identical to [`IDENTITY`](class_transform2d.md#class_transform2d_constant_identity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -207,7 +207,7 @@ Constructs a **Transform2D** from a given angle (in radians), scale, skew (in ra
 
 [`Transform2D`](class_transform2d.md) **Transform2D** ( x_axis: [`Vector2`](class_vector2.md), y_axis: [`Vector2`](class_vector2.md), origin: [`Vector2`](class_vector2.md) )
 
-Constructs a **Transform2D** from 3 [`Vector2`](class_vector2.md) values representing [`x`](#class_transform2d_property_x), [`y`](#class_transform2d_property_y), and the [`origin`](#class_transform2d_property_origin) (the three matrix columns).
+Constructs a **Transform2D** from 3 [`Vector2`](class_vector2.md) values representing [`x`](class_transform2d.md#class_transform2d_property_x), [`y`](class_transform2d.md#class_transform2d_property_y), and the [`origin`](class_transform2d.md#class_transform2d_property_origin) (the three matrix columns).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -219,9 +219,9 @@ Constructs a **Transform2D** from 3 [`Vector2`](class_vector2.md) values represe
 
 [`Transform2D`](class_transform2d.md) **affine_inverse** ( ) const[^const]<div id="class_transform2d_method_affine_inverse"></div>
 
-Returns the inverted version of this transform. Unlike [`inverse`](#class_transform2d_method_inverse), this method works with almost any basis, including non-uniform ones, but is slower. See also [`inverse`](#class_transform2d_method_inverse).
+Returns the inverted version of this transform. Unlike [`inverse`](class_transform2d.md#class_transform2d_method_inverse), this method works with almost any basis, including non-uniform ones, but is slower. See also [`inverse`](class_transform2d.md#class_transform2d_method_inverse).
 
- **Note:** For this method to return correctly, the transform's basis needs to have a determinant that is not exactly `0` (see [`determinant`](#class_transform2d_method_determinant)).
+ **Note:** For this method to return correctly, the transform's basis needs to have a determinant that is not exactly `0` (see [`determinant`](class_transform2d.md#class_transform2d_method_determinant)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -231,7 +231,7 @@ Returns the inverted version of this transform. Unlike [`inverse`](#class_transf
 
 [`Vector2`](class_vector2.md) **basis_xform** ( v: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_transform2d_method_basis_xform"></div>
 
-Returns a copy of the `v` vector, transformed (multiplied) by the transform basis's matrix. Unlike the multiplication operator (`*`), this method ignores the [`origin`](#class_transform2d_property_origin).
+Returns a copy of the `v` vector, transformed (multiplied) by the transform basis's matrix. Unlike the multiplication operator (`*`), this method ignores the [`origin`](class_transform2d.md#class_transform2d_property_origin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -241,9 +241,9 @@ Returns a copy of the `v` vector, transformed (multiplied) by the transform basi
 
 [`Vector2`](class_vector2.md) **basis_xform_inv** ( v: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_transform2d_method_basis_xform_inv"></div>
 
-Returns a copy of the `v` vector, transformed (multiplied) by the inverse transform basis's matrix (see [`inverse`](#class_transform2d_method_inverse)). This method ignores the [`origin`](#class_transform2d_property_origin).
+Returns a copy of the `v` vector, transformed (multiplied) by the inverse transform basis's matrix (see [`inverse`](class_transform2d.md#class_transform2d_method_inverse)). This method ignores the [`origin`](class_transform2d.md#class_transform2d_property_origin).
 
- **Note:** This method assumes that this transform's basis is *orthonormal* (see [`orthonormalized`](#class_transform2d_method_orthonormalized)). If the basis is not orthonormal, `transform.affine_inverse().basis_xform(vector)` should be used instead (see [`affine_inverse`](#class_transform2d_method_affine_inverse)).
+ **Note:** This method assumes that this transform's basis is *orthonormal* (see [`orthonormalized`](class_transform2d.md#class_transform2d_method_orthonormalized)). If the basis is not orthonormal, `transform.affine_inverse().basis_xform(vector)` should be used instead (see [`affine_inverse`](class_transform2d.md#class_transform2d_method_affine_inverse)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -255,7 +255,7 @@ Returns a copy of the `v` vector, transformed (multiplied) by the inverse transf
 
 Returns the [*determinant*](https://en.wikipedia.org/wiki/Determinant) of this transform basis's matrix. For advanced math, this number can be used to determine a few attributes:
 
-- If the determinant is exactly `0`, the basis is not invertible (see [`inverse`](#class_transform2d_method_inverse)).
+- If the determinant is exactly `0`, the basis is not invertible (see [`inverse`](class_transform2d.md#class_transform2d_method_inverse)).
 
 - If the determinant is a negative number, the basis represents a negative scale.
 
@@ -269,7 +269,7 @@ Returns the [*determinant*](https://en.wikipedia.org/wiki/Determinant) of this t
 
 [`Vector2`](class_vector2.md) **get_origin** ( ) const[^const]<div id="class_transform2d_method_get_origin"></div>
 
-Returns this transform's translation. Equivalent to [`origin`](#class_transform2d_property_origin).
+Returns this transform's translation. Equivalent to [`origin`](class_transform2d.md#class_transform2d_property_origin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -279,7 +279,7 @@ Returns this transform's translation. Equivalent to [`origin`](#class_transform2
 
 [`float`](class_float.md) **get_rotation** ( ) const[^const]<div id="class_transform2d_method_get_rotation"></div>
 
-Returns this transform's rotation (in radians). This is equivalent to [`x`](#class_transform2d_property_x)'s angle (see [`Vector2.angle`](#class_vector2_method_angle)).
+Returns this transform's rotation (in radians). This is equivalent to [`x`](class_transform2d.md#class_transform2d_property_x)'s angle (see [`Vector2.angle`](class_vector2.md#class_vector2_method_angle)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -289,7 +289,7 @@ Returns this transform's rotation (in radians). This is equivalent to [`x`](#cla
 
 [`Vector2`](class_vector2.md) **get_scale** ( ) const[^const]<div id="class_transform2d_method_get_scale"></div>
 
-Returns the length of both [`x`](#class_transform2d_property_x) and [`y`](#class_transform2d_property_y), as a [`Vector2`](class_vector2.md). If this transform's basis is not skewed, this value is the scaling factor. It is not affected by rotation.
+Returns the length of both [`x`](class_transform2d.md#class_transform2d_property_x) and [`y`](class_transform2d.md#class_transform2d_property_y), as a [`Vector2`](class_vector2.md). If this transform's basis is not skewed, this value is the scaling factor. It is not affected by rotation.
 
 
 
@@ -321,7 +321,7 @@ Returns the length of both [`x`](#class_transform2d_property_x) and [`y`](#class
 
 
 
- **Note:** If the value returned by [`determinant`](#class_transform2d_method_determinant) is negative, the scale is also negative.
+ **Note:** If the value returned by [`determinant`](class_transform2d.md#class_transform2d_method_determinant) is negative, the scale is also negative.
 
 
 
@@ -359,7 +359,7 @@ The `weight` should be between `0.0` and `1.0` (inclusive). Values outside this 
 
 Returns the [*inverted version of this transform*](https://en.wikipedia.org/wiki/Invertible_matrix).
 
- **Note:** For this method to return correctly, the transform's basis needs to be *orthonormal* (see [`orthonormalized`](#class_transform2d_method_orthonormalized)). That means, the basis should only represent a rotation. If it does not, use [`affine_inverse`](#class_transform2d_method_affine_inverse) instead.
+ **Note:** For this method to return correctly, the transform's basis needs to be *orthonormal* (see [`orthonormalized`](class_transform2d.md#class_transform2d_method_orthonormalized)). That means, the basis should only represent a rotation. If it does not, use [`affine_inverse`](class_transform2d.md#class_transform2d_method_affine_inverse) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -379,7 +379,7 @@ Returns `true` if this transform's basis is conformal. A conformal basis is both
 
 [`bool`](class_bool.md) **is_equal_approx** ( xform: [`Transform2D`](class_transform2d.md) ) const[^const]<div id="class_transform2d_method_is_equal_approx"></div>
 
-Returns `true` if this transform and `xform` are approximately equal, by running [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) on each component.
+Returns `true` if this transform and `xform` are approximately equal, by running [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -389,7 +389,7 @@ Returns `true` if this transform and `xform` are approximately equal, by running
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_transform2d_method_is_finite"></div>
 
-Returns `true` if this transform is finite, by calling [`@GlobalScope.is_finite`](#class_@globalscope_method_is_finite) on each component.
+Returns `true` if this transform is finite, by calling [`@GlobalScope.is_finite`](class_@globalscope.md#class_@globalscope_method_is_finite) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -507,7 +507,7 @@ This can be seen as transforming with respect to the local frame.
 
 Returns `true` if the components of both transforms are not equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_transform2d_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_transform2d.md#class_transform2d_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -545,11 +545,11 @@ This is the operation performed between parent and child [`CanvasItem`](class_ca
 
  **Note:** If you need to only modify one attribute of this transform, consider using one of the following methods, instead:
 
-- For translation, see [`translated`](#class_transform2d_method_translated) or [`translated_local`](#class_transform2d_method_translated_local).
+- For translation, see [`translated`](class_transform2d.md#class_transform2d_method_translated) or [`translated_local`](class_transform2d.md#class_transform2d_method_translated_local).
 
-- For rotation, see [`rotated`](#class_transform2d_method_rotated) or [`rotated_local`](#class_transform2d_method_rotated_local).
+- For rotation, see [`rotated`](class_transform2d.md#class_transform2d_method_rotated) or [`rotated_local`](class_transform2d.md#class_transform2d_method_rotated_local).
 
-- For scale, see [`scaled`](#class_transform2d_method_scaled) or [`scaled_local`](#class_transform2d_method_scaled_local).
+- For scale, see [`scaled`](class_transform2d.md#class_transform2d_method_scaled) or [`scaled_local`](class_transform2d.md#class_transform2d_method_scaled_local).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -569,7 +569,7 @@ Transforms (multiplies) the [`Vector2`](class_vector2.md) by this transformation
 
 [`Transform2D`](class_transform2d.md) **operator *** ( right: [`float`](class_float.md) ) <div id="class_transform2d_operator_mul_float"></div>
 
-Multiplies all components of the **Transform2D** by the given [`float`](class_float.md), including the [`origin`](#class_transform2d_property_origin). This affects the transform's scale uniformly.
+Multiplies all components of the **Transform2D** by the given [`float`](class_float.md), including the [`origin`](class_transform2d.md#class_transform2d_property_origin). This affects the transform's scale uniformly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -579,7 +579,7 @@ Multiplies all components of the **Transform2D** by the given [`float`](class_fl
 
 [`Transform2D`](class_transform2d.md) **operator *** ( right: [`int`](class_int.md) ) <div id="class_transform2d_operator_mul_int"></div>
 
-Multiplies all components of the **Transform2D** by the given [`int`](class_int.md), including the [`origin`](#class_transform2d_property_origin). This affects the transform's scale uniformly.
+Multiplies all components of the **Transform2D** by the given [`int`](class_int.md), including the [`origin`](class_transform2d.md#class_transform2d_property_origin). This affects the transform's scale uniformly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -589,7 +589,7 @@ Multiplies all components of the **Transform2D** by the given [`int`](class_int.
 
 [`Transform2D`](class_transform2d.md) **operator /** ( right: [`float`](class_float.md) ) <div id="class_transform2d_operator_div_float"></div>
 
-Divides all components of the **Transform2D** by the given [`float`](class_float.md), including the [`origin`](#class_transform2d_property_origin). This affects the transform's scale uniformly.
+Divides all components of the **Transform2D** by the given [`float`](class_float.md), including the [`origin`](class_transform2d.md#class_transform2d_property_origin). This affects the transform's scale uniformly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -599,7 +599,7 @@ Divides all components of the **Transform2D** by the given [`float`](class_float
 
 [`Transform2D`](class_transform2d.md) **operator /** ( right: [`int`](class_int.md) ) <div id="class_transform2d_operator_div_int"></div>
 
-Divides all components of the **Transform2D** by the given [`int`](class_int.md), including the [`origin`](#class_transform2d_property_origin). This affects the transform's scale uniformly.
+Divides all components of the **Transform2D** by the given [`int`](class_int.md), including the [`origin`](class_transform2d.md#class_transform2d_property_origin). This affects the transform's scale uniformly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -611,7 +611,7 @@ Divides all components of the **Transform2D** by the given [`int`](class_int.md)
 
 Returns `true` if the components of both transforms are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_transform2d_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_transform2d.md#class_transform2d_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -621,7 +621,7 @@ Returns `true` if the components of both transforms are exactly equal.
 
 [`Vector2`](class_vector2.md) **operator []** ( index: [`int`](class_int.md) ) <div id="class_transform2d_operator_idx_int"></div>
 
-Accesses each axis (column) of this transform by their index. Index `0` is the same as [`x`](#class_transform2d_property_x), index `1` is the same as [`y`](#class_transform2d_property_y), and index `2` is the same as [`origin`](#class_transform2d_property_origin).
+Accesses each axis (column) of this transform by their index. Index `0` is the same as [`x`](class_transform2d.md#class_transform2d_property_x), index `1` is the same as [`y`](class_transform2d.md#class_transform2d_property_y), and index `2` is the same as [`origin`](class_transform2d.md#class_transform2d_property_origin).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

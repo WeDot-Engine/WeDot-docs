@@ -15,36 +15,36 @@ A node used for independent rendering of objects within a 2D scene.
 
 ## 描述
 
-[`CanvasItem`](class_canvasitem.md)-derived nodes that are direct or indirect children of a **CanvasLayer** will be drawn in that layer. The layer is a numeric index that defines the draw order. The default 2D scene renders with index `0`, so a **CanvasLayer** with index `-1` will be drawn below, and a **CanvasLayer** with index `1` will be drawn above. This order will hold regardless of the [`CanvasItem.z_index`](#class_canvasitem_property_z_index) of the nodes within each layer.
+[`CanvasItem`](class_canvasitem.md)-derived nodes that are direct or indirect children of a **CanvasLayer** will be drawn in that layer. The layer is a numeric index that defines the draw order. The default 2D scene renders with index `0`, so a **CanvasLayer** with index `-1` will be drawn below, and a **CanvasLayer** with index `1` will be drawn above. This order will hold regardless of the [`CanvasItem.z_index`](class_canvasitem.md#class_canvasitem_property_z_index) of the nodes within each layer.
 
  **CanvasLayer** s can be hidden and they can also optionally follow the viewport. This makes them useful for HUDs like health bar overlays (on layers `1` and higher) or backgrounds (on layers `-1` and lower).
 
  **Note:** Embedded [`Window`](class_window.md) s are placed on layer `1024`. [`CanvasItem`](class_canvasitem.md) s on layers `1025` and higher appear in front of embedded windows.
 
- **Note:** Each **CanvasLayer** is drawn on one specific [`Viewport`](class_viewport.md) and cannot be shared between multiple [`Viewport`](class_viewport.md) s, see [`custom_viewport`](#class_canvaslayer_property_custom_viewport). When using multiple [`Viewport`](class_viewport.md) s, for example in a split-screen game, you need create an individual **CanvasLayer** for each [`Viewport`](class_viewport.md) you want it to be drawn on.
+ **Note:** Each **CanvasLayer** is drawn on one specific [`Viewport`](class_viewport.md) and cannot be shared between multiple [`Viewport`](class_viewport.md) s, see [`custom_viewport`](class_canvaslayer.md#class_canvaslayer_property_custom_viewport). When using multiple [`Viewport`](class_viewport.md) s, for example in a split-screen game, you need create an individual **CanvasLayer** for each [`Viewport`](class_viewport.md) you want it to be drawn on.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Node`](class_node.md)               | [`custom_viewport`](#class_canvaslayer_property_custom_viewport)                 |                                   |
-| [`bool`](class_bool.md)               | [`follow_viewport_enabled`](#class_canvaslayer_property_follow_viewport_enabled) | ``false``                         |
-| [`float`](class_float.md)             | [`follow_viewport_scale`](#class_canvaslayer_property_follow_viewport_scale)     | ``1.0``                           |
-| [`int`](class_int.md)                 | [`layer`](#class_canvaslayer_property_layer)                                     | ``1``                             |
-| [`Vector2`](class_vector2.md)         | [`offset`](#class_canvaslayer_property_offset)                                   | ``Vector2(0, 0)``                 |
-| [`float`](class_float.md)             | [`rotation`](#class_canvaslayer_property_rotation)                               | ``0.0``                           |
-| [`Vector2`](class_vector2.md)         | [`scale`](#class_canvaslayer_property_scale)                                     | ``Vector2(1, 1)``                 |
-| [`Transform2D`](class_transform2d.md) | [`transform`](#class_canvaslayer_property_transform)                             | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
-| [`bool`](class_bool.md)               | [`visible`](#class_canvaslayer_property_visible)                                 | ``true``                          |
+| [`Node`](class_node.md)               | [`custom_viewport`](class_canvaslayer.md#class_canvaslayer_property_custom_viewport)                 |                                   |
+| [`bool`](class_bool.md)               | [`follow_viewport_enabled`](class_canvaslayer.md#class_canvaslayer_property_follow_viewport_enabled) | ``false``                         |
+| [`float`](class_float.md)             | [`follow_viewport_scale`](class_canvaslayer.md#class_canvaslayer_property_follow_viewport_scale)     | ``1.0``                           |
+| [`int`](class_int.md)                 | [`layer`](class_canvaslayer.md#class_canvaslayer_property_layer)                                     | ``1``                             |
+| [`Vector2`](class_vector2.md)         | [`offset`](class_canvaslayer.md#class_canvaslayer_property_offset)                                   | ``Vector2(0, 0)``                 |
+| [`float`](class_float.md)             | [`rotation`](class_canvaslayer.md#class_canvaslayer_property_rotation)                               | ``0.0``                           |
+| [`Vector2`](class_vector2.md)         | [`scale`](class_canvaslayer.md#class_canvaslayer_property_scale)                                     | ``Vector2(1, 1)``                 |
+| [`Transform2D`](class_transform2d.md) | [`transform`](class_canvaslayer.md#class_canvaslayer_property_transform)                             | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
+| [`bool`](class_bool.md)               | [`visible`](class_canvaslayer.md#class_canvaslayer_property_visible)                                 | ``true``                          |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)                 | [`get_canvas`](#class_canvaslayer_method_get_canvas) ( ) const[^const]                   |
-| [`Transform2D`](class_transform2d.md) | [`get_final_transform`](#class_canvaslayer_method_get_final_transform) ( ) const[^const] |
-| `void`                                | [`hide`](#class_canvaslayer_method_hide) ( )                                             |
-| `void`                                | [`show`](#class_canvaslayer_method_show) ( )                                             |
+| [`RID`](class_rid.md)                 | [`get_canvas`](class_canvaslayer.md#class_canvaslayer_method_get_canvas) ( ) const[^const]                   |
+| [`Transform2D`](class_transform2d.md) | [`get_final_transform`](class_canvaslayer.md#class_canvaslayer_method_get_final_transform) ( ) const[^const] |
+| `void`                                | [`hide`](class_canvaslayer.md#class_canvaslayer_method_hide) ( )                                             |
+| `void`                                | [`show`](class_canvaslayer.md#class_canvaslayer_method_show) ( )                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ A node used for independent rendering of objects within a 2D scene.
 
 **visibility_changed** ( ) <div id="class_canvaslayer_signal_visibility_changed"></div>
 
-Emitted when visibility of the layer is changed. See [`visible`](#class_canvaslayer_property_visible).
+Emitted when visibility of the layer is changed. See [`visible`](class_canvaslayer.md#class_canvaslayer_property_visible).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -86,7 +86,7 @@ The custom [`Viewport`](class_viewport.md) node assigned to the **CanvasLayer**.
 
 If enabled, the **CanvasLayer** will use the viewport's transform, so it will move when camera moves instead of being anchored in a fixed position on the screen.
 
-Together with [`follow_viewport_scale`](#class_canvaslayer_property_follow_viewport_scale) it can be used for a pseudo 3D effect.
+Together with [`follow_viewport_scale`](class_canvaslayer.md#class_canvaslayer_property_follow_viewport_scale) it can be used for a pseudo 3D effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -99,7 +99,7 @@ Together with [`follow_viewport_scale`](#class_canvaslayer_property_follow_viewp
 - `void` **set_follow_viewport_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_follow_viewport_scale** ( )
 
-Scales the layer when using [`follow_viewport_enabled`](#class_canvaslayer_property_follow_viewport_enabled). Layers moving into the foreground should have increasing scales, while layers moving into the background should have decreasing scales.
+Scales the layer when using [`follow_viewport_enabled`](class_canvaslayer.md#class_canvaslayer_property_follow_viewport_enabled). Layers moving into the foreground should have increasing scales, while layers moving into the background should have decreasing scales.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -181,7 +181,7 @@ The layer's transform.
 
 If `false`, any [`CanvasItem`](class_canvasitem.md) under this **CanvasLayer** will be hidden.
 
-Unlike [`CanvasItem.visible`](#class_canvasitem_property_visible), visibility of a **CanvasLayer** isn't propagated to underlying layers.
+Unlike [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible), visibility of a **CanvasLayer** isn't propagated to underlying layers.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -213,7 +213,7 @@ Returns the transform from the **CanvasLayer** s coordinate system to the [`View
 
 `void` **hide** ( )<div id="class_canvaslayer_method_hide"></div>
 
-Hides any [`CanvasItem`](class_canvasitem.md) under this **CanvasLayer**. This is equivalent to setting [`visible`](#class_canvaslayer_property_visible) to `false`.
+Hides any [`CanvasItem`](class_canvasitem.md) under this **CanvasLayer**. This is equivalent to setting [`visible`](class_canvaslayer.md#class_canvaslayer_property_visible) to `false`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -223,7 +223,7 @@ Hides any [`CanvasItem`](class_canvasitem.md) under this **CanvasLayer**. This i
 
 `void` **show** ( )<div id="class_canvaslayer_method_show"></div>
 
-Shows any [`CanvasItem`](class_canvasitem.md) under this **CanvasLayer**. This is equivalent to setting [`visible`](#class_canvaslayer_property_visible) to `true`.
+Shows any [`CanvasItem`](class_canvasitem.md) under this **CanvasLayer**. This is equivalent to setting [`visible`](class_canvaslayer.md#class_canvaslayer_property_visible) to `true`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

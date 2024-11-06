@@ -15,7 +15,7 @@ Plays an animation once in an [`AnimationNodeBlendTree`](class_animationnodeblen
 
 A resource to add to an [`AnimationNodeBlendTree`](class_animationnodeblendtree.md). This animation node will execute a sub-animation and return once it finishes. Blend times for fading in and out can be customized, as well as filters.
 
-After setting the request and changing the animation playback, the one-shot node automatically clears the request on the next process frame by setting its `request` value to [`ONE_SHOT_REQUEST_NONE`](#class_animationnodeoneshot_constant_one_shot_request_none).
+After setting the request and changing the animation playback, the one-shot node automatically clears the request on the next process frame by setting its `request` value to [`ONE_SHOT_REQUEST_NONE`](class_animationnodeoneshot.md#class_animationnodeoneshot_constant_one_shot_request_none).
 
 
 
@@ -75,15 +75,15 @@ After setting the request and changing the animation playback, the one-shot node
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                       | [`autorestart`](#class_animationnodeoneshot_property_autorestart)                           | ``false`` |
-| [`float`](class_float.md)                     | [`autorestart_delay`](#class_animationnodeoneshot_property_autorestart_delay)               | ``1.0``   |
-| [`float`](class_float.md)                     | [`autorestart_random_delay`](#class_animationnodeoneshot_property_autorestart_random_delay) | ``0.0``   |
-| [`bool`](class_bool.md)                       | [`break_loop_at_end`](#class_animationnodeoneshot_property_break_loop_at_end)               | ``false`` |
-| [`Curve`](class_curve.md)                     | [`fadein_curve`](#class_animationnodeoneshot_property_fadein_curve)                         |           |
-| [`float`](class_float.md)                     | [`fadein_time`](#class_animationnodeoneshot_property_fadein_time)                           | ``0.0``   |
-| [`Curve`](class_curve.md)                     | [`fadeout_curve`](#class_animationnodeoneshot_property_fadeout_curve)                       |           |
-| [`float`](class_float.md)                     | [`fadeout_time`](#class_animationnodeoneshot_property_fadeout_time)                         | ``0.0``   |
-| [MixMode](#enum_animationnodeoneshot_mixmode) | [`mix_mode`](#class_animationnodeoneshot_property_mix_mode)                                 | ``0``     |
+| [`bool`](class_bool.md)                       | [`autorestart`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_autorestart)                           | ``false`` |
+| [`float`](class_float.md)                     | [`autorestart_delay`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_autorestart_delay)               | ``1.0``   |
+| [`float`](class_float.md)                     | [`autorestart_random_delay`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_autorestart_random_delay) | ``0.0``   |
+| [`bool`](class_bool.md)                       | [`break_loop_at_end`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_break_loop_at_end)               | ``false`` |
+| [`Curve`](class_curve.md)                     | [`fadein_curve`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_fadein_curve)                         |           |
+| [`float`](class_float.md)                     | [`fadein_time`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_fadein_time)                           | ``0.0``   |
+| [`Curve`](class_curve.md)                     | [`fadeout_curve`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_fadeout_curve)                       |           |
+| [`float`](class_float.md)                     | [`fadeout_time`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_fadeout_time)                         | ``0.0``   |
+| [MixMode](#enum_animationnodeoneshot_mixmode) | [`mix_mode`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_mix_mode)                                 | ``0``     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -154,7 +154,7 @@ Blends two animations additively. See also [`AnimationNodeAdd2`](class_animation
 
 If `true`, the sub-animation will restart automatically after finishing.
 
-In other words, to start auto restarting, the animation must be played once with the [`ONE_SHOT_REQUEST_FIRE`](#class_animationnodeoneshot_constant_one_shot_request_fire) request. The [`ONE_SHOT_REQUEST_ABORT`](#class_animationnodeoneshot_constant_one_shot_request_abort) request stops the auto restarting, but it does not disable the [`autorestart`](#class_animationnodeoneshot_property_autorestart) itself. So, the [`ONE_SHOT_REQUEST_FIRE`](#class_animationnodeoneshot_constant_one_shot_request_fire) request will start auto restarting again.
+In other words, to start auto restarting, the animation must be played once with the [`ONE_SHOT_REQUEST_FIRE`](class_animationnodeoneshot.md#class_animationnodeoneshot_constant_one_shot_request_fire) request. The [`ONE_SHOT_REQUEST_ABORT`](class_animationnodeoneshot.md#class_animationnodeoneshot_constant_one_shot_request_abort) request stops the auto restarting, but it does not disable the [`autorestart`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_autorestart) itself. So, the [`ONE_SHOT_REQUEST_FIRE`](class_animationnodeoneshot.md#class_animationnodeoneshot_constant_one_shot_request_fire) request will start auto restarting again.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -180,7 +180,7 @@ The delay after which the automatic restart is triggered, in seconds.
 - `void` **set_autorestart_random_delay** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_autorestart_random_delay** ( )
 
-If [`autorestart`](#class_animationnodeoneshot_property_autorestart) is `true`, a random additional delay (in seconds) between 0 and this value will be added to [`autorestart_delay`](#class_animationnodeoneshot_property_autorestart_delay).
+If [`autorestart`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_autorestart) is `true`, a random additional delay (in seconds) between 0 and this value will be added to [`autorestart_delay`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_autorestart_delay).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -221,7 +221,7 @@ Determines how cross-fading between animations is eased. If empty, the transitio
 
 The fade-in duration. For example, setting this to `1.0` for a 5 second length animation will produce a cross-fade that starts at 0 second and ends at 1 second during the animation.
 
- **Note:** **AnimationNodeOneShot** transitions the current state after the end of the fading. When [`AnimationNodeOutput`](class_animationnodeoutput.md) is considered as the most upstream, so the [`fadein_time`](#class_animationnodeoneshot_property_fadein_time) is scaled depending on the downstream delta. For example, if this value is set to `1.0` and a [`AnimationNodeTimeScale`](class_animationnodetimescale.md) with a value of `2.0` is chained downstream, the actual processing time will be 0.5 second.
+ **Note:** **AnimationNodeOneShot** transitions the current state after the end of the fading. When [`AnimationNodeOutput`](class_animationnodeoutput.md) is considered as the most upstream, so the [`fadein_time`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_fadein_time) is scaled depending on the downstream delta. For example, if this value is set to `1.0` and a [`AnimationNodeTimeScale`](class_animationnodetimescale.md) with a value of `2.0` is chained downstream, the actual processing time will be 0.5 second.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -249,7 +249,7 @@ Determines how cross-fading between animations is eased. If empty, the transitio
 
 The fade-out duration. For example, setting this to `1.0` for a 5 second length animation will produce a cross-fade that starts at 4 second and ends at 5 second during the animation.
 
- **Note:** **AnimationNodeOneShot** transitions the current state after the end of the fading. When [`AnimationNodeOutput`](class_animationnodeoutput.md) is considered as the most upstream, so the [`fadeout_time`](#class_animationnodeoneshot_property_fadeout_time) is scaled depending on the downstream delta. For example, if this value is set to `1.0` and an [`AnimationNodeTimeScale`](class_animationnodetimescale.md) with a value of `2.0` is chained downstream, the actual processing time will be 0.5 second.
+ **Note:** **AnimationNodeOneShot** transitions the current state after the end of the fading. When [`AnimationNodeOutput`](class_animationnodeoutput.md) is considered as the most upstream, so the [`fadeout_time`](class_animationnodeoneshot.md#class_animationnodeoneshot_property_fadeout_time) is scaled depending on the downstream delta. For example, if this value is set to `1.0` and an [`AnimationNodeTimeScale`](class_animationnodetimescale.md) with a value of `2.0` is chained downstream, the actual processing time will be 0.5 second.
 
 <!-- rst-class:: classref-item-separator -->
 

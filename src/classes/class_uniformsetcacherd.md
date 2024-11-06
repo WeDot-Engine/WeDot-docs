@@ -19,7 +19,7 @@ Uniform set cache manager for Rendering Device based renderers. Provides a way t
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md) | [`get_cache`](#class_uniformsetcacherd_method_get_cache) ( shader: [`RID`](class_rid.md), set: [`int`](class_int.md), uniforms: [Array](class_array.md) [`RDUniform`](class_rduniform.md) ) static[^static] |
+| [`RID`](class_rid.md) | [`get_cache`](class_uniformsetcacherd.md#class_uniformsetcacherd_method_get_cache) ( shader: [`RID`](class_rid.md), set: [`int`](class_int.md), uniforms: [Array](class_array.md) [`RDUniform`](class_rduniform.md) ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 

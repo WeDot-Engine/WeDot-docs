@@ -19,7 +19,7 @@ Computes an inverse or transpose function on the provided [`Transform3D`](class_
 
 |||
 |:-:|:--|
-| [Function](#enum_visualshadernodetransformfunc_function) | [`function`](#class_visualshadernodetransformfunc_property_function) | ``0`` |
+| [Function](#enum_visualshadernodetransformfunc_function) | [`function`](class_visualshadernodetransformfunc.md#class_visualshadernodetransformfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

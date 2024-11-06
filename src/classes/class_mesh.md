@@ -15,44 +15,44 @@ A [`Resource`](class_resource.md) that contains vertex array-based geometry.
 
 ## 描述
 
-Mesh is a type of [`Resource`](class_resource.md) that contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials. The maximum number of surfaces per mesh is [`RenderingServer.MAX_MESH_SURFACES`](#class_renderingserver_constant_max_mesh_surfaces).
+Mesh is a type of [`Resource`](class_resource.md) that contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials. The maximum number of surfaces per mesh is [`RenderingServer.MAX_MESH_SURFACES`](class_renderingserver.md#class_renderingserver_constant_max_mesh_surfaces).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Vector2i`](class_vector2i.md) | [`lightmap_size_hint`](#class_mesh_property_lightmap_size_hint) | ``Vector2i(0, 0)`` |
+| [`Vector2i`](class_vector2i.md) | [`lightmap_size_hint`](class_mesh.md#class_mesh_property_lightmap_size_hint) | ``Vector2i(0, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md)                                   | [`_get_aabb`](#class_mesh_private_method__get_aabb) ( ) virtual[^virtual] const[^const]                                                                                   |
-| [`int`](class_int.md)                                     | [`_get_blend_shape_count`](#class_mesh_private_method__get_blend_shape_count) ( ) virtual[^virtual] const[^const]                                                         |
-| [`StringName`](class_stringname.md)                       | [`_get_blend_shape_name`](#class_mesh_private_method__get_blend_shape_name) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                              |
-| [`int`](class_int.md)                                     | [`_get_surface_count`](#class_mesh_private_method__get_surface_count) ( ) virtual[^virtual] const[^const]                                                                 |
-| `void`                                                    | [`_set_blend_shape_name`](#class_mesh_private_method__set_blend_shape_name) ( index: [`int`](class_int.md), name: [`StringName`](class_stringname.md) ) virtual[^virtual] |
-| [`int`](class_int.md)                                     | [`_surface_get_array_index_len`](#class_mesh_private_method__surface_get_array_index_len) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                |
-| [`int`](class_int.md)                                     | [`_surface_get_array_len`](#class_mesh_private_method__surface_get_array_len) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                            |
-| [`Array`](class_array.md)                                 | [`_surface_get_arrays`](#class_mesh_private_method__surface_get_arrays) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                  |
-| [Array](class_array.md) [`Array`](class_array.md)         | [`_surface_get_blend_shape_arrays`](#class_mesh_private_method__surface_get_blend_shape_arrays) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]          |
-| [`int`](class_int.md)                                     | [`_surface_get_format`](#class_mesh_private_method__surface_get_format) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                  |
-| [`Dictionary`](class_dictionary.md)                       | [`_surface_get_lods`](#class_mesh_private_method__surface_get_lods) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                      |
-| [`Material`](class_material.md)                           | [`_surface_get_material`](#class_mesh_private_method__surface_get_material) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                              |
-| [`int`](class_int.md)                                     | [`_surface_get_primitive_type`](#class_mesh_private_method__surface_get_primitive_type) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                  |
-| `void`                                                    | [`_surface_set_material`](#class_mesh_private_method__surface_set_material) ( index: [`int`](class_int.md), material: [`Material`](class_material.md) ) virtual[^virtual] |
-| [`ConvexPolygonShape3D`](class_convexpolygonshape3d.md)   | [`create_convex_shape`](#class_mesh_method_create_convex_shape) ( clean: [`bool`](class_bool.md) = true, simplify: [`bool`](class_bool.md) = false ) const[^const]        |
-| [`Mesh`](class_mesh.md)                                   | [`create_outline`](#class_mesh_method_create_outline) ( margin: [`float`](class_float.md) ) const[^const]                                                                 |
-| [`Resource`](class_resource.md)                           | [`create_placeholder`](#class_mesh_method_create_placeholder) ( ) const[^const]                                                                                           |
-| [`ConcavePolygonShape3D`](class_concavepolygonshape3d.md) | [`create_trimesh_shape`](#class_mesh_method_create_trimesh_shape) ( ) const[^const]                                                                                       |
-| [`TriangleMesh`](class_trianglemesh.md)                   | [`generate_triangle_mesh`](#class_mesh_method_generate_triangle_mesh) ( ) const[^const]                                                                                   |
-| [`AABB`](class_aabb.md)                                   | [`get_aabb`](#class_mesh_method_get_aabb) ( ) const[^const]                                                                                                               |
-| [`PackedVector3Array`](class_packedvector3array.md)       | [`get_faces`](#class_mesh_method_get_faces) ( ) const[^const]                                                                                                             |
-| [`int`](class_int.md)                                     | [`get_surface_count`](#class_mesh_method_get_surface_count) ( ) const[^const]                                                                                             |
-| [`Array`](class_array.md)                                 | [`surface_get_arrays`](#class_mesh_method_surface_get_arrays) ( surf_idx: [`int`](class_int.md) ) const[^const]                                                           |
-| [Array](class_array.md) [`Array`](class_array.md)         | [`surface_get_blend_shape_arrays`](#class_mesh_method_surface_get_blend_shape_arrays) ( surf_idx: [`int`](class_int.md) ) const[^const]                                   |
-| [`Material`](class_material.md)                           | [`surface_get_material`](#class_mesh_method_surface_get_material) ( surf_idx: [`int`](class_int.md) ) const[^const]                                                       |
-| `void`                                                    | [`surface_set_material`](#class_mesh_method_surface_set_material) ( surf_idx: [`int`](class_int.md), material: [`Material`](class_material.md) )                          |
+| [`AABB`](class_aabb.md)                                   | [`_get_aabb`](class_mesh.md#class_mesh_private_method__get_aabb) ( ) virtual[^virtual] const[^const]                                                                                   |
+| [`int`](class_int.md)                                     | [`_get_blend_shape_count`](class_mesh.md#class_mesh_private_method__get_blend_shape_count) ( ) virtual[^virtual] const[^const]                                                         |
+| [`StringName`](class_stringname.md)                       | [`_get_blend_shape_name`](class_mesh.md#class_mesh_private_method__get_blend_shape_name) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                              |
+| [`int`](class_int.md)                                     | [`_get_surface_count`](class_mesh.md#class_mesh_private_method__get_surface_count) ( ) virtual[^virtual] const[^const]                                                                 |
+| `void`                                                    | [`_set_blend_shape_name`](class_mesh.md#class_mesh_private_method__set_blend_shape_name) ( index: [`int`](class_int.md), name: [`StringName`](class_stringname.md) ) virtual[^virtual] |
+| [`int`](class_int.md)                                     | [`_surface_get_array_index_len`](class_mesh.md#class_mesh_private_method__surface_get_array_index_len) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                |
+| [`int`](class_int.md)                                     | [`_surface_get_array_len`](class_mesh.md#class_mesh_private_method__surface_get_array_len) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                            |
+| [`Array`](class_array.md)                                 | [`_surface_get_arrays`](class_mesh.md#class_mesh_private_method__surface_get_arrays) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                  |
+| [Array](class_array.md) [`Array`](class_array.md)         | [`_surface_get_blend_shape_arrays`](class_mesh.md#class_mesh_private_method__surface_get_blend_shape_arrays) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]          |
+| [`int`](class_int.md)                                     | [`_surface_get_format`](class_mesh.md#class_mesh_private_method__surface_get_format) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                  |
+| [`Dictionary`](class_dictionary.md)                       | [`_surface_get_lods`](class_mesh.md#class_mesh_private_method__surface_get_lods) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                      |
+| [`Material`](class_material.md)                           | [`_surface_get_material`](class_mesh.md#class_mesh_private_method__surface_get_material) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                              |
+| [`int`](class_int.md)                                     | [`_surface_get_primitive_type`](class_mesh.md#class_mesh_private_method__surface_get_primitive_type) ( index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                  |
+| `void`                                                    | [`_surface_set_material`](class_mesh.md#class_mesh_private_method__surface_set_material) ( index: [`int`](class_int.md), material: [`Material`](class_material.md) ) virtual[^virtual] |
+| [`ConvexPolygonShape3D`](class_convexpolygonshape3d.md)   | [`create_convex_shape`](class_mesh.md#class_mesh_method_create_convex_shape) ( clean: [`bool`](class_bool.md) = true, simplify: [`bool`](class_bool.md) = false ) const[^const]        |
+| [`Mesh`](class_mesh.md)                                   | [`create_outline`](class_mesh.md#class_mesh_method_create_outline) ( margin: [`float`](class_float.md) ) const[^const]                                                                 |
+| [`Resource`](class_resource.md)                           | [`create_placeholder`](class_mesh.md#class_mesh_method_create_placeholder) ( ) const[^const]                                                                                           |
+| [`ConcavePolygonShape3D`](class_concavepolygonshape3d.md) | [`create_trimesh_shape`](class_mesh.md#class_mesh_method_create_trimesh_shape) ( ) const[^const]                                                                                       |
+| [`TriangleMesh`](class_trianglemesh.md)                   | [`generate_triangle_mesh`](class_mesh.md#class_mesh_method_generate_triangle_mesh) ( ) const[^const]                                                                                   |
+| [`AABB`](class_aabb.md)                                   | [`get_aabb`](class_mesh.md#class_mesh_method_get_aabb) ( ) const[^const]                                                                                                               |
+| [`PackedVector3Array`](class_packedvector3array.md)       | [`get_faces`](class_mesh.md#class_mesh_method_get_faces) ( ) const[^const]                                                                                                             |
+| [`int`](class_int.md)                                     | [`get_surface_count`](class_mesh.md#class_mesh_method_get_surface_count) ( ) const[^const]                                                                                             |
+| [`Array`](class_array.md)                                 | [`surface_get_arrays`](class_mesh.md#class_mesh_method_surface_get_arrays) ( surf_idx: [`int`](class_int.md) ) const[^const]                                                           |
+| [Array](class_array.md) [`Array`](class_array.md)         | [`surface_get_blend_shape_arrays`](class_mesh.md#class_mesh_method_surface_get_blend_shape_arrays) ( surf_idx: [`int`](class_int.md) ) const[^const]                                   |
+| [`Material`](class_material.md)                           | [`surface_get_material`](class_mesh.md#class_mesh_method_surface_get_material) ( surf_idx: [`int`](class_int.md) ) const[^const]                                                       |
+| `void`                                                    | [`surface_set_material`](class_mesh.md#class_mesh_method_surface_set_material) ( surf_idx: [`int`](class_int.md), material: [`Material`](class_material.md) )                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -144,37 +144,37 @@ enum **ArrayType**: <div id="enum_mesh_arraytype"></div>
 
 [ArrayType](#enum_mesh_arraytype) **ARRAY_CUSTOM0** = ``6``
 
-Contains custom color channel 0. [`PackedByteArray`](class_packedbytearray.md) if `(format >> Mesh.ARRAY_FORMAT_CUSTOM0_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK` is [`ARRAY_CUSTOM_RGBA8_UNORM`](#class_mesh_constant_array_custom_rgba8_unorm), [`ARRAY_CUSTOM_RGBA8_SNORM`](#class_mesh_constant_array_custom_rgba8_snorm), [`ARRAY_CUSTOM_RG_HALF`](#class_mesh_constant_array_custom_rg_half), or [`ARRAY_CUSTOM_RGBA_HALF`](#class_mesh_constant_array_custom_rgba_half). [`PackedFloat32Array`](class_packedfloat32array.md) otherwise.
+Contains custom color channel 0. [`PackedByteArray`](class_packedbytearray.md) if `(format >> Mesh.ARRAY_FORMAT_CUSTOM0_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK` is [`ARRAY_CUSTOM_RGBA8_UNORM`](class_mesh.md#class_mesh_constant_array_custom_rgba8_unorm), [`ARRAY_CUSTOM_RGBA8_SNORM`](class_mesh.md#class_mesh_constant_array_custom_rgba8_snorm), [`ARRAY_CUSTOM_RG_HALF`](class_mesh.md#class_mesh_constant_array_custom_rg_half), or [`ARRAY_CUSTOM_RGBA_HALF`](class_mesh.md#class_mesh_constant_array_custom_rgba_half). [`PackedFloat32Array`](class_packedfloat32array.md) otherwise.
 
 <div id="_class_mesh_constant_array_custom1"></div>
 
 [ArrayType](#enum_mesh_arraytype) **ARRAY_CUSTOM1** = ``7``
 
-Contains custom color channel 1. [`PackedByteArray`](class_packedbytearray.md) if `(format >> Mesh.ARRAY_FORMAT_CUSTOM1_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK` is [`ARRAY_CUSTOM_RGBA8_UNORM`](#class_mesh_constant_array_custom_rgba8_unorm), [`ARRAY_CUSTOM_RGBA8_SNORM`](#class_mesh_constant_array_custom_rgba8_snorm), [`ARRAY_CUSTOM_RG_HALF`](#class_mesh_constant_array_custom_rg_half), or [`ARRAY_CUSTOM_RGBA_HALF`](#class_mesh_constant_array_custom_rgba_half). [`PackedFloat32Array`](class_packedfloat32array.md) otherwise.
+Contains custom color channel 1. [`PackedByteArray`](class_packedbytearray.md) if `(format >> Mesh.ARRAY_FORMAT_CUSTOM1_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK` is [`ARRAY_CUSTOM_RGBA8_UNORM`](class_mesh.md#class_mesh_constant_array_custom_rgba8_unorm), [`ARRAY_CUSTOM_RGBA8_SNORM`](class_mesh.md#class_mesh_constant_array_custom_rgba8_snorm), [`ARRAY_CUSTOM_RG_HALF`](class_mesh.md#class_mesh_constant_array_custom_rg_half), or [`ARRAY_CUSTOM_RGBA_HALF`](class_mesh.md#class_mesh_constant_array_custom_rgba_half). [`PackedFloat32Array`](class_packedfloat32array.md) otherwise.
 
 <div id="_class_mesh_constant_array_custom2"></div>
 
 [ArrayType](#enum_mesh_arraytype) **ARRAY_CUSTOM2** = ``8``
 
-Contains custom color channel 2. [`PackedByteArray`](class_packedbytearray.md) if `(format >> Mesh.ARRAY_FORMAT_CUSTOM2_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK` is [`ARRAY_CUSTOM_RGBA8_UNORM`](#class_mesh_constant_array_custom_rgba8_unorm), [`ARRAY_CUSTOM_RGBA8_SNORM`](#class_mesh_constant_array_custom_rgba8_snorm), [`ARRAY_CUSTOM_RG_HALF`](#class_mesh_constant_array_custom_rg_half), or [`ARRAY_CUSTOM_RGBA_HALF`](#class_mesh_constant_array_custom_rgba_half). [`PackedFloat32Array`](class_packedfloat32array.md) otherwise.
+Contains custom color channel 2. [`PackedByteArray`](class_packedbytearray.md) if `(format >> Mesh.ARRAY_FORMAT_CUSTOM2_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK` is [`ARRAY_CUSTOM_RGBA8_UNORM`](class_mesh.md#class_mesh_constant_array_custom_rgba8_unorm), [`ARRAY_CUSTOM_RGBA8_SNORM`](class_mesh.md#class_mesh_constant_array_custom_rgba8_snorm), [`ARRAY_CUSTOM_RG_HALF`](class_mesh.md#class_mesh_constant_array_custom_rg_half), or [`ARRAY_CUSTOM_RGBA_HALF`](class_mesh.md#class_mesh_constant_array_custom_rgba_half). [`PackedFloat32Array`](class_packedfloat32array.md) otherwise.
 
 <div id="_class_mesh_constant_array_custom3"></div>
 
 [ArrayType](#enum_mesh_arraytype) **ARRAY_CUSTOM3** = ``9``
 
-Contains custom color channel 3. [`PackedByteArray`](class_packedbytearray.md) if `(format >> Mesh.ARRAY_FORMAT_CUSTOM3_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK` is [`ARRAY_CUSTOM_RGBA8_UNORM`](#class_mesh_constant_array_custom_rgba8_unorm), [`ARRAY_CUSTOM_RGBA8_SNORM`](#class_mesh_constant_array_custom_rgba8_snorm), [`ARRAY_CUSTOM_RG_HALF`](#class_mesh_constant_array_custom_rg_half), or [`ARRAY_CUSTOM_RGBA_HALF`](#class_mesh_constant_array_custom_rgba_half). [`PackedFloat32Array`](class_packedfloat32array.md) otherwise.
+Contains custom color channel 3. [`PackedByteArray`](class_packedbytearray.md) if `(format >> Mesh.ARRAY_FORMAT_CUSTOM3_SHIFT) & Mesh.ARRAY_FORMAT_CUSTOM_MASK` is [`ARRAY_CUSTOM_RGBA8_UNORM`](class_mesh.md#class_mesh_constant_array_custom_rgba8_unorm), [`ARRAY_CUSTOM_RGBA8_SNORM`](class_mesh.md#class_mesh_constant_array_custom_rgba8_snorm), [`ARRAY_CUSTOM_RG_HALF`](class_mesh.md#class_mesh_constant_array_custom_rg_half), or [`ARRAY_CUSTOM_RGBA_HALF`](class_mesh.md#class_mesh_constant_array_custom_rgba_half). [`PackedFloat32Array`](class_packedfloat32array.md) otherwise.
 
 <div id="_class_mesh_constant_array_bones"></div>
 
 [ArrayType](#enum_mesh_arraytype) **ARRAY_BONES** = ``10``
 
-[`PackedFloat32Array`](class_packedfloat32array.md) or [`PackedInt32Array`](class_packedint32array.md) of bone indices. Contains either 4 or 8 numbers per vertex depending on the presence of the [`ARRAY_FLAG_USE_8_BONE_WEIGHTS`](#class_mesh_constant_array_flag_use_8_bone_weights) flag.
+[`PackedFloat32Array`](class_packedfloat32array.md) or [`PackedInt32Array`](class_packedint32array.md) of bone indices. Contains either 4 or 8 numbers per vertex depending on the presence of the [`ARRAY_FLAG_USE_8_BONE_WEIGHTS`](class_mesh.md#class_mesh_constant_array_flag_use_8_bone_weights) flag.
 
 <div id="_class_mesh_constant_array_weights"></div>
 
 [ArrayType](#enum_mesh_arraytype) **ARRAY_WEIGHTS** = ``11``
 
-[`PackedFloat32Array`](class_packedfloat32array.md) or [`PackedFloat64Array`](class_packedfloat64array.md) of bone weights in the range `0.0` to `1.0` (inclusive). Contains either 4 or 8 numbers per vertex depending on the presence of the [`ARRAY_FLAG_USE_8_BONE_WEIGHTS`](#class_mesh_constant_array_flag_use_8_bone_weights) flag.
+[`PackedFloat32Array`](class_packedfloat32array.md) or [`PackedFloat64Array`](class_packedfloat64array.md) of bone weights in the range `0.0` to `1.0` (inclusive). Contains either 4 or 8 numbers per vertex depending on the presence of the [`ARRAY_FLAG_USE_8_BONE_WEIGHTS`](class_mesh.md#class_mesh_constant_array_flag_use_8_bone_weights) flag.
 
 <div id="_class_mesh_constant_array_index"></div>
 
@@ -390,7 +390,7 @@ Mask of custom format bits per custom channel. Must be shifted by one of the SHI
 
 [ArrayFormat](#enum_mesh_arrayformat) **ARRAY_COMPRESS_FLAGS_BASE** = ``25``
 
-Shift of first compress flag. Compress flags should be passed to [`ArrayMesh.add_surface_from_arrays`](#class_arraymesh_method_add_surface_from_arrays) and [`SurfaceTool.commit`](#class_surfacetool_method_commit).
+Shift of first compress flag. Compress flags should be passed to [`ArrayMesh.add_surface_from_arrays`](class_arraymesh.md#class_arraymesh_method_add_surface_from_arrays) and [`SurfaceTool.commit`](class_surfacetool.md#class_surfacetool_method_commit).
 
 <div id="_class_mesh_constant_array_flag_use_2d_vertices"></div>
 
@@ -408,7 +408,7 @@ Flag indices that the mesh data will use `GL_DYNAMIC_DRAW` on GLES. Unused on Vu
 
 [ArrayFormat](#enum_mesh_arrayformat) **ARRAY_FLAG_USE_8_BONE_WEIGHTS** = ``134217728``
 
-Flag used to mark that the mesh contains up to 8 bone influences per vertex. This flag indicates that [`ARRAY_BONES`](#class_mesh_constant_array_bones) and [`ARRAY_WEIGHTS`](#class_mesh_constant_array_weights) elements will have double length.
+Flag used to mark that the mesh contains up to 8 bone influences per vertex. This flag indicates that [`ARRAY_BONES`](class_mesh.md#class_mesh_constant_array_bones) and [`ARRAY_WEIGHTS`](class_mesh.md#class_mesh_constant_array_weights) elements will have double length.
 
 <div id="_class_mesh_constant_array_flag_uses_empty_vertex_array"></div>
 
@@ -653,7 +653,7 @@ Calculate a [`ConcavePolygonShape3D`](class_concavepolygonshape3d.md) from the m
 
 [`TriangleMesh`](class_trianglemesh.md) **generate_triangle_mesh** ( ) const[^const]<div id="class_mesh_method_generate_triangle_mesh"></div>
 
-Generate a [`TriangleMesh`](class_trianglemesh.md) from the mesh. Considers only surfaces using one of these primitive types: [`PRIMITIVE_TRIANGLES`](#class_mesh_constant_primitive_triangles), [`PRIMITIVE_TRIANGLE_STRIP`](#class_mesh_constant_primitive_triangle_strip).
+Generate a [`TriangleMesh`](class_trianglemesh.md) from the mesh. Considers only surfaces using one of these primitive types: [`PRIMITIVE_TRIANGLES`](class_mesh.md#class_mesh_constant_primitive_triangles), [`PRIMITIVE_TRIANGLE_STRIP`](class_mesh.md#class_mesh_constant_primitive_triangle_strip).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -685,7 +685,7 @@ Returns all the vertices that make up the faces of the mesh. Each three vertices
 
 [`int`](class_int.md) **get_surface_count** ( ) const[^const]<div id="class_mesh_method_get_surface_count"></div>
 
-Returns the number of surfaces that the **Mesh** holds. This is equivalent to [`MeshInstance3D.get_surface_override_material_count`](#class_meshinstance3d_method_get_surface_override_material_count).
+Returns the number of surfaces that the **Mesh** holds. This is equivalent to [`MeshInstance3D.get_surface_override_material_count`](class_meshinstance3d.md#class_meshinstance3d_method_get_surface_override_material_count).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -695,7 +695,7 @@ Returns the number of surfaces that the **Mesh** holds. This is equivalent to [`
 
 [`Array`](class_array.md) **surface_get_arrays** ( surf_idx: [`int`](class_int.md) ) const[^const]<div id="class_mesh_method_surface_get_arrays"></div>
 
-Returns the arrays for the vertices, normals, UVs, etc. that make up the requested surface (see [`ArrayMesh.add_surface_from_arrays`](#class_arraymesh_method_add_surface_from_arrays)).
+Returns the arrays for the vertices, normals, UVs, etc. that make up the requested surface (see [`ArrayMesh.add_surface_from_arrays`](class_arraymesh.md#class_arraymesh_method_add_surface_from_arrays)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -717,7 +717,7 @@ Returns the blend shape arrays for the requested surface.
 
 Returns a [`Material`](class_material.md) in a given surface. Surface is rendered using this material.
 
- **Note:** This returns the material within the **Mesh** resource, not the [`Material`](class_material.md) associated to the [`MeshInstance3D`](class_meshinstance3d.md)'s Surface Material Override properties. To get the [`Material`](class_material.md) associated to the [`MeshInstance3D`](class_meshinstance3d.md)'s Surface Material Override properties, use [`MeshInstance3D.get_surface_override_material`](#class_meshinstance3d_method_get_surface_override_material) instead.
+ **Note:** This returns the material within the **Mesh** resource, not the [`Material`](class_material.md) associated to the [`MeshInstance3D`](class_meshinstance3d.md)'s Surface Material Override properties. To get the [`Material`](class_material.md) associated to the [`MeshInstance3D`](class_meshinstance3d.md)'s Surface Material Override properties, use [`MeshInstance3D.get_surface_override_material`](class_meshinstance3d.md#class_meshinstance3d_method_get_surface_override_material) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -729,7 +729,7 @@ Returns a [`Material`](class_material.md) in a given surface. Surface is rendere
 
 Sets a [`Material`](class_material.md) for a given surface. Surface will be rendered using this material.
 
- **Note:** This assigns the material within the **Mesh** resource, not the [`Material`](class_material.md) associated to the [`MeshInstance3D`](class_meshinstance3d.md)'s Surface Material Override properties. To set the [`Material`](class_material.md) associated to the [`MeshInstance3D`](class_meshinstance3d.md)'s Surface Material Override properties, use [`MeshInstance3D.set_surface_override_material`](#class_meshinstance3d_method_set_surface_override_material) instead.
+ **Note:** This assigns the material within the **Mesh** resource, not the [`Material`](class_material.md) associated to the [`MeshInstance3D`](class_meshinstance3d.md)'s Surface Material Override properties. To set the [`Material`](class_material.md) associated to the [`MeshInstance3D`](class_meshinstance3d.md)'s Surface Material Override properties, use [`MeshInstance3D.set_surface_override_material`](class_meshinstance3d.md#class_meshinstance3d_method_set_surface_override_material) instead.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

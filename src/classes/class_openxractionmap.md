@@ -23,24 +23,24 @@ The action map therefore needs to be loaded at startup and can't be changed afte
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md) | [`action_sets`](#class_openxractionmap_property_action_sets)                   | ``[]`` |
-| [`Array`](class_array.md) | [`interaction_profiles`](#class_openxractionmap_property_interaction_profiles) | ``[]`` |
+| [`Array`](class_array.md) | [`action_sets`](class_openxractionmap.md#class_openxractionmap_property_action_sets)                   | ``[]`` |
+| [`Array`](class_array.md) | [`interaction_profiles`](class_openxractionmap.md#class_openxractionmap_property_interaction_profiles) | ``[]`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                          | [`add_action_set`](#class_openxractionmap_method_add_action_set) ( action_set: [`OpenXRActionSet`](class_openxractionset.md) )                                                    |
-| `void`                                                          | [`add_interaction_profile`](#class_openxractionmap_method_add_interaction_profile) ( interaction_profile: [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) )       |
-| `void`                                                          | [`create_default_action_sets`](#class_openxractionmap_method_create_default_action_sets) ( )                                                                                      |
-| [`OpenXRActionSet`](class_openxractionset.md)                   | [`find_action_set`](#class_openxractionmap_method_find_action_set) ( name: [`String`](class_string.md) ) const[^const]                                                            |
-| [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) | [`find_interaction_profile`](#class_openxractionmap_method_find_interaction_profile) ( name: [`String`](class_string.md) ) const[^const]                                          |
-| [`OpenXRActionSet`](class_openxractionset.md)                   | [`get_action_set`](#class_openxractionmap_method_get_action_set) ( idx: [`int`](class_int.md) ) const[^const]                                                                     |
-| [`int`](class_int.md)                                           | [`get_action_set_count`](#class_openxractionmap_method_get_action_set_count) ( ) const[^const]                                                                                    |
-| [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) | [`get_interaction_profile`](#class_openxractionmap_method_get_interaction_profile) ( idx: [`int`](class_int.md) ) const[^const]                                                   |
-| [`int`](class_int.md)                                           | [`get_interaction_profile_count`](#class_openxractionmap_method_get_interaction_profile_count) ( ) const[^const]                                                                  |
-| `void`                                                          | [`remove_action_set`](#class_openxractionmap_method_remove_action_set) ( action_set: [`OpenXRActionSet`](class_openxractionset.md) )                                              |
-| `void`                                                          | [`remove_interaction_profile`](#class_openxractionmap_method_remove_interaction_profile) ( interaction_profile: [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) ) |
+| `void`                                                          | [`add_action_set`](class_openxractionmap.md#class_openxractionmap_method_add_action_set) ( action_set: [`OpenXRActionSet`](class_openxractionset.md) )                                                    |
+| `void`                                                          | [`add_interaction_profile`](class_openxractionmap.md#class_openxractionmap_method_add_interaction_profile) ( interaction_profile: [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) )       |
+| `void`                                                          | [`create_default_action_sets`](class_openxractionmap.md#class_openxractionmap_method_create_default_action_sets) ( )                                                                                      |
+| [`OpenXRActionSet`](class_openxractionset.md)                   | [`find_action_set`](class_openxractionmap.md#class_openxractionmap_method_find_action_set) ( name: [`String`](class_string.md) ) const[^const]                                                            |
+| [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) | [`find_interaction_profile`](class_openxractionmap.md#class_openxractionmap_method_find_interaction_profile) ( name: [`String`](class_string.md) ) const[^const]                                          |
+| [`OpenXRActionSet`](class_openxractionset.md)                   | [`get_action_set`](class_openxractionmap.md#class_openxractionmap_method_get_action_set) ( idx: [`int`](class_int.md) ) const[^const]                                                                     |
+| [`int`](class_int.md)                                           | [`get_action_set_count`](class_openxractionmap.md#class_openxractionmap_method_get_action_set_count) ( ) const[^const]                                                                                    |
+| [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) | [`get_interaction_profile`](class_openxractionmap.md#class_openxractionmap_method_get_interaction_profile) ( idx: [`int`](class_int.md) ) const[^const]                                                   |
+| [`int`](class_int.md)                                           | [`get_interaction_profile_count`](class_openxractionmap.md#class_openxractionmap_method_get_interaction_profile_count) ( ) const[^const]                                                                  |
+| `void`                                                          | [`remove_action_set`](class_openxractionmap.md#class_openxractionmap_method_remove_action_set) ( action_set: [`OpenXRActionSet`](class_openxractionset.md) )                                              |
+| `void`                                                          | [`remove_interaction_profile`](class_openxractionmap.md#class_openxractionmap_method_remove_interaction_profile) ( interaction_profile: [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

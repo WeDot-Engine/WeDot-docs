@@ -21,9 +21,9 @@ Stores general information about mouse events.
 
 |||
 |:-:|:--|
-| [MouseButtonMask](#enum_@globalscope_mousebuttonmask) | [`button_mask`](#class_inputeventmouse_property_button_mask)         | ``0``             |
-| [`Vector2`](class_vector2.md)                         | [`global_position`](#class_inputeventmouse_property_global_position) | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md)                         | [`position`](#class_inputeventmouse_property_position)               | ``Vector2(0, 0)`` |
+| [MouseButtonMask](#enum_@globalscope_mousebuttonmask) | [`button_mask`](class_inputeventmouse.md#class_inputeventmouse_property_button_mask)         | ``0``             |
+| [`Vector2`](class_vector2.md)                         | [`global_position`](class_inputeventmouse.md#class_inputeventmouse_property_global_position) | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md)                         | [`position`](class_inputeventmouse.md#class_inputeventmouse_property_position)               | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -51,9 +51,9 @@ The mouse button mask identifier, one of or a bitwise combination of the [MouseB
 - `void` **set_global_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_global_position** ( )
 
-When received in [`Node._input`](#class_node_private_method__input) or [`Node._unhandled_input`](#class_node_private_method__unhandled_input), returns the mouse's position in the root [`Viewport`](class_viewport.md) using the coordinate system of the root [`Viewport`](class_viewport.md).
+When received in [`Node._input`](class_node.md#class_node_private_method__input) or [`Node._unhandled_input`](class_node.md#class_node_private_method__unhandled_input), returns the mouse's position in the root [`Viewport`](class_viewport.md) using the coordinate system of the root [`Viewport`](class_viewport.md).
 
-When received in [`Control._gui_input`](#class_control_private_method__gui_input), returns the mouse's position in the [`CanvasLayer`](class_canvaslayer.md) that the [`Control`](class_control.md) is in using the coordinate system of the [`CanvasLayer`](class_canvaslayer.md).
+When received in [`Control._gui_input`](class_control.md#class_control_private_method__gui_input), returns the mouse's position in the [`CanvasLayer`](class_canvaslayer.md) that the [`Control`](class_control.md) is in using the coordinate system of the [`CanvasLayer`](class_canvaslayer.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -66,9 +66,9 @@ When received in [`Control._gui_input`](#class_control_private_method__gui_input
 - `void` **set_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_position** ( )
 
-When received in [`Node._input`](#class_node_private_method__input) or [`Node._unhandled_input`](#class_node_private_method__unhandled_input), returns the mouse's position in the [`Viewport`](class_viewport.md) this [`Node`](class_node.md) is in using the coordinate system of this [`Viewport`](class_viewport.md).
+When received in [`Node._input`](class_node.md#class_node_private_method__input) or [`Node._unhandled_input`](class_node.md#class_node_private_method__unhandled_input), returns the mouse's position in the [`Viewport`](class_viewport.md) this [`Node`](class_node.md) is in using the coordinate system of this [`Viewport`](class_viewport.md).
 
-When received in [`Control._gui_input`](#class_control_private_method__gui_input), returns the mouse's position in the [`Control`](class_control.md) using the local coordinate system of the [`Control`](class_control.md).
+When received in [`Control._gui_input`](class_control.md#class_control_private_method__gui_input), returns the mouse's position in the [`Control`](class_control.md) using the local coordinate system of the [`Control`](class_control.md).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

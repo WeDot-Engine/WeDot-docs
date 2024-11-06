@@ -21,11 +21,11 @@ An interface to a game world that doesn't create a window or draw to the screen 
 
 |||
 |:-:|:--|
-| [ClearMode](#enum_subviewport_clearmode)   | [`render_target_clear_mode`](#class_subviewport_property_render_target_clear_mode)   | ``0``                  |
-| [UpdateMode](#enum_subviewport_updatemode) | [`render_target_update_mode`](#class_subviewport_property_render_target_update_mode) | ``2``                  |
-| [`Vector2i`](class_vector2i.md)            | [`size`](#class_subviewport_property_size)                                           | ``Vector2i(512, 512)`` |
-| [`Vector2i`](class_vector2i.md)            | [`size_2d_override`](#class_subviewport_property_size_2d_override)                   | ``Vector2i(0, 0)``     |
-| [`bool`](class_bool.md)                    | [`size_2d_override_stretch`](#class_subviewport_property_size_2d_override_stretch)   | ``false``              |
+| [ClearMode](#enum_subviewport_clearmode)   | [`render_target_clear_mode`](class_subviewport.md#class_subviewport_property_render_target_clear_mode)   | ``0``                  |
+| [UpdateMode](#enum_subviewport_updatemode) | [`render_target_update_mode`](class_subviewport.md#class_subviewport_property_render_target_update_mode) | ``2``                  |
+| [`Vector2i`](class_vector2i.md)            | [`size`](class_subviewport.md#class_subviewport_property_size)                                           | ``Vector2i(512, 512)`` |
+| [`Vector2i`](class_vector2i.md)            | [`size_2d_override`](class_subviewport.md#class_subviewport_property_size_2d_override)                   | ``Vector2i(0, 0)``     |
+| [`bool`](class_bool.md)                    | [`size_2d_override_stretch`](class_subviewport.md#class_subviewport_property_size_2d_override_stretch)   | ``false``              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -53,7 +53,7 @@ Never clear the render target.
 
 [ClearMode](#enum_subviewport_clearmode) **CLEAR_MODE_ONCE** = ``2``
 
-Clear the render target on the next frame, then switch to [`CLEAR_MODE_NEVER`](#class_subviewport_constant_clear_mode_never).
+Clear the render target on the next frame, then switch to [`CLEAR_MODE_NEVER`](class_subviewport.md#class_subviewport_constant_clear_mode_never).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -73,7 +73,7 @@ Do not update the render target.
 
 [UpdateMode](#enum_subviewport_updatemode) **UPDATE_ONCE** = ``1``
 
-Update the render target once, then switch to [`UPDATE_DISABLED`](#class_subviewport_constant_update_disabled).
+Update the render target once, then switch to [`UPDATE_DISABLED`](class_subviewport.md#class_subviewport_constant_update_disabled).
 
 <div id="_class_subviewport_constant_update_when_visible"></div>
 
@@ -136,7 +136,7 @@ The update mode when the sub-viewport is used as a render target.
 
 The width and height of the sub-viewport. Must be set to a value greater than or equal to 2 pixels on both dimensions. Otherwise, nothing will be displayed.
 
- **Note:** If the parent node is a [`SubViewportContainer`](class_subviewportcontainer.md) and its [`SubViewportContainer.stretch`](#class_subviewportcontainer_property_stretch) is `true`, the viewport size cannot be changed manually.
+ **Note:** If the parent node is a [`SubViewportContainer`](class_subviewportcontainer.md) and its [`SubViewportContainer.stretch`](class_subviewportcontainer.md#class_subviewportcontainer_property_stretch) is `true`, the viewport size cannot be changed manually.
 
 <!-- rst-class:: classref-item-separator -->
 

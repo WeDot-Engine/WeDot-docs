@@ -11,9 +11,9 @@ A color represented in RGBA format.
 
 ## 描述
 
-A color represented in RGBA format by a red ([`r`](#class_color_property_r)), green ([`g`](#class_color_property_g)), blue ([`b`](#class_color_property_b)), and alpha ([`a`](#class_color_property_a)) component. Each component is a 32-bit floating-point value, usually ranging from `0.0` to `1.0`. Some properties (such as [`CanvasItem.modulate`](#class_canvasitem_property_modulate)) may support values greater than `1.0`, for overbright or HDR (High Dynamic Range) colors.
+A color represented in RGBA format by a red ([`r`](class_color.md#class_color_property_r)), green ([`g`](class_color.md#class_color_property_g)), blue ([`b`](class_color.md#class_color_property_b)), and alpha ([`a`](class_color.md#class_color_property_a)) component. Each component is a 32-bit floating-point value, usually ranging from `0.0` to `1.0`. Some properties (such as [`CanvasItem.modulate`](class_canvasitem.md#class_canvasitem_property_modulate)) may support values greater than `1.0`, for overbright or HDR (High Dynamic Range) colors.
 
-Colors can be created in various ways: By the various **Color** constructors, by static methods such as [`from_hsv`](#class_color_method_from_hsv), and by using a name from the set of standardized colors based on [*X11 color names*](https://en.wikipedia.org/wiki/X11_color_names) with the addition of [`TRANSPARENT`](#class_color_constant_transparent). GDScript also provides [`@GDScript.Color8`](#class_@gdscript_method_color8), which uses integers from `0` to `255` and doesn't support overbright colors.
+Colors can be created in various ways: By the various **Color** constructors, by static methods such as [`from_hsv`](class_color.md#class_color_method_from_hsv), and by using a name from the set of standardized colors based on [*X11 color names*](https://en.wikipedia.org/wiki/X11_color_names) with the addition of [`TRANSPARENT`](class_color.md#class_color_constant_transparent). GDScript also provides [`@GDScript.Color8`](class_@gdscript.md#class_@gdscript_method_color8), which uses integers from `0` to `255` and doesn't support overbright colors.
 
  **Note:** In a boolean context, a Color will evaluate to `false` if it is equal to `Color(0, 0, 0, 1)` (opaque black). Otherwise, a Color will always evaluate to `true`.
 
@@ -25,59 +25,59 @@ Colors can be created in various ways: By the various **Color** constructors, by
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`a`](#class_color_property_a)   | ``1.0`` |
-| [`int`](class_int.md)     | [`a8`](#class_color_property_a8) | ``255`` |
-| [`float`](class_float.md) | [`b`](#class_color_property_b)   | ``0.0`` |
-| [`int`](class_int.md)     | [`b8`](#class_color_property_b8) | ``0``   |
-| [`float`](class_float.md) | [`g`](#class_color_property_g)   | ``0.0`` |
-| [`int`](class_int.md)     | [`g8`](#class_color_property_g8) | ``0``   |
-| [`float`](class_float.md) | [`h`](#class_color_property_h)   | ``0.0`` |
-| [`float`](class_float.md) | [`r`](#class_color_property_r)   | ``0.0`` |
-| [`int`](class_int.md)     | [`r8`](#class_color_property_r8) | ``0``   |
-| [`float`](class_float.md) | [`s`](#class_color_property_s)   | ``0.0`` |
-| [`float`](class_float.md) | [`v`](#class_color_property_v)   | ``0.0`` |
+| [`float`](class_float.md) | [`a`](class_color.md#class_color_property_a)   | ``1.0`` |
+| [`int`](class_int.md)     | [`a8`](class_color.md#class_color_property_a8) | ``255`` |
+| [`float`](class_float.md) | [`b`](class_color.md#class_color_property_b)   | ``0.0`` |
+| [`int`](class_int.md)     | [`b8`](class_color.md#class_color_property_b8) | ``0``   |
+| [`float`](class_float.md) | [`g`](class_color.md#class_color_property_g)   | ``0.0`` |
+| [`int`](class_int.md)     | [`g8`](class_color.md#class_color_property_g8) | ``0``   |
+| [`float`](class_float.md) | [`h`](class_color.md#class_color_property_h)   | ``0.0`` |
+| [`float`](class_float.md) | [`r`](class_color.md#class_color_property_r)   | ``0.0`` |
+| [`int`](class_int.md)     | [`r8`](class_color.md#class_color_property_r8) | ``0``   |
+| [`float`](class_float.md) | [`s`](class_color.md#class_color_property_s)   | ``0.0`` |
+| [`float`](class_float.md) | [`v`](class_color.md#class_color_property_v)   | ``0.0`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( )                                                                                                                        |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( from: [`Color`](class_color.md), alpha: [`float`](class_float.md) )                                                      |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( from: [`Color`](class_color.md) )                                                                                        |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( code: [`String`](class_string.md) )                                                                                      |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( code: [`String`](class_string.md), alpha: [`float`](class_float.md) )                                                    |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md) )                               |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md), a: [`float`](class_float.md) ) |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( )                                                                                                                        |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( from: [`Color`](class_color.md), alpha: [`float`](class_float.md) )                                                      |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( from: [`Color`](class_color.md) )                                                                                        |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( code: [`String`](class_string.md) )                                                                                      |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( code: [`String`](class_string.md), alpha: [`float`](class_float.md) )                                                    |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md) )                               |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md), a: [`float`](class_float.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)   | [`blend`](#class_color_method_blend) ( over: [`Color`](class_color.md) ) const[^const]                                                                                                                |
-| [`Color`](class_color.md)   | [`clamp`](#class_color_method_clamp) ( min: [`Color`](class_color.md) = Color(0, 0, 0, 0), max: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                         |
-| [`Color`](class_color.md)   | [`darkened`](#class_color_method_darkened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                        |
-| [`Color`](class_color.md)   | [`from_hsv`](#class_color_method_from_hsv) ( h: [`float`](class_float.md), s: [`float`](class_float.md), v: [`float`](class_float.md), alpha: [`float`](class_float.md) = 1.0 ) static[^static]       |
-| [`Color`](class_color.md)   | [`from_ok_hsl`](#class_color_method_from_ok_hsl) ( h: [`float`](class_float.md), s: [`float`](class_float.md), l: [`float`](class_float.md), alpha: [`float`](class_float.md) = 1.0 ) static[^static] |
-| [`Color`](class_color.md)   | [`from_rgbe9995`](#class_color_method_from_rgbe9995) ( rgbe: [`int`](class_int.md) ) static[^static]                                                                                                  |
-| [`Color`](class_color.md)   | [`from_string`](#class_color_method_from_string) ( str: [`String`](class_string.md), default: [`Color`](class_color.md) ) static[^static]                                                             |
-| [`float`](class_float.md)   | [`get_luminance`](#class_color_method_get_luminance) ( ) const[^const]                                                                                                                                |
-| [`Color`](class_color.md)   | [`hex`](#class_color_method_hex) ( hex: [`int`](class_int.md) ) static[^static]                                                                                                                       |
-| [`Color`](class_color.md)   | [`hex64`](#class_color_method_hex64) ( hex: [`int`](class_int.md) ) static[^static]                                                                                                                   |
-| [`Color`](class_color.md)   | [`html`](#class_color_method_html) ( rgba: [`String`](class_string.md) ) static[^static]                                                                                                              |
-| [`bool`](class_bool.md)     | [`html_is_valid`](#class_color_method_html_is_valid) ( color: [`String`](class_string.md) ) static[^static]                                                                                           |
-| [`Color`](class_color.md)   | [`inverted`](#class_color_method_inverted) ( ) const[^const]                                                                                                                                          |
-| [`bool`](class_bool.md)     | [`is_equal_approx`](#class_color_method_is_equal_approx) ( to: [`Color`](class_color.md) ) const[^const]                                                                                              |
-| [`Color`](class_color.md)   | [`lerp`](#class_color_method_lerp) ( to: [`Color`](class_color.md), weight: [`float`](class_float.md) ) const[^const]                                                                                 |
-| [`Color`](class_color.md)   | [`lightened`](#class_color_method_lightened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                      |
-| [`Color`](class_color.md)   | [`linear_to_srgb`](#class_color_method_linear_to_srgb) ( ) const[^const]                                                                                                                              |
-| [`Color`](class_color.md)   | [`srgb_to_linear`](#class_color_method_srgb_to_linear) ( ) const[^const]                                                                                                                              |
-| [`int`](class_int.md)       | [`to_abgr32`](#class_color_method_to_abgr32) ( ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)       | [`to_abgr64`](#class_color_method_to_abgr64) ( ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)       | [`to_argb32`](#class_color_method_to_argb32) ( ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)       | [`to_argb64`](#class_color_method_to_argb64) ( ) const[^const]                                                                                                                                        |
-| [`String`](class_string.md) | [`to_html`](#class_color_method_to_html) ( with_alpha: [`bool`](class_bool.md) = true ) const[^const]                                                                                                 |
-| [`int`](class_int.md)       | [`to_rgba32`](#class_color_method_to_rgba32) ( ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)       | [`to_rgba64`](#class_color_method_to_rgba64) ( ) const[^const]                                                                                                                                        |
+| [`Color`](class_color.md)   | [`blend`](class_color.md#class_color_method_blend) ( over: [`Color`](class_color.md) ) const[^const]                                                                                                                |
+| [`Color`](class_color.md)   | [`clamp`](class_color.md#class_color_method_clamp) ( min: [`Color`](class_color.md) = Color(0, 0, 0, 0), max: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                         |
+| [`Color`](class_color.md)   | [`darkened`](class_color.md#class_color_method_darkened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                        |
+| [`Color`](class_color.md)   | [`from_hsv`](class_color.md#class_color_method_from_hsv) ( h: [`float`](class_float.md), s: [`float`](class_float.md), v: [`float`](class_float.md), alpha: [`float`](class_float.md) = 1.0 ) static[^static]       |
+| [`Color`](class_color.md)   | [`from_ok_hsl`](class_color.md#class_color_method_from_ok_hsl) ( h: [`float`](class_float.md), s: [`float`](class_float.md), l: [`float`](class_float.md), alpha: [`float`](class_float.md) = 1.0 ) static[^static] |
+| [`Color`](class_color.md)   | [`from_rgbe9995`](class_color.md#class_color_method_from_rgbe9995) ( rgbe: [`int`](class_int.md) ) static[^static]                                                                                                  |
+| [`Color`](class_color.md)   | [`from_string`](class_color.md#class_color_method_from_string) ( str: [`String`](class_string.md), default: [`Color`](class_color.md) ) static[^static]                                                             |
+| [`float`](class_float.md)   | [`get_luminance`](class_color.md#class_color_method_get_luminance) ( ) const[^const]                                                                                                                                |
+| [`Color`](class_color.md)   | [`hex`](class_color.md#class_color_method_hex) ( hex: [`int`](class_int.md) ) static[^static]                                                                                                                       |
+| [`Color`](class_color.md)   | [`hex64`](class_color.md#class_color_method_hex64) ( hex: [`int`](class_int.md) ) static[^static]                                                                                                                   |
+| [`Color`](class_color.md)   | [`html`](class_color.md#class_color_method_html) ( rgba: [`String`](class_string.md) ) static[^static]                                                                                                              |
+| [`bool`](class_bool.md)     | [`html_is_valid`](class_color.md#class_color_method_html_is_valid) ( color: [`String`](class_string.md) ) static[^static]                                                                                           |
+| [`Color`](class_color.md)   | [`inverted`](class_color.md#class_color_method_inverted) ( ) const[^const]                                                                                                                                          |
+| [`bool`](class_bool.md)     | [`is_equal_approx`](class_color.md#class_color_method_is_equal_approx) ( to: [`Color`](class_color.md) ) const[^const]                                                                                              |
+| [`Color`](class_color.md)   | [`lerp`](class_color.md#class_color_method_lerp) ( to: [`Color`](class_color.md), weight: [`float`](class_float.md) ) const[^const]                                                                                 |
+| [`Color`](class_color.md)   | [`lightened`](class_color.md#class_color_method_lightened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                      |
+| [`Color`](class_color.md)   | [`linear_to_srgb`](class_color.md#class_color_method_linear_to_srgb) ( ) const[^const]                                                                                                                              |
+| [`Color`](class_color.md)   | [`srgb_to_linear`](class_color.md#class_color_method_srgb_to_linear) ( ) const[^const]                                                                                                                              |
+| [`int`](class_int.md)       | [`to_abgr32`](class_color.md#class_color_method_to_abgr32) ( ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)       | [`to_abgr64`](class_color.md#class_color_method_to_abgr64) ( ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)       | [`to_argb32`](class_color.md#class_color_method_to_argb32) ( ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)       | [`to_argb64`](class_color.md#class_color_method_to_argb64) ( ) const[^const]                                                                                                                                        |
+| [`String`](class_string.md) | [`to_html`](class_color.md#class_color_method_to_html) ( with_alpha: [`bool`](class_bool.md) = true ) const[^const]                                                                                                 |
+| [`int`](class_int.md)       | [`to_rgba32`](class_color.md#class_color_method_to_rgba32) ( ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)       | [`to_rgba64`](class_color.md#class_color_method_to_rgba64) ( ) const[^const]                                                                                                                                        |
 
 ## 运算符
 
@@ -999,7 +999,7 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 [`int`](class_int.md) **a8** = ``255`` <div id="class_color_property_a8"></div>
 
-Wrapper for [`a`](#class_color_property_a) that uses the range 0 to 255, instead of 0 to 1.
+Wrapper for [`a`](class_color.md#class_color_property_a) that uses the range 0 to 255, instead of 0 to 1.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1019,7 +1019,7 @@ The color's blue component, typically on the range of 0 to 1.
 
 [`int`](class_int.md) **b8** = ``0`` <div id="class_color_property_b8"></div>
 
-Wrapper for [`b`](#class_color_property_b) that uses the range 0 to 255, instead of 0 to 1.
+Wrapper for [`b`](class_color.md#class_color_property_b) that uses the range 0 to 255, instead of 0 to 1.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1039,7 +1039,7 @@ The color's green component, typically on the range of 0 to 1.
 
 [`int`](class_int.md) **g8** = ``0`` <div id="class_color_property_g8"></div>
 
-Wrapper for [`g`](#class_color_property_g) that uses the range 0 to 255, instead of 0 to 1.
+Wrapper for [`g`](class_color.md#class_color_property_g) that uses the range 0 to 255, instead of 0 to 1.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1069,7 +1069,7 @@ The color's red component, typically on the range of 0 to 1.
 
 [`int`](class_int.md) **r8** = ``0`` <div id="class_color_property_r8"></div>
 
-Wrapper for [`r`](#class_color_property_r) that uses the range 0 to 255, instead of 0 to 1.
+Wrapper for [`r`](class_color.md#class_color_property_r) that uses the range 0 to 255, instead of 0 to 1.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1101,7 +1101,7 @@ The HSV value (brightness) of this color, on the range 0 to 1.
 
 [`Color`](class_color.md) **Color** ( )<div id="class_color_constructor_color"></div>
 
-Constructs a default **Color** from opaque black. This is the same as [`BLACK`](#class_color_constant_black).
+Constructs a default **Color** from opaque black. This is the same as [`BLACK`](class_color.md#class_color_constant_black).
 
  **Note:** in C#, constructs an empty color with all of its components set to `0.0` (transparent black).
 
@@ -1111,7 +1111,7 @@ Constructs a default **Color** from opaque black. This is the same as [`BLACK`](
 
 [`Color`](class_color.md) **Color** ( from: [`Color`](class_color.md), alpha: [`float`](class_float.md) )
 
-Constructs a **Color** from the existing color, with [`a`](#class_color_property_a) set to the given `alpha` value.
+Constructs a **Color** from the existing color, with [`a`](class_color.md#class_color_property_a) set to the given `alpha` value.
 
 
 
@@ -1161,7 +1161,7 @@ Constructs a **Color** either from an HTML color code or from a standardized col
 
 [`Color`](class_color.md) **Color** ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md) )
 
-Constructs a **Color** from RGB values, typically between 0.0 and 1.0. [`a`](#class_color_property_a) is set to 1.0.
+Constructs a **Color** from RGB values, typically between 0.0 and 1.0. [`a`](class_color.md#class_color_property_a) is set to 1.0.
 
 
 
@@ -1249,7 +1249,7 @@ Returns a new color resulting from overlaying this color over the given color. I
 
 [`Color`](class_color.md) **clamp** ( min: [`Color`](class_color.md) = Color(0, 0, 0, 0), max: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]<div id="class_color_method_clamp"></div>
 
-Returns a new color with all components clamped between the components of `min` and `max`, by running [`@GlobalScope.clamp`](#class_@globalscope_method_clamp) on each component.
+Returns a new color with all components clamped between the components of `min` and `max`, by running [`@GlobalScope.clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1259,7 +1259,7 @@ Returns a new color with all components clamped between the components of `min` 
 
 [`Color`](class_color.md) **darkened** ( amount: [`float`](class_float.md) ) const[^const]<div id="class_color_method_darkened"></div>
 
-Returns a new color resulting from making this color darker by the specified `amount` (ratio from 0.0 to 1.0). See also [`lightened`](#class_color_method_lightened).
+Returns a new color resulting from making this color darker by the specified `amount` (ratio from 0.0 to 1.0). See also [`lightened`](class_color.md#class_color_method_lightened).
 
 
 
@@ -1345,7 +1345,7 @@ Constructs a color from an [*OK HSL profile*](https://bottosson.github.io/posts/
 
 [`Color`](class_color.md) **from_rgbe9995** ( rgbe: [`int`](class_int.md) ) static[^static]<div id="class_color_method_from_rgbe9995"></div>
 
-Decodes a **Color** from an RGBE9995 format integer. See [`Image.FORMAT_RGBE9995`](#class_image_constant_format_rgbe9995).
+Decodes a **Color** from an RGBE9995 format integer. See [`Image.FORMAT_RGBE9995`](class_image.md#class_image_constant_format_rgbe9995).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1369,7 +1369,7 @@ If you want to create a color from String in a constant expression, use the equi
 
 Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclusive). This is useful when determining light or dark color. Colors with a luminance smaller than 0.5 can be generally considered dark.
 
- **Note:** [`get_luminance`](#class_color_method_get_luminance) relies on the color being in the linear color space to return an accurate relative luminance value. If the color is in the sRGB color space, use [`srgb_to_linear`](#class_color_method_srgb_to_linear) to convert it to the linear color space first.
+ **Note:** [`get_luminance`](class_color.md#class_color_method_get_luminance) relies on the color being in the linear color space to return an accurate relative luminance value. If the color is in the sRGB color space, use [`srgb_to_linear`](class_color.md#class_color_method_srgb_to_linear) to convert it to the linear color space first.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1379,7 +1379,7 @@ Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclus
 
 [`Color`](class_color.md) **hex** ( hex: [`int`](class_int.md) ) static[^static]<div id="class_color_method_hex"></div>
 
-Returns the **Color** associated with the provided `hex` integer in 32-bit RGBA format (8 bits per channel). This method is the inverse of [`to_rgba32`](#class_color_method_to_rgba32).
+Returns the **Color** associated with the provided `hex` integer in 32-bit RGBA format (8 bits per channel). This method is the inverse of [`to_rgba32`](class_color.md#class_color_method_to_rgba32).
 
 In GDScript and C#, the [`int`](class_int.md) is best visualized with hexadecimal notation (`"0x"` prefix, making it `"0xRRGGBBAA"`).
 
@@ -1415,7 +1415,7 @@ If you want to use hex notation in a constant expression, use the equivalent con
 
 [`Color`](class_color.md) **hex64** ( hex: [`int`](class_int.md) ) static[^static]<div id="class_color_method_hex64"></div>
 
-Returns the **Color** associated with the provided `hex` integer in 64-bit RGBA format (16 bits per channel). This method is the inverse of [`to_rgba64`](#class_color_method_to_rgba64).
+Returns the **Color** associated with the provided `hex` integer in 64-bit RGBA format (16 bits per channel). This method is the inverse of [`to_rgba64`](class_color.md#class_color_method_to_rgba64).
 
 In GDScript and C#, the [`int`](class_int.md) is best visualized with hexadecimal notation (`"0x"` prefix, making it `"0xRRRRGGGGBBBBAAAA"`).
 
@@ -1461,7 +1461,7 @@ Returns a new color from `rgba`, an HTML hexadecimal color string. `rgba` is not
 
 [`bool`](class_bool.md) **html_is_valid** ( color: [`String`](class_string.md) ) static[^static]<div id="class_color_method_html_is_valid"></div>
 
-Returns `true` if `color` is a valid HTML hexadecimal color string. The string must be a hexadecimal value (case-insensitive) of either 3, 4, 6 or 8 digits, and may be prefixed by a hash sign (`#`). This method is identical to [`String.is_valid_html_color`](#class_string_method_is_valid_html_color).
+Returns `true` if `color` is a valid HTML hexadecimal color string. The string must be a hexadecimal value (case-insensitive) of either 3, 4, 6 or 8 digits, and may be prefixed by a hash sign (`#`). This method is identical to [`String.is_valid_html_color`](class_string.md#class_string_method_is_valid_html_color).
 
 
 
@@ -1501,7 +1501,7 @@ Returns `true` if `color` is a valid HTML hexadecimal color string. The string m
 
 [`Color`](class_color.md) **inverted** ( ) const[^const]<div id="class_color_method_inverted"></div>
 
-Returns the color with its [`r`](#class_color_property_r), [`g`](#class_color_property_g), and [`b`](#class_color_property_b) components inverted (`(1 - r, 1 - g, 1 - b, a)`).
+Returns the color with its [`r`](class_color.md#class_color_property_r), [`g`](class_color.md#class_color_property_g), and [`b`](class_color.md#class_color_property_b) components inverted (`(1 - r, 1 - g, 1 - b, a)`).
 
 
 
@@ -1533,7 +1533,7 @@ Returns the color with its [`r`](#class_color_property_r), [`g`](#class_color_pr
 
 [`bool`](class_bool.md) **is_equal_approx** ( to: [`Color`](class_color.md) ) const[^const]<div id="class_color_method_is_equal_approx"></div>
 
-Returns `true` if this color and `to` are approximately equal, by running [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) on each component.
+Returns `true` if this color and `to` are approximately equal, by running [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1543,7 +1543,7 @@ Returns `true` if this color and `to` are approximately equal, by running [`@Glo
 
 [`Color`](class_color.md) **lerp** ( to: [`Color`](class_color.md), weight: [`float`](class_float.md) ) const[^const]<div id="class_color_method_lerp"></div>
 
-Returns the linear interpolation between this color's components and `to`'s components. The interpolation factor `weight` should be between 0.0 and 1.0 (inclusive). See also [`@GlobalScope.lerp`](#class_@globalscope_method_lerp).
+Returns the linear interpolation between this color's components and `to`'s components. The interpolation factor `weight` should be between 0.0 and 1.0 (inclusive). See also [`@GlobalScope.lerp`](class_@globalscope.md#class_@globalscope_method_lerp).
 
 
 
@@ -1581,7 +1581,7 @@ Returns the linear interpolation between this color's components and `to`'s comp
 
 [`Color`](class_color.md) **lightened** ( amount: [`float`](class_float.md) ) const[^const]<div id="class_color_method_lightened"></div>
 
-Returns a new color resulting from making this color lighter by the specified `amount`, which should be a ratio from 0.0 to 1.0. See also [`darkened`](#class_color_method_darkened).
+Returns a new color resulting from making this color lighter by the specified `amount`, which should be a ratio from 0.0 to 1.0. See also [`darkened`](class_color.md#class_color_method_darkened).
 
 
 
@@ -1611,7 +1611,7 @@ Returns a new color resulting from making this color lighter by the specified `a
 
 [`Color`](class_color.md) **linear_to_srgb** ( ) const[^const]<div id="class_color_method_linear_to_srgb"></div>
 
-Returns the color converted to the [*sRGB*](https://en.wikipedia.org/wiki/SRGB) color space. This method assumes the original color is in the linear color space. See also [`srgb_to_linear`](#class_color_method_srgb_to_linear) which performs the opposite operation.
+Returns the color converted to the [*sRGB*](https://en.wikipedia.org/wiki/SRGB) color space. This method assumes the original color is in the linear color space. See also [`srgb_to_linear`](class_color.md#class_color_method_srgb_to_linear) which performs the opposite operation.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1621,7 +1621,7 @@ Returns the color converted to the [*sRGB*](https://en.wikipedia.org/wiki/SRGB) 
 
 [`Color`](class_color.md) **srgb_to_linear** ( ) const[^const]<div id="class_color_method_srgb_to_linear"></div>
 
-Returns the color converted to the linear color space. This method assumes the original color already is in the sRGB color space. See also [`linear_to_srgb`](#class_color_method_linear_to_srgb) which performs the opposite operation.
+Returns the color converted to the linear color space. This method assumes the original color already is in the sRGB color space. See also [`linear_to_srgb`](class_color.md#class_color_method_linear_to_srgb) which performs the opposite operation.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1785,7 +1785,7 @@ Setting `with_alpha` to `false`, excludes alpha from the hexadecimal string, usi
 
 [`int`](class_int.md) **to_rgba32** ( ) const[^const]<div id="class_color_method_to_rgba32"></div>
 
-Returns the color converted to a 32-bit integer in RGBA format (each component is 8 bits). RGBA is Godot's default format. This method is the inverse of [`hex`](#class_color_method_hex).
+Returns the color converted to a 32-bit integer in RGBA format (each component is 8 bits). RGBA is Godot's default format. This method is the inverse of [`hex`](class_color.md#class_color_method_hex).
 
 
 
@@ -1815,7 +1815,7 @@ Returns the color converted to a 32-bit integer in RGBA format (each component i
 
 [`int`](class_int.md) **to_rgba64** ( ) const[^const]<div id="class_color_method_to_rgba64"></div>
 
-Returns the color converted to a 64-bit integer in RGBA format (each component is 16 bits). RGBA is Godot's default format. This method is the inverse of [`hex64`](#class_color_method_hex64).
+Returns the color converted to a 64-bit integer in RGBA format (each component is 16 bits). RGBA is Godot's default format. This method is the inverse of [`hex64`](class_color.md#class_color_method_hex64).
 
 
 
@@ -1849,7 +1849,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 Returns `true` if the colors are not exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_color_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_color.md#class_color_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1941,7 +1941,7 @@ Divides each component of the **Color** by the given [`int`](class_int.md).
 
 Returns `true` if the colors are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_color_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_color.md#class_color_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1951,7 +1951,7 @@ Returns `true` if the colors are exactly equal.
 
 [`float`](class_float.md) **operator []** ( index: [`int`](class_int.md) ) <div id="class_color_operator_idx_int"></div>
 
-Access color components using their index. `[0]` is equivalent to [`r`](#class_color_property_r), `[1]` is equivalent to [`g`](#class_color_property_g), `[2]` is equivalent to [`b`](#class_color_property_b), and `[3]` is equivalent to [`a`](#class_color_property_a).
+Access color components using their index. `[0]` is equivalent to [`r`](class_color.md#class_color_property_r), `[1]` is equivalent to [`g`](class_color.md#class_color_property_g), `[2]` is equivalent to [`b`](class_color.md#class_color_property_b), and `[3]` is equivalent to [`a`](class_color.md#class_color_property_a).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1971,7 +1971,7 @@ Returns the same value as if the `+` was not there. Unary `+` does nothing, but 
 
 [`Color`](class_color.md) **operator unary-** ( ) <div id="class_color_operator_unminus"></div>
 
-Inverts the given color. This is equivalent to `Color.WHITE - c` or `Color(1 - c.r, 1 - c.g, 1 - c.b, 1 - c.a)`. Unlike with [`inverted`](#class_color_method_inverted), the [`a`](#class_color_property_a) component is inverted, too.
+Inverts the given color. This is equivalent to `Color.WHITE - c` or `Color(1 - c.r, 1 - c.g, 1 - c.b, 1 - c.a)`. Unlike with [`inverted`](class_color.md#class_color_method_inverted), the [`a`](class_color.md#class_color_property_a) component is inverted, too.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

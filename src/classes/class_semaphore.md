@@ -27,9 +27,9 @@ A synchronization semaphore that can be used to synchronize multiple [`Thread`](
 
 |||
 |:-:|:--|
-| `void`                  | [`post`](#class_semaphore_method_post) ( )         |
-| [`bool`](class_bool.md) | [`try_wait`](#class_semaphore_method_try_wait) ( ) |
-| `void`                  | [`wait`](#class_semaphore_method_wait) ( )         |
+| `void`                  | [`post`](class_semaphore.md#class_semaphore_method_post) ( )         |
+| [`bool`](class_bool.md) | [`try_wait`](class_semaphore.md#class_semaphore_method_try_wait) ( ) |
+| `void`                  | [`wait`](class_semaphore.md#class_semaphore_method_wait) ( )         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -51,7 +51,7 @@ Lowers the **Semaphore**, allowing one more thread in.
 
 [`bool`](class_bool.md) **try_wait** ( )<div id="class_semaphore_method_try_wait"></div>
 
-Like [`wait`](#class_semaphore_method_wait), but won't block, so if the value is zero, fails immediately and returns `false`. If non-zero, it returns `true` to report success.
+Like [`wait`](class_semaphore.md#class_semaphore_method_wait), but won't block, so if the value is zero, fails immediately and returns `false`. If non-zero, it returns `true` to report success.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -9,24 +9,24 @@
 
 **继承：** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Provides parameters for [`PhysicsServer3D.body_test_motion`](#class_physicsserver3d_method_body_test_motion).
+Provides parameters for [`PhysicsServer3D.body_test_motion`](class_physicsserver3d.md#class_physicsserver3d_method_body_test_motion).
 
 ## 描述
 
-By changing various properties of this object, such as the motion, you can configure the parameters for [`PhysicsServer3D.body_test_motion`](#class_physicsserver3d_method_body_test_motion).
+By changing various properties of this object, such as the motion, you can configure the parameters for [`PhysicsServer3D.body_test_motion`](class_physicsserver3d.md#class_physicsserver3d_method_body_test_motion).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                       | [`collide_separation_ray`](#class_physicstestmotionparameters3d_property_collide_separation_ray) | ``false``                                           |
-| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude_bodies`](#class_physicstestmotionparameters3d_property_exclude_bodies)                 | ``[]``                                              |
-| [Array](class_array.md) [`int`](class_int.md) | [`exclude_objects`](#class_physicstestmotionparameters3d_property_exclude_objects)               | ``[]``                                              |
-| [`Transform3D`](class_transform3d.md)         | [`from`](#class_physicstestmotionparameters3d_property_from)                                     | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
-| [`float`](class_float.md)                     | [`margin`](#class_physicstestmotionparameters3d_property_margin)                                 | ``0.001``                                           |
-| [`int`](class_int.md)                         | [`max_collisions`](#class_physicstestmotionparameters3d_property_max_collisions)                 | ``1``                                               |
-| [`Vector3`](class_vector3.md)                 | [`motion`](#class_physicstestmotionparameters3d_property_motion)                                 | ``Vector3(0, 0, 0)``                                |
-| [`bool`](class_bool.md)                       | [`recovery_as_collision`](#class_physicstestmotionparameters3d_property_recovery_as_collision)   | ``false``                                           |
+| [`bool`](class_bool.md)                       | [`collide_separation_ray`](class_physicstestmotionparameters3d.md#class_physicstestmotionparameters3d_property_collide_separation_ray) | ``false``                                           |
+| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude_bodies`](class_physicstestmotionparameters3d.md#class_physicstestmotionparameters3d_property_exclude_bodies)                 | ``[]``                                              |
+| [Array](class_array.md) [`int`](class_int.md) | [`exclude_objects`](class_physicstestmotionparameters3d.md#class_physicstestmotionparameters3d_property_exclude_objects)               | ``[]``                                              |
+| [`Transform3D`](class_transform3d.md)         | [`from`](class_physicstestmotionparameters3d.md#class_physicstestmotionparameters3d_property_from)                                     | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
+| [`float`](class_float.md)                     | [`margin`](class_physicstestmotionparameters3d.md#class_physicstestmotionparameters3d_property_margin)                                 | ``0.001``                                           |
+| [`int`](class_int.md)                         | [`max_collisions`](class_physicstestmotionparameters3d.md#class_physicstestmotionparameters3d_property_max_collisions)                 | ``1``                                               |
+| [`Vector3`](class_vector3.md)                 | [`motion`](class_physicstestmotionparameters3d.md#class_physicstestmotionparameters3d_property_motion)                                 | ``Vector3(0, 0, 0)``                                |
+| [`bool`](class_bool.md)                       | [`recovery_as_collision`](class_physicstestmotionparameters3d.md#class_physicstestmotionparameters3d_property_recovery_as_collision)   | ``false``                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -41,9 +41,9 @@ By changing various properties of this object, such as the motion, you can confi
 - `void` **set_collide_separation_ray_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_collide_separation_ray_enabled** ( )
 
-If set to `true`, shapes of type [`PhysicsServer3D.SHAPE_SEPARATION_RAY`](#class_physicsserver3d_constant_shape_separation_ray) are used to detect collisions and can stop the motion. Can be useful when snapping to the ground.
+If set to `true`, shapes of type [`PhysicsServer3D.SHAPE_SEPARATION_RAY`](class_physicsserver3d.md#class_physicsserver3d_constant_shape_separation_ray) are used to detect collisions and can stop the motion. Can be useful when snapping to the ground.
 
-If set to `false`, shapes of type [`PhysicsServer3D.SHAPE_SEPARATION_RAY`](#class_physicsserver3d_constant_shape_separation_ray) are only used for separation when overlapping with other bodies. That's the main use for separation ray shapes.
+If set to `false`, shapes of type [`PhysicsServer3D.SHAPE_SEPARATION_RAY`](class_physicsserver3d.md#class_physicsserver3d_constant_shape_separation_ray) are only used for separation when overlapping with other bodies. That's the main use for separation ray shapes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -56,7 +56,7 @@ If set to `false`, shapes of type [`PhysicsServer3D.SHAPE_SEPARATION_RAY`](#clas
 - `void` **set_exclude_bodies** ( value: [Array](class_array.md) [`RID`](class_rid.md) )
 - [Array](class_array.md) [`RID`](class_rid.md) **get_exclude_bodies** ( )
 
-Optional array of body [`RID`](class_rid.md) to exclude from collision. Use [`CollisionObject3D.get_rid`](#class_collisionobject3d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject3D`](class_collisionobject3d.md)-derived node.
+Optional array of body [`RID`](class_rid.md) to exclude from collision. Use [`CollisionObject3D.get_rid`](class_collisionobject3d.md#class_collisionobject3d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject3D`](class_collisionobject3d.md)-derived node.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -69,7 +69,7 @@ Optional array of body [`RID`](class_rid.md) to exclude from collision. Use [`Co
 - `void` **set_exclude_objects** ( value: [Array](class_array.md) [`int`](class_int.md) )
 - [Array](class_array.md) [`int`](class_int.md) **get_exclude_objects** ( )
 
-Optional array of object unique instance ID to exclude from collision. See [`Object.get_instance_id`](#class_object_method_get_instance_id).
+Optional array of object unique instance ID to exclude from collision. See [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -82,7 +82,7 @@ Optional array of object unique instance ID to exclude from collision. See [`Obj
 - `void` **set_from** ( value: [`Transform3D`](class_transform3d.md) )
 - [`Transform3D`](class_transform3d.md) **get_from** ( )
 
-Transform in global space where the motion should start. Usually set to [`Node3D.global_transform`](#class_node3d_property_global_transform) for the current body's transform.
+Transform in global space where the motion should start. Usually set to [`Node3D.global_transform`](class_node3d.md#class_node3d_property_global_transform) for the current body's transform.
 
 <!-- rst-class:: classref-item-separator -->
 

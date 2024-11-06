@@ -19,15 +19,15 @@ A sequence of Ogg packets.
 
 |||
 |:-:|:--|
-| [`PackedInt64Array`](class_packedint64array.md)   | [`granule_positions`](#class_oggpacketsequence_property_granule_positions) | ``PackedInt64Array()`` |
-| [Array](class_array.md) [`Array`](class_array.md) | [`packet_data`](#class_oggpacketsequence_property_packet_data)             | ``[]``                 |
-| [`float`](class_float.md)                         | [`sampling_rate`](#class_oggpacketsequence_property_sampling_rate)         | ``0.0``                |
+| [`PackedInt64Array`](class_packedint64array.md)   | [`granule_positions`](class_oggpacketsequence.md#class_oggpacketsequence_property_granule_positions) | ``PackedInt64Array()`` |
+| [Array](class_array.md) [`Array`](class_array.md) | [`packet_data`](class_oggpacketsequence.md#class_oggpacketsequence_property_packet_data)             | ``[]``                 |
+| [`float`](class_float.md)                         | [`sampling_rate`](class_oggpacketsequence.md#class_oggpacketsequence_property_sampling_rate)         | ``0.0``                |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_length`](#class_oggpacketsequence_method_get_length) ( ) const[^const] |
+| [`float`](class_float.md) | [`get_length`](class_oggpacketsequence.md#class_oggpacketsequence_method_get_length) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

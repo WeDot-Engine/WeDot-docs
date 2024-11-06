@@ -19,25 +19,25 @@ A node that displays a 2D texture. The texture displayed can be a region from a 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)           | [`centered`](#class_sprite2d_property_centered)                                     | ``true``              |
-| [`bool`](class_bool.md)           | [`flip_h`](#class_sprite2d_property_flip_h)                                         | ``false``             |
-| [`bool`](class_bool.md)           | [`flip_v`](#class_sprite2d_property_flip_v)                                         | ``false``             |
-| [`int`](class_int.md)             | [`frame`](#class_sprite2d_property_frame)                                           | ``0``                 |
-| [`Vector2i`](class_vector2i.md)   | [`frame_coords`](#class_sprite2d_property_frame_coords)                             | ``Vector2i(0, 0)``    |
-| [`int`](class_int.md)             | [`hframes`](#class_sprite2d_property_hframes)                                       | ``1``                 |
-| [`Vector2`](class_vector2.md)     | [`offset`](#class_sprite2d_property_offset)                                         | ``Vector2(0, 0)``     |
-| [`bool`](class_bool.md)           | [`region_enabled`](#class_sprite2d_property_region_enabled)                         | ``false``             |
-| [`bool`](class_bool.md)           | [`region_filter_clip_enabled`](#class_sprite2d_property_region_filter_clip_enabled) | ``false``             |
-| [`Rect2`](class_rect2.md)         | [`region_rect`](#class_sprite2d_property_region_rect)                               | ``Rect2(0, 0, 0, 0)`` |
-| [`Texture2D`](class_texture2d.md) | [`texture`](#class_sprite2d_property_texture)                                       |                       |
-| [`int`](class_int.md)             | [`vframes`](#class_sprite2d_property_vframes)                                       | ``1``                 |
+| [`bool`](class_bool.md)           | [`centered`](class_sprite2d.md#class_sprite2d_property_centered)                                     | ``true``              |
+| [`bool`](class_bool.md)           | [`flip_h`](class_sprite2d.md#class_sprite2d_property_flip_h)                                         | ``false``             |
+| [`bool`](class_bool.md)           | [`flip_v`](class_sprite2d.md#class_sprite2d_property_flip_v)                                         | ``false``             |
+| [`int`](class_int.md)             | [`frame`](class_sprite2d.md#class_sprite2d_property_frame)                                           | ``0``                 |
+| [`Vector2i`](class_vector2i.md)   | [`frame_coords`](class_sprite2d.md#class_sprite2d_property_frame_coords)                             | ``Vector2i(0, 0)``    |
+| [`int`](class_int.md)             | [`hframes`](class_sprite2d.md#class_sprite2d_property_hframes)                                       | ``1``                 |
+| [`Vector2`](class_vector2.md)     | [`offset`](class_sprite2d.md#class_sprite2d_property_offset)                                         | ``Vector2(0, 0)``     |
+| [`bool`](class_bool.md)           | [`region_enabled`](class_sprite2d.md#class_sprite2d_property_region_enabled)                         | ``false``             |
+| [`bool`](class_bool.md)           | [`region_filter_clip_enabled`](class_sprite2d.md#class_sprite2d_property_region_filter_clip_enabled) | ``false``             |
+| [`Rect2`](class_rect2.md)         | [`region_rect`](class_sprite2d.md#class_sprite2d_property_region_rect)                               | ``Rect2(0, 0, 0, 0)`` |
+| [`Texture2D`](class_texture2d.md) | [`texture`](class_sprite2d.md#class_sprite2d_property_texture)                                       |                       |
+| [`int`](class_int.md)             | [`vframes`](class_sprite2d.md#class_sprite2d_property_vframes)                                       | ``1``                 |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`get_rect`](#class_sprite2d_method_get_rect) ( ) const[^const]                                                  |
-| [`bool`](class_bool.md)   | [`is_pixel_opaque`](#class_sprite2d_method_is_pixel_opaque) ( pos: [`Vector2`](class_vector2.md) ) const[^const] |
+| [`Rect2`](class_rect2.md) | [`get_rect`](class_sprite2d.md#class_sprite2d_method_get_rect) ( ) const[^const]                                                  |
+| [`bool`](class_bool.md)   | [`is_pixel_opaque`](class_sprite2d.md#class_sprite2d_method_is_pixel_opaque) ( pos: [`Vector2`](class_vector2.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -49,7 +49,7 @@ A node that displays a 2D texture. The texture displayed can be a region from a 
 
 **frame_changed** ( ) <div id="class_sprite2d_signal_frame_changed"></div>
 
-Emitted when the [`frame`](#class_sprite2d_property_frame) changes.
+Emitted when the [`frame`](class_sprite2d.md#class_sprite2d_property_frame) changes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -59,7 +59,7 @@ Emitted when the [`frame`](#class_sprite2d_property_frame) changes.
 
 **texture_changed** ( ) <div id="class_sprite2d_signal_texture_changed"></div>
 
-Emitted when the [`texture`](#class_sprite2d_property_texture) changes.
+Emitted when the [`texture`](class_sprite2d.md#class_sprite2d_property_texture) changes.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -76,7 +76,7 @@ Emitted when the [`texture`](#class_sprite2d_property_texture) changes.
 
 If `true`, texture is centered.
 
- **Note:** For games with a pixel art aesthetic, textures may appear deformed when centered. This is caused by their position being between pixels. To prevent this, set this property to `false`, or consider enabling [`ProjectSettings.rendering/2d/snap/snap_2d_vertices_to_pixel`](#class_projectsettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel) and [`ProjectSettings.rendering/2d/snap/snap_2d_transforms_to_pixel`](#class_projectsettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel).
+ **Note:** For games with a pixel art aesthetic, textures may appear deformed when centered. This is caused by their position being between pixels. To prevent this, set this property to `false`, or consider enabling [`ProjectSettings.rendering/2d/snap/snap_2d_vertices_to_pixel`](class_projectsettings.md#class_projectsettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel) and [`ProjectSettings.rendering/2d/snap/snap_2d_transforms_to_pixel`](class_projectsettings.md#class_projectsettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -115,7 +115,7 @@ If `true`, texture is flipped vertically.
 - `void` **set_frame** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_frame** ( )
 
-Current frame to display from sprite sheet. [`hframes`](#class_sprite2d_property_hframes) or [`vframes`](#class_sprite2d_property_vframes) must be greater than 1. This property is automatically adjusted when [`hframes`](#class_sprite2d_property_hframes) or [`vframes`](#class_sprite2d_property_vframes) are changed to keep pointing to the same visual frame (same column and row). If that's impossible, this value is reset to `0`.
+Current frame to display from sprite sheet. [`hframes`](class_sprite2d.md#class_sprite2d_property_hframes) or [`vframes`](class_sprite2d.md#class_sprite2d_property_vframes) must be greater than 1. This property is automatically adjusted when [`hframes`](class_sprite2d.md#class_sprite2d_property_hframes) or [`vframes`](class_sprite2d.md#class_sprite2d_property_vframes) are changed to keep pointing to the same visual frame (same column and row). If that's impossible, this value is reset to `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -128,7 +128,7 @@ Current frame to display from sprite sheet. [`hframes`](#class_sprite2d_property
 - `void` **set_frame_coords** ( value: [`Vector2i`](class_vector2i.md) )
 - [`Vector2i`](class_vector2i.md) **get_frame_coords** ( )
 
-Coordinates of the frame to display from sprite sheet. This is as an alias for the [`frame`](#class_sprite2d_property_frame) property. [`hframes`](#class_sprite2d_property_hframes) or [`vframes`](#class_sprite2d_property_vframes) must be greater than 1.
+Coordinates of the frame to display from sprite sheet. This is as an alias for the [`frame`](class_sprite2d.md#class_sprite2d_property_frame) property. [`hframes`](class_sprite2d.md#class_sprite2d_property_hframes) or [`vframes`](class_sprite2d.md#class_sprite2d_property_vframes) must be greater than 1.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -141,7 +141,7 @@ Coordinates of the frame to display from sprite sheet. This is as an alias for t
 - `void` **set_hframes** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_hframes** ( )
 
-The number of columns in the sprite sheet. When this property is changed, [`frame`](#class_sprite2d_property_frame) is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, [`frame`](#class_sprite2d_property_frame) is reset to `0`.
+The number of columns in the sprite sheet. When this property is changed, [`frame`](class_sprite2d.md#class_sprite2d_property_frame) is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, [`frame`](class_sprite2d.md#class_sprite2d_property_frame) is reset to `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -167,7 +167,7 @@ The texture's drawing offset.
 - `void` **set_region_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_region_enabled** ( )
 
-If `true`, texture is cut from a larger atlas texture. See [`region_rect`](#class_sprite2d_property_region_rect).
+If `true`, texture is cut from a larger atlas texture. See [`region_rect`](class_sprite2d.md#class_sprite2d_property_region_rect).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -180,7 +180,7 @@ If `true`, texture is cut from a larger atlas texture. See [`region_rect`](#clas
 - `void` **set_region_filter_clip_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_region_filter_clip_enabled** ( )
 
-If `true`, the outermost pixels get blurred out. [`region_enabled`](#class_sprite2d_property_region_enabled) must be `true`.
+If `true`, the outermost pixels get blurred out. [`region_enabled`](class_sprite2d.md#class_sprite2d_property_region_enabled) must be `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -193,7 +193,7 @@ If `true`, the outermost pixels get blurred out. [`region_enabled`](#class_sprit
 - `void` **set_region_rect** ( value: [`Rect2`](class_rect2.md) )
 - [`Rect2`](class_rect2.md) **get_region_rect** ( )
 
-The region of the atlas texture to display. [`region_enabled`](#class_sprite2d_property_region_enabled) must be `true`.
+The region of the atlas texture to display. [`region_enabled`](class_sprite2d.md#class_sprite2d_property_region_enabled) must be `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -219,7 +219,7 @@ The region of the atlas texture to display. [`region_enabled`](#class_sprite2d_p
 - `void` **set_vframes** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_vframes** ( )
 
-The number of rows in the sprite sheet. When this property is changed, [`frame`](#class_sprite2d_property_frame) is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, [`frame`](#class_sprite2d_property_frame) is reset to `0`.
+The number of rows in the sprite sheet. When this property is changed, [`frame`](class_sprite2d.md#class_sprite2d_property_frame) is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, [`frame`](class_sprite2d.md#class_sprite2d_property_frame) is reset to `0`.
 
 <!-- rst-class:: classref-section-separator -->
 

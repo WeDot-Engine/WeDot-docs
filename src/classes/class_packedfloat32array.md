@@ -15,7 +15,7 @@ An array specifically designed to hold 32-bit floating-point values (float). Pac
 
 If you need to pack 64-bit floats tightly, see [`PackedFloat64Array`](class_packedfloat64array.md).
 
- **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](#class_packedfloat32array_method_duplicate). This is *not* the case for built-in properties and methods. The returned packed array of these are a copies, and changing it will *not* affect the original value. To update a built-in property you need to modify the returned array, and then assign it to the property again.
+ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](class_packedfloat32array.md#class_packedfloat32array_method_duplicate). This is *not* the case for built-in properties and methods. The returned packed array of these are a copies, and changing it will *not* affect the original value. To update a built-in property you need to modify the returned array, and then assign it to the property again.
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
@@ -23,35 +23,35 @@ If you need to pack 64-bit floats tightly, see [`PackedFloat64Array`](class_pack
 
 |||
 |:-:|:--|
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`PackedFloat32Array`](#class_packedfloat32array_constructor_packedfloat32array) ( )                                                           |
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`PackedFloat32Array`](#class_packedfloat32array_constructor_packedfloat32array) ( from: [`PackedFloat32Array`](class_packedfloat32array.md) ) |
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`PackedFloat32Array`](#class_packedfloat32array_constructor_packedfloat32array) ( from: [`Array`](class_array.md) )                           |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`PackedFloat32Array`](class_packedfloat32array.md#class_packedfloat32array_constructor_packedfloat32array) ( )                                                           |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`PackedFloat32Array`](class_packedfloat32array.md#class_packedfloat32array_constructor_packedfloat32array) ( from: [`PackedFloat32Array`](class_packedfloat32array.md) ) |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`PackedFloat32Array`](class_packedfloat32array.md#class_packedfloat32array_constructor_packedfloat32array) ( from: [`Array`](class_array.md) )                           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`append`](#class_packedfloat32array_method_append) ( value: [`float`](class_float.md) )                                                  |
-| `void`                                              | [`append_array`](#class_packedfloat32array_method_append_array) ( array: [`PackedFloat32Array`](class_packedfloat32array.md) )            |
-| [`int`](class_int.md)                               | [`bsearch`](#class_packedfloat32array_method_bsearch) ( value: [`float`](class_float.md), before: [`bool`](class_bool.md) = true )        |
-| `void`                                              | [`clear`](#class_packedfloat32array_method_clear) ( )                                                                                     |
-| [`int`](class_int.md)                               | [`count`](#class_packedfloat32array_method_count) ( value: [`float`](class_float.md) ) const[^const]                                      |
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`duplicate`](#class_packedfloat32array_method_duplicate) ( )                                                                             |
-| `void`                                              | [`fill`](#class_packedfloat32array_method_fill) ( value: [`float`](class_float.md) )                                                      |
-| [`int`](class_int.md)                               | [`find`](#class_packedfloat32array_method_find) ( value: [`float`](class_float.md), from: [`int`](class_int.md) = 0 ) const[^const]       |
-| [`bool`](class_bool.md)                             | [`has`](#class_packedfloat32array_method_has) ( value: [`float`](class_float.md) ) const[^const]                                          |
-| [`int`](class_int.md)                               | [`insert`](#class_packedfloat32array_method_insert) ( at_index: [`int`](class_int.md), value: [`float`](class_float.md) )                 |
-| [`bool`](class_bool.md)                             | [`is_empty`](#class_packedfloat32array_method_is_empty) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)                             | [`push_back`](#class_packedfloat32array_method_push_back) ( value: [`float`](class_float.md) )                                            |
-| `void`                                              | [`remove_at`](#class_packedfloat32array_method_remove_at) ( index: [`int`](class_int.md) )                                                |
-| [`int`](class_int.md)                               | [`resize`](#class_packedfloat32array_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
-| `void`                                              | [`reverse`](#class_packedfloat32array_method_reverse) ( )                                                                                 |
-| [`int`](class_int.md)                               | [`rfind`](#class_packedfloat32array_method_rfind) ( value: [`float`](class_float.md), from: [`int`](class_int.md) = -1 ) const[^const]    |
-| `void`                                              | [`set`](#class_packedfloat32array_method_set) ( index: [`int`](class_int.md), value: [`float`](class_float.md) )                          |
-| [`int`](class_int.md)                               | [`size`](#class_packedfloat32array_method_size) ( ) const[^const]                                                                         |
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`slice`](#class_packedfloat32array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
-| `void`                                              | [`sort`](#class_packedfloat32array_method_sort) ( )                                                                                       |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`to_byte_array`](#class_packedfloat32array_method_to_byte_array) ( ) const[^const]                                                       |
+| [`bool`](class_bool.md)                             | [`append`](class_packedfloat32array.md#class_packedfloat32array_method_append) ( value: [`float`](class_float.md) )                                                  |
+| `void`                                              | [`append_array`](class_packedfloat32array.md#class_packedfloat32array_method_append_array) ( array: [`PackedFloat32Array`](class_packedfloat32array.md) )            |
+| [`int`](class_int.md)                               | [`bsearch`](class_packedfloat32array.md#class_packedfloat32array_method_bsearch) ( value: [`float`](class_float.md), before: [`bool`](class_bool.md) = true )        |
+| `void`                                              | [`clear`](class_packedfloat32array.md#class_packedfloat32array_method_clear) ( )                                                                                     |
+| [`int`](class_int.md)                               | [`count`](class_packedfloat32array.md#class_packedfloat32array_method_count) ( value: [`float`](class_float.md) ) const[^const]                                      |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`duplicate`](class_packedfloat32array.md#class_packedfloat32array_method_duplicate) ( )                                                                             |
+| `void`                                              | [`fill`](class_packedfloat32array.md#class_packedfloat32array_method_fill) ( value: [`float`](class_float.md) )                                                      |
+| [`int`](class_int.md)                               | [`find`](class_packedfloat32array.md#class_packedfloat32array_method_find) ( value: [`float`](class_float.md), from: [`int`](class_int.md) = 0 ) const[^const]       |
+| [`bool`](class_bool.md)                             | [`has`](class_packedfloat32array.md#class_packedfloat32array_method_has) ( value: [`float`](class_float.md) ) const[^const]                                          |
+| [`int`](class_int.md)                               | [`insert`](class_packedfloat32array.md#class_packedfloat32array_method_insert) ( at_index: [`int`](class_int.md), value: [`float`](class_float.md) )                 |
+| [`bool`](class_bool.md)                             | [`is_empty`](class_packedfloat32array.md#class_packedfloat32array_method_is_empty) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)                             | [`push_back`](class_packedfloat32array.md#class_packedfloat32array_method_push_back) ( value: [`float`](class_float.md) )                                            |
+| `void`                                              | [`remove_at`](class_packedfloat32array.md#class_packedfloat32array_method_remove_at) ( index: [`int`](class_int.md) )                                                |
+| [`int`](class_int.md)                               | [`resize`](class_packedfloat32array.md#class_packedfloat32array_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
+| `void`                                              | [`reverse`](class_packedfloat32array.md#class_packedfloat32array_method_reverse) ( )                                                                                 |
+| [`int`](class_int.md)                               | [`rfind`](class_packedfloat32array.md#class_packedfloat32array_method_rfind) ( value: [`float`](class_float.md), from: [`int`](class_int.md) = -1 ) const[^const]    |
+| `void`                                              | [`set`](class_packedfloat32array.md#class_packedfloat32array_method_set) ( index: [`int`](class_int.md), value: [`float`](class_float.md) )                          |
+| [`int`](class_int.md)                               | [`size`](class_packedfloat32array.md#class_packedfloat32array_method_size) ( ) const[^const]                                                                         |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`slice`](class_packedfloat32array.md#class_packedfloat32array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
+| `void`                                              | [`sort`](class_packedfloat32array.md#class_packedfloat32array_method_sort) ( )                                                                                       |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`to_byte_array`](class_packedfloat32array.md#class_packedfloat32array_method_to_byte_array) ( ) const[^const]                                                       |
 
 ## 运算符
 
@@ -100,7 +100,7 @@ Constructs a new **PackedFloat32Array**. Optionally, you can pass in a generic [
 
 [`bool`](class_bool.md) **append** ( value: [`float`](class_float.md) )<div id="class_packedfloat32array_method_append"></div>
 
-Appends an element at the end of the array (alias of [`push_back`](#class_packedfloat32array_method_push_back)).
+Appends an element at the end of the array (alias of [`push_back`](class_packedfloat32array.md#class_packedfloat32array_method_push_back)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -122,9 +122,9 @@ Appends a **PackedFloat32Array** at the end of this array.
 
 Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a `before` specifier can be passed. If `false`, the returned index comes after all existing entries of the value in the array.
 
- **Note:** Calling [`bsearch`](#class_packedfloat32array_method_bsearch) on an unsorted array results in unexpected behavior.
+ **Note:** Calling [`bsearch`](class_packedfloat32array.md#class_packedfloat32array_method_bsearch) on an unsorted array results in unexpected behavior.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -134,7 +134,7 @@ Finds the index of an existing value (or the insertion index that maintains sort
 
 `void` **clear** ( )<div id="class_packedfloat32array_method_clear"></div>
 
-Clears the array. This is equivalent to using [`resize`](#class_packedfloat32array_method_resize) with a size of `0`.
+Clears the array. This is equivalent to using [`resize`](class_packedfloat32array.md#class_packedfloat32array_method_resize) with a size of `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -146,7 +146,7 @@ Clears the array. This is equivalent to using [`resize`](#class_packedfloat32arr
 
 Returns the number of times an element is in the array.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -166,7 +166,7 @@ Creates a copy of the array, and returns it.
 
 `void` **fill** ( value: [`float`](class_float.md) )<div id="class_packedfloat32array_method_fill"></div>
 
-Assigns the given value to all elements in the array. This can typically be used together with [`resize`](#class_packedfloat32array_method_resize) to create an array with a given size and initialized elements.
+Assigns the given value to all elements in the array. This can typically be used together with [`resize`](class_packedfloat32array.md#class_packedfloat32array_method_resize) to create an array with a given size and initialized elements.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -178,7 +178,7 @@ Assigns the given value to all elements in the array. This can typically be used
 
 Searches the array for a value and returns its index or `-1` if not found. Optionally, the initial search index can be passed.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -190,7 +190,7 @@ Searches the array for a value and returns its index or `-1` if not found. Optio
 
 Returns `true` if the array contains `value`.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -240,7 +240,7 @@ Removes an element from the array by index.
 
 [`int`](class_int.md) **resize** ( new_size: [`int`](class_int.md) )<div id="class_packedfloat32array_method_resize"></div>
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling [`resize`](#class_packedfloat32array_method_resize) once and assigning the new values is faster than adding new elements one by one.
+Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling [`resize`](class_packedfloat32array.md#class_packedfloat32array_method_resize) once and assigning the new values is faster than adding new elements one by one.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -262,7 +262,7 @@ Reverses the order of the elements in the array.
 
 Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -308,7 +308,7 @@ If either `begin` or `end` are negative, they will be relative to the end of the
 
 Sorts the elements of the array in ascending order.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -342,7 +342,7 @@ Returns `true` if contents of the arrays differ.
 
 [`PackedFloat32Array`](class_packedfloat32array.md) **operator +** ( right: [`PackedFloat32Array`](class_packedfloat32array.md) ) <div id="class_packedfloat32array_operator_sum_packedfloat32array"></div>
 
-Returns a new **PackedFloat32Array** with contents of `right` added at the end of this array. For better performance, consider using [`append_array`](#class_packedfloat32array_method_append_array) instead.
+Returns a new **PackedFloat32Array** with contents of `right` added at the end of this array. For better performance, consider using [`append_array`](class_packedfloat32array.md#class_packedfloat32array_method_append_array) instead.
 
 <!-- rst-class:: classref-item-separator -->
 

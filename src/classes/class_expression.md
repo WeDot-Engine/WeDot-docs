@@ -73,10 +73,10 @@ In the following example we use a [`LineEdit`](class_lineedit.md) node to write 
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md)     | [`execute`](#class_expression_method_execute) ( inputs: [`Array`](class_array.md) = [], base_instance: [`Object`](class_object.md) = null, show_error: [`bool`](class_bool.md) = true, const_calls_only: [`bool`](class_bool.md) = false ) |
-| [`String`](class_string.md)       | [`get_error_text`](#class_expression_method_get_error_text) ( ) const[^const]                                                                                                                                                              |
-| [`bool`](class_bool.md)           | [`has_execute_failed`](#class_expression_method_has_execute_failed) ( ) const[^const]                                                                                                                                                      |
-| [Error](#enum_@globalscope_error) | [`parse`](#class_expression_method_parse) ( expression: [`String`](class_string.md), input_names: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray() )                                                                |
+| [`Variant`](class_variant.md)     | [`execute`](class_expression.md#class_expression_method_execute) ( inputs: [`Array`](class_array.md) = [], base_instance: [`Object`](class_object.md) = null, show_error: [`bool`](class_bool.md) = true, const_calls_only: [`bool`](class_bool.md) = false ) |
+| [`String`](class_string.md)       | [`get_error_text`](class_expression.md#class_expression_method_get_error_text) ( ) const[^const]                                                                                                                                                              |
+| [`bool`](class_bool.md)           | [`has_execute_failed`](class_expression.md#class_expression_method_has_execute_failed) ( ) const[^const]                                                                                                                                                      |
+| [Error](#enum_@globalscope_error) | [`parse`](class_expression.md#class_expression_method_parse) ( expression: [`String`](class_string.md), input_names: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray() )                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -88,9 +88,9 @@ In the following example we use a [`LineEdit`](class_lineedit.md) node to write 
 
 [`Variant`](class_variant.md) **execute** ( inputs: [`Array`](class_array.md) = [], base_instance: [`Object`](class_object.md) = null, show_error: [`bool`](class_bool.md) = true, const_calls_only: [`bool`](class_bool.md) = false )<div id="class_expression_method_execute"></div>
 
-Executes the expression that was previously parsed by [`parse`](#class_expression_method_parse) and returns the result. Before you use the returned object, you should check if the method failed by calling [`has_execute_failed`](#class_expression_method_has_execute_failed).
+Executes the expression that was previously parsed by [`parse`](class_expression.md#class_expression_method_parse) and returns the result. Before you use the returned object, you should check if the method failed by calling [`has_execute_failed`](class_expression.md#class_expression_method_has_execute_failed).
 
-If you defined input variables in [`parse`](#class_expression_method_parse), you can specify their values in the inputs array, in the same order.
+If you defined input variables in [`parse`](class_expression.md#class_expression_method_parse), you can specify their values in the inputs array, in the same order.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -100,7 +100,7 @@ If you defined input variables in [`parse`](#class_expression_method_parse), you
 
 [`String`](class_string.md) **get_error_text** ( ) const[^const]<div id="class_expression_method_get_error_text"></div>
 
-Returns the error text if [`parse`](#class_expression_method_parse) or [`execute`](#class_expression_method_execute) has failed.
+Returns the error text if [`parse`](class_expression.md#class_expression_method_parse) or [`execute`](class_expression.md#class_expression_method_execute) has failed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -110,7 +110,7 @@ Returns the error text if [`parse`](#class_expression_method_parse) or [`execute
 
 [`bool`](class_bool.md) **has_execute_failed** ( ) const[^const]<div id="class_expression_method_has_execute_failed"></div>
 
-Returns `true` if [`execute`](#class_expression_method_execute) has failed.
+Returns `true` if [`execute`](class_expression.md#class_expression_method_execute) has failed.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -21,14 +21,14 @@ Resource UIDs (Unique IDentifiers) allow the engine to keep references between r
 
 |||
 |:-:|:--|
-| `void`                      | [`add_id`](#class_resourceuid_method_add_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
-| [`int`](class_int.md)       | [`create_id`](#class_resourceuid_method_create_id) ( )                                                        |
-| [`String`](class_string.md) | [`get_id_path`](#class_resourceuid_method_get_id_path) ( id: [`int`](class_int.md) ) const[^const]            |
-| [`bool`](class_bool.md)     | [`has_id`](#class_resourceuid_method_has_id) ( id: [`int`](class_int.md) ) const[^const]                      |
-| [`String`](class_string.md) | [`id_to_text`](#class_resourceuid_method_id_to_text) ( id: [`int`](class_int.md) ) const[^const]              |
-| `void`                      | [`remove_id`](#class_resourceuid_method_remove_id) ( id: [`int`](class_int.md) )                              |
-| `void`                      | [`set_id`](#class_resourceuid_method_set_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
-| [`int`](class_int.md)       | [`text_to_id`](#class_resourceuid_method_text_to_id) ( text_id: [`String`](class_string.md) ) const[^const]   |
+| `void`                      | [`add_id`](class_resourceuid.md#class_resourceuid_method_add_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
+| [`int`](class_int.md)       | [`create_id`](class_resourceuid.md#class_resourceuid_method_create_id) ( )                                                        |
+| [`String`](class_string.md) | [`get_id_path`](class_resourceuid.md#class_resourceuid_method_get_id_path) ( id: [`int`](class_int.md) ) const[^const]            |
+| [`bool`](class_bool.md)     | [`has_id`](class_resourceuid.md#class_resourceuid_method_has_id) ( id: [`int`](class_int.md) ) const[^const]                      |
+| [`String`](class_string.md) | [`id_to_text`](class_resourceuid.md#class_resourceuid_method_id_to_text) ( id: [`int`](class_int.md) ) const[^const]              |
+| `void`                      | [`remove_id`](class_resourceuid.md#class_resourceuid_method_remove_id) ( id: [`int`](class_int.md) )                              |
+| `void`                      | [`set_id`](class_resourceuid.md#class_resourceuid_method_set_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
+| [`int`](class_int.md)       | [`text_to_id`](class_resourceuid.md#class_resourceuid_method_text_to_id) ( text_id: [`String`](class_string.md) ) const[^const]   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ Its text representation is `uid://<invalid>`.
 
 Adds a new UID value which is mapped to the given resource path.
 
-Fails with an error if the UID already exists, so be sure to check [`has_id`](#class_resourceuid_method_has_id) beforehand, or use [`set_id`](#class_resourceuid_method_set_id) instead.
+Fails with an error if the UID already exists, so be sure to check [`has_id`](class_resourceuid.md#class_resourceuid_method_has_id) beforehand, or use [`set_id`](class_resourceuid.md#class_resourceuid_method_set_id) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -68,7 +68,7 @@ Fails with an error if the UID already exists, so be sure to check [`has_id`](#c
 
 Generates a random resource UID which is guaranteed to be unique within the list of currently loaded UIDs.
 
-In order for this UID to be registered, you must call [`add_id`](#class_resourceuid_method_add_id) or [`set_id`](#class_resourceuid_method_set_id).
+In order for this UID to be registered, you must call [`add_id`](class_resourceuid.md#class_resourceuid_method_add_id) or [`set_id`](class_resourceuid.md#class_resourceuid_method_set_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -80,7 +80,7 @@ In order for this UID to be registered, you must call [`add_id`](#class_resource
 
 Returns the path that the given UID value refers to.
 
-Fails with an error if the UID does not exist, so be sure to check [`has_id`](#class_resourceuid_method_has_id) beforehand.
+Fails with an error if the UID does not exist, so be sure to check [`has_id`](class_resourceuid.md#class_resourceuid_method_has_id) beforehand.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -112,7 +112,7 @@ Converts the given UID to a `uid://` string value.
 
 Removes a loaded UID value from the cache.
 
-Fails with an error if the UID does not exist, so be sure to check [`has_id`](#class_resourceuid_method_has_id) beforehand.
+Fails with an error if the UID does not exist, so be sure to check [`has_id`](class_resourceuid.md#class_resourceuid_method_has_id) beforehand.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,7 +124,7 @@ Fails with an error if the UID does not exist, so be sure to check [`has_id`](#c
 
 Updates the resource path of an existing UID.
 
-Fails with an error if the UID does not exist, so be sure to check [`has_id`](#class_resourceuid_method_has_id) beforehand, or use [`add_id`](#class_resourceuid_method_add_id) instead.
+Fails with an error if the UID does not exist, so be sure to check [`has_id`](class_resourceuid.md#class_resourceuid_method_has_id) beforehand, or use [`add_id`](class_resourceuid.md#class_resourceuid_method_add_id) instead.
 
 <!-- rst-class:: classref-item-separator -->
 

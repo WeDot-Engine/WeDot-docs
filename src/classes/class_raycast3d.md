@@ -13,11 +13,11 @@ A ray in 3D space, used to find the first [`CollisionObject3D`](class_collisiono
 
 ## 描述
 
-A raycast represents a ray from its origin to its [`target_position`](#class_raycast3d_property_target_position) that finds the closest [`CollisionObject3D`](class_collisionobject3d.md) along its path, if it intersects any.
+A raycast represents a ray from its origin to its [`target_position`](class_raycast3d.md#class_raycast3d_property_target_position) that finds the closest [`CollisionObject3D`](class_collisionobject3d.md) along its path, if it intersects any.
 
- **RayCast3D** can ignore some objects by adding them to an exception list, by making its detection reporting ignore [`Area3D`](class_area3d.md) s ([`collide_with_areas`](#class_raycast3d_property_collide_with_areas)) or [`PhysicsBody3D`](class_physicsbody3d.md) s ([`collide_with_bodies`](#class_raycast3d_property_collide_with_bodies)), or by configuring physics layers.
+ **RayCast3D** can ignore some objects by adding them to an exception list, by making its detection reporting ignore [`Area3D`](class_area3d.md) s ([`collide_with_areas`](class_raycast3d.md#class_raycast3d_property_collide_with_areas)) or [`PhysicsBody3D`](class_physicsbody3d.md) s ([`collide_with_bodies`](class_raycast3d.md#class_raycast3d_property_collide_with_bodies)), or by configuring physics layers.
 
- **RayCast3D** calculates intersection every physics frame, and it holds the result until the next physics frame. For an immediate raycast, or if you want to configure a **RayCast3D** multiple times within the same physics frame, use [`force_raycast_update`](#class_raycast3d_method_force_raycast_update).
+ **RayCast3D** calculates intersection every physics frame, and it holds the result until the next physics frame. For an immediate raycast, or if you want to configure a **RayCast3D** multiple times within the same physics frame, use [`force_raycast_update`](class_raycast3d.md#class_raycast3d_method_force_raycast_update).
 
 To sweep over a region of 3D space, you can approximate the region with multiple **RayCast3D** s or use [`ShapeCast3D`](class_shapecast3d.md).
 
@@ -25,36 +25,36 @@ To sweep over a region of 3D space, you can approximate the region with multiple
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)       | [`collide_with_areas`](#class_raycast3d_property_collide_with_areas)             | ``false``             |
-| [`bool`](class_bool.md)       | [`collide_with_bodies`](#class_raycast3d_property_collide_with_bodies)           | ``true``              |
-| [`int`](class_int.md)         | [`collision_mask`](#class_raycast3d_property_collision_mask)                     | ``1``                 |
-| [`Color`](class_color.md)     | [`debug_shape_custom_color`](#class_raycast3d_property_debug_shape_custom_color) | ``Color(0, 0, 0, 1)`` |
-| [`int`](class_int.md)         | [`debug_shape_thickness`](#class_raycast3d_property_debug_shape_thickness)       | ``2``                 |
-| [`bool`](class_bool.md)       | [`enabled`](#class_raycast3d_property_enabled)                                   | ``true``              |
-| [`bool`](class_bool.md)       | [`exclude_parent`](#class_raycast3d_property_exclude_parent)                     | ``true``              |
-| [`bool`](class_bool.md)       | [`hit_back_faces`](#class_raycast3d_property_hit_back_faces)                     | ``true``              |
-| [`bool`](class_bool.md)       | [`hit_from_inside`](#class_raycast3d_property_hit_from_inside)                   | ``false``             |
-| [`Vector3`](class_vector3.md) | [`target_position`](#class_raycast3d_property_target_position)                   | ``Vector3(0, -1, 0)`` |
+| [`bool`](class_bool.md)       | [`collide_with_areas`](class_raycast3d.md#class_raycast3d_property_collide_with_areas)             | ``false``             |
+| [`bool`](class_bool.md)       | [`collide_with_bodies`](class_raycast3d.md#class_raycast3d_property_collide_with_bodies)           | ``true``              |
+| [`int`](class_int.md)         | [`collision_mask`](class_raycast3d.md#class_raycast3d_property_collision_mask)                     | ``1``                 |
+| [`Color`](class_color.md)     | [`debug_shape_custom_color`](class_raycast3d.md#class_raycast3d_property_debug_shape_custom_color) | ``Color(0, 0, 0, 1)`` |
+| [`int`](class_int.md)         | [`debug_shape_thickness`](class_raycast3d.md#class_raycast3d_property_debug_shape_thickness)       | ``2``                 |
+| [`bool`](class_bool.md)       | [`enabled`](class_raycast3d.md#class_raycast3d_property_enabled)                                   | ``true``              |
+| [`bool`](class_bool.md)       | [`exclude_parent`](class_raycast3d.md#class_raycast3d_property_exclude_parent)                     | ``true``              |
+| [`bool`](class_bool.md)       | [`hit_back_faces`](class_raycast3d.md#class_raycast3d_property_hit_back_faces)                     | ``true``              |
+| [`bool`](class_bool.md)       | [`hit_from_inside`](class_raycast3d.md#class_raycast3d_property_hit_from_inside)                   | ``false``             |
+| [`Vector3`](class_vector3.md) | [`target_position`](class_raycast3d.md#class_raycast3d_property_target_position)                   | ``Vector3(0, -1, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                        | [`add_exception`](#class_raycast3d_method_add_exception) ( node: [`CollisionObject3D`](class_collisionobject3d.md) )                                   |
-| `void`                        | [`add_exception_rid`](#class_raycast3d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
-| `void`                        | [`clear_exceptions`](#class_raycast3d_method_clear_exceptions) ( )                                                                                     |
-| `void`                        | [`force_raycast_update`](#class_raycast3d_method_force_raycast_update) ( )                                                                             |
-| [`Object`](class_object.md)   | [`get_collider`](#class_raycast3d_method_get_collider) ( ) const[^const]                                                                               |
-| [`RID`](class_rid.md)         | [`get_collider_rid`](#class_raycast3d_method_get_collider_rid) ( ) const[^const]                                                                       |
-| [`int`](class_int.md)         | [`get_collider_shape`](#class_raycast3d_method_get_collider_shape) ( ) const[^const]                                                                   |
-| [`int`](class_int.md)         | [`get_collision_face_index`](#class_raycast3d_method_get_collision_face_index) ( ) const[^const]                                                       |
-| [`bool`](class_bool.md)       | [`get_collision_mask_value`](#class_raycast3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`Vector3`](class_vector3.md) | [`get_collision_normal`](#class_raycast3d_method_get_collision_normal) ( ) const[^const]                                                               |
-| [`Vector3`](class_vector3.md) | [`get_collision_point`](#class_raycast3d_method_get_collision_point) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)       | [`is_colliding`](#class_raycast3d_method_is_colliding) ( ) const[^const]                                                                               |
-| `void`                        | [`remove_exception`](#class_raycast3d_method_remove_exception) ( node: [`CollisionObject3D`](class_collisionobject3d.md) )                             |
-| `void`                        | [`remove_exception_rid`](#class_raycast3d_method_remove_exception_rid) ( rid: [`RID`](class_rid.md) )                                                  |
-| `void`                        | [`set_collision_mask_value`](#class_raycast3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                        | [`add_exception`](class_raycast3d.md#class_raycast3d_method_add_exception) ( node: [`CollisionObject3D`](class_collisionobject3d.md) )                                   |
+| `void`                        | [`add_exception_rid`](class_raycast3d.md#class_raycast3d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
+| `void`                        | [`clear_exceptions`](class_raycast3d.md#class_raycast3d_method_clear_exceptions) ( )                                                                                     |
+| `void`                        | [`force_raycast_update`](class_raycast3d.md#class_raycast3d_method_force_raycast_update) ( )                                                                             |
+| [`Object`](class_object.md)   | [`get_collider`](class_raycast3d.md#class_raycast3d_method_get_collider) ( ) const[^const]                                                                               |
+| [`RID`](class_rid.md)         | [`get_collider_rid`](class_raycast3d.md#class_raycast3d_method_get_collider_rid) ( ) const[^const]                                                                       |
+| [`int`](class_int.md)         | [`get_collider_shape`](class_raycast3d.md#class_raycast3d_method_get_collider_shape) ( ) const[^const]                                                                   |
+| [`int`](class_int.md)         | [`get_collision_face_index`](class_raycast3d.md#class_raycast3d_method_get_collision_face_index) ( ) const[^const]                                                       |
+| [`bool`](class_bool.md)       | [`get_collision_mask_value`](class_raycast3d.md#class_raycast3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`Vector3`](class_vector3.md) | [`get_collision_normal`](class_raycast3d.md#class_raycast3d_method_get_collision_normal) ( ) const[^const]                                                               |
+| [`Vector3`](class_vector3.md) | [`get_collision_point`](class_raycast3d.md#class_raycast3d_method_get_collision_point) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)       | [`is_colliding`](class_raycast3d.md#class_raycast3d_method_is_colliding) ( ) const[^const]                                                                               |
+| `void`                        | [`remove_exception`](class_raycast3d.md#class_raycast3d_method_remove_exception) ( node: [`CollisionObject3D`](class_collisionobject3d.md) )                             |
+| `void`                        | [`remove_exception_rid`](class_raycast3d.md#class_raycast3d_method_remove_exception_rid) ( rid: [`RID`](class_rid.md) )                                                  |
+| `void`                        | [`set_collision_mask_value`](class_raycast3d.md#class_raycast3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -110,7 +110,7 @@ The ray's collision mask. Only objects in at least one collision layer enabled i
 
 The custom color to use to draw the shape in the editor and at run-time if **Visible Collision Shapes** is enabled in the **Debug** menu. This color will be highlighted at run-time if the **RayCast3D** is colliding with something.
 
-If set to `Color(0.0, 0.0, 0.0)` (by default), the color set in [`ProjectSettings.debug/shapes/collision/shape_color`](#class_projectsettings_property_debug/shapes/collision/shape_color) is used.
+If set to `Color(0.0, 0.0, 0.0)` (by default), the color set in [`ProjectSettings.debug/shapes/collision/shape_color`](class_projectsettings.md#class_projectsettings_property_debug/shapes/collision/shape_color) is used.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -232,7 +232,7 @@ Removes all collision exceptions for this ray.
 
 Updates the collision information for the ray immediately, without waiting for the next `_physics_process` call. Use this method, for example, when the ray or its parent has changed state.
 
- **Note:** [`enabled`](#class_raycast3d_property_enabled) does not need to be `true` for this to work.
+ **Note:** [`enabled`](class_raycast3d.md#class_raycast3d_property_enabled) does not need to be `true` for this to work.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -242,7 +242,7 @@ Updates the collision information for the ray immediately, without waiting for t
 
 [`Object`](class_object.md) **get_collider** ( ) const[^const]<div id="class_raycast3d_method_get_collider"></div>
 
-Returns the first object that the ray intersects, or `null` if no object is intersecting the ray (i.e. [`is_colliding`](#class_raycast3d_method_is_colliding) returns `false`).
+Returns the first object that the ray intersects, or `null` if no object is intersecting the ray (i.e. [`is_colliding`](class_raycast3d.md#class_raycast3d_method_is_colliding) returns `false`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -252,7 +252,7 @@ Returns the first object that the ray intersects, or `null` if no object is inte
 
 [`RID`](class_rid.md) **get_collider_rid** ( ) const[^const]<div id="class_raycast3d_method_get_collider_rid"></div>
 
-Returns the [`RID`](class_rid.md) of the first object that the ray intersects, or an empty [`RID`](class_rid.md) if no object is intersecting the ray (i.e. [`is_colliding`](#class_raycast3d_method_is_colliding) returns `false`).
+Returns the [`RID`](class_rid.md) of the first object that the ray intersects, or an empty [`RID`](class_rid.md) if no object is intersecting the ray (i.e. [`is_colliding`](class_raycast3d.md#class_raycast3d_method_is_colliding) returns `false`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -262,7 +262,7 @@ Returns the [`RID`](class_rid.md) of the first object that the ray intersects, o
 
 [`int`](class_int.md) **get_collider_shape** ( ) const[^const]<div id="class_raycast3d_method_get_collider_shape"></div>
 
-Returns the shape ID of the first object that the ray intersects, or `0` if no object is intersecting the ray (i.e. [`is_colliding`](#class_raycast3d_method_is_colliding) returns `false`).
+Returns the shape ID of the first object that the ray intersects, or `0` if no object is intersecting the ray (i.e. [`is_colliding`](class_raycast3d.md#class_raycast3d_method_is_colliding) returns `false`).
 
 To get the intersected shape node, for a [`CollisionObject3D`](class_collisionobject3d.md) target, use:
 
@@ -308,7 +308,7 @@ Returns the collision object's face index at the collision point, or `-1` if the
 
 [`bool`](class_bool.md) **get_collision_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_raycast3d_method_get_collision_mask_value"></div>
 
-Returns whether or not the specified layer of the [`collision_mask`](#class_raycast3d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_mask`](class_raycast3d.md#class_raycast3d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -318,9 +318,9 @@ Returns whether or not the specified layer of the [`collision_mask`](#class_rayc
 
 [`Vector3`](class_vector3.md) **get_collision_normal** ( ) const[^const]<div id="class_raycast3d_method_get_collision_normal"></div>
 
-Returns the normal of the intersecting object's shape at the collision point, or `Vector3(0, 0, 0)` if the ray starts inside the shape and [`hit_from_inside`](#class_raycast3d_property_hit_from_inside) is `true`.
+Returns the normal of the intersecting object's shape at the collision point, or `Vector3(0, 0, 0)` if the ray starts inside the shape and [`hit_from_inside`](class_raycast3d.md#class_raycast3d_property_hit_from_inside) is `true`.
 
- **Note:** Check that [`is_colliding`](#class_raycast3d_method_is_colliding) returns `true` before calling this method to ensure the returned normal is valid and up-to-date.
+ **Note:** Check that [`is_colliding`](class_raycast3d.md#class_raycast3d_method_is_colliding) returns `true` before calling this method to ensure the returned normal is valid and up-to-date.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -330,9 +330,9 @@ Returns the normal of the intersecting object's shape at the collision point, or
 
 [`Vector3`](class_vector3.md) **get_collision_point** ( ) const[^const]<div id="class_raycast3d_method_get_collision_point"></div>
 
-Returns the collision point at which the ray intersects the closest object, in the global coordinate system. If [`hit_from_inside`](#class_raycast3d_property_hit_from_inside) is `true` and the ray starts inside of a collision shape, this function will return the origin point of the ray.
+Returns the collision point at which the ray intersects the closest object, in the global coordinate system. If [`hit_from_inside`](class_raycast3d.md#class_raycast3d_property_hit_from_inside) is `true` and the ray starts inside of a collision shape, this function will return the origin point of the ray.
 
- **Note:** Check that [`is_colliding`](#class_raycast3d_method_is_colliding) returns `true` before calling this method to ensure the returned point is valid and up-to-date.
+ **Note:** Check that [`is_colliding`](class_raycast3d.md#class_raycast3d_method_is_colliding) returns `true` before calling this method to ensure the returned point is valid and up-to-date.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -372,7 +372,7 @@ Removes a collision exception so the ray does report collisions with the specifi
 
 `void` **set_collision_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_raycast3d_method_set_collision_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_mask`](#class_raycast3d_property_collision_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_mask`](class_raycast3d.md#class_raycast3d_property_collision_mask), given a `layer_number` between 1 and 32.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

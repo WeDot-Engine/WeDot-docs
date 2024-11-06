@@ -23,56 +23,56 @@ See [`Vector4i`](class_vector4i.md) for its integer counterpart.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`w`](#class_vector4_property_w) | ``0.0`` |
-| [`float`](class_float.md) | [`x`](#class_vector4_property_x) | ``0.0`` |
-| [`float`](class_float.md) | [`y`](#class_vector4_property_y) | ``0.0`` |
-| [`float`](class_float.md) | [`z`](#class_vector4_property_z) | ``0.0`` |
+| [`float`](class_float.md) | [`w`](class_vector4.md#class_vector4_property_w) | ``0.0`` |
+| [`float`](class_float.md) | [`x`](class_vector4.md#class_vector4_property_x) | ``0.0`` |
+| [`float`](class_float.md) | [`y`](class_vector4.md#class_vector4_property_y) | ``0.0`` |
+| [`float`](class_float.md) | [`z`](class_vector4.md#class_vector4_property_z) | ``0.0`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Vector4`](class_vector4.md) | [`Vector4`](#class_vector4_constructor_vector4) ( )                                                                                                                        |
-| [`Vector4`](class_vector4.md) | [`Vector4`](#class_vector4_constructor_vector4) ( from: [`Vector4`](class_vector4.md) )                                                                                    |
-| [`Vector4`](class_vector4.md) | [`Vector4`](#class_vector4_constructor_vector4) ( from: [`Vector4i`](class_vector4i.md) )                                                                                  |
-| [`Vector4`](class_vector4.md) | [`Vector4`](#class_vector4_constructor_vector4) ( x: [`float`](class_float.md), y: [`float`](class_float.md), z: [`float`](class_float.md), w: [`float`](class_float.md) ) |
+| [`Vector4`](class_vector4.md) | [`Vector4`](class_vector4.md#class_vector4_constructor_vector4) ( )                                                                                                                        |
+| [`Vector4`](class_vector4.md) | [`Vector4`](class_vector4.md#class_vector4_constructor_vector4) ( from: [`Vector4`](class_vector4.md) )                                                                                    |
+| [`Vector4`](class_vector4.md) | [`Vector4`](class_vector4.md#class_vector4_constructor_vector4) ( from: [`Vector4i`](class_vector4i.md) )                                                                                  |
+| [`Vector4`](class_vector4.md) | [`Vector4`](class_vector4.md#class_vector4_constructor_vector4) ( x: [`float`](class_float.md), y: [`float`](class_float.md), z: [`float`](class_float.md), w: [`float`](class_float.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector4`](class_vector4.md) | [`abs`](#class_vector4_method_abs) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
-| [`Vector4`](class_vector4.md) | [`ceil`](#class_vector4_method_ceil) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
-| [`Vector4`](class_vector4.md) | [`clamp`](#class_vector4_method_clamp) ( min: [`Vector4`](class_vector4.md), max: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                            |
-| [`Vector4`](class_vector4.md) | [`clampf`](#class_vector4_method_clampf) ( min: [`float`](class_float.md), max: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                  |
-| [`Vector4`](class_vector4.md) | [`cubic_interpolate`](#class_vector4_method_cubic_interpolate) ( b: [`Vector4`](class_vector4.md), pre_a: [`Vector4`](class_vector4.md), post_b: [`Vector4`](class_vector4.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                          |
-| [`Vector4`](class_vector4.md) | [`cubic_interpolate_in_time`](#class_vector4_method_cubic_interpolate_in_time) ( b: [`Vector4`](class_vector4.md), pre_a: [`Vector4`](class_vector4.md), post_b: [`Vector4`](class_vector4.md), weight: [`float`](class_float.md), b_t: [`float`](class_float.md), pre_a_t: [`float`](class_float.md), post_b_t: [`float`](class_float.md) ) const[^const] |
-| [`Vector4`](class_vector4.md) | [`direction_to`](#class_vector4_method_direction_to) ( to: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)     | [`distance_squared_to`](#class_vector4_method_distance_squared_to) ( to: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)     | [`distance_to`](#class_vector4_method_distance_to) ( to: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)     | [`dot`](#class_vector4_method_dot) ( with: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                                   |
-| [`Vector4`](class_vector4.md) | [`floor`](#class_vector4_method_floor) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
-| [`Vector4`](class_vector4.md) | [`inverse`](#class_vector4_method_inverse) ( ) const[^const]                                                                                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)       | [`is_equal_approx`](#class_vector4_method_is_equal_approx) ( to: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                             |
-| [`bool`](class_bool.md)       | [`is_finite`](#class_vector4_method_is_finite) ( ) const[^const]                                                                                                                                                                                                                                                                                           |
-| [`bool`](class_bool.md)       | [`is_normalized`](#class_vector4_method_is_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                   |
-| [`bool`](class_bool.md)       | [`is_zero_approx`](#class_vector4_method_is_zero_approx) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)     | [`length`](#class_vector4_method_length) ( ) const[^const]                                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)     | [`length_squared`](#class_vector4_method_length_squared) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`Vector4`](class_vector4.md) | [`lerp`](#class_vector4_method_lerp) ( to: [`Vector4`](class_vector4.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                |
-| [`Vector4`](class_vector4.md) | [`max`](#class_vector4_method_max) ( with: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                                   |
-| [`int`](class_int.md)         | [`max_axis_index`](#class_vector4_method_max_axis_index) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`Vector4`](class_vector4.md) | [`maxf`](#class_vector4_method_maxf) ( with: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                     |
-| [`Vector4`](class_vector4.md) | [`min`](#class_vector4_method_min) ( with: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                                   |
-| [`int`](class_int.md)         | [`min_axis_index`](#class_vector4_method_min_axis_index) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`Vector4`](class_vector4.md) | [`minf`](#class_vector4_method_minf) ( with: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                     |
-| [`Vector4`](class_vector4.md) | [`normalized`](#class_vector4_method_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                         |
-| [`Vector4`](class_vector4.md) | [`posmod`](#class_vector4_method_posmod) ( mod: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                  |
-| [`Vector4`](class_vector4.md) | [`posmodv`](#class_vector4_method_posmodv) ( modv: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                           |
-| [`Vector4`](class_vector4.md) | [`round`](#class_vector4_method_round) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
-| [`Vector4`](class_vector4.md) | [`sign`](#class_vector4_method_sign) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
-| [`Vector4`](class_vector4.md) | [`snapped`](#class_vector4_method_snapped) ( step: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                           |
-| [`Vector4`](class_vector4.md) | [`snappedf`](#class_vector4_method_snappedf) ( step: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                             |
+| [`Vector4`](class_vector4.md) | [`abs`](class_vector4.md#class_vector4_method_abs) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
+| [`Vector4`](class_vector4.md) | [`ceil`](class_vector4.md#class_vector4_method_ceil) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
+| [`Vector4`](class_vector4.md) | [`clamp`](class_vector4.md#class_vector4_method_clamp) ( min: [`Vector4`](class_vector4.md), max: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                            |
+| [`Vector4`](class_vector4.md) | [`clampf`](class_vector4.md#class_vector4_method_clampf) ( min: [`float`](class_float.md), max: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                  |
+| [`Vector4`](class_vector4.md) | [`cubic_interpolate`](class_vector4.md#class_vector4_method_cubic_interpolate) ( b: [`Vector4`](class_vector4.md), pre_a: [`Vector4`](class_vector4.md), post_b: [`Vector4`](class_vector4.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                          |
+| [`Vector4`](class_vector4.md) | [`cubic_interpolate_in_time`](class_vector4.md#class_vector4_method_cubic_interpolate_in_time) ( b: [`Vector4`](class_vector4.md), pre_a: [`Vector4`](class_vector4.md), post_b: [`Vector4`](class_vector4.md), weight: [`float`](class_float.md), b_t: [`float`](class_float.md), pre_a_t: [`float`](class_float.md), post_b_t: [`float`](class_float.md) ) const[^const] |
+| [`Vector4`](class_vector4.md) | [`direction_to`](class_vector4.md#class_vector4_method_direction_to) ( to: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)     | [`distance_squared_to`](class_vector4.md#class_vector4_method_distance_squared_to) ( to: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)     | [`distance_to`](class_vector4.md#class_vector4_method_distance_to) ( to: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)     | [`dot`](class_vector4.md#class_vector4_method_dot) ( with: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                                   |
+| [`Vector4`](class_vector4.md) | [`floor`](class_vector4.md#class_vector4_method_floor) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
+| [`Vector4`](class_vector4.md) | [`inverse`](class_vector4.md#class_vector4_method_inverse) ( ) const[^const]                                                                                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)       | [`is_equal_approx`](class_vector4.md#class_vector4_method_is_equal_approx) ( to: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                             |
+| [`bool`](class_bool.md)       | [`is_finite`](class_vector4.md#class_vector4_method_is_finite) ( ) const[^const]                                                                                                                                                                                                                                                                                           |
+| [`bool`](class_bool.md)       | [`is_normalized`](class_vector4.md#class_vector4_method_is_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                   |
+| [`bool`](class_bool.md)       | [`is_zero_approx`](class_vector4.md#class_vector4_method_is_zero_approx) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)     | [`length`](class_vector4.md#class_vector4_method_length) ( ) const[^const]                                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)     | [`length_squared`](class_vector4.md#class_vector4_method_length_squared) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`Vector4`](class_vector4.md) | [`lerp`](class_vector4.md#class_vector4_method_lerp) ( to: [`Vector4`](class_vector4.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                |
+| [`Vector4`](class_vector4.md) | [`max`](class_vector4.md#class_vector4_method_max) ( with: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                                   |
+| [`int`](class_int.md)         | [`max_axis_index`](class_vector4.md#class_vector4_method_max_axis_index) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`Vector4`](class_vector4.md) | [`maxf`](class_vector4.md#class_vector4_method_maxf) ( with: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                     |
+| [`Vector4`](class_vector4.md) | [`min`](class_vector4.md#class_vector4_method_min) ( with: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                                   |
+| [`int`](class_int.md)         | [`min_axis_index`](class_vector4.md#class_vector4_method_min_axis_index) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`Vector4`](class_vector4.md) | [`minf`](class_vector4.md#class_vector4_method_minf) ( with: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                     |
+| [`Vector4`](class_vector4.md) | [`normalized`](class_vector4.md#class_vector4_method_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                         |
+| [`Vector4`](class_vector4.md) | [`posmod`](class_vector4.md#class_vector4_method_posmod) ( mod: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                  |
+| [`Vector4`](class_vector4.md) | [`posmodv`](class_vector4.md#class_vector4_method_posmodv) ( modv: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                           |
+| [`Vector4`](class_vector4.md) | [`round`](class_vector4.md#class_vector4_method_round) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
+| [`Vector4`](class_vector4.md) | [`sign`](class_vector4.md#class_vector4_method_sign) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
+| [`Vector4`](class_vector4.md) | [`snapped`](class_vector4.md#class_vector4_method_snapped) ( step: [`Vector4`](class_vector4.md) ) const[^const]                                                                                                                                                                                                                                                           |
+| [`Vector4`](class_vector4.md) | [`snappedf`](class_vector4.md#class_vector4_method_snappedf) ( step: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                             |
 
 ## 运算符
 
@@ -107,25 +107,25 @@ See [`Vector4i`](class_vector4i.md) for its integer counterpart.
 
 **AXIS_X** = ``0`` <div id="class_vector4_constant_axis_x"></div>
 
-Enumerated value for the X axis. Returned by [`max_axis_index`](#class_vector4_method_max_axis_index) and [`min_axis_index`](#class_vector4_method_min_axis_index).
+Enumerated value for the X axis. Returned by [`max_axis_index`](class_vector4.md#class_vector4_method_max_axis_index) and [`min_axis_index`](class_vector4.md#class_vector4_method_min_axis_index).
 
 <div id="_class_vector4_constant_axis_y"></div>
 
 **AXIS_Y** = ``1`` <div id="class_vector4_constant_axis_y"></div>
 
-Enumerated value for the Y axis. Returned by [`max_axis_index`](#class_vector4_method_max_axis_index) and [`min_axis_index`](#class_vector4_method_min_axis_index).
+Enumerated value for the Y axis. Returned by [`max_axis_index`](class_vector4.md#class_vector4_method_max_axis_index) and [`min_axis_index`](class_vector4.md#class_vector4_method_min_axis_index).
 
 <div id="_class_vector4_constant_axis_z"></div>
 
 **AXIS_Z** = ``2`` <div id="class_vector4_constant_axis_z"></div>
 
-Enumerated value for the Z axis. Returned by [`max_axis_index`](#class_vector4_method_max_axis_index) and [`min_axis_index`](#class_vector4_method_min_axis_index).
+Enumerated value for the Z axis. Returned by [`max_axis_index`](class_vector4.md#class_vector4_method_max_axis_index) and [`min_axis_index`](class_vector4.md#class_vector4_method_min_axis_index).
 
 <div id="_class_vector4_constant_axis_w"></div>
 
 **AXIS_W** = ``3`` <div id="class_vector4_constant_axis_w"></div>
 
-Enumerated value for the W axis. Returned by [`max_axis_index`](#class_vector4_method_max_axis_index) and [`min_axis_index`](#class_vector4_method_min_axis_index).
+Enumerated value for the W axis. Returned by [`max_axis_index`](class_vector4.md#class_vector4_method_max_axis_index) and [`min_axis_index`](class_vector4.md#class_vector4_method_min_axis_index).
 
 <div id="_class_vector4_constant_zero"></div>
 
@@ -143,7 +143,7 @@ One vector, a vector with all components set to `1`.
 
 **INF** = ``Vector4(inf, inf, inf, inf)`` <div id="class_vector4_constant_inf"></div>
 
-Infinity vector, a vector with all components set to [`@GDScript.INF`](#class_@gdscript_constant_inf).
+Infinity vector, a vector with all components set to [`@GDScript.INF`](class_@gdscript.md#class_@gdscript_constant_inf).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -253,7 +253,7 @@ Returns a new vector with all components rounded up (towards positive infinity).
 
 [`Vector4`](class_vector4.md) **clamp** ( min: [`Vector4`](class_vector4.md), max: [`Vector4`](class_vector4.md) ) const[^const]<div id="class_vector4_method_clamp"></div>
 
-Returns a new vector with all components clamped between the components of `min` and `max`, by running [`@GlobalScope.clamp`](#class_@globalscope_method_clamp) on each component.
+Returns a new vector with all components clamped between the components of `min` and `max`, by running [`@GlobalScope.clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -263,7 +263,7 @@ Returns a new vector with all components clamped between the components of `min`
 
 [`Vector4`](class_vector4.md) **clampf** ( min: [`float`](class_float.md), max: [`float`](class_float.md) ) const[^const]<div id="class_vector4_method_clampf"></div>
 
-Returns a new vector with all components clamped between `min` and `max`, by running [`@GlobalScope.clamp`](#class_@globalscope_method_clamp) on each component.
+Returns a new vector with all components clamped between `min` and `max`, by running [`@GlobalScope.clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -285,7 +285,7 @@ Performs a cubic interpolation between this vector and `b` using `pre_a` and `po
 
 Performs a cubic interpolation between this vector and `b` using `pre_a` and `post_b` as handles, and returns the result at position `weight`. `weight` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
-It can perform smoother interpolation than [`cubic_interpolate`](#class_vector4_method_cubic_interpolate) by the time values.
+It can perform smoother interpolation than [`cubic_interpolate`](class_vector4.md#class_vector4_method_cubic_interpolate) by the time values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -307,7 +307,7 @@ Returns the normalized vector pointing from this vector to `to`. This is equival
 
 Returns the squared distance between this vector and `to`.
 
-This method runs faster than [`distance_to`](#class_vector4_method_distance_to), so prefer it if you need to compare vectors or need the squared distance for some formula.
+This method runs faster than [`distance_to`](class_vector4.md#class_vector4_method_distance_to), so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -357,7 +357,7 @@ Returns the inverse of the vector. This is the same as `Vector4(1.0 / v.x, 1.0 /
 
 [`bool`](class_bool.md) **is_equal_approx** ( to: [`Vector4`](class_vector4.md) ) const[^const]<div id="class_vector4_method_is_equal_approx"></div>
 
-Returns `true` if this vector and `to` are approximately equal, by running [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) on each component.
+Returns `true` if this vector and `to` are approximately equal, by running [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -367,7 +367,7 @@ Returns `true` if this vector and `to` are approximately equal, by running [`@Gl
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_vector4_method_is_finite"></div>
 
-Returns `true` if this vector is finite, by calling [`@GlobalScope.is_finite`](#class_@globalscope_method_is_finite) on each component.
+Returns `true` if this vector is finite, by calling [`@GlobalScope.is_finite`](class_@globalscope.md#class_@globalscope_method_is_finite) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -387,9 +387,9 @@ Returns `true` if the vector is normalized, i.e. its length is approximately equ
 
 [`bool`](class_bool.md) **is_zero_approx** ( ) const[^const]<div id="class_vector4_method_is_zero_approx"></div>
 
-Returns `true` if this vector's values are approximately zero, by running [`@GlobalScope.is_zero_approx`](#class_@globalscope_method_is_zero_approx) on each component.
+Returns `true` if this vector's values are approximately zero, by running [`@GlobalScope.is_zero_approx`](class_@globalscope.md#class_@globalscope_method_is_zero_approx) on each component.
 
-This method is faster than using [`is_equal_approx`](#class_vector4_method_is_equal_approx) with one value as a zero vector.
+This method is faster than using [`is_equal_approx`](class_vector4.md#class_vector4_method_is_equal_approx) with one value as a zero vector.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -411,7 +411,7 @@ Returns the length (magnitude) of this vector.
 
 Returns the squared length (squared magnitude) of this vector.
 
-This method runs faster than [`length`](#class_vector4_method_length), so prefer it if you need to compare vectors or need the squared distance for some formula.
+This method runs faster than [`length`](class_vector4.md#class_vector4_method_length), so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -441,7 +441,7 @@ Returns the component-wise maximum of this and `with`, equivalent to `Vector4(ma
 
 [`int`](class_int.md) **max_axis_index** ( ) const[^const]<div id="class_vector4_method_max_axis_index"></div>
 
-Returns the axis of the vector's highest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_X`](#class_vector4_constant_axis_x).
+Returns the axis of the vector's highest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_X`](class_vector4.md#class_vector4_constant_axis_x).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -471,7 +471,7 @@ Returns the component-wise minimum of this and `with`, equivalent to `Vector4(mi
 
 [`int`](class_int.md) **min_axis_index** ( ) const[^const]<div id="class_vector4_method_min_axis_index"></div>
 
-Returns the axis of the vector's lowest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_W`](#class_vector4_constant_axis_w).
+Returns the axis of the vector's lowest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_W`](class_vector4.md#class_vector4_constant_axis_w).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -491,7 +491,7 @@ Returns the component-wise minimum of this and `with`, equivalent to `Vector4(mi
 
 [`Vector4`](class_vector4.md) **normalized** ( ) const[^const]<div id="class_vector4_method_normalized"></div>
 
-Returns the result of scaling the vector to unit length. Equivalent to `v / v.length()`. Returns `(0, 0, 0, 0)` if `v.length() == 0`. See also [`is_normalized`](#class_vector4_method_is_normalized).
+Returns the result of scaling the vector to unit length. Equivalent to `v / v.length()`. Returns `(0, 0, 0, 0)` if `v.length() == 0`. See also [`is_normalized`](class_vector4.md#class_vector4_method_is_normalized).
 
  **Note:** This function may return incorrect values if the input vector length is near zero.
 
@@ -503,7 +503,7 @@ Returns the result of scaling the vector to unit length. Equivalent to `v / v.le
 
 [`Vector4`](class_vector4.md) **posmod** ( mod: [`float`](class_float.md) ) const[^const]<div id="class_vector4_method_posmod"></div>
 
-Returns a vector composed of the [`@GlobalScope.fposmod`](#class_@globalscope_method_fposmod) of this vector's components and `mod`.
+Returns a vector composed of the [`@GlobalScope.fposmod`](class_@globalscope.md#class_@globalscope_method_fposmod) of this vector's components and `mod`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -513,7 +513,7 @@ Returns a vector composed of the [`@GlobalScope.fposmod`](#class_@globalscope_me
 
 [`Vector4`](class_vector4.md) **posmodv** ( modv: [`Vector4`](class_vector4.md) ) const[^const]<div id="class_vector4_method_posmodv"></div>
 
-Returns a vector composed of the [`@GlobalScope.fposmod`](#class_@globalscope_method_fposmod) of this vector's components and `modv`'s components.
+Returns a vector composed of the [`@GlobalScope.fposmod`](class_@globalscope.md#class_@globalscope_method_fposmod) of this vector's components and `modv`'s components.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -533,7 +533,7 @@ Returns a new vector with all components rounded to the nearest integer, with ha
 
 [`Vector4`](class_vector4.md) **sign** ( ) const[^const]<div id="class_vector4_method_sign"></div>
 
-Returns a new vector with each component set to `1.0` if it's positive, `-1.0` if it's negative, and `0.0` if it's zero. The result is identical to calling [`@GlobalScope.sign`](#class_@globalscope_method_sign) on each component.
+Returns a new vector with each component set to `1.0` if it's positive, `-1.0` if it's negative, and `0.0` if it's zero. The result is identical to calling [`@GlobalScope.sign`](class_@globalscope.md#class_@globalscope_method_sign) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -567,9 +567,9 @@ Returns a new vector with each component snapped to the nearest multiple of `ste
 
 Returns `true` if the vectors are not equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_vector4_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_vector4.md#class_vector4_method_is_equal_approx) instead, which is more reliable.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -581,7 +581,7 @@ Returns `true` if the vectors are not equal.
 
 Transforms (multiplies) the **Vector4** by the transpose of the given [`Projection`](class_projection.md) matrix.
 
-For transforming by inverse of a projection `projection.inverse() * vector` can be used instead. See [`Projection.inverse`](#class_projection_method_inverse).
+For transforming by inverse of a projection `projection.inverse() * vector` can be used instead. See [`Projection.inverse`](class_projection.md#class_projection_method_inverse).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -715,7 +715,7 @@ Divides each component of the **Vector4** by the given [`int`](class_int.md).
 
 Compares two **Vector4** vectors by first checking if the X value of the left vector is less than the X value of the `right` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, Z values of the two vectors, and then with the W values. This operator is useful for sorting vectors.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -727,7 +727,7 @@ Compares two **Vector4** vectors by first checking if the X value of the left ve
 
 Compares two **Vector4** vectors by first checking if the X value of the left vector is less than or equal to the X value of the `right` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, Z values of the two vectors, and then with the W values. This operator is useful for sorting vectors.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -739,9 +739,9 @@ Compares two **Vector4** vectors by first checking if the X value of the left ve
 
 Returns `true` if the vectors are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_vector4_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_vector4.md#class_vector4_method_is_equal_approx) instead, which is more reliable.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -753,7 +753,7 @@ Returns `true` if the vectors are exactly equal.
 
 Compares two **Vector4** vectors by first checking if the X value of the left vector is greater than the X value of the `right` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, Z values of the two vectors, and then with the W values. This operator is useful for sorting vectors.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -765,7 +765,7 @@ Compares two **Vector4** vectors by first checking if the X value of the left ve
 
 Compares two **Vector4** vectors by first checking if the X value of the left vector is greater than or equal to the X value of the `right` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, Z values of the two vectors, and then with the W values. This operator is useful for sorting vectors.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -13,7 +13,7 @@ Adds a high-shelf filter to the audio bus.
 
 ## 描述
 
-Reduces all frequencies above the [`AudioEffectFilter.cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz).
+Reduces all frequencies above the [`AudioEffectFilter.cutoff_hz`](class_audioeffectfilter.md#class_audioeffectfilter_property_cutoff_hz).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -19,7 +19,7 @@ Comes with a built-in editor for texture's curves.
 
 |||
 |:-:|:--|
-| [`CurveXYZTexture`](class_curvexyztexture.md) | [`texture`](#class_visualshadernodecurvexyztexture_property_texture) |
+| [`CurveXYZTexture`](class_curvexyztexture.md) | [`texture`](class_visualshadernodecurvexyztexture.md#class_visualshadernodecurvexyztexture_property_texture) |
 
 <!-- rst-class:: classref-section-separator -->
 

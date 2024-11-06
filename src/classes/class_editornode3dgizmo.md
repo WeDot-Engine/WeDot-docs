@@ -19,31 +19,31 @@ Gizmo that is used for providing custom visualization and editing (handles and s
 
 |||
 |:-:|:--|
-| `void`                                                        | [`_begin_handle_action`](#class_editornode3dgizmo_private_method__begin_handle_action) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                                             |
-| `void`                                                        | [`_commit_handle`](#class_editornode3dgizmo_private_method__commit_handle) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md), restore: [`Variant`](class_variant.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                |
-| `void`                                                        | [`_commit_subgizmos`](#class_editornode3dgizmo_private_method__commit_subgizmos) ( ids: [`PackedInt32Array`](class_packedint32array.md), restores: [Array](class_array.md) [`Transform3D`](class_transform3d.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]                                                  |
-| [`String`](class_string.md)                                   | [`_get_handle_name`](#class_editornode3dgizmo_private_method__get_handle_name) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                                                                                                       |
-| [`Variant`](class_variant.md)                                 | [`_get_handle_value`](#class_editornode3dgizmo_private_method__get_handle_value) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                                                                                                     |
-| [`Transform3D`](class_transform3d.md)                         | [`_get_subgizmo_transform`](#class_editornode3dgizmo_private_method__get_subgizmo_transform) ( id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                                                                                                                                             |
-| [`bool`](class_bool.md)                                       | [`_is_handle_highlighted`](#class_editornode3dgizmo_private_method__is_handle_highlighted) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                                                                                           |
-| `void`                                                        | [`_redraw`](#class_editornode3dgizmo_private_method__redraw) ( ) virtual[^virtual]                                                                                                                                                                                                                                     |
-| `void`                                                        | [`_set_handle`](#class_editornode3dgizmo_private_method__set_handle) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md), camera: [`Camera3D`](class_camera3d.md), point: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                                                |
-| `void`                                                        | [`_set_subgizmo_transform`](#class_editornode3dgizmo_private_method__set_subgizmo_transform) ( id: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) ) virtual[^virtual]                                                                                                                         |
-| [`PackedInt32Array`](class_packedint32array.md)               | [`_subgizmos_intersect_frustum`](#class_editornode3dgizmo_private_method__subgizmos_intersect_frustum) ( camera: [`Camera3D`](class_camera3d.md), frustum: [Array](class_array.md) [`Plane`](class_plane.md) ) virtual[^virtual] const[^const]                                                                         |
-| [`int`](class_int.md)                                         | [`_subgizmos_intersect_ray`](#class_editornode3dgizmo_private_method__subgizmos_intersect_ray) ( camera: [`Camera3D`](class_camera3d.md), point: [`Vector2`](class_vector2.md) ) virtual[^virtual] const[^const]                                                                                                       |
-| `void`                                                        | [`add_collision_segments`](#class_editornode3dgizmo_method_add_collision_segments) ( segments: [`PackedVector3Array`](class_packedvector3array.md) )                                                                                                                                                                   |
-| `void`                                                        | [`add_collision_triangles`](#class_editornode3dgizmo_method_add_collision_triangles) ( triangles: [`TriangleMesh`](class_trianglemesh.md) )                                                                                                                                                                            |
-| `void`                                                        | [`add_handles`](#class_editornode3dgizmo_method_add_handles) ( handles: [`PackedVector3Array`](class_packedvector3array.md), material: [`Material`](class_material.md), ids: [`PackedInt32Array`](class_packedint32array.md), billboard: [`bool`](class_bool.md) = false, secondary: [`bool`](class_bool.md) = false ) |
-| `void`                                                        | [`add_lines`](#class_editornode3dgizmo_method_add_lines) ( lines: [`PackedVector3Array`](class_packedvector3array.md), material: [`Material`](class_material.md), billboard: [`bool`](class_bool.md) = false, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1) )                                                |
-| `void`                                                        | [`add_mesh`](#class_editornode3dgizmo_method_add_mesh) ( mesh: [`Mesh`](class_mesh.md), material: [`Material`](class_material.md) = null, transform: [`Transform3D`](class_transform3d.md) = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), skeleton: [`SkinReference`](class_skinreference.md) = null )             |
-| `void`                                                        | [`add_unscaled_billboard`](#class_editornode3dgizmo_method_add_unscaled_billboard) ( material: [`Material`](class_material.md), default_scale: [`float`](class_float.md) = 1, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1) )                                                                                |
-| `void`                                                        | [`clear`](#class_editornode3dgizmo_method_clear) ( )                                                                                                                                                                                                                                                                   |
-| [`Node3D`](class_node3d.md)                                   | [`get_node_3d`](#class_editornode3dgizmo_method_get_node_3d) ( ) const[^const]                                                                                                                                                                                                                                         |
-| [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) | [`get_plugin`](#class_editornode3dgizmo_method_get_plugin) ( ) const[^const]                                                                                                                                                                                                                                           |
-| [`PackedInt32Array`](class_packedint32array.md)               | [`get_subgizmo_selection`](#class_editornode3dgizmo_method_get_subgizmo_selection) ( ) const[^const]                                                                                                                                                                                                                   |
-| [`bool`](class_bool.md)                                       | [`is_subgizmo_selected`](#class_editornode3dgizmo_method_is_subgizmo_selected) ( id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                             |
-| `void`                                                        | [`set_hidden`](#class_editornode3dgizmo_method_set_hidden) ( hidden: [`bool`](class_bool.md) )                                                                                                                                                                                                                         |
-| `void`                                                        | [`set_node_3d`](#class_editornode3dgizmo_method_set_node_3d) ( node: [`Node`](class_node.md) )                                                                                                                                                                                                                         |
+| `void`                                                        | [`_begin_handle_action`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__begin_handle_action) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                                             |
+| `void`                                                        | [`_commit_handle`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__commit_handle) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md), restore: [`Variant`](class_variant.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                |
+| `void`                                                        | [`_commit_subgizmos`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__commit_subgizmos) ( ids: [`PackedInt32Array`](class_packedint32array.md), restores: [Array](class_array.md) [`Transform3D`](class_transform3d.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]                                                  |
+| [`String`](class_string.md)                                   | [`_get_handle_name`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__get_handle_name) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                                                                                                       |
+| [`Variant`](class_variant.md)                                 | [`_get_handle_value`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__get_handle_value) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                                                                                                     |
+| [`Transform3D`](class_transform3d.md)                         | [`_get_subgizmo_transform`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__get_subgizmo_transform) ( id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                                                                                                                                             |
+| [`bool`](class_bool.md)                                       | [`_is_handle_highlighted`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__is_handle_highlighted) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                                                                                           |
+| `void`                                                        | [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw) ( ) virtual[^virtual]                                                                                                                                                                                                                                     |
+| `void`                                                        | [`_set_handle`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__set_handle) ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md), camera: [`Camera3D`](class_camera3d.md), point: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                                                |
+| `void`                                                        | [`_set_subgizmo_transform`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__set_subgizmo_transform) ( id: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) ) virtual[^virtual]                                                                                                                         |
+| [`PackedInt32Array`](class_packedint32array.md)               | [`_subgizmos_intersect_frustum`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__subgizmos_intersect_frustum) ( camera: [`Camera3D`](class_camera3d.md), frustum: [Array](class_array.md) [`Plane`](class_plane.md) ) virtual[^virtual] const[^const]                                                                         |
+| [`int`](class_int.md)                                         | [`_subgizmos_intersect_ray`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__subgizmos_intersect_ray) ( camera: [`Camera3D`](class_camera3d.md), point: [`Vector2`](class_vector2.md) ) virtual[^virtual] const[^const]                                                                                                       |
+| `void`                                                        | [`add_collision_segments`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_collision_segments) ( segments: [`PackedVector3Array`](class_packedvector3array.md) )                                                                                                                                                                   |
+| `void`                                                        | [`add_collision_triangles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_collision_triangles) ( triangles: [`TriangleMesh`](class_trianglemesh.md) )                                                                                                                                                                            |
+| `void`                                                        | [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles) ( handles: [`PackedVector3Array`](class_packedvector3array.md), material: [`Material`](class_material.md), ids: [`PackedInt32Array`](class_packedint32array.md), billboard: [`bool`](class_bool.md) = false, secondary: [`bool`](class_bool.md) = false ) |
+| `void`                                                        | [`add_lines`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_lines) ( lines: [`PackedVector3Array`](class_packedvector3array.md), material: [`Material`](class_material.md), billboard: [`bool`](class_bool.md) = false, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1) )                                                |
+| `void`                                                        | [`add_mesh`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_mesh) ( mesh: [`Mesh`](class_mesh.md), material: [`Material`](class_material.md) = null, transform: [`Transform3D`](class_transform3d.md) = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), skeleton: [`SkinReference`](class_skinreference.md) = null )             |
+| `void`                                                        | [`add_unscaled_billboard`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_unscaled_billboard) ( material: [`Material`](class_material.md), default_scale: [`float`](class_float.md) = 1, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1) )                                                                                |
+| `void`                                                        | [`clear`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_clear) ( )                                                                                                                                                                                                                                                                   |
+| [`Node3D`](class_node3d.md)                                   | [`get_node_3d`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_get_node_3d) ( ) const[^const]                                                                                                                                                                                                                                         |
+| [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) | [`get_plugin`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_get_plugin) ( ) const[^const]                                                                                                                                                                                                                                           |
+| [`PackedInt32Array`](class_packedint32array.md)               | [`get_subgizmo_selection`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_get_subgizmo_selection) ( ) const[^const]                                                                                                                                                                                                                   |
+| [`bool`](class_bool.md)                                       | [`is_subgizmo_selected`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_is_subgizmo_selected) ( id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                             |
+| `void`                                                        | [`set_hidden`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_set_hidden) ( hidden: [`bool`](class_bool.md) )                                                                                                                                                                                                                         |
+| `void`                                                        | [`set_node_3d`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_set_node_3d) ( node: [`Node`](class_node.md) )                                                                                                                                                                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -65,11 +65,11 @@ Gizmo that is used for providing custom visualization and editing (handles and s
 
 `void` **_commit_handle** ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md), restore: [`Variant`](class_variant.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]<div id="class_editornode3dgizmo_private_method__commit_handle"></div>
 
-Override this method to commit a handle being edited (handles must have been previously added by [`add_handles`](#class_editornode3dgizmo_method_add_handles)). This usually means creating an [`UndoRedo`](class_undoredo.md) action for the change, using the current handle value as "do" and the `restore` argument as "undo".
+Override this method to commit a handle being edited (handles must have been previously added by [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles)). This usually means creating an [`UndoRedo`](class_undoredo.md) action for the change, using the current handle value as "do" and the `restore` argument as "undo".
 
 If the `cancel` argument is `true`, the `restore` value should be directly set, without any [`UndoRedo`](class_undoredo.md) action.
 
-The `secondary` argument is `true` when the committed handle is secondary (see [`add_handles`](#class_editornode3dgizmo_method_add_handles) for more information).
+The `secondary` argument is `true` when the committed handle is secondary (see [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles) for more information).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -79,7 +79,7 @@ The `secondary` argument is `true` when the committed handle is secondary (see [
 
 `void` **_commit_subgizmos** ( ids: [`PackedInt32Array`](class_packedint32array.md), restores: [Array](class_array.md) [`Transform3D`](class_transform3d.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]<div id="class_editornode3dgizmo_private_method__commit_subgizmos"></div>
 
-Override this method to commit a group of subgizmos being edited (see [`_subgizmos_intersect_ray`](#class_editornode3dgizmo_private_method__subgizmos_intersect_ray) and [`_subgizmos_intersect_frustum`](#class_editornode3dgizmo_private_method__subgizmos_intersect_frustum)). This usually means creating an [`UndoRedo`](class_undoredo.md) action for the change, using the current transforms as "do" and the `restores` transforms as "undo".
+Override this method to commit a group of subgizmos being edited (see [`_subgizmos_intersect_ray`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__subgizmos_intersect_ray) and [`_subgizmos_intersect_frustum`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__subgizmos_intersect_frustum)). This usually means creating an [`UndoRedo`](class_undoredo.md) action for the change, using the current transforms as "do" and the `restores` transforms as "undo".
 
 If the `cancel` argument is `true`, the `restores` transforms should be directly set, without any [`UndoRedo`](class_undoredo.md) action.
 
@@ -91,9 +91,9 @@ If the `cancel` argument is `true`, the `restores` transforms should be directly
 
 [`String`](class_string.md) **_get_handle_name** ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]<div id="class_editornode3dgizmo_private_method__get_handle_name"></div>
 
-Override this method to return the name of an edited handle (handles must have been previously added by [`add_handles`](#class_editornode3dgizmo_method_add_handles)). Handles can be named for reference to the user when editing.
+Override this method to return the name of an edited handle (handles must have been previously added by [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles)). Handles can be named for reference to the user when editing.
 
-The `secondary` argument is `true` when the requested handle is secondary (see [`add_handles`](#class_editornode3dgizmo_method_add_handles) for more information).
+The `secondary` argument is `true` when the requested handle is secondary (see [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles) for more information).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -103,9 +103,9 @@ The `secondary` argument is `true` when the requested handle is secondary (see [
 
 [`Variant`](class_variant.md) **_get_handle_value** ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]<div id="class_editornode3dgizmo_private_method__get_handle_value"></div>
 
-Override this method to return the current value of a handle. This value will be requested at the start of an edit and used as the `restore` argument in [`_commit_handle`](#class_editornode3dgizmo_private_method__commit_handle).
+Override this method to return the current value of a handle. This value will be requested at the start of an edit and used as the `restore` argument in [`_commit_handle`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__commit_handle).
 
-The `secondary` argument is `true` when the requested handle is secondary (see [`add_handles`](#class_editornode3dgizmo_method_add_handles) for more information).
+The `secondary` argument is `true` when the requested handle is secondary (see [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles) for more information).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -115,7 +115,7 @@ The `secondary` argument is `true` when the requested handle is secondary (see [
 
 [`Transform3D`](class_transform3d.md) **_get_subgizmo_transform** ( id: [`int`](class_int.md) ) virtual[^virtual] const[^const]<div id="class_editornode3dgizmo_private_method__get_subgizmo_transform"></div>
 
-Override this method to return the current transform of a subgizmo. This transform will be requested at the start of an edit and used as the `restore` argument in [`_commit_subgizmos`](#class_editornode3dgizmo_private_method__commit_subgizmos).
+Override this method to return the current transform of a subgizmo. This transform will be requested at the start of an edit and used as the `restore` argument in [`_commit_subgizmos`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__commit_subgizmos).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -127,7 +127,7 @@ Override this method to return the current transform of a subgizmo. This transfo
 
 Override this method to return `true` whenever the given handle should be highlighted in the editor.
 
-The `secondary` argument is `true` when the requested handle is secondary (see [`add_handles`](#class_editornode3dgizmo_method_add_handles) for more information).
+The `secondary` argument is `true` when the requested handle is secondary (see [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles) for more information).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -137,7 +137,7 @@ The `secondary` argument is `true` when the requested handle is secondary (see [
 
 `void` **_redraw** ( ) virtual[^virtual]<div id="class_editornode3dgizmo_private_method__redraw"></div>
 
-Override this method to add all the gizmo elements whenever a gizmo update is requested. It's common to call [`clear`](#class_editornode3dgizmo_method_clear) at the beginning of this method and then add visual elements depending on the node's properties.
+Override this method to add all the gizmo elements whenever a gizmo update is requested. It's common to call [`clear`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_clear) at the beginning of this method and then add visual elements depending on the node's properties.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -147,9 +147,9 @@ Override this method to add all the gizmo elements whenever a gizmo update is re
 
 `void` **_set_handle** ( id: [`int`](class_int.md), secondary: [`bool`](class_bool.md), camera: [`Camera3D`](class_camera3d.md), point: [`Vector2`](class_vector2.md) ) virtual[^virtual]<div id="class_editornode3dgizmo_private_method__set_handle"></div>
 
-Override this method to update the node properties when the user drags a gizmo handle (previously added with [`add_handles`](#class_editornode3dgizmo_method_add_handles)). The provided `point` is the mouse position in screen coordinates and the `camera` can be used to convert it to raycasts.
+Override this method to update the node properties when the user drags a gizmo handle (previously added with [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles)). The provided `point` is the mouse position in screen coordinates and the `camera` can be used to convert it to raycasts.
 
-The `secondary` argument is `true` when the edited handle is secondary (see [`add_handles`](#class_editornode3dgizmo_method_add_handles) for more information).
+The `secondary` argument is `true` when the edited handle is secondary (see [`add_handles`](class_editornode3dgizmo.md#class_editornode3dgizmo_method_add_handles) for more information).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -159,7 +159,7 @@ The `secondary` argument is `true` when the edited handle is secondary (see [`ad
 
 `void` **_set_subgizmo_transform** ( id: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) ) virtual[^virtual]<div id="class_editornode3dgizmo_private_method__set_subgizmo_transform"></div>
 
-Override this method to update the node properties during subgizmo editing (see [`_subgizmos_intersect_ray`](#class_editornode3dgizmo_private_method__subgizmos_intersect_ray) and [`_subgizmos_intersect_frustum`](#class_editornode3dgizmo_private_method__subgizmos_intersect_frustum)). The `transform` is given in the [`Node3D`](class_node3d.md)'s local coordinate system.
+Override this method to update the node properties during subgizmo editing (see [`_subgizmos_intersect_ray`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__subgizmos_intersect_ray) and [`_subgizmos_intersect_frustum`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__subgizmos_intersect_frustum)). The `transform` is given in the [`Node3D`](class_node3d.md)'s local coordinate system.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -169,7 +169,7 @@ Override this method to update the node properties during subgizmo editing (see 
 
 [`PackedInt32Array`](class_packedint32array.md) **_subgizmos_intersect_frustum** ( camera: [`Camera3D`](class_camera3d.md), frustum: [Array](class_array.md) [`Plane`](class_plane.md) ) virtual[^virtual] const[^const]<div id="class_editornode3dgizmo_private_method__subgizmos_intersect_frustum"></div>
 
-Override this method to allow selecting subgizmos using mouse drag box selection. Given a `camera` and a `frustum`, this method should return which subgizmos are contained within the frustum. The `frustum` argument consists of an array with all the [`Plane`](class_plane.md) s that make up the selection frustum. The returned value should contain a list of unique subgizmo identifiers, which can have any non-negative value and will be used in other virtual methods like [`_get_subgizmo_transform`](#class_editornode3dgizmo_private_method__get_subgizmo_transform) or [`_commit_subgizmos`](#class_editornode3dgizmo_private_method__commit_subgizmos).
+Override this method to allow selecting subgizmos using mouse drag box selection. Given a `camera` and a `frustum`, this method should return which subgizmos are contained within the frustum. The `frustum` argument consists of an array with all the [`Plane`](class_plane.md) s that make up the selection frustum. The returned value should contain a list of unique subgizmo identifiers, which can have any non-negative value and will be used in other virtual methods like [`_get_subgizmo_transform`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__get_subgizmo_transform) or [`_commit_subgizmos`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__commit_subgizmos).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -179,7 +179,7 @@ Override this method to allow selecting subgizmos using mouse drag box selection
 
 [`int`](class_int.md) **_subgizmos_intersect_ray** ( camera: [`Camera3D`](class_camera3d.md), point: [`Vector2`](class_vector2.md) ) virtual[^virtual] const[^const]<div id="class_editornode3dgizmo_private_method__subgizmos_intersect_ray"></div>
 
-Override this method to allow selecting subgizmos using mouse clicks. Given a `camera` and a `point` in screen coordinates, this method should return which subgizmo should be selected. The returned value should be a unique subgizmo identifier, which can have any non-negative value and will be used in other virtual methods like [`_get_subgizmo_transform`](#class_editornode3dgizmo_private_method__get_subgizmo_transform) or [`_commit_subgizmos`](#class_editornode3dgizmo_private_method__commit_subgizmos).
+Override this method to allow selecting subgizmos using mouse clicks. Given a `camera` and a `point` in screen coordinates, this method should return which subgizmo should be selected. The returned value should be a unique subgizmo identifier, which can have any non-negative value and will be used in other virtual methods like [`_get_subgizmo_transform`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__get_subgizmo_transform) or [`_commit_subgizmos`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__commit_subgizmos).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -189,7 +189,7 @@ Override this method to allow selecting subgizmos using mouse clicks. Given a `c
 
 `void` **add_collision_segments** ( segments: [`PackedVector3Array`](class_packedvector3array.md) )<div id="class_editornode3dgizmo_method_add_collision_segments"></div>
 
-Adds the specified `segments` to the gizmo's collision shape for picking. Call this method during [`_redraw`](#class_editornode3dgizmo_private_method__redraw).
+Adds the specified `segments` to the gizmo's collision shape for picking. Call this method during [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -199,7 +199,7 @@ Adds the specified `segments` to the gizmo's collision shape for picking. Call t
 
 `void` **add_collision_triangles** ( triangles: [`TriangleMesh`](class_trianglemesh.md) )<div id="class_editornode3dgizmo_method_add_collision_triangles"></div>
 
-Adds collision triangles to the gizmo for picking. A [`TriangleMesh`](class_trianglemesh.md) can be generated from a regular [`Mesh`](class_mesh.md) too. Call this method during [`_redraw`](#class_editornode3dgizmo_private_method__redraw).
+Adds collision triangles to the gizmo for picking. A [`TriangleMesh`](class_trianglemesh.md) can be generated from a regular [`Mesh`](class_mesh.md) too. Call this method during [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -213,7 +213,7 @@ Adds a list of handles (points) which can be used to edit the properties of the 
 
 The `secondary` argument marks the added handles as secondary, meaning they will normally have lower selection priority than regular handles. When the user is holding the shift key secondary handles will switch to have higher priority than regular handles. This change in priority can be used to place multiple handles at the same point while still giving the user control on their selection.
 
-There are virtual methods which will be called upon editing of these handles. Call this method during [`_redraw`](#class_editornode3dgizmo_private_method__redraw).
+There are virtual methods which will be called upon editing of these handles. Call this method during [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -223,7 +223,7 @@ There are virtual methods which will be called upon editing of these handles. Ca
 
 `void` **add_lines** ( lines: [`PackedVector3Array`](class_packedvector3array.md), material: [`Material`](class_material.md), billboard: [`bool`](class_bool.md) = false, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1) )<div id="class_editornode3dgizmo_method_add_lines"></div>
 
-Adds lines to the gizmo (as sets of 2 points), with a given material. The lines are used for visualizing the gizmo. Call this method during [`_redraw`](#class_editornode3dgizmo_private_method__redraw).
+Adds lines to the gizmo (as sets of 2 points), with a given material. The lines are used for visualizing the gizmo. Call this method during [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -233,7 +233,7 @@ Adds lines to the gizmo (as sets of 2 points), with a given material. The lines 
 
 `void` **add_mesh** ( mesh: [`Mesh`](class_mesh.md), material: [`Material`](class_material.md) = null, transform: [`Transform3D`](class_transform3d.md) = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), skeleton: [`SkinReference`](class_skinreference.md) = null )<div id="class_editornode3dgizmo_method_add_mesh"></div>
 
-Adds a mesh to the gizmo with the specified `material`, local `transform` and `skeleton`. Call this method during [`_redraw`](#class_editornode3dgizmo_private_method__redraw).
+Adds a mesh to the gizmo with the specified `material`, local `transform` and `skeleton`. Call this method during [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -243,7 +243,7 @@ Adds a mesh to the gizmo with the specified `material`, local `transform` and `s
 
 `void` **add_unscaled_billboard** ( material: [`Material`](class_material.md), default_scale: [`float`](class_float.md) = 1, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1) )<div id="class_editornode3dgizmo_method_add_unscaled_billboard"></div>
 
-Adds an unscaled billboard for visualization and selection. Call this method during [`_redraw`](#class_editornode3dgizmo_private_method__redraw).
+Adds an unscaled billboard for visualization and selection. Call this method during [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -273,7 +273,7 @@ Returns the [`Node3D`](class_node3d.md) node associated with this gizmo.
 
 [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) **get_plugin** ( ) const[^const]<div id="class_editornode3dgizmo_method_get_plugin"></div>
 
-Returns the [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) that owns this gizmo. It's useful to retrieve materials using [`EditorNode3DGizmoPlugin.get_material`](#class_editornode3dgizmoplugin_method_get_material).
+Returns the [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) that owns this gizmo. It's useful to retrieve materials using [`EditorNode3DGizmoPlugin.get_material`](class_editornode3dgizmoplugin.md#class_editornode3dgizmoplugin_method_get_material).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -283,7 +283,7 @@ Returns the [`EditorNode3DGizmoPlugin`](class_editornode3dgizmoplugin.md) that o
 
 [`PackedInt32Array`](class_packedint32array.md) **get_subgizmo_selection** ( ) const[^const]<div id="class_editornode3dgizmo_method_get_subgizmo_selection"></div>
 
-Returns a list of the currently selected subgizmos. Can be used to highlight selected elements during [`_redraw`](#class_editornode3dgizmo_private_method__redraw).
+Returns a list of the currently selected subgizmos. Can be used to highlight selected elements during [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -293,7 +293,7 @@ Returns a list of the currently selected subgizmos. Can be used to highlight sel
 
 [`bool`](class_bool.md) **is_subgizmo_selected** ( id: [`int`](class_int.md) ) const[^const]<div id="class_editornode3dgizmo_method_is_subgizmo_selected"></div>
 
-Returns `true` if the given subgizmo is currently selected. Can be used to highlight selected elements during [`_redraw`](#class_editornode3dgizmo_private_method__redraw).
+Returns `true` if the given subgizmo is currently selected. Can be used to highlight selected elements during [`_redraw`](class_editornode3dgizmo.md#class_editornode3dgizmo_private_method__redraw).
 
 <!-- rst-class:: classref-item-separator -->
 

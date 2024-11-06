@@ -92,46 +92,46 @@ Here is an example on how to iterate through the files of a directory:
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`include_hidden`](#class_diraccess_property_include_hidden)             |
-| [`bool`](class_bool.md) | [`include_navigational`](#class_diraccess_property_include_navigational) |
+| [`bool`](class_bool.md) | [`include_hidden`](class_diraccess.md#class_diraccess_property_include_hidden)             |
+| [`bool`](class_bool.md) | [`include_navigational`](class_diraccess.md#class_diraccess_property_include_navigational) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)                 | [`change_dir`](#class_diraccess_method_change_dir) ( to_dir: [`String`](class_string.md) )                                                                                               |
-| [Error](#enum_@globalscope_error)                 | [`copy`](#class_diraccess_method_copy) ( from: [`String`](class_string.md), to: [`String`](class_string.md), chmod_flags: [`int`](class_int.md) = -1 )                                   |
-| [Error](#enum_@globalscope_error)                 | [`copy_absolute`](#class_diraccess_method_copy_absolute) ( from: [`String`](class_string.md), to: [`String`](class_string.md), chmod_flags: [`int`](class_int.md) = -1 ) static[^static] |
-| [Error](#enum_@globalscope_error)                 | [`create_link`](#class_diraccess_method_create_link) ( source: [`String`](class_string.md), target: [`String`](class_string.md) )                                                        |
-| [`bool`](class_bool.md)                           | [`current_is_dir`](#class_diraccess_method_current_is_dir) ( ) const[^const]                                                                                                             |
-| [`bool`](class_bool.md)                           | [`dir_exists`](#class_diraccess_method_dir_exists) ( path: [`String`](class_string.md) )                                                                                                 |
-| [`bool`](class_bool.md)                           | [`dir_exists_absolute`](#class_diraccess_method_dir_exists_absolute) ( path: [`String`](class_string.md) ) static[^static]                                                               |
-| [`bool`](class_bool.md)                           | [`file_exists`](#class_diraccess_method_file_exists) ( path: [`String`](class_string.md) )                                                                                               |
-| [`String`](class_string.md)                       | [`get_current_dir`](#class_diraccess_method_get_current_dir) ( include_drive: [`bool`](class_bool.md) = true ) const[^const]                                                             |
-| [`int`](class_int.md)                             | [`get_current_drive`](#class_diraccess_method_get_current_drive) ( )                                                                                                                     |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_directories`](#class_diraccess_method_get_directories) ( )                                                                                                                         |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_directories_at`](#class_diraccess_method_get_directories_at) ( path: [`String`](class_string.md) ) static[^static]                                                                 |
-| [`int`](class_int.md)                             | [`get_drive_count`](#class_diraccess_method_get_drive_count) ( ) static[^static]                                                                                                         |
-| [`String`](class_string.md)                       | [`get_drive_name`](#class_diraccess_method_get_drive_name) ( idx: [`int`](class_int.md) ) static[^static]                                                                                |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_files`](#class_diraccess_method_get_files) ( )                                                                                                                                     |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_files_at`](#class_diraccess_method_get_files_at) ( path: [`String`](class_string.md) ) static[^static]                                                                             |
-| [`String`](class_string.md)                       | [`get_next`](#class_diraccess_method_get_next) ( )                                                                                                                                       |
-| [Error](#enum_@globalscope_error)                 | [`get_open_error`](#class_diraccess_method_get_open_error) ( ) static[^static]                                                                                                           |
-| [`int`](class_int.md)                             | [`get_space_left`](#class_diraccess_method_get_space_left) ( )                                                                                                                           |
-| [`bool`](class_bool.md)                           | [`is_case_sensitive`](#class_diraccess_method_is_case_sensitive) ( path: [`String`](class_string.md) ) const[^const]                                                                     |
-| [`bool`](class_bool.md)                           | [`is_link`](#class_diraccess_method_is_link) ( path: [`String`](class_string.md) )                                                                                                       |
-| [Error](#enum_@globalscope_error)                 | [`list_dir_begin`](#class_diraccess_method_list_dir_begin) ( )                                                                                                                           |
-| `void`                                            | [`list_dir_end`](#class_diraccess_method_list_dir_end) ( )                                                                                                                               |
-| [Error](#enum_@globalscope_error)                 | [`make_dir`](#class_diraccess_method_make_dir) ( path: [`String`](class_string.md) )                                                                                                     |
-| [Error](#enum_@globalscope_error)                 | [`make_dir_absolute`](#class_diraccess_method_make_dir_absolute) ( path: [`String`](class_string.md) ) static[^static]                                                                   |
-| [Error](#enum_@globalscope_error)                 | [`make_dir_recursive`](#class_diraccess_method_make_dir_recursive) ( path: [`String`](class_string.md) )                                                                                 |
-| [Error](#enum_@globalscope_error)                 | [`make_dir_recursive_absolute`](#class_diraccess_method_make_dir_recursive_absolute) ( path: [`String`](class_string.md) ) static[^static]                                               |
-| [`DirAccess`](class_diraccess.md)                 | [`open`](#class_diraccess_method_open) ( path: [`String`](class_string.md) ) static[^static]                                                                                             |
-| [`String`](class_string.md)                       | [`read_link`](#class_diraccess_method_read_link) ( path: [`String`](class_string.md) )                                                                                                   |
-| [Error](#enum_@globalscope_error)                 | [`remove`](#class_diraccess_method_remove) ( path: [`String`](class_string.md) )                                                                                                         |
-| [Error](#enum_@globalscope_error)                 | [`remove_absolute`](#class_diraccess_method_remove_absolute) ( path: [`String`](class_string.md) ) static[^static]                                                                       |
-| [Error](#enum_@globalscope_error)                 | [`rename`](#class_diraccess_method_rename) ( from: [`String`](class_string.md), to: [`String`](class_string.md) )                                                                        |
-| [Error](#enum_@globalscope_error)                 | [`rename_absolute`](#class_diraccess_method_rename_absolute) ( from: [`String`](class_string.md), to: [`String`](class_string.md) ) static[^static]                                      |
+| [Error](#enum_@globalscope_error)                 | [`change_dir`](class_diraccess.md#class_diraccess_method_change_dir) ( to_dir: [`String`](class_string.md) )                                                                                               |
+| [Error](#enum_@globalscope_error)                 | [`copy`](class_diraccess.md#class_diraccess_method_copy) ( from: [`String`](class_string.md), to: [`String`](class_string.md), chmod_flags: [`int`](class_int.md) = -1 )                                   |
+| [Error](#enum_@globalscope_error)                 | [`copy_absolute`](class_diraccess.md#class_diraccess_method_copy_absolute) ( from: [`String`](class_string.md), to: [`String`](class_string.md), chmod_flags: [`int`](class_int.md) = -1 ) static[^static] |
+| [Error](#enum_@globalscope_error)                 | [`create_link`](class_diraccess.md#class_diraccess_method_create_link) ( source: [`String`](class_string.md), target: [`String`](class_string.md) )                                                        |
+| [`bool`](class_bool.md)                           | [`current_is_dir`](class_diraccess.md#class_diraccess_method_current_is_dir) ( ) const[^const]                                                                                                             |
+| [`bool`](class_bool.md)                           | [`dir_exists`](class_diraccess.md#class_diraccess_method_dir_exists) ( path: [`String`](class_string.md) )                                                                                                 |
+| [`bool`](class_bool.md)                           | [`dir_exists_absolute`](class_diraccess.md#class_diraccess_method_dir_exists_absolute) ( path: [`String`](class_string.md) ) static[^static]                                                               |
+| [`bool`](class_bool.md)                           | [`file_exists`](class_diraccess.md#class_diraccess_method_file_exists) ( path: [`String`](class_string.md) )                                                                                               |
+| [`String`](class_string.md)                       | [`get_current_dir`](class_diraccess.md#class_diraccess_method_get_current_dir) ( include_drive: [`bool`](class_bool.md) = true ) const[^const]                                                             |
+| [`int`](class_int.md)                             | [`get_current_drive`](class_diraccess.md#class_diraccess_method_get_current_drive) ( )                                                                                                                     |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_directories`](class_diraccess.md#class_diraccess_method_get_directories) ( )                                                                                                                         |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_directories_at`](class_diraccess.md#class_diraccess_method_get_directories_at) ( path: [`String`](class_string.md) ) static[^static]                                                                 |
+| [`int`](class_int.md)                             | [`get_drive_count`](class_diraccess.md#class_diraccess_method_get_drive_count) ( ) static[^static]                                                                                                         |
+| [`String`](class_string.md)                       | [`get_drive_name`](class_diraccess.md#class_diraccess_method_get_drive_name) ( idx: [`int`](class_int.md) ) static[^static]                                                                                |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_files`](class_diraccess.md#class_diraccess_method_get_files) ( )                                                                                                                                     |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_files_at`](class_diraccess.md#class_diraccess_method_get_files_at) ( path: [`String`](class_string.md) ) static[^static]                                                                             |
+| [`String`](class_string.md)                       | [`get_next`](class_diraccess.md#class_diraccess_method_get_next) ( )                                                                                                                                       |
+| [Error](#enum_@globalscope_error)                 | [`get_open_error`](class_diraccess.md#class_diraccess_method_get_open_error) ( ) static[^static]                                                                                                           |
+| [`int`](class_int.md)                             | [`get_space_left`](class_diraccess.md#class_diraccess_method_get_space_left) ( )                                                                                                                           |
+| [`bool`](class_bool.md)                           | [`is_case_sensitive`](class_diraccess.md#class_diraccess_method_is_case_sensitive) ( path: [`String`](class_string.md) ) const[^const]                                                                     |
+| [`bool`](class_bool.md)                           | [`is_link`](class_diraccess.md#class_diraccess_method_is_link) ( path: [`String`](class_string.md) )                                                                                                       |
+| [Error](#enum_@globalscope_error)                 | [`list_dir_begin`](class_diraccess.md#class_diraccess_method_list_dir_begin) ( )                                                                                                                           |
+| `void`                                            | [`list_dir_end`](class_diraccess.md#class_diraccess_method_list_dir_end) ( )                                                                                                                               |
+| [Error](#enum_@globalscope_error)                 | [`make_dir`](class_diraccess.md#class_diraccess_method_make_dir) ( path: [`String`](class_string.md) )                                                                                                     |
+| [Error](#enum_@globalscope_error)                 | [`make_dir_absolute`](class_diraccess.md#class_diraccess_method_make_dir_absolute) ( path: [`String`](class_string.md) ) static[^static]                                                                   |
+| [Error](#enum_@globalscope_error)                 | [`make_dir_recursive`](class_diraccess.md#class_diraccess_method_make_dir_recursive) ( path: [`String`](class_string.md) )                                                                                 |
+| [Error](#enum_@globalscope_error)                 | [`make_dir_recursive_absolute`](class_diraccess.md#class_diraccess_method_make_dir_recursive_absolute) ( path: [`String`](class_string.md) ) static[^static]                                               |
+| [`DirAccess`](class_diraccess.md)                 | [`open`](class_diraccess.md#class_diraccess_method_open) ( path: [`String`](class_string.md) ) static[^static]                                                                                             |
+| [`String`](class_string.md)                       | [`read_link`](class_diraccess.md#class_diraccess_method_read_link) ( path: [`String`](class_string.md) )                                                                                                   |
+| [Error](#enum_@globalscope_error)                 | [`remove`](class_diraccess.md#class_diraccess_method_remove) ( path: [`String`](class_string.md) )                                                                                                         |
+| [Error](#enum_@globalscope_error)                 | [`remove_absolute`](class_diraccess.md#class_diraccess_method_remove_absolute) ( path: [`String`](class_string.md) ) static[^static]                                                                       |
+| [Error](#enum_@globalscope_error)                 | [`rename`](class_diraccess.md#class_diraccess_method_rename) ( from: [`String`](class_string.md), to: [`String`](class_string.md) )                                                                        |
+| [Error](#enum_@globalscope_error)                 | [`rename_absolute`](class_diraccess.md#class_diraccess_method_rename_absolute) ( from: [`String`](class_string.md), to: [`String`](class_string.md) ) static[^static]                                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -148,7 +148,7 @@ Here is an example on how to iterate through the files of a directory:
 
 If `true`, hidden files are included when navigating the directory.
 
-Affects [`list_dir_begin`](#class_diraccess_method_list_dir_begin), [`get_directories`](#class_diraccess_method_get_directories) and [`get_files`](#class_diraccess_method_get_files).
+Affects [`list_dir_begin`](class_diraccess.md#class_diraccess_method_list_dir_begin), [`get_directories`](class_diraccess.md#class_diraccess_method_get_directories) and [`get_files`](class_diraccess.md#class_diraccess_method_get_files).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -163,7 +163,7 @@ Affects [`list_dir_begin`](#class_diraccess_method_list_dir_begin), [`get_direct
 
 If `true`, `.` and `..` are included when navigating the directory.
 
-Affects [`list_dir_begin`](#class_diraccess_method_list_dir_begin) and [`get_directories`](#class_diraccess_method_get_directories).
+Affects [`list_dir_begin`](class_diraccess.md#class_diraccess_method_list_dir_begin) and [`get_directories`](class_diraccess.md#class_diraccess_method_get_directories).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -177,9 +177,9 @@ Affects [`list_dir_begin`](#class_diraccess_method_list_dir_begin) and [`get_dir
 
 Changes the currently opened directory to the one passed as an argument. The argument can be relative to the current directory (e.g. `newdir` or `../newdir`), or an absolute path (e.g. `/tmp/newdir` or `res://somedir/newdir`).
 
-Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success).
+Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success).
 
- **Note:** The new directory must be within the same scope, e.g. when you had opened a directory inside `res://`, you can't change it to `user://` directory. If you need to open a directory in another access scope, use [`open`](#class_diraccess_method_open) to create a new instance instead.
+ **Note:** The new directory must be within the same scope, e.g. when you had opened a directory inside `res://`, you can't change it to `user://` directory. If you need to open a directory in another access scope, use [`open`](class_diraccess.md#class_diraccess_method_open) to create a new instance instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -193,7 +193,7 @@ Copies the `from` file to the `to` destination. Both arguments should be paths t
 
 If `chmod_flags` is different than `-1`, the Unix permissions for the destination path will be set to the provided value, if available on the current operating system.
 
-Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success).
+Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -203,7 +203,7 @@ Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalSc
 
 [Error](#enum_@globalscope_error) **copy_absolute** ( from: [`String`](class_string.md), to: [`String`](class_string.md), chmod_flags: [`int`](class_int.md) = -1 ) static[^static]<div id="class_diraccess_method_copy_absolute"></div>
 
-Static version of [`copy`](#class_diraccess_method_copy). Supports only absolute paths.
+Static version of [`copy`](class_diraccess.md#class_diraccess_method_copy). Supports only absolute paths.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -227,7 +227,7 @@ Creates symbolic link between files or folders.
 
 [`bool`](class_bool.md) **current_is_dir** ( ) const[^const]<div id="class_diraccess_method_current_is_dir"></div>
 
-Returns whether the current item processed with the last [`get_next`](#class_diraccess_method_get_next) call is a directory (`.` and `..` are considered directories).
+Returns whether the current item processed with the last [`get_next`](class_diraccess.md#class_diraccess_method_get_next) call is a directory (`.` and `..` are considered directories).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -247,7 +247,7 @@ Returns whether the target directory exists. The argument can be relative to the
 
 [`bool`](class_bool.md) **dir_exists_absolute** ( path: [`String`](class_string.md) ) static[^static]<div id="class_diraccess_method_dir_exists_absolute"></div>
 
-Static version of [`dir_exists`](#class_diraccess_method_dir_exists). Supports only absolute paths.
+Static version of [`dir_exists`](class_diraccess.md#class_diraccess_method_dir_exists). Supports only absolute paths.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -259,7 +259,7 @@ Static version of [`dir_exists`](#class_diraccess_method_dir_exists). Supports o
 
 Returns whether the target file exists. The argument can be relative to the current directory, or an absolute path.
 
-For a static equivalent, use [`FileAccess.file_exists`](#class_fileaccess_method_file_exists).
+For a static equivalent, use [`FileAccess.file_exists`](class_fileaccess.md#class_fileaccess_method_file_exists).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -279,7 +279,7 @@ Returns the absolute path to the currently opened directory (e.g. `res://folder`
 
 [`int`](class_int.md) **get_current_drive** ( )<div id="class_diraccess_method_get_current_drive"></div>
 
-Returns the currently opened directory's drive index. See [`get_drive_name`](#class_diraccess_method_get_drive_name) to convert returned index to the name of the drive.
+Returns the currently opened directory's drive index. See [`get_drive_name`](class_diraccess.md#class_diraccess_method_get_drive_name) to convert returned index to the name of the drive.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -291,7 +291,7 @@ Returns the currently opened directory's drive index. See [`get_drive_name`](#cl
 
 Returns a [`PackedStringArray`](class_packedstringarray.md) containing filenames of the directory contents, excluding files. The array is sorted alphabetically.
 
-Affected by [`include_hidden`](#class_diraccess_property_include_hidden) and [`include_navigational`](#class_diraccess_property_include_navigational).
+Affected by [`include_hidden`](class_diraccess.md#class_diraccess_property_include_hidden) and [`include_navigational`](class_diraccess.md#class_diraccess_property_include_navigational).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -303,7 +303,7 @@ Affected by [`include_hidden`](#class_diraccess_property_include_hidden) and [`i
 
 Returns a [`PackedStringArray`](class_packedstringarray.md) containing filenames of the directory contents, excluding files, at the given `path`. The array is sorted alphabetically.
 
-Use [`get_directories`](#class_diraccess_method_get_directories) if you want more control of what gets included.
+Use [`get_directories`](class_diraccess.md#class_diraccess_method_get_directories) if you want more control of what gets included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -347,9 +347,9 @@ On other platforms, or if the requested drive does not exist, the method returns
 
 Returns a [`PackedStringArray`](class_packedstringarray.md) containing filenames of the directory contents, excluding directories. The array is sorted alphabetically.
 
-Affected by [`include_hidden`](#class_diraccess_property_include_hidden).
+Affected by [`include_hidden`](class_diraccess.md#class_diraccess_property_include_hidden).
 
- **Note:** When used on a `res://` path in an exported project, only the files actually included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level `.godot/` folder, only paths to `*.gd` and `*.import` files are returned (plus a few files such as `project.godot` or `project.binary` and the project icon). In an exported project, the list of returned files will also vary depending on whether [`ProjectSettings.editor/export/convert_text_resources_to_binary`](#class_projectsettings_property_editor/export/convert_text_resources_to_binary) is `true`.
+ **Note:** When used on a `res://` path in an exported project, only the files actually included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level `.godot/` folder, only paths to `*.gd` and `*.import` files are returned (plus a few files such as `project.godot` or `project.binary` and the project icon). In an exported project, the list of returned files will also vary depending on whether [`ProjectSettings.editor/export/convert_text_resources_to_binary`](class_projectsettings.md#class_projectsettings_property_editor/export/convert_text_resources_to_binary) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -361,7 +361,7 @@ Affected by [`include_hidden`](#class_diraccess_property_include_hidden).
 
 Returns a [`PackedStringArray`](class_packedstringarray.md) containing filenames of the directory contents, excluding directories, at the given `path`. The array is sorted alphabetically.
 
-Use [`get_files`](#class_diraccess_method_get_files) if you want more control of what gets included.
+Use [`get_files`](class_diraccess.md#class_diraccess_method_get_files) if you want more control of what gets included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -373,7 +373,7 @@ Use [`get_files`](#class_diraccess_method_get_files) if you want more control of
 
 Returns the next element (file or directory) in the current directory.
 
-The name of the file or directory is returned (and not its full path). Once the stream has been fully processed, the method returns an empty [`String`](class_string.md) and closes the stream automatically (i.e. [`list_dir_end`](#class_diraccess_method_list_dir_end) would not be mandatory in such a case).
+The name of the file or directory is returned (and not its full path). Once the stream has been fully processed, the method returns an empty [`String`](class_string.md) and closes the stream automatically (i.e. [`list_dir_end`](class_diraccess.md#class_diraccess_method_list_dir_end) would not be mandatory in such a case).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -383,7 +383,7 @@ The name of the file or directory is returned (and not its full path). Once the 
 
 [Error](#enum_@globalscope_error) **get_open_error** ( ) static[^static]<div id="class_diraccess_method_get_open_error"></div>
 
-Returns the result of the last [`open`](#class_diraccess_method_open) call in the current thread.
+Returns the result of the last [`open`](class_diraccess.md#class_diraccess_method_open) call in the current thread.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -427,11 +427,11 @@ Returns `true` if the file or directory is a symbolic link, directory junction, 
 
 [Error](#enum_@globalscope_error) **list_dir_begin** ( )<div id="class_diraccess_method_list_dir_begin"></div>
 
-Initializes the stream used to list all files and directories using the [`get_next`](#class_diraccess_method_get_next) function, closing the currently opened stream if needed. Once the stream has been processed, it should typically be closed with [`list_dir_end`](#class_diraccess_method_list_dir_end).
+Initializes the stream used to list all files and directories using the [`get_next`](class_diraccess.md#class_diraccess_method_get_next) function, closing the currently opened stream if needed. Once the stream has been processed, it should typically be closed with [`list_dir_end`](class_diraccess.md#class_diraccess_method_list_dir_end).
 
-Affected by [`include_hidden`](#class_diraccess_property_include_hidden) and [`include_navigational`](#class_diraccess_property_include_navigational).
+Affected by [`include_hidden`](class_diraccess.md#class_diraccess_property_include_hidden) and [`include_navigational`](class_diraccess.md#class_diraccess_property_include_navigational).
 
- **Note:** The order of files and directories returned by this method is not deterministic, and can vary between operating systems. If you want a list of all files or folders sorted alphabetically, use [`get_files`](#class_diraccess_method_get_files) or [`get_directories`](#class_diraccess_method_get_directories).
+ **Note:** The order of files and directories returned by this method is not deterministic, and can vary between operating systems. If you want a list of all files or folders sorted alphabetically, use [`get_files`](class_diraccess.md#class_diraccess_method_get_files) or [`get_directories`](class_diraccess.md#class_diraccess_method_get_directories).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -441,7 +441,7 @@ Affected by [`include_hidden`](#class_diraccess_property_include_hidden) and [`i
 
 `void` **list_dir_end** ( )<div id="class_diraccess_method_list_dir_end"></div>
 
-Closes the current stream opened with [`list_dir_begin`](#class_diraccess_method_list_dir_begin) (whether it has been fully processed with [`get_next`](#class_diraccess_method_get_next) does not matter).
+Closes the current stream opened with [`list_dir_begin`](class_diraccess.md#class_diraccess_method_list_dir_begin) (whether it has been fully processed with [`get_next`](class_diraccess.md#class_diraccess_method_get_next) does not matter).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -451,9 +451,9 @@ Closes the current stream opened with [`list_dir_begin`](#class_diraccess_method
 
 [Error](#enum_@globalscope_error) **make_dir** ( path: [`String`](class_string.md) )<div id="class_diraccess_method_make_dir"></div>
 
-Creates a directory. The argument can be relative to the current directory, or an absolute path. The target directory should be placed in an already existing directory (to create the full path recursively, see [`make_dir_recursive`](#class_diraccess_method_make_dir_recursive)).
+Creates a directory. The argument can be relative to the current directory, or an absolute path. The target directory should be placed in an already existing directory (to create the full path recursively, see [`make_dir_recursive`](class_diraccess.md#class_diraccess_method_make_dir_recursive)).
 
-Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success).
+Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -463,7 +463,7 @@ Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalSc
 
 [Error](#enum_@globalscope_error) **make_dir_absolute** ( path: [`String`](class_string.md) ) static[^static]<div id="class_diraccess_method_make_dir_absolute"></div>
 
-Static version of [`make_dir`](#class_diraccess_method_make_dir). Supports only absolute paths.
+Static version of [`make_dir`](class_diraccess.md#class_diraccess_method_make_dir). Supports only absolute paths.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -473,9 +473,9 @@ Static version of [`make_dir`](#class_diraccess_method_make_dir). Supports only 
 
 [Error](#enum_@globalscope_error) **make_dir_recursive** ( path: [`String`](class_string.md) )<div id="class_diraccess_method_make_dir_recursive"></div>
 
-Creates a target directory and all necessary intermediate directories in its path, by calling [`make_dir`](#class_diraccess_method_make_dir) recursively. The argument can be relative to the current directory, or an absolute path.
+Creates a target directory and all necessary intermediate directories in its path, by calling [`make_dir`](class_diraccess.md#class_diraccess_method_make_dir) recursively. The argument can be relative to the current directory, or an absolute path.
 
-Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success).
+Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -485,7 +485,7 @@ Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalSc
 
 [Error](#enum_@globalscope_error) **make_dir_recursive_absolute** ( path: [`String`](class_string.md) ) static[^static]<div id="class_diraccess_method_make_dir_recursive_absolute"></div>
 
-Static version of [`make_dir_recursive`](#class_diraccess_method_make_dir_recursive). Supports only absolute paths.
+Static version of [`make_dir_recursive`](class_diraccess.md#class_diraccess_method_make_dir_recursive). Supports only absolute paths.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -497,7 +497,7 @@ Static version of [`make_dir_recursive`](#class_diraccess_method_make_dir_recurs
 
 Creates a new **DirAccess** object and opens an existing directory of the filesystem. The `path` argument can be within the project tree (`res://folder`), the user directory (`user://folder`) or an absolute path of the user filesystem (e.g. `/tmp/folder` or `C:\tmp\folder`).
 
-Returns `null` if opening the directory failed. You can use [`get_open_error`](#class_diraccess_method_get_open_error) to check the error that occurred.
+Returns `null` if opening the directory failed. You can use [`get_open_error`](class_diraccess.md#class_diraccess_method_get_open_error) to check the error that occurred.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -521,9 +521,9 @@ Returns target of the symbolic link.
 
 Permanently deletes the target file or an empty directory. The argument can be relative to the current directory, or an absolute path. If the target directory is not empty, the operation will fail.
 
-If you don't want to delete the file/directory permanently, use [`OS.move_to_trash`](#class_os_method_move_to_trash) instead.
+If you don't want to delete the file/directory permanently, use [`OS.move_to_trash`](class_os.md#class_os_method_move_to_trash) instead.
 
-Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success).
+Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -533,7 +533,7 @@ Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalSc
 
 [Error](#enum_@globalscope_error) **remove_absolute** ( path: [`String`](class_string.md) ) static[^static]<div id="class_diraccess_method_remove_absolute"></div>
 
-Static version of [`remove`](#class_diraccess_method_remove). Supports only absolute paths.
+Static version of [`remove`](class_diraccess.md#class_diraccess_method_remove). Supports only absolute paths.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -545,7 +545,7 @@ Static version of [`remove`](#class_diraccess_method_remove). Supports only abso
 
 Renames (move) the `from` file or directory to the `to` destination. Both arguments should be paths to files or directories, either relative or absolute. If the destination file or directory exists and is not access-protected, it will be overwritten.
 
-Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success).
+Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -555,7 +555,7 @@ Returns one of the [Error](#enum_@globalscope_error) code constants ([`@GlobalSc
 
 [Error](#enum_@globalscope_error) **rename_absolute** ( from: [`String`](class_string.md), to: [`String`](class_string.md) ) static[^static]<div id="class_diraccess_method_rename_absolute"></div>
 
-Static version of [`rename`](#class_diraccess_method_rename). Supports only absolute paths.
+Static version of [`rename`](class_diraccess.md#class_diraccess_method_rename). Supports only absolute paths.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

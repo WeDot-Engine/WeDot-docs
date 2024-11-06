@@ -23,71 +23,71 @@ See [`Vector3i`](class_vector3i.md) for its integer counterpart.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`x`](#class_vector3_property_x) | ``0.0`` |
-| [`float`](class_float.md) | [`y`](#class_vector3_property_y) | ``0.0`` |
-| [`float`](class_float.md) | [`z`](#class_vector3_property_z) | ``0.0`` |
+| [`float`](class_float.md) | [`x`](class_vector3.md#class_vector3_property_x) | ``0.0`` |
+| [`float`](class_float.md) | [`y`](class_vector3.md#class_vector3_property_y) | ``0.0`` |
+| [`float`](class_float.md) | [`z`](class_vector3.md#class_vector3_property_z) | ``0.0`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md) | [`Vector3`](#class_vector3_constructor_vector3) ( )                                                                                          |
-| [`Vector3`](class_vector3.md) | [`Vector3`](#class_vector3_constructor_vector3) ( from: [`Vector3`](class_vector3.md) )                                                      |
-| [`Vector3`](class_vector3.md) | [`Vector3`](#class_vector3_constructor_vector3) ( from: [`Vector3i`](class_vector3i.md) )                                                    |
-| [`Vector3`](class_vector3.md) | [`Vector3`](#class_vector3_constructor_vector3) ( x: [`float`](class_float.md), y: [`float`](class_float.md), z: [`float`](class_float.md) ) |
+| [`Vector3`](class_vector3.md) | [`Vector3`](class_vector3.md#class_vector3_constructor_vector3) ( )                                                                                          |
+| [`Vector3`](class_vector3.md) | [`Vector3`](class_vector3.md#class_vector3_constructor_vector3) ( from: [`Vector3`](class_vector3.md) )                                                      |
+| [`Vector3`](class_vector3.md) | [`Vector3`](class_vector3.md#class_vector3_constructor_vector3) ( from: [`Vector3i`](class_vector3i.md) )                                                    |
+| [`Vector3`](class_vector3.md) | [`Vector3`](class_vector3.md#class_vector3_constructor_vector3) ( x: [`float`](class_float.md), y: [`float`](class_float.md), z: [`float`](class_float.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md) | [`abs`](#class_vector3_method_abs) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
-| [`float`](class_float.md)     | [`angle_to`](#class_vector3_method_angle_to) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                           |
-| [`Vector3`](class_vector3.md) | [`bezier_derivative`](#class_vector3_method_bezier_derivative) ( control_1: [`Vector3`](class_vector3.md), control_2: [`Vector3`](class_vector3.md), end: [`Vector3`](class_vector3.md), t: [`float`](class_float.md) ) const[^const]                                                                                                                      |
-| [`Vector3`](class_vector3.md) | [`bezier_interpolate`](#class_vector3_method_bezier_interpolate) ( control_1: [`Vector3`](class_vector3.md), control_2: [`Vector3`](class_vector3.md), end: [`Vector3`](class_vector3.md), t: [`float`](class_float.md) ) const[^const]                                                                                                                    |
-| [`Vector3`](class_vector3.md) | [`bounce`](#class_vector3_method_bounce) ( n: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                |
-| [`Vector3`](class_vector3.md) | [`ceil`](#class_vector3_method_ceil) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
-| [`Vector3`](class_vector3.md) | [`clamp`](#class_vector3_method_clamp) ( min: [`Vector3`](class_vector3.md), max: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                            |
-| [`Vector3`](class_vector3.md) | [`clampf`](#class_vector3_method_clampf) ( min: [`float`](class_float.md), max: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                  |
-| [`Vector3`](class_vector3.md) | [`cross`](#class_vector3_method_cross) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                               |
-| [`Vector3`](class_vector3.md) | [`cubic_interpolate`](#class_vector3_method_cubic_interpolate) ( b: [`Vector3`](class_vector3.md), pre_a: [`Vector3`](class_vector3.md), post_b: [`Vector3`](class_vector3.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                          |
-| [`Vector3`](class_vector3.md) | [`cubic_interpolate_in_time`](#class_vector3_method_cubic_interpolate_in_time) ( b: [`Vector3`](class_vector3.md), pre_a: [`Vector3`](class_vector3.md), post_b: [`Vector3`](class_vector3.md), weight: [`float`](class_float.md), b_t: [`float`](class_float.md), pre_a_t: [`float`](class_float.md), post_b_t: [`float`](class_float.md) ) const[^const] |
-| [`Vector3`](class_vector3.md) | [`direction_to`](#class_vector3_method_direction_to) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)     | [`distance_squared_to`](#class_vector3_method_distance_squared_to) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)     | [`distance_to`](#class_vector3_method_distance_to) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)     | [`dot`](#class_vector3_method_dot) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                   |
-| [`Vector3`](class_vector3.md) | [`floor`](#class_vector3_method_floor) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
-| [`Vector3`](class_vector3.md) | [`inverse`](#class_vector3_method_inverse) ( ) const[^const]                                                                                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)       | [`is_equal_approx`](#class_vector3_method_is_equal_approx) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                             |
-| [`bool`](class_bool.md)       | [`is_finite`](#class_vector3_method_is_finite) ( ) const[^const]                                                                                                                                                                                                                                                                                           |
-| [`bool`](class_bool.md)       | [`is_normalized`](#class_vector3_method_is_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                   |
-| [`bool`](class_bool.md)       | [`is_zero_approx`](#class_vector3_method_is_zero_approx) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)     | [`length`](#class_vector3_method_length) ( ) const[^const]                                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)     | [`length_squared`](#class_vector3_method_length_squared) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`Vector3`](class_vector3.md) | [`lerp`](#class_vector3_method_lerp) ( to: [`Vector3`](class_vector3.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                |
-| [`Vector3`](class_vector3.md) | [`limit_length`](#class_vector3_method_limit_length) ( length: [`float`](class_float.md) = 1.0 ) const[^const]                                                                                                                                                                                                                                             |
-| [`Vector3`](class_vector3.md) | [`max`](#class_vector3_method_max) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                   |
-| [`int`](class_int.md)         | [`max_axis_index`](#class_vector3_method_max_axis_index) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`Vector3`](class_vector3.md) | [`maxf`](#class_vector3_method_maxf) ( with: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                     |
-| [`Vector3`](class_vector3.md) | [`min`](#class_vector3_method_min) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                   |
-| [`int`](class_int.md)         | [`min_axis_index`](#class_vector3_method_min_axis_index) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
-| [`Vector3`](class_vector3.md) | [`minf`](#class_vector3_method_minf) ( with: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                     |
-| [`Vector3`](class_vector3.md) | [`move_toward`](#class_vector3_method_move_toward) ( to: [`Vector3`](class_vector3.md), delta: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                   |
-| [`Vector3`](class_vector3.md) | [`normalized`](#class_vector3_method_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                         |
-| [`Vector3`](class_vector3.md) | [`octahedron_decode`](#class_vector3_method_octahedron_decode) ( uv: [`Vector2`](class_vector2.md) ) static[^static]                                                                                                                                                                                                                                       |
-| [`Vector2`](class_vector2.md) | [`octahedron_encode`](#class_vector3_method_octahedron_encode) ( ) const[^const]                                                                                                                                                                                                                                                                           |
-| [`Basis`](class_basis.md)     | [`outer`](#class_vector3_method_outer) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                               |
-| [`Vector3`](class_vector3.md) | [`posmod`](#class_vector3_method_posmod) ( mod: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                  |
-| [`Vector3`](class_vector3.md) | [`posmodv`](#class_vector3_method_posmodv) ( modv: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                           |
-| [`Vector3`](class_vector3.md) | [`project`](#class_vector3_method_project) ( b: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                              |
-| [`Vector3`](class_vector3.md) | [`reflect`](#class_vector3_method_reflect) ( n: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                              |
-| [`Vector3`](class_vector3.md) | [`rotated`](#class_vector3_method_rotated) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                         |
-| [`Vector3`](class_vector3.md) | [`round`](#class_vector3_method_round) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
-| [`Vector3`](class_vector3.md) | [`sign`](#class_vector3_method_sign) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)     | [`signed_angle_to`](#class_vector3_method_signed_angle_to) ( to: [`Vector3`](class_vector3.md), axis: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                        |
-| [`Vector3`](class_vector3.md) | [`slerp`](#class_vector3_method_slerp) ( to: [`Vector3`](class_vector3.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                              |
-| [`Vector3`](class_vector3.md) | [`slide`](#class_vector3_method_slide) ( n: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                  |
-| [`Vector3`](class_vector3.md) | [`snapped`](#class_vector3_method_snapped) ( step: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                           |
-| [`Vector3`](class_vector3.md) | [`snappedf`](#class_vector3_method_snappedf) ( step: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                             |
+| [`Vector3`](class_vector3.md) | [`abs`](class_vector3.md#class_vector3_method_abs) ( ) const[^const]                                                                                                                                                                                                                                                                                                       |
+| [`float`](class_float.md)     | [`angle_to`](class_vector3.md#class_vector3_method_angle_to) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                           |
+| [`Vector3`](class_vector3.md) | [`bezier_derivative`](class_vector3.md#class_vector3_method_bezier_derivative) ( control_1: [`Vector3`](class_vector3.md), control_2: [`Vector3`](class_vector3.md), end: [`Vector3`](class_vector3.md), t: [`float`](class_float.md) ) const[^const]                                                                                                                      |
+| [`Vector3`](class_vector3.md) | [`bezier_interpolate`](class_vector3.md#class_vector3_method_bezier_interpolate) ( control_1: [`Vector3`](class_vector3.md), control_2: [`Vector3`](class_vector3.md), end: [`Vector3`](class_vector3.md), t: [`float`](class_float.md) ) const[^const]                                                                                                                    |
+| [`Vector3`](class_vector3.md) | [`bounce`](class_vector3.md#class_vector3_method_bounce) ( n: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                |
+| [`Vector3`](class_vector3.md) | [`ceil`](class_vector3.md#class_vector3_method_ceil) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
+| [`Vector3`](class_vector3.md) | [`clamp`](class_vector3.md#class_vector3_method_clamp) ( min: [`Vector3`](class_vector3.md), max: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                            |
+| [`Vector3`](class_vector3.md) | [`clampf`](class_vector3.md#class_vector3_method_clampf) ( min: [`float`](class_float.md), max: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                  |
+| [`Vector3`](class_vector3.md) | [`cross`](class_vector3.md#class_vector3_method_cross) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                               |
+| [`Vector3`](class_vector3.md) | [`cubic_interpolate`](class_vector3.md#class_vector3_method_cubic_interpolate) ( b: [`Vector3`](class_vector3.md), pre_a: [`Vector3`](class_vector3.md), post_b: [`Vector3`](class_vector3.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                          |
+| [`Vector3`](class_vector3.md) | [`cubic_interpolate_in_time`](class_vector3.md#class_vector3_method_cubic_interpolate_in_time) ( b: [`Vector3`](class_vector3.md), pre_a: [`Vector3`](class_vector3.md), post_b: [`Vector3`](class_vector3.md), weight: [`float`](class_float.md), b_t: [`float`](class_float.md), pre_a_t: [`float`](class_float.md), post_b_t: [`float`](class_float.md) ) const[^const] |
+| [`Vector3`](class_vector3.md) | [`direction_to`](class_vector3.md#class_vector3_method_direction_to) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)     | [`distance_squared_to`](class_vector3.md#class_vector3_method_distance_squared_to) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)     | [`distance_to`](class_vector3.md#class_vector3_method_distance_to) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)     | [`dot`](class_vector3.md#class_vector3_method_dot) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                   |
+| [`Vector3`](class_vector3.md) | [`floor`](class_vector3.md#class_vector3_method_floor) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
+| [`Vector3`](class_vector3.md) | [`inverse`](class_vector3.md#class_vector3_method_inverse) ( ) const[^const]                                                                                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)       | [`is_equal_approx`](class_vector3.md#class_vector3_method_is_equal_approx) ( to: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                             |
+| [`bool`](class_bool.md)       | [`is_finite`](class_vector3.md#class_vector3_method_is_finite) ( ) const[^const]                                                                                                                                                                                                                                                                                           |
+| [`bool`](class_bool.md)       | [`is_normalized`](class_vector3.md#class_vector3_method_is_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                   |
+| [`bool`](class_bool.md)       | [`is_zero_approx`](class_vector3.md#class_vector3_method_is_zero_approx) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)     | [`length`](class_vector3.md#class_vector3_method_length) ( ) const[^const]                                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)     | [`length_squared`](class_vector3.md#class_vector3_method_length_squared) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`Vector3`](class_vector3.md) | [`lerp`](class_vector3.md#class_vector3_method_lerp) ( to: [`Vector3`](class_vector3.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                |
+| [`Vector3`](class_vector3.md) | [`limit_length`](class_vector3.md#class_vector3_method_limit_length) ( length: [`float`](class_float.md) = 1.0 ) const[^const]                                                                                                                                                                                                                                             |
+| [`Vector3`](class_vector3.md) | [`max`](class_vector3.md#class_vector3_method_max) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                   |
+| [`int`](class_int.md)         | [`max_axis_index`](class_vector3.md#class_vector3_method_max_axis_index) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`Vector3`](class_vector3.md) | [`maxf`](class_vector3.md#class_vector3_method_maxf) ( with: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                     |
+| [`Vector3`](class_vector3.md) | [`min`](class_vector3.md#class_vector3_method_min) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                   |
+| [`int`](class_int.md)         | [`min_axis_index`](class_vector3.md#class_vector3_method_min_axis_index) ( ) const[^const]                                                                                                                                                                                                                                                                                 |
+| [`Vector3`](class_vector3.md) | [`minf`](class_vector3.md#class_vector3_method_minf) ( with: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                     |
+| [`Vector3`](class_vector3.md) | [`move_toward`](class_vector3.md#class_vector3_method_move_toward) ( to: [`Vector3`](class_vector3.md), delta: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                   |
+| [`Vector3`](class_vector3.md) | [`normalized`](class_vector3.md#class_vector3_method_normalized) ( ) const[^const]                                                                                                                                                                                                                                                                                         |
+| [`Vector3`](class_vector3.md) | [`octahedron_decode`](class_vector3.md#class_vector3_method_octahedron_decode) ( uv: [`Vector2`](class_vector2.md) ) static[^static]                                                                                                                                                                                                                                       |
+| [`Vector2`](class_vector2.md) | [`octahedron_encode`](class_vector3.md#class_vector3_method_octahedron_encode) ( ) const[^const]                                                                                                                                                                                                                                                                           |
+| [`Basis`](class_basis.md)     | [`outer`](class_vector3.md#class_vector3_method_outer) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                               |
+| [`Vector3`](class_vector3.md) | [`posmod`](class_vector3.md#class_vector3_method_posmod) ( mod: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                                  |
+| [`Vector3`](class_vector3.md) | [`posmodv`](class_vector3.md#class_vector3_method_posmodv) ( modv: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                           |
+| [`Vector3`](class_vector3.md) | [`project`](class_vector3.md#class_vector3_method_project) ( b: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                              |
+| [`Vector3`](class_vector3.md) | [`reflect`](class_vector3.md#class_vector3_method_reflect) ( n: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                              |
+| [`Vector3`](class_vector3.md) | [`rotated`](class_vector3.md#class_vector3_method_rotated) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                         |
+| [`Vector3`](class_vector3.md) | [`round`](class_vector3.md#class_vector3_method_round) ( ) const[^const]                                                                                                                                                                                                                                                                                                   |
+| [`Vector3`](class_vector3.md) | [`sign`](class_vector3.md#class_vector3_method_sign) ( ) const[^const]                                                                                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)     | [`signed_angle_to`](class_vector3.md#class_vector3_method_signed_angle_to) ( to: [`Vector3`](class_vector3.md), axis: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                        |
+| [`Vector3`](class_vector3.md) | [`slerp`](class_vector3.md#class_vector3_method_slerp) ( to: [`Vector3`](class_vector3.md), weight: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                              |
+| [`Vector3`](class_vector3.md) | [`slide`](class_vector3.md#class_vector3_method_slide) ( n: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                                  |
+| [`Vector3`](class_vector3.md) | [`snapped`](class_vector3.md#class_vector3_method_snapped) ( step: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                                                           |
+| [`Vector3`](class_vector3.md) | [`snappedf`](class_vector3.md#class_vector3_method_snappedf) ( step: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                                                             |
 
 ## 运算符
 
@@ -124,19 +124,19 @@ See [`Vector3i`](class_vector3i.md) for its integer counterpart.
 
 **AXIS_X** = ``0`` <div id="class_vector3_constant_axis_x"></div>
 
-Enumerated value for the X axis. Returned by [`max_axis_index`](#class_vector3_method_max_axis_index) and [`min_axis_index`](#class_vector3_method_min_axis_index).
+Enumerated value for the X axis. Returned by [`max_axis_index`](class_vector3.md#class_vector3_method_max_axis_index) and [`min_axis_index`](class_vector3.md#class_vector3_method_min_axis_index).
 
 <div id="_class_vector3_constant_axis_y"></div>
 
 **AXIS_Y** = ``1`` <div id="class_vector3_constant_axis_y"></div>
 
-Enumerated value for the Y axis. Returned by [`max_axis_index`](#class_vector3_method_max_axis_index) and [`min_axis_index`](#class_vector3_method_min_axis_index).
+Enumerated value for the Y axis. Returned by [`max_axis_index`](class_vector3.md#class_vector3_method_max_axis_index) and [`min_axis_index`](class_vector3.md#class_vector3_method_min_axis_index).
 
 <div id="_class_vector3_constant_axis_z"></div>
 
 **AXIS_Z** = ``2`` <div id="class_vector3_constant_axis_z"></div>
 
-Enumerated value for the Z axis. Returned by [`max_axis_index`](#class_vector3_method_max_axis_index) and [`min_axis_index`](#class_vector3_method_min_axis_index).
+Enumerated value for the Z axis. Returned by [`max_axis_index`](class_vector3.md#class_vector3_method_max_axis_index) and [`min_axis_index`](class_vector3.md#class_vector3_method_min_axis_index).
 
 <div id="_class_vector3_constant_zero"></div>
 
@@ -154,7 +154,7 @@ One vector, a vector with all components set to `1`.
 
 **INF** = ``Vector3(inf, inf, inf)`` <div id="class_vector3_constant_inf"></div>
 
-Infinity vector, a vector with all components set to [`@GDScript.INF`](#class_@gdscript_constant_inf).
+Infinity vector, a vector with all components set to [`@GDScript.INF`](class_@gdscript.md#class_@gdscript_constant_inf).
 
 <div id="_class_vector3_constant_left"></div>
 
@@ -184,7 +184,7 @@ Down unit vector.
 
 **FORWARD** = ``Vector3(0, 0, -1)`` <div id="class_vector3_constant_forward"></div>
 
-Forward unit vector. Represents the local direction of forward, and the global direction of north. Keep in mind that the forward direction for lights, cameras, etc is different from 3D assets like characters, which face towards the camera by convention. Use [`MODEL_FRONT`](#class_vector3_constant_model_front) and similar constants when working in 3D asset space.
+Forward unit vector. Represents the local direction of forward, and the global direction of north. Keep in mind that the forward direction for lights, cameras, etc is different from 3D assets like characters, which face towards the camera by convention. Use [`MODEL_FRONT`](class_vector3.md#class_vector3_constant_model_front) and similar constants when working in 3D asset space.
 
 <div id="_class_vector3_constant_back"></div>
 
@@ -348,7 +348,7 @@ Returns the point at the given `t` on the [*Bézier curve*](https://en.wikipedia
 
 Returns the vector "bounced off" from a plane defined by the given normal `n`.
 
- **Note:** [`bounce`](#class_vector3_method_bounce) performs the operation that most engines and frameworks call `reflect()`.
+ **Note:** [`bounce`](class_vector3.md#class_vector3_method_bounce) performs the operation that most engines and frameworks call `reflect()`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -368,7 +368,7 @@ Returns a new vector with all components rounded up (towards positive infinity).
 
 [`Vector3`](class_vector3.md) **clamp** ( min: [`Vector3`](class_vector3.md), max: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_vector3_method_clamp"></div>
 
-Returns a new vector with all components clamped between the components of `min` and `max`, by running [`@GlobalScope.clamp`](#class_@globalscope_method_clamp) on each component.
+Returns a new vector with all components clamped between the components of `min` and `max`, by running [`@GlobalScope.clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -378,7 +378,7 @@ Returns a new vector with all components clamped between the components of `min`
 
 [`Vector3`](class_vector3.md) **clampf** ( min: [`float`](class_float.md), max: [`float`](class_float.md) ) const[^const]<div id="class_vector3_method_clampf"></div>
 
-Returns a new vector with all components clamped between `min` and `max`, by running [`@GlobalScope.clamp`](#class_@globalscope_method_clamp) on each component.
+Returns a new vector with all components clamped between `min` and `max`, by running [`@GlobalScope.clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -412,7 +412,7 @@ Performs a cubic interpolation between this vector and `b` using `pre_a` and `po
 
 Performs a cubic interpolation between this vector and `b` using `pre_a` and `post_b` as handles, and returns the result at position `weight`. `weight` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
-It can perform smoother interpolation than [`cubic_interpolate`](#class_vector3_method_cubic_interpolate) by the time values.
+It can perform smoother interpolation than [`cubic_interpolate`](class_vector3.md#class_vector3_method_cubic_interpolate) by the time values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -434,7 +434,7 @@ Returns the normalized vector pointing from this vector to `to`. This is equival
 
 Returns the squared distance between this vector and `to`.
 
-This method runs faster than [`distance_to`](#class_vector3_method_distance_to), so prefer it if you need to compare vectors or need the squared distance for some formula.
+This method runs faster than [`distance_to`](class_vector3.md#class_vector3_method_distance_to), so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -490,7 +490,7 @@ Returns the inverse of the vector. This is the same as `Vector3(1.0 / v.x, 1.0 /
 
 [`bool`](class_bool.md) **is_equal_approx** ( to: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_vector3_method_is_equal_approx"></div>
 
-Returns `true` if this vector and `to` are approximately equal, by running [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) on each component.
+Returns `true` if this vector and `to` are approximately equal, by running [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -500,7 +500,7 @@ Returns `true` if this vector and `to` are approximately equal, by running [`@Gl
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_vector3_method_is_finite"></div>
 
-Returns `true` if this vector is finite, by calling [`@GlobalScope.is_finite`](#class_@globalscope_method_is_finite) on each component.
+Returns `true` if this vector is finite, by calling [`@GlobalScope.is_finite`](class_@globalscope.md#class_@globalscope_method_is_finite) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -520,9 +520,9 @@ Returns `true` if the vector is normalized, i.e. its length is approximately equ
 
 [`bool`](class_bool.md) **is_zero_approx** ( ) const[^const]<div id="class_vector3_method_is_zero_approx"></div>
 
-Returns `true` if this vector's values are approximately zero, by running [`@GlobalScope.is_zero_approx`](#class_@globalscope_method_is_zero_approx) on each component.
+Returns `true` if this vector's values are approximately zero, by running [`@GlobalScope.is_zero_approx`](class_@globalscope.md#class_@globalscope_method_is_zero_approx) on each component.
 
-This method is faster than using [`is_equal_approx`](#class_vector3_method_is_equal_approx) with one value as a zero vector.
+This method is faster than using [`is_equal_approx`](class_vector3.md#class_vector3_method_is_equal_approx) with one value as a zero vector.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -544,7 +544,7 @@ Returns the length (magnitude) of this vector.
 
 Returns the squared length (squared magnitude) of this vector.
 
-This method runs faster than [`length`](#class_vector3_method_length), so prefer it if you need to compare vectors or need the squared distance for some formula.
+This method runs faster than [`length`](class_vector3.md#class_vector3_method_length), so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -584,7 +584,7 @@ Returns the component-wise maximum of this and `with`, equivalent to `Vector3(ma
 
 [`int`](class_int.md) **max_axis_index** ( ) const[^const]<div id="class_vector3_method_max_axis_index"></div>
 
-Returns the axis of the vector's highest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_X`](#class_vector3_constant_axis_x).
+Returns the axis of the vector's highest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_X`](class_vector3.md#class_vector3_constant_axis_x).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -614,7 +614,7 @@ Returns the component-wise minimum of this and `with`, equivalent to `Vector3(mi
 
 [`int`](class_int.md) **min_axis_index** ( ) const[^const]<div id="class_vector3_method_min_axis_index"></div>
 
-Returns the axis of the vector's lowest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_Z`](#class_vector3_constant_axis_z).
+Returns the axis of the vector's lowest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_Z`](class_vector3.md#class_vector3_constant_axis_z).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -644,7 +644,7 @@ Returns a new vector moved toward `to` by the fixed `delta` amount. Will not go 
 
 [`Vector3`](class_vector3.md) **normalized** ( ) const[^const]<div id="class_vector3_method_normalized"></div>
 
-Returns the result of scaling the vector to unit length. Equivalent to `v / v.length()`. Returns `(0, 0, 0)` if `v.length() == 0`. See also [`is_normalized`](#class_vector3_method_is_normalized).
+Returns the result of scaling the vector to unit length. Equivalent to `v / v.length()`. Returns `(0, 0, 0)` if `v.length() == 0`. See also [`is_normalized`](class_vector3.md#class_vector3_method_is_normalized).
 
  **Note:** This function may return incorrect values if the input vector length is near zero.
 
@@ -656,7 +656,7 @@ Returns the result of scaling the vector to unit length. Equivalent to `v / v.le
 
 [`Vector3`](class_vector3.md) **octahedron_decode** ( uv: [`Vector2`](class_vector2.md) ) static[^static]<div id="class_vector3_method_octahedron_decode"></div>
 
-Returns the **Vector3** from an octahedral-compressed form created using [`octahedron_encode`](#class_vector3_method_octahedron_encode) (stored as a [`Vector2`](class_vector2.md)).
+Returns the **Vector3** from an octahedral-compressed form created using [`octahedron_encode`](class_vector3.md#class_vector3_method_octahedron_encode) (stored as a [`Vector2`](class_vector2.md)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -666,9 +666,9 @@ Returns the **Vector3** from an octahedral-compressed form created using [`octah
 
 [`Vector2`](class_vector2.md) **octahedron_encode** ( ) const[^const]<div id="class_vector3_method_octahedron_encode"></div>
 
-Returns the octahedral-encoded (oct32) form of this **Vector3** as a [`Vector2`](class_vector2.md). Since a [`Vector2`](class_vector2.md) occupies 1/3 less memory compared to **Vector3**, this form of compression can be used to pass greater amounts of [`normalized`](#class_vector3_method_normalized) **Vector3** s without increasing storage or memory requirements. See also [`octahedron_decode`](#class_vector3_method_octahedron_decode).
+Returns the octahedral-encoded (oct32) form of this **Vector3** as a [`Vector2`](class_vector2.md). Since a [`Vector2`](class_vector2.md) occupies 1/3 less memory compared to **Vector3**, this form of compression can be used to pass greater amounts of [`normalized`](class_vector3.md#class_vector3_method_normalized) **Vector3** s without increasing storage or memory requirements. See also [`octahedron_decode`](class_vector3.md#class_vector3_method_octahedron_decode).
 
- **Note:** [`octahedron_encode`](#class_vector3_method_octahedron_encode) can only be used for [`normalized`](#class_vector3_method_normalized) vectors. [`octahedron_encode`](#class_vector3_method_octahedron_encode) does *not* check whether this **Vector3** is normalized, and will return a value that does not decompress to the original value if the **Vector3** is not normalized.
+ **Note:** [`octahedron_encode`](class_vector3.md#class_vector3_method_octahedron_encode) can only be used for [`normalized`](class_vector3.md#class_vector3_method_normalized) vectors. [`octahedron_encode`](class_vector3.md#class_vector3_method_octahedron_encode) does *not* check whether this **Vector3** is normalized, and will return a value that does not decompress to the original value if the **Vector3** is not normalized.
 
  **Note:** Octahedral compression is *lossy*, although visual differences are rarely perceptible in real world scenarios.
 
@@ -690,7 +690,7 @@ Returns the outer product with `with`.
 
 [`Vector3`](class_vector3.md) **posmod** ( mod: [`float`](class_float.md) ) const[^const]<div id="class_vector3_method_posmod"></div>
 
-Returns a vector composed of the [`@GlobalScope.fposmod`](#class_@globalscope_method_fposmod) of this vector's components and `mod`.
+Returns a vector composed of the [`@GlobalScope.fposmod`](class_@globalscope.md#class_@globalscope_method_fposmod) of this vector's components and `mod`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -700,7 +700,7 @@ Returns a vector composed of the [`@GlobalScope.fposmod`](#class_@globalscope_me
 
 [`Vector3`](class_vector3.md) **posmodv** ( modv: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_vector3_method_posmodv"></div>
 
-Returns a vector composed of the [`@GlobalScope.fposmod`](#class_@globalscope_method_fposmod) of this vector's components and `modv`'s components.
+Returns a vector composed of the [`@GlobalScope.fposmod`](class_@globalscope.md#class_@globalscope_method_fposmod) of this vector's components and `modv`'s components.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -710,9 +710,9 @@ Returns a vector composed of the [`@GlobalScope.fposmod`](#class_@globalscope_me
 
 [`Vector3`](class_vector3.md) **project** ( b: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_vector3_method_project"></div>
 
-Returns a new vector resulting from projecting this vector onto the given vector `b`. The resulting new vector is parallel to `b`. See also [`slide`](#class_vector3_method_slide).
+Returns a new vector resulting from projecting this vector onto the given vector `b`. The resulting new vector is parallel to `b`. See also [`slide`](class_vector3.md#class_vector3_method_slide).
 
- **Note:** If the vector `b` is a zero vector, the components of the resulting new vector will be [`@GDScript.NAN`](#class_@gdscript_constant_nan).
+ **Note:** If the vector `b` is a zero vector, the components of the resulting new vector will be [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -724,7 +724,7 @@ Returns a new vector resulting from projecting this vector onto the given vector
 
 Returns the result of reflecting the vector through a plane defined by the given normal vector `n`.
 
- **Note:** [`reflect`](#class_vector3_method_reflect) differs from what other engines and frameworks call `reflect()`. In other engines, `reflect()` returns the result of the vector reflected by the given plane. The reflection thus passes through the given normal. While in Godot the reflection passes through the plane and can be thought of as bouncing off the normal. See also [`bounce`](#class_vector3_method_bounce) which does what most engines call `reflect()`.
+ **Note:** [`reflect`](class_vector3.md#class_vector3_method_reflect) differs from what other engines and frameworks call `reflect()`. In other engines, `reflect()` returns the result of the vector reflected by the given plane. The reflection thus passes through the given normal. While in Godot the reflection passes through the plane and can be thought of as bouncing off the normal. See also [`bounce`](class_vector3.md#class_vector3_method_bounce) which does what most engines call `reflect()`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -734,7 +734,7 @@ Returns the result of reflecting the vector through a plane defined by the given
 
 [`Vector3`](class_vector3.md) **rotated** ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]<div id="class_vector3_method_rotated"></div>
 
-Returns the result of rotating this vector around a given axis by `angle` (in radians). The axis must be a normalized vector. See also [`@GlobalScope.deg_to_rad`](#class_@globalscope_method_deg_to_rad).
+Returns the result of rotating this vector around a given axis by `angle` (in radians). The axis must be a normalized vector. See also [`@GlobalScope.deg_to_rad`](class_@globalscope.md#class_@globalscope_method_deg_to_rad).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -754,7 +754,7 @@ Returns a new vector with all components rounded to the nearest integer, with ha
 
 [`Vector3`](class_vector3.md) **sign** ( ) const[^const]<div id="class_vector3_method_sign"></div>
 
-Returns a new vector with each component set to `1.0` if it's positive, `-1.0` if it's negative, and `0.0` if it's zero. The result is identical to calling [`@GlobalScope.sign`](#class_@globalscope_method_sign) on each component.
+Returns a new vector with each component set to `1.0` if it's positive, `-1.0` if it's negative, and `0.0` if it's zero. The result is identical to calling [`@GlobalScope.sign`](class_@globalscope.md#class_@globalscope_method_sign) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -776,7 +776,7 @@ Returns the signed angle to the given vector, in radians. The sign of the angle 
 
 Returns the result of spherical linear interpolation between this vector and `to`, by amount `weight`. `weight` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
-This method also handles interpolating the lengths if the input vectors have different lengths. For the special case of one or both input vectors having zero length, this method behaves like [`lerp`](#class_vector3_method_lerp).
+This method also handles interpolating the lengths if the input vectors have different lengths. For the special case of one or both input vectors having zero length, this method behaves like [`lerp`](class_vector3.md#class_vector3_method_lerp).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -786,9 +786,9 @@ This method also handles interpolating the lengths if the input vectors have dif
 
 [`Vector3`](class_vector3.md) **slide** ( n: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_vector3_method_slide"></div>
 
-Returns a new vector resulting from sliding this vector along a plane with normal `n`. The resulting new vector is perpendicular to `n`, and is equivalent to this vector minus its projection on `n`. See also [`project`](#class_vector3_method_project).
+Returns a new vector resulting from sliding this vector along a plane with normal `n`. The resulting new vector is perpendicular to `n`, and is equivalent to this vector minus its projection on `n`. See also [`project`](class_vector3.md#class_vector3_method_project).
 
- **Note:** The vector `n` must be normalized. See also [`normalized`](#class_vector3_method_normalized).
+ **Note:** The vector `n` must be normalized. See also [`normalized`](class_vector3.md#class_vector3_method_normalized).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -822,9 +822,9 @@ Returns a new vector with each component snapped to the nearest multiple of `ste
 
 Returns `true` if the vectors are not equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_vector3_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_vector3.md#class_vector3_method_is_equal_approx) instead, which is more reliable.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -836,9 +836,9 @@ Returns `true` if the vectors are not equal.
 
 Inversely transforms (multiplies) the **Vector3** by the given [`Basis`](class_basis.md) matrix, under the assumption that the basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
 
- `vector * basis` is equivalent to `basis.transposed() * vector`. See [`Basis.transposed`](#class_basis_method_transposed).
+ `vector * basis` is equivalent to `basis.transposed() * vector`. See [`Basis.transposed`](class_basis.md#class_basis_method_transposed).
 
-For transforming by inverse of a non-orthonormal basis (e.g. with scaling) `basis.inverse() * vector` can be used instead. See [`Basis.inverse`](#class_basis_method_inverse).
+For transforming by inverse of a non-orthonormal basis (e.g. with scaling) `basis.inverse() * vector` can be used instead. See [`Basis.inverse`](class_basis.md#class_basis_method_inverse).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -850,7 +850,7 @@ For transforming by inverse of a non-orthonormal basis (e.g. with scaling) `basi
 
 Inversely transforms (multiplies) the **Vector3** by the given [`Quaternion`](class_quaternion.md).
 
- `vector * quaternion` is equivalent to `quaternion.inverse() * vector`. See [`Quaternion.inverse`](#class_quaternion_method_inverse).
+ `vector * quaternion` is equivalent to `quaternion.inverse() * vector`. See [`Quaternion.inverse`](class_quaternion.md#class_quaternion_method_inverse).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -862,9 +862,9 @@ Inversely transforms (multiplies) the **Vector3** by the given [`Quaternion`](cl
 
 Inversely transforms (multiplies) the **Vector3** by the given [`Transform3D`](class_transform3d.md) transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
 
- `vector * transform` is equivalent to `transform.inverse() * vector`. See [`Transform3D.inverse`](#class_transform3d_method_inverse).
+ `vector * transform` is equivalent to `transform.inverse() * vector`. See [`Transform3D.inverse`](class_transform3d.md#class_transform3d_method_inverse).
 
-For transforming by inverse of an affine transformation (e.g. with scaling) `transform.affine_inverse() * vector` can be used instead. See [`Transform3D.affine_inverse`](#class_transform3d_method_affine_inverse).
+For transforming by inverse of an affine transformation (e.g. with scaling) `transform.affine_inverse() * vector` can be used instead. See [`Transform3D.affine_inverse`](class_transform3d.md#class_transform3d_method_affine_inverse).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -984,7 +984,7 @@ Divides each component of the **Vector3** by the given [`int`](class_int.md).
 
 Compares two **Vector3** vectors by first checking if the X value of the left vector is less than the X value of the `right` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -996,7 +996,7 @@ Compares two **Vector3** vectors by first checking if the X value of the left ve
 
 Compares two **Vector3** vectors by first checking if the X value of the left vector is less than or equal to the X value of the `right` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1008,9 +1008,9 @@ Compares two **Vector3** vectors by first checking if the X value of the left ve
 
 Returns `true` if the vectors are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_vector3_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_vector3.md#class_vector3_method_is_equal_approx) instead, which is more reliable.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1022,7 +1022,7 @@ Returns `true` if the vectors are exactly equal.
 
 Compares two **Vector3** vectors by first checking if the X value of the left vector is greater than the X value of the `right` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1034,7 +1034,7 @@ Compares two **Vector3** vectors by first checking if the X value of the left ve
 
 Compares two **Vector3** vectors by first checking if the X value of the left vector is greater than or equal to the X value of the `right` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
 
- **Note:** Vectors with [`@GDScript.NAN`](#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -15,7 +15,7 @@ Provides a high-level interface for implementing undo and redo operations.
 
 UndoRedo works by registering methods and property changes inside "actions". You can create an action, then provide ways to do and undo this action using function calls and property changes, then commit the action.
 
-When an action is committed, all of the `do_*` methods will run. If the [`undo`](#class_undoredo_method_undo) method is used, the `undo_*` methods will run. If the [`redo`](#class_undoredo_method_redo) method is used, once again, all of the `do_*` methods will run.
+When an action is committed, all of the `do_*` methods will run. If the [`undo`](class_undoredo.md#class_undoredo_method_undo) method is used, the `undo_*` methods will run. If the [`redo`](class_undoredo.md#class_undoredo_method_redo) method is used, once again, all of the `do_*` methods will run.
 
 Here's an example on how to add an action:
 
@@ -74,9 +74,9 @@ Here's an example on how to add an action:
 
 
 
-Before calling any of the `add_(un)do_*` methods, you need to first call [`create_action`](#class_undoredo_method_create_action). Afterwards you need to call [`commit_action`](#class_undoredo_method_commit_action).
+Before calling any of the `add_(un)do_*` methods, you need to first call [`create_action`](class_undoredo.md#class_undoredo_method_create_action). Afterwards you need to call [`commit_action`](class_undoredo.md#class_undoredo_method_commit_action).
 
-If you don't need to register a method, you can leave [`add_do_method`](#class_undoredo_method_add_do_method) and [`add_undo_method`](#class_undoredo_method_add_undo_method) out; the same goes for properties. You can also register more than one method/property.
+If you don't need to register a method, you can leave [`add_do_method`](class_undoredo.md#class_undoredo_method_add_do_method) and [`add_undo_method`](class_undoredo.md#class_undoredo_method_add_undo_method) out; the same goes for properties. You can also register more than one method/property.
 
 If you are making an [`EditorPlugin`](class_editorplugin.md) and want to integrate into the editor's undo history, use [`EditorUndoRedoManager`](class_editorundoredomanager.md) instead.
 
@@ -128,33 +128,33 @@ If you are registering multiple properties/method which depend on one another, b
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`max_steps`](#class_undoredo_property_max_steps) | ``0`` |
+| [`int`](class_int.md) | [`max_steps`](class_undoredo.md#class_undoredo_property_max_steps) | ``0`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                      | [`add_do_method`](#class_undoredo_method_add_do_method) ( callable: [`Callable`](class_callable.md) )                                                                                                    |
-| `void`                      | [`add_do_property`](#class_undoredo_method_add_do_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                 |
-| `void`                      | [`add_do_reference`](#class_undoredo_method_add_do_reference) ( object: [`Object`](class_object.md) )                                                                                                    |
-| `void`                      | [`add_undo_method`](#class_undoredo_method_add_undo_method) ( callable: [`Callable`](class_callable.md) )                                                                                                |
-| `void`                      | [`add_undo_property`](#class_undoredo_method_add_undo_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )             |
-| `void`                      | [`add_undo_reference`](#class_undoredo_method_add_undo_reference) ( object: [`Object`](class_object.md) )                                                                                                |
-| `void`                      | [`clear_history`](#class_undoredo_method_clear_history) ( increase_version: [`bool`](class_bool.md) = true )                                                                                             |
-| `void`                      | [`commit_action`](#class_undoredo_method_commit_action) ( execute: [`bool`](class_bool.md) = true )                                                                                                      |
-| `void`                      | [`create_action`](#class_undoredo_method_create_action) ( name: [`String`](class_string.md), merge_mode: [MergeMode](#enum_undoredo_mergemode) = 0, backward_undo_ops: [`bool`](class_bool.md) = false ) |
-| `void`                      | [`end_force_keep_in_merge_ends`](#class_undoredo_method_end_force_keep_in_merge_ends) ( )                                                                                                                |
-| [`String`](class_string.md) | [`get_action_name`](#class_undoredo_method_get_action_name) ( id: [`int`](class_int.md) )                                                                                                                |
-| [`int`](class_int.md)       | [`get_current_action`](#class_undoredo_method_get_current_action) ( )                                                                                                                                    |
-| [`String`](class_string.md) | [`get_current_action_name`](#class_undoredo_method_get_current_action_name) ( ) const[^const]                                                                                                            |
-| [`int`](class_int.md)       | [`get_history_count`](#class_undoredo_method_get_history_count) ( )                                                                                                                                      |
-| [`int`](class_int.md)       | [`get_version`](#class_undoredo_method_get_version) ( ) const[^const]                                                                                                                                    |
-| [`bool`](class_bool.md)     | [`has_redo`](#class_undoredo_method_has_redo) ( ) const[^const]                                                                                                                                          |
-| [`bool`](class_bool.md)     | [`has_undo`](#class_undoredo_method_has_undo) ( ) const[^const]                                                                                                                                          |
-| [`bool`](class_bool.md)     | [`is_committing_action`](#class_undoredo_method_is_committing_action) ( ) const[^const]                                                                                                                  |
-| [`bool`](class_bool.md)     | [`redo`](#class_undoredo_method_redo) ( )                                                                                                                                                                |
-| `void`                      | [`start_force_keep_in_merge_ends`](#class_undoredo_method_start_force_keep_in_merge_ends) ( )                                                                                                            |
-| [`bool`](class_bool.md)     | [`undo`](#class_undoredo_method_undo) ( )                                                                                                                                                                |
+| `void`                      | [`add_do_method`](class_undoredo.md#class_undoredo_method_add_do_method) ( callable: [`Callable`](class_callable.md) )                                                                                                    |
+| `void`                      | [`add_do_property`](class_undoredo.md#class_undoredo_method_add_do_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                 |
+| `void`                      | [`add_do_reference`](class_undoredo.md#class_undoredo_method_add_do_reference) ( object: [`Object`](class_object.md) )                                                                                                    |
+| `void`                      | [`add_undo_method`](class_undoredo.md#class_undoredo_method_add_undo_method) ( callable: [`Callable`](class_callable.md) )                                                                                                |
+| `void`                      | [`add_undo_property`](class_undoredo.md#class_undoredo_method_add_undo_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )             |
+| `void`                      | [`add_undo_reference`](class_undoredo.md#class_undoredo_method_add_undo_reference) ( object: [`Object`](class_object.md) )                                                                                                |
+| `void`                      | [`clear_history`](class_undoredo.md#class_undoredo_method_clear_history) ( increase_version: [`bool`](class_bool.md) = true )                                                                                             |
+| `void`                      | [`commit_action`](class_undoredo.md#class_undoredo_method_commit_action) ( execute: [`bool`](class_bool.md) = true )                                                                                                      |
+| `void`                      | [`create_action`](class_undoredo.md#class_undoredo_method_create_action) ( name: [`String`](class_string.md), merge_mode: [MergeMode](#enum_undoredo_mergemode) = 0, backward_undo_ops: [`bool`](class_bool.md) = false ) |
+| `void`                      | [`end_force_keep_in_merge_ends`](class_undoredo.md#class_undoredo_method_end_force_keep_in_merge_ends) ( )                                                                                                                |
+| [`String`](class_string.md) | [`get_action_name`](class_undoredo.md#class_undoredo_method_get_action_name) ( id: [`int`](class_int.md) )                                                                                                                |
+| [`int`](class_int.md)       | [`get_current_action`](class_undoredo.md#class_undoredo_method_get_current_action) ( )                                                                                                                                    |
+| [`String`](class_string.md) | [`get_current_action_name`](class_undoredo.md#class_undoredo_method_get_current_action_name) ( ) const[^const]                                                                                                            |
+| [`int`](class_int.md)       | [`get_history_count`](class_undoredo.md#class_undoredo_method_get_history_count) ( )                                                                                                                                      |
+| [`int`](class_int.md)       | [`get_version`](class_undoredo.md#class_undoredo_method_get_version) ( ) const[^const]                                                                                                                                    |
+| [`bool`](class_bool.md)     | [`has_redo`](class_undoredo.md#class_undoredo_method_has_redo) ( ) const[^const]                                                                                                                                          |
+| [`bool`](class_bool.md)     | [`has_undo`](class_undoredo.md#class_undoredo_method_has_undo) ( ) const[^const]                                                                                                                                          |
+| [`bool`](class_bool.md)     | [`is_committing_action`](class_undoredo.md#class_undoredo_method_is_committing_action) ( ) const[^const]                                                                                                                  |
+| [`bool`](class_bool.md)     | [`redo`](class_undoredo.md#class_undoredo_method_redo) ( )                                                                                                                                                                |
+| `void`                      | [`start_force_keep_in_merge_ends`](class_undoredo.md#class_undoredo_method_start_force_keep_in_merge_ends) ( )                                                                                                            |
+| [`bool`](class_bool.md)     | [`undo`](class_undoredo.md#class_undoredo_method_undo) ( )                                                                                                                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -166,7 +166,7 @@ If you are registering multiple properties/method which depend on one another, b
 
 **version_changed** ( ) <div id="class_undoredo_signal_version_changed"></div>
 
-Called when [`undo`](#class_undoredo_method_undo) or [`redo`](#class_undoredo_method_redo) was called.
+Called when [`undo`](class_undoredo.md#class_undoredo_method_undo) or [`redo`](class_undoredo.md#class_undoredo_method_redo) was called.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -209,7 +209,7 @@ Merges this action with the previous one if they have the same name.
 - `void` **set_max_steps** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_max_steps** ( )
 
-The maximum number of steps that can be stored in the undo/redo history. If the number of stored steps exceeds this limit, older steps are removed from history and can no longer be reached by calling [`undo`](#class_undoredo_method_undo). A value of `0` or lower means no limit.
+The maximum number of steps that can be stored in the undo/redo history. If the number of stored steps exceeds this limit, older steps are removed from history and can no longer be reached by calling [`undo`](class_undoredo.md#class_undoredo_method_undo). A value of `0` or lower means no limit.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -331,7 +331,7 @@ Commit the action. If `execute` is `true` (which it is by default), all "do" met
 
 `void` **create_action** ( name: [`String`](class_string.md), merge_mode: [MergeMode](#enum_undoredo_mergemode) = 0, backward_undo_ops: [`bool`](class_bool.md) = false )<div id="class_undoredo_method_create_action"></div>
 
-Create a new action. After this is called, do all your calls to [`add_do_method`](#class_undoredo_method_add_do_method), [`add_undo_method`](#class_undoredo_method_add_undo_method), [`add_do_property`](#class_undoredo_method_add_do_property), and [`add_undo_property`](#class_undoredo_method_add_undo_property), then commit the action with [`commit_action`](#class_undoredo_method_commit_action).
+Create a new action. After this is called, do all your calls to [`add_do_method`](class_undoredo.md#class_undoredo_method_add_do_method), [`add_undo_method`](class_undoredo.md#class_undoredo_method_add_undo_method), [`add_do_property`](class_undoredo.md#class_undoredo_method_add_do_property), and [`add_undo_property`](class_undoredo.md#class_undoredo_method_add_undo_property), then commit the action with [`commit_action`](class_undoredo.md#class_undoredo_method_commit_action).
 
 The way actions are merged is dictated by `merge_mode`. See [MergeMode](#enum_undoredo_mergemode) for details.
 
@@ -345,7 +345,7 @@ The way undo operation are ordered in actions is dictated by `backward_undo_ops`
 
 `void` **end_force_keep_in_merge_ends** ( )<div id="class_undoredo_method_end_force_keep_in_merge_ends"></div>
 
-Stops marking operations as to be processed even if the action gets merged with another in the [`MERGE_ENDS`](#class_undoredo_constant_merge_ends) mode. See [`start_force_keep_in_merge_ends`](#class_undoredo_method_start_force_keep_in_merge_ends).
+Stops marking operations as to be processed even if the action gets merged with another in the [`MERGE_ENDS`](class_undoredo.md#class_undoredo_constant_merge_ends) mode. See [`start_force_keep_in_merge_ends`](class_undoredo.md#class_undoredo_method_start_force_keep_in_merge_ends).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -427,7 +427,7 @@ Returns `true` if an "undo" action is available.
 
 [`bool`](class_bool.md) **is_committing_action** ( ) const[^const]<div id="class_undoredo_method_is_committing_action"></div>
 
-Returns `true` if the **UndoRedo** is currently committing the action, i.e. running its "do" method or property change (see [`commit_action`](#class_undoredo_method_commit_action)).
+Returns `true` if the **UndoRedo** is currently committing the action, i.e. running its "do" method or property change (see [`commit_action`](class_undoredo.md#class_undoredo_method_commit_action)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -447,7 +447,7 @@ Redo the last action.
 
 `void` **start_force_keep_in_merge_ends** ( )<div id="class_undoredo_method_start_force_keep_in_merge_ends"></div>
 
-Marks the next "do" and "undo" operations to be processed even if the action gets merged with another in the [`MERGE_ENDS`](#class_undoredo_constant_merge_ends) mode. Return to normal operation using [`end_force_keep_in_merge_ends`](#class_undoredo_method_end_force_keep_in_merge_ends).
+Marks the next "do" and "undo" operations to be processed even if the action gets merged with another in the [`MERGE_ENDS`](class_undoredo.md#class_undoredo_constant_merge_ends) mode. Return to normal operation using [`end_force_keep_in_merge_ends`](class_undoredo.md#class_undoredo_method_end_force_keep_in_merge_ends).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -13,9 +13,9 @@ A 3×3 matrix for representing 3D rotation and scale.
 
 The **Basis** built-in [`Variant`](class_variant.md) type is a 3×3 [*matrix*](https://en.wikipedia.org/wiki/Matrix_(mathematics)) used to represent 3D rotation, scale, and shear. It is frequently used within a [`Transform3D`](class_transform3d.md).
 
-A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: [`x`](#class_basis_property_x), [`y`](#class_basis_property_y), and [`z`](#class_basis_property_z). The length of each axis ([`Vector3.length`](#class_vector3_method_length)) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
+A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: [`x`](class_basis.md#class_basis_property_x), [`y`](class_basis.md#class_basis_property_y), and [`z`](class_basis.md#class_basis_property_z). The length of each axis ([`Vector3.length`](class_vector3.md#class_vector3_method_length)) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
 
-A **Basis** is **orthogonal** if its axes are perpendicular to each other. A basis is **normalized** if the length of every axis is `1`. A basis is **uniform** if all axes share the same length (see [`get_scale`](#class_basis_method_get_scale)). A basis is **orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations. A basis is **conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
+A **Basis** is **orthogonal** if its axes are perpendicular to each other. A basis is **normalized** if the length of every axis is `1`. A basis is **uniform** if all axes share the same length (see [`get_scale`](class_basis.md#class_basis_method_get_scale)). A basis is **orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations. A basis is **conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
 
 For a general introduction, see the [*Matrices and transforms*](../tutorials/math/matrices_and_transforms) tutorial.
 
@@ -29,43 +29,43 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md) | [`x`](#class_basis_property_x) | ``Vector3(1, 0, 0)`` |
-| [`Vector3`](class_vector3.md) | [`y`](#class_basis_property_y) | ``Vector3(0, 1, 0)`` |
-| [`Vector3`](class_vector3.md) | [`z`](#class_basis_property_z) | ``Vector3(0, 0, 1)`` |
+| [`Vector3`](class_vector3.md) | [`x`](class_basis.md#class_basis_property_x) | ``Vector3(1, 0, 0)`` |
+| [`Vector3`](class_vector3.md) | [`y`](class_basis.md#class_basis_property_y) | ``Vector3(0, 1, 0)`` |
+| [`Vector3`](class_vector3.md) | [`z`](class_basis.md#class_basis_property_z) | ``Vector3(0, 0, 1)`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Basis`](class_basis.md) | [`Basis`](#class_basis_constructor_basis) ( )                                                                                                                     |
-| [`Basis`](class_basis.md) | [`Basis`](#class_basis_constructor_basis) ( from: [`Basis`](class_basis.md) )                                                                                     |
-| [`Basis`](class_basis.md) | [`Basis`](#class_basis_constructor_basis) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                               |
-| [`Basis`](class_basis.md) | [`Basis`](#class_basis_constructor_basis) ( from: [`Quaternion`](class_quaternion.md) )                                                                           |
-| [`Basis`](class_basis.md) | [`Basis`](#class_basis_constructor_basis) ( x_axis: [`Vector3`](class_vector3.md), y_axis: [`Vector3`](class_vector3.md), z_axis: [`Vector3`](class_vector3.md) ) |
+| [`Basis`](class_basis.md) | [`Basis`](class_basis.md#class_basis_constructor_basis) ( )                                                                                                                     |
+| [`Basis`](class_basis.md) | [`Basis`](class_basis.md#class_basis_constructor_basis) ( from: [`Basis`](class_basis.md) )                                                                                     |
+| [`Basis`](class_basis.md) | [`Basis`](class_basis.md#class_basis_constructor_basis) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                               |
+| [`Basis`](class_basis.md) | [`Basis`](class_basis.md#class_basis_constructor_basis) ( from: [`Quaternion`](class_quaternion.md) )                                                                           |
+| [`Basis`](class_basis.md) | [`Basis`](class_basis.md#class_basis_constructor_basis) ( x_axis: [`Vector3`](class_vector3.md), y_axis: [`Vector3`](class_vector3.md), z_axis: [`Vector3`](class_vector3.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)           | [`determinant`](#class_basis_method_determinant) ( ) const[^const]                                                                                                                                               |
-| [`Basis`](class_basis.md)           | [`from_euler`](#class_basis_method_from_euler) ( euler: [`Vector3`](class_vector3.md), order: [`int`](class_int.md) = 2 ) static[^static]                                                                        |
-| [`Basis`](class_basis.md)           | [`from_scale`](#class_basis_method_from_scale) ( scale: [`Vector3`](class_vector3.md) ) static[^static]                                                                                                          |
-| [`Vector3`](class_vector3.md)       | [`get_euler`](#class_basis_method_get_euler) ( order: [`int`](class_int.md) = 2 ) const[^const]                                                                                                                  |
-| [`Quaternion`](class_quaternion.md) | [`get_rotation_quaternion`](#class_basis_method_get_rotation_quaternion) ( ) const[^const]                                                                                                                       |
-| [`Vector3`](class_vector3.md)       | [`get_scale`](#class_basis_method_get_scale) ( ) const[^const]                                                                                                                                                   |
-| [`Basis`](class_basis.md)           | [`inverse`](#class_basis_method_inverse) ( ) const[^const]                                                                                                                                                       |
-| [`bool`](class_bool.md)             | [`is_conformal`](#class_basis_method_is_conformal) ( ) const[^const]                                                                                                                                             |
-| [`bool`](class_bool.md)             | [`is_equal_approx`](#class_basis_method_is_equal_approx) ( b: [`Basis`](class_basis.md) ) const[^const]                                                                                                          |
-| [`bool`](class_bool.md)             | [`is_finite`](#class_basis_method_is_finite) ( ) const[^const]                                                                                                                                                   |
-| [`Basis`](class_basis.md)           | [`looking_at`](#class_basis_method_looking_at) ( target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false ) static[^static] |
-| [`Basis`](class_basis.md)           | [`orthonormalized`](#class_basis_method_orthonormalized) ( ) const[^const]                                                                                                                                       |
-| [`Basis`](class_basis.md)           | [`rotated`](#class_basis_method_rotated) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]                                                                                 |
-| [`Basis`](class_basis.md)           | [`scaled`](#class_basis_method_scaled) ( scale: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                    |
-| [`Basis`](class_basis.md)           | [`slerp`](#class_basis_method_slerp) ( to: [`Basis`](class_basis.md), weight: [`float`](class_float.md) ) const[^const]                                                                                          |
-| [`float`](class_float.md)           | [`tdotx`](#class_basis_method_tdotx) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                       |
-| [`float`](class_float.md)           | [`tdoty`](#class_basis_method_tdoty) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                       |
-| [`float`](class_float.md)           | [`tdotz`](#class_basis_method_tdotz) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                       |
-| [`Basis`](class_basis.md)           | [`transposed`](#class_basis_method_transposed) ( ) const[^const]                                                                                                                                                 |
+| [`float`](class_float.md)           | [`determinant`](class_basis.md#class_basis_method_determinant) ( ) const[^const]                                                                                                                                               |
+| [`Basis`](class_basis.md)           | [`from_euler`](class_basis.md#class_basis_method_from_euler) ( euler: [`Vector3`](class_vector3.md), order: [`int`](class_int.md) = 2 ) static[^static]                                                                        |
+| [`Basis`](class_basis.md)           | [`from_scale`](class_basis.md#class_basis_method_from_scale) ( scale: [`Vector3`](class_vector3.md) ) static[^static]                                                                                                          |
+| [`Vector3`](class_vector3.md)       | [`get_euler`](class_basis.md#class_basis_method_get_euler) ( order: [`int`](class_int.md) = 2 ) const[^const]                                                                                                                  |
+| [`Quaternion`](class_quaternion.md) | [`get_rotation_quaternion`](class_basis.md#class_basis_method_get_rotation_quaternion) ( ) const[^const]                                                                                                                       |
+| [`Vector3`](class_vector3.md)       | [`get_scale`](class_basis.md#class_basis_method_get_scale) ( ) const[^const]                                                                                                                                                   |
+| [`Basis`](class_basis.md)           | [`inverse`](class_basis.md#class_basis_method_inverse) ( ) const[^const]                                                                                                                                                       |
+| [`bool`](class_bool.md)             | [`is_conformal`](class_basis.md#class_basis_method_is_conformal) ( ) const[^const]                                                                                                                                             |
+| [`bool`](class_bool.md)             | [`is_equal_approx`](class_basis.md#class_basis_method_is_equal_approx) ( b: [`Basis`](class_basis.md) ) const[^const]                                                                                                          |
+| [`bool`](class_bool.md)             | [`is_finite`](class_basis.md#class_basis_method_is_finite) ( ) const[^const]                                                                                                                                                   |
+| [`Basis`](class_basis.md)           | [`looking_at`](class_basis.md#class_basis_method_looking_at) ( target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false ) static[^static] |
+| [`Basis`](class_basis.md)           | [`orthonormalized`](class_basis.md#class_basis_method_orthonormalized) ( ) const[^const]                                                                                                                                       |
+| [`Basis`](class_basis.md)           | [`rotated`](class_basis.md#class_basis_method_rotated) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]                                                                                 |
+| [`Basis`](class_basis.md)           | [`scaled`](class_basis.md#class_basis_method_scaled) ( scale: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                    |
+| [`Basis`](class_basis.md)           | [`slerp`](class_basis.md#class_basis_method_slerp) ( to: [`Basis`](class_basis.md), weight: [`float`](class_float.md) ) const[^const]                                                                                          |
+| [`float`](class_float.md)           | [`tdotx`](class_basis.md#class_basis_method_tdotx) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                       |
+| [`float`](class_float.md)           | [`tdoty`](class_basis.md#class_basis_method_tdoty) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                       |
+| [`float`](class_float.md)           | [`tdotz`](class_basis.md#class_basis_method_tdotz) ( with: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                       |
+| [`Basis`](class_basis.md)           | [`transposed`](class_basis.md#class_basis_method_transposed) ( ) const[^const]                                                                                                                                                 |
 
 ## 运算符
 
@@ -93,11 +93,11 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 The identity basis. This is a basis with no rotation, no shear, and its scale being `1`. This means that:
 
-- The [`x`](#class_basis_property_x) points right ([`Vector3.RIGHT`](#class_vector3_constant_right));
+- The [`x`](class_basis.md#class_basis_property_x) points right ([`Vector3.RIGHT`](class_vector3.md#class_vector3_constant_right));
 
-- The [`y`](#class_basis_property_y) points up ([`Vector3.UP`](#class_vector3_constant_up));
+- The [`y`](class_basis.md#class_basis_property_y) points up ([`Vector3.UP`](class_vector3.md#class_vector3_constant_up));
 
-- The [`z`](#class_basis_property_z) points back ([`Vector3.BACK`](#class_vector3_constant_back)).
+- The [`z`](class_basis.md#class_basis_property_z) points back ([`Vector3.BACK`](class_vector3.md#class_vector3_constant_back)).
 
 ```
 
@@ -113,7 +113,7 @@ The identity basis. This is a basis with no rotation, no shear, and its scale be
     # | 0 | 0 | 1
 ```
 
-This is identical to creating [`Basis`](#class_basis_constructor_basis) without any parameters. This constant can be used to make your code clearer, and for consistency with C#.
+This is identical to creating [`Basis`](class_basis.md#class_basis_constructor_basis) without any parameters. This constant can be used to make your code clearer, and for consistency with C#.
 
 
 
@@ -121,25 +121,25 @@ This is identical to creating [`Basis`](#class_basis_constructor_basis) without 
 
 **FLIP_X** = ``Basis(-1, 0, 0, 0, 1, 0, 0, 0, 1)`` <div id="class_basis_constant_flip_x"></div>
 
-When any basis is multiplied by [`FLIP_X`](#class_basis_constant_flip_x), it negates all components of the [`x`](#class_basis_property_x) axis (the X column).
+When any basis is multiplied by [`FLIP_X`](class_basis.md#class_basis_constant_flip_x), it negates all components of the [`x`](class_basis.md#class_basis_property_x) axis (the X column).
 
-When [`FLIP_X`](#class_basis_constant_flip_x) is multiplied by any basis, it negates the [`Vector3.x`](#class_vector3_property_x) component of all axes (the X row).
+When [`FLIP_X`](class_basis.md#class_basis_constant_flip_x) is multiplied by any basis, it negates the [`Vector3.x`](class_vector3.md#class_vector3_property_x) component of all axes (the X row).
 
 <div id="_class_basis_constant_flip_y"></div>
 
 **FLIP_Y** = ``Basis(1, 0, 0, 0, -1, 0, 0, 0, 1)`` <div id="class_basis_constant_flip_y"></div>
 
-When any basis is multiplied by [`FLIP_Y`](#class_basis_constant_flip_y), it negates all components of the [`y`](#class_basis_property_y) axis (the Y column).
+When any basis is multiplied by [`FLIP_Y`](class_basis.md#class_basis_constant_flip_y), it negates all components of the [`y`](class_basis.md#class_basis_property_y) axis (the Y column).
 
-When [`FLIP_Y`](#class_basis_constant_flip_y) is multiplied by any basis, it negates the [`Vector3.y`](#class_vector3_property_y) component of all axes (the Y row).
+When [`FLIP_Y`](class_basis.md#class_basis_constant_flip_y) is multiplied by any basis, it negates the [`Vector3.y`](class_vector3.md#class_vector3_property_y) component of all axes (the Y row).
 
 <div id="_class_basis_constant_flip_z"></div>
 
 **FLIP_Z** = ``Basis(1, 0, 0, 0, 1, 0, 0, 0, -1)`` <div id="class_basis_constant_flip_z"></div>
 
-When any basis is multiplied by [`FLIP_Z`](#class_basis_constant_flip_z), it negates all components of the [`z`](#class_basis_property_z) axis (the Z column).
+When any basis is multiplied by [`FLIP_Z`](class_basis.md#class_basis_constant_flip_z), it negates all components of the [`z`](class_basis.md#class_basis_property_z) axis (the Z column).
 
-When [`FLIP_Z`](#class_basis_constant_flip_z) is multiplied by any basis, it negates the [`Vector3.z`](#class_vector3_property_z) component of all axes (the Z row).
+When [`FLIP_Z`](class_basis.md#class_basis_constant_flip_z) is multiplied by any basis, it negates the [`Vector3.z`](class_vector3.md#class_vector3_property_z) component of all axes (the Z row).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -153,7 +153,7 @@ When [`FLIP_Z`](#class_basis_constant_flip_z) is multiplied by any basis, it neg
 
 The basis's X axis, and the column `0` of the matrix.
 
-On the identity basis, this vector points right ([`Vector3.RIGHT`](#class_vector3_constant_right)).
+On the identity basis, this vector points right ([`Vector3.RIGHT`](class_vector3.md#class_vector3_constant_right)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,7 +165,7 @@ On the identity basis, this vector points right ([`Vector3.RIGHT`](#class_vector
 
 The basis's Y axis, and the column `1` of the matrix.
 
-On the identity basis, this vector points up ([`Vector3.UP`](#class_vector3_constant_up)).
+On the identity basis, this vector points up ([`Vector3.UP`](class_vector3.md#class_vector3_constant_up)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -177,7 +177,7 @@ On the identity basis, this vector points up ([`Vector3.UP`](#class_vector3_cons
 
 The basis's Z axis, and the column `2` of the matrix.
 
-On the identity basis, this vector points back ([`Vector3.BACK`](#class_vector3_constant_back)).
+On the identity basis, this vector points back ([`Vector3.BACK`](class_vector3.md#class_vector3_constant_back)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -189,7 +189,7 @@ On the identity basis, this vector points back ([`Vector3.BACK`](#class_vector3_
 
 [`Basis`](class_basis.md) **Basis** ( )<div id="class_basis_constructor_basis"></div>
 
-Constructs a **Basis** identical to the [`IDENTITY`](#class_basis_constant_identity).
+Constructs a **Basis** identical to the [`IDENTITY`](class_basis.md#class_basis_constant_identity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -207,7 +207,7 @@ Constructs a **Basis** as a copy of the given **Basis**.
 
 Constructs a **Basis** that only represents rotation, rotated around the `axis` by the given `angle`, in radians. The axis must be a normalized vector.
 
- **Note:** This is the same as using [`rotated`](#class_basis_method_rotated) on the [`IDENTITY`](#class_basis_constant_identity) basis. With more than one angle consider using [`from_euler`](#class_basis_method_from_euler), instead.
+ **Note:** This is the same as using [`rotated`](class_basis.md#class_basis_method_rotated) on the [`IDENTITY`](class_basis.md#class_basis_constant_identity) basis. With more than one angle consider using [`from_euler`](class_basis.md#class_basis_method_from_euler), instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -239,7 +239,7 @@ Constructs a **Basis** from 3 axis vectors. These are the columns of the basis m
 
 Returns the [*determinant*](https://en.wikipedia.org/wiki/Determinant) of this basis's matrix. For advanced math, this number can be used to determine a few attributes:
 
-- If the determinant is exactly `0`, the basis is not invertible (see [`inverse`](#class_basis_method_inverse)).
+- If the determinant is exactly `0`, the basis is not invertible (see [`inverse`](class_basis.md#class_basis_method_inverse)).
 
 - If the determinant is a negative number, the basis represents a negative scale.
 
@@ -255,11 +255,11 @@ Returns the [*determinant*](https://en.wikipedia.org/wiki/Determinant) of this b
 
 Constructs a new **Basis** that only represents rotation from the given [`Vector3`](class_vector3.md) of [*Euler angles*](https://en.wikipedia.org/wiki/Euler_angles), in radians.
 
-- The [`Vector3.x`](#class_vector3_property_x) should contain the angle around the [`x`](#class_basis_property_x) axis (pitch).
+- The [`Vector3.x`](class_vector3.md#class_vector3_property_x) should contain the angle around the [`x`](class_basis.md#class_basis_property_x) axis (pitch).
 
-- The [`Vector3.y`](#class_vector3_property_y) should contain the angle around the [`y`](#class_basis_property_y) axis (yaw).
+- The [`Vector3.y`](class_vector3.md#class_vector3_property_y) should contain the angle around the [`y`](class_basis.md#class_basis_property_y) axis (yaw).
 
-- The [`Vector3.z`](#class_vector3_property_z) should contain the angle around the [`z`](#class_basis_property_z) axis (roll).
+- The [`Vector3.z`](class_vector3.md#class_vector3_property_z) should contain the angle around the [`z`](class_basis.md#class_basis_property_z) axis (roll).
 
 
 
@@ -281,7 +281,7 @@ Constructs a new **Basis** that only represents rotation from the given [`Vector
 
 
 
-The order of each consecutive rotation can be changed with `order` (see [EulerOrder](#enum_@globalscope_eulerorder) constants). By default, the YXZ convention is used ([`@GlobalScope.EULER_ORDER_YXZ`](#class_@globalscope_constant_euler_order_yxz)): the basis rotates first around the Y axis (yaw), then X (pitch), and lastly Z (roll). When using the opposite method [`get_euler`](#class_basis_method_get_euler), this order is reversed.
+The order of each consecutive rotation can be changed with `order` (see [EulerOrder](#enum_@globalscope_eulerorder) constants). By default, the YXZ convention is used ([`@GlobalScope.EULER_ORDER_YXZ`](class_@globalscope.md#class_@globalscope_constant_euler_order_yxz)): the basis rotates first around the Y axis (yaw), then X (pitch), and lastly Z (roll). When using the opposite method [`get_euler`](class_basis.md#class_basis_method_get_euler), this order is reversed.
 
 
 
@@ -335,17 +335,17 @@ Constructs a new **Basis** that only represents scale, with no rotation or shear
 
 Returns this basis's rotation as a [`Vector3`](class_vector3.md) of [*Euler angles*](https://en.wikipedia.org/wiki/Euler_angles), in radians.
 
-- The [`Vector3.x`](#class_vector3_property_x) contains the angle around the [`x`](#class_basis_property_x) axis (pitch);
+- The [`Vector3.x`](class_vector3.md#class_vector3_property_x) contains the angle around the [`x`](class_basis.md#class_basis_property_x) axis (pitch);
 
-- The [`Vector3.y`](#class_vector3_property_y) contains the angle around the [`y`](#class_basis_property_y) axis (yaw);
+- The [`Vector3.y`](class_vector3.md#class_vector3_property_y) contains the angle around the [`y`](class_basis.md#class_basis_property_y) axis (yaw);
 
-- The [`Vector3.z`](#class_vector3_property_z) contains the angle around the [`z`](#class_basis_property_z) axis (roll).
+- The [`Vector3.z`](class_vector3.md#class_vector3_property_z) contains the angle around the [`z`](class_basis.md#class_basis_property_z) axis (roll).
 
-The order of each consecutive rotation can be changed with `order` (see [EulerOrder](#enum_@globalscope_eulerorder) constants). By default, the YXZ convention is used ([`@GlobalScope.EULER_ORDER_YXZ`](#class_@globalscope_constant_euler_order_yxz)): Z (roll) is calculated first, then X (pitch), and lastly Y (yaw). When using the opposite method [`from_euler`](#class_basis_method_from_euler), this order is reversed.
+The order of each consecutive rotation can be changed with `order` (see [EulerOrder](#enum_@globalscope_eulerorder) constants). By default, the YXZ convention is used ([`@GlobalScope.EULER_ORDER_YXZ`](class_@globalscope.md#class_@globalscope_constant_euler_order_yxz)): Z (roll) is calculated first, then X (pitch), and lastly Y (yaw). When using the opposite method [`from_euler`](class_basis.md#class_basis_method_from_euler), this order is reversed.
 
- **Note:** Euler angles are much more intuitive but are not suitable for 3D math. Because of this, consider using the [`get_rotation_quaternion`](#class_basis_method_get_rotation_quaternion) method instead, which returns a [`Quaternion`](class_quaternion.md).
+ **Note:** Euler angles are much more intuitive but are not suitable for 3D math. Because of this, consider using the [`get_rotation_quaternion`](class_basis.md#class_basis_method_get_rotation_quaternion) method instead, which returns a [`Quaternion`](class_quaternion.md).
 
- **Note:** In the Inspector dock, a basis's rotation is often displayed in Euler angles (in degrees), as is the case with the [`Node3D.rotation`](#class_node3d_property_rotation) property.
+ **Note:** In the Inspector dock, a basis's rotation is often displayed in Euler angles (in degrees), as is the case with the [`Node3D.rotation`](class_node3d.md#class_node3d_property_rotation) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -357,7 +357,7 @@ The order of each consecutive rotation can be changed with `order` (see [EulerOr
 
 Returns this basis's rotation as a [`Quaternion`](class_quaternion.md).
 
- **Note:** Quatenions are much more suitable for 3D math but are less intuitive. For user interfaces, consider using the [`get_euler`](#class_basis_method_get_euler) method, which returns Euler angles.
+ **Note:** Quatenions are much more suitable for 3D math but are less intuitive. For user interfaces, consider using the [`get_euler`](class_basis.md#class_basis_method_get_euler) method, which returns Euler angles.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -401,7 +401,7 @@ Returns the length of each axis of this basis, as a [`Vector3`](class_vector3.md
 
 
 
- **Note:** If the value returned by [`determinant`](#class_basis_method_determinant) is negative, the scale is also negative.
+ **Note:** If the value returned by [`determinant`](class_basis.md#class_basis_method_determinant) is negative, the scale is also negative.
 
 
 
@@ -435,7 +435,7 @@ Returns `true` if this basis is conformal. A conformal basis is both *orthogonal
 
 [`bool`](class_bool.md) **is_equal_approx** ( b: [`Basis`](class_basis.md) ) const[^const]<div id="class_basis_method_is_equal_approx"></div>
 
-Returns `true` if this basis and `b` are approximately equal, by calling [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) on all vector components.
+Returns `true` if this basis and `b` are approximately equal, by calling [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) on all vector components.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -445,7 +445,7 @@ Returns `true` if this basis and `b` are approximately equal, by calling [`@Glob
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_basis_method_is_finite"></div>
 
-Returns `true` if this basis is finite, by calling [`@GlobalScope.is_finite`](#class_@globalscope_method_is_finite) on all vector components.
+Returns `true` if this basis is finite, by calling [`@GlobalScope.is_finite`](class_@globalscope.md#class_@globalscope_method_is_finite) on all vector components.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -459,7 +459,7 @@ Creates a new **Basis** with a rotation such that the forward axis (-Z) points t
 
 By default, the -Z axis (camera forward) is treated as forward (implies +X is right). If `use_model_front` is `true`, the +Z axis (asset front) is treated as forward (implies +X is left) and points toward the `target` position.
 
-The up axis (+Y) points as close to the `up` vector as possible while staying perpendicular to the forward axis. The returned basis is orthonormalized (see [`orthonormalized`](#class_basis_method_orthonormalized)). The `target` and `up` vectors cannot be [`Vector3.ZERO`](#class_vector3_constant_zero), and cannot be parallel to each other.
+The up axis (+Y) points as close to the `up` vector as possible while staying perpendicular to the forward axis. The returned basis is orthonormalized (see [`orthonormalized`](class_basis.md#class_basis_method_orthonormalized)). The `target` and `up` vectors cannot be [`Vector3.ZERO`](class_vector3.md#class_vector3_constant_zero), and cannot be parallel to each other.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -510,7 +510,7 @@ It is often useful to call this method to avoid rounding errors on a rotating ba
 
 [`Basis`](class_basis.md) **rotated** ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]<div id="class_basis_method_rotated"></div>
 
-Returns this basis rotated around the given `axis` by `angle` (in radians). The `axis` must be a normalized vector (see [`Vector3.normalized`](#class_vector3_method_normalized)).
+Returns this basis rotated around the given `axis` by `angle` (in radians). The `axis` must be a normalized vector (see [`Vector3.normalized`](class_vector3.md#class_vector3_method_normalized)).
 
 Positive values rotate this basis clockwise around the axis, while negative values rotate it counterclockwise.
 
@@ -624,7 +624,7 @@ Performs a spherical-linear interpolation with the `to` basis, given a `weight`.
 
 [`float`](class_float.md) **tdotx** ( with: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_basis_method_tdotx"></div>
 
-Returns the transposed dot product between `with` and the [`x`](#class_basis_property_x) axis (see [`transposed`](#class_basis_method_transposed)).
+Returns the transposed dot product between `with` and the [`x`](class_basis.md#class_basis_property_x) axis (see [`transposed`](class_basis.md#class_basis_method_transposed)).
 
 This is equivalent to `basis.x.dot(vector)`.
 
@@ -636,7 +636,7 @@ This is equivalent to `basis.x.dot(vector)`.
 
 [`float`](class_float.md) **tdoty** ( with: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_basis_method_tdoty"></div>
 
-Returns the transposed dot product between `with` and the [`y`](#class_basis_property_y) axis (see [`transposed`](#class_basis_method_transposed)).
+Returns the transposed dot product between `with` and the [`y`](class_basis.md#class_basis_property_y) axis (see [`transposed`](class_basis.md#class_basis_method_transposed)).
 
 This is equivalent to `basis.y.dot(vector)`.
 
@@ -648,7 +648,7 @@ This is equivalent to `basis.y.dot(vector)`.
 
 [`float`](class_float.md) **tdotz** ( with: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_basis_method_tdotz"></div>
 
-Returns the transposed dot product between `with` and the [`z`](#class_basis_property_z) axis (see [`transposed`](#class_basis_method_transposed)).
+Returns the transposed dot product between `with` and the [`z`](class_basis.md#class_basis_property_z) axis (see [`transposed`](class_basis.md#class_basis_method_transposed)).
 
 This is equivalent to `basis.z.dot(vector)`.
 
@@ -710,7 +710,7 @@ Returns the transposed version of this basis. This turns the basis matrix's colu
 
 Returns `true` if the components of both **Basis** matrices are not equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_basis_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_basis.md#class_basis_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -806,7 +806,7 @@ Divides all components of the **Basis** by the given [`int`](class_int.md). This
 
 Returns `true` if the components of both **Basis** matrices are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_basis_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_basis.md#class_basis_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -816,7 +816,7 @@ Returns `true` if the components of both **Basis** matrices are exactly equal.
 
 [`Vector3`](class_vector3.md) **operator []** ( index: [`int`](class_int.md) ) <div id="class_basis_operator_idx_int"></div>
 
-Accesses each axis (column) of this basis by their index. Index `0` is the same as [`x`](#class_basis_property_x), index `1` is the same as [`y`](#class_basis_property_y), and index `2` is the same as [`z`](#class_basis_property_z).
+Accesses each axis (column) of this basis by their index. Index `0` is the same as [`x`](class_basis.md#class_basis_property_x), index `1` is the same as [`y`](class_basis.md#class_basis_property_y), and index `2` is the same as [`z`](class_basis.md#class_basis_property_z).
 
  **Note:** In C++, this operator accesses the rows of the basis matrix, *not* the columns. For the same behavior as scripting languages, use the `set_column` and `get_column` methods.
 

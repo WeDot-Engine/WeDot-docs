@@ -19,11 +19,11 @@ Custom code to generate previews. Please check `file_dialog/thumbnail_size` in [
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)           | [`_can_generate_small_preview`](#class_editorresourcepreviewgenerator_private_method__can_generate_small_preview) ( ) virtual[^virtual] const[^const]                                                                                                         |
-| [`Texture2D`](class_texture2d.md) | [`_generate`](#class_editorresourcepreviewgenerator_private_method__generate) ( resource: [`Resource`](class_resource.md), size: [`Vector2i`](class_vector2i.md), metadata: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const]             |
-| [`Texture2D`](class_texture2d.md) | [`_generate_from_path`](#class_editorresourcepreviewgenerator_private_method__generate_from_path) ( path: [`String`](class_string.md), size: [`Vector2i`](class_vector2i.md), metadata: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const] |
-| [`bool`](class_bool.md)           | [`_generate_small_preview_automatically`](#class_editorresourcepreviewgenerator_private_method__generate_small_preview_automatically) ( ) virtual[^virtual] const[^const]                                                                                     |
-| [`bool`](class_bool.md)           | [`_handles`](#class_editorresourcepreviewgenerator_private_method__handles) ( type: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                             |
+| [`bool`](class_bool.md)           | [`_can_generate_small_preview`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__can_generate_small_preview) ( ) virtual[^virtual] const[^const]                                                                                                         |
+| [`Texture2D`](class_texture2d.md) | [`_generate`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate) ( resource: [`Resource`](class_resource.md), size: [`Vector2i`](class_vector2i.md), metadata: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const]             |
+| [`Texture2D`](class_texture2d.md) | [`_generate_from_path`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate_from_path) ( path: [`String`](class_string.md), size: [`Vector2i`](class_vector2i.md), metadata: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const] |
+| [`bool`](class_bool.md)           | [`_generate_small_preview_automatically`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate_small_preview_automatically) ( ) virtual[^virtual] const[^const]                                                                                     |
+| [`bool`](class_bool.md)           | [`_handles`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__handles) ( type: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -35,7 +35,7 @@ Custom code to generate previews. Please check `file_dialog/thumbnail_size` in [
 
 [`bool`](class_bool.md) **_can_generate_small_preview** ( ) virtual[^virtual] const[^const]<div id="class_editorresourcepreviewgenerator_private_method__can_generate_small_preview"></div>
 
-If this function returns `true`, the generator will call [`_generate`](#class_editorresourcepreviewgenerator_private_method__generate) or [`_generate_from_path`](#class_editorresourcepreviewgenerator_private_method__generate_from_path) for small previews as well.
+If this function returns `true`, the generator will call [`_generate`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate) or [`_generate_from_path`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate_from_path) for small previews as well.
 
 By default, it returns `false`.
 
@@ -53,7 +53,7 @@ Returning an empty texture is an OK way to fail and let another generator take c
 
 Care must be taken because this function is always called from a thread (not the main thread).
 
- `metadata` dictionary can be modified to store file-specific metadata that can be used in [`EditorResourceTooltipPlugin._make_tooltip_for_path`](#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) (like image size, sample length etc.).
+ `metadata` dictionary can be modified to store file-specific metadata that can be used in [`EditorResourceTooltipPlugin._make_tooltip_for_path`](class_editorresourcetooltipplugin.md#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) (like image size, sample length etc.).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -63,13 +63,13 @@ Care must be taken because this function is always called from a thread (not the
 
 [`Texture2D`](class_texture2d.md) **_generate_from_path** ( path: [`String`](class_string.md), size: [`Vector2i`](class_vector2i.md), metadata: [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const]<div id="class_editorresourcepreviewgenerator_private_method__generate_from_path"></div>
 
-Generate a preview directly from a path with the specified size. Implementing this is optional, as default code will load and call [`_generate`](#class_editorresourcepreviewgenerator_private_method__generate).
+Generate a preview directly from a path with the specified size. Implementing this is optional, as default code will load and call [`_generate`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate).
 
 Returning an empty texture is an OK way to fail and let another generator take care.
 
 Care must be taken because this function is always called from a thread (not the main thread).
 
- `metadata` dictionary can be modified to store file-specific metadata that can be used in [`EditorResourceTooltipPlugin._make_tooltip_for_path`](#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) (like image size, sample length etc.).
+ `metadata` dictionary can be modified to store file-specific metadata that can be used in [`EditorResourceTooltipPlugin._make_tooltip_for_path`](class_editorresourcetooltipplugin.md#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) (like image size, sample length etc.).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -79,7 +79,7 @@ Care must be taken because this function is always called from a thread (not the
 
 [`bool`](class_bool.md) **_generate_small_preview_automatically** ( ) virtual[^virtual] const[^const]<div id="class_editorresourcepreviewgenerator_private_method__generate_small_preview_automatically"></div>
 
-If this function returns `true`, the generator will automatically generate the small previews from the normal preview texture generated by the methods [`_generate`](#class_editorresourcepreviewgenerator_private_method__generate) or [`_generate_from_path`](#class_editorresourcepreviewgenerator_private_method__generate_from_path).
+If this function returns `true`, the generator will automatically generate the small previews from the normal preview texture generated by the methods [`_generate`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate) or [`_generate_from_path`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate_from_path).
 
 By default, it returns `false`.
 

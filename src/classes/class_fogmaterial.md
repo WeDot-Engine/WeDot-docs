@@ -21,12 +21,12 @@ If you need more advanced effects, use a custom [*fog shader*](../tutorials/shad
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)         | [`albedo`](#class_fogmaterial_property_albedo)                   | ``Color(1, 1, 1, 1)`` |
-| [`float`](class_float.md)         | [`density`](#class_fogmaterial_property_density)                 | ``1.0``               |
-| [`Texture3D`](class_texture3d.md) | [`density_texture`](#class_fogmaterial_property_density_texture) |                       |
-| [`float`](class_float.md)         | [`edge_fade`](#class_fogmaterial_property_edge_fade)             | ``0.1``               |
-| [`Color`](class_color.md)         | [`emission`](#class_fogmaterial_property_emission)               | ``Color(0, 0, 0, 1)`` |
-| [`float`](class_float.md)         | [`height_falloff`](#class_fogmaterial_property_height_falloff)   | ``0.0``               |
+| [`Color`](class_color.md)         | [`albedo`](class_fogmaterial.md#class_fogmaterial_property_albedo)                   | ``Color(1, 1, 1, 1)`` |
+| [`float`](class_float.md)         | [`density`](class_fogmaterial.md#class_fogmaterial_property_density)                 | ``1.0``               |
+| [`Texture3D`](class_texture3d.md) | [`density_texture`](class_fogmaterial.md#class_fogmaterial_property_density_texture) |                       |
+| [`float`](class_float.md)         | [`edge_fade`](class_fogmaterial.md#class_fogmaterial_property_edge_fade)             | ``0.1``               |
+| [`Color`](class_color.md)         | [`emission`](class_fogmaterial.md#class_fogmaterial_property_emission)               | ``Color(0, 0, 0, 1)`` |
+| [`float`](class_float.md)         | [`height_falloff`](class_fogmaterial.md#class_fogmaterial_property_height_falloff)   | ``0.0``               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -41,7 +41,7 @@ If you need more advanced effects, use a custom [*fog shader*](../tutorials/shad
 - `void` **set_albedo** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_albedo** ( )
 
-The single-scattering [`Color`](class_color.md) of the [`FogVolume`](class_fogvolume.md). Internally, [`albedo`](#class_fogmaterial_property_albedo) is converted into single-scattering, which is additively blended with other [`FogVolume`](class_fogvolume.md) s and the [`Environment.volumetric_fog_albedo`](#class_environment_property_volumetric_fog_albedo).
+The single-scattering [`Color`](class_color.md) of the [`FogVolume`](class_fogvolume.md). Internally, [`albedo`](class_fogmaterial.md#class_fogmaterial_property_albedo) is converted into single-scattering, which is additively blended with other [`FogVolume`](class_fogvolume.md) s and the [`Environment.volumetric_fog_albedo`](class_environment.md#class_environment_property_volumetric_fog_albedo).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -56,7 +56,7 @@ The single-scattering [`Color`](class_color.md) of the [`FogVolume`](class_fogvo
 
 The density of the [`FogVolume`](class_fogvolume.md). Denser objects are more opaque, but may suffer from under-sampling artifacts that look like stripes. Negative values can be used to subtract fog from other [`FogVolume`](class_fogvolume.md) s or global volumetric fog.
 
- **Note:** Due to limited precision, [`density`](#class_fogmaterial_property_density) values between `-0.001` and `0.001` (exclusive) act like `0.0`. This does not apply to [`Environment.volumetric_fog_density`](#class_environment_property_volumetric_fog_density).
+ **Note:** Due to limited precision, [`density`](class_fogmaterial.md#class_fogmaterial_property_density) values between `-0.001` and `0.001` (exclusive) act like `0.0`. This does not apply to [`Environment.volumetric_fog_density`](class_environment.md#class_environment_property_volumetric_fog_density).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -69,7 +69,7 @@ The density of the [`FogVolume`](class_fogvolume.md). Denser objects are more op
 - `void` **set_density_texture** ( value: [`Texture3D`](class_texture3d.md) )
 - [`Texture3D`](class_texture3d.md) **get_density_texture** ( )
 
-The 3D texture that is used to scale the [`density`](#class_fogmaterial_property_density) of the [`FogVolume`](class_fogvolume.md). This can be used to vary fog density within the [`FogVolume`](class_fogvolume.md) with any kind of static pattern. For animated effects, consider using a custom [*fog shader*](../tutorials/shaders/shader_reference/fog_shader).
+The 3D texture that is used to scale the [`density`](class_fogmaterial.md#class_fogmaterial_property_density) of the [`FogVolume`](class_fogvolume.md). This can be used to vary fog density within the [`FogVolume`](class_fogvolume.md) with any kind of static pattern. For animated effects, consider using a custom [*fog shader*](../tutorials/shaders/shader_reference/fog_shader).
 
 <!-- rst-class:: classref-item-separator -->
 

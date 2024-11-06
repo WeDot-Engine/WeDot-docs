@@ -21,8 +21,8 @@ Base class for [`Texture2DArray`](class_texture2darray.md), [`Cubemap`](class_cu
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`create_from_images`](#class_imagetexturelayered_method_create_from_images) ( images: [Array](class_array.md) [`Image`](class_image.md) ) |
-| `void`                            | [`update_layer`](#class_imagetexturelayered_method_update_layer) ( image: [`Image`](class_image.md), layer: [`int`](class_int.md) )        |
+| [Error](#enum_@globalscope_error) | [`create_from_images`](class_imagetexturelayered.md#class_imagetexturelayered_method_create_from_images) ( images: [Array](class_array.md) [`Image`](class_image.md) ) |
+| `void`                            | [`update_layer`](class_imagetexturelayered.md#class_imagetexturelayered_method_update_layer) ( image: [`Image`](class_image.md), layer: [`int`](class_int.md) )        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -34,7 +34,7 @@ Base class for [`Texture2DArray`](class_texture2darray.md), [`Cubemap`](class_cu
 
 [Error](#enum_@globalscope_error) **create_from_images** ( images: [Array](class_array.md) [`Image`](class_image.md) )<div id="class_imagetexturelayered_method_create_from_images"></div>
 
-Creates an **ImageTextureLayered** from an array of [`Image`](class_image.md) s. See [`Image.create`](#class_image_method_create) for the expected data format. The first image decides the width, height, image format and mipmapping setting. The other images *must* have the same width, height, image format and mipmapping setting.
+Creates an **ImageTextureLayered** from an array of [`Image`](class_image.md) s. See [`Image.create`](class_image.md#class_image_method_create) for the expected data format. The first image decides the width, height, image format and mipmapping setting. The other images *must* have the same width, height, image format and mipmapping setting.
 
 Each [`Image`](class_image.md) represents one `layer`.
 

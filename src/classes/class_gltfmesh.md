@@ -19,17 +19,17 @@ GLTFMesh handles 3D mesh data imported from GLTF files. It includes properties f
 
 |||
 |:-:|:--|
-| [`PackedFloat32Array`](class_packedfloat32array.md)     | [`blend_weights`](#class_gltfmesh_property_blend_weights)           | ``PackedFloat32Array()`` |
-| [Array](class_array.md) [`Material`](class_material.md) | [`instance_materials`](#class_gltfmesh_property_instance_materials) | ``[]``                   |
-| [`ImporterMesh`](class_importermesh.md)                 | [`mesh`](#class_gltfmesh_property_mesh)                             |                          |
-| [`String`](class_string.md)                             | [`original_name`](#class_gltfmesh_property_original_name)           | ``""``                   |
+| [`PackedFloat32Array`](class_packedfloat32array.md)     | [`blend_weights`](class_gltfmesh.md#class_gltfmesh_property_blend_weights)           | ``PackedFloat32Array()`` |
+| [Array](class_array.md) [`Material`](class_material.md) | [`instance_materials`](class_gltfmesh.md#class_gltfmesh_property_instance_materials) | ``[]``                   |
+| [`ImporterMesh`](class_importermesh.md)                 | [`mesh`](class_gltfmesh.md#class_gltfmesh_property_mesh)                             |                          |
+| [`String`](class_string.md)                             | [`original_name`](class_gltfmesh.md#class_gltfmesh_property_original_name)           | ``""``                   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_additional_data`](#class_gltfmesh_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                        | [`set_additional_data`](#class_gltfmesh_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+| [`Variant`](class_variant.md) | [`get_additional_data`](class_gltfmesh.md#class_gltfmesh_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| `void`                        | [`set_additional_data`](class_gltfmesh.md#class_gltfmesh_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

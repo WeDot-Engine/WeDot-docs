@@ -23,9 +23,9 @@ The **WorldEnvironment** allows the user to specify default lighting parameters 
 
 |||
 |:-:|:--|
-| [`CameraAttributes`](class_cameraattributes.md) | [`camera_attributes`](#class_worldenvironment_property_camera_attributes) |
-| [`Compositor`](class_compositor.md)             | [`compositor`](#class_worldenvironment_property_compositor)               |
-| [`Environment`](class_environment.md)           | [`environment`](#class_worldenvironment_property_environment)             |
+| [`CameraAttributes`](class_cameraattributes.md) | [`camera_attributes`](class_worldenvironment.md#class_worldenvironment_property_camera_attributes) |
+| [`Compositor`](class_compositor.md)             | [`compositor`](class_worldenvironment.md#class_worldenvironment_property_compositor)               |
+| [`Environment`](class_environment.md)           | [`environment`](class_worldenvironment.md#class_worldenvironment_property_environment)             |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -21,27 +21,27 @@ A container that accepts only two child controls, then arranges them horizontall
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                     | [`collapsed`](#class_splitcontainer_property_collapsed)                   | ``false`` |
-| [DraggerVisibility](#enum_splitcontainer_draggervisibility) | [`dragger_visibility`](#class_splitcontainer_property_dragger_visibility) | ``0``     |
-| [`int`](class_int.md)                                       | [`split_offset`](#class_splitcontainer_property_split_offset)             | ``0``     |
-| [`bool`](class_bool.md)                                     | [`vertical`](#class_splitcontainer_property_vertical)                     | ``false`` |
+| [`bool`](class_bool.md)                                     | [`collapsed`](class_splitcontainer.md#class_splitcontainer_property_collapsed)                   | ``false`` |
+| [DraggerVisibility](#enum_splitcontainer_draggervisibility) | [`dragger_visibility`](class_splitcontainer.md#class_splitcontainer_property_dragger_visibility) | ``0``     |
+| [`int`](class_int.md)                                       | [`split_offset`](class_splitcontainer.md#class_splitcontainer_property_split_offset)             | ``0``     |
+| [`bool`](class_bool.md)                                     | [`vertical`](class_splitcontainer.md#class_splitcontainer_property_vertical)                     | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`clamp_split_offset`](#class_splitcontainer_method_clamp_split_offset) ( ) |
+| `void` | [`clamp_split_offset`](class_splitcontainer.md#class_splitcontainer_method_clamp_split_offset) ( ) |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`autohide`](#class_splitcontainer_theme_constant_autohide)                             | ``1``  |
-| [`int`](class_int.md)             | [`minimum_grab_thickness`](#class_splitcontainer_theme_constant_minimum_grab_thickness) | ``6``  |
-| [`int`](class_int.md)             | [`separation`](#class_splitcontainer_theme_constant_separation)                         | ``12`` |
-| [`Texture2D`](class_texture2d.md) | [`grabber`](#class_splitcontainer_theme_icon_grabber)                                   |        |
-| [`Texture2D`](class_texture2d.md) | [`h_grabber`](#class_splitcontainer_theme_icon_h_grabber)                               |        |
-| [`Texture2D`](class_texture2d.md) | [`v_grabber`](#class_splitcontainer_theme_icon_v_grabber)                               |        |
+| [`int`](class_int.md)             | [`autohide`](class_splitcontainer.md#class_splitcontainer_theme_constant_autohide)                             | ``1``  |
+| [`int`](class_int.md)             | [`minimum_grab_thickness`](class_splitcontainer.md#class_splitcontainer_theme_constant_minimum_grab_thickness) | ``6``  |
+| [`int`](class_int.md)             | [`separation`](class_splitcontainer.md#class_splitcontainer_theme_constant_separation)                         | ``12`` |
+| [`Texture2D`](class_texture2d.md) | [`grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_grabber)                                   |        |
+| [`Texture2D`](class_texture2d.md) | [`h_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_h_grabber)                               |        |
+| [`Texture2D`](class_texture2d.md) | [`v_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_v_grabber)                               |        |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -149,7 +149,7 @@ Can't be changed when using [`HSplitContainer`](class_hsplitcontainer.md) and [`
 
 `void` **clamp_split_offset** ( )<div id="class_splitcontainer_method_clamp_split_offset"></div>
 
-Clamps the [`split_offset`](#class_splitcontainer_property_split_offset) value to not go outside the currently possible minimal and maximum values.
+Clamps the [`split_offset`](class_splitcontainer.md#class_splitcontainer_property_split_offset) value to not go outside the currently possible minimal and maximum values.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -171,7 +171,7 @@ Boolean value. If 1 (`true`), the grabber will hide automatically when it isn't 
 
 [`int`](class_int.md) **minimum_grab_thickness** = ``6`` <div id="class_splitcontainer_theme_constant_minimum_grab_thickness"></div>
 
-The minimum thickness of the area users can click on to grab the splitting line. If [`separation`](#class_splitcontainer_theme_constant_separation) or [`h_grabber`](#class_splitcontainer_theme_icon_h_grabber) / [`v_grabber`](#class_splitcontainer_theme_icon_v_grabber)'s thickness are too small, this ensure that the splitting line can still be dragged.
+The minimum thickness of the area users can click on to grab the splitting line. If [`separation`](class_splitcontainer.md#class_splitcontainer_theme_constant_separation) or [`h_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_h_grabber) / [`v_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_v_grabber)'s thickness are too small, this ensure that the splitting line can still be dragged.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -201,7 +201,7 @@ The icon used for the grabber drawn in the middle area.
 
 [`Texture2D`](class_texture2d.md) **h_grabber** <div id="class_splitcontainer_theme_icon_h_grabber"></div>
 
-The icon used for the grabber drawn in the middle area when [`vertical`](#class_splitcontainer_property_vertical) is `false`.
+The icon used for the grabber drawn in the middle area when [`vertical`](class_splitcontainer.md#class_splitcontainer_property_vertical) is `false`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -211,7 +211,7 @@ The icon used for the grabber drawn in the middle area when [`vertical`](#class_
 
 [`Texture2D`](class_texture2d.md) **v_grabber** <div id="class_splitcontainer_theme_icon_v_grabber"></div>
 
-The icon used for the grabber drawn in the middle area when [`vertical`](#class_splitcontainer_property_vertical) is `true`.
+The icon used for the grabber drawn in the middle area when [`vertical`](class_splitcontainer.md#class_splitcontainer_property_vertical) is `true`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

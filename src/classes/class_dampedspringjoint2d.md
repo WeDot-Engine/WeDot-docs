@@ -19,10 +19,10 @@ A physics joint that connects two 2D physics bodies with a spring-like force. Th
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`damping`](#class_dampedspringjoint2d_property_damping)         | ``1.0``  |
-| [`float`](class_float.md) | [`length`](#class_dampedspringjoint2d_property_length)           | ``50.0`` |
-| [`float`](class_float.md) | [`rest_length`](#class_dampedspringjoint2d_property_rest_length) | ``0.0``  |
-| [`float`](class_float.md) | [`stiffness`](#class_dampedspringjoint2d_property_stiffness)     | ``20.0`` |
+| [`float`](class_float.md) | [`damping`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_damping)         | ``1.0``  |
+| [`float`](class_float.md) | [`length`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_length)           | ``50.0`` |
+| [`float`](class_float.md) | [`rest_length`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_rest_length) | ``0.0``  |
+| [`float`](class_float.md) | [`stiffness`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_stiffness)     | ``20.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -37,7 +37,7 @@ A physics joint that connects two 2D physics bodies with a spring-like force. Th
 - `void` **set_damping** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_damping** ( )
 
-The spring joint's damping ratio. A value between `0` and `1`. When the two bodies move into different directions the system tries to align them to the spring axis again. A high [`damping`](#class_dampedspringjoint2d_property_damping) value forces the attached bodies to align faster.
+The spring joint's damping ratio. A value between `0` and `1`. When the two bodies move into different directions the system tries to align them to the spring axis again. A high [`damping`](class_dampedspringjoint2d.md#class_dampedspringjoint2d_property_damping) value forces the attached bodies to align faster.
 
 <!-- rst-class:: classref-item-separator -->
 

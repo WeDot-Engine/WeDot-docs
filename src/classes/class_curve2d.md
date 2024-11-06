@@ -21,32 +21,32 @@ It keeps a cache of precalculated points along the curve, to speed up further ca
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`bake_interval`](#class_curve2d_property_bake_interval) | ``5.0`` |
-| [`int`](class_int.md)     | [`point_count`](#class_curve2d_property_point_count)     | ``0``   |
+| [`float`](class_float.md) | [`bake_interval`](class_curve2d.md#class_curve2d_property_bake_interval) | ``5.0`` |
+| [`int`](class_int.md)     | [`point_count`](class_curve2d.md#class_curve2d_property_point_count)     | ``0``   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                              | [`add_point`](#class_curve2d_method_add_point) ( position: [`Vector2`](class_vector2.md), in: [`Vector2`](class_vector2.md) = Vector2(0, 0), out: [`Vector2`](class_vector2.md) = Vector2(0, 0), index: [`int`](class_int.md) = -1 ) |
-| `void`                                              | [`clear_points`](#class_curve2d_method_clear_points) ( )                                                                                                                                                                             |
-| [`float`](class_float.md)                           | [`get_baked_length`](#class_curve2d_method_get_baked_length) ( ) const[^const]                                                                                                                                                       |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`get_baked_points`](#class_curve2d_method_get_baked_points) ( ) const[^const]                                                                                                                                                       |
-| [`float`](class_float.md)                           | [`get_closest_offset`](#class_curve2d_method_get_closest_offset) ( to_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                           |
-| [`Vector2`](class_vector2.md)                       | [`get_closest_point`](#class_curve2d_method_get_closest_point) ( to_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                             |
-| [`Vector2`](class_vector2.md)                       | [`get_point_in`](#class_curve2d_method_get_point_in) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                    |
-| [`Vector2`](class_vector2.md)                       | [`get_point_out`](#class_curve2d_method_get_point_out) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                  |
-| [`Vector2`](class_vector2.md)                       | [`get_point_position`](#class_curve2d_method_get_point_position) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                        |
-| `void`                                              | [`remove_point`](#class_curve2d_method_remove_point) ( idx: [`int`](class_int.md) )                                                                                                                                                  |
-| [`Vector2`](class_vector2.md)                       | [`sample`](#class_curve2d_method_sample) ( idx: [`int`](class_int.md), t: [`float`](class_float.md) ) const[^const]                                                                                                                  |
-| [`Vector2`](class_vector2.md)                       | [`sample_baked`](#class_curve2d_method_sample_baked) ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false ) const[^const]                                                                               |
-| [`Transform2D`](class_transform2d.md)               | [`sample_baked_with_rotation`](#class_curve2d_method_sample_baked_with_rotation) ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false ) const[^const]                                                   |
-| [`Vector2`](class_vector2.md)                       | [`samplef`](#class_curve2d_method_samplef) ( fofs: [`float`](class_float.md) ) const[^const]                                                                                                                                         |
-| `void`                                              | [`set_point_in`](#class_curve2d_method_set_point_in) ( idx: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) )                                                                                                         |
-| `void`                                              | [`set_point_out`](#class_curve2d_method_set_point_out) ( idx: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) )                                                                                                       |
-| `void`                                              | [`set_point_position`](#class_curve2d_method_set_point_position) ( idx: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) )                                                                                             |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`tessellate`](#class_curve2d_method_tessellate) ( max_stages: [`int`](class_int.md) = 5, tolerance_degrees: [`float`](class_float.md) = 4 ) const[^const]                                                                           |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`tessellate_even_length`](#class_curve2d_method_tessellate_even_length) ( max_stages: [`int`](class_int.md) = 5, tolerance_length: [`float`](class_float.md) = 20.0 ) const[^const]                                                 |
+| `void`                                              | [`add_point`](class_curve2d.md#class_curve2d_method_add_point) ( position: [`Vector2`](class_vector2.md), in: [`Vector2`](class_vector2.md) = Vector2(0, 0), out: [`Vector2`](class_vector2.md) = Vector2(0, 0), index: [`int`](class_int.md) = -1 ) |
+| `void`                                              | [`clear_points`](class_curve2d.md#class_curve2d_method_clear_points) ( )                                                                                                                                                                             |
+| [`float`](class_float.md)                           | [`get_baked_length`](class_curve2d.md#class_curve2d_method_get_baked_length) ( ) const[^const]                                                                                                                                                       |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`get_baked_points`](class_curve2d.md#class_curve2d_method_get_baked_points) ( ) const[^const]                                                                                                                                                       |
+| [`float`](class_float.md)                           | [`get_closest_offset`](class_curve2d.md#class_curve2d_method_get_closest_offset) ( to_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                           |
+| [`Vector2`](class_vector2.md)                       | [`get_closest_point`](class_curve2d.md#class_curve2d_method_get_closest_point) ( to_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                             |
+| [`Vector2`](class_vector2.md)                       | [`get_point_in`](class_curve2d.md#class_curve2d_method_get_point_in) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                    |
+| [`Vector2`](class_vector2.md)                       | [`get_point_out`](class_curve2d.md#class_curve2d_method_get_point_out) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                                  |
+| [`Vector2`](class_vector2.md)                       | [`get_point_position`](class_curve2d.md#class_curve2d_method_get_point_position) ( idx: [`int`](class_int.md) ) const[^const]                                                                                                                        |
+| `void`                                              | [`remove_point`](class_curve2d.md#class_curve2d_method_remove_point) ( idx: [`int`](class_int.md) )                                                                                                                                                  |
+| [`Vector2`](class_vector2.md)                       | [`sample`](class_curve2d.md#class_curve2d_method_sample) ( idx: [`int`](class_int.md), t: [`float`](class_float.md) ) const[^const]                                                                                                                  |
+| [`Vector2`](class_vector2.md)                       | [`sample_baked`](class_curve2d.md#class_curve2d_method_sample_baked) ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false ) const[^const]                                                                               |
+| [`Transform2D`](class_transform2d.md)               | [`sample_baked_with_rotation`](class_curve2d.md#class_curve2d_method_sample_baked_with_rotation) ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false ) const[^const]                                                   |
+| [`Vector2`](class_vector2.md)                       | [`samplef`](class_curve2d.md#class_curve2d_method_samplef) ( fofs: [`float`](class_float.md) ) const[^const]                                                                                                                                         |
+| `void`                                              | [`set_point_in`](class_curve2d.md#class_curve2d_method_set_point_in) ( idx: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) )                                                                                                         |
+| `void`                                              | [`set_point_out`](class_curve2d.md#class_curve2d_method_set_point_out) ( idx: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) )                                                                                                       |
+| `void`                                              | [`set_point_position`](class_curve2d.md#class_curve2d_method_set_point_position) ( idx: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) )                                                                                             |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`tessellate`](class_curve2d.md#class_curve2d_method_tessellate) ( max_stages: [`int`](class_int.md) = 5, tolerance_degrees: [`float`](class_float.md) = 4 ) const[^const]                                                                           |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`tessellate_even_length`](class_curve2d.md#class_curve2d_method_tessellate_even_length) ( max_stages: [`int`](class_int.md) = 5, tolerance_length: [`float`](class_float.md) = 20.0 ) const[^const]                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -61,7 +61,7 @@ It keeps a cache of precalculated points along the curve, to speed up further ca
 - `void` **set_bake_interval** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_bake_interval** ( )
 
-The distance in pixels between two adjacent cached points. Changing it forces the cache to be recomputed the next time the [`get_baked_points`](#class_curve2d_method_get_baked_points) or [`get_baked_length`](#class_curve2d_method_get_baked_length) function is called. The smaller the distance, the more points in the cache and the more memory it will consume, so use with care.
+The distance in pixels between two adjacent cached points. Changing it forces the cache to be recomputed the next time the [`get_baked_points`](class_curve2d.md#class_curve2d_method_get_baked_points) or [`get_baked_length`](class_curve2d.md#class_curve2d_method_get_baked_length) function is called. The smaller the distance, the more points in the cache and the more memory it will consume, so use with care.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -88,7 +88,7 @@ The number of points describing the curve.
 
 Adds a point with the specified `position` relative to the curve's own position, with control points `in` and `out`. Appends the new point at the end of the point list.
 
-If `index` is given, the new point is inserted before the existing point identified by index `index`. Every existing point starting from `index` is shifted further down the list of points. The index must be greater than or equal to `0` and must not exceed the number of existing points in the line. See [`point_count`](#class_curve2d_property_point_count).
+If `index` is given, the new point is inserted before the existing point identified by index `index`. Every existing point starting from `index` is shifted further down the list of points. The index must be greater than or equal to `0` and must not exceed the number of existing points in the line. See [`point_count`](class_curve2d.md#class_curve2d_property_point_count).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -108,7 +108,7 @@ Removes all points from the curve.
 
 [`float`](class_float.md) **get_baked_length** ( ) const[^const]<div id="class_curve2d_method_get_baked_length"></div>
 
-Returns the total length of the curve, based on the cached points. Given enough density (see [`bake_interval`](#class_curve2d_property_bake_interval)), it should be approximate enough.
+Returns the total length of the curve, based on the cached points. Given enough density (see [`bake_interval`](class_curve2d.md#class_curve2d_property_bake_interval)), it should be approximate enough.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -128,7 +128,7 @@ Returns the cache of points as a [`PackedVector2Array`](class_packedvector2array
 
 [`float`](class_float.md) **get_closest_offset** ( to_point: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_curve2d_method_get_closest_offset"></div>
 
-Returns the closest offset to `to_point`. This offset is meant to be used in [`sample_baked`](#class_curve2d_method_sample_baked).
+Returns the closest offset to `to_point`. This offset is meant to be used in [`sample_baked`](class_curve2d.md#class_curve2d_method_sample_baked).
 
  `to_point` must be in this curve's local space.
 
@@ -218,7 +218,7 @@ Cubic interpolation tends to follow the curves better, but linear is faster (and
 
 [`Transform2D`](class_transform2d.md) **sample_baked_with_rotation** ( offset: [`float`](class_float.md) = 0.0, cubic: [`bool`](class_bool.md) = false ) const[^const]<div id="class_curve2d_method_sample_baked_with_rotation"></div>
 
-Similar to [`sample_baked`](#class_curve2d_method_sample_baked), but returns [`Transform2D`](class_transform2d.md) that includes a rotation along the curve, with [`Transform2D.origin`](#class_transform2d_property_origin) as the point position and the [`Transform2D.x`](#class_transform2d_property_x) vector pointing in the direction of the path at that point. Returns an empty transform if the length of the curve is `0`.
+Similar to [`sample_baked`](class_curve2d.md#class_curve2d_method_sample_baked), but returns [`Transform2D`](class_transform2d.md) that includes a rotation along the curve, with [`Transform2D.origin`](class_transform2d.md#class_transform2d_property_origin) as the point position and the [`Transform2D.x`](class_transform2d.md#class_transform2d_property_x) vector pointing in the direction of the path at that point. Returns an empty transform if the length of the curve is `0`.
 
 ```
 
@@ -240,7 +240,7 @@ Similar to [`sample_baked`](#class_curve2d_method_sample_baked), but returns [`T
 
 [`Vector2`](class_vector2.md) **samplef** ( fofs: [`float`](class_float.md) ) const[^const]<div id="class_curve2d_method_samplef"></div>
 
-Returns the position at the vertex `fofs`. It calls [`sample`](#class_curve2d_method_sample) using the integer part of `fofs` as `idx`, and its fractional part as `t`.
+Returns the position at the vertex `fofs`. It calls [`sample`](class_curve2d.md#class_curve2d_method_sample) using the integer part of `fofs` as `idx`, and its fractional part as `t`.
 
 <!-- rst-class:: classref-item-separator -->
 

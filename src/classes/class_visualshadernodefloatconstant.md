@@ -19,7 +19,7 @@ Translated to `float` in the shader language.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`constant`](#class_visualshadernodefloatconstant_property_constant) | ``0.0`` |
+| [`float`](class_float.md) | [`constant`](class_visualshadernodefloatconstant.md#class_visualshadernodefloatconstant_property_constant) | ``0.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

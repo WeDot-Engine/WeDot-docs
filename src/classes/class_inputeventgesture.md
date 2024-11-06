@@ -21,7 +21,7 @@ InputEventGestures are sent when a user performs a supported gesture on a touch 
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`position`](#class_inputeventgesture_property_position) | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`position`](class_inputeventgesture.md#class_inputeventgesture_property_position) | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -36,7 +36,7 @@ InputEventGestures are sent when a user performs a supported gesture on a touch 
 - `void` **set_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_position** ( )
 
-The local gesture position relative to the [`Viewport`](class_viewport.md). If used in [`Control._gui_input`](#class_control_private_method__gui_input), the position is relative to the current [`Control`](class_control.md) that received this gesture.
+The local gesture position relative to the [`Viewport`](class_viewport.md). If used in [`Control._gui_input`](class_control.md#class_control_private_method__gui_input), the position is relative to the current [`Control`](class_control.md) that received this gesture.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

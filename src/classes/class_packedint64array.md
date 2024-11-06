@@ -15,9 +15,9 @@ An array specifically designed to hold 64-bit integer values. Packs data tightly
 
  **Note:** This type stores signed 64-bit integers, which means it can take values in the interval `[-2^63, 2^63 - 1]`, i.e. `[-9223372036854775808, 9223372036854775807]`. Exceeding those bounds will wrap around. If you only need to pack 32-bit integers tightly, see [`PackedInt32Array`](class_packedint32array.md) for a more memory-friendly alternative.
 
- **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. [`PackedInt32Array`](class_packedint32array.md) versus `Array[int]`). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as [`Array.map`](#class_array_method_map). Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. [`PackedInt32Array`](class_packedint32array.md) versus `Array[int]`). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as [`Array.map`](class_array.md#class_array_method_map). Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
- **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](#class_packedint64array_method_duplicate). This is *not* the case for built-in properties and methods. The returned packed array of these are a copies, and changing it will *not* affect the original value. To update a built-in property you need to modify the returned array, and then assign it to the property again.
+ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](class_packedint64array.md#class_packedint64array_method_duplicate). This is *not* the case for built-in properties and methods. The returned packed array of these are a copies, and changing it will *not* affect the original value. To update a built-in property you need to modify the returned array, and then assign it to the property again.
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
@@ -25,35 +25,35 @@ An array specifically designed to hold 64-bit integer values. Packs data tightly
 
 |||
 |:-:|:--|
-| [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](#class_packedint64array_constructor_packedint64array) ( )                                                       |
-| [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](#class_packedint64array_constructor_packedint64array) ( from: [`PackedInt64Array`](class_packedint64array.md) ) |
-| [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](#class_packedint64array_constructor_packedint64array) ( from: [`Array`](class_array.md) )                       |
+| [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](class_packedint64array.md#class_packedint64array_constructor_packedint64array) ( )                                                       |
+| [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](class_packedint64array.md#class_packedint64array_constructor_packedint64array) ( from: [`PackedInt64Array`](class_packedint64array.md) ) |
+| [`PackedInt64Array`](class_packedint64array.md) | [`PackedInt64Array`](class_packedint64array.md#class_packedint64array_constructor_packedint64array) ( from: [`Array`](class_array.md) )                       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                         | [`append`](#class_packedint64array_method_append) ( value: [`int`](class_int.md) )                                                      |
-| `void`                                          | [`append_array`](#class_packedint64array_method_append_array) ( array: [`PackedInt64Array`](class_packedint64array.md) )                |
-| [`int`](class_int.md)                           | [`bsearch`](#class_packedint64array_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )            |
-| `void`                                          | [`clear`](#class_packedint64array_method_clear) ( )                                                                                     |
-| [`int`](class_int.md)                           | [`count`](#class_packedint64array_method_count) ( value: [`int`](class_int.md) ) const[^const]                                          |
-| [`PackedInt64Array`](class_packedint64array.md) | [`duplicate`](#class_packedint64array_method_duplicate) ( )                                                                             |
-| `void`                                          | [`fill`](#class_packedint64array_method_fill) ( value: [`int`](class_int.md) )                                                          |
-| [`int`](class_int.md)                           | [`find`](#class_packedint64array_method_find) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]           |
-| [`bool`](class_bool.md)                         | [`has`](#class_packedint64array_method_has) ( value: [`int`](class_int.md) ) const[^const]                                              |
-| [`int`](class_int.md)                           | [`insert`](#class_packedint64array_method_insert) ( at_index: [`int`](class_int.md), value: [`int`](class_int.md) )                     |
-| [`bool`](class_bool.md)                         | [`is_empty`](#class_packedint64array_method_is_empty) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)                         | [`push_back`](#class_packedint64array_method_push_back) ( value: [`int`](class_int.md) )                                                |
-| `void`                                          | [`remove_at`](#class_packedint64array_method_remove_at) ( index: [`int`](class_int.md) )                                                |
-| [`int`](class_int.md)                           | [`resize`](#class_packedint64array_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
-| `void`                                          | [`reverse`](#class_packedint64array_method_reverse) ( )                                                                                 |
-| [`int`](class_int.md)                           | [`rfind`](#class_packedint64array_method_rfind) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = -1 ) const[^const]        |
-| `void`                                          | [`set`](#class_packedint64array_method_set) ( index: [`int`](class_int.md), value: [`int`](class_int.md) )                              |
-| [`int`](class_int.md)                           | [`size`](#class_packedint64array_method_size) ( ) const[^const]                                                                         |
-| [`PackedInt64Array`](class_packedint64array.md) | [`slice`](#class_packedint64array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
-| `void`                                          | [`sort`](#class_packedint64array_method_sort) ( )                                                                                       |
-| [`PackedByteArray`](class_packedbytearray.md)   | [`to_byte_array`](#class_packedint64array_method_to_byte_array) ( ) const[^const]                                                       |
+| [`bool`](class_bool.md)                         | [`append`](class_packedint64array.md#class_packedint64array_method_append) ( value: [`int`](class_int.md) )                                                      |
+| `void`                                          | [`append_array`](class_packedint64array.md#class_packedint64array_method_append_array) ( array: [`PackedInt64Array`](class_packedint64array.md) )                |
+| [`int`](class_int.md)                           | [`bsearch`](class_packedint64array.md#class_packedint64array_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )            |
+| `void`                                          | [`clear`](class_packedint64array.md#class_packedint64array_method_clear) ( )                                                                                     |
+| [`int`](class_int.md)                           | [`count`](class_packedint64array.md#class_packedint64array_method_count) ( value: [`int`](class_int.md) ) const[^const]                                          |
+| [`PackedInt64Array`](class_packedint64array.md) | [`duplicate`](class_packedint64array.md#class_packedint64array_method_duplicate) ( )                                                                             |
+| `void`                                          | [`fill`](class_packedint64array.md#class_packedint64array_method_fill) ( value: [`int`](class_int.md) )                                                          |
+| [`int`](class_int.md)                           | [`find`](class_packedint64array.md#class_packedint64array_method_find) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]           |
+| [`bool`](class_bool.md)                         | [`has`](class_packedint64array.md#class_packedint64array_method_has) ( value: [`int`](class_int.md) ) const[^const]                                              |
+| [`int`](class_int.md)                           | [`insert`](class_packedint64array.md#class_packedint64array_method_insert) ( at_index: [`int`](class_int.md), value: [`int`](class_int.md) )                     |
+| [`bool`](class_bool.md)                         | [`is_empty`](class_packedint64array.md#class_packedint64array_method_is_empty) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)                         | [`push_back`](class_packedint64array.md#class_packedint64array_method_push_back) ( value: [`int`](class_int.md) )                                                |
+| `void`                                          | [`remove_at`](class_packedint64array.md#class_packedint64array_method_remove_at) ( index: [`int`](class_int.md) )                                                |
+| [`int`](class_int.md)                           | [`resize`](class_packedint64array.md#class_packedint64array_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
+| `void`                                          | [`reverse`](class_packedint64array.md#class_packedint64array_method_reverse) ( )                                                                                 |
+| [`int`](class_int.md)                           | [`rfind`](class_packedint64array.md#class_packedint64array_method_rfind) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = -1 ) const[^const]        |
+| `void`                                          | [`set`](class_packedint64array.md#class_packedint64array_method_set) ( index: [`int`](class_int.md), value: [`int`](class_int.md) )                              |
+| [`int`](class_int.md)                           | [`size`](class_packedint64array.md#class_packedint64array_method_size) ( ) const[^const]                                                                         |
+| [`PackedInt64Array`](class_packedint64array.md) | [`slice`](class_packedint64array.md#class_packedint64array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
+| `void`                                          | [`sort`](class_packedint64array.md#class_packedint64array_method_sort) ( )                                                                                       |
+| [`PackedByteArray`](class_packedbytearray.md)   | [`to_byte_array`](class_packedint64array.md#class_packedint64array_method_to_byte_array) ( ) const[^const]                                                       |
 
 ## 运算符
 
@@ -102,7 +102,7 @@ Constructs a new **PackedInt64Array**. Optionally, you can pass in a generic [`A
 
 [`bool`](class_bool.md) **append** ( value: [`int`](class_int.md) )<div id="class_packedint64array_method_append"></div>
 
-Appends an element at the end of the array (alias of [`push_back`](#class_packedint64array_method_push_back)).
+Appends an element at the end of the array (alias of [`push_back`](class_packedint64array.md#class_packedint64array_method_push_back)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -124,7 +124,7 @@ Appends a **PackedInt64Array** at the end of this array.
 
 Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a `before` specifier can be passed. If `false`, the returned index comes after all existing entries of the value in the array.
 
- **Note:** Calling [`bsearch`](#class_packedint64array_method_bsearch) on an unsorted array results in unexpected behavior.
+ **Note:** Calling [`bsearch`](class_packedint64array.md#class_packedint64array_method_bsearch) on an unsorted array results in unexpected behavior.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -134,7 +134,7 @@ Finds the index of an existing value (or the insertion index that maintains sort
 
 `void` **clear** ( )<div id="class_packedint64array_method_clear"></div>
 
-Clears the array. This is equivalent to using [`resize`](#class_packedint64array_method_resize) with a size of `0`.
+Clears the array. This is equivalent to using [`resize`](class_packedint64array.md#class_packedint64array_method_resize) with a size of `0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -164,7 +164,7 @@ Creates a copy of the array, and returns it.
 
 `void` **fill** ( value: [`int`](class_int.md) )<div id="class_packedint64array_method_fill"></div>
 
-Assigns the given value to all elements in the array. This can typically be used together with [`resize`](#class_packedint64array_method_resize) to create an array with a given size and initialized elements.
+Assigns the given value to all elements in the array. This can typically be used together with [`resize`](class_packedint64array.md#class_packedint64array_method_resize) to create an array with a given size and initialized elements.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -234,7 +234,7 @@ Removes an element from the array by index.
 
 [`int`](class_int.md) **resize** ( new_size: [`int`](class_int.md) )<div id="class_packedint64array_method_resize"></div>
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling [`resize`](#class_packedint64array_method_resize) once and assigning the new values is faster than adding new elements one by one.
+Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling [`resize`](class_packedint64array.md#class_packedint64array_method_resize) once and assigning the new values is faster than adding new elements one by one.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -332,7 +332,7 @@ Returns `true` if contents of the arrays differ.
 
 [`PackedInt64Array`](class_packedint64array.md) **operator +** ( right: [`PackedInt64Array`](class_packedint64array.md) ) <div id="class_packedint64array_operator_sum_packedint64array"></div>
 
-Returns a new **PackedInt64Array** with contents of `right` added at the end of this array. For better performance, consider using [`append_array`](#class_packedint64array_method_append_array) instead.
+Returns a new **PackedInt64Array** with contents of `right` added at the end of this array. For better performance, consider using [`append_array`](class_packedint64array.md#class_packedint64array_method_append_array) instead.
 
 <!-- rst-class:: classref-item-separator -->
 

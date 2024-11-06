@@ -23,7 +23,7 @@ Parent class for various CSG primitives. It contains code and functionality that
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`flip_faces`](#class_csgprimitive3d_property_flip_faces) | ``false`` |
+| [`bool`](class_bool.md) | [`flip_faces`](class_csgprimitive3d.md#class_csgprimitive3d_property_flip_faces) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

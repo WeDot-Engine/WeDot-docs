@@ -19,9 +19,9 @@ Editor facility that helps you draw a 2D polygon used as resource for [`LightOcc
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`closed`](#class_occluderpolygon2d_property_closed)       | ``true``                 |
-| [CullMode](#enum_occluderpolygon2d_cullmode)        | [`cull_mode`](#class_occluderpolygon2d_property_cull_mode) | ``0``                    |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](#class_occluderpolygon2d_property_polygon)     | ``PackedVector2Array()`` |
+| [`bool`](class_bool.md)                             | [`closed`](class_occluderpolygon2d.md#class_occluderpolygon2d_property_closed)       | ``true``                 |
+| [CullMode](#enum_occluderpolygon2d_cullmode)        | [`cull_mode`](class_occluderpolygon2d.md#class_occluderpolygon2d_property_cull_mode) | ``0``                    |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](class_occluderpolygon2d.md#class_occluderpolygon2d_property_polygon)     | ``PackedVector2Array()`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -37,19 +37,19 @@ enum **CullMode**: <div id="enum_occluderpolygon2d_cullmode"></div>
 
 [CullMode](#enum_occluderpolygon2d_cullmode) **CULL_DISABLED** = ``0``
 
-Culling is disabled. See [`cull_mode`](#class_occluderpolygon2d_property_cull_mode).
+Culling is disabled. See [`cull_mode`](class_occluderpolygon2d.md#class_occluderpolygon2d_property_cull_mode).
 
 <div id="_class_occluderpolygon2d_constant_cull_clockwise"></div>
 
 [CullMode](#enum_occluderpolygon2d_cullmode) **CULL_CLOCKWISE** = ``1``
 
-Culling is performed in the clockwise direction. See [`cull_mode`](#class_occluderpolygon2d_property_cull_mode).
+Culling is performed in the clockwise direction. See [`cull_mode`](class_occluderpolygon2d.md#class_occluderpolygon2d_property_cull_mode).
 
 <div id="_class_occluderpolygon2d_constant_cull_counter_clockwise"></div>
 
 [CullMode](#enum_occluderpolygon2d_cullmode) **CULL_COUNTER_CLOCKWISE** = ``2``
 
-Culling is performed in the counterclockwise direction. See [`cull_mode`](#class_occluderpolygon2d_property_cull_mode).
+Culling is performed in the counterclockwise direction. See [`cull_mode`](class_occluderpolygon2d.md#class_occluderpolygon2d_property_cull_mode).
 
 <!-- rst-class:: classref-section-separator -->
 

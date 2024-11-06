@@ -19,62 +19,62 @@ A 2D agent used to pathfind to a position while avoiding static and dynamic obst
 
 Dynamic obstacles are avoided using RVO collision avoidance. Avoidance is computed before physics, so the pathfinding information can be used safely in the physics step.
 
- **Note:** After setting the [`target_position`](#class_navigationagent2d_property_target_position) property, the [`get_next_path_position`](#class_navigationagent2d_method_get_next_path_position) method must be used once every physics frame to update the internal path logic of the navigation agent. The vector position it returns should be used as the next movement position for the agent's parent node.
+ **Note:** After setting the [`target_position`](class_navigationagent2d.md#class_navigationagent2d_property_target_position) property, the [`get_next_path_position`](class_navigationagent2d.md#class_navigationagent2d_method_get_next_path_position) method must be used once every physics frame to update the internal path logic of the navigation agent. The vector position it returns should be used as the next movement position for the agent's parent node.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                                            | [`avoidance_enabled`](#class_navigationagent2d_property_avoidance_enabled)                       | ``false``             |
-| [`int`](class_int.md)                                                              | [`avoidance_layers`](#class_navigationagent2d_property_avoidance_layers)                         | ``1``                 |
-| [`int`](class_int.md)                                                              | [`avoidance_mask`](#class_navigationagent2d_property_avoidance_mask)                             | ``1``                 |
-| [`float`](class_float.md)                                                          | [`avoidance_priority`](#class_navigationagent2d_property_avoidance_priority)                     | ``1.0``               |
-| [`bool`](class_bool.md)                                                            | [`debug_enabled`](#class_navigationagent2d_property_debug_enabled)                               | ``false``             |
-| [`Color`](class_color.md)                                                          | [`debug_path_custom_color`](#class_navigationagent2d_property_debug_path_custom_color)           | ``Color(1, 1, 1, 1)`` |
-| [`float`](class_float.md)                                                          | [`debug_path_custom_line_width`](#class_navigationagent2d_property_debug_path_custom_line_width) | ``-1.0``              |
-| [`float`](class_float.md)                                                          | [`debug_path_custom_point_size`](#class_navigationagent2d_property_debug_path_custom_point_size) | ``4.0``               |
-| [`bool`](class_bool.md)                                                            | [`debug_use_custom`](#class_navigationagent2d_property_debug_use_custom)                         | ``false``             |
-| [`int`](class_int.md)                                                              | [`max_neighbors`](#class_navigationagent2d_property_max_neighbors)                               | ``10``                |
-| [`float`](class_float.md)                                                          | [`max_speed`](#class_navigationagent2d_property_max_speed)                                       | ``100.0``             |
-| [`int`](class_int.md)                                                              | [`navigation_layers`](#class_navigationagent2d_property_navigation_layers)                       | ``1``                 |
-| [`float`](class_float.md)                                                          | [`neighbor_distance`](#class_navigationagent2d_property_neighbor_distance)                       | ``500.0``             |
-| [`float`](class_float.md)                                                          | [`path_desired_distance`](#class_navigationagent2d_property_path_desired_distance)               | ``20.0``              |
-| [`float`](class_float.md)                                                          | [`path_max_distance`](#class_navigationagent2d_property_path_max_distance)                       | ``100.0``             |
-| [PathMetadataFlags](#enum_navigationpathqueryparameters2d_pathmetadataflags)       | [`path_metadata_flags`](#class_navigationagent2d_property_path_metadata_flags)                   | ``7``                 |
-| [PathPostProcessing](#enum_navigationpathqueryparameters2d_pathpostprocessing)     | [`path_postprocessing`](#class_navigationagent2d_property_path_postprocessing)                   | ``0``                 |
-| [PathfindingAlgorithm](#enum_navigationpathqueryparameters2d_pathfindingalgorithm) | [`pathfinding_algorithm`](#class_navigationagent2d_property_pathfinding_algorithm)               | ``0``                 |
-| [`float`](class_float.md)                                                          | [`radius`](#class_navigationagent2d_property_radius)                                             | ``10.0``              |
-| [`float`](class_float.md)                                                          | [`simplify_epsilon`](#class_navigationagent2d_property_simplify_epsilon)                         | ``0.0``               |
-| [`bool`](class_bool.md)                                                            | [`simplify_path`](#class_navigationagent2d_property_simplify_path)                               | ``false``             |
-| [`float`](class_float.md)                                                          | [`target_desired_distance`](#class_navigationagent2d_property_target_desired_distance)           | ``10.0``              |
-| [`Vector2`](class_vector2.md)                                                      | [`target_position`](#class_navigationagent2d_property_target_position)                           | ``Vector2(0, 0)``     |
-| [`float`](class_float.md)                                                          | [`time_horizon_agents`](#class_navigationagent2d_property_time_horizon_agents)                   | ``1.0``               |
-| [`float`](class_float.md)                                                          | [`time_horizon_obstacles`](#class_navigationagent2d_property_time_horizon_obstacles)             | ``0.0``               |
-| [`Vector2`](class_vector2.md)                                                      | [`velocity`](#class_navigationagent2d_property_velocity)                                         | ``Vector2(0, 0)``     |
+| [`bool`](class_bool.md)                                                            | [`avoidance_enabled`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_enabled)                       | ``false``             |
+| [`int`](class_int.md)                                                              | [`avoidance_layers`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_layers)                         | ``1``                 |
+| [`int`](class_int.md)                                                              | [`avoidance_mask`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_mask)                             | ``1``                 |
+| [`float`](class_float.md)                                                          | [`avoidance_priority`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_priority)                     | ``1.0``               |
+| [`bool`](class_bool.md)                                                            | [`debug_enabled`](class_navigationagent2d.md#class_navigationagent2d_property_debug_enabled)                               | ``false``             |
+| [`Color`](class_color.md)                                                          | [`debug_path_custom_color`](class_navigationagent2d.md#class_navigationagent2d_property_debug_path_custom_color)           | ``Color(1, 1, 1, 1)`` |
+| [`float`](class_float.md)                                                          | [`debug_path_custom_line_width`](class_navigationagent2d.md#class_navigationagent2d_property_debug_path_custom_line_width) | ``-1.0``              |
+| [`float`](class_float.md)                                                          | [`debug_path_custom_point_size`](class_navigationagent2d.md#class_navigationagent2d_property_debug_path_custom_point_size) | ``4.0``               |
+| [`bool`](class_bool.md)                                                            | [`debug_use_custom`](class_navigationagent2d.md#class_navigationagent2d_property_debug_use_custom)                         | ``false``             |
+| [`int`](class_int.md)                                                              | [`max_neighbors`](class_navigationagent2d.md#class_navigationagent2d_property_max_neighbors)                               | ``10``                |
+| [`float`](class_float.md)                                                          | [`max_speed`](class_navigationagent2d.md#class_navigationagent2d_property_max_speed)                                       | ``100.0``             |
+| [`int`](class_int.md)                                                              | [`navigation_layers`](class_navigationagent2d.md#class_navigationagent2d_property_navigation_layers)                       | ``1``                 |
+| [`float`](class_float.md)                                                          | [`neighbor_distance`](class_navigationagent2d.md#class_navigationagent2d_property_neighbor_distance)                       | ``500.0``             |
+| [`float`](class_float.md)                                                          | [`path_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_path_desired_distance)               | ``20.0``              |
+| [`float`](class_float.md)                                                          | [`path_max_distance`](class_navigationagent2d.md#class_navigationagent2d_property_path_max_distance)                       | ``100.0``             |
+| [PathMetadataFlags](#enum_navigationpathqueryparameters2d_pathmetadataflags)       | [`path_metadata_flags`](class_navigationagent2d.md#class_navigationagent2d_property_path_metadata_flags)                   | ``7``                 |
+| [PathPostProcessing](#enum_navigationpathqueryparameters2d_pathpostprocessing)     | [`path_postprocessing`](class_navigationagent2d.md#class_navigationagent2d_property_path_postprocessing)                   | ``0``                 |
+| [PathfindingAlgorithm](#enum_navigationpathqueryparameters2d_pathfindingalgorithm) | [`pathfinding_algorithm`](class_navigationagent2d.md#class_navigationagent2d_property_pathfinding_algorithm)               | ``0``                 |
+| [`float`](class_float.md)                                                          | [`radius`](class_navigationagent2d.md#class_navigationagent2d_property_radius)                                             | ``10.0``              |
+| [`float`](class_float.md)                                                          | [`simplify_epsilon`](class_navigationagent2d.md#class_navigationagent2d_property_simplify_epsilon)                         | ``0.0``               |
+| [`bool`](class_bool.md)                                                            | [`simplify_path`](class_navigationagent2d.md#class_navigationagent2d_property_simplify_path)                               | ``false``             |
+| [`float`](class_float.md)                                                          | [`target_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_target_desired_distance)           | ``10.0``              |
+| [`Vector2`](class_vector2.md)                                                      | [`target_position`](class_navigationagent2d.md#class_navigationagent2d_property_target_position)                           | ``Vector2(0, 0)``     |
+| [`float`](class_float.md)                                                          | [`time_horizon_agents`](class_navigationagent2d.md#class_navigationagent2d_property_time_horizon_agents)                   | ``1.0``               |
+| [`float`](class_float.md)                                                          | [`time_horizon_obstacles`](class_navigationagent2d.md#class_navigationagent2d_property_time_horizon_obstacles)             | ``0.0``               |
+| [`Vector2`](class_vector2.md)                                                      | [`velocity`](class_navigationagent2d.md#class_navigationagent2d_property_velocity)                                         | ``Vector2(0, 0)``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                             | [`distance_to_target`](#class_navigationagent2d_method_distance_to_target) ( ) const[^const]                                                                       |
-| [`bool`](class_bool.md)                                               | [`get_avoidance_layer_value`](#class_navigationagent2d_method_get_avoidance_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
-| [`bool`](class_bool.md)                                               | [`get_avoidance_mask_value`](#class_navigationagent2d_method_get_avoidance_mask_value) ( mask_number: [`int`](class_int.md) ) const[^const]                        |
-| [`PackedVector2Array`](class_packedvector2array.md)                   | [`get_current_navigation_path`](#class_navigationagent2d_method_get_current_navigation_path) ( ) const[^const]                                                     |
-| [`int`](class_int.md)                                                 | [`get_current_navigation_path_index`](#class_navigationagent2d_method_get_current_navigation_path_index) ( ) const[^const]                                         |
-| [`NavigationPathQueryResult2D`](class_navigationpathqueryresult2d.md) | [`get_current_navigation_result`](#class_navigationagent2d_method_get_current_navigation_result) ( ) const[^const]                                                 |
-| [`Vector2`](class_vector2.md)                                         | [`get_final_position`](#class_navigationagent2d_method_get_final_position) ( )                                                                                     |
-| [`bool`](class_bool.md)                                               | [`get_navigation_layer_value`](#class_navigationagent2d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`RID`](class_rid.md)                                                 | [`get_navigation_map`](#class_navigationagent2d_method_get_navigation_map) ( ) const[^const]                                                                       |
-| [`Vector2`](class_vector2.md)                                         | [`get_next_path_position`](#class_navigationagent2d_method_get_next_path_position) ( )                                                                             |
-| [`RID`](class_rid.md)                                                 | [`get_rid`](#class_navigationagent2d_method_get_rid) ( ) const[^const]                                                                                             |
-| [`bool`](class_bool.md)                                               | [`is_navigation_finished`](#class_navigationagent2d_method_is_navigation_finished) ( )                                                                             |
-| [`bool`](class_bool.md)                                               | [`is_target_reachable`](#class_navigationagent2d_method_is_target_reachable) ( )                                                                                   |
-| [`bool`](class_bool.md)                                               | [`is_target_reached`](#class_navigationagent2d_method_is_target_reached) ( ) const[^const]                                                                         |
-| `void`                                                                | [`set_avoidance_layer_value`](#class_navigationagent2d_method_set_avoidance_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )   |
-| `void`                                                                | [`set_avoidance_mask_value`](#class_navigationagent2d_method_set_avoidance_mask_value) ( mask_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )      |
-| `void`                                                                | [`set_navigation_layer_value`](#class_navigationagent2d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                                                                | [`set_navigation_map`](#class_navigationagent2d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
-| `void`                                                                | [`set_velocity_forced`](#class_navigationagent2d_method_set_velocity_forced) ( velocity: [`Vector2`](class_vector2.md) )                                           |
+| [`float`](class_float.md)                                             | [`distance_to_target`](class_navigationagent2d.md#class_navigationagent2d_method_distance_to_target) ( ) const[^const]                                                                       |
+| [`bool`](class_bool.md)                                               | [`get_avoidance_layer_value`](class_navigationagent2d.md#class_navigationagent2d_method_get_avoidance_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
+| [`bool`](class_bool.md)                                               | [`get_avoidance_mask_value`](class_navigationagent2d.md#class_navigationagent2d_method_get_avoidance_mask_value) ( mask_number: [`int`](class_int.md) ) const[^const]                        |
+| [`PackedVector2Array`](class_packedvector2array.md)                   | [`get_current_navigation_path`](class_navigationagent2d.md#class_navigationagent2d_method_get_current_navigation_path) ( ) const[^const]                                                     |
+| [`int`](class_int.md)                                                 | [`get_current_navigation_path_index`](class_navigationagent2d.md#class_navigationagent2d_method_get_current_navigation_path_index) ( ) const[^const]                                         |
+| [`NavigationPathQueryResult2D`](class_navigationpathqueryresult2d.md) | [`get_current_navigation_result`](class_navigationagent2d.md#class_navigationagent2d_method_get_current_navigation_result) ( ) const[^const]                                                 |
+| [`Vector2`](class_vector2.md)                                         | [`get_final_position`](class_navigationagent2d.md#class_navigationagent2d_method_get_final_position) ( )                                                                                     |
+| [`bool`](class_bool.md)                                               | [`get_navigation_layer_value`](class_navigationagent2d.md#class_navigationagent2d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`RID`](class_rid.md)                                                 | [`get_navigation_map`](class_navigationagent2d.md#class_navigationagent2d_method_get_navigation_map) ( ) const[^const]                                                                       |
+| [`Vector2`](class_vector2.md)                                         | [`get_next_path_position`](class_navigationagent2d.md#class_navigationagent2d_method_get_next_path_position) ( )                                                                             |
+| [`RID`](class_rid.md)                                                 | [`get_rid`](class_navigationagent2d.md#class_navigationagent2d_method_get_rid) ( ) const[^const]                                                                                             |
+| [`bool`](class_bool.md)                                               | [`is_navigation_finished`](class_navigationagent2d.md#class_navigationagent2d_method_is_navigation_finished) ( )                                                                             |
+| [`bool`](class_bool.md)                                               | [`is_target_reachable`](class_navigationagent2d.md#class_navigationagent2d_method_is_target_reachable) ( )                                                                                   |
+| [`bool`](class_bool.md)                                               | [`is_target_reached`](class_navigationagent2d.md#class_navigationagent2d_method_is_target_reached) ( ) const[^const]                                                                         |
+| `void`                                                                | [`set_avoidance_layer_value`](class_navigationagent2d.md#class_navigationagent2d_method_set_avoidance_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )   |
+| `void`                                                                | [`set_avoidance_mask_value`](class_navigationagent2d.md#class_navigationagent2d_method_set_avoidance_mask_value) ( mask_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )      |
+| `void`                                                                | [`set_navigation_layer_value`](class_navigationagent2d.md#class_navigationagent2d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                                                                | [`set_navigation_map`](class_navigationagent2d.md#class_navigationagent2d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
+| `void`                                                                | [`set_velocity_forced`](class_navigationagent2d.md#class_navigationagent2d_method_set_velocity_forced) ( velocity: [`Vector2`](class_vector2.md) )                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -86,13 +86,13 @@ Dynamic obstacles are avoided using RVO collision avoidance. Avoidance is comput
 
 **link_reached** ( details: [`Dictionary`](class_dictionary.md) ) <div id="class_navigationagent2d_signal_link_reached"></div>
 
-Signals that the agent reached a navigation link. Emitted when the agent moves within [`path_desired_distance`](#class_navigationagent2d_property_path_desired_distance) of the next position of the path when that position is a navigation link.
+Signals that the agent reached a navigation link. Emitted when the agent moves within [`path_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_path_desired_distance) of the next position of the path when that position is a navigation link.
 
-The details dictionary may contain the following keys depending on the value of [`path_metadata_flags`](#class_navigationagent2d_property_path_metadata_flags):
+The details dictionary may contain the following keys depending on the value of [`path_metadata_flags`](class_navigationagent2d.md#class_navigationagent2d_property_path_metadata_flags):
 
 - `position`: The start position of the link that was reached.
 
-- `type`: Always [`NavigationPathQueryResult2D.PATH_SEGMENT_TYPE_LINK`](#class_navigationpathqueryresult2d_constant_path_segment_type_link).
+- `type`: Always [`NavigationPathQueryResult2D.PATH_SEGMENT_TYPE_LINK`](class_navigationpathqueryresult2d.md#class_navigationpathqueryresult2d_constant_path_segment_type_link).
 
 - `rid`: The [`RID`](class_rid.md) of the link.
 
@@ -112,7 +112,7 @@ The details dictionary may contain the following keys depending on the value of 
 
 Signals that the agent's navigation has finished. If the target is reachable, navigation ends when the target is reached. If the target is unreachable, navigation ends when the last waypoint of the path is reached. This signal is emitted only once per loaded path.
 
-This signal will be emitted just after [`target_reached`](#class_navigationagent2d_signal_target_reached) when the target is reachable.
+This signal will be emitted just after [`target_reached`](class_navigationagent2d.md#class_navigationagent2d_signal_target_reached) when the target is reachable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -128,7 +128,7 @@ Emitted when the agent had to update the loaded path:
 
 - because navigation map has changed.
 
-- because agent pushed further away from the current path segment than the [`path_max_distance`](#class_navigationagent2d_property_path_max_distance).
+- because agent pushed further away from the current path segment than the [`path_max_distance`](class_navigationagent2d.md#class_navigationagent2d_property_path_max_distance).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -138,11 +138,11 @@ Emitted when the agent had to update the loaded path:
 
 **target_reached** ( ) <div id="class_navigationagent2d_signal_target_reached"></div>
 
-Signals that the agent reached the target, i.e. the agent moved within [`target_desired_distance`](#class_navigationagent2d_property_target_desired_distance) of the [`target_position`](#class_navigationagent2d_property_target_position). This signal is emitted only once per loaded path.
+Signals that the agent reached the target, i.e. the agent moved within [`target_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_target_desired_distance) of the [`target_position`](class_navigationagent2d.md#class_navigationagent2d_property_target_position). This signal is emitted only once per loaded path.
 
-This signal will be emitted just before [`navigation_finished`](#class_navigationagent2d_signal_navigation_finished) when the target is reachable.
+This signal will be emitted just before [`navigation_finished`](class_navigationagent2d.md#class_navigationagent2d_signal_navigation_finished) when the target is reachable.
 
-It may not always be possible to reach the target but it should always be possible to reach the final position. See [`get_final_position`](#class_navigationagent2d_method_get_final_position).
+It may not always be possible to reach the target but it should always be possible to reach the final position. See [`get_final_position`](class_navigationagent2d.md#class_navigationagent2d_method_get_final_position).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -152,7 +152,7 @@ It may not always be possible to reach the target but it should always be possib
 
 **velocity_computed** ( safe_velocity: [`Vector2`](class_vector2.md) ) <div id="class_navigationagent2d_signal_velocity_computed"></div>
 
-Notifies when the collision avoidance velocity is calculated. Emitted every update as long as [`avoidance_enabled`](#class_navigationagent2d_property_avoidance_enabled) is `true` and the agent has a navigation map.
+Notifies when the collision avoidance velocity is calculated. Emitted every update as long as [`avoidance_enabled`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_enabled) is `true` and the agent has a navigation map.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -162,9 +162,9 @@ Notifies when the collision avoidance velocity is calculated. Emitted every upda
 
 **waypoint_reached** ( details: [`Dictionary`](class_dictionary.md) ) <div id="class_navigationagent2d_signal_waypoint_reached"></div>
 
-Signals that the agent reached a waypoint. Emitted when the agent moves within [`path_desired_distance`](#class_navigationagent2d_property_path_desired_distance) of the next position of the path.
+Signals that the agent reached a waypoint. Emitted when the agent moves within [`path_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_path_desired_distance) of the next position of the path.
 
-The details dictionary may contain the following keys depending on the value of [`path_metadata_flags`](#class_navigationagent2d_property_path_metadata_flags):
+The details dictionary may contain the following keys depending on the value of [`path_metadata_flags`](class_navigationagent2d.md#class_navigationagent2d_property_path_metadata_flags):
 
 - `position`: The position of the waypoint that was reached.
 
@@ -187,7 +187,7 @@ The details dictionary may contain the following keys depending on the value of 
 - `void` **set_avoidance_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_avoidance_enabled** ( )
 
-If `true` the agent is registered for an RVO avoidance callback on the [`NavigationServer2D`](class_navigationserver2d.md). When [`velocity`](#class_navigationagent2d_property_velocity) is used and the processing is completed a `safe_velocity` Vector2 is received with a signal connection to [`velocity_computed`](#class_navigationagent2d_signal_velocity_computed). Avoidance processing with many registered agents has a significant performance cost and should only be enabled on agents that currently require it.
+If `true` the agent is registered for an RVO avoidance callback on the [`NavigationServer2D`](class_navigationserver2d.md). When [`velocity`](class_navigationagent2d.md#class_navigationagent2d_property_velocity) is used and the processing is completed a `safe_velocity` Vector2 is received with a signal connection to [`velocity_computed`](class_navigationagent2d.md#class_navigationagent2d_signal_velocity_computed). Avoidance processing with many registered agents has a significant performance cost and should only be enabled on agents that currently require it.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -200,7 +200,7 @@ If `true` the agent is registered for an RVO avoidance callback on the [`Navigat
 - `void` **set_avoidance_layers** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_avoidance_layers** ( )
 
-A bitfield determining the avoidance layers for this NavigationAgent. Other agents with a matching bit on the [`avoidance_mask`](#class_navigationagent2d_property_avoidance_mask) will avoid this agent.
+A bitfield determining the avoidance layers for this NavigationAgent. Other agents with a matching bit on the [`avoidance_mask`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_mask) will avoid this agent.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -213,7 +213,7 @@ A bitfield determining the avoidance layers for this NavigationAgent. Other agen
 - `void` **set_avoidance_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_avoidance_mask** ( )
 
-A bitfield determining what other avoidance agents and obstacles this NavigationAgent will avoid when a bit matches at least one of their [`avoidance_layers`](#class_navigationagent2d_property_avoidance_layers).
+A bitfield determining what other avoidance agents and obstacles this NavigationAgent will avoid when a bit matches at least one of their [`avoidance_layers`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_layers).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -226,7 +226,7 @@ A bitfield determining what other avoidance agents and obstacles this Navigation
 - `void` **set_avoidance_priority** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_avoidance_priority** ( )
 
-The agent does not adjust the velocity for other agents that would match the [`avoidance_mask`](#class_navigationagent2d_property_avoidance_mask) but have a lower [`avoidance_priority`](#class_navigationagent2d_property_avoidance_priority). This in turn makes the other agents with lower priority adjust their velocities even more to avoid collision with this agent.
+The agent does not adjust the velocity for other agents that would match the [`avoidance_mask`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_mask) but have a lower [`avoidance_priority`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_priority). This in turn makes the other agents with lower priority adjust their velocities even more to avoid collision with this agent.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -252,7 +252,7 @@ If `true` shows debug visuals for this agent.
 - `void` **set_debug_path_custom_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_debug_path_custom_color** ( )
 
-If [`debug_use_custom`](#class_navigationagent2d_property_debug_use_custom) is `true` uses this color for this agent instead of global color.
+If [`debug_use_custom`](class_navigationagent2d.md#class_navigationagent2d_property_debug_use_custom) is `true` uses this color for this agent instead of global color.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -265,7 +265,7 @@ If [`debug_use_custom`](#class_navigationagent2d_property_debug_use_custom) is `
 - `void` **set_debug_path_custom_line_width** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_debug_path_custom_line_width** ( )
 
-If [`debug_use_custom`](#class_navigationagent2d_property_debug_use_custom) is `true` uses this line width for rendering paths for this agent instead of global line width.
+If [`debug_use_custom`](class_navigationagent2d.md#class_navigationagent2d_property_debug_use_custom) is `true` uses this line width for rendering paths for this agent instead of global line width.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -278,7 +278,7 @@ If [`debug_use_custom`](#class_navigationagent2d_property_debug_use_custom) is `
 - `void` **set_debug_path_custom_point_size** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_debug_path_custom_point_size** ( )
 
-If [`debug_use_custom`](#class_navigationagent2d_property_debug_use_custom) is `true` uses this rasterized point size for rendering path points for this agent instead of global point size.
+If [`debug_use_custom`](class_navigationagent2d.md#class_navigationagent2d_property_debug_use_custom) is `true` uses this rasterized point size for rendering path points for this agent instead of global point size.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -291,7 +291,7 @@ If [`debug_use_custom`](#class_navigationagent2d_property_debug_use_custom) is `
 - `void` **set_debug_use_custom** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_debug_use_custom** ( )
 
-If `true` uses the defined [`debug_path_custom_color`](#class_navigationagent2d_property_debug_path_custom_color) for this agent instead of global color.
+If `true` uses the defined [`debug_path_custom_color`](class_navigationagent2d.md#class_navigationagent2d_property_debug_path_custom_color) for this agent instead of global color.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -395,7 +395,7 @@ Additional information to return with the navigation path.
 - `void` **set_path_postprocessing** ( value: [PathPostProcessing](#enum_navigationpathqueryparameters2d_pathpostprocessing) )
 - [PathPostProcessing](#enum_navigationpathqueryparameters2d_pathpostprocessing) **get_path_postprocessing** ( )
 
-The path postprocessing applied to the raw path corridor found by the [`pathfinding_algorithm`](#class_navigationagent2d_property_pathfinding_algorithm).
+The path postprocessing applied to the raw path corridor found by the [`pathfinding_algorithm`](class_navigationagent2d.md#class_navigationagent2d_property_pathfinding_algorithm).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -421,9 +421,9 @@ The pathfinding algorithm used in the path query.
 - `void` **set_radius** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_radius** ( )
 
-The radius of the avoidance agent. This is the "body" of the avoidance agent and not the avoidance maneuver starting radius (which is controlled by [`neighbor_distance`](#class_navigationagent2d_property_neighbor_distance)).
+The radius of the avoidance agent. This is the "body" of the avoidance agent and not the avoidance maneuver starting radius (which is controlled by [`neighbor_distance`](class_navigationagent2d.md#class_navigationagent2d_property_neighbor_distance)).
 
-Does not affect normal pathfinding. To change an actor's pathfinding radius bake [`NavigationMesh`](class_navigationmesh.md) resources with a different [`NavigationMesh.agent_radius`](#class_navigationmesh_property_agent_radius) property and use different navigation maps for each actor size.
+Does not affect normal pathfinding. To change an actor's pathfinding radius bake [`NavigationMesh`](class_navigationmesh.md) resources with a different [`NavigationMesh.agent_radius`](class_navigationmesh.md#class_navigationmesh_property_agent_radius) property and use different navigation maps for each actor size.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -449,7 +449,7 @@ The path simplification amount in worlds units.
 - `void` **set_simplify_path** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_simplify_path** ( )
 
-If `true` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by [`simplify_epsilon`](#class_navigationagent2d_property_simplify_epsilon). The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
+If `true` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by [`simplify_epsilon`](class_navigationagent2d.md#class_navigationagent2d_property_simplify_epsilon). The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
 
 Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
 
@@ -464,11 +464,11 @@ Path simplification can be helpful to mitigate various path following issues tha
 - `void` **set_target_desired_distance** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_target_desired_distance** ( )
 
-The distance threshold before the target is considered to be reached. On reaching the target, [`target_reached`](#class_navigationagent2d_signal_target_reached) is emitted and navigation ends (see [`is_navigation_finished`](#class_navigationagent2d_method_is_navigation_finished) and [`navigation_finished`](#class_navigationagent2d_signal_navigation_finished)).
+The distance threshold before the target is considered to be reached. On reaching the target, [`target_reached`](class_navigationagent2d.md#class_navigationagent2d_signal_target_reached) is emitted and navigation ends (see [`is_navigation_finished`](class_navigationagent2d.md#class_navigationagent2d_method_is_navigation_finished) and [`navigation_finished`](class_navigationagent2d.md#class_navigationagent2d_signal_navigation_finished)).
 
-You can make navigation end early by setting this property to a value greater than [`path_desired_distance`](#class_navigationagent2d_property_path_desired_distance) (navigation will end before reaching the last waypoint).
+You can make navigation end early by setting this property to a value greater than [`path_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_path_desired_distance) (navigation will end before reaching the last waypoint).
 
-You can also make navigation end closer to the target than each individual path position by setting this property to a value lower than [`path_desired_distance`](#class_navigationagent2d_property_path_desired_distance) (navigation won't immediately end when reaching the last waypoint). However, if the value set is too low, the agent will be stuck in a repath loop because it will constantly overshoot the distance to the target on each physics frame update.
+You can also make navigation end closer to the target than each individual path position by setting this property to a value lower than [`path_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_path_desired_distance) (navigation won't immediately end when reaching the last waypoint). However, if the value set is too low, the agent will be stuck in a repath loop because it will constantly overshoot the distance to the target on each physics frame update.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -481,7 +481,7 @@ You can also make navigation end closer to the target than each individual path 
 - `void` **set_target_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_target_position** ( )
 
-If set, a new navigation path from the current agent position to the [`target_position`](#class_navigationagent2d_property_target_position) is requested from the NavigationServer.
+If set, a new navigation path from the current agent position to the [`target_position`](class_navigationagent2d.md#class_navigationagent2d_property_target_position) is requested from the NavigationServer.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -520,7 +520,7 @@ The minimal amount of time for which this agent's velocities, that are computed 
 - `void` **set_velocity** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_velocity** ( )
 
-Sets the new wanted velocity for the agent. The avoidance simulation will try to fulfill this velocity if possible but will modify it to avoid collision with other agents and obstacles. When an agent is teleported to a new position, use [`set_velocity_forced`](#class_navigationagent2d_method_set_velocity_forced) as well to reset the internal simulation velocity.
+Sets the new wanted velocity for the agent. The avoidance simulation will try to fulfill this velocity if possible but will modify it to avoid collision with other agents and obstacles. When an agent is teleported to a new position, use [`set_velocity_forced`](class_navigationagent2d.md#class_navigationagent2d_method_set_velocity_forced) as well to reset the internal simulation velocity.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -532,7 +532,7 @@ Sets the new wanted velocity for the agent. The avoidance simulation will try to
 
 [`float`](class_float.md) **distance_to_target** ( ) const[^const]<div id="class_navigationagent2d_method_distance_to_target"></div>
 
-Returns the distance to the target position, using the agent's global position. The user must set [`target_position`](#class_navigationagent2d_property_target_position) in order for this to be accurate.
+Returns the distance to the target position, using the agent's global position. The user must set [`target_position`](class_navigationagent2d.md#class_navigationagent2d_property_target_position) in order for this to be accurate.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -542,7 +542,7 @@ Returns the distance to the target position, using the agent's global position. 
 
 [`bool`](class_bool.md) **get_avoidance_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_navigationagent2d_method_get_avoidance_layer_value"></div>
 
-Returns whether or not the specified layer of the [`avoidance_layers`](#class_navigationagent2d_property_avoidance_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`avoidance_layers`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -552,7 +552,7 @@ Returns whether or not the specified layer of the [`avoidance_layers`](#class_na
 
 [`bool`](class_bool.md) **get_avoidance_mask_value** ( mask_number: [`int`](class_int.md) ) const[^const]<div id="class_navigationagent2d_method_get_avoidance_mask_value"></div>
 
-Returns whether or not the specified mask of the [`avoidance_mask`](#class_navigationagent2d_property_avoidance_mask) bitmask is enabled, given a `mask_number` between 1 and 32.
+Returns whether or not the specified mask of the [`avoidance_mask`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_mask) bitmask is enabled, given a `mask_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -562,7 +562,7 @@ Returns whether or not the specified mask of the [`avoidance_mask`](#class_navig
 
 [`PackedVector2Array`](class_packedvector2array.md) **get_current_navigation_path** ( ) const[^const]<div id="class_navigationagent2d_method_get_current_navigation_path"></div>
 
-Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended [`get_next_path_position`](#class_navigationagent2d_method_get_next_path_position) once every physics frame to receive the next path point for the agents movement as this function also updates the internal path logic.
+Returns this agent's current path from start to finish in global coordinates. The path only updates when the target position is changed or the agent requires a repath. The path array is not intended to be used in direct path movement as the agent has its own internal path logic that would get corrupted by changing the path array manually. Use the intended [`get_next_path_position`](class_navigationagent2d.md#class_navigationagent2d_method_get_next_path_position) once every physics frame to receive the next path point for the agents movement as this function also updates the internal path logic.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -592,7 +592,7 @@ Returns the path query result for the path the agent is currently following.
 
 [`Vector2`](class_vector2.md) **get_final_position** ( )<div id="class_navigationagent2d_method_get_final_position"></div>
 
-Returns the reachable final position of the current navigation path in global coordinates. This position can change if the agent needs to update the navigation path which makes the agent emit the [`path_changed`](#class_navigationagent2d_signal_path_changed) signal.
+Returns the reachable final position of the current navigation path in global coordinates. This position can change if the agent needs to update the navigation path which makes the agent emit the [`path_changed`](class_navigationagent2d.md#class_navigationagent2d_signal_path_changed) signal.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -602,7 +602,7 @@ Returns the reachable final position of the current navigation path in global co
 
 [`bool`](class_bool.md) **get_navigation_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_navigationagent2d_method_get_navigation_layer_value"></div>
 
-Returns whether or not the specified layer of the [`navigation_layers`](#class_navigationagent2d_property_navigation_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`navigation_layers`](class_navigationagent2d.md#class_navigationagent2d_property_navigation_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -612,7 +612,7 @@ Returns whether or not the specified layer of the [`navigation_layers`](#class_n
 
 [`RID`](class_rid.md) **get_navigation_map** ( ) const[^const]<div id="class_navigationagent2d_method_get_navigation_map"></div>
 
-Returns the [`RID`](class_rid.md) of the navigation map for this NavigationAgent node. This function returns always the map set on the NavigationAgent node and not the map of the abstract agent on the NavigationServer. If the agent map is changed directly with the NavigationServer API the NavigationAgent node will not be aware of the map change. Use [`set_navigation_map`](#class_navigationagent2d_method_set_navigation_map) to change the navigation map for the NavigationAgent and also update the agent on the NavigationServer.
+Returns the [`RID`](class_rid.md) of the navigation map for this NavigationAgent node. This function returns always the map set on the NavigationAgent node and not the map of the abstract agent on the NavigationServer. If the agent map is changed directly with the NavigationServer API the NavigationAgent node will not be aware of the map change. Use [`set_navigation_map`](class_navigationagent2d.md#class_navigationagent2d_method_set_navigation_map) to change the navigation map for the NavigationAgent and also update the agent on the NavigationServer.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -644,7 +644,7 @@ Returns the [`RID`](class_rid.md) of this agent on the [`NavigationServer2D`](cl
 
 Returns `true` if the agent's navigation has finished. If the target is reachable, navigation ends when the target is reached. If the target is unreachable, navigation ends when the last waypoint of the path is reached.
 
- **Note:** While `true` prefer to stop calling update functions like [`get_next_path_position`](#class_navigationagent2d_method_get_next_path_position). This avoids jittering the standing agent due to calling repeated path updates.
+ **Note:** While `true` prefer to stop calling update functions like [`get_next_path_position`](class_navigationagent2d.md#class_navigationagent2d_method_get_next_path_position). This avoids jittering the standing agent due to calling repeated path updates.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -654,7 +654,7 @@ Returns `true` if the agent's navigation has finished. If the target is reachabl
 
 [`bool`](class_bool.md) **is_target_reachable** ( )<div id="class_navigationagent2d_method_is_target_reachable"></div>
 
-Returns `true` if [`get_final_position`](#class_navigationagent2d_method_get_final_position) is within [`target_desired_distance`](#class_navigationagent2d_property_target_desired_distance) of the [`target_position`](#class_navigationagent2d_property_target_position).
+Returns `true` if [`get_final_position`](class_navigationagent2d.md#class_navigationagent2d_method_get_final_position) is within [`target_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_target_desired_distance) of the [`target_position`](class_navigationagent2d.md#class_navigationagent2d_property_target_position).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -664,7 +664,7 @@ Returns `true` if [`get_final_position`](#class_navigationagent2d_method_get_fin
 
 [`bool`](class_bool.md) **is_target_reached** ( ) const[^const]<div id="class_navigationagent2d_method_is_target_reached"></div>
 
-Returns `true` if the agent reached the target, i.e. the agent moved within [`target_desired_distance`](#class_navigationagent2d_property_target_desired_distance) of the [`target_position`](#class_navigationagent2d_property_target_position). It may not always be possible to reach the target but it should always be possible to reach the final position. See [`get_final_position`](#class_navigationagent2d_method_get_final_position).
+Returns `true` if the agent reached the target, i.e. the agent moved within [`target_desired_distance`](class_navigationagent2d.md#class_navigationagent2d_property_target_desired_distance) of the [`target_position`](class_navigationagent2d.md#class_navigationagent2d_property_target_position). It may not always be possible to reach the target but it should always be possible to reach the final position. See [`get_final_position`](class_navigationagent2d.md#class_navigationagent2d_method_get_final_position).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -674,7 +674,7 @@ Returns `true` if the agent reached the target, i.e. the agent moved within [`ta
 
 `void` **set_avoidance_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_navigationagent2d_method_set_avoidance_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`avoidance_layers`](#class_navigationagent2d_property_avoidance_layers) bitmask, given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`avoidance_layers`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_layers) bitmask, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -684,7 +684,7 @@ Based on `value`, enables or disables the specified layer in the [`avoidance_lay
 
 `void` **set_avoidance_mask_value** ( mask_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_navigationagent2d_method_set_avoidance_mask_value"></div>
 
-Based on `value`, enables or disables the specified mask in the [`avoidance_mask`](#class_navigationagent2d_property_avoidance_mask) bitmask, given a `mask_number` between 1 and 32.
+Based on `value`, enables or disables the specified mask in the [`avoidance_mask`](class_navigationagent2d.md#class_navigationagent2d_property_avoidance_mask) bitmask, given a `mask_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -694,7 +694,7 @@ Based on `value`, enables or disables the specified mask in the [`avoidance_mask
 
 `void` **set_navigation_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_navigationagent2d_method_set_navigation_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`navigation_layers`](#class_navigationagent2d_property_navigation_layers) bitmask, given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`navigation_layers`](class_navigationagent2d.md#class_navigationagent2d_property_navigation_layers) bitmask, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 

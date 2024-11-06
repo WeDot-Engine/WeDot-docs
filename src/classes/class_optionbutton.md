@@ -19,59 +19,59 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
  **Note:** The ID values used for items are limited to 32 bits, not full 64 bits of [`int`](class_int.md). This has a range of `-2^32` to `2^32 - 1`, i.e. `-2147483648` to `2147483647`.
 
- **Note:** The [`Button.text`](#class_button_property_text) and [`Button.icon`](#class_button_property_icon) properties are set automatically based on the selected item. They shouldn't be changed manually.
+ **Note:** The [`Button.text`](class_button.md#class_button_property_text) and [`Button.icon`](class_button.md#class_button_property_icon) properties are set automatically based on the selected item. They shouldn't be changed manually.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [ActionMode](#enum_basebutton_actionmode)                     | action_mode                                                               | ``0`` (overrides [`BaseButton`](#class_basebutton_property_action_mode))    |
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | alignment                                                                 | ``0`` (overrides [`Button`](#class_button_property_alignment))              |
-| [`bool`](class_bool.md)                                       | [`allow_reselect`](#class_optionbutton_property_allow_reselect)           | ``false``                                                                   |
-| [`bool`](class_bool.md)                                       | [`fit_to_longest_item`](#class_optionbutton_property_fit_to_longest_item) | ``true``                                                                    |
-| [`int`](class_int.md)                                         | [`item_count`](#class_optionbutton_property_item_count)                   | ``0``                                                                       |
-| [`int`](class_int.md)                                         | [`selected`](#class_optionbutton_property_selected)                       | ``-1``                                                                      |
-| [`bool`](class_bool.md)                                       | toggle_mode                                                               | ``true`` (overrides [`BaseButton`](#class_basebutton_property_toggle_mode)) |
+| [ActionMode](#enum_basebutton_actionmode)                     | action_mode                                                                                    | ``0`` (overrides [`BaseButton`](class_basebutton.md#class_basebutton_property_action_mode))    |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | alignment                                                                                      | ``0`` (overrides [`Button`](class_button.md#class_button_property_alignment))                  |
+| [`bool`](class_bool.md)                                       | [`allow_reselect`](class_optionbutton.md#class_optionbutton_property_allow_reselect)           | ``false``                                                                                      |
+| [`bool`](class_bool.md)                                       | [`fit_to_longest_item`](class_optionbutton.md#class_optionbutton_property_fit_to_longest_item) | ``true``                                                                                       |
+| [`int`](class_int.md)                                         | [`item_count`](class_optionbutton.md#class_optionbutton_property_item_count)                   | ``0``                                                                                          |
+| [`int`](class_int.md)                                         | [`selected`](class_optionbutton.md#class_optionbutton_property_selected)                       | ``-1``                                                                                         |
+| [`bool`](class_bool.md)                                       | toggle_mode                                                                                    | ``true`` (overrides [`BaseButton`](class_basebutton.md#class_basebutton_property_toggle_mode)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                            | [`add_icon_item`](#class_optionbutton_method_add_icon_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1 ) |
-| `void`                            | [`add_item`](#class_optionbutton_method_add_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1 )                                                       |
-| `void`                            | [`add_separator`](#class_optionbutton_method_add_separator) ( text: [`String`](class_string.md) = "" )                                                                         |
-| `void`                            | [`clear`](#class_optionbutton_method_clear) ( )                                                                                                                                |
-| [`Texture2D`](class_texture2d.md) | [`get_item_icon`](#class_optionbutton_method_get_item_icon) ( idx: [`int`](class_int.md) ) const[^const]                                                                       |
-| [`int`](class_int.md)             | [`get_item_id`](#class_optionbutton_method_get_item_id) ( idx: [`int`](class_int.md) ) const[^const]                                                                           |
-| [`int`](class_int.md)             | [`get_item_index`](#class_optionbutton_method_get_item_index) ( id: [`int`](class_int.md) ) const[^const]                                                                      |
-| [`Variant`](class_variant.md)     | [`get_item_metadata`](#class_optionbutton_method_get_item_metadata) ( idx: [`int`](class_int.md) ) const[^const]                                                               |
-| [`String`](class_string.md)       | [`get_item_text`](#class_optionbutton_method_get_item_text) ( idx: [`int`](class_int.md) ) const[^const]                                                                       |
-| [`String`](class_string.md)       | [`get_item_tooltip`](#class_optionbutton_method_get_item_tooltip) ( idx: [`int`](class_int.md) ) const[^const]                                                                 |
-| [`PopupMenu`](class_popupmenu.md) | [`get_popup`](#class_optionbutton_method_get_popup) ( ) const[^const]                                                                                                          |
-| [`int`](class_int.md)             | [`get_selectable_item`](#class_optionbutton_method_get_selectable_item) ( from_last: [`bool`](class_bool.md) = false ) const[^const]                                           |
-| [`int`](class_int.md)             | [`get_selected_id`](#class_optionbutton_method_get_selected_id) ( ) const[^const]                                                                                              |
-| [`Variant`](class_variant.md)     | [`get_selected_metadata`](#class_optionbutton_method_get_selected_metadata) ( ) const[^const]                                                                                  |
-| [`bool`](class_bool.md)           | [`has_selectable_items`](#class_optionbutton_method_has_selectable_items) ( ) const[^const]                                                                                    |
-| [`bool`](class_bool.md)           | [`is_item_disabled`](#class_optionbutton_method_is_item_disabled) ( idx: [`int`](class_int.md) ) const[^const]                                                                 |
-| [`bool`](class_bool.md)           | [`is_item_separator`](#class_optionbutton_method_is_item_separator) ( idx: [`int`](class_int.md) ) const[^const]                                                               |
-| `void`                            | [`remove_item`](#class_optionbutton_method_remove_item) ( idx: [`int`](class_int.md) )                                                                                         |
-| `void`                            | [`select`](#class_optionbutton_method_select) ( idx: [`int`](class_int.md) )                                                                                                   |
-| `void`                            | [`set_disable_shortcuts`](#class_optionbutton_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) )                                                              |
-| `void`                            | [`set_item_disabled`](#class_optionbutton_method_set_item_disabled) ( idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                          |
-| `void`                            | [`set_item_icon`](#class_optionbutton_method_set_item_icon) ( idx: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )                                         |
-| `void`                            | [`set_item_id`](#class_optionbutton_method_set_item_id) ( idx: [`int`](class_int.md), id: [`int`](class_int.md) )                                                              |
-| `void`                            | [`set_item_metadata`](#class_optionbutton_method_set_item_metadata) ( idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                                    |
-| `void`                            | [`set_item_text`](#class_optionbutton_method_set_item_text) ( idx: [`int`](class_int.md), text: [`String`](class_string.md) )                                                  |
-| `void`                            | [`set_item_tooltip`](#class_optionbutton_method_set_item_tooltip) ( idx: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                         |
-| `void`                            | [`show_popup`](#class_optionbutton_method_show_popup) ( )                                                                                                                      |
+| `void`                            | [`add_icon_item`](class_optionbutton.md#class_optionbutton_method_add_icon_item) ( texture: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), id: [`int`](class_int.md) = -1 ) |
+| `void`                            | [`add_item`](class_optionbutton.md#class_optionbutton_method_add_item) ( label: [`String`](class_string.md), id: [`int`](class_int.md) = -1 )                                                       |
+| `void`                            | [`add_separator`](class_optionbutton.md#class_optionbutton_method_add_separator) ( text: [`String`](class_string.md) = "" )                                                                         |
+| `void`                            | [`clear`](class_optionbutton.md#class_optionbutton_method_clear) ( )                                                                                                                                |
+| [`Texture2D`](class_texture2d.md) | [`get_item_icon`](class_optionbutton.md#class_optionbutton_method_get_item_icon) ( idx: [`int`](class_int.md) ) const[^const]                                                                       |
+| [`int`](class_int.md)             | [`get_item_id`](class_optionbutton.md#class_optionbutton_method_get_item_id) ( idx: [`int`](class_int.md) ) const[^const]                                                                           |
+| [`int`](class_int.md)             | [`get_item_index`](class_optionbutton.md#class_optionbutton_method_get_item_index) ( id: [`int`](class_int.md) ) const[^const]                                                                      |
+| [`Variant`](class_variant.md)     | [`get_item_metadata`](class_optionbutton.md#class_optionbutton_method_get_item_metadata) ( idx: [`int`](class_int.md) ) const[^const]                                                               |
+| [`String`](class_string.md)       | [`get_item_text`](class_optionbutton.md#class_optionbutton_method_get_item_text) ( idx: [`int`](class_int.md) ) const[^const]                                                                       |
+| [`String`](class_string.md)       | [`get_item_tooltip`](class_optionbutton.md#class_optionbutton_method_get_item_tooltip) ( idx: [`int`](class_int.md) ) const[^const]                                                                 |
+| [`PopupMenu`](class_popupmenu.md) | [`get_popup`](class_optionbutton.md#class_optionbutton_method_get_popup) ( ) const[^const]                                                                                                          |
+| [`int`](class_int.md)             | [`get_selectable_item`](class_optionbutton.md#class_optionbutton_method_get_selectable_item) ( from_last: [`bool`](class_bool.md) = false ) const[^const]                                           |
+| [`int`](class_int.md)             | [`get_selected_id`](class_optionbutton.md#class_optionbutton_method_get_selected_id) ( ) const[^const]                                                                                              |
+| [`Variant`](class_variant.md)     | [`get_selected_metadata`](class_optionbutton.md#class_optionbutton_method_get_selected_metadata) ( ) const[^const]                                                                                  |
+| [`bool`](class_bool.md)           | [`has_selectable_items`](class_optionbutton.md#class_optionbutton_method_has_selectable_items) ( ) const[^const]                                                                                    |
+| [`bool`](class_bool.md)           | [`is_item_disabled`](class_optionbutton.md#class_optionbutton_method_is_item_disabled) ( idx: [`int`](class_int.md) ) const[^const]                                                                 |
+| [`bool`](class_bool.md)           | [`is_item_separator`](class_optionbutton.md#class_optionbutton_method_is_item_separator) ( idx: [`int`](class_int.md) ) const[^const]                                                               |
+| `void`                            | [`remove_item`](class_optionbutton.md#class_optionbutton_method_remove_item) ( idx: [`int`](class_int.md) )                                                                                         |
+| `void`                            | [`select`](class_optionbutton.md#class_optionbutton_method_select) ( idx: [`int`](class_int.md) )                                                                                                   |
+| `void`                            | [`set_disable_shortcuts`](class_optionbutton.md#class_optionbutton_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) )                                                              |
+| `void`                            | [`set_item_disabled`](class_optionbutton.md#class_optionbutton_method_set_item_disabled) ( idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                          |
+| `void`                            | [`set_item_icon`](class_optionbutton.md#class_optionbutton_method_set_item_icon) ( idx: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )                                         |
+| `void`                            | [`set_item_id`](class_optionbutton.md#class_optionbutton_method_set_item_id) ( idx: [`int`](class_int.md), id: [`int`](class_int.md) )                                                              |
+| `void`                            | [`set_item_metadata`](class_optionbutton.md#class_optionbutton_method_set_item_metadata) ( idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                                    |
+| `void`                            | [`set_item_text`](class_optionbutton.md#class_optionbutton_method_set_item_text) ( idx: [`int`](class_int.md), text: [`String`](class_string.md) )                                                  |
+| `void`                            | [`set_item_tooltip`](class_optionbutton.md#class_optionbutton_method_set_item_tooltip) ( idx: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                         |
+| `void`                            | [`show_popup`](class_optionbutton.md#class_optionbutton_method_show_popup) ( )                                                                                                                      |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`arrow_margin`](#class_optionbutton_theme_constant_arrow_margin)     | ``4`` |
-| [`int`](class_int.md)             | [`modulate_arrow`](#class_optionbutton_theme_constant_modulate_arrow) | ``0`` |
-| [`Texture2D`](class_texture2d.md) | [`arrow`](#class_optionbutton_theme_icon_arrow)                       |       |
+| [`int`](class_int.md)             | [`arrow_margin`](class_optionbutton.md#class_optionbutton_theme_constant_arrow_margin)     | ``4`` |
+| [`int`](class_int.md)             | [`modulate_arrow`](class_optionbutton.md#class_optionbutton_theme_constant_modulate_arrow) | ``0`` |
+| [`Texture2D`](class_texture2d.md) | [`arrow`](class_optionbutton.md#class_optionbutton_theme_icon_arrow)                       |       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -83,7 +83,7 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 **item_focused** ( index: [`int`](class_int.md) ) <div id="class_optionbutton_signal_item_focused"></div>
 
-Emitted when the user navigates to an item using the [`ProjectSettings.input/ui_up`](#class_projectsettings_property_input/ui_up) or [`ProjectSettings.input/ui_down`](#class_projectsettings_property_input/ui_down) input actions. The index of the item selected is passed as argument.
+Emitted when the user navigates to an item using the [`ProjectSettings.input/ui_up`](class_projectsettings.md#class_projectsettings_property_input/ui_up) or [`ProjectSettings.input/ui_down`](class_projectsettings.md#class_projectsettings_property_input/ui_down) input actions. The index of the item selected is passed as argument.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -95,7 +95,7 @@ Emitted when the user navigates to an item using the [`ProjectSettings.input/ui_
 
 Emitted when the current item has been changed by the user. The index of the item selected is passed as argument.
 
- [`allow_reselect`](#class_optionbutton_property_allow_reselect) must be enabled to reselect an item.
+ [`allow_reselect`](class_optionbutton.md#class_optionbutton_property_allow_reselect) must be enabled to reselect an item.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -264,7 +264,7 @@ Returns the tooltip of the item at index `idx`.
 
 Returns the [`PopupMenu`](class_popupmenu.md) contained in this button.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](#class_window_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`Window.visible`](class_window.md#class_window_property_visible) property.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -296,7 +296,7 @@ Returns the ID of the selected item, or `-1` if no item is selected.
 
 [`Variant`](class_variant.md) **get_selected_metadata** ( ) const[^const]<div id="class_optionbutton_method_get_selected_metadata"></div>
 
-Gets the metadata of the selected item. Metadata for items can be set using [`set_item_metadata`](#class_optionbutton_method_set_item_metadata).
+Gets the metadata of the selected item. Metadata for items can be set using [`set_item_metadata`](class_optionbutton.md#class_optionbutton_method_set_item_metadata).
 
 <!-- rst-class:: classref-item-separator -->
 

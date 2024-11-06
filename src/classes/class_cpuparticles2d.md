@@ -21,86 +21,86 @@ See also [`GPUParticles2D`](class_gpuparticles2d.md), which provides the same fu
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                               | [`amount`](#class_cpuparticles2d_property_amount)                                 | ``8``                 |
-| [`Curve`](class_curve.md)                           | [`angle_curve`](#class_cpuparticles2d_property_angle_curve)                       |                       |
-| [`float`](class_float.md)                           | [`angle_max`](#class_cpuparticles2d_property_angle_max)                           | ``0.0``               |
-| [`float`](class_float.md)                           | [`angle_min`](#class_cpuparticles2d_property_angle_min)                           | ``0.0``               |
-| [`Curve`](class_curve.md)                           | [`angular_velocity_curve`](#class_cpuparticles2d_property_angular_velocity_curve) |                       |
-| [`float`](class_float.md)                           | [`angular_velocity_max`](#class_cpuparticles2d_property_angular_velocity_max)     | ``0.0``               |
-| [`float`](class_float.md)                           | [`angular_velocity_min`](#class_cpuparticles2d_property_angular_velocity_min)     | ``0.0``               |
-| [`Curve`](class_curve.md)                           | [`anim_offset_curve`](#class_cpuparticles2d_property_anim_offset_curve)           |                       |
-| [`float`](class_float.md)                           | [`anim_offset_max`](#class_cpuparticles2d_property_anim_offset_max)               | ``0.0``               |
-| [`float`](class_float.md)                           | [`anim_offset_min`](#class_cpuparticles2d_property_anim_offset_min)               | ``0.0``               |
-| [`Curve`](class_curve.md)                           | [`anim_speed_curve`](#class_cpuparticles2d_property_anim_speed_curve)             |                       |
-| [`float`](class_float.md)                           | [`anim_speed_max`](#class_cpuparticles2d_property_anim_speed_max)                 | ``0.0``               |
-| [`float`](class_float.md)                           | [`anim_speed_min`](#class_cpuparticles2d_property_anim_speed_min)                 | ``0.0``               |
-| [`Color`](class_color.md)                           | [`color`](#class_cpuparticles2d_property_color)                                   | ``Color(1, 1, 1, 1)`` |
-| [`Gradient`](class_gradient.md)                     | [`color_initial_ramp`](#class_cpuparticles2d_property_color_initial_ramp)         |                       |
-| [`Gradient`](class_gradient.md)                     | [`color_ramp`](#class_cpuparticles2d_property_color_ramp)                         |                       |
-| [`Curve`](class_curve.md)                           | [`damping_curve`](#class_cpuparticles2d_property_damping_curve)                   |                       |
-| [`float`](class_float.md)                           | [`damping_max`](#class_cpuparticles2d_property_damping_max)                       | ``0.0``               |
-| [`float`](class_float.md)                           | [`damping_min`](#class_cpuparticles2d_property_damping_min)                       | ``0.0``               |
-| [`Vector2`](class_vector2.md)                       | [`direction`](#class_cpuparticles2d_property_direction)                           | ``Vector2(1, 0)``     |
-| [DrawOrder](#enum_cpuparticles2d_draworder)         | [`draw_order`](#class_cpuparticles2d_property_draw_order)                         | ``0``                 |
-| [`PackedColorArray`](class_packedcolorarray.md)     | [`emission_colors`](#class_cpuparticles2d_property_emission_colors)               |                       |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`emission_normals`](#class_cpuparticles2d_property_emission_normals)             |                       |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`emission_points`](#class_cpuparticles2d_property_emission_points)               |                       |
-| [`Vector2`](class_vector2.md)                       | [`emission_rect_extents`](#class_cpuparticles2d_property_emission_rect_extents)   |                       |
-| [EmissionShape](#enum_cpuparticles2d_emissionshape) | [`emission_shape`](#class_cpuparticles2d_property_emission_shape)                 | ``0``                 |
-| [`float`](class_float.md)                           | [`emission_sphere_radius`](#class_cpuparticles2d_property_emission_sphere_radius) |                       |
-| [`bool`](class_bool.md)                             | [`emitting`](#class_cpuparticles2d_property_emitting)                             | ``true``              |
-| [`float`](class_float.md)                           | [`explosiveness`](#class_cpuparticles2d_property_explosiveness)                   | ``0.0``               |
-| [`int`](class_int.md)                               | [`fixed_fps`](#class_cpuparticles2d_property_fixed_fps)                           | ``0``                 |
-| [`bool`](class_bool.md)                             | [`fract_delta`](#class_cpuparticles2d_property_fract_delta)                       | ``true``              |
-| [`Vector2`](class_vector2.md)                       | [`gravity`](#class_cpuparticles2d_property_gravity)                               | ``Vector2(0, 980)``   |
-| [`Curve`](class_curve.md)                           | [`hue_variation_curve`](#class_cpuparticles2d_property_hue_variation_curve)       |                       |
-| [`float`](class_float.md)                           | [`hue_variation_max`](#class_cpuparticles2d_property_hue_variation_max)           | ``0.0``               |
-| [`float`](class_float.md)                           | [`hue_variation_min`](#class_cpuparticles2d_property_hue_variation_min)           | ``0.0``               |
-| [`float`](class_float.md)                           | [`initial_velocity_max`](#class_cpuparticles2d_property_initial_velocity_max)     | ``0.0``               |
-| [`float`](class_float.md)                           | [`initial_velocity_min`](#class_cpuparticles2d_property_initial_velocity_min)     | ``0.0``               |
-| [`float`](class_float.md)                           | [`lifetime`](#class_cpuparticles2d_property_lifetime)                             | ``1.0``               |
-| [`float`](class_float.md)                           | [`lifetime_randomness`](#class_cpuparticles2d_property_lifetime_randomness)       | ``0.0``               |
-| [`Curve`](class_curve.md)                           | [`linear_accel_curve`](#class_cpuparticles2d_property_linear_accel_curve)         |                       |
-| [`float`](class_float.md)                           | [`linear_accel_max`](#class_cpuparticles2d_property_linear_accel_max)             | ``0.0``               |
-| [`float`](class_float.md)                           | [`linear_accel_min`](#class_cpuparticles2d_property_linear_accel_min)             | ``0.0``               |
-| [`bool`](class_bool.md)                             | [`local_coords`](#class_cpuparticles2d_property_local_coords)                     | ``false``             |
-| [`bool`](class_bool.md)                             | [`one_shot`](#class_cpuparticles2d_property_one_shot)                             | ``false``             |
-| [`Curve`](class_curve.md)                           | [`orbit_velocity_curve`](#class_cpuparticles2d_property_orbit_velocity_curve)     |                       |
-| [`float`](class_float.md)                           | [`orbit_velocity_max`](#class_cpuparticles2d_property_orbit_velocity_max)         | ``0.0``               |
-| [`float`](class_float.md)                           | [`orbit_velocity_min`](#class_cpuparticles2d_property_orbit_velocity_min)         | ``0.0``               |
-| [`bool`](class_bool.md)                             | [`particle_flag_align_y`](#class_cpuparticles2d_property_particle_flag_align_y)   | ``false``             |
-| [`float`](class_float.md)                           | [`preprocess`](#class_cpuparticles2d_property_preprocess)                         | ``0.0``               |
-| [`Curve`](class_curve.md)                           | [`radial_accel_curve`](#class_cpuparticles2d_property_radial_accel_curve)         |                       |
-| [`float`](class_float.md)                           | [`radial_accel_max`](#class_cpuparticles2d_property_radial_accel_max)             | ``0.0``               |
-| [`float`](class_float.md)                           | [`radial_accel_min`](#class_cpuparticles2d_property_radial_accel_min)             | ``0.0``               |
-| [`float`](class_float.md)                           | [`randomness`](#class_cpuparticles2d_property_randomness)                         | ``0.0``               |
-| [`Curve`](class_curve.md)                           | [`scale_amount_curve`](#class_cpuparticles2d_property_scale_amount_curve)         |                       |
-| [`float`](class_float.md)                           | [`scale_amount_max`](#class_cpuparticles2d_property_scale_amount_max)             | ``1.0``               |
-| [`float`](class_float.md)                           | [`scale_amount_min`](#class_cpuparticles2d_property_scale_amount_min)             | ``1.0``               |
-| [`Curve`](class_curve.md)                           | [`scale_curve_x`](#class_cpuparticles2d_property_scale_curve_x)                   |                       |
-| [`Curve`](class_curve.md)                           | [`scale_curve_y`](#class_cpuparticles2d_property_scale_curve_y)                   |                       |
-| [`float`](class_float.md)                           | [`speed_scale`](#class_cpuparticles2d_property_speed_scale)                       | ``1.0``               |
-| [`bool`](class_bool.md)                             | [`split_scale`](#class_cpuparticles2d_property_split_scale)                       | ``false``             |
-| [`float`](class_float.md)                           | [`spread`](#class_cpuparticles2d_property_spread)                                 | ``45.0``              |
-| [`Curve`](class_curve.md)                           | [`tangential_accel_curve`](#class_cpuparticles2d_property_tangential_accel_curve) |                       |
-| [`float`](class_float.md)                           | [`tangential_accel_max`](#class_cpuparticles2d_property_tangential_accel_max)     | ``0.0``               |
-| [`float`](class_float.md)                           | [`tangential_accel_min`](#class_cpuparticles2d_property_tangential_accel_min)     | ``0.0``               |
-| [`Texture2D`](class_texture2d.md)                   | [`texture`](#class_cpuparticles2d_property_texture)                               |                       |
+| [`int`](class_int.md)                               | [`amount`](class_cpuparticles2d.md#class_cpuparticles2d_property_amount)                                 | ``8``                 |
+| [`Curve`](class_curve.md)                           | [`angle_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_angle_curve)                       |                       |
+| [`float`](class_float.md)                           | [`angle_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_angle_max)                           | ``0.0``               |
+| [`float`](class_float.md)                           | [`angle_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_angle_min)                           | ``0.0``               |
+| [`Curve`](class_curve.md)                           | [`angular_velocity_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_angular_velocity_curve) |                       |
+| [`float`](class_float.md)                           | [`angular_velocity_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_angular_velocity_max)     | ``0.0``               |
+| [`float`](class_float.md)                           | [`angular_velocity_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_angular_velocity_min)     | ``0.0``               |
+| [`Curve`](class_curve.md)                           | [`anim_offset_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_offset_curve)           |                       |
+| [`float`](class_float.md)                           | [`anim_offset_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_offset_max)               | ``0.0``               |
+| [`float`](class_float.md)                           | [`anim_offset_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_offset_min)               | ``0.0``               |
+| [`Curve`](class_curve.md)                           | [`anim_speed_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_speed_curve)             |                       |
+| [`float`](class_float.md)                           | [`anim_speed_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_speed_max)                 | ``0.0``               |
+| [`float`](class_float.md)                           | [`anim_speed_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_speed_min)                 | ``0.0``               |
+| [`Color`](class_color.md)                           | [`color`](class_cpuparticles2d.md#class_cpuparticles2d_property_color)                                   | ``Color(1, 1, 1, 1)`` |
+| [`Gradient`](class_gradient.md)                     | [`color_initial_ramp`](class_cpuparticles2d.md#class_cpuparticles2d_property_color_initial_ramp)         |                       |
+| [`Gradient`](class_gradient.md)                     | [`color_ramp`](class_cpuparticles2d.md#class_cpuparticles2d_property_color_ramp)                         |                       |
+| [`Curve`](class_curve.md)                           | [`damping_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_damping_curve)                   |                       |
+| [`float`](class_float.md)                           | [`damping_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_damping_max)                       | ``0.0``               |
+| [`float`](class_float.md)                           | [`damping_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_damping_min)                       | ``0.0``               |
+| [`Vector2`](class_vector2.md)                       | [`direction`](class_cpuparticles2d.md#class_cpuparticles2d_property_direction)                           | ``Vector2(1, 0)``     |
+| [DrawOrder](#enum_cpuparticles2d_draworder)         | [`draw_order`](class_cpuparticles2d.md#class_cpuparticles2d_property_draw_order)                         | ``0``                 |
+| [`PackedColorArray`](class_packedcolorarray.md)     | [`emission_colors`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_colors)               |                       |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`emission_normals`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_normals)             |                       |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`emission_points`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_points)               |                       |
+| [`Vector2`](class_vector2.md)                       | [`emission_rect_extents`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_rect_extents)   |                       |
+| [EmissionShape](#enum_cpuparticles2d_emissionshape) | [`emission_shape`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_shape)                 | ``0``                 |
+| [`float`](class_float.md)                           | [`emission_sphere_radius`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_sphere_radius) |                       |
+| [`bool`](class_bool.md)                             | [`emitting`](class_cpuparticles2d.md#class_cpuparticles2d_property_emitting)                             | ``true``              |
+| [`float`](class_float.md)                           | [`explosiveness`](class_cpuparticles2d.md#class_cpuparticles2d_property_explosiveness)                   | ``0.0``               |
+| [`int`](class_int.md)                               | [`fixed_fps`](class_cpuparticles2d.md#class_cpuparticles2d_property_fixed_fps)                           | ``0``                 |
+| [`bool`](class_bool.md)                             | [`fract_delta`](class_cpuparticles2d.md#class_cpuparticles2d_property_fract_delta)                       | ``true``              |
+| [`Vector2`](class_vector2.md)                       | [`gravity`](class_cpuparticles2d.md#class_cpuparticles2d_property_gravity)                               | ``Vector2(0, 980)``   |
+| [`Curve`](class_curve.md)                           | [`hue_variation_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_hue_variation_curve)       |                       |
+| [`float`](class_float.md)                           | [`hue_variation_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_hue_variation_max)           | ``0.0``               |
+| [`float`](class_float.md)                           | [`hue_variation_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_hue_variation_min)           | ``0.0``               |
+| [`float`](class_float.md)                           | [`initial_velocity_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_initial_velocity_max)     | ``0.0``               |
+| [`float`](class_float.md)                           | [`initial_velocity_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_initial_velocity_min)     | ``0.0``               |
+| [`float`](class_float.md)                           | [`lifetime`](class_cpuparticles2d.md#class_cpuparticles2d_property_lifetime)                             | ``1.0``               |
+| [`float`](class_float.md)                           | [`lifetime_randomness`](class_cpuparticles2d.md#class_cpuparticles2d_property_lifetime_randomness)       | ``0.0``               |
+| [`Curve`](class_curve.md)                           | [`linear_accel_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_linear_accel_curve)         |                       |
+| [`float`](class_float.md)                           | [`linear_accel_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_linear_accel_max)             | ``0.0``               |
+| [`float`](class_float.md)                           | [`linear_accel_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_linear_accel_min)             | ``0.0``               |
+| [`bool`](class_bool.md)                             | [`local_coords`](class_cpuparticles2d.md#class_cpuparticles2d_property_local_coords)                     | ``false``             |
+| [`bool`](class_bool.md)                             | [`one_shot`](class_cpuparticles2d.md#class_cpuparticles2d_property_one_shot)                             | ``false``             |
+| [`Curve`](class_curve.md)                           | [`orbit_velocity_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_orbit_velocity_curve)     |                       |
+| [`float`](class_float.md)                           | [`orbit_velocity_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_orbit_velocity_max)         | ``0.0``               |
+| [`float`](class_float.md)                           | [`orbit_velocity_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_orbit_velocity_min)         | ``0.0``               |
+| [`bool`](class_bool.md)                             | [`particle_flag_align_y`](class_cpuparticles2d.md#class_cpuparticles2d_property_particle_flag_align_y)   | ``false``             |
+| [`float`](class_float.md)                           | [`preprocess`](class_cpuparticles2d.md#class_cpuparticles2d_property_preprocess)                         | ``0.0``               |
+| [`Curve`](class_curve.md)                           | [`radial_accel_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_radial_accel_curve)         |                       |
+| [`float`](class_float.md)                           | [`radial_accel_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_radial_accel_max)             | ``0.0``               |
+| [`float`](class_float.md)                           | [`radial_accel_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_radial_accel_min)             | ``0.0``               |
+| [`float`](class_float.md)                           | [`randomness`](class_cpuparticles2d.md#class_cpuparticles2d_property_randomness)                         | ``0.0``               |
+| [`Curve`](class_curve.md)                           | [`scale_amount_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_scale_amount_curve)         |                       |
+| [`float`](class_float.md)                           | [`scale_amount_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_scale_amount_max)             | ``1.0``               |
+| [`float`](class_float.md)                           | [`scale_amount_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_scale_amount_min)             | ``1.0``               |
+| [`Curve`](class_curve.md)                           | [`scale_curve_x`](class_cpuparticles2d.md#class_cpuparticles2d_property_scale_curve_x)                   |                       |
+| [`Curve`](class_curve.md)                           | [`scale_curve_y`](class_cpuparticles2d.md#class_cpuparticles2d_property_scale_curve_y)                   |                       |
+| [`float`](class_float.md)                           | [`speed_scale`](class_cpuparticles2d.md#class_cpuparticles2d_property_speed_scale)                       | ``1.0``               |
+| [`bool`](class_bool.md)                             | [`split_scale`](class_cpuparticles2d.md#class_cpuparticles2d_property_split_scale)                       | ``false``             |
+| [`float`](class_float.md)                           | [`spread`](class_cpuparticles2d.md#class_cpuparticles2d_property_spread)                                 | ``45.0``              |
+| [`Curve`](class_curve.md)                           | [`tangential_accel_curve`](class_cpuparticles2d.md#class_cpuparticles2d_property_tangential_accel_curve) |                       |
+| [`float`](class_float.md)                           | [`tangential_accel_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_tangential_accel_max)     | ``0.0``               |
+| [`float`](class_float.md)                           | [`tangential_accel_min`](class_cpuparticles2d.md#class_cpuparticles2d_property_tangential_accel_min)     | ``0.0``               |
+| [`Texture2D`](class_texture2d.md)                   | [`texture`](class_cpuparticles2d.md#class_cpuparticles2d_property_texture)                               |                       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                    | [`convert_from_particles`](#class_cpuparticles2d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                        |
-| [`Curve`](class_curve.md) | [`get_param_curve`](#class_cpuparticles2d_method_get_param_curve) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                        |
-| [`float`](class_float.md) | [`get_param_max`](#class_cpuparticles2d_method_get_param_max) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                            |
-| [`float`](class_float.md) | [`get_param_min`](#class_cpuparticles2d_method_get_param_min) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                            |
-| [`bool`](class_bool.md)   | [`get_particle_flag`](#class_cpuparticles2d_method_get_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles2d_particleflags) ) const[^const]                    |
-| `void`                    | [`restart`](#class_cpuparticles2d_method_restart) ( )                                                                                                                         |
-| `void`                    | [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) ( param: [Parameter](#enum_cpuparticles2d_parameter), curve: [`Curve`](class_curve.md) )                    |
-| `void`                    | [`set_param_max`](#class_cpuparticles2d_method_set_param_max) ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )                        |
-| `void`                    | [`set_param_min`](#class_cpuparticles2d_method_set_param_min) ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )                        |
-| `void`                    | [`set_particle_flag`](#class_cpuparticles2d_method_set_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles2d_particleflags), enable: [`bool`](class_bool.md) ) |
+| `void`                    | [`convert_from_particles`](class_cpuparticles2d.md#class_cpuparticles2d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                        |
+| [`Curve`](class_curve.md) | [`get_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_get_param_curve) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                        |
+| [`float`](class_float.md) | [`get_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_get_param_max) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                            |
+| [`float`](class_float.md) | [`get_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_get_param_min) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                            |
+| [`bool`](class_bool.md)   | [`get_particle_flag`](class_cpuparticles2d.md#class_cpuparticles2d_method_get_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles2d_particleflags) ) const[^const]                    |
+| `void`                    | [`restart`](class_cpuparticles2d.md#class_cpuparticles2d_method_restart) ( )                                                                                                                         |
+| `void`                    | [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) ( param: [Parameter](#enum_cpuparticles2d_parameter), curve: [`Curve`](class_curve.md) )                    |
+| `void`                    | [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max) ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )                        |
+| `void`                    | [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min) ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )                        |
+| `void`                    | [`set_particle_flag`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles2d_particleflags), enable: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -112,7 +112,7 @@ See also [`GPUParticles2D`](class_gpuparticles2d.md), which provides the same fu
 
 **finished** ( ) <div id="class_cpuparticles2d_signal_finished"></div>
 
-Emitted when all active particles have finished processing. When [`one_shot`](#class_cpuparticles2d_property_one_shot) is disabled, particles will process continuously, so this is never emitted.
+Emitted when all active particles have finished processing. When [`one_shot`](class_cpuparticles2d.md#class_cpuparticles2d_property_one_shot) is disabled, particles will process continuously, so this is never emitted.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -148,73 +148,73 @@ enum **Parameter**: <div id="enum_cpuparticles2d_parameter"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_INITIAL_LINEAR_VELOCITY** = ``0``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set initial velocity properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set initial velocity properties.
 
 <div id="_class_cpuparticles2d_constant_param_angular_velocity"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_ANGULAR_VELOCITY** = ``1``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set angular velocity properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set angular velocity properties.
 
 <div id="_class_cpuparticles2d_constant_param_orbit_velocity"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_ORBIT_VELOCITY** = ``2``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set orbital velocity properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set orbital velocity properties.
 
 <div id="_class_cpuparticles2d_constant_param_linear_accel"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_LINEAR_ACCEL** = ``3``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set linear acceleration properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set linear acceleration properties.
 
 <div id="_class_cpuparticles2d_constant_param_radial_accel"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_RADIAL_ACCEL** = ``4``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set radial acceleration properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set radial acceleration properties.
 
 <div id="_class_cpuparticles2d_constant_param_tangential_accel"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_TANGENTIAL_ACCEL** = ``5``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set tangential acceleration properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set tangential acceleration properties.
 
 <div id="_class_cpuparticles2d_constant_param_damping"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_DAMPING** = ``6``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set damping properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set damping properties.
 
 <div id="_class_cpuparticles2d_constant_param_angle"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_ANGLE** = ``7``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set angle properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set angle properties.
 
 <div id="_class_cpuparticles2d_constant_param_scale"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_SCALE** = ``8``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set scale properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set scale properties.
 
 <div id="_class_cpuparticles2d_constant_param_hue_variation"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_HUE_VARIATION** = ``9``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set hue variation properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set hue variation properties.
 
 <div id="_class_cpuparticles2d_constant_param_anim_speed"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_ANIM_SPEED** = ``10``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set animation speed properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set animation speed properties.
 
 <div id="_class_cpuparticles2d_constant_param_anim_offset"></div>
 
 [Parameter](#enum_cpuparticles2d_parameter) **PARAM_ANIM_OFFSET** = ``11``
 
-Use with [`set_param_min`](#class_cpuparticles2d_method_set_param_min), [`set_param_max`](#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) to set animation offset properties.
+Use with [`set_param_min`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_min), [`set_param_max`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_max), and [`set_param_curve`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_param_curve) to set animation offset properties.
 
 <div id="_class_cpuparticles2d_constant_param_max"></div>
 
@@ -234,7 +234,7 @@ enum **ParticleFlags**: <div id="enum_cpuparticles2d_particleflags"></div>
 
 [ParticleFlags](#enum_cpuparticles2d_particleflags) **PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY** = ``0``
 
-Use with [`set_particle_flag`](#class_cpuparticles2d_method_set_particle_flag) to set [`particle_flag_align_y`](#class_cpuparticles2d_property_particle_flag_align_y).
+Use with [`set_particle_flag`](class_cpuparticles2d.md#class_cpuparticles2d_method_set_particle_flag) to set [`particle_flag_align_y`](class_cpuparticles2d.md#class_cpuparticles2d_property_particle_flag_align_y).
 
 <div id="_class_cpuparticles2d_constant_particle_flag_rotate_y"></div>
 
@@ -290,13 +290,13 @@ Particles will be emitted in the area of a rectangle.
 
 [EmissionShape](#enum_cpuparticles2d_emissionshape) **EMISSION_SHAPE_POINTS** = ``4``
 
-Particles will be emitted at a position chosen randomly among [`emission_points`](#class_cpuparticles2d_property_emission_points). Particle color will be modulated by [`emission_colors`](#class_cpuparticles2d_property_emission_colors).
+Particles will be emitted at a position chosen randomly among [`emission_points`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_points). Particle color will be modulated by [`emission_colors`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_colors).
 
 <div id="_class_cpuparticles2d_constant_emission_shape_directed_points"></div>
 
 [EmissionShape](#enum_cpuparticles2d_emissionshape) **EMISSION_SHAPE_DIRECTED_POINTS** = ``5``
 
-Particles will be emitted at a position chosen randomly among [`emission_points`](#class_cpuparticles2d_property_emission_points). Particle velocity and rotation will be set based on [`emission_normals`](#class_cpuparticles2d_property_emission_normals). Particle color will be modulated by [`emission_colors`](#class_cpuparticles2d_property_emission_colors).
+Particles will be emitted at a position chosen randomly among [`emission_points`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_points). Particle velocity and rotation will be set based on [`emission_normals`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_normals). Particle color will be modulated by [`emission_colors`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_colors).
 
 <div id="_class_cpuparticles2d_constant_emission_shape_max"></div>
 
@@ -356,7 +356,7 @@ Maximum initial rotation applied to each particle, in degrees.
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`angle_max`](#class_cpuparticles2d_property_angle_max).
+Minimum equivalent of [`angle_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_angle_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -395,7 +395,7 @@ Maximum initial angular velocity (rotation speed) applied to each particle in *d
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`angular_velocity_max`](#class_cpuparticles2d_property_angular_velocity_max).
+Minimum equivalent of [`angular_velocity_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_angular_velocity_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -421,7 +421,7 @@ Each particle's animation offset will vary along this [`Curve`](class_curve.md).
 - `void` **set_param_max** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_max** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Maximum animation offset that corresponds to frame index in the texture. `0` is the first frame, `1` is the last one. See [`CanvasItemMaterial.particles_animation`](#class_canvasitemmaterial_property_particles_animation).
+Maximum animation offset that corresponds to frame index in the texture. `0` is the first frame, `1` is the last one. See [`CanvasItemMaterial.particles_animation`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_animation).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -434,7 +434,7 @@ Maximum animation offset that corresponds to frame index in the texture. `0` is 
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`anim_offset_max`](#class_cpuparticles2d_property_anim_offset_max).
+Minimum equivalent of [`anim_offset_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_offset_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -462,7 +462,7 @@ Each particle's animation speed will vary along this [`Curve`](class_curve.md).
 
 Maximum particle animation speed. Animation speed of `1` means that the particles will make full `0` to `1` offset cycle during lifetime, `2` means `2` cycles etc.
 
-With animation speed greater than `1`, remember to enable [`CanvasItemMaterial.particles_anim_loop`](#class_canvasitemmaterial_property_particles_anim_loop) property if you want the animation to repeat.
+With animation speed greater than `1`, remember to enable [`CanvasItemMaterial.particles_anim_loop`](class_canvasitemmaterial.md#class_canvasitemmaterial_property_particles_anim_loop) property if you want the animation to repeat.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -475,7 +475,7 @@ With animation speed greater than `1`, remember to enable [`CanvasItemMaterial.p
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`anim_speed_max`](#class_cpuparticles2d_property_anim_speed_max).
+Minimum equivalent of [`anim_speed_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_anim_speed_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -488,7 +488,7 @@ Minimum equivalent of [`anim_speed_max`](#class_cpuparticles2d_property_anim_spe
 - `void` **set_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_color** ( )
 
-Each particle's initial color. If [`texture`](#class_cpuparticles2d_property_texture) is defined, it will be multiplied by this color.
+Each particle's initial color. If [`texture`](class_cpuparticles2d.md#class_cpuparticles2d_property_texture) is defined, it will be multiplied by this color.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -501,7 +501,7 @@ Each particle's initial color. If [`texture`](#class_cpuparticles2d_property_tex
 - `void` **set_color_initial_ramp** ( value: [`Gradient`](class_gradient.md) )
 - [`Gradient`](class_gradient.md) **get_color_initial_ramp** ( )
 
-Each particle's initial color will vary along this [`GradientTexture1D`](class_gradienttexture1d.md) (multiplied with [`color`](#class_cpuparticles2d_property_color)).
+Each particle's initial color will vary along this [`GradientTexture1D`](class_gradienttexture1d.md) (multiplied with [`color`](class_cpuparticles2d.md#class_cpuparticles2d_property_color)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -514,7 +514,7 @@ Each particle's initial color will vary along this [`GradientTexture1D`](class_g
 - `void` **set_color_ramp** ( value: [`Gradient`](class_gradient.md) )
 - [`Gradient`](class_gradient.md) **get_color_ramp** ( )
 
-Each particle's color will vary along this [`Gradient`](class_gradient.md) (multiplied with [`color`](#class_cpuparticles2d_property_color)).
+Each particle's color will vary along this [`Gradient`](class_gradient.md) (multiplied with [`color`](class_cpuparticles2d.md#class_cpuparticles2d_property_color)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -553,7 +553,7 @@ The maximum rate at which particles lose velocity. For example value of `100` me
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`damping_max`](#class_cpuparticles2d_property_damping_max).
+Minimum equivalent of [`damping_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_damping_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -592,7 +592,7 @@ Particle draw order. Uses [DrawOrder](#enum_cpuparticles2d_draworder) values.
 - `void` **set_emission_colors** ( value: [`PackedColorArray`](class_packedcolorarray.md) )
 - [`PackedColorArray`](class_packedcolorarray.md) **get_emission_colors** ( )
 
-Sets the [`Color`](class_color.md) s to modulate particles by when using [`EMISSION_SHAPE_POINTS`](#class_cpuparticles2d_constant_emission_shape_points) or [`EMISSION_SHAPE_DIRECTED_POINTS`](#class_cpuparticles2d_constant_emission_shape_directed_points).
+Sets the [`Color`](class_color.md) s to modulate particles by when using [`EMISSION_SHAPE_POINTS`](class_cpuparticles2d.md#class_cpuparticles2d_constant_emission_shape_points) or [`EMISSION_SHAPE_DIRECTED_POINTS`](class_cpuparticles2d.md#class_cpuparticles2d_constant_emission_shape_directed_points).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedColorArray`](class_packedcolorarray.md) for more details.
 
@@ -607,7 +607,7 @@ Sets the [`Color`](class_color.md) s to modulate particles by when using [`EMISS
 - `void` **set_emission_normals** ( value: [`PackedVector2Array`](class_packedvector2array.md) )
 - [`PackedVector2Array`](class_packedvector2array.md) **get_emission_normals** ( )
 
-Sets the direction the particles will be emitted in when using [`EMISSION_SHAPE_DIRECTED_POINTS`](#class_cpuparticles2d_constant_emission_shape_directed_points).
+Sets the direction the particles will be emitted in when using [`EMISSION_SHAPE_DIRECTED_POINTS`](class_cpuparticles2d.md#class_cpuparticles2d_constant_emission_shape_directed_points).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedVector2Array`](class_packedvector2array.md) for more details.
 
@@ -622,7 +622,7 @@ Sets the direction the particles will be emitted in when using [`EMISSION_SHAPE_
 - `void` **set_emission_points** ( value: [`PackedVector2Array`](class_packedvector2array.md) )
 - [`PackedVector2Array`](class_packedvector2array.md) **get_emission_points** ( )
 
-Sets the initial positions to spawn particles when using [`EMISSION_SHAPE_POINTS`](#class_cpuparticles2d_constant_emission_shape_points) or [`EMISSION_SHAPE_DIRECTED_POINTS`](#class_cpuparticles2d_constant_emission_shape_directed_points).
+Sets the initial positions to spawn particles when using [`EMISSION_SHAPE_POINTS`](class_cpuparticles2d.md#class_cpuparticles2d_constant_emission_shape_points) or [`EMISSION_SHAPE_DIRECTED_POINTS`](class_cpuparticles2d.md#class_cpuparticles2d_constant_emission_shape_directed_points).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedVector2Array`](class_packedvector2array.md) for more details.
 
@@ -637,7 +637,7 @@ Sets the initial positions to spawn particles when using [`EMISSION_SHAPE_POINTS
 - `void` **set_emission_rect_extents** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_emission_rect_extents** ( )
 
-The rectangle's extents if [`emission_shape`](#class_cpuparticles2d_property_emission_shape) is set to [`EMISSION_SHAPE_RECTANGLE`](#class_cpuparticles2d_constant_emission_shape_rectangle).
+The rectangle's extents if [`emission_shape`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_shape) is set to [`EMISSION_SHAPE_RECTANGLE`](class_cpuparticles2d.md#class_cpuparticles2d_constant_emission_shape_rectangle).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -663,7 +663,7 @@ Particles will be emitted inside this region. See [EmissionShape](#enum_cpuparti
 - `void` **set_emission_sphere_radius** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_sphere_radius** ( )
 
-The sphere's radius if [`emission_shape`](#class_cpuparticles2d_property_emission_shape) is set to [`EMISSION_SHAPE_SPHERE`](#class_cpuparticles2d_constant_emission_shape_sphere).
+The sphere's radius if [`emission_shape`](class_cpuparticles2d.md#class_cpuparticles2d_property_emission_shape) is set to [`EMISSION_SHAPE_SPHERE`](class_cpuparticles2d.md#class_cpuparticles2d_constant_emission_shape_sphere).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -676,7 +676,7 @@ The sphere's radius if [`emission_shape`](#class_cpuparticles2d_property_emissio
 - `void` **set_emitting** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_emitting** ( )
 
-If `true`, particles are being emitted. [`emitting`](#class_cpuparticles2d_property_emitting) can be used to start and stop particles from emitting. However, if [`one_shot`](#class_cpuparticles2d_property_one_shot) is `true` setting [`emitting`](#class_cpuparticles2d_property_emitting) to `true` will not restart the emission cycle until after all active particles finish processing. You can use the [`finished`](#class_cpuparticles2d_signal_finished) signal to be notified once all active particles finish processing.
+If `true`, particles are being emitted. [`emitting`](class_cpuparticles2d.md#class_cpuparticles2d_property_emitting) can be used to start and stop particles from emitting. However, if [`one_shot`](class_cpuparticles2d.md#class_cpuparticles2d_property_one_shot) is `true` setting [`emitting`](class_cpuparticles2d.md#class_cpuparticles2d_property_emitting) to `true` will not restart the emission cycle until after all active particles finish processing. You can use the [`finished`](class_cpuparticles2d.md#class_cpuparticles2d_signal_finished) signal to be notified once all active particles finish processing.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -767,7 +767,7 @@ Maximum initial hue variation applied to each particle. It will shift the partic
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`hue_variation_max`](#class_cpuparticles2d_property_hue_variation_max).
+Minimum equivalent of [`hue_variation_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_hue_variation_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -780,7 +780,7 @@ Minimum equivalent of [`hue_variation_max`](#class_cpuparticles2d_property_hue_v
 - `void` **set_param_max** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_max** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Maximum initial velocity magnitude for each particle. Direction comes from [`direction`](#class_cpuparticles2d_property_direction) and [`spread`](#class_cpuparticles2d_property_spread).
+Maximum initial velocity magnitude for each particle. Direction comes from [`direction`](class_cpuparticles2d.md#class_cpuparticles2d_property_direction) and [`spread`](class_cpuparticles2d.md#class_cpuparticles2d_property_spread).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -793,7 +793,7 @@ Maximum initial velocity magnitude for each particle. Direction comes from [`dir
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`initial_velocity_max`](#class_cpuparticles2d_property_initial_velocity_max).
+Minimum equivalent of [`initial_velocity_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_initial_velocity_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -858,7 +858,7 @@ Maximum linear acceleration applied to each particle in the direction of motion.
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`linear_accel_max`](#class_cpuparticles2d_property_linear_accel_max).
+Minimum equivalent of [`linear_accel_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_linear_accel_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -923,7 +923,7 @@ Maximum orbital velocity applied to each particle. Makes the particles circle ar
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`orbit_velocity_max`](#class_cpuparticles2d_property_orbit_velocity_max).
+Minimum equivalent of [`orbit_velocity_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_orbit_velocity_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -988,7 +988,7 @@ Maximum radial acceleration applied to each particle. Makes particle accelerate 
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`radial_accel_max`](#class_cpuparticles2d_property_radial_accel_max).
+Minimum equivalent of [`radial_accel_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_radial_accel_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1040,7 +1040,7 @@ Maximum initial scale applied to each particle.
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`scale_amount_max`](#class_cpuparticles2d_property_scale_amount_max).
+Minimum equivalent of [`scale_amount_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_scale_amount_max).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1055,7 +1055,7 @@ Minimum equivalent of [`scale_amount_max`](#class_cpuparticles2d_property_scale_
 
 Each particle's horizontal scale will vary along this [`Curve`](class_curve.md).
 
- [`split_scale`](#class_cpuparticles2d_property_split_scale) must be enabled.
+ [`split_scale`](class_cpuparticles2d.md#class_cpuparticles2d_property_split_scale) must be enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1070,7 +1070,7 @@ Each particle's horizontal scale will vary along this [`Curve`](class_curve.md).
 
 Each particle's vertical scale will vary along this [`Curve`](class_curve.md).
 
- [`split_scale`](#class_cpuparticles2d_property_split_scale) must be enabled.
+ [`split_scale`](class_cpuparticles2d.md#class_cpuparticles2d_property_split_scale) must be enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1096,7 +1096,7 @@ Particle system's running speed scaling ratio. A value of `0` can be used to pau
 - `void` **set_split_scale** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_split_scale** ( )
 
-If `true`, the scale curve will be split into x and y components. See [`scale_curve_x`](#class_cpuparticles2d_property_scale_curve_x) and [`scale_curve_y`](#class_cpuparticles2d_property_scale_curve_y).
+If `true`, the scale curve will be split into x and y components. See [`scale_curve_x`](class_cpuparticles2d.md#class_cpuparticles2d_property_scale_curve_x) and [`scale_curve_y`](class_cpuparticles2d.md#class_cpuparticles2d_property_scale_curve_y).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1148,7 +1148,7 @@ Maximum tangential acceleration applied to each particle. Tangential acceleratio
 - `void` **set_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param_min** ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]
 
-Minimum equivalent of [`tangential_accel_max`](#class_cpuparticles2d_property_tangential_accel_max).
+Minimum equivalent of [`tangential_accel_max`](class_cpuparticles2d.md#class_cpuparticles2d_property_tangential_accel_max).
 
 <!-- rst-class:: classref-item-separator -->
 

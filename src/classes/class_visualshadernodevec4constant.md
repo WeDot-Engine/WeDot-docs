@@ -19,7 +19,7 @@ A constant 4D vector, which can be used as an input node.
 
 |||
 |:-:|:--|
-| [`Quaternion`](class_quaternion.md) | [`constant`](#class_visualshadernodevec4constant_property_constant) | ``Quaternion(0, 0, 0, 1)`` |
+| [`Quaternion`](class_quaternion.md) | [`constant`](class_visualshadernodevec4constant.md#class_visualshadernodevec4constant_property_constant) | ``Quaternion(0, 0, 0, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

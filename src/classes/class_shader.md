@@ -23,16 +23,16 @@ This class is used by a [`ShaderMaterial`](class_shadermaterial.md) and allows y
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`code`](#class_shader_property_code) | ``""`` |
+| [`String`](class_string.md) | [`code`](class_shader.md#class_shader_property_code) | ``""`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`get_default_texture_parameter`](#class_shader_method_get_default_texture_parameter) ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]                               |
-| [Mode](#enum_shader_mode)         | [`get_mode`](#class_shader_method_get_mode) ( ) const[^const]                                                                                                                                                     |
-| [`Array`](class_array.md)         | [`get_shader_uniform_list`](#class_shader_method_get_shader_uniform_list) ( get_groups: [`bool`](class_bool.md) = false )                                                                                         |
-| `void`                            | [`set_default_texture_parameter`](#class_shader_method_set_default_texture_parameter) ( name: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), index: [`int`](class_int.md) = 0 ) |
+| [`Texture2D`](class_texture2d.md) | [`get_default_texture_parameter`](class_shader.md#class_shader_method_get_default_texture_parameter) ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]                               |
+| [Mode](#enum_shader_mode)         | [`get_mode`](class_shader.md#class_shader_method_get_mode) ( ) const[^const]                                                                                                                                                     |
+| [`Array`](class_array.md)         | [`get_shader_uniform_list`](class_shader.md#class_shader_method_get_shader_uniform_list) ( get_groups: [`bool`](class_bool.md) = false )                                                                                         |
+| `void`                            | [`set_default_texture_parameter`](class_shader.md#class_shader_method_set_default_texture_parameter) ( name: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), index: [`int`](class_int.md) = 0 ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -123,7 +123,7 @@ Returns the shader mode for the shader.
 
 [`Array`](class_array.md) **get_shader_uniform_list** ( get_groups: [`bool`](class_bool.md) = false )<div id="class_shader_method_get_shader_uniform_list"></div>
 
-Get the list of shader uniforms that can be assigned to a [`ShaderMaterial`](class_shadermaterial.md), for use with [`ShaderMaterial.set_shader_parameter`](#class_shadermaterial_method_set_shader_parameter) and [`ShaderMaterial.get_shader_parameter`](#class_shadermaterial_method_get_shader_parameter). The parameters returned are contained in dictionaries in a similar format to the ones returned by [`Object.get_property_list`](#class_object_method_get_property_list).
+Get the list of shader uniforms that can be assigned to a [`ShaderMaterial`](class_shadermaterial.md), for use with [`ShaderMaterial.set_shader_parameter`](class_shadermaterial.md#class_shadermaterial_method_set_shader_parameter) and [`ShaderMaterial.get_shader_parameter`](class_shadermaterial.md#class_shadermaterial_method_get_shader_parameter). The parameters returned are contained in dictionaries in a similar format to the ones returned by [`Object.get_property_list`](class_object.md#class_object_method_get_property_list).
 
 If argument `get_groups` is true, parameter grouping hints will be provided.
 

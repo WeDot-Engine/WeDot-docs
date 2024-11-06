@@ -23,18 +23,18 @@ To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s refer
 
 - It must not be waiting on any [`Semaphore`](class_semaphore.md) objects.
 
-- [`wait_to_finish`](#class_thread_method_wait_to_finish) should have been called on it.
+- [`wait_to_finish`](class_thread.md#class_thread_method_wait_to_finish) should have been called on it.
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)       | [`get_id`](#class_thread_method_get_id) ( ) const[^const]                                                                                        |
-| [`bool`](class_bool.md)           | [`is_alive`](#class_thread_method_is_alive) ( ) const[^const]                                                                                    |
-| [`bool`](class_bool.md)           | [`is_started`](#class_thread_method_is_started) ( ) const[^const]                                                                                |
-| `void`                            | [`set_thread_safety_checks_enabled`](#class_thread_method_set_thread_safety_checks_enabled) ( enabled: [`bool`](class_bool.md) ) static[^static] |
-| [Error](#enum_@globalscope_error) | [`start`](#class_thread_method_start) ( callable: [`Callable`](class_callable.md), priority: [Priority](#enum_thread_priority) = 1 )             |
-| [`Variant`](class_variant.md)     | [`wait_to_finish`](#class_thread_method_wait_to_finish) ( )                                                                                      |
+| [`String`](class_string.md)       | [`get_id`](class_thread.md#class_thread_method_get_id) ( ) const[^const]                                                                                        |
+| [`bool`](class_bool.md)           | [`is_alive`](class_thread.md#class_thread_method_is_alive) ( ) const[^const]                                                                                    |
+| [`bool`](class_bool.md)           | [`is_started`](class_thread.md#class_thread_method_is_started) ( ) const[^const]                                                                                |
+| `void`                            | [`set_thread_safety_checks_enabled`](class_thread.md#class_thread_method_set_thread_safety_checks_enabled) ( enabled: [`bool`](class_bool.md) ) static[^static] |
+| [Error](#enum_@globalscope_error) | [`start`](class_thread.md#class_thread_method_start) ( callable: [`Callable`](class_callable.md), priority: [Priority](#enum_thread_priority) = 1 )             |
+| [`Variant`](class_variant.md)     | [`wait_to_finish`](class_thread.md#class_thread_method_wait_to_finish) ( )                                                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -74,7 +74,7 @@ A thread running with higher priority than normally.
 
 [`String`](class_string.md) **get_id** ( ) const[^const]<div id="class_thread_method_get_id"></div>
 
-Returns the current **Thread**'s ID, uniquely identifying it among all threads. If the **Thread** has not started running or if [`wait_to_finish`](#class_thread_method_wait_to_finish) has been called, this returns an empty string.
+Returns the current **Thread**'s ID, uniquely identifying it among all threads. If the **Thread** has not started running or if [`wait_to_finish`](class_thread.md#class_thread_method_wait_to_finish) has been called, this returns an empty string.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -84,9 +84,9 @@ Returns the current **Thread**'s ID, uniquely identifying it among all threads. 
 
 [`bool`](class_bool.md) **is_alive** ( ) const[^const]<div id="class_thread_method_is_alive"></div>
 
-Returns `true` if this **Thread** is currently running the provided function. This is useful for determining if [`wait_to_finish`](#class_thread_method_wait_to_finish) can be called without blocking the calling thread.
+Returns `true` if this **Thread** is currently running the provided function. This is useful for determining if [`wait_to_finish`](class_thread.md#class_thread_method_wait_to_finish) can be called without blocking the calling thread.
 
-To check if a **Thread** is joinable, use [`is_started`](#class_thread_method_is_started).
+To check if a **Thread** is joinable, use [`is_started`](class_thread.md#class_thread_method_is_started).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -96,7 +96,7 @@ To check if a **Thread** is joinable, use [`is_started`](#class_thread_method_is
 
 [`bool`](class_bool.md) **is_started** ( ) const[^const]<div id="class_thread_method_is_started"></div>
 
-Returns `true` if this **Thread** has been started. Once started, this will return `true` until it is joined using [`wait_to_finish`](#class_thread_method_wait_to_finish). For checking if a **Thread** is still executing its task, use [`is_alive`](#class_thread_method_is_alive).
+Returns `true` if this **Thread** has been started. Once started, this will return `true` until it is joined using [`wait_to_finish`](class_thread.md#class_thread_method_wait_to_finish). For checking if a **Thread** is still executing its task, use [`is_alive`](class_thread.md#class_thread_method_is_alive).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -130,11 +130,11 @@ Because of that, there may be cases where the user may want to disable them (`en
 
 Starts a new **Thread** that calls `callable`.
 
-If the method takes some arguments, you can pass them using [`Callable.bind`](#class_callable_method_bind).
+If the method takes some arguments, you can pass them using [`Callable.bind`](class_callable.md#class_callable_method_bind).
 
 The `priority` of the **Thread** can be changed by passing a value from the [Priority](#enum_thread_priority) enum.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or [`@GlobalScope.ERR_CANT_CREATE`](#class_@globalscope_constant_err_cant_create) on failure.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) on success, or [`@GlobalScope.ERR_CANT_CREATE`](class_@globalscope.md#class_@globalscope_constant_err_cant_create) on failure.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -144,11 +144,11 @@ Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) on success, or [`@G
 
 [`Variant`](class_variant.md) **wait_to_finish** ( )<div id="class_thread_method_wait_to_finish"></div>
 
-Joins the **Thread** and waits for it to finish. Returns the output of the [`Callable`](class_callable.md) passed to [`start`](#class_thread_method_start).
+Joins the **Thread** and waits for it to finish. Returns the output of the [`Callable`](class_callable.md) passed to [`start`](class_thread.md#class_thread_method_start).
 
 Should either be used when you want to retrieve the value returned from the method called by the **Thread** or before freeing the instance that contains the **Thread**.
 
-To determine if this can be called without blocking the calling thread, check if [`is_alive`](#class_thread_method_is_alive) is `false`.
+To determine if this can be called without blocking the calling thread, check if [`is_alive`](class_thread.md#class_thread_method_is_alive) is `false`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

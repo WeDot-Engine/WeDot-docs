@@ -21,15 +21,15 @@ By changing various properties of this object, such as the start and target posi
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)                                                              | [`map`](#class_navigationpathqueryparameters2d_property_map)                                     | ``RID()``         |
-| [PathMetadataFlags](#enum_navigationpathqueryparameters2d_pathmetadataflags)       | [`metadata_flags`](#class_navigationpathqueryparameters2d_property_metadata_flags)               | ``7``             |
-| [`int`](class_int.md)                                                              | [`navigation_layers`](#class_navigationpathqueryparameters2d_property_navigation_layers)         | ``1``             |
-| [PathPostProcessing](#enum_navigationpathqueryparameters2d_pathpostprocessing)     | [`path_postprocessing`](#class_navigationpathqueryparameters2d_property_path_postprocessing)     | ``0``             |
-| [PathfindingAlgorithm](#enum_navigationpathqueryparameters2d_pathfindingalgorithm) | [`pathfinding_algorithm`](#class_navigationpathqueryparameters2d_property_pathfinding_algorithm) | ``0``             |
-| [`float`](class_float.md)                                                          | [`simplify_epsilon`](#class_navigationpathqueryparameters2d_property_simplify_epsilon)           | ``0.0``           |
-| [`bool`](class_bool.md)                                                            | [`simplify_path`](#class_navigationpathqueryparameters2d_property_simplify_path)                 | ``false``         |
-| [`Vector2`](class_vector2.md)                                                      | [`start_position`](#class_navigationpathqueryparameters2d_property_start_position)               | ``Vector2(0, 0)`` |
-| [`Vector2`](class_vector2.md)                                                      | [`target_position`](#class_navigationpathqueryparameters2d_property_target_position)             | ``Vector2(0, 0)`` |
+| [`RID`](class_rid.md)                                                              | [`map`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_map)                                     | ``RID()``         |
+| [PathMetadataFlags](#enum_navigationpathqueryparameters2d_pathmetadataflags)       | [`metadata_flags`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_metadata_flags)               | ``7``             |
+| [`int`](class_int.md)                                                              | [`navigation_layers`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_navigation_layers)         | ``1``             |
+| [PathPostProcessing](#enum_navigationpathqueryparameters2d_pathpostprocessing)     | [`path_postprocessing`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_path_postprocessing)     | ``0``             |
+| [PathfindingAlgorithm](#enum_navigationpathqueryparameters2d_pathfindingalgorithm) | [`pathfinding_algorithm`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_pathfinding_algorithm) | ``0``             |
+| [`float`](class_float.md)                                                          | [`simplify_epsilon`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_simplify_epsilon)           | ``0.0``           |
+| [`bool`](class_bool.md)                                                            | [`simplify_path`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_simplify_path)                 | ``false``         |
+| [`Vector2`](class_vector2.md)                                                      | [`start_position`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_start_position)               | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md)                                                      | [`target_position`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_target_position)             | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -157,7 +157,7 @@ The navigation layers the query will use (as a bitmask).
 - `void` **set_path_postprocessing** ( value: [PathPostProcessing](#enum_navigationpathqueryparameters2d_pathpostprocessing) )
 - [PathPostProcessing](#enum_navigationpathqueryparameters2d_pathpostprocessing) **get_path_postprocessing** ( )
 
-The path postprocessing applied to the raw path corridor found by the [`pathfinding_algorithm`](#class_navigationpathqueryparameters2d_property_pathfinding_algorithm).
+The path postprocessing applied to the raw path corridor found by the [`pathfinding_algorithm`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_pathfinding_algorithm).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -196,7 +196,7 @@ The path simplification amount in worlds units.
 - `void` **set_simplify_path** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_simplify_path** ( )
 
-If `true` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by [`simplify_epsilon`](#class_navigationpathqueryparameters2d_property_simplify_epsilon). The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
+If `true` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by [`simplify_epsilon`](class_navigationpathqueryparameters2d.md#class_navigationpathqueryparameters2d_property_simplify_epsilon). The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
 
 Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
 

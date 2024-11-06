@@ -69,13 +69,13 @@ The above code relies on the number of elements in the `enemies` array remaining
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`add_group_task`](#class_workerthreadpool_method_add_group_task) ( action: [`Callable`](class_callable.md), elements: [`int`](class_int.md), tasks_needed: [`int`](class_int.md) = -1, high_priority: [`bool`](class_bool.md) = false, description: [`String`](class_string.md) = "" ) |
-| [`int`](class_int.md)             | [`add_task`](#class_workerthreadpool_method_add_task) ( action: [`Callable`](class_callable.md), high_priority: [`bool`](class_bool.md) = false, description: [`String`](class_string.md) = "" )                                                                                        |
-| [`int`](class_int.md)             | [`get_group_processed_element_count`](#class_workerthreadpool_method_get_group_processed_element_count) ( group_id: [`int`](class_int.md) ) const[^const]                                                                                                                               |
-| [`bool`](class_bool.md)           | [`is_group_task_completed`](#class_workerthreadpool_method_is_group_task_completed) ( group_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                   |
-| [`bool`](class_bool.md)           | [`is_task_completed`](#class_workerthreadpool_method_is_task_completed) ( task_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                |
-| `void`                            | [`wait_for_group_task_completion`](#class_workerthreadpool_method_wait_for_group_task_completion) ( group_id: [`int`](class_int.md) )                                                                                                                                                   |
-| [Error](#enum_@globalscope_error) | [`wait_for_task_completion`](#class_workerthreadpool_method_wait_for_task_completion) ( task_id: [`int`](class_int.md) )                                                                                                                                                                |
+| [`int`](class_int.md)             | [`add_group_task`](class_workerthreadpool.md#class_workerthreadpool_method_add_group_task) ( action: [`Callable`](class_callable.md), elements: [`int`](class_int.md), tasks_needed: [`int`](class_int.md) = -1, high_priority: [`bool`](class_bool.md) = false, description: [`String`](class_string.md) = "" ) |
+| [`int`](class_int.md)             | [`add_task`](class_workerthreadpool.md#class_workerthreadpool_method_add_task) ( action: [`Callable`](class_callable.md), high_priority: [`bool`](class_bool.md) = false, description: [`String`](class_string.md) = "" )                                                                                        |
+| [`int`](class_int.md)             | [`get_group_processed_element_count`](class_workerthreadpool.md#class_workerthreadpool_method_get_group_processed_element_count) ( group_id: [`int`](class_int.md) ) const[^const]                                                                                                                               |
+| [`bool`](class_bool.md)           | [`is_group_task_completed`](class_workerthreadpool.md#class_workerthreadpool_method_is_group_task_completed) ( group_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                   |
+| [`bool`](class_bool.md)           | [`is_task_completed`](class_workerthreadpool.md#class_workerthreadpool_method_is_task_completed) ( task_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                                |
+| `void`                            | [`wait_for_group_task_completion`](class_workerthreadpool.md#class_workerthreadpool_method_wait_for_group_task_completion) ( group_id: [`int`](class_int.md) )                                                                                                                                                   |
+| [Error](#enum_@globalscope_error) | [`wait_for_task_completion`](class_workerthreadpool.md#class_workerthreadpool_method_wait_for_task_completion) ( task_id: [`int`](class_int.md) )                                                                                                                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -93,7 +93,7 @@ The number of threads the task is distributed to is defined by `tasks_needed`, w
 
 Returns a group task ID that can be used by other methods.
 
- **Warning:** Every task must be waited for completion using [`wait_for_task_completion`](#class_workerthreadpool_method_wait_for_task_completion) or [`wait_for_group_task_completion`](#class_workerthreadpool_method_wait_for_group_task_completion) at some point so that any allocated resources inside the task can be cleaned up.
+ **Warning:** Every task must be waited for completion using [`wait_for_task_completion`](class_workerthreadpool.md#class_workerthreadpool_method_wait_for_task_completion) or [`wait_for_group_task_completion`](class_workerthreadpool.md#class_workerthreadpool_method_wait_for_group_task_completion) at some point so that any allocated resources inside the task can be cleaned up.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -107,7 +107,7 @@ Adds `action` as a task to be executed by a worker thread. `high_priority` deter
 
 Returns a task ID that can be used by other methods.
 
- **Warning:** Every task must be waited for completion using [`wait_for_task_completion`](#class_workerthreadpool_method_wait_for_task_completion) or [`wait_for_group_task_completion`](#class_workerthreadpool_method_wait_for_group_task_completion) at some point so that any allocated resources inside the task can be cleaned up.
+ **Warning:** Every task must be waited for completion using [`wait_for_task_completion`](class_workerthreadpool.md#class_workerthreadpool_method_wait_for_task_completion) or [`wait_for_group_task_completion`](class_workerthreadpool.md#class_workerthreadpool_method_wait_for_group_task_completion) at some point so that any allocated resources inside the task can be cleaned up.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,11 +165,11 @@ Pauses the thread that calls this method until the group task with the given ID 
 
 Pauses the thread that calls this method until the task with the given ID is completed.
 
-Returns [`@GlobalScope.OK`](#class_@globalscope_constant_ok) if the task could be successfully awaited.
+Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if the task could be successfully awaited.
 
-Returns [`@GlobalScope.ERR_INVALID_PARAMETER`](#class_@globalscope_constant_err_invalid_parameter) if a task with the passed ID does not exist (maybe because it was already awaited and disposed of).
+Returns [`@GlobalScope.ERR_INVALID_PARAMETER`](class_@globalscope.md#class_@globalscope_constant_err_invalid_parameter) if a task with the passed ID does not exist (maybe because it was already awaited and disposed of).
 
-Returns [`@GlobalScope.ERR_BUSY`](#class_@globalscope_constant_err_busy) if the call is made from another running task and, due to task scheduling, there's potential for deadlocking (e.g., the task to await may be at a lower level in the call stack and therefore can't progress). This is an advanced situation that should only matter when some tasks depend on others (in the current implementation, the tricky case is a task trying to wait on an older one).
+Returns [`@GlobalScope.ERR_BUSY`](class_@globalscope.md#class_@globalscope_constant_err_busy) if the call is made from another running task and, due to task scheduling, there's potential for deadlocking (e.g., the task to await may be at a lower level in the call stack and therefore can't progress). This is an advanced situation that should only matter when some tasks depend on others (in the current implementation, the tricky case is a task trying to wait on an older one).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

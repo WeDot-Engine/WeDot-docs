@@ -15,20 +15,20 @@ A spotlight, such as a reflector spotlight or a lantern.
 
 A Spotlight is a type of [`Light3D`](class_light3d.md) node that emits lights in a specific direction, in the shape of a cone. The light is attenuated through the distance. This attenuation can be configured by changing the energy, radius and attenuation parameters of [`Light3D`](class_light3d.md).
 
- **Note:** When using the Mobile rendering method, only 8 spot lights can be displayed on each mesh resource. Attempting to display more than 8 spot lights on a single mesh resource will result in spot lights flickering in and out as the camera moves. When using the Compatibility rendering method, only 8 spot lights can be displayed on each mesh resource by default, but this can be increased by adjusting [`ProjectSettings.rendering/limits/opengl/max_lights_per_object`](#class_projectsettings_property_rendering/limits/opengl/max_lights_per_object).
+ **Note:** When using the Mobile rendering method, only 8 spot lights can be displayed on each mesh resource. Attempting to display more than 8 spot lights on a single mesh resource will result in spot lights flickering in and out as the camera moves. When using the Compatibility rendering method, only 8 spot lights can be displayed on each mesh resource by default, but this can be increased by adjusting [`ProjectSettings.rendering/limits/opengl/max_lights_per_object`](class_projectsettings.md#class_projectsettings_property_rendering/limits/opengl/max_lights_per_object).
 
- **Note:** When using the Mobile or Compatibility rendering methods, spot lights will only correctly affect meshes whose visibility AABB intersects with the light's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, [`GeometryInstance3D.extra_cull_margin`](#class_geometryinstance3d_property_extra_cull_margin) must be increased on the mesh. Otherwise, the light may not be visible on the mesh.
+ **Note:** When using the Mobile or Compatibility rendering methods, spot lights will only correctly affect meshes whose visibility AABB intersects with the light's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, [`GeometryInstance3D.extra_cull_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_extra_cull_margin) must be increased on the mesh. Otherwise, the light may not be visible on the mesh.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | shadow_bias                                                                    | ``0.03`` (overrides [`Light3D`](#class_light3d_property_shadow_bias))       |
-| [`float`](class_float.md) | shadow_normal_bias                                                             | ``1.0`` (overrides [`Light3D`](#class_light3d_property_shadow_normal_bias)) |
-| [`float`](class_float.md) | [`spot_angle`](#class_spotlight3d_property_spot_angle)                         | ``45.0``                                                                    |
-| [`float`](class_float.md) | [`spot_angle_attenuation`](#class_spotlight3d_property_spot_angle_attenuation) | ``1.0``                                                                     |
-| [`float`](class_float.md) | [`spot_attenuation`](#class_spotlight3d_property_spot_attenuation)             | ``1.0``                                                                     |
-| [`float`](class_float.md) | [`spot_range`](#class_spotlight3d_property_spot_range)                         | ``5.0``                                                                     |
+| [`float`](class_float.md) | shadow_bias                                                                                        | ``0.03`` (overrides [`Light3D`](class_light3d.md#class_light3d_property_shadow_bias))       |
+| [`float`](class_float.md) | shadow_normal_bias                                                                                 | ``1.0`` (overrides [`Light3D`](class_light3d.md#class_light3d_property_shadow_normal_bias)) |
+| [`float`](class_float.md) | [`spot_angle`](class_spotlight3d.md#class_spotlight3d_property_spot_angle)                         | ``45.0``                                                                                    |
+| [`float`](class_float.md) | [`spot_angle_attenuation`](class_spotlight3d.md#class_spotlight3d_property_spot_angle_attenuation) | ``1.0``                                                                                     |
+| [`float`](class_float.md) | [`spot_attenuation`](class_spotlight3d.md#class_spotlight3d_property_spot_attenuation)             | ``1.0``                                                                                     |
+| [`float`](class_float.md) | [`spot_range`](class_spotlight3d.md#class_spotlight3d_property_spot_range)                         | ``5.0``                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -45,7 +45,7 @@ A Spotlight is a type of [`Light3D`](class_light3d.md) node that emits lights in
 
 The spotlight's angle in degrees.
 
- **Note:** [`spot_angle`](#class_spotlight3d_property_spot_angle) is not affected by [`Node3D.scale`](#class_node3d_property_scale) (the light's scale or its parent's scale).
+ **Note:** [`spot_angle`](class_spotlight3d.md#class_spotlight3d_property_spot_angle) is not affected by [`Node3D.scale`](class_node3d.md#class_node3d_property_scale) (the light's scale or its parent's scale).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -58,7 +58,7 @@ The spotlight's angle in degrees.
 - `void` **set_param** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( )
 
-The spotlight's *angular* attenuation curve. See also [`spot_attenuation`](#class_spotlight3d_property_spot_attenuation).
+The spotlight's *angular* attenuation curve. See also [`spot_attenuation`](class_spotlight3d.md#class_spotlight3d_property_spot_attenuation).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -90,9 +90,9 @@ A value of `0.0` will maintain a constant brightness through most of the range, 
 - `void` **set_param** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_param** ( )
 
-The maximal range that can be reached by the spotlight. Note that the effectively lit area may appear to be smaller depending on the [`spot_attenuation`](#class_spotlight3d_property_spot_attenuation) in use. No matter the [`spot_attenuation`](#class_spotlight3d_property_spot_attenuation) in use, the light will never reach anything outside this range.
+The maximal range that can be reached by the spotlight. Note that the effectively lit area may appear to be smaller depending on the [`spot_attenuation`](class_spotlight3d.md#class_spotlight3d_property_spot_attenuation) in use. No matter the [`spot_attenuation`](class_spotlight3d.md#class_spotlight3d_property_spot_attenuation) in use, the light will never reach anything outside this range.
 
- **Note:** [`spot_range`](#class_spotlight3d_property_spot_range) is not affected by [`Node3D.scale`](#class_node3d_property_scale) (the light's scale or its parent's scale).
+ **Note:** [`spot_range`](class_spotlight3d.md#class_spotlight3d_property_spot_range) is not affected by [`Node3D.scale`](class_node3d.md#class_node3d_property_scale) (the light's scale or its parent's scale).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

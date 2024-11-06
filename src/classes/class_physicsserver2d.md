@@ -35,125 +35,125 @@ Physics objects in **PhysicsServer2D** may be created and manipulated independen
 
 |||
 |:-:|:--|
-| `void`                                                            | [`area_add_shape`](#class_physicsserver2d_method_area_add_shape) ( area: [`RID`](class_rid.md), shape: [`RID`](class_rid.md), transform: [`Transform2D`](class_transform2d.md) = Transform2D(1, 0, 0, 1, 0, 0), disabled: [`bool`](class_bool.md) = false )                                                        |
-| `void`                                                            | [`area_attach_canvas_instance_id`](#class_physicsserver2d_method_area_attach_canvas_instance_id) ( area: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                        |
-| `void`                                                            | [`area_attach_object_instance_id`](#class_physicsserver2d_method_area_attach_object_instance_id) ( area: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                        |
-| `void`                                                            | [`area_clear_shapes`](#class_physicsserver2d_method_area_clear_shapes) ( area: [`RID`](class_rid.md) )                                                                                                                                                                                                             |
-| [`RID`](class_rid.md)                                             | [`area_create`](#class_physicsserver2d_method_area_create) ( )                                                                                                                                                                                                                                                     |
-| [`int`](class_int.md)                                             | [`area_get_canvas_instance_id`](#class_physicsserver2d_method_area_get_canvas_instance_id) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
-| [`int`](class_int.md)                                             | [`area_get_collision_layer`](#class_physicsserver2d_method_area_get_collision_layer) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                 |
-| [`int`](class_int.md)                                             | [`area_get_collision_mask`](#class_physicsserver2d_method_area_get_collision_mask) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                   |
-| [`int`](class_int.md)                                             | [`area_get_object_instance_id`](#class_physicsserver2d_method_area_get_object_instance_id) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
-| [`Variant`](class_variant.md)                                     | [`area_get_param`](#class_physicsserver2d_method_area_get_param) ( area: [`RID`](class_rid.md), param: [AreaParameter](#enum_physicsserver2d_areaparameter) ) const[^const]                                                                                                                                        |
-| [`RID`](class_rid.md)                                             | [`area_get_shape`](#class_physicsserver2d_method_area_get_shape) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                                   |
-| [`int`](class_int.md)                                             | [`area_get_shape_count`](#class_physicsserver2d_method_area_get_shape_count) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                         |
-| [`Transform2D`](class_transform2d.md)                             | [`area_get_shape_transform`](#class_physicsserver2d_method_area_get_shape_transform) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
-| [`RID`](class_rid.md)                                             | [`area_get_space`](#class_physicsserver2d_method_area_get_space) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                     |
-| [`Transform2D`](class_transform2d.md)                             | [`area_get_transform`](#class_physicsserver2d_method_area_get_transform) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                             |
-| `void`                                                            | [`area_remove_shape`](#class_physicsserver2d_method_area_remove_shape) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) )                                                                                                                                                                           |
-| `void`                                                            | [`area_set_area_monitor_callback`](#class_physicsserver2d_method_area_set_area_monitor_callback) ( area: [`RID`](class_rid.md), callback: [`Callable`](class_callable.md) )                                                                                                                                        |
-| `void`                                                            | [`area_set_collision_layer`](#class_physicsserver2d_method_area_set_collision_layer) ( area: [`RID`](class_rid.md), layer: [`int`](class_int.md) )                                                                                                                                                                 |
-| `void`                                                            | [`area_set_collision_mask`](#class_physicsserver2d_method_area_set_collision_mask) ( area: [`RID`](class_rid.md), mask: [`int`](class_int.md) )                                                                                                                                                                    |
-| `void`                                                            | [`area_set_monitor_callback`](#class_physicsserver2d_method_area_set_monitor_callback) ( area: [`RID`](class_rid.md), callback: [`Callable`](class_callable.md) )                                                                                                                                                  |
-| `void`                                                            | [`area_set_monitorable`](#class_physicsserver2d_method_area_set_monitorable) ( area: [`RID`](class_rid.md), monitorable: [`bool`](class_bool.md) )                                                                                                                                                                 |
-| `void`                                                            | [`area_set_param`](#class_physicsserver2d_method_area_set_param) ( area: [`RID`](class_rid.md), param: [AreaParameter](#enum_physicsserver2d_areaparameter), value: [`Variant`](class_variant.md) )                                                                                                                |
-| `void`                                                            | [`area_set_shape`](#class_physicsserver2d_method_area_set_shape) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), shape: [`RID`](class_rid.md) )                                                                                                                                                   |
-| `void`                                                            | [`area_set_shape_disabled`](#class_physicsserver2d_method_area_set_shape_disabled) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                            |
-| `void`                                                            | [`area_set_shape_transform`](#class_physicsserver2d_method_area_set_shape_transform) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                           |
-| `void`                                                            | [`area_set_space`](#class_physicsserver2d_method_area_set_space) ( area: [`RID`](class_rid.md), space: [`RID`](class_rid.md) )                                                                                                                                                                                     |
-| `void`                                                            | [`area_set_transform`](#class_physicsserver2d_method_area_set_transform) ( area: [`RID`](class_rid.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                                                                         |
-| `void`                                                            | [`body_add_collision_exception`](#class_physicsserver2d_method_body_add_collision_exception) ( body: [`RID`](class_rid.md), excepted_body: [`RID`](class_rid.md) )                                                                                                                                                 |
-| `void`                                                            | [`body_add_constant_central_force`](#class_physicsserver2d_method_body_add_constant_central_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md) )                                                                                                                                           |
-| `void`                                                            | [`body_add_constant_force`](#class_physicsserver2d_method_body_add_constant_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                                                                                  |
-| `void`                                                            | [`body_add_constant_torque`](#class_physicsserver2d_method_body_add_constant_torque) ( body: [`RID`](class_rid.md), torque: [`float`](class_float.md) )                                                                                                                                                            |
-| `void`                                                            | [`body_add_shape`](#class_physicsserver2d_method_body_add_shape) ( body: [`RID`](class_rid.md), shape: [`RID`](class_rid.md), transform: [`Transform2D`](class_transform2d.md) = Transform2D(1, 0, 0, 1, 0, 0), disabled: [`bool`](class_bool.md) = false )                                                        |
-| `void`                                                            | [`body_apply_central_force`](#class_physicsserver2d_method_body_apply_central_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md) )                                                                                                                                                         |
-| `void`                                                            | [`body_apply_central_impulse`](#class_physicsserver2d_method_body_apply_central_impulse) ( body: [`RID`](class_rid.md), impulse: [`Vector2`](class_vector2.md) )                                                                                                                                                   |
-| `void`                                                            | [`body_apply_force`](#class_physicsserver2d_method_body_apply_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                                                                                                |
-| `void`                                                            | [`body_apply_impulse`](#class_physicsserver2d_method_body_apply_impulse) ( body: [`RID`](class_rid.md), impulse: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                                                                                          |
-| `void`                                                            | [`body_apply_torque`](#class_physicsserver2d_method_body_apply_torque) ( body: [`RID`](class_rid.md), torque: [`float`](class_float.md) )                                                                                                                                                                          |
-| `void`                                                            | [`body_apply_torque_impulse`](#class_physicsserver2d_method_body_apply_torque_impulse) ( body: [`RID`](class_rid.md), impulse: [`float`](class_float.md) )                                                                                                                                                         |
-| `void`                                                            | [`body_attach_canvas_instance_id`](#class_physicsserver2d_method_body_attach_canvas_instance_id) ( body: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                        |
-| `void`                                                            | [`body_attach_object_instance_id`](#class_physicsserver2d_method_body_attach_object_instance_id) ( body: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                        |
-| `void`                                                            | [`body_clear_shapes`](#class_physicsserver2d_method_body_clear_shapes) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                                             |
-| [`RID`](class_rid.md)                                             | [`body_create`](#class_physicsserver2d_method_body_create) ( )                                                                                                                                                                                                                                                     |
-| [`int`](class_int.md)                                             | [`body_get_canvas_instance_id`](#class_physicsserver2d_method_body_get_canvas_instance_id) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
-| [`int`](class_int.md)                                             | [`body_get_collision_layer`](#class_physicsserver2d_method_body_get_collision_layer) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                 |
-| [`int`](class_int.md)                                             | [`body_get_collision_mask`](#class_physicsserver2d_method_body_get_collision_mask) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                   |
-| [`float`](class_float.md)                                         | [`body_get_collision_priority`](#class_physicsserver2d_method_body_get_collision_priority) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
-| [`Vector2`](class_vector2.md)                                     | [`body_get_constant_force`](#class_physicsserver2d_method_body_get_constant_force) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                   |
-| [`float`](class_float.md)                                         | [`body_get_constant_torque`](#class_physicsserver2d_method_body_get_constant_torque) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                 |
-| [CCDMode](#enum_physicsserver2d_ccdmode)                          | [`body_get_continuous_collision_detection_mode`](#class_physicsserver2d_method_body_get_continuous_collision_detection_mode) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                         |
-| [`PhysicsDirectBodyState2D`](class_physicsdirectbodystate2d.md)   | [`body_get_direct_state`](#class_physicsserver2d_method_body_get_direct_state) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                                     |
-| [`int`](class_int.md)                                             | [`body_get_max_contacts_reported`](#class_physicsserver2d_method_body_get_max_contacts_reported) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                     |
-| [BodyMode](#enum_physicsserver2d_bodymode)                        | [`body_get_mode`](#class_physicsserver2d_method_body_get_mode) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                       |
-| [`int`](class_int.md)                                             | [`body_get_object_instance_id`](#class_physicsserver2d_method_body_get_object_instance_id) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
-| [`Variant`](class_variant.md)                                     | [`body_get_param`](#class_physicsserver2d_method_body_get_param) ( body: [`RID`](class_rid.md), param: [BodyParameter](#enum_physicsserver2d_bodyparameter) ) const[^const]                                                                                                                                        |
-| [`RID`](class_rid.md)                                             | [`body_get_shape`](#class_physicsserver2d_method_body_get_shape) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                                   |
-| [`int`](class_int.md)                                             | [`body_get_shape_count`](#class_physicsserver2d_method_body_get_shape_count) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                         |
-| [`Transform2D`](class_transform2d.md)                             | [`body_get_shape_transform`](#class_physicsserver2d_method_body_get_shape_transform) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
-| [`RID`](class_rid.md)                                             | [`body_get_space`](#class_physicsserver2d_method_body_get_space) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                     |
-| [`Variant`](class_variant.md)                                     | [`body_get_state`](#class_physicsserver2d_method_body_get_state) ( body: [`RID`](class_rid.md), state: [BodyState](#enum_physicsserver2d_bodystate) ) const[^const]                                                                                                                                                |
-| [`bool`](class_bool.md)                                           | [`body_is_omitting_force_integration`](#class_physicsserver2d_method_body_is_omitting_force_integration) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                             |
-| `void`                                                            | [`body_remove_collision_exception`](#class_physicsserver2d_method_body_remove_collision_exception) ( body: [`RID`](class_rid.md), excepted_body: [`RID`](class_rid.md) )                                                                                                                                           |
-| `void`                                                            | [`body_remove_shape`](#class_physicsserver2d_method_body_remove_shape) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) )                                                                                                                                                                           |
-| `void`                                                            | [`body_reset_mass_properties`](#class_physicsserver2d_method_body_reset_mass_properties) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                           |
-| `void`                                                            | [`body_set_axis_velocity`](#class_physicsserver2d_method_body_set_axis_velocity) ( body: [`RID`](class_rid.md), axis_velocity: [`Vector2`](class_vector2.md) )                                                                                                                                                     |
-| `void`                                                            | [`body_set_collision_layer`](#class_physicsserver2d_method_body_set_collision_layer) ( body: [`RID`](class_rid.md), layer: [`int`](class_int.md) )                                                                                                                                                                 |
-| `void`                                                            | [`body_set_collision_mask`](#class_physicsserver2d_method_body_set_collision_mask) ( body: [`RID`](class_rid.md), mask: [`int`](class_int.md) )                                                                                                                                                                    |
-| `void`                                                            | [`body_set_collision_priority`](#class_physicsserver2d_method_body_set_collision_priority) ( body: [`RID`](class_rid.md), priority: [`float`](class_float.md) )                                                                                                                                                    |
-| `void`                                                            | [`body_set_constant_force`](#class_physicsserver2d_method_body_set_constant_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md) )                                                                                                                                                           |
-| `void`                                                            | [`body_set_constant_torque`](#class_physicsserver2d_method_body_set_constant_torque) ( body: [`RID`](class_rid.md), torque: [`float`](class_float.md) )                                                                                                                                                            |
-| `void`                                                            | [`body_set_continuous_collision_detection_mode`](#class_physicsserver2d_method_body_set_continuous_collision_detection_mode) ( body: [`RID`](class_rid.md), mode: [CCDMode](#enum_physicsserver2d_ccdmode) )                                                                                                       |
-| `void`                                                            | [`body_set_force_integration_callback`](#class_physicsserver2d_method_body_set_force_integration_callback) ( body: [`RID`](class_rid.md), callable: [`Callable`](class_callable.md), userdata: [`Variant`](class_variant.md) = null )                                                                              |
-| `void`                                                            | [`body_set_max_contacts_reported`](#class_physicsserver2d_method_body_set_max_contacts_reported) ( body: [`RID`](class_rid.md), amount: [`int`](class_int.md) )                                                                                                                                                    |
-| `void`                                                            | [`body_set_mode`](#class_physicsserver2d_method_body_set_mode) ( body: [`RID`](class_rid.md), mode: [BodyMode](#enum_physicsserver2d_bodymode) )                                                                                                                                                                   |
-| `void`                                                            | [`body_set_omit_force_integration`](#class_physicsserver2d_method_body_set_omit_force_integration) ( body: [`RID`](class_rid.md), enable: [`bool`](class_bool.md) )                                                                                                                                                |
-| `void`                                                            | [`body_set_param`](#class_physicsserver2d_method_body_set_param) ( body: [`RID`](class_rid.md), param: [BodyParameter](#enum_physicsserver2d_bodyparameter), value: [`Variant`](class_variant.md) )                                                                                                                |
-| `void`                                                            | [`body_set_shape`](#class_physicsserver2d_method_body_set_shape) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), shape: [`RID`](class_rid.md) )                                                                                                                                                   |
-| `void`                                                            | [`body_set_shape_as_one_way_collision`](#class_physicsserver2d_method_body_set_shape_as_one_way_collision) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), enable: [`bool`](class_bool.md), margin: [`float`](class_float.md) )                                                                   |
-| `void`                                                            | [`body_set_shape_disabled`](#class_physicsserver2d_method_body_set_shape_disabled) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                            |
-| `void`                                                            | [`body_set_shape_transform`](#class_physicsserver2d_method_body_set_shape_transform) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                           |
-| `void`                                                            | [`body_set_space`](#class_physicsserver2d_method_body_set_space) ( body: [`RID`](class_rid.md), space: [`RID`](class_rid.md) )                                                                                                                                                                                     |
-| `void`                                                            | [`body_set_state`](#class_physicsserver2d_method_body_set_state) ( body: [`RID`](class_rid.md), state: [BodyState](#enum_physicsserver2d_bodystate), value: [`Variant`](class_variant.md) )                                                                                                                        |
-| `void`                                                            | [`body_set_state_sync_callback`](#class_physicsserver2d_method_body_set_state_sync_callback) ( body: [`RID`](class_rid.md), callable: [`Callable`](class_callable.md) )                                                                                                                                            |
-| [`bool`](class_bool.md)                                           | [`body_test_motion`](#class_physicsserver2d_method_body_test_motion) ( body: [`RID`](class_rid.md), parameters: [`PhysicsTestMotionParameters2D`](class_physicstestmotionparameters2d.md), result: [`PhysicsTestMotionResult2D`](class_physicstestmotionresult2d.md) = null )                                      |
-| [`RID`](class_rid.md)                                             | [`capsule_shape_create`](#class_physicsserver2d_method_capsule_shape_create) ( )                                                                                                                                                                                                                                   |
-| [`RID`](class_rid.md)                                             | [`circle_shape_create`](#class_physicsserver2d_method_circle_shape_create) ( )                                                                                                                                                                                                                                     |
-| [`RID`](class_rid.md)                                             | [`concave_polygon_shape_create`](#class_physicsserver2d_method_concave_polygon_shape_create) ( )                                                                                                                                                                                                                   |
-| [`RID`](class_rid.md)                                             | [`convex_polygon_shape_create`](#class_physicsserver2d_method_convex_polygon_shape_create) ( )                                                                                                                                                                                                                     |
-| [`float`](class_float.md)                                         | [`damped_spring_joint_get_param`](#class_physicsserver2d_method_damped_spring_joint_get_param) ( joint: [`RID`](class_rid.md), param: [DampedSpringParam](#enum_physicsserver2d_dampedspringparam) ) const[^const]                                                                                                 |
-| `void`                                                            | [`damped_spring_joint_set_param`](#class_physicsserver2d_method_damped_spring_joint_set_param) ( joint: [`RID`](class_rid.md), param: [DampedSpringParam](#enum_physicsserver2d_dampedspringparam), value: [`float`](class_float.md) )                                                                             |
-| `void`                                                            | [`free_rid`](#class_physicsserver2d_method_free_rid) ( rid: [`RID`](class_rid.md) )                                                                                                                                                                                                                                |
-| [`int`](class_int.md)                                             | [`get_process_info`](#class_physicsserver2d_method_get_process_info) ( process_info: [ProcessInfo](#enum_physicsserver2d_processinfo) )                                                                                                                                                                            |
-| `void`                                                            | [`joint_clear`](#class_physicsserver2d_method_joint_clear) ( joint: [`RID`](class_rid.md) )                                                                                                                                                                                                                        |
-| [`RID`](class_rid.md)                                             | [`joint_create`](#class_physicsserver2d_method_joint_create) ( )                                                                                                                                                                                                                                                   |
-| `void`                                                            | [`joint_disable_collisions_between_bodies`](#class_physicsserver2d_method_joint_disable_collisions_between_bodies) ( joint: [`RID`](class_rid.md), disable: [`bool`](class_bool.md) )                                                                                                                              |
-| [`float`](class_float.md)                                         | [`joint_get_param`](#class_physicsserver2d_method_joint_get_param) ( joint: [`RID`](class_rid.md), param: [JointParam](#enum_physicsserver2d_jointparam) ) const[^const]                                                                                                                                           |
-| [JointType](#enum_physicsserver2d_jointtype)                      | [`joint_get_type`](#class_physicsserver2d_method_joint_get_type) ( joint: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                    |
-| [`bool`](class_bool.md)                                           | [`joint_is_disabled_collisions_between_bodies`](#class_physicsserver2d_method_joint_is_disabled_collisions_between_bodies) ( joint: [`RID`](class_rid.md) ) const[^const]                                                                                                                                          |
-| `void`                                                            | [`joint_make_damped_spring`](#class_physicsserver2d_method_joint_make_damped_spring) ( joint: [`RID`](class_rid.md), anchor_a: [`Vector2`](class_vector2.md), anchor_b: [`Vector2`](class_vector2.md), body_a: [`RID`](class_rid.md), body_b: [`RID`](class_rid.md) = RID() )                                      |
-| `void`                                                            | [`joint_make_groove`](#class_physicsserver2d_method_joint_make_groove) ( joint: [`RID`](class_rid.md), groove1_a: [`Vector2`](class_vector2.md), groove2_a: [`Vector2`](class_vector2.md), anchor_b: [`Vector2`](class_vector2.md), body_a: [`RID`](class_rid.md) = RID(), body_b: [`RID`](class_rid.md) = RID() ) |
-| `void`                                                            | [`joint_make_pin`](#class_physicsserver2d_method_joint_make_pin) ( joint: [`RID`](class_rid.md), anchor: [`Vector2`](class_vector2.md), body_a: [`RID`](class_rid.md), body_b: [`RID`](class_rid.md) = RID() )                                                                                                     |
-| `void`                                                            | [`joint_set_param`](#class_physicsserver2d_method_joint_set_param) ( joint: [`RID`](class_rid.md), param: [JointParam](#enum_physicsserver2d_jointparam), value: [`float`](class_float.md) )                                                                                                                       |
-| [`bool`](class_bool.md)                                           | [`pin_joint_get_flag`](#class_physicsserver2d_method_pin_joint_get_flag) ( joint: [`RID`](class_rid.md), flag: [PinJointFlag](#enum_physicsserver2d_pinjointflag) ) const[^const]                                                                                                                                  |
-| [`float`](class_float.md)                                         | [`pin_joint_get_param`](#class_physicsserver2d_method_pin_joint_get_param) ( joint: [`RID`](class_rid.md), param: [PinJointParam](#enum_physicsserver2d_pinjointparam) ) const[^const]                                                                                                                             |
-| `void`                                                            | [`pin_joint_set_flag`](#class_physicsserver2d_method_pin_joint_set_flag) ( joint: [`RID`](class_rid.md), flag: [PinJointFlag](#enum_physicsserver2d_pinjointflag), enabled: [`bool`](class_bool.md) )                                                                                                              |
-| `void`                                                            | [`pin_joint_set_param`](#class_physicsserver2d_method_pin_joint_set_param) ( joint: [`RID`](class_rid.md), param: [PinJointParam](#enum_physicsserver2d_pinjointparam), value: [`float`](class_float.md) )                                                                                                         |
-| [`RID`](class_rid.md)                                             | [`rectangle_shape_create`](#class_physicsserver2d_method_rectangle_shape_create) ( )                                                                                                                                                                                                                               |
-| [`RID`](class_rid.md)                                             | [`segment_shape_create`](#class_physicsserver2d_method_segment_shape_create) ( )                                                                                                                                                                                                                                   |
-| [`RID`](class_rid.md)                                             | [`separation_ray_shape_create`](#class_physicsserver2d_method_separation_ray_shape_create) ( )                                                                                                                                                                                                                     |
-| `void`                                                            | [`set_active`](#class_physicsserver2d_method_set_active) ( active: [`bool`](class_bool.md) )                                                                                                                                                                                                                       |
-| [`Variant`](class_variant.md)                                     | [`shape_get_data`](#class_physicsserver2d_method_shape_get_data) ( shape: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                    |
-| [ShapeType](#enum_physicsserver2d_shapetype)                      | [`shape_get_type`](#class_physicsserver2d_method_shape_get_type) ( shape: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                    |
-| `void`                                                            | [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) ( shape: [`RID`](class_rid.md), data: [`Variant`](class_variant.md) )                                                                                                                                                                             |
-| [`RID`](class_rid.md)                                             | [`space_create`](#class_physicsserver2d_method_space_create) ( )                                                                                                                                                                                                                                                   |
-| [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) | [`space_get_direct_state`](#class_physicsserver2d_method_space_get_direct_state) ( space: [`RID`](class_rid.md) )                                                                                                                                                                                                  |
-| [`float`](class_float.md)                                         | [`space_get_param`](#class_physicsserver2d_method_space_get_param) ( space: [`RID`](class_rid.md), param: [SpaceParameter](#enum_physicsserver2d_spaceparameter) ) const[^const]                                                                                                                                   |
-| [`bool`](class_bool.md)                                           | [`space_is_active`](#class_physicsserver2d_method_space_is_active) ( space: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                  |
-| `void`                                                            | [`space_set_active`](#class_physicsserver2d_method_space_set_active) ( space: [`RID`](class_rid.md), active: [`bool`](class_bool.md) )                                                                                                                                                                             |
-| `void`                                                            | [`space_set_param`](#class_physicsserver2d_method_space_set_param) ( space: [`RID`](class_rid.md), param: [SpaceParameter](#enum_physicsserver2d_spaceparameter), value: [`float`](class_float.md) )                                                                                                               |
-| [`RID`](class_rid.md)                                             | [`world_boundary_shape_create`](#class_physicsserver2d_method_world_boundary_shape_create) ( )                                                                                                                                                                                                                     |
+| `void`                                                            | [`area_add_shape`](class_physicsserver2d.md#class_physicsserver2d_method_area_add_shape) ( area: [`RID`](class_rid.md), shape: [`RID`](class_rid.md), transform: [`Transform2D`](class_transform2d.md) = Transform2D(1, 0, 0, 1, 0, 0), disabled: [`bool`](class_bool.md) = false )                                                        |
+| `void`                                                            | [`area_attach_canvas_instance_id`](class_physicsserver2d.md#class_physicsserver2d_method_area_attach_canvas_instance_id) ( area: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                        |
+| `void`                                                            | [`area_attach_object_instance_id`](class_physicsserver2d.md#class_physicsserver2d_method_area_attach_object_instance_id) ( area: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                        |
+| `void`                                                            | [`area_clear_shapes`](class_physicsserver2d.md#class_physicsserver2d_method_area_clear_shapes) ( area: [`RID`](class_rid.md) )                                                                                                                                                                                                             |
+| [`RID`](class_rid.md)                                             | [`area_create`](class_physicsserver2d.md#class_physicsserver2d_method_area_create) ( )                                                                                                                                                                                                                                                     |
+| [`int`](class_int.md)                                             | [`area_get_canvas_instance_id`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_canvas_instance_id) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
+| [`int`](class_int.md)                                             | [`area_get_collision_layer`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_collision_layer) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                 |
+| [`int`](class_int.md)                                             | [`area_get_collision_mask`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_collision_mask) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                   |
+| [`int`](class_int.md)                                             | [`area_get_object_instance_id`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_object_instance_id) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
+| [`Variant`](class_variant.md)                                     | [`area_get_param`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_param) ( area: [`RID`](class_rid.md), param: [AreaParameter](#enum_physicsserver2d_areaparameter) ) const[^const]                                                                                                                                        |
+| [`RID`](class_rid.md)                                             | [`area_get_shape`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_shape) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                                   |
+| [`int`](class_int.md)                                             | [`area_get_shape_count`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_shape_count) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                         |
+| [`Transform2D`](class_transform2d.md)                             | [`area_get_shape_transform`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_shape_transform) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
+| [`RID`](class_rid.md)                                             | [`area_get_space`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_space) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                     |
+| [`Transform2D`](class_transform2d.md)                             | [`area_get_transform`](class_physicsserver2d.md#class_physicsserver2d_method_area_get_transform) ( area: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                             |
+| `void`                                                            | [`area_remove_shape`](class_physicsserver2d.md#class_physicsserver2d_method_area_remove_shape) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) )                                                                                                                                                                           |
+| `void`                                                            | [`area_set_area_monitor_callback`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_area_monitor_callback) ( area: [`RID`](class_rid.md), callback: [`Callable`](class_callable.md) )                                                                                                                                        |
+| `void`                                                            | [`area_set_collision_layer`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_collision_layer) ( area: [`RID`](class_rid.md), layer: [`int`](class_int.md) )                                                                                                                                                                 |
+| `void`                                                            | [`area_set_collision_mask`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_collision_mask) ( area: [`RID`](class_rid.md), mask: [`int`](class_int.md) )                                                                                                                                                                    |
+| `void`                                                            | [`area_set_monitor_callback`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_monitor_callback) ( area: [`RID`](class_rid.md), callback: [`Callable`](class_callable.md) )                                                                                                                                                  |
+| `void`                                                            | [`area_set_monitorable`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_monitorable) ( area: [`RID`](class_rid.md), monitorable: [`bool`](class_bool.md) )                                                                                                                                                                 |
+| `void`                                                            | [`area_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_param) ( area: [`RID`](class_rid.md), param: [AreaParameter](#enum_physicsserver2d_areaparameter), value: [`Variant`](class_variant.md) )                                                                                                                |
+| `void`                                                            | [`area_set_shape`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_shape) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), shape: [`RID`](class_rid.md) )                                                                                                                                                   |
+| `void`                                                            | [`area_set_shape_disabled`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_shape_disabled) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                            |
+| `void`                                                            | [`area_set_shape_transform`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_shape_transform) ( area: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                           |
+| `void`                                                            | [`area_set_space`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_space) ( area: [`RID`](class_rid.md), space: [`RID`](class_rid.md) )                                                                                                                                                                                     |
+| `void`                                                            | [`area_set_transform`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_transform) ( area: [`RID`](class_rid.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                                                                         |
+| `void`                                                            | [`body_add_collision_exception`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_collision_exception) ( body: [`RID`](class_rid.md), excepted_body: [`RID`](class_rid.md) )                                                                                                                                                 |
+| `void`                                                            | [`body_add_constant_central_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_central_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md) )                                                                                                                                           |
+| `void`                                                            | [`body_add_constant_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                                                                                  |
+| `void`                                                            | [`body_add_constant_torque`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_torque) ( body: [`RID`](class_rid.md), torque: [`float`](class_float.md) )                                                                                                                                                            |
+| `void`                                                            | [`body_add_shape`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_shape) ( body: [`RID`](class_rid.md), shape: [`RID`](class_rid.md), transform: [`Transform2D`](class_transform2d.md) = Transform2D(1, 0, 0, 1, 0, 0), disabled: [`bool`](class_bool.md) = false )                                                        |
+| `void`                                                            | [`body_apply_central_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_apply_central_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md) )                                                                                                                                                         |
+| `void`                                                            | [`body_apply_central_impulse`](class_physicsserver2d.md#class_physicsserver2d_method_body_apply_central_impulse) ( body: [`RID`](class_rid.md), impulse: [`Vector2`](class_vector2.md) )                                                                                                                                                   |
+| `void`                                                            | [`body_apply_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_apply_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                                                                                                |
+| `void`                                                            | [`body_apply_impulse`](class_physicsserver2d.md#class_physicsserver2d_method_body_apply_impulse) ( body: [`RID`](class_rid.md), impulse: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                                                                                          |
+| `void`                                                            | [`body_apply_torque`](class_physicsserver2d.md#class_physicsserver2d_method_body_apply_torque) ( body: [`RID`](class_rid.md), torque: [`float`](class_float.md) )                                                                                                                                                                          |
+| `void`                                                            | [`body_apply_torque_impulse`](class_physicsserver2d.md#class_physicsserver2d_method_body_apply_torque_impulse) ( body: [`RID`](class_rid.md), impulse: [`float`](class_float.md) )                                                                                                                                                         |
+| `void`                                                            | [`body_attach_canvas_instance_id`](class_physicsserver2d.md#class_physicsserver2d_method_body_attach_canvas_instance_id) ( body: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                        |
+| `void`                                                            | [`body_attach_object_instance_id`](class_physicsserver2d.md#class_physicsserver2d_method_body_attach_object_instance_id) ( body: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                        |
+| `void`                                                            | [`body_clear_shapes`](class_physicsserver2d.md#class_physicsserver2d_method_body_clear_shapes) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                                             |
+| [`RID`](class_rid.md)                                             | [`body_create`](class_physicsserver2d.md#class_physicsserver2d_method_body_create) ( )                                                                                                                                                                                                                                                     |
+| [`int`](class_int.md)                                             | [`body_get_canvas_instance_id`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_canvas_instance_id) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
+| [`int`](class_int.md)                                             | [`body_get_collision_layer`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_collision_layer) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                 |
+| [`int`](class_int.md)                                             | [`body_get_collision_mask`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_collision_mask) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                   |
+| [`float`](class_float.md)                                         | [`body_get_collision_priority`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_collision_priority) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
+| [`Vector2`](class_vector2.md)                                     | [`body_get_constant_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_constant_force) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                   |
+| [`float`](class_float.md)                                         | [`body_get_constant_torque`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_constant_torque) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                 |
+| [CCDMode](#enum_physicsserver2d_ccdmode)                          | [`body_get_continuous_collision_detection_mode`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_continuous_collision_detection_mode) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                         |
+| [`PhysicsDirectBodyState2D`](class_physicsdirectbodystate2d.md)   | [`body_get_direct_state`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_direct_state) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                                     |
+| [`int`](class_int.md)                                             | [`body_get_max_contacts_reported`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_max_contacts_reported) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                     |
+| [BodyMode](#enum_physicsserver2d_bodymode)                        | [`body_get_mode`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_mode) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                       |
+| [`int`](class_int.md)                                             | [`body_get_object_instance_id`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_object_instance_id) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
+| [`Variant`](class_variant.md)                                     | [`body_get_param`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_param) ( body: [`RID`](class_rid.md), param: [BodyParameter](#enum_physicsserver2d_bodyparameter) ) const[^const]                                                                                                                                        |
+| [`RID`](class_rid.md)                                             | [`body_get_shape`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_shape) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                                   |
+| [`int`](class_int.md)                                             | [`body_get_shape_count`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_shape_count) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                         |
+| [`Transform2D`](class_transform2d.md)                             | [`body_get_shape_transform`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_shape_transform) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
+| [`RID`](class_rid.md)                                             | [`body_get_space`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_space) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                     |
+| [`Variant`](class_variant.md)                                     | [`body_get_state`](class_physicsserver2d.md#class_physicsserver2d_method_body_get_state) ( body: [`RID`](class_rid.md), state: [BodyState](#enum_physicsserver2d_bodystate) ) const[^const]                                                                                                                                                |
+| [`bool`](class_bool.md)                                           | [`body_is_omitting_force_integration`](class_physicsserver2d.md#class_physicsserver2d_method_body_is_omitting_force_integration) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                             |
+| `void`                                                            | [`body_remove_collision_exception`](class_physicsserver2d.md#class_physicsserver2d_method_body_remove_collision_exception) ( body: [`RID`](class_rid.md), excepted_body: [`RID`](class_rid.md) )                                                                                                                                           |
+| `void`                                                            | [`body_remove_shape`](class_physicsserver2d.md#class_physicsserver2d_method_body_remove_shape) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md) )                                                                                                                                                                           |
+| `void`                                                            | [`body_reset_mass_properties`](class_physicsserver2d.md#class_physicsserver2d_method_body_reset_mass_properties) ( body: [`RID`](class_rid.md) )                                                                                                                                                                                           |
+| `void`                                                            | [`body_set_axis_velocity`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_axis_velocity) ( body: [`RID`](class_rid.md), axis_velocity: [`Vector2`](class_vector2.md) )                                                                                                                                                     |
+| `void`                                                            | [`body_set_collision_layer`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_collision_layer) ( body: [`RID`](class_rid.md), layer: [`int`](class_int.md) )                                                                                                                                                                 |
+| `void`                                                            | [`body_set_collision_mask`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_collision_mask) ( body: [`RID`](class_rid.md), mask: [`int`](class_int.md) )                                                                                                                                                                    |
+| `void`                                                            | [`body_set_collision_priority`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_collision_priority) ( body: [`RID`](class_rid.md), priority: [`float`](class_float.md) )                                                                                                                                                    |
+| `void`                                                            | [`body_set_constant_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_constant_force) ( body: [`RID`](class_rid.md), force: [`Vector2`](class_vector2.md) )                                                                                                                                                           |
+| `void`                                                            | [`body_set_constant_torque`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_constant_torque) ( body: [`RID`](class_rid.md), torque: [`float`](class_float.md) )                                                                                                                                                            |
+| `void`                                                            | [`body_set_continuous_collision_detection_mode`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_continuous_collision_detection_mode) ( body: [`RID`](class_rid.md), mode: [CCDMode](#enum_physicsserver2d_ccdmode) )                                                                                                       |
+| `void`                                                            | [`body_set_force_integration_callback`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_force_integration_callback) ( body: [`RID`](class_rid.md), callable: [`Callable`](class_callable.md), userdata: [`Variant`](class_variant.md) = null )                                                                              |
+| `void`                                                            | [`body_set_max_contacts_reported`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_max_contacts_reported) ( body: [`RID`](class_rid.md), amount: [`int`](class_int.md) )                                                                                                                                                    |
+| `void`                                                            | [`body_set_mode`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_mode) ( body: [`RID`](class_rid.md), mode: [BodyMode](#enum_physicsserver2d_bodymode) )                                                                                                                                                                   |
+| `void`                                                            | [`body_set_omit_force_integration`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_omit_force_integration) ( body: [`RID`](class_rid.md), enable: [`bool`](class_bool.md) )                                                                                                                                                |
+| `void`                                                            | [`body_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_param) ( body: [`RID`](class_rid.md), param: [BodyParameter](#enum_physicsserver2d_bodyparameter), value: [`Variant`](class_variant.md) )                                                                                                                |
+| `void`                                                            | [`body_set_shape`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_shape) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), shape: [`RID`](class_rid.md) )                                                                                                                                                   |
+| `void`                                                            | [`body_set_shape_as_one_way_collision`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_shape_as_one_way_collision) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), enable: [`bool`](class_bool.md), margin: [`float`](class_float.md) )                                                                   |
+| `void`                                                            | [`body_set_shape_disabled`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_shape_disabled) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                                                                            |
+| `void`                                                            | [`body_set_shape_transform`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_shape_transform) ( body: [`RID`](class_rid.md), shape_idx: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                           |
+| `void`                                                            | [`body_set_space`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_space) ( body: [`RID`](class_rid.md), space: [`RID`](class_rid.md) )                                                                                                                                                                                     |
+| `void`                                                            | [`body_set_state`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_state) ( body: [`RID`](class_rid.md), state: [BodyState](#enum_physicsserver2d_bodystate), value: [`Variant`](class_variant.md) )                                                                                                                        |
+| `void`                                                            | [`body_set_state_sync_callback`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_state_sync_callback) ( body: [`RID`](class_rid.md), callable: [`Callable`](class_callable.md) )                                                                                                                                            |
+| [`bool`](class_bool.md)                                           | [`body_test_motion`](class_physicsserver2d.md#class_physicsserver2d_method_body_test_motion) ( body: [`RID`](class_rid.md), parameters: [`PhysicsTestMotionParameters2D`](class_physicstestmotionparameters2d.md), result: [`PhysicsTestMotionResult2D`](class_physicstestmotionresult2d.md) = null )                                      |
+| [`RID`](class_rid.md)                                             | [`capsule_shape_create`](class_physicsserver2d.md#class_physicsserver2d_method_capsule_shape_create) ( )                                                                                                                                                                                                                                   |
+| [`RID`](class_rid.md)                                             | [`circle_shape_create`](class_physicsserver2d.md#class_physicsserver2d_method_circle_shape_create) ( )                                                                                                                                                                                                                                     |
+| [`RID`](class_rid.md)                                             | [`concave_polygon_shape_create`](class_physicsserver2d.md#class_physicsserver2d_method_concave_polygon_shape_create) ( )                                                                                                                                                                                                                   |
+| [`RID`](class_rid.md)                                             | [`convex_polygon_shape_create`](class_physicsserver2d.md#class_physicsserver2d_method_convex_polygon_shape_create) ( )                                                                                                                                                                                                                     |
+| [`float`](class_float.md)                                         | [`damped_spring_joint_get_param`](class_physicsserver2d.md#class_physicsserver2d_method_damped_spring_joint_get_param) ( joint: [`RID`](class_rid.md), param: [DampedSpringParam](#enum_physicsserver2d_dampedspringparam) ) const[^const]                                                                                                 |
+| `void`                                                            | [`damped_spring_joint_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_damped_spring_joint_set_param) ( joint: [`RID`](class_rid.md), param: [DampedSpringParam](#enum_physicsserver2d_dampedspringparam), value: [`float`](class_float.md) )                                                                             |
+| `void`                                                            | [`free_rid`](class_physicsserver2d.md#class_physicsserver2d_method_free_rid) ( rid: [`RID`](class_rid.md) )                                                                                                                                                                                                                                |
+| [`int`](class_int.md)                                             | [`get_process_info`](class_physicsserver2d.md#class_physicsserver2d_method_get_process_info) ( process_info: [ProcessInfo](#enum_physicsserver2d_processinfo) )                                                                                                                                                                            |
+| `void`                                                            | [`joint_clear`](class_physicsserver2d.md#class_physicsserver2d_method_joint_clear) ( joint: [`RID`](class_rid.md) )                                                                                                                                                                                                                        |
+| [`RID`](class_rid.md)                                             | [`joint_create`](class_physicsserver2d.md#class_physicsserver2d_method_joint_create) ( )                                                                                                                                                                                                                                                   |
+| `void`                                                            | [`joint_disable_collisions_between_bodies`](class_physicsserver2d.md#class_physicsserver2d_method_joint_disable_collisions_between_bodies) ( joint: [`RID`](class_rid.md), disable: [`bool`](class_bool.md) )                                                                                                                              |
+| [`float`](class_float.md)                                         | [`joint_get_param`](class_physicsserver2d.md#class_physicsserver2d_method_joint_get_param) ( joint: [`RID`](class_rid.md), param: [JointParam](#enum_physicsserver2d_jointparam) ) const[^const]                                                                                                                                           |
+| [JointType](#enum_physicsserver2d_jointtype)                      | [`joint_get_type`](class_physicsserver2d.md#class_physicsserver2d_method_joint_get_type) ( joint: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                    |
+| [`bool`](class_bool.md)                                           | [`joint_is_disabled_collisions_between_bodies`](class_physicsserver2d.md#class_physicsserver2d_method_joint_is_disabled_collisions_between_bodies) ( joint: [`RID`](class_rid.md) ) const[^const]                                                                                                                                          |
+| `void`                                                            | [`joint_make_damped_spring`](class_physicsserver2d.md#class_physicsserver2d_method_joint_make_damped_spring) ( joint: [`RID`](class_rid.md), anchor_a: [`Vector2`](class_vector2.md), anchor_b: [`Vector2`](class_vector2.md), body_a: [`RID`](class_rid.md), body_b: [`RID`](class_rid.md) = RID() )                                      |
+| `void`                                                            | [`joint_make_groove`](class_physicsserver2d.md#class_physicsserver2d_method_joint_make_groove) ( joint: [`RID`](class_rid.md), groove1_a: [`Vector2`](class_vector2.md), groove2_a: [`Vector2`](class_vector2.md), anchor_b: [`Vector2`](class_vector2.md), body_a: [`RID`](class_rid.md) = RID(), body_b: [`RID`](class_rid.md) = RID() ) |
+| `void`                                                            | [`joint_make_pin`](class_physicsserver2d.md#class_physicsserver2d_method_joint_make_pin) ( joint: [`RID`](class_rid.md), anchor: [`Vector2`](class_vector2.md), body_a: [`RID`](class_rid.md), body_b: [`RID`](class_rid.md) = RID() )                                                                                                     |
+| `void`                                                            | [`joint_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_joint_set_param) ( joint: [`RID`](class_rid.md), param: [JointParam](#enum_physicsserver2d_jointparam), value: [`float`](class_float.md) )                                                                                                                       |
+| [`bool`](class_bool.md)                                           | [`pin_joint_get_flag`](class_physicsserver2d.md#class_physicsserver2d_method_pin_joint_get_flag) ( joint: [`RID`](class_rid.md), flag: [PinJointFlag](#enum_physicsserver2d_pinjointflag) ) const[^const]                                                                                                                                  |
+| [`float`](class_float.md)                                         | [`pin_joint_get_param`](class_physicsserver2d.md#class_physicsserver2d_method_pin_joint_get_param) ( joint: [`RID`](class_rid.md), param: [PinJointParam](#enum_physicsserver2d_pinjointparam) ) const[^const]                                                                                                                             |
+| `void`                                                            | [`pin_joint_set_flag`](class_physicsserver2d.md#class_physicsserver2d_method_pin_joint_set_flag) ( joint: [`RID`](class_rid.md), flag: [PinJointFlag](#enum_physicsserver2d_pinjointflag), enabled: [`bool`](class_bool.md) )                                                                                                              |
+| `void`                                                            | [`pin_joint_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_pin_joint_set_param) ( joint: [`RID`](class_rid.md), param: [PinJointParam](#enum_physicsserver2d_pinjointparam), value: [`float`](class_float.md) )                                                                                                         |
+| [`RID`](class_rid.md)                                             | [`rectangle_shape_create`](class_physicsserver2d.md#class_physicsserver2d_method_rectangle_shape_create) ( )                                                                                                                                                                                                                               |
+| [`RID`](class_rid.md)                                             | [`segment_shape_create`](class_physicsserver2d.md#class_physicsserver2d_method_segment_shape_create) ( )                                                                                                                                                                                                                                   |
+| [`RID`](class_rid.md)                                             | [`separation_ray_shape_create`](class_physicsserver2d.md#class_physicsserver2d_method_separation_ray_shape_create) ( )                                                                                                                                                                                                                     |
+| `void`                                                            | [`set_active`](class_physicsserver2d.md#class_physicsserver2d_method_set_active) ( active: [`bool`](class_bool.md) )                                                                                                                                                                                                                       |
+| [`Variant`](class_variant.md)                                     | [`shape_get_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_get_data) ( shape: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                    |
+| [ShapeType](#enum_physicsserver2d_shapetype)                      | [`shape_get_type`](class_physicsserver2d.md#class_physicsserver2d_method_shape_get_type) ( shape: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                    |
+| `void`                                                            | [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) ( shape: [`RID`](class_rid.md), data: [`Variant`](class_variant.md) )                                                                                                                                                                             |
+| [`RID`](class_rid.md)                                             | [`space_create`](class_physicsserver2d.md#class_physicsserver2d_method_space_create) ( )                                                                                                                                                                                                                                                   |
+| [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) | [`space_get_direct_state`](class_physicsserver2d.md#class_physicsserver2d_method_space_get_direct_state) ( space: [`RID`](class_rid.md) )                                                                                                                                                                                                  |
+| [`float`](class_float.md)                                         | [`space_get_param`](class_physicsserver2d.md#class_physicsserver2d_method_space_get_param) ( space: [`RID`](class_rid.md), param: [SpaceParameter](#enum_physicsserver2d_spaceparameter) ) const[^const]                                                                                                                                   |
+| [`bool`](class_bool.md)                                           | [`space_is_active`](class_physicsserver2d.md#class_physicsserver2d_method_space_is_active) ( space: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                  |
+| `void`                                                            | [`space_set_active`](class_physicsserver2d.md#class_physicsserver2d_method_space_set_active) ( space: [`RID`](class_rid.md), active: [`bool`](class_bool.md) )                                                                                                                                                                             |
+| `void`                                                            | [`space_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_space_set_param) ( space: [`RID`](class_rid.md), param: [SpaceParameter](#enum_physicsserver2d_spaceparameter), value: [`float`](class_float.md) )                                                                                                               |
+| [`RID`](class_rid.md)                                             | [`world_boundary_shape_create`](class_physicsserver2d.md#class_physicsserver2d_method_world_boundary_shape_create) ( )                                                                                                                                                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -169,55 +169,55 @@ enum **SpaceParameter**: <div id="enum_physicsserver2d_spaceparameter"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_CONTACT_RECYCLE_RADIUS** = ``0``
 
-Constant to set/get the maximum distance a pair of bodies has to move before their collision status has to be recalculated. The default value of this parameter is [`ProjectSettings.physics/2d/solver/contact_recycle_radius`](#class_projectsettings_property_physics/2d/solver/contact_recycle_radius).
+Constant to set/get the maximum distance a pair of bodies has to move before their collision status has to be recalculated. The default value of this parameter is [`ProjectSettings.physics/2d/solver/contact_recycle_radius`](class_projectsettings.md#class_projectsettings_property_physics/2d/solver/contact_recycle_radius).
 
 <div id="_class_physicsserver2d_constant_space_param_contact_max_separation"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_CONTACT_MAX_SEPARATION** = ``1``
 
-Constant to set/get the maximum distance a shape can be from another before they are considered separated and the contact is discarded. The default value of this parameter is [`ProjectSettings.physics/2d/solver/contact_max_separation`](#class_projectsettings_property_physics/2d/solver/contact_max_separation).
+Constant to set/get the maximum distance a shape can be from another before they are considered separated and the contact is discarded. The default value of this parameter is [`ProjectSettings.physics/2d/solver/contact_max_separation`](class_projectsettings.md#class_projectsettings_property_physics/2d/solver/contact_max_separation).
 
 <div id="_class_physicsserver2d_constant_space_param_contact_max_allowed_penetration"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION** = ``2``
 
-Constant to set/get the maximum distance a shape can penetrate another shape before it is considered a collision. The default value of this parameter is [`ProjectSettings.physics/2d/solver/contact_max_allowed_penetration`](#class_projectsettings_property_physics/2d/solver/contact_max_allowed_penetration).
+Constant to set/get the maximum distance a shape can penetrate another shape before it is considered a collision. The default value of this parameter is [`ProjectSettings.physics/2d/solver/contact_max_allowed_penetration`](class_projectsettings.md#class_projectsettings_property_physics/2d/solver/contact_max_allowed_penetration).
 
 <div id="_class_physicsserver2d_constant_space_param_contact_default_bias"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_CONTACT_DEFAULT_BIAS** = ``3``
 
-Constant to set/get the default solver bias for all physics contacts. A solver bias is a factor controlling how much two objects "rebound", after overlapping, to avoid leaving them in that state because of numerical imprecision. The default value of this parameter is [`ProjectSettings.physics/2d/solver/default_contact_bias`](#class_projectsettings_property_physics/2d/solver/default_contact_bias).
+Constant to set/get the default solver bias for all physics contacts. A solver bias is a factor controlling how much two objects "rebound", after overlapping, to avoid leaving them in that state because of numerical imprecision. The default value of this parameter is [`ProjectSettings.physics/2d/solver/default_contact_bias`](class_projectsettings.md#class_projectsettings_property_physics/2d/solver/default_contact_bias).
 
 <div id="_class_physicsserver2d_constant_space_param_body_linear_velocity_sleep_threshold"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD** = ``4``
 
-Constant to set/get the threshold linear velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given. The default value of this parameter is [`ProjectSettings.physics/2d/sleep_threshold_linear`](#class_projectsettings_property_physics/2d/sleep_threshold_linear).
+Constant to set/get the threshold linear velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given. The default value of this parameter is [`ProjectSettings.physics/2d/sleep_threshold_linear`](class_projectsettings.md#class_projectsettings_property_physics/2d/sleep_threshold_linear).
 
 <div id="_class_physicsserver2d_constant_space_param_body_angular_velocity_sleep_threshold"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD** = ``5``
 
-Constant to set/get the threshold angular velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given. The default value of this parameter is [`ProjectSettings.physics/2d/sleep_threshold_angular`](#class_projectsettings_property_physics/2d/sleep_threshold_angular).
+Constant to set/get the threshold angular velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given. The default value of this parameter is [`ProjectSettings.physics/2d/sleep_threshold_angular`](class_projectsettings.md#class_projectsettings_property_physics/2d/sleep_threshold_angular).
 
 <div id="_class_physicsserver2d_constant_space_param_body_time_to_sleep"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_BODY_TIME_TO_SLEEP** = ``6``
 
-Constant to set/get the maximum time of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after this time. The default value of this parameter is [`ProjectSettings.physics/2d/time_before_sleep`](#class_projectsettings_property_physics/2d/time_before_sleep).
+Constant to set/get the maximum time of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after this time. The default value of this parameter is [`ProjectSettings.physics/2d/time_before_sleep`](class_projectsettings.md#class_projectsettings_property_physics/2d/time_before_sleep).
 
 <div id="_class_physicsserver2d_constant_space_param_constraint_default_bias"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_CONSTRAINT_DEFAULT_BIAS** = ``7``
 
-Constant to set/get the default solver bias for all physics constraints. A solver bias is a factor controlling how much two objects "rebound", after violating a constraint, to avoid leaving them in that state because of numerical imprecision. The default value of this parameter is [`ProjectSettings.physics/2d/solver/default_constraint_bias`](#class_projectsettings_property_physics/2d/solver/default_constraint_bias).
+Constant to set/get the default solver bias for all physics constraints. A solver bias is a factor controlling how much two objects "rebound", after violating a constraint, to avoid leaving them in that state because of numerical imprecision. The default value of this parameter is [`ProjectSettings.physics/2d/solver/default_constraint_bias`](class_projectsettings.md#class_projectsettings_property_physics/2d/solver/default_constraint_bias).
 
 <div id="_class_physicsserver2d_constant_space_param_solver_iterations"></div>
 
 [SpaceParameter](#enum_physicsserver2d_spaceparameter) **SPACE_PARAM_SOLVER_ITERATIONS** = ``8``
 
-Constant to set/get the number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. The default value of this parameter is [`ProjectSettings.physics/2d/solver/solver_iterations`](#class_projectsettings_property_physics/2d/solver/solver_iterations).
+Constant to set/get the number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. The default value of this parameter is [`ProjectSettings.physics/2d/solver/solver_iterations`](class_projectsettings.md#class_projectsettings_property_physics/2d/solver/solver_iterations).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -293,7 +293,7 @@ enum **AreaParameter**: <div id="enum_physicsserver2d_areaparameter"></div>
 
 [AreaParameter](#enum_physicsserver2d_areaparameter) **AREA_PARAM_GRAVITY_OVERRIDE_MODE** = ``0``
 
-Constant to set/get gravity override mode in an area. See [AreaSpaceOverrideMode](#enum_physicsserver2d_areaspaceoverridemode) for possible values. The default value of this parameter is [`AREA_SPACE_OVERRIDE_DISABLED`](#class_physicsserver2d_constant_area_space_override_disabled).
+Constant to set/get gravity override mode in an area. See [AreaSpaceOverrideMode](#enum_physicsserver2d_areaspaceoverridemode) for possible values. The default value of this parameter is [`AREA_SPACE_OVERRIDE_DISABLED`](class_physicsserver2d.md#class_physicsserver2d_constant_area_space_override_disabled).
 
 <div id="_class_physicsserver2d_constant_area_param_gravity"></div>
 
@@ -317,7 +317,7 @@ Constant to set/get whether the gravity vector of an area is a direction, or a c
 
 [AreaParameter](#enum_physicsserver2d_areaparameter) **AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE** = ``4``
 
-Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by [`AREA_PARAM_GRAVITY`](#class_physicsserver2d_constant_area_param_gravity). For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4x the gravity), and so on.
+Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by [`AREA_PARAM_GRAVITY`](class_physicsserver2d.md#class_physicsserver2d_constant_area_param_gravity). For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4x the gravity), and so on.
 
 The above is true only when the unit distance is a positive number. When the unit distance is set to 0.0, the gravity will be constant regardless of distance. The default value of this parameter is `0.0`.
 
@@ -325,7 +325,7 @@ The above is true only when the unit distance is a positive number. When the uni
 
 [AreaParameter](#enum_physicsserver2d_areaparameter) **AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE** = ``5``
 
-Constant to set/get linear damping override mode in an area. See [AreaSpaceOverrideMode](#enum_physicsserver2d_areaspaceoverridemode) for possible values. The default value of this parameter is [`AREA_SPACE_OVERRIDE_DISABLED`](#class_physicsserver2d_constant_area_space_override_disabled).
+Constant to set/get linear damping override mode in an area. See [AreaSpaceOverrideMode](#enum_physicsserver2d_areaspaceoverridemode) for possible values. The default value of this parameter is [`AREA_SPACE_OVERRIDE_DISABLED`](class_physicsserver2d.md#class_physicsserver2d_constant_area_space_override_disabled).
 
 <div id="_class_physicsserver2d_constant_area_param_linear_damp"></div>
 
@@ -337,7 +337,7 @@ Constant to set/get the linear damping factor of an area. The default value of t
 
 [AreaParameter](#enum_physicsserver2d_areaparameter) **AREA_PARAM_ANGULAR_DAMP_OVERRIDE_MODE** = ``7``
 
-Constant to set/get angular damping override mode in an area. See [AreaSpaceOverrideMode](#enum_physicsserver2d_areaspaceoverridemode) for possible values. The default value of this parameter is [`AREA_SPACE_OVERRIDE_DISABLED`](#class_physicsserver2d_constant_area_space_override_disabled).
+Constant to set/get angular damping override mode in an area. See [AreaSpaceOverrideMode](#enum_physicsserver2d_areaspaceoverridemode) for possible values. The default value of this parameter is [`AREA_SPACE_OVERRIDE_DISABLED`](class_physicsserver2d.md#class_physicsserver2d_constant_area_space_override_disabled).
 
 <div id="_class_physicsserver2d_constant_area_param_angular_damp"></div>
 
@@ -445,11 +445,11 @@ Constant to set/get a body's friction. The default value of this parameter is `1
 
 [BodyParameter](#enum_physicsserver2d_bodyparameter) **BODY_PARAM_MASS** = ``2``
 
-Constant to set/get a body's mass. The default value of this parameter is `1.0`. If the body's mode is set to [`BODY_MODE_RIGID`](#class_physicsserver2d_constant_body_mode_rigid), then setting this parameter will have the following additional effects:
+Constant to set/get a body's mass. The default value of this parameter is `1.0`. If the body's mode is set to [`BODY_MODE_RIGID`](class_physicsserver2d.md#class_physicsserver2d_constant_body_mode_rigid), then setting this parameter will have the following additional effects:
 
-- If the parameter [`BODY_PARAM_CENTER_OF_MASS`](#class_physicsserver2d_constant_body_param_center_of_mass) has never been set explicitly, then the value of that parameter will be recalculated based on the body's shapes.
+- If the parameter [`BODY_PARAM_CENTER_OF_MASS`](class_physicsserver2d.md#class_physicsserver2d_constant_body_param_center_of_mass) has never been set explicitly, then the value of that parameter will be recalculated based on the body's shapes.
 
-- If the parameter [`BODY_PARAM_INERTIA`](#class_physicsserver2d_constant_body_param_inertia) is set to a value `<= 0.0`, then the value of that parameter will be recalculated based on the body's shapes, mass, and center of mass.
+- If the parameter [`BODY_PARAM_INERTIA`](class_physicsserver2d.md#class_physicsserver2d_constant_body_param_inertia) is set to a value `<= 0.0`, then the value of that parameter will be recalculated based on the body's shapes, mass, and center of mass.
 
 <div id="_class_physicsserver2d_constant_body_param_inertia"></div>
 
@@ -461,7 +461,7 @@ Constant to set/get a body's inertia. The default value of this parameter is `0.
 
 [BodyParameter](#enum_physicsserver2d_bodyparameter) **BODY_PARAM_CENTER_OF_MASS** = ``4``
 
-Constant to set/get a body's center of mass position in the body's local coordinate system. The default value of this parameter is `Vector2(0,0)`. If this parameter is never set explicitly, then it is recalculated based on the body's shapes when setting the parameter [`BODY_PARAM_MASS`](#class_physicsserver2d_constant_body_param_mass) or when calling [`body_set_space`](#class_physicsserver2d_method_body_set_space).
+Constant to set/get a body's center of mass position in the body's local coordinate system. The default value of this parameter is `Vector2(0,0)`. If this parameter is never set explicitly, then it is recalculated based on the body's shapes when setting the parameter [`BODY_PARAM_MASS`](class_physicsserver2d.md#class_physicsserver2d_constant_body_param_mass) or when calling [`body_set_space`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_space).
 
 <div id="_class_physicsserver2d_constant_body_param_gravity_scale"></div>
 
@@ -473,13 +473,13 @@ Constant to set/get a body's gravity multiplier. The default value of this param
 
 [BodyParameter](#enum_physicsserver2d_bodyparameter) **BODY_PARAM_LINEAR_DAMP_MODE** = ``6``
 
-Constant to set/get a body's linear damping mode. See [BodyDampMode](#enum_physicsserver2d_bodydampmode) for possible values. The default value of this parameter is [`BODY_DAMP_MODE_COMBINE`](#class_physicsserver2d_constant_body_damp_mode_combine).
+Constant to set/get a body's linear damping mode. See [BodyDampMode](#enum_physicsserver2d_bodydampmode) for possible values. The default value of this parameter is [`BODY_DAMP_MODE_COMBINE`](class_physicsserver2d.md#class_physicsserver2d_constant_body_damp_mode_combine).
 
 <div id="_class_physicsserver2d_constant_body_param_angular_damp_mode"></div>
 
 [BodyParameter](#enum_physicsserver2d_bodyparameter) **BODY_PARAM_ANGULAR_DAMP_MODE** = ``7``
 
-Constant to set/get a body's angular damping mode. See [BodyDampMode](#enum_physicsserver2d_bodydampmode) for possible values. The default value of this parameter is [`BODY_DAMP_MODE_COMBINE`](#class_physicsserver2d_constant_body_damp_mode_combine).
+Constant to set/get a body's angular damping mode. See [BodyDampMode](#enum_physicsserver2d_bodydampmode) for possible values. The default value of this parameter is [`BODY_DAMP_MODE_COMBINE`](class_physicsserver2d.md#class_physicsserver2d_constant_body_damp_mode_combine).
 
 <div id="_class_physicsserver2d_constant_body_param_linear_damp"></div>
 
@@ -791,7 +791,7 @@ Adds a shape to the area, with the given local transform. The shape (together wi
 
 `void` **area_attach_canvas_instance_id** ( area: [`RID`](class_rid.md), id: [`int`](class_int.md) )<div id="class_physicsserver2d_method_area_attach_canvas_instance_id"></div>
 
-Attaches the `ObjectID` of a canvas to the area. Use [`Object.get_instance_id`](#class_object_method_get_instance_id) to get the `ObjectID` of a [`CanvasLayer`](class_canvaslayer.md).
+Attaches the `ObjectID` of a canvas to the area. Use [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id) to get the `ObjectID` of a [`CanvasLayer`](class_canvaslayer.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -801,7 +801,7 @@ Attaches the `ObjectID` of a canvas to the area. Use [`Object.get_instance_id`](
 
 `void` **area_attach_object_instance_id** ( area: [`RID`](class_rid.md), id: [`int`](class_int.md) )<div id="class_physicsserver2d_method_area_attach_object_instance_id"></div>
 
-Attaches the `ObjectID` of an [`Object`](class_object.md) to the area. Use [`Object.get_instance_id`](#class_object_method_get_instance_id) to get the `ObjectID` of a [`CollisionObject2D`](class_collisionobject2d.md).
+Attaches the `ObjectID` of an [`Object`](class_object.md) to the area. Use [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id) to get the `ObjectID` of a [`CollisionObject2D`](class_collisionobject2d.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -823,7 +823,7 @@ Removes all shapes from the area. This does not delete the shapes themselves, so
 
 Creates a 2D area object in the physics server, and returns the [`RID`](class_rid.md) that identifies it. The default settings for the created area include a collision layer and mask set to `1`, and `monitorable` set to `false`.
 
-Use [`area_add_shape`](#class_physicsserver2d_method_area_add_shape) to add shapes to it, use [`area_set_transform`](#class_physicsserver2d_method_area_set_transform) to set its transform, and use [`area_set_space`](#class_physicsserver2d_method_area_set_space) to add the area to a space. If you want the area to be detectable use [`area_set_monitorable`](#class_physicsserver2d_method_area_set_monitorable).
+Use [`area_add_shape`](class_physicsserver2d.md#class_physicsserver2d_method_area_add_shape) to add shapes to it, use [`area_set_transform`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_transform) to set its transform, and use [`area_set_space`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_space) to add the area to a space. If you want the area to be detectable use [`area_set_monitorable`](class_physicsserver2d.md#class_physicsserver2d_method_area_set_monitorable).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -833,7 +833,7 @@ Use [`area_add_shape`](#class_physicsserver2d_method_area_add_shape) to add shap
 
 [`int`](class_int.md) **area_get_canvas_instance_id** ( area: [`RID`](class_rid.md) ) const[^const]<div id="class_physicsserver2d_method_area_get_canvas_instance_id"></div>
 
-Returns the `ObjectID` of the canvas attached to the area. Use [`@GlobalScope.instance_from_id`](#class_@globalscope_method_instance_from_id) to retrieve a [`CanvasLayer`](class_canvaslayer.md) from a nonzero `ObjectID`.
+Returns the `ObjectID` of the canvas attached to the area. Use [`@GlobalScope.instance_from_id`](class_@globalscope.md#class_@globalscope_method_instance_from_id) to retrieve a [`CanvasLayer`](class_canvaslayer.md) from a nonzero `ObjectID`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -863,7 +863,7 @@ Returns the physics layer or layers the area can contact with, as a bitmask.
 
 [`int`](class_int.md) **area_get_object_instance_id** ( area: [`RID`](class_rid.md) ) const[^const]<div id="class_physicsserver2d_method_area_get_object_instance_id"></div>
 
-Returns the `ObjectID` attached to the area. Use [`@GlobalScope.instance_from_id`](#class_@globalscope_method_instance_from_id) to retrieve an [`Object`](class_object.md) from a nonzero `ObjectID`.
+Returns the `ObjectID` attached to the area. Use [`@GlobalScope.instance_from_id`](class_@globalscope.md#class_@globalscope_method_instance_from_id) to retrieve an [`Object`](class_object.md) from a nonzero `ObjectID`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -945,7 +945,7 @@ Removes the shape with the given index from the area's array of shapes. The shap
 
 Sets the area's area monitor callback. This callback will be called when any other (shape of an) area enters or exits (a shape of) the given area, and must take the following five parameters:
 
-1. an integer `status`: either [`AREA_BODY_ADDED`](#class_physicsserver2d_constant_area_body_added) or [`AREA_BODY_REMOVED`](#class_physicsserver2d_constant_area_body_removed) depending on whether the other area's shape entered or exited the area,
+1. an integer `status`: either [`AREA_BODY_ADDED`](class_physicsserver2d.md#class_physicsserver2d_constant_area_body_added) or [`AREA_BODY_REMOVED`](class_physicsserver2d.md#class_physicsserver2d_constant_area_body_removed) depending on whether the other area's shape entered or exited the area,
 
 2. an [`RID`](class_rid.md) `area_rid`: the [`RID`](class_rid.md) of the other area that entered or exited the area,
 
@@ -987,7 +987,7 @@ Sets which physics layers the area will monitor, via a bitmask.
 
 Sets the area's body monitor callback. This callback will be called when any other (shape of a) body enters or exits (a shape of) the given area, and must take the following five parameters:
 
-1. an integer `status`: either [`AREA_BODY_ADDED`](#class_physicsserver2d_constant_area_body_added) or [`AREA_BODY_REMOVED`](#class_physicsserver2d_constant_area_body_removed) depending on whether the other body shape entered or exited the area,
+1. an integer `status`: either [`AREA_BODY_ADDED`](class_physicsserver2d.md#class_physicsserver2d_constant_area_body_added) or [`AREA_BODY_REMOVED`](class_physicsserver2d.md#class_physicsserver2d_constant_area_body_removed) depending on whether the other body shape entered or exited the area,
 
 2. an [`RID`](class_rid.md) `body_rid`: the [`RID`](class_rid.md) of the body that entered or exited the area,
 
@@ -1091,7 +1091,7 @@ Adds `excepted_body` to the body's list of collision exceptions, so that collisi
 
 Adds a constant directional force to the body. The force does not affect rotation. The force remains applied over time until cleared with `PhysicsServer2D.body_set_constant_force(body, Vector2(0, 0))`.
 
-This is equivalent to using [`body_add_constant_force`](#class_physicsserver2d_method_body_add_constant_force) at the body's center of mass.
+This is equivalent to using [`body_add_constant_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_force) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1135,7 +1135,7 @@ Adds a shape to the area, with the given local transform. The shape (together wi
 
 Applies a directional force to the body, at the body's center of mass. The force does not affect rotation. A force is time dependent and meant to be applied every physics update.
 
-This is equivalent to using [`body_apply_force`](#class_physicsserver2d_method_body_apply_force) at the body's center of mass.
+This is equivalent to using [`body_apply_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_apply_force) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1149,7 +1149,7 @@ Applies a directional impulse to the body, at the body's center of mass. The imp
 
 An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-This is equivalent to using [`body_apply_impulse`](#class_physicsserver2d_method_body_apply_impulse) at the body's center of mass.
+This is equivalent to using [`body_apply_impulse`](class_physicsserver2d.md#class_physicsserver2d_method_body_apply_impulse) at the body's center of mass.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1207,7 +1207,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 `void` **body_attach_canvas_instance_id** ( body: [`RID`](class_rid.md), id: [`int`](class_int.md) )<div id="class_physicsserver2d_method_body_attach_canvas_instance_id"></div>
 
-Attaches the `ObjectID` of a canvas to the body. Use [`Object.get_instance_id`](#class_object_method_get_instance_id) to get the `ObjectID` of a [`CanvasLayer`](class_canvaslayer.md).
+Attaches the `ObjectID` of a canvas to the body. Use [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id) to get the `ObjectID` of a [`CanvasLayer`](class_canvaslayer.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1217,7 +1217,7 @@ Attaches the `ObjectID` of a canvas to the body. Use [`Object.get_instance_id`](
 
 `void` **body_attach_object_instance_id** ( body: [`RID`](class_rid.md), id: [`int`](class_int.md) )<div id="class_physicsserver2d_method_body_attach_object_instance_id"></div>
 
-Attaches the `ObjectID` of an [`Object`](class_object.md) to the body. Use [`Object.get_instance_id`](#class_object_method_get_instance_id) to get the `ObjectID` of a [`CollisionObject2D`](class_collisionobject2d.md).
+Attaches the `ObjectID` of an [`Object`](class_object.md) to the body. Use [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id) to get the `ObjectID` of a [`CollisionObject2D`](class_collisionobject2d.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1237,9 +1237,9 @@ Removes all shapes from the body. This does not delete the shapes themselves, so
 
 [`RID`](class_rid.md) **body_create** ( )<div id="class_physicsserver2d_method_body_create"></div>
 
-Creates a 2D body object in the physics server, and returns the [`RID`](class_rid.md) that identifies it. The default settings for the created area include a collision layer and mask set to `1`, and body mode set to [`BODY_MODE_RIGID`](#class_physicsserver2d_constant_body_mode_rigid).
+Creates a 2D body object in the physics server, and returns the [`RID`](class_rid.md) that identifies it. The default settings for the created area include a collision layer and mask set to `1`, and body mode set to [`BODY_MODE_RIGID`](class_physicsserver2d.md#class_physicsserver2d_constant_body_mode_rigid).
 
-Use [`body_add_shape`](#class_physicsserver2d_method_body_add_shape) to add shapes to it, use [`body_set_state`](#class_physicsserver2d_method_body_set_state) to set its transform, and use [`body_set_space`](#class_physicsserver2d_method_body_set_space) to add the body to a space.
+Use [`body_add_shape`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_shape) to add shapes to it, use [`body_set_state`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_state) to set its transform, and use [`body_set_space`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_space) to add the body to a space.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1249,7 +1249,7 @@ Use [`body_add_shape`](#class_physicsserver2d_method_body_add_shape) to add shap
 
 [`int`](class_int.md) **body_get_canvas_instance_id** ( body: [`RID`](class_rid.md) ) const[^const]<div id="class_physicsserver2d_method_body_get_canvas_instance_id"></div>
 
-Returns the `ObjectID` of the canvas attached to the body. Use [`@GlobalScope.instance_from_id`](#class_@globalscope_method_instance_from_id) to retrieve a [`CanvasLayer`](class_canvaslayer.md) from a nonzero `ObjectID`.
+Returns the `ObjectID` of the canvas attached to the body. Use [`@GlobalScope.instance_from_id`](class_@globalscope.md#class_@globalscope_method_instance_from_id) to retrieve a [`CanvasLayer`](class_canvaslayer.md) from a nonzero `ObjectID`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1279,7 +1279,7 @@ Returns the physics layer or layers the body can collide with, as a bitmask.
 
 [`float`](class_float.md) **body_get_collision_priority** ( body: [`RID`](class_rid.md) ) const[^const]<div id="class_physicsserver2d_method_body_get_collision_priority"></div>
 
-Returns the body's collision priority. This is used in the depenetration phase of [`body_test_motion`](#class_physicsserver2d_method_body_test_motion). The higher the priority is, the lower the penetration into the body will be.
+Returns the body's collision priority. This is used in the depenetration phase of [`body_test_motion`](class_physicsserver2d.md#class_physicsserver2d_method_body_test_motion). The higher the priority is, the lower the penetration into the body will be.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1291,7 +1291,7 @@ Returns the body's collision priority. This is used in the depenetration phase o
 
 Returns the body's total constant positional force applied during each physics update.
 
-See [`body_add_constant_force`](#class_physicsserver2d_method_body_add_constant_force) and [`body_add_constant_central_force`](#class_physicsserver2d_method_body_add_constant_central_force).
+See [`body_add_constant_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_force) and [`body_add_constant_central_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_central_force).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1303,7 +1303,7 @@ See [`body_add_constant_force`](#class_physicsserver2d_method_body_add_constant_
 
 Returns the body's total constant rotational force applied during each physics update.
 
-See [`body_add_constant_torque`](#class_physicsserver2d_method_body_add_constant_torque).
+See [`body_add_constant_torque`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_torque).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1333,7 +1333,7 @@ Returns the [`PhysicsDirectBodyState2D`](class_physicsdirectbodystate2d.md) of t
 
 [`int`](class_int.md) **body_get_max_contacts_reported** ( body: [`RID`](class_rid.md) ) const[^const]<div id="class_physicsserver2d_method_body_get_max_contacts_reported"></div>
 
-Returns the maximum number of contacts that the body can report. See [`body_set_max_contacts_reported`](#class_physicsserver2d_method_body_set_max_contacts_reported).
+Returns the maximum number of contacts that the body can report. See [`body_set_max_contacts_reported`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_max_contacts_reported).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1353,7 +1353,7 @@ Returns the body's mode (see [BodyMode](#enum_physicsserver2d_bodymode)).
 
 [`int`](class_int.md) **body_get_object_instance_id** ( body: [`RID`](class_rid.md) ) const[^const]<div id="class_physicsserver2d_method_body_get_object_instance_id"></div>
 
-Returns the `ObjectID` attached to the body. Use [`@GlobalScope.instance_from_id`](#class_@globalscope_method_instance_from_id) to retrieve an [`Object`](class_object.md) from a nonzero `ObjectID`.
+Returns the `ObjectID` attached to the body. Use [`@GlobalScope.instance_from_id`](class_@globalscope.md#class_@globalscope_method_instance_from_id) to retrieve an [`Object`](class_object.md) from a nonzero `ObjectID`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1423,7 +1423,7 @@ Returns the value of the given state of the body. See [BodyState](#enum_physicss
 
 [`bool`](class_bool.md) **body_is_omitting_force_integration** ( body: [`RID`](class_rid.md) ) const[^const]<div id="class_physicsserver2d_method_body_is_omitting_force_integration"></div>
 
-Returns `true` if the body is omitting the standard force integration. See [`body_set_omit_force_integration`](#class_physicsserver2d_method_body_set_omit_force_integration).
+Returns `true` if the body is omitting the standard force integration. See [`body_set_omit_force_integration`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_omit_force_integration).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1453,7 +1453,7 @@ Removes the shape with the given index from the body's array of shapes. The shap
 
 `void` **body_reset_mass_properties** ( body: [`RID`](class_rid.md) )<div id="class_physicsserver2d_method_body_reset_mass_properties"></div>
 
-Restores the default inertia and center of mass of the body based on its shapes. This undoes any custom values previously set using [`body_set_param`](#class_physicsserver2d_method_body_set_param).
+Restores the default inertia and center of mass of the body based on its shapes. This undoes any custom values previously set using [`body_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_param).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1493,7 +1493,7 @@ Sets the physics layer or layers the body can collide with, via a bitmask.
 
 `void` **body_set_collision_priority** ( body: [`RID`](class_rid.md), priority: [`float`](class_float.md) )<div id="class_physicsserver2d_method_body_set_collision_priority"></div>
 
-Sets the body's collision priority. This is used in the depenetration phase of [`body_test_motion`](#class_physicsserver2d_method_body_test_motion). The higher the priority is, the lower the penetration into the body will be.
+Sets the body's collision priority. This is used in the depenetration phase of [`body_test_motion`](class_physicsserver2d.md#class_physicsserver2d_method_body_test_motion). The higher the priority is, the lower the penetration into the body will be.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1505,7 +1505,7 @@ Sets the body's collision priority. This is used in the depenetration phase of [
 
 Sets the body's total constant positional force applied during each physics update.
 
-See [`body_add_constant_force`](#class_physicsserver2d_method_body_add_constant_force) and [`body_add_constant_central_force`](#class_physicsserver2d_method_body_add_constant_central_force).
+See [`body_add_constant_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_force) and [`body_add_constant_central_force`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_central_force).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1517,7 +1517,7 @@ See [`body_add_constant_force`](#class_physicsserver2d_method_body_add_constant_
 
 Sets the body's total constant rotational force applied during each physics update.
 
-See [`body_add_constant_torque`](#class_physicsserver2d_method_body_add_constant_torque).
+See [`body_add_constant_torque`](class_physicsserver2d.md#class_physicsserver2d_method_body_add_constant_torque).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1541,7 +1541,7 @@ Continuous collision detection tries to predict where a moving body would collid
 
 Sets the body's custom force integration callback function to `callable`. Use an empty [`Callable`](class_callable.md) (`Callable()`) to clear the custom callback.
 
-The function `callable` will be called every physics tick, before the standard force integration (see [`body_set_omit_force_integration`](#class_physicsserver2d_method_body_set_omit_force_integration)). It can be used for example to update the body's linear and angular velocity based on contact with other bodies.
+The function `callable` will be called every physics tick, before the standard force integration (see [`body_set_omit_force_integration`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_omit_force_integration)). It can be used for example to update the body's linear and angular velocity based on contact with other bodies.
 
 If `userdata` is not `null`, the function `callable` must take the following two parameters:
 
@@ -1579,9 +1579,9 @@ Sets the body's mode. See [BodyMode](#enum_physicsserver2d_bodymode) for the lis
 
 `void` **body_set_omit_force_integration** ( body: [`RID`](class_rid.md), enable: [`bool`](class_bool.md) )<div id="class_physicsserver2d_method_body_set_omit_force_integration"></div>
 
-Sets whether the body omits the standard force integration. If `enable` is `true`, the body will not automatically use applied forces, torques, and damping to update the body's linear and angular velocity. In this case, [`body_set_force_integration_callback`](#class_physicsserver2d_method_body_set_force_integration_callback) can be used to manually update the linear and angular velocity instead.
+Sets whether the body omits the standard force integration. If `enable` is `true`, the body will not automatically use applied forces, torques, and damping to update the body's linear and angular velocity. In this case, [`body_set_force_integration_callback`](class_physicsserver2d.md#class_physicsserver2d_method_body_set_force_integration_callback) can be used to manually update the linear and angular velocity instead.
 
-This method is called when the property [`RigidBody2D.custom_integrator`](#class_rigidbody2d_property_custom_integrator) is set.
+This method is called when the property [`RigidBody2D.custom_integrator`](class_rigidbody2d.md#class_rigidbody2d_property_custom_integrator) is set.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1641,11 +1641,11 @@ Sets the local transform matrix of the body's shape with the given index.
 
 `void` **body_set_space** ( body: [`RID`](class_rid.md), space: [`RID`](class_rid.md) )<div id="class_physicsserver2d_method_body_set_space"></div>
 
-Adds the body to the given space, after removing the body from the previously assigned space (if any). If the body's mode is set to [`BODY_MODE_RIGID`](#class_physicsserver2d_constant_body_mode_rigid), then adding the body to a space will have the following additional effects:
+Adds the body to the given space, after removing the body from the previously assigned space (if any). If the body's mode is set to [`BODY_MODE_RIGID`](class_physicsserver2d.md#class_physicsserver2d_constant_body_mode_rigid), then adding the body to a space will have the following additional effects:
 
-- If the parameter [`BODY_PARAM_CENTER_OF_MASS`](#class_physicsserver2d_constant_body_param_center_of_mass) has never been set explicitly, then the value of that parameter will be recalculated based on the body's shapes.
+- If the parameter [`BODY_PARAM_CENTER_OF_MASS`](class_physicsserver2d.md#class_physicsserver2d_constant_body_param_center_of_mass) has never been set explicitly, then the value of that parameter will be recalculated based on the body's shapes.
 
-- If the parameter [`BODY_PARAM_INERTIA`](#class_physicsserver2d_constant_body_param_inertia) is set to a value `<= 0.0`, then the value of that parameter will be recalculated based on the body's shapes, mass, and center of mass.
+- If the parameter [`BODY_PARAM_INERTIA`](class_physicsserver2d.md#class_physicsserver2d_constant_body_param_inertia) is set to a value `<= 0.0`, then the value of that parameter will be recalculated based on the body's shapes, mass, and center of mass.
 
  **Note:** To remove a body from a space without immediately adding it back elsewhere, use `PhysicsServer2D.body_set_space(body, RID())`.
 
@@ -1695,7 +1695,7 @@ Returns `true` if a collision would result from moving the body along a motion v
 
 [`RID`](class_rid.md) **capsule_shape_create** ( )<div id="class_physicsserver2d_method_capsule_shape_create"></div>
 
-Creates a 2D capsule shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) to set the capsule's height and radius.
+Creates a 2D capsule shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) to set the capsule's height and radius.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1705,7 +1705,7 @@ Creates a 2D capsule shape in the physics server, and returns the [`RID`](class_
 
 [`RID`](class_rid.md) **circle_shape_create** ( )<div id="class_physicsserver2d_method_circle_shape_create"></div>
 
-Creates a 2D circle shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) to set the circle's radius.
+Creates a 2D circle shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) to set the circle's radius.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1715,7 +1715,7 @@ Creates a 2D circle shape in the physics server, and returns the [`RID`](class_r
 
 [`RID`](class_rid.md) **concave_polygon_shape_create** ( )<div id="class_physicsserver2d_method_concave_polygon_shape_create"></div>
 
-Creates a 2D concave polygon shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) to set the concave polygon's segments.
+Creates a 2D concave polygon shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) to set the concave polygon's segments.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1725,7 +1725,7 @@ Creates a 2D concave polygon shape in the physics server, and returns the [`RID`
 
 [`RID`](class_rid.md) **convex_polygon_shape_create** ( )<div id="class_physicsserver2d_method_convex_polygon_shape_create"></div>
 
-Creates a 2D convex polygon shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) to set the convex polygon's points.
+Creates a 2D convex polygon shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) to set the convex polygon's points.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1785,7 +1785,7 @@ Destroys the joint with the given [`RID`](class_rid.md), creates a new uninitial
 
 [`RID`](class_rid.md) **joint_create** ( )<div id="class_physicsserver2d_method_joint_create"></div>
 
-Creates a 2D joint in the physics server, and returns the [`RID`](class_rid.md) that identifies it. To set the joint type, use [`joint_make_damped_spring`](#class_physicsserver2d_method_joint_make_damped_spring), [`joint_make_groove`](#class_physicsserver2d_method_joint_make_groove) or [`joint_make_pin`](#class_physicsserver2d_method_joint_make_pin). Use [`joint_set_param`](#class_physicsserver2d_method_joint_set_param) to set generic joint parameters.
+Creates a 2D joint in the physics server, and returns the [`RID`](class_rid.md) that identifies it. To set the joint type, use [`joint_make_damped_spring`](class_physicsserver2d.md#class_physicsserver2d_method_joint_make_damped_spring), [`joint_make_groove`](class_physicsserver2d.md#class_physicsserver2d_method_joint_make_groove) or [`joint_make_pin`](class_physicsserver2d.md#class_physicsserver2d_method_joint_make_pin). Use [`joint_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_joint_set_param) to set generic joint parameters.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1835,7 +1835,7 @@ Returns whether the bodies attached to the [`Joint2D`](class_joint2d.md) will co
 
 `void` **joint_make_damped_spring** ( joint: [`RID`](class_rid.md), anchor_a: [`Vector2`](class_vector2.md), anchor_b: [`Vector2`](class_vector2.md), body_a: [`RID`](class_rid.md), body_b: [`RID`](class_rid.md) = RID() )<div id="class_physicsserver2d_method_joint_make_damped_spring"></div>
 
-Makes the joint a damped spring joint, attached at the point `anchor_a` (given in global coordinates) on the body `body_a` and at the point `anchor_b` (given in global coordinates) on the body `body_b`. To set the parameters which are specific to the damped spring, see [`damped_spring_joint_set_param`](#class_physicsserver2d_method_damped_spring_joint_set_param).
+Makes the joint a damped spring joint, attached at the point `anchor_a` (given in global coordinates) on the body `body_a` and at the point `anchor_b` (given in global coordinates) on the body `body_b`. To set the parameters which are specific to the damped spring, see [`damped_spring_joint_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_damped_spring_joint_set_param).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1855,7 +1855,7 @@ Makes the joint a groove joint.
 
 `void` **joint_make_pin** ( joint: [`RID`](class_rid.md), anchor: [`Vector2`](class_vector2.md), body_a: [`RID`](class_rid.md), body_b: [`RID`](class_rid.md) = RID() )<div id="class_physicsserver2d_method_joint_make_pin"></div>
 
-Makes the joint a pin joint. If `body_b` is an empty [`RID`](class_rid.md), then `body_a` is pinned to the point `anchor` (given in global coordinates); otherwise, `body_a` is pinned to `body_b` at the point `anchor` (given in global coordinates). To set the parameters which are specific to the pin joint, see [`pin_joint_set_param`](#class_physicsserver2d_method_pin_joint_set_param).
+Makes the joint a pin joint. If `body_b` is an empty [`RID`](class_rid.md), then `body_a` is pinned to the point `anchor` (given in global coordinates); otherwise, `body_a` is pinned to `body_b` at the point `anchor` (given in global coordinates). To set the parameters which are specific to the pin joint, see [`pin_joint_set_param`](class_physicsserver2d.md#class_physicsserver2d_method_pin_joint_set_param).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1915,7 +1915,7 @@ Sets a pin joint parameter. See [PinJointParam](#enum_physicsserver2d_pinjointpa
 
 [`RID`](class_rid.md) **rectangle_shape_create** ( )<div id="class_physicsserver2d_method_rectangle_shape_create"></div>
 
-Creates a 2D rectangle shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) to set the rectangle's half-extents.
+Creates a 2D rectangle shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) to set the rectangle's half-extents.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1925,7 +1925,7 @@ Creates a 2D rectangle shape in the physics server, and returns the [`RID`](clas
 
 [`RID`](class_rid.md) **segment_shape_create** ( )<div id="class_physicsserver2d_method_segment_shape_create"></div>
 
-Creates a 2D segment shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) to set the segment's start and end points.
+Creates a 2D segment shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) to set the segment's start and end points.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1935,7 +1935,7 @@ Creates a 2D segment shape in the physics server, and returns the [`RID`](class_
 
 [`RID`](class_rid.md) **separation_ray_shape_create** ( )<div id="class_physicsserver2d_method_separation_ray_shape_create"></div>
 
-Creates a 2D separation ray shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) to set the shape's `length` and `slide_on_slope` properties.
+Creates a 2D separation ray shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) to set the shape's `length` and `slide_on_slope` properties.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1955,7 +1955,7 @@ Activates or deactivates the 2D physics server. If `active` is `false`, then the
 
 [`Variant`](class_variant.md) **shape_get_data** ( shape: [`RID`](class_rid.md) ) const[^const]<div id="class_physicsserver2d_method_shape_get_data"></div>
 
-Returns the shape data that defines the configuration of the shape, such as the half-extents of a rectangle or the segments of a concave shape. See [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) for the precise format of this data in each case.
+Returns the shape data that defines the configuration of the shape, such as the half-extents of a rectangle or the segments of a concave shape. See [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) for the precise format of this data in each case.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1975,25 +1975,25 @@ Returns the shape's type (see [ShapeType](#enum_physicsserver2d_shapetype)).
 
 `void` **shape_set_data** ( shape: [`RID`](class_rid.md), data: [`Variant`](class_variant.md) )<div id="class_physicsserver2d_method_shape_set_data"></div>
 
-Sets the shape data that defines the configuration of the shape. The `data` to be passed depends on the shape's type (see [`shape_get_type`](#class_physicsserver2d_method_shape_get_type)):
+Sets the shape data that defines the configuration of the shape. The `data` to be passed depends on the shape's type (see [`shape_get_type`](class_physicsserver2d.md#class_physicsserver2d_method_shape_get_type)):
 
-- [`SHAPE_WORLD_BOUNDARY`](#class_physicsserver2d_constant_shape_world_boundary): an array of length two containing a [`Vector2`](class_vector2.md) `normal` direction and a [`float`](class_float.md) distance `d`,
+- [`SHAPE_WORLD_BOUNDARY`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_world_boundary): an array of length two containing a [`Vector2`](class_vector2.md) `normal` direction and a [`float`](class_float.md) distance `d`,
 
-- [`SHAPE_SEPARATION_RAY`](#class_physicsserver2d_constant_shape_separation_ray): a dictionary containing the key `length` with a [`float`](class_float.md) value and the key `slide_on_slope` with a [`bool`](class_bool.md) value,
+- [`SHAPE_SEPARATION_RAY`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_separation_ray): a dictionary containing the key `length` with a [`float`](class_float.md) value and the key `slide_on_slope` with a [`bool`](class_bool.md) value,
 
-- [`SHAPE_SEGMENT`](#class_physicsserver2d_constant_shape_segment): a [`Rect2`](class_rect2.md) `rect` containing the first point of the segment in `rect.position` and the second point of the segment in `rect.size`,
+- [`SHAPE_SEGMENT`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_segment): a [`Rect2`](class_rect2.md) `rect` containing the first point of the segment in `rect.position` and the second point of the segment in `rect.size`,
 
-- [`SHAPE_CIRCLE`](#class_physicsserver2d_constant_shape_circle): a [`float`](class_float.md) `radius`,
+- [`SHAPE_CIRCLE`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_circle): a [`float`](class_float.md) `radius`,
 
-- [`SHAPE_RECTANGLE`](#class_physicsserver2d_constant_shape_rectangle): a [`Vector2`](class_vector2.md) `half_extents`,
+- [`SHAPE_RECTANGLE`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_rectangle): a [`Vector2`](class_vector2.md) `half_extents`,
 
-- [`SHAPE_CAPSULE`](#class_physicsserver2d_constant_shape_capsule): an array of length two (or a [`Vector2`](class_vector2.md)) containing a [`float`](class_float.md) `height` and a [`float`](class_float.md) `radius`,
+- [`SHAPE_CAPSULE`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_capsule): an array of length two (or a [`Vector2`](class_vector2.md)) containing a [`float`](class_float.md) `height` and a [`float`](class_float.md) `radius`,
 
-- [`SHAPE_CONVEX_POLYGON`](#class_physicsserver2d_constant_shape_convex_polygon): either a [`PackedVector2Array`](class_packedvector2array.md) of points defining a convex polygon in counterclockwise order (the clockwise outward normal of each segment formed by consecutive points is calculated internally), or a [`PackedFloat32Array`](class_packedfloat32array.md) of length divisible by four so that every 4-tuple of [`float`](class_float.md) s contains the coordinates of a point followed by the coordinates of the clockwise outward normal vector to the segment between the current point and the next point,
+- [`SHAPE_CONVEX_POLYGON`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_convex_polygon): either a [`PackedVector2Array`](class_packedvector2array.md) of points defining a convex polygon in counterclockwise order (the clockwise outward normal of each segment formed by consecutive points is calculated internally), or a [`PackedFloat32Array`](class_packedfloat32array.md) of length divisible by four so that every 4-tuple of [`float`](class_float.md) s contains the coordinates of a point followed by the coordinates of the clockwise outward normal vector to the segment between the current point and the next point,
 
-- [`SHAPE_CONCAVE_POLYGON`](#class_physicsserver2d_constant_shape_concave_polygon): a [`PackedVector2Array`](class_packedvector2array.md) of length divisible by two (each pair of points forms one segment).
+- [`SHAPE_CONCAVE_POLYGON`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_concave_polygon): a [`PackedVector2Array`](class_packedvector2array.md) of length divisible by two (each pair of points forms one segment).
 
- **Warning:** In the case of [`SHAPE_CONVEX_POLYGON`](#class_physicsserver2d_constant_shape_convex_polygon), this method does not check if the points supplied actually form a convex polygon (unlike the [`CollisionPolygon2D.polygon`](#class_collisionpolygon2d_property_polygon) property).
+ **Warning:** In the case of [`SHAPE_CONVEX_POLYGON`](class_physicsserver2d.md#class_physicsserver2d_constant_shape_convex_polygon), this method does not check if the points supplied actually form a convex polygon (unlike the [`CollisionPolygon2D.polygon`](class_collisionpolygon2d.md#class_collisionpolygon2d_property_polygon) property).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2063,7 +2063,7 @@ Sets the value of the given space parameter. See [SpaceParameter](#enum_physicss
 
 [`RID`](class_rid.md) **world_boundary_shape_create** ( )<div id="class_physicsserver2d_method_world_boundary_shape_create"></div>
 
-Creates a 2D world boundary shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](#class_physicsserver2d_method_shape_set_data) to set the shape's normal direction and distance properties.
+Creates a 2D world boundary shape in the physics server, and returns the [`RID`](class_rid.md) that identifies it. Use [`shape_set_data`](class_physicsserver2d.md#class_physicsserver2d_method_shape_set_data) to set the shape's normal direction and distance properties.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

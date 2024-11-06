@@ -27,11 +27,11 @@ This is a pure virtual class that is inherited by [`CameraAttributesPhysical`](c
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`auto_exposure_enabled`](#class_cameraattributes_property_auto_exposure_enabled) | ``false`` |
-| [`float`](class_float.md) | [`auto_exposure_scale`](#class_cameraattributes_property_auto_exposure_scale)     | ``0.4``   |
-| [`float`](class_float.md) | [`auto_exposure_speed`](#class_cameraattributes_property_auto_exposure_speed)     | ``0.5``   |
-| [`float`](class_float.md) | [`exposure_multiplier`](#class_cameraattributes_property_exposure_multiplier)     | ``1.0``   |
-| [`float`](class_float.md) | [`exposure_sensitivity`](#class_cameraattributes_property_exposure_sensitivity)   | ``100.0`` |
+| [`bool`](class_bool.md)   | [`auto_exposure_enabled`](class_cameraattributes.md#class_cameraattributes_property_auto_exposure_enabled) | ``false`` |
+| [`float`](class_float.md) | [`auto_exposure_scale`](class_cameraattributes.md#class_cameraattributes_property_auto_exposure_scale)     | ``0.4``   |
+| [`float`](class_float.md) | [`auto_exposure_speed`](class_cameraattributes.md#class_cameraattributes_property_auto_exposure_speed)     | ``0.5``   |
+| [`float`](class_float.md) | [`exposure_multiplier`](class_cameraattributes.md#class_cameraattributes_property_exposure_multiplier)     | ``1.0``   |
+| [`float`](class_float.md) | [`exposure_sensitivity`](class_cameraattributes.md#class_cameraattributes_property_exposure_sensitivity)   | ``100.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -98,7 +98,7 @@ Multiplier for the exposure amount. A higher value results in a brighter image.
 - `void` **set_exposure_sensitivity** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_exposure_sensitivity** ( )
 
-Sensitivity of camera sensors, measured in ISO. A higher sensitivity results in a brighter image. Only available when [`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units`](#class_projectsettings_property_rendering/lights_and_shadows/use_physical_light_units) is enabled. When [`auto_exposure_enabled`](#class_cameraattributes_property_auto_exposure_enabled) this can be used as a method of exposure compensation, doubling the value will increase the exposure value (measured in EV100) by 1 stop.
+Sensitivity of camera sensors, measured in ISO. A higher sensitivity results in a brighter image. Only available when [`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units`](class_projectsettings.md#class_projectsettings_property_rendering/lights_and_shadows/use_physical_light_units) is enabled. When [`auto_exposure_enabled`](class_cameraattributes.md#class_cameraattributes_property_auto_exposure_enabled) this can be used as a method of exposure compensation, doubling the value will increase the exposure value (measured in EV100) by 1 stop.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

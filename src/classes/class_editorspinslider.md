@@ -15,20 +15,20 @@ Godot editor's control for editing numeric values.
 
 This [`Control`](class_control.md) node is used in the editor's Inspector dock to allow editing of numeric values. Can be used with [`EditorInspectorPlugin`](class_editorinspectorplugin.md) to recreate the same behavior.
 
-If the [`Range.step`](#class_range_property_step) value is `1`, the **EditorSpinSlider** will display up/down arrows, similar to [`SpinBox`](class_spinbox.md). If the [`Range.step`](#class_range_property_step) value is not `1`, a slider will be displayed instead.
+If the [`Range.step`](class_range.md#class_range_property_step) value is `1`, the **EditorSpinSlider** will display up/down arrows, similar to [`SpinBox`](class_spinbox.md). If the [`Range.step`](class_range.md#class_range_property_step) value is not `1`, a slider will be displayed instead.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)              | [`flat`](#class_editorspinslider_property_flat)               | ``false``                                                                  |
-| [FocusMode](#enum_control_focusmode) | focus_mode                                                    | ``2`` (overrides [`Control`](#class_control_property_focus_mode))          |
-| [`bool`](class_bool.md)              | [`hide_slider`](#class_editorspinslider_property_hide_slider) | ``false``                                                                  |
-| [`String`](class_string.md)          | [`label`](#class_editorspinslider_property_label)             | ``""``                                                                     |
-| [`bool`](class_bool.md)              | [`read_only`](#class_editorspinslider_property_read_only)     | ``false``                                                                  |
-| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical                                           | ``1`` (overrides [`Control`](#class_control_property_size_flags_vertical)) |
-| [`float`](class_float.md)            | step                                                          | ``1.0`` (overrides [`Range`](#class_range_property_step))                  |
-| [`String`](class_string.md)          | [`suffix`](#class_editorspinslider_property_suffix)           | ``""``                                                                     |
+| [`bool`](class_bool.md)              | [`flat`](class_editorspinslider.md#class_editorspinslider_property_flat)               | ``false``                                                                                  |
+| [FocusMode](#enum_control_focusmode) | focus_mode                                                                             | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))          |
+| [`bool`](class_bool.md)              | [`hide_slider`](class_editorspinslider.md#class_editorspinslider_property_hide_slider) | ``false``                                                                                  |
+| [`String`](class_string.md)          | [`label`](class_editorspinslider.md#class_editorspinslider_property_label)             | ``""``                                                                                     |
+| [`bool`](class_bool.md)              | [`read_only`](class_editorspinslider.md#class_editorspinslider_property_read_only)     | ``false``                                                                                  |
+| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical                                                                    | ``1`` (overrides [`Control`](class_control.md#class_control_property_size_flags_vertical)) |
+| [`float`](class_float.md)            | step                                                                                   | ``1.0`` (overrides [`Range`](class_range.md#class_range_property_step))                    |
+| [`String`](class_string.md)          | [`suffix`](class_editorspinslider.md#class_editorspinslider_property_suffix)           | ``""``                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

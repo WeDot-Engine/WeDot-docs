@@ -15,19 +15,19 @@ Configuration for properties to synchronize with a [`MultiplayerSynchronizer`](c
 
 |||
 |:-:|:--|
-| `void`                                                          | [`add_property`](#class_scenereplicationconfig_method_add_property) ( path: [`NodePath`](class_nodepath.md), index: [`int`](class_int.md) = -1 )                                                                       |
-| [Array](class_array.md) [`NodePath`](class_nodepath.md)         | [`get_properties`](#class_scenereplicationconfig_method_get_properties) ( ) const[^const]                                                                                                                              |
-| [`bool`](class_bool.md)                                         | [`has_property`](#class_scenereplicationconfig_method_has_property) ( path: [`NodePath`](class_nodepath.md) ) const[^const]                                                                                            |
-| [`int`](class_int.md)                                           | [`property_get_index`](#class_scenereplicationconfig_method_property_get_index) ( path: [`NodePath`](class_nodepath.md) ) const[^const]                                                                                |
-| [ReplicationMode](#enum_scenereplicationconfig_replicationmode) | [`property_get_replication_mode`](#class_scenereplicationconfig_method_property_get_replication_mode) ( path: [`NodePath`](class_nodepath.md) )                                                                        |
-| [`bool`](class_bool.md)                                         | [`property_get_spawn`](#class_scenereplicationconfig_method_property_get_spawn) ( path: [`NodePath`](class_nodepath.md) )                                                                                              |
-| [`bool`](class_bool.md)                                         | [`property_get_sync`](#class_scenereplicationconfig_method_property_get_sync) ( path: [`NodePath`](class_nodepath.md) )                                                                                                |
-| [`bool`](class_bool.md)                                         | [`property_get_watch`](#class_scenereplicationconfig_method_property_get_watch) ( path: [`NodePath`](class_nodepath.md) )                                                                                              |
-| `void`                                                          | [`property_set_replication_mode`](#class_scenereplicationconfig_method_property_set_replication_mode) ( path: [`NodePath`](class_nodepath.md), mode: [ReplicationMode](#enum_scenereplicationconfig_replicationmode) ) |
-| `void`                                                          | [`property_set_spawn`](#class_scenereplicationconfig_method_property_set_spawn) ( path: [`NodePath`](class_nodepath.md), enabled: [`bool`](class_bool.md) )                                                            |
-| `void`                                                          | [`property_set_sync`](#class_scenereplicationconfig_method_property_set_sync) ( path: [`NodePath`](class_nodepath.md), enabled: [`bool`](class_bool.md) )                                                              |
-| `void`                                                          | [`property_set_watch`](#class_scenereplicationconfig_method_property_set_watch) ( path: [`NodePath`](class_nodepath.md), enabled: [`bool`](class_bool.md) )                                                            |
-| `void`                                                          | [`remove_property`](#class_scenereplicationconfig_method_remove_property) ( path: [`NodePath`](class_nodepath.md) )                                                                                                    |
+| `void`                                                          | [`add_property`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_add_property) ( path: [`NodePath`](class_nodepath.md), index: [`int`](class_int.md) = -1 )                                                                       |
+| [Array](class_array.md) [`NodePath`](class_nodepath.md)         | [`get_properties`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_get_properties) ( ) const[^const]                                                                                                                              |
+| [`bool`](class_bool.md)                                         | [`has_property`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_has_property) ( path: [`NodePath`](class_nodepath.md) ) const[^const]                                                                                            |
+| [`int`](class_int.md)                                           | [`property_get_index`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_get_index) ( path: [`NodePath`](class_nodepath.md) ) const[^const]                                                                                |
+| [ReplicationMode](#enum_scenereplicationconfig_replicationmode) | [`property_get_replication_mode`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_get_replication_mode) ( path: [`NodePath`](class_nodepath.md) )                                                                        |
+| [`bool`](class_bool.md)                                         | [`property_get_spawn`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_get_spawn) ( path: [`NodePath`](class_nodepath.md) )                                                                                              |
+| [`bool`](class_bool.md)                                         | [`property_get_sync`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_get_sync) ( path: [`NodePath`](class_nodepath.md) )                                                                                                |
+| [`bool`](class_bool.md)                                         | [`property_get_watch`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_get_watch) ( path: [`NodePath`](class_nodepath.md) )                                                                                              |
+| `void`                                                          | [`property_set_replication_mode`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_set_replication_mode) ( path: [`NodePath`](class_nodepath.md), mode: [ReplicationMode](#enum_scenereplicationconfig_replicationmode) ) |
+| `void`                                                          | [`property_set_spawn`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_set_spawn) ( path: [`NodePath`](class_nodepath.md), enabled: [`bool`](class_bool.md) )                                                            |
+| `void`                                                          | [`property_set_sync`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_set_sync) ( path: [`NodePath`](class_nodepath.md), enabled: [`bool`](class_bool.md) )                                                              |
+| `void`                                                          | [`property_set_watch`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_set_watch) ( path: [`NodePath`](class_nodepath.md), enabled: [`bool`](class_bool.md) )                                                            |
+| `void`                                                          | [`remove_property`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_remove_property) ( path: [`NodePath`](class_nodepath.md) )                                                                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -129,7 +129,7 @@ Returns `true` if the property identified by the given `path` is configured to b
 
 [`bool`](class_bool.md) **property_get_sync** ( path: [`NodePath`](class_nodepath.md) )<div id="class_scenereplicationconfig_method_property_get_sync"></div>
 
-**已弃用：** Use [`property_get_replication_mode`](#class_scenereplicationconfig_method_property_get_replication_mode) instead.
+**已弃用：** Use [`property_get_replication_mode`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_get_replication_mode) instead.
 
 Returns `true` if the property identified by the given `path` is configured to be synchronized on process.
 
@@ -141,7 +141,7 @@ Returns `true` if the property identified by the given `path` is configured to b
 
 [`bool`](class_bool.md) **property_get_watch** ( path: [`NodePath`](class_nodepath.md) )<div id="class_scenereplicationconfig_method_property_get_watch"></div>
 
-**已弃用：** Use [`property_get_replication_mode`](#class_scenereplicationconfig_method_property_get_replication_mode) instead.
+**已弃用：** Use [`property_get_replication_mode`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_get_replication_mode) instead.
 
 Returns `true` if the property identified by the given `path` is configured to be reliably synchronized when changes are detected on process.
 
@@ -173,7 +173,7 @@ Sets whether the property identified by the given `path` is configured to be syn
 
 `void` **property_set_sync** ( path: [`NodePath`](class_nodepath.md), enabled: [`bool`](class_bool.md) )<div id="class_scenereplicationconfig_method_property_set_sync"></div>
 
-**已弃用：** Use [`property_set_replication_mode`](#class_scenereplicationconfig_method_property_set_replication_mode) with [`REPLICATION_MODE_ALWAYS`](#class_scenereplicationconfig_constant_replication_mode_always) instead.
+**已弃用：** Use [`property_set_replication_mode`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_set_replication_mode) with [`REPLICATION_MODE_ALWAYS`](class_scenereplicationconfig.md#class_scenereplicationconfig_constant_replication_mode_always) instead.
 
 Sets whether the property identified by the given `path` is configured to be synchronized on process.
 
@@ -185,7 +185,7 @@ Sets whether the property identified by the given `path` is configured to be syn
 
 `void` **property_set_watch** ( path: [`NodePath`](class_nodepath.md), enabled: [`bool`](class_bool.md) )<div id="class_scenereplicationconfig_method_property_set_watch"></div>
 
-**已弃用：** Use [`property_set_replication_mode`](#class_scenereplicationconfig_method_property_set_replication_mode) with [`REPLICATION_MODE_ON_CHANGE`](#class_scenereplicationconfig_constant_replication_mode_on_change) instead.
+**已弃用：** Use [`property_set_replication_mode`](class_scenereplicationconfig.md#class_scenereplicationconfig_method_property_set_replication_mode) with [`REPLICATION_MODE_ON_CHANGE`](class_scenereplicationconfig.md#class_scenereplicationconfig_constant_replication_mode_on_change) instead.
 
 Sets whether the property identified by the given `path` is configured to be reliably synchronized when changes are detected on process.
 

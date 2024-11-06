@@ -21,45 +21,45 @@ A navigation mesh is a collection of polygons that define which areas of an envi
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                       | [`agent_height`](#class_navigationmesh_property_agent_height)                                         | ``1.5``                             |
-| [`float`](class_float.md)                                       | [`agent_max_climb`](#class_navigationmesh_property_agent_max_climb)                                   | ``0.25``                            |
-| [`float`](class_float.md)                                       | [`agent_max_slope`](#class_navigationmesh_property_agent_max_slope)                                   | ``45.0``                            |
-| [`float`](class_float.md)                                       | [`agent_radius`](#class_navigationmesh_property_agent_radius)                                         | ``0.5``                             |
-| [`float`](class_float.md)                                       | [`border_size`](#class_navigationmesh_property_border_size)                                           | ``0.0``                             |
-| [`float`](class_float.md)                                       | [`cell_height`](#class_navigationmesh_property_cell_height)                                           | ``0.25``                            |
-| [`float`](class_float.md)                                       | [`cell_size`](#class_navigationmesh_property_cell_size)                                               | ``0.25``                            |
-| [`float`](class_float.md)                                       | [`detail_sample_distance`](#class_navigationmesh_property_detail_sample_distance)                     | ``6.0``                             |
-| [`float`](class_float.md)                                       | [`detail_sample_max_error`](#class_navigationmesh_property_detail_sample_max_error)                   | ``1.0``                             |
-| [`float`](class_float.md)                                       | [`edge_max_error`](#class_navigationmesh_property_edge_max_error)                                     | ``1.3``                             |
-| [`float`](class_float.md)                                       | [`edge_max_length`](#class_navigationmesh_property_edge_max_length)                                   | ``0.0``                             |
-| [`AABB`](class_aabb.md)                                         | [`filter_baking_aabb`](#class_navigationmesh_property_filter_baking_aabb)                             | ``AABB(0, 0, 0, 0, 0, 0)``          |
-| [`Vector3`](class_vector3.md)                                   | [`filter_baking_aabb_offset`](#class_navigationmesh_property_filter_baking_aabb_offset)               | ``Vector3(0, 0, 0)``                |
-| [`bool`](class_bool.md)                                         | [`filter_ledge_spans`](#class_navigationmesh_property_filter_ledge_spans)                             | ``false``                           |
-| [`bool`](class_bool.md)                                         | [`filter_low_hanging_obstacles`](#class_navigationmesh_property_filter_low_hanging_obstacles)         | ``false``                           |
-| [`bool`](class_bool.md)                                         | [`filter_walkable_low_height_spans`](#class_navigationmesh_property_filter_walkable_low_height_spans) | ``false``                           |
-| [`int`](class_int.md)                                           | [`geometry_collision_mask`](#class_navigationmesh_property_geometry_collision_mask)                   | ``4294967295``                      |
-| [ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype)   | [`geometry_parsed_geometry_type`](#class_navigationmesh_property_geometry_parsed_geometry_type)       | ``0``                               |
-| [SourceGeometryMode](#enum_navigationmesh_sourcegeometrymode)   | [`geometry_source_geometry_mode`](#class_navigationmesh_property_geometry_source_geometry_mode)       | ``0``                               |
-| [`StringName`](class_stringname.md)                             | [`geometry_source_group_name`](#class_navigationmesh_property_geometry_source_group_name)             | ``&"navigation_mesh_source_group"`` |
-| [`float`](class_float.md)                                       | [`region_merge_size`](#class_navigationmesh_property_region_merge_size)                               | ``20.0``                            |
-| [`float`](class_float.md)                                       | [`region_min_size`](#class_navigationmesh_property_region_min_size)                                   | ``2.0``                             |
-| [SamplePartitionType](#enum_navigationmesh_samplepartitiontype) | [`sample_partition_type`](#class_navigationmesh_property_sample_partition_type)                       | ``0``                               |
-| [`float`](class_float.md)                                       | [`vertices_per_polygon`](#class_navigationmesh_property_vertices_per_polygon)                         | ``6.0``                             |
+| [`float`](class_float.md)                                       | [`agent_height`](class_navigationmesh.md#class_navigationmesh_property_agent_height)                                         | ``1.5``                             |
+| [`float`](class_float.md)                                       | [`agent_max_climb`](class_navigationmesh.md#class_navigationmesh_property_agent_max_climb)                                   | ``0.25``                            |
+| [`float`](class_float.md)                                       | [`agent_max_slope`](class_navigationmesh.md#class_navigationmesh_property_agent_max_slope)                                   | ``45.0``                            |
+| [`float`](class_float.md)                                       | [`agent_radius`](class_navigationmesh.md#class_navigationmesh_property_agent_radius)                                         | ``0.5``                             |
+| [`float`](class_float.md)                                       | [`border_size`](class_navigationmesh.md#class_navigationmesh_property_border_size)                                           | ``0.0``                             |
+| [`float`](class_float.md)                                       | [`cell_height`](class_navigationmesh.md#class_navigationmesh_property_cell_height)                                           | ``0.25``                            |
+| [`float`](class_float.md)                                       | [`cell_size`](class_navigationmesh.md#class_navigationmesh_property_cell_size)                                               | ``0.25``                            |
+| [`float`](class_float.md)                                       | [`detail_sample_distance`](class_navigationmesh.md#class_navigationmesh_property_detail_sample_distance)                     | ``6.0``                             |
+| [`float`](class_float.md)                                       | [`detail_sample_max_error`](class_navigationmesh.md#class_navigationmesh_property_detail_sample_max_error)                   | ``1.0``                             |
+| [`float`](class_float.md)                                       | [`edge_max_error`](class_navigationmesh.md#class_navigationmesh_property_edge_max_error)                                     | ``1.3``                             |
+| [`float`](class_float.md)                                       | [`edge_max_length`](class_navigationmesh.md#class_navigationmesh_property_edge_max_length)                                   | ``0.0``                             |
+| [`AABB`](class_aabb.md)                                         | [`filter_baking_aabb`](class_navigationmesh.md#class_navigationmesh_property_filter_baking_aabb)                             | ``AABB(0, 0, 0, 0, 0, 0)``          |
+| [`Vector3`](class_vector3.md)                                   | [`filter_baking_aabb_offset`](class_navigationmesh.md#class_navigationmesh_property_filter_baking_aabb_offset)               | ``Vector3(0, 0, 0)``                |
+| [`bool`](class_bool.md)                                         | [`filter_ledge_spans`](class_navigationmesh.md#class_navigationmesh_property_filter_ledge_spans)                             | ``false``                           |
+| [`bool`](class_bool.md)                                         | [`filter_low_hanging_obstacles`](class_navigationmesh.md#class_navigationmesh_property_filter_low_hanging_obstacles)         | ``false``                           |
+| [`bool`](class_bool.md)                                         | [`filter_walkable_low_height_spans`](class_navigationmesh.md#class_navigationmesh_property_filter_walkable_low_height_spans) | ``false``                           |
+| [`int`](class_int.md)                                           | [`geometry_collision_mask`](class_navigationmesh.md#class_navigationmesh_property_geometry_collision_mask)                   | ``4294967295``                      |
+| [ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype)   | [`geometry_parsed_geometry_type`](class_navigationmesh.md#class_navigationmesh_property_geometry_parsed_geometry_type)       | ``0``                               |
+| [SourceGeometryMode](#enum_navigationmesh_sourcegeometrymode)   | [`geometry_source_geometry_mode`](class_navigationmesh.md#class_navigationmesh_property_geometry_source_geometry_mode)       | ``0``                               |
+| [`StringName`](class_stringname.md)                             | [`geometry_source_group_name`](class_navigationmesh.md#class_navigationmesh_property_geometry_source_group_name)             | ``&"navigation_mesh_source_group"`` |
+| [`float`](class_float.md)                                       | [`region_merge_size`](class_navigationmesh.md#class_navigationmesh_property_region_merge_size)                               | ``20.0``                            |
+| [`float`](class_float.md)                                       | [`region_min_size`](class_navigationmesh.md#class_navigationmesh_property_region_min_size)                                   | ``2.0``                             |
+| [SamplePartitionType](#enum_navigationmesh_samplepartitiontype) | [`sample_partition_type`](class_navigationmesh.md#class_navigationmesh_property_sample_partition_type)                       | ``0``                               |
+| [`float`](class_float.md)                                       | [`vertices_per_polygon`](class_navigationmesh.md#class_navigationmesh_property_vertices_per_polygon)                         | ``6.0``                             |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                              | [`add_polygon`](#class_navigationmesh_method_add_polygon) ( polygon: [`PackedInt32Array`](class_packedint32array.md) )                                      |
-| `void`                                              | [`clear`](#class_navigationmesh_method_clear) ( )                                                                                                           |
-| `void`                                              | [`clear_polygons`](#class_navigationmesh_method_clear_polygons) ( )                                                                                         |
-| `void`                                              | [`create_from_mesh`](#class_navigationmesh_method_create_from_mesh) ( mesh: [`Mesh`](class_mesh.md) )                                                       |
-| [`bool`](class_bool.md)                             | [`get_collision_mask_value`](#class_navigationmesh_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`PackedInt32Array`](class_packedint32array.md)     | [`get_polygon`](#class_navigationmesh_method_get_polygon) ( idx: [`int`](class_int.md) )                                                                    |
-| [`int`](class_int.md)                               | [`get_polygon_count`](#class_navigationmesh_method_get_polygon_count) ( ) const[^const]                                                                     |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`get_vertices`](#class_navigationmesh_method_get_vertices) ( ) const[^const]                                                                               |
-| `void`                                              | [`set_collision_mask_value`](#class_navigationmesh_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                                              | [`set_vertices`](#class_navigationmesh_method_set_vertices) ( vertices: [`PackedVector3Array`](class_packedvector3array.md) )                               |
+| `void`                                              | [`add_polygon`](class_navigationmesh.md#class_navigationmesh_method_add_polygon) ( polygon: [`PackedInt32Array`](class_packedint32array.md) )                                      |
+| `void`                                              | [`clear`](class_navigationmesh.md#class_navigationmesh_method_clear) ( )                                                                                                           |
+| `void`                                              | [`clear_polygons`](class_navigationmesh.md#class_navigationmesh_method_clear_polygons) ( )                                                                                         |
+| `void`                                              | [`create_from_mesh`](class_navigationmesh.md#class_navigationmesh_method_create_from_mesh) ( mesh: [`Mesh`](class_mesh.md) )                                                       |
+| [`bool`](class_bool.md)                             | [`get_collision_mask_value`](class_navigationmesh.md#class_navigationmesh_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`PackedInt32Array`](class_packedint32array.md)     | [`get_polygon`](class_navigationmesh.md#class_navigationmesh_method_get_polygon) ( idx: [`int`](class_int.md) )                                                                    |
+| [`int`](class_int.md)                               | [`get_polygon_count`](class_navigationmesh.md#class_navigationmesh_method_get_polygon_count) ( ) const[^const]                                                                     |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`get_vertices`](class_navigationmesh.md#class_navigationmesh_method_get_vertices) ( ) const[^const]                                                                               |
+| `void`                                              | [`set_collision_mask_value`](class_navigationmesh.md#class_navigationmesh_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                                              | [`set_vertices`](class_navigationmesh.md#class_navigationmesh_method_set_vertices) ( vertices: [`PackedVector3Array`](class_packedvector3array.md) )                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -113,13 +113,13 @@ Parses mesh instances as geometry. This includes [`MeshInstance3D`](class_meshin
 
 [ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype) **PARSED_GEOMETRY_STATIC_COLLIDERS** = ``1``
 
-Parses [`StaticBody3D`](class_staticbody3d.md) colliders as geometry. The collider should be in any of the layers specified by [`geometry_collision_mask`](#class_navigationmesh_property_geometry_collision_mask).
+Parses [`StaticBody3D`](class_staticbody3d.md) colliders as geometry. The collider should be in any of the layers specified by [`geometry_collision_mask`](class_navigationmesh.md#class_navigationmesh_property_geometry_collision_mask).
 
 <div id="_class_navigationmesh_constant_parsed_geometry_both"></div>
 
 [ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype) **PARSED_GEOMETRY_BOTH** = ``2``
 
-Both [`PARSED_GEOMETRY_MESH_INSTANCES`](#class_navigationmesh_constant_parsed_geometry_mesh_instances) and [`PARSED_GEOMETRY_STATIC_COLLIDERS`](#class_navigationmesh_constant_parsed_geometry_static_colliders).
+Both [`PARSED_GEOMETRY_MESH_INSTANCES`](class_navigationmesh.md#class_navigationmesh_constant_parsed_geometry_mesh_instances) and [`PARSED_GEOMETRY_STATIC_COLLIDERS`](class_navigationmesh.md#class_navigationmesh_constant_parsed_geometry_static_colliders).
 
 <div id="_class_navigationmesh_constant_parsed_geometry_max"></div>
 
@@ -145,13 +145,13 @@ Scans the child nodes of the root node recursively for geometry.
 
 [SourceGeometryMode](#enum_navigationmesh_sourcegeometrymode) **SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN** = ``1``
 
-Scans nodes in a group and their child nodes recursively for geometry. The group is specified by [`geometry_source_group_name`](#class_navigationmesh_property_geometry_source_group_name).
+Scans nodes in a group and their child nodes recursively for geometry. The group is specified by [`geometry_source_group_name`](class_navigationmesh.md#class_navigationmesh_property_geometry_source_group_name).
 
 <div id="_class_navigationmesh_constant_source_geometry_groups_explicit"></div>
 
 [SourceGeometryMode](#enum_navigationmesh_sourcegeometrymode) **SOURCE_GEOMETRY_GROUPS_EXPLICIT** = ``2``
 
-Uses nodes in a group for geometry. The group is specified by [`geometry_source_group_name`](#class_navigationmesh_property_geometry_source_group_name).
+Uses nodes in a group for geometry. The group is specified by [`geometry_source_group_name`](class_navigationmesh.md#class_navigationmesh_property_geometry_source_group_name).
 
 <div id="_class_navigationmesh_constant_source_geometry_max"></div>
 
@@ -174,7 +174,7 @@ Represents the size of the [SourceGeometryMode](#enum_navigationmesh_sourcegeome
 
 The minimum floor to ceiling height that will still allow the floor area to be considered walkable.
 
- **Note:** While baking, this value will be rounded up to the nearest multiple of [`cell_height`](#class_navigationmesh_property_cell_height).
+ **Note:** While baking, this value will be rounded up to the nearest multiple of [`cell_height`](class_navigationmesh.md#class_navigationmesh_property_cell_height).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -189,7 +189,7 @@ The minimum floor to ceiling height that will still allow the floor area to be c
 
 The minimum ledge height that is considered to still be traversable.
 
- **Note:** While baking, this value will be rounded down to the nearest multiple of [`cell_height`](#class_navigationmesh_property_cell_height).
+ **Note:** While baking, this value will be rounded down to the nearest multiple of [`cell_height`](class_navigationmesh.md#class_navigationmesh_property_cell_height).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -217,7 +217,7 @@ The maximum slope that is considered walkable, in degrees.
 
 The distance to erode/shrink the walkable area of the heightfield away from obstructions.
 
- **Note:** While baking, this value will be rounded up to the nearest multiple of [`cell_size`](#class_navigationmesh_property_cell_size).
+ **Note:** While baking, this value will be rounded up to the nearest multiple of [`cell_size`](class_navigationmesh.md#class_navigationmesh_property_cell_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -232,9 +232,9 @@ The distance to erode/shrink the walkable area of the heightfield away from obst
 
 The size of the non-navigable border around the bake bounding area.
 
-In conjunction with the [`filter_baking_aabb`](#class_navigationmesh_property_filter_baking_aabb) and a [`edge_max_error`](#class_navigationmesh_property_edge_max_error) value at `1.0` or below the border size can be used to bake tile aligned navigation meshes without the tile edges being shrunk by [`agent_radius`](#class_navigationmesh_property_agent_radius).
+In conjunction with the [`filter_baking_aabb`](class_navigationmesh.md#class_navigationmesh_property_filter_baking_aabb) and a [`edge_max_error`](class_navigationmesh.md#class_navigationmesh_property_edge_max_error) value at `1.0` or below the border size can be used to bake tile aligned navigation meshes without the tile edges being shrunk by [`agent_radius`](class_navigationmesh.md#class_navigationmesh_property_agent_radius).
 
- **Note:** While baking and not zero, this value will be rounded up to the nearest multiple of [`cell_size`](#class_navigationmesh_property_cell_size).
+ **Note:** While baking and not zero, this value will be rounded up to the nearest multiple of [`cell_size`](class_navigationmesh.md#class_navigationmesh_property_cell_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -314,7 +314,7 @@ The maximum distance a simplified contour's border edges should deviate the orig
 
 The maximum allowed length for contour edges along the border of the mesh. A value of `0.0` disables this feature.
 
- **Note:** While baking, this value will be rounded up to the nearest multiple of [`cell_size`](#class_navigationmesh_property_cell_size).
+ **Note:** While baking, this value will be rounded up to the nearest multiple of [`cell_size`](class_navigationmesh.md#class_navigationmesh_property_cell_size).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -340,7 +340,7 @@ If the baking [`AABB`](class_aabb.md) has a volume the navigation mesh baking wi
 - `void` **set_filter_baking_aabb_offset** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_filter_baking_aabb_offset** ( )
 
-The position offset applied to the [`filter_baking_aabb`](#class_navigationmesh_property_filter_baking_aabb) [`AABB`](class_aabb.md).
+The position offset applied to the [`filter_baking_aabb`](class_navigationmesh.md#class_navigationmesh_property_filter_baking_aabb) [`AABB`](class_aabb.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -366,7 +366,7 @@ If `true`, marks spans that are ledges as non-walkable.
 - `void` **set_filter_low_hanging_obstacles** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_filter_low_hanging_obstacles** ( )
 
-If `true`, marks non-walkable spans as walkable if their maximum is within [`agent_max_climb`](#class_navigationmesh_property_agent_max_climb) of a walkable neighbor.
+If `true`, marks non-walkable spans as walkable if their maximum is within [`agent_max_climb`](class_navigationmesh.md#class_navigationmesh_property_agent_max_climb) of a walkable neighbor.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -379,7 +379,7 @@ If `true`, marks non-walkable spans as walkable if their maximum is within [`age
 - `void` **set_filter_walkable_low_height_spans** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_filter_walkable_low_height_spans** ( )
 
-If `true`, marks walkable spans as not walkable if the clearance above the span is less than [`agent_height`](#class_navigationmesh_property_agent_height).
+If `true`, marks walkable spans as not walkable if the clearance above the span is less than [`agent_height`](class_navigationmesh.md#class_navigationmesh_property_agent_height).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -394,7 +394,7 @@ If `true`, marks walkable spans as not walkable if the clearance above the span 
 
 The physics layers to scan for static colliders.
 
-Only used when [`geometry_parsed_geometry_type`](#class_navigationmesh_property_geometry_parsed_geometry_type) is [`PARSED_GEOMETRY_STATIC_COLLIDERS`](#class_navigationmesh_constant_parsed_geometry_static_colliders) or [`PARSED_GEOMETRY_BOTH`](#class_navigationmesh_constant_parsed_geometry_both).
+Only used when [`geometry_parsed_geometry_type`](class_navigationmesh.md#class_navigationmesh_property_geometry_parsed_geometry_type) is [`PARSED_GEOMETRY_STATIC_COLLIDERS`](class_navigationmesh.md#class_navigationmesh_constant_parsed_geometry_static_colliders) or [`PARSED_GEOMETRY_BOTH`](class_navigationmesh.md#class_navigationmesh_constant_parsed_geometry_both).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -435,7 +435,7 @@ The source of the geometry used when baking. See [SourceGeometryMode](#enum_navi
 
 The name of the group to scan for geometry.
 
-Only used when [`geometry_source_geometry_mode`](#class_navigationmesh_property_geometry_source_geometry_mode) is [`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN`](#class_navigationmesh_constant_source_geometry_groups_with_children) or [`SOURCE_GEOMETRY_GROUPS_EXPLICIT`](#class_navigationmesh_constant_source_geometry_groups_explicit).
+Only used when [`geometry_source_geometry_mode`](class_navigationmesh.md#class_navigationmesh_property_geometry_source_geometry_mode) is [`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN`](class_navigationmesh.md#class_navigationmesh_constant_source_geometry_groups_with_children) or [`SOURCE_GEOMETRY_GROUPS_EXPLICIT`](class_navigationmesh.md#class_navigationmesh_constant_source_geometry_groups_explicit).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -503,7 +503,7 @@ The maximum number of vertices allowed for polygons generated during the contour
 
 `void` **add_polygon** ( polygon: [`PackedInt32Array`](class_packedint32array.md) )<div id="class_navigationmesh_method_add_polygon"></div>
 
-Adds a polygon using the indices of the vertices you get when calling [`get_vertices`](#class_navigationmesh_method_get_vertices).
+Adds a polygon using the indices of the vertices you get when calling [`get_vertices`](class_navigationmesh.md#class_navigationmesh_method_get_vertices).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -535,7 +535,7 @@ Clears the array of polygons, but it doesn't clear the array of vertices.
 
 Initializes the navigation mesh by setting the vertices and indices according to a [`Mesh`](class_mesh.md).
 
- **Note:** The given `mesh` must be of type [`Mesh.PRIMITIVE_TRIANGLES`](#class_mesh_constant_primitive_triangles) and have an index array.
+ **Note:** The given `mesh` must be of type [`Mesh.PRIMITIVE_TRIANGLES`](class_mesh.md#class_mesh_constant_primitive_triangles) and have an index array.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -545,7 +545,7 @@ Initializes the navigation mesh by setting the vertices and indices according to
 
 [`bool`](class_bool.md) **get_collision_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_navigationmesh_method_get_collision_mask_value"></div>
 
-Returns whether or not the specified layer of the [`geometry_collision_mask`](#class_navigationmesh_property_geometry_collision_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`geometry_collision_mask`](class_navigationmesh.md#class_navigationmesh_property_geometry_collision_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -585,7 +585,7 @@ Returns a [`PackedVector3Array`](class_packedvector3array.md) containing all the
 
 `void` **set_collision_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_navigationmesh_method_set_collision_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`geometry_collision_mask`](#class_navigationmesh_property_geometry_collision_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`geometry_collision_mask`](class_navigationmesh.md#class_navigationmesh_property_geometry_collision_mask), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -595,7 +595,7 @@ Based on `value`, enables or disables the specified layer in the [`geometry_coll
 
 `void` **set_vertices** ( vertices: [`PackedVector3Array`](class_packedvector3array.md) )<div id="class_navigationmesh_method_set_vertices"></div>
 
-Sets the vertices that can be then indexed to create polygons with the [`add_polygon`](#class_navigationmesh_method_add_polygon) method.
+Sets the vertices that can be then indexed to create polygons with the [`add_polygon`](class_navigationmesh.md#class_navigationmesh_method_add_polygon) method.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

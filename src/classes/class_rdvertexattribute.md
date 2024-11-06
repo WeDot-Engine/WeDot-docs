@@ -19,11 +19,11 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| [DataFormat](#enum_renderingdevice_dataformat)           | [`format`](#class_rdvertexattribute_property_format)       | ``218`` |
-| [VertexFrequency](#enum_renderingdevice_vertexfrequency) | [`frequency`](#class_rdvertexattribute_property_frequency) | ``0``   |
-| [`int`](class_int.md)                                    | [`location`](#class_rdvertexattribute_property_location)   | ``0``   |
-| [`int`](class_int.md)                                    | [`offset`](#class_rdvertexattribute_property_offset)       | ``0``   |
-| [`int`](class_int.md)                                    | [`stride`](#class_rdvertexattribute_property_stride)       | ``0``   |
+| [DataFormat](#enum_renderingdevice_dataformat)           | [`format`](class_rdvertexattribute.md#class_rdvertexattribute_property_format)       | ``218`` |
+| [VertexFrequency](#enum_renderingdevice_vertexfrequency) | [`frequency`](class_rdvertexattribute.md#class_rdvertexattribute_property_frequency) | ``0``   |
+| [`int`](class_int.md)                                    | [`location`](class_rdvertexattribute.md#class_rdvertexattribute_property_location)   | ``0``   |
+| [`int`](class_int.md)                                    | [`offset`](class_rdvertexattribute.md#class_rdvertexattribute_property_offset)       | ``0``   |
+| [`int`](class_int.md)                                    | [`stride`](class_rdvertexattribute.md#class_rdvertexattribute_property_stride)       | ``0``   |
 
 <!-- rst-class:: classref-section-separator -->
 

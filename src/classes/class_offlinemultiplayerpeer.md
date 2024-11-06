@@ -13,9 +13,9 @@ A [`MultiplayerPeer`](class_multiplayerpeer.md) which is always connected and ac
 
 ## 描述
 
-This is the default [`MultiplayerAPI.multiplayer_peer`](#class_multiplayerapi_property_multiplayer_peer) for the [`Node.multiplayer`](#class_node_property_multiplayer). It mimics the behavior of a server with no peers connected.
+This is the default [`MultiplayerAPI.multiplayer_peer`](class_multiplayerapi.md#class_multiplayerapi_property_multiplayer_peer) for the [`Node.multiplayer`](class_node.md#class_node_property_multiplayer). It mimics the behavior of a server with no peers connected.
 
-This means that the [`SceneTree`](class_scenetree.md) will act as the multiplayer authority by default. Calls to [`MultiplayerAPI.is_server`](#class_multiplayerapi_method_is_server) will return `true`, and calls to [`MultiplayerAPI.get_unique_id`](#class_multiplayerapi_method_get_unique_id) will return [`MultiplayerPeer.TARGET_PEER_SERVER`](#class_multiplayerpeer_constant_target_peer_server).
+This means that the [`SceneTree`](class_scenetree.md) will act as the multiplayer authority by default. Calls to [`MultiplayerAPI.is_server`](class_multiplayerapi.md#class_multiplayerapi_method_is_server) will return `true`, and calls to [`MultiplayerAPI.get_unique_id`](class_multiplayerapi.md#class_multiplayerapi_method_get_unique_id) will return [`MultiplayerPeer.TARGET_PEER_SERVER`](class_multiplayerpeer.md#class_multiplayerpeer_constant_target_peer_server).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

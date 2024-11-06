@@ -15,27 +15,27 @@ Point sampler for a [`Path3D`](class_path3d.md).
 
 This node takes its parent [`Path3D`](class_path3d.md), and returns the coordinates of a point within it, given a distance from the first vertex.
 
-It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the [`progress`](#class_pathfollow3d_property_progress) in this node.
+It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the [`progress`](class_pathfollow3d.md#class_pathfollow3d_property_progress) in this node.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                         | [`cubic_interp`](#class_pathfollow3d_property_cubic_interp)       | ``true``  |
-| [`float`](class_float.md)                       | [`h_offset`](#class_pathfollow3d_property_h_offset)               | ``0.0``   |
-| [`bool`](class_bool.md)                         | [`loop`](#class_pathfollow3d_property_loop)                       | ``true``  |
-| [`float`](class_float.md)                       | [`progress`](#class_pathfollow3d_property_progress)               | ``0.0``   |
-| [`float`](class_float.md)                       | [`progress_ratio`](#class_pathfollow3d_property_progress_ratio)   | ``0.0``   |
-| [RotationMode](#enum_pathfollow3d_rotationmode) | [`rotation_mode`](#class_pathfollow3d_property_rotation_mode)     | ``3``     |
-| [`bool`](class_bool.md)                         | [`tilt_enabled`](#class_pathfollow3d_property_tilt_enabled)       | ``true``  |
-| [`bool`](class_bool.md)                         | [`use_model_front`](#class_pathfollow3d_property_use_model_front) | ``false`` |
-| [`float`](class_float.md)                       | [`v_offset`](#class_pathfollow3d_property_v_offset)               | ``0.0``   |
+| [`bool`](class_bool.md)                         | [`cubic_interp`](class_pathfollow3d.md#class_pathfollow3d_property_cubic_interp)       | ``true``  |
+| [`float`](class_float.md)                       | [`h_offset`](class_pathfollow3d.md#class_pathfollow3d_property_h_offset)               | ``0.0``   |
+| [`bool`](class_bool.md)                         | [`loop`](class_pathfollow3d.md#class_pathfollow3d_property_loop)                       | ``true``  |
+| [`float`](class_float.md)                       | [`progress`](class_pathfollow3d.md#class_pathfollow3d_property_progress)               | ``0.0``   |
+| [`float`](class_float.md)                       | [`progress_ratio`](class_pathfollow3d.md#class_pathfollow3d_property_progress_ratio)   | ``0.0``   |
+| [RotationMode](#enum_pathfollow3d_rotationmode) | [`rotation_mode`](class_pathfollow3d.md#class_pathfollow3d_property_rotation_mode)     | ``3``     |
+| [`bool`](class_bool.md)                         | [`tilt_enabled`](class_pathfollow3d.md#class_pathfollow3d_property_tilt_enabled)       | ``true``  |
+| [`bool`](class_bool.md)                         | [`use_model_front`](class_pathfollow3d.md#class_pathfollow3d_property_use_model_front) | ``false`` |
+| [`float`](class_float.md)                       | [`v_offset`](class_pathfollow3d.md#class_pathfollow3d_property_v_offset)               | ``0.0``   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Transform3D`](class_transform3d.md) | [`correct_posture`](#class_pathfollow3d_method_correct_posture) ( transform: [`Transform3D`](class_transform3d.md), rotation_mode: [RotationMode](#enum_pathfollow3d_rotationmode) ) static[^static] |
+| [`Transform3D`](class_transform3d.md) | [`correct_posture`](class_pathfollow3d.md#class_pathfollow3d_method_correct_posture) ( transform: [`Transform3D`](class_transform3d.md), rotation_mode: [RotationMode](#enum_pathfollow3d_rotationmode) ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -75,7 +75,7 @@ Allows the PathFollow3D to rotate in any axis.
 
 [RotationMode](#enum_pathfollow3d_rotationmode) **ROTATION_ORIENTED** = ``4``
 
-Uses the up vector information in a [`Curve3D`](class_curve3d.md) to enforce orientation. This rotation mode requires the [`Path3D`](class_path3d.md)'s [`Curve3D.up_vector_enabled`](#class_curve3d_property_up_vector_enabled) property to be set to `true`.
+Uses the up vector information in a [`Curve3D`](class_curve3d.md) to enforce orientation. This rotation mode requires the [`Path3D`](class_path3d.md)'s [`Curve3D.up_vector_enabled`](class_curve3d.md#class_curve3d_property_up_vector_enabled) property to be set to `true`.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -185,7 +185,7 @@ If `true`, the tilt property of [`Curve3D`](class_curve3d.md) takes effect.
 - `void` **set_use_model_front** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_model_front** ( )
 
-If `true`, the node moves on the travel path with orienting the +Z axis as forward. See also [`Vector3.FORWARD`](#class_vector3_constant_forward) and [`Vector3.MODEL_FRONT`](#class_vector3_constant_model_front).
+If `true`, the node moves on the travel path with orienting the +Z axis as forward. See also [`Vector3.FORWARD`](class_vector3.md#class_vector3_constant_forward) and [`Vector3.MODEL_FRONT`](class_vector3.md#class_vector3_constant_model_front).
 
 <!-- rst-class:: classref-item-separator -->
 

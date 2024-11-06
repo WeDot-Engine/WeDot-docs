@@ -15,17 +15,17 @@ A node used to generate previews of resources or files.
 
 This node is used to generate previews for resources or files.
 
- **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_resource_previewer`](#class_editorinterface_method_get_resource_previewer).
+ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_resource_previewer`](class_editorinterface.md#class_editorinterface_method_get_resource_previewer).
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`add_preview_generator`](#class_editorresourcepreview_method_add_preview_generator) ( generator: [`EditorResourcePreviewGenerator`](class_editorresourcepreviewgenerator.md) )                                                                                                        |
-| `void` | [`check_for_invalidation`](#class_editorresourcepreview_method_check_for_invalidation) ( path: [`String`](class_string.md) )                                                                                                                                                           |
-| `void` | [`queue_edited_resource_preview`](#class_editorresourcepreview_method_queue_edited_resource_preview) ( resource: [`Resource`](class_resource.md), receiver: [`Object`](class_object.md), receiver_func: [`StringName`](class_stringname.md), userdata: [`Variant`](class_variant.md) ) |
-| `void` | [`queue_resource_preview`](#class_editorresourcepreview_method_queue_resource_preview) ( path: [`String`](class_string.md), receiver: [`Object`](class_object.md), receiver_func: [`StringName`](class_stringname.md), userdata: [`Variant`](class_variant.md) )                       |
-| `void` | [`remove_preview_generator`](#class_editorresourcepreview_method_remove_preview_generator) ( generator: [`EditorResourcePreviewGenerator`](class_editorresourcepreviewgenerator.md) )                                                                                                  |
+| `void` | [`add_preview_generator`](class_editorresourcepreview.md#class_editorresourcepreview_method_add_preview_generator) ( generator: [`EditorResourcePreviewGenerator`](class_editorresourcepreviewgenerator.md) )                                                                                                        |
+| `void` | [`check_for_invalidation`](class_editorresourcepreview.md#class_editorresourcepreview_method_check_for_invalidation) ( path: [`String`](class_string.md) )                                                                                                                                                           |
+| `void` | [`queue_edited_resource_preview`](class_editorresourcepreview.md#class_editorresourcepreview_method_queue_edited_resource_preview) ( resource: [`Resource`](class_resource.md), receiver: [`Object`](class_object.md), receiver_func: [`StringName`](class_stringname.md), userdata: [`Variant`](class_variant.md) ) |
+| `void` | [`queue_resource_preview`](class_editorresourcepreview.md#class_editorresourcepreview_method_queue_resource_preview) ( path: [`String`](class_string.md), receiver: [`Object`](class_object.md), receiver_func: [`StringName`](class_stringname.md), userdata: [`Variant`](class_variant.md) )                       |
+| `void` | [`remove_preview_generator`](class_editorresourcepreview.md#class_editorresourcepreview_method_remove_preview_generator) ( generator: [`EditorResourcePreviewGenerator`](class_editorresourcepreviewgenerator.md) )                                                                                                  |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -21,39 +21,39 @@ It uses integer coordinates and is therefore preferable to [`Vector2`](class_vec
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`x`](#class_vector2i_property_x) | ``0`` |
-| [`int`](class_int.md) | [`y`](#class_vector2i_property_y) | ``0`` |
+| [`int`](class_int.md) | [`x`](class_vector2i.md#class_vector2i_property_x) | ``0`` |
+| [`int`](class_int.md) | [`y`](class_vector2i.md#class_vector2i_property_y) | ``0`` |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( )                                                    |
-| [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( from: [`Vector2i`](class_vector2i.md) )              |
-| [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( from: [`Vector2`](class_vector2.md) )                |
-| [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) |
+| [`Vector2i`](class_vector2i.md) | [`Vector2i`](class_vector2i.md#class_vector2i_constructor_vector2i) ( )                                                    |
+| [`Vector2i`](class_vector2i.md) | [`Vector2i`](class_vector2i.md#class_vector2i_constructor_vector2i) ( from: [`Vector2i`](class_vector2i.md) )              |
+| [`Vector2i`](class_vector2i.md) | [`Vector2i`](class_vector2i.md#class_vector2i_constructor_vector2i) ( from: [`Vector2`](class_vector2.md) )                |
+| [`Vector2i`](class_vector2i.md) | [`Vector2i`](class_vector2i.md#class_vector2i_constructor_vector2i) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector2i`](class_vector2i.md) | [`abs`](#class_vector2i_method_abs) ( ) const[^const]                                                                                |
-| [`float`](class_float.md)       | [`aspect`](#class_vector2i_method_aspect) ( ) const[^const]                                                                          |
-| [`Vector2i`](class_vector2i.md) | [`clamp`](#class_vector2i_method_clamp) ( min: [`Vector2i`](class_vector2i.md), max: [`Vector2i`](class_vector2i.md) ) const[^const] |
-| [`Vector2i`](class_vector2i.md) | [`clampi`](#class_vector2i_method_clampi) ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]                   |
-| [`int`](class_int.md)           | [`distance_squared_to`](#class_vector2i_method_distance_squared_to) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]            |
-| [`float`](class_float.md)       | [`distance_to`](#class_vector2i_method_distance_to) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
-| [`float`](class_float.md)       | [`length`](#class_vector2i_method_length) ( ) const[^const]                                                                          |
-| [`int`](class_int.md)           | [`length_squared`](#class_vector2i_method_length_squared) ( ) const[^const]                                                          |
-| [`Vector2i`](class_vector2i.md) | [`max`](#class_vector2i_method_max) ( with: [`Vector2i`](class_vector2i.md) ) const[^const]                                          |
-| [`int`](class_int.md)           | [`max_axis_index`](#class_vector2i_method_max_axis_index) ( ) const[^const]                                                          |
-| [`Vector2i`](class_vector2i.md) | [`maxi`](#class_vector2i_method_maxi) ( with: [`int`](class_int.md) ) const[^const]                                                  |
-| [`Vector2i`](class_vector2i.md) | [`min`](#class_vector2i_method_min) ( with: [`Vector2i`](class_vector2i.md) ) const[^const]                                          |
-| [`int`](class_int.md)           | [`min_axis_index`](#class_vector2i_method_min_axis_index) ( ) const[^const]                                                          |
-| [`Vector2i`](class_vector2i.md) | [`mini`](#class_vector2i_method_mini) ( with: [`int`](class_int.md) ) const[^const]                                                  |
-| [`Vector2i`](class_vector2i.md) | [`sign`](#class_vector2i_method_sign) ( ) const[^const]                                                                              |
-| [`Vector2i`](class_vector2i.md) | [`snapped`](#class_vector2i_method_snapped) ( step: [`Vector2i`](class_vector2i.md) ) const[^const]                                  |
-| [`Vector2i`](class_vector2i.md) | [`snappedi`](#class_vector2i_method_snappedi) ( step: [`int`](class_int.md) ) const[^const]                                          |
+| [`Vector2i`](class_vector2i.md) | [`abs`](class_vector2i.md#class_vector2i_method_abs) ( ) const[^const]                                                                                |
+| [`float`](class_float.md)       | [`aspect`](class_vector2i.md#class_vector2i_method_aspect) ( ) const[^const]                                                                          |
+| [`Vector2i`](class_vector2i.md) | [`clamp`](class_vector2i.md#class_vector2i_method_clamp) ( min: [`Vector2i`](class_vector2i.md), max: [`Vector2i`](class_vector2i.md) ) const[^const] |
+| [`Vector2i`](class_vector2i.md) | [`clampi`](class_vector2i.md#class_vector2i_method_clampi) ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]                   |
+| [`int`](class_int.md)           | [`distance_squared_to`](class_vector2i.md#class_vector2i_method_distance_squared_to) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]            |
+| [`float`](class_float.md)       | [`distance_to`](class_vector2i.md#class_vector2i_method_distance_to) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
+| [`float`](class_float.md)       | [`length`](class_vector2i.md#class_vector2i_method_length) ( ) const[^const]                                                                          |
+| [`int`](class_int.md)           | [`length_squared`](class_vector2i.md#class_vector2i_method_length_squared) ( ) const[^const]                                                          |
+| [`Vector2i`](class_vector2i.md) | [`max`](class_vector2i.md#class_vector2i_method_max) ( with: [`Vector2i`](class_vector2i.md) ) const[^const]                                          |
+| [`int`](class_int.md)           | [`max_axis_index`](class_vector2i.md#class_vector2i_method_max_axis_index) ( ) const[^const]                                                          |
+| [`Vector2i`](class_vector2i.md) | [`maxi`](class_vector2i.md#class_vector2i_method_maxi) ( with: [`int`](class_int.md) ) const[^const]                                                  |
+| [`Vector2i`](class_vector2i.md) | [`min`](class_vector2i.md#class_vector2i_method_min) ( with: [`Vector2i`](class_vector2i.md) ) const[^const]                                          |
+| [`int`](class_int.md)           | [`min_axis_index`](class_vector2i.md#class_vector2i_method_min_axis_index) ( ) const[^const]                                                          |
+| [`Vector2i`](class_vector2i.md) | [`mini`](class_vector2i.md#class_vector2i_method_mini) ( with: [`int`](class_int.md) ) const[^const]                                                  |
+| [`Vector2i`](class_vector2i.md) | [`sign`](class_vector2i.md#class_vector2i_method_sign) ( ) const[^const]                                                                              |
+| [`Vector2i`](class_vector2i.md) | [`snapped`](class_vector2i.md#class_vector2i_method_snapped) ( step: [`Vector2i`](class_vector2i.md) ) const[^const]                                  |
+| [`Vector2i`](class_vector2i.md) | [`snappedi`](class_vector2i.md#class_vector2i_method_snappedi) ( step: [`int`](class_int.md) ) const[^const]                                          |
 
 ## 运算符
 
@@ -89,13 +89,13 @@ It uses integer coordinates and is therefore preferable to [`Vector2`](class_vec
 
 **AXIS_X** = ``0`` <div id="class_vector2i_constant_axis_x"></div>
 
-Enumerated value for the X axis. Returned by [`max_axis_index`](#class_vector2i_method_max_axis_index) and [`min_axis_index`](#class_vector2i_method_min_axis_index).
+Enumerated value for the X axis. Returned by [`max_axis_index`](class_vector2i.md#class_vector2i_method_max_axis_index) and [`min_axis_index`](class_vector2i.md#class_vector2i_method_min_axis_index).
 
 <div id="_class_vector2i_constant_axis_y"></div>
 
 **AXIS_Y** = ``1`` <div id="class_vector2i_constant_axis_y"></div>
 
-Enumerated value for the Y axis. Returned by [`max_axis_index`](#class_vector2i_method_max_axis_index) and [`min_axis_index`](#class_vector2i_method_min_axis_index).
+Enumerated value for the Y axis. Returned by [`max_axis_index`](class_vector2i.md#class_vector2i_method_max_axis_index) and [`min_axis_index`](class_vector2i.md#class_vector2i_method_min_axis_index).
 
 <div id="_class_vector2i_constant_zero"></div>
 
@@ -113,13 +113,13 @@ One vector, a vector with all components set to `1`.
 
 **MIN** = ``Vector2i(-2147483648, -2147483648)`` <div id="class_vector2i_constant_min"></div>
 
-Min vector, a vector with all components equal to `INT32_MIN`. Can be used as a negative integer equivalent of [`Vector2.INF`](#class_vector2_constant_inf).
+Min vector, a vector with all components equal to `INT32_MIN`. Can be used as a negative integer equivalent of [`Vector2.INF`](class_vector2.md#class_vector2_constant_inf).
 
 <div id="_class_vector2i_constant_max"></div>
 
 **MAX** = ``Vector2i(2147483647, 2147483647)`` <div id="class_vector2i_constant_max"></div>
 
-Max vector, a vector with all components equal to `INT32_MAX`. Can be used as an integer equivalent of [`Vector2.INF`](#class_vector2_constant_inf).
+Max vector, a vector with all components equal to `INT32_MAX`. Can be used as an integer equivalent of [`Vector2.INF`](class_vector2.md#class_vector2_constant_inf).
 
 <div id="_class_vector2i_constant_left"></div>
 
@@ -193,7 +193,7 @@ Constructs a **Vector2i** as a copy of the given **Vector2i**.
 
 [`Vector2i`](class_vector2i.md) **Vector2i** ( from: [`Vector2`](class_vector2.md) )
 
-Constructs a new **Vector2i** from the given [`Vector2`](class_vector2.md) by truncating components' fractional parts (rounding towards zero). For a different behavior consider passing the result of [`Vector2.ceil`](#class_vector2_method_ceil), [`Vector2.floor`](#class_vector2_method_floor) or [`Vector2.round`](#class_vector2_method_round) to this constructor instead.
+Constructs a new **Vector2i** from the given [`Vector2`](class_vector2.md) by truncating components' fractional parts (rounding towards zero). For a different behavior consider passing the result of [`Vector2.ceil`](class_vector2.md#class_vector2_method_ceil), [`Vector2.floor`](class_vector2.md#class_vector2_method_floor) or [`Vector2.round`](class_vector2.md#class_vector2_method_round) to this constructor instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -223,7 +223,7 @@ Returns a new vector with all components in absolute values (i.e. positive).
 
 [`float`](class_float.md) **aspect** ( ) const[^const]<div id="class_vector2i_method_aspect"></div>
 
-Returns the aspect ratio of this vector, the ratio of [`x`](#class_vector2i_property_x) to [`y`](#class_vector2i_property_y).
+Returns the aspect ratio of this vector, the ratio of [`x`](class_vector2i.md#class_vector2i_property_x) to [`y`](class_vector2i.md#class_vector2i_property_y).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -233,7 +233,7 @@ Returns the aspect ratio of this vector, the ratio of [`x`](#class_vector2i_prop
 
 [`Vector2i`](class_vector2i.md) **clamp** ( min: [`Vector2i`](class_vector2i.md), max: [`Vector2i`](class_vector2i.md) ) const[^const]<div id="class_vector2i_method_clamp"></div>
 
-Returns a new vector with all components clamped between the components of `min` and `max`, by running [`@GlobalScope.clamp`](#class_@globalscope_method_clamp) on each component.
+Returns a new vector with all components clamped between the components of `min` and `max`, by running [`@GlobalScope.clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -243,7 +243,7 @@ Returns a new vector with all components clamped between the components of `min`
 
 [`Vector2i`](class_vector2i.md) **clampi** ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]<div id="class_vector2i_method_clampi"></div>
 
-Returns a new vector with all components clamped between `min` and `max`, by running [`@GlobalScope.clamp`](#class_@globalscope_method_clamp) on each component.
+Returns a new vector with all components clamped between `min` and `max`, by running [`@GlobalScope.clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -255,7 +255,7 @@ Returns a new vector with all components clamped between `min` and `max`, by run
 
 Returns the squared distance between this vector and `to`.
 
-This method runs faster than [`distance_to`](#class_vector2i_method_distance_to), so prefer it if you need to compare vectors or need the squared distance for some formula.
+This method runs faster than [`distance_to`](class_vector2i.md#class_vector2i_method_distance_to), so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -287,7 +287,7 @@ Returns the length (magnitude) of this vector.
 
 Returns the squared length (squared magnitude) of this vector.
 
-This method runs faster than [`length`](#class_vector2i_method_length), so prefer it if you need to compare vectors or need the squared distance for some formula.
+This method runs faster than [`length`](class_vector2i.md#class_vector2i_method_length), so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -307,7 +307,7 @@ Returns the component-wise maximum of this and `with`, equivalent to `Vector2i(m
 
 [`int`](class_int.md) **max_axis_index** ( ) const[^const]<div id="class_vector2i_method_max_axis_index"></div>
 
-Returns the axis of the vector's highest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_X`](#class_vector2i_constant_axis_x).
+Returns the axis of the vector's highest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_X`](class_vector2i.md#class_vector2i_constant_axis_x).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -337,7 +337,7 @@ Returns the component-wise minimum of this and `with`, equivalent to `Vector2i(m
 
 [`int`](class_int.md) **min_axis_index** ( ) const[^const]<div id="class_vector2i_method_min_axis_index"></div>
 
-Returns the axis of the vector's lowest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_Y`](#class_vector2i_constant_axis_y).
+Returns the axis of the vector's lowest value. See `AXIS_*` constants. If all components are equal, this method returns [`AXIS_Y`](class_vector2i.md#class_vector2i_constant_axis_y).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -357,7 +357,7 @@ Returns the component-wise minimum of this and `with`, equivalent to `Vector2i(m
 
 [`Vector2i`](class_vector2i.md) **sign** ( ) const[^const]<div id="class_vector2i_method_sign"></div>
 
-Returns a new vector with each component set to `1` if it's positive, `-1` if it's negative, and `0` if it's zero. The result is identical to calling [`@GlobalScope.sign`](#class_@globalscope_method_sign) on each component.
+Returns a new vector with each component set to `1` if it's positive, `-1` if it's negative, and `0` if it's zero. The result is identical to calling [`@GlobalScope.sign`](class_@globalscope.md#class_@globalscope_method_sign) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -399,7 +399,7 @@ Returns `true` if the vectors are not equal.
 
 [`Vector2i`](class_vector2i.md) **operator %** ( right: [`Vector2i`](class_vector2i.md) ) <div id="class_vector2i_operator_mod_vector2i"></div>
 
-Gets the remainder of each component of the **Vector2i** with the components of the given **Vector2i**. This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using [`@GlobalScope.posmod`](#class_@globalscope_method_posmod) instead if you want to handle negative numbers.
+Gets the remainder of each component of the **Vector2i** with the components of the given **Vector2i**. This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using [`@GlobalScope.posmod`](class_@globalscope.md#class_@globalscope_method_posmod) instead if you want to handle negative numbers.
 
 ```
 
@@ -416,7 +416,7 @@ Gets the remainder of each component of the **Vector2i** with the components of 
 
 [`Vector2i`](class_vector2i.md) **operator %** ( right: [`int`](class_int.md) ) <div id="class_vector2i_operator_mod_int"></div>
 
-Gets the remainder of each component of the **Vector2i** with the given [`int`](class_int.md). This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using [`@GlobalScope.posmod`](#class_@globalscope_method_posmod) instead if you want to handle negative numbers.
+Gets the remainder of each component of the **Vector2i** with the given [`int`](class_int.md). This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using [`@GlobalScope.posmod`](class_@globalscope.md#class_@globalscope_method_posmod) instead if you want to handle negative numbers.
 
 ```
 

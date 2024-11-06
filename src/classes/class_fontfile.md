@@ -59,98 +59,98 @@ Supported font formats:
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                     | [`allow_system_fallback`](#class_fontfile_property_allow_system_fallback)                           | ``true``              |
-| [FontAntialiasing](#enum_textserver_fontantialiasing)       | [`antialiasing`](#class_fontfile_property_antialiasing)                                             | ``1``                 |
-| [`PackedByteArray`](class_packedbytearray.md)               | [`data`](#class_fontfile_property_data)                                                             | ``PackedByteArray()`` |
-| [`bool`](class_bool.md)                                     | [`disable_embedded_bitmaps`](#class_fontfile_property_disable_embedded_bitmaps)                     | ``true``              |
-| [`int`](class_int.md)                                       | [`fixed_size`](#class_fontfile_property_fixed_size)                                                 | ``0``                 |
-| [FixedSizeScaleMode](#enum_textserver_fixedsizescalemode)   | [`fixed_size_scale_mode`](#class_fontfile_property_fixed_size_scale_mode)                           | ``0``                 |
-| [`String`](class_string.md)                                 | [`font_name`](#class_fontfile_property_font_name)                                                   | ``""``                |
-| [`int`](class_int.md)                                       | [`font_stretch`](#class_fontfile_property_font_stretch)                                             | ``100``               |
-| [FontStyle](#enum_textserver_fontstyle)                     | [`font_style`](#class_fontfile_property_font_style)                                                 | ``0``                 |
-| [`int`](class_int.md)                                       | [`font_weight`](#class_fontfile_property_font_weight)                                               | ``400``               |
-| [`bool`](class_bool.md)                                     | [`force_autohinter`](#class_fontfile_property_force_autohinter)                                     | ``false``             |
-| [`bool`](class_bool.md)                                     | [`generate_mipmaps`](#class_fontfile_property_generate_mipmaps)                                     | ``false``             |
-| [Hinting](#enum_textserver_hinting)                         | [`hinting`](#class_fontfile_property_hinting)                                                       | ``1``                 |
-| [`int`](class_int.md)                                       | [`msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range)                                     | ``16``                |
-| [`int`](class_int.md)                                       | [`msdf_size`](#class_fontfile_property_msdf_size)                                                   | ``48``                |
-| [`bool`](class_bool.md)                                     | [`multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) | ``false``             |
-| [`Dictionary`](class_dictionary.md)                         | [`opentype_feature_overrides`](#class_fontfile_property_opentype_feature_overrides)                 | ``{}``                |
-| [`float`](class_float.md)                                   | [`oversampling`](#class_fontfile_property_oversampling)                                             | ``0.0``               |
-| [`String`](class_string.md)                                 | [`style_name`](#class_fontfile_property_style_name)                                                 | ``""``                |
-| [SubpixelPositioning](#enum_textserver_subpixelpositioning) | [`subpixel_positioning`](#class_fontfile_property_subpixel_positioning)                             | ``1``                 |
+| [`bool`](class_bool.md)                                     | [`allow_system_fallback`](class_fontfile.md#class_fontfile_property_allow_system_fallback)                           | ``true``              |
+| [FontAntialiasing](#enum_textserver_fontantialiasing)       | [`antialiasing`](class_fontfile.md#class_fontfile_property_antialiasing)                                             | ``1``                 |
+| [`PackedByteArray`](class_packedbytearray.md)               | [`data`](class_fontfile.md#class_fontfile_property_data)                                                             | ``PackedByteArray()`` |
+| [`bool`](class_bool.md)                                     | [`disable_embedded_bitmaps`](class_fontfile.md#class_fontfile_property_disable_embedded_bitmaps)                     | ``true``              |
+| [`int`](class_int.md)                                       | [`fixed_size`](class_fontfile.md#class_fontfile_property_fixed_size)                                                 | ``0``                 |
+| [FixedSizeScaleMode](#enum_textserver_fixedsizescalemode)   | [`fixed_size_scale_mode`](class_fontfile.md#class_fontfile_property_fixed_size_scale_mode)                           | ``0``                 |
+| [`String`](class_string.md)                                 | [`font_name`](class_fontfile.md#class_fontfile_property_font_name)                                                   | ``""``                |
+| [`int`](class_int.md)                                       | [`font_stretch`](class_fontfile.md#class_fontfile_property_font_stretch)                                             | ``100``               |
+| [FontStyle](#enum_textserver_fontstyle)                     | [`font_style`](class_fontfile.md#class_fontfile_property_font_style)                                                 | ``0``                 |
+| [`int`](class_int.md)                                       | [`font_weight`](class_fontfile.md#class_fontfile_property_font_weight)                                               | ``400``               |
+| [`bool`](class_bool.md)                                     | [`force_autohinter`](class_fontfile.md#class_fontfile_property_force_autohinter)                                     | ``false``             |
+| [`bool`](class_bool.md)                                     | [`generate_mipmaps`](class_fontfile.md#class_fontfile_property_generate_mipmaps)                                     | ``false``             |
+| [Hinting](#enum_textserver_hinting)                         | [`hinting`](class_fontfile.md#class_fontfile_property_hinting)                                                       | ``1``                 |
+| [`int`](class_int.md)                                       | [`msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range)                                     | ``16``                |
+| [`int`](class_int.md)                                       | [`msdf_size`](class_fontfile.md#class_fontfile_property_msdf_size)                                                   | ``48``                |
+| [`bool`](class_bool.md)                                     | [`multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) | ``false``             |
+| [`Dictionary`](class_dictionary.md)                         | [`opentype_feature_overrides`](class_fontfile.md#class_fontfile_property_opentype_feature_overrides)                 | ``{}``                |
+| [`float`](class_float.md)                                   | [`oversampling`](class_fontfile.md#class_fontfile_property_oversampling)                                             | ``0.0``               |
+| [`String`](class_string.md)                                 | [`style_name`](class_fontfile.md#class_fontfile_property_style_name)                                                 | ``""``                |
+| [SubpixelPositioning](#enum_textserver_subpixelpositioning) | [`subpixel_positioning`](class_fontfile.md#class_fontfile_property_subpixel_positioning)                             | ``1``                 |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                  | [`clear_cache`](#class_fontfile_method_clear_cache) ( )                                                                                                                                                                                          |
-| `void`                                                  | [`clear_glyphs`](#class_fontfile_method_clear_glyphs) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) )                                                                                                              |
-| `void`                                                  | [`clear_kerning_map`](#class_fontfile_method_clear_kerning_map) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) )                                                                                                              |
-| `void`                                                  | [`clear_size_cache`](#class_fontfile_method_clear_size_cache) ( cache_index: [`int`](class_int.md) )                                                                                                                                             |
-| `void`                                                  | [`clear_textures`](#class_fontfile_method_clear_textures) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) )                                                                                                          |
-| [`float`](class_float.md)                               | [`get_cache_ascent`](#class_fontfile_method_get_cache_ascent) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                                                  |
-| [`int`](class_int.md)                                   | [`get_cache_count`](#class_fontfile_method_get_cache_count) ( ) const[^const]                                                                                                                                                                    |
-| [`float`](class_float.md)                               | [`get_cache_descent`](#class_fontfile_method_get_cache_descent) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                                                |
-| [`float`](class_float.md)                               | [`get_cache_scale`](#class_fontfile_method_get_cache_scale) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                                                    |
-| [`float`](class_float.md)                               | [`get_cache_underline_position`](#class_fontfile_method_get_cache_underline_position) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                          |
-| [`float`](class_float.md)                               | [`get_cache_underline_thickness`](#class_fontfile_method_get_cache_underline_thickness) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                        |
-| [`int`](class_int.md)                                   | [`get_char_from_glyph_index`](#class_fontfile_method_get_char_from_glyph_index) ( size: [`int`](class_int.md), glyph_index: [`int`](class_int.md) ) const[^const]                                                                                |
-| [`float`](class_float.md)                               | [`get_embolden`](#class_fontfile_method_get_embolden) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                                                       |
-| [`float`](class_float.md)                               | [`get_extra_baseline_offset`](#class_fontfile_method_get_extra_baseline_offset) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                             |
-| [`int`](class_int.md)                                   | [`get_extra_spacing`](#class_fontfile_method_get_extra_spacing) ( cache_index: [`int`](class_int.md), spacing: [SpacingType](#enum_textserver_spacingtype) ) const[^const]                                                                       |
-| [`int`](class_int.md)                                   | [`get_face_index`](#class_fontfile_method_get_face_index) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                                                   |
-| [`Vector2`](class_vector2.md)                           | [`get_glyph_advance`](#class_fontfile_method_get_glyph_advance) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph: [`int`](class_int.md) ) const[^const]                                                                  |
-| [`int`](class_int.md)                                   | [`get_glyph_index`](#class_fontfile_method_get_glyph_index) ( size: [`int`](class_int.md), char: [`int`](class_int.md), variation_selector: [`int`](class_int.md) ) const[^const]                                                                |
-| [`PackedInt32Array`](class_packedint32array.md)         | [`get_glyph_list`](#class_fontfile_method_get_glyph_list) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                            |
-| [`Vector2`](class_vector2.md)                           | [`get_glyph_offset`](#class_fontfile_method_get_glyph_offset) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) ) const[^const]                                                          |
-| [`Vector2`](class_vector2.md)                           | [`get_glyph_size`](#class_fontfile_method_get_glyph_size) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) ) const[^const]                                                              |
-| [`int`](class_int.md)                                   | [`get_glyph_texture_idx`](#class_fontfile_method_get_glyph_texture_idx) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) ) const[^const]                                                |
-| [`Rect2`](class_rect2.md)                               | [`get_glyph_uv_rect`](#class_fontfile_method_get_glyph_uv_rect) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) ) const[^const]                                                        |
-| [`Vector2`](class_vector2.md)                           | [`get_kerning`](#class_fontfile_method_get_kerning) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph_pair: [`Vector2i`](class_vector2i.md) ) const[^const]                                                               |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_kerning_list`](#class_fontfile_method_get_kerning_list) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                                                  |
-| [`bool`](class_bool.md)                                 | [`get_language_support_override`](#class_fontfile_method_get_language_support_override) ( language: [`String`](class_string.md) ) const[^const]                                                                                                  |
-| [`PackedStringArray`](class_packedstringarray.md)       | [`get_language_support_overrides`](#class_fontfile_method_get_language_support_overrides) ( ) const[^const]                                                                                                                                      |
-| [`bool`](class_bool.md)                                 | [`get_script_support_override`](#class_fontfile_method_get_script_support_override) ( script: [`String`](class_string.md) ) const[^const]                                                                                                        |
-| [`PackedStringArray`](class_packedstringarray.md)       | [`get_script_support_overrides`](#class_fontfile_method_get_script_support_overrides) ( ) const[^const]                                                                                                                                          |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_size_cache_list`](#class_fontfile_method_get_size_cache_list) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                                         |
-| [`int`](class_int.md)                                   | [`get_texture_count`](#class_fontfile_method_get_texture_count) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                      |
-| [`Image`](class_image.md)                               | [`get_texture_image`](#class_fontfile_method_get_texture_image) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) ) const[^const]                                                |
-| [`PackedInt32Array`](class_packedint32array.md)         | [`get_texture_offsets`](#class_fontfile_method_get_texture_offsets) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) ) const[^const]                                            |
-| [`Transform2D`](class_transform2d.md)                   | [`get_transform`](#class_fontfile_method_get_transform) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                                                     |
-| [`Dictionary`](class_dictionary.md)                     | [`get_variation_coordinates`](#class_fontfile_method_get_variation_coordinates) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                             |
-| [Error](#enum_@globalscope_error)                       | [`load_bitmap_font`](#class_fontfile_method_load_bitmap_font) ( path: [`String`](class_string.md) )                                                                                                                                              |
-| [Error](#enum_@globalscope_error)                       | [`load_dynamic_font`](#class_fontfile_method_load_dynamic_font) ( path: [`String`](class_string.md) )                                                                                                                                            |
-| `void`                                                  | [`remove_cache`](#class_fontfile_method_remove_cache) ( cache_index: [`int`](class_int.md) )                                                                                                                                                     |
-| `void`                                                  | [`remove_glyph`](#class_fontfile_method_remove_glyph) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) )                                                                                |
-| `void`                                                  | [`remove_kerning`](#class_fontfile_method_remove_kerning) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph_pair: [`Vector2i`](class_vector2i.md) )                                                                       |
-| `void`                                                  | [`remove_language_support_override`](#class_fontfile_method_remove_language_support_override) ( language: [`String`](class_string.md) )                                                                                                          |
-| `void`                                                  | [`remove_script_support_override`](#class_fontfile_method_remove_script_support_override) ( script: [`String`](class_string.md) )                                                                                                                |
-| `void`                                                  | [`remove_size_cache`](#class_fontfile_method_remove_size_cache) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) )                                                                                                    |
-| `void`                                                  | [`remove_texture`](#class_fontfile_method_remove_texture) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) )                                                                    |
-| `void`                                                  | [`render_glyph`](#class_fontfile_method_render_glyph) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), index: [`int`](class_int.md) )                                                                                |
-| `void`                                                  | [`render_range`](#class_fontfile_method_render_range) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), start: [`int`](class_int.md), end: [`int`](class_int.md) )                                                    |
-| `void`                                                  | [`set_cache_ascent`](#class_fontfile_method_set_cache_ascent) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), ascent: [`float`](class_float.md) )                                                                             |
-| `void`                                                  | [`set_cache_descent`](#class_fontfile_method_set_cache_descent) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), descent: [`float`](class_float.md) )                                                                          |
-| `void`                                                  | [`set_cache_scale`](#class_fontfile_method_set_cache_scale) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), scale: [`float`](class_float.md) )                                                                                |
-| `void`                                                  | [`set_cache_underline_position`](#class_fontfile_method_set_cache_underline_position) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), underline_position: [`float`](class_float.md) )                                         |
-| `void`                                                  | [`set_cache_underline_thickness`](#class_fontfile_method_set_cache_underline_thickness) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), underline_thickness: [`float`](class_float.md) )                                      |
-| `void`                                                  | [`set_embolden`](#class_fontfile_method_set_embolden) ( cache_index: [`int`](class_int.md), strength: [`float`](class_float.md) )                                                                                                                |
-| `void`                                                  | [`set_extra_baseline_offset`](#class_fontfile_method_set_extra_baseline_offset) ( cache_index: [`int`](class_int.md), baseline_offset: [`float`](class_float.md) )                                                                               |
-| `void`                                                  | [`set_extra_spacing`](#class_fontfile_method_set_extra_spacing) ( cache_index: [`int`](class_int.md), spacing: [SpacingType](#enum_textserver_spacingtype), value: [`int`](class_int.md) )                                                       |
-| `void`                                                  | [`set_face_index`](#class_fontfile_method_set_face_index) ( cache_index: [`int`](class_int.md), face_index: [`int`](class_int.md) )                                                                                                              |
-| `void`                                                  | [`set_glyph_advance`](#class_fontfile_method_set_glyph_advance) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph: [`int`](class_int.md), advance: [`Vector2`](class_vector2.md) )                                        |
-| `void`                                                  | [`set_glyph_offset`](#class_fontfile_method_set_glyph_offset) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md), offset: [`Vector2`](class_vector2.md) )                                 |
-| `void`                                                  | [`set_glyph_size`](#class_fontfile_method_set_glyph_size) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md), gl_size: [`Vector2`](class_vector2.md) )                                    |
-| `void`                                                  | [`set_glyph_texture_idx`](#class_fontfile_method_set_glyph_texture_idx) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md), texture_idx: [`int`](class_int.md) )                          |
-| `void`                                                  | [`set_glyph_uv_rect`](#class_fontfile_method_set_glyph_uv_rect) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md), uv_rect: [`Rect2`](class_rect2.md) )                                  |
-| `void`                                                  | [`set_kerning`](#class_fontfile_method_set_kerning) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph_pair: [`Vector2i`](class_vector2i.md), kerning: [`Vector2`](class_vector2.md) )                                     |
-| `void`                                                  | [`set_language_support_override`](#class_fontfile_method_set_language_support_override) ( language: [`String`](class_string.md), supported: [`bool`](class_bool.md) )                                                                            |
-| `void`                                                  | [`set_script_support_override`](#class_fontfile_method_set_script_support_override) ( script: [`String`](class_string.md), supported: [`bool`](class_bool.md) )                                                                                  |
-| `void`                                                  | [`set_texture_image`](#class_fontfile_method_set_texture_image) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md), image: [`Image`](class_image.md) )                            |
-| `void`                                                  | [`set_texture_offsets`](#class_fontfile_method_set_texture_offsets) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md), offset: [`PackedInt32Array`](class_packedint32array.md) ) |
-| `void`                                                  | [`set_transform`](#class_fontfile_method_set_transform) ( cache_index: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                 |
-| `void`                                                  | [`set_variation_coordinates`](#class_fontfile_method_set_variation_coordinates) ( cache_index: [`int`](class_int.md), variation_coordinates: [`Dictionary`](class_dictionary.md) )                                                               |
+| `void`                                                  | [`clear_cache`](class_fontfile.md#class_fontfile_method_clear_cache) ( )                                                                                                                                                                                          |
+| `void`                                                  | [`clear_glyphs`](class_fontfile.md#class_fontfile_method_clear_glyphs) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) )                                                                                                              |
+| `void`                                                  | [`clear_kerning_map`](class_fontfile.md#class_fontfile_method_clear_kerning_map) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) )                                                                                                              |
+| `void`                                                  | [`clear_size_cache`](class_fontfile.md#class_fontfile_method_clear_size_cache) ( cache_index: [`int`](class_int.md) )                                                                                                                                             |
+| `void`                                                  | [`clear_textures`](class_fontfile.md#class_fontfile_method_clear_textures) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) )                                                                                                          |
+| [`float`](class_float.md)                               | [`get_cache_ascent`](class_fontfile.md#class_fontfile_method_get_cache_ascent) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                                                  |
+| [`int`](class_int.md)                                   | [`get_cache_count`](class_fontfile.md#class_fontfile_method_get_cache_count) ( ) const[^const]                                                                                                                                                                    |
+| [`float`](class_float.md)                               | [`get_cache_descent`](class_fontfile.md#class_fontfile_method_get_cache_descent) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                                                |
+| [`float`](class_float.md)                               | [`get_cache_scale`](class_fontfile.md#class_fontfile_method_get_cache_scale) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                                                    |
+| [`float`](class_float.md)                               | [`get_cache_underline_position`](class_fontfile.md#class_fontfile_method_get_cache_underline_position) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                          |
+| [`float`](class_float.md)                               | [`get_cache_underline_thickness`](class_fontfile.md#class_fontfile_method_get_cache_underline_thickness) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                        |
+| [`int`](class_int.md)                                   | [`get_char_from_glyph_index`](class_fontfile.md#class_fontfile_method_get_char_from_glyph_index) ( size: [`int`](class_int.md), glyph_index: [`int`](class_int.md) ) const[^const]                                                                                |
+| [`float`](class_float.md)                               | [`get_embolden`](class_fontfile.md#class_fontfile_method_get_embolden) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                                                       |
+| [`float`](class_float.md)                               | [`get_extra_baseline_offset`](class_fontfile.md#class_fontfile_method_get_extra_baseline_offset) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                             |
+| [`int`](class_int.md)                                   | [`get_extra_spacing`](class_fontfile.md#class_fontfile_method_get_extra_spacing) ( cache_index: [`int`](class_int.md), spacing: [SpacingType](#enum_textserver_spacingtype) ) const[^const]                                                                       |
+| [`int`](class_int.md)                                   | [`get_face_index`](class_fontfile.md#class_fontfile_method_get_face_index) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                                                   |
+| [`Vector2`](class_vector2.md)                           | [`get_glyph_advance`](class_fontfile.md#class_fontfile_method_get_glyph_advance) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph: [`int`](class_int.md) ) const[^const]                                                                  |
+| [`int`](class_int.md)                                   | [`get_glyph_index`](class_fontfile.md#class_fontfile_method_get_glyph_index) ( size: [`int`](class_int.md), char: [`int`](class_int.md), variation_selector: [`int`](class_int.md) ) const[^const]                                                                |
+| [`PackedInt32Array`](class_packedint32array.md)         | [`get_glyph_list`](class_fontfile.md#class_fontfile_method_get_glyph_list) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                            |
+| [`Vector2`](class_vector2.md)                           | [`get_glyph_offset`](class_fontfile.md#class_fontfile_method_get_glyph_offset) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) ) const[^const]                                                          |
+| [`Vector2`](class_vector2.md)                           | [`get_glyph_size`](class_fontfile.md#class_fontfile_method_get_glyph_size) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) ) const[^const]                                                              |
+| [`int`](class_int.md)                                   | [`get_glyph_texture_idx`](class_fontfile.md#class_fontfile_method_get_glyph_texture_idx) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) ) const[^const]                                                |
+| [`Rect2`](class_rect2.md)                               | [`get_glyph_uv_rect`](class_fontfile.md#class_fontfile_method_get_glyph_uv_rect) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) ) const[^const]                                                        |
+| [`Vector2`](class_vector2.md)                           | [`get_kerning`](class_fontfile.md#class_fontfile_method_get_kerning) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph_pair: [`Vector2i`](class_vector2i.md) ) const[^const]                                                               |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_kerning_list`](class_fontfile.md#class_fontfile_method_get_kerning_list) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md) ) const[^const]                                                                                                  |
+| [`bool`](class_bool.md)                                 | [`get_language_support_override`](class_fontfile.md#class_fontfile_method_get_language_support_override) ( language: [`String`](class_string.md) ) const[^const]                                                                                                  |
+| [`PackedStringArray`](class_packedstringarray.md)       | [`get_language_support_overrides`](class_fontfile.md#class_fontfile_method_get_language_support_overrides) ( ) const[^const]                                                                                                                                      |
+| [`bool`](class_bool.md)                                 | [`get_script_support_override`](class_fontfile.md#class_fontfile_method_get_script_support_override) ( script: [`String`](class_string.md) ) const[^const]                                                                                                        |
+| [`PackedStringArray`](class_packedstringarray.md)       | [`get_script_support_overrides`](class_fontfile.md#class_fontfile_method_get_script_support_overrides) ( ) const[^const]                                                                                                                                          |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_size_cache_list`](class_fontfile.md#class_fontfile_method_get_size_cache_list) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                                         |
+| [`int`](class_int.md)                                   | [`get_texture_count`](class_fontfile.md#class_fontfile_method_get_texture_count) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                      |
+| [`Image`](class_image.md)                               | [`get_texture_image`](class_fontfile.md#class_fontfile_method_get_texture_image) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) ) const[^const]                                                |
+| [`PackedInt32Array`](class_packedint32array.md)         | [`get_texture_offsets`](class_fontfile.md#class_fontfile_method_get_texture_offsets) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) ) const[^const]                                            |
+| [`Transform2D`](class_transform2d.md)                   | [`get_transform`](class_fontfile.md#class_fontfile_method_get_transform) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                                                     |
+| [`Dictionary`](class_dictionary.md)                     | [`get_variation_coordinates`](class_fontfile.md#class_fontfile_method_get_variation_coordinates) ( cache_index: [`int`](class_int.md) ) const[^const]                                                                                                             |
+| [Error](#enum_@globalscope_error)                       | [`load_bitmap_font`](class_fontfile.md#class_fontfile_method_load_bitmap_font) ( path: [`String`](class_string.md) )                                                                                                                                              |
+| [Error](#enum_@globalscope_error)                       | [`load_dynamic_font`](class_fontfile.md#class_fontfile_method_load_dynamic_font) ( path: [`String`](class_string.md) )                                                                                                                                            |
+| `void`                                                  | [`remove_cache`](class_fontfile.md#class_fontfile_method_remove_cache) ( cache_index: [`int`](class_int.md) )                                                                                                                                                     |
+| `void`                                                  | [`remove_glyph`](class_fontfile.md#class_fontfile_method_remove_glyph) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md) )                                                                                |
+| `void`                                                  | [`remove_kerning`](class_fontfile.md#class_fontfile_method_remove_kerning) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph_pair: [`Vector2i`](class_vector2i.md) )                                                                       |
+| `void`                                                  | [`remove_language_support_override`](class_fontfile.md#class_fontfile_method_remove_language_support_override) ( language: [`String`](class_string.md) )                                                                                                          |
+| `void`                                                  | [`remove_script_support_override`](class_fontfile.md#class_fontfile_method_remove_script_support_override) ( script: [`String`](class_string.md) )                                                                                                                |
+| `void`                                                  | [`remove_size_cache`](class_fontfile.md#class_fontfile_method_remove_size_cache) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md) )                                                                                                    |
+| `void`                                                  | [`remove_texture`](class_fontfile.md#class_fontfile_method_remove_texture) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) )                                                                    |
+| `void`                                                  | [`render_glyph`](class_fontfile.md#class_fontfile_method_render_glyph) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), index: [`int`](class_int.md) )                                                                                |
+| `void`                                                  | [`render_range`](class_fontfile.md#class_fontfile_method_render_range) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), start: [`int`](class_int.md), end: [`int`](class_int.md) )                                                    |
+| `void`                                                  | [`set_cache_ascent`](class_fontfile.md#class_fontfile_method_set_cache_ascent) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), ascent: [`float`](class_float.md) )                                                                             |
+| `void`                                                  | [`set_cache_descent`](class_fontfile.md#class_fontfile_method_set_cache_descent) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), descent: [`float`](class_float.md) )                                                                          |
+| `void`                                                  | [`set_cache_scale`](class_fontfile.md#class_fontfile_method_set_cache_scale) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), scale: [`float`](class_float.md) )                                                                                |
+| `void`                                                  | [`set_cache_underline_position`](class_fontfile.md#class_fontfile_method_set_cache_underline_position) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), underline_position: [`float`](class_float.md) )                                         |
+| `void`                                                  | [`set_cache_underline_thickness`](class_fontfile.md#class_fontfile_method_set_cache_underline_thickness) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), underline_thickness: [`float`](class_float.md) )                                      |
+| `void`                                                  | [`set_embolden`](class_fontfile.md#class_fontfile_method_set_embolden) ( cache_index: [`int`](class_int.md), strength: [`float`](class_float.md) )                                                                                                                |
+| `void`                                                  | [`set_extra_baseline_offset`](class_fontfile.md#class_fontfile_method_set_extra_baseline_offset) ( cache_index: [`int`](class_int.md), baseline_offset: [`float`](class_float.md) )                                                                               |
+| `void`                                                  | [`set_extra_spacing`](class_fontfile.md#class_fontfile_method_set_extra_spacing) ( cache_index: [`int`](class_int.md), spacing: [SpacingType](#enum_textserver_spacingtype), value: [`int`](class_int.md) )                                                       |
+| `void`                                                  | [`set_face_index`](class_fontfile.md#class_fontfile_method_set_face_index) ( cache_index: [`int`](class_int.md), face_index: [`int`](class_int.md) )                                                                                                              |
+| `void`                                                  | [`set_glyph_advance`](class_fontfile.md#class_fontfile_method_set_glyph_advance) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph: [`int`](class_int.md), advance: [`Vector2`](class_vector2.md) )                                        |
+| `void`                                                  | [`set_glyph_offset`](class_fontfile.md#class_fontfile_method_set_glyph_offset) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md), offset: [`Vector2`](class_vector2.md) )                                 |
+| `void`                                                  | [`set_glyph_size`](class_fontfile.md#class_fontfile_method_set_glyph_size) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md), gl_size: [`Vector2`](class_vector2.md) )                                    |
+| `void`                                                  | [`set_glyph_texture_idx`](class_fontfile.md#class_fontfile_method_set_glyph_texture_idx) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md), texture_idx: [`int`](class_int.md) )                          |
+| `void`                                                  | [`set_glyph_uv_rect`](class_fontfile.md#class_fontfile_method_set_glyph_uv_rect) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), glyph: [`int`](class_int.md), uv_rect: [`Rect2`](class_rect2.md) )                                  |
+| `void`                                                  | [`set_kerning`](class_fontfile.md#class_fontfile_method_set_kerning) ( cache_index: [`int`](class_int.md), size: [`int`](class_int.md), glyph_pair: [`Vector2i`](class_vector2i.md), kerning: [`Vector2`](class_vector2.md) )                                     |
+| `void`                                                  | [`set_language_support_override`](class_fontfile.md#class_fontfile_method_set_language_support_override) ( language: [`String`](class_string.md), supported: [`bool`](class_bool.md) )                                                                            |
+| `void`                                                  | [`set_script_support_override`](class_fontfile.md#class_fontfile_method_set_script_support_override) ( script: [`String`](class_string.md), supported: [`bool`](class_bool.md) )                                                                                  |
+| `void`                                                  | [`set_texture_image`](class_fontfile.md#class_fontfile_method_set_texture_image) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md), image: [`Image`](class_image.md) )                            |
+| `void`                                                  | [`set_texture_offsets`](class_fontfile.md#class_fontfile_method_set_texture_offsets) ( cache_index: [`int`](class_int.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md), offset: [`PackedInt32Array`](class_packedint32array.md) ) |
+| `void`                                                  | [`set_transform`](class_fontfile.md#class_fontfile_method_set_transform) ( cache_index: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                 |
+| `void`                                                  | [`set_variation_coordinates`](class_fontfile.md#class_fontfile_method_set_variation_coordinates) ( cache_index: [`int`](class_int.md), variation_coordinates: [`Dictionary`](class_dictionary.md) )                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -232,7 +232,7 @@ Font size, used only for the bitmap fonts.
 - `void` **set_fixed_size_scale_mode** ( value: [FixedSizeScaleMode](#enum_textserver_fixedsizescalemode) )
 - [FixedSizeScaleMode](#enum_textserver_fixedsizescalemode) **get_fixed_size_scale_mode** ( )
 
-Scaling mode, used only for the bitmap fonts with [`fixed_size`](#class_fontfile_property_fixed_size) greater than zero.
+Scaling mode, used only for the bitmap fonts with [`fixed_size`](class_fontfile.md#class_fontfile_property_fixed_size) greater than zero.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -336,7 +336,7 @@ Font hinting mode. Used by dynamic fonts only.
 - `void` **set_msdf_pixel_range** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_msdf_pixel_range** ( )
 
-The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, [`msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the size of the largest font outline. The default [`msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) value of `16` allows outline sizes up to `8` to look correct.
+The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, [`msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the size of the largest font outline. The default [`msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) value of `16` allows outline sizes up to `8` to look correct.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -364,7 +364,7 @@ Source font size used to generate MSDF textures. Higher values allow for more pr
 
 If set to `true`, glyphs of all sizes are rendered using single multichannel signed distance field (MSDF) generated from the dynamic font vector data. Since this approach does not rely on rasterizing the font every time its size changes, this allows for resizing the font in real-time without any performance penalty. Text will also not look grainy for [`Control`](class_control.md) s that are scaled down (or for [`Label3D`](class_label3d.md) s viewed from a long distance). As a downside, font hinting is not available with MSDF. The lack of font hinting may result in less crisp and less readable fonts at small sizes.
 
- **Note:** If using font outlines, [`msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the size of the largest font outline.
+ **Note:** If using font outlines, [`msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the size of the largest font outline.
 
  **Note:** MSDF font rendering does not render glyphs with overlapping shapes correctly. Overlapping shapes are not valid per the OpenType standard, but are still commonly found in many font files, especially those converted by Google Fonts. To avoid issues with overlapping glyphs, consider downloading the font file directly from the type foundry instead of relying on Google Fonts.
 
@@ -418,7 +418,7 @@ Font style name.
 - `void` **set_subpixel_positioning** ( value: [SubpixelPositioning](#enum_textserver_subpixelpositioning) )
 - [SubpixelPositioning](#enum_textserver_subpixelpositioning) **get_subpixel_positioning** ( )
 
-Font glyph subpixel positioning mode. Subpixel positioning provides shaper text and better kerning for smaller font sizes, at the cost of higher memory usage and lower font rasterization speed. Use [`TextServer.SUBPIXEL_POSITIONING_AUTO`](#class_textserver_constant_subpixel_positioning_auto) to automatically enable it based on the font size.
+Font glyph subpixel positioning mode. Subpixel positioning provides shaper text and better kerning for smaller font sizes, at the cost of higher memory usage and lower font rasterization speed. Use [`TextServer.SUBPIXEL_POSITIONING_AUTO`](class_textserver.md#class_textserver_constant_subpixel_positioning_auto) to automatically enable it based on the font size.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -442,7 +442,7 @@ Removes all font cache entries.
 
 Removes all rendered glyph information from the cache entry.
 
- **Note:** This function will not remove textures associated with the glyphs, use [`remove_texture`](#class_fontfile_method_remove_texture) to remove them manually.
+ **Note:** This function will not remove textures associated with the glyphs, use [`remove_texture`](class_fontfile.md#class_fontfile_method_remove_texture) to remove them manually.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -474,7 +474,7 @@ Removes all font sizes from the cache entry
 
 Removes all textures from font cache entry.
 
- **Note:** This function will not remove glyphs associated with the texture, use [`remove_glyph`](#class_fontfile_method_remove_glyph) to remove them manually.
+ **Note:** This function will not remove glyphs associated with the texture, use [`remove_glyph`](class_fontfile.md#class_fontfile_method_remove_glyph) to remove them manually.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -544,7 +544,7 @@ Returns thickness of the underline in pixels.
 
 [`int`](class_int.md) **get_char_from_glyph_index** ( size: [`int`](class_int.md), glyph_index: [`int`](class_int.md) ) const[^const]<div id="class_fontfile_method_get_char_from_glyph_index"></div>
 
-Returns character code associated with `glyph_index`, or `0` if `glyph_index` is invalid. See [`get_glyph_index`](#class_fontfile_method_get_glyph_index).
+Returns character code associated with `glyph_index`, or `0` if `glyph_index` is invalid. See [`get_glyph_index`](class_fontfile.md#class_fontfile_method_get_glyph_index).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -776,7 +776,7 @@ Returns 2D transform, applied to the font outlines, can be used for slanting, fl
 
 [`Dictionary`](class_dictionary.md) **get_variation_coordinates** ( cache_index: [`int`](class_int.md) ) const[^const]<div id="class_fontfile_method_get_variation_coordinates"></div>
 
-Returns variation coordinates for the specified font cache entry. See [`Font.get_supported_variation_list`](#class_font_method_get_supported_variation_list) for more info.
+Returns variation coordinates for the specified font cache entry. See [`Font.get_supported_variation_list`](class_font.md#class_font_method_get_supported_variation_list) for more info.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -822,7 +822,7 @@ Removes specified font cache entry.
 
 Removes specified rendered glyph information from the cache entry.
 
- **Note:** This function will not remove textures associated with the glyphs, use [`remove_texture`](#class_fontfile_method_remove_texture) to remove them manually.
+ **Note:** This function will not remove textures associated with the glyphs, use [`remove_texture`](class_fontfile.md#class_fontfile_method_remove_texture) to remove them manually.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -874,7 +874,7 @@ Removes specified font size from the cache entry.
 
 Removes specified texture from the cache entry.
 
- **Note:** This function will not remove glyphs associated with the texture. Remove them manually using [`remove_glyph`](#class_fontfile_method_remove_glyph).
+ **Note:** This function will not remove glyphs associated with the texture. Remove them manually using [`remove_glyph`](class_fontfile.md#class_fontfile_method_remove_glyph).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1056,7 +1056,7 @@ Sets kerning for the pair of glyphs.
 
 `void` **set_language_support_override** ( language: [`String`](class_string.md), supported: [`bool`](class_bool.md) )<div id="class_fontfile_method_set_language_support_override"></div>
 
-Adds override for [`Font.is_language_supported`](#class_font_method_is_language_supported).
+Adds override for [`Font.is_language_supported`](class_font.md#class_font_method_is_language_supported).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1066,7 +1066,7 @@ Adds override for [`Font.is_language_supported`](#class_font_method_is_language_
 
 `void` **set_script_support_override** ( script: [`String`](class_string.md), supported: [`bool`](class_bool.md) )<div id="class_fontfile_method_set_script_support_override"></div>
 
-Adds override for [`Font.is_script_supported`](#class_font_method_is_script_supported).
+Adds override for [`Font.is_script_supported`](class_font.md#class_font_method_is_script_supported).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1106,7 +1106,7 @@ Sets 2D transform, applied to the font outlines, can be used for slanting, flipp
 
 `void` **set_variation_coordinates** ( cache_index: [`int`](class_int.md), variation_coordinates: [`Dictionary`](class_dictionary.md) )<div id="class_fontfile_method_set_variation_coordinates"></div>
 
-Sets variation coordinates for the specified font cache entry. See [`Font.get_supported_variation_list`](#class_font_method_get_supported_variation_list) for more info.
+Sets variation coordinates for the specified font cache entry. See [`Font.get_supported_variation_list`](class_font.md#class_font_method_get_supported_variation_list) for more info.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

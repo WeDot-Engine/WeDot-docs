@@ -29,86 +29,86 @@ Finally, viewports can also behave as render targets, in which case they will no
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                                                   | [`audio_listener_enable_2d`](#class_viewport_property_audio_listener_enable_2d)                     | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`audio_listener_enable_3d`](#class_viewport_property_audio_listener_enable_3d)                     | ``false``      |
-| [`int`](class_int.md)                                                                     | [`canvas_cull_mask`](#class_viewport_property_canvas_cull_mask)                                     | ``4294967295`` |
-| [DefaultCanvasItemTextureFilter](#enum_viewport_defaultcanvasitemtexturefilter)           | [`canvas_item_default_texture_filter`](#class_viewport_property_canvas_item_default_texture_filter) | ``1``          |
-| [DefaultCanvasItemTextureRepeat](#enum_viewport_defaultcanvasitemtexturerepeat)           | [`canvas_item_default_texture_repeat`](#class_viewport_property_canvas_item_default_texture_repeat) | ``0``          |
-| [`Transform2D`](class_transform2d.md)                                                     | [`canvas_transform`](#class_viewport_property_canvas_transform)                                     |                |
-| [DebugDraw](#enum_viewport_debugdraw)                                                     | [`debug_draw`](#class_viewport_property_debug_draw)                                                 | ``0``          |
-| [`bool`](class_bool.md)                                                                   | [`disable_3d`](#class_viewport_property_disable_3d)                                                 | ``false``      |
-| [`float`](class_float.md)                                                                 | [`fsr_sharpness`](#class_viewport_property_fsr_sharpness)                                           | ``0.2``        |
-| [`Transform2D`](class_transform2d.md)                                                     | [`global_canvas_transform`](#class_viewport_property_global_canvas_transform)                       |                |
-| [`bool`](class_bool.md)                                                                   | [`gui_disable_input`](#class_viewport_property_gui_disable_input)                                   | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`gui_embed_subwindows`](#class_viewport_property_gui_embed_subwindows)                             | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`gui_snap_controls_to_pixels`](#class_viewport_property_gui_snap_controls_to_pixels)               | ``true``       |
-| [`bool`](class_bool.md)                                                                   | [`handle_input_locally`](#class_viewport_property_handle_input_locally)                             | ``true``       |
-| [`float`](class_float.md)                                                                 | [`mesh_lod_threshold`](#class_viewport_property_mesh_lod_threshold)                                 | ``1.0``        |
-| [MSAA](#enum_viewport_msaa)                                                               | [`msaa_2d`](#class_viewport_property_msaa_2d)                                                       | ``0``          |
-| [MSAA](#enum_viewport_msaa)                                                               | [`msaa_3d`](#class_viewport_property_msaa_3d)                                                       | ``0``          |
-| [`bool`](class_bool.md)                                                                   | [`own_world_3d`](#class_viewport_property_own_world_3d)                                             | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`physics_object_picking`](#class_viewport_property_physics_object_picking)                         | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`physics_object_picking_first_only`](#class_viewport_property_physics_object_picking_first_only)   | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`physics_object_picking_sort`](#class_viewport_property_physics_object_picking_sort)               | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`positional_shadow_atlas_16_bits`](#class_viewport_property_positional_shadow_atlas_16_bits)       | ``true``       |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_0`](#class_viewport_property_positional_shadow_atlas_quad_0)         | ``2``          |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_1`](#class_viewport_property_positional_shadow_atlas_quad_1)         | ``2``          |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_2`](#class_viewport_property_positional_shadow_atlas_quad_2)         | ``3``          |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_3`](#class_viewport_property_positional_shadow_atlas_quad_3)         | ``4``          |
-| [`int`](class_int.md)                                                                     | [`positional_shadow_atlas_size`](#class_viewport_property_positional_shadow_atlas_size)             | ``2048``       |
-| [Scaling3DMode](#enum_viewport_scaling3dmode)                                             | [`scaling_3d_mode`](#class_viewport_property_scaling_3d_mode)                                       | ``0``          |
-| [`float`](class_float.md)                                                                 | [`scaling_3d_scale`](#class_viewport_property_scaling_3d_scale)                                     | ``1.0``        |
-| [ScreenSpaceAA](#enum_viewport_screenspaceaa)                                             | [`screen_space_aa`](#class_viewport_property_screen_space_aa)                                       | ``0``          |
-| [SDFOversize](#enum_viewport_sdfoversize)                                                 | [`sdf_oversize`](#class_viewport_property_sdf_oversize)                                             | ``1``          |
-| [SDFScale](#enum_viewport_sdfscale)                                                       | [`sdf_scale`](#class_viewport_property_sdf_scale)                                                   | ``1``          |
-| [`bool`](class_bool.md)                                                                   | [`snap_2d_transforms_to_pixel`](#class_viewport_property_snap_2d_transforms_to_pixel)               | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`snap_2d_vertices_to_pixel`](#class_viewport_property_snap_2d_vertices_to_pixel)                   | ``false``      |
-| [`float`](class_float.md)                                                                 | [`texture_mipmap_bias`](#class_viewport_property_texture_mipmap_bias)                               | ``0.0``        |
-| [`bool`](class_bool.md)                                                                   | [`transparent_bg`](#class_viewport_property_transparent_bg)                                         | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_debanding`](#class_viewport_property_use_debanding)                                           | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_hdr_2d`](#class_viewport_property_use_hdr_2d)                                                 | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_occlusion_culling`](#class_viewport_property_use_occlusion_culling)                           | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_taa`](#class_viewport_property_use_taa)                                                       | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_xr`](#class_viewport_property_use_xr)                                                         | ``false``      |
-| [VRSMode](#enum_viewport_vrsmode)                                                         | [`vrs_mode`](#class_viewport_property_vrs_mode)                                                     | ``0``          |
-| [`Texture2D`](class_texture2d.md)                                                         | [`vrs_texture`](#class_viewport_property_vrs_texture)                                               |                |
-| [VRSUpdateMode](#enum_viewport_vrsupdatemode)                                             | [`vrs_update_mode`](#class_viewport_property_vrs_update_mode)                                       | ``1``          |
-| [`World2D`](class_world2d.md)                                                             | [`world_2d`](#class_viewport_property_world_2d)                                                     |                |
-| [`World3D`](class_world3d.md)                                                             | [`world_3d`](#class_viewport_property_world_3d)                                                     |                |
+| [`bool`](class_bool.md)                                                                   | [`audio_listener_enable_2d`](class_viewport.md#class_viewport_property_audio_listener_enable_2d)                     | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`audio_listener_enable_3d`](class_viewport.md#class_viewport_property_audio_listener_enable_3d)                     | ``false``      |
+| [`int`](class_int.md)                                                                     | [`canvas_cull_mask`](class_viewport.md#class_viewport_property_canvas_cull_mask)                                     | ``4294967295`` |
+| [DefaultCanvasItemTextureFilter](#enum_viewport_defaultcanvasitemtexturefilter)           | [`canvas_item_default_texture_filter`](class_viewport.md#class_viewport_property_canvas_item_default_texture_filter) | ``1``          |
+| [DefaultCanvasItemTextureRepeat](#enum_viewport_defaultcanvasitemtexturerepeat)           | [`canvas_item_default_texture_repeat`](class_viewport.md#class_viewport_property_canvas_item_default_texture_repeat) | ``0``          |
+| [`Transform2D`](class_transform2d.md)                                                     | [`canvas_transform`](class_viewport.md#class_viewport_property_canvas_transform)                                     |                |
+| [DebugDraw](#enum_viewport_debugdraw)                                                     | [`debug_draw`](class_viewport.md#class_viewport_property_debug_draw)                                                 | ``0``          |
+| [`bool`](class_bool.md)                                                                   | [`disable_3d`](class_viewport.md#class_viewport_property_disable_3d)                                                 | ``false``      |
+| [`float`](class_float.md)                                                                 | [`fsr_sharpness`](class_viewport.md#class_viewport_property_fsr_sharpness)                                           | ``0.2``        |
+| [`Transform2D`](class_transform2d.md)                                                     | [`global_canvas_transform`](class_viewport.md#class_viewport_property_global_canvas_transform)                       |                |
+| [`bool`](class_bool.md)                                                                   | [`gui_disable_input`](class_viewport.md#class_viewport_property_gui_disable_input)                                   | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`gui_embed_subwindows`](class_viewport.md#class_viewport_property_gui_embed_subwindows)                             | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`gui_snap_controls_to_pixels`](class_viewport.md#class_viewport_property_gui_snap_controls_to_pixels)               | ``true``       |
+| [`bool`](class_bool.md)                                                                   | [`handle_input_locally`](class_viewport.md#class_viewport_property_handle_input_locally)                             | ``true``       |
+| [`float`](class_float.md)                                                                 | [`mesh_lod_threshold`](class_viewport.md#class_viewport_property_mesh_lod_threshold)                                 | ``1.0``        |
+| [MSAA](#enum_viewport_msaa)                                                               | [`msaa_2d`](class_viewport.md#class_viewport_property_msaa_2d)                                                       | ``0``          |
+| [MSAA](#enum_viewport_msaa)                                                               | [`msaa_3d`](class_viewport.md#class_viewport_property_msaa_3d)                                                       | ``0``          |
+| [`bool`](class_bool.md)                                                                   | [`own_world_3d`](class_viewport.md#class_viewport_property_own_world_3d)                                             | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`physics_object_picking`](class_viewport.md#class_viewport_property_physics_object_picking)                         | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`physics_object_picking_first_only`](class_viewport.md#class_viewport_property_physics_object_picking_first_only)   | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`physics_object_picking_sort`](class_viewport.md#class_viewport_property_physics_object_picking_sort)               | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`positional_shadow_atlas_16_bits`](class_viewport.md#class_viewport_property_positional_shadow_atlas_16_bits)       | ``true``       |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_0`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_0)         | ``2``          |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_1`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_1)         | ``2``          |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_2`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_2)         | ``3``          |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_3`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_3)         | ``4``          |
+| [`int`](class_int.md)                                                                     | [`positional_shadow_atlas_size`](class_viewport.md#class_viewport_property_positional_shadow_atlas_size)             | ``2048``       |
+| [Scaling3DMode](#enum_viewport_scaling3dmode)                                             | [`scaling_3d_mode`](class_viewport.md#class_viewport_property_scaling_3d_mode)                                       | ``0``          |
+| [`float`](class_float.md)                                                                 | [`scaling_3d_scale`](class_viewport.md#class_viewport_property_scaling_3d_scale)                                     | ``1.0``        |
+| [ScreenSpaceAA](#enum_viewport_screenspaceaa)                                             | [`screen_space_aa`](class_viewport.md#class_viewport_property_screen_space_aa)                                       | ``0``          |
+| [SDFOversize](#enum_viewport_sdfoversize)                                                 | [`sdf_oversize`](class_viewport.md#class_viewport_property_sdf_oversize)                                             | ``1``          |
+| [SDFScale](#enum_viewport_sdfscale)                                                       | [`sdf_scale`](class_viewport.md#class_viewport_property_sdf_scale)                                                   | ``1``          |
+| [`bool`](class_bool.md)                                                                   | [`snap_2d_transforms_to_pixel`](class_viewport.md#class_viewport_property_snap_2d_transforms_to_pixel)               | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`snap_2d_vertices_to_pixel`](class_viewport.md#class_viewport_property_snap_2d_vertices_to_pixel)                   | ``false``      |
+| [`float`](class_float.md)                                                                 | [`texture_mipmap_bias`](class_viewport.md#class_viewport_property_texture_mipmap_bias)                               | ``0.0``        |
+| [`bool`](class_bool.md)                                                                   | [`transparent_bg`](class_viewport.md#class_viewport_property_transparent_bg)                                         | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`use_debanding`](class_viewport.md#class_viewport_property_use_debanding)                                           | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`use_hdr_2d`](class_viewport.md#class_viewport_property_use_hdr_2d)                                                 | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`use_occlusion_culling`](class_viewport.md#class_viewport_property_use_occlusion_culling)                           | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`use_taa`](class_viewport.md#class_viewport_property_use_taa)                                                       | ``false``      |
+| [`bool`](class_bool.md)                                                                   | [`use_xr`](class_viewport.md#class_viewport_property_use_xr)                                                         | ``false``      |
+| [VRSMode](#enum_viewport_vrsmode)                                                         | [`vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode)                                                     | ``0``          |
+| [`Texture2D`](class_texture2d.md)                                                         | [`vrs_texture`](class_viewport.md#class_viewport_property_vrs_texture)                                               |                |
+| [VRSUpdateMode](#enum_viewport_vrsupdatemode)                                             | [`vrs_update_mode`](class_viewport.md#class_viewport_property_vrs_update_mode)                                       | ``1``          |
+| [`World2D`](class_world2d.md)                                                             | [`world_2d`](class_viewport.md#class_viewport_property_world_2d)                                                     |                |
+| [`World3D`](class_world3d.md)                                                             | [`world_3d`](class_viewport.md#class_viewport_property_world_3d)                                                     |                |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`World2D`](class_world2d.md)                                                             | [`find_world_2d`](#class_viewport_method_find_world_2d) ( ) const[^const]                                                                                                                                                                                  |
-| [`World3D`](class_world3d.md)                                                             | [`find_world_3d`](#class_viewport_method_find_world_3d) ( ) const[^const]                                                                                                                                                                                  |
-| [`Camera2D`](class_camera2d.md)                                                           | [`get_camera_2d`](#class_viewport_method_get_camera_2d) ( ) const[^const]                                                                                                                                                                                  |
-| [`Camera3D`](class_camera3d.md)                                                           | [`get_camera_3d`](#class_viewport_method_get_camera_3d) ( ) const[^const]                                                                                                                                                                                  |
-| [`bool`](class_bool.md)                                                                   | [`get_canvas_cull_mask_bit`](#class_viewport_method_get_canvas_cull_mask_bit) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                               |
-| [Array](class_array.md) [`Window`](class_window.md)                                       | [`get_embedded_subwindows`](#class_viewport_method_get_embedded_subwindows) ( ) const[^const]                                                                                                                                                              |
-| [`Transform2D`](class_transform2d.md)                                                     | [`get_final_transform`](#class_viewport_method_get_final_transform) ( ) const[^const]                                                                                                                                                                      |
-| [`Vector2`](class_vector2.md)                                                             | [`get_mouse_position`](#class_viewport_method_get_mouse_position) ( ) const[^const]                                                                                                                                                                        |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`get_positional_shadow_atlas_quadrant_subdiv`](#class_viewport_method_get_positional_shadow_atlas_quadrant_subdiv) ( quadrant: [`int`](class_int.md) ) const[^const]                                                                                      |
-| [`int`](class_int.md)                                                                     | [`get_render_info`](#class_viewport_method_get_render_info) ( type: [RenderInfoType](#enum_viewport_renderinfotype), info: [RenderInfo](#enum_viewport_renderinfo) )                                                                                       |
-| [`Transform2D`](class_transform2d.md)                                                     | [`get_screen_transform`](#class_viewport_method_get_screen_transform) ( ) const[^const]                                                                                                                                                                    |
-| [`ViewportTexture`](class_viewporttexture.md)                                             | [`get_texture`](#class_viewport_method_get_texture) ( ) const[^const]                                                                                                                                                                                      |
-| [`RID`](class_rid.md)                                                                     | [`get_viewport_rid`](#class_viewport_method_get_viewport_rid) ( ) const[^const]                                                                                                                                                                            |
-| [`Rect2`](class_rect2.md)                                                                 | [`get_visible_rect`](#class_viewport_method_get_visible_rect) ( ) const[^const]                                                                                                                                                                            |
-| [`Variant`](class_variant.md)                                                             | [`gui_get_drag_data`](#class_viewport_method_gui_get_drag_data) ( ) const[^const]                                                                                                                                                                          |
-| [`Control`](class_control.md)                                                             | [`gui_get_focus_owner`](#class_viewport_method_gui_get_focus_owner) ( ) const[^const]                                                                                                                                                                      |
-| [`Control`](class_control.md)                                                             | [`gui_get_hovered_control`](#class_viewport_method_gui_get_hovered_control) ( ) const[^const]                                                                                                                                                              |
-| [`bool`](class_bool.md)                                                                   | [`gui_is_drag_successful`](#class_viewport_method_gui_is_drag_successful) ( ) const[^const]                                                                                                                                                                |
-| [`bool`](class_bool.md)                                                                   | [`gui_is_dragging`](#class_viewport_method_gui_is_dragging) ( ) const[^const]                                                                                                                                                                              |
-| `void`                                                                                    | [`gui_release_focus`](#class_viewport_method_gui_release_focus) ( )                                                                                                                                                                                        |
-| [`bool`](class_bool.md)                                                                   | [`is_input_handled`](#class_viewport_method_is_input_handled) ( ) const[^const]                                                                                                                                                                            |
-| `void`                                                                                    | [`push_input`](#class_viewport_method_push_input) ( event: [`InputEvent`](class_inputevent.md), in_local_coords: [`bool`](class_bool.md) = false )                                                                                                         |
-| `void`                                                                                    | [`push_text_input`](#class_viewport_method_push_text_input) ( text: [`String`](class_string.md) )                                                                                                                                                          |
-| `void`                                                                                    | [`push_unhandled_input`](#class_viewport_method_push_unhandled_input) ( event: [`InputEvent`](class_inputevent.md), in_local_coords: [`bool`](class_bool.md) = false )                                                                                     |
-| `void`                                                                                    | [`set_canvas_cull_mask_bit`](#class_viewport_method_set_canvas_cull_mask_bit) ( layer: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                            |
-| `void`                                                                                    | [`set_input_as_handled`](#class_viewport_method_set_input_as_handled) ( )                                                                                                                                                                                  |
-| `void`                                                                                    | [`set_positional_shadow_atlas_quadrant_subdiv`](#class_viewport_method_set_positional_shadow_atlas_quadrant_subdiv) ( quadrant: [`int`](class_int.md), subdiv: [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) ) |
-| `void`                                                                                    | [`update_mouse_cursor_state`](#class_viewport_method_update_mouse_cursor_state) ( )                                                                                                                                                                        |
-| `void`                                                                                    | [`warp_mouse`](#class_viewport_method_warp_mouse) ( position: [`Vector2`](class_vector2.md) )                                                                                                                                                              |
+| [`World2D`](class_world2d.md)                                                             | [`find_world_2d`](class_viewport.md#class_viewport_method_find_world_2d) ( ) const[^const]                                                                                                                                                                                  |
+| [`World3D`](class_world3d.md)                                                             | [`find_world_3d`](class_viewport.md#class_viewport_method_find_world_3d) ( ) const[^const]                                                                                                                                                                                  |
+| [`Camera2D`](class_camera2d.md)                                                           | [`get_camera_2d`](class_viewport.md#class_viewport_method_get_camera_2d) ( ) const[^const]                                                                                                                                                                                  |
+| [`Camera3D`](class_camera3d.md)                                                           | [`get_camera_3d`](class_viewport.md#class_viewport_method_get_camera_3d) ( ) const[^const]                                                                                                                                                                                  |
+| [`bool`](class_bool.md)                                                                   | [`get_canvas_cull_mask_bit`](class_viewport.md#class_viewport_method_get_canvas_cull_mask_bit) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                               |
+| [Array](class_array.md) [`Window`](class_window.md)                                       | [`get_embedded_subwindows`](class_viewport.md#class_viewport_method_get_embedded_subwindows) ( ) const[^const]                                                                                                                                                              |
+| [`Transform2D`](class_transform2d.md)                                                     | [`get_final_transform`](class_viewport.md#class_viewport_method_get_final_transform) ( ) const[^const]                                                                                                                                                                      |
+| [`Vector2`](class_vector2.md)                                                             | [`get_mouse_position`](class_viewport.md#class_viewport_method_get_mouse_position) ( ) const[^const]                                                                                                                                                                        |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`get_positional_shadow_atlas_quadrant_subdiv`](class_viewport.md#class_viewport_method_get_positional_shadow_atlas_quadrant_subdiv) ( quadrant: [`int`](class_int.md) ) const[^const]                                                                                      |
+| [`int`](class_int.md)                                                                     | [`get_render_info`](class_viewport.md#class_viewport_method_get_render_info) ( type: [RenderInfoType](#enum_viewport_renderinfotype), info: [RenderInfo](#enum_viewport_renderinfo) )                                                                                       |
+| [`Transform2D`](class_transform2d.md)                                                     | [`get_screen_transform`](class_viewport.md#class_viewport_method_get_screen_transform) ( ) const[^const]                                                                                                                                                                    |
+| [`ViewportTexture`](class_viewporttexture.md)                                             | [`get_texture`](class_viewport.md#class_viewport_method_get_texture) ( ) const[^const]                                                                                                                                                                                      |
+| [`RID`](class_rid.md)                                                                     | [`get_viewport_rid`](class_viewport.md#class_viewport_method_get_viewport_rid) ( ) const[^const]                                                                                                                                                                            |
+| [`Rect2`](class_rect2.md)                                                                 | [`get_visible_rect`](class_viewport.md#class_viewport_method_get_visible_rect) ( ) const[^const]                                                                                                                                                                            |
+| [`Variant`](class_variant.md)                                                             | [`gui_get_drag_data`](class_viewport.md#class_viewport_method_gui_get_drag_data) ( ) const[^const]                                                                                                                                                                          |
+| [`Control`](class_control.md)                                                             | [`gui_get_focus_owner`](class_viewport.md#class_viewport_method_gui_get_focus_owner) ( ) const[^const]                                                                                                                                                                      |
+| [`Control`](class_control.md)                                                             | [`gui_get_hovered_control`](class_viewport.md#class_viewport_method_gui_get_hovered_control) ( ) const[^const]                                                                                                                                                              |
+| [`bool`](class_bool.md)                                                                   | [`gui_is_drag_successful`](class_viewport.md#class_viewport_method_gui_is_drag_successful) ( ) const[^const]                                                                                                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`gui_is_dragging`](class_viewport.md#class_viewport_method_gui_is_dragging) ( ) const[^const]                                                                                                                                                                              |
+| `void`                                                                                    | [`gui_release_focus`](class_viewport.md#class_viewport_method_gui_release_focus) ( )                                                                                                                                                                                        |
+| [`bool`](class_bool.md)                                                                   | [`is_input_handled`](class_viewport.md#class_viewport_method_is_input_handled) ( ) const[^const]                                                                                                                                                                            |
+| `void`                                                                                    | [`push_input`](class_viewport.md#class_viewport_method_push_input) ( event: [`InputEvent`](class_inputevent.md), in_local_coords: [`bool`](class_bool.md) = false )                                                                                                         |
+| `void`                                                                                    | [`push_text_input`](class_viewport.md#class_viewport_method_push_text_input) ( text: [`String`](class_string.md) )                                                                                                                                                          |
+| `void`                                                                                    | [`push_unhandled_input`](class_viewport.md#class_viewport_method_push_unhandled_input) ( event: [`InputEvent`](class_inputevent.md), in_local_coords: [`bool`](class_bool.md) = false )                                                                                     |
+| `void`                                                                                    | [`set_canvas_cull_mask_bit`](class_viewport.md#class_viewport_method_set_canvas_cull_mask_bit) ( layer: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                            |
+| `void`                                                                                    | [`set_input_as_handled`](class_viewport.md#class_viewport_method_set_input_as_handled) ( )                                                                                                                                                                                  |
+| `void`                                                                                    | [`set_positional_shadow_atlas_quadrant_subdiv`](class_viewport.md#class_viewport_method_set_positional_shadow_atlas_quadrant_subdiv) ( quadrant: [`int`](class_int.md), subdiv: [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) ) |
+| `void`                                                                                    | [`update_mouse_cursor_state`](class_viewport.md#class_viewport_method_update_mouse_cursor_state) ( )                                                                                                                                                                        |
+| `void`                                                                                    | [`warp_mouse`](class_viewport.md#class_viewport_method_warp_mouse) ( position: [`Vector2`](class_vector2.md) )                                                                                                                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -178,13 +178,13 @@ This quadrant will be split 64 ways and used by up to 64 shadow maps.
 
 [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) **SHADOW_ATLAS_QUADRANT_SUBDIV_256** = ``5``
 
-This quadrant will be split 256 ways and used by up to 256 shadow maps. Unless the [`positional_shadow_atlas_size`](#class_viewport_property_positional_shadow_atlas_size) is very high, the shadows in this quadrant will be very low resolution.
+This quadrant will be split 256 ways and used by up to 256 shadow maps. Unless the [`positional_shadow_atlas_size`](class_viewport.md#class_viewport_property_positional_shadow_atlas_size) is very high, the shadows in this quadrant will be very low resolution.
 
 <div id="_class_viewport_constant_shadow_atlas_quadrant_subdiv_1024"></div>
 
 [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) **SHADOW_ATLAS_QUADRANT_SUBDIV_1024** = ``6``
 
-This quadrant will be split 1024 ways and used by up to 1024 shadow maps. Unless the [`positional_shadow_atlas_size`](#class_viewport_property_positional_shadow_atlas_size) is very high, the shadows in this quadrant will be very low resolution.
+This quadrant will be split 1024 ways and used by up to 1024 shadow maps. Unless the [`positional_shadow_atlas_size`](class_viewport.md#class_viewport_property_positional_shadow_atlas_size) is very high, the shadows in this quadrant will be very low resolution.
 
 <div id="_class_viewport_constant_shadow_atlas_quadrant_subdiv_max"></div>
 
@@ -204,19 +204,19 @@ enum **Scaling3DMode**: <div id="enum_viewport_scaling3dmode"></div>
 
 [Scaling3DMode](#enum_viewport_scaling3dmode) **SCALING_3D_MODE_BILINEAR** = ``0``
 
-Use bilinear scaling for the viewport's 3D buffer. The amount of scaling can be set using [`scaling_3d_scale`](#class_viewport_property_scaling_3d_scale). Values less than `1.0` will result in undersampling while values greater than `1.0` will result in supersampling. A value of `1.0` disables scaling.
+Use bilinear scaling for the viewport's 3D buffer. The amount of scaling can be set using [`scaling_3d_scale`](class_viewport.md#class_viewport_property_scaling_3d_scale). Values less than `1.0` will result in undersampling while values greater than `1.0` will result in supersampling. A value of `1.0` disables scaling.
 
 <div id="_class_viewport_constant_scaling_3d_mode_fsr"></div>
 
 [Scaling3DMode](#enum_viewport_scaling3dmode) **SCALING_3D_MODE_FSR** = ``1``
 
-Use AMD FidelityFX Super Resolution 1.0 upscaling for the viewport's 3D buffer. The amount of scaling can be set using [`scaling_3d_scale`](#class_viewport_property_scaling_3d_scale). Values less than `1.0` will be result in the viewport being upscaled using FSR. Values greater than `1.0` are not supported and bilinear downsampling will be used instead. A value of `1.0` disables scaling.
+Use AMD FidelityFX Super Resolution 1.0 upscaling for the viewport's 3D buffer. The amount of scaling can be set using [`scaling_3d_scale`](class_viewport.md#class_viewport_property_scaling_3d_scale). Values less than `1.0` will be result in the viewport being upscaled using FSR. Values greater than `1.0` are not supported and bilinear downsampling will be used instead. A value of `1.0` disables scaling.
 
 <div id="_class_viewport_constant_scaling_3d_mode_fsr2"></div>
 
 [Scaling3DMode](#enum_viewport_scaling3dmode) **SCALING_3D_MODE_FSR2** = ``2``
 
-Use AMD FidelityFX Super Resolution 2.2 upscaling for the viewport's 3D buffer. The amount of scaling can be set using [`scaling_3d_scale`](#class_viewport_property_scaling_3d_scale). Values less than `1.0` will be result in the viewport being upscaled using FSR2. Values greater than `1.0` are not supported and bilinear downsampling will be used instead. A value of `1.0` will use FSR2 at native resolution as a TAA solution.
+Use AMD FidelityFX Super Resolution 2.2 upscaling for the viewport's 3D buffer. The amount of scaling can be set using [`scaling_3d_scale`](class_viewport.md#class_viewport_property_scaling_3d_scale). Values less than `1.0` will be result in the viewport being upscaled using FSR2. Values greater than `1.0` are not supported and bilinear downsampling will be used instead. A value of `1.0` will use FSR2 at native resolution as a TAA solution.
 
 <div id="_class_viewport_constant_scaling_3d_mode_max"></div>
 
@@ -436,13 +436,13 @@ Draws the scene luminance buffer (if available) in the upper left quadrant of th
 
 [DebugDraw](#enum_viewport_debugdraw) **DEBUG_DRAW_SSAO** = ``12``
 
-Draws the screen-space ambient occlusion texture instead of the scene so that you can clearly see how it is affecting objects. In order for this display mode to work, you must have [`Environment.ssao_enabled`](#class_environment_property_ssao_enabled) set in your [`WorldEnvironment`](class_worldenvironment.md).
+Draws the screen-space ambient occlusion texture instead of the scene so that you can clearly see how it is affecting objects. In order for this display mode to work, you must have [`Environment.ssao_enabled`](class_environment.md#class_environment_property_ssao_enabled) set in your [`WorldEnvironment`](class_worldenvironment.md).
 
 <div id="_class_viewport_constant_debug_draw_ssil"></div>
 
 [DebugDraw](#enum_viewport_debugdraw) **DEBUG_DRAW_SSIL** = ``13``
 
-Draws the screen-space indirect lighting texture instead of the scene so that you can clearly see how it is affecting objects. In order for this display mode to work, you must have [`Environment.ssil_enabled`](#class_environment_property_ssil_enabled) set in your [`WorldEnvironment`](class_worldenvironment.md).
+Draws the screen-space indirect lighting texture instead of the scene so that you can clearly see how it is affecting objects. In order for this display mode to work, you must have [`Environment.ssil_enabled`](class_environment.md#class_environment_property_ssil_enabled) set in your [`WorldEnvironment`](class_worldenvironment.md).
 
 <div id="_class_viewport_constant_debug_draw_pssm_splits"></div>
 
@@ -462,7 +462,7 @@ Draws the decal atlas used by [`Decal`](class_decal.md) s and light projector te
 
 Draws the cascades used to render signed distance field global illumination (SDFGI).
 
-Does nothing if the current environment's [`Environment.sdfgi_enabled`](#class_environment_property_sdfgi_enabled) is `false` or SDFGI is not supported on the platform.
+Does nothing if the current environment's [`Environment.sdfgi_enabled`](class_environment.md#class_environment_property_sdfgi_enabled) is `false` or SDFGI is not supported on the platform.
 
 <div id="_class_viewport_constant_debug_draw_sdfgi_probes"></div>
 
@@ -470,7 +470,7 @@ Does nothing if the current environment's [`Environment.sdfgi_enabled`](#class_e
 
 Draws the probes used for signed distance field global illumination (SDFGI).
 
-Does nothing if the current environment's [`Environment.sdfgi_enabled`](#class_environment_property_sdfgi_enabled) is `false` or SDFGI is not supported on the platform.
+Does nothing if the current environment's [`Environment.sdfgi_enabled`](class_environment.md#class_environment_property_sdfgi_enabled) is `false` or SDFGI is not supported on the platform.
 
 <div id="_class_viewport_constant_debug_draw_gi_buffer"></div>
 
@@ -550,7 +550,7 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 [DefaultCanvasItemTextureFilter](#enum_viewport_defaultcanvasitemtexturefilter) **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS** = ``2``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look smooth from up close, and smooth from a distance.
+The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look smooth from up close, and smooth from a distance.
 
 Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to [`Camera2D`](class_camera2d.md) zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
 
@@ -558,7 +558,7 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 [DefaultCanvasItemTextureFilter](#enum_viewport_defaultcanvasitemtexturefilter) **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look pixelated from up close, and smooth from a distance.
+The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if [`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter) is `true`). This makes the texture look pixelated from up close, and smooth from a distance.
 
 Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to [`Camera2D`](class_camera2d.md) zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
 
@@ -853,7 +853,7 @@ Disable 3D rendering (but keep 2D rendering).
 
 Determines how sharp the upscaled image will be when using the FSR upscaling mode. Sharpness halves with every whole number. Values go from 0.0 (sharpest) to 2.0. Values above 2.0 won't make a visible difference.
 
-To control this property on the root viewport, set the [`ProjectSettings.rendering/scaling_3d/fsr_sharpness`](#class_projectsettings_property_rendering/scaling_3d/fsr_sharpness) project setting.
+To control this property on the root viewport, set the [`ProjectSettings.rendering/scaling_3d/fsr_sharpness`](class_projectsettings.md#class_projectsettings_property_rendering/scaling_3d/fsr_sharpness) project setting.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -922,7 +922,7 @@ If `true`, this viewport will mark incoming input events as handled by itself. I
 
 A [`SubViewportContainer`](class_subviewportcontainer.md) will automatically set this property to `false` for the **Viewport** contained inside of it.
 
-See also [`set_input_as_handled`](#class_viewport_method_set_input_as_handled) and [`is_input_handled`](#class_viewport_method_is_input_handled).
+See also [`set_input_as_handled`](class_viewport.md#class_viewport_method_set_input_as_handled) and [`is_input_handled`](class_viewport.md#class_viewport_method_is_input_handled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -935,11 +935,11 @@ See also [`set_input_as_handled`](#class_viewport_method_set_input_as_handled) a
 - `void` **set_mesh_lod_threshold** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_mesh_lod_threshold** ( )
 
-The automatic LOD bias to use for meshes rendered within the **Viewport** (this is analogous to [`ReflectionProbe.mesh_lod_threshold`](#class_reflectionprobe_property_mesh_lod_threshold)). Higher values will use less detailed versions of meshes that have LOD variations generated. If set to `0.0`, automatic LOD is disabled. Increase [`mesh_lod_threshold`](#class_viewport_property_mesh_lod_threshold) to improve performance at the cost of geometry detail.
+The automatic LOD bias to use for meshes rendered within the **Viewport** (this is analogous to [`ReflectionProbe.mesh_lod_threshold`](class_reflectionprobe.md#class_reflectionprobe_property_mesh_lod_threshold)). Higher values will use less detailed versions of meshes that have LOD variations generated. If set to `0.0`, automatic LOD is disabled. Increase [`mesh_lod_threshold`](class_viewport.md#class_viewport_property_mesh_lod_threshold) to improve performance at the cost of geometry detail.
 
-To control this property on the root viewport, set the [`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels`](#class_projectsettings_property_rendering/mesh_lod/lod_change/threshold_pixels) project setting.
+To control this property on the root viewport, set the [`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels`](class_projectsettings.md#class_projectsettings_property_rendering/mesh_lod/lod_change/threshold_pixels) project setting.
 
- **Note:** [`mesh_lod_threshold`](#class_viewport_property_mesh_lod_threshold) does not affect [`GeometryInstance3D`](class_geometryinstance3d.md) visibility ranges (also known as "manual" LOD or hierarchical LOD).
+ **Note:** [`mesh_lod_threshold`](class_viewport.md#class_viewport_property_mesh_lod_threshold) does not affect [`GeometryInstance3D`](class_geometryinstance3d.md) visibility ranges (also known as "manual" LOD or hierarchical LOD).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -965,7 +965,7 @@ The multisample anti-aliasing mode for 2D/Canvas rendering. A higher number resu
 - `void` **set_msaa_3d** ( value: [MSAA](#enum_viewport_msaa) )
 - [MSAA](#enum_viewport_msaa) **get_msaa_3d** ( )
 
-The multisample anti-aliasing mode for 3D rendering. A higher number results in smoother edges at the cost of significantly worse performance. A value of 2 or 4 is best unless targeting very high-end systems. See also bilinear scaling 3d [`scaling_3d_mode`](#class_viewport_property_scaling_3d_mode) for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
+The multisample anti-aliasing mode for 3D rendering. A higher number results in smoother edges at the cost of significantly worse performance. A value of 2 or 4 is best unless targeting very high-end systems. See also bilinear scaling 3d [`scaling_3d_mode`](class_viewport.md#class_viewport_property_scaling_3d_mode) for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -978,7 +978,7 @@ The multisample anti-aliasing mode for 3D rendering. A higher number results in 
 - `void` **set_use_own_world_3d** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_own_world_3d** ( )
 
-If `true`, the viewport will use a unique copy of the [`World3D`](class_world3d.md) defined in [`world_3d`](#class_viewport_property_world_3d).
+If `true`, the viewport will use a unique copy of the [`World3D`](class_world3d.md) defined in [`world_3d`](class_viewport.md#class_viewport_property_world_3d).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1006,7 +1006,7 @@ If `true`, the objects rendered by viewport become subjects of mouse picking pro
 - `void` **set_physics_object_picking_first_only** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_physics_object_picking_first_only** ( )
 
-If `true`, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable [`physics_object_picking_sort`](#class_viewport_property_physics_object_picking_sort).
+If `true`, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable [`physics_object_picking_sort`](class_viewport.md#class_viewport_property_physics_object_picking_sort).
 
 If `false`, an input_event signal will be sent to all physics objects in the mouse picking process.
 
@@ -1023,11 +1023,11 @@ This applies to 2D CanvasItem object picking only.
 - `void` **set_physics_object_picking_sort** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_physics_object_picking_sort** ( )
 
-If `true`, objects receive mouse picking events sorted primarily by their [`CanvasItem.z_index`](#class_canvasitem_property_z_index) and secondarily by their position in the scene tree. If `false`, the order is undetermined.
+If `true`, objects receive mouse picking events sorted primarily by their [`CanvasItem.z_index`](class_canvasitem.md#class_canvasitem_property_z_index) and secondarily by their position in the scene tree. If `false`, the order is undetermined.
 
  **Note:** This setting is disabled by default because of its potential expensive computational cost.
 
- **Note:** Sorting happens after selecting the pickable objects. Because of the limitation of 64 simultaneously pickable objects, it is not guaranteed that the object with the highest [`CanvasItem.z_index`](#class_canvasitem_property_z_index) receives the picking event.
+ **Note:** Sorting happens after selecting the pickable objects. Because of the limitation of 64 simultaneously pickable objects, it is not guaranteed that the object with the highest [`CanvasItem.z_index`](class_canvasitem.md#class_canvasitem_property_z_index) receives the picking event.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1122,7 +1122,7 @@ The shadow atlas' resolution (used for omni and spot lights). The value is round
 
 Sets scaling 3d mode. Bilinear scaling renders at different resolution to either undersample or supersample the viewport. FidelityFX Super Resolution 1.0, abbreviated to FSR, is an upscaling technology that produces high quality images at fast framerates by using a spatially aware upscaling algorithm. FSR is slightly more expensive than bilinear, but it produces significantly higher image quality. FSR should be used where possible.
 
-To control this property on the root viewport, set the [`ProjectSettings.rendering/scaling_3d/mode`](#class_projectsettings_property_rendering/scaling_3d/mode) project setting.
+To control this property on the root viewport, set the [`ProjectSettings.rendering/scaling_3d/mode`](class_projectsettings.md#class_projectsettings_property_rendering/scaling_3d/mode) project setting.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1135,11 +1135,11 @@ To control this property on the root viewport, set the [`ProjectSettings.renderi
 - `void` **set_scaling_3d_scale** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_scaling_3d_scale** ( )
 
-Scales the 3D render buffer based on the viewport size uses an image filter specified in [`ProjectSettings.rendering/scaling_3d/mode`](#class_projectsettings_property_rendering/scaling_3d/mode) to scale the output image to the full viewport size. Values lower than `1.0` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than `1.0` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also [`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d`](#class_projectsettings_property_rendering/anti_aliasing/quality/msaa_3d) for multi-sample antialiasing, which is significantly cheaper but only smooths the edges of polygons.
+Scales the 3D render buffer based on the viewport size uses an image filter specified in [`ProjectSettings.rendering/scaling_3d/mode`](class_projectsettings.md#class_projectsettings_property_rendering/scaling_3d/mode) to scale the output image to the full viewport size. Values lower than `1.0` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than `1.0` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also [`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/msaa_3d) for multi-sample antialiasing, which is significantly cheaper but only smooths the edges of polygons.
 
 When using FSR upscaling, AMD recommends exposing the following values as preset options to users "Ultra Quality: 0.77", "Quality: 0.67", "Balanced: 0.59", "Performance: 0.5" instead of exposing the entire scale.
 
-To control this property on the root viewport, set the [`ProjectSettings.rendering/scaling_3d/scale`](#class_projectsettings_property_rendering/scaling_3d/scale) project setting.
+To control this property on the root viewport, set the [`ProjectSettings.rendering/scaling_3d/scale`](class_projectsettings.md#class_projectsettings_property_rendering/scaling_3d/scale) project setting.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1167,7 +1167,7 @@ Sets the screen-space antialiasing method used. Screen-space antialiasing works 
 
 Controls how much of the original viewport's size should be covered by the 2D signed distance field. This SDF can be sampled in [`CanvasItem`](class_canvasitem.md) shaders and is also used for [`GPUParticles2D`](class_gpuparticles2d.md) collision. Higher values allow portions of occluders located outside the viewport to still be taken into account in the generated signed distance field, at the cost of performance. If you notice particles falling through [`LightOccluder2D`](class_lightoccluder2d.md) s as the occluders leave the viewport, increase this setting.
 
-The percentage is added on each axis and on both sides. For example, with the default [`SDF_OVERSIZE_120_PERCENT`](#class_viewport_constant_sdf_oversize_120_percent), the signed distance field will cover 20% of the viewport's size outside the viewport on each side (top, right, bottom, left).
+The percentage is added on each axis and on both sides. For example, with the default [`SDF_OVERSIZE_120_PERCENT`](class_viewport.md#class_viewport_constant_sdf_oversize_120_percent), the signed distance field will cover 20% of the viewport's size outside the viewport on each side (top, right, bottom, left).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1221,11 +1221,11 @@ If `true`, vertices of [`CanvasItem`](class_canvasitem.md) nodes will snap to fu
 
 Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
 
-Enabling temporal antialiasing ([`use_taa`](#class_viewport_property_use_taa)) will automatically apply a `-0.5` offset to this value, while enabling FXAA ([`screen_space_aa`](#class_viewport_property_screen_space_aa)) will automatically apply a `-0.25` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of `-0.75` is applied to this value.
+Enabling temporal antialiasing ([`use_taa`](class_viewport.md#class_viewport_property_use_taa)) will automatically apply a `-0.5` offset to this value, while enabling FXAA ([`screen_space_aa`](class_viewport.md#class_viewport_property_screen_space_aa)) will automatically apply a `-0.25` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of `-0.75` is applied to this value.
 
- **Note:** If [`scaling_3d_scale`](#class_viewport_property_scaling_3d_scale) is lower than `1.0` (exclusive), [`texture_mipmap_bias`](#class_viewport_property_texture_mipmap_bias) is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is `log2(scaling_3d_scale) + mipmap_bias`.
+ **Note:** If [`scaling_3d_scale`](class_viewport.md#class_viewport_property_scaling_3d_scale) is lower than `1.0` (exclusive), [`texture_mipmap_bias`](class_viewport.md#class_viewport_property_texture_mipmap_bias) is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is `log2(scaling_3d_scale) + mipmap_bias`.
 
-To control this property on the root viewport, set the [`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias`](#class_projectsettings_property_rendering/textures/default_filters/texture_mipmap_bias) project setting.
+To control this property on the root viewport, set the [`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/texture_mipmap_bias) project setting.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1251,7 +1251,7 @@ If `true`, the viewport should render its background as transparent.
 - `void` **set_use_debanding** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_debanding** ( )
 
-If `true`, uses a fast post-processing filter to make banding significantly less visible in 3D. 2D rendering is *not* affected by debanding unless the [`Environment.background_mode`](#class_environment_property_background_mode) is [`Environment.BG_CANVAS`](#class_environment_constant_bg_canvas). See also [`ProjectSettings.rendering/anti_aliasing/quality/use_debanding`](#class_projectsettings_property_rendering/anti_aliasing/quality/use_debanding).
+If `true`, uses a fast post-processing filter to make banding significantly less visible in 3D. 2D rendering is *not* affected by debanding unless the [`Environment.background_mode`](class_environment.md#class_environment_property_background_mode) is [`Environment.BG_CANVAS`](class_environment.md#class_environment_constant_bg_canvas). See also [`ProjectSettings.rendering/anti_aliasing/quality/use_debanding`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/use_debanding).
 
 In some cases, debanding may introduce a slightly noticeable dithering pattern. It's recommended to enable debanding only when actually needed since the dithering pattern will make lossless-compressed screenshots larger.
 
@@ -1281,9 +1281,9 @@ If `true`, 2D rendering will use an high dynamic range (HDR) format framebuffer 
 - `void` **set_use_occlusion_culling** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_occlusion_culling** ( )
 
-If `true`, [`OccluderInstance3D`](class_occluderinstance3d.md) nodes will be usable for occlusion culling in 3D for this viewport. For the root viewport, [`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling`](#class_projectsettings_property_rendering/occlusion_culling/use_occlusion_culling) must be set to `true` instead.
+If `true`, [`OccluderInstance3D`](class_occluderinstance3d.md) nodes will be usable for occlusion culling in 3D for this viewport. For the root viewport, [`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling`](class_projectsettings.md#class_projectsettings_property_rendering/occlusion_culling/use_occlusion_culling) must be set to `true` instead.
 
- **Note:** Enabling occlusion culling has a cost on the CPU. Only enable occlusion culling if you actually plan to use it, and think whether your scene can actually benefit from occlusion culling. Large, open scenes with few or no objects blocking the view will generally not benefit much from occlusion culling. Large open scenes generally benefit more from mesh LOD and visibility ranges ([`GeometryInstance3D.visibility_range_begin`](#class_geometryinstance3d_property_visibility_range_begin) and [`GeometryInstance3D.visibility_range_end`](#class_geometryinstance3d_property_visibility_range_end)) compared to occlusion culling.
+ **Note:** Enabling occlusion culling has a cost on the CPU. Only enable occlusion culling if you actually plan to use it, and think whether your scene can actually benefit from occlusion culling. Large, open scenes with few or no objects blocking the view will generally not benefit much from occlusion culling. Large open scenes generally benefit more from mesh LOD and visibility ranges ([`GeometryInstance3D.visibility_range_begin`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_begin) and [`GeometryInstance3D.visibility_range_end`](class_geometryinstance3d.md#class_geometryinstance3d_property_visibility_range_end)) compared to occlusion culling.
 
  **Note:** Due to memory constraints, occlusion culling is not supported by default in Web export templates. It can be enabled by compiling custom Web export templates with `module_raycast_enabled=yes`.
 
@@ -1339,7 +1339,7 @@ The Variable Rate Shading (VRS) mode that is used for this viewport. Note, if ha
 - `void` **set_vrs_texture** ( value: [`Texture2D`](class_texture2d.md) )
 - [`Texture2D`](class_texture2d.md) **get_vrs_texture** ( )
 
-Texture to use when [`vrs_mode`](#class_viewport_property_vrs_mode) is set to [`VRS_TEXTURE`](#class_viewport_constant_vrs_texture).
+Texture to use when [`vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode) is set to [`VRS_TEXTURE`](class_viewport.md#class_viewport_constant_vrs_texture).
 
 The texture *must* use a lossless compression format so that colors can be matched precisely. The following VRS densities are mapped to various colors, with brighter colors representing a lower level of shading precision:
 
@@ -1408,7 +1408,7 @@ The custom [`World3D`](class_world3d.md) which can be used as 3D environment sou
 
 [`World2D`](class_world2d.md) **find_world_2d** ( ) const[^const]<div id="class_viewport_method_find_world_2d"></div>
 
-Returns the first valid [`World2D`](class_world2d.md) for this viewport, searching the [`world_2d`](#class_viewport_property_world_2d) property of itself and any Viewport ancestor.
+Returns the first valid [`World2D`](class_world2d.md) for this viewport, searching the [`world_2d`](class_viewport.md#class_viewport_property_world_2d) property of itself and any Viewport ancestor.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1418,7 +1418,7 @@ Returns the first valid [`World2D`](class_world2d.md) for this viewport, searchi
 
 [`World3D`](class_world3d.md) **find_world_3d** ( ) const[^const]<div id="class_viewport_method_find_world_3d"></div>
 
-Returns the first valid [`World3D`](class_world3d.md) for this viewport, searching the [`world_3d`](#class_viewport_property_world_3d) property of itself and any Viewport ancestor.
+Returns the first valid [`World3D`](class_world3d.md) for this viewport, searching the [`world_3d`](class_viewport.md#class_viewport_property_world_3d) property of itself and any Viewport ancestor.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1522,7 +1522,7 @@ Returns the transform from the Viewport's coordinates to the screen coordinates 
 
 Returns the viewport's texture.
 
- **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. [`Node._ready`](#class_node_private_method__ready). To make sure the texture you get is correct, you can await [`RenderingServer.frame_post_draw`](#class_renderingserver_signal_frame_post_draw) signal.
+ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. [`Node._ready`](class_node.md#class_node_private_method__ready). To make sure the texture you get is correct, you can await [`RenderingServer.frame_post_draw`](class_renderingserver.md#class_renderingserver_signal_frame_post_draw) signal.
 
 ```
 
@@ -1561,7 +1561,7 @@ Returns the visible rectangle in global screen coordinates.
 
 [`Variant`](class_variant.md) **gui_get_drag_data** ( ) const[^const]<div id="class_viewport_method_gui_get_drag_data"></div>
 
-Returns the drag data from the GUI, that was previously returned by [`Control._get_drag_data`](#class_control_private_method__get_drag_data).
+Returns the drag data from the GUI, that was previously returned by [`Control._get_drag_data`](class_control.md#class_control_private_method__get_drag_data).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1583,7 +1583,7 @@ Returns the [`Control`](class_control.md) having the focus within this viewport.
 
 Returns the [`Control`](class_control.md) that the mouse is currently hovering over in this viewport. If no [`Control`](class_control.md) has the cursor, returns null.
 
-Typically the leaf [`Control`](class_control.md) node or deepest level of the subtree which claims hover. This is very useful when used together with [`Node.is_ancestor_of`](#class_node_method_is_ancestor_of) to find if the mouse is within a control tree.
+Typically the leaf [`Control`](class_control.md) node or deepest level of the subtree which claims hover. This is very useful when used together with [`Node.is_ancestor_of`](class_node.md#class_node_method_is_ancestor_of) to find if the mouse is within a control tree.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1605,7 +1605,7 @@ Returns `true` if the drag operation is successful.
 
 Returns `true` if the viewport is currently performing a drag operation.
 
-Alternative to [`Node.NOTIFICATION_DRAG_BEGIN`](#class_node_constant_notification_drag_begin) and [`Node.NOTIFICATION_DRAG_END`](#class_node_constant_notification_drag_end) when you prefer polling the value.
+Alternative to [`Node.NOTIFICATION_DRAG_BEGIN`](class_node.md#class_node_constant_notification_drag_begin) and [`Node.NOTIFICATION_DRAG_END`](class_node.md#class_node_constant_notification_drag_end) when you prefer polling the value.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1625,11 +1625,11 @@ Removes the focus from the currently focused [`Control`](class_control.md) withi
 
 [`bool`](class_bool.md) **is_input_handled** ( ) const[^const]<div id="class_viewport_method_is_input_handled"></div>
 
-Returns whether the current [`InputEvent`](class_inputevent.md) has been handled. Input events are not handled until [`set_input_as_handled`](#class_viewport_method_set_input_as_handled) has been called during the lifetime of an [`InputEvent`](class_inputevent.md).
+Returns whether the current [`InputEvent`](class_inputevent.md) has been handled. Input events are not handled until [`set_input_as_handled`](class_viewport.md#class_viewport_method_set_input_as_handled) has been called during the lifetime of an [`InputEvent`](class_inputevent.md).
 
-This is usually done as part of input handling methods like [`Node._input`](#class_node_private_method__input), [`Control._gui_input`](#class_control_private_method__gui_input) or others, as well as in corresponding signal handlers.
+This is usually done as part of input handling methods like [`Node._input`](class_node.md#class_node_private_method__input), [`Control._gui_input`](class_control.md#class_control_private_method__gui_input) or others, as well as in corresponding signal handlers.
 
-If [`handle_input_locally`](#class_viewport_property_handle_input_locally) is set to `false`, this method will try finding the first parent viewport that is set to handle input locally, and return its value for [`is_input_handled`](#class_viewport_method_is_input_handled) instead.
+If [`handle_input_locally`](class_viewport.md#class_viewport_property_handle_input_locally) is set to `false`, this method will try finding the first parent viewport that is set to handle input locally, and return its value for [`is_input_handled`](class_viewport.md#class_viewport_method_is_input_handled) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1643,23 +1643,23 @@ Triggers the given `event` in this **Viewport**. This can be used to pass an [`I
 
 If `in_local_coords` is `false`, the event's position is in the embedder's coordinates and will be converted to viewport coordinates. If `in_local_coords` is `true`, the event's position is in viewport coordinates.
 
-While this method serves a similar purpose as [`Input.parse_input_event`](#class_input_method_parse_input_event), it does not remap the specified `event` based on project settings like [`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse`](#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse).
+While this method serves a similar purpose as [`Input.parse_input_event`](class_input.md#class_input_method_parse_input_event), it does not remap the specified `event` based on project settings like [`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse).
 
 Calling this method will propagate calls to child nodes for following methods in the given order:
 
-- [`Node._input`](#class_node_private_method__input) 
+- [`Node._input`](class_node.md#class_node_private_method__input) 
 
-- [`Control._gui_input`](#class_control_private_method__gui_input) for [`Control`](class_control.md) nodes
+- [`Control._gui_input`](class_control.md#class_control_private_method__gui_input) for [`Control`](class_control.md) nodes
 
-- [`Node._shortcut_input`](#class_node_private_method__shortcut_input) 
+- [`Node._shortcut_input`](class_node.md#class_node_private_method__shortcut_input) 
 
-- [`Node._unhandled_key_input`](#class_node_private_method__unhandled_key_input) 
+- [`Node._unhandled_key_input`](class_node.md#class_node_private_method__unhandled_key_input) 
 
-- [`Node._unhandled_input`](#class_node_private_method__unhandled_input) 
+- [`Node._unhandled_input`](class_node.md#class_node_private_method__unhandled_input) 
 
-If an earlier method marks the input as handled via [`set_input_as_handled`](#class_viewport_method_set_input_as_handled), any later method in this list will not be called.
+If an earlier method marks the input as handled via [`set_input_as_handled`](class_viewport.md#class_viewport_method_set_input_as_handled), any later method in this list will not be called.
 
-If none of the methods handle the event and [`physics_object_picking`](#class_viewport_property_physics_object_picking) is `true`, the event is used for physics object picking.
+If none of the methods handle the event and [`physics_object_picking`](class_viewport.md#class_viewport_property_physics_object_picking) is `true`, the event is used for physics object picking.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1679,7 +1679,7 @@ Helper method which calls the `set_text()` method on the currently focused [`Con
 
 `void` **push_unhandled_input** ( event: [`InputEvent`](class_inputevent.md), in_local_coords: [`bool`](class_bool.md) = false )<div id="class_viewport_method_push_unhandled_input"></div>
 
-**已弃用：** Use [`push_input`](#class_viewport_method_push_input) instead.
+**已弃用：** Use [`push_input`](class_viewport.md#class_viewport_method_push_input) instead.
 
 Triggers the given `event` in this **Viewport**. This can be used to pass an [`InputEvent`](class_inputevent.md) between viewports, or to locally apply inputs that were sent over the network or saved to a file.
 
@@ -1687,15 +1687,15 @@ If `in_local_coords` is `false`, the event's position is in the embedder's coord
 
 Calling this method will propagate calls to child nodes for following methods in the given order:
 
-- [`Node._shortcut_input`](#class_node_private_method__shortcut_input) 
+- [`Node._shortcut_input`](class_node.md#class_node_private_method__shortcut_input) 
 
-- [`Node._unhandled_key_input`](#class_node_private_method__unhandled_key_input) 
+- [`Node._unhandled_key_input`](class_node.md#class_node_private_method__unhandled_key_input) 
 
-- [`Node._unhandled_input`](#class_node_private_method__unhandled_input) 
+- [`Node._unhandled_input`](class_node.md#class_node_private_method__unhandled_input) 
 
-If an earlier method marks the input as handled via [`set_input_as_handled`](#class_viewport_method_set_input_as_handled), any later method in this list will not be called.
+If an earlier method marks the input as handled via [`set_input_as_handled`](class_viewport.md#class_viewport_method_set_input_as_handled), any later method in this list will not be called.
 
-If none of the methods handle the event and [`physics_object_picking`](#class_viewport_property_physics_object_picking) is `true`, the event is used for physics object picking.
+If none of the methods handle the event and [`physics_object_picking`](class_viewport.md#class_viewport_property_physics_object_picking) is `true`, the event is used for physics object picking.
 
  **Note:** This method doesn't propagate input events to embedded [`Window`](class_window.md) s or [`SubViewport`](class_subviewport.md) s.
 
@@ -1739,7 +1739,7 @@ Sets the number of subdivisions to use in the specified quadrant. A higher numbe
 
 `void` **update_mouse_cursor_state** ( )<div id="class_viewport_method_update_mouse_cursor_state"></div>
 
-Force instantly updating the display based on the current mouse cursor position. This includes updating the mouse cursor shape and sending necessary [`Control.mouse_entered`](#class_control_signal_mouse_entered), [`CollisionObject2D.mouse_entered`](#class_collisionobject2d_signal_mouse_entered), [`CollisionObject3D.mouse_entered`](#class_collisionobject3d_signal_mouse_entered) and [`Window.mouse_entered`](#class_window_signal_mouse_entered) signals and their respective `mouse_exited` counterparts.
+Force instantly updating the display based on the current mouse cursor position. This includes updating the mouse cursor shape and sending necessary [`Control.mouse_entered`](class_control.md#class_control_signal_mouse_entered), [`CollisionObject2D.mouse_entered`](class_collisionobject2d.md#class_collisionobject2d_signal_mouse_entered), [`CollisionObject3D.mouse_entered`](class_collisionobject3d.md#class_collisionobject3d_signal_mouse_entered) and [`Window.mouse_entered`](class_window.md#class_window_signal_mouse_entered) signals and their respective `mouse_exited` counterparts.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1751,7 +1751,7 @@ Force instantly updating the display based on the current mouse cursor position.
 
 Moves the mouse pointer to the specified position in this **Viewport** using the coordinate system of this **Viewport**.
 
- **Note:** [`warp_mouse`](#class_viewport_method_warp_mouse) is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
+ **Note:** [`warp_mouse`](class_viewport.md#class_viewport_method_warp_mouse) is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

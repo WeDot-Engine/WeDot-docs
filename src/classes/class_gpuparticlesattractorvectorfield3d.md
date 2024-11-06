@@ -15,7 +15,7 @@ A box-shaped attractor with varying directions and strengths defined in it that 
 
 A box-shaped attractor with varying directions and strengths defined in it that influences particles from [`GPUParticles3D`](class_gpuparticles3d.md) nodes.
 
-Unlike [`GPUParticlesAttractorBox3D`](class_gpuparticlesattractorbox3d.md), **GPUParticlesAttractorVectorField3D** uses a [`texture`](#class_gpuparticlesattractorvectorfield3d_property_texture) to affect attraction strength within the box. This can be used to create complex attraction scenarios where particles travel in different directions depending on their location. This can be useful for weather effects such as sandstorms.
+Unlike [`GPUParticlesAttractorBox3D`](class_gpuparticlesattractorbox3d.md), **GPUParticlesAttractorVectorField3D** uses a [`texture`](class_gpuparticlesattractorvectorfield3d.md#class_gpuparticlesattractorvectorfield3d_property_texture) to affect attraction strength within the box. This can be used to create complex attraction scenarios where particles travel in different directions depending on their location. This can be useful for weather effects such as sandstorms.
 
 Particle attractors work in real-time and can be moved, rotated and scaled during gameplay. Unlike collision shapes, non-uniform scaling of attractors is also supported.
 
@@ -25,8 +25,8 @@ Particle attractors work in real-time and can be moved, rotated and scaled durin
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md)     | [`size`](#class_gpuparticlesattractorvectorfield3d_property_size)       | ``Vector3(2, 2, 2)`` |
-| [`Texture3D`](class_texture3d.md) | [`texture`](#class_gpuparticlesattractorvectorfield3d_property_texture) |                      |
+| [`Vector3`](class_vector3.md)     | [`size`](class_gpuparticlesattractorvectorfield3d.md#class_gpuparticlesattractorvectorfield3d_property_size)       | ``Vector3(2, 2, 2)`` |
+| [`Texture3D`](class_texture3d.md) | [`texture`](class_gpuparticlesattractorvectorfield3d.md#class_gpuparticlesattractorvectorfield3d_property_texture) |                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ The size of the vector field box in 3D units.
 
 The 3D texture to be used. Values are linearly interpolated between the texture's pixels.
 
- **Note:** To get better performance, the 3D texture's resolution should reflect the [`size`](#class_gpuparticlesattractorvectorfield3d_property_size) of the attractor. Since particle attraction is usually low-frequency data, the texture can be kept at a low resolution such as 64×64×64.
+ **Note:** To get better performance, the 3D texture's resolution should reflect the [`size`](class_gpuparticlesattractorvectorfield3d.md#class_gpuparticlesattractorvectorfield3d_property_size) of the attractor. Since particle attraction is usually low-frequency data, the texture can be kept at a low resolution such as 64×64×64.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

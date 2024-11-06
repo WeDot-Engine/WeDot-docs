@@ -19,9 +19,9 @@ This node is only available in `Fragment` and `Light` visual shaders.
 
 |||
 |:-:|:--|
-| [Function](#enum_visualshadernodederivativefunc_function)   | [`function`](#class_visualshadernodederivativefunc_property_function)   | ``0`` |
-| [OpType](#enum_visualshadernodederivativefunc_optype)       | [`op_type`](#class_visualshadernodederivativefunc_property_op_type)     | ``0`` |
-| [Precision](#enum_visualshadernodederivativefunc_precision) | [`precision`](#class_visualshadernodederivativefunc_property_precision) | ``0`` |
+| [Function](#enum_visualshadernodederivativefunc_function)   | [`function`](class_visualshadernodederivativefunc.md#class_visualshadernodederivativefunc_property_function)   | ``0`` |
+| [OpType](#enum_visualshadernodederivativefunc_optype)       | [`op_type`](class_visualshadernodederivativefunc.md#class_visualshadernodederivativefunc_property_op_type)     | ``0`` |
+| [Precision](#enum_visualshadernodederivativefunc_precision) | [`precision`](class_visualshadernodederivativefunc.md#class_visualshadernodederivativefunc_property_precision) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -113,13 +113,13 @@ No precision is specified, the GPU driver is allowed to use whatever level of pr
 
 [Precision](#enum_visualshadernodederivativefunc_precision) **PRECISION_COARSE** = ``1``
 
-The derivative will be calculated using the current fragment's neighbors (which may not include the current fragment). This tends to be faster than using [`PRECISION_FINE`](#class_visualshadernodederivativefunc_constant_precision_fine), but may not be suitable when more precision is needed. This is equivalent to using `dFdxCoarse()` or `dFdyCoarse()` in text shaders.
+The derivative will be calculated using the current fragment's neighbors (which may not include the current fragment). This tends to be faster than using [`PRECISION_FINE`](class_visualshadernodederivativefunc.md#class_visualshadernodederivativefunc_constant_precision_fine), but may not be suitable when more precision is needed. This is equivalent to using `dFdxCoarse()` or `dFdyCoarse()` in text shaders.
 
 <div id="_class_visualshadernodederivativefunc_constant_precision_fine"></div>
 
 [Precision](#enum_visualshadernodederivativefunc_precision) **PRECISION_FINE** = ``2``
 
-The derivative will be calculated using the current fragment and its immediate neighbors. This tends to be slower than using [`PRECISION_COARSE`](#class_visualshadernodederivativefunc_constant_precision_coarse), but may be necessary when more precision is needed. This is equivalent to using `dFdxFine()` or `dFdyFine()` in text shaders.
+The derivative will be calculated using the current fragment and its immediate neighbors. This tends to be slower than using [`PRECISION_COARSE`](class_visualshadernodederivativefunc.md#class_visualshadernodederivativefunc_constant_precision_coarse), but may be necessary when more precision is needed. This is equivalent to using `dFdxFine()` or `dFdyFine()` in text shaders.
 
 <div id="_class_visualshadernodederivativefunc_constant_precision_max"></div>
 

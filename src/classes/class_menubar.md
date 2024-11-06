@@ -19,55 +19,55 @@ A horizontal menu bar that creates a [`MenuButton`](class_menubutton.md) for eac
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                      | [`flat`](#class_menubar_property_flat)                             | ``false`` |
-| [`String`](class_string.md)                  | [`language`](#class_menubar_property_language)                     | ``""``    |
-| [`bool`](class_bool.md)                      | [`prefer_global_menu`](#class_menubar_property_prefer_global_menu) | ``true``  |
-| [`int`](class_int.md)                        | [`start_index`](#class_menubar_property_start_index)               | ``-1``    |
-| [`bool`](class_bool.md)                      | [`switch_on_hover`](#class_menubar_property_switch_on_hover)       | ``true``  |
-| [TextDirection](#enum_control_textdirection) | [`text_direction`](#class_menubar_property_text_direction)         | ``0``     |
+| [`bool`](class_bool.md)                      | [`flat`](class_menubar.md#class_menubar_property_flat)                             | ``false`` |
+| [`String`](class_string.md)                  | [`language`](class_menubar.md#class_menubar_property_language)                     | ``""``    |
+| [`bool`](class_bool.md)                      | [`prefer_global_menu`](class_menubar.md#class_menubar_property_prefer_global_menu) | ``true``  |
+| [`int`](class_int.md)                        | [`start_index`](class_menubar.md#class_menubar_property_start_index)               | ``-1``    |
+| [`bool`](class_bool.md)                      | [`switch_on_hover`](class_menubar.md#class_menubar_property_switch_on_hover)       | ``true``  |
+| [TextDirection](#enum_control_textdirection) | [`text_direction`](class_menubar.md#class_menubar_property_text_direction)         | ``0``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`get_menu_count`](#class_menubar_method_get_menu_count) ( ) const[^const]                                                         |
-| [`PopupMenu`](class_popupmenu.md) | [`get_menu_popup`](#class_menubar_method_get_menu_popup) ( menu: [`int`](class_int.md) ) const[^const]                             |
-| [`String`](class_string.md)       | [`get_menu_title`](#class_menubar_method_get_menu_title) ( menu: [`int`](class_int.md) ) const[^const]                             |
-| [`String`](class_string.md)       | [`get_menu_tooltip`](#class_menubar_method_get_menu_tooltip) ( menu: [`int`](class_int.md) ) const[^const]                         |
-| [`bool`](class_bool.md)           | [`is_menu_disabled`](#class_menubar_method_is_menu_disabled) ( menu: [`int`](class_int.md) ) const[^const]                         |
-| [`bool`](class_bool.md)           | [`is_menu_hidden`](#class_menubar_method_is_menu_hidden) ( menu: [`int`](class_int.md) ) const[^const]                             |
-| [`bool`](class_bool.md)           | [`is_native_menu`](#class_menubar_method_is_native_menu) ( ) const[^const]                                                         |
-| `void`                            | [`set_disable_shortcuts`](#class_menubar_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) )                       |
-| `void`                            | [`set_menu_disabled`](#class_menubar_method_set_menu_disabled) ( menu: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )  |
-| `void`                            | [`set_menu_hidden`](#class_menubar_method_set_menu_hidden) ( menu: [`int`](class_int.md), hidden: [`bool`](class_bool.md) )        |
-| `void`                            | [`set_menu_title`](#class_menubar_method_set_menu_title) ( menu: [`int`](class_int.md), title: [`String`](class_string.md) )       |
-| `void`                            | [`set_menu_tooltip`](#class_menubar_method_set_menu_tooltip) ( menu: [`int`](class_int.md), tooltip: [`String`](class_string.md) ) |
+| [`int`](class_int.md)             | [`get_menu_count`](class_menubar.md#class_menubar_method_get_menu_count) ( ) const[^const]                                                         |
+| [`PopupMenu`](class_popupmenu.md) | [`get_menu_popup`](class_menubar.md#class_menubar_method_get_menu_popup) ( menu: [`int`](class_int.md) ) const[^const]                             |
+| [`String`](class_string.md)       | [`get_menu_title`](class_menubar.md#class_menubar_method_get_menu_title) ( menu: [`int`](class_int.md) ) const[^const]                             |
+| [`String`](class_string.md)       | [`get_menu_tooltip`](class_menubar.md#class_menubar_method_get_menu_tooltip) ( menu: [`int`](class_int.md) ) const[^const]                         |
+| [`bool`](class_bool.md)           | [`is_menu_disabled`](class_menubar.md#class_menubar_method_is_menu_disabled) ( menu: [`int`](class_int.md) ) const[^const]                         |
+| [`bool`](class_bool.md)           | [`is_menu_hidden`](class_menubar.md#class_menubar_method_is_menu_hidden) ( menu: [`int`](class_int.md) ) const[^const]                             |
+| [`bool`](class_bool.md)           | [`is_native_menu`](class_menubar.md#class_menubar_method_is_native_menu) ( ) const[^const]                                                         |
+| `void`                            | [`set_disable_shortcuts`](class_menubar.md#class_menubar_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) )                       |
+| `void`                            | [`set_menu_disabled`](class_menubar.md#class_menubar_method_set_menu_disabled) ( menu: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )  |
+| `void`                            | [`set_menu_hidden`](class_menubar.md#class_menubar_method_set_menu_hidden) ( menu: [`int`](class_int.md), hidden: [`bool`](class_bool.md) )        |
+| `void`                            | [`set_menu_title`](class_menubar.md#class_menubar_method_set_menu_title) ( menu: [`int`](class_int.md), title: [`String`](class_string.md) )       |
+| `void`                            | [`set_menu_tooltip`](class_menubar.md#class_menubar_method_set_menu_tooltip) ( menu: [`int`](class_int.md), tooltip: [`String`](class_string.md) ) |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)       | [`font_color`](#class_menubar_theme_color_font_color)                             | ``Color(0.875, 0.875, 0.875, 1)``   |
-| [`Color`](class_color.md)       | [`font_disabled_color`](#class_menubar_theme_color_font_disabled_color)           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-| [`Color`](class_color.md)       | [`font_focus_color`](#class_menubar_theme_color_font_focus_color)                 | ``Color(0.95, 0.95, 0.95, 1)``      |
-| [`Color`](class_color.md)       | [`font_hover_color`](#class_menubar_theme_color_font_hover_color)                 | ``Color(0.95, 0.95, 0.95, 1)``      |
-| [`Color`](class_color.md)       | [`font_hover_pressed_color`](#class_menubar_theme_color_font_hover_pressed_color) | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)       | [`font_outline_color`](#class_menubar_theme_color_font_outline_color)             | ``Color(0, 0, 0, 1)``               |
-| [`Color`](class_color.md)       | [`font_pressed_color`](#class_menubar_theme_color_font_pressed_color)             | ``Color(1, 1, 1, 1)``               |
-| [`int`](class_int.md)           | [`h_separation`](#class_menubar_theme_constant_h_separation)                      | ``4``                               |
-| [`int`](class_int.md)           | [`outline_size`](#class_menubar_theme_constant_outline_size)                      | ``0``                               |
-| [`Font`](class_font.md)         | [`font`](#class_menubar_theme_font_font)                                          |                                     |
-| [`int`](class_int.md)           | [`font_size`](#class_menubar_theme_font_size_font_size)                           |                                     |
-| [`StyleBox`](class_stylebox.md) | [`disabled`](#class_menubar_theme_style_disabled)                                 |                                     |
-| [`StyleBox`](class_stylebox.md) | [`disabled_mirrored`](#class_menubar_theme_style_disabled_mirrored)               |                                     |
-| [`StyleBox`](class_stylebox.md) | [`hover`](#class_menubar_theme_style_hover)                                       |                                     |
-| [`StyleBox`](class_stylebox.md) | [`hover_mirrored`](#class_menubar_theme_style_hover_mirrored)                     |                                     |
-| [`StyleBox`](class_stylebox.md) | [`hover_pressed`](#class_menubar_theme_style_hover_pressed)                       |                                     |
-| [`StyleBox`](class_stylebox.md) | [`hover_pressed_mirrored`](#class_menubar_theme_style_hover_pressed_mirrored)     |                                     |
-| [`StyleBox`](class_stylebox.md) | [`normal`](#class_menubar_theme_style_normal)                                     |                                     |
-| [`StyleBox`](class_stylebox.md) | [`normal_mirrored`](#class_menubar_theme_style_normal_mirrored)                   |                                     |
-| [`StyleBox`](class_stylebox.md) | [`pressed`](#class_menubar_theme_style_pressed)                                   |                                     |
-| [`StyleBox`](class_stylebox.md) | [`pressed_mirrored`](#class_menubar_theme_style_pressed_mirrored)                 |                                     |
+| [`Color`](class_color.md)       | [`font_color`](class_menubar.md#class_menubar_theme_color_font_color)                             | ``Color(0.875, 0.875, 0.875, 1)``   |
+| [`Color`](class_color.md)       | [`font_disabled_color`](class_menubar.md#class_menubar_theme_color_font_disabled_color)           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+| [`Color`](class_color.md)       | [`font_focus_color`](class_menubar.md#class_menubar_theme_color_font_focus_color)                 | ``Color(0.95, 0.95, 0.95, 1)``      |
+| [`Color`](class_color.md)       | [`font_hover_color`](class_menubar.md#class_menubar_theme_color_font_hover_color)                 | ``Color(0.95, 0.95, 0.95, 1)``      |
+| [`Color`](class_color.md)       | [`font_hover_pressed_color`](class_menubar.md#class_menubar_theme_color_font_hover_pressed_color) | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)       | [`font_outline_color`](class_menubar.md#class_menubar_theme_color_font_outline_color)             | ``Color(0, 0, 0, 1)``               |
+| [`Color`](class_color.md)       | [`font_pressed_color`](class_menubar.md#class_menubar_theme_color_font_pressed_color)             | ``Color(1, 1, 1, 1)``               |
+| [`int`](class_int.md)           | [`h_separation`](class_menubar.md#class_menubar_theme_constant_h_separation)                      | ``4``                               |
+| [`int`](class_int.md)           | [`outline_size`](class_menubar.md#class_menubar_theme_constant_outline_size)                      | ``0``                               |
+| [`Font`](class_font.md)         | [`font`](class_menubar.md#class_menubar_theme_font_font)                                          |                                     |
+| [`int`](class_int.md)           | [`font_size`](class_menubar.md#class_menubar_theme_font_size_font_size)                           |                                     |
+| [`StyleBox`](class_stylebox.md) | [`disabled`](class_menubar.md#class_menubar_theme_style_disabled)                                 |                                     |
+| [`StyleBox`](class_stylebox.md) | [`disabled_mirrored`](class_menubar.md#class_menubar_theme_style_disabled_mirrored)               |                                     |
+| [`StyleBox`](class_stylebox.md) | [`hover`](class_menubar.md#class_menubar_theme_style_hover)                                       |                                     |
+| [`StyleBox`](class_stylebox.md) | [`hover_mirrored`](class_menubar.md#class_menubar_theme_style_hover_mirrored)                     |                                     |
+| [`StyleBox`](class_stylebox.md) | [`hover_pressed`](class_menubar.md#class_menubar_theme_style_hover_pressed)                       |                                     |
+| [`StyleBox`](class_stylebox.md) | [`hover_pressed_mirrored`](class_menubar.md#class_menubar_theme_style_hover_pressed_mirrored)     |                                     |
+| [`StyleBox`](class_stylebox.md) | [`normal`](class_menubar.md#class_menubar_theme_style_normal)                                     |                                     |
+| [`StyleBox`](class_stylebox.md) | [`normal_mirrored`](class_menubar.md#class_menubar_theme_style_normal_mirrored)                   |                                     |
+| [`StyleBox`](class_stylebox.md) | [`pressed`](class_menubar.md#class_menubar_theme_style_pressed)                                   |                                     |
+| [`StyleBox`](class_stylebox.md) | [`pressed_mirrored`](class_menubar.md#class_menubar_theme_style_pressed_mirrored)                 |                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -363,7 +363,7 @@ The horizontal space between menu items.
 
 The size of the text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_menubar_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_menubar.md#class_menubar_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 

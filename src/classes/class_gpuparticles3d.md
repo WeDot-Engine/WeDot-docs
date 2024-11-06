@@ -15,51 +15,51 @@ A 3D particle emitter.
 
 3D particle node used to create a variety of particle systems and effects. **GPUParticles3D** features an emitter that generates some number of particles at a given rate.
 
-Use [`process_material`](#class_gpuparticles3d_property_process_material) to add a [`ParticleProcessMaterial`](class_particleprocessmaterial.md) to configure particle appearance and behavior. Alternatively, you can add a [`ShaderMaterial`](class_shadermaterial.md) which will be applied to all particles.
+Use [`process_material`](class_gpuparticles3d.md#class_gpuparticles3d_property_process_material) to add a [`ParticleProcessMaterial`](class_particleprocessmaterial.md) to configure particle appearance and behavior. Alternatively, you can add a [`ShaderMaterial`](class_shadermaterial.md) which will be applied to all particles.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                                 | [`amount`](#class_gpuparticles3d_property_amount)                           | ``8``                         |
-| [`float`](class_float.md)                             | [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio)               | ``1.0``                       |
-| [`float`](class_float.md)                             | [`collision_base_size`](#class_gpuparticles3d_property_collision_base_size) | ``0.01``                      |
-| [DrawOrder](#enum_gpuparticles3d_draworder)           | [`draw_order`](#class_gpuparticles3d_property_draw_order)                   | ``0``                         |
-| [`Mesh`](class_mesh.md)                               | [`draw_pass_1`](#class_gpuparticles3d_property_draw_pass_1)                 |                               |
-| [`Mesh`](class_mesh.md)                               | [`draw_pass_2`](#class_gpuparticles3d_property_draw_pass_2)                 |                               |
-| [`Mesh`](class_mesh.md)                               | [`draw_pass_3`](#class_gpuparticles3d_property_draw_pass_3)                 |                               |
-| [`Mesh`](class_mesh.md)                               | [`draw_pass_4`](#class_gpuparticles3d_property_draw_pass_4)                 |                               |
-| [`int`](class_int.md)                                 | [`draw_passes`](#class_gpuparticles3d_property_draw_passes)                 | ``1``                         |
-| [`Skin`](class_skin.md)                               | [`draw_skin`](#class_gpuparticles3d_property_draw_skin)                     |                               |
-| [`bool`](class_bool.md)                               | [`emitting`](#class_gpuparticles3d_property_emitting)                       | ``true``                      |
-| [`float`](class_float.md)                             | [`explosiveness`](#class_gpuparticles3d_property_explosiveness)             | ``0.0``                       |
-| [`int`](class_int.md)                                 | [`fixed_fps`](#class_gpuparticles3d_property_fixed_fps)                     | ``30``                        |
-| [`bool`](class_bool.md)                               | [`fract_delta`](#class_gpuparticles3d_property_fract_delta)                 | ``true``                      |
-| [`float`](class_float.md)                             | [`interp_to_end`](#class_gpuparticles3d_property_interp_to_end)             | ``0.0``                       |
-| [`bool`](class_bool.md)                               | [`interpolate`](#class_gpuparticles3d_property_interpolate)                 | ``true``                      |
-| [`float`](class_float.md)                             | [`lifetime`](#class_gpuparticles3d_property_lifetime)                       | ``1.0``                       |
-| [`bool`](class_bool.md)                               | [`local_coords`](#class_gpuparticles3d_property_local_coords)               | ``false``                     |
-| [`bool`](class_bool.md)                               | [`one_shot`](#class_gpuparticles3d_property_one_shot)                       | ``false``                     |
-| [`float`](class_float.md)                             | [`preprocess`](#class_gpuparticles3d_property_preprocess)                   | ``0.0``                       |
-| [`Material`](class_material.md)                       | [`process_material`](#class_gpuparticles3d_property_process_material)       |                               |
-| [`float`](class_float.md)                             | [`randomness`](#class_gpuparticles3d_property_randomness)                   | ``0.0``                       |
-| [`float`](class_float.md)                             | [`speed_scale`](#class_gpuparticles3d_property_speed_scale)                 | ``1.0``                       |
-| [`NodePath`](class_nodepath.md)                       | [`sub_emitter`](#class_gpuparticles3d_property_sub_emitter)                 | ``NodePath("")``              |
-| [`bool`](class_bool.md)                               | [`trail_enabled`](#class_gpuparticles3d_property_trail_enabled)             | ``false``                     |
-| [`float`](class_float.md)                             | [`trail_lifetime`](#class_gpuparticles3d_property_trail_lifetime)           | ``0.3``                       |
-| [TransformAlign](#enum_gpuparticles3d_transformalign) | [`transform_align`](#class_gpuparticles3d_property_transform_align)         | ``0``                         |
-| [`AABB`](class_aabb.md)                               | [`visibility_aabb`](#class_gpuparticles3d_property_visibility_aabb)         | ``AABB(-4, -4, -4, 8, 8, 8)`` |
+| [`int`](class_int.md)                                 | [`amount`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount)                           | ``8``                         |
+| [`float`](class_float.md)                             | [`amount_ratio`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount_ratio)               | ``1.0``                       |
+| [`float`](class_float.md)                             | [`collision_base_size`](class_gpuparticles3d.md#class_gpuparticles3d_property_collision_base_size) | ``0.01``                      |
+| [DrawOrder](#enum_gpuparticles3d_draworder)           | [`draw_order`](class_gpuparticles3d.md#class_gpuparticles3d_property_draw_order)                   | ``0``                         |
+| [`Mesh`](class_mesh.md)                               | [`draw_pass_1`](class_gpuparticles3d.md#class_gpuparticles3d_property_draw_pass_1)                 |                               |
+| [`Mesh`](class_mesh.md)                               | [`draw_pass_2`](class_gpuparticles3d.md#class_gpuparticles3d_property_draw_pass_2)                 |                               |
+| [`Mesh`](class_mesh.md)                               | [`draw_pass_3`](class_gpuparticles3d.md#class_gpuparticles3d_property_draw_pass_3)                 |                               |
+| [`Mesh`](class_mesh.md)                               | [`draw_pass_4`](class_gpuparticles3d.md#class_gpuparticles3d_property_draw_pass_4)                 |                               |
+| [`int`](class_int.md)                                 | [`draw_passes`](class_gpuparticles3d.md#class_gpuparticles3d_property_draw_passes)                 | ``1``                         |
+| [`Skin`](class_skin.md)                               | [`draw_skin`](class_gpuparticles3d.md#class_gpuparticles3d_property_draw_skin)                     |                               |
+| [`bool`](class_bool.md)                               | [`emitting`](class_gpuparticles3d.md#class_gpuparticles3d_property_emitting)                       | ``true``                      |
+| [`float`](class_float.md)                             | [`explosiveness`](class_gpuparticles3d.md#class_gpuparticles3d_property_explosiveness)             | ``0.0``                       |
+| [`int`](class_int.md)                                 | [`fixed_fps`](class_gpuparticles3d.md#class_gpuparticles3d_property_fixed_fps)                     | ``30``                        |
+| [`bool`](class_bool.md)                               | [`fract_delta`](class_gpuparticles3d.md#class_gpuparticles3d_property_fract_delta)                 | ``true``                      |
+| [`float`](class_float.md)                             | [`interp_to_end`](class_gpuparticles3d.md#class_gpuparticles3d_property_interp_to_end)             | ``0.0``                       |
+| [`bool`](class_bool.md)                               | [`interpolate`](class_gpuparticles3d.md#class_gpuparticles3d_property_interpolate)                 | ``true``                      |
+| [`float`](class_float.md)                             | [`lifetime`](class_gpuparticles3d.md#class_gpuparticles3d_property_lifetime)                       | ``1.0``                       |
+| [`bool`](class_bool.md)                               | [`local_coords`](class_gpuparticles3d.md#class_gpuparticles3d_property_local_coords)               | ``false``                     |
+| [`bool`](class_bool.md)                               | [`one_shot`](class_gpuparticles3d.md#class_gpuparticles3d_property_one_shot)                       | ``false``                     |
+| [`float`](class_float.md)                             | [`preprocess`](class_gpuparticles3d.md#class_gpuparticles3d_property_preprocess)                   | ``0.0``                       |
+| [`Material`](class_material.md)                       | [`process_material`](class_gpuparticles3d.md#class_gpuparticles3d_property_process_material)       |                               |
+| [`float`](class_float.md)                             | [`randomness`](class_gpuparticles3d.md#class_gpuparticles3d_property_randomness)                   | ``0.0``                       |
+| [`float`](class_float.md)                             | [`speed_scale`](class_gpuparticles3d.md#class_gpuparticles3d_property_speed_scale)                 | ``1.0``                       |
+| [`NodePath`](class_nodepath.md)                       | [`sub_emitter`](class_gpuparticles3d.md#class_gpuparticles3d_property_sub_emitter)                 | ``NodePath("")``              |
+| [`bool`](class_bool.md)                               | [`trail_enabled`](class_gpuparticles3d.md#class_gpuparticles3d_property_trail_enabled)             | ``false``                     |
+| [`float`](class_float.md)                             | [`trail_lifetime`](class_gpuparticles3d.md#class_gpuparticles3d_property_trail_lifetime)           | ``0.3``                       |
+| [TransformAlign](#enum_gpuparticles3d_transformalign) | [`transform_align`](class_gpuparticles3d.md#class_gpuparticles3d_property_transform_align)         | ``0``                         |
+| [`AABB`](class_aabb.md)                               | [`visibility_aabb`](class_gpuparticles3d.md#class_gpuparticles3d_property_visibility_aabb)         | ``AABB(-4, -4, -4, 8, 8, 8)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md) | [`capture_aabb`](#class_gpuparticles3d_method_capture_aabb) ( ) const[^const]                                                                                                                                                                              |
-| `void`                  | [`convert_from_particles`](#class_gpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                                                                                                     |
-| `void`                  | [`emit_particle`](#class_gpuparticles3d_method_emit_particle) ( xform: [`Transform3D`](class_transform3d.md), velocity: [`Vector3`](class_vector3.md), color: [`Color`](class_color.md), custom: [`Color`](class_color.md), flags: [`int`](class_int.md) ) |
-| [`Mesh`](class_mesh.md) | [`get_draw_pass_mesh`](#class_gpuparticles3d_method_get_draw_pass_mesh) ( pass: [`int`](class_int.md) ) const[^const]                                                                                                                                      |
-| `void`                  | [`restart`](#class_gpuparticles3d_method_restart) ( )                                                                                                                                                                                                      |
-| `void`                  | [`set_draw_pass_mesh`](#class_gpuparticles3d_method_set_draw_pass_mesh) ( pass: [`int`](class_int.md), mesh: [`Mesh`](class_mesh.md) )                                                                                                                     |
+| [`AABB`](class_aabb.md) | [`capture_aabb`](class_gpuparticles3d.md#class_gpuparticles3d_method_capture_aabb) ( ) const[^const]                                                                                                                                                                              |
+| `void`                  | [`convert_from_particles`](class_gpuparticles3d.md#class_gpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                                                                                                     |
+| `void`                  | [`emit_particle`](class_gpuparticles3d.md#class_gpuparticles3d_method_emit_particle) ( xform: [`Transform3D`](class_transform3d.md), velocity: [`Vector3`](class_vector3.md), color: [`Color`](class_color.md), custom: [`Color`](class_color.md), flags: [`int`](class_int.md) ) |
+| [`Mesh`](class_mesh.md) | [`get_draw_pass_mesh`](class_gpuparticles3d.md#class_gpuparticles3d_method_get_draw_pass_mesh) ( pass: [`int`](class_int.md) ) const[^const]                                                                                                                                      |
+| `void`                  | [`restart`](class_gpuparticles3d.md#class_gpuparticles3d_method_restart) ( )                                                                                                                                                                                                      |
+| `void`                  | [`set_draw_pass_mesh`](class_gpuparticles3d.md#class_gpuparticles3d_method_set_draw_pass_mesh) ( pass: [`int`](class_int.md), mesh: [`Mesh`](class_mesh.md) )                                                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -71,11 +71,11 @@ Use [`process_material`](#class_gpuparticles3d_property_process_material) to add
 
 **finished** ( ) <div id="class_gpuparticles3d_signal_finished"></div>
 
-Emitted when all active particles have finished processing. To immediately emit new particles, call [`restart`](#class_gpuparticles3d_method_restart).
+Emitted when all active particles have finished processing. To immediately emit new particles, call [`restart`](class_gpuparticles3d.md#class_gpuparticles3d_method_restart).
 
-Never emitted when [`one_shot`](#class_gpuparticles3d_property_one_shot) is disabled, as particles will be emitted and processed continuously.
+Never emitted when [`one_shot`](class_gpuparticles3d.md#class_gpuparticles3d_property_one_shot) is disabled, as particles will be emitted and processed continuously.
 
- **Note:** For [`one_shot`](#class_gpuparticles3d_property_one_shot) emitters, due to the particles being computed on the GPU, there may be a short period after receiving the signal during which setting [`emitting`](#class_gpuparticles3d_property_emitting) to `true` will not restart the emission cycle. This delay is avoided by instead calling [`restart`](#class_gpuparticles3d_method_restart).
+ **Note:** For [`one_shot`](class_gpuparticles3d.md#class_gpuparticles3d_property_one_shot) emitters, due to the particles being computed on the GPU, there may be a short period after receiving the signal during which setting [`emitting`](class_gpuparticles3d.md#class_gpuparticles3d_property_emitting) to `true` will not restart the emission cycle. This delay is avoided by instead calling [`restart`](class_gpuparticles3d.md#class_gpuparticles3d_method_restart).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -214,9 +214,9 @@ Maximum number of draw passes supported.
 - `void` **set_amount** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_amount** ( )
 
-The number of particles to emit in one emission cycle. The effective emission rate is `(amount * amount_ratio) / lifetime` particles per second. Higher values will increase GPU requirements, even if not all particles are visible at a given time or if [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio) is decreased.
+The number of particles to emit in one emission cycle. The effective emission rate is `(amount * amount_ratio) / lifetime` particles per second. Higher values will increase GPU requirements, even if not all particles are visible at a given time or if [`amount_ratio`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount_ratio) is decreased.
 
- **Note:** Changing this value will cause the particle system to restart. To avoid this, change [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio) instead.
+ **Note:** Changing this value will cause the particle system to restart. To avoid this, change [`amount_ratio`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount_ratio) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -229,9 +229,9 @@ The number of particles to emit in one emission cycle. The effective emission ra
 - `void` **set_amount_ratio** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_amount_ratio** ( )
 
-The ratio of particles that should actually be emitted. If set to a value lower than `1.0`, this will set the amount of emitted particles throughout the lifetime to `amount * amount_ratio`. Unlike changing [`amount`](#class_gpuparticles3d_property_amount), changing [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio) while emitting does not affect already-emitted particles and doesn't cause the particle system to restart. [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio) can be used to create effects that make the number of emitted particles vary over time.
+The ratio of particles that should actually be emitted. If set to a value lower than `1.0`, this will set the amount of emitted particles throughout the lifetime to `amount * amount_ratio`. Unlike changing [`amount`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount), changing [`amount_ratio`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount_ratio) while emitting does not affect already-emitted particles and doesn't cause the particle system to restart. [`amount_ratio`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount_ratio) can be used to create effects that make the number of emitted particles vary over time.
 
- **Note:** Reducing the [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio) has no performance benefit, since resources need to be allocated and processed for the total [`amount`](#class_gpuparticles3d_property_amount) of particles regardless of the [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio). If you don't intend to change the number of particles emitted while the particles are emitting, make sure [`amount_ratio`](#class_gpuparticles3d_property_amount_ratio) is set to `1` and change [`amount`](#class_gpuparticles3d_property_amount) to your liking instead.
+ **Note:** Reducing the [`amount_ratio`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount_ratio) has no performance benefit, since resources need to be allocated and processed for the total [`amount`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount) of particles regardless of the [`amount_ratio`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount_ratio). If you don't intend to change the number of particles emitted while the particles are emitting, make sure [`amount_ratio`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount_ratio) is set to `1` and change [`amount`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount) to your liking instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -244,7 +244,7 @@ The ratio of particles that should actually be emitted. If set to a value lower 
 - `void` **set_collision_base_size** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_collision_base_size** ( )
 
-The base diameter for particle collision in meters. If particles appear to sink into the ground when colliding, increase this value. If particles appear to float when colliding, decrease this value. Only effective if [`ParticleProcessMaterial.collision_mode`](#class_particleprocessmaterial_property_collision_mode) is [`ParticleProcessMaterial.COLLISION_RIGID`](#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](#class_particleprocessmaterial_constant_collision_hide_on_contact).
+The base diameter for particle collision in meters. If particles appear to sink into the ground when colliding, increase this value. If particles appear to float when colliding, decrease this value. Only effective if [`ParticleProcessMaterial.collision_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_collision_mode) is [`ParticleProcessMaterial.COLLISION_RIGID`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_hide_on_contact).
 
  **Note:** Particles always have a spherical collision shape.
 
@@ -261,7 +261,7 @@ The base diameter for particle collision in meters. If particles appear to sink 
 
 Particle draw order. Uses [DrawOrder](#enum_gpuparticles3d_draworder) values.
 
- **Note:** [`DRAW_ORDER_INDEX`](#class_gpuparticles3d_constant_draw_order_index) is the only option that supports motion vectors for effects like TAA. It is suggested to use this draw order if the particles are opaque to fix ghosting artifacts.
+ **Note:** [`DRAW_ORDER_INDEX`](class_gpuparticles3d.md#class_gpuparticles3d_constant_draw_order_index) is the only option that supports motion vectors for effects like TAA. It is suggested to use this draw order if the particles are opaque to fix ghosting artifacts.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -352,11 +352,11 @@ The number of draw passes when rendering particles.
 - `void` **set_emitting** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_emitting** ( )
 
-If `true`, particles are being emitted. [`emitting`](#class_gpuparticles3d_property_emitting) can be used to start and stop particles from emitting. However, if [`one_shot`](#class_gpuparticles3d_property_one_shot) is `true` setting [`emitting`](#class_gpuparticles3d_property_emitting) to `true` will not restart the emission cycle unless all active particles have finished processing. Use the [`finished`](#class_gpuparticles3d_signal_finished) signal to be notified once all active particles finish processing.
+If `true`, particles are being emitted. [`emitting`](class_gpuparticles3d.md#class_gpuparticles3d_property_emitting) can be used to start and stop particles from emitting. However, if [`one_shot`](class_gpuparticles3d.md#class_gpuparticles3d_property_one_shot) is `true` setting [`emitting`](class_gpuparticles3d.md#class_gpuparticles3d_property_emitting) to `true` will not restart the emission cycle unless all active particles have finished processing. Use the [`finished`](class_gpuparticles3d.md#class_gpuparticles3d_signal_finished) signal to be notified once all active particles finish processing.
 
- **Note:** For [`one_shot`](#class_gpuparticles3d_property_one_shot) emitters, due to the particles being computed on the GPU, there may be a short period after receiving the [`finished`](#class_gpuparticles3d_signal_finished) signal during which setting this to `true` will not restart the emission cycle.
+ **Note:** For [`one_shot`](class_gpuparticles3d.md#class_gpuparticles3d_property_one_shot) emitters, due to the particles being computed on the GPU, there may be a short period after receiving the [`finished`](class_gpuparticles3d.md#class_gpuparticles3d_signal_finished) signal during which setting this to `true` will not restart the emission cycle.
 
- **Tip:** If your [`one_shot`](#class_gpuparticles3d_property_one_shot) emitter needs to immediately restart emitting particles once [`finished`](#class_gpuparticles3d_signal_finished) signal is received, consider calling [`restart`](#class_gpuparticles3d_method_restart) instead of setting [`emitting`](#class_gpuparticles3d_property_emitting).
+ **Tip:** If your [`one_shot`](class_gpuparticles3d.md#class_gpuparticles3d_property_one_shot) emitter needs to immediately restart emitting particles once [`finished`](class_gpuparticles3d.md#class_gpuparticles3d_signal_finished) signal is received, consider calling [`restart`](class_gpuparticles3d.md#class_gpuparticles3d_method_restart) instead of setting [`emitting`](class_gpuparticles3d.md#class_gpuparticles3d_property_emitting).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -423,7 +423,7 @@ Causes all the particles in this node to interpolate towards the end of their li
 - `void` **set_interpolate** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_interpolate** ( )
 
-Enables particle interpolation, which makes the particle movement smoother when their [`fixed_fps`](#class_gpuparticles3d_property_fixed_fps) is lower than the screen refresh rate.
+Enables particle interpolation, which makes the particle movement smoother when their [`fixed_fps`](class_gpuparticles3d.md#class_gpuparticles3d_property_fixed_fps) is lower than the screen refresh rate.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -462,7 +462,7 @@ If `true`, particles use the parent node's coordinate space (known as local coor
 - `void` **set_one_shot** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_one_shot** ( )
 
-If `true`, only the number of particles equal to [`amount`](#class_gpuparticles3d_property_amount) will be emitted.
+If `true`, only the number of particles equal to [`amount`](class_gpuparticles3d.md#class_gpuparticles3d_property_amount) will be emitted.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -527,9 +527,9 @@ Speed scaling ratio. A value of `0` can be used to pause the particles.
 - `void` **set_sub_emitter** ( value: [`NodePath`](class_nodepath.md) )
 - [`NodePath`](class_nodepath.md) **get_sub_emitter** ( )
 
-Path to another **GPUParticles3D** node that will be used as a subemitter (see [`ParticleProcessMaterial.sub_emitter_mode`](#class_particleprocessmaterial_property_sub_emitter_mode)). Subemitters can be used to achieve effects such as fireworks, sparks on collision, bubbles popping into water drops, and more.
+Path to another **GPUParticles3D** node that will be used as a subemitter (see [`ParticleProcessMaterial.sub_emitter_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_sub_emitter_mode)). Subemitters can be used to achieve effects such as fireworks, sparks on collision, bubbles popping into water drops, and more.
 
- **Note:** When [`sub_emitter`](#class_gpuparticles3d_property_sub_emitter) is set, the target **GPUParticles3D** node will no longer emit particles on its own.
+ **Note:** When [`sub_emitter`](class_gpuparticles3d.md#class_gpuparticles3d_property_sub_emitter) is set, the target **GPUParticles3D** node will no longer emit particles on its own.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -544,7 +544,7 @@ Path to another **GPUParticles3D** node that will be used as a subemitter (see [
 
 If `true`, enables particle trails using a mesh skinning system. Designed to work with [`RibbonTrailMesh`](class_ribbontrailmesh.md) and [`TubeTrailMesh`](class_tubetrailmesh.md).
 
- **Note:** [`BaseMaterial3D.use_particle_trails`](#class_basematerial3d_property_use_particle_trails) must also be enabled on the particle mesh's material. Otherwise, setting [`trail_enabled`](#class_gpuparticles3d_property_trail_enabled) to `true` will have no effect.
+ **Note:** [`BaseMaterial3D.use_particle_trails`](class_basematerial3d.md#class_basematerial3d_property_use_particle_trails) must also be enabled on the particle mesh's material. Otherwise, setting [`trail_enabled`](class_gpuparticles3d.md#class_gpuparticles3d_property_trail_enabled) to `true` will have no effect.
 
  **Note:** Unlike [`GPUParticles2D`](class_gpuparticles2d.md), the number of trail sections and subdivisions is set in the [`RibbonTrailMesh`](class_ribbontrailmesh.md) or the [`TubeTrailMesh`](class_tubetrailmesh.md)'s properties.
 
@@ -559,7 +559,7 @@ If `true`, enables particle trails using a mesh skinning system. Designed to wor
 - `void` **set_trail_lifetime** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_trail_lifetime** ( )
 
-The amount of time the particle's trail should represent (in seconds). Only effective if [`trail_enabled`](#class_gpuparticles3d_property_trail_enabled) is `true`.
+The amount of time the particle's trail should represent (in seconds). Only effective if [`trail_enabled`](class_gpuparticles3d.md#class_gpuparticles3d_property_trail_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -585,11 +585,11 @@ The amount of time the particle's trail should represent (in seconds). Only effe
 - `void` **set_visibility_aabb** ( value: [`AABB`](class_aabb.md) )
 - [`AABB`](class_aabb.md) **get_visibility_aabb** ( )
 
-The [`AABB`](class_aabb.md) that determines the node's region which needs to be visible on screen for the particle system to be active. [`GeometryInstance3D.extra_cull_margin`](#class_geometryinstance3d_property_extra_cull_margin) is added on each of the AABB's axes. Particle collisions and attraction will only occur within this area.
+The [`AABB`](class_aabb.md) that determines the node's region which needs to be visible on screen for the particle system to be active. [`GeometryInstance3D.extra_cull_margin`](class_geometryinstance3d.md#class_geometryinstance3d_property_extra_cull_margin) is added on each of the AABB's axes. Particle collisions and attraction will only occur within this area.
 
 Grow the box if particles suddenly appear/disappear when the node enters/exits the screen. The [`AABB`](class_aabb.md) can be grown via code or with the **Particles → Generate AABB** editor tool.
 
- **Note:** [`visibility_aabb`](#class_gpuparticles3d_property_visibility_aabb) is overridden by [`GeometryInstance3D.custom_aabb`](#class_geometryinstance3d_property_custom_aabb) if that property is set to a non-default value.
+ **Note:** [`visibility_aabb`](class_gpuparticles3d.md#class_gpuparticles3d_property_visibility_aabb) is overridden by [`GeometryInstance3D.custom_aabb`](class_geometryinstance3d.md#class_geometryinstance3d_property_custom_aabb) if that property is set to a non-default value.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -643,9 +643,9 @@ Returns the [`Mesh`](class_mesh.md) that is drawn at index `pass`.
 
 `void` **restart** ( )<div id="class_gpuparticles3d_method_restart"></div>
 
-Restarts the particle emission cycle, clearing existing particles. To avoid particles vanishing from the viewport, wait for the [`finished`](#class_gpuparticles3d_signal_finished) signal before calling.
+Restarts the particle emission cycle, clearing existing particles. To avoid particles vanishing from the viewport, wait for the [`finished`](class_gpuparticles3d.md#class_gpuparticles3d_signal_finished) signal before calling.
 
- **Note:** The [`finished`](#class_gpuparticles3d_signal_finished) signal is only emitted by [`one_shot`](#class_gpuparticles3d_property_one_shot) emitters.
+ **Note:** The [`finished`](class_gpuparticles3d.md#class_gpuparticles3d_signal_finished) signal is only emitted by [`one_shot`](class_gpuparticles3d.md#class_gpuparticles3d_property_one_shot) emitters.
 
 <!-- rst-class:: classref-item-separator -->
 

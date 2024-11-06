@@ -17,7 +17,7 @@ Abstract base class for noise generators.
 
 This class defines the interface for noise generation libraries to inherit from.
 
-A default [`get_seamless_image`](#class_noise_method_get_seamless_image) implementation is provided for libraries that do not provide seamless noise. This function requests a larger image from the [`get_image`](#class_noise_method_get_image) method, reverses the quadrants of the image, then uses the strips of extra width to blend over the seams.
+A default [`get_seamless_image`](class_noise.md#class_noise_method_get_seamless_image) implementation is provided for libraries that do not provide seamless noise. This function requests a larger image from the [`get_image`](class_noise.md#class_noise_method_get_image) method, reverses the quadrants of the image, then uses the strips of extra width to blend over the seams.
 
 Inheriting noise classes can optionally override this function to provide a more optimal algorithm.
 
@@ -25,15 +25,15 @@ Inheriting noise classes can optionally override this function to provide a more
 
 |||
 |:-:|:--|
-| [`Image`](class_image.md)                         | [`get_image`](#class_noise_method_get_image) ( width: [`int`](class_int.md), height: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, in_3d_space: [`bool`](class_bool.md) = false, normalize: [`bool`](class_bool.md) = true ) const[^const]                                                           |
-| [Array](class_array.md) [`Image`](class_image.md) | [`get_image_3d`](#class_noise_method_get_image_3d) ( width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, normalize: [`bool`](class_bool.md) = true ) const[^const]                                                                     |
-| [`float`](class_float.md)                         | [`get_noise_1d`](#class_noise_method_get_noise_1d) ( x: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                      |
-| [`float`](class_float.md)                         | [`get_noise_2d`](#class_noise_method_get_noise_2d) ( x: [`float`](class_float.md), y: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                        |
-| [`float`](class_float.md)                         | [`get_noise_2dv`](#class_noise_method_get_noise_2dv) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                                                                                |
-| [`float`](class_float.md)                         | [`get_noise_3d`](#class_noise_method_get_noise_3d) ( x: [`float`](class_float.md), y: [`float`](class_float.md), z: [`float`](class_float.md) ) const[^const]                                                                                                                                                          |
-| [`float`](class_float.md)                         | [`get_noise_3dv`](#class_noise_method_get_noise_3dv) ( v: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                |
-| [`Image`](class_image.md)                         | [`get_seamless_image`](#class_noise_method_get_seamless_image) ( width: [`int`](class_int.md), height: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, in_3d_space: [`bool`](class_bool.md) = false, skirt: [`float`](class_float.md) = 0.1, normalize: [`bool`](class_bool.md) = true ) const[^const] |
-| [Array](class_array.md) [`Image`](class_image.md) | [`get_seamless_image_3d`](#class_noise_method_get_seamless_image_3d) ( width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, skirt: [`float`](class_float.md) = 0.1, normalize: [`bool`](class_bool.md) = true ) const[^const]           |
+| [`Image`](class_image.md)                         | [`get_image`](class_noise.md#class_noise_method_get_image) ( width: [`int`](class_int.md), height: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, in_3d_space: [`bool`](class_bool.md) = false, normalize: [`bool`](class_bool.md) = true ) const[^const]                                                           |
+| [Array](class_array.md) [`Image`](class_image.md) | [`get_image_3d`](class_noise.md#class_noise_method_get_image_3d) ( width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, normalize: [`bool`](class_bool.md) = true ) const[^const]                                                                     |
+| [`float`](class_float.md)                         | [`get_noise_1d`](class_noise.md#class_noise_method_get_noise_1d) ( x: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                                                      |
+| [`float`](class_float.md)                         | [`get_noise_2d`](class_noise.md#class_noise_method_get_noise_2d) ( x: [`float`](class_float.md), y: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                        |
+| [`float`](class_float.md)                         | [`get_noise_2dv`](class_noise.md#class_noise_method_get_noise_2dv) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                                                                                |
+| [`float`](class_float.md)                         | [`get_noise_3d`](class_noise.md#class_noise_method_get_noise_3d) ( x: [`float`](class_float.md), y: [`float`](class_float.md), z: [`float`](class_float.md) ) const[^const]                                                                                                                                                          |
+| [`float`](class_float.md)                         | [`get_noise_3dv`](class_noise.md#class_noise_method_get_noise_3dv) ( v: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                                                |
+| [`Image`](class_image.md)                         | [`get_seamless_image`](class_noise.md#class_noise_method_get_seamless_image) ( width: [`int`](class_int.md), height: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, in_3d_space: [`bool`](class_bool.md) = false, skirt: [`float`](class_float.md) = 0.1, normalize: [`bool`](class_bool.md) = true ) const[^const] |
+| [Array](class_array.md) [`Image`](class_image.md) | [`get_seamless_image_3d`](class_noise.md#class_noise_method_get_seamless_image_3d) ( width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, skirt: [`float`](class_float.md) = 0.1, normalize: [`bool`](class_bool.md) = true ) const[^const]           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -57,7 +57,7 @@ Returns an [`Image`](class_image.md) containing 2D noise values.
 
 [Array](class_array.md) [`Image`](class_image.md) **get_image_3d** ( width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, normalize: [`bool`](class_bool.md) = true ) const[^const]<div id="class_noise_method_get_image_3d"></div>
 
-Returns an [`Array`](class_array.md) of [`Image`](class_image.md) s containing 3D noise values for use with [`ImageTexture3D.create`](#class_imagetexture3d_method_create).
+Returns an [`Array`](class_array.md) of [`Image`](class_image.md) s containing 3D noise values for use with [`ImageTexture3D.create`](class_imagetexture3d.md#class_imagetexture3d_method_create).
 
  **Note:** With `normalize` set to `false`, the default implementation expects the noise generator to return values in the range `-1.0` to `1.0`.
 
@@ -131,7 +131,7 @@ Returns an [`Image`](class_image.md) containing seamless 2D noise values.
 
 [Array](class_array.md) [`Image`](class_image.md) **get_seamless_image_3d** ( width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), invert: [`bool`](class_bool.md) = false, skirt: [`float`](class_float.md) = 0.1, normalize: [`bool`](class_bool.md) = true ) const[^const]<div id="class_noise_method_get_seamless_image_3d"></div>
 
-Returns an [`Array`](class_array.md) of [`Image`](class_image.md) s containing seamless 3D noise values for use with [`ImageTexture3D.create`](#class_imagetexture3d_method_create).
+Returns an [`Array`](class_array.md) of [`Image`](class_image.md) s containing seamless 3D noise values for use with [`ImageTexture3D.create`](class_imagetexture3d.md#class_imagetexture3d_method_create).
 
  **Note:** With `normalize` set to `false`, the default implementation expects the noise generator to return values in the range `-1.0` to `1.0`.
 

@@ -19,10 +19,10 @@ Represents a texture sampler as defined by the base GLTF spec. Texture samplers 
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`mag_filter`](#class_gltftexturesampler_property_mag_filter) | ``9729``  |
-| [`int`](class_int.md) | [`min_filter`](#class_gltftexturesampler_property_min_filter) | ``9987``  |
-| [`int`](class_int.md) | [`wrap_s`](#class_gltftexturesampler_property_wrap_s)         | ``10497`` |
-| [`int`](class_int.md) | [`wrap_t`](#class_gltftexturesampler_property_wrap_t)         | ``10497`` |
+| [`int`](class_int.md) | [`mag_filter`](class_gltftexturesampler.md#class_gltftexturesampler_property_mag_filter) | ``9729``  |
+| [`int`](class_int.md) | [`min_filter`](class_gltftexturesampler.md#class_gltftexturesampler_property_min_filter) | ``9987``  |
+| [`int`](class_int.md) | [`wrap_s`](class_gltftexturesampler.md#class_gltftexturesampler_property_wrap_s)         | ``10497`` |
+| [`int`](class_int.md) | [`wrap_t`](class_gltftexturesampler.md#class_gltftexturesampler_property_wrap_t)         | ``10497`` |
 
 <!-- rst-class:: classref-section-separator -->
 

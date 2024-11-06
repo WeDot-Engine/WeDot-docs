@@ -19,10 +19,10 @@ Class representing a capsule-shaped [`PrimitiveMesh`](class_primitivemesh.md).
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`height`](#class_capsulemesh_property_height)                   | ``2.0`` |
-| [`int`](class_int.md)     | [`radial_segments`](#class_capsulemesh_property_radial_segments) | ``64``  |
-| [`float`](class_float.md) | [`radius`](#class_capsulemesh_property_radius)                   | ``0.5`` |
-| [`int`](class_int.md)     | [`rings`](#class_capsulemesh_property_rings)                     | ``8``   |
+| [`float`](class_float.md) | [`height`](class_capsulemesh.md#class_capsulemesh_property_height)                   | ``2.0`` |
+| [`int`](class_int.md)     | [`radial_segments`](class_capsulemesh.md#class_capsulemesh_property_radial_segments) | ``64``  |
+| [`float`](class_float.md) | [`radius`](class_capsulemesh.md#class_capsulemesh_property_radius)                   | ``0.5`` |
+| [`int`](class_int.md)     | [`rings`](class_capsulemesh.md#class_capsulemesh_property_rings)                     | ``8``   |
 
 <!-- rst-class:: classref-section-separator -->
 

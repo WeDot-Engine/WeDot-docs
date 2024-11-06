@@ -19,10 +19,10 @@ This class allows for a RenderSceneBuffer implementation to be made in GDExtensi
 
 |||
 |:-:|:--|
-| `void` | [`_configure`](#class_renderscenebuffersextension_private_method__configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) virtual[^virtual] |
-| `void` | [`_set_fsr_sharpness`](#class_renderscenebuffersextension_private_method__set_fsr_sharpness) ( fsr_sharpness: [`float`](class_float.md) ) virtual[^virtual]                              |
-| `void` | [`_set_texture_mipmap_bias`](#class_renderscenebuffersextension_private_method__set_texture_mipmap_bias) ( texture_mipmap_bias: [`float`](class_float.md) ) virtual[^virtual]            |
-| `void` | [`_set_use_debanding`](#class_renderscenebuffersextension_private_method__set_use_debanding) ( use_debanding: [`bool`](class_bool.md) ) virtual[^virtual]                                |
+| `void` | [`_configure`](class_renderscenebuffersextension.md#class_renderscenebuffersextension_private_method__configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) virtual[^virtual] |
+| `void` | [`_set_fsr_sharpness`](class_renderscenebuffersextension.md#class_renderscenebuffersextension_private_method__set_fsr_sharpness) ( fsr_sharpness: [`float`](class_float.md) ) virtual[^virtual]                              |
+| `void` | [`_set_texture_mipmap_bias`](class_renderscenebuffersextension.md#class_renderscenebuffersextension_private_method__set_texture_mipmap_bias) ( texture_mipmap_bias: [`float`](class_float.md) ) virtual[^virtual]            |
+| `void` | [`_set_use_debanding`](class_renderscenebuffersextension.md#class_renderscenebuffersextension_private_method__set_use_debanding) ( use_debanding: [`bool`](class_bool.md) ) virtual[^virtual]                                |
 
 <!-- rst-class:: classref-section-separator -->
 

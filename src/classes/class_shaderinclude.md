@@ -19,7 +19,7 @@ A shader include file, saved with the `.gdshaderinc` extension. This class allow
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`code`](#class_shaderinclude_property_code) | ``""`` |
+| [`String`](class_string.md) | [`code`](class_shaderinclude.md#class_shaderinclude_property_code) | ``""`` |
 
 <!-- rst-class:: classref-section-separator -->
 

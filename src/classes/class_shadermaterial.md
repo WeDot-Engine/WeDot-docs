@@ -17,20 +17,20 @@ A material that uses a custom [`Shader`](class_shader.md) program to render visu
 
 Multiple **ShaderMaterial** s can use the same shader and configure different values for the shader uniforms.
 
- **Note:** For performance reasons, the [`Resource.changed`](#class_resource_signal_changed) signal is only emitted when the [`Resource.resource_name`](#class_resource_property_resource_name) changes. Only in editor, it is also emitted for [`shader`](#class_shadermaterial_property_shader) changes.
+ **Note:** For performance reasons, the [`Resource.changed`](class_resource.md#class_resource_signal_changed) signal is only emitted when the [`Resource.resource_name`](class_resource.md#class_resource_property_resource_name) changes. Only in editor, it is also emitted for [`shader`](class_shadermaterial.md#class_shadermaterial_property_shader) changes.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Shader`](class_shader.md) | [`shader`](#class_shadermaterial_property_shader) |
+| [`Shader`](class_shader.md) | [`shader`](class_shadermaterial.md#class_shadermaterial_property_shader) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_shader_parameter`](#class_shadermaterial_method_get_shader_parameter) ( param: [`StringName`](class_stringname.md) ) const[^const]                         |
-| `void`                        | [`set_shader_parameter`](#class_shadermaterial_method_set_shader_parameter) ( param: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) |
+| [`Variant`](class_variant.md) | [`get_shader_parameter`](class_shadermaterial.md#class_shadermaterial_method_get_shader_parameter) ( param: [`StringName`](class_stringname.md) ) const[^const]                         |
+| `void`                        | [`set_shader_parameter`](class_shadermaterial.md#class_shadermaterial_method_set_shader_parameter) ( param: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -71,7 +71,7 @@ Changes the value set for this material of a uniform in the shader.
 
  **Note:** `param` is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).
 
- **Note:** Changes to the shader uniform will be effective on all instances using this **ShaderMaterial**. To prevent this, use per-instance uniforms with [`GeometryInstance3D.set_instance_shader_parameter`](#class_geometryinstance3d_method_set_instance_shader_parameter) or duplicate the **ShaderMaterial** resource using [`Resource.duplicate`](#class_resource_method_duplicate). Per-instance uniforms allow for better shader reuse and are therefore faster, so they should be preferred over duplicating the **ShaderMaterial** when possible.
+ **Note:** Changes to the shader uniform will be effective on all instances using this **ShaderMaterial**. To prevent this, use per-instance uniforms with [`GeometryInstance3D.set_instance_shader_parameter`](class_geometryinstance3d.md#class_geometryinstance3d_method_set_instance_shader_parameter) or duplicate the **ShaderMaterial** resource using [`Resource.duplicate`](class_resource.md#class_resource_method_duplicate). Per-instance uniforms allow for better shader reuse and are therefore faster, so they should be preferred over duplicating the **ShaderMaterial** when possible.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

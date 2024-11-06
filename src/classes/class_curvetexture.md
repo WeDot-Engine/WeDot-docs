@@ -21,10 +21,10 @@ If you need to store up to 3 curves within a single texture, use [`CurveXYZTextu
 
 |||
 |:-:|:--|
-| [`Curve`](class_curve.md)                     | [`curve`](#class_curvetexture_property_curve)               |                                                                                      |
-| [`bool`](class_bool.md)                       | resource_local_to_scene                                     | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [TextureMode](#enum_curvetexture_texturemode) | [`texture_mode`](#class_curvetexture_property_texture_mode) | ``0``                                                                                |
-| [`int`](class_int.md)                         | [`width`](#class_curvetexture_property_width)               | ``256``                                                                              |
+| [`Curve`](class_curve.md)                     | [`curve`](class_curvetexture.md#class_curvetexture_property_curve)               |                                                                                                       |
+| [`bool`](class_bool.md)                       | resource_local_to_scene                                                          | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [TextureMode](#enum_curvetexture_texturemode) | [`texture_mode`](class_curvetexture.md#class_curvetexture_property_texture_mode) | ``0``                                                                                                 |
+| [`int`](class_int.md)                         | [`width`](class_curvetexture.md#class_curvetexture_property_width)               | ``256``                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 

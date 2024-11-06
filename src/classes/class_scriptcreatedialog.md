@@ -13,7 +13,7 @@ Godot editor's popup dialog for creating new [`Script`](class_script.md) files.
 
 ## 描述
 
-The **ScriptCreateDialog** creates script files according to a given template for a given scripting language. The standard use is to configure its fields prior to calling one of the [`Window.popup`](#class_window_method_popup) methods.
+The **ScriptCreateDialog** creates script files according to a given template for a given scripting language. The standard use is to configure its fields prior to calling one of the [`Window.popup`](class_window.md#class_window_method_popup) methods.
 
 
 
@@ -47,15 +47,15 @@ The **ScriptCreateDialog** creates script files according to a given template fo
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | dialog_hide_on_ok | ``false`` (overrides [`AcceptDialog`](#class_acceptdialog_property_dialog_hide_on_ok)) |
-| [`String`](class_string.md) | ok_button_text    | ``"Create"`` (overrides [`AcceptDialog`](#class_acceptdialog_property_ok_button_text)) |
-| [`String`](class_string.md) | title             | ``"Attach Node Script"`` (overrides [`Window`](#class_window_property_title))          |
+| [`bool`](class_bool.md)     | dialog_hide_on_ok | ``false`` (overrides [`AcceptDialog`](class_acceptdialog.md#class_acceptdialog_property_dialog_hide_on_ok)) |
+| [`String`](class_string.md) | ok_button_text    | ``"Create"`` (overrides [`AcceptDialog`](class_acceptdialog.md#class_acceptdialog_property_ok_button_text)) |
+| [`String`](class_string.md) | title             | ``"Attach Node Script"`` (overrides [`Window`](class_window.md#class_window_property_title))                |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`config`](#class_scriptcreatedialog_method_config) ( inherits: [`String`](class_string.md), path: [`String`](class_string.md), built_in_enabled: [`bool`](class_bool.md) = true, load_enabled: [`bool`](class_bool.md) = true ) |
+| `void` | [`config`](class_scriptcreatedialog.md#class_scriptcreatedialog_method_config) ( inherits: [`String`](class_string.md), path: [`String`](class_string.md), built_in_enabled: [`bool`](class_bool.md) = true, load_enabled: [`bool`](class_bool.md) = true ) |
 
 <!-- rst-class:: classref-section-separator -->
 

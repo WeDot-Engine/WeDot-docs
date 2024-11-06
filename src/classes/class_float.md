@@ -15,17 +15,17 @@ The **float** built-in type is a 64-bit double-precision floating-point number, 
 
 Many methods and properties in the engine use 32-bit single-precision floating-point numbers instead, equivalent to `float` in C++, which have 6 reliable decimal digits of precision. For data structures such as [`Vector2`](class_vector2.md) and [`Vector3`](class_vector3.md), Godot uses 32-bit floating-point numbers by default, but it can be changed to use 64-bit doubles if Godot is compiled with the `precision=double` option.
 
-Math done using the **float** type is not guaranteed to be exact and will often result in small errors. You should usually use the [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) and [`@GlobalScope.is_zero_approx`](#class_@globalscope_method_is_zero_approx) methods instead of `==` to compare **float** values for equality.
+Math done using the **float** type is not guaranteed to be exact and will often result in small errors. You should usually use the [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) and [`@GlobalScope.is_zero_approx`](class_@globalscope.md#class_@globalscope_method_is_zero_approx) methods instead of `==` to compare **float** values for equality.
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( )                                   |
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`float`](class_float.md) )   |
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`String`](class_string.md) ) |
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`bool`](class_bool.md) )     |
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`int`](class_int.md) )       |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( )                                   |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( from: [`float`](class_float.md) )   |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( from: [`String`](class_string.md) ) |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( from: [`bool`](class_bool.md) )     |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( from: [`int`](class_int.md) )       |
 
 ## 运算符
 
@@ -90,7 +90,7 @@ Constructs a **float** as a copy of the given **float**.
 
 [`float`](class_float.md) **float** ( from: [`String`](class_string.md) )
 
-Converts a [`String`](class_string.md) to a **float**, following the same rules as [`String.to_float`](#class_string_method_to_float).
+Converts a [`String`](class_string.md) to a **float**, following the same rules as [`String.to_float`](class_string.md#class_string_method_to_float).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -120,7 +120,7 @@ Cast an [`int`](class_int.md) value to a floating-point value, `float(1)` will b
 
 Returns `true` if two floats are different from each other.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -371,7 +371,7 @@ Divides a **float** by an [`int`](class_int.md). The result is a **float**.
 
 Returns `true` if the left float is less than the right one.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -393,7 +393,7 @@ Returns `true` if this **float** is less than the given [`int`](class_int.md).
 
 Returns `true` if the left float is less than or equal to the right one.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -415,9 +415,9 @@ Returns `true` if this **float** is less than or equal to the given [`int`](clas
 
 Returns `true` if both floats are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) or [`@GlobalScope.is_zero_approx`](#class_@globalscope_method_is_zero_approx) instead, which are more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) or [`@GlobalScope.is_zero_approx`](class_@globalscope.md#class_@globalscope_method_is_zero_approx) instead, which are more reliable.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -439,7 +439,7 @@ Returns `true` if the **float** and the given [`int`](class_int.md) are equal.
 
 Returns `true` if the left float is greater than the right one.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -461,7 +461,7 @@ Returns `true` if this **float** is greater than the given [`int`](class_int.md)
 
 Returns `true` if the left float is greater than or equal to the right one.
 
- **Note:** [`@GDScript.NAN`](#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+ **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -19,7 +19,7 @@ This node internally calls `emit_subparticle` shader method. It will emit a part
 
 |||
 |:-:|:--|
-| [EmitFlags](#enum_visualshadernodeparticleemit_emitflags) | [`flags`](#class_visualshadernodeparticleemit_property_flags) | ``31`` |
+| [EmitFlags](#enum_visualshadernodeparticleemit_emitflags) | [`flags`](class_visualshadernodeparticleemit.md#class_visualshadernodeparticleemit_property_flags) | ``31`` |
 
 <!-- rst-class:: classref-section-separator -->
 

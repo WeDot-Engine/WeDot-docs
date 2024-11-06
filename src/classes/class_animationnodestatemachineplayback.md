@@ -41,22 +41,22 @@ Allows control of [`AnimationTree`](class_animationtree.md) state machines creat
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | resource_local_to_scene | ``true`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
+| [`bool`](class_bool.md) | resource_local_to_scene | ``true`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                   | [`get_current_length`](#class_animationnodestatemachineplayback_method_get_current_length) ( ) const[^const]                                                           |
-| [`StringName`](class_stringname.md)                         | [`get_current_node`](#class_animationnodestatemachineplayback_method_get_current_node) ( ) const[^const]                                                               |
-| [`float`](class_float.md)                                   | [`get_current_play_position`](#class_animationnodestatemachineplayback_method_get_current_play_position) ( ) const[^const]                                             |
-| [`StringName`](class_stringname.md)                         | [`get_fading_from_node`](#class_animationnodestatemachineplayback_method_get_fading_from_node) ( ) const[^const]                                                       |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_travel_path`](#class_animationnodestatemachineplayback_method_get_travel_path) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)                                     | [`is_playing`](#class_animationnodestatemachineplayback_method_is_playing) ( ) const[^const]                                                                           |
-| `void`                                                      | [`next`](#class_animationnodestatemachineplayback_method_next) ( )                                                                                                     |
-| `void`                                                      | [`start`](#class_animationnodestatemachineplayback_method_start) ( node: [`StringName`](class_stringname.md), reset: [`bool`](class_bool.md) = true )                  |
-| `void`                                                      | [`stop`](#class_animationnodestatemachineplayback_method_stop) ( )                                                                                                     |
-| `void`                                                      | [`travel`](#class_animationnodestatemachineplayback_method_travel) ( to_node: [`StringName`](class_stringname.md), reset_on_teleport: [`bool`](class_bool.md) = true ) |
+| [`float`](class_float.md)                                   | [`get_current_length`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_get_current_length) ( ) const[^const]                                                           |
+| [`StringName`](class_stringname.md)                         | [`get_current_node`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_get_current_node) ( ) const[^const]                                                               |
+| [`float`](class_float.md)                                   | [`get_current_play_position`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_get_current_play_position) ( ) const[^const]                                             |
+| [`StringName`](class_stringname.md)                         | [`get_fading_from_node`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_get_fading_from_node) ( ) const[^const]                                                       |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_travel_path`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_get_travel_path) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)                                     | [`is_playing`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_is_playing) ( ) const[^const]                                                                           |
+| `void`                                                      | [`next`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_next) ( )                                                                                                     |
+| `void`                                                      | [`start`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_start) ( node: [`StringName`](class_stringname.md), reset: [`bool`](class_bool.md) = true )                  |
+| `void`                                                      | [`stop`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_stop) ( )                                                                                                     |
+| `void`                                                      | [`travel`](class_animationnodestatemachineplayback.md#class_animationnodestatemachineplayback_method_travel) ( to_node: [`StringName`](class_stringname.md), reset_on_teleport: [`bool`](class_bool.md) = true ) |
 
 <!-- rst-class:: classref-section-separator -->
 

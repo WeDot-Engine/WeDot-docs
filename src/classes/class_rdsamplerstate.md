@@ -19,21 +19,21 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                      | [`anisotropy_max`](#class_rdsamplerstate_property_anisotropy_max)     | ``1.0``   |
-| [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) | [`border_color`](#class_rdsamplerstate_property_border_color)         | ``2``     |
-| [CompareOperator](#enum_renderingdevice_compareoperator)       | [`compare_op`](#class_rdsamplerstate_property_compare_op)             | ``7``     |
-| [`bool`](class_bool.md)                                        | [`enable_compare`](#class_rdsamplerstate_property_enable_compare)     | ``false`` |
-| [`float`](class_float.md)                                      | [`lod_bias`](#class_rdsamplerstate_property_lod_bias)                 | ``0.0``   |
-| [SamplerFilter](#enum_renderingdevice_samplerfilter)           | [`mag_filter`](#class_rdsamplerstate_property_mag_filter)             | ``0``     |
-| [`float`](class_float.md)                                      | [`max_lod`](#class_rdsamplerstate_property_max_lod)                   | ``1e+20`` |
-| [SamplerFilter](#enum_renderingdevice_samplerfilter)           | [`min_filter`](#class_rdsamplerstate_property_min_filter)             | ``0``     |
-| [`float`](class_float.md)                                      | [`min_lod`](#class_rdsamplerstate_property_min_lod)                   | ``0.0``   |
-| [SamplerFilter](#enum_renderingdevice_samplerfilter)           | [`mip_filter`](#class_rdsamplerstate_property_mip_filter)             | ``0``     |
-| [SamplerRepeatMode](#enum_renderingdevice_samplerrepeatmode)   | [`repeat_u`](#class_rdsamplerstate_property_repeat_u)                 | ``2``     |
-| [SamplerRepeatMode](#enum_renderingdevice_samplerrepeatmode)   | [`repeat_v`](#class_rdsamplerstate_property_repeat_v)                 | ``2``     |
-| [SamplerRepeatMode](#enum_renderingdevice_samplerrepeatmode)   | [`repeat_w`](#class_rdsamplerstate_property_repeat_w)                 | ``2``     |
-| [`bool`](class_bool.md)                                        | [`unnormalized_uvw`](#class_rdsamplerstate_property_unnormalized_uvw) | ``false`` |
-| [`bool`](class_bool.md)                                        | [`use_anisotropy`](#class_rdsamplerstate_property_use_anisotropy)     | ``false`` |
+| [`float`](class_float.md)                                      | [`anisotropy_max`](class_rdsamplerstate.md#class_rdsamplerstate_property_anisotropy_max)     | ``1.0``   |
+| [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) | [`border_color`](class_rdsamplerstate.md#class_rdsamplerstate_property_border_color)         | ``2``     |
+| [CompareOperator](#enum_renderingdevice_compareoperator)       | [`compare_op`](class_rdsamplerstate.md#class_rdsamplerstate_property_compare_op)             | ``7``     |
+| [`bool`](class_bool.md)                                        | [`enable_compare`](class_rdsamplerstate.md#class_rdsamplerstate_property_enable_compare)     | ``false`` |
+| [`float`](class_float.md)                                      | [`lod_bias`](class_rdsamplerstate.md#class_rdsamplerstate_property_lod_bias)                 | ``0.0``   |
+| [SamplerFilter](#enum_renderingdevice_samplerfilter)           | [`mag_filter`](class_rdsamplerstate.md#class_rdsamplerstate_property_mag_filter)             | ``0``     |
+| [`float`](class_float.md)                                      | [`max_lod`](class_rdsamplerstate.md#class_rdsamplerstate_property_max_lod)                   | ``1e+20`` |
+| [SamplerFilter](#enum_renderingdevice_samplerfilter)           | [`min_filter`](class_rdsamplerstate.md#class_rdsamplerstate_property_min_filter)             | ``0``     |
+| [`float`](class_float.md)                                      | [`min_lod`](class_rdsamplerstate.md#class_rdsamplerstate_property_min_lod)                   | ``0.0``   |
+| [SamplerFilter](#enum_renderingdevice_samplerfilter)           | [`mip_filter`](class_rdsamplerstate.md#class_rdsamplerstate_property_mip_filter)             | ``0``     |
+| [SamplerRepeatMode](#enum_renderingdevice_samplerrepeatmode)   | [`repeat_u`](class_rdsamplerstate.md#class_rdsamplerstate_property_repeat_u)                 | ``2``     |
+| [SamplerRepeatMode](#enum_renderingdevice_samplerrepeatmode)   | [`repeat_v`](class_rdsamplerstate.md#class_rdsamplerstate_property_repeat_v)                 | ``2``     |
+| [SamplerRepeatMode](#enum_renderingdevice_samplerrepeatmode)   | [`repeat_w`](class_rdsamplerstate.md#class_rdsamplerstate_property_repeat_w)                 | ``2``     |
+| [`bool`](class_bool.md)                                        | [`unnormalized_uvw`](class_rdsamplerstate.md#class_rdsamplerstate_property_unnormalized_uvw) | ``false`` |
+| [`bool`](class_bool.md)                                        | [`use_anisotropy`](class_rdsamplerstate.md#class_rdsamplerstate_property_use_anisotropy)     | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -48,9 +48,9 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 - `void` **set_anisotropy_max** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_anisotropy_max** ( )
 
-Maximum anisotropy that can be used when sampling. Only effective if [`use_anisotropy`](#class_rdsamplerstate_property_use_anisotropy) is `true`. Higher values result in a sharper sampler at oblique angles, at the cost of performance (due to memory bandwidth). This value may be limited by the graphics hardware in use. Most graphics hardware only supports values up to `16.0`.
+Maximum anisotropy that can be used when sampling. Only effective if [`use_anisotropy`](class_rdsamplerstate.md#class_rdsamplerstate_property_use_anisotropy) is `true`. Higher values result in a sharper sampler at oblique angles, at the cost of performance (due to memory bandwidth). This value may be limited by the graphics hardware in use. Most graphics hardware only supports values up to `16.0`.
 
-If [`anisotropy_max`](#class_rdsamplerstate_property_anisotropy_max) is `1.0`, forcibly disables anisotropy even if [`use_anisotropy`](#class_rdsamplerstate_property_use_anisotropy) is `true`.
+If [`anisotropy_max`](class_rdsamplerstate.md#class_rdsamplerstate_property_anisotropy_max) is `1.0`, forcibly disables anisotropy even if [`use_anisotropy`](class_rdsamplerstate.md#class_rdsamplerstate_property_use_anisotropy) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -63,7 +63,7 @@ If [`anisotropy_max`](#class_rdsamplerstate_property_anisotropy_max) is `1.0`, f
 - `void` **set_border_color** ( value: [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) )
 - [SamplerBorderColor](#enum_renderingdevice_samplerbordercolor) **get_border_color** ( )
 
-The border color that will be returned when sampling outside the sampler's bounds and the [`repeat_u`](#class_rdsamplerstate_property_repeat_u), [`repeat_v`](#class_rdsamplerstate_property_repeat_v) or [`repeat_w`](#class_rdsamplerstate_property_repeat_w) modes have repeating disabled.
+The border color that will be returned when sampling outside the sampler's bounds and the [`repeat_u`](class_rdsamplerstate.md#class_rdsamplerstate_property_repeat_u), [`repeat_v`](class_rdsamplerstate.md#class_rdsamplerstate_property_repeat_v) or [`repeat_w`](class_rdsamplerstate.md#class_rdsamplerstate_property_repeat_w) modes have repeating disabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -76,7 +76,7 @@ The border color that will be returned when sampling outside the sampler's bound
 - `void` **set_compare_op** ( value: [CompareOperator](#enum_renderingdevice_compareoperator) )
 - [CompareOperator](#enum_renderingdevice_compareoperator) **get_compare_op** ( )
 
-The compare operation to use. Only effective if [`enable_compare`](#class_rdsamplerstate_property_enable_compare) is `true`.
+The compare operation to use. Only effective if [`enable_compare`](class_rdsamplerstate.md#class_rdsamplerstate_property_enable_compare) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -89,7 +89,7 @@ The compare operation to use. Only effective if [`enable_compare`](#class_rdsamp
 - `void` **set_enable_compare** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_enable_compare** ( )
 
-If `true`, returned values will be based on the comparison operation defined in [`compare_op`](#class_rdsamplerstate_property_compare_op). This is a hardware-based approach and is therefore faster than performing this manually in a shader. For example, compare operations are used for shadow map rendering by comparing depth values from a shadow sampler.
+If `true`, returned values will be based on the comparison operation defined in [`compare_op`](class_rdsamplerstate.md#class_rdsamplerstate_property_compare_op). This is a hardware-based approach and is therefore faster than performing this manually in a shader. For example, compare operations are used for shadow map rendering by comparing depth values from a shadow sampler.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -232,7 +232,7 @@ If `true`, the texture will be sampled with coordinates ranging from 0 to the te
 - `void` **set_use_anisotropy** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_use_anisotropy** ( )
 
-If `true`, perform anisotropic sampling. See [`anisotropy_max`](#class_rdsamplerstate_property_anisotropy_max).
+If `true`, perform anisotropic sampling. See [`anisotropy_max`](class_rdsamplerstate.md#class_rdsamplerstate_property_anisotropy_max).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

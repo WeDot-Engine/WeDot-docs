@@ -23,7 +23,7 @@ The provided code is directly injected into the graph's matching shader function
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`expression`](#class_visualshadernodeexpression_property_expression) | ``""`` |
+| [`String`](class_string.md) | [`expression`](class_visualshadernodeexpression.md#class_visualshadernodeexpression_property_expression) | ``""`` |
 
 <!-- rst-class:: classref-section-separator -->
 

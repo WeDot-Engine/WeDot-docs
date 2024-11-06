@@ -21,34 +21,34 @@ Due to the needs of OpenXR this interface works slightly different than other pl
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`display_refresh_rate`](#class_openxrinterface_property_display_refresh_rate)                   | ``0.0``   |
-| [`bool`](class_bool.md)   | [`foveation_dynamic`](#class_openxrinterface_property_foveation_dynamic)                         | ``false`` |
-| [`int`](class_int.md)     | [`foveation_level`](#class_openxrinterface_property_foveation_level)                             | ``0``     |
-| [`float`](class_float.md) | [`render_target_size_multiplier`](#class_openxrinterface_property_render_target_size_multiplier) | ``1.0``   |
-| [`float`](class_float.md) | [`vrs_min_radius`](#class_openxrinterface_property_vrs_min_radius)                               | ``20.0``  |
-| [`float`](class_float.md) | [`vrs_strength`](#class_openxrinterface_property_vrs_strength)                                   | ``1.0``   |
+| [`float`](class_float.md) | [`display_refresh_rate`](class_openxrinterface.md#class_openxrinterface_property_display_refresh_rate)                   | ``0.0``   |
+| [`bool`](class_bool.md)   | [`foveation_dynamic`](class_openxrinterface.md#class_openxrinterface_property_foveation_dynamic)                         | ``false`` |
+| [`int`](class_int.md)     | [`foveation_level`](class_openxrinterface.md#class_openxrinterface_property_foveation_level)                             | ``0``     |
+| [`float`](class_float.md) | [`render_target_size_multiplier`](class_openxrinterface.md#class_openxrinterface_property_render_target_size_multiplier) | ``1.0``   |
+| [`float`](class_float.md) | [`vrs_min_radius`](class_openxrinterface.md#class_openxrinterface_property_vrs_min_radius)                               | ``20.0``  |
+| [`float`](class_float.md) | [`vrs_strength`](class_openxrinterface.md#class_openxrinterface_property_vrs_strength)                                   | ``1.0``   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md)                                    | [`get_action_sets`](#class_openxrinterface_method_get_action_sets) ( ) const[^const]                                                                                                                                 |
-| [`Array`](class_array.md)                                    | [`get_available_display_refresh_rates`](#class_openxrinterface_method_get_available_display_refresh_rates) ( ) const[^const]                                                                                         |
-| [`Vector3`](class_vector3.md)                                | [`get_hand_joint_angular_velocity`](#class_openxrinterface_method_get_hand_joint_angular_velocity) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const] |
-| [HandJointFlags](#enum_openxrinterface_handjointflags)       | [`get_hand_joint_flags`](#class_openxrinterface_method_get_hand_joint_flags) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]                       |
-| [`Vector3`](class_vector3.md)                                | [`get_hand_joint_linear_velocity`](#class_openxrinterface_method_get_hand_joint_linear_velocity) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]   |
-| [`Vector3`](class_vector3.md)                                | [`get_hand_joint_position`](#class_openxrinterface_method_get_hand_joint_position) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]                 |
-| [`float`](class_float.md)                                    | [`get_hand_joint_radius`](#class_openxrinterface_method_get_hand_joint_radius) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]                     |
-| [`Quaternion`](class_quaternion.md)                          | [`get_hand_joint_rotation`](#class_openxrinterface_method_get_hand_joint_rotation) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]                 |
-| [HandTrackedSource](#enum_openxrinterface_handtrackedsource) | [`get_hand_tracking_source`](#class_openxrinterface_method_get_hand_tracking_source) ( hand: [Hand](#enum_openxrinterface_hand) ) const[^const]                                                                      |
-| [HandMotionRange](#enum_openxrinterface_handmotionrange)     | [`get_motion_range`](#class_openxrinterface_method_get_motion_range) ( hand: [Hand](#enum_openxrinterface_hand) ) const[^const]                                                                                      |
-| [`bool`](class_bool.md)                                      | [`is_action_set_active`](#class_openxrinterface_method_is_action_set_active) ( name: [`String`](class_string.md) ) const[^const]                                                                                     |
-| [`bool`](class_bool.md)                                      | [`is_eye_gaze_interaction_supported`](#class_openxrinterface_method_is_eye_gaze_interaction_supported) ( )                                                                                                           |
-| [`bool`](class_bool.md)                                      | [`is_foveation_supported`](#class_openxrinterface_method_is_foveation_supported) ( ) const[^const]                                                                                                                   |
-| [`bool`](class_bool.md)                                      | [`is_hand_interaction_supported`](#class_openxrinterface_method_is_hand_interaction_supported) ( ) const[^const]                                                                                                     |
-| [`bool`](class_bool.md)                                      | [`is_hand_tracking_supported`](#class_openxrinterface_method_is_hand_tracking_supported) ( )                                                                                                                         |
-| `void`                                                       | [`set_action_set_active`](#class_openxrinterface_method_set_action_set_active) ( name: [`String`](class_string.md), active: [`bool`](class_bool.md) )                                                                |
-| `void`                                                       | [`set_motion_range`](#class_openxrinterface_method_set_motion_range) ( hand: [Hand](#enum_openxrinterface_hand), motion_range: [HandMotionRange](#enum_openxrinterface_handmotionrange) )                            |
+| [`Array`](class_array.md)                                    | [`get_action_sets`](class_openxrinterface.md#class_openxrinterface_method_get_action_sets) ( ) const[^const]                                                                                                                                 |
+| [`Array`](class_array.md)                                    | [`get_available_display_refresh_rates`](class_openxrinterface.md#class_openxrinterface_method_get_available_display_refresh_rates) ( ) const[^const]                                                                                         |
+| [`Vector3`](class_vector3.md)                                | [`get_hand_joint_angular_velocity`](class_openxrinterface.md#class_openxrinterface_method_get_hand_joint_angular_velocity) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const] |
+| [HandJointFlags](#enum_openxrinterface_handjointflags)       | [`get_hand_joint_flags`](class_openxrinterface.md#class_openxrinterface_method_get_hand_joint_flags) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]                       |
+| [`Vector3`](class_vector3.md)                                | [`get_hand_joint_linear_velocity`](class_openxrinterface.md#class_openxrinterface_method_get_hand_joint_linear_velocity) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]   |
+| [`Vector3`](class_vector3.md)                                | [`get_hand_joint_position`](class_openxrinterface.md#class_openxrinterface_method_get_hand_joint_position) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]                 |
+| [`float`](class_float.md)                                    | [`get_hand_joint_radius`](class_openxrinterface.md#class_openxrinterface_method_get_hand_joint_radius) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]                     |
+| [`Quaternion`](class_quaternion.md)                          | [`get_hand_joint_rotation`](class_openxrinterface.md#class_openxrinterface_method_get_hand_joint_rotation) ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]                 |
+| [HandTrackedSource](#enum_openxrinterface_handtrackedsource) | [`get_hand_tracking_source`](class_openxrinterface.md#class_openxrinterface_method_get_hand_tracking_source) ( hand: [Hand](#enum_openxrinterface_hand) ) const[^const]                                                                      |
+| [HandMotionRange](#enum_openxrinterface_handmotionrange)     | [`get_motion_range`](class_openxrinterface.md#class_openxrinterface_method_get_motion_range) ( hand: [Hand](#enum_openxrinterface_hand) ) const[^const]                                                                                      |
+| [`bool`](class_bool.md)                                      | [`is_action_set_active`](class_openxrinterface.md#class_openxrinterface_method_is_action_set_active) ( name: [`String`](class_string.md) ) const[^const]                                                                                     |
+| [`bool`](class_bool.md)                                      | [`is_eye_gaze_interaction_supported`](class_openxrinterface.md#class_openxrinterface_method_is_eye_gaze_interaction_supported) ( )                                                                                                           |
+| [`bool`](class_bool.md)                                      | [`is_foveation_supported`](class_openxrinterface.md#class_openxrinterface_method_is_foveation_supported) ( ) const[^const]                                                                                                                   |
+| [`bool`](class_bool.md)                                      | [`is_hand_interaction_supported`](class_openxrinterface.md#class_openxrinterface_method_is_hand_interaction_supported) ( ) const[^const]                                                                                                     |
+| [`bool`](class_bool.md)                                      | [`is_hand_tracking_supported`](class_openxrinterface.md#class_openxrinterface_method_is_hand_tracking_supported) ( )                                                                                                                         |
+| `void`                                                       | [`set_action_set_active`](class_openxrinterface.md#class_openxrinterface_method_set_action_set_active) ( name: [`String`](class_string.md), active: [`bool`](class_bool.md) )                                                                |
+| `void`                                                       | [`set_motion_range`](class_openxrinterface.md#class_openxrinterface_method_set_motion_range) ( hand: [Hand](#enum_openxrinterface_hand), motion_range: [HandMotionRange](#enum_openxrinterface_handmotionrange) )                            |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -466,7 +466,7 @@ The display refresh rate for the current HMD. Only functional if this feature is
 - `void` **set_foveation_dynamic** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_foveation_dynamic** ( )
 
-Enable dynamic foveation adjustment, the interface must be initialized before this is accessible. If enabled foveation will automatically adjusted between low and [`foveation_level`](#class_openxrinterface_property_foveation_level).
+Enable dynamic foveation adjustment, the interface must be initialized before this is accessible. If enabled foveation will automatically adjusted between low and [`foveation_level`](class_openxrinterface.md#class_openxrinterface_property_foveation_level).
 
  **Note:** Only works on compatibility renderer.
 
@@ -511,7 +511,7 @@ The render size multiplier for the current HMD. Must be set before the interface
 
 The minimum radius around the focal point where full quality is guaranteed if VRS is used as a percentage of screen size.
 
- **Note:** Mobile and Forward+ renderers only. Requires [`Viewport.vrs_mode`](#class_viewport_property_vrs_mode) to be set to [`Viewport.VRS_XR`](#class_viewport_constant_vrs_xr).
+ **Note:** Mobile and Forward+ renderers only. Requires [`Viewport.vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode) to be set to [`Viewport.VRS_XR`](class_viewport.md#class_viewport_constant_vrs_xr).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -526,7 +526,7 @@ The minimum radius around the focal point where full quality is guaranteed if VR
 
 The strength used to calculate the VRS density map. The greater this value, the more noticeable VRS is. This improves performance at the cost of quality.
 
- **Note:** Mobile and Forward+ renderers only. Requires [`Viewport.vrs_mode`](#class_viewport_property_vrs_mode) to be set to [`Viewport.VRS_XR`](#class_viewport_constant_vrs_xr).
+ **Note:** Mobile and Forward+ renderers only. Requires [`Viewport.vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode) to be set to [`Viewport.VRS_XR`](class_viewport.md#class_viewport_constant_vrs_xr).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -558,7 +558,7 @@ Returns display refresh rates supported by the current HMD. Only returned if thi
 
 [`Vector3`](class_vector3.md) **get_hand_joint_angular_velocity** ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]<div id="class_openxrinterface_method_get_hand_joint_angular_velocity"></div>
 
-**已弃用：** Use [`XRHandTracker.get_hand_joint_angular_velocity`](#class_xrhandtracker_method_get_hand_joint_angular_velocity) obtained from [`XRServer.get_tracker`](#class_xrserver_method_get_tracker) instead.
+**已弃用：** Use [`XRHandTracker.get_hand_joint_angular_velocity`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_angular_velocity) obtained from [`XRServer.get_tracker`](class_xrserver.md#class_xrserver_method_get_tracker) instead.
 
 If handtracking is enabled, returns the angular velocity of a joint (`joint`) of a hand (`hand`) as provided by OpenXR. This is relative to [`XROrigin3D`](class_xrorigin3d.md)!
 
@@ -570,7 +570,7 @@ If handtracking is enabled, returns the angular velocity of a joint (`joint`) of
 
 [HandJointFlags](#enum_openxrinterface_handjointflags) **get_hand_joint_flags** ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]<div id="class_openxrinterface_method_get_hand_joint_flags"></div>
 
-**已弃用：** Use [`XRHandTracker.get_hand_joint_flags`](#class_xrhandtracker_method_get_hand_joint_flags) obtained from [`XRServer.get_tracker`](#class_xrserver_method_get_tracker) instead.
+**已弃用：** Use [`XRHandTracker.get_hand_joint_flags`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_flags) obtained from [`XRServer.get_tracker`](class_xrserver.md#class_xrserver_method_get_tracker) instead.
 
 If handtracking is enabled, returns flags that inform us of the validity of the tracking data.
 
@@ -582,7 +582,7 @@ If handtracking is enabled, returns flags that inform us of the validity of the 
 
 [`Vector3`](class_vector3.md) **get_hand_joint_linear_velocity** ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]<div id="class_openxrinterface_method_get_hand_joint_linear_velocity"></div>
 
-**已弃用：** Use [`XRHandTracker.get_hand_joint_linear_velocity`](#class_xrhandtracker_method_get_hand_joint_linear_velocity) obtained from [`XRServer.get_tracker`](#class_xrserver_method_get_tracker) instead.
+**已弃用：** Use [`XRHandTracker.get_hand_joint_linear_velocity`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_linear_velocity) obtained from [`XRServer.get_tracker`](class_xrserver.md#class_xrserver_method_get_tracker) instead.
 
 If handtracking is enabled, returns the linear velocity of a joint (`joint`) of a hand (`hand`) as provided by OpenXR. This is relative to [`XROrigin3D`](class_xrorigin3d.md) without worldscale applied!
 
@@ -594,7 +594,7 @@ If handtracking is enabled, returns the linear velocity of a joint (`joint`) of 
 
 [`Vector3`](class_vector3.md) **get_hand_joint_position** ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]<div id="class_openxrinterface_method_get_hand_joint_position"></div>
 
-**已弃用：** Use [`XRHandTracker.get_hand_joint_transform`](#class_xrhandtracker_method_get_hand_joint_transform) obtained from [`XRServer.get_tracker`](#class_xrserver_method_get_tracker) instead.
+**已弃用：** Use [`XRHandTracker.get_hand_joint_transform`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_transform) obtained from [`XRServer.get_tracker`](class_xrserver.md#class_xrserver_method_get_tracker) instead.
 
 If handtracking is enabled, returns the position of a joint (`joint`) of a hand (`hand`) as provided by OpenXR. This is relative to [`XROrigin3D`](class_xrorigin3d.md) without worldscale applied!
 
@@ -606,7 +606,7 @@ If handtracking is enabled, returns the position of a joint (`joint`) of a hand 
 
 [`float`](class_float.md) **get_hand_joint_radius** ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]<div id="class_openxrinterface_method_get_hand_joint_radius"></div>
 
-**已弃用：** Use [`XRHandTracker.get_hand_joint_radius`](#class_xrhandtracker_method_get_hand_joint_radius) obtained from [`XRServer.get_tracker`](#class_xrserver_method_get_tracker) instead.
+**已弃用：** Use [`XRHandTracker.get_hand_joint_radius`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_radius) obtained from [`XRServer.get_tracker`](class_xrserver.md#class_xrserver_method_get_tracker) instead.
 
 If handtracking is enabled, returns the radius of a joint (`joint`) of a hand (`hand`) as provided by OpenXR. This is without worldscale applied!
 
@@ -618,7 +618,7 @@ If handtracking is enabled, returns the radius of a joint (`joint`) of a hand (`
 
 [`Quaternion`](class_quaternion.md) **get_hand_joint_rotation** ( hand: [Hand](#enum_openxrinterface_hand), joint: [HandJoints](#enum_openxrinterface_handjoints) ) const[^const]<div id="class_openxrinterface_method_get_hand_joint_rotation"></div>
 
-**已弃用：** Use [`XRHandTracker.get_hand_joint_transform`](#class_xrhandtracker_method_get_hand_joint_transform) obtained from [`XRServer.get_tracker`](#class_xrserver_method_get_tracker) instead.
+**已弃用：** Use [`XRHandTracker.get_hand_joint_transform`](class_xrhandtracker.md#class_xrhandtracker_method_get_hand_joint_transform) obtained from [`XRServer.get_tracker`](class_xrserver.md#class_xrserver_method_get_tracker) instead.
 
 If handtracking is enabled, returns the rotation of a joint (`joint`) of a hand (`hand`) as provided by OpenXR.
 
@@ -630,7 +630,7 @@ If handtracking is enabled, returns the rotation of a joint (`joint`) of a hand 
 
 [HandTrackedSource](#enum_openxrinterface_handtrackedsource) **get_hand_tracking_source** ( hand: [Hand](#enum_openxrinterface_hand) ) const[^const]<div id="class_openxrinterface_method_get_hand_tracking_source"></div>
 
-**已弃用：** Use [`XRHandTracker.hand_tracking_source`](#class_xrhandtracker_property_hand_tracking_source) obtained from [`XRServer.get_tracker`](#class_xrserver_method_get_tracker) instead.
+**已弃用：** Use [`XRHandTracker.hand_tracking_source`](class_xrhandtracker.md#class_xrhandtracker_property_hand_tracking_source) obtained from [`XRServer.get_tracker`](class_xrserver.md#class_xrserver_method_get_tracker) instead.
 
 If handtracking is enabled and hand tracking source is supported, gets the source of the hand tracking data for `hand`.
 
@@ -676,7 +676,7 @@ Returns the capabilities of the eye gaze interaction extension.
 
 Returns `true` if OpenXR's foveation extension is supported, the interface must be initialized before this returns a valid value.
 
- **Note:** This feature is only available on the compatibility renderer and currently only available on some stand alone headsets. For Vulkan set [`Viewport.vrs_mode`](#class_viewport_property_vrs_mode) to `VRS_XR` on desktop.
+ **Note:** This feature is only available on the compatibility renderer and currently only available on some stand alone headsets. For Vulkan set [`Viewport.vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode) to `VRS_XR` on desktop.
 
 <!-- rst-class:: classref-item-separator -->
 

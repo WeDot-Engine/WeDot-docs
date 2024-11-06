@@ -13,7 +13,7 @@ Represents a straight ribbon-shaped [`PrimitiveMesh`](class_primitivemesh.md) wi
 
 ## 描述
 
-**RibbonTrailMesh** represents a straight ribbon-shaped mesh with variable width. The ribbon is composed of a number of flat or cross-shaped sections, each with the same [`section_length`](#class_ribbontrailmesh_property_section_length) and number of [`section_segments`](#class_ribbontrailmesh_property_section_segments). A [`curve`](#class_ribbontrailmesh_property_curve) is sampled along the total length of the ribbon, meaning that the curve determines the size of the ribbon along its length.
+**RibbonTrailMesh** represents a straight ribbon-shaped mesh with variable width. The ribbon is composed of a number of flat or cross-shaped sections, each with the same [`section_length`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_section_length) and number of [`section_segments`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_section_segments). A [`curve`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_curve) is sampled along the total length of the ribbon, meaning that the curve determines the size of the ribbon along its length.
 
 This primitive mesh is usually used for particle trails.
 
@@ -21,12 +21,12 @@ This primitive mesh is usually used for particle trails.
 
 |||
 |:-:|:--|
-| [`Curve`](class_curve.md)            | [`curve`](#class_ribbontrailmesh_property_curve)                       |         |
-| [`float`](class_float.md)            | [`section_length`](#class_ribbontrailmesh_property_section_length)     | ``0.2`` |
-| [`int`](class_int.md)                | [`section_segments`](#class_ribbontrailmesh_property_section_segments) | ``3``   |
-| [`int`](class_int.md)                | [`sections`](#class_ribbontrailmesh_property_sections)                 | ``5``   |
-| [Shape](#enum_ribbontrailmesh_shape) | [`shape`](#class_ribbontrailmesh_property_shape)                       | ``1``   |
-| [`float`](class_float.md)            | [`size`](#class_ribbontrailmesh_property_size)                         | ``1.0`` |
+| [`Curve`](class_curve.md)            | [`curve`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_curve)                       |         |
+| [`float`](class_float.md)            | [`section_length`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_section_length)     | ``0.2`` |
+| [`int`](class_int.md)                | [`section_segments`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_section_segments) | ``3``   |
+| [`int`](class_int.md)                | [`sections`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_sections)                 | ``5``   |
+| [Shape](#enum_ribbontrailmesh_shape) | [`shape`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_shape)                       | ``1``   |
+| [`float`](class_float.md)            | [`size`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_size)                         | ``1.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -63,7 +63,7 @@ Gives the mesh two perpendicular flat faces, making a cross shape.
 - `void` **set_curve** ( value: [`Curve`](class_curve.md) )
 - [`Curve`](class_curve.md) **get_curve** ( )
 
-Determines the size of the ribbon along its length. The size of a particular section segment is obtained by multiplying the baseline [`size`](#class_ribbontrailmesh_property_size) by the value of this curve at the given distance. For values smaller than `0`, the faces will be inverted.
+Determines the size of the ribbon along its length. The size of a particular section segment is obtained by multiplying the baseline [`size`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_size) by the value of this curve at the given distance. For values smaller than `0`, the faces will be inverted.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -89,7 +89,7 @@ The length of a section of the ribbon.
 - `void` **set_section_segments** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_section_segments** ( )
 
-The number of segments in a section. The [`curve`](#class_ribbontrailmesh_property_curve) is sampled on each segment to determine its size. Higher values result in a more detailed ribbon at the cost of performance.
+The number of segments in a section. The [`curve`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_curve) is sampled on each segment to determine its size. Higher values result in a more detailed ribbon at the cost of performance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -128,7 +128,7 @@ Determines the shape of the ribbon.
 - `void` **set_size** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_size** ( )
 
-The baseline size of the ribbon. The size of a particular section segment is obtained by multiplying this size by the value of the [`curve`](#class_ribbontrailmesh_property_curve) at the given distance.
+The baseline size of the ribbon. The size of a particular section segment is obtained by multiplying this size by the value of the [`curve`](class_ribbontrailmesh.md#class_ribbontrailmesh_property_curve) at the given distance.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

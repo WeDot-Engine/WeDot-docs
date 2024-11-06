@@ -13,7 +13,7 @@ A font loaded from a system font. Falls back to a default theme font if not impl
 
 ## 描述
 
-**SystemFont** loads a font from a system font with the first matching name from [`font_names`](#class_systemfont_property_font_names).
+**SystemFont** loads a font from a system font with the first matching name from [`font_names`](class_systemfont.md#class_systemfont_property_font_names).
 
 It will attempt to match font style, but it's not guaranteed.
 
@@ -27,21 +27,21 @@ You can create [`FontVariation`](class_fontvariation.md) of the system font for 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                     | [`allow_system_fallback`](#class_systemfont_property_allow_system_fallback)                           | ``true``                |
-| [FontAntialiasing](#enum_textserver_fontantialiasing)       | [`antialiasing`](#class_systemfont_property_antialiasing)                                             | ``1``                   |
-| [`bool`](class_bool.md)                                     | [`disable_embedded_bitmaps`](#class_systemfont_property_disable_embedded_bitmaps)                     | ``true``                |
-| [`bool`](class_bool.md)                                     | [`font_italic`](#class_systemfont_property_font_italic)                                               | ``false``               |
-| [`PackedStringArray`](class_packedstringarray.md)           | [`font_names`](#class_systemfont_property_font_names)                                                 | ``PackedStringArray()`` |
-| [`int`](class_int.md)                                       | [`font_stretch`](#class_systemfont_property_font_stretch)                                             | ``100``                 |
-| [`int`](class_int.md)                                       | [`font_weight`](#class_systemfont_property_font_weight)                                               | ``400``                 |
-| [`bool`](class_bool.md)                                     | [`force_autohinter`](#class_systemfont_property_force_autohinter)                                     | ``false``               |
-| [`bool`](class_bool.md)                                     | [`generate_mipmaps`](#class_systemfont_property_generate_mipmaps)                                     | ``false``               |
-| [Hinting](#enum_textserver_hinting)                         | [`hinting`](#class_systemfont_property_hinting)                                                       | ``1``                   |
-| [`int`](class_int.md)                                       | [`msdf_pixel_range`](#class_systemfont_property_msdf_pixel_range)                                     | ``16``                  |
-| [`int`](class_int.md)                                       | [`msdf_size`](#class_systemfont_property_msdf_size)                                                   | ``48``                  |
-| [`bool`](class_bool.md)                                     | [`multichannel_signed_distance_field`](#class_systemfont_property_multichannel_signed_distance_field) | ``false``               |
-| [`float`](class_float.md)                                   | [`oversampling`](#class_systemfont_property_oversampling)                                             | ``0.0``                 |
-| [SubpixelPositioning](#enum_textserver_subpixelpositioning) | [`subpixel_positioning`](#class_systemfont_property_subpixel_positioning)                             | ``1``                   |
+| [`bool`](class_bool.md)                                     | [`allow_system_fallback`](class_systemfont.md#class_systemfont_property_allow_system_fallback)                           | ``true``                |
+| [FontAntialiasing](#enum_textserver_fontantialiasing)       | [`antialiasing`](class_systemfont.md#class_systemfont_property_antialiasing)                                             | ``1``                   |
+| [`bool`](class_bool.md)                                     | [`disable_embedded_bitmaps`](class_systemfont.md#class_systemfont_property_disable_embedded_bitmaps)                     | ``true``                |
+| [`bool`](class_bool.md)                                     | [`font_italic`](class_systemfont.md#class_systemfont_property_font_italic)                                               | ``false``               |
+| [`PackedStringArray`](class_packedstringarray.md)           | [`font_names`](class_systemfont.md#class_systemfont_property_font_names)                                                 | ``PackedStringArray()`` |
+| [`int`](class_int.md)                                       | [`font_stretch`](class_systemfont.md#class_systemfont_property_font_stretch)                                             | ``100``                 |
+| [`int`](class_int.md)                                       | [`font_weight`](class_systemfont.md#class_systemfont_property_font_weight)                                               | ``400``                 |
+| [`bool`](class_bool.md)                                     | [`force_autohinter`](class_systemfont.md#class_systemfont_property_force_autohinter)                                     | ``false``               |
+| [`bool`](class_bool.md)                                     | [`generate_mipmaps`](class_systemfont.md#class_systemfont_property_generate_mipmaps)                                     | ``false``               |
+| [Hinting](#enum_textserver_hinting)                         | [`hinting`](class_systemfont.md#class_systemfont_property_hinting)                                                       | ``1``                   |
+| [`int`](class_int.md)                                       | [`msdf_pixel_range`](class_systemfont.md#class_systemfont_property_msdf_pixel_range)                                     | ``16``                  |
+| [`int`](class_int.md)                                       | [`msdf_size`](class_systemfont.md#class_systemfont_property_msdf_size)                                                   | ``48``                  |
+| [`bool`](class_bool.md)                                     | [`multichannel_signed_distance_field`](class_systemfont.md#class_systemfont_property_multichannel_signed_distance_field) | ``false``               |
+| [`float`](class_float.md)                                   | [`oversampling`](class_systemfont.md#class_systemfont_property_oversampling)                                             | ``0.0``                 |
+| [SubpixelPositioning](#enum_textserver_subpixelpositioning) | [`subpixel_positioning`](class_systemfont.md#class_systemfont_property_subpixel_positioning)                             | ``1``                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -188,7 +188,7 @@ Font hinting mode.
 - `void` **set_msdf_pixel_range** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_msdf_pixel_range** ( )
 
-The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, [`msdf_pixel_range`](#class_systemfont_property_msdf_pixel_range) must be set to at least *twice* the size of the largest font outline. The default [`msdf_pixel_range`](#class_systemfont_property_msdf_pixel_range) value of `16` allows outline sizes up to `8` to look correct.
+The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, [`msdf_pixel_range`](class_systemfont.md#class_systemfont_property_msdf_pixel_range) must be set to at least *twice* the size of the largest font outline. The default [`msdf_pixel_range`](class_systemfont.md#class_systemfont_property_msdf_pixel_range) value of `16` allows outline sizes up to `8` to look correct.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -240,7 +240,7 @@ Font oversampling factor, if set to `0.0` global oversampling factor is used ins
 - `void` **set_subpixel_positioning** ( value: [SubpixelPositioning](#enum_textserver_subpixelpositioning) )
 - [SubpixelPositioning](#enum_textserver_subpixelpositioning) **get_subpixel_positioning** ( )
 
-Font glyph subpixel positioning mode. Subpixel positioning provides shaper text and better kerning for smaller font sizes, at the cost of memory usage and font rasterization speed. Use [`TextServer.SUBPIXEL_POSITIONING_AUTO`](#class_textserver_constant_subpixel_positioning_auto) to automatically enable it based on the font size.
+Font glyph subpixel positioning mode. Subpixel positioning provides shaper text and better kerning for smaller font sizes, at the cost of memory usage and font rasterization speed. Use [`TextServer.SUBPIXEL_POSITIONING_AUTO`](class_textserver.md#class_textserver_constant_subpixel_positioning_auto) to automatically enable it based on the font size.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -19,85 +19,85 @@ A control that provides a horizontal bar with tabs. Similar to [`TabContainer`](
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                           | [`clip_tabs`](#class_tabbar_property_clip_tabs)                                 | ``true``                                                          |
-| [`int`](class_int.md)                                             | [`current_tab`](#class_tabbar_property_current_tab)                             | ``-1``                                                            |
-| [`bool`](class_bool.md)                                           | [`deselect_enabled`](#class_tabbar_property_deselect_enabled)                   | ``false``                                                         |
-| [`bool`](class_bool.md)                                           | [`drag_to_rearrange_enabled`](#class_tabbar_property_drag_to_rearrange_enabled) | ``false``                                                         |
-| [FocusMode](#enum_control_focusmode)                              | focus_mode                                                                      | ``2`` (overrides [`Control`](#class_control_property_focus_mode)) |
-| [`int`](class_int.md)                                             | [`max_tab_width`](#class_tabbar_property_max_tab_width)                         | ``0``                                                             |
-| [`bool`](class_bool.md)                                           | [`scroll_to_selected`](#class_tabbar_property_scroll_to_selected)               | ``true``                                                          |
-| [`bool`](class_bool.md)                                           | [`scrolling_enabled`](#class_tabbar_property_scrolling_enabled)                 | ``true``                                                          |
-| [`bool`](class_bool.md)                                           | [`select_with_rmb`](#class_tabbar_property_select_with_rmb)                     | ``false``                                                         |
-| [AlignmentMode](#enum_tabbar_alignmentmode)                       | [`tab_alignment`](#class_tabbar_property_tab_alignment)                         | ``0``                                                             |
-| [CloseButtonDisplayPolicy](#enum_tabbar_closebuttondisplaypolicy) | [`tab_close_display_policy`](#class_tabbar_property_tab_close_display_policy)   | ``0``                                                             |
-| [`int`](class_int.md)                                             | [`tab_count`](#class_tabbar_property_tab_count)                                 | ``0``                                                             |
-| [`int`](class_int.md)                                             | [`tabs_rearrange_group`](#class_tabbar_property_tabs_rearrange_group)           | ``-1``                                                            |
+| [`bool`](class_bool.md)                                           | [`clip_tabs`](class_tabbar.md#class_tabbar_property_clip_tabs)                                 | ``true``                                                                          |
+| [`int`](class_int.md)                                             | [`current_tab`](class_tabbar.md#class_tabbar_property_current_tab)                             | ``-1``                                                                            |
+| [`bool`](class_bool.md)                                           | [`deselect_enabled`](class_tabbar.md#class_tabbar_property_deselect_enabled)                   | ``false``                                                                         |
+| [`bool`](class_bool.md)                                           | [`drag_to_rearrange_enabled`](class_tabbar.md#class_tabbar_property_drag_to_rearrange_enabled) | ``false``                                                                         |
+| [FocusMode](#enum_control_focusmode)                              | focus_mode                                                                                     | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode)) |
+| [`int`](class_int.md)                                             | [`max_tab_width`](class_tabbar.md#class_tabbar_property_max_tab_width)                         | ``0``                                                                             |
+| [`bool`](class_bool.md)                                           | [`scroll_to_selected`](class_tabbar.md#class_tabbar_property_scroll_to_selected)               | ``true``                                                                          |
+| [`bool`](class_bool.md)                                           | [`scrolling_enabled`](class_tabbar.md#class_tabbar_property_scrolling_enabled)                 | ``true``                                                                          |
+| [`bool`](class_bool.md)                                           | [`select_with_rmb`](class_tabbar.md#class_tabbar_property_select_with_rmb)                     | ``false``                                                                         |
+| [AlignmentMode](#enum_tabbar_alignmentmode)                       | [`tab_alignment`](class_tabbar.md#class_tabbar_property_tab_alignment)                         | ``0``                                                                             |
+| [CloseButtonDisplayPolicy](#enum_tabbar_closebuttondisplaypolicy) | [`tab_close_display_policy`](class_tabbar.md#class_tabbar_property_tab_close_display_policy)   | ``0``                                                                             |
+| [`int`](class_int.md)                                             | [`tab_count`](class_tabbar.md#class_tabbar_property_tab_count)                                 | ``0``                                                                             |
+| [`int`](class_int.md)                                             | [`tabs_rearrange_group`](class_tabbar.md#class_tabbar_property_tabs_rearrange_group)           | ``-1``                                                                            |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                       | [`add_tab`](#class_tabbar_method_add_tab) ( title: [`String`](class_string.md) = "", icon: [`Texture2D`](class_texture2d.md) = null )                               |
-| `void`                                       | [`clear_tabs`](#class_tabbar_method_clear_tabs) ( )                                                                                                                 |
-| `void`                                       | [`ensure_tab_visible`](#class_tabbar_method_ensure_tab_visible) ( idx: [`int`](class_int.md) )                                                                      |
-| [`bool`](class_bool.md)                      | [`get_offset_buttons_visible`](#class_tabbar_method_get_offset_buttons_visible) ( ) const[^const]                                                                   |
-| [`int`](class_int.md)                        | [`get_previous_tab`](#class_tabbar_method_get_previous_tab) ( ) const[^const]                                                                                       |
-| [`Texture2D`](class_texture2d.md)            | [`get_tab_button_icon`](#class_tabbar_method_get_tab_button_icon) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                  |
-| [`Texture2D`](class_texture2d.md)            | [`get_tab_icon`](#class_tabbar_method_get_tab_icon) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                                |
-| [`int`](class_int.md)                        | [`get_tab_icon_max_width`](#class_tabbar_method_get_tab_icon_max_width) ( tab_idx: [`int`](class_int.md) ) const[^const]                                            |
-| [`int`](class_int.md)                        | [`get_tab_idx_at_point`](#class_tabbar_method_get_tab_idx_at_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                          |
-| [`String`](class_string.md)                  | [`get_tab_language`](#class_tabbar_method_get_tab_language) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                        |
-| [`Variant`](class_variant.md)                | [`get_tab_metadata`](#class_tabbar_method_get_tab_metadata) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                        |
-| [`int`](class_int.md)                        | [`get_tab_offset`](#class_tabbar_method_get_tab_offset) ( ) const[^const]                                                                                           |
-| [`Rect2`](class_rect2.md)                    | [`get_tab_rect`](#class_tabbar_method_get_tab_rect) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                                |
-| [TextDirection](#enum_control_textdirection) | [`get_tab_text_direction`](#class_tabbar_method_get_tab_text_direction) ( tab_idx: [`int`](class_int.md) ) const[^const]                                            |
-| [`String`](class_string.md)                  | [`get_tab_title`](#class_tabbar_method_get_tab_title) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                              |
-| [`String`](class_string.md)                  | [`get_tab_tooltip`](#class_tabbar_method_get_tab_tooltip) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                          |
-| [`bool`](class_bool.md)                      | [`is_tab_disabled`](#class_tabbar_method_is_tab_disabled) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                          |
-| [`bool`](class_bool.md)                      | [`is_tab_hidden`](#class_tabbar_method_is_tab_hidden) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                              |
-| `void`                                       | [`move_tab`](#class_tabbar_method_move_tab) ( from: [`int`](class_int.md), to: [`int`](class_int.md) )                                                              |
-| `void`                                       | [`remove_tab`](#class_tabbar_method_remove_tab) ( tab_idx: [`int`](class_int.md) )                                                                                  |
-| [`bool`](class_bool.md)                      | [`select_next_available`](#class_tabbar_method_select_next_available) ( )                                                                                           |
-| [`bool`](class_bool.md)                      | [`select_previous_available`](#class_tabbar_method_select_previous_available) ( )                                                                                   |
-| `void`                                       | [`set_tab_button_icon`](#class_tabbar_method_set_tab_button_icon) ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                       |
-| `void`                                       | [`set_tab_disabled`](#class_tabbar_method_set_tab_disabled) ( tab_idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                   |
-| `void`                                       | [`set_tab_hidden`](#class_tabbar_method_set_tab_hidden) ( tab_idx: [`int`](class_int.md), hidden: [`bool`](class_bool.md) )                                         |
-| `void`                                       | [`set_tab_icon`](#class_tabbar_method_set_tab_icon) ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                                     |
-| `void`                                       | [`set_tab_icon_max_width`](#class_tabbar_method_set_tab_icon_max_width) ( tab_idx: [`int`](class_int.md), width: [`int`](class_int.md) )                            |
-| `void`                                       | [`set_tab_language`](#class_tabbar_method_set_tab_language) ( tab_idx: [`int`](class_int.md), language: [`String`](class_string.md) )                               |
-| `void`                                       | [`set_tab_metadata`](#class_tabbar_method_set_tab_metadata) ( tab_idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                             |
-| `void`                                       | [`set_tab_text_direction`](#class_tabbar_method_set_tab_text_direction) ( tab_idx: [`int`](class_int.md), direction: [TextDirection](#enum_control_textdirection) ) |
-| `void`                                       | [`set_tab_title`](#class_tabbar_method_set_tab_title) ( tab_idx: [`int`](class_int.md), title: [`String`](class_string.md) )                                        |
-| `void`                                       | [`set_tab_tooltip`](#class_tabbar_method_set_tab_tooltip) ( tab_idx: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                  |
+| `void`                                       | [`add_tab`](class_tabbar.md#class_tabbar_method_add_tab) ( title: [`String`](class_string.md) = "", icon: [`Texture2D`](class_texture2d.md) = null )                               |
+| `void`                                       | [`clear_tabs`](class_tabbar.md#class_tabbar_method_clear_tabs) ( )                                                                                                                 |
+| `void`                                       | [`ensure_tab_visible`](class_tabbar.md#class_tabbar_method_ensure_tab_visible) ( idx: [`int`](class_int.md) )                                                                      |
+| [`bool`](class_bool.md)                      | [`get_offset_buttons_visible`](class_tabbar.md#class_tabbar_method_get_offset_buttons_visible) ( ) const[^const]                                                                   |
+| [`int`](class_int.md)                        | [`get_previous_tab`](class_tabbar.md#class_tabbar_method_get_previous_tab) ( ) const[^const]                                                                                       |
+| [`Texture2D`](class_texture2d.md)            | [`get_tab_button_icon`](class_tabbar.md#class_tabbar_method_get_tab_button_icon) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                  |
+| [`Texture2D`](class_texture2d.md)            | [`get_tab_icon`](class_tabbar.md#class_tabbar_method_get_tab_icon) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                                |
+| [`int`](class_int.md)                        | [`get_tab_icon_max_width`](class_tabbar.md#class_tabbar_method_get_tab_icon_max_width) ( tab_idx: [`int`](class_int.md) ) const[^const]                                            |
+| [`int`](class_int.md)                        | [`get_tab_idx_at_point`](class_tabbar.md#class_tabbar_method_get_tab_idx_at_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                          |
+| [`String`](class_string.md)                  | [`get_tab_language`](class_tabbar.md#class_tabbar_method_get_tab_language) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                        |
+| [`Variant`](class_variant.md)                | [`get_tab_metadata`](class_tabbar.md#class_tabbar_method_get_tab_metadata) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                        |
+| [`int`](class_int.md)                        | [`get_tab_offset`](class_tabbar.md#class_tabbar_method_get_tab_offset) ( ) const[^const]                                                                                           |
+| [`Rect2`](class_rect2.md)                    | [`get_tab_rect`](class_tabbar.md#class_tabbar_method_get_tab_rect) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                                |
+| [TextDirection](#enum_control_textdirection) | [`get_tab_text_direction`](class_tabbar.md#class_tabbar_method_get_tab_text_direction) ( tab_idx: [`int`](class_int.md) ) const[^const]                                            |
+| [`String`](class_string.md)                  | [`get_tab_title`](class_tabbar.md#class_tabbar_method_get_tab_title) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                              |
+| [`String`](class_string.md)                  | [`get_tab_tooltip`](class_tabbar.md#class_tabbar_method_get_tab_tooltip) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                          |
+| [`bool`](class_bool.md)                      | [`is_tab_disabled`](class_tabbar.md#class_tabbar_method_is_tab_disabled) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                          |
+| [`bool`](class_bool.md)                      | [`is_tab_hidden`](class_tabbar.md#class_tabbar_method_is_tab_hidden) ( tab_idx: [`int`](class_int.md) ) const[^const]                                                              |
+| `void`                                       | [`move_tab`](class_tabbar.md#class_tabbar_method_move_tab) ( from: [`int`](class_int.md), to: [`int`](class_int.md) )                                                              |
+| `void`                                       | [`remove_tab`](class_tabbar.md#class_tabbar_method_remove_tab) ( tab_idx: [`int`](class_int.md) )                                                                                  |
+| [`bool`](class_bool.md)                      | [`select_next_available`](class_tabbar.md#class_tabbar_method_select_next_available) ( )                                                                                           |
+| [`bool`](class_bool.md)                      | [`select_previous_available`](class_tabbar.md#class_tabbar_method_select_previous_available) ( )                                                                                   |
+| `void`                                       | [`set_tab_button_icon`](class_tabbar.md#class_tabbar_method_set_tab_button_icon) ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                       |
+| `void`                                       | [`set_tab_disabled`](class_tabbar.md#class_tabbar_method_set_tab_disabled) ( tab_idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                   |
+| `void`                                       | [`set_tab_hidden`](class_tabbar.md#class_tabbar_method_set_tab_hidden) ( tab_idx: [`int`](class_int.md), hidden: [`bool`](class_bool.md) )                                         |
+| `void`                                       | [`set_tab_icon`](class_tabbar.md#class_tabbar_method_set_tab_icon) ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )                                     |
+| `void`                                       | [`set_tab_icon_max_width`](class_tabbar.md#class_tabbar_method_set_tab_icon_max_width) ( tab_idx: [`int`](class_int.md), width: [`int`](class_int.md) )                            |
+| `void`                                       | [`set_tab_language`](class_tabbar.md#class_tabbar_method_set_tab_language) ( tab_idx: [`int`](class_int.md), language: [`String`](class_string.md) )                               |
+| `void`                                       | [`set_tab_metadata`](class_tabbar.md#class_tabbar_method_set_tab_metadata) ( tab_idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )                             |
+| `void`                                       | [`set_tab_text_direction`](class_tabbar.md#class_tabbar_method_set_tab_text_direction) ( tab_idx: [`int`](class_int.md), direction: [TextDirection](#enum_control_textdirection) ) |
+| `void`                                       | [`set_tab_title`](class_tabbar.md#class_tabbar_method_set_tab_title) ( tab_idx: [`int`](class_int.md), title: [`String`](class_string.md) )                                        |
+| `void`                                       | [`set_tab_tooltip`](class_tabbar.md#class_tabbar_method_set_tab_tooltip) ( tab_idx: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                  |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)         | [`drop_mark_color`](#class_tabbar_theme_color_drop_mark_color)             | ``Color(1, 1, 1, 1)``               |
-| [`Color`](class_color.md)         | [`font_disabled_color`](#class_tabbar_theme_color_font_disabled_color)     | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-| [`Color`](class_color.md)         | [`font_hovered_color`](#class_tabbar_theme_color_font_hovered_color)       | ``Color(0.95, 0.95, 0.95, 1)``      |
-| [`Color`](class_color.md)         | [`font_outline_color`](#class_tabbar_theme_color_font_outline_color)       | ``Color(0, 0, 0, 1)``               |
-| [`Color`](class_color.md)         | [`font_selected_color`](#class_tabbar_theme_color_font_selected_color)     | ``Color(0.95, 0.95, 0.95, 1)``      |
-| [`Color`](class_color.md)         | [`font_unselected_color`](#class_tabbar_theme_color_font_unselected_color) | ``Color(0.7, 0.7, 0.7, 1)``         |
-| [`int`](class_int.md)             | [`h_separation`](#class_tabbar_theme_constant_h_separation)                | ``4``                               |
-| [`int`](class_int.md)             | [`icon_max_width`](#class_tabbar_theme_constant_icon_max_width)            | ``0``                               |
-| [`int`](class_int.md)             | [`outline_size`](#class_tabbar_theme_constant_outline_size)                | ``0``                               |
-| [`Font`](class_font.md)           | [`font`](#class_tabbar_theme_font_font)                                    |                                     |
-| [`int`](class_int.md)             | [`font_size`](#class_tabbar_theme_font_size_font_size)                     |                                     |
-| [`Texture2D`](class_texture2d.md) | [`close`](#class_tabbar_theme_icon_close)                                  |                                     |
-| [`Texture2D`](class_texture2d.md) | [`decrement`](#class_tabbar_theme_icon_decrement)                          |                                     |
-| [`Texture2D`](class_texture2d.md) | [`decrement_highlight`](#class_tabbar_theme_icon_decrement_highlight)      |                                     |
-| [`Texture2D`](class_texture2d.md) | [`drop_mark`](#class_tabbar_theme_icon_drop_mark)                          |                                     |
-| [`Texture2D`](class_texture2d.md) | [`increment`](#class_tabbar_theme_icon_increment)                          |                                     |
-| [`Texture2D`](class_texture2d.md) | [`increment_highlight`](#class_tabbar_theme_icon_increment_highlight)      |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`button_highlight`](#class_tabbar_theme_style_button_highlight)           |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`button_pressed`](#class_tabbar_theme_style_button_pressed)               |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`tab_disabled`](#class_tabbar_theme_style_tab_disabled)                   |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`tab_focus`](#class_tabbar_theme_style_tab_focus)                         |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`tab_hovered`](#class_tabbar_theme_style_tab_hovered)                     |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`tab_selected`](#class_tabbar_theme_style_tab_selected)                   |                                     |
-| [`StyleBox`](class_stylebox.md)   | [`tab_unselected`](#class_tabbar_theme_style_tab_unselected)               |                                     |
+| [`Color`](class_color.md)         | [`drop_mark_color`](class_tabbar.md#class_tabbar_theme_color_drop_mark_color)             | ``Color(1, 1, 1, 1)``               |
+| [`Color`](class_color.md)         | [`font_disabled_color`](class_tabbar.md#class_tabbar_theme_color_font_disabled_color)     | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+| [`Color`](class_color.md)         | [`font_hovered_color`](class_tabbar.md#class_tabbar_theme_color_font_hovered_color)       | ``Color(0.95, 0.95, 0.95, 1)``      |
+| [`Color`](class_color.md)         | [`font_outline_color`](class_tabbar.md#class_tabbar_theme_color_font_outline_color)       | ``Color(0, 0, 0, 1)``               |
+| [`Color`](class_color.md)         | [`font_selected_color`](class_tabbar.md#class_tabbar_theme_color_font_selected_color)     | ``Color(0.95, 0.95, 0.95, 1)``      |
+| [`Color`](class_color.md)         | [`font_unselected_color`](class_tabbar.md#class_tabbar_theme_color_font_unselected_color) | ``Color(0.7, 0.7, 0.7, 1)``         |
+| [`int`](class_int.md)             | [`h_separation`](class_tabbar.md#class_tabbar_theme_constant_h_separation)                | ``4``                               |
+| [`int`](class_int.md)             | [`icon_max_width`](class_tabbar.md#class_tabbar_theme_constant_icon_max_width)            | ``0``                               |
+| [`int`](class_int.md)             | [`outline_size`](class_tabbar.md#class_tabbar_theme_constant_outline_size)                | ``0``                               |
+| [`Font`](class_font.md)           | [`font`](class_tabbar.md#class_tabbar_theme_font_font)                                    |                                     |
+| [`int`](class_int.md)             | [`font_size`](class_tabbar.md#class_tabbar_theme_font_size_font_size)                     |                                     |
+| [`Texture2D`](class_texture2d.md) | [`close`](class_tabbar.md#class_tabbar_theme_icon_close)                                  |                                     |
+| [`Texture2D`](class_texture2d.md) | [`decrement`](class_tabbar.md#class_tabbar_theme_icon_decrement)                          |                                     |
+| [`Texture2D`](class_texture2d.md) | [`decrement_highlight`](class_tabbar.md#class_tabbar_theme_icon_decrement_highlight)      |                                     |
+| [`Texture2D`](class_texture2d.md) | [`drop_mark`](class_tabbar.md#class_tabbar_theme_icon_drop_mark)                          |                                     |
+| [`Texture2D`](class_texture2d.md) | [`increment`](class_tabbar.md#class_tabbar_theme_icon_increment)                          |                                     |
+| [`Texture2D`](class_texture2d.md) | [`increment_highlight`](class_tabbar.md#class_tabbar_theme_icon_increment_highlight)      |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`button_highlight`](class_tabbar.md#class_tabbar_theme_style_button_highlight)           |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`button_pressed`](class_tabbar.md#class_tabbar_theme_style_button_pressed)               |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`tab_disabled`](class_tabbar.md#class_tabbar_theme_style_tab_disabled)                   |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`tab_focus`](class_tabbar.md#class_tabbar_theme_style_tab_focus)                         |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`tab_hovered`](class_tabbar.md#class_tabbar_theme_style_tab_hovered)                     |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`tab_selected`](class_tabbar.md#class_tabbar_theme_style_tab_selected)                   |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`tab_unselected`](class_tabbar.md#class_tabbar_theme_style_tab_unselected)               |                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -109,7 +109,7 @@ A control that provides a horizontal bar with tabs. Similar to [`TabContainer`](
 
 **active_tab_rearranged** ( idx_to: [`int`](class_int.md) ) <div id="class_tabbar_signal_active_tab_rearranged"></div>
 
-Emitted when the active tab is rearranged via mouse drag. See [`drag_to_rearrange_enabled`](#class_tabbar_property_drag_to_rearrange_enabled).
+Emitted when the active tab is rearranged via mouse drag. See [`drag_to_rearrange_enabled`](class_tabbar.md#class_tabbar_property_drag_to_rearrange_enabled).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -119,7 +119,7 @@ Emitted when the active tab is rearranged via mouse drag. See [`drag_to_rearrang
 
 **tab_button_pressed** ( tab: [`int`](class_int.md) ) <div id="class_tabbar_signal_tab_button_pressed"></div>
 
-Emitted when a tab's right button is pressed. See [`set_tab_button_icon`](#class_tabbar_method_set_tab_button_icon).
+Emitted when a tab's right button is pressed. See [`set_tab_button_icon`](class_tabbar.md#class_tabbar_method_set_tab_button_icon).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -189,7 +189,7 @@ Emitted when a tab is hovered by the mouse.
 
 **tab_rmb_clicked** ( tab: [`int`](class_int.md) ) <div id="class_tabbar_signal_tab_rmb_clicked"></div>
 
-Emitted when a tab is right-clicked. [`select_with_rmb`](#class_tabbar_property_select_with_rmb) must be enabled.
+Emitted when a tab is right-clicked. [`select_with_rmb`](class_tabbar.md#class_tabbar_property_select_with_rmb) must be enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -293,7 +293,7 @@ If `true`, tabs overflowing this node's width will be hidden, displaying two nav
 - `void` **set_current_tab** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_current_tab** ( )
 
-The index of the current selected tab. A value of `-1` means that no tab is selected and can only be set when [`deselect_enabled`](#class_tabbar_property_deselect_enabled) is `true` or if all tabs are hidden or disabled.
+The index of the current selected tab. A value of `-1` means that no tab is selected and can only be set when [`deselect_enabled`](class_tabbar.md#class_tabbar_property_deselect_enabled) is `true` or if all tabs are hidden or disabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -423,7 +423,7 @@ The number of tabs currently in the bar.
 - `void` **set_tabs_rearrange_group** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_tabs_rearrange_group** ( )
 
-**TabBar** s with the same rearrange group ID will allow dragging the tabs between them. Enable drag with [`drag_to_rearrange_enabled`](#class_tabbar_property_drag_to_rearrange_enabled).
+**TabBar** s with the same rearrange group ID will allow dragging the tabs between them. Enable drag with [`drag_to_rearrange_enabled`](class_tabbar.md#class_tabbar_property_drag_to_rearrange_enabled).
 
 Setting this to `-1` will disable rearranging between **TabBar** s.
 
@@ -537,7 +537,7 @@ Returns tab title language code.
 
 [`Variant`](class_variant.md) **get_tab_metadata** ( tab_idx: [`int`](class_int.md) ) const[^const]<div id="class_tabbar_method_get_tab_metadata"></div>
 
-Returns the metadata value set to the tab at index `tab_idx` using [`set_tab_metadata`](#class_tabbar_method_set_tab_metadata). If no metadata was previously set, returns `null` by default.
+Returns the metadata value set to the tab at index `tab_idx` using [`set_tab_metadata`](class_tabbar.md#class_tabbar_method_set_tab_metadata). If no metadata was previously set, returns `null` by default.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -657,7 +657,7 @@ Selects the first available tab with lower index than the currently selected. Re
 
 `void` **set_tab_button_icon** ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )<div id="class_tabbar_method_set_tab_button_icon"></div>
 
-Sets an `icon` for the button of the tab at index `tab_idx` (located to the right, before the close button), making it visible and clickable (See [`tab_button_pressed`](#class_tabbar_signal_tab_button_pressed)). Giving it a `null` value will hide the button.
+Sets an `icon` for the button of the tab at index `tab_idx` (located to the right, before the close button), making it visible and clickable (See [`tab_button_pressed`](class_tabbar.md#class_tabbar_signal_tab_button_pressed)). Giving it a `null` value will hide the button.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -697,7 +697,7 @@ Sets an `icon` for the tab at index `tab_idx`.
 
 `void` **set_tab_icon_max_width** ( tab_idx: [`int`](class_int.md), width: [`int`](class_int.md) )<div id="class_tabbar_method_set_tab_icon_max_width"></div>
 
-Sets the maximum allowed width of the icon for the tab at index `tab_idx`. This limit is applied on top of the default size of the icon and on top of [`icon_max_width`](#class_tabbar_theme_constant_icon_max_width). The height is adjusted according to the icon's ratio.
+Sets the maximum allowed width of the icon for the tab at index `tab_idx`. This limit is applied on top of the default size of the icon and on top of [`icon_max_width`](class_tabbar.md#class_tabbar_theme_constant_icon_max_width). The height is adjusted according to the icon's ratio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -717,7 +717,7 @@ Sets language code of tab title used for line-breaking and text shaping algorith
 
 `void` **set_tab_metadata** ( tab_idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )<div id="class_tabbar_method_set_tab_metadata"></div>
 
-Sets the metadata value for the tab at index `tab_idx`, which can be retrieved later using [`get_tab_metadata`](#class_tabbar_method_get_tab_metadata).
+Sets the metadata value for the tab at index `tab_idx`, which can be retrieved later using [`get_tab_metadata`](class_tabbar.md#class_tabbar_method_get_tab_metadata).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -761,7 +761,7 @@ Sets a `tooltip` for tab at index `tab_idx`.
 
 [`Color`](class_color.md) **drop_mark_color** = ``Color(1, 1, 1, 1)`` <div id="class_tabbar_theme_color_drop_mark_color"></div>
 
-Modulation color for the [`drop_mark`](#class_tabbar_theme_icon_drop_mark) icon.
+Modulation color for the [`drop_mark`](class_tabbar.md#class_tabbar_theme_icon_drop_mark) icon.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -831,7 +831,7 @@ The horizontal separation between the elements inside tabs.
 
 [`int`](class_int.md) **icon_max_width** = ``0`` <div id="class_tabbar_theme_constant_icon_max_width"></div>
 
-The maximum allowed width of the tab's icon. This limit is applied on top of the default size of the icon, but before the value set with [`set_tab_icon_max_width`](#class_tabbar_method_set_tab_icon_max_width). The height is adjusted according to the icon's ratio.
+The maximum allowed width of the tab's icon. This limit is applied on top of the default size of the icon, but before the value set with [`set_tab_icon_max_width`](class_tabbar.md#class_tabbar_method_set_tab_icon_max_width). The height is adjusted according to the icon's ratio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -843,7 +843,7 @@ The maximum allowed width of the tab's icon. This limit is applied on top of the
 
 The size of the tab text outline.
 
- **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](#class_tabbar_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+ **Note:** If using a font with [`FontFile.multichannel_signed_distance_field`](class_fontfile.md#class_fontfile_property_multichannel_signed_distance_field) enabled, its [`FontFile.msdf_pixel_range`](class_fontfile.md#class_fontfile_property_msdf_pixel_range) must be set to at least *twice* the value of [`outline_size`](class_tabbar.md#class_tabbar_theme_constant_outline_size) for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -873,7 +873,7 @@ Font size of the tab names.
 
 [`Texture2D`](class_texture2d.md) **close** <div id="class_tabbar_theme_icon_close"></div>
 
-The icon for the close button (see [`tab_close_display_policy`](#class_tabbar_property_tab_close_display_policy)).
+The icon for the close button (see [`tab_close_display_policy`](class_tabbar.md#class_tabbar_property_tab_close_display_policy)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -903,7 +903,7 @@ Icon for the left arrow button that appears when there are too many tabs to fit 
 
 [`Texture2D`](class_texture2d.md) **drop_mark** <div id="class_tabbar_theme_icon_drop_mark"></div>
 
-Icon shown to indicate where a dragged tab is gonna be dropped (see [`drag_to_rearrange_enabled`](#class_tabbar_property_drag_to_rearrange_enabled)).
+Icon shown to indicate where a dragged tab is gonna be dropped (see [`drag_to_rearrange_enabled`](class_tabbar.md#class_tabbar_property_drag_to_rearrange_enabled)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -963,7 +963,7 @@ The style of disabled tabs.
 
 [`StyleBox`](class_stylebox.md) **tab_focus** <div id="class_tabbar_theme_style_tab_focus"></div>
 
-[`StyleBox`](class_stylebox.md) used when the **TabBar** is focused. The [`tab_focus`](#class_tabbar_theme_style_tab_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md) of the selected tab, so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+[`StyleBox`](class_stylebox.md) used when the **TabBar** is focused. The [`tab_focus`](class_tabbar.md#class_tabbar_theme_style_tab_focus) [`StyleBox`](class_stylebox.md) is displayed *over* the base [`StyleBox`](class_stylebox.md) of the selected tab, so a partially transparent [`StyleBox`](class_stylebox.md) should be used to ensure the base [`StyleBox`](class_stylebox.md) remains visible. A [`StyleBox`](class_stylebox.md) that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a [`StyleBoxEmpty`](class_styleboxempty.md) resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -975,7 +975,7 @@ The style of disabled tabs.
 
 The style of the currently hovered tab. Does not apply to the selected tab.
 
- **Note:** This style will be drawn with the same width as [`tab_unselected`](#class_tabbar_theme_style_tab_unselected) at minimum.
+ **Note:** This style will be drawn with the same width as [`tab_unselected`](class_tabbar.md#class_tabbar_theme_style_tab_unselected) at minimum.
 
 <!-- rst-class:: classref-item-separator -->
 

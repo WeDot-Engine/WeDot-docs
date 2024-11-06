@@ -15,13 +15,13 @@ Represents a panning touch gesture.
 
 Stores information about pan gestures. A pan gesture is performed when the user swipes the touch screen with two fingers. It's typically used for panning/scrolling.
 
- **Note:** On Android, this requires the [`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures`](#class_projectsettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures) project setting to be enabled.
+ **Note:** On Android, this requires the [`ProjectSettings.input_devices/pointing/android/enable_pan_and_scale_gestures`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures) project setting to be enabled.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`delta`](#class_inputeventpangesture_property_delta) | ``Vector2(0, 0)`` |
+| [`Vector2`](class_vector2.md) | [`delta`](class_inputeventpangesture.md#class_inputeventpangesture_property_delta) | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 

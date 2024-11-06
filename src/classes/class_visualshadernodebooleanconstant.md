@@ -21,7 +21,7 @@ Translated to `bool` in the shader language.
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`constant`](#class_visualshadernodebooleanconstant_property_constant) | ``false`` |
+| [`bool`](class_bool.md) | [`constant`](class_visualshadernodebooleanconstant.md#class_visualshadernodebooleanconstant_property_constant) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

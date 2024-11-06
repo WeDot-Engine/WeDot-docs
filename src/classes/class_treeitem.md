@@ -15,7 +15,7 @@ An internal control for a single item inside [`Tree`](class_tree.md).
 
 A single item of a [`Tree`](class_tree.md) control. It can contain other **TreeItem** s as children, which allows it to create a hierarchy. It can also contain text and buttons. **TreeItem** is not a [`Node`](class_node.md), it is internal to the [`Tree`](class_tree.md).
 
-To create a **TreeItem**, use [`Tree.create_item`](#class_tree_method_create_item) or [`create_child`](#class_treeitem_method_create_child). To remove a **TreeItem**, use [`Object.free`](#class_object_method_free).
+To create a **TreeItem**, use [`Tree.create_item`](class_tree.md#class_tree_method_create_item) or [`create_child`](class_treeitem.md#class_treeitem_method_create_child). To remove a **TreeItem**, use [`Object.free`](class_object.md#class_object_method_free).
 
  **Note:** The ID values used for buttons are 32-bit, unlike [`int`](class_int.md) which is always 64-bit. They go from `-2147483648` to `2147483647`.
 
@@ -23,118 +23,118 @@ To create a **TreeItem**, use [`Tree.create_item`](#class_tree_method_create_ite
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`collapsed`](#class_treeitem_property_collapsed)                         |
-| [`int`](class_int.md)   | [`custom_minimum_height`](#class_treeitem_property_custom_minimum_height) |
-| [`bool`](class_bool.md) | [`disable_folding`](#class_treeitem_property_disable_folding)             |
-| [`bool`](class_bool.md) | [`visible`](#class_treeitem_property_visible)                             |
+| [`bool`](class_bool.md) | [`collapsed`](class_treeitem.md#class_treeitem_property_collapsed)                         |
+| [`int`](class_int.md)   | [`custom_minimum_height`](class_treeitem.md#class_treeitem_property_custom_minimum_height) |
+| [`bool`](class_bool.md) | [`disable_folding`](class_treeitem.md#class_treeitem_property_disable_folding)             |
+| [`bool`](class_bool.md) | [`visible`](class_treeitem.md#class_treeitem_property_visible)                             |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                        | [`add_button`](#class_treeitem_method_add_button) ( column: [`int`](class_int.md), button: [`Texture2D`](class_texture2d.md), id: [`int`](class_int.md) = -1, disabled: [`bool`](class_bool.md) = false, tooltip_text: [`String`](class_string.md) = "" ) |
-| `void`                                                        | [`add_child`](#class_treeitem_method_add_child) ( child: [`TreeItem`](class_treeitem.md) )                                                                                                                                                                |
-| `void`                                                        | [`call_recursive`](#class_treeitem_method_call_recursive) ( method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                                                            |
-| `void`                                                        | [`clear_custom_bg_color`](#class_treeitem_method_clear_custom_bg_color) ( column: [`int`](class_int.md) )                                                                                                                                                 |
-| `void`                                                        | [`clear_custom_color`](#class_treeitem_method_clear_custom_color) ( column: [`int`](class_int.md) )                                                                                                                                                       |
-| [`TreeItem`](class_treeitem.md)                               | [`create_child`](#class_treeitem_method_create_child) ( index: [`int`](class_int.md) = -1 )                                                                                                                                                               |
-| `void`                                                        | [`deselect`](#class_treeitem_method_deselect) ( column: [`int`](class_int.md) )                                                                                                                                                                           |
-| `void`                                                        | [`erase_button`](#class_treeitem_method_erase_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) )                                                                                                                              |
-| [AutowrapMode](#enum_textserver_autowrapmode)                 | [`get_autowrap_mode`](#class_treeitem_method_get_autowrap_mode) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
-| [`Texture2D`](class_texture2d.md)                             | [`get_button`](#class_treeitem_method_get_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                                                    |
-| [`int`](class_int.md)                                         | [`get_button_by_id`](#class_treeitem_method_get_button_by_id) ( column: [`int`](class_int.md), id: [`int`](class_int.md) ) const[^const]                                                                                                                  |
-| [`Color`](class_color.md)                                     | [`get_button_color`](#class_treeitem_method_get_button_color) ( column: [`int`](class_int.md), id: [`int`](class_int.md) ) const[^const]                                                                                                                  |
-| [`int`](class_int.md)                                         | [`get_button_count`](#class_treeitem_method_get_button_count) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
-| [`int`](class_int.md)                                         | [`get_button_id`](#class_treeitem_method_get_button_id) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                                              |
-| [`String`](class_string.md)                                   | [`get_button_tooltip_text`](#class_treeitem_method_get_button_tooltip_text) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                          |
-| [TreeCellMode](#enum_treeitem_treecellmode)                   | [`get_cell_mode`](#class_treeitem_method_get_cell_mode) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                   |
-| [`TreeItem`](class_treeitem.md)                               | [`get_child`](#class_treeitem_method_get_child) ( index: [`int`](class_int.md) )                                                                                                                                                                          |
-| [`int`](class_int.md)                                         | [`get_child_count`](#class_treeitem_method_get_child_count) ( )                                                                                                                                                                                           |
-| [Array](class_array.md) [`TreeItem`](class_treeitem.md)       | [`get_children`](#class_treeitem_method_get_children) ( )                                                                                                                                                                                                 |
-| [`Color`](class_color.md)                                     | [`get_custom_bg_color`](#class_treeitem_method_get_custom_bg_color) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                       |
-| [`Color`](class_color.md)                                     | [`get_custom_color`](#class_treeitem_method_get_custom_color) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
-| [`Callable`](class_callable.md)                               | [`get_custom_draw_callback`](#class_treeitem_method_get_custom_draw_callback) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                             |
-| [`Font`](class_font.md)                                       | [`get_custom_font`](#class_treeitem_method_get_custom_font) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
-| [`int`](class_int.md)                                         | [`get_custom_font_size`](#class_treeitem_method_get_custom_font_size) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                     |
-| [`bool`](class_bool.md)                                       | [`get_expand_right`](#class_treeitem_method_get_expand_right) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
-| [`TreeItem`](class_treeitem.md)                               | [`get_first_child`](#class_treeitem_method_get_first_child) ( ) const[^const]                                                                                                                                                                             |
-| [`Texture2D`](class_texture2d.md)                             | [`get_icon`](#class_treeitem_method_get_icon) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                             |
-| [`int`](class_int.md)                                         | [`get_icon_max_width`](#class_treeitem_method_get_icon_max_width) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                         |
-| [`Color`](class_color.md)                                     | [`get_icon_modulate`](#class_treeitem_method_get_icon_modulate) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
-| [`Rect2`](class_rect2.md)                                     | [`get_icon_region`](#class_treeitem_method_get_icon_region) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
-| [`int`](class_int.md)                                         | [`get_index`](#class_treeitem_method_get_index) ( )                                                                                                                                                                                                       |
-| [`String`](class_string.md)                                   | [`get_language`](#class_treeitem_method_get_language) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                     |
-| [`Variant`](class_variant.md)                                 | [`get_metadata`](#class_treeitem_method_get_metadata) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                     |
-| [`TreeItem`](class_treeitem.md)                               | [`get_next`](#class_treeitem_method_get_next) ( ) const[^const]                                                                                                                                                                                           |
-| [`TreeItem`](class_treeitem.md)                               | [`get_next_in_tree`](#class_treeitem_method_get_next_in_tree) ( wrap: [`bool`](class_bool.md) = false )                                                                                                                                                   |
-| [`TreeItem`](class_treeitem.md)                               | [`get_next_visible`](#class_treeitem_method_get_next_visible) ( wrap: [`bool`](class_bool.md) = false )                                                                                                                                                   |
-| [`TreeItem`](class_treeitem.md)                               | [`get_parent`](#class_treeitem_method_get_parent) ( ) const[^const]                                                                                                                                                                                       |
-| [`TreeItem`](class_treeitem.md)                               | [`get_prev`](#class_treeitem_method_get_prev) ( )                                                                                                                                                                                                         |
-| [`TreeItem`](class_treeitem.md)                               | [`get_prev_in_tree`](#class_treeitem_method_get_prev_in_tree) ( wrap: [`bool`](class_bool.md) = false )                                                                                                                                                   |
-| [`TreeItem`](class_treeitem.md)                               | [`get_prev_visible`](#class_treeitem_method_get_prev_visible) ( wrap: [`bool`](class_bool.md) = false )                                                                                                                                                   |
-| [`float`](class_float.md)                                     | [`get_range`](#class_treeitem_method_get_range) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                           |
-| [`Dictionary`](class_dictionary.md)                           | [`get_range_config`](#class_treeitem_method_get_range_config) ( column: [`int`](class_int.md) )                                                                                                                                                           |
-| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`get_structured_text_bidi_override`](#class_treeitem_method_get_structured_text_bidi_override) ( column: [`int`](class_int.md) ) const[^const]                                                                                                           |
-| [`Array`](class_array.md)                                     | [`get_structured_text_bidi_override_options`](#class_treeitem_method_get_structured_text_bidi_override_options) ( column: [`int`](class_int.md) ) const[^const]                                                                                           |
-| [`String`](class_string.md)                                   | [`get_suffix`](#class_treeitem_method_get_suffix) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                         |
-| [`String`](class_string.md)                                   | [`get_text`](#class_treeitem_method_get_text) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                             |
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`get_text_alignment`](#class_treeitem_method_get_text_alignment) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                         |
-| [TextDirection](#enum_control_textdirection)                  | [`get_text_direction`](#class_treeitem_method_get_text_direction) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                         |
-| [OverrunBehavior](#enum_textserver_overrunbehavior)           | [`get_text_overrun_behavior`](#class_treeitem_method_get_text_overrun_behavior) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                           |
-| [`String`](class_string.md)                                   | [`get_tooltip_text`](#class_treeitem_method_get_tooltip_text) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
-| [`Tree`](class_tree.md)                                       | [`get_tree`](#class_treeitem_method_get_tree) ( ) const[^const]                                                                                                                                                                                           |
-| [`bool`](class_bool.md)                                       | [`is_any_collapsed`](#class_treeitem_method_is_any_collapsed) ( only_visible: [`bool`](class_bool.md) = false )                                                                                                                                           |
-| [`bool`](class_bool.md)                                       | [`is_button_disabled`](#class_treeitem_method_is_button_disabled) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                                    |
-| [`bool`](class_bool.md)                                       | [`is_checked`](#class_treeitem_method_is_checked) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                         |
-| [`bool`](class_bool.md)                                       | [`is_custom_set_as_button`](#class_treeitem_method_is_custom_set_as_button) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                               |
-| [`bool`](class_bool.md)                                       | [`is_edit_multiline`](#class_treeitem_method_is_edit_multiline) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
-| [`bool`](class_bool.md)                                       | [`is_editable`](#class_treeitem_method_is_editable) ( column: [`int`](class_int.md) )                                                                                                                                                                     |
-| [`bool`](class_bool.md)                                       | [`is_indeterminate`](#class_treeitem_method_is_indeterminate) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
-| [`bool`](class_bool.md)                                       | [`is_selectable`](#class_treeitem_method_is_selectable) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                   |
-| [`bool`](class_bool.md)                                       | [`is_selected`](#class_treeitem_method_is_selected) ( column: [`int`](class_int.md) )                                                                                                                                                                     |
-| [`bool`](class_bool.md)                                       | [`is_visible_in_tree`](#class_treeitem_method_is_visible_in_tree) ( ) const[^const]                                                                                                                                                                       |
-| `void`                                                        | [`move_after`](#class_treeitem_method_move_after) ( item: [`TreeItem`](class_treeitem.md) )                                                                                                                                                               |
-| `void`                                                        | [`move_before`](#class_treeitem_method_move_before) ( item: [`TreeItem`](class_treeitem.md) )                                                                                                                                                             |
-| `void`                                                        | [`propagate_check`](#class_treeitem_method_propagate_check) ( column: [`int`](class_int.md), emit_signal: [`bool`](class_bool.md) = true )                                                                                                                |
-| `void`                                                        | [`remove_child`](#class_treeitem_method_remove_child) ( child: [`TreeItem`](class_treeitem.md) )                                                                                                                                                          |
-| `void`                                                        | [`select`](#class_treeitem_method_select) ( column: [`int`](class_int.md) )                                                                                                                                                                               |
-| `void`                                                        | [`set_autowrap_mode`](#class_treeitem_method_set_autowrap_mode) ( column: [`int`](class_int.md), autowrap_mode: [AutowrapMode](#enum_textserver_autowrapmode) )                                                                                           |
-| `void`                                                        | [`set_button`](#class_treeitem_method_set_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), button: [`Texture2D`](class_texture2d.md) )                                                                                       |
-| `void`                                                        | [`set_button_color`](#class_treeitem_method_set_button_color) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                    |
-| `void`                                                        | [`set_button_disabled`](#class_treeitem_method_set_button_disabled) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                             |
-| `void`                                                        | [`set_button_tooltip_text`](#class_treeitem_method_set_button_tooltip_text) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                                                  |
-| `void`                                                        | [`set_cell_mode`](#class_treeitem_method_set_cell_mode) ( column: [`int`](class_int.md), mode: [TreeCellMode](#enum_treeitem_treecellmode) )                                                                                                              |
-| `void`                                                        | [`set_checked`](#class_treeitem_method_set_checked) ( column: [`int`](class_int.md), checked: [`bool`](class_bool.md) )                                                                                                                                   |
-| `void`                                                        | [`set_collapsed_recursive`](#class_treeitem_method_set_collapsed_recursive) ( enable: [`bool`](class_bool.md) )                                                                                                                                           |
-| `void`                                                        | [`set_custom_as_button`](#class_treeitem_method_set_custom_as_button) ( column: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                  |
-| `void`                                                        | [`set_custom_bg_color`](#class_treeitem_method_set_custom_bg_color) ( column: [`int`](class_int.md), color: [`Color`](class_color.md), just_outline: [`bool`](class_bool.md) = false )                                                                    |
-| `void`                                                        | [`set_custom_color`](#class_treeitem_method_set_custom_color) ( column: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                         |
-| `void`                                                        | [`set_custom_draw`](#class_treeitem_method_set_custom_draw) ( column: [`int`](class_int.md), object: [`Object`](class_object.md), callback: [`StringName`](class_stringname.md) )                                                                         |
-| `void`                                                        | [`set_custom_draw_callback`](#class_treeitem_method_set_custom_draw_callback) ( column: [`int`](class_int.md), callback: [`Callable`](class_callable.md) )                                                                                                |
-| `void`                                                        | [`set_custom_font`](#class_treeitem_method_set_custom_font) ( column: [`int`](class_int.md), font: [`Font`](class_font.md) )                                                                                                                              |
-| `void`                                                        | [`set_custom_font_size`](#class_treeitem_method_set_custom_font_size) ( column: [`int`](class_int.md), font_size: [`int`](class_int.md) )                                                                                                                 |
-| `void`                                                        | [`set_edit_multiline`](#class_treeitem_method_set_edit_multiline) ( column: [`int`](class_int.md), multiline: [`bool`](class_bool.md) )                                                                                                                   |
-| `void`                                                        | [`set_editable`](#class_treeitem_method_set_editable) ( column: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )                                                                                                                                 |
-| `void`                                                        | [`set_expand_right`](#class_treeitem_method_set_expand_right) ( column: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                          |
-| `void`                                                        | [`set_icon`](#class_treeitem_method_set_icon) ( column: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )                                                                                                                               |
-| `void`                                                        | [`set_icon_max_width`](#class_treeitem_method_set_icon_max_width) ( column: [`int`](class_int.md), width: [`int`](class_int.md) )                                                                                                                         |
-| `void`                                                        | [`set_icon_modulate`](#class_treeitem_method_set_icon_modulate) ( column: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                                                                                                    |
-| `void`                                                        | [`set_icon_region`](#class_treeitem_method_set_icon_region) ( column: [`int`](class_int.md), region: [`Rect2`](class_rect2.md) )                                                                                                                          |
-| `void`                                                        | [`set_indeterminate`](#class_treeitem_method_set_indeterminate) ( column: [`int`](class_int.md), indeterminate: [`bool`](class_bool.md) )                                                                                                                 |
-| `void`                                                        | [`set_language`](#class_treeitem_method_set_language) ( column: [`int`](class_int.md), language: [`String`](class_string.md) )                                                                                                                            |
-| `void`                                                        | [`set_metadata`](#class_treeitem_method_set_metadata) ( column: [`int`](class_int.md), meta: [`Variant`](class_variant.md) )                                                                                                                              |
-| `void`                                                        | [`set_range`](#class_treeitem_method_set_range) ( column: [`int`](class_int.md), value: [`float`](class_float.md) )                                                                                                                                       |
-| `void`                                                        | [`set_range_config`](#class_treeitem_method_set_range_config) ( column: [`int`](class_int.md), min: [`float`](class_float.md), max: [`float`](class_float.md), step: [`float`](class_float.md), expr: [`bool`](class_bool.md) = false )                   |
-| `void`                                                        | [`set_selectable`](#class_treeitem_method_set_selectable) ( column: [`int`](class_int.md), selectable: [`bool`](class_bool.md) )                                                                                                                          |
-| `void`                                                        | [`set_structured_text_bidi_override`](#class_treeitem_method_set_structured_text_bidi_override) ( column: [`int`](class_int.md), parser: [StructuredTextParser](#enum_textserver_structuredtextparser) )                                                  |
-| `void`                                                        | [`set_structured_text_bidi_override_options`](#class_treeitem_method_set_structured_text_bidi_override_options) ( column: [`int`](class_int.md), args: [`Array`](class_array.md) )                                                                        |
-| `void`                                                        | [`set_suffix`](#class_treeitem_method_set_suffix) ( column: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                                                    |
-| `void`                                                        | [`set_text`](#class_treeitem_method_set_text) ( column: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                                                        |
-| `void`                                                        | [`set_text_alignment`](#class_treeitem_method_set_text_alignment) ( column: [`int`](class_int.md), text_alignment: [HorizontalAlignment](#enum_@globalscope_horizontalalignment) )                                                                        |
-| `void`                                                        | [`set_text_direction`](#class_treeitem_method_set_text_direction) ( column: [`int`](class_int.md), direction: [TextDirection](#enum_control_textdirection) )                                                                                              |
-| `void`                                                        | [`set_text_overrun_behavior`](#class_treeitem_method_set_text_overrun_behavior) ( column: [`int`](class_int.md), overrun_behavior: [OverrunBehavior](#enum_textserver_overrunbehavior) )                                                                  |
-| `void`                                                        | [`set_tooltip_text`](#class_treeitem_method_set_tooltip_text) ( column: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                                                                                                     |
-| `void`                                                        | [`uncollapse_tree`](#class_treeitem_method_uncollapse_tree) ( )                                                                                                                                                                                           |
+| `void`                                                        | [`add_button`](class_treeitem.md#class_treeitem_method_add_button) ( column: [`int`](class_int.md), button: [`Texture2D`](class_texture2d.md), id: [`int`](class_int.md) = -1, disabled: [`bool`](class_bool.md) = false, tooltip_text: [`String`](class_string.md) = "" ) |
+| `void`                                                        | [`add_child`](class_treeitem.md#class_treeitem_method_add_child) ( child: [`TreeItem`](class_treeitem.md) )                                                                                                                                                                |
+| `void`                                                        | [`call_recursive`](class_treeitem.md#class_treeitem_method_call_recursive) ( method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                                                            |
+| `void`                                                        | [`clear_custom_bg_color`](class_treeitem.md#class_treeitem_method_clear_custom_bg_color) ( column: [`int`](class_int.md) )                                                                                                                                                 |
+| `void`                                                        | [`clear_custom_color`](class_treeitem.md#class_treeitem_method_clear_custom_color) ( column: [`int`](class_int.md) )                                                                                                                                                       |
+| [`TreeItem`](class_treeitem.md)                               | [`create_child`](class_treeitem.md#class_treeitem_method_create_child) ( index: [`int`](class_int.md) = -1 )                                                                                                                                                               |
+| `void`                                                        | [`deselect`](class_treeitem.md#class_treeitem_method_deselect) ( column: [`int`](class_int.md) )                                                                                                                                                                           |
+| `void`                                                        | [`erase_button`](class_treeitem.md#class_treeitem_method_erase_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) )                                                                                                                              |
+| [AutowrapMode](#enum_textserver_autowrapmode)                 | [`get_autowrap_mode`](class_treeitem.md#class_treeitem_method_get_autowrap_mode) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
+| [`Texture2D`](class_texture2d.md)                             | [`get_button`](class_treeitem.md#class_treeitem_method_get_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                                                    |
+| [`int`](class_int.md)                                         | [`get_button_by_id`](class_treeitem.md#class_treeitem_method_get_button_by_id) ( column: [`int`](class_int.md), id: [`int`](class_int.md) ) const[^const]                                                                                                                  |
+| [`Color`](class_color.md)                                     | [`get_button_color`](class_treeitem.md#class_treeitem_method_get_button_color) ( column: [`int`](class_int.md), id: [`int`](class_int.md) ) const[^const]                                                                                                                  |
+| [`int`](class_int.md)                                         | [`get_button_count`](class_treeitem.md#class_treeitem_method_get_button_count) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
+| [`int`](class_int.md)                                         | [`get_button_id`](class_treeitem.md#class_treeitem_method_get_button_id) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                                              |
+| [`String`](class_string.md)                                   | [`get_button_tooltip_text`](class_treeitem.md#class_treeitem_method_get_button_tooltip_text) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                          |
+| [TreeCellMode](#enum_treeitem_treecellmode)                   | [`get_cell_mode`](class_treeitem.md#class_treeitem_method_get_cell_mode) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                   |
+| [`TreeItem`](class_treeitem.md)                               | [`get_child`](class_treeitem.md#class_treeitem_method_get_child) ( index: [`int`](class_int.md) )                                                                                                                                                                          |
+| [`int`](class_int.md)                                         | [`get_child_count`](class_treeitem.md#class_treeitem_method_get_child_count) ( )                                                                                                                                                                                           |
+| [Array](class_array.md) [`TreeItem`](class_treeitem.md)       | [`get_children`](class_treeitem.md#class_treeitem_method_get_children) ( )                                                                                                                                                                                                 |
+| [`Color`](class_color.md)                                     | [`get_custom_bg_color`](class_treeitem.md#class_treeitem_method_get_custom_bg_color) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                       |
+| [`Color`](class_color.md)                                     | [`get_custom_color`](class_treeitem.md#class_treeitem_method_get_custom_color) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
+| [`Callable`](class_callable.md)                               | [`get_custom_draw_callback`](class_treeitem.md#class_treeitem_method_get_custom_draw_callback) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                             |
+| [`Font`](class_font.md)                                       | [`get_custom_font`](class_treeitem.md#class_treeitem_method_get_custom_font) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
+| [`int`](class_int.md)                                         | [`get_custom_font_size`](class_treeitem.md#class_treeitem_method_get_custom_font_size) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                     |
+| [`bool`](class_bool.md)                                       | [`get_expand_right`](class_treeitem.md#class_treeitem_method_get_expand_right) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
+| [`TreeItem`](class_treeitem.md)                               | [`get_first_child`](class_treeitem.md#class_treeitem_method_get_first_child) ( ) const[^const]                                                                                                                                                                             |
+| [`Texture2D`](class_texture2d.md)                             | [`get_icon`](class_treeitem.md#class_treeitem_method_get_icon) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                             |
+| [`int`](class_int.md)                                         | [`get_icon_max_width`](class_treeitem.md#class_treeitem_method_get_icon_max_width) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                         |
+| [`Color`](class_color.md)                                     | [`get_icon_modulate`](class_treeitem.md#class_treeitem_method_get_icon_modulate) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
+| [`Rect2`](class_rect2.md)                                     | [`get_icon_region`](class_treeitem.md#class_treeitem_method_get_icon_region) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
+| [`int`](class_int.md)                                         | [`get_index`](class_treeitem.md#class_treeitem_method_get_index) ( )                                                                                                                                                                                                       |
+| [`String`](class_string.md)                                   | [`get_language`](class_treeitem.md#class_treeitem_method_get_language) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                     |
+| [`Variant`](class_variant.md)                                 | [`get_metadata`](class_treeitem.md#class_treeitem_method_get_metadata) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                     |
+| [`TreeItem`](class_treeitem.md)                               | [`get_next`](class_treeitem.md#class_treeitem_method_get_next) ( ) const[^const]                                                                                                                                                                                           |
+| [`TreeItem`](class_treeitem.md)                               | [`get_next_in_tree`](class_treeitem.md#class_treeitem_method_get_next_in_tree) ( wrap: [`bool`](class_bool.md) = false )                                                                                                                                                   |
+| [`TreeItem`](class_treeitem.md)                               | [`get_next_visible`](class_treeitem.md#class_treeitem_method_get_next_visible) ( wrap: [`bool`](class_bool.md) = false )                                                                                                                                                   |
+| [`TreeItem`](class_treeitem.md)                               | [`get_parent`](class_treeitem.md#class_treeitem_method_get_parent) ( ) const[^const]                                                                                                                                                                                       |
+| [`TreeItem`](class_treeitem.md)                               | [`get_prev`](class_treeitem.md#class_treeitem_method_get_prev) ( )                                                                                                                                                                                                         |
+| [`TreeItem`](class_treeitem.md)                               | [`get_prev_in_tree`](class_treeitem.md#class_treeitem_method_get_prev_in_tree) ( wrap: [`bool`](class_bool.md) = false )                                                                                                                                                   |
+| [`TreeItem`](class_treeitem.md)                               | [`get_prev_visible`](class_treeitem.md#class_treeitem_method_get_prev_visible) ( wrap: [`bool`](class_bool.md) = false )                                                                                                                                                   |
+| [`float`](class_float.md)                                     | [`get_range`](class_treeitem.md#class_treeitem_method_get_range) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                           |
+| [`Dictionary`](class_dictionary.md)                           | [`get_range_config`](class_treeitem.md#class_treeitem_method_get_range_config) ( column: [`int`](class_int.md) )                                                                                                                                                           |
+| [StructuredTextParser](#enum_textserver_structuredtextparser) | [`get_structured_text_bidi_override`](class_treeitem.md#class_treeitem_method_get_structured_text_bidi_override) ( column: [`int`](class_int.md) ) const[^const]                                                                                                           |
+| [`Array`](class_array.md)                                     | [`get_structured_text_bidi_override_options`](class_treeitem.md#class_treeitem_method_get_structured_text_bidi_override_options) ( column: [`int`](class_int.md) ) const[^const]                                                                                           |
+| [`String`](class_string.md)                                   | [`get_suffix`](class_treeitem.md#class_treeitem_method_get_suffix) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                         |
+| [`String`](class_string.md)                                   | [`get_text`](class_treeitem.md#class_treeitem_method_get_text) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                             |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`get_text_alignment`](class_treeitem.md#class_treeitem_method_get_text_alignment) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                         |
+| [TextDirection](#enum_control_textdirection)                  | [`get_text_direction`](class_treeitem.md#class_treeitem_method_get_text_direction) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                         |
+| [OverrunBehavior](#enum_textserver_overrunbehavior)           | [`get_text_overrun_behavior`](class_treeitem.md#class_treeitem_method_get_text_overrun_behavior) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                           |
+| [`String`](class_string.md)                                   | [`get_tooltip_text`](class_treeitem.md#class_treeitem_method_get_tooltip_text) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
+| [`Tree`](class_tree.md)                                       | [`get_tree`](class_treeitem.md#class_treeitem_method_get_tree) ( ) const[^const]                                                                                                                                                                                           |
+| [`bool`](class_bool.md)                                       | [`is_any_collapsed`](class_treeitem.md#class_treeitem_method_is_any_collapsed) ( only_visible: [`bool`](class_bool.md) = false )                                                                                                                                           |
+| [`bool`](class_bool.md)                                       | [`is_button_disabled`](class_treeitem.md#class_treeitem_method_is_button_disabled) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                                    |
+| [`bool`](class_bool.md)                                       | [`is_checked`](class_treeitem.md#class_treeitem_method_is_checked) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                         |
+| [`bool`](class_bool.md)                                       | [`is_custom_set_as_button`](class_treeitem.md#class_treeitem_method_is_custom_set_as_button) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                               |
+| [`bool`](class_bool.md)                                       | [`is_edit_multiline`](class_treeitem.md#class_treeitem_method_is_edit_multiline) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
+| [`bool`](class_bool.md)                                       | [`is_editable`](class_treeitem.md#class_treeitem_method_is_editable) ( column: [`int`](class_int.md) )                                                                                                                                                                     |
+| [`bool`](class_bool.md)                                       | [`is_indeterminate`](class_treeitem.md#class_treeitem_method_is_indeterminate) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
+| [`bool`](class_bool.md)                                       | [`is_selectable`](class_treeitem.md#class_treeitem_method_is_selectable) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                   |
+| [`bool`](class_bool.md)                                       | [`is_selected`](class_treeitem.md#class_treeitem_method_is_selected) ( column: [`int`](class_int.md) )                                                                                                                                                                     |
+| [`bool`](class_bool.md)                                       | [`is_visible_in_tree`](class_treeitem.md#class_treeitem_method_is_visible_in_tree) ( ) const[^const]                                                                                                                                                                       |
+| `void`                                                        | [`move_after`](class_treeitem.md#class_treeitem_method_move_after) ( item: [`TreeItem`](class_treeitem.md) )                                                                                                                                                               |
+| `void`                                                        | [`move_before`](class_treeitem.md#class_treeitem_method_move_before) ( item: [`TreeItem`](class_treeitem.md) )                                                                                                                                                             |
+| `void`                                                        | [`propagate_check`](class_treeitem.md#class_treeitem_method_propagate_check) ( column: [`int`](class_int.md), emit_signal: [`bool`](class_bool.md) = true )                                                                                                                |
+| `void`                                                        | [`remove_child`](class_treeitem.md#class_treeitem_method_remove_child) ( child: [`TreeItem`](class_treeitem.md) )                                                                                                                                                          |
+| `void`                                                        | [`select`](class_treeitem.md#class_treeitem_method_select) ( column: [`int`](class_int.md) )                                                                                                                                                                               |
+| `void`                                                        | [`set_autowrap_mode`](class_treeitem.md#class_treeitem_method_set_autowrap_mode) ( column: [`int`](class_int.md), autowrap_mode: [AutowrapMode](#enum_textserver_autowrapmode) )                                                                                           |
+| `void`                                                        | [`set_button`](class_treeitem.md#class_treeitem_method_set_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), button: [`Texture2D`](class_texture2d.md) )                                                                                       |
+| `void`                                                        | [`set_button_color`](class_treeitem.md#class_treeitem_method_set_button_color) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                    |
+| `void`                                                        | [`set_button_disabled`](class_treeitem.md#class_treeitem_method_set_button_disabled) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )                                                                             |
+| `void`                                                        | [`set_button_tooltip_text`](class_treeitem.md#class_treeitem_method_set_button_tooltip_text) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                                                  |
+| `void`                                                        | [`set_cell_mode`](class_treeitem.md#class_treeitem_method_set_cell_mode) ( column: [`int`](class_int.md), mode: [TreeCellMode](#enum_treeitem_treecellmode) )                                                                                                              |
+| `void`                                                        | [`set_checked`](class_treeitem.md#class_treeitem_method_set_checked) ( column: [`int`](class_int.md), checked: [`bool`](class_bool.md) )                                                                                                                                   |
+| `void`                                                        | [`set_collapsed_recursive`](class_treeitem.md#class_treeitem_method_set_collapsed_recursive) ( enable: [`bool`](class_bool.md) )                                                                                                                                           |
+| `void`                                                        | [`set_custom_as_button`](class_treeitem.md#class_treeitem_method_set_custom_as_button) ( column: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                  |
+| `void`                                                        | [`set_custom_bg_color`](class_treeitem.md#class_treeitem_method_set_custom_bg_color) ( column: [`int`](class_int.md), color: [`Color`](class_color.md), just_outline: [`bool`](class_bool.md) = false )                                                                    |
+| `void`                                                        | [`set_custom_color`](class_treeitem.md#class_treeitem_method_set_custom_color) ( column: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                         |
+| `void`                                                        | [`set_custom_draw`](class_treeitem.md#class_treeitem_method_set_custom_draw) ( column: [`int`](class_int.md), object: [`Object`](class_object.md), callback: [`StringName`](class_stringname.md) )                                                                         |
+| `void`                                                        | [`set_custom_draw_callback`](class_treeitem.md#class_treeitem_method_set_custom_draw_callback) ( column: [`int`](class_int.md), callback: [`Callable`](class_callable.md) )                                                                                                |
+| `void`                                                        | [`set_custom_font`](class_treeitem.md#class_treeitem_method_set_custom_font) ( column: [`int`](class_int.md), font: [`Font`](class_font.md) )                                                                                                                              |
+| `void`                                                        | [`set_custom_font_size`](class_treeitem.md#class_treeitem_method_set_custom_font_size) ( column: [`int`](class_int.md), font_size: [`int`](class_int.md) )                                                                                                                 |
+| `void`                                                        | [`set_edit_multiline`](class_treeitem.md#class_treeitem_method_set_edit_multiline) ( column: [`int`](class_int.md), multiline: [`bool`](class_bool.md) )                                                                                                                   |
+| `void`                                                        | [`set_editable`](class_treeitem.md#class_treeitem_method_set_editable) ( column: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )                                                                                                                                 |
+| `void`                                                        | [`set_expand_right`](class_treeitem.md#class_treeitem_method_set_expand_right) ( column: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                                                                                                                          |
+| `void`                                                        | [`set_icon`](class_treeitem.md#class_treeitem_method_set_icon) ( column: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )                                                                                                                               |
+| `void`                                                        | [`set_icon_max_width`](class_treeitem.md#class_treeitem_method_set_icon_max_width) ( column: [`int`](class_int.md), width: [`int`](class_int.md) )                                                                                                                         |
+| `void`                                                        | [`set_icon_modulate`](class_treeitem.md#class_treeitem_method_set_icon_modulate) ( column: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                                                                                                    |
+| `void`                                                        | [`set_icon_region`](class_treeitem.md#class_treeitem_method_set_icon_region) ( column: [`int`](class_int.md), region: [`Rect2`](class_rect2.md) )                                                                                                                          |
+| `void`                                                        | [`set_indeterminate`](class_treeitem.md#class_treeitem_method_set_indeterminate) ( column: [`int`](class_int.md), indeterminate: [`bool`](class_bool.md) )                                                                                                                 |
+| `void`                                                        | [`set_language`](class_treeitem.md#class_treeitem_method_set_language) ( column: [`int`](class_int.md), language: [`String`](class_string.md) )                                                                                                                            |
+| `void`                                                        | [`set_metadata`](class_treeitem.md#class_treeitem_method_set_metadata) ( column: [`int`](class_int.md), meta: [`Variant`](class_variant.md) )                                                                                                                              |
+| `void`                                                        | [`set_range`](class_treeitem.md#class_treeitem_method_set_range) ( column: [`int`](class_int.md), value: [`float`](class_float.md) )                                                                                                                                       |
+| `void`                                                        | [`set_range_config`](class_treeitem.md#class_treeitem_method_set_range_config) ( column: [`int`](class_int.md), min: [`float`](class_float.md), max: [`float`](class_float.md), step: [`float`](class_float.md), expr: [`bool`](class_bool.md) = false )                   |
+| `void`                                                        | [`set_selectable`](class_treeitem.md#class_treeitem_method_set_selectable) ( column: [`int`](class_int.md), selectable: [`bool`](class_bool.md) )                                                                                                                          |
+| `void`                                                        | [`set_structured_text_bidi_override`](class_treeitem.md#class_treeitem_method_set_structured_text_bidi_override) ( column: [`int`](class_int.md), parser: [StructuredTextParser](#enum_textserver_structuredtextparser) )                                                  |
+| `void`                                                        | [`set_structured_text_bidi_override_options`](class_treeitem.md#class_treeitem_method_set_structured_text_bidi_override_options) ( column: [`int`](class_int.md), args: [`Array`](class_array.md) )                                                                        |
+| `void`                                                        | [`set_suffix`](class_treeitem.md#class_treeitem_method_set_suffix) ( column: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                                                    |
+| `void`                                                        | [`set_text`](class_treeitem.md#class_treeitem_method_set_text) ( column: [`int`](class_int.md), text: [`String`](class_string.md) )                                                                                                                                        |
+| `void`                                                        | [`set_text_alignment`](class_treeitem.md#class_treeitem_method_set_text_alignment) ( column: [`int`](class_int.md), text_alignment: [HorizontalAlignment](#enum_@globalscope_horizontalalignment) )                                                                        |
+| `void`                                                        | [`set_text_direction`](class_treeitem.md#class_treeitem_method_set_text_direction) ( column: [`int`](class_int.md), direction: [TextDirection](#enum_control_textdirection) )                                                                                              |
+| `void`                                                        | [`set_text_overrun_behavior`](class_treeitem.md#class_treeitem_method_set_text_overrun_behavior) ( column: [`int`](class_int.md), overrun_behavior: [OverrunBehavior](#enum_textserver_overrunbehavior) )                                                                  |
+| `void`                                                        | [`set_tooltip_text`](class_treeitem.md#class_treeitem_method_set_tooltip_text) ( column: [`int`](class_int.md), tooltip: [`String`](class_string.md) )                                                                                                                     |
+| `void`                                                        | [`uncollapse_tree`](class_treeitem.md#class_treeitem_method_uncollapse_tree) ( )                                                                                                                                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -150,21 +150,21 @@ enum **TreeCellMode**: <div id="enum_treeitem_treecellmode"></div>
 
 [TreeCellMode](#enum_treeitem_treecellmode) **CELL_MODE_STRING** = ``0``
 
-Cell shows a string label. When editable, the text can be edited using a [`LineEdit`](class_lineedit.md), or a [`TextEdit`](class_textedit.md) popup if [`set_edit_multiline`](#class_treeitem_method_set_edit_multiline) is used.
+Cell shows a string label. When editable, the text can be edited using a [`LineEdit`](class_lineedit.md), or a [`TextEdit`](class_textedit.md) popup if [`set_edit_multiline`](class_treeitem.md#class_treeitem_method_set_edit_multiline) is used.
 
 <div id="_class_treeitem_constant_cell_mode_check"></div>
 
 [TreeCellMode](#enum_treeitem_treecellmode) **CELL_MODE_CHECK** = ``1``
 
-Cell shows a checkbox, optionally with text. The checkbox can be pressed, released, or indeterminate (via [`set_indeterminate`](#class_treeitem_method_set_indeterminate)). The checkbox can't be clicked unless the cell is editable.
+Cell shows a checkbox, optionally with text. The checkbox can be pressed, released, or indeterminate (via [`set_indeterminate`](class_treeitem.md#class_treeitem_method_set_indeterminate)). The checkbox can't be clicked unless the cell is editable.
 
 <div id="_class_treeitem_constant_cell_mode_range"></div>
 
 [TreeCellMode](#enum_treeitem_treecellmode) **CELL_MODE_RANGE** = ``2``
 
-Cell shows a numeric range. When editable, it can be edited using a range slider. Use [`set_range`](#class_treeitem_method_set_range) to set the value and [`set_range_config`](#class_treeitem_method_set_range_config) to configure the range.
+Cell shows a numeric range. When editable, it can be edited using a range slider. Use [`set_range`](class_treeitem.md#class_treeitem_method_set_range) to set the value and [`set_range_config`](class_treeitem.md#class_treeitem_method_set_range_config) to configure the range.
 
-This cell can also be used in a text dropdown mode when you assign a text with [`set_text`](#class_treeitem_method_set_text). Separate options with a comma, e.g. `"Option1,Option2,Option3"`.
+This cell can also be used in a text dropdown mode when you assign a text with [`set_text`](class_treeitem.md#class_treeitem_method_set_text). Separate options with a comma, e.g. `"Option1,Option2,Option3"`.
 
 <div id="_class_treeitem_constant_cell_mode_icon"></div>
 
@@ -176,9 +176,9 @@ Cell shows an icon. It can't be edited nor display text.
 
 [TreeCellMode](#enum_treeitem_treecellmode) **CELL_MODE_CUSTOM** = ``4``
 
-Cell shows as a clickable button. It will display an arrow similar to [`OptionButton`](class_optionbutton.md), but doesn't feature a dropdown (for that you can use [`CELL_MODE_RANGE`](#class_treeitem_constant_cell_mode_range)). Clicking the button emits the [`Tree.item_edited`](#class_tree_signal_item_edited) signal. The button is flat by default, you can use [`set_custom_as_button`](#class_treeitem_method_set_custom_as_button) to display it with a [`StyleBox`](class_stylebox.md).
+Cell shows as a clickable button. It will display an arrow similar to [`OptionButton`](class_optionbutton.md), but doesn't feature a dropdown (for that you can use [`CELL_MODE_RANGE`](class_treeitem.md#class_treeitem_constant_cell_mode_range)). Clicking the button emits the [`Tree.item_edited`](class_tree.md#class_tree_signal_item_edited) signal. The button is flat by default, you can use [`set_custom_as_button`](class_treeitem.md#class_treeitem_method_set_custom_as_button) to display it with a [`StyleBox`](class_stylebox.md).
 
-This mode also supports custom drawing using [`set_custom_draw_callback`](#class_treeitem_method_set_custom_draw_callback).
+This mode also supports custom drawing using [`set_custom_draw_callback`](class_treeitem.md#class_treeitem_method_set_custom_draw_callback).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -246,7 +246,7 @@ Note that if a **TreeItem** is set to not be visible, none of its children will 
 
 `void` **add_button** ( column: [`int`](class_int.md), button: [`Texture2D`](class_texture2d.md), id: [`int`](class_int.md) = -1, disabled: [`bool`](class_bool.md) = false, tooltip_text: [`String`](class_string.md) = "" )<div id="class_treeitem_method_add_button"></div>
 
-Adds a button with [`Texture2D`](class_texture2d.md) `button` at column `column`. The `id` is used to identify the button in the according [`Tree.button_clicked`](#class_tree_signal_button_clicked) signal and can be different from the buttons index. If not specified, the next available index is used, which may be retrieved by calling [`get_button_count`](#class_treeitem_method_get_button_count) immediately before this method. Optionally, the button can be `disabled` and have a `tooltip_text`.
+Adds a button with [`Texture2D`](class_texture2d.md) `button` at column `column`. The `id` is used to identify the button in the according [`Tree.button_clicked`](class_tree.md#class_tree_signal_button_clicked) signal and can be different from the buttons index. If not specified, the next available index is used, which may be retrieved by calling [`get_button_count`](class_treeitem.md#class_treeitem_method_get_button_count) immediately before this method. Optionally, the button can be `disabled` and have a `tooltip_text`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -256,7 +256,7 @@ Adds a button with [`Texture2D`](class_texture2d.md) `button` at column `column`
 
 `void` **add_child** ( child: [`TreeItem`](class_treeitem.md) )<div id="class_treeitem_method_add_child"></div>
 
-Adds a previously unparented **TreeItem** as a direct child of this one. The `child` item must not be a part of any [`Tree`](class_tree.md) or parented to any **TreeItem**. See also [`remove_child`](#class_treeitem_method_remove_child).
+Adds a previously unparented **TreeItem** as a direct child of this one. The `child` item must not be a part of any [`Tree`](class_tree.md) or parented to any **TreeItem**. See also [`remove_child`](class_treeitem.md#class_treeitem_method_remove_child).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -328,7 +328,7 @@ Removes the button at index `button_index` in column `column`.
 
 [AutowrapMode](#enum_textserver_autowrapmode) **get_autowrap_mode** ( column: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_get_autowrap_mode"></div>
 
-Returns the text autowrap mode in the given `column`. By default it is [`TextServer.AUTOWRAP_OFF`](#class_textserver_constant_autowrap_off).
+Returns the text autowrap mode in the given `column`. By default it is [`TextServer.AUTOWRAP_OFF`](class_textserver.md#class_textserver_constant_autowrap_off).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -358,7 +358,7 @@ Returns the button index if there is a button with ID `id` in column `column`, o
 
 [`Color`](class_color.md) **get_button_color** ( column: [`int`](class_int.md), id: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_get_button_color"></div>
 
-Returns the color of the button with ID `id` in column `column`. If the specified button does not exist, returns [`Color.BLACK`](#class_color_constant_black).
+Returns the color of the button with ID `id` in column `column`. If the specified button does not exist, returns [`Color.BLACK`](class_color.md#class_color_constant_black).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -408,7 +408,7 @@ Returns the column's cell mode.
 
 [`TreeItem`](class_treeitem.md) **get_child** ( index: [`int`](class_int.md) )<div id="class_treeitem_method_get_child"></div>
 
-Returns a child item by its `index` (see [`get_child_count`](#class_treeitem_method_get_child_count)). This method is often used for iterating all children of an item.
+Returns a child item by its `index` (see [`get_child_count`](class_treeitem.md#class_treeitem_method_get_child_count)). This method is often used for iterating all children of an item.
 
 Negative indices access the children from the last one.
 
@@ -570,7 +570,7 @@ Returns item's text language code.
 
 [`Variant`](class_variant.md) **get_metadata** ( column: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_get_metadata"></div>
 
-Returns the metadata value that was set for the given column using [`set_metadata`](#class_treeitem_method_set_metadata).
+Returns the metadata value that was set for the given column using [`set_metadata`](class_treeitem.md#class_treeitem_method_set_metadata).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -658,7 +658,7 @@ If `wrap` is enabled, the method will wrap around to the last visible element in
 
 [`float`](class_float.md) **get_range** ( column: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_get_range"></div>
 
-Returns the value of a [`CELL_MODE_RANGE`](#class_treeitem_constant_cell_mode_range) column.
+Returns the value of a [`CELL_MODE_RANGE`](class_treeitem.md#class_treeitem_constant_cell_mode_range) column.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -738,7 +738,7 @@ Returns item's text base writing direction.
 
 [OverrunBehavior](#enum_textserver_overrunbehavior) **get_text_overrun_behavior** ( column: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_get_text_overrun_behavior"></div>
 
-Returns the clipping behavior when the text exceeds the item's bounding rectangle in the given `column`. By default it is [`TextServer.OVERRUN_TRIM_ELLIPSIS`](#class_textserver_constant_overrun_trim_ellipsis).
+Returns the clipping behavior when the text exceeds the item's bounding rectangle in the given `column`. By default it is [`TextServer.OVERRUN_TRIM_ELLIPSIS`](class_textserver.md#class_textserver_constant_overrun_trim_ellipsis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -800,7 +800,7 @@ Returns `true` if the given `column` is checked.
 
 [`bool`](class_bool.md) **is_custom_set_as_button** ( column: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_is_custom_set_as_button"></div>
 
-Returns `true` if the cell was made into a button with [`set_custom_as_button`](#class_treeitem_method_set_custom_as_button).
+Returns `true` if the cell was made into a button with [`set_custom_as_button`](class_treeitem.md#class_treeitem_method_set_custom_as_button).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -860,7 +860,7 @@ Returns `true` if the given `column` is selected.
 
 [`bool`](class_bool.md) **is_visible_in_tree** ( ) const[^const]<div id="class_treeitem_method_is_visible_in_tree"></div>
 
-Returns `true` if [`visible`](#class_treeitem_property_visible) is `true` and all its ancestors are also visible.
+Returns `true` if [`visible`](class_treeitem.md#class_treeitem_property_visible) is `true` and all its ancestors are also visible.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -894,7 +894,7 @@ Moves this TreeItem right before the given `item`.
 
 `void` **propagate_check** ( column: [`int`](class_int.md), emit_signal: [`bool`](class_bool.md) = true )<div id="class_treeitem_method_propagate_check"></div>
 
-Propagates this item's checked status to its children and parents for the given `column`. It is possible to process the items affected by this method call by connecting to [`Tree.check_propagated_to_item`](#class_tree_signal_check_propagated_to_item). The order that the items affected will be processed is as follows: the item invoking this method, children of that item, and finally parents of that item. If `emit_signal` is `false`, then [`Tree.check_propagated_to_item`](#class_tree_signal_check_propagated_to_item) will not be emitted.
+Propagates this item's checked status to its children and parents for the given `column`. It is possible to process the items affected by this method call by connecting to [`Tree.check_propagated_to_item`](class_tree.md#class_tree_signal_check_propagated_to_item). The order that the items affected will be processed is as follows: the item invoking this method, children of that item, and finally parents of that item. If `emit_signal` is `false`, then [`Tree.check_propagated_to_item`](class_tree.md#class_tree_signal_check_propagated_to_item) will not be emitted.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -904,9 +904,9 @@ Propagates this item's checked status to its children and parents for the given 
 
 `void` **remove_child** ( child: [`TreeItem`](class_treeitem.md) )<div id="class_treeitem_method_remove_child"></div>
 
-Removes the given child **TreeItem** and all its children from the [`Tree`](class_tree.md). Note that it doesn't free the item from memory, so it can be reused later (see [`add_child`](#class_treeitem_method_add_child)). To completely remove a **TreeItem** use [`Object.free`](#class_object_method_free).
+Removes the given child **TreeItem** and all its children from the [`Tree`](class_tree.md). Note that it doesn't free the item from memory, so it can be reused later (see [`add_child`](class_treeitem.md#class_treeitem_method_add_child)). To completely remove a **TreeItem** use [`Object.free`](class_object.md#class_object_method_free).
 
- **Note:** If you want to move a child from one [`Tree`](class_tree.md) to another, then instead of removing and adding it manually you can use [`move_before`](#class_treeitem_method_move_before) or [`move_after`](#class_treeitem_method_move_after).
+ **Note:** If you want to move a child from one [`Tree`](class_tree.md) to another, then instead of removing and adding it manually you can use [`move_before`](class_treeitem.md#class_treeitem_method_move_before) or [`move_after`](class_treeitem.md#class_treeitem_method_move_after).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -926,7 +926,7 @@ Selects the given `column`.
 
 `void` **set_autowrap_mode** ( column: [`int`](class_int.md), autowrap_mode: [AutowrapMode](#enum_textserver_autowrapmode) )<div id="class_treeitem_method_set_autowrap_mode"></div>
 
-Sets the autowrap mode in the given `column`. If set to something other than [`TextServer.AUTOWRAP_OFF`](#class_textserver_constant_autowrap_off), the text gets wrapped inside the cell's bounding rectangle.
+Sets the autowrap mode in the given `column`. If set to something other than [`TextServer.AUTOWRAP_OFF`](class_textserver.md#class_textserver_constant_autowrap_off), the text gets wrapped inside the cell's bounding rectangle.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1006,7 +1006,7 @@ Collapses or uncollapses this **TreeItem** and all the descendants of this item.
 
 `void` **set_custom_as_button** ( column: [`int`](class_int.md), enable: [`bool`](class_bool.md) )<div id="class_treeitem_method_set_custom_as_button"></div>
 
-Makes a cell with [`CELL_MODE_CUSTOM`](#class_treeitem_constant_cell_mode_custom) display as a non-flat button with a [`StyleBox`](class_stylebox.md).
+Makes a cell with [`CELL_MODE_CUSTOM`](class_treeitem.md#class_treeitem_constant_cell_mode_custom) display as a non-flat button with a [`StyleBox`](class_stylebox.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1036,7 +1036,7 @@ Sets the given column's custom color.
 
 `void` **set_custom_draw** ( column: [`int`](class_int.md), object: [`Object`](class_object.md), callback: [`StringName`](class_stringname.md) )<div id="class_treeitem_method_set_custom_draw"></div>
 
-**已弃用：** Use [`set_custom_draw_callback`](#class_treeitem_method_set_custom_draw_callback) instead.
+**已弃用：** Use [`set_custom_draw_callback`](class_treeitem.md#class_treeitem_method_set_custom_draw_callback) instead.
 
 Sets the given column's custom draw callback to the `callback` method on `object`.
 
@@ -1050,7 +1050,7 @@ The method named `callback` should accept two arguments: the **TreeItem** that i
 
 `void` **set_custom_draw_callback** ( column: [`int`](class_int.md), callback: [`Callable`](class_callable.md) )<div id="class_treeitem_method_set_custom_draw_callback"></div>
 
-Sets the given column's custom draw callback. Use an empty [`Callable`](class_callable.md) (`Callable()`) to clear the custom callback. The cell has to be in [`CELL_MODE_CUSTOM`](#class_treeitem_constant_cell_mode_custom) to use this feature.
+Sets the given column's custom draw callback. Use an empty [`Callable`](class_callable.md) (`Callable()`) to clear the custom callback. The cell has to be in [`CELL_MODE_CUSTOM`](class_treeitem.md#class_treeitem_constant_cell_mode_custom) to use this feature.
 
 The `callback` should accept two arguments: the **TreeItem** that is drawn and its position and size as a [`Rect2`](class_rect2.md).
 
@@ -1084,7 +1084,7 @@ Sets custom font size used to draw text in the given `column`.
 
 If `multiline` is `true`, the given `column` is multiline editable.
 
- **Note:** This option only affects the type of control ([`LineEdit`](class_lineedit.md) or [`TextEdit`](class_textedit.md)) that appears when editing the column. You can set multiline values with [`set_text`](#class_treeitem_method_set_text) even if the column is not multiline editable.
+ **Note:** This option only affects the type of control ([`LineEdit`](class_lineedit.md) or [`TextEdit`](class_textedit.md)) that appears when editing the column. You can set multiline values with [`set_text`](class_treeitem.md#class_treeitem_method_set_text) even if the column is not multiline editable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1114,7 +1114,7 @@ If `enable` is `true`, the given `column` is expanded to the right.
 
 `void` **set_icon** ( column: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )<div id="class_treeitem_method_set_icon"></div>
 
-Sets the given cell's icon [`Texture2D`](class_texture2d.md). The cell has to be in [`CELL_MODE_ICON`](#class_treeitem_constant_cell_mode_icon) mode.
+Sets the given cell's icon [`Texture2D`](class_texture2d.md). The cell has to be in [`CELL_MODE_ICON`](class_treeitem.md#class_treeitem_constant_cell_mode_icon) mode.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1124,7 +1124,7 @@ Sets the given cell's icon [`Texture2D`](class_texture2d.md). The cell has to be
 
 `void` **set_icon_max_width** ( column: [`int`](class_int.md), width: [`int`](class_int.md) )<div id="class_treeitem_method_set_icon_max_width"></div>
 
-Sets the maximum allowed width of the icon in the given `column`. This limit is applied on top of the default size of the icon and on top of [`Tree.icon_max_width`](#class_tree_theme_constant_icon_max_width). The height is adjusted according to the icon's ratio.
+Sets the maximum allowed width of the icon in the given `column`. This limit is applied on top of the default size of the icon and on top of [`Tree.icon_max_width`](class_tree.md#class_tree_theme_constant_icon_max_width). The height is adjusted according to the icon's ratio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1176,7 +1176,7 @@ Sets language code of item's text used for line-breaking and text shaping algori
 
 `void` **set_metadata** ( column: [`int`](class_int.md), meta: [`Variant`](class_variant.md) )<div id="class_treeitem_method_set_metadata"></div>
 
-Sets the metadata value for the given column, which can be retrieved later using [`get_metadata`](#class_treeitem_method_get_metadata). This can be used, for example, to store a reference to the original data.
+Sets the metadata value for the given column, which can be retrieved later using [`get_metadata`](class_treeitem.md#class_treeitem_method_get_metadata). This can be used, for example, to store a reference to the original data.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1186,7 +1186,7 @@ Sets the metadata value for the given column, which can be retrieved later using
 
 `void` **set_range** ( column: [`int`](class_int.md), value: [`float`](class_float.md) )<div id="class_treeitem_method_set_range"></div>
 
-Sets the value of a [`CELL_MODE_RANGE`](#class_treeitem_constant_cell_mode_range) column.
+Sets the value of a [`CELL_MODE_RANGE`](class_treeitem.md#class_treeitem_constant_cell_mode_range) column.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1196,9 +1196,9 @@ Sets the value of a [`CELL_MODE_RANGE`](#class_treeitem_constant_cell_mode_range
 
 `void` **set_range_config** ( column: [`int`](class_int.md), min: [`float`](class_float.md), max: [`float`](class_float.md), step: [`float`](class_float.md), expr: [`bool`](class_bool.md) = false )<div id="class_treeitem_method_set_range_config"></div>
 
-Sets the range of accepted values for a column. The column must be in the [`CELL_MODE_RANGE`](#class_treeitem_constant_cell_mode_range) mode.
+Sets the range of accepted values for a column. The column must be in the [`CELL_MODE_RANGE`](class_treeitem.md#class_treeitem_constant_cell_mode_range) mode.
 
-If `expr` is `true`, the edit mode slider will use an exponential scale as with [`Range.exp_edit`](#class_range_property_exp_edit).
+If `expr` is `true`, the edit mode slider will use an exponential scale as with [`Range.exp_edit`](class_range.md#class_range_property_exp_edit).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -15,9 +15,9 @@ A WebSocket connection.
 
 This class represents WebSocket connection, and can be used as a WebSocket client (RFC 6455-compliant) or as a remote peer of a WebSocket server.
 
-You can send WebSocket binary frames using [`PacketPeer.put_packet`](#class_packetpeer_method_put_packet), and WebSocket text frames using [`send`](#class_websocketpeer_method_send) (prefer text frames when interacting with text-based API). You can check the frame type of the last packet via [`was_string_packet`](#class_websocketpeer_method_was_string_packet).
+You can send WebSocket binary frames using [`PacketPeer.put_packet`](class_packetpeer.md#class_packetpeer_method_put_packet), and WebSocket text frames using [`send`](class_websocketpeer.md#class_websocketpeer_method_send) (prefer text frames when interacting with text-based API). You can check the frame type of the last packet via [`was_string_packet`](class_websocketpeer.md#class_websocketpeer_method_was_string_packet).
 
-To start a WebSocket client, first call [`connect_to_url`](#class_websocketpeer_method_connect_to_url), then regularly call [`poll`](#class_websocketpeer_method_poll) (e.g. during [`Node`](class_node.md) process). You can query the socket state via [`get_ready_state`](#class_websocketpeer_method_get_ready_state), get the number of pending packets using [`PacketPeer.get_available_packet_count`](#class_packetpeer_method_get_available_packet_count), and retrieve them via [`PacketPeer.get_packet`](#class_packetpeer_method_get_packet).
+To start a WebSocket client, first call [`connect_to_url`](class_websocketpeer.md#class_websocketpeer_method_connect_to_url), then regularly call [`poll`](class_websocketpeer.md#class_websocketpeer_method_poll) (e.g. during [`Node`](class_node.md) process). You can query the socket state via [`get_ready_state`](class_websocketpeer.md#class_websocketpeer_method_get_ready_state), get the number of pending packets using [`PacketPeer.get_available_packet_count`](class_packetpeer.md#class_packetpeer_method_get_available_packet_count), and retrieve them via [`PacketPeer.get_packet`](class_packetpeer.md#class_packetpeer_method_get_packet).
 
 
 
@@ -48,7 +48,7 @@ To start a WebSocket client, first call [`connect_to_url`](#class_websocketpeer_
 
 
 
-To use the peer as part of a WebSocket server refer to [`accept_stream`](#class_websocketpeer_method_accept_stream) and the online tutorial.
+To use the peer as part of a WebSocket server refer to [`accept_stream`](class_websocketpeer.md#class_websocketpeer_method_accept_stream) and the online tutorial.
 
 
 
@@ -56,32 +56,32 @@ To use the peer as part of a WebSocket server refer to [`accept_stream`](#class_
 
 |||
 |:-:|:--|
-| [`PackedStringArray`](class_packedstringarray.md) | [`handshake_headers`](#class_websocketpeer_property_handshake_headers)       | ``PackedStringArray()`` |
-| [`int`](class_int.md)                             | [`inbound_buffer_size`](#class_websocketpeer_property_inbound_buffer_size)   | ``65535``               |
-| [`int`](class_int.md)                             | [`max_queued_packets`](#class_websocketpeer_property_max_queued_packets)     | ``2048``                |
-| [`int`](class_int.md)                             | [`outbound_buffer_size`](#class_websocketpeer_property_outbound_buffer_size) | ``65535``               |
-| [`PackedStringArray`](class_packedstringarray.md) | [`supported_protocols`](#class_websocketpeer_property_supported_protocols)   | ``PackedStringArray()`` |
+| [`PackedStringArray`](class_packedstringarray.md) | [`handshake_headers`](class_websocketpeer.md#class_websocketpeer_property_handshake_headers)       | ``PackedStringArray()`` |
+| [`int`](class_int.md)                             | [`inbound_buffer_size`](class_websocketpeer.md#class_websocketpeer_property_inbound_buffer_size)   | ``65535``               |
+| [`int`](class_int.md)                             | [`max_queued_packets`](class_websocketpeer.md#class_websocketpeer_property_max_queued_packets)     | ``2048``                |
+| [`int`](class_int.md)                             | [`outbound_buffer_size`](class_websocketpeer.md#class_websocketpeer_property_outbound_buffer_size) | ``65535``               |
+| [`PackedStringArray`](class_packedstringarray.md) | [`supported_protocols`](class_websocketpeer.md#class_websocketpeer_property_supported_protocols)   | ``PackedStringArray()`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)  | [`accept_stream`](#class_websocketpeer_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md) )                                                        |
-| `void`                             | [`close`](#class_websocketpeer_method_close) ( code: [`int`](class_int.md) = 1000, reason: [`String`](class_string.md) = "" )                                       |
-| [Error](#enum_@globalscope_error)  | [`connect_to_url`](#class_websocketpeer_method_connect_to_url) ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
-| [`int`](class_int.md)              | [`get_close_code`](#class_websocketpeer_method_get_close_code) ( ) const[^const]                                                                                    |
-| [`String`](class_string.md)        | [`get_close_reason`](#class_websocketpeer_method_get_close_reason) ( ) const[^const]                                                                                |
-| [`String`](class_string.md)        | [`get_connected_host`](#class_websocketpeer_method_get_connected_host) ( ) const[^const]                                                                            |
-| [`int`](class_int.md)              | [`get_connected_port`](#class_websocketpeer_method_get_connected_port) ( ) const[^const]                                                                            |
-| [`int`](class_int.md)              | [`get_current_outbound_buffered_amount`](#class_websocketpeer_method_get_current_outbound_buffered_amount) ( ) const[^const]                                        |
-| [State](#enum_websocketpeer_state) | [`get_ready_state`](#class_websocketpeer_method_get_ready_state) ( ) const[^const]                                                                                  |
-| [`String`](class_string.md)        | [`get_requested_url`](#class_websocketpeer_method_get_requested_url) ( ) const[^const]                                                                              |
-| [`String`](class_string.md)        | [`get_selected_protocol`](#class_websocketpeer_method_get_selected_protocol) ( ) const[^const]                                                                      |
-| `void`                             | [`poll`](#class_websocketpeer_method_poll) ( )                                                                                                                      |
-| [Error](#enum_@globalscope_error)  | [`send`](#class_websocketpeer_method_send) ( message: [`PackedByteArray`](class_packedbytearray.md), write_mode: [WriteMode](#enum_websocketpeer_writemode) = 1 )   |
-| [Error](#enum_@globalscope_error)  | [`send_text`](#class_websocketpeer_method_send_text) ( message: [`String`](class_string.md) )                                                                       |
-| `void`                             | [`set_no_delay`](#class_websocketpeer_method_set_no_delay) ( enabled: [`bool`](class_bool.md) )                                                                     |
-| [`bool`](class_bool.md)            | [`was_string_packet`](#class_websocketpeer_method_was_string_packet) ( ) const[^const]                                                                              |
+| [Error](#enum_@globalscope_error)  | [`accept_stream`](class_websocketpeer.md#class_websocketpeer_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md) )                                                        |
+| `void`                             | [`close`](class_websocketpeer.md#class_websocketpeer_method_close) ( code: [`int`](class_int.md) = 1000, reason: [`String`](class_string.md) = "" )                                       |
+| [Error](#enum_@globalscope_error)  | [`connect_to_url`](class_websocketpeer.md#class_websocketpeer_method_connect_to_url) ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
+| [`int`](class_int.md)              | [`get_close_code`](class_websocketpeer.md#class_websocketpeer_method_get_close_code) ( ) const[^const]                                                                                    |
+| [`String`](class_string.md)        | [`get_close_reason`](class_websocketpeer.md#class_websocketpeer_method_get_close_reason) ( ) const[^const]                                                                                |
+| [`String`](class_string.md)        | [`get_connected_host`](class_websocketpeer.md#class_websocketpeer_method_get_connected_host) ( ) const[^const]                                                                            |
+| [`int`](class_int.md)              | [`get_connected_port`](class_websocketpeer.md#class_websocketpeer_method_get_connected_port) ( ) const[^const]                                                                            |
+| [`int`](class_int.md)              | [`get_current_outbound_buffered_amount`](class_websocketpeer.md#class_websocketpeer_method_get_current_outbound_buffered_amount) ( ) const[^const]                                        |
+| [State](#enum_websocketpeer_state) | [`get_ready_state`](class_websocketpeer.md#class_websocketpeer_method_get_ready_state) ( ) const[^const]                                                                                  |
+| [`String`](class_string.md)        | [`get_requested_url`](class_websocketpeer.md#class_websocketpeer_method_get_requested_url) ( ) const[^const]                                                                              |
+| [`String`](class_string.md)        | [`get_selected_protocol`](class_websocketpeer.md#class_websocketpeer_method_get_selected_protocol) ( ) const[^const]                                                                      |
+| `void`                             | [`poll`](class_websocketpeer.md#class_websocketpeer_method_poll) ( )                                                                                                                      |
+| [Error](#enum_@globalscope_error)  | [`send`](class_websocketpeer.md#class_websocketpeer_method_send) ( message: [`PackedByteArray`](class_packedbytearray.md), write_mode: [WriteMode](#enum_websocketpeer_writemode) = 1 )   |
+| [Error](#enum_@globalscope_error)  | [`send_text`](class_websocketpeer.md#class_websocketpeer_method_send_text) ( message: [`String`](class_string.md) )                                                                       |
+| `void`                             | [`set_no_delay`](class_websocketpeer.md#class_websocketpeer_method_set_no_delay) ( enabled: [`bool`](class_bool.md) )                                                                     |
+| [`bool`](class_bool.md)            | [`was_string_packet`](class_websocketpeer.md#class_websocketpeer_method_was_string_packet) ( ) const[^const]                                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -220,7 +220,7 @@ The WebSocket sub-protocols allowed during the WebSocket handshake.
 
 [Error](#enum_@globalscope_error) **accept_stream** ( stream: [`StreamPeer`](class_streampeer.md) )<div id="class_websocketpeer_method_accept_stream"></div>
 
-Accepts a peer connection performing the HTTP handshake as a WebSocket server. The `stream` must be a valid TCP stream retrieved via [`TCPServer.take_connection`](#class_tcpserver_method_take_connection), or a TLS stream accepted via [`StreamPeerTLS.accept_stream`](#class_streampeertls_method_accept_stream).
+Accepts a peer connection performing the HTTP handshake as a WebSocket server. The `stream` must be a valid TCP stream retrieved via [`TCPServer.take_connection`](class_tcpserver.md#class_tcpserver_method_take_connection), or a TLS stream accepted via [`StreamPeerTLS.accept_stream`](class_streampeertls.md#class_streampeertls_method_accept_stream).
 
  **Note:** Not supported in Web exports due to browsers' restrictions.
 
@@ -234,7 +234,7 @@ Accepts a peer connection performing the HTTP handshake as a WebSocket server. T
 
 Closes this WebSocket connection. `code` is the status code for the closure (see RFC 6455 section 7.4 for a list of valid status codes). `reason` is the human readable reason for closing the connection (can be any UTF-8 string that's smaller than 123 bytes). If `code` is negative, the connection will be closed immediately without notifying the remote peer.
 
- **Note:** To achieve a clean close, you will need to keep polling until [`STATE_CLOSED`](#class_websocketpeer_constant_state_closed) is reached.
+ **Note:** To achieve a clean close, you will need to keep polling until [`STATE_CLOSED`](class_websocketpeer.md#class_websocketpeer_constant_state_closed) is reached.
 
  **Note:** The Web export might not support all status codes. Please refer to browser-specific documentation for more details.
 
@@ -246,7 +246,7 @@ Closes this WebSocket connection. `code` is the status code for the closure (see
 
 [Error](#enum_@globalscope_error) **connect_to_url** ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null )<div id="class_websocketpeer_method_connect_to_url"></div>
 
-Connects to the given URL. TLS certificates will be verified against the hostname when connecting using the `wss://` protocol. You can pass the optional `tls_client_options` parameter to customize the trusted certification authorities, or disable the common name verification. See [`TLSOptions.client`](#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](#class_tlsoptions_method_client_unsafe).
+Connects to the given URL. TLS certificates will be verified against the hostname when connecting using the `wss://` protocol. You can pass the optional `tls_client_options` parameter to customize the trusted certification authorities, or disable the common name verification. See [`TLSOptions.client`](class_tlsoptions.md#class_tlsoptions_method_client) and [`TLSOptions.client_unsafe`](class_tlsoptions.md#class_tlsoptions_method_client_unsafe).
 
  **Note:** To avoid mixed content warnings or errors in Web, you may have to use a `url` that starts with `wss://` (secure) instead of `ws://`. When doing so, make sure to use the fully qualified domain name that matches the one defined in the server's TLS certificate. Do not connect directly via the IP address for `wss://` connections, as it won't match with the TLS certificate.
 
@@ -258,7 +258,7 @@ Connects to the given URL. TLS certificates will be verified against the hostnam
 
 [`int`](class_int.md) **get_close_code** ( ) const[^const]<div id="class_websocketpeer_method_get_close_code"></div>
 
-Returns the received WebSocket close frame status code, or `-1` when the connection was not cleanly closed. Only call this method when [`get_ready_state`](#class_websocketpeer_method_get_ready_state) returns [`STATE_CLOSED`](#class_websocketpeer_constant_state_closed).
+Returns the received WebSocket close frame status code, or `-1` when the connection was not cleanly closed. Only call this method when [`get_ready_state`](class_websocketpeer.md#class_websocketpeer_method_get_ready_state) returns [`STATE_CLOSED`](class_websocketpeer.md#class_websocketpeer_constant_state_closed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -268,7 +268,7 @@ Returns the received WebSocket close frame status code, or `-1` when the connect
 
 [`String`](class_string.md) **get_close_reason** ( ) const[^const]<div id="class_websocketpeer_method_get_close_reason"></div>
 
-Returns the received WebSocket close frame status reason string. Only call this method when [`get_ready_state`](#class_websocketpeer_method_get_ready_state) returns [`STATE_CLOSED`](#class_websocketpeer_constant_state_closed).
+Returns the received WebSocket close frame status reason string. Only call this method when [`get_ready_state`](class_websocketpeer.md#class_websocketpeer_method_get_ready_state) returns [`STATE_CLOSED`](class_websocketpeer.md#class_websocketpeer_constant_state_closed).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -322,7 +322,7 @@ Returns the ready state of the connection. See [State](#enum_websocketpeer_state
 
 [`String`](class_string.md) **get_requested_url** ( ) const[^const]<div id="class_websocketpeer_method_get_requested_url"></div>
 
-Returns the URL requested by this peer. The URL is derived from the `url` passed to [`connect_to_url`](#class_websocketpeer_method_connect_to_url) or from the HTTP headers when acting as server (i.e. when using [`accept_stream`](#class_websocketpeer_method_accept_stream)).
+Returns the URL requested by this peer. The URL is derived from the `url` passed to [`connect_to_url`](class_websocketpeer.md#class_websocketpeer_method_connect_to_url) or from the HTTP headers when acting as server (i.e. when using [`accept_stream`](class_websocketpeer.md#class_websocketpeer_method_accept_stream)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -352,7 +352,7 @@ Updates the connection state and receive incoming packets. Call this function re
 
 [Error](#enum_@globalscope_error) **send** ( message: [`PackedByteArray`](class_packedbytearray.md), write_mode: [WriteMode](#enum_websocketpeer_writemode) = 1 )<div id="class_websocketpeer_method_send"></div>
 
-Sends the given `message` using the desired `write_mode`. When sending a [`String`](class_string.md), prefer using [`send_text`](#class_websocketpeer_method_send_text).
+Sends the given `message` using the desired `write_mode`. When sending a [`String`](class_string.md), prefer using [`send_text`](class_websocketpeer.md#class_websocketpeer_method_send_text).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -362,7 +362,7 @@ Sends the given `message` using the desired `write_mode`. When sending a [`Strin
 
 [Error](#enum_@globalscope_error) **send_text** ( message: [`String`](class_string.md) )<div id="class_websocketpeer_method_send_text"></div>
 
-Sends the given `message` using WebSocket text mode. Prefer this method over [`PacketPeer.put_packet`](#class_packetpeer_method_put_packet) when interacting with third-party text-based API (e.g. when using [`JSON`](class_json.md) formatted messages).
+Sends the given `message` using WebSocket text mode. Prefer this method over [`PacketPeer.put_packet`](class_packetpeer.md#class_packetpeer_method_put_packet) when interacting with third-party text-based API (e.g. when using [`JSON`](class_json.md) formatted messages).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -372,7 +372,7 @@ Sends the given `message` using WebSocket text mode. Prefer this method over [`P
 
 `void` **set_no_delay** ( enabled: [`bool`](class_bool.md) )<div id="class_websocketpeer_method_set_no_delay"></div>
 
-Disable Nagle's algorithm on the underlying TCP socket (default). See [`StreamPeerTCP.set_no_delay`](#class_streampeertcp_method_set_no_delay) for more information.
+Disable Nagle's algorithm on the underlying TCP socket (default). See [`StreamPeerTCP.set_no_delay`](class_streampeertcp.md#class_streampeertcp_method_set_no_delay) for more information.
 
  **Note:** Not available in the Web export.
 

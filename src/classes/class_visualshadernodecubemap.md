@@ -19,9 +19,9 @@ Translated to `texture(cubemap, vec3)` in the shader language. Returns a color v
 
 |||
 |:-:|:--|
-| [`Cubemap`](class_cubemap.md)                            | [`cube_map`](#class_visualshadernodecubemap_property_cube_map)         |       |
-| [Source](#enum_visualshadernodecubemap_source)           | [`source`](#class_visualshadernodecubemap_property_source)             | ``0`` |
-| [TextureType](#enum_visualshadernodecubemap_texturetype) | [`texture_type`](#class_visualshadernodecubemap_property_texture_type) | ``0`` |
+| [`Cubemap`](class_cubemap.md)                            | [`cube_map`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_cube_map)         |       |
+| [Source](#enum_visualshadernodecubemap_source)           | [`source`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_source)             | ``0`` |
+| [TextureType](#enum_visualshadernodecubemap_texturetype) | [`texture_type`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_texture_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -37,13 +37,13 @@ enum **Source**: <div id="enum_visualshadernodecubemap_source"></div>
 
 [Source](#enum_visualshadernodecubemap_source) **SOURCE_TEXTURE** = ``0``
 
-Use the [`Cubemap`](class_cubemap.md) set via [`cube_map`](#class_visualshadernodecubemap_property_cube_map). If this is set to [`source`](#class_visualshadernodecubemap_property_source), the `samplerCube` port is ignored.
+Use the [`Cubemap`](class_cubemap.md) set via [`cube_map`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_cube_map). If this is set to [`source`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_source), the `samplerCube` port is ignored.
 
 <div id="_class_visualshadernodecubemap_constant_source_port"></div>
 
 [Source](#enum_visualshadernodecubemap_source) **SOURCE_PORT** = ``1``
 
-Use the [`Cubemap`](class_cubemap.md) sampler reference passed via the `samplerCube` port. If this is set to [`source`](#class_visualshadernodecubemap_property_source), the [`cube_map`](#class_visualshadernodecubemap_property_cube_map) texture is ignored.
+Use the [`Cubemap`](class_cubemap.md) sampler reference passed via the `samplerCube` port. If this is set to [`source`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_source), the [`cube_map`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_cube_map) texture is ignored.
 
 <div id="_class_visualshadernodecubemap_constant_source_max"></div>
 
@@ -96,7 +96,7 @@ Represents the size of the [TextureType](#enum_visualshadernodecubemap_texturety
 - `void` **set_cube_map** ( value: [`Cubemap`](class_cubemap.md) )
 - [`Cubemap`](class_cubemap.md) **get_cube_map** ( )
 
-The [`Cubemap`](class_cubemap.md) texture to sample when using [`SOURCE_TEXTURE`](#class_visualshadernodecubemap_constant_source_texture) as [`source`](#class_visualshadernodecubemap_property_source).
+The [`Cubemap`](class_cubemap.md) texture to sample when using [`SOURCE_TEXTURE`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_constant_source_texture) as [`source`](class_visualshadernodecubemap.md#class_visualshadernodecubemap_property_source).
 
 <!-- rst-class:: classref-item-separator -->
 

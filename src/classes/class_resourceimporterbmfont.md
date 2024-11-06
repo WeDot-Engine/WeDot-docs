@@ -23,9 +23,9 @@ See also [`ResourceImporterDynamicFont`](class_resourceimporterdynamicfont.md).
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`compress`](#class_resourceimporterbmfont_property_compress)         | ``true`` |
-| [`Array`](class_array.md) | [`fallbacks`](#class_resourceimporterbmfont_property_fallbacks)       | ``[]``   |
-| [`int`](class_int.md)     | [`scaling_mode`](#class_resourceimporterbmfont_property_scaling_mode) | ``2``    |
+| [`bool`](class_bool.md)   | [`compress`](class_resourceimporterbmfont.md#class_resourceimporterbmfont_property_compress)         | ``true`` |
+| [`Array`](class_array.md) | [`fallbacks`](class_resourceimporterbmfont.md#class_resourceimporterbmfont_property_fallbacks)       | ``[]``   |
+| [`int`](class_int.md)     | [`scaling_mode`](class_resourceimporterbmfont.md#class_resourceimporterbmfont_property_scaling_mode) | ``2``    |
 
 <!-- rst-class:: classref-section-separator -->
 

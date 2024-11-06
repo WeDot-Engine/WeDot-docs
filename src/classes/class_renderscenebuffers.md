@@ -23,7 +23,7 @@ Abstract scene buffers object, created for each viewport for which 3D rendering 
 
 |||
 |:-:|:--|
-| `void` | [`configure`](#class_renderscenebuffers_method_configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) |
+| `void` | [`configure`](class_renderscenebuffers.md#class_renderscenebuffers_method_configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

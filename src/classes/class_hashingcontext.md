@@ -81,9 +81,9 @@ The [HashType](#enum_hashingcontext_hashtype) enum shows the supported hashing a
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](#class_hashingcontext_method_finish) ( )                                                      |
-| [Error](#enum_@globalscope_error)             | [`start`](#class_hashingcontext_method_start) ( type: [HashType](#enum_hashingcontext_hashtype) )        |
-| [Error](#enum_@globalscope_error)             | [`update`](#class_hashingcontext_method_update) ( chunk: [`PackedByteArray`](class_packedbytearray.md) ) |
+| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](class_hashingcontext.md#class_hashingcontext_method_finish) ( )                                                      |
+| [Error](#enum_@globalscope_error)             | [`start`](class_hashingcontext.md#class_hashingcontext_method_start) ( type: [HashType](#enum_hashingcontext_hashtype) )        |
+| [Error](#enum_@globalscope_error)             | [`update`](class_hashingcontext.md#class_hashingcontext_method_update) ( chunk: [`PackedByteArray`](class_packedbytearray.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -133,7 +133,7 @@ Closes the current context, and return the computed hash.
 
 [Error](#enum_@globalscope_error) **start** ( type: [HashType](#enum_hashingcontext_hashtype) )<div id="class_hashingcontext_method_start"></div>
 
-Starts a new hash computation of the given `type` (e.g. [`HASH_SHA256`](#class_hashingcontext_constant_hash_sha256) to start computation of an SHA-256).
+Starts a new hash computation of the given `type` (e.g. [`HASH_SHA256`](class_hashingcontext.md#class_hashingcontext_constant_hash_sha256) to start computation of an SHA-256).
 
 <!-- rst-class:: classref-item-separator -->
 

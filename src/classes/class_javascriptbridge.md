@@ -21,14 +21,14 @@ The JavaScriptBridge singleton is implemented only in the Web export. It's used 
 
 |||
 |:-:|:--|
-| [`JavaScriptObject`](class_javascriptobject.md) | [`create_callback`](#class_javascriptbridge_method_create_callback) ( callable: [`Callable`](class_callable.md) )                                                                                                                |
-| [`Variant`](class_variant.md)                   | [`create_object`](#class_javascriptbridge_method_create_object) ( object: [`String`](class_string.md), ... ) vararg[^vararg]                                                                                                     |
-| `void`                                          | [`download_buffer`](#class_javascriptbridge_method_download_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md), name: [`String`](class_string.md), mime: [`String`](class_string.md) = "application/octet-stream" ) |
-| [`Variant`](class_variant.md)                   | [`eval`](#class_javascriptbridge_method_eval) ( code: [`String`](class_string.md), use_global_execution_context: [`bool`](class_bool.md) = false )                                                                               |
-| `void`                                          | [`force_fs_sync`](#class_javascriptbridge_method_force_fs_sync) ( )                                                                                                                                                              |
-| [`JavaScriptObject`](class_javascriptobject.md) | [`get_interface`](#class_javascriptbridge_method_get_interface) ( interface: [`String`](class_string.md) )                                                                                                                       |
-| [`bool`](class_bool.md)                         | [`pwa_needs_update`](#class_javascriptbridge_method_pwa_needs_update) ( ) const[^const]                                                                                                                                          |
-| [Error](#enum_@globalscope_error)               | [`pwa_update`](#class_javascriptbridge_method_pwa_update) ( )                                                                                                                                                                    |
+| [`JavaScriptObject`](class_javascriptobject.md) | [`create_callback`](class_javascriptbridge.md#class_javascriptbridge_method_create_callback) ( callable: [`Callable`](class_callable.md) )                                                                                                                |
+| [`Variant`](class_variant.md)                   | [`create_object`](class_javascriptbridge.md#class_javascriptbridge_method_create_object) ( object: [`String`](class_string.md), ... ) vararg[^vararg]                                                                                                     |
+| `void`                                          | [`download_buffer`](class_javascriptbridge.md#class_javascriptbridge_method_download_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md), name: [`String`](class_string.md), mime: [`String`](class_string.md) = "application/octet-stream" ) |
+| [`Variant`](class_variant.md)                   | [`eval`](class_javascriptbridge.md#class_javascriptbridge_method_eval) ( code: [`String`](class_string.md), use_global_execution_context: [`bool`](class_bool.md) = false )                                                                               |
+| `void`                                          | [`force_fs_sync`](class_javascriptbridge.md#class_javascriptbridge_method_force_fs_sync) ( )                                                                                                                                                              |
+| [`JavaScriptObject`](class_javascriptobject.md) | [`get_interface`](class_javascriptbridge.md#class_javascriptbridge_method_get_interface) ( interface: [`String`](class_string.md) )                                                                                                                       |
+| [`bool`](class_bool.md)                         | [`pwa_needs_update`](class_javascriptbridge.md#class_javascriptbridge_method_pwa_needs_update) ( ) const[^const]                                                                                                                                          |
+| [Error](#enum_@globalscope_error)               | [`pwa_update`](class_javascriptbridge.md#class_javascriptbridge_method_pwa_update) ( )                                                                                                                                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -40,7 +40,7 @@ The JavaScriptBridge singleton is implemented only in the Web export. It's used 
 
 **pwa_update_available** ( ) <div id="class_javascriptbridge_signal_pwa_update_available"></div>
 
-Emitted when an update for this progressive web app has been detected but is waiting to be activated because a previous version is active. See [`pwa_update`](#class_javascriptbridge_method_pwa_update) to force the update to take place immediately.
+Emitted when an update for this progressive web app has been detected but is waiting to be activated because a previous version is active. See [`pwa_update`](class_javascriptbridge.md#class_javascriptbridge_method_pwa_update) to force the update to take place immediately.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -76,7 +76,7 @@ Prompts the user to download a file containing the specified `buffer`. The file 
 
  **Note:** The browser may override the [*MIME type*](https://en.wikipedia.org/wiki/Media_type) provided based on the file `name`'s extension.
 
- **Note:** Browsers might block the download if [`download_buffer`](#class_javascriptbridge_method_download_buffer) is not being called from a user interaction (e.g. button click).
+ **Note:** Browsers might block the download if [`download_buffer`](class_javascriptbridge.md#class_javascriptbridge_method_download_buffer) is not being called from a user interaction (e.g. button click).
 
  **Note:** Browsers might ask the user for permission or block the download if multiple download requests are made in a quick succession.
 
@@ -138,7 +138,7 @@ Performs the live update of the progressive web app. Forcing the new version to 
 
  **Note:** Your application will be **reloaded in all browser tabs**.
 
- **Note:** Only relevant when exported as a Progressive Web App and [`pwa_needs_update`](#class_javascriptbridge_method_pwa_needs_update) returns `true`.
+ **Note:** Only relevant when exported as a Progressive Web App and [`pwa_needs_update`](class_javascriptbridge.md#class_javascriptbridge_method_pwa_needs_update) returns `true`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

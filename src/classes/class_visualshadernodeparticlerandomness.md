@@ -19,7 +19,7 @@ Randomness node will output pseudo-random values of the given type based on the 
 
 |||
 |:-:|:--|
-| [OpType](#enum_visualshadernodeparticlerandomness_optype) | [`op_type`](#class_visualshadernodeparticlerandomness_property_op_type) | ``0`` |
+| [OpType](#enum_visualshadernodeparticlerandomness_optype) | [`op_type`](class_visualshadernodeparticlerandomness.md#class_visualshadernodeparticlerandomness_property_op_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

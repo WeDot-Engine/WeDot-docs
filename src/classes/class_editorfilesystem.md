@@ -15,21 +15,21 @@ Resource filesystem, as the editor sees it.
 
 This object holds information of all resources in the filesystem, their types, etc.
 
- **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_resource_filesystem`](#class_editorinterface_method_get_resource_filesystem).
+ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using [`EditorInterface.get_resource_filesystem`](class_editorinterface.md#class_editorinterface_method_get_resource_filesystem).
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                                       | [`get_file_type`](#class_editorfilesystem_method_get_file_type) ( path: [`String`](class_string.md) ) const[^const]            |
-| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem`](#class_editorfilesystem_method_get_filesystem) ( )                                                          |
-| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem_path`](#class_editorfilesystem_method_get_filesystem_path) ( path: [`String`](class_string.md) )              |
-| [`float`](class_float.md)                                         | [`get_scanning_progress`](#class_editorfilesystem_method_get_scanning_progress) ( ) const[^const]                              |
-| [`bool`](class_bool.md)                                           | [`is_scanning`](#class_editorfilesystem_method_is_scanning) ( ) const[^const]                                                  |
-| `void`                                                            | [`reimport_files`](#class_editorfilesystem_method_reimport_files) ( files: [`PackedStringArray`](class_packedstringarray.md) ) |
-| `void`                                                            | [`scan`](#class_editorfilesystem_method_scan) ( )                                                                              |
-| `void`                                                            | [`scan_sources`](#class_editorfilesystem_method_scan_sources) ( )                                                              |
-| `void`                                                            | [`update_file`](#class_editorfilesystem_method_update_file) ( path: [`String`](class_string.md) )                              |
+| [`String`](class_string.md)                                       | [`get_file_type`](class_editorfilesystem.md#class_editorfilesystem_method_get_file_type) ( path: [`String`](class_string.md) ) const[^const]            |
+| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem`](class_editorfilesystem.md#class_editorfilesystem_method_get_filesystem) ( )                                                          |
+| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem_path`](class_editorfilesystem.md#class_editorfilesystem_method_get_filesystem_path) ( path: [`String`](class_string.md) )              |
+| [`float`](class_float.md)                                         | [`get_scanning_progress`](class_editorfilesystem.md#class_editorfilesystem_method_get_scanning_progress) ( ) const[^const]                              |
+| [`bool`](class_bool.md)                                           | [`is_scanning`](class_editorfilesystem.md#class_editorfilesystem_method_is_scanning) ( ) const[^const]                                                  |
+| `void`                                                            | [`reimport_files`](class_editorfilesystem.md#class_editorfilesystem_method_reimport_files) ( files: [`PackedStringArray`](class_packedstringarray.md) ) |
+| `void`                                                            | [`scan`](class_editorfilesystem.md#class_editorfilesystem_method_scan) ( )                                                                              |
+| `void`                                                            | [`scan_sources`](class_editorfilesystem.md#class_editorfilesystem_method_scan_sources) ( )                                                              |
+| `void`                                                            | [`update_file`](class_editorfilesystem.md#class_editorfilesystem_method_update_file) ( path: [`String`](class_string.md) )                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -155,9 +155,9 @@ Returns `true` if the filesystem is being scanned.
 
 Reimports a set of files. Call this if these files or their `.import` files were directly edited by script or an external program.
 
-If the file type changed or the file was newly created, use [`update_file`](#class_editorfilesystem_method_update_file) or [`scan`](#class_editorfilesystem_method_scan).
+If the file type changed or the file was newly created, use [`update_file`](class_editorfilesystem.md#class_editorfilesystem_method_update_file) or [`scan`](class_editorfilesystem.md#class_editorfilesystem_method_scan).
 
- **Note:** This function blocks until the import is finished. However, the main loop iteration, including timers and [`Node._process`](#class_node_private_method__process), will occur during the import process due to progress bar updates. Avoid calls to [`reimport_files`](#class_editorfilesystem_method_reimport_files) or [`scan`](#class_editorfilesystem_method_scan) while an import is in progress.
+ **Note:** This function blocks until the import is finished. However, the main loop iteration, including timers and [`Node._process`](class_node.md#class_node_private_method__process), will occur during the import process due to progress bar updates. Avoid calls to [`reimport_files`](class_editorfilesystem.md#class_editorfilesystem_method_reimport_files) or [`scan`](class_editorfilesystem.md#class_editorfilesystem_method_scan) while an import is in progress.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -189,7 +189,7 @@ Check if the source of any imported resource changed.
 
 Add a file in an existing directory, or schedule file information to be updated on editor restart. Can be used to update text files saved by an external program.
 
-This will not import the file. To reimport, call [`reimport_files`](#class_editorfilesystem_method_reimport_files) or [`scan`](#class_editorfilesystem_method_scan) methods.
+This will not import the file. To reimport, call [`reimport_files`](class_editorfilesystem.md#class_editorfilesystem_method_reimport_files) or [`scan`](class_editorfilesystem.md#class_editorfilesystem_method_scan) methods.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

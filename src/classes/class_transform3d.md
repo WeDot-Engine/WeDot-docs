@@ -11,7 +11,7 @@ A 3×4 matrix representing a 3D transformation.
 
 ## 描述
 
-The **Transform3D** built-in [`Variant`](class_variant.md) type is a 3×4 matrix representing a transformation in 3D space. It contains a [`Basis`](class_basis.md), which on its own can represent rotation, scale, and shear. Additionally, combined with its own [`origin`](#class_transform3d_property_origin), the transform can also represent a translation.
+The **Transform3D** built-in [`Variant`](class_variant.md) type is a 3×4 matrix representing a transformation in 3D space. It contains a [`Basis`](class_basis.md), which on its own can represent rotation, scale, and shear. Additionally, combined with its own [`origin`](class_transform3d.md#class_transform3d_property_origin), the transform can also represent a translation.
 
 For a general introduction, see the [*Matrices and transforms*](../tutorials/math/matrices_and_transforms) tutorial.
 
@@ -23,36 +23,36 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 |||
 |:-:|:--|
-| [`Basis`](class_basis.md)     | [`basis`](#class_transform3d_property_basis)   | ``Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)`` |
-| [`Vector3`](class_vector3.md) | [`origin`](#class_transform3d_property_origin) | ``Vector3(0, 0, 0)``                 |
+| [`Basis`](class_basis.md)     | [`basis`](class_transform3d.md#class_transform3d_property_basis)   | ``Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)`` |
+| [`Vector3`](class_vector3.md) | [`origin`](class_transform3d.md#class_transform3d_property_origin) | ``Vector3(0, 0, 0)``                 |
 
 ## 构造函数
 
 |||
 |:-:|:--|
-| [`Transform3D`](class_transform3d.md) | [`Transform3D`](#class_transform3d_constructor_transform3d) ( )                                                                                                                                                            |
-| [`Transform3D`](class_transform3d.md) | [`Transform3D`](#class_transform3d_constructor_transform3d) ( from: [`Transform3D`](class_transform3d.md) )                                                                                                                |
-| [`Transform3D`](class_transform3d.md) | [`Transform3D`](#class_transform3d_constructor_transform3d) ( basis: [`Basis`](class_basis.md), origin: [`Vector3`](class_vector3.md) )                                                                                    |
-| [`Transform3D`](class_transform3d.md) | [`Transform3D`](#class_transform3d_constructor_transform3d) ( from: [`Projection`](class_projection.md) )                                                                                                                  |
-| [`Transform3D`](class_transform3d.md) | [`Transform3D`](#class_transform3d_constructor_transform3d) ( x_axis: [`Vector3`](class_vector3.md), y_axis: [`Vector3`](class_vector3.md), z_axis: [`Vector3`](class_vector3.md), origin: [`Vector3`](class_vector3.md) ) |
+| [`Transform3D`](class_transform3d.md) | [`Transform3D`](class_transform3d.md#class_transform3d_constructor_transform3d) ( )                                                                                                                                                            |
+| [`Transform3D`](class_transform3d.md) | [`Transform3D`](class_transform3d.md#class_transform3d_constructor_transform3d) ( from: [`Transform3D`](class_transform3d.md) )                                                                                                                |
+| [`Transform3D`](class_transform3d.md) | [`Transform3D`](class_transform3d.md#class_transform3d_constructor_transform3d) ( basis: [`Basis`](class_basis.md), origin: [`Vector3`](class_vector3.md) )                                                                                    |
+| [`Transform3D`](class_transform3d.md) | [`Transform3D`](class_transform3d.md#class_transform3d_constructor_transform3d) ( from: [`Projection`](class_projection.md) )                                                                                                                  |
+| [`Transform3D`](class_transform3d.md) | [`Transform3D`](class_transform3d.md#class_transform3d_constructor_transform3d) ( x_axis: [`Vector3`](class_vector3.md), y_axis: [`Vector3`](class_vector3.md), z_axis: [`Vector3`](class_vector3.md), origin: [`Vector3`](class_vector3.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Transform3D`](class_transform3d.md) | [`affine_inverse`](#class_transform3d_method_affine_inverse) ( ) const[^const]                                                                                                                                       |
-| [`Transform3D`](class_transform3d.md) | [`interpolate_with`](#class_transform3d_method_interpolate_with) ( xform: [`Transform3D`](class_transform3d.md), weight: [`float`](class_float.md) ) const[^const]                                                   |
-| [`Transform3D`](class_transform3d.md) | [`inverse`](#class_transform3d_method_inverse) ( ) const[^const]                                                                                                                                                     |
-| [`bool`](class_bool.md)               | [`is_equal_approx`](#class_transform3d_method_is_equal_approx) ( xform: [`Transform3D`](class_transform3d.md) ) const[^const]                                                                                        |
-| [`bool`](class_bool.md)               | [`is_finite`](#class_transform3d_method_is_finite) ( ) const[^const]                                                                                                                                                 |
-| [`Transform3D`](class_transform3d.md) | [`looking_at`](#class_transform3d_method_looking_at) ( target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false ) const[^const] |
-| [`Transform3D`](class_transform3d.md) | [`orthonormalized`](#class_transform3d_method_orthonormalized) ( ) const[^const]                                                                                                                                     |
-| [`Transform3D`](class_transform3d.md) | [`rotated`](#class_transform3d_method_rotated) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]                                                                               |
-| [`Transform3D`](class_transform3d.md) | [`rotated_local`](#class_transform3d_method_rotated_local) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]                                                                   |
-| [`Transform3D`](class_transform3d.md) | [`scaled`](#class_transform3d_method_scaled) ( scale: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                  |
-| [`Transform3D`](class_transform3d.md) | [`scaled_local`](#class_transform3d_method_scaled_local) ( scale: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                      |
-| [`Transform3D`](class_transform3d.md) | [`translated`](#class_transform3d_method_translated) ( offset: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                         |
-| [`Transform3D`](class_transform3d.md) | [`translated_local`](#class_transform3d_method_translated_local) ( offset: [`Vector3`](class_vector3.md) ) const[^const]                                                                                             |
+| [`Transform3D`](class_transform3d.md) | [`affine_inverse`](class_transform3d.md#class_transform3d_method_affine_inverse) ( ) const[^const]                                                                                                                                       |
+| [`Transform3D`](class_transform3d.md) | [`interpolate_with`](class_transform3d.md#class_transform3d_method_interpolate_with) ( xform: [`Transform3D`](class_transform3d.md), weight: [`float`](class_float.md) ) const[^const]                                                   |
+| [`Transform3D`](class_transform3d.md) | [`inverse`](class_transform3d.md#class_transform3d_method_inverse) ( ) const[^const]                                                                                                                                                     |
+| [`bool`](class_bool.md)               | [`is_equal_approx`](class_transform3d.md#class_transform3d_method_is_equal_approx) ( xform: [`Transform3D`](class_transform3d.md) ) const[^const]                                                                                        |
+| [`bool`](class_bool.md)               | [`is_finite`](class_transform3d.md#class_transform3d_method_is_finite) ( ) const[^const]                                                                                                                                                 |
+| [`Transform3D`](class_transform3d.md) | [`looking_at`](class_transform3d.md#class_transform3d_method_looking_at) ( target: [`Vector3`](class_vector3.md), up: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0), use_model_front: [`bool`](class_bool.md) = false ) const[^const] |
+| [`Transform3D`](class_transform3d.md) | [`orthonormalized`](class_transform3d.md#class_transform3d_method_orthonormalized) ( ) const[^const]                                                                                                                                     |
+| [`Transform3D`](class_transform3d.md) | [`rotated`](class_transform3d.md#class_transform3d_method_rotated) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]                                                                               |
+| [`Transform3D`](class_transform3d.md) | [`rotated_local`](class_transform3d.md#class_transform3d_method_rotated_local) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) ) const[^const]                                                                   |
+| [`Transform3D`](class_transform3d.md) | [`scaled`](class_transform3d.md#class_transform3d_method_scaled) ( scale: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                  |
+| [`Transform3D`](class_transform3d.md) | [`scaled_local`](class_transform3d.md#class_transform3d_method_scaled_local) ( scale: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                      |
+| [`Transform3D`](class_transform3d.md) | [`translated`](class_transform3d.md#class_transform3d_method_translated) ( offset: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                         |
+| [`Transform3D`](class_transform3d.md) | [`translated_local`](class_transform3d.md#class_transform3d_method_translated_local) ( offset: [`Vector3`](class_vector3.md) ) const[^const]                                                                                             |
 
 ## 运算符
 
@@ -80,7 +80,7 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 **IDENTITY** = ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` <div id="class_transform3d_constant_identity"></div>
 
-A transform with no translation, no rotation, and its scale being `1`. Its [`basis`](#class_transform3d_property_basis) is equal to [`Basis.IDENTITY`](#class_basis_constant_identity).
+A transform with no translation, no rotation, and its scale being `1`. Its [`basis`](class_transform3d.md#class_transform3d_property_basis) is equal to [`Basis.IDENTITY`](class_basis.md#class_basis_constant_identity).
 
 When multiplied by another [`Variant`](class_variant.md) such as [`AABB`](class_aabb.md) or another **Transform3D**, no transformation occurs.
 
@@ -88,19 +88,19 @@ When multiplied by another [`Variant`](class_variant.md) such as [`AABB`](class_
 
 **FLIP_X** = ``Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` <div id="class_transform3d_constant_flip_x"></div>
 
-**Transform3D** with mirroring applied perpendicular to the YZ plane. Its [`basis`](#class_transform3d_property_basis) is equal to [`Basis.FLIP_X`](#class_basis_constant_flip_x).
+**Transform3D** with mirroring applied perpendicular to the YZ plane. Its [`basis`](class_transform3d.md#class_transform3d_property_basis) is equal to [`Basis.FLIP_X`](class_basis.md#class_basis_constant_flip_x).
 
 <div id="_class_transform3d_constant_flip_y"></div>
 
 **FLIP_Y** = ``Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0)`` <div id="class_transform3d_constant_flip_y"></div>
 
-**Transform3D** with mirroring applied perpendicular to the XZ plane. Its [`basis`](#class_transform3d_property_basis) is equal to [`Basis.FLIP_Y`](#class_basis_constant_flip_y).
+**Transform3D** with mirroring applied perpendicular to the XZ plane. Its [`basis`](class_transform3d.md#class_transform3d_property_basis) is equal to [`Basis.FLIP_Y`](class_basis.md#class_basis_constant_flip_y).
 
 <div id="_class_transform3d_constant_flip_z"></div>
 
 **FLIP_Z** = ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0)`` <div id="class_transform3d_constant_flip_z"></div>
 
-**Transform3D** with mirroring applied perpendicular to the XY plane. Its [`basis`](#class_transform3d_property_basis) is equal to [`Basis.FLIP_Z`](#class_basis_constant_flip_z).
+**Transform3D** with mirroring applied perpendicular to the XY plane. Its [`basis`](class_transform3d.md#class_transform3d_property_basis) is equal to [`Basis.FLIP_Z`](class_basis.md#class_basis_constant_flip_z).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -112,7 +112,7 @@ When multiplied by another [`Variant`](class_variant.md) such as [`AABB`](class_
 
 [`Basis`](class_basis.md) **basis** = ``Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)`` <div id="class_transform3d_property_basis"></div>
 
-The [`Basis`](class_basis.md) of this transform. It is composed by 3 axes ([`Basis.x`](#class_basis_property_x), [`Basis.y`](#class_basis_property_y), and [`Basis.z`](#class_basis_property_z)). Together, these represent the transform's rotation, scale, and shear.
+The [`Basis`](class_basis.md) of this transform. It is composed by 3 axes ([`Basis.x`](class_basis.md#class_basis_property_x), [`Basis.y`](class_basis.md#class_basis_property_y), and [`Basis.z`](class_basis.md#class_basis_property_z)). Together, these represent the transform's rotation, scale, and shear.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -134,7 +134,7 @@ The translation offset of this transform. In 3D space, this can be seen as the p
 
 [`Transform3D`](class_transform3d.md) **Transform3D** ( )<div id="class_transform3d_constructor_transform3d"></div>
 
-Constructs a **Transform3D** identical to the [`IDENTITY`](#class_transform3d_constant_identity).
+Constructs a **Transform3D** identical to the [`IDENTITY`](class_transform3d.md#class_transform3d_constant_identity).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -168,7 +168,7 @@ Constructs a **Transform3D** from a [`Projection`](class_projection.md). Because
 
 Constructs a **Transform3D** from four [`Vector3`](class_vector3.md) values (also called matrix columns).
 
-The first three arguments are the [`basis`](#class_transform3d_property_basis)'s axes ([`Basis.x`](#class_basis_property_x), [`Basis.y`](#class_basis_property_y), and [`Basis.z`](#class_basis_property_z)).
+The first three arguments are the [`basis`](class_transform3d.md#class_transform3d_property_basis)'s axes ([`Basis.x`](class_basis.md#class_basis_property_x), [`Basis.y`](class_basis.md#class_basis_property_y), and [`Basis.z`](class_basis.md#class_basis_property_z)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -180,9 +180,9 @@ The first three arguments are the [`basis`](#class_transform3d_property_basis)'s
 
 [`Transform3D`](class_transform3d.md) **affine_inverse** ( ) const[^const]<div id="class_transform3d_method_affine_inverse"></div>
 
-Returns the inverted version of this transform. Unlike [`inverse`](#class_transform3d_method_inverse), this method works with almost any [`basis`](#class_transform3d_property_basis), including non-uniform ones, but is slower. See also [`Basis.inverse`](#class_basis_method_inverse).
+Returns the inverted version of this transform. Unlike [`inverse`](class_transform3d.md#class_transform3d_method_inverse), this method works with almost any [`basis`](class_transform3d.md#class_transform3d_property_basis), including non-uniform ones, but is slower. See also [`Basis.inverse`](class_basis.md#class_basis_method_inverse).
 
- **Note:** For this method to return correctly, the transform's [`basis`](#class_transform3d_property_basis) needs to have a determinant that is not exactly `0` (see [`Basis.determinant`](#class_basis_method_determinant)).
+ **Note:** For this method to return correctly, the transform's [`basis`](class_transform3d.md#class_transform3d_property_basis) needs to have a determinant that is not exactly `0` (see [`Basis.determinant`](class_basis.md#class_basis_method_determinant)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -204,9 +204,9 @@ The `weight` should be between `0.0` and `1.0` (inclusive). Values outside this 
 
 [`Transform3D`](class_transform3d.md) **inverse** ( ) const[^const]<div id="class_transform3d_method_inverse"></div>
 
-Returns the inverted version of this transform. See also [`Basis.inverse`](#class_basis_method_inverse).
+Returns the inverted version of this transform. See also [`Basis.inverse`](class_basis.md#class_basis_method_inverse).
 
- **Note:** For this method to return correctly, the transform's [`basis`](#class_transform3d_property_basis) needs to be *orthonormal* (see [`Basis.orthonormalized`](#class_basis_method_orthonormalized)). That means, the basis should only represent a rotation. If it does not, use [`affine_inverse`](#class_transform3d_method_affine_inverse) instead.
+ **Note:** For this method to return correctly, the transform's [`basis`](class_transform3d.md#class_transform3d_property_basis) needs to be *orthonormal* (see [`Basis.orthonormalized`](class_basis.md#class_basis_method_orthonormalized)). That means, the basis should only represent a rotation. If it does not, use [`affine_inverse`](class_transform3d.md#class_transform3d_method_affine_inverse) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -216,7 +216,7 @@ Returns the inverted version of this transform. See also [`Basis.inverse`](#clas
 
 [`bool`](class_bool.md) **is_equal_approx** ( xform: [`Transform3D`](class_transform3d.md) ) const[^const]<div id="class_transform3d_method_is_equal_approx"></div>
 
-Returns `true` if this transform and `xform` are approximately equal, by running [`@GlobalScope.is_equal_approx`](#class_@globalscope_method_is_equal_approx) on each component.
+Returns `true` if this transform and `xform` are approximately equal, by running [`@GlobalScope.is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -226,7 +226,7 @@ Returns `true` if this transform and `xform` are approximately equal, by running
 
 [`bool`](class_bool.md) **is_finite** ( ) const[^const]<div id="class_transform3d_method_is_finite"></div>
 
-Returns `true` if this transform is finite, by calling [`@GlobalScope.is_finite`](#class_@globalscope_method_is_finite) on each component.
+Returns `true` if this transform is finite, by calling [`@GlobalScope.is_finite`](class_@globalscope.md#class_@globalscope_method_is_finite) on each component.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -250,7 +250,7 @@ If `use_model_front` is `true`, the +Z axis (asset front) is treated as forward 
 
 [`Transform3D`](class_transform3d.md) **orthonormalized** ( ) const[^const]<div id="class_transform3d_method_orthonormalized"></div>
 
-Returns a copy of this transform with its [`basis`](#class_transform3d_property_basis) orthonormalized. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the axes have a length of `1`), which also means it can only represent rotation. See also [`Basis.orthonormalized`](#class_basis_method_orthonormalized).
+Returns a copy of this transform with its [`basis`](class_transform3d.md#class_transform3d_property_basis) orthonormalized. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the axes have a length of `1`), which also means it can only represent rotation. See also [`Basis.orthonormalized`](class_basis.md#class_basis_method_orthonormalized).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -352,7 +352,7 @@ This can be seen as transforming with respect to the local frame.
 
 Returns `true` if the components of both transforms are not equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_transform3d_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_transform3d.md#class_transform3d_method_is_equal_approx) instead, which is more reliable.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -400,11 +400,11 @@ This is the operation performed between parent and child [`Node3D`](class_node3d
 
  **Note:** If you need to only modify one attribute of this transform, consider using one of the following methods, instead:
 
-- For translation, see [`translated`](#class_transform3d_method_translated) or [`translated_local`](#class_transform3d_method_translated_local).
+- For translation, see [`translated`](class_transform3d.md#class_transform3d_method_translated) or [`translated_local`](class_transform3d.md#class_transform3d_method_translated_local).
 
-- For rotation, see [`rotated`](#class_transform3d_method_rotated) or [`rotated_local`](#class_transform3d_method_rotated_local).
+- For rotation, see [`rotated`](class_transform3d.md#class_transform3d_method_rotated) or [`rotated_local`](class_transform3d.md#class_transform3d_method_rotated_local).
 
-- For scale, see [`scaled`](#class_transform3d_method_scaled) or [`scaled_local`](#class_transform3d_method_scaled_local).
+- For scale, see [`scaled`](class_transform3d.md#class_transform3d_method_scaled) or [`scaled_local`](class_transform3d.md#class_transform3d_method_scaled_local).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -424,7 +424,7 @@ Transforms (multiplies) the [`Vector3`](class_vector3.md) by this transformation
 
 [`Transform3D`](class_transform3d.md) **operator *** ( right: [`float`](class_float.md) ) <div id="class_transform3d_operator_mul_float"></div>
 
-Multiplies all components of the **Transform3D** by the given [`float`](class_float.md), including the [`origin`](#class_transform3d_property_origin). This affects the transform's scale uniformly, scaling the [`basis`](#class_transform3d_property_basis).
+Multiplies all components of the **Transform3D** by the given [`float`](class_float.md), including the [`origin`](class_transform3d.md#class_transform3d_property_origin). This affects the transform's scale uniformly, scaling the [`basis`](class_transform3d.md#class_transform3d_property_basis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -434,7 +434,7 @@ Multiplies all components of the **Transform3D** by the given [`float`](class_fl
 
 [`Transform3D`](class_transform3d.md) **operator *** ( right: [`int`](class_int.md) ) <div id="class_transform3d_operator_mul_int"></div>
 
-Multiplies all components of the **Transform3D** by the given [`int`](class_int.md), including the [`origin`](#class_transform3d_property_origin). This affects the transform's scale uniformly, scaling the [`basis`](#class_transform3d_property_basis).
+Multiplies all components of the **Transform3D** by the given [`int`](class_int.md), including the [`origin`](class_transform3d.md#class_transform3d_property_origin). This affects the transform's scale uniformly, scaling the [`basis`](class_transform3d.md#class_transform3d_property_basis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -444,7 +444,7 @@ Multiplies all components of the **Transform3D** by the given [`int`](class_int.
 
 [`Transform3D`](class_transform3d.md) **operator /** ( right: [`float`](class_float.md) ) <div id="class_transform3d_operator_div_float"></div>
 
-Divides all components of the **Transform3D** by the given [`float`](class_float.md), including the [`origin`](#class_transform3d_property_origin). This affects the transform's scale uniformly, scaling the [`basis`](#class_transform3d_property_basis).
+Divides all components of the **Transform3D** by the given [`float`](class_float.md), including the [`origin`](class_transform3d.md#class_transform3d_property_origin). This affects the transform's scale uniformly, scaling the [`basis`](class_transform3d.md#class_transform3d_property_basis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -454,7 +454,7 @@ Divides all components of the **Transform3D** by the given [`float`](class_float
 
 [`Transform3D`](class_transform3d.md) **operator /** ( right: [`int`](class_int.md) ) <div id="class_transform3d_operator_div_int"></div>
 
-Divides all components of the **Transform3D** by the given [`int`](class_int.md), including the [`origin`](#class_transform3d_property_origin). This affects the transform's scale uniformly, scaling the [`basis`](#class_transform3d_property_basis).
+Divides all components of the **Transform3D** by the given [`int`](class_int.md), including the [`origin`](class_transform3d.md#class_transform3d_property_origin). This affects the transform's scale uniformly, scaling the [`basis`](class_transform3d.md#class_transform3d_property_basis).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -466,7 +466,7 @@ Divides all components of the **Transform3D** by the given [`int`](class_int.md)
 
 Returns `true` if the components of both transforms are exactly equal.
 
- **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](#class_transform3d_method_is_equal_approx) instead, which is more reliable.
+ **Note:** Due to floating-point precision errors, consider using [`is_equal_approx`](class_transform3d.md#class_transform3d_method_is_equal_approx) instead, which is more reliable.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

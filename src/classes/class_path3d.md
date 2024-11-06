@@ -21,7 +21,7 @@ Note that the path is considered as relative to the moved nodes (children of [`P
 
 |||
 |:-:|:--|
-| [`Curve3D`](class_curve3d.md) | [`curve`](#class_path3d_property_curve) |
+| [`Curve3D`](class_curve3d.md) | [`curve`](class_path3d.md#class_path3d_property_curve) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -33,7 +33,7 @@ Note that the path is considered as relative to the moved nodes (children of [`P
 
 **curve_changed** ( ) <div id="class_path3d_signal_curve_changed"></div>
 
-Emitted when the [`curve`](#class_path3d_property_curve) changes.
+Emitted when the [`curve`](class_path3d.md#class_path3d_property_curve) changes.
 
 <!-- rst-class:: classref-section-separator -->
 

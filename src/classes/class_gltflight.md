@@ -19,23 +19,23 @@ Represents a light as defined by the `KHR_lights_punctual` GLTF extension.
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)   | [`color`](#class_gltflight_property_color)                       | ``Color(1, 1, 1, 1)`` |
-| [`float`](class_float.md)   | [`inner_cone_angle`](#class_gltflight_property_inner_cone_angle) | ``0.0``               |
-| [`float`](class_float.md)   | [`intensity`](#class_gltflight_property_intensity)               | ``1.0``               |
-| [`String`](class_string.md) | [`light_type`](#class_gltflight_property_light_type)             | ``""``                |
-| [`float`](class_float.md)   | [`outer_cone_angle`](#class_gltflight_property_outer_cone_angle) | ``0.785398``          |
-| [`float`](class_float.md)   | [`range`](#class_gltflight_property_range)                       | ``inf``               |
+| [`Color`](class_color.md)   | [`color`](class_gltflight.md#class_gltflight_property_color)                       | ``Color(1, 1, 1, 1)`` |
+| [`float`](class_float.md)   | [`inner_cone_angle`](class_gltflight.md#class_gltflight_property_inner_cone_angle) | ``0.0``               |
+| [`float`](class_float.md)   | [`intensity`](class_gltflight.md#class_gltflight_property_intensity)               | ``1.0``               |
+| [`String`](class_string.md) | [`light_type`](class_gltflight.md#class_gltflight_property_light_type)             | ``""``                |
+| [`float`](class_float.md)   | [`outer_cone_angle`](class_gltflight.md#class_gltflight_property_outer_cone_angle) | ``0.785398``          |
+| [`float`](class_float.md)   | [`range`](class_gltflight.md#class_gltflight_property_range)                       | ``inf``               |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`GLTFLight`](class_gltflight.md)   | [`from_dictionary`](#class_gltflight_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]                                             |
-| [`GLTFLight`](class_gltflight.md)   | [`from_node`](#class_gltflight_method_from_node) ( light_node: [`Light3D`](class_light3d.md) ) static[^static]                                                               |
-| [`Variant`](class_variant.md)       | [`get_additional_data`](#class_gltflight_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                              | [`set_additional_data`](#class_gltflight_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
-| [`Dictionary`](class_dictionary.md) | [`to_dictionary`](#class_gltflight_method_to_dictionary) ( ) const[^const]                                                                                                   |
-| [`Light3D`](class_light3d.md)       | [`to_node`](#class_gltflight_method_to_node) ( ) const[^const]                                                                                                               |
+| [`GLTFLight`](class_gltflight.md)   | [`from_dictionary`](class_gltflight.md#class_gltflight_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]                                             |
+| [`GLTFLight`](class_gltflight.md)   | [`from_node`](class_gltflight.md#class_gltflight_method_from_node) ( light_node: [`Light3D`](class_light3d.md) ) static[^static]                                                               |
+| [`Variant`](class_variant.md)       | [`get_additional_data`](class_gltflight.md#class_gltflight_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| `void`                              | [`set_additional_data`](class_gltflight.md#class_gltflight_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+| [`Dictionary`](class_dictionary.md) | [`to_dictionary`](class_gltflight.md#class_gltflight_method_to_dictionary) ( ) const[^const]                                                                                                   |
+| [`Light3D`](class_light3d.md)       | [`to_node`](class_gltflight.md#class_gltflight_method_to_node) ( ) const[^const]                                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 

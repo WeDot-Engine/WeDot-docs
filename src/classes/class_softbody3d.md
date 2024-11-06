@@ -15,7 +15,7 @@ A deformable 3D physics mesh.
 
 A deformable 3D physics mesh. Used to create elastic or deformable objects such as cloth, rubber, or other flexible materials.
 
-Additionally, **SoftBody3D** is subject to wind forces defined in [`Area3D`](class_area3d.md) (see [`Area3D.wind_source_path`](#class_area3d_property_wind_source_path), [`Area3D.wind_force_magnitude`](#class_area3d_property_wind_force_magnitude), and [`Area3D.wind_attenuation_factor`](#class_area3d_property_wind_attenuation_factor)).
+Additionally, **SoftBody3D** is subject to wind forces defined in [`Area3D`](class_area3d.md) (see [`Area3D.wind_source_path`](class_area3d.md#class_area3d_property_wind_source_path), [`Area3D.wind_force_magnitude`](class_area3d.md#class_area3d_property_wind_force_magnitude), and [`Area3D.wind_attenuation_factor`](class_area3d.md#class_area3d_property_wind_attenuation_factor)).
 
  **Note:** There are many known bugs in **SoftBody3D**. Therefore, it's not recommended to use them for things that can affect gameplay (such as trampolines).
 
@@ -23,33 +23,33 @@ Additionally, **SoftBody3D** is subject to wind forces defined in [`Area3D`](cla
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                       | [`collision_layer`](#class_softbody3d_property_collision_layer)                 | ``1``            |
-| [`int`](class_int.md)                       | [`collision_mask`](#class_softbody3d_property_collision_mask)                   | ``1``            |
-| [`float`](class_float.md)                   | [`damping_coefficient`](#class_softbody3d_property_damping_coefficient)         | ``0.01``         |
-| [DisableMode](#enum_softbody3d_disablemode) | [`disable_mode`](#class_softbody3d_property_disable_mode)                       | ``0``            |
-| [`float`](class_float.md)                   | [`drag_coefficient`](#class_softbody3d_property_drag_coefficient)               | ``0.0``          |
-| [`float`](class_float.md)                   | [`linear_stiffness`](#class_softbody3d_property_linear_stiffness)               | ``0.5``          |
-| [`NodePath`](class_nodepath.md)             | [`parent_collision_ignore`](#class_softbody3d_property_parent_collision_ignore) | ``NodePath("")`` |
-| [`float`](class_float.md)                   | [`pressure_coefficient`](#class_softbody3d_property_pressure_coefficient)       | ``0.0``          |
-| [`bool`](class_bool.md)                     | [`ray_pickable`](#class_softbody3d_property_ray_pickable)                       | ``true``         |
-| [`int`](class_int.md)                       | [`simulation_precision`](#class_softbody3d_property_simulation_precision)       | ``5``            |
-| [`float`](class_float.md)                   | [`total_mass`](#class_softbody3d_property_total_mass)                           | ``1.0``          |
+| [`int`](class_int.md)                       | [`collision_layer`](class_softbody3d.md#class_softbody3d_property_collision_layer)                 | ``1``            |
+| [`int`](class_int.md)                       | [`collision_mask`](class_softbody3d.md#class_softbody3d_property_collision_mask)                   | ``1``            |
+| [`float`](class_float.md)                   | [`damping_coefficient`](class_softbody3d.md#class_softbody3d_property_damping_coefficient)         | ``0.01``         |
+| [DisableMode](#enum_softbody3d_disablemode) | [`disable_mode`](class_softbody3d.md#class_softbody3d_property_disable_mode)                       | ``0``            |
+| [`float`](class_float.md)                   | [`drag_coefficient`](class_softbody3d.md#class_softbody3d_property_drag_coefficient)               | ``0.0``          |
+| [`float`](class_float.md)                   | [`linear_stiffness`](class_softbody3d.md#class_softbody3d_property_linear_stiffness)               | ``0.5``          |
+| [`NodePath`](class_nodepath.md)             | [`parent_collision_ignore`](class_softbody3d.md#class_softbody3d_property_parent_collision_ignore) | ``NodePath("")`` |
+| [`float`](class_float.md)                   | [`pressure_coefficient`](class_softbody3d.md#class_softbody3d_property_pressure_coefficient)       | ``0.0``          |
+| [`bool`](class_bool.md)                     | [`ray_pickable`](class_softbody3d.md#class_softbody3d_property_ray_pickable)                       | ``true``         |
+| [`int`](class_int.md)                       | [`simulation_precision`](class_softbody3d.md#class_softbody3d_property_simulation_precision)       | ``5``            |
+| [`float`](class_float.md)                   | [`total_mass`](class_softbody3d.md#class_softbody3d_property_total_mass)                           | ``1.0``          |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                            | [`add_collision_exception_with`](#class_softbody3d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                |
-| [Array](class_array.md) [`PhysicsBody3D`](class_physicsbody3d.md) | [`get_collision_exceptions`](#class_softbody3d_method_get_collision_exceptions) ( )                                                                                                                      |
-| [`bool`](class_bool.md)                                           | [`get_collision_layer_value`](#class_softbody3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                  |
-| [`bool`](class_bool.md)                                           | [`get_collision_mask_value`](#class_softbody3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                    |
-| [`RID`](class_rid.md)                                             | [`get_physics_rid`](#class_softbody3d_method_get_physics_rid) ( ) const[^const]                                                                                                                          |
-| [`Vector3`](class_vector3.md)                                     | [`get_point_transform`](#class_softbody3d_method_get_point_transform) ( point_index: [`int`](class_int.md) )                                                                                             |
-| [`bool`](class_bool.md)                                           | [`is_point_pinned`](#class_softbody3d_method_is_point_pinned) ( point_index: [`int`](class_int.md) ) const[^const]                                                                                       |
-| `void`                                                            | [`remove_collision_exception_with`](#class_softbody3d_method_remove_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                          |
-| `void`                                                            | [`set_collision_layer_value`](#class_softbody3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                |
-| `void`                                                            | [`set_collision_mask_value`](#class_softbody3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                  |
-| `void`                                                            | [`set_point_pinned`](#class_softbody3d_method_set_point_pinned) ( point_index: [`int`](class_int.md), pinned: [`bool`](class_bool.md), attachment_path: [`NodePath`](class_nodepath.md) = NodePath("") ) |
+| `void`                                                            | [`add_collision_exception_with`](class_softbody3d.md#class_softbody3d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                |
+| [Array](class_array.md) [`PhysicsBody3D`](class_physicsbody3d.md) | [`get_collision_exceptions`](class_softbody3d.md#class_softbody3d_method_get_collision_exceptions) ( )                                                                                                                      |
+| [`bool`](class_bool.md)                                           | [`get_collision_layer_value`](class_softbody3d.md#class_softbody3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                  |
+| [`bool`](class_bool.md)                                           | [`get_collision_mask_value`](class_softbody3d.md#class_softbody3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                    |
+| [`RID`](class_rid.md)                                             | [`get_physics_rid`](class_softbody3d.md#class_softbody3d_method_get_physics_rid) ( ) const[^const]                                                                                                                          |
+| [`Vector3`](class_vector3.md)                                     | [`get_point_transform`](class_softbody3d.md#class_softbody3d_method_get_point_transform) ( point_index: [`int`](class_int.md) )                                                                                             |
+| [`bool`](class_bool.md)                                           | [`is_point_pinned`](class_softbody3d.md#class_softbody3d_method_is_point_pinned) ( point_index: [`int`](class_int.md) ) const[^const]                                                                                       |
+| `void`                                                            | [`remove_collision_exception_with`](class_softbody3d.md#class_softbody3d_method_remove_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                          |
+| `void`                                                            | [`set_collision_layer_value`](class_softbody3d.md#class_softbody3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                |
+| `void`                                                            | [`set_collision_mask_value`](class_softbody3d.md#class_softbody3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                  |
+| `void`                                                            | [`set_point_pinned`](class_softbody3d.md#class_softbody3d_method_set_point_pinned) ( point_index: [`int`](class_int.md), pinned: [`bool`](class_bool.md), attachment_path: [`NodePath`](class_nodepath.md) = NodePath("") ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -65,7 +65,7 @@ enum **DisableMode**: <div id="enum_softbody3d_disablemode"></div>
 
 [DisableMode](#enum_softbody3d_disablemode) **DISABLE_MODE_REMOVE** = ``0``
 
-When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled), remove from the physics simulation to stop all physics interactions with this **SoftBody3D**.
+When [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled), remove from the physics simulation to stop all physics interactions with this **SoftBody3D**.
 
 Automatically re-added to the physics simulation when the [`Node`](class_node.md) is processed again.
 
@@ -73,7 +73,7 @@ Automatically re-added to the physics simulation when the [`Node`](class_node.md
 
 [DisableMode](#enum_softbody3d_disablemode) **DISABLE_MODE_KEEP_ACTIVE** = ``1``
 
-When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled), do not affect the physics simulation.
+When [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled), do not affect the physics simulation.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -88,7 +88,7 @@ When [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.P
 - `void` **set_collision_layer** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_collision_layer** ( )
 
-The physics layers this SoftBody3D **is in**. Collision objects can exist in one or more of 32 different layers. See also [`collision_mask`](#class_softbody3d_property_collision_mask).
+The physics layers this SoftBody3D **is in**. Collision objects can exist in one or more of 32 different layers. See also [`collision_mask`](class_softbody3d.md#class_softbody3d_property_collision_mask).
 
  **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
 
@@ -103,7 +103,7 @@ The physics layers this SoftBody3D **is in**. Collision objects can exist in one
 - `void` **set_collision_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_collision_mask** ( )
 
-The physics layers this SoftBody3D **scans**. Collision objects can scan one or more of 32 different layers. See also [`collision_layer`](#class_softbody3d_property_collision_layer).
+The physics layers this SoftBody3D **scans**. Collision objects can scan one or more of 32 different layers. See also [`collision_layer`](class_softbody3d.md#class_softbody3d_property_collision_layer).
 
  **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
 
@@ -131,7 +131,7 @@ The body's damping coefficient. Higher values will slow down the body more notic
 - `void` **set_disable_mode** ( value: [DisableMode](#enum_softbody3d_disablemode) )
 - [DisableMode](#enum_softbody3d_disablemode) **get_disable_mode** ( )
 
-Defines the behavior in physics when [`Node.process_mode`](#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](#class_node_constant_process_mode_disabled). See [DisableMode](#enum_softbody3d_disablemode) for more details about the different modes.
+Defines the behavior in physics when [`Node.process_mode`](class_node.md#class_node_property_process_mode) is set to [`Node.PROCESS_MODE_DISABLED`](class_node.md#class_node_constant_process_mode_disabled). See [DisableMode](#enum_softbody3d_disablemode) for more details about the different modes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -256,7 +256,7 @@ Returns an array of nodes that were added as collision exceptions for this body.
 
 [`bool`](class_bool.md) **get_collision_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_softbody3d_method_get_collision_layer_value"></div>
 
-Returns whether or not the specified layer of the [`collision_layer`](#class_softbody3d_property_collision_layer) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_layer`](class_softbody3d.md#class_softbody3d_property_collision_layer) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -266,7 +266,7 @@ Returns whether or not the specified layer of the [`collision_layer`](#class_sof
 
 [`bool`](class_bool.md) **get_collision_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_softbody3d_method_get_collision_mask_value"></div>
 
-Returns whether or not the specified layer of the [`collision_mask`](#class_softbody3d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`collision_mask`](class_softbody3d.md#class_softbody3d_property_collision_mask) is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -316,7 +316,7 @@ Removes a body from the list of bodies that this body can't collide with.
 
 `void` **set_collision_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_softbody3d_method_set_collision_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_layer`](#class_softbody3d_property_collision_layer), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_layer`](class_softbody3d.md#class_softbody3d_property_collision_layer), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -326,7 +326,7 @@ Based on `value`, enables or disables the specified layer in the [`collision_lay
 
 `void` **set_collision_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_softbody3d_method_set_collision_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`collision_mask`](#class_softbody3d_property_collision_mask), given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`collision_mask`](class_softbody3d.md#class_softbody3d_property_collision_mask), given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 

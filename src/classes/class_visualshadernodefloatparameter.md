@@ -19,12 +19,12 @@ Translated to `uniform float` in the shader language.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                         | [`default_value`](#class_visualshadernodefloatparameter_property_default_value)                 | ``0.0``   |
-| [`bool`](class_bool.md)                           | [`default_value_enabled`](#class_visualshadernodefloatparameter_property_default_value_enabled) | ``false`` |
-| [Hint](#enum_visualshadernodefloatparameter_hint) | [`hint`](#class_visualshadernodefloatparameter_property_hint)                                   | ``0``     |
-| [`float`](class_float.md)                         | [`max`](#class_visualshadernodefloatparameter_property_max)                                     | ``1.0``   |
-| [`float`](class_float.md)                         | [`min`](#class_visualshadernodefloatparameter_property_min)                                     | ``0.0``   |
-| [`float`](class_float.md)                         | [`step`](#class_visualshadernodefloatparameter_property_step)                                   | ``0.1``   |
+| [`float`](class_float.md)                         | [`default_value`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_default_value)                 | ``0.0``   |
+| [`bool`](class_bool.md)                           | [`default_value_enabled`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_default_value_enabled) | ``false`` |
+| [Hint](#enum_visualshadernodefloatparameter_hint) | [`hint`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_hint)                                   | ``0``     |
+| [`float`](class_float.md)                         | [`max`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_max)                                     | ``1.0``   |
+| [`float`](class_float.md)                         | [`min`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_min)                                     | ``0.0``   |
+| [`float`](class_float.md)                         | [`step`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_step)                                   | ``0.1``   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,13 +46,13 @@ No hint used.
 
 [Hint](#enum_visualshadernodefloatparameter_hint) **HINT_RANGE** = ``1``
 
-A range hint for scalar value, which limits possible input values between [`min`](#class_visualshadernodefloatparameter_property_min) and [`max`](#class_visualshadernodefloatparameter_property_max). Translated to `hint_range(min, max)` in shader code.
+A range hint for scalar value, which limits possible input values between [`min`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_min) and [`max`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_max). Translated to `hint_range(min, max)` in shader code.
 
 <div id="_class_visualshadernodefloatparameter_constant_hint_range_step"></div>
 
 [Hint](#enum_visualshadernodefloatparameter_hint) **HINT_RANGE_STEP** = ``2``
 
-A range hint for scalar value with step, which limits possible input values between [`min`](#class_visualshadernodefloatparameter_property_min) and [`max`](#class_visualshadernodefloatparameter_property_max), with a step (increment) of [`step`](#class_visualshadernodefloatparameter_property_step)). Translated to `hint_range(min, max, step)` in shader code.
+A range hint for scalar value with step, which limits possible input values between [`min`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_min) and [`max`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_max), with a step (increment) of [`step`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_step)). Translated to `hint_range(min, max, step)` in shader code.
 
 <div id="_class_visualshadernodefloatparameter_constant_hint_max"></div>
 
@@ -86,7 +86,7 @@ A default value to be assigned within the shader.
 - `void` **set_default_value_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_default_value_enabled** ( )
 
-Enables usage of the [`default_value`](#class_visualshadernodefloatparameter_property_default_value).
+Enables usage of the [`default_value`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_default_value).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -112,7 +112,7 @@ A hint applied to the uniform, which controls the values it can take when set th
 - `void` **set_max** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_max** ( )
 
-Minimum value for range hints. Used if [`hint`](#class_visualshadernodefloatparameter_property_hint) is set to [`HINT_RANGE`](#class_visualshadernodefloatparameter_constant_hint_range) or [`HINT_RANGE_STEP`](#class_visualshadernodefloatparameter_constant_hint_range_step).
+Minimum value for range hints. Used if [`hint`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_hint) is set to [`HINT_RANGE`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_constant_hint_range) or [`HINT_RANGE_STEP`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_constant_hint_range_step).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -125,7 +125,7 @@ Minimum value for range hints. Used if [`hint`](#class_visualshadernodefloatpara
 - `void` **set_min** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_min** ( )
 
-Maximum value for range hints. Used if [`hint`](#class_visualshadernodefloatparameter_property_hint) is set to [`HINT_RANGE`](#class_visualshadernodefloatparameter_constant_hint_range) or [`HINT_RANGE_STEP`](#class_visualshadernodefloatparameter_constant_hint_range_step).
+Maximum value for range hints. Used if [`hint`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_hint) is set to [`HINT_RANGE`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_constant_hint_range) or [`HINT_RANGE_STEP`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_constant_hint_range_step).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -138,7 +138,7 @@ Maximum value for range hints. Used if [`hint`](#class_visualshadernodefloatpara
 - `void` **set_step** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_step** ( )
 
-Step (increment) value for the range hint with step. Used if [`hint`](#class_visualshadernodefloatparameter_property_hint) is set to [`HINT_RANGE_STEP`](#class_visualshadernodefloatparameter_constant_hint_range_step).
+Step (increment) value for the range hint with step. Used if [`hint`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_property_hint) is set to [`HINT_RANGE_STEP`](class_visualshadernodefloatparameter.md#class_visualshadernodefloatparameter_constant_hint_range_step).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

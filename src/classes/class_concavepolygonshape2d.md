@@ -13,7 +13,7 @@ A 2D polyline shape used for physics collision.
 
 ## 描述
 
-A 2D polyline shape, intended for use in physics. Used internally in [`CollisionPolygon2D`](class_collisionpolygon2d.md) when it's in [`CollisionPolygon2D.BUILD_SEGMENTS`](#class_collisionpolygon2d_constant_build_segments) mode.
+A 2D polyline shape, intended for use in physics. Used internally in [`CollisionPolygon2D`](class_collisionpolygon2d.md) when it's in [`CollisionPolygon2D.BUILD_SEGMENTS`](class_collisionpolygon2d.md#class_collisionpolygon2d_constant_build_segments) mode.
 
 Being just a collection of interconnected line segments, **ConcavePolygonShape2D** is the most freely configurable single 2D shape. It can be used to form polygons of any nature, or even shapes that don't enclose an area. However, **ConcavePolygonShape2D** is *hollow* even if the interconnected line segments do enclose an area, which often makes it unsuitable for physics or detection.
 
@@ -21,13 +21,13 @@ Being just a collection of interconnected line segments, **ConcavePolygonShape2D
 
  **Warning:** Physics bodies that are small have a chance to clip through this shape when moving fast. This happens because on one frame, the physics body may be on the "outside" of the shape, and on the next frame it may be "inside" it. **ConcavePolygonShape2D** is hollow, so it won't detect a collision.
 
- **Performance:** Due to its complexity, **ConcavePolygonShape2D** is the slowest 2D collision shape to check collisions against. Its use should generally be limited to level geometry. If the polyline is closed, [`CollisionPolygon2D`](class_collisionpolygon2d.md)'s [`CollisionPolygon2D.BUILD_SOLIDS`](#class_collisionpolygon2d_constant_build_solids) mode can be used, which decomposes the polygon into convex ones; see [`ConvexPolygonShape2D`](class_convexpolygonshape2d.md)'s documentation for instructions.
+ **Performance:** Due to its complexity, **ConcavePolygonShape2D** is the slowest 2D collision shape to check collisions against. Its use should generally be limited to level geometry. If the polyline is closed, [`CollisionPolygon2D`](class_collisionpolygon2d.md)'s [`CollisionPolygon2D.BUILD_SOLIDS`](class_collisionpolygon2d.md#class_collisionpolygon2d_constant_build_solids) mode can be used, which decomposes the polygon into convex ones; see [`ConvexPolygonShape2D`](class_convexpolygonshape2d.md)'s documentation for instructions.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`PackedVector2Array`](class_packedvector2array.md) | [`segments`](#class_concavepolygonshape2d_property_segments) | ``PackedVector2Array()`` |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`segments`](class_concavepolygonshape2d.md#class_concavepolygonshape2d_property_segments) | ``PackedVector2Array()`` |
 
 <!-- rst-class:: classref-section-separator -->
 

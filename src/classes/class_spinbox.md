@@ -47,7 +47,7 @@ See [`Range`](class_range.md) class for more options over the **SpinBox**.
 
  **Note:** **SpinBox** relies on an underlying [`LineEdit`](class_lineedit.md) node. To theme a **SpinBox**'s background, add theme items for [`LineEdit`](class_lineedit.md) and customize them.
 
- **Note:** If you want to implement drag and drop for the underlying [`LineEdit`](class_lineedit.md), you can use [`Control.set_drag_forwarding`](#class_control_method_set_drag_forwarding) on the node returned by [`get_line_edit`](#class_spinbox_method_get_line_edit).
+ **Note:** If you want to implement drag and drop for the underlying [`LineEdit`](class_lineedit.md), you can use [`Control.set_drag_forwarding`](class_control.md#class_control_method_set_drag_forwarding) on the node returned by [`get_line_edit`](class_spinbox.md#class_spinbox_method_get_line_edit).
 
 
 
@@ -57,28 +57,28 @@ See [`Range`](class_range.md) class for more options over the **SpinBox**.
 
 |||
 |:-:|:--|
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_spinbox_property_alignment)                           | ``0``                                                                      |
-| [`float`](class_float.md)                                     | [`custom_arrow_step`](#class_spinbox_property_custom_arrow_step)           | ``0.0``                                                                    |
-| [`bool`](class_bool.md)                                       | [`editable`](#class_spinbox_property_editable)                             | ``true``                                                                   |
-| [`String`](class_string.md)                                   | [`prefix`](#class_spinbox_property_prefix)                                 | ``""``                                                                     |
-| [`bool`](class_bool.md)                                       | [`select_all_on_focus`](#class_spinbox_property_select_all_on_focus)       | ``false``                                                                  |
-| [SizeFlags](#enum_control_sizeflags)                          | size_flags_vertical                                                        | ``1`` (overrides [`Control`](#class_control_property_size_flags_vertical)) |
-| [`float`](class_float.md)                                     | step                                                                       | ``1.0`` (overrides [`Range`](#class_range_property_step))                  |
-| [`String`](class_string.md)                                   | [`suffix`](#class_spinbox_property_suffix)                                 | ``""``                                                                     |
-| [`bool`](class_bool.md)                                       | [`update_on_text_changed`](#class_spinbox_property_update_on_text_changed) | ``false``                                                                  |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](class_spinbox.md#class_spinbox_property_alignment)                           | ``0``                                                                                      |
+| [`float`](class_float.md)                                     | [`custom_arrow_step`](class_spinbox.md#class_spinbox_property_custom_arrow_step)           | ``0.0``                                                                                    |
+| [`bool`](class_bool.md)                                       | [`editable`](class_spinbox.md#class_spinbox_property_editable)                             | ``true``                                                                                   |
+| [`String`](class_string.md)                                   | [`prefix`](class_spinbox.md#class_spinbox_property_prefix)                                 | ``""``                                                                                     |
+| [`bool`](class_bool.md)                                       | [`select_all_on_focus`](class_spinbox.md#class_spinbox_property_select_all_on_focus)       | ``false``                                                                                  |
+| [SizeFlags](#enum_control_sizeflags)                          | size_flags_vertical                                                                        | ``1`` (overrides [`Control`](class_control.md#class_control_property_size_flags_vertical)) |
+| [`float`](class_float.md)                                     | step                                                                                       | ``1.0`` (overrides [`Range`](class_range.md#class_range_property_step))                    |
+| [`String`](class_string.md)                                   | [`suffix`](class_spinbox.md#class_spinbox_property_suffix)                                 | ``""``                                                                                     |
+| [`bool`](class_bool.md)                                       | [`update_on_text_changed`](class_spinbox.md#class_spinbox_property_update_on_text_changed) | ``false``                                                                                  |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                          | [`apply`](#class_spinbox_method_apply) ( )                 |
-| [`LineEdit`](class_lineedit.md) | [`get_line_edit`](#class_spinbox_method_get_line_edit) ( ) |
+| `void`                          | [`apply`](class_spinbox.md#class_spinbox_method_apply) ( )                 |
+| [`LineEdit`](class_lineedit.md) | [`get_line_edit`](class_spinbox.md#class_spinbox_method_get_line_edit) ( ) |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`updown`](#class_spinbox_theme_icon_updown) |
+| [`Texture2D`](class_texture2d.md) | [`updown`](class_spinbox.md#class_spinbox_theme_icon_updown) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -106,7 +106,7 @@ Changes the alignment of the underlying [`LineEdit`](class_lineedit.md).
 - `void` **set_custom_arrow_step** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_custom_arrow_step** ( )
 
-If not `0`, [`Range.value`](#class_range_property_value) will always be rounded to a multiple of [`custom_arrow_step`](#class_spinbox_property_custom_arrow_step) when interacting with the arrow buttons of the **SpinBox**.
+If not `0`, [`Range.value`](class_range.md#class_range_property_value) will always be rounded to a multiple of [`custom_arrow_step`](class_spinbox.md#class_spinbox_property_custom_arrow_step) when interacting with the arrow buttons of the **SpinBox**.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -171,7 +171,7 @@ Adds the specified suffix string after the numerical value of the **SpinBox**.
 - `void` **set_update_on_text_changed** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_update_on_text_changed** ( )
 
-Sets the value of the [`Range`](class_range.md) for this **SpinBox** when the [`LineEdit`](class_lineedit.md) text is *changed* instead of *submitted*. See [`LineEdit.text_changed`](#class_lineedit_signal_text_changed) and [`LineEdit.text_submitted`](#class_lineedit_signal_text_submitted).
+Sets the value of the [`Range`](class_range.md) for this **SpinBox** when the [`LineEdit`](class_lineedit.md) text is *changed* instead of *submitted*. See [`LineEdit.text_changed`](class_lineedit.md#class_lineedit_signal_text_changed) and [`LineEdit.text_submitted`](class_lineedit.md#class_lineedit_signal_text_submitted).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -195,7 +195,7 @@ Applies the current value of this **SpinBox**.
 
 Returns the [`LineEdit`](class_lineedit.md) instance from this **SpinBox**. You can use it to access properties and methods of [`LineEdit`](class_lineedit.md).
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](#class_canvasitem_property_visible) property.
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their [`CanvasItem.visible`](class_canvasitem.md#class_canvasitem_property_visible) property.
 
 <!-- rst-class:: classref-section-separator -->
 

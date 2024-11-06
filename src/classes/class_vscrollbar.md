@@ -19,8 +19,8 @@ A vertical scrollbar, typically used to navigate through content that extends be
 
 |||
 |:-:|:--|
-| [SizeFlags](#enum_control_sizeflags) | size_flags_horizontal | ``0`` (overrides [`Control`](#class_control_property_size_flags_horizontal)) |
-| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical   | ``1`` (overrides [`Control`](#class_control_property_size_flags_vertical))   |
+| [SizeFlags](#enum_control_sizeflags) | size_flags_horizontal | ``0`` (overrides [`Control`](class_control.md#class_control_property_size_flags_horizontal)) |
+| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical   | ``1`` (overrides [`Control`](class_control.md#class_control_property_size_flags_vertical))   |
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

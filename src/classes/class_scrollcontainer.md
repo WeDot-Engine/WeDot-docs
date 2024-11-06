@@ -15,35 +15,35 @@ A container used to provide scrollbars to a child control when needed.
 
 ## 描述
 
-A container used to provide a child control with scrollbars when needed. Scrollbars will automatically be drawn at the right (for vertical) or bottom (for horizontal) and will enable dragging to move the viewable Control (and its children) within the ScrollContainer. Scrollbars will also automatically resize the grabber based on the [`Control.custom_minimum_size`](#class_control_property_custom_minimum_size) of the Control relative to the ScrollContainer.
+A container used to provide a child control with scrollbars when needed. Scrollbars will automatically be drawn at the right (for vertical) or bottom (for horizontal) and will enable dragging to move the viewable Control (and its children) within the ScrollContainer. Scrollbars will also automatically resize the grabber based on the [`Control.custom_minimum_size`](class_control.md#class_control_property_custom_minimum_size) of the Control relative to the ScrollContainer.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                        | clip_contents                                                                                    | ``true`` (overrides [`Control`](#class_control_property_clip_contents)) |
-| [`bool`](class_bool.md)                        | [`follow_focus`](#class_scrollcontainer_property_follow_focus)                                   | ``false``                                                               |
-| [ScrollMode](#enum_scrollcontainer_scrollmode) | [`horizontal_scroll_mode`](#class_scrollcontainer_property_horizontal_scroll_mode)               | ``1``                                                                   |
-| [`int`](class_int.md)                          | [`scroll_deadzone`](#class_scrollcontainer_property_scroll_deadzone)                             | ``0``                                                                   |
-| [`int`](class_int.md)                          | [`scroll_horizontal`](#class_scrollcontainer_property_scroll_horizontal)                         | ``0``                                                                   |
-| [`float`](class_float.md)                      | [`scroll_horizontal_custom_step`](#class_scrollcontainer_property_scroll_horizontal_custom_step) | ``-1.0``                                                                |
-| [`int`](class_int.md)                          | [`scroll_vertical`](#class_scrollcontainer_property_scroll_vertical)                             | ``0``                                                                   |
-| [`float`](class_float.md)                      | [`scroll_vertical_custom_step`](#class_scrollcontainer_property_scroll_vertical_custom_step)     | ``-1.0``                                                                |
-| [ScrollMode](#enum_scrollcontainer_scrollmode) | [`vertical_scroll_mode`](#class_scrollcontainer_property_vertical_scroll_mode)                   | ``1``                                                                   |
+| [`bool`](class_bool.md)                        | clip_contents                                                                                                            | ``true`` (overrides [`Control`](class_control.md#class_control_property_clip_contents)) |
+| [`bool`](class_bool.md)                        | [`follow_focus`](class_scrollcontainer.md#class_scrollcontainer_property_follow_focus)                                   | ``false``                                                                               |
+| [ScrollMode](#enum_scrollcontainer_scrollmode) | [`horizontal_scroll_mode`](class_scrollcontainer.md#class_scrollcontainer_property_horizontal_scroll_mode)               | ``1``                                                                                   |
+| [`int`](class_int.md)                          | [`scroll_deadzone`](class_scrollcontainer.md#class_scrollcontainer_property_scroll_deadzone)                             | ``0``                                                                                   |
+| [`int`](class_int.md)                          | [`scroll_horizontal`](class_scrollcontainer.md#class_scrollcontainer_property_scroll_horizontal)                         | ``0``                                                                                   |
+| [`float`](class_float.md)                      | [`scroll_horizontal_custom_step`](class_scrollcontainer.md#class_scrollcontainer_property_scroll_horizontal_custom_step) | ``-1.0``                                                                                |
+| [`int`](class_int.md)                          | [`scroll_vertical`](class_scrollcontainer.md#class_scrollcontainer_property_scroll_vertical)                             | ``0``                                                                                   |
+| [`float`](class_float.md)                      | [`scroll_vertical_custom_step`](class_scrollcontainer.md#class_scrollcontainer_property_scroll_vertical_custom_step)     | ``-1.0``                                                                                |
+| [ScrollMode](#enum_scrollcontainer_scrollmode) | [`vertical_scroll_mode`](class_scrollcontainer.md#class_scrollcontainer_property_vertical_scroll_mode)                   | ``1``                                                                                   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                              | [`ensure_control_visible`](#class_scrollcontainer_method_ensure_control_visible) ( control: [`Control`](class_control.md) ) |
-| [`HScrollBar`](class_hscrollbar.md) | [`get_h_scroll_bar`](#class_scrollcontainer_method_get_h_scroll_bar) ( )                                                    |
-| [`VScrollBar`](class_vscrollbar.md) | [`get_v_scroll_bar`](#class_scrollcontainer_method_get_v_scroll_bar) ( )                                                    |
+| `void`                              | [`ensure_control_visible`](class_scrollcontainer.md#class_scrollcontainer_method_ensure_control_visible) ( control: [`Control`](class_control.md) ) |
+| [`HScrollBar`](class_hscrollbar.md) | [`get_h_scroll_bar`](class_scrollcontainer.md#class_scrollcontainer_method_get_h_scroll_bar) ( )                                                    |
+| [`VScrollBar`](class_vscrollbar.md) | [`get_v_scroll_bar`](class_scrollcontainer.md#class_scrollcontainer_method_get_v_scroll_bar) ( )                                                    |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`StyleBox`](class_stylebox.md) | [`panel`](#class_scrollcontainer_theme_style_panel) |
+| [`StyleBox`](class_stylebox.md) | [`panel`](class_scrollcontainer.md#class_scrollcontainer_theme_style_panel) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -57,7 +57,7 @@ A container used to provide a child control with scrollbars when needed. Scrollb
 
 Emitted when scrolling stops when dragging the scrollable area *with a touch event*. This signal is *not* emitted when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.
 
- **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when [`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse`](#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse) is enabled.
+ **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when [`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse) is enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -69,7 +69,7 @@ Emitted when scrolling stops when dragging the scrollable area *with a touch eve
 
 Emitted when scrolling starts when dragging the scrollable area w *ith a touch event*. This signal is *not* emitted when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.
 
- **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when [`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse`](#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse) is enabled.
+ **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when [`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse) is enabled.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -159,7 +159,7 @@ Deadzone for touch scrolling. Lower deadzone makes the scrolling more sensitive.
 
 The current horizontal scroll value.
 
- **Note:** If you are setting this value in the [`Node._ready`](#class_node_private_method__ready) function or earlier, it needs to be wrapped with [`Object.set_deferred`](#class_object_method_set_deferred), since scroll bar's [`Range.max_value`](#class_range_property_max_value) is not initialized yet.
+ **Note:** If you are setting this value in the [`Node._ready`](class_node.md#class_node_private_method__ready) function or earlier, it needs to be wrapped with [`Object.set_deferred`](class_object.md#class_object_method_set_deferred), since scroll bar's [`Range.max_value`](class_range.md#class_range_property_max_value) is not initialized yet.
 
 ```
 
@@ -180,7 +180,7 @@ The current horizontal scroll value.
 - `void` **set_horizontal_custom_step** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_horizontal_custom_step** ( )
 
-Overrides the [`ScrollBar.custom_step`](#class_scrollbar_property_custom_step) used when clicking the internal scroll bar's horizontal increment and decrement buttons or when using arrow keys when the [`ScrollBar`](class_scrollbar.md) is focused.
+Overrides the [`ScrollBar.custom_step`](class_scrollbar.md#class_scrollbar_property_custom_step) used when clicking the internal scroll bar's horizontal increment and decrement buttons or when using arrow keys when the [`ScrollBar`](class_scrollbar.md) is focused.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -195,7 +195,7 @@ Overrides the [`ScrollBar.custom_step`](#class_scrollbar_property_custom_step) u
 
 The current vertical scroll value.
 
- **Note:** Setting it early needs to be deferred, just like in [`scroll_horizontal`](#class_scrollcontainer_property_scroll_horizontal).
+ **Note:** Setting it early needs to be deferred, just like in [`scroll_horizontal`](class_scrollcontainer.md#class_scrollcontainer_property_scroll_horizontal).
 
 ```
 
@@ -216,7 +216,7 @@ The current vertical scroll value.
 - `void` **set_vertical_custom_step** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_vertical_custom_step** ( )
 
-Overrides the [`ScrollBar.custom_step`](#class_scrollbar_property_custom_step) used when clicking the internal scroll bar's vertical increment and decrement buttons or when using arrow keys when the [`ScrollBar`](class_scrollbar.md) is focused.
+Overrides the [`ScrollBar.custom_step`](class_scrollbar.md#class_scrollbar_property_custom_step) used when clicking the internal scroll bar's vertical increment and decrement buttons or when using arrow keys when the [`ScrollBar`](class_scrollbar.md) is focused.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -241,9 +241,9 @@ Controls whether vertical scrollbar can be used and when it should be visible. S
 
 `void` **ensure_control_visible** ( control: [`Control`](class_control.md) )<div id="class_scrollcontainer_method_ensure_control_visible"></div>
 
-Ensures the given `control` is visible (must be a direct or indirect child of the ScrollContainer). Used by [`follow_focus`](#class_scrollcontainer_property_follow_focus).
+Ensures the given `control` is visible (must be a direct or indirect child of the ScrollContainer). Used by [`follow_focus`](class_scrollcontainer.md#class_scrollcontainer_property_follow_focus).
 
- **Note:** This will not work on a node that was just added during the same frame. If you want to scroll to a newly added child, you must wait until the next frame using [`SceneTree.process_frame`](#class_scenetree_signal_process_frame):
+ **Note:** This will not work on a node that was just added during the same frame. If you want to scroll to a newly added child, you must wait until the next frame using [`SceneTree.process_frame`](class_scenetree.md#class_scenetree_signal_process_frame):
 
 ```
 
@@ -264,7 +264,7 @@ Ensures the given `control` is visible (must be a direct or indirect child of th
 
 Returns the horizontal scrollbar [`HScrollBar`](class_hscrollbar.md) of this **ScrollContainer**.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to disable or hide a scrollbar, you can use [`horizontal_scroll_mode`](#class_scrollcontainer_property_horizontal_scroll_mode).
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to disable or hide a scrollbar, you can use [`horizontal_scroll_mode`](class_scrollcontainer.md#class_scrollcontainer_property_horizontal_scroll_mode).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -276,7 +276,7 @@ Returns the horizontal scrollbar [`HScrollBar`](class_hscrollbar.md) of this **S
 
 Returns the vertical scrollbar [`VScrollBar`](class_vscrollbar.md) of this **ScrollContainer**.
 
- **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to disable or hide a scrollbar, you can use [`vertical_scroll_mode`](#class_scrollcontainer_property_vertical_scroll_mode).
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to disable or hide a scrollbar, you can use [`vertical_scroll_mode`](class_scrollcontainer.md#class_scrollcontainer_property_vertical_scroll_mode).
 
 <!-- rst-class:: classref-section-separator -->
 

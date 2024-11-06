@@ -17,9 +17,9 @@ Base class for serializable objects.
 
 Resource is the base class for all Godot-specific resource types, serving primarily as data containers. Since they inherit from [`RefCounted`](class_refcounted.md), resources are reference-counted and freed when no longer in use. They can also be nested within other resources, and saved on disk. [`PackedScene`](class_packedscene.md), one of the most common [`Object`](class_object.md) s in a Godot project, is also a resource, uniquely capable of storing and instantiating the [`Node`](class_node.md) s it contains as many times as desired.
 
-In GDScript, resources can loaded from disk by their [`resource_path`](#class_resource_property_resource_path) using [`@GDScript.load`](#class_@gdscript_method_load) or [`@GDScript.preload`](#class_@gdscript_method_preload).
+In GDScript, resources can loaded from disk by their [`resource_path`](class_resource.md#class_resource_property_resource_path) using [`@GDScript.load`](class_@gdscript.md#class_@gdscript_method_load) or [`@GDScript.preload`](class_@gdscript.md#class_@gdscript_method_preload).
 
-The engine keeps a global cache of all loaded resources, referenced by paths (see [`ResourceLoader.has_cached`](#class_resourceloader_method_has_cached)). A resource will be cached when loaded for the first time and removed from cache once all references are released. When a resource is cached, subsequent loads using its path will return the cached reference.
+The engine keeps a global cache of all loaded resources, referenced by paths (see [`ResourceLoader.has_cached`](class_resourceloader.md#class_resourceloader_method_has_cached)). A resource will be cached when loaded for the first time and removed from cache once all references are released. When a resource is cached, subsequent loads using its path will return the cached reference.
 
  **Note:** In C#, resources will not be freed instantly after they are no longer in use. Instead, garbage collection will run periodically and will free resources that are no longer in use. This means that unused resources will remain in memory for a while before being removed.
 
@@ -27,24 +27,24 @@ The engine keeps a global cache of all loaded resources, referenced by paths (se
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | [`resource_local_to_scene`](#class_resource_property_resource_local_to_scene)   | ``false`` |
-| [`String`](class_string.md) | [`resource_name`](#class_resource_property_resource_name)                       | ``""``    |
-| [`String`](class_string.md) | [`resource_path`](#class_resource_property_resource_path)                       | ``""``    |
-| [`String`](class_string.md) | [`resource_scene_unique_id`](#class_resource_property_resource_scene_unique_id) |           |
+| [`bool`](class_bool.md)     | [`resource_local_to_scene`](class_resource.md#class_resource_property_resource_local_to_scene)   | ``false`` |
+| [`String`](class_string.md) | [`resource_name`](class_resource.md#class_resource_property_resource_name)                       | ``""``    |
+| [`String`](class_string.md) | [`resource_path`](class_resource.md#class_resource_property_resource_path)                       | ``""``    |
+| [`String`](class_string.md) | [`resource_scene_unique_id`](class_resource.md#class_resource_property_resource_scene_unique_id) |           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)           | [`_get_rid`](#class_resource_private_method__get_rid) ( ) virtual[^virtual]                                     |
-| `void`                          | [`_setup_local_to_scene`](#class_resource_private_method__setup_local_to_scene) ( ) virtual[^virtual]           |
-| [`Resource`](class_resource.md) | [`duplicate`](#class_resource_method_duplicate) ( subresources: [`bool`](class_bool.md) = false ) const[^const] |
-| `void`                          | [`emit_changed`](#class_resource_method_emit_changed) ( )                                                       |
-| [`String`](class_string.md)     | [`generate_scene_unique_id`](#class_resource_method_generate_scene_unique_id) ( ) static[^static]               |
-| [`Node`](class_node.md)         | [`get_local_scene`](#class_resource_method_get_local_scene) ( ) const[^const]                                   |
-| [`RID`](class_rid.md)           | [`get_rid`](#class_resource_method_get_rid) ( ) const[^const]                                                   |
-| `void`                          | [`setup_local_to_scene`](#class_resource_method_setup_local_to_scene) ( )                                       |
-| `void`                          | [`take_over_path`](#class_resource_method_take_over_path) ( path: [`String`](class_string.md) )                 |
+| [`RID`](class_rid.md)           | [`_get_rid`](class_resource.md#class_resource_private_method__get_rid) ( ) virtual[^virtual]                                     |
+| `void`                          | [`_setup_local_to_scene`](class_resource.md#class_resource_private_method__setup_local_to_scene) ( ) virtual[^virtual]           |
+| [`Resource`](class_resource.md) | [`duplicate`](class_resource.md#class_resource_method_duplicate) ( subresources: [`bool`](class_bool.md) = false ) const[^const] |
+| `void`                          | [`emit_changed`](class_resource.md#class_resource_method_emit_changed) ( )                                                       |
+| [`String`](class_string.md)     | [`generate_scene_unique_id`](class_resource.md#class_resource_method_generate_scene_unique_id) ( ) static[^static]               |
+| [`Node`](class_node.md)         | [`get_local_scene`](class_resource.md#class_resource_method_get_local_scene) ( ) const[^const]                                   |
+| [`RID`](class_rid.md)           | [`get_rid`](class_resource.md#class_resource_method_get_rid) ( ) const[^const]                                                   |
+| `void`                          | [`setup_local_to_scene`](class_resource.md#class_resource_method_setup_local_to_scene) ( )                                       |
+| `void`                          | [`take_over_path`](class_resource.md#class_resource_method_take_over_path) ( path: [`String`](class_string.md) )                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ The engine keeps a global cache of all loaded resources, referenced by paths (se
 
 **changed** ( ) <div id="class_resource_signal_changed"></div>
 
-Emitted when the resource changes, usually when one of its properties is modified. See also [`emit_changed`](#class_resource_method_emit_changed).
+Emitted when the resource changes, usually when one of its properties is modified. See also [`emit_changed`](class_resource.md#class_resource_method_emit_changed).
 
  **Note:** This signal is not emitted automatically for properties of custom resources. If necessary, a setter needs to be created to emit the signal.
 
@@ -68,9 +68,9 @@ Emitted when the resource changes, usually when one of its properties is modifie
 
 **setup_local_to_scene_requested** ( ) <div id="class_resource_signal_setup_local_to_scene_requested"></div>
 
-**已弃用：** This signal is only emitted when the resource is created. Override [`_setup_local_to_scene`](#class_resource_private_method__setup_local_to_scene) instead.
+**已弃用：** This signal is only emitted when the resource is created. Override [`_setup_local_to_scene`](class_resource.md#class_resource_private_method__setup_local_to_scene) instead.
 
-Emitted by a newly duplicated resource with [`resource_local_to_scene`](#class_resource_property_resource_local_to_scene) set to `true`.
+Emitted by a newly duplicated resource with [`resource_local_to_scene`](class_resource.md#class_resource_property_resource_local_to_scene) set to `true`.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -85,7 +85,7 @@ Emitted by a newly duplicated resource with [`resource_local_to_scene`](#class_r
 - `void` **set_local_to_scene** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_local_to_scene** ( )
 
-If `true`, the resource is duplicated for each instance of all scenes using it. At run-time, the resource can be modified in one scene without affecting other instances (see [`PackedScene.instantiate`](#class_packedscene_method_instantiate)).
+If `true`, the resource is duplicated for each instance of all scenes using it. At run-time, the resource can be modified in one scene without affecting other instances (see [`PackedScene.instantiate`](class_packedscene.md#class_packedscene_method_instantiate)).
 
  **Note:** Changing this property at run-time has no effect on already created duplicate resources.
 
@@ -117,7 +117,7 @@ An optional name for this resource. When defined, its value is displayed to repr
 
 The unique path to this resource. If it has been saved to disk, the value will be its filepath. If the resource is exclusively contained within a scene, the value will be the [`PackedScene`](class_packedscene.md)'s filepath, followed by a unique identifier.
 
- **Note:** Setting this property manually may fail if a resource with the same path has already been previously loaded. If necessary, use [`take_over_path`](#class_resource_method_take_over_path).
+ **Note:** Setting this property manually may fail if a resource with the same path has already been previously loaded. If necessary, use [`take_over_path`](class_resource.md#class_resource_method_take_over_path).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -132,9 +132,9 @@ The unique path to this resource. If it has been saved to disk, the value will b
 
 An unique identifier relative to the this resource's scene. If left empty, the ID is automatically generated when this resource is saved inside a [`PackedScene`](class_packedscene.md). If the resource is not inside a scene, this property is empty by default.
 
- **Note:** When the [`PackedScene`](class_packedscene.md) is saved, if multiple resources in the same scene use the same ID, only the earliest resource in the scene hierarchy keeps the original ID. The other resources are assigned new IDs from [`generate_scene_unique_id`](#class_resource_method_generate_scene_unique_id).
+ **Note:** When the [`PackedScene`](class_packedscene.md) is saved, if multiple resources in the same scene use the same ID, only the earliest resource in the scene hierarchy keeps the original ID. The other resources are assigned new IDs from [`generate_scene_unique_id`](class_resource.md#class_resource_method_generate_scene_unique_id).
 
- **Note:** Setting this property does not emit the [`changed`](#class_resource_signal_changed) signal.
+ **Note:** Setting this property does not emit the [`changed`](class_resource.md#class_resource_signal_changed) signal.
 
  **Warning:** When setting, the ID must only consist of letters, numbers, and underscores. Otherwise, it will fail and default to a randomly generated ID.
 
@@ -148,7 +148,7 @@ An unique identifier relative to the this resource's scene. If left empty, the I
 
 [`RID`](class_rid.md) **_get_rid** ( ) virtual[^virtual]<div id="class_resource_private_method__get_rid"></div>
 
-Override this method to return a custom [`RID`](class_rid.md) when [`get_rid`](#class_resource_method_get_rid) is called.
+Override this method to return a custom [`RID`](class_rid.md) when [`get_rid`](class_resource.md#class_resource_method_get_rid) is called.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -158,7 +158,7 @@ Override this method to return a custom [`RID`](class_rid.md) when [`get_rid`](#
 
 `void` **_setup_local_to_scene** ( ) virtual[^virtual]<div id="class_resource_private_method__setup_local_to_scene"></div>
 
-Override this method to customize the newly duplicated resource created from [`PackedScene.instantiate`](#class_packedscene_method_instantiate), if the original's [`resource_local_to_scene`](#class_resource_property_resource_local_to_scene) is set to `true`.
+Override this method to customize the newly duplicated resource created from [`PackedScene.instantiate`](class_packedscene.md#class_packedscene_method_instantiate), if the original's [`resource_local_to_scene`](class_resource.md#class_resource_property_resource_local_to_scene) is set to `true`.
 
  **Example:** Set a random `damage` value to every local resource from an instantiated scene.
 
@@ -182,19 +182,19 @@ Override this method to customize the newly duplicated resource created from [`P
 
 [`Resource`](class_resource.md) **duplicate** ( subresources: [`bool`](class_bool.md) = false ) const[^const]<div id="class_resource_method_duplicate"></div>
 
-Duplicates this resource, returning a new resource with its `export` ed or [`@GlobalScope.PROPERTY_USAGE_STORAGE`](#class_@globalscope_constant_property_usage_storage) properties copied from the original.
+Duplicates this resource, returning a new resource with its `export` ed or [`@GlobalScope.PROPERTY_USAGE_STORAGE`](class_@globalscope.md#class_@globalscope_constant_property_usage_storage) properties copied from the original.
 
 If `subresources` is `false`, a shallow copy is returned; nested resources within subresources are not duplicated and are shared with the original resource (with one exception; see below). If `subresources` is `true`, a deep copy is returned; nested subresources will be duplicated and are not shared (with two exceptions; see below).
 
  `subresources` is usually respected, with the following exceptions:
 
-- Subresource properties with the [`@GlobalScope.PROPERTY_USAGE_ALWAYS_DUPLICATE`](#class_@globalscope_constant_property_usage_always_duplicate) flag are always duplicated.
+- Subresource properties with the [`@GlobalScope.PROPERTY_USAGE_ALWAYS_DUPLICATE`](class_@globalscope.md#class_@globalscope_constant_property_usage_always_duplicate) flag are always duplicated.
 
-- Subresource properties with the [`@GlobalScope.PROPERTY_USAGE_NEVER_DUPLICATE`](#class_@globalscope_constant_property_usage_never_duplicate) flag are never duplicated.
+- Subresource properties with the [`@GlobalScope.PROPERTY_USAGE_NEVER_DUPLICATE`](class_@globalscope.md#class_@globalscope_constant_property_usage_never_duplicate) flag are never duplicated.
 
 - Subresources inside [`Array`](class_array.md) and [`Dictionary`](class_dictionary.md) properties are never duplicated.
 
- **Note:** For custom resources, this method will fail if [`Object._init`](#class_object_private_method__init) has been defined with required parameters.
+ **Note:** For custom resources, this method will fail if [`Object._init`](class_object.md#class_object_private_method__init) has been defined with required parameters.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -204,7 +204,7 @@ If `subresources` is `false`, a shallow copy is returned; nested resources withi
 
 `void` **emit_changed** ( )<div id="class_resource_method_emit_changed"></div>
 
-Emits the [`changed`](#class_resource_signal_changed) signal. This method is called automatically for some built-in resources.
+Emits the [`changed`](class_resource.md#class_resource_signal_changed) signal. This method is called automatically for some built-in resources.
 
  **Note:** For custom resources, it's recommended to call this method whenever a meaningful change occurs, such as a modified property. This ensures that custom [`Object`](class_object.md) s depending on the resource are properly updated.
 
@@ -227,7 +227,7 @@ Emits the [`changed`](#class_resource_signal_changed) signal. This method is cal
 
 [`String`](class_string.md) **generate_scene_unique_id** ( ) static[^static]<div id="class_resource_method_generate_scene_unique_id"></div>
 
-Generates a unique identifier for a resource to be contained inside a [`PackedScene`](class_packedscene.md), based on the current date, time, and a random value. The returned string is only composed of letters (`a` to `y`) and numbers (`0` to `8`). See also [`resource_scene_unique_id`](#class_resource_property_resource_scene_unique_id).
+Generates a unique identifier for a resource to be contained inside a [`PackedScene`](class_packedscene.md), based on the current date, time, and a random value. The returned string is only composed of letters (`a` to `y`) and numbers (`0` to `8`). See also [`resource_scene_unique_id`](class_resource.md#class_resource_property_resource_scene_unique_id).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -237,7 +237,7 @@ Generates a unique identifier for a resource to be contained inside a [`PackedSc
 
 [`Node`](class_node.md) **get_local_scene** ( ) const[^const]<div id="class_resource_method_get_local_scene"></div>
 
-If [`resource_local_to_scene`](#class_resource_property_resource_local_to_scene) is set to `true` and the resource has been loaded from a [`PackedScene`](class_packedscene.md) instantiation, returns the root [`Node`](class_node.md) of the scene where this resource is used. Otherwise, returns `null`.
+If [`resource_local_to_scene`](class_resource.md#class_resource_property_resource_local_to_scene) is set to `true` and the resource has been loaded from a [`PackedScene`](class_packedscene.md) instantiation, returns the root [`Node`](class_node.md) of the scene where this resource is used. Otherwise, returns `null`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -259,7 +259,7 @@ Returns the [`RID`](class_rid.md) of this resource (or an empty RID). Many resou
 
 **已弃用：** This method should only be called internally.
 
-Calls [`_setup_local_to_scene`](#class_resource_private_method__setup_local_to_scene). If [`resource_local_to_scene`](#class_resource_property_resource_local_to_scene) is set to `true`, this method is automatically called from [`PackedScene.instantiate`](#class_packedscene_method_instantiate) by the newly duplicated resource within the scene instance.
+Calls [`_setup_local_to_scene`](class_resource.md#class_resource_private_method__setup_local_to_scene). If [`resource_local_to_scene`](class_resource.md#class_resource_property_resource_local_to_scene) is set to `true`, this method is automatically called from [`PackedScene.instantiate`](class_packedscene.md#class_packedscene_method_instantiate) by the newly duplicated resource within the scene instance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -269,7 +269,7 @@ Calls [`_setup_local_to_scene`](#class_resource_private_method__setup_local_to_s
 
 `void` **take_over_path** ( path: [`String`](class_string.md) )<div id="class_resource_method_take_over_path"></div>
 
-Sets the [`resource_path`](#class_resource_property_resource_path) to `path`, potentially overriding an existing cache entry for this path. Further attempts to load an overridden resource by path will instead return this resource.
+Sets the [`resource_path`](class_resource.md#class_resource_property_resource_path) to `path`, potentially overriding an existing cache entry for this path. Further attempts to load an overridden resource by path will instead return this resource.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

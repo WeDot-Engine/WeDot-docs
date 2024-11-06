@@ -19,8 +19,8 @@ A physics joint that restricts the movement of two 2D physics bodies to a fixed 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`initial_offset`](#class_groovejoint2d_property_initial_offset) | ``25.0`` |
-| [`float`](class_float.md) | [`length`](#class_groovejoint2d_property_length)                 | ``50.0`` |
+| [`float`](class_float.md) | [`initial_offset`](class_groovejoint2d.md#class_groovejoint2d_property_initial_offset) | ``25.0`` |
+| [`float`](class_float.md) | [`length`](class_groovejoint2d.md#class_groovejoint2d_property_length)                 | ``50.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -35,7 +35,7 @@ A physics joint that restricts the movement of two 2D physics bodies to a fixed 
 - `void` **set_initial_offset** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_initial_offset** ( )
 
-The body B's initial anchor position defined by the joint's origin and a local offset [`initial_offset`](#class_groovejoint2d_property_initial_offset) along the joint's Y axis (along the groove).
+The body B's initial anchor position defined by the joint's origin and a local offset [`initial_offset`](class_groovejoint2d.md#class_groovejoint2d_property_initial_offset) along the joint's Y axis (along the groove).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -48,7 +48,7 @@ The body B's initial anchor position defined by the joint's origin and a local o
 - `void` **set_length** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_length** ( )
 
-The groove's length. The groove is from the joint's origin towards [`length`](#class_groovejoint2d_property_length) along the joint's local Y axis.
+The groove's length. The groove is from the joint's origin towards [`length`](class_groovejoint2d.md#class_groovejoint2d_property_length) along the joint's local Y axis.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

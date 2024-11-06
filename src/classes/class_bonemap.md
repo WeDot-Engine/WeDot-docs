@@ -21,15 +21,15 @@ By assigning the actual [`Skeleton3D`](class_skeleton3d.md) bone name as the key
 
 |||
 |:-:|:--|
-| [`SkeletonProfile`](class_skeletonprofile.md) | [`profile`](#class_bonemap_property_profile) |
+| [`SkeletonProfile`](class_skeletonprofile.md) | [`profile`](class_bonemap.md#class_bonemap_property_profile) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`StringName`](class_stringname.md) | [`find_profile_bone_name`](#class_bonemap_method_find_profile_bone_name) ( skeleton_bone_name: [`StringName`](class_stringname.md) ) const[^const]                                           |
-| [`StringName`](class_stringname.md) | [`get_skeleton_bone_name`](#class_bonemap_method_get_skeleton_bone_name) ( profile_bone_name: [`StringName`](class_stringname.md) ) const[^const]                                            |
-| `void`                              | [`set_skeleton_bone_name`](#class_bonemap_method_set_skeleton_bone_name) ( profile_bone_name: [`StringName`](class_stringname.md), skeleton_bone_name: [`StringName`](class_stringname.md) ) |
+| [`StringName`](class_stringname.md) | [`find_profile_bone_name`](class_bonemap.md#class_bonemap_method_find_profile_bone_name) ( skeleton_bone_name: [`StringName`](class_stringname.md) ) const[^const]                                           |
+| [`StringName`](class_stringname.md) | [`get_skeleton_bone_name`](class_bonemap.md#class_bonemap_method_get_skeleton_bone_name) ( profile_bone_name: [`StringName`](class_stringname.md) ) const[^const]                                            |
+| `void`                              | [`set_skeleton_bone_name`](class_bonemap.md#class_bonemap_method_set_skeleton_bone_name) ( profile_bone_name: [`StringName`](class_stringname.md), skeleton_bone_name: [`StringName`](class_stringname.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

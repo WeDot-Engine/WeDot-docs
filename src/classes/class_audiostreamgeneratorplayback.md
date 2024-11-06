@@ -19,12 +19,12 @@ This class is meant to be used with [`AudioStreamGenerator`](class_audiostreamge
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`can_push_buffer`](#class_audiostreamgeneratorplayback_method_can_push_buffer) ( amount: [`int`](class_int.md) ) const[^const]         |
-| `void`                  | [`clear_buffer`](#class_audiostreamgeneratorplayback_method_clear_buffer) ( )                                                           |
-| [`int`](class_int.md)   | [`get_frames_available`](#class_audiostreamgeneratorplayback_method_get_frames_available) ( ) const[^const]                             |
-| [`int`](class_int.md)   | [`get_skips`](#class_audiostreamgeneratorplayback_method_get_skips) ( ) const[^const]                                                   |
-| [`bool`](class_bool.md) | [`push_buffer`](#class_audiostreamgeneratorplayback_method_push_buffer) ( frames: [`PackedVector2Array`](class_packedvector2array.md) ) |
-| [`bool`](class_bool.md) | [`push_frame`](#class_audiostreamgeneratorplayback_method_push_frame) ( frame: [`Vector2`](class_vector2.md) )                          |
+| [`bool`](class_bool.md) | [`can_push_buffer`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_can_push_buffer) ( amount: [`int`](class_int.md) ) const[^const]         |
+| `void`                  | [`clear_buffer`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_clear_buffer) ( )                                                           |
+| [`int`](class_int.md)   | [`get_frames_available`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_get_frames_available) ( ) const[^const]                             |
+| [`int`](class_int.md)   | [`get_skips`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_get_skips) ( ) const[^const]                                                   |
+| [`bool`](class_bool.md) | [`push_buffer`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_push_buffer) ( frames: [`PackedVector2Array`](class_packedvector2array.md) ) |
+| [`bool`](class_bool.md) | [`push_frame`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_push_frame) ( frame: [`Vector2`](class_vector2.md) )                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -76,7 +76,7 @@ Returns the number of times the playback skipped due to a buffer underrun in the
 
 [`bool`](class_bool.md) **push_buffer** ( frames: [`PackedVector2Array`](class_packedvector2array.md) )<div id="class_audiostreamgeneratorplayback_method_push_buffer"></div>
 
-Pushes several audio data frames to the buffer. This is usually more efficient than [`push_frame`](#class_audiostreamgeneratorplayback_method_push_frame) in C# and compiled languages via GDExtension, but [`push_buffer`](#class_audiostreamgeneratorplayback_method_push_buffer) may be *less* efficient in GDScript.
+Pushes several audio data frames to the buffer. This is usually more efficient than [`push_frame`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_push_frame) in C# and compiled languages via GDExtension, but [`push_buffer`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_push_buffer) may be *less* efficient in GDScript.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -86,7 +86,7 @@ Pushes several audio data frames to the buffer. This is usually more efficient t
 
 [`bool`](class_bool.md) **push_frame** ( frame: [`Vector2`](class_vector2.md) )<div id="class_audiostreamgeneratorplayback_method_push_frame"></div>
 
-Pushes a single audio data frame to the buffer. This is usually less efficient than [`push_buffer`](#class_audiostreamgeneratorplayback_method_push_buffer) in C# and compiled languages via GDExtension, but [`push_frame`](#class_audiostreamgeneratorplayback_method_push_frame) may be *more* efficient in GDScript.
+Pushes a single audio data frame to the buffer. This is usually less efficient than [`push_buffer`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_push_buffer) in C# and compiled languages via GDExtension, but [`push_frame`](class_audiostreamgeneratorplayback.md#class_audiostreamgeneratorplayback_method_push_frame) may be *more* efficient in GDScript.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

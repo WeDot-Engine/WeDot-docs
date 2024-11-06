@@ -19,32 +19,32 @@ By adjusting various properties of this resource, you can change the colors of s
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`color_regions`](#class_codehighlighter_property_color_regions)                 | ``{}``                |
-| [`Color`](class_color.md)           | [`function_color`](#class_codehighlighter_property_function_color)               | ``Color(0, 0, 0, 1)`` |
-| [`Dictionary`](class_dictionary.md) | [`keyword_colors`](#class_codehighlighter_property_keyword_colors)               | ``{}``                |
-| [`Dictionary`](class_dictionary.md) | [`member_keyword_colors`](#class_codehighlighter_property_member_keyword_colors) | ``{}``                |
-| [`Color`](class_color.md)           | [`member_variable_color`](#class_codehighlighter_property_member_variable_color) | ``Color(0, 0, 0, 1)`` |
-| [`Color`](class_color.md)           | [`number_color`](#class_codehighlighter_property_number_color)                   | ``Color(0, 0, 0, 1)`` |
-| [`Color`](class_color.md)           | [`symbol_color`](#class_codehighlighter_property_symbol_color)                   | ``Color(0, 0, 0, 1)`` |
+| [`Dictionary`](class_dictionary.md) | [`color_regions`](class_codehighlighter.md#class_codehighlighter_property_color_regions)                 | ``{}``                |
+| [`Color`](class_color.md)           | [`function_color`](class_codehighlighter.md#class_codehighlighter_property_function_color)               | ``Color(0, 0, 0, 1)`` |
+| [`Dictionary`](class_dictionary.md) | [`keyword_colors`](class_codehighlighter.md#class_codehighlighter_property_keyword_colors)               | ``{}``                |
+| [`Dictionary`](class_dictionary.md) | [`member_keyword_colors`](class_codehighlighter.md#class_codehighlighter_property_member_keyword_colors) | ``{}``                |
+| [`Color`](class_color.md)           | [`member_variable_color`](class_codehighlighter.md#class_codehighlighter_property_member_variable_color) | ``Color(0, 0, 0, 1)`` |
+| [`Color`](class_color.md)           | [`number_color`](class_codehighlighter.md#class_codehighlighter_property_number_color)                   | ``Color(0, 0, 0, 1)`` |
+| [`Color`](class_color.md)           | [`symbol_color`](class_codehighlighter.md#class_codehighlighter_property_symbol_color)                   | ``Color(0, 0, 0, 1)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                    | [`add_color_region`](#class_codehighlighter_method_add_color_region) ( start_key: [`String`](class_string.md), end_key: [`String`](class_string.md), color: [`Color`](class_color.md), line_only: [`bool`](class_bool.md) = false ) |
-| `void`                    | [`add_keyword_color`](#class_codehighlighter_method_add_keyword_color) ( keyword: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                   |
-| `void`                    | [`add_member_keyword_color`](#class_codehighlighter_method_add_member_keyword_color) ( member_keyword: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                              |
-| `void`                    | [`clear_color_regions`](#class_codehighlighter_method_clear_color_regions) ( )                                                                                                                                                      |
-| `void`                    | [`clear_keyword_colors`](#class_codehighlighter_method_clear_keyword_colors) ( )                                                                                                                                                    |
-| `void`                    | [`clear_member_keyword_colors`](#class_codehighlighter_method_clear_member_keyword_colors) ( )                                                                                                                                      |
-| [`Color`](class_color.md) | [`get_keyword_color`](#class_codehighlighter_method_get_keyword_color) ( keyword: [`String`](class_string.md) ) const[^const]                                                                                                       |
-| [`Color`](class_color.md) | [`get_member_keyword_color`](#class_codehighlighter_method_get_member_keyword_color) ( member_keyword: [`String`](class_string.md) ) const[^const]                                                                                  |
-| [`bool`](class_bool.md)   | [`has_color_region`](#class_codehighlighter_method_has_color_region) ( start_key: [`String`](class_string.md) ) const[^const]                                                                                                       |
-| [`bool`](class_bool.md)   | [`has_keyword_color`](#class_codehighlighter_method_has_keyword_color) ( keyword: [`String`](class_string.md) ) const[^const]                                                                                                       |
-| [`bool`](class_bool.md)   | [`has_member_keyword_color`](#class_codehighlighter_method_has_member_keyword_color) ( member_keyword: [`String`](class_string.md) ) const[^const]                                                                                  |
-| `void`                    | [`remove_color_region`](#class_codehighlighter_method_remove_color_region) ( start_key: [`String`](class_string.md) )                                                                                                               |
-| `void`                    | [`remove_keyword_color`](#class_codehighlighter_method_remove_keyword_color) ( keyword: [`String`](class_string.md) )                                                                                                               |
-| `void`                    | [`remove_member_keyword_color`](#class_codehighlighter_method_remove_member_keyword_color) ( member_keyword: [`String`](class_string.md) )                                                                                          |
+| `void`                    | [`add_color_region`](class_codehighlighter.md#class_codehighlighter_method_add_color_region) ( start_key: [`String`](class_string.md), end_key: [`String`](class_string.md), color: [`Color`](class_color.md), line_only: [`bool`](class_bool.md) = false ) |
+| `void`                    | [`add_keyword_color`](class_codehighlighter.md#class_codehighlighter_method_add_keyword_color) ( keyword: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                   |
+| `void`                    | [`add_member_keyword_color`](class_codehighlighter.md#class_codehighlighter_method_add_member_keyword_color) ( member_keyword: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                              |
+| `void`                    | [`clear_color_regions`](class_codehighlighter.md#class_codehighlighter_method_clear_color_regions) ( )                                                                                                                                                      |
+| `void`                    | [`clear_keyword_colors`](class_codehighlighter.md#class_codehighlighter_method_clear_keyword_colors) ( )                                                                                                                                                    |
+| `void`                    | [`clear_member_keyword_colors`](class_codehighlighter.md#class_codehighlighter_method_clear_member_keyword_colors) ( )                                                                                                                                      |
+| [`Color`](class_color.md) | [`get_keyword_color`](class_codehighlighter.md#class_codehighlighter_method_get_keyword_color) ( keyword: [`String`](class_string.md) ) const[^const]                                                                                                       |
+| [`Color`](class_color.md) | [`get_member_keyword_color`](class_codehighlighter.md#class_codehighlighter_method_get_member_keyword_color) ( member_keyword: [`String`](class_string.md) ) const[^const]                                                                                  |
+| [`bool`](class_bool.md)   | [`has_color_region`](class_codehighlighter.md#class_codehighlighter_method_has_color_region) ( start_key: [`String`](class_string.md) ) const[^const]                                                                                                       |
+| [`bool`](class_bool.md)   | [`has_keyword_color`](class_codehighlighter.md#class_codehighlighter_method_has_keyword_color) ( keyword: [`String`](class_string.md) ) const[^const]                                                                                                       |
+| [`bool`](class_bool.md)   | [`has_member_keyword_color`](class_codehighlighter.md#class_codehighlighter_method_has_member_keyword_color) ( member_keyword: [`String`](class_string.md) ) const[^const]                                                                                  |
+| `void`                    | [`remove_color_region`](class_codehighlighter.md#class_codehighlighter_method_remove_color_region) ( start_key: [`String`](class_string.md) )                                                                                                               |
+| `void`                    | [`remove_keyword_color`](class_codehighlighter.md#class_codehighlighter_method_remove_keyword_color) ( keyword: [`String`](class_string.md) )                                                                                                               |
+| `void`                    | [`remove_member_keyword_color`](class_codehighlighter.md#class_codehighlighter_method_remove_member_keyword_color) ( member_keyword: [`String`](class_string.md) )                                                                                          |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -13,21 +13,21 @@ A node used to create a parallax scrolling background.
 
 ## 描述
 
-A ParallaxBackground uses one or more [`ParallaxLayer`](class_parallaxlayer.md) child nodes to create a parallax effect. Each [`ParallaxLayer`](class_parallaxlayer.md) can move at a different speed using [`ParallaxLayer.motion_offset`](#class_parallaxlayer_property_motion_offset). This creates an illusion of depth in a 2D game. If not used with a [`Camera2D`](class_camera2d.md), you must manually calculate the [`scroll_offset`](#class_parallaxbackground_property_scroll_offset).
+A ParallaxBackground uses one or more [`ParallaxLayer`](class_parallaxlayer.md) child nodes to create a parallax effect. Each [`ParallaxLayer`](class_parallaxlayer.md) can move at a different speed using [`ParallaxLayer.motion_offset`](class_parallaxlayer.md#class_parallaxlayer_property_motion_offset). This creates an illusion of depth in a 2D game. If not used with a [`Camera2D`](class_camera2d.md), you must manually calculate the [`scroll_offset`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_offset).
 
- **Note:** Each **ParallaxBackground** is drawn on one specific [`Viewport`](class_viewport.md) and cannot be shared between multiple [`Viewport`](class_viewport.md) s, see [`CanvasLayer.custom_viewport`](#class_canvaslayer_property_custom_viewport). When using multiple [`Viewport`](class_viewport.md) s, for example in a split-screen game, you need create an individual **ParallaxBackground** for each [`Viewport`](class_viewport.md) you want it to be drawn on.
+ **Note:** Each **ParallaxBackground** is drawn on one specific [`Viewport`](class_viewport.md) and cannot be shared between multiple [`Viewport`](class_viewport.md) s, see [`CanvasLayer.custom_viewport`](class_canvaslayer.md#class_canvaslayer_property_custom_viewport). When using multiple [`Viewport`](class_viewport.md) s, for example in a split-screen game, you need create an individual **ParallaxBackground** for each [`Viewport`](class_viewport.md) you want it to be drawn on.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)         | layer                                                                                       | ``-100`` (overrides [`CanvasLayer`](#class_canvaslayer_property_layer)) |
-| [`Vector2`](class_vector2.md) | [`scroll_base_offset`](#class_parallaxbackground_property_scroll_base_offset)               | ``Vector2(0, 0)``                                                       |
-| [`Vector2`](class_vector2.md) | [`scroll_base_scale`](#class_parallaxbackground_property_scroll_base_scale)                 | ``Vector2(1, 1)``                                                       |
-| [`bool`](class_bool.md)       | [`scroll_ignore_camera_zoom`](#class_parallaxbackground_property_scroll_ignore_camera_zoom) | ``false``                                                               |
-| [`Vector2`](class_vector2.md) | [`scroll_limit_begin`](#class_parallaxbackground_property_scroll_limit_begin)               | ``Vector2(0, 0)``                                                       |
-| [`Vector2`](class_vector2.md) | [`scroll_limit_end`](#class_parallaxbackground_property_scroll_limit_end)                   | ``Vector2(0, 0)``                                                       |
-| [`Vector2`](class_vector2.md) | [`scroll_offset`](#class_parallaxbackground_property_scroll_offset)                         | ``Vector2(0, 0)``                                                       |
+| [`int`](class_int.md)         | layer                                                                                                                  | ``-100`` (overrides [`CanvasLayer`](class_canvaslayer.md#class_canvaslayer_property_layer)) |
+| [`Vector2`](class_vector2.md) | [`scroll_base_offset`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_base_offset)               | ``Vector2(0, 0)``                                                                           |
+| [`Vector2`](class_vector2.md) | [`scroll_base_scale`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_base_scale)                 | ``Vector2(1, 1)``                                                                           |
+| [`bool`](class_bool.md)       | [`scroll_ignore_camera_zoom`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_ignore_camera_zoom) | ``false``                                                                                   |
+| [`Vector2`](class_vector2.md) | [`scroll_limit_begin`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_limit_begin)               | ``Vector2(0, 0)``                                                                           |
+| [`Vector2`](class_vector2.md) | [`scroll_limit_end`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_limit_end)                   | ``Vector2(0, 0)``                                                                           |
+| [`Vector2`](class_vector2.md) | [`scroll_offset`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_offset)                         | ``Vector2(0, 0)``                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -81,7 +81,7 @@ If `true`, elements in [`ParallaxLayer`](class_parallaxlayer.md) child aren't af
 - `void` **set_limit_begin** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_limit_begin** ( )
 
-Top-left limits for scrolling to begin. If the camera is outside of this limit, the background will stop scrolling. Must be lower than [`scroll_limit_end`](#class_parallaxbackground_property_scroll_limit_end) to work.
+Top-left limits for scrolling to begin. If the camera is outside of this limit, the background will stop scrolling. Must be lower than [`scroll_limit_end`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_limit_end) to work.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -94,7 +94,7 @@ Top-left limits for scrolling to begin. If the camera is outside of this limit, 
 - `void` **set_limit_end** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_limit_end** ( )
 
-Bottom-right limits for scrolling to end. If the camera is outside of this limit, the background will stop scrolling. Must be higher than [`scroll_limit_begin`](#class_parallaxbackground_property_scroll_limit_begin) to work.
+Bottom-right limits for scrolling to end. If the camera is outside of this limit, the background will stop scrolling. Must be higher than [`scroll_limit_begin`](class_parallaxbackground.md#class_parallaxbackground_property_scroll_limit_begin) to work.
 
 <!-- rst-class:: classref-item-separator -->
 

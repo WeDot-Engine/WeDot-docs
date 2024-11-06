@@ -19,21 +19,21 @@ Unlike [`AudioEffectCapture`](class_audioeffectcapture.md), this effect encodes 
 
 Can be used (with an [`AudioStreamMicrophone`](class_audiostreammicrophone.md)) to record from a microphone.
 
- **Note:** [`ProjectSettings.audio/driver/enable_input`](#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+ **Note:** [`ProjectSettings.audio/driver/enable_input`](class_projectsettings.md#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Format](#enum_audiostreamwav_format) | [`format`](#class_audioeffectrecord_property_format) | ``1`` |
+| [Format](#enum_audiostreamwav_format) | [`format`](class_audioeffectrecord.md#class_audioeffectrecord_property_format) | ``1`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AudioStreamWAV`](class_audiostreamwav.md) | [`get_recording`](#class_audioeffectrecord_method_get_recording) ( ) const[^const]                                 |
-| [`bool`](class_bool.md)                     | [`is_recording_active`](#class_audioeffectrecord_method_is_recording_active) ( ) const[^const]                     |
-| `void`                                      | [`set_recording_active`](#class_audioeffectrecord_method_set_recording_active) ( record: [`bool`](class_bool.md) ) |
+| [`AudioStreamWAV`](class_audiostreamwav.md) | [`get_recording`](class_audioeffectrecord.md#class_audioeffectrecord_method_get_recording) ( ) const[^const]                                 |
+| [`bool`](class_bool.md)                     | [`is_recording_active`](class_audioeffectrecord.md#class_audioeffectrecord_method_is_recording_active) ( ) const[^const]                     |
+| `void`                                      | [`set_recording_active`](class_audioeffectrecord.md#class_audioeffectrecord_method_set_recording_active) ( record: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

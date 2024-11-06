@@ -21,31 +21,31 @@ See [`AStar3D`](class_astar3d.md) for a more thorough explanation on how to use 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                           | [`_compute_cost`](#class_astar2d_private_method__compute_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                               |
-| [`float`](class_float.md)                           | [`_estimate_cost`](#class_astar2d_private_method__estimate_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                             |
-| `void`                                              | [`add_point`](#class_astar2d_method_add_point) ( id: [`int`](class_int.md), position: [`Vector2`](class_vector2.md), weight_scale: [`float`](class_float.md) = 1.0 )                          |
-| [`bool`](class_bool.md)                             | [`are_points_connected`](#class_astar2d_method_are_points_connected) ( id: [`int`](class_int.md), to_id: [`int`](class_int.md), bidirectional: [`bool`](class_bool.md) = true ) const[^const] |
-| `void`                                              | [`clear`](#class_astar2d_method_clear) ( )                                                                                                                                                    |
-| `void`                                              | [`connect_points`](#class_astar2d_method_connect_points) ( id: [`int`](class_int.md), to_id: [`int`](class_int.md), bidirectional: [`bool`](class_bool.md) = true )                           |
-| `void`                                              | [`disconnect_points`](#class_astar2d_method_disconnect_points) ( id: [`int`](class_int.md), to_id: [`int`](class_int.md), bidirectional: [`bool`](class_bool.md) = true )                     |
-| [`int`](class_int.md)                               | [`get_available_point_id`](#class_astar2d_method_get_available_point_id) ( ) const[^const]                                                                                                    |
-| [`int`](class_int.md)                               | [`get_closest_point`](#class_astar2d_method_get_closest_point) ( to_position: [`Vector2`](class_vector2.md), include_disabled: [`bool`](class_bool.md) = false ) const[^const]                |
-| [`Vector2`](class_vector2.md)                       | [`get_closest_position_in_segment`](#class_astar2d_method_get_closest_position_in_segment) ( to_position: [`Vector2`](class_vector2.md) ) const[^const]                                       |
-| [`PackedInt64Array`](class_packedint64array.md)     | [`get_id_path`](#class_astar2d_method_get_id_path) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md), allow_partial_path: [`bool`](class_bool.md) = false )                      |
-| [`int`](class_int.md)                               | [`get_point_capacity`](#class_astar2d_method_get_point_capacity) ( ) const[^const]                                                                                                            |
-| [`PackedInt64Array`](class_packedint64array.md)     | [`get_point_connections`](#class_astar2d_method_get_point_connections) ( id: [`int`](class_int.md) )                                                                                          |
-| [`int`](class_int.md)                               | [`get_point_count`](#class_astar2d_method_get_point_count) ( ) const[^const]                                                                                                                  |
-| [`PackedInt64Array`](class_packedint64array.md)     | [`get_point_ids`](#class_astar2d_method_get_point_ids) ( )                                                                                                                                    |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`get_point_path`](#class_astar2d_method_get_point_path) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md), allow_partial_path: [`bool`](class_bool.md) = false )                |
-| [`Vector2`](class_vector2.md)                       | [`get_point_position`](#class_astar2d_method_get_point_position) ( id: [`int`](class_int.md) ) const[^const]                                                                                  |
-| [`float`](class_float.md)                           | [`get_point_weight_scale`](#class_astar2d_method_get_point_weight_scale) ( id: [`int`](class_int.md) ) const[^const]                                                                          |
-| [`bool`](class_bool.md)                             | [`has_point`](#class_astar2d_method_has_point) ( id: [`int`](class_int.md) ) const[^const]                                                                                                    |
-| [`bool`](class_bool.md)                             | [`is_point_disabled`](#class_astar2d_method_is_point_disabled) ( id: [`int`](class_int.md) ) const[^const]                                                                                    |
-| `void`                                              | [`remove_point`](#class_astar2d_method_remove_point) ( id: [`int`](class_int.md) )                                                                                                            |
-| `void`                                              | [`reserve_space`](#class_astar2d_method_reserve_space) ( num_nodes: [`int`](class_int.md) )                                                                                                   |
-| `void`                                              | [`set_point_disabled`](#class_astar2d_method_set_point_disabled) ( id: [`int`](class_int.md), disabled: [`bool`](class_bool.md) = true )                                                      |
-| `void`                                              | [`set_point_position`](#class_astar2d_method_set_point_position) ( id: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) )                                                       |
-| `void`                                              | [`set_point_weight_scale`](#class_astar2d_method_set_point_weight_scale) ( id: [`int`](class_int.md), weight_scale: [`float`](class_float.md) )                                               |
+| [`float`](class_float.md)                           | [`_compute_cost`](class_astar2d.md#class_astar2d_private_method__compute_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                               |
+| [`float`](class_float.md)                           | [`_estimate_cost`](class_astar2d.md#class_astar2d_private_method__estimate_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                             |
+| `void`                                              | [`add_point`](class_astar2d.md#class_astar2d_method_add_point) ( id: [`int`](class_int.md), position: [`Vector2`](class_vector2.md), weight_scale: [`float`](class_float.md) = 1.0 )                          |
+| [`bool`](class_bool.md)                             | [`are_points_connected`](class_astar2d.md#class_astar2d_method_are_points_connected) ( id: [`int`](class_int.md), to_id: [`int`](class_int.md), bidirectional: [`bool`](class_bool.md) = true ) const[^const] |
+| `void`                                              | [`clear`](class_astar2d.md#class_astar2d_method_clear) ( )                                                                                                                                                    |
+| `void`                                              | [`connect_points`](class_astar2d.md#class_astar2d_method_connect_points) ( id: [`int`](class_int.md), to_id: [`int`](class_int.md), bidirectional: [`bool`](class_bool.md) = true )                           |
+| `void`                                              | [`disconnect_points`](class_astar2d.md#class_astar2d_method_disconnect_points) ( id: [`int`](class_int.md), to_id: [`int`](class_int.md), bidirectional: [`bool`](class_bool.md) = true )                     |
+| [`int`](class_int.md)                               | [`get_available_point_id`](class_astar2d.md#class_astar2d_method_get_available_point_id) ( ) const[^const]                                                                                                    |
+| [`int`](class_int.md)                               | [`get_closest_point`](class_astar2d.md#class_astar2d_method_get_closest_point) ( to_position: [`Vector2`](class_vector2.md), include_disabled: [`bool`](class_bool.md) = false ) const[^const]                |
+| [`Vector2`](class_vector2.md)                       | [`get_closest_position_in_segment`](class_astar2d.md#class_astar2d_method_get_closest_position_in_segment) ( to_position: [`Vector2`](class_vector2.md) ) const[^const]                                       |
+| [`PackedInt64Array`](class_packedint64array.md)     | [`get_id_path`](class_astar2d.md#class_astar2d_method_get_id_path) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md), allow_partial_path: [`bool`](class_bool.md) = false )                      |
+| [`int`](class_int.md)                               | [`get_point_capacity`](class_astar2d.md#class_astar2d_method_get_point_capacity) ( ) const[^const]                                                                                                            |
+| [`PackedInt64Array`](class_packedint64array.md)     | [`get_point_connections`](class_astar2d.md#class_astar2d_method_get_point_connections) ( id: [`int`](class_int.md) )                                                                                          |
+| [`int`](class_int.md)                               | [`get_point_count`](class_astar2d.md#class_astar2d_method_get_point_count) ( ) const[^const]                                                                                                                  |
+| [`PackedInt64Array`](class_packedint64array.md)     | [`get_point_ids`](class_astar2d.md#class_astar2d_method_get_point_ids) ( )                                                                                                                                    |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`get_point_path`](class_astar2d.md#class_astar2d_method_get_point_path) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md), allow_partial_path: [`bool`](class_bool.md) = false )                |
+| [`Vector2`](class_vector2.md)                       | [`get_point_position`](class_astar2d.md#class_astar2d_method_get_point_position) ( id: [`int`](class_int.md) ) const[^const]                                                                                  |
+| [`float`](class_float.md)                           | [`get_point_weight_scale`](class_astar2d.md#class_astar2d_method_get_point_weight_scale) ( id: [`int`](class_int.md) ) const[^const]                                                                          |
+| [`bool`](class_bool.md)                             | [`has_point`](class_astar2d.md#class_astar2d_method_has_point) ( id: [`int`](class_int.md) ) const[^const]                                                                                                    |
+| [`bool`](class_bool.md)                             | [`is_point_disabled`](class_astar2d.md#class_astar2d_method_is_point_disabled) ( id: [`int`](class_int.md) ) const[^const]                                                                                    |
+| `void`                                              | [`remove_point`](class_astar2d.md#class_astar2d_method_remove_point) ( id: [`int`](class_int.md) )                                                                                                            |
+| `void`                                              | [`reserve_space`](class_astar2d.md#class_astar2d_method_reserve_space) ( num_nodes: [`int`](class_int.md) )                                                                                                   |
+| `void`                                              | [`set_point_disabled`](class_astar2d.md#class_astar2d_method_set_point_disabled) ( id: [`int`](class_int.md), disabled: [`bool`](class_bool.md) = true )                                                      |
+| `void`                                              | [`set_point_position`](class_astar2d.md#class_astar2d_method_set_point_position) ( id: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) )                                                       |
+| `void`                                              | [`set_point_weight_scale`](class_astar2d.md#class_astar2d_method_set_point_weight_scale) ( id: [`int`](class_int.md), weight_scale: [`float`](class_float.md) )                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -83,7 +83,7 @@ Note that this function is hidden in the default **AStar2D** class.
 
 Adds a new point at the given position with the given identifier. The `id` must be 0 or larger, and the `weight_scale` must be 0.0 or greater.
 
-The `weight_scale` is multiplied by the result of [`_compute_cost`](#class_astar2d_private_method__compute_cost) when determining the overall cost of traveling across a segment from a neighboring point to this point. Thus, all else being equal, the algorithm prefers points with lower `weight_scale` s to form a path.
+The `weight_scale` is multiplied by the result of [`_compute_cost`](class_astar2d.md#class_astar2d_private_method__compute_cost) when determining the overall cost of traveling across a segment from a neighboring point to this point. Thus, all else being equal, the algorithm prefers points with lower `weight_scale` s to form a path.
 
 
 
@@ -292,7 +292,7 @@ If you change the 2nd point's weight to 3, then the result will be `[1, 4, 3]` i
 
 [`int`](class_int.md) **get_point_capacity** ( ) const[^const]<div id="class_astar2d_method_get_point_capacity"></div>
 
-Returns the capacity of the structure backing the points, useful in conjunction with [`reserve_space`](#class_astar2d_method_reserve_space).
+Returns the capacity of the structure backing the points, useful in conjunction with [`reserve_space`](class_astar2d.md#class_astar2d_method_reserve_space).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -462,7 +462,7 @@ Sets the `position` for the point with the given `id`.
 
 `void` **set_point_weight_scale** ( id: [`int`](class_int.md), weight_scale: [`float`](class_float.md) )<div id="class_astar2d_method_set_point_weight_scale"></div>
 
-Sets the `weight_scale` for the point with the given `id`. The `weight_scale` is multiplied by the result of [`_compute_cost`](#class_astar2d_private_method__compute_cost) when determining the overall cost of traveling across a segment from a neighboring point to this point.
+Sets the `weight_scale` for the point with the given `id`. The `weight_scale` is multiplied by the result of [`_compute_cost`](class_astar2d.md#class_astar2d_private_method__compute_cost) when determining the overall cost of traveling across a segment from a neighboring point to this point.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

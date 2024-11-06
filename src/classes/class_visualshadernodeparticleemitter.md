@@ -21,7 +21,7 @@ Particle emitter nodes can be used in "start" step of particle shaders and they 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`mode_2d`](#class_visualshadernodeparticleemitter_property_mode_2d) | ``false`` |
+| [`bool`](class_bool.md) | [`mode_2d`](class_visualshadernodeparticleemitter.md#class_visualshadernodeparticleemitter_property_mode_2d) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->
 

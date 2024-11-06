@@ -19,43 +19,43 @@ The Windows exporter customizes how a Windows build is handled. In the editor's 
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                       | [`application/company_name`](#class_editorexportplatformwindows_property_application/company_name)                               |
-| [`String`](class_string.md)                       | [`application/console_wrapper_icon`](#class_editorexportplatformwindows_property_application/console_wrapper_icon)               |
-| [`String`](class_string.md)                       | [`application/copyright`](#class_editorexportplatformwindows_property_application/copyright)                                     |
-| [`bool`](class_bool.md)                           | [`application/d3d12_agility_sdk_multiarch`](#class_editorexportplatformwindows_property_application/d3d12_agility_sdk_multiarch) |
-| [`int`](class_int.md)                             | [`application/export_angle`](#class_editorexportplatformwindows_property_application/export_angle)                               |
-| [`int`](class_int.md)                             | [`application/export_d3d12`](#class_editorexportplatformwindows_property_application/export_d3d12)                               |
-| [`String`](class_string.md)                       | [`application/file_description`](#class_editorexportplatformwindows_property_application/file_description)                       |
-| [`String`](class_string.md)                       | [`application/file_version`](#class_editorexportplatformwindows_property_application/file_version)                               |
-| [`String`](class_string.md)                       | [`application/icon`](#class_editorexportplatformwindows_property_application/icon)                                               |
-| [`int`](class_int.md)                             | [`application/icon_interpolation`](#class_editorexportplatformwindows_property_application/icon_interpolation)                   |
-| [`bool`](class_bool.md)                           | [`application/modify_resources`](#class_editorexportplatformwindows_property_application/modify_resources)                       |
-| [`String`](class_string.md)                       | [`application/product_name`](#class_editorexportplatformwindows_property_application/product_name)                               |
-| [`String`](class_string.md)                       | [`application/product_version`](#class_editorexportplatformwindows_property_application/product_version)                         |
-| [`String`](class_string.md)                       | [`application/trademarks`](#class_editorexportplatformwindows_property_application/trademarks)                                   |
-| [`String`](class_string.md)                       | [`binary_format/architecture`](#class_editorexportplatformwindows_property_binary_format/architecture)                           |
-| [`bool`](class_bool.md)                           | [`binary_format/embed_pck`](#class_editorexportplatformwindows_property_binary_format/embed_pck)                                 |
-| [`PackedStringArray`](class_packedstringarray.md) | [`codesign/custom_options`](#class_editorexportplatformwindows_property_codesign/custom_options)                                 |
-| [`String`](class_string.md)                       | [`codesign/description`](#class_editorexportplatformwindows_property_codesign/description)                                       |
-| [`int`](class_int.md)                             | [`codesign/digest_algorithm`](#class_editorexportplatformwindows_property_codesign/digest_algorithm)                             |
-| [`bool`](class_bool.md)                           | [`codesign/enable`](#class_editorexportplatformwindows_property_codesign/enable)                                                 |
-| [`String`](class_string.md)                       | [`codesign/identity`](#class_editorexportplatformwindows_property_codesign/identity)                                             |
-| [`int`](class_int.md)                             | [`codesign/identity_type`](#class_editorexportplatformwindows_property_codesign/identity_type)                                   |
-| [`String`](class_string.md)                       | [`codesign/password`](#class_editorexportplatformwindows_property_codesign/password)                                             |
-| [`bool`](class_bool.md)                           | [`codesign/timestamp`](#class_editorexportplatformwindows_property_codesign/timestamp)                                           |
-| [`String`](class_string.md)                       | [`codesign/timestamp_server_url`](#class_editorexportplatformwindows_property_codesign/timestamp_server_url)                     |
-| [`String`](class_string.md)                       | [`custom_template/debug`](#class_editorexportplatformwindows_property_custom_template/debug)                                     |
-| [`String`](class_string.md)                       | [`custom_template/release`](#class_editorexportplatformwindows_property_custom_template/release)                                 |
-| [`int`](class_int.md)                             | [`debug/export_console_wrapper`](#class_editorexportplatformwindows_property_debug/export_console_wrapper)                       |
-| [`String`](class_string.md)                       | [`ssh_remote_deploy/cleanup_script`](#class_editorexportplatformwindows_property_ssh_remote_deploy/cleanup_script)               |
-| [`bool`](class_bool.md)                           | [`ssh_remote_deploy/enabled`](#class_editorexportplatformwindows_property_ssh_remote_deploy/enabled)                             |
-| [`String`](class_string.md)                       | [`ssh_remote_deploy/extra_args_scp`](#class_editorexportplatformwindows_property_ssh_remote_deploy/extra_args_scp)               |
-| [`String`](class_string.md)                       | [`ssh_remote_deploy/extra_args_ssh`](#class_editorexportplatformwindows_property_ssh_remote_deploy/extra_args_ssh)               |
-| [`String`](class_string.md)                       | [`ssh_remote_deploy/host`](#class_editorexportplatformwindows_property_ssh_remote_deploy/host)                                   |
-| [`String`](class_string.md)                       | [`ssh_remote_deploy/port`](#class_editorexportplatformwindows_property_ssh_remote_deploy/port)                                   |
-| [`String`](class_string.md)                       | [`ssh_remote_deploy/run_script`](#class_editorexportplatformwindows_property_ssh_remote_deploy/run_script)                       |
-| [`bool`](class_bool.md)                           | [`texture_format/etc2_astc`](#class_editorexportplatformwindows_property_texture_format/etc2_astc)                               |
-| [`bool`](class_bool.md)                           | [`texture_format/s3tc_bptc`](#class_editorexportplatformwindows_property_texture_format/s3tc_bptc)                               |
+| [`String`](class_string.md)                       | [`application/company_name`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/company_name)                               |
+| [`String`](class_string.md)                       | [`application/console_wrapper_icon`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/console_wrapper_icon)               |
+| [`String`](class_string.md)                       | [`application/copyright`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/copyright)                                     |
+| [`bool`](class_bool.md)                           | [`application/d3d12_agility_sdk_multiarch`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/d3d12_agility_sdk_multiarch) |
+| [`int`](class_int.md)                             | [`application/export_angle`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/export_angle)                               |
+| [`int`](class_int.md)                             | [`application/export_d3d12`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/export_d3d12)                               |
+| [`String`](class_string.md)                       | [`application/file_description`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/file_description)                       |
+| [`String`](class_string.md)                       | [`application/file_version`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/file_version)                               |
+| [`String`](class_string.md)                       | [`application/icon`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/icon)                                               |
+| [`int`](class_int.md)                             | [`application/icon_interpolation`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/icon_interpolation)                   |
+| [`bool`](class_bool.md)                           | [`application/modify_resources`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/modify_resources)                       |
+| [`String`](class_string.md)                       | [`application/product_name`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/product_name)                               |
+| [`String`](class_string.md)                       | [`application/product_version`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/product_version)                         |
+| [`String`](class_string.md)                       | [`application/trademarks`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/trademarks)                                   |
+| [`String`](class_string.md)                       | [`binary_format/architecture`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_binary_format/architecture)                           |
+| [`bool`](class_bool.md)                           | [`binary_format/embed_pck`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_binary_format/embed_pck)                                 |
+| [`PackedStringArray`](class_packedstringarray.md) | [`codesign/custom_options`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/custom_options)                                 |
+| [`String`](class_string.md)                       | [`codesign/description`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/description)                                       |
+| [`int`](class_int.md)                             | [`codesign/digest_algorithm`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/digest_algorithm)                             |
+| [`bool`](class_bool.md)                           | [`codesign/enable`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/enable)                                                 |
+| [`String`](class_string.md)                       | [`codesign/identity`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/identity)                                             |
+| [`int`](class_int.md)                             | [`codesign/identity_type`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/identity_type)                                   |
+| [`String`](class_string.md)                       | [`codesign/password`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/password)                                             |
+| [`bool`](class_bool.md)                           | [`codesign/timestamp`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/timestamp)                                           |
+| [`String`](class_string.md)                       | [`codesign/timestamp_server_url`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/timestamp_server_url)                     |
+| [`String`](class_string.md)                       | [`custom_template/debug`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_custom_template/debug)                                     |
+| [`String`](class_string.md)                       | [`custom_template/release`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_custom_template/release)                                 |
+| [`int`](class_int.md)                             | [`debug/export_console_wrapper`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_debug/export_console_wrapper)                       |
+| [`String`](class_string.md)                       | [`ssh_remote_deploy/cleanup_script`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_ssh_remote_deploy/cleanup_script)               |
+| [`bool`](class_bool.md)                           | [`ssh_remote_deploy/enabled`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_ssh_remote_deploy/enabled)                             |
+| [`String`](class_string.md)                       | [`ssh_remote_deploy/extra_args_scp`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_ssh_remote_deploy/extra_args_scp)               |
+| [`String`](class_string.md)                       | [`ssh_remote_deploy/extra_args_ssh`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_ssh_remote_deploy/extra_args_ssh)               |
+| [`String`](class_string.md)                       | [`ssh_remote_deploy/host`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_ssh_remote_deploy/host)                                   |
+| [`String`](class_string.md)                       | [`ssh_remote_deploy/port`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_ssh_remote_deploy/port)                                   |
+| [`String`](class_string.md)                       | [`ssh_remote_deploy/run_script`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_ssh_remote_deploy/run_script)                       |
+| [`bool`](class_bool.md)                           | [`texture_format/etc2_astc`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_texture_format/etc2_astc)                               |
+| [`bool`](class_bool.md)                           | [`texture_format/s3tc_bptc`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_texture_format/s3tc_bptc)                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -77,7 +77,7 @@ Company that produced the application. Required. See [*StringFileInfo*](https://
 
 [`String`](class_string.md) **application/console_wrapper_icon** <div id="class_editorexportplatformwindows_property_application/console_wrapper_icon"></div>
 
-Console wrapper icon file. If left empty, it will fallback to [`application/icon`](#class_editorexportplatformwindows_property_application/icon), then to [`ProjectSettings.application/config/windows_native_icon`](#class_projectsettings_property_application/config/windows_native_icon), and lastly, [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon).
+Console wrapper icon file. If left empty, it will fallback to [`application/icon`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/icon), then to [`ProjectSettings.application/config/windows_native_icon`](class_projectsettings.md#class_projectsettings_property_application/config/windows_native_icon), and lastly, [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -97,7 +97,7 @@ Copyright notice for the bundle visible to the user. Optional. See [*StringFileI
 
 [`bool`](class_bool.md) **application/d3d12_agility_sdk_multiarch** <div id="class_editorexportplatformwindows_property_application/d3d12_agility_sdk_multiarch"></div>
 
-If `true`, and [`application/export_d3d12`](#class_editorexportplatformwindows_property_application/export_d3d12) is set, the Agility SDK DLLs will be stored in arch-specific subdirectories.
+If `true`, and [`application/export_d3d12`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_application/export_d3d12) is set, the Agility SDK DLLs will be stored in arch-specific subdirectories.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -107,7 +107,7 @@ If `true`, and [`application/export_d3d12`](#class_editorexportplatformwindows_p
 
 [`int`](class_int.md) **application/export_angle** <div id="class_editorexportplatformwindows_property_application/export_angle"></div>
 
-If set to `1`, ANGLE libraries are exported with the exported application. If set to `0`, ANGLE libraries are exported only if [`ProjectSettings.rendering/gl_compatibility/driver`](#class_projectsettings_property_rendering/gl_compatibility/driver) is set to `"opengl3_angle"`.
+If set to `1`, ANGLE libraries are exported with the exported application. If set to `0`, ANGLE libraries are exported only if [`ProjectSettings.rendering/gl_compatibility/driver`](class_projectsettings.md#class_projectsettings_property_rendering/gl_compatibility/driver) is set to `"opengl3_angle"`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -117,7 +117,7 @@ If set to `1`, ANGLE libraries are exported with the exported application. If se
 
 [`int`](class_int.md) **application/export_d3d12** <div id="class_editorexportplatformwindows_property_application/export_d3d12"></div>
 
-If set to `1`, the Direct3D 12 runtime libraries (Agility SDK, PIX) are exported with the exported application. If set to `0`, Direct3D 12 libraries are exported only if [`ProjectSettings.rendering/rendering_device/driver`](#class_projectsettings_property_rendering/rendering_device/driver) is set to `"d3d12"`.
+If set to `1`, the Direct3D 12 runtime libraries (Agility SDK, PIX) are exported with the exported application. If set to `0`, Direct3D 12 libraries are exported only if [`ProjectSettings.rendering/rendering_device/driver`](class_projectsettings.md#class_projectsettings_property_rendering/rendering_device/driver) is set to `"d3d12"`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -137,7 +137,7 @@ File description to be presented to users. Required. See [*StringFileInfo*](http
 
 [`String`](class_string.md) **application/file_version** <div id="class_editorexportplatformwindows_property_application/file_version"></div>
 
-Version number of the file. Falls back to [`ProjectSettings.application/config/version`](#class_projectsettings_property_application/config/version) if left empty. See [*StringFileInfo*](https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block).
+Version number of the file. Falls back to [`ProjectSettings.application/config/version`](class_projectsettings.md#class_projectsettings_property_application/config/version) if left empty. See [*StringFileInfo*](https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -147,7 +147,7 @@ Version number of the file. Falls back to [`ProjectSettings.application/config/v
 
 [`String`](class_string.md) **application/icon** <div id="class_editorexportplatformwindows_property_application/icon"></div>
 
-Application icon file. If left empty, it will fallback to [`ProjectSettings.application/config/windows_native_icon`](#class_projectsettings_property_application/config/windows_native_icon), and then to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon).
+Application icon file. If left empty, it will fallback to [`ProjectSettings.application/config/windows_native_icon`](class_projectsettings.md#class_projectsettings_property_application/config/windows_native_icon), and then to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -187,7 +187,7 @@ Name of the application. Required. See [*StringFileInfo*](https://learn.microsof
 
 [`String`](class_string.md) **application/product_version** <div id="class_editorexportplatformwindows_property_application/product_version"></div>
 
-Application version visible to the user. Falls back to [`ProjectSettings.application/config/version`](#class_projectsettings_property_application/config/version) if left empty. See [*StringFileInfo*](https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block).
+Application version visible to the user. Falls back to [`ProjectSettings.application/config/version`](class_projectsettings.md#class_projectsettings_property_application/config/version) if left empty. See [*StringFileInfo*](https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -273,7 +273,7 @@ If `true`, executable signing is enabled.
 
 [`String`](class_string.md) **codesign/identity** <div id="class_editorexportplatformwindows_property_codesign/identity"></div>
 
-PKCS #12 certificate file used to sign executable or certificate SHA-1 hash (if [`codesign/identity_type`](#class_editorexportplatformwindows_property_codesign/identity_type) is set to "Use certificate store"). See [*Sign Tool*](https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe).
+PKCS #12 certificate file used to sign executable or certificate SHA-1 hash (if [`codesign/identity_type`](class_editorexportplatformwindows.md#class_editorexportplatformwindows_property_codesign/identity_type) is set to "Use certificate store"). See [*Sign Tool*](https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe).
 
 Can be overridden with the environment variable `GODOT_WINDOWS_CODESIGN_IDENTITY`.
 

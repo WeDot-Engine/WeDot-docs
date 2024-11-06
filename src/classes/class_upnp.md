@@ -15,7 +15,7 @@ Universal Plug and Play (UPnP) functions for network device discovery, querying 
 
 This class can be used to discover compatible [`UPNPDevice`](class_upnpdevice.md) s on the local network and execute commands on them, like managing port mappings (for port forwarding/NAT traversal) and querying the local and remote network IP address. Note that methods on this class are synchronous and block the calling thread.
 
-To forward a specific port (here `7777`, note both [`discover`](#class_upnp_method_discover) and [`add_port_mapping`](#class_upnp_method_add_port_mapping) can return errors that should be checked):
+To forward a specific port (here `7777`, note both [`discover`](class_upnp.md#class_upnp_method_discover) and [`add_port_mapping`](class_upnp.md#class_upnp_method_add_port_mapping) can return errors that should be checked):
 
 ```
 
@@ -92,25 +92,25 @@ To close a specific port (e.g. after you have finished using it):
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | [`discover_ipv6`](#class_upnp_property_discover_ipv6)                 | ``false`` |
-| [`int`](class_int.md)       | [`discover_local_port`](#class_upnp_property_discover_local_port)     | ``0``     |
-| [`String`](class_string.md) | [`discover_multicast_if`](#class_upnp_property_discover_multicast_if) | ``""``    |
+| [`bool`](class_bool.md)     | [`discover_ipv6`](class_upnp.md#class_upnp_property_discover_ipv6)                 | ``false`` |
+| [`int`](class_int.md)       | [`discover_local_port`](class_upnp.md#class_upnp_property_discover_local_port)     | ``0``     |
+| [`String`](class_string.md) | [`discover_multicast_if`](class_upnp.md#class_upnp_property_discover_multicast_if) | ``""``    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                              | [`add_device`](#class_upnp_method_add_device) ( device: [`UPNPDevice`](class_upnpdevice.md) )                                                                                                                                                                              |
-| [`int`](class_int.md)               | [`add_port_mapping`](#class_upnp_method_add_port_mapping) ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const] |
-| `void`                              | [`clear_devices`](#class_upnp_method_clear_devices) ( )                                                                                                                                                                                                                    |
-| [`int`](class_int.md)               | [`delete_port_mapping`](#class_upnp_method_delete_port_mapping) ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]                                                                                                                  |
-| [`int`](class_int.md)               | [`discover`](#class_upnp_method_discover) ( timeout: [`int`](class_int.md) = 2000, ttl: [`int`](class_int.md) = 2, device_filter: [`String`](class_string.md) = "InternetGatewayDevice" )                                                                                  |
-| [`UPNPDevice`](class_upnpdevice.md) | [`get_device`](#class_upnp_method_get_device) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                               |
-| [`int`](class_int.md)               | [`get_device_count`](#class_upnp_method_get_device_count) ( ) const[^const]                                                                                                                                                                                                |
-| [`UPNPDevice`](class_upnpdevice.md) | [`get_gateway`](#class_upnp_method_get_gateway) ( ) const[^const]                                                                                                                                                                                                          |
-| [`String`](class_string.md)         | [`query_external_address`](#class_upnp_method_query_external_address) ( ) const[^const]                                                                                                                                                                                    |
-| `void`                              | [`remove_device`](#class_upnp_method_remove_device) ( index: [`int`](class_int.md) )                                                                                                                                                                                       |
-| `void`                              | [`set_device`](#class_upnp_method_set_device) ( index: [`int`](class_int.md), device: [`UPNPDevice`](class_upnpdevice.md) )                                                                                                                                                |
+| `void`                              | [`add_device`](class_upnp.md#class_upnp_method_add_device) ( device: [`UPNPDevice`](class_upnpdevice.md) )                                                                                                                                                                              |
+| [`int`](class_int.md)               | [`add_port_mapping`](class_upnp.md#class_upnp_method_add_port_mapping) ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const] |
+| `void`                              | [`clear_devices`](class_upnp.md#class_upnp_method_clear_devices) ( )                                                                                                                                                                                                                    |
+| [`int`](class_int.md)               | [`delete_port_mapping`](class_upnp.md#class_upnp_method_delete_port_mapping) ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]                                                                                                                  |
+| [`int`](class_int.md)               | [`discover`](class_upnp.md#class_upnp_method_discover) ( timeout: [`int`](class_int.md) = 2000, ttl: [`int`](class_int.md) = 2, device_filter: [`String`](class_string.md) = "InternetGatewayDevice" )                                                                                  |
+| [`UPNPDevice`](class_upnpdevice.md) | [`get_device`](class_upnp.md#class_upnp_method_get_device) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                               |
+| [`int`](class_int.md)               | [`get_device_count`](class_upnp.md#class_upnp_method_get_device_count) ( ) const[^const]                                                                                                                                                                                                |
+| [`UPNPDevice`](class_upnpdevice.md) | [`get_gateway`](class_upnp.md#class_upnp_method_get_gateway) ( ) const[^const]                                                                                                                                                                                                          |
+| [`String`](class_string.md)         | [`query_external_address`](class_upnp.md#class_upnp_method_query_external_address) ( ) const[^const]                                                                                                                                                                                    |
+| `void`                              | [`remove_device`](class_upnp.md#class_upnp_method_remove_device) ( index: [`int`](class_int.md) )                                                                                                                                                                                       |
+| `void`                              | [`set_device`](class_upnp.md#class_upnp_method_set_device) ( index: [`int`](class_int.md), device: [`UPNPDevice`](class_upnpdevice.md) )                                                                                                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -198,7 +198,7 @@ No port maps are available. May also be returned if port mapping functionality i
 
 [UPNPResult](#enum_upnp_upnpresult) **UPNP_RESULT_CONFLICT_WITH_OTHER_MECHANISM** = ``12``
 
-Conflict with other mechanism. May be returned instead of [`UPNP_RESULT_CONFLICT_WITH_OTHER_MAPPING`](#class_upnp_constant_upnp_result_conflict_with_other_mapping) if a port mapping conflicts with an existing one.
+Conflict with other mechanism. May be returned instead of [`UPNP_RESULT_CONFLICT_WITH_OTHER_MAPPING`](class_upnp.md#class_upnp_constant_upnp_result_conflict_with_other_mapping) if a port mapping conflicts with an existing one.
 
 <div id="_class_upnp_constant_upnp_result_conflict_with_other_mapping"></div>
 
@@ -282,13 +282,13 @@ Error allocating memory.
 
 [UPNPResult](#enum_upnp_upnpresult) **UPNP_RESULT_NO_GATEWAY** = ``26``
 
-No gateway available. You may need to call [`discover`](#class_upnp_method_discover) first, or discovery didn't detect any valid IGDs (InternetGatewayDevices).
+No gateway available. You may need to call [`discover`](class_upnp.md#class_upnp_method_discover) first, or discovery didn't detect any valid IGDs (InternetGatewayDevices).
 
 <div id="_class_upnp_constant_upnp_result_no_devices"></div>
 
 [UPNPResult](#enum_upnp_upnpresult) **UPNP_RESULT_NO_DEVICES** = ``27``
 
-No devices available. You may need to call [`discover`](#class_upnp_method_discover) first, or discovery didn't detect any valid [`UPNPDevice`](class_upnpdevice.md) s.
+No devices available. You may need to call [`discover`](class_upnp.md#class_upnp_method_discover) first, or discovery didn't detect any valid [`UPNPDevice`](class_upnpdevice.md) s.
 
 <div id="_class_upnp_constant_upnp_result_unknown_error"></div>
 
@@ -357,7 +357,7 @@ Adds the given [`UPNPDevice`](class_upnpdevice.md) to the list of discovered dev
 
 [`int`](class_int.md) **add_port_mapping** ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const]<div id="class_upnp_method_add_port_mapping"></div>
 
-Adds a mapping to forward the external `port` (between 1 and 65535, although recommended to use port 1024 or above) on the default gateway (see [`get_gateway`](#class_upnp_method_get_gateway)) to the `port_internal` on the local machine for the given protocol `proto` (either `"TCP"` or `"UDP"`, with UDP being the default). If a port mapping for the given port and protocol combination already exists on that gateway device, this method tries to overwrite it. If that is not desired, you can retrieve the gateway manually with [`get_gateway`](#class_upnp_method_get_gateway) and call [`add_port_mapping`](#class_upnp_method_add_port_mapping) on it, if any. Note that forwarding a well-known port (below 1024) with UPnP may fail depending on the device.
+Adds a mapping to forward the external `port` (between 1 and 65535, although recommended to use port 1024 or above) on the default gateway (see [`get_gateway`](class_upnp.md#class_upnp_method_get_gateway)) to the `port_internal` on the local machine for the given protocol `proto` (either `"TCP"` or `"UDP"`, with UDP being the default). If a port mapping for the given port and protocol combination already exists on that gateway device, this method tries to overwrite it. If that is not desired, you can retrieve the gateway manually with [`get_gateway`](class_upnp.md#class_upnp_method_get_gateway) and call [`add_port_mapping`](class_upnp.md#class_upnp_method_add_port_mapping) on it, if any. Note that forwarding a well-known port (below 1024) with UPnP may fail depending on the device.
 
 Depending on the gateway device, if a mapping for that port already exists, it will either be updated or it will refuse this command due to that conflict, especially if the existing mapping for that port wasn't created via UPnP or points to a different network address (or device) than this one.
 
@@ -387,7 +387,7 @@ Clears the list of discovered devices.
 
 [`int`](class_int.md) **delete_port_mapping** ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]<div id="class_upnp_method_delete_port_mapping"></div>
 
-Deletes the port mapping for the given port and protocol combination on the default gateway (see [`get_gateway`](#class_upnp_method_get_gateway)) if one exists. `port` must be a valid port between 1 and 65535, `proto` can be either `"TCP"` or `"UDP"`. May be refused for mappings pointing to addresses other than this one, for well-known ports (below 1024), or for mappings not added via UPnP. See [UPNPResult](#enum_upnp_upnpresult) for possible return values.
+Deletes the port mapping for the given port and protocol combination on the default gateway (see [`get_gateway`](class_upnp.md#class_upnp_method_get_gateway)) if one exists. `port` must be a valid port between 1 and 65535, `proto` can be either `"TCP"` or `"UDP"`. May be refused for mappings pointing to addresses other than this one, for well-known ports (below 1024), or for mappings not added via UPnP. See [UPNPResult](#enum_upnp_upnpresult) for possible return values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -441,7 +441,7 @@ Returns the default gateway. That is the first discovered [`UPNPDevice`](class_u
 
 [`String`](class_string.md) **query_external_address** ( ) const[^const]<div id="class_upnp_method_query_external_address"></div>
 
-Returns the external [`IP`](class_ip.md) address of the default gateway (see [`get_gateway`](#class_upnp_method_get_gateway)) as string. Returns an empty string on error.
+Returns the external [`IP`](class_ip.md) address of the default gateway (see [`get_gateway`](class_upnp.md#class_upnp_method_get_gateway)) as string. Returns an empty string on error.
 
 <!-- rst-class:: classref-item-separator -->
 

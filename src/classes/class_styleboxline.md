@@ -19,11 +19,11 @@ A [`StyleBox`](class_stylebox.md) that displays a single line of a given color a
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md) | [`color`](#class_styleboxline_property_color)           | ``Color(0, 0, 0, 1)`` |
-| [`float`](class_float.md) | [`grow_begin`](#class_styleboxline_property_grow_begin) | ``1.0``               |
-| [`float`](class_float.md) | [`grow_end`](#class_styleboxline_property_grow_end)     | ``1.0``               |
-| [`int`](class_int.md)     | [`thickness`](#class_styleboxline_property_thickness)   | ``1``                 |
-| [`bool`](class_bool.md)   | [`vertical`](#class_styleboxline_property_vertical)     | ``false``             |
+| [`Color`](class_color.md) | [`color`](class_styleboxline.md#class_styleboxline_property_color)           | ``Color(0, 0, 0, 1)`` |
+| [`float`](class_float.md) | [`grow_begin`](class_styleboxline.md#class_styleboxline_property_grow_begin) | ``1.0``               |
+| [`float`](class_float.md) | [`grow_end`](class_styleboxline.md#class_styleboxline_property_grow_end)     | ``1.0``               |
+| [`int`](class_int.md)     | [`thickness`](class_styleboxline.md#class_styleboxline_property_thickness)   | ``1``                 |
+| [`bool`](class_bool.md)   | [`vertical`](class_styleboxline.md#class_styleboxline_property_vertical)     | ``false``             |
 
 <!-- rst-class:: classref-section-separator -->
 

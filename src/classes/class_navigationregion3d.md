@@ -17,15 +17,15 @@ A traversable 3D region that [`NavigationAgent3D`](class_navigationagent3d.md) s
 
 A traversable 3D region based on a [`NavigationMesh`](class_navigationmesh.md) that [`NavigationAgent3D`](class_navigationagent3d.md) s can use for pathfinding.
 
-Two regions can be connected to each other if they share a similar edge. You can set the minimum distance between two vertices required to connect two edges by using [`NavigationServer3D.map_set_edge_connection_margin`](#class_navigationserver3d_method_map_set_edge_connection_margin).
+Two regions can be connected to each other if they share a similar edge. You can set the minimum distance between two vertices required to connect two edges by using [`NavigationServer3D.map_set_edge_connection_margin`](class_navigationserver3d.md#class_navigationserver3d_method_map_set_edge_connection_margin).
 
  **Note:** Overlapping two regions' navigation meshes is not enough for connecting two regions. They must share a similar edge.
 
-The cost of entering this region from another region can be controlled with the [`enter_cost`](#class_navigationregion3d_property_enter_cost) value.
+The cost of entering this region from another region can be controlled with the [`enter_cost`](class_navigationregion3d.md#class_navigationregion3d_property_enter_cost) value.
 
  **Note:** This value is not added to the path cost when the start position is already inside this region.
 
-The cost of traveling distances inside this region can be controlled with the [`travel_cost`](#class_navigationregion3d_property_travel_cost) multiplier.
+The cost of traveling distances inside this region can be controlled with the [`travel_cost`](class_navigationregion3d.md#class_navigationregion3d_property_travel_cost) multiplier.
 
  **Note:** This node caches changes to its properties, so if you make changes to the underlying region [`RID`](class_rid.md) in [`NavigationServer3D`](class_navigationserver3d.md), they will not be reflected in this node's properties.
 
@@ -33,25 +33,25 @@ The cost of traveling distances inside this region can be controlled with the [`
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                     | [`enabled`](#class_navigationregion3d_property_enabled)                           | ``true`` |
-| [`float`](class_float.md)                   | [`enter_cost`](#class_navigationregion3d_property_enter_cost)                     | ``0.0``  |
-| [`int`](class_int.md)                       | [`navigation_layers`](#class_navigationregion3d_property_navigation_layers)       | ``1``    |
-| [`NavigationMesh`](class_navigationmesh.md) | [`navigation_mesh`](#class_navigationregion3d_property_navigation_mesh)           |          |
-| [`float`](class_float.md)                   | [`travel_cost`](#class_navigationregion3d_property_travel_cost)                   | ``1.0``  |
-| [`bool`](class_bool.md)                     | [`use_edge_connections`](#class_navigationregion3d_property_use_edge_connections) | ``true`` |
+| [`bool`](class_bool.md)                     | [`enabled`](class_navigationregion3d.md#class_navigationregion3d_property_enabled)                           | ``true`` |
+| [`float`](class_float.md)                   | [`enter_cost`](class_navigationregion3d.md#class_navigationregion3d_property_enter_cost)                     | ``0.0``  |
+| [`int`](class_int.md)                       | [`navigation_layers`](class_navigationregion3d.md#class_navigationregion3d_property_navigation_layers)       | ``1``    |
+| [`NavigationMesh`](class_navigationmesh.md) | [`navigation_mesh`](class_navigationregion3d.md#class_navigationregion3d_property_navigation_mesh)           |          |
+| [`float`](class_float.md)                   | [`travel_cost`](class_navigationregion3d.md#class_navigationregion3d_property_travel_cost)                   | ``1.0``  |
+| [`bool`](class_bool.md)                     | [`use_edge_connections`](class_navigationregion3d.md#class_navigationregion3d_property_use_edge_connections) | ``true`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                  | [`bake_navigation_mesh`](#class_navigationregion3d_method_bake_navigation_mesh) ( on_thread: [`bool`](class_bool.md) = true )                                       |
-| [`bool`](class_bool.md) | [`get_navigation_layer_value`](#class_navigationregion3d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`RID`](class_rid.md)   | [`get_navigation_map`](#class_navigationregion3d_method_get_navigation_map) ( ) const[^const]                                                                       |
-| [`RID`](class_rid.md)   | [`get_region_rid`](#class_navigationregion3d_method_get_region_rid) ( ) const[^const]                                                                               |
-| [`RID`](class_rid.md)   | [`get_rid`](#class_navigationregion3d_method_get_rid) ( ) const[^const]                                                                                             |
-| [`bool`](class_bool.md) | [`is_baking`](#class_navigationregion3d_method_is_baking) ( ) const[^const]                                                                                         |
-| `void`                  | [`set_navigation_layer_value`](#class_navigationregion3d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                  | [`set_navigation_map`](#class_navigationregion3d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
+| `void`                  | [`bake_navigation_mesh`](class_navigationregion3d.md#class_navigationregion3d_method_bake_navigation_mesh) ( on_thread: [`bool`](class_bool.md) = true )                                       |
+| [`bool`](class_bool.md) | [`get_navigation_layer_value`](class_navigationregion3d.md#class_navigationregion3d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`RID`](class_rid.md)   | [`get_navigation_map`](class_navigationregion3d.md#class_navigationregion3d_method_get_navigation_map) ( ) const[^const]                                                                       |
+| [`RID`](class_rid.md)   | [`get_region_rid`](class_navigationregion3d.md#class_navigationregion3d_method_get_region_rid) ( ) const[^const]                                                                               |
+| [`RID`](class_rid.md)   | [`get_rid`](class_navigationregion3d.md#class_navigationregion3d_method_get_rid) ( ) const[^const]                                                                                             |
+| [`bool`](class_bool.md) | [`is_baking`](class_navigationregion3d.md#class_navigationregion3d_method_is_baking) ( ) const[^const]                                                                                         |
+| `void`                  | [`set_navigation_layer_value`](class_navigationregion3d.md#class_navigationregion3d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                  | [`set_navigation_map`](class_navigationregion3d.md#class_navigationregion3d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -101,7 +101,7 @@ Determines if the **NavigationRegion3D** is enabled or disabled.
 - `void` **set_enter_cost** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_enter_cost** ( )
 
-When pathfinding enters this region's navigation mesh from another regions navigation mesh the [`enter_cost`](#class_navigationregion3d_property_enter_cost) value is added to the path distance for determining the shortest path.
+When pathfinding enters this region's navigation mesh from another regions navigation mesh the [`enter_cost`](class_navigationregion3d.md#class_navigationregion3d_property_enter_cost) value is added to the path distance for determining the shortest path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -114,7 +114,7 @@ When pathfinding enters this region's navigation mesh from another regions navig
 - `void` **set_navigation_layers** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_navigation_layers** ( )
 
-A bitfield determining all navigation layers the region belongs to. These navigation layers can be checked upon when requesting a path with [`NavigationServer3D.map_get_path`](#class_navigationserver3d_method_map_get_path).
+A bitfield determining all navigation layers the region belongs to. These navigation layers can be checked upon when requesting a path with [`NavigationServer3D.map_get_path`](class_navigationserver3d.md#class_navigationserver3d_method_map_get_path).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -140,7 +140,7 @@ The [`NavigationMesh`](class_navigationmesh.md) resource to use.
 - `void` **set_travel_cost** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_travel_cost** ( )
 
-When pathfinding moves inside this region's navigation mesh the traveled distances are multiplied with [`travel_cost`](#class_navigationregion3d_property_travel_cost) for determining the shortest path.
+When pathfinding moves inside this region's navigation mesh the traveled distances are multiplied with [`travel_cost`](class_navigationregion3d.md#class_navigationregion3d_property_travel_cost) for determining the shortest path.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -175,7 +175,7 @@ Bakes the [`NavigationMesh`](class_navigationmesh.md). If `on_thread` is set to 
 
 [`bool`](class_bool.md) **get_navigation_layer_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_navigationregion3d_method_get_navigation_layer_value"></div>
 
-Returns whether or not the specified layer of the [`navigation_layers`](#class_navigationregion3d_property_navigation_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
+Returns whether or not the specified layer of the [`navigation_layers`](class_navigationregion3d.md#class_navigationregion3d_property_navigation_layers) bitmask is enabled, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -195,7 +195,7 @@ Returns the current navigation map [`RID`](class_rid.md) used by this region.
 
 [`RID`](class_rid.md) **get_region_rid** ( ) const[^const]<div id="class_navigationregion3d_method_get_region_rid"></div>
 
-**已弃用：** Use [`get_rid`](#class_navigationregion3d_method_get_rid) instead.
+**已弃用：** Use [`get_rid`](class_navigationregion3d.md#class_navigationregion3d_method_get_rid) instead.
 
 Returns the [`RID`](class_rid.md) of this region on the [`NavigationServer3D`](class_navigationserver3d.md).
 
@@ -207,7 +207,7 @@ Returns the [`RID`](class_rid.md) of this region on the [`NavigationServer3D`](c
 
 [`RID`](class_rid.md) **get_rid** ( ) const[^const]<div id="class_navigationregion3d_method_get_rid"></div>
 
-Returns the [`RID`](class_rid.md) of this region on the [`NavigationServer3D`](class_navigationserver3d.md). Combined with [`NavigationServer3D.map_get_closest_point_owner`](#class_navigationserver3d_method_map_get_closest_point_owner) can be used to identify the **NavigationRegion3D** closest to a point on the merged navigation map.
+Returns the [`RID`](class_rid.md) of this region on the [`NavigationServer3D`](class_navigationserver3d.md). Combined with [`NavigationServer3D.map_get_closest_point_owner`](class_navigationserver3d.md#class_navigationserver3d_method_map_get_closest_point_owner) can be used to identify the **NavigationRegion3D** closest to a point on the merged navigation map.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -227,7 +227,7 @@ Returns `true` when the [`NavigationMesh`](class_navigationmesh.md) is being bak
 
 `void` **set_navigation_layer_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_navigationregion3d_method_set_navigation_layer_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`navigation_layers`](#class_navigationregion3d_property_navigation_layers) bitmask, given a `layer_number` between 1 and 32.
+Based on `value`, enables or disables the specified layer in the [`navigation_layers`](class_navigationregion3d.md#class_navigationregion3d_property_navigation_layers) bitmask, given a `layer_number` between 1 and 32.
 
 <!-- rst-class:: classref-item-separator -->
 

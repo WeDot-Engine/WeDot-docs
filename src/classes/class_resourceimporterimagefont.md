@@ -21,17 +21,17 @@ See also [`ResourceImporterDynamicFont`](class_resourceimporterdynamicfont.md).
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                             | [`ascent`](#class_resourceimporterimagefont_property_ascent)                     | ``0``                   |
-| [`Rect2i`](class_rect2i.md)                       | [`character_margin`](#class_resourceimporterimagefont_property_character_margin) | ``Rect2i(0, 0, 0, 0)``  |
-| [`PackedStringArray`](class_packedstringarray.md) | [`character_ranges`](#class_resourceimporterimagefont_property_character_ranges) | ``PackedStringArray()`` |
-| [`int`](class_int.md)                             | [`columns`](#class_resourceimporterimagefont_property_columns)                   | ``1``                   |
-| [`bool`](class_bool.md)                           | [`compress`](#class_resourceimporterimagefont_property_compress)                 | ``true``                |
-| [`int`](class_int.md)                             | [`descent`](#class_resourceimporterimagefont_property_descent)                   | ``0``                   |
-| [`Array`](class_array.md)                         | [`fallbacks`](#class_resourceimporterimagefont_property_fallbacks)               | ``[]``                  |
-| [`Rect2i`](class_rect2i.md)                       | [`image_margin`](#class_resourceimporterimagefont_property_image_margin)         | ``Rect2i(0, 0, 0, 0)``  |
-| [`PackedStringArray`](class_packedstringarray.md) | [`kerning_pairs`](#class_resourceimporterimagefont_property_kerning_pairs)       | ``PackedStringArray()`` |
-| [`int`](class_int.md)                             | [`rows`](#class_resourceimporterimagefont_property_rows)                         | ``1``                   |
-| [`int`](class_int.md)                             | [`scaling_mode`](#class_resourceimporterimagefont_property_scaling_mode)         | ``2``                   |
+| [`int`](class_int.md)                             | [`ascent`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_ascent)                     | ``0``                   |
+| [`Rect2i`](class_rect2i.md)                       | [`character_margin`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_character_margin) | ``Rect2i(0, 0, 0, 0)``  |
+| [`PackedStringArray`](class_packedstringarray.md) | [`character_ranges`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_character_ranges) | ``PackedStringArray()`` |
+| [`int`](class_int.md)                             | [`columns`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_columns)                   | ``1``                   |
+| [`bool`](class_bool.md)                           | [`compress`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_compress)                 | ``true``                |
+| [`int`](class_int.md)                             | [`descent`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_descent)                   | ``0``                   |
+| [`Array`](class_array.md)                         | [`fallbacks`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_fallbacks)               | ``[]``                  |
+| [`Rect2i`](class_rect2i.md)                       | [`image_margin`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_image_margin)         | ``Rect2i(0, 0, 0, 0)``  |
+| [`PackedStringArray`](class_packedstringarray.md) | [`kerning_pairs`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_kerning_pairs)       | ``PackedStringArray()`` |
+| [`int`](class_int.md)                             | [`rows`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_rows)                         | ``1``                   |
+| [`int`](class_int.md)                             | [`scaling_mode`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_scaling_mode)         | ``2``                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -53,7 +53,7 @@ Font ascent (number of pixels above the baseline). If set to `0`, half of the ch
 
 [`Rect2i`](class_rect2i.md) **character_margin** = ``Rect2i(0, 0, 0, 0)`` <div id="class_resourceimporterimagefont_property_character_margin"></div>
 
-Margin applied around every imported glyph. If your font image contains guides (in the form of lines between glyphs) or if spacing between characters appears incorrect, try adjusting [`character_margin`](#class_resourceimporterimagefont_property_character_margin).
+Margin applied around every imported glyph. If your font image contains guides (in the form of lines between glyphs) or if spacing between characters appears incorrect, try adjusting [`character_margin`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_character_margin).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -69,7 +69,7 @@ For example, `0-127` represents the full ASCII range. It can also be written as 
 
 For any range, the character advance and offset can be customized by appending three space-separated integer values (additional advance, x offset, y offset) to the end. For example `'a'-'b' 4 5 2` sets the advance to `char_width + 4` and offset to `Vector2(5, 2)` for both `a` and `b` characters.
 
-Make sure [`character_ranges`](#class_resourceimporterimagefont_property_character_ranges) doesn't exceed the number of [`columns`](#class_resourceimporterimagefont_property_columns) * [`rows`](#class_resourceimporterimagefont_property_rows) defined. Otherwise, the font will fail to import.
+Make sure [`character_ranges`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_character_ranges) doesn't exceed the number of [`columns`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_columns) * [`rows`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_rows) defined. Otherwise, the font will fail to import.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedStringArray`](class_packedstringarray.md) for more details.
 
@@ -81,7 +81,7 @@ Make sure [`character_ranges`](#class_resourceimporterimagefont_property_charact
 
 [`int`](class_int.md) **columns** = ``1`` <div id="class_resourceimporterimagefont_property_columns"></div>
 
-Number of columns in the font image. See also [`rows`](#class_resourceimporterimagefont_property_rows).
+Number of columns in the font image. See also [`rows`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_rows).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -145,7 +145,7 @@ Each string consist of three space separated values: "from" string, "to" string 
 
 [`int`](class_int.md) **rows** = ``1`` <div id="class_resourceimporterimagefont_property_rows"></div>
 
-Number of rows in the font image. See also [`columns`](#class_resourceimporterimagefont_property_columns).
+Number of rows in the font image. See also [`columns`](class_resourceimporterimagefont.md#class_resourceimporterimagefont_property_columns).
 
 <!-- rst-class:: classref-item-separator -->
 

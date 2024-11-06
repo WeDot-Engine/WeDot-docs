@@ -25,18 +25,18 @@ Its title, description and color can be customized.
 
 |||
 |:-:|:--|
-| [`PackedInt32Array`](class_packedint32array.md) | [`attached_nodes`](#class_visualshadernodeframe_property_attached_nodes)         | ``PackedInt32Array()``         |
-| [`bool`](class_bool.md)                         | [`autoshrink`](#class_visualshadernodeframe_property_autoshrink)                 | ``true``                       |
-| [`Color`](class_color.md)                       | [`tint_color`](#class_visualshadernodeframe_property_tint_color)                 | ``Color(0.3, 0.3, 0.3, 0.75)`` |
-| [`bool`](class_bool.md)                         | [`tint_color_enabled`](#class_visualshadernodeframe_property_tint_color_enabled) | ``false``                      |
-| [`String`](class_string.md)                     | [`title`](#class_visualshadernodeframe_property_title)                           | ``"Title"``                    |
+| [`PackedInt32Array`](class_packedint32array.md) | [`attached_nodes`](class_visualshadernodeframe.md#class_visualshadernodeframe_property_attached_nodes)         | ``PackedInt32Array()``         |
+| [`bool`](class_bool.md)                         | [`autoshrink`](class_visualshadernodeframe.md#class_visualshadernodeframe_property_autoshrink)                 | ``true``                       |
+| [`Color`](class_color.md)                       | [`tint_color`](class_visualshadernodeframe.md#class_visualshadernodeframe_property_tint_color)                 | ``Color(0.3, 0.3, 0.3, 0.75)`` |
+| [`bool`](class_bool.md)                         | [`tint_color_enabled`](class_visualshadernodeframe.md#class_visualshadernodeframe_property_tint_color_enabled) | ``false``                      |
+| [`String`](class_string.md)                     | [`title`](class_visualshadernodeframe.md#class_visualshadernodeframe_property_title)                           | ``"Title"``                    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`add_attached_node`](#class_visualshadernodeframe_method_add_attached_node) ( node: [`int`](class_int.md) )       |
-| `void` | [`remove_attached_node`](#class_visualshadernodeframe_method_remove_attached_node) ( node: [`int`](class_int.md) ) |
+| `void` | [`add_attached_node`](class_visualshadernodeframe.md#class_visualshadernodeframe_method_add_attached_node) ( node: [`int`](class_int.md) )       |
+| `void` | [`remove_attached_node`](class_visualshadernodeframe.md#class_visualshadernodeframe_method_remove_attached_node) ( node: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -79,7 +79,7 @@ If `true`, the frame will automatically resize to enclose all attached nodes.
 - `void` **set_tint_color** ( value: [`Color`](class_color.md) )
 - [`Color`](class_color.md) **get_tint_color** ( )
 
-The color of the frame when [`tint_color_enabled`](#class_visualshadernodeframe_property_tint_color_enabled) is `true`.
+The color of the frame when [`tint_color_enabled`](class_visualshadernodeframe.md#class_visualshadernodeframe_property_tint_color_enabled) is `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -92,7 +92,7 @@ The color of the frame when [`tint_color_enabled`](#class_visualshadernodeframe_
 - `void` **set_tint_color_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_tint_color_enabled** ( )
 
-If `true`, the frame will be tinted with the color specified in [`tint_color`](#class_visualshadernodeframe_property_tint_color).
+If `true`, the frame will be tinted with the color specified in [`tint_color`](class_visualshadernodeframe.md#class_visualshadernodeframe_property_tint_color).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -117,7 +117,7 @@ The title of the node.
 
 `void` **add_attached_node** ( node: [`int`](class_int.md) )<div id="class_visualshadernodeframe_method_add_attached_node"></div>
 
-Adds a node to the list of nodes attached to the frame. Should not be called directly, use the [`VisualShader.attach_node_to_frame`](#class_visualshader_method_attach_node_to_frame) method instead.
+Adds a node to the list of nodes attached to the frame. Should not be called directly, use the [`VisualShader.attach_node_to_frame`](class_visualshader.md#class_visualshader_method_attach_node_to_frame) method instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -127,7 +127,7 @@ Adds a node to the list of nodes attached to the frame. Should not be called dir
 
 `void` **remove_attached_node** ( node: [`int`](class_int.md) )<div id="class_visualshadernodeframe_method_remove_attached_node"></div>
 
-Removes a node from the list of nodes attached to the frame. Should not be called directly, use the [`VisualShader.detach_node_from_frame`](#class_visualshader_method_detach_node_from_frame) method instead.
+Removes a node from the list of nodes attached to the frame. Should not be called directly, use the [`VisualShader.detach_node_from_frame`](class_visualshader.md#class_visualshader_method_detach_node_from_frame) method instead.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -21,8 +21,8 @@ This CSG node allows you to use any mesh resource as a CSG shape, provided it is
 
 |||
 |:-:|:--|
-| [`Material`](class_material.md) | [`material`](#class_csgmesh3d_property_material) |
-| [`Mesh`](class_mesh.md)         | [`mesh`](#class_csgmesh3d_property_mesh)         |
+| [`Material`](class_material.md) | [`material`](class_csgmesh3d.md#class_csgmesh3d_property_material) |
+| [`Mesh`](class_mesh.md)         | [`mesh`](class_csgmesh3d.md#class_csgmesh3d_property_mesh)         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,9 +52,9 @@ The [`Material`](class_material.md) used in drawing the CSG shape.
 
 The [`Mesh`](class_mesh.md) resource to use as a CSG shape.
 
- **Note:** When using an [`ArrayMesh`](class_arraymesh.md), all vertex attributes except [`Mesh.ARRAY_VERTEX`](#class_mesh_constant_array_vertex), [`Mesh.ARRAY_NORMAL`](#class_mesh_constant_array_normal) and [`Mesh.ARRAY_TEX_UV`](#class_mesh_constant_array_tex_uv) are left unused. Only [`Mesh.ARRAY_VERTEX`](#class_mesh_constant_array_vertex) and [`Mesh.ARRAY_TEX_UV`](#class_mesh_constant_array_tex_uv) will be passed to the GPU.
+ **Note:** When using an [`ArrayMesh`](class_arraymesh.md), all vertex attributes except [`Mesh.ARRAY_VERTEX`](class_mesh.md#class_mesh_constant_array_vertex), [`Mesh.ARRAY_NORMAL`](class_mesh.md#class_mesh_constant_array_normal) and [`Mesh.ARRAY_TEX_UV`](class_mesh.md#class_mesh_constant_array_tex_uv) are left unused. Only [`Mesh.ARRAY_VERTEX`](class_mesh.md#class_mesh_constant_array_vertex) and [`Mesh.ARRAY_TEX_UV`](class_mesh.md#class_mesh_constant_array_tex_uv) will be passed to the GPU.
 
- [`Mesh.ARRAY_NORMAL`](#class_mesh_constant_array_normal) is only used to determine which faces require the use of flat shading. By default, CSGMesh will ignore the mesh's vertex normals, recalculate them for each vertex and use a smooth shader. If a flat shader is required for a face, ensure that all vertex normals of the face are approximately equal.
+ [`Mesh.ARRAY_NORMAL`](class_mesh.md#class_mesh_constant_array_normal) is only used to determine which faces require the use of flat shading. By default, CSGMesh will ignore the mesh's vertex normals, recalculate them for each vertex and use a smooth shader. If a flat shader is required for a face, ensure that all vertex normals of the face are approximately equal.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

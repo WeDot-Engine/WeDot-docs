@@ -15,19 +15,19 @@ Point sampler for a [`Path2D`](class_path2d.md).
 
 This node takes its parent [`Path2D`](class_path2d.md), and returns the coordinates of a point within it, given a distance from the first vertex.
 
-It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the [`progress`](#class_pathfollow2d_property_progress) in this node.
+It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the [`progress`](class_pathfollow2d.md#class_pathfollow2d_property_progress) in this node.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`cubic_interp`](#class_pathfollow2d_property_cubic_interp)     | ``true`` |
-| [`float`](class_float.md) | [`h_offset`](#class_pathfollow2d_property_h_offset)             | ``0.0``  |
-| [`bool`](class_bool.md)   | [`loop`](#class_pathfollow2d_property_loop)                     | ``true`` |
-| [`float`](class_float.md) | [`progress`](#class_pathfollow2d_property_progress)             | ``0.0``  |
-| [`float`](class_float.md) | [`progress_ratio`](#class_pathfollow2d_property_progress_ratio) | ``0.0``  |
-| [`bool`](class_bool.md)   | [`rotates`](#class_pathfollow2d_property_rotates)               | ``true`` |
-| [`float`](class_float.md) | [`v_offset`](#class_pathfollow2d_property_v_offset)             | ``0.0``  |
+| [`bool`](class_bool.md)   | [`cubic_interp`](class_pathfollow2d.md#class_pathfollow2d_property_cubic_interp)     | ``true`` |
+| [`float`](class_float.md) | [`h_offset`](class_pathfollow2d.md#class_pathfollow2d_property_h_offset)             | ``0.0``  |
+| [`bool`](class_bool.md)   | [`loop`](class_pathfollow2d.md#class_pathfollow2d_property_loop)                     | ``true`` |
+| [`float`](class_float.md) | [`progress`](class_pathfollow2d.md#class_pathfollow2d_property_progress)             | ``0.0``  |
+| [`float`](class_float.md) | [`progress_ratio`](class_pathfollow2d.md#class_pathfollow2d_property_progress_ratio) | ``0.0``  |
+| [`bool`](class_bool.md)   | [`rotates`](class_pathfollow2d.md#class_pathfollow2d_property_rotates)               | ``true`` |
+| [`float`](class_float.md) | [`v_offset`](class_pathfollow2d.md#class_pathfollow2d_property_v_offset)             | ``0.0``  |
 
 <!-- rst-class:: classref-section-separator -->
 

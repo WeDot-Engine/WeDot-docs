@@ -13,7 +13,7 @@ Makes the OpenXR API available for GDExtension.
 
 ## 描述
 
-**OpenXRAPIExtension** makes OpenXR available for GDExtension. It provides the OpenXR API to GDExtension through the [`get_instance_proc_addr`](#class_openxrapiextension_method_get_instance_proc_addr) method, and the OpenXR instance through [`get_instance`](#class_openxrapiextension_method_get_instance).
+**OpenXRAPIExtension** makes OpenXR available for GDExtension. It provides the OpenXR API to GDExtension through the [`get_instance_proc_addr`](class_openxrapiextension.md#class_openxrapiextension_method_get_instance_proc_addr) method, and the OpenXR instance through [`get_instance`](class_openxrapiextension.md#class_openxrapiextension_method_get_instance).
 
 It also provides methods for querying the status of OpenXR initialization, and helper methods for ease of use of the API with GDExtension.
 
@@ -21,26 +21,26 @@ It also provides methods for querying the status of OpenXR initialization, and h
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                                             | [`can_render`](#class_openxrapiextension_method_can_render) ( )                                                                                                                                                |
-| [`String`](class_string.md)                                                         | [`get_error_string`](#class_openxrapiextension_method_get_error_string) ( result: [`int`](class_int.md) )                                                                                                      |
-| [`int`](class_int.md)                                                               | [`get_hand_tracker`](#class_openxrapiextension_method_get_hand_tracker) ( hand_index: [`int`](class_int.md) )                                                                                                  |
-| [`int`](class_int.md)                                                               | [`get_instance`](#class_openxrapiextension_method_get_instance) ( )                                                                                                                                            |
-| [`int`](class_int.md)                                                               | [`get_instance_proc_addr`](#class_openxrapiextension_method_get_instance_proc_addr) ( name: [`String`](class_string.md) )                                                                                      |
-| [`int`](class_int.md)                                                               | [`get_next_frame_time`](#class_openxrapiextension_method_get_next_frame_time) ( )                                                                                                                              |
-| [`int`](class_int.md)                                                               | [`get_play_space`](#class_openxrapiextension_method_get_play_space) ( )                                                                                                                                        |
-| [`int`](class_int.md)                                                               | [`get_predicted_display_time`](#class_openxrapiextension_method_get_predicted_display_time) ( )                                                                                                                |
-| [`int`](class_int.md)                                                               | [`get_session`](#class_openxrapiextension_method_get_session) ( )                                                                                                                                              |
-| [`String`](class_string.md)                                                         | [`get_swapchain_format_name`](#class_openxrapiextension_method_get_swapchain_format_name) ( swapchain_format: [`int`](class_int.md) )                                                                          |
-| [`int`](class_int.md)                                                               | [`get_system_id`](#class_openxrapiextension_method_get_system_id) ( )                                                                                                                                          |
-| [OpenXRAlphaBlendModeSupport](#enum_openxrapiextension_openxralphablendmodesupport) | [`is_environment_blend_mode_alpha_supported`](#class_openxrapiextension_method_is_environment_blend_mode_alpha_supported) ( )                                                                                  |
-| [`bool`](class_bool.md)                                                             | [`is_initialized`](#class_openxrapiextension_method_is_initialized) ( )                                                                                                                                        |
-| [`bool`](class_bool.md)                                                             | [`is_running`](#class_openxrapiextension_method_is_running) ( )                                                                                                                                                |
-| [`bool`](class_bool.md)                                                             | [`openxr_is_enabled`](#class_openxrapiextension_method_openxr_is_enabled) ( check_run_in_editor: [`bool`](class_bool.md) ) static[^static]                                                                     |
-| `void`                                                                              | [`register_composition_layer_provider`](#class_openxrapiextension_method_register_composition_layer_provider) ( extension: [`OpenXRExtensionWrapperExtension`](class_openxrextensionwrapperextension.md) )     |
-| `void`                                                                              | [`set_emulate_environment_blend_mode_alpha_blend`](#class_openxrapiextension_method_set_emulate_environment_blend_mode_alpha_blend) ( enabled: [`bool`](class_bool.md) )                                       |
-| [`Transform3D`](class_transform3d.md)                                               | [`transform_from_pose`](#class_openxrapiextension_method_transform_from_pose) ( pose: `const void*` )                                                                                                          |
-| `void`                                                                              | [`unregister_composition_layer_provider`](#class_openxrapiextension_method_unregister_composition_layer_provider) ( extension: [`OpenXRExtensionWrapperExtension`](class_openxrextensionwrapperextension.md) ) |
-| [`bool`](class_bool.md)                                                             | [`xr_result`](#class_openxrapiextension_method_xr_result) ( result: [`int`](class_int.md), format: [`String`](class_string.md), args: [`Array`](class_array.md) )                                              |
+| [`bool`](class_bool.md)                                                             | [`can_render`](class_openxrapiextension.md#class_openxrapiextension_method_can_render) ( )                                                                                                                                                |
+| [`String`](class_string.md)                                                         | [`get_error_string`](class_openxrapiextension.md#class_openxrapiextension_method_get_error_string) ( result: [`int`](class_int.md) )                                                                                                      |
+| [`int`](class_int.md)                                                               | [`get_hand_tracker`](class_openxrapiextension.md#class_openxrapiextension_method_get_hand_tracker) ( hand_index: [`int`](class_int.md) )                                                                                                  |
+| [`int`](class_int.md)                                                               | [`get_instance`](class_openxrapiextension.md#class_openxrapiextension_method_get_instance) ( )                                                                                                                                            |
+| [`int`](class_int.md)                                                               | [`get_instance_proc_addr`](class_openxrapiextension.md#class_openxrapiextension_method_get_instance_proc_addr) ( name: [`String`](class_string.md) )                                                                                      |
+| [`int`](class_int.md)                                                               | [`get_next_frame_time`](class_openxrapiextension.md#class_openxrapiextension_method_get_next_frame_time) ( )                                                                                                                              |
+| [`int`](class_int.md)                                                               | [`get_play_space`](class_openxrapiextension.md#class_openxrapiextension_method_get_play_space) ( )                                                                                                                                        |
+| [`int`](class_int.md)                                                               | [`get_predicted_display_time`](class_openxrapiextension.md#class_openxrapiextension_method_get_predicted_display_time) ( )                                                                                                                |
+| [`int`](class_int.md)                                                               | [`get_session`](class_openxrapiextension.md#class_openxrapiextension_method_get_session) ( )                                                                                                                                              |
+| [`String`](class_string.md)                                                         | [`get_swapchain_format_name`](class_openxrapiextension.md#class_openxrapiextension_method_get_swapchain_format_name) ( swapchain_format: [`int`](class_int.md) )                                                                          |
+| [`int`](class_int.md)                                                               | [`get_system_id`](class_openxrapiextension.md#class_openxrapiextension_method_get_system_id) ( )                                                                                                                                          |
+| [OpenXRAlphaBlendModeSupport](#enum_openxrapiextension_openxralphablendmodesupport) | [`is_environment_blend_mode_alpha_supported`](class_openxrapiextension.md#class_openxrapiextension_method_is_environment_blend_mode_alpha_supported) ( )                                                                                  |
+| [`bool`](class_bool.md)                                                             | [`is_initialized`](class_openxrapiextension.md#class_openxrapiextension_method_is_initialized) ( )                                                                                                                                        |
+| [`bool`](class_bool.md)                                                             | [`is_running`](class_openxrapiextension.md#class_openxrapiextension_method_is_running) ( )                                                                                                                                                |
+| [`bool`](class_bool.md)                                                             | [`openxr_is_enabled`](class_openxrapiextension.md#class_openxrapiextension_method_openxr_is_enabled) ( check_run_in_editor: [`bool`](class_bool.md) ) static[^static]                                                                     |
+| `void`                                                                              | [`register_composition_layer_provider`](class_openxrapiextension.md#class_openxrapiextension_method_register_composition_layer_provider) ( extension: [`OpenXRExtensionWrapperExtension`](class_openxrextensionwrapperextension.md) )     |
+| `void`                                                                              | [`set_emulate_environment_blend_mode_alpha_blend`](class_openxrapiextension.md#class_openxrapiextension_method_set_emulate_environment_blend_mode_alpha_blend) ( enabled: [`bool`](class_bool.md) )                                       |
+| [`Transform3D`](class_transform3d.md)                                               | [`transform_from_pose`](class_openxrapiextension.md#class_openxrapiextension_method_transform_from_pose) ( pose: `const void*` )                                                                                                          |
+| `void`                                                                              | [`unregister_composition_layer_provider`](class_openxrapiextension.md#class_openxrapiextension_method_unregister_composition_layer_provider) ( extension: [`OpenXRExtensionWrapperExtension`](class_openxrextensionwrapperextension.md) ) |
+| [`bool`](class_bool.md)                                                             | [`xr_result`](class_openxrapiextension.md#class_openxrapiextension_method_xr_result) ( result: [`int`](class_int.md), format: [`String`](class_string.md), args: [`Array`](class_array.md) )                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,19 +56,19 @@ enum **OpenXRAlphaBlendModeSupport**: <div id="enum_openxrapiextension_openxralp
 
 [OpenXRAlphaBlendModeSupport](#enum_openxrapiextension_openxralphablendmodesupport) **OPENXR_ALPHA_BLEND_MODE_SUPPORT_NONE** = ``0``
 
-Means that [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) isn't supported at all.
+Means that [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](class_xrinterface.md#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) isn't supported at all.
 
 <div id="_class_openxrapiextension_constant_openxr_alpha_blend_mode_support_real"></div>
 
 [OpenXRAlphaBlendModeSupport](#enum_openxrapiextension_openxralphablendmodesupport) **OPENXR_ALPHA_BLEND_MODE_SUPPORT_REAL** = ``1``
 
-Means that [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) is really supported.
+Means that [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](class_xrinterface.md#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) is really supported.
 
 <div id="_class_openxrapiextension_constant_openxr_alpha_blend_mode_support_emulating"></div>
 
 [OpenXRAlphaBlendModeSupport](#enum_openxrapiextension_openxralphablendmodesupport) **OPENXR_ALPHA_BLEND_MODE_SUPPORT_EMULATING** = ``2``
 
-Means that [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) is emulated.
+Means that [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](class_xrinterface.md#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) is emulated.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -192,7 +192,7 @@ Returns the id of the system, which is a [*XrSystemId*](https://registry.khronos
 
 [OpenXRAlphaBlendModeSupport](#enum_openxrapiextension_openxralphablendmodesupport) **is_environment_blend_mode_alpha_supported** ( )<div id="class_openxrapiextension_method_is_environment_blend_mode_alpha_supported"></div>
 
-Returns [OpenXRAlphaBlendModeSupport](#enum_openxrapiextension_openxralphablendmodesupport) denoting if [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) is really supported, emulated or not supported at all.
+Returns [OpenXRAlphaBlendModeSupport](#enum_openxrapiextension_openxralphablendmodesupport) denoting if [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](class_xrinterface.md#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) is really supported, emulated or not supported at all.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -242,7 +242,7 @@ Registers the given extension as a composition layer provider.
 
 `void` **set_emulate_environment_blend_mode_alpha_blend** ( enabled: [`bool`](class_bool.md) )<div id="class_openxrapiextension_method_set_emulate_environment_blend_mode_alpha_blend"></div>
 
-If set to `true`, an OpenXR extension is loaded which is capable of emulating the [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) blend mode.
+If set to `true`, an OpenXR extension is loaded which is capable of emulating the [`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND`](class_xrinterface.md#class_xrinterface_constant_xr_env_blend_mode_alpha_blend) blend mode.
 
 <!-- rst-class:: classref-item-separator -->
 

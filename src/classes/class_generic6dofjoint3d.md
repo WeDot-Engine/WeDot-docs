@@ -21,107 +21,107 @@ The first 3 DOF represent the linear motion of the physics bodies and the last 3
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`angular_limit_x/damping`](#class_generic6dofjoint3d_property_angular_limit_x/damping)                       | ``1.0``   |
-| [`bool`](class_bool.md)   | [`angular_limit_x/enabled`](#class_generic6dofjoint3d_property_angular_limit_x/enabled)                       | ``true``  |
-| [`float`](class_float.md) | [`angular_limit_x/erp`](#class_generic6dofjoint3d_property_angular_limit_x/erp)                               | ``0.5``   |
-| [`float`](class_float.md) | [`angular_limit_x/force_limit`](#class_generic6dofjoint3d_property_angular_limit_x/force_limit)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_x/lower_angle`](#class_generic6dofjoint3d_property_angular_limit_x/lower_angle)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_x/restitution`](#class_generic6dofjoint3d_property_angular_limit_x/restitution)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_x/softness`](#class_generic6dofjoint3d_property_angular_limit_x/softness)                     | ``0.5``   |
-| [`float`](class_float.md) | [`angular_limit_x/upper_angle`](#class_generic6dofjoint3d_property_angular_limit_x/upper_angle)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_y/damping`](#class_generic6dofjoint3d_property_angular_limit_y/damping)                       | ``1.0``   |
-| [`bool`](class_bool.md)   | [`angular_limit_y/enabled`](#class_generic6dofjoint3d_property_angular_limit_y/enabled)                       | ``true``  |
-| [`float`](class_float.md) | [`angular_limit_y/erp`](#class_generic6dofjoint3d_property_angular_limit_y/erp)                               | ``0.5``   |
-| [`float`](class_float.md) | [`angular_limit_y/force_limit`](#class_generic6dofjoint3d_property_angular_limit_y/force_limit)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_y/lower_angle`](#class_generic6dofjoint3d_property_angular_limit_y/lower_angle)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_y/restitution`](#class_generic6dofjoint3d_property_angular_limit_y/restitution)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_y/softness`](#class_generic6dofjoint3d_property_angular_limit_y/softness)                     | ``0.5``   |
-| [`float`](class_float.md) | [`angular_limit_y/upper_angle`](#class_generic6dofjoint3d_property_angular_limit_y/upper_angle)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_z/damping`](#class_generic6dofjoint3d_property_angular_limit_z/damping)                       | ``1.0``   |
-| [`bool`](class_bool.md)   | [`angular_limit_z/enabled`](#class_generic6dofjoint3d_property_angular_limit_z/enabled)                       | ``true``  |
-| [`float`](class_float.md) | [`angular_limit_z/erp`](#class_generic6dofjoint3d_property_angular_limit_z/erp)                               | ``0.5``   |
-| [`float`](class_float.md) | [`angular_limit_z/force_limit`](#class_generic6dofjoint3d_property_angular_limit_z/force_limit)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_z/lower_angle`](#class_generic6dofjoint3d_property_angular_limit_z/lower_angle)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_z/restitution`](#class_generic6dofjoint3d_property_angular_limit_z/restitution)               | ``0.0``   |
-| [`float`](class_float.md) | [`angular_limit_z/softness`](#class_generic6dofjoint3d_property_angular_limit_z/softness)                     | ``0.5``   |
-| [`float`](class_float.md) | [`angular_limit_z/upper_angle`](#class_generic6dofjoint3d_property_angular_limit_z/upper_angle)               | ``0.0``   |
-| [`bool`](class_bool.md)   | [`angular_motor_x/enabled`](#class_generic6dofjoint3d_property_angular_motor_x/enabled)                       | ``false`` |
-| [`float`](class_float.md) | [`angular_motor_x/force_limit`](#class_generic6dofjoint3d_property_angular_motor_x/force_limit)               | ``300.0`` |
-| [`float`](class_float.md) | [`angular_motor_x/target_velocity`](#class_generic6dofjoint3d_property_angular_motor_x/target_velocity)       | ``0.0``   |
-| [`bool`](class_bool.md)   | [`angular_motor_y/enabled`](#class_generic6dofjoint3d_property_angular_motor_y/enabled)                       | ``false`` |
-| [`float`](class_float.md) | [`angular_motor_y/force_limit`](#class_generic6dofjoint3d_property_angular_motor_y/force_limit)               | ``300.0`` |
-| [`float`](class_float.md) | [`angular_motor_y/target_velocity`](#class_generic6dofjoint3d_property_angular_motor_y/target_velocity)       | ``0.0``   |
-| [`bool`](class_bool.md)   | [`angular_motor_z/enabled`](#class_generic6dofjoint3d_property_angular_motor_z/enabled)                       | ``false`` |
-| [`float`](class_float.md) | [`angular_motor_z/force_limit`](#class_generic6dofjoint3d_property_angular_motor_z/force_limit)               | ``300.0`` |
-| [`float`](class_float.md) | [`angular_motor_z/target_velocity`](#class_generic6dofjoint3d_property_angular_motor_z/target_velocity)       | ``0.0``   |
-| [`float`](class_float.md) | [`angular_spring_x/damping`](#class_generic6dofjoint3d_property_angular_spring_x/damping)                     | ``0.0``   |
-| [`bool`](class_bool.md)   | [`angular_spring_x/enabled`](#class_generic6dofjoint3d_property_angular_spring_x/enabled)                     | ``false`` |
-| [`float`](class_float.md) | [`angular_spring_x/equilibrium_point`](#class_generic6dofjoint3d_property_angular_spring_x/equilibrium_point) | ``0.0``   |
-| [`float`](class_float.md) | [`angular_spring_x/stiffness`](#class_generic6dofjoint3d_property_angular_spring_x/stiffness)                 | ``0.0``   |
-| [`float`](class_float.md) | [`angular_spring_y/damping`](#class_generic6dofjoint3d_property_angular_spring_y/damping)                     | ``0.0``   |
-| [`bool`](class_bool.md)   | [`angular_spring_y/enabled`](#class_generic6dofjoint3d_property_angular_spring_y/enabled)                     | ``false`` |
-| [`float`](class_float.md) | [`angular_spring_y/equilibrium_point`](#class_generic6dofjoint3d_property_angular_spring_y/equilibrium_point) | ``0.0``   |
-| [`float`](class_float.md) | [`angular_spring_y/stiffness`](#class_generic6dofjoint3d_property_angular_spring_y/stiffness)                 | ``0.0``   |
-| [`float`](class_float.md) | [`angular_spring_z/damping`](#class_generic6dofjoint3d_property_angular_spring_z/damping)                     | ``0.0``   |
-| [`bool`](class_bool.md)   | [`angular_spring_z/enabled`](#class_generic6dofjoint3d_property_angular_spring_z/enabled)                     | ``false`` |
-| [`float`](class_float.md) | [`angular_spring_z/equilibrium_point`](#class_generic6dofjoint3d_property_angular_spring_z/equilibrium_point) | ``0.0``   |
-| [`float`](class_float.md) | [`angular_spring_z/stiffness`](#class_generic6dofjoint3d_property_angular_spring_z/stiffness)                 | ``0.0``   |
-| [`float`](class_float.md) | [`linear_limit_x/damping`](#class_generic6dofjoint3d_property_linear_limit_x/damping)                         | ``1.0``   |
-| [`bool`](class_bool.md)   | [`linear_limit_x/enabled`](#class_generic6dofjoint3d_property_linear_limit_x/enabled)                         | ``true``  |
-| [`float`](class_float.md) | [`linear_limit_x/lower_distance`](#class_generic6dofjoint3d_property_linear_limit_x/lower_distance)           | ``0.0``   |
-| [`float`](class_float.md) | [`linear_limit_x/restitution`](#class_generic6dofjoint3d_property_linear_limit_x/restitution)                 | ``0.5``   |
-| [`float`](class_float.md) | [`linear_limit_x/softness`](#class_generic6dofjoint3d_property_linear_limit_x/softness)                       | ``0.7``   |
-| [`float`](class_float.md) | [`linear_limit_x/upper_distance`](#class_generic6dofjoint3d_property_linear_limit_x/upper_distance)           | ``0.0``   |
-| [`float`](class_float.md) | [`linear_limit_y/damping`](#class_generic6dofjoint3d_property_linear_limit_y/damping)                         | ``1.0``   |
-| [`bool`](class_bool.md)   | [`linear_limit_y/enabled`](#class_generic6dofjoint3d_property_linear_limit_y/enabled)                         | ``true``  |
-| [`float`](class_float.md) | [`linear_limit_y/lower_distance`](#class_generic6dofjoint3d_property_linear_limit_y/lower_distance)           | ``0.0``   |
-| [`float`](class_float.md) | [`linear_limit_y/restitution`](#class_generic6dofjoint3d_property_linear_limit_y/restitution)                 | ``0.5``   |
-| [`float`](class_float.md) | [`linear_limit_y/softness`](#class_generic6dofjoint3d_property_linear_limit_y/softness)                       | ``0.7``   |
-| [`float`](class_float.md) | [`linear_limit_y/upper_distance`](#class_generic6dofjoint3d_property_linear_limit_y/upper_distance)           | ``0.0``   |
-| [`float`](class_float.md) | [`linear_limit_z/damping`](#class_generic6dofjoint3d_property_linear_limit_z/damping)                         | ``1.0``   |
-| [`bool`](class_bool.md)   | [`linear_limit_z/enabled`](#class_generic6dofjoint3d_property_linear_limit_z/enabled)                         | ``true``  |
-| [`float`](class_float.md) | [`linear_limit_z/lower_distance`](#class_generic6dofjoint3d_property_linear_limit_z/lower_distance)           | ``0.0``   |
-| [`float`](class_float.md) | [`linear_limit_z/restitution`](#class_generic6dofjoint3d_property_linear_limit_z/restitution)                 | ``0.5``   |
-| [`float`](class_float.md) | [`linear_limit_z/softness`](#class_generic6dofjoint3d_property_linear_limit_z/softness)                       | ``0.7``   |
-| [`float`](class_float.md) | [`linear_limit_z/upper_distance`](#class_generic6dofjoint3d_property_linear_limit_z/upper_distance)           | ``0.0``   |
-| [`bool`](class_bool.md)   | [`linear_motor_x/enabled`](#class_generic6dofjoint3d_property_linear_motor_x/enabled)                         | ``false`` |
-| [`float`](class_float.md) | [`linear_motor_x/force_limit`](#class_generic6dofjoint3d_property_linear_motor_x/force_limit)                 | ``0.0``   |
-| [`float`](class_float.md) | [`linear_motor_x/target_velocity`](#class_generic6dofjoint3d_property_linear_motor_x/target_velocity)         | ``0.0``   |
-| [`bool`](class_bool.md)   | [`linear_motor_y/enabled`](#class_generic6dofjoint3d_property_linear_motor_y/enabled)                         | ``false`` |
-| [`float`](class_float.md) | [`linear_motor_y/force_limit`](#class_generic6dofjoint3d_property_linear_motor_y/force_limit)                 | ``0.0``   |
-| [`float`](class_float.md) | [`linear_motor_y/target_velocity`](#class_generic6dofjoint3d_property_linear_motor_y/target_velocity)         | ``0.0``   |
-| [`bool`](class_bool.md)   | [`linear_motor_z/enabled`](#class_generic6dofjoint3d_property_linear_motor_z/enabled)                         | ``false`` |
-| [`float`](class_float.md) | [`linear_motor_z/force_limit`](#class_generic6dofjoint3d_property_linear_motor_z/force_limit)                 | ``0.0``   |
-| [`float`](class_float.md) | [`linear_motor_z/target_velocity`](#class_generic6dofjoint3d_property_linear_motor_z/target_velocity)         | ``0.0``   |
-| [`float`](class_float.md) | [`linear_spring_x/damping`](#class_generic6dofjoint3d_property_linear_spring_x/damping)                       | ``0.01``  |
-| [`bool`](class_bool.md)   | [`linear_spring_x/enabled`](#class_generic6dofjoint3d_property_linear_spring_x/enabled)                       | ``false`` |
-| [`float`](class_float.md) | [`linear_spring_x/equilibrium_point`](#class_generic6dofjoint3d_property_linear_spring_x/equilibrium_point)   | ``0.0``   |
-| [`float`](class_float.md) | [`linear_spring_x/stiffness`](#class_generic6dofjoint3d_property_linear_spring_x/stiffness)                   | ``0.01``  |
-| [`float`](class_float.md) | [`linear_spring_y/damping`](#class_generic6dofjoint3d_property_linear_spring_y/damping)                       | ``0.01``  |
-| [`bool`](class_bool.md)   | [`linear_spring_y/enabled`](#class_generic6dofjoint3d_property_linear_spring_y/enabled)                       | ``false`` |
-| [`float`](class_float.md) | [`linear_spring_y/equilibrium_point`](#class_generic6dofjoint3d_property_linear_spring_y/equilibrium_point)   | ``0.0``   |
-| [`float`](class_float.md) | [`linear_spring_y/stiffness`](#class_generic6dofjoint3d_property_linear_spring_y/stiffness)                   | ``0.01``  |
-| [`float`](class_float.md) | [`linear_spring_z/damping`](#class_generic6dofjoint3d_property_linear_spring_z/damping)                       | ``0.01``  |
-| [`bool`](class_bool.md)   | [`linear_spring_z/enabled`](#class_generic6dofjoint3d_property_linear_spring_z/enabled)                       | ``false`` |
-| [`float`](class_float.md) | [`linear_spring_z/equilibrium_point`](#class_generic6dofjoint3d_property_linear_spring_z/equilibrium_point)   | ``0.0``   |
-| [`float`](class_float.md) | [`linear_spring_z/stiffness`](#class_generic6dofjoint3d_property_linear_spring_z/stiffness)                   | ``0.01``  |
+| [`float`](class_float.md) | [`angular_limit_x/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_x/damping)                       | ``1.0``   |
+| [`bool`](class_bool.md)   | [`angular_limit_x/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_x/enabled)                       | ``true``  |
+| [`float`](class_float.md) | [`angular_limit_x/erp`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_x/erp)                               | ``0.5``   |
+| [`float`](class_float.md) | [`angular_limit_x/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_x/force_limit)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_x/lower_angle`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_x/lower_angle)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_x/restitution`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_x/restitution)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_x/softness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_x/softness)                     | ``0.5``   |
+| [`float`](class_float.md) | [`angular_limit_x/upper_angle`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_x/upper_angle)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_y/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_y/damping)                       | ``1.0``   |
+| [`bool`](class_bool.md)   | [`angular_limit_y/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_y/enabled)                       | ``true``  |
+| [`float`](class_float.md) | [`angular_limit_y/erp`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_y/erp)                               | ``0.5``   |
+| [`float`](class_float.md) | [`angular_limit_y/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_y/force_limit)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_y/lower_angle`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_y/lower_angle)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_y/restitution`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_y/restitution)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_y/softness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_y/softness)                     | ``0.5``   |
+| [`float`](class_float.md) | [`angular_limit_y/upper_angle`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_y/upper_angle)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_z/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_z/damping)                       | ``1.0``   |
+| [`bool`](class_bool.md)   | [`angular_limit_z/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_z/enabled)                       | ``true``  |
+| [`float`](class_float.md) | [`angular_limit_z/erp`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_z/erp)                               | ``0.5``   |
+| [`float`](class_float.md) | [`angular_limit_z/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_z/force_limit)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_z/lower_angle`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_z/lower_angle)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_z/restitution`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_z/restitution)               | ``0.0``   |
+| [`float`](class_float.md) | [`angular_limit_z/softness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_z/softness)                     | ``0.5``   |
+| [`float`](class_float.md) | [`angular_limit_z/upper_angle`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_limit_z/upper_angle)               | ``0.0``   |
+| [`bool`](class_bool.md)   | [`angular_motor_x/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_x/enabled)                       | ``false`` |
+| [`float`](class_float.md) | [`angular_motor_x/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_x/force_limit)               | ``300.0`` |
+| [`float`](class_float.md) | [`angular_motor_x/target_velocity`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_x/target_velocity)       | ``0.0``   |
+| [`bool`](class_bool.md)   | [`angular_motor_y/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_y/enabled)                       | ``false`` |
+| [`float`](class_float.md) | [`angular_motor_y/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_y/force_limit)               | ``300.0`` |
+| [`float`](class_float.md) | [`angular_motor_y/target_velocity`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_y/target_velocity)       | ``0.0``   |
+| [`bool`](class_bool.md)   | [`angular_motor_z/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_z/enabled)                       | ``false`` |
+| [`float`](class_float.md) | [`angular_motor_z/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_z/force_limit)               | ``300.0`` |
+| [`float`](class_float.md) | [`angular_motor_z/target_velocity`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_motor_z/target_velocity)       | ``0.0``   |
+| [`float`](class_float.md) | [`angular_spring_x/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_x/damping)                     | ``0.0``   |
+| [`bool`](class_bool.md)   | [`angular_spring_x/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_x/enabled)                     | ``false`` |
+| [`float`](class_float.md) | [`angular_spring_x/equilibrium_point`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_x/equilibrium_point) | ``0.0``   |
+| [`float`](class_float.md) | [`angular_spring_x/stiffness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_x/stiffness)                 | ``0.0``   |
+| [`float`](class_float.md) | [`angular_spring_y/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_y/damping)                     | ``0.0``   |
+| [`bool`](class_bool.md)   | [`angular_spring_y/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_y/enabled)                     | ``false`` |
+| [`float`](class_float.md) | [`angular_spring_y/equilibrium_point`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_y/equilibrium_point) | ``0.0``   |
+| [`float`](class_float.md) | [`angular_spring_y/stiffness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_y/stiffness)                 | ``0.0``   |
+| [`float`](class_float.md) | [`angular_spring_z/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_z/damping)                     | ``0.0``   |
+| [`bool`](class_bool.md)   | [`angular_spring_z/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_z/enabled)                     | ``false`` |
+| [`float`](class_float.md) | [`angular_spring_z/equilibrium_point`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_z/equilibrium_point) | ``0.0``   |
+| [`float`](class_float.md) | [`angular_spring_z/stiffness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_angular_spring_z/stiffness)                 | ``0.0``   |
+| [`float`](class_float.md) | [`linear_limit_x/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_x/damping)                         | ``1.0``   |
+| [`bool`](class_bool.md)   | [`linear_limit_x/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_x/enabled)                         | ``true``  |
+| [`float`](class_float.md) | [`linear_limit_x/lower_distance`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_x/lower_distance)           | ``0.0``   |
+| [`float`](class_float.md) | [`linear_limit_x/restitution`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_x/restitution)                 | ``0.5``   |
+| [`float`](class_float.md) | [`linear_limit_x/softness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_x/softness)                       | ``0.7``   |
+| [`float`](class_float.md) | [`linear_limit_x/upper_distance`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_x/upper_distance)           | ``0.0``   |
+| [`float`](class_float.md) | [`linear_limit_y/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_y/damping)                         | ``1.0``   |
+| [`bool`](class_bool.md)   | [`linear_limit_y/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_y/enabled)                         | ``true``  |
+| [`float`](class_float.md) | [`linear_limit_y/lower_distance`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_y/lower_distance)           | ``0.0``   |
+| [`float`](class_float.md) | [`linear_limit_y/restitution`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_y/restitution)                 | ``0.5``   |
+| [`float`](class_float.md) | [`linear_limit_y/softness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_y/softness)                       | ``0.7``   |
+| [`float`](class_float.md) | [`linear_limit_y/upper_distance`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_y/upper_distance)           | ``0.0``   |
+| [`float`](class_float.md) | [`linear_limit_z/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_z/damping)                         | ``1.0``   |
+| [`bool`](class_bool.md)   | [`linear_limit_z/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_z/enabled)                         | ``true``  |
+| [`float`](class_float.md) | [`linear_limit_z/lower_distance`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_z/lower_distance)           | ``0.0``   |
+| [`float`](class_float.md) | [`linear_limit_z/restitution`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_z/restitution)                 | ``0.5``   |
+| [`float`](class_float.md) | [`linear_limit_z/softness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_z/softness)                       | ``0.7``   |
+| [`float`](class_float.md) | [`linear_limit_z/upper_distance`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_limit_z/upper_distance)           | ``0.0``   |
+| [`bool`](class_bool.md)   | [`linear_motor_x/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_x/enabled)                         | ``false`` |
+| [`float`](class_float.md) | [`linear_motor_x/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_x/force_limit)                 | ``0.0``   |
+| [`float`](class_float.md) | [`linear_motor_x/target_velocity`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_x/target_velocity)         | ``0.0``   |
+| [`bool`](class_bool.md)   | [`linear_motor_y/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_y/enabled)                         | ``false`` |
+| [`float`](class_float.md) | [`linear_motor_y/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_y/force_limit)                 | ``0.0``   |
+| [`float`](class_float.md) | [`linear_motor_y/target_velocity`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_y/target_velocity)         | ``0.0``   |
+| [`bool`](class_bool.md)   | [`linear_motor_z/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_z/enabled)                         | ``false`` |
+| [`float`](class_float.md) | [`linear_motor_z/force_limit`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_z/force_limit)                 | ``0.0``   |
+| [`float`](class_float.md) | [`linear_motor_z/target_velocity`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_motor_z/target_velocity)         | ``0.0``   |
+| [`float`](class_float.md) | [`linear_spring_x/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_x/damping)                       | ``0.01``  |
+| [`bool`](class_bool.md)   | [`linear_spring_x/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_x/enabled)                       | ``false`` |
+| [`float`](class_float.md) | [`linear_spring_x/equilibrium_point`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_x/equilibrium_point)   | ``0.0``   |
+| [`float`](class_float.md) | [`linear_spring_x/stiffness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_x/stiffness)                   | ``0.01``  |
+| [`float`](class_float.md) | [`linear_spring_y/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_y/damping)                       | ``0.01``  |
+| [`bool`](class_bool.md)   | [`linear_spring_y/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_y/enabled)                       | ``false`` |
+| [`float`](class_float.md) | [`linear_spring_y/equilibrium_point`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_y/equilibrium_point)   | ``0.0``   |
+| [`float`](class_float.md) | [`linear_spring_y/stiffness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_y/stiffness)                   | ``0.01``  |
+| [`float`](class_float.md) | [`linear_spring_z/damping`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_z/damping)                       | ``0.01``  |
+| [`bool`](class_bool.md)   | [`linear_spring_z/enabled`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_z/enabled)                       | ``false`` |
+| [`float`](class_float.md) | [`linear_spring_z/equilibrium_point`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_z/equilibrium_point)   | ``0.0``   |
+| [`float`](class_float.md) | [`linear_spring_z/stiffness`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_property_linear_spring_z/stiffness)                   | ``0.01``  |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`get_flag_x`](#class_generic6dofjoint3d_method_get_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
-| [`bool`](class_bool.md)   | [`get_flag_y`](#class_generic6dofjoint3d_method_get_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
-| [`bool`](class_bool.md)   | [`get_flag_z`](#class_generic6dofjoint3d_method_get_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
-| [`float`](class_float.md) | [`get_param_x`](#class_generic6dofjoint3d_method_get_param_x) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
-| [`float`](class_float.md) | [`get_param_y`](#class_generic6dofjoint3d_method_get_param_y) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
-| [`float`](class_float.md) | [`get_param_z`](#class_generic6dofjoint3d_method_get_param_z) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_flag_x`](#class_generic6dofjoint3d_method_set_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
-| `void`                    | [`set_flag_y`](#class_generic6dofjoint3d_method_set_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
-| `void`                    | [`set_flag_z`](#class_generic6dofjoint3d_method_set_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
-| `void`                    | [`set_param_x`](#class_generic6dofjoint3d_method_set_param_x) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
-| `void`                    | [`set_param_y`](#class_generic6dofjoint3d_method_set_param_y) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
-| `void`                    | [`set_param_z`](#class_generic6dofjoint3d_method_set_param_z) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
+| [`bool`](class_bool.md)   | [`get_flag_x`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_get_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
+| [`bool`](class_bool.md)   | [`get_flag_y`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_get_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
+| [`bool`](class_bool.md)   | [`get_flag_z`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_get_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
+| [`float`](class_float.md) | [`get_param_x`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_get_param_x) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
+| [`float`](class_float.md) | [`get_param_y`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_get_param_y) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
+| [`float`](class_float.md) | [`get_param_z`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_get_param_z) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_flag_x`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_set_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
+| `void`                    | [`set_flag_y`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_set_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
+| `void`                    | [`set_flag_z`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_set_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
+| `void`                    | [`set_param_x`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_set_param_x) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
+| `void`                    | [`set_param_y`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_set_param_y) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
+| `void`                    | [`set_param_z`](class_generic6dofjoint3d.md#class_generic6dofjoint3d_method_set_param_z) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -13,7 +13,7 @@ Overrides the location sounds are heard from.
 
 ## 描述
 
-Once added to the scene tree and enabled using [`make_current`](#class_audiolistener2d_method_make_current), this node will override the location sounds are heard from. Only one **AudioListener2D** can be current. Using [`make_current`](#class_audiolistener2d_method_make_current) will disable the previous **AudioListener2D**.
+Once added to the scene tree and enabled using [`make_current`](class_audiolistener2d.md#class_audiolistener2d_method_make_current), this node will override the location sounds are heard from. Only one **AudioListener2D** can be current. Using [`make_current`](class_audiolistener2d.md#class_audiolistener2d_method_make_current) will disable the previous **AudioListener2D**.
 
 If there is no active **AudioListener2D** in the current [`Viewport`](class_viewport.md), center of the screen will be used as a hearing point for the audio. **AudioListener2D** needs to be inside [`SceneTree`](class_scenetree.md) to function.
 
@@ -21,9 +21,9 @@ If there is no active **AudioListener2D** in the current [`Viewport`](class_view
 
 |||
 |:-:|:--|
-| `void`                  | [`clear_current`](#class_audiolistener2d_method_clear_current) ( )         |
-| [`bool`](class_bool.md) | [`is_current`](#class_audiolistener2d_method_is_current) ( ) const[^const] |
-| `void`                  | [`make_current`](#class_audiolistener2d_method_make_current) ( )           |
+| `void`                  | [`clear_current`](class_audiolistener2d.md#class_audiolistener2d_method_clear_current) ( )         |
+| [`bool`](class_bool.md) | [`is_current`](class_audiolistener2d.md#class_audiolistener2d_method_is_current) ( ) const[^const] |
+| `void`                  | [`make_current`](class_audiolistener2d.md#class_audiolistener2d_method_make_current) ( )           |
 
 <!-- rst-class:: classref-section-separator -->
 

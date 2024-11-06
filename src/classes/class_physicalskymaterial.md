@@ -21,17 +21,17 @@ The **PhysicalSkyMaterial** only supports one sun. The color, energy, and direct
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)         | [`energy_multiplier`](#class_physicalskymaterial_property_energy_multiplier)       | ``1.0``                          |
-| [`Color`](class_color.md)         | [`ground_color`](#class_physicalskymaterial_property_ground_color)                 | ``Color(0.1, 0.07, 0.034, 1)``   |
-| [`float`](class_float.md)         | [`mie_coefficient`](#class_physicalskymaterial_property_mie_coefficient)           | ``0.005``                        |
-| [`Color`](class_color.md)         | [`mie_color`](#class_physicalskymaterial_property_mie_color)                       | ``Color(0.69, 0.729, 0.812, 1)`` |
-| [`float`](class_float.md)         | [`mie_eccentricity`](#class_physicalskymaterial_property_mie_eccentricity)         | ``0.8``                          |
-| [`Texture2D`](class_texture2d.md) | [`night_sky`](#class_physicalskymaterial_property_night_sky)                       |                                  |
-| [`float`](class_float.md)         | [`rayleigh_coefficient`](#class_physicalskymaterial_property_rayleigh_coefficient) | ``2.0``                          |
-| [`Color`](class_color.md)         | [`rayleigh_color`](#class_physicalskymaterial_property_rayleigh_color)             | ``Color(0.3, 0.405, 0.6, 1)``    |
-| [`float`](class_float.md)         | [`sun_disk_scale`](#class_physicalskymaterial_property_sun_disk_scale)             | ``1.0``                          |
-| [`float`](class_float.md)         | [`turbidity`](#class_physicalskymaterial_property_turbidity)                       | ``10.0``                         |
-| [`bool`](class_bool.md)           | [`use_debanding`](#class_physicalskymaterial_property_use_debanding)               | ``true``                         |
+| [`float`](class_float.md)         | [`energy_multiplier`](class_physicalskymaterial.md#class_physicalskymaterial_property_energy_multiplier)       | ``1.0``                          |
+| [`Color`](class_color.md)         | [`ground_color`](class_physicalskymaterial.md#class_physicalskymaterial_property_ground_color)                 | ``Color(0.1, 0.07, 0.034, 1)``   |
+| [`float`](class_float.md)         | [`mie_coefficient`](class_physicalskymaterial.md#class_physicalskymaterial_property_mie_coefficient)           | ``0.005``                        |
+| [`Color`](class_color.md)         | [`mie_color`](class_physicalskymaterial.md#class_physicalskymaterial_property_mie_color)                       | ``Color(0.69, 0.729, 0.812, 1)`` |
+| [`float`](class_float.md)         | [`mie_eccentricity`](class_physicalskymaterial.md#class_physicalskymaterial_property_mie_eccentricity)         | ``0.8``                          |
+| [`Texture2D`](class_texture2d.md) | [`night_sky`](class_physicalskymaterial.md#class_physicalskymaterial_property_night_sky)                       |                                  |
+| [`float`](class_float.md)         | [`rayleigh_coefficient`](class_physicalskymaterial.md#class_physicalskymaterial_property_rayleigh_coefficient) | ``2.0``                          |
+| [`Color`](class_color.md)         | [`rayleigh_color`](class_physicalskymaterial.md#class_physicalskymaterial_property_rayleigh_color)             | ``Color(0.3, 0.405, 0.6, 1)``    |
+| [`float`](class_float.md)         | [`sun_disk_scale`](class_physicalskymaterial.md#class_physicalskymaterial_property_sun_disk_scale)             | ``1.0``                          |
+| [`float`](class_float.md)         | [`turbidity`](class_physicalskymaterial.md#class_physicalskymaterial_property_turbidity)                       | ``10.0``                         |
+| [`bool`](class_bool.md)           | [`use_debanding`](class_physicalskymaterial.md#class_physicalskymaterial_property_use_debanding)               | ``true``                         |
 
 <!-- rst-class:: classref-section-separator -->
 

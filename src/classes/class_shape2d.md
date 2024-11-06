@@ -23,18 +23,18 @@ Abstract base class for all 2D shapes, intended for use in physics.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`custom_solver_bias`](#class_shape2d_property_custom_solver_bias) | ``0.0`` |
+| [`float`](class_float.md) | [`custom_solver_bias`](class_shape2d.md#class_shape2d_property_custom_solver_bias) | ``0.0`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`collide`](#class_shape2d_method_collide) ( local_xform: [`Transform2D`](class_transform2d.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md) )                                                                                                                                                     |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`collide_and_get_contacts`](#class_shape2d_method_collide_and_get_contacts) ( local_xform: [`Transform2D`](class_transform2d.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md) )                                                                                                                   |
-| [`bool`](class_bool.md)                             | [`collide_with_motion`](#class_shape2d_method_collide_with_motion) ( local_xform: [`Transform2D`](class_transform2d.md), local_motion: [`Vector2`](class_vector2.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md), shape_motion: [`Vector2`](class_vector2.md) )                                   |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`collide_with_motion_and_get_contacts`](#class_shape2d_method_collide_with_motion_and_get_contacts) ( local_xform: [`Transform2D`](class_transform2d.md), local_motion: [`Vector2`](class_vector2.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md), shape_motion: [`Vector2`](class_vector2.md) ) |
-| `void`                                              | [`draw`](#class_shape2d_method_draw) ( canvas_item: [`RID`](class_rid.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                        |
-| [`Rect2`](class_rect2.md)                           | [`get_rect`](#class_shape2d_method_get_rect) ( ) const[^const]                                                                                                                                                                                                                                                                                       |
+| [`bool`](class_bool.md)                             | [`collide`](class_shape2d.md#class_shape2d_method_collide) ( local_xform: [`Transform2D`](class_transform2d.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md) )                                                                                                                                                     |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`collide_and_get_contacts`](class_shape2d.md#class_shape2d_method_collide_and_get_contacts) ( local_xform: [`Transform2D`](class_transform2d.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md) )                                                                                                                   |
+| [`bool`](class_bool.md)                             | [`collide_with_motion`](class_shape2d.md#class_shape2d_method_collide_with_motion) ( local_xform: [`Transform2D`](class_transform2d.md), local_motion: [`Vector2`](class_vector2.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md), shape_motion: [`Vector2`](class_vector2.md) )                                   |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`collide_with_motion_and_get_contacts`](class_shape2d.md#class_shape2d_method_collide_with_motion_and_get_contacts) ( local_xform: [`Transform2D`](class_transform2d.md), local_motion: [`Vector2`](class_vector2.md), with_shape: [`Shape2D`](class_shape2d.md), shape_xform: [`Transform2D`](class_transform2d.md), shape_motion: [`Vector2`](class_vector2.md) ) |
+| `void`                                              | [`draw`](class_shape2d.md#class_shape2d_method_draw) ( canvas_item: [`RID`](class_rid.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                        |
+| [`Rect2`](class_rect2.md)                           | [`get_rect`](class_shape2d.md#class_shape2d_method_get_rect) ( ) const[^const]                                                                                                                                                                                                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -51,7 +51,7 @@ Abstract base class for all 2D shapes, intended for use in physics.
 
 The shape's custom solver bias. Defines how much bodies react to enforce contact separation when this shape is involved.
 
-When set to `0`, the default value from [`ProjectSettings.physics/2d/solver/default_contact_bias`](#class_projectsettings_property_physics/2d/solver/default_contact_bias) is used.
+When set to `0`, the default value from [`ProjectSettings.physics/2d/solver/default_contact_bias`](class_projectsettings.md#class_projectsettings_property_physics/2d/solver/default_contact_bias) is used.
 
 <!-- rst-class:: classref-section-separator -->
 

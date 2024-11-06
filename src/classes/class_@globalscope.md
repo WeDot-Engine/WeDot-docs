@@ -23,162 +23,162 @@ For the entries related to GDScript which can be accessed in any script see [`@G
 
 |||
 |:-:|:--|
-| [`AudioServer`](class_audioserver.md)                         | [`AudioServer`](#class_@globalscope_property_audioserver)                         |
-| [`CameraServer`](class_cameraserver.md)                       | [`CameraServer`](#class_@globalscope_property_cameraserver)                       |
-| [`ClassDB`](class_classdb.md)                                 | [`ClassDB`](#class_@globalscope_property_classdb)                                 |
-| [`DisplayServer`](class_displayserver.md)                     | [`DisplayServer`](#class_@globalscope_property_displayserver)                     |
-| [`EditorInterface`](class_editorinterface.md)                 | [`EditorInterface`](#class_@globalscope_property_editorinterface)                 |
-| [`Engine`](class_engine.md)                                   | [`Engine`](#class_@globalscope_property_engine)                                   |
-| [`EngineDebugger`](class_enginedebugger.md)                   | [`EngineDebugger`](#class_@globalscope_property_enginedebugger)                   |
-| [`GDExtensionManager`](class_gdextensionmanager.md)           | [`GDExtensionManager`](#class_@globalscope_property_gdextensionmanager)           |
-| [`Geometry2D`](class_geometry2d.md)                           | [`Geometry2D`](#class_@globalscope_property_geometry2d)                           |
-| [`Geometry3D`](class_geometry3d.md)                           | [`Geometry3D`](#class_@globalscope_property_geometry3d)                           |
-| [`IP`](class_ip.md)                                           | [`IP`](#class_@globalscope_property_ip)                                           |
-| [`Input`](class_input.md)                                     | [`Input`](#class_@globalscope_property_input)                                     |
-| [`InputMap`](class_inputmap.md)                               | [`InputMap`](#class_@globalscope_property_inputmap)                               |
-| [`JavaClassWrapper`](class_javaclasswrapper.md)               | [`JavaClassWrapper`](#class_@globalscope_property_javaclasswrapper)               |
-| [`JavaScriptBridge`](class_javascriptbridge.md)               | [`JavaScriptBridge`](#class_@globalscope_property_javascriptbridge)               |
-| [`Marshalls`](class_marshalls.md)                             | [`Marshalls`](#class_@globalscope_property_marshalls)                             |
-| [`NativeMenu`](class_nativemenu.md)                           | [`NativeMenu`](#class_@globalscope_property_nativemenu)                           |
-| [`NavigationMeshGenerator`](class_navigationmeshgenerator.md) | [`NavigationMeshGenerator`](#class_@globalscope_property_navigationmeshgenerator) |
-| [`NavigationServer2D`](class_navigationserver2d.md)           | [`NavigationServer2D`](#class_@globalscope_property_navigationserver2d)           |
-| [`NavigationServer3D`](class_navigationserver3d.md)           | [`NavigationServer3D`](#class_@globalscope_property_navigationserver3d)           |
-| [`OS`](class_os.md)                                           | [`OS`](#class_@globalscope_property_os)                                           |
-| [`Performance`](class_performance.md)                         | [`Performance`](#class_@globalscope_property_performance)                         |
-| [`PhysicsServer2D`](class_physicsserver2d.md)                 | [`PhysicsServer2D`](#class_@globalscope_property_physicsserver2d)                 |
-| [`PhysicsServer2DManager`](class_physicsserver2dmanager.md)   | [`PhysicsServer2DManager`](#class_@globalscope_property_physicsserver2dmanager)   |
-| [`PhysicsServer3D`](class_physicsserver3d.md)                 | [`PhysicsServer3D`](#class_@globalscope_property_physicsserver3d)                 |
-| [`PhysicsServer3DManager`](class_physicsserver3dmanager.md)   | [`PhysicsServer3DManager`](#class_@globalscope_property_physicsserver3dmanager)   |
-| [`ProjectSettings`](class_projectsettings.md)                 | [`ProjectSettings`](#class_@globalscope_property_projectsettings)                 |
-| [`RenderingServer`](class_renderingserver.md)                 | [`RenderingServer`](#class_@globalscope_property_renderingserver)                 |
-| [`ResourceLoader`](class_resourceloader.md)                   | [`ResourceLoader`](#class_@globalscope_property_resourceloader)                   |
-| [`ResourceSaver`](class_resourcesaver.md)                     | [`ResourceSaver`](#class_@globalscope_property_resourcesaver)                     |
-| [`ResourceUID`](class_resourceuid.md)                         | [`ResourceUID`](#class_@globalscope_property_resourceuid)                         |
-| [`TextServerManager`](class_textservermanager.md)             | [`TextServerManager`](#class_@globalscope_property_textservermanager)             |
-| [`ThemeDB`](class_themedb.md)                                 | [`ThemeDB`](#class_@globalscope_property_themedb)                                 |
-| [`Time`](class_time.md)                                       | [`Time`](#class_@globalscope_property_time)                                       |
-| [`TranslationServer`](class_translationserver.md)             | [`TranslationServer`](#class_@globalscope_property_translationserver)             |
-| [`WorkerThreadPool`](class_workerthreadpool.md)               | [`WorkerThreadPool`](#class_@globalscope_property_workerthreadpool)               |
-| [`XRServer`](class_xrserver.md)                               | [`XRServer`](#class_@globalscope_property_xrserver)                               |
+| [`AudioServer`](class_audioserver.md)                         | [`AudioServer`](class_@globalscope.md#class_@globalscope_property_audioserver)                         |
+| [`CameraServer`](class_cameraserver.md)                       | [`CameraServer`](class_@globalscope.md#class_@globalscope_property_cameraserver)                       |
+| [`ClassDB`](class_classdb.md)                                 | [`ClassDB`](class_@globalscope.md#class_@globalscope_property_classdb)                                 |
+| [`DisplayServer`](class_displayserver.md)                     | [`DisplayServer`](class_@globalscope.md#class_@globalscope_property_displayserver)                     |
+| [`EditorInterface`](class_editorinterface.md)                 | [`EditorInterface`](class_@globalscope.md#class_@globalscope_property_editorinterface)                 |
+| [`Engine`](class_engine.md)                                   | [`Engine`](class_@globalscope.md#class_@globalscope_property_engine)                                   |
+| [`EngineDebugger`](class_enginedebugger.md)                   | [`EngineDebugger`](class_@globalscope.md#class_@globalscope_property_enginedebugger)                   |
+| [`GDExtensionManager`](class_gdextensionmanager.md)           | [`GDExtensionManager`](class_@globalscope.md#class_@globalscope_property_gdextensionmanager)           |
+| [`Geometry2D`](class_geometry2d.md)                           | [`Geometry2D`](class_@globalscope.md#class_@globalscope_property_geometry2d)                           |
+| [`Geometry3D`](class_geometry3d.md)                           | [`Geometry3D`](class_@globalscope.md#class_@globalscope_property_geometry3d)                           |
+| [`IP`](class_ip.md)                                           | [`IP`](class_@globalscope.md#class_@globalscope_property_ip)                                           |
+| [`Input`](class_input.md)                                     | [`Input`](class_@globalscope.md#class_@globalscope_property_input)                                     |
+| [`InputMap`](class_inputmap.md)                               | [`InputMap`](class_@globalscope.md#class_@globalscope_property_inputmap)                               |
+| [`JavaClassWrapper`](class_javaclasswrapper.md)               | [`JavaClassWrapper`](class_@globalscope.md#class_@globalscope_property_javaclasswrapper)               |
+| [`JavaScriptBridge`](class_javascriptbridge.md)               | [`JavaScriptBridge`](class_@globalscope.md#class_@globalscope_property_javascriptbridge)               |
+| [`Marshalls`](class_marshalls.md)                             | [`Marshalls`](class_@globalscope.md#class_@globalscope_property_marshalls)                             |
+| [`NativeMenu`](class_nativemenu.md)                           | [`NativeMenu`](class_@globalscope.md#class_@globalscope_property_nativemenu)                           |
+| [`NavigationMeshGenerator`](class_navigationmeshgenerator.md) | [`NavigationMeshGenerator`](class_@globalscope.md#class_@globalscope_property_navigationmeshgenerator) |
+| [`NavigationServer2D`](class_navigationserver2d.md)           | [`NavigationServer2D`](class_@globalscope.md#class_@globalscope_property_navigationserver2d)           |
+| [`NavigationServer3D`](class_navigationserver3d.md)           | [`NavigationServer3D`](class_@globalscope.md#class_@globalscope_property_navigationserver3d)           |
+| [`OS`](class_os.md)                                           | [`OS`](class_@globalscope.md#class_@globalscope_property_os)                                           |
+| [`Performance`](class_performance.md)                         | [`Performance`](class_@globalscope.md#class_@globalscope_property_performance)                         |
+| [`PhysicsServer2D`](class_physicsserver2d.md)                 | [`PhysicsServer2D`](class_@globalscope.md#class_@globalscope_property_physicsserver2d)                 |
+| [`PhysicsServer2DManager`](class_physicsserver2dmanager.md)   | [`PhysicsServer2DManager`](class_@globalscope.md#class_@globalscope_property_physicsserver2dmanager)   |
+| [`PhysicsServer3D`](class_physicsserver3d.md)                 | [`PhysicsServer3D`](class_@globalscope.md#class_@globalscope_property_physicsserver3d)                 |
+| [`PhysicsServer3DManager`](class_physicsserver3dmanager.md)   | [`PhysicsServer3DManager`](class_@globalscope.md#class_@globalscope_property_physicsserver3dmanager)   |
+| [`ProjectSettings`](class_projectsettings.md)                 | [`ProjectSettings`](class_@globalscope.md#class_@globalscope_property_projectsettings)                 |
+| [`RenderingServer`](class_renderingserver.md)                 | [`RenderingServer`](class_@globalscope.md#class_@globalscope_property_renderingserver)                 |
+| [`ResourceLoader`](class_resourceloader.md)                   | [`ResourceLoader`](class_@globalscope.md#class_@globalscope_property_resourceloader)                   |
+| [`ResourceSaver`](class_resourcesaver.md)                     | [`ResourceSaver`](class_@globalscope.md#class_@globalscope_property_resourcesaver)                     |
+| [`ResourceUID`](class_resourceuid.md)                         | [`ResourceUID`](class_@globalscope.md#class_@globalscope_property_resourceuid)                         |
+| [`TextServerManager`](class_textservermanager.md)             | [`TextServerManager`](class_@globalscope.md#class_@globalscope_property_textservermanager)             |
+| [`ThemeDB`](class_themedb.md)                                 | [`ThemeDB`](class_@globalscope.md#class_@globalscope_property_themedb)                                 |
+| [`Time`](class_time.md)                                       | [`Time`](class_@globalscope.md#class_@globalscope_property_time)                                       |
+| [`TranslationServer`](class_translationserver.md)             | [`TranslationServer`](class_@globalscope.md#class_@globalscope_property_translationserver)             |
+| [`WorkerThreadPool`](class_workerthreadpool.md)               | [`WorkerThreadPool`](class_@globalscope.md#class_@globalscope_property_workerthreadpool)               |
+| [`XRServer`](class_xrserver.md)                               | [`XRServer`](class_@globalscope.md#class_@globalscope_property_xrserver)                               |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md)                   | [`abs`](#class_@globalscope_method_abs) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)                       | [`absf`](#class_@globalscope_method_absf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
-| [`int`](class_int.md)                           | [`absi`](#class_@globalscope_method_absi) ( x: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                       |
-| [`float`](class_float.md)                       | [`acos`](#class_@globalscope_method_acos) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`acosh`](#class_@globalscope_method_acosh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)                       | [`angle_difference`](#class_@globalscope_method_angle_difference) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )                                                                                                                                                                                                                                         |
-| [`float`](class_float.md)                       | [`asin`](#class_@globalscope_method_asin) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`asinh`](#class_@globalscope_method_asinh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)                       | [`atan`](#class_@globalscope_method_atan) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`atan2`](#class_@globalscope_method_atan2) ( y: [`float`](class_float.md), x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`atanh`](#class_@globalscope_method_atanh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)                       | [`bezier_derivative`](#class_@globalscope_method_bezier_derivative) ( start: [`float`](class_float.md), control_1: [`float`](class_float.md), control_2: [`float`](class_float.md), end: [`float`](class_float.md), t: [`float`](class_float.md) )                                                                                                                           |
-| [`float`](class_float.md)                       | [`bezier_interpolate`](#class_@globalscope_method_bezier_interpolate) ( start: [`float`](class_float.md), control_1: [`float`](class_float.md), control_2: [`float`](class_float.md), end: [`float`](class_float.md), t: [`float`](class_float.md) )                                                                                                                         |
-| [`Variant`](class_variant.md)                   | [`bytes_to_var`](#class_@globalscope_method_bytes_to_var) ( bytes: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                                                                           |
-| [`Variant`](class_variant.md)                   | [`bytes_to_var_with_objects`](#class_@globalscope_method_bytes_to_var_with_objects) ( bytes: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                                                 |
-| [`Variant`](class_variant.md)                   | [`ceil`](#class_@globalscope_method_ceil) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                               |
-| [`float`](class_float.md)                       | [`ceilf`](#class_@globalscope_method_ceilf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
-| [`int`](class_int.md)                           | [`ceili`](#class_@globalscope_method_ceili) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
-| [`Variant`](class_variant.md)                   | [`clamp`](#class_@globalscope_method_clamp) ( value: [`Variant`](class_variant.md), min: [`Variant`](class_variant.md), max: [`Variant`](class_variant.md) )                                                                                                                                                                                                                 |
-| [`float`](class_float.md)                       | [`clampf`](#class_@globalscope_method_clampf) ( value: [`float`](class_float.md), min: [`float`](class_float.md), max: [`float`](class_float.md) )                                                                                                                                                                                                                           |
-| [`int`](class_int.md)                           | [`clampi`](#class_@globalscope_method_clampi) ( value: [`int`](class_int.md), min: [`int`](class_int.md), max: [`int`](class_int.md) )                                                                                                                                                                                                                                       |
-| [`float`](class_float.md)                       | [`cos`](#class_@globalscope_method_cos) ( angle_rad: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                             |
-| [`float`](class_float.md)                       | [`cosh`](#class_@globalscope_method_cosh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`cubic_interpolate`](#class_@globalscope_method_cubic_interpolate) ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                                   |
-| [`float`](class_float.md)                       | [`cubic_interpolate_angle`](#class_@globalscope_method_cubic_interpolate_angle) ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                       |
-| [`float`](class_float.md)                       | [`cubic_interpolate_angle_in_time`](#class_@globalscope_method_cubic_interpolate_angle_in_time) ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md), to_t: [`float`](class_float.md), pre_t: [`float`](class_float.md), post_t: [`float`](class_float.md) ) |
-| [`float`](class_float.md)                       | [`cubic_interpolate_in_time`](#class_@globalscope_method_cubic_interpolate_in_time) ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md), to_t: [`float`](class_float.md), pre_t: [`float`](class_float.md), post_t: [`float`](class_float.md) )             |
-| [`float`](class_float.md)                       | [`db_to_linear`](#class_@globalscope_method_db_to_linear) ( db: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                  |
-| [`float`](class_float.md)                       | [`deg_to_rad`](#class_@globalscope_method_deg_to_rad) ( deg: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)                       | [`ease`](#class_@globalscope_method_ease) ( x: [`float`](class_float.md), curve: [`float`](class_float.md) )                                                                                                                                                                                                                                                                 |
-| [`String`](class_string.md)                     | [`error_string`](#class_@globalscope_method_error_string) ( error: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`exp`](#class_@globalscope_method_exp) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                     |
-| [`Variant`](class_variant.md)                   | [`floor`](#class_@globalscope_method_floor) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                             |
-| [`float`](class_float.md)                       | [`floorf`](#class_@globalscope_method_floorf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
-| [`int`](class_int.md)                           | [`floori`](#class_@globalscope_method_floori) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
-| [`float`](class_float.md)                       | [`fmod`](#class_@globalscope_method_fmod) ( x: [`float`](class_float.md), y: [`float`](class_float.md) )                                                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)                       | [`fposmod`](#class_@globalscope_method_fposmod) ( x: [`float`](class_float.md), y: [`float`](class_float.md) )                                                                                                                                                                                                                                                               |
-| [`int`](class_int.md)                           | [`hash`](#class_@globalscope_method_hash) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                        |
-| [`Object`](class_object.md)                     | [`instance_from_id`](#class_@globalscope_method_instance_from_id) ( instance_id: [`int`](class_int.md) )                                                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)                       | [`inverse_lerp`](#class_@globalscope_method_inverse_lerp) ( from: [`float`](class_float.md), to: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                                                                                                              |
-| [`bool`](class_bool.md)                         | [`is_equal_approx`](#class_@globalscope_method_is_equal_approx) ( a: [`float`](class_float.md), b: [`float`](class_float.md) )                                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)                         | [`is_finite`](#class_@globalscope_method_is_finite) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                         |
-| [`bool`](class_bool.md)                         | [`is_inf`](#class_@globalscope_method_is_inf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)                         | [`is_instance_id_valid`](#class_@globalscope_method_is_instance_id_valid) ( id: [`int`](class_int.md) )                                                                                                                                                                                                                                                                      |
-| [`bool`](class_bool.md)                         | [`is_instance_valid`](#class_@globalscope_method_is_instance_valid) ( instance: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                              |
-| [`bool`](class_bool.md)                         | [`is_nan`](#class_@globalscope_method_is_nan) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
-| [`bool`](class_bool.md)                         | [`is_same`](#class_@globalscope_method_is_same) ( a: [`Variant`](class_variant.md), b: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                       |
-| [`bool`](class_bool.md)                         | [`is_zero_approx`](#class_@globalscope_method_is_zero_approx) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                               |
-| [`Variant`](class_variant.md)                   | [`lerp`](#class_@globalscope_method_lerp) ( from: [`Variant`](class_variant.md), to: [`Variant`](class_variant.md), weight: [`Variant`](class_variant.md) )                                                                                                                                                                                                                  |
-| [`float`](class_float.md)                       | [`lerp_angle`](#class_@globalscope_method_lerp_angle) ( from: [`float`](class_float.md), to: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                                                                                                                  |
-| [`float`](class_float.md)                       | [`lerpf`](#class_@globalscope_method_lerpf) ( from: [`float`](class_float.md), to: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                                                                                                                            |
-| [`float`](class_float.md)                       | [`linear_to_db`](#class_@globalscope_method_linear_to_db) ( lin: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                 |
-| [`float`](class_float.md)                       | [`log`](#class_@globalscope_method_log) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                     |
-| [`Variant`](class_variant.md)                   | [`max`](#class_@globalscope_method_max) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                              |
-| [`float`](class_float.md)                       | [`maxf`](#class_@globalscope_method_maxf) ( a: [`float`](class_float.md), b: [`float`](class_float.md) )                                                                                                                                                                                                                                                                     |
-| [`int`](class_int.md)                           | [`maxi`](#class_@globalscope_method_maxi) ( a: [`int`](class_int.md), b: [`int`](class_int.md) )                                                                                                                                                                                                                                                                             |
-| [`Variant`](class_variant.md)                   | [`min`](#class_@globalscope_method_min) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                              |
-| [`float`](class_float.md)                       | [`minf`](#class_@globalscope_method_minf) ( a: [`float`](class_float.md), b: [`float`](class_float.md) )                                                                                                                                                                                                                                                                     |
-| [`int`](class_int.md)                           | [`mini`](#class_@globalscope_method_mini) ( a: [`int`](class_int.md), b: [`int`](class_int.md) )                                                                                                                                                                                                                                                                             |
-| [`float`](class_float.md)                       | [`move_toward`](#class_@globalscope_method_move_toward) ( from: [`float`](class_float.md), to: [`float`](class_float.md), delta: [`float`](class_float.md) )                                                                                                                                                                                                                 |
-| [`int`](class_int.md)                           | [`nearest_po2`](#class_@globalscope_method_nearest_po2) ( value: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)                       | [`pingpong`](#class_@globalscope_method_pingpong) ( value: [`float`](class_float.md), length: [`float`](class_float.md) )                                                                                                                                                                                                                                                    |
-| [`int`](class_int.md)                           | [`posmod`](#class_@globalscope_method_posmod) ( x: [`int`](class_int.md), y: [`int`](class_int.md) )                                                                                                                                                                                                                                                                         |
-| [`float`](class_float.md)                       | [`pow`](#class_@globalscope_method_pow) ( base: [`float`](class_float.md), exp: [`float`](class_float.md) )                                                                                                                                                                                                                                                                  |
-| `void`                                          | [`print`](#class_@globalscope_method_print) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                          |
-| `void`                                          | [`print_rich`](#class_@globalscope_method_print_rich) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                |
-| `void`                                          | [`print_verbose`](#class_@globalscope_method_print_verbose) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                          |
-| `void`                                          | [`printerr`](#class_@globalscope_method_printerr) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                    |
-| `void`                                          | [`printraw`](#class_@globalscope_method_printraw) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                    |
-| `void`                                          | [`prints`](#class_@globalscope_method_prints) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                        |
-| `void`                                          | [`printt`](#class_@globalscope_method_printt) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                        |
-| `void`                                          | [`push_error`](#class_@globalscope_method_push_error) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                |
-| `void`                                          | [`push_warning`](#class_@globalscope_method_push_warning) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                            |
-| [`float`](class_float.md)                       | [`rad_to_deg`](#class_@globalscope_method_rad_to_deg) ( rad: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                     |
-| [`PackedInt64Array`](class_packedint64array.md) | [`rand_from_seed`](#class_@globalscope_method_rand_from_seed) ( seed: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                |
-| [`float`](class_float.md)                       | [`randf`](#class_@globalscope_method_randf) ( )                                                                                                                                                                                                                                                                                                                              |
-| [`float`](class_float.md)                       | [`randf_range`](#class_@globalscope_method_randf_range) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`randfn`](#class_@globalscope_method_randfn) ( mean: [`float`](class_float.md), deviation: [`float`](class_float.md) )                                                                                                                                                                                                                                                      |
-| [`int`](class_int.md)                           | [`randi`](#class_@globalscope_method_randi) ( )                                                                                                                                                                                                                                                                                                                              |
-| [`int`](class_int.md)                           | [`randi_range`](#class_@globalscope_method_randi_range) ( from: [`int`](class_int.md), to: [`int`](class_int.md) )                                                                                                                                                                                                                                                           |
-| `void`                                          | [`randomize`](#class_@globalscope_method_randomize) ( )                                                                                                                                                                                                                                                                                                                      |
-| [`float`](class_float.md)                       | [`remap`](#class_@globalscope_method_remap) ( value: [`float`](class_float.md), istart: [`float`](class_float.md), istop: [`float`](class_float.md), ostart: [`float`](class_float.md), ostop: [`float`](class_float.md) )                                                                                                                                                   |
-| [`int`](class_int.md)                           | [`rid_allocate_id`](#class_@globalscope_method_rid_allocate_id) ( )                                                                                                                                                                                                                                                                                                          |
-| [`RID`](class_rid.md)                           | [`rid_from_int64`](#class_@globalscope_method_rid_from_int64) ( base: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                |
-| [`float`](class_float.md)                       | [`rotate_toward`](#class_@globalscope_method_rotate_toward) ( from: [`float`](class_float.md), to: [`float`](class_float.md), delta: [`float`](class_float.md) )                                                                                                                                                                                                             |
-| [`Variant`](class_variant.md)                   | [`round`](#class_@globalscope_method_round) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                             |
-| [`float`](class_float.md)                       | [`roundf`](#class_@globalscope_method_roundf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
-| [`int`](class_int.md)                           | [`roundi`](#class_@globalscope_method_roundi) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
-| `void`                                          | [`seed`](#class_@globalscope_method_seed) ( base: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                    |
-| [`Variant`](class_variant.md)                   | [`sign`](#class_@globalscope_method_sign) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                               |
-| [`float`](class_float.md)                       | [`signf`](#class_@globalscope_method_signf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
-| [`int`](class_int.md)                           | [`signi`](#class_@globalscope_method_signi) ( x: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                     |
-| [`float`](class_float.md)                       | [`sin`](#class_@globalscope_method_sin) ( angle_rad: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                             |
-| [`float`](class_float.md)                       | [`sinh`](#class_@globalscope_method_sinh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`smoothstep`](#class_@globalscope_method_smoothstep) ( from: [`float`](class_float.md), to: [`float`](class_float.md), x: [`float`](class_float.md) )                                                                                                                                                                                                                       |
-| [`Variant`](class_variant.md)                   | [`snapped`](#class_@globalscope_method_snapped) ( x: [`Variant`](class_variant.md), step: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                    |
-| [`float`](class_float.md)                       | [`snappedf`](#class_@globalscope_method_snappedf) ( x: [`float`](class_float.md), step: [`float`](class_float.md) )                                                                                                                                                                                                                                                          |
-| [`int`](class_int.md)                           | [`snappedi`](#class_@globalscope_method_snappedi) ( x: [`float`](class_float.md), step: [`int`](class_int.md) )                                                                                                                                                                                                                                                              |
-| [`float`](class_float.md)                       | [`sqrt`](#class_@globalscope_method_sqrt) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
-| [`int`](class_int.md)                           | [`step_decimals`](#class_@globalscope_method_step_decimals) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                 |
-| [`String`](class_string.md)                     | [`str`](#class_@globalscope_method_str) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                              |
-| [`Variant`](class_variant.md)                   | [`str_to_var`](#class_@globalscope_method_str_to_var) ( string: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                |
-| [`float`](class_float.md)                       | [`tan`](#class_@globalscope_method_tan) ( angle_rad: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                             |
-| [`float`](class_float.md)                       | [`tanh`](#class_@globalscope_method_tanh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
-| [`Variant`](class_variant.md)                   | [`type_convert`](#class_@globalscope_method_type_convert) ( variant: [`Variant`](class_variant.md), type: [`int`](class_int.md) )                                                                                                                                                                                                                                            |
-| [`String`](class_string.md)                     | [`type_string`](#class_@globalscope_method_type_string) ( type: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                      |
-| [`int`](class_int.md)                           | [`typeof`](#class_@globalscope_method_typeof) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                    |
-| [`PackedByteArray`](class_packedbytearray.md)   | [`var_to_bytes`](#class_@globalscope_method_var_to_bytes) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                        |
-| [`PackedByteArray`](class_packedbytearray.md)   | [`var_to_bytes_with_objects`](#class_@globalscope_method_var_to_bytes_with_objects) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                              |
-| [`String`](class_string.md)                     | [`var_to_str`](#class_@globalscope_method_var_to_str) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                            |
-| [`Variant`](class_variant.md)                   | [`weakref`](#class_@globalscope_method_weakref) ( obj: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                       |
-| [`Variant`](class_variant.md)                   | [`wrap`](#class_@globalscope_method_wrap) ( value: [`Variant`](class_variant.md), min: [`Variant`](class_variant.md), max: [`Variant`](class_variant.md) )                                                                                                                                                                                                                   |
-| [`float`](class_float.md)                       | [`wrapf`](#class_@globalscope_method_wrapf) ( value: [`float`](class_float.md), min: [`float`](class_float.md), max: [`float`](class_float.md) )                                                                                                                                                                                                                             |
-| [`int`](class_int.md)                           | [`wrapi`](#class_@globalscope_method_wrapi) ( value: [`int`](class_int.md), min: [`int`](class_int.md), max: [`int`](class_int.md) )                                                                                                                                                                                                                                         |
+| [`Variant`](class_variant.md)                   | [`abs`](class_@globalscope.md#class_@globalscope_method_abs) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)                       | [`absf`](class_@globalscope.md#class_@globalscope_method_absf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
+| [`int`](class_int.md)                           | [`absi`](class_@globalscope.md#class_@globalscope_method_absi) ( x: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                       |
+| [`float`](class_float.md)                       | [`acos`](class_@globalscope.md#class_@globalscope_method_acos) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`acosh`](class_@globalscope.md#class_@globalscope_method_acosh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)                       | [`angle_difference`](class_@globalscope.md#class_@globalscope_method_angle_difference) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )                                                                                                                                                                                                                                         |
+| [`float`](class_float.md)                       | [`asin`](class_@globalscope.md#class_@globalscope_method_asin) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`asinh`](class_@globalscope.md#class_@globalscope_method_asinh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)                       | [`atan`](class_@globalscope.md#class_@globalscope_method_atan) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`atan2`](class_@globalscope.md#class_@globalscope_method_atan2) ( y: [`float`](class_float.md), x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`atanh`](class_@globalscope.md#class_@globalscope_method_atanh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)                       | [`bezier_derivative`](class_@globalscope.md#class_@globalscope_method_bezier_derivative) ( start: [`float`](class_float.md), control_1: [`float`](class_float.md), control_2: [`float`](class_float.md), end: [`float`](class_float.md), t: [`float`](class_float.md) )                                                                                                                           |
+| [`float`](class_float.md)                       | [`bezier_interpolate`](class_@globalscope.md#class_@globalscope_method_bezier_interpolate) ( start: [`float`](class_float.md), control_1: [`float`](class_float.md), control_2: [`float`](class_float.md), end: [`float`](class_float.md), t: [`float`](class_float.md) )                                                                                                                         |
+| [`Variant`](class_variant.md)                   | [`bytes_to_var`](class_@globalscope.md#class_@globalscope_method_bytes_to_var) ( bytes: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                                                                           |
+| [`Variant`](class_variant.md)                   | [`bytes_to_var_with_objects`](class_@globalscope.md#class_@globalscope_method_bytes_to_var_with_objects) ( bytes: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                                                                                                 |
+| [`Variant`](class_variant.md)                   | [`ceil`](class_@globalscope.md#class_@globalscope_method_ceil) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                               |
+| [`float`](class_float.md)                       | [`ceilf`](class_@globalscope.md#class_@globalscope_method_ceilf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
+| [`int`](class_int.md)                           | [`ceili`](class_@globalscope.md#class_@globalscope_method_ceili) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
+| [`Variant`](class_variant.md)                   | [`clamp`](class_@globalscope.md#class_@globalscope_method_clamp) ( value: [`Variant`](class_variant.md), min: [`Variant`](class_variant.md), max: [`Variant`](class_variant.md) )                                                                                                                                                                                                                 |
+| [`float`](class_float.md)                       | [`clampf`](class_@globalscope.md#class_@globalscope_method_clampf) ( value: [`float`](class_float.md), min: [`float`](class_float.md), max: [`float`](class_float.md) )                                                                                                                                                                                                                           |
+| [`int`](class_int.md)                           | [`clampi`](class_@globalscope.md#class_@globalscope_method_clampi) ( value: [`int`](class_int.md), min: [`int`](class_int.md), max: [`int`](class_int.md) )                                                                                                                                                                                                                                       |
+| [`float`](class_float.md)                       | [`cos`](class_@globalscope.md#class_@globalscope_method_cos) ( angle_rad: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                             |
+| [`float`](class_float.md)                       | [`cosh`](class_@globalscope.md#class_@globalscope_method_cosh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`cubic_interpolate`](class_@globalscope.md#class_@globalscope_method_cubic_interpolate) ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                                   |
+| [`float`](class_float.md)                       | [`cubic_interpolate_angle`](class_@globalscope.md#class_@globalscope_method_cubic_interpolate_angle) ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                       |
+| [`float`](class_float.md)                       | [`cubic_interpolate_angle_in_time`](class_@globalscope.md#class_@globalscope_method_cubic_interpolate_angle_in_time) ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md), to_t: [`float`](class_float.md), pre_t: [`float`](class_float.md), post_t: [`float`](class_float.md) ) |
+| [`float`](class_float.md)                       | [`cubic_interpolate_in_time`](class_@globalscope.md#class_@globalscope_method_cubic_interpolate_in_time) ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md), to_t: [`float`](class_float.md), pre_t: [`float`](class_float.md), post_t: [`float`](class_float.md) )             |
+| [`float`](class_float.md)                       | [`db_to_linear`](class_@globalscope.md#class_@globalscope_method_db_to_linear) ( db: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                  |
+| [`float`](class_float.md)                       | [`deg_to_rad`](class_@globalscope.md#class_@globalscope_method_deg_to_rad) ( deg: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)                       | [`ease`](class_@globalscope.md#class_@globalscope_method_ease) ( x: [`float`](class_float.md), curve: [`float`](class_float.md) )                                                                                                                                                                                                                                                                 |
+| [`String`](class_string.md)                     | [`error_string`](class_@globalscope.md#class_@globalscope_method_error_string) ( error: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`exp`](class_@globalscope.md#class_@globalscope_method_exp) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                     |
+| [`Variant`](class_variant.md)                   | [`floor`](class_@globalscope.md#class_@globalscope_method_floor) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                             |
+| [`float`](class_float.md)                       | [`floorf`](class_@globalscope.md#class_@globalscope_method_floorf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
+| [`int`](class_int.md)                           | [`floori`](class_@globalscope.md#class_@globalscope_method_floori) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
+| [`float`](class_float.md)                       | [`fmod`](class_@globalscope.md#class_@globalscope_method_fmod) ( x: [`float`](class_float.md), y: [`float`](class_float.md) )                                                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)                       | [`fposmod`](class_@globalscope.md#class_@globalscope_method_fposmod) ( x: [`float`](class_float.md), y: [`float`](class_float.md) )                                                                                                                                                                                                                                                               |
+| [`int`](class_int.md)                           | [`hash`](class_@globalscope.md#class_@globalscope_method_hash) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                        |
+| [`Object`](class_object.md)                     | [`instance_from_id`](class_@globalscope.md#class_@globalscope_method_instance_from_id) ( instance_id: [`int`](class_int.md) )                                                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)                       | [`inverse_lerp`](class_@globalscope.md#class_@globalscope_method_inverse_lerp) ( from: [`float`](class_float.md), to: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                                                                                                              |
+| [`bool`](class_bool.md)                         | [`is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) ( a: [`float`](class_float.md), b: [`float`](class_float.md) )                                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)                         | [`is_finite`](class_@globalscope.md#class_@globalscope_method_is_finite) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                         |
+| [`bool`](class_bool.md)                         | [`is_inf`](class_@globalscope.md#class_@globalscope_method_is_inf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)                         | [`is_instance_id_valid`](class_@globalscope.md#class_@globalscope_method_is_instance_id_valid) ( id: [`int`](class_int.md) )                                                                                                                                                                                                                                                                      |
+| [`bool`](class_bool.md)                         | [`is_instance_valid`](class_@globalscope.md#class_@globalscope_method_is_instance_valid) ( instance: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                              |
+| [`bool`](class_bool.md)                         | [`is_nan`](class_@globalscope.md#class_@globalscope_method_is_nan) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
+| [`bool`](class_bool.md)                         | [`is_same`](class_@globalscope.md#class_@globalscope_method_is_same) ( a: [`Variant`](class_variant.md), b: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                       |
+| [`bool`](class_bool.md)                         | [`is_zero_approx`](class_@globalscope.md#class_@globalscope_method_is_zero_approx) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                               |
+| [`Variant`](class_variant.md)                   | [`lerp`](class_@globalscope.md#class_@globalscope_method_lerp) ( from: [`Variant`](class_variant.md), to: [`Variant`](class_variant.md), weight: [`Variant`](class_variant.md) )                                                                                                                                                                                                                  |
+| [`float`](class_float.md)                       | [`lerp_angle`](class_@globalscope.md#class_@globalscope_method_lerp_angle) ( from: [`float`](class_float.md), to: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                                                                                                                  |
+| [`float`](class_float.md)                       | [`lerpf`](class_@globalscope.md#class_@globalscope_method_lerpf) ( from: [`float`](class_float.md), to: [`float`](class_float.md), weight: [`float`](class_float.md) )                                                                                                                                                                                                                            |
+| [`float`](class_float.md)                       | [`linear_to_db`](class_@globalscope.md#class_@globalscope_method_linear_to_db) ( lin: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                 |
+| [`float`](class_float.md)                       | [`log`](class_@globalscope.md#class_@globalscope_method_log) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                     |
+| [`Variant`](class_variant.md)                   | [`max`](class_@globalscope.md#class_@globalscope_method_max) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                              |
+| [`float`](class_float.md)                       | [`maxf`](class_@globalscope.md#class_@globalscope_method_maxf) ( a: [`float`](class_float.md), b: [`float`](class_float.md) )                                                                                                                                                                                                                                                                     |
+| [`int`](class_int.md)                           | [`maxi`](class_@globalscope.md#class_@globalscope_method_maxi) ( a: [`int`](class_int.md), b: [`int`](class_int.md) )                                                                                                                                                                                                                                                                             |
+| [`Variant`](class_variant.md)                   | [`min`](class_@globalscope.md#class_@globalscope_method_min) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                              |
+| [`float`](class_float.md)                       | [`minf`](class_@globalscope.md#class_@globalscope_method_minf) ( a: [`float`](class_float.md), b: [`float`](class_float.md) )                                                                                                                                                                                                                                                                     |
+| [`int`](class_int.md)                           | [`mini`](class_@globalscope.md#class_@globalscope_method_mini) ( a: [`int`](class_int.md), b: [`int`](class_int.md) )                                                                                                                                                                                                                                                                             |
+| [`float`](class_float.md)                       | [`move_toward`](class_@globalscope.md#class_@globalscope_method_move_toward) ( from: [`float`](class_float.md), to: [`float`](class_float.md), delta: [`float`](class_float.md) )                                                                                                                                                                                                                 |
+| [`int`](class_int.md)                           | [`nearest_po2`](class_@globalscope.md#class_@globalscope_method_nearest_po2) ( value: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)                       | [`pingpong`](class_@globalscope.md#class_@globalscope_method_pingpong) ( value: [`float`](class_float.md), length: [`float`](class_float.md) )                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                           | [`posmod`](class_@globalscope.md#class_@globalscope_method_posmod) ( x: [`int`](class_int.md), y: [`int`](class_int.md) )                                                                                                                                                                                                                                                                         |
+| [`float`](class_float.md)                       | [`pow`](class_@globalscope.md#class_@globalscope_method_pow) ( base: [`float`](class_float.md), exp: [`float`](class_float.md) )                                                                                                                                                                                                                                                                  |
+| `void`                                          | [`print`](class_@globalscope.md#class_@globalscope_method_print) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                          |
+| `void`                                          | [`print_rich`](class_@globalscope.md#class_@globalscope_method_print_rich) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                |
+| `void`                                          | [`print_verbose`](class_@globalscope.md#class_@globalscope_method_print_verbose) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                          |
+| `void`                                          | [`printerr`](class_@globalscope.md#class_@globalscope_method_printerr) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                    |
+| `void`                                          | [`printraw`](class_@globalscope.md#class_@globalscope_method_printraw) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                    |
+| `void`                                          | [`prints`](class_@globalscope.md#class_@globalscope_method_prints) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                        |
+| `void`                                          | [`printt`](class_@globalscope.md#class_@globalscope_method_printt) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                        |
+| `void`                                          | [`push_error`](class_@globalscope.md#class_@globalscope_method_push_error) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                |
+| `void`                                          | [`push_warning`](class_@globalscope.md#class_@globalscope_method_push_warning) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                            |
+| [`float`](class_float.md)                       | [`rad_to_deg`](class_@globalscope.md#class_@globalscope_method_rad_to_deg) ( rad: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                     |
+| [`PackedInt64Array`](class_packedint64array.md) | [`rand_from_seed`](class_@globalscope.md#class_@globalscope_method_rand_from_seed) ( seed: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                |
+| [`float`](class_float.md)                       | [`randf`](class_@globalscope.md#class_@globalscope_method_randf) ( )                                                                                                                                                                                                                                                                                                                              |
+| [`float`](class_float.md)                       | [`randf_range`](class_@globalscope.md#class_@globalscope_method_randf_range) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`randfn`](class_@globalscope.md#class_@globalscope_method_randfn) ( mean: [`float`](class_float.md), deviation: [`float`](class_float.md) )                                                                                                                                                                                                                                                      |
+| [`int`](class_int.md)                           | [`randi`](class_@globalscope.md#class_@globalscope_method_randi) ( )                                                                                                                                                                                                                                                                                                                              |
+| [`int`](class_int.md)                           | [`randi_range`](class_@globalscope.md#class_@globalscope_method_randi_range) ( from: [`int`](class_int.md), to: [`int`](class_int.md) )                                                                                                                                                                                                                                                           |
+| `void`                                          | [`randomize`](class_@globalscope.md#class_@globalscope_method_randomize) ( )                                                                                                                                                                                                                                                                                                                      |
+| [`float`](class_float.md)                       | [`remap`](class_@globalscope.md#class_@globalscope_method_remap) ( value: [`float`](class_float.md), istart: [`float`](class_float.md), istop: [`float`](class_float.md), ostart: [`float`](class_float.md), ostop: [`float`](class_float.md) )                                                                                                                                                   |
+| [`int`](class_int.md)                           | [`rid_allocate_id`](class_@globalscope.md#class_@globalscope_method_rid_allocate_id) ( )                                                                                                                                                                                                                                                                                                          |
+| [`RID`](class_rid.md)                           | [`rid_from_int64`](class_@globalscope.md#class_@globalscope_method_rid_from_int64) ( base: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                |
+| [`float`](class_float.md)                       | [`rotate_toward`](class_@globalscope.md#class_@globalscope_method_rotate_toward) ( from: [`float`](class_float.md), to: [`float`](class_float.md), delta: [`float`](class_float.md) )                                                                                                                                                                                                             |
+| [`Variant`](class_variant.md)                   | [`round`](class_@globalscope.md#class_@globalscope_method_round) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                             |
+| [`float`](class_float.md)                       | [`roundf`](class_@globalscope.md#class_@globalscope_method_roundf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
+| [`int`](class_int.md)                           | [`roundi`](class_@globalscope.md#class_@globalscope_method_roundi) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                               |
+| `void`                                          | [`seed`](class_@globalscope.md#class_@globalscope_method_seed) ( base: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                    |
+| [`Variant`](class_variant.md)                   | [`sign`](class_@globalscope.md#class_@globalscope_method_sign) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                               |
+| [`float`](class_float.md)                       | [`signf`](class_@globalscope.md#class_@globalscope_method_signf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                 |
+| [`int`](class_int.md)                           | [`signi`](class_@globalscope.md#class_@globalscope_method_signi) ( x: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                     |
+| [`float`](class_float.md)                       | [`sin`](class_@globalscope.md#class_@globalscope_method_sin) ( angle_rad: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                             |
+| [`float`](class_float.md)                       | [`sinh`](class_@globalscope.md#class_@globalscope_method_sinh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`smoothstep`](class_@globalscope.md#class_@globalscope_method_smoothstep) ( from: [`float`](class_float.md), to: [`float`](class_float.md), x: [`float`](class_float.md) )                                                                                                                                                                                                                       |
+| [`Variant`](class_variant.md)                   | [`snapped`](class_@globalscope.md#class_@globalscope_method_snapped) ( x: [`Variant`](class_variant.md), step: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                    |
+| [`float`](class_float.md)                       | [`snappedf`](class_@globalscope.md#class_@globalscope_method_snappedf) ( x: [`float`](class_float.md), step: [`float`](class_float.md) )                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                           | [`snappedi`](class_@globalscope.md#class_@globalscope_method_snappedi) ( x: [`float`](class_float.md), step: [`int`](class_int.md) )                                                                                                                                                                                                                                                              |
+| [`float`](class_float.md)                       | [`sqrt`](class_@globalscope.md#class_@globalscope_method_sqrt) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
+| [`int`](class_int.md)                           | [`step_decimals`](class_@globalscope.md#class_@globalscope_method_step_decimals) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                 |
+| [`String`](class_string.md)                     | [`str`](class_@globalscope.md#class_@globalscope_method_str) ( ... ) vararg[^vararg]                                                                                                                                                                                                                                                                                                              |
+| [`Variant`](class_variant.md)                   | [`str_to_var`](class_@globalscope.md#class_@globalscope_method_str_to_var) ( string: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                |
+| [`float`](class_float.md)                       | [`tan`](class_@globalscope.md#class_@globalscope_method_tan) ( angle_rad: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                             |
+| [`float`](class_float.md)                       | [`tanh`](class_@globalscope.md#class_@globalscope_method_tanh) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
+| [`Variant`](class_variant.md)                   | [`type_convert`](class_@globalscope.md#class_@globalscope_method_type_convert) ( variant: [`Variant`](class_variant.md), type: [`int`](class_int.md) )                                                                                                                                                                                                                                            |
+| [`String`](class_string.md)                     | [`type_string`](class_@globalscope.md#class_@globalscope_method_type_string) ( type: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                      |
+| [`int`](class_int.md)                           | [`typeof`](class_@globalscope.md#class_@globalscope_method_typeof) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                    |
+| [`PackedByteArray`](class_packedbytearray.md)   | [`var_to_bytes`](class_@globalscope.md#class_@globalscope_method_var_to_bytes) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                        |
+| [`PackedByteArray`](class_packedbytearray.md)   | [`var_to_bytes_with_objects`](class_@globalscope.md#class_@globalscope_method_var_to_bytes_with_objects) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                              |
+| [`String`](class_string.md)                     | [`var_to_str`](class_@globalscope.md#class_@globalscope_method_var_to_str) ( variable: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                            |
+| [`Variant`](class_variant.md)                   | [`weakref`](class_@globalscope.md#class_@globalscope_method_weakref) ( obj: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                       |
+| [`Variant`](class_variant.md)                   | [`wrap`](class_@globalscope.md#class_@globalscope_method_wrap) ( value: [`Variant`](class_variant.md), min: [`Variant`](class_variant.md), max: [`Variant`](class_variant.md) )                                                                                                                                                                                                                   |
+| [`float`](class_float.md)                       | [`wrapf`](class_@globalscope.md#class_@globalscope_method_wrapf) ( value: [`float`](class_float.md), min: [`float`](class_float.md), max: [`float`](class_float.md) )                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                           | [`wrapi`](class_@globalscope.md#class_@globalscope_method_wrapi) ( value: [`int`](class_int.md), min: [`int`](class_int.md), max: [`int`](class_int.md) )                                                                                                                                                                                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -278,13 +278,13 @@ enum **ClockDirection**: <div id="enum_@globalscope_clockdirection"></div>
 
 [ClockDirection](#enum_@globalscope_clockdirection) **CLOCKWISE** = ``0``
 
-Clockwise rotation. Used by some methods (e.g. [`Image.rotate_90`](#class_image_method_rotate_90)).
+Clockwise rotation. Used by some methods (e.g. [`Image.rotate_90`](class_image.md#class_image_method_rotate_90)).
 
 <div id="_class_@globalscope_constant_counterclockwise"></div>
 
 [ClockDirection](#enum_@globalscope_clockdirection) **COUNTERCLOCKWISE** = ``1``
 
-Counter-clockwise rotation. Used by some methods (e.g. [`Image.rotate_90`](#class_image_method_rotate_90)).
+Counter-clockwise rotation. Used by some methods (e.g. [`Image.rotate_90`](class_image.md#class_image_method_rotate_90)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1670,7 +1670,7 @@ Modifier key mask.
 
 [KeyModifierMask](#enum_@globalscope_keymodifiermask) **KEY_MASK_CMD_OR_CTRL** = ``16777216``
 
-Automatically remapped to [`KEY_META`](#class_@globalscope_constant_key_meta) on macOS and [`KEY_CTRL`](#class_@globalscope_constant_key_ctrl) on other platforms, this mask is never set in the actual events, and should be used for key mapping only.
+Automatically remapped to [`KEY_META`](class_@globalscope.md#class_@globalscope_constant_key_meta) on macOS and [`KEY_CTRL`](class_@globalscope.md#class_@globalscope_constant_key_ctrl) on other platforms, this mask is never set in the actual events, and should be used for key mapping only.
 
 <div id="_class_@globalscope_constant_key_mask_shift"></div>
 
@@ -1722,7 +1722,7 @@ enum **KeyLocation**: <div id="enum_@globalscope_keylocation"></div>
 
 Used for keys which only appear once, or when a comparison doesn't need to differentiate the `LEFT` and `RIGHT` versions.
 
-For example, when using [`InputEvent.is_match`](#class_inputevent_method_is_match), an event which has [`KEY_LOCATION_UNSPECIFIED`](#class_@globalscope_constant_key_location_unspecified) will match any [KeyLocation](#enum_@globalscope_keylocation) on the passed event.
+For example, when using [`InputEvent.is_match`](class_inputevent.md#class_inputevent_method_is_match), an event which has [`KEY_LOCATION_UNSPECIFIED`](class_@globalscope.md#class_@globalscope_constant_key_location_unspecified) will match any [KeyLocation](#enum_@globalscope_keylocation) on the passed event.
 
 <div id="_class_@globalscope_constant_key_location_left"></div>
 
@@ -2074,7 +2074,7 @@ enum **MIDIMessage**: <div id="enum_@globalscope_midimessage"></div>
 
 [MIDIMessage](#enum_@globalscope_midimessage) **MIDI_MESSAGE_NONE** = ``0``
 
-Does not correspond to any MIDI message. This is the default value of [`InputEventMIDI.message`](#class_inputeventmidi_property_message).
+Does not correspond to any MIDI message. This is the default value of [`InputEventMIDI.message`](class_inputeventmidi.md#class_inputeventmidi_property_message).
 
 <div id="_class_@globalscope_constant_midi_message_note_off"></div>
 
@@ -2082,7 +2082,7 @@ Does not correspond to any MIDI message. This is the default value of [`InputEve
 
 MIDI message sent when a note is released.
 
- **Note:** Not all MIDI devices send this message; some may send [`MIDI_MESSAGE_NOTE_ON`](#class_@globalscope_constant_midi_message_note_on) with [`InputEventMIDI.velocity`](#class_inputeventmidi_property_velocity) set to `0`.
+ **Note:** Not all MIDI devices send this message; some may send [`MIDI_MESSAGE_NOTE_ON`](class_@globalscope.md#class_@globalscope_constant_midi_message_note_on) with [`InputEventMIDI.velocity`](class_inputeventmidi.md#class_inputeventmidi_property_velocity) set to `0`.
 
 <div id="_class_@globalscope_constant_midi_message_note_on"></div>
 
@@ -2112,7 +2112,7 @@ MIDI message sent when the MIDI device changes its current instrument (also call
 
 [MIDIMessage](#enum_@globalscope_midimessage) **MIDI_MESSAGE_CHANNEL_PRESSURE** = ``13``
 
-MIDI message sent to indicate a change in pressure for the whole channel. Some MIDI devices may send this instead of [`MIDI_MESSAGE_AFTERTOUCH`](#class_@globalscope_constant_midi_message_aftertouch).
+MIDI message sent to indicate a change in pressure for the whole channel. Some MIDI devices may send this instead of [`MIDI_MESSAGE_AFTERTOUCH`](class_@globalscope.md#class_@globalscope_constant_midi_message_aftertouch).
 
 <div id="_class_@globalscope_constant_midi_message_pitch_bend"></div>
 
@@ -2132,7 +2132,7 @@ MIDI system exclusive (SysEx) message. This type of message is not standardized 
 
 [MIDIMessage](#enum_@globalscope_midimessage) **MIDI_MESSAGE_QUARTER_FRAME** = ``241``
 
-MIDI message sent every quarter frame to keep connected MIDI devices synchronized. Related to [`MIDI_MESSAGE_TIMING_CLOCK`](#class_@globalscope_constant_midi_message_timing_clock).
+MIDI message sent every quarter frame to keep connected MIDI devices synchronized. Related to [`MIDI_MESSAGE_TIMING_CLOCK`](class_@globalscope.md#class_@globalscope_constant_midi_message_timing_clock).
 
  **Note:** Getting this message's data from [`InputEventMIDI`](class_inputeventmidi.md) is not implemented.
 
@@ -2162,7 +2162,7 @@ MIDI message sent to request a tuning calibration. Used on analog synthesizers. 
 
 [MIDIMessage](#enum_@globalscope_midimessage) **MIDI_MESSAGE_TIMING_CLOCK** = ``248``
 
-MIDI message sent 24 times after [`MIDI_MESSAGE_QUARTER_FRAME`](#class_@globalscope_constant_midi_message_quarter_frame), to keep connected MIDI devices synchronized.
+MIDI message sent 24 times after [`MIDI_MESSAGE_QUARTER_FRAME`](class_@globalscope.md#class_@globalscope_constant_midi_message_quarter_frame), to keep connected MIDI devices synchronized.
 
 <div id="_class_@globalscope_constant_midi_message_start"></div>
 
@@ -2206,9 +2206,9 @@ enum **Error**: <div id="enum_@globalscope_error"></div>
 
 [Error](#enum_@globalscope_error) **OK** = ``0``
 
-Methods that return [Error](#enum_@globalscope_error) return [`OK`](#class_@globalscope_constant_ok) when no error occurred.
+Methods that return [Error](#enum_@globalscope_error) return [`OK`](class_@globalscope.md#class_@globalscope_constant_ok) when no error occurred.
 
-Since [`OK`](#class_@globalscope_constant_ok) has value 0, and all other error constants are positive integers, it can also be used in boolean checks.
+Since [`OK`](class_@globalscope.md#class_@globalscope_constant_ok) has value 0, and all other error constants are positive integers, it can also be used in boolean checks.
 
  **Example:** 
 
@@ -2555,7 +2555,7 @@ The hint string is a comma separated list of names such as `"Hello,Something,Els
 
 Hints that a [`String`](class_string.md) property can be an enumerated value to pick in a list specified via a hint string such as `"Hello,Something,Else"`.
 
-Unlike [`PROPERTY_HINT_ENUM`](#class_@globalscope_constant_property_hint_enum), a property with this hint still accepts arbitrary values and can be empty. The list of values serves to suggest possible values.
+Unlike [`PROPERTY_HINT_ENUM`](class_@globalscope.md#class_@globalscope_constant_property_hint_enum), a property with this hint still accepts arbitrary values and can be empty. The list of values serves to suggest possible values.
 
 <div id="_class_@globalscope_constant_property_hint_exp_easing"></div>
 
@@ -2567,7 +2567,7 @@ Hints that a [`float`](class_float.md) property should be edited via an exponent
 
 [PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_LINK** = ``5``
 
-Hints that a vector property should allow its components to be linked. For example, this allows [`Vector2.x`](#class_vector2_property_x) and [`Vector2.y`](#class_vector2_property_y) to be edited together.
+Hints that a vector property should allow its components to be linked. For example, this allows [`Vector2.x`](class_vector2.md#class_vector2_property_x) and [`Vector2.y`](class_vector2.md#class_vector2_property_y) to be edited together.
 
 <div id="_class_@globalscope_constant_property_hint_flags"></div>
 
@@ -2579,7 +2579,7 @@ The hint string is a comma separated list of names such as `"Bit0,Bit1,Bit2,Bit3
 
  **Note:** A flag value must be at least `1` and at most `2 ** 32 - 1`.
 
- **Note:** Unlike [`PROPERTY_HINT_ENUM`](#class_@globalscope_constant_property_hint_enum), the previous explicit value is not taken into account. For the hint `"A:16,B,C"`, A is 16, B is 2, C is 4.
+ **Note:** Unlike [`PROPERTY_HINT_ENUM`](class_@globalscope.md#class_@globalscope_constant_property_hint_enum), the previous explicit value is not taken into account. For the hint `"A:16,B,C"`, A is 16, B is 2, C is 4.
 
 <div id="_class_@globalscope_constant_property_hint_layers_2d_render"></div>
 
@@ -2675,7 +2675,7 @@ Hints that a [`String`](class_string.md) property should show a placeholder text
 
 [PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_COLOR_NO_ALPHA** = ``21``
 
-Hints that a [`Color`](class_color.md) property should be edited without affecting its transparency ([`Color.a`](#class_color_property_a) is not editable).
+Hints that a [`Color`](class_color.md) property should be edited without affecting its transparency ([`Color.a`](class_color.md#class_color_property_a) is not editable).
 
 <div id="_class_@globalscope_constant_property_hint_object_id"></div>
 
@@ -2790,13 +2790,13 @@ Hints that the hint string specifies valid node types for property of type [`Nod
 
 [PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_SAVE_FILE** = ``27``
 
-Hints that a [`String`](class_string.md) property is a path to a file. Editing it will show a file dialog for picking the path for the file to be saved at. The dialog has access to the project's directory. The hint string can be a set of filters with wildcards like `"*.png,*.jpg"`. See also [`FileDialog.filters`](#class_filedialog_property_filters).
+Hints that a [`String`](class_string.md) property is a path to a file. Editing it will show a file dialog for picking the path for the file to be saved at. The dialog has access to the project's directory. The hint string can be a set of filters with wildcards like `"*.png,*.jpg"`. See also [`FileDialog.filters`](class_filedialog.md#class_filedialog_property_filters).
 
 <div id="_class_@globalscope_constant_property_hint_global_save_file"></div>
 
 [PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_GLOBAL_SAVE_FILE** = ``28``
 
-Hints that a [`String`](class_string.md) property is a path to a file. Editing it will show a file dialog for picking the path for the file to be saved at. The dialog has access to the entire filesystem. The hint string can be a set of filters with wildcards like `"*.png,*.jpg"`. See also [`FileDialog.filters`](#class_filedialog_property_filters).
+Hints that a [`String`](class_string.md) property is a path to a file. Editing it will show a file dialog for picking the path for the file to be saved at. The dialog has access to the entire filesystem. The hint string can be a set of filters with wildcards like `"*.png,*.jpg"`. See also [`FileDialog.filters`](class_filedialog.md#class_filedialog_property_filters).
 
 <div id="_class_@globalscope_constant_property_hint_int_is_objectid"></div>
 
@@ -2982,13 +2982,13 @@ The property is an array.
 
 [PropertyUsageFlags](#enum_@globalscope_propertyusageflags) **PROPERTY_USAGE_ALWAYS_DUPLICATE** = ``524288``
 
-When duplicating a resource with [`Resource.duplicate`](#class_resource_method_duplicate), and this flag is set on a property of that resource, the property should always be duplicated, regardless of the `subresources` bool parameter.
+When duplicating a resource with [`Resource.duplicate`](class_resource.md#class_resource_method_duplicate), and this flag is set on a property of that resource, the property should always be duplicated, regardless of the `subresources` bool parameter.
 
 <div id="_class_@globalscope_constant_property_usage_never_duplicate"></div>
 
 [PropertyUsageFlags](#enum_@globalscope_propertyusageflags) **PROPERTY_USAGE_NEVER_DUPLICATE** = ``1048576``
 
-When duplicating a resource with [`Resource.duplicate`](#class_resource_method_duplicate), and this flag is set on a property of that resource, the property should never be duplicated, regardless of the `subresources` bool parameter.
+When duplicating a resource with [`Resource.duplicate`](class_resource.md#class_resource_method_duplicate), and this flag is set on a property of that resource, the property should never be duplicated, regardless of the `subresources` bool parameter.
 
 <div id="_class_@globalscope_constant_property_usage_high_end_gfx"></div>
 
@@ -3106,7 +3106,7 @@ Flag for a static method.
 
 [MethodFlags](#enum_@globalscope_methodflags) **METHOD_FLAG_OBJECT_CORE** = ``64``
 
-Used internally. Allows to not dump core virtual methods (such as [`Object._notification`](#class_object_private_method__notification)) to the JSON API.
+Used internally. Allows to not dump core virtual methods (such as [`Object._notification`](class_object.md#class_object_private_method__notification)) to the JSON API.
 
 <div id="_class_@globalscope_constant_method_flags_default"></div>
 
@@ -3939,7 +3939,7 @@ Returns the absolute value of a [`Variant`](class_variant.md) parameter `x` (i.e
     # f is (7, 8, 9)
 ```
 
- **Note:** For better type safety, use [`absf`](#class_@globalscope_method_absf), [`absi`](#class_@globalscope_method_absi), [`Vector2.abs`](#class_vector2_method_abs), [`Vector2i.abs`](#class_vector2i_method_abs), [`Vector3.abs`](#class_vector3_method_abs), [`Vector3i.abs`](#class_vector3i_method_abs), [`Vector4.abs`](#class_vector4_method_abs), or [`Vector4i.abs`](#class_vector4i_method_abs).
+ **Note:** For better type safety, use [`absf`](class_@globalscope.md#class_@globalscope_method_absf), [`absi`](class_@globalscope.md#class_@globalscope_method_absi), [`Vector2.abs`](class_vector2.md#class_vector2_method_abs), [`Vector2i.abs`](class_vector2i.md#class_vector2i_method_abs), [`Vector3.abs`](class_vector3.md#class_vector3_method_abs), [`Vector3i.abs`](class_vector3i.md#class_vector3i_method_abs), [`Vector4.abs`](class_vector4.md#class_vector4_method_abs), or [`Vector4i.abs`](class_vector4i.md#class_vector4i_method_abs).
 
 
 
@@ -3987,7 +3987,7 @@ Returns the absolute value of int parameter `x` (i.e. positive value).
 
 [`float`](class_float.md) **acos** ( x: [`float`](class_float.md) )<div id="class_@globalscope_method_acos"></div>
 
-Returns the arc cosine of `x` in radians. Use to get the angle of cosine `x`. `x` will be clamped between `-1.0` and `1.0` (inclusive), in order to prevent [`acos`](#class_@globalscope_method_acos) from returning [`@GDScript.NAN`](#class_@gdscript_constant_nan).
+Returns the arc cosine of `x` in radians. Use to get the angle of cosine `x`. `x` will be clamped between `-1.0` and `1.0` (inclusive), in order to prevent [`acos`](class_@globalscope.md#class_@globalscope_method_acos) from returning [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan).
 
 ```
 
@@ -4005,7 +4005,7 @@ Returns the arc cosine of `x` in radians. Use to get the angle of cosine `x`. `x
 
 [`float`](class_float.md) **acosh** ( x: [`float`](class_float.md) )<div id="class_@globalscope_method_acosh"></div>
 
-Returns the hyperbolic arc (also called inverse) cosine of `x`, returning a value in radians. Use it to get the angle from an angle's cosine in hyperbolic space if `x` is larger or equal to 1. For values of `x` lower than 1, it will return 0, in order to prevent [`acosh`](#class_@globalscope_method_acosh) from returning [`@GDScript.NAN`](#class_@gdscript_constant_nan).
+Returns the hyperbolic arc (also called inverse) cosine of `x`, returning a value in radians. Use it to get the angle from an angle's cosine in hyperbolic space if `x` is larger or equal to 1. For values of `x` lower than 1, it will return 0, in order to prevent [`acosh`](class_@globalscope.md#class_@globalscope_method_acosh) from returning [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan).
 
 ```
 
@@ -4035,7 +4035,7 @@ Returns the difference between the two angles, in the range of `[-PI, +PI]`. Whe
 
 [`float`](class_float.md) **asin** ( x: [`float`](class_float.md) )<div id="class_@globalscope_method_asin"></div>
 
-Returns the arc sine of `x` in radians. Use to get the angle of sine `x`. `x` will be clamped between `-1.0` and `1.0` (inclusive), in order to prevent [`asin`](#class_@globalscope_method_asin) from returning [`@GDScript.NAN`](#class_@gdscript_constant_nan).
+Returns the arc sine of `x` in radians. Use to get the angle of sine `x`. `x` will be clamped between `-1.0` and `1.0` (inclusive), in order to prevent [`asin`](class_@globalscope.md#class_@globalscope_method_asin) from returning [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan).
 
 ```
 
@@ -4073,7 +4073,7 @@ Returns the hyperbolic arc (also called inverse) sine of `x`, returning a value 
 
 Returns the arc tangent of `x` in radians. Use it to get the angle from an angle's tangent in trigonometry.
 
-The method cannot know in which quadrant the angle should fall. See [`atan2`](#class_@globalscope_method_atan2) if you have both `y` and `x`.
+The method cannot know in which quadrant the angle should fall. See [`atan2`](class_@globalscope.md#class_@globalscope_method_atan2) if you have both `y` and `x`.
 
 ```
 
@@ -4113,7 +4113,7 @@ Important note: The Y coordinate comes first, by convention.
 
 Returns the hyperbolic arc (also called inverse) tangent of `x`, returning a value in radians. Use it to get the angle from an angle's tangent in hyperbolic space if `x` is between -1 and 1 (non-inclusive).
 
-In mathematics, the inverse hyperbolic tangent is only defined for -1 < `x` < 1 in the real set, so values equal or lower to -1 for `x` return negative [`@GDScript.INF`](#class_@gdscript_constant_inf) and values equal or higher than 1 return positive [`@GDScript.INF`](#class_@gdscript_constant_inf) in order to prevent [`atanh`](#class_@globalscope_method_atanh) from returning [`@GDScript.NAN`](#class_@gdscript_constant_nan).
+In mathematics, the inverse hyperbolic tangent is only defined for -1 < `x` < 1 in the real set, so values equal or lower to -1 for `x` return negative [`@GDScript.INF`](class_@gdscript.md#class_@gdscript_constant_inf) and values equal or higher than 1 return positive [`@GDScript.INF`](class_@gdscript.md#class_@gdscript_constant_inf) in order to prevent [`atanh`](class_@globalscope.md#class_@globalscope_method_atanh) from returning [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan).
 
 ```
 
@@ -4156,7 +4156,7 @@ Returns the point at the given `t` on a one-dimensional [*Bézier curve*](https:
 
 Decodes a byte array back to a [`Variant`](class_variant.md) value, without decoding objects.
 
- **Note:** If you need object deserialization, see [`bytes_to_var_with_objects`](#class_@globalscope_method_bytes_to_var_with_objects).
+ **Note:** If you need object deserialization, see [`bytes_to_var_with_objects`](class_@globalscope.md#class_@globalscope_method_bytes_to_var_with_objects).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4186,9 +4186,9 @@ Rounds `x` upward (towards positive infinity), returning the smallest whole numb
     i = ceil(1.001)    # i is 2.0
 ```
 
-See also [`floor`](#class_@globalscope_method_floor), [`round`](#class_@globalscope_method_round), and [`snapped`](#class_@globalscope_method_snapped).
+See also [`floor`](class_@globalscope.md#class_@globalscope_method_floor), [`round`](class_@globalscope.md#class_@globalscope_method_round), and [`snapped`](class_@globalscope.md#class_@globalscope_method_snapped).
 
- **Note:** For better type safety, use [`ceilf`](#class_@globalscope_method_ceilf), [`ceili`](#class_@globalscope_method_ceili), [`Vector2.ceil`](#class_vector2_method_ceil), [`Vector3.ceil`](#class_vector3_method_ceil), or [`Vector4.ceil`](#class_vector4_method_ceil).
+ **Note:** For better type safety, use [`ceilf`](class_@globalscope.md#class_@globalscope_method_ceilf), [`ceili`](class_@globalscope.md#class_@globalscope_method_ceili), [`Vector2.ceil`](class_vector2.md#class_vector2_method_ceil), [`Vector3.ceil`](class_vector3.md#class_vector3_method_ceil), or [`Vector4.ceil`](class_vector4.md#class_vector4_method_ceil).
 
 
 
@@ -4202,7 +4202,7 @@ See also [`floor`](#class_@globalscope_method_floor), [`round`](#class_@globalsc
 
 Rounds `x` upward (towards positive infinity), returning the smallest whole number that is not less than `x`.
 
-A type-safe version of [`ceil`](#class_@globalscope_method_ceil), returning a [`float`](class_float.md).
+A type-safe version of [`ceil`](class_@globalscope.md#class_@globalscope_method_ceil), returning a [`float`](class_float.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4214,7 +4214,7 @@ A type-safe version of [`ceil`](#class_@globalscope_method_ceil), returning a [`
 
 Rounds `x` upward (towards positive infinity), returning the smallest whole number that is not less than `x`.
 
-A type-safe version of [`ceil`](#class_@globalscope_method_ceil), returning an [`int`](class_int.md).
+A type-safe version of [`ceil`](class_@globalscope.md#class_@globalscope_method_ceil), returning an [`int`](class_int.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4235,7 +4235,7 @@ Clamps the `value`, returning a [`Variant`](class_variant.md) not less than `min
     # b is 5.5
 ```
 
- **Note:** For better type safety, use [`clampf`](#class_@globalscope_method_clampf), [`clampi`](#class_@globalscope_method_clampi), [`Vector2.clamp`](#class_vector2_method_clamp), [`Vector2i.clamp`](#class_vector2i_method_clamp), [`Vector3.clamp`](#class_vector3_method_clamp), [`Vector3i.clamp`](#class_vector3i_method_clamp), [`Vector4.clamp`](#class_vector4_method_clamp), [`Vector4i.clamp`](#class_vector4i_method_clamp), or [`Color.clamp`](#class_color_method_clamp) (not currently supported by this method).
+ **Note:** For better type safety, use [`clampf`](class_@globalscope.md#class_@globalscope_method_clampf), [`clampi`](class_@globalscope.md#class_@globalscope_method_clampi), [`Vector2.clamp`](class_vector2.md#class_vector2_method_clamp), [`Vector2i.clamp`](class_vector2i.md#class_vector2i_method_clamp), [`Vector3.clamp`](class_vector3.md#class_vector3_method_clamp), [`Vector3i.clamp`](class_vector3i.md#class_vector3i_method_clamp), [`Vector4.clamp`](class_vector4.md#class_vector4_method_clamp), [`Vector4i.clamp`](class_vector4i.md#class_vector4i_method_clamp), or [`Color.clamp`](class_color.md#class_color_method_clamp) (not currently supported by this method).
 
  **Note:** When using this on vectors it will *not* perform component-wise clamping, and will pick `min` if `value < min` or `max` if `value > max`. To perform component-wise clamping use the methods listed above.
 
@@ -4337,7 +4337,7 @@ Cubic interpolates between two values by the factor defined in `weight` with `pr
 
 [`float`](class_float.md) **cubic_interpolate_angle** ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md) )<div id="class_@globalscope_method_cubic_interpolate_angle"></div>
 
-Cubic interpolates between two rotation values with shortest path by the factor defined in `weight` with `pre` and `post` values. See also [`lerp_angle`](#class_@globalscope_method_lerp_angle).
+Cubic interpolates between two rotation values with shortest path by the factor defined in `weight` with `pre` and `post` values. See also [`lerp_angle`](class_@globalscope.md#class_@globalscope_method_lerp_angle).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4347,9 +4347,9 @@ Cubic interpolates between two rotation values with shortest path by the factor 
 
 [`float`](class_float.md) **cubic_interpolate_angle_in_time** ( from: [`float`](class_float.md), to: [`float`](class_float.md), pre: [`float`](class_float.md), post: [`float`](class_float.md), weight: [`float`](class_float.md), to_t: [`float`](class_float.md), pre_t: [`float`](class_float.md), post_t: [`float`](class_float.md) )<div id="class_@globalscope_method_cubic_interpolate_angle_in_time"></div>
 
-Cubic interpolates between two rotation values with shortest path by the factor defined in `weight` with `pre` and `post` values. See also [`lerp_angle`](#class_@globalscope_method_lerp_angle).
+Cubic interpolates between two rotation values with shortest path by the factor defined in `weight` with `pre` and `post` values. See also [`lerp_angle`](class_@globalscope.md#class_@globalscope_method_lerp_angle).
 
-It can perform smoother interpolation than [`cubic_interpolate`](#class_@globalscope_method_cubic_interpolate) by the time values.
+It can perform smoother interpolation than [`cubic_interpolate`](class_@globalscope.md#class_@globalscope_method_cubic_interpolate) by the time values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4361,7 +4361,7 @@ It can perform smoother interpolation than [`cubic_interpolate`](#class_@globals
 
 Cubic interpolates between two values by the factor defined in `weight` with `pre` and `post` values.
 
-It can perform smoother interpolation than [`cubic_interpolate`](#class_@globalscope_method_cubic_interpolate) by the time values.
+It can perform smoother interpolation than [`cubic_interpolate`](class_@globalscope.md#class_@globalscope_method_cubic_interpolate) by the time values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4413,7 +4413,7 @@ Returns an "eased" value of `x` based on an easing function defined with `curve`
 
  [*ease() curve values cheatsheet*](https://raw.githubusercontent.com/godotengine/godot-docs/master/img/ease_cheatsheet.png) 
 
-See also [`smoothstep`](#class_@globalscope_method_smoothstep). If you need to perform more advanced transitions, use [`Tween.interpolate_value`](#class_tween_method_interpolate_value).
+See also [`smoothstep`](class_@globalscope.md#class_@globalscope_method_smoothstep). If you need to perform more advanced transitions, use [`Tween.interpolate_value`](class_tween.md#class_tween_method_interpolate_value).
 
 
 
@@ -4449,7 +4449,7 @@ The natural exponential function. It raises the mathematical constant *e* to the
 
  *e* has an approximate value of 2.71828, and can be obtained with `exp(1)`.
 
-For exponents to other bases use the method [`pow`](#class_@globalscope_method_pow).
+For exponents to other bases use the method [`pow`](class_@globalscope.md#class_@globalscope_method_pow).
 
 ```
 
@@ -4474,9 +4474,9 @@ Rounds `x` downward (towards negative infinity), returning the largest whole num
     a = floor(-2.99)    # a is -3.0
 ```
 
-See also [`ceil`](#class_@globalscope_method_ceil), [`round`](#class_@globalscope_method_round), and [`snapped`](#class_@globalscope_method_snapped).
+See also [`ceil`](class_@globalscope.md#class_@globalscope_method_ceil), [`round`](class_@globalscope.md#class_@globalscope_method_round), and [`snapped`](class_@globalscope.md#class_@globalscope_method_snapped).
 
- **Note:** For better type safety, use [`floorf`](#class_@globalscope_method_floorf), [`floori`](#class_@globalscope_method_floori), [`Vector2.floor`](#class_vector2_method_floor), [`Vector3.floor`](#class_vector3_method_floor), or [`Vector4.floor`](#class_vector4_method_floor).
+ **Note:** For better type safety, use [`floorf`](class_@globalscope.md#class_@globalscope_method_floorf), [`floori`](class_@globalscope.md#class_@globalscope_method_floori), [`Vector2.floor`](class_vector2.md#class_vector2_method_floor), [`Vector3.floor`](class_vector3.md#class_vector3_method_floor), or [`Vector4.floor`](class_vector4.md#class_vector4_method_floor).
 
 
 
@@ -4490,7 +4490,7 @@ See also [`ceil`](#class_@globalscope_method_ceil), [`round`](#class_@globalscop
 
 Rounds `x` downward (towards negative infinity), returning the largest whole number that is not more than `x`.
 
-A type-safe version of [`floor`](#class_@globalscope_method_floor), returning a [`float`](class_float.md).
+A type-safe version of [`floor`](class_@globalscope.md#class_@globalscope_method_floor), returning a [`float`](class_float.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4502,7 +4502,7 @@ A type-safe version of [`floor`](#class_@globalscope_method_floor), returning a 
 
 Rounds `x` downward (towards negative infinity), returning the largest whole number that is not more than `x`.
 
-A type-safe version of [`floor`](#class_@globalscope_method_floor), returning an [`int`](class_int.md).
+A type-safe version of [`floor`](class_@globalscope.md#class_@globalscope_method_floor), returning an [`int`](class_int.md).
 
  **Note:** This function is *not* the same as `int(x)`, which rounds towards 0.
 
@@ -4597,7 +4597,7 @@ Returns the integer hash of the passed `variable`.
 
 [`Object`](class_object.md) **instance_from_id** ( instance_id: [`int`](class_int.md) )<div id="class_@globalscope_method_instance_from_id"></div>
 
-Returns the [`Object`](class_object.md) that corresponds to `instance_id`. All Objects have a unique instance ID. See also [`Object.get_instance_id`](#class_object_method_get_instance_id).
+Returns the [`Object`](class_object.md) that corresponds to `instance_id`. All Objects have a unique instance ID. See also [`Object.get_instance_id`](class_object.md#class_object_method_get_instance_id).
 
 
 
@@ -4640,7 +4640,7 @@ Returns the [`Object`](class_object.md) that corresponds to `instance_id`. All O
 
 [`float`](class_float.md) **inverse_lerp** ( from: [`float`](class_float.md), to: [`float`](class_float.md), weight: [`float`](class_float.md) )<div id="class_@globalscope_method_inverse_lerp"></div>
 
-Returns an interpolation or extrapolation factor considering the range specified in `from` and `to`, and the interpolated value specified in `weight`. The returned value will be between `0.0` and `1.0` if `weight` is between `from` and `to` (inclusive). If `weight` is located outside this range, then an extrapolation factor will be returned (return value lower than `0.0` or greater than `1.0`). Use [`clamp`](#class_@globalscope_method_clamp) on the result of [`inverse_lerp`](#class_@globalscope_method_inverse_lerp) if this is not desired.
+Returns an interpolation or extrapolation factor considering the range specified in `from` and `to`, and the interpolated value specified in `weight`. The returned value will be between `0.0` and `1.0` if `weight` is between `from` and `to` (inclusive). If `weight` is located outside this range, then an extrapolation factor will be returned (return value lower than `0.0` or greater than `1.0`). Use [`clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on the result of [`inverse_lerp`](class_@globalscope.md#class_@globalscope_method_inverse_lerp) if this is not desired.
 
 ```
 
@@ -4653,7 +4653,7 @@ Returns an interpolation or extrapolation factor considering the range specified
     # ratio is now 0.75.
 ```
 
-See also [`lerp`](#class_@globalscope_method_lerp), which performs the reverse of this operation, and [`remap`](#class_@globalscope_method_remap) to map a continuous series of values to another.
+See also [`lerp`](class_@globalscope.md#class_@globalscope_method_lerp), which performs the reverse of this operation, and [`remap`](class_@globalscope.md#class_@globalscope_method_remap) to map a continuous series of values to another.
 
 
 
@@ -4679,7 +4679,7 @@ Infinity values of the same sign are considered equal.
 
 [`bool`](class_bool.md) **is_finite** ( x: [`float`](class_float.md) )<div id="class_@globalscope_method_is_finite"></div>
 
-Returns whether `x` is a finite value, i.e. it is not [`@GDScript.NAN`](#class_@gdscript_constant_nan), positive infinity, or negative infinity.
+Returns whether `x` is a finite value, i.e. it is not [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan), positive infinity, or negative infinity.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4764,7 +4764,7 @@ These are [`Variant`](class_variant.md) reference types: [`Object`](class_object
 
 Returns `true` if `x` is zero or almost zero. The comparison is done using a tolerance calculation with a small internal epsilon.
 
-This function is faster than using [`is_equal_approx`](#class_@globalscope_method_is_equal_approx) with one value as zero.
+This function is faster than using [`is_equal_approx`](class_@globalscope.md#class_@globalscope_method_is_equal_approx) with one value as zero.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4774,7 +4774,7 @@ This function is faster than using [`is_equal_approx`](#class_@globalscope_metho
 
 [`Variant`](class_variant.md) **lerp** ( from: [`Variant`](class_variant.md), to: [`Variant`](class_variant.md), weight: [`Variant`](class_variant.md) )<div id="class_@globalscope_method_lerp"></div>
 
-Linearly interpolates between two values by the factor defined in `weight`. To perform interpolation, `weight` should be between `0.0` and `1.0` (inclusive). However, values outside this range are allowed and can be used to perform *extrapolation*. If this is not desired, use [`clamp`](#class_@globalscope_method_clamp) on the result of this function.
+Linearly interpolates between two values by the factor defined in `weight`. To perform interpolation, `weight` should be between `0.0` and `1.0` (inclusive). However, values outside this range are allowed and can be used to perform *extrapolation*. If this is not desired, use [`clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on the result of this function.
 
 Both `from` and `to` must be the same type. Supported types: [`int`](class_int.md), [`float`](class_float.md), [`Vector2`](class_vector2.md), [`Vector3`](class_vector3.md), [`Vector4`](class_vector4.md), [`Color`](class_color.md), [`Quaternion`](class_quaternion.md), [`Basis`](class_basis.md).
 
@@ -4783,9 +4783,9 @@ Both `from` and `to` must be the same type. Supported types: [`int`](class_int.m
     lerp(0, 4, 0.75) # Returns 3.0
 ```
 
-See also [`inverse_lerp`](#class_@globalscope_method_inverse_lerp) which performs the reverse of this operation. To perform eased interpolation with [`lerp`](#class_@globalscope_method_lerp), combine it with [`ease`](#class_@globalscope_method_ease) or [`smoothstep`](#class_@globalscope_method_smoothstep). See also [`remap`](#class_@globalscope_method_remap) to map a continuous series of values to another.
+See also [`inverse_lerp`](class_@globalscope.md#class_@globalscope_method_inverse_lerp) which performs the reverse of this operation. To perform eased interpolation with [`lerp`](class_@globalscope.md#class_@globalscope_method_lerp), combine it with [`ease`](class_@globalscope.md#class_@globalscope_method_ease) or [`smoothstep`](class_@globalscope.md#class_@globalscope_method_smoothstep). See also [`remap`](class_@globalscope.md#class_@globalscope_method_remap) to map a continuous series of values to another.
 
- **Note:** For better type safety, use [`lerpf`](#class_@globalscope_method_lerpf), [`Vector2.lerp`](#class_vector2_method_lerp), [`Vector3.lerp`](#class_vector3_method_lerp), [`Vector4.lerp`](#class_vector4_method_lerp), [`Color.lerp`](#class_color_method_lerp), [`Quaternion.slerp`](#class_quaternion_method_slerp) or [`Basis.slerp`](#class_basis_method_slerp).
+ **Note:** For better type safety, use [`lerpf`](class_@globalscope.md#class_@globalscope_method_lerpf), [`Vector2.lerp`](class_vector2.md#class_vector2_method_lerp), [`Vector3.lerp`](class_vector3.md#class_vector3_method_lerp), [`Vector4.lerp`](class_vector4.md#class_vector4_method_lerp), [`Color.lerp`](class_color.md#class_color_method_lerp), [`Quaternion.slerp`](class_quaternion.md#class_quaternion_method_slerp) or [`Basis.slerp`](class_basis.md#class_basis_method_slerp).
 
 
 
@@ -4799,7 +4799,7 @@ See also [`inverse_lerp`](#class_@globalscope_method_inverse_lerp) which perform
 
 Linearly interpolates between two angles (in radians) by a `weight` value between 0.0 and 1.0.
 
-Similar to [`lerp`](#class_@globalscope_method_lerp), but interpolates correctly when the angles wrap around [`@GDScript.TAU`](#class_@gdscript_constant_tau). To perform eased interpolation with [`lerp_angle`](#class_@globalscope_method_lerp_angle), combine it with [`ease`](#class_@globalscope_method_ease) or [`smoothstep`](#class_@globalscope_method_smoothstep).
+Similar to [`lerp`](class_@globalscope.md#class_@globalscope_method_lerp), but interpolates correctly when the angles wrap around [`@GDScript.TAU`](class_@gdscript.md#class_@gdscript_constant_tau). To perform eased interpolation with [`lerp_angle`](class_@globalscope.md#class_@globalscope_method_lerp_angle), combine it with [`ease`](class_@globalscope.md#class_@globalscope_method_ease) or [`smoothstep`](class_@globalscope.md#class_@globalscope_method_smoothstep).
 
 ```
 
@@ -4824,14 +4824,14 @@ Similar to [`lerp`](#class_@globalscope_method_lerp), but interpolates correctly
 
 [`float`](class_float.md) **lerpf** ( from: [`float`](class_float.md), to: [`float`](class_float.md), weight: [`float`](class_float.md) )<div id="class_@globalscope_method_lerpf"></div>
 
-Linearly interpolates between two values by the factor defined in `weight`. To perform interpolation, `weight` should be between `0.0` and `1.0` (inclusive). However, values outside this range are allowed and can be used to perform *extrapolation*. If this is not desired, use [`clampf`](#class_@globalscope_method_clampf) on the result of this function.
+Linearly interpolates between two values by the factor defined in `weight`. To perform interpolation, `weight` should be between `0.0` and `1.0` (inclusive). However, values outside this range are allowed and can be used to perform *extrapolation*. If this is not desired, use [`clampf`](class_@globalscope.md#class_@globalscope_method_clampf) on the result of this function.
 
 ```
 
     lerpf(0, 4, 0.75) # Returns 3.0
 ```
 
-See also [`inverse_lerp`](#class_@globalscope_method_inverse_lerp) which performs the reverse of this operation. To perform eased interpolation with [`lerp`](#class_@globalscope_method_lerp), combine it with [`ease`](#class_@globalscope_method_ease) or [`smoothstep`](#class_@globalscope_method_smoothstep).
+See also [`inverse_lerp`](class_@globalscope.md#class_@globalscope_method_inverse_lerp) which performs the reverse of this operation. To perform eased interpolation with [`lerp`](class_@globalscope.md#class_@globalscope_method_lerp), combine it with [`ease`](class_@globalscope.md#class_@globalscope_method_ease) or [`smoothstep`](class_@globalscope.md#class_@globalscope_method_smoothstep).
 
 
 
@@ -4893,7 +4893,7 @@ Returns the maximum of the given numeric values. This function can take any numb
     max(1, 7, 3, -6, 5) # Returns 7
 ```
 
- **Note:** When using this on vectors it will *not* perform component-wise maximum, and will pick the largest value when compared using `x < y`. To perform component-wise maximum, use [`Vector2.max`](#class_vector2_method_max), [`Vector2i.max`](#class_vector2i_method_max), [`Vector3.max`](#class_vector3_method_max), [`Vector3i.max`](#class_vector3i_method_max), [`Vector4.max`](#class_vector4_method_max), and [`Vector4i.max`](#class_vector4i_method_max).
+ **Note:** When using this on vectors it will *not* perform component-wise maximum, and will pick the largest value when compared using `x < y`. To perform component-wise maximum, use [`Vector2.max`](class_vector2.md#class_vector2_method_max), [`Vector2i.max`](class_vector2i.md#class_vector2i_method_max), [`Vector3.max`](class_vector3.md#class_vector3_method_max), [`Vector3i.max`](class_vector3i.md#class_vector3i_method_max), [`Vector4.max`](class_vector4.md#class_vector4_method_max), and [`Vector4i.max`](class_vector4i.md#class_vector4i_method_max).
 
 
 
@@ -4948,7 +4948,7 @@ Returns the minimum of the given numeric values. This function can take any numb
     min(1, 7, 3, -6, 5) # Returns -6
 ```
 
- **Note:** When using this on vectors it will *not* perform component-wise minimum, and will pick the smallest value when compared using `x < y`. To perform component-wise minimum, use [`Vector2.min`](#class_vector2_method_min), [`Vector2i.min`](#class_vector2i_method_min), [`Vector3.min`](#class_vector3_method_min), [`Vector3i.min`](#class_vector3i_method_min), [`Vector4.min`](#class_vector4_method_min), and [`Vector4i.min`](#class_vector4i_method_min).
+ **Note:** When using this on vectors it will *not* perform component-wise minimum, and will pick the smallest value when compared using `x < y`. To perform component-wise minimum, use [`Vector2.min`](class_vector2.md#class_vector2_method_min), [`Vector2i.min`](class_vector2i.md#class_vector2i_method_min), [`Vector3.min`](class_vector3.md#class_vector3_method_min), [`Vector3i.min`](class_vector3i.md#class_vector3i_method_min), [`Vector4.min`](class_vector4.md#class_vector4_method_min), and [`Vector4i.min`](class_vector4i.md#class_vector4i_method_min).
 
 
 
@@ -5141,7 +5141,7 @@ Converts one or more arguments of any type to string in the best way possible an
 
 
 
- **Note:** Consider using [`push_error`](#class_@globalscope_method_push_error) and [`push_warning`](#class_@globalscope_method_push_warning) to print error and warning messages instead of [`print`](#class_@globalscope_method_print) or [`print_rich`](#class_@globalscope_method_print_rich). This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
+ **Note:** Consider using [`push_error`](class_@globalscope.md#class_@globalscope_method_push_error) and [`push_warning`](class_@globalscope.md#class_@globalscope_method_push_warning) to print error and warning messages instead of [`print`](class_@globalscope.md#class_@globalscope_method_print) or [`print_rich`](class_@globalscope.md#class_@globalscope_method_print_rich). This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
 
 
 
@@ -5179,11 +5179,11 @@ When printing to standard output, the supported subset of BBCode is converted to
 
 
 
- **Note:** Consider using [`push_error`](#class_@globalscope_method_push_error) and [`push_warning`](#class_@globalscope_method_push_warning) to print error and warning messages instead of [`print`](#class_@globalscope_method_print) or [`print_rich`](#class_@globalscope_method_print_rich). This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
+ **Note:** Consider using [`push_error`](class_@globalscope.md#class_@globalscope_method_push_error) and [`push_warning`](class_@globalscope.md#class_@globalscope_method_push_warning) to print error and warning messages instead of [`print`](class_@globalscope.md#class_@globalscope_method_print) or [`print_rich`](class_@globalscope.md#class_@globalscope_method_print_rich). This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
 
  **Note:** On Windows, only Windows 10 and later correctly displays ANSI escape codes in standard output.
 
- **Note:** Output displayed in the editor supports clickable `[url=address]text[/url]` tags. The `[url]` tag's `address` value is handled by [`OS.shell_open`](#class_os_method_shell_open) when clicked.
+ **Note:** Output displayed in the editor supports clickable `[url=address]text[/url]` tags. The `[url]` tag's `address` value is handled by [`OS.shell_open`](class_os.md#class_os_method_shell_open) when clicked.
 
 
 
@@ -5197,7 +5197,7 @@ When printing to standard output, the supported subset of BBCode is converted to
 
 `void` **print_verbose** ( ... ) vararg[^vararg]<div id="class_@globalscope_method_print_verbose"></div>
 
-If verbose mode is enabled ([`OS.is_stdout_verbose`](#class_os_method_is_stdout_verbose) returning `true`), converts one or more arguments of any type to string in the best way possible and prints them to the console.
+If verbose mode is enabled ([`OS.is_stdout_verbose`](class_os.md#class_os_method_is_stdout_verbose) returning `true`), converts one or more arguments of any type to string in the best way possible and prints them to the console.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -5235,7 +5235,7 @@ Prints one or more arguments to strings in the best way possible to standard err
 
 `void` **printraw** ( ... ) vararg[^vararg]<div id="class_@globalscope_method_printraw"></div>
 
-Prints one or more arguments to strings in the best way possible to the OS terminal. Unlike [`print`](#class_@globalscope_method_print), no newline is automatically added at the end.
+Prints one or more arguments to strings in the best way possible to the OS terminal. Unlike [`print`](class_@globalscope.md#class_@globalscope_method_print), no newline is automatically added at the end.
 
  **Note:** The OS terminal is *not* the same as the editor's Output dock. The output sent to the OS terminal can be seen when running Godot from a terminal. On Windows, this requires using the `console.exe` executable.
 
@@ -5562,7 +5562,7 @@ Returns a random signed 32-bit integer between `from` and `to` (inclusive). If `
 
 Randomizes the seed (or the internal state) of the random number generator. The current implementation uses a number based on the device's time.
 
- **Note:** This function is called automatically when the project is run. If you need to fix the seed to have consistent, reproducible results, use [`seed`](#class_@globalscope_method_seed) to initialize the random number generator.
+ **Note:** This function is called automatically when the project is run. If you need to fix the seed to have consistent, reproducible results, use [`seed`](class_@globalscope.md#class_@globalscope_method_seed) to initialize the random number generator.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -5572,7 +5572,7 @@ Randomizes the seed (or the internal state) of the random number generator. The 
 
 [`float`](class_float.md) **remap** ( value: [`float`](class_float.md), istart: [`float`](class_float.md), istop: [`float`](class_float.md), ostart: [`float`](class_float.md), ostop: [`float`](class_float.md) )<div id="class_@globalscope_method_remap"></div>
 
-Maps a `value` from range `[istart, istop]` to `[ostart, ostop]`. See also [`lerp`](#class_@globalscope_method_lerp) and [`inverse_lerp`](#class_@globalscope_method_inverse_lerp). If `value` is outside `[istart, istop]`, then the resulting value will also be outside `[ostart, ostop]`. If this is not desired, use [`clamp`](#class_@globalscope_method_clamp) on the result of this function.
+Maps a `value` from range `[istart, istop]` to `[ostart, ostop]`. See also [`lerp`](class_@globalscope.md#class_@globalscope_method_lerp) and [`inverse_lerp`](class_@globalscope.md#class_@globalscope_method_inverse_lerp). If `value` is outside `[istart, istop]`, then the resulting value will also be outside `[ostart, ostop]`. If this is not desired, use [`clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on the result of this function.
 
 ```
 
@@ -5615,7 +5615,7 @@ Creates an RID from a `base`. This is used mainly from native extensions to buil
 
 Rotates `from` toward `to` by the `delta` amount. Will not go past `to`.
 
-Similar to [`move_toward`](#class_@globalscope_method_move_toward), but interpolates correctly when the angles wrap around [`@GDScript.TAU`](#class_@gdscript_constant_tau).
+Similar to [`move_toward`](class_@globalscope.md#class_@globalscope_method_move_toward), but interpolates correctly when the angles wrap around [`@GDScript.TAU`](class_@gdscript.md#class_@gdscript_constant_tau).
 
 If `delta` is negative, this function will rotate away from `to`, toward the opposite angle, and will not go past the opposite angle.
 
@@ -5636,9 +5636,9 @@ Rounds `x` to the nearest whole number, with halfway cases rounded away from 0. 
     round(2.6) # Returns 3
 ```
 
-See also [`floor`](#class_@globalscope_method_floor), [`ceil`](#class_@globalscope_method_ceil), and [`snapped`](#class_@globalscope_method_snapped).
+See also [`floor`](class_@globalscope.md#class_@globalscope_method_floor), [`ceil`](class_@globalscope.md#class_@globalscope_method_ceil), and [`snapped`](class_@globalscope.md#class_@globalscope_method_snapped).
 
- **Note:** For better type safety, use [`roundf`](#class_@globalscope_method_roundf), [`roundi`](#class_@globalscope_method_roundi), [`Vector2.round`](#class_vector2_method_round), [`Vector3.round`](#class_vector3_method_round), or [`Vector4.round`](#class_vector4_method_round).
+ **Note:** For better type safety, use [`roundf`](class_@globalscope.md#class_@globalscope_method_roundf), [`roundi`](class_@globalscope.md#class_@globalscope_method_roundi), [`Vector2.round`](class_vector2.md#class_vector2_method_round), [`Vector3.round`](class_vector3.md#class_vector3_method_round), or [`Vector4.round`](class_vector4.md#class_vector4_method_round).
 
 
 
@@ -5652,7 +5652,7 @@ See also [`floor`](#class_@globalscope_method_floor), [`ceil`](#class_@globalsco
 
 Rounds `x` to the nearest whole number, with halfway cases rounded away from 0.
 
-A type-safe version of [`round`](#class_@globalscope_method_round), returning a [`float`](class_float.md).
+A type-safe version of [`round`](class_@globalscope.md#class_@globalscope_method_round), returning a [`float`](class_float.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -5664,7 +5664,7 @@ A type-safe version of [`round`](#class_@globalscope_method_round), returning a 
 
 Rounds `x` to the nearest whole number, with halfway cases rounded away from 0.
 
-A type-safe version of [`round`](#class_@globalscope_method_round), returning an [`int`](class_int.md).
+A type-safe version of [`round`](class_@globalscope.md#class_@globalscope_method_round), returning an [`int`](class_int.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -5726,7 +5726,7 @@ Supported types: [`int`](class_int.md), [`float`](class_float.md), [`Vector2`](c
     sign(Vector3(-6.0, 0.0, 6.0)) # Returns (-1, 0, 1)
 ```
 
- **Note:** For better type safety, use [`signf`](#class_@globalscope_method_signf), [`signi`](#class_@globalscope_method_signi), [`Vector2.sign`](#class_vector2_method_sign), [`Vector2i.sign`](#class_vector2i_method_sign), [`Vector3.sign`](#class_vector3_method_sign), [`Vector3i.sign`](#class_vector3i_method_sign), [`Vector4.sign`](#class_vector4_method_sign), or [`Vector4i.sign`](#class_vector4i_method_sign).
+ **Note:** For better type safety, use [`signf`](class_@globalscope.md#class_@globalscope_method_signf), [`signi`](class_@globalscope.md#class_@globalscope_method_signi), [`Vector2.sign`](class_vector2.md#class_vector2_method_sign), [`Vector2i.sign`](class_vector2i.md#class_vector2i_method_sign), [`Vector3.sign`](class_vector3.md#class_vector3_method_sign), [`Vector3i.sign`](class_vector3i.md#class_vector3i_method_sign), [`Vector4.sign`](class_vector4.md#class_vector4_method_sign), or [`Vector4i.sign`](class_vector4i.md#class_vector4i_method_sign).
 
 
 
@@ -5827,7 +5827,7 @@ This S-shaped curve is the cubic Hermite interpolator, given by `f(y) = 3*y^2 - 
     smoothstep(0, 2, 2.0) # Returns 1.0
 ```
 
-Compared to [`ease`](#class_@globalscope_method_ease) with a curve value of `-1.6521`, [`smoothstep`](#class_@globalscope_method_smoothstep) returns the smoothest possible curve with no sudden changes in the derivative. If you need to perform more advanced transitions, use [`Tween`](class_tween.md) or [`AnimationPlayer`](class_animationplayer.md).
+Compared to [`ease`](class_@globalscope.md#class_@globalscope_method_ease) with a curve value of `-1.6521`, [`smoothstep`](class_@globalscope.md#class_@globalscope_method_smoothstep) returns the smoothest possible curve with no sudden changes in the derivative. If you need to perform more advanced transitions, use [`Tween`](class_tween.md) or [`AnimationPlayer`](class_animationplayer.md).
 
  [*Comparison between smoothstep() and ease(x, -1.6521) return values*](https://raw.githubusercontent.com/godotengine/godot-docs/master/img/smoothstep_ease_comparison.png) 
 
@@ -5853,9 +5853,9 @@ The returned value is the same type of [`Variant`](class_variant.md) as `step`. 
     snapped(Vector2(34, 70), Vector2(8, 8))  # Returns (32, 72)
 ```
 
-See also [`ceil`](#class_@globalscope_method_ceil), [`floor`](#class_@globalscope_method_floor), and [`round`](#class_@globalscope_method_round).
+See also [`ceil`](class_@globalscope.md#class_@globalscope_method_ceil), [`floor`](class_@globalscope.md#class_@globalscope_method_floor), and [`round`](class_@globalscope.md#class_@globalscope_method_round).
 
- **Note:** For better type safety, use [`snappedf`](#class_@globalscope_method_snappedf), [`snappedi`](#class_@globalscope_method_snappedi), [`Vector2.snapped`](#class_vector2_method_snapped), [`Vector2i.snapped`](#class_vector2i_method_snapped), [`Vector3.snapped`](#class_vector3_method_snapped), [`Vector3i.snapped`](#class_vector3i_method_snapped), [`Vector4.snapped`](#class_vector4_method_snapped), or [`Vector4i.snapped`](#class_vector4i_method_snapped).
+ **Note:** For better type safety, use [`snappedf`](class_@globalscope.md#class_@globalscope_method_snappedf), [`snappedi`](class_@globalscope.md#class_@globalscope_method_snappedi), [`Vector2.snapped`](class_vector2.md#class_vector2_method_snapped), [`Vector2i.snapped`](class_vector2i.md#class_vector2i_method_snapped), [`Vector3.snapped`](class_vector3.md#class_vector3_method_snapped), [`Vector3i.snapped`](class_vector3i.md#class_vector3i_method_snapped), [`Vector4.snapped`](class_vector4.md#class_vector4_method_snapped), or [`Vector4i.snapped`](class_vector4i.md#class_vector4i_method_snapped).
 
 
 
@@ -5869,7 +5869,7 @@ See also [`ceil`](#class_@globalscope_method_ceil), [`floor`](#class_@globalscop
 
 Returns the multiple of `step` that is the closest to `x`. This can also be used to round a floating-point number to an arbitrary number of decimals.
 
-A type-safe version of [`snapped`](#class_@globalscope_method_snapped), returning a [`float`](class_float.md).
+A type-safe version of [`snapped`](class_@globalscope.md#class_@globalscope_method_snapped), returning a [`float`](class_float.md).
 
 ```
 
@@ -5889,7 +5889,7 @@ A type-safe version of [`snapped`](#class_@globalscope_method_snapped), returnin
 
 Returns the multiple of `step` that is the closest to `x`.
 
-A type-safe version of [`snapped`](#class_@globalscope_method_snapped), returning an [`int`](class_int.md).
+A type-safe version of [`snapped`](class_@globalscope.md#class_@globalscope_method_snapped), returning an [`int`](class_int.md).
 
 ```
 
@@ -5967,7 +5967,7 @@ Converts one or more arguments of any [`Variant`](class_variant.md) type to a [`
 
 [`Variant`](class_variant.md) **str_to_var** ( string: [`String`](class_string.md) )<div id="class_@globalscope_method_str_to_var"></div>
 
-Converts a formatted `string` that was returned by [`var_to_str`](#class_@globalscope_method_var_to_str) to the original [`Variant`](class_variant.md).
+Converts a formatted `string` that was returned by [`var_to_str`](class_@globalscope.md#class_@globalscope_method_var_to_str) to the original [`Variant`](class_variant.md).
 
 
 
@@ -6036,7 +6036,7 @@ Returns the hyperbolic tangent of `x`.
 
 Converts the given `variant` to the given `type`, using the [Variant.Type](#enum_@globalscope_variant.type) values. This method is generous with how it handles types, it can automatically convert between array types, convert numeric [`String`](class_string.md) s to [`int`](class_int.md), and converting most things to [`String`](class_string.md).
 
-If the type conversion cannot be done, this method will return the default value for that type, for example converting [`Rect2`](class_rect2.md) to [`Vector2`](class_vector2.md) will always return [`Vector2.ZERO`](#class_vector2_constant_zero). This method will never show error messages as long as `type` is a valid Variant type.
+If the type conversion cannot be done, this method will return the default value for that type, for example converting [`Rect2`](class_rect2.md) to [`Vector2`](class_vector2.md) will always return [`Vector2.ZERO`](class_vector2.md#class_vector2_constant_zero). This method will never show error messages as long as `type` is a valid Variant type.
 
 The returned value is a [`Variant`](class_variant.md), but the data inside and its type will be the same as the requested type.
 
@@ -6068,7 +6068,7 @@ Returns a human-readable name of the given `type`, using the [Variant.Type](#enu
     print(type_string(TYPE_STRING)) # Prints "String".
 ```
 
-See also [`typeof`](#class_@globalscope_method_typeof).
+See also [`typeof`](class_@globalscope.md#class_@globalscope_method_typeof).
 
 
 
@@ -6093,7 +6093,7 @@ Returns the internal type of the given `variable`, using the [Variant.Type](#enu
         print("Unexpected result")
 ```
 
-See also [`type_string`](#class_@globalscope_method_type_string).
+See also [`type_string`](class_@globalscope.md#class_@globalscope_method_type_string).
 
 
 
@@ -6105,9 +6105,9 @@ See also [`type_string`](#class_@globalscope_method_type_string).
 
 [`PackedByteArray`](class_packedbytearray.md) **var_to_bytes** ( variable: [`Variant`](class_variant.md) )<div id="class_@globalscope_method_var_to_bytes"></div>
 
-Encodes a [`Variant`](class_variant.md) value to a byte array, without encoding objects. Deserialization can be done with [`bytes_to_var`](#class_@globalscope_method_bytes_to_var).
+Encodes a [`Variant`](class_variant.md) value to a byte array, without encoding objects. Deserialization can be done with [`bytes_to_var`](class_@globalscope.md#class_@globalscope_method_bytes_to_var).
 
- **Note:** If you need object serialization, see [`var_to_bytes_with_objects`](#class_@globalscope_method_var_to_bytes_with_objects).
+ **Note:** If you need object serialization, see [`var_to_bytes_with_objects`](class_@globalscope.md#class_@globalscope_method_var_to_bytes_with_objects).
 
  **Note:** Encoding [`Callable`](class_callable.md) is not supported and will result in an empty value, regardless of the data.
 
@@ -6119,7 +6119,7 @@ Encodes a [`Variant`](class_variant.md) value to a byte array, without encoding 
 
 [`PackedByteArray`](class_packedbytearray.md) **var_to_bytes_with_objects** ( variable: [`Variant`](class_variant.md) )<div id="class_@globalscope_method_var_to_bytes_with_objects"></div>
 
-Encodes a [`Variant`](class_variant.md) value to a byte array. Encoding objects is allowed (and can potentially include executable code). Deserialization can be done with [`bytes_to_var_with_objects`](#class_@globalscope_method_bytes_to_var_with_objects).
+Encodes a [`Variant`](class_variant.md) value to a byte array. Encoding objects is allowed (and can potentially include executable code). Deserialization can be done with [`bytes_to_var_with_objects`](class_@globalscope.md#class_@globalscope_method_bytes_to_var_with_objects).
 
  **Note:** Encoding [`Callable`](class_callable.md) is not supported and will result in an empty value, regardless of the data.
 
@@ -6131,7 +6131,7 @@ Encodes a [`Variant`](class_variant.md) value to a byte array. Encoding objects 
 
 [`String`](class_string.md) **var_to_str** ( variable: [`Variant`](class_variant.md) )<div id="class_@globalscope_method_var_to_str"></div>
 
-Converts a [`Variant`](class_variant.md) `variable` to a formatted [`String`](class_string.md) that can then be parsed using [`str_to_var`](#class_@globalscope_method_str_to_var).
+Converts a [`Variant`](class_variant.md) `variable` to a formatted [`String`](class_string.md) that can then be parsed using [`str_to_var`](class_@globalscope.md#class_@globalscope_method_str_to_var).
 
 
 
@@ -6233,9 +6233,9 @@ Wraps the float `value` between `min` and `max`. Can be used for creating loop-a
     angle = wrapf(angle + 0.1, -PI, PI)
 ```
 
- **Note:** If `min` is `0`, this is equivalent to [`fposmod`](#class_@globalscope_method_fposmod), so prefer using that instead.
+ **Note:** If `min` is `0`, this is equivalent to [`fposmod`](class_@globalscope.md#class_@globalscope_method_fposmod), so prefer using that instead.
 
- [`wrapf`](#class_@globalscope_method_wrapf) is more flexible than using the [`fposmod`](#class_@globalscope_method_fposmod) approach by giving the user control over the minimum value.
+ [`wrapf`](class_@globalscope.md#class_@globalscope_method_wrapf) is more flexible than using the [`fposmod`](class_@globalscope.md#class_@globalscope_method_fposmod) approach by giving the user control over the minimum value.
 
 
 

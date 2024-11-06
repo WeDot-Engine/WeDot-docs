@@ -9,25 +9,25 @@
 
 **继承：** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Provides parameters for [`PhysicsDirectSpaceState2D.intersect_shape`](#class_physicsdirectspacestate2d_method_intersect_shape).
+Provides parameters for [`PhysicsDirectSpaceState2D.intersect_shape`](class_physicsdirectspacestate2d.md#class_physicsdirectspacestate2d_method_intersect_shape).
 
 ## 描述
 
-By changing various properties of this object, such as the shape, you can configure the parameters for [`PhysicsDirectSpaceState2D.intersect_shape`](#class_physicsdirectspacestate2d_method_intersect_shape).
+By changing various properties of this object, such as the shape, you can configure the parameters for [`PhysicsDirectSpaceState2D.intersect_shape`](class_physicsdirectspacestate2d.md#class_physicsdirectspacestate2d_method_intersect_shape).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                       | [`collide_with_areas`](#class_physicsshapequeryparameters2d_property_collide_with_areas)   | ``false``                         |
-| [`bool`](class_bool.md)                       | [`collide_with_bodies`](#class_physicsshapequeryparameters2d_property_collide_with_bodies) | ``true``                          |
-| [`int`](class_int.md)                         | [`collision_mask`](#class_physicsshapequeryparameters2d_property_collision_mask)           | ``4294967295``                    |
-| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude`](#class_physicsshapequeryparameters2d_property_exclude)                         | ``[]``                            |
-| [`float`](class_float.md)                     | [`margin`](#class_physicsshapequeryparameters2d_property_margin)                           | ``0.0``                           |
-| [`Vector2`](class_vector2.md)                 | [`motion`](#class_physicsshapequeryparameters2d_property_motion)                           | ``Vector2(0, 0)``                 |
-| [`Resource`](class_resource.md)               | [`shape`](#class_physicsshapequeryparameters2d_property_shape)                             |                                   |
-| [`RID`](class_rid.md)                         | [`shape_rid`](#class_physicsshapequeryparameters2d_property_shape_rid)                     | ``RID()``                         |
-| [`Transform2D`](class_transform2d.md)         | [`transform`](#class_physicsshapequeryparameters2d_property_transform)                     | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
+| [`bool`](class_bool.md)                       | [`collide_with_areas`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_collide_with_areas)   | ``false``                         |
+| [`bool`](class_bool.md)                       | [`collide_with_bodies`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_collide_with_bodies) | ``true``                          |
+| [`int`](class_int.md)                         | [`collision_mask`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_collision_mask)           | ``4294967295``                    |
+| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_exclude)                         | ``[]``                            |
+| [`float`](class_float.md)                     | [`margin`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_margin)                           | ``0.0``                           |
+| [`Vector2`](class_vector2.md)                 | [`motion`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_motion)                           | ``Vector2(0, 0)``                 |
+| [`Resource`](class_resource.md)               | [`shape`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_shape)                             |                                   |
+| [`RID`](class_rid.md)                         | [`shape_rid`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_shape_rid)                     | ``RID()``                         |
+| [`Transform2D`](class_transform2d.md)         | [`transform`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_transform)                     | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -81,7 +81,7 @@ The physics layers the query will detect (as a bitmask). By default, all collisi
 - `void` **set_exclude** ( value: [Array](class_array.md) [`RID`](class_rid.md) )
 - [Array](class_array.md) [`RID`](class_rid.md) **get_exclude** ( )
 
-The list of object [`RID`](class_rid.md) s that will be excluded from collisions. Use [`CollisionObject2D.get_rid`](#class_collisionobject2d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject2D`](class_collisionobject2d.md)-derived node.
+The list of object [`RID`](class_rid.md) s that will be excluded from collisions. Use [`CollisionObject2D.get_rid`](class_collisionobject2d.md#class_collisionobject2d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject2D`](class_collisionobject2d.md)-derived node.
 
  **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then assign it to the property again.
 
@@ -122,7 +122,7 @@ The motion of the shape being queried for.
 - `void` **set_shape** ( value: [`Resource`](class_resource.md) )
 - [`Resource`](class_resource.md) **get_shape** ( )
 
-The [`Shape2D`](class_shape2d.md) that will be used for collision/intersection queries. This stores the actual reference which avoids the shape to be released while being used for queries, so always prefer using this over [`shape_rid`](#class_physicsshapequeryparameters2d_property_shape_rid).
+The [`Shape2D`](class_shape2d.md) that will be used for collision/intersection queries. This stores the actual reference which avoids the shape to be released while being used for queries, so always prefer using this over [`shape_rid`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_shape_rid).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -135,7 +135,7 @@ The [`Shape2D`](class_shape2d.md) that will be used for collision/intersection q
 - `void` **set_shape_rid** ( value: [`RID`](class_rid.md) )
 - [`RID`](class_rid.md) **get_shape_rid** ( )
 
-The queried shape's [`RID`](class_rid.md) that will be used for collision/intersection queries. Use this over [`shape`](#class_physicsshapequeryparameters2d_property_shape) if you want to optimize for performance using the Servers API:
+The queried shape's [`RID`](class_rid.md) that will be used for collision/intersection queries. Use this over [`shape`](class_physicsshapequeryparameters2d.md#class_physicsshapequeryparameters2d_property_shape) if you want to optimize for performance using the Servers API:
 
 
 

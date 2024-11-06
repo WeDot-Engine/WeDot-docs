@@ -21,45 +21,45 @@ Camera node, displays from a point of view.
 
 |||
 |:-:|:--|
-| [`CameraAttributes`](class_cameraattributes.md)   | [`attributes`](#class_camera3d_property_attributes)             |                   |
-| [`Compositor`](class_compositor.md)               | [`compositor`](#class_camera3d_property_compositor)             |                   |
-| [`int`](class_int.md)                             | [`cull_mask`](#class_camera3d_property_cull_mask)               | ``1048575``       |
-| [`bool`](class_bool.md)                           | [`current`](#class_camera3d_property_current)                   | ``false``         |
-| [DopplerTracking](#enum_camera3d_dopplertracking) | [`doppler_tracking`](#class_camera3d_property_doppler_tracking) | ``0``             |
-| [`Environment`](class_environment.md)             | [`environment`](#class_camera3d_property_environment)           |                   |
-| [`float`](class_float.md)                         | [`far`](#class_camera3d_property_far)                           | ``4000.0``        |
-| [`float`](class_float.md)                         | [`fov`](#class_camera3d_property_fov)                           | ``75.0``          |
-| [`Vector2`](class_vector2.md)                     | [`frustum_offset`](#class_camera3d_property_frustum_offset)     | ``Vector2(0, 0)`` |
-| [`float`](class_float.md)                         | [`h_offset`](#class_camera3d_property_h_offset)                 | ``0.0``           |
-| [KeepAspect](#enum_camera3d_keepaspect)           | [`keep_aspect`](#class_camera3d_property_keep_aspect)           | ``1``             |
-| [`float`](class_float.md)                         | [`near`](#class_camera3d_property_near)                         | ``0.05``          |
-| [ProjectionType](#enum_camera3d_projectiontype)   | [`projection`](#class_camera3d_property_projection)             | ``0``             |
-| [`float`](class_float.md)                         | [`size`](#class_camera3d_property_size)                         | ``1.0``           |
-| [`float`](class_float.md)                         | [`v_offset`](#class_camera3d_property_v_offset)                 | ``0.0``           |
+| [`CameraAttributes`](class_cameraattributes.md)   | [`attributes`](class_camera3d.md#class_camera3d_property_attributes)             |                   |
+| [`Compositor`](class_compositor.md)               | [`compositor`](class_camera3d.md#class_camera3d_property_compositor)             |                   |
+| [`int`](class_int.md)                             | [`cull_mask`](class_camera3d.md#class_camera3d_property_cull_mask)               | ``1048575``       |
+| [`bool`](class_bool.md)                           | [`current`](class_camera3d.md#class_camera3d_property_current)                   | ``false``         |
+| [DopplerTracking](#enum_camera3d_dopplertracking) | [`doppler_tracking`](class_camera3d.md#class_camera3d_property_doppler_tracking) | ``0``             |
+| [`Environment`](class_environment.md)             | [`environment`](class_camera3d.md#class_camera3d_property_environment)           |                   |
+| [`float`](class_float.md)                         | [`far`](class_camera3d.md#class_camera3d_property_far)                           | ``4000.0``        |
+| [`float`](class_float.md)                         | [`fov`](class_camera3d.md#class_camera3d_property_fov)                           | ``75.0``          |
+| [`Vector2`](class_vector2.md)                     | [`frustum_offset`](class_camera3d.md#class_camera3d_property_frustum_offset)     | ``Vector2(0, 0)`` |
+| [`float`](class_float.md)                         | [`h_offset`](class_camera3d.md#class_camera3d_property_h_offset)                 | ``0.0``           |
+| [KeepAspect](#enum_camera3d_keepaspect)           | [`keep_aspect`](class_camera3d.md#class_camera3d_property_keep_aspect)           | ``1``             |
+| [`float`](class_float.md)                         | [`near`](class_camera3d.md#class_camera3d_property_near)                         | ``0.05``          |
+| [ProjectionType](#enum_camera3d_projectiontype)   | [`projection`](class_camera3d.md#class_camera3d_property_projection)             | ``0``             |
+| [`float`](class_float.md)                         | [`size`](class_camera3d.md#class_camera3d_property_size)                         | ``1.0``           |
+| [`float`](class_float.md)                         | [`v_offset`](class_camera3d.md#class_camera3d_property_v_offset)                 | ``0.0``           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                            | [`clear_current`](#class_camera3d_method_clear_current) ( enable_next: [`bool`](class_bool.md) = true )                                                                                             |
-| [`Projection`](class_projection.md)               | [`get_camera_projection`](#class_camera3d_method_get_camera_projection) ( ) const[^const]                                                                                                           |
-| [`RID`](class_rid.md)                             | [`get_camera_rid`](#class_camera3d_method_get_camera_rid) ( ) const[^const]                                                                                                                         |
-| [`Transform3D`](class_transform3d.md)             | [`get_camera_transform`](#class_camera3d_method_get_camera_transform) ( ) const[^const]                                                                                                             |
-| [`bool`](class_bool.md)                           | [`get_cull_mask_value`](#class_camera3d_method_get_cull_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                           |
-| [Array](class_array.md) [`Plane`](class_plane.md) | [`get_frustum`](#class_camera3d_method_get_frustum) ( ) const[^const]                                                                                                                               |
-| [`RID`](class_rid.md)                             | [`get_pyramid_shape_rid`](#class_camera3d_method_get_pyramid_shape_rid) ( )                                                                                                                         |
-| [`bool`](class_bool.md)                           | [`is_position_behind`](#class_camera3d_method_is_position_behind) ( world_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                      |
-| [`bool`](class_bool.md)                           | [`is_position_in_frustum`](#class_camera3d_method_is_position_in_frustum) ( world_point: [`Vector3`](class_vector3.md) ) const[^const]                                                              |
-| `void`                                            | [`make_current`](#class_camera3d_method_make_current) ( )                                                                                                                                           |
-| [`Vector3`](class_vector3.md)                     | [`project_local_ray_normal`](#class_camera3d_method_project_local_ray_normal) ( screen_point: [`Vector2`](class_vector2.md) ) const[^const]                                                         |
-| [`Vector3`](class_vector3.md)                     | [`project_position`](#class_camera3d_method_project_position) ( screen_point: [`Vector2`](class_vector2.md), z_depth: [`float`](class_float.md) ) const[^const]                                     |
-| [`Vector3`](class_vector3.md)                     | [`project_ray_normal`](#class_camera3d_method_project_ray_normal) ( screen_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                     |
-| [`Vector3`](class_vector3.md)                     | [`project_ray_origin`](#class_camera3d_method_project_ray_origin) ( screen_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                     |
-| `void`                                            | [`set_cull_mask_value`](#class_camera3d_method_set_cull_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                         |
-| `void`                                            | [`set_frustum`](#class_camera3d_method_set_frustum) ( size: [`float`](class_float.md), offset: [`Vector2`](class_vector2.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) ) |
-| `void`                                            | [`set_orthogonal`](#class_camera3d_method_set_orthogonal) ( size: [`float`](class_float.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) )                                  |
-| `void`                                            | [`set_perspective`](#class_camera3d_method_set_perspective) ( fov: [`float`](class_float.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) )                                 |
-| [`Vector2`](class_vector2.md)                     | [`unproject_position`](#class_camera3d_method_unproject_position) ( world_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                      |
+| `void`                                            | [`clear_current`](class_camera3d.md#class_camera3d_method_clear_current) ( enable_next: [`bool`](class_bool.md) = true )                                                                                             |
+| [`Projection`](class_projection.md)               | [`get_camera_projection`](class_camera3d.md#class_camera3d_method_get_camera_projection) ( ) const[^const]                                                                                                           |
+| [`RID`](class_rid.md)                             | [`get_camera_rid`](class_camera3d.md#class_camera3d_method_get_camera_rid) ( ) const[^const]                                                                                                                         |
+| [`Transform3D`](class_transform3d.md)             | [`get_camera_transform`](class_camera3d.md#class_camera3d_method_get_camera_transform) ( ) const[^const]                                                                                                             |
+| [`bool`](class_bool.md)                           | [`get_cull_mask_value`](class_camera3d.md#class_camera3d_method_get_cull_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                           |
+| [Array](class_array.md) [`Plane`](class_plane.md) | [`get_frustum`](class_camera3d.md#class_camera3d_method_get_frustum) ( ) const[^const]                                                                                                                               |
+| [`RID`](class_rid.md)                             | [`get_pyramid_shape_rid`](class_camera3d.md#class_camera3d_method_get_pyramid_shape_rid) ( )                                                                                                                         |
+| [`bool`](class_bool.md)                           | [`is_position_behind`](class_camera3d.md#class_camera3d_method_is_position_behind) ( world_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                      |
+| [`bool`](class_bool.md)                           | [`is_position_in_frustum`](class_camera3d.md#class_camera3d_method_is_position_in_frustum) ( world_point: [`Vector3`](class_vector3.md) ) const[^const]                                                              |
+| `void`                                            | [`make_current`](class_camera3d.md#class_camera3d_method_make_current) ( )                                                                                                                                           |
+| [`Vector3`](class_vector3.md)                     | [`project_local_ray_normal`](class_camera3d.md#class_camera3d_method_project_local_ray_normal) ( screen_point: [`Vector2`](class_vector2.md) ) const[^const]                                                         |
+| [`Vector3`](class_vector3.md)                     | [`project_position`](class_camera3d.md#class_camera3d_method_project_position) ( screen_point: [`Vector2`](class_vector2.md), z_depth: [`float`](class_float.md) ) const[^const]                                     |
+| [`Vector3`](class_vector3.md)                     | [`project_ray_normal`](class_camera3d.md#class_camera3d_method_project_ray_normal) ( screen_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                     |
+| [`Vector3`](class_vector3.md)                     | [`project_ray_origin`](class_camera3d.md#class_camera3d_method_project_ray_origin) ( screen_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                     |
+| `void`                                            | [`set_cull_mask_value`](class_camera3d.md#class_camera3d_method_set_cull_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                         |
+| `void`                                            | [`set_frustum`](class_camera3d.md#class_camera3d_method_set_frustum) ( size: [`float`](class_float.md), offset: [`Vector2`](class_vector2.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) ) |
+| `void`                                            | [`set_orthogonal`](class_camera3d.md#class_camera3d_method_set_orthogonal) ( size: [`float`](class_float.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) )                                  |
+| `void`                                            | [`set_perspective`](class_camera3d.md#class_camera3d_method_set_perspective) ( fov: [`float`](class_float.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) )                                 |
+| [`Vector2`](class_vector2.md)                     | [`unproject_position`](class_camera3d.md#class_camera3d_method_unproject_position) ( world_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -87,7 +87,7 @@ Orthogonal projection, also known as orthographic projection. Objects remain the
 
 [ProjectionType](#enum_camera3d_projectiontype) **PROJECTION_FRUSTUM** = ``2``
 
-Frustum projection. This mode allows adjusting [`frustum_offset`](#class_camera3d_property_frustum_offset) to create "tilted frustum" effects.
+Frustum projection. This mode allows adjusting [`frustum_offset`](class_camera3d.md#class_camera3d_property_frustum_offset) to create "tilted frustum" effects.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -127,13 +127,13 @@ Disables [*Doppler effect*](https://en.wikipedia.org/wiki/Doppler_effect) simula
 
 [DopplerTracking](#enum_camera3d_dopplertracking) **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-Simulate [*Doppler effect*](https://en.wikipedia.org/wiki/Doppler_effect) by tracking positions of objects that are changed in `_process`. Changes in the relative velocity of this camera compared to those objects affect how audio is perceived (changing the audio's [`AudioStreamPlayer3D.pitch_scale`](#class_audiostreamplayer3d_property_pitch_scale)).
+Simulate [*Doppler effect*](https://en.wikipedia.org/wiki/Doppler_effect) by tracking positions of objects that are changed in `_process`. Changes in the relative velocity of this camera compared to those objects affect how audio is perceived (changing the audio's [`AudioStreamPlayer3D.pitch_scale`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_pitch_scale)).
 
 <div id="_class_camera3d_constant_doppler_tracking_physics_step"></div>
 
 [DopplerTracking](#enum_camera3d_dopplertracking) **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-Simulate [*Doppler effect*](https://en.wikipedia.org/wiki/Doppler_effect) by tracking positions of objects that are changed in `_physics_process`. Changes in the relative velocity of this camera compared to those objects affect how audio is perceived (changing the audio's [`AudioStreamPlayer3D.pitch_scale`](#class_audiostreamplayer3d_property_pitch_scale)).
+Simulate [*Doppler effect*](https://en.wikipedia.org/wiki/Doppler_effect) by tracking positions of objects that are changed in `_physics_process`. Changes in the relative velocity of this camera compared to those objects affect how audio is perceived (changing the audio's [`AudioStreamPlayer3D.pitch_scale`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_property_pitch_scale)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -174,13 +174,13 @@ The [`Compositor`](class_compositor.md) to use for this camera.
 - `void` **set_cull_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_cull_mask** ( )
 
-The culling mask that describes which [`VisualInstance3D.layers`](#class_visualinstance3d_property_layers) are rendered by this camera. By default, all 20 user-visible layers are rendered.
+The culling mask that describes which [`VisualInstance3D.layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers) are rendered by this camera. By default, all 20 user-visible layers are rendered.
 
- **Note:** Since the [`cull_mask`](#class_camera3d_property_cull_mask) allows for 32 layers to be stored in total, there are an additional 12 layers that are only used internally by the engine and aren't exposed in the editor. Setting [`cull_mask`](#class_camera3d_property_cull_mask) using a script allows you to toggle those reserved layers, which can be useful for editor plugins.
+ **Note:** Since the [`cull_mask`](class_camera3d.md#class_camera3d_property_cull_mask) allows for 32 layers to be stored in total, there are an additional 12 layers that are only used internally by the engine and aren't exposed in the editor. Setting [`cull_mask`](class_camera3d.md#class_camera3d_property_cull_mask) using a script allows you to toggle those reserved layers, which can be useful for editor plugins.
 
-To adjust [`cull_mask`](#class_camera3d_property_cull_mask) more easily using a script, use [`get_cull_mask_value`](#class_camera3d_method_get_cull_mask_value) and [`set_cull_mask_value`](#class_camera3d_method_set_cull_mask_value).
+To adjust [`cull_mask`](class_camera3d.md#class_camera3d_property_cull_mask) more easily using a script, use [`get_cull_mask_value`](class_camera3d.md#class_camera3d_method_get_cull_mask_value) and [`set_cull_mask_value`](class_camera3d.md#class_camera3d_method_set_cull_mask_value).
 
- **Note:** [`VoxelGI`](class_voxelgi.md), SDFGI and [`LightmapGI`](class_lightmapgi.md) will always take all layers into account to determine what contributes to global illumination. If this is an issue, set [`GeometryInstance3D.gi_mode`](#class_geometryinstance3d_property_gi_mode) to [`GeometryInstance3D.GI_MODE_DISABLED`](#class_geometryinstance3d_constant_gi_mode_disabled) for meshes and [`Light3D.light_bake_mode`](#class_light3d_property_light_bake_mode) to [`Light3D.BAKE_DISABLED`](#class_light3d_constant_bake_disabled) for lights to exclude them from global illumination.
+ **Note:** [`VoxelGI`](class_voxelgi.md), SDFGI and [`LightmapGI`](class_lightmapgi.md) will always take all layers into account to determine what contributes to global illumination. If this is an issue, set [`GeometryInstance3D.gi_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode) to [`GeometryInstance3D.GI_MODE_DISABLED`](class_geometryinstance3d.md#class_geometryinstance3d_constant_gi_mode_disabled) for meshes and [`Light3D.light_bake_mode`](class_light3d.md#class_light3d_property_light_bake_mode) to [`Light3D.BAKE_DISABLED`](class_light3d.md#class_light3d_constant_bake_disabled) for lights to exclude them from global illumination.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -195,7 +195,7 @@ To adjust [`cull_mask`](#class_camera3d_property_cull_mask) more easily using a 
 
 If `true`, the ancestor [`Viewport`](class_viewport.md) is currently using this camera.
 
-If multiple cameras are in the scene, one will always be made current. For example, if two **Camera3D** nodes are present in the scene and only one is current, setting one camera's [`current`](#class_camera3d_property_current) to `false` will cause the other camera to be made current.
+If multiple cameras are in the scene, one will always be made current. For example, if two **Camera3D** nodes are present in the scene and only one is current, setting one camera's [`current`](class_camera3d.md#class_camera3d_property_current) to `false` will cause the other camera to be made current.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -208,7 +208,7 @@ If multiple cameras are in the scene, one will always be made current. For examp
 - `void` **set_doppler_tracking** ( value: [DopplerTracking](#enum_camera3d_dopplertracking) )
 - [DopplerTracking](#enum_camera3d_dopplertracking) **get_doppler_tracking** ( )
 
-If not [`DOPPLER_TRACKING_DISABLED`](#class_camera3d_constant_doppler_tracking_disabled), this camera will simulate the [*Doppler effect*](https://en.wikipedia.org/wiki/Doppler_effect) for objects changed in particular `_process` methods. See [DopplerTracking](#enum_camera3d_dopplertracking) for possible values.
+If not [`DOPPLER_TRACKING_DISABLED`](class_camera3d.md#class_camera3d_constant_doppler_tracking_disabled), this camera will simulate the [*Doppler effect*](https://en.wikipedia.org/wiki/Doppler_effect) for objects changed in particular `_process` methods. See [DopplerTracking](#enum_camera3d_dopplertracking) for possible values.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -234,7 +234,7 @@ The [`Environment`](class_environment.md) to use for this camera.
 - `void` **set_far** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_far** ( )
 
-The distance to the far culling boundary for this camera relative to its local Z axis. Higher values allow the camera to see further away, while decreasing [`far`](#class_camera3d_property_far) can improve performance if it results in objects being partially or fully culled.
+The distance to the far culling boundary for this camera relative to its local Z axis. Higher values allow the camera to see further away, while decreasing [`far`](class_camera3d.md#class_camera3d_property_far) can improve performance if it results in objects being partially or fully culled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -247,7 +247,7 @@ The distance to the far culling boundary for this camera relative to its local Z
 - `void` **set_fov** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_fov** ( )
 
-The camera's field of view angle (in degrees). Only applicable in perspective mode. Since [`keep_aspect`](#class_camera3d_property_keep_aspect) locks one axis, [`fov`](#class_camera3d_property_fov) sets the other axis' field of view angle.
+The camera's field of view angle (in degrees). Only applicable in perspective mode. Since [`keep_aspect`](class_camera3d.md#class_camera3d_property_keep_aspect) locks one axis, [`fov`](class_camera3d.md#class_camera3d_property_fov) sets the other axis' field of view angle.
 
 For reference, the default vertical field of view value (`75.0`) is equivalent to a horizontal FOV of:
 
@@ -272,7 +272,7 @@ For reference, the default vertical field of view value (`75.0`) is equivalent t
 
 The camera's frustum offset. This can be changed from the default to create "tilted frustum" effects such as [*Y-shearing*](https://zdoom.org/wiki/Y-shearing).
 
- **Note:** Only effective if [`projection`](#class_camera3d_property_projection) is [`PROJECTION_FRUSTUM`](#class_camera3d_constant_projection_frustum).
+ **Note:** Only effective if [`projection`](class_camera3d.md#class_camera3d_property_projection) is [`PROJECTION_FRUSTUM`](class_camera3d.md#class_camera3d_constant_projection_frustum).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -298,7 +298,7 @@ The horizontal (X) offset of the camera viewport.
 - `void` **set_keep_aspect_mode** ( value: [KeepAspect](#enum_camera3d_keepaspect) )
 - [KeepAspect](#enum_camera3d_keepaspect) **get_keep_aspect_mode** ( )
 
-The axis to lock during [`fov`](#class_camera3d_property_fov)/[`size`](#class_camera3d_property_size) adjustments. Can be either [`KEEP_WIDTH`](#class_camera3d_constant_keep_width) or [`KEEP_HEIGHT`](#class_camera3d_constant_keep_height).
+The axis to lock during [`fov`](class_camera3d.md#class_camera3d_property_fov)/[`size`](class_camera3d.md#class_camera3d_property_size) adjustments. Can be either [`KEEP_WIDTH`](class_camera3d.md#class_camera3d_constant_keep_width) or [`KEEP_HEIGHT`](class_camera3d.md#class_camera3d_constant_keep_height).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -324,7 +324,7 @@ The distance to the near culling boundary for this camera relative to its local 
 - `void` **set_projection** ( value: [ProjectionType](#enum_camera3d_projectiontype) )
 - [ProjectionType](#enum_camera3d_projectiontype) **get_projection** ( )
 
-The camera's projection mode. In [`PROJECTION_PERSPECTIVE`](#class_camera3d_constant_projection_perspective) mode, objects' Z distance from the camera's local space scales their perceived size.
+The camera's projection mode. In [`PROJECTION_PERSPECTIVE`](class_camera3d.md#class_camera3d_constant_projection_perspective) mode, objects' Z distance from the camera's local space scales their perceived size.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -337,7 +337,7 @@ The camera's projection mode. In [`PROJECTION_PERSPECTIVE`](#class_camera3d_cons
 - `void` **set_size** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_size** ( )
 
-The camera's size in meters measured as the diameter of the width or height, depending on [`keep_aspect`](#class_camera3d_property_keep_aspect). Only applicable in orthogonal and frustum modes.
+The camera's size in meters measured as the diameter of the width or height, depending on [`keep_aspect`](class_camera3d.md#class_camera3d_property_keep_aspect). Only applicable in orthogonal and frustum modes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -392,7 +392,7 @@ Returns the camera's RID from the [`RenderingServer`](class_renderingserver.md).
 
 [`Transform3D`](class_transform3d.md) **get_camera_transform** ( ) const[^const]<div id="class_camera3d_method_get_camera_transform"></div>
 
-Returns the transform of the camera plus the vertical ([`v_offset`](#class_camera3d_property_v_offset)) and horizontal ([`h_offset`](#class_camera3d_property_h_offset)) offsets; and any other adjustments made to the position and orientation of the camera by subclassed cameras such as [`XRCamera3D`](class_xrcamera3d.md).
+Returns the transform of the camera plus the vertical ([`v_offset`](class_camera3d.md#class_camera3d_property_v_offset)) and horizontal ([`h_offset`](class_camera3d.md#class_camera3d_property_h_offset)) offsets; and any other adjustments made to the position and orientation of the camera by subclassed cameras such as [`XRCamera3D`](class_xrcamera3d.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -402,7 +402,7 @@ Returns the transform of the camera plus the vertical ([`v_offset`](#class_camer
 
 [`bool`](class_bool.md) **get_cull_mask_value** ( layer_number: [`int`](class_int.md) ) const[^const]<div id="class_camera3d_method_get_cull_mask_value"></div>
 
-Returns whether or not the specified layer of the [`cull_mask`](#class_camera3d_property_cull_mask) is enabled, given a `layer_number` between 1 and 20.
+Returns whether or not the specified layer of the [`cull_mask`](class_camera3d.md#class_camera3d_property_cull_mask) is enabled, given a `layer_number` between 1 and 20.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -412,7 +412,7 @@ Returns whether or not the specified layer of the [`cull_mask`](#class_camera3d_
 
 [Array](class_array.md) [`Plane`](class_plane.md) **get_frustum** ( ) const[^const]<div id="class_camera3d_method_get_frustum"></div>
 
-Returns the camera's frustum planes in world space units as an array of [`Plane`](class_plane.md) s in the following order: near, far, left, top, right, bottom. Not to be confused with [`frustum_offset`](#class_camera3d_property_frustum_offset).
+Returns the camera's frustum planes in world space units as an array of [`Plane`](class_plane.md) s in the following order: near, far, left, top, right, bottom. Not to be confused with [`frustum_offset`](class_camera3d.md#class_camera3d_property_frustum_offset).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -504,7 +504,7 @@ Returns a 3D position in world space, that is the result of projecting a point o
 
 `void` **set_cull_mask_value** ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )<div id="class_camera3d_method_set_cull_mask_value"></div>
 
-Based on `value`, enables or disables the specified layer in the [`cull_mask`](#class_camera3d_property_cull_mask), given a `layer_number` between 1 and 20.
+Based on `value`, enables or disables the specified layer in the [`cull_mask`](class_camera3d.md#class_camera3d_property_cull_mask), given a `layer_number` between 1 and 20.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -514,7 +514,7 @@ Based on `value`, enables or disables the specified layer in the [`cull_mask`](#
 
 `void` **set_frustum** ( size: [`float`](class_float.md), offset: [`Vector2`](class_vector2.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) )<div id="class_camera3d_method_set_frustum"></div>
 
-Sets the camera projection to frustum mode (see [`PROJECTION_FRUSTUM`](#class_camera3d_constant_projection_frustum)), by specifying a `size`, an `offset`, and the `z_near` and `z_far` clip planes in world space units. See also [`frustum_offset`](#class_camera3d_property_frustum_offset).
+Sets the camera projection to frustum mode (see [`PROJECTION_FRUSTUM`](class_camera3d.md#class_camera3d_constant_projection_frustum)), by specifying a `size`, an `offset`, and the `z_near` and `z_far` clip planes in world space units. See also [`frustum_offset`](class_camera3d.md#class_camera3d_property_frustum_offset).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -524,7 +524,7 @@ Sets the camera projection to frustum mode (see [`PROJECTION_FRUSTUM`](#class_ca
 
 `void` **set_orthogonal** ( size: [`float`](class_float.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) )<div id="class_camera3d_method_set_orthogonal"></div>
 
-Sets the camera projection to orthogonal mode (see [`PROJECTION_ORTHOGONAL`](#class_camera3d_constant_projection_orthogonal)), by specifying a `size`, and the `z_near` and `z_far` clip planes in world space units. (As a hint, 2D games often use this projection, with values specified in pixels.)
+Sets the camera projection to orthogonal mode (see [`PROJECTION_ORTHOGONAL`](class_camera3d.md#class_camera3d_constant_projection_orthogonal)), by specifying a `size`, and the `z_near` and `z_far` clip planes in world space units. (As a hint, 2D games often use this projection, with values specified in pixels.)
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -534,7 +534,7 @@ Sets the camera projection to orthogonal mode (see [`PROJECTION_ORTHOGONAL`](#cl
 
 `void` **set_perspective** ( fov: [`float`](class_float.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) )<div id="class_camera3d_method_set_perspective"></div>
 
-Sets the camera projection to perspective mode (see [`PROJECTION_PERSPECTIVE`](#class_camera3d_constant_projection_perspective)), by specifying a `fov` (field of view) angle in degrees, and the `z_near` and `z_far` clip planes in world space units.
+Sets the camera projection to perspective mode (see [`PROJECTION_PERSPECTIVE`](class_camera3d.md#class_camera3d_constant_projection_perspective)), by specifying a `fov` (field of view) angle in degrees, and the `z_near` and `z_far` clip planes in world space units.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -546,7 +546,7 @@ Sets the camera projection to perspective mode (see [`PROJECTION_PERSPECTIVE`](#
 
 Returns the 2D coordinate in the [`Viewport`](class_viewport.md) rectangle that maps to the given 3D point in world space.
 
- **Note:** When using this to position GUI elements over a 3D viewport, use [`is_position_behind`](#class_camera3d_method_is_position_behind) to prevent them from appearing if the 3D point is behind the camera:
+ **Note:** When using this to position GUI elements over a 3D viewport, use [`is_position_behind`](class_camera3d.md#class_camera3d_method_is_position_behind) to prevent them from appearing if the 3D point is behind the camera:
 
 ```
 

@@ -21,24 +21,24 @@ This [`SkeletonModification2D`](class_skeletonmodification2d.md) rotates a bone 
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md) | [`bone2d_node`](#class_skeletonmodification2dlookat_property_bone2d_node)         | ``NodePath("")`` |
-| [`int`](class_int.md)           | [`bone_index`](#class_skeletonmodification2dlookat_property_bone_index)           | ``-1``           |
-| [`NodePath`](class_nodepath.md) | [`target_nodepath`](#class_skeletonmodification2dlookat_property_target_nodepath) | ``NodePath("")`` |
+| [`NodePath`](class_nodepath.md) | [`bone2d_node`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_property_bone2d_node)         | ``NodePath("")`` |
+| [`int`](class_int.md)           | [`bone_index`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_property_bone_index)           | ``-1``           |
+| [`NodePath`](class_nodepath.md) | [`target_nodepath`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_property_target_nodepath) | ``NodePath("")`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_additional_rotation`](#class_skeletonmodification2dlookat_method_get_additional_rotation) ( ) const[^const]                           |
-| [`bool`](class_bool.md)   | [`get_constraint_angle_invert`](#class_skeletonmodification2dlookat_method_get_constraint_angle_invert) ( ) const[^const]                   |
-| [`float`](class_float.md) | [`get_constraint_angle_max`](#class_skeletonmodification2dlookat_method_get_constraint_angle_max) ( ) const[^const]                         |
-| [`float`](class_float.md) | [`get_constraint_angle_min`](#class_skeletonmodification2dlookat_method_get_constraint_angle_min) ( ) const[^const]                         |
-| [`bool`](class_bool.md)   | [`get_enable_constraint`](#class_skeletonmodification2dlookat_method_get_enable_constraint) ( ) const[^const]                               |
-| `void`                    | [`set_additional_rotation`](#class_skeletonmodification2dlookat_method_set_additional_rotation) ( rotation: [`float`](class_float.md) )     |
-| `void`                    | [`set_constraint_angle_invert`](#class_skeletonmodification2dlookat_method_set_constraint_angle_invert) ( invert: [`bool`](class_bool.md) ) |
-| `void`                    | [`set_constraint_angle_max`](#class_skeletonmodification2dlookat_method_set_constraint_angle_max) ( angle_max: [`float`](class_float.md) )  |
-| `void`                    | [`set_constraint_angle_min`](#class_skeletonmodification2dlookat_method_set_constraint_angle_min) ( angle_min: [`float`](class_float.md) )  |
-| `void`                    | [`set_enable_constraint`](#class_skeletonmodification2dlookat_method_set_enable_constraint) ( enable_constraint: [`bool`](class_bool.md) )  |
+| [`float`](class_float.md) | [`get_additional_rotation`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_get_additional_rotation) ( ) const[^const]                           |
+| [`bool`](class_bool.md)   | [`get_constraint_angle_invert`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_get_constraint_angle_invert) ( ) const[^const]                   |
+| [`float`](class_float.md) | [`get_constraint_angle_max`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_get_constraint_angle_max) ( ) const[^const]                         |
+| [`float`](class_float.md) | [`get_constraint_angle_min`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_get_constraint_angle_min) ( ) const[^const]                         |
+| [`bool`](class_bool.md)   | [`get_enable_constraint`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_get_enable_constraint) ( ) const[^const]                               |
+| `void`                    | [`set_additional_rotation`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_set_additional_rotation) ( rotation: [`float`](class_float.md) )     |
+| `void`                    | [`set_constraint_angle_invert`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_set_constraint_angle_invert) ( invert: [`bool`](class_bool.md) ) |
+| `void`                    | [`set_constraint_angle_max`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_set_constraint_angle_max) ( angle_max: [`float`](class_float.md) )  |
+| `void`                    | [`set_constraint_angle_min`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_set_constraint_angle_min) ( angle_min: [`float`](class_float.md) )  |
+| `void`                    | [`set_enable_constraint`](class_skeletonmodification2dlookat.md#class_skeletonmodification2dlookat_method_set_enable_constraint) ( enable_constraint: [`bool`](class_bool.md) )  |
 
 <!-- rst-class:: classref-section-separator -->
 

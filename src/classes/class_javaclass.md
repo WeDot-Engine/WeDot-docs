@@ -13,7 +13,7 @@ Represents an object from the Java Native Interface.
 
 ## 描述
 
-Represents an object from the Java Native Interface. It is returned from [`JavaClassWrapper.wrap`](#class_javaclasswrapper_method_wrap).
+Represents an object from the Java Native Interface. It is returned from [`JavaClassWrapper.wrap`](class_javaclasswrapper.md#class_javaclasswrapper_method_wrap).
 
  **Note:** This class only works on Android. For any other build, this class does nothing.
 

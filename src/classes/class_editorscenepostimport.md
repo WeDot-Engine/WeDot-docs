@@ -15,7 +15,7 @@ Post-processes scenes after import.
 
 Imported scenes can be automatically modified right after import by setting their **Custom Script** Import property to a `tool` script that inherits from this class.
 
-The [`_post_import`](#class_editorscenepostimport_private_method__post_import) callback receives the imported scene's root node and returns the modified version of the scene. Usage example:
+The [`_post_import`](class_editorscenepostimport.md#class_editorscenepostimport_private_method__post_import) callback receives the imported scene's root node and returns the modified version of the scene. Usage example:
 
 
 
@@ -78,8 +78,8 @@ The [`_post_import`](#class_editorscenepostimport_private_method__post_import) c
 
 |||
 |:-:|:--|
-| [`Object`](class_object.md) | [`_post_import`](#class_editorscenepostimport_private_method__post_import) ( scene: [`Node`](class_node.md) ) virtual[^virtual] |
-| [`String`](class_string.md) | [`get_source_file`](#class_editorscenepostimport_method_get_source_file) ( ) const[^const]                                      |
+| [`Object`](class_object.md) | [`_post_import`](class_editorscenepostimport.md#class_editorscenepostimport_private_method__post_import) ( scene: [`Node`](class_node.md) ) virtual[^virtual] |
+| [`String`](class_string.md) | [`get_source_file`](class_editorscenepostimport.md#class_editorscenepostimport_method_get_source_file) ( ) const[^const]                                      |
 
 <!-- rst-class:: classref-section-separator -->
 

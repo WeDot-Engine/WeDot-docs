@@ -21,53 +21,53 @@ A widget that provides an interface for selecting or modifying a color. It can o
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                              | [`can_add_swatches`](#class_colorpicker_property_can_add_swatches)       | ``true``              |
-| [`Color`](class_color.md)                            | [`color`](#class_colorpicker_property_color)                             | ``Color(1, 1, 1, 1)`` |
-| [ColorModeType](#enum_colorpicker_colormodetype)     | [`color_mode`](#class_colorpicker_property_color_mode)                   | ``0``                 |
-| [`bool`](class_bool.md)                              | [`color_modes_visible`](#class_colorpicker_property_color_modes_visible) | ``true``              |
-| [`bool`](class_bool.md)                              | [`deferred_mode`](#class_colorpicker_property_deferred_mode)             | ``false``             |
-| [`bool`](class_bool.md)                              | [`edit_alpha`](#class_colorpicker_property_edit_alpha)                   | ``true``              |
-| [`bool`](class_bool.md)                              | [`hex_visible`](#class_colorpicker_property_hex_visible)                 | ``true``              |
-| [PickerShapeType](#enum_colorpicker_pickershapetype) | [`picker_shape`](#class_colorpicker_property_picker_shape)               | ``0``                 |
-| [`bool`](class_bool.md)                              | [`presets_visible`](#class_colorpicker_property_presets_visible)         | ``true``              |
-| [`bool`](class_bool.md)                              | [`sampler_visible`](#class_colorpicker_property_sampler_visible)         | ``true``              |
-| [`bool`](class_bool.md)                              | [`sliders_visible`](#class_colorpicker_property_sliders_visible)         | ``true``              |
+| [`bool`](class_bool.md)                              | [`can_add_swatches`](class_colorpicker.md#class_colorpicker_property_can_add_swatches)       | ``true``              |
+| [`Color`](class_color.md)                            | [`color`](class_colorpicker.md#class_colorpicker_property_color)                             | ``Color(1, 1, 1, 1)`` |
+| [ColorModeType](#enum_colorpicker_colormodetype)     | [`color_mode`](class_colorpicker.md#class_colorpicker_property_color_mode)                   | ``0``                 |
+| [`bool`](class_bool.md)                              | [`color_modes_visible`](class_colorpicker.md#class_colorpicker_property_color_modes_visible) | ``true``              |
+| [`bool`](class_bool.md)                              | [`deferred_mode`](class_colorpicker.md#class_colorpicker_property_deferred_mode)             | ``false``             |
+| [`bool`](class_bool.md)                              | [`edit_alpha`](class_colorpicker.md#class_colorpicker_property_edit_alpha)                   | ``true``              |
+| [`bool`](class_bool.md)                              | [`hex_visible`](class_colorpicker.md#class_colorpicker_property_hex_visible)                 | ``true``              |
+| [PickerShapeType](#enum_colorpicker_pickershapetype) | [`picker_shape`](class_colorpicker.md#class_colorpicker_property_picker_shape)               | ``0``                 |
+| [`bool`](class_bool.md)                              | [`presets_visible`](class_colorpicker.md#class_colorpicker_property_presets_visible)         | ``true``              |
+| [`bool`](class_bool.md)                              | [`sampler_visible`](class_colorpicker.md#class_colorpicker_property_sampler_visible)         | ``true``              |
+| [`bool`](class_bool.md)                              | [`sliders_visible`](class_colorpicker.md#class_colorpicker_property_sliders_visible)         | ``true``              |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                          | [`add_preset`](#class_colorpicker_method_add_preset) ( color: [`Color`](class_color.md) )                   |
-| `void`                                          | [`add_recent_preset`](#class_colorpicker_method_add_recent_preset) ( color: [`Color`](class_color.md) )     |
-| `void`                                          | [`erase_preset`](#class_colorpicker_method_erase_preset) ( color: [`Color`](class_color.md) )               |
-| `void`                                          | [`erase_recent_preset`](#class_colorpicker_method_erase_recent_preset) ( color: [`Color`](class_color.md) ) |
-| [`PackedColorArray`](class_packedcolorarray.md) | [`get_presets`](#class_colorpicker_method_get_presets) ( ) const[^const]                                    |
-| [`PackedColorArray`](class_packedcolorarray.md) | [`get_recent_presets`](#class_colorpicker_method_get_recent_presets) ( ) const[^const]                      |
+| `void`                                          | [`add_preset`](class_colorpicker.md#class_colorpicker_method_add_preset) ( color: [`Color`](class_color.md) )                   |
+| `void`                                          | [`add_recent_preset`](class_colorpicker.md#class_colorpicker_method_add_recent_preset) ( color: [`Color`](class_color.md) )     |
+| `void`                                          | [`erase_preset`](class_colorpicker.md#class_colorpicker_method_erase_preset) ( color: [`Color`](class_color.md) )               |
+| `void`                                          | [`erase_recent_preset`](class_colorpicker.md#class_colorpicker_method_erase_recent_preset) ( color: [`Color`](class_color.md) ) |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`get_presets`](class_colorpicker.md#class_colorpicker_method_get_presets) ( ) const[^const]                                    |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`get_recent_presets`](class_colorpicker.md#class_colorpicker_method_get_recent_presets) ( ) const[^const]                      |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`center_slider_grabbers`](#class_colorpicker_theme_constant_center_slider_grabbers) | ``1``   |
-| [`int`](class_int.md)             | [`h_width`](#class_colorpicker_theme_constant_h_width)                               | ``30``  |
-| [`int`](class_int.md)             | [`label_width`](#class_colorpicker_theme_constant_label_width)                       | ``10``  |
-| [`int`](class_int.md)             | [`margin`](#class_colorpicker_theme_constant_margin)                                 | ``4``   |
-| [`int`](class_int.md)             | [`sv_height`](#class_colorpicker_theme_constant_sv_height)                           | ``256`` |
-| [`int`](class_int.md)             | [`sv_width`](#class_colorpicker_theme_constant_sv_width)                             | ``256`` |
-| [`Texture2D`](class_texture2d.md) | [`add_preset`](#class_colorpicker_theme_icon_add_preset)                             |         |
-| [`Texture2D`](class_texture2d.md) | [`bar_arrow`](#class_colorpicker_theme_icon_bar_arrow)                               |         |
-| [`Texture2D`](class_texture2d.md) | [`color_hue`](#class_colorpicker_theme_icon_color_hue)                               |         |
-| [`Texture2D`](class_texture2d.md) | [`color_okhsl_hue`](#class_colorpicker_theme_icon_color_okhsl_hue)                   |         |
-| [`Texture2D`](class_texture2d.md) | [`expanded_arrow`](#class_colorpicker_theme_icon_expanded_arrow)                     |         |
-| [`Texture2D`](class_texture2d.md) | [`folded_arrow`](#class_colorpicker_theme_icon_folded_arrow)                         |         |
-| [`Texture2D`](class_texture2d.md) | [`overbright_indicator`](#class_colorpicker_theme_icon_overbright_indicator)         |         |
-| [`Texture2D`](class_texture2d.md) | [`picker_cursor`](#class_colorpicker_theme_icon_picker_cursor)                       |         |
-| [`Texture2D`](class_texture2d.md) | [`sample_bg`](#class_colorpicker_theme_icon_sample_bg)                               |         |
-| [`Texture2D`](class_texture2d.md) | [`sample_revert`](#class_colorpicker_theme_icon_sample_revert)                       |         |
-| [`Texture2D`](class_texture2d.md) | [`screen_picker`](#class_colorpicker_theme_icon_screen_picker)                       |         |
-| [`Texture2D`](class_texture2d.md) | [`shape_circle`](#class_colorpicker_theme_icon_shape_circle)                         |         |
-| [`Texture2D`](class_texture2d.md) | [`shape_rect`](#class_colorpicker_theme_icon_shape_rect)                             |         |
-| [`Texture2D`](class_texture2d.md) | [`shape_rect_wheel`](#class_colorpicker_theme_icon_shape_rect_wheel)                 |         |
+| [`int`](class_int.md)             | [`center_slider_grabbers`](class_colorpicker.md#class_colorpicker_theme_constant_center_slider_grabbers) | ``1``   |
+| [`int`](class_int.md)             | [`h_width`](class_colorpicker.md#class_colorpicker_theme_constant_h_width)                               | ``30``  |
+| [`int`](class_int.md)             | [`label_width`](class_colorpicker.md#class_colorpicker_theme_constant_label_width)                       | ``10``  |
+| [`int`](class_int.md)             | [`margin`](class_colorpicker.md#class_colorpicker_theme_constant_margin)                                 | ``4``   |
+| [`int`](class_int.md)             | [`sv_height`](class_colorpicker.md#class_colorpicker_theme_constant_sv_height)                           | ``256`` |
+| [`int`](class_int.md)             | [`sv_width`](class_colorpicker.md#class_colorpicker_theme_constant_sv_width)                             | ``256`` |
+| [`Texture2D`](class_texture2d.md) | [`add_preset`](class_colorpicker.md#class_colorpicker_theme_icon_add_preset)                             |         |
+| [`Texture2D`](class_texture2d.md) | [`bar_arrow`](class_colorpicker.md#class_colorpicker_theme_icon_bar_arrow)                               |         |
+| [`Texture2D`](class_texture2d.md) | [`color_hue`](class_colorpicker.md#class_colorpicker_theme_icon_color_hue)                               |         |
+| [`Texture2D`](class_texture2d.md) | [`color_okhsl_hue`](class_colorpicker.md#class_colorpicker_theme_icon_color_okhsl_hue)                   |         |
+| [`Texture2D`](class_texture2d.md) | [`expanded_arrow`](class_colorpicker.md#class_colorpicker_theme_icon_expanded_arrow)                     |         |
+| [`Texture2D`](class_texture2d.md) | [`folded_arrow`](class_colorpicker.md#class_colorpicker_theme_icon_folded_arrow)                         |         |
+| [`Texture2D`](class_texture2d.md) | [`overbright_indicator`](class_colorpicker.md#class_colorpicker_theme_icon_overbright_indicator)         |         |
+| [`Texture2D`](class_texture2d.md) | [`picker_cursor`](class_colorpicker.md#class_colorpicker_theme_icon_picker_cursor)                       |         |
+| [`Texture2D`](class_texture2d.md) | [`sample_bg`](class_colorpicker.md#class_colorpicker_theme_icon_sample_bg)                               |         |
+| [`Texture2D`](class_texture2d.md) | [`sample_revert`](class_colorpicker.md#class_colorpicker_theme_icon_sample_revert)                       |         |
+| [`Texture2D`](class_texture2d.md) | [`screen_picker`](class_colorpicker.md#class_colorpicker_theme_icon_screen_picker)                       |         |
+| [`Texture2D`](class_texture2d.md) | [`shape_circle`](class_colorpicker.md#class_colorpicker_theme_icon_shape_circle)                         |         |
+| [`Texture2D`](class_texture2d.md) | [`shape_rect`](class_colorpicker.md#class_colorpicker_theme_icon_shape_rect)                             |         |
+| [`Texture2D`](class_texture2d.md) | [`shape_rect_wheel`](class_colorpicker.md#class_colorpicker_theme_icon_shape_rect_wheel)                 |         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -398,7 +398,7 @@ Returns the list of colors in the recent presets of the color picker.
 
 [`int`](class_int.md) **center_slider_grabbers** = ``1`` <div id="class_colorpicker_theme_constant_center_slider_grabbers"></div>
 
-Overrides the [`Slider.center_grabber`](#class_slider_theme_constant_center_grabber) theme property of the sliders.
+Overrides the [`Slider.center_grabber`](class_slider.md#class_slider_theme_constant_center_grabber) theme property of the sliders.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -528,7 +528,7 @@ The indicator used to signalize that the color value is outside the 0-1 range.
 
 [`Texture2D`](class_texture2d.md) **picker_cursor** <div id="class_colorpicker_theme_icon_picker_cursor"></div>
 
-The image displayed over the color box/circle (depending on the [`picker_shape`](#class_colorpicker_property_picker_shape)), marking the currently selected color.
+The image displayed over the color box/circle (depending on the [`picker_shape`](class_colorpicker.md#class_colorpicker_property_picker_shape)), marking the currently selected color.
 
 <!-- rst-class:: classref-item-separator -->
 

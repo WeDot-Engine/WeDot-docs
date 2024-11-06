@@ -21,27 +21,27 @@ Most generated noise values are in the range of `[-1, 1]`, but not always. Some 
 
 |||
 |:-:|:--|
-| [CellularDistanceFunction](#enum_fastnoiselite_cellulardistancefunction) | [`cellular_distance_function`](#class_fastnoiselite_property_cellular_distance_function)         | ``0``                |
-| [`float`](class_float.md)                                                | [`cellular_jitter`](#class_fastnoiselite_property_cellular_jitter)                               | ``1.0``              |
-| [CellularReturnType](#enum_fastnoiselite_cellularreturntype)             | [`cellular_return_type`](#class_fastnoiselite_property_cellular_return_type)                     | ``1``                |
-| [`float`](class_float.md)                                                | [`domain_warp_amplitude`](#class_fastnoiselite_property_domain_warp_amplitude)                   | ``30.0``             |
-| [`bool`](class_bool.md)                                                  | [`domain_warp_enabled`](#class_fastnoiselite_property_domain_warp_enabled)                       | ``false``            |
-| [`float`](class_float.md)                                                | [`domain_warp_fractal_gain`](#class_fastnoiselite_property_domain_warp_fractal_gain)             | ``0.5``              |
-| [`float`](class_float.md)                                                | [`domain_warp_fractal_lacunarity`](#class_fastnoiselite_property_domain_warp_fractal_lacunarity) | ``6.0``              |
-| [`int`](class_int.md)                                                    | [`domain_warp_fractal_octaves`](#class_fastnoiselite_property_domain_warp_fractal_octaves)       | ``5``                |
-| [DomainWarpFractalType](#enum_fastnoiselite_domainwarpfractaltype)       | [`domain_warp_fractal_type`](#class_fastnoiselite_property_domain_warp_fractal_type)             | ``1``                |
-| [`float`](class_float.md)                                                | [`domain_warp_frequency`](#class_fastnoiselite_property_domain_warp_frequency)                   | ``0.05``             |
-| [DomainWarpType](#enum_fastnoiselite_domainwarptype)                     | [`domain_warp_type`](#class_fastnoiselite_property_domain_warp_type)                             | ``0``                |
-| [`float`](class_float.md)                                                | [`fractal_gain`](#class_fastnoiselite_property_fractal_gain)                                     | ``0.5``              |
-| [`float`](class_float.md)                                                | [`fractal_lacunarity`](#class_fastnoiselite_property_fractal_lacunarity)                         | ``2.0``              |
-| [`int`](class_int.md)                                                    | [`fractal_octaves`](#class_fastnoiselite_property_fractal_octaves)                               | ``5``                |
-| [`float`](class_float.md)                                                | [`fractal_ping_pong_strength`](#class_fastnoiselite_property_fractal_ping_pong_strength)         | ``2.0``              |
-| [FractalType](#enum_fastnoiselite_fractaltype)                           | [`fractal_type`](#class_fastnoiselite_property_fractal_type)                                     | ``1``                |
-| [`float`](class_float.md)                                                | [`fractal_weighted_strength`](#class_fastnoiselite_property_fractal_weighted_strength)           | ``0.0``              |
-| [`float`](class_float.md)                                                | [`frequency`](#class_fastnoiselite_property_frequency)                                           | ``0.01``             |
-| [NoiseType](#enum_fastnoiselite_noisetype)                               | [`noise_type`](#class_fastnoiselite_property_noise_type)                                         | ``1``                |
-| [`Vector3`](class_vector3.md)                                            | [`offset`](#class_fastnoiselite_property_offset)                                                 | ``Vector3(0, 0, 0)`` |
-| [`int`](class_int.md)                                                    | [`seed`](#class_fastnoiselite_property_seed)                                                     | ``0``                |
+| [CellularDistanceFunction](#enum_fastnoiselite_cellulardistancefunction) | [`cellular_distance_function`](class_fastnoiselite.md#class_fastnoiselite_property_cellular_distance_function)         | ``0``                |
+| [`float`](class_float.md)                                                | [`cellular_jitter`](class_fastnoiselite.md#class_fastnoiselite_property_cellular_jitter)                               | ``1.0``              |
+| [CellularReturnType](#enum_fastnoiselite_cellularreturntype)             | [`cellular_return_type`](class_fastnoiselite.md#class_fastnoiselite_property_cellular_return_type)                     | ``1``                |
+| [`float`](class_float.md)                                                | [`domain_warp_amplitude`](class_fastnoiselite.md#class_fastnoiselite_property_domain_warp_amplitude)                   | ``30.0``             |
+| [`bool`](class_bool.md)                                                  | [`domain_warp_enabled`](class_fastnoiselite.md#class_fastnoiselite_property_domain_warp_enabled)                       | ``false``            |
+| [`float`](class_float.md)                                                | [`domain_warp_fractal_gain`](class_fastnoiselite.md#class_fastnoiselite_property_domain_warp_fractal_gain)             | ``0.5``              |
+| [`float`](class_float.md)                                                | [`domain_warp_fractal_lacunarity`](class_fastnoiselite.md#class_fastnoiselite_property_domain_warp_fractal_lacunarity) | ``6.0``              |
+| [`int`](class_int.md)                                                    | [`domain_warp_fractal_octaves`](class_fastnoiselite.md#class_fastnoiselite_property_domain_warp_fractal_octaves)       | ``5``                |
+| [DomainWarpFractalType](#enum_fastnoiselite_domainwarpfractaltype)       | [`domain_warp_fractal_type`](class_fastnoiselite.md#class_fastnoiselite_property_domain_warp_fractal_type)             | ``1``                |
+| [`float`](class_float.md)                                                | [`domain_warp_frequency`](class_fastnoiselite.md#class_fastnoiselite_property_domain_warp_frequency)                   | ``0.05``             |
+| [DomainWarpType](#enum_fastnoiselite_domainwarptype)                     | [`domain_warp_type`](class_fastnoiselite.md#class_fastnoiselite_property_domain_warp_type)                             | ``0``                |
+| [`float`](class_float.md)                                                | [`fractal_gain`](class_fastnoiselite.md#class_fastnoiselite_property_fractal_gain)                                     | ``0.5``              |
+| [`float`](class_float.md)                                                | [`fractal_lacunarity`](class_fastnoiselite.md#class_fastnoiselite_property_fractal_lacunarity)                         | ``2.0``              |
+| [`int`](class_int.md)                                                    | [`fractal_octaves`](class_fastnoiselite.md#class_fastnoiselite_property_fractal_octaves)                               | ``5``                |
+| [`float`](class_float.md)                                                | [`fractal_ping_pong_strength`](class_fastnoiselite.md#class_fastnoiselite_property_fractal_ping_pong_strength)         | ``2.0``              |
+| [FractalType](#enum_fastnoiselite_fractaltype)                           | [`fractal_type`](class_fastnoiselite.md#class_fastnoiselite_property_fractal_type)                                     | ``1``                |
+| [`float`](class_float.md)                                                | [`fractal_weighted_strength`](class_fastnoiselite.md#class_fastnoiselite_property_fractal_weighted_strength)           | ``0.0``              |
+| [`float`](class_float.md)                                                | [`frequency`](class_fastnoiselite.md#class_fastnoiselite_property_frequency)                                           | ``0.01``             |
+| [NoiseType](#enum_fastnoiselite_noisetype)                               | [`noise_type`](class_fastnoiselite.md#class_fastnoiselite_property_noise_type)                                         | ``1``                |
+| [`Vector3`](class_vector3.md)                                            | [`offset`](class_fastnoiselite.md#class_fastnoiselite_property_offset)                                                 | ``Vector3(0, 0, 0)`` |
+| [`int`](class_int.md)                                                    | [`seed`](class_fastnoiselite.md#class_fastnoiselite_property_seed)                                                     | ``0``                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -83,13 +83,13 @@ Cellular includes both Worley noise and Voronoi diagrams which creates various r
 
 [NoiseType](#enum_fastnoiselite_noisetype) **TYPE_SIMPLEX** = ``0``
 
-As opposed to [`TYPE_PERLIN`](#class_fastnoiselite_constant_type_perlin), gradients exist in a simplex lattice rather than a grid lattice, avoiding directional artifacts.
+As opposed to [`TYPE_PERLIN`](class_fastnoiselite.md#class_fastnoiselite_constant_type_perlin), gradients exist in a simplex lattice rather than a grid lattice, avoiding directional artifacts.
 
 <div id="_class_fastnoiselite_constant_type_simplex_smooth"></div>
 
 [NoiseType](#enum_fastnoiselite_noisetype) **TYPE_SIMPLEX_SMOOTH** = ``1``
 
-Modified, higher quality version of [`TYPE_SIMPLEX`](#class_fastnoiselite_constant_type_simplex), but slower.
+Modified, higher quality version of [`TYPE_SIMPLEX`](class_fastnoiselite.md#class_fastnoiselite_constant_type_simplex), but slower.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -153,7 +153,7 @@ Manhattan distance (taxicab metric) to the nearest point.
 
 [CellularDistanceFunction](#enum_fastnoiselite_cellulardistancefunction) **DISTANCE_HYBRID** = ``3``
 
-Blend of [`DISTANCE_EUCLIDEAN`](#class_fastnoiselite_constant_distance_euclidean) and [`DISTANCE_MANHATTAN`](#class_fastnoiselite_constant_distance_manhattan) to give curved cell boundaries
+Blend of [`DISTANCE_EUCLIDEAN`](class_fastnoiselite.md#class_fastnoiselite_constant_distance_euclidean) and [`DISTANCE_MANHATTAN`](class_fastnoiselite.md#class_fastnoiselite_constant_distance_manhattan) to give curved cell boundaries
 
 <!-- rst-class:: classref-item-separator -->
 

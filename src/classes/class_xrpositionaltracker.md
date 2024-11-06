@@ -25,19 +25,19 @@ The [`XRNode3D`](class_xrnode3d.md) and [`XRAnchor3D`](class_xranchor3d.md) both
 
 |||
 |:-:|:--|
-| [TrackerHand](#enum_xrpositionaltracker_trackerhand) | [`hand`](#class_xrpositionaltracker_property_hand)       | ``0``  |
-| [`String`](class_string.md)                          | [`profile`](#class_xrpositionaltracker_property_profile) | ``""`` |
+| [TrackerHand](#enum_xrpositionaltracker_trackerhand) | [`hand`](class_xrpositionaltracker.md#class_xrpositionaltracker_property_hand)       | ``0``  |
+| [`String`](class_string.md)                          | [`profile`](class_xrpositionaltracker.md#class_xrpositionaltracker_property_profile) | ``""`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_input`](#class_xrpositionaltracker_method_get_input) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                |
-| [`XRPose`](class_xrpose.md)   | [`get_pose`](#class_xrpositionaltracker_method_get_pose) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                  |
-| [`bool`](class_bool.md)       | [`has_pose`](#class_xrpositionaltracker_method_has_pose) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                  |
-| `void`                        | [`invalidate_pose`](#class_xrpositionaltracker_method_invalidate_pose) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                  |
-| `void`                        | [`set_input`](#class_xrpositionaltracker_method_set_input) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                                                                                                                                        |
-| `void`                        | [`set_pose`](#class_xrpositionaltracker_method_set_pose) ( name: [`StringName`](class_stringname.md), transform: [`Transform3D`](class_transform3d.md), linear_velocity: [`Vector3`](class_vector3.md), angular_velocity: [`Vector3`](class_vector3.md), tracking_confidence: [TrackingConfidence](#enum_xrpose_trackingconfidence) ) |
+| [`Variant`](class_variant.md) | [`get_input`](class_xrpositionaltracker.md#class_xrpositionaltracker_method_get_input) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                |
+| [`XRPose`](class_xrpose.md)   | [`get_pose`](class_xrpositionaltracker.md#class_xrpositionaltracker_method_get_pose) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                  |
+| [`bool`](class_bool.md)       | [`has_pose`](class_xrpositionaltracker.md#class_xrpositionaltracker_method_has_pose) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                  |
+| `void`                        | [`invalidate_pose`](class_xrpositionaltracker.md#class_xrpositionaltracker_method_invalidate_pose) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                  |
+| `void`                        | [`set_input`](class_xrpositionaltracker.md#class_xrpositionaltracker_method_set_input) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                                                                                                                                        |
+| `void`                        | [`set_pose`](class_xrpositionaltracker.md#class_xrpositionaltracker_method_set_pose) ( name: [`StringName`](class_stringname.md), transform: [`Transform3D`](class_transform3d.md), linear_velocity: [`Vector3`](class_vector3.md), angular_velocity: [`Vector3`](class_vector3.md), tracking_confidence: [TrackingConfidence](#enum_xrpose_trackingconfidence) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -23,18 +23,18 @@ Ogg Vorbis requires more CPU to decode than [`ResourceImporterWAV`](class_resour
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)     | [`bar_beats`](#class_resourceimporteroggvorbis_property_bar_beats)     | ``4``     |
-| [`int`](class_int.md)     | [`beat_count`](#class_resourceimporteroggvorbis_property_beat_count)   | ``0``     |
-| [`float`](class_float.md) | [`bpm`](#class_resourceimporteroggvorbis_property_bpm)                 | ``0``     |
-| [`bool`](class_bool.md)   | [`loop`](#class_resourceimporteroggvorbis_property_loop)               | ``false`` |
-| [`float`](class_float.md) | [`loop_offset`](#class_resourceimporteroggvorbis_property_loop_offset) | ``0``     |
+| [`int`](class_int.md)     | [`bar_beats`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_bar_beats)     | ``4``     |
+| [`int`](class_int.md)     | [`beat_count`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_beat_count)   | ``0``     |
+| [`float`](class_float.md) | [`bpm`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_bpm)                 | ``0``     |
+| [`bool`](class_bool.md)   | [`loop`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_loop)               | ``false`` |
+| [`float`](class_float.md) | [`loop_offset`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_loop_offset) | ``0``     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](#class_resourceimporteroggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
-| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](#class_resourceimporteroggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
+| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
+| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -48,7 +48,7 @@ Ogg Vorbis requires more CPU to decode than [`ResourceImporterWAV`](class_resour
 
 The number of bars within a single beat in the audio track. This is only relevant for music that wishes to make use of interactive music functionality (not implemented yet), not sound effects.
 
-A more convenient editor for [`bar_beats`](#class_resourceimporteroggvorbis_property_bar_beats) is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+A more convenient editor for [`bar_beats`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_bar_beats) is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -60,7 +60,7 @@ A more convenient editor for [`bar_beats`](#class_resourceimporteroggvorbis_prop
 
 The beat count of the audio track. This is only relevant for music that wishes to make use of interactive music functionality (not implemented yet), not sound effects.
 
-A more convenient editor for [`beat_count`](#class_resourceimporteroggvorbis_property_beat_count) is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+A more convenient editor for [`beat_count`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_beat_count) is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -72,7 +72,7 @@ A more convenient editor for [`beat_count`](#class_resourceimporteroggvorbis_pro
 
 The Beats Per Minute of the audio track. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality (not implemented yet), not sound effects.
 
-A more convenient editor for [`bpm`](#class_resourceimporteroggvorbis_property_bpm) is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+A more convenient editor for [`bpm`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_bpm) is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -84,7 +84,7 @@ A more convenient editor for [`bpm`](#class_resourceimporteroggvorbis_property_b
 
 If enabled, the audio will begin playing at the beginning after playback ends by reaching the end of the audio.
 
- **Note:** In [`AudioStreamPlayer`](class_audiostreamplayer.md), the [`AudioStreamPlayer.finished`](#class_audiostreamplayer_signal_finished) signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+ **Note:** In [`AudioStreamPlayer`](class_audiostreamplayer.md), the [`AudioStreamPlayer.finished`](class_audiostreamplayer.md#class_audiostreamplayer_signal_finished) signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -96,9 +96,9 @@ If enabled, the audio will begin playing at the beginning after playback ends by
 
 Determines where audio will start to loop after playback reaches the end of the audio. This can be used to only loop a part of the audio file, which is useful for some ambient sounds or music. The value is determined in seconds relative to the beginning of the audio. A value of `0.0` will loop the entire audio file.
 
-Only has an effect if [`loop`](#class_resourceimporteroggvorbis_property_loop) is `true`.
+Only has an effect if [`loop`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_loop) is `true`.
 
-A more convenient editor for [`loop_offset`](#class_resourceimporteroggvorbis_property_loop_offset) is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+A more convenient editor for [`loop_offset`](class_resourceimporteroggvorbis.md#class_resourceimporteroggvorbis_property_loop_offset) is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 <!-- rst-class:: classref-section-separator -->
 

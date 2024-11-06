@@ -19,13 +19,13 @@ A helper to handle dictionaries which look like JSONRPC documents.
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`make_notification`](#class_jsonrpc_method_make_notification) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md) )                                                    |
-| [`Dictionary`](class_dictionary.md) | [`make_request`](#class_jsonrpc_method_make_request) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                           |
-| [`Dictionary`](class_dictionary.md) | [`make_response`](#class_jsonrpc_method_make_response) ( result: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                                                              |
-| [`Dictionary`](class_dictionary.md) | [`make_response_error`](#class_jsonrpc_method_make_response_error) ( code: [`int`](class_int.md), message: [`String`](class_string.md), id: [`Variant`](class_variant.md) = null ) const[^const] |
-| [`Variant`](class_variant.md)       | [`process_action`](#class_jsonrpc_method_process_action) ( action: [`Variant`](class_variant.md), recurse: [`bool`](class_bool.md) = false )                                                     |
-| [`String`](class_string.md)         | [`process_string`](#class_jsonrpc_method_process_string) ( action: [`String`](class_string.md) )                                                                                                 |
-| `void`                              | [`set_scope`](#class_jsonrpc_method_set_scope) ( scope: [`String`](class_string.md), target: [`Object`](class_object.md) )                                                                       |
+| [`Dictionary`](class_dictionary.md) | [`make_notification`](class_jsonrpc.md#class_jsonrpc_method_make_notification) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md) )                                                    |
+| [`Dictionary`](class_dictionary.md) | [`make_request`](class_jsonrpc.md#class_jsonrpc_method_make_request) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                           |
+| [`Dictionary`](class_dictionary.md) | [`make_response`](class_jsonrpc.md#class_jsonrpc_method_make_response) ( result: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                                                              |
+| [`Dictionary`](class_dictionary.md) | [`make_response_error`](class_jsonrpc.md#class_jsonrpc_method_make_response_error) ( code: [`int`](class_int.md), message: [`String`](class_string.md), id: [`Variant`](class_variant.md) = null ) const[^const] |
+| [`Variant`](class_variant.md)       | [`process_action`](class_jsonrpc.md#class_jsonrpc_method_process_action) ( action: [`Variant`](class_variant.md), recurse: [`bool`](class_bool.md) = false )                                                     |
+| [`String`](class_string.md)         | [`process_string`](class_jsonrpc.md#class_jsonrpc_method_process_string) ( action: [`String`](class_string.md) )                                                                                                 |
+| `void`                              | [`set_scope`](class_jsonrpc.md#class_jsonrpc_method_set_scope) ( scope: [`String`](class_string.md), target: [`Object`](class_object.md) )                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -41,7 +41,7 @@ enum **ErrorCode**: <div id="enum_jsonrpc_errorcode"></div>
 
 [ErrorCode](#enum_jsonrpc_errorcode) **PARSE_ERROR** = ``-32700``
 
-The request could not be parsed as it was not valid by JSON standard ([`JSON.parse`](#class_json_method_parse) failed).
+The request could not be parsed as it was not valid by JSON standard ([`JSON.parse`](class_json.md#class_json_method_parse) failed).
 
 <div id="_class_jsonrpc_constant_invalid_request"></div>
 
@@ -139,7 +139,7 @@ Creates a response which indicates a previous reply has failed in some way.
 
 Given a Dictionary which takes the form of a JSON-RPC request: unpack the request and run it. Methods are resolved by looking at the field called "method" and looking for an equivalently named function in the JSONRPC object. If one is found that method is called.
 
-To add new supported methods extend the JSONRPC class and call [`process_action`](#class_jsonrpc_method_process_action) on your subclass.
+To add new supported methods extend the JSONRPC class and call [`process_action`](class_jsonrpc.md#class_jsonrpc_method_process_action) on your subclass.
 
  `action`: The action to be run, as a Dictionary in the form of a JSON-RPC request or notification.
 

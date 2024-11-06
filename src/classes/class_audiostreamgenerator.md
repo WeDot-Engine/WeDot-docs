@@ -79,7 +79,7 @@ In the example above, the "AudioStreamPlayer" node must use an **AudioStreamGene
 
 See also [`AudioEffectSpectrumAnalyzer`](class_audioeffectspectrumanalyzer.md) for performing real-time audio spectrum analysis.
 
- **Note:** Due to performance constraints, this class is best used from C# or from a compiled language via GDExtension. If you still want to use this class from GDScript, consider using a lower [`mix_rate`](#class_audiostreamgenerator_property_mix_rate) such as 11,025 Hz or 22,050 Hz.
+ **Note:** Due to performance constraints, this class is best used from C# or from a compiled language via GDExtension. If you still want to use this class from GDScript, consider using a lower [`mix_rate`](class_audiostreamgenerator.md#class_audiostreamgenerator_property_mix_rate) such as 11,025 Hz or 22,050 Hz.
 
 
 
@@ -89,8 +89,8 @@ See also [`AudioEffectSpectrumAnalyzer`](class_audioeffectspectrumanalyzer.md) f
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`buffer_length`](#class_audiostreamgenerator_property_buffer_length) | ``0.5``     |
-| [`float`](class_float.md) | [`mix_rate`](#class_audiostreamgenerator_property_mix_rate)           | ``44100.0`` |
+| [`float`](class_float.md) | [`buffer_length`](class_audiostreamgenerator.md#class_audiostreamgenerator_property_buffer_length) | ``0.5``     |
+| [`float`](class_float.md) | [`mix_rate`](class_audiostreamgenerator.md#class_audiostreamgenerator_property_mix_rate)           | ``44100.0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

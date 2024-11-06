@@ -21,95 +21,95 @@ See also [`GPUParticles3D`](class_gpuparticles3d.md), which provides the same fu
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                               | [`amount`](#class_cpuparticles3d_property_amount)                                         | ``8``                      |
-| [`Curve`](class_curve.md)                           | [`angle_curve`](#class_cpuparticles3d_property_angle_curve)                               |                            |
-| [`float`](class_float.md)                           | [`angle_max`](#class_cpuparticles3d_property_angle_max)                                   | ``0.0``                    |
-| [`float`](class_float.md)                           | [`angle_min`](#class_cpuparticles3d_property_angle_min)                                   | ``0.0``                    |
-| [`Curve`](class_curve.md)                           | [`angular_velocity_curve`](#class_cpuparticles3d_property_angular_velocity_curve)         |                            |
-| [`float`](class_float.md)                           | [`angular_velocity_max`](#class_cpuparticles3d_property_angular_velocity_max)             | ``0.0``                    |
-| [`float`](class_float.md)                           | [`angular_velocity_min`](#class_cpuparticles3d_property_angular_velocity_min)             | ``0.0``                    |
-| [`Curve`](class_curve.md)                           | [`anim_offset_curve`](#class_cpuparticles3d_property_anim_offset_curve)                   |                            |
-| [`float`](class_float.md)                           | [`anim_offset_max`](#class_cpuparticles3d_property_anim_offset_max)                       | ``0.0``                    |
-| [`float`](class_float.md)                           | [`anim_offset_min`](#class_cpuparticles3d_property_anim_offset_min)                       | ``0.0``                    |
-| [`Curve`](class_curve.md)                           | [`anim_speed_curve`](#class_cpuparticles3d_property_anim_speed_curve)                     |                            |
-| [`float`](class_float.md)                           | [`anim_speed_max`](#class_cpuparticles3d_property_anim_speed_max)                         | ``0.0``                    |
-| [`float`](class_float.md)                           | [`anim_speed_min`](#class_cpuparticles3d_property_anim_speed_min)                         | ``0.0``                    |
-| [`Color`](class_color.md)                           | [`color`](#class_cpuparticles3d_property_color)                                           | ``Color(1, 1, 1, 1)``      |
-| [`Gradient`](class_gradient.md)                     | [`color_initial_ramp`](#class_cpuparticles3d_property_color_initial_ramp)                 |                            |
-| [`Gradient`](class_gradient.md)                     | [`color_ramp`](#class_cpuparticles3d_property_color_ramp)                                 |                            |
-| [`Curve`](class_curve.md)                           | [`damping_curve`](#class_cpuparticles3d_property_damping_curve)                           |                            |
-| [`float`](class_float.md)                           | [`damping_max`](#class_cpuparticles3d_property_damping_max)                               | ``0.0``                    |
-| [`float`](class_float.md)                           | [`damping_min`](#class_cpuparticles3d_property_damping_min)                               | ``0.0``                    |
-| [`Vector3`](class_vector3.md)                       | [`direction`](#class_cpuparticles3d_property_direction)                                   | ``Vector3(1, 0, 0)``       |
-| [DrawOrder](#enum_cpuparticles3d_draworder)         | [`draw_order`](#class_cpuparticles3d_property_draw_order)                                 | ``0``                      |
-| [`Vector3`](class_vector3.md)                       | [`emission_box_extents`](#class_cpuparticles3d_property_emission_box_extents)             |                            |
-| [`PackedColorArray`](class_packedcolorarray.md)     | [`emission_colors`](#class_cpuparticles3d_property_emission_colors)                       | ``PackedColorArray()``     |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`emission_normals`](#class_cpuparticles3d_property_emission_normals)                     |                            |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`emission_points`](#class_cpuparticles3d_property_emission_points)                       |                            |
-| [`Vector3`](class_vector3.md)                       | [`emission_ring_axis`](#class_cpuparticles3d_property_emission_ring_axis)                 |                            |
-| [`float`](class_float.md)                           | [`emission_ring_height`](#class_cpuparticles3d_property_emission_ring_height)             |                            |
-| [`float`](class_float.md)                           | [`emission_ring_inner_radius`](#class_cpuparticles3d_property_emission_ring_inner_radius) |                            |
-| [`float`](class_float.md)                           | [`emission_ring_radius`](#class_cpuparticles3d_property_emission_ring_radius)             |                            |
-| [EmissionShape](#enum_cpuparticles3d_emissionshape) | [`emission_shape`](#class_cpuparticles3d_property_emission_shape)                         | ``0``                      |
-| [`float`](class_float.md)                           | [`emission_sphere_radius`](#class_cpuparticles3d_property_emission_sphere_radius)         |                            |
-| [`bool`](class_bool.md)                             | [`emitting`](#class_cpuparticles3d_property_emitting)                                     | ``true``                   |
-| [`float`](class_float.md)                           | [`explosiveness`](#class_cpuparticles3d_property_explosiveness)                           | ``0.0``                    |
-| [`int`](class_int.md)                               | [`fixed_fps`](#class_cpuparticles3d_property_fixed_fps)                                   | ``0``                      |
-| [`float`](class_float.md)                           | [`flatness`](#class_cpuparticles3d_property_flatness)                                     | ``0.0``                    |
-| [`bool`](class_bool.md)                             | [`fract_delta`](#class_cpuparticles3d_property_fract_delta)                               | ``true``                   |
-| [`Vector3`](class_vector3.md)                       | [`gravity`](#class_cpuparticles3d_property_gravity)                                       | ``Vector3(0, -9.8, 0)``    |
-| [`Curve`](class_curve.md)                           | [`hue_variation_curve`](#class_cpuparticles3d_property_hue_variation_curve)               |                            |
-| [`float`](class_float.md)                           | [`hue_variation_max`](#class_cpuparticles3d_property_hue_variation_max)                   | ``0.0``                    |
-| [`float`](class_float.md)                           | [`hue_variation_min`](#class_cpuparticles3d_property_hue_variation_min)                   | ``0.0``                    |
-| [`float`](class_float.md)                           | [`initial_velocity_max`](#class_cpuparticles3d_property_initial_velocity_max)             | ``0.0``                    |
-| [`float`](class_float.md)                           | [`initial_velocity_min`](#class_cpuparticles3d_property_initial_velocity_min)             | ``0.0``                    |
-| [`float`](class_float.md)                           | [`lifetime`](#class_cpuparticles3d_property_lifetime)                                     | ``1.0``                    |
-| [`float`](class_float.md)                           | [`lifetime_randomness`](#class_cpuparticles3d_property_lifetime_randomness)               | ``0.0``                    |
-| [`Curve`](class_curve.md)                           | [`linear_accel_curve`](#class_cpuparticles3d_property_linear_accel_curve)                 |                            |
-| [`float`](class_float.md)                           | [`linear_accel_max`](#class_cpuparticles3d_property_linear_accel_max)                     | ``0.0``                    |
-| [`float`](class_float.md)                           | [`linear_accel_min`](#class_cpuparticles3d_property_linear_accel_min)                     | ``0.0``                    |
-| [`bool`](class_bool.md)                             | [`local_coords`](#class_cpuparticles3d_property_local_coords)                             | ``false``                  |
-| [`Mesh`](class_mesh.md)                             | [`mesh`](#class_cpuparticles3d_property_mesh)                                             |                            |
-| [`bool`](class_bool.md)                             | [`one_shot`](#class_cpuparticles3d_property_one_shot)                                     | ``false``                  |
-| [`Curve`](class_curve.md)                           | [`orbit_velocity_curve`](#class_cpuparticles3d_property_orbit_velocity_curve)             |                            |
-| [`float`](class_float.md)                           | [`orbit_velocity_max`](#class_cpuparticles3d_property_orbit_velocity_max)                 |                            |
-| [`float`](class_float.md)                           | [`orbit_velocity_min`](#class_cpuparticles3d_property_orbit_velocity_min)                 |                            |
-| [`bool`](class_bool.md)                             | [`particle_flag_align_y`](#class_cpuparticles3d_property_particle_flag_align_y)           | ``false``                  |
-| [`bool`](class_bool.md)                             | [`particle_flag_disable_z`](#class_cpuparticles3d_property_particle_flag_disable_z)       | ``false``                  |
-| [`bool`](class_bool.md)                             | [`particle_flag_rotate_y`](#class_cpuparticles3d_property_particle_flag_rotate_y)         | ``false``                  |
-| [`float`](class_float.md)                           | [`preprocess`](#class_cpuparticles3d_property_preprocess)                                 | ``0.0``                    |
-| [`Curve`](class_curve.md)                           | [`radial_accel_curve`](#class_cpuparticles3d_property_radial_accel_curve)                 |                            |
-| [`float`](class_float.md)                           | [`radial_accel_max`](#class_cpuparticles3d_property_radial_accel_max)                     | ``0.0``                    |
-| [`float`](class_float.md)                           | [`radial_accel_min`](#class_cpuparticles3d_property_radial_accel_min)                     | ``0.0``                    |
-| [`float`](class_float.md)                           | [`randomness`](#class_cpuparticles3d_property_randomness)                                 | ``0.0``                    |
-| [`Curve`](class_curve.md)                           | [`scale_amount_curve`](#class_cpuparticles3d_property_scale_amount_curve)                 |                            |
-| [`float`](class_float.md)                           | [`scale_amount_max`](#class_cpuparticles3d_property_scale_amount_max)                     | ``1.0``                    |
-| [`float`](class_float.md)                           | [`scale_amount_min`](#class_cpuparticles3d_property_scale_amount_min)                     | ``1.0``                    |
-| [`Curve`](class_curve.md)                           | [`scale_curve_x`](#class_cpuparticles3d_property_scale_curve_x)                           |                            |
-| [`Curve`](class_curve.md)                           | [`scale_curve_y`](#class_cpuparticles3d_property_scale_curve_y)                           |                            |
-| [`Curve`](class_curve.md)                           | [`scale_curve_z`](#class_cpuparticles3d_property_scale_curve_z)                           |                            |
-| [`float`](class_float.md)                           | [`speed_scale`](#class_cpuparticles3d_property_speed_scale)                               | ``1.0``                    |
-| [`bool`](class_bool.md)                             | [`split_scale`](#class_cpuparticles3d_property_split_scale)                               | ``false``                  |
-| [`float`](class_float.md)                           | [`spread`](#class_cpuparticles3d_property_spread)                                         | ``45.0``                   |
-| [`Curve`](class_curve.md)                           | [`tangential_accel_curve`](#class_cpuparticles3d_property_tangential_accel_curve)         |                            |
-| [`float`](class_float.md)                           | [`tangential_accel_max`](#class_cpuparticles3d_property_tangential_accel_max)             | ``0.0``                    |
-| [`float`](class_float.md)                           | [`tangential_accel_min`](#class_cpuparticles3d_property_tangential_accel_min)             | ``0.0``                    |
-| [`AABB`](class_aabb.md)                             | [`visibility_aabb`](#class_cpuparticles3d_property_visibility_aabb)                       | ``AABB(0, 0, 0, 0, 0, 0)`` |
+| [`int`](class_int.md)                               | [`amount`](class_cpuparticles3d.md#class_cpuparticles3d_property_amount)                                         | ``8``                      |
+| [`Curve`](class_curve.md)                           | [`angle_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_angle_curve)                               |                            |
+| [`float`](class_float.md)                           | [`angle_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_angle_max)                                   | ``0.0``                    |
+| [`float`](class_float.md)                           | [`angle_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_angle_min)                                   | ``0.0``                    |
+| [`Curve`](class_curve.md)                           | [`angular_velocity_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_angular_velocity_curve)         |                            |
+| [`float`](class_float.md)                           | [`angular_velocity_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_angular_velocity_max)             | ``0.0``                    |
+| [`float`](class_float.md)                           | [`angular_velocity_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_angular_velocity_min)             | ``0.0``                    |
+| [`Curve`](class_curve.md)                           | [`anim_offset_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_anim_offset_curve)                   |                            |
+| [`float`](class_float.md)                           | [`anim_offset_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_anim_offset_max)                       | ``0.0``                    |
+| [`float`](class_float.md)                           | [`anim_offset_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_anim_offset_min)                       | ``0.0``                    |
+| [`Curve`](class_curve.md)                           | [`anim_speed_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_anim_speed_curve)                     |                            |
+| [`float`](class_float.md)                           | [`anim_speed_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_anim_speed_max)                         | ``0.0``                    |
+| [`float`](class_float.md)                           | [`anim_speed_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_anim_speed_min)                         | ``0.0``                    |
+| [`Color`](class_color.md)                           | [`color`](class_cpuparticles3d.md#class_cpuparticles3d_property_color)                                           | ``Color(1, 1, 1, 1)``      |
+| [`Gradient`](class_gradient.md)                     | [`color_initial_ramp`](class_cpuparticles3d.md#class_cpuparticles3d_property_color_initial_ramp)                 |                            |
+| [`Gradient`](class_gradient.md)                     | [`color_ramp`](class_cpuparticles3d.md#class_cpuparticles3d_property_color_ramp)                                 |                            |
+| [`Curve`](class_curve.md)                           | [`damping_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_damping_curve)                           |                            |
+| [`float`](class_float.md)                           | [`damping_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_damping_max)                               | ``0.0``                    |
+| [`float`](class_float.md)                           | [`damping_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_damping_min)                               | ``0.0``                    |
+| [`Vector3`](class_vector3.md)                       | [`direction`](class_cpuparticles3d.md#class_cpuparticles3d_property_direction)                                   | ``Vector3(1, 0, 0)``       |
+| [DrawOrder](#enum_cpuparticles3d_draworder)         | [`draw_order`](class_cpuparticles3d.md#class_cpuparticles3d_property_draw_order)                                 | ``0``                      |
+| [`Vector3`](class_vector3.md)                       | [`emission_box_extents`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_box_extents)             |                            |
+| [`PackedColorArray`](class_packedcolorarray.md)     | [`emission_colors`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_colors)                       | ``PackedColorArray()``     |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`emission_normals`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_normals)                     |                            |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`emission_points`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_points)                       |                            |
+| [`Vector3`](class_vector3.md)                       | [`emission_ring_axis`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_axis)                 |                            |
+| [`float`](class_float.md)                           | [`emission_ring_height`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_height)             |                            |
+| [`float`](class_float.md)                           | [`emission_ring_inner_radius`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_inner_radius) |                            |
+| [`float`](class_float.md)                           | [`emission_ring_radius`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_radius)             |                            |
+| [EmissionShape](#enum_cpuparticles3d_emissionshape) | [`emission_shape`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_shape)                         | ``0``                      |
+| [`float`](class_float.md)                           | [`emission_sphere_radius`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_sphere_radius)         |                            |
+| [`bool`](class_bool.md)                             | [`emitting`](class_cpuparticles3d.md#class_cpuparticles3d_property_emitting)                                     | ``true``                   |
+| [`float`](class_float.md)                           | [`explosiveness`](class_cpuparticles3d.md#class_cpuparticles3d_property_explosiveness)                           | ``0.0``                    |
+| [`int`](class_int.md)                               | [`fixed_fps`](class_cpuparticles3d.md#class_cpuparticles3d_property_fixed_fps)                                   | ``0``                      |
+| [`float`](class_float.md)                           | [`flatness`](class_cpuparticles3d.md#class_cpuparticles3d_property_flatness)                                     | ``0.0``                    |
+| [`bool`](class_bool.md)                             | [`fract_delta`](class_cpuparticles3d.md#class_cpuparticles3d_property_fract_delta)                               | ``true``                   |
+| [`Vector3`](class_vector3.md)                       | [`gravity`](class_cpuparticles3d.md#class_cpuparticles3d_property_gravity)                                       | ``Vector3(0, -9.8, 0)``    |
+| [`Curve`](class_curve.md)                           | [`hue_variation_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_hue_variation_curve)               |                            |
+| [`float`](class_float.md)                           | [`hue_variation_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_hue_variation_max)                   | ``0.0``                    |
+| [`float`](class_float.md)                           | [`hue_variation_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_hue_variation_min)                   | ``0.0``                    |
+| [`float`](class_float.md)                           | [`initial_velocity_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_initial_velocity_max)             | ``0.0``                    |
+| [`float`](class_float.md)                           | [`initial_velocity_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_initial_velocity_min)             | ``0.0``                    |
+| [`float`](class_float.md)                           | [`lifetime`](class_cpuparticles3d.md#class_cpuparticles3d_property_lifetime)                                     | ``1.0``                    |
+| [`float`](class_float.md)                           | [`lifetime_randomness`](class_cpuparticles3d.md#class_cpuparticles3d_property_lifetime_randomness)               | ``0.0``                    |
+| [`Curve`](class_curve.md)                           | [`linear_accel_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_linear_accel_curve)                 |                            |
+| [`float`](class_float.md)                           | [`linear_accel_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_linear_accel_max)                     | ``0.0``                    |
+| [`float`](class_float.md)                           | [`linear_accel_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_linear_accel_min)                     | ``0.0``                    |
+| [`bool`](class_bool.md)                             | [`local_coords`](class_cpuparticles3d.md#class_cpuparticles3d_property_local_coords)                             | ``false``                  |
+| [`Mesh`](class_mesh.md)                             | [`mesh`](class_cpuparticles3d.md#class_cpuparticles3d_property_mesh)                                             |                            |
+| [`bool`](class_bool.md)                             | [`one_shot`](class_cpuparticles3d.md#class_cpuparticles3d_property_one_shot)                                     | ``false``                  |
+| [`Curve`](class_curve.md)                           | [`orbit_velocity_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_orbit_velocity_curve)             |                            |
+| [`float`](class_float.md)                           | [`orbit_velocity_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_orbit_velocity_max)                 |                            |
+| [`float`](class_float.md)                           | [`orbit_velocity_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_orbit_velocity_min)                 |                            |
+| [`bool`](class_bool.md)                             | [`particle_flag_align_y`](class_cpuparticles3d.md#class_cpuparticles3d_property_particle_flag_align_y)           | ``false``                  |
+| [`bool`](class_bool.md)                             | [`particle_flag_disable_z`](class_cpuparticles3d.md#class_cpuparticles3d_property_particle_flag_disable_z)       | ``false``                  |
+| [`bool`](class_bool.md)                             | [`particle_flag_rotate_y`](class_cpuparticles3d.md#class_cpuparticles3d_property_particle_flag_rotate_y)         | ``false``                  |
+| [`float`](class_float.md)                           | [`preprocess`](class_cpuparticles3d.md#class_cpuparticles3d_property_preprocess)                                 | ``0.0``                    |
+| [`Curve`](class_curve.md)                           | [`radial_accel_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_radial_accel_curve)                 |                            |
+| [`float`](class_float.md)                           | [`radial_accel_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_radial_accel_max)                     | ``0.0``                    |
+| [`float`](class_float.md)                           | [`radial_accel_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_radial_accel_min)                     | ``0.0``                    |
+| [`float`](class_float.md)                           | [`randomness`](class_cpuparticles3d.md#class_cpuparticles3d_property_randomness)                                 | ``0.0``                    |
+| [`Curve`](class_curve.md)                           | [`scale_amount_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_scale_amount_curve)                 |                            |
+| [`float`](class_float.md)                           | [`scale_amount_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_scale_amount_max)                     | ``1.0``                    |
+| [`float`](class_float.md)                           | [`scale_amount_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_scale_amount_min)                     | ``1.0``                    |
+| [`Curve`](class_curve.md)                           | [`scale_curve_x`](class_cpuparticles3d.md#class_cpuparticles3d_property_scale_curve_x)                           |                            |
+| [`Curve`](class_curve.md)                           | [`scale_curve_y`](class_cpuparticles3d.md#class_cpuparticles3d_property_scale_curve_y)                           |                            |
+| [`Curve`](class_curve.md)                           | [`scale_curve_z`](class_cpuparticles3d.md#class_cpuparticles3d_property_scale_curve_z)                           |                            |
+| [`float`](class_float.md)                           | [`speed_scale`](class_cpuparticles3d.md#class_cpuparticles3d_property_speed_scale)                               | ``1.0``                    |
+| [`bool`](class_bool.md)                             | [`split_scale`](class_cpuparticles3d.md#class_cpuparticles3d_property_split_scale)                               | ``false``                  |
+| [`float`](class_float.md)                           | [`spread`](class_cpuparticles3d.md#class_cpuparticles3d_property_spread)                                         | ``45.0``                   |
+| [`Curve`](class_curve.md)                           | [`tangential_accel_curve`](class_cpuparticles3d.md#class_cpuparticles3d_property_tangential_accel_curve)         |                            |
+| [`float`](class_float.md)                           | [`tangential_accel_max`](class_cpuparticles3d.md#class_cpuparticles3d_property_tangential_accel_max)             | ``0.0``                    |
+| [`float`](class_float.md)                           | [`tangential_accel_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_tangential_accel_min)             | ``0.0``                    |
+| [`AABB`](class_aabb.md)                             | [`visibility_aabb`](class_cpuparticles3d.md#class_cpuparticles3d_property_visibility_aabb)                       | ``AABB(0, 0, 0, 0, 0, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                    | [`convert_from_particles`](#class_cpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                        |
-| [`Curve`](class_curve.md) | [`get_param_curve`](#class_cpuparticles3d_method_get_param_curve) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                        |
-| [`float`](class_float.md) | [`get_param_max`](#class_cpuparticles3d_method_get_param_max) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                            |
-| [`float`](class_float.md) | [`get_param_min`](#class_cpuparticles3d_method_get_param_min) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                            |
-| [`bool`](class_bool.md)   | [`get_particle_flag`](#class_cpuparticles3d_method_get_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles3d_particleflags) ) const[^const]                    |
-| `void`                    | [`restart`](#class_cpuparticles3d_method_restart) ( )                                                                                                                         |
-| `void`                    | [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) ( param: [Parameter](#enum_cpuparticles3d_parameter), curve: [`Curve`](class_curve.md) )                    |
-| `void`                    | [`set_param_max`](#class_cpuparticles3d_method_set_param_max) ( param: [Parameter](#enum_cpuparticles3d_parameter), value: [`float`](class_float.md) )                        |
-| `void`                    | [`set_param_min`](#class_cpuparticles3d_method_set_param_min) ( param: [Parameter](#enum_cpuparticles3d_parameter), value: [`float`](class_float.md) )                        |
-| `void`                    | [`set_particle_flag`](#class_cpuparticles3d_method_set_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles3d_particleflags), enable: [`bool`](class_bool.md) ) |
+| `void`                    | [`convert_from_particles`](class_cpuparticles3d.md#class_cpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                        |
+| [`Curve`](class_curve.md) | [`get_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_get_param_curve) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                        |
+| [`float`](class_float.md) | [`get_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_get_param_max) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                            |
+| [`float`](class_float.md) | [`get_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_get_param_min) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                            |
+| [`bool`](class_bool.md)   | [`get_particle_flag`](class_cpuparticles3d.md#class_cpuparticles3d_method_get_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles3d_particleflags) ) const[^const]                    |
+| `void`                    | [`restart`](class_cpuparticles3d.md#class_cpuparticles3d_method_restart) ( )                                                                                                                         |
+| `void`                    | [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) ( param: [Parameter](#enum_cpuparticles3d_parameter), curve: [`Curve`](class_curve.md) )                    |
+| `void`                    | [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max) ( param: [Parameter](#enum_cpuparticles3d_parameter), value: [`float`](class_float.md) )                        |
+| `void`                    | [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min) ( param: [Parameter](#enum_cpuparticles3d_parameter), value: [`float`](class_float.md) )                        |
+| `void`                    | [`set_particle_flag`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles3d_particleflags), enable: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -121,7 +121,7 @@ See also [`GPUParticles3D`](class_gpuparticles3d.md), which provides the same fu
 
 **finished** ( ) <div id="class_cpuparticles3d_signal_finished"></div>
 
-Emitted when all active particles have finished processing. When [`one_shot`](#class_cpuparticles3d_property_one_shot) is disabled, particles will process continuously, so this is never emitted.
+Emitted when all active particles have finished processing. When [`one_shot`](class_cpuparticles3d.md#class_cpuparticles3d_property_one_shot) is disabled, particles will process continuously, so this is never emitted.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -163,73 +163,73 @@ enum **Parameter**: <div id="enum_cpuparticles3d_parameter"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_INITIAL_LINEAR_VELOCITY** = ``0``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set initial velocity properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set initial velocity properties.
 
 <div id="_class_cpuparticles3d_constant_param_angular_velocity"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_ANGULAR_VELOCITY** = ``1``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set angular velocity properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set angular velocity properties.
 
 <div id="_class_cpuparticles3d_constant_param_orbit_velocity"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_ORBIT_VELOCITY** = ``2``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set orbital velocity properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set orbital velocity properties.
 
 <div id="_class_cpuparticles3d_constant_param_linear_accel"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_LINEAR_ACCEL** = ``3``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set linear acceleration properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set linear acceleration properties.
 
 <div id="_class_cpuparticles3d_constant_param_radial_accel"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_RADIAL_ACCEL** = ``4``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set radial acceleration properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set radial acceleration properties.
 
 <div id="_class_cpuparticles3d_constant_param_tangential_accel"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_TANGENTIAL_ACCEL** = ``5``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set tangential acceleration properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set tangential acceleration properties.
 
 <div id="_class_cpuparticles3d_constant_param_damping"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_DAMPING** = ``6``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set damping properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set damping properties.
 
 <div id="_class_cpuparticles3d_constant_param_angle"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_ANGLE** = ``7``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set angle properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set angle properties.
 
 <div id="_class_cpuparticles3d_constant_param_scale"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_SCALE** = ``8``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set scale properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set scale properties.
 
 <div id="_class_cpuparticles3d_constant_param_hue_variation"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_HUE_VARIATION** = ``9``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set hue variation properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set hue variation properties.
 
 <div id="_class_cpuparticles3d_constant_param_anim_speed"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_ANIM_SPEED** = ``10``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set animation speed properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set animation speed properties.
 
 <div id="_class_cpuparticles3d_constant_param_anim_offset"></div>
 
 [Parameter](#enum_cpuparticles3d_parameter) **PARAM_ANIM_OFFSET** = ``11``
 
-Use with [`set_param_min`](#class_cpuparticles3d_method_set_param_min), [`set_param_max`](#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](#class_cpuparticles3d_method_set_param_curve) to set animation offset properties.
+Use with [`set_param_min`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_min), [`set_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_max), and [`set_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_param_curve) to set animation offset properties.
 
 <div id="_class_cpuparticles3d_constant_param_max"></div>
 
@@ -249,19 +249,19 @@ enum **ParticleFlags**: <div id="enum_cpuparticles3d_particleflags"></div>
 
 [ParticleFlags](#enum_cpuparticles3d_particleflags) **PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY** = ``0``
 
-Use with [`set_particle_flag`](#class_cpuparticles3d_method_set_particle_flag) to set [`particle_flag_align_y`](#class_cpuparticles3d_property_particle_flag_align_y).
+Use with [`set_particle_flag`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_particle_flag) to set [`particle_flag_align_y`](class_cpuparticles3d.md#class_cpuparticles3d_property_particle_flag_align_y).
 
 <div id="_class_cpuparticles3d_constant_particle_flag_rotate_y"></div>
 
 [ParticleFlags](#enum_cpuparticles3d_particleflags) **PARTICLE_FLAG_ROTATE_Y** = ``1``
 
-Use with [`set_particle_flag`](#class_cpuparticles3d_method_set_particle_flag) to set [`particle_flag_rotate_y`](#class_cpuparticles3d_property_particle_flag_rotate_y).
+Use with [`set_particle_flag`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_particle_flag) to set [`particle_flag_rotate_y`](class_cpuparticles3d.md#class_cpuparticles3d_property_particle_flag_rotate_y).
 
 <div id="_class_cpuparticles3d_constant_particle_flag_disable_z"></div>
 
 [ParticleFlags](#enum_cpuparticles3d_particleflags) **PARTICLE_FLAG_DISABLE_Z** = ``2``
 
-Use with [`set_particle_flag`](#class_cpuparticles3d_method_set_particle_flag) to set [`particle_flag_disable_z`](#class_cpuparticles3d_property_particle_flag_disable_z).
+Use with [`set_particle_flag`](class_cpuparticles3d.md#class_cpuparticles3d_method_set_particle_flag) to set [`particle_flag_disable_z`](class_cpuparticles3d.md#class_cpuparticles3d_property_particle_flag_disable_z).
 
 <div id="_class_cpuparticles3d_constant_particle_flag_max"></div>
 
@@ -305,13 +305,13 @@ Particles will be emitted in the volume of a box.
 
 [EmissionShape](#enum_cpuparticles3d_emissionshape) **EMISSION_SHAPE_POINTS** = ``4``
 
-Particles will be emitted at a position chosen randomly among [`emission_points`](#class_cpuparticles3d_property_emission_points). Particle color will be modulated by [`emission_colors`](#class_cpuparticles3d_property_emission_colors).
+Particles will be emitted at a position chosen randomly among [`emission_points`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_points). Particle color will be modulated by [`emission_colors`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_colors).
 
 <div id="_class_cpuparticles3d_constant_emission_shape_directed_points"></div>
 
 [EmissionShape](#enum_cpuparticles3d_emissionshape) **EMISSION_SHAPE_DIRECTED_POINTS** = ``5``
 
-Particles will be emitted at a position chosen randomly among [`emission_points`](#class_cpuparticles3d_property_emission_points). Particle velocity and rotation will be set based on [`emission_normals`](#class_cpuparticles3d_property_emission_normals). Particle color will be modulated by [`emission_colors`](#class_cpuparticles3d_property_emission_colors).
+Particles will be emitted at a position chosen randomly among [`emission_points`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_points). Particle velocity and rotation will be set based on [`emission_normals`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_normals). Particle color will be modulated by [`emission_colors`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_colors).
 
 <div id="_class_cpuparticles3d_constant_emission_shape_ring"></div>
 
@@ -509,7 +509,7 @@ Minimum particle animation speed.
 
 Each particle's initial color.
 
- **Note:** [`color`](#class_cpuparticles3d_property_color) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`color`](#class_cpuparticles3d_property_color) will have no visible effect.
+ **Note:** [`color`](class_cpuparticles3d.md#class_cpuparticles3d_property_color) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`color`](class_cpuparticles3d.md#class_cpuparticles3d_property_color) will have no visible effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -522,9 +522,9 @@ Each particle's initial color.
 - `void` **set_color_initial_ramp** ( value: [`Gradient`](class_gradient.md) )
 - [`Gradient`](class_gradient.md) **get_color_initial_ramp** ( )
 
-Each particle's initial color will vary along this [`GradientTexture1D`](class_gradienttexture1d.md) (multiplied with [`color`](#class_cpuparticles3d_property_color)).
+Each particle's initial color will vary along this [`GradientTexture1D`](class_gradienttexture1d.md) (multiplied with [`color`](class_cpuparticles3d.md#class_cpuparticles3d_property_color)).
 
- **Note:** [`color_initial_ramp`](#class_cpuparticles3d_property_color_initial_ramp) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`color_initial_ramp`](#class_cpuparticles3d_property_color_initial_ramp) will have no visible effect.
+ **Note:** [`color_initial_ramp`](class_cpuparticles3d.md#class_cpuparticles3d_property_color_initial_ramp) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`color_initial_ramp`](class_cpuparticles3d.md#class_cpuparticles3d_property_color_initial_ramp) will have no visible effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -537,9 +537,9 @@ Each particle's initial color will vary along this [`GradientTexture1D`](class_g
 - `void` **set_color_ramp** ( value: [`Gradient`](class_gradient.md) )
 - [`Gradient`](class_gradient.md) **get_color_ramp** ( )
 
-Each particle's color will vary along this [`GradientTexture1D`](class_gradienttexture1d.md) over its lifetime (multiplied with [`color`](#class_cpuparticles3d_property_color)).
+Each particle's color will vary along this [`GradientTexture1D`](class_gradienttexture1d.md) over its lifetime (multiplied with [`color`](class_cpuparticles3d.md#class_cpuparticles3d_property_color)).
 
- **Note:** [`color_ramp`](#class_cpuparticles3d_property_color_ramp) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`color_ramp`](#class_cpuparticles3d_property_color_ramp) will have no visible effect.
+ **Note:** [`color_ramp`](class_cpuparticles3d.md#class_cpuparticles3d_property_color_ramp) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`color_ramp`](class_cpuparticles3d.md#class_cpuparticles3d_property_color_ramp) will have no visible effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -617,7 +617,7 @@ Particle draw order. Uses [DrawOrder](#enum_cpuparticles3d_draworder) values.
 - `void` **set_emission_box_extents** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_emission_box_extents** ( )
 
-The rectangle's extents if [`emission_shape`](#class_cpuparticles3d_property_emission_shape) is set to [`EMISSION_SHAPE_BOX`](#class_cpuparticles3d_constant_emission_shape_box).
+The rectangle's extents if [`emission_shape`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_shape) is set to [`EMISSION_SHAPE_BOX`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_box).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -630,9 +630,9 @@ The rectangle's extents if [`emission_shape`](#class_cpuparticles3d_property_emi
 - `void` **set_emission_colors** ( value: [`PackedColorArray`](class_packedcolorarray.md) )
 - [`PackedColorArray`](class_packedcolorarray.md) **get_emission_colors** ( )
 
-Sets the [`Color`](class_color.md) s to modulate particles by when using [`EMISSION_SHAPE_POINTS`](#class_cpuparticles3d_constant_emission_shape_points) or [`EMISSION_SHAPE_DIRECTED_POINTS`](#class_cpuparticles3d_constant_emission_shape_directed_points).
+Sets the [`Color`](class_color.md) s to modulate particles by when using [`EMISSION_SHAPE_POINTS`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_points) or [`EMISSION_SHAPE_DIRECTED_POINTS`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_directed_points).
 
- **Note:** [`emission_colors`](#class_cpuparticles3d_property_emission_colors) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`emission_colors`](#class_cpuparticles3d_property_emission_colors) will have no visible effect.
+ **Note:** [`emission_colors`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_colors) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`emission_colors`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_colors) will have no visible effect.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedColorArray`](class_packedcolorarray.md) for more details.
 
@@ -647,7 +647,7 @@ Sets the [`Color`](class_color.md) s to modulate particles by when using [`EMISS
 - `void` **set_emission_normals** ( value: [`PackedVector3Array`](class_packedvector3array.md) )
 - [`PackedVector3Array`](class_packedvector3array.md) **get_emission_normals** ( )
 
-Sets the direction the particles will be emitted in when using [`EMISSION_SHAPE_DIRECTED_POINTS`](#class_cpuparticles3d_constant_emission_shape_directed_points).
+Sets the direction the particles will be emitted in when using [`EMISSION_SHAPE_DIRECTED_POINTS`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_directed_points).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedVector3Array`](class_packedvector3array.md) for more details.
 
@@ -662,7 +662,7 @@ Sets the direction the particles will be emitted in when using [`EMISSION_SHAPE_
 - `void` **set_emission_points** ( value: [`PackedVector3Array`](class_packedvector3array.md) )
 - [`PackedVector3Array`](class_packedvector3array.md) **get_emission_points** ( )
 
-Sets the initial positions to spawn particles when using [`EMISSION_SHAPE_POINTS`](#class_cpuparticles3d_constant_emission_shape_points) or [`EMISSION_SHAPE_DIRECTED_POINTS`](#class_cpuparticles3d_constant_emission_shape_directed_points).
+Sets the initial positions to spawn particles when using [`EMISSION_SHAPE_POINTS`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_points) or [`EMISSION_SHAPE_DIRECTED_POINTS`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_directed_points).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedVector3Array`](class_packedvector3array.md) for more details.
 
@@ -677,7 +677,7 @@ Sets the initial positions to spawn particles when using [`EMISSION_SHAPE_POINTS
 - `void` **set_emission_ring_axis** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_emission_ring_axis** ( )
 
-The axis of the ring when using the emitter [`EMISSION_SHAPE_RING`](#class_cpuparticles3d_constant_emission_shape_ring).
+The axis of the ring when using the emitter [`EMISSION_SHAPE_RING`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_ring).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -690,7 +690,7 @@ The axis of the ring when using the emitter [`EMISSION_SHAPE_RING`](#class_cpupa
 - `void` **set_emission_ring_height** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_ring_height** ( )
 
-The height of the ring when using the emitter [`EMISSION_SHAPE_RING`](#class_cpuparticles3d_constant_emission_shape_ring).
+The height of the ring when using the emitter [`EMISSION_SHAPE_RING`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_ring).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -703,7 +703,7 @@ The height of the ring when using the emitter [`EMISSION_SHAPE_RING`](#class_cpu
 - `void` **set_emission_ring_inner_radius** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_ring_inner_radius** ( )
 
-The inner radius of the ring when using the emitter [`EMISSION_SHAPE_RING`](#class_cpuparticles3d_constant_emission_shape_ring).
+The inner radius of the ring when using the emitter [`EMISSION_SHAPE_RING`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_ring).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -716,7 +716,7 @@ The inner radius of the ring when using the emitter [`EMISSION_SHAPE_RING`](#cla
 - `void` **set_emission_ring_radius** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_ring_radius** ( )
 
-The radius of the ring when using the emitter [`EMISSION_SHAPE_RING`](#class_cpuparticles3d_constant_emission_shape_ring).
+The radius of the ring when using the emitter [`EMISSION_SHAPE_RING`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_ring).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -742,7 +742,7 @@ Particles will be emitted inside this region. See [EmissionShape](#enum_cpuparti
 - `void` **set_emission_sphere_radius** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_emission_sphere_radius** ( )
 
-The sphere's radius if [EmissionShape](#enum_cpuparticles3d_emissionshape) is set to [`EMISSION_SHAPE_SPHERE`](#class_cpuparticles3d_constant_emission_shape_sphere).
+The sphere's radius if [EmissionShape](#enum_cpuparticles3d_emissionshape) is set to [`EMISSION_SHAPE_SPHERE`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_sphere).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -755,7 +755,7 @@ The sphere's radius if [EmissionShape](#enum_cpuparticles3d_emissionshape) is se
 - `void` **set_emitting** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_emitting** ( )
 
-If `true`, particles are being emitted. [`emitting`](#class_cpuparticles3d_property_emitting) can be used to start and stop particles from emitting. However, if [`one_shot`](#class_cpuparticles3d_property_one_shot) is `true` setting [`emitting`](#class_cpuparticles3d_property_emitting) to `true` will not restart the emission cycle until after all active particles finish processing. You can use the [`finished`](#class_cpuparticles3d_signal_finished) signal to be notified once all active particles finish processing.
+If `true`, particles are being emitted. [`emitting`](class_cpuparticles3d.md#class_cpuparticles3d_property_emitting) can be used to start and stop particles from emitting. However, if [`one_shot`](class_cpuparticles3d.md#class_cpuparticles3d_property_one_shot) is `true` setting [`emitting`](class_cpuparticles3d.md#class_cpuparticles3d_property_emitting) to `true` will not restart the emission cycle until after all active particles finish processing. You can use the [`finished`](class_cpuparticles3d.md#class_cpuparticles3d_signal_finished) signal to be notified once all active particles finish processing.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -794,7 +794,7 @@ The particle system's frame rate is fixed to a value. For example, changing the 
 - `void` **set_flatness** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_flatness** ( )
 
-Amount of [`spread`](#class_cpuparticles3d_property_spread) in Y/Z plane. A value of `1` restricts particles to X/Z plane.
+Amount of [`spread`](class_cpuparticles3d.md#class_cpuparticles3d_property_spread) in Y/Z plane. A value of `1` restricts particles to X/Z plane.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1067,7 +1067,7 @@ If `true`, particles will not move on the Z axis.
 - `void` **set_particle_flag** ( particle_flag: [ParticleFlags](#enum_cpuparticles3d_particleflags), enable: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_particle_flag** ( particle_flag: [ParticleFlags](#enum_cpuparticles3d_particleflags) ) const[^const]
 
-If `true`, particles rotate around Y axis by [`angle_min`](#class_cpuparticles3d_property_angle_min).
+If `true`, particles rotate around Y axis by [`angle_min`](class_cpuparticles3d.md#class_cpuparticles3d_property_angle_min).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -17,27 +17,27 @@ Real-time global illumination (GI) probe.
 
  **Note:** **VoxelGI** is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
- **Procedural generation:** **VoxelGI** can be baked in an exported project, which makes it suitable for procedurally generated or user-built levels as long as all the geometry is generated in advance. For games where geometry is generated at any time during gameplay, SDFGI is more suitable (see [`Environment.sdfgi_enabled`](#class_environment_property_sdfgi_enabled)).
+ **Procedural generation:** **VoxelGI** can be baked in an exported project, which makes it suitable for procedurally generated or user-built levels as long as all the geometry is generated in advance. For games where geometry is generated at any time during gameplay, SDFGI is more suitable (see [`Environment.sdfgi_enabled`](class_environment.md#class_environment_property_sdfgi_enabled)).
 
- **Performance:** **VoxelGI** is relatively demanding on the GPU and is not suited to low-end hardware such as integrated graphics (consider [`LightmapGI`](class_lightmapgi.md) instead). To improve performance, adjust [`ProjectSettings.rendering/global_illumination/voxel_gi/quality`](#class_projectsettings_property_rendering/global_illumination/voxel_gi/quality) and enable [`ProjectSettings.rendering/global_illumination/gi/use_half_resolution`](#class_projectsettings_property_rendering/global_illumination/gi/use_half_resolution) in the Project Settings. To provide a fallback for low-end hardware, consider adding an option to disable **VoxelGI** in your project's options menus. A **VoxelGI** node can be disabled by hiding it.
+ **Performance:** **VoxelGI** is relatively demanding on the GPU and is not suited to low-end hardware such as integrated graphics (consider [`LightmapGI`](class_lightmapgi.md) instead). To improve performance, adjust [`ProjectSettings.rendering/global_illumination/voxel_gi/quality`](class_projectsettings.md#class_projectsettings_property_rendering/global_illumination/voxel_gi/quality) and enable [`ProjectSettings.rendering/global_illumination/gi/use_half_resolution`](class_projectsettings.md#class_projectsettings_property_rendering/global_illumination/gi/use_half_resolution) in the Project Settings. To provide a fallback for low-end hardware, consider adding an option to disable **VoxelGI** in your project's options menus. A **VoxelGI** node can be disabled by hiding it.
 
- **Note:** Meshes should have sufficiently thick walls to avoid light leaks (avoid one-sided walls). For interior levels, enclose your level geometry in a sufficiently large box and bridge the loops to close the mesh. To further prevent light leaks, you can also strategically place temporary [`MeshInstance3D`](class_meshinstance3d.md) nodes with their [`GeometryInstance3D.gi_mode`](#class_geometryinstance3d_property_gi_mode) set to [`GeometryInstance3D.GI_MODE_STATIC`](#class_geometryinstance3d_constant_gi_mode_static). These temporary nodes can then be hidden after baking the **VoxelGI** node.
+ **Note:** Meshes should have sufficiently thick walls to avoid light leaks (avoid one-sided walls). For interior levels, enclose your level geometry in a sufficiently large box and bridge the loops to close the mesh. To further prevent light leaks, you can also strategically place temporary [`MeshInstance3D`](class_meshinstance3d.md) nodes with their [`GeometryInstance3D.gi_mode`](class_geometryinstance3d.md#class_geometryinstance3d_property_gi_mode) set to [`GeometryInstance3D.GI_MODE_STATIC`](class_geometryinstance3d.md#class_geometryinstance3d_constant_gi_mode_static). These temporary nodes can then be hidden after baking the **VoxelGI** node.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`CameraAttributes`](class_cameraattributes.md) | [`camera_attributes`](#class_voxelgi_property_camera_attributes) |                         |
-| [`VoxelGIData`](class_voxelgidata.md)           | [`data`](#class_voxelgi_property_data)                           |                         |
-| [`Vector3`](class_vector3.md)                   | [`size`](#class_voxelgi_property_size)                           | ``Vector3(20, 20, 20)`` |
-| [Subdiv](#enum_voxelgi_subdiv)                  | [`subdiv`](#class_voxelgi_property_subdiv)                       | ``1``                   |
+| [`CameraAttributes`](class_cameraattributes.md) | [`camera_attributes`](class_voxelgi.md#class_voxelgi_property_camera_attributes) |                         |
+| [`VoxelGIData`](class_voxelgidata.md)           | [`data`](class_voxelgi.md#class_voxelgi_property_data)                           |                         |
+| [`Vector3`](class_vector3.md)                   | [`size`](class_voxelgi.md#class_voxelgi_property_size)                           | ``Vector3(20, 20, 20)`` |
+| [Subdiv](#enum_voxelgi_subdiv)                  | [`subdiv`](class_voxelgi.md#class_voxelgi_property_subdiv)                       | ``1``                   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`bake`](#class_voxelgi_method_bake) ( from_node: [`Node`](class_node.md) = null, create_visual_debug: [`bool`](class_bool.md) = false ) |
-| `void` | [`debug_bake`](#class_voxelgi_method_debug_bake) ( )                                                                                     |
+| `void` | [`bake`](class_voxelgi.md#class_voxelgi_method_bake) ( from_node: [`Node`](class_node.md) = null, create_visual_debug: [`bool`](class_bool.md) = false ) |
+| `void` | [`debug_bake`](class_voxelgi.md#class_voxelgi_method_debug_bake) ( )                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -118,7 +118,7 @@ The [`VoxelGIData`](class_voxelgidata.md) resource that holds the data for this 
 - `void` **set_size** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_size** ( )
 
-The size of the area covered by the **VoxelGI**. If you make the size larger without increasing the subdivisions with [`subdiv`](#class_voxelgi_property_subdiv), the size of each cell will increase and result in lower detailed lighting.
+The size of the area covered by the **VoxelGI**. If you make the size larger without increasing the subdivisions with [`subdiv`](class_voxelgi.md#class_voxelgi_property_subdiv), the size of each cell will increase and result in lower detailed lighting.
 
  **Note:** Size is clamped to 1.0 unit or more on each axis.
 
@@ -145,11 +145,11 @@ Number of times to subdivide the grid that the **VoxelGI** operates on. A higher
 
 `void` **bake** ( from_node: [`Node`](class_node.md) = null, create_visual_debug: [`bool`](class_bool.md) = false )<div id="class_voxelgi_method_bake"></div>
 
-Bakes the effect from all [`GeometryInstance3D`](class_geometryinstance3d.md) s marked with [`GeometryInstance3D.GI_MODE_STATIC`](#class_geometryinstance3d_constant_gi_mode_static) and [`Light3D`](class_light3d.md) s marked with either [`Light3D.BAKE_STATIC`](#class_light3d_constant_bake_static) or [`Light3D.BAKE_DYNAMIC`](#class_light3d_constant_bake_dynamic). If `create_visual_debug` is `true`, after baking the light, this will generate a [`MultiMesh`](class_multimesh.md) that has a cube representing each solid cell with each cube colored to the cell's albedo color. This can be used to visualize the **VoxelGI**'s data and debug any issues that may be occurring.
+Bakes the effect from all [`GeometryInstance3D`](class_geometryinstance3d.md) s marked with [`GeometryInstance3D.GI_MODE_STATIC`](class_geometryinstance3d.md#class_geometryinstance3d_constant_gi_mode_static) and [`Light3D`](class_light3d.md) s marked with either [`Light3D.BAKE_STATIC`](class_light3d.md#class_light3d_constant_bake_static) or [`Light3D.BAKE_DYNAMIC`](class_light3d.md#class_light3d_constant_bake_dynamic). If `create_visual_debug` is `true`, after baking the light, this will generate a [`MultiMesh`](class_multimesh.md) that has a cube representing each solid cell with each cube colored to the cell's albedo color. This can be used to visualize the **VoxelGI**'s data and debug any issues that may be occurring.
 
- **Note:** [`bake`](#class_voxelgi_method_bake) works from the editor and in exported projects. This makes it suitable for procedurally generated or user-built levels. Baking a **VoxelGI** node generally takes from 5 to 20 seconds in most scenes. Reducing [`subdiv`](#class_voxelgi_property_subdiv) can speed up baking.
+ **Note:** [`bake`](class_voxelgi.md#class_voxelgi_method_bake) works from the editor and in exported projects. This makes it suitable for procedurally generated or user-built levels. Baking a **VoxelGI** node generally takes from 5 to 20 seconds in most scenes. Reducing [`subdiv`](class_voxelgi.md#class_voxelgi_property_subdiv) can speed up baking.
 
- **Note:** [`GeometryInstance3D`](class_geometryinstance3d.md) s and [`Light3D`](class_light3d.md) s must be fully ready before [`bake`](#class_voxelgi_method_bake) is called. If you are procedurally creating those and some meshes or lights are missing from your baked **VoxelGI**, use `call_deferred("bake")` instead of calling [`bake`](#class_voxelgi_method_bake) directly.
+ **Note:** [`GeometryInstance3D`](class_geometryinstance3d.md) s and [`Light3D`](class_light3d.md) s must be fully ready before [`bake`](class_voxelgi.md#class_voxelgi_method_bake) is called. If you are procedurally creating those and some meshes or lights are missing from your baked **VoxelGI**, use `call_deferred("bake")` instead of calling [`bake`](class_voxelgi.md#class_voxelgi_method_bake) directly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -159,7 +159,7 @@ Bakes the effect from all [`GeometryInstance3D`](class_geometryinstance3d.md) s 
 
 `void` **debug_bake** ( )<div id="class_voxelgi_method_debug_bake"></div>
 
-Calls [`bake`](#class_voxelgi_method_bake) with `create_visual_debug` enabled.
+Calls [`bake`](class_voxelgi.md#class_voxelgi_method_bake) with `create_visual_debug` enabled.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

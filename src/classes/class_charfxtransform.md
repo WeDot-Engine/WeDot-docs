@@ -19,19 +19,19 @@ By setting various properties on this object, you can control how individual cha
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)             | [`color`](#class_charfxtransform_property_color)                   | ``Color(0, 0, 0, 1)``             |
-| [`float`](class_float.md)             | [`elapsed_time`](#class_charfxtransform_property_elapsed_time)     | ``0.0``                           |
-| [`Dictionary`](class_dictionary.md)   | [`env`](#class_charfxtransform_property_env)                       | ``{}``                            |
-| [`RID`](class_rid.md)                 | [`font`](#class_charfxtransform_property_font)                     | ``RID()``                         |
-| [`int`](class_int.md)                 | [`glyph_count`](#class_charfxtransform_property_glyph_count)       | ``0``                             |
-| [`int`](class_int.md)                 | [`glyph_flags`](#class_charfxtransform_property_glyph_flags)       | ``0``                             |
-| [`int`](class_int.md)                 | [`glyph_index`](#class_charfxtransform_property_glyph_index)       | ``0``                             |
-| [`Vector2`](class_vector2.md)         | [`offset`](#class_charfxtransform_property_offset)                 | ``Vector2(0, 0)``                 |
-| [`bool`](class_bool.md)               | [`outline`](#class_charfxtransform_property_outline)               | ``false``                         |
-| [`Vector2i`](class_vector2i.md)       | [`range`](#class_charfxtransform_property_range)                   | ``Vector2i(0, 0)``                |
-| [`int`](class_int.md)                 | [`relative_index`](#class_charfxtransform_property_relative_index) | ``0``                             |
-| [`Transform2D`](class_transform2d.md) | [`transform`](#class_charfxtransform_property_transform)           | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
-| [`bool`](class_bool.md)               | [`visible`](#class_charfxtransform_property_visible)               | ``true``                          |
+| [`Color`](class_color.md)             | [`color`](class_charfxtransform.md#class_charfxtransform_property_color)                   | ``Color(0, 0, 0, 1)``             |
+| [`float`](class_float.md)             | [`elapsed_time`](class_charfxtransform.md#class_charfxtransform_property_elapsed_time)     | ``0.0``                           |
+| [`Dictionary`](class_dictionary.md)   | [`env`](class_charfxtransform.md#class_charfxtransform_property_env)                       | ``{}``                            |
+| [`RID`](class_rid.md)                 | [`font`](class_charfxtransform.md#class_charfxtransform_property_font)                     | ``RID()``                         |
+| [`int`](class_int.md)                 | [`glyph_count`](class_charfxtransform.md#class_charfxtransform_property_glyph_count)       | ``0``                             |
+| [`int`](class_int.md)                 | [`glyph_flags`](class_charfxtransform.md#class_charfxtransform_property_glyph_flags)       | ``0``                             |
+| [`int`](class_int.md)                 | [`glyph_index`](class_charfxtransform.md#class_charfxtransform_property_glyph_index)       | ``0``                             |
+| [`Vector2`](class_vector2.md)         | [`offset`](class_charfxtransform.md#class_charfxtransform_property_offset)                 | ``Vector2(0, 0)``                 |
+| [`bool`](class_bool.md)               | [`outline`](class_charfxtransform.md#class_charfxtransform_property_outline)               | ``false``                         |
+| [`Vector2i`](class_vector2i.md)       | [`range`](class_charfxtransform.md#class_charfxtransform_property_range)                   | ``Vector2i(0, 0)``                |
+| [`int`](class_int.md)                 | [`relative_index`](class_charfxtransform.md#class_charfxtransform_property_relative_index) | ``0``                             |
+| [`Transform2D`](class_transform2d.md) | [`transform`](class_charfxtransform.md#class_charfxtransform_property_transform)           | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
+| [`bool`](class_bool.md)               | [`visible`](class_charfxtransform.md#class_charfxtransform_property_visible)               | ``true``                          |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -59,7 +59,7 @@ The color the character will be drawn with.
 - `void` **set_elapsed_time** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_elapsed_time** ( )
 
-The time elapsed since the [`RichTextLabel`](class_richtextlabel.md) was added to the scene tree (in seconds). Time stops when the [`RichTextLabel`](class_richtextlabel.md) is paused (see [`Node.process_mode`](#class_node_property_process_mode)). Resets when the text in the [`RichTextLabel`](class_richtextlabel.md) is changed.
+The time elapsed since the [`RichTextLabel`](class_richtextlabel.md) was added to the scene tree (in seconds). Time stops when the [`RichTextLabel`](class_richtextlabel.md) is paused (see [`Node.process_mode`](class_node.md#class_node_property_process_mode)). Resets when the text in the [`RichTextLabel`](class_richtextlabel.md) is changed.
 
  **Note:** Time still passes while the [`RichTextLabel`](class_richtextlabel.md) is hidden.
 
@@ -213,7 +213,7 @@ The current transform of the current glyph. It can be overridden (for example, b
 - `void` **set_visibility** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_visible** ( )
 
-If `true`, the character will be drawn. If `false`, the character will be hidden. Characters around hidden characters will reflow to take the space of hidden characters. If this is not desired, set their [`color`](#class_charfxtransform_property_color) to `Color(1, 1, 1, 0)` instead.
+If `true`, the character will be drawn. If `false`, the character will be hidden. Characters around hidden characters will reflow to take the space of hidden characters. If this is not desired, set their [`color`](class_charfxtransform.md#class_charfxtransform_property_color) to `Color(1, 1, 1, 0)` instead.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -21,27 +21,27 @@ Abstract base class for GUI buttons.
 
 |||
 |:-:|:--|
-| [ActionMode](#enum_basebutton_actionmode)             | [`action_mode`](#class_basebutton_property_action_mode)                   | ``1``                                                             |
-| [`ButtonGroup`](class_buttongroup.md)                 | [`button_group`](#class_basebutton_property_button_group)                 |                                                                   |
-| [MouseButtonMask](#enum_@globalscope_mousebuttonmask) | [`button_mask`](#class_basebutton_property_button_mask)                   | ``1``                                                             |
-| [`bool`](class_bool.md)                               | [`button_pressed`](#class_basebutton_property_button_pressed)             | ``false``                                                         |
-| [`bool`](class_bool.md)                               | [`disabled`](#class_basebutton_property_disabled)                         | ``false``                                                         |
-| [FocusMode](#enum_control_focusmode)                  | focus_mode                                                                | ``2`` (overrides [`Control`](#class_control_property_focus_mode)) |
-| [`bool`](class_bool.md)                               | [`keep_pressed_outside`](#class_basebutton_property_keep_pressed_outside) | ``false``                                                         |
-| [`Shortcut`](class_shortcut.md)                       | [`shortcut`](#class_basebutton_property_shortcut)                         |                                                                   |
-| [`bool`](class_bool.md)                               | [`shortcut_feedback`](#class_basebutton_property_shortcut_feedback)       | ``true``                                                          |
-| [`bool`](class_bool.md)                               | [`shortcut_in_tooltip`](#class_basebutton_property_shortcut_in_tooltip)   | ``true``                                                          |
-| [`bool`](class_bool.md)                               | [`toggle_mode`](#class_basebutton_property_toggle_mode)                   | ``false``                                                         |
+| [ActionMode](#enum_basebutton_actionmode)             | [`action_mode`](class_basebutton.md#class_basebutton_property_action_mode)                   | ``1``                                                                             |
+| [`ButtonGroup`](class_buttongroup.md)                 | [`button_group`](class_basebutton.md#class_basebutton_property_button_group)                 |                                                                                   |
+| [MouseButtonMask](#enum_@globalscope_mousebuttonmask) | [`button_mask`](class_basebutton.md#class_basebutton_property_button_mask)                   | ``1``                                                                             |
+| [`bool`](class_bool.md)                               | [`button_pressed`](class_basebutton.md#class_basebutton_property_button_pressed)             | ``false``                                                                         |
+| [`bool`](class_bool.md)                               | [`disabled`](class_basebutton.md#class_basebutton_property_disabled)                         | ``false``                                                                         |
+| [FocusMode](#enum_control_focusmode)                  | focus_mode                                                                                   | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode)) |
+| [`bool`](class_bool.md)                               | [`keep_pressed_outside`](class_basebutton.md#class_basebutton_property_keep_pressed_outside) | ``false``                                                                         |
+| [`Shortcut`](class_shortcut.md)                       | [`shortcut`](class_basebutton.md#class_basebutton_property_shortcut)                         |                                                                                   |
+| [`bool`](class_bool.md)                               | [`shortcut_feedback`](class_basebutton.md#class_basebutton_property_shortcut_feedback)       | ``true``                                                                          |
+| [`bool`](class_bool.md)                               | [`shortcut_in_tooltip`](class_basebutton.md#class_basebutton_property_shortcut_in_tooltip)   | ``true``                                                                          |
+| [`bool`](class_bool.md)                               | [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode)                   | ``false``                                                                         |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                | [`_pressed`](#class_basebutton_private_method__pressed) ( ) virtual[^virtual]                                     |
-| `void`                                | [`_toggled`](#class_basebutton_private_method__toggled) ( toggled_on: [`bool`](class_bool.md) ) virtual[^virtual] |
-| [DrawMode](#enum_basebutton_drawmode) | [`get_draw_mode`](#class_basebutton_method_get_draw_mode) ( ) const[^const]                                       |
-| [`bool`](class_bool.md)               | [`is_hovered`](#class_basebutton_method_is_hovered) ( ) const[^const]                                             |
-| `void`                                | [`set_pressed_no_signal`](#class_basebutton_method_set_pressed_no_signal) ( pressed: [`bool`](class_bool.md) )    |
+| `void`                                | [`_pressed`](class_basebutton.md#class_basebutton_private_method__pressed) ( ) virtual[^virtual]                                     |
+| `void`                                | [`_toggled`](class_basebutton.md#class_basebutton_private_method__toggled) ( toggled_on: [`bool`](class_bool.md) ) virtual[^virtual] |
+| [DrawMode](#enum_basebutton_drawmode) | [`get_draw_mode`](class_basebutton.md#class_basebutton_method_get_draw_mode) ( ) const[^const]                                       |
+| [`bool`](class_bool.md)               | [`is_hovered`](class_basebutton.md#class_basebutton_method_is_hovered) ( ) const[^const]                                             |
+| `void`                                | [`set_pressed_no_signal`](class_basebutton.md#class_basebutton_method_set_pressed_no_signal) ( pressed: [`bool`](class_bool.md) )    |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -73,9 +73,9 @@ Emitted when the button stops being held down.
 
 **pressed** ( ) <div id="class_basebutton_signal_pressed"></div>
 
-Emitted when the button is toggled or pressed. This is on [`button_down`](#class_basebutton_signal_button_down) if [`action_mode`](#class_basebutton_property_action_mode) is [`ACTION_MODE_BUTTON_PRESS`](#class_basebutton_constant_action_mode_button_press) and on [`button_up`](#class_basebutton_signal_button_up) otherwise.
+Emitted when the button is toggled or pressed. This is on [`button_down`](class_basebutton.md#class_basebutton_signal_button_down) if [`action_mode`](class_basebutton.md#class_basebutton_property_action_mode) is [`ACTION_MODE_BUTTON_PRESS`](class_basebutton.md#class_basebutton_constant_action_mode_button_press) and on [`button_up`](class_basebutton.md#class_basebutton_signal_button_up) otherwise.
 
-If you need to know the button's pressed state (and [`toggle_mode`](#class_basebutton_property_toggle_mode) is active), use [`toggled`](#class_basebutton_signal_toggled) instead.
+If you need to know the button's pressed state (and [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is active), use [`toggled`](class_basebutton.md#class_basebutton_signal_toggled) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -85,7 +85,7 @@ If you need to know the button's pressed state (and [`toggle_mode`](#class_baseb
 
 **toggled** ( toggled_on: [`bool`](class_bool.md) ) <div id="class_basebutton_signal_toggled"></div>
 
-Emitted when the button was just toggled between pressed and normal states (only if [`toggle_mode`](#class_basebutton_property_toggle_mode) is active). The new state is contained in the `toggled_on` argument.
+Emitted when the button was just toggled between pressed and normal states (only if [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is active). The new state is contained in the `toggled_on` argument.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -203,9 +203,9 @@ To allow both left-click and right-click, use `MOUSE_BUTTON_MASK_LEFT | MOUSE_BU
 - `void` **set_pressed** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_pressed** ( )
 
-If `true`, the button's state is pressed. Means the button is pressed down or toggled (if [`toggle_mode`](#class_basebutton_property_toggle_mode) is active). Only works if [`toggle_mode`](#class_basebutton_property_toggle_mode) is `true`.
+If `true`, the button's state is pressed. Means the button is pressed down or toggled (if [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is active). Only works if [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is `true`.
 
- **Note:** Setting [`button_pressed`](#class_basebutton_property_button_pressed) will result in [`toggled`](#class_basebutton_signal_toggled) to be emitted. If you want to change the pressed state without emitting that signal, use [`set_pressed_no_signal`](#class_basebutton_method_set_pressed_no_signal).
+ **Note:** Setting [`button_pressed`](class_basebutton.md#class_basebutton_property_button_pressed) will result in [`toggled`](class_basebutton.md#class_basebutton_signal_toggled) to be emitted. If you want to change the pressed state without emitting that signal, use [`set_pressed_no_signal`](class_basebutton.md#class_basebutton_method_set_pressed_no_signal).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -259,7 +259,7 @@ If `true`, the button stays pressed when moving the cursor outside the button wh
 - `void` **set_shortcut_feedback** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_shortcut_feedback** ( )
 
-If `true`, the button will highlight for a short amount of time when its shortcut is activated. If `false` and [`toggle_mode`](#class_basebutton_property_toggle_mode) is `false`, the shortcut will activate without any visual feedback.
+If `true`, the button will highlight for a short amount of time when its shortcut is activated. If `false` and [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is `false`, the shortcut will activate without any visual feedback.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -297,7 +297,7 @@ If `true`, the button is in toggle mode. Makes the button flip state between pre
 
 `void` **_pressed** ( ) virtual[^virtual]<div id="class_basebutton_private_method__pressed"></div>
 
-Called when the button is pressed. If you need to know the button's pressed state (and [`toggle_mode`](#class_basebutton_property_toggle_mode) is active), use [`_toggled`](#class_basebutton_private_method__toggled) instead.
+Called when the button is pressed. If you need to know the button's pressed state (and [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is active), use [`_toggled`](class_basebutton.md#class_basebutton_private_method__toggled) instead.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -307,7 +307,7 @@ Called when the button is pressed. If you need to know the button's pressed stat
 
 `void` **_toggled** ( toggled_on: [`bool`](class_bool.md) ) virtual[^virtual]<div id="class_basebutton_private_method__toggled"></div>
 
-Called when the button is toggled (only if [`toggle_mode`](#class_basebutton_property_toggle_mode) is active).
+Called when the button is toggled (only if [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is active).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -337,9 +337,9 @@ Returns `true` if the mouse has entered the button and has not left it yet.
 
 `void` **set_pressed_no_signal** ( pressed: [`bool`](class_bool.md) )<div id="class_basebutton_method_set_pressed_no_signal"></div>
 
-Changes the [`button_pressed`](#class_basebutton_property_button_pressed) state of the button, without emitting [`toggled`](#class_basebutton_signal_toggled). Use when you just want to change the state of the button without sending the pressed event (e.g. when initializing scene). Only works if [`toggle_mode`](#class_basebutton_property_toggle_mode) is `true`.
+Changes the [`button_pressed`](class_basebutton.md#class_basebutton_property_button_pressed) state of the button, without emitting [`toggled`](class_basebutton.md#class_basebutton_signal_toggled). Use when you just want to change the state of the button without sending the pressed event (e.g. when initializing scene). Only works if [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is `true`.
 
- **Note:** This method doesn't unpress other buttons in [`button_group`](#class_basebutton_property_button_group).
+ **Note:** This method doesn't unpress other buttons in [`button_group`](class_basebutton.md#class_basebutton_property_button_group).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

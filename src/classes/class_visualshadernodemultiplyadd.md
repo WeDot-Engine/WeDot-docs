@@ -19,7 +19,7 @@ Uses three operands to compute `(a * b + c)` expression.
 
 |||
 |:-:|:--|
-| [OpType](#enum_visualshadernodemultiplyadd_optype) | [`op_type`](#class_visualshadernodemultiplyadd_property_op_type) | ``0`` |
+| [OpType](#enum_visualshadernodemultiplyadd_optype) | [`op_type`](class_visualshadernodemultiplyadd.md#class_visualshadernodemultiplyadd_property_op_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

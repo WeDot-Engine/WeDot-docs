@@ -17,7 +17,7 @@ A hierarchy of **Bone2D** s can be bound to a [`Skeleton2D`](class_skeleton2d.md
 
 You can use **Bone2D** and [`Skeleton2D`](class_skeleton2d.md) nodes to animate 2D meshes created with the [`Polygon2D`](class_polygon2d.md) UV editor.
 
-Each bone has a [`rest`](#class_bone2d_property_rest) transform that you can reset to with [`apply_rest`](#class_bone2d_method_apply_rest). These rest poses are relative to the bone's parent.
+Each bone has a [`rest`](class_bone2d.md#class_bone2d_property_rest) transform that you can reset to with [`apply_rest`](class_bone2d.md#class_bone2d_method_apply_rest). These rest poses are relative to the bone's parent.
 
 If in the editor, you can set the rest pose of an entire skeleton using a menu option, from the code, you need to iterate over the bones to set their individual rest poses.
 
@@ -25,21 +25,21 @@ If in the editor, you can set the rest pose of an entire skeleton using a menu o
 
 |||
 |:-:|:--|
-| [`Transform2D`](class_transform2d.md) | [`rest`](#class_bone2d_property_rest) | ``Transform2D(0, 0, 0, 0, 0, 0)`` |
+| [`Transform2D`](class_transform2d.md) | [`rest`](class_bone2d.md#class_bone2d_property_rest) | ``Transform2D(0, 0, 0, 0, 0, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                | [`apply_rest`](#class_bone2d_method_apply_rest) ( )                                                                                         |
-| [`bool`](class_bool.md)               | [`get_autocalculate_length_and_angle`](#class_bone2d_method_get_autocalculate_length_and_angle) ( ) const[^const]                           |
-| [`float`](class_float.md)             | [`get_bone_angle`](#class_bone2d_method_get_bone_angle) ( ) const[^const]                                                                   |
-| [`int`](class_int.md)                 | [`get_index_in_skeleton`](#class_bone2d_method_get_index_in_skeleton) ( ) const[^const]                                                     |
-| [`float`](class_float.md)             | [`get_length`](#class_bone2d_method_get_length) ( ) const[^const]                                                                           |
-| [`Transform2D`](class_transform2d.md) | [`get_skeleton_rest`](#class_bone2d_method_get_skeleton_rest) ( ) const[^const]                                                             |
-| `void`                                | [`set_autocalculate_length_and_angle`](#class_bone2d_method_set_autocalculate_length_and_angle) ( auto_calculate: [`bool`](class_bool.md) ) |
-| `void`                                | [`set_bone_angle`](#class_bone2d_method_set_bone_angle) ( angle: [`float`](class_float.md) )                                                |
-| `void`                                | [`set_length`](#class_bone2d_method_set_length) ( length: [`float`](class_float.md) )                                                       |
+| `void`                                | [`apply_rest`](class_bone2d.md#class_bone2d_method_apply_rest) ( )                                                                                         |
+| [`bool`](class_bool.md)               | [`get_autocalculate_length_and_angle`](class_bone2d.md#class_bone2d_method_get_autocalculate_length_and_angle) ( ) const[^const]                           |
+| [`float`](class_float.md)             | [`get_bone_angle`](class_bone2d.md#class_bone2d_method_get_bone_angle) ( ) const[^const]                                                                   |
+| [`int`](class_int.md)                 | [`get_index_in_skeleton`](class_bone2d.md#class_bone2d_method_get_index_in_skeleton) ( ) const[^const]                                                     |
+| [`float`](class_float.md)             | [`get_length`](class_bone2d.md#class_bone2d_method_get_length) ( ) const[^const]                                                                           |
+| [`Transform2D`](class_transform2d.md) | [`get_skeleton_rest`](class_bone2d.md#class_bone2d_method_get_skeleton_rest) ( ) const[^const]                                                             |
+| `void`                                | [`set_autocalculate_length_and_angle`](class_bone2d.md#class_bone2d_method_set_autocalculate_length_and_angle) ( auto_calculate: [`bool`](class_bool.md) ) |
+| `void`                                | [`set_bone_angle`](class_bone2d.md#class_bone2d_method_set_bone_angle) ( angle: [`float`](class_float.md) )                                                |
+| `void`                                | [`set_length`](class_bone2d.md#class_bone2d_method_set_length) ( length: [`float`](class_float.md) )                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -54,7 +54,7 @@ If in the editor, you can set the rest pose of an entire skeleton using a menu o
 - `void` **set_rest** ( value: [`Transform2D`](class_transform2d.md) )
 - [`Transform2D`](class_transform2d.md) **get_rest** ( )
 
-Rest transform of the bone. You can reset the node's transforms to this value using [`apply_rest`](#class_bone2d_method_apply_rest).
+Rest transform of the bone. You can reset the node's transforms to this value using [`apply_rest`](class_bone2d.md#class_bone2d_method_apply_rest).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -66,7 +66,7 @@ Rest transform of the bone. You can reset the node's transforms to this value us
 
 `void` **apply_rest** ( )<div id="class_bone2d_method_apply_rest"></div>
 
-Resets the bone to the rest pose. This is equivalent to setting [`Node2D.transform`](#class_node2d_property_transform) to [`rest`](#class_bone2d_property_rest).
+Resets the bone to the rest pose. This is equivalent to setting [`Node2D.transform`](class_node2d.md#class_node2d_property_transform) to [`rest`](class_bone2d.md#class_bone2d_property_rest).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -88,7 +88,7 @@ Returns whether this **Bone2D** is going to autocalculate its length and bone an
 
 Returns the angle of the bone in the **Bone2D**.
 
- **Note:** This is different from the **Bone2D**'s rotation. The bone's angle is the rotation of the bone shown by the gizmo, which is unaffected by the **Bone2D**'s [`Node2D.transform`](#class_node2d_property_transform).
+ **Note:** This is different from the **Bone2D**'s rotation. The bone's angle is the rotation of the bone shown by the gizmo, which is unaffected by the **Bone2D**'s [`Node2D.transform`](class_node2d.md#class_node2d_property_transform).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -118,7 +118,7 @@ Returns the length of the bone in the **Bone2D** node.
 
 [`Transform2D`](class_transform2d.md) **get_skeleton_rest** ( ) const[^const]<div id="class_bone2d_method_get_skeleton_rest"></div>
 
-Returns the node's [`rest`](#class_bone2d_property_rest) [`Transform2D`](class_transform2d.md) if it doesn't have a parent, or its rest pose relative to its parent.
+Returns the node's [`rest`](class_bone2d.md#class_bone2d_property_rest) [`Transform2D`](class_transform2d.md) if it doesn't have a parent, or its rest pose relative to its parent.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -140,7 +140,7 @@ When set to `true`, the **Bone2D** node will attempt to automatically calculate 
 
 Sets the bone angle for the **Bone2D**. This is typically set to the rotation from the **Bone2D** to a child **Bone2D** node.
 
- **Note:** This is different from the **Bone2D**'s rotation. The bone's angle is the rotation of the bone shown by the gizmo, which is unaffected by the **Bone2D**'s [`Node2D.transform`](#class_node2d_property_transform).
+ **Note:** This is different from the **Bone2D**'s rotation. The bone's angle is the rotation of the bone shown by the gizmo, which is unaffected by the **Bone2D**'s [`Node2D.transform`](class_node2d.md#class_node2d_property_transform).
 
 <!-- rst-class:: classref-item-separator -->
 

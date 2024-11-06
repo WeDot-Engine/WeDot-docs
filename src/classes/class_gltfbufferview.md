@@ -15,24 +15,24 @@ Represents a GLTF buffer view.
 
 GLTFBufferView is a data structure representing GLTF a `bufferView` that would be found in the `"bufferViews"` array. A buffer is a blob of binary data. A buffer view is a slice of a buffer that can be used to identify and extract data from the buffer.
 
-Most custom uses of buffers only need to use the [`buffer`](#class_gltfbufferview_property_buffer), [`byte_length`](#class_gltfbufferview_property_byte_length), and [`byte_offset`](#class_gltfbufferview_property_byte_offset). The [`byte_stride`](#class_gltfbufferview_property_byte_stride) and [`indices`](#class_gltfbufferview_property_indices) properties are for more advanced use cases such as interleaved mesh data encoded for the GPU.
+Most custom uses of buffers only need to use the [`buffer`](class_gltfbufferview.md#class_gltfbufferview_property_buffer), [`byte_length`](class_gltfbufferview.md#class_gltfbufferview_property_byte_length), and [`byte_offset`](class_gltfbufferview.md#class_gltfbufferview_property_byte_offset). The [`byte_stride`](class_gltfbufferview.md#class_gltfbufferview_property_byte_stride) and [`indices`](class_gltfbufferview.md#class_gltfbufferview_property_indices) properties are for more advanced use cases such as interleaved mesh data encoded for the GPU.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)   | [`buffer`](#class_gltfbufferview_property_buffer)                       | ``-1``    |
-| [`int`](class_int.md)   | [`byte_length`](#class_gltfbufferview_property_byte_length)             | ``0``     |
-| [`int`](class_int.md)   | [`byte_offset`](#class_gltfbufferview_property_byte_offset)             | ``0``     |
-| [`int`](class_int.md)   | [`byte_stride`](#class_gltfbufferview_property_byte_stride)             | ``-1``    |
-| [`bool`](class_bool.md) | [`indices`](#class_gltfbufferview_property_indices)                     | ``false`` |
-| [`bool`](class_bool.md) | [`vertex_attributes`](#class_gltfbufferview_property_vertex_attributes) | ``false`` |
+| [`int`](class_int.md)   | [`buffer`](class_gltfbufferview.md#class_gltfbufferview_property_buffer)                       | ``-1``    |
+| [`int`](class_int.md)   | [`byte_length`](class_gltfbufferview.md#class_gltfbufferview_property_byte_length)             | ``0``     |
+| [`int`](class_int.md)   | [`byte_offset`](class_gltfbufferview.md#class_gltfbufferview_property_byte_offset)             | ``0``     |
+| [`int`](class_int.md)   | [`byte_stride`](class_gltfbufferview.md#class_gltfbufferview_property_byte_stride)             | ``-1``    |
+| [`bool`](class_bool.md) | [`indices`](class_gltfbufferview.md#class_gltfbufferview_property_indices)                     | ``false`` |
+| [`bool`](class_bool.md) | [`vertex_attributes`](class_gltfbufferview.md#class_gltfbufferview_property_vertex_attributes) | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`load_buffer_view_data`](#class_gltfbufferview_method_load_buffer_view_data) ( state: [`GLTFState`](class_gltfstate.md) ) const[^const] |
+| [`PackedByteArray`](class_packedbytearray.md) | [`load_buffer_view_data`](class_gltfbufferview.md#class_gltfbufferview_method_load_buffer_view_data) ( state: [`GLTFState`](class_gltfstate.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

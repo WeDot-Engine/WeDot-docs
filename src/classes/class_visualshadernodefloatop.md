@@ -13,13 +13,13 @@ A floating-point scalar operator to be used within the visual shader graph.
 
 ## 描述
 
-Applies [`operator`](#class_visualshadernodefloatop_property_operator) to two floating-point inputs: `a` and `b`.
+Applies [`operator`](class_visualshadernodefloatop.md#class_visualshadernodefloatop_property_operator) to two floating-point inputs: `a` and `b`.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Operator](#enum_visualshadernodefloatop_operator) | [`operator`](#class_visualshadernodefloatop_property_operator) | ``0`` |
+| [Operator](#enum_visualshadernodefloatop_operator) | [`operator`](class_visualshadernodefloatop.md#class_visualshadernodefloatop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->
 

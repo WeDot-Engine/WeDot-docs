@@ -17,7 +17,7 @@ When placed on a [`TileMap`](class_tilemap.md), tiles from **TileSetScenesCollec
 
 Scenes are instantiated as children of the [`TileMap`](class_tilemap.md) when it enters the tree. If you add/remove a scene tile in the [`TileMap`](class_tilemap.md) that is already inside the tree, the [`TileMap`](class_tilemap.md) will automatically instantiate/free the scene accordingly.
 
- **Note:** Scene tiles all occupy one tile slot and instead use alternate tile ID to identify scene index. [`TileSetSource.get_tiles_count`](#class_tilesetsource_method_get_tiles_count) will always return `1`. Use [`get_scene_tiles_count`](#class_tilesetscenescollectionsource_method_get_scene_tiles_count) to get a number of scenes in a **TileSetScenesCollectionSource**.
+ **Note:** Scene tiles all occupy one tile slot and instead use alternate tile ID to identify scene index. [`TileSetSource.get_tiles_count`](class_tilesetsource.md#class_tilesetsource_method_get_tiles_count) will always return `1`. Use [`get_scene_tiles_count`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_get_scene_tiles_count) to get a number of scenes in a **TileSetScenesCollectionSource**.
 
 Use this code if you want to find the scene path at a given tile in [`TileMapLayer`](class_tilemaplayer.md):
 
@@ -59,17 +59,17 @@ Use this code if you want to find the scene path at a given tile in [`TileMapLay
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                 | [`create_scene_tile`](#class_tilesetscenescollectionsource_method_create_scene_tile) ( packed_scene: [`PackedScene`](class_packedscene.md), id_override: [`int`](class_int.md) = -1 )              |
-| [`int`](class_int.md)                 | [`get_next_scene_tile_id`](#class_tilesetscenescollectionsource_method_get_next_scene_tile_id) ( ) const[^const]                                                                                   |
-| [`bool`](class_bool.md)               | [`get_scene_tile_display_placeholder`](#class_tilesetscenescollectionsource_method_get_scene_tile_display_placeholder) ( id: [`int`](class_int.md) ) const[^const]                                 |
-| [`int`](class_int.md)                 | [`get_scene_tile_id`](#class_tilesetscenescollectionsource_method_get_scene_tile_id) ( index: [`int`](class_int.md) )                                                                              |
-| [`PackedScene`](class_packedscene.md) | [`get_scene_tile_scene`](#class_tilesetscenescollectionsource_method_get_scene_tile_scene) ( id: [`int`](class_int.md) ) const[^const]                                                             |
-| [`int`](class_int.md)                 | [`get_scene_tiles_count`](#class_tilesetscenescollectionsource_method_get_scene_tiles_count) ( )                                                                                                   |
-| [`bool`](class_bool.md)               | [`has_scene_tile_id`](#class_tilesetscenescollectionsource_method_has_scene_tile_id) ( id: [`int`](class_int.md) )                                                                                 |
-| `void`                                | [`remove_scene_tile`](#class_tilesetscenescollectionsource_method_remove_scene_tile) ( id: [`int`](class_int.md) )                                                                                 |
-| `void`                                | [`set_scene_tile_display_placeholder`](#class_tilesetscenescollectionsource_method_set_scene_tile_display_placeholder) ( id: [`int`](class_int.md), display_placeholder: [`bool`](class_bool.md) ) |
-| `void`                                | [`set_scene_tile_id`](#class_tilesetscenescollectionsource_method_set_scene_tile_id) ( id: [`int`](class_int.md), new_id: [`int`](class_int.md) )                                                  |
-| `void`                                | [`set_scene_tile_scene`](#class_tilesetscenescollectionsource_method_set_scene_tile_scene) ( id: [`int`](class_int.md), packed_scene: [`PackedScene`](class_packedscene.md) )                      |
+| [`int`](class_int.md)                 | [`create_scene_tile`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_create_scene_tile) ( packed_scene: [`PackedScene`](class_packedscene.md), id_override: [`int`](class_int.md) = -1 )              |
+| [`int`](class_int.md)                 | [`get_next_scene_tile_id`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_get_next_scene_tile_id) ( ) const[^const]                                                                                   |
+| [`bool`](class_bool.md)               | [`get_scene_tile_display_placeholder`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_get_scene_tile_display_placeholder) ( id: [`int`](class_int.md) ) const[^const]                                 |
+| [`int`](class_int.md)                 | [`get_scene_tile_id`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_get_scene_tile_id) ( index: [`int`](class_int.md) )                                                                              |
+| [`PackedScene`](class_packedscene.md) | [`get_scene_tile_scene`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_get_scene_tile_scene) ( id: [`int`](class_int.md) ) const[^const]                                                             |
+| [`int`](class_int.md)                 | [`get_scene_tiles_count`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_get_scene_tiles_count) ( )                                                                                                   |
+| [`bool`](class_bool.md)               | [`has_scene_tile_id`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_has_scene_tile_id) ( id: [`int`](class_int.md) )                                                                                 |
+| `void`                                | [`remove_scene_tile`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_remove_scene_tile) ( id: [`int`](class_int.md) )                                                                                 |
+| `void`                                | [`set_scene_tile_display_placeholder`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_set_scene_tile_display_placeholder) ( id: [`int`](class_int.md), display_placeholder: [`bool`](class_bool.md) ) |
+| `void`                                | [`set_scene_tile_id`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_set_scene_tile_id) ( id: [`int`](class_int.md), new_id: [`int`](class_int.md) )                                                  |
+| `void`                                | [`set_scene_tile_scene`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_set_scene_tile_scene) ( id: [`int`](class_int.md), packed_scene: [`PackedScene`](class_packedscene.md) )                      |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -93,7 +93,7 @@ Returns a newly generated unique ID.
 
 [`int`](class_int.md) **get_next_scene_tile_id** ( ) const[^const]<div id="class_tilesetscenescollectionsource_method_get_next_scene_tile_id"></div>
 
-Returns the scene ID a following call to [`create_scene_tile`](#class_tilesetscenescollectionsource_method_create_scene_tile) would return.
+Returns the scene ID a following call to [`create_scene_tile`](class_tilesetscenescollectionsource.md#class_tilesetscenescollectionsource_method_create_scene_tile) would return.
 
 <!-- rst-class:: classref-item-separator -->
 

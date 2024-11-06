@@ -9,30 +9,30 @@
 
 **继承：** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Provides parameters for [`PhysicsDirectSpaceState3D.intersect_ray`](#class_physicsdirectspacestate3d_method_intersect_ray).
+Provides parameters for [`PhysicsDirectSpaceState3D.intersect_ray`](class_physicsdirectspacestate3d.md#class_physicsdirectspacestate3d_method_intersect_ray).
 
 ## 描述
 
-By changing various properties of this object, such as the ray position, you can configure the parameters for [`PhysicsDirectSpaceState3D.intersect_ray`](#class_physicsdirectspacestate3d_method_intersect_ray).
+By changing various properties of this object, such as the ray position, you can configure the parameters for [`PhysicsDirectSpaceState3D.intersect_ray`](class_physicsdirectspacestate3d.md#class_physicsdirectspacestate3d_method_intersect_ray).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                       | [`collide_with_areas`](#class_physicsrayqueryparameters3d_property_collide_with_areas)   | ``false``            |
-| [`bool`](class_bool.md)                       | [`collide_with_bodies`](#class_physicsrayqueryparameters3d_property_collide_with_bodies) | ``true``             |
-| [`int`](class_int.md)                         | [`collision_mask`](#class_physicsrayqueryparameters3d_property_collision_mask)           | ``4294967295``       |
-| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude`](#class_physicsrayqueryparameters3d_property_exclude)                         | ``[]``               |
-| [`Vector3`](class_vector3.md)                 | [`from`](#class_physicsrayqueryparameters3d_property_from)                               | ``Vector3(0, 0, 0)`` |
-| [`bool`](class_bool.md)                       | [`hit_back_faces`](#class_physicsrayqueryparameters3d_property_hit_back_faces)           | ``true``             |
-| [`bool`](class_bool.md)                       | [`hit_from_inside`](#class_physicsrayqueryparameters3d_property_hit_from_inside)         | ``false``            |
-| [`Vector3`](class_vector3.md)                 | [`to`](#class_physicsrayqueryparameters3d_property_to)                                   | ``Vector3(0, 0, 0)`` |
+| [`bool`](class_bool.md)                       | [`collide_with_areas`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_property_collide_with_areas)   | ``false``            |
+| [`bool`](class_bool.md)                       | [`collide_with_bodies`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_property_collide_with_bodies) | ``true``             |
+| [`int`](class_int.md)                         | [`collision_mask`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_property_collision_mask)           | ``4294967295``       |
+| [Array](class_array.md) [`RID`](class_rid.md) | [`exclude`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_property_exclude)                         | ``[]``               |
+| [`Vector3`](class_vector3.md)                 | [`from`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_property_from)                               | ``Vector3(0, 0, 0)`` |
+| [`bool`](class_bool.md)                       | [`hit_back_faces`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_property_hit_back_faces)           | ``true``             |
+| [`bool`](class_bool.md)                       | [`hit_from_inside`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_property_hit_from_inside)         | ``false``            |
+| [`Vector3`](class_vector3.md)                 | [`to`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_property_to)                                   | ``Vector3(0, 0, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`PhysicsRayQueryParameters3D`](class_physicsrayqueryparameters3d.md) | [`create`](#class_physicsrayqueryparameters3d_method_create) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md), collision_mask: [`int`](class_int.md) = 4294967295, exclude: [Array](class_array.md) [`RID`](class_rid.md) = [] ) static[^static] |
+| [`PhysicsRayQueryParameters3D`](class_physicsrayqueryparameters3d.md) | [`create`](class_physicsrayqueryparameters3d.md#class_physicsrayqueryparameters3d_method_create) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md), collision_mask: [`int`](class_int.md) = 4294967295, exclude: [Array](class_array.md) [`RID`](class_rid.md) = [] ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -86,7 +86,7 @@ The physics layers the query will detect (as a bitmask). By default, all collisi
 - `void` **set_exclude** ( value: [Array](class_array.md) [`RID`](class_rid.md) )
 - [Array](class_array.md) [`RID`](class_rid.md) **get_exclude** ( )
 
-The list of object [`RID`](class_rid.md) s that will be excluded from collisions. Use [`CollisionObject3D.get_rid`](#class_collisionobject3d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject3D`](class_collisionobject3d.md)-derived node.
+The list of object [`RID`](class_rid.md) s that will be excluded from collisions. Use [`CollisionObject3D.get_rid`](class_collisionobject3d.md#class_collisionobject3d_method_get_rid) to get the [`RID`](class_rid.md) associated with a [`CollisionObject3D`](class_collisionobject3d.md)-derived node.
 
  **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then assign it to the property again.
 

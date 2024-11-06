@@ -19,12 +19,12 @@ Provides data transformation and encoding utility functions.
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`base64_to_raw`](#class_marshalls_method_base64_to_raw) ( base64_str: [`String`](class_string.md) )                                                         |
-| [`String`](class_string.md)                   | [`base64_to_utf8`](#class_marshalls_method_base64_to_utf8) ( base64_str: [`String`](class_string.md) )                                                       |
-| [`Variant`](class_variant.md)                 | [`base64_to_variant`](#class_marshalls_method_base64_to_variant) ( base64_str: [`String`](class_string.md), allow_objects: [`bool`](class_bool.md) = false ) |
-| [`String`](class_string.md)                   | [`raw_to_base64`](#class_marshalls_method_raw_to_base64) ( array: [`PackedByteArray`](class_packedbytearray.md) )                                            |
-| [`String`](class_string.md)                   | [`utf8_to_base64`](#class_marshalls_method_utf8_to_base64) ( utf8_str: [`String`](class_string.md) )                                                         |
-| [`String`](class_string.md)                   | [`variant_to_base64`](#class_marshalls_method_variant_to_base64) ( variant: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false )   |
+| [`PackedByteArray`](class_packedbytearray.md) | [`base64_to_raw`](class_marshalls.md#class_marshalls_method_base64_to_raw) ( base64_str: [`String`](class_string.md) )                                                         |
+| [`String`](class_string.md)                   | [`base64_to_utf8`](class_marshalls.md#class_marshalls_method_base64_to_utf8) ( base64_str: [`String`](class_string.md) )                                                       |
+| [`Variant`](class_variant.md)                 | [`base64_to_variant`](class_marshalls.md#class_marshalls_method_base64_to_variant) ( base64_str: [`String`](class_string.md), allow_objects: [`bool`](class_bool.md) = false ) |
+| [`String`](class_string.md)                   | [`raw_to_base64`](class_marshalls.md#class_marshalls_method_raw_to_base64) ( array: [`PackedByteArray`](class_packedbytearray.md) )                                            |
+| [`String`](class_string.md)                   | [`utf8_to_base64`](class_marshalls.md#class_marshalls_method_utf8_to_base64) ( utf8_str: [`String`](class_string.md) )                                                         |
+| [`String`](class_string.md)                   | [`variant_to_base64`](class_marshalls.md#class_marshalls_method_variant_to_base64) ( variant: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false )   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -58,7 +58,7 @@ Returns a decoded string corresponding to the Base64-encoded string `base64_str`
 
 Returns a decoded [`Variant`](class_variant.md) corresponding to the Base64-encoded string `base64_str`. If `allow_objects` is `true`, decoding objects is allowed.
 
-Internally, this uses the same decoding mechanism as the [`@GlobalScope.bytes_to_var`](#class_@globalscope_method_bytes_to_var) method.
+Internally, this uses the same decoding mechanism as the [`@GlobalScope.bytes_to_var`](class_@globalscope.md#class_@globalscope_method_bytes_to_var) method.
 
  **Warning:** Deserialized objects can contain code which gets executed. Do not use this option if the serialized object comes from untrusted sources to avoid potential security threats such as remote code execution.
 
@@ -92,7 +92,7 @@ Returns a Base64-encoded string of the UTF-8 string `utf8_str`.
 
 Returns a Base64-encoded string of the [`Variant`](class_variant.md) `variant`. If `full_objects` is `true`, encoding objects is allowed (and can potentially include code).
 
-Internally, this uses the same encoding mechanism as the [`@GlobalScope.var_to_bytes`](#class_@globalscope_method_var_to_bytes) method.
+Internally, this uses the same encoding mechanism as the [`@GlobalScope.var_to_bytes`](class_@globalscope.md#class_@globalscope_method_var_to_bytes) method.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

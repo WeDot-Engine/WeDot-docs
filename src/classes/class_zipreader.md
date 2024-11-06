@@ -33,11 +33,11 @@ This class implements a reader that can extract the content of individual files 
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)                 | [`close`](#class_zipreader_method_close) ( )                                                                                               |
-| [`bool`](class_bool.md)                           | [`file_exists`](#class_zipreader_method_file_exists) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true ) |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_files`](#class_zipreader_method_get_files) ( )                                                                                       |
-| [Error](#enum_@globalscope_error)                 | [`open`](#class_zipreader_method_open) ( path: [`String`](class_string.md) )                                                               |
-| [`PackedByteArray`](class_packedbytearray.md)     | [`read_file`](#class_zipreader_method_read_file) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true )     |
+| [Error](#enum_@globalscope_error)                 | [`close`](class_zipreader.md#class_zipreader_method_close) ( )                                                                                               |
+| [`bool`](class_bool.md)                           | [`file_exists`](class_zipreader.md#class_zipreader_method_file_exists) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true ) |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_files`](class_zipreader.md#class_zipreader_method_get_files) ( )                                                                                       |
+| [Error](#enum_@globalscope_error)                 | [`open`](class_zipreader.md#class_zipreader_method_open) ( path: [`String`](class_string.md) )                                                               |
+| [`PackedByteArray`](class_packedbytearray.md)     | [`read_file`](class_zipreader.md#class_zipreader_method_read_file) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true )     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -61,7 +61,7 @@ Closes the underlying resources used by this instance.
 
 Returns `true` if the file exists in the loaded zip archive.
 
-Must be called after [`open`](#class_zipreader_method_open).
+Must be called after [`open`](class_zipreader.md#class_zipreader_method_open).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -73,7 +73,7 @@ Must be called after [`open`](#class_zipreader_method_open).
 
 Returns the list of names of all files in the loaded archive.
 
-Must be called after [`open`](#class_zipreader_method_open).
+Must be called after [`open`](class_zipreader.md#class_zipreader_method_open).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -95,7 +95,7 @@ Opens the zip archive at the given `path` and reads its file index.
 
 Loads the whole content of a file in the loaded zip archive into memory and returns it.
 
-Must be called after [`open`](#class_zipreader_method_open).
+Must be called after [`open`](class_zipreader.md#class_zipreader_method_open).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

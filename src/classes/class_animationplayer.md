@@ -25,44 +25,44 @@ Updating the target properties of animations occurs at the process frame.
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                  | [`assigned_animation`](#class_animationplayer_property_assigned_animation)                                       |           |
-| [`String`](class_string.md)                  | [`autoplay`](#class_animationplayer_property_autoplay)                                                           | ``""``    |
-| [`String`](class_string.md)                  | [`current_animation`](#class_animationplayer_property_current_animation)                                         | ``""``    |
-| [`float`](class_float.md)                    | [`current_animation_length`](#class_animationplayer_property_current_animation_length)                           |           |
-| [`float`](class_float.md)                    | [`current_animation_position`](#class_animationplayer_property_current_animation_position)                       |           |
-| [`bool`](class_bool.md)                      | [`movie_quit_on_finish`](#class_animationplayer_property_movie_quit_on_finish)                                   | ``false`` |
-| [`bool`](class_bool.md)                      | [`playback_auto_capture`](#class_animationplayer_property_playback_auto_capture)                                 | ``true``  |
-| [`float`](class_float.md)                    | [`playback_auto_capture_duration`](#class_animationplayer_property_playback_auto_capture_duration)               | ``-1.0``  |
-| [EaseType](#enum_tween_easetype)             | [`playback_auto_capture_ease_type`](#class_animationplayer_property_playback_auto_capture_ease_type)             | ``0``     |
-| [TransitionType](#enum_tween_transitiontype) | [`playback_auto_capture_transition_type`](#class_animationplayer_property_playback_auto_capture_transition_type) | ``0``     |
-| [`float`](class_float.md)                    | [`playback_default_blend_time`](#class_animationplayer_property_playback_default_blend_time)                     | ``0.0``   |
-| [`float`](class_float.md)                    | [`speed_scale`](#class_animationplayer_property_speed_scale)                                                     | ``1.0``   |
+| [`String`](class_string.md)                  | [`assigned_animation`](class_animationplayer.md#class_animationplayer_property_assigned_animation)                                       |           |
+| [`String`](class_string.md)                  | [`autoplay`](class_animationplayer.md#class_animationplayer_property_autoplay)                                                           | ``""``    |
+| [`String`](class_string.md)                  | [`current_animation`](class_animationplayer.md#class_animationplayer_property_current_animation)                                         | ``""``    |
+| [`float`](class_float.md)                    | [`current_animation_length`](class_animationplayer.md#class_animationplayer_property_current_animation_length)                           |           |
+| [`float`](class_float.md)                    | [`current_animation_position`](class_animationplayer.md#class_animationplayer_property_current_animation_position)                       |           |
+| [`bool`](class_bool.md)                      | [`movie_quit_on_finish`](class_animationplayer.md#class_animationplayer_property_movie_quit_on_finish)                                   | ``false`` |
+| [`bool`](class_bool.md)                      | [`playback_auto_capture`](class_animationplayer.md#class_animationplayer_property_playback_auto_capture)                                 | ``true``  |
+| [`float`](class_float.md)                    | [`playback_auto_capture_duration`](class_animationplayer.md#class_animationplayer_property_playback_auto_capture_duration)               | ``-1.0``  |
+| [EaseType](#enum_tween_easetype)             | [`playback_auto_capture_ease_type`](class_animationplayer.md#class_animationplayer_property_playback_auto_capture_ease_type)             | ``0``     |
+| [TransitionType](#enum_tween_transitiontype) | [`playback_auto_capture_transition_type`](class_animationplayer.md#class_animationplayer_property_playback_auto_capture_transition_type) | ``0``     |
+| [`float`](class_float.md)                    | [`playback_default_blend_time`](class_animationplayer.md#class_animationplayer_property_playback_default_blend_time)                     | ``0.0``   |
+| [`float`](class_float.md)                    | [`speed_scale`](class_animationplayer.md#class_animationplayer_property_speed_scale)                                                     | ``1.0``   |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`StringName`](class_stringname.md)                                        | [`animation_get_next`](#class_animationplayer_method_animation_get_next) ( animation_from: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                                                                                |
-| `void`                                                                     | [`animation_set_next`](#class_animationplayer_method_animation_set_next) ( animation_from: [`StringName`](class_stringname.md), animation_to: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                           |
-| `void`                                                                     | [`clear_queue`](#class_animationplayer_method_clear_queue) ( )                                                                                                                                                                                                                                                                                                                                                                |
-| [`float`](class_float.md)                                                  | [`get_blend_time`](#class_animationplayer_method_get_blend_time) ( animation_from: [`StringName`](class_stringname.md), animation_to: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                                     |
-| [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode)   | [`get_method_call_mode`](#class_animationplayer_method_get_method_call_mode) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                |
-| [`float`](class_float.md)                                                  | [`get_playing_speed`](#class_animationplayer_method_get_playing_speed) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                      |
-| [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) | [`get_process_callback`](#class_animationplayer_method_get_process_callback) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                |
-| [`PackedStringArray`](class_packedstringarray.md)                          | [`get_queue`](#class_animationplayer_method_get_queue) ( )                                                                                                                                                                                                                                                                                                                                                                    |
-| [`NodePath`](class_nodepath.md)                                            | [`get_root`](#class_animationplayer_method_get_root) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                        |
-| [`bool`](class_bool.md)                                                    | [`is_playing`](#class_animationplayer_method_is_playing) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                    |
-| `void`                                                                     | [`pause`](#class_animationplayer_method_pause) ( )                                                                                                                                                                                                                                                                                                                                                                            |
-| `void`                                                                     | [`play`](#class_animationplayer_method_play) ( name: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false )                                                                                                                                                                                      |
-| `void`                                                                     | [`play_backwards`](#class_animationplayer_method_play_backwards) ( name: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1 )                                                                                                                                                                                                                                                            |
-| `void`                                                                     | [`play_with_capture`](#class_animationplayer_method_play_with_capture) ( name: [`StringName`](class_stringname.md) = &"", duration: [`float`](class_float.md) = -1.0, custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false, trans_type: [TransitionType](#enum_tween_transitiontype) = 0, ease_type: [EaseType](#enum_tween_easetype) = 0 ) |
-| `void`                                                                     | [`queue`](#class_animationplayer_method_queue) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                                                                                                                  |
-| `void`                                                                     | [`seek`](#class_animationplayer_method_seek) ( seconds: [`float`](class_float.md), update: [`bool`](class_bool.md) = false, update_only: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                    |
-| `void`                                                                     | [`set_blend_time`](#class_animationplayer_method_set_blend_time) ( animation_from: [`StringName`](class_stringname.md), animation_to: [`StringName`](class_stringname.md), sec: [`float`](class_float.md) )                                                                                                                                                                                                                   |
-| `void`                                                                     | [`set_method_call_mode`](#class_animationplayer_method_set_method_call_mode) ( mode: [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode) )                                                                                                                                                                                                                                                               |
-| `void`                                                                     | [`set_process_callback`](#class_animationplayer_method_set_process_callback) ( mode: [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) )                                                                                                                                                                                                                                                             |
-| `void`                                                                     | [`set_root`](#class_animationplayer_method_set_root) ( path: [`NodePath`](class_nodepath.md) )                                                                                                                                                                                                                                                                                                                                |
-| `void`                                                                     | [`stop`](#class_animationplayer_method_stop) ( keep_state: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                  |
+| [`StringName`](class_stringname.md)                                        | [`animation_get_next`](class_animationplayer.md#class_animationplayer_method_animation_get_next) ( animation_from: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                                                                                |
+| `void`                                                                     | [`animation_set_next`](class_animationplayer.md#class_animationplayer_method_animation_set_next) ( animation_from: [`StringName`](class_stringname.md), animation_to: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                           |
+| `void`                                                                     | [`clear_queue`](class_animationplayer.md#class_animationplayer_method_clear_queue) ( )                                                                                                                                                                                                                                                                                                                                                                |
+| [`float`](class_float.md)                                                  | [`get_blend_time`](class_animationplayer.md#class_animationplayer_method_get_blend_time) ( animation_from: [`StringName`](class_stringname.md), animation_to: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                                     |
+| [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode)   | [`get_method_call_mode`](class_animationplayer.md#class_animationplayer_method_get_method_call_mode) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                |
+| [`float`](class_float.md)                                                  | [`get_playing_speed`](class_animationplayer.md#class_animationplayer_method_get_playing_speed) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                      |
+| [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) | [`get_process_callback`](class_animationplayer.md#class_animationplayer_method_get_process_callback) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                |
+| [`PackedStringArray`](class_packedstringarray.md)                          | [`get_queue`](class_animationplayer.md#class_animationplayer_method_get_queue) ( )                                                                                                                                                                                                                                                                                                                                                                    |
+| [`NodePath`](class_nodepath.md)                                            | [`get_root`](class_animationplayer.md#class_animationplayer_method_get_root) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                        |
+| [`bool`](class_bool.md)                                                    | [`is_playing`](class_animationplayer.md#class_animationplayer_method_is_playing) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                    |
+| `void`                                                                     | [`pause`](class_animationplayer.md#class_animationplayer_method_pause) ( )                                                                                                                                                                                                                                                                                                                                                                            |
+| `void`                                                                     | [`play`](class_animationplayer.md#class_animationplayer_method_play) ( name: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false )                                                                                                                                                                                      |
+| `void`                                                                     | [`play_backwards`](class_animationplayer.md#class_animationplayer_method_play_backwards) ( name: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1 )                                                                                                                                                                                                                                                            |
+| `void`                                                                     | [`play_with_capture`](class_animationplayer.md#class_animationplayer_method_play_with_capture) ( name: [`StringName`](class_stringname.md) = &"", duration: [`float`](class_float.md) = -1.0, custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false, trans_type: [TransitionType](#enum_tween_transitiontype) = 0, ease_type: [EaseType](#enum_tween_easetype) = 0 ) |
+| `void`                                                                     | [`queue`](class_animationplayer.md#class_animationplayer_method_queue) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                                                                                                                  |
+| `void`                                                                     | [`seek`](class_animationplayer.md#class_animationplayer_method_seek) ( seconds: [`float`](class_float.md), update: [`bool`](class_bool.md) = false, update_only: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                    |
+| `void`                                                                     | [`set_blend_time`](class_animationplayer.md#class_animationplayer_method_set_blend_time) ( animation_from: [`StringName`](class_stringname.md), animation_to: [`StringName`](class_stringname.md), sec: [`float`](class_float.md) )                                                                                                                                                                                                                   |
+| `void`                                                                     | [`set_method_call_mode`](class_animationplayer.md#class_animationplayer_method_set_method_call_mode) ( mode: [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode) )                                                                                                                                                                                                                                                               |
+| `void`                                                                     | [`set_process_callback`](class_animationplayer.md#class_animationplayer_method_set_process_callback) ( mode: [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) )                                                                                                                                                                                                                                                             |
+| `void`                                                                     | [`set_root`](class_animationplayer.md#class_animationplayer_method_set_root) ( path: [`NodePath`](class_nodepath.md) )                                                                                                                                                                                                                                                                                                                                |
+| `void`                                                                     | [`stop`](class_animationplayer.md#class_animationplayer_method_stop) ( keep_state: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                  |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -74,9 +74,9 @@ Updating the target properties of animations occurs at the process frame.
 
 **animation_changed** ( old_name: [`StringName`](class_stringname.md), new_name: [`StringName`](class_stringname.md) ) <div id="class_animationplayer_signal_animation_changed"></div>
 
-Emitted when a queued animation plays after the previous animation finished. See also [`queue`](#class_animationplayer_method_queue).
+Emitted when a queued animation plays after the previous animation finished. See also [`queue`](class_animationplayer.md#class_animationplayer_method_queue).
 
- **Note:** The signal is not emitted when the animation is changed via [`play`](#class_animationplayer_method_play) or by an [`AnimationTree`](class_animationtree.md).
+ **Note:** The signal is not emitted when the animation is changed via [`play`](class_animationplayer.md#class_animationplayer_method_play) or by an [`AnimationTree`](class_animationtree.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -86,7 +86,7 @@ Emitted when a queued animation plays after the previous animation finished. See
 
 **current_animation_changed** ( name: [`String`](class_string.md) ) <div id="class_animationplayer_signal_current_animation_changed"></div>
 
-Emitted when [`current_animation`](#class_animationplayer_property_current_animation) changes.
+Emitted when [`current_animation`](class_animationplayer.md#class_animationplayer_property_current_animation) changes.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -102,7 +102,7 @@ enum **AnimationProcessCallback**: <div id="enum_animationplayer_animationproces
 
 [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) **ANIMATION_PROCESS_PHYSICS** = ``0``
 
-**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](#class_animationmixer_constant_animation_callback_mode_process_physics).
+**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_physics).
 
 
 
@@ -110,7 +110,7 @@ enum **AnimationProcessCallback**: <div id="enum_animationplayer_animationproces
 
 [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) **ANIMATION_PROCESS_IDLE** = ``1``
 
-**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_IDLE`](#class_animationmixer_constant_animation_callback_mode_process_idle).
+**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_IDLE`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_idle).
 
 
 
@@ -118,7 +118,7 @@ enum **AnimationProcessCallback**: <div id="enum_animationplayer_animationproces
 
 [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) **ANIMATION_PROCESS_MANUAL** = ``2``
 
-**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_MANUAL`](#class_animationmixer_constant_animation_callback_mode_process_manual).
+**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_MANUAL`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_manual).
 
 
 
@@ -134,7 +134,7 @@ enum **AnimationMethodCallMode**: <div id="enum_animationplayer_animationmethodc
 
 [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode) **ANIMATION_METHOD_CALL_DEFERRED** = ``0``
 
-**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_METHOD_DEFERRED`](#class_animationmixer_constant_animation_callback_mode_method_deferred).
+**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_METHOD_DEFERRED`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_method_deferred).
 
 
 
@@ -142,7 +142,7 @@ enum **AnimationMethodCallMode**: <div id="enum_animationplayer_animationmethodc
 
 [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode) **ANIMATION_METHOD_CALL_IMMEDIATE** = ``1``
 
-**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_METHOD_IMMEDIATE`](#class_animationmixer_constant_animation_callback_mode_method_immediate).
+**已弃用：** See [`AnimationMixer.ANIMATION_CALLBACK_MODE_METHOD_IMMEDIATE`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_method_immediate).
 
 
 
@@ -159,7 +159,7 @@ enum **AnimationMethodCallMode**: <div id="enum_animationplayer_animationmethodc
 - `void` **set_assigned_animation** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_assigned_animation** ( )
 
-If playing, the current animation's key, otherwise, the animation last played. When set, this changes the animation, but will not play it unless already playing. See also [`current_animation`](#class_animationplayer_property_current_animation).
+If playing, the current animation's key, otherwise, the animation last played. When set, this changes the animation, but will not play it unless already playing. See also [`current_animation`](class_animationplayer.md#class_animationplayer_property_current_animation).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -185,7 +185,7 @@ The key of the animation to play when the scene loads.
 - `void` **set_current_animation** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_current_animation** ( )
 
-The key of the currently playing animation. If no animation is playing, the property's value is an empty string. Changing this value does not restart the animation. See [`play`](#class_animationplayer_method_play) for more information on playing animations.
+The key of the currently playing animation. If no animation is playing, the property's value is an empty string. Changing this value does not restart the animation. See [`play`](class_animationplayer.md#class_animationplayer_method_play) for more information on playing animations.
 
  **Note:** While this property appears in the Inspector, it's not meant to be edited, and it's not saved in the scene. This property is mainly used to get the currently playing animation, and internally for animation playback tracks. For more information, see [`Animation`](class_animation.md).
 
@@ -224,9 +224,9 @@ The position (in seconds) of the currently playing animation.
 - `void` **set_movie_quit_on_finish_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_movie_quit_on_finish_enabled** ( )
 
-If `true` and the engine is running in Movie Maker mode (see [`MovieWriter`](class_moviewriter.md)), exits the engine with [`SceneTree.quit`](#class_scenetree_method_quit) as soon as an animation is done playing in this **AnimationPlayer**. A message is printed when the engine quits for this reason.
+If `true` and the engine is running in Movie Maker mode (see [`MovieWriter`](class_moviewriter.md)), exits the engine with [`SceneTree.quit`](class_scenetree.md#class_scenetree_method_quit) as soon as an animation is done playing in this **AnimationPlayer**. A message is printed when the engine quits for this reason.
 
- **Note:** This obeys the same logic as the [`AnimationMixer.animation_finished`](#class_animationmixer_signal_animation_finished) signal, so it will not quit the engine if the animation is set to be looping.
+ **Note:** This obeys the same logic as the [`AnimationMixer.animation_finished`](class_animationmixer.md#class_animationmixer_signal_animation_finished) signal, so it will not quit the engine if the animation is set to be looping.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -239,9 +239,9 @@ If `true` and the engine is running in Movie Maker mode (see [`MovieWriter`](cla
 - `void` **set_auto_capture** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_auto_capture** ( )
 
-If `true`, performs [`AnimationMixer.capture`](#class_animationmixer_method_capture) before playback automatically. This means just [`play_with_capture`](#class_animationplayer_method_play_with_capture) is executed with default arguments instead of [`play`](#class_animationplayer_method_play).
+If `true`, performs [`AnimationMixer.capture`](class_animationmixer.md#class_animationmixer_method_capture) before playback automatically. This means just [`play_with_capture`](class_animationplayer.md#class_animationplayer_method_play_with_capture) is executed with default arguments instead of [`play`](class_animationplayer.md#class_animationplayer_method_play).
 
- **Note:** Capture interpolation is only performed if the animation contains a capture track. See also [`Animation.UPDATE_CAPTURE`](#class_animation_constant_update_capture).
+ **Note:** Capture interpolation is only performed if the animation contains a capture track. See also [`Animation.UPDATE_CAPTURE`](class_animation.md#class_animation_constant_update_capture).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -254,9 +254,9 @@ If `true`, performs [`AnimationMixer.capture`](#class_animationmixer_method_capt
 - `void` **set_auto_capture_duration** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_auto_capture_duration** ( )
 
-See also [`play_with_capture`](#class_animationplayer_method_play_with_capture) and [`AnimationMixer.capture`](#class_animationmixer_method_capture).
+See also [`play_with_capture`](class_animationplayer.md#class_animationplayer_method_play_with_capture) and [`AnimationMixer.capture`](class_animationmixer.md#class_animationmixer_method_capture).
 
-If [`playback_auto_capture_duration`](#class_animationplayer_property_playback_auto_capture_duration) is negative value, the duration is set to the interval between the current position and the first key.
+If [`playback_auto_capture_duration`](class_animationplayer.md#class_animationplayer_property_playback_auto_capture_duration) is negative value, the duration is set to the interval between the current position and the first key.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -362,7 +362,7 @@ Returns the blend time (in seconds) between two animations, referenced by their 
 
 [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode) **get_method_call_mode** ( ) const[^const]<div id="class_animationplayer_method_get_method_call_mode"></div>
 
-**已弃用：** Use [`AnimationMixer.callback_mode_method`](#class_animationmixer_property_callback_mode_method) instead.
+**已弃用：** Use [`AnimationMixer.callback_mode_method`](class_animationmixer.md#class_animationmixer_property_callback_mode_method) instead.
 
 Returns the call mode used for "Call Method" tracks.
 
@@ -374,7 +374,7 @@ Returns the call mode used for "Call Method" tracks.
 
 [`float`](class_float.md) **get_playing_speed** ( ) const[^const]<div id="class_animationplayer_method_get_playing_speed"></div>
 
-Returns the actual playing speed of current animation or `0` if not playing. This speed is the [`speed_scale`](#class_animationplayer_property_speed_scale) property multiplied by `custom_speed` argument specified when calling the [`play`](#class_animationplayer_method_play) method.
+Returns the actual playing speed of current animation or `0` if not playing. This speed is the [`speed_scale`](class_animationplayer.md#class_animationplayer_property_speed_scale) property multiplied by `custom_speed` argument specified when calling the [`play`](class_animationplayer.md#class_animationplayer_method_play) method.
 
 Returns a negative value if the current animation is playing backwards.
 
@@ -386,7 +386,7 @@ Returns a negative value if the current animation is playing backwards.
 
 [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) **get_process_callback** ( ) const[^const]<div id="class_animationplayer_method_get_process_callback"></div>
 
-**已弃用：** Use [`AnimationMixer.callback_mode_process`](#class_animationmixer_property_callback_mode_process) instead.
+**已弃用：** Use [`AnimationMixer.callback_mode_process`](class_animationmixer.md#class_animationmixer_property_callback_mode_process) instead.
 
 Returns the process notification in which to update animations.
 
@@ -408,7 +408,7 @@ Returns a list of the animation keys that are currently queued to play.
 
 [`NodePath`](class_nodepath.md) **get_root** ( ) const[^const]<div id="class_animationplayer_method_get_root"></div>
 
-**已弃用：** Use [`AnimationMixer.root_node`](#class_animationmixer_property_root_node) instead.
+**已弃用：** Use [`AnimationMixer.root_node`](class_animationmixer.md#class_animationmixer_property_root_node) instead.
 
 Returns the node which node path references will travel from.
 
@@ -420,7 +420,7 @@ Returns the node which node path references will travel from.
 
 [`bool`](class_bool.md) **is_playing** ( ) const[^const]<div id="class_animationplayer_method_is_playing"></div>
 
-Returns `true` if an animation is currently playing (even if [`speed_scale`](#class_animationplayer_property_speed_scale) and/or `custom_speed` are `0`).
+Returns `true` if an animation is currently playing (even if [`speed_scale`](class_animationplayer.md#class_animationplayer_property_speed_scale) and/or `custom_speed` are `0`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -430,9 +430,9 @@ Returns `true` if an animation is currently playing (even if [`speed_scale`](#cl
 
 `void` **pause** ( )<div id="class_animationplayer_method_pause"></div>
 
-Pauses the currently playing animation. The [`current_animation_position`](#class_animationplayer_property_current_animation_position) will be kept and calling [`play`](#class_animationplayer_method_play) or [`play_backwards`](#class_animationplayer_method_play_backwards) without arguments or with the same animation name as [`assigned_animation`](#class_animationplayer_property_assigned_animation) will resume the animation.
+Pauses the currently playing animation. The [`current_animation_position`](class_animationplayer.md#class_animationplayer_property_current_animation_position) will be kept and calling [`play`](class_animationplayer.md#class_animationplayer_method_play) or [`play_backwards`](class_animationplayer.md#class_animationplayer_method_play_backwards) without arguments or with the same animation name as [`assigned_animation`](class_animationplayer.md#class_animationplayer_property_assigned_animation) will resume the animation.
 
-See also [`stop`](#class_animationplayer_method_stop).
+See also [`stop`](class_animationplayer.md#class_animationplayer_method_stop).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -444,9 +444,9 @@ See also [`stop`](#class_animationplayer_method_stop).
 
 Plays the animation with key `name`. Custom blend times and speed can be set.
 
-The `from_end` option only affects when switching to a new animation track, or if the same track but at the start or end. It does not affect resuming playback that was paused in the middle of an animation. If `custom_speed` is negative and `from_end` is `true`, the animation will play backwards (which is equivalent to calling [`play_backwards`](#class_animationplayer_method_play_backwards)).
+The `from_end` option only affects when switching to a new animation track, or if the same track but at the start or end. It does not affect resuming playback that was paused in the middle of an animation. If `custom_speed` is negative and `from_end` is `true`, the animation will play backwards (which is equivalent to calling [`play_backwards`](class_animationplayer.md#class_animationplayer_method_play_backwards)).
 
-The **AnimationPlayer** keeps track of its current or last played animation with [`assigned_animation`](#class_animationplayer_property_assigned_animation). If this method is called with that same animation `name`, or with no `name` parameter, the assigned animation will resume playing if it was paused.
+The **AnimationPlayer** keeps track of its current or last played animation with [`assigned_animation`](class_animationplayer.md#class_animationplayer_property_assigned_animation). If this method is called with that same animation `name`, or with no `name` parameter, the assigned animation will resume playing if it was paused.
 
  **Note:** The animation will be updated the next time the **AnimationPlayer** is processed. If other variables are updated at the same time this is called, they may be updated too early. To perform the update immediately, call `advance(0)`.
 
@@ -460,7 +460,7 @@ The **AnimationPlayer** keeps track of its current or last played animation with
 
 Plays the animation with key `name` in reverse.
 
-This method is a shorthand for [`play`](#class_animationplayer_method_play) with `custom_speed = -1.0` and `from_end = true`, so see its description for more information.
+This method is a shorthand for [`play`](class_animationplayer.md#class_animationplayer_method_play) with `custom_speed = -1.0` and `from_end = true`, so see its description for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -470,9 +470,9 @@ This method is a shorthand for [`play`](#class_animationplayer_method_play) with
 
 `void` **play_with_capture** ( name: [`StringName`](class_stringname.md) = &"", duration: [`float`](class_float.md) = -1.0, custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false, trans_type: [TransitionType](#enum_tween_transitiontype) = 0, ease_type: [EaseType](#enum_tween_easetype) = 0 )<div id="class_animationplayer_method_play_with_capture"></div>
 
-See also [`AnimationMixer.capture`](#class_animationmixer_method_capture).
+See also [`AnimationMixer.capture`](class_animationmixer.md#class_animationmixer_method_capture).
 
-You can use this method to use more detailed options for capture than those performed by [`playback_auto_capture`](#class_animationplayer_property_playback_auto_capture). When [`playback_auto_capture`](#class_animationplayer_property_playback_auto_capture) is `false`, this method is almost the same as the following:
+You can use this method to use more detailed options for capture than those performed by [`playback_auto_capture`](class_animationplayer.md#class_animationplayer_property_playback_auto_capture). When [`playback_auto_capture`](class_animationplayer.md#class_animationplayer_property_playback_auto_capture) is `false`, this method is almost the same as the following:
 
 ```
 
@@ -480,11 +480,11 @@ You can use this method to use more detailed options for capture than those perf
     play(name, custom_blend, custom_speed, from_end)
 ```
 
-If `name` is blank, it specifies [`assigned_animation`](#class_animationplayer_property_assigned_animation).
+If `name` is blank, it specifies [`assigned_animation`](class_animationplayer.md#class_animationplayer_property_assigned_animation).
 
 If `duration` is a negative value, the duration is set to the interval between the current position and the first key, when `from_end` is `true`, uses the interval between the current position and the last key instead.
 
- **Note:** The `duration` takes [`speed_scale`](#class_animationplayer_property_speed_scale) into account, but `custom_speed` does not, because the capture cache is interpolated with the blend result and the result may contain multiple animations.
+ **Note:** The `duration` takes [`speed_scale`](class_animationplayer.md#class_animationplayer_property_speed_scale) into account, but `custom_speed` does not, because the capture cache is interpolated with the blend result and the result may contain multiple animations.
 
 
 
@@ -512,7 +512,7 @@ Seeks the animation to the `seconds` point in time (in seconds). If `update` is 
 
 If `update_only` is `true`, the method / audio / animation playback tracks will not be processed.
 
- **Note:** Seeking to the end of the animation doesn't emit [`AnimationMixer.animation_finished`](#class_animationmixer_signal_animation_finished). If you want to skip animation and emit the signal, use [`AnimationMixer.advance`](#class_animationmixer_method_advance).
+ **Note:** Seeking to the end of the animation doesn't emit [`AnimationMixer.animation_finished`](class_animationmixer.md#class_animationmixer_signal_animation_finished). If you want to skip animation and emit the signal, use [`AnimationMixer.advance`](class_animationmixer.md#class_animationmixer_method_advance).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -532,7 +532,7 @@ Specifies a blend time (in seconds) between two animations, referenced by their 
 
 `void` **set_method_call_mode** ( mode: [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode) )<div id="class_animationplayer_method_set_method_call_mode"></div>
 
-**已弃用：** Use [`AnimationMixer.callback_mode_method`](#class_animationmixer_property_callback_mode_method) instead.
+**已弃用：** Use [`AnimationMixer.callback_mode_method`](class_animationmixer.md#class_animationmixer_property_callback_mode_method) instead.
 
 Sets the call mode used for "Call Method" tracks.
 
@@ -544,7 +544,7 @@ Sets the call mode used for "Call Method" tracks.
 
 `void` **set_process_callback** ( mode: [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) )<div id="class_animationplayer_method_set_process_callback"></div>
 
-**已弃用：** Use [`AnimationMixer.callback_mode_process`](#class_animationmixer_property_callback_mode_process) instead.
+**已弃用：** Use [`AnimationMixer.callback_mode_process`](class_animationmixer.md#class_animationmixer_property_callback_mode_process) instead.
 
 Sets the process notification in which to update animations.
 
@@ -556,7 +556,7 @@ Sets the process notification in which to update animations.
 
 `void` **set_root** ( path: [`NodePath`](class_nodepath.md) )<div id="class_animationplayer_method_set_root"></div>
 
-**已弃用：** Use [`AnimationMixer.root_node`](#class_animationmixer_property_root_node) instead.
+**已弃用：** Use [`AnimationMixer.root_node`](class_animationmixer.md#class_animationmixer_property_root_node) instead.
 
 Sets the node which node path references will travel from.
 
@@ -568,7 +568,7 @@ Sets the node which node path references will travel from.
 
 `void` **stop** ( keep_state: [`bool`](class_bool.md) = false )<div id="class_animationplayer_method_stop"></div>
 
-Stops the currently playing animation. The animation position is reset to `0` and the `custom_speed` is reset to `1.0`. See also [`pause`](#class_animationplayer_method_pause).
+Stops the currently playing animation. The animation position is reset to `0` and the `custom_speed` is reset to `1.0`. See also [`pause`](class_animationplayer.md#class_animationplayer_method_pause).
 
 If `keep_state` is `true`, the animation state is not updated visually.
 

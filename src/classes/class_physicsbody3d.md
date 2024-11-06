@@ -23,25 +23,25 @@ Abstract base class for 3D game objects affected by physics.
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`axis_lock_angular_x`](#class_physicsbody3d_property_axis_lock_angular_x) | ``false`` |
-| [`bool`](class_bool.md) | [`axis_lock_angular_y`](#class_physicsbody3d_property_axis_lock_angular_y) | ``false`` |
-| [`bool`](class_bool.md) | [`axis_lock_angular_z`](#class_physicsbody3d_property_axis_lock_angular_z) | ``false`` |
-| [`bool`](class_bool.md) | [`axis_lock_linear_x`](#class_physicsbody3d_property_axis_lock_linear_x)   | ``false`` |
-| [`bool`](class_bool.md) | [`axis_lock_linear_y`](#class_physicsbody3d_property_axis_lock_linear_y)   | ``false`` |
-| [`bool`](class_bool.md) | [`axis_lock_linear_z`](#class_physicsbody3d_property_axis_lock_linear_z)   | ``false`` |
+| [`bool`](class_bool.md) | [`axis_lock_angular_x`](class_physicsbody3d.md#class_physicsbody3d_property_axis_lock_angular_x) | ``false`` |
+| [`bool`](class_bool.md) | [`axis_lock_angular_y`](class_physicsbody3d.md#class_physicsbody3d_property_axis_lock_angular_y) | ``false`` |
+| [`bool`](class_bool.md) | [`axis_lock_angular_z`](class_physicsbody3d.md#class_physicsbody3d_property_axis_lock_angular_z) | ``false`` |
+| [`bool`](class_bool.md) | [`axis_lock_linear_x`](class_physicsbody3d.md#class_physicsbody3d_property_axis_lock_linear_x)   | ``false`` |
+| [`bool`](class_bool.md) | [`axis_lock_linear_y`](class_physicsbody3d.md#class_physicsbody3d_property_axis_lock_linear_y)   | ``false`` |
+| [`bool`](class_bool.md) | [`axis_lock_linear_z`](class_physicsbody3d.md#class_physicsbody3d_property_axis_lock_linear_z)   | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                                                            | [`add_collision_exception_with`](#class_physicsbody3d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                                                                              |
-| [`bool`](class_bool.md)                                           | [`get_axis_lock`](#class_physicsbody3d_method_get_axis_lock) ( axis: [BodyAxis](#enum_physicsserver3d_bodyaxis) ) const[^const]                                                                                                                                                                                                                                           |
-| [Array](class_array.md) [`PhysicsBody3D`](class_physicsbody3d.md) | [`get_collision_exceptions`](#class_physicsbody3d_method_get_collision_exceptions) ( )                                                                                                                                                                                                                                                                                    |
-| [`Vector3`](class_vector3.md)                                     | [`get_gravity`](#class_physicsbody3d_method_get_gravity) ( ) const[^const]                                                                                                                                                                                                                                                                                                |
-| [`KinematicCollision3D`](class_kinematiccollision3d.md)           | [`move_and_collide`](#class_physicsbody3d_method_move_and_collide) ( motion: [`Vector3`](class_vector3.md), test_only: [`bool`](class_bool.md) = false, safe_margin: [`float`](class_float.md) = 0.001, recovery_as_collision: [`bool`](class_bool.md) = false, max_collisions: [`int`](class_int.md) = 1 )                                                               |
-| `void`                                                            | [`remove_collision_exception_with`](#class_physicsbody3d_method_remove_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                                                                        |
-| `void`                                                            | [`set_axis_lock`](#class_physicsbody3d_method_set_axis_lock) ( axis: [BodyAxis](#enum_physicsserver3d_bodyaxis), lock: [`bool`](class_bool.md) )                                                                                                                                                                                                                          |
-| [`bool`](class_bool.md)                                           | [`test_move`](#class_physicsbody3d_method_test_move) ( from: [`Transform3D`](class_transform3d.md), motion: [`Vector3`](class_vector3.md), collision: [`KinematicCollision3D`](class_kinematiccollision3d.md) = null, safe_margin: [`float`](class_float.md) = 0.001, recovery_as_collision: [`bool`](class_bool.md) = false, max_collisions: [`int`](class_int.md) = 1 ) |
+| `void`                                                            | [`add_collision_exception_with`](class_physicsbody3d.md#class_physicsbody3d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                                                                              |
+| [`bool`](class_bool.md)                                           | [`get_axis_lock`](class_physicsbody3d.md#class_physicsbody3d_method_get_axis_lock) ( axis: [BodyAxis](#enum_physicsserver3d_bodyaxis) ) const[^const]                                                                                                                                                                                                                                           |
+| [Array](class_array.md) [`PhysicsBody3D`](class_physicsbody3d.md) | [`get_collision_exceptions`](class_physicsbody3d.md#class_physicsbody3d_method_get_collision_exceptions) ( )                                                                                                                                                                                                                                                                                    |
+| [`Vector3`](class_vector3.md)                                     | [`get_gravity`](class_physicsbody3d.md#class_physicsbody3d_method_get_gravity) ( ) const[^const]                                                                                                                                                                                                                                                                                                |
+| [`KinematicCollision3D`](class_kinematiccollision3d.md)           | [`move_and_collide`](class_physicsbody3d.md#class_physicsbody3d_method_move_and_collide) ( motion: [`Vector3`](class_vector3.md), test_only: [`bool`](class_bool.md) = false, safe_margin: [`float`](class_float.md) = 0.001, recovery_as_collision: [`bool`](class_bool.md) = false, max_collisions: [`int`](class_int.md) = 1 )                                                               |
+| `void`                                                            | [`remove_collision_exception_with`](class_physicsbody3d.md#class_physicsbody3d_method_remove_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                                                                        |
+| `void`                                                            | [`set_axis_lock`](class_physicsbody3d.md#class_physicsbody3d_method_set_axis_lock) ( axis: [BodyAxis](#enum_physicsserver3d_bodyaxis), lock: [`bool`](class_bool.md) )                                                                                                                                                                                                                          |
+| [`bool`](class_bool.md)                                           | [`test_move`](class_physicsbody3d.md#class_physicsbody3d_method_test_move) ( from: [`Transform3D`](class_transform3d.md), motion: [`Vector3`](class_vector3.md), collision: [`KinematicCollision3D`](class_kinematiccollision3d.md) = null, safe_margin: [`float`](class_float.md) = 0.001, recovery_as_collision: [`bool`](class_bool.md) = false, max_collisions: [`int`](class_int.md) = 1 ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -173,13 +173,13 @@ Returns the gravity vector computed from all sources that can affect the body, i
 
 [`KinematicCollision3D`](class_kinematiccollision3d.md) **move_and_collide** ( motion: [`Vector3`](class_vector3.md), test_only: [`bool`](class_bool.md) = false, safe_margin: [`float`](class_float.md) = 0.001, recovery_as_collision: [`bool`](class_bool.md) = false, max_collisions: [`int`](class_int.md) = 1 )<div id="class_physicsbody3d_method_move_and_collide"></div>
 
-Moves the body along the vector `motion`. In order to be frame rate independent in [`Node._physics_process`](#class_node_private_method__physics_process) or [`Node._process`](#class_node_private_method__process), `motion` should be computed using `delta`.
+Moves the body along the vector `motion`. In order to be frame rate independent in [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) or [`Node._process`](class_node.md#class_node_private_method__process), `motion` should be computed using `delta`.
 
 The body will stop if it collides. Returns a [`KinematicCollision3D`](class_kinematiccollision3d.md), which contains information about the collision when stopped, or when touching another body along the motion.
 
 If `test_only` is `true`, the body does not move but the would-be collision information is given.
 
- `safe_margin` is the extra margin used for collision recovery (see [`CharacterBody3D.safe_margin`](#class_characterbody3d_property_safe_margin) for more details).
+ `safe_margin` is the extra margin used for collision recovery (see [`CharacterBody3D.safe_margin`](class_characterbody3d.md#class_characterbody3d_property_safe_margin) for more details).
 
 If `recovery_as_collision` is `true`, any depenetration from the recovery phase is also reported as a collision; this is used e.g. by [`CharacterBody3D`](class_characterbody3d.md) for improving floor detection during floor snapping.
 
@@ -213,13 +213,13 @@ Locks or unlocks the specified linear or rotational `axis` depending on the valu
 
 [`bool`](class_bool.md) **test_move** ( from: [`Transform3D`](class_transform3d.md), motion: [`Vector3`](class_vector3.md), collision: [`KinematicCollision3D`](class_kinematiccollision3d.md) = null, safe_margin: [`float`](class_float.md) = 0.001, recovery_as_collision: [`bool`](class_bool.md) = false, max_collisions: [`int`](class_int.md) = 1 )<div id="class_physicsbody3d_method_test_move"></div>
 
-Checks for collisions without moving the body. In order to be frame rate independent in [`Node._physics_process`](#class_node_private_method__physics_process) or [`Node._process`](#class_node_private_method__process), `motion` should be computed using `delta`.
+Checks for collisions without moving the body. In order to be frame rate independent in [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) or [`Node._process`](class_node.md#class_node_private_method__process), `motion` should be computed using `delta`.
 
 Virtually sets the node's position, scale and rotation to that of the given [`Transform3D`](class_transform3d.md), then tries to move the body along the vector `motion`. Returns `true` if a collision would stop the body from moving along the whole path.
 
  `collision` is an optional object of type [`KinematicCollision3D`](class_kinematiccollision3d.md), which contains additional information about the collision when stopped, or when touching another body along the motion.
 
- `safe_margin` is the extra margin used for collision recovery (see [`CharacterBody3D.safe_margin`](#class_characterbody3d_property_safe_margin) for more details).
+ `safe_margin` is the extra margin used for collision recovery (see [`CharacterBody3D.safe_margin`](class_characterbody3d.md#class_characterbody3d_property_safe_margin) for more details).
 
 If `recovery_as_collision` is `true`, any depenetration from the recovery phase is also reported as a collision; this is useful for checking whether the body would *touch* any other bodies.
 

@@ -33,14 +33,14 @@ Using **VRAM Compressed** also improves loading times, as VRAM-compressed textur
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`load_path`](#class_compressedtexture2d_property_load_path) | ``""``                                                                               |
-| [`bool`](class_bool.md)     | resource_local_to_scene                                      | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
+| [`String`](class_string.md) | [`load_path`](class_compressedtexture2d.md#class_compressedtexture2d_property_load_path) | ``""``                                                                                                |
+| [`bool`](class_bool.md)     | resource_local_to_scene                                                                  | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`load`](#class_compressedtexture2d_method_load) ( path: [`String`](class_string.md) ) |
+| [Error](#enum_@globalscope_error) | [`load`](class_compressedtexture2d.md#class_compressedtexture2d_method_load) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

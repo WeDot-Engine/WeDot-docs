@@ -15,19 +15,19 @@ A 2D physics body that can't be moved by external forces. When moved manually, i
 
 ## 描述
 
-A static 2D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, [`AnimationMixer`](class_animationmixer.md) s (with [`AnimationMixer.callback_mode_process`](#class_animationmixer_property_callback_mode_process) set to [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](#class_animationmixer_constant_animation_callback_mode_process_physics)), and [`RemoteTransform2D`](class_remotetransform2d.md).
+A static 2D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, [`AnimationMixer`](class_animationmixer.md) s (with [`AnimationMixer.callback_mode_process`](class_animationmixer.md#class_animationmixer_property_callback_mode_process) set to [`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_process_physics)), and [`RemoteTransform2D`](class_remotetransform2d.md).
 
 When **StaticBody2D** is moved, it is teleported to its new position without affecting other physics bodies in its path. If this is not desired, use [`AnimatableBody2D`](class_animatablebody2d.md) instead.
 
- **StaticBody2D** is useful for completely static objects like floors and walls, as well as moving surfaces like conveyor belts and circular revolving platforms (by using [`constant_linear_velocity`](#class_staticbody2d_property_constant_linear_velocity) and [`constant_angular_velocity`](#class_staticbody2d_property_constant_angular_velocity)).
+ **StaticBody2D** is useful for completely static objects like floors and walls, as well as moving surfaces like conveyor belts and circular revolving platforms (by using [`constant_linear_velocity`](class_staticbody2d.md#class_staticbody2d_property_constant_linear_velocity) and [`constant_angular_velocity`](class_staticbody2d.md#class_staticbody2d_property_constant_angular_velocity)).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                     | [`constant_angular_velocity`](#class_staticbody2d_property_constant_angular_velocity) | ``0.0``           |
-| [`Vector2`](class_vector2.md)                 | [`constant_linear_velocity`](#class_staticbody2d_property_constant_linear_velocity)   | ``Vector2(0, 0)`` |
-| [`PhysicsMaterial`](class_physicsmaterial.md) | [`physics_material_override`](#class_staticbody2d_property_physics_material_override) |                   |
+| [`float`](class_float.md)                     | [`constant_angular_velocity`](class_staticbody2d.md#class_staticbody2d_property_constant_angular_velocity) | ``0.0``           |
+| [`Vector2`](class_vector2.md)                 | [`constant_linear_velocity`](class_staticbody2d.md#class_staticbody2d_property_constant_linear_velocity)   | ``Vector2(0, 0)`` |
+| [`PhysicsMaterial`](class_physicsmaterial.md) | [`physics_material_override`](class_staticbody2d.md#class_staticbody2d_property_physics_material_override) |                   |
 
 <!-- rst-class:: classref-section-separator -->
 

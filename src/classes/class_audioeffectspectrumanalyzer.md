@@ -15,7 +15,7 @@ Audio effect that can be used for real-time audio visualizations.
 
 This audio effect does not affect sound output, but can be used for real-time audio visualizations.
 
-This resource configures an [`AudioEffectSpectrumAnalyzerInstance`](class_audioeffectspectrumanalyzerinstance.md), which performs the actual analysis at runtime. An instance can be acquired with [`AudioServer.get_bus_effect_instance`](#class_audioserver_method_get_bus_effect_instance).
+This resource configures an [`AudioEffectSpectrumAnalyzerInstance`](class_audioeffectspectrumanalyzerinstance.md), which performs the actual analysis at runtime. An instance can be acquired with [`AudioServer.get_bus_effect_instance`](class_audioserver.md#class_audioserver_method_get_bus_effect_instance).
 
 See also [`AudioStreamGenerator`](class_audiostreamgenerator.md) for procedurally generating sounds.
 
@@ -23,9 +23,9 @@ See also [`AudioStreamGenerator`](class_audiostreamgenerator.md) for procedurall
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                            | [`buffer_length`](#class_audioeffectspectrumanalyzer_property_buffer_length) | ``2.0``  |
-| [FFTSize](#enum_audioeffectspectrumanalyzer_fftsize) | [`fft_size`](#class_audioeffectspectrumanalyzer_property_fft_size)           | ``2``    |
-| [`float`](class_float.md)                            | [`tap_back_pos`](#class_audioeffectspectrumanalyzer_property_tap_back_pos)   | ``0.01`` |
+| [`float`](class_float.md)                            | [`buffer_length`](class_audioeffectspectrumanalyzer.md#class_audioeffectspectrumanalyzer_property_buffer_length) | ``2.0``  |
+| [FFTSize](#enum_audioeffectspectrumanalyzer_fftsize) | [`fft_size`](class_audioeffectspectrumanalyzer.md#class_audioeffectspectrumanalyzer_property_fft_size)           | ``2``    |
+| [`float`](class_float.md)                            | [`tap_back_pos`](class_audioeffectspectrumanalyzer.md#class_audioeffectspectrumanalyzer_property_tap_back_pos)   | ``0.01`` |
 
 <!-- rst-class:: classref-section-separator -->
 

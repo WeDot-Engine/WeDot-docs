@@ -13,21 +13,21 @@ A 2D texture that creates a pattern with colors obtained from a [`Gradient`](cla
 
 ## 描述
 
-A 2D texture that obtains colors from a [`Gradient`](class_gradient.md) to fill the texture data. This texture is able to transform a color transition into different patterns such as a linear or a radial gradient. The gradient is sampled individually for each pixel so it does not necessarily represent an exact copy of the gradient(see [`width`](#class_gradienttexture2d_property_width) and [`height`](#class_gradienttexture2d_property_height)). See also [`GradientTexture1D`](class_gradienttexture1d.md), [`CurveTexture`](class_curvetexture.md) and [`CurveXYZTexture`](class_curvexyztexture.md).
+A 2D texture that obtains colors from a [`Gradient`](class_gradient.md) to fill the texture data. This texture is able to transform a color transition into different patterns such as a linear or a radial gradient. The gradient is sampled individually for each pixel so it does not necessarily represent an exact copy of the gradient(see [`width`](class_gradienttexture2d.md#class_gradienttexture2d_property_width) and [`height`](class_gradienttexture2d.md#class_gradienttexture2d_property_height)). See also [`GradientTexture1D`](class_gradienttexture1d.md), [`CurveTexture`](class_curvetexture.md) and [`CurveXYZTexture`](class_curvexyztexture.md).
 
 ## 属性
 
 |||
 |:-:|:--|
-| [Fill](#enum_gradienttexture2d_fill)     | [`fill`](#class_gradienttexture2d_property_fill)           | ``0``                                                                                |
-| [`Vector2`](class_vector2.md)            | [`fill_from`](#class_gradienttexture2d_property_fill_from) | ``Vector2(0, 0)``                                                                    |
-| [`Vector2`](class_vector2.md)            | [`fill_to`](#class_gradienttexture2d_property_fill_to)     | ``Vector2(1, 0)``                                                                    |
-| [`Gradient`](class_gradient.md)          | [`gradient`](#class_gradienttexture2d_property_gradient)   |                                                                                      |
-| [`int`](class_int.md)                    | [`height`](#class_gradienttexture2d_property_height)       | ``64``                                                                               |
-| [Repeat](#enum_gradienttexture2d_repeat) | [`repeat`](#class_gradienttexture2d_property_repeat)       | ``0``                                                                                |
-| [`bool`](class_bool.md)                  | resource_local_to_scene                                    | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
-| [`bool`](class_bool.md)                  | [`use_hdr`](#class_gradienttexture2d_property_use_hdr)     | ``false``                                                                            |
-| [`int`](class_int.md)                    | [`width`](#class_gradienttexture2d_property_width)         | ``64``                                                                               |
+| [Fill](#enum_gradienttexture2d_fill)     | [`fill`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill)           | ``0``                                                                                                 |
+| [`Vector2`](class_vector2.md)            | [`fill_from`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_from) | ``Vector2(0, 0)``                                                                                     |
+| [`Vector2`](class_vector2.md)            | [`fill_to`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_to)     | ``Vector2(1, 0)``                                                                                     |
+| [`Gradient`](class_gradient.md)          | [`gradient`](class_gradienttexture2d.md#class_gradienttexture2d_property_gradient)   |                                                                                                       |
+| [`int`](class_int.md)                    | [`height`](class_gradienttexture2d.md#class_gradienttexture2d_property_height)       | ``64``                                                                                                |
+| [Repeat](#enum_gradienttexture2d_repeat) | [`repeat`](class_gradienttexture2d.md#class_gradienttexture2d_property_repeat)       | ``0``                                                                                                 |
+| [`bool`](class_bool.md)                  | resource_local_to_scene                                                              | ``false`` (overrides [`Resource`](class_resource.md#class_resource_property_resource_local_to_scene)) |
+| [`bool`](class_bool.md)                  | [`use_hdr`](class_gradienttexture2d.md#class_gradienttexture2d_property_use_hdr)     | ``false``                                                                                             |
+| [`int`](class_int.md)                    | [`width`](class_gradienttexture2d.md#class_gradienttexture2d_property_width)         | ``64``                                                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -69,19 +69,19 @@ enum **Repeat**: <div id="enum_gradienttexture2d_repeat"></div>
 
 [Repeat](#enum_gradienttexture2d_repeat) **REPEAT_NONE** = ``0``
 
-The gradient fill is restricted to the range defined by [`fill_from`](#class_gradienttexture2d_property_fill_from) to [`fill_to`](#class_gradienttexture2d_property_fill_to) offsets.
+The gradient fill is restricted to the range defined by [`fill_from`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_from) to [`fill_to`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_to) offsets.
 
 <div id="_class_gradienttexture2d_constant_repeat"></div>
 
 [Repeat](#enum_gradienttexture2d_repeat) **REPEAT** = ``1``
 
-The texture is filled starting from [`fill_from`](#class_gradienttexture2d_property_fill_from) to [`fill_to`](#class_gradienttexture2d_property_fill_to) offsets, repeating the same pattern in both directions.
+The texture is filled starting from [`fill_from`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_from) to [`fill_to`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_to) offsets, repeating the same pattern in both directions.
 
 <div id="_class_gradienttexture2d_constant_repeat_mirror"></div>
 
 [Repeat](#enum_gradienttexture2d_repeat) **REPEAT_MIRROR** = ``2``
 
-The texture is filled starting from [`fill_from`](#class_gradienttexture2d_property_fill_from) to [`fill_to`](#class_gradienttexture2d_property_fill_to) offsets, mirroring the pattern in both directions.
+The texture is filled starting from [`fill_from`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_from) to [`fill_to`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_to) offsets, mirroring the pattern in both directions.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -96,7 +96,7 @@ The texture is filled starting from [`fill_from`](#class_gradienttexture2d_prope
 - `void` **set_fill** ( value: [Fill](#enum_gradienttexture2d_fill) )
 - [Fill](#enum_gradienttexture2d_fill) **get_fill** ( )
 
-The gradient fill type, one of the [Fill](#enum_gradienttexture2d_fill) values. The texture is filled by interpolating colors starting from [`fill_from`](#class_gradienttexture2d_property_fill_from) to [`fill_to`](#class_gradienttexture2d_property_fill_to) offsets.
+The gradient fill type, one of the [Fill](#enum_gradienttexture2d_fill) values. The texture is filled by interpolating colors starting from [`fill_from`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_from) to [`fill_to`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_to) offsets.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -161,7 +161,7 @@ The number of vertical color samples that will be obtained from the [`Gradient`]
 - `void` **set_repeat** ( value: [Repeat](#enum_gradienttexture2d_repeat) )
 - [Repeat](#enum_gradienttexture2d_repeat) **get_repeat** ( )
 
-The gradient repeat type, one of the [Repeat](#enum_gradienttexture2d_repeat) values. The texture is filled starting from [`fill_from`](#class_gradienttexture2d_property_fill_from) to [`fill_to`](#class_gradienttexture2d_property_fill_to) offsets by default, but the gradient fill can be repeated to cover the entire texture.
+The gradient repeat type, one of the [Repeat](#enum_gradienttexture2d_repeat) values. The texture is filled starting from [`fill_from`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_from) to [`fill_to`](class_gradienttexture2d.md#class_gradienttexture2d_property_fill_to) offsets by default, but the gradient fill can be repeated to cover the entire texture.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -174,7 +174,7 @@ The gradient repeat type, one of the [Repeat](#enum_gradienttexture2d_repeat) va
 - `void` **set_use_hdr** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_hdr** ( )
 
-If `true`, the generated texture will support high dynamic range ([`Image.FORMAT_RGBAF`](#class_image_constant_format_rgbaf) format). This allows for glow effects to work if [`Environment.glow_enabled`](#class_environment_property_glow_enabled) is `true`. If `false`, the generated texture will use low dynamic range; overbright colors will be clamped ([`Image.FORMAT_RGBA8`](#class_image_constant_format_rgba8) format).
+If `true`, the generated texture will support high dynamic range ([`Image.FORMAT_RGBAF`](class_image.md#class_image_constant_format_rgbaf) format). This allows for glow effects to work if [`Environment.glow_enabled`](class_environment.md#class_environment_property_glow_enabled) is `true`. If `false`, the generated texture will use low dynamic range; overbright colors will be clamped ([`Image.FORMAT_RGBA8`](class_image.md#class_image_constant_format_rgba8) format).
 
 <!-- rst-class:: classref-item-separator -->
 

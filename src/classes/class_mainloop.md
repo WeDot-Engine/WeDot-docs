@@ -84,10 +84,10 @@ Here is an example script implementing a simple **MainLoop**:
 
 |||
 |:-:|:--|
-| `void`                  | [`_finalize`](#class_mainloop_private_method__finalize) ( ) virtual[^virtual]                                                |
-| `void`                  | [`_initialize`](#class_mainloop_private_method__initialize) ( ) virtual[^virtual]                                            |
-| [`bool`](class_bool.md) | [`_physics_process`](#class_mainloop_private_method__physics_process) ( delta: [`float`](class_float.md) ) virtual[^virtual] |
-| [`bool`](class_bool.md) | [`_process`](#class_mainloop_private_method__process) ( delta: [`float`](class_float.md) ) virtual[^virtual]                 |
+| `void`                  | [`_finalize`](class_mainloop.md#class_mainloop_private_method__finalize) ( ) virtual[^virtual]                                                |
+| `void`                  | [`_initialize`](class_mainloop.md#class_mainloop_private_method__initialize) ( ) virtual[^virtual]                                            |
+| [`bool`](class_bool.md) | [`_physics_process`](class_mainloop.md#class_mainloop_private_method__physics_process) ( delta: [`float`](class_float.md) ) virtual[^virtual] |
+| [`bool`](class_bool.md) | [`_process`](class_mainloop.md#class_mainloop_private_method__process) ( delta: [`float`](class_float.md) ) virtual[^virtual]                 |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -119,7 +119,7 @@ Specific to the iOS platform.
 
 **NOTIFICATION_TRANSLATION_CHANGED** = ``2010`` <div id="class_mainloop_constant_notification_translation_changed"></div>
 
-Notification received when translations may have changed. Can be triggered by the user changing the locale. Can be used to respond to language changes, for example to change the UI strings on the fly. Useful when working with the built-in translation support, like [`Object.tr`](#class_object_method_tr).
+Notification received when translations may have changed. Can be triggered by the user changing the locale. Can be used to respond to language changes, for example to change the UI strings on the fly. Useful when working with the built-in translation support, like [`Object.tr`](class_object.md#class_object_method_tr).
 
 <div id="_class_mainloop_constant_notification_wm_about"></div>
 
@@ -215,7 +215,7 @@ Called once during initialization.
 
 [`bool`](class_bool.md) **_physics_process** ( delta: [`float`](class_float.md) ) virtual[^virtual]<div id="class_mainloop_private_method__physics_process"></div>
 
-Called each physics frame with the time since the last physics frame as argument (`delta`, in seconds). Equivalent to [`Node._physics_process`](#class_node_private_method__physics_process).
+Called each physics frame with the time since the last physics frame as argument (`delta`, in seconds). Equivalent to [`Node._physics_process`](class_node.md#class_node_private_method__physics_process).
 
 If implemented, the method must return a boolean value. `true` ends the main loop, while `false` lets it proceed to the next frame.
 
@@ -227,7 +227,7 @@ If implemented, the method must return a boolean value. `true` ends the main loo
 
 [`bool`](class_bool.md) **_process** ( delta: [`float`](class_float.md) ) virtual[^virtual]<div id="class_mainloop_private_method__process"></div>
 
-Called each process (idle) frame with the time since the last process frame as argument (in seconds). Equivalent to [`Node._process`](#class_node_private_method__process).
+Called each process (idle) frame with the time since the last process frame as argument (in seconds). Equivalent to [`Node._process`](class_node.md#class_node_private_method__process).
 
 If implemented, the method must return a boolean value. `true` ends the main loop, while `false` lets it proceed to the next frame.
 

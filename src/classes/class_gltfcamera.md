@@ -19,20 +19,20 @@ Represents a camera as defined by the base GLTF spec.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`depth_far`](#class_gltfcamera_property_depth_far)     | ``4000.0`` |
-| [`float`](class_float.md) | [`depth_near`](#class_gltfcamera_property_depth_near)   | ``0.05``   |
-| [`float`](class_float.md) | [`fov`](#class_gltfcamera_property_fov)                 | ``1.309``  |
-| [`bool`](class_bool.md)   | [`perspective`](#class_gltfcamera_property_perspective) | ``true``   |
-| [`float`](class_float.md) | [`size_mag`](#class_gltfcamera_property_size_mag)       | ``0.5``    |
+| [`float`](class_float.md) | [`depth_far`](class_gltfcamera.md#class_gltfcamera_property_depth_far)     | ``4000.0`` |
+| [`float`](class_float.md) | [`depth_near`](class_gltfcamera.md#class_gltfcamera_property_depth_near)   | ``0.05``   |
+| [`float`](class_float.md) | [`fov`](class_gltfcamera.md#class_gltfcamera_property_fov)                 | ``1.309``  |
+| [`bool`](class_bool.md)   | [`perspective`](class_gltfcamera.md#class_gltfcamera_property_perspective) | ``true``   |
+| [`float`](class_float.md) | [`size_mag`](class_gltfcamera.md#class_gltfcamera_property_size_mag)       | ``0.5``    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`GLTFCamera`](class_gltfcamera.md) | [`from_dictionary`](#class_gltfcamera_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
-| [`GLTFCamera`](class_gltfcamera.md) | [`from_node`](#class_gltfcamera_method_from_node) ( camera_node: [`Camera3D`](class_camera3d.md) ) static[^static]                |
-| [`Dictionary`](class_dictionary.md) | [`to_dictionary`](#class_gltfcamera_method_to_dictionary) ( ) const[^const]                                                       |
-| [`Camera3D`](class_camera3d.md)     | [`to_node`](#class_gltfcamera_method_to_node) ( ) const[^const]                                                                   |
+| [`GLTFCamera`](class_gltfcamera.md) | [`from_dictionary`](class_gltfcamera.md#class_gltfcamera_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
+| [`GLTFCamera`](class_gltfcamera.md) | [`from_node`](class_gltfcamera.md#class_gltfcamera_method_from_node) ( camera_node: [`Camera3D`](class_camera3d.md) ) static[^static]                |
+| [`Dictionary`](class_dictionary.md) | [`to_dictionary`](class_gltfcamera.md#class_gltfcamera_method_to_dictionary) ( ) const[^const]                                                       |
+| [`Camera3D`](class_camera3d.md)     | [`to_node`](class_gltfcamera.md#class_gltfcamera_method_to_node) ( ) const[^const]                                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -73,7 +73,7 @@ The distance to the near culling boundary for this camera relative to its local 
 - `void` **set_fov** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_fov** ( )
 
-The FOV of the camera. This class and GLTF define the camera FOV in radians, while Godot uses degrees. This maps to GLTF's `yfov` property. This value is only used for perspective cameras, when [`perspective`](#class_gltfcamera_property_perspective) is true.
+The FOV of the camera. This class and GLTF define the camera FOV in radians, while Godot uses degrees. This maps to GLTF's `yfov` property. This value is only used for perspective cameras, when [`perspective`](class_gltfcamera.md#class_gltfcamera_property_perspective) is true.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -86,7 +86,7 @@ The FOV of the camera. This class and GLTF define the camera FOV in radians, whi
 - `void` **set_perspective** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **get_perspective** ( )
 
-Whether or not the camera is in perspective mode. If false, the camera is in orthographic/orthogonal mode. This maps to GLTF's camera `type` property. See [`Camera3D.projection`](#class_camera3d_property_projection) and the GLTF spec for more information.
+Whether or not the camera is in perspective mode. If false, the camera is in orthographic/orthogonal mode. This maps to GLTF's camera `type` property. See [`Camera3D.projection`](class_camera3d.md#class_camera3d_property_projection) and the GLTF spec for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -99,7 +99,7 @@ Whether or not the camera is in perspective mode. If false, the camera is in ort
 - `void` **set_size_mag** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_size_mag** ( )
 
-The size of the camera. This class and GLTF define the camera size magnitude as a radius in meters, while Godot defines it as a diameter in meters. This maps to GLTF's `ymag` property. This value is only used for orthographic/orthogonal cameras, when [`perspective`](#class_gltfcamera_property_perspective) is false.
+The size of the camera. This class and GLTF define the camera size magnitude as a radius in meters, while Godot defines it as a diameter in meters. This maps to GLTF's `ymag` property. This value is only used for orthographic/orthogonal cameras, when [`perspective`](class_gltfcamera.md#class_gltfcamera_property_perspective) is false.
 
 <!-- rst-class:: classref-section-separator -->
 

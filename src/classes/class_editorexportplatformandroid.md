@@ -15,199 +15,199 @@ Exporter for Android.
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                       | [`apk_expansion/SALT`](#class_editorexportplatformandroid_property_apk_expansion/salt)                                                         |
-| [`bool`](class_bool.md)                           | [`apk_expansion/enable`](#class_editorexportplatformandroid_property_apk_expansion/enable)                                                     |
-| [`String`](class_string.md)                       | [`apk_expansion/public_key`](#class_editorexportplatformandroid_property_apk_expansion/public_key)                                             |
-| [`bool`](class_bool.md)                           | [`architectures/arm64-v8a`](#class_editorexportplatformandroid_property_architectures/arm64-v8a)                                               |
-| [`bool`](class_bool.md)                           | [`architectures/armeabi-v7a`](#class_editorexportplatformandroid_property_architectures/armeabi-v7a)                                           |
-| [`bool`](class_bool.md)                           | [`architectures/x86`](#class_editorexportplatformandroid_property_architectures/x86)                                                           |
-| [`bool`](class_bool.md)                           | [`architectures/x86_64`](#class_editorexportplatformandroid_property_architectures/x86_64)                                                     |
-| [`String`](class_string.md)                       | [`command_line/extra_args`](#class_editorexportplatformandroid_property_command_line/extra_args)                                               |
-| [`String`](class_string.md)                       | [`custom_template/debug`](#class_editorexportplatformandroid_property_custom_template/debug)                                                   |
-| [`String`](class_string.md)                       | [`custom_template/release`](#class_editorexportplatformandroid_property_custom_template/release)                                               |
-| [`String`](class_string.md)                       | [`gradle_build/android_source_template`](#class_editorexportplatformandroid_property_gradle_build/android_source_template)                     |
-| [`bool`](class_bool.md)                           | [`gradle_build/compress_native_libraries`](#class_editorexportplatformandroid_property_gradle_build/compress_native_libraries)                 |
-| [`int`](class_int.md)                             | [`gradle_build/export_format`](#class_editorexportplatformandroid_property_gradle_build/export_format)                                         |
-| [`String`](class_string.md)                       | [`gradle_build/gradle_build_directory`](#class_editorexportplatformandroid_property_gradle_build/gradle_build_directory)                       |
-| [`String`](class_string.md)                       | [`gradle_build/min_sdk`](#class_editorexportplatformandroid_property_gradle_build/min_sdk)                                                     |
-| [`String`](class_string.md)                       | [`gradle_build/target_sdk`](#class_editorexportplatformandroid_property_gradle_build/target_sdk)                                               |
-| [`bool`](class_bool.md)                           | [`gradle_build/use_gradle_build`](#class_editorexportplatformandroid_property_gradle_build/use_gradle_build)                                   |
-| [`bool`](class_bool.md)                           | [`graphics/opengl_debug`](#class_editorexportplatformandroid_property_graphics/opengl_debug)                                                   |
-| [`String`](class_string.md)                       | [`keystore/debug`](#class_editorexportplatformandroid_property_keystore/debug)                                                                 |
-| [`String`](class_string.md)                       | [`keystore/debug_password`](#class_editorexportplatformandroid_property_keystore/debug_password)                                               |
-| [`String`](class_string.md)                       | [`keystore/debug_user`](#class_editorexportplatformandroid_property_keystore/debug_user)                                                       |
-| [`String`](class_string.md)                       | [`keystore/release`](#class_editorexportplatformandroid_property_keystore/release)                                                             |
-| [`String`](class_string.md)                       | [`keystore/release_password`](#class_editorexportplatformandroid_property_keystore/release_password)                                           |
-| [`String`](class_string.md)                       | [`keystore/release_user`](#class_editorexportplatformandroid_property_keystore/release_user)                                                   |
-| [`String`](class_string.md)                       | [`launcher_icons/adaptive_background_432x432`](#class_editorexportplatformandroid_property_launcher_icons/adaptive_background_432x432)         |
-| [`String`](class_string.md)                       | [`launcher_icons/adaptive_foreground_432x432`](#class_editorexportplatformandroid_property_launcher_icons/adaptive_foreground_432x432)         |
-| [`String`](class_string.md)                       | [`launcher_icons/main_192x192`](#class_editorexportplatformandroid_property_launcher_icons/main_192x192)                                       |
-| [`int`](class_int.md)                             | [`package/app_category`](#class_editorexportplatformandroid_property_package/app_category)                                                     |
-| [`bool`](class_bool.md)                           | [`package/exclude_from_recents`](#class_editorexportplatformandroid_property_package/exclude_from_recents)                                     |
-| [`String`](class_string.md)                       | [`package/name`](#class_editorexportplatformandroid_property_package/name)                                                                     |
-| [`bool`](class_bool.md)                           | [`package/retain_data_on_uninstall`](#class_editorexportplatformandroid_property_package/retain_data_on_uninstall)                             |
-| [`bool`](class_bool.md)                           | [`package/show_as_launcher_app`](#class_editorexportplatformandroid_property_package/show_as_launcher_app)                                     |
-| [`bool`](class_bool.md)                           | [`package/show_in_android_tv`](#class_editorexportplatformandroid_property_package/show_in_android_tv)                                         |
-| [`bool`](class_bool.md)                           | [`package/show_in_app_library`](#class_editorexportplatformandroid_property_package/show_in_app_library)                                       |
-| [`bool`](class_bool.md)                           | [`package/signed`](#class_editorexportplatformandroid_property_package/signed)                                                                 |
-| [`String`](class_string.md)                       | [`package/unique_name`](#class_editorexportplatformandroid_property_package/unique_name)                                                       |
-| [`bool`](class_bool.md)                           | [`permissions/access_checkin_properties`](#class_editorexportplatformandroid_property_permissions/access_checkin_properties)                   |
-| [`bool`](class_bool.md)                           | [`permissions/access_coarse_location`](#class_editorexportplatformandroid_property_permissions/access_coarse_location)                         |
-| [`bool`](class_bool.md)                           | [`permissions/access_fine_location`](#class_editorexportplatformandroid_property_permissions/access_fine_location)                             |
-| [`bool`](class_bool.md)                           | [`permissions/access_location_extra_commands`](#class_editorexportplatformandroid_property_permissions/access_location_extra_commands)         |
-| [`bool`](class_bool.md)                           | [`permissions/access_mock_location`](#class_editorexportplatformandroid_property_permissions/access_mock_location)                             |
-| [`bool`](class_bool.md)                           | [`permissions/access_network_state`](#class_editorexportplatformandroid_property_permissions/access_network_state)                             |
-| [`bool`](class_bool.md)                           | [`permissions/access_surface_flinger`](#class_editorexportplatformandroid_property_permissions/access_surface_flinger)                         |
-| [`bool`](class_bool.md)                           | [`permissions/access_wifi_state`](#class_editorexportplatformandroid_property_permissions/access_wifi_state)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/account_manager`](#class_editorexportplatformandroid_property_permissions/account_manager)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/add_voicemail`](#class_editorexportplatformandroid_property_permissions/add_voicemail)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/authenticate_accounts`](#class_editorexportplatformandroid_property_permissions/authenticate_accounts)                           |
-| [`bool`](class_bool.md)                           | [`permissions/battery_stats`](#class_editorexportplatformandroid_property_permissions/battery_stats)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/bind_accessibility_service`](#class_editorexportplatformandroid_property_permissions/bind_accessibility_service)                 |
-| [`bool`](class_bool.md)                           | [`permissions/bind_appwidget`](#class_editorexportplatformandroid_property_permissions/bind_appwidget)                                         |
-| [`bool`](class_bool.md)                           | [`permissions/bind_device_admin`](#class_editorexportplatformandroid_property_permissions/bind_device_admin)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/bind_input_method`](#class_editorexportplatformandroid_property_permissions/bind_input_method)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/bind_nfc_service`](#class_editorexportplatformandroid_property_permissions/bind_nfc_service)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/bind_notification_listener_service`](#class_editorexportplatformandroid_property_permissions/bind_notification_listener_service) |
-| [`bool`](class_bool.md)                           | [`permissions/bind_print_service`](#class_editorexportplatformandroid_property_permissions/bind_print_service)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/bind_remoteviews`](#class_editorexportplatformandroid_property_permissions/bind_remoteviews)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/bind_text_service`](#class_editorexportplatformandroid_property_permissions/bind_text_service)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/bind_vpn_service`](#class_editorexportplatformandroid_property_permissions/bind_vpn_service)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/bind_wallpaper`](#class_editorexportplatformandroid_property_permissions/bind_wallpaper)                                         |
-| [`bool`](class_bool.md)                           | [`permissions/bluetooth`](#class_editorexportplatformandroid_property_permissions/bluetooth)                                                   |
-| [`bool`](class_bool.md)                           | [`permissions/bluetooth_admin`](#class_editorexportplatformandroid_property_permissions/bluetooth_admin)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/bluetooth_privileged`](#class_editorexportplatformandroid_property_permissions/bluetooth_privileged)                             |
-| [`bool`](class_bool.md)                           | [`permissions/brick`](#class_editorexportplatformandroid_property_permissions/brick)                                                           |
-| [`bool`](class_bool.md)                           | [`permissions/broadcast_package_removed`](#class_editorexportplatformandroid_property_permissions/broadcast_package_removed)                   |
-| [`bool`](class_bool.md)                           | [`permissions/broadcast_sms`](#class_editorexportplatformandroid_property_permissions/broadcast_sms)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/broadcast_sticky`](#class_editorexportplatformandroid_property_permissions/broadcast_sticky)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/broadcast_wap_push`](#class_editorexportplatformandroid_property_permissions/broadcast_wap_push)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/call_phone`](#class_editorexportplatformandroid_property_permissions/call_phone)                                                 |
-| [`bool`](class_bool.md)                           | [`permissions/call_privileged`](#class_editorexportplatformandroid_property_permissions/call_privileged)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/camera`](#class_editorexportplatformandroid_property_permissions/camera)                                                         |
-| [`bool`](class_bool.md)                           | [`permissions/capture_audio_output`](#class_editorexportplatformandroid_property_permissions/capture_audio_output)                             |
-| [`bool`](class_bool.md)                           | [`permissions/capture_secure_video_output`](#class_editorexportplatformandroid_property_permissions/capture_secure_video_output)               |
-| [`bool`](class_bool.md)                           | [`permissions/capture_video_output`](#class_editorexportplatformandroid_property_permissions/capture_video_output)                             |
-| [`bool`](class_bool.md)                           | [`permissions/change_component_enabled_state`](#class_editorexportplatformandroid_property_permissions/change_component_enabled_state)         |
-| [`bool`](class_bool.md)                           | [`permissions/change_configuration`](#class_editorexportplatformandroid_property_permissions/change_configuration)                             |
-| [`bool`](class_bool.md)                           | [`permissions/change_network_state`](#class_editorexportplatformandroid_property_permissions/change_network_state)                             |
-| [`bool`](class_bool.md)                           | [`permissions/change_wifi_multicast_state`](#class_editorexportplatformandroid_property_permissions/change_wifi_multicast_state)               |
-| [`bool`](class_bool.md)                           | [`permissions/change_wifi_state`](#class_editorexportplatformandroid_property_permissions/change_wifi_state)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/clear_app_cache`](#class_editorexportplatformandroid_property_permissions/clear_app_cache)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/clear_app_user_data`](#class_editorexportplatformandroid_property_permissions/clear_app_user_data)                               |
-| [`bool`](class_bool.md)                           | [`permissions/control_location_updates`](#class_editorexportplatformandroid_property_permissions/control_location_updates)                     |
-| [`PackedStringArray`](class_packedstringarray.md) | [`permissions/custom_permissions`](#class_editorexportplatformandroid_property_permissions/custom_permissions)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/delete_cache_files`](#class_editorexportplatformandroid_property_permissions/delete_cache_files)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/delete_packages`](#class_editorexportplatformandroid_property_permissions/delete_packages)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/device_power`](#class_editorexportplatformandroid_property_permissions/device_power)                                             |
-| [`bool`](class_bool.md)                           | [`permissions/diagnostic`](#class_editorexportplatformandroid_property_permissions/diagnostic)                                                 |
-| [`bool`](class_bool.md)                           | [`permissions/disable_keyguard`](#class_editorexportplatformandroid_property_permissions/disable_keyguard)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/dump`](#class_editorexportplatformandroid_property_permissions/dump)                                                             |
-| [`bool`](class_bool.md)                           | [`permissions/expand_status_bar`](#class_editorexportplatformandroid_property_permissions/expand_status_bar)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/factory_test`](#class_editorexportplatformandroid_property_permissions/factory_test)                                             |
-| [`bool`](class_bool.md)                           | [`permissions/flashlight`](#class_editorexportplatformandroid_property_permissions/flashlight)                                                 |
-| [`bool`](class_bool.md)                           | [`permissions/force_back`](#class_editorexportplatformandroid_property_permissions/force_back)                                                 |
-| [`bool`](class_bool.md)                           | [`permissions/get_accounts`](#class_editorexportplatformandroid_property_permissions/get_accounts)                                             |
-| [`bool`](class_bool.md)                           | [`permissions/get_package_size`](#class_editorexportplatformandroid_property_permissions/get_package_size)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/get_tasks`](#class_editorexportplatformandroid_property_permissions/get_tasks)                                                   |
-| [`bool`](class_bool.md)                           | [`permissions/get_top_activity_info`](#class_editorexportplatformandroid_property_permissions/get_top_activity_info)                           |
-| [`bool`](class_bool.md)                           | [`permissions/global_search`](#class_editorexportplatformandroid_property_permissions/global_search)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/hardware_test`](#class_editorexportplatformandroid_property_permissions/hardware_test)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/inject_events`](#class_editorexportplatformandroid_property_permissions/inject_events)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/install_location_provider`](#class_editorexportplatformandroid_property_permissions/install_location_provider)                   |
-| [`bool`](class_bool.md)                           | [`permissions/install_packages`](#class_editorexportplatformandroid_property_permissions/install_packages)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/install_shortcut`](#class_editorexportplatformandroid_property_permissions/install_shortcut)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/internal_system_window`](#class_editorexportplatformandroid_property_permissions/internal_system_window)                         |
-| [`bool`](class_bool.md)                           | [`permissions/internet`](#class_editorexportplatformandroid_property_permissions/internet)                                                     |
-| [`bool`](class_bool.md)                           | [`permissions/kill_background_processes`](#class_editorexportplatformandroid_property_permissions/kill_background_processes)                   |
-| [`bool`](class_bool.md)                           | [`permissions/location_hardware`](#class_editorexportplatformandroid_property_permissions/location_hardware)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/manage_accounts`](#class_editorexportplatformandroid_property_permissions/manage_accounts)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/manage_app_tokens`](#class_editorexportplatformandroid_property_permissions/manage_app_tokens)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/manage_documents`](#class_editorexportplatformandroid_property_permissions/manage_documents)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/manage_external_storage`](#class_editorexportplatformandroid_property_permissions/manage_external_storage)                       |
-| [`bool`](class_bool.md)                           | [`permissions/master_clear`](#class_editorexportplatformandroid_property_permissions/master_clear)                                             |
-| [`bool`](class_bool.md)                           | [`permissions/media_content_control`](#class_editorexportplatformandroid_property_permissions/media_content_control)                           |
-| [`bool`](class_bool.md)                           | [`permissions/modify_audio_settings`](#class_editorexportplatformandroid_property_permissions/modify_audio_settings)                           |
-| [`bool`](class_bool.md)                           | [`permissions/modify_phone_state`](#class_editorexportplatformandroid_property_permissions/modify_phone_state)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/mount_format_filesystems`](#class_editorexportplatformandroid_property_permissions/mount_format_filesystems)                     |
-| [`bool`](class_bool.md)                           | [`permissions/mount_unmount_filesystems`](#class_editorexportplatformandroid_property_permissions/mount_unmount_filesystems)                   |
-| [`bool`](class_bool.md)                           | [`permissions/nfc`](#class_editorexportplatformandroid_property_permissions/nfc)                                                               |
-| [`bool`](class_bool.md)                           | [`permissions/persistent_activity`](#class_editorexportplatformandroid_property_permissions/persistent_activity)                               |
-| [`bool`](class_bool.md)                           | [`permissions/post_notifications`](#class_editorexportplatformandroid_property_permissions/post_notifications)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/process_outgoing_calls`](#class_editorexportplatformandroid_property_permissions/process_outgoing_calls)                         |
-| [`bool`](class_bool.md)                           | [`permissions/read_calendar`](#class_editorexportplatformandroid_property_permissions/read_calendar)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/read_call_log`](#class_editorexportplatformandroid_property_permissions/read_call_log)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/read_contacts`](#class_editorexportplatformandroid_property_permissions/read_contacts)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/read_external_storage`](#class_editorexportplatformandroid_property_permissions/read_external_storage)                           |
-| [`bool`](class_bool.md)                           | [`permissions/read_frame_buffer`](#class_editorexportplatformandroid_property_permissions/read_frame_buffer)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/read_history_bookmarks`](#class_editorexportplatformandroid_property_permissions/read_history_bookmarks)                         |
-| [`bool`](class_bool.md)                           | [`permissions/read_input_state`](#class_editorexportplatformandroid_property_permissions/read_input_state)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/read_logs`](#class_editorexportplatformandroid_property_permissions/read_logs)                                                   |
-| [`bool`](class_bool.md)                           | [`permissions/read_phone_state`](#class_editorexportplatformandroid_property_permissions/read_phone_state)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/read_profile`](#class_editorexportplatformandroid_property_permissions/read_profile)                                             |
-| [`bool`](class_bool.md)                           | [`permissions/read_sms`](#class_editorexportplatformandroid_property_permissions/read_sms)                                                     |
-| [`bool`](class_bool.md)                           | [`permissions/read_social_stream`](#class_editorexportplatformandroid_property_permissions/read_social_stream)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/read_sync_settings`](#class_editorexportplatformandroid_property_permissions/read_sync_settings)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/read_sync_stats`](#class_editorexportplatformandroid_property_permissions/read_sync_stats)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/read_user_dictionary`](#class_editorexportplatformandroid_property_permissions/read_user_dictionary)                             |
-| [`bool`](class_bool.md)                           | [`permissions/reboot`](#class_editorexportplatformandroid_property_permissions/reboot)                                                         |
-| [`bool`](class_bool.md)                           | [`permissions/receive_boot_completed`](#class_editorexportplatformandroid_property_permissions/receive_boot_completed)                         |
-| [`bool`](class_bool.md)                           | [`permissions/receive_mms`](#class_editorexportplatformandroid_property_permissions/receive_mms)                                               |
-| [`bool`](class_bool.md)                           | [`permissions/receive_sms`](#class_editorexportplatformandroid_property_permissions/receive_sms)                                               |
-| [`bool`](class_bool.md)                           | [`permissions/receive_wap_push`](#class_editorexportplatformandroid_property_permissions/receive_wap_push)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/record_audio`](#class_editorexportplatformandroid_property_permissions/record_audio)                                             |
-| [`bool`](class_bool.md)                           | [`permissions/reorder_tasks`](#class_editorexportplatformandroid_property_permissions/reorder_tasks)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/restart_packages`](#class_editorexportplatformandroid_property_permissions/restart_packages)                                     |
-| [`bool`](class_bool.md)                           | [`permissions/send_respond_via_message`](#class_editorexportplatformandroid_property_permissions/send_respond_via_message)                     |
-| [`bool`](class_bool.md)                           | [`permissions/send_sms`](#class_editorexportplatformandroid_property_permissions/send_sms)                                                     |
-| [`bool`](class_bool.md)                           | [`permissions/set_activity_watcher`](#class_editorexportplatformandroid_property_permissions/set_activity_watcher)                             |
-| [`bool`](class_bool.md)                           | [`permissions/set_alarm`](#class_editorexportplatformandroid_property_permissions/set_alarm)                                                   |
-| [`bool`](class_bool.md)                           | [`permissions/set_always_finish`](#class_editorexportplatformandroid_property_permissions/set_always_finish)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/set_animation_scale`](#class_editorexportplatformandroid_property_permissions/set_animation_scale)                               |
-| [`bool`](class_bool.md)                           | [`permissions/set_debug_app`](#class_editorexportplatformandroid_property_permissions/set_debug_app)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/set_orientation`](#class_editorexportplatformandroid_property_permissions/set_orientation)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/set_pointer_speed`](#class_editorexportplatformandroid_property_permissions/set_pointer_speed)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/set_preferred_applications`](#class_editorexportplatformandroid_property_permissions/set_preferred_applications)                 |
-| [`bool`](class_bool.md)                           | [`permissions/set_process_limit`](#class_editorexportplatformandroid_property_permissions/set_process_limit)                                   |
-| [`bool`](class_bool.md)                           | [`permissions/set_time`](#class_editorexportplatformandroid_property_permissions/set_time)                                                     |
-| [`bool`](class_bool.md)                           | [`permissions/set_time_zone`](#class_editorexportplatformandroid_property_permissions/set_time_zone)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/set_wallpaper`](#class_editorexportplatformandroid_property_permissions/set_wallpaper)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/set_wallpaper_hints`](#class_editorexportplatformandroid_property_permissions/set_wallpaper_hints)                               |
-| [`bool`](class_bool.md)                           | [`permissions/signal_persistent_processes`](#class_editorexportplatformandroid_property_permissions/signal_persistent_processes)               |
-| [`bool`](class_bool.md)                           | [`permissions/status_bar`](#class_editorexportplatformandroid_property_permissions/status_bar)                                                 |
-| [`bool`](class_bool.md)                           | [`permissions/subscribed_feeds_read`](#class_editorexportplatformandroid_property_permissions/subscribed_feeds_read)                           |
-| [`bool`](class_bool.md)                           | [`permissions/subscribed_feeds_write`](#class_editorexportplatformandroid_property_permissions/subscribed_feeds_write)                         |
-| [`bool`](class_bool.md)                           | [`permissions/system_alert_window`](#class_editorexportplatformandroid_property_permissions/system_alert_window)                               |
-| [`bool`](class_bool.md)                           | [`permissions/transmit_ir`](#class_editorexportplatformandroid_property_permissions/transmit_ir)                                               |
-| [`bool`](class_bool.md)                           | [`permissions/uninstall_shortcut`](#class_editorexportplatformandroid_property_permissions/uninstall_shortcut)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/update_device_stats`](#class_editorexportplatformandroid_property_permissions/update_device_stats)                               |
-| [`bool`](class_bool.md)                           | [`permissions/use_credentials`](#class_editorexportplatformandroid_property_permissions/use_credentials)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/use_sip`](#class_editorexportplatformandroid_property_permissions/use_sip)                                                       |
-| [`bool`](class_bool.md)                           | [`permissions/vibrate`](#class_editorexportplatformandroid_property_permissions/vibrate)                                                       |
-| [`bool`](class_bool.md)                           | [`permissions/wake_lock`](#class_editorexportplatformandroid_property_permissions/wake_lock)                                                   |
-| [`bool`](class_bool.md)                           | [`permissions/write_apn_settings`](#class_editorexportplatformandroid_property_permissions/write_apn_settings)                                 |
-| [`bool`](class_bool.md)                           | [`permissions/write_calendar`](#class_editorexportplatformandroid_property_permissions/write_calendar)                                         |
-| [`bool`](class_bool.md)                           | [`permissions/write_call_log`](#class_editorexportplatformandroid_property_permissions/write_call_log)                                         |
-| [`bool`](class_bool.md)                           | [`permissions/write_contacts`](#class_editorexportplatformandroid_property_permissions/write_contacts)                                         |
-| [`bool`](class_bool.md)                           | [`permissions/write_external_storage`](#class_editorexportplatformandroid_property_permissions/write_external_storage)                         |
-| [`bool`](class_bool.md)                           | [`permissions/write_gservices`](#class_editorexportplatformandroid_property_permissions/write_gservices)                                       |
-| [`bool`](class_bool.md)                           | [`permissions/write_history_bookmarks`](#class_editorexportplatformandroid_property_permissions/write_history_bookmarks)                       |
-| [`bool`](class_bool.md)                           | [`permissions/write_profile`](#class_editorexportplatformandroid_property_permissions/write_profile)                                           |
-| [`bool`](class_bool.md)                           | [`permissions/write_secure_settings`](#class_editorexportplatformandroid_property_permissions/write_secure_settings)                           |
-| [`bool`](class_bool.md)                           | [`permissions/write_settings`](#class_editorexportplatformandroid_property_permissions/write_settings)                                         |
-| [`bool`](class_bool.md)                           | [`permissions/write_sms`](#class_editorexportplatformandroid_property_permissions/write_sms)                                                   |
-| [`bool`](class_bool.md)                           | [`permissions/write_social_stream`](#class_editorexportplatformandroid_property_permissions/write_social_stream)                               |
-| [`bool`](class_bool.md)                           | [`permissions/write_sync_settings`](#class_editorexportplatformandroid_property_permissions/write_sync_settings)                               |
-| [`bool`](class_bool.md)                           | [`permissions/write_user_dictionary`](#class_editorexportplatformandroid_property_permissions/write_user_dictionary)                           |
-| [`bool`](class_bool.md)                           | [`screen/immersive_mode`](#class_editorexportplatformandroid_property_screen/immersive_mode)                                                   |
-| [`bool`](class_bool.md)                           | [`screen/support_large`](#class_editorexportplatformandroid_property_screen/support_large)                                                     |
-| [`bool`](class_bool.md)                           | [`screen/support_normal`](#class_editorexportplatformandroid_property_screen/support_normal)                                                   |
-| [`bool`](class_bool.md)                           | [`screen/support_small`](#class_editorexportplatformandroid_property_screen/support_small)                                                     |
-| [`bool`](class_bool.md)                           | [`screen/support_xlarge`](#class_editorexportplatformandroid_property_screen/support_xlarge)                                                   |
-| [`bool`](class_bool.md)                           | [`user_data_backup/allow`](#class_editorexportplatformandroid_property_user_data_backup/allow)                                                 |
-| [`int`](class_int.md)                             | [`version/code`](#class_editorexportplatformandroid_property_version/code)                                                                     |
-| [`String`](class_string.md)                       | [`version/name`](#class_editorexportplatformandroid_property_version/name)                                                                     |
-| [`int`](class_int.md)                             | [`xr_features/xr_mode`](#class_editorexportplatformandroid_property_xr_features/xr_mode)                                                       |
+| [`String`](class_string.md)                       | [`apk_expansion/SALT`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_apk_expansion/salt)                                                         |
+| [`bool`](class_bool.md)                           | [`apk_expansion/enable`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_apk_expansion/enable)                                                     |
+| [`String`](class_string.md)                       | [`apk_expansion/public_key`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_apk_expansion/public_key)                                             |
+| [`bool`](class_bool.md)                           | [`architectures/arm64-v8a`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_architectures/arm64-v8a)                                               |
+| [`bool`](class_bool.md)                           | [`architectures/armeabi-v7a`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_architectures/armeabi-v7a)                                           |
+| [`bool`](class_bool.md)                           | [`architectures/x86`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_architectures/x86)                                                           |
+| [`bool`](class_bool.md)                           | [`architectures/x86_64`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_architectures/x86_64)                                                     |
+| [`String`](class_string.md)                       | [`command_line/extra_args`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_command_line/extra_args)                                               |
+| [`String`](class_string.md)                       | [`custom_template/debug`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_custom_template/debug)                                                   |
+| [`String`](class_string.md)                       | [`custom_template/release`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_custom_template/release)                                               |
+| [`String`](class_string.md)                       | [`gradle_build/android_source_template`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/android_source_template)                     |
+| [`bool`](class_bool.md)                           | [`gradle_build/compress_native_libraries`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/compress_native_libraries)                 |
+| [`int`](class_int.md)                             | [`gradle_build/export_format`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/export_format)                                         |
+| [`String`](class_string.md)                       | [`gradle_build/gradle_build_directory`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/gradle_build_directory)                       |
+| [`String`](class_string.md)                       | [`gradle_build/min_sdk`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/min_sdk)                                                     |
+| [`String`](class_string.md)                       | [`gradle_build/target_sdk`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/target_sdk)                                               |
+| [`bool`](class_bool.md)                           | [`gradle_build/use_gradle_build`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/use_gradle_build)                                   |
+| [`bool`](class_bool.md)                           | [`graphics/opengl_debug`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_graphics/opengl_debug)                                                   |
+| [`String`](class_string.md)                       | [`keystore/debug`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/debug)                                                                 |
+| [`String`](class_string.md)                       | [`keystore/debug_password`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/debug_password)                                               |
+| [`String`](class_string.md)                       | [`keystore/debug_user`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/debug_user)                                                       |
+| [`String`](class_string.md)                       | [`keystore/release`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/release)                                                             |
+| [`String`](class_string.md)                       | [`keystore/release_password`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/release_password)                                           |
+| [`String`](class_string.md)                       | [`keystore/release_user`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/release_user)                                                   |
+| [`String`](class_string.md)                       | [`launcher_icons/adaptive_background_432x432`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_launcher_icons/adaptive_background_432x432)         |
+| [`String`](class_string.md)                       | [`launcher_icons/adaptive_foreground_432x432`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_launcher_icons/adaptive_foreground_432x432)         |
+| [`String`](class_string.md)                       | [`launcher_icons/main_192x192`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_launcher_icons/main_192x192)                                       |
+| [`int`](class_int.md)                             | [`package/app_category`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/app_category)                                                     |
+| [`bool`](class_bool.md)                           | [`package/exclude_from_recents`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/exclude_from_recents)                                     |
+| [`String`](class_string.md)                       | [`package/name`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/name)                                                                     |
+| [`bool`](class_bool.md)                           | [`package/retain_data_on_uninstall`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/retain_data_on_uninstall)                             |
+| [`bool`](class_bool.md)                           | [`package/show_as_launcher_app`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/show_as_launcher_app)                                     |
+| [`bool`](class_bool.md)                           | [`package/show_in_android_tv`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/show_in_android_tv)                                         |
+| [`bool`](class_bool.md)                           | [`package/show_in_app_library`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/show_in_app_library)                                       |
+| [`bool`](class_bool.md)                           | [`package/signed`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/signed)                                                                 |
+| [`String`](class_string.md)                       | [`package/unique_name`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/unique_name)                                                       |
+| [`bool`](class_bool.md)                           | [`permissions/access_checkin_properties`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/access_checkin_properties)                   |
+| [`bool`](class_bool.md)                           | [`permissions/access_coarse_location`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/access_coarse_location)                         |
+| [`bool`](class_bool.md)                           | [`permissions/access_fine_location`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/access_fine_location)                             |
+| [`bool`](class_bool.md)                           | [`permissions/access_location_extra_commands`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/access_location_extra_commands)         |
+| [`bool`](class_bool.md)                           | [`permissions/access_mock_location`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/access_mock_location)                             |
+| [`bool`](class_bool.md)                           | [`permissions/access_network_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/access_network_state)                             |
+| [`bool`](class_bool.md)                           | [`permissions/access_surface_flinger`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/access_surface_flinger)                         |
+| [`bool`](class_bool.md)                           | [`permissions/access_wifi_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/access_wifi_state)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/account_manager`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/account_manager)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/add_voicemail`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/add_voicemail)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/authenticate_accounts`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/authenticate_accounts)                           |
+| [`bool`](class_bool.md)                           | [`permissions/battery_stats`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/battery_stats)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/bind_accessibility_service`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_accessibility_service)                 |
+| [`bool`](class_bool.md)                           | [`permissions/bind_appwidget`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_appwidget)                                         |
+| [`bool`](class_bool.md)                           | [`permissions/bind_device_admin`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_device_admin)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/bind_input_method`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_input_method)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/bind_nfc_service`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_nfc_service)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/bind_notification_listener_service`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_notification_listener_service) |
+| [`bool`](class_bool.md)                           | [`permissions/bind_print_service`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_print_service)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/bind_remoteviews`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_remoteviews)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/bind_text_service`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_text_service)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/bind_vpn_service`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_vpn_service)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/bind_wallpaper`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bind_wallpaper)                                         |
+| [`bool`](class_bool.md)                           | [`permissions/bluetooth`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bluetooth)                                                   |
+| [`bool`](class_bool.md)                           | [`permissions/bluetooth_admin`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bluetooth_admin)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/bluetooth_privileged`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/bluetooth_privileged)                             |
+| [`bool`](class_bool.md)                           | [`permissions/brick`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/brick)                                                           |
+| [`bool`](class_bool.md)                           | [`permissions/broadcast_package_removed`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/broadcast_package_removed)                   |
+| [`bool`](class_bool.md)                           | [`permissions/broadcast_sms`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/broadcast_sms)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/broadcast_sticky`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/broadcast_sticky)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/broadcast_wap_push`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/broadcast_wap_push)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/call_phone`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/call_phone)                                                 |
+| [`bool`](class_bool.md)                           | [`permissions/call_privileged`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/call_privileged)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/camera`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/camera)                                                         |
+| [`bool`](class_bool.md)                           | [`permissions/capture_audio_output`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/capture_audio_output)                             |
+| [`bool`](class_bool.md)                           | [`permissions/capture_secure_video_output`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/capture_secure_video_output)               |
+| [`bool`](class_bool.md)                           | [`permissions/capture_video_output`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/capture_video_output)                             |
+| [`bool`](class_bool.md)                           | [`permissions/change_component_enabled_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/change_component_enabled_state)         |
+| [`bool`](class_bool.md)                           | [`permissions/change_configuration`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/change_configuration)                             |
+| [`bool`](class_bool.md)                           | [`permissions/change_network_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/change_network_state)                             |
+| [`bool`](class_bool.md)                           | [`permissions/change_wifi_multicast_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/change_wifi_multicast_state)               |
+| [`bool`](class_bool.md)                           | [`permissions/change_wifi_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/change_wifi_state)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/clear_app_cache`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/clear_app_cache)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/clear_app_user_data`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/clear_app_user_data)                               |
+| [`bool`](class_bool.md)                           | [`permissions/control_location_updates`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/control_location_updates)                     |
+| [`PackedStringArray`](class_packedstringarray.md) | [`permissions/custom_permissions`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/custom_permissions)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/delete_cache_files`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/delete_cache_files)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/delete_packages`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/delete_packages)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/device_power`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/device_power)                                             |
+| [`bool`](class_bool.md)                           | [`permissions/diagnostic`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/diagnostic)                                                 |
+| [`bool`](class_bool.md)                           | [`permissions/disable_keyguard`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/disable_keyguard)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/dump`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/dump)                                                             |
+| [`bool`](class_bool.md)                           | [`permissions/expand_status_bar`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/expand_status_bar)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/factory_test`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/factory_test)                                             |
+| [`bool`](class_bool.md)                           | [`permissions/flashlight`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/flashlight)                                                 |
+| [`bool`](class_bool.md)                           | [`permissions/force_back`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/force_back)                                                 |
+| [`bool`](class_bool.md)                           | [`permissions/get_accounts`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/get_accounts)                                             |
+| [`bool`](class_bool.md)                           | [`permissions/get_package_size`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/get_package_size)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/get_tasks`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/get_tasks)                                                   |
+| [`bool`](class_bool.md)                           | [`permissions/get_top_activity_info`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/get_top_activity_info)                           |
+| [`bool`](class_bool.md)                           | [`permissions/global_search`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/global_search)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/hardware_test`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/hardware_test)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/inject_events`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/inject_events)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/install_location_provider`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/install_location_provider)                   |
+| [`bool`](class_bool.md)                           | [`permissions/install_packages`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/install_packages)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/install_shortcut`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/install_shortcut)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/internal_system_window`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/internal_system_window)                         |
+| [`bool`](class_bool.md)                           | [`permissions/internet`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/internet)                                                     |
+| [`bool`](class_bool.md)                           | [`permissions/kill_background_processes`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/kill_background_processes)                   |
+| [`bool`](class_bool.md)                           | [`permissions/location_hardware`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/location_hardware)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/manage_accounts`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/manage_accounts)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/manage_app_tokens`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/manage_app_tokens)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/manage_documents`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/manage_documents)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/manage_external_storage`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/manage_external_storage)                       |
+| [`bool`](class_bool.md)                           | [`permissions/master_clear`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/master_clear)                                             |
+| [`bool`](class_bool.md)                           | [`permissions/media_content_control`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/media_content_control)                           |
+| [`bool`](class_bool.md)                           | [`permissions/modify_audio_settings`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/modify_audio_settings)                           |
+| [`bool`](class_bool.md)                           | [`permissions/modify_phone_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/modify_phone_state)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/mount_format_filesystems`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/mount_format_filesystems)                     |
+| [`bool`](class_bool.md)                           | [`permissions/mount_unmount_filesystems`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/mount_unmount_filesystems)                   |
+| [`bool`](class_bool.md)                           | [`permissions/nfc`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/nfc)                                                               |
+| [`bool`](class_bool.md)                           | [`permissions/persistent_activity`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/persistent_activity)                               |
+| [`bool`](class_bool.md)                           | [`permissions/post_notifications`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/post_notifications)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/process_outgoing_calls`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/process_outgoing_calls)                         |
+| [`bool`](class_bool.md)                           | [`permissions/read_calendar`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_calendar)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/read_call_log`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_call_log)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/read_contacts`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_contacts)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/read_external_storage`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_external_storage)                           |
+| [`bool`](class_bool.md)                           | [`permissions/read_frame_buffer`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_frame_buffer)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/read_history_bookmarks`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_history_bookmarks)                         |
+| [`bool`](class_bool.md)                           | [`permissions/read_input_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_input_state)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/read_logs`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_logs)                                                   |
+| [`bool`](class_bool.md)                           | [`permissions/read_phone_state`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_phone_state)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/read_profile`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_profile)                                             |
+| [`bool`](class_bool.md)                           | [`permissions/read_sms`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_sms)                                                     |
+| [`bool`](class_bool.md)                           | [`permissions/read_social_stream`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_social_stream)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/read_sync_settings`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_sync_settings)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/read_sync_stats`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_sync_stats)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/read_user_dictionary`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/read_user_dictionary)                             |
+| [`bool`](class_bool.md)                           | [`permissions/reboot`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/reboot)                                                         |
+| [`bool`](class_bool.md)                           | [`permissions/receive_boot_completed`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/receive_boot_completed)                         |
+| [`bool`](class_bool.md)                           | [`permissions/receive_mms`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/receive_mms)                                               |
+| [`bool`](class_bool.md)                           | [`permissions/receive_sms`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/receive_sms)                                               |
+| [`bool`](class_bool.md)                           | [`permissions/receive_wap_push`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/receive_wap_push)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/record_audio`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/record_audio)                                             |
+| [`bool`](class_bool.md)                           | [`permissions/reorder_tasks`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/reorder_tasks)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/restart_packages`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/restart_packages)                                     |
+| [`bool`](class_bool.md)                           | [`permissions/send_respond_via_message`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/send_respond_via_message)                     |
+| [`bool`](class_bool.md)                           | [`permissions/send_sms`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/send_sms)                                                     |
+| [`bool`](class_bool.md)                           | [`permissions/set_activity_watcher`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_activity_watcher)                             |
+| [`bool`](class_bool.md)                           | [`permissions/set_alarm`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_alarm)                                                   |
+| [`bool`](class_bool.md)                           | [`permissions/set_always_finish`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_always_finish)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/set_animation_scale`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_animation_scale)                               |
+| [`bool`](class_bool.md)                           | [`permissions/set_debug_app`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_debug_app)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/set_orientation`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_orientation)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/set_pointer_speed`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_pointer_speed)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/set_preferred_applications`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_preferred_applications)                 |
+| [`bool`](class_bool.md)                           | [`permissions/set_process_limit`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_process_limit)                                   |
+| [`bool`](class_bool.md)                           | [`permissions/set_time`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_time)                                                     |
+| [`bool`](class_bool.md)                           | [`permissions/set_time_zone`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_time_zone)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/set_wallpaper`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_wallpaper)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/set_wallpaper_hints`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/set_wallpaper_hints)                               |
+| [`bool`](class_bool.md)                           | [`permissions/signal_persistent_processes`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/signal_persistent_processes)               |
+| [`bool`](class_bool.md)                           | [`permissions/status_bar`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/status_bar)                                                 |
+| [`bool`](class_bool.md)                           | [`permissions/subscribed_feeds_read`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/subscribed_feeds_read)                           |
+| [`bool`](class_bool.md)                           | [`permissions/subscribed_feeds_write`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/subscribed_feeds_write)                         |
+| [`bool`](class_bool.md)                           | [`permissions/system_alert_window`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/system_alert_window)                               |
+| [`bool`](class_bool.md)                           | [`permissions/transmit_ir`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/transmit_ir)                                               |
+| [`bool`](class_bool.md)                           | [`permissions/uninstall_shortcut`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/uninstall_shortcut)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/update_device_stats`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/update_device_stats)                               |
+| [`bool`](class_bool.md)                           | [`permissions/use_credentials`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/use_credentials)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/use_sip`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/use_sip)                                                       |
+| [`bool`](class_bool.md)                           | [`permissions/vibrate`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/vibrate)                                                       |
+| [`bool`](class_bool.md)                           | [`permissions/wake_lock`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/wake_lock)                                                   |
+| [`bool`](class_bool.md)                           | [`permissions/write_apn_settings`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_apn_settings)                                 |
+| [`bool`](class_bool.md)                           | [`permissions/write_calendar`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_calendar)                                         |
+| [`bool`](class_bool.md)                           | [`permissions/write_call_log`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_call_log)                                         |
+| [`bool`](class_bool.md)                           | [`permissions/write_contacts`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_contacts)                                         |
+| [`bool`](class_bool.md)                           | [`permissions/write_external_storage`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_external_storage)                         |
+| [`bool`](class_bool.md)                           | [`permissions/write_gservices`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_gservices)                                       |
+| [`bool`](class_bool.md)                           | [`permissions/write_history_bookmarks`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_history_bookmarks)                       |
+| [`bool`](class_bool.md)                           | [`permissions/write_profile`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_profile)                                           |
+| [`bool`](class_bool.md)                           | [`permissions/write_secure_settings`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_secure_settings)                           |
+| [`bool`](class_bool.md)                           | [`permissions/write_settings`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_settings)                                         |
+| [`bool`](class_bool.md)                           | [`permissions/write_sms`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_sms)                                                   |
+| [`bool`](class_bool.md)                           | [`permissions/write_social_stream`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_social_stream)                               |
+| [`bool`](class_bool.md)                           | [`permissions/write_sync_settings`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_sync_settings)                               |
+| [`bool`](class_bool.md)                           | [`permissions/write_user_dictionary`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_permissions/write_user_dictionary)                           |
+| [`bool`](class_bool.md)                           | [`screen/immersive_mode`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_screen/immersive_mode)                                                   |
+| [`bool`](class_bool.md)                           | [`screen/support_large`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_screen/support_large)                                                     |
+| [`bool`](class_bool.md)                           | [`screen/support_normal`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_screen/support_normal)                                                   |
+| [`bool`](class_bool.md)                           | [`screen/support_small`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_screen/support_small)                                                     |
+| [`bool`](class_bool.md)                           | [`screen/support_xlarge`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_screen/support_xlarge)                                                   |
+| [`bool`](class_bool.md)                           | [`user_data_backup/allow`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_user_data_backup/allow)                                                 |
+| [`int`](class_int.md)                             | [`version/code`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_version/code)                                                                     |
+| [`String`](class_string.md)                       | [`version/name`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_version/name)                                                                     |
+| [`int`](class_int.md)                             | [`xr_features/xr_mode`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_xr_features/xr_mode)                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -303,7 +303,7 @@ A list of additional command line arguments, separated by space, which the expor
 
 Path to an APK file to use as a custom export template for debug exports. If left empty, default template is used.
 
- **Note:** This is only used if [`gradle_build/use_gradle_build`](#class_editorexportplatformandroid_property_gradle_build/use_gradle_build) is disabled.
+ **Note:** This is only used if [`gradle_build/use_gradle_build`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/use_gradle_build) is disabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -315,7 +315,7 @@ Path to an APK file to use as a custom export template for debug exports. If lef
 
 Path to an APK file to use as a custom export template for release exports. If left empty, default template is used.
 
- **Note:** This is only used if [`gradle_build/use_gradle_build`](#class_editorexportplatformandroid_property_gradle_build/use_gradle_build) is disabled.
+ **Note:** This is only used if [`gradle_build/use_gradle_build`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_gradle_build/use_gradle_build) is disabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -425,7 +425,7 @@ Password for the debug keystore file.
 
 Can be overridden with the environment variable `GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD`.
 
-Fallbacks to `EditorSettings.export/android/debug_keystore_pass` if both it and [`keystore/debug`](#class_editorexportplatformandroid_property_keystore/debug) are empty.
+Fallbacks to `EditorSettings.export/android/debug_keystore_pass` if both it and [`keystore/debug`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/debug) are empty.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -439,7 +439,7 @@ User name for the debug keystore file.
 
 Can be overridden with the environment variable `GODOT_ANDROID_KEYSTORE_DEBUG_USER`.
 
-Fallbacks to `EditorSettings.export/android/debug_keystore_user` if both it and [`keystore/debug`](#class_editorexportplatformandroid_property_keystore/debug) are empty.
+Fallbacks to `EditorSettings.export/android/debug_keystore_user` if both it and [`keystore/debug`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/debug) are empty.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -505,7 +505,7 @@ Foreground layer of the application adaptive icon file. See [*Design adaptive ic
 
 [`String`](class_string.md) **launcher_icons/main_192x192** <div id="class_editorexportplatformandroid_property_launcher_icons/main_192x192"></div>
 
-Application icon file. If left empty, it will fallback to [`ProjectSettings.application/config/icon`](#class_projectsettings_property_application/config/icon).
+Application icon file. If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2171,7 +2171,7 @@ Machine-readable application version. This must be incremented for every new rel
 
 [`String`](class_string.md) **version/name** <div id="class_editorexportplatformandroid_property_version/name"></div>
 
-Application version visible to the user. Falls back to [`ProjectSettings.application/config/version`](#class_projectsettings_property_application/config/version) if left empty.
+Application version visible to the user. Falls back to [`ProjectSettings.application/config/version`](class_projectsettings.md#class_projectsettings_property_application/config/version) if left empty.
 
 <!-- rst-class:: classref-item-separator -->
 

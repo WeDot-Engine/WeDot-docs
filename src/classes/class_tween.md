@@ -17,9 +17,9 @@ Tweens are mostly useful for animations requiring a numerical property to be int
 
  **Tween** is more suited than [`AnimationPlayer`](class_animationplayer.md) for animations where you don't know the final values in advance. For example, interpolating a dynamically-chosen camera zoom value is best done with a **Tween**; it would be difficult to do the same thing with an [`AnimationPlayer`](class_animationplayer.md) node. Tweens are also more light-weight than [`AnimationPlayer`](class_animationplayer.md), so they are very much suited for simple animations or general tasks that don't require visual tweaking provided by the editor. They can be used in a "fire-and-forget" manner for some logic that normally would be done by code. You can e.g. make something shoot periodically by using a looped [`CallbackTweener`](class_callbacktweener.md) with a delay.
 
-A **Tween** can be created by using either [`SceneTree.create_tween`](#class_scenetree_method_create_tween) or [`Node.create_tween`](#class_node_method_create_tween). **Tween** s created manually (i.e. by using `Tween.new()`) are invalid and can't be used for tweening values.
+A **Tween** can be created by using either [`SceneTree.create_tween`](class_scenetree.md#class_scenetree_method_create_tween) or [`Node.create_tween`](class_node.md#class_node_method_create_tween). **Tween** s created manually (i.e. by using `Tween.new()`) are invalid and can't be used for tweening values.
 
-A tween animation is created by adding [`Tweener`](class_tweener.md) s to the **Tween** object, using [`tween_property`](#class_tween_method_tween_property), [`tween_interval`](#class_tween_method_tween_interval), [`tween_callback`](#class_tween_method_tween_callback) or [`tween_method`](#class_tween_method_tween_method):
+A tween animation is created by adding [`Tweener`](class_tweener.md) s to the **Tween** object, using [`tween_property`](class_tween.md#class_tween_method_tween_property), [`tween_interval`](class_tween.md#class_tween_method_tween_interval), [`tween_callback`](class_tween.md#class_tween_method_tween_callback) or [`tween_method`](class_tween.md#class_tween_method_tween_method):
 
 
 
@@ -41,9 +41,9 @@ A tween animation is created by adding [`Tweener`](class_tweener.md) s to the **
 
 
 
-This sequence will make the `$Sprite` node turn red, then shrink, before finally calling [`Node.queue_free`](#class_node_method_queue_free) to free the sprite. [`Tweener`](class_tweener.md) s are executed one after another by default. This behavior can be changed using [`parallel`](#class_tween_method_parallel) and [`set_parallel`](#class_tween_method_set_parallel).
+This sequence will make the `$Sprite` node turn red, then shrink, before finally calling [`Node.queue_free`](class_node.md#class_node_method_queue_free) to free the sprite. [`Tweener`](class_tweener.md) s are executed one after another by default. This behavior can be changed using [`parallel`](class_tween.md#class_tween_method_parallel) and [`set_parallel`](class_tween.md#class_tween_method_set_parallel).
 
-When a [`Tweener`](class_tweener.md) is created with one of the `tween_*` methods, a chained method call can be used to tweak the properties of this [`Tweener`](class_tweener.md). For example, if you want to set a different transition type in the above example, you can use [`set_trans`](#class_tween_method_set_trans):
+When a [`Tweener`](class_tweener.md) is created with one of the `tween_*` methods, a chained method call can be used to tweak the properties of this [`Tweener`](class_tweener.md). For example, if you want to set a different transition type in the above example, you can use [`set_trans`](class_tween.md#class_tween_method_set_trans):
 
 
 
@@ -136,13 +136,13 @@ You should avoid using more than one **Tween** per object's property. If two or 
 
 
 
-Some [`Tweener`](class_tweener.md) s use transitions and eases. The first accepts a [TransitionType](#enum_tween_transitiontype) constant, and refers to the way the timing of the animation is handled (see [*easings.net*](https://easings.net/) for some examples). The second accepts an [EaseType](#enum_tween_easetype) constant, and controls where the `trans_type` is applied to the interpolation (in the beginning, the end, or both). If you don't know which transition and easing to pick, you can try different [TransitionType](#enum_tween_transitiontype) constants with [`EASE_IN_OUT`](#class_tween_constant_ease_in_out), and use the one that looks best.
+Some [`Tweener`](class_tweener.md) s use transitions and eases. The first accepts a [TransitionType](#enum_tween_transitiontype) constant, and refers to the way the timing of the animation is handled (see [*easings.net*](https://easings.net/) for some examples). The second accepts an [EaseType](#enum_tween_easetype) constant, and controls where the `trans_type` is applied to the interpolation (in the beginning, the end, or both). If you don't know which transition and easing to pick, you can try different [TransitionType](#enum_tween_transitiontype) constants with [`EASE_IN_OUT`](class_tween.md#class_tween_constant_ease_in_out), and use the one that looks best.
 
  [*Tween easing and transition types cheatsheet*](https://raw.githubusercontent.com/godotengine/godot-docs/master/img/tween_cheatsheet.webp) 
 
  **Note:** Tweens are not designed to be re-used and trying to do so results in an undefined behavior. Create a new Tween for each animation and every time you replay an animation from start. Keep in mind that Tweens start immediately, so only create a Tween when you want to start animating.
 
- **Note:** The tween is processed after all of the nodes in the current frame, i.e. node's [`Node._process`](#class_node_private_method__process) method would be called before the tween (or [`Node._physics_process`](#class_node_private_method__physics_process) depending on the value passed to [`set_process_mode`](#class_tween_method_set_process_mode)).
+ **Note:** The tween is processed after all of the nodes in the current frame, i.e. node's [`Node._process`](class_node.md#class_node_private_method__process) method would be called before the tween (or [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) depending on the value passed to [`set_process_mode`](class_tween.md#class_tween_method_set_process_mode)).
 
 
 
@@ -168,30 +168,30 @@ Some [`Tweener`](class_tweener.md) s use transitions and eases. The first accept
 
 |||
 |:-:|:--|
-| [`Tween`](class_tween.md)                     | [`bind_node`](#class_tween_method_bind_node) ( node: [`Node`](class_node.md) )                                                                                                                                                                                                                                                                                 |
-| [`Tween`](class_tween.md)                     | [`chain`](#class_tween_method_chain) ( )                                                                                                                                                                                                                                                                                                                       |
-| [`bool`](class_bool.md)                       | [`custom_step`](#class_tween_method_custom_step) ( delta: [`float`](class_float.md) )                                                                                                                                                                                                                                                                          |
-| [`int`](class_int.md)                         | [`get_loops_left`](#class_tween_method_get_loops_left) ( ) const[^const]                                                                                                                                                                                                                                                                                       |
-| [`float`](class_float.md)                     | [`get_total_elapsed_time`](#class_tween_method_get_total_elapsed_time) ( ) const[^const]                                                                                                                                                                                                                                                                       |
-| [`Variant`](class_variant.md)                 | [`interpolate_value`](#class_tween_method_interpolate_value) ( initial_value: [`Variant`](class_variant.md), delta_value: [`Variant`](class_variant.md), elapsed_time: [`float`](class_float.md), duration: [`float`](class_float.md), trans_type: [TransitionType](#enum_tween_transitiontype), ease_type: [EaseType](#enum_tween_easetype) ) static[^static] |
-| [`bool`](class_bool.md)                       | [`is_running`](#class_tween_method_is_running) ( )                                                                                                                                                                                                                                                                                                             |
-| [`bool`](class_bool.md)                       | [`is_valid`](#class_tween_method_is_valid) ( )                                                                                                                                                                                                                                                                                                                 |
-| `void`                                        | [`kill`](#class_tween_method_kill) ( )                                                                                                                                                                                                                                                                                                                         |
-| [`Tween`](class_tween.md)                     | [`parallel`](#class_tween_method_parallel) ( )                                                                                                                                                                                                                                                                                                                 |
-| `void`                                        | [`pause`](#class_tween_method_pause) ( )                                                                                                                                                                                                                                                                                                                       |
-| `void`                                        | [`play`](#class_tween_method_play) ( )                                                                                                                                                                                                                                                                                                                         |
-| [`Tween`](class_tween.md)                     | [`set_ease`](#class_tween_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                                                                                                                                                                                                                                                                          |
-| [`Tween`](class_tween.md)                     | [`set_loops`](#class_tween_method_set_loops) ( loops: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                              |
-| [`Tween`](class_tween.md)                     | [`set_parallel`](#class_tween_method_set_parallel) ( parallel: [`bool`](class_bool.md) = true )                                                                                                                                                                                                                                                                |
-| [`Tween`](class_tween.md)                     | [`set_pause_mode`](#class_tween_method_set_pause_mode) ( mode: [TweenPauseMode](#enum_tween_tweenpausemode) )                                                                                                                                                                                                                                                  |
-| [`Tween`](class_tween.md)                     | [`set_process_mode`](#class_tween_method_set_process_mode) ( mode: [TweenProcessMode](#enum_tween_tweenprocessmode) )                                                                                                                                                                                                                                          |
-| [`Tween`](class_tween.md)                     | [`set_speed_scale`](#class_tween_method_set_speed_scale) ( speed: [`float`](class_float.md) )                                                                                                                                                                                                                                                                  |
-| [`Tween`](class_tween.md)                     | [`set_trans`](#class_tween_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) )                                                                                                                                                                                                                                                           |
-| `void`                                        | [`stop`](#class_tween_method_stop) ( )                                                                                                                                                                                                                                                                                                                         |
-| [`CallbackTweener`](class_callbacktweener.md) | [`tween_callback`](#class_tween_method_tween_callback) ( callback: [`Callable`](class_callable.md) )                                                                                                                                                                                                                                                           |
-| [`IntervalTweener`](class_intervaltweener.md) | [`tween_interval`](#class_tween_method_tween_interval) ( time: [`float`](class_float.md) )                                                                                                                                                                                                                                                                     |
-| [`MethodTweener`](class_methodtweener.md)     | [`tween_method`](#class_tween_method_tween_method) ( method: [`Callable`](class_callable.md), from: [`Variant`](class_variant.md), to: [`Variant`](class_variant.md), duration: [`float`](class_float.md) )                                                                                                                                                    |
-| [`PropertyTweener`](class_propertytweener.md) | [`tween_property`](#class_tween_method_tween_property) ( object: [`Object`](class_object.md), property: [`NodePath`](class_nodepath.md), final_val: [`Variant`](class_variant.md), duration: [`float`](class_float.md) )                                                                                                                                       |
+| [`Tween`](class_tween.md)                     | [`bind_node`](class_tween.md#class_tween_method_bind_node) ( node: [`Node`](class_node.md) )                                                                                                                                                                                                                                                                                 |
+| [`Tween`](class_tween.md)                     | [`chain`](class_tween.md#class_tween_method_chain) ( )                                                                                                                                                                                                                                                                                                                       |
+| [`bool`](class_bool.md)                       | [`custom_step`](class_tween.md#class_tween_method_custom_step) ( delta: [`float`](class_float.md) )                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                         | [`get_loops_left`](class_tween.md#class_tween_method_get_loops_left) ( ) const[^const]                                                                                                                                                                                                                                                                                       |
+| [`float`](class_float.md)                     | [`get_total_elapsed_time`](class_tween.md#class_tween_method_get_total_elapsed_time) ( ) const[^const]                                                                                                                                                                                                                                                                       |
+| [`Variant`](class_variant.md)                 | [`interpolate_value`](class_tween.md#class_tween_method_interpolate_value) ( initial_value: [`Variant`](class_variant.md), delta_value: [`Variant`](class_variant.md), elapsed_time: [`float`](class_float.md), duration: [`float`](class_float.md), trans_type: [TransitionType](#enum_tween_transitiontype), ease_type: [EaseType](#enum_tween_easetype) ) static[^static] |
+| [`bool`](class_bool.md)                       | [`is_running`](class_tween.md#class_tween_method_is_running) ( )                                                                                                                                                                                                                                                                                                             |
+| [`bool`](class_bool.md)                       | [`is_valid`](class_tween.md#class_tween_method_is_valid) ( )                                                                                                                                                                                                                                                                                                                 |
+| `void`                                        | [`kill`](class_tween.md#class_tween_method_kill) ( )                                                                                                                                                                                                                                                                                                                         |
+| [`Tween`](class_tween.md)                     | [`parallel`](class_tween.md#class_tween_method_parallel) ( )                                                                                                                                                                                                                                                                                                                 |
+| `void`                                        | [`pause`](class_tween.md#class_tween_method_pause) ( )                                                                                                                                                                                                                                                                                                                       |
+| `void`                                        | [`play`](class_tween.md#class_tween_method_play) ( )                                                                                                                                                                                                                                                                                                                         |
+| [`Tween`](class_tween.md)                     | [`set_ease`](class_tween.md#class_tween_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                                                                                                                                                                                                                                                                          |
+| [`Tween`](class_tween.md)                     | [`set_loops`](class_tween.md#class_tween_method_set_loops) ( loops: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                              |
+| [`Tween`](class_tween.md)                     | [`set_parallel`](class_tween.md#class_tween_method_set_parallel) ( parallel: [`bool`](class_bool.md) = true )                                                                                                                                                                                                                                                                |
+| [`Tween`](class_tween.md)                     | [`set_pause_mode`](class_tween.md#class_tween_method_set_pause_mode) ( mode: [TweenPauseMode](#enum_tween_tweenpausemode) )                                                                                                                                                                                                                                                  |
+| [`Tween`](class_tween.md)                     | [`set_process_mode`](class_tween.md#class_tween_method_set_process_mode) ( mode: [TweenProcessMode](#enum_tween_tweenprocessmode) )                                                                                                                                                                                                                                          |
+| [`Tween`](class_tween.md)                     | [`set_speed_scale`](class_tween.md#class_tween_method_set_speed_scale) ( speed: [`float`](class_float.md) )                                                                                                                                                                                                                                                                  |
+| [`Tween`](class_tween.md)                     | [`set_trans`](class_tween.md#class_tween_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) )                                                                                                                                                                                                                                                           |
+| `void`                                        | [`stop`](class_tween.md#class_tween_method_stop) ( )                                                                                                                                                                                                                                                                                                                         |
+| [`CallbackTweener`](class_callbacktweener.md) | [`tween_callback`](class_tween.md#class_tween_method_tween_callback) ( callback: [`Callable`](class_callable.md) )                                                                                                                                                                                                                                                           |
+| [`IntervalTweener`](class_intervaltweener.md) | [`tween_interval`](class_tween.md#class_tween_method_tween_interval) ( time: [`float`](class_float.md) )                                                                                                                                                                                                                                                                     |
+| [`MethodTweener`](class_methodtweener.md)     | [`tween_method`](class_tween.md#class_tween_method_tween_method) ( method: [`Callable`](class_callable.md), from: [`Variant`](class_variant.md), to: [`Variant`](class_variant.md), duration: [`float`](class_float.md) )                                                                                                                                                    |
+| [`PropertyTweener`](class_propertytweener.md) | [`tween_property`](class_tween.md#class_tween_method_tween_property) ( object: [`Object`](class_object.md), property: [`NodePath`](class_nodepath.md), final_val: [`Variant`](class_variant.md), duration: [`float`](class_float.md) )                                                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -203,7 +203,7 @@ Some [`Tweener`](class_tweener.md) s use transitions and eases. The first accept
 
 **finished** ( ) <div id="class_tween_signal_finished"></div>
 
-Emitted when the **Tween** has finished all tweening. Never emitted when the **Tween** is set to infinite looping (see [`set_loops`](#class_tween_method_set_loops)).
+Emitted when the **Tween** has finished all tweening. Never emitted when the **Tween** is set to infinite looping (see [`set_loops`](class_tween.md#class_tween_method_set_loops)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -213,7 +213,7 @@ Emitted when the **Tween** has finished all tweening. Never emitted when the **T
 
 **loop_finished** ( loop_count: [`int`](class_int.md) ) <div id="class_tween_signal_loop_finished"></div>
 
-Emitted when a full loop is complete (see [`set_loops`](#class_tween_method_set_loops)), providing the loop index. This signal is not emitted after the final loop, use [`finished`](#class_tween_signal_finished) instead for this case.
+Emitted when a full loop is complete (see [`set_loops`](class_tween.md#class_tween_method_set_loops)), providing the loop index. This signal is not emitted after the final loop, use [`finished`](class_tween.md#class_tween_signal_finished) instead for this case.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -239,13 +239,13 @@ enum **TweenProcessMode**: <div id="enum_tween_tweenprocessmode"></div>
 
 [TweenProcessMode](#enum_tween_tweenprocessmode) **TWEEN_PROCESS_PHYSICS** = ``0``
 
-The **Tween** updates after each physics frame (see [`Node._physics_process`](#class_node_private_method__physics_process)).
+The **Tween** updates after each physics frame (see [`Node._physics_process`](class_node.md#class_node_private_method__physics_process)).
 
 <div id="_class_tween_constant_tween_process_idle"></div>
 
 [TweenProcessMode](#enum_tween_tweenprocessmode) **TWEEN_PROCESS_IDLE** = ``1``
 
-The **Tween** updates after each process frame (see [`Node._process`](#class_node_private_method__process)).
+The **Tween** updates after each process frame (see [`Node._process`](class_node.md#class_node_private_method__process)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -259,7 +259,7 @@ enum **TweenPauseMode**: <div id="enum_tween_tweenpausemode"></div>
 
 [TweenPauseMode](#enum_tween_tweenpausemode) **TWEEN_PAUSE_BOUND** = ``0``
 
-If the **Tween** has a bound node, it will process when that node can process (see [`Node.process_mode`](#class_node_property_process_mode)). Otherwise it's the same as [`TWEEN_PAUSE_STOP`](#class_tween_constant_tween_pause_stop).
+If the **Tween** has a bound node, it will process when that node can process (see [`Node.process_mode`](class_node.md#class_node_property_process_mode)). Otherwise it's the same as [`TWEEN_PAUSE_STOP`](class_tween.md#class_tween_constant_tween_pause_stop).
 
 <div id="_class_tween_constant_tween_pause_stop"></div>
 
@@ -377,13 +377,13 @@ The interpolation starts quickly and slows down towards the end.
 
 [EaseType](#enum_tween_easetype) **EASE_IN_OUT** = ``2``
 
-A combination of [`EASE_IN`](#class_tween_constant_ease_in) and [`EASE_OUT`](#class_tween_constant_ease_out). The interpolation is slowest at both ends.
+A combination of [`EASE_IN`](class_tween.md#class_tween_constant_ease_in) and [`EASE_OUT`](class_tween.md#class_tween_constant_ease_out). The interpolation is slowest at both ends.
 
 <div id="_class_tween_constant_ease_out_in"></div>
 
 [EaseType](#enum_tween_easetype) **EASE_OUT_IN** = ``3``
 
-A combination of [`EASE_IN`](#class_tween_constant_ease_in) and [`EASE_OUT`](#class_tween_constant_ease_out). The interpolation is fastest at both ends.
+A combination of [`EASE_IN`](class_tween.md#class_tween_constant_ease_in) and [`EASE_OUT`](class_tween.md#class_tween_constant_ease_out). The interpolation is fastest at both ends.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -395,9 +395,9 @@ A combination of [`EASE_IN`](#class_tween_constant_ease_in) and [`EASE_OUT`](#cl
 
 [`Tween`](class_tween.md) **bind_node** ( node: [`Node`](class_node.md) )<div id="class_tween_method_bind_node"></div>
 
-Binds this **Tween** with the given `node`. **Tween** s are processed directly by the [`SceneTree`](class_scenetree.md), so they run independently of the animated nodes. When you bind a [`Node`](class_node.md) with the **Tween**, the **Tween** will halt the animation when the object is not inside tree and the **Tween** will be automatically killed when the bound object is freed. Also [`TWEEN_PAUSE_BOUND`](#class_tween_constant_tween_pause_bound) will make the pausing behavior dependent on the bound node.
+Binds this **Tween** with the given `node`. **Tween** s are processed directly by the [`SceneTree`](class_scenetree.md), so they run independently of the animated nodes. When you bind a [`Node`](class_node.md) with the **Tween**, the **Tween** will halt the animation when the object is not inside tree and the **Tween** will be automatically killed when the bound object is freed. Also [`TWEEN_PAUSE_BOUND`](class_tween.md#class_tween_constant_tween_pause_bound) will make the pausing behavior dependent on the bound node.
 
-For a shorter way to create and bind a **Tween**, you can use [`Node.create_tween`](#class_node_method_create_tween).
+For a shorter way to create and bind a **Tween**, you can use [`Node.create_tween`](class_node.md#class_node_method_create_tween).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -407,7 +407,7 @@ For a shorter way to create and bind a **Tween**, you can use [`Node.create_twee
 
 [`Tween`](class_tween.md) **chain** ( )<div id="class_tween_method_chain"></div>
 
-Used to chain two [`Tweener`](class_tweener.md) s after [`set_parallel`](#class_tween_method_set_parallel) is called with `true`.
+Used to chain two [`Tweener`](class_tweener.md) s after [`set_parallel`](class_tween.md#class_tween_method_set_parallel) is called with `true`.
 
 
 
@@ -453,7 +453,7 @@ Returns `true` if the **Tween** still has [`Tweener`](class_tweener.md) s that h
 
 [`int`](class_int.md) **get_loops_left** ( ) const[^const]<div id="class_tween_method_get_loops_left"></div>
 
-Returns the number of remaining loops for this **Tween** (see [`set_loops`](#class_tween_method_set_loops)). A return value of `-1` indicates an infinitely looping **Tween**, and a return value of `0` indicates that the **Tween** has already finished.
+Returns the number of remaining loops for this **Tween** (see [`set_loops`](class_tween.md#class_tween_method_set_loops)). A return value of `-1` indicates an infinitely looping **Tween**, and a return value of `0` indicates that the **Tween** has already finished.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -463,7 +463,7 @@ Returns the number of remaining loops for this **Tween** (see [`set_loops`](#cla
 
 [`float`](class_float.md) **get_total_elapsed_time** ( ) const[^const]<div id="class_tween_method_get_total_elapsed_time"></div>
 
-Returns the total time in seconds the **Tween** has been animating (i.e. the time since it started, not counting pauses etc.). The time is affected by [`set_speed_scale`](#class_tween_method_set_speed_scale), and [`stop`](#class_tween_method_stop) will reset it to `0`.
+Returns the total time in seconds the **Tween** has been animating (i.e. the time since it started, not counting pauses etc.). The time is affected by [`set_speed_scale`](class_tween.md#class_tween_method_set_speed_scale), and [`stop`](class_tween.md#class_tween_method_stop) will reset it to `0`.
 
  **Note:** As it results from accumulating frame deltas, the time returned after the **Tween** has finished animating will be slightly greater than the actual **Tween** duration.
 
@@ -475,7 +475,7 @@ Returns the total time in seconds the **Tween** has been animating (i.e. the tim
 
 [`Variant`](class_variant.md) **interpolate_value** ( initial_value: [`Variant`](class_variant.md), delta_value: [`Variant`](class_variant.md), elapsed_time: [`float`](class_float.md), duration: [`float`](class_float.md), trans_type: [TransitionType](#enum_tween_transitiontype), ease_type: [EaseType](#enum_tween_easetype) ) static[^static]<div id="class_tween_method_interpolate_value"></div>
 
-This method can be used for manual interpolation of a value, when you don't want **Tween** to do animating for you. It's similar to [`@GlobalScope.lerp`](#class_@globalscope_method_lerp), but with support for custom transition and easing.
+This method can be used for manual interpolation of a value, when you don't want **Tween** to do animating for you. It's similar to [`@GlobalScope.lerp`](class_@globalscope.md#class_@globalscope_method_lerp), but with support for custom transition and easing.
 
  `initial_value` is the starting value of the interpolation.
 
@@ -505,7 +505,7 @@ Returns whether the **Tween** is currently running, i.e. it wasn't paused and it
 
 [`bool`](class_bool.md) **is_valid** ( )<div id="class_tween_method_is_valid"></div>
 
-Returns whether the **Tween** is valid. A valid **Tween** is a **Tween** contained by the scene tree (i.e. the array from [`SceneTree.get_processed_tweens`](#class_scenetree_method_get_processed_tweens) will contain this **Tween**). A **Tween** might become invalid when it has finished tweening, is killed, or when created with `Tween.new()`. Invalid **Tween** s can't have [`Tweener`](class_tweener.md) s appended.
+Returns whether the **Tween** is valid. A valid **Tween** is a **Tween** contained by the scene tree (i.e. the array from [`SceneTree.get_processed_tweens`](class_scenetree.md#class_scenetree_method_get_processed_tweens) will contain this **Tween**). A **Tween** might become invalid when it has finished tweening, is killed, or when created with `Tween.new()`. Invalid **Tween** s can't have [`Tweener`](class_tweener.md) s appended.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -551,7 +551,7 @@ Makes the next [`Tweener`](class_tweener.md) run parallelly to the previous one.
 
 All [`Tweener`](class_tweener.md) s in the example will run at the same time.
 
-You can make the **Tween** parallel by default by using [`set_parallel`](#class_tween_method_set_parallel).
+You can make the **Tween** parallel by default by using [`set_parallel`](class_tween.md#class_tween_method_set_parallel).
 
 
 
@@ -565,9 +565,9 @@ You can make the **Tween** parallel by default by using [`set_parallel`](#class_
 
 `void` **pause** ( )<div id="class_tween_method_pause"></div>
 
-Pauses the tweening. The animation can be resumed by using [`play`](#class_tween_method_play).
+Pauses the tweening. The animation can be resumed by using [`play`](class_tween.md#class_tween_method_play).
 
- **Note:** If a Tween is paused and not bound to any node, it will exist indefinitely until manually started or invalidated. If you lose a reference to such Tween, you can retrieve it using [`SceneTree.get_processed_tweens`](#class_scenetree_method_get_processed_tweens).
+ **Note:** If a Tween is paused and not bound to any node, it will exist indefinitely until manually started or invalidated. If you lose a reference to such Tween, you can retrieve it using [`SceneTree.get_processed_tweens`](class_scenetree.md#class_scenetree_method_get_processed_tweens).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -589,7 +589,7 @@ Resumes a paused or stopped **Tween**.
 
 Sets the default ease type for [`PropertyTweener`](class_propertytweener.md) s and [`MethodTweener`](class_methodtweener.md) s animated by this **Tween**.
 
-If not specified, the default value is [`EASE_IN_OUT`](#class_tween_constant_ease_in_out).
+If not specified, the default value is [`EASE_IN_OUT`](class_tween.md#class_tween_constant_ease_in_out).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -601,9 +601,9 @@ If not specified, the default value is [`EASE_IN_OUT`](#class_tween_constant_eas
 
 Sets the number of times the tweening sequence will be repeated, i.e. `set_loops(2)` will run the animation twice.
 
-Calling this method without arguments will make the **Tween** run infinitely, until either it is killed with [`kill`](#class_tween_method_kill), the **Tween**'s bound node is freed, or all the animated objects have been freed (which makes further animation impossible).
+Calling this method without arguments will make the **Tween** run infinitely, until either it is killed with [`kill`](class_tween.md#class_tween_method_kill), the **Tween**'s bound node is freed, or all the animated objects have been freed (which makes further animation impossible).
 
- **Warning:** Make sure to always add some duration/delay when using infinite loops. To prevent the game freezing, 0-duration looped animations (e.g. a single [`CallbackTweener`](class_callbacktweener.md) with no delay) are stopped after a small number of loops, which may produce unexpected results. If a **Tween**'s lifetime depends on some node, always use [`bind_node`](#class_tween_method_bind_node).
+ **Warning:** Make sure to always add some duration/delay when using infinite loops. To prevent the game freezing, 0-duration looped animations (e.g. a single [`CallbackTweener`](class_callbacktweener.md) with no delay) are stopped after a small number of loops, which may produce unexpected results. If a **Tween**'s lifetime depends on some node, always use [`bind_node`](class_tween.md#class_tween_method_bind_node).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -615,7 +615,7 @@ Calling this method without arguments will make the **Tween** run infinitely, un
 
 If `parallel` is `true`, the [`Tweener`](class_tweener.md) s appended after this method will by default run simultaneously, as opposed to sequentially.
 
- **Note:** Just like with [`parallel`](#class_tween_method_parallel), the tweener added right before this method will also be part of the parallel step.
+ **Note:** Just like with [`parallel`](class_tween.md#class_tween_method_parallel), the tweener added right before this method will also be part of the parallel step.
 
 ```
 
@@ -636,7 +636,7 @@ If `parallel` is `true`, the [`Tweener`](class_tweener.md) s appended after this
 
 Determines the behavior of the **Tween** when the [`SceneTree`](class_scenetree.md) is paused. Check [TweenPauseMode](#enum_tween_tweenpausemode) for options.
 
-Default value is [`TWEEN_PAUSE_BOUND`](#class_tween_constant_tween_pause_bound).
+Default value is [`TWEEN_PAUSE_BOUND`](class_tween.md#class_tween_constant_tween_pause_bound).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -646,9 +646,9 @@ Default value is [`TWEEN_PAUSE_BOUND`](#class_tween_constant_tween_pause_bound).
 
 [`Tween`](class_tween.md) **set_process_mode** ( mode: [TweenProcessMode](#enum_tween_tweenprocessmode) )<div id="class_tween_method_set_process_mode"></div>
 
-Determines whether the **Tween** should run after process frames (see [`Node._process`](#class_node_private_method__process)) or physics frames (see [`Node._physics_process`](#class_node_private_method__physics_process)).
+Determines whether the **Tween** should run after process frames (see [`Node._process`](class_node.md#class_node_private_method__process)) or physics frames (see [`Node._physics_process`](class_node.md#class_node_private_method__physics_process)).
 
-Default value is [`TWEEN_PROCESS_IDLE`](#class_tween_constant_tween_process_idle).
+Default value is [`TWEEN_PROCESS_IDLE`](class_tween.md#class_tween_constant_tween_process_idle).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -670,7 +670,7 @@ Scales the speed of tweening. This affects all [`Tweener`](class_tweener.md) s a
 
 Sets the default transition type for [`PropertyTweener`](class_propertytweener.md) s and [`MethodTweener`](class_methodtweener.md) s animated by this **Tween**.
 
-If not specified, the default value is [`TRANS_LINEAR`](#class_tween_constant_trans_linear).
+If not specified, the default value is [`TRANS_LINEAR`](class_tween.md#class_tween_constant_trans_linear).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -682,7 +682,7 @@ If not specified, the default value is [`TRANS_LINEAR`](#class_tween_constant_tr
 
 Stops the tweening and resets the **Tween** to its initial state. This will not remove any appended [`Tweener`](class_tweener.md) s.
 
- **Note:** If a Tween is stopped and not bound to any node, it will exist indefinitely until manually started or invalidated. If you lose a reference to such Tween, you can retrieve it using [`SceneTree.get_processed_tweens`](#class_scenetree_method_get_processed_tweens).
+ **Note:** If a Tween is stopped and not bound to any node, it will exist indefinitely until manually started or invalidated. If you lose a reference to such Tween, you can retrieve it using [`SceneTree.get_processed_tweens`](class_scenetree.md#class_scenetree_method_get_processed_tweens).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -692,7 +692,7 @@ Stops the tweening and resets the **Tween** to its initial state. This will not 
 
 [`CallbackTweener`](class_callbacktweener.md) **tween_callback** ( callback: [`Callable`](class_callable.md) )<div id="class_tween_method_tween_callback"></div>
 
-Creates and appends a [`CallbackTweener`](class_callbacktweener.md). This method can be used to call an arbitrary method in any object. Use [`Callable.bind`](#class_callable_method_bind) to bind additional arguments for the call.
+Creates and appends a [`CallbackTweener`](class_callbacktweener.md). This method can be used to call an arbitrary method in any object. Use [`Callable.bind`](class_callable.md#class_callable_method_bind) to bind additional arguments for the call.
 
  **Example:** Object that keeps shooting every 1 second:
 
@@ -815,7 +815,7 @@ Creates and appends an [`IntervalTweener`](class_intervaltweener.md). This metho
 
 [`MethodTweener`](class_methodtweener.md) **tween_method** ( method: [`Callable`](class_callable.md), from: [`Variant`](class_variant.md), to: [`Variant`](class_variant.md), duration: [`float`](class_float.md) )<div id="class_tween_method_tween_method"></div>
 
-Creates and appends a [`MethodTweener`](class_methodtweener.md). This method is similar to a combination of [`tween_callback`](#class_tween_method_tween_callback) and [`tween_property`](#class_tween_method_tween_property). It calls a method over time with a tweened value provided as an argument. The value is tweened between `from` and `to` over the time specified by `duration`, in seconds. Use [`Callable.bind`](#class_callable_method_bind) to bind additional arguments for the call. You can use [`MethodTweener.set_ease`](#class_methodtweener_method_set_ease) and [`MethodTweener.set_trans`](#class_methodtweener_method_set_trans) to tweak the easing and transition of the value or [`MethodTweener.set_delay`](#class_methodtweener_method_set_delay) to delay the tweening.
+Creates and appends a [`MethodTweener`](class_methodtweener.md). This method is similar to a combination of [`tween_callback`](class_tween.md#class_tween_method_tween_callback) and [`tween_property`](class_tween.md#class_tween_method_tween_property). It calls a method over time with a tweened value provided as an argument. The value is tweened between `from` and `to` over the time specified by `duration`, in seconds. Use [`Callable.bind`](class_callable.md#class_callable_method_bind) to bind additional arguments for the call. You can use [`MethodTweener.set_ease`](class_methodtweener.md#class_methodtweener_method_set_ease) and [`MethodTweener.set_trans`](class_methodtweener.md#class_methodtweener_method_set_trans) to tweak the easing and transition of the value or [`MethodTweener.set_delay`](class_methodtweener.md#class_methodtweener_method_set_delay) to delay the tweening.
 
  **Example:** Making a 3D object look from one point to another point:
 
@@ -905,7 +905,7 @@ Creates and appends a [`PropertyTweener`](class_propertytweener.md). This method
 
 
 
-will move the sprite to position (100, 200) and then to (200, 300). If you use [`PropertyTweener.from`](#class_propertytweener_method_from) or [`PropertyTweener.from_current`](#class_propertytweener_method_from_current), the starting position will be overwritten by the given value instead. See other methods in [`PropertyTweener`](class_propertytweener.md) to see how the tweening can be tweaked further.
+will move the sprite to position (100, 200) and then to (200, 300). If you use [`PropertyTweener.from`](class_propertytweener.md#class_propertytweener_method_from) or [`PropertyTweener.from_current`](class_propertytweener.md#class_propertytweener_method_from_current), the starting position will be overwritten by the given value instead. See other methods in [`PropertyTweener`](class_propertytweener.md) to see how the tweening can be tweaked further.
 
  **Note:** You can find the correct property name by hovering over the property in the Inspector. You can also provide the components of a property directly by using `"property:component"` (eg. `position:x`), where it would only apply to that particular component.
 

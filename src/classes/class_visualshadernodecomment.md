@@ -21,7 +21,7 @@ This node was replaced by [`VisualShaderNodeFrame`](class_visualshadernodeframe.
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`description`](#class_visualshadernodecomment_property_description) | ``""`` |
+| [`String`](class_string.md) | [`description`](class_visualshadernodecomment.md#class_visualshadernodecomment_property_description) | ``""`` |
 
 <!-- rst-class:: classref-section-separator -->
 

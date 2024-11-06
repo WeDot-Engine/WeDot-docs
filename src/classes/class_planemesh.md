@@ -15,19 +15,19 @@ Class representing a planar [`PrimitiveMesh`](class_primitivemesh.md).
 
 ## 描述
 
-Class representing a planar [`PrimitiveMesh`](class_primitivemesh.md). This flat mesh does not have a thickness. By default, this mesh is aligned on the X and Z axes; this default rotation isn't suited for use with billboarded materials. For billboarded materials, change [`orientation`](#class_planemesh_property_orientation) to [`FACE_Z`](#class_planemesh_constant_face_z).
+Class representing a planar [`PrimitiveMesh`](class_primitivemesh.md). This flat mesh does not have a thickness. By default, this mesh is aligned on the X and Z axes; this default rotation isn't suited for use with billboarded materials. For billboarded materials, change [`orientation`](class_planemesh.md#class_planemesh_property_orientation) to [`FACE_Z`](class_planemesh.md#class_planemesh_constant_face_z).
 
- **Note:** When using a large textured **PlaneMesh** (e.g. as a floor), you may stumble upon UV jittering issues depending on the camera angle. To solve this, increase [`subdivide_depth`](#class_planemesh_property_subdivide_depth) and [`subdivide_width`](#class_planemesh_property_subdivide_width) until you no longer notice UV jittering.
+ **Note:** When using a large textured **PlaneMesh** (e.g. as a floor), you may stumble upon UV jittering issues depending on the camera angle. To solve this, increase [`subdivide_depth`](class_planemesh.md#class_planemesh_property_subdivide_depth) and [`subdivide_width`](class_planemesh.md#class_planemesh_property_subdivide_width) until you no longer notice UV jittering.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md)              | [`center_offset`](#class_planemesh_property_center_offset)     | ``Vector3(0, 0, 0)`` |
-| [Orientation](#enum_planemesh_orientation) | [`orientation`](#class_planemesh_property_orientation)         | ``1``                |
-| [`Vector2`](class_vector2.md)              | [`size`](#class_planemesh_property_size)                       | ``Vector2(2, 2)``    |
-| [`int`](class_int.md)                      | [`subdivide_depth`](#class_planemesh_property_subdivide_depth) | ``0``                |
-| [`int`](class_int.md)                      | [`subdivide_width`](#class_planemesh_property_subdivide_width) | ``0``                |
+| [`Vector3`](class_vector3.md)              | [`center_offset`](class_planemesh.md#class_planemesh_property_center_offset)     | ``Vector3(0, 0, 0)`` |
+| [Orientation](#enum_planemesh_orientation) | [`orientation`](class_planemesh.md#class_planemesh_property_orientation)         | ``1``                |
+| [`Vector2`](class_vector2.md)              | [`size`](class_planemesh.md#class_planemesh_property_size)                       | ``Vector2(2, 2)``    |
+| [`int`](class_int.md)                      | [`subdivide_depth`](class_planemesh.md#class_planemesh_property_subdivide_depth) | ``0``                |
+| [`int`](class_int.md)                      | [`subdivide_width`](class_planemesh.md#class_planemesh_property_subdivide_width) | ``0``                |
 
 <!-- rst-class:: classref-section-separator -->
 

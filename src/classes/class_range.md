@@ -15,32 +15,32 @@ Abstract base class for controls that represent a number within a range.
 
 ## 描述
 
-Range is an abstract base class for controls that represent a number within a range, using a configured [`step`](#class_range_property_step) and [`page`](#class_range_property_page) size. See e.g. [`ScrollBar`](class_scrollbar.md) and [`Slider`](class_slider.md) for examples of higher-level nodes using Range.
+Range is an abstract base class for controls that represent a number within a range, using a configured [`step`](class_range.md#class_range_property_step) and [`page`](class_range.md#class_range_property_page) size. See e.g. [`ScrollBar`](class_scrollbar.md) and [`Slider`](class_slider.md) for examples of higher-level nodes using Range.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)              | [`allow_greater`](#class_range_property_allow_greater) | ``false``                                                                  |
-| [`bool`](class_bool.md)              | [`allow_lesser`](#class_range_property_allow_lesser)   | ``false``                                                                  |
-| [`bool`](class_bool.md)              | [`exp_edit`](#class_range_property_exp_edit)           | ``false``                                                                  |
-| [`float`](class_float.md)            | [`max_value`](#class_range_property_max_value)         | ``100.0``                                                                  |
-| [`float`](class_float.md)            | [`min_value`](#class_range_property_min_value)         | ``0.0``                                                                    |
-| [`float`](class_float.md)            | [`page`](#class_range_property_page)                   | ``0.0``                                                                    |
-| [`float`](class_float.md)            | [`ratio`](#class_range_property_ratio)                 |                                                                            |
-| [`bool`](class_bool.md)              | [`rounded`](#class_range_property_rounded)             | ``false``                                                                  |
-| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical                                    | ``0`` (overrides [`Control`](#class_control_property_size_flags_vertical)) |
-| [`float`](class_float.md)            | [`step`](#class_range_property_step)                   | ``0.01``                                                                   |
-| [`float`](class_float.md)            | [`value`](#class_range_property_value)                 | ``0.0``                                                                    |
+| [`bool`](class_bool.md)              | [`allow_greater`](class_range.md#class_range_property_allow_greater) | ``false``                                                                                  |
+| [`bool`](class_bool.md)              | [`allow_lesser`](class_range.md#class_range_property_allow_lesser)   | ``false``                                                                                  |
+| [`bool`](class_bool.md)              | [`exp_edit`](class_range.md#class_range_property_exp_edit)           | ``false``                                                                                  |
+| [`float`](class_float.md)            | [`max_value`](class_range.md#class_range_property_max_value)         | ``100.0``                                                                                  |
+| [`float`](class_float.md)            | [`min_value`](class_range.md#class_range_property_min_value)         | ``0.0``                                                                                    |
+| [`float`](class_float.md)            | [`page`](class_range.md#class_range_property_page)                   | ``0.0``                                                                                    |
+| [`float`](class_float.md)            | [`ratio`](class_range.md#class_range_property_ratio)                 |                                                                                            |
+| [`bool`](class_bool.md)              | [`rounded`](class_range.md#class_range_property_rounded)             | ``false``                                                                                  |
+| [SizeFlags](#enum_control_sizeflags) | size_flags_vertical                                                  | ``0`` (overrides [`Control`](class_control.md#class_control_property_size_flags_vertical)) |
+| [`float`](class_float.md)            | [`step`](class_range.md#class_range_property_step)                   | ``0.01``                                                                                   |
+| [`float`](class_float.md)            | [`value`](class_range.md#class_range_property_value)                 | ``0.0``                                                                                    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`_value_changed`](#class_range_private_method__value_changed) ( new_value: [`float`](class_float.md) ) virtual[^virtual] |
-| `void` | [`set_value_no_signal`](#class_range_method_set_value_no_signal) ( value: [`float`](class_float.md) )                     |
-| `void` | [`share`](#class_range_method_share) ( with: [`Node`](class_node.md) )                                                    |
-| `void` | [`unshare`](#class_range_method_unshare) ( )                                                                              |
+| `void` | [`_value_changed`](class_range.md#class_range_private_method__value_changed) ( new_value: [`float`](class_float.md) ) virtual[^virtual] |
+| `void` | [`set_value_no_signal`](class_range.md#class_range_method_set_value_no_signal) ( value: [`float`](class_float.md) )                     |
+| `void` | [`share`](class_range.md#class_range_method_share) ( with: [`Node`](class_node.md) )                                                    |
+| `void` | [`unshare`](class_range.md#class_range_method_unshare) ( )                                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -52,7 +52,7 @@ Range is an abstract base class for controls that represent a number within a ra
 
 **changed** ( ) <div id="class_range_signal_changed"></div>
 
-Emitted when [`min_value`](#class_range_property_min_value), [`max_value`](#class_range_property_max_value), [`page`](#class_range_property_page), or [`step`](#class_range_property_step) change.
+Emitted when [`min_value`](class_range.md#class_range_property_min_value), [`max_value`](class_range.md#class_range_property_max_value), [`page`](class_range.md#class_range_property_page), or [`step`](class_range.md#class_range_property_step) change.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -62,9 +62,9 @@ Emitted when [`min_value`](#class_range_property_min_value), [`max_value`](#clas
 
 **value_changed** ( value: [`float`](class_float.md) ) <div id="class_range_signal_value_changed"></div>
 
-Emitted when [`value`](#class_range_property_value) changes. When used on a [`Slider`](class_slider.md), this is called continuously while dragging (potentially every frame). If you are performing an expensive operation in a function connected to [`value_changed`](#class_range_signal_value_changed), consider using a *debouncing* [`Timer`](class_timer.md) to call the function less often.
+Emitted when [`value`](class_range.md#class_range_property_value) changes. When used on a [`Slider`](class_slider.md), this is called continuously while dragging (potentially every frame). If you are performing an expensive operation in a function connected to [`value_changed`](class_range.md#class_range_signal_value_changed), consider using a *debouncing* [`Timer`](class_timer.md) to call the function less often.
 
- **Note:** Unlike signals such as [`LineEdit.text_changed`](#class_lineedit_signal_text_changed), [`value_changed`](#class_range_signal_value_changed) is also emitted when `value` is set directly via code.
+ **Note:** Unlike signals such as [`LineEdit.text_changed`](class_lineedit.md#class_lineedit_signal_text_changed), [`value_changed`](class_range.md#class_range_signal_value_changed) is also emitted when `value` is set directly via code.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -79,7 +79,7 @@ Emitted when [`value`](#class_range_property_value) changes. When used on a [`Sl
 - `void` **set_allow_greater** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_greater_allowed** ( )
 
-If `true`, [`value`](#class_range_property_value) may be greater than [`max_value`](#class_range_property_max_value).
+If `true`, [`value`](class_range.md#class_range_property_value) may be greater than [`max_value`](class_range.md#class_range_property_max_value).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -92,7 +92,7 @@ If `true`, [`value`](#class_range_property_value) may be greater than [`max_valu
 - `void` **set_allow_lesser** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_lesser_allowed** ( )
 
-If `true`, [`value`](#class_range_property_value) may be less than [`min_value`](#class_range_property_min_value).
+If `true`, [`value`](class_range.md#class_range_property_value) may be less than [`min_value`](class_range.md#class_range_property_min_value).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -105,7 +105,7 @@ If `true`, [`value`](#class_range_property_value) may be less than [`min_value`]
 - `void` **set_exp_ratio** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_ratio_exp** ( )
 
-If `true`, and [`min_value`](#class_range_property_min_value) is greater than 0, [`value`](#class_range_property_value) will be represented exponentially rather than linearly.
+If `true`, and [`min_value`](class_range.md#class_range_property_min_value) is greater than 0, [`value`](class_range.md#class_range_property_value) will be represented exponentially rather than linearly.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -118,7 +118,7 @@ If `true`, and [`min_value`](#class_range_property_min_value) is greater than 0,
 - `void` **set_max** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_max** ( )
 
-Maximum value. Range is clamped if [`value`](#class_range_property_value) is greater than [`max_value`](#class_range_property_max_value).
+Maximum value. Range is clamped if [`value`](class_range.md#class_range_property_value) is greater than [`max_value`](class_range.md#class_range_property_max_value).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -131,7 +131,7 @@ Maximum value. Range is clamped if [`value`](#class_range_property_value) is gre
 - `void` **set_min** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_min** ( )
 
-Minimum value. Range is clamped if [`value`](#class_range_property_value) is less than [`min_value`](#class_range_property_min_value).
+Minimum value. Range is clamped if [`value`](class_range.md#class_range_property_value) is less than [`min_value`](class_range.md#class_range_property_min_value).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -144,7 +144,7 @@ Minimum value. Range is clamped if [`value`](#class_range_property_value) is les
 - `void` **set_page** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_page** ( )
 
-Page size. Used mainly for [`ScrollBar`](class_scrollbar.md). ScrollBar's length is its size multiplied by [`page`](#class_range_property_page) over the difference between [`min_value`](#class_range_property_min_value) and [`max_value`](#class_range_property_max_value).
+Page size. Used mainly for [`ScrollBar`](class_scrollbar.md). ScrollBar's length is its size multiplied by [`page`](class_range.md#class_range_property_page) over the difference between [`min_value`](class_range.md#class_range_property_min_value) and [`max_value`](class_range.md#class_range_property_max_value).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -170,7 +170,7 @@ The value mapped between 0 and 1.
 - `void` **set_use_rounded_values** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_rounded_values** ( )
 
-If `true`, [`value`](#class_range_property_value) will always be rounded to the nearest integer.
+If `true`, [`value`](class_range.md#class_range_property_value) will always be rounded to the nearest integer.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -183,7 +183,7 @@ If `true`, [`value`](#class_range_property_value) will always be rounded to the 
 - `void` **set_step** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_step** ( )
 
-If greater than 0, [`value`](#class_range_property_value) will always be rounded to a multiple of this property's value. If [`rounded`](#class_range_property_rounded) is also `true`, [`value`](#class_range_property_value) will first be rounded to a multiple of this property's value, then rounded to the nearest integer.
+If greater than 0, [`value`](class_range.md#class_range_property_value) will always be rounded to a multiple of this property's value. If [`rounded`](class_range.md#class_range_property_rounded) is also `true`, [`value`](class_range.md#class_range_property_value) will first be rounded to a multiple of this property's value, then rounded to the nearest integer.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -196,7 +196,7 @@ If greater than 0, [`value`](#class_range_property_value) will always be rounded
 - `void` **set_value** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_value** ( )
 
-Range's current value. Changing this property (even via code) will trigger [`value_changed`](#class_range_signal_value_changed) signal. Use [`set_value_no_signal`](#class_range_method_set_value_no_signal) if you want to avoid it.
+Range's current value. Changing this property (even via code) will trigger [`value_changed`](class_range.md#class_range_signal_value_changed) signal. Use [`set_value_no_signal`](class_range.md#class_range_method_set_value_no_signal) if you want to avoid it.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -208,7 +208,7 @@ Range's current value. Changing this property (even via code) will trigger [`val
 
 `void` **_value_changed** ( new_value: [`float`](class_float.md) ) virtual[^virtual]<div id="class_range_private_method__value_changed"></div>
 
-Called when the **Range**'s value is changed (following the same conditions as [`value_changed`](#class_range_signal_value_changed)).
+Called when the **Range**'s value is changed (following the same conditions as [`value_changed`](class_range.md#class_range_signal_value_changed)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -218,7 +218,7 @@ Called when the **Range**'s value is changed (following the same conditions as [
 
 `void` **set_value_no_signal** ( value: [`float`](class_float.md) )<div id="class_range_method_set_value_no_signal"></div>
 
-Sets the **Range**'s current value to the specified `value`, without emitting the [`value_changed`](#class_range_signal_value_changed) signal.
+Sets the **Range**'s current value to the specified `value`, without emitting the [`value_changed`](class_range.md#class_range_signal_value_changed) signal.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -19,23 +19,23 @@ Sprite frame library for an [`AnimatedSprite2D`](class_animatedsprite2d.md) or [
 
 |||
 |:-:|:--|
-| `void`                                            | [`add_animation`](#class_spriteframes_method_add_animation) ( anim: [`StringName`](class_stringname.md) )                                                                                                                         |
-| `void`                                            | [`add_frame`](#class_spriteframes_method_add_frame) ( anim: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), duration: [`float`](class_float.md) = 1.0, at_position: [`int`](class_int.md) = -1 ) |
-| `void`                                            | [`clear`](#class_spriteframes_method_clear) ( anim: [`StringName`](class_stringname.md) )                                                                                                                                         |
-| `void`                                            | [`clear_all`](#class_spriteframes_method_clear_all) ( )                                                                                                                                                                           |
-| [`bool`](class_bool.md)                           | [`get_animation_loop`](#class_spriteframes_method_get_animation_loop) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                                 |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_animation_names`](#class_spriteframes_method_get_animation_names) ( ) const[^const]                                                                                                                                         |
-| [`float`](class_float.md)                         | [`get_animation_speed`](#class_spriteframes_method_get_animation_speed) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                               |
-| [`int`](class_int.md)                             | [`get_frame_count`](#class_spriteframes_method_get_frame_count) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                                       |
-| [`float`](class_float.md)                         | [`get_frame_duration`](#class_spriteframes_method_get_frame_duration) ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md) ) const[^const]                                                                     |
-| [`Texture2D`](class_texture2d.md)                 | [`get_frame_texture`](#class_spriteframes_method_get_frame_texture) ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md) ) const[^const]                                                                       |
-| [`bool`](class_bool.md)                           | [`has_animation`](#class_spriteframes_method_has_animation) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                                           |
-| `void`                                            | [`remove_animation`](#class_spriteframes_method_remove_animation) ( anim: [`StringName`](class_stringname.md) )                                                                                                                   |
-| `void`                                            | [`remove_frame`](#class_spriteframes_method_remove_frame) ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md) )                                                                                               |
-| `void`                                            | [`rename_animation`](#class_spriteframes_method_rename_animation) ( anim: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) )                                                                     |
-| `void`                                            | [`set_animation_loop`](#class_spriteframes_method_set_animation_loop) ( anim: [`StringName`](class_stringname.md), loop: [`bool`](class_bool.md) )                                                                                |
-| `void`                                            | [`set_animation_speed`](#class_spriteframes_method_set_animation_speed) ( anim: [`StringName`](class_stringname.md), fps: [`float`](class_float.md) )                                                                             |
-| `void`                                            | [`set_frame`](#class_spriteframes_method_set_frame) ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md), duration: [`float`](class_float.md) = 1.0 )              |
+| `void`                                            | [`add_animation`](class_spriteframes.md#class_spriteframes_method_add_animation) ( anim: [`StringName`](class_stringname.md) )                                                                                                                         |
+| `void`                                            | [`add_frame`](class_spriteframes.md#class_spriteframes_method_add_frame) ( anim: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), duration: [`float`](class_float.md) = 1.0, at_position: [`int`](class_int.md) = -1 ) |
+| `void`                                            | [`clear`](class_spriteframes.md#class_spriteframes_method_clear) ( anim: [`StringName`](class_stringname.md) )                                                                                                                                         |
+| `void`                                            | [`clear_all`](class_spriteframes.md#class_spriteframes_method_clear_all) ( )                                                                                                                                                                           |
+| [`bool`](class_bool.md)                           | [`get_animation_loop`](class_spriteframes.md#class_spriteframes_method_get_animation_loop) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                                 |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_animation_names`](class_spriteframes.md#class_spriteframes_method_get_animation_names) ( ) const[^const]                                                                                                                                         |
+| [`float`](class_float.md)                         | [`get_animation_speed`](class_spriteframes.md#class_spriteframes_method_get_animation_speed) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                               |
+| [`int`](class_int.md)                             | [`get_frame_count`](class_spriteframes.md#class_spriteframes_method_get_frame_count) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                                       |
+| [`float`](class_float.md)                         | [`get_frame_duration`](class_spriteframes.md#class_spriteframes_method_get_frame_duration) ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md) ) const[^const]                                                                     |
+| [`Texture2D`](class_texture2d.md)                 | [`get_frame_texture`](class_spriteframes.md#class_spriteframes_method_get_frame_texture) ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md) ) const[^const]                                                                       |
+| [`bool`](class_bool.md)                           | [`has_animation`](class_spriteframes.md#class_spriteframes_method_has_animation) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                                           |
+| `void`                                            | [`remove_animation`](class_spriteframes.md#class_spriteframes_method_remove_animation) ( anim: [`StringName`](class_stringname.md) )                                                                                                                   |
+| `void`                                            | [`remove_frame`](class_spriteframes.md#class_spriteframes_method_remove_frame) ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md) )                                                                                               |
+| `void`                                            | [`rename_animation`](class_spriteframes.md#class_spriteframes_method_rename_animation) ( anim: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) )                                                                     |
+| `void`                                            | [`set_animation_loop`](class_spriteframes.md#class_spriteframes_method_set_animation_loop) ( anim: [`StringName`](class_stringname.md), loop: [`bool`](class_bool.md) )                                                                                |
+| `void`                                            | [`set_animation_speed`](class_spriteframes.md#class_spriteframes_method_set_animation_speed) ( anim: [`StringName`](class_stringname.md), fps: [`float`](class_float.md) )                                                                             |
+| `void`                                            | [`set_frame`](class_spriteframes.md#class_spriteframes_method_set_frame) ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md), duration: [`float`](class_float.md) = 1.0 )              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -57,7 +57,7 @@ Adds a new `anim` animation to the library.
 
 `void` **add_frame** ( anim: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), duration: [`float`](class_float.md) = 1.0, at_position: [`int`](class_int.md) = -1 )<div id="class_spriteframes_method_add_frame"></div>
 
-Adds a frame to the `anim` animation. If `at_position` is `-1`, the frame will be added to the end of the animation. `duration` specifies the relative duration, see [`get_frame_duration`](#class_spriteframes_method_get_frame_duration) for details.
+Adds a frame to the `anim` animation. If `at_position` is `-1`, the frame will be added to the end of the animation. `duration` specifies the relative duration, see [`get_frame_duration`](class_spriteframes.md#class_spriteframes_method_get_frame_duration) for details.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -134,7 +134,7 @@ Returns a relative duration of the frame `idx` in the `anim` animation (defaults
     absolute_duration = relative_duration / (animation_fps * abs(playing_speed))
 ```
 
-In this example, `playing_speed` refers to either [`AnimatedSprite2D.get_playing_speed`](#class_animatedsprite2d_method_get_playing_speed) or [`AnimatedSprite3D.get_playing_speed`](#class_animatedsprite3d_method_get_playing_speed).
+In this example, `playing_speed` refers to either [`AnimatedSprite2D.get_playing_speed`](class_animatedsprite2d.md#class_animatedsprite2d_method_get_playing_speed) or [`AnimatedSprite3D.get_playing_speed`](class_animatedsprite3d.md#class_animatedsprite3d_method_get_playing_speed).
 
 
 
@@ -216,7 +216,7 @@ Sets the speed for the `anim` animation in frames per second.
 
 `void` **set_frame** ( anim: [`StringName`](class_stringname.md), idx: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md), duration: [`float`](class_float.md) = 1.0 )<div id="class_spriteframes_method_set_frame"></div>
 
-Sets the `texture` and the `duration` of the frame `idx` in the `anim` animation. `duration` specifies the relative duration, see [`get_frame_duration`](#class_spriteframes_method_get_frame_duration) for details.
+Sets the `texture` and the `duration` of the frame `idx` in the `anim` animation. `duration` specifies the relative duration, see [`get_frame_duration`](class_spriteframes.md#class_spriteframes_method_get_frame_duration) for details.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

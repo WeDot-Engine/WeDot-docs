@@ -15,22 +15,22 @@ Abstract base class for all 2D physics joints.
 
 ## 描述
 
-Abstract base class for all joints in 2D physics. 2D joints bind together two physics bodies ([`node_a`](#class_joint2d_property_node_a) and [`node_b`](#class_joint2d_property_node_b)) and apply a constraint.
+Abstract base class for all joints in 2D physics. 2D joints bind together two physics bodies ([`node_a`](class_joint2d.md#class_joint2d_property_node_a) and [`node_b`](class_joint2d.md#class_joint2d_property_node_b)) and apply a constraint.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)       | [`bias`](#class_joint2d_property_bias)                           | ``0.0``          |
-| [`bool`](class_bool.md)         | [`disable_collision`](#class_joint2d_property_disable_collision) | ``true``         |
-| [`NodePath`](class_nodepath.md) | [`node_a`](#class_joint2d_property_node_a)                       | ``NodePath("")`` |
-| [`NodePath`](class_nodepath.md) | [`node_b`](#class_joint2d_property_node_b)                       | ``NodePath("")`` |
+| [`float`](class_float.md)       | [`bias`](class_joint2d.md#class_joint2d_property_bias)                           | ``0.0``          |
+| [`bool`](class_bool.md)         | [`disable_collision`](class_joint2d.md#class_joint2d_property_disable_collision) | ``true``         |
+| [`NodePath`](class_nodepath.md) | [`node_a`](class_joint2d.md#class_joint2d_property_node_a)                       | ``NodePath("")`` |
+| [`NodePath`](class_nodepath.md) | [`node_b`](class_joint2d.md#class_joint2d_property_node_b)                       | ``NodePath("")`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md) | [`get_rid`](#class_joint2d_method_get_rid) ( ) const[^const] |
+| [`RID`](class_rid.md) | [`get_rid`](class_joint2d.md#class_joint2d_method_get_rid) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -45,9 +45,9 @@ Abstract base class for all joints in 2D physics. 2D joints bind together two ph
 - `void` **set_bias** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_bias** ( )
 
-When [`node_a`](#class_joint2d_property_node_a) and [`node_b`](#class_joint2d_property_node_b) move in different directions the [`bias`](#class_joint2d_property_bias) controls how fast the joint pulls them back to their original position. The lower the [`bias`](#class_joint2d_property_bias) the more the two bodies can pull on the joint.
+When [`node_a`](class_joint2d.md#class_joint2d_property_node_a) and [`node_b`](class_joint2d.md#class_joint2d_property_node_b) move in different directions the [`bias`](class_joint2d.md#class_joint2d_property_bias) controls how fast the joint pulls them back to their original position. The lower the [`bias`](class_joint2d.md#class_joint2d_property_bias) the more the two bodies can pull on the joint.
 
-When set to `0`, the default value from [`ProjectSettings.physics/2d/solver/default_constraint_bias`](#class_projectsettings_property_physics/2d/solver/default_constraint_bias) is used.
+When set to `0`, the default value from [`ProjectSettings.physics/2d/solver/default_constraint_bias`](class_projectsettings.md#class_projectsettings_property_physics/2d/solver/default_constraint_bias) is used.
 
 <!-- rst-class:: classref-item-separator -->
 

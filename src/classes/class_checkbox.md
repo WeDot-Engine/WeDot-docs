@@ -17,28 +17,28 @@ A button that represents a binary choice.
 
 See also [`BaseButton`](class_basebutton.md) which contains common properties and methods associated with this node.
 
-When [`BaseButton.button_group`](#class_basebutton_property_button_group) specifies a [`ButtonGroup`](class_buttongroup.md), **CheckBox** changes its appearance to that of a radio button and uses the various `radio_*` theme properties.
+When [`BaseButton.button_group`](class_basebutton.md#class_basebutton_property_button_group) specifies a [`ButtonGroup`](class_buttongroup.md), **CheckBox** changes its appearance to that of a radio button and uses the various `radio_*` theme properties.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | alignment   | ``0`` (overrides [`Button`](#class_button_property_alignment))              |
-| [`bool`](class_bool.md)                                       | toggle_mode | ``true`` (overrides [`BaseButton`](#class_basebutton_property_toggle_mode)) |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | alignment   | ``0`` (overrides [`Button`](class_button.md#class_button_property_alignment))                  |
+| [`bool`](class_bool.md)                                       | toggle_mode | ``true`` (overrides [`BaseButton`](class_basebutton.md#class_basebutton_property_toggle_mode)) |
 
 ## 主题属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`check_v_offset`](#class_checkbox_theme_constant_check_v_offset)                 | ``0`` |
-| [`Texture2D`](class_texture2d.md) | [`checked`](#class_checkbox_theme_icon_checked)                                   |       |
-| [`Texture2D`](class_texture2d.md) | [`checked_disabled`](#class_checkbox_theme_icon_checked_disabled)                 |       |
-| [`Texture2D`](class_texture2d.md) | [`radio_checked`](#class_checkbox_theme_icon_radio_checked)                       |       |
-| [`Texture2D`](class_texture2d.md) | [`radio_checked_disabled`](#class_checkbox_theme_icon_radio_checked_disabled)     |       |
-| [`Texture2D`](class_texture2d.md) | [`radio_unchecked`](#class_checkbox_theme_icon_radio_unchecked)                   |       |
-| [`Texture2D`](class_texture2d.md) | [`radio_unchecked_disabled`](#class_checkbox_theme_icon_radio_unchecked_disabled) |       |
-| [`Texture2D`](class_texture2d.md) | [`unchecked`](#class_checkbox_theme_icon_unchecked)                               |       |
-| [`Texture2D`](class_texture2d.md) | [`unchecked_disabled`](#class_checkbox_theme_icon_unchecked_disabled)             |       |
+| [`int`](class_int.md)             | [`check_v_offset`](class_checkbox.md#class_checkbox_theme_constant_check_v_offset)                 | ``0`` |
+| [`Texture2D`](class_texture2d.md) | [`checked`](class_checkbox.md#class_checkbox_theme_icon_checked)                                   |       |
+| [`Texture2D`](class_texture2d.md) | [`checked_disabled`](class_checkbox.md#class_checkbox_theme_icon_checked_disabled)                 |       |
+| [`Texture2D`](class_texture2d.md) | [`radio_checked`](class_checkbox.md#class_checkbox_theme_icon_radio_checked)                       |       |
+| [`Texture2D`](class_texture2d.md) | [`radio_checked_disabled`](class_checkbox.md#class_checkbox_theme_icon_radio_checked_disabled)     |       |
+| [`Texture2D`](class_texture2d.md) | [`radio_unchecked`](class_checkbox.md#class_checkbox_theme_icon_radio_unchecked)                   |       |
+| [`Texture2D`](class_texture2d.md) | [`radio_unchecked_disabled`](class_checkbox.md#class_checkbox_theme_icon_radio_unchecked_disabled) |       |
+| [`Texture2D`](class_texture2d.md) | [`unchecked`](class_checkbox.md#class_checkbox_theme_icon_unchecked)                               |       |
+| [`Texture2D`](class_texture2d.md) | [`unchecked_disabled`](class_checkbox.md#class_checkbox_theme_icon_unchecked_disabled)             |       |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -13,7 +13,7 @@ A visual shader node for remap function.
 
 ## 描述
 
-Remap will transform the input range into output range, e.g. you can change a `0..1` value to `-2..2` etc. See [`@GlobalScope.remap`](#class_@globalscope_method_remap) for more details.
+Remap will transform the input range into output range, e.g. you can change a `0..1` value to `-2..2` etc. See [`@GlobalScope.remap`](class_@globalscope.md#class_@globalscope_method_remap) for more details.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

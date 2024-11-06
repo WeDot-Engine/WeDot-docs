@@ -19,8 +19,8 @@ Node used for displaying a [`Mesh`](class_mesh.md) in 2D. A **MeshInstance2D** c
 
 |||
 |:-:|:--|
-| [`Mesh`](class_mesh.md)           | [`mesh`](#class_meshinstance2d_property_mesh)       |
-| [`Texture2D`](class_texture2d.md) | [`texture`](#class_meshinstance2d_property_texture) |
+| [`Mesh`](class_mesh.md)           | [`mesh`](class_meshinstance2d.md#class_meshinstance2d_property_mesh)       |
+| [`Texture2D`](class_texture2d.md) | [`texture`](class_meshinstance2d.md#class_meshinstance2d_property_texture) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -32,7 +32,7 @@ Node used for displaying a [`Mesh`](class_mesh.md) in 2D. A **MeshInstance2D** c
 
 **texture_changed** ( ) <div id="class_meshinstance2d_signal_texture_changed"></div>
 
-Emitted when the [`texture`](#class_meshinstance2d_property_texture) is changed.
+Emitted when the [`texture`](class_meshinstance2d.md#class_meshinstance2d_property_texture) is changed.
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -19,7 +19,7 @@ Automatically adapts its port type to the type of the incoming connection and en
 
 |||
 |:-:|:--|
-| [PortType](#enum_visualshadernode_porttype) | [`get_port_type`](#class_visualshadernodereroute_method_get_port_type) ( ) const[^const] |
+| [PortType](#enum_visualshadernode_porttype) | [`get_port_type`](class_visualshadernodereroute.md#class_visualshadernodereroute_method_get_port_type) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

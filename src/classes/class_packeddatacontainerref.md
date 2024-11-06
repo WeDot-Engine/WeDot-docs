@@ -44,7 +44,7 @@ When packing nested containers using [`PackedDataContainer`](class_packeddatacon
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`size`](#class_packeddatacontainerref_method_size) ( ) const[^const] |
+| [`int`](class_int.md) | [`size`](class_packeddatacontainerref.md#class_packeddatacontainerref_method_size) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -56,7 +56,7 @@ When packing nested containers using [`PackedDataContainer`](class_packeddatacon
 
 [`int`](class_int.md) **size** ( ) const[^const]<div id="class_packeddatacontainerref_method_size"></div>
 
-Returns the size of the packed container (see [`Array.size`](#class_array_method_size) and [`Dictionary.size`](#class_dictionary_method_size)).
+Returns the size of the packed container (see [`Array.size`](class_array.md#class_array_method_size) and [`Dictionary.size`](class_dictionary.md#class_dictionary_method_size)).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

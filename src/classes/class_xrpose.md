@@ -21,18 +21,18 @@ Orientation, location, linear velocity and angular velocity are all provided for
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md)                         | [`angular_velocity`](#class_xrpose_property_angular_velocity)       | ``Vector3(0, 0, 0)``                                |
-| [`bool`](class_bool.md)                               | [`has_tracking_data`](#class_xrpose_property_has_tracking_data)     | ``false``                                           |
-| [`Vector3`](class_vector3.md)                         | [`linear_velocity`](#class_xrpose_property_linear_velocity)         | ``Vector3(0, 0, 0)``                                |
-| [`StringName`](class_stringname.md)                   | [`name`](#class_xrpose_property_name)                               | ``&""``                                             |
-| [TrackingConfidence](#enum_xrpose_trackingconfidence) | [`tracking_confidence`](#class_xrpose_property_tracking_confidence) | ``0``                                               |
-| [`Transform3D`](class_transform3d.md)                 | [`transform`](#class_xrpose_property_transform)                     | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
+| [`Vector3`](class_vector3.md)                         | [`angular_velocity`](class_xrpose.md#class_xrpose_property_angular_velocity)       | ``Vector3(0, 0, 0)``                                |
+| [`bool`](class_bool.md)                               | [`has_tracking_data`](class_xrpose.md#class_xrpose_property_has_tracking_data)     | ``false``                                           |
+| [`Vector3`](class_vector3.md)                         | [`linear_velocity`](class_xrpose.md#class_xrpose_property_linear_velocity)         | ``Vector3(0, 0, 0)``                                |
+| [`StringName`](class_stringname.md)                   | [`name`](class_xrpose.md#class_xrpose_property_name)                               | ``&""``                                             |
+| [TrackingConfidence](#enum_xrpose_trackingconfidence) | [`tracking_confidence`](class_xrpose.md#class_xrpose_property_tracking_confidence) | ``0``                                               |
+| [`Transform3D`](class_transform3d.md)                 | [`transform`](class_xrpose.md#class_xrpose_property_transform)                     | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Transform3D`](class_transform3d.md) | [`get_adjusted_transform`](#class_xrpose_method_get_adjusted_transform) ( ) const[^const] |
+| [`Transform3D`](class_transform3d.md) | [`get_adjusted_transform`](class_xrpose.md#class_xrpose_method_get_adjusted_transform) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -160,7 +160,7 @@ The transform containing the original and transform as reported by the XR runtim
 
 [`Transform3D`](class_transform3d.md) **get_adjusted_transform** ( ) const[^const]<div id="class_xrpose_method_get_adjusted_transform"></div>
 
-Returns the [`transform`](#class_xrpose_property_transform) with world scale and our reference frame applied. This is the transform used to position [`XRNode3D`](class_xrnode3d.md) objects.
+Returns the [`transform`](class_xrpose.md#class_xrpose_property_transform) with world scale and our reference frame applied. This is the transform used to position [`XRNode3D`](class_xrnode3d.md) objects.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

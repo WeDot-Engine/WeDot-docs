@@ -15,7 +15,7 @@ Plays real-time audio input data.
 
 When used directly in an [`AudioStreamPlayer`](class_audiostreamplayer.md) node, **AudioStreamMicrophone** plays back microphone input in real-time. This can be used in conjunction with [`AudioEffectCapture`](class_audioeffectcapture.md) to process the data or save it.
 
- **Note:** [`ProjectSettings.audio/driver/enable_input`](#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+ **Note:** [`ProjectSettings.audio/driver/enable_input`](class_projectsettings.md#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

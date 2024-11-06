@@ -21,17 +21,17 @@ Particle collision shapes work in real-time and can be moved, rotated and scaled
 
 Particle collision shapes can be temporarily disabled by hiding them.
 
- **Note:** [`ParticleProcessMaterial.collision_mode`](#class_particleprocessmaterial_property_collision_mode) must be [`ParticleProcessMaterial.COLLISION_RIGID`](#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](#class_particleprocessmaterial_constant_collision_hide_on_contact) on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
+ **Note:** [`ParticleProcessMaterial.collision_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_collision_mode) must be [`ParticleProcessMaterial.COLLISION_RIGID`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_hide_on_contact) on the [`GPUParticles3D`](class_gpuparticles3d.md)'s process material for collision to work.
 
  **Note:** Particle collision only affects [`GPUParticles3D`](class_gpuparticles3d.md), not [`CPUParticles3D`](class_cpuparticles3d.md).
 
- **Note:** Particles pushed by a collider that is being moved will not be interpolated, which can result in visible stuttering. This can be alleviated by setting [`GPUParticles3D.fixed_fps`](#class_gpuparticles3d_property_fixed_fps) to `0` or a value that matches or exceeds the target framerate.
+ **Note:** Particles pushed by a collider that is being moved will not be interpolated, which can result in visible stuttering. This can be alleviated by setting [`GPUParticles3D.fixed_fps`](class_gpuparticles3d.md#class_gpuparticles3d_property_fixed_fps) to `0` or a value that matches or exceeds the target framerate.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`cull_mask`](#class_gpuparticlescollision3d_property_cull_mask) | ``4294967295`` |
+| [`int`](class_int.md) | [`cull_mask`](class_gpuparticlescollision3d.md#class_gpuparticlescollision3d_property_cull_mask) | ``4294967295`` |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -46,11 +46,11 @@ Particle collision shapes can be temporarily disabled by hiding them.
 - `void` **set_cull_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_cull_mask** ( )
 
-The particle rendering layers ([`VisualInstance3D.layers`](#class_visualinstance3d_property_layers)) that will be affected by the collision shape. By default, all particles that have [`ParticleProcessMaterial.collision_mode`](#class_particleprocessmaterial_property_collision_mode) set to [`ParticleProcessMaterial.COLLISION_RIGID`](#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](#class_particleprocessmaterial_constant_collision_hide_on_contact) will be affected by a collision shape.
+The particle rendering layers ([`VisualInstance3D.layers`](class_visualinstance3d.md#class_visualinstance3d_property_layers)) that will be affected by the collision shape. By default, all particles that have [`ParticleProcessMaterial.collision_mode`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_collision_mode) set to [`ParticleProcessMaterial.COLLISION_RIGID`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_rigid) or [`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_collision_hide_on_contact) will be affected by a collision shape.
 
 After configuring particle nodes accordingly, specific layers can be unchecked to prevent certain particles from being affected by attractors. For example, this can be used if you're using an attractor as part of a spell effect but don't want the attractor to affect unrelated weather particles at the same position.
 
-Particle attraction can also be disabled on a per-process material basis by setting [`ParticleProcessMaterial.attractor_interaction_enabled`](#class_particleprocessmaterial_property_attractor_interaction_enabled) on the [`GPUParticles3D`](class_gpuparticles3d.md) node.
+Particle attraction can also be disabled on a per-process material basis by setting [`ParticleProcessMaterial.attractor_interaction_enabled`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_attractor_interaction_enabled) on the [`GPUParticles3D`](class_gpuparticles3d.md) node.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

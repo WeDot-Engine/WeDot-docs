@@ -21,35 +21,35 @@ A node that displays 2D texture information in a 3D environment. See also [`Spri
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                   | [`alpha_antialiasing_edge`](#class_spritebase3d_property_alpha_antialiasing_edge) | ``0.0``               |
-| [AlphaAntiAliasing](#enum_basematerial3d_alphaantialiasing) | [`alpha_antialiasing_mode`](#class_spritebase3d_property_alpha_antialiasing_mode) | ``0``                 |
-| [AlphaCutMode](#enum_spritebase3d_alphacutmode)             | [`alpha_cut`](#class_spritebase3d_property_alpha_cut)                             | ``0``                 |
-| [`float`](class_float.md)                                   | [`alpha_hash_scale`](#class_spritebase3d_property_alpha_hash_scale)               | ``1.0``               |
-| [`float`](class_float.md)                                   | [`alpha_scissor_threshold`](#class_spritebase3d_property_alpha_scissor_threshold) | ``0.5``               |
-| Vector3.Axis                                                | [`axis`](#class_spritebase3d_property_axis)                                       | ``2``                 |
-| [BillboardMode](#enum_basematerial3d_billboardmode)         | [`billboard`](#class_spritebase3d_property_billboard)                             | ``0``                 |
-| [`bool`](class_bool.md)                                     | [`centered`](#class_spritebase3d_property_centered)                               | ``true``              |
-| [`bool`](class_bool.md)                                     | [`double_sided`](#class_spritebase3d_property_double_sided)                       | ``true``              |
-| [`bool`](class_bool.md)                                     | [`fixed_size`](#class_spritebase3d_property_fixed_size)                           | ``false``             |
-| [`bool`](class_bool.md)                                     | [`flip_h`](#class_spritebase3d_property_flip_h)                                   | ``false``             |
-| [`bool`](class_bool.md)                                     | [`flip_v`](#class_spritebase3d_property_flip_v)                                   | ``false``             |
-| [`Color`](class_color.md)                                   | [`modulate`](#class_spritebase3d_property_modulate)                               | ``Color(1, 1, 1, 1)`` |
-| [`bool`](class_bool.md)                                     | [`no_depth_test`](#class_spritebase3d_property_no_depth_test)                     | ``false``             |
-| [`Vector2`](class_vector2.md)                               | [`offset`](#class_spritebase3d_property_offset)                                   | ``Vector2(0, 0)``     |
-| [`float`](class_float.md)                                   | [`pixel_size`](#class_spritebase3d_property_pixel_size)                           | ``0.01``              |
-| [`int`](class_int.md)                                       | [`render_priority`](#class_spritebase3d_property_render_priority)                 | ``0``                 |
-| [`bool`](class_bool.md)                                     | [`shaded`](#class_spritebase3d_property_shaded)                                   | ``false``             |
-| [TextureFilter](#enum_basematerial3d_texturefilter)         | [`texture_filter`](#class_spritebase3d_property_texture_filter)                   | ``3``                 |
-| [`bool`](class_bool.md)                                     | [`transparent`](#class_spritebase3d_property_transparent)                         | ``true``              |
+| [`float`](class_float.md)                                   | [`alpha_antialiasing_edge`](class_spritebase3d.md#class_spritebase3d_property_alpha_antialiasing_edge) | ``0.0``               |
+| [AlphaAntiAliasing](#enum_basematerial3d_alphaantialiasing) | [`alpha_antialiasing_mode`](class_spritebase3d.md#class_spritebase3d_property_alpha_antialiasing_mode) | ``0``                 |
+| [AlphaCutMode](#enum_spritebase3d_alphacutmode)             | [`alpha_cut`](class_spritebase3d.md#class_spritebase3d_property_alpha_cut)                             | ``0``                 |
+| [`float`](class_float.md)                                   | [`alpha_hash_scale`](class_spritebase3d.md#class_spritebase3d_property_alpha_hash_scale)               | ``1.0``               |
+| [`float`](class_float.md)                                   | [`alpha_scissor_threshold`](class_spritebase3d.md#class_spritebase3d_property_alpha_scissor_threshold) | ``0.5``               |
+| Vector3.Axis                                                | [`axis`](class_spritebase3d.md#class_spritebase3d_property_axis)                                       | ``2``                 |
+| [BillboardMode](#enum_basematerial3d_billboardmode)         | [`billboard`](class_spritebase3d.md#class_spritebase3d_property_billboard)                             | ``0``                 |
+| [`bool`](class_bool.md)                                     | [`centered`](class_spritebase3d.md#class_spritebase3d_property_centered)                               | ``true``              |
+| [`bool`](class_bool.md)                                     | [`double_sided`](class_spritebase3d.md#class_spritebase3d_property_double_sided)                       | ``true``              |
+| [`bool`](class_bool.md)                                     | [`fixed_size`](class_spritebase3d.md#class_spritebase3d_property_fixed_size)                           | ``false``             |
+| [`bool`](class_bool.md)                                     | [`flip_h`](class_spritebase3d.md#class_spritebase3d_property_flip_h)                                   | ``false``             |
+| [`bool`](class_bool.md)                                     | [`flip_v`](class_spritebase3d.md#class_spritebase3d_property_flip_v)                                   | ``false``             |
+| [`Color`](class_color.md)                                   | [`modulate`](class_spritebase3d.md#class_spritebase3d_property_modulate)                               | ``Color(1, 1, 1, 1)`` |
+| [`bool`](class_bool.md)                                     | [`no_depth_test`](class_spritebase3d.md#class_spritebase3d_property_no_depth_test)                     | ``false``             |
+| [`Vector2`](class_vector2.md)                               | [`offset`](class_spritebase3d.md#class_spritebase3d_property_offset)                                   | ``Vector2(0, 0)``     |
+| [`float`](class_float.md)                                   | [`pixel_size`](class_spritebase3d.md#class_spritebase3d_property_pixel_size)                           | ``0.01``              |
+| [`int`](class_int.md)                                       | [`render_priority`](class_spritebase3d.md#class_spritebase3d_property_render_priority)                 | ``0``                 |
+| [`bool`](class_bool.md)                                     | [`shaded`](class_spritebase3d.md#class_spritebase3d_property_shaded)                                   | ``false``             |
+| [TextureFilter](#enum_basematerial3d_texturefilter)         | [`texture_filter`](class_spritebase3d.md#class_spritebase3d_property_texture_filter)                   | ``3``                 |
+| [`bool`](class_bool.md)                                     | [`transparent`](class_spritebase3d.md#class_spritebase3d_property_transparent)                         | ``true``              |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](#class_spritebase3d_method_generate_triangle_mesh) ( ) const[^const]                                                   |
-| [`bool`](class_bool.md)                 | [`get_draw_flag`](#class_spritebase3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags) ) const[^const]                     |
-| [`Rect2`](class_rect2.md)               | [`get_item_rect`](#class_spritebase3d_method_get_item_rect) ( ) const[^const]                                                                     |
-| `void`                                  | [`set_draw_flag`](#class_spritebase3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags), enabled: [`bool`](class_bool.md) ) |
+| [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](class_spritebase3d.md#class_spritebase3d_method_generate_triangle_mesh) ( ) const[^const]                                                   |
+| [`bool`](class_bool.md)                 | [`get_draw_flag`](class_spritebase3d.md#class_spritebase3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags) ) const[^const]                     |
+| [`Rect2`](class_rect2.md)               | [`get_item_rect`](class_spritebase3d.md#class_spritebase3d_method_get_item_rect) ( ) const[^const]                                                                     |
+| `void`                                  | [`set_draw_flag`](class_spritebase3d.md#class_spritebase3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags), enabled: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -115,13 +115,13 @@ This mode performs standard alpha blending. It can display translucent areas, bu
 
 [AlphaCutMode](#enum_spritebase3d_alphacutmode) **ALPHA_CUT_DISCARD** = ``1``
 
-This mode only allows fully transparent or fully opaque pixels. Harsh edges will be visible unless some form of screen-space antialiasing is enabled (see [`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa`](#class_projectsettings_property_rendering/anti_aliasing/quality/screen_space_aa)). On the bright side, this mode doesn't suffer from transparency sorting issues when multiple transparent materials are overlapping. This mode is also known as *alpha testing* or *1-bit transparency*.
+This mode only allows fully transparent or fully opaque pixels. Harsh edges will be visible unless some form of screen-space antialiasing is enabled (see [`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/screen_space_aa)). On the bright side, this mode doesn't suffer from transparency sorting issues when multiple transparent materials are overlapping. This mode is also known as *alpha testing* or *1-bit transparency*.
 
 <div id="_class_spritebase3d_constant_alpha_cut_opaque_prepass"></div>
 
 [AlphaCutMode](#enum_spritebase3d_alphacutmode) **ALPHA_CUT_OPAQUE_PREPASS** = ``2``
 
-This mode draws fully opaque pixels in the depth prepass. This is slower than [`ALPHA_CUT_DISABLED`](#class_spritebase3d_constant_alpha_cut_disabled) or [`ALPHA_CUT_DISCARD`](#class_spritebase3d_constant_alpha_cut_discard), but it allows displaying translucent areas and smooth edges while using proper sorting.
+This mode draws fully opaque pixels in the depth prepass. This is slower than [`ALPHA_CUT_DISABLED`](class_spritebase3d.md#class_spritebase3d_constant_alpha_cut_disabled) or [`ALPHA_CUT_DISCARD`](class_spritebase3d.md#class_spritebase3d_constant_alpha_cut_discard), but it allows displaying translucent areas and smooth edges while using proper sorting.
 
 <div id="_class_spritebase3d_constant_alpha_cut_hash"></div>
 
@@ -302,9 +302,9 @@ If `true`, texture is flipped vertically.
 
 A color value used to *multiply* the texture's colors. Can be used for mood-coloring or to simulate the color of ambient light.
 
- **Note:** Unlike [`CanvasItem.modulate`](#class_canvasitem_property_modulate) for 2D, colors with values above `1.0` (overbright) are not supported.
+ **Note:** Unlike [`CanvasItem.modulate`](class_canvasitem.md#class_canvasitem_property_modulate) for 2D, colors with values above `1.0` (overbright) are not supported.
 
- **Note:** If a [`GeometryInstance3D.material_override`](#class_geometryinstance3d_property_material_override) is defined on the **SpriteBase3D**, the material override must be configured to take vertex colors into account for albedo. Otherwise, the color defined in [`modulate`](#class_spritebase3d_property_modulate) will be ignored. For a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](#class_basematerial3d_property_vertex_color_use_as_albedo) must be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function.
+ **Note:** If a [`GeometryInstance3D.material_override`](class_geometryinstance3d.md#class_geometryinstance3d_property_material_override) is defined on the **SpriteBase3D**, the material override must be configured to take vertex colors into account for albedo. Otherwise, the color defined in [`modulate`](class_spritebase3d.md#class_spritebase3d_property_modulate) will be ignored. For a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo) must be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -358,7 +358,7 @@ The size of one pixel's width on the sprite to scale it in 3D.
 
 Sets the render priority for the sprite. Higher priority objects will be sorted in front of lower priority objects.
 
- **Note:** This only applies if [`alpha_cut`](#class_spritebase3d_property_alpha_cut) is set to [`ALPHA_CUT_DISABLED`](#class_spritebase3d_constant_alpha_cut_disabled) (default value).
+ **Note:** This only applies if [`alpha_cut`](class_spritebase3d.md#class_spritebase3d_property_alpha_cut) is set to [`ALPHA_CUT_DISABLED`](class_spritebase3d.md#class_spritebase3d_constant_alpha_cut_disabled) (default value).
 
  **Note:** This only applies to sorting of transparent objects. This will not impact how transparent objects are sorted relative to opaque objects. This is because opaque objects are not sorted, while transparent objects are sorted from back to front (subject to priority).
 
@@ -413,7 +413,7 @@ If `true`, the texture's transparency and the opacity are used to make those par
 
 [`TriangleMesh`](class_trianglemesh.md) **generate_triangle_mesh** ( ) const[^const]<div id="class_spritebase3d_method_generate_triangle_mesh"></div>
 
-Returns a [`TriangleMesh`](class_trianglemesh.md) with the sprite's vertices following its current configuration (such as its [`axis`](#class_spritebase3d_property_axis) and [`pixel_size`](#class_spritebase3d_property_pixel_size)).
+Returns a [`TriangleMesh`](class_trianglemesh.md) with the sprite's vertices following its current configuration (such as its [`axis`](class_spritebase3d.md#class_spritebase3d_property_axis) and [`pixel_size`](class_spritebase3d.md#class_spritebase3d_property_pixel_size)).
 
 <!-- rst-class:: classref-item-separator -->
 

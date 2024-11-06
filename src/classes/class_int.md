@@ -76,11 +76,11 @@ You can use the `0b` literal for binary representation, the `0x` literal for hex
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( )                                   |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`int`](class_int.md) )       |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`String`](class_string.md) ) |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`bool`](class_bool.md) )     |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`float`](class_float.md) )   |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( )                                   |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`int`](class_int.md) )       |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`String`](class_string.md) ) |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`bool`](class_bool.md) )     |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`float`](class_float.md) )   |
 
 ## 运算符
 
@@ -152,7 +152,7 @@ Constructs an **int** as a copy of the given **int**.
 
 [`int`](class_int.md) **int** ( from: [`String`](class_string.md) )
 
-Constructs a new **int** from a [`String`](class_string.md), following the same rules as [`String.to_int`](#class_string_method_to_int).
+Constructs a new **int** from a [`String`](class_string.md), following the same rules as [`String.to_int`](class_string.md#class_string_method_to_int).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -200,7 +200,7 @@ Returns `true` if the **int** s are not equal.
 
 [`int`](class_int.md) **operator %** ( right: [`int`](class_int.md) ) <div id="class_int_operator_mod_int"></div>
 
-Returns the remainder after dividing two **int** s. Uses truncated division, which returns a negative number if the dividend is negative. If this is not desired, consider using [`@GlobalScope.posmod`](#class_@globalscope_method_posmod).
+Returns the remainder after dividing two **int** s. Uses truncated division, which returns a negative number if the dividend is negative. If this is not desired, consider using [`@GlobalScope.posmod`](class_@globalscope.md#class_@globalscope_method_posmod).
 
 ```
 

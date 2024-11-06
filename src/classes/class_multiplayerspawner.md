@@ -13,29 +13,29 @@ Automatically replicates spawnable nodes from the authority to other multiplayer
 
 ## 描述
 
-Spawnable scenes can be configured in the editor or through code (see [`add_spawnable_scene`](#class_multiplayerspawner_method_add_spawnable_scene)).
+Spawnable scenes can be configured in the editor or through code (see [`add_spawnable_scene`](class_multiplayerspawner.md#class_multiplayerspawner_method_add_spawnable_scene)).
 
-Also supports custom node spawns through [`spawn`](#class_multiplayerspawner_method_spawn), calling [`spawn_function`](#class_multiplayerspawner_property_spawn_function) on all peers.
+Also supports custom node spawns through [`spawn`](class_multiplayerspawner.md#class_multiplayerspawner_method_spawn), calling [`spawn_function`](class_multiplayerspawner.md#class_multiplayerspawner_property_spawn_function) on all peers.
 
-Internally, **MultiplayerSpawner** uses [`MultiplayerAPI.object_configuration_add`](#class_multiplayerapi_method_object_configuration_add) to notify spawns passing the spawned node as the `object` and itself as the `configuration`, and [`MultiplayerAPI.object_configuration_remove`](#class_multiplayerapi_method_object_configuration_remove) to notify despawns in a similar way.
+Internally, **MultiplayerSpawner** uses [`MultiplayerAPI.object_configuration_add`](class_multiplayerapi.md#class_multiplayerapi_method_object_configuration_add) to notify spawns passing the spawned node as the `object` and itself as the `configuration`, and [`MultiplayerAPI.object_configuration_remove`](class_multiplayerapi.md#class_multiplayerapi_method_object_configuration_remove) to notify despawns in a similar way.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`Callable`](class_callable.md) | [`spawn_function`](#class_multiplayerspawner_property_spawn_function) |                  |
-| [`int`](class_int.md)           | [`spawn_limit`](#class_multiplayerspawner_property_spawn_limit)       | ``0``            |
-| [`NodePath`](class_nodepath.md) | [`spawn_path`](#class_multiplayerspawner_property_spawn_path)         | ``NodePath("")`` |
+| [`Callable`](class_callable.md) | [`spawn_function`](class_multiplayerspawner.md#class_multiplayerspawner_property_spawn_function) |                  |
+| [`int`](class_int.md)           | [`spawn_limit`](class_multiplayerspawner.md#class_multiplayerspawner_property_spawn_limit)       | ``0``            |
+| [`NodePath`](class_nodepath.md) | [`spawn_path`](class_multiplayerspawner.md#class_multiplayerspawner_property_spawn_path)         | ``NodePath("")`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                      | [`add_spawnable_scene`](#class_multiplayerspawner_method_add_spawnable_scene) ( path: [`String`](class_string.md) )          |
-| `void`                      | [`clear_spawnable_scenes`](#class_multiplayerspawner_method_clear_spawnable_scenes) ( )                                      |
-| [`String`](class_string.md) | [`get_spawnable_scene`](#class_multiplayerspawner_method_get_spawnable_scene) ( index: [`int`](class_int.md) ) const[^const] |
-| [`int`](class_int.md)       | [`get_spawnable_scene_count`](#class_multiplayerspawner_method_get_spawnable_scene_count) ( ) const[^const]                  |
-| [`Node`](class_node.md)     | [`spawn`](#class_multiplayerspawner_method_spawn) ( data: [`Variant`](class_variant.md) = null )                             |
+| `void`                      | [`add_spawnable_scene`](class_multiplayerspawner.md#class_multiplayerspawner_method_add_spawnable_scene) ( path: [`String`](class_string.md) )          |
+| `void`                      | [`clear_spawnable_scenes`](class_multiplayerspawner.md#class_multiplayerspawner_method_clear_spawnable_scenes) ( )                                      |
+| [`String`](class_string.md) | [`get_spawnable_scene`](class_multiplayerspawner.md#class_multiplayerspawner_method_get_spawnable_scene) ( index: [`int`](class_int.md) ) const[^const] |
+| [`int`](class_int.md)       | [`get_spawnable_scene_count`](class_multiplayerspawner.md#class_multiplayerspawner_method_get_spawnable_scene_count) ( ) const[^const]                  |
+| [`Node`](class_node.md)     | [`spawn`](class_multiplayerspawner.md#class_multiplayerspawner_method_spawn) ( data: [`Variant`](class_variant.md) = null )                             |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -72,9 +72,9 @@ Emitted when a spawnable scene or custom spawn was spawned by the multiplayer au
 - `void` **set_spawn_function** ( value: [`Callable`](class_callable.md) )
 - [`Callable`](class_callable.md) **get_spawn_function** ( )
 
-Method called on all peers when a custom [`spawn`](#class_multiplayerspawner_method_spawn) is requested by the authority. Will receive the `data` parameter, and should return a [`Node`](class_node.md) that is not in the scene tree.
+Method called on all peers when a custom [`spawn`](class_multiplayerspawner.md#class_multiplayerspawner_method_spawn) is requested by the authority. Will receive the `data` parameter, and should return a [`Node`](class_node.md) that is not in the scene tree.
 
- **Note:** The returned node should **not** be added to the scene with [`Node.add_child`](#class_node_method_add_child). This is done automatically.
+ **Note:** The returned node should **not** be added to the scene with [`Node.add_child`](class_node.md#class_node_method_add_child). This is done automatically.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -114,7 +114,7 @@ Path to the spawn root. Spawnable scenes that are added as direct children are r
 
 `void` **add_spawnable_scene** ( path: [`String`](class_string.md) )<div id="class_multiplayerspawner_method_add_spawnable_scene"></div>
 
-Adds a scene path to spawnable scenes, making it automatically replicated from the multiplayer authority to other peers when added as children of the node pointed by [`spawn_path`](#class_multiplayerspawner_property_spawn_path).
+Adds a scene path to spawnable scenes, making it automatically replicated from the multiplayer authority to other peers when added as children of the node pointed by [`spawn_path`](class_multiplayerspawner.md#class_multiplayerspawner_property_spawn_path).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -154,9 +154,9 @@ Returns the count of spawnable scene paths.
 
 [`Node`](class_node.md) **spawn** ( data: [`Variant`](class_variant.md) = null )<div id="class_multiplayerspawner_method_spawn"></div>
 
-Requests a custom spawn, with `data` passed to [`spawn_function`](#class_multiplayerspawner_property_spawn_function) on all peers. Returns the locally spawned node instance already inside the scene tree, and added as a child of the node pointed by [`spawn_path`](#class_multiplayerspawner_property_spawn_path).
+Requests a custom spawn, with `data` passed to [`spawn_function`](class_multiplayerspawner.md#class_multiplayerspawner_property_spawn_function) on all peers. Returns the locally spawned node instance already inside the scene tree, and added as a child of the node pointed by [`spawn_path`](class_multiplayerspawner.md#class_multiplayerspawner_property_spawn_path).
 
- **Note:** Spawnable scenes are spawned automatically. [`spawn`](#class_multiplayerspawner_method_spawn) is only needed for custom spawns.
+ **Note:** Spawnable scenes are spawned automatically. [`spawn`](class_multiplayerspawner.md#class_multiplayerspawner_method_spawn) is only needed for custom spawns.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

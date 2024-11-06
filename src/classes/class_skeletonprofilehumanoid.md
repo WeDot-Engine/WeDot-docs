@@ -81,10 +81,10 @@ A humanoid skeleton profile contains 54 bones divided in 4 groups: `"Body"`, `"F
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)               | bone_size       | ``56`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_bone_size))            |
-| [`int`](class_int.md)               | group_size      | ``4`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_group_size))            |
-| [`StringName`](class_stringname.md) | root_bone       | ``&"Root"`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_root_bone))       |
-| [`StringName`](class_stringname.md) | scale_base_bone | ``&"Hips"`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_scale_base_bone)) |
+| [`int`](class_int.md)               | bone_size       | ``56`` (overrides [`SkeletonProfile`](class_skeletonprofile.md#class_skeletonprofile_property_bone_size))            |
+| [`int`](class_int.md)               | group_size      | ``4`` (overrides [`SkeletonProfile`](class_skeletonprofile.md#class_skeletonprofile_property_group_size))            |
+| [`StringName`](class_stringname.md) | root_bone       | ``&"Root"`` (overrides [`SkeletonProfile`](class_skeletonprofile.md#class_skeletonprofile_property_root_bone))       |
+| [`StringName`](class_stringname.md) | scale_base_bone | ``&"Hips"`` (overrides [`SkeletonProfile`](class_skeletonprofile.md#class_skeletonprofile_property_scale_base_bone)) |
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。
