@@ -17,6 +17,8 @@ IP contains support functions for the Internet Protocol (IP). TCP/IP support is 
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`clear_cache`](#class_ip_method_clear_cache) ( hostname: [`String`](class_string.md) = "" )                                                            |
 | `void`                                                      | [`erase_resolve_item`](#class_ip_method_erase_resolve_item) ( id: [`int`](class_int.md) )                                                               |
 | [`PackedStringArray`](class_packedstringarray.md)           | [`get_local_addresses`](#class_ip_method_get_local_addresses) ( ) const[^const]                                                                         |

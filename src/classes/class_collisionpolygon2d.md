@@ -19,6 +19,8 @@ A node that provides a polygon shape to a [`CollisionObject2D`](class_collisiono
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BuildMode](#enum_collisionpolygon2d_buildmode)     | [`build_mode`](#class_collisionpolygon2d_property_build_mode)                             | ``0``                    |
 | [`bool`](class_bool.md)                             | [`disabled`](#class_collisionpolygon2d_property_disabled)                                 | ``false``                |
 | [`bool`](class_bool.md)                             | [`one_way_collision`](#class_collisionpolygon2d_property_one_way_collision)               | ``false``                |

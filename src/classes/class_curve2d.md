@@ -19,11 +19,15 @@ It keeps a cache of precalculated points along the curve, to speed up further ca
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`bake_interval`](#class_curve2d_property_bake_interval) | ``5.0`` |
 | [`int`](class_int.md)     | [`point_count`](#class_curve2d_property_point_count)     | ``0``   |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`add_point`](#class_curve2d_method_add_point) ( position: [`Vector2`](class_vector2.md), in: [`Vector2`](class_vector2.md) = Vector2(0, 0), out: [`Vector2`](class_vector2.md) = Vector2(0, 0), index: [`int`](class_int.md) = -1 ) |
 | `void`                                              | [`clear_points`](#class_curve2d_method_clear_points) ( )                                                                                                                                                                             |
 | [`float`](class_float.md)                           | [`get_baked_length`](#class_curve2d_method_get_baked_length) ( ) const[^const]                                                                                                                                                       |

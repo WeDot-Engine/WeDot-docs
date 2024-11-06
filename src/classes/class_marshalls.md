@@ -17,6 +17,8 @@ Provides data transformation and encoding utility functions.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedByteArray`](class_packedbytearray.md) | [`base64_to_raw`](#class_marshalls_method_base64_to_raw) ( base64_str: [`String`](class_string.md) )                                                         |
 | [`String`](class_string.md)                   | [`base64_to_utf8`](#class_marshalls_method_base64_to_utf8) ( base64_str: [`String`](class_string.md) )                                                       |
 | [`Variant`](class_variant.md)                 | [`base64_to_variant`](#class_marshalls_method_base64_to_variant) ( base64_str: [`String`](class_string.md), allow_objects: [`bool`](class_bool.md) = false ) |

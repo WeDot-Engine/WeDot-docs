@@ -19,6 +19,8 @@ A 2D game object, with a transform (position, rotation, and scale). All 2D nodes
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md)         | [`global_position`](#class_node2d_property_global_position)                 |                   |
 | [`float`](class_float.md)             | [`global_rotation`](#class_node2d_property_global_rotation)                 |                   |
 | [`float`](class_float.md)             | [`global_rotation_degrees`](#class_node2d_property_global_rotation_degrees) |                   |
@@ -34,6 +36,8 @@ A 2D game object, with a transform (position, rotation, and scale). All 2D nodes
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                | [`apply_scale`](#class_node2d_method_apply_scale) ( ratio: [`Vector2`](class_vector2.md) )                                                    |
 | [`float`](class_float.md)             | [`get_angle_to`](#class_node2d_method_get_angle_to) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
 | [`Transform2D`](class_transform2d.md) | [`get_relative_transform_to_parent`](#class_node2d_method_get_relative_transform_to_parent) ( parent: [`Node`](class_node.md) ) const[^const] |

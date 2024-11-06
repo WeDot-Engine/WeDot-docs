@@ -23,10 +23,14 @@ The `new` method of a script subclass creates a new instance. [`Object.set_scrip
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`source_code`](#class_script_property_source_code) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`can_instantiate`](#class_script_method_can_instantiate) ( ) const[^const]                                                       |
 | [`Script`](class_script.md)                                 | [`get_base_script`](#class_script_method_get_base_script) ( ) const[^const]                                                       |
 | [`StringName`](class_stringname.md)                         | [`get_global_name`](#class_script_method_get_global_name) ( ) const[^const]                                                       |

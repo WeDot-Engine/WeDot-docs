@@ -21,6 +21,8 @@ The hand tracking position-data is scaled by [`Skeleton3D.motion_scale`](#class_
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BoneUpdate](#enum_xrhandmodifier3d_boneupdate) | [`bone_update`](#class_xrhandmodifier3d_property_bone_update)   | ``0``                          |
 | [`StringName`](class_stringname.md)             | [`hand_tracker`](#class_xrhandmodifier3d_property_hand_tracker) | ``&"/user/hand_tracker/left"`` |
 

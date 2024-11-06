@@ -19,6 +19,8 @@ Abstract base class for separators, used for separating other controls. **Separa
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)           | [`separation`](#class_separator_theme_constant_separation) | ``0`` |
 | [`StyleBox`](class_stylebox.md) | [`separator`](#class_separator_theme_style_separator)      |       |
 

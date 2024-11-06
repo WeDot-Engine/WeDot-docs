@@ -13,6 +13,8 @@
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Skin`](class_skin.md)                         | [`godot_skin`](#class_gltfskin_property_godot_skin)           |                        |
 | [`PackedInt32Array`](class_packedint32array.md) | [`joints`](#class_gltfskin_property_joints)                   | ``PackedInt32Array()`` |
 | [`PackedInt32Array`](class_packedint32array.md) | [`joints_original`](#class_gltfskin_property_joints_original) | ``PackedInt32Array()`` |
@@ -23,6 +25,8 @@
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`Transform3D`](class_transform3d.md) | [`get_inverse_binds`](#class_gltfskin_method_get_inverse_binds) ( )                                                                              |
 | [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_bone_i`](#class_gltfskin_method_get_joint_i_to_bone_i) ( )                                                                      |
 | [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_name`](#class_gltfskin_method_get_joint_i_to_name) ( )                                                                          |

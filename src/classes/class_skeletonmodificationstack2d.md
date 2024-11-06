@@ -23,12 +23,16 @@ This resource also controls how strongly all of the modifications are applied to
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`enabled`](#class_skeletonmodificationstack2d_property_enabled)                       | ``false`` |
 | [`int`](class_int.md)     | [`modification_count`](#class_skeletonmodificationstack2d_property_modification_count) | ``0``     |
 | [`float`](class_float.md) | [`strength`](#class_skeletonmodificationstack2d_property_strength)                     | ``1.0``   |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`add_modification`](#class_skeletonmodificationstack2d_method_add_modification) ( modification: [`SkeletonModification2D`](class_skeletonmodification2d.md) )                                 |
 | `void`                                                      | [`delete_modification`](#class_skeletonmodificationstack2d_method_delete_modification) ( mod_idx: [`int`](class_int.md) )                                                                      |
 | `void`                                                      | [`enable_all_modifications`](#class_skeletonmodificationstack2d_method_enable_all_modifications) ( enabled: [`bool`](class_bool.md) )                                                          |

@@ -19,6 +19,8 @@ Plugins are used by the editor to extend functionality. The most common types of
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                    | [`_apply_changes`](#class_editorplugin_private_method__apply_changes) ( ) virtual[^virtual]                                                                                                                                                     |
 | [`bool`](class_bool.md)                                   | [`_build`](#class_editorplugin_private_method__build) ( ) virtual[^virtual]                                                                                                                                                                     |
 | `void`                                                    | [`_clear`](#class_editorplugin_private_method__clear) ( ) virtual[^virtual]                                                                                                                                                                     |

@@ -19,6 +19,8 @@ Performs a lookup operation on the texture provided as a uniform for the shader.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ColorDefault](#enum_visualshadernodetextureparameter_colordefault)   | [`color_default`](#class_visualshadernodetextureparameter_property_color_default)   | ``0`` |
 | [TextureFilter](#enum_visualshadernodetextureparameter_texturefilter) | [`texture_filter`](#class_visualshadernodetextureparameter_property_texture_filter) | ``0`` |
 | [TextureRepeat](#enum_visualshadernodetextureparameter_texturerepeat) | [`texture_repeat`](#class_visualshadernodetextureparameter_property_texture_repeat) | ``0`` |

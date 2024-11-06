@@ -19,6 +19,8 @@ By default, Godot saves resources as `.tres` (text-based), `.res` (binary) or an
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](#class_resourceformatsaver_private_method__get_recognized_extensions) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]              |
 | [`bool`](class_bool.md)                           | [`_recognize`](#class_resourceformatsaver_private_method__recognize) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]                                              |
 | [`bool`](class_bool.md)                           | [`_recognize_path`](#class_resourceformatsaver_private_method__recognize_path) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) ) virtual[^virtual] const[^const] |

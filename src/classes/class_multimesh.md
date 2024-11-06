@@ -27,6 +27,8 @@ Since instances may have any behavior, the AABB used for visibility must be prov
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedFloat32Array`](class_packedfloat32array.md) | [`buffer`](#class_multimesh_property_buffer)                                 | ``PackedFloat32Array()``   |
 | [`PackedColorArray`](class_packedcolorarray.md)     | [`color_array`](#class_multimesh_property_color_array)                       |                            |
 | [`AABB`](class_aabb.md)                             | [`custom_aabb`](#class_multimesh_property_custom_aabb)                       | ``AABB(0, 0, 0, 0, 0, 0)`` |
@@ -42,6 +44,8 @@ Since instances may have any behavior, the AABB used for visibility must be prov
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`AABB`](class_aabb.md)               | [`get_aabb`](#class_multimesh_method_get_aabb) ( ) const[^const]                                                                                                       |
 | [`Color`](class_color.md)             | [`get_instance_color`](#class_multimesh_method_get_instance_color) ( instance: [`int`](class_int.md) ) const[^const]                                                   |
 | [`Color`](class_color.md)             | [`get_instance_custom_data`](#class_multimesh_method_get_instance_custom_data) ( instance: [`int`](class_int.md) ) const[^const]                                       |

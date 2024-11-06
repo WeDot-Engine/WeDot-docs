@@ -25,6 +25,8 @@ When getting time information from the system, the time can either be in the loc
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md) | [`get_date_dict_from_system`](#class_time_method_get_date_dict_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                        |
 | [`Dictionary`](class_dictionary.md) | [`get_date_dict_from_unix_time`](#class_time_method_get_date_dict_from_unix_time) ( unix_time_val: [`int`](class_int.md) ) const[^const]                                                                  |
 | [`String`](class_string.md)         | [`get_date_string_from_system`](#class_time_method_get_date_string_from_system) ( utc: [`bool`](class_bool.md) = false ) const[^const]                                                                    |

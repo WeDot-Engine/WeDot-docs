@@ -17,6 +17,8 @@ A physics joint that attaches two 2D physics bodies at a single point, allowing 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`angular_limit_enabled`](#class_pinjoint2d_property_angular_limit_enabled) | ``false`` |
 | [`float`](class_float.md) | [`angular_limit_lower`](#class_pinjoint2d_property_angular_limit_lower)     | ``0.0``   |
 | [`float`](class_float.md) | [`angular_limit_upper`](#class_pinjoint2d_property_angular_limit_upper)     | ``0.0``   |

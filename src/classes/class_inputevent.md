@@ -19,10 +19,14 @@ Abstract base class of all types of input events. See [`Node._input`](#class_nod
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`device`](#class_inputevent_property_device) | ``0`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`accumulate`](#class_inputevent_method_accumulate) ( with_event: [`InputEvent`](class_inputevent.md) )                                                                                                                    |
 | [`String`](class_string.md)         | [`as_text`](#class_inputevent_method_as_text) ( ) const[^const]                                                                                                                                                            |
 | [`float`](class_float.md)           | [`get_action_strength`](#class_inputevent_method_get_action_strength) ( action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const]                                          |

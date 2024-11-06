@@ -17,6 +17,8 @@ A node that displays a 2D texture. The texture displayed can be a region from a 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)           | [`centered`](#class_sprite2d_property_centered)                                     | ``true``              |
 | [`bool`](class_bool.md)           | [`flip_h`](#class_sprite2d_property_flip_h)                                         | ``false``             |
 | [`bool`](class_bool.md)           | [`flip_v`](#class_sprite2d_property_flip_v)                                         | ``false``             |
@@ -32,6 +34,8 @@ A node that displays a 2D texture. The texture displayed can be a region from a 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Rect2`](class_rect2.md) | [`get_rect`](#class_sprite2d_method_get_rect) ( ) const[^const]                                                  |
 | [`bool`](class_bool.md)   | [`is_pixel_opaque`](#class_sprite2d_method_is_pixel_opaque) ( pos: [`Vector2`](class_vector2.md) ) const[^const] |
 

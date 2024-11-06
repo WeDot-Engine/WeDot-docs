@@ -19,6 +19,8 @@ This node allows you to create a box for use with the CSG system.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Material`](class_material.md) | [`material`](#class_csgbox3d_property_material) |                      |
 | [`Vector3`](class_vector3.md)   | [`size`](#class_csgbox3d_property_size)         | ``Vector3(1, 1, 1)`` |
 

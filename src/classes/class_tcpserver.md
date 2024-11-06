@@ -19,6 +19,8 @@ A TCP server. Listens to connections on a port and returns a [`StreamPeerTCP`](c
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                     | [`get_local_port`](#class_tcpserver_method_get_local_port) ( ) const[^const]                                                |
 | [`bool`](class_bool.md)                   | [`is_connection_available`](#class_tcpserver_method_is_connection_available) ( ) const[^const]                              |
 | [`bool`](class_bool.md)                   | [`is_listening`](#class_tcpserver_method_is_listening) ( ) const[^const]                                                    |

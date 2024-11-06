@@ -19,6 +19,8 @@ Container for parsed source geometry data used in navigation mesh baking.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`add_faces`](#class_navigationmeshsourcegeometrydata3d_method_add_faces) ( faces: [`PackedVector3Array`](class_packedvector3array.md), xform: [`Transform3D`](class_transform3d.md) )                                                                                               |
 | `void`                                              | [`add_mesh`](#class_navigationmeshsourcegeometrydata3d_method_add_mesh) ( mesh: [`Mesh`](class_mesh.md), xform: [`Transform3D`](class_transform3d.md) )                                                                                                                              |
 | `void`                                              | [`add_mesh_array`](#class_navigationmeshsourcegeometrydata3d_method_add_mesh_array) ( mesh_array: [`Array`](class_array.md), xform: [`Transform3D`](class_transform3d.md) )                                                                                                          |

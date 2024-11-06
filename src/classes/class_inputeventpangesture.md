@@ -19,6 +19,8 @@ Stores information about pan gestures. A pan gesture is performed when the user 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`delta`](#class_inputeventpangesture_property_delta) | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->

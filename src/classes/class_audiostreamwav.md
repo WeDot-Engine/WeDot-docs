@@ -19,6 +19,8 @@ This class can also be used to store dynamically-generated PCM audio data. See a
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedByteArray`](class_packedbytearray.md) | [`data`](#class_audiostreamwav_property_data)             | ``PackedByteArray()`` |
 | [Format](#enum_audiostreamwav_format)         | [`format`](#class_audiostreamwav_property_format)         | ``0``                 |
 | [`int`](class_int.md)                         | [`loop_begin`](#class_audiostreamwav_property_loop_begin) | ``0``                 |
@@ -29,6 +31,8 @@ This class can also be used to store dynamically-generated PCM audio data. See a
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error) | [`save_to_wav`](#class_audiostreamwav_method_save_to_wav) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->

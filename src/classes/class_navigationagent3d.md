@@ -23,6 +23,8 @@ Dynamic obstacles are avoided using RVO collision avoidance. Avoidance is comput
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                                            | [`avoidance_enabled`](#class_navigationagent3d_property_avoidance_enabled)                       | ``false``             |
 | [`int`](class_int.md)                                                              | [`avoidance_layers`](#class_navigationagent3d_property_avoidance_layers)                         | ``1``                 |
 | [`int`](class_int.md)                                                              | [`avoidance_mask`](#class_navigationagent3d_property_avoidance_mask)                             | ``1``                 |
@@ -55,6 +57,8 @@ Dynamic obstacles are avoided using RVO collision avoidance. Avoidance is comput
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                             | [`distance_to_target`](#class_navigationagent3d_method_distance_to_target) ( ) const[^const]                                                                       |
 | [`bool`](class_bool.md)                                               | [`get_avoidance_layer_value`](#class_navigationagent3d_method_get_avoidance_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
 | [`bool`](class_bool.md)                                               | [`get_avoidance_mask_value`](#class_navigationagent3d_method_get_avoidance_mask_value) ( mask_number: [`int`](class_int.md) ) const[^const]                        |

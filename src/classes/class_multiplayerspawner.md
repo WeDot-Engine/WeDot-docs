@@ -21,12 +21,16 @@ Internally, **MultiplayerSpawner** uses [`MultiplayerAPI.object_configuration_ad
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Callable`](class_callable.md) | [`spawn_function`](#class_multiplayerspawner_property_spawn_function) |                  |
 | [`int`](class_int.md)           | [`spawn_limit`](#class_multiplayerspawner_property_spawn_limit)       | ``0``            |
 | [`NodePath`](class_nodepath.md) | [`spawn_path`](#class_multiplayerspawner_property_spawn_path)         | ``NodePath("")`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                      | [`add_spawnable_scene`](#class_multiplayerspawner_method_add_spawnable_scene) ( path: [`String`](class_string.md) )          |
 | `void`                      | [`clear_spawnable_scenes`](#class_multiplayerspawner_method_clear_spawnable_scenes) ( )                                      |
 | [`String`](class_string.md) | [`get_spawnable_scene`](#class_multiplayerspawner_method_get_spawnable_scene) ( index: [`int`](class_int.md) ) const[^const] |

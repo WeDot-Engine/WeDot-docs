@@ -21,6 +21,8 @@ A material that defines a simple sky for a [`Sky`](class_sky.md) resource.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)         | [`energy_multiplier`](#class_proceduralskymaterial_property_energy_multiplier)               | ``1.0``                              |
 | [`Color`](class_color.md)         | [`ground_bottom_color`](#class_proceduralskymaterial_property_ground_bottom_color)           | ``Color(0.2, 0.169, 0.133, 1)``      |
 | [`float`](class_float.md)         | [`ground_curve`](#class_proceduralskymaterial_property_ground_curve)                         | ``0.02``                             |

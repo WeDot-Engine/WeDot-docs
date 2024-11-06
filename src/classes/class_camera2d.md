@@ -23,6 +23,8 @@ Note that the **Camera2D** node's `position` doesn't represent the actual positi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AnchorMode](#enum_camera2d_anchormode)                           | [`anchor_mode`](#class_camera2d_property_anchor_mode)                               | ``1``             |
 | [`Node`](class_node.md)                                           | [`custom_viewport`](#class_camera2d_property_custom_viewport)                       |                   |
 | [`float`](class_float.md)                                         | [`drag_bottom_margin`](#class_camera2d_property_drag_bottom_margin)                 | ``0.2``           |
@@ -53,6 +55,8 @@ Note that the **Camera2D** node's `position` doesn't represent the actual positi
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                        | [`align`](#class_camera2d_method_align) ( )                                                                                                     |
 | `void`                        | [`force_update_scroll`](#class_camera2d_method_force_update_scroll) ( )                                                                         |
 | [`float`](class_float.md)     | [`get_drag_margin`](#class_camera2d_method_get_drag_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                           |

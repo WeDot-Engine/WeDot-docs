@@ -17,6 +17,8 @@ Exposes the internal debugger.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`clear_breakpoints`](#class_enginedebugger_method_clear_breakpoints) ( )                                                                                                                                                 |
 | `void`                  | [`debug`](#class_enginedebugger_method_debug) ( can_continue: [`bool`](class_bool.md) = true, is_error_breakpoint: [`bool`](class_bool.md) = false )                                                                      |
 | [`int`](class_int.md)   | [`get_depth`](#class_enginedebugger_method_get_depth) ( ) const[^const]                                                                                                                                                   |

@@ -19,10 +19,14 @@ A **StreamPeerBuffer** object keeps an internal cursor which is the offset in by
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedByteArray`](class_packedbytearray.md) | [`data_array`](#class_streampeerbuffer_property_data_array) | ``PackedByteArray()`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                          | [`clear`](#class_streampeerbuffer_method_clear) ( )                               |
 | [`StreamPeerBuffer`](class_streampeerbuffer.md) | [`duplicate`](#class_streampeerbuffer_method_duplicate) ( ) const[^const]         |
 | [`int`](class_int.md)                           | [`get_position`](#class_streampeerbuffer_method_get_position) ( ) const[^const]   |

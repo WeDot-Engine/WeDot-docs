@@ -19,6 +19,8 @@ A directional light is a type of [`Light2D`](class_light2d.md) node that models 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`height`](#class_directionallight2d_property_height)             | ``0.0``     |
 | [`float`](class_float.md) | [`max_distance`](#class_directionallight2d_property_max_distance) | ``10000.0`` |
 

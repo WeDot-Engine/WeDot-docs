@@ -23,6 +23,8 @@ Its title, description and color can be customized.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedInt32Array`](class_packedint32array.md) | [`attached_nodes`](#class_visualshadernodeframe_property_attached_nodes)         | ``PackedInt32Array()``         |
 | [`bool`](class_bool.md)                         | [`autoshrink`](#class_visualshadernodeframe_property_autoshrink)                 | ``true``                       |
 | [`Color`](class_color.md)                       | [`tint_color`](#class_visualshadernodeframe_property_tint_color)                 | ``Color(0.3, 0.3, 0.3, 0.75)`` |
@@ -31,6 +33,8 @@ Its title, description and color can be customized.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`add_attached_node`](#class_visualshadernodeframe_method_add_attached_node) ( node: [`int`](class_int.md) )       |
 | `void` | [`remove_attached_node`](#class_visualshadernodeframe_method_remove_attached_node) ( node: [`int`](class_int.md) ) |
 

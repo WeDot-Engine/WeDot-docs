@@ -19,6 +19,8 @@ This resource defines a custom rendering effect that can be applied to [`Viewpor
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                         | [`access_resolved_color`](#class_compositoreffect_property_access_resolved_color)     |
 | [`bool`](class_bool.md)                                         | [`access_resolved_depth`](#class_compositoreffect_property_access_resolved_depth)     |
 | [EffectCallbackType](#enum_compositoreffect_effectcallbacktype) | [`effect_callback_type`](#class_compositoreffect_property_effect_callback_type)       |
@@ -29,6 +31,8 @@ This resource defines a custom rendering effect that can be applied to [`Viewpor
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`_render_callback`](#class_compositoreffect_private_method__render_callback) ( effect_callback_type: [`int`](class_int.md), render_data: [`RenderData`](class_renderdata.md) ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->

@@ -19,6 +19,8 @@ Base class for all primitive meshes. Handles applying a [`Material`](class_mater
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`add_uv2`](#class_primitivemesh_property_add_uv2)         | ``false``                  |
 | [`AABB`](class_aabb.md)         | [`custom_aabb`](#class_primitivemesh_property_custom_aabb) | ``AABB(0, 0, 0, 0, 0, 0)`` |
 | [`bool`](class_bool.md)         | [`flip_faces`](#class_primitivemesh_property_flip_faces)   | ``false``                  |
@@ -27,6 +29,8 @@ Base class for all primitive meshes. Handles applying a [`Material`](class_mater
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Array`](class_array.md) | [`_create_mesh_array`](#class_primitivemesh_private_method__create_mesh_array) ( ) virtual[^virtual] const[^const] |
 | [`Array`](class_array.md) | [`get_mesh_arrays`](#class_primitivemesh_method_get_mesh_arrays) ( ) const[^const]                                 |
 | `void`                    | [`request_update`](#class_primitivemesh_method_request_update) ( )                                                 |

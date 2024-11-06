@@ -17,6 +17,8 @@ Base editor for editing scripts in the [`ScriptEditor`](class_scripteditor.md). 
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                        | [`add_syntax_highlighter`](#class_scripteditorbase_method_add_syntax_highlighter) ( highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) ) |
 | [`Control`](class_control.md) | [`get_base_editor`](#class_scripteditorbase_method_get_base_editor) ( ) const[^const]                                                                            |
 

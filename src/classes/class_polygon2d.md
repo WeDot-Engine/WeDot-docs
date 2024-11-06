@@ -17,6 +17,8 @@ A Polygon2D is defined by a set of points. Each point is connected to the next, 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`antialiased`](#class_polygon2d_property_antialiased)                     | ``false``                |
 | [`Array`](class_array.md)                           | [`bones`](#class_polygon2d_property_bones)                                 | ``[]``                   |
 | [`Color`](class_color.md)                           | [`color`](#class_polygon2d_property_color)                                 | ``Color(1, 1, 1, 1)``    |
@@ -36,6 +38,8 @@ A Polygon2D is defined by a set of points. Each point is connected to the next, 
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`add_bone`](#class_polygon2d_method_add_bone) ( path: [`NodePath`](class_nodepath.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
 | `void`                                              | [`clear_bones`](#class_polygon2d_method_clear_bones) ( )                                                                                                      |
 | `void`                                              | [`erase_bone`](#class_polygon2d_method_erase_bone) ( index: [`int`](class_int.md) )                                                                           |

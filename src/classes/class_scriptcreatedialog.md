@@ -45,12 +45,16 @@ The **ScriptCreateDialog** creates script files according to a given template fo
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | dialog_hide_on_ok | ``false`` (overrides [`AcceptDialog`](#class_acceptdialog_property_dialog_hide_on_ok)) |
 | [`String`](class_string.md) | ok_button_text    | ``"Create"`` (overrides [`AcceptDialog`](#class_acceptdialog_property_ok_button_text)) |
 | [`String`](class_string.md) | title             | ``"Attach Node Script"`` (overrides [`Window`](#class_window_property_title))          |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`config`](#class_scriptcreatedialog_method_config) ( inherits: [`String`](class_string.md), path: [`String`](class_string.md), built_in_enabled: [`bool`](class_bool.md) = true, load_enabled: [`bool`](class_bool.md) = true ) |
 
 <!-- rst-class:: classref-section-separator -->

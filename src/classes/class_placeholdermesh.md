@@ -21,6 +21,8 @@ This class is used when loading a project that uses a [`Mesh`](class_mesh.md) su
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`AABB`](class_aabb.md) | [`aabb`](#class_placeholdermesh_property_aabb) | ``AABB(0, 0, 0, 0, 0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->

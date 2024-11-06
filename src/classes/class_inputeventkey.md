@@ -21,6 +21,8 @@ When events are compared, properties are checked in the following priority - [`k
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`echo`](#class_inputeventkey_property_echo)                         | ``false`` |
 | [Key](#enum_@globalscope_key)                 | [`key_label`](#class_inputeventkey_property_key_label)               | ``0``     |
 | [Key](#enum_@globalscope_key)                 | [`keycode`](#class_inputeventkey_property_keycode)                   | ``0``     |
@@ -31,6 +33,8 @@ When events are compared, properties are checked in the following priority - [`k
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)   | [`as_text_key_label`](#class_inputeventkey_method_as_text_key_label) ( ) const[^const]                                     |
 | [`String`](class_string.md)   | [`as_text_keycode`](#class_inputeventkey_method_as_text_keycode) ( ) const[^const]                                         |
 | [`String`](class_string.md)   | [`as_text_location`](#class_inputeventkey_method_as_text_location) ( ) const[^const]                                       |

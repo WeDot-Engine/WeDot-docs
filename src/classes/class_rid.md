@@ -21,16 +21,22 @@ A low-level resource may correspond to a high-level [`Resource`](class_resource.
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md) | [`RID`](#class_rid_constructor_rid) ( )                             |
 | [`RID`](class_rid.md) | [`RID`](#class_rid_constructor_rid) ( from: [`RID`](class_rid.md) ) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)   | [`get_id`](#class_rid_method_get_id) ( ) const[^const]     |
 | [`bool`](class_bool.md) | [`is_valid`](#class_rid_method_is_valid) ( ) const[^const] |
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`operator !=`](class_RID.md#operator_neq_RID) ( right: [`RID`](class_rid.md) ) |
 | [`bool`](class_bool.md) | [`operator <`](class_RID.md#operator_lt_RID) ( right: [`RID`](class_rid.md) )   |
 | [`bool`](class_bool.md) | [`operator <=`](class_RID.md#operator_lte_RID) ( right: [`RID`](class_rid.md) ) |

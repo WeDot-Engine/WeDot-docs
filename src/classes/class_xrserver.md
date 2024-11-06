@@ -17,12 +17,16 @@ The AR/VR server is the heart of our Advanced and Virtual Reality solution and h
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`XRInterface`](class_xrinterface.md) | [`primary_interface`](#class_xrserver_property_primary_interface) |                                                     |
 | [`Transform3D`](class_transform3d.md) | [`world_origin`](#class_xrserver_property_world_origin)           | ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` |
 | [`float`](class_float.md)             | [`world_scale`](#class_xrserver_property_world_scale)             | ``1.0``                                             |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`add_interface`](#class_xrserver_method_add_interface) ( interface: [`XRInterface`](class_xrinterface.md) )                                                 |
 | `void`                                                      | [`add_tracker`](#class_xrserver_method_add_tracker) ( tracker: [`XRTracker`](class_xrtracker.md) )                                                           |
 | `void`                                                      | [`center_on_hmd`](#class_xrserver_method_center_on_hmd) ( rotation_mode: [RotationMode](#enum_xrserver_rotationmode), keep_height: [`bool`](class_bool.md) ) |

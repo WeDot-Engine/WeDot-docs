@@ -19,6 +19,8 @@ For game objects that don't require complex movement or collision detection, suc
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                  | [`floor_block_on_wall`](#class_characterbody2d_property_floor_block_on_wall)     | ``true``           |
 | [`bool`](class_bool.md)                                  | [`floor_constant_speed`](#class_characterbody2d_property_floor_constant_speed)   | ``false``          |
 | [`float`](class_float.md)                                | [`floor_max_angle`](#class_characterbody2d_property_floor_max_angle)             | ``0.785398``       |
@@ -37,6 +39,8 @@ For game objects that don't require complex movement or collision detection, suc
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                  | [`apply_floor_snap`](#class_characterbody2d_method_apply_floor_snap) ( )                                                                          |
 | [`float`](class_float.md)                               | [`get_floor_angle`](#class_characterbody2d_method_get_floor_angle) ( up_direction: [`Vector2`](class_vector2.md) = Vector2(0, -1) ) const[^const] |
 | [`Vector2`](class_vector2.md)                           | [`get_floor_normal`](#class_characterbody2d_method_get_floor_normal) ( ) const[^const]                                                            |

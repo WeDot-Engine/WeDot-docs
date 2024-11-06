@@ -17,6 +17,8 @@ This class is meant to be used with [`AudioStreamGenerator`](class_audiostreamge
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`can_push_buffer`](#class_audiostreamgeneratorplayback_method_can_push_buffer) ( amount: [`int`](class_int.md) ) const[^const]         |
 | `void`                  | [`clear_buffer`](#class_audiostreamgeneratorplayback_method_clear_buffer) ( )                                                           |
 | [`int`](class_int.md)   | [`get_frames_available`](#class_audiostreamgeneratorplayback_method_get_frames_available) ( ) const[^const]                             |

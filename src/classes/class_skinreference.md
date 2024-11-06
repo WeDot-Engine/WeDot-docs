@@ -25,6 +25,8 @@ On the other hand, a [`Skeleton3D`](class_skeleton3d.md) with multiple [`MeshIns
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md)   | [`get_skeleton`](#class_skinreference_method_get_skeleton) ( ) const[^const] |
 | [`Skin`](class_skin.md) | [`get_skin`](#class_skinreference_method_get_skin) ( ) const[^const]         |
 

@@ -17,6 +17,8 @@ External XR interface plugins should inherit from this class.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`_end_frame`](#class_xrinterfaceextension_private_method__end_frame) ( ) virtual[^virtual]                                                                                                                                                                                                                                                                                                                                                                                            |
 | [`bool`](class_bool.md)                             | [`_get_anchor_detection_is_enabled`](#class_xrinterfaceextension_private_method__get_anchor_detection_is_enabled) ( ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                                                                                                  |
 | [`int`](class_int.md)                               | [`_get_camera_feed_id`](#class_xrinterfaceextension_private_method__get_camera_feed_id) ( ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                                                                                                                            |

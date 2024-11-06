@@ -19,6 +19,8 @@ This class is used internally by the editor inspector and script debugger, but c
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`object_id`](#class_encodedobjectasid_property_object_id) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

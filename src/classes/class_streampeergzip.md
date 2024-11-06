@@ -21,6 +21,8 @@ After starting the stream via [`start_compression`](#class_streampeergzip_method
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                            | [`clear`](#class_streampeergzip_method_clear) ( )                                                                                                                      |
 | [Error](#enum_@globalscope_error) | [`finish`](#class_streampeergzip_method_finish) ( )                                                                                                                    |
 | [Error](#enum_@globalscope_error) | [`start_compression`](#class_streampeergzip_method_start_compression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 )     |

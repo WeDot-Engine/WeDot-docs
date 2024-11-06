@@ -64,6 +64,8 @@ You can retrieve the available [`EditorDebuggerSession`](class_editordebuggerses
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                    | [`_breakpoint_set_in_tree`](#class_editordebuggerplugin_private_method__breakpoint_set_in_tree) ( script: [`Script`](class_script.md), line: [`int`](class_int.md), enabled: [`bool`](class_bool.md) ) virtual[^virtual] |
 | `void`                                                    | [`_breakpoints_cleared_in_tree`](#class_editordebuggerplugin_private_method__breakpoints_cleared_in_tree) ( ) virtual[^virtual]                                                                                          |
 | [`bool`](class_bool.md)                                   | [`_capture`](#class_editordebuggerplugin_private_method__capture) ( message: [`String`](class_string.md), data: [`Array`](class_array.md), session_id: [`int`](class_int.md) ) virtual[^virtual]                         |

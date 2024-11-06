@@ -19,6 +19,8 @@ Note that the path is considered as relative to the moved nodes (children of [`P
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Curve3D`](class_curve3d.md) | [`curve`](#class_path3d_property_curve) |
 
 <!-- rst-class:: classref-section-separator -->

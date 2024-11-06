@@ -17,6 +17,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                      | [`array_layers`](#class_rdtextureformat_property_array_layers) | ``1`` |
 | [`int`](class_int.md)                                      | [`depth`](#class_rdtextureformat_property_depth)               | ``1`` |
 | [DataFormat](#enum_renderingdevice_dataformat)             | [`format`](#class_rdtextureformat_property_format)             | ``8`` |
@@ -29,6 +31,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`add_shareable_format`](#class_rdtextureformat_method_add_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) )       |
 | `void` | [`remove_shareable_format`](#class_rdtextureformat_method_remove_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) ) |
 

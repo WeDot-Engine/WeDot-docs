@@ -19,6 +19,8 @@ This node allows you to create a cylinder (or cone) for use with the CSG system.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`cone`](#class_csgcylinder3d_property_cone)                 | ``false`` |
 | [`float`](class_float.md)       | [`height`](#class_csgcylinder3d_property_height)             | ``2.0``   |
 | [`Material`](class_material.md) | [`material`](#class_csgcylinder3d_property_material)         |           |

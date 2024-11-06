@@ -19,12 +19,16 @@ The **VisualInstance3D** is used to connect a resource to a visual representatio
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`layers`](#class_visualinstance3d_property_layers)                                   | ``1``   |
 | [`float`](class_float.md) | [`sorting_offset`](#class_visualinstance3d_property_sorting_offset)                   | ``0.0`` |
 | [`bool`](class_bool.md)   | [`sorting_use_aabb_center`](#class_visualinstance3d_property_sorting_use_aabb_center) |         |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`AABB`](class_aabb.md) | [`_get_aabb`](#class_visualinstance3d_private_method__get_aabb) ( ) virtual[^virtual] const[^const]                                                   |
 | [`AABB`](class_aabb.md) | [`get_aabb`](#class_visualinstance3d_method_get_aabb) ( ) const[^const]                                                                               |
 | [`RID`](class_rid.md)   | [`get_base`](#class_visualinstance3d_method_get_base) ( ) const[^const]                                                                               |

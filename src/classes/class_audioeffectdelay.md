@@ -19,6 +19,8 @@ Plays input signal back after a period of time. The delayed signal may be played
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`dry`](#class_audioeffectdelay_property_dry)                             | ``1.0``     |
 | [`bool`](class_bool.md)   | [`feedback_active`](#class_audioeffectdelay_property_feedback_active)     | ``false``   |
 | [`float`](class_float.md) | [`feedback_delay_ms`](#class_audioeffectdelay_property_feedback_delay_ms) | ``340.0``   |

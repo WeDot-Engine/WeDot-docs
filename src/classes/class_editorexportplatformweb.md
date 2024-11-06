@@ -19,6 +19,8 @@ The Web exporter customizes how a web build is handled. In the editor's "Export"
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`custom_template/debug`](#class_editorexportplatformweb_property_custom_template/debug)                                                                         |
 | [`String`](class_string.md) | [`custom_template/release`](#class_editorexportplatformweb_property_custom_template/release)                                                                     |
 | [`int`](class_int.md)       | [`html/canvas_resize_policy`](#class_editorexportplatformweb_property_html/canvas_resize_policy)                                                                 |

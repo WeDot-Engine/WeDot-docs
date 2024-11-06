@@ -17,6 +17,8 @@ A horizontal menu bar that creates a [`MenuButton`](class_menubutton.md) for eac
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                      | [`flat`](#class_menubar_property_flat)                             | ``false`` |
 | [`String`](class_string.md)                  | [`language`](#class_menubar_property_language)                     | ``""``    |
 | [`bool`](class_bool.md)                      | [`prefer_global_menu`](#class_menubar_property_prefer_global_menu) | ``true``  |
@@ -26,6 +28,8 @@ A horizontal menu bar that creates a [`MenuButton`](class_menubutton.md) for eac
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`get_menu_count`](#class_menubar_method_get_menu_count) ( ) const[^const]                                                         |
 | [`PopupMenu`](class_popupmenu.md) | [`get_menu_popup`](#class_menubar_method_get_menu_popup) ( menu: [`int`](class_int.md) ) const[^const]                             |
 | [`String`](class_string.md)       | [`get_menu_title`](#class_menubar_method_get_menu_title) ( menu: [`int`](class_int.md) ) const[^const]                             |
@@ -41,6 +45,8 @@ A horizontal menu bar that creates a [`MenuButton`](class_menubutton.md) for eac
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)       | [`font_color`](#class_menubar_theme_color_font_color)                             | ``Color(0.875, 0.875, 0.875, 1)``   |
 | [`Color`](class_color.md)       | [`font_disabled_color`](#class_menubar_theme_color_font_disabled_color)           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
 | [`Color`](class_color.md)       | [`font_focus_color`](#class_menubar_theme_color_font_focus_color)                 | ``Color(0.95, 0.95, 0.95, 1)``      |

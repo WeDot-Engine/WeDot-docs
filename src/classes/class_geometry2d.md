@@ -17,6 +17,8 @@ Provides a set of helper functions to create geometric shapes, compute intersect
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`clip_polygons`](#class_geometry2d_method_clip_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                               |
 | [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`clip_polyline_with_polygon`](#class_geometry2d_method_clip_polyline_with_polygon) ( polyline: [`PackedVector2Array`](class_packedvector2array.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                        |
 | [`PackedVector2Array`](class_packedvector2array.md)                         | [`convex_hull`](#class_geometry2d_method_convex_hull) ( points: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                                      |

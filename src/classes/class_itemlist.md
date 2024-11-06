@@ -25,6 +25,8 @@ All `set_*` methods allow negative item indices, i.e. `-1` to access the last it
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`allow_reselect`](#class_itemlist_property_allow_reselect)               | ``false``                                                               |
 | [`bool`](class_bool.md)                             | [`allow_rmb_select`](#class_itemlist_property_allow_rmb_select)           | ``false``                                                               |
 | [`bool`](class_bool.md)                             | [`allow_search`](#class_itemlist_property_allow_search)                   | ``true``                                                                |
@@ -44,6 +46,8 @@ All `set_*` methods allow negative item indices, i.e. `-1` to access the last it
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                           | [`add_icon_item`](#class_itemlist_method_add_icon_item) ( icon: [`Texture2D`](class_texture2d.md), selectable: [`bool`](class_bool.md) = true )                                 |
 | [`int`](class_int.md)                           | [`add_item`](#class_itemlist_method_add_item) ( text: [`String`](class_string.md), icon: [`Texture2D`](class_texture2d.md) = null, selectable: [`bool`](class_bool.md) = true ) |
 | `void`                                          | [`clear`](#class_itemlist_method_clear) ( )                                                                                                                                     |
@@ -92,6 +96,8 @@ All `set_*` methods allow negative item indices, i.e. `-1` to access the last it
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)       | [`font_color`](#class_itemlist_theme_color_font_color)                   | ``Color(0.65, 0.65, 0.65, 1)`` |
 | [`Color`](class_color.md)       | [`font_hovered_color`](#class_itemlist_theme_color_font_hovered_color)   | ``Color(0.95, 0.95, 0.95, 1)`` |
 | [`Color`](class_color.md)       | [`font_outline_color`](#class_itemlist_theme_color_font_outline_color)   | ``Color(0, 0, 0, 1)``          |

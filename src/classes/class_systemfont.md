@@ -25,6 +25,8 @@ You can create [`FontVariation`](class_fontvariation.md) of the system font for 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`allow_system_fallback`](#class_systemfont_property_allow_system_fallback)                           | ``true``                |
 | [FontAntialiasing](#enum_textserver_fontantialiasing)       | [`antialiasing`](#class_systemfont_property_antialiasing)                                             | ``1``                   |
 | [`bool`](class_bool.md)                                     | [`disable_embedded_bitmaps`](#class_systemfont_property_disable_embedded_bitmaps)                     | ``true``                |

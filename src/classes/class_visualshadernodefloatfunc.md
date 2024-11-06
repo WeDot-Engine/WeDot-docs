@@ -17,6 +17,8 @@ Accept a floating-point scalar (`x`) to the input port and transform it accordin
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Function](#enum_visualshadernodefloatfunc_function) | [`function`](#class_visualshadernodefloatfunc_property_function) | ``13`` |
 
 <!-- rst-class:: classref-section-separator -->

@@ -19,6 +19,8 @@ Most custom data stored in GLTF does not need accessors, only buffer views (see 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [GLTFAccessorType](#enum_gltfaccessor_gltfaccessortype) | [`accessor_type`](#class_gltfaccessor_property_accessor_type)                                 | ``0``                    |
 | [`int`](class_int.md)                                   | [`buffer_view`](#class_gltfaccessor_property_buffer_view)                                     | ``-1``                   |
 | [`int`](class_int.md)                                   | [`byte_offset`](#class_gltfaccessor_property_byte_offset)                                     | ``0``                    |

@@ -17,6 +17,8 @@ Framebuffer cache manager for Rendering Device based renderers. Provides a way t
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md) | [`get_cache_multipass`](#class_framebuffercacherd_method_get_cache_multipass) ( textures: [Array](class_array.md) [`RID`](class_rid.md), passes: [Array](class_array.md) [`RDFramebufferPass`](class_rdframebufferpass.md), views: [`int`](class_int.md) ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->

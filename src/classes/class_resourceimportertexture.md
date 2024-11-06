@@ -17,6 +17,8 @@ This importer imports [`CompressedTexture2D`](class_compressedtexture2d.md) reso
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)       | [`compress/channel_pack`](#class_resourceimportertexture_property_compress/channel_pack)                                     | ``0``     |
 | [`int`](class_int.md)       | [`compress/hdr_compression`](#class_resourceimportertexture_property_compress/hdr_compression)                               | ``1``     |
 | [`bool`](class_bool.md)     | [`compress/high_quality`](#class_resourceimportertexture_property_compress/high_quality)                                     | ``false`` |

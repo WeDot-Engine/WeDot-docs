@@ -19,6 +19,8 @@ Camera node, displays from a point of view.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`CameraAttributes`](class_cameraattributes.md)   | [`attributes`](#class_camera3d_property_attributes)             |                   |
 | [`Compositor`](class_compositor.md)               | [`compositor`](#class_camera3d_property_compositor)             |                   |
 | [`int`](class_int.md)                             | [`cull_mask`](#class_camera3d_property_cull_mask)               | ``1048575``       |
@@ -37,6 +39,8 @@ Camera node, displays from a point of view.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`clear_current`](#class_camera3d_method_clear_current) ( enable_next: [`bool`](class_bool.md) = true )                                                                                             |
 | [`Projection`](class_projection.md)               | [`get_camera_projection`](#class_camera3d_method_get_camera_projection) ( ) const[^const]                                                                                                           |
 | [`RID`](class_rid.md)                             | [`get_camera_rid`](#class_camera3d_method_get_camera_rid) ( ) const[^const]                                                                                                                         |

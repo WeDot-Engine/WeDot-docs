@@ -17,6 +17,8 @@ Represents a camera as defined by the base GLTF spec.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`depth_far`](#class_gltfcamera_property_depth_far)     | ``4000.0`` |
 | [`float`](class_float.md) | [`depth_near`](#class_gltfcamera_property_depth_near)   | ``0.05``   |
 | [`float`](class_float.md) | [`fov`](#class_gltfcamera_property_fov)                 | ``1.309``  |
@@ -25,6 +27,8 @@ Represents a camera as defined by the base GLTF spec.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`GLTFCamera`](class_gltfcamera.md) | [`from_dictionary`](#class_gltfcamera_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
 | [`GLTFCamera`](class_gltfcamera.md) | [`from_node`](#class_gltfcamera_method_from_node) ( camera_node: [`Camera3D`](class_camera3d.md) ) static[^static]                |
 | [`Dictionary`](class_dictionary.md) | [`to_dictionary`](#class_gltfcamera_method_to_dictionary) ( ) const[^const]                                                       |

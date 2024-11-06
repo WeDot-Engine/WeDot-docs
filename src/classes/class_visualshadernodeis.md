@@ -17,6 +17,8 @@ Returns the boolean result of the comparison between `INF` or `NaN` and a scalar
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Function](#enum_visualshadernodeis_function) | [`function`](#class_visualshadernodeis_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

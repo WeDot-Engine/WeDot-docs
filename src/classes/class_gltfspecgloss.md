@@ -17,6 +17,8 @@ KHR_materials_pbrSpecularGlossiness is an archived GLTF extension. This means th
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md) | [`diffuse_factor`](#class_gltfspecgloss_property_diffuse_factor)   | ``Color(1, 1, 1, 1)`` |
 | [`Image`](class_image.md) | [`diffuse_img`](#class_gltfspecgloss_property_diffuse_img)         |                       |
 | [`float`](class_float.md) | [`gloss_factor`](#class_gltfspecgloss_property_gloss_factor)       | ``1.0``               |

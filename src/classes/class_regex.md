@@ -86,6 +86,8 @@ If you need to process multiple results, [`search_all`](#class_regex_method_sear
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`clear`](#class_regex_method_clear) ( )                                                                                                                                                                                                    |
 | [Error](#enum_@globalscope_error)                           | [`compile`](#class_regex_method_compile) ( pattern: [`String`](class_string.md) )                                                                                                                                                           |
 | [`RegEx`](class_regex.md)                                   | [`create_from_string`](#class_regex_method_create_from_string) ( pattern: [`String`](class_string.md) ) static[^static]                                                                                                                     |

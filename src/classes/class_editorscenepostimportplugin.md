@@ -17,6 +17,8 @@ This plugin type exists to modify the process of importing scenes, allowing to c
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                        | [`_get_import_options`](#class_editorscenepostimportplugin_private_method__get_import_options) ( path: [`String`](class_string.md) ) virtual[^virtual]                                                                                                                                                                                                                                            |
 | `void`                        | [`_get_internal_import_options`](#class_editorscenepostimportplugin_private_method__get_internal_import_options) ( category: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                                                                                                            |
 | [`Variant`](class_variant.md) | [`_get_internal_option_update_view_required`](#class_editorscenepostimportplugin_private_method__get_internal_option_update_view_required) ( category: [`int`](class_int.md), option: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                                                               |

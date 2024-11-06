@@ -33,6 +33,8 @@ Physics objects in **PhysicsServer3D** may be created and manipulated independen
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                            | [`area_add_shape`](#class_physicsserver3d_method_area_add_shape) ( area: [`RID`](class_rid.md), shape: [`RID`](class_rid.md), transform: [`Transform3D`](class_transform3d.md) = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), disabled: [`bool`](class_bool.md) = false )             |
 | `void`                                                            | [`area_attach_object_instance_id`](#class_physicsserver3d_method_area_attach_object_instance_id) ( area: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                               |
 | `void`                                                            | [`area_clear_shapes`](#class_physicsserver3d_method_area_clear_shapes) ( area: [`RID`](class_rid.md) )                                                                                                                                                                                    |

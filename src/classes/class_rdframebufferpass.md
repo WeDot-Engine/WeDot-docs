@@ -21,6 +21,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedInt32Array`](class_packedint32array.md) | [`color_attachments`](#class_rdframebufferpass_property_color_attachments)       | ``PackedInt32Array()`` |
 | [`int`](class_int.md)                           | [`depth_attachment`](#class_rdframebufferpass_property_depth_attachment)         | ``-1``                 |
 | [`PackedInt32Array`](class_packedint32array.md) | [`input_attachments`](#class_rdframebufferpass_property_input_attachments)       | ``PackedInt32Array()`` |

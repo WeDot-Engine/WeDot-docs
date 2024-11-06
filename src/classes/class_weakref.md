@@ -17,6 +17,8 @@ A weakref can hold a [`RefCounted`](class_refcounted.md) without contributing to
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md) | [`get_ref`](#class_weakref_method_get_ref) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

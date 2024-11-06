@@ -19,6 +19,8 @@ Playback control is done via the [`AudioStreamPlaybackPolyphonic`](class_audiost
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`polyphony`](#class_audiostreampolyphonic_property_polyphony) | ``32`` |
 
 <!-- rst-class:: classref-section-separator -->

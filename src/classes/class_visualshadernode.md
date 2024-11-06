@@ -19,11 +19,15 @@ Visual shader graphs consist of various nodes. Each node in the graph is a separ
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`linked_parent_graph_frame`](#class_visualshadernode_property_linked_parent_graph_frame) | ``-1`` |
 | [`int`](class_int.md) | [`output_port_for_preview`](#class_visualshadernode_property_output_port_for_preview)     | ``-1`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                        | [`clear_default_input_values`](#class_visualshadernode_method_clear_default_input_values) ( )                                                                                                                         |
 | [`int`](class_int.md)         | [`get_default_input_port`](#class_visualshadernode_method_get_default_input_port) ( type: [PortType](#enum_visualshadernode_porttype) ) const[^const]                                                                 |
 | [`Array`](class_array.md)     | [`get_default_input_values`](#class_visualshadernode_method_get_default_input_values) ( ) const[^const]                                                                                                               |

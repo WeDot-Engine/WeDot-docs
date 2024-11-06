@@ -140,6 +140,8 @@ To use **EditorImportPlugin**, register it using the [`EditorPlugin.add_import_p
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`_can_import_threaded`](#class_editorimportplugin_private_method__can_import_threaded) ( ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                              |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_get_import_options`](#class_editorimportplugin_private_method__get_import_options) ( path: [`String`](class_string.md), preset_index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                                                                                                                                                         |
 | [`int`](class_int.md)                                       | [`_get_import_order`](#class_editorimportplugin_private_method__get_import_order) ( ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                    |

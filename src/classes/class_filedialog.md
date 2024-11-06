@@ -17,6 +17,8 @@ A dialog for selecting files or directories in the filesystem.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Access](#enum_filedialog_access)                 | [`access`](#class_filedialog_property_access)                             | ``0``                                                                                  |
 | [`String`](class_string.md)                       | [`current_dir`](#class_filedialog_property_current_dir)                   |                                                                                        |
 | [`String`](class_string.md)                       | [`current_file`](#class_filedialog_property_current_file)                 |                                                                                        |
@@ -33,6 +35,8 @@ A dialog for selecting files or directories in the filesystem.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_filter`](#class_filedialog_method_add_filter) ( filter: [`String`](class_string.md), description: [`String`](class_string.md) = "" )                                                       |
 | `void`                                            | [`add_option`](#class_filedialog_method_add_option) ( name: [`String`](class_string.md), values: [`PackedStringArray`](class_packedstringarray.md), default_value_index: [`int`](class_int.md) ) |
 | `void`                                            | [`clear_filters`](#class_filedialog_method_clear_filters) ( )                                                                                                                                    |
@@ -50,6 +54,8 @@ A dialog for selecting files or directories in the filesystem.
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`file_disabled_color`](#class_filedialog_theme_color_file_disabled_color) | ``Color(1, 1, 1, 0.25)`` |
 | [`Color`](class_color.md)         | [`file_icon_color`](#class_filedialog_theme_color_file_icon_color)         | ``Color(1, 1, 1, 1)``    |
 | [`Color`](class_color.md)         | [`folder_icon_color`](#class_filedialog_theme_color_folder_icon_color)     | ``Color(1, 1, 1, 1)``    |

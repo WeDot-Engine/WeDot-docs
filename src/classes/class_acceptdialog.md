@@ -19,6 +19,8 @@ The default use of **AcceptDialog** is to allow it to only be accepted or closed
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`dialog_autowrap`](#class_acceptdialog_property_dialog_autowrap)               | ``false``                                                                  |
 | [`bool`](class_bool.md)     | [`dialog_close_on_escape`](#class_acceptdialog_property_dialog_close_on_escape) | ``true``                                                                   |
 | [`bool`](class_bool.md)     | [`dialog_hide_on_ok`](#class_acceptdialog_property_dialog_hide_on_ok)           | ``true``                                                                   |
@@ -33,6 +35,8 @@ The default use of **AcceptDialog** is to allow it to only be accepted or closed
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Button`](class_button.md) | [`add_button`](#class_acceptdialog_method_add_button) ( text: [`String`](class_string.md), right: [`bool`](class_bool.md) = false, action: [`String`](class_string.md) = "" ) |
 | [`Button`](class_button.md) | [`add_cancel_button`](#class_acceptdialog_method_add_cancel_button) ( name: [`String`](class_string.md) )                                                                     |
 | [`Label`](class_label.md)   | [`get_label`](#class_acceptdialog_method_get_label) ( )                                                                                                                       |
@@ -42,6 +46,8 @@ The default use of **AcceptDialog** is to allow it to only be accepted or closed
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)           | [`buttons_min_height`](#class_acceptdialog_theme_constant_buttons_min_height) | ``0``  |
 | [`int`](class_int.md)           | [`buttons_min_width`](#class_acceptdialog_theme_constant_buttons_min_width)   | ``0``  |
 | [`int`](class_int.md)           | [`buttons_separation`](#class_acceptdialog_theme_constant_buttons_separation) | ``10`` |

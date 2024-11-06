@@ -17,6 +17,8 @@ Provides access to metadata stored for every available class.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`can_instantiate`](#class_classdb_method_can_instantiate) ( class: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                               |
 | [`bool`](class_bool.md)                                     | [`class_exists`](#class_classdb_method_class_exists) ( class: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                     |
 | [`PackedStringArray`](class_packedstringarray.md)           | [`class_get_enum_constants`](#class_classdb_method_class_get_enum_constants) ( class: [`StringName`](class_stringname.md), enum: [`StringName`](class_stringname.md), no_inheritance: [`bool`](class_bool.md) = false ) const[^const]                 |

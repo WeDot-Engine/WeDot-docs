@@ -25,10 +25,14 @@ Being just a collection of interconnected triangles, **ConcavePolygonShape3D** i
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`backface_collision`](#class_concavepolygonshape3d_property_backface_collision) | ``false`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedVector3Array`](class_packedvector3array.md) | [`get_faces`](#class_concavepolygonshape3d_method_get_faces) ( ) const[^const]                                              |
 | `void`                                              | [`set_faces`](#class_concavepolygonshape3d_method_set_faces) ( faces: [`PackedVector3Array`](class_packedvector3array.md) ) |
 

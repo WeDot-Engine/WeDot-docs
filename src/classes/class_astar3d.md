@@ -61,6 +61,8 @@ If the default [`_estimate_cost`](#class_astar3d_private_method__estimate_cost) 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                           | [`_compute_cost`](#class_astar3d_private_method__compute_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                               |
 | [`float`](class_float.md)                           | [`_estimate_cost`](#class_astar3d_private_method__estimate_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                             |
 | `void`                                              | [`add_point`](#class_astar3d_method_add_point) ( id: [`int`](class_int.md), position: [`Vector3`](class_vector3.md), weight_scale: [`float`](class_float.md) = 1.0 )                          |

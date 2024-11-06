@@ -17,6 +17,8 @@ Applies [`operator`](#class_visualshadernodeintop_property_operator) to two inte
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Operator](#enum_visualshadernodeintop_operator) | [`operator`](#class_visualshadernodeintop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

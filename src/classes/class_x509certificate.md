@@ -19,6 +19,8 @@ They can be used as the server certificate in [`StreamPeerTLS.accept_stream`](#c
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error) | [`load`](#class_x509certificate_method_load) ( path: [`String`](class_string.md) )                           |
 | [Error](#enum_@globalscope_error) | [`load_from_string`](#class_x509certificate_method_load_from_string) ( string: [`String`](class_string.md) ) |
 | [Error](#enum_@globalscope_error) | [`save`](#class_x509certificate_method_save) ( path: [`String`](class_string.md) )                           |

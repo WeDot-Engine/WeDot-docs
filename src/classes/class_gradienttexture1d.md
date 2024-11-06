@@ -17,6 +17,8 @@ A 1D texture that obtains colors from a [`Gradient`](class_gradient.md) to fill 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Gradient`](class_gradient.md) | [`gradient`](#class_gradienttexture1d_property_gradient) |                                                                                      |
 | [`bool`](class_bool.md)         | resource_local_to_scene                                  | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
 | [`bool`](class_bool.md)         | [`use_hdr`](#class_gradienttexture1d_property_use_hdr)   | ``false``                                                                            |

@@ -19,6 +19,8 @@ If the [`Range.step`](#class_range_property_step) value is `1`, the **EditorSpin
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)              | [`flat`](#class_editorspinslider_property_flat)               | ``false``                                                                  |
 | [FocusMode](#enum_control_focusmode) | focus_mode                                                    | ``2`` (overrides [`Control`](#class_control_property_focus_mode))          |
 | [`bool`](class_bool.md)              | [`hide_slider`](#class_editorspinslider_property_hide_slider) | ``false``                                                                  |

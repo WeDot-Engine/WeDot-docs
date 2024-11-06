@@ -17,6 +17,8 @@ Translated to `texture(cubemap, vec3)` in the shader language. Returns a color v
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Cubemap`](class_cubemap.md)                            | [`cube_map`](#class_visualshadernodecubemap_property_cube_map)         |       |
 | [Source](#enum_visualshadernodecubemap_source)           | [`source`](#class_visualshadernodecubemap_property_source)             | ``0`` |
 | [TextureType](#enum_visualshadernodecubemap_texturetype) | [`texture_type`](#class_visualshadernodecubemap_property_texture_type) | ``0`` |

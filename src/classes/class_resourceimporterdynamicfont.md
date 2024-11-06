@@ -21,6 +21,8 @@ See also [`ResourceImporterBMFont`](class_resourceimporterbmfont.md) and [`Resou
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`allow_system_fallback`](#class_resourceimporterdynamicfont_property_allow_system_fallback)                           | ``true``  |
 | [`int`](class_int.md)               | [`antialiasing`](#class_resourceimporterdynamicfont_property_antialiasing)                                             | ``1``     |
 | [`bool`](class_bool.md)             | [`compress`](#class_resourceimporterdynamicfont_property_compress)                                                     | ``true``  |

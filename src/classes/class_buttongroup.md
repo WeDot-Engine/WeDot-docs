@@ -19,11 +19,15 @@ Every member of a **ButtonGroup** should have [`BaseButton.toggle_mode`](#class_
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`allow_unpress`](#class_buttongroup_property_allow_unpress) | ``false``                                                                           |
 | [`bool`](class_bool.md) | resource_local_to_scene                                      | ``true`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`BaseButton`](class_basebutton.md) | [`get_buttons`](#class_buttongroup_method_get_buttons) ( )               |
 | [`BaseButton`](class_basebutton.md)                         | [`get_pressed_button`](#class_buttongroup_method_get_pressed_button) ( ) |
 

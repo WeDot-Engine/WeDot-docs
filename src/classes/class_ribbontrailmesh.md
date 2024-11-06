@@ -19,6 +19,8 @@ This primitive mesh is usually used for particle trails.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Curve`](class_curve.md)            | [`curve`](#class_ribbontrailmesh_property_curve)                       |         |
 | [`float`](class_float.md)            | [`section_length`](#class_ribbontrailmesh_property_section_length)     | ``0.2`` |
 | [`int`](class_int.md)                | [`section_segments`](#class_ribbontrailmesh_property_section_segments) | ``3``   |

@@ -21,6 +21,8 @@ For the entries related to GDScript which can be accessed in any script see [`@G
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`AudioServer`](class_audioserver.md)                         | [`AudioServer`](#class_@globalscope_property_audioserver)                         |
 | [`CameraServer`](class_cameraserver.md)                       | [`CameraServer`](#class_@globalscope_property_cameraserver)                       |
 | [`ClassDB`](class_classdb.md)                                 | [`ClassDB`](#class_@globalscope_property_classdb)                                 |
@@ -61,6 +63,8 @@ For the entries related to GDScript which can be accessed in any script see [`@G
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md)                   | [`abs`](#class_@globalscope_method_abs) ( x: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                                 |
 | [`float`](class_float.md)                       | [`absf`](#class_@globalscope_method_absf) ( x: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                   |
 | [`int`](class_int.md)                           | [`absi`](#class_@globalscope_method_absi) ( x: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                       |

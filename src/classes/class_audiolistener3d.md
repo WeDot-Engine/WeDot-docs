@@ -17,6 +17,8 @@ Once added to the scene tree and enabled using [`make_current`](#class_audiolist
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                | [`clear_current`](#class_audiolistener3d_method_clear_current) ( )                                 |
 | [`Transform3D`](class_transform3d.md) | [`get_listener_transform`](#class_audiolistener3d_method_get_listener_transform) ( ) const[^const] |
 | [`bool`](class_bool.md)               | [`is_current`](#class_audiolistener3d_method_is_current) ( ) const[^const]                         |

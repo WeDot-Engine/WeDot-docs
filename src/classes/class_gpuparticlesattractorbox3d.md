@@ -21,6 +21,8 @@ Particle attractors work in real-time and can be moved, rotated and scaled durin
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md) | [`size`](#class_gpuparticlesattractorbox3d_property_size) | ``Vector3(2, 2, 2)`` |
 
 <!-- rst-class:: classref-section-separator -->

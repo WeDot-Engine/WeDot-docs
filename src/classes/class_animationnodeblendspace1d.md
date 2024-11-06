@@ -21,6 +21,8 @@ You can set the extents of the axis with [`min_space`](#class_animationnodeblend
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BlendMode](#enum_animationnodeblendspace1d_blendmode) | [`blend_mode`](#class_animationnodeblendspace1d_property_blend_mode)   | ``0``       |
 | [`float`](class_float.md)                              | [`max_space`](#class_animationnodeblendspace1d_property_max_space)     | ``1.0``     |
 | [`float`](class_float.md)                              | [`min_space`](#class_animationnodeblendspace1d_property_min_space)     | ``-1.0``    |
@@ -30,6 +32,8 @@ You can set the extents of the axis with [`min_space`](#class_animationnodeblend
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_blend_point`](#class_animationnodeblendspace1d_method_add_blend_point) ( node: [`AnimationRootNode`](class_animationrootnode.md), pos: [`float`](class_float.md), at_index: [`int`](class_int.md) = -1 ) |
 | [`int`](class_int.md)                             | [`get_blend_point_count`](#class_animationnodeblendspace1d_method_get_blend_point_count) ( ) const[^const]                                                                                                     |
 | [`AnimationRootNode`](class_animationrootnode.md) | [`get_blend_point_node`](#class_animationnodeblendspace1d_method_get_blend_point_node) ( point: [`int`](class_int.md) ) const[^const]                                                                          |

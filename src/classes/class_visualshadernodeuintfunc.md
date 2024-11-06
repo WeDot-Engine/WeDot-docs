@@ -17,6 +17,8 @@ Accept an unsigned integer scalar (`x`) to the input port and transform it accor
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Function](#enum_visualshadernodeuintfunc_function) | [`function`](#class_visualshadernodeuintfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

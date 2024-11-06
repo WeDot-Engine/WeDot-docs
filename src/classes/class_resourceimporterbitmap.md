@@ -17,6 +17,8 @@ Imports a [`BitMap`](class_bitmap.md) resource (2D array of boolean values).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`create_from`](#class_resourceimporterbitmap_property_create_from) | ``0``   |
 | [`float`](class_float.md) | [`threshold`](#class_resourceimporterbitmap_property_threshold)     | ``0.5`` |
 

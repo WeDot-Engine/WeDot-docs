@@ -21,6 +21,8 @@ This is the CSG base class that provides CSG operation support to the various CS
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                 | [`calculate_tangents`](#class_csgshape3d_property_calculate_tangents) | ``true``  |
 | [`int`](class_int.md)                   | [`collision_layer`](#class_csgshape3d_property_collision_layer)       | ``1``     |
 | [`int`](class_int.md)                   | [`collision_mask`](#class_csgshape3d_property_collision_mask)         | ``1``     |
@@ -31,6 +33,8 @@ This is the CSG base class that provides CSG operation support to the various CS
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`get_collision_layer_value`](#class_csgshape3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
 | [`bool`](class_bool.md)   | [`get_collision_mask_value`](#class_csgshape3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
 | [`Array`](class_array.md) | [`get_meshes`](#class_csgshape3d_method_get_meshes) ( ) const[^const]                                                                                     |

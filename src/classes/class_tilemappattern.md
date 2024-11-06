@@ -19,6 +19,8 @@ A pattern always start at the `(0,0)` coordinates and cannot have cells with neg
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                   | [`get_cell_alternative_tile`](#class_tilemappattern_method_get_cell_alternative_tile) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                        |
 | [`Vector2i`](class_vector2i.md)                         | [`get_cell_atlas_coords`](#class_tilemappattern_method_get_cell_atlas_coords) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                |
 | [`int`](class_int.md)                                   | [`get_cell_source_id`](#class_tilemappattern_method_get_cell_source_id) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                      |

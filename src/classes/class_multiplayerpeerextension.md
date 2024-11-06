@@ -17,6 +17,8 @@ This class is designed to be inherited from a GDExtension plugin to implement cu
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                     | [`_close`](#class_multiplayerpeerextension_private_method__close) ( ) virtual[^virtual]                                                                                     |
 | `void`                                                     | [`_disconnect_peer`](#class_multiplayerpeerextension_private_method__disconnect_peer) ( p_peer: [`int`](class_int.md), p_force: [`bool`](class_bool.md) ) virtual[^virtual] |
 | [`int`](class_int.md)                                      | [`_get_available_packet_count`](#class_multiplayerpeerextension_private_method__get_available_packet_count) ( ) virtual[^virtual] const[^const]                             |

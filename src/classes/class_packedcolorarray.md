@@ -21,12 +21,16 @@ An array specifically designed to hold [`Color`](class_color.md). Packs data tig
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](#class_packedcolorarray_constructor_packedcolorarray) ( )                                                       |
 | [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](#class_packedcolorarray_constructor_packedcolorarray) ( from: [`PackedColorArray`](class_packedcolorarray.md) ) |
 | [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](#class_packedcolorarray_constructor_packedcolorarray) ( from: [`Array`](class_array.md) )                       |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                         | [`append`](#class_packedcolorarray_method_append) ( value: [`Color`](class_color.md) )                                                  |
 | `void`                                          | [`append_array`](#class_packedcolorarray_method_append_array) ( array: [`PackedColorArray`](class_packedcolorarray.md) )                |
 | [`int`](class_int.md)                           | [`bsearch`](#class_packedcolorarray_method_bsearch) ( value: [`Color`](class_color.md), before: [`bool`](class_bool.md) = true )        |
@@ -51,6 +55,8 @@ An array specifically designed to hold [`Color`](class_color.md). Packs data tig
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                         | [`operator !=`](class_PackedColorArray.md#operator_neq_PackedColorArray) ( right: [`PackedColorArray`](class_packedcolorarray.md) ) |
 | [`PackedColorArray`](class_packedcolorarray.md) | [`operator +`](class_PackedColorArray.md#operator_sum_PackedColorArray) ( right: [`PackedColorArray`](class_packedcolorarray.md) )  |
 | [`bool`](class_bool.md)                         | [`operator ==`](class_PackedColorArray.md#operator_eq_PackedColorArray) ( right: [`PackedColorArray`](class_packedcolorarray.md) )  |

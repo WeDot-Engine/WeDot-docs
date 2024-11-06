@@ -17,6 +17,8 @@ A vertical slider, used to adjust a value by moving a grabber along a vertical a
 
 ## 属性
 
+|||
+|:-:|:--|
 | [SizeFlags](#enum_control_sizeflags) | size_flags_horizontal | ``0`` (overrides [`Control`](#class_control_property_size_flags_horizontal)) |
 | [SizeFlags](#enum_control_sizeflags) | size_flags_vertical   | ``1`` (overrides [`Control`](#class_control_property_size_flags_vertical))   |
 

@@ -73,12 +73,16 @@ See also [`ImmediateMesh`](class_immediatemesh.md), [`MeshDataTool`](class_meshd
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BlendShapeMode](#enum_mesh_blendshapemode) | [`blend_shape_mode`](#class_arraymesh_property_blend_shape_mode) | ``1``                      |
 | [`AABB`](class_aabb.md)                     | [`custom_aabb`](#class_arraymesh_property_custom_aabb)           | ``AABB(0, 0, 0, 0, 0, 0)`` |
 | [`ArrayMesh`](class_arraymesh.md)           | [`shadow_mesh`](#class_arraymesh_property_shadow_mesh)           |                            |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                    | [`add_blend_shape`](#class_arraymesh_method_add_blend_shape) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                       |
 | `void`                                    | [`add_surface_from_arrays`](#class_arraymesh_method_add_surface_from_arrays) ( primitive: [PrimitiveType](#enum_mesh_primitivetype), arrays: [`Array`](class_array.md), blend_shapes: [Array](class_array.md) [`Array`](class_array.md) = [], lods: [`Dictionary`](class_dictionary.md) = {}, flags: [ArrayFormat](#enum_mesh_arrayformat) = 0 ) |
 | `void`                                    | [`clear_blend_shapes`](#class_arraymesh_method_clear_blend_shapes) ( )                                                                                                                                                                                                                                                                           |

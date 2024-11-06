@@ -19,6 +19,8 @@ A stream peer that handles TCP connections. This object can be used to connect t
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)    | [`bind`](#class_streampeertcp_method_bind) ( port: [`int`](class_int.md), host: [`String`](class_string.md) = "*" )                 |
 | [Error](#enum_@globalscope_error)    | [`connect_to_host`](#class_streampeertcp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) ) |
 | `void`                               | [`disconnect_from_host`](#class_streampeertcp_method_disconnect_from_host) ( )                                                      |

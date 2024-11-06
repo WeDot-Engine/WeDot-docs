@@ -17,6 +17,8 @@ Applies [`operator`](#class_visualshadernodetransformop_property_operator) to tw
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Operator](#enum_visualshadernodetransformop_operator) | [`operator`](#class_visualshadernodetransformop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

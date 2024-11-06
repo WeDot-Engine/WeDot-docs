@@ -21,6 +21,8 @@ Additional options (such as extracting individual meshes or materials to files) 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md) | [`_subresources`](#class_resourceimporterscene_property__subresources)                                         | ``{}``    |
 | [`float`](class_float.md)           | [`animation/fps`](#class_resourceimporterscene_property_animation/fps)                                         | ``30``    |
 | [`bool`](class_bool.md)             | [`animation/import`](#class_resourceimporterscene_property_animation/import)                                   | ``true``  |

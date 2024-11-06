@@ -25,6 +25,8 @@ Affine operations (rotate, scale, translate) happen in parent's local coordinate
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Basis`](class_basis.md)                         | [`basis`](#class_node3d_property_basis)                                     |                                                     |
 | [`Basis`](class_basis.md)                         | [`global_basis`](#class_node3d_property_global_basis)                       |                                                     |
 | [`Vector3`](class_vector3.md)                     | [`global_position`](#class_node3d_property_global_position)                 |                                                     |
@@ -45,6 +47,8 @@ Affine operations (rotate, scale, translate) happen in parent's local coordinate
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                        | [`add_gizmo`](#class_node3d_method_add_gizmo) ( gizmo: [`Node3DGizmo`](class_node3dgizmo.md) )                                                                                                                                                                   |
 | `void`                                                        | [`clear_gizmos`](#class_node3d_method_clear_gizmos) ( )                                                                                                                                                                                                          |
 | `void`                                                        | [`clear_subgizmo_selection`](#class_node3d_method_clear_subgizmo_selection) ( )                                                                                                                                                                                  |

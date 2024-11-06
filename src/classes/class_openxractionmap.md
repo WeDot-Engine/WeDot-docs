@@ -21,11 +21,15 @@ The action map therefore needs to be loaded at startup and can't be changed afte
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Array`](class_array.md) | [`action_sets`](#class_openxractionmap_property_action_sets)                   | ``[]`` |
 | [`Array`](class_array.md) | [`interaction_profiles`](#class_openxractionmap_property_interaction_profiles) | ``[]`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                          | [`add_action_set`](#class_openxractionmap_method_add_action_set) ( action_set: [`OpenXRActionSet`](class_openxractionset.md) )                                                    |
 | `void`                                                          | [`add_interaction_profile`](#class_openxractionmap_method_add_interaction_profile) ( interaction_profile: [`OpenXRInteractionProfile`](class_openxrinteractionprofile.md) )       |
 | `void`                                                          | [`create_default_action_sets`](#class_openxractionmap_method_create_default_action_sets) ( )                                                                                      |

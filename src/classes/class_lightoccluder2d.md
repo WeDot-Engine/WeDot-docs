@@ -17,6 +17,8 @@ Occludes light cast by a Light2D, casting shadows. The LightOccluder2D must be p
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`OccluderPolygon2D`](class_occluderpolygon2d.md) | [`occluder`](#class_lightoccluder2d_property_occluder)                       |          |
 | [`int`](class_int.md)                             | [`occluder_light_mask`](#class_lightoccluder2d_property_occluder_light_mask) | ``1``    |
 | [`bool`](class_bool.md)                           | [`sdf_collision`](#class_lightoccluder2d_property_sdf_collision)             | ``true`` |

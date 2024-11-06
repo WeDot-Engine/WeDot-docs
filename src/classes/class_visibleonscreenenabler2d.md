@@ -21,6 +21,8 @@ See [`VisibleOnScreenNotifier2D`](class_visibleonscreennotifier2d.md) if you onl
 
 ## 属性
 
+|||
+|:-:|:--|
 | [EnableMode](#enum_visibleonscreenenabler2d_enablemode) | [`enable_mode`](#class_visibleonscreenenabler2d_property_enable_mode)           | ``0``              |
 | [`NodePath`](class_nodepath.md)                         | [`enable_node_path`](#class_visibleonscreenenabler2d_property_enable_node_path) | ``NodePath("..")`` |
 

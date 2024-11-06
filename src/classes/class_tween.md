@@ -166,6 +166,8 @@ Some [`Tweener`](class_tweener.md) s use transitions and eases. The first accept
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Tween`](class_tween.md)                     | [`bind_node`](#class_tween_method_bind_node) ( node: [`Node`](class_node.md) )                                                                                                                                                                                                                                                                                 |
 | [`Tween`](class_tween.md)                     | [`chain`](#class_tween_method_chain) ( )                                                                                                                                                                                                                                                                                                                       |
 | [`bool`](class_bool.md)                       | [`custom_step`](#class_tween_method_custom_step) ( delta: [`float`](class_float.md) )                                                                                                                                                                                                                                                                          |

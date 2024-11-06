@@ -17,6 +17,8 @@ A control that provides a horizontal bar with tabs. Similar to [`TabContainer`](
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                           | [`clip_tabs`](#class_tabbar_property_clip_tabs)                                 | ``true``                                                          |
 | [`int`](class_int.md)                                             | [`current_tab`](#class_tabbar_property_current_tab)                             | ``-1``                                                            |
 | [`bool`](class_bool.md)                                           | [`deselect_enabled`](#class_tabbar_property_deselect_enabled)                   | ``false``                                                         |
@@ -33,6 +35,8 @@ A control that provides a horizontal bar with tabs. Similar to [`TabContainer`](
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                       | [`add_tab`](#class_tabbar_method_add_tab) ( title: [`String`](class_string.md) = "", icon: [`Texture2D`](class_texture2d.md) = null )                               |
 | `void`                                       | [`clear_tabs`](#class_tabbar_method_clear_tabs) ( )                                                                                                                 |
 | `void`                                       | [`ensure_tab_visible`](#class_tabbar_method_ensure_tab_visible) ( idx: [`int`](class_int.md) )                                                                      |
@@ -68,6 +72,8 @@ A control that provides a horizontal bar with tabs. Similar to [`TabContainer`](
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`drop_mark_color`](#class_tabbar_theme_color_drop_mark_color)             | ``Color(1, 1, 1, 1)``               |
 | [`Color`](class_color.md)         | [`font_disabled_color`](#class_tabbar_theme_color_font_disabled_color)     | ``Color(0.875, 0.875, 0.875, 0.5)`` |
 | [`Color`](class_color.md)         | [`font_hovered_color`](#class_tabbar_theme_color_font_hovered_color)       | ``Color(0.95, 0.95, 0.95, 1)``      |

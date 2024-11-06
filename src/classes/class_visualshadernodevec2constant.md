@@ -17,6 +17,8 @@ A constant [`Vector2`](class_vector2.md), which can be used as an input node.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`constant`](#class_visualshadernodevec2constant_property_constant) | ``Vector2(0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->

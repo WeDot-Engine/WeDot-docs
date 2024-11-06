@@ -19,6 +19,8 @@ CodeEdit is a specialized [`TextEdit`](class_textedit.md) designed for editing p
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`auto_brace_completion_enabled`](#class_codeedit_property_auto_brace_completion_enabled)                       | ``false``                                                               |
 | [`bool`](class_bool.md)                             | [`auto_brace_completion_highlight_matching`](#class_codeedit_property_auto_brace_completion_highlight_matching) | ``false``                                                               |
 | [`Dictionary`](class_dictionary.md)                 | [`auto_brace_completion_pairs`](#class_codeedit_property_auto_brace_completion_pairs)                           | ``{ "\"": "\"", "'": "'", "(": ")", "[": "]", "{": "}" }``              |
@@ -44,6 +46,8 @@ CodeEdit is a specialized [`TextEdit`](class_textedit.md) designed for editing p
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`_confirm_code_completion`](#class_codeedit_private_method__confirm_code_completion) ( replace: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                                                                                                                                                                                           |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_filter_code_completion_candidates`](#class_codeedit_private_method__filter_code_completion_candidates) ( candidates: [Array](class_array.md) [`Dictionary`](class_dictionary.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                                  |
 | `void`                                                      | [`_request_code_completion`](#class_codeedit_private_method__request_code_completion) ( force: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                                                                                                                                                                                             |
@@ -119,6 +123,8 @@ CodeEdit is a specialized [`TextEdit`](class_textedit.md) designed for editing p
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`bookmark_color`](#class_codeedit_theme_color_bookmark_color)                                   | ``Color(0.5, 0.64, 1, 0.8)``      |
 | [`Color`](class_color.md)         | [`brace_mismatch_color`](#class_codeedit_theme_color_brace_mismatch_color)                       | ``Color(1, 0.2, 0.2, 1)``         |
 | [`Color`](class_color.md)         | [`breakpoint_color`](#class_codeedit_theme_color_breakpoint_color)                               | ``Color(0.9, 0.29, 0.3, 1)``      |

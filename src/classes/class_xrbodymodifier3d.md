@@ -23,6 +23,8 @@ The body tracking position-data is scaled by [`Skeleton3D.motion_scale`](#class_
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md)             | [`body_tracker`](#class_xrbodymodifier3d_property_body_tracker) | ``&"/user/body_tracker"`` |
 | [BodyUpdate](#enum_xrbodymodifier3d_bodyupdate) | [`body_update`](#class_xrbodymodifier3d_property_body_update)   | ``7``                     |
 | [BoneUpdate](#enum_xrbodymodifier3d_boneupdate) | [`bone_update`](#class_xrbodymodifier3d_property_bone_update)   | ``0``                     |

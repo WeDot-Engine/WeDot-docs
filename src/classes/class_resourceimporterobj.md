@@ -19,6 +19,8 @@ See also [`ResourceImporterScene`](class_resourceimporterscene.md), which is use
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`force_disable_mesh_compression`](#class_resourceimporterobj_property_force_disable_mesh_compression) | ``false``            |
 | [`bool`](class_bool.md)       | [`generate_tangents`](#class_resourceimporterobj_property_generate_tangents)                           | ``true``             |
 | [`Vector3`](class_vector3.md) | [`offset_mesh`](#class_resourceimporterobj_property_offset_mesh)                                       | ``Vector3(0, 0, 0)`` |

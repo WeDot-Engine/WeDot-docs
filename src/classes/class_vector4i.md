@@ -19,6 +19,8 @@ It uses integer coordinates and is therefore preferable to [`Vector4`](class_vec
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`w`](#class_vector4i_property_w) | ``0`` |
 | [`int`](class_int.md) | [`x`](#class_vector4i_property_x) | ``0`` |
 | [`int`](class_int.md) | [`y`](#class_vector4i_property_y) | ``0`` |
@@ -26,6 +28,8 @@ It uses integer coordinates and is therefore preferable to [`Vector4`](class_vec
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Vector4i`](class_vector4i.md) | [`Vector4i`](#class_vector4i_constructor_vector4i) ( )                                                                                                        |
 | [`Vector4i`](class_vector4i.md) | [`Vector4i`](#class_vector4i_constructor_vector4i) ( from: [`Vector4i`](class_vector4i.md) )                                                                  |
 | [`Vector4i`](class_vector4i.md) | [`Vector4i`](#class_vector4i_constructor_vector4i) ( from: [`Vector4`](class_vector4.md) )                                                                    |
@@ -33,6 +37,8 @@ It uses integer coordinates and is therefore preferable to [`Vector4`](class_vec
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector4i`](class_vector4i.md) | [`abs`](#class_vector4i_method_abs) ( ) const[^const]                                                                                |
 | [`Vector4i`](class_vector4i.md) | [`clamp`](#class_vector4i_method_clamp) ( min: [`Vector4i`](class_vector4i.md), max: [`Vector4i`](class_vector4i.md) ) const[^const] |
 | [`Vector4i`](class_vector4i.md) | [`clampi`](#class_vector4i_method_clampi) ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]                   |
@@ -52,6 +58,8 @@ It uses integer coordinates and is therefore preferable to [`Vector4`](class_vec
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`operator !=`](class_Vector4i.md#operator_neq_Vector4i) ( right: [`Vector4i`](class_vector4i.md) ) |
 | [`Vector4i`](class_vector4i.md) | [`operator %`](class_Vector4i.md#operator_mod_Vector4i) ( right: [`Vector4i`](class_vector4i.md) )  |
 | [`Vector4i`](class_vector4i.md) | [`operator %`](class_Vector4i.md#operator_mod_int) ( right: [`int`](class_int.md) )                 |

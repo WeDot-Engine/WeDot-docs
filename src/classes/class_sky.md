@@ -17,6 +17,8 @@ The **Sky** class uses a [`Material`](class_material.md) to render a 3D environm
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ProcessMode](#enum_sky_processmode)   | [`process_mode`](#class_sky_property_process_mode)   | ``0`` |
 | [RadianceSize](#enum_sky_radiancesize) | [`radiance_size`](#class_sky_property_radiance_size) | ``3`` |
 | [`Material`](class_material.md)        | [`sky_material`](#class_sky_property_sky_material)   |       |

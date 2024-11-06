@@ -19,6 +19,8 @@ Contains a generic action which can be targeted from several types of inputs. Ac
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md) | [`action`](#class_inputeventaction_property_action)           | ``&""``   |
 | [`int`](class_int.md)               | [`event_index`](#class_inputeventaction_property_event_index) | ``-1``    |
 | [`bool`](class_bool.md)             | [`pressed`](#class_inputeventaction_property_pressed)         | ``false`` |

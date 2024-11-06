@@ -17,6 +17,8 @@
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md)     | [`animation`](#class_animatedsprite3d_property_animation)           | ``&"default"`` |
 | [`String`](class_string.md)             | [`autoplay`](#class_animatedsprite3d_property_autoplay)             | ``""``         |
 | [`int`](class_int.md)                   | [`frame`](#class_animatedsprite3d_property_frame)                   | ``0``          |
@@ -26,6 +28,8 @@
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_playing_speed`](#class_animatedsprite3d_method_get_playing_speed) ( ) const[^const]                                                                                                   |
 | [`bool`](class_bool.md)   | [`is_playing`](#class_animatedsprite3d_method_is_playing) ( ) const[^const]                                                                                                                 |
 | `void`                    | [`pause`](#class_animatedsprite3d_method_pause) ( )                                                                                                                                         |

@@ -19,12 +19,16 @@ This node can be bound to a specific pose of a [`XRPositionalTracker`](class_xrp
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md) | [`pose`](#class_xrnode3d_property_pose)                           | ``&"default"`` |
 | [`bool`](class_bool.md)             | [`show_when_tracked`](#class_xrnode3d_property_show_when_tracked) | ``false``      |
 | [`StringName`](class_stringname.md) | [`tracker`](#class_xrnode3d_property_tracker)                     | ``&""``        |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`get_has_tracking_data`](#class_xrnode3d_method_get_has_tracking_data) ( ) const[^const]                                                                                                                                                                                     |
 | [`bool`](class_bool.md)     | [`get_is_active`](#class_xrnode3d_method_get_is_active) ( ) const[^const]                                                                                                                                                                                                     |
 | [`XRPose`](class_xrpose.md) | [`get_pose`](#class_xrnode3d_method_get_pose) ( )                                                                                                                                                                                                                             |

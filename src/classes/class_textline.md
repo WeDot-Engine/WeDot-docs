@@ -17,6 +17,8 @@ Abstraction over [`TextServer`](class_textserver.md) for handling a single line 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_textline_property_alignment)                         | ``0``     |
 | [Direction](#enum_textserver_direction)                       | [`direction`](#class_textline_property_direction)                         | ``0``     |
 | [`String`](class_string.md)                                   | [`ellipsis_char`](#class_textline_property_ellipsis_char)                 | ``"…"``   |
@@ -29,6 +31,8 @@ Abstraction over [`TextServer`](class_textserver.md) for handling a single line 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`add_object`](#class_textline_method_add_object) ( key: [`Variant`](class_variant.md), size: [`Vector2`](class_vector2.md), inline_align: [InlineAlignment](#enum_@globalscope_inlinealignment) = 5, length: [`int`](class_int.md) = 1, baseline: [`float`](class_float.md) = 0.0 ) |
 | [`bool`](class_bool.md)       | [`add_string`](#class_textline_method_add_string) ( text: [`String`](class_string.md), font: [`Font`](class_font.md), font_size: [`int`](class_int.md), language: [`String`](class_string.md) = "", meta: [`Variant`](class_variant.md) = null )                                     |
 | `void`                        | [`clear`](#class_textline_method_clear) ( )                                                                                                                                                                                                                                          |

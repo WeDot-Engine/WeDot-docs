@@ -17,6 +17,8 @@ Editor facility that helps you draw a 2D polygon used as resource for [`LightOcc
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`closed`](#class_occluderpolygon2d_property_closed)       | ``true``                 |
 | [CullMode](#enum_occluderpolygon2d_cullmode)        | [`cull_mode`](#class_occluderpolygon2d_property_cull_mode) | ``0``                    |
 | [`PackedVector2Array`](class_packedvector2array.md) | [`polygon`](#class_occluderpolygon2d_property_polygon)     | ``PackedVector2Array()`` |

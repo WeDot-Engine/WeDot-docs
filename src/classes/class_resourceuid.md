@@ -19,6 +19,8 @@ Resource UIDs (Unique IDentifiers) allow the engine to keep references between r
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                      | [`add_id`](#class_resourceuid_method_add_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
 | [`int`](class_int.md)       | [`create_id`](#class_resourceuid_method_create_id) ( )                                                        |
 | [`String`](class_string.md) | [`get_id_path`](#class_resourceuid_method_get_id_path) ( id: [`int`](class_int.md) ) const[^const]            |

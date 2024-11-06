@@ -77,6 +77,8 @@ Adding vertices and polygon indices manually.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                        | [`agent_radius`](#class_navigationpolygon_property_agent_radius)                             | ``10.0``                                        |
 | [`Rect2`](class_rect2.md)                                        | [`baking_rect`](#class_navigationpolygon_property_baking_rect)                               | ``Rect2(0, 0, 0, 0)``                           |
 | [`Vector2`](class_vector2.md)                                    | [`baking_rect_offset`](#class_navigationpolygon_property_baking_rect_offset)                 | ``Vector2(0, 0)``                               |
@@ -89,6 +91,8 @@ Adding vertices and polygon indices manually.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`add_outline`](#class_navigationpolygon_method_add_outline) ( outline: [`PackedVector2Array`](class_packedvector2array.md) )                                                 |
 | `void`                                              | [`add_outline_at_index`](#class_navigationpolygon_method_add_outline_at_index) ( outline: [`PackedVector2Array`](class_packedvector2array.md), index: [`int`](class_int.md) ) |
 | `void`                                              | [`add_polygon`](#class_navigationpolygon_method_add_polygon) ( polygon: [`PackedInt32Array`](class_packedint32array.md) )                                                     |

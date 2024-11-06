@@ -17,6 +17,8 @@ Pipeline depth/stencil state (used by [`RenderingDevice`](class_renderingdevice.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [CompareOperator](#enum_renderingdevice_compareoperator)   | [`back_op_compare`](#class_rdpipelinedepthstencilstate_property_back_op_compare)               | ``7``     |
 | [`int`](class_int.md)                                      | [`back_op_compare_mask`](#class_rdpipelinedepthstencilstate_property_back_op_compare_mask)     | ``0``     |
 | [StencilOperation](#enum_renderingdevice_stenciloperation) | [`back_op_depth_fail`](#class_rdpipelinedepthstencilstate_property_back_op_depth_fail)         | ``1``     |

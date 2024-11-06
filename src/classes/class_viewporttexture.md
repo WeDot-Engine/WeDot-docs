@@ -23,6 +23,8 @@ To get a **ViewportTexture** in code, use the [`Viewport.get_texture`](#class_vi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md) | [`viewport_path`](#class_viewporttexture_property_viewport_path) | ``NodePath("")`` |
 
 <!-- rst-class:: classref-section-separator -->

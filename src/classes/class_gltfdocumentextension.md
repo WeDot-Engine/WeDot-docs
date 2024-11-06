@@ -23,6 +23,8 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`_convert_scene_node`](#class_gltfdocumentextension_private_method__convert_scene_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), scene_node: [`Node`](class_node.md) ) virtual[^virtual]                                                                                                    |
 | [Error](#enum_@globalscope_error)                 | [`_export_node`](#class_gltfdocumentextension_private_method__export_node) ( state: [`GLTFState`](class_gltfstate.md), gltf_node: [`GLTFNode`](class_gltfnode.md), json: [`Dictionary`](class_dictionary.md), node: [`Node`](class_node.md) ) virtual[^virtual]                                                                             |
 | [Error](#enum_@globalscope_error)                 | [`_export_post`](#class_gltfdocumentextension_private_method__export_post) ( state: [`GLTFState`](class_gltfstate.md) ) virtual[^virtual]                                                                                                                                                                                                   |

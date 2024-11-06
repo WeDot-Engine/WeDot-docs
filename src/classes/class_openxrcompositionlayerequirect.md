@@ -19,6 +19,8 @@ An OpenXR composition layer that allows rendering a [`SubViewport`](class_subvie
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`central_horizontal_angle`](#class_openxrcompositionlayerequirect_property_central_horizontal_angle) | ``1.5708``   |
 | [`int`](class_int.md)     | [`fallback_segments`](#class_openxrcompositionlayerequirect_property_fallback_segments)               | ``10``       |
 | [`float`](class_float.md) | [`lower_vertical_angle`](#class_openxrcompositionlayerequirect_property_lower_vertical_angle)         | ``0.785398`` |

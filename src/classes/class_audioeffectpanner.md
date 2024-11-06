@@ -17,6 +17,8 @@ Determines how much of an audio signal is sent to the left and right buses.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`pan`](#class_audioeffectpanner_property_pan) | ``0.0`` |
 
 <!-- rst-class:: classref-section-separator -->

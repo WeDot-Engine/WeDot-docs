@@ -17,6 +17,8 @@ A directional light is a type of [`Light3D`](class_light3d.md) node that models 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                           | [`directional_shadow_blend_splits`](#class_directionallight3d_property_directional_shadow_blend_splits) | ``false`` |
 | [`float`](class_float.md)                         | [`directional_shadow_fade_start`](#class_directionallight3d_property_directional_shadow_fade_start)     | ``0.8``   |
 | [`float`](class_float.md)                         | [`directional_shadow_max_distance`](#class_directionallight3d_property_directional_shadow_max_distance) | ``100.0`` |

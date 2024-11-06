@@ -21,6 +21,8 @@ This node can also locally alter or override physics parameters (gravity, dampin
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                   | [`angular_damp`](#class_area2d_property_angular_damp)                               | ``1.0``           |
 | [SpaceOverride](#enum_area2d_spaceoverride) | [`angular_damp_space_override`](#class_area2d_property_angular_damp_space_override) | ``0``             |
 | [`StringName`](class_stringname.md)         | [`audio_bus_name`](#class_area2d_property_audio_bus_name)                           | ``&"Master"``     |
@@ -39,6 +41,8 @@ This node can also locally alter or override physics parameters (gravity, dampin
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`Area2D`](class_area2d.md) | [`get_overlapping_areas`](#class_area2d_method_get_overlapping_areas) ( ) const[^const]               |
 | [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_overlapping_bodies`](#class_area2d_method_get_overlapping_bodies) ( ) const[^const]             |
 | [`bool`](class_bool.md)                             | [`has_overlapping_areas`](#class_area2d_method_has_overlapping_areas) ( ) const[^const]               |

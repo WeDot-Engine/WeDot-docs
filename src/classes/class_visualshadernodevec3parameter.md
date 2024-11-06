@@ -17,6 +17,8 @@ Translated to `uniform vec3` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md) | [`default_value`](#class_visualshadernodevec3parameter_property_default_value)                 | ``Vector3(0, 0, 0)`` |
 | [`bool`](class_bool.md)       | [`default_value_enabled`](#class_visualshadernodevec3parameter_property_default_value_enabled) | ``false``            |
 

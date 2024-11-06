@@ -73,6 +73,8 @@ After setting the request and changing the animation playback, the one-shot node
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`autorestart`](#class_animationnodeoneshot_property_autorestart)                           | ``false`` |
 | [`float`](class_float.md)                     | [`autorestart_delay`](#class_animationnodeoneshot_property_autorestart_delay)               | ``1.0``   |
 | [`float`](class_float.md)                     | [`autorestart_random_delay`](#class_animationnodeoneshot_property_autorestart_random_delay) | ``0.0``   |

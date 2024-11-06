@@ -19,6 +19,8 @@ Translated to `vec3 rgb` and `float alpha` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md) | [`constant`](#class_visualshadernodecolorconstant_property_constant) | ``Color(1, 1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->

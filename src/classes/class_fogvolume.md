@@ -21,6 +21,8 @@ Performance of **FogVolume** s is directly related to their relative size on the
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Material`](class_material.md)                        | [`material`](#class_fogvolume_property_material) |                      |
 | [FogVolumeShape](#enum_renderingserver_fogvolumeshape) | [`shape`](#class_fogvolume_property_shape)       | ``3``                |
 | [`Vector3`](class_vector3.md)                          | [`size`](#class_fogvolume_property_size)         | ``Vector3(2, 2, 2)`` |

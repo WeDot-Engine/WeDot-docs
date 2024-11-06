@@ -13,6 +13,8 @@
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                     | [`_can_instantiate`](#class_scriptextension_private_method__can_instantiate) ( ) virtual[^virtual] const[^const]                                                                               |
 | [`bool`](class_bool.md)                                     | [`_editor_can_reload_from_file`](#class_scriptextension_private_method__editor_can_reload_from_file) ( ) virtual[^virtual]                                                                     |
 | [`Script`](class_script.md)                                 | [`_get_base_script`](#class_scriptextension_private_method__get_base_script) ( ) virtual[^virtual] const[^const]                                                                               |

@@ -23,6 +23,8 @@ Buffers are only guaranteed to exist during rendering of the viewport.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                               | [`clear_context`](#class_renderscenebuffersrd_method_clear_context) ( context: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                                                                                                                                              |
 | [`RID`](class_rid.md)                                                | [`create_texture`](#class_renderscenebuffersrd_method_create_texture) ( context: [`StringName`](class_stringname.md), name: [`StringName`](class_stringname.md), data_format: [DataFormat](#enum_renderingdevice_dataformat), usage_bits: [`int`](class_int.md), texture_samples: [TextureSamples](#enum_renderingdevice_texturesamples), size: [`Vector2i`](class_vector2i.md), layers: [`int`](class_int.md), mipmaps: [`int`](class_int.md), unique: [`bool`](class_bool.md) ) |
 | [`RID`](class_rid.md)                                                | [`create_texture_from_format`](#class_renderscenebuffersrd_method_create_texture_from_format) ( context: [`StringName`](class_stringname.md), name: [`StringName`](class_stringname.md), format: [`RDTextureFormat`](class_rdtextureformat.md), view: [`RDTextureView`](class_rdtextureview.md), unique: [`bool`](class_bool.md) )                                                                                                                                                |

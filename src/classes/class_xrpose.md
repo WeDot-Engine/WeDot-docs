@@ -19,6 +19,8 @@ Orientation, location, linear velocity and angular velocity are all provided for
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md)                         | [`angular_velocity`](#class_xrpose_property_angular_velocity)       | ``Vector3(0, 0, 0)``                                |
 | [`bool`](class_bool.md)                               | [`has_tracking_data`](#class_xrpose_property_has_tracking_data)     | ``false``                                           |
 | [`Vector3`](class_vector3.md)                         | [`linear_velocity`](#class_xrpose_property_linear_velocity)         | ``Vector3(0, 0, 0)``                                |
@@ -28,6 +30,8 @@ Orientation, location, linear velocity and angular velocity are all provided for
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Transform3D`](class_transform3d.md) | [`get_adjusted_transform`](#class_xrpose_method_get_adjusted_transform) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

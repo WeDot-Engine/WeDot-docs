@@ -17,6 +17,8 @@ For the list of the global functions and constants see [`@GlobalScope`](class_@g
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)           | [`Color8`](#class_@gdscript_method_color8) ( r8: [`int`](class_int.md), g8: [`int`](class_int.md), b8: [`int`](class_int.md), a8: [`int`](class_int.md) = 255 ) |
 | `void`                              | [`assert`](#class_@gdscript_method_assert) ( condition: [`bool`](class_bool.md), message: [`String`](class_string.md) = "" )                                    |
 | [`String`](class_string.md)         | [`char`](#class_@gdscript_method_char) ( char: [`int`](class_int.md) )                                                                                          |

@@ -25,6 +25,8 @@ As TileData properties are stored directly in the TileSetAtlasSource resource, t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2i`](class_vector2i.md)   | [`margins`](#class_tilesetatlassource_property_margins)                         | ``Vector2i(0, 0)``   |
 | [`Vector2i`](class_vector2i.md)   | [`separation`](#class_tilesetatlassource_property_separation)                   | ``Vector2i(0, 0)``   |
 | [`Texture2D`](class_texture2d.md) | [`texture`](#class_tilesetatlassource_property_texture)                         |                      |
@@ -33,6 +35,8 @@ As TileData properties are stored directly in the TileSetAtlasSource resource, t
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                          | [`clear_tiles_outside_texture`](#class_tilesetatlassource_method_clear_tiles_outside_texture) ( )                                                                                                                                                                                                                                                                                        |
 | [`int`](class_int.md)                                           | [`create_alternative_tile`](#class_tilesetatlassource_method_create_alternative_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md), alternative_id_override: [`int`](class_int.md) = -1 )                                                                                                                                                                                             |
 | `void`                                                          | [`create_tile`](#class_tilesetatlassource_method_create_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md), size: [`Vector2i`](class_vector2i.md) = Vector2i(1, 1) )                                                                                                                                                                                                                  |

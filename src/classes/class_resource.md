@@ -25,6 +25,8 @@ The engine keeps a global cache of all loaded resources, referenced by paths (se
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`resource_local_to_scene`](#class_resource_property_resource_local_to_scene)   | ``false`` |
 | [`String`](class_string.md) | [`resource_name`](#class_resource_property_resource_name)                       | ``""``    |
 | [`String`](class_string.md) | [`resource_path`](#class_resource_property_resource_path)                       | ``""``    |
@@ -32,6 +34,8 @@ The engine keeps a global cache of all loaded resources, referenced by paths (se
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md)           | [`_get_rid`](#class_resource_private_method__get_rid) ( ) virtual[^virtual]                                     |
 | `void`                          | [`_setup_local_to_scene`](#class_resource_private_method__setup_local_to_scene) ( ) virtual[^virtual]           |
 | [`Resource`](class_resource.md) | [`duplicate`](#class_resource_method_duplicate) ( subresources: [`bool`](class_bool.md) = false ) const[^const] |

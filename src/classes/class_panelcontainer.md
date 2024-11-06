@@ -19,10 +19,14 @@ A container that keeps its child controls within the area of a [`StyleBox`](clas
 
 ## 属性
 
+|||
+|:-:|:--|
 | [MouseFilter](#enum_control_mousefilter) | mouse_filter | ``0`` (overrides [`Control`](#class_control_property_mouse_filter)) |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`StyleBox`](class_stylebox.md) | [`panel`](#class_panelcontainer_theme_style_panel) |
 
 <!-- rst-class:: classref-section-separator -->

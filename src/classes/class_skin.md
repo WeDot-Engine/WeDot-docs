@@ -13,6 +13,8 @@
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                | [`add_bind`](#class_skin_method_add_bind) ( bone: [`int`](class_int.md), pose: [`Transform3D`](class_transform3d.md) )                   |
 | `void`                                | [`add_named_bind`](#class_skin_method_add_named_bind) ( name: [`String`](class_string.md), pose: [`Transform3D`](class_transform3d.md) ) |
 | `void`                                | [`clear_binds`](#class_skin_method_clear_binds) ( )                                                                                      |

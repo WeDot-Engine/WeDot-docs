@@ -17,6 +17,8 @@ Server interface for low-level audio access.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)       | [`bus_count`](#class_audioserver_property_bus_count)                       | ``1``         |
 | [`String`](class_string.md) | [`input_device`](#class_audioserver_property_input_device)                 | ``"Default"`` |
 | [`String`](class_string.md) | [`output_device`](#class_audioserver_property_output_device)               | ``"Default"`` |
@@ -24,6 +26,8 @@ Server interface for low-level audio access.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                | [`add_bus`](#class_audioserver_method_add_bus) ( at_position: [`int`](class_int.md) = -1 )                                                                                               |
 | `void`                                                | [`add_bus_effect`](#class_audioserver_method_add_bus_effect) ( bus_idx: [`int`](class_int.md), effect: [`AudioEffect`](class_audioeffect.md), at_position: [`int`](class_int.md) = -1 )  |
 | [`AudioBusLayout`](class_audiobuslayout.md)           | [`generate_bus_layout`](#class_audioserver_method_generate_bus_layout) ( ) const[^const]                                                                                                 |

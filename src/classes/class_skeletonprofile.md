@@ -21,6 +21,8 @@ This resource is used in [`EditorScenePostImport`](class_editorscenepostimport.m
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)               | [`bone_size`](#class_skeletonprofile_property_bone_size)             | ``0``   |
 | [`int`](class_int.md)               | [`group_size`](#class_skeletonprofile_property_group_size)           | ``0``   |
 | [`StringName`](class_stringname.md) | [`root_bone`](#class_skeletonprofile_property_root_bone)             | ``&""`` |
@@ -28,6 +30,8 @@ This resource is used in [`EditorScenePostImport`](class_editorscenepostimport.m
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                | [`find_bone`](#class_skeletonprofile_method_find_bone) ( bone_name: [`StringName`](class_stringname.md) ) const[^const]                                                            |
 | [`StringName`](class_stringname.md)                  | [`get_bone_name`](#class_skeletonprofile_method_get_bone_name) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                                   |
 | [`StringName`](class_stringname.md)                  | [`get_bone_parent`](#class_skeletonprofile_method_get_bone_parent) ( bone_idx: [`int`](class_int.md) ) const[^const]                                                               |

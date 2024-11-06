@@ -21,6 +21,8 @@ Abstract base class for 3D physics objects. **CollisionObject3D** can hold any n
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                              | [`collision_layer`](#class_collisionobject3d_property_collision_layer)             | ``1``     |
 | [`int`](class_int.md)                              | [`collision_mask`](#class_collisionobject3d_property_collision_mask)               | ``1``     |
 | [`float`](class_float.md)                          | [`collision_priority`](#class_collisionobject3d_property_collision_priority)       | ``1.0``   |
@@ -30,6 +32,8 @@ Abstract base class for 3D physics objects. **CollisionObject3D** can hold any n
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                          | [`_input_event`](#class_collisionobject3d_private_method__input_event) ( camera: [`Camera3D`](class_camera3d.md), event: [`InputEvent`](class_inputevent.md), event_position: [`Vector3`](class_vector3.md), normal: [`Vector3`](class_vector3.md), shape_idx: [`int`](class_int.md) ) virtual[^virtual] |
 | `void`                                          | [`_mouse_enter`](#class_collisionobject3d_private_method__mouse_enter) ( ) virtual[^virtual]                                                                                                                                                                                                             |
 | `void`                                          | [`_mouse_exit`](#class_collisionobject3d_private_method__mouse_exit) ( ) virtual[^virtual]                                                                                                                                                                                                               |

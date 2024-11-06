@@ -19,6 +19,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ActionMode](#enum_basebutton_actionmode) | action_mode                                                     | ``0`` (overrides [`BaseButton`](#class_basebutton_property_action_mode))    |
 | [`bool`](class_bool.md)                   | flat                                                            | ``true`` (overrides [`Button`](#class_button_property_flat))                |
 | [FocusMode](#enum_control_focusmode)      | focus_mode                                                      | ``0`` (overrides [`Control`](#class_control_property_focus_mode))           |
@@ -28,6 +30,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PopupMenu`](class_popupmenu.md) | [`get_popup`](#class_menubutton_method_get_popup) ( ) const[^const]                                             |
 | `void`                            | [`set_disable_shortcuts`](#class_menubutton_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) ) |
 | `void`                            | [`show_popup`](#class_menubutton_method_show_popup) ( )                                                         |

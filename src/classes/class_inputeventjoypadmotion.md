@@ -17,6 +17,8 @@ Stores information about joystick motions. One **InputEventJoypadMotion** repres
 
 ## 属性
 
+|||
+|:-:|:--|
 | [JoyAxis](#enum_@globalscope_joyaxis) | [`axis`](#class_inputeventjoypadmotion_property_axis)             | ``0``   |
 | [`float`](class_float.md)             | [`axis_value`](#class_inputeventjoypadmotion_property_axis_value) | ``0.0`` |
 

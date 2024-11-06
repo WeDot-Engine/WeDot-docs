@@ -19,6 +19,8 @@ A link between two positions on [`NavigationRegion3D`](class_navigationregion3d.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`bidirectional`](#class_navigationlink3d_property_bidirectional)         | ``true``             |
 | [`bool`](class_bool.md)       | [`enabled`](#class_navigationlink3d_property_enabled)                     | ``true``             |
 | [`Vector3`](class_vector3.md) | [`end_position`](#class_navigationlink3d_property_end_position)           | ``Vector3(0, 0, 0)`` |
@@ -29,6 +31,8 @@ A link between two positions on [`NavigationRegion3D`](class_navigationregion3d.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md) | [`get_global_end_position`](#class_navigationlink3d_method_get_global_end_position) ( ) const[^const]                                                             |
 | [`Vector3`](class_vector3.md) | [`get_global_start_position`](#class_navigationlink3d_method_get_global_start_position) ( ) const[^const]                                                         |
 | [`bool`](class_bool.md)       | [`get_navigation_layer_value`](#class_navigationlink3d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |

@@ -19,6 +19,8 @@ Interpolates an [`Object`](class_object.md)'s property over time.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PropertyTweener`](class_propertytweener.md) | [`as_relative`](#class_propertytweener_method_as_relative) ( )                                                                              |
 | [`PropertyTweener`](class_propertytweener.md) | [`from`](#class_propertytweener_method_from) ( value: [`Variant`](class_variant.md) )                                                       |
 | [`PropertyTweener`](class_propertytweener.md) | [`from_current`](#class_propertytweener_method_from_current) ( )                                                                            |

@@ -23,6 +23,8 @@ This class is used when loading a project that uses a [`Texture3D`](class_textur
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3i`](class_vector3i.md) | [`size`](#class_placeholdertexture3d_property_size) | ``Vector3i(1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->

@@ -19,6 +19,8 @@ Base class for audio streams. Audio streams are used for sound effects and music
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                       | [`_get_beat_count`](#class_audiostream_private_method__get_beat_count) ( ) virtual[^virtual] const[^const]             |
 | [`float`](class_float.md)                                   | [`_get_bpm`](#class_audiostream_private_method__get_bpm) ( ) virtual[^virtual] const[^const]                           |
 | [`float`](class_float.md)                                   | [`_get_length`](#class_audiostream_private_method__get_length) ( ) virtual[^virtual] const[^const]                     |

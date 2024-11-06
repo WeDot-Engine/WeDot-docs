@@ -21,6 +21,8 @@ Used internally as [`Camera3D`](class_camera3d.md)'s projection matrix.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector4`](class_vector4.md) | [`w`](#class_projection_property_w) | ``Vector4(0, 0, 0, 1)`` |
 | [`Vector4`](class_vector4.md) | [`x`](#class_projection_property_x) | ``Vector4(1, 0, 0, 0)`` |
 | [`Vector4`](class_vector4.md) | [`y`](#class_projection_property_y) | ``Vector4(0, 1, 0, 0)`` |
@@ -28,6 +30,8 @@ Used internally as [`Camera3D`](class_camera3d.md)'s projection matrix.
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Projection`](class_projection.md) | [`Projection`](#class_projection_constructor_projection) ( )                                                                                                                                                            |
 | [`Projection`](class_projection.md) | [`Projection`](#class_projection_constructor_projection) ( from: [`Projection`](class_projection.md) )                                                                                                                  |
 | [`Projection`](class_projection.md) | [`Projection`](#class_projection_constructor_projection) ( from: [`Transform3D`](class_transform3d.md) )                                                                                                                |
@@ -35,6 +39,8 @@ Used internally as [`Camera3D`](class_camera3d.md)'s projection matrix.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Projection`](class_projection.md) | [`create_depth_correction`](#class_projection_method_create_depth_correction) ( flip_y: [`bool`](class_bool.md) ) static[^static]                                                                                                                                                                                                                                                                |
 | [`Projection`](class_projection.md) | [`create_fit_aabb`](#class_projection_method_create_fit_aabb) ( aabb: [`AABB`](class_aabb.md) ) static[^static]                                                                                                                                                                                                                                                                                  |
 | [`Projection`](class_projection.md) | [`create_for_hmd`](#class_projection_method_create_for_hmd) ( eye: [`int`](class_int.md), aspect: [`float`](class_float.md), intraocular_dist: [`float`](class_float.md), display_width: [`float`](class_float.md), display_to_lens: [`float`](class_float.md), oversample: [`float`](class_float.md), z_near: [`float`](class_float.md), z_far: [`float`](class_float.md) ) static[^static]     |
@@ -64,6 +70,8 @@ Used internally as [`Camera3D`](class_camera3d.md)'s projection matrix.
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`operator !=`](class_Projection.md#operator_neq_Projection) ( right: [`Projection`](class_projection.md) ) |
 | [`Projection`](class_projection.md) | [`operator *`](class_Projection.md#operator_mul_Projection) ( right: [`Projection`](class_projection.md) )  |
 | [`Vector4`](class_vector4.md)       | [`operator *`](class_Projection.md#operator_mul_Vector4) ( right: [`Vector4`](class_vector4.md) )           |

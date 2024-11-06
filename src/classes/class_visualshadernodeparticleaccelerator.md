@@ -17,6 +17,8 @@ Particle accelerator can be used in "process" step of particle shader. It will a
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Mode](#enum_visualshadernodeparticleaccelerator_mode) | [`mode`](#class_visualshadernodeparticleaccelerator_property_mode) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

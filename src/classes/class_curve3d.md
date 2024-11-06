@@ -19,12 +19,16 @@ It keeps a cache of precalculated points along the curve, to speed up further ca
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`bake_interval`](#class_curve3d_property_bake_interval)         | ``0.2``  |
 | [`int`](class_int.md)     | [`point_count`](#class_curve3d_property_point_count)             | ``0``    |
 | [`bool`](class_bool.md)   | [`up_vector_enabled`](#class_curve3d_property_up_vector_enabled) | ``true`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`add_point`](#class_curve3d_method_add_point) ( position: [`Vector3`](class_vector3.md), in: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0), out: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0), index: [`int`](class_int.md) = -1 ) |
 | `void`                                              | [`clear_points`](#class_curve3d_method_clear_points) ( )                                                                                                                                                                                   |
 | [`float`](class_float.md)                           | [`get_baked_length`](#class_curve3d_method_get_baked_length) ( ) const[^const]                                                                                                                                                             |

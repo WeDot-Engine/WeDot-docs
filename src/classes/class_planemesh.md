@@ -21,6 +21,8 @@ Class representing a planar [`PrimitiveMesh`](class_primitivemesh.md). This flat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md)              | [`center_offset`](#class_planemesh_property_center_offset)     | ``Vector3(0, 0, 0)`` |
 | [Orientation](#enum_planemesh_orientation) | [`orientation`](#class_planemesh_property_orientation)         | ``1``                |
 | [`Vector2`](class_vector2.md)              | [`size`](#class_planemesh_property_size)                       | ``Vector2(2, 2)``    |

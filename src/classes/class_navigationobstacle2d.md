@@ -23,6 +23,8 @@ With [`avoidance_enabled`](#class_navigationobstacle2d_property_avoidance_enable
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`affect_navigation_mesh`](#class_navigationobstacle2d_property_affect_navigation_mesh) | ``false``                |
 | [`bool`](class_bool.md)                             | [`avoidance_enabled`](#class_navigationobstacle2d_property_avoidance_enabled)           | ``true``                 |
 | [`int`](class_int.md)                               | [`avoidance_layers`](#class_navigationobstacle2d_property_avoidance_layers)             | ``1``                    |
@@ -33,6 +35,8 @@ With [`avoidance_enabled`](#class_navigationobstacle2d_property_avoidance_enable
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`get_avoidance_layer_value`](#class_navigationobstacle2d_method_get_avoidance_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
 | [`RID`](class_rid.md)   | [`get_navigation_map`](#class_navigationobstacle2d_method_get_navigation_map) ( ) const[^const]                                                                     |
 | [`RID`](class_rid.md)   | [`get_rid`](#class_navigationobstacle2d_method_get_rid) ( ) const[^const]                                                                                           |

@@ -17,6 +17,8 @@ Class representing a torus [`PrimitiveMesh`](class_primitivemesh.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`inner_radius`](#class_torusmesh_property_inner_radius)   | ``0.5`` |
 | [`float`](class_float.md) | [`outer_radius`](#class_torusmesh_property_outer_radius)   | ``1.0`` |
 | [`int`](class_int.md)     | [`ring_segments`](#class_torusmesh_property_ring_segments) | ``32``  |

@@ -21,12 +21,16 @@ An array specifically designed to hold 32-bit integer values. Packs data tightly
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](#class_packedint32array_constructor_packedint32array) ( )                                                       |
 | [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](#class_packedint32array_constructor_packedint32array) ( from: [`PackedInt32Array`](class_packedint32array.md) ) |
 | [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](#class_packedint32array_constructor_packedint32array) ( from: [`Array`](class_array.md) )                       |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                         | [`append`](#class_packedint32array_method_append) ( value: [`int`](class_int.md) )                                                      |
 | `void`                                          | [`append_array`](#class_packedint32array_method_append_array) ( array: [`PackedInt32Array`](class_packedint32array.md) )                |
 | [`int`](class_int.md)                           | [`bsearch`](#class_packedint32array_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )            |
@@ -51,6 +55,8 @@ An array specifically designed to hold 32-bit integer values. Packs data tightly
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                         | [`operator !=`](class_PackedInt32Array.md#operator_neq_PackedInt32Array) ( right: [`PackedInt32Array`](class_packedint32array.md) ) |
 | [`PackedInt32Array`](class_packedint32array.md) | [`operator +`](class_PackedInt32Array.md#operator_sum_PackedInt32Array) ( right: [`PackedInt32Array`](class_packedint32array.md) )  |
 | [`bool`](class_bool.md)                         | [`operator ==`](class_PackedInt32Array.md#operator_eq_PackedInt32Array) ( right: [`PackedInt32Array`](class_packedint32array.md) )  |

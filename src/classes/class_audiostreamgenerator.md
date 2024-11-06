@@ -87,6 +87,8 @@ See also [`AudioEffectSpectrumAnalyzer`](class_audioeffectspectrumanalyzer.md) f
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`buffer_length`](#class_audiostreamgenerator_property_buffer_length) | ``0.5``     |
 | [`float`](class_float.md) | [`mix_rate`](#class_audiostreamgenerator_property_mix_rate)           | ``44100.0`` |
 

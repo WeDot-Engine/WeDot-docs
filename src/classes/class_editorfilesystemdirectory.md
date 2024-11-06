@@ -17,6 +17,8 @@ A more generalized, low-level variation of the directory concept.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                             | [`find_dir_index`](#class_editorfilesystemdirectory_method_find_dir_index) ( name: [`String`](class_string.md) ) const[^const]                        |
 | [`int`](class_int.md)                                             | [`find_file_index`](#class_editorfilesystemdirectory_method_find_file_index) ( name: [`String`](class_string.md) ) const[^const]                      |
 | [`String`](class_string.md)                                       | [`get_file`](#class_editorfilesystemdirectory_method_get_file) ( idx: [`int`](class_int.md) ) const[^const]                                           |

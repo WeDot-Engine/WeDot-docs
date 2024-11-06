@@ -40,6 +40,8 @@ The relative system now would take the 1:2 ratio of the two left corners to calc
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`anti_aliasing`](#class_styleboxflat_property_anti_aliasing)                           | ``true``                    |
 | [`float`](class_float.md)     | [`anti_aliasing_size`](#class_styleboxflat_property_anti_aliasing_size)                 | ``1.0``                     |
 | [`Color`](class_color.md)     | [`bg_color`](#class_styleboxflat_property_bg_color)                                     | ``Color(0.6, 0.6, 0.6, 1)`` |
@@ -66,6 +68,8 @@ The relative system now would take the 1:2 ratio of the two left corners to calc
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`get_border_width`](#class_styleboxflat_method_get_border_width) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                        |
 | [`int`](class_int.md)     | [`get_border_width_min`](#class_styleboxflat_method_get_border_width_min) ( ) const[^const]                                                        |
 | [`int`](class_int.md)     | [`get_corner_radius`](#class_styleboxflat_method_get_corner_radius) ( corner: [Corner](#enum_@globalscope_corner) ) const[^const]                  |

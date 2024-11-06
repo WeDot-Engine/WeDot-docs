@@ -19,11 +19,15 @@ A node that provides a [`Shape3D`](class_shape3d.md) to a [`CollisionObject3D`](
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`disabled`](#class_collisionshape3d_property_disabled) | ``false`` |
 | [`Shape3D`](class_shape3d.md) | [`shape`](#class_collisionshape3d_property_shape)       |           |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`make_convex_from_siblings`](#class_collisionshape3d_method_make_convex_from_siblings) ( )                         |
 | `void` | [`resource_changed`](#class_collisionshape3d_method_resource_changed) ( resource: [`Resource`](class_resource.md) ) |
 

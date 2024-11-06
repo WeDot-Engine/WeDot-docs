@@ -13,6 +13,8 @@ Exporter for Android.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                       | [`apk_expansion/SALT`](#class_editorexportplatformandroid_property_apk_expansion/salt)                                                         |
 | [`bool`](class_bool.md)                           | [`apk_expansion/enable`](#class_editorexportplatformandroid_property_apk_expansion/enable)                                                     |
 | [`String`](class_string.md)                       | [`apk_expansion/public_key`](#class_editorexportplatformandroid_property_apk_expansion/public_key)                                             |

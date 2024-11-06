@@ -19,6 +19,8 @@ If there is no active **AudioListener2D** in the current [`Viewport`](class_view
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`clear_current`](#class_audiolistener2d_method_clear_current) ( )         |
 | [`bool`](class_bool.md) | [`is_current`](#class_audiolistener2d_method_is_current) ( ) const[^const] |
 | `void`                  | [`make_current`](#class_audiolistener2d_method_make_current) ( )           |

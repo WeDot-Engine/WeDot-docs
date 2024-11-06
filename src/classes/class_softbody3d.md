@@ -21,6 +21,8 @@ Additionally, **SoftBody3D** is subject to wind forces defined in [`Area3D`](cla
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                       | [`collision_layer`](#class_softbody3d_property_collision_layer)                 | ``1``            |
 | [`int`](class_int.md)                       | [`collision_mask`](#class_softbody3d_property_collision_mask)                   | ``1``            |
 | [`float`](class_float.md)                   | [`damping_coefficient`](#class_softbody3d_property_damping_coefficient)         | ``0.01``         |
@@ -35,6 +37,8 @@ Additionally, **SoftBody3D** is subject to wind forces defined in [`Area3D`](cla
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                            | [`add_collision_exception_with`](#class_softbody3d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                |
 | [Array](class_array.md) [`PhysicsBody3D`](class_physicsbody3d.md) | [`get_collision_exceptions`](#class_softbody3d_method_get_collision_exceptions) ( )                                                                                                                      |
 | [`bool`](class_bool.md)                                           | [`get_collision_layer_value`](#class_softbody3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                  |

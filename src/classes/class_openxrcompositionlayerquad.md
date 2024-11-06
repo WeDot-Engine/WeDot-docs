@@ -19,6 +19,8 @@ An OpenXR composition layer that allows rendering a [`SubViewport`](class_subvie
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`quad_size`](#class_openxrcompositionlayerquad_property_quad_size) | ``Vector2(1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->

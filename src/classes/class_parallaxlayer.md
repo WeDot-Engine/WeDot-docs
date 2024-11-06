@@ -21,6 +21,8 @@ This node's children will be affected by its scroll offset.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md)                                   | [`motion_mirroring`](#class_parallaxlayer_property_motion_mirroring) | ``Vector2(0, 0)``                                                           |
 | [`Vector2`](class_vector2.md)                                   | [`motion_offset`](#class_parallaxlayer_property_motion_offset)       | ``Vector2(0, 0)``                                                           |
 | [`Vector2`](class_vector2.md)                                   | [`motion_scale`](#class_parallaxlayer_property_motion_scale)         | ``Vector2(1, 1)``                                                           |

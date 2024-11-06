@@ -19,6 +19,8 @@ Arranges child controls into a tabbed view, creating a tab for each one. The act
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`all_tabs_in_front`](#class_tabcontainer_property_all_tabs_in_front)                       | ``false`` |
 | [`bool`](class_bool.md)                       | [`clip_tabs`](#class_tabcontainer_property_clip_tabs)                                       | ``true``  |
 | [`int`](class_int.md)                         | [`current_tab`](#class_tabcontainer_property_current_tab)                                   | ``-1``    |
@@ -33,6 +35,8 @@ Arranges child controls into a tabbed view, creating a tab for each one. The act
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Control`](class_control.md)     | [`get_current_tab_control`](#class_tabcontainer_method_get_current_tab_control) ( ) const[^const]                                                   |
 | [`Popup`](class_popup.md)         | [`get_popup`](#class_tabcontainer_method_get_popup) ( ) const[^const]                                                                               |
 | [`int`](class_int.md)             | [`get_previous_tab`](#class_tabcontainer_method_get_previous_tab) ( ) const[^const]                                                                 |
@@ -63,6 +67,8 @@ Arranges child controls into a tabbed view, creating a tab for each one. The act
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`drop_mark_color`](#class_tabcontainer_theme_color_drop_mark_color)             | ``Color(1, 1, 1, 1)``               |
 | [`Color`](class_color.md)         | [`font_disabled_color`](#class_tabcontainer_theme_color_font_disabled_color)     | ``Color(0.875, 0.875, 0.875, 0.5)`` |
 | [`Color`](class_color.md)         | [`font_hovered_color`](#class_tabcontainer_theme_color_font_hovered_color)       | ``Color(0.95, 0.95, 0.95, 1)``      |

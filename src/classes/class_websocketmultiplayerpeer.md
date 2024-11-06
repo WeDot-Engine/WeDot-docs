@@ -19,6 +19,8 @@ Base class for WebSocket server and client, allowing them to be used as multipla
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedStringArray`](class_packedstringarray.md) | [`handshake_headers`](#class_websocketmultiplayerpeer_property_handshake_headers)       | ``PackedStringArray()`` |
 | [`float`](class_float.md)                         | [`handshake_timeout`](#class_websocketmultiplayerpeer_property_handshake_timeout)       | ``3.0``                 |
 | [`int`](class_int.md)                             | [`inbound_buffer_size`](#class_websocketmultiplayerpeer_property_inbound_buffer_size)   | ``65535``               |
@@ -28,6 +30,8 @@ Base class for WebSocket server and client, allowing them to be used as multipla
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)         | [`create_client`](#class_websocketmultiplayerpeer_method_create_client) ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null )                                             |
 | [Error](#enum_@globalscope_error)         | [`create_server`](#class_websocketmultiplayerpeer_method_create_server) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*", tls_server_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
 | [`WebSocketPeer`](class_websocketpeer.md) | [`get_peer`](#class_websocketmultiplayerpeer_method_get_peer) ( peer_id: [`int`](class_int.md) ) const[^const]                                                                                                           |

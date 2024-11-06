@@ -21,6 +21,8 @@ By distorting the waveform the frequency content changes, which will often make 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                | [`drive`](#class_audioeffectdistortion_property_drive)           | ``0.0``     |
 | [`float`](class_float.md)                | [`keep_hf_hz`](#class_audioeffectdistortion_property_keep_hf_hz) | ``16000.0`` |
 | [Mode](#enum_audioeffectdistortion_mode) | [`mode`](#class_audioeffectdistortion_property_mode)             | ``0``       |

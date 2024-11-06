@@ -25,6 +25,8 @@ Real-time global illumination (GI) probe.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`CameraAttributes`](class_cameraattributes.md) | [`camera_attributes`](#class_voxelgi_property_camera_attributes) |                         |
 | [`VoxelGIData`](class_voxelgidata.md)           | [`data`](#class_voxelgi_property_data)                           |                         |
 | [`Vector3`](class_vector3.md)                   | [`size`](#class_voxelgi_property_size)                           | ``Vector3(20, 20, 20)`` |
@@ -32,6 +34,8 @@ Real-time global illumination (GI) probe.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`bake`](#class_voxelgi_method_bake) ( from_node: [`Node`](class_node.md) = null, create_visual_debug: [`bool`](class_bool.md) = false ) |
 | `void` | [`debug_bake`](#class_voxelgi_method_debug_bake) ( )                                                                                     |
 

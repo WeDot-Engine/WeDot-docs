@@ -19,6 +19,8 @@ This node was replaced by [`VisualShaderNodeFrame`](class_visualshadernodeframe.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`description`](#class_visualshadernodecomment_property_description) | ``""`` |
 
 <!-- rst-class:: classref-section-separator -->

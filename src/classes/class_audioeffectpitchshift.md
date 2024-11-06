@@ -19,6 +19,8 @@ Allows modulation of pitch independently of tempo. All frequencies can be increa
 
 ## 属性
 
+|||
+|:-:|:--|
 | [FFTSize](#enum_audioeffectpitchshift_fftsize) | [`fft_size`](#class_audioeffectpitchshift_property_fft_size)         | ``3``   |
 | [`int`](class_int.md)                          | [`oversampling`](#class_audioeffectpitchshift_property_oversampling) | ``4``   |
 | [`float`](class_float.md)                      | [`pitch_scale`](#class_audioeffectpitchshift_property_pitch_scale)   | ``1.0`` |

@@ -17,6 +17,8 @@ This configuration object is created and populated by the render engine on a vie
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                                            | [`fsr_sharpness`](#class_renderscenebuffersconfiguration_property_fsr_sharpness)             | ``0.0``            |
 | [`Vector2i`](class_vector2i.md)                                      | [`internal_size`](#class_renderscenebuffersconfiguration_property_internal_size)             | ``Vector2i(0, 0)`` |
 | [ViewportMSAA](#enum_renderingserver_viewportmsaa)                   | [`msaa_3d`](#class_renderscenebuffersconfiguration_property_msaa_3d)                         | ``0``              |

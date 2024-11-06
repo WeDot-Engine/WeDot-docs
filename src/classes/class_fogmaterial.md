@@ -19,6 +19,8 @@ If you need more advanced effects, use a custom [*fog shader*](../tutorials/shad
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`albedo`](#class_fogmaterial_property_albedo)                   | ``Color(1, 1, 1, 1)`` |
 | [`float`](class_float.md)         | [`density`](#class_fogmaterial_property_density)                 | ``1.0``               |
 | [`Texture3D`](class_texture3d.md) | [`density_texture`](#class_fogmaterial_property_density_texture) |                       |

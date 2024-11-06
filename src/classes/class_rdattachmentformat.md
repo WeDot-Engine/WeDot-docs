@@ -17,6 +17,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [DataFormat](#enum_renderingdevice_dataformat)         | [`format`](#class_rdattachmentformat_property_format)           | ``36`` |
 | [TextureSamples](#enum_renderingdevice_texturesamples) | [`samples`](#class_rdattachmentformat_property_samples)         | ``0``  |
 | [`int`](class_int.md)                                  | [`usage_flags`](#class_rdattachmentformat_property_usage_flags) | ``0``  |

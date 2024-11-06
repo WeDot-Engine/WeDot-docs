@@ -27,6 +27,8 @@ The finalized navigation mesh is then returned and stored inside the [`Navigatio
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`bake`](#class_navigationmeshgenerator_method_bake) ( navigation_mesh: [`NavigationMesh`](class_navigationmesh.md), root_node: [`Node`](class_node.md) )                                                                                                                                                                                                                |
 | `void` | [`bake_from_source_geometry_data`](#class_navigationmeshgenerator_method_bake_from_source_geometry_data) ( navigation_mesh: [`NavigationMesh`](class_navigationmesh.md), source_geometry_data: [`NavigationMeshSourceGeometryData3D`](class_navigationmeshsourcegeometrydata3d.md), callback: [`Callable`](class_callable.md) = Callable() )                             |
 | `void` | [`clear`](#class_navigationmeshgenerator_method_clear) ( navigation_mesh: [`NavigationMesh`](class_navigationmesh.md) )                                                                                                                                                                                                                                                  |

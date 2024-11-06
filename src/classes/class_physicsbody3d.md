@@ -21,6 +21,8 @@ Abstract base class for 3D game objects affected by physics.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`axis_lock_angular_x`](#class_physicsbody3d_property_axis_lock_angular_x) | ``false`` |
 | [`bool`](class_bool.md) | [`axis_lock_angular_y`](#class_physicsbody3d_property_axis_lock_angular_y) | ``false`` |
 | [`bool`](class_bool.md) | [`axis_lock_angular_z`](#class_physicsbody3d_property_axis_lock_angular_z) | ``false`` |
@@ -30,6 +32,8 @@ Abstract base class for 3D game objects affected by physics.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                            | [`add_collision_exception_with`](#class_physicsbody3d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                                                                                                                                              |
 | [`bool`](class_bool.md)                                           | [`get_axis_lock`](#class_physicsbody3d_method_get_axis_lock) ( axis: [BodyAxis](#enum_physicsserver3d_bodyaxis) ) const[^const]                                                                                                                                                                                                                                           |
 | [Array](class_array.md) [`PhysicsBody3D`](class_physicsbody3d.md) | [`get_collision_exceptions`](#class_physicsbody3d_method_get_collision_exceptions) ( )                                                                                                                                                                                                                                                                                    |

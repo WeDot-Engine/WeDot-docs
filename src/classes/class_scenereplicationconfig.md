@@ -13,6 +13,8 @@ Configuration for properties to synchronize with a [`MultiplayerSynchronizer`](c
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                          | [`add_property`](#class_scenereplicationconfig_method_add_property) ( path: [`NodePath`](class_nodepath.md), index: [`int`](class_int.md) = -1 )                                                                       |
 | [Array](class_array.md) [`NodePath`](class_nodepath.md)         | [`get_properties`](#class_scenereplicationconfig_method_get_properties) ( ) const[^const]                                                                                                                              |
 | [`bool`](class_bool.md)                                         | [`has_property`](#class_scenereplicationconfig_method_has_property) ( path: [`NodePath`](class_nodepath.md) ) const[^const]                                                                                            |

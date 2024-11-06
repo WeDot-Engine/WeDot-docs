@@ -17,6 +17,8 @@ Represents a texture sampler as defined by the base GLTF spec. Texture samplers 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`mag_filter`](#class_gltftexturesampler_property_mag_filter) | ``9729``  |
 | [`int`](class_int.md) | [`min_filter`](#class_gltftexturesampler_property_min_filter) | ``9987``  |
 | [`int`](class_int.md) | [`wrap_s`](#class_gltftexturesampler_property_wrap_s)         | ``10497`` |

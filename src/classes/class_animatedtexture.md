@@ -27,6 +27,8 @@ The playback of the animation is controlled by the [`speed_scale`](#class_animat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`current_frame`](#class_animatedtexture_property_current_frame) |                                                                                      |
 | [`int`](class_int.md)     | [`frames`](#class_animatedtexture_property_frames)               | ``1``                                                                                |
 | [`bool`](class_bool.md)   | [`one_shot`](#class_animatedtexture_property_one_shot)           | ``false``                                                                            |
@@ -36,6 +38,8 @@ The playback of the animation is controlled by the [`speed_scale`](#class_animat
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)         | [`get_frame_duration`](#class_animatedtexture_method_get_frame_duration) ( frame: [`int`](class_int.md) ) const[^const]                             |
 | [`Texture2D`](class_texture2d.md) | [`get_frame_texture`](#class_animatedtexture_method_get_frame_texture) ( frame: [`int`](class_int.md) ) const[^const]                               |
 | `void`                            | [`set_frame_duration`](#class_animatedtexture_method_set_frame_duration) ( frame: [`int`](class_int.md), duration: [`float`](class_float.md) )      |

@@ -90,11 +90,15 @@ Here is an example on how to iterate through the files of a directory:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`include_hidden`](#class_diraccess_property_include_hidden)             |
 | [`bool`](class_bool.md) | [`include_navigational`](#class_diraccess_property_include_navigational) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)                 | [`change_dir`](#class_diraccess_method_change_dir) ( to_dir: [`String`](class_string.md) )                                                                                               |
 | [Error](#enum_@globalscope_error)                 | [`copy`](#class_diraccess_method_copy) ( from: [`String`](class_string.md), to: [`String`](class_string.md), chmod_flags: [`int`](class_int.md) = -1 )                                   |
 | [Error](#enum_@globalscope_error)                 | [`copy_absolute`](#class_diraccess_method_copy_absolute) ( from: [`String`](class_string.md), to: [`String`](class_string.md), chmod_flags: [`int`](class_int.md) = -1 ) static[^static] |

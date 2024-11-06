@@ -19,6 +19,8 @@ You can set the timing and conditions of the transition in detail.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md)                                  | [`advance_condition`](#class_animationnodestatemachinetransition_property_advance_condition)   | ``&""``   |
 | [`String`](class_string.md)                                          | [`advance_expression`](#class_animationnodestatemachinetransition_property_advance_expression) | ``""``    |
 | [AdvanceMode](#enum_animationnodestatemachinetransition_advancemode) | [`advance_mode`](#class_animationnodestatemachinetransition_property_advance_mode)             | ``1``     |

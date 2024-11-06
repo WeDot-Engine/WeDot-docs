@@ -19,6 +19,8 @@ An animation node used to combine, mix, or blend two or more animations together
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`sync`](#class_animationnodesync_property_sync) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->

@@ -19,6 +19,8 @@ Similar to [`EditorResourcePicker`](class_editorresourcepicker.md) this [`Contro
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Node`](class_node.md) | [`script_owner`](#class_editorscriptpicker_property_script_owner) |
 
 <!-- rst-class:: classref-section-separator -->

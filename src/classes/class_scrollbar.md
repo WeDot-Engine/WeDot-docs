@@ -19,11 +19,15 @@ Abstract base class for scrollbars, typically used to navigate through content t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`custom_step`](#class_scrollbar_property_custom_step) | ``-1.0``                                                  |
 | [`float`](class_float.md) | step                                                   | ``0.0`` (overrides [`Range`](#class_range_property_step)) |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md) | [`decrement`](#class_scrollbar_theme_icon_decrement)                     |
 | [`Texture2D`](class_texture2d.md) | [`decrement_highlight`](#class_scrollbar_theme_icon_decrement_highlight) |
 | [`Texture2D`](class_texture2d.md) | [`decrement_pressed`](#class_scrollbar_theme_icon_decrement_pressed)     |

@@ -13,6 +13,8 @@ Exporter for iOS.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                       | [`application/additional_plist_content`](#class_editorexportplatformios_property_application/additional_plist_content)                                                             |
 | [`String`](class_string.md)                       | [`application/app_store_team_id`](#class_editorexportplatformios_property_application/app_store_team_id)                                                                           |
 | [`String`](class_string.md)                       | [`application/bundle_identifier`](#class_editorexportplatformios_property_application/bundle_identifier)                                                                           |

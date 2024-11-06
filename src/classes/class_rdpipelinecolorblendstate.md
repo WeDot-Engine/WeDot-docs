@@ -17,6 +17,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Array](class_array.md) [`RDPipelineColorBlendStateAttachment`](class_rdpipelinecolorblendstateattachment.md) | [`attachments`](#class_rdpipelinecolorblendstate_property_attachments)         | ``[]``                |
 | [`Color`](class_color.md)                                                                                     | [`blend_constant`](#class_rdpipelinecolorblendstate_property_blend_constant)   | ``Color(0, 0, 0, 1)`` |
 | [`bool`](class_bool.md)                                                                                       | [`enable_logic_op`](#class_rdpipelinecolorblendstate_property_enable_logic_op) | ``false``             |

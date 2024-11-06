@@ -17,6 +17,8 @@ This class allows OpenXR core and extensions to register metadata relating to su
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`register_interaction_profile`](#class_openxrinteractionprofilemetadata_method_register_interaction_profile) ( display_name: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md) )                                                                                                                                 |
 | `void` | [`register_io_path`](#class_openxrinteractionprofilemetadata_method_register_io_path) ( interaction_profile: [`String`](class_string.md), display_name: [`String`](class_string.md), toplevel_path: [`String`](class_string.md), openxr_path: [`String`](class_string.md), openxr_extension_name: [`String`](class_string.md), action_type: [ActionType](#enum_openxraction_actiontype) ) |
 | `void` | [`register_profile_rename`](#class_openxrinteractionprofilemetadata_method_register_profile_rename) ( old_name: [`String`](class_string.md), new_name: [`String`](class_string.md) )                                                                                                                                                                                                      |

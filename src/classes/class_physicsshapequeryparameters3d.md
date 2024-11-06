@@ -17,6 +17,8 @@ By changing various properties of this object, such as the shape, you can config
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                       | [`collide_with_areas`](#class_physicsshapequeryparameters3d_property_collide_with_areas)   | ``false``                                           |
 | [`bool`](class_bool.md)                       | [`collide_with_bodies`](#class_physicsshapequeryparameters3d_property_collide_with_bodies) | ``true``                                            |
 | [`int`](class_int.md)                         | [`collision_mask`](#class_physicsshapequeryparameters3d_property_collision_mask)           | ``4294967295``                                      |

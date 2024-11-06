@@ -17,6 +17,8 @@ Translated to `uniform bool` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`default_value`](#class_visualshadernodebooleanparameter_property_default_value)                 | ``false`` |
 | [`bool`](class_bool.md) | [`default_value_enabled`](#class_visualshadernodebooleanparameter_property_default_value_enabled) | ``false`` |
 

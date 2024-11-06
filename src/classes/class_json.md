@@ -63,10 +63,14 @@ Alternatively, you can parse strings using the static [`parse_string`](#class_js
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md) | [`data`](#class_json_property_data) | ``null`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`get_error_line`](#class_json_method_get_error_line) ( ) const[^const]                                                                                                                                                                   |
 | [`String`](class_string.md)       | [`get_error_message`](#class_json_method_get_error_message) ( ) const[^const]                                                                                                                                                             |
 | [`String`](class_string.md)       | [`get_parsed_text`](#class_json_method_get_parsed_text) ( ) const[^const]                                                                                                                                                                 |

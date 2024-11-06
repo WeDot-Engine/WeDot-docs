@@ -100,6 +100,8 @@ Native extensions can alternatively use the [`MultiplayerAPI.set_default_interfa
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`MultiplayerPeer`](class_multiplayerpeer.md)   | [`_get_multiplayer_peer`](#class_multiplayerapiextension_private_method__get_multiplayer_peer) ( ) virtual[^virtual]                                                                                                              |
 | [`PackedInt32Array`](class_packedint32array.md) | [`_get_peer_ids`](#class_multiplayerapiextension_private_method__get_peer_ids) ( ) virtual[^virtual] const[^const]                                                                                                                |
 | [`int`](class_int.md)                           | [`_get_remote_sender_id`](#class_multiplayerapiextension_private_method__get_remote_sender_id) ( ) virtual[^virtual] const[^const]                                                                                                |

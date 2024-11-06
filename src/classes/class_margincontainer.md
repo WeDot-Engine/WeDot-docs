@@ -47,6 +47,8 @@ A container that keeps a margin around its child controls.
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`margin_bottom`](#class_margincontainer_theme_constant_margin_bottom) | ``0`` |
 | [`int`](class_int.md) | [`margin_left`](#class_margincontainer_theme_constant_margin_left)     | ``0`` |
 | [`int`](class_int.md) | [`margin_right`](#class_margincontainer_theme_constant_margin_right)   | ``0`` |

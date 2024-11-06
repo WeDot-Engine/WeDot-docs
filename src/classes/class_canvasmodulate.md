@@ -17,6 +17,8 @@ A node that applies a color tint to a canvas.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md) | [`color`](#class_canvasmodulate_property_color) | ``Color(1, 1, 1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->

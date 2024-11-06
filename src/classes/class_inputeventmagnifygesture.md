@@ -19,6 +19,8 @@ Stores the factor of a magnifying touch gesture. This is usually performed when 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`factor`](#class_inputeventmagnifygesture_property_factor) | ``1.0`` |
 
 <!-- rst-class:: classref-section-separator -->

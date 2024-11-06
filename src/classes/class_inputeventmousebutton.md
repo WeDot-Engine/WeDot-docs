@@ -19,6 +19,8 @@ Stores information about mouse click events. See [`Node._input`](#class_node_pri
 
 ## 属性
 
+|||
+|:-:|:--|
 | [MouseButton](#enum_@globalscope_mousebutton) | [`button_index`](#class_inputeventmousebutton_property_button_index) | ``0``     |
 | [`bool`](class_bool.md)                       | [`canceled`](#class_inputeventmousebutton_property_canceled)         | ``false`` |
 | [`bool`](class_bool.md)                       | [`double_click`](#class_inputeventmousebutton_property_double_click) | ``false`` |

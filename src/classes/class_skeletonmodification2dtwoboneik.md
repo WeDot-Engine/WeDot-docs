@@ -21,6 +21,8 @@ TwoBoneIK is great for arms, legs, and really any joints that can be represented
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`flip_bend_direction`](#class_skeletonmodification2dtwoboneik_property_flip_bend_direction)         | ``false``        |
 | [`float`](class_float.md)       | [`target_maximum_distance`](#class_skeletonmodification2dtwoboneik_property_target_maximum_distance) | ``0.0``          |
 | [`float`](class_float.md)       | [`target_minimum_distance`](#class_skeletonmodification2dtwoboneik_property_target_minimum_distance) | ``0.0``          |
@@ -28,6 +30,8 @@ TwoBoneIK is great for arms, legs, and really any joints that can be represented
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md) | [`get_joint_one_bone2d_node`](#class_skeletonmodification2dtwoboneik_method_get_joint_one_bone2d_node) ( ) const[^const]                                |
 | [`int`](class_int.md)           | [`get_joint_one_bone_idx`](#class_skeletonmodification2dtwoboneik_method_get_joint_one_bone_idx) ( ) const[^const]                                      |
 | [`NodePath`](class_nodepath.md) | [`get_joint_two_bone2d_node`](#class_skeletonmodification2dtwoboneik_method_get_joint_two_bone2d_node) ( ) const[^const]                                |

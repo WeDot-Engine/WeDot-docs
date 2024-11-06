@@ -17,6 +17,8 @@ The output port of this node needs to be connected to `Model View Matrix` port o
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BillboardType](#enum_visualshadernodebillboard_billboardtype) | [`billboard_type`](#class_visualshadernodebillboard_property_billboard_type) | ``1``     |
 | [`bool`](class_bool.md)                                        | [`keep_scale`](#class_visualshadernodebillboard_property_keep_scale)         | ``false`` |
 

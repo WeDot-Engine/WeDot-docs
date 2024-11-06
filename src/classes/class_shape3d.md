@@ -21,11 +21,15 @@ Abstract base class for all 3D shapes, intended for use in physics.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`custom_solver_bias`](#class_shape3d_property_custom_solver_bias) | ``0.0``  |
 | [`float`](class_float.md) | [`margin`](#class_shape3d_property_margin)                         | ``0.04`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`ArrayMesh`](class_arraymesh.md) | [`get_debug_mesh`](#class_shape3d_method_get_debug_mesh) ( ) |
 
 <!-- rst-class:: classref-section-separator -->

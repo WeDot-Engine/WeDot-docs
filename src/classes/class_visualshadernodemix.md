@@ -17,6 +17,8 @@ Translates to `mix(a, b, weight)` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [OpType](#enum_visualshadernodemix_optype) | [`op_type`](#class_visualshadernodemix_property_op_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

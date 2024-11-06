@@ -19,10 +19,14 @@ Base class for [`CompressedTexture2DArray`](class_compressedtexture2darray.md) a
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`load_path`](#class_compressedtexturelayered_property_load_path) | ``""`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error) | [`load`](#class_compressedtexturelayered_method_load) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->

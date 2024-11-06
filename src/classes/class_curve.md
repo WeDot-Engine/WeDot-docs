@@ -19,6 +19,8 @@ See also [`Gradient`](class_gradient.md) which is designed for color interpolati
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)     | [`bake_resolution`](#class_curve_property_bake_resolution) | ``100`` |
 | [`float`](class_float.md) | [`max_value`](#class_curve_property_max_value)             | ``1.0`` |
 | [`float`](class_float.md) | [`min_value`](#class_curve_property_min_value)             | ``0.0`` |
@@ -26,6 +28,8 @@ See also [`Gradient`](class_gradient.md) which is designed for color interpolati
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                  | [`add_point`](#class_curve_method_add_point) ( position: [`Vector2`](class_vector2.md), left_tangent: [`float`](class_float.md) = 0, right_tangent: [`float`](class_float.md) = 0, left_mode: [TangentMode](#enum_curve_tangentmode) = 0, right_mode: [TangentMode](#enum_curve_tangentmode) = 0 ) |
 | `void`                                 | [`bake`](#class_curve_method_bake) ( )                                                                                                                                                                                                                                                             |
 | `void`                                 | [`clean_dupes`](#class_curve_method_clean_dupes) ( )                                                                                                                                                                                                                                               |

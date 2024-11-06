@@ -29,6 +29,8 @@ If you need to encode to a different format or pipe a stream through third-party
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                        | [`_get_audio_mix_rate`](#class_moviewriter_private_method__get_audio_mix_rate) ( ) virtual[^virtual] const[^const]                                                                                     |
 | [SpeakerMode](#enum_audioserver_speakermode) | [`_get_audio_speaker_mode`](#class_moviewriter_private_method__get_audio_speaker_mode) ( ) virtual[^virtual] const[^const]                                                                             |
 | [`bool`](class_bool.md)                      | [`_handles_file`](#class_moviewriter_private_method__handles_file) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                               |

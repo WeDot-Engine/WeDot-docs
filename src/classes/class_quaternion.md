@@ -25,6 +25,8 @@ For a great introduction to quaternions, see [*this video by 3Blue1Brown*](https
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`w`](#class_quaternion_property_w) | ``1.0`` |
 | [`float`](class_float.md) | [`x`](#class_quaternion_property_x) | ``0.0`` |
 | [`float`](class_float.md) | [`y`](#class_quaternion_property_y) | ``0.0`` |
@@ -32,6 +34,8 @@ For a great introduction to quaternions, see [*this video by 3Blue1Brown*](https
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( )                                                                                                                        |
 | [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( from: [`Quaternion`](class_quaternion.md) )                                                                              |
 | [`Quaternion`](class_quaternion.md) | [`Quaternion`](#class_quaternion_constructor_quaternion) ( arc_from: [`Vector3`](class_vector3.md), arc_to: [`Vector3`](class_vector3.md) )                                         |
@@ -41,6 +45,8 @@ For a great introduction to quaternions, see [*this video by 3Blue1Brown*](https
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)           | [`angle_to`](#class_quaternion_method_angle_to) ( to: [`Quaternion`](class_quaternion.md) ) const[^const]                                                                                                                                                                                                                                                                                           |
 | [`float`](class_float.md)           | [`dot`](#class_quaternion_method_dot) ( with: [`Quaternion`](class_quaternion.md) ) const[^const]                                                                                                                                                                                                                                                                                                   |
 | [`Quaternion`](class_quaternion.md) | [`exp`](#class_quaternion_method_exp) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                             |
@@ -63,6 +69,8 @@ For a great introduction to quaternions, see [*this video by 3Blue1Brown*](https
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`operator !=`](class_Quaternion.md#operator_neq_Quaternion) ( right: [`Quaternion`](class_quaternion.md) ) |
 | [`Quaternion`](class_quaternion.md) | [`operator *`](class_Quaternion.md#operator_mul_Quaternion) ( right: [`Quaternion`](class_quaternion.md) )  |
 | [`Vector3`](class_vector3.md)       | [`operator *`](class_Quaternion.md#operator_mul_Vector3) ( right: [`Vector3`](class_vector3.md) )           |

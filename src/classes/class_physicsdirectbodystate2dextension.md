@@ -19,6 +19,8 @@ Intended for use with GDExtension to create custom implementations of [`PhysicsD
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                            | [`_add_constant_central_force`](#class_physicsdirectbodystate2dextension_private_method__add_constant_central_force) ( force: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                           |
 | `void`                                                            | [`_add_constant_force`](#class_physicsdirectbodystate2dextension_private_method__add_constant_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) ) virtual[^virtual]                  |
 | `void`                                                            | [`_add_constant_torque`](#class_physicsdirectbodystate2dextension_private_method__add_constant_torque) ( torque: [`float`](class_float.md) ) virtual[^virtual]                                                            |

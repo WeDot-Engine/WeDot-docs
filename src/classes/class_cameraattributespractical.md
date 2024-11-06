@@ -19,6 +19,8 @@ When used in a [`WorldEnvironment`](class_worldenvironment.md) it provides defau
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`auto_exposure_max_sensitivity`](#class_cameraattributespractical_property_auto_exposure_max_sensitivity) | ``800.0`` |
 | [`float`](class_float.md) | [`auto_exposure_min_sensitivity`](#class_cameraattributespractical_property_auto_exposure_min_sensitivity) | ``0.0``   |
 | [`float`](class_float.md) | [`dof_blur_amount`](#class_cameraattributespractical_property_dof_blur_amount)                             | ``0.1``   |

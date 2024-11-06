@@ -17,10 +17,14 @@ This is a stream that can be fitted with sub-streams, which will be played in-sy
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`stream_count`](#class_audiostreamsynchronized_property_stream_count) | ``0`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`AudioStream`](class_audiostream.md) | [`get_sync_stream`](#class_audiostreamsynchronized_method_get_sync_stream) ( stream_index: [`int`](class_int.md) ) const[^const]                                        |
 | [`float`](class_float.md)             | [`get_sync_stream_volume`](#class_audiostreamsynchronized_method_get_sync_stream_volume) ( stream_index: [`int`](class_int.md) ) const[^const]                          |
 | `void`                                | [`set_sync_stream`](#class_audiostreamsynchronized_method_set_sync_stream) ( stream_index: [`int`](class_int.md), audio_stream: [`AudioStream`](class_audiostream.md) ) |

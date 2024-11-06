@@ -19,6 +19,8 @@ Provides direct access to a physics body in the [`PhysicsServer2D`](class_physic
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)             | [`angular_velocity`](#class_physicsdirectbodystate2d_property_angular_velocity)         |
 | [`Vector2`](class_vector2.md)         | [`center_of_mass`](#class_physicsdirectbodystate2d_property_center_of_mass)             |
 | [`Vector2`](class_vector2.md)         | [`center_of_mass_local`](#class_physicsdirectbodystate2d_property_center_of_mass_local) |
@@ -34,6 +36,8 @@ Provides direct access to a physics body in the [`PhysicsServer2D`](class_physic
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                            | [`add_constant_central_force`](#class_physicsdirectbodystate2d_method_add_constant_central_force) ( force: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                           |
 | `void`                                                            | [`add_constant_force`](#class_physicsdirectbodystate2d_method_add_constant_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )  |
 | `void`                                                            | [`add_constant_torque`](#class_physicsdirectbodystate2d_method_add_constant_torque) ( torque: [`float`](class_float.md) )                                                            |

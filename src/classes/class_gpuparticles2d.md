@@ -21,6 +21,8 @@ Use the [`process_material`](#class_gpuparticles2d_property_process_material) pr
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                       | [`amount`](#class_gpuparticles2d_property_amount)                                         | ``8``                           |
 | [`float`](class_float.md)                   | [`amount_ratio`](#class_gpuparticles2d_property_amount_ratio)                             | ``1.0``                         |
 | [`float`](class_float.md)                   | [`collision_base_size`](#class_gpuparticles2d_property_collision_base_size)               | ``1.0``                         |
@@ -48,6 +50,8 @@ Use the [`process_material`](#class_gpuparticles2d_property_process_material) pr
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Rect2`](class_rect2.md) | [`capture_rect`](#class_gpuparticles2d_method_capture_rect) ( ) const[^const]                                                                                                                                                                              |
 | `void`                    | [`convert_from_particles`](#class_gpuparticles2d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                                                                                                     |
 | `void`                    | [`emit_particle`](#class_gpuparticles2d_method_emit_particle) ( xform: [`Transform2D`](class_transform2d.md), velocity: [`Vector2`](class_vector2.md), color: [`Color`](class_color.md), custom: [`Color`](class_color.md), flags: [`int`](class_int.md) ) |

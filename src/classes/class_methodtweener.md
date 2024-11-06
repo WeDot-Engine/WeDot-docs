@@ -21,6 +21,8 @@ The tweener will finish automatically if the callback's target object is freed.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`MethodTweener`](class_methodtweener.md) | [`set_delay`](#class_methodtweener_method_set_delay) ( delay: [`float`](class_float.md) )                    |
 | [`MethodTweener`](class_methodtweener.md) | [`set_ease`](#class_methodtweener_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                |
 | [`MethodTweener`](class_methodtweener.md) | [`set_trans`](#class_methodtweener_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) ) |

@@ -21,6 +21,8 @@ You can also use the **SceneTree** to organize your nodes into **groups**: every
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`auto_accept_quit`](#class_scenetree_property_auto_accept_quit)           | ``true``  |
 | [`Node`](class_node.md)     | [`current_scene`](#class_scenetree_property_current_scene)                 |           |
 | [`bool`](class_bool.md)     | [`debug_collisions_hint`](#class_scenetree_property_debug_collisions_hint) | ``false`` |
@@ -35,6 +37,8 @@ You can also use the **SceneTree** to organize your nodes into **groups**: every
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`call_group`](#class_scenetree_method_call_group) ( group: [`StringName`](class_stringname.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                     |
 | `void`                                            | [`call_group_flags`](#class_scenetree_method_call_group_flags) ( flags: [`int`](class_int.md), group: [`StringName`](class_stringname.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                           |
 | [Error](#enum_@globalscope_error)                 | [`change_scene_to_file`](#class_scenetree_method_change_scene_to_file) ( path: [`String`](class_string.md) )                                                                                                                                            |

@@ -21,10 +21,14 @@ StreamPeer is an abstract base class mostly used for stream-based protocols (suc
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`big_endian`](#class_streampeer_property_big_endian) | ``false`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`get_8`](#class_streampeer_method_get_8) ( )                                                                                         |
 | [`int`](class_int.md)             | [`get_16`](#class_streampeer_method_get_16) ( )                                                                                       |
 | [`int`](class_int.md)             | [`get_32`](#class_streampeer_method_get_32) ( )                                                                                       |

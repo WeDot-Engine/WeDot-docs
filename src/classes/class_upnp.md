@@ -90,12 +90,16 @@ To close a specific port (e.g. after you have finished using it):
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)     | [`discover_ipv6`](#class_upnp_property_discover_ipv6)                 | ``false`` |
 | [`int`](class_int.md)       | [`discover_local_port`](#class_upnp_property_discover_local_port)     | ``0``     |
 | [`String`](class_string.md) | [`discover_multicast_if`](#class_upnp_property_discover_multicast_if) | ``""``    |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                              | [`add_device`](#class_upnp_method_add_device) ( device: [`UPNPDevice`](class_upnpdevice.md) )                                                                                                                                                                              |
 | [`int`](class_int.md)               | [`add_port_mapping`](#class_upnp_method_add_port_mapping) ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const] |
 | `void`                              | [`clear_devices`](#class_upnp_method_clear_devices) ( )                                                                                                                                                                                                                    |

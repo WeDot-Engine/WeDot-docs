@@ -19,6 +19,8 @@ A node that provides a thickened polygon shape (a prism) to a [`CollisionObject3
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                           | [`depth`](#class_collisionpolygon3d_property_depth)       | ``1.0``                  |
 | [`bool`](class_bool.md)                             | [`disabled`](#class_collisionpolygon3d_property_disabled) | ``false``                |
 | [`float`](class_float.md)                           | [`margin`](#class_collisionpolygon3d_property_margin)     | ``0.04``                 |

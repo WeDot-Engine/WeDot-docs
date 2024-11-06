@@ -23,10 +23,14 @@ A 2D convex polygon shape, intended for use in physics. Used internally in [`Col
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedVector2Array`](class_packedvector2array.md) | [`points`](#class_convexpolygonshape2d_property_points) | ``PackedVector2Array()`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`set_point_cloud`](#class_convexpolygonshape2d_method_set_point_cloud) ( point_cloud: [`PackedVector2Array`](class_packedvector2array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->

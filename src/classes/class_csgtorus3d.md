@@ -19,6 +19,8 @@ This node allows you to create a torus for use with the CSG system.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)       | [`inner_radius`](#class_csgtorus3d_property_inner_radius) | ``0.5``  |
 | [`Material`](class_material.md) | [`material`](#class_csgtorus3d_property_material)         |          |
 | [`float`](class_float.md)       | [`outer_radius`](#class_csgtorus3d_property_outer_radius) | ``1.0``  |

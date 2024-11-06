@@ -19,6 +19,8 @@ The **PhysicalBone3D** node is a physics body that can be used to make bones in 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                   | [`angular_damp`](#class_physicalbone3d_property_angular_damp)           | ``0.0``                                             |
 | [DampMode](#enum_physicalbone3d_dampmode)   | [`angular_damp_mode`](#class_physicalbone3d_property_angular_damp_mode) | ``0``                                               |
 | [`Vector3`](class_vector3.md)               | [`angular_velocity`](#class_physicalbone3d_property_angular_velocity)   | ``Vector3(0, 0, 0)``                                |
@@ -38,6 +40,8 @@ The **PhysicalBone3D** node is a physics body that can be used to make bones in 
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`_integrate_forces`](#class_physicalbone3d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual] |
 | `void`                  | [`apply_central_impulse`](#class_physicalbone3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                   |
 | `void`                  | [`apply_impulse`](#class_physicalbone3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )       |

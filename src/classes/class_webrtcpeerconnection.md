@@ -29,6 +29,8 @@ After these steps, the connection should become connected. Keep on reading or lo
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)                             | [`add_ice_candidate`](#class_webrtcpeerconnection_method_add_ice_candidate) ( media: [`String`](class_string.md), index: [`int`](class_int.md), name: [`String`](class_string.md) ) |
 | `void`                                                        | [`close`](#class_webrtcpeerconnection_method_close) ( )                                                                                                                             |
 | [`WebRTCDataChannel`](class_webrtcdatachannel.md)             | [`create_data_channel`](#class_webrtcpeerconnection_method_create_data_channel) ( label: [`String`](class_string.md), options: [`Dictionary`](class_dictionary.md) = {} )           |

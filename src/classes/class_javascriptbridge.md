@@ -19,6 +19,8 @@ The JavaScriptBridge singleton is implemented only in the Web export. It's used 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`JavaScriptObject`](class_javascriptobject.md) | [`create_callback`](#class_javascriptbridge_method_create_callback) ( callable: [`Callable`](class_callable.md) )                                                                                                                |
 | [`Variant`](class_variant.md)                   | [`create_object`](#class_javascriptbridge_method_create_object) ( object: [`String`](class_string.md), ... ) vararg[^vararg]                                                                                                     |
 | `void`                                          | [`download_buffer`](#class_javascriptbridge_method_download_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md), name: [`String`](class_string.md), mime: [`String`](class_string.md) = "application/octet-stream" ) |

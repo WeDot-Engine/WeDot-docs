@@ -17,11 +17,15 @@ This class is used by various XR interfaces to generate VRS textures that can be
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`vrs_min_radius`](#class_xrvrs_property_vrs_min_radius) | ``20.0`` |
 | [`float`](class_float.md) | [`vrs_strength`](#class_xrvrs_property_vrs_strength)     | ``1.0``  |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md) | [`make_vrs_texture`](#class_xrvrs_method_make_vrs_texture) ( target_size: [`Vector2`](class_vector2.md), eye_foci: [`PackedVector2Array`](class_packedvector2array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->

@@ -19,6 +19,8 @@ A 2D capsule shape, intended for use in physics. Usually used to provide a shape
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`height`](#class_capsuleshape2d_property_height) | ``30.0`` |
 | [`float`](class_float.md) | [`radius`](#class_capsuleshape2d_property_radius) | ``10.0`` |
 

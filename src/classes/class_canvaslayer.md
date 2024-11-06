@@ -25,6 +25,8 @@ A node used for independent rendering of objects within a 2D scene.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Node`](class_node.md)               | [`custom_viewport`](#class_canvaslayer_property_custom_viewport)                 |                                   |
 | [`bool`](class_bool.md)               | [`follow_viewport_enabled`](#class_canvaslayer_property_follow_viewport_enabled) | ``false``                         |
 | [`float`](class_float.md)             | [`follow_viewport_scale`](#class_canvaslayer_property_follow_viewport_scale)     | ``1.0``                           |
@@ -37,6 +39,8 @@ A node used for independent rendering of objects within a 2D scene.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md)                 | [`get_canvas`](#class_canvaslayer_method_get_canvas) ( ) const[^const]                   |
 | [`Transform2D`](class_transform2d.md) | [`get_final_transform`](#class_canvaslayer_method_get_final_transform) ( ) const[^const] |
 | `void`                                | [`hide`](#class_canvaslayer_method_hide) ( )                                             |

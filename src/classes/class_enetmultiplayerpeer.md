@@ -19,10 +19,14 @@ A MultiplayerPeer implementation that should be passed to [`MultiplayerAPI.multi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`ENetConnection`](class_enetconnection.md) | [`host`](#class_enetmultiplayerpeer_property_host) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)           | [`add_mesh_peer`](#class_enetmultiplayerpeer_method_add_mesh_peer) ( peer_id: [`int`](class_int.md), host: [`ENetConnection`](class_enetconnection.md) )                                                                                                                                                     |
 | [Error](#enum_@globalscope_error)           | [`create_client`](#class_enetmultiplayerpeer_method_create_client) ( address: [`String`](class_string.md), port: [`int`](class_int.md), channel_count: [`int`](class_int.md) = 0, in_bandwidth: [`int`](class_int.md) = 0, out_bandwidth: [`int`](class_int.md) = 0, local_port: [`int`](class_int.md) = 0 ) |
 | [Error](#enum_@globalscope_error)           | [`create_mesh`](#class_enetmultiplayerpeer_method_create_mesh) ( unique_id: [`int`](class_int.md) )                                                                                                                                                                                                          |

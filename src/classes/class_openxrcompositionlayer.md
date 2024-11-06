@@ -23,6 +23,8 @@ Composition layers allow 2D viewports to be displayed inside of the headset by t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)               | [`alpha_blend`](#class_openxrcompositionlayer_property_alpha_blend)             | ``false`` |
 | [`bool`](class_bool.md)               | [`enable_hole_punch`](#class_openxrcompositionlayer_property_enable_hole_punch) | ``false`` |
 | [`SubViewport`](class_subviewport.md) | [`layer_viewport`](#class_openxrcompositionlayer_property_layer_viewport)       |           |
@@ -30,6 +32,8 @@ Composition layers allow 2D viewports to be displayed inside of the headset by t
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`intersects_ray`](#class_openxrcompositionlayer_method_intersects_ray) ( origin: [`Vector3`](class_vector3.md), direction: [`Vector3`](class_vector3.md) ) const[^const] |
 | [`bool`](class_bool.md)       | [`is_natively_supported`](#class_openxrcompositionlayer_method_is_natively_supported) ( ) const[^const]                                                                   |
 

@@ -19,6 +19,8 @@ Texture with 3 dimensions.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error) | [`create`](#class_imagetexture3d_method_create) ( format: [Format](#enum_image_format), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), use_mipmaps: [`bool`](class_bool.md), data: [Array](class_array.md) [`Image`](class_image.md) ) |
 | `void`                            | [`update`](#class_imagetexture3d_method_update) ( data: [Array](class_array.md) [`Image`](class_image.md) )                                                                                                                                                                        |
 

@@ -21,6 +21,8 @@ To use **EditorSceneFormatImporter**, register it using the [`EditorPlugin.add_s
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedStringArray`](class_packedstringarray.md) | [`_get_extensions`](#class_editorsceneformatimporter_private_method__get_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
 | [`int`](class_int.md)                             | [`_get_import_flags`](#class_editorsceneformatimporter_private_method__get_import_flags) ( ) virtual[^virtual] const[^const]                                                                                                                          |
 | `void`                                            | [`_get_import_options`](#class_editorsceneformatimporter_private_method__get_import_options) ( path: [`String`](class_string.md) ) virtual[^virtual]                                                                                                  |

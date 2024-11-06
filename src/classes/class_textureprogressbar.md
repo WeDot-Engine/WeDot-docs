@@ -17,6 +17,8 @@ TextureProgressBar works like [`ProgressBar`](class_progressbar.md), but uses up
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                    | [`fill_mode`](#class_textureprogressbar_property_fill_mode)                             | ``0``                                                                      |
 | [MouseFilter](#enum_control_mousefilter) | mouse_filter                                                                            | ``1`` (overrides [`Control`](#class_control_property_mouse_filter))        |
 | [`bool`](class_bool.md)                  | [`nine_patch_stretch`](#class_textureprogressbar_property_nine_patch_stretch)           | ``false``                                                                  |
@@ -39,6 +41,8 @@ TextureProgressBar works like [`ProgressBar`](class_progressbar.md), but uses up
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`get_stretch_margin`](#class_textureprogressbar_method_get_stretch_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                 |
 | `void`                | [`set_stretch_margin`](#class_textureprogressbar_method_set_stretch_margin) ( margin: [Side](#enum_@globalscope_side), value: [`int`](class_int.md) ) |
 

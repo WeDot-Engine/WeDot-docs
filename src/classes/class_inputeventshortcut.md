@@ -17,6 +17,8 @@ InputEventShortcut is a special event that can be received in [`Node._input`](#c
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Shortcut`](class_shortcut.md) | [`shortcut`](#class_inputeventshortcut_property_shortcut) |
 
 <!-- rst-class:: classref-section-separator -->

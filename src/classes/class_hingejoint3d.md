@@ -17,6 +17,8 @@ A physics joint that restricts the rotation of a 3D physics body around an axis 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`angular_limit/bias`](#class_hingejoint3d_property_angular_limit/bias)             | ``0.3``     |
 | [`bool`](class_bool.md)   | [`angular_limit/enable`](#class_hingejoint3d_property_angular_limit/enable)         | ``false``   |
 | [`float`](class_float.md) | [`angular_limit/lower`](#class_hingejoint3d_property_angular_limit/lower)           | ``-1.5708`` |
@@ -30,6 +32,8 @@ A physics joint that restricts the rotation of a 3D physics body around an axis 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`get_flag`](#class_hingejoint3d_method_get_flag) ( flag: [Flag](#enum_hingejoint3d_flag) ) const[^const]                          |
 | [`float`](class_float.md) | [`get_param`](#class_hingejoint3d_method_get_param) ( param: [Param](#enum_hingejoint3d_param) ) const[^const]                     |
 | `void`                    | [`set_flag`](#class_hingejoint3d_method_set_flag) ( flag: [Flag](#enum_hingejoint3d_flag), enabled: [`bool`](class_bool.md) )      |

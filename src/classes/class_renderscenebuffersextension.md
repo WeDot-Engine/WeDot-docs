@@ -17,6 +17,8 @@ This class allows for a RenderSceneBuffer implementation to be made in GDExtensi
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`_configure`](#class_renderscenebuffersextension_private_method__configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) virtual[^virtual] |
 | `void` | [`_set_fsr_sharpness`](#class_renderscenebuffersextension_private_method__set_fsr_sharpness) ( fsr_sharpness: [`float`](class_float.md) ) virtual[^virtual]                              |
 | `void` | [`_set_texture_mipmap_bias`](#class_renderscenebuffersextension_private_method__set_texture_mipmap_bias) ( texture_mipmap_bias: [`float`](class_float.md) ) virtual[^virtual]            |

@@ -29,6 +29,8 @@ Particle collision shapes can be temporarily disabled by hiding them.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`cull_mask`](#class_gpuparticlescollision3d_property_cull_mask) | ``4294967295`` |
 
 <!-- rst-class:: classref-section-separator -->

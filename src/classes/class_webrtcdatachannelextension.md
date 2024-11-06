@@ -13,6 +13,8 @@
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                               | [`_close`](#class_webrtcdatachannelextension_private_method__close) ( ) virtual[^virtual]                                                                                |
 | [`int`](class_int.md)                                | [`_get_available_packet_count`](#class_webrtcdatachannelextension_private_method__get_available_packet_count) ( ) virtual[^virtual] const[^const]                        |
 | [`int`](class_int.md)                                | [`_get_buffered_amount`](#class_webrtcdatachannelextension_private_method__get_buffered_amount) ( ) virtual[^virtual] const[^const]                                      |

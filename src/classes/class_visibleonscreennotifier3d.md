@@ -23,10 +23,14 @@ If you want a node to be enabled automatically when this region is visible on sc
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`AABB`](class_aabb.md) | [`aabb`](#class_visibleonscreennotifier3d_property_aabb) | ``AABB(-1, -1, -1, 2, 2, 2)`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`is_on_screen`](#class_visibleonscreennotifier3d_method_is_on_screen) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

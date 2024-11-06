@@ -52,6 +52,8 @@ To create a menu, use [`create_menu`](#class_nativemenu_method_create_menu), add
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`add_check_item`](#class_nativemenu_method_add_check_item) ( rid: [`RID`](class_rid.md), label: [`String`](class_string.md), callback: [`Callable`](class_callable.md) = Callable(), key_callback: [`Callable`](class_callable.md) = Callable(), tag: [`Variant`](class_variant.md) = null, accelerator: [Key](#enum_@globalscope_key) = 0, index: [`int`](class_int.md) = -1 )                                                                                    |
 | [`int`](class_int.md)             | [`add_icon_check_item`](#class_nativemenu_method_add_icon_check_item) ( rid: [`RID`](class_rid.md), icon: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), callback: [`Callable`](class_callable.md) = Callable(), key_callback: [`Callable`](class_callable.md) = Callable(), tag: [`Variant`](class_variant.md) = null, accelerator: [Key](#enum_@globalscope_key) = 0, index: [`int`](class_int.md) = -1 )                                 |
 | [`int`](class_int.md)             | [`add_icon_item`](#class_nativemenu_method_add_icon_item) ( rid: [`RID`](class_rid.md), icon: [`Texture2D`](class_texture2d.md), label: [`String`](class_string.md), callback: [`Callable`](class_callable.md) = Callable(), key_callback: [`Callable`](class_callable.md) = Callable(), tag: [`Variant`](class_variant.md) = null, accelerator: [Key](#enum_@globalscope_key) = 0, index: [`int`](class_int.md) = -1 )                                             |

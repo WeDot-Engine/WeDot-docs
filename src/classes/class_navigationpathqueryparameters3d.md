@@ -19,6 +19,8 @@ By changing various properties of this object, such as the start and target posi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md)                                                              | [`map`](#class_navigationpathqueryparameters3d_property_map)                                     | ``RID()``            |
 | [PathMetadataFlags](#enum_navigationpathqueryparameters3d_pathmetadataflags)       | [`metadata_flags`](#class_navigationpathqueryparameters3d_property_metadata_flags)               | ``7``                |
 | [`int`](class_int.md)                                                              | [`navigation_layers`](#class_navigationpathqueryparameters3d_property_navigation_layers)         | ``1``                |

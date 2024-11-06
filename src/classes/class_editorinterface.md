@@ -38,11 +38,15 @@ Godot editor's interface.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`distraction_free_mode`](#class_editorinterface_property_distraction_free_mode) |
 | [`bool`](class_bool.md) | [`movie_maker_enabled`](#class_editorinterface_property_movie_maker_enabled)     |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                    | [`edit_node`](#class_editorinterface_method_edit_node) ( node: [`Node`](class_node.md) )                                                                                                                                                                 |
 | `void`                                                    | [`edit_resource`](#class_editorinterface_method_edit_resource) ( resource: [`Resource`](class_resource.md) )                                                                                                                                             |
 | `void`                                                    | [`edit_script`](#class_editorinterface_method_edit_script) ( script: [`Script`](class_script.md), line: [`int`](class_int.md) = -1, column: [`int`](class_int.md) = 0, grab_focus: [`bool`](class_bool.md) = true )                                      |

@@ -21,6 +21,8 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedInt32Array`](class_packedint32array.md)     | [`get_indices`](#class_occluder3d_method_get_indices) ( ) const[^const]   |
 | [`PackedVector3Array`](class_packedvector3array.md) | [`get_vertices`](#class_occluder3d_method_get_vertices) ( ) const[^const] |
 

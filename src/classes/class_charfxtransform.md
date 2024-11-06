@@ -17,6 +17,8 @@ By setting various properties on this object, you can control how individual cha
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)             | [`color`](#class_charfxtransform_property_color)                   | ``Color(0, 0, 0, 1)``             |
 | [`float`](class_float.md)             | [`elapsed_time`](#class_charfxtransform_property_elapsed_time)     | ``0.0``                           |
 | [`Dictionary`](class_dictionary.md)   | [`env`](#class_charfxtransform_property_env)                       | ``{}``                            |

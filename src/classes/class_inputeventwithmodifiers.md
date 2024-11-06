@@ -19,6 +19,8 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`alt_pressed`](#class_inputeventwithmodifiers_property_alt_pressed)                                   | ``false`` |
 | [`bool`](class_bool.md) | [`command_or_control_autoremap`](#class_inputeventwithmodifiers_property_command_or_control_autoremap) | ``false`` |
 | [`bool`](class_bool.md) | [`ctrl_pressed`](#class_inputeventwithmodifiers_property_ctrl_pressed)                                 | ``false`` |
@@ -27,6 +29,8 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 ## 方法
 
+|||
+|:-:|:--|
 | [KeyModifierMask](#enum_@globalscope_keymodifiermask) | [`get_modifiers_mask`](#class_inputeventwithmodifiers_method_get_modifiers_mask) ( ) const[^const]                       |
 | [`bool`](class_bool.md)                               | [`is_command_or_control_pressed`](#class_inputeventwithmodifiers_method_is_command_or_control_pressed) ( ) const[^const] |
 

@@ -21,6 +21,8 @@ Keep in mind that, as long as plane detection is enabled, the size, placing and 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Plane`](class_plane.md)     | [`get_plane`](#class_xranchor3d_method_get_plane) ( ) const[^const] |
 | [`Vector3`](class_vector3.md) | [`get_size`](#class_xranchor3d_method_get_size) ( ) const[^const]   |
 

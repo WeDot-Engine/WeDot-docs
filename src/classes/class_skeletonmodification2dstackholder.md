@@ -21,6 +21,8 @@ This [`SkeletonModification2D`](class_skeletonmodification2d.md) holds a referen
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) | [`get_held_modification_stack`](#class_skeletonmodification2dstackholder_method_get_held_modification_stack) ( ) const[^const]                                                                                  |
 | `void`                                                                | [`set_held_modification_stack`](#class_skeletonmodification2dstackholder_method_set_held_modification_stack) ( held_modification_stack: [`SkeletonModificationStack2D`](class_skeletonmodificationstack2d.md) ) |
 

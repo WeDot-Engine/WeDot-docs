@@ -17,6 +17,8 @@ A physics joint that restricts the movement of a 3D physics body along an axis r
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`angular_limit/damping`](#class_sliderjoint3d_property_angular_limit/damping)             | ``0.0``  |
 | [`float`](class_float.md) | [`angular_limit/lower_angle`](#class_sliderjoint3d_property_angular_limit/lower_angle)     | ``0.0``  |
 | [`float`](class_float.md) | [`angular_limit/restitution`](#class_sliderjoint3d_property_angular_limit/restitution)     | ``0.7``  |
@@ -42,6 +44,8 @@ A physics joint that restricts the movement of a 3D physics body along an axis r
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_param`](#class_sliderjoint3d_method_get_param) ( param: [Param](#enum_sliderjoint3d_param) ) const[^const]                     |
 | `void`                    | [`set_param`](#class_sliderjoint3d_method_set_param) ( param: [Param](#enum_sliderjoint3d_param), value: [`float`](class_float.md) ) |
 

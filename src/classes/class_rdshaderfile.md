@@ -19,10 +19,14 @@ See also [`RDShaderSource`](class_rdshadersource.md). **RDShaderFile** is only m
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`base_error`](#class_rdshaderfile_property_base_error) | ``""`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RDShaderSPIRV`](class_rdshaderspirv.md)                   | [`get_spirv`](#class_rdshaderfile_method_get_spirv) ( version: [`StringName`](class_stringname.md) = &"" ) const[^const]                                              |
 | [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_version_list`](#class_rdshaderfile_method_get_version_list) ( ) const[^const]                                                                                   |
 | `void`                                                      | [`set_bytecode`](#class_rdshaderfile_method_set_bytecode) ( bytecode: [`RDShaderSPIRV`](class_rdshaderspirv.md), version: [`StringName`](class_stringname.md) = &"" ) |

@@ -57,6 +57,8 @@ To set the coordinate of multiple variation axes:
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Font`](class_font.md)               | [`base_font`](#class_fontvariation_property_base_font)                       |                                   |
 | [`float`](class_float.md)             | [`baseline_offset`](#class_fontvariation_property_baseline_offset)           | ``0.0``                           |
 | [`Dictionary`](class_dictionary.md)   | [`opentype_features`](#class_fontvariation_property_opentype_features)       | ``{}``                            |
@@ -71,6 +73,8 @@ To set the coordinate of multiple variation axes:
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`set_spacing`](#class_fontvariation_method_set_spacing) ( spacing: [SpacingType](#enum_textserver_spacingtype), value: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->

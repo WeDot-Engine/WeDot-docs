@@ -25,6 +25,8 @@ You can add custom monitors using the [`add_custom_monitor`](#class_performance_
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                      | [`add_custom_monitor`](#class_performance_method_add_custom_monitor) ( id: [`StringName`](class_stringname.md), callable: [`Callable`](class_callable.md), arguments: [`Array`](class_array.md) = [] ) |
 | [`Variant`](class_variant.md)                               | [`get_custom_monitor`](#class_performance_method_get_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
 | [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_custom_monitor_names`](#class_performance_method_get_custom_monitor_names) ( )                                                                                                                   |

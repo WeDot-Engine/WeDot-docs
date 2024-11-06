@@ -21,6 +21,8 @@ After instantiating the playback information data within the extended class, the
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                                             | [`active`](#class_animationmixer_property_active)                                 | ``true``           |
 | [`int`](class_int.md)                                                               | [`audio_max_polyphony`](#class_animationmixer_property_audio_max_polyphony)       | ``32``             |
 | [AnimationCallbackModeDiscrete](#enum_animationmixer_animationcallbackmodediscrete) | [`callback_mode_discrete`](#class_animationmixer_property_callback_mode_discrete) | ``1``              |
@@ -33,6 +35,8 @@ After instantiating the playback information data within the extended class, the
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md)                               | [`_post_process_key_value`](#class_animationmixer_private_method__post_process_key_value) ( animation: [`Animation`](class_animation.md), track: [`int`](class_int.md), value: [`Variant`](class_variant.md), object_id: [`int`](class_int.md), object_sub_idx: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
 | [Error](#enum_@globalscope_error)                           | [`add_animation_library`](#class_animationmixer_method_add_animation_library) ( name: [`StringName`](class_stringname.md), library: [`AnimationLibrary`](class_animationlibrary.md) )                                                                                                                                   |
 | `void`                                                      | [`advance`](#class_animationmixer_method_advance) ( delta: [`float`](class_float.md) )                                                                                                                                                                                                                                  |

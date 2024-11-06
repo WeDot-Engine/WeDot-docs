@@ -82,6 +82,8 @@ Here is an example script implementing a simple **MainLoop**:
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`_finalize`](#class_mainloop_private_method__finalize) ( ) virtual[^virtual]                                                |
 | `void`                  | [`_initialize`](#class_mainloop_private_method__initialize) ( ) virtual[^virtual]                                            |
 | [`bool`](class_bool.md) | [`_physics_process`](#class_mainloop_private_method__physics_process) ( delta: [`float`](class_float.md) ) virtual[^virtual] |

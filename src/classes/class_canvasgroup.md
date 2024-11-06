@@ -41,6 +41,8 @@ Child [`CanvasItem`](class_canvasitem.md) nodes of a **CanvasGroup** are drawn a
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`clear_margin`](#class_canvasgroup_property_clear_margin) | ``10.0``  |
 | [`float`](class_float.md) | [`fit_margin`](#class_canvasgroup_property_fit_margin)     | ``10.0``  |
 | [`bool`](class_bool.md)   | [`use_mipmaps`](#class_canvasgroup_property_use_mipmaps)   | ``false`` |

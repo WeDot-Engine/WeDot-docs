@@ -23,6 +23,8 @@ A 3D convex polyhedron shape, intended for use in physics. Usually used to provi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedVector3Array`](class_packedvector3array.md) | [`points`](#class_convexpolygonshape3d_property_points) | ``PackedVector3Array()`` |
 
 <!-- rst-class:: classref-section-separator -->

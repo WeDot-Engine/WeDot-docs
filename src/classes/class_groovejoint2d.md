@@ -17,6 +17,8 @@ A physics joint that restricts the movement of two 2D physics bodies to a fixed 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`initial_offset`](#class_groovejoint2d_property_initial_offset) | ``25.0`` |
 | [`float`](class_float.md) | [`length`](#class_groovejoint2d_property_length)                 | ``50.0`` |
 

@@ -19,6 +19,8 @@ Casts light in a 2D environment. A light is defined as a color, an energy value,
 
 ## 属性
 
+|||
+|:-:|:--|
 | [BlendMode](#enum_light2d_blendmode)       | [`blend_mode`](#class_light2d_property_blend_mode)                       | ``0``                 |
 | [`Color`](class_color.md)                  | [`color`](#class_light2d_property_color)                                 | ``Color(1, 1, 1, 1)`` |
 | [`bool`](class_bool.md)                    | [`editor_only`](#class_light2d_property_editor_only)                     | ``false``             |
@@ -37,6 +39,8 @@ Casts light in a 2D environment. A light is defined as a color, an energy value,
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_height`](#class_light2d_method_get_height) ( ) const[^const]                     |
 | `void`                    | [`set_height`](#class_light2d_method_set_height) ( height: [`float`](class_float.md) ) |
 

@@ -25,6 +25,8 @@ An editor for graph-like structures, using [`GraphNode`](class_graphnode.md) s.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                        | clip_contents                                                                            | ``true`` (overrides [`Control`](#class_control_property_clip_contents)) |
 | [`bool`](class_bool.md)                        | [`connection_lines_antialiased`](#class_graphedit_property_connection_lines_antialiased) | ``true``                                                                |
 | [`float`](class_float.md)                      | [`connection_lines_curvature`](#class_graphedit_property_connection_lines_curvature)     | ``0.5``                                                                 |
@@ -53,6 +55,8 @@ An editor for graph-like structures, using [`GraphNode`](class_graphnode.md) s.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedVector2Array`](class_packedvector2array.md)         | [`_get_connection_line`](#class_graphedit_private_method__get_connection_line) ( from_position: [`Vector2`](class_vector2.md), to_position: [`Vector2`](class_vector2.md) ) virtual[^virtual] const[^const]                                                                        |
 | [`bool`](class_bool.md)                                     | [`_is_in_input_hotzone`](#class_graphedit_private_method__is_in_input_hotzone) ( in_node: [`Object`](class_object.md), in_port: [`int`](class_int.md), mouse_position: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                           |
 | [`bool`](class_bool.md)                                     | [`_is_in_output_hotzone`](#class_graphedit_private_method__is_in_output_hotzone) ( in_node: [`Object`](class_object.md), in_port: [`int`](class_int.md), mouse_position: [`Vector2`](class_vector2.md) ) virtual[^virtual]                                                         |
@@ -84,6 +88,8 @@ An editor for graph-like structures, using [`GraphNode`](class_graphnode.md) s.
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`activity`](#class_graphedit_theme_color_activity)                                                     | ``Color(1, 1, 1, 1)``         |
 | [`Color`](class_color.md)         | [`connection_hover_tint_color`](#class_graphedit_theme_color_connection_hover_tint_color)               | ``Color(0, 0, 0, 0.3)``       |
 | [`Color`](class_color.md)         | [`connection_rim_color`](#class_graphedit_theme_color_connection_rim_color)                             | ``Color(0.1, 0.1, 0.1, 0.6)`` |

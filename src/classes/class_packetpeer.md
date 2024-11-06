@@ -21,10 +21,14 @@ PacketPeer is an abstraction and base class for packet-based protocols (such as 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`encode_buffer_max_size`](#class_packetpeer_property_encode_buffer_max_size) | ``8388608`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                         | [`get_available_packet_count`](#class_packetpeer_method_get_available_packet_count) ( ) const[^const]                               |
 | [`PackedByteArray`](class_packedbytearray.md) | [`get_packet`](#class_packetpeer_method_get_packet) ( )                                                                             |
 | [Error](#enum_@globalscope_error)             | [`get_packet_error`](#class_packetpeer_method_get_packet_error) ( ) const[^const]                                                   |

@@ -17,6 +17,8 @@ Pipeline multisample state (used by [`RenderingDevice`](class_renderingdevice.md
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                | [`enable_alpha_to_coverage`](#class_rdpipelinemultisamplestate_property_enable_alpha_to_coverage) | ``false`` |
 | [`bool`](class_bool.md)                                | [`enable_alpha_to_one`](#class_rdpipelinemultisamplestate_property_enable_alpha_to_one)           | ``false`` |
 | [`bool`](class_bool.md)                                | [`enable_sample_shading`](#class_rdpipelinemultisamplestate_property_enable_sample_shading)       | ``false`` |

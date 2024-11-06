@@ -23,11 +23,15 @@ The [`XRNode3D`](class_xrnode3d.md) and [`XRAnchor3D`](class_xranchor3d.md) both
 
 ## 属性
 
+|||
+|:-:|:--|
 | [TrackerHand](#enum_xrpositionaltracker_trackerhand) | [`hand`](#class_xrpositionaltracker_property_hand)       | ``0``  |
 | [`String`](class_string.md)                          | [`profile`](#class_xrpositionaltracker_property_profile) | ``""`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Variant`](class_variant.md) | [`get_input`](#class_xrpositionaltracker_method_get_input) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                |
 | [`XRPose`](class_xrpose.md)   | [`get_pose`](#class_xrpositionaltracker_method_get_pose) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                  |
 | [`bool`](class_bool.md)       | [`has_pose`](#class_xrpositionaltracker_method_has_pose) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                  |

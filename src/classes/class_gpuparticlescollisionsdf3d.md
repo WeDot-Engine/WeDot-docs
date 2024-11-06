@@ -27,6 +27,8 @@ Signed distance fields (SDF) allow for efficiently representing approximate coll
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                                     | [`bake_mask`](#class_gpuparticlescollisionsdf3d_property_bake_mask)   | ``4294967295``       |
 | [Resolution](#enum_gpuparticlescollisionsdf3d_resolution) | [`resolution`](#class_gpuparticlescollisionsdf3d_property_resolution) | ``2``                |
 | [`Vector3`](class_vector3.md)                             | [`size`](#class_gpuparticlescollisionsdf3d_property_size)             | ``Vector3(2, 2, 2)`` |
@@ -35,6 +37,8 @@ Signed distance fields (SDF) allow for efficiently representing approximate coll
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`get_bake_mask_value`](#class_gpuparticlescollisionsdf3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
 | `void`                  | [`set_bake_mask_value`](#class_gpuparticlescollisionsdf3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 

@@ -17,6 +17,8 @@ A 3D world boundary shape, intended for use in physics. **WorldBoundaryShape3D**
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Plane`](class_plane.md) | [`plane`](#class_worldboundaryshape3d_property_plane) | ``Plane(0, 1, 0, 0)`` |
 
 <!-- rst-class:: classref-section-separator -->

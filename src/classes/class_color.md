@@ -23,6 +23,8 @@ Colors can be created in various ways: By the various **Color** constructors, by
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`a`](#class_color_property_a)   | ``1.0`` |
 | [`int`](class_int.md)     | [`a8`](#class_color_property_a8) | ``255`` |
 | [`float`](class_float.md) | [`b`](#class_color_property_b)   | ``0.0`` |
@@ -37,6 +39,8 @@ Colors can be created in various ways: By the various **Color** constructors, by
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( )                                                                                                                        |
 | [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( from: [`Color`](class_color.md), alpha: [`float`](class_float.md) )                                                      |
 | [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( from: [`Color`](class_color.md) )                                                                                        |
@@ -47,6 +51,8 @@ Colors can be created in various ways: By the various **Color** constructors, by
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)   | [`blend`](#class_color_method_blend) ( over: [`Color`](class_color.md) ) const[^const]                                                                                                                |
 | [`Color`](class_color.md)   | [`clamp`](#class_color_method_clamp) ( min: [`Color`](class_color.md) = Color(0, 0, 0, 0), max: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                         |
 | [`Color`](class_color.md)   | [`darkened`](#class_color_method_darkened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                        |
@@ -75,6 +81,8 @@ Colors can be created in various ways: By the various **Color** constructors, by
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`operator !=`](class_Color.md#operator_neq_Color) ( right: [`Color`](class_color.md) ) |
 | [`Color`](class_color.md) | [`operator *`](class_Color.md#operator_mul_Color) ( right: [`Color`](class_color.md) )  |
 | [`Color`](class_color.md) | [`operator *`](class_Color.md#operator_mul_float) ( right: [`float`](class_float.md) )  |

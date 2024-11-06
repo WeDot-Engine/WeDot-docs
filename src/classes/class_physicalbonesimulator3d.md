@@ -17,6 +17,8 @@ Node that can be the parent of [`PhysicalBone3D`](class_physicalbone3d.md) and c
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`is_simulating_physics`](#class_physicalbonesimulator3d_method_is_simulating_physics) ( ) const[^const]                                                                               |
 | `void`                  | [`physical_bones_add_collision_exception`](#class_physicalbonesimulator3d_method_physical_bones_add_collision_exception) ( exception: [`RID`](class_rid.md) )                          |
 | `void`                  | [`physical_bones_remove_collision_exception`](#class_physicalbonesimulator3d_method_physical_bones_remove_collision_exception) ( exception: [`RID`](class_rid.md) )                    |

@@ -17,6 +17,8 @@ Universal Plug and Play (UPnP) device. See [`UPNP`](class_upnp.md) for UPnP disc
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)             | [`description_url`](#class_upnpdevice_property_description_url)   | ``""`` |
 | [`String`](class_string.md)             | [`igd_control_url`](#class_upnpdevice_property_igd_control_url)   | ``""`` |
 | [`String`](class_string.md)             | [`igd_our_addr`](#class_upnpdevice_property_igd_our_addr)         | ``""`` |
@@ -26,6 +28,8 @@ Universal Plug and Play (UPnP) device. See [`UPNP`](class_upnp.md) for UPnP disc
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)       | [`add_port_mapping`](#class_upnpdevice_method_add_port_mapping) ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const] |
 | [`int`](class_int.md)       | [`delete_port_mapping`](#class_upnpdevice_method_delete_port_mapping) ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]                                                                                                                  |
 | [`bool`](class_bool.md)     | [`is_valid_gateway`](#class_upnpdevice_method_is_valid_gateway) ( ) const[^const]                                                                                                                                                                                                |

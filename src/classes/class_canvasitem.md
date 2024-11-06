@@ -27,6 +27,8 @@ Note that properties like transform, modulation, and visibility are only propaga
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ClipChildrenMode](#enum_canvasitem_clipchildrenmode) | [`clip_children`](#class_canvasitem_property_clip_children)             | ``0``                 |
 | [`int`](class_int.md)                                 | [`light_mask`](#class_canvasitem_property_light_mask)                   | ``1``                 |
 | [`Material`](class_material.md)                       | [`material`](#class_canvasitem_property_material)                       |                       |
@@ -45,6 +47,8 @@ Note that properties like transform, modulation, and visibility are only propaga
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                | [`_draw`](#class_canvasitem_private_method__draw) ( ) virtual[^virtual]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `void`                                | [`draw_animation_slice`](#class_canvasitem_method_draw_animation_slice) ( animation_length: [`float`](class_float.md), slice_begin: [`float`](class_float.md), slice_end: [`float`](class_float.md), offset: [`float`](class_float.md) = 0.0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `void`                                | [`draw_arc`](#class_canvasitem_method_draw_arc) ( center: [`Vector2`](class_vector2.md), radius: [`float`](class_float.md), start_angle: [`float`](class_float.md), end_angle: [`float`](class_float.md), point_count: [`int`](class_int.md), color: [`Color`](class_color.md), width: [`float`](class_float.md) = -1.0, antialiased: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                                                                                               |

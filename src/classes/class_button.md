@@ -61,6 +61,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 属性
 
+|||
+|:-:|:--|
 | [HorizontalAlignment](#enum_@globalscope_horizontalalignment) | [`alignment`](#class_button_property_alignment)                             | ``1``     |
 | [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](#class_button_property_autowrap_mode)                     | ``0``     |
 | [`bool`](class_bool.md)                                       | [`clip_text`](#class_button_property_clip_text)                             | ``false`` |
@@ -76,6 +78,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`font_color`](#class_button_theme_color_font_color)                                  | ``Color(0.875, 0.875, 0.875, 1)``   |
 | [`Color`](class_color.md)         | [`font_disabled_color`](#class_button_theme_color_font_disabled_color)                | ``Color(0.875, 0.875, 0.875, 0.5)`` |
 | [`Color`](class_color.md)         | [`font_focus_color`](#class_button_theme_color_font_focus_color)                      | ``Color(0.95, 0.95, 0.95, 1)``      |

@@ -21,6 +21,8 @@ To force an update earlier on, call [`update_internals`](#class_tilemaplayer_met
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                       | [`collision_enabled`](#class_tilemaplayer_property_collision_enabled)                   | ``true``              |
 | [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) | [`collision_visibility_mode`](#class_tilemaplayer_property_collision_visibility_mode)   | ``0``                 |
 | [`bool`](class_bool.md)                                       | [`enabled`](#class_tilemaplayer_property_enabled)                                       | ``true``              |
@@ -35,6 +37,8 @@ To force an update earlier on, call [`update_internals`](#class_tilemaplayer_met
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                  | [`_tile_data_runtime_update`](#class_tilemaplayer_private_method__tile_data_runtime_update) ( coords: [`Vector2i`](class_vector2i.md), tile_data: [`TileData`](class_tiledata.md) ) virtual[^virtual]                                                                             |
 | [`bool`](class_bool.md)                                 | [`_use_tile_data_runtime_update`](#class_tilemaplayer_private_method__use_tile_data_runtime_update) ( coords: [`Vector2i`](class_vector2i.md) ) virtual[^virtual]                                                                                                                 |
 | `void`                                                  | [`clear`](#class_tilemaplayer_method_clear) ( )                                                                                                                                                                                                                                   |

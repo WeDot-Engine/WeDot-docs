@@ -57,6 +57,8 @@ An array data structure that can contain a sequence of elements of any [`Variant
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( )                                                                                                                                                      |
 | [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( base: [`Array`](class_array.md), type: [`int`](class_int.md), class_name: [`StringName`](class_stringname.md), script: [`Variant`](class_variant.md) ) |
 | [`Array`](class_array.md) | [`Array`](#class_array_constructor_array) ( from: [`Array`](class_array.md) )                                                                                                                      |
@@ -73,6 +75,8 @@ An array data structure that can contain a sequence of elements of any [`Variant
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`all`](#class_array_method_all) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                           |
 | [`bool`](class_bool.md)             | [`any`](#class_array_method_any) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                           |
 | `void`                              | [`append`](#class_array_method_append) ( value: [`Variant`](class_variant.md) )                                                                                                                      |
@@ -122,6 +126,8 @@ An array data structure that can contain a sequence of elements of any [`Variant
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`operator !=`](class_Array.md#operator_neq_Array) ( right: [`Array`](class_array.md) ) |
 | [`Array`](class_array.md)     | [`operator +`](class_Array.md#operator_sum_Array) ( right: [`Array`](class_array.md) )  |
 | [`bool`](class_bool.md)       | [`operator <`](class_Array.md#operator_lt_Array) ( right: [`Array`](class_array.md) )   |

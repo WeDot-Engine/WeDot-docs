@@ -23,10 +23,14 @@ If in the editor, you can set the rest pose of an entire skeleton using a menu o
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Transform2D`](class_transform2d.md) | [`rest`](#class_bone2d_property_rest) | ``Transform2D(0, 0, 0, 0, 0, 0)`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                | [`apply_rest`](#class_bone2d_method_apply_rest) ( )                                                                                         |
 | [`bool`](class_bool.md)               | [`get_autocalculate_length_and_angle`](#class_bone2d_method_get_autocalculate_length_and_angle) ( ) const[^const]                           |
 | [`float`](class_float.md)             | [`get_bone_angle`](#class_bone2d_method_get_bone_angle) ( ) const[^const]                                                                   |

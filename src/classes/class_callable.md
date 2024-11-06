@@ -100,12 +100,16 @@ In GDScript, you can access methods and global functions as **Callable** s:
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Callable`](class_callable.md) | [`Callable`](#class_callable_constructor_callable) ( )                                                                                  |
 | [`Callable`](class_callable.md) | [`Callable`](#class_callable_constructor_callable) ( from: [`Callable`](class_callable.md) )                                            |
 | [`Callable`](class_callable.md) | [`Callable`](#class_callable_constructor_callable) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md) ) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Callable`](class_callable.md)     | [`bind`](#class_callable_method_bind) ( ... ) vararg[^vararg] const[^const]                                                                       |
 | [`Callable`](class_callable.md)     | [`bindv`](#class_callable_method_bindv) ( arguments: [`Array`](class_array.md) )                                                                  |
 | [`Variant`](class_variant.md)       | [`call`](#class_callable_method_call) ( ... ) vararg[^vararg] const[^const]                                                                       |
@@ -129,6 +133,8 @@ In GDScript, you can access methods and global functions as **Callable** s:
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`operator !=`](class_Callable.md#operator_neq_Callable) ( right: [`Callable`](class_callable.md) ) |
 | [`bool`](class_bool.md) | [`operator ==`](class_Callable.md#operator_eq_Callable) ( right: [`Callable`](class_callable.md) )  |
 

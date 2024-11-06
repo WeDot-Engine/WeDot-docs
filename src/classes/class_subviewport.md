@@ -19,6 +19,8 @@ An interface to a game world that doesn't create a window or draw to the screen 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ClearMode](#enum_subviewport_clearmode)   | [`render_target_clear_mode`](#class_subviewport_property_render_target_clear_mode)   | ``0``                  |
 | [UpdateMode](#enum_subviewport_updatemode) | [`render_target_update_mode`](#class_subviewport_property_render_target_update_mode) | ``2``                  |
 | [`Vector2i`](class_vector2i.md)            | [`size`](#class_subviewport_property_size)                                           | ``Vector2i(512, 512)`` |

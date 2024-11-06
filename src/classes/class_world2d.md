@@ -17,6 +17,8 @@ Class that has everything pertaining to a 2D world: A physics space, a canvas, a
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md)                                             | [`canvas`](#class_world2d_property_canvas)                         |
 | [`PhysicsDirectSpaceState2D`](class_physicsdirectspacestate2d.md) | [`direct_space_state`](#class_world2d_property_direct_space_state) |
 | [`RID`](class_rid.md)                                             | [`navigation_map`](#class_world2d_property_navigation_map)         |

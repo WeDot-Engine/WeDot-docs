@@ -19,6 +19,8 @@ Provides direct access to a physics body in the [`PhysicsServer3D`](class_physic
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector3`](class_vector3.md)         | [`angular_velocity`](#class_physicsdirectbodystate3d_property_angular_velocity)             |
 | [`Vector3`](class_vector3.md)         | [`center_of_mass`](#class_physicsdirectbodystate3d_property_center_of_mass)                 |
 | [`Vector3`](class_vector3.md)         | [`center_of_mass_local`](#class_physicsdirectbodystate3d_property_center_of_mass_local)     |
@@ -36,6 +38,8 @@ Provides direct access to a physics body in the [`PhysicsServer3D`](class_physic
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                            | [`add_constant_central_force`](#class_physicsdirectbodystate3d_method_add_constant_central_force) ( force: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )                          |
 | `void`                                                            | [`add_constant_force`](#class_physicsdirectbodystate3d_method_add_constant_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) ) |
 | `void`                                                            | [`add_constant_torque`](#class_physicsdirectbodystate3d_method_add_constant_torque) ( torque: [`Vector3`](class_vector3.md) )                                                          |

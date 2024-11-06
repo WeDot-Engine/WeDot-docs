@@ -17,6 +17,8 @@ A library of meshes. Contains a list of [`Mesh`](class_mesh.md) resources, each 
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                          | [`clear`](#class_meshlibrary_method_clear) ( )                                                                                                                                             |
 | `void`                                          | [`create_item`](#class_meshlibrary_method_create_item) ( id: [`int`](class_int.md) )                                                                                                       |
 | [`int`](class_int.md)                           | [`find_item_by_name`](#class_meshlibrary_method_find_item_by_name) ( name: [`String`](class_string.md) ) const[^const]                                                                     |

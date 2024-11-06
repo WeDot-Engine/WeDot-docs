@@ -17,6 +17,8 @@ A 2D texture that obtains colors from a [`Gradient`](class_gradient.md) to fill 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Fill](#enum_gradienttexture2d_fill)     | [`fill`](#class_gradienttexture2d_property_fill)           | ``0``                                                                                |
 | [`Vector2`](class_vector2.md)            | [`fill_from`](#class_gradienttexture2d_property_fill_from) | ``Vector2(0, 0)``                                                                    |
 | [`Vector2`](class_vector2.md)            | [`fill_to`](#class_gradienttexture2d_property_fill_to)     | ``Vector2(1, 0)``                                                                    |

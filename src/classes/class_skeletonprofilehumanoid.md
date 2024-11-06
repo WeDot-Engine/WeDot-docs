@@ -79,6 +79,8 @@ A humanoid skeleton profile contains 54 bones divided in 4 groups: `"Body"`, `"F
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)               | bone_size       | ``56`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_bone_size))            |
 | [`int`](class_int.md)               | group_size      | ``4`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_group_size))            |
 | [`StringName`](class_stringname.md) | root_bone       | ``&"Root"`` (overrides [`SkeletonProfile`](#class_skeletonprofile_property_root_bone))       |

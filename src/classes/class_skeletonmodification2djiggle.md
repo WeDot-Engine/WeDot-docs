@@ -23,6 +23,8 @@ This modification is useful for adding additional motion to things like hair, th
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)       | [`damping`](#class_skeletonmodification2djiggle_property_damping)                                   | ``0.75``          |
 | [`Vector2`](class_vector2.md)   | [`gravity`](#class_skeletonmodification2djiggle_property_gravity)                                   | ``Vector2(0, 6)`` |
 | [`int`](class_int.md)           | [`jiggle_data_chain_length`](#class_skeletonmodification2djiggle_property_jiggle_data_chain_length) | ``0``             |
@@ -33,6 +35,8 @@ This modification is useful for adding additional motion to things like hair, th
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)           | [`get_collision_mask`](#class_skeletonmodification2djiggle_method_get_collision_mask) ( ) const[^const]                                                                                      |
 | [`NodePath`](class_nodepath.md) | [`get_jiggle_joint_bone2d_node`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_bone2d_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                 |
 | [`int`](class_int.md)           | [`get_jiggle_joint_bone_index`](#class_skeletonmodification2djiggle_method_get_jiggle_joint_bone_index) ( joint_idx: [`int`](class_int.md) ) const[^const]                                   |

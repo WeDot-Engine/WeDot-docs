@@ -19,6 +19,8 @@ See also [`RDShaderFile`](class_rdshaderfile.md). **RDShaderSource** is only mea
 
 ## 属性
 
+|||
+|:-:|:--|
 | [ShaderLanguage](#enum_renderingdevice_shaderlanguage) | [`language`](#class_rdshadersource_property_language)                                           | ``0``  |
 | [`String`](class_string.md)                            | [`source_compute`](#class_rdshadersource_property_source_compute)                               | ``""`` |
 | [`String`](class_string.md)                            | [`source_fragment`](#class_rdshadersource_property_source_fragment)                             | ``""`` |
@@ -28,6 +30,8 @@ See also [`RDShaderFile`](class_rdshaderfile.md). **RDShaderSource** is only mea
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`get_stage_source`](#class_rdshadersource_method_get_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                        |
 | `void`                      | [`set_stage_source`](#class_rdshadersource_method_set_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), source: [`String`](class_string.md) ) |
 

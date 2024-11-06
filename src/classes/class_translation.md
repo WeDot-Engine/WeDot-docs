@@ -19,10 +19,14 @@ A language translation that maps a collection of strings to their individual tra
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`locale`](#class_translation_property_locale) | ``"en"`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`StringName`](class_stringname.md)               | [`_get_message`](#class_translation_private_method__get_message) ( src_message: [`StringName`](class_stringname.md), context: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                                                                                                  |
 | [`StringName`](class_stringname.md)               | [`_get_plural_message`](#class_translation_private_method__get_plural_message) ( src_message: [`StringName`](class_stringname.md), src_plural_message: [`StringName`](class_stringname.md), n: [`int`](class_int.md), context: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const] |
 | `void`                                            | [`add_message`](#class_translation_method_add_message) ( src_message: [`StringName`](class_stringname.md), xlated_message: [`StringName`](class_stringname.md), context: [`StringName`](class_stringname.md) = &"" )                                                                                 |

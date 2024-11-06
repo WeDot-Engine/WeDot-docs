@@ -19,6 +19,8 @@ To manage editor feature profiles visually, use **Editor > Manage Feature Profil
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)       | [`get_feature_name`](#class_editorfeatureprofile_method_get_feature_name) ( feature: [Feature](#enum_editorfeatureprofile_feature) )                                                                                               |
 | [`bool`](class_bool.md)           | [`is_class_disabled`](#class_editorfeatureprofile_method_is_class_disabled) ( class_name: [`StringName`](class_stringname.md) ) const[^const]                                                                                      |
 | [`bool`](class_bool.md)           | [`is_class_editor_disabled`](#class_editorfeatureprofile_method_is_class_editor_disabled) ( class_name: [`StringName`](class_stringname.md) ) const[^const]                                                                        |

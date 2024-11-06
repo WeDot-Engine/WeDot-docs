@@ -30,6 +30,8 @@ Comma-separated values are a plain text table storage format. The format's simpl
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`compress`](#class_resourceimportercsvtranslation_property_compress)   | ``true`` |
 | [`int`](class_int.md)   | [`delimiter`](#class_resourceimportercsvtranslation_property_delimiter) | ``0``    |
 

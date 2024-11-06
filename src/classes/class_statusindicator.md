@@ -15,6 +15,8 @@ Application status indicator (aka notification area icon).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md) | [`icon`](#class_statusindicator_property_icon)       |                  |
 | [`NodePath`](class_nodepath.md)   | [`menu`](#class_statusindicator_property_menu)       | ``NodePath("")`` |
 | [`String`](class_string.md)       | [`tooltip`](#class_statusindicator_property_tooltip) | ``""``           |
@@ -22,6 +24,8 @@ Application status indicator (aka notification area icon).
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Rect2`](class_rect2.md) | [`get_rect`](#class_statusindicator_method_get_rect) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

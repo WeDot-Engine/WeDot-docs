@@ -17,6 +17,8 @@ This class is used to query and configure a certain import format. It is used in
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`PackedStringArray`](class_packedstringarray.md) | [`_get_file_extensions`](#class_editorfilesystemimportformatsupportquery_private_method__get_file_extensions) ( ) virtual[^virtual] const[^const] |
 | [`bool`](class_bool.md)                           | [`_is_active`](#class_editorfilesystemimportformatsupportquery_private_method__is_active) ( ) virtual[^virtual] const[^const]                     |
 | [`bool`](class_bool.md)                           | [`_query`](#class_editorfilesystemimportformatsupportquery_private_method__query) ( ) virtual[^virtual] const[^const]                             |

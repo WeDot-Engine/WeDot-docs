@@ -19,6 +19,8 @@ Translated to `bool` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`constant`](#class_visualshadernodebooleanconstant_property_constant) | ``false`` |
 
 <!-- rst-class:: classref-section-separator -->

@@ -45,10 +45,14 @@ Command key names use slash delimiters to distinguish sections, for example: `"e
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | dialog_hide_on_ok | ``false`` (overrides [`AcceptDialog`](#class_acceptdialog_property_dialog_hide_on_ok)) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`add_command`](#class_editorcommandpalette_method_add_command) ( command_name: [`String`](class_string.md), key_name: [`String`](class_string.md), binded_callable: [`Callable`](class_callable.md), shortcut_text: [`String`](class_string.md) = "None" ) |
 | `void` | [`remove_command`](#class_editorcommandpalette_method_remove_command) ( key_name: [`String`](class_string.md) )                                                                                                                                             |
 

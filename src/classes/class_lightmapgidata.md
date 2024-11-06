@@ -17,11 +17,15 @@ Contains baked lightmap and dynamic object probe data for [`LightmapGI`](class_l
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`TextureLayered`](class_texturelayered.md)                         | [`light_texture`](#class_lightmapgidata_property_light_texture)         |        |
 | [Array](class_array.md) [`TextureLayered`](class_texturelayered.md) | [`lightmap_textures`](#class_lightmapgidata_property_lightmap_textures) | ``[]`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                          | [`add_user`](#class_lightmapgidata_method_add_user) ( path: [`NodePath`](class_nodepath.md), uv_scale: [`Rect2`](class_rect2.md), slice_index: [`int`](class_int.md), sub_instance: [`int`](class_int.md) ) |
 | `void`                          | [`clear_users`](#class_lightmapgidata_method_clear_users) ( )                                                                                                                                               |
 | [`int`](class_int.md)           | [`get_user_count`](#class_lightmapgidata_method_get_user_count) ( ) const[^const]                                                                                                                           |

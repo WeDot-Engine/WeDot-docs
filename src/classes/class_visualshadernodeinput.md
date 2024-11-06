@@ -17,10 +17,14 @@ Gives access to input variables (built-ins) available for the shader. See the sh
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`input_name`](#class_visualshadernodeinput_property_input_name) | ``"[None]"`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`get_input_real_name`](#class_visualshadernodeinput_method_get_input_real_name) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

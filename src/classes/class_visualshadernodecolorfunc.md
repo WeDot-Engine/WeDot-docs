@@ -17,6 +17,8 @@ Accept a [`Color`](class_color.md) to the input port and transform it according 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Function](#enum_visualshadernodecolorfunc_function) | [`function`](#class_visualshadernodecolorfunc_property_function) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

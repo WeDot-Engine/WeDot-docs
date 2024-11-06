@@ -17,6 +17,8 @@ Simulates the sound of acoustic environments such as rooms, concert halls, caver
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`damping`](#class_audioeffectreverb_property_damping)                     | ``0.5``   |
 | [`float`](class_float.md) | [`dry`](#class_audioeffectreverb_property_dry)                             | ``1.0``   |
 | [`float`](class_float.md) | [`hipass`](#class_audioeffectreverb_property_hipass)                       | ``0.0``   |

@@ -41,6 +41,8 @@ This is an abstract class, so to get the currently active **TextServer** instanc
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md)                                       | [`create_font`](#class_textserver_method_create_font) ( )                                                                                                                                                                                                                                                                                                                                |
 | [`RID`](class_rid.md)                                       | [`create_font_linked_variation`](#class_textserver_method_create_font_linked_variation) ( font_rid: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                              |
 | [`RID`](class_rid.md)                                       | [`create_shaped_text`](#class_textserver_method_create_shaped_text) ( direction: [Direction](#enum_textserver_direction) = 0, orientation: [Orientation](#enum_textserver_orientation) = 0 )                                                                                                                                                                                             |

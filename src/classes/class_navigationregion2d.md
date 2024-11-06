@@ -31,6 +31,8 @@ The pathfinding cost of traveling distances inside this region can be controlled
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                           | [`enabled`](#class_navigationregion2d_property_enabled)                           | ``true`` |
 | [`float`](class_float.md)                         | [`enter_cost`](#class_navigationregion2d_property_enter_cost)                     | ``0.0``  |
 | [`int`](class_int.md)                             | [`navigation_layers`](#class_navigationregion2d_property_navigation_layers)       | ``1``    |
@@ -40,6 +42,8 @@ The pathfinding cost of traveling distances inside this region can be controlled
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                  | [`bake_navigation_polygon`](#class_navigationregion2d_method_bake_navigation_polygon) ( on_thread: [`bool`](class_bool.md) = true )                                 |
 | [`bool`](class_bool.md) | [`get_navigation_layer_value`](#class_navigationregion2d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
 | [`RID`](class_rid.md)   | [`get_navigation_map`](#class_navigationregion2d_method_get_navigation_map) ( ) const[^const]                                                                       |

@@ -19,6 +19,8 @@ It can be set to update another node's position, rotation and/or scale. It can u
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md) | [`remote_path`](#class_remotetransform2d_property_remote_path)                       | ``NodePath("")`` |
 | [`bool`](class_bool.md)         | [`update_position`](#class_remotetransform2d_property_update_position)               | ``true``         |
 | [`bool`](class_bool.md)         | [`update_rotation`](#class_remotetransform2d_property_update_rotation)               | ``true``         |
@@ -27,6 +29,8 @@ It can be set to update another node's position, rotation and/or scale. It can u
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`force_update_cache`](#class_remotetransform2d_method_force_update_cache) ( ) |
 
 <!-- rst-class:: classref-section-separator -->

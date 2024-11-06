@@ -21,6 +21,8 @@ The provided code is directly injected into the graph's matching shader function
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`expression`](#class_visualshadernodeexpression_property_expression) | ``""`` |
 
 <!-- rst-class:: classref-section-separator -->

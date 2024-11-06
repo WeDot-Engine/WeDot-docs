@@ -47,12 +47,16 @@ In GDScript, signals can be declared with the `signal` keyword. In C#, you may u
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( )                                                                                  |
 | [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( from: [`Signal`](class_signal.md) )                                                |
 | [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( object: [`Object`](class_object.md), signal: [`StringName`](class_stringname.md) ) |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)               | [`connect`](#class_signal_method_connect) ( callable: [`Callable`](class_callable.md), flags: [`int`](class_int.md) = 0 ) |
 | `void`                              | [`disconnect`](#class_signal_method_disconnect) ( callable: [`Callable`](class_callable.md) )                             |
 | `void`                              | [`emit`](#class_signal_method_emit) ( ... ) vararg[^vararg] const[^const]                                                 |
@@ -65,6 +69,8 @@ In GDScript, signals can be declared with the `signal` keyword. In C#, you may u
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`operator !=`](class_Signal.md#operator_neq_Signal) ( right: [`Signal`](class_signal.md) ) |
 | [`bool`](class_bool.md) | [`operator ==`](class_Signal.md#operator_eq_Signal) ( right: [`Signal`](class_signal.md) )  |
 

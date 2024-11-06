@@ -19,6 +19,8 @@ Base class for contextual windows and panels with fixed position.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | borderless    | ``true`` (overrides [`Window`](#class_window_property_borderless))    |
 | [`bool`](class_bool.md) | popup_window  | ``true`` (overrides [`Window`](#class_window_property_popup_window))  |
 | [`bool`](class_bool.md) | transient     | ``true`` (overrides [`Window`](#class_window_property_transient))     |

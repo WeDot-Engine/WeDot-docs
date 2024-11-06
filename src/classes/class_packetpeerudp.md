@@ -19,6 +19,8 @@ UDP packet peer. Can be used to send raw UDP packets as well as [`Variant`](clas
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error) | [`bind`](#class_packetpeerudp_method_bind) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*", recv_buf_size: [`int`](class_int.md) = 65536 )    |
 | `void`                            | [`close`](#class_packetpeerudp_method_close) ( )                                                                                                                             |
 | [Error](#enum_@globalscope_error) | [`connect_to_host`](#class_packetpeerudp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                          |

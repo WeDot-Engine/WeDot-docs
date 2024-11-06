@@ -19,12 +19,16 @@ This [`SkeletonModification2D`](class_skeletonmodification2d.md) rotates a bone 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md) | [`bone2d_node`](#class_skeletonmodification2dlookat_property_bone2d_node)         | ``NodePath("")`` |
 | [`int`](class_int.md)           | [`bone_index`](#class_skeletonmodification2dlookat_property_bone_index)           | ``-1``           |
 | [`NodePath`](class_nodepath.md) | [`target_nodepath`](#class_skeletonmodification2dlookat_property_target_nodepath) | ``NodePath("")`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_additional_rotation`](#class_skeletonmodification2dlookat_method_get_additional_rotation) ( ) const[^const]                           |
 | [`bool`](class_bool.md)   | [`get_constraint_angle_invert`](#class_skeletonmodification2dlookat_method_get_constraint_angle_invert) ( ) const[^const]                   |
 | [`float`](class_float.md) | [`get_constraint_angle_max`](#class_skeletonmodification2dlookat_method_get_constraint_angle_max) ( ) const[^const]                         |

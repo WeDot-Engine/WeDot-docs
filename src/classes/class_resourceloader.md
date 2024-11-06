@@ -21,6 +21,8 @@ It uses the many [`ResourceFormatLoader`](class_resourceformatloader.md) classes
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                    | [`add_resource_format_loader`](#class_resourceloader_method_add_resource_format_loader) ( format_loader: [`ResourceFormatLoader`](class_resourceformatloader.md), at_front: [`bool`](class_bool.md) = false )                                                                   |
 | [`bool`](class_bool.md)                                   | [`exists`](#class_resourceloader_method_exists) ( path: [`String`](class_string.md), type_hint: [`String`](class_string.md) = "" )                                                                                                                                              |
 | [`PackedStringArray`](class_packedstringarray.md)         | [`get_dependencies`](#class_resourceloader_method_get_dependencies) ( path: [`String`](class_string.md) )                                                                                                                                                                       |

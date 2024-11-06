@@ -17,12 +17,16 @@ This node selects a bone in a [`Skeleton3D`](class_skeleton3d.md) and attaches t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)       | [`bone_idx`](#class_boneattachment3d_property_bone_idx)           | ``-1``    |
 | [`String`](class_string.md) | [`bone_name`](#class_boneattachment3d_property_bone_name)         | ``""``    |
 | [`bool`](class_bool.md)     | [`override_pose`](#class_boneattachment3d_property_override_pose) | ``false`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`NodePath`](class_nodepath.md) | [`get_external_skeleton`](#class_boneattachment3d_method_get_external_skeleton) ( ) const[^const]                                          |
 | [`bool`](class_bool.md)         | [`get_use_external_skeleton`](#class_boneattachment3d_method_get_use_external_skeleton) ( ) const[^const]                                  |
 | `void`                          | [`on_skeleton_update`](#class_boneattachment3d_method_on_skeleton_update) ( )                                                              |

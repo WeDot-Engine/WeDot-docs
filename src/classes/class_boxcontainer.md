@@ -19,15 +19,21 @@ A container that arranges its child controls horizontally or vertically, rearran
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AlignmentMode](#enum_boxcontainer_alignmentmode) | [`alignment`](#class_boxcontainer_property_alignment) | ``0``     |
 | [`bool`](class_bool.md)                           | [`vertical`](#class_boxcontainer_property_vertical)   | ``false`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Control`](class_control.md) | [`add_spacer`](#class_boxcontainer_method_add_spacer) ( begin: [`bool`](class_bool.md) ) |
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`separation`](#class_boxcontainer_theme_constant_separation) | ``4`` |
 
 <!-- rst-class:: classref-section-separator -->

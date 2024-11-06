@@ -107,10 +107,14 @@ Can be used to save a node to a file. When saving, the node as well as all the n
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md) | [`_bundled`](#class_packedscene_property__bundled) | ``{ "conn_count": 0, "conns": PackedInt32Array(), "editable_instances": [], "names": PackedStringArray(), "node_count": 0, "node_paths": [], "nodes": PackedInt32Array(), "variants": [], "version": 3 }`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`can_instantiate`](#class_packedscene_method_can_instantiate) ( ) const[^const]                                                        |
 | [`SceneState`](class_scenestate.md) | [`get_state`](#class_packedscene_method_get_state) ( ) const[^const]                                                                    |
 | [`Node`](class_node.md)             | [`instantiate`](#class_packedscene_method_instantiate) ( edit_state: [GenEditState](#enum_packedscene_geneditstate) = 0 ) const[^const] |

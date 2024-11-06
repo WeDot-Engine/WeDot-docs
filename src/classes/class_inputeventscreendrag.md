@@ -17,6 +17,8 @@ Stores information about screen drag events. See [`Node._input`](#class_node_pri
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)         | [`index`](#class_inputeventscreendrag_property_index)                     | ``0``             |
 | [`bool`](class_bool.md)       | [`pen_inverted`](#class_inputeventscreendrag_property_pen_inverted)       | ``false``         |
 | [`Vector2`](class_vector2.md) | [`position`](#class_inputeventscreendrag_property_position)               | ``Vector2(0, 0)`` |

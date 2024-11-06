@@ -21,10 +21,14 @@ This class is used by a [`ShaderMaterial`](class_shadermaterial.md) and allows y
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md) | [`code`](#class_shader_property_code) | ``""`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Texture2D`](class_texture2d.md) | [`get_default_texture_parameter`](#class_shader_method_get_default_texture_parameter) ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]                               |
 | [Mode](#enum_shader_mode)         | [`get_mode`](#class_shader_method_get_mode) ( ) const[^const]                                                                                                                                                     |
 | [`Array`](class_array.md)         | [`get_shader_uniform_list`](#class_shader_method_get_shader_uniform_list) ( get_groups: [`bool`](class_bool.md) = false )                                                                                         |

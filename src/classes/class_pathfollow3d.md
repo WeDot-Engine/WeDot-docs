@@ -19,6 +19,8 @@ It is useful for making other nodes follow a path, without coding the movement p
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                         | [`cubic_interp`](#class_pathfollow3d_property_cubic_interp)       | ``true``  |
 | [`float`](class_float.md)                       | [`h_offset`](#class_pathfollow3d_property_h_offset)               | ``0.0``   |
 | [`bool`](class_bool.md)                         | [`loop`](#class_pathfollow3d_property_loop)                       | ``true``  |
@@ -31,6 +33,8 @@ It is useful for making other nodes follow a path, without coding the movement p
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Transform3D`](class_transform3d.md) | [`correct_posture`](#class_pathfollow3d_method_correct_posture) ( transform: [`Transform3D`](class_transform3d.md), rotation_mode: [RotationMode](#enum_pathfollow3d_rotationmode) ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->

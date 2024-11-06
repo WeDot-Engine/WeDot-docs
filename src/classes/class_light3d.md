@@ -19,6 +19,8 @@ Light3D is the *abstract* base class for light nodes. As it can't be instantiate
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)          | [`distance_fade_begin`](#class_light3d_property_distance_fade_begin)                 | ``40.0``              |
 | [`bool`](class_bool.md)            | [`distance_fade_enabled`](#class_light3d_property_distance_fade_enabled)             | ``false``             |
 | [`float`](class_float.md)          | [`distance_fade_length`](#class_light3d_property_distance_fade_length)               | ``10.0``              |
@@ -48,6 +50,8 @@ Light3D is the *abstract* base class for light nodes. As it can't be instantiate
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md) | [`get_correlated_color`](#class_light3d_method_get_correlated_color) ( ) const[^const]                                   |
 | [`float`](class_float.md) | [`get_param`](#class_light3d_method_get_param) ( param: [Param](#enum_light3d_param) ) const[^const]                     |
 | `void`                    | [`set_param`](#class_light3d_method_set_param) ( param: [Param](#enum_light3d_param), value: [`float`](class_float.md) ) |

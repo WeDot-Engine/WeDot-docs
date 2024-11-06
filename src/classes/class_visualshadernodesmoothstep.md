@@ -19,6 +19,8 @@ Returns `0.0` if `x` is smaller than `edge0` and `1.0` if `x` is larger than `ed
 
 ## 属性
 
+|||
+|:-:|:--|
 | [OpType](#enum_visualshadernodesmoothstep_optype) | [`op_type`](#class_visualshadernodesmoothstep_property_op_type) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

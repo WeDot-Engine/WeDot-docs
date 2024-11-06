@@ -17,6 +17,8 @@ A visual shader node that makes particles emitted in a shape defined by a [`Mesh
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Mesh`](class_mesh.md) | [`mesh`](#class_visualshadernodeparticlemeshemitter_property_mesh)                         |          |
 | [`int`](class_int.md)   | [`surface_index`](#class_visualshadernodeparticlemeshemitter_property_surface_index)       | ``0``    |
 | [`bool`](class_bool.md) | [`use_all_surfaces`](#class_visualshadernodeparticlemeshemitter_property_use_all_surfaces) | ``true`` |

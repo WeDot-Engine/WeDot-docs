@@ -17,11 +17,15 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                            | [`binding`](#class_rduniform_property_binding)           | ``0`` |
 | [UniformType](#enum_renderingdevice_uniformtype) | [`uniform_type`](#class_rduniform_property_uniform_type) | ``3`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                        | [`add_id`](#class_rduniform_method_add_id) ( id: [`RID`](class_rid.md) ) |
 | `void`                                        | [`clear_ids`](#class_rduniform_method_clear_ids) ( )                     |
 | [Array](class_array.md) [`RID`](class_rid.md) | [`get_ids`](#class_rduniform_method_get_ids) ( ) const[^const]           |

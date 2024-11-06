@@ -21,11 +21,15 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Basis`](class_basis.md)     | [`basis`](#class_transform3d_property_basis)   | ``Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)`` |
 | [`Vector3`](class_vector3.md) | [`origin`](#class_transform3d_property_origin) | ``Vector3(0, 0, 0)``                 |
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`Transform3D`](class_transform3d.md) | [`Transform3D`](#class_transform3d_constructor_transform3d) ( )                                                                                                                                                            |
 | [`Transform3D`](class_transform3d.md) | [`Transform3D`](#class_transform3d_constructor_transform3d) ( from: [`Transform3D`](class_transform3d.md) )                                                                                                                |
 | [`Transform3D`](class_transform3d.md) | [`Transform3D`](#class_transform3d_constructor_transform3d) ( basis: [`Basis`](class_basis.md), origin: [`Vector3`](class_vector3.md) )                                                                                    |
@@ -34,6 +38,8 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Transform3D`](class_transform3d.md) | [`affine_inverse`](#class_transform3d_method_affine_inverse) ( ) const[^const]                                                                                                                                       |
 | [`Transform3D`](class_transform3d.md) | [`interpolate_with`](#class_transform3d_method_interpolate_with) ( xform: [`Transform3D`](class_transform3d.md), weight: [`float`](class_float.md) ) const[^const]                                                   |
 | [`Transform3D`](class_transform3d.md) | [`inverse`](#class_transform3d_method_inverse) ( ) const[^const]                                                                                                                                                     |
@@ -50,6 +56,8 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                             | [`operator !=`](class_Transform3D.md#operator_neq_Transform3D) ( right: [`Transform3D`](class_transform3d.md) )                     |
 | [`AABB`](class_aabb.md)                             | [`operator *`](class_Transform3D.md#operator_mul_AABB) ( right: [`AABB`](class_aabb.md) )                                           |
 | [`PackedVector3Array`](class_packedvector3array.md) | [`operator *`](class_Transform3D.md#operator_mul_PackedVector3Array) ( right: [`PackedVector3Array`](class_packedvector3array.md) ) |

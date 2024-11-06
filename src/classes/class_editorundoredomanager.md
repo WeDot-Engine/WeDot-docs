@@ -31,6 +31,8 @@ The manager's API is mostly the same as in [`UndoRedo`](class_undoredo.md), so y
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                          | [`add_do_method`](#class_editorundoredomanager_method_add_do_method) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                            |
 | `void`                          | [`add_do_property`](#class_editorundoredomanager_method_add_do_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                     |
 | `void`                          | [`add_do_reference`](#class_editorundoredomanager_method_add_do_reference) ( object: [`Object`](class_object.md) )                                                                                                                                                        |

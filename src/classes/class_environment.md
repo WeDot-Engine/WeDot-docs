@@ -25,6 +25,8 @@ Resource for environment nodes (like [`WorldEnvironment`](class_worldenvironment
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                              | [`adjustment_brightness`](#class_environment_property_adjustment_brightness)                                               | ``1.0``                           |
 | [`Texture`](class_texture.md)                          | [`adjustment_color_correction`](#class_environment_property_adjustment_color_correction)                                   |                                   |
 | [`float`](class_float.md)                              | [`adjustment_contrast`](#class_environment_property_adjustment_contrast)                                                   | ``1.0``                           |
@@ -126,6 +128,8 @@ Resource for environment nodes (like [`WorldEnvironment`](class_worldenvironment
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`get_glow_level`](#class_environment_method_get_glow_level) ( idx: [`int`](class_int.md) ) const[^const]                         |
 | `void`                    | [`set_glow_level`](#class_environment_method_set_glow_level) ( idx: [`int`](class_int.md), intensity: [`float`](class_float.md) ) |
 

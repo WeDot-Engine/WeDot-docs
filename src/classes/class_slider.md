@@ -19,6 +19,8 @@ Abstract base class for sliders, used to adjust a value by moving a grabber alon
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)              | [`editable`](#class_slider_property_editable)                 | ``true``                                                          |
 | [FocusMode](#enum_control_focusmode) | focus_mode                                                    | ``2`` (overrides [`Control`](#class_control_property_focus_mode)) |
 | [`bool`](class_bool.md)              | [`scrollable`](#class_slider_property_scrollable)             | ``true``                                                          |
@@ -28,6 +30,8 @@ Abstract base class for sliders, used to adjust a value by moving a grabber alon
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`center_grabber`](#class_slider_theme_constant_center_grabber)              | ``0`` |
 | [`int`](class_int.md)             | [`grabber_offset`](#class_slider_theme_constant_grabber_offset)              | ``0`` |
 | [`Texture2D`](class_texture2d.md) | [`grabber`](#class_slider_theme_icon_grabber)                                |       |

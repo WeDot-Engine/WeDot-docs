@@ -19,6 +19,8 @@ To use **EditorNode3DGizmoPlugin**, register it using the [`EditorPlugin.add_nod
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                              | [`_begin_handle_action`](#class_editornode3dgizmoplugin_private_method__begin_handle_action) ( gizmo: [`EditorNode3DGizmo`](class_editornode3dgizmo.md), handle_id: [`int`](class_int.md), secondary: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                     |
 | [`bool`](class_bool.md)                             | [`_can_be_hidden`](#class_editornode3dgizmoplugin_private_method__can_be_hidden) ( ) virtual[^virtual] const[^const]                                                                                                                                                                                                                  |
 | `void`                                              | [`_commit_handle`](#class_editornode3dgizmoplugin_private_method__commit_handle) ( gizmo: [`EditorNode3DGizmo`](class_editornode3dgizmo.md), handle_id: [`int`](class_int.md), secondary: [`bool`](class_bool.md), restore: [`Variant`](class_variant.md), cancel: [`bool`](class_bool.md) ) virtual[^virtual]                        |

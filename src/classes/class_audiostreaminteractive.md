@@ -19,11 +19,15 @@ The way this is used is by filling a number of clips, then configuring the trans
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`clip_count`](#class_audiostreaminteractive_property_clip_count)     | ``0`` |
 | [`int`](class_int.md) | [`initial_clip`](#class_audiostreaminteractive_property_initial_clip) | ``0`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                                | [`add_transition`](#class_audiostreaminteractive_method_add_transition) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md), from_time: [TransitionFromTime](#enum_audiostreaminteractive_transitionfromtime), to_time: [TransitionToTime](#enum_audiostreaminteractive_transitiontotime), fade_mode: [FadeMode](#enum_audiostreaminteractive_fademode), fade_beats: [`float`](class_float.md), use_filler_clip: [`bool`](class_bool.md) = false, filler_clip: [`int`](class_int.md) = -1, hold_previous: [`bool`](class_bool.md) = false ) |
 | `void`                                                                | [`erase_transition`](#class_audiostreaminteractive_method_erase_transition) ( from_clip: [`int`](class_int.md), to_clip: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                           |
 | [AutoAdvanceMode](#enum_audiostreaminteractive_autoadvancemode)       | [`get_clip_auto_advance`](#class_audiostreaminteractive_method_get_clip_auto_advance) ( clip_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                  |

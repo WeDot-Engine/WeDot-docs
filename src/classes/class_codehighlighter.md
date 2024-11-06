@@ -17,6 +17,8 @@ By adjusting various properties of this resource, you can change the colors of s
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Dictionary`](class_dictionary.md) | [`color_regions`](#class_codehighlighter_property_color_regions)                 | ``{}``                |
 | [`Color`](class_color.md)           | [`function_color`](#class_codehighlighter_property_function_color)               | ``Color(0, 0, 0, 1)`` |
 | [`Dictionary`](class_dictionary.md) | [`keyword_colors`](#class_codehighlighter_property_keyword_colors)               | ``{}``                |
@@ -27,6 +29,8 @@ By adjusting various properties of this resource, you can change the colors of s
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                    | [`add_color_region`](#class_codehighlighter_method_add_color_region) ( start_key: [`String`](class_string.md), end_key: [`String`](class_string.md), color: [`Color`](class_color.md), line_only: [`bool`](class_bool.md) = false ) |
 | `void`                    | [`add_keyword_color`](#class_codehighlighter_method_add_keyword_color) ( keyword: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                   |
 | `void`                    | [`add_member_keyword_color`](#class_codehighlighter_method_add_member_keyword_color) ( member_keyword: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                              |

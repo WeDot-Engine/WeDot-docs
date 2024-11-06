@@ -25,6 +25,8 @@ Heightmap shapes allow for efficiently representing collisions for convex and co
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                           | [`follow_camera_enabled`](#class_gpuparticlescollisionheightfield3d_property_follow_camera_enabled) | ``false``            |
 | [Resolution](#enum_gpuparticlescollisionheightfield3d_resolution) | [`resolution`](#class_gpuparticlescollisionheightfield3d_property_resolution)                       | ``2``                |
 | [`Vector3`](class_vector3.md)                                     | [`size`](#class_gpuparticlescollisionheightfield3d_property_size)                                   | ``Vector3(2, 2, 2)`` |

@@ -19,6 +19,8 @@ Range is an abstract base class for controls that represent a number within a ra
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)              | [`allow_greater`](#class_range_property_allow_greater) | ``false``                                                                  |
 | [`bool`](class_bool.md)              | [`allow_lesser`](#class_range_property_allow_lesser)   | ``false``                                                                  |
 | [`bool`](class_bool.md)              | [`exp_edit`](#class_range_property_exp_edit)           | ``false``                                                                  |
@@ -33,6 +35,8 @@ Range is an abstract base class for controls that represent a number within a ra
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`_value_changed`](#class_range_private_method__value_changed) ( new_value: [`float`](class_float.md) ) virtual[^virtual] |
 | `void` | [`set_value_no_signal`](#class_range_method_set_value_no_signal) ( value: [`float`](class_float.md) )                     |
 | `void` | [`share`](#class_range_method_share) ( with: [`Node`](class_node.md) )                                                    |

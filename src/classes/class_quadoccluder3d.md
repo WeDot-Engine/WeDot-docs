@@ -19,6 +19,8 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Vector2`](class_vector2.md) | [`size`](#class_quadoccluder3d_property_size) | ``Vector2(1, 1)`` |
 
 <!-- rst-class:: classref-section-separator -->

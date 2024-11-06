@@ -21,12 +21,16 @@ A container that displays the contents of underlying [`SubViewport`](class_subvi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [FocusMode](#enum_control_focusmode) | focus_mode                                                              | ``1`` (overrides [`Control`](#class_control_property_focus_mode)) |
 | [`bool`](class_bool.md)              | [`stretch`](#class_subviewportcontainer_property_stretch)               | ``false``                                                         |
 | [`int`](class_int.md)                | [`stretch_shrink`](#class_subviewportcontainer_property_stretch_shrink) | ``1``                                                             |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`_propagate_input_event`](#class_subviewportcontainer_private_method__propagate_input_event) ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

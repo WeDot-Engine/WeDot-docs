@@ -25,6 +25,8 @@ This class is used when loading a project that uses a [`TextureLayered`](class_t
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)           | [`layers`](#class_placeholdertexturelayered_property_layers) | ``1``              |
 | [`Vector2i`](class_vector2i.md) | [`size`](#class_placeholdertexturelayered_property_size)     | ``Vector2i(1, 1)`` |
 

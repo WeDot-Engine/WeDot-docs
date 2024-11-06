@@ -19,6 +19,8 @@ The collision data includes the colliding object, the remaining motion, and the 
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)     | [`get_angle`](#class_kinematiccollision2d_method_get_angle) ( up_direction: [`Vector2`](class_vector2.md) = Vector2(0, -1) ) const[^const] |
 | [`Object`](class_object.md)   | [`get_collider`](#class_kinematiccollision2d_method_get_collider) ( ) const[^const]                                                        |
 | [`int`](class_int.md)         | [`get_collider_id`](#class_kinematiccollision2d_method_get_collider_id) ( ) const[^const]                                                  |

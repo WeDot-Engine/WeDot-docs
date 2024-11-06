@@ -19,6 +19,8 @@ A ParallaxBackground uses one or more [`ParallaxLayer`](class_parallaxlayer.md) 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)         | layer                                                                                       | ``-100`` (overrides [`CanvasLayer`](#class_canvaslayer_property_layer)) |
 | [`Vector2`](class_vector2.md) | [`scroll_base_offset`](#class_parallaxbackground_property_scroll_base_offset)               | ``Vector2(0, 0)``                                                       |
 | [`Vector2`](class_vector2.md) | [`scroll_base_scale`](#class_parallaxbackground_property_scroll_base_scale)                 | ``Vector2(1, 1)``                                                       |

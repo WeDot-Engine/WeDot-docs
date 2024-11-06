@@ -17,6 +17,8 @@ Also known as 9-slice panels, **NinePatchRect** produces clean panels of any siz
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AxisStretchMode](#enum_ninepatchrect_axisstretchmode) | [`axis_stretch_horizontal`](#class_ninepatchrect_property_axis_stretch_horizontal) | ``0``                                                               |
 | [AxisStretchMode](#enum_ninepatchrect_axisstretchmode) | [`axis_stretch_vertical`](#class_ninepatchrect_property_axis_stretch_vertical)     | ``0``                                                               |
 | [`bool`](class_bool.md)                                | [`draw_center`](#class_ninepatchrect_property_draw_center)                         | ``true``                                                            |
@@ -30,6 +32,8 @@ Also known as 9-slice panels, **NinePatchRect** produces clean panels of any siz
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`get_patch_margin`](#class_ninepatchrect_method_get_patch_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                 |
 | `void`                | [`set_patch_margin`](#class_ninepatchrect_method_set_patch_margin) ( margin: [Side](#enum_@globalscope_side), value: [`int`](class_int.md) ) |
 

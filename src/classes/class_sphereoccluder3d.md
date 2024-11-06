@@ -19,6 +19,8 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md) | [`radius`](#class_sphereoccluder3d_property_radius) | ``1.0`` |
 
 <!-- rst-class:: classref-section-separator -->

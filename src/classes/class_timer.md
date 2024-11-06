@@ -33,6 +33,8 @@ Without requiring much code, a timer node can be added and configured in the edi
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                                  | [`autostart`](#class_timer_property_autostart)               | ``false`` |
 | [`bool`](class_bool.md)                                  | [`one_shot`](#class_timer_property_one_shot)                 | ``false`` |
 | [`bool`](class_bool.md)                                  | [`paused`](#class_timer_property_paused)                     |           |
@@ -42,6 +44,8 @@ Without requiring much code, a timer node can be added and configured in the edi
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`is_stopped`](#class_timer_method_is_stopped) ( ) const[^const]                  |
 | `void`                  | [`start`](#class_timer_method_start) ( time_sec: [`float`](class_float.md) = -1 ) |
 | `void`                  | [`stop`](#class_timer_method_stop) ( )                                            |

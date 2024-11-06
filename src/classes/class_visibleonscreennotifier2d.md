@@ -23,10 +23,14 @@ If you want a node to be enabled automatically when this region is visible on sc
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Rect2`](class_rect2.md) | [`rect`](#class_visibleonscreennotifier2d_property_rect) | ``Rect2(-10, -10, 20, 20)`` |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`is_on_screen`](#class_visibleonscreennotifier2d_method_is_on_screen) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->

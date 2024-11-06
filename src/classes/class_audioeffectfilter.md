@@ -19,6 +19,8 @@ Allows frequencies other than the [`cutoff_hz`](#class_audioeffectfilter_propert
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                    | [`cutoff_hz`](#class_audioeffectfilter_property_cutoff_hz) | ``2000.0`` |
 | [FilterDB](#enum_audioeffectfilter_filterdb) | [`db`](#class_audioeffectfilter_property_db)               | ``0``      |
 | [`float`](class_float.md)                    | [`gain`](#class_audioeffectfilter_property_gain)           | ``1.0``    |

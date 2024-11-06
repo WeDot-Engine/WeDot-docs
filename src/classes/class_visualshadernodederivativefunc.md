@@ -17,6 +17,8 @@ This node is only available in `Fragment` and `Light` visual shaders.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Function](#enum_visualshadernodederivativefunc_function)   | [`function`](#class_visualshadernodederivativefunc_property_function)   | ``0`` |
 | [OpType](#enum_visualshadernodederivativefunc_optype)       | [`op_type`](#class_visualshadernodederivativefunc_property_op_type)     | ``0`` |
 | [Precision](#enum_visualshadernodederivativefunc_precision) | [`precision`](#class_visualshadernodederivativefunc_property_precision) | ``0`` |

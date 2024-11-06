@@ -19,6 +19,8 @@ Stores information about a mouse or a pen motion. This includes relative positio
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)       | [`pen_inverted`](#class_inputeventmousemotion_property_pen_inverted)       | ``false``         |
 | [`float`](class_float.md)     | [`pressure`](#class_inputeventmousemotion_property_pressure)               | ``0.0``           |
 | [`Vector2`](class_vector2.md) | [`relative`](#class_inputeventmousemotion_property_relative)               | ``Vector2(0, 0)`` |

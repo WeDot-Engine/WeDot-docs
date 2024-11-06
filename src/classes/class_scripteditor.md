@@ -19,6 +19,8 @@ Godot editor's script editor.
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`ScriptEditorBase`](class_scripteditorbase.md)                         | [`get_current_editor`](#class_scripteditor_method_get_current_editor) ( ) const[^const]                                                                                           |
 | [`Script`](class_script.md)                                             | [`get_current_script`](#class_scripteditor_method_get_current_script) ( )                                                                                                         |
 | [Array](class_array.md) [`ScriptEditorBase`](class_scripteditorbase.md) | [`get_open_script_editors`](#class_scripteditor_method_get_open_script_editors) ( ) const[^const]                                                                                 |

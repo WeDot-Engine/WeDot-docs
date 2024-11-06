@@ -17,6 +17,8 @@ Translated to `uniform float` in the shader language.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                         | [`default_value`](#class_visualshadernodefloatparameter_property_default_value)                 | ``0.0``   |
 | [`bool`](class_bool.md)                           | [`default_value_enabled`](#class_visualshadernodefloatparameter_property_default_value_enabled) | ``false`` |
 | [Hint](#enum_visualshadernodefloatparameter_hint) | [`hint`](#class_visualshadernodefloatparameter_property_hint)                                   | ``0``     |

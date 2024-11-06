@@ -57,6 +57,8 @@ To iterate over all the [`TreeItem`](class_treeitem.md) objects in a **Tree** ob
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)              | [`allow_reselect`](#class_tree_property_allow_reselect)                       | ``false``                                                               |
 | [`bool`](class_bool.md)              | [`allow_rmb_select`](#class_tree_property_allow_rmb_select)                   | ``false``                                                               |
 | [`bool`](class_bool.md)              | [`allow_search`](#class_tree_property_allow_search)                           | ``true``                                                                |
@@ -74,6 +76,8 @@ To iterate over all the [`TreeItem`](class_treeitem.md) objects in a **Tree** ob
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                        | [`clear`](#class_tree_method_clear) ( )                                                                                                                                                             |
 | [`TreeItem`](class_treeitem.md)                               | [`create_item`](#class_tree_method_create_item) ( parent: [`TreeItem`](class_treeitem.md) = null, index: [`int`](class_int.md) = -1 )                                                               |
 | `void`                                                        | [`deselect_all`](#class_tree_method_deselect_all) ( )                                                                                                                                               |
@@ -114,6 +118,8 @@ To iterate over all the [`TreeItem`](class_treeitem.md) objects in a **Tree** ob
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`Color`](class_color.md)         | [`children_hl_line_color`](#class_tree_theme_color_children_hl_line_color)             | ``Color(0.27, 0.27, 0.27, 1)``      |
 | [`Color`](class_color.md)         | [`custom_button_font_highlight`](#class_tree_theme_color_custom_button_font_highlight) | ``Color(0.95, 0.95, 0.95, 1)``      |
 | [`Color`](class_color.md)         | [`drop_position_color`](#class_tree_theme_color_drop_position_color)                   | ``Color(1, 1, 1, 1)``               |

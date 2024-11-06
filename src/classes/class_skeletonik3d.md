@@ -42,6 +42,8 @@ SkeletonIK3D is used to rotate all bones of a [`Skeleton3D`](class_skeleton3d.md
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)             | [`interpolation`](#class_skeletonik3d_property_interpolation)           |                                                     |
 | [`Vector3`](class_vector3.md)         | [`magnet`](#class_skeletonik3d_property_magnet)                         | ``Vector3(0, 0, 0)``                                |
 | [`int`](class_int.md)                 | [`max_iterations`](#class_skeletonik3d_property_max_iterations)         | ``10``                                              |
@@ -55,6 +57,8 @@ SkeletonIK3D is used to rotate all bones of a [`Skeleton3D`](class_skeleton3d.md
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`Skeleton3D`](class_skeleton3d.md) | [`get_parent_skeleton`](#class_skeletonik3d_method_get_parent_skeleton) ( ) const[^const] |
 | [`bool`](class_bool.md)             | [`is_running`](#class_skeletonik3d_method_is_running) ( )                                 |
 | `void`                              | [`start`](#class_skeletonik3d_method_start) ( one_time: [`bool`](class_bool.md) = false ) |

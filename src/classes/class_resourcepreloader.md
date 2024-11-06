@@ -19,6 +19,8 @@ GDScript has a simplified [`@GDScript.preload`](#class_@gdscript_method_preload)
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`add_resource`](#class_resourcepreloader_method_add_resource) ( name: [`StringName`](class_stringname.md), resource: [`Resource`](class_resource.md) )          |
 | [`Resource`](class_resource.md)                   | [`get_resource`](#class_resourcepreloader_method_get_resource) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
 | [`PackedStringArray`](class_packedstringarray.md) | [`get_resource_list`](#class_resourcepreloader_method_get_resource_list) ( ) const[^const]                                                                       |

@@ -19,6 +19,8 @@ A widget that provides an interface for selecting or modifying a color. It can o
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                              | [`can_add_swatches`](#class_colorpicker_property_can_add_swatches)       | ``true``              |
 | [`Color`](class_color.md)                            | [`color`](#class_colorpicker_property_color)                             | ``Color(1, 1, 1, 1)`` |
 | [ColorModeType](#enum_colorpicker_colormodetype)     | [`color_mode`](#class_colorpicker_property_color_mode)                   | ``0``                 |
@@ -33,6 +35,8 @@ A widget that provides an interface for selecting or modifying a color. It can o
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                          | [`add_preset`](#class_colorpicker_method_add_preset) ( color: [`Color`](class_color.md) )                   |
 | `void`                                          | [`add_recent_preset`](#class_colorpicker_method_add_recent_preset) ( color: [`Color`](class_color.md) )     |
 | `void`                                          | [`erase_preset`](#class_colorpicker_method_erase_preset) ( color: [`Color`](class_color.md) )               |
@@ -42,6 +46,8 @@ A widget that provides an interface for selecting or modifying a color. It can o
 
 ## 主题属性
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)             | [`center_slider_grabbers`](#class_colorpicker_theme_constant_center_slider_grabbers) | ``1``   |
 | [`int`](class_int.md)             | [`h_width`](#class_colorpicker_theme_constant_h_width)                               | ``30``  |
 | [`int`](class_int.md)             | [`label_width`](#class_colorpicker_theme_constant_label_width)                       | ``10``  |

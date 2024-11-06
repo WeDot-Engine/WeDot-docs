@@ -19,12 +19,16 @@ The **OS** class wraps the most common functionalities for communicating with th
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`delta_smoothing`](#class_os_property_delta_smoothing)                                         | ``true``  |
 | [`bool`](class_bool.md) | [`low_processor_usage_mode`](#class_os_property_low_processor_usage_mode)                       | ``false`` |
 | [`int`](class_int.md)   | [`low_processor_usage_mode_sleep_usec`](#class_os_property_low_processor_usage_mode_sleep_usec) | ``6900``  |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`alert`](#class_os_method_alert) ( text: [`String`](class_string.md), title: [`String`](class_string.md) = "Alert!" )                                                                                                                                                                                                                                                                |
 | `void`                                            | [`close_midi_inputs`](#class_os_method_close_midi_inputs) ( )                                                                                                                                                                                                                                                                                                                         |
 | `void`                                            | [`crash`](#class_os_method_crash) ( message: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                            |

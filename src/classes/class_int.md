@@ -74,6 +74,8 @@ You can use the `0b` literal for binary representation, the `0x` literal for hex
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( )                                   |
 | [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`int`](class_int.md) )       |
 | [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`String`](class_string.md) ) |
@@ -82,6 +84,8 @@ You can use the `0b` literal for binary representation, the `0x` literal for hex
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)             | [`operator !=`](class_int.md#operator_neq_float) ( right: [`float`](class_float.md) )               |
 | [`bool`](class_bool.md)             | [`operator !=`](class_int.md#operator_neq_int) ( right: [`int`](class_int.md) )                     |
 | [`int`](class_int.md)               | [`operator %`](class_int.md#operator_mod_int) ( right: [`int`](class_int.md) )                      |

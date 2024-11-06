@@ -19,12 +19,16 @@ MeshInstance3D is a node that takes a [`Mesh`](class_mesh.md) resource and adds 
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`Mesh`](class_mesh.md)         | [`mesh`](#class_meshinstance3d_property_mesh)         |                    |
 | [`NodePath`](class_nodepath.md) | [`skeleton`](#class_meshinstance3d_property_skeleton) | ``NodePath("..")`` |
 | [`Skin`](class_skin.md)         | [`skin`](#class_meshinstance3d_property_skin)         |                    |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`ArrayMesh`](class_arraymesh.md)         | [`bake_mesh_from_current_blend_shape_mix`](#class_meshinstance3d_method_bake_mesh_from_current_blend_shape_mix) ( existing: [`ArrayMesh`](class_arraymesh.md) = null )                                   |
 | `void`                                    | [`create_convex_collision`](#class_meshinstance3d_method_create_convex_collision) ( clean: [`bool`](class_bool.md) = true, simplify: [`bool`](class_bool.md) = false )                                   |
 | `void`                                    | [`create_debug_tangents`](#class_meshinstance3d_method_create_debug_tangents) ( )                                                                                                                        |

@@ -25,6 +25,8 @@ This implementation additionally provide [`SceneTree`](class_scenetree.md) repli
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)         | [`allow_object_decoding`](#class_scenemultiplayer_property_allow_object_decoding)   | ``false``        |
 | [`Callable`](class_callable.md) | [`auth_callback`](#class_scenemultiplayer_property_auth_callback)                   | ``Callable()``   |
 | [`float`](class_float.md)       | [`auth_timeout`](#class_scenemultiplayer_property_auth_timeout)                     | ``3.0``          |
@@ -36,6 +38,8 @@ This implementation additionally provide [`SceneTree`](class_scenetree.md) repli
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                          | [`clear`](#class_scenemultiplayer_method_clear) ( )                                                                                                                                                                                                 |
 | [Error](#enum_@globalscope_error)               | [`complete_auth`](#class_scenemultiplayer_method_complete_auth) ( id: [`int`](class_int.md) )                                                                                                                                                       |
 | `void`                                          | [`disconnect_peer`](#class_scenemultiplayer_method_disconnect_peer) ( id: [`int`](class_int.md) )                                                                                                                                                   |

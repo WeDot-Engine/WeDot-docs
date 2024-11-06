@@ -25,6 +25,8 @@ This resource is intended to be created from code.
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`PackedByteArray`](class_packedbytearray.md) | [`_data`](#class_portablecompressedtexture2d_property__data)                                   | ``PackedByteArray()``                                                                |
 | [`bool`](class_bool.md)                       | [`keep_compressed_buffer`](#class_portablecompressedtexture2d_property_keep_compressed_buffer) | ``false``                                                                            |
 | [`bool`](class_bool.md)                       | resource_local_to_scene                                                                        | ``false`` (overrides [`Resource`](#class_resource_property_resource_local_to_scene)) |
@@ -32,6 +34,8 @@ This resource is intended to be created from code.
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                                               | [`create_from_image`](#class_portablecompressedtexture2d_method_create_from_image) ( image: [`Image`](class_image.md), compression_mode: [CompressionMode](#enum_portablecompressedtexture2d_compressionmode), normal_map: [`bool`](class_bool.md) = false, lossy_quality: [`float`](class_float.md) = 0.8 ) |
 | [CompressionMode](#enum_portablecompressedtexture2d_compressionmode) | [`get_compression_mode`](#class_portablecompressedtexture2d_method_get_compression_mode) ( ) const[^const]                                                                                                                                                                                                   |
 | [Format](#enum_image_format)                                         | [`get_format`](#class_portablecompressedtexture2d_method_get_format) ( ) const[^const]                                                                                                                                                                                                                       |

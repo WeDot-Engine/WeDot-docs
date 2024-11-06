@@ -21,6 +21,8 @@ Extending this class allows you to define your own loader. Be sure to respect th
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)                           | [`_exists`](#class_resourceformatloader_private_method__exists) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                                      |
 | [`PackedStringArray`](class_packedstringarray.md) | [`_get_classes_used`](#class_resourceformatloader_private_method__get_classes_used) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                  |
 | [`PackedStringArray`](class_packedstringarray.md) | [`_get_dependencies`](#class_resourceformatloader_private_method__get_dependencies) ( path: [`String`](class_string.md), add_types: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                              |

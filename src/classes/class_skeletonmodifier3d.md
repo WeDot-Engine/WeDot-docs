@@ -23,11 +23,15 @@ This node should be used to implement custom IK solvers, constraints, or skeleto
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md)   | [`active`](#class_skeletonmodifier3d_property_active)       | ``true`` |
 | [`float`](class_float.md) | [`influence`](#class_skeletonmodifier3d_property_influence) | ``1.0``  |
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                              | [`_process_modification`](#class_skeletonmodifier3d_private_method__process_modification) ( ) virtual[^virtual] |
 | [`Skeleton3D`](class_skeleton3d.md) | [`get_skeleton`](#class_skeletonmodifier3d_method_get_skeleton) ( ) const[^const]                               |
 

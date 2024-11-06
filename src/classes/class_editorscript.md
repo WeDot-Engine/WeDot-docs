@@ -56,6 +56,8 @@ Scripts extending this class and implementing its [`_run`](#class_editorscript_p
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                        | [`_run`](#class_editorscript_private_method__run) ( ) virtual[^virtual]                       |
 | `void`                                        | [`add_root_node`](#class_editorscript_method_add_root_node) ( node: [`Node`](class_node.md) ) |
 | [`EditorInterface`](class_editorinterface.md) | [`get_editor_interface`](#class_editorscript_method_get_editor_interface) ( ) const[^const]   |

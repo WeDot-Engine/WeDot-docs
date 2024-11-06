@@ -23,12 +23,16 @@ GLTFDocument can be extended with arbitrary functionality by extending the [`GLT
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`String`](class_string.md)                     | [`image_format`](#class_gltfdocument_property_image_format)     | ``"PNG"`` |
 | [`float`](class_float.md)                       | [`lossy_quality`](#class_gltfdocument_property_lossy_quality)   | ``0.75``  |
 | [RootNodeMode](#enum_gltfdocument_rootnodemode) | [`root_node_mode`](#class_gltfdocument_property_root_node_mode) | ``0``     |
 
 ## 方法
 
+|||
+|:-:|:--|
 | [Error](#enum_@globalscope_error)             | [`append_from_buffer`](#class_gltfdocument_method_append_from_buffer) ( bytes: [`PackedByteArray`](class_packedbytearray.md), base_path: [`String`](class_string.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0 )       |
 | [Error](#enum_@globalscope_error)             | [`append_from_file`](#class_gltfdocument_method_append_from_file) ( path: [`String`](class_string.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0, base_path: [`String`](class_string.md) = "" )                         |
 | [Error](#enum_@globalscope_error)             | [`append_from_scene`](#class_gltfdocument_method_append_from_scene) ( node: [`Node`](class_node.md), state: [`GLTFState`](class_gltfstate.md), flags: [`int`](class_int.md) = 0 )                                                                        |

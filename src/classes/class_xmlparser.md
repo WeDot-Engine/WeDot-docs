@@ -61,6 +61,8 @@ Here is an example of using **XMLParser** to parse an SVG file (which is based o
 
 ## 方法
 
+|||
+|:-:|:--|
 | [`int`](class_int.md)                | [`get_attribute_count`](#class_xmlparser_method_get_attribute_count) ( ) const[^const]                                                         |
 | [`String`](class_string.md)          | [`get_attribute_name`](#class_xmlparser_method_get_attribute_name) ( idx: [`int`](class_int.md) ) const[^const]                                |
 | [`String`](class_string.md)          | [`get_attribute_value`](#class_xmlparser_method_get_attribute_value) ( idx: [`int`](class_int.md) ) const[^const]                              |

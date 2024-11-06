@@ -21,6 +21,8 @@ The UV layout is arranged in 4 horizontal strips, top to bottom: 40% of the heig
 
 ## 属性
 
+|||
+|:-:|:--|
 | [AutowrapMode](#enum_textserver_autowrapmode)                 | [`autowrap_mode`](#class_textmesh_property_autowrap_mode)                                                 | ``0``             |
 | [`float`](class_float.md)                                     | [`curve_step`](#class_textmesh_property_curve_step)                                                       | ``0.5``           |
 | [`float`](class_float.md)                                     | [`depth`](#class_textmesh_property_depth)                                                                 | ``0.05``          |

@@ -79,6 +79,8 @@ Booleans can be combined with the logical operators `and`, `or`, `not` to create
 
 ## 构造函数
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( )                                 |
 | [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( from: [`bool`](class_bool.md) )   |
 | [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( from: [`float`](class_float.md) ) |
@@ -86,6 +88,8 @@ Booleans can be combined with the logical operators `and`, `or`, `not` to create
 
 ## 运算符
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`operator !=`](class_bool.md#operator_neq_bool) ( right: [`bool`](class_bool.md) ) |
 | [`bool`](class_bool.md) | [`operator <`](class_bool.md#operator_lt_bool) ( right: [`bool`](class_bool.md) )   |
 | [`bool`](class_bool.md) | [`operator ==`](class_bool.md#operator_eq_bool) ( right: [`bool`](class_bool.md) )  |

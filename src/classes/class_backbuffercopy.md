@@ -19,6 +19,8 @@ Node for back-buffering the currently-displayed screen. The region defined in th
 
 ## 属性
 
+|||
+|:-:|:--|
 | [CopyMode](#enum_backbuffercopy_copymode) | [`copy_mode`](#class_backbuffercopy_property_copy_mode) | ``1``                           |
 | [`Rect2`](class_rect2.md)                 | [`rect`](#class_backbuffercopy_property_rect)           | ``Rect2(-100, -100, 200, 200)`` |
 

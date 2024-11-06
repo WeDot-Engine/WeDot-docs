@@ -131,6 +131,8 @@ ConfigFiles can also contain manually written comment lines starting with a semi
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void`                                            | [`clear`](#class_configfile_method_clear) ( )                                                                                                                                             |
 | [`String`](class_string.md)                       | [`encode_to_text`](#class_configfile_method_encode_to_text) ( ) const[^const]                                                                                                             |
 | `void`                                            | [`erase_section`](#class_configfile_method_erase_section) ( section: [`String`](class_string.md) )                                                                                        |

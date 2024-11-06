@@ -17,6 +17,8 @@ A visual shader node for use of vector operators. Operates on vector `a` and vec
 
 ## 属性
 
+|||
+|:-:|:--|
 | [Operator](#enum_visualshadernodevectorop_operator) | [`operator`](#class_visualshadernodevectorop_property_operator) | ``0`` |
 
 <!-- rst-class:: classref-section-separator -->

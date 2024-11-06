@@ -19,6 +19,8 @@ When **AnimatableBody2D** is moved, its linear and angular velocity are estimate
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`bool`](class_bool.md) | [`sync_to_physics`](#class_animatablebody2d_property_sync_to_physics) | ``true`` |
 
 <!-- rst-class:: classref-section-separator -->

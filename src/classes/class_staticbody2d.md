@@ -23,6 +23,8 @@ When **StaticBody2D** is moved, it is teleported to its new position without aff
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`float`](class_float.md)                     | [`constant_angular_velocity`](#class_staticbody2d_property_constant_angular_velocity) | ``0.0``           |
 | [`Vector2`](class_vector2.md)                 | [`constant_linear_velocity`](#class_staticbody2d_property_constant_linear_velocity)   | ``Vector2(0, 0)`` |
 | [`PhysicsMaterial`](class_physicsmaterial.md) | [`physics_material_override`](#class_staticbody2d_property_physics_material_override) |                   |

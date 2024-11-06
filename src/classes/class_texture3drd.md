@@ -17,6 +17,8 @@ This texture class allows you to use a 3D texture created directly on the [`Rend
 
 ## 属性
 
+|||
+|:-:|:--|
 | [`RID`](class_rid.md) | [`texture_rd_rid`](#class_texture3drd_property_texture_rd_rid) |
 
 <!-- rst-class:: classref-section-separator -->

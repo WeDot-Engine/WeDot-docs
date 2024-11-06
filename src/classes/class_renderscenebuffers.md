@@ -21,6 +21,8 @@ Abstract scene buffers object, created for each viewport for which 3D rendering 
 
 ## 方法
 
+|||
+|:-:|:--|
 | `void` | [`configure`](#class_renderscenebuffers_method_configure) ( config: [`RenderSceneBuffersConfiguration`](class_renderscenebuffersconfiguration.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
