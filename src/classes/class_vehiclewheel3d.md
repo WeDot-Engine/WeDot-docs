@@ -40,10 +40,10 @@ A node used as a child of a [`VehicleBody3D`](class_vehiclebody3d.md) parent to 
 
 |||
 |:-:|:--|
-| [`Node3D`](class_node3d.md) | [`get_contact_body`](#class_vehiclewheel3d_method_get_contact_body) ( ) const[^const] |
-| [`float`](class_float.md)   | [`get_rpm`](#class_vehiclewheel3d_method_get_rpm) ( ) const[^const]                   |
-| [`float`](class_float.md)   | [`get_skidinfo`](#class_vehiclewheel3d_method_get_skidinfo) ( ) const[^const]         |
-| [`bool`](class_bool.md)     | [`is_in_contact`](#class_vehiclewheel3d_method_is_in_contact) ( ) const[^const]       |
+| [`Node3D`](class_node3d.md) | [`get_contact_body`](class_vehiclewheel3dmd#class_vehiclewheel3d_method_get_contact_body) ( ) const[^const] |
+| [`float`](class_float.md)   | [`get_rpm`](class_vehiclewheel3dmd#class_vehiclewheel3d_method_get_rpm) ( ) const[^const]                   |
+| [`float`](class_float.md)   | [`get_skidinfo`](class_vehiclewheel3dmd#class_vehiclewheel3d_method_get_skidinfo) ( ) const[^const]         |
+| [`bool`](class_bool.md)     | [`is_in_contact`](class_vehiclewheel3dmd#class_vehiclewheel3d_method_is_in_contact) ( ) const[^const]       |
 
 <!-- rst-class:: classref-section-separator -->
 

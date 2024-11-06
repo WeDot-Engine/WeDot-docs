@@ -143,12 +143,12 @@ This class serves as a default material with a wide variety of rendering feature
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)           | [`get_feature`](#class_basematerial3d_method_get_feature) ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]                                       |
-| [`bool`](class_bool.md)           | [`get_flag`](#class_basematerial3d_method_get_flag) ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]                                                    |
-| [`Texture2D`](class_texture2d.md) | [`get_texture`](#class_basematerial3d_method_get_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]                               |
-| `void`                            | [`set_feature`](#class_basematerial3d_method_set_feature) ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )                    |
-| `void`                            | [`set_flag`](#class_basematerial3d_method_set_flag) ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )                                 |
-| `void`                            | [`set_texture`](#class_basematerial3d_method_set_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) ) |
+| [`bool`](class_bool.md)           | [`get_feature`](class_basematerial3dmd#class_basematerial3d_method_get_feature) ( feature: [Feature](#enum_basematerial3d_feature) ) const[^const]                                       |
+| [`bool`](class_bool.md)           | [`get_flag`](class_basematerial3dmd#class_basematerial3d_method_get_flag) ( flag: [Flags](#enum_basematerial3d_flags) ) const[^const]                                                    |
+| [`Texture2D`](class_texture2d.md) | [`get_texture`](class_basematerial3dmd#class_basematerial3d_method_get_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam) ) const[^const]                               |
+| `void`                            | [`set_feature`](class_basematerial3dmd#class_basematerial3d_method_set_feature) ( feature: [Feature](#enum_basematerial3d_feature), enable: [`bool`](class_bool.md) )                    |
+| `void`                            | [`set_flag`](class_basematerial3dmd#class_basematerial3d_method_set_flag) ( flag: [Flags](#enum_basematerial3d_flags), enable: [`bool`](class_bool.md) )                                 |
+| `void`                            | [`set_texture`](class_basematerial3dmd#class_basematerial3d_method_set_texture) ( param: [TextureParam](#enum_basematerial3d_textureparam), texture: [`Texture2D`](class_texture2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

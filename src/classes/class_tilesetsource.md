@@ -29,12 +29,12 @@ You can iterate over all tiles exposed by a TileSetSource by first iterating ove
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)           | [`get_alternative_tile_id`](#class_tilesetsource_method_get_alternative_tile_id) ( atlas_coords: [`Vector2i`](class_vector2i.md), index: [`int`](class_int.md) ) const[^const]      |
-| [`int`](class_int.md)           | [`get_alternative_tiles_count`](#class_tilesetsource_method_get_alternative_tiles_count) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
-| [`Vector2i`](class_vector2i.md) | [`get_tile_id`](#class_tilesetsource_method_get_tile_id) ( index: [`int`](class_int.md) ) const[^const]                                                                             |
-| [`int`](class_int.md)           | [`get_tiles_count`](#class_tilesetsource_method_get_tiles_count) ( ) const[^const]                                                                                                  |
-| [`bool`](class_bool.md)         | [`has_alternative_tile`](#class_tilesetsource_method_has_alternative_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md), alternative_tile: [`int`](class_int.md) ) const[^const] |
-| [`bool`](class_bool.md)         | [`has_tile`](#class_tilesetsource_method_has_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                  |
+| [`int`](class_int.md)           | [`get_alternative_tile_id`](class_tilesetsourcemd#class_tilesetsource_method_get_alternative_tile_id) ( atlas_coords: [`Vector2i`](class_vector2i.md), index: [`int`](class_int.md) ) const[^const]      |
+| [`int`](class_int.md)           | [`get_alternative_tiles_count`](class_tilesetsourcemd#class_tilesetsource_method_get_alternative_tiles_count) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
+| [`Vector2i`](class_vector2i.md) | [`get_tile_id`](class_tilesetsourcemd#class_tilesetsource_method_get_tile_id) ( index: [`int`](class_int.md) ) const[^const]                                                                             |
+| [`int`](class_int.md)           | [`get_tiles_count`](class_tilesetsourcemd#class_tilesetsource_method_get_tiles_count) ( ) const[^const]                                                                                                  |
+| [`bool`](class_bool.md)         | [`has_alternative_tile`](class_tilesetsourcemd#class_tilesetsource_method_has_alternative_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md), alternative_tile: [`int`](class_int.md) ) const[^const] |
+| [`bool`](class_bool.md)         | [`has_tile`](class_tilesetsourcemd#class_tilesetsource_method_has_tile) ( atlas_coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                  |
 
 <!-- rst-class:: classref-section-separator -->
 

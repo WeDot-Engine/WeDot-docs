@@ -66,22 +66,22 @@ To use the peer as part of a WebSocket server refer to [`accept_stream`](#class_
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)  | [`accept_stream`](#class_websocketpeer_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md) )                                                        |
-| `void`                             | [`close`](#class_websocketpeer_method_close) ( code: [`int`](class_int.md) = 1000, reason: [`String`](class_string.md) = "" )                                       |
-| [Error](#enum_@globalscope_error)  | [`connect_to_url`](#class_websocketpeer_method_connect_to_url) ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
-| [`int`](class_int.md)              | [`get_close_code`](#class_websocketpeer_method_get_close_code) ( ) const[^const]                                                                                    |
-| [`String`](class_string.md)        | [`get_close_reason`](#class_websocketpeer_method_get_close_reason) ( ) const[^const]                                                                                |
-| [`String`](class_string.md)        | [`get_connected_host`](#class_websocketpeer_method_get_connected_host) ( ) const[^const]                                                                            |
-| [`int`](class_int.md)              | [`get_connected_port`](#class_websocketpeer_method_get_connected_port) ( ) const[^const]                                                                            |
-| [`int`](class_int.md)              | [`get_current_outbound_buffered_amount`](#class_websocketpeer_method_get_current_outbound_buffered_amount) ( ) const[^const]                                        |
-| [State](#enum_websocketpeer_state) | [`get_ready_state`](#class_websocketpeer_method_get_ready_state) ( ) const[^const]                                                                                  |
-| [`String`](class_string.md)        | [`get_requested_url`](#class_websocketpeer_method_get_requested_url) ( ) const[^const]                                                                              |
-| [`String`](class_string.md)        | [`get_selected_protocol`](#class_websocketpeer_method_get_selected_protocol) ( ) const[^const]                                                                      |
-| `void`                             | [`poll`](#class_websocketpeer_method_poll) ( )                                                                                                                      |
-| [Error](#enum_@globalscope_error)  | [`send`](#class_websocketpeer_method_send) ( message: [`PackedByteArray`](class_packedbytearray.md), write_mode: [WriteMode](#enum_websocketpeer_writemode) = 1 )   |
-| [Error](#enum_@globalscope_error)  | [`send_text`](#class_websocketpeer_method_send_text) ( message: [`String`](class_string.md) )                                                                       |
-| `void`                             | [`set_no_delay`](#class_websocketpeer_method_set_no_delay) ( enabled: [`bool`](class_bool.md) )                                                                     |
-| [`bool`](class_bool.md)            | [`was_string_packet`](#class_websocketpeer_method_was_string_packet) ( ) const[^const]                                                                              |
+| [Error](#enum_@globalscope_error)  | [`accept_stream`](class_websocketpeermd#class_websocketpeer_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md) )                                                        |
+| `void`                             | [`close`](class_websocketpeermd#class_websocketpeer_method_close) ( code: [`int`](class_int.md) = 1000, reason: [`String`](class_string.md) = "" )                                       |
+| [Error](#enum_@globalscope_error)  | [`connect_to_url`](class_websocketpeermd#class_websocketpeer_method_connect_to_url) ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
+| [`int`](class_int.md)              | [`get_close_code`](class_websocketpeermd#class_websocketpeer_method_get_close_code) ( ) const[^const]                                                                                    |
+| [`String`](class_string.md)        | [`get_close_reason`](class_websocketpeermd#class_websocketpeer_method_get_close_reason) ( ) const[^const]                                                                                |
+| [`String`](class_string.md)        | [`get_connected_host`](class_websocketpeermd#class_websocketpeer_method_get_connected_host) ( ) const[^const]                                                                            |
+| [`int`](class_int.md)              | [`get_connected_port`](class_websocketpeermd#class_websocketpeer_method_get_connected_port) ( ) const[^const]                                                                            |
+| [`int`](class_int.md)              | [`get_current_outbound_buffered_amount`](class_websocketpeermd#class_websocketpeer_method_get_current_outbound_buffered_amount) ( ) const[^const]                                        |
+| [State](#enum_websocketpeer_state) | [`get_ready_state`](class_websocketpeermd#class_websocketpeer_method_get_ready_state) ( ) const[^const]                                                                                  |
+| [`String`](class_string.md)        | [`get_requested_url`](class_websocketpeermd#class_websocketpeer_method_get_requested_url) ( ) const[^const]                                                                              |
+| [`String`](class_string.md)        | [`get_selected_protocol`](class_websocketpeermd#class_websocketpeer_method_get_selected_protocol) ( ) const[^const]                                                                      |
+| `void`                             | [`poll`](class_websocketpeermd#class_websocketpeer_method_poll) ( )                                                                                                                      |
+| [Error](#enum_@globalscope_error)  | [`send`](class_websocketpeermd#class_websocketpeer_method_send) ( message: [`PackedByteArray`](class_packedbytearray.md), write_mode: [WriteMode](#enum_websocketpeer_writemode) = 1 )   |
+| [Error](#enum_@globalscope_error)  | [`send_text`](class_websocketpeermd#class_websocketpeer_method_send_text) ( message: [`String`](class_string.md) )                                                                       |
+| `void`                             | [`set_no_delay`](class_websocketpeermd#class_websocketpeer_method_set_no_delay) ( enabled: [`bool`](class_bool.md) )                                                                     |
+| [`bool`](class_bool.md)            | [`was_string_packet`](class_websocketpeermd#class_websocketpeer_method_was_string_packet) ( ) const[^const]                                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 

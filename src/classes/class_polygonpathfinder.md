@@ -15,14 +15,14 @@
 
 |||
 |:-:|:--|
-| [`PackedVector2Array`](class_packedvector2array.md) | [`find_path`](#class_polygonpathfinder_method_find_path) ( from: [`Vector2`](class_vector2.md), to: [`Vector2`](class_vector2.md) )                                            |
-| [`Rect2`](class_rect2.md)                           | [`get_bounds`](#class_polygonpathfinder_method_get_bounds) ( ) const[^const]                                                                                                   |
-| [`Vector2`](class_vector2.md)                       | [`get_closest_point`](#class_polygonpathfinder_method_get_closest_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                                |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`get_intersections`](#class_polygonpathfinder_method_get_intersections) ( from: [`Vector2`](class_vector2.md), to: [`Vector2`](class_vector2.md) ) const[^const]              |
-| [`float`](class_float.md)                           | [`get_point_penalty`](#class_polygonpathfinder_method_get_point_penalty) ( idx: [`int`](class_int.md) ) const[^const]                                                          |
-| [`bool`](class_bool.md)                             | [`is_point_inside`](#class_polygonpathfinder_method_is_point_inside) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                                    |
-| `void`                                              | [`set_point_penalty`](#class_polygonpathfinder_method_set_point_penalty) ( idx: [`int`](class_int.md), penalty: [`float`](class_float.md) )                                    |
-| `void`                                              | [`setup`](#class_polygonpathfinder_method_setup) ( points: [`PackedVector2Array`](class_packedvector2array.md), connections: [`PackedInt32Array`](class_packedint32array.md) ) |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`find_path`](class_polygonpathfindermd#class_polygonpathfinder_method_find_path) ( from: [`Vector2`](class_vector2.md), to: [`Vector2`](class_vector2.md) )                                            |
+| [`Rect2`](class_rect2.md)                           | [`get_bounds`](class_polygonpathfindermd#class_polygonpathfinder_method_get_bounds) ( ) const[^const]                                                                                                   |
+| [`Vector2`](class_vector2.md)                       | [`get_closest_point`](class_polygonpathfindermd#class_polygonpathfinder_method_get_closest_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                                |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`get_intersections`](class_polygonpathfindermd#class_polygonpathfinder_method_get_intersections) ( from: [`Vector2`](class_vector2.md), to: [`Vector2`](class_vector2.md) ) const[^const]              |
+| [`float`](class_float.md)                           | [`get_point_penalty`](class_polygonpathfindermd#class_polygonpathfinder_method_get_point_penalty) ( idx: [`int`](class_int.md) ) const[^const]                                                          |
+| [`bool`](class_bool.md)                             | [`is_point_inside`](class_polygonpathfindermd#class_polygonpathfinder_method_is_point_inside) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                                    |
+| `void`                                              | [`set_point_penalty`](class_polygonpathfindermd#class_polygonpathfinder_method_set_point_penalty) ( idx: [`int`](class_int.md), penalty: [`float`](class_float.md) )                                    |
+| `void`                                              | [`setup`](class_polygonpathfindermd#class_polygonpathfinder_method_setup) ( points: [`PackedVector2Array`](class_packedvector2array.md), connections: [`PackedInt32Array`](class_packedint32array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

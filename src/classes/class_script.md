@@ -31,21 +31,21 @@ The `new` method of a script subclass creates a new instance. [`Object.set_scrip
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                     | [`can_instantiate`](#class_script_method_can_instantiate) ( ) const[^const]                                                       |
-| [`Script`](class_script.md)                                 | [`get_base_script`](#class_script_method_get_base_script) ( ) const[^const]                                                       |
-| [`StringName`](class_stringname.md)                         | [`get_global_name`](#class_script_method_get_global_name) ( ) const[^const]                                                       |
-| [`StringName`](class_stringname.md)                         | [`get_instance_base_type`](#class_script_method_get_instance_base_type) ( ) const[^const]                                         |
-| [`Variant`](class_variant.md)                               | [`get_property_default_value`](#class_script_method_get_property_default_value) ( property: [`StringName`](class_stringname.md) ) |
-| [`Dictionary`](class_dictionary.md)                         | [`get_script_constant_map`](#class_script_method_get_script_constant_map) ( )                                                     |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_method_list`](#class_script_method_get_script_method_list) ( )                                                       |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_property_list`](#class_script_method_get_script_property_list) ( )                                                   |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_signal_list`](#class_script_method_get_script_signal_list) ( )                                                       |
-| [`bool`](class_bool.md)                                     | [`has_script_signal`](#class_script_method_has_script_signal) ( signal_name: [`StringName`](class_stringname.md) ) const[^const]  |
-| [`bool`](class_bool.md)                                     | [`has_source_code`](#class_script_method_has_source_code) ( ) const[^const]                                                       |
-| [`bool`](class_bool.md)                                     | [`instance_has`](#class_script_method_instance_has) ( base_object: [`Object`](class_object.md) ) const[^const]                    |
-| [`bool`](class_bool.md)                                     | [`is_abstract`](#class_script_method_is_abstract) ( ) const[^const]                                                               |
-| [`bool`](class_bool.md)                                     | [`is_tool`](#class_script_method_is_tool) ( ) const[^const]                                                                       |
-| [Error](#enum_@globalscope_error)                           | [`reload`](#class_script_method_reload) ( keep_state: [`bool`](class_bool.md) = false )                                           |
+| [`bool`](class_bool.md)                                     | [`can_instantiate`](class_scriptmd#class_script_method_can_instantiate) ( ) const[^const]                                                       |
+| [`Script`](class_script.md)                                 | [`get_base_script`](class_scriptmd#class_script_method_get_base_script) ( ) const[^const]                                                       |
+| [`StringName`](class_stringname.md)                         | [`get_global_name`](class_scriptmd#class_script_method_get_global_name) ( ) const[^const]                                                       |
+| [`StringName`](class_stringname.md)                         | [`get_instance_base_type`](class_scriptmd#class_script_method_get_instance_base_type) ( ) const[^const]                                         |
+| [`Variant`](class_variant.md)                               | [`get_property_default_value`](class_scriptmd#class_script_method_get_property_default_value) ( property: [`StringName`](class_stringname.md) ) |
+| [`Dictionary`](class_dictionary.md)                         | [`get_script_constant_map`](class_scriptmd#class_script_method_get_script_constant_map) ( )                                                     |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_method_list`](class_scriptmd#class_script_method_get_script_method_list) ( )                                                       |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_property_list`](class_scriptmd#class_script_method_get_script_property_list) ( )                                                   |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_signal_list`](class_scriptmd#class_script_method_get_script_signal_list) ( )                                                       |
+| [`bool`](class_bool.md)                                     | [`has_script_signal`](class_scriptmd#class_script_method_has_script_signal) ( signal_name: [`StringName`](class_stringname.md) ) const[^const]  |
+| [`bool`](class_bool.md)                                     | [`has_source_code`](class_scriptmd#class_script_method_has_source_code) ( ) const[^const]                                                       |
+| [`bool`](class_bool.md)                                     | [`instance_has`](class_scriptmd#class_script_method_instance_has) ( base_object: [`Object`](class_object.md) ) const[^const]                    |
+| [`bool`](class_bool.md)                                     | [`is_abstract`](class_scriptmd#class_script_method_is_abstract) ( ) const[^const]                                                               |
+| [`bool`](class_bool.md)                                     | [`is_tool`](class_scriptmd#class_script_method_is_tool) ( ) const[^const]                                                                       |
+| [Error](#enum_@globalscope_error)                           | [`reload`](class_scriptmd#class_script_method_reload) ( keep_state: [`bool`](class_bool.md) = false )                                           |
 
 <!-- rst-class:: classref-section-separator -->
 

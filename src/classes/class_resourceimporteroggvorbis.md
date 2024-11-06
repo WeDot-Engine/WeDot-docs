@@ -33,8 +33,8 @@ Ogg Vorbis requires more CPU to decode than [`ResourceImporterWAV`](class_resour
 
 |||
 |:-:|:--|
-| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](#class_resourceimporteroggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
-| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](#class_resourceimporteroggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
+| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](class_resourceimporteroggvorbismd#class_resourceimporteroggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
+| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](class_resourceimporteroggvorbismd#class_resourceimporteroggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
 
 <!-- rst-class:: classref-section-separator -->
 

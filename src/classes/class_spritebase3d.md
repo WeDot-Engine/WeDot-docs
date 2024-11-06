@@ -46,10 +46,10 @@ A node that displays 2D texture information in a 3D environment. See also [`Spri
 
 |||
 |:-:|:--|
-| [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](#class_spritebase3d_method_generate_triangle_mesh) ( ) const[^const]                                                   |
-| [`bool`](class_bool.md)                 | [`get_draw_flag`](#class_spritebase3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags) ) const[^const]                     |
-| [`Rect2`](class_rect2.md)               | [`get_item_rect`](#class_spritebase3d_method_get_item_rect) ( ) const[^const]                                                                     |
-| `void`                                  | [`set_draw_flag`](#class_spritebase3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags), enabled: [`bool`](class_bool.md) ) |
+| [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](class_spritebase3dmd#class_spritebase3d_method_generate_triangle_mesh) ( ) const[^const]                                                   |
+| [`bool`](class_bool.md)                 | [`get_draw_flag`](class_spritebase3dmd#class_spritebase3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags) ) const[^const]                     |
+| [`Rect2`](class_rect2.md)               | [`get_item_rect`](class_spritebase3dmd#class_spritebase3d_method_get_item_rect) ( ) const[^const]                                                                     |
+| `void`                                  | [`set_draw_flag`](class_spritebase3dmd#class_spritebase3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_spritebase3d_drawflags), enabled: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

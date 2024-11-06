@@ -33,8 +33,8 @@ The **PhysicalBone2D** node is a [`RigidBody2D`](class_rigidbody2d.md)-based nod
 
 |||
 |:-:|:--|
-| [`Joint2D`](class_joint2d.md) | [`get_joint`](#class_physicalbone2d_method_get_joint) ( ) const[^const]                         |
-| [`bool`](class_bool.md)       | [`is_simulating_physics`](#class_physicalbone2d_method_is_simulating_physics) ( ) const[^const] |
+| [`Joint2D`](class_joint2d.md) | [`get_joint`](class_physicalbone2dmd#class_physicalbone2d_method_get_joint) ( ) const[^const]                         |
+| [`bool`](class_bool.md)       | [`is_simulating_physics`](class_physicalbone2dmd#class_physicalbone2d_method_is_simulating_physics) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

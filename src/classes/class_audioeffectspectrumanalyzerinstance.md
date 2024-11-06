@@ -21,7 +21,7 @@ An instance of this class can be acquired with [`AudioServer.get_bus_effect_inst
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`get_magnitude_for_frequency_range`](#class_audioeffectspectrumanalyzerinstance_method_get_magnitude_for_frequency_range) ( from_hz: [`float`](class_float.md), to_hz: [`float`](class_float.md), mode: [MagnitudeMode](#enum_audioeffectspectrumanalyzerinstance_magnitudemode) = 1 ) const[^const] |
+| [`Vector2`](class_vector2.md) | [`get_magnitude_for_frequency_range`](class_audioeffectspectrumanalyzerinstancemd#class_audioeffectspectrumanalyzerinstance_method_get_magnitude_for_frequency_range) ( from_hz: [`float`](class_float.md), to_hz: [`float`](class_float.md), mode: [MagnitudeMode](#enum_audioeffectspectrumanalyzerinstance_magnitudemode) = 1 ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

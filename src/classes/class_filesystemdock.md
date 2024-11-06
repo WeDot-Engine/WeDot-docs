@@ -21,9 +21,9 @@ While **FileSystemDock** doesn't expose any methods for file manipulation, it ca
 
 |||
 |:-:|:--|
-| `void` | [`add_resource_tooltip_plugin`](#class_filesystemdock_method_add_resource_tooltip_plugin) ( plugin: [`EditorResourceTooltipPlugin`](class_editorresourcetooltipplugin.md) )       |
-| `void` | [`navigate_to_path`](#class_filesystemdock_method_navigate_to_path) ( path: [`String`](class_string.md) )                                                                         |
-| `void` | [`remove_resource_tooltip_plugin`](#class_filesystemdock_method_remove_resource_tooltip_plugin) ( plugin: [`EditorResourceTooltipPlugin`](class_editorresourcetooltipplugin.md) ) |
+| `void` | [`add_resource_tooltip_plugin`](class_filesystemdockmd#class_filesystemdock_method_add_resource_tooltip_plugin) ( plugin: [`EditorResourceTooltipPlugin`](class_editorresourcetooltipplugin.md) )       |
+| `void` | [`navigate_to_path`](class_filesystemdockmd#class_filesystemdock_method_navigate_to_path) ( path: [`String`](class_string.md) )                                                                         |
+| `void` | [`remove_resource_tooltip_plugin`](class_filesystemdockmd#class_filesystemdock_method_remove_resource_tooltip_plugin) ( plugin: [`EditorResourceTooltipPlugin`](class_editorresourcetooltipplugin.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

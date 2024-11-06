@@ -70,12 +70,12 @@ After setting the request and changing the animation playback, the transition no
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`is_input_loop_broken_at_end`](#class_animationnodetransition_method_is_input_loop_broken_at_end) ( input: [`int`](class_int.md) ) const[^const]                    |
-| [`bool`](class_bool.md) | [`is_input_reset`](#class_animationnodetransition_method_is_input_reset) ( input: [`int`](class_int.md) ) const[^const]                                              |
-| [`bool`](class_bool.md) | [`is_input_set_as_auto_advance`](#class_animationnodetransition_method_is_input_set_as_auto_advance) ( input: [`int`](class_int.md) ) const[^const]                  |
-| `void`                  | [`set_input_as_auto_advance`](#class_animationnodetransition_method_set_input_as_auto_advance) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) )     |
-| `void`                  | [`set_input_break_loop_at_end`](#class_animationnodetransition_method_set_input_break_loop_at_end) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) ) |
-| `void`                  | [`set_input_reset`](#class_animationnodetransition_method_set_input_reset) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                         |
+| [`bool`](class_bool.md) | [`is_input_loop_broken_at_end`](class_animationnodetransitionmd#class_animationnodetransition_method_is_input_loop_broken_at_end) ( input: [`int`](class_int.md) ) const[^const]                    |
+| [`bool`](class_bool.md) | [`is_input_reset`](class_animationnodetransitionmd#class_animationnodetransition_method_is_input_reset) ( input: [`int`](class_int.md) ) const[^const]                                              |
+| [`bool`](class_bool.md) | [`is_input_set_as_auto_advance`](class_animationnodetransitionmd#class_animationnodetransition_method_is_input_set_as_auto_advance) ( input: [`int`](class_int.md) ) const[^const]                  |
+| `void`                  | [`set_input_as_auto_advance`](class_animationnodetransitionmd#class_animationnodetransition_method_set_input_as_auto_advance) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) )     |
+| `void`                  | [`set_input_break_loop_at_end`](class_animationnodetransitionmd#class_animationnodetransition_method_set_input_break_loop_at_end) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) ) |
+| `void`                  | [`set_input_reset`](class_animationnodetransitionmd#class_animationnodetransition_method_set_input_reset) ( input: [`int`](class_int.md), enable: [`bool`](class_bool.md) )                         |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -219,31 +219,31 @@ The keys of a dictionary can be iterated with the `for` keyword:
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`Dictionary`](#class_dictionary_constructor_dictionary) ( )                                           |
-| [`Dictionary`](class_dictionary.md) | [`Dictionary`](#class_dictionary_constructor_dictionary) ( from: [`Dictionary`](class_dictionary.md) ) |
+| [`Dictionary`](class_dictionary.md) | [`Dictionary`](class_dictionary.md#class_dictionary_constructor_dictionary) ( )                                           |
+| [`Dictionary`](class_dictionary.md) | [`Dictionary`](class_dictionary.md#class_dictionary_constructor_dictionary) ( from: [`Dictionary`](class_dictionary.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void`                              | [`clear`](#class_dictionary_method_clear) ( )                                                                                                                           |
-| [`Dictionary`](class_dictionary.md) | [`duplicate`](#class_dictionary_method_duplicate) ( deep: [`bool`](class_bool.md) = false ) const[^const]                                                               |
-| [`bool`](class_bool.md)             | [`erase`](#class_dictionary_method_erase) ( key: [`Variant`](class_variant.md) )                                                                                        |
-| [`Variant`](class_variant.md)       | [`find_key`](#class_dictionary_method_find_key) ( value: [`Variant`](class_variant.md) ) const[^const]                                                                  |
-| [`Variant`](class_variant.md)       | [`get`](#class_dictionary_method_get) ( key: [`Variant`](class_variant.md), default: [`Variant`](class_variant.md) = null ) const[^const]                               |
-| [`Variant`](class_variant.md)       | [`get_or_add`](#class_dictionary_method_get_or_add) ( key: [`Variant`](class_variant.md), default: [`Variant`](class_variant.md) = null )                               |
-| [`bool`](class_bool.md)             | [`has`](#class_dictionary_method_has) ( key: [`Variant`](class_variant.md) ) const[^const]                                                                              |
-| [`bool`](class_bool.md)             | [`has_all`](#class_dictionary_method_has_all) ( keys: [`Array`](class_array.md) ) const[^const]                                                                         |
-| [`int`](class_int.md)               | [`hash`](#class_dictionary_method_hash) ( ) const[^const]                                                                                                               |
-| [`bool`](class_bool.md)             | [`is_empty`](#class_dictionary_method_is_empty) ( ) const[^const]                                                                                                       |
-| [`bool`](class_bool.md)             | [`is_read_only`](#class_dictionary_method_is_read_only) ( ) const[^const]                                                                                               |
-| [`Array`](class_array.md)           | [`keys`](#class_dictionary_method_keys) ( ) const[^const]                                                                                                               |
-| `void`                              | [`make_read_only`](#class_dictionary_method_make_read_only) ( )                                                                                                         |
-| `void`                              | [`merge`](#class_dictionary_method_merge) ( dictionary: [`Dictionary`](class_dictionary.md), overwrite: [`bool`](class_bool.md) = false )                               |
-| [`Dictionary`](class_dictionary.md) | [`merged`](#class_dictionary_method_merged) ( dictionary: [`Dictionary`](class_dictionary.md), overwrite: [`bool`](class_bool.md) = false ) const[^const]               |
-| [`bool`](class_bool.md)             | [`recursive_equal`](#class_dictionary_method_recursive_equal) ( dictionary: [`Dictionary`](class_dictionary.md), recursion_count: [`int`](class_int.md) ) const[^const] |
-| [`int`](class_int.md)               | [`size`](#class_dictionary_method_size) ( ) const[^const]                                                                                                               |
-| [`Array`](class_array.md)           | [`values`](#class_dictionary_method_values) ( ) const[^const]                                                                                                           |
+| `void`                              | [`clear`](class_dictionarymd#class_dictionary_method_clear) ( )                                                                                                                           |
+| [`Dictionary`](class_dictionary.md) | [`duplicate`](class_dictionarymd#class_dictionary_method_duplicate) ( deep: [`bool`](class_bool.md) = false ) const[^const]                                                               |
+| [`bool`](class_bool.md)             | [`erase`](class_dictionarymd#class_dictionary_method_erase) ( key: [`Variant`](class_variant.md) )                                                                                        |
+| [`Variant`](class_variant.md)       | [`find_key`](class_dictionarymd#class_dictionary_method_find_key) ( value: [`Variant`](class_variant.md) ) const[^const]                                                                  |
+| [`Variant`](class_variant.md)       | [`get`](class_dictionarymd#class_dictionary_method_get) ( key: [`Variant`](class_variant.md), default: [`Variant`](class_variant.md) = null ) const[^const]                               |
+| [`Variant`](class_variant.md)       | [`get_or_add`](class_dictionarymd#class_dictionary_method_get_or_add) ( key: [`Variant`](class_variant.md), default: [`Variant`](class_variant.md) = null )                               |
+| [`bool`](class_bool.md)             | [`has`](class_dictionarymd#class_dictionary_method_has) ( key: [`Variant`](class_variant.md) ) const[^const]                                                                              |
+| [`bool`](class_bool.md)             | [`has_all`](class_dictionarymd#class_dictionary_method_has_all) ( keys: [`Array`](class_array.md) ) const[^const]                                                                         |
+| [`int`](class_int.md)               | [`hash`](class_dictionarymd#class_dictionary_method_hash) ( ) const[^const]                                                                                                               |
+| [`bool`](class_bool.md)             | [`is_empty`](class_dictionarymd#class_dictionary_method_is_empty) ( ) const[^const]                                                                                                       |
+| [`bool`](class_bool.md)             | [`is_read_only`](class_dictionarymd#class_dictionary_method_is_read_only) ( ) const[^const]                                                                                               |
+| [`Array`](class_array.md)           | [`keys`](class_dictionarymd#class_dictionary_method_keys) ( ) const[^const]                                                                                                               |
+| `void`                              | [`make_read_only`](class_dictionarymd#class_dictionary_method_make_read_only) ( )                                                                                                         |
+| `void`                              | [`merge`](class_dictionarymd#class_dictionary_method_merge) ( dictionary: [`Dictionary`](class_dictionary.md), overwrite: [`bool`](class_bool.md) = false )                               |
+| [`Dictionary`](class_dictionary.md) | [`merged`](class_dictionarymd#class_dictionary_method_merged) ( dictionary: [`Dictionary`](class_dictionary.md), overwrite: [`bool`](class_bool.md) = false ) const[^const]               |
+| [`bool`](class_bool.md)             | [`recursive_equal`](class_dictionarymd#class_dictionary_method_recursive_equal) ( dictionary: [`Dictionary`](class_dictionary.md), recursion_count: [`int`](class_int.md) ) const[^const] |
+| [`int`](class_int.md)               | [`size`](class_dictionarymd#class_dictionary_method_size) ( ) const[^const]                                                                                                               |
+| [`Array`](class_array.md)           | [`values`](class_dictionarymd#class_dictionary_method_values) ( ) const[^const]                                                                                                           |
 
 ## 运算符
 

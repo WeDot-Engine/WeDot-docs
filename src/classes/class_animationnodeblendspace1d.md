@@ -34,13 +34,13 @@ You can set the extents of the axis with [`min_space`](#class_animationnodeblend
 
 |||
 |:-:|:--|
-| `void`                                            | [`add_blend_point`](#class_animationnodeblendspace1d_method_add_blend_point) ( node: [`AnimationRootNode`](class_animationrootnode.md), pos: [`float`](class_float.md), at_index: [`int`](class_int.md) = -1 ) |
-| [`int`](class_int.md)                             | [`get_blend_point_count`](#class_animationnodeblendspace1d_method_get_blend_point_count) ( ) const[^const]                                                                                                     |
-| [`AnimationRootNode`](class_animationrootnode.md) | [`get_blend_point_node`](#class_animationnodeblendspace1d_method_get_blend_point_node) ( point: [`int`](class_int.md) ) const[^const]                                                                          |
-| [`float`](class_float.md)                         | [`get_blend_point_position`](#class_animationnodeblendspace1d_method_get_blend_point_position) ( point: [`int`](class_int.md) ) const[^const]                                                                  |
-| `void`                                            | [`remove_blend_point`](#class_animationnodeblendspace1d_method_remove_blend_point) ( point: [`int`](class_int.md) )                                                                                            |
-| `void`                                            | [`set_blend_point_node`](#class_animationnodeblendspace1d_method_set_blend_point_node) ( point: [`int`](class_int.md), node: [`AnimationRootNode`](class_animationrootnode.md) )                               |
-| `void`                                            | [`set_blend_point_position`](#class_animationnodeblendspace1d_method_set_blend_point_position) ( point: [`int`](class_int.md), pos: [`float`](class_float.md) )                                                |
+| `void`                                            | [`add_blend_point`](class_animationnodeblendspace1dmd#class_animationnodeblendspace1d_method_add_blend_point) ( node: [`AnimationRootNode`](class_animationrootnode.md), pos: [`float`](class_float.md), at_index: [`int`](class_int.md) = -1 ) |
+| [`int`](class_int.md)                             | [`get_blend_point_count`](class_animationnodeblendspace1dmd#class_animationnodeblendspace1d_method_get_blend_point_count) ( ) const[^const]                                                                                                     |
+| [`AnimationRootNode`](class_animationrootnode.md) | [`get_blend_point_node`](class_animationnodeblendspace1dmd#class_animationnodeblendspace1d_method_get_blend_point_node) ( point: [`int`](class_int.md) ) const[^const]                                                                          |
+| [`float`](class_float.md)                         | [`get_blend_point_position`](class_animationnodeblendspace1dmd#class_animationnodeblendspace1d_method_get_blend_point_position) ( point: [`int`](class_int.md) ) const[^const]                                                                  |
+| `void`                                            | [`remove_blend_point`](class_animationnodeblendspace1dmd#class_animationnodeblendspace1d_method_remove_blend_point) ( point: [`int`](class_int.md) )                                                                                            |
+| `void`                                            | [`set_blend_point_node`](class_animationnodeblendspace1dmd#class_animationnodeblendspace1d_method_set_blend_point_node) ( point: [`int`](class_int.md), node: [`AnimationRootNode`](class_animationrootnode.md) )                               |
+| `void`                                            | [`set_blend_point_position`](class_animationnodeblendspace1dmd#class_animationnodeblendspace1d_method_set_blend_point_position) ( point: [`int`](class_int.md), pos: [`float`](class_float.md) )                                                |
 
 <!-- rst-class:: classref-section-separator -->
 

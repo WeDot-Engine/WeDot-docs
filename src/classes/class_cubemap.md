@@ -25,7 +25,7 @@ To create such a texture file yourself, reimport your image files using the Godo
 
 |||
 |:-:|:--|
-| [`Resource`](class_resource.md) | [`create_placeholder`](#class_cubemap_method_create_placeholder) ( ) const[^const] |
+| [`Resource`](class_resource.md) | [`create_placeholder`](class_cubemapmd#class_cubemap_method_create_placeholder) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

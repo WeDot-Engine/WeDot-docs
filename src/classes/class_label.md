@@ -46,11 +46,11 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`get_character_bounds`](#class_label_method_get_character_bounds) ( pos: [`int`](class_int.md) ) const[^const] |
-| [`int`](class_int.md)     | [`get_line_count`](#class_label_method_get_line_count) ( ) const[^const]                                        |
-| [`int`](class_int.md)     | [`get_line_height`](#class_label_method_get_line_height) ( line: [`int`](class_int.md) = -1 ) const[^const]     |
-| [`int`](class_int.md)     | [`get_total_character_count`](#class_label_method_get_total_character_count) ( ) const[^const]                  |
-| [`int`](class_int.md)     | [`get_visible_line_count`](#class_label_method_get_visible_line_count) ( ) const[^const]                        |
+| [`Rect2`](class_rect2.md) | [`get_character_bounds`](class_labelmd#class_label_method_get_character_bounds) ( pos: [`int`](class_int.md) ) const[^const] |
+| [`int`](class_int.md)     | [`get_line_count`](class_labelmd#class_label_method_get_line_count) ( ) const[^const]                                        |
+| [`int`](class_int.md)     | [`get_line_height`](class_labelmd#class_label_method_get_line_height) ( line: [`int`](class_int.md) = -1 ) const[^const]     |
+| [`int`](class_int.md)     | [`get_total_character_count`](class_labelmd#class_label_method_get_total_character_count) ( ) const[^const]                  |
+| [`int`](class_int.md)     | [`get_visible_line_count`](class_labelmd#class_label_method_get_visible_line_count) ( ) const[^const]                        |
 
 ## 主题属性
 

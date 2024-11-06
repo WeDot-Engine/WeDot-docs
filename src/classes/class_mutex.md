@@ -29,9 +29,9 @@ This is a reentrant mutex, meaning that it can be locked multiple times by one t
 
 |||
 |:-:|:--|
-| `void`                  | [`lock`](#class_mutex_method_lock) ( )         |
-| [`bool`](class_bool.md) | [`try_lock`](#class_mutex_method_try_lock) ( ) |
-| `void`                  | [`unlock`](#class_mutex_method_unlock) ( )     |
+| `void`                  | [`lock`](class_mutexmd#class_mutex_method_lock) ( )         |
+| [`bool`](class_bool.md) | [`try_lock`](class_mutexmd#class_mutex_method_try_lock) ( ) |
+| `void`                  | [`unlock`](class_mutexmd#class_mutex_method_unlock) ( )     |
 
 <!-- rst-class:: classref-section-separator -->
 

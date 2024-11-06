@@ -21,13 +21,13 @@ Interpolates an [`Object`](class_object.md)'s property over time.
 
 |||
 |:-:|:--|
-| [`PropertyTweener`](class_propertytweener.md) | [`as_relative`](#class_propertytweener_method_as_relative) ( )                                                                              |
-| [`PropertyTweener`](class_propertytweener.md) | [`from`](#class_propertytweener_method_from) ( value: [`Variant`](class_variant.md) )                                                       |
-| [`PropertyTweener`](class_propertytweener.md) | [`from_current`](#class_propertytweener_method_from_current) ( )                                                                            |
-| [`PropertyTweener`](class_propertytweener.md) | [`set_custom_interpolator`](#class_propertytweener_method_set_custom_interpolator) ( interpolator_method: [`Callable`](class_callable.md) ) |
-| [`PropertyTweener`](class_propertytweener.md) | [`set_delay`](#class_propertytweener_method_set_delay) ( delay: [`float`](class_float.md) )                                                 |
-| [`PropertyTweener`](class_propertytweener.md) | [`set_ease`](#class_propertytweener_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                                             |
-| [`PropertyTweener`](class_propertytweener.md) | [`set_trans`](#class_propertytweener_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) )                              |
+| [`PropertyTweener`](class_propertytweener.md) | [`as_relative`](class_propertytweenermd#class_propertytweener_method_as_relative) ( )                                                                              |
+| [`PropertyTweener`](class_propertytweener.md) | [`from`](class_propertytweenermd#class_propertytweener_method_from) ( value: [`Variant`](class_variant.md) )                                                       |
+| [`PropertyTweener`](class_propertytweener.md) | [`from_current`](class_propertytweenermd#class_propertytweener_method_from_current) ( )                                                                            |
+| [`PropertyTweener`](class_propertytweener.md) | [`set_custom_interpolator`](class_propertytweenermd#class_propertytweener_method_set_custom_interpolator) ( interpolator_method: [`Callable`](class_callable.md) ) |
+| [`PropertyTweener`](class_propertytweener.md) | [`set_delay`](class_propertytweenermd#class_propertytweener_method_set_delay) ( delay: [`float`](class_float.md) )                                                 |
+| [`PropertyTweener`](class_propertytweener.md) | [`set_ease`](class_propertytweenermd#class_propertytweener_method_set_ease) ( ease: [EaseType](#enum_tween_easetype) )                                             |
+| [`PropertyTweener`](class_propertytweener.md) | [`set_trans`](class_propertytweenermd#class_propertytweener_method_set_trans) ( trans: [TransitionType](#enum_tween_transitiontype) )                              |
 
 <!-- rst-class:: classref-section-separator -->
 

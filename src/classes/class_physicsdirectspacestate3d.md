@@ -21,12 +21,12 @@ Provides direct access to a physics space in the [`PhysicsServer3D`](class_physi
 
 |||
 |:-:|:--|
-| [`PackedFloat32Array`](class_packedfloat32array.md)         | [`cast_motion`](#class_physicsdirectspacestate3d_method_cast_motion) ( parameters: [`PhysicsShapeQueryParameters3D`](class_physicsshapequeryparameters3d.md) )                                                  |
-| [Array](class_array.md) [`Vector3`](class_vector3.md)       | [`collide_shape`](#class_physicsdirectspacestate3d_method_collide_shape) ( parameters: [`PhysicsShapeQueryParameters3D`](class_physicsshapequeryparameters3d.md), max_results: [`int`](class_int.md) = 32 )     |
-| [`Dictionary`](class_dictionary.md)                         | [`get_rest_info`](#class_physicsdirectspacestate3d_method_get_rest_info) ( parameters: [`PhysicsShapeQueryParameters3D`](class_physicsshapequeryparameters3d.md) )                                              |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`intersect_point`](#class_physicsdirectspacestate3d_method_intersect_point) ( parameters: [`PhysicsPointQueryParameters3D`](class_physicspointqueryparameters3d.md), max_results: [`int`](class_int.md) = 32 ) |
-| [`Dictionary`](class_dictionary.md)                         | [`intersect_ray`](#class_physicsdirectspacestate3d_method_intersect_ray) ( parameters: [`PhysicsRayQueryParameters3D`](class_physicsrayqueryparameters3d.md) )                                                  |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`intersect_shape`](#class_physicsdirectspacestate3d_method_intersect_shape) ( parameters: [`PhysicsShapeQueryParameters3D`](class_physicsshapequeryparameters3d.md), max_results: [`int`](class_int.md) = 32 ) |
+| [`PackedFloat32Array`](class_packedfloat32array.md)         | [`cast_motion`](class_physicsdirectspacestate3dmd#class_physicsdirectspacestate3d_method_cast_motion) ( parameters: [`PhysicsShapeQueryParameters3D`](class_physicsshapequeryparameters3d.md) )                                                  |
+| [Array](class_array.md) [`Vector3`](class_vector3.md)       | [`collide_shape`](class_physicsdirectspacestate3dmd#class_physicsdirectspacestate3d_method_collide_shape) ( parameters: [`PhysicsShapeQueryParameters3D`](class_physicsshapequeryparameters3d.md), max_results: [`int`](class_int.md) = 32 )     |
+| [`Dictionary`](class_dictionary.md)                         | [`get_rest_info`](class_physicsdirectspacestate3dmd#class_physicsdirectspacestate3d_method_get_rest_info) ( parameters: [`PhysicsShapeQueryParameters3D`](class_physicsshapequeryparameters3d.md) )                                              |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`intersect_point`](class_physicsdirectspacestate3dmd#class_physicsdirectspacestate3d_method_intersect_point) ( parameters: [`PhysicsPointQueryParameters3D`](class_physicspointqueryparameters3d.md), max_results: [`int`](class_int.md) = 32 ) |
+| [`Dictionary`](class_dictionary.md)                         | [`intersect_ray`](class_physicsdirectspacestate3dmd#class_physicsdirectspacestate3d_method_intersect_ray) ( parameters: [`PhysicsRayQueryParameters3D`](class_physicsrayqueryparameters3d.md) )                                                  |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`intersect_shape`](class_physicsdirectspacestate3dmd#class_physicsdirectspacestate3d_method_intersect_shape) ( parameters: [`PhysicsShapeQueryParameters3D`](class_physicsshapequeryparameters3d.md), max_results: [`int`](class_int.md) = 32 ) |
 
 <!-- rst-class:: classref-section-separator -->
 

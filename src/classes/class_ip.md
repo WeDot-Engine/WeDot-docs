@@ -19,16 +19,16 @@ IP contains support functions for the Internet Protocol (IP). TCP/IP support is 
 
 |||
 |:-:|:--|
-| `void`                                                      | [`clear_cache`](#class_ip_method_clear_cache) ( hostname: [`String`](class_string.md) = "" )                                                            |
-| `void`                                                      | [`erase_resolve_item`](#class_ip_method_erase_resolve_item) ( id: [`int`](class_int.md) )                                                               |
-| [`PackedStringArray`](class_packedstringarray.md)           | [`get_local_addresses`](#class_ip_method_get_local_addresses) ( ) const[^const]                                                                         |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_local_interfaces`](#class_ip_method_get_local_interfaces) ( ) const[^const]                                                                       |
-| [`String`](class_string.md)                                 | [`get_resolve_item_address`](#class_ip_method_get_resolve_item_address) ( id: [`int`](class_int.md) ) const[^const]                                     |
-| [`Array`](class_array.md)                                   | [`get_resolve_item_addresses`](#class_ip_method_get_resolve_item_addresses) ( id: [`int`](class_int.md) ) const[^const]                                 |
-| [ResolverStatus](#enum_ip_resolverstatus)                   | [`get_resolve_item_status`](#class_ip_method_get_resolve_item_status) ( id: [`int`](class_int.md) ) const[^const]                                       |
-| [`String`](class_string.md)                                 | [`resolve_hostname`](#class_ip_method_resolve_hostname) ( host: [`String`](class_string.md), ip_type: [Type](#enum_ip_type) = 3 )                       |
-| [`PackedStringArray`](class_packedstringarray.md)           | [`resolve_hostname_addresses`](#class_ip_method_resolve_hostname_addresses) ( host: [`String`](class_string.md), ip_type: [Type](#enum_ip_type) = 3 )   |
-| [`int`](class_int.md)                                       | [`resolve_hostname_queue_item`](#class_ip_method_resolve_hostname_queue_item) ( host: [`String`](class_string.md), ip_type: [Type](#enum_ip_type) = 3 ) |
+| `void`                                                      | [`clear_cache`](class_ipmd#class_ip_method_clear_cache) ( hostname: [`String`](class_string.md) = "" )                                                            |
+| `void`                                                      | [`erase_resolve_item`](class_ipmd#class_ip_method_erase_resolve_item) ( id: [`int`](class_int.md) )                                                               |
+| [`PackedStringArray`](class_packedstringarray.md)           | [`get_local_addresses`](class_ipmd#class_ip_method_get_local_addresses) ( ) const[^const]                                                                         |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_local_interfaces`](class_ipmd#class_ip_method_get_local_interfaces) ( ) const[^const]                                                                       |
+| [`String`](class_string.md)                                 | [`get_resolve_item_address`](class_ipmd#class_ip_method_get_resolve_item_address) ( id: [`int`](class_int.md) ) const[^const]                                     |
+| [`Array`](class_array.md)                                   | [`get_resolve_item_addresses`](class_ipmd#class_ip_method_get_resolve_item_addresses) ( id: [`int`](class_int.md) ) const[^const]                                 |
+| [ResolverStatus](#enum_ip_resolverstatus)                   | [`get_resolve_item_status`](class_ipmd#class_ip_method_get_resolve_item_status) ( id: [`int`](class_int.md) ) const[^const]                                       |
+| [`String`](class_string.md)                                 | [`resolve_hostname`](class_ipmd#class_ip_method_resolve_hostname) ( host: [`String`](class_string.md), ip_type: [Type](#enum_ip_type) = 3 )                       |
+| [`PackedStringArray`](class_packedstringarray.md)           | [`resolve_hostname_addresses`](class_ipmd#class_ip_method_resolve_hostname_addresses) ( host: [`String`](class_string.md), ip_type: [Type](#enum_ip_type) = 3 )   |
+| [`int`](class_int.md)                                       | [`resolve_hostname_queue_item`](class_ipmd#class_ip_method_resolve_hostname_queue_item) ( host: [`String`](class_string.md), ip_type: [Type](#enum_ip_type) = 3 ) |
 
 <!-- rst-class:: classref-section-separator -->
 

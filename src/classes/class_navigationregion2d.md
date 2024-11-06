@@ -44,14 +44,14 @@ The pathfinding cost of traveling distances inside this region can be controlled
 
 |||
 |:-:|:--|
-| `void`                  | [`bake_navigation_polygon`](#class_navigationregion2d_method_bake_navigation_polygon) ( on_thread: [`bool`](class_bool.md) = true )                                 |
-| [`bool`](class_bool.md) | [`get_navigation_layer_value`](#class_navigationregion2d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`RID`](class_rid.md)   | [`get_navigation_map`](#class_navigationregion2d_method_get_navigation_map) ( ) const[^const]                                                                       |
-| [`RID`](class_rid.md)   | [`get_region_rid`](#class_navigationregion2d_method_get_region_rid) ( ) const[^const]                                                                               |
-| [`RID`](class_rid.md)   | [`get_rid`](#class_navigationregion2d_method_get_rid) ( ) const[^const]                                                                                             |
-| [`bool`](class_bool.md) | [`is_baking`](#class_navigationregion2d_method_is_baking) ( ) const[^const]                                                                                         |
-| `void`                  | [`set_navigation_layer_value`](#class_navigationregion2d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                  | [`set_navigation_map`](#class_navigationregion2d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
+| `void`                  | [`bake_navigation_polygon`](class_navigationregion2dmd#class_navigationregion2d_method_bake_navigation_polygon) ( on_thread: [`bool`](class_bool.md) = true )                                 |
+| [`bool`](class_bool.md) | [`get_navigation_layer_value`](class_navigationregion2dmd#class_navigationregion2d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`RID`](class_rid.md)   | [`get_navigation_map`](class_navigationregion2dmd#class_navigationregion2d_method_get_navigation_map) ( ) const[^const]                                                                       |
+| [`RID`](class_rid.md)   | [`get_region_rid`](class_navigationregion2dmd#class_navigationregion2d_method_get_region_rid) ( ) const[^const]                                                                               |
+| [`RID`](class_rid.md)   | [`get_rid`](class_navigationregion2dmd#class_navigationregion2d_method_get_rid) ( ) const[^const]                                                                                             |
+| [`bool`](class_bool.md) | [`is_baking`](class_navigationregion2dmd#class_navigationregion2d_method_is_baking) ( ) const[^const]                                                                                         |
+| `void`                  | [`set_navigation_layer_value`](class_navigationregion2dmd#class_navigationregion2d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                  | [`set_navigation_map`](class_navigationregion2dmd#class_navigationregion2d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
 
 <!-- rst-class:: classref-section-separator -->
 

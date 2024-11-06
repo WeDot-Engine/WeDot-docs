@@ -51,18 +51,18 @@ Adds a chorus audio effect. The effect applies a filter with voices to duplicate
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_voice_cutoff_hz`](#class_audioeffectchorus_method_get_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                         |
-| [`float`](class_float.md) | [`get_voice_delay_ms`](#class_audioeffectchorus_method_get_voice_delay_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
-| [`float`](class_float.md) | [`get_voice_depth_ms`](#class_audioeffectchorus_method_get_voice_depth_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
-| [`float`](class_float.md) | [`get_voice_level_db`](#class_audioeffectchorus_method_get_voice_level_db) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
-| [`float`](class_float.md) | [`get_voice_pan`](#class_audioeffectchorus_method_get_voice_pan) ( voice_idx: [`int`](class_int.md) ) const[^const]                                     |
-| [`float`](class_float.md) | [`get_voice_rate_hz`](#class_audioeffectchorus_method_get_voice_rate_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                             |
-| `void`                    | [`set_voice_cutoff_hz`](#class_audioeffectchorus_method_set_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md), cutoff_hz: [`float`](class_float.md) ) |
-| `void`                    | [`set_voice_delay_ms`](#class_audioeffectchorus_method_set_voice_delay_ms) ( voice_idx: [`int`](class_int.md), delay_ms: [`float`](class_float.md) )    |
-| `void`                    | [`set_voice_depth_ms`](#class_audioeffectchorus_method_set_voice_depth_ms) ( voice_idx: [`int`](class_int.md), depth_ms: [`float`](class_float.md) )    |
-| `void`                    | [`set_voice_level_db`](#class_audioeffectchorus_method_set_voice_level_db) ( voice_idx: [`int`](class_int.md), level_db: [`float`](class_float.md) )    |
-| `void`                    | [`set_voice_pan`](#class_audioeffectchorus_method_set_voice_pan) ( voice_idx: [`int`](class_int.md), pan: [`float`](class_float.md) )                   |
-| `void`                    | [`set_voice_rate_hz`](#class_audioeffectchorus_method_set_voice_rate_hz) ( voice_idx: [`int`](class_int.md), rate_hz: [`float`](class_float.md) )       |
+| [`float`](class_float.md) | [`get_voice_cutoff_hz`](class_audioeffectchorusmd#class_audioeffectchorus_method_get_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                         |
+| [`float`](class_float.md) | [`get_voice_delay_ms`](class_audioeffectchorusmd#class_audioeffectchorus_method_get_voice_delay_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
+| [`float`](class_float.md) | [`get_voice_depth_ms`](class_audioeffectchorusmd#class_audioeffectchorus_method_get_voice_depth_ms) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
+| [`float`](class_float.md) | [`get_voice_level_db`](class_audioeffectchorusmd#class_audioeffectchorus_method_get_voice_level_db) ( voice_idx: [`int`](class_int.md) ) const[^const]                           |
+| [`float`](class_float.md) | [`get_voice_pan`](class_audioeffectchorusmd#class_audioeffectchorus_method_get_voice_pan) ( voice_idx: [`int`](class_int.md) ) const[^const]                                     |
+| [`float`](class_float.md) | [`get_voice_rate_hz`](class_audioeffectchorusmd#class_audioeffectchorus_method_get_voice_rate_hz) ( voice_idx: [`int`](class_int.md) ) const[^const]                             |
+| `void`                    | [`set_voice_cutoff_hz`](class_audioeffectchorusmd#class_audioeffectchorus_method_set_voice_cutoff_hz) ( voice_idx: [`int`](class_int.md), cutoff_hz: [`float`](class_float.md) ) |
+| `void`                    | [`set_voice_delay_ms`](class_audioeffectchorusmd#class_audioeffectchorus_method_set_voice_delay_ms) ( voice_idx: [`int`](class_int.md), delay_ms: [`float`](class_float.md) )    |
+| `void`                    | [`set_voice_depth_ms`](class_audioeffectchorusmd#class_audioeffectchorus_method_set_voice_depth_ms) ( voice_idx: [`int`](class_int.md), depth_ms: [`float`](class_float.md) )    |
+| `void`                    | [`set_voice_level_db`](class_audioeffectchorusmd#class_audioeffectchorus_method_set_voice_level_db) ( voice_idx: [`int`](class_int.md), level_db: [`float`](class_float.md) )    |
+| `void`                    | [`set_voice_pan`](class_audioeffectchorusmd#class_audioeffectchorus_method_set_voice_pan) ( voice_idx: [`int`](class_int.md), pan: [`float`](class_float.md) )                   |
+| `void`                    | [`set_voice_rate_hz`](class_audioeffectchorusmd#class_audioeffectchorus_method_set_voice_rate_hz) ( voice_idx: [`int`](class_int.md), rate_hz: [`float`](class_float.md) )       |
 
 <!-- rst-class:: classref-section-separator -->
 

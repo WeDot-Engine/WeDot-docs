@@ -26,7 +26,7 @@ This class is used by various XR interfaces to generate VRS textures that can be
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md) | [`make_vrs_texture`](#class_xrvrs_method_make_vrs_texture) ( target_size: [`Vector2`](class_vector2.md), eye_foci: [`PackedVector2Array`](class_packedvector2array.md) ) |
+| [`RID`](class_rid.md) | [`make_vrs_texture`](class_xrvrsmd#class_xrvrs_method_make_vrs_texture) ( target_size: [`Vector2`](class_vector2.md), eye_foci: [`PackedVector2Array`](class_packedvector2array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

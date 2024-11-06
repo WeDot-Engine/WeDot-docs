@@ -27,29 +27,29 @@ Represents a normalized plane equation. [`normal`](#class_plane_property_normal)
 
 |||
 |:-:|:--|
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( )                                                                                                                        |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( from: [`Plane`](class_plane.md) )                                                                                        |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( a: [`float`](class_float.md), b: [`float`](class_float.md), c: [`float`](class_float.md), d: [`float`](class_float.md) ) |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md) )                                                                                  |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md), d: [`float`](class_float.md) )                                                    |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md), point: [`Vector3`](class_vector3.md) )                                            |
-| [`Plane`](class_plane.md) | [`Plane`](#class_plane_constructor_plane) ( point1: [`Vector3`](class_vector3.md), point2: [`Vector3`](class_vector3.md), point3: [`Vector3`](class_vector3.md) )    |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( )                                                                                                                        |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( from: [`Plane`](class_plane.md) )                                                                                        |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( a: [`float`](class_float.md), b: [`float`](class_float.md), c: [`float`](class_float.md), d: [`float`](class_float.md) ) |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md) )                                                                                  |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md), d: [`float`](class_float.md) )                                                    |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( normal: [`Vector3`](class_vector3.md), point: [`Vector3`](class_vector3.md) )                                            |
+| [`Plane`](class_plane.md) | [`Plane`](class_plane.md#class_plane_constructor_plane) ( point1: [`Vector3`](class_vector3.md), point2: [`Vector3`](class_vector3.md), point3: [`Vector3`](class_vector3.md) )    |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)     | [`distance_to`](#class_plane_method_distance_to) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                 |
-| [`Vector3`](class_vector3.md) | [`get_center`](#class_plane_method_get_center) ( ) const[^const]                                                                                        |
-| [`bool`](class_bool.md)       | [`has_point`](#class_plane_method_has_point) ( point: [`Vector3`](class_vector3.md), tolerance: [`float`](class_float.md) = 1e-05 ) const[^const]       |
-| [`Variant`](class_variant.md) | [`intersect_3`](#class_plane_method_intersect_3) ( b: [`Plane`](class_plane.md), c: [`Plane`](class_plane.md) ) const[^const]                           |
-| [`Variant`](class_variant.md) | [`intersects_ray`](#class_plane_method_intersects_ray) ( from: [`Vector3`](class_vector3.md), dir: [`Vector3`](class_vector3.md) ) const[^const]        |
-| [`Variant`](class_variant.md) | [`intersects_segment`](#class_plane_method_intersects_segment) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md) ) const[^const] |
-| [`bool`](class_bool.md)       | [`is_equal_approx`](#class_plane_method_is_equal_approx) ( to_plane: [`Plane`](class_plane.md) ) const[^const]                                          |
-| [`bool`](class_bool.md)       | [`is_finite`](#class_plane_method_is_finite) ( ) const[^const]                                                                                          |
-| [`bool`](class_bool.md)       | [`is_point_over`](#class_plane_method_is_point_over) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                             |
-| [`Plane`](class_plane.md)     | [`normalized`](#class_plane_method_normalized) ( ) const[^const]                                                                                        |
-| [`Vector3`](class_vector3.md) | [`project`](#class_plane_method_project) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                         |
+| [`float`](class_float.md)     | [`distance_to`](class_planemd#class_plane_method_distance_to) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                 |
+| [`Vector3`](class_vector3.md) | [`get_center`](class_planemd#class_plane_method_get_center) ( ) const[^const]                                                                                        |
+| [`bool`](class_bool.md)       | [`has_point`](class_planemd#class_plane_method_has_point) ( point: [`Vector3`](class_vector3.md), tolerance: [`float`](class_float.md) = 1e-05 ) const[^const]       |
+| [`Variant`](class_variant.md) | [`intersect_3`](class_planemd#class_plane_method_intersect_3) ( b: [`Plane`](class_plane.md), c: [`Plane`](class_plane.md) ) const[^const]                           |
+| [`Variant`](class_variant.md) | [`intersects_ray`](class_planemd#class_plane_method_intersects_ray) ( from: [`Vector3`](class_vector3.md), dir: [`Vector3`](class_vector3.md) ) const[^const]        |
+| [`Variant`](class_variant.md) | [`intersects_segment`](class_planemd#class_plane_method_intersects_segment) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md) ) const[^const] |
+| [`bool`](class_bool.md)       | [`is_equal_approx`](class_planemd#class_plane_method_is_equal_approx) ( to_plane: [`Plane`](class_plane.md) ) const[^const]                                          |
+| [`bool`](class_bool.md)       | [`is_finite`](class_planemd#class_plane_method_is_finite) ( ) const[^const]                                                                                          |
+| [`bool`](class_bool.md)       | [`is_point_over`](class_planemd#class_plane_method_is_point_over) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                             |
+| [`Plane`](class_plane.md)     | [`normalized`](class_planemd#class_plane_method_normalized) ( ) const[^const]                                                                                        |
+| [`Vector3`](class_vector3.md) | [`project`](class_planemd#class_plane_method_project) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                         |
 
 ## 运算符
 

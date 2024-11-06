@@ -59,10 +59,10 @@ SkeletonIK3D is used to rotate all bones of a [`Skeleton3D`](class_skeleton3d.md
 
 |||
 |:-:|:--|
-| [`Skeleton3D`](class_skeleton3d.md) | [`get_parent_skeleton`](#class_skeletonik3d_method_get_parent_skeleton) ( ) const[^const] |
-| [`bool`](class_bool.md)             | [`is_running`](#class_skeletonik3d_method_is_running) ( )                                 |
-| `void`                              | [`start`](#class_skeletonik3d_method_start) ( one_time: [`bool`](class_bool.md) = false ) |
-| `void`                              | [`stop`](#class_skeletonik3d_method_stop) ( )                                             |
+| [`Skeleton3D`](class_skeleton3d.md) | [`get_parent_skeleton`](class_skeletonik3dmd#class_skeletonik3d_method_get_parent_skeleton) ( ) const[^const] |
+| [`bool`](class_bool.md)             | [`is_running`](class_skeletonik3dmd#class_skeletonik3d_method_is_running) ( )                                 |
+| `void`                              | [`start`](class_skeletonik3dmd#class_skeletonik3d_method_start) ( one_time: [`bool`](class_bool.md) = false ) |
+| `void`                              | [`stop`](class_skeletonik3dmd#class_skeletonik3d_method_stop) ( )                                             |
 
 <!-- rst-class:: classref-section-separator -->
 

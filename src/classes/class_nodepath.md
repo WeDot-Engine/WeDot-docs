@@ -68,25 +68,25 @@ See also [`StringName`](class_stringname.md), which is a similar type designed f
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md) | [`NodePath`](#class_nodepath_constructor_nodepath) ( )                                       |
-| [`NodePath`](class_nodepath.md) | [`NodePath`](#class_nodepath_constructor_nodepath) ( from: [`NodePath`](class_nodepath.md) ) |
-| [`NodePath`](class_nodepath.md) | [`NodePath`](#class_nodepath_constructor_nodepath) ( from: [`String`](class_string.md) )     |
+| [`NodePath`](class_nodepath.md) | [`NodePath`](class_nodepath.md#class_nodepath_constructor_nodepath) ( )                                       |
+| [`NodePath`](class_nodepath.md) | [`NodePath`](class_nodepath.md#class_nodepath_constructor_nodepath) ( from: [`NodePath`](class_nodepath.md) ) |
+| [`NodePath`](class_nodepath.md) | [`NodePath`](class_nodepath.md#class_nodepath_constructor_nodepath) ( from: [`String`](class_string.md) )     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md)     | [`get_as_property_path`](#class_nodepath_method_get_as_property_path) ( ) const[^const]                                         |
-| [`StringName`](class_stringname.md) | [`get_concatenated_names`](#class_nodepath_method_get_concatenated_names) ( ) const[^const]                                     |
-| [`StringName`](class_stringname.md) | [`get_concatenated_subnames`](#class_nodepath_method_get_concatenated_subnames) ( ) const[^const]                               |
-| [`StringName`](class_stringname.md) | [`get_name`](#class_nodepath_method_get_name) ( idx: [`int`](class_int.md) ) const[^const]                                      |
-| [`int`](class_int.md)               | [`get_name_count`](#class_nodepath_method_get_name_count) ( ) const[^const]                                                     |
-| [`StringName`](class_stringname.md) | [`get_subname`](#class_nodepath_method_get_subname) ( idx: [`int`](class_int.md) ) const[^const]                                |
-| [`int`](class_int.md)               | [`get_subname_count`](#class_nodepath_method_get_subname_count) ( ) const[^const]                                               |
-| [`int`](class_int.md)               | [`hash`](#class_nodepath_method_hash) ( ) const[^const]                                                                         |
-| [`bool`](class_bool.md)             | [`is_absolute`](#class_nodepath_method_is_absolute) ( ) const[^const]                                                           |
-| [`bool`](class_bool.md)             | [`is_empty`](#class_nodepath_method_is_empty) ( ) const[^const]                                                                 |
-| [`NodePath`](class_nodepath.md)     | [`slice`](#class_nodepath_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
+| [`NodePath`](class_nodepath.md)     | [`get_as_property_path`](class_nodepathmd#class_nodepath_method_get_as_property_path) ( ) const[^const]                                         |
+| [`StringName`](class_stringname.md) | [`get_concatenated_names`](class_nodepathmd#class_nodepath_method_get_concatenated_names) ( ) const[^const]                                     |
+| [`StringName`](class_stringname.md) | [`get_concatenated_subnames`](class_nodepathmd#class_nodepath_method_get_concatenated_subnames) ( ) const[^const]                               |
+| [`StringName`](class_stringname.md) | [`get_name`](class_nodepathmd#class_nodepath_method_get_name) ( idx: [`int`](class_int.md) ) const[^const]                                      |
+| [`int`](class_int.md)               | [`get_name_count`](class_nodepathmd#class_nodepath_method_get_name_count) ( ) const[^const]                                                     |
+| [`StringName`](class_stringname.md) | [`get_subname`](class_nodepathmd#class_nodepath_method_get_subname) ( idx: [`int`](class_int.md) ) const[^const]                                |
+| [`int`](class_int.md)               | [`get_subname_count`](class_nodepathmd#class_nodepath_method_get_subname_count) ( ) const[^const]                                               |
+| [`int`](class_int.md)               | [`hash`](class_nodepathmd#class_nodepath_method_hash) ( ) const[^const]                                                                         |
+| [`bool`](class_bool.md)             | [`is_absolute`](class_nodepathmd#class_nodepath_method_is_absolute) ( ) const[^const]                                                           |
+| [`bool`](class_bool.md)             | [`is_empty`](class_nodepathmd#class_nodepath_method_is_empty) ( ) const[^const]                                                                 |
+| [`NodePath`](class_nodepath.md)     | [`slice`](class_nodepathmd#class_nodepath_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
 
 ## 运算符
 

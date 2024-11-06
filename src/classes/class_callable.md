@@ -102,34 +102,34 @@ In GDScript, you can access methods and global functions as **Callable** s:
 
 |||
 |:-:|:--|
-| [`Callable`](class_callable.md) | [`Callable`](#class_callable_constructor_callable) ( )                                                                                  |
-| [`Callable`](class_callable.md) | [`Callable`](#class_callable_constructor_callable) ( from: [`Callable`](class_callable.md) )                                            |
-| [`Callable`](class_callable.md) | [`Callable`](#class_callable_constructor_callable) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md) ) |
+| [`Callable`](class_callable.md) | [`Callable`](class_callable.md#class_callable_constructor_callable) ( )                                                                                  |
+| [`Callable`](class_callable.md) | [`Callable`](class_callable.md#class_callable_constructor_callable) ( from: [`Callable`](class_callable.md) )                                            |
+| [`Callable`](class_callable.md) | [`Callable`](class_callable.md#class_callable_constructor_callable) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Callable`](class_callable.md)     | [`bind`](#class_callable_method_bind) ( ... ) vararg[^vararg] const[^const]                                                                       |
-| [`Callable`](class_callable.md)     | [`bindv`](#class_callable_method_bindv) ( arguments: [`Array`](class_array.md) )                                                                  |
-| [`Variant`](class_variant.md)       | [`call`](#class_callable_method_call) ( ... ) vararg[^vararg] const[^const]                                                                       |
-| `void`                              | [`call_deferred`](#class_callable_method_call_deferred) ( ... ) vararg[^vararg] const[^const]                                                     |
-| [`Variant`](class_variant.md)       | [`callv`](#class_callable_method_callv) ( arguments: [`Array`](class_array.md) ) const[^const]                                                    |
-| [`Callable`](class_callable.md)     | [`create`](#class_callable_method_create) ( variant: [`Variant`](class_variant.md), method: [`StringName`](class_stringname.md) ) static[^static] |
-| [`int`](class_int.md)               | [`get_argument_count`](#class_callable_method_get_argument_count) ( ) const[^const]                                                               |
-| [`Array`](class_array.md)           | [`get_bound_arguments`](#class_callable_method_get_bound_arguments) ( ) const[^const]                                                             |
-| [`int`](class_int.md)               | [`get_bound_arguments_count`](#class_callable_method_get_bound_arguments_count) ( ) const[^const]                                                 |
-| [`StringName`](class_stringname.md) | [`get_method`](#class_callable_method_get_method) ( ) const[^const]                                                                               |
-| [`Object`](class_object.md)         | [`get_object`](#class_callable_method_get_object) ( ) const[^const]                                                                               |
-| [`int`](class_int.md)               | [`get_object_id`](#class_callable_method_get_object_id) ( ) const[^const]                                                                         |
-| [`int`](class_int.md)               | [`hash`](#class_callable_method_hash) ( ) const[^const]                                                                                           |
-| [`bool`](class_bool.md)             | [`is_custom`](#class_callable_method_is_custom) ( ) const[^const]                                                                                 |
-| [`bool`](class_bool.md)             | [`is_null`](#class_callable_method_is_null) ( ) const[^const]                                                                                     |
-| [`bool`](class_bool.md)             | [`is_standard`](#class_callable_method_is_standard) ( ) const[^const]                                                                             |
-| [`bool`](class_bool.md)             | [`is_valid`](#class_callable_method_is_valid) ( ) const[^const]                                                                                   |
-| `void`                              | [`rpc`](#class_callable_method_rpc) ( ... ) vararg[^vararg] const[^const]                                                                         |
-| `void`                              | [`rpc_id`](#class_callable_method_rpc_id) ( peer_id: [`int`](class_int.md), ... ) vararg[^vararg] const[^const]                                   |
-| [`Callable`](class_callable.md)     | [`unbind`](#class_callable_method_unbind) ( argcount: [`int`](class_int.md) ) const[^const]                                                       |
+| [`Callable`](class_callable.md)     | [`bind`](class_callablemd#class_callable_method_bind) ( ... ) vararg[^vararg] const[^const]                                                                       |
+| [`Callable`](class_callable.md)     | [`bindv`](class_callablemd#class_callable_method_bindv) ( arguments: [`Array`](class_array.md) )                                                                  |
+| [`Variant`](class_variant.md)       | [`call`](class_callablemd#class_callable_method_call) ( ... ) vararg[^vararg] const[^const]                                                                       |
+| `void`                              | [`call_deferred`](class_callablemd#class_callable_method_call_deferred) ( ... ) vararg[^vararg] const[^const]                                                     |
+| [`Variant`](class_variant.md)       | [`callv`](class_callablemd#class_callable_method_callv) ( arguments: [`Array`](class_array.md) ) const[^const]                                                    |
+| [`Callable`](class_callable.md)     | [`create`](class_callablemd#class_callable_method_create) ( variant: [`Variant`](class_variant.md), method: [`StringName`](class_stringname.md) ) static[^static] |
+| [`int`](class_int.md)               | [`get_argument_count`](class_callablemd#class_callable_method_get_argument_count) ( ) const[^const]                                                               |
+| [`Array`](class_array.md)           | [`get_bound_arguments`](class_callablemd#class_callable_method_get_bound_arguments) ( ) const[^const]                                                             |
+| [`int`](class_int.md)               | [`get_bound_arguments_count`](class_callablemd#class_callable_method_get_bound_arguments_count) ( ) const[^const]                                                 |
+| [`StringName`](class_stringname.md) | [`get_method`](class_callablemd#class_callable_method_get_method) ( ) const[^const]                                                                               |
+| [`Object`](class_object.md)         | [`get_object`](class_callablemd#class_callable_method_get_object) ( ) const[^const]                                                                               |
+| [`int`](class_int.md)               | [`get_object_id`](class_callablemd#class_callable_method_get_object_id) ( ) const[^const]                                                                         |
+| [`int`](class_int.md)               | [`hash`](class_callablemd#class_callable_method_hash) ( ) const[^const]                                                                                           |
+| [`bool`](class_bool.md)             | [`is_custom`](class_callablemd#class_callable_method_is_custom) ( ) const[^const]                                                                                 |
+| [`bool`](class_bool.md)             | [`is_null`](class_callablemd#class_callable_method_is_null) ( ) const[^const]                                                                                     |
+| [`bool`](class_bool.md)             | [`is_standard`](class_callablemd#class_callable_method_is_standard) ( ) const[^const]                                                                             |
+| [`bool`](class_bool.md)             | [`is_valid`](class_callablemd#class_callable_method_is_valid) ( ) const[^const]                                                                                   |
+| `void`                              | [`rpc`](class_callablemd#class_callable_method_rpc) ( ... ) vararg[^vararg] const[^const]                                                                         |
+| `void`                              | [`rpc_id`](class_callablemd#class_callable_method_rpc_id) ( peer_id: [`int`](class_int.md), ... ) vararg[^vararg] const[^const]                                   |
+| [`Callable`](class_callable.md)     | [`unbind`](class_callablemd#class_callable_method_unbind) ( argcount: [`int`](class_int.md) ) const[^const]                                                       |
 
 ## 运算符
 

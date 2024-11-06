@@ -130,8 +130,8 @@ Resource for environment nodes (like [`WorldEnvironment`](class_worldenvironment
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_glow_level`](#class_environment_method_get_glow_level) ( idx: [`int`](class_int.md) ) const[^const]                         |
-| `void`                    | [`set_glow_level`](#class_environment_method_set_glow_level) ( idx: [`int`](class_int.md), intensity: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_glow_level`](class_environmentmd#class_environment_method_get_glow_level) ( idx: [`int`](class_int.md) ) const[^const]                         |
+| `void`                    | [`set_glow_level`](class_environmentmd#class_environment_method_set_glow_level) ( idx: [`int`](class_int.md), intensity: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

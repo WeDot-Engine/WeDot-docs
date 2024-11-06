@@ -33,37 +33,37 @@ For a general introduction, see the [*Matrices and transforms*](../tutorials/mat
 
 |||
 |:-:|:--|
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( )                                                                                                                                                     |
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( from: [`Transform2D`](class_transform2d.md) )                                                                                                         |
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) )                                                                        |
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), scale: [`Vector2`](class_vector2.md), skew: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) ) |
-| [`Transform2D`](class_transform2d.md) | [`Transform2D`](#class_transform2d_constructor_transform2d) ( x_axis: [`Vector2`](class_vector2.md), y_axis: [`Vector2`](class_vector2.md), origin: [`Vector2`](class_vector2.md) )                                 |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( )                                                                                                                                                     |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( from: [`Transform2D`](class_transform2d.md) )                                                                                                         |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) )                                                                        |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( rotation: [`float`](class_float.md), scale: [`Vector2`](class_vector2.md), skew: [`float`](class_float.md), position: [`Vector2`](class_vector2.md) ) |
+| [`Transform2D`](class_transform2d.md) | [`Transform2D`](class_transform2d.md#class_transform2d_constructor_transform2d) ( x_axis: [`Vector2`](class_vector2.md), y_axis: [`Vector2`](class_vector2.md), origin: [`Vector2`](class_vector2.md) )                                 |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Transform2D`](class_transform2d.md) | [`affine_inverse`](#class_transform2d_method_affine_inverse) ( ) const[^const]                                                                                     |
-| [`Vector2`](class_vector2.md)         | [`basis_xform`](#class_transform2d_method_basis_xform) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                          |
-| [`Vector2`](class_vector2.md)         | [`basis_xform_inv`](#class_transform2d_method_basis_xform_inv) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                  |
-| [`float`](class_float.md)             | [`determinant`](#class_transform2d_method_determinant) ( ) const[^const]                                                                                           |
-| [`Vector2`](class_vector2.md)         | [`get_origin`](#class_transform2d_method_get_origin) ( ) const[^const]                                                                                             |
-| [`float`](class_float.md)             | [`get_rotation`](#class_transform2d_method_get_rotation) ( ) const[^const]                                                                                         |
-| [`Vector2`](class_vector2.md)         | [`get_scale`](#class_transform2d_method_get_scale) ( ) const[^const]                                                                                               |
-| [`float`](class_float.md)             | [`get_skew`](#class_transform2d_method_get_skew) ( ) const[^const]                                                                                                 |
-| [`Transform2D`](class_transform2d.md) | [`interpolate_with`](#class_transform2d_method_interpolate_with) ( xform: [`Transform2D`](class_transform2d.md), weight: [`float`](class_float.md) ) const[^const] |
-| [`Transform2D`](class_transform2d.md) | [`inverse`](#class_transform2d_method_inverse) ( ) const[^const]                                                                                                   |
-| [`bool`](class_bool.md)               | [`is_conformal`](#class_transform2d_method_is_conformal) ( ) const[^const]                                                                                         |
-| [`bool`](class_bool.md)               | [`is_equal_approx`](#class_transform2d_method_is_equal_approx) ( xform: [`Transform2D`](class_transform2d.md) ) const[^const]                                      |
-| [`bool`](class_bool.md)               | [`is_finite`](#class_transform2d_method_is_finite) ( ) const[^const]                                                                                               |
-| [`Transform2D`](class_transform2d.md) | [`looking_at`](#class_transform2d_method_looking_at) ( target: [`Vector2`](class_vector2.md) = Vector2(0, 0) ) const[^const]                                       |
-| [`Transform2D`](class_transform2d.md) | [`orthonormalized`](#class_transform2d_method_orthonormalized) ( ) const[^const]                                                                                   |
-| [`Transform2D`](class_transform2d.md) | [`rotated`](#class_transform2d_method_rotated) ( angle: [`float`](class_float.md) ) const[^const]                                                                  |
-| [`Transform2D`](class_transform2d.md) | [`rotated_local`](#class_transform2d_method_rotated_local) ( angle: [`float`](class_float.md) ) const[^const]                                                      |
-| [`Transform2D`](class_transform2d.md) | [`scaled`](#class_transform2d_method_scaled) ( scale: [`Vector2`](class_vector2.md) ) const[^const]                                                                |
-| [`Transform2D`](class_transform2d.md) | [`scaled_local`](#class_transform2d_method_scaled_local) ( scale: [`Vector2`](class_vector2.md) ) const[^const]                                                    |
-| [`Transform2D`](class_transform2d.md) | [`translated`](#class_transform2d_method_translated) ( offset: [`Vector2`](class_vector2.md) ) const[^const]                                                       |
-| [`Transform2D`](class_transform2d.md) | [`translated_local`](#class_transform2d_method_translated_local) ( offset: [`Vector2`](class_vector2.md) ) const[^const]                                           |
+| [`Transform2D`](class_transform2d.md) | [`affine_inverse`](class_transform2dmd#class_transform2d_method_affine_inverse) ( ) const[^const]                                                                                     |
+| [`Vector2`](class_vector2.md)         | [`basis_xform`](class_transform2dmd#class_transform2d_method_basis_xform) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                          |
+| [`Vector2`](class_vector2.md)         | [`basis_xform_inv`](class_transform2dmd#class_transform2d_method_basis_xform_inv) ( v: [`Vector2`](class_vector2.md) ) const[^const]                                                  |
+| [`float`](class_float.md)             | [`determinant`](class_transform2dmd#class_transform2d_method_determinant) ( ) const[^const]                                                                                           |
+| [`Vector2`](class_vector2.md)         | [`get_origin`](class_transform2dmd#class_transform2d_method_get_origin) ( ) const[^const]                                                                                             |
+| [`float`](class_float.md)             | [`get_rotation`](class_transform2dmd#class_transform2d_method_get_rotation) ( ) const[^const]                                                                                         |
+| [`Vector2`](class_vector2.md)         | [`get_scale`](class_transform2dmd#class_transform2d_method_get_scale) ( ) const[^const]                                                                                               |
+| [`float`](class_float.md)             | [`get_skew`](class_transform2dmd#class_transform2d_method_get_skew) ( ) const[^const]                                                                                                 |
+| [`Transform2D`](class_transform2d.md) | [`interpolate_with`](class_transform2dmd#class_transform2d_method_interpolate_with) ( xform: [`Transform2D`](class_transform2d.md), weight: [`float`](class_float.md) ) const[^const] |
+| [`Transform2D`](class_transform2d.md) | [`inverse`](class_transform2dmd#class_transform2d_method_inverse) ( ) const[^const]                                                                                                   |
+| [`bool`](class_bool.md)               | [`is_conformal`](class_transform2dmd#class_transform2d_method_is_conformal) ( ) const[^const]                                                                                         |
+| [`bool`](class_bool.md)               | [`is_equal_approx`](class_transform2dmd#class_transform2d_method_is_equal_approx) ( xform: [`Transform2D`](class_transform2d.md) ) const[^const]                                      |
+| [`bool`](class_bool.md)               | [`is_finite`](class_transform2dmd#class_transform2d_method_is_finite) ( ) const[^const]                                                                                               |
+| [`Transform2D`](class_transform2d.md) | [`looking_at`](class_transform2dmd#class_transform2d_method_looking_at) ( target: [`Vector2`](class_vector2.md) = Vector2(0, 0) ) const[^const]                                       |
+| [`Transform2D`](class_transform2d.md) | [`orthonormalized`](class_transform2dmd#class_transform2d_method_orthonormalized) ( ) const[^const]                                                                                   |
+| [`Transform2D`](class_transform2d.md) | [`rotated`](class_transform2dmd#class_transform2d_method_rotated) ( angle: [`float`](class_float.md) ) const[^const]                                                                  |
+| [`Transform2D`](class_transform2d.md) | [`rotated_local`](class_transform2dmd#class_transform2d_method_rotated_local) ( angle: [`float`](class_float.md) ) const[^const]                                                      |
+| [`Transform2D`](class_transform2d.md) | [`scaled`](class_transform2dmd#class_transform2d_method_scaled) ( scale: [`Vector2`](class_vector2.md) ) const[^const]                                                                |
+| [`Transform2D`](class_transform2d.md) | [`scaled_local`](class_transform2dmd#class_transform2d_method_scaled_local) ( scale: [`Vector2`](class_vector2.md) ) const[^const]                                                    |
+| [`Transform2D`](class_transform2d.md) | [`translated`](class_transform2dmd#class_transform2d_method_translated) ( offset: [`Vector2`](class_vector2.md) ) const[^const]                                                       |
+| [`Transform2D`](class_transform2d.md) | [`translated_local`](class_transform2dmd#class_transform2d_method_translated_local) ( offset: [`Vector2`](class_vector2.md) ) const[^const]                                           |
 
 ## 运算符
 

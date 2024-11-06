@@ -32,7 +32,7 @@ Orientation, location, linear velocity and angular velocity are all provided for
 
 |||
 |:-:|:--|
-| [`Transform3D`](class_transform3d.md) | [`get_adjusted_transform`](#class_xrpose_method_get_adjusted_transform) ( ) const[^const] |
+| [`Transform3D`](class_transform3d.md) | [`get_adjusted_transform`](class_xrposemd#class_xrpose_method_get_adjusted_transform) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -19,12 +19,12 @@ An animation library stores a set of animations accessible through [`StringName`
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)                           | [`add_animation`](#class_animationlibrary_method_add_animation) ( name: [`StringName`](class_stringname.md), animation: [`Animation`](class_animation.md) )       |
-| [`Animation`](class_animation.md)                           | [`get_animation`](#class_animationlibrary_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_list`](#class_animationlibrary_method_get_animation_list) ( ) const[^const]                                                                       |
-| [`bool`](class_bool.md)                                     | [`has_animation`](#class_animationlibrary_method_has_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
-| `void`                                                      | [`remove_animation`](#class_animationlibrary_method_remove_animation) ( name: [`StringName`](class_stringname.md) )                                               |
-| `void`                                                      | [`rename_animation`](#class_animationlibrary_method_rename_animation) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) ) |
+| [Error](#enum_@globalscope_error)                           | [`add_animation`](class_animationlibrarymd#class_animationlibrary_method_add_animation) ( name: [`StringName`](class_stringname.md), animation: [`Animation`](class_animation.md) )       |
+| [`Animation`](class_animation.md)                           | [`get_animation`](class_animationlibrarymd#class_animationlibrary_method_get_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_animation_list`](class_animationlibrarymd#class_animationlibrary_method_get_animation_list) ( ) const[^const]                                                                       |
+| [`bool`](class_bool.md)                                     | [`has_animation`](class_animationlibrarymd#class_animationlibrary_method_has_animation) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
+| `void`                                                      | [`remove_animation`](class_animationlibrarymd#class_animationlibrary_method_remove_animation) ( name: [`StringName`](class_stringname.md) )                                               |
+| `void`                                                      | [`rename_animation`](class_animationlibrarymd#class_animationlibrary_method_rename_animation) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

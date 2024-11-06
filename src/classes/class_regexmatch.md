@@ -27,10 +27,10 @@ Contains the results of a single [`RegEx`](class_regex.md) match returned by [`R
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)       | [`get_end`](#class_regexmatch_method_get_end) ( name: [`Variant`](class_variant.md) = 0 ) const[^const]       |
-| [`int`](class_int.md)       | [`get_group_count`](#class_regexmatch_method_get_group_count) ( ) const[^const]                               |
-| [`int`](class_int.md)       | [`get_start`](#class_regexmatch_method_get_start) ( name: [`Variant`](class_variant.md) = 0 ) const[^const]   |
-| [`String`](class_string.md) | [`get_string`](#class_regexmatch_method_get_string) ( name: [`Variant`](class_variant.md) = 0 ) const[^const] |
+| [`int`](class_int.md)       | [`get_end`](class_regexmatchmd#class_regexmatch_method_get_end) ( name: [`Variant`](class_variant.md) = 0 ) const[^const]       |
+| [`int`](class_int.md)       | [`get_group_count`](class_regexmatchmd#class_regexmatch_method_get_group_count) ( ) const[^const]                               |
+| [`int`](class_int.md)       | [`get_start`](class_regexmatchmd#class_regexmatch_method_get_start) ( name: [`Variant`](class_variant.md) = 0 ) const[^const]   |
+| [`String`](class_string.md) | [`get_string`](class_regexmatchmd#class_regexmatch_method_get_string) ( name: [`Variant`](class_variant.md) = 0 ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

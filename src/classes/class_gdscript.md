@@ -23,7 +23,7 @@ If you are looking for GDScript's built-in functions, see [`@GDScript`](class_@g
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`new`](#class_gdscript_method_new) ( ... ) vararg[^vararg] |
+| [`Variant`](class_variant.md) | [`new`](class_gdscriptmd#class_gdscript_method_new) ( ... ) vararg[^vararg] |
 
 <!-- rst-class:: classref-section-separator -->
 

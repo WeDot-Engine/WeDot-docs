@@ -27,8 +27,8 @@ A physics joint that attaches two 3D physics bodies at a single point, allowing 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_param`](#class_pinjoint3d_method_get_param) ( param: [Param](#enum_pinjoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_param`](#class_pinjoint3d_method_set_param) ( param: [Param](#enum_pinjoint3d_param), value: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_param`](class_pinjoint3dmd#class_pinjoint3d_method_get_param) ( param: [Param](#enum_pinjoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_param`](class_pinjoint3dmd#class_pinjoint3d_method_set_param) ( param: [Param](#enum_pinjoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

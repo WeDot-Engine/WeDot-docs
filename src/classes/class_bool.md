@@ -81,10 +81,10 @@ Booleans can be combined with the logical operators `and`, `or`, `not` to create
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( )                                 |
-| [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( from: [`bool`](class_bool.md) )   |
-| [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( from: [`float`](class_float.md) ) |
-| [`bool`](class_bool.md) | [`bool`](#class_bool_constructor_bool) ( from: [`int`](class_int.md) )     |
+| [`bool`](class_bool.md) | [`bool`](class_bool.md#class_bool_constructor_bool) ( )                                 |
+| [`bool`](class_bool.md) | [`bool`](class_bool.md#class_bool_constructor_bool) ( from: [`bool`](class_bool.md) )   |
+| [`bool`](class_bool.md) | [`bool`](class_bool.md#class_bool_constructor_bool) ( from: [`float`](class_float.md) ) |
+| [`bool`](class_bool.md) | [`bool`](class_bool.md#class_bool_constructor_bool) ( from: [`int`](class_int.md) )     |
 
 ## 运算符
 

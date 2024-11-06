@@ -19,21 +19,21 @@ For the list of the global functions and constants see [`@GlobalScope`](class_@g
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)           | [`Color8`](#class_@gdscript_method_color8) ( r8: [`int`](class_int.md), g8: [`int`](class_int.md), b8: [`int`](class_int.md), a8: [`int`](class_int.md) = 255 ) |
-| `void`                              | [`assert`](#class_@gdscript_method_assert) ( condition: [`bool`](class_bool.md), message: [`String`](class_string.md) = "" )                                    |
-| [`String`](class_string.md)         | [`char`](#class_@gdscript_method_char) ( char: [`int`](class_int.md) )                                                                                          |
-| [`Variant`](class_variant.md)       | [`convert`](#class_@gdscript_method_convert) ( what: [`Variant`](class_variant.md), type: [`int`](class_int.md) )                                               |
-| [`Object`](class_object.md)         | [`dict_to_inst`](#class_@gdscript_method_dict_to_inst) ( dictionary: [`Dictionary`](class_dictionary.md) )                                                      |
-| [`Array`](class_array.md)           | [`get_stack`](#class_@gdscript_method_get_stack) ( )                                                                                                            |
-| [`Dictionary`](class_dictionary.md) | [`inst_to_dict`](#class_@gdscript_method_inst_to_dict) ( instance: [`Object`](class_object.md) )                                                                |
-| [`bool`](class_bool.md)             | [`is_instance_of`](#class_@gdscript_method_is_instance_of) ( value: [`Variant`](class_variant.md), type: [`Variant`](class_variant.md) )                        |
-| [`int`](class_int.md)               | [`len`](#class_@gdscript_method_len) ( var: [`Variant`](class_variant.md) )                                                                                     |
-| [`Resource`](class_resource.md)     | [`load`](#class_@gdscript_method_load) ( path: [`String`](class_string.md) )                                                                                    |
-| [`Resource`](class_resource.md)     | [`preload`](#class_@gdscript_method_preload) ( path: [`String`](class_string.md) )                                                                              |
-| `void`                              | [`print_debug`](#class_@gdscript_method_print_debug) ( ... ) vararg[^vararg]                                                                                    |
-| `void`                              | [`print_stack`](#class_@gdscript_method_print_stack) ( )                                                                                                        |
-| [`Array`](class_array.md)           | [`range`](#class_@gdscript_method_range) ( ... ) vararg[^vararg]                                                                                                |
-| [`bool`](class_bool.md)             | [`type_exists`](#class_@gdscript_method_type_exists) ( type: [`StringName`](class_stringname.md) )                                                              |
+| [`Color`](class_color.md)           | [`Color8`](class_@gdscriptmd#class_@gdscript_method_color8) ( r8: [`int`](class_int.md), g8: [`int`](class_int.md), b8: [`int`](class_int.md), a8: [`int`](class_int.md) = 255 ) |
+| `void`                              | [`assert`](class_@gdscriptmd#class_@gdscript_method_assert) ( condition: [`bool`](class_bool.md), message: [`String`](class_string.md) = "" )                                    |
+| [`String`](class_string.md)         | [`char`](class_@gdscriptmd#class_@gdscript_method_char) ( char: [`int`](class_int.md) )                                                                                          |
+| [`Variant`](class_variant.md)       | [`convert`](class_@gdscriptmd#class_@gdscript_method_convert) ( what: [`Variant`](class_variant.md), type: [`int`](class_int.md) )                                               |
+| [`Object`](class_object.md)         | [`dict_to_inst`](class_@gdscriptmd#class_@gdscript_method_dict_to_inst) ( dictionary: [`Dictionary`](class_dictionary.md) )                                                      |
+| [`Array`](class_array.md)           | [`get_stack`](class_@gdscriptmd#class_@gdscript_method_get_stack) ( )                                                                                                            |
+| [`Dictionary`](class_dictionary.md) | [`inst_to_dict`](class_@gdscriptmd#class_@gdscript_method_inst_to_dict) ( instance: [`Object`](class_object.md) )                                                                |
+| [`bool`](class_bool.md)             | [`is_instance_of`](class_@gdscriptmd#class_@gdscript_method_is_instance_of) ( value: [`Variant`](class_variant.md), type: [`Variant`](class_variant.md) )                        |
+| [`int`](class_int.md)               | [`len`](class_@gdscriptmd#class_@gdscript_method_len) ( var: [`Variant`](class_variant.md) )                                                                                     |
+| [`Resource`](class_resource.md)     | [`load`](class_@gdscriptmd#class_@gdscript_method_load) ( path: [`String`](class_string.md) )                                                                                    |
+| [`Resource`](class_resource.md)     | [`preload`](class_@gdscriptmd#class_@gdscript_method_preload) ( path: [`String`](class_string.md) )                                                                              |
+| `void`                              | [`print_debug`](class_@gdscriptmd#class_@gdscript_method_print_debug) ( ... ) vararg[^vararg]                                                                                    |
+| `void`                              | [`print_stack`](class_@gdscriptmd#class_@gdscript_method_print_stack) ( )                                                                                                        |
+| [`Array`](class_array.md)           | [`range`](class_@gdscriptmd#class_@gdscript_method_range) ( ... ) vararg[^vararg]                                                                                                |
+| [`bool`](class_bool.md)             | [`type_exists`](class_@gdscriptmd#class_@gdscript_method_type_exists) ( type: [`StringName`](class_stringname.md) )                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 

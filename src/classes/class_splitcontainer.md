@@ -30,7 +30,7 @@ A container that accepts only two child controls, then arranges them horizontall
 
 |||
 |:-:|:--|
-| `void` | [`clamp_split_offset`](#class_splitcontainer_method_clamp_split_offset) ( ) |
+| `void` | [`clamp_split_offset`](class_splitcontainermd#class_splitcontainer_method_clamp_split_offset) ( ) |
 
 ## 主题属性
 

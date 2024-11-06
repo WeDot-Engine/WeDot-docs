@@ -36,11 +36,11 @@ This class implements a writer that allows storing the multiple blobs in a zip a
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`close`](#class_zippacker_method_close) ( )                                                                                     |
-| [Error](#enum_@globalscope_error) | [`close_file`](#class_zippacker_method_close_file) ( )                                                                           |
-| [Error](#enum_@globalscope_error) | [`open`](#class_zippacker_method_open) ( path: [`String`](class_string.md), append: [ZipAppend](#enum_zippacker_zipappend) = 0 ) |
-| [Error](#enum_@globalscope_error) | [`start_file`](#class_zippacker_method_start_file) ( path: [`String`](class_string.md) )                                         |
-| [Error](#enum_@globalscope_error) | [`write_file`](#class_zippacker_method_write_file) ( data: [`PackedByteArray`](class_packedbytearray.md) )                       |
+| [Error](#enum_@globalscope_error) | [`close`](class_zippackermd#class_zippacker_method_close) ( )                                                                                     |
+| [Error](#enum_@globalscope_error) | [`close_file`](class_zippackermd#class_zippacker_method_close_file) ( )                                                                           |
+| [Error](#enum_@globalscope_error) | [`open`](class_zippackermd#class_zippacker_method_open) ( path: [`String`](class_string.md), append: [ZipAppend](#enum_zippacker_zipappend) = 0 ) |
+| [Error](#enum_@globalscope_error) | [`start_file`](class_zippackermd#class_zippacker_method_start_file) ( path: [`String`](class_string.md) )                                         |
+| [Error](#enum_@globalscope_error) | [`write_file`](class_zippackermd#class_zippacker_method_write_file) ( data: [`PackedByteArray`](class_packedbytearray.md) )                       |
 
 <!-- rst-class:: classref-section-separator -->
 

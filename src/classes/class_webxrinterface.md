@@ -130,13 +130,13 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md)                             | [`get_available_display_refresh_rates`](#class_webxrinterface_method_get_available_display_refresh_rates) ( ) const[^const]                                  |
-| [`float`](class_float.md)                             | [`get_display_refresh_rate`](#class_webxrinterface_method_get_display_refresh_rate) ( ) const[^const]                                                        |
-| [TargetRayMode](#enum_webxrinterface_targetraymode)   | [`get_input_source_target_ray_mode`](#class_webxrinterface_method_get_input_source_target_ray_mode) ( input_source_id: [`int`](class_int.md) ) const[^const] |
-| [`XRControllerTracker`](class_xrcontrollertracker.md) | [`get_input_source_tracker`](#class_webxrinterface_method_get_input_source_tracker) ( input_source_id: [`int`](class_int.md) ) const[^const]                 |
-| [`bool`](class_bool.md)                               | [`is_input_source_active`](#class_webxrinterface_method_is_input_source_active) ( input_source_id: [`int`](class_int.md) ) const[^const]                     |
-| `void`                                                | [`is_session_supported`](#class_webxrinterface_method_is_session_supported) ( session_mode: [`String`](class_string.md) )                                    |
-| `void`                                                | [`set_display_refresh_rate`](#class_webxrinterface_method_set_display_refresh_rate) ( refresh_rate: [`float`](class_float.md) )                              |
+| [`Array`](class_array.md)                             | [`get_available_display_refresh_rates`](class_webxrinterfacemd#class_webxrinterface_method_get_available_display_refresh_rates) ( ) const[^const]                                  |
+| [`float`](class_float.md)                             | [`get_display_refresh_rate`](class_webxrinterfacemd#class_webxrinterface_method_get_display_refresh_rate) ( ) const[^const]                                                        |
+| [TargetRayMode](#enum_webxrinterface_targetraymode)   | [`get_input_source_target_ray_mode`](class_webxrinterfacemd#class_webxrinterface_method_get_input_source_target_ray_mode) ( input_source_id: [`int`](class_int.md) ) const[^const] |
+| [`XRControllerTracker`](class_xrcontrollertracker.md) | [`get_input_source_tracker`](class_webxrinterfacemd#class_webxrinterface_method_get_input_source_tracker) ( input_source_id: [`int`](class_int.md) ) const[^const]                 |
+| [`bool`](class_bool.md)                               | [`is_input_source_active`](class_webxrinterfacemd#class_webxrinterface_method_is_input_source_active) ( input_source_id: [`int`](class_int.md) ) const[^const]                     |
+| `void`                                                | [`is_session_supported`](class_webxrinterfacemd#class_webxrinterface_method_is_session_supported) ( session_mode: [`String`](class_string.md) )                                    |
+| `void`                                                | [`set_display_refresh_rate`](class_webxrinterfacemd#class_webxrinterface_method_set_display_refresh_rate) ( refresh_rate: [`float`](class_float.md) )                              |
 
 <!-- rst-class:: classref-section-separator -->
 

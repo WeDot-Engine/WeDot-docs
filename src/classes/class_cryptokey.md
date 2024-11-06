@@ -21,11 +21,11 @@ They can be used to generate a self-signed [`X509Certificate`](class_x509certifi
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)           | [`is_public_only`](#class_cryptokey_method_is_public_only) ( ) const[^const]                                                                             |
-| [Error](#enum_@globalscope_error) | [`load`](#class_cryptokey_method_load) ( path: [`String`](class_string.md), public_only: [`bool`](class_bool.md) = false )                               |
-| [Error](#enum_@globalscope_error) | [`load_from_string`](#class_cryptokey_method_load_from_string) ( string_key: [`String`](class_string.md), public_only: [`bool`](class_bool.md) = false ) |
-| [Error](#enum_@globalscope_error) | [`save`](#class_cryptokey_method_save) ( path: [`String`](class_string.md), public_only: [`bool`](class_bool.md) = false )                               |
-| [`String`](class_string.md)       | [`save_to_string`](#class_cryptokey_method_save_to_string) ( public_only: [`bool`](class_bool.md) = false )                                              |
+| [`bool`](class_bool.md)           | [`is_public_only`](class_cryptokeymd#class_cryptokey_method_is_public_only) ( ) const[^const]                                                                             |
+| [Error](#enum_@globalscope_error) | [`load`](class_cryptokeymd#class_cryptokey_method_load) ( path: [`String`](class_string.md), public_only: [`bool`](class_bool.md) = false )                               |
+| [Error](#enum_@globalscope_error) | [`load_from_string`](class_cryptokeymd#class_cryptokey_method_load_from_string) ( string_key: [`String`](class_string.md), public_only: [`bool`](class_bool.md) = false ) |
+| [Error](#enum_@globalscope_error) | [`save`](class_cryptokeymd#class_cryptokey_method_save) ( path: [`String`](class_string.md), public_only: [`bool`](class_bool.md) = false )                               |
+| [`String`](class_string.md)       | [`save_to_string`](class_cryptokeymd#class_cryptokey_method_save_to_string) ( public_only: [`bool`](class_bool.md) = false )                                              |
 
 <!-- rst-class:: classref-section-separator -->
 

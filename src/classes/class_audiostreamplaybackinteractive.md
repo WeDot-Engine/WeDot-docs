@@ -19,8 +19,8 @@ Playback component of [`AudioStreamInteractive`](class_audiostreaminteractive.md
 
 |||
 |:-:|:--|
-| `void` | [`switch_to_clip`](#class_audiostreamplaybackinteractive_method_switch_to_clip) ( clip_index: [`int`](class_int.md) )                              |
-| `void` | [`switch_to_clip_by_name`](#class_audiostreamplaybackinteractive_method_switch_to_clip_by_name) ( clip_name: [`StringName`](class_stringname.md) ) |
+| `void` | [`switch_to_clip`](class_audiostreamplaybackinteractivemd#class_audiostreamplaybackinteractive_method_switch_to_clip) ( clip_index: [`int`](class_int.md) )                              |
+| `void` | [`switch_to_clip_by_name`](class_audiostreamplaybackinteractivemd#class_audiostreamplaybackinteractive_method_switch_to_clip_by_name) ( clip_name: [`StringName`](class_stringname.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

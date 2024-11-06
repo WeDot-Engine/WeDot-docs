@@ -71,8 +71,8 @@ See [`Range`](class_range.md) class for more options over the **SpinBox**.
 
 |||
 |:-:|:--|
-| `void`                          | [`apply`](#class_spinbox_method_apply) ( )                 |
-| [`LineEdit`](class_lineedit.md) | [`get_line_edit`](#class_spinbox_method_get_line_edit) ( ) |
+| `void`                          | [`apply`](class_spinboxmd#class_spinbox_method_apply) ( )                 |
+| [`LineEdit`](class_lineedit.md) | [`get_line_edit`](class_spinboxmd#class_spinbox_method_get_line_edit) ( ) |
 
 ## 主题属性
 

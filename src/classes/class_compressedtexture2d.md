@@ -40,7 +40,7 @@ Using **VRAM Compressed** also improves loading times, as VRAM-compressed textur
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`load`](#class_compressedtexture2d_method_load) ( path: [`String`](class_string.md) ) |
+| [Error](#enum_@globalscope_error) | [`load`](class_compressedtexture2dmd#class_compressedtexture2d_method_load) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

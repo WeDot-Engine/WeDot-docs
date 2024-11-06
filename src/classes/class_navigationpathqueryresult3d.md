@@ -30,7 +30,7 @@ This class stores the result of a 3D navigation path query from the [`Navigation
 
 |||
 |:-:|:--|
-| `void` | [`reset`](#class_navigationpathqueryresult3d_method_reset) ( ) |
+| `void` | [`reset`](class_navigationpathqueryresult3dmd#class_navigationpathqueryresult3d_method_reset) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -33,31 +33,31 @@ For integer coordinates, use [`Rect2i`](class_rect2i.md). The 3D equivalent to *
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( )                                                                                                                                 |
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( from: [`Rect2`](class_rect2.md) )                                                                                                 |
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( from: [`Rect2i`](class_rect2i.md) )                                                                                               |
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( position: [`Vector2`](class_vector2.md), size: [`Vector2`](class_vector2.md) )                                                    |
-| [`Rect2`](class_rect2.md) | [`Rect2`](#class_rect2_constructor_rect2) ( x: [`float`](class_float.md), y: [`float`](class_float.md), width: [`float`](class_float.md), height: [`float`](class_float.md) ) |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( )                                                                                                                                 |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( from: [`Rect2`](class_rect2.md) )                                                                                                 |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( from: [`Rect2i`](class_rect2i.md) )                                                                                               |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( position: [`Vector2`](class_vector2.md), size: [`Vector2`](class_vector2.md) )                                                    |
+| [`Rect2`](class_rect2.md) | [`Rect2`](class_rect2.md#class_rect2_constructor_rect2) ( x: [`float`](class_float.md), y: [`float`](class_float.md), width: [`float`](class_float.md), height: [`float`](class_float.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md)     | [`abs`](#class_rect2_method_abs) ( ) const[^const]                                                                                                                                                              |
-| [`bool`](class_bool.md)       | [`encloses`](#class_rect2_method_encloses) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                       |
-| [`Rect2`](class_rect2.md)     | [`expand`](#class_rect2_method_expand) ( to: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                      |
-| [`float`](class_float.md)     | [`get_area`](#class_rect2_method_get_area) ( ) const[^const]                                                                                                                                                    |
-| [`Vector2`](class_vector2.md) | [`get_center`](#class_rect2_method_get_center) ( ) const[^const]                                                                                                                                                |
-| [`Rect2`](class_rect2.md)     | [`grow`](#class_rect2_method_grow) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                                          |
-| [`Rect2`](class_rect2.md)     | [`grow_individual`](#class_rect2_method_grow_individual) ( left: [`float`](class_float.md), top: [`float`](class_float.md), right: [`float`](class_float.md), bottom: [`float`](class_float.md) ) const[^const] |
-| [`Rect2`](class_rect2.md)     | [`grow_side`](#class_rect2_method_grow_side) ( side: [`int`](class_int.md), amount: [`float`](class_float.md) ) const[^const]                                                                                   |
-| [`bool`](class_bool.md)       | [`has_area`](#class_rect2_method_has_area) ( ) const[^const]                                                                                                                                                    |
-| [`bool`](class_bool.md)       | [`has_point`](#class_rect2_method_has_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                             |
-| [`Rect2`](class_rect2.md)     | [`intersection`](#class_rect2_method_intersection) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                               |
-| [`bool`](class_bool.md)       | [`intersects`](#class_rect2_method_intersects) ( b: [`Rect2`](class_rect2.md), include_borders: [`bool`](class_bool.md) = false ) const[^const]                                                                 |
-| [`bool`](class_bool.md)       | [`is_equal_approx`](#class_rect2_method_is_equal_approx) ( rect: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                      |
-| [`bool`](class_bool.md)       | [`is_finite`](#class_rect2_method_is_finite) ( ) const[^const]                                                                                                                                                  |
-| [`Rect2`](class_rect2.md)     | [`merge`](#class_rect2_method_merge) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                             |
+| [`Rect2`](class_rect2.md)     | [`abs`](class_rect2md#class_rect2_method_abs) ( ) const[^const]                                                                                                                                                              |
+| [`bool`](class_bool.md)       | [`encloses`](class_rect2md#class_rect2_method_encloses) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                       |
+| [`Rect2`](class_rect2.md)     | [`expand`](class_rect2md#class_rect2_method_expand) ( to: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                      |
+| [`float`](class_float.md)     | [`get_area`](class_rect2md#class_rect2_method_get_area) ( ) const[^const]                                                                                                                                                    |
+| [`Vector2`](class_vector2.md) | [`get_center`](class_rect2md#class_rect2_method_get_center) ( ) const[^const]                                                                                                                                                |
+| [`Rect2`](class_rect2.md)     | [`grow`](class_rect2md#class_rect2_method_grow) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                                          |
+| [`Rect2`](class_rect2.md)     | [`grow_individual`](class_rect2md#class_rect2_method_grow_individual) ( left: [`float`](class_float.md), top: [`float`](class_float.md), right: [`float`](class_float.md), bottom: [`float`](class_float.md) ) const[^const] |
+| [`Rect2`](class_rect2.md)     | [`grow_side`](class_rect2md#class_rect2_method_grow_side) ( side: [`int`](class_int.md), amount: [`float`](class_float.md) ) const[^const]                                                                                   |
+| [`bool`](class_bool.md)       | [`has_area`](class_rect2md#class_rect2_method_has_area) ( ) const[^const]                                                                                                                                                    |
+| [`bool`](class_bool.md)       | [`has_point`](class_rect2md#class_rect2_method_has_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                             |
+| [`Rect2`](class_rect2.md)     | [`intersection`](class_rect2md#class_rect2_method_intersection) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                               |
+| [`bool`](class_bool.md)       | [`intersects`](class_rect2md#class_rect2_method_intersects) ( b: [`Rect2`](class_rect2.md), include_borders: [`bool`](class_bool.md) = false ) const[^const]                                                                 |
+| [`bool`](class_bool.md)       | [`is_equal_approx`](class_rect2md#class_rect2_method_is_equal_approx) ( rect: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                      |
+| [`bool`](class_bool.md)       | [`is_finite`](class_rect2md#class_rect2_method_is_finite) ( ) const[^const]                                                                                                                                                  |
+| [`Rect2`](class_rect2.md)     | [`merge`](class_rect2md#class_rect2_method_merge) ( b: [`Rect2`](class_rect2.md) ) const[^const]                                                                                                                             |
 
 ## 运算符
 

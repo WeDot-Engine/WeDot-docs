@@ -39,13 +39,13 @@ To generate a random float number (within a given range) based on a time-depende
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)     | [`rand_weighted`](#class_randomnumbergenerator_method_rand_weighted) ( weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
-| [`float`](class_float.md) | [`randf`](#class_randomnumbergenerator_method_randf) ( )                                                                                     |
-| [`float`](class_float.md) | [`randf_range`](#class_randomnumbergenerator_method_randf_range) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )          |
-| [`float`](class_float.md) | [`randfn`](#class_randomnumbergenerator_method_randfn) ( mean: [`float`](class_float.md) = 0.0, deviation: [`float`](class_float.md) = 1.0 ) |
-| [`int`](class_int.md)     | [`randi`](#class_randomnumbergenerator_method_randi) ( )                                                                                     |
-| [`int`](class_int.md)     | [`randi_range`](#class_randomnumbergenerator_method_randi_range) ( from: [`int`](class_int.md), to: [`int`](class_int.md) )                  |
-| `void`                    | [`randomize`](#class_randomnumbergenerator_method_randomize) ( )                                                                             |
+| [`int`](class_int.md)     | [`rand_weighted`](class_randomnumbergeneratormd#class_randomnumbergenerator_method_rand_weighted) ( weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
+| [`float`](class_float.md) | [`randf`](class_randomnumbergeneratormd#class_randomnumbergenerator_method_randf) ( )                                                                                     |
+| [`float`](class_float.md) | [`randf_range`](class_randomnumbergeneratormd#class_randomnumbergenerator_method_randf_range) ( from: [`float`](class_float.md), to: [`float`](class_float.md) )          |
+| [`float`](class_float.md) | [`randfn`](class_randomnumbergeneratormd#class_randomnumbergenerator_method_randfn) ( mean: [`float`](class_float.md) = 0.0, deviation: [`float`](class_float.md) = 1.0 ) |
+| [`int`](class_int.md)     | [`randi`](class_randomnumbergeneratormd#class_randomnumbergenerator_method_randi) ( )                                                                                     |
+| [`int`](class_int.md)     | [`randi_range`](class_randomnumbergeneratormd#class_randomnumbergenerator_method_randi_range) ( from: [`int`](class_int.md), to: [`int`](class_int.md) )                  |
+| `void`                    | [`randomize`](class_randomnumbergeneratormd#class_randomnumbergenerator_method_randomize) ( )                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 

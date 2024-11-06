@@ -23,12 +23,12 @@ This editor-only singleton returns OS-specific paths to various data folders and
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_cache_dir`](#class_editorpaths_method_get_cache_dir) ( ) const[^const]                       |
-| [`String`](class_string.md) | [`get_config_dir`](#class_editorpaths_method_get_config_dir) ( ) const[^const]                     |
-| [`String`](class_string.md) | [`get_data_dir`](#class_editorpaths_method_get_data_dir) ( ) const[^const]                         |
-| [`String`](class_string.md) | [`get_project_settings_dir`](#class_editorpaths_method_get_project_settings_dir) ( ) const[^const] |
-| [`String`](class_string.md) | [`get_self_contained_file`](#class_editorpaths_method_get_self_contained_file) ( ) const[^const]   |
-| [`bool`](class_bool.md)     | [`is_self_contained`](#class_editorpaths_method_is_self_contained) ( ) const[^const]               |
+| [`String`](class_string.md) | [`get_cache_dir`](class_editorpathsmd#class_editorpaths_method_get_cache_dir) ( ) const[^const]                       |
+| [`String`](class_string.md) | [`get_config_dir`](class_editorpathsmd#class_editorpaths_method_get_config_dir) ( ) const[^const]                     |
+| [`String`](class_string.md) | [`get_data_dir`](class_editorpathsmd#class_editorpaths_method_get_data_dir) ( ) const[^const]                         |
+| [`String`](class_string.md) | [`get_project_settings_dir`](class_editorpathsmd#class_editorpaths_method_get_project_settings_dir) ( ) const[^const] |
+| [`String`](class_string.md) | [`get_self_contained_file`](class_editorpathsmd#class_editorpaths_method_get_self_contained_file) ( ) const[^const]   |
+| [`bool`](class_bool.md)     | [`is_self_contained`](class_editorpathsmd#class_editorpaths_method_is_self_contained) ( ) const[^const]               |
 
 <!-- rst-class:: classref-section-separator -->
 

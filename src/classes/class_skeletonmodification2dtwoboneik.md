@@ -32,14 +32,14 @@ TwoBoneIK is great for arms, legs, and really any joints that can be represented
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md) | [`get_joint_one_bone2d_node`](#class_skeletonmodification2dtwoboneik_method_get_joint_one_bone2d_node) ( ) const[^const]                                |
-| [`int`](class_int.md)           | [`get_joint_one_bone_idx`](#class_skeletonmodification2dtwoboneik_method_get_joint_one_bone_idx) ( ) const[^const]                                      |
-| [`NodePath`](class_nodepath.md) | [`get_joint_two_bone2d_node`](#class_skeletonmodification2dtwoboneik_method_get_joint_two_bone2d_node) ( ) const[^const]                                |
-| [`int`](class_int.md)           | [`get_joint_two_bone_idx`](#class_skeletonmodification2dtwoboneik_method_get_joint_two_bone_idx) ( ) const[^const]                                      |
-| `void`                          | [`set_joint_one_bone2d_node`](#class_skeletonmodification2dtwoboneik_method_set_joint_one_bone2d_node) ( bone2d_node: [`NodePath`](class_nodepath.md) ) |
-| `void`                          | [`set_joint_one_bone_idx`](#class_skeletonmodification2dtwoboneik_method_set_joint_one_bone_idx) ( bone_idx: [`int`](class_int.md) )                    |
-| `void`                          | [`set_joint_two_bone2d_node`](#class_skeletonmodification2dtwoboneik_method_set_joint_two_bone2d_node) ( bone2d_node: [`NodePath`](class_nodepath.md) ) |
-| `void`                          | [`set_joint_two_bone_idx`](#class_skeletonmodification2dtwoboneik_method_set_joint_two_bone_idx) ( bone_idx: [`int`](class_int.md) )                    |
+| [`NodePath`](class_nodepath.md) | [`get_joint_one_bone2d_node`](class_skeletonmodification2dtwoboneikmd#class_skeletonmodification2dtwoboneik_method_get_joint_one_bone2d_node) ( ) const[^const]                                |
+| [`int`](class_int.md)           | [`get_joint_one_bone_idx`](class_skeletonmodification2dtwoboneikmd#class_skeletonmodification2dtwoboneik_method_get_joint_one_bone_idx) ( ) const[^const]                                      |
+| [`NodePath`](class_nodepath.md) | [`get_joint_two_bone2d_node`](class_skeletonmodification2dtwoboneikmd#class_skeletonmodification2dtwoboneik_method_get_joint_two_bone2d_node) ( ) const[^const]                                |
+| [`int`](class_int.md)           | [`get_joint_two_bone_idx`](class_skeletonmodification2dtwoboneikmd#class_skeletonmodification2dtwoboneik_method_get_joint_two_bone_idx) ( ) const[^const]                                      |
+| `void`                          | [`set_joint_one_bone2d_node`](class_skeletonmodification2dtwoboneikmd#class_skeletonmodification2dtwoboneik_method_set_joint_one_bone2d_node) ( bone2d_node: [`NodePath`](class_nodepath.md) ) |
+| `void`                          | [`set_joint_one_bone_idx`](class_skeletonmodification2dtwoboneikmd#class_skeletonmodification2dtwoboneik_method_set_joint_one_bone_idx) ( bone_idx: [`int`](class_int.md) )                    |
+| `void`                          | [`set_joint_two_bone2d_node`](class_skeletonmodification2dtwoboneikmd#class_skeletonmodification2dtwoboneik_method_set_joint_two_bone2d_node) ( bone2d_node: [`NodePath`](class_nodepath.md) ) |
+| `void`                          | [`set_joint_two_bone_idx`](class_skeletonmodification2dtwoboneikmd#class_skeletonmodification2dtwoboneik_method_set_joint_two_bone_idx) ( bone_idx: [`int`](class_int.md) )                    |
 
 <!-- rst-class:: classref-section-separator -->
 

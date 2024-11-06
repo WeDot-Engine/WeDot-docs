@@ -37,20 +37,20 @@ To sweep over a region of 2D space, you can approximate the region with multiple
 
 |||
 |:-:|:--|
-| `void`                        | [`add_exception`](#class_raycast2d_method_add_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                                   |
-| `void`                        | [`add_exception_rid`](#class_raycast2d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
-| `void`                        | [`clear_exceptions`](#class_raycast2d_method_clear_exceptions) ( )                                                                                     |
-| `void`                        | [`force_raycast_update`](#class_raycast2d_method_force_raycast_update) ( )                                                                             |
-| [`Object`](class_object.md)   | [`get_collider`](#class_raycast2d_method_get_collider) ( ) const[^const]                                                                               |
-| [`RID`](class_rid.md)         | [`get_collider_rid`](#class_raycast2d_method_get_collider_rid) ( ) const[^const]                                                                       |
-| [`int`](class_int.md)         | [`get_collider_shape`](#class_raycast2d_method_get_collider_shape) ( ) const[^const]                                                                   |
-| [`bool`](class_bool.md)       | [`get_collision_mask_value`](#class_raycast2d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`Vector2`](class_vector2.md) | [`get_collision_normal`](#class_raycast2d_method_get_collision_normal) ( ) const[^const]                                                               |
-| [`Vector2`](class_vector2.md) | [`get_collision_point`](#class_raycast2d_method_get_collision_point) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)       | [`is_colliding`](#class_raycast2d_method_is_colliding) ( ) const[^const]                                                                               |
-| `void`                        | [`remove_exception`](#class_raycast2d_method_remove_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                             |
-| `void`                        | [`remove_exception_rid`](#class_raycast2d_method_remove_exception_rid) ( rid: [`RID`](class_rid.md) )                                                  |
-| `void`                        | [`set_collision_mask_value`](#class_raycast2d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                        | [`add_exception`](class_raycast2dmd#class_raycast2d_method_add_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                                   |
+| `void`                        | [`add_exception_rid`](class_raycast2dmd#class_raycast2d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
+| `void`                        | [`clear_exceptions`](class_raycast2dmd#class_raycast2d_method_clear_exceptions) ( )                                                                                     |
+| `void`                        | [`force_raycast_update`](class_raycast2dmd#class_raycast2d_method_force_raycast_update) ( )                                                                             |
+| [`Object`](class_object.md)   | [`get_collider`](class_raycast2dmd#class_raycast2d_method_get_collider) ( ) const[^const]                                                                               |
+| [`RID`](class_rid.md)         | [`get_collider_rid`](class_raycast2dmd#class_raycast2d_method_get_collider_rid) ( ) const[^const]                                                                       |
+| [`int`](class_int.md)         | [`get_collider_shape`](class_raycast2dmd#class_raycast2d_method_get_collider_shape) ( ) const[^const]                                                                   |
+| [`bool`](class_bool.md)       | [`get_collision_mask_value`](class_raycast2dmd#class_raycast2d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`Vector2`](class_vector2.md) | [`get_collision_normal`](class_raycast2dmd#class_raycast2d_method_get_collision_normal) ( ) const[^const]                                                               |
+| [`Vector2`](class_vector2.md) | [`get_collision_point`](class_raycast2dmd#class_raycast2d_method_get_collision_point) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)       | [`is_colliding`](class_raycast2dmd#class_raycast2d_method_is_colliding) ( ) const[^const]                                                                               |
+| `void`                        | [`remove_exception`](class_raycast2dmd#class_raycast2d_method_remove_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                             |
+| `void`                        | [`remove_exception_rid`](class_raycast2dmd#class_raycast2d_method_remove_exception_rid) ( rid: [`RID`](class_rid.md) )                                                  |
+| `void`                        | [`set_collision_mask_value`](class_raycast2dmd#class_raycast2d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -26,7 +26,7 @@ Application status indicator (aka notification area icon).
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`get_rect`](#class_statusindicator_method_get_rect) ( ) const[^const] |
+| [`Rect2`](class_rect2.md) | [`get_rect`](class_statusindicatormd#class_statusindicator_method_get_rect) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

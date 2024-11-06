@@ -31,8 +31,8 @@ This singleton provides access to static information about [`Theme`](class_theme
 
 |||
 |:-:|:--|
-| [`Theme`](class_theme.md) | [`get_default_theme`](#class_themedb_method_get_default_theme) ( ) |
-| [`Theme`](class_theme.md) | [`get_project_theme`](#class_themedb_method_get_project_theme) ( ) |
+| [`Theme`](class_theme.md) | [`get_default_theme`](class_themedbmd#class_themedb_method_get_default_theme) ( ) |
+| [`Theme`](class_theme.md) | [`get_project_theme`](class_themedbmd#class_themedb_method_get_project_theme) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 

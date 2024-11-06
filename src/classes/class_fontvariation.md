@@ -75,7 +75,7 @@ To set the coordinate of multiple variation axes:
 
 |||
 |:-:|:--|
-| `void` | [`set_spacing`](#class_fontvariation_method_set_spacing) ( spacing: [SpacingType](#enum_textserver_spacingtype), value: [`int`](class_int.md) ) |
+| `void` | [`set_spacing`](class_fontvariationmd#class_fontvariation_method_set_spacing) ( spacing: [SpacingType](#enum_textserver_spacingtype), value: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

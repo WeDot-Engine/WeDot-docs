@@ -37,33 +37,33 @@ Arranges child controls into a tabbed view, creating a tab for each one. The act
 
 |||
 |:-:|:--|
-| [`Control`](class_control.md)     | [`get_current_tab_control`](#class_tabcontainer_method_get_current_tab_control) ( ) const[^const]                                                   |
-| [`Popup`](class_popup.md)         | [`get_popup`](#class_tabcontainer_method_get_popup) ( ) const[^const]                                                                               |
-| [`int`](class_int.md)             | [`get_previous_tab`](#class_tabcontainer_method_get_previous_tab) ( ) const[^const]                                                                 |
-| [`TabBar`](class_tabbar.md)       | [`get_tab_bar`](#class_tabcontainer_method_get_tab_bar) ( ) const[^const]                                                                           |
-| [`Texture2D`](class_texture2d.md) | [`get_tab_button_icon`](#class_tabcontainer_method_get_tab_button_icon) ( tab_idx: [`int`](class_int.md) ) const[^const]                            |
-| [`Control`](class_control.md)     | [`get_tab_control`](#class_tabcontainer_method_get_tab_control) ( tab_idx: [`int`](class_int.md) ) const[^const]                                    |
-| [`int`](class_int.md)             | [`get_tab_count`](#class_tabcontainer_method_get_tab_count) ( ) const[^const]                                                                       |
-| [`Texture2D`](class_texture2d.md) | [`get_tab_icon`](#class_tabcontainer_method_get_tab_icon) ( tab_idx: [`int`](class_int.md) ) const[^const]                                          |
-| [`int`](class_int.md)             | [`get_tab_icon_max_width`](#class_tabcontainer_method_get_tab_icon_max_width) ( tab_idx: [`int`](class_int.md) ) const[^const]                      |
-| [`int`](class_int.md)             | [`get_tab_idx_at_point`](#class_tabcontainer_method_get_tab_idx_at_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                    |
-| [`int`](class_int.md)             | [`get_tab_idx_from_control`](#class_tabcontainer_method_get_tab_idx_from_control) ( control: [`Control`](class_control.md) ) const[^const]          |
-| [`Variant`](class_variant.md)     | [`get_tab_metadata`](#class_tabcontainer_method_get_tab_metadata) ( tab_idx: [`int`](class_int.md) ) const[^const]                                  |
-| [`String`](class_string.md)       | [`get_tab_title`](#class_tabcontainer_method_get_tab_title) ( tab_idx: [`int`](class_int.md) ) const[^const]                                        |
-| [`String`](class_string.md)       | [`get_tab_tooltip`](#class_tabcontainer_method_get_tab_tooltip) ( tab_idx: [`int`](class_int.md) ) const[^const]                                    |
-| [`bool`](class_bool.md)           | [`is_tab_disabled`](#class_tabcontainer_method_is_tab_disabled) ( tab_idx: [`int`](class_int.md) ) const[^const]                                    |
-| [`bool`](class_bool.md)           | [`is_tab_hidden`](#class_tabcontainer_method_is_tab_hidden) ( tab_idx: [`int`](class_int.md) ) const[^const]                                        |
-| [`bool`](class_bool.md)           | [`select_next_available`](#class_tabcontainer_method_select_next_available) ( )                                                                     |
-| [`bool`](class_bool.md)           | [`select_previous_available`](#class_tabcontainer_method_select_previous_available) ( )                                                             |
-| `void`                            | [`set_popup`](#class_tabcontainer_method_set_popup) ( popup: [`Node`](class_node.md) )                                                              |
-| `void`                            | [`set_tab_button_icon`](#class_tabcontainer_method_set_tab_button_icon) ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) ) |
-| `void`                            | [`set_tab_disabled`](#class_tabcontainer_method_set_tab_disabled) ( tab_idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )             |
-| `void`                            | [`set_tab_hidden`](#class_tabcontainer_method_set_tab_hidden) ( tab_idx: [`int`](class_int.md), hidden: [`bool`](class_bool.md) )                   |
-| `void`                            | [`set_tab_icon`](#class_tabcontainer_method_set_tab_icon) ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )               |
-| `void`                            | [`set_tab_icon_max_width`](#class_tabcontainer_method_set_tab_icon_max_width) ( tab_idx: [`int`](class_int.md), width: [`int`](class_int.md) )      |
-| `void`                            | [`set_tab_metadata`](#class_tabcontainer_method_set_tab_metadata) ( tab_idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )       |
-| `void`                            | [`set_tab_title`](#class_tabcontainer_method_set_tab_title) ( tab_idx: [`int`](class_int.md), title: [`String`](class_string.md) )                  |
-| `void`                            | [`set_tab_tooltip`](#class_tabcontainer_method_set_tab_tooltip) ( tab_idx: [`int`](class_int.md), tooltip: [`String`](class_string.md) )            |
+| [`Control`](class_control.md)     | [`get_current_tab_control`](class_tabcontainermd#class_tabcontainer_method_get_current_tab_control) ( ) const[^const]                                                   |
+| [`Popup`](class_popup.md)         | [`get_popup`](class_tabcontainermd#class_tabcontainer_method_get_popup) ( ) const[^const]                                                                               |
+| [`int`](class_int.md)             | [`get_previous_tab`](class_tabcontainermd#class_tabcontainer_method_get_previous_tab) ( ) const[^const]                                                                 |
+| [`TabBar`](class_tabbar.md)       | [`get_tab_bar`](class_tabcontainermd#class_tabcontainer_method_get_tab_bar) ( ) const[^const]                                                                           |
+| [`Texture2D`](class_texture2d.md) | [`get_tab_button_icon`](class_tabcontainermd#class_tabcontainer_method_get_tab_button_icon) ( tab_idx: [`int`](class_int.md) ) const[^const]                            |
+| [`Control`](class_control.md)     | [`get_tab_control`](class_tabcontainermd#class_tabcontainer_method_get_tab_control) ( tab_idx: [`int`](class_int.md) ) const[^const]                                    |
+| [`int`](class_int.md)             | [`get_tab_count`](class_tabcontainermd#class_tabcontainer_method_get_tab_count) ( ) const[^const]                                                                       |
+| [`Texture2D`](class_texture2d.md) | [`get_tab_icon`](class_tabcontainermd#class_tabcontainer_method_get_tab_icon) ( tab_idx: [`int`](class_int.md) ) const[^const]                                          |
+| [`int`](class_int.md)             | [`get_tab_icon_max_width`](class_tabcontainermd#class_tabcontainer_method_get_tab_icon_max_width) ( tab_idx: [`int`](class_int.md) ) const[^const]                      |
+| [`int`](class_int.md)             | [`get_tab_idx_at_point`](class_tabcontainermd#class_tabcontainer_method_get_tab_idx_at_point) ( point: [`Vector2`](class_vector2.md) ) const[^const]                    |
+| [`int`](class_int.md)             | [`get_tab_idx_from_control`](class_tabcontainermd#class_tabcontainer_method_get_tab_idx_from_control) ( control: [`Control`](class_control.md) ) const[^const]          |
+| [`Variant`](class_variant.md)     | [`get_tab_metadata`](class_tabcontainermd#class_tabcontainer_method_get_tab_metadata) ( tab_idx: [`int`](class_int.md) ) const[^const]                                  |
+| [`String`](class_string.md)       | [`get_tab_title`](class_tabcontainermd#class_tabcontainer_method_get_tab_title) ( tab_idx: [`int`](class_int.md) ) const[^const]                                        |
+| [`String`](class_string.md)       | [`get_tab_tooltip`](class_tabcontainermd#class_tabcontainer_method_get_tab_tooltip) ( tab_idx: [`int`](class_int.md) ) const[^const]                                    |
+| [`bool`](class_bool.md)           | [`is_tab_disabled`](class_tabcontainermd#class_tabcontainer_method_is_tab_disabled) ( tab_idx: [`int`](class_int.md) ) const[^const]                                    |
+| [`bool`](class_bool.md)           | [`is_tab_hidden`](class_tabcontainermd#class_tabcontainer_method_is_tab_hidden) ( tab_idx: [`int`](class_int.md) ) const[^const]                                        |
+| [`bool`](class_bool.md)           | [`select_next_available`](class_tabcontainermd#class_tabcontainer_method_select_next_available) ( )                                                                     |
+| [`bool`](class_bool.md)           | [`select_previous_available`](class_tabcontainermd#class_tabcontainer_method_select_previous_available) ( )                                                             |
+| `void`                            | [`set_popup`](class_tabcontainermd#class_tabcontainer_method_set_popup) ( popup: [`Node`](class_node.md) )                                                              |
+| `void`                            | [`set_tab_button_icon`](class_tabcontainermd#class_tabcontainer_method_set_tab_button_icon) ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) ) |
+| `void`                            | [`set_tab_disabled`](class_tabcontainermd#class_tabcontainer_method_set_tab_disabled) ( tab_idx: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )             |
+| `void`                            | [`set_tab_hidden`](class_tabcontainermd#class_tabcontainer_method_set_tab_hidden) ( tab_idx: [`int`](class_int.md), hidden: [`bool`](class_bool.md) )                   |
+| `void`                            | [`set_tab_icon`](class_tabcontainermd#class_tabcontainer_method_set_tab_icon) ( tab_idx: [`int`](class_int.md), icon: [`Texture2D`](class_texture2d.md) )               |
+| `void`                            | [`set_tab_icon_max_width`](class_tabcontainermd#class_tabcontainer_method_set_tab_icon_max_width) ( tab_idx: [`int`](class_int.md), width: [`int`](class_int.md) )      |
+| `void`                            | [`set_tab_metadata`](class_tabcontainermd#class_tabcontainer_method_set_tab_metadata) ( tab_idx: [`int`](class_int.md), metadata: [`Variant`](class_variant.md) )       |
+| `void`                            | [`set_tab_title`](class_tabcontainermd#class_tabcontainer_method_set_tab_title) ( tab_idx: [`int`](class_int.md), title: [`String`](class_string.md) )                  |
+| `void`                            | [`set_tab_tooltip`](class_tabcontainermd#class_tabcontainer_method_set_tab_tooltip) ( tab_idx: [`int`](class_int.md), tooltip: [`String`](class_string.md) )            |
 
 ## 主题属性
 

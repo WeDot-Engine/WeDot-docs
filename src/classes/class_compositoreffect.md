@@ -33,7 +33,7 @@ This resource defines a custom rendering effect that can be applied to [`Viewpor
 
 |||
 |:-:|:--|
-| `void` | [`_render_callback`](#class_compositoreffect_private_method__render_callback) ( effect_callback_type: [`int`](class_int.md), render_data: [`RenderData`](class_renderdata.md) ) virtual[^virtual] |
+| `void` | [`_render_callback`](class_compositoreffectmd#class_compositoreffect_private_method__render_callback) ( effect_callback_type: [`int`](class_int.md), render_data: [`RenderData`](class_renderdata.md) ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

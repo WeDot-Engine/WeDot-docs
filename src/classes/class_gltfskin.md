@@ -27,12 +27,12 @@
 
 |||
 |:-:|:--|
-| [Array](class_array.md) [`Transform3D`](class_transform3d.md) | [`get_inverse_binds`](#class_gltfskin_method_get_inverse_binds) ( )                                                                              |
-| [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_bone_i`](#class_gltfskin_method_get_joint_i_to_bone_i) ( )                                                                      |
-| [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_name`](#class_gltfskin_method_get_joint_i_to_name) ( )                                                                          |
-| `void`                                                        | [`set_inverse_binds`](#class_gltfskin_method_set_inverse_binds) ( inverse_binds: [Array](class_array.md) [`Transform3D`](class_transform3d.md) ) |
-| `void`                                                        | [`set_joint_i_to_bone_i`](#class_gltfskin_method_set_joint_i_to_bone_i) ( joint_i_to_bone_i: [`Dictionary`](class_dictionary.md) )               |
-| `void`                                                        | [`set_joint_i_to_name`](#class_gltfskin_method_set_joint_i_to_name) ( joint_i_to_name: [`Dictionary`](class_dictionary.md) )                     |
+| [Array](class_array.md) [`Transform3D`](class_transform3d.md) | [`get_inverse_binds`](class_gltfskinmd#class_gltfskin_method_get_inverse_binds) ( )                                                                              |
+| [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_bone_i`](class_gltfskinmd#class_gltfskin_method_get_joint_i_to_bone_i) ( )                                                                      |
+| [`Dictionary`](class_dictionary.md)                           | [`get_joint_i_to_name`](class_gltfskinmd#class_gltfskin_method_get_joint_i_to_name) ( )                                                                          |
+| `void`                                                        | [`set_inverse_binds`](class_gltfskinmd#class_gltfskin_method_set_inverse_binds) ( inverse_binds: [Array](class_array.md) [`Transform3D`](class_transform3d.md) ) |
+| `void`                                                        | [`set_joint_i_to_bone_i`](class_gltfskinmd#class_gltfskin_method_set_joint_i_to_bone_i) ( joint_i_to_bone_i: [`Dictionary`](class_dictionary.md) )               |
+| `void`                                                        | [`set_joint_i_to_name`](class_gltfskinmd#class_gltfskin_method_set_joint_i_to_name) ( joint_i_to_name: [`Dictionary`](class_dictionary.md) )                     |
 
 <!-- rst-class:: classref-section-separator -->
 

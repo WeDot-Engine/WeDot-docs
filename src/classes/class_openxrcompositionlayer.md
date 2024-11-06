@@ -34,8 +34,8 @@ Composition layers allow 2D viewports to be displayed inside of the headset by t
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`intersects_ray`](#class_openxrcompositionlayer_method_intersects_ray) ( origin: [`Vector3`](class_vector3.md), direction: [`Vector3`](class_vector3.md) ) const[^const] |
-| [`bool`](class_bool.md)       | [`is_natively_supported`](#class_openxrcompositionlayer_method_is_natively_supported) ( ) const[^const]                                                                   |
+| [`Vector2`](class_vector2.md) | [`intersects_ray`](class_openxrcompositionlayermd#class_openxrcompositionlayer_method_intersects_ray) ( origin: [`Vector3`](class_vector3.md), direction: [`Vector3`](class_vector3.md) ) const[^const] |
+| [`bool`](class_bool.md)       | [`is_natively_supported`](class_openxrcompositionlayermd#class_openxrcompositionlayer_method_is_natively_supported) ( ) const[^const]                                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -41,8 +41,8 @@ Casts light in a 2D environment. A light is defined as a color, an energy value,
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_height`](#class_light2d_method_get_height) ( ) const[^const]                     |
-| `void`                    | [`set_height`](#class_light2d_method_set_height) ( height: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_height`](class_light2dmd#class_light2d_method_get_height) ( ) const[^const]                     |
+| `void`                    | [`set_height`](class_light2dmd#class_light2d_method_set_height) ( height: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

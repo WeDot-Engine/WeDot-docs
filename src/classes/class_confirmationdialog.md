@@ -50,7 +50,7 @@ To get cancel action, you can use:
 
 |||
 |:-:|:--|
-| [`Button`](class_button.md) | [`get_cancel_button`](#class_confirmationdialog_method_get_cancel_button) ( ) |
+| [`Button`](class_button.md) | [`get_cancel_button`](class_confirmationdialogmd#class_confirmationdialog_method_get_cancel_button) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 

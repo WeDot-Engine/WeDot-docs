@@ -19,12 +19,12 @@ This class allows for a RenderSceneData implementation to be made in GDExtension
 
 |||
 |:-:|:--|
-| [`Projection`](class_projection.md)   | [`_get_cam_projection`](#class_renderscenedataextension_private_method__get_cam_projection) ( ) virtual[^virtual] const[^const]                               |
-| [`Transform3D`](class_transform3d.md) | [`_get_cam_transform`](#class_renderscenedataextension_private_method__get_cam_transform) ( ) virtual[^virtual] const[^const]                                 |
-| [`RID`](class_rid.md)                 | [`_get_uniform_buffer`](#class_renderscenedataextension_private_method__get_uniform_buffer) ( ) virtual[^virtual] const[^const]                               |
-| [`int`](class_int.md)                 | [`_get_view_count`](#class_renderscenedataextension_private_method__get_view_count) ( ) virtual[^virtual] const[^const]                                       |
-| [`Vector3`](class_vector3.md)         | [`_get_view_eye_offset`](#class_renderscenedataextension_private_method__get_view_eye_offset) ( view: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
-| [`Projection`](class_projection.md)   | [`_get_view_projection`](#class_renderscenedataextension_private_method__get_view_projection) ( view: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+| [`Projection`](class_projection.md)   | [`_get_cam_projection`](class_renderscenedataextensionmd#class_renderscenedataextension_private_method__get_cam_projection) ( ) virtual[^virtual] const[^const]                               |
+| [`Transform3D`](class_transform3d.md) | [`_get_cam_transform`](class_renderscenedataextensionmd#class_renderscenedataextension_private_method__get_cam_transform) ( ) virtual[^virtual] const[^const]                                 |
+| [`RID`](class_rid.md)                 | [`_get_uniform_buffer`](class_renderscenedataextensionmd#class_renderscenedataextension_private_method__get_uniform_buffer) ( ) virtual[^virtual] const[^const]                               |
+| [`int`](class_int.md)                 | [`_get_view_count`](class_renderscenedataextensionmd#class_renderscenedataextension_private_method__get_view_count) ( ) virtual[^virtual] const[^const]                                       |
+| [`Vector3`](class_vector3.md)         | [`_get_view_eye_offset`](class_renderscenedataextensionmd#class_renderscenedataextension_private_method__get_view_eye_offset) ( view: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+| [`Projection`](class_projection.md)   | [`_get_view_projection`](class_renderscenedataextensionmd#class_renderscenedataextension_private_method__get_view_projection) ( view: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

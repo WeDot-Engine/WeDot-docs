@@ -21,11 +21,11 @@ By default, Godot saves resources as `.tres` (text-based), `.res` (binary) or an
 
 |||
 |:-:|:--|
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](#class_resourceformatsaver_private_method__get_recognized_extensions) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]              |
-| [`bool`](class_bool.md)                           | [`_recognize`](#class_resourceformatsaver_private_method__recognize) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]                                              |
-| [`bool`](class_bool.md)                           | [`_recognize_path`](#class_resourceformatsaver_private_method__recognize_path) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
-| [Error](#enum_@globalscope_error)                 | [`_save`](#class_resourceformatsaver_private_method__save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md), flags: [`int`](class_int.md) ) virtual[^virtual]     |
-| [Error](#enum_@globalscope_error)                 | [`_set_uid`](#class_resourceformatsaver_private_method__set_uid) ( path: [`String`](class_string.md), uid: [`int`](class_int.md) ) virtual[^virtual]                                            |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](class_resourceformatsavermd#class_resourceformatsaver_private_method__get_recognized_extensions) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]              |
+| [`bool`](class_bool.md)                           | [`_recognize`](class_resourceformatsavermd#class_resourceformatsaver_private_method__recognize) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const]                                              |
+| [`bool`](class_bool.md)                           | [`_recognize_path`](class_resourceformatsavermd#class_resourceformatsaver_private_method__recognize_path) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
+| [Error](#enum_@globalscope_error)                 | [`_save`](class_resourceformatsavermd#class_resourceformatsaver_private_method__save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md), flags: [`int`](class_int.md) ) virtual[^virtual]     |
+| [Error](#enum_@globalscope_error)                 | [`_set_uid`](class_resourceformatsavermd#class_resourceformatsaver_private_method__set_uid) ( path: [`String`](class_string.md), uid: [`int`](class_int.md) ) virtual[^virtual]                                            |
 
 <!-- rst-class:: classref-section-separator -->
 

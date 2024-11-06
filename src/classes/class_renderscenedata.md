@@ -23,12 +23,12 @@ Abstract scene data object, exists for the duration of rendering a single viewpo
 
 |||
 |:-:|:--|
-| [`Projection`](class_projection.md)   | [`get_cam_projection`](#class_renderscenedata_method_get_cam_projection) ( ) const[^const]                               |
-| [`Transform3D`](class_transform3d.md) | [`get_cam_transform`](#class_renderscenedata_method_get_cam_transform) ( ) const[^const]                                 |
-| [`RID`](class_rid.md)                 | [`get_uniform_buffer`](#class_renderscenedata_method_get_uniform_buffer) ( ) const[^const]                               |
-| [`int`](class_int.md)                 | [`get_view_count`](#class_renderscenedata_method_get_view_count) ( ) const[^const]                                       |
-| [`Vector3`](class_vector3.md)         | [`get_view_eye_offset`](#class_renderscenedata_method_get_view_eye_offset) ( view: [`int`](class_int.md) ) const[^const] |
-| [`Projection`](class_projection.md)   | [`get_view_projection`](#class_renderscenedata_method_get_view_projection) ( view: [`int`](class_int.md) ) const[^const] |
+| [`Projection`](class_projection.md)   | [`get_cam_projection`](class_renderscenedatamd#class_renderscenedata_method_get_cam_projection) ( ) const[^const]                               |
+| [`Transform3D`](class_transform3d.md) | [`get_cam_transform`](class_renderscenedatamd#class_renderscenedata_method_get_cam_transform) ( ) const[^const]                                 |
+| [`RID`](class_rid.md)                 | [`get_uniform_buffer`](class_renderscenedatamd#class_renderscenedata_method_get_uniform_buffer) ( ) const[^const]                               |
+| [`int`](class_int.md)                 | [`get_view_count`](class_renderscenedatamd#class_renderscenedata_method_get_view_count) ( ) const[^const]                                       |
+| [`Vector3`](class_vector3.md)         | [`get_view_eye_offset`](class_renderscenedatamd#class_renderscenedata_method_get_view_eye_offset) ( view: [`int`](class_int.md) ) const[^const] |
+| [`Projection`](class_projection.md)   | [`get_view_projection`](class_renderscenedatamd#class_renderscenedata_method_get_view_projection) ( view: [`int`](class_int.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

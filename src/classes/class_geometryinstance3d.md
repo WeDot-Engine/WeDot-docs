@@ -41,8 +41,8 @@ Base node for geometry-based visual instances. Shares some common functionality 
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_instance_shader_parameter`](#class_geometryinstance3d_method_get_instance_shader_parameter) ( name: [`StringName`](class_stringname.md) ) const[^const]                         |
-| `void`                        | [`set_instance_shader_parameter`](#class_geometryinstance3d_method_set_instance_shader_parameter) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) |
+| [`Variant`](class_variant.md) | [`get_instance_shader_parameter`](class_geometryinstance3dmd#class_geometryinstance3d_method_get_instance_shader_parameter) ( name: [`StringName`](class_stringname.md) ) const[^const]                         |
+| `void`                        | [`set_instance_shader_parameter`](class_geometryinstance3dmd#class_geometryinstance3d_method_set_instance_shader_parameter) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

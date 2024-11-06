@@ -29,7 +29,7 @@ See [`Texture3D`](class_texture3d.md) for a general description of 3D textures.
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`load`](#class_compressedtexture3d_method_load) ( path: [`String`](class_string.md) ) |
+| [Error](#enum_@globalscope_error) | [`load`](class_compressedtexture3dmd#class_compressedtexture3d_method_load) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

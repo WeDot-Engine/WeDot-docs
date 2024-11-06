@@ -30,7 +30,7 @@ Abstract base class for all 3D shapes, intended for use in physics.
 
 |||
 |:-:|:--|
-| [`ArrayMesh`](class_arraymesh.md) | [`get_debug_mesh`](#class_shape3d_method_get_debug_mesh) ( ) |
+| [`ArrayMesh`](class_arraymesh.md) | [`get_debug_mesh`](class_shape3dmd#class_shape3d_method_get_debug_mesh) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 

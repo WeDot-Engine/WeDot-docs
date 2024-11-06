@@ -34,35 +34,35 @@ If you want to join the strings in the array, use [`String.join`](#class_string_
 
 |||
 |:-:|:--|
-| [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](#class_packedstringarray_constructor_packedstringarray) ( )                                                         |
-| [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](#class_packedstringarray_constructor_packedstringarray) ( from: [`PackedStringArray`](class_packedstringarray.md) ) |
-| [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](#class_packedstringarray_constructor_packedstringarray) ( from: [`Array`](class_array.md) )                         |
+| [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](class_packedstringarray.md#class_packedstringarray_constructor_packedstringarray) ( )                                                         |
+| [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](class_packedstringarray.md#class_packedstringarray_constructor_packedstringarray) ( from: [`PackedStringArray`](class_packedstringarray.md) ) |
+| [`PackedStringArray`](class_packedstringarray.md) | [`PackedStringArray`](class_packedstringarray.md#class_packedstringarray_constructor_packedstringarray) ( from: [`Array`](class_array.md) )                         |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                           | [`append`](#class_packedstringarray_method_append) ( value: [`String`](class_string.md) )                                                |
-| `void`                                            | [`append_array`](#class_packedstringarray_method_append_array) ( array: [`PackedStringArray`](class_packedstringarray.md) )              |
-| [`int`](class_int.md)                             | [`bsearch`](#class_packedstringarray_method_bsearch) ( value: [`String`](class_string.md), before: [`bool`](class_bool.md) = true )      |
-| `void`                                            | [`clear`](#class_packedstringarray_method_clear) ( )                                                                                     |
-| [`int`](class_int.md)                             | [`count`](#class_packedstringarray_method_count) ( value: [`String`](class_string.md) ) const[^const]                                    |
-| [`PackedStringArray`](class_packedstringarray.md) | [`duplicate`](#class_packedstringarray_method_duplicate) ( )                                                                             |
-| `void`                                            | [`fill`](#class_packedstringarray_method_fill) ( value: [`String`](class_string.md) )                                                    |
-| [`int`](class_int.md)                             | [`find`](#class_packedstringarray_method_find) ( value: [`String`](class_string.md), from: [`int`](class_int.md) = 0 ) const[^const]     |
-| [`bool`](class_bool.md)                           | [`has`](#class_packedstringarray_method_has) ( value: [`String`](class_string.md) ) const[^const]                                        |
-| [`int`](class_int.md)                             | [`insert`](#class_packedstringarray_method_insert) ( at_index: [`int`](class_int.md), value: [`String`](class_string.md) )               |
-| [`bool`](class_bool.md)                           | [`is_empty`](#class_packedstringarray_method_is_empty) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)                           | [`push_back`](#class_packedstringarray_method_push_back) ( value: [`String`](class_string.md) )                                          |
-| `void`                                            | [`remove_at`](#class_packedstringarray_method_remove_at) ( index: [`int`](class_int.md) )                                                |
-| [`int`](class_int.md)                             | [`resize`](#class_packedstringarray_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
-| `void`                                            | [`reverse`](#class_packedstringarray_method_reverse) ( )                                                                                 |
-| [`int`](class_int.md)                             | [`rfind`](#class_packedstringarray_method_rfind) ( value: [`String`](class_string.md), from: [`int`](class_int.md) = -1 ) const[^const]  |
-| `void`                                            | [`set`](#class_packedstringarray_method_set) ( index: [`int`](class_int.md), value: [`String`](class_string.md) )                        |
-| [`int`](class_int.md)                             | [`size`](#class_packedstringarray_method_size) ( ) const[^const]                                                                         |
-| [`PackedStringArray`](class_packedstringarray.md) | [`slice`](#class_packedstringarray_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
-| `void`                                            | [`sort`](#class_packedstringarray_method_sort) ( )                                                                                       |
-| [`PackedByteArray`](class_packedbytearray.md)     | [`to_byte_array`](#class_packedstringarray_method_to_byte_array) ( ) const[^const]                                                       |
+| [`bool`](class_bool.md)                           | [`append`](class_packedstringarraymd#class_packedstringarray_method_append) ( value: [`String`](class_string.md) )                                                |
+| `void`                                            | [`append_array`](class_packedstringarraymd#class_packedstringarray_method_append_array) ( array: [`PackedStringArray`](class_packedstringarray.md) )              |
+| [`int`](class_int.md)                             | [`bsearch`](class_packedstringarraymd#class_packedstringarray_method_bsearch) ( value: [`String`](class_string.md), before: [`bool`](class_bool.md) = true )      |
+| `void`                                            | [`clear`](class_packedstringarraymd#class_packedstringarray_method_clear) ( )                                                                                     |
+| [`int`](class_int.md)                             | [`count`](class_packedstringarraymd#class_packedstringarray_method_count) ( value: [`String`](class_string.md) ) const[^const]                                    |
+| [`PackedStringArray`](class_packedstringarray.md) | [`duplicate`](class_packedstringarraymd#class_packedstringarray_method_duplicate) ( )                                                                             |
+| `void`                                            | [`fill`](class_packedstringarraymd#class_packedstringarray_method_fill) ( value: [`String`](class_string.md) )                                                    |
+| [`int`](class_int.md)                             | [`find`](class_packedstringarraymd#class_packedstringarray_method_find) ( value: [`String`](class_string.md), from: [`int`](class_int.md) = 0 ) const[^const]     |
+| [`bool`](class_bool.md)                           | [`has`](class_packedstringarraymd#class_packedstringarray_method_has) ( value: [`String`](class_string.md) ) const[^const]                                        |
+| [`int`](class_int.md)                             | [`insert`](class_packedstringarraymd#class_packedstringarray_method_insert) ( at_index: [`int`](class_int.md), value: [`String`](class_string.md) )               |
+| [`bool`](class_bool.md)                           | [`is_empty`](class_packedstringarraymd#class_packedstringarray_method_is_empty) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)                           | [`push_back`](class_packedstringarraymd#class_packedstringarray_method_push_back) ( value: [`String`](class_string.md) )                                          |
+| `void`                                            | [`remove_at`](class_packedstringarraymd#class_packedstringarray_method_remove_at) ( index: [`int`](class_int.md) )                                                |
+| [`int`](class_int.md)                             | [`resize`](class_packedstringarraymd#class_packedstringarray_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
+| `void`                                            | [`reverse`](class_packedstringarraymd#class_packedstringarray_method_reverse) ( )                                                                                 |
+| [`int`](class_int.md)                             | [`rfind`](class_packedstringarraymd#class_packedstringarray_method_rfind) ( value: [`String`](class_string.md), from: [`int`](class_int.md) = -1 ) const[^const]  |
+| `void`                                            | [`set`](class_packedstringarraymd#class_packedstringarray_method_set) ( index: [`int`](class_int.md), value: [`String`](class_string.md) )                        |
+| [`int`](class_int.md)                             | [`size`](class_packedstringarraymd#class_packedstringarray_method_size) ( ) const[^const]                                                                         |
+| [`PackedStringArray`](class_packedstringarray.md) | [`slice`](class_packedstringarraymd#class_packedstringarray_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
+| `void`                                            | [`sort`](class_packedstringarraymd#class_packedstringarray_method_sort) ( )                                                                                       |
+| [`PackedByteArray`](class_packedbytearray.md)     | [`to_byte_array`](class_packedstringarraymd#class_packedstringarray_method_to_byte_array) ( ) const[^const]                                                       |
 
 ## 运算符
 

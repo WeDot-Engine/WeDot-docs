@@ -30,7 +30,7 @@ This class stores the result of a 2D navigation path query from the [`Navigation
 
 |||
 |:-:|:--|
-| `void` | [`reset`](#class_navigationpathqueryresult2d_method_reset) ( ) |
+| `void` | [`reset`](class_navigationpathqueryresult2dmd#class_navigationpathqueryresult2d_method_reset) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 

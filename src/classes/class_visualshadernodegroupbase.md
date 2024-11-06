@@ -21,27 +21,27 @@ Currently, has no direct usage, use the derived classes instead.
 
 |||
 |:-:|:--|
-| `void`                      | [`add_input_port`](#class_visualshadernodegroupbase_method_add_input_port) ( id: [`int`](class_int.md), type: [`int`](class_int.md), name: [`String`](class_string.md) )   |
-| `void`                      | [`add_output_port`](#class_visualshadernodegroupbase_method_add_output_port) ( id: [`int`](class_int.md), type: [`int`](class_int.md), name: [`String`](class_string.md) ) |
-| `void`                      | [`clear_input_ports`](#class_visualshadernodegroupbase_method_clear_input_ports) ( )                                                                                       |
-| `void`                      | [`clear_output_ports`](#class_visualshadernodegroupbase_method_clear_output_ports) ( )                                                                                     |
-| [`int`](class_int.md)       | [`get_free_input_port_id`](#class_visualshadernodegroupbase_method_get_free_input_port_id) ( ) const[^const]                                                               |
-| [`int`](class_int.md)       | [`get_free_output_port_id`](#class_visualshadernodegroupbase_method_get_free_output_port_id) ( ) const[^const]                                                             |
-| [`int`](class_int.md)       | [`get_input_port_count`](#class_visualshadernodegroupbase_method_get_input_port_count) ( ) const[^const]                                                                   |
-| [`String`](class_string.md) | [`get_inputs`](#class_visualshadernodegroupbase_method_get_inputs) ( ) const[^const]                                                                                       |
-| [`int`](class_int.md)       | [`get_output_port_count`](#class_visualshadernodegroupbase_method_get_output_port_count) ( ) const[^const]                                                                 |
-| [`String`](class_string.md) | [`get_outputs`](#class_visualshadernodegroupbase_method_get_outputs) ( ) const[^const]                                                                                     |
-| [`bool`](class_bool.md)     | [`has_input_port`](#class_visualshadernodegroupbase_method_has_input_port) ( id: [`int`](class_int.md) ) const[^const]                                                     |
-| [`bool`](class_bool.md)     | [`has_output_port`](#class_visualshadernodegroupbase_method_has_output_port) ( id: [`int`](class_int.md) ) const[^const]                                                   |
-| [`bool`](class_bool.md)     | [`is_valid_port_name`](#class_visualshadernodegroupbase_method_is_valid_port_name) ( name: [`String`](class_string.md) ) const[^const]                                     |
-| `void`                      | [`remove_input_port`](#class_visualshadernodegroupbase_method_remove_input_port) ( id: [`int`](class_int.md) )                                                             |
-| `void`                      | [`remove_output_port`](#class_visualshadernodegroupbase_method_remove_output_port) ( id: [`int`](class_int.md) )                                                           |
-| `void`                      | [`set_input_port_name`](#class_visualshadernodegroupbase_method_set_input_port_name) ( id: [`int`](class_int.md), name: [`String`](class_string.md) )                      |
-| `void`                      | [`set_input_port_type`](#class_visualshadernodegroupbase_method_set_input_port_type) ( id: [`int`](class_int.md), type: [`int`](class_int.md) )                            |
-| `void`                      | [`set_inputs`](#class_visualshadernodegroupbase_method_set_inputs) ( inputs: [`String`](class_string.md) )                                                                 |
-| `void`                      | [`set_output_port_name`](#class_visualshadernodegroupbase_method_set_output_port_name) ( id: [`int`](class_int.md), name: [`String`](class_string.md) )                    |
-| `void`                      | [`set_output_port_type`](#class_visualshadernodegroupbase_method_set_output_port_type) ( id: [`int`](class_int.md), type: [`int`](class_int.md) )                          |
-| `void`                      | [`set_outputs`](#class_visualshadernodegroupbase_method_set_outputs) ( outputs: [`String`](class_string.md) )                                                              |
+| `void`                      | [`add_input_port`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_add_input_port) ( id: [`int`](class_int.md), type: [`int`](class_int.md), name: [`String`](class_string.md) )   |
+| `void`                      | [`add_output_port`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_add_output_port) ( id: [`int`](class_int.md), type: [`int`](class_int.md), name: [`String`](class_string.md) ) |
+| `void`                      | [`clear_input_ports`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_clear_input_ports) ( )                                                                                       |
+| `void`                      | [`clear_output_ports`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_clear_output_ports) ( )                                                                                     |
+| [`int`](class_int.md)       | [`get_free_input_port_id`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_get_free_input_port_id) ( ) const[^const]                                                               |
+| [`int`](class_int.md)       | [`get_free_output_port_id`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_get_free_output_port_id) ( ) const[^const]                                                             |
+| [`int`](class_int.md)       | [`get_input_port_count`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_get_input_port_count) ( ) const[^const]                                                                   |
+| [`String`](class_string.md) | [`get_inputs`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_get_inputs) ( ) const[^const]                                                                                       |
+| [`int`](class_int.md)       | [`get_output_port_count`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_get_output_port_count) ( ) const[^const]                                                                 |
+| [`String`](class_string.md) | [`get_outputs`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_get_outputs) ( ) const[^const]                                                                                     |
+| [`bool`](class_bool.md)     | [`has_input_port`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_has_input_port) ( id: [`int`](class_int.md) ) const[^const]                                                     |
+| [`bool`](class_bool.md)     | [`has_output_port`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_has_output_port) ( id: [`int`](class_int.md) ) const[^const]                                                   |
+| [`bool`](class_bool.md)     | [`is_valid_port_name`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_is_valid_port_name) ( name: [`String`](class_string.md) ) const[^const]                                     |
+| `void`                      | [`remove_input_port`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_remove_input_port) ( id: [`int`](class_int.md) )                                                             |
+| `void`                      | [`remove_output_port`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_remove_output_port) ( id: [`int`](class_int.md) )                                                           |
+| `void`                      | [`set_input_port_name`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_set_input_port_name) ( id: [`int`](class_int.md), name: [`String`](class_string.md) )                      |
+| `void`                      | [`set_input_port_type`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_set_input_port_type) ( id: [`int`](class_int.md), type: [`int`](class_int.md) )                            |
+| `void`                      | [`set_inputs`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_set_inputs) ( inputs: [`String`](class_string.md) )                                                                 |
+| `void`                      | [`set_output_port_name`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_set_output_port_name) ( id: [`int`](class_int.md), name: [`String`](class_string.md) )                    |
+| `void`                      | [`set_output_port_type`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_set_output_port_type) ( id: [`int`](class_int.md), type: [`int`](class_int.md) )                          |
+| `void`                      | [`set_outputs`](class_visualshadernodegroupbasemd#class_visualshadernodegroupbase_method_set_outputs) ( outputs: [`String`](class_string.md) )                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 

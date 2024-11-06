@@ -19,20 +19,20 @@ A more generalized, low-level variation of the directory concept.
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                                             | [`find_dir_index`](#class_editorfilesystemdirectory_method_find_dir_index) ( name: [`String`](class_string.md) ) const[^const]                        |
-| [`int`](class_int.md)                                             | [`find_file_index`](#class_editorfilesystemdirectory_method_find_file_index) ( name: [`String`](class_string.md) ) const[^const]                      |
-| [`String`](class_string.md)                                       | [`get_file`](#class_editorfilesystemdirectory_method_get_file) ( idx: [`int`](class_int.md) ) const[^const]                                           |
-| [`int`](class_int.md)                                             | [`get_file_count`](#class_editorfilesystemdirectory_method_get_file_count) ( ) const[^const]                                                          |
-| [`bool`](class_bool.md)                                           | [`get_file_import_is_valid`](#class_editorfilesystemdirectory_method_get_file_import_is_valid) ( idx: [`int`](class_int.md) ) const[^const]           |
-| [`String`](class_string.md)                                       | [`get_file_path`](#class_editorfilesystemdirectory_method_get_file_path) ( idx: [`int`](class_int.md) ) const[^const]                                 |
-| [`String`](class_string.md)                                       | [`get_file_script_class_extends`](#class_editorfilesystemdirectory_method_get_file_script_class_extends) ( idx: [`int`](class_int.md) ) const[^const] |
-| [`String`](class_string.md)                                       | [`get_file_script_class_name`](#class_editorfilesystemdirectory_method_get_file_script_class_name) ( idx: [`int`](class_int.md) ) const[^const]       |
-| [`StringName`](class_stringname.md)                               | [`get_file_type`](#class_editorfilesystemdirectory_method_get_file_type) ( idx: [`int`](class_int.md) ) const[^const]                                 |
-| [`String`](class_string.md)                                       | [`get_name`](#class_editorfilesystemdirectory_method_get_name) ( )                                                                                    |
-| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_parent`](#class_editorfilesystemdirectory_method_get_parent) ( )                                                                                |
-| [`String`](class_string.md)                                       | [`get_path`](#class_editorfilesystemdirectory_method_get_path) ( ) const[^const]                                                                      |
-| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_subdir`](#class_editorfilesystemdirectory_method_get_subdir) ( idx: [`int`](class_int.md) )                                                     |
-| [`int`](class_int.md)                                             | [`get_subdir_count`](#class_editorfilesystemdirectory_method_get_subdir_count) ( ) const[^const]                                                      |
+| [`int`](class_int.md)                                             | [`find_dir_index`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_find_dir_index) ( name: [`String`](class_string.md) ) const[^const]                        |
+| [`int`](class_int.md)                                             | [`find_file_index`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_find_file_index) ( name: [`String`](class_string.md) ) const[^const]                      |
+| [`String`](class_string.md)                                       | [`get_file`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_file) ( idx: [`int`](class_int.md) ) const[^const]                                           |
+| [`int`](class_int.md)                                             | [`get_file_count`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_file_count) ( ) const[^const]                                                          |
+| [`bool`](class_bool.md)                                           | [`get_file_import_is_valid`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_file_import_is_valid) ( idx: [`int`](class_int.md) ) const[^const]           |
+| [`String`](class_string.md)                                       | [`get_file_path`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_file_path) ( idx: [`int`](class_int.md) ) const[^const]                                 |
+| [`String`](class_string.md)                                       | [`get_file_script_class_extends`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_file_script_class_extends) ( idx: [`int`](class_int.md) ) const[^const] |
+| [`String`](class_string.md)                                       | [`get_file_script_class_name`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_file_script_class_name) ( idx: [`int`](class_int.md) ) const[^const]       |
+| [`StringName`](class_stringname.md)                               | [`get_file_type`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_file_type) ( idx: [`int`](class_int.md) ) const[^const]                                 |
+| [`String`](class_string.md)                                       | [`get_name`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_name) ( )                                                                                    |
+| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_parent`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_parent) ( )                                                                                |
+| [`String`](class_string.md)                                       | [`get_path`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_path) ( ) const[^const]                                                                      |
+| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_subdir`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_subdir) ( idx: [`int`](class_int.md) )                                                     |
+| [`int`](class_int.md)                                             | [`get_subdir_count`](class_editorfilesystemdirectorymd#class_editorfilesystemdirectory_method_get_subdir_count) ( ) const[^const]                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 

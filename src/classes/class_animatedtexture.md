@@ -40,10 +40,10 @@ The playback of the animation is controlled by the [`speed_scale`](#class_animat
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)         | [`get_frame_duration`](#class_animatedtexture_method_get_frame_duration) ( frame: [`int`](class_int.md) ) const[^const]                             |
-| [`Texture2D`](class_texture2d.md) | [`get_frame_texture`](#class_animatedtexture_method_get_frame_texture) ( frame: [`int`](class_int.md) ) const[^const]                               |
-| `void`                            | [`set_frame_duration`](#class_animatedtexture_method_set_frame_duration) ( frame: [`int`](class_int.md), duration: [`float`](class_float.md) )      |
-| `void`                            | [`set_frame_texture`](#class_animatedtexture_method_set_frame_texture) ( frame: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) ) |
+| [`float`](class_float.md)         | [`get_frame_duration`](class_animatedtexturemd#class_animatedtexture_method_get_frame_duration) ( frame: [`int`](class_int.md) ) const[^const]                             |
+| [`Texture2D`](class_texture2d.md) | [`get_frame_texture`](class_animatedtexturemd#class_animatedtexture_method_get_frame_texture) ( frame: [`int`](class_int.md) ) const[^const]                               |
+| `void`                            | [`set_frame_duration`](class_animatedtexturemd#class_animatedtexture_method_set_frame_duration) ( frame: [`int`](class_int.md), duration: [`float`](class_float.md) )      |
+| `void`                            | [`set_frame_texture`](class_animatedtexturemd#class_animatedtexture_method_set_frame_texture) ( frame: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

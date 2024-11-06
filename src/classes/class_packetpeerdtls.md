@@ -23,10 +23,10 @@ This class represents a DTLS peer connection. It can be used to connect to a DTL
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)     | [`connect_to_peer`](#class_packetpeerdtls_method_connect_to_peer) ( packet_peer: [`PacketPeerUDP`](class_packetpeerudp.md), hostname: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
-| `void`                                | [`disconnect_from_peer`](#class_packetpeerdtls_method_disconnect_from_peer) ( )                                                                                                                                                 |
-| [Status](#enum_packetpeerdtls_status) | [`get_status`](#class_packetpeerdtls_method_get_status) ( ) const[^const]                                                                                                                                                       |
-| `void`                                | [`poll`](#class_packetpeerdtls_method_poll) ( )                                                                                                                                                                                 |
+| [Error](#enum_@globalscope_error)     | [`connect_to_peer`](class_packetpeerdtlsmd#class_packetpeerdtls_method_connect_to_peer) ( packet_peer: [`PacketPeerUDP`](class_packetpeerudp.md), hostname: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
+| `void`                                | [`disconnect_from_peer`](class_packetpeerdtlsmd#class_packetpeerdtls_method_disconnect_from_peer) ( )                                                                                                                                                 |
+| [Status](#enum_packetpeerdtls_status) | [`get_status`](class_packetpeerdtlsmd#class_packetpeerdtls_method_get_status) ( ) const[^const]                                                                                                                                                       |
+| `void`                                | [`poll`](class_packetpeerdtlsmd#class_packetpeerdtls_method_poll) ( )                                                                                                                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 

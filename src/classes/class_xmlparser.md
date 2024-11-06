@@ -63,23 +63,23 @@ Here is an example of using **XMLParser** to parse an SVG file (which is based o
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                | [`get_attribute_count`](#class_xmlparser_method_get_attribute_count) ( ) const[^const]                                                         |
-| [`String`](class_string.md)          | [`get_attribute_name`](#class_xmlparser_method_get_attribute_name) ( idx: [`int`](class_int.md) ) const[^const]                                |
-| [`String`](class_string.md)          | [`get_attribute_value`](#class_xmlparser_method_get_attribute_value) ( idx: [`int`](class_int.md) ) const[^const]                              |
-| [`int`](class_int.md)                | [`get_current_line`](#class_xmlparser_method_get_current_line) ( ) const[^const]                                                               |
-| [`String`](class_string.md)          | [`get_named_attribute_value`](#class_xmlparser_method_get_named_attribute_value) ( name: [`String`](class_string.md) ) const[^const]           |
-| [`String`](class_string.md)          | [`get_named_attribute_value_safe`](#class_xmlparser_method_get_named_attribute_value_safe) ( name: [`String`](class_string.md) ) const[^const] |
-| [`String`](class_string.md)          | [`get_node_data`](#class_xmlparser_method_get_node_data) ( ) const[^const]                                                                     |
-| [`String`](class_string.md)          | [`get_node_name`](#class_xmlparser_method_get_node_name) ( ) const[^const]                                                                     |
-| [`int`](class_int.md)                | [`get_node_offset`](#class_xmlparser_method_get_node_offset) ( ) const[^const]                                                                 |
-| [NodeType](#enum_xmlparser_nodetype) | [`get_node_type`](#class_xmlparser_method_get_node_type) ( )                                                                                   |
-| [`bool`](class_bool.md)              | [`has_attribute`](#class_xmlparser_method_has_attribute) ( name: [`String`](class_string.md) ) const[^const]                                   |
-| [`bool`](class_bool.md)              | [`is_empty`](#class_xmlparser_method_is_empty) ( ) const[^const]                                                                               |
-| [Error](#enum_@globalscope_error)    | [`open`](#class_xmlparser_method_open) ( file: [`String`](class_string.md) )                                                                   |
-| [Error](#enum_@globalscope_error)    | [`open_buffer`](#class_xmlparser_method_open_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                 |
-| [Error](#enum_@globalscope_error)    | [`read`](#class_xmlparser_method_read) ( )                                                                                                     |
-| [Error](#enum_@globalscope_error)    | [`seek`](#class_xmlparser_method_seek) ( position: [`int`](class_int.md) )                                                                     |
-| `void`                               | [`skip_section`](#class_xmlparser_method_skip_section) ( )                                                                                     |
+| [`int`](class_int.md)                | [`get_attribute_count`](class_xmlparsermd#class_xmlparser_method_get_attribute_count) ( ) const[^const]                                                         |
+| [`String`](class_string.md)          | [`get_attribute_name`](class_xmlparsermd#class_xmlparser_method_get_attribute_name) ( idx: [`int`](class_int.md) ) const[^const]                                |
+| [`String`](class_string.md)          | [`get_attribute_value`](class_xmlparsermd#class_xmlparser_method_get_attribute_value) ( idx: [`int`](class_int.md) ) const[^const]                              |
+| [`int`](class_int.md)                | [`get_current_line`](class_xmlparsermd#class_xmlparser_method_get_current_line) ( ) const[^const]                                                               |
+| [`String`](class_string.md)          | [`get_named_attribute_value`](class_xmlparsermd#class_xmlparser_method_get_named_attribute_value) ( name: [`String`](class_string.md) ) const[^const]           |
+| [`String`](class_string.md)          | [`get_named_attribute_value_safe`](class_xmlparsermd#class_xmlparser_method_get_named_attribute_value_safe) ( name: [`String`](class_string.md) ) const[^const] |
+| [`String`](class_string.md)          | [`get_node_data`](class_xmlparsermd#class_xmlparser_method_get_node_data) ( ) const[^const]                                                                     |
+| [`String`](class_string.md)          | [`get_node_name`](class_xmlparsermd#class_xmlparser_method_get_node_name) ( ) const[^const]                                                                     |
+| [`int`](class_int.md)                | [`get_node_offset`](class_xmlparsermd#class_xmlparser_method_get_node_offset) ( ) const[^const]                                                                 |
+| [NodeType](#enum_xmlparser_nodetype) | [`get_node_type`](class_xmlparsermd#class_xmlparser_method_get_node_type) ( )                                                                                   |
+| [`bool`](class_bool.md)              | [`has_attribute`](class_xmlparsermd#class_xmlparser_method_has_attribute) ( name: [`String`](class_string.md) ) const[^const]                                   |
+| [`bool`](class_bool.md)              | [`is_empty`](class_xmlparsermd#class_xmlparser_method_is_empty) ( ) const[^const]                                                                               |
+| [Error](#enum_@globalscope_error)    | [`open`](class_xmlparsermd#class_xmlparser_method_open) ( file: [`String`](class_string.md) )                                                                   |
+| [Error](#enum_@globalscope_error)    | [`open_buffer`](class_xmlparsermd#class_xmlparser_method_open_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                 |
+| [Error](#enum_@globalscope_error)    | [`read`](class_xmlparsermd#class_xmlparser_method_read) ( )                                                                                                     |
+| [Error](#enum_@globalscope_error)    | [`seek`](class_xmlparsermd#class_xmlparser_method_seek) ( position: [`int`](class_int.md) )                                                                     |
+| `void`                               | [`skip_section`](class_xmlparsermd#class_xmlparser_method_skip_section) ( )                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

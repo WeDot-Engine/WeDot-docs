@@ -29,13 +29,13 @@ Unlike [`AudioEffectRecord`](class_audioeffectrecord.md), this effect only retur
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`can_get_buffer`](#class_audioeffectcapture_method_can_get_buffer) ( frames: [`int`](class_int.md) ) const[^const] |
-| `void`                                              | [`clear_buffer`](#class_audioeffectcapture_method_clear_buffer) ( )                                                 |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`get_buffer`](#class_audioeffectcapture_method_get_buffer) ( frames: [`int`](class_int.md) )                       |
-| [`int`](class_int.md)                               | [`get_buffer_length_frames`](#class_audioeffectcapture_method_get_buffer_length_frames) ( ) const[^const]           |
-| [`int`](class_int.md)                               | [`get_discarded_frames`](#class_audioeffectcapture_method_get_discarded_frames) ( ) const[^const]                   |
-| [`int`](class_int.md)                               | [`get_frames_available`](#class_audioeffectcapture_method_get_frames_available) ( ) const[^const]                   |
-| [`int`](class_int.md)                               | [`get_pushed_frames`](#class_audioeffectcapture_method_get_pushed_frames) ( ) const[^const]                         |
+| [`bool`](class_bool.md)                             | [`can_get_buffer`](class_audioeffectcapturemd#class_audioeffectcapture_method_can_get_buffer) ( frames: [`int`](class_int.md) ) const[^const] |
+| `void`                                              | [`clear_buffer`](class_audioeffectcapturemd#class_audioeffectcapture_method_clear_buffer) ( )                                                 |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`get_buffer`](class_audioeffectcapturemd#class_audioeffectcapture_method_get_buffer) ( frames: [`int`](class_int.md) )                       |
+| [`int`](class_int.md)                               | [`get_buffer_length_frames`](class_audioeffectcapturemd#class_audioeffectcapture_method_get_buffer_length_frames) ( ) const[^const]           |
+| [`int`](class_int.md)                               | [`get_discarded_frames`](class_audioeffectcapturemd#class_audioeffectcapture_method_get_discarded_frames) ( ) const[^const]                   |
+| [`int`](class_int.md)                               | [`get_frames_available`](class_audioeffectcapturemd#class_audioeffectcapture_method_get_frames_available) ( ) const[^const]                   |
+| [`int`](class_int.md)                               | [`get_pushed_frames`](class_audioeffectcapturemd#class_audioeffectcapture_method_get_pushed_frames) ( ) const[^const]                         |
 
 <!-- rst-class:: classref-section-separator -->
 

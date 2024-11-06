@@ -21,9 +21,9 @@ See [`EngineDebugger`](class_enginedebugger.md) and [`EditorDebuggerPlugin`](cla
 
 |||
 |:-:|:--|
-| `void` | [`_add_frame`](#class_engineprofiler_private_method__add_frame) ( data: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                                              |
-| `void` | [`_tick`](#class_engineprofiler_private_method__tick) ( frame_time: [`float`](class_float.md), process_time: [`float`](class_float.md), physics_time: [`float`](class_float.md), physics_frame_time: [`float`](class_float.md) ) virtual[^virtual] |
-| `void` | [`_toggle`](#class_engineprofiler_private_method__toggle) ( enable: [`bool`](class_bool.md), options: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                |
+| `void` | [`_add_frame`](class_engineprofilermd#class_engineprofiler_private_method__add_frame) ( data: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                                              |
+| `void` | [`_tick`](class_engineprofilermd#class_engineprofiler_private_method__tick) ( frame_time: [`float`](class_float.md), process_time: [`float`](class_float.md), physics_time: [`float`](class_float.md), physics_frame_time: [`float`](class_float.md) ) virtual[^virtual] |
+| `void` | [`_toggle`](class_engineprofilermd#class_engineprofiler_private_method__toggle) ( enable: [`bool`](class_bool.md), options: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 

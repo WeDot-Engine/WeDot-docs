@@ -28,32 +28,32 @@ It uses integer coordinates and is therefore preferable to [`Vector2`](class_vec
 
 |||
 |:-:|:--|
-| [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( )                                                    |
-| [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( from: [`Vector2i`](class_vector2i.md) )              |
-| [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( from: [`Vector2`](class_vector2.md) )                |
-| [`Vector2i`](class_vector2i.md) | [`Vector2i`](#class_vector2i_constructor_vector2i) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) |
+| [`Vector2i`](class_vector2i.md) | [`Vector2i`](class_vector2i.md#class_vector2i_constructor_vector2i) ( )                                                    |
+| [`Vector2i`](class_vector2i.md) | [`Vector2i`](class_vector2i.md#class_vector2i_constructor_vector2i) ( from: [`Vector2i`](class_vector2i.md) )              |
+| [`Vector2i`](class_vector2i.md) | [`Vector2i`](class_vector2i.md#class_vector2i_constructor_vector2i) ( from: [`Vector2`](class_vector2.md) )                |
+| [`Vector2i`](class_vector2i.md) | [`Vector2i`](class_vector2i.md#class_vector2i_constructor_vector2i) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector2i`](class_vector2i.md) | [`abs`](#class_vector2i_method_abs) ( ) const[^const]                                                                                |
-| [`float`](class_float.md)       | [`aspect`](#class_vector2i_method_aspect) ( ) const[^const]                                                                          |
-| [`Vector2i`](class_vector2i.md) | [`clamp`](#class_vector2i_method_clamp) ( min: [`Vector2i`](class_vector2i.md), max: [`Vector2i`](class_vector2i.md) ) const[^const] |
-| [`Vector2i`](class_vector2i.md) | [`clampi`](#class_vector2i_method_clampi) ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]                   |
-| [`int`](class_int.md)           | [`distance_squared_to`](#class_vector2i_method_distance_squared_to) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]            |
-| [`float`](class_float.md)       | [`distance_to`](#class_vector2i_method_distance_to) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
-| [`float`](class_float.md)       | [`length`](#class_vector2i_method_length) ( ) const[^const]                                                                          |
-| [`int`](class_int.md)           | [`length_squared`](#class_vector2i_method_length_squared) ( ) const[^const]                                                          |
-| [`Vector2i`](class_vector2i.md) | [`max`](#class_vector2i_method_max) ( with: [`Vector2i`](class_vector2i.md) ) const[^const]                                          |
-| [`int`](class_int.md)           | [`max_axis_index`](#class_vector2i_method_max_axis_index) ( ) const[^const]                                                          |
-| [`Vector2i`](class_vector2i.md) | [`maxi`](#class_vector2i_method_maxi) ( with: [`int`](class_int.md) ) const[^const]                                                  |
-| [`Vector2i`](class_vector2i.md) | [`min`](#class_vector2i_method_min) ( with: [`Vector2i`](class_vector2i.md) ) const[^const]                                          |
-| [`int`](class_int.md)           | [`min_axis_index`](#class_vector2i_method_min_axis_index) ( ) const[^const]                                                          |
-| [`Vector2i`](class_vector2i.md) | [`mini`](#class_vector2i_method_mini) ( with: [`int`](class_int.md) ) const[^const]                                                  |
-| [`Vector2i`](class_vector2i.md) | [`sign`](#class_vector2i_method_sign) ( ) const[^const]                                                                              |
-| [`Vector2i`](class_vector2i.md) | [`snapped`](#class_vector2i_method_snapped) ( step: [`Vector2i`](class_vector2i.md) ) const[^const]                                  |
-| [`Vector2i`](class_vector2i.md) | [`snappedi`](#class_vector2i_method_snappedi) ( step: [`int`](class_int.md) ) const[^const]                                          |
+| [`Vector2i`](class_vector2i.md) | [`abs`](class_vector2imd#class_vector2i_method_abs) ( ) const[^const]                                                                                |
+| [`float`](class_float.md)       | [`aspect`](class_vector2imd#class_vector2i_method_aspect) ( ) const[^const]                                                                          |
+| [`Vector2i`](class_vector2i.md) | [`clamp`](class_vector2imd#class_vector2i_method_clamp) ( min: [`Vector2i`](class_vector2i.md), max: [`Vector2i`](class_vector2i.md) ) const[^const] |
+| [`Vector2i`](class_vector2i.md) | [`clampi`](class_vector2imd#class_vector2i_method_clampi) ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]                   |
+| [`int`](class_int.md)           | [`distance_squared_to`](class_vector2imd#class_vector2i_method_distance_squared_to) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]            |
+| [`float`](class_float.md)       | [`distance_to`](class_vector2imd#class_vector2i_method_distance_to) ( to: [`Vector2i`](class_vector2i.md) ) const[^const]                            |
+| [`float`](class_float.md)       | [`length`](class_vector2imd#class_vector2i_method_length) ( ) const[^const]                                                                          |
+| [`int`](class_int.md)           | [`length_squared`](class_vector2imd#class_vector2i_method_length_squared) ( ) const[^const]                                                          |
+| [`Vector2i`](class_vector2i.md) | [`max`](class_vector2imd#class_vector2i_method_max) ( with: [`Vector2i`](class_vector2i.md) ) const[^const]                                          |
+| [`int`](class_int.md)           | [`max_axis_index`](class_vector2imd#class_vector2i_method_max_axis_index) ( ) const[^const]                                                          |
+| [`Vector2i`](class_vector2i.md) | [`maxi`](class_vector2imd#class_vector2i_method_maxi) ( with: [`int`](class_int.md) ) const[^const]                                                  |
+| [`Vector2i`](class_vector2i.md) | [`min`](class_vector2imd#class_vector2i_method_min) ( with: [`Vector2i`](class_vector2i.md) ) const[^const]                                          |
+| [`int`](class_int.md)           | [`min_axis_index`](class_vector2imd#class_vector2i_method_min_axis_index) ( ) const[^const]                                                          |
+| [`Vector2i`](class_vector2i.md) | [`mini`](class_vector2imd#class_vector2i_method_mini) ( with: [`int`](class_int.md) ) const[^const]                                                  |
+| [`Vector2i`](class_vector2i.md) | [`sign`](class_vector2imd#class_vector2i_method_sign) ( ) const[^const]                                                                              |
+| [`Vector2i`](class_vector2i.md) | [`snapped`](class_vector2imd#class_vector2i_method_snapped) ( step: [`Vector2i`](class_vector2i.md) ) const[^const]                                  |
+| [`Vector2i`](class_vector2i.md) | [`snappedi`](class_vector2imd#class_vector2i_method_snappedi) ( step: [`int`](class_int.md) ) const[^const]                                          |
 
 ## 运算符
 

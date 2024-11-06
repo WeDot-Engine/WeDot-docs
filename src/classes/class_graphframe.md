@@ -35,7 +35,7 @@ A GraphFrame is always kept behind the connection layer and other [`GraphElement
 
 |||
 |:-:|:--|
-| [`HBoxContainer`](class_hboxcontainer.md) | [`get_titlebar_hbox`](#class_graphframe_method_get_titlebar_hbox) ( ) |
+| [`HBoxContainer`](class_hboxcontainer.md) | [`get_titlebar_hbox`](class_graphframemd#class_graphframe_method_get_titlebar_hbox) ( ) |
 
 ## 主题属性
 

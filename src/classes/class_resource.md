@@ -36,15 +36,15 @@ The engine keeps a global cache of all loaded resources, referenced by paths (se
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)           | [`_get_rid`](#class_resource_private_method__get_rid) ( ) virtual[^virtual]                                     |
-| `void`                          | [`_setup_local_to_scene`](#class_resource_private_method__setup_local_to_scene) ( ) virtual[^virtual]           |
-| [`Resource`](class_resource.md) | [`duplicate`](#class_resource_method_duplicate) ( subresources: [`bool`](class_bool.md) = false ) const[^const] |
-| `void`                          | [`emit_changed`](#class_resource_method_emit_changed) ( )                                                       |
-| [`String`](class_string.md)     | [`generate_scene_unique_id`](#class_resource_method_generate_scene_unique_id) ( ) static[^static]               |
-| [`Node`](class_node.md)         | [`get_local_scene`](#class_resource_method_get_local_scene) ( ) const[^const]                                   |
-| [`RID`](class_rid.md)           | [`get_rid`](#class_resource_method_get_rid) ( ) const[^const]                                                   |
-| `void`                          | [`setup_local_to_scene`](#class_resource_method_setup_local_to_scene) ( )                                       |
-| `void`                          | [`take_over_path`](#class_resource_method_take_over_path) ( path: [`String`](class_string.md) )                 |
+| [`RID`](class_rid.md)           | [`_get_rid`](class_resourcemd#class_resource_private_method__get_rid) ( ) virtual[^virtual]                                     |
+| `void`                          | [`_setup_local_to_scene`](class_resourcemd#class_resource_private_method__setup_local_to_scene) ( ) virtual[^virtual]           |
+| [`Resource`](class_resource.md) | [`duplicate`](class_resourcemd#class_resource_method_duplicate) ( subresources: [`bool`](class_bool.md) = false ) const[^const] |
+| `void`                          | [`emit_changed`](class_resourcemd#class_resource_method_emit_changed) ( )                                                       |
+| [`String`](class_string.md)     | [`generate_scene_unique_id`](class_resourcemd#class_resource_method_generate_scene_unique_id) ( ) static[^static]               |
+| [`Node`](class_node.md)         | [`get_local_scene`](class_resourcemd#class_resource_method_get_local_scene) ( ) const[^const]                                   |
+| [`RID`](class_rid.md)           | [`get_rid`](class_resourcemd#class_resource_method_get_rid) ( ) const[^const]                                                   |
+| `void`                          | [`setup_local_to_scene`](class_resourcemd#class_resource_method_setup_local_to_scene) ( )                                       |
+| `void`                          | [`take_over_path`](class_resourcemd#class_resource_method_take_over_path) ( path: [`String`](class_string.md) )                 |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -21,15 +21,15 @@ Godot editor's script editor.
 
 |||
 |:-:|:--|
-| [`ScriptEditorBase`](class_scripteditorbase.md)                         | [`get_current_editor`](#class_scripteditor_method_get_current_editor) ( ) const[^const]                                                                                           |
-| [`Script`](class_script.md)                                             | [`get_current_script`](#class_scripteditor_method_get_current_script) ( )                                                                                                         |
-| [Array](class_array.md) [`ScriptEditorBase`](class_scripteditorbase.md) | [`get_open_script_editors`](#class_scripteditor_method_get_open_script_editors) ( ) const[^const]                                                                                 |
-| [Array](class_array.md) [`Script`](class_script.md)                     | [`get_open_scripts`](#class_scripteditor_method_get_open_scripts) ( ) const[^const]                                                                                               |
-| `void`                                                                  | [`goto_help`](#class_scripteditor_method_goto_help) ( topic: [`String`](class_string.md) )                                                                                        |
-| `void`                                                                  | [`goto_line`](#class_scripteditor_method_goto_line) ( line_number: [`int`](class_int.md) )                                                                                        |
-| `void`                                                                  | [`open_script_create_dialog`](#class_scripteditor_method_open_script_create_dialog) ( base_name: [`String`](class_string.md), base_path: [`String`](class_string.md) )            |
-| `void`                                                                  | [`register_syntax_highlighter`](#class_scripteditor_method_register_syntax_highlighter) ( syntax_highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) )     |
-| `void`                                                                  | [`unregister_syntax_highlighter`](#class_scripteditor_method_unregister_syntax_highlighter) ( syntax_highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) ) |
+| [`ScriptEditorBase`](class_scripteditorbase.md)                         | [`get_current_editor`](class_scripteditormd#class_scripteditor_method_get_current_editor) ( ) const[^const]                                                                                           |
+| [`Script`](class_script.md)                                             | [`get_current_script`](class_scripteditormd#class_scripteditor_method_get_current_script) ( )                                                                                                         |
+| [Array](class_array.md) [`ScriptEditorBase`](class_scripteditorbase.md) | [`get_open_script_editors`](class_scripteditormd#class_scripteditor_method_get_open_script_editors) ( ) const[^const]                                                                                 |
+| [Array](class_array.md) [`Script`](class_script.md)                     | [`get_open_scripts`](class_scripteditormd#class_scripteditor_method_get_open_scripts) ( ) const[^const]                                                                                               |
+| `void`                                                                  | [`goto_help`](class_scripteditormd#class_scripteditor_method_goto_help) ( topic: [`String`](class_string.md) )                                                                                        |
+| `void`                                                                  | [`goto_line`](class_scripteditormd#class_scripteditor_method_goto_line) ( line_number: [`int`](class_int.md) )                                                                                        |
+| `void`                                                                  | [`open_script_create_dialog`](class_scripteditormd#class_scripteditor_method_open_script_create_dialog) ( base_name: [`String`](class_string.md), base_path: [`String`](class_string.md) )            |
+| `void`                                                                  | [`register_syntax_highlighter`](class_scripteditormd#class_scripteditor_method_register_syntax_highlighter) ( syntax_highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) )     |
+| `void`                                                                  | [`unregister_syntax_highlighter`](class_scripteditormd#class_scripteditor_method_unregister_syntax_highlighter) ( syntax_highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

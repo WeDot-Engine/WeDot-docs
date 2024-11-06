@@ -28,7 +28,7 @@ A container that arranges its child controls horizontally or vertically, rearran
 
 |||
 |:-:|:--|
-| [`Control`](class_control.md) | [`add_spacer`](#class_boxcontainer_method_add_spacer) ( begin: [`bool`](class_bool.md) ) |
+| [`Control`](class_control.md) | [`add_spacer`](class_boxcontainermd#class_boxcontainer_method_add_spacer) ( begin: [`bool`](class_bool.md) ) |
 
 ## 主题属性
 

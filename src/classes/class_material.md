@@ -30,12 +30,12 @@ Importantly, you can inherit from **Material** to create your own custom materia
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)         | [`_can_do_next_pass`](#class_material_private_method__can_do_next_pass) ( ) virtual[^virtual] const[^const]               |
-| [`bool`](class_bool.md)         | [`_can_use_render_priority`](#class_material_private_method__can_use_render_priority) ( ) virtual[^virtual] const[^const] |
-| [Mode](#enum_shader_mode)       | [`_get_shader_mode`](#class_material_private_method__get_shader_mode) ( ) virtual[^virtual] const[^const]                 |
-| [`RID`](class_rid.md)           | [`_get_shader_rid`](#class_material_private_method__get_shader_rid) ( ) virtual[^virtual] const[^const]                   |
-| [`Resource`](class_resource.md) | [`create_placeholder`](#class_material_method_create_placeholder) ( ) const[^const]                                       |
-| `void`                          | [`inspect_native_shader_code`](#class_material_method_inspect_native_shader_code) ( )                                     |
+| [`bool`](class_bool.md)         | [`_can_do_next_pass`](class_materialmd#class_material_private_method__can_do_next_pass) ( ) virtual[^virtual] const[^const]               |
+| [`bool`](class_bool.md)         | [`_can_use_render_priority`](class_materialmd#class_material_private_method__can_use_render_priority) ( ) virtual[^virtual] const[^const] |
+| [Mode](#enum_shader_mode)       | [`_get_shader_mode`](class_materialmd#class_material_private_method__get_shader_mode) ( ) virtual[^virtual] const[^const]                 |
+| [`RID`](class_rid.md)           | [`_get_shader_rid`](class_materialmd#class_material_private_method__get_shader_rid) ( ) virtual[^virtual] const[^const]                   |
+| [`Resource`](class_resource.md) | [`create_placeholder`](class_materialmd#class_material_method_create_placeholder) ( ) const[^const]                                       |
+| `void`                          | [`inspect_native_shader_code`](class_materialmd#class_material_method_inspect_native_shader_code) ( )                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

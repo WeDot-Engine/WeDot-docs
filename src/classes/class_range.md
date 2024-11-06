@@ -37,10 +37,10 @@ Range is an abstract base class for controls that represent a number within a ra
 
 |||
 |:-:|:--|
-| `void` | [`_value_changed`](#class_range_private_method__value_changed) ( new_value: [`float`](class_float.md) ) virtual[^virtual] |
-| `void` | [`set_value_no_signal`](#class_range_method_set_value_no_signal) ( value: [`float`](class_float.md) )                     |
-| `void` | [`share`](#class_range_method_share) ( with: [`Node`](class_node.md) )                                                    |
-| `void` | [`unshare`](#class_range_method_unshare) ( )                                                                              |
+| `void` | [`_value_changed`](class_rangemd#class_range_private_method__value_changed) ( new_value: [`float`](class_float.md) ) virtual[^virtual] |
+| `void` | [`set_value_no_signal`](class_rangemd#class_range_method_set_value_no_signal) ( value: [`float`](class_float.md) )                     |
+| `void` | [`share`](class_rangemd#class_range_method_share) ( with: [`Node`](class_node.md) )                                                    |
+| `void` | [`unshare`](class_rangemd#class_range_method_unshare) ( )                                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 

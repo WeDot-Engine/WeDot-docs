@@ -37,12 +37,12 @@ A widget that provides an interface for selecting or modifying a color. It can o
 
 |||
 |:-:|:--|
-| `void`                                          | [`add_preset`](#class_colorpicker_method_add_preset) ( color: [`Color`](class_color.md) )                   |
-| `void`                                          | [`add_recent_preset`](#class_colorpicker_method_add_recent_preset) ( color: [`Color`](class_color.md) )     |
-| `void`                                          | [`erase_preset`](#class_colorpicker_method_erase_preset) ( color: [`Color`](class_color.md) )               |
-| `void`                                          | [`erase_recent_preset`](#class_colorpicker_method_erase_recent_preset) ( color: [`Color`](class_color.md) ) |
-| [`PackedColorArray`](class_packedcolorarray.md) | [`get_presets`](#class_colorpicker_method_get_presets) ( ) const[^const]                                    |
-| [`PackedColorArray`](class_packedcolorarray.md) | [`get_recent_presets`](#class_colorpicker_method_get_recent_presets) ( ) const[^const]                      |
+| `void`                                          | [`add_preset`](class_colorpickermd#class_colorpicker_method_add_preset) ( color: [`Color`](class_color.md) )                   |
+| `void`                                          | [`add_recent_preset`](class_colorpickermd#class_colorpicker_method_add_recent_preset) ( color: [`Color`](class_color.md) )     |
+| `void`                                          | [`erase_preset`](class_colorpickermd#class_colorpicker_method_erase_preset) ( color: [`Color`](class_color.md) )               |
+| `void`                                          | [`erase_recent_preset`](class_colorpickermd#class_colorpicker_method_erase_recent_preset) ( color: [`Color`](class_color.md) ) |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`get_presets`](class_colorpickermd#class_colorpicker_method_get_presets) ( ) const[^const]                                    |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`get_recent_presets`](class_colorpickermd#class_colorpicker_method_get_recent_presets) ( ) const[^const]                      |
 
 ## 主题属性
 

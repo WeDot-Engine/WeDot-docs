@@ -46,9 +46,9 @@ Without requiring much code, a timer node can be added and configured in the edi
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`is_stopped`](#class_timer_method_is_stopped) ( ) const[^const]                  |
-| `void`                  | [`start`](#class_timer_method_start) ( time_sec: [`float`](class_float.md) = -1 ) |
-| `void`                  | [`stop`](#class_timer_method_stop) ( )                                            |
+| [`bool`](class_bool.md) | [`is_stopped`](class_timermd#class_timer_method_is_stopped) ( ) const[^const]                  |
+| `void`                  | [`start`](class_timermd#class_timer_method_start) ( time_sec: [`float`](class_float.md) = -1 ) |
+| `void`                  | [`stop`](class_timermd#class_timer_method_stop) ( )                                            |
 
 <!-- rst-class:: classref-section-separator -->
 

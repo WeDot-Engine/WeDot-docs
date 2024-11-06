@@ -33,11 +33,11 @@ This class implements a reader that can extract the content of individual files 
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)                 | [`close`](#class_zipreader_method_close) ( )                                                                                               |
-| [`bool`](class_bool.md)                           | [`file_exists`](#class_zipreader_method_file_exists) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true ) |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_files`](#class_zipreader_method_get_files) ( )                                                                                       |
-| [Error](#enum_@globalscope_error)                 | [`open`](#class_zipreader_method_open) ( path: [`String`](class_string.md) )                                                               |
-| [`PackedByteArray`](class_packedbytearray.md)     | [`read_file`](#class_zipreader_method_read_file) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true )     |
+| [Error](#enum_@globalscope_error)                 | [`close`](class_zipreadermd#class_zipreader_method_close) ( )                                                                                               |
+| [`bool`](class_bool.md)                           | [`file_exists`](class_zipreadermd#class_zipreader_method_file_exists) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true ) |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_files`](class_zipreadermd#class_zipreader_method_get_files) ( )                                                                                       |
+| [Error](#enum_@globalscope_error)                 | [`open`](class_zipreadermd#class_zipreader_method_open) ( path: [`String`](class_string.md) )                                                               |
+| [`PackedByteArray`](class_packedbytearray.md)     | [`read_file`](class_zipreadermd#class_zipreader_method_read_file) ( path: [`String`](class_string.md), case_sensitive: [`bool`](class_bool.md) = true )     |
 
 <!-- rst-class:: classref-section-separator -->
 

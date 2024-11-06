@@ -35,7 +35,7 @@ It is useful for making other nodes follow a path, without coding the movement p
 
 |||
 |:-:|:--|
-| [`Transform3D`](class_transform3d.md) | [`correct_posture`](#class_pathfollow3d_method_correct_posture) ( transform: [`Transform3D`](class_transform3d.md), rotation_mode: [RotationMode](#enum_pathfollow3d_rotationmode) ) static[^static] |
+| [`Transform3D`](class_transform3d.md) | [`correct_posture`](class_pathfollow3dmd#class_pathfollow3d_method_correct_posture) ( transform: [`Transform3D`](class_transform3d.md), rotation_mode: [RotationMode](#enum_pathfollow3d_rotationmode) ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 

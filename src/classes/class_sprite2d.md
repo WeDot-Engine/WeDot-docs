@@ -36,8 +36,8 @@ A node that displays a 2D texture. The texture displayed can be a region from a 
 
 |||
 |:-:|:--|
-| [`Rect2`](class_rect2.md) | [`get_rect`](#class_sprite2d_method_get_rect) ( ) const[^const]                                                  |
-| [`bool`](class_bool.md)   | [`is_pixel_opaque`](#class_sprite2d_method_is_pixel_opaque) ( pos: [`Vector2`](class_vector2.md) ) const[^const] |
+| [`Rect2`](class_rect2.md) | [`get_rect`](class_sprite2dmd#class_sprite2d_method_get_rect) ( ) const[^const]                                                  |
+| [`bool`](class_bool.md)   | [`is_pixel_opaque`](class_sprite2dmd#class_sprite2d_method_is_pixel_opaque) ( pos: [`Vector2`](class_vector2.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

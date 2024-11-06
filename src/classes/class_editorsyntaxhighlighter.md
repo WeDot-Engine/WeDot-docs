@@ -21,8 +21,8 @@ Add a syntax highlighter to an individual script by calling [`ScriptEditorBase.a
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                       | [`_get_name`](#class_editorsyntaxhighlighter_private_method__get_name) ( ) virtual[^virtual] const[^const]                               |
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_supported_languages`](#class_editorsyntaxhighlighter_private_method__get_supported_languages) ( ) virtual[^virtual] const[^const] |
+| [`String`](class_string.md)                       | [`_get_name`](class_editorsyntaxhighlightermd#class_editorsyntaxhighlighter_private_method__get_name) ( ) virtual[^virtual] const[^const]                               |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_supported_languages`](class_editorsyntaxhighlightermd#class_editorsyntaxhighlighter_private_method__get_supported_languages) ( ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

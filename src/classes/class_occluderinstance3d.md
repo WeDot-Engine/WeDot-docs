@@ -37,8 +37,8 @@ The occlusion culling system works by rendering the occluders on the CPU in para
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`get_bake_mask_value`](#class_occluderinstance3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| `void`                  | [`set_bake_mask_value`](#class_occluderinstance3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| [`bool`](class_bool.md) | [`get_bake_mask_value`](class_occluderinstance3dmd#class_occluderinstance3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| `void`                  | [`set_bake_mask_value`](class_occluderinstance3dmd#class_occluderinstance3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

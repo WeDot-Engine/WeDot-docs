@@ -30,10 +30,10 @@ Universal Plug and Play (UPnP) device. See [`UPNP`](class_upnp.md) for UPnP disc
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)       | [`add_port_mapping`](#class_upnpdevice_method_add_port_mapping) ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const] |
-| [`int`](class_int.md)       | [`delete_port_mapping`](#class_upnpdevice_method_delete_port_mapping) ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]                                                                                                                  |
-| [`bool`](class_bool.md)     | [`is_valid_gateway`](#class_upnpdevice_method_is_valid_gateway) ( ) const[^const]                                                                                                                                                                                                |
-| [`String`](class_string.md) | [`query_external_address`](#class_upnpdevice_method_query_external_address) ( ) const[^const]                                                                                                                                                                                    |
+| [`int`](class_int.md)       | [`add_port_mapping`](class_upnpdevicemd#class_upnpdevice_method_add_port_mapping) ( port: [`int`](class_int.md), port_internal: [`int`](class_int.md) = 0, desc: [`String`](class_string.md) = "", proto: [`String`](class_string.md) = "UDP", duration: [`int`](class_int.md) = 0 ) const[^const] |
+| [`int`](class_int.md)       | [`delete_port_mapping`](class_upnpdevicemd#class_upnpdevice_method_delete_port_mapping) ( port: [`int`](class_int.md), proto: [`String`](class_string.md) = "UDP" ) const[^const]                                                                                                                  |
+| [`bool`](class_bool.md)     | [`is_valid_gateway`](class_upnpdevicemd#class_upnpdevice_method_is_valid_gateway) ( ) const[^const]                                                                                                                                                                                                |
+| [`String`](class_string.md) | [`query_external_address`](class_upnpdevicemd#class_upnpdevice_method_query_external_address) ( ) const[^const]                                                                                                                                                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 

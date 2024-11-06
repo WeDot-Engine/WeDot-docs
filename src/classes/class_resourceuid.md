@@ -21,14 +21,14 @@ Resource UIDs (Unique IDentifiers) allow the engine to keep references between r
 
 |||
 |:-:|:--|
-| `void`                      | [`add_id`](#class_resourceuid_method_add_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
-| [`int`](class_int.md)       | [`create_id`](#class_resourceuid_method_create_id) ( )                                                        |
-| [`String`](class_string.md) | [`get_id_path`](#class_resourceuid_method_get_id_path) ( id: [`int`](class_int.md) ) const[^const]            |
-| [`bool`](class_bool.md)     | [`has_id`](#class_resourceuid_method_has_id) ( id: [`int`](class_int.md) ) const[^const]                      |
-| [`String`](class_string.md) | [`id_to_text`](#class_resourceuid_method_id_to_text) ( id: [`int`](class_int.md) ) const[^const]              |
-| `void`                      | [`remove_id`](#class_resourceuid_method_remove_id) ( id: [`int`](class_int.md) )                              |
-| `void`                      | [`set_id`](#class_resourceuid_method_set_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
-| [`int`](class_int.md)       | [`text_to_id`](#class_resourceuid_method_text_to_id) ( text_id: [`String`](class_string.md) ) const[^const]   |
+| `void`                      | [`add_id`](class_resourceuidmd#class_resourceuid_method_add_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
+| [`int`](class_int.md)       | [`create_id`](class_resourceuidmd#class_resourceuid_method_create_id) ( )                                                        |
+| [`String`](class_string.md) | [`get_id_path`](class_resourceuidmd#class_resourceuid_method_get_id_path) ( id: [`int`](class_int.md) ) const[^const]            |
+| [`bool`](class_bool.md)     | [`has_id`](class_resourceuidmd#class_resourceuid_method_has_id) ( id: [`int`](class_int.md) ) const[^const]                      |
+| [`String`](class_string.md) | [`id_to_text`](class_resourceuidmd#class_resourceuid_method_id_to_text) ( id: [`int`](class_int.md) ) const[^const]              |
+| `void`                      | [`remove_id`](class_resourceuidmd#class_resourceuid_method_remove_id) ( id: [`int`](class_int.md) )                              |
+| `void`                      | [`set_id`](class_resourceuidmd#class_resourceuid_method_set_id) ( id: [`int`](class_int.md), path: [`String`](class_string.md) ) |
+| [`int`](class_int.md)       | [`text_to_id`](class_resourceuidmd#class_resourceuid_method_text_to_id) ( text_id: [`String`](class_string.md) ) const[^const]   |
 
 <!-- rst-class:: classref-section-separator -->
 

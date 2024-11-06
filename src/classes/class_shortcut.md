@@ -27,9 +27,9 @@ One shortcut can contain multiple [`InputEvent`](class_inputevent.md)'s, allowin
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_as_text`](#class_shortcut_method_get_as_text) ( ) const[^const]                                                |
-| [`bool`](class_bool.md)     | [`has_valid_event`](#class_shortcut_method_has_valid_event) ( ) const[^const]                                        |
-| [`bool`](class_bool.md)     | [`matches_event`](#class_shortcut_method_matches_event) ( event: [`InputEvent`](class_inputevent.md) ) const[^const] |
+| [`String`](class_string.md) | [`get_as_text`](class_shortcutmd#class_shortcut_method_get_as_text) ( ) const[^const]                                                |
+| [`bool`](class_bool.md)     | [`has_valid_event`](class_shortcutmd#class_shortcut_method_has_valid_event) ( ) const[^const]                                        |
+| [`bool`](class_bool.md)     | [`matches_event`](class_shortcutmd#class_shortcut_method_matches_event) ( event: [`InputEvent`](class_inputevent.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

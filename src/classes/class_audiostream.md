@@ -21,19 +21,19 @@ Base class for audio streams. Audio streams are used for sound effects and music
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                                       | [`_get_beat_count`](#class_audiostream_private_method__get_beat_count) ( ) virtual[^virtual] const[^const]             |
-| [`float`](class_float.md)                                   | [`_get_bpm`](#class_audiostream_private_method__get_bpm) ( ) virtual[^virtual] const[^const]                           |
-| [`float`](class_float.md)                                   | [`_get_length`](#class_audiostream_private_method__get_length) ( ) virtual[^virtual] const[^const]                     |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_get_parameter_list`](#class_audiostream_private_method__get_parameter_list) ( ) virtual[^virtual] const[^const]     |
-| [`String`](class_string.md)                                 | [`_get_stream_name`](#class_audiostream_private_method__get_stream_name) ( ) virtual[^virtual] const[^const]           |
-| [`AudioStreamPlayback`](class_audiostreamplayback.md)       | [`_instantiate_playback`](#class_audiostream_private_method__instantiate_playback) ( ) virtual[^virtual] const[^const] |
-| [`bool`](class_bool.md)                                     | [`_is_monophonic`](#class_audiostream_private_method__is_monophonic) ( ) virtual[^virtual] const[^const]               |
-| [`bool`](class_bool.md)                                     | [`can_be_sampled`](#class_audiostream_method_can_be_sampled) ( ) const[^const]                                         |
-| [`AudioSample`](class_audiosample.md)                       | [`generate_sample`](#class_audiostream_method_generate_sample) ( ) const[^const]                                       |
-| [`float`](class_float.md)                                   | [`get_length`](#class_audiostream_method_get_length) ( ) const[^const]                                                 |
-| [`AudioStreamPlayback`](class_audiostreamplayback.md)       | [`instantiate_playback`](#class_audiostream_method_instantiate_playback) ( )                                           |
-| [`bool`](class_bool.md)                                     | [`is_meta_stream`](#class_audiostream_method_is_meta_stream) ( ) const[^const]                                         |
-| [`bool`](class_bool.md)                                     | [`is_monophonic`](#class_audiostream_method_is_monophonic) ( ) const[^const]                                           |
+| [`int`](class_int.md)                                       | [`_get_beat_count`](class_audiostreammd#class_audiostream_private_method__get_beat_count) ( ) virtual[^virtual] const[^const]             |
+| [`float`](class_float.md)                                   | [`_get_bpm`](class_audiostreammd#class_audiostream_private_method__get_bpm) ( ) virtual[^virtual] const[^const]                           |
+| [`float`](class_float.md)                                   | [`_get_length`](class_audiostreammd#class_audiostream_private_method__get_length) ( ) virtual[^virtual] const[^const]                     |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_get_parameter_list`](class_audiostreammd#class_audiostream_private_method__get_parameter_list) ( ) virtual[^virtual] const[^const]     |
+| [`String`](class_string.md)                                 | [`_get_stream_name`](class_audiostreammd#class_audiostream_private_method__get_stream_name) ( ) virtual[^virtual] const[^const]           |
+| [`AudioStreamPlayback`](class_audiostreamplayback.md)       | [`_instantiate_playback`](class_audiostreammd#class_audiostream_private_method__instantiate_playback) ( ) virtual[^virtual] const[^const] |
+| [`bool`](class_bool.md)                                     | [`_is_monophonic`](class_audiostreammd#class_audiostream_private_method__is_monophonic) ( ) virtual[^virtual] const[^const]               |
+| [`bool`](class_bool.md)                                     | [`can_be_sampled`](class_audiostreammd#class_audiostream_method_can_be_sampled) ( ) const[^const]                                         |
+| [`AudioSample`](class_audiosample.md)                       | [`generate_sample`](class_audiostreammd#class_audiostream_method_generate_sample) ( ) const[^const]                                       |
+| [`float`](class_float.md)                                   | [`get_length`](class_audiostreammd#class_audiostream_method_get_length) ( ) const[^const]                                                 |
+| [`AudioStreamPlayback`](class_audiostreamplayback.md)       | [`instantiate_playback`](class_audiostreammd#class_audiostream_method_instantiate_playback) ( )                                           |
+| [`bool`](class_bool.md)                                     | [`is_meta_stream`](class_audiostreammd#class_audiostream_method_is_meta_stream) ( ) const[^const]                                         |
+| [`bool`](class_bool.md)                                     | [`is_monophonic`](class_audiostreammd#class_audiostream_method_is_monophonic) ( ) const[^const]                                           |
 
 <!-- rst-class:: classref-section-separator -->
 

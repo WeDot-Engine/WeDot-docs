@@ -52,9 +52,9 @@ Light3D is the *abstract* base class for light nodes. As it can't be instantiate
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md) | [`get_correlated_color`](#class_light3d_method_get_correlated_color) ( ) const[^const]                                   |
-| [`float`](class_float.md) | [`get_param`](#class_light3d_method_get_param) ( param: [Param](#enum_light3d_param) ) const[^const]                     |
-| `void`                    | [`set_param`](#class_light3d_method_set_param) ( param: [Param](#enum_light3d_param), value: [`float`](class_float.md) ) |
+| [`Color`](class_color.md) | [`get_correlated_color`](class_light3dmd#class_light3d_method_get_correlated_color) ( ) const[^const]                                   |
+| [`float`](class_float.md) | [`get_param`](class_light3dmd#class_light3d_method_get_param) ( param: [Param](#enum_light3d_param) ) const[^const]                     |
+| `void`                    | [`set_param`](class_light3dmd#class_light3d_method_set_param) ( param: [Param](#enum_light3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

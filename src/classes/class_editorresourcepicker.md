@@ -32,10 +32,10 @@ This [`Control`](class_control.md) node is used in the editor's Inspector dock t
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                           | [`_handle_menu_selected`](#class_editorresourcepicker_private_method__handle_menu_selected) ( id: [`int`](class_int.md) ) virtual[^virtual]          |
-| `void`                                            | [`_set_create_options`](#class_editorresourcepicker_private_method__set_create_options) ( menu_node: [`Object`](class_object.md) ) virtual[^virtual] |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_allowed_types`](#class_editorresourcepicker_method_get_allowed_types) ( ) const[^const]                                                        |
-| `void`                                            | [`set_toggle_pressed`](#class_editorresourcepicker_method_set_toggle_pressed) ( pressed: [`bool`](class_bool.md) )                                   |
+| [`bool`](class_bool.md)                           | [`_handle_menu_selected`](class_editorresourcepickermd#class_editorresourcepicker_private_method__handle_menu_selected) ( id: [`int`](class_int.md) ) virtual[^virtual]          |
+| `void`                                            | [`_set_create_options`](class_editorresourcepickermd#class_editorresourcepicker_private_method__set_create_options) ( menu_node: [`Object`](class_object.md) ) virtual[^virtual] |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_allowed_types`](class_editorresourcepickermd#class_editorresourcepicker_method_get_allowed_types) ( ) const[^const]                                                        |
+| `void`                                            | [`set_toggle_pressed`](class_editorresourcepickermd#class_editorresourcepicker_method_set_toggle_pressed) ( pressed: [`bool`](class_bool.md) )                                   |
 
 <!-- rst-class:: classref-section-separator -->
 

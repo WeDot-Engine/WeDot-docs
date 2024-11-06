@@ -46,8 +46,8 @@ A physics joint that restricts the movement of a 3D physics body along an axis r
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_param`](#class_sliderjoint3d_method_get_param) ( param: [Param](#enum_sliderjoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_param`](#class_sliderjoint3d_method_set_param) ( param: [Param](#enum_sliderjoint3d_param), value: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_param`](class_sliderjoint3dmd#class_sliderjoint3d_method_get_param) ( param: [Param](#enum_sliderjoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_param`](class_sliderjoint3dmd#class_sliderjoint3d_method_set_param) ( param: [Param](#enum_sliderjoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

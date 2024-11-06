@@ -58,9 +58,9 @@ A node for displaying plain text in 3D space. By adjusting various properties of
 
 |||
 |:-:|:--|
-| [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](#class_label3d_method_generate_triangle_mesh) ( ) const[^const]                                              |
-| [`bool`](class_bool.md)                 | [`get_draw_flag`](#class_label3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags) ) const[^const]                     |
-| `void`                                  | [`set_draw_flag`](#class_label3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags), enabled: [`bool`](class_bool.md) ) |
+| [`TriangleMesh`](class_trianglemesh.md) | [`generate_triangle_mesh`](class_label3dmd#class_label3d_method_generate_triangle_mesh) ( ) const[^const]                                              |
+| [`bool`](class_bool.md)                 | [`get_draw_flag`](class_label3dmd#class_label3d_method_get_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags) ) const[^const]                     |
+| `void`                                  | [`set_draw_flag`](class_label3dmd#class_label3d_method_set_draw_flag) ( flag: [DrawFlags](#enum_label3d_drawflags), enabled: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

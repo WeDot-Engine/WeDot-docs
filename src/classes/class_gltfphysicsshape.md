@@ -31,12 +31,12 @@ Represents a physics shape as defined by the `OMI_physics_shape` or `OMI_collide
 
 |||
 |:-:|:--|
-| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_dictionary`](#class_gltfphysicsshape_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
-| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_node`](#class_gltfphysicsshape_method_from_node) ( shape_node: [`CollisionShape3D`](class_collisionshape3d.md) ) static[^static] |
-| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_resource`](#class_gltfphysicsshape_method_from_resource) ( shape_resource: [`Shape3D`](class_shape3d.md) ) static[^static]       |
-| [`Dictionary`](class_dictionary.md)             | [`to_dictionary`](#class_gltfphysicsshape_method_to_dictionary) ( ) const[^const]                                                       |
-| [`CollisionShape3D`](class_collisionshape3d.md) | [`to_node`](#class_gltfphysicsshape_method_to_node) ( cache_shapes: [`bool`](class_bool.md) = false )                                   |
-| [`Shape3D`](class_shape3d.md)                   | [`to_resource`](#class_gltfphysicsshape_method_to_resource) ( cache_shapes: [`bool`](class_bool.md) = false )                           |
+| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_dictionary`](class_gltfphysicsshapemd#class_gltfphysicsshape_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
+| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_node`](class_gltfphysicsshapemd#class_gltfphysicsshape_method_from_node) ( shape_node: [`CollisionShape3D`](class_collisionshape3d.md) ) static[^static] |
+| [`GLTFPhysicsShape`](class_gltfphysicsshape.md) | [`from_resource`](class_gltfphysicsshapemd#class_gltfphysicsshape_method_from_resource) ( shape_resource: [`Shape3D`](class_shape3d.md) ) static[^static]       |
+| [`Dictionary`](class_dictionary.md)             | [`to_dictionary`](class_gltfphysicsshapemd#class_gltfphysicsshape_method_to_dictionary) ( ) const[^const]                                                       |
+| [`CollisionShape3D`](class_collisionshape3d.md) | [`to_node`](class_gltfphysicsshapemd#class_gltfphysicsshape_method_to_node) ( cache_shapes: [`bool`](class_bool.md) = false )                                   |
+| [`Shape3D`](class_shape3d.md)                   | [`to_resource`](class_gltfphysicsshapemd#class_gltfphysicsshape_method_to_resource) ( cache_shapes: [`bool`](class_bool.md) = false )                           |
 
 <!-- rst-class:: classref-section-separator -->
 

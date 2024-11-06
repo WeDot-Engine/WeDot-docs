@@ -25,7 +25,7 @@ The primary benefit of **CubemapArray** s is that they can be accessed in shader
 
 |||
 |:-:|:--|
-| [`Resource`](class_resource.md) | [`create_placeholder`](#class_cubemaparray_method_create_placeholder) ( ) const[^const] |
+| [`Resource`](class_resource.md) | [`create_placeholder`](class_cubemaparraymd#class_cubemaparray_method_create_placeholder) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

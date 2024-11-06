@@ -21,15 +21,15 @@ A stream peer that handles TCP connections. This object can be used to connect t
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)    | [`bind`](#class_streampeertcp_method_bind) ( port: [`int`](class_int.md), host: [`String`](class_string.md) = "*" )                 |
-| [Error](#enum_@globalscope_error)    | [`connect_to_host`](#class_streampeertcp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) ) |
-| `void`                               | [`disconnect_from_host`](#class_streampeertcp_method_disconnect_from_host) ( )                                                      |
-| [`String`](class_string.md)          | [`get_connected_host`](#class_streampeertcp_method_get_connected_host) ( ) const[^const]                                            |
-| [`int`](class_int.md)                | [`get_connected_port`](#class_streampeertcp_method_get_connected_port) ( ) const[^const]                                            |
-| [`int`](class_int.md)                | [`get_local_port`](#class_streampeertcp_method_get_local_port) ( ) const[^const]                                                    |
-| [Status](#enum_streampeertcp_status) | [`get_status`](#class_streampeertcp_method_get_status) ( ) const[^const]                                                            |
-| [Error](#enum_@globalscope_error)    | [`poll`](#class_streampeertcp_method_poll) ( )                                                                                      |
-| `void`                               | [`set_no_delay`](#class_streampeertcp_method_set_no_delay) ( enabled: [`bool`](class_bool.md) )                                     |
+| [Error](#enum_@globalscope_error)    | [`bind`](class_streampeertcpmd#class_streampeertcp_method_bind) ( port: [`int`](class_int.md), host: [`String`](class_string.md) = "*" )                 |
+| [Error](#enum_@globalscope_error)    | [`connect_to_host`](class_streampeertcpmd#class_streampeertcp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) ) |
+| `void`                               | [`disconnect_from_host`](class_streampeertcpmd#class_streampeertcp_method_disconnect_from_host) ( )                                                      |
+| [`String`](class_string.md)          | [`get_connected_host`](class_streampeertcpmd#class_streampeertcp_method_get_connected_host) ( ) const[^const]                                            |
+| [`int`](class_int.md)                | [`get_connected_port`](class_streampeertcpmd#class_streampeertcp_method_get_connected_port) ( ) const[^const]                                            |
+| [`int`](class_int.md)                | [`get_local_port`](class_streampeertcpmd#class_streampeertcp_method_get_local_port) ( ) const[^const]                                                    |
+| [Status](#enum_streampeertcp_status) | [`get_status`](class_streampeertcpmd#class_streampeertcp_method_get_status) ( ) const[^const]                                                            |
+| [Error](#enum_@globalscope_error)    | [`poll`](class_streampeertcpmd#class_streampeertcp_method_poll) ( )                                                                                      |
+| `void`                               | [`set_no_delay`](class_streampeertcpmd#class_streampeertcp_method_set_no_delay) ( enabled: [`bool`](class_bool.md) )                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

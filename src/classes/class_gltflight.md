@@ -30,12 +30,12 @@ Represents a light as defined by the `KHR_lights_punctual` GLTF extension.
 
 |||
 |:-:|:--|
-| [`GLTFLight`](class_gltflight.md)   | [`from_dictionary`](#class_gltflight_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]                                             |
-| [`GLTFLight`](class_gltflight.md)   | [`from_node`](#class_gltflight_method_from_node) ( light_node: [`Light3D`](class_light3d.md) ) static[^static]                                                               |
-| [`Variant`](class_variant.md)       | [`get_additional_data`](#class_gltflight_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                              | [`set_additional_data`](#class_gltflight_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
-| [`Dictionary`](class_dictionary.md) | [`to_dictionary`](#class_gltflight_method_to_dictionary) ( ) const[^const]                                                                                                   |
-| [`Light3D`](class_light3d.md)       | [`to_node`](#class_gltflight_method_to_node) ( ) const[^const]                                                                                                               |
+| [`GLTFLight`](class_gltflight.md)   | [`from_dictionary`](class_gltflightmd#class_gltflight_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]                                             |
+| [`GLTFLight`](class_gltflight.md)   | [`from_node`](class_gltflightmd#class_gltflight_method_from_node) ( light_node: [`Light3D`](class_light3d.md) ) static[^static]                                                               |
+| [`Variant`](class_variant.md)       | [`get_additional_data`](class_gltflightmd#class_gltflight_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| `void`                              | [`set_additional_data`](class_gltflightmd#class_gltflight_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+| [`Dictionary`](class_dictionary.md) | [`to_dictionary`](class_gltflightmd#class_gltflight_method_to_dictionary) ( ) const[^const]                                                                                                   |
+| [`Light3D`](class_light3d.md)       | [`to_node`](class_gltflightmd#class_gltflight_method_to_node) ( ) const[^const]                                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 

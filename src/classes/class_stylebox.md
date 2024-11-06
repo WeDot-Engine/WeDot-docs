@@ -32,19 +32,19 @@ Abstract base class for defining stylized boxes for UI elements.
 
 |||
 |:-:|:--|
-| `void`                              | [`_draw`](#class_stylebox_private_method__draw) ( to_canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]          |
-| [`Rect2`](class_rect2.md)           | [`_get_draw_rect`](#class_stylebox_private_method__get_draw_rect) ( rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]                               |
-| [`Vector2`](class_vector2.md)       | [`_get_minimum_size`](#class_stylebox_private_method__get_minimum_size) ( ) virtual[^virtual] const[^const]                                                         |
-| [`bool`](class_bool.md)             | [`_test_mask`](#class_stylebox_private_method__test_mask) ( point: [`Vector2`](class_vector2.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const] |
-| `void`                              | [`draw`](#class_stylebox_method_draw) ( canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) const[^const]                                         |
-| [`float`](class_float.md)           | [`get_content_margin`](#class_stylebox_method_get_content_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                         |
-| [`CanvasItem`](class_canvasitem.md) | [`get_current_item_drawn`](#class_stylebox_method_get_current_item_drawn) ( ) const[^const]                                                                         |
-| [`float`](class_float.md)           | [`get_margin`](#class_stylebox_method_get_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                                         |
-| [`Vector2`](class_vector2.md)       | [`get_minimum_size`](#class_stylebox_method_get_minimum_size) ( ) const[^const]                                                                                     |
-| [`Vector2`](class_vector2.md)       | [`get_offset`](#class_stylebox_method_get_offset) ( ) const[^const]                                                                                                 |
-| `void`                              | [`set_content_margin`](#class_stylebox_method_set_content_margin) ( margin: [Side](#enum_@globalscope_side), offset: [`float`](class_float.md) )                    |
-| `void`                              | [`set_content_margin_all`](#class_stylebox_method_set_content_margin_all) ( offset: [`float`](class_float.md) )                                                     |
-| [`bool`](class_bool.md)             | [`test_mask`](#class_stylebox_method_test_mask) ( point: [`Vector2`](class_vector2.md), rect: [`Rect2`](class_rect2.md) ) const[^const]                             |
+| `void`                              | [`_draw`](class_styleboxmd#class_stylebox_private_method__draw) ( to_canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]          |
+| [`Rect2`](class_rect2.md)           | [`_get_draw_rect`](class_styleboxmd#class_stylebox_private_method__get_draw_rect) ( rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const]                               |
+| [`Vector2`](class_vector2.md)       | [`_get_minimum_size`](class_styleboxmd#class_stylebox_private_method__get_minimum_size) ( ) virtual[^virtual] const[^const]                                                         |
+| [`bool`](class_bool.md)             | [`_test_mask`](class_styleboxmd#class_stylebox_private_method__test_mask) ( point: [`Vector2`](class_vector2.md), rect: [`Rect2`](class_rect2.md) ) virtual[^virtual] const[^const] |
+| `void`                              | [`draw`](class_styleboxmd#class_stylebox_method_draw) ( canvas_item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md) ) const[^const]                                         |
+| [`float`](class_float.md)           | [`get_content_margin`](class_styleboxmd#class_stylebox_method_get_content_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                         |
+| [`CanvasItem`](class_canvasitem.md) | [`get_current_item_drawn`](class_styleboxmd#class_stylebox_method_get_current_item_drawn) ( ) const[^const]                                                                         |
+| [`float`](class_float.md)           | [`get_margin`](class_styleboxmd#class_stylebox_method_get_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                                         |
+| [`Vector2`](class_vector2.md)       | [`get_minimum_size`](class_styleboxmd#class_stylebox_method_get_minimum_size) ( ) const[^const]                                                                                     |
+| [`Vector2`](class_vector2.md)       | [`get_offset`](class_styleboxmd#class_stylebox_method_get_offset) ( ) const[^const]                                                                                                 |
+| `void`                              | [`set_content_margin`](class_styleboxmd#class_stylebox_method_set_content_margin) ( margin: [Side](#enum_@globalscope_side), offset: [`float`](class_float.md) )                    |
+| `void`                              | [`set_content_margin_all`](class_styleboxmd#class_stylebox_method_set_content_margin_all) ( offset: [`float`](class_float.md) )                                                     |
+| [`bool`](class_bool.md)             | [`test_mask`](class_styleboxmd#class_stylebox_method_test_mask) ( point: [`Vector2`](class_vector2.md), rect: [`Rect2`](class_rect2.md) ) const[^const]                             |
 
 <!-- rst-class:: classref-section-separator -->
 

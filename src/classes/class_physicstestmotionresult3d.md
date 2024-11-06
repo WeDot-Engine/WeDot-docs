@@ -19,20 +19,20 @@ Describes the motion and collision result from [`PhysicsServer3D.body_test_motio
 
 |||
 |:-:|:--|
-| [`Object`](class_object.md)   | [`get_collider`](#class_physicstestmotionresult3d_method_get_collider) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                           |
-| [`int`](class_int.md)         | [`get_collider_id`](#class_physicstestmotionresult3d_method_get_collider_id) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                     |
-| [`RID`](class_rid.md)         | [`get_collider_rid`](#class_physicstestmotionresult3d_method_get_collider_rid) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                   |
-| [`int`](class_int.md)         | [`get_collider_shape`](#class_physicstestmotionresult3d_method_get_collider_shape) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]               |
-| [`Vector3`](class_vector3.md) | [`get_collider_velocity`](#class_physicstestmotionresult3d_method_get_collider_velocity) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]         |
-| [`int`](class_int.md)         | [`get_collision_count`](#class_physicstestmotionresult3d_method_get_collision_count) ( ) const[^const]                                                        |
-| [`float`](class_float.md)     | [`get_collision_depth`](#class_physicstestmotionresult3d_method_get_collision_depth) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]             |
-| [`int`](class_int.md)         | [`get_collision_local_shape`](#class_physicstestmotionresult3d_method_get_collision_local_shape) ( collision_index: [`int`](class_int.md) = 0 ) const[^const] |
-| [`Vector3`](class_vector3.md) | [`get_collision_normal`](#class_physicstestmotionresult3d_method_get_collision_normal) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]           |
-| [`Vector3`](class_vector3.md) | [`get_collision_point`](#class_physicstestmotionresult3d_method_get_collision_point) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]             |
-| [`float`](class_float.md)     | [`get_collision_safe_fraction`](#class_physicstestmotionresult3d_method_get_collision_safe_fraction) ( ) const[^const]                                        |
-| [`float`](class_float.md)     | [`get_collision_unsafe_fraction`](#class_physicstestmotionresult3d_method_get_collision_unsafe_fraction) ( ) const[^const]                                    |
-| [`Vector3`](class_vector3.md) | [`get_remainder`](#class_physicstestmotionresult3d_method_get_remainder) ( ) const[^const]                                                                    |
-| [`Vector3`](class_vector3.md) | [`get_travel`](#class_physicstestmotionresult3d_method_get_travel) ( ) const[^const]                                                                          |
+| [`Object`](class_object.md)   | [`get_collider`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collider) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                           |
+| [`int`](class_int.md)         | [`get_collider_id`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collider_id) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                     |
+| [`RID`](class_rid.md)         | [`get_collider_rid`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collider_rid) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]                   |
+| [`int`](class_int.md)         | [`get_collider_shape`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collider_shape) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]               |
+| [`Vector3`](class_vector3.md) | [`get_collider_velocity`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collider_velocity) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]         |
+| [`int`](class_int.md)         | [`get_collision_count`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collision_count) ( ) const[^const]                                                        |
+| [`float`](class_float.md)     | [`get_collision_depth`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collision_depth) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]             |
+| [`int`](class_int.md)         | [`get_collision_local_shape`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collision_local_shape) ( collision_index: [`int`](class_int.md) = 0 ) const[^const] |
+| [`Vector3`](class_vector3.md) | [`get_collision_normal`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collision_normal) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]           |
+| [`Vector3`](class_vector3.md) | [`get_collision_point`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collision_point) ( collision_index: [`int`](class_int.md) = 0 ) const[^const]             |
+| [`float`](class_float.md)     | [`get_collision_safe_fraction`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collision_safe_fraction) ( ) const[^const]                                        |
+| [`float`](class_float.md)     | [`get_collision_unsafe_fraction`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_collision_unsafe_fraction) ( ) const[^const]                                    |
+| [`Vector3`](class_vector3.md) | [`get_remainder`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_remainder) ( ) const[^const]                                                                    |
+| [`Vector3`](class_vector3.md) | [`get_travel`](class_physicstestmotionresult3dmd#class_physicstestmotionresult3d_method_get_travel) ( ) const[^const]                                                                          |
 
 <!-- rst-class:: classref-section-separator -->
 

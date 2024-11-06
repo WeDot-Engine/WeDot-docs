@@ -33,39 +33,39 @@ It uses floating-point coordinates. The 2D counterpart to **AABB** is [`Rect2`](
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( )                                                                              |
-| [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( from: [`AABB`](class_aabb.md) )                                                |
-| [`AABB`](class_aabb.md) | [`AABB`](#class_aabb_constructor_aabb) ( position: [`Vector3`](class_vector3.md), size: [`Vector3`](class_vector3.md) ) |
+| [`AABB`](class_aabb.md) | [`AABB`](class_aabb.md#class_aabb_constructor_aabb) ( )                                                                              |
+| [`AABB`](class_aabb.md) | [`AABB`](class_aabb.md#class_aabb_constructor_aabb) ( from: [`AABB`](class_aabb.md) )                                                |
+| [`AABB`](class_aabb.md) | [`AABB`](class_aabb.md#class_aabb_constructor_aabb) ( position: [`Vector3`](class_vector3.md), size: [`Vector3`](class_vector3.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md)       | [`abs`](#class_aabb_method_abs) ( ) const[^const]                                                                                                      |
-| [`bool`](class_bool.md)       | [`encloses`](#class_aabb_method_encloses) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                              |
-| [`AABB`](class_aabb.md)       | [`expand`](#class_aabb_method_expand) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                        |
-| [`Vector3`](class_vector3.md) | [`get_center`](#class_aabb_method_get_center) ( ) const[^const]                                                                                        |
-| [`Vector3`](class_vector3.md) | [`get_endpoint`](#class_aabb_method_get_endpoint) ( idx: [`int`](class_int.md) ) const[^const]                                                         |
-| [`Vector3`](class_vector3.md) | [`get_longest_axis`](#class_aabb_method_get_longest_axis) ( ) const[^const]                                                                            |
-| [`int`](class_int.md)         | [`get_longest_axis_index`](#class_aabb_method_get_longest_axis_index) ( ) const[^const]                                                                |
-| [`float`](class_float.md)     | [`get_longest_axis_size`](#class_aabb_method_get_longest_axis_size) ( ) const[^const]                                                                  |
-| [`Vector3`](class_vector3.md) | [`get_shortest_axis`](#class_aabb_method_get_shortest_axis) ( ) const[^const]                                                                          |
-| [`int`](class_int.md)         | [`get_shortest_axis_index`](#class_aabb_method_get_shortest_axis_index) ( ) const[^const]                                                              |
-| [`float`](class_float.md)     | [`get_shortest_axis_size`](#class_aabb_method_get_shortest_axis_size) ( ) const[^const]                                                                |
-| [`Vector3`](class_vector3.md) | [`get_support`](#class_aabb_method_get_support) ( dir: [`Vector3`](class_vector3.md) ) const[^const]                                                   |
-| [`float`](class_float.md)     | [`get_volume`](#class_aabb_method_get_volume) ( ) const[^const]                                                                                        |
-| [`AABB`](class_aabb.md)       | [`grow`](#class_aabb_method_grow) ( by: [`float`](class_float.md) ) const[^const]                                                                      |
-| [`bool`](class_bool.md)       | [`has_point`](#class_aabb_method_has_point) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                     |
-| [`bool`](class_bool.md)       | [`has_surface`](#class_aabb_method_has_surface) ( ) const[^const]                                                                                      |
-| [`bool`](class_bool.md)       | [`has_volume`](#class_aabb_method_has_volume) ( ) const[^const]                                                                                        |
-| [`AABB`](class_aabb.md)       | [`intersection`](#class_aabb_method_intersection) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                      |
-| [`bool`](class_bool.md)       | [`intersects`](#class_aabb_method_intersects) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                          |
-| [`bool`](class_bool.md)       | [`intersects_plane`](#class_aabb_method_intersects_plane) ( plane: [`Plane`](class_plane.md) ) const[^const]                                           |
-| [`Variant`](class_variant.md) | [`intersects_ray`](#class_aabb_method_intersects_ray) ( from: [`Vector3`](class_vector3.md), dir: [`Vector3`](class_vector3.md) ) const[^const]        |
-| [`Variant`](class_variant.md) | [`intersects_segment`](#class_aabb_method_intersects_segment) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md) ) const[^const] |
-| [`bool`](class_bool.md)       | [`is_equal_approx`](#class_aabb_method_is_equal_approx) ( aabb: [`AABB`](class_aabb.md) ) const[^const]                                                |
-| [`bool`](class_bool.md)       | [`is_finite`](#class_aabb_method_is_finite) ( ) const[^const]                                                                                          |
-| [`AABB`](class_aabb.md)       | [`merge`](#class_aabb_method_merge) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                                    |
+| [`AABB`](class_aabb.md)       | [`abs`](class_aabbmd#class_aabb_method_abs) ( ) const[^const]                                                                                                      |
+| [`bool`](class_bool.md)       | [`encloses`](class_aabbmd#class_aabb_method_encloses) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                              |
+| [`AABB`](class_aabb.md)       | [`expand`](class_aabbmd#class_aabb_method_expand) ( to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                        |
+| [`Vector3`](class_vector3.md) | [`get_center`](class_aabbmd#class_aabb_method_get_center) ( ) const[^const]                                                                                        |
+| [`Vector3`](class_vector3.md) | [`get_endpoint`](class_aabbmd#class_aabb_method_get_endpoint) ( idx: [`int`](class_int.md) ) const[^const]                                                         |
+| [`Vector3`](class_vector3.md) | [`get_longest_axis`](class_aabbmd#class_aabb_method_get_longest_axis) ( ) const[^const]                                                                            |
+| [`int`](class_int.md)         | [`get_longest_axis_index`](class_aabbmd#class_aabb_method_get_longest_axis_index) ( ) const[^const]                                                                |
+| [`float`](class_float.md)     | [`get_longest_axis_size`](class_aabbmd#class_aabb_method_get_longest_axis_size) ( ) const[^const]                                                                  |
+| [`Vector3`](class_vector3.md) | [`get_shortest_axis`](class_aabbmd#class_aabb_method_get_shortest_axis) ( ) const[^const]                                                                          |
+| [`int`](class_int.md)         | [`get_shortest_axis_index`](class_aabbmd#class_aabb_method_get_shortest_axis_index) ( ) const[^const]                                                              |
+| [`float`](class_float.md)     | [`get_shortest_axis_size`](class_aabbmd#class_aabb_method_get_shortest_axis_size) ( ) const[^const]                                                                |
+| [`Vector3`](class_vector3.md) | [`get_support`](class_aabbmd#class_aabb_method_get_support) ( dir: [`Vector3`](class_vector3.md) ) const[^const]                                                   |
+| [`float`](class_float.md)     | [`get_volume`](class_aabbmd#class_aabb_method_get_volume) ( ) const[^const]                                                                                        |
+| [`AABB`](class_aabb.md)       | [`grow`](class_aabbmd#class_aabb_method_grow) ( by: [`float`](class_float.md) ) const[^const]                                                                      |
+| [`bool`](class_bool.md)       | [`has_point`](class_aabbmd#class_aabb_method_has_point) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                     |
+| [`bool`](class_bool.md)       | [`has_surface`](class_aabbmd#class_aabb_method_has_surface) ( ) const[^const]                                                                                      |
+| [`bool`](class_bool.md)       | [`has_volume`](class_aabbmd#class_aabb_method_has_volume) ( ) const[^const]                                                                                        |
+| [`AABB`](class_aabb.md)       | [`intersection`](class_aabbmd#class_aabb_method_intersection) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                      |
+| [`bool`](class_bool.md)       | [`intersects`](class_aabbmd#class_aabb_method_intersects) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                          |
+| [`bool`](class_bool.md)       | [`intersects_plane`](class_aabbmd#class_aabb_method_intersects_plane) ( plane: [`Plane`](class_plane.md) ) const[^const]                                           |
+| [`Variant`](class_variant.md) | [`intersects_ray`](class_aabbmd#class_aabb_method_intersects_ray) ( from: [`Vector3`](class_vector3.md), dir: [`Vector3`](class_vector3.md) ) const[^const]        |
+| [`Variant`](class_variant.md) | [`intersects_segment`](class_aabbmd#class_aabb_method_intersects_segment) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md) ) const[^const] |
+| [`bool`](class_bool.md)       | [`is_equal_approx`](class_aabbmd#class_aabb_method_is_equal_approx) ( aabb: [`AABB`](class_aabb.md) ) const[^const]                                                |
+| [`bool`](class_bool.md)       | [`is_finite`](class_aabbmd#class_aabb_method_is_finite) ( ) const[^const]                                                                                          |
+| [`AABB`](class_aabb.md)       | [`merge`](class_aabbmd#class_aabb_method_merge) ( with: [`AABB`](class_aabb.md) ) const[^const]                                                                    |
 
 ## 运算符
 

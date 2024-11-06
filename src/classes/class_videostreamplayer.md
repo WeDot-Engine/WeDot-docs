@@ -39,12 +39,12 @@ Supported video formats are [*Ogg Theora*](https://www.theora.org/) (`.ogv`, [`V
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)         | [`get_stream_length`](#class_videostreamplayer_method_get_stream_length) ( ) const[^const] |
-| [`String`](class_string.md)       | [`get_stream_name`](#class_videostreamplayer_method_get_stream_name) ( ) const[^const]     |
-| [`Texture2D`](class_texture2d.md) | [`get_video_texture`](#class_videostreamplayer_method_get_video_texture) ( ) const[^const] |
-| [`bool`](class_bool.md)           | [`is_playing`](#class_videostreamplayer_method_is_playing) ( ) const[^const]               |
-| `void`                            | [`play`](#class_videostreamplayer_method_play) ( )                                         |
-| `void`                            | [`stop`](#class_videostreamplayer_method_stop) ( )                                         |
+| [`float`](class_float.md)         | [`get_stream_length`](class_videostreamplayermd#class_videostreamplayer_method_get_stream_length) ( ) const[^const] |
+| [`String`](class_string.md)       | [`get_stream_name`](class_videostreamplayermd#class_videostreamplayer_method_get_stream_name) ( ) const[^const]     |
+| [`Texture2D`](class_texture2d.md) | [`get_video_texture`](class_videostreamplayermd#class_videostreamplayer_method_get_video_texture) ( ) const[^const] |
+| [`bool`](class_bool.md)           | [`is_playing`](class_videostreamplayermd#class_videostreamplayer_method_is_playing) ( ) const[^const]               |
+| `void`                            | [`play`](class_videostreamplayermd#class_videostreamplayer_method_play) ( )                                         |
+| `void`                            | [`stop`](class_videostreamplayermd#class_videostreamplayer_method_stop) ( )                                         |
 
 <!-- rst-class:: classref-section-separator -->
 

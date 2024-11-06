@@ -45,9 +45,9 @@ To use an **EditorResourceConversionPlugin**, register it using the [`EditorPlug
 
 |||
 |:-:|:--|
-| [`Resource`](class_resource.md) | [`_convert`](#class_editorresourceconversionplugin_private_method__convert) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
-| [`String`](class_string.md)     | [`_converts_to`](#class_editorresourceconversionplugin_private_method__converts_to) ( ) virtual[^virtual] const[^const]                                   |
-| [`bool`](class_bool.md)         | [`_handles`](#class_editorresourceconversionplugin_private_method__handles) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
+| [`Resource`](class_resource.md) | [`_convert`](class_editorresourceconversionpluginmd#class_editorresourceconversionplugin_private_method__convert) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
+| [`String`](class_string.md)     | [`_converts_to`](class_editorresourceconversionpluginmd#class_editorresourceconversionplugin_private_method__converts_to) ( ) virtual[^virtual] const[^const]                                   |
+| [`bool`](class_bool.md)         | [`_handles`](class_editorresourceconversionpluginmd#class_editorresourceconversionplugin_private_method__handles) ( resource: [`Resource`](class_resource.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

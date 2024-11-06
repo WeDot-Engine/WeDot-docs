@@ -31,8 +31,8 @@ A node used for advanced animation transitions in an [`AnimationPlayer`](class_a
 
 |||
 |:-:|:--|
-| [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) | [`get_process_callback`](#class_animationtree_method_get_process_callback) ( ) const[^const]                                                                  |
-| `void`                                                                   | [`set_process_callback`](#class_animationtree_method_set_process_callback) ( mode: [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) ) |
+| [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) | [`get_process_callback`](class_animationtreemd#class_animationtree_method_get_process_callback) ( ) const[^const]                                                                  |
+| `void`                                                                   | [`set_process_callback`](class_animationtreemd#class_animationtree_method_set_process_callback) ( mode: [AnimationProcessCallback](#enum_animationtree_animationprocesscallback) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

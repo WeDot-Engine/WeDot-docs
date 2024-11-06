@@ -27,7 +27,7 @@ Base class for [`CompressedTexture2DArray`](class_compressedtexture2darray.md) a
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`load`](#class_compressedtexturelayered_method_load) ( path: [`String`](class_string.md) ) |
+| [Error](#enum_@globalscope_error) | [`load`](class_compressedtexturelayeredmd#class_compressedtexturelayered_method_load) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

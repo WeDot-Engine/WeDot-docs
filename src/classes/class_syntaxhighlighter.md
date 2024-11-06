@@ -23,13 +23,13 @@ Base class for syntax highlighters. Provides syntax highlighting data to a [`Tex
 
 |||
 |:-:|:--|
-| `void`                              | [`_clear_highlighting_cache`](#class_syntaxhighlighter_private_method__clear_highlighting_cache) ( ) virtual[^virtual]                                                   |
-| [`Dictionary`](class_dictionary.md) | [`_get_line_syntax_highlighting`](#class_syntaxhighlighter_private_method__get_line_syntax_highlighting) ( line: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
-| `void`                              | [`_update_cache`](#class_syntaxhighlighter_private_method__update_cache) ( ) virtual[^virtual]                                                                           |
-| `void`                              | [`clear_highlighting_cache`](#class_syntaxhighlighter_method_clear_highlighting_cache) ( )                                                                               |
-| [`Dictionary`](class_dictionary.md) | [`get_line_syntax_highlighting`](#class_syntaxhighlighter_method_get_line_syntax_highlighting) ( line: [`int`](class_int.md) )                                           |
-| [`TextEdit`](class_textedit.md)     | [`get_text_edit`](#class_syntaxhighlighter_method_get_text_edit) ( ) const[^const]                                                                                       |
-| `void`                              | [`update_cache`](#class_syntaxhighlighter_method_update_cache) ( )                                                                                                       |
+| `void`                              | [`_clear_highlighting_cache`](class_syntaxhighlightermd#class_syntaxhighlighter_private_method__clear_highlighting_cache) ( ) virtual[^virtual]                                                   |
+| [`Dictionary`](class_dictionary.md) | [`_get_line_syntax_highlighting`](class_syntaxhighlightermd#class_syntaxhighlighter_private_method__get_line_syntax_highlighting) ( line: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+| `void`                              | [`_update_cache`](class_syntaxhighlightermd#class_syntaxhighlighter_private_method__update_cache) ( ) virtual[^virtual]                                                                           |
+| `void`                              | [`clear_highlighting_cache`](class_syntaxhighlightermd#class_syntaxhighlighter_method_clear_highlighting_cache) ( )                                                                               |
+| [`Dictionary`](class_dictionary.md) | [`get_line_syntax_highlighting`](class_syntaxhighlightermd#class_syntaxhighlighter_method_get_line_syntax_highlighting) ( line: [`int`](class_int.md) )                                           |
+| [`TextEdit`](class_textedit.md)     | [`get_text_edit`](class_syntaxhighlightermd#class_syntaxhighlighter_method_get_text_edit) ( ) const[^const]                                                                                       |
+| `void`                              | [`update_cache`](class_syntaxhighlightermd#class_syntaxhighlighter_method_update_cache) ( )                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -31,8 +31,8 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 |||
 |:-:|:--|
-| [`ColorPicker`](class_colorpicker.md) | [`get_picker`](#class_colorpickerbutton_method_get_picker) ( ) |
-| [`PopupPanel`](class_popuppanel.md)   | [`get_popup`](#class_colorpickerbutton_method_get_popup) ( )   |
+| [`ColorPicker`](class_colorpicker.md) | [`get_picker`](class_colorpickerbuttonmd#class_colorpickerbutton_method_get_picker) ( ) |
+| [`PopupPanel`](class_popuppanel.md)   | [`get_popup`](class_colorpickerbuttonmd#class_colorpickerbutton_method_get_popup) ( )   |
 
 ## 主题属性
 

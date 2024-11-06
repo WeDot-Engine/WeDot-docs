@@ -31,13 +31,13 @@ If you need to encode to a different format or pipe a stream through third-party
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                        | [`_get_audio_mix_rate`](#class_moviewriter_private_method__get_audio_mix_rate) ( ) virtual[^virtual] const[^const]                                                                                     |
-| [SpeakerMode](#enum_audioserver_speakermode) | [`_get_audio_speaker_mode`](#class_moviewriter_private_method__get_audio_speaker_mode) ( ) virtual[^virtual] const[^const]                                                                             |
-| [`bool`](class_bool.md)                      | [`_handles_file`](#class_moviewriter_private_method__handles_file) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                               |
-| [Error](#enum_@globalscope_error)            | [`_write_begin`](#class_moviewriter_private_method__write_begin) ( movie_size: [`Vector2i`](class_vector2i.md), fps: [`int`](class_int.md), base_path: [`String`](class_string.md) ) virtual[^virtual] |
-| `void`                                       | [`_write_end`](#class_moviewriter_private_method__write_end) ( ) virtual[^virtual]                                                                                                                     |
-| [Error](#enum_@globalscope_error)            | [`_write_frame`](#class_moviewriter_private_method__write_frame) ( frame_image: [`Image`](class_image.md), audio_frame_block: `const void*` ) virtual[^virtual]                                        |
-| `void`                                       | [`add_writer`](#class_moviewriter_method_add_writer) ( writer: [`MovieWriter`](class_moviewriter.md) ) static[^static]                                                                                 |
+| [`int`](class_int.md)                        | [`_get_audio_mix_rate`](class_moviewritermd#class_moviewriter_private_method__get_audio_mix_rate) ( ) virtual[^virtual] const[^const]                                                                                     |
+| [SpeakerMode](#enum_audioserver_speakermode) | [`_get_audio_speaker_mode`](class_moviewritermd#class_moviewriter_private_method__get_audio_speaker_mode) ( ) virtual[^virtual] const[^const]                                                                             |
+| [`bool`](class_bool.md)                      | [`_handles_file`](class_moviewritermd#class_moviewriter_private_method__handles_file) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                               |
+| [Error](#enum_@globalscope_error)            | [`_write_begin`](class_moviewritermd#class_moviewriter_private_method__write_begin) ( movie_size: [`Vector2i`](class_vector2i.md), fps: [`int`](class_int.md), base_path: [`String`](class_string.md) ) virtual[^virtual] |
+| `void`                                       | [`_write_end`](class_moviewritermd#class_moviewriter_private_method__write_end) ( ) virtual[^virtual]                                                                                                                     |
+| [Error](#enum_@globalscope_error)            | [`_write_frame`](class_moviewritermd#class_moviewriter_private_method__write_frame) ( frame_image: [`Image`](class_image.md), audio_frame_block: `const void*` ) virtual[^virtual]                                        |
+| `void`                                       | [`add_writer`](class_moviewritermd#class_moviewriter_method_add_writer) ( writer: [`MovieWriter`](class_moviewriter.md) ) static[^static]                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 

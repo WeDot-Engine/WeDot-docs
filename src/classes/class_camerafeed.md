@@ -28,10 +28,10 @@ A camera feed gives you access to a single physical camera attached to your devi
 
 |||
 |:-:|:--|
-| [FeedDataType](#enum_camerafeed_feeddatatype) | [`get_datatype`](#class_camerafeed_method_get_datatype) ( ) const[^const] |
-| [`int`](class_int.md)                         | [`get_id`](#class_camerafeed_method_get_id) ( ) const[^const]             |
-| [`String`](class_string.md)                   | [`get_name`](#class_camerafeed_method_get_name) ( ) const[^const]         |
-| [FeedPosition](#enum_camerafeed_feedposition) | [`get_position`](#class_camerafeed_method_get_position) ( ) const[^const] |
+| [FeedDataType](#enum_camerafeed_feeddatatype) | [`get_datatype`](class_camerafeedmd#class_camerafeed_method_get_datatype) ( ) const[^const] |
+| [`int`](class_int.md)                         | [`get_id`](class_camerafeedmd#class_camerafeed_method_get_id) ( ) const[^const]             |
+| [`String`](class_string.md)                   | [`get_name`](class_camerafeedmd#class_camerafeed_method_get_name) ( ) const[^const]         |
+| [FeedPosition](#enum_camerafeed_feedposition) | [`get_position`](class_camerafeedmd#class_camerafeed_method_get_position) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

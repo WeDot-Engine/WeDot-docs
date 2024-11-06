@@ -27,7 +27,7 @@ A sequence of Ogg packets.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_length`](#class_oggpacketsequence_method_get_length) ( ) const[^const] |
+| [`float`](class_float.md) | [`get_length`](class_oggpacketsequencemd#class_oggpacketsequence_method_get_length) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

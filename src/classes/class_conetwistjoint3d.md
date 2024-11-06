@@ -29,8 +29,8 @@ A physics joint that connects two 3D physics bodies in a way that simulates a ba
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_param`](#class_conetwistjoint3d_method_get_param) ( param: [Param](#enum_conetwistjoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_param`](#class_conetwistjoint3d_method_set_param) ( param: [Param](#enum_conetwistjoint3d_param), value: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_param`](class_conetwistjoint3dmd#class_conetwistjoint3d_method_get_param) ( param: [Param](#enum_conetwistjoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_param`](class_conetwistjoint3dmd#class_conetwistjoint3d_method_set_param) ( param: [Param](#enum_conetwistjoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

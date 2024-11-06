@@ -28,8 +28,8 @@ A node that provides a [`Shape3D`](class_shape3d.md) to a [`CollisionObject3D`](
 
 |||
 |:-:|:--|
-| `void` | [`make_convex_from_siblings`](#class_collisionshape3d_method_make_convex_from_siblings) ( )                         |
-| `void` | [`resource_changed`](#class_collisionshape3d_method_resource_changed) ( resource: [`Resource`](class_resource.md) ) |
+| `void` | [`make_convex_from_siblings`](class_collisionshape3dmd#class_collisionshape3d_method_make_convex_from_siblings) ( )                         |
+| `void` | [`resource_changed`](class_collisionshape3dmd#class_collisionshape3d_method_resource_changed) ( resource: [`Resource`](class_resource.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -91,16 +91,16 @@ See also [`GPUParticles2D`](class_gpuparticles2d.md), which provides the same fu
 
 |||
 |:-:|:--|
-| `void`                    | [`convert_from_particles`](#class_cpuparticles2d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                        |
-| [`Curve`](class_curve.md) | [`get_param_curve`](#class_cpuparticles2d_method_get_param_curve) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                        |
-| [`float`](class_float.md) | [`get_param_max`](#class_cpuparticles2d_method_get_param_max) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                            |
-| [`float`](class_float.md) | [`get_param_min`](#class_cpuparticles2d_method_get_param_min) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                            |
-| [`bool`](class_bool.md)   | [`get_particle_flag`](#class_cpuparticles2d_method_get_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles2d_particleflags) ) const[^const]                    |
-| `void`                    | [`restart`](#class_cpuparticles2d_method_restart) ( )                                                                                                                         |
-| `void`                    | [`set_param_curve`](#class_cpuparticles2d_method_set_param_curve) ( param: [Parameter](#enum_cpuparticles2d_parameter), curve: [`Curve`](class_curve.md) )                    |
-| `void`                    | [`set_param_max`](#class_cpuparticles2d_method_set_param_max) ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )                        |
-| `void`                    | [`set_param_min`](#class_cpuparticles2d_method_set_param_min) ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )                        |
-| `void`                    | [`set_particle_flag`](#class_cpuparticles2d_method_set_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles2d_particleflags), enable: [`bool`](class_bool.md) ) |
+| `void`                    | [`convert_from_particles`](class_cpuparticles2dmd#class_cpuparticles2d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                        |
+| [`Curve`](class_curve.md) | [`get_param_curve`](class_cpuparticles2dmd#class_cpuparticles2d_method_get_param_curve) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                        |
+| [`float`](class_float.md) | [`get_param_max`](class_cpuparticles2dmd#class_cpuparticles2d_method_get_param_max) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                            |
+| [`float`](class_float.md) | [`get_param_min`](class_cpuparticles2dmd#class_cpuparticles2d_method_get_param_min) ( param: [Parameter](#enum_cpuparticles2d_parameter) ) const[^const]                                            |
+| [`bool`](class_bool.md)   | [`get_particle_flag`](class_cpuparticles2dmd#class_cpuparticles2d_method_get_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles2d_particleflags) ) const[^const]                    |
+| `void`                    | [`restart`](class_cpuparticles2dmd#class_cpuparticles2d_method_restart) ( )                                                                                                                         |
+| `void`                    | [`set_param_curve`](class_cpuparticles2dmd#class_cpuparticles2d_method_set_param_curve) ( param: [Parameter](#enum_cpuparticles2d_parameter), curve: [`Curve`](class_curve.md) )                    |
+| `void`                    | [`set_param_max`](class_cpuparticles2dmd#class_cpuparticles2d_method_set_param_max) ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )                        |
+| `void`                    | [`set_param_min`](class_cpuparticles2dmd#class_cpuparticles2d_method_set_param_min) ( param: [Parameter](#enum_cpuparticles2d_parameter), value: [`float`](class_float.md) )                        |
+| `void`                    | [`set_particle_flag`](class_cpuparticles2dmd#class_cpuparticles2d_method_set_particle_flag) ( particle_flag: [ParticleFlags](#enum_cpuparticles2d_particleflags), enable: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

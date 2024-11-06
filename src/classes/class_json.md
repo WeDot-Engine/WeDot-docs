@@ -71,12 +71,12 @@ Alternatively, you can parse strings using the static [`parse_string`](#class_js
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`get_error_line`](#class_json_method_get_error_line) ( ) const[^const]                                                                                                                                                                   |
-| [`String`](class_string.md)       | [`get_error_message`](#class_json_method_get_error_message) ( ) const[^const]                                                                                                                                                             |
-| [`String`](class_string.md)       | [`get_parsed_text`](#class_json_method_get_parsed_text) ( ) const[^const]                                                                                                                                                                 |
-| [Error](#enum_@globalscope_error) | [`parse`](#class_json_method_parse) ( json_text: [`String`](class_string.md), keep_text: [`bool`](class_bool.md) = false )                                                                                                                |
-| [`Variant`](class_variant.md)     | [`parse_string`](#class_json_method_parse_string) ( json_string: [`String`](class_string.md) ) static[^static]                                                                                                                            |
-| [`String`](class_string.md)       | [`stringify`](#class_json_method_stringify) ( data: [`Variant`](class_variant.md), indent: [`String`](class_string.md) = "", sort_keys: [`bool`](class_bool.md) = true, full_precision: [`bool`](class_bool.md) = false ) static[^static] |
+| [`int`](class_int.md)             | [`get_error_line`](class_jsonmd#class_json_method_get_error_line) ( ) const[^const]                                                                                                                                                                   |
+| [`String`](class_string.md)       | [`get_error_message`](class_jsonmd#class_json_method_get_error_message) ( ) const[^const]                                                                                                                                                             |
+| [`String`](class_string.md)       | [`get_parsed_text`](class_jsonmd#class_json_method_get_parsed_text) ( ) const[^const]                                                                                                                                                                 |
+| [Error](#enum_@globalscope_error) | [`parse`](class_jsonmd#class_json_method_parse) ( json_text: [`String`](class_string.md), keep_text: [`bool`](class_bool.md) = false )                                                                                                                |
+| [`Variant`](class_variant.md)     | [`parse_string`](class_jsonmd#class_json_method_parse_string) ( json_string: [`String`](class_string.md) ) static[^static]                                                                                                                            |
+| [`String`](class_string.md)       | [`stringify`](class_jsonmd#class_json_method_stringify) ( data: [`Variant`](class_variant.md), indent: [`String`](class_string.md) = "", sort_keys: [`bool`](class_bool.md) = true, full_precision: [`bool`](class_bool.md) = false ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 

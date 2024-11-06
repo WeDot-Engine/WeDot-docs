@@ -31,7 +31,7 @@ It can be set to update another Node's position, rotation and/or scale. It can u
 
 |||
 |:-:|:--|
-| `void` | [`force_update_cache`](#class_remotetransform3d_method_force_update_cache) ( ) |
+| `void` | [`force_update_cache`](class_remotetransform3dmd#class_remotetransform3d_method_force_update_cache) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 

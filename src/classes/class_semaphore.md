@@ -27,9 +27,9 @@ A synchronization semaphore that can be used to synchronize multiple [`Thread`](
 
 |||
 |:-:|:--|
-| `void`                  | [`post`](#class_semaphore_method_post) ( )         |
-| [`bool`](class_bool.md) | [`try_wait`](#class_semaphore_method_try_wait) ( ) |
-| `void`                  | [`wait`](#class_semaphore_method_wait) ( )         |
+| `void`                  | [`post`](class_semaphoremd#class_semaphore_method_post) ( )         |
+| [`bool`](class_bool.md) | [`try_wait`](class_semaphoremd#class_semaphore_method_try_wait) ( ) |
+| `void`                  | [`wait`](class_semaphoremd#class_semaphore_method_wait) ( )         |
 
 <!-- rst-class:: classref-section-separator -->
 

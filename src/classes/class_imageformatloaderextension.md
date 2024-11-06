@@ -21,10 +21,10 @@ Be sure to respect the documented return types and values. You should create an 
 
 |||
 |:-:|:--|
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](#class_imageformatloaderextension_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                                    |
-| [Error](#enum_@globalscope_error)                 | [`_load_image`](#class_imageformatloaderextension_private_method__load_image) ( image: [`Image`](class_image.md), fileaccess: [`FileAccess`](class_fileaccess.md), flags: [LoaderFlags](#enum_imageformatloader_loaderflags), scale: [`float`](class_float.md) ) virtual[^virtual] |
-| `void`                                            | [`add_format_loader`](#class_imageformatloaderextension_method_add_format_loader) ( )                                                                                                                                                                                              |
-| `void`                                            | [`remove_format_loader`](#class_imageformatloaderextension_method_remove_format_loader) ( )                                                                                                                                                                                        |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](class_imageformatloaderextensionmd#class_imageformatloaderextension_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                                    |
+| [Error](#enum_@globalscope_error)                 | [`_load_image`](class_imageformatloaderextensionmd#class_imageformatloaderextension_private_method__load_image) ( image: [`Image`](class_image.md), fileaccess: [`FileAccess`](class_fileaccess.md), flags: [LoaderFlags](#enum_imageformatloader_loaderflags), scale: [`float`](class_float.md) ) virtual[^virtual] |
+| `void`                                            | [`add_format_loader`](class_imageformatloaderextensionmd#class_imageformatloaderextension_method_add_format_loader) ( )                                                                                                                                                                                              |
+| `void`                                            | [`remove_format_loader`](class_imageformatloaderextensionmd#class_imageformatloaderextension_method_remove_format_loader) ( )                                                                                                                                                                                        |
 
 <!-- rst-class:: classref-section-separator -->
 

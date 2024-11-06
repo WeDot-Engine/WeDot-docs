@@ -45,9 +45,9 @@ The above **PCKPacker** creates package `test.pck`, then adds a file named `text
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`add_file`](#class_pckpacker_method_add_file) ( pck_path: [`String`](class_string.md), source_path: [`String`](class_string.md), encrypt: [`bool`](class_bool.md) = false )                                                                                                                 |
-| [Error](#enum_@globalscope_error) | [`flush`](#class_pckpacker_method_flush) ( verbose: [`bool`](class_bool.md) = false )                                                                                                                                                                                                        |
-| [Error](#enum_@globalscope_error) | [`pck_start`](#class_pckpacker_method_pck_start) ( pck_name: [`String`](class_string.md), alignment: [`int`](class_int.md) = 32, key: [`String`](class_string.md) = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory: [`bool`](class_bool.md) = false ) |
+| [Error](#enum_@globalscope_error) | [`add_file`](class_pckpackermd#class_pckpacker_method_add_file) ( pck_path: [`String`](class_string.md), source_path: [`String`](class_string.md), encrypt: [`bool`](class_bool.md) = false )                                                                                                                 |
+| [Error](#enum_@globalscope_error) | [`flush`](class_pckpackermd#class_pckpacker_method_flush) ( verbose: [`bool`](class_bool.md) = false )                                                                                                                                                                                                        |
+| [Error](#enum_@globalscope_error) | [`pck_start`](class_pckpackermd#class_pckpacker_method_pck_start) ( pck_name: [`String`](class_string.md), alignment: [`int`](class_int.md) = 32, key: [`String`](class_string.md) = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory: [`bool`](class_bool.md) = false ) |
 
 <!-- rst-class:: classref-section-separator -->
 

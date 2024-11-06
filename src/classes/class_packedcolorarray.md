@@ -23,35 +23,35 @@ An array specifically designed to hold [`Color`](class_color.md). Packs data tig
 
 |||
 |:-:|:--|
-| [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](#class_packedcolorarray_constructor_packedcolorarray) ( )                                                       |
-| [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](#class_packedcolorarray_constructor_packedcolorarray) ( from: [`PackedColorArray`](class_packedcolorarray.md) ) |
-| [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](#class_packedcolorarray_constructor_packedcolorarray) ( from: [`Array`](class_array.md) )                       |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](class_packedcolorarray.md#class_packedcolorarray_constructor_packedcolorarray) ( )                                                       |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](class_packedcolorarray.md#class_packedcolorarray_constructor_packedcolorarray) ( from: [`PackedColorArray`](class_packedcolorarray.md) ) |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`PackedColorArray`](class_packedcolorarray.md#class_packedcolorarray_constructor_packedcolorarray) ( from: [`Array`](class_array.md) )                       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                         | [`append`](#class_packedcolorarray_method_append) ( value: [`Color`](class_color.md) )                                                  |
-| `void`                                          | [`append_array`](#class_packedcolorarray_method_append_array) ( array: [`PackedColorArray`](class_packedcolorarray.md) )                |
-| [`int`](class_int.md)                           | [`bsearch`](#class_packedcolorarray_method_bsearch) ( value: [`Color`](class_color.md), before: [`bool`](class_bool.md) = true )        |
-| `void`                                          | [`clear`](#class_packedcolorarray_method_clear) ( )                                                                                     |
-| [`int`](class_int.md)                           | [`count`](#class_packedcolorarray_method_count) ( value: [`Color`](class_color.md) ) const[^const]                                      |
-| [`PackedColorArray`](class_packedcolorarray.md) | [`duplicate`](#class_packedcolorarray_method_duplicate) ( )                                                                             |
-| `void`                                          | [`fill`](#class_packedcolorarray_method_fill) ( value: [`Color`](class_color.md) )                                                      |
-| [`int`](class_int.md)                           | [`find`](#class_packedcolorarray_method_find) ( value: [`Color`](class_color.md), from: [`int`](class_int.md) = 0 ) const[^const]       |
-| [`bool`](class_bool.md)                         | [`has`](#class_packedcolorarray_method_has) ( value: [`Color`](class_color.md) ) const[^const]                                          |
-| [`int`](class_int.md)                           | [`insert`](#class_packedcolorarray_method_insert) ( at_index: [`int`](class_int.md), value: [`Color`](class_color.md) )                 |
-| [`bool`](class_bool.md)                         | [`is_empty`](#class_packedcolorarray_method_is_empty) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)                         | [`push_back`](#class_packedcolorarray_method_push_back) ( value: [`Color`](class_color.md) )                                            |
-| `void`                                          | [`remove_at`](#class_packedcolorarray_method_remove_at) ( index: [`int`](class_int.md) )                                                |
-| [`int`](class_int.md)                           | [`resize`](#class_packedcolorarray_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
-| `void`                                          | [`reverse`](#class_packedcolorarray_method_reverse) ( )                                                                                 |
-| [`int`](class_int.md)                           | [`rfind`](#class_packedcolorarray_method_rfind) ( value: [`Color`](class_color.md), from: [`int`](class_int.md) = -1 ) const[^const]    |
-| `void`                                          | [`set`](#class_packedcolorarray_method_set) ( index: [`int`](class_int.md), value: [`Color`](class_color.md) )                          |
-| [`int`](class_int.md)                           | [`size`](#class_packedcolorarray_method_size) ( ) const[^const]                                                                         |
-| [`PackedColorArray`](class_packedcolorarray.md) | [`slice`](#class_packedcolorarray_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
-| `void`                                          | [`sort`](#class_packedcolorarray_method_sort) ( )                                                                                       |
-| [`PackedByteArray`](class_packedbytearray.md)   | [`to_byte_array`](#class_packedcolorarray_method_to_byte_array) ( ) const[^const]                                                       |
+| [`bool`](class_bool.md)                         | [`append`](class_packedcolorarraymd#class_packedcolorarray_method_append) ( value: [`Color`](class_color.md) )                                                  |
+| `void`                                          | [`append_array`](class_packedcolorarraymd#class_packedcolorarray_method_append_array) ( array: [`PackedColorArray`](class_packedcolorarray.md) )                |
+| [`int`](class_int.md)                           | [`bsearch`](class_packedcolorarraymd#class_packedcolorarray_method_bsearch) ( value: [`Color`](class_color.md), before: [`bool`](class_bool.md) = true )        |
+| `void`                                          | [`clear`](class_packedcolorarraymd#class_packedcolorarray_method_clear) ( )                                                                                     |
+| [`int`](class_int.md)                           | [`count`](class_packedcolorarraymd#class_packedcolorarray_method_count) ( value: [`Color`](class_color.md) ) const[^const]                                      |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`duplicate`](class_packedcolorarraymd#class_packedcolorarray_method_duplicate) ( )                                                                             |
+| `void`                                          | [`fill`](class_packedcolorarraymd#class_packedcolorarray_method_fill) ( value: [`Color`](class_color.md) )                                                      |
+| [`int`](class_int.md)                           | [`find`](class_packedcolorarraymd#class_packedcolorarray_method_find) ( value: [`Color`](class_color.md), from: [`int`](class_int.md) = 0 ) const[^const]       |
+| [`bool`](class_bool.md)                         | [`has`](class_packedcolorarraymd#class_packedcolorarray_method_has) ( value: [`Color`](class_color.md) ) const[^const]                                          |
+| [`int`](class_int.md)                           | [`insert`](class_packedcolorarraymd#class_packedcolorarray_method_insert) ( at_index: [`int`](class_int.md), value: [`Color`](class_color.md) )                 |
+| [`bool`](class_bool.md)                         | [`is_empty`](class_packedcolorarraymd#class_packedcolorarray_method_is_empty) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)                         | [`push_back`](class_packedcolorarraymd#class_packedcolorarray_method_push_back) ( value: [`Color`](class_color.md) )                                            |
+| `void`                                          | [`remove_at`](class_packedcolorarraymd#class_packedcolorarray_method_remove_at) ( index: [`int`](class_int.md) )                                                |
+| [`int`](class_int.md)                           | [`resize`](class_packedcolorarraymd#class_packedcolorarray_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
+| `void`                                          | [`reverse`](class_packedcolorarraymd#class_packedcolorarray_method_reverse) ( )                                                                                 |
+| [`int`](class_int.md)                           | [`rfind`](class_packedcolorarraymd#class_packedcolorarray_method_rfind) ( value: [`Color`](class_color.md), from: [`int`](class_int.md) = -1 ) const[^const]    |
+| `void`                                          | [`set`](class_packedcolorarraymd#class_packedcolorarray_method_set) ( index: [`int`](class_int.md), value: [`Color`](class_color.md) )                          |
+| [`int`](class_int.md)                           | [`size`](class_packedcolorarraymd#class_packedcolorarray_method_size) ( ) const[^const]                                                                         |
+| [`PackedColorArray`](class_packedcolorarray.md) | [`slice`](class_packedcolorarraymd#class_packedcolorarray_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
+| `void`                                          | [`sort`](class_packedcolorarraymd#class_packedcolorarray_method_sort) ( )                                                                                       |
+| [`PackedByteArray`](class_packedbytearray.md)   | [`to_byte_array`](class_packedcolorarraymd#class_packedcolorarray_method_to_byte_array) ( ) const[^const]                                                       |
 
 ## 运算符
 

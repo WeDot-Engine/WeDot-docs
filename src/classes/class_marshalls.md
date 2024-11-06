@@ -19,12 +19,12 @@ Provides data transformation and encoding utility functions.
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`base64_to_raw`](#class_marshalls_method_base64_to_raw) ( base64_str: [`String`](class_string.md) )                                                         |
-| [`String`](class_string.md)                   | [`base64_to_utf8`](#class_marshalls_method_base64_to_utf8) ( base64_str: [`String`](class_string.md) )                                                       |
-| [`Variant`](class_variant.md)                 | [`base64_to_variant`](#class_marshalls_method_base64_to_variant) ( base64_str: [`String`](class_string.md), allow_objects: [`bool`](class_bool.md) = false ) |
-| [`String`](class_string.md)                   | [`raw_to_base64`](#class_marshalls_method_raw_to_base64) ( array: [`PackedByteArray`](class_packedbytearray.md) )                                            |
-| [`String`](class_string.md)                   | [`utf8_to_base64`](#class_marshalls_method_utf8_to_base64) ( utf8_str: [`String`](class_string.md) )                                                         |
-| [`String`](class_string.md)                   | [`variant_to_base64`](#class_marshalls_method_variant_to_base64) ( variant: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false )   |
+| [`PackedByteArray`](class_packedbytearray.md) | [`base64_to_raw`](class_marshallsmd#class_marshalls_method_base64_to_raw) ( base64_str: [`String`](class_string.md) )                                                         |
+| [`String`](class_string.md)                   | [`base64_to_utf8`](class_marshallsmd#class_marshalls_method_base64_to_utf8) ( base64_str: [`String`](class_string.md) )                                                       |
+| [`Variant`](class_variant.md)                 | [`base64_to_variant`](class_marshallsmd#class_marshalls_method_base64_to_variant) ( base64_str: [`String`](class_string.md), allow_objects: [`bool`](class_bool.md) = false ) |
+| [`String`](class_string.md)                   | [`raw_to_base64`](class_marshallsmd#class_marshalls_method_raw_to_base64) ( array: [`PackedByteArray`](class_packedbytearray.md) )                                            |
+| [`String`](class_string.md)                   | [`utf8_to_base64`](class_marshallsmd#class_marshalls_method_utf8_to_base64) ( utf8_str: [`String`](class_string.md) )                                                         |
+| [`String`](class_string.md)                   | [`variant_to_base64`](class_marshallsmd#class_marshalls_method_variant_to_base64) ( variant: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false )   |
 
 <!-- rst-class:: classref-section-separator -->
 

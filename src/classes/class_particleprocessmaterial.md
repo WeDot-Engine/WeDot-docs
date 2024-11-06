@@ -118,16 +118,16 @@ Holds a particle configuration for [`GPUParticles2D`](class_gpuparticles2d.md) o
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md)     | [`get_param`](#class_particleprocessmaterial_method_get_param) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                                    |
-| [`float`](class_float.md)         | [`get_param_max`](#class_particleprocessmaterial_method_get_param_max) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                            |
-| [`float`](class_float.md)         | [`get_param_min`](#class_particleprocessmaterial_method_get_param_min) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                            |
-| [`Texture2D`](class_texture2d.md) | [`get_param_texture`](#class_particleprocessmaterial_method_get_param_texture) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                    |
-| [`bool`](class_bool.md)           | [`get_particle_flag`](#class_particleprocessmaterial_method_get_particle_flag) ( particle_flag: [ParticleFlags](#enum_particleprocessmaterial_particleflags) ) const[^const]                    |
-| `void`                            | [`set_param`](#class_particleprocessmaterial_method_set_param) ( param: [Parameter](#enum_particleprocessmaterial_parameter), value: [`Vector2`](class_vector2.md) )                            |
-| `void`                            | [`set_param_max`](#class_particleprocessmaterial_method_set_param_max) ( param: [Parameter](#enum_particleprocessmaterial_parameter), value: [`float`](class_float.md) )                        |
-| `void`                            | [`set_param_min`](#class_particleprocessmaterial_method_set_param_min) ( param: [Parameter](#enum_particleprocessmaterial_parameter), value: [`float`](class_float.md) )                        |
-| `void`                            | [`set_param_texture`](#class_particleprocessmaterial_method_set_param_texture) ( param: [Parameter](#enum_particleprocessmaterial_parameter), texture: [`Texture2D`](class_texture2d.md) )      |
-| `void`                            | [`set_particle_flag`](#class_particleprocessmaterial_method_set_particle_flag) ( particle_flag: [ParticleFlags](#enum_particleprocessmaterial_particleflags), enable: [`bool`](class_bool.md) ) |
+| [`Vector2`](class_vector2.md)     | [`get_param`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_get_param) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                                    |
+| [`float`](class_float.md)         | [`get_param_max`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_get_param_max) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                            |
+| [`float`](class_float.md)         | [`get_param_min`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_get_param_min) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                            |
+| [`Texture2D`](class_texture2d.md) | [`get_param_texture`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_get_param_texture) ( param: [Parameter](#enum_particleprocessmaterial_parameter) ) const[^const]                                    |
+| [`bool`](class_bool.md)           | [`get_particle_flag`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_get_particle_flag) ( particle_flag: [ParticleFlags](#enum_particleprocessmaterial_particleflags) ) const[^const]                    |
+| `void`                            | [`set_param`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_set_param) ( param: [Parameter](#enum_particleprocessmaterial_parameter), value: [`Vector2`](class_vector2.md) )                            |
+| `void`                            | [`set_param_max`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_set_param_max) ( param: [Parameter](#enum_particleprocessmaterial_parameter), value: [`float`](class_float.md) )                        |
+| `void`                            | [`set_param_min`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_set_param_min) ( param: [Parameter](#enum_particleprocessmaterial_parameter), value: [`float`](class_float.md) )                        |
+| `void`                            | [`set_param_texture`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_set_param_texture) ( param: [Parameter](#enum_particleprocessmaterial_parameter), texture: [`Texture2D`](class_texture2d.md) )      |
+| `void`                            | [`set_particle_flag`](class_particleprocessmaterialmd#class_particleprocessmaterial_method_set_particle_flag) ( particle_flag: [ParticleFlags](#enum_particleprocessmaterial_particleflags), enable: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

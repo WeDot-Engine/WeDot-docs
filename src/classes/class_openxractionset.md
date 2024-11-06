@@ -29,9 +29,9 @@ Action sets can contain the same action with the same name, if such action sets 
 
 |||
 |:-:|:--|
-| `void`                | [`add_action`](#class_openxractionset_method_add_action) ( action: [`OpenXRAction`](class_openxraction.md) )       |
-| [`int`](class_int.md) | [`get_action_count`](#class_openxractionset_method_get_action_count) ( ) const[^const]                             |
-| `void`                | [`remove_action`](#class_openxractionset_method_remove_action) ( action: [`OpenXRAction`](class_openxraction.md) ) |
+| `void`                | [`add_action`](class_openxractionsetmd#class_openxractionset_method_add_action) ( action: [`OpenXRAction`](class_openxraction.md) )       |
+| [`int`](class_int.md) | [`get_action_count`](class_openxractionsetmd#class_openxractionset_method_get_action_count) ( ) const[^const]                             |
+| `void`                | [`remove_action`](class_openxractionsetmd#class_openxractionset_method_remove_action) ( action: [`OpenXRAction`](class_openxraction.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

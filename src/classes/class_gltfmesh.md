@@ -28,8 +28,8 @@ GLTFMesh handles 3D mesh data imported from GLTF files. It includes properties f
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_additional_data`](#class_gltfmesh_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                        | [`set_additional_data`](#class_gltfmesh_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+| [`Variant`](class_variant.md) | [`get_additional_data`](class_gltfmeshmd#class_gltfmesh_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| `void`                        | [`set_additional_data`](class_gltfmeshmd#class_gltfmesh_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

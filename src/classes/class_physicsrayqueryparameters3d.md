@@ -32,7 +32,7 @@ By changing various properties of this object, such as the ray position, you can
 
 |||
 |:-:|:--|
-| [`PhysicsRayQueryParameters3D`](class_physicsrayqueryparameters3d.md) | [`create`](#class_physicsrayqueryparameters3d_method_create) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md), collision_mask: [`int`](class_int.md) = 4294967295, exclude: [Array](class_array.md) [`RID`](class_rid.md) = [] ) static[^static] |
+| [`PhysicsRayQueryParameters3D`](class_physicsrayqueryparameters3d.md) | [`create`](class_physicsrayqueryparameters3dmd#class_physicsrayqueryparameters3d_method_create) ( from: [`Vector3`](class_vector3.md), to: [`Vector3`](class_vector3.md), collision_mask: [`int`](class_int.md) = 4294967295, exclude: [Array](class_array.md) [`RID`](class_rid.md) = [] ) static[^static] |
 
 <!-- rst-class:: classref-section-separator -->
 

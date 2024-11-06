@@ -46,15 +46,15 @@ Since instances may have any behavior, the AABB used for visibility must be prov
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md)               | [`get_aabb`](#class_multimesh_method_get_aabb) ( ) const[^const]                                                                                                       |
-| [`Color`](class_color.md)             | [`get_instance_color`](#class_multimesh_method_get_instance_color) ( instance: [`int`](class_int.md) ) const[^const]                                                   |
-| [`Color`](class_color.md)             | [`get_instance_custom_data`](#class_multimesh_method_get_instance_custom_data) ( instance: [`int`](class_int.md) ) const[^const]                                       |
-| [`Transform3D`](class_transform3d.md) | [`get_instance_transform`](#class_multimesh_method_get_instance_transform) ( instance: [`int`](class_int.md) ) const[^const]                                           |
-| [`Transform2D`](class_transform2d.md) | [`get_instance_transform_2d`](#class_multimesh_method_get_instance_transform_2d) ( instance: [`int`](class_int.md) ) const[^const]                                     |
-| `void`                                | [`set_instance_color`](#class_multimesh_method_set_instance_color) ( instance: [`int`](class_int.md), color: [`Color`](class_color.md) )                               |
-| `void`                                | [`set_instance_custom_data`](#class_multimesh_method_set_instance_custom_data) ( instance: [`int`](class_int.md), custom_data: [`Color`](class_color.md) )             |
-| `void`                                | [`set_instance_transform`](#class_multimesh_method_set_instance_transform) ( instance: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )       |
-| `void`                                | [`set_instance_transform_2d`](#class_multimesh_method_set_instance_transform_2d) ( instance: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) ) |
+| [`AABB`](class_aabb.md)               | [`get_aabb`](class_multimeshmd#class_multimesh_method_get_aabb) ( ) const[^const]                                                                                                       |
+| [`Color`](class_color.md)             | [`get_instance_color`](class_multimeshmd#class_multimesh_method_get_instance_color) ( instance: [`int`](class_int.md) ) const[^const]                                                   |
+| [`Color`](class_color.md)             | [`get_instance_custom_data`](class_multimeshmd#class_multimesh_method_get_instance_custom_data) ( instance: [`int`](class_int.md) ) const[^const]                                       |
+| [`Transform3D`](class_transform3d.md) | [`get_instance_transform`](class_multimeshmd#class_multimesh_method_get_instance_transform) ( instance: [`int`](class_int.md) ) const[^const]                                           |
+| [`Transform2D`](class_transform2d.md) | [`get_instance_transform_2d`](class_multimeshmd#class_multimesh_method_get_instance_transform_2d) ( instance: [`int`](class_int.md) ) const[^const]                                     |
+| `void`                                | [`set_instance_color`](class_multimeshmd#class_multimesh_method_set_instance_color) ( instance: [`int`](class_int.md), color: [`Color`](class_color.md) )                               |
+| `void`                                | [`set_instance_custom_data`](class_multimeshmd#class_multimesh_method_set_instance_custom_data) ( instance: [`int`](class_int.md), custom_data: [`Color`](class_color.md) )             |
+| `void`                                | [`set_instance_transform`](class_multimeshmd#class_multimesh_method_set_instance_transform) ( instance: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )       |
+| `void`                                | [`set_instance_transform_2d`](class_multimeshmd#class_multimesh_method_set_instance_transform_2d) ( instance: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

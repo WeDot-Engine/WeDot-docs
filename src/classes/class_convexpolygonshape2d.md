@@ -31,7 +31,7 @@ A 2D convex polygon shape, intended for use in physics. Used internally in [`Col
 
 |||
 |:-:|:--|
-| `void` | [`set_point_cloud`](#class_convexpolygonshape2d_method_set_point_cloud) ( point_cloud: [`PackedVector2Array`](class_packedvector2array.md) ) |
+| `void` | [`set_point_cloud`](class_convexpolygonshape2dmd#class_convexpolygonshape2d_method_set_point_cloud) ( point_cloud: [`PackedVector2Array`](class_packedvector2array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

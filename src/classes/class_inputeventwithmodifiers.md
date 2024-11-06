@@ -31,8 +31,8 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 |||
 |:-:|:--|
-| [KeyModifierMask](#enum_@globalscope_keymodifiermask) | [`get_modifiers_mask`](#class_inputeventwithmodifiers_method_get_modifiers_mask) ( ) const[^const]                       |
-| [`bool`](class_bool.md)                               | [`is_command_or_control_pressed`](#class_inputeventwithmodifiers_method_is_command_or_control_pressed) ( ) const[^const] |
+| [KeyModifierMask](#enum_@globalscope_keymodifiermask) | [`get_modifiers_mask`](class_inputeventwithmodifiersmd#class_inputeventwithmodifiers_method_get_modifiers_mask) ( ) const[^const]                       |
+| [`bool`](class_bool.md)                               | [`is_command_or_control_pressed`](class_inputeventwithmodifiersmd#class_inputeventwithmodifiers_method_is_command_or_control_pressed) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

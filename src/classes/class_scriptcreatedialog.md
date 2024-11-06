@@ -55,7 +55,7 @@ The **ScriptCreateDialog** creates script files according to a given template fo
 
 |||
 |:-:|:--|
-| `void` | [`config`](#class_scriptcreatedialog_method_config) ( inherits: [`String`](class_string.md), path: [`String`](class_string.md), built_in_enabled: [`bool`](class_bool.md) = true, load_enabled: [`bool`](class_bool.md) = true ) |
+| `void` | [`config`](class_scriptcreatedialogmd#class_scriptcreatedialog_method_config) ( inherits: [`String`](class_string.md), path: [`String`](class_string.md), built_in_enabled: [`bool`](class_bool.md) = true, load_enabled: [`bool`](class_bool.md) = true ) |
 
 <!-- rst-class:: classref-section-separator -->
 

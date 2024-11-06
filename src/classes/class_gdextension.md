@@ -21,8 +21,8 @@ The **GDExtension** resource type represents a [*shared library*](https://en.wik
 
 |||
 |:-:|:--|
-| [InitializationLevel](#enum_gdextension_initializationlevel) | [`get_minimum_library_initialization_level`](#class_gdextension_method_get_minimum_library_initialization_level) ( ) const[^const] |
-| [`bool`](class_bool.md)                                      | [`is_library_open`](#class_gdextension_method_is_library_open) ( ) const[^const]                                                   |
+| [InitializationLevel](#enum_gdextension_initializationlevel) | [`get_minimum_library_initialization_level`](class_gdextensionmd#class_gdextension_method_get_minimum_library_initialization_level) ( ) const[^const] |
+| [`bool`](class_bool.md)                                      | [`is_library_open`](class_gdextensionmd#class_gdextension_method_is_library_open) ( ) const[^const]                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 

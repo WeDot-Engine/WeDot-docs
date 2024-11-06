@@ -38,17 +38,17 @@ A 2D game object, with a transform (position, rotation, and scale). All 2D nodes
 
 |||
 |:-:|:--|
-| `void`                                | [`apply_scale`](#class_node2d_method_apply_scale) ( ratio: [`Vector2`](class_vector2.md) )                                                    |
-| [`float`](class_float.md)             | [`get_angle_to`](#class_node2d_method_get_angle_to) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
-| [`Transform2D`](class_transform2d.md) | [`get_relative_transform_to_parent`](#class_node2d_method_get_relative_transform_to_parent) ( parent: [`Node`](class_node.md) ) const[^const] |
-| `void`                                | [`global_translate`](#class_node2d_method_global_translate) ( offset: [`Vector2`](class_vector2.md) )                                         |
-| `void`                                | [`look_at`](#class_node2d_method_look_at) ( point: [`Vector2`](class_vector2.md) )                                                            |
-| `void`                                | [`move_local_x`](#class_node2d_method_move_local_x) ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )             |
-| `void`                                | [`move_local_y`](#class_node2d_method_move_local_y) ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )             |
-| `void`                                | [`rotate`](#class_node2d_method_rotate) ( radians: [`float`](class_float.md) )                                                                |
-| [`Vector2`](class_vector2.md)         | [`to_global`](#class_node2d_method_to_global) ( local_point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
-| [`Vector2`](class_vector2.md)         | [`to_local`](#class_node2d_method_to_local) ( global_point: [`Vector2`](class_vector2.md) ) const[^const]                                     |
-| `void`                                | [`translate`](#class_node2d_method_translate) ( offset: [`Vector2`](class_vector2.md) )                                                       |
+| `void`                                | [`apply_scale`](class_node2dmd#class_node2d_method_apply_scale) ( ratio: [`Vector2`](class_vector2.md) )                                                    |
+| [`float`](class_float.md)             | [`get_angle_to`](class_node2dmd#class_node2d_method_get_angle_to) ( point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
+| [`Transform2D`](class_transform2d.md) | [`get_relative_transform_to_parent`](class_node2dmd#class_node2d_method_get_relative_transform_to_parent) ( parent: [`Node`](class_node.md) ) const[^const] |
+| `void`                                | [`global_translate`](class_node2dmd#class_node2d_method_global_translate) ( offset: [`Vector2`](class_vector2.md) )                                         |
+| `void`                                | [`look_at`](class_node2dmd#class_node2d_method_look_at) ( point: [`Vector2`](class_vector2.md) )                                                            |
+| `void`                                | [`move_local_x`](class_node2dmd#class_node2d_method_move_local_x) ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )             |
+| `void`                                | [`move_local_y`](class_node2dmd#class_node2d_method_move_local_y) ( delta: [`float`](class_float.md), scaled: [`bool`](class_bool.md) = false )             |
+| `void`                                | [`rotate`](class_node2dmd#class_node2d_method_rotate) ( radians: [`float`](class_float.md) )                                                                |
+| [`Vector2`](class_vector2.md)         | [`to_global`](class_node2dmd#class_node2d_method_to_global) ( local_point: [`Vector2`](class_vector2.md) ) const[^const]                                    |
+| [`Vector2`](class_vector2.md)         | [`to_local`](class_node2dmd#class_node2d_method_to_local) ( global_point: [`Vector2`](class_vector2.md) ) const[^const]                                     |
+| `void`                                | [`translate`](class_node2dmd#class_node2d_method_translate) ( offset: [`Vector2`](class_vector2.md) )                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 

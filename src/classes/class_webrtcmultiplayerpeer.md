@@ -25,14 +25,14 @@ When creating the peer via [`create_client`](#class_webrtcmultiplayerpeer_method
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)   | [`add_peer`](#class_webrtcmultiplayerpeer_method_add_peer) ( peer: [`WebRTCPeerConnection`](class_webrtcpeerconnection.md), peer_id: [`int`](class_int.md), unreliable_lifetime: [`int`](class_int.md) = 1 ) |
-| [Error](#enum_@globalscope_error)   | [`create_client`](#class_webrtcmultiplayerpeer_method_create_client) ( peer_id: [`int`](class_int.md), channels_config: [`Array`](class_array.md) = [] )                                                     |
-| [Error](#enum_@globalscope_error)   | [`create_mesh`](#class_webrtcmultiplayerpeer_method_create_mesh) ( peer_id: [`int`](class_int.md), channels_config: [`Array`](class_array.md) = [] )                                                         |
-| [Error](#enum_@globalscope_error)   | [`create_server`](#class_webrtcmultiplayerpeer_method_create_server) ( channels_config: [`Array`](class_array.md) = [] )                                                                                     |
-| [`Dictionary`](class_dictionary.md) | [`get_peer`](#class_webrtcmultiplayerpeer_method_get_peer) ( peer_id: [`int`](class_int.md) )                                                                                                                |
-| [`Dictionary`](class_dictionary.md) | [`get_peers`](#class_webrtcmultiplayerpeer_method_get_peers) ( )                                                                                                                                             |
-| [`bool`](class_bool.md)             | [`has_peer`](#class_webrtcmultiplayerpeer_method_has_peer) ( peer_id: [`int`](class_int.md) )                                                                                                                |
-| `void`                              | [`remove_peer`](#class_webrtcmultiplayerpeer_method_remove_peer) ( peer_id: [`int`](class_int.md) )                                                                                                          |
+| [Error](#enum_@globalscope_error)   | [`add_peer`](class_webrtcmultiplayerpeermd#class_webrtcmultiplayerpeer_method_add_peer) ( peer: [`WebRTCPeerConnection`](class_webrtcpeerconnection.md), peer_id: [`int`](class_int.md), unreliable_lifetime: [`int`](class_int.md) = 1 ) |
+| [Error](#enum_@globalscope_error)   | [`create_client`](class_webrtcmultiplayerpeermd#class_webrtcmultiplayerpeer_method_create_client) ( peer_id: [`int`](class_int.md), channels_config: [`Array`](class_array.md) = [] )                                                     |
+| [Error](#enum_@globalscope_error)   | [`create_mesh`](class_webrtcmultiplayerpeermd#class_webrtcmultiplayerpeer_method_create_mesh) ( peer_id: [`int`](class_int.md), channels_config: [`Array`](class_array.md) = [] )                                                         |
+| [Error](#enum_@globalscope_error)   | [`create_server`](class_webrtcmultiplayerpeermd#class_webrtcmultiplayerpeer_method_create_server) ( channels_config: [`Array`](class_array.md) = [] )                                                                                     |
+| [`Dictionary`](class_dictionary.md) | [`get_peer`](class_webrtcmultiplayerpeermd#class_webrtcmultiplayerpeer_method_get_peer) ( peer_id: [`int`](class_int.md) )                                                                                                                |
+| [`Dictionary`](class_dictionary.md) | [`get_peers`](class_webrtcmultiplayerpeermd#class_webrtcmultiplayerpeer_method_get_peers) ( )                                                                                                                                             |
+| [`bool`](class_bool.md)             | [`has_peer`](class_webrtcmultiplayerpeermd#class_webrtcmultiplayerpeer_method_has_peer) ( peer_id: [`int`](class_int.md) )                                                                                                                |
+| `void`                              | [`remove_peer`](class_webrtcmultiplayerpeermd#class_webrtcmultiplayerpeer_method_remove_peer) ( peer_id: [`int`](class_int.md) )                                                                                                          |
 
 <!-- rst-class:: classref-section-separator -->
 

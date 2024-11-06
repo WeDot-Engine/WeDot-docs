@@ -29,12 +29,12 @@ To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s refer
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)       | [`get_id`](#class_thread_method_get_id) ( ) const[^const]                                                                                        |
-| [`bool`](class_bool.md)           | [`is_alive`](#class_thread_method_is_alive) ( ) const[^const]                                                                                    |
-| [`bool`](class_bool.md)           | [`is_started`](#class_thread_method_is_started) ( ) const[^const]                                                                                |
-| `void`                            | [`set_thread_safety_checks_enabled`](#class_thread_method_set_thread_safety_checks_enabled) ( enabled: [`bool`](class_bool.md) ) static[^static] |
-| [Error](#enum_@globalscope_error) | [`start`](#class_thread_method_start) ( callable: [`Callable`](class_callable.md), priority: [Priority](#enum_thread_priority) = 1 )             |
-| [`Variant`](class_variant.md)     | [`wait_to_finish`](#class_thread_method_wait_to_finish) ( )                                                                                      |
+| [`String`](class_string.md)       | [`get_id`](class_threadmd#class_thread_method_get_id) ( ) const[^const]                                                                                        |
+| [`bool`](class_bool.md)           | [`is_alive`](class_threadmd#class_thread_method_is_alive) ( ) const[^const]                                                                                    |
+| [`bool`](class_bool.md)           | [`is_started`](class_threadmd#class_thread_method_is_started) ( ) const[^const]                                                                                |
+| `void`                            | [`set_thread_safety_checks_enabled`](class_threadmd#class_thread_method_set_thread_safety_checks_enabled) ( enabled: [`bool`](class_bool.md) ) static[^static] |
+| [Error](#enum_@globalscope_error) | [`start`](class_threadmd#class_thread_method_start) ( callable: [`Callable`](class_callable.md), priority: [Priority](#enum_thread_priority) = 1 )             |
+| [`Variant`](class_variant.md)     | [`wait_to_finish`](class_threadmd#class_thread_method_wait_to_finish) ( )                                                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 

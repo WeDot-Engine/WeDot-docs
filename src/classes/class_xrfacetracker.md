@@ -30,8 +30,8 @@ As face trackers are turned on they are registered with the [`XRServer`](class_x
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_blend_shape`](#class_xrfacetracker_method_get_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry) ) const[^const]                      |
-| `void`                    | [`set_blend_shape`](#class_xrfacetracker_method_set_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry), weight: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_blend_shape`](class_xrfacetrackermd#class_xrfacetracker_method_get_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry) ) const[^const]                      |
+| `void`                    | [`set_blend_shape`](class_xrfacetrackermd#class_xrfacetracker_method_set_blend_shape) ( blend_shape: [BlendShapeEntry](#enum_xrfacetracker_blendshapeentry), weight: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

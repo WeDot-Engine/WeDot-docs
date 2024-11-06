@@ -47,8 +47,8 @@ Nested containers will be packed recursively. While iterating, they will be retu
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`pack`](#class_packeddatacontainer_method_pack) ( value: [`Variant`](class_variant.md) ) |
-| [`int`](class_int.md)             | [`size`](#class_packeddatacontainer_method_size) ( ) const[^const]                        |
+| [Error](#enum_@globalscope_error) | [`pack`](class_packeddatacontainermd#class_packeddatacontainer_method_pack) ( value: [`Variant`](class_variant.md) ) |
+| [`int`](class_int.md)             | [`size`](class_packeddatacontainermd#class_packeddatacontainer_method_size) ( ) const[^const]                        |
 
 <!-- rst-class:: classref-section-separator -->
 

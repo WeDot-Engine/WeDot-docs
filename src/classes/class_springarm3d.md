@@ -28,10 +28,10 @@ A 3D raycast that dynamically moves its children near the collision point.
 
 |||
 |:-:|:--|
-| `void`                    | [`add_excluded_object`](#class_springarm3d_method_add_excluded_object) ( RID: [`RID`](class_rid.md) )       |
-| `void`                    | [`clear_excluded_objects`](#class_springarm3d_method_clear_excluded_objects) ( )                            |
-| [`float`](class_float.md) | [`get_hit_length`](#class_springarm3d_method_get_hit_length) ( )                                            |
-| [`bool`](class_bool.md)   | [`remove_excluded_object`](#class_springarm3d_method_remove_excluded_object) ( RID: [`RID`](class_rid.md) ) |
+| `void`                    | [`add_excluded_object`](class_springarm3dmd#class_springarm3d_method_add_excluded_object) ( RID: [`RID`](class_rid.md) )       |
+| `void`                    | [`clear_excluded_objects`](class_springarm3dmd#class_springarm3d_method_clear_excluded_objects) ( )                            |
+| [`float`](class_float.md) | [`get_hit_length`](class_springarm3dmd#class_springarm3d_method_get_hit_length) ( )                                            |
+| [`bool`](class_bool.md)   | [`remove_excluded_object`](class_springarm3dmd#class_springarm3d_method_remove_excluded_object) ( RID: [`RID`](class_rid.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

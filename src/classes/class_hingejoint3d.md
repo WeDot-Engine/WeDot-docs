@@ -34,10 +34,10 @@ A physics joint that restricts the rotation of a 3D physics body around an axis 
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`get_flag`](#class_hingejoint3d_method_get_flag) ( flag: [Flag](#enum_hingejoint3d_flag) ) const[^const]                          |
-| [`float`](class_float.md) | [`get_param`](#class_hingejoint3d_method_get_param) ( param: [Param](#enum_hingejoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_flag`](#class_hingejoint3d_method_set_flag) ( flag: [Flag](#enum_hingejoint3d_flag), enabled: [`bool`](class_bool.md) )      |
-| `void`                    | [`set_param`](#class_hingejoint3d_method_set_param) ( param: [Param](#enum_hingejoint3d_param), value: [`float`](class_float.md) ) |
+| [`bool`](class_bool.md)   | [`get_flag`](class_hingejoint3dmd#class_hingejoint3d_method_get_flag) ( flag: [Flag](#enum_hingejoint3d_flag) ) const[^const]                          |
+| [`float`](class_float.md) | [`get_param`](class_hingejoint3dmd#class_hingejoint3d_method_get_param) ( param: [Param](#enum_hingejoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_flag`](class_hingejoint3dmd#class_hingejoint3d_method_set_flag) ( flag: [Flag](#enum_hingejoint3d_flag), enabled: [`bool`](class_bool.md) )      |
+| `void`                    | [`set_param`](class_hingejoint3dmd#class_hingejoint3d_method_set_param) ( param: [Param](#enum_hingejoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

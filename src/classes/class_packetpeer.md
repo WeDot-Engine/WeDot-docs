@@ -29,12 +29,12 @@ PacketPeer is an abstraction and base class for packet-based protocols (such as 
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                         | [`get_available_packet_count`](#class_packetpeer_method_get_available_packet_count) ( ) const[^const]                               |
-| [`PackedByteArray`](class_packedbytearray.md) | [`get_packet`](#class_packetpeer_method_get_packet) ( )                                                                             |
-| [Error](#enum_@globalscope_error)             | [`get_packet_error`](#class_packetpeer_method_get_packet_error) ( ) const[^const]                                                   |
-| [`Variant`](class_variant.md)                 | [`get_var`](#class_packetpeer_method_get_var) ( allow_objects: [`bool`](class_bool.md) = false )                                    |
-| [Error](#enum_@globalscope_error)             | [`put_packet`](#class_packetpeer_method_put_packet) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                       |
-| [Error](#enum_@globalscope_error)             | [`put_var`](#class_packetpeer_method_put_var) ( var: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false ) |
+| [`int`](class_int.md)                         | [`get_available_packet_count`](class_packetpeermd#class_packetpeer_method_get_available_packet_count) ( ) const[^const]                               |
+| [`PackedByteArray`](class_packedbytearray.md) | [`get_packet`](class_packetpeermd#class_packetpeer_method_get_packet) ( )                                                                             |
+| [Error](#enum_@globalscope_error)             | [`get_packet_error`](class_packetpeermd#class_packetpeer_method_get_packet_error) ( ) const[^const]                                                   |
+| [`Variant`](class_variant.md)                 | [`get_var`](class_packetpeermd#class_packetpeer_method_get_var) ( allow_objects: [`bool`](class_bool.md) = false )                                    |
+| [Error](#enum_@globalscope_error)             | [`put_packet`](class_packetpeermd#class_packetpeer_method_put_packet) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                       |
+| [Error](#enum_@globalscope_error)             | [`put_var`](class_packetpeermd#class_packetpeer_method_put_var) ( var: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false ) |
 
 <!-- rst-class:: classref-section-separator -->
 

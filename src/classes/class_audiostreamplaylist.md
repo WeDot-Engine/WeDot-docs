@@ -24,9 +24,9 @@
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)             | [`get_bpm`](#class_audiostreamplaylist_method_get_bpm) ( ) const[^const]                                                                                            |
-| [`AudioStream`](class_audiostream.md) | [`get_list_stream`](#class_audiostreamplaylist_method_get_list_stream) ( stream_index: [`int`](class_int.md) ) const[^const]                                        |
-| `void`                                | [`set_list_stream`](#class_audiostreamplaylist_method_set_list_stream) ( stream_index: [`int`](class_int.md), audio_stream: [`AudioStream`](class_audiostream.md) ) |
+| [`float`](class_float.md)             | [`get_bpm`](class_audiostreamplaylistmd#class_audiostreamplaylist_method_get_bpm) ( ) const[^const]                                                                                            |
+| [`AudioStream`](class_audiostream.md) | [`get_list_stream`](class_audiostreamplaylistmd#class_audiostreamplaylist_method_get_list_stream) ( stream_index: [`int`](class_int.md) ) const[^const]                                        |
+| `void`                                | [`set_list_stream`](class_audiostreamplaylistmd#class_audiostreamplaylist_method_set_list_stream) ( stream_index: [`int`](class_int.md), audio_stream: [`AudioStream`](class_audiostream.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

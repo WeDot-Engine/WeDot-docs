@@ -21,11 +21,11 @@ This object manages the SceneTree selection in the editor.
 
 |||
 |:-:|:--|
-| `void`                                          | [`add_node`](#class_editorselection_method_add_node) ( node: [`Node`](class_node.md) )                   |
-| `void`                                          | [`clear`](#class_editorselection_method_clear) ( )                                                       |
-| [Array](class_array.md) [`Node`](class_node.md) | [`get_selected_nodes`](#class_editorselection_method_get_selected_nodes) ( )                             |
-| [Array](class_array.md) [`Node`](class_node.md) | [`get_transformable_selected_nodes`](#class_editorselection_method_get_transformable_selected_nodes) ( ) |
-| `void`                                          | [`remove_node`](#class_editorselection_method_remove_node) ( node: [`Node`](class_node.md) )             |
+| `void`                                          | [`add_node`](class_editorselectionmd#class_editorselection_method_add_node) ( node: [`Node`](class_node.md) )                   |
+| `void`                                          | [`clear`](class_editorselectionmd#class_editorselection_method_clear) ( )                                                       |
+| [Array](class_array.md) [`Node`](class_node.md) | [`get_selected_nodes`](class_editorselectionmd#class_editorselection_method_get_selected_nodes) ( )                             |
+| [Array](class_array.md) [`Node`](class_node.md) | [`get_transformable_selected_nodes`](class_editorselectionmd#class_editorselection_method_get_transformable_selected_nodes) ( ) |
+| `void`                                          | [`remove_node`](class_editorselectionmd#class_editorselection_method_remove_node) ( node: [`Node`](class_node.md) )             |
 
 <!-- rst-class:: classref-section-separator -->
 

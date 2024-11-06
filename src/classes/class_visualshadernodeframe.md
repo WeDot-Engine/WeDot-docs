@@ -35,8 +35,8 @@ Its title, description and color can be customized.
 
 |||
 |:-:|:--|
-| `void` | [`add_attached_node`](#class_visualshadernodeframe_method_add_attached_node) ( node: [`int`](class_int.md) )       |
-| `void` | [`remove_attached_node`](#class_visualshadernodeframe_method_remove_attached_node) ( node: [`int`](class_int.md) ) |
+| `void` | [`add_attached_node`](class_visualshadernodeframemd#class_visualshadernodeframe_method_add_attached_node) ( node: [`int`](class_int.md) )       |
+| `void` | [`remove_attached_node`](class_visualshadernodeframemd#class_visualshadernodeframe_method_remove_attached_node) ( node: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

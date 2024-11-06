@@ -23,10 +23,10 @@ After starting the stream via [`start_compression`](#class_streampeergzip_method
 
 |||
 |:-:|:--|
-| `void`                            | [`clear`](#class_streampeergzip_method_clear) ( )                                                                                                                      |
-| [Error](#enum_@globalscope_error) | [`finish`](#class_streampeergzip_method_finish) ( )                                                                                                                    |
-| [Error](#enum_@globalscope_error) | [`start_compression`](#class_streampeergzip_method_start_compression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 )     |
-| [Error](#enum_@globalscope_error) | [`start_decompression`](#class_streampeergzip_method_start_decompression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 ) |
+| `void`                            | [`clear`](class_streampeergzipmd#class_streampeergzip_method_clear) ( )                                                                                                                      |
+| [Error](#enum_@globalscope_error) | [`finish`](class_streampeergzipmd#class_streampeergzip_method_finish) ( )                                                                                                                    |
+| [Error](#enum_@globalscope_error) | [`start_compression`](class_streampeergzipmd#class_streampeergzip_method_start_compression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 )     |
+| [Error](#enum_@globalscope_error) | [`start_decompression`](class_streampeergzipmd#class_streampeergzip_method_start_decompression) ( use_deflate: [`bool`](class_bool.md) = false, buffer_size: [`int`](class_int.md) = 65535 ) |
 
 <!-- rst-class:: classref-section-separator -->
 

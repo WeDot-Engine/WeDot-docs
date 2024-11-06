@@ -70,16 +70,16 @@ The relative system now would take the 1:2 ratio of the two left corners to calc
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)     | [`get_border_width`](#class_styleboxflat_method_get_border_width) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                        |
-| [`int`](class_int.md)     | [`get_border_width_min`](#class_styleboxflat_method_get_border_width_min) ( ) const[^const]                                                        |
-| [`int`](class_int.md)     | [`get_corner_radius`](#class_styleboxflat_method_get_corner_radius) ( corner: [Corner](#enum_@globalscope_corner) ) const[^const]                  |
-| [`float`](class_float.md) | [`get_expand_margin`](#class_styleboxflat_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
-| `void`                    | [`set_border_width`](#class_styleboxflat_method_set_border_width) ( margin: [Side](#enum_@globalscope_side), width: [`int`](class_int.md) )        |
-| `void`                    | [`set_border_width_all`](#class_styleboxflat_method_set_border_width_all) ( width: [`int`](class_int.md) )                                         |
-| `void`                    | [`set_corner_radius`](#class_styleboxflat_method_set_corner_radius) ( corner: [Corner](#enum_@globalscope_corner), radius: [`int`](class_int.md) ) |
-| `void`                    | [`set_corner_radius_all`](#class_styleboxflat_method_set_corner_radius_all) ( radius: [`int`](class_int.md) )                                      |
-| `void`                    | [`set_expand_margin`](#class_styleboxflat_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |
-| `void`                    | [`set_expand_margin_all`](#class_styleboxflat_method_set_expand_margin_all) ( size: [`float`](class_float.md) )                                    |
+| [`int`](class_int.md)     | [`get_border_width`](class_styleboxflatmd#class_styleboxflat_method_get_border_width) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                        |
+| [`int`](class_int.md)     | [`get_border_width_min`](class_styleboxflatmd#class_styleboxflat_method_get_border_width_min) ( ) const[^const]                                                        |
+| [`int`](class_int.md)     | [`get_corner_radius`](class_styleboxflatmd#class_styleboxflat_method_get_corner_radius) ( corner: [Corner](#enum_@globalscope_corner) ) const[^const]                  |
+| [`float`](class_float.md) | [`get_expand_margin`](class_styleboxflatmd#class_styleboxflat_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
+| `void`                    | [`set_border_width`](class_styleboxflatmd#class_styleboxflat_method_set_border_width) ( margin: [Side](#enum_@globalscope_side), width: [`int`](class_int.md) )        |
+| `void`                    | [`set_border_width_all`](class_styleboxflatmd#class_styleboxflat_method_set_border_width_all) ( width: [`int`](class_int.md) )                                         |
+| `void`                    | [`set_corner_radius`](class_styleboxflatmd#class_styleboxflat_method_set_corner_radius) ( corner: [Corner](#enum_@globalscope_corner), radius: [`int`](class_int.md) ) |
+| `void`                    | [`set_corner_radius_all`](class_styleboxflatmd#class_styleboxflat_method_set_corner_radius_all) ( radius: [`int`](class_int.md) )                                      |
+| `void`                    | [`set_expand_margin`](class_styleboxflatmd#class_styleboxflat_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |
+| `void`                    | [`set_expand_margin_all`](class_styleboxflatmd#class_styleboxflat_method_set_expand_margin_all) ( size: [`float`](class_float.md) )                                    |
 
 <!-- rst-class:: classref-section-separator -->
 

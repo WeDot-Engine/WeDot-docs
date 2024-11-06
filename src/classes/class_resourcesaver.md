@@ -21,10 +21,10 @@ It uses the many [`ResourceFormatSaver`](class_resourceformatsaver.md) classes r
 
 |||
 |:-:|:--|
-| `void`                                            | [`add_resource_format_saver`](#class_resourcesaver_method_add_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md), at_front: [`bool`](class_bool.md) = false ) |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_recognized_extensions`](#class_resourcesaver_method_get_recognized_extensions) ( type: [`Resource`](class_resource.md) )                                                                          |
-| `void`                                            | [`remove_resource_format_saver`](#class_resourcesaver_method_remove_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md) )                                      |
-| [Error](#enum_@globalscope_error)                 | [`save`](#class_resourcesaver_method_save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) = "", flags: [SaverFlags](#enum_resourcesaver_saverflags) = 0 )               |
+| `void`                                            | [`add_resource_format_saver`](class_resourcesavermd#class_resourcesaver_method_add_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md), at_front: [`bool`](class_bool.md) = false ) |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_recognized_extensions`](class_resourcesavermd#class_resourcesaver_method_get_recognized_extensions) ( type: [`Resource`](class_resource.md) )                                                                          |
+| `void`                                            | [`remove_resource_format_saver`](class_resourcesavermd#class_resourcesaver_method_remove_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md) )                                      |
+| [Error](#enum_@globalscope_error)                 | [`save`](class_resourcesavermd#class_resourcesaver_method_save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) = "", flags: [SaverFlags](#enum_resourcesaver_saverflags) = 0 )               |
 
 <!-- rst-class:: classref-section-separator -->
 

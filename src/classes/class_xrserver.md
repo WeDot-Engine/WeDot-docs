@@ -27,20 +27,20 @@ The AR/VR server is the heart of our Advanced and Virtual Reality solution and h
 
 |||
 |:-:|:--|
-| `void`                                                      | [`add_interface`](#class_xrserver_method_add_interface) ( interface: [`XRInterface`](class_xrinterface.md) )                                                 |
-| `void`                                                      | [`add_tracker`](#class_xrserver_method_add_tracker) ( tracker: [`XRTracker`](class_xrtracker.md) )                                                           |
-| `void`                                                      | [`center_on_hmd`](#class_xrserver_method_center_on_hmd) ( rotation_mode: [RotationMode](#enum_xrserver_rotationmode), keep_height: [`bool`](class_bool.md) ) |
-| `void`                                                      | [`clear_reference_frame`](#class_xrserver_method_clear_reference_frame) ( )                                                                                  |
-| [`XRInterface`](class_xrinterface.md)                       | [`find_interface`](#class_xrserver_method_find_interface) ( name: [`String`](class_string.md) ) const[^const]                                                |
-| [`Transform3D`](class_transform3d.md)                       | [`get_hmd_transform`](#class_xrserver_method_get_hmd_transform) ( )                                                                                          |
-| [`XRInterface`](class_xrinterface.md)                       | [`get_interface`](#class_xrserver_method_get_interface) ( idx: [`int`](class_int.md) ) const[^const]                                                         |
-| [`int`](class_int.md)                                       | [`get_interface_count`](#class_xrserver_method_get_interface_count) ( ) const[^const]                                                                        |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_interfaces`](#class_xrserver_method_get_interfaces) ( ) const[^const]                                                                                  |
-| [`Transform3D`](class_transform3d.md)                       | [`get_reference_frame`](#class_xrserver_method_get_reference_frame) ( ) const[^const]                                                                        |
-| [`XRTracker`](class_xrtracker.md)                           | [`get_tracker`](#class_xrserver_method_get_tracker) ( tracker_name: [`StringName`](class_stringname.md) ) const[^const]                                      |
-| [`Dictionary`](class_dictionary.md)                         | [`get_trackers`](#class_xrserver_method_get_trackers) ( tracker_types: [`int`](class_int.md) )                                                               |
-| `void`                                                      | [`remove_interface`](#class_xrserver_method_remove_interface) ( interface: [`XRInterface`](class_xrinterface.md) )                                           |
-| `void`                                                      | [`remove_tracker`](#class_xrserver_method_remove_tracker) ( tracker: [`XRTracker`](class_xrtracker.md) )                                                     |
+| `void`                                                      | [`add_interface`](class_xrservermd#class_xrserver_method_add_interface) ( interface: [`XRInterface`](class_xrinterface.md) )                                                 |
+| `void`                                                      | [`add_tracker`](class_xrservermd#class_xrserver_method_add_tracker) ( tracker: [`XRTracker`](class_xrtracker.md) )                                                           |
+| `void`                                                      | [`center_on_hmd`](class_xrservermd#class_xrserver_method_center_on_hmd) ( rotation_mode: [RotationMode](#enum_xrserver_rotationmode), keep_height: [`bool`](class_bool.md) ) |
+| `void`                                                      | [`clear_reference_frame`](class_xrservermd#class_xrserver_method_clear_reference_frame) ( )                                                                                  |
+| [`XRInterface`](class_xrinterface.md)                       | [`find_interface`](class_xrservermd#class_xrserver_method_find_interface) ( name: [`String`](class_string.md) ) const[^const]                                                |
+| [`Transform3D`](class_transform3d.md)                       | [`get_hmd_transform`](class_xrservermd#class_xrserver_method_get_hmd_transform) ( )                                                                                          |
+| [`XRInterface`](class_xrinterface.md)                       | [`get_interface`](class_xrservermd#class_xrserver_method_get_interface) ( idx: [`int`](class_int.md) ) const[^const]                                                         |
+| [`int`](class_int.md)                                       | [`get_interface_count`](class_xrservermd#class_xrserver_method_get_interface_count) ( ) const[^const]                                                                        |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_interfaces`](class_xrservermd#class_xrserver_method_get_interfaces) ( ) const[^const]                                                                                  |
+| [`Transform3D`](class_transform3d.md)                       | [`get_reference_frame`](class_xrservermd#class_xrserver_method_get_reference_frame) ( ) const[^const]                                                                        |
+| [`XRTracker`](class_xrtracker.md)                           | [`get_tracker`](class_xrservermd#class_xrserver_method_get_tracker) ( tracker_name: [`StringName`](class_stringname.md) ) const[^const]                                      |
+| [`Dictionary`](class_dictionary.md)                         | [`get_trackers`](class_xrservermd#class_xrserver_method_get_trackers) ( tracker_types: [`int`](class_int.md) )                                                               |
+| `void`                                                      | [`remove_interface`](class_xrservermd#class_xrserver_method_remove_interface) ( interface: [`XRInterface`](class_xrinterface.md) )                                           |
+| `void`                                                      | [`remove_tracker`](class_xrservermd#class_xrserver_method_remove_tracker) ( tracker: [`XRTracker`](class_xrtracker.md) )                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

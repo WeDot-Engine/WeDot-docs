@@ -15,12 +15,12 @@ A class used to provide [`PhysicsServer3DExtension._soft_body_update_rendering_s
 
 |||
 |:-:|:--|
-| `void` | [`_set_aabb`](#class_physicsserver3drenderingserverhandler_private_method__set_aabb) ( aabb: [`AABB`](class_aabb.md) ) virtual[^virtual]                                               |
-| `void` | [`_set_normal`](#class_physicsserver3drenderingserverhandler_private_method__set_normal) ( vertex_id: [`int`](class_int.md), normal: [`Vector3`](class_vector3.md) ) virtual[^virtual] |
-| `void` | [`_set_vertex`](#class_physicsserver3drenderingserverhandler_private_method__set_vertex) ( vertex_id: [`int`](class_int.md), vertex: [`Vector3`](class_vector3.md) ) virtual[^virtual] |
-| `void` | [`set_aabb`](#class_physicsserver3drenderingserverhandler_method_set_aabb) ( aabb: [`AABB`](class_aabb.md) )                                                                           |
-| `void` | [`set_normal`](#class_physicsserver3drenderingserverhandler_method_set_normal) ( vertex_id: [`int`](class_int.md), normal: [`Vector3`](class_vector3.md) )                             |
-| `void` | [`set_vertex`](#class_physicsserver3drenderingserverhandler_method_set_vertex) ( vertex_id: [`int`](class_int.md), vertex: [`Vector3`](class_vector3.md) )                             |
+| `void` | [`_set_aabb`](class_physicsserver3drenderingserverhandlermd#class_physicsserver3drenderingserverhandler_private_method__set_aabb) ( aabb: [`AABB`](class_aabb.md) ) virtual[^virtual]                                               |
+| `void` | [`_set_normal`](class_physicsserver3drenderingserverhandlermd#class_physicsserver3drenderingserverhandler_private_method__set_normal) ( vertex_id: [`int`](class_int.md), normal: [`Vector3`](class_vector3.md) ) virtual[^virtual] |
+| `void` | [`_set_vertex`](class_physicsserver3drenderingserverhandlermd#class_physicsserver3drenderingserverhandler_private_method__set_vertex) ( vertex_id: [`int`](class_int.md), vertex: [`Vector3`](class_vector3.md) ) virtual[^virtual] |
+| `void` | [`set_aabb`](class_physicsserver3drenderingserverhandlermd#class_physicsserver3drenderingserverhandler_method_set_aabb) ( aabb: [`AABB`](class_aabb.md) )                                                                           |
+| `void` | [`set_normal`](class_physicsserver3drenderingserverhandlermd#class_physicsserver3drenderingserverhandler_method_set_normal) ( vertex_id: [`int`](class_int.md), normal: [`Vector3`](class_vector3.md) )                             |
+| `void` | [`set_vertex`](class_physicsserver3drenderingserverhandlermd#class_physicsserver3drenderingserverhandler_method_set_vertex) ( vertex_id: [`int`](class_int.md), vertex: [`Vector3`](class_vector3.md) )                             |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -57,20 +57,20 @@ If you need to override the default physics behavior, you can write a custom for
 
 |||
 |:-:|:--|
-| `void`                                              | [`_integrate_forces`](#class_rigidbody3d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual]   |
-| `void`                                              | [`add_constant_central_force`](#class_rigidbody3d_method_add_constant_central_force) ( force: [`Vector3`](class_vector3.md) )                                             |
-| `void`                                              | [`add_constant_force`](#class_rigidbody3d_method_add_constant_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) ) |
-| `void`                                              | [`add_constant_torque`](#class_rigidbody3d_method_add_constant_torque) ( torque: [`Vector3`](class_vector3.md) )                                                          |
-| `void`                                              | [`apply_central_force`](#class_rigidbody3d_method_apply_central_force) ( force: [`Vector3`](class_vector3.md) )                                                           |
-| `void`                                              | [`apply_central_impulse`](#class_rigidbody3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                     |
-| `void`                                              | [`apply_force`](#class_rigidbody3d_method_apply_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )               |
-| `void`                                              | [`apply_impulse`](#class_rigidbody3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )         |
-| `void`                                              | [`apply_torque`](#class_rigidbody3d_method_apply_torque) ( torque: [`Vector3`](class_vector3.md) )                                                                        |
-| `void`                                              | [`apply_torque_impulse`](#class_rigidbody3d_method_apply_torque_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                       |
-| [Array](class_array.md) [`Node3D`](class_node3d.md) | [`get_colliding_bodies`](#class_rigidbody3d_method_get_colliding_bodies) ( ) const[^const]                                                                                |
-| [`int`](class_int.md)                               | [`get_contact_count`](#class_rigidbody3d_method_get_contact_count) ( ) const[^const]                                                                                      |
-| [`Basis`](class_basis.md)                           | [`get_inverse_inertia_tensor`](#class_rigidbody3d_method_get_inverse_inertia_tensor) ( ) const[^const]                                                                    |
-| `void`                                              | [`set_axis_velocity`](#class_rigidbody3d_method_set_axis_velocity) ( axis_velocity: [`Vector3`](class_vector3.md) )                                                       |
+| `void`                                              | [`_integrate_forces`](class_rigidbody3dmd#class_rigidbody3d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual]   |
+| `void`                                              | [`add_constant_central_force`](class_rigidbody3dmd#class_rigidbody3d_method_add_constant_central_force) ( force: [`Vector3`](class_vector3.md) )                                             |
+| `void`                                              | [`add_constant_force`](class_rigidbody3dmd#class_rigidbody3d_method_add_constant_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) ) |
+| `void`                                              | [`add_constant_torque`](class_rigidbody3dmd#class_rigidbody3d_method_add_constant_torque) ( torque: [`Vector3`](class_vector3.md) )                                                          |
+| `void`                                              | [`apply_central_force`](class_rigidbody3dmd#class_rigidbody3d_method_apply_central_force) ( force: [`Vector3`](class_vector3.md) )                                                           |
+| `void`                                              | [`apply_central_impulse`](class_rigidbody3dmd#class_rigidbody3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                     |
+| `void`                                              | [`apply_force`](class_rigidbody3dmd#class_rigidbody3d_method_apply_force) ( force: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )               |
+| `void`                                              | [`apply_impulse`](class_rigidbody3dmd#class_rigidbody3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )         |
+| `void`                                              | [`apply_torque`](class_rigidbody3dmd#class_rigidbody3d_method_apply_torque) ( torque: [`Vector3`](class_vector3.md) )                                                                        |
+| `void`                                              | [`apply_torque_impulse`](class_rigidbody3dmd#class_rigidbody3d_method_apply_torque_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                       |
+| [Array](class_array.md) [`Node3D`](class_node3d.md) | [`get_colliding_bodies`](class_rigidbody3dmd#class_rigidbody3d_method_get_colliding_bodies) ( ) const[^const]                                                                                |
+| [`int`](class_int.md)                               | [`get_contact_count`](class_rigidbody3dmd#class_rigidbody3d_method_get_contact_count) ( ) const[^const]                                                                                      |
+| [`Basis`](class_basis.md)                           | [`get_inverse_inertia_tensor`](class_rigidbody3dmd#class_rigidbody3d_method_get_inverse_inertia_tensor) ( ) const[^const]                                                                    |
+| `void`                                              | [`set_axis_velocity`](class_rigidbody3dmd#class_rigidbody3d_method_set_axis_velocity) ( axis_velocity: [`Vector3`](class_vector3.md) )                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 

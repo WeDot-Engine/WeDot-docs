@@ -21,12 +21,12 @@ GDScript has a simplified [`@GDScript.preload`](#class_@gdscript_method_preload)
 
 |||
 |:-:|:--|
-| `void`                                            | [`add_resource`](#class_resourcepreloader_method_add_resource) ( name: [`StringName`](class_stringname.md), resource: [`Resource`](class_resource.md) )          |
-| [`Resource`](class_resource.md)                   | [`get_resource`](#class_resourcepreloader_method_get_resource) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_resource_list`](#class_resourcepreloader_method_get_resource_list) ( ) const[^const]                                                                       |
-| [`bool`](class_bool.md)                           | [`has_resource`](#class_resourcepreloader_method_has_resource) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
-| `void`                                            | [`remove_resource`](#class_resourcepreloader_method_remove_resource) ( name: [`StringName`](class_stringname.md) )                                               |
-| `void`                                            | [`rename_resource`](#class_resourcepreloader_method_rename_resource) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) ) |
+| `void`                                            | [`add_resource`](class_resourcepreloadermd#class_resourcepreloader_method_add_resource) ( name: [`StringName`](class_stringname.md), resource: [`Resource`](class_resource.md) )          |
+| [`Resource`](class_resource.md)                   | [`get_resource`](class_resourcepreloadermd#class_resourcepreloader_method_get_resource) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_resource_list`](class_resourcepreloadermd#class_resourcepreloader_method_get_resource_list) ( ) const[^const]                                                                       |
+| [`bool`](class_bool.md)                           | [`has_resource`](class_resourcepreloadermd#class_resourcepreloader_method_has_resource) ( name: [`StringName`](class_stringname.md) ) const[^const]                                       |
+| `void`                                            | [`remove_resource`](class_resourcepreloadermd#class_resourcepreloader_method_remove_resource) ( name: [`StringName`](class_stringname.md) )                                               |
+| `void`                                            | [`rename_resource`](class_resourcepreloadermd#class_resourcepreloader_method_rename_resource) ( name: [`StringName`](class_stringname.md), newname: [`StringName`](class_stringname.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

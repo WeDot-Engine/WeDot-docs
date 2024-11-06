@@ -49,23 +49,23 @@ In GDScript, signals can be declared with the `signal` keyword. In C#, you may u
 
 |||
 |:-:|:--|
-| [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( )                                                                                  |
-| [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( from: [`Signal`](class_signal.md) )                                                |
-| [`Signal`](class_signal.md) | [`Signal`](#class_signal_constructor_signal) ( object: [`Object`](class_object.md), signal: [`StringName`](class_stringname.md) ) |
+| [`Signal`](class_signal.md) | [`Signal`](class_signal.md#class_signal_constructor_signal) ( )                                                                                  |
+| [`Signal`](class_signal.md) | [`Signal`](class_signal.md#class_signal_constructor_signal) ( from: [`Signal`](class_signal.md) )                                                |
+| [`Signal`](class_signal.md) | [`Signal`](class_signal.md#class_signal_constructor_signal) ( object: [`Object`](class_object.md), signal: [`StringName`](class_stringname.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)               | [`connect`](#class_signal_method_connect) ( callable: [`Callable`](class_callable.md), flags: [`int`](class_int.md) = 0 ) |
-| `void`                              | [`disconnect`](#class_signal_method_disconnect) ( callable: [`Callable`](class_callable.md) )                             |
-| `void`                              | [`emit`](#class_signal_method_emit) ( ... ) vararg[^vararg] const[^const]                                                 |
-| [`Array`](class_array.md)           | [`get_connections`](#class_signal_method_get_connections) ( ) const[^const]                                               |
-| [`StringName`](class_stringname.md) | [`get_name`](#class_signal_method_get_name) ( ) const[^const]                                                             |
-| [`Object`](class_object.md)         | [`get_object`](#class_signal_method_get_object) ( ) const[^const]                                                         |
-| [`int`](class_int.md)               | [`get_object_id`](#class_signal_method_get_object_id) ( ) const[^const]                                                   |
-| [`bool`](class_bool.md)             | [`is_connected`](#class_signal_method_is_connected) ( callable: [`Callable`](class_callable.md) ) const[^const]           |
-| [`bool`](class_bool.md)             | [`is_null`](#class_signal_method_is_null) ( ) const[^const]                                                               |
+| [`int`](class_int.md)               | [`connect`](class_signalmd#class_signal_method_connect) ( callable: [`Callable`](class_callable.md), flags: [`int`](class_int.md) = 0 ) |
+| `void`                              | [`disconnect`](class_signalmd#class_signal_method_disconnect) ( callable: [`Callable`](class_callable.md) )                             |
+| `void`                              | [`emit`](class_signalmd#class_signal_method_emit) ( ... ) vararg[^vararg] const[^const]                                                 |
+| [`Array`](class_array.md)           | [`get_connections`](class_signalmd#class_signal_method_get_connections) ( ) const[^const]                                               |
+| [`StringName`](class_stringname.md) | [`get_name`](class_signalmd#class_signal_method_get_name) ( ) const[^const]                                                             |
+| [`Object`](class_object.md)         | [`get_object`](class_signalmd#class_signal_method_get_object) ( ) const[^const]                                                         |
+| [`int`](class_int.md)               | [`get_object_id`](class_signalmd#class_signal_method_get_object_id) ( ) const[^const]                                                   |
+| [`bool`](class_bool.md)             | [`is_connected`](class_signalmd#class_signal_method_is_connected) ( callable: [`Callable`](class_callable.md) ) const[^const]           |
+| [`bool`](class_bool.md)             | [`is_null`](class_signalmd#class_signal_method_is_null) ( ) const[^const]                                                               |
 
 ## 运算符
 

@@ -37,12 +37,12 @@ The default use of **AcceptDialog** is to allow it to only be accepted or closed
 
 |||
 |:-:|:--|
-| [`Button`](class_button.md) | [`add_button`](#class_acceptdialog_method_add_button) ( text: [`String`](class_string.md), right: [`bool`](class_bool.md) = false, action: [`String`](class_string.md) = "" ) |
-| [`Button`](class_button.md) | [`add_cancel_button`](#class_acceptdialog_method_add_cancel_button) ( name: [`String`](class_string.md) )                                                                     |
-| [`Label`](class_label.md)   | [`get_label`](#class_acceptdialog_method_get_label) ( )                                                                                                                       |
-| [`Button`](class_button.md) | [`get_ok_button`](#class_acceptdialog_method_get_ok_button) ( )                                                                                                               |
-| `void`                      | [`register_text_enter`](#class_acceptdialog_method_register_text_enter) ( line_edit: [`LineEdit`](class_lineedit.md) )                                                        |
-| `void`                      | [`remove_button`](#class_acceptdialog_method_remove_button) ( button: [`Button`](class_button.md) )                                                                           |
+| [`Button`](class_button.md) | [`add_button`](class_acceptdialogmd#class_acceptdialog_method_add_button) ( text: [`String`](class_string.md), right: [`bool`](class_bool.md) = false, action: [`String`](class_string.md) = "" ) |
+| [`Button`](class_button.md) | [`add_cancel_button`](class_acceptdialogmd#class_acceptdialog_method_add_cancel_button) ( name: [`String`](class_string.md) )                                                                     |
+| [`Label`](class_label.md)   | [`get_label`](class_acceptdialogmd#class_acceptdialog_method_get_label) ( )                                                                                                                       |
+| [`Button`](class_button.md) | [`get_ok_button`](class_acceptdialogmd#class_acceptdialog_method_get_ok_button) ( )                                                                                                               |
+| `void`                      | [`register_text_enter`](class_acceptdialogmd#class_acceptdialog_method_register_text_enter) ( line_edit: [`LineEdit`](class_lineedit.md) )                                                        |
+| `void`                      | [`remove_button`](class_acceptdialogmd#class_acceptdialog_method_remove_button) ( button: [`Button`](class_button.md) )                                                                           |
 
 ## 主题属性
 

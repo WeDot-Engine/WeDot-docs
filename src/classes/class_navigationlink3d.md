@@ -33,15 +33,15 @@ A link between two positions on [`NavigationRegion3D`](class_navigationregion3d.
 
 |||
 |:-:|:--|
-| [`Vector3`](class_vector3.md) | [`get_global_end_position`](#class_navigationlink3d_method_get_global_end_position) ( ) const[^const]                                                             |
-| [`Vector3`](class_vector3.md) | [`get_global_start_position`](#class_navigationlink3d_method_get_global_start_position) ( ) const[^const]                                                         |
-| [`bool`](class_bool.md)       | [`get_navigation_layer_value`](#class_navigationlink3d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`RID`](class_rid.md)         | [`get_navigation_map`](#class_navigationlink3d_method_get_navigation_map) ( ) const[^const]                                                                       |
-| [`RID`](class_rid.md)         | [`get_rid`](#class_navigationlink3d_method_get_rid) ( ) const[^const]                                                                                             |
-| `void`                        | [`set_global_end_position`](#class_navigationlink3d_method_set_global_end_position) ( position: [`Vector3`](class_vector3.md) )                                   |
-| `void`                        | [`set_global_start_position`](#class_navigationlink3d_method_set_global_start_position) ( position: [`Vector3`](class_vector3.md) )                               |
-| `void`                        | [`set_navigation_layer_value`](#class_navigationlink3d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                        | [`set_navigation_map`](#class_navigationlink3d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
+| [`Vector3`](class_vector3.md) | [`get_global_end_position`](class_navigationlink3dmd#class_navigationlink3d_method_get_global_end_position) ( ) const[^const]                                                             |
+| [`Vector3`](class_vector3.md) | [`get_global_start_position`](class_navigationlink3dmd#class_navigationlink3d_method_get_global_start_position) ( ) const[^const]                                                         |
+| [`bool`](class_bool.md)       | [`get_navigation_layer_value`](class_navigationlink3dmd#class_navigationlink3d_method_get_navigation_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`RID`](class_rid.md)         | [`get_navigation_map`](class_navigationlink3dmd#class_navigationlink3d_method_get_navigation_map) ( ) const[^const]                                                                       |
+| [`RID`](class_rid.md)         | [`get_rid`](class_navigationlink3dmd#class_navigationlink3d_method_get_rid) ( ) const[^const]                                                                                             |
+| `void`                        | [`set_global_end_position`](class_navigationlink3dmd#class_navigationlink3d_method_set_global_end_position) ( position: [`Vector3`](class_vector3.md) )                                   |
+| `void`                        | [`set_global_start_position`](class_navigationlink3dmd#class_navigationlink3d_method_set_global_start_position) ( position: [`Vector3`](class_vector3.md) )                               |
+| `void`                        | [`set_navigation_layer_value`](class_navigationlink3dmd#class_navigationlink3d_method_set_navigation_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                        | [`set_navigation_map`](class_navigationlink3dmd#class_navigationlink3d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                               |
 
 <!-- rst-class:: classref-section-separator -->
 

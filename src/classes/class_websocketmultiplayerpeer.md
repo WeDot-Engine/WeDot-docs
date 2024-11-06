@@ -32,11 +32,11 @@ Base class for WebSocket server and client, allowing them to be used as multipla
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)         | [`create_client`](#class_websocketmultiplayerpeer_method_create_client) ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null )                                             |
-| [Error](#enum_@globalscope_error)         | [`create_server`](#class_websocketmultiplayerpeer_method_create_server) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*", tls_server_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
-| [`WebSocketPeer`](class_websocketpeer.md) | [`get_peer`](#class_websocketmultiplayerpeer_method_get_peer) ( peer_id: [`int`](class_int.md) ) const[^const]                                                                                                           |
-| [`String`](class_string.md)               | [`get_peer_address`](#class_websocketmultiplayerpeer_method_get_peer_address) ( id: [`int`](class_int.md) ) const[^const]                                                                                                |
-| [`int`](class_int.md)                     | [`get_peer_port`](#class_websocketmultiplayerpeer_method_get_peer_port) ( id: [`int`](class_int.md) ) const[^const]                                                                                                      |
+| [Error](#enum_@globalscope_error)         | [`create_client`](class_websocketmultiplayerpeermd#class_websocketmultiplayerpeer_method_create_client) ( url: [`String`](class_string.md), tls_client_options: [`TLSOptions`](class_tlsoptions.md) = null )                                             |
+| [Error](#enum_@globalscope_error)         | [`create_server`](class_websocketmultiplayerpeermd#class_websocketmultiplayerpeer_method_create_server) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*", tls_server_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
+| [`WebSocketPeer`](class_websocketpeer.md) | [`get_peer`](class_websocketmultiplayerpeermd#class_websocketmultiplayerpeer_method_get_peer) ( peer_id: [`int`](class_int.md) ) const[^const]                                                                                                           |
+| [`String`](class_string.md)               | [`get_peer_address`](class_websocketmultiplayerpeermd#class_websocketmultiplayerpeer_method_get_peer_address) ( id: [`int`](class_int.md) ) const[^const]                                                                                                |
+| [`int`](class_int.md)                     | [`get_peer_port`](class_websocketmultiplayerpeermd#class_websocketmultiplayerpeer_method_get_peer_port) ( id: [`int`](class_int.md) ) const[^const]                                                                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 

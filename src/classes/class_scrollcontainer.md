@@ -35,9 +35,9 @@ A container used to provide a child control with scrollbars when needed. Scrollb
 
 |||
 |:-:|:--|
-| `void`                              | [`ensure_control_visible`](#class_scrollcontainer_method_ensure_control_visible) ( control: [`Control`](class_control.md) ) |
-| [`HScrollBar`](class_hscrollbar.md) | [`get_h_scroll_bar`](#class_scrollcontainer_method_get_h_scroll_bar) ( )                                                    |
-| [`VScrollBar`](class_vscrollbar.md) | [`get_v_scroll_bar`](#class_scrollcontainer_method_get_v_scroll_bar) ( )                                                    |
+| `void`                              | [`ensure_control_visible`](class_scrollcontainermd#class_scrollcontainer_method_ensure_control_visible) ( control: [`Control`](class_control.md) ) |
+| [`HScrollBar`](class_hscrollbar.md) | [`get_h_scroll_bar`](class_scrollcontainermd#class_scrollcontainer_method_get_h_scroll_bar) ( )                                                    |
+| [`VScrollBar`](class_vscrollbar.md) | [`get_v_scroll_bar`](class_scrollcontainermd#class_scrollcontainer_method_get_v_scroll_bar) ( )                                                    |
 
 ## 主题属性
 

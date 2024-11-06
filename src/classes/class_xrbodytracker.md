@@ -31,10 +31,10 @@ Use [`XRBodyModifier3D`](class_xrbodymodifier3d.md) to animate a body mesh using
 
 |||
 |:-:|:--|
-| [JointFlags](#enum_xrbodytracker_jointflags) | [`get_joint_flags`](#class_xrbodytracker_method_get_joint_flags) ( joint: [Joint](#enum_xrbodytracker_joint) ) const[^const]                                             |
-| [`Transform3D`](class_transform3d.md)        | [`get_joint_transform`](#class_xrbodytracker_method_get_joint_transform) ( joint: [Joint](#enum_xrbodytracker_joint) ) const[^const]                                     |
-| `void`                                       | [`set_joint_flags`](#class_xrbodytracker_method_set_joint_flags) ( joint: [Joint](#enum_xrbodytracker_joint), flags: [JointFlags](#enum_xrbodytracker_jointflags) )      |
-| `void`                                       | [`set_joint_transform`](#class_xrbodytracker_method_set_joint_transform) ( joint: [Joint](#enum_xrbodytracker_joint), transform: [`Transform3D`](class_transform3d.md) ) |
+| [JointFlags](#enum_xrbodytracker_jointflags) | [`get_joint_flags`](class_xrbodytrackermd#class_xrbodytracker_method_get_joint_flags) ( joint: [Joint](#enum_xrbodytracker_joint) ) const[^const]                                             |
+| [`Transform3D`](class_transform3d.md)        | [`get_joint_transform`](class_xrbodytrackermd#class_xrbodytracker_method_get_joint_transform) ( joint: [Joint](#enum_xrbodytracker_joint) ) const[^const]                                     |
+| `void`                                       | [`set_joint_flags`](class_xrbodytrackermd#class_xrbodytracker_method_set_joint_flags) ( joint: [Joint](#enum_xrbodytracker_joint), flags: [JointFlags](#enum_xrbodytracker_jointflags) )      |
+| `void`                                       | [`set_joint_transform`](class_xrbodytrackermd#class_xrbodytracker_method_set_joint_transform) ( joint: [Joint](#enum_xrbodytracker_joint), transform: [`Transform3D`](class_transform3d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

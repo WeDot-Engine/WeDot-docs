@@ -27,7 +27,7 @@ Base resource type for all video streams. Classes that derive from **VideoStream
 
 |||
 |:-:|:--|
-| [`VideoStreamPlayback`](class_videostreamplayback.md) | [`_instantiate_playback`](#class_videostream_private_method__instantiate_playback) ( ) virtual[^virtual] |
+| [`VideoStreamPlayback`](class_videostreamplayback.md) | [`_instantiate_playback`](class_videostreammd#class_videostream_private_method__instantiate_playback) ( ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

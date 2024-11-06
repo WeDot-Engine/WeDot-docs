@@ -29,37 +29,37 @@ StreamPeer is an abstract base class mostly used for stream-based protocols (suc
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`get_8`](#class_streampeer_method_get_8) ( )                                                                                         |
-| [`int`](class_int.md)             | [`get_16`](#class_streampeer_method_get_16) ( )                                                                                       |
-| [`int`](class_int.md)             | [`get_32`](#class_streampeer_method_get_32) ( )                                                                                       |
-| [`int`](class_int.md)             | [`get_64`](#class_streampeer_method_get_64) ( )                                                                                       |
-| [`int`](class_int.md)             | [`get_available_bytes`](#class_streampeer_method_get_available_bytes) ( ) const[^const]                                               |
-| [`Array`](class_array.md)         | [`get_data`](#class_streampeer_method_get_data) ( bytes: [`int`](class_int.md) )                                                      |
-| [`float`](class_float.md)         | [`get_double`](#class_streampeer_method_get_double) ( )                                                                               |
-| [`float`](class_float.md)         | [`get_float`](#class_streampeer_method_get_float) ( )                                                                                 |
-| [`Array`](class_array.md)         | [`get_partial_data`](#class_streampeer_method_get_partial_data) ( bytes: [`int`](class_int.md) )                                      |
-| [`String`](class_string.md)       | [`get_string`](#class_streampeer_method_get_string) ( bytes: [`int`](class_int.md) = -1 )                                             |
-| [`int`](class_int.md)             | [`get_u8`](#class_streampeer_method_get_u8) ( )                                                                                       |
-| [`int`](class_int.md)             | [`get_u16`](#class_streampeer_method_get_u16) ( )                                                                                     |
-| [`int`](class_int.md)             | [`get_u32`](#class_streampeer_method_get_u32) ( )                                                                                     |
-| [`int`](class_int.md)             | [`get_u64`](#class_streampeer_method_get_u64) ( )                                                                                     |
-| [`String`](class_string.md)       | [`get_utf8_string`](#class_streampeer_method_get_utf8_string) ( bytes: [`int`](class_int.md) = -1 )                                   |
-| [`Variant`](class_variant.md)     | [`get_var`](#class_streampeer_method_get_var) ( allow_objects: [`bool`](class_bool.md) = false )                                      |
-| `void`                            | [`put_8`](#class_streampeer_method_put_8) ( value: [`int`](class_int.md) )                                                            |
-| `void`                            | [`put_16`](#class_streampeer_method_put_16) ( value: [`int`](class_int.md) )                                                          |
-| `void`                            | [`put_32`](#class_streampeer_method_put_32) ( value: [`int`](class_int.md) )                                                          |
-| `void`                            | [`put_64`](#class_streampeer_method_put_64) ( value: [`int`](class_int.md) )                                                          |
-| [Error](#enum_@globalscope_error) | [`put_data`](#class_streampeer_method_put_data) ( data: [`PackedByteArray`](class_packedbytearray.md) )                               |
-| `void`                            | [`put_double`](#class_streampeer_method_put_double) ( value: [`float`](class_float.md) )                                              |
-| `void`                            | [`put_float`](#class_streampeer_method_put_float) ( value: [`float`](class_float.md) )                                                |
-| [`Array`](class_array.md)         | [`put_partial_data`](#class_streampeer_method_put_partial_data) ( data: [`PackedByteArray`](class_packedbytearray.md) )               |
-| `void`                            | [`put_string`](#class_streampeer_method_put_string) ( value: [`String`](class_string.md) )                                            |
-| `void`                            | [`put_u8`](#class_streampeer_method_put_u8) ( value: [`int`](class_int.md) )                                                          |
-| `void`                            | [`put_u16`](#class_streampeer_method_put_u16) ( value: [`int`](class_int.md) )                                                        |
-| `void`                            | [`put_u32`](#class_streampeer_method_put_u32) ( value: [`int`](class_int.md) )                                                        |
-| `void`                            | [`put_u64`](#class_streampeer_method_put_u64) ( value: [`int`](class_int.md) )                                                        |
-| `void`                            | [`put_utf8_string`](#class_streampeer_method_put_utf8_string) ( value: [`String`](class_string.md) )                                  |
-| `void`                            | [`put_var`](#class_streampeer_method_put_var) ( value: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false ) |
+| [`int`](class_int.md)             | [`get_8`](class_streampeermd#class_streampeer_method_get_8) ( )                                                                                         |
+| [`int`](class_int.md)             | [`get_16`](class_streampeermd#class_streampeer_method_get_16) ( )                                                                                       |
+| [`int`](class_int.md)             | [`get_32`](class_streampeermd#class_streampeer_method_get_32) ( )                                                                                       |
+| [`int`](class_int.md)             | [`get_64`](class_streampeermd#class_streampeer_method_get_64) ( )                                                                                       |
+| [`int`](class_int.md)             | [`get_available_bytes`](class_streampeermd#class_streampeer_method_get_available_bytes) ( ) const[^const]                                               |
+| [`Array`](class_array.md)         | [`get_data`](class_streampeermd#class_streampeer_method_get_data) ( bytes: [`int`](class_int.md) )                                                      |
+| [`float`](class_float.md)         | [`get_double`](class_streampeermd#class_streampeer_method_get_double) ( )                                                                               |
+| [`float`](class_float.md)         | [`get_float`](class_streampeermd#class_streampeer_method_get_float) ( )                                                                                 |
+| [`Array`](class_array.md)         | [`get_partial_data`](class_streampeermd#class_streampeer_method_get_partial_data) ( bytes: [`int`](class_int.md) )                                      |
+| [`String`](class_string.md)       | [`get_string`](class_streampeermd#class_streampeer_method_get_string) ( bytes: [`int`](class_int.md) = -1 )                                             |
+| [`int`](class_int.md)             | [`get_u8`](class_streampeermd#class_streampeer_method_get_u8) ( )                                                                                       |
+| [`int`](class_int.md)             | [`get_u16`](class_streampeermd#class_streampeer_method_get_u16) ( )                                                                                     |
+| [`int`](class_int.md)             | [`get_u32`](class_streampeermd#class_streampeer_method_get_u32) ( )                                                                                     |
+| [`int`](class_int.md)             | [`get_u64`](class_streampeermd#class_streampeer_method_get_u64) ( )                                                                                     |
+| [`String`](class_string.md)       | [`get_utf8_string`](class_streampeermd#class_streampeer_method_get_utf8_string) ( bytes: [`int`](class_int.md) = -1 )                                   |
+| [`Variant`](class_variant.md)     | [`get_var`](class_streampeermd#class_streampeer_method_get_var) ( allow_objects: [`bool`](class_bool.md) = false )                                      |
+| `void`                            | [`put_8`](class_streampeermd#class_streampeer_method_put_8) ( value: [`int`](class_int.md) )                                                            |
+| `void`                            | [`put_16`](class_streampeermd#class_streampeer_method_put_16) ( value: [`int`](class_int.md) )                                                          |
+| `void`                            | [`put_32`](class_streampeermd#class_streampeer_method_put_32) ( value: [`int`](class_int.md) )                                                          |
+| `void`                            | [`put_64`](class_streampeermd#class_streampeer_method_put_64) ( value: [`int`](class_int.md) )                                                          |
+| [Error](#enum_@globalscope_error) | [`put_data`](class_streampeermd#class_streampeer_method_put_data) ( data: [`PackedByteArray`](class_packedbytearray.md) )                               |
+| `void`                            | [`put_double`](class_streampeermd#class_streampeer_method_put_double) ( value: [`float`](class_float.md) )                                              |
+| `void`                            | [`put_float`](class_streampeermd#class_streampeer_method_put_float) ( value: [`float`](class_float.md) )                                                |
+| [`Array`](class_array.md)         | [`put_partial_data`](class_streampeermd#class_streampeer_method_put_partial_data) ( data: [`PackedByteArray`](class_packedbytearray.md) )               |
+| `void`                            | [`put_string`](class_streampeermd#class_streampeer_method_put_string) ( value: [`String`](class_string.md) )                                            |
+| `void`                            | [`put_u8`](class_streampeermd#class_streampeer_method_put_u8) ( value: [`int`](class_int.md) )                                                          |
+| `void`                            | [`put_u16`](class_streampeermd#class_streampeer_method_put_u16) ( value: [`int`](class_int.md) )                                                        |
+| `void`                            | [`put_u32`](class_streampeermd#class_streampeer_method_put_u32) ( value: [`int`](class_int.md) )                                                        |
+| `void`                            | [`put_u64`](class_streampeermd#class_streampeer_method_put_u64) ( value: [`int`](class_int.md) )                                                        |
+| `void`                            | [`put_utf8_string`](class_streampeermd#class_streampeer_method_put_utf8_string) ( value: [`String`](class_string.md) )                                  |
+| `void`                            | [`put_var`](class_streampeermd#class_streampeer_method_put_var) ( value: [`Variant`](class_variant.md), full_objects: [`bool`](class_bool.md) = false ) |
 
 <!-- rst-class:: classref-section-separator -->
 

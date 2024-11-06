@@ -53,8 +53,8 @@ Command key names use slash delimiters to distinguish sections, for example: `"e
 
 |||
 |:-:|:--|
-| `void` | [`add_command`](#class_editorcommandpalette_method_add_command) ( command_name: [`String`](class_string.md), key_name: [`String`](class_string.md), binded_callable: [`Callable`](class_callable.md), shortcut_text: [`String`](class_string.md) = "None" ) |
-| `void` | [`remove_command`](#class_editorcommandpalette_method_remove_command) ( key_name: [`String`](class_string.md) )                                                                                                                                             |
+| `void` | [`add_command`](class_editorcommandpalettemd#class_editorcommandpalette_method_add_command) ( command_name: [`String`](class_string.md), key_name: [`String`](class_string.md), binded_callable: [`Callable`](class_callable.md), shortcut_text: [`String`](class_string.md) = "None" ) |
+| `void` | [`remove_command`](class_editorcommandpalettemd#class_editorcommandpalette_method_remove_command) ( key_name: [`String`](class_string.md) )                                                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 

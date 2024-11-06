@@ -19,13 +19,13 @@ A helper to handle dictionaries which look like JSONRPC documents.
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`make_notification`](#class_jsonrpc_method_make_notification) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md) )                                                    |
-| [`Dictionary`](class_dictionary.md) | [`make_request`](#class_jsonrpc_method_make_request) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                           |
-| [`Dictionary`](class_dictionary.md) | [`make_response`](#class_jsonrpc_method_make_response) ( result: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                                                              |
-| [`Dictionary`](class_dictionary.md) | [`make_response_error`](#class_jsonrpc_method_make_response_error) ( code: [`int`](class_int.md), message: [`String`](class_string.md), id: [`Variant`](class_variant.md) = null ) const[^const] |
-| [`Variant`](class_variant.md)       | [`process_action`](#class_jsonrpc_method_process_action) ( action: [`Variant`](class_variant.md), recurse: [`bool`](class_bool.md) = false )                                                     |
-| [`String`](class_string.md)         | [`process_string`](#class_jsonrpc_method_process_string) ( action: [`String`](class_string.md) )                                                                                                 |
-| `void`                              | [`set_scope`](#class_jsonrpc_method_set_scope) ( scope: [`String`](class_string.md), target: [`Object`](class_object.md) )                                                                       |
+| [`Dictionary`](class_dictionary.md) | [`make_notification`](class_jsonrpcmd#class_jsonrpc_method_make_notification) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md) )                                                    |
+| [`Dictionary`](class_dictionary.md) | [`make_request`](class_jsonrpcmd#class_jsonrpc_method_make_request) ( method: [`String`](class_string.md), params: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                           |
+| [`Dictionary`](class_dictionary.md) | [`make_response`](class_jsonrpcmd#class_jsonrpc_method_make_response) ( result: [`Variant`](class_variant.md), id: [`Variant`](class_variant.md) )                                                              |
+| [`Dictionary`](class_dictionary.md) | [`make_response_error`](class_jsonrpcmd#class_jsonrpc_method_make_response_error) ( code: [`int`](class_int.md), message: [`String`](class_string.md), id: [`Variant`](class_variant.md) = null ) const[^const] |
+| [`Variant`](class_variant.md)       | [`process_action`](class_jsonrpcmd#class_jsonrpc_method_process_action) ( action: [`Variant`](class_variant.md), recurse: [`bool`](class_bool.md) = false )                                                     |
+| [`String`](class_string.md)         | [`process_string`](class_jsonrpcmd#class_jsonrpc_method_process_string) ( action: [`String`](class_string.md) )                                                                                                 |
+| `void`                              | [`set_scope`](class_jsonrpcmd#class_jsonrpc_method_set_scope) ( scope: [`String`](class_string.md), target: [`Object`](class_object.md) )                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -26,9 +26,9 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| `void`                                        | [`add_id`](#class_rduniform_method_add_id) ( id: [`RID`](class_rid.md) ) |
-| `void`                                        | [`clear_ids`](#class_rduniform_method_clear_ids) ( )                     |
-| [Array](class_array.md) [`RID`](class_rid.md) | [`get_ids`](#class_rduniform_method_get_ids) ( ) const[^const]           |
+| `void`                                        | [`add_id`](class_rduniformmd#class_rduniform_method_add_id) ( id: [`RID`](class_rid.md) ) |
+| `void`                                        | [`clear_ids`](class_rduniformmd#class_rduniform_method_clear_ids) ( )                     |
+| [Array](class_array.md) [`RID`](class_rid.md) | [`get_ids`](class_rduniformmd#class_rduniform_method_get_ids) ( ) const[^const]           |
 
 <!-- rst-class:: classref-section-separator -->
 

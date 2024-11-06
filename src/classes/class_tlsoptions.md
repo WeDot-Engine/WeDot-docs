@@ -39,15 +39,15 @@ Objects of this class cannot be instantiated directly, and one of the static met
 
 |||
 |:-:|:--|
-| [`TLSOptions`](class_tlsoptions.md)           | [`client`](#class_tlsoptions_method_client) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null, common_name_override: [`String`](class_string.md) = "" ) static[^static] |
-| [`TLSOptions`](class_tlsoptions.md)           | [`client_unsafe`](#class_tlsoptions_method_client_unsafe) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null ) static[^static]                                           |
-| [`String`](class_string.md)                   | [`get_common_name_override`](#class_tlsoptions_method_get_common_name_override) ( ) const[^const]                                                                                           |
-| [`X509Certificate`](class_x509certificate.md) | [`get_own_certificate`](#class_tlsoptions_method_get_own_certificate) ( ) const[^const]                                                                                                     |
-| [`CryptoKey`](class_cryptokey.md)             | [`get_private_key`](#class_tlsoptions_method_get_private_key) ( ) const[^const]                                                                                                             |
-| [`X509Certificate`](class_x509certificate.md) | [`get_trusted_ca_chain`](#class_tlsoptions_method_get_trusted_ca_chain) ( ) const[^const]                                                                                                   |
-| [`bool`](class_bool.md)                       | [`is_server`](#class_tlsoptions_method_is_server) ( ) const[^const]                                                                                                                         |
-| [`bool`](class_bool.md)                       | [`is_unsafe_client`](#class_tlsoptions_method_is_unsafe_client) ( ) const[^const]                                                                                                           |
-| [`TLSOptions`](class_tlsoptions.md)           | [`server`](#class_tlsoptions_method_server) ( key: [`CryptoKey`](class_cryptokey.md), certificate: [`X509Certificate`](class_x509certificate.md) ) static[^static]                          |
+| [`TLSOptions`](class_tlsoptions.md)           | [`client`](class_tlsoptionsmd#class_tlsoptions_method_client) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null, common_name_override: [`String`](class_string.md) = "" ) static[^static] |
+| [`TLSOptions`](class_tlsoptions.md)           | [`client_unsafe`](class_tlsoptionsmd#class_tlsoptions_method_client_unsafe) ( trusted_chain: [`X509Certificate`](class_x509certificate.md) = null ) static[^static]                                           |
+| [`String`](class_string.md)                   | [`get_common_name_override`](class_tlsoptionsmd#class_tlsoptions_method_get_common_name_override) ( ) const[^const]                                                                                           |
+| [`X509Certificate`](class_x509certificate.md) | [`get_own_certificate`](class_tlsoptionsmd#class_tlsoptions_method_get_own_certificate) ( ) const[^const]                                                                                                     |
+| [`CryptoKey`](class_cryptokey.md)             | [`get_private_key`](class_tlsoptionsmd#class_tlsoptions_method_get_private_key) ( ) const[^const]                                                                                                             |
+| [`X509Certificate`](class_x509certificate.md) | [`get_trusted_ca_chain`](class_tlsoptionsmd#class_tlsoptions_method_get_trusted_ca_chain) ( ) const[^const]                                                                                                   |
+| [`bool`](class_bool.md)                       | [`is_server`](class_tlsoptionsmd#class_tlsoptions_method_is_server) ( ) const[^const]                                                                                                                         |
+| [`bool`](class_bool.md)                       | [`is_unsafe_client`](class_tlsoptionsmd#class_tlsoptions_method_is_unsafe_client) ( ) const[^const]                                                                                                           |
+| [`TLSOptions`](class_tlsoptions.md)           | [`server`](class_tlsoptionsmd#class_tlsoptions_method_server) ( key: [`CryptoKey`](class_cryptokey.md), certificate: [`X509Certificate`](class_x509certificate.md) ) static[^static]                          |
 
 <!-- rst-class:: classref-section-separator -->
 

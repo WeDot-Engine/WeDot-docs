@@ -30,8 +30,8 @@ The AudioStreamOggVorbis class is a specialized [`AudioStream`](class_audiostrea
 
 |||
 |:-:|:--|
-| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](#class_audiostreamoggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
-| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](#class_audiostreamoggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
+| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_buffer`](class_audiostreamoggvorbismd#class_audiostreamoggvorbis_method_load_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) ) static[^static] |
+| [`AudioStreamOggVorbis`](class_audiostreamoggvorbis.md) | [`load_from_file`](class_audiostreamoggvorbismd#class_audiostreamoggvorbis_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                         |
 
 <!-- rst-class:: classref-section-separator -->
 

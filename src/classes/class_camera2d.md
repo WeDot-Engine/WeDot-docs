@@ -57,17 +57,17 @@ Note that the **Camera2D** node's `position` doesn't represent the actual positi
 
 |||
 |:-:|:--|
-| `void`                        | [`align`](#class_camera2d_method_align) ( )                                                                                                     |
-| `void`                        | [`force_update_scroll`](#class_camera2d_method_force_update_scroll) ( )                                                                         |
-| [`float`](class_float.md)     | [`get_drag_margin`](#class_camera2d_method_get_drag_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                           |
-| [`int`](class_int.md)         | [`get_limit`](#class_camera2d_method_get_limit) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                       |
-| [`Vector2`](class_vector2.md) | [`get_screen_center_position`](#class_camera2d_method_get_screen_center_position) ( ) const[^const]                                             |
-| [`Vector2`](class_vector2.md) | [`get_target_position`](#class_camera2d_method_get_target_position) ( ) const[^const]                                                           |
-| [`bool`](class_bool.md)       | [`is_current`](#class_camera2d_method_is_current) ( ) const[^const]                                                                             |
-| `void`                        | [`make_current`](#class_camera2d_method_make_current) ( )                                                                                       |
-| `void`                        | [`reset_smoothing`](#class_camera2d_method_reset_smoothing) ( )                                                                                 |
-| `void`                        | [`set_drag_margin`](#class_camera2d_method_set_drag_margin) ( margin: [Side](#enum_@globalscope_side), drag_margin: [`float`](class_float.md) ) |
-| `void`                        | [`set_limit`](#class_camera2d_method_set_limit) ( margin: [Side](#enum_@globalscope_side), limit: [`int`](class_int.md) )                       |
+| `void`                        | [`align`](class_camera2dmd#class_camera2d_method_align) ( )                                                                                                     |
+| `void`                        | [`force_update_scroll`](class_camera2dmd#class_camera2d_method_force_update_scroll) ( )                                                                         |
+| [`float`](class_float.md)     | [`get_drag_margin`](class_camera2dmd#class_camera2d_method_get_drag_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                           |
+| [`int`](class_int.md)         | [`get_limit`](class_camera2dmd#class_camera2d_method_get_limit) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                                       |
+| [`Vector2`](class_vector2.md) | [`get_screen_center_position`](class_camera2dmd#class_camera2d_method_get_screen_center_position) ( ) const[^const]                                             |
+| [`Vector2`](class_vector2.md) | [`get_target_position`](class_camera2dmd#class_camera2d_method_get_target_position) ( ) const[^const]                                                           |
+| [`bool`](class_bool.md)       | [`is_current`](class_camera2dmd#class_camera2d_method_is_current) ( ) const[^const]                                                                             |
+| `void`                        | [`make_current`](class_camera2dmd#class_camera2d_method_make_current) ( )                                                                                       |
+| `void`                        | [`reset_smoothing`](class_camera2dmd#class_camera2d_method_reset_smoothing) ( )                                                                                 |
+| `void`                        | [`set_drag_margin`](class_camera2dmd#class_camera2d_method_set_drag_margin) ( margin: [Side](#enum_@globalscope_side), drag_margin: [`float`](class_float.md) ) |
+| `void`                        | [`set_limit`](class_camera2dmd#class_camera2d_method_set_limit) ( margin: [Side](#enum_@globalscope_side), limit: [`int`](class_int.md) )                       |
 
 <!-- rst-class:: classref-section-separator -->
 

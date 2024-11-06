@@ -36,8 +36,8 @@ Real-time global illumination (GI) probe.
 
 |||
 |:-:|:--|
-| `void` | [`bake`](#class_voxelgi_method_bake) ( from_node: [`Node`](class_node.md) = null, create_visual_debug: [`bool`](class_bool.md) = false ) |
-| `void` | [`debug_bake`](#class_voxelgi_method_debug_bake) ( )                                                                                     |
+| `void` | [`bake`](class_voxelgimd#class_voxelgi_method_bake) ( from_node: [`Node`](class_node.md) = null, create_visual_debug: [`bool`](class_bool.md) = false ) |
+| `void` | [`debug_bake`](class_voxelgimd#class_voxelgi_method_debug_bake) ( )                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

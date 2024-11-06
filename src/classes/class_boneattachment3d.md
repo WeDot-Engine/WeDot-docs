@@ -27,11 +27,11 @@ This node selects a bone in a [`Skeleton3D`](class_skeleton3d.md) and attaches t
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md) | [`get_external_skeleton`](#class_boneattachment3d_method_get_external_skeleton) ( ) const[^const]                                          |
-| [`bool`](class_bool.md)         | [`get_use_external_skeleton`](#class_boneattachment3d_method_get_use_external_skeleton) ( ) const[^const]                                  |
-| `void`                          | [`on_skeleton_update`](#class_boneattachment3d_method_on_skeleton_update) ( )                                                              |
-| `void`                          | [`set_external_skeleton`](#class_boneattachment3d_method_set_external_skeleton) ( external_skeleton: [`NodePath`](class_nodepath.md) )     |
-| `void`                          | [`set_use_external_skeleton`](#class_boneattachment3d_method_set_use_external_skeleton) ( use_external_skeleton: [`bool`](class_bool.md) ) |
+| [`NodePath`](class_nodepath.md) | [`get_external_skeleton`](class_boneattachment3dmd#class_boneattachment3d_method_get_external_skeleton) ( ) const[^const]                                          |
+| [`bool`](class_bool.md)         | [`get_use_external_skeleton`](class_boneattachment3dmd#class_boneattachment3d_method_get_use_external_skeleton) ( ) const[^const]                                  |
+| `void`                          | [`on_skeleton_update`](class_boneattachment3dmd#class_boneattachment3d_method_on_skeleton_update) ( )                                                              |
+| `void`                          | [`set_external_skeleton`](class_boneattachment3dmd#class_boneattachment3d_method_set_external_skeleton) ( external_skeleton: [`NodePath`](class_nodepath.md) )     |
+| `void`                          | [`set_use_external_skeleton`](class_boneattachment3dmd#class_boneattachment3d_method_set_use_external_skeleton) ( use_external_skeleton: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

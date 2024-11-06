@@ -148,8 +148,8 @@ To use **EditorTranslationParserPlugin**, register it using the [`EditorPlugin.a
 
 |||
 |:-:|:--|
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](#class_editortranslationparserplugin_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
-| `void`                                            | [`_parse_file`](#class_editortranslationparserplugin_private_method__parse_file) ( path: [`String`](class_string.md), msgids: [Array](class_array.md) [`String`](class_string.md), msgids_context_plural: [Array](class_array.md) [`Array`](class_array.md) ) virtual[^virtual] |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_recognized_extensions`](class_editortranslationparserpluginmd#class_editortranslationparserplugin_private_method__get_recognized_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
+| `void`                                            | [`_parse_file`](class_editortranslationparserpluginmd#class_editortranslationparserplugin_private_method__parse_file) ( path: [`String`](class_string.md), msgids: [Array](class_array.md) [`String`](class_string.md), msgids_context_plural: [Array](class_array.md) [`Array`](class_array.md) ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

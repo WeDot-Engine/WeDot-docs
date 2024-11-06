@@ -21,8 +21,8 @@ An audio effect instance manipulates the audio it receives for a given effect. T
 
 |||
 |:-:|:--|
-| `void`                  | [`_process`](#class_audioeffectinstance_private_method__process) ( src_buffer: `const void*`, dst_buffer: `AudioFrame*`, frame_count: [`int`](class_int.md) ) virtual[^virtual] |
-| [`bool`](class_bool.md) | [`_process_silence`](#class_audioeffectinstance_private_method__process_silence) ( ) virtual[^virtual] const[^const]                                                            |
+| `void`                  | [`_process`](class_audioeffectinstancemd#class_audioeffectinstance_private_method__process) ( src_buffer: `const void*`, dst_buffer: `AudioFrame*`, frame_count: [`int`](class_int.md) ) virtual[^virtual] |
+| [`bool`](class_bool.md) | [`_process_silence`](class_audioeffectinstancemd#class_audioeffectinstance_private_method__process_silence) ( ) virtual[^virtual] const[^const]                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 

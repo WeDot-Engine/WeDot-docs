@@ -29,10 +29,10 @@ Represents a camera as defined by the base GLTF spec.
 
 |||
 |:-:|:--|
-| [`GLTFCamera`](class_gltfcamera.md) | [`from_dictionary`](#class_gltfcamera_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
-| [`GLTFCamera`](class_gltfcamera.md) | [`from_node`](#class_gltfcamera_method_from_node) ( camera_node: [`Camera3D`](class_camera3d.md) ) static[^static]                |
-| [`Dictionary`](class_dictionary.md) | [`to_dictionary`](#class_gltfcamera_method_to_dictionary) ( ) const[^const]                                                       |
-| [`Camera3D`](class_camera3d.md)     | [`to_node`](#class_gltfcamera_method_to_node) ( ) const[^const]                                                                   |
+| [`GLTFCamera`](class_gltfcamera.md) | [`from_dictionary`](class_gltfcameramd#class_gltfcamera_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static] |
+| [`GLTFCamera`](class_gltfcamera.md) | [`from_node`](class_gltfcameramd#class_gltfcamera_method_from_node) ( camera_node: [`Camera3D`](class_camera3d.md) ) static[^static]                |
+| [`Dictionary`](class_dictionary.md) | [`to_dictionary`](class_gltfcameramd#class_gltfcamera_method_to_dictionary) ( ) const[^const]                                                       |
+| [`Camera3D`](class_camera3d.md)     | [`to_node`](class_gltfcameramd#class_gltfcamera_method_to_node) ( ) const[^const]                                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 

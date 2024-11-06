@@ -84,10 +84,10 @@ Here is an example script implementing a simple **MainLoop**:
 
 |||
 |:-:|:--|
-| `void`                  | [`_finalize`](#class_mainloop_private_method__finalize) ( ) virtual[^virtual]                                                |
-| `void`                  | [`_initialize`](#class_mainloop_private_method__initialize) ( ) virtual[^virtual]                                            |
-| [`bool`](class_bool.md) | [`_physics_process`](#class_mainloop_private_method__physics_process) ( delta: [`float`](class_float.md) ) virtual[^virtual] |
-| [`bool`](class_bool.md) | [`_process`](#class_mainloop_private_method__process) ( delta: [`float`](class_float.md) ) virtual[^virtual]                 |
+| `void`                  | [`_finalize`](class_mainloopmd#class_mainloop_private_method__finalize) ( ) virtual[^virtual]                                                |
+| `void`                  | [`_initialize`](class_mainloopmd#class_mainloop_private_method__initialize) ( ) virtual[^virtual]                                            |
+| [`bool`](class_bool.md) | [`_physics_process`](class_mainloopmd#class_mainloop_private_method__physics_process) ( delta: [`float`](class_float.md) ) virtual[^virtual] |
+| [`bool`](class_bool.md) | [`_process`](class_mainloopmd#class_mainloop_private_method__process) ( delta: [`float`](class_float.md) ) virtual[^virtual]                 |
 
 <!-- rst-class:: classref-section-separator -->
 

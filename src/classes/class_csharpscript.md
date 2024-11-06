@@ -19,7 +19,7 @@ This class represents a C# script. It is the C# equivalent of the [`GDScript`](c
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`new`](#class_csharpscript_method_new) ( ... ) vararg[^vararg] |
+| [`Variant`](class_variant.md) | [`new`](class_csharpscriptmd#class_csharpscript_method_new) ( ... ) vararg[^vararg] |
 
 <!-- rst-class:: classref-section-separator -->
 

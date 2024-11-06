@@ -21,19 +21,19 @@ UDP packet peer. Can be used to send raw UDP packets as well as [`Variant`](clas
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`bind`](#class_packetpeerudp_method_bind) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*", recv_buf_size: [`int`](class_int.md) = 65536 )    |
-| `void`                            | [`close`](#class_packetpeerudp_method_close) ( )                                                                                                                             |
-| [Error](#enum_@globalscope_error) | [`connect_to_host`](#class_packetpeerudp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                          |
-| [`int`](class_int.md)             | [`get_local_port`](#class_packetpeerudp_method_get_local_port) ( ) const[^const]                                                                                             |
-| [`String`](class_string.md)       | [`get_packet_ip`](#class_packetpeerudp_method_get_packet_ip) ( ) const[^const]                                                                                               |
-| [`int`](class_int.md)             | [`get_packet_port`](#class_packetpeerudp_method_get_packet_port) ( ) const[^const]                                                                                           |
-| [`bool`](class_bool.md)           | [`is_bound`](#class_packetpeerudp_method_is_bound) ( ) const[^const]                                                                                                         |
-| [`bool`](class_bool.md)           | [`is_socket_connected`](#class_packetpeerudp_method_is_socket_connected) ( ) const[^const]                                                                                   |
-| [Error](#enum_@globalscope_error) | [`join_multicast_group`](#class_packetpeerudp_method_join_multicast_group) ( multicast_address: [`String`](class_string.md), interface_name: [`String`](class_string.md) )   |
-| [Error](#enum_@globalscope_error) | [`leave_multicast_group`](#class_packetpeerudp_method_leave_multicast_group) ( multicast_address: [`String`](class_string.md), interface_name: [`String`](class_string.md) ) |
-| `void`                            | [`set_broadcast_enabled`](#class_packetpeerudp_method_set_broadcast_enabled) ( enabled: [`bool`](class_bool.md) )                                                            |
-| [Error](#enum_@globalscope_error) | [`set_dest_address`](#class_packetpeerudp_method_set_dest_address) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                        |
-| [Error](#enum_@globalscope_error) | [`wait`](#class_packetpeerudp_method_wait) ( )                                                                                                                               |
+| [Error](#enum_@globalscope_error) | [`bind`](class_packetpeerudpmd#class_packetpeerudp_method_bind) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*", recv_buf_size: [`int`](class_int.md) = 65536 )    |
+| `void`                            | [`close`](class_packetpeerudpmd#class_packetpeerudp_method_close) ( )                                                                                                                             |
+| [Error](#enum_@globalscope_error) | [`connect_to_host`](class_packetpeerudpmd#class_packetpeerudp_method_connect_to_host) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                          |
+| [`int`](class_int.md)             | [`get_local_port`](class_packetpeerudpmd#class_packetpeerudp_method_get_local_port) ( ) const[^const]                                                                                             |
+| [`String`](class_string.md)       | [`get_packet_ip`](class_packetpeerudpmd#class_packetpeerudp_method_get_packet_ip) ( ) const[^const]                                                                                               |
+| [`int`](class_int.md)             | [`get_packet_port`](class_packetpeerudpmd#class_packetpeerudp_method_get_packet_port) ( ) const[^const]                                                                                           |
+| [`bool`](class_bool.md)           | [`is_bound`](class_packetpeerudpmd#class_packetpeerudp_method_is_bound) ( ) const[^const]                                                                                                         |
+| [`bool`](class_bool.md)           | [`is_socket_connected`](class_packetpeerudpmd#class_packetpeerudp_method_is_socket_connected) ( ) const[^const]                                                                                   |
+| [Error](#enum_@globalscope_error) | [`join_multicast_group`](class_packetpeerudpmd#class_packetpeerudp_method_join_multicast_group) ( multicast_address: [`String`](class_string.md), interface_name: [`String`](class_string.md) )   |
+| [Error](#enum_@globalscope_error) | [`leave_multicast_group`](class_packetpeerudpmd#class_packetpeerudp_method_leave_multicast_group) ( multicast_address: [`String`](class_string.md), interface_name: [`String`](class_string.md) ) |
+| `void`                            | [`set_broadcast_enabled`](class_packetpeerudpmd#class_packetpeerudp_method_set_broadcast_enabled) ( enabled: [`bool`](class_bool.md) )                                                            |
+| [Error](#enum_@globalscope_error) | [`set_dest_address`](class_packetpeerudpmd#class_packetpeerudp_method_set_dest_address) ( host: [`String`](class_string.md), port: [`int`](class_int.md) )                                        |
+| [Error](#enum_@globalscope_error) | [`wait`](class_packetpeerudpmd#class_packetpeerudp_method_wait) ( )                                                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 

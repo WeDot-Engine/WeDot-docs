@@ -49,9 +49,9 @@ A heightmap collision shape can also be build by using an [`Image`](class_image.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_max_height`](#class_heightmapshape3d_method_get_max_height) ( ) const[^const]                                                                                                                          |
-| [`float`](class_float.md) | [`get_min_height`](#class_heightmapshape3d_method_get_min_height) ( ) const[^const]                                                                                                                          |
-| `void`                    | [`update_map_data_from_image`](#class_heightmapshape3d_method_update_map_data_from_image) ( image: [`Image`](class_image.md), height_min: [`float`](class_float.md), height_max: [`float`](class_float.md) ) |
+| [`float`](class_float.md) | [`get_max_height`](class_heightmapshape3dmd#class_heightmapshape3d_method_get_max_height) ( ) const[^const]                                                                                                                          |
+| [`float`](class_float.md) | [`get_min_height`](class_heightmapshape3dmd#class_heightmapshape3d_method_get_min_height) ( ) const[^const]                                                                                                                          |
+| `void`                    | [`update_map_data_from_image`](class_heightmapshape3dmd#class_heightmapshape3d_method_update_map_data_from_image) ( image: [`Image`](class_image.md), height_min: [`float`](class_float.md), height_max: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -27,12 +27,12 @@ A **StreamPeerBuffer** object keeps an internal cursor which is the offset in by
 
 |||
 |:-:|:--|
-| `void`                                          | [`clear`](#class_streampeerbuffer_method_clear) ( )                               |
-| [`StreamPeerBuffer`](class_streampeerbuffer.md) | [`duplicate`](#class_streampeerbuffer_method_duplicate) ( ) const[^const]         |
-| [`int`](class_int.md)                           | [`get_position`](#class_streampeerbuffer_method_get_position) ( ) const[^const]   |
-| [`int`](class_int.md)                           | [`get_size`](#class_streampeerbuffer_method_get_size) ( ) const[^const]           |
-| `void`                                          | [`resize`](#class_streampeerbuffer_method_resize) ( size: [`int`](class_int.md) ) |
-| `void`                                          | [`seek`](#class_streampeerbuffer_method_seek) ( position: [`int`](class_int.md) ) |
+| `void`                                          | [`clear`](class_streampeerbuffermd#class_streampeerbuffer_method_clear) ( )                               |
+| [`StreamPeerBuffer`](class_streampeerbuffer.md) | [`duplicate`](class_streampeerbuffermd#class_streampeerbuffer_method_duplicate) ( ) const[^const]         |
+| [`int`](class_int.md)                           | [`get_position`](class_streampeerbuffermd#class_streampeerbuffer_method_get_position) ( ) const[^const]   |
+| [`int`](class_int.md)                           | [`get_size`](class_streampeerbuffermd#class_streampeerbuffer_method_get_size) ( ) const[^const]           |
+| `void`                                          | [`resize`](class_streampeerbuffermd#class_streampeerbuffer_method_resize) ( size: [`int`](class_int.md) ) |
+| `void`                                          | [`seek`](class_streampeerbuffermd#class_streampeerbuffer_method_seek) ( position: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

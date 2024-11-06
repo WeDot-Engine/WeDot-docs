@@ -30,18 +30,18 @@ A horizontal menu bar that creates a [`MenuButton`](class_menubutton.md) for eac
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`get_menu_count`](#class_menubar_method_get_menu_count) ( ) const[^const]                                                         |
-| [`PopupMenu`](class_popupmenu.md) | [`get_menu_popup`](#class_menubar_method_get_menu_popup) ( menu: [`int`](class_int.md) ) const[^const]                             |
-| [`String`](class_string.md)       | [`get_menu_title`](#class_menubar_method_get_menu_title) ( menu: [`int`](class_int.md) ) const[^const]                             |
-| [`String`](class_string.md)       | [`get_menu_tooltip`](#class_menubar_method_get_menu_tooltip) ( menu: [`int`](class_int.md) ) const[^const]                         |
-| [`bool`](class_bool.md)           | [`is_menu_disabled`](#class_menubar_method_is_menu_disabled) ( menu: [`int`](class_int.md) ) const[^const]                         |
-| [`bool`](class_bool.md)           | [`is_menu_hidden`](#class_menubar_method_is_menu_hidden) ( menu: [`int`](class_int.md) ) const[^const]                             |
-| [`bool`](class_bool.md)           | [`is_native_menu`](#class_menubar_method_is_native_menu) ( ) const[^const]                                                         |
-| `void`                            | [`set_disable_shortcuts`](#class_menubar_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) )                       |
-| `void`                            | [`set_menu_disabled`](#class_menubar_method_set_menu_disabled) ( menu: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )  |
-| `void`                            | [`set_menu_hidden`](#class_menubar_method_set_menu_hidden) ( menu: [`int`](class_int.md), hidden: [`bool`](class_bool.md) )        |
-| `void`                            | [`set_menu_title`](#class_menubar_method_set_menu_title) ( menu: [`int`](class_int.md), title: [`String`](class_string.md) )       |
-| `void`                            | [`set_menu_tooltip`](#class_menubar_method_set_menu_tooltip) ( menu: [`int`](class_int.md), tooltip: [`String`](class_string.md) ) |
+| [`int`](class_int.md)             | [`get_menu_count`](class_menubarmd#class_menubar_method_get_menu_count) ( ) const[^const]                                                         |
+| [`PopupMenu`](class_popupmenu.md) | [`get_menu_popup`](class_menubarmd#class_menubar_method_get_menu_popup) ( menu: [`int`](class_int.md) ) const[^const]                             |
+| [`String`](class_string.md)       | [`get_menu_title`](class_menubarmd#class_menubar_method_get_menu_title) ( menu: [`int`](class_int.md) ) const[^const]                             |
+| [`String`](class_string.md)       | [`get_menu_tooltip`](class_menubarmd#class_menubar_method_get_menu_tooltip) ( menu: [`int`](class_int.md) ) const[^const]                         |
+| [`bool`](class_bool.md)           | [`is_menu_disabled`](class_menubarmd#class_menubar_method_is_menu_disabled) ( menu: [`int`](class_int.md) ) const[^const]                         |
+| [`bool`](class_bool.md)           | [`is_menu_hidden`](class_menubarmd#class_menubar_method_is_menu_hidden) ( menu: [`int`](class_int.md) ) const[^const]                             |
+| [`bool`](class_bool.md)           | [`is_native_menu`](class_menubarmd#class_menubar_method_is_native_menu) ( ) const[^const]                                                         |
+| `void`                            | [`set_disable_shortcuts`](class_menubarmd#class_menubar_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) )                       |
+| `void`                            | [`set_menu_disabled`](class_menubarmd#class_menubar_method_set_menu_disabled) ( menu: [`int`](class_int.md), disabled: [`bool`](class_bool.md) )  |
+| `void`                            | [`set_menu_hidden`](class_menubarmd#class_menubar_method_set_menu_hidden) ( menu: [`int`](class_int.md), hidden: [`bool`](class_bool.md) )        |
+| `void`                            | [`set_menu_title`](class_menubarmd#class_menubar_method_set_menu_title) ( menu: [`int`](class_int.md), title: [`String`](class_string.md) )       |
+| `void`                            | [`set_menu_tooltip`](class_menubarmd#class_menubar_method_set_menu_tooltip) ( menu: [`int`](class_int.md), tooltip: [`String`](class_string.md) ) |
 
 ## 主题属性
 

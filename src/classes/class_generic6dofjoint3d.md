@@ -110,18 +110,18 @@ The first 3 DOF represent the linear motion of the physics bodies and the last 3
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`get_flag_x`](#class_generic6dofjoint3d_method_get_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
-| [`bool`](class_bool.md)   | [`get_flag_y`](#class_generic6dofjoint3d_method_get_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
-| [`bool`](class_bool.md)   | [`get_flag_z`](#class_generic6dofjoint3d_method_get_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
-| [`float`](class_float.md) | [`get_param_x`](#class_generic6dofjoint3d_method_get_param_x) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
-| [`float`](class_float.md) | [`get_param_y`](#class_generic6dofjoint3d_method_get_param_y) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
-| [`float`](class_float.md) | [`get_param_z`](#class_generic6dofjoint3d_method_get_param_z) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
-| `void`                    | [`set_flag_x`](#class_generic6dofjoint3d_method_set_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
-| `void`                    | [`set_flag_y`](#class_generic6dofjoint3d_method_set_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
-| `void`                    | [`set_flag_z`](#class_generic6dofjoint3d_method_set_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
-| `void`                    | [`set_param_x`](#class_generic6dofjoint3d_method_set_param_x) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
-| `void`                    | [`set_param_y`](#class_generic6dofjoint3d_method_set_param_y) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
-| `void`                    | [`set_param_z`](#class_generic6dofjoint3d_method_set_param_z) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
+| [`bool`](class_bool.md)   | [`get_flag_x`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_get_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
+| [`bool`](class_bool.md)   | [`get_flag_y`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_get_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
+| [`bool`](class_bool.md)   | [`get_flag_z`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_get_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag) ) const[^const]                          |
+| [`float`](class_float.md) | [`get_param_x`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_get_param_x) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
+| [`float`](class_float.md) | [`get_param_y`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_get_param_y) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
+| [`float`](class_float.md) | [`get_param_z`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_get_param_z) ( param: [Param](#enum_generic6dofjoint3d_param) ) const[^const]                     |
+| `void`                    | [`set_flag_x`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_set_flag_x) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
+| `void`                    | [`set_flag_y`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_set_flag_y) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
+| `void`                    | [`set_flag_z`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_set_flag_z) ( flag: [Flag](#enum_generic6dofjoint3d_flag), value: [`bool`](class_bool.md) )        |
+| `void`                    | [`set_param_x`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_set_param_x) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
+| `void`                    | [`set_param_y`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_set_param_y) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
+| `void`                    | [`set_param_z`](class_generic6dofjoint3dmd#class_generic6dofjoint3d_method_set_param_z) ( param: [Param](#enum_generic6dofjoint3d_param), value: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

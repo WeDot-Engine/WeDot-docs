@@ -39,8 +39,8 @@ Signed distance fields (SDF) allow for efficiently representing approximate coll
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`get_bake_mask_value`](#class_gpuparticlescollisionsdf3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| `void`                  | [`set_bake_mask_value`](#class_gpuparticlescollisionsdf3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| [`bool`](class_bool.md) | [`get_bake_mask_value`](class_gpuparticlescollisionsdf3dmd#class_gpuparticlescollisionsdf3d_method_get_bake_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| `void`                  | [`set_bake_mask_value`](class_gpuparticlescollisionsdf3dmd#class_gpuparticlescollisionsdf3d_method_set_bake_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

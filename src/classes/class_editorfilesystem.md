@@ -21,15 +21,15 @@ This object holds information of all resources in the filesystem, their types, e
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                                       | [`get_file_type`](#class_editorfilesystem_method_get_file_type) ( path: [`String`](class_string.md) ) const[^const]            |
-| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem`](#class_editorfilesystem_method_get_filesystem) ( )                                                          |
-| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem_path`](#class_editorfilesystem_method_get_filesystem_path) ( path: [`String`](class_string.md) )              |
-| [`float`](class_float.md)                                         | [`get_scanning_progress`](#class_editorfilesystem_method_get_scanning_progress) ( ) const[^const]                              |
-| [`bool`](class_bool.md)                                           | [`is_scanning`](#class_editorfilesystem_method_is_scanning) ( ) const[^const]                                                  |
-| `void`                                                            | [`reimport_files`](#class_editorfilesystem_method_reimport_files) ( files: [`PackedStringArray`](class_packedstringarray.md) ) |
-| `void`                                                            | [`scan`](#class_editorfilesystem_method_scan) ( )                                                                              |
-| `void`                                                            | [`scan_sources`](#class_editorfilesystem_method_scan_sources) ( )                                                              |
-| `void`                                                            | [`update_file`](#class_editorfilesystem_method_update_file) ( path: [`String`](class_string.md) )                              |
+| [`String`](class_string.md)                                       | [`get_file_type`](class_editorfilesystemmd#class_editorfilesystem_method_get_file_type) ( path: [`String`](class_string.md) ) const[^const]            |
+| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem`](class_editorfilesystemmd#class_editorfilesystem_method_get_filesystem) ( )                                                          |
+| [`EditorFileSystemDirectory`](class_editorfilesystemdirectory.md) | [`get_filesystem_path`](class_editorfilesystemmd#class_editorfilesystem_method_get_filesystem_path) ( path: [`String`](class_string.md) )              |
+| [`float`](class_float.md)                                         | [`get_scanning_progress`](class_editorfilesystemmd#class_editorfilesystem_method_get_scanning_progress) ( ) const[^const]                              |
+| [`bool`](class_bool.md)                                           | [`is_scanning`](class_editorfilesystemmd#class_editorfilesystem_method_is_scanning) ( ) const[^const]                                                  |
+| `void`                                                            | [`reimport_files`](class_editorfilesystemmd#class_editorfilesystem_method_reimport_files) ( files: [`PackedStringArray`](class_packedstringarray.md) ) |
+| `void`                                                            | [`scan`](class_editorfilesystemmd#class_editorfilesystem_method_scan) ( )                                                                              |
+| `void`                                                            | [`scan_sources`](class_editorfilesystemmd#class_editorfilesystem_method_scan_sources) ( )                                                              |
+| `void`                                                            | [`update_file`](class_editorfilesystemmd#class_editorfilesystem_method_update_file) ( path: [`String`](class_string.md) )                              |
 
 <!-- rst-class:: classref-section-separator -->
 

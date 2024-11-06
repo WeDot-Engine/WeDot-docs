@@ -115,10 +115,10 @@ Can be used to save a node to a file. When saving, the node as well as all the n
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)             | [`can_instantiate`](#class_packedscene_method_can_instantiate) ( ) const[^const]                                                        |
-| [`SceneState`](class_scenestate.md) | [`get_state`](#class_packedscene_method_get_state) ( ) const[^const]                                                                    |
-| [`Node`](class_node.md)             | [`instantiate`](#class_packedscene_method_instantiate) ( edit_state: [GenEditState](#enum_packedscene_geneditstate) = 0 ) const[^const] |
-| [Error](#enum_@globalscope_error)   | [`pack`](#class_packedscene_method_pack) ( path: [`Node`](class_node.md) )                                                              |
+| [`bool`](class_bool.md)             | [`can_instantiate`](class_packedscenemd#class_packedscene_method_can_instantiate) ( ) const[^const]                                                        |
+| [`SceneState`](class_scenestate.md) | [`get_state`](class_packedscenemd#class_packedscene_method_get_state) ( ) const[^const]                                                                    |
+| [`Node`](class_node.md)             | [`instantiate`](class_packedscenemd#class_packedscene_method_instantiate) ( edit_state: [GenEditState](#enum_packedscene_geneditstate) = 0 ) const[^const] |
+| [Error](#enum_@globalscope_error)   | [`pack`](class_packedscenemd#class_packedscene_method_pack) ( path: [`Node`](class_node.md) )                                                              |
 
 <!-- rst-class:: classref-section-separator -->
 

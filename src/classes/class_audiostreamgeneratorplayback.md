@@ -19,12 +19,12 @@ This class is meant to be used with [`AudioStreamGenerator`](class_audiostreamge
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`can_push_buffer`](#class_audiostreamgeneratorplayback_method_can_push_buffer) ( amount: [`int`](class_int.md) ) const[^const]         |
-| `void`                  | [`clear_buffer`](#class_audiostreamgeneratorplayback_method_clear_buffer) ( )                                                           |
-| [`int`](class_int.md)   | [`get_frames_available`](#class_audiostreamgeneratorplayback_method_get_frames_available) ( ) const[^const]                             |
-| [`int`](class_int.md)   | [`get_skips`](#class_audiostreamgeneratorplayback_method_get_skips) ( ) const[^const]                                                   |
-| [`bool`](class_bool.md) | [`push_buffer`](#class_audiostreamgeneratorplayback_method_push_buffer) ( frames: [`PackedVector2Array`](class_packedvector2array.md) ) |
-| [`bool`](class_bool.md) | [`push_frame`](#class_audiostreamgeneratorplayback_method_push_frame) ( frame: [`Vector2`](class_vector2.md) )                          |
+| [`bool`](class_bool.md) | [`can_push_buffer`](class_audiostreamgeneratorplaybackmd#class_audiostreamgeneratorplayback_method_can_push_buffer) ( amount: [`int`](class_int.md) ) const[^const]         |
+| `void`                  | [`clear_buffer`](class_audiostreamgeneratorplaybackmd#class_audiostreamgeneratorplayback_method_clear_buffer) ( )                                                           |
+| [`int`](class_int.md)   | [`get_frames_available`](class_audiostreamgeneratorplaybackmd#class_audiostreamgeneratorplayback_method_get_frames_available) ( ) const[^const]                             |
+| [`int`](class_int.md)   | [`get_skips`](class_audiostreamgeneratorplaybackmd#class_audiostreamgeneratorplayback_method_get_skips) ( ) const[^const]                                                   |
+| [`bool`](class_bool.md) | [`push_buffer`](class_audiostreamgeneratorplaybackmd#class_audiostreamgeneratorplayback_method_push_buffer) ( frames: [`PackedVector2Array`](class_packedvector2array.md) ) |
+| [`bool`](class_bool.md) | [`push_frame`](class_audiostreamgeneratorplaybackmd#class_audiostreamgeneratorplayback_method_push_frame) ( frame: [`Vector2`](class_vector2.md) )                          |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -28,8 +28,8 @@ For more information see the [*interaction profiles info in the OpenXR specifica
 
 |||
 |:-:|:--|
-| [`OpenXRIPBinding`](class_openxripbinding.md) | [`get_binding`](#class_openxrinteractionprofile_method_get_binding) ( index: [`int`](class_int.md) ) const[^const] |
-| [`int`](class_int.md)                         | [`get_binding_count`](#class_openxrinteractionprofile_method_get_binding_count) ( ) const[^const]                  |
+| [`OpenXRIPBinding`](class_openxripbinding.md) | [`get_binding`](class_openxrinteractionprofilemd#class_openxrinteractionprofile_method_get_binding) ( index: [`int`](class_int.md) ) const[^const] |
+| [`int`](class_int.md)                         | [`get_binding_count`](class_openxrinteractionprofilemd#class_openxrinteractionprofile_method_get_binding_count) ( ) const[^const]                  |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -30,7 +30,7 @@ Abstract base class for all joints in 2D physics. 2D joints bind together two ph
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md) | [`get_rid`](#class_joint2d_method_get_rid) ( ) const[^const] |
+| [`RID`](class_rid.md) | [`get_rid`](class_joint2dmd#class_joint2d_method_get_rid) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

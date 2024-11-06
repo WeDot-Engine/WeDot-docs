@@ -30,15 +30,15 @@ See also [`Curve`](class_curve.md) which supports more complex easing methods, b
 
 |||
 |:-:|:--|
-| `void`                    | [`add_point`](#class_gradient_method_add_point) ( offset: [`float`](class_float.md), color: [`Color`](class_color.md) ) |
-| [`Color`](class_color.md) | [`get_color`](#class_gradient_method_get_color) ( point: [`int`](class_int.md) )                                        |
-| [`float`](class_float.md) | [`get_offset`](#class_gradient_method_get_offset) ( point: [`int`](class_int.md) )                                      |
-| [`int`](class_int.md)     | [`get_point_count`](#class_gradient_method_get_point_count) ( ) const[^const]                                           |
-| `void`                    | [`remove_point`](#class_gradient_method_remove_point) ( point: [`int`](class_int.md) )                                  |
-| `void`                    | [`reverse`](#class_gradient_method_reverse) ( )                                                                         |
-| [`Color`](class_color.md) | [`sample`](#class_gradient_method_sample) ( offset: [`float`](class_float.md) )                                         |
-| `void`                    | [`set_color`](#class_gradient_method_set_color) ( point: [`int`](class_int.md), color: [`Color`](class_color.md) )      |
-| `void`                    | [`set_offset`](#class_gradient_method_set_offset) ( point: [`int`](class_int.md), offset: [`float`](class_float.md) )   |
+| `void`                    | [`add_point`](class_gradientmd#class_gradient_method_add_point) ( offset: [`float`](class_float.md), color: [`Color`](class_color.md) ) |
+| [`Color`](class_color.md) | [`get_color`](class_gradientmd#class_gradient_method_get_color) ( point: [`int`](class_int.md) )                                        |
+| [`float`](class_float.md) | [`get_offset`](class_gradientmd#class_gradient_method_get_offset) ( point: [`int`](class_int.md) )                                      |
+| [`int`](class_int.md)     | [`get_point_count`](class_gradientmd#class_gradient_method_get_point_count) ( ) const[^const]                                           |
+| `void`                    | [`remove_point`](class_gradientmd#class_gradient_method_remove_point) ( point: [`int`](class_int.md) )                                  |
+| `void`                    | [`reverse`](class_gradientmd#class_gradient_method_reverse) ( )                                                                         |
+| [`Color`](class_color.md) | [`sample`](class_gradientmd#class_gradient_method_sample) ( offset: [`float`](class_float.md) )                                         |
+| `void`                    | [`set_color`](class_gradientmd#class_gradient_method_set_color) ( point: [`int`](class_int.md), color: [`Color`](class_color.md) )      |
+| `void`                    | [`set_offset`](class_gradientmd#class_gradient_method_set_offset) ( point: [`int`](class_int.md), offset: [`float`](class_float.md) )   |
 
 <!-- rst-class:: classref-section-separator -->
 

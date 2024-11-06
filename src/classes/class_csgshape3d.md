@@ -35,12 +35,12 @@ This is the CSG base class that provides CSG operation support to the various CS
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`get_collision_layer_value`](#class_csgshape3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`bool`](class_bool.md)   | [`get_collision_mask_value`](#class_csgshape3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
-| [`Array`](class_array.md) | [`get_meshes`](#class_csgshape3d_method_get_meshes) ( ) const[^const]                                                                                     |
-| [`bool`](class_bool.md)   | [`is_root_shape`](#class_csgshape3d_method_is_root_shape) ( ) const[^const]                                                                               |
-| `void`                    | [`set_collision_layer_value`](#class_csgshape3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                    | [`set_collision_mask_value`](#class_csgshape3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )   |
+| [`bool`](class_bool.md)   | [`get_collision_layer_value`](class_csgshape3dmd#class_csgshape3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`bool`](class_bool.md)   | [`get_collision_mask_value`](class_csgshape3dmd#class_csgshape3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
+| [`Array`](class_array.md) | [`get_meshes`](class_csgshape3dmd#class_csgshape3d_method_get_meshes) ( ) const[^const]                                                                                     |
+| [`bool`](class_bool.md)   | [`is_root_shape`](class_csgshape3dmd#class_csgshape3d_method_is_root_shape) ( ) const[^const]                                                                               |
+| `void`                    | [`set_collision_layer_value`](class_csgshape3dmd#class_csgshape3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                    | [`set_collision_mask_value`](class_csgshape3dmd#class_csgshape3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )   |
 
 <!-- rst-class:: classref-section-separator -->
 

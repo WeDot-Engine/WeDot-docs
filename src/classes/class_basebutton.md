@@ -37,11 +37,11 @@ Abstract base class for GUI buttons.
 
 |||
 |:-:|:--|
-| `void`                                | [`_pressed`](#class_basebutton_private_method__pressed) ( ) virtual[^virtual]                                     |
-| `void`                                | [`_toggled`](#class_basebutton_private_method__toggled) ( toggled_on: [`bool`](class_bool.md) ) virtual[^virtual] |
-| [DrawMode](#enum_basebutton_drawmode) | [`get_draw_mode`](#class_basebutton_method_get_draw_mode) ( ) const[^const]                                       |
-| [`bool`](class_bool.md)               | [`is_hovered`](#class_basebutton_method_is_hovered) ( ) const[^const]                                             |
-| `void`                                | [`set_pressed_no_signal`](#class_basebutton_method_set_pressed_no_signal) ( pressed: [`bool`](class_bool.md) )    |
+| `void`                                | [`_pressed`](class_basebuttonmd#class_basebutton_private_method__pressed) ( ) virtual[^virtual]                                     |
+| `void`                                | [`_toggled`](class_basebuttonmd#class_basebutton_private_method__toggled) ( toggled_on: [`bool`](class_bool.md) ) virtual[^virtual] |
+| [DrawMode](#enum_basebutton_drawmode) | [`get_draw_mode`](class_basebuttonmd#class_basebutton_method_get_draw_mode) ( ) const[^const]                                       |
+| [`bool`](class_bool.md)               | [`is_hovered`](class_basebuttonmd#class_basebutton_method_is_hovered) ( ) const[^const]                                             |
+| `void`                                | [`set_pressed_no_signal`](class_basebuttonmd#class_basebutton_method_set_pressed_no_signal) ( pressed: [`bool`](class_bool.md) )    |
 
 <!-- rst-class:: classref-section-separator -->
 

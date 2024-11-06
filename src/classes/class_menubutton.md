@@ -32,9 +32,9 @@ See also [`BaseButton`](class_basebutton.md) which contains common properties an
 
 |||
 |:-:|:--|
-| [`PopupMenu`](class_popupmenu.md) | [`get_popup`](#class_menubutton_method_get_popup) ( ) const[^const]                                             |
-| `void`                            | [`set_disable_shortcuts`](#class_menubutton_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) ) |
-| `void`                            | [`show_popup`](#class_menubutton_method_show_popup) ( )                                                         |
+| [`PopupMenu`](class_popupmenu.md) | [`get_popup`](class_menubuttonmd#class_menubutton_method_get_popup) ( ) const[^const]                                             |
+| `void`                            | [`set_disable_shortcuts`](class_menubuttonmd#class_menubutton_method_set_disable_shortcuts) ( disabled: [`bool`](class_bool.md) ) |
+| `void`                            | [`show_popup`](class_menubuttonmd#class_menubutton_method_show_popup) ( )                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 

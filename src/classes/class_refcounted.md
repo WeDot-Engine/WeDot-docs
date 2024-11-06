@@ -29,10 +29,10 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)   | [`get_reference_count`](#class_refcounted_method_get_reference_count) ( ) const[^const] |
-| [`bool`](class_bool.md) | [`init_ref`](#class_refcounted_method_init_ref) ( )                                     |
-| [`bool`](class_bool.md) | [`reference`](#class_refcounted_method_reference) ( )                                   |
-| [`bool`](class_bool.md) | [`unreference`](#class_refcounted_method_unreference) ( )                               |
+| [`int`](class_int.md)   | [`get_reference_count`](class_refcountedmd#class_refcounted_method_get_reference_count) ( ) const[^const] |
+| [`bool`](class_bool.md) | [`init_ref`](class_refcountedmd#class_refcounted_method_init_ref) ( )                                     |
+| [`bool`](class_bool.md) | [`reference`](class_refcountedmd#class_refcounted_method_reference) ( )                                   |
+| [`bool`](class_bool.md) | [`unreference`](class_refcountedmd#class_refcounted_method_unreference) ( )                               |
 
 <!-- rst-class:: classref-section-separator -->
 

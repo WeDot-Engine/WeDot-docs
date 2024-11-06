@@ -23,35 +23,35 @@ An array specifically designed to hold [`Vector3`](class_vector3.md). Packs data
 
 |||
 |:-:|:--|
-| [`PackedVector3Array`](class_packedvector3array.md) | [`PackedVector3Array`](#class_packedvector3array_constructor_packedvector3array) ( )                                                           |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`PackedVector3Array`](#class_packedvector3array_constructor_packedvector3array) ( from: [`PackedVector3Array`](class_packedvector3array.md) ) |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`PackedVector3Array`](#class_packedvector3array_constructor_packedvector3array) ( from: [`Array`](class_array.md) )                           |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`PackedVector3Array`](class_packedvector3array.md#class_packedvector3array_constructor_packedvector3array) ( )                                                           |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`PackedVector3Array`](class_packedvector3array.md#class_packedvector3array_constructor_packedvector3array) ( from: [`PackedVector3Array`](class_packedvector3array.md) ) |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`PackedVector3Array`](class_packedvector3array.md#class_packedvector3array_constructor_packedvector3array) ( from: [`Array`](class_array.md) )                           |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                             | [`append`](#class_packedvector3array_method_append) ( value: [`Vector3`](class_vector3.md) )                                               |
-| `void`                                              | [`append_array`](#class_packedvector3array_method_append_array) ( array: [`PackedVector3Array`](class_packedvector3array.md) )             |
-| [`int`](class_int.md)                               | [`bsearch`](#class_packedvector3array_method_bsearch) ( value: [`Vector3`](class_vector3.md), before: [`bool`](class_bool.md) = true )     |
-| `void`                                              | [`clear`](#class_packedvector3array_method_clear) ( )                                                                                      |
-| [`int`](class_int.md)                               | [`count`](#class_packedvector3array_method_count) ( value: [`Vector3`](class_vector3.md) ) const[^const]                                   |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`duplicate`](#class_packedvector3array_method_duplicate) ( )                                                                              |
-| `void`                                              | [`fill`](#class_packedvector3array_method_fill) ( value: [`Vector3`](class_vector3.md) )                                                   |
-| [`int`](class_int.md)                               | [`find`](#class_packedvector3array_method_find) ( value: [`Vector3`](class_vector3.md), from: [`int`](class_int.md) = 0 ) const[^const]    |
-| [`bool`](class_bool.md)                             | [`has`](#class_packedvector3array_method_has) ( value: [`Vector3`](class_vector3.md) ) const[^const]                                       |
-| [`int`](class_int.md)                               | [`insert`](#class_packedvector3array_method_insert) ( at_index: [`int`](class_int.md), value: [`Vector3`](class_vector3.md) )              |
-| [`bool`](class_bool.md)                             | [`is_empty`](#class_packedvector3array_method_is_empty) ( ) const[^const]                                                                  |
-| [`bool`](class_bool.md)                             | [`push_back`](#class_packedvector3array_method_push_back) ( value: [`Vector3`](class_vector3.md) )                                         |
-| `void`                                              | [`remove_at`](#class_packedvector3array_method_remove_at) ( index: [`int`](class_int.md) )                                                 |
-| [`int`](class_int.md)                               | [`resize`](#class_packedvector3array_method_resize) ( new_size: [`int`](class_int.md) )                                                    |
-| `void`                                              | [`reverse`](#class_packedvector3array_method_reverse) ( )                                                                                  |
-| [`int`](class_int.md)                               | [`rfind`](#class_packedvector3array_method_rfind) ( value: [`Vector3`](class_vector3.md), from: [`int`](class_int.md) = -1 ) const[^const] |
-| `void`                                              | [`set`](#class_packedvector3array_method_set) ( index: [`int`](class_int.md), value: [`Vector3`](class_vector3.md) )                       |
-| [`int`](class_int.md)                               | [`size`](#class_packedvector3array_method_size) ( ) const[^const]                                                                          |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`slice`](#class_packedvector3array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const]  |
-| `void`                                              | [`sort`](#class_packedvector3array_method_sort) ( )                                                                                        |
-| [`PackedByteArray`](class_packedbytearray.md)       | [`to_byte_array`](#class_packedvector3array_method_to_byte_array) ( ) const[^const]                                                        |
+| [`bool`](class_bool.md)                             | [`append`](class_packedvector3arraymd#class_packedvector3array_method_append) ( value: [`Vector3`](class_vector3.md) )                                               |
+| `void`                                              | [`append_array`](class_packedvector3arraymd#class_packedvector3array_method_append_array) ( array: [`PackedVector3Array`](class_packedvector3array.md) )             |
+| [`int`](class_int.md)                               | [`bsearch`](class_packedvector3arraymd#class_packedvector3array_method_bsearch) ( value: [`Vector3`](class_vector3.md), before: [`bool`](class_bool.md) = true )     |
+| `void`                                              | [`clear`](class_packedvector3arraymd#class_packedvector3array_method_clear) ( )                                                                                      |
+| [`int`](class_int.md)                               | [`count`](class_packedvector3arraymd#class_packedvector3array_method_count) ( value: [`Vector3`](class_vector3.md) ) const[^const]                                   |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`duplicate`](class_packedvector3arraymd#class_packedvector3array_method_duplicate) ( )                                                                              |
+| `void`                                              | [`fill`](class_packedvector3arraymd#class_packedvector3array_method_fill) ( value: [`Vector3`](class_vector3.md) )                                                   |
+| [`int`](class_int.md)                               | [`find`](class_packedvector3arraymd#class_packedvector3array_method_find) ( value: [`Vector3`](class_vector3.md), from: [`int`](class_int.md) = 0 ) const[^const]    |
+| [`bool`](class_bool.md)                             | [`has`](class_packedvector3arraymd#class_packedvector3array_method_has) ( value: [`Vector3`](class_vector3.md) ) const[^const]                                       |
+| [`int`](class_int.md)                               | [`insert`](class_packedvector3arraymd#class_packedvector3array_method_insert) ( at_index: [`int`](class_int.md), value: [`Vector3`](class_vector3.md) )              |
+| [`bool`](class_bool.md)                             | [`is_empty`](class_packedvector3arraymd#class_packedvector3array_method_is_empty) ( ) const[^const]                                                                  |
+| [`bool`](class_bool.md)                             | [`push_back`](class_packedvector3arraymd#class_packedvector3array_method_push_back) ( value: [`Vector3`](class_vector3.md) )                                         |
+| `void`                                              | [`remove_at`](class_packedvector3arraymd#class_packedvector3array_method_remove_at) ( index: [`int`](class_int.md) )                                                 |
+| [`int`](class_int.md)                               | [`resize`](class_packedvector3arraymd#class_packedvector3array_method_resize) ( new_size: [`int`](class_int.md) )                                                    |
+| `void`                                              | [`reverse`](class_packedvector3arraymd#class_packedvector3array_method_reverse) ( )                                                                                  |
+| [`int`](class_int.md)                               | [`rfind`](class_packedvector3arraymd#class_packedvector3array_method_rfind) ( value: [`Vector3`](class_vector3.md), from: [`int`](class_int.md) = -1 ) const[^const] |
+| `void`                                              | [`set`](class_packedvector3arraymd#class_packedvector3array_method_set) ( index: [`int`](class_int.md), value: [`Vector3`](class_vector3.md) )                       |
+| [`int`](class_int.md)                               | [`size`](class_packedvector3arraymd#class_packedvector3array_method_size) ( ) const[^const]                                                                          |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`slice`](class_packedvector3arraymd#class_packedvector3array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const]  |
+| `void`                                              | [`sort`](class_packedvector3arraymd#class_packedvector3array_method_sort) ( )                                                                                        |
+| [`PackedByteArray`](class_packedbytearray.md)       | [`to_byte_array`](class_packedvector3arraymd#class_packedvector3array_method_to_byte_array) ( ) const[^const]                                                        |
 
 ## 运算符
 

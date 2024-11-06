@@ -33,7 +33,7 @@ This class can also be used to store dynamically-generated PCM audio data. See a
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error) | [`save_to_wav`](#class_audiostreamwav_method_save_to_wav) ( path: [`String`](class_string.md) ) |
+| [Error](#enum_@globalscope_error) | [`save_to_wav`](class_audiostreamwavmd#class_audiostreamwav_method_save_to_wav) ( path: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

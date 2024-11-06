@@ -30,31 +30,31 @@ It uses integer coordinates and is therefore preferable to [`Vector4`](class_vec
 
 |||
 |:-:|:--|
-| [`Vector4i`](class_vector4i.md) | [`Vector4i`](#class_vector4i_constructor_vector4i) ( )                                                                                                        |
-| [`Vector4i`](class_vector4i.md) | [`Vector4i`](#class_vector4i_constructor_vector4i) ( from: [`Vector4i`](class_vector4i.md) )                                                                  |
-| [`Vector4i`](class_vector4i.md) | [`Vector4i`](#class_vector4i_constructor_vector4i) ( from: [`Vector4`](class_vector4.md) )                                                                    |
-| [`Vector4i`](class_vector4i.md) | [`Vector4i`](#class_vector4i_constructor_vector4i) ( x: [`int`](class_int.md), y: [`int`](class_int.md), z: [`int`](class_int.md), w: [`int`](class_int.md) ) |
+| [`Vector4i`](class_vector4i.md) | [`Vector4i`](class_vector4i.md#class_vector4i_constructor_vector4i) ( )                                                                                                        |
+| [`Vector4i`](class_vector4i.md) | [`Vector4i`](class_vector4i.md#class_vector4i_constructor_vector4i) ( from: [`Vector4i`](class_vector4i.md) )                                                                  |
+| [`Vector4i`](class_vector4i.md) | [`Vector4i`](class_vector4i.md#class_vector4i_constructor_vector4i) ( from: [`Vector4`](class_vector4.md) )                                                                    |
+| [`Vector4i`](class_vector4i.md) | [`Vector4i`](class_vector4i.md#class_vector4i_constructor_vector4i) ( x: [`int`](class_int.md), y: [`int`](class_int.md), z: [`int`](class_int.md), w: [`int`](class_int.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector4i`](class_vector4i.md) | [`abs`](#class_vector4i_method_abs) ( ) const[^const]                                                                                |
-| [`Vector4i`](class_vector4i.md) | [`clamp`](#class_vector4i_method_clamp) ( min: [`Vector4i`](class_vector4i.md), max: [`Vector4i`](class_vector4i.md) ) const[^const] |
-| [`Vector4i`](class_vector4i.md) | [`clampi`](#class_vector4i_method_clampi) ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]                   |
-| [`int`](class_int.md)           | [`distance_squared_to`](#class_vector4i_method_distance_squared_to) ( to: [`Vector4i`](class_vector4i.md) ) const[^const]            |
-| [`float`](class_float.md)       | [`distance_to`](#class_vector4i_method_distance_to) ( to: [`Vector4i`](class_vector4i.md) ) const[^const]                            |
-| [`float`](class_float.md)       | [`length`](#class_vector4i_method_length) ( ) const[^const]                                                                          |
-| [`int`](class_int.md)           | [`length_squared`](#class_vector4i_method_length_squared) ( ) const[^const]                                                          |
-| [`Vector4i`](class_vector4i.md) | [`max`](#class_vector4i_method_max) ( with: [`Vector4i`](class_vector4i.md) ) const[^const]                                          |
-| [`int`](class_int.md)           | [`max_axis_index`](#class_vector4i_method_max_axis_index) ( ) const[^const]                                                          |
-| [`Vector4i`](class_vector4i.md) | [`maxi`](#class_vector4i_method_maxi) ( with: [`int`](class_int.md) ) const[^const]                                                  |
-| [`Vector4i`](class_vector4i.md) | [`min`](#class_vector4i_method_min) ( with: [`Vector4i`](class_vector4i.md) ) const[^const]                                          |
-| [`int`](class_int.md)           | [`min_axis_index`](#class_vector4i_method_min_axis_index) ( ) const[^const]                                                          |
-| [`Vector4i`](class_vector4i.md) | [`mini`](#class_vector4i_method_mini) ( with: [`int`](class_int.md) ) const[^const]                                                  |
-| [`Vector4i`](class_vector4i.md) | [`sign`](#class_vector4i_method_sign) ( ) const[^const]                                                                              |
-| [`Vector4i`](class_vector4i.md) | [`snapped`](#class_vector4i_method_snapped) ( step: [`Vector4i`](class_vector4i.md) ) const[^const]                                  |
-| [`Vector4i`](class_vector4i.md) | [`snappedi`](#class_vector4i_method_snappedi) ( step: [`int`](class_int.md) ) const[^const]                                          |
+| [`Vector4i`](class_vector4i.md) | [`abs`](class_vector4imd#class_vector4i_method_abs) ( ) const[^const]                                                                                |
+| [`Vector4i`](class_vector4i.md) | [`clamp`](class_vector4imd#class_vector4i_method_clamp) ( min: [`Vector4i`](class_vector4i.md), max: [`Vector4i`](class_vector4i.md) ) const[^const] |
+| [`Vector4i`](class_vector4i.md) | [`clampi`](class_vector4imd#class_vector4i_method_clampi) ( min: [`int`](class_int.md), max: [`int`](class_int.md) ) const[^const]                   |
+| [`int`](class_int.md)           | [`distance_squared_to`](class_vector4imd#class_vector4i_method_distance_squared_to) ( to: [`Vector4i`](class_vector4i.md) ) const[^const]            |
+| [`float`](class_float.md)       | [`distance_to`](class_vector4imd#class_vector4i_method_distance_to) ( to: [`Vector4i`](class_vector4i.md) ) const[^const]                            |
+| [`float`](class_float.md)       | [`length`](class_vector4imd#class_vector4i_method_length) ( ) const[^const]                                                                          |
+| [`int`](class_int.md)           | [`length_squared`](class_vector4imd#class_vector4i_method_length_squared) ( ) const[^const]                                                          |
+| [`Vector4i`](class_vector4i.md) | [`max`](class_vector4imd#class_vector4i_method_max) ( with: [`Vector4i`](class_vector4i.md) ) const[^const]                                          |
+| [`int`](class_int.md)           | [`max_axis_index`](class_vector4imd#class_vector4i_method_max_axis_index) ( ) const[^const]                                                          |
+| [`Vector4i`](class_vector4i.md) | [`maxi`](class_vector4imd#class_vector4i_method_maxi) ( with: [`int`](class_int.md) ) const[^const]                                                  |
+| [`Vector4i`](class_vector4i.md) | [`min`](class_vector4imd#class_vector4i_method_min) ( with: [`Vector4i`](class_vector4i.md) ) const[^const]                                          |
+| [`int`](class_int.md)           | [`min_axis_index`](class_vector4imd#class_vector4i_method_min_axis_index) ( ) const[^const]                                                          |
+| [`Vector4i`](class_vector4i.md) | [`mini`](class_vector4imd#class_vector4i_method_mini) ( with: [`int`](class_int.md) ) const[^const]                                                  |
+| [`Vector4i`](class_vector4i.md) | [`sign`](class_vector4imd#class_vector4i_method_sign) ( ) const[^const]                                                                              |
+| [`Vector4i`](class_vector4i.md) | [`snapped`](class_vector4imd#class_vector4i_method_snapped) ( step: [`Vector4i`](class_vector4i.md) ) const[^const]                                  |
+| [`Vector4i`](class_vector4i.md) | [`snappedi`](class_vector4imd#class_vector4i_method_snappedi) ( step: [`int`](class_int.md) ) const[^const]                                          |
 
 ## 运算符
 

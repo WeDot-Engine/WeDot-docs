@@ -36,10 +36,10 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`get_stage_bytecode`](#class_rdshaderspirv_method_get_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                            |
-| [`String`](class_string.md)                   | [`get_stage_compile_error`](#class_rdshaderspirv_method_get_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                  |
-| `void`                                        | [`set_stage_bytecode`](#class_rdshaderspirv_method_set_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), bytecode: [`PackedByteArray`](class_packedbytearray.md) ) |
-| `void`                                        | [`set_stage_compile_error`](#class_rdshaderspirv_method_set_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), compile_error: [`String`](class_string.md) )    |
+| [`PackedByteArray`](class_packedbytearray.md) | [`get_stage_bytecode`](class_rdshaderspirvmd#class_rdshaderspirv_method_get_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                            |
+| [`String`](class_string.md)                   | [`get_stage_compile_error`](class_rdshaderspirvmd#class_rdshaderspirv_method_get_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                                  |
+| `void`                                        | [`set_stage_bytecode`](class_rdshaderspirvmd#class_rdshaderspirv_method_set_stage_bytecode) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), bytecode: [`PackedByteArray`](class_packedbytearray.md) ) |
+| `void`                                        | [`set_stage_compile_error`](class_rdshaderspirvmd#class_rdshaderspirv_method_set_stage_compile_error) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), compile_error: [`String`](class_string.md) )    |
 
 <!-- rst-class:: classref-section-separator -->
 

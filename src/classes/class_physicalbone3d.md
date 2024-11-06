@@ -42,12 +42,12 @@ The **PhysicalBone3D** node is a physics body that can be used to make bones in 
 
 |||
 |:-:|:--|
-| `void`                  | [`_integrate_forces`](#class_physicalbone3d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual] |
-| `void`                  | [`apply_central_impulse`](#class_physicalbone3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                   |
-| `void`                  | [`apply_impulse`](#class_physicalbone3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )       |
-| [`int`](class_int.md)   | [`get_bone_id`](#class_physicalbone3d_method_get_bone_id) ( ) const[^const]                                                                                                |
-| [`bool`](class_bool.md) | [`get_simulate_physics`](#class_physicalbone3d_method_get_simulate_physics) ( )                                                                                            |
-| [`bool`](class_bool.md) | [`is_simulating_physics`](#class_physicalbone3d_method_is_simulating_physics) ( )                                                                                          |
+| `void`                  | [`_integrate_forces`](class_physicalbone3dmd#class_physicalbone3d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState3D`](class_physicsdirectbodystate3d.md) ) virtual[^virtual] |
+| `void`                  | [`apply_central_impulse`](class_physicalbone3dmd#class_physicalbone3d_method_apply_central_impulse) ( impulse: [`Vector3`](class_vector3.md) )                                                   |
+| `void`                  | [`apply_impulse`](class_physicalbone3dmd#class_physicalbone3d_method_apply_impulse) ( impulse: [`Vector3`](class_vector3.md), position: [`Vector3`](class_vector3.md) = Vector3(0, 0, 0) )       |
+| [`int`](class_int.md)   | [`get_bone_id`](class_physicalbone3dmd#class_physicalbone3d_method_get_bone_id) ( ) const[^const]                                                                                                |
+| [`bool`](class_bool.md) | [`get_simulate_physics`](class_physicalbone3dmd#class_physicalbone3d_method_get_simulate_physics) ( )                                                                                            |
+| [`bool`](class_bool.md) | [`is_simulating_physics`](class_physicalbone3dmd#class_physicalbone3d_method_is_simulating_physics) ( )                                                                                          |
 
 <!-- rst-class:: classref-section-separator -->
 

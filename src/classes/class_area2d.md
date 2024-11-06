@@ -43,12 +43,12 @@ This node can also locally alter or override physics parameters (gravity, dampin
 
 |||
 |:-:|:--|
-| [Array](class_array.md) [`Area2D`](class_area2d.md) | [`get_overlapping_areas`](#class_area2d_method_get_overlapping_areas) ( ) const[^const]               |
-| [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_overlapping_bodies`](#class_area2d_method_get_overlapping_bodies) ( ) const[^const]             |
-| [`bool`](class_bool.md)                             | [`has_overlapping_areas`](#class_area2d_method_has_overlapping_areas) ( ) const[^const]               |
-| [`bool`](class_bool.md)                             | [`has_overlapping_bodies`](#class_area2d_method_has_overlapping_bodies) ( ) const[^const]             |
-| [`bool`](class_bool.md)                             | [`overlaps_area`](#class_area2d_method_overlaps_area) ( area: [`Node`](class_node.md) ) const[^const] |
-| [`bool`](class_bool.md)                             | [`overlaps_body`](#class_area2d_method_overlaps_body) ( body: [`Node`](class_node.md) ) const[^const] |
+| [Array](class_array.md) [`Area2D`](class_area2d.md) | [`get_overlapping_areas`](class_area2dmd#class_area2d_method_get_overlapping_areas) ( ) const[^const]               |
+| [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_overlapping_bodies`](class_area2dmd#class_area2d_method_get_overlapping_bodies) ( ) const[^const]             |
+| [`bool`](class_bool.md)                             | [`has_overlapping_areas`](class_area2dmd#class_area2d_method_has_overlapping_areas) ( ) const[^const]               |
+| [`bool`](class_bool.md)                             | [`has_overlapping_bodies`](class_area2dmd#class_area2d_method_has_overlapping_bodies) ( ) const[^const]             |
+| [`bool`](class_bool.md)                             | [`overlaps_area`](class_area2dmd#class_area2d_method_overlaps_area) ( area: [`Node`](class_node.md) ) const[^const] |
+| [`bool`](class_bool.md)                             | [`overlaps_body`](class_area2dmd#class_area2d_method_overlaps_body) ( body: [`Node`](class_node.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

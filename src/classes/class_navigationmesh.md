@@ -50,16 +50,16 @@ A navigation mesh is a collection of polygons that define which areas of an envi
 
 |||
 |:-:|:--|
-| `void`                                              | [`add_polygon`](#class_navigationmesh_method_add_polygon) ( polygon: [`PackedInt32Array`](class_packedint32array.md) )                                      |
-| `void`                                              | [`clear`](#class_navigationmesh_method_clear) ( )                                                                                                           |
-| `void`                                              | [`clear_polygons`](#class_navigationmesh_method_clear_polygons) ( )                                                                                         |
-| `void`                                              | [`create_from_mesh`](#class_navigationmesh_method_create_from_mesh) ( mesh: [`Mesh`](class_mesh.md) )                                                       |
-| [`bool`](class_bool.md)                             | [`get_collision_mask_value`](#class_navigationmesh_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`PackedInt32Array`](class_packedint32array.md)     | [`get_polygon`](#class_navigationmesh_method_get_polygon) ( idx: [`int`](class_int.md) )                                                                    |
-| [`int`](class_int.md)                               | [`get_polygon_count`](#class_navigationmesh_method_get_polygon_count) ( ) const[^const]                                                                     |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`get_vertices`](#class_navigationmesh_method_get_vertices) ( ) const[^const]                                                                               |
-| `void`                                              | [`set_collision_mask_value`](#class_navigationmesh_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                                              | [`set_vertices`](#class_navigationmesh_method_set_vertices) ( vertices: [`PackedVector3Array`](class_packedvector3array.md) )                               |
+| `void`                                              | [`add_polygon`](class_navigationmeshmd#class_navigationmesh_method_add_polygon) ( polygon: [`PackedInt32Array`](class_packedint32array.md) )                                      |
+| `void`                                              | [`clear`](class_navigationmeshmd#class_navigationmesh_method_clear) ( )                                                                                                           |
+| `void`                                              | [`clear_polygons`](class_navigationmeshmd#class_navigationmesh_method_clear_polygons) ( )                                                                                         |
+| `void`                                              | [`create_from_mesh`](class_navigationmeshmd#class_navigationmesh_method_create_from_mesh) ( mesh: [`Mesh`](class_mesh.md) )                                                       |
+| [`bool`](class_bool.md)                             | [`get_collision_mask_value`](class_navigationmeshmd#class_navigationmesh_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`PackedInt32Array`](class_packedint32array.md)     | [`get_polygon`](class_navigationmeshmd#class_navigationmesh_method_get_polygon) ( idx: [`int`](class_int.md) )                                                                    |
+| [`int`](class_int.md)                               | [`get_polygon_count`](class_navigationmeshmd#class_navigationmesh_method_get_polygon_count) ( ) const[^const]                                                                     |
+| [`PackedVector3Array`](class_packedvector3array.md) | [`get_vertices`](class_navigationmeshmd#class_navigationmesh_method_get_vertices) ( ) const[^const]                                                                               |
+| `void`                                              | [`set_collision_mask_value`](class_navigationmeshmd#class_navigationmesh_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                                              | [`set_vertices`](class_navigationmeshmd#class_navigationmesh_method_set_vertices) ( vertices: [`PackedVector3Array`](class_packedvector3array.md) )                               |
 
 <!-- rst-class:: classref-section-separator -->
 

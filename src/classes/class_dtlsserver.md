@@ -180,8 +180,8 @@ Below a small example of how to use it:
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)           | [`setup`](#class_dtlsserver_method_setup) ( server_options: [`TLSOptions`](class_tlsoptions.md) )                     |
-| [`PacketPeerDTLS`](class_packetpeerdtls.md) | [`take_connection`](#class_dtlsserver_method_take_connection) ( udp_peer: [`PacketPeerUDP`](class_packetpeerudp.md) ) |
+| [Error](#enum_@globalscope_error)           | [`setup`](class_dtlsservermd#class_dtlsserver_method_setup) ( server_options: [`TLSOptions`](class_tlsoptions.md) )                     |
+| [`PacketPeerDTLS`](class_packetpeerdtls.md) | [`take_connection`](class_dtlsservermd#class_dtlsserver_method_take_connection) ( udp_peer: [`PacketPeerUDP`](class_packetpeerudp.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -39,8 +39,8 @@ GLTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which rep
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_additional_data`](#class_gltfnode_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                        | [`set_additional_data`](#class_gltfnode_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+| [`Variant`](class_variant.md) | [`get_additional_data`](class_gltfnodemd#class_gltfnode_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| `void`                        | [`set_additional_data`](class_gltfnodemd#class_gltfnode_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

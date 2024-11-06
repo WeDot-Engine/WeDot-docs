@@ -21,12 +21,12 @@ The GDExtensionManager loads, initializes, and keeps track of all available [`GD
 
 |||
 |:-:|:--|
-| [`GDExtension`](class_gdextension.md)             | [`get_extension`](#class_gdextensionmanager_method_get_extension) ( path: [`String`](class_string.md) )                           |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_loaded_extensions`](#class_gdextensionmanager_method_get_loaded_extensions) ( ) const[^const]                               |
-| [`bool`](class_bool.md)                           | [`is_extension_loaded`](#class_gdextensionmanager_method_is_extension_loaded) ( path: [`String`](class_string.md) ) const[^const] |
-| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`load_extension`](#class_gdextensionmanager_method_load_extension) ( path: [`String`](class_string.md) )                         |
-| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`reload_extension`](#class_gdextensionmanager_method_reload_extension) ( path: [`String`](class_string.md) )                     |
-| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`unload_extension`](#class_gdextensionmanager_method_unload_extension) ( path: [`String`](class_string.md) )                     |
+| [`GDExtension`](class_gdextension.md)             | [`get_extension`](class_gdextensionmanagermd#class_gdextensionmanager_method_get_extension) ( path: [`String`](class_string.md) )                           |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_loaded_extensions`](class_gdextensionmanagermd#class_gdextensionmanager_method_get_loaded_extensions) ( ) const[^const]                               |
+| [`bool`](class_bool.md)                           | [`is_extension_loaded`](class_gdextensionmanagermd#class_gdextensionmanager_method_is_extension_loaded) ( path: [`String`](class_string.md) ) const[^const] |
+| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`load_extension`](class_gdextensionmanagermd#class_gdextensionmanager_method_load_extension) ( path: [`String`](class_string.md) )                         |
+| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`reload_extension`](class_gdextensionmanagermd#class_gdextensionmanager_method_reload_extension) ( path: [`String`](class_string.md) )                     |
+| [LoadStatus](#enum_gdextensionmanager_loadstatus) | [`unload_extension`](class_gdextensionmanagermd#class_gdextensionmanager_method_unload_extension) ( path: [`String`](class_string.md) )                     |
 
 <!-- rst-class:: classref-section-separator -->
 

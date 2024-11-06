@@ -30,7 +30,7 @@ A container that arranges its child controls horizontally or vertically and wrap
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`get_line_count`](#class_flowcontainer_method_get_line_count) ( ) const[^const] |
+| [`int`](class_int.md) | [`get_line_count`](class_flowcontainermd#class_flowcontainer_method_get_line_count) ( ) const[^const] |
 
 ## 主题属性
 

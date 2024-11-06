@@ -54,12 +54,12 @@ Use [`process_material`](#class_gpuparticles3d_property_process_material) to add
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md) | [`capture_aabb`](#class_gpuparticles3d_method_capture_aabb) ( ) const[^const]                                                                                                                                                                              |
-| `void`                  | [`convert_from_particles`](#class_gpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                                                                                                     |
-| `void`                  | [`emit_particle`](#class_gpuparticles3d_method_emit_particle) ( xform: [`Transform3D`](class_transform3d.md), velocity: [`Vector3`](class_vector3.md), color: [`Color`](class_color.md), custom: [`Color`](class_color.md), flags: [`int`](class_int.md) ) |
-| [`Mesh`](class_mesh.md) | [`get_draw_pass_mesh`](#class_gpuparticles3d_method_get_draw_pass_mesh) ( pass: [`int`](class_int.md) ) const[^const]                                                                                                                                      |
-| `void`                  | [`restart`](#class_gpuparticles3d_method_restart) ( )                                                                                                                                                                                                      |
-| `void`                  | [`set_draw_pass_mesh`](#class_gpuparticles3d_method_set_draw_pass_mesh) ( pass: [`int`](class_int.md), mesh: [`Mesh`](class_mesh.md) )                                                                                                                     |
+| [`AABB`](class_aabb.md) | [`capture_aabb`](class_gpuparticles3dmd#class_gpuparticles3d_method_capture_aabb) ( ) const[^const]                                                                                                                                                                              |
+| `void`                  | [`convert_from_particles`](class_gpuparticles3dmd#class_gpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                                                                                                     |
+| `void`                  | [`emit_particle`](class_gpuparticles3dmd#class_gpuparticles3d_method_emit_particle) ( xform: [`Transform3D`](class_transform3d.md), velocity: [`Vector3`](class_vector3.md), color: [`Color`](class_color.md), custom: [`Color`](class_color.md), flags: [`int`](class_int.md) ) |
+| [`Mesh`](class_mesh.md) | [`get_draw_pass_mesh`](class_gpuparticles3dmd#class_gpuparticles3d_method_get_draw_pass_mesh) ( pass: [`int`](class_int.md) ) const[^const]                                                                                                                                      |
+| `void`                  | [`restart`](class_gpuparticles3dmd#class_gpuparticles3d_method_restart) ( )                                                                                                                                                                                                      |
+| `void`                  | [`set_draw_pass_mesh`](class_gpuparticles3dmd#class_gpuparticles3d_method_set_draw_pass_mesh) ( pass: [`int`](class_int.md), mesh: [`Mesh`](class_mesh.md) )                                                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

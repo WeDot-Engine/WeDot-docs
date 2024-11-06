@@ -41,25 +41,25 @@ For game objects that don't require complex movement or collision detection, suc
 
 |||
 |:-:|:--|
-| `void`                                                  | [`apply_floor_snap`](#class_characterbody3d_method_apply_floor_snap) ( )                                                                            |
-| [`float`](class_float.md)                               | [`get_floor_angle`](#class_characterbody3d_method_get_floor_angle) ( up_direction: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0) ) const[^const] |
-| [`Vector3`](class_vector3.md)                           | [`get_floor_normal`](#class_characterbody3d_method_get_floor_normal) ( ) const[^const]                                                              |
-| [`Vector3`](class_vector3.md)                           | [`get_last_motion`](#class_characterbody3d_method_get_last_motion) ( ) const[^const]                                                                |
-| [`KinematicCollision3D`](class_kinematiccollision3d.md) | [`get_last_slide_collision`](#class_characterbody3d_method_get_last_slide_collision) ( )                                                            |
-| [`Vector3`](class_vector3.md)                           | [`get_platform_angular_velocity`](#class_characterbody3d_method_get_platform_angular_velocity) ( ) const[^const]                                    |
-| [`Vector3`](class_vector3.md)                           | [`get_platform_velocity`](#class_characterbody3d_method_get_platform_velocity) ( ) const[^const]                                                    |
-| [`Vector3`](class_vector3.md)                           | [`get_position_delta`](#class_characterbody3d_method_get_position_delta) ( ) const[^const]                                                          |
-| [`Vector3`](class_vector3.md)                           | [`get_real_velocity`](#class_characterbody3d_method_get_real_velocity) ( ) const[^const]                                                            |
-| [`KinematicCollision3D`](class_kinematiccollision3d.md) | [`get_slide_collision`](#class_characterbody3d_method_get_slide_collision) ( slide_idx: [`int`](class_int.md) )                                     |
-| [`int`](class_int.md)                                   | [`get_slide_collision_count`](#class_characterbody3d_method_get_slide_collision_count) ( ) const[^const]                                            |
-| [`Vector3`](class_vector3.md)                           | [`get_wall_normal`](#class_characterbody3d_method_get_wall_normal) ( ) const[^const]                                                                |
-| [`bool`](class_bool.md)                                 | [`is_on_ceiling`](#class_characterbody3d_method_is_on_ceiling) ( ) const[^const]                                                                    |
-| [`bool`](class_bool.md)                                 | [`is_on_ceiling_only`](#class_characterbody3d_method_is_on_ceiling_only) ( ) const[^const]                                                          |
-| [`bool`](class_bool.md)                                 | [`is_on_floor`](#class_characterbody3d_method_is_on_floor) ( ) const[^const]                                                                        |
-| [`bool`](class_bool.md)                                 | [`is_on_floor_only`](#class_characterbody3d_method_is_on_floor_only) ( ) const[^const]                                                              |
-| [`bool`](class_bool.md)                                 | [`is_on_wall`](#class_characterbody3d_method_is_on_wall) ( ) const[^const]                                                                          |
-| [`bool`](class_bool.md)                                 | [`is_on_wall_only`](#class_characterbody3d_method_is_on_wall_only) ( ) const[^const]                                                                |
-| [`bool`](class_bool.md)                                 | [`move_and_slide`](#class_characterbody3d_method_move_and_slide) ( )                                                                                |
+| `void`                                                  | [`apply_floor_snap`](class_characterbody3dmd#class_characterbody3d_method_apply_floor_snap) ( )                                                                            |
+| [`float`](class_float.md)                               | [`get_floor_angle`](class_characterbody3dmd#class_characterbody3d_method_get_floor_angle) ( up_direction: [`Vector3`](class_vector3.md) = Vector3(0, 1, 0) ) const[^const] |
+| [`Vector3`](class_vector3.md)                           | [`get_floor_normal`](class_characterbody3dmd#class_characterbody3d_method_get_floor_normal) ( ) const[^const]                                                              |
+| [`Vector3`](class_vector3.md)                           | [`get_last_motion`](class_characterbody3dmd#class_characterbody3d_method_get_last_motion) ( ) const[^const]                                                                |
+| [`KinematicCollision3D`](class_kinematiccollision3d.md) | [`get_last_slide_collision`](class_characterbody3dmd#class_characterbody3d_method_get_last_slide_collision) ( )                                                            |
+| [`Vector3`](class_vector3.md)                           | [`get_platform_angular_velocity`](class_characterbody3dmd#class_characterbody3d_method_get_platform_angular_velocity) ( ) const[^const]                                    |
+| [`Vector3`](class_vector3.md)                           | [`get_platform_velocity`](class_characterbody3dmd#class_characterbody3d_method_get_platform_velocity) ( ) const[^const]                                                    |
+| [`Vector3`](class_vector3.md)                           | [`get_position_delta`](class_characterbody3dmd#class_characterbody3d_method_get_position_delta) ( ) const[^const]                                                          |
+| [`Vector3`](class_vector3.md)                           | [`get_real_velocity`](class_characterbody3dmd#class_characterbody3d_method_get_real_velocity) ( ) const[^const]                                                            |
+| [`KinematicCollision3D`](class_kinematiccollision3d.md) | [`get_slide_collision`](class_characterbody3dmd#class_characterbody3d_method_get_slide_collision) ( slide_idx: [`int`](class_int.md) )                                     |
+| [`int`](class_int.md)                                   | [`get_slide_collision_count`](class_characterbody3dmd#class_characterbody3d_method_get_slide_collision_count) ( ) const[^const]                                            |
+| [`Vector3`](class_vector3.md)                           | [`get_wall_normal`](class_characterbody3dmd#class_characterbody3d_method_get_wall_normal) ( ) const[^const]                                                                |
+| [`bool`](class_bool.md)                                 | [`is_on_ceiling`](class_characterbody3dmd#class_characterbody3d_method_is_on_ceiling) ( ) const[^const]                                                                    |
+| [`bool`](class_bool.md)                                 | [`is_on_ceiling_only`](class_characterbody3dmd#class_characterbody3d_method_is_on_ceiling_only) ( ) const[^const]                                                          |
+| [`bool`](class_bool.md)                                 | [`is_on_floor`](class_characterbody3dmd#class_characterbody3d_method_is_on_floor) ( ) const[^const]                                                                        |
+| [`bool`](class_bool.md)                                 | [`is_on_floor_only`](class_characterbody3dmd#class_characterbody3d_method_is_on_floor_only) ( ) const[^const]                                                              |
+| [`bool`](class_bool.md)                                 | [`is_on_wall`](class_characterbody3dmd#class_characterbody3d_method_is_on_wall) ( ) const[^const]                                                                          |
+| [`bool`](class_bool.md)                                 | [`is_on_wall_only`](class_characterbody3dmd#class_characterbody3d_method_is_on_wall_only) ( ) const[^const]                                                                |
+| [`bool`](class_bool.md)                                 | [`move_and_slide`](class_characterbody3dmd#class_characterbody3d_method_move_and_slide) ( )                                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 

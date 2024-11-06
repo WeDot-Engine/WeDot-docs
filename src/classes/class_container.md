@@ -27,10 +27,10 @@ Base class for all GUI containers. A **Container** automatically arranges its ch
 
 |||
 |:-:|:--|
-| [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_horizontal`](#class_container_private_method__get_allowed_size_flags_horizontal) ( ) virtual[^virtual] const[^const] |
-| [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_vertical`](#class_container_private_method__get_allowed_size_flags_vertical) ( ) virtual[^virtual] const[^const]     |
-| `void`                                          | [`fit_child_in_rect`](#class_container_method_fit_child_in_rect) ( child: [`Control`](class_control.md), rect: [`Rect2`](class_rect2.md) )     |
-| `void`                                          | [`queue_sort`](#class_container_method_queue_sort) ( )                                                                                         |
+| [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_horizontal`](class_containermd#class_container_private_method__get_allowed_size_flags_horizontal) ( ) virtual[^virtual] const[^const] |
+| [`PackedInt32Array`](class_packedint32array.md) | [`_get_allowed_size_flags_vertical`](class_containermd#class_container_private_method__get_allowed_size_flags_vertical) ( ) virtual[^virtual] const[^const]     |
+| `void`                                          | [`fit_child_in_rect`](class_containermd#class_container_method_fit_child_in_rect) ( child: [`Control`](class_control.md), rect: [`Rect2`](class_rect2.md) )     |
+| `void`                                          | [`queue_sort`](class_containermd#class_container_method_queue_sort) ( )                                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 

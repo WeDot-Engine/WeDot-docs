@@ -27,13 +27,13 @@ You can add custom monitors using the [`add_custom_monitor`](#class_performance_
 
 |||
 |:-:|:--|
-| `void`                                                      | [`add_custom_monitor`](#class_performance_method_add_custom_monitor) ( id: [`StringName`](class_stringname.md), callable: [`Callable`](class_callable.md), arguments: [`Array`](class_array.md) = [] ) |
-| [`Variant`](class_variant.md)                               | [`get_custom_monitor`](#class_performance_method_get_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
-| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_custom_monitor_names`](#class_performance_method_get_custom_monitor_names) ( )                                                                                                                   |
-| [`float`](class_float.md)                                   | [`get_monitor`](#class_performance_method_get_monitor) ( monitor: [Monitor](#enum_performance_monitor) ) const[^const]                                                                                 |
-| [`int`](class_int.md)                                       | [`get_monitor_modification_time`](#class_performance_method_get_monitor_modification_time) ( )                                                                                                         |
-| [`bool`](class_bool.md)                                     | [`has_custom_monitor`](#class_performance_method_has_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
-| `void`                                                      | [`remove_custom_monitor`](#class_performance_method_remove_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                 |
+| `void`                                                      | [`add_custom_monitor`](class_performancemd#class_performance_method_add_custom_monitor) ( id: [`StringName`](class_stringname.md), callable: [`Callable`](class_callable.md), arguments: [`Array`](class_array.md) = [] ) |
+| [`Variant`](class_variant.md)                               | [`get_custom_monitor`](class_performancemd#class_performance_method_get_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
+| [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_custom_monitor_names`](class_performancemd#class_performance_method_get_custom_monitor_names) ( )                                                                                                                   |
+| [`float`](class_float.md)                                   | [`get_monitor`](class_performancemd#class_performance_method_get_monitor) ( monitor: [Monitor](#enum_performance_monitor) ) const[^const]                                                                                 |
+| [`int`](class_int.md)                                       | [`get_monitor_modification_time`](class_performancemd#class_performance_method_get_monitor_modification_time) ( )                                                                                                         |
+| [`bool`](class_bool.md)                                     | [`has_custom_monitor`](class_performancemd#class_performance_method_has_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                       |
+| `void`                                                      | [`remove_custom_monitor`](class_performancemd#class_performance_method_remove_custom_monitor) ( id: [`StringName`](class_stringname.md) )                                                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 

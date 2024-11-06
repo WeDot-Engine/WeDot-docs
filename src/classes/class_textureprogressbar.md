@@ -43,8 +43,8 @@ TextureProgressBar works like [`ProgressBar`](class_progressbar.md), but uses up
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`get_stretch_margin`](#class_textureprogressbar_method_get_stretch_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                 |
-| `void`                | [`set_stretch_margin`](#class_textureprogressbar_method_set_stretch_margin) ( margin: [Side](#enum_@globalscope_side), value: [`int`](class_int.md) ) |
+| [`int`](class_int.md) | [`get_stretch_margin`](class_textureprogressbarmd#class_textureprogressbar_method_get_stretch_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                 |
+| `void`                | [`set_stretch_margin`](class_textureprogressbarmd#class_textureprogressbar_method_set_stretch_margin) ( margin: [Side](#enum_@globalscope_side), value: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

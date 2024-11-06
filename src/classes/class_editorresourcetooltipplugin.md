@@ -21,9 +21,9 @@ A plugin must be first registered with [`FileSystemDock.add_resource_tooltip_plu
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)       | [`_handles`](#class_editorresourcetooltipplugin_private_method__handles) ( type: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                                 |
-| [`Control`](class_control.md) | [`_make_tooltip_for_path`](#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) ( path: [`String`](class_string.md), metadata: [`Dictionary`](class_dictionary.md), base: [`Control`](class_control.md) ) virtual[^virtual] const[^const] |
-| `void`                        | [`request_thumbnail`](#class_editorresourcetooltipplugin_method_request_thumbnail) ( path: [`String`](class_string.md), control: [`TextureRect`](class_texturerect.md) ) const[^const]                                                                         |
+| [`bool`](class_bool.md)       | [`_handles`](class_editorresourcetooltippluginmd#class_editorresourcetooltipplugin_private_method__handles) ( type: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                                                                                                 |
+| [`Control`](class_control.md) | [`_make_tooltip_for_path`](class_editorresourcetooltippluginmd#class_editorresourcetooltipplugin_private_method__make_tooltip_for_path) ( path: [`String`](class_string.md), metadata: [`Dictionary`](class_dictionary.md), base: [`Control`](class_control.md) ) virtual[^virtual] const[^const] |
+| `void`                        | [`request_thumbnail`](class_editorresourcetooltippluginmd#class_editorresourcetooltipplugin_method_request_thumbnail) ( path: [`String`](class_string.md), control: [`TextureRect`](class_texturerect.md) ) const[^const]                                                                         |
 
 <!-- rst-class:: classref-section-separator -->
 

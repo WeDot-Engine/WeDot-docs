@@ -31,7 +31,7 @@ A container that displays the contents of underlying [`SubViewport`](class_subvi
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`_propagate_input_event`](#class_subviewportcontainer_private_method__propagate_input_event) ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual] const[^const] |
+| [`bool`](class_bool.md) | [`_propagate_input_event`](class_subviewportcontainermd#class_subviewportcontainer_private_method__propagate_input_event) ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual] const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

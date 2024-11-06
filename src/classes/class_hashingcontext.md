@@ -81,9 +81,9 @@ The [HashType](#enum_hashingcontext_hashtype) enum shows the supported hashing a
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](#class_hashingcontext_method_finish) ( )                                                      |
-| [Error](#enum_@globalscope_error)             | [`start`](#class_hashingcontext_method_start) ( type: [HashType](#enum_hashingcontext_hashtype) )        |
-| [Error](#enum_@globalscope_error)             | [`update`](#class_hashingcontext_method_update) ( chunk: [`PackedByteArray`](class_packedbytearray.md) ) |
+| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](class_hashingcontextmd#class_hashingcontext_method_finish) ( )                                                      |
+| [Error](#enum_@globalscope_error)             | [`start`](class_hashingcontextmd#class_hashingcontext_method_start) ( type: [HashType](#enum_hashingcontext_hashtype) )        |
+| [Error](#enum_@globalscope_error)             | [`update`](class_hashingcontextmd#class_hashingcontext_method_update) ( chunk: [`PackedByteArray`](class_packedbytearray.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

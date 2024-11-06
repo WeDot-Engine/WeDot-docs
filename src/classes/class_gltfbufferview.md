@@ -32,7 +32,7 @@ Most custom uses of buffers only need to use the [`buffer`](#class_gltfbuffervie
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`load_buffer_view_data`](#class_gltfbufferview_method_load_buffer_view_data) ( state: [`GLTFState`](class_gltfstate.md) ) const[^const] |
+| [`PackedByteArray`](class_packedbytearray.md) | [`load_buffer_view_data`](class_gltfbufferviewmd#class_gltfbufferview_method_load_buffer_view_data) ( state: [`GLTFState`](class_gltfstate.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

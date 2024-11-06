@@ -31,7 +31,7 @@ If you want a node to be enabled automatically when this region is visible on sc
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`is_on_screen`](#class_visibleonscreennotifier3d_method_is_on_screen) ( ) const[^const] |
+| [`bool`](class_bool.md) | [`is_on_screen`](class_visibleonscreennotifier3dmd#class_visibleonscreennotifier3d_method_is_on_screen) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -21,14 +21,14 @@ You can add tabs to the session UI via [`add_session_tab`](#class_editordebugger
 
 |||
 |:-:|:--|
-| `void`                  | [`add_session_tab`](#class_editordebuggersession_method_add_session_tab) ( control: [`Control`](class_control.md) )                                                                       |
-| [`bool`](class_bool.md) | [`is_active`](#class_editordebuggersession_method_is_active) ( )                                                                                                                          |
-| [`bool`](class_bool.md) | [`is_breaked`](#class_editordebuggersession_method_is_breaked) ( )                                                                                                                        |
-| [`bool`](class_bool.md) | [`is_debuggable`](#class_editordebuggersession_method_is_debuggable) ( )                                                                                                                  |
-| `void`                  | [`remove_session_tab`](#class_editordebuggersession_method_remove_session_tab) ( control: [`Control`](class_control.md) )                                                                 |
-| `void`                  | [`send_message`](#class_editordebuggersession_method_send_message) ( message: [`String`](class_string.md), data: [`Array`](class_array.md) = [] )                                         |
-| `void`                  | [`set_breakpoint`](#class_editordebuggersession_method_set_breakpoint) ( path: [`String`](class_string.md), line: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )               |
-| `void`                  | [`toggle_profiler`](#class_editordebuggersession_method_toggle_profiler) ( profiler: [`String`](class_string.md), enable: [`bool`](class_bool.md), data: [`Array`](class_array.md) = [] ) |
+| `void`                  | [`add_session_tab`](class_editordebuggersessionmd#class_editordebuggersession_method_add_session_tab) ( control: [`Control`](class_control.md) )                                                                       |
+| [`bool`](class_bool.md) | [`is_active`](class_editordebuggersessionmd#class_editordebuggersession_method_is_active) ( )                                                                                                                          |
+| [`bool`](class_bool.md) | [`is_breaked`](class_editordebuggersessionmd#class_editordebuggersession_method_is_breaked) ( )                                                                                                                        |
+| [`bool`](class_bool.md) | [`is_debuggable`](class_editordebuggersessionmd#class_editordebuggersession_method_is_debuggable) ( )                                                                                                                  |
+| `void`                  | [`remove_session_tab`](class_editordebuggersessionmd#class_editordebuggersession_method_remove_session_tab) ( control: [`Control`](class_control.md) )                                                                 |
+| `void`                  | [`send_message`](class_editordebuggersessionmd#class_editordebuggersession_method_send_message) ( message: [`String`](class_string.md), data: [`Array`](class_array.md) = [] )                                         |
+| `void`                  | [`set_breakpoint`](class_editordebuggersessionmd#class_editordebuggersession_method_set_breakpoint) ( path: [`String`](class_string.md), line: [`int`](class_int.md), enabled: [`bool`](class_bool.md) )               |
+| `void`                  | [`toggle_profiler`](class_editordebuggersessionmd#class_editordebuggersession_method_toggle_profiler) ( profiler: [`String`](class_string.md), enable: [`bool`](class_bool.md), data: [`Array`](class_array.md) = [] ) |
 
 <!-- rst-class:: classref-section-separator -->
 

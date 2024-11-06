@@ -62,11 +62,11 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 |||
 |:-:|:--|
-| [`ImageTexture`](class_imagetexture.md) | [`create_from_image`](#class_imagetexture_method_create_from_image) ( image: [`Image`](class_image.md) ) static[^static] |
-| [Format](#enum_image_format)            | [`get_format`](#class_imagetexture_method_get_format) ( ) const[^const]                                                  |
-| `void`                                  | [`set_image`](#class_imagetexture_method_set_image) ( image: [`Image`](class_image.md) )                                 |
-| `void`                                  | [`set_size_override`](#class_imagetexture_method_set_size_override) ( size: [`Vector2i`](class_vector2i.md) )            |
-| `void`                                  | [`update`](#class_imagetexture_method_update) ( image: [`Image`](class_image.md) )                                       |
+| [`ImageTexture`](class_imagetexture.md) | [`create_from_image`](class_imagetexturemd#class_imagetexture_method_create_from_image) ( image: [`Image`](class_image.md) ) static[^static] |
+| [Format](#enum_image_format)            | [`get_format`](class_imagetexturemd#class_imagetexture_method_get_format) ( ) const[^const]                                                  |
+| `void`                                  | [`set_image`](class_imagetexturemd#class_imagetexture_method_set_image) ( image: [`Image`](class_image.md) )                                 |
+| `void`                                  | [`set_size_override`](class_imagetexturemd#class_imagetexture_method_set_size_override) ( size: [`Vector2i`](class_vector2i.md) )            |
+| `void`                                  | [`update`](class_imagetexturemd#class_imagetexture_method_update) ( image: [`Image`](class_image.md) )                                       |
 
 <!-- rst-class:: classref-section-separator -->
 

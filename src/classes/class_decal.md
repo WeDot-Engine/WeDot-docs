@@ -49,8 +49,8 @@ The [`Texture2D`](class_texture2d.md) s associated with the Decal are automatica
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`get_texture`](#class_decal_method_get_texture) ( type: [DecalTexture](#enum_decal_decaltexture) ) const[^const]                               |
-| `void`                            | [`set_texture`](#class_decal_method_set_texture) ( type: [DecalTexture](#enum_decal_decaltexture), texture: [`Texture2D`](class_texture2d.md) ) |
+| [`Texture2D`](class_texture2d.md) | [`get_texture`](class_decalmd#class_decal_method_get_texture) ( type: [DecalTexture](#enum_decal_decaltexture) ) const[^const]                               |
+| `void`                            | [`set_texture`](class_decalmd#class_decal_method_set_texture) ( type: [DecalTexture](#enum_decal_decaltexture), texture: [`Texture2D`](class_texture2d.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

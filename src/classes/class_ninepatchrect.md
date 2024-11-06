@@ -34,8 +34,8 @@ Also known as 9-slice panels, **NinePatchRect** produces clean panels of any siz
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`get_patch_margin`](#class_ninepatchrect_method_get_patch_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                 |
-| `void`                | [`set_patch_margin`](#class_ninepatchrect_method_set_patch_margin) ( margin: [Side](#enum_@globalscope_side), value: [`int`](class_int.md) ) |
+| [`int`](class_int.md) | [`get_patch_margin`](class_ninepatchrectmd#class_ninepatchrect_method_get_patch_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                 |
+| `void`                | [`set_patch_margin`](class_ninepatchrectmd#class_ninepatchrect_method_set_patch_margin) ( margin: [Side](#enum_@globalscope_side), value: [`int`](class_int.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

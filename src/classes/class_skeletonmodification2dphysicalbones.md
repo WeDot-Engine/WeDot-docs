@@ -27,11 +27,11 @@ This modification takes the transforms of [`PhysicalBone2D`](class_physicalbone2
 
 |||
 |:-:|:--|
-| `void`                          | [`fetch_physical_bones`](#class_skeletonmodification2dphysicalbones_method_fetch_physical_bones) ( )                                                                                            |
-| [`NodePath`](class_nodepath.md) | [`get_physical_bone_node`](#class_skeletonmodification2dphysicalbones_method_get_physical_bone_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
-| `void`                          | [`set_physical_bone_node`](#class_skeletonmodification2dphysicalbones_method_set_physical_bone_node) ( joint_idx: [`int`](class_int.md), physicalbone2d_node: [`NodePath`](class_nodepath.md) ) |
-| `void`                          | [`start_simulation`](#class_skeletonmodification2dphysicalbones_method_start_simulation) ( bones: [Array](class_array.md) [`StringName`](class_stringname.md) = [] )                            |
-| `void`                          | [`stop_simulation`](#class_skeletonmodification2dphysicalbones_method_stop_simulation) ( bones: [Array](class_array.md) [`StringName`](class_stringname.md) = [] )                              |
+| `void`                          | [`fetch_physical_bones`](class_skeletonmodification2dphysicalbonesmd#class_skeletonmodification2dphysicalbones_method_fetch_physical_bones) ( )                                                                                            |
+| [`NodePath`](class_nodepath.md) | [`get_physical_bone_node`](class_skeletonmodification2dphysicalbonesmd#class_skeletonmodification2dphysicalbones_method_get_physical_bone_node) ( joint_idx: [`int`](class_int.md) ) const[^const]                                         |
+| `void`                          | [`set_physical_bone_node`](class_skeletonmodification2dphysicalbonesmd#class_skeletonmodification2dphysicalbones_method_set_physical_bone_node) ( joint_idx: [`int`](class_int.md), physicalbone2d_node: [`NodePath`](class_nodepath.md) ) |
+| `void`                          | [`start_simulation`](class_skeletonmodification2dphysicalbonesmd#class_skeletonmodification2dphysicalbones_method_start_simulation) ( bones: [Array](class_array.md) [`StringName`](class_stringname.md) = [] )                            |
+| `void`                          | [`stop_simulation`](class_skeletonmodification2dphysicalbonesmd#class_skeletonmodification2dphysicalbones_method_stop_simulation) ( bones: [Array](class_array.md) [`StringName`](class_stringname.md) = [] )                              |
 
 <!-- rst-class:: classref-section-separator -->
 

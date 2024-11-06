@@ -26,10 +26,10 @@ This binding resource binds an [`OpenXRAction`](class_openxraction.md) to inputs
 
 |||
 |:-:|:--|
-| `void`                  | [`add_path`](#class_openxripbinding_method_add_path) ( path: [`String`](class_string.md) )               |
-| [`int`](class_int.md)   | [`get_path_count`](#class_openxripbinding_method_get_path_count) ( ) const[^const]                       |
-| [`bool`](class_bool.md) | [`has_path`](#class_openxripbinding_method_has_path) ( path: [`String`](class_string.md) ) const[^const] |
-| `void`                  | [`remove_path`](#class_openxripbinding_method_remove_path) ( path: [`String`](class_string.md) )         |
+| `void`                  | [`add_path`](class_openxripbindingmd#class_openxripbinding_method_add_path) ( path: [`String`](class_string.md) )               |
+| [`int`](class_int.md)   | [`get_path_count`](class_openxripbindingmd#class_openxripbinding_method_get_path_count) ( ) const[^const]                       |
+| [`bool`](class_bool.md) | [`has_path`](class_openxripbindingmd#class_openxripbinding_method_has_path) ( path: [`String`](class_string.md) ) const[^const] |
+| `void`                  | [`remove_path`](class_openxripbindingmd#class_openxripbinding_method_remove_path) ( path: [`String`](class_string.md) )         |
 
 <!-- rst-class:: classref-section-separator -->
 

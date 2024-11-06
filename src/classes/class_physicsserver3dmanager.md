@@ -21,8 +21,8 @@ A singleton for managing [`PhysicsServer3D`](class_physicsserver3d.md) implement
 
 |||
 |:-:|:--|
-| `void` | [`register_server`](#class_physicsserver3dmanager_method_register_server) ( name: [`String`](class_string.md), create_callback: [`Callable`](class_callable.md) ) |
-| `void` | [`set_default_server`](#class_physicsserver3dmanager_method_set_default_server) ( name: [`String`](class_string.md), priority: [`int`](class_int.md) )            |
+| `void` | [`register_server`](class_physicsserver3dmanagermd#class_physicsserver3dmanager_method_register_server) ( name: [`String`](class_string.md), create_callback: [`Callable`](class_callable.md) ) |
+| `void` | [`set_default_server`](class_physicsserver3dmanagermd#class_physicsserver3dmanager_method_set_default_server) ( name: [`String`](class_string.md), priority: [`int`](class_int.md) )            |
 
 <!-- rst-class:: classref-section-separator -->
 

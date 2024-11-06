@@ -25,7 +25,7 @@ Gives access to input variables (built-ins) available for the shader. See the sh
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_input_real_name`](#class_visualshadernodeinput_method_get_input_real_name) ( ) const[^const] |
+| [`String`](class_string.md) | [`get_input_real_name`](class_visualshadernodeinputmd#class_visualshadernodeinput_method_get_input_real_name) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

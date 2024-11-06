@@ -41,10 +41,10 @@ A node used for independent rendering of objects within a 2D scene.
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)                 | [`get_canvas`](#class_canvaslayer_method_get_canvas) ( ) const[^const]                   |
-| [`Transform2D`](class_transform2d.md) | [`get_final_transform`](#class_canvaslayer_method_get_final_transform) ( ) const[^const] |
-| `void`                                | [`hide`](#class_canvaslayer_method_hide) ( )                                             |
-| `void`                                | [`show`](#class_canvaslayer_method_show) ( )                                             |
+| [`RID`](class_rid.md)                 | [`get_canvas`](class_canvaslayermd#class_canvaslayer_method_get_canvas) ( ) const[^const]                   |
+| [`Transform2D`](class_transform2d.md) | [`get_final_transform`](class_canvaslayermd#class_canvaslayer_method_get_final_transform) ( ) const[^const] |
+| `void`                                | [`hide`](class_canvaslayermd#class_canvaslayer_method_hide) ( )                                             |
+| `void`                                | [`show`](class_canvaslayermd#class_canvaslayer_method_show) ( )                                             |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -21,12 +21,12 @@ A stream peer that handles TLS connections. This object can be used to connect t
 
 |||
 |:-:|:--|
-| [Error](#enum_@globalscope_error)    | [`accept_stream`](#class_streampeertls_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md), server_options: [`TLSOptions`](class_tlsoptions.md) )                                                          |
-| [Error](#enum_@globalscope_error)    | [`connect_to_stream`](#class_streampeertls_method_connect_to_stream) ( stream: [`StreamPeer`](class_streampeer.md), common_name: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
-| `void`                               | [`disconnect_from_stream`](#class_streampeertls_method_disconnect_from_stream) ( )                                                                                                                                         |
-| [Status](#enum_streampeertls_status) | [`get_status`](#class_streampeertls_method_get_status) ( ) const[^const]                                                                                                                                                   |
-| [`StreamPeer`](class_streampeer.md)  | [`get_stream`](#class_streampeertls_method_get_stream) ( ) const[^const]                                                                                                                                                   |
-| `void`                               | [`poll`](#class_streampeertls_method_poll) ( )                                                                                                                                                                             |
+| [Error](#enum_@globalscope_error)    | [`accept_stream`](class_streampeertlsmd#class_streampeertls_method_accept_stream) ( stream: [`StreamPeer`](class_streampeer.md), server_options: [`TLSOptions`](class_tlsoptions.md) )                                                          |
+| [Error](#enum_@globalscope_error)    | [`connect_to_stream`](class_streampeertlsmd#class_streampeertls_method_connect_to_stream) ( stream: [`StreamPeer`](class_streampeer.md), common_name: [`String`](class_string.md), client_options: [`TLSOptions`](class_tlsoptions.md) = null ) |
+| `void`                               | [`disconnect_from_stream`](class_streampeertlsmd#class_streampeertls_method_disconnect_from_stream) ( )                                                                                                                                         |
+| [Status](#enum_streampeertls_status) | [`get_status`](class_streampeertlsmd#class_streampeertls_method_get_status) ( ) const[^const]                                                                                                                                                   |
+| [`StreamPeer`](class_streampeer.md)  | [`get_stream`](class_streampeertlsmd#class_streampeertls_method_get_stream) ( ) const[^const]                                                                                                                                                   |
+| `void`                               | [`poll`](class_streampeertlsmd#class_streampeertls_method_poll) ( )                                                                                                                                                                             |
 
 <!-- rst-class:: classref-section-separator -->
 

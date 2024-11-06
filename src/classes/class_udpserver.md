@@ -163,13 +163,13 @@ Below a small example of how it can be used:
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)                     | [`get_local_port`](#class_udpserver_method_get_local_port) ( ) const[^const]                                                |
-| [`bool`](class_bool.md)                   | [`is_connection_available`](#class_udpserver_method_is_connection_available) ( ) const[^const]                              |
-| [`bool`](class_bool.md)                   | [`is_listening`](#class_udpserver_method_is_listening) ( ) const[^const]                                                    |
-| [Error](#enum_@globalscope_error)         | [`listen`](#class_udpserver_method_listen) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" ) |
-| [Error](#enum_@globalscope_error)         | [`poll`](#class_udpserver_method_poll) ( )                                                                                  |
-| `void`                                    | [`stop`](#class_udpserver_method_stop) ( )                                                                                  |
-| [`PacketPeerUDP`](class_packetpeerudp.md) | [`take_connection`](#class_udpserver_method_take_connection) ( )                                                            |
+| [`int`](class_int.md)                     | [`get_local_port`](class_udpservermd#class_udpserver_method_get_local_port) ( ) const[^const]                                                |
+| [`bool`](class_bool.md)                   | [`is_connection_available`](class_udpservermd#class_udpserver_method_is_connection_available) ( ) const[^const]                              |
+| [`bool`](class_bool.md)                   | [`is_listening`](class_udpservermd#class_udpserver_method_is_listening) ( ) const[^const]                                                    |
+| [Error](#enum_@globalscope_error)         | [`listen`](class_udpservermd#class_udpserver_method_listen) ( port: [`int`](class_int.md), bind_address: [`String`](class_string.md) = "*" ) |
+| [Error](#enum_@globalscope_error)         | [`poll`](class_udpservermd#class_udpserver_method_poll) ( )                                                                                  |
+| `void`                                    | [`stop`](class_udpservermd#class_udpserver_method_stop) ( )                                                                                  |
+| [`PacketPeerUDP`](class_packetpeerudp.md) | [`take_connection`](class_udpservermd#class_udpserver_method_take_connection) ( )                                                            |
 
 <!-- rst-class:: classref-section-separator -->
 

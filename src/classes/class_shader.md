@@ -29,10 +29,10 @@ This class is used by a [`ShaderMaterial`](class_shadermaterial.md) and allows y
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`get_default_texture_parameter`](#class_shader_method_get_default_texture_parameter) ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]                               |
-| [Mode](#enum_shader_mode)         | [`get_mode`](#class_shader_method_get_mode) ( ) const[^const]                                                                                                                                                     |
-| [`Array`](class_array.md)         | [`get_shader_uniform_list`](#class_shader_method_get_shader_uniform_list) ( get_groups: [`bool`](class_bool.md) = false )                                                                                         |
-| `void`                            | [`set_default_texture_parameter`](#class_shader_method_set_default_texture_parameter) ( name: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), index: [`int`](class_int.md) = 0 ) |
+| [`Texture2D`](class_texture2d.md) | [`get_default_texture_parameter`](class_shadermd#class_shader_method_get_default_texture_parameter) ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]                               |
+| [Mode](#enum_shader_mode)         | [`get_mode`](class_shadermd#class_shader_method_get_mode) ( ) const[^const]                                                                                                                                                     |
+| [`Array`](class_array.md)         | [`get_shader_uniform_list`](class_shadermd#class_shader_method_get_shader_uniform_list) ( get_groups: [`bool`](class_bool.md) = false )                                                                                         |
+| `void`                            | [`set_default_texture_parameter`](class_shadermd#class_shader_method_set_default_texture_parameter) ( name: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), index: [`int`](class_int.md) = 0 ) |
 
 <!-- rst-class:: classref-section-separator -->
 

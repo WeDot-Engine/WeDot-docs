@@ -58,10 +58,10 @@ Scripts extending this class and implementing its [`_run`](#class_editorscript_p
 
 |||
 |:-:|:--|
-| `void`                                        | [`_run`](#class_editorscript_private_method__run) ( ) virtual[^virtual]                       |
-| `void`                                        | [`add_root_node`](#class_editorscript_method_add_root_node) ( node: [`Node`](class_node.md) ) |
-| [`EditorInterface`](class_editorinterface.md) | [`get_editor_interface`](#class_editorscript_method_get_editor_interface) ( ) const[^const]   |
-| [`Node`](class_node.md)                       | [`get_scene`](#class_editorscript_method_get_scene) ( ) const[^const]                         |
+| `void`                                        | [`_run`](class_editorscriptmd#class_editorscript_private_method__run) ( ) virtual[^virtual]                       |
+| `void`                                        | [`add_root_node`](class_editorscriptmd#class_editorscript_method_add_root_node) ( node: [`Node`](class_node.md) ) |
+| [`EditorInterface`](class_editorinterface.md) | [`get_editor_interface`](class_editorscriptmd#class_editorscript_method_get_editor_interface) ( ) const[^const]   |
+| [`Node`](class_node.md)                       | [`get_scene`](class_editorscriptmd#class_editorscript_method_get_scene) ( ) const[^const]                         |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -38,23 +38,23 @@ Immediate collision overlaps can be done with the [`target_position`](#class_sha
 
 |||
 |:-:|:--|
-| `void`                        | [`add_exception`](#class_shapecast2d_method_add_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                                   |
-| `void`                        | [`add_exception_rid`](#class_shapecast2d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
-| `void`                        | [`clear_exceptions`](#class_shapecast2d_method_clear_exceptions) ( )                                                                                     |
-| `void`                        | [`force_shapecast_update`](#class_shapecast2d_method_force_shapecast_update) ( )                                                                         |
-| [`float`](class_float.md)     | [`get_closest_collision_safe_fraction`](#class_shapecast2d_method_get_closest_collision_safe_fraction) ( ) const[^const]                                 |
-| [`float`](class_float.md)     | [`get_closest_collision_unsafe_fraction`](#class_shapecast2d_method_get_closest_collision_unsafe_fraction) ( ) const[^const]                             |
-| [`Object`](class_object.md)   | [`get_collider`](#class_shapecast2d_method_get_collider) ( index: [`int`](class_int.md) ) const[^const]                                                  |
-| [`RID`](class_rid.md)         | [`get_collider_rid`](#class_shapecast2d_method_get_collider_rid) ( index: [`int`](class_int.md) ) const[^const]                                          |
-| [`int`](class_int.md)         | [`get_collider_shape`](#class_shapecast2d_method_get_collider_shape) ( index: [`int`](class_int.md) ) const[^const]                                      |
-| [`int`](class_int.md)         | [`get_collision_count`](#class_shapecast2d_method_get_collision_count) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)       | [`get_collision_mask_value`](#class_shapecast2d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`Vector2`](class_vector2.md) | [`get_collision_normal`](#class_shapecast2d_method_get_collision_normal) ( index: [`int`](class_int.md) ) const[^const]                                  |
-| [`Vector2`](class_vector2.md) | [`get_collision_point`](#class_shapecast2d_method_get_collision_point) ( index: [`int`](class_int.md) ) const[^const]                                    |
-| [`bool`](class_bool.md)       | [`is_colliding`](#class_shapecast2d_method_is_colliding) ( ) const[^const]                                                                               |
-| `void`                        | [`remove_exception`](#class_shapecast2d_method_remove_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                             |
-| `void`                        | [`remove_exception_rid`](#class_shapecast2d_method_remove_exception_rid) ( rid: [`RID`](class_rid.md) )                                                  |
-| `void`                        | [`set_collision_mask_value`](#class_shapecast2d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                        | [`add_exception`](class_shapecast2dmd#class_shapecast2d_method_add_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                                   |
+| `void`                        | [`add_exception_rid`](class_shapecast2dmd#class_shapecast2d_method_add_exception_rid) ( rid: [`RID`](class_rid.md) )                                                        |
+| `void`                        | [`clear_exceptions`](class_shapecast2dmd#class_shapecast2d_method_clear_exceptions) ( )                                                                                     |
+| `void`                        | [`force_shapecast_update`](class_shapecast2dmd#class_shapecast2d_method_force_shapecast_update) ( )                                                                         |
+| [`float`](class_float.md)     | [`get_closest_collision_safe_fraction`](class_shapecast2dmd#class_shapecast2d_method_get_closest_collision_safe_fraction) ( ) const[^const]                                 |
+| [`float`](class_float.md)     | [`get_closest_collision_unsafe_fraction`](class_shapecast2dmd#class_shapecast2d_method_get_closest_collision_unsafe_fraction) ( ) const[^const]                             |
+| [`Object`](class_object.md)   | [`get_collider`](class_shapecast2dmd#class_shapecast2d_method_get_collider) ( index: [`int`](class_int.md) ) const[^const]                                                  |
+| [`RID`](class_rid.md)         | [`get_collider_rid`](class_shapecast2dmd#class_shapecast2d_method_get_collider_rid) ( index: [`int`](class_int.md) ) const[^const]                                          |
+| [`int`](class_int.md)         | [`get_collider_shape`](class_shapecast2dmd#class_shapecast2d_method_get_collider_shape) ( index: [`int`](class_int.md) ) const[^const]                                      |
+| [`int`](class_int.md)         | [`get_collision_count`](class_shapecast2dmd#class_shapecast2d_method_get_collision_count) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)       | [`get_collision_mask_value`](class_shapecast2dmd#class_shapecast2d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`Vector2`](class_vector2.md) | [`get_collision_normal`](class_shapecast2dmd#class_shapecast2d_method_get_collision_normal) ( index: [`int`](class_int.md) ) const[^const]                                  |
+| [`Vector2`](class_vector2.md) | [`get_collision_point`](class_shapecast2dmd#class_shapecast2d_method_get_collision_point) ( index: [`int`](class_int.md) ) const[^const]                                    |
+| [`bool`](class_bool.md)       | [`is_colliding`](class_shapecast2dmd#class_shapecast2d_method_is_colliding) ( ) const[^const]                                                                               |
+| `void`                        | [`remove_exception`](class_shapecast2dmd#class_shapecast2d_method_remove_exception) ( node: [`CollisionObject2D`](class_collisionobject2d.md) )                             |
+| `void`                        | [`remove_exception_rid`](class_shapecast2dmd#class_shapecast2d_method_remove_exception_rid) ( rid: [`RID`](class_rid.md) )                                                  |
+| `void`                        | [`set_collision_mask_value`](class_shapecast2dmd#class_shapecast2d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

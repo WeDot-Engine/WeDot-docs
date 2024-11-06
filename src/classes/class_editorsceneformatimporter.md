@@ -23,11 +23,11 @@ To use **EditorSceneFormatImporter**, register it using the [`EditorPlugin.add_s
 
 |||
 |:-:|:--|
-| [`PackedStringArray`](class_packedstringarray.md) | [`_get_extensions`](#class_editorsceneformatimporter_private_method__get_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
-| [`int`](class_int.md)                             | [`_get_import_flags`](#class_editorsceneformatimporter_private_method__get_import_flags) ( ) virtual[^virtual] const[^const]                                                                                                                          |
-| `void`                                            | [`_get_import_options`](#class_editorsceneformatimporter_private_method__get_import_options) ( path: [`String`](class_string.md) ) virtual[^virtual]                                                                                                  |
-| [`Variant`](class_variant.md)                     | [`_get_option_visibility`](#class_editorsceneformatimporter_private_method__get_option_visibility) ( path: [`String`](class_string.md), for_animation: [`bool`](class_bool.md), option: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
-| [`Object`](class_object.md)                       | [`_import_scene`](#class_editorsceneformatimporter_private_method__import_scene) ( path: [`String`](class_string.md), flags: [`int`](class_int.md), options: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                  |
+| [`PackedStringArray`](class_packedstringarray.md) | [`_get_extensions`](class_editorsceneformatimportermd#class_editorsceneformatimporter_private_method__get_extensions) ( ) virtual[^virtual] const[^const]                                                                                                                              |
+| [`int`](class_int.md)                             | [`_get_import_flags`](class_editorsceneformatimportermd#class_editorsceneformatimporter_private_method__get_import_flags) ( ) virtual[^virtual] const[^const]                                                                                                                          |
+| `void`                                            | [`_get_import_options`](class_editorsceneformatimportermd#class_editorsceneformatimporter_private_method__get_import_options) ( path: [`String`](class_string.md) ) virtual[^virtual]                                                                                                  |
+| [`Variant`](class_variant.md)                     | [`_get_option_visibility`](class_editorsceneformatimportermd#class_editorsceneformatimporter_private_method__get_option_visibility) ( path: [`String`](class_string.md), for_animation: [`bool`](class_bool.md), option: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
+| [`Object`](class_object.md)                       | [`_import_scene`](class_editorsceneformatimportermd#class_editorsceneformatimporter_private_method__import_scene) ( path: [`String`](class_string.md), flags: [`int`](class_int.md), options: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                  |
 
 <!-- rst-class:: classref-section-separator -->
 

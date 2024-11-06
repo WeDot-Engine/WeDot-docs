@@ -37,7 +37,7 @@ You can configure TouchScreenButton to be visible only on touch devices, helping
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`is_pressed`](#class_touchscreenbutton_method_is_pressed) ( ) const[^const] |
+| [`bool`](class_bool.md) | [`is_pressed`](class_touchscreenbuttonmd#class_touchscreenbutton_method_is_pressed) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

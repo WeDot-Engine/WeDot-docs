@@ -30,31 +30,31 @@ The **Engine** singleton allows you to query and modify the project's run-time p
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)                                 | [`get_architecture_name`](#class_engine_method_get_architecture_name) ( ) const[^const]                                                              |
-| [`Dictionary`](class_dictionary.md)                         | [`get_author_info`](#class_engine_method_get_author_info) ( ) const[^const]                                                                          |
-| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_copyright_info`](#class_engine_method_get_copyright_info) ( ) const[^const]                                                                    |
-| [`Dictionary`](class_dictionary.md)                         | [`get_donor_info`](#class_engine_method_get_donor_info) ( ) const[^const]                                                                            |
-| [`int`](class_int.md)                                       | [`get_frames_drawn`](#class_engine_method_get_frames_drawn) ( )                                                                                      |
-| [`float`](class_float.md)                                   | [`get_frames_per_second`](#class_engine_method_get_frames_per_second) ( ) const[^const]                                                              |
-| [`Dictionary`](class_dictionary.md)                         | [`get_license_info`](#class_engine_method_get_license_info) ( ) const[^const]                                                                        |
-| [`String`](class_string.md)                                 | [`get_license_text`](#class_engine_method_get_license_text) ( ) const[^const]                                                                        |
-| [`MainLoop`](class_mainloop.md)                             | [`get_main_loop`](#class_engine_method_get_main_loop) ( ) const[^const]                                                                              |
-| [`int`](class_int.md)                                       | [`get_physics_frames`](#class_engine_method_get_physics_frames) ( ) const[^const]                                                                    |
-| [`float`](class_float.md)                                   | [`get_physics_interpolation_fraction`](#class_engine_method_get_physics_interpolation_fraction) ( ) const[^const]                                    |
-| [`int`](class_int.md)                                       | [`get_process_frames`](#class_engine_method_get_process_frames) ( ) const[^const]                                                                    |
-| [`ScriptLanguage`](class_scriptlanguage.md)                 | [`get_script_language`](#class_engine_method_get_script_language) ( index: [`int`](class_int.md) ) const[^const]                                     |
-| [`int`](class_int.md)                                       | [`get_script_language_count`](#class_engine_method_get_script_language_count) ( )                                                                    |
-| [`Object`](class_object.md)                                 | [`get_singleton`](#class_engine_method_get_singleton) ( name: [`StringName`](class_stringname.md) ) const[^const]                                    |
-| [`PackedStringArray`](class_packedstringarray.md)           | [`get_singleton_list`](#class_engine_method_get_singleton_list) ( ) const[^const]                                                                    |
-| [`Dictionary`](class_dictionary.md)                         | [`get_version_info`](#class_engine_method_get_version_info) ( ) const[^const]                                                                        |
-| [`String`](class_string.md)                                 | [`get_write_movie_path`](#class_engine_method_get_write_movie_path) ( ) const[^const]                                                                |
-| [`bool`](class_bool.md)                                     | [`has_singleton`](#class_engine_method_has_singleton) ( name: [`StringName`](class_stringname.md) ) const[^const]                                    |
-| [`bool`](class_bool.md)                                     | [`is_editor_hint`](#class_engine_method_is_editor_hint) ( ) const[^const]                                                                            |
-| [`bool`](class_bool.md)                                     | [`is_in_physics_frame`](#class_engine_method_is_in_physics_frame) ( ) const[^const]                                                                  |
-| [Error](#enum_@globalscope_error)                           | [`register_script_language`](#class_engine_method_register_script_language) ( language: [`ScriptLanguage`](class_scriptlanguage.md) )                |
-| `void`                                                      | [`register_singleton`](#class_engine_method_register_singleton) ( name: [`StringName`](class_stringname.md), instance: [`Object`](class_object.md) ) |
-| [Error](#enum_@globalscope_error)                           | [`unregister_script_language`](#class_engine_method_unregister_script_language) ( language: [`ScriptLanguage`](class_scriptlanguage.md) )            |
-| `void`                                                      | [`unregister_singleton`](#class_engine_method_unregister_singleton) ( name: [`StringName`](class_stringname.md) )                                    |
+| [`String`](class_string.md)                                 | [`get_architecture_name`](class_enginemd#class_engine_method_get_architecture_name) ( ) const[^const]                                                              |
+| [`Dictionary`](class_dictionary.md)                         | [`get_author_info`](class_enginemd#class_engine_method_get_author_info) ( ) const[^const]                                                                          |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_copyright_info`](class_enginemd#class_engine_method_get_copyright_info) ( ) const[^const]                                                                    |
+| [`Dictionary`](class_dictionary.md)                         | [`get_donor_info`](class_enginemd#class_engine_method_get_donor_info) ( ) const[^const]                                                                            |
+| [`int`](class_int.md)                                       | [`get_frames_drawn`](class_enginemd#class_engine_method_get_frames_drawn) ( )                                                                                      |
+| [`float`](class_float.md)                                   | [`get_frames_per_second`](class_enginemd#class_engine_method_get_frames_per_second) ( ) const[^const]                                                              |
+| [`Dictionary`](class_dictionary.md)                         | [`get_license_info`](class_enginemd#class_engine_method_get_license_info) ( ) const[^const]                                                                        |
+| [`String`](class_string.md)                                 | [`get_license_text`](class_enginemd#class_engine_method_get_license_text) ( ) const[^const]                                                                        |
+| [`MainLoop`](class_mainloop.md)                             | [`get_main_loop`](class_enginemd#class_engine_method_get_main_loop) ( ) const[^const]                                                                              |
+| [`int`](class_int.md)                                       | [`get_physics_frames`](class_enginemd#class_engine_method_get_physics_frames) ( ) const[^const]                                                                    |
+| [`float`](class_float.md)                                   | [`get_physics_interpolation_fraction`](class_enginemd#class_engine_method_get_physics_interpolation_fraction) ( ) const[^const]                                    |
+| [`int`](class_int.md)                                       | [`get_process_frames`](class_enginemd#class_engine_method_get_process_frames) ( ) const[^const]                                                                    |
+| [`ScriptLanguage`](class_scriptlanguage.md)                 | [`get_script_language`](class_enginemd#class_engine_method_get_script_language) ( index: [`int`](class_int.md) ) const[^const]                                     |
+| [`int`](class_int.md)                                       | [`get_script_language_count`](class_enginemd#class_engine_method_get_script_language_count) ( )                                                                    |
+| [`Object`](class_object.md)                                 | [`get_singleton`](class_enginemd#class_engine_method_get_singleton) ( name: [`StringName`](class_stringname.md) ) const[^const]                                    |
+| [`PackedStringArray`](class_packedstringarray.md)           | [`get_singleton_list`](class_enginemd#class_engine_method_get_singleton_list) ( ) const[^const]                                                                    |
+| [`Dictionary`](class_dictionary.md)                         | [`get_version_info`](class_enginemd#class_engine_method_get_version_info) ( ) const[^const]                                                                        |
+| [`String`](class_string.md)                                 | [`get_write_movie_path`](class_enginemd#class_engine_method_get_write_movie_path) ( ) const[^const]                                                                |
+| [`bool`](class_bool.md)                                     | [`has_singleton`](class_enginemd#class_engine_method_has_singleton) ( name: [`StringName`](class_stringname.md) ) const[^const]                                    |
+| [`bool`](class_bool.md)                                     | [`is_editor_hint`](class_enginemd#class_engine_method_is_editor_hint) ( ) const[^const]                                                                            |
+| [`bool`](class_bool.md)                                     | [`is_in_physics_frame`](class_enginemd#class_engine_method_is_in_physics_frame) ( ) const[^const]                                                                  |
+| [Error](#enum_@globalscope_error)                           | [`register_script_language`](class_enginemd#class_engine_method_register_script_language) ( language: [`ScriptLanguage`](class_scriptlanguage.md) )                |
+| `void`                                                      | [`register_singleton`](class_enginemd#class_engine_method_register_singleton) ( name: [`StringName`](class_stringname.md), instance: [`Object`](class_object.md) ) |
+| [Error](#enum_@globalscope_error)                           | [`unregister_script_language`](class_enginemd#class_engine_method_unregister_script_language) ( language: [`ScriptLanguage`](class_scriptlanguage.md) )            |
+| `void`                                                      | [`unregister_singleton`](class_enginemd#class_engine_method_unregister_singleton) ( name: [`StringName`](class_stringname.md) )                                    |
 
 <!-- rst-class:: classref-section-separator -->
 

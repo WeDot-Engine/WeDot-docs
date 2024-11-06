@@ -23,35 +23,35 @@ An array specifically designed to hold 32-bit integer values. Packs data tightly
 
 |||
 |:-:|:--|
-| [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](#class_packedint32array_constructor_packedint32array) ( )                                                       |
-| [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](#class_packedint32array_constructor_packedint32array) ( from: [`PackedInt32Array`](class_packedint32array.md) ) |
-| [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](#class_packedint32array_constructor_packedint32array) ( from: [`Array`](class_array.md) )                       |
+| [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](class_packedint32array.md#class_packedint32array_constructor_packedint32array) ( )                                                       |
+| [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](class_packedint32array.md#class_packedint32array_constructor_packedint32array) ( from: [`PackedInt32Array`](class_packedint32array.md) ) |
+| [`PackedInt32Array`](class_packedint32array.md) | [`PackedInt32Array`](class_packedint32array.md#class_packedint32array_constructor_packedint32array) ( from: [`Array`](class_array.md) )                       |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                         | [`append`](#class_packedint32array_method_append) ( value: [`int`](class_int.md) )                                                      |
-| `void`                                          | [`append_array`](#class_packedint32array_method_append_array) ( array: [`PackedInt32Array`](class_packedint32array.md) )                |
-| [`int`](class_int.md)                           | [`bsearch`](#class_packedint32array_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )            |
-| `void`                                          | [`clear`](#class_packedint32array_method_clear) ( )                                                                                     |
-| [`int`](class_int.md)                           | [`count`](#class_packedint32array_method_count) ( value: [`int`](class_int.md) ) const[^const]                                          |
-| [`PackedInt32Array`](class_packedint32array.md) | [`duplicate`](#class_packedint32array_method_duplicate) ( )                                                                             |
-| `void`                                          | [`fill`](#class_packedint32array_method_fill) ( value: [`int`](class_int.md) )                                                          |
-| [`int`](class_int.md)                           | [`find`](#class_packedint32array_method_find) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]           |
-| [`bool`](class_bool.md)                         | [`has`](#class_packedint32array_method_has) ( value: [`int`](class_int.md) ) const[^const]                                              |
-| [`int`](class_int.md)                           | [`insert`](#class_packedint32array_method_insert) ( at_index: [`int`](class_int.md), value: [`int`](class_int.md) )                     |
-| [`bool`](class_bool.md)                         | [`is_empty`](#class_packedint32array_method_is_empty) ( ) const[^const]                                                                 |
-| [`bool`](class_bool.md)                         | [`push_back`](#class_packedint32array_method_push_back) ( value: [`int`](class_int.md) )                                                |
-| `void`                                          | [`remove_at`](#class_packedint32array_method_remove_at) ( index: [`int`](class_int.md) )                                                |
-| [`int`](class_int.md)                           | [`resize`](#class_packedint32array_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
-| `void`                                          | [`reverse`](#class_packedint32array_method_reverse) ( )                                                                                 |
-| [`int`](class_int.md)                           | [`rfind`](#class_packedint32array_method_rfind) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = -1 ) const[^const]        |
-| `void`                                          | [`set`](#class_packedint32array_method_set) ( index: [`int`](class_int.md), value: [`int`](class_int.md) )                              |
-| [`int`](class_int.md)                           | [`size`](#class_packedint32array_method_size) ( ) const[^const]                                                                         |
-| [`PackedInt32Array`](class_packedint32array.md) | [`slice`](#class_packedint32array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
-| `void`                                          | [`sort`](#class_packedint32array_method_sort) ( )                                                                                       |
-| [`PackedByteArray`](class_packedbytearray.md)   | [`to_byte_array`](#class_packedint32array_method_to_byte_array) ( ) const[^const]                                                       |
+| [`bool`](class_bool.md)                         | [`append`](class_packedint32arraymd#class_packedint32array_method_append) ( value: [`int`](class_int.md) )                                                      |
+| `void`                                          | [`append_array`](class_packedint32arraymd#class_packedint32array_method_append_array) ( array: [`PackedInt32Array`](class_packedint32array.md) )                |
+| [`int`](class_int.md)                           | [`bsearch`](class_packedint32arraymd#class_packedint32array_method_bsearch) ( value: [`int`](class_int.md), before: [`bool`](class_bool.md) = true )            |
+| `void`                                          | [`clear`](class_packedint32arraymd#class_packedint32array_method_clear) ( )                                                                                     |
+| [`int`](class_int.md)                           | [`count`](class_packedint32arraymd#class_packedint32array_method_count) ( value: [`int`](class_int.md) ) const[^const]                                          |
+| [`PackedInt32Array`](class_packedint32array.md) | [`duplicate`](class_packedint32arraymd#class_packedint32array_method_duplicate) ( )                                                                             |
+| `void`                                          | [`fill`](class_packedint32arraymd#class_packedint32array_method_fill) ( value: [`int`](class_int.md) )                                                          |
+| [`int`](class_int.md)                           | [`find`](class_packedint32arraymd#class_packedint32array_method_find) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]           |
+| [`bool`](class_bool.md)                         | [`has`](class_packedint32arraymd#class_packedint32array_method_has) ( value: [`int`](class_int.md) ) const[^const]                                              |
+| [`int`](class_int.md)                           | [`insert`](class_packedint32arraymd#class_packedint32array_method_insert) ( at_index: [`int`](class_int.md), value: [`int`](class_int.md) )                     |
+| [`bool`](class_bool.md)                         | [`is_empty`](class_packedint32arraymd#class_packedint32array_method_is_empty) ( ) const[^const]                                                                 |
+| [`bool`](class_bool.md)                         | [`push_back`](class_packedint32arraymd#class_packedint32array_method_push_back) ( value: [`int`](class_int.md) )                                                |
+| `void`                                          | [`remove_at`](class_packedint32arraymd#class_packedint32array_method_remove_at) ( index: [`int`](class_int.md) )                                                |
+| [`int`](class_int.md)                           | [`resize`](class_packedint32arraymd#class_packedint32array_method_resize) ( new_size: [`int`](class_int.md) )                                                   |
+| `void`                                          | [`reverse`](class_packedint32arraymd#class_packedint32array_method_reverse) ( )                                                                                 |
+| [`int`](class_int.md)                           | [`rfind`](class_packedint32arraymd#class_packedint32array_method_rfind) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = -1 ) const[^const]        |
+| `void`                                          | [`set`](class_packedint32arraymd#class_packedint32array_method_set) ( index: [`int`](class_int.md), value: [`int`](class_int.md) )                              |
+| [`int`](class_int.md)                           | [`size`](class_packedint32arraymd#class_packedint32array_method_size) ( ) const[^const]                                                                         |
+| [`PackedInt32Array`](class_packedint32array.md) | [`slice`](class_packedint32arraymd#class_packedint32array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647 ) const[^const] |
+| `void`                                          | [`sort`](class_packedint32arraymd#class_packedint32array_method_sort) ( )                                                                                       |
+| [`PackedByteArray`](class_packedbytearray.md)   | [`to_byte_array`](class_packedint32arraymd#class_packedint32array_method_to_byte_array) ( ) const[^const]                                                       |
 
 ## 运算符
 

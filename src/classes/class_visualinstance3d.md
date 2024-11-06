@@ -29,13 +29,13 @@ The **VisualInstance3D** is used to connect a resource to a visual representatio
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md) | [`_get_aabb`](#class_visualinstance3d_private_method__get_aabb) ( ) virtual[^virtual] const[^const]                                                   |
-| [`AABB`](class_aabb.md) | [`get_aabb`](#class_visualinstance3d_method_get_aabb) ( ) const[^const]                                                                               |
-| [`RID`](class_rid.md)   | [`get_base`](#class_visualinstance3d_method_get_base) ( ) const[^const]                                                                               |
-| [`RID`](class_rid.md)   | [`get_instance`](#class_visualinstance3d_method_get_instance) ( ) const[^const]                                                                       |
-| [`bool`](class_bool.md) | [`get_layer_mask_value`](#class_visualinstance3d_method_get_layer_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| `void`                  | [`set_base`](#class_visualinstance3d_method_set_base) ( base: [`RID`](class_rid.md) )                                                                 |
-| `void`                  | [`set_layer_mask_value`](#class_visualinstance3d_method_set_layer_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| [`AABB`](class_aabb.md) | [`_get_aabb`](class_visualinstance3dmd#class_visualinstance3d_private_method__get_aabb) ( ) virtual[^virtual] const[^const]                                                   |
+| [`AABB`](class_aabb.md) | [`get_aabb`](class_visualinstance3dmd#class_visualinstance3d_method_get_aabb) ( ) const[^const]                                                                               |
+| [`RID`](class_rid.md)   | [`get_base`](class_visualinstance3dmd#class_visualinstance3d_method_get_base) ( ) const[^const]                                                                               |
+| [`RID`](class_rid.md)   | [`get_instance`](class_visualinstance3dmd#class_visualinstance3d_method_get_instance) ( ) const[^const]                                                                       |
+| [`bool`](class_bool.md) | [`get_layer_mask_value`](class_visualinstance3dmd#class_visualinstance3d_method_get_layer_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| `void`                  | [`set_base`](class_visualinstance3dmd#class_visualinstance3d_method_set_base) ( base: [`RID`](class_rid.md) )                                                                 |
+| `void`                  | [`set_layer_mask_value`](class_visualinstance3dmd#class_visualinstance3d_method_set_layer_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

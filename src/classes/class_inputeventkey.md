@@ -35,13 +35,13 @@ When events are compared, properties are checked in the following priority - [`k
 
 |||
 |:-:|:--|
-| [`String`](class_string.md)   | [`as_text_key_label`](#class_inputeventkey_method_as_text_key_label) ( ) const[^const]                                     |
-| [`String`](class_string.md)   | [`as_text_keycode`](#class_inputeventkey_method_as_text_keycode) ( ) const[^const]                                         |
-| [`String`](class_string.md)   | [`as_text_location`](#class_inputeventkey_method_as_text_location) ( ) const[^const]                                       |
-| [`String`](class_string.md)   | [`as_text_physical_keycode`](#class_inputeventkey_method_as_text_physical_keycode) ( ) const[^const]                       |
-| [Key](#enum_@globalscope_key) | [`get_key_label_with_modifiers`](#class_inputeventkey_method_get_key_label_with_modifiers) ( ) const[^const]               |
-| [Key](#enum_@globalscope_key) | [`get_keycode_with_modifiers`](#class_inputeventkey_method_get_keycode_with_modifiers) ( ) const[^const]                   |
-| [Key](#enum_@globalscope_key) | [`get_physical_keycode_with_modifiers`](#class_inputeventkey_method_get_physical_keycode_with_modifiers) ( ) const[^const] |
+| [`String`](class_string.md)   | [`as_text_key_label`](class_inputeventkeymd#class_inputeventkey_method_as_text_key_label) ( ) const[^const]                                     |
+| [`String`](class_string.md)   | [`as_text_keycode`](class_inputeventkeymd#class_inputeventkey_method_as_text_keycode) ( ) const[^const]                                         |
+| [`String`](class_string.md)   | [`as_text_location`](class_inputeventkeymd#class_inputeventkey_method_as_text_location) ( ) const[^const]                                       |
+| [`String`](class_string.md)   | [`as_text_physical_keycode`](class_inputeventkeymd#class_inputeventkey_method_as_text_physical_keycode) ( ) const[^const]                       |
+| [Key](#enum_@globalscope_key) | [`get_key_label_with_modifiers`](class_inputeventkeymd#class_inputeventkey_method_get_key_label_with_modifiers) ( ) const[^const]               |
+| [Key](#enum_@globalscope_key) | [`get_keycode_with_modifiers`](class_inputeventkeymd#class_inputeventkey_method_get_keycode_with_modifiers) ( ) const[^const]                   |
+| [Key](#enum_@globalscope_key) | [`get_physical_keycode_with_modifiers`](class_inputeventkeymd#class_inputeventkey_method_get_physical_keycode_with_modifiers) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

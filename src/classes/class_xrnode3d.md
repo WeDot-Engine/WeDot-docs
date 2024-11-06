@@ -29,10 +29,10 @@ This node can be bound to a specific pose of a [`XRPositionalTracker`](class_xrp
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)     | [`get_has_tracking_data`](#class_xrnode3d_method_get_has_tracking_data) ( ) const[^const]                                                                                                                                                                                     |
-| [`bool`](class_bool.md)     | [`get_is_active`](#class_xrnode3d_method_get_is_active) ( ) const[^const]                                                                                                                                                                                                     |
-| [`XRPose`](class_xrpose.md) | [`get_pose`](#class_xrnode3d_method_get_pose) ( )                                                                                                                                                                                                                             |
-| `void`                      | [`trigger_haptic_pulse`](#class_xrnode3d_method_trigger_haptic_pulse) ( action_name: [`String`](class_string.md), frequency: [`float`](class_float.md), amplitude: [`float`](class_float.md), duration_sec: [`float`](class_float.md), delay_sec: [`float`](class_float.md) ) |
+| [`bool`](class_bool.md)     | [`get_has_tracking_data`](class_xrnode3dmd#class_xrnode3d_method_get_has_tracking_data) ( ) const[^const]                                                                                                                                                                                     |
+| [`bool`](class_bool.md)     | [`get_is_active`](class_xrnode3dmd#class_xrnode3d_method_get_is_active) ( ) const[^const]                                                                                                                                                                                                     |
+| [`XRPose`](class_xrpose.md) | [`get_pose`](class_xrnode3dmd#class_xrnode3d_method_get_pose) ( )                                                                                                                                                                                                                             |
+| `void`                      | [`trigger_haptic_pulse`](class_xrnode3dmd#class_xrnode3d_method_trigger_haptic_pulse) ( action_name: [`String`](class_string.md), frequency: [`float`](class_float.md), amplitude: [`float`](class_float.md), duration_sec: [`float`](class_float.md), delay_sec: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

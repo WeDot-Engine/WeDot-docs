@@ -57,19 +57,19 @@ If you need to override the default physics behavior, you can write a custom for
 
 |||
 |:-:|:--|
-| `void`                                              | [`_integrate_forces`](#class_rigidbody2d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState2D`](class_physicsdirectbodystate2d.md) ) virtual[^virtual] |
-| `void`                                              | [`add_constant_central_force`](#class_rigidbody2d_method_add_constant_central_force) ( force: [`Vector2`](class_vector2.md) )                                           |
-| `void`                                              | [`add_constant_force`](#class_rigidbody2d_method_add_constant_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )  |
-| `void`                                              | [`add_constant_torque`](#class_rigidbody2d_method_add_constant_torque) ( torque: [`float`](class_float.md) )                                                            |
-| `void`                                              | [`apply_central_force`](#class_rigidbody2d_method_apply_central_force) ( force: [`Vector2`](class_vector2.md) )                                                         |
-| `void`                                              | [`apply_central_impulse`](#class_rigidbody2d_method_apply_central_impulse) ( impulse: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                   |
-| `void`                                              | [`apply_force`](#class_rigidbody2d_method_apply_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                |
-| `void`                                              | [`apply_impulse`](#class_rigidbody2d_method_apply_impulse) ( impulse: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )          |
-| `void`                                              | [`apply_torque`](#class_rigidbody2d_method_apply_torque) ( torque: [`float`](class_float.md) )                                                                          |
-| `void`                                              | [`apply_torque_impulse`](#class_rigidbody2d_method_apply_torque_impulse) ( torque: [`float`](class_float.md) )                                                          |
-| [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_colliding_bodies`](#class_rigidbody2d_method_get_colliding_bodies) ( ) const[^const]                                                                              |
-| [`int`](class_int.md)                               | [`get_contact_count`](#class_rigidbody2d_method_get_contact_count) ( ) const[^const]                                                                                    |
-| `void`                                              | [`set_axis_velocity`](#class_rigidbody2d_method_set_axis_velocity) ( axis_velocity: [`Vector2`](class_vector2.md) )                                                     |
+| `void`                                              | [`_integrate_forces`](class_rigidbody2dmd#class_rigidbody2d_private_method__integrate_forces) ( state: [`PhysicsDirectBodyState2D`](class_physicsdirectbodystate2d.md) ) virtual[^virtual] |
+| `void`                                              | [`add_constant_central_force`](class_rigidbody2dmd#class_rigidbody2d_method_add_constant_central_force) ( force: [`Vector2`](class_vector2.md) )                                           |
+| `void`                                              | [`add_constant_force`](class_rigidbody2dmd#class_rigidbody2d_method_add_constant_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )  |
+| `void`                                              | [`add_constant_torque`](class_rigidbody2dmd#class_rigidbody2d_method_add_constant_torque) ( torque: [`float`](class_float.md) )                                                            |
+| `void`                                              | [`apply_central_force`](class_rigidbody2dmd#class_rigidbody2d_method_apply_central_force) ( force: [`Vector2`](class_vector2.md) )                                                         |
+| `void`                                              | [`apply_central_impulse`](class_rigidbody2dmd#class_rigidbody2d_method_apply_central_impulse) ( impulse: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                                   |
+| `void`                                              | [`apply_force`](class_rigidbody2dmd#class_rigidbody2d_method_apply_force) ( force: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )                |
+| `void`                                              | [`apply_impulse`](class_rigidbody2dmd#class_rigidbody2d_method_apply_impulse) ( impulse: [`Vector2`](class_vector2.md), position: [`Vector2`](class_vector2.md) = Vector2(0, 0) )          |
+| `void`                                              | [`apply_torque`](class_rigidbody2dmd#class_rigidbody2d_method_apply_torque) ( torque: [`float`](class_float.md) )                                                                          |
+| `void`                                              | [`apply_torque_impulse`](class_rigidbody2dmd#class_rigidbody2d_method_apply_torque_impulse) ( torque: [`float`](class_float.md) )                                                          |
+| [Array](class_array.md) [`Node2D`](class_node2d.md) | [`get_colliding_bodies`](class_rigidbody2dmd#class_rigidbody2d_method_get_colliding_bodies) ( ) const[^const]                                                                              |
+| [`int`](class_int.md)                               | [`get_contact_count`](class_rigidbody2dmd#class_rigidbody2d_method_get_contact_count) ( ) const[^const]                                                                                    |
+| `void`                                              | [`set_axis_velocity`](class_rigidbody2dmd#class_rigidbody2d_method_set_axis_velocity) ( axis_velocity: [`Vector2`](class_vector2.md) )                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 

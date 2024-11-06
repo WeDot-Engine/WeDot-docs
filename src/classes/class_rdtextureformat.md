@@ -33,8 +33,8 @@ This object is used by [`RenderingDevice`](class_renderingdevice.md).
 
 |||
 |:-:|:--|
-| `void` | [`add_shareable_format`](#class_rdtextureformat_method_add_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) )       |
-| `void` | [`remove_shareable_format`](#class_rdtextureformat_method_remove_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) ) |
+| `void` | [`add_shareable_format`](class_rdtextureformatmd#class_rdtextureformat_method_add_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) )       |
+| `void` | [`remove_shareable_format`](class_rdtextureformatmd#class_rdtextureformat_method_remove_shareable_format) ( format: [DataFormat](#enum_renderingdevice_dataformat) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

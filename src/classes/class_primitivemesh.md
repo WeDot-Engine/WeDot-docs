@@ -31,9 +31,9 @@ Base class for all primitive meshes. Handles applying a [`Material`](class_mater
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md) | [`_create_mesh_array`](#class_primitivemesh_private_method__create_mesh_array) ( ) virtual[^virtual] const[^const] |
-| [`Array`](class_array.md) | [`get_mesh_arrays`](#class_primitivemesh_method_get_mesh_arrays) ( ) const[^const]                                 |
-| `void`                    | [`request_update`](#class_primitivemesh_method_request_update) ( )                                                 |
+| [`Array`](class_array.md) | [`_create_mesh_array`](class_primitivemeshmd#class_primitivemesh_private_method__create_mesh_array) ( ) virtual[^virtual] const[^const] |
+| [`Array`](class_array.md) | [`get_mesh_arrays`](class_primitivemeshmd#class_primitivemesh_method_get_mesh_arrays) ( ) const[^const]                                 |
+| `void`                    | [`request_update`](class_primitivemeshmd#class_primitivemesh_method_request_update) ( )                                                 |
 
 <!-- rst-class:: classref-section-separator -->
 

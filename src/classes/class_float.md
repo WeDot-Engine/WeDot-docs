@@ -21,11 +21,11 @@ Math done using the **float** type is not guaranteed to be exact and will often 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( )                                   |
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`float`](class_float.md) )   |
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`String`](class_string.md) ) |
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`bool`](class_bool.md) )     |
-| [`float`](class_float.md) | [`float`](#class_float_constructor_float) ( from: [`int`](class_int.md) )       |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( )                                   |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( from: [`float`](class_float.md) )   |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( from: [`String`](class_string.md) ) |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( from: [`bool`](class_bool.md) )     |
+| [`float`](class_float.md) | [`float`](class_float.md#class_float_constructor_float) ( from: [`int`](class_int.md) )       |
 
 ## 运算符
 

@@ -21,27 +21,27 @@ This class cannot be instantiated directly, it is retrieved for a given scene as
 
 |||
 |:-:|:--|
-| [`Array`](class_array.md)                         | [`get_connection_binds`](#class_scenestate_method_get_connection_binds) ( idx: [`int`](class_int.md) ) const[^const]                                        |
-| [`int`](class_int.md)                             | [`get_connection_count`](#class_scenestate_method_get_connection_count) ( ) const[^const]                                                                   |
-| [`int`](class_int.md)                             | [`get_connection_flags`](#class_scenestate_method_get_connection_flags) ( idx: [`int`](class_int.md) ) const[^const]                                        |
-| [`StringName`](class_stringname.md)               | [`get_connection_method`](#class_scenestate_method_get_connection_method) ( idx: [`int`](class_int.md) ) const[^const]                                      |
-| [`StringName`](class_stringname.md)               | [`get_connection_signal`](#class_scenestate_method_get_connection_signal) ( idx: [`int`](class_int.md) ) const[^const]                                      |
-| [`NodePath`](class_nodepath.md)                   | [`get_connection_source`](#class_scenestate_method_get_connection_source) ( idx: [`int`](class_int.md) ) const[^const]                                      |
-| [`NodePath`](class_nodepath.md)                   | [`get_connection_target`](#class_scenestate_method_get_connection_target) ( idx: [`int`](class_int.md) ) const[^const]                                      |
-| [`int`](class_int.md)                             | [`get_connection_unbinds`](#class_scenestate_method_get_connection_unbinds) ( idx: [`int`](class_int.md) ) const[^const]                                    |
-| [`int`](class_int.md)                             | [`get_node_count`](#class_scenestate_method_get_node_count) ( ) const[^const]                                                                               |
-| [`PackedStringArray`](class_packedstringarray.md) | [`get_node_groups`](#class_scenestate_method_get_node_groups) ( idx: [`int`](class_int.md) ) const[^const]                                                  |
-| [`int`](class_int.md)                             | [`get_node_index`](#class_scenestate_method_get_node_index) ( idx: [`int`](class_int.md) ) const[^const]                                                    |
-| [`PackedScene`](class_packedscene.md)             | [`get_node_instance`](#class_scenestate_method_get_node_instance) ( idx: [`int`](class_int.md) ) const[^const]                                              |
-| [`String`](class_string.md)                       | [`get_node_instance_placeholder`](#class_scenestate_method_get_node_instance_placeholder) ( idx: [`int`](class_int.md) ) const[^const]                      |
-| [`StringName`](class_stringname.md)               | [`get_node_name`](#class_scenestate_method_get_node_name) ( idx: [`int`](class_int.md) ) const[^const]                                                      |
-| [`NodePath`](class_nodepath.md)                   | [`get_node_owner_path`](#class_scenestate_method_get_node_owner_path) ( idx: [`int`](class_int.md) ) const[^const]                                          |
-| [`NodePath`](class_nodepath.md)                   | [`get_node_path`](#class_scenestate_method_get_node_path) ( idx: [`int`](class_int.md), for_parent: [`bool`](class_bool.md) = false ) const[^const]         |
-| [`int`](class_int.md)                             | [`get_node_property_count`](#class_scenestate_method_get_node_property_count) ( idx: [`int`](class_int.md) ) const[^const]                                  |
-| [`StringName`](class_stringname.md)               | [`get_node_property_name`](#class_scenestate_method_get_node_property_name) ( idx: [`int`](class_int.md), prop_idx: [`int`](class_int.md) ) const[^const]   |
-| [`Variant`](class_variant.md)                     | [`get_node_property_value`](#class_scenestate_method_get_node_property_value) ( idx: [`int`](class_int.md), prop_idx: [`int`](class_int.md) ) const[^const] |
-| [`StringName`](class_stringname.md)               | [`get_node_type`](#class_scenestate_method_get_node_type) ( idx: [`int`](class_int.md) ) const[^const]                                                      |
-| [`bool`](class_bool.md)                           | [`is_node_instance_placeholder`](#class_scenestate_method_is_node_instance_placeholder) ( idx: [`int`](class_int.md) ) const[^const]                        |
+| [`Array`](class_array.md)                         | [`get_connection_binds`](class_scenestatemd#class_scenestate_method_get_connection_binds) ( idx: [`int`](class_int.md) ) const[^const]                                        |
+| [`int`](class_int.md)                             | [`get_connection_count`](class_scenestatemd#class_scenestate_method_get_connection_count) ( ) const[^const]                                                                   |
+| [`int`](class_int.md)                             | [`get_connection_flags`](class_scenestatemd#class_scenestate_method_get_connection_flags) ( idx: [`int`](class_int.md) ) const[^const]                                        |
+| [`StringName`](class_stringname.md)               | [`get_connection_method`](class_scenestatemd#class_scenestate_method_get_connection_method) ( idx: [`int`](class_int.md) ) const[^const]                                      |
+| [`StringName`](class_stringname.md)               | [`get_connection_signal`](class_scenestatemd#class_scenestate_method_get_connection_signal) ( idx: [`int`](class_int.md) ) const[^const]                                      |
+| [`NodePath`](class_nodepath.md)                   | [`get_connection_source`](class_scenestatemd#class_scenestate_method_get_connection_source) ( idx: [`int`](class_int.md) ) const[^const]                                      |
+| [`NodePath`](class_nodepath.md)                   | [`get_connection_target`](class_scenestatemd#class_scenestate_method_get_connection_target) ( idx: [`int`](class_int.md) ) const[^const]                                      |
+| [`int`](class_int.md)                             | [`get_connection_unbinds`](class_scenestatemd#class_scenestate_method_get_connection_unbinds) ( idx: [`int`](class_int.md) ) const[^const]                                    |
+| [`int`](class_int.md)                             | [`get_node_count`](class_scenestatemd#class_scenestate_method_get_node_count) ( ) const[^const]                                                                               |
+| [`PackedStringArray`](class_packedstringarray.md) | [`get_node_groups`](class_scenestatemd#class_scenestate_method_get_node_groups) ( idx: [`int`](class_int.md) ) const[^const]                                                  |
+| [`int`](class_int.md)                             | [`get_node_index`](class_scenestatemd#class_scenestate_method_get_node_index) ( idx: [`int`](class_int.md) ) const[^const]                                                    |
+| [`PackedScene`](class_packedscene.md)             | [`get_node_instance`](class_scenestatemd#class_scenestate_method_get_node_instance) ( idx: [`int`](class_int.md) ) const[^const]                                              |
+| [`String`](class_string.md)                       | [`get_node_instance_placeholder`](class_scenestatemd#class_scenestate_method_get_node_instance_placeholder) ( idx: [`int`](class_int.md) ) const[^const]                      |
+| [`StringName`](class_stringname.md)               | [`get_node_name`](class_scenestatemd#class_scenestate_method_get_node_name) ( idx: [`int`](class_int.md) ) const[^const]                                                      |
+| [`NodePath`](class_nodepath.md)                   | [`get_node_owner_path`](class_scenestatemd#class_scenestate_method_get_node_owner_path) ( idx: [`int`](class_int.md) ) const[^const]                                          |
+| [`NodePath`](class_nodepath.md)                   | [`get_node_path`](class_scenestatemd#class_scenestate_method_get_node_path) ( idx: [`int`](class_int.md), for_parent: [`bool`](class_bool.md) = false ) const[^const]         |
+| [`int`](class_int.md)                             | [`get_node_property_count`](class_scenestatemd#class_scenestate_method_get_node_property_count) ( idx: [`int`](class_int.md) ) const[^const]                                  |
+| [`StringName`](class_stringname.md)               | [`get_node_property_name`](class_scenestatemd#class_scenestate_method_get_node_property_name) ( idx: [`int`](class_int.md), prop_idx: [`int`](class_int.md) ) const[^const]   |
+| [`Variant`](class_variant.md)                     | [`get_node_property_value`](class_scenestatemd#class_scenestate_method_get_node_property_value) ( idx: [`int`](class_int.md), prop_idx: [`int`](class_int.md) ) const[^const] |
+| [`StringName`](class_stringname.md)               | [`get_node_type`](class_scenestatemd#class_scenestate_method_get_node_type) ( idx: [`int`](class_int.md) ) const[^const]                                                      |
+| [`bool`](class_bool.md)                           | [`is_node_instance_placeholder`](class_scenestatemd#class_scenestate_method_is_node_instance_placeholder) ( idx: [`int`](class_int.md) ) const[^const]                        |
 
 <!-- rst-class:: classref-section-separator -->
 

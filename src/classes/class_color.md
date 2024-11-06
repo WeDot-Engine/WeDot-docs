@@ -41,43 +41,43 @@ Colors can be created in various ways: By the various **Color** constructors, by
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( )                                                                                                                        |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( from: [`Color`](class_color.md), alpha: [`float`](class_float.md) )                                                      |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( from: [`Color`](class_color.md) )                                                                                        |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( code: [`String`](class_string.md) )                                                                                      |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( code: [`String`](class_string.md), alpha: [`float`](class_float.md) )                                                    |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md) )                               |
-| [`Color`](class_color.md) | [`Color`](#class_color_constructor_color) ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md), a: [`float`](class_float.md) ) |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( )                                                                                                                        |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( from: [`Color`](class_color.md), alpha: [`float`](class_float.md) )                                                      |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( from: [`Color`](class_color.md) )                                                                                        |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( code: [`String`](class_string.md) )                                                                                      |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( code: [`String`](class_string.md), alpha: [`float`](class_float.md) )                                                    |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md) )                               |
+| [`Color`](class_color.md) | [`Color`](class_color.md#class_color_constructor_color) ( r: [`float`](class_float.md), g: [`float`](class_float.md), b: [`float`](class_float.md), a: [`float`](class_float.md) ) |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Color`](class_color.md)   | [`blend`](#class_color_method_blend) ( over: [`Color`](class_color.md) ) const[^const]                                                                                                                |
-| [`Color`](class_color.md)   | [`clamp`](#class_color_method_clamp) ( min: [`Color`](class_color.md) = Color(0, 0, 0, 0), max: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                         |
-| [`Color`](class_color.md)   | [`darkened`](#class_color_method_darkened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                        |
-| [`Color`](class_color.md)   | [`from_hsv`](#class_color_method_from_hsv) ( h: [`float`](class_float.md), s: [`float`](class_float.md), v: [`float`](class_float.md), alpha: [`float`](class_float.md) = 1.0 ) static[^static]       |
-| [`Color`](class_color.md)   | [`from_ok_hsl`](#class_color_method_from_ok_hsl) ( h: [`float`](class_float.md), s: [`float`](class_float.md), l: [`float`](class_float.md), alpha: [`float`](class_float.md) = 1.0 ) static[^static] |
-| [`Color`](class_color.md)   | [`from_rgbe9995`](#class_color_method_from_rgbe9995) ( rgbe: [`int`](class_int.md) ) static[^static]                                                                                                  |
-| [`Color`](class_color.md)   | [`from_string`](#class_color_method_from_string) ( str: [`String`](class_string.md), default: [`Color`](class_color.md) ) static[^static]                                                             |
-| [`float`](class_float.md)   | [`get_luminance`](#class_color_method_get_luminance) ( ) const[^const]                                                                                                                                |
-| [`Color`](class_color.md)   | [`hex`](#class_color_method_hex) ( hex: [`int`](class_int.md) ) static[^static]                                                                                                                       |
-| [`Color`](class_color.md)   | [`hex64`](#class_color_method_hex64) ( hex: [`int`](class_int.md) ) static[^static]                                                                                                                   |
-| [`Color`](class_color.md)   | [`html`](#class_color_method_html) ( rgba: [`String`](class_string.md) ) static[^static]                                                                                                              |
-| [`bool`](class_bool.md)     | [`html_is_valid`](#class_color_method_html_is_valid) ( color: [`String`](class_string.md) ) static[^static]                                                                                           |
-| [`Color`](class_color.md)   | [`inverted`](#class_color_method_inverted) ( ) const[^const]                                                                                                                                          |
-| [`bool`](class_bool.md)     | [`is_equal_approx`](#class_color_method_is_equal_approx) ( to: [`Color`](class_color.md) ) const[^const]                                                                                              |
-| [`Color`](class_color.md)   | [`lerp`](#class_color_method_lerp) ( to: [`Color`](class_color.md), weight: [`float`](class_float.md) ) const[^const]                                                                                 |
-| [`Color`](class_color.md)   | [`lightened`](#class_color_method_lightened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                      |
-| [`Color`](class_color.md)   | [`linear_to_srgb`](#class_color_method_linear_to_srgb) ( ) const[^const]                                                                                                                              |
-| [`Color`](class_color.md)   | [`srgb_to_linear`](#class_color_method_srgb_to_linear) ( ) const[^const]                                                                                                                              |
-| [`int`](class_int.md)       | [`to_abgr32`](#class_color_method_to_abgr32) ( ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)       | [`to_abgr64`](#class_color_method_to_abgr64) ( ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)       | [`to_argb32`](#class_color_method_to_argb32) ( ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)       | [`to_argb64`](#class_color_method_to_argb64) ( ) const[^const]                                                                                                                                        |
-| [`String`](class_string.md) | [`to_html`](#class_color_method_to_html) ( with_alpha: [`bool`](class_bool.md) = true ) const[^const]                                                                                                 |
-| [`int`](class_int.md)       | [`to_rgba32`](#class_color_method_to_rgba32) ( ) const[^const]                                                                                                                                        |
-| [`int`](class_int.md)       | [`to_rgba64`](#class_color_method_to_rgba64) ( ) const[^const]                                                                                                                                        |
+| [`Color`](class_color.md)   | [`blend`](class_colormd#class_color_method_blend) ( over: [`Color`](class_color.md) ) const[^const]                                                                                                                |
+| [`Color`](class_color.md)   | [`clamp`](class_colormd#class_color_method_clamp) ( min: [`Color`](class_color.md) = Color(0, 0, 0, 0), max: [`Color`](class_color.md) = Color(1, 1, 1, 1) ) const[^const]                                         |
+| [`Color`](class_color.md)   | [`darkened`](class_colormd#class_color_method_darkened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                        |
+| [`Color`](class_color.md)   | [`from_hsv`](class_colormd#class_color_method_from_hsv) ( h: [`float`](class_float.md), s: [`float`](class_float.md), v: [`float`](class_float.md), alpha: [`float`](class_float.md) = 1.0 ) static[^static]       |
+| [`Color`](class_color.md)   | [`from_ok_hsl`](class_colormd#class_color_method_from_ok_hsl) ( h: [`float`](class_float.md), s: [`float`](class_float.md), l: [`float`](class_float.md), alpha: [`float`](class_float.md) = 1.0 ) static[^static] |
+| [`Color`](class_color.md)   | [`from_rgbe9995`](class_colormd#class_color_method_from_rgbe9995) ( rgbe: [`int`](class_int.md) ) static[^static]                                                                                                  |
+| [`Color`](class_color.md)   | [`from_string`](class_colormd#class_color_method_from_string) ( str: [`String`](class_string.md), default: [`Color`](class_color.md) ) static[^static]                                                             |
+| [`float`](class_float.md)   | [`get_luminance`](class_colormd#class_color_method_get_luminance) ( ) const[^const]                                                                                                                                |
+| [`Color`](class_color.md)   | [`hex`](class_colormd#class_color_method_hex) ( hex: [`int`](class_int.md) ) static[^static]                                                                                                                       |
+| [`Color`](class_color.md)   | [`hex64`](class_colormd#class_color_method_hex64) ( hex: [`int`](class_int.md) ) static[^static]                                                                                                                   |
+| [`Color`](class_color.md)   | [`html`](class_colormd#class_color_method_html) ( rgba: [`String`](class_string.md) ) static[^static]                                                                                                              |
+| [`bool`](class_bool.md)     | [`html_is_valid`](class_colormd#class_color_method_html_is_valid) ( color: [`String`](class_string.md) ) static[^static]                                                                                           |
+| [`Color`](class_color.md)   | [`inverted`](class_colormd#class_color_method_inverted) ( ) const[^const]                                                                                                                                          |
+| [`bool`](class_bool.md)     | [`is_equal_approx`](class_colormd#class_color_method_is_equal_approx) ( to: [`Color`](class_color.md) ) const[^const]                                                                                              |
+| [`Color`](class_color.md)   | [`lerp`](class_colormd#class_color_method_lerp) ( to: [`Color`](class_color.md), weight: [`float`](class_float.md) ) const[^const]                                                                                 |
+| [`Color`](class_color.md)   | [`lightened`](class_colormd#class_color_method_lightened) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                      |
+| [`Color`](class_color.md)   | [`linear_to_srgb`](class_colormd#class_color_method_linear_to_srgb) ( ) const[^const]                                                                                                                              |
+| [`Color`](class_color.md)   | [`srgb_to_linear`](class_colormd#class_color_method_srgb_to_linear) ( ) const[^const]                                                                                                                              |
+| [`int`](class_int.md)       | [`to_abgr32`](class_colormd#class_color_method_to_abgr32) ( ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)       | [`to_abgr64`](class_colormd#class_color_method_to_abgr64) ( ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)       | [`to_argb32`](class_colormd#class_color_method_to_argb32) ( ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)       | [`to_argb64`](class_colormd#class_color_method_to_argb64) ( ) const[^const]                                                                                                                                        |
+| [`String`](class_string.md) | [`to_html`](class_colormd#class_color_method_to_html) ( with_alpha: [`bool`](class_bool.md) = true ) const[^const]                                                                                                 |
+| [`int`](class_int.md)       | [`to_rgba32`](class_colormd#class_color_method_to_rgba32) ( ) const[^const]                                                                                                                                        |
+| [`int`](class_int.md)       | [`to_rgba64`](class_colormd#class_color_method_to_rgba64) ( ) const[^const]                                                                                                                                        |
 
 ## 运算符
 

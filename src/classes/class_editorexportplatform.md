@@ -23,7 +23,7 @@ Used in scripting by [`EditorExportPlugin`](class_editorexportplugin.md) to conf
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_os_name`](#class_editorexportplatform_method_get_os_name) ( ) const[^const] |
+| [`String`](class_string.md) | [`get_os_name`](class_editorexportplatformmd#class_editorexportplatform_method_get_os_name) ( ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -26,12 +26,12 @@ Contains baked lightmap and dynamic object probe data for [`LightmapGI`](class_l
 
 |||
 |:-:|:--|
-| `void`                          | [`add_user`](#class_lightmapgidata_method_add_user) ( path: [`NodePath`](class_nodepath.md), uv_scale: [`Rect2`](class_rect2.md), slice_index: [`int`](class_int.md), sub_instance: [`int`](class_int.md) ) |
-| `void`                          | [`clear_users`](#class_lightmapgidata_method_clear_users) ( )                                                                                                                                               |
-| [`int`](class_int.md)           | [`get_user_count`](#class_lightmapgidata_method_get_user_count) ( ) const[^const]                                                                                                                           |
-| [`NodePath`](class_nodepath.md) | [`get_user_path`](#class_lightmapgidata_method_get_user_path) ( user_idx: [`int`](class_int.md) ) const[^const]                                                                                             |
-| [`bool`](class_bool.md)         | [`is_using_spherical_harmonics`](#class_lightmapgidata_method_is_using_spherical_harmonics) ( ) const[^const]                                                                                               |
-| `void`                          | [`set_uses_spherical_harmonics`](#class_lightmapgidata_method_set_uses_spherical_harmonics) ( uses_spherical_harmonics: [`bool`](class_bool.md) )                                                           |
+| `void`                          | [`add_user`](class_lightmapgidatamd#class_lightmapgidata_method_add_user) ( path: [`NodePath`](class_nodepath.md), uv_scale: [`Rect2`](class_rect2.md), slice_index: [`int`](class_int.md), sub_instance: [`int`](class_int.md) ) |
+| `void`                          | [`clear_users`](class_lightmapgidatamd#class_lightmapgidata_method_clear_users) ( )                                                                                                                                               |
+| [`int`](class_int.md)           | [`get_user_count`](class_lightmapgidatamd#class_lightmapgidata_method_get_user_count) ( ) const[^const]                                                                                                                           |
+| [`NodePath`](class_nodepath.md) | [`get_user_path`](class_lightmapgidatamd#class_lightmapgidata_method_get_user_path) ( user_idx: [`int`](class_int.md) ) const[^const]                                                                                             |
+| [`bool`](class_bool.md)         | [`is_using_spherical_harmonics`](class_lightmapgidatamd#class_lightmapgidata_method_is_using_spherical_harmonics) ( ) const[^const]                                                                                               |
+| `void`                          | [`set_uses_spherical_harmonics`](class_lightmapgidatamd#class_lightmapgidata_method_set_uses_spherical_harmonics) ( uses_spherical_harmonics: [`bool`](class_bool.md) )                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 

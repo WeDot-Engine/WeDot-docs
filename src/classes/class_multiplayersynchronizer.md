@@ -38,11 +38,11 @@ Internally, **MultiplayerSynchronizer** uses [`MultiplayerAPI.object_configurati
 
 |||
 |:-:|:--|
-| `void`                  | [`add_visibility_filter`](#class_multiplayersynchronizer_method_add_visibility_filter) ( filter: [`Callable`](class_callable.md) )                 |
-| [`bool`](class_bool.md) | [`get_visibility_for`](#class_multiplayersynchronizer_method_get_visibility_for) ( peer: [`int`](class_int.md) ) const[^const]                     |
-| `void`                  | [`remove_visibility_filter`](#class_multiplayersynchronizer_method_remove_visibility_filter) ( filter: [`Callable`](class_callable.md) )           |
-| `void`                  | [`set_visibility_for`](#class_multiplayersynchronizer_method_set_visibility_for) ( peer: [`int`](class_int.md), visible: [`bool`](class_bool.md) ) |
-| `void`                  | [`update_visibility`](#class_multiplayersynchronizer_method_update_visibility) ( for_peer: [`int`](class_int.md) = 0 )                             |
+| `void`                  | [`add_visibility_filter`](class_multiplayersynchronizermd#class_multiplayersynchronizer_method_add_visibility_filter) ( filter: [`Callable`](class_callable.md) )                 |
+| [`bool`](class_bool.md) | [`get_visibility_for`](class_multiplayersynchronizermd#class_multiplayersynchronizer_method_get_visibility_for) ( peer: [`int`](class_int.md) ) const[^const]                     |
+| `void`                  | [`remove_visibility_filter`](class_multiplayersynchronizermd#class_multiplayersynchronizer_method_remove_visibility_filter) ( filter: [`Callable`](class_callable.md) )           |
+| `void`                  | [`set_visibility_for`](class_multiplayersynchronizermd#class_multiplayersynchronizer_method_set_visibility_for) ( peer: [`int`](class_int.md), visible: [`bool`](class_bool.md) ) |
+| `void`                  | [`update_visibility`](class_multiplayersynchronizermd#class_multiplayersynchronizer_method_update_visibility) ( for_peer: [`int`](class_int.md) = 0 )                             |
 
 <!-- rst-class:: classref-section-separator -->
 

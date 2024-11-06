@@ -38,12 +38,12 @@ A texture-based nine-patch [`StyleBox`](class_stylebox.md), in a way similar to 
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_expand_margin`](#class_styleboxtexture_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
-| [`float`](class_float.md) | [`get_texture_margin`](#class_styleboxtexture_method_get_texture_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                    |
-| `void`                    | [`set_expand_margin`](#class_styleboxtexture_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |
-| `void`                    | [`set_expand_margin_all`](#class_styleboxtexture_method_set_expand_margin_all) ( size: [`float`](class_float.md) )                                    |
-| `void`                    | [`set_texture_margin`](#class_styleboxtexture_method_set_texture_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) ) |
-| `void`                    | [`set_texture_margin_all`](#class_styleboxtexture_method_set_texture_margin_all) ( size: [`float`](class_float.md) )                                  |
+| [`float`](class_float.md) | [`get_expand_margin`](class_styleboxtexturemd#class_styleboxtexture_method_get_expand_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                      |
+| [`float`](class_float.md) | [`get_texture_margin`](class_styleboxtexturemd#class_styleboxtexture_method_get_texture_margin) ( margin: [Side](#enum_@globalscope_side) ) const[^const]                    |
+| `void`                    | [`set_expand_margin`](class_styleboxtexturemd#class_styleboxtexture_method_set_expand_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) )   |
+| `void`                    | [`set_expand_margin_all`](class_styleboxtexturemd#class_styleboxtexture_method_set_expand_margin_all) ( size: [`float`](class_float.md) )                                    |
+| `void`                    | [`set_texture_margin`](class_styleboxtexturemd#class_styleboxtexture_method_set_texture_margin) ( margin: [Side](#enum_@globalscope_side), size: [`float`](class_float.md) ) |
+| `void`                    | [`set_texture_margin_all`](class_styleboxtexturemd#class_styleboxtexture_method_set_texture_margin_all) ( size: [`float`](class_float.md) )                                  |
 
 <!-- rst-class:: classref-section-separator -->
 

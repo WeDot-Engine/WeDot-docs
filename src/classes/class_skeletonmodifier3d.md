@@ -32,8 +32,8 @@ This node should be used to implement custom IK solvers, constraints, or skeleto
 
 |||
 |:-:|:--|
-| `void`                              | [`_process_modification`](#class_skeletonmodifier3d_private_method__process_modification) ( ) virtual[^virtual] |
-| [`Skeleton3D`](class_skeleton3d.md) | [`get_skeleton`](#class_skeletonmodifier3d_method_get_skeleton) ( ) const[^const]                               |
+| `void`                              | [`_process_modification`](class_skeletonmodifier3dmd#class_skeletonmodifier3d_private_method__process_modification) ( ) virtual[^virtual] |
+| [`Skeleton3D`](class_skeleton3d.md) | [`get_skeleton`](class_skeletonmodifier3dmd#class_skeletonmodifier3d_method_get_skeleton) ( ) const[^const]                               |
 
 <!-- rst-class:: classref-section-separator -->
 

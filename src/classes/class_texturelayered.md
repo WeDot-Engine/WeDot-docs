@@ -29,20 +29,20 @@ Internally, Godot maps these files to their respective counterparts in the targe
 
 |||
 |:-:|:--|
-| [Format](#enum_image_format)                    | [`_get_format`](#class_texturelayered_private_method__get_format) ( ) virtual[^virtual] const[^const]                                            |
-| [`int`](class_int.md)                           | [`_get_height`](#class_texturelayered_private_method__get_height) ( ) virtual[^virtual] const[^const]                                            |
-| [`Image`](class_image.md)                       | [`_get_layer_data`](#class_texturelayered_private_method__get_layer_data) ( layer_index: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
-| [`int`](class_int.md)                           | [`_get_layered_type`](#class_texturelayered_private_method__get_layered_type) ( ) virtual[^virtual] const[^const]                                |
-| [`int`](class_int.md)                           | [`_get_layers`](#class_texturelayered_private_method__get_layers) ( ) virtual[^virtual] const[^const]                                            |
-| [`int`](class_int.md)                           | [`_get_width`](#class_texturelayered_private_method__get_width) ( ) virtual[^virtual] const[^const]                                              |
-| [`bool`](class_bool.md)                         | [`_has_mipmaps`](#class_texturelayered_private_method__has_mipmaps) ( ) virtual[^virtual] const[^const]                                          |
-| [Format](#enum_image_format)                    | [`get_format`](#class_texturelayered_method_get_format) ( ) const[^const]                                                                        |
-| [`int`](class_int.md)                           | [`get_height`](#class_texturelayered_method_get_height) ( ) const[^const]                                                                        |
-| [`Image`](class_image.md)                       | [`get_layer_data`](#class_texturelayered_method_get_layer_data) ( layer: [`int`](class_int.md) ) const[^const]                                   |
-| [LayeredType](#enum_texturelayered_layeredtype) | [`get_layered_type`](#class_texturelayered_method_get_layered_type) ( ) const[^const]                                                            |
-| [`int`](class_int.md)                           | [`get_layers`](#class_texturelayered_method_get_layers) ( ) const[^const]                                                                        |
-| [`int`](class_int.md)                           | [`get_width`](#class_texturelayered_method_get_width) ( ) const[^const]                                                                          |
-| [`bool`](class_bool.md)                         | [`has_mipmaps`](#class_texturelayered_method_has_mipmaps) ( ) const[^const]                                                                      |
+| [Format](#enum_image_format)                    | [`_get_format`](class_texturelayeredmd#class_texturelayered_private_method__get_format) ( ) virtual[^virtual] const[^const]                                            |
+| [`int`](class_int.md)                           | [`_get_height`](class_texturelayeredmd#class_texturelayered_private_method__get_height) ( ) virtual[^virtual] const[^const]                                            |
+| [`Image`](class_image.md)                       | [`_get_layer_data`](class_texturelayeredmd#class_texturelayered_private_method__get_layer_data) ( layer_index: [`int`](class_int.md) ) virtual[^virtual] const[^const] |
+| [`int`](class_int.md)                           | [`_get_layered_type`](class_texturelayeredmd#class_texturelayered_private_method__get_layered_type) ( ) virtual[^virtual] const[^const]                                |
+| [`int`](class_int.md)                           | [`_get_layers`](class_texturelayeredmd#class_texturelayered_private_method__get_layers) ( ) virtual[^virtual] const[^const]                                            |
+| [`int`](class_int.md)                           | [`_get_width`](class_texturelayeredmd#class_texturelayered_private_method__get_width) ( ) virtual[^virtual] const[^const]                                              |
+| [`bool`](class_bool.md)                         | [`_has_mipmaps`](class_texturelayeredmd#class_texturelayered_private_method__has_mipmaps) ( ) virtual[^virtual] const[^const]                                          |
+| [Format](#enum_image_format)                    | [`get_format`](class_texturelayeredmd#class_texturelayered_method_get_format) ( ) const[^const]                                                                        |
+| [`int`](class_int.md)                           | [`get_height`](class_texturelayeredmd#class_texturelayered_method_get_height) ( ) const[^const]                                                                        |
+| [`Image`](class_image.md)                       | [`get_layer_data`](class_texturelayeredmd#class_texturelayered_method_get_layer_data) ( layer: [`int`](class_int.md) ) const[^const]                                   |
+| [LayeredType](#enum_texturelayered_layeredtype) | [`get_layered_type`](class_texturelayeredmd#class_texturelayered_method_get_layered_type) ( ) const[^const]                                                            |
+| [`int`](class_int.md)                           | [`get_layers`](class_texturelayeredmd#class_texturelayered_method_get_layers) ( ) const[^const]                                                                        |
+| [`int`](class_int.md)                           | [`get_width`](class_texturelayeredmd#class_texturelayered_method_get_width) ( ) const[^const]                                                                          |
+| [`bool`](class_bool.md)                         | [`has_mipmaps`](class_texturelayeredmd#class_texturelayered_method_has_mipmaps) ( ) const[^const]                                                                      |
 
 <!-- rst-class:: classref-section-separator -->
 

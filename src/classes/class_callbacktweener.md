@@ -23,7 +23,7 @@ The tweener will finish automatically if the callback's target object is freed.
 
 |||
 |:-:|:--|
-| [`CallbackTweener`](class_callbacktweener.md) | [`set_delay`](#class_callbacktweener_method_set_delay) ( delay: [`float`](class_float.md) ) |
+| [`CallbackTweener`](class_callbacktweener.md) | [`set_delay`](class_callbacktweenermd#class_callbacktweener_method_set_delay) ( delay: [`float`](class_float.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

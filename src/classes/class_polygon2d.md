@@ -40,14 +40,14 @@ A Polygon2D is defined by a set of points. Each point is connected to the next, 
 
 |||
 |:-:|:--|
-| `void`                                              | [`add_bone`](#class_polygon2d_method_add_bone) ( path: [`NodePath`](class_nodepath.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
-| `void`                                              | [`clear_bones`](#class_polygon2d_method_clear_bones) ( )                                                                                                      |
-| `void`                                              | [`erase_bone`](#class_polygon2d_method_erase_bone) ( index: [`int`](class_int.md) )                                                                           |
-| [`int`](class_int.md)                               | [`get_bone_count`](#class_polygon2d_method_get_bone_count) ( ) const[^const]                                                                                  |
-| [`NodePath`](class_nodepath.md)                     | [`get_bone_path`](#class_polygon2d_method_get_bone_path) ( index: [`int`](class_int.md) ) const[^const]                                                       |
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`get_bone_weights`](#class_polygon2d_method_get_bone_weights) ( index: [`int`](class_int.md) ) const[^const]                                                 |
-| `void`                                              | [`set_bone_path`](#class_polygon2d_method_set_bone_path) ( index: [`int`](class_int.md), path: [`NodePath`](class_nodepath.md) )                              |
-| `void`                                              | [`set_bone_weights`](#class_polygon2d_method_set_bone_weights) ( index: [`int`](class_int.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) ) |
+| `void`                                              | [`add_bone`](class_polygon2dmd#class_polygon2d_method_add_bone) ( path: [`NodePath`](class_nodepath.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) )        |
+| `void`                                              | [`clear_bones`](class_polygon2dmd#class_polygon2d_method_clear_bones) ( )                                                                                                      |
+| `void`                                              | [`erase_bone`](class_polygon2dmd#class_polygon2d_method_erase_bone) ( index: [`int`](class_int.md) )                                                                           |
+| [`int`](class_int.md)                               | [`get_bone_count`](class_polygon2dmd#class_polygon2d_method_get_bone_count) ( ) const[^const]                                                                                  |
+| [`NodePath`](class_nodepath.md)                     | [`get_bone_path`](class_polygon2dmd#class_polygon2d_method_get_bone_path) ( index: [`int`](class_int.md) ) const[^const]                                                       |
+| [`PackedFloat32Array`](class_packedfloat32array.md) | [`get_bone_weights`](class_polygon2dmd#class_polygon2d_method_get_bone_weights) ( index: [`int`](class_int.md) ) const[^const]                                                 |
+| `void`                                              | [`set_bone_path`](class_polygon2dmd#class_polygon2d_method_set_bone_path) ( index: [`int`](class_int.md), path: [`NodePath`](class_nodepath.md) )                              |
+| `void`                                              | [`set_bone_weights`](class_polygon2dmd#class_polygon2d_method_set_bone_weights) ( index: [`int`](class_int.md), weights: [`PackedFloat32Array`](class_packedfloat32array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

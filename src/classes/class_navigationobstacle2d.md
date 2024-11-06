@@ -37,11 +37,11 @@ With [`avoidance_enabled`](#class_navigationobstacle2d_property_avoidance_enable
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md) | [`get_avoidance_layer_value`](#class_navigationobstacle2d_method_get_avoidance_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`RID`](class_rid.md)   | [`get_navigation_map`](#class_navigationobstacle2d_method_get_navigation_map) ( ) const[^const]                                                                     |
-| [`RID`](class_rid.md)   | [`get_rid`](#class_navigationobstacle2d_method_get_rid) ( ) const[^const]                                                                                           |
-| `void`                  | [`set_avoidance_layer_value`](#class_navigationobstacle2d_method_set_avoidance_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                  | [`set_navigation_map`](#class_navigationobstacle2d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                             |
+| [`bool`](class_bool.md) | [`get_avoidance_layer_value`](class_navigationobstacle2dmd#class_navigationobstacle2d_method_get_avoidance_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`RID`](class_rid.md)   | [`get_navigation_map`](class_navigationobstacle2dmd#class_navigationobstacle2d_method_get_navigation_map) ( ) const[^const]                                                                     |
+| [`RID`](class_rid.md)   | [`get_rid`](class_navigationobstacle2dmd#class_navigationobstacle2d_method_get_rid) ( ) const[^const]                                                                                           |
+| `void`                  | [`set_avoidance_layer_value`](class_navigationobstacle2dmd#class_navigationobstacle2d_method_set_avoidance_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                  | [`set_navigation_map`](class_navigationobstacle2dmd#class_navigationobstacle2d_method_set_navigation_map) ( navigation_map: [`RID`](class_rid.md) )                                             |
 
 <!-- rst-class:: classref-section-separator -->
 

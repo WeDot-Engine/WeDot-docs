@@ -15,10 +15,10 @@
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)             | [`_get_available_packet_count`](#class_packetpeerextension_private_method__get_available_packet_count) ( ) virtual[^virtual] const[^const]                    |
-| [`int`](class_int.md)             | [`_get_max_packet_size`](#class_packetpeerextension_private_method__get_max_packet_size) ( ) virtual[^virtual] const[^const]                                  |
-| [Error](#enum_@globalscope_error) | [`_get_packet`](#class_packetpeerextension_private_method__get_packet) ( r_buffer: `const uint8_t **`, r_buffer_size: `int32_t*` ) virtual[^virtual]          |
-| [Error](#enum_@globalscope_error) | [`_put_packet`](#class_packetpeerextension_private_method__put_packet) ( p_buffer: `const uint8_t*`, p_buffer_size: [`int`](class_int.md) ) virtual[^virtual] |
+| [`int`](class_int.md)             | [`_get_available_packet_count`](class_packetpeerextensionmd#class_packetpeerextension_private_method__get_available_packet_count) ( ) virtual[^virtual] const[^const]                    |
+| [`int`](class_int.md)             | [`_get_max_packet_size`](class_packetpeerextensionmd#class_packetpeerextension_private_method__get_max_packet_size) ( ) virtual[^virtual] const[^const]                                  |
+| [Error](#enum_@globalscope_error) | [`_get_packet`](class_packetpeerextensionmd#class_packetpeerextension_private_method__get_packet) ( r_buffer: `const uint8_t **`, r_buffer_size: `int32_t*` ) virtual[^virtual]          |
+| [Error](#enum_@globalscope_error) | [`_put_packet`](class_packetpeerextensionmd#class_packetpeerextension_private_method__put_packet) ( p_buffer: `const uint8_t*`, p_buffer_size: [`int`](class_int.md) ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

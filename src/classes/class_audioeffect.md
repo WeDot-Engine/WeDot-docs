@@ -23,7 +23,7 @@ When applied on a bus, an audio effect creates a corresponding [`AudioEffectInst
 
 |||
 |:-:|:--|
-| [`AudioEffectInstance`](class_audioeffectinstance.md) | [`_instantiate`](#class_audioeffect_private_method__instantiate) ( ) virtual[^virtual] |
+| [`AudioEffectInstance`](class_audioeffectinstance.md) | [`_instantiate`](class_audioeffectmd#class_audioeffect_private_method__instantiate) ( ) virtual[^virtual] |
 
 <!-- rst-class:: classref-section-separator -->
 

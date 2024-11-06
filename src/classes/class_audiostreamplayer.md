@@ -38,12 +38,12 @@ If you need to play audio at a specific position, use [`AudioStreamPlayer2D`](cl
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                             | [`get_playback_position`](#class_audiostreamplayer_method_get_playback_position) ( )              |
-| [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](#class_audiostreamplayer_method_get_stream_playback) ( )                  |
-| [`bool`](class_bool.md)                               | [`has_stream_playback`](#class_audiostreamplayer_method_has_stream_playback) ( )                  |
-| `void`                                                | [`play`](#class_audiostreamplayer_method_play) ( from_position: [`float`](class_float.md) = 0.0 ) |
-| `void`                                                | [`seek`](#class_audiostreamplayer_method_seek) ( to_position: [`float`](class_float.md) )         |
-| `void`                                                | [`stop`](#class_audiostreamplayer_method_stop) ( )                                                |
+| [`float`](class_float.md)                             | [`get_playback_position`](class_audiostreamplayermd#class_audiostreamplayer_method_get_playback_position) ( )              |
+| [`AudioStreamPlayback`](class_audiostreamplayback.md) | [`get_stream_playback`](class_audiostreamplayermd#class_audiostreamplayer_method_get_stream_playback) ( )                  |
+| [`bool`](class_bool.md)                               | [`has_stream_playback`](class_audiostreamplayermd#class_audiostreamplayer_method_has_stream_playback) ( )                  |
+| `void`                                                | [`play`](class_audiostreamplayermd#class_audiostreamplayer_method_play) ( from_position: [`float`](class_float.md) = 0.0 ) |
+| `void`                                                | [`seek`](class_audiostreamplayermd#class_audiostreamplayer_method_seek) ( to_position: [`float`](class_float.md) )         |
+| `void`                                                | [`stop`](class_audiostreamplayermd#class_audiostreamplayer_method_stop) ( )                                                |
 
 <!-- rst-class:: classref-section-separator -->
 

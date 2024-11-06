@@ -34,13 +34,13 @@ Sprite node that contains multiple textures as frames to play for animation.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md) | [`get_playing_speed`](#class_animatedsprite2d_method_get_playing_speed) ( ) const[^const]                                                                                                   |
-| [`bool`](class_bool.md)   | [`is_playing`](#class_animatedsprite2d_method_is_playing) ( ) const[^const]                                                                                                                 |
-| `void`                    | [`pause`](#class_animatedsprite2d_method_pause) ( )                                                                                                                                         |
-| `void`                    | [`play`](#class_animatedsprite2d_method_play) ( name: [`StringName`](class_stringname.md) = &"", custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false ) |
-| `void`                    | [`play_backwards`](#class_animatedsprite2d_method_play_backwards) ( name: [`StringName`](class_stringname.md) = &"" )                                                                       |
-| `void`                    | [`set_frame_and_progress`](#class_animatedsprite2d_method_set_frame_and_progress) ( frame: [`int`](class_int.md), progress: [`float`](class_float.md) )                                     |
-| `void`                    | [`stop`](#class_animatedsprite2d_method_stop) ( )                                                                                                                                           |
+| [`float`](class_float.md) | [`get_playing_speed`](class_animatedsprite2dmd#class_animatedsprite2d_method_get_playing_speed) ( ) const[^const]                                                                                                   |
+| [`bool`](class_bool.md)   | [`is_playing`](class_animatedsprite2dmd#class_animatedsprite2d_method_is_playing) ( ) const[^const]                                                                                                                 |
+| `void`                    | [`pause`](class_animatedsprite2dmd#class_animatedsprite2d_method_pause) ( )                                                                                                                                         |
+| `void`                    | [`play`](class_animatedsprite2dmd#class_animatedsprite2d_method_play) ( name: [`StringName`](class_stringname.md) = &"", custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false ) |
+| `void`                    | [`play_backwards`](class_animatedsprite2dmd#class_animatedsprite2d_method_play_backwards) ( name: [`StringName`](class_stringname.md) = &"" )                                                                       |
+| `void`                    | [`set_frame_and_progress`](class_animatedsprite2dmd#class_animatedsprite2d_method_set_frame_and_progress) ( frame: [`int`](class_int.md), progress: [`float`](class_float.md) )                                     |
+| `void`                    | [`stop`](class_animatedsprite2dmd#class_animatedsprite2d_method_stop) ( )                                                                                                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 

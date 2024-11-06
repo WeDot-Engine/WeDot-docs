@@ -76,11 +76,11 @@ You can use the `0b` literal for binary representation, the `0x` literal for hex
 
 |||
 |:-:|:--|
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( )                                   |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`int`](class_int.md) )       |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`String`](class_string.md) ) |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`bool`](class_bool.md) )     |
-| [`int`](class_int.md) | [`int`](#class_int_constructor_int) ( from: [`float`](class_float.md) )   |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( )                                   |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`int`](class_int.md) )       |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`String`](class_string.md) ) |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`bool`](class_bool.md) )     |
+| [`int`](class_int.md) | [`int`](class_int.md#class_int_constructor_int) ( from: [`float`](class_float.md) )   |
 
 ## 运算符
 

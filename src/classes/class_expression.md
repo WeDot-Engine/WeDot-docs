@@ -73,10 +73,10 @@ In the following example we use a [`LineEdit`](class_lineedit.md) node to write 
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md)     | [`execute`](#class_expression_method_execute) ( inputs: [`Array`](class_array.md) = [], base_instance: [`Object`](class_object.md) = null, show_error: [`bool`](class_bool.md) = true, const_calls_only: [`bool`](class_bool.md) = false ) |
-| [`String`](class_string.md)       | [`get_error_text`](#class_expression_method_get_error_text) ( ) const[^const]                                                                                                                                                              |
-| [`bool`](class_bool.md)           | [`has_execute_failed`](#class_expression_method_has_execute_failed) ( ) const[^const]                                                                                                                                                      |
-| [Error](#enum_@globalscope_error) | [`parse`](#class_expression_method_parse) ( expression: [`String`](class_string.md), input_names: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray() )                                                                |
+| [`Variant`](class_variant.md)     | [`execute`](class_expressionmd#class_expression_method_execute) ( inputs: [`Array`](class_array.md) = [], base_instance: [`Object`](class_object.md) = null, show_error: [`bool`](class_bool.md) = true, const_calls_only: [`bool`](class_bool.md) = false ) |
+| [`String`](class_string.md)       | [`get_error_text`](class_expressionmd#class_expression_method_get_error_text) ( ) const[^const]                                                                                                                                                              |
+| [`bool`](class_bool.md)           | [`has_execute_failed`](class_expressionmd#class_expression_method_has_execute_failed) ( ) const[^const]                                                                                                                                                      |
+| [Error](#enum_@globalscope_error) | [`parse`](class_expressionmd#class_expression_method_parse) ( expression: [`String`](class_string.md), input_names: [`PackedStringArray`](class_packedstringarray.md) = PackedStringArray() )                                                                |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -32,10 +32,10 @@ Represents a physics body as an intermediary between the `OMI_physics_body` GLTF
 
 |||
 |:-:|:--|
-| [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_dictionary`](#class_gltfphysicsbody_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]  |
-| [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_node`](#class_gltfphysicsbody_method_from_node) ( body_node: [`CollisionObject3D`](class_collisionobject3d.md) ) static[^static] |
-| [`Dictionary`](class_dictionary.md)               | [`to_dictionary`](#class_gltfphysicsbody_method_to_dictionary) ( ) const[^const]                                                        |
-| [`CollisionObject3D`](class_collisionobject3d.md) | [`to_node`](#class_gltfphysicsbody_method_to_node) ( ) const[^const]                                                                    |
+| [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_dictionary`](class_gltfphysicsbodymd#class_gltfphysicsbody_method_from_dictionary) ( dictionary: [`Dictionary`](class_dictionary.md) ) static[^static]  |
+| [`GLTFPhysicsBody`](class_gltfphysicsbody.md)     | [`from_node`](class_gltfphysicsbodymd#class_gltfphysicsbody_method_from_node) ( body_node: [`CollisionObject3D`](class_collisionobject3d.md) ) static[^static] |
+| [`Dictionary`](class_dictionary.md)               | [`to_dictionary`](class_gltfphysicsbodymd#class_gltfphysicsbody_method_to_dictionary) ( ) const[^const]                                                        |
+| [`CollisionObject3D`](class_collisionobject3d.md) | [`to_node`](class_gltfphysicsbodymd#class_gltfphysicsbody_method_to_node) ( ) const[^const]                                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -32,8 +32,8 @@ See also [`RDShaderFile`](class_rdshaderfile.md). **RDShaderSource** is only mea
 
 |||
 |:-:|:--|
-| [`String`](class_string.md) | [`get_stage_source`](#class_rdshadersource_method_get_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                        |
-| `void`                      | [`set_stage_source`](#class_rdshadersource_method_set_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), source: [`String`](class_string.md) ) |
+| [`String`](class_string.md) | [`get_stage_source`](class_rdshadersourcemd#class_rdshadersource_method_get_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage) ) const[^const]                        |
+| `void`                      | [`set_stage_source`](class_rdshadersourcemd#class_rdshadersource_method_set_stage_source) ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), source: [`String`](class_string.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

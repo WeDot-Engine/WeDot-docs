@@ -31,15 +31,15 @@ If in the editor, you can set the rest pose of an entire skeleton using a menu o
 
 |||
 |:-:|:--|
-| `void`                                | [`apply_rest`](#class_bone2d_method_apply_rest) ( )                                                                                         |
-| [`bool`](class_bool.md)               | [`get_autocalculate_length_and_angle`](#class_bone2d_method_get_autocalculate_length_and_angle) ( ) const[^const]                           |
-| [`float`](class_float.md)             | [`get_bone_angle`](#class_bone2d_method_get_bone_angle) ( ) const[^const]                                                                   |
-| [`int`](class_int.md)                 | [`get_index_in_skeleton`](#class_bone2d_method_get_index_in_skeleton) ( ) const[^const]                                                     |
-| [`float`](class_float.md)             | [`get_length`](#class_bone2d_method_get_length) ( ) const[^const]                                                                           |
-| [`Transform2D`](class_transform2d.md) | [`get_skeleton_rest`](#class_bone2d_method_get_skeleton_rest) ( ) const[^const]                                                             |
-| `void`                                | [`set_autocalculate_length_and_angle`](#class_bone2d_method_set_autocalculate_length_and_angle) ( auto_calculate: [`bool`](class_bool.md) ) |
-| `void`                                | [`set_bone_angle`](#class_bone2d_method_set_bone_angle) ( angle: [`float`](class_float.md) )                                                |
-| `void`                                | [`set_length`](#class_bone2d_method_set_length) ( length: [`float`](class_float.md) )                                                       |
+| `void`                                | [`apply_rest`](class_bone2dmd#class_bone2d_method_apply_rest) ( )                                                                                         |
+| [`bool`](class_bool.md)               | [`get_autocalculate_length_and_angle`](class_bone2dmd#class_bone2d_method_get_autocalculate_length_and_angle) ( ) const[^const]                           |
+| [`float`](class_float.md)             | [`get_bone_angle`](class_bone2dmd#class_bone2d_method_get_bone_angle) ( ) const[^const]                                                                   |
+| [`int`](class_int.md)                 | [`get_index_in_skeleton`](class_bone2dmd#class_bone2d_method_get_index_in_skeleton) ( ) const[^const]                                                     |
+| [`float`](class_float.md)             | [`get_length`](class_bone2dmd#class_bone2d_method_get_length) ( ) const[^const]                                                                           |
+| [`Transform2D`](class_transform2d.md) | [`get_skeleton_rest`](class_bone2dmd#class_bone2d_method_get_skeleton_rest) ( ) const[^const]                                                             |
+| `void`                                | [`set_autocalculate_length_and_angle`](class_bone2dmd#class_bone2d_method_set_autocalculate_length_and_angle) ( auto_calculate: [`bool`](class_bool.md) ) |
+| `void`                                | [`set_bone_angle`](class_bone2dmd#class_bone2d_method_set_bone_angle) ( angle: [`float`](class_float.md) )                                                |
+| `void`                                | [`set_length`](class_bone2dmd#class_bone2d_method_set_length) ( length: [`float`](class_float.md) )                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -28,8 +28,8 @@ Every member of a **ButtonGroup** should have [`BaseButton.toggle_mode`](#class_
 
 |||
 |:-:|:--|
-| [Array](class_array.md) [`BaseButton`](class_basebutton.md) | [`get_buttons`](#class_buttongroup_method_get_buttons) ( )               |
-| [`BaseButton`](class_basebutton.md)                         | [`get_pressed_button`](#class_buttongroup_method_get_pressed_button) ( ) |
+| [Array](class_array.md) [`BaseButton`](class_basebutton.md) | [`get_buttons`](class_buttongroupmd#class_buttongroup_method_get_buttons) ( )               |
+| [`BaseButton`](class_basebutton.md)                         | [`get_pressed_button`](class_buttongroupmd#class_buttongroup_method_get_pressed_button) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 

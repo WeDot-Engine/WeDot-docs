@@ -42,12 +42,12 @@ This node draws a 2D polyline, i.e. a shape consisting of several points connect
 
 |||
 |:-:|:--|
-| `void`                        | [`add_point`](#class_line2d_method_add_point) ( position: [`Vector2`](class_vector2.md), index: [`int`](class_int.md) = -1 )              |
-| `void`                        | [`clear_points`](#class_line2d_method_clear_points) ( )                                                                                   |
-| [`int`](class_int.md)         | [`get_point_count`](#class_line2d_method_get_point_count) ( ) const[^const]                                                               |
-| [`Vector2`](class_vector2.md) | [`get_point_position`](#class_line2d_method_get_point_position) ( index: [`int`](class_int.md) ) const[^const]                            |
-| `void`                        | [`remove_point`](#class_line2d_method_remove_point) ( index: [`int`](class_int.md) )                                                      |
-| `void`                        | [`set_point_position`](#class_line2d_method_set_point_position) ( index: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) ) |
+| `void`                        | [`add_point`](class_line2dmd#class_line2d_method_add_point) ( position: [`Vector2`](class_vector2.md), index: [`int`](class_int.md) = -1 )              |
+| `void`                        | [`clear_points`](class_line2dmd#class_line2d_method_clear_points) ( )                                                                                   |
+| [`int`](class_int.md)         | [`get_point_count`](class_line2dmd#class_line2d_method_get_point_count) ( ) const[^const]                                                               |
+| [`Vector2`](class_vector2.md) | [`get_point_position`](class_line2dmd#class_line2d_method_get_point_position) ( index: [`int`](class_int.md) ) const[^const]                            |
+| `void`                        | [`remove_point`](class_line2dmd#class_line2d_method_remove_point) ( index: [`int`](class_int.md) )                                                      |
+| `void`                        | [`set_point_position`](class_line2dmd#class_line2d_method_set_point_position) ( index: [`int`](class_int.md), position: [`Vector2`](class_vector2.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

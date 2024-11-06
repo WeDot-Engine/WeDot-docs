@@ -117,7 +117,7 @@ For reference, this is how common user-facing blend modes are implemented in God
 
 |||
 |:-:|:--|
-| `void` | [`set_as_mix`](#class_rdpipelinecolorblendstateattachment_method_set_as_mix) ( ) |
+| `void` | [`set_as_mix`](class_rdpipelinecolorblendstateattachmentmd#class_rdpipelinecolorblendstateattachment_method_set_as_mix) ( ) |
 
 <!-- rst-class:: classref-section-separator -->
 

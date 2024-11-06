@@ -33,17 +33,17 @@ Manages the connection with one or more remote peers acting as server or client 
 
 |||
 |:-:|:--|
-| `void`                                                     | [`close`](#class_multiplayerpeer_method_close) ( )                                                                                         |
-| `void`                                                     | [`disconnect_peer`](#class_multiplayerpeer_method_disconnect_peer) ( peer: [`int`](class_int.md), force: [`bool`](class_bool.md) = false ) |
-| [`int`](class_int.md)                                      | [`generate_unique_id`](#class_multiplayerpeer_method_generate_unique_id) ( ) const[^const]                                                 |
-| [ConnectionStatus](#enum_multiplayerpeer_connectionstatus) | [`get_connection_status`](#class_multiplayerpeer_method_get_connection_status) ( ) const[^const]                                           |
-| [`int`](class_int.md)                                      | [`get_packet_channel`](#class_multiplayerpeer_method_get_packet_channel) ( ) const[^const]                                                 |
-| [TransferMode](#enum_multiplayerpeer_transfermode)         | [`get_packet_mode`](#class_multiplayerpeer_method_get_packet_mode) ( ) const[^const]                                                       |
-| [`int`](class_int.md)                                      | [`get_packet_peer`](#class_multiplayerpeer_method_get_packet_peer) ( ) const[^const]                                                       |
-| [`int`](class_int.md)                                      | [`get_unique_id`](#class_multiplayerpeer_method_get_unique_id) ( ) const[^const]                                                           |
-| [`bool`](class_bool.md)                                    | [`is_server_relay_supported`](#class_multiplayerpeer_method_is_server_relay_supported) ( ) const[^const]                                   |
-| `void`                                                     | [`poll`](#class_multiplayerpeer_method_poll) ( )                                                                                           |
-| `void`                                                     | [`set_target_peer`](#class_multiplayerpeer_method_set_target_peer) ( id: [`int`](class_int.md) )                                           |
+| `void`                                                     | [`close`](class_multiplayerpeermd#class_multiplayerpeer_method_close) ( )                                                                                         |
+| `void`                                                     | [`disconnect_peer`](class_multiplayerpeermd#class_multiplayerpeer_method_disconnect_peer) ( peer: [`int`](class_int.md), force: [`bool`](class_bool.md) = false ) |
+| [`int`](class_int.md)                                      | [`generate_unique_id`](class_multiplayerpeermd#class_multiplayerpeer_method_generate_unique_id) ( ) const[^const]                                                 |
+| [ConnectionStatus](#enum_multiplayerpeer_connectionstatus) | [`get_connection_status`](class_multiplayerpeermd#class_multiplayerpeer_method_get_connection_status) ( ) const[^const]                                           |
+| [`int`](class_int.md)                                      | [`get_packet_channel`](class_multiplayerpeermd#class_multiplayerpeer_method_get_packet_channel) ( ) const[^const]                                                 |
+| [TransferMode](#enum_multiplayerpeer_transfermode)         | [`get_packet_mode`](class_multiplayerpeermd#class_multiplayerpeer_method_get_packet_mode) ( ) const[^const]                                                       |
+| [`int`](class_int.md)                                      | [`get_packet_peer`](class_multiplayerpeermd#class_multiplayerpeer_method_get_packet_peer) ( ) const[^const]                                                       |
+| [`int`](class_int.md)                                      | [`get_unique_id`](class_multiplayerpeermd#class_multiplayerpeer_method_get_unique_id) ( ) const[^const]                                                           |
+| [`bool`](class_bool.md)                                    | [`is_server_relay_supported`](class_multiplayerpeermd#class_multiplayerpeer_method_is_server_relay_supported) ( ) const[^const]                                   |
+| `void`                                                     | [`poll`](class_multiplayerpeermd#class_multiplayerpeer_method_poll) ( )                                                                                           |
+| `void`                                                     | [`set_target_peer`](class_multiplayerpeermd#class_multiplayerpeer_method_set_target_peer) ( id: [`int`](class_int.md) )                                           |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -28,7 +28,7 @@ See [`OccluderInstance3D`](class_occluderinstance3d.md)'s documentation for inst
 
 |||
 |:-:|:--|
-| `void` | [`set_arrays`](#class_arrayoccluder3d_method_set_arrays) ( vertices: [`PackedVector3Array`](class_packedvector3array.md), indices: [`PackedInt32Array`](class_packedint32array.md) ) |
+| `void` | [`set_arrays`](class_arrayoccluder3dmd#class_arrayoccluder3d_method_set_arrays) ( vertices: [`PackedVector3Array`](class_packedvector3array.md), indices: [`PackedInt32Array`](class_packedint32array.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 

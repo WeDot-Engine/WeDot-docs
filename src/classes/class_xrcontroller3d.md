@@ -25,11 +25,11 @@ As many XR runtimes now use a configurable action map all inputs are named.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                            | [`get_float`](#class_xrcontroller3d_method_get_float) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
-| [`Variant`](class_variant.md)                        | [`get_input`](#class_xrcontroller3d_method_get_input) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
-| [TrackerHand](#enum_xrpositionaltracker_trackerhand) | [`get_tracker_hand`](#class_xrcontroller3d_method_get_tracker_hand) ( ) const[^const]                                             |
-| [`Vector2`](class_vector2.md)                        | [`get_vector2`](#class_xrcontroller3d_method_get_vector2) ( name: [`StringName`](class_stringname.md) ) const[^const]             |
-| [`bool`](class_bool.md)                              | [`is_button_pressed`](#class_xrcontroller3d_method_is_button_pressed) ( name: [`StringName`](class_stringname.md) ) const[^const] |
+| [`float`](class_float.md)                            | [`get_float`](class_xrcontroller3dmd#class_xrcontroller3d_method_get_float) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
+| [`Variant`](class_variant.md)                        | [`get_input`](class_xrcontroller3dmd#class_xrcontroller3d_method_get_input) ( name: [`StringName`](class_stringname.md) ) const[^const]                 |
+| [TrackerHand](#enum_xrpositionaltracker_trackerhand) | [`get_tracker_hand`](class_xrcontroller3dmd#class_xrcontroller3d_method_get_tracker_hand) ( ) const[^const]                                             |
+| [`Vector2`](class_vector2.md)                        | [`get_vector2`](class_xrcontroller3dmd#class_xrcontroller3d_method_get_vector2) ( name: [`StringName`](class_stringname.md) ) const[^const]             |
+| [`bool`](class_bool.md)                              | [`is_button_pressed`](class_xrcontroller3dmd#class_xrcontroller3d_method_is_button_pressed) ( name: [`StringName`](class_stringname.md) ) const[^const] |
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -73,9 +73,9 @@ The HMACContext class is useful for advanced HMAC use cases, such as streaming t
 
 |||
 |:-:|:--|
-| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](#class_hmaccontext_method_finish) ( )                                                                                                        |
-| [Error](#enum_@globalscope_error)             | [`start`](#class_hmaccontext_method_start) ( hash_type: [HashType](#enum_hashingcontext_hashtype), key: [`PackedByteArray`](class_packedbytearray.md) ) |
-| [Error](#enum_@globalscope_error)             | [`update`](#class_hmaccontext_method_update) ( data: [`PackedByteArray`](class_packedbytearray.md) )                                                    |
+| [`PackedByteArray`](class_packedbytearray.md) | [`finish`](class_hmaccontextmd#class_hmaccontext_method_finish) ( )                                                                                                        |
+| [Error](#enum_@globalscope_error)             | [`start`](class_hmaccontextmd#class_hmaccontext_method_start) ( hash_type: [HashType](#enum_hashingcontext_hashtype), key: [`PackedByteArray`](class_packedbytearray.md) ) |
+| [Error](#enum_@globalscope_error)             | [`update`](class_hmaccontextmd#class_hmaccontext_method_update) ( data: [`PackedByteArray`](class_packedbytearray.md) )                                                    |
 
 <!-- rst-class:: classref-section-separator -->
 
