@@ -166,7 +166,6 @@
         switchButton.addEventListener('click', function () {
           translate.changeLanguage(originalLang);
         });
-        translate.execute();
       }
     } catch (e) {
       console.error('检查并提示翻译出错：' + e);
@@ -249,6 +248,7 @@
     initAni();    //// 初始化加载动画
     SetupGiscus(getCurrentLanguage(), getCurrentTheme());   //// 初始化评论系统
     infoTranslate();	//// 检查并提示翻译
+    translate.execute();
   }
 
 
@@ -270,6 +270,7 @@
   document.addEventListener("pjax:complete", function () {
     SetupGiscus(getCurrentLanguage(), getCurrentTheme());
     infoTranslate();	//// 检查并提示翻译
+    translate.execute();
     endLoad();
   })
 })();
