@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualInstance3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualInstance3D.xml。 -->
 
 <div id="_class_visualinstance3d"></div>
 
@@ -9,7 +9,7 @@
 
 **继承：** [`Node3D`](class_node3d.md) **<** [`Node`](class_node.md) **<** [`Object`](class_object.md)
 
-**派生：** [`Decal`](class_decal.md), [`FogVolume`](class_fogvolume.md), [`GeometryInstance3D`](class_geometryinstance3d.md), [`GPUParticlesAttractor3D`](class_gpuparticlesattractor3d.md), [`GPUParticlesCollision3D`](class_gpuparticlescollision3d.md), [`Light3D`](class_light3d.md), [`LightmapGI`](class_lightmapgi.md), [`OccluderInstance3D`](class_occluderinstance3d.md), [`ReflectionProbe`](class_reflectionprobe.md), [`RootMotionView`](class_rootmotionview.md), [`VisibleOnScreenNotifier3D`](class_visibleonscreennotifier3d.md), [`VoxelGI`](class_voxelgi.md)
+**派生：** [`Decal`](class_decal.md), [`FogVolume`](class_fogvolume.md), [`GeometryInstance3D`](class_geometryinstance3d.md), [`GPUParticlesAttractor3D`](class_gpuparticlesattractor3d.md), [`GPUParticlesCollision3D`](class_gpuparticlescollision3d.md), [`Light3D`](class_light3d.md), [`LightmapGI`](class_lightmapgi.md), [`OccluderInstance3D`](class_occluderinstance3d.md), [`OpenXRVisibilityMask`](class_openxrvisibilitymask.md), [`ReflectionProbe`](class_reflectionprobe.md), [`RootMotionView`](class_rootmotionview.md), [`VisibleOnScreenNotifier3D`](class_visibleonscreennotifier3d.md), [`VoxelGI`](class_voxelgi.md)
 
 Parent of all visual 3D nodes.
 

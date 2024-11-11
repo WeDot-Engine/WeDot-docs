@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/openxr/doc_classes/OpenXRCompositionLayer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/openxr/doc_classes/OpenXRCompositionLayer.xml。 -->
 
 <div id="_class_openxrcompositionlayer"></div>
 
@@ -25,17 +25,20 @@ Composition layers allow 2D viewports to be displayed inside of the headset by t
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)               | [`alpha_blend`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_alpha_blend)             | ``false`` |
-| [`bool`](class_bool.md)               | [`enable_hole_punch`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_enable_hole_punch) | ``false`` |
-| [`SubViewport`](class_subviewport.md) | [`layer_viewport`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_layer_viewport)       |           |
-| [`int`](class_int.md)                 | [`sort_order`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_sort_order)               | ``1``     |
+| [`bool`](class_bool.md)               | [`alpha_blend`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_alpha_blend)                   | ``false``                |
+| [`Vector2i`](class_vector2i.md)       | [`android_surface_size`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_android_surface_size) | ``Vector2i(1024, 1024)`` |
+| [`bool`](class_bool.md)               | [`enable_hole_punch`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_enable_hole_punch)       | ``false``                |
+| [`SubViewport`](class_subviewport.md) | [`layer_viewport`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_layer_viewport)             |                          |
+| [`int`](class_int.md)                 | [`sort_order`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_sort_order)                     | ``1``                    |
+| [`bool`](class_bool.md)               | [`use_android_surface`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_use_android_surface)   | ``false``                |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`Vector2`](class_vector2.md) | [`intersects_ray`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_method_intersects_ray) ( origin: [`Vector3`](class_vector3.md), direction: [`Vector3`](class_vector3.md) ) const[^const] |
-| [`bool`](class_bool.md)       | [`is_natively_supported`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_method_is_natively_supported) ( ) const[^const]                                                                   |
+| [`JavaObject`](class_javaobject.md) | [`get_android_surface`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_method_get_android_surface) ( )                                                                                     |
+| [`Vector2`](class_vector2.md)       | [`intersects_ray`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_method_intersects_ray) ( origin: [`Vector3`](class_vector3.md), direction: [`Vector3`](class_vector3.md) ) const[^const] |
+| [`bool`](class_bool.md)             | [`is_natively_supported`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_method_is_natively_supported) ( ) const[^const]                                                                   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -53,6 +56,19 @@ Composition layers allow 2D viewports to be displayed inside of the headset by t
 Enables the blending the layer using its alpha channel.
 
 Can be combined with [`Viewport.transparent_bg`](class_viewport.md#class_viewport_property_transparent_bg) to give the layer a transparent background.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_openxrcompositionlayer_property_android_surface_size"></div>
+
+[`Vector2i`](class_vector2i.md) **android_surface_size** = ``Vector2i(1024, 1024)`` <div id="class_openxrcompositionlayer_property_android_surface_size"></div>
+
+- `void` **set_android_surface_size** ( value: [`Vector2i`](class_vector2i.md) )
+- [`Vector2i`](class_vector2i.md) **get_android_surface_size** ( )
+
+The size of the Android surface to create if [`use_android_surface`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_use_android_surface) is enabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -97,11 +113,40 @@ The sort order for this composition layer. Higher numbers will be shown in front
 
  **Note:** This will have no effect if a fallback mesh is being used.
 
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_openxrcompositionlayer_property_use_android_surface"></div>
+
+[`bool`](class_bool.md) **use_android_surface** = ``false`` <div id="class_openxrcompositionlayer_property_use_android_surface"></div>
+
+- `void` **set_use_android_surface** ( value: [`bool`](class_bool.md) )
+- [`bool`](class_bool.md) **get_use_android_surface** ( )
+
+If enabled, an Android surface will be created (with the dimensions from [`android_surface_size`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_android_surface_size)) which will provide the 2D content for the composition layer, rather than using [`layer_viewport`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_layer_viewport).
+
+See [`get_android_surface`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_method_get_android_surface) for information about how to get the surface so that your application can draw to it.
+
+ **Note:** This will only work in Android builds.
+
 <!-- rst-class:: classref-section-separator -->
 
 ---
 
 ## 方法说明
+
+<div id="_class_openxrcompositionlayer_method_get_android_surface"></div>
+
+[`JavaObject`](class_javaobject.md) **get_android_surface** ( )<div id="class_openxrcompositionlayer_method_get_android_surface"></div>
+
+Returns a [`JavaObject`](class_javaobject.md) representing an `android.view.Surface` if [`use_android_surface`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_use_android_surface) is enabled and OpenXR has created the surface. Otherwise, this will return `null`.
+
+ **Note:** The surface can only be created during an active OpenXR session. So, if [`use_android_surface`](class_openxrcompositionlayer.md#class_openxrcompositionlayer_property_use_android_surface) is enabled outside of an OpenXR session, it won't be created until a new session fully starts.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_openxrcompositionlayer_method_intersects_ray"></div>
 

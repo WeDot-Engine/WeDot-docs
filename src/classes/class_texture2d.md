@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Texture2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Texture2D.xml。 -->
 
 <div id="_class_texture2d"></div>
 
@@ -9,7 +9,7 @@
 
 **继承：** [`Texture`](class_texture.md) **<** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-**派生：** [`AnimatedTexture`](class_animatedtexture.md), [`AtlasTexture`](class_atlastexture.md), [`CameraTexture`](class_cameratexture.md), [`CanvasTexture`](class_canvastexture.md), [`CompressedTexture2D`](class_compressedtexture2d.md), [`CurveTexture`](class_curvetexture.md), [`CurveXYZTexture`](class_curvexyztexture.md), [`GradientTexture1D`](class_gradienttexture1d.md), [`GradientTexture2D`](class_gradienttexture2d.md), [`ImageTexture`](class_imagetexture.md), [`MeshTexture`](class_meshtexture.md), [`NoiseTexture2D`](class_noisetexture2d.md), [`PlaceholderTexture2D`](class_placeholdertexture2d.md), [`PortableCompressedTexture2D`](class_portablecompressedtexture2d.md), [`Texture2DRD`](class_texture2drd.md), [`ViewportTexture`](class_viewporttexture.md)
+**派生：** [`AnimatedTexture`](class_animatedtexture.md), [`AtlasTexture`](class_atlastexture.md), [`CameraTexture`](class_cameratexture.md), [`CanvasTexture`](class_canvastexture.md), [`CompressedTexture2D`](class_compressedtexture2d.md), [`CurveTexture`](class_curvetexture.md), [`CurveXYZTexture`](class_curvexyztexture.md), [`ExternalTexture`](class_externaltexture.md), [`GradientTexture1D`](class_gradienttexture1d.md), [`GradientTexture2D`](class_gradienttexture2d.md), [`ImageTexture`](class_imagetexture.md), [`MeshTexture`](class_meshtexture.md), [`NoiseTexture2D`](class_noisetexture2d.md), [`PlaceholderTexture2D`](class_placeholdertexture2d.md), [`PortableCompressedTexture2D`](class_portablecompressedtexture2d.md), [`Texture2DRD`](class_texture2drd.md), [`ViewportTexture`](class_viewporttexture.md)
 
 Texture for 2D and 3D.
 

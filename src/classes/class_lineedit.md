@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/LineEdit.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/LineEdit.xml。 -->
 
 <div id="_class_lineedit"></div>
 
@@ -13,7 +13,21 @@ An input field for single-line text.
 
 ## 描述
 
-**LineEdit** provides an input field for editing a single line of text. It features many built-in shortcuts that are always available (<i class="fa fa-gamepad"></i>`Ctrl` here maps to <i class="fa fa-gamepad"></i>`Cmd` on macOS):
+**LineEdit** provides an input field for editing a single line of text.
+
+- When the **LineEdit** control is focused using the keyboard arrow keys, it will only gain focus and not enter edit mode.
+
+- To enter edit mode, click on the control with the mouse or press the `ui_text_submit` action (by default <i class="fa fa-gamepad"></i>`Enter` or <i class="fa fa-gamepad"></i>`Kp Enter`).
+
+- To exit edit mode, press `ui_text_submit` or `ui_cancel` (by default <i class="fa fa-gamepad"></i>`Escape`) actions.
+
+- Check [`edit`](class_lineedit.md#class_lineedit_method_edit), [`unedit`](class_lineedit.md#class_lineedit_method_unedit), [`is_editing`](class_lineedit.md#class_lineedit_method_is_editing), and [`editing_toggled`](class_lineedit.md#class_lineedit_signal_editing_toggled) for more information.
+
+ **Important:** 
+
+- Focusing the **LineEdit** with `ui_focus_next` (by default <i class="fa fa-gamepad"></i>`Tab`) or `ui_focus_prev` (by default <i class="fa fa-gamepad"></i>`Shift + Tab`) or [`Control.grab_focus`](class_control.md#class_control_method_grab_focus) still enters edit mode (for compatibility).
+
+ **LineEdit** features many built-in shortcuts that are always available (<i class="fa fa-gamepad"></i>`Ctrl` here maps to <i class="fa fa-gamepad"></i>`Cmd` on macOS):
 
 - <i class="fa fa-gamepad"></i>`Ctrl + C`: Copy
 
@@ -57,6 +71,8 @@ On macOS, some extra keyboard shortcuts are available:
 
 - <i class="fa fa-gamepad"></i>`Cmd + Right Arrow`: Same as <i class="fa fa-gamepad"></i>`End`, move the caret to the end of the line
 
+ **Note:** Caret movement shortcuts listed above are not affected by [`shortcut_keys_enabled`](class_lineedit.md#class_lineedit_property_shortcut_keys_enabled).
+
 ## 属性
 
 |||
@@ -98,21 +114,29 @@ On macOS, some extra keyboard shortcuts are available:
 
 |||
 |:-:|:--|
+| `void`                            | [`apply_ime`](class_lineedit.md#class_lineedit_method_apply_ime) ( )                                                                          |
+| `void`                            | [`cancel_ime`](class_lineedit.md#class_lineedit_method_cancel_ime) ( )                                                                        |
 | `void`                            | [`clear`](class_lineedit.md#class_lineedit_method_clear) ( )                                                                                  |
 | `void`                            | [`delete_char_at_caret`](class_lineedit.md#class_lineedit_method_delete_char_at_caret) ( )                                                    |
 | `void`                            | [`delete_text`](class_lineedit.md#class_lineedit_method_delete_text) ( from_column: [`int`](class_int.md), to_column: [`int`](class_int.md) ) |
 | `void`                            | [`deselect`](class_lineedit.md#class_lineedit_method_deselect) ( )                                                                            |
+| `void`                            | [`edit`](class_lineedit.md#class_lineedit_method_edit) ( )                                                                                    |
 | [`PopupMenu`](class_popupmenu.md) | [`get_menu`](class_lineedit.md#class_lineedit_method_get_menu) ( ) const[^const]                                                              |
 | [`float`](class_float.md)         | [`get_scroll_offset`](class_lineedit.md#class_lineedit_method_get_scroll_offset) ( ) const[^const]                                            |
 | [`String`](class_string.md)       | [`get_selected_text`](class_lineedit.md#class_lineedit_method_get_selected_text) ( )                                                          |
 | [`int`](class_int.md)             | [`get_selection_from_column`](class_lineedit.md#class_lineedit_method_get_selection_from_column) ( ) const[^const]                            |
 | [`int`](class_int.md)             | [`get_selection_to_column`](class_lineedit.md#class_lineedit_method_get_selection_to_column) ( ) const[^const]                                |
+| [`bool`](class_bool.md)           | [`has_ime_text`](class_lineedit.md#class_lineedit_method_has_ime_text) ( ) const[^const]                                                      |
+| [`bool`](class_bool.md)           | [`has_redo`](class_lineedit.md#class_lineedit_method_has_redo) ( ) const[^const]                                                              |
 | [`bool`](class_bool.md)           | [`has_selection`](class_lineedit.md#class_lineedit_method_has_selection) ( ) const[^const]                                                    |
+| [`bool`](class_bool.md)           | [`has_undo`](class_lineedit.md#class_lineedit_method_has_undo) ( ) const[^const]                                                              |
 | `void`                            | [`insert_text_at_caret`](class_lineedit.md#class_lineedit_method_insert_text_at_caret) ( text: [`String`](class_string.md) )                  |
+| [`bool`](class_bool.md)           | [`is_editing`](class_lineedit.md#class_lineedit_method_is_editing) ( ) const[^const]                                                          |
 | [`bool`](class_bool.md)           | [`is_menu_visible`](class_lineedit.md#class_lineedit_method_is_menu_visible) ( ) const[^const]                                                |
 | `void`                            | [`menu_option`](class_lineedit.md#class_lineedit_method_menu_option) ( option: [`int`](class_int.md) )                                        |
 | `void`                            | [`select`](class_lineedit.md#class_lineedit_method_select) ( from: [`int`](class_int.md) = 0, to: [`int`](class_int.md) = -1 )                |
 | `void`                            | [`select_all`](class_lineedit.md#class_lineedit_method_select_all) ( )                                                                        |
+| `void`                            | [`unedit`](class_lineedit.md#class_lineedit_method_unedit) ( )                                                                                |
 
 ## 主题属性
 
@@ -143,6 +167,16 @@ On macOS, some extra keyboard shortcuts are available:
 
 ## 信号
 
+<div id="_class_class_lineedit_signal_editing_toggled"></div>
+
+**editing_toggled** ( toggled_on: [`bool`](class_bool.md) ) <div id="class_lineedit_signal_editing_toggled"></div>
+
+Emitted when the **LineEdit** switches in or out of edit mode.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_class_lineedit_signal_text_change_rejected"></div>
 
 **text_change_rejected** ( rejected_substring: [`String`](class_string.md) ) <div id="class_lineedit_signal_text_change_rejected"></div>
@@ -167,7 +201,7 @@ Emitted when the text changes.
 
 **text_submitted** ( new_text: [`String`](class_string.md) ) <div id="class_lineedit_signal_text_submitted"></div>
 
-Emitted when the user presses [`@GlobalScope.KEY_ENTER`](class_@globalscope.md#class_@globalscope_constant_key_enter) on the **LineEdit**.
+Emitted when the user presses the `ui_text_submit` action (by default: <i class="fa fa-gamepad"></i>`Enter` or <i class="fa fa-gamepad"></i>`Kp Enter`) while the **LineEdit** has focus.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -637,9 +671,9 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 Maximum number of characters that can be entered inside the **LineEdit**. If `0`, there is no limit.
 
-When a limit is defined, characters that would exceed [`max_length`](class_lineedit.md#class_lineedit_property_max_length) are truncated. This happens both for existing [`text`](class_lineedit.md#class_lineedit_property_text) contents when setting the max length, or for new text inserted in the **LineEdit**, including pasting. If any input text is truncated, the [`text_change_rejected`](class_lineedit.md#class_lineedit_signal_text_change_rejected) signal is emitted with the truncated substring as parameter.
+When a limit is defined, characters that would exceed [`max_length`](class_lineedit.md#class_lineedit_property_max_length) are truncated. This happens both for existing [`text`](class_lineedit.md#class_lineedit_property_text) contents when setting the max length, or for new text inserted in the **LineEdit**, including pasting.
 
- **Example:** 
+If any input text is truncated, the [`text_change_rejected`](class_lineedit.md#class_lineedit_signal_text_change_rejected) signal is emitted with the truncated substring as parameter:
 
 
 
@@ -775,7 +809,7 @@ If `false`, it's impossible to select the text using mouse nor keyboard.
 - `void` **set_shortcut_keys_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_shortcut_keys_enabled** ( )
 
-If `false`, using shortcuts will be disabled.
+If `true`, shortcut keys for context menu items are enabled, even if the context menu is disabled.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -863,6 +897,26 @@ Specifies the type of virtual keyboard to show.
 
 ## 方法说明
 
+<div id="_class_lineedit_method_apply_ime"></div>
+
+`void` **apply_ime** ( )<div id="class_lineedit_method_apply_ime"></div>
+
+Applies text from the [*Input Method Editor*](https://en.wikipedia.org/wiki/Input_method) (IME) and closes the IME if it is open.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_lineedit_method_cancel_ime"></div>
+
+`void` **cancel_ime** ( )<div id="class_lineedit_method_cancel_ime"></div>
+
+Closes the [*Input Method Editor*](https://en.wikipedia.org/wiki/Input_method) (IME) if it is open. Any text in the IME will be lost.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_lineedit_method_clear"></div>
 
 `void` **clear** ( )<div id="class_lineedit_method_clear"></div>
@@ -898,6 +952,18 @@ Deletes a section of the [`text`](class_lineedit.md#class_lineedit_property_text
 `void` **deselect** ( )<div id="class_lineedit_method_deselect"></div>
 
 Clears the current selection.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_lineedit_method_edit"></div>
+
+`void` **edit** ( )<div id="class_lineedit_method_edit"></div>
+
+Allows entering edit mode whether the **LineEdit** is focused or not.
+
+Use [`Callable.call_deferred`](class_callable.md#class_callable_method_call_deferred) if you want to enter edit mode on [`text_submitted`](class_lineedit.md#class_lineedit_signal_text_submitted).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1005,6 +1071,26 @@ Returns the selection end column.
 
 ---
 
+<div id="_class_lineedit_method_has_ime_text"></div>
+
+[`bool`](class_bool.md) **has_ime_text** ( ) const[^const]<div id="class_lineedit_method_has_ime_text"></div>
+
+Returns `true` if the user has text in the [*Input Method Editor*](https://en.wikipedia.org/wiki/Input_method) (IME).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_lineedit_method_has_redo"></div>
+
+[`bool`](class_bool.md) **has_redo** ( ) const[^const]<div id="class_lineedit_method_has_redo"></div>
+
+Returns `true` if a "redo" action is available.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_lineedit_method_has_selection"></div>
 
 [`bool`](class_bool.md) **has_selection** ( ) const[^const]<div id="class_lineedit_method_has_selection"></div>
@@ -1015,11 +1101,31 @@ Returns `true` if the user has selected text.
 
 ---
 
+<div id="_class_lineedit_method_has_undo"></div>
+
+[`bool`](class_bool.md) **has_undo** ( ) const[^const]<div id="class_lineedit_method_has_undo"></div>
+
+Returns `true` if an "undo" action is available.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_lineedit_method_insert_text_at_caret"></div>
 
 `void` **insert_text_at_caret** ( text: [`String`](class_string.md) )<div id="class_lineedit_method_insert_text_at_caret"></div>
 
 Inserts `text` at the caret. If the resulting value is longer than [`max_length`](class_lineedit.md#class_lineedit_property_max_length), nothing happens.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_lineedit_method_is_editing"></div>
+
+[`bool`](class_bool.md) **is_editing** ( ) const[^const]<div id="class_lineedit_method_is_editing"></div>
+
+Returns whether the **LineEdit** is being edited.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1084,6 +1190,16 @@ Selects characters inside **LineEdit** between `from` and `to`. By default, `fro
 `void` **select_all** ( )<div id="class_lineedit_method_select_all"></div>
 
 Selects the whole [`String`](class_string.md).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_lineedit_method_unedit"></div>
+
+`void` **unedit** ( )<div id="class_lineedit_method_unedit"></div>
+
+Allows exiting edit mode while preserving focus.
 
 <!-- rst-class:: classref-section-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Callable.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Callable.xml。 -->
 
 <div id="_class_callable"></div>
 
@@ -12,8 +12,6 @@ A built-in type representing a method or a standalone function.
 ## 描述
 
 **Callable** is a built-in [`Variant`](class_variant.md) type that represents a function. It can either be a method within an [`Object`](class_object.md) instance, or a custom callable used for different purposes (see [`is_custom`](class_callable.md#class_callable_method_is_custom)). Like all [`Variant`](class_variant.md) types, it can be stored in variables and passed to other functions. It is most commonly used for signal callbacks.
-
- **Example:** 
 
 
 
@@ -360,7 +358,9 @@ Returns `true` if this **Callable** is a custom callable. Custom callables are u
 
 [`bool`](class_bool.md) **is_null** ( ) const[^const]<div id="class_callable_method_is_null"></div>
 
-Returns `true` if this **Callable** has no target to call the method on.
+Returns `true` if this **Callable** has no target to call the method on. Equivalent to `callable == Callable()`.
+
+ **Note:** This is *not* the same as `not is_valid()` and using `not is_null()` will *not* guarantee that this callable can be called. Use [`is_valid`](class_callable.md#class_callable_method_is_valid) instead.
 
 <!-- rst-class:: classref-item-separator -->
 

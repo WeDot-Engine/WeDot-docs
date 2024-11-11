@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceLoader.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceLoader.xml。 -->
 
 <div id="_class_resourceloader"></div>
 
@@ -25,6 +25,7 @@ It uses the many [`ResourceFormatLoader`](class_resourceformatloader.md) classes
 |:-:|:--|
 | `void`                                                    | [`add_resource_format_loader`](class_resourceloader.md#class_resourceloader_method_add_resource_format_loader) ( format_loader: [`ResourceFormatLoader`](class_resourceformatloader.md), at_front: [`bool`](class_bool.md) = false )                                                                   |
 | [`bool`](class_bool.md)                                   | [`exists`](class_resourceloader.md#class_resourceloader_method_exists) ( path: [`String`](class_string.md), type_hint: [`String`](class_string.md) = "" )                                                                                                                                              |
+| [`Resource`](class_resource.md)                           | [`get_cached_ref`](class_resourceloader.md#class_resourceloader_method_get_cached_ref) ( path: [`String`](class_string.md) )                                                                                                                                                                           |
 | [`PackedStringArray`](class_packedstringarray.md)         | [`get_dependencies`](class_resourceloader.md#class_resourceloader_method_get_dependencies) ( path: [`String`](class_string.md) )                                                                                                                                                                       |
 | [`PackedStringArray`](class_packedstringarray.md)         | [`get_recognized_extensions_for_type`](class_resourceloader.md#class_resourceloader_method_get_recognized_extensions_for_type) ( type: [`String`](class_string.md) )                                                                                                                                   |
 | [`int`](class_int.md)                                     | [`get_resource_uid`](class_resourceloader.md#class_resourceloader_method_get_resource_uid) ( path: [`String`](class_string.md) )                                                                                                                                                                       |
@@ -140,6 +141,18 @@ An optional `type_hint` can be used to further specify the [`Resource`](class_re
 
 ---
 
+<div id="_class_resourceloader_method_get_cached_ref"></div>
+
+[`Resource`](class_resource.md) **get_cached_ref** ( path: [`String`](class_string.md) )<div id="class_resourceloader_method_get_cached_ref"></div>
+
+Returns the cached resource reference for the given `path`.
+
+ **Note:** If the resource is not cached, the returned [`Resource`](class_resource.md) will be invalid.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_resourceloader_method_get_dependencies"></div>
 
 [`PackedStringArray`](class_packedstringarray.md) **get_dependencies** ( path: [`String`](class_string.md) )<div id="class_resourceloader_method_get_dependencies"></div>
@@ -235,7 +248,7 @@ If this is called before the loading thread is done (i.e. [`load_threaded_get_st
 
 Returns the status of a threaded loading operation started with [`load_threaded_request`](class_resourceloader.md#class_resourceloader_method_load_threaded_request) for the resource at `path`. See [ThreadLoadStatus](#enum_resourceloader_threadloadstatus) for possible return values.
 
-An array variable can optionally be passed via `progress`, and will return a one-element array containing the percentage of completion of the threaded loading.
+An array variable can optionally be passed via `progress`, and will return a one-element array containing the ratio of completion of the threaded loading (between `0.0`  and `1.0`).
 
  **Note:** The recommended way of using this method is to call it during different frames (e.g., in [`Node._process`](class_node.md#class_node_private_method__process), instead of a loop).
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Tween.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Tween.xml。 -->
 
 <div id="_class_tween"></div>
 
@@ -527,8 +527,6 @@ Aborts all tweening operations and invalidates the **Tween**.
 
 Makes the next [`Tweener`](class_tweener.md) run parallelly to the previous one.
 
- **Example:** 
-
 
 
 ```gdscript
@@ -884,8 +882,6 @@ Creates and appends a [`MethodTweener`](class_methodtweener.md). This method is 
 [`PropertyTweener`](class_propertytweener.md) **tween_property** ( object: [`Object`](class_object.md), property: [`NodePath`](class_nodepath.md), final_val: [`Variant`](class_variant.md), duration: [`float`](class_float.md) )<div id="class_tween_method_tween_property"></div>
 
 Creates and appends a [`PropertyTweener`](class_propertytweener.md). This method tweens a `property` of an `object` between an initial value and `final_val` in a span of time equal to `duration`, in seconds. The initial value by default is the property's value at the time the tweening of the [`PropertyTweener`](class_propertytweener.md) starts.
-
- **Example:** 
 
 
 

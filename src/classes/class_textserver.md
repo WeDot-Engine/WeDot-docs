@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TextServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TextServer.xml。 -->
 
 <div id="_class_textserver"></div>
 
@@ -97,6 +97,7 @@ This is an abstract class, so to get the currently active **TextServer** instanc
 | [`String`](class_string.md)                                 | [`font_get_style_name`](class_textserver.md#class_textserver_method_font_get_style_name) ( font_rid: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                                  |
 | [SubpixelPositioning](#enum_textserver_subpixelpositioning) | [`font_get_subpixel_positioning`](class_textserver.md#class_textserver_method_font_get_subpixel_positioning) ( font_rid: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                              |
 | [`String`](class_string.md)                                 | [`font_get_supported_chars`](class_textserver.md#class_textserver_method_font_get_supported_chars) ( font_rid: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                        |
+| [`PackedInt32Array`](class_packedint32array.md)             | [`font_get_supported_glyphs`](class_textserver.md#class_textserver_method_font_get_supported_glyphs) ( font_rid: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                      |
 | [`int`](class_int.md)                                       | [`font_get_texture_count`](class_textserver.md#class_textserver_method_font_get_texture_count) ( font_rid: [`RID`](class_rid.md), size: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                                                                                     |
 | [`Image`](class_image.md)                                   | [`font_get_texture_image`](class_textserver.md#class_textserver_method_font_get_texture_image) ( font_rid: [`RID`](class_rid.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                               |
 | [`PackedInt32Array`](class_packedint32array.md)             | [`font_get_texture_offsets`](class_textserver.md#class_textserver_method_font_get_texture_offsets) ( font_rid: [`RID`](class_rid.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                           |
@@ -1361,6 +1362,16 @@ Returns outline contours of the glyph as a [`Dictionary`](class_dictionary.md) w
 
  `orientation`    - [`bool`](class_bool.md), contour orientation. If `true`, clockwise contours must be filled.
 
+- Two successive [`CONTOUR_CURVE_TAG_ON`](class_textserver.md#class_textserver_constant_contour_curve_tag_on) points indicate a line segment.
+
+- One [`CONTOUR_CURVE_TAG_OFF_CONIC`](class_textserver.md#class_textserver_constant_contour_curve_tag_off_conic) point between two [`CONTOUR_CURVE_TAG_ON`](class_textserver.md#class_textserver_constant_contour_curve_tag_on) points indicates a single conic (quadratic) Bézier arc.
+
+- Two [`CONTOUR_CURVE_TAG_OFF_CUBIC`](class_textserver.md#class_textserver_constant_contour_curve_tag_off_cubic) points between two [`CONTOUR_CURVE_TAG_ON`](class_textserver.md#class_textserver_constant_contour_curve_tag_on) points indicate a single cubic Bézier arc.
+
+- Two successive [`CONTOUR_CURVE_TAG_OFF_CONIC`](class_textserver.md#class_textserver_constant_contour_curve_tag_off_conic) points indicate two successive conic (quadratic) Bézier arcs with a virtual [`CONTOUR_CURVE_TAG_ON`](class_textserver.md#class_textserver_constant_contour_curve_tag_on) point at their middle.
+
+- Each contour is closed. The last point of a contour uses the first point of a contour as its next point, and vice versa. The first point can be [`CONTOUR_CURVE_TAG_OFF_CONIC`](class_textserver.md#class_textserver_constant_contour_curve_tag_off_conic) point.
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -1654,6 +1665,16 @@ Returns font subpixel glyph positioning mode.
 [`String`](class_string.md) **font_get_supported_chars** ( font_rid: [`RID`](class_rid.md) ) const[^const]<div id="class_textserver_method_font_get_supported_chars"></div>
 
 Returns a string containing all the characters available in the font.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_textserver_method_font_get_supported_glyphs"></div>
+
+[`PackedInt32Array`](class_packedint32array.md) **font_get_supported_glyphs** ( font_rid: [`RID`](class_rid.md) ) const[^const]<div id="class_textserver_method_font_get_supported_glyphs"></div>
+
+Returns an array containing all glyph indices in the font.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3248,7 +3269,7 @@ Returns array of the composite character boundaries.
 ```
 
     var ts = TextServerManager.get_primary_interface()
-    print(ts.string_get_word_breaks("Test ❤️‍🔥 Test")) # Prints [1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 14]
+    print(ts.string_get_character_breaks("Test ❤️‍🔥 Test")) # Prints [1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 14]
 ```
 
 

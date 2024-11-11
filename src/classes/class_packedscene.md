@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedScene.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedScene.xml。 -->
 
 <div id="_class_packedscene"></div>
 
@@ -105,12 +105,6 @@ Can be used to save a node to a file. When saving, the node as well as all the n
 
 
 
-## 属性
-
-|||
-|:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`_bundled`](class_packedscene.md#class_packedscene_property__bundled) | ``{ "conn_count": 0, "conns": PackedInt32Array(), "editable_instances": [], "names": PackedStringArray(), "node_count": 0, "node_paths": [], "nodes": PackedInt32Array(), "variants": [], "version": 3 }`` |
-
 ## 方法
 
 |||
@@ -159,20 +153,6 @@ If passed to [`instantiate`](class_packedscene.md#class_packedscene_method_insta
 It's similar to [`GEN_EDIT_STATE_MAIN`](class_packedscene.md#class_packedscene_constant_gen_edit_state_main), but for the case where the scene is being instantiated to be the base of another one.
 
  **Note:** Only available in editor builds.
-
-<!-- rst-class:: classref-section-separator -->
-
----
-
-## 属性说明
-
-<div id="_class_packedscene_property__bundled"></div>
-
-[`Dictionary`](class_dictionary.md) **_bundled** = ``{ "conn_count": 0, "conns": PackedInt32Array(), "editable_instances": [], "names": PackedStringArray(), "node_count": 0, "node_paths": [], "nodes": PackedInt32Array(), "variants": [], "version": 3 }`` <div id="class_packedscene_property__bundled"></div>
-
-A dictionary representation of the scene contents.
-
-Available keys include "names" and "variants" for resources, "node_count", "nodes", "node_paths" for nodes, "editable_instances" for paths to overridden nodes, "conn_count" and "conns" for signal connections, and "version" for the format style of the PackedScene.
 
 <!-- rst-class:: classref-section-separator -->
 

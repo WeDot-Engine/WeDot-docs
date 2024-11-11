@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Node.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Node.xml。 -->
 
 <div id="_class_node"></div>
 
@@ -100,6 +100,7 @@ Finally, when a node is freed with [`Object.free`](class_object.md#class_object_
 | [`NodePath`](class_nodepath.md)                             | [`get_path_to`](class_node.md#class_node_method_get_path_to) ( node: [`Node`](class_node.md), use_unique_path: [`bool`](class_bool.md) = false ) const[^const]                                                                                    |
 | [`float`](class_float.md)                                   | [`get_physics_process_delta_time`](class_node.md#class_node_method_get_physics_process_delta_time) ( ) const[^const]                                                                                                                              |
 | [`float`](class_float.md)                                   | [`get_process_delta_time`](class_node.md#class_node_method_get_process_delta_time) ( ) const[^const]                                                                                                                                              |
+| [`Variant`](class_variant.md)                               | [`get_rpc_config`](class_node.md#class_node_method_get_rpc_config) ( ) const[^const]                                                                                                                                                              |
 | [`bool`](class_bool.md)                                     | [`get_scene_instance_load_placeholder`](class_node.md#class_node_method_get_scene_instance_load_placeholder) ( ) const[^const]                                                                                                                    |
 | [`SceneTree`](class_scenetree.md)                           | [`get_tree`](class_node.md#class_node_method_get_tree) ( ) const[^const]                                                                                                                                                                          |
 | [`String`](class_string.md)                                 | [`get_tree_string`](class_node.md#class_node_method_get_tree_string) ( )                                                                                                                                                                          |
@@ -159,6 +160,7 @@ Finally, when a node is freed with [`Object.free`](class_object.md#class_object_
 | `void`                                                      | [`set_process_unhandled_key_input`](class_node.md#class_node_method_set_process_unhandled_key_input) ( enable: [`bool`](class_bool.md) )                                                                                                          |
 | `void`                                                      | [`set_scene_instance_load_placeholder`](class_node.md#class_node_method_set_scene_instance_load_placeholder) ( load_placeholder: [`bool`](class_bool.md) )                                                                                        |
 | `void`                                                      | [`set_thread_safe`](class_node.md#class_node_method_set_thread_safe) ( property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                                      |
+| `void`                                                      | [`set_translation_domain_inherited`](class_node.md#class_node_method_set_translation_domain_inherited) ( )                                                                                                                                        |
 | `void`                                                      | [`update_configuration_warnings`](class_node.md#class_node_method_update_configuration_warnings) ( )                                                                                                                                              |
 
 <!-- rst-class:: classref-section-separator -->
@@ -917,7 +919,7 @@ The node's processing behavior (see [ProcessMode](#enum_node_processmode)). To c
 - `void` **set_physics_process_priority** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_physics_process_priority** ( )
 
-Similar to [`process_priority`](class_node.md#class_node_property_process_priority) but for [`NOTIFICATION_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_physics_process), [`_physics_process`](class_node.md#class_node_private_method__physics_process) or the internal version.
+Similar to [`process_priority`](class_node.md#class_node_property_process_priority) but for [`NOTIFICATION_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_physics_process), [`_physics_process`](class_node.md#class_node_private_method__physics_process), or [`NOTIFICATION_INTERNAL_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_internal_physics_process).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -930,7 +932,7 @@ Similar to [`process_priority`](class_node.md#class_node_property_process_priori
 - `void` **set_process_priority** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_process_priority** ( )
 
-The node's execution order of the process callbacks ([`_process`](class_node.md#class_node_private_method__process), [`_physics_process`](class_node.md#class_node_private_method__physics_process), and internal processing). Nodes whose priority value is *lower* call their process callbacks first, regardless of tree order.
+The node's execution order of the process callbacks ([`_process`](class_node.md#class_node_private_method__process), [`NOTIFICATION_PROCESS`](class_node.md#class_node_constant_notification_process), and [`NOTIFICATION_INTERNAL_PROCESS`](class_node.md#class_node_constant_notification_internal_process)). Nodes whose priority value is *lower* call their process callbacks first, regardless of tree order.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1091,6 +1093,8 @@ Called during the physics processing step of the main loop. Physics processing m
 
 It is only called if physics processing is enabled, which is done automatically if this method is overridden, and can be toggled with [`set_physics_process`](class_node.md#class_node_method_set_physics_process).
 
+Processing happens in order of [`process_physics_priority`](class_node.md#class_node_property_process_physics_priority), lower priority values are called first. Nodes with the same priority are processed in tree order, or top to bottom as seen in the editor (also known as pre-order traversal).
+
 Corresponds to the [`NOTIFICATION_PHYSICS_PROCESS`](class_node.md#class_node_constant_notification_physics_process) notification in [`Object._notification`](class_object.md#class_object_private_method__notification).
 
  **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).
@@ -1106,6 +1110,8 @@ Corresponds to the [`NOTIFICATION_PHYSICS_PROCESS`](class_node.md#class_node_con
 Called during the processing step of the main loop. Processing happens at every frame and as fast as possible, so the `delta` time since the previous frame is not constant. `delta` is in seconds.
 
 It is only called if processing is enabled, which is done automatically if this method is overridden, and can be toggled with [`set_process`](class_node.md#class_node_method_set_process).
+
+Processing happens in order of [`process_priority`](class_node.md#class_node_property_process_priority), lower priority values are called first. Nodes with the same priority are processed in tree order, or top to bottom as seen in the editor (also known as pre-order traversal).
 
 Corresponds to the [`NOTIFICATION_PROCESS`](class_node.md#class_node_constant_notification_process) notification in [`Object._notification`](class_object.md#class_object_private_method__notification).
 
@@ -1381,7 +1387,7 @@ The Tween will start automatically on the next process frame or physics frame (d
 
 [`Node`](class_node.md) **duplicate** ( flags: [`int`](class_int.md) = 15 ) const[^const]<div id="class_node_method_duplicate"></div>
 
-Duplicates the node, returning a new node with all of its properties, signals and groups copied from the original. The behavior can be tweaked through the `flags` (see [DuplicateFlags](#enum_node_duplicateflags)).
+Duplicates the node, returning a new node with all of its properties, signals, groups, and children copied from the original. The behavior can be tweaked through the `flags` (see [DuplicateFlags](#enum_node_duplicateflags)).
 
  **Note:** For nodes with a [`Script`](class_script.md) attached, if [`Object._init`](class_object.md#class_object_private_method__init) has been defined with required parameters, the duplicated node will not have a [`Script`](class_script.md).
 
@@ -1741,6 +1747,16 @@ Returns the time elapsed (in seconds) since the last physics callback. This valu
 [`float`](class_float.md) **get_process_delta_time** ( ) const[^const]<div id="class_node_method_get_process_delta_time"></div>
 
 Returns the time elapsed (in seconds) since the last process callback. This value is identical to [`_process`](class_node.md#class_node_private_method__process)'s `delta` parameter, and may vary from frame to frame. See also [`NOTIFICATION_PROCESS`](class_node.md#class_node_constant_notification_process).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_node_method_get_rpc_config"></div>
+
+[`Variant`](class_variant.md) **get_rpc_config** ( ) const[^const]<div id="class_node_method_get_rpc_config"></div>
+
+Returns a [`Dictionary`](class_dictionary.md) mapping method names to their RPC configuration defined for this node using [`rpc_config`](class_node.md#class_node_method_rpc_config).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2459,6 +2475,18 @@ If set to `true`, the node becomes a [`InstancePlaceholder`](class_instanceplace
 `void` **set_thread_safe** ( property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )<div id="class_node_method_set_thread_safe"></div>
 
 Similar to [`call_thread_safe`](class_node.md#class_node_method_call_thread_safe), but for setting properties.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_node_method_set_translation_domain_inherited"></div>
+
+`void` **set_translation_domain_inherited** ( )<div id="class_node_method_set_translation_domain_inherited"></div>
+
+Makes this node inherit the translation domain from its parent node. If this node has no parent, the main translation domain will be used.
+
+This is the default behavior for all nodes. Calling [`Object.set_translation_domain`](class_object.md#class_object_method_set_translation_domain) disables this behavior.
 
 <!-- rst-class:: classref-item-separator -->
 

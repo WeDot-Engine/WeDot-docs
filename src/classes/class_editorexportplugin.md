@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorExportPlugin.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorExportPlugin.xml。 -->
 
 <div id="_class_editorexportplugin"></div>
 
@@ -38,6 +38,7 @@ To use **EditorExportPlugin**, register it using the [`EditorPlugin.add_export_p
 | [`String`](class_string.md)                                 | [`_get_android_manifest_element_contents`](class_editorexportplugin.md#class_editorexportplugin_private_method__get_android_manifest_element_contents) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md), debug: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                         |
 | [`int`](class_int.md)                                       | [`_get_customization_configuration_hash`](class_editorexportplugin.md#class_editorexportplugin_private_method__get_customization_configuration_hash) ( ) virtual[^virtual] const[^const]                                                                                                                             |
 | [`PackedStringArray`](class_packedstringarray.md)           | [`_get_export_features`](class_editorexportplugin.md#class_editorexportplugin_private_method__get_export_features) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md), debug: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                             |
+| [`bool`](class_bool.md)                                     | [`_get_export_option_visibility`](class_editorexportplugin.md#class_editorexportplugin_private_method__get_export_option_visibility) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md), option: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                      |
 | [`String`](class_string.md)                                 | [`_get_export_option_warning`](class_editorexportplugin.md#class_editorexportplugin_private_method__get_export_option_warning) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md), option: [`String`](class_string.md) ) virtual[^virtual] const[^const]                                            |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_get_export_options`](class_editorexportplugin.md#class_editorexportplugin_private_method__get_export_options) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md) ) virtual[^virtual] const[^const]                                                                                               |
 | [`Dictionary`](class_dictionary.md)                         | [`_get_export_options_overrides`](class_editorexportplugin.md#class_editorexportplugin_private_method__get_export_options_overrides) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md) ) virtual[^virtual] const[^const]                                                                           |
@@ -54,6 +55,8 @@ To use **EditorExportPlugin**, register it using the [`EditorPlugin.add_export_p
 | `void`                                                      | [`add_ios_project_static_lib`](class_editorexportplugin.md#class_editorexportplugin_method_add_ios_project_static_lib) ( path: [`String`](class_string.md) )                                                                                                                                                         |
 | `void`                                                      | [`add_macos_plugin_file`](class_editorexportplugin.md#class_editorexportplugin_method_add_macos_plugin_file) ( path: [`String`](class_string.md) )                                                                                                                                                                   |
 | `void`                                                      | [`add_shared_object`](class_editorexportplugin.md#class_editorexportplugin_method_add_shared_object) ( path: [`String`](class_string.md), tags: [`PackedStringArray`](class_packedstringarray.md), target: [`String`](class_string.md) )                                                                             |
+| [`EditorExportPlatform`](class_editorexportplatform.md)     | [`get_export_platform`](class_editorexportplugin.md#class_editorexportplugin_method_get_export_platform) ( ) const[^const]                                                                                                                                                                                           |
+| [`EditorExportPreset`](class_editorexportpreset.md)         | [`get_export_preset`](class_editorexportplugin.md#class_editorexportplugin_method_get_export_preset) ( ) const[^const]                                                                                                                                                                                               |
 | [`Variant`](class_variant.md)                               | [`get_option`](class_editorexportplugin.md#class_editorexportplugin_method_get_option) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                   |
 | `void`                                                      | [`skip`](class_editorexportplugin.md#class_editorexportplugin_method_skip) ( )                                                                                                                                                                                                                                       |
 
@@ -82,6 +85,8 @@ When enabled, [`_get_customization_configuration_hash`](class_editorexportplugin
 Return `true` if this plugin will customize scenes based on the platform and features used.
 
 When enabled, [`_get_customization_configuration_hash`](class_editorexportplugin.md#class_editorexportplugin_private_method__get_customization_configuration_hash) and [`_customize_scene`](class_editorexportplugin.md#class_editorexportplugin_private_method__customize_scene) will be called and must be implemented.
+
+ **Note:** [`_customize_scene`](class_editorexportplugin.md#class_editorexportplugin_private_method__customize_scene) will only be called for scenes that have been modified since the last export.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -262,6 +267,18 @@ Implementing this method is required if [`_begin_customize_resources`](class_edi
 [`PackedStringArray`](class_packedstringarray.md) **_get_export_features** ( platform: [`EditorExportPlatform`](class_editorexportplatform.md), debug: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]<div id="class_editorexportplugin_private_method__get_export_features"></div>
 
 Return a [`PackedStringArray`](class_packedstringarray.md) of additional features this preset, for the given `platform`, should have.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplugin_private_method__get_export_option_visibility"></div>
+
+[`bool`](class_bool.md) **_get_export_option_visibility** ( platform: [`EditorExportPlatform`](class_editorexportplatform.md), option: [`String`](class_string.md) ) virtual[^virtual] const[^const]<div id="class_editorexportplugin_private_method__get_export_option_visibility"></div>
+
+**Optional.** 
+
+Validates `option` and returns the visibility for the specified `platform`. The default implementation returns `true` for all options.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -469,6 +486,26 @@ Adds a shared object or a directory containing only shared objects with the give
  **Note:** In case of macOS exports, those shared objects will be added to `Frameworks` directory of app bundle.
 
 In case of a directory code-sign will error if you place non code object in directory.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplugin_method_get_export_platform"></div>
+
+[`EditorExportPlatform`](class_editorexportplatform.md) **get_export_platform** ( ) const[^const]<div id="class_editorexportplugin_method_get_export_platform"></div>
+
+Returns currently used export platform.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplugin_method_get_export_preset"></div>
+
+[`EditorExportPreset`](class_editorexportpreset.md) **get_export_preset** ( ) const[^const]<div id="class_editorexportplugin_method_get_export_preset"></div>
+
+Returns currently used export preset.
 
 <!-- rst-class:: classref-item-separator -->
 

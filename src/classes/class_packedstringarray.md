@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedStringArray.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedStringArray.xml。 -->
 
 <div id="_class_packedstringarray"></div>
 
@@ -50,6 +50,7 @@ If you want to join the strings in the array, use [`String.join`](class_string.m
 | [`PackedStringArray`](class_packedstringarray.md) | [`duplicate`](class_packedstringarray.md#class_packedstringarray_method_duplicate) ( )                                                                             |
 | `void`                                            | [`fill`](class_packedstringarray.md#class_packedstringarray_method_fill) ( value: [`String`](class_string.md) )                                                    |
 | [`int`](class_int.md)                             | [`find`](class_packedstringarray.md#class_packedstringarray_method_find) ( value: [`String`](class_string.md), from: [`int`](class_int.md) = 0 ) const[^const]     |
+| [`String`](class_string.md)                       | [`get`](class_packedstringarray.md#class_packedstringarray_method_get) ( index: [`int`](class_int.md) ) const[^const]                                              |
 | [`bool`](class_bool.md)                           | [`has`](class_packedstringarray.md#class_packedstringarray_method_has) ( value: [`String`](class_string.md) ) const[^const]                                        |
 | [`int`](class_int.md)                             | [`insert`](class_packedstringarray.md#class_packedstringarray_method_insert) ( at_index: [`int`](class_int.md), value: [`String`](class_string.md) )               |
 | [`bool`](class_bool.md)                           | [`is_empty`](class_packedstringarray.md#class_packedstringarray_method_is_empty) ( ) const[^const]                                                                 |
@@ -184,6 +185,16 @@ Assigns the given value to all elements in the array. This can typically be used
 [`int`](class_int.md) **find** ( value: [`String`](class_string.md), from: [`int`](class_int.md) = 0 ) const[^const]<div id="class_packedstringarray_method_find"></div>
 
 Searches the array for a value and returns its index or `-1` if not found. Optionally, the initial search index can be passed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_packedstringarray_method_get"></div>
+
+[`String`](class_string.md) **get** ( index: [`int`](class_int.md) ) const[^const]<div id="class_packedstringarray_method_get"></div>
+
+Returns the [`String`](class_string.md) at the given `index` in the array. This is the same as using the `[]` operator (`array[index]`).
 
 <!-- rst-class:: classref-item-separator -->
 

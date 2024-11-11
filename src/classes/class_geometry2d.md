@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Geometry2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Geometry2D.xml。 -->
 
 <div id="_class_geometry2d"></div>
 
@@ -19,6 +19,7 @@ Provides a set of helper functions to create geometric shapes, compute intersect
 
 |||
 |:-:|:--|
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md)                     | [`bresenham_line`](class_geometry2d.md#class_geometry2d_method_bresenham_line) ( from: [`Vector2i`](class_vector2i.md), to: [`Vector2i`](class_vector2i.md) )                                                                                                                                                 |
 | [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`clip_polygons`](class_geometry2d.md#class_geometry2d_method_clip_polygons) ( polygon_a: [`PackedVector2Array`](class_packedvector2array.md), polygon_b: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                               |
 | [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`clip_polyline_with_polygon`](class_geometry2d.md#class_geometry2d_method_clip_polyline_with_polygon) ( polyline: [`PackedVector2Array`](class_packedvector2array.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                                        |
 | [`PackedVector2Array`](class_packedvector2array.md)                         | [`convex_hull`](class_geometry2d.md#class_geometry2d_method_convex_hull) ( points: [`PackedVector2Array`](class_packedvector2array.md) )                                                                                                                                                                      |
@@ -146,6 +147,27 @@ Endpoints are rounded off and extended by `delta` units.
 ---
 
 ## 方法说明
+
+<div id="_class_geometry2d_method_bresenham_line"></div>
+
+[Array](class_array.md) [`Vector2i`](class_vector2i.md) **bresenham_line** ( from: [`Vector2i`](class_vector2i.md), to: [`Vector2i`](class_vector2i.md) )<div id="class_geometry2d_method_bresenham_line"></div>
+
+Returns the [*Bresenham line*](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm) between the `from` and `to` points. A Bresenham line is a series of pixels that draws a line and is always 1-pixel thick on every row and column of the drawing (never more, never less).
+
+Example code to draw a line between two [`Marker2D`](class_marker2d.md) nodes using a series of [`CanvasItem.draw_rect`](class_canvasitem.md#class_canvasitem_method_draw_rect) calls:
+
+```
+
+    func _draw():
+        for pixel in Geometry2D.bresenham_line($MarkerA.position, $MarkerB.position):
+            draw_rect(Rect2(pixel, Vector2.ONE), Color.WHITE)
+```
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_geometry2d_method_clip_polygons"></div>
 
@@ -289,9 +311,45 @@ Returns `true` if `polygon`'s vertices are ordered in clockwise order, otherwise
 
 [`Variant`](class_variant.md) **line_intersects_line** ( from_a: [`Vector2`](class_vector2.md), dir_a: [`Vector2`](class_vector2.md), from_b: [`Vector2`](class_vector2.md), dir_b: [`Vector2`](class_vector2.md) )<div id="class_geometry2d_method_line_intersects_line"></div>
 
-Checks if the two lines (`from_a`, `dir_a`) and (`from_b`, `dir_b`) intersect. If yes, return the point of intersection as [`Vector2`](class_vector2.md). If no intersection takes place, returns `null`.
+Returns the point of intersection between the two lines (`from_a`, `dir_a`) and (`from_b`, `dir_b`). Returns a [`Vector2`](class_vector2.md), or `null` if the lines are parallel.
 
- **Note:** The lines are specified using direction vectors, not end points.
+ `from` and `dir` are *not* endpoints of a line segment or ray but the slope (`dir`) and a known point (`from`) on that line.
+
+
+
+```gdscript
+
+    var from_a = Vector2.ZERO
+    var dir_a = Vector2.RIGHT
+    var from_b = Vector2.DOWN
+    
+    # Returns Vector2(1, 0)
+    Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(1, -1))
+    # Returns Vector2(-1, 0)
+    Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(-1, -1))
+    # Returns null
+    Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2.RIGHT)
+```
+
+```csharp
+
+    var fromA = Vector2.Zero;
+    var dirA = Vector2.Right;
+    var fromB = Vector2.Down;
+    
+    // Returns new Vector2(1, 0)
+    Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(1, -1));
+    // Returns new Vector2(-1, 0)
+    Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(-1, -1));
+    // Returns null
+    Geometry2D.LineIntersectsLine(fromA, dirA, fromB, Vector2.Right);
+```
+
+
+
+
+
+
 
 <!-- rst-class:: classref-item-separator -->
 

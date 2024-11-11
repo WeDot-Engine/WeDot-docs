@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ParticleProcessMaterial.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ParticleProcessMaterial.xml。 -->
 
 <div id="_class_particleprocessmaterial"></div>
 
@@ -54,6 +54,7 @@ Holds a particle configuration for [`GPUParticles2D`](class_gpuparticles2d.md) o
 | [`int`](class_int.md)                                          | [`emission_point_count`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_point_count)                               |                         |
 | [`Texture2D`](class_texture2d.md)                              | [`emission_point_texture`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_point_texture)                           |                         |
 | [`Vector3`](class_vector3.md)                                  | [`emission_ring_axis`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_ring_axis)                                   |                         |
+| [`float`](class_float.md)                                      | [`emission_ring_cone_angle`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_ring_cone_angle)                       |                         |
 | [`float`](class_float.md)                                      | [`emission_ring_height`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_ring_height)                               |                         |
 | [`float`](class_float.md)                                      | [`emission_ring_inner_radius`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_ring_inner_radius)                   |                         |
 | [`float`](class_float.md)                                      | [`emission_ring_radius`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_ring_radius)                               |                         |
@@ -441,6 +442,8 @@ Represents the size of the [CollisionMode](#enum_particleprocessmaterial_collisi
 - [`Texture2D`](class_texture2d.md) **get_alpha_curve** ( )
 
 The alpha value of each particle's color will be multiplied by this [`CurveTexture`](class_curvetexture.md) over its lifetime.
+
+ **Note:** [`alpha_curve`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_alpha_curve) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`alpha_curve`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_alpha_curve) will have no visible effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -858,7 +861,7 @@ Particle color will be modulated by color determined by sampling this texture at
 
 Each particle's color will be multiplied by this [`CurveTexture`](class_curvetexture.md) over its lifetime.
 
- **Note:** This property won't have a visible effect unless the render material is marked as unshaded.
+ **Note:** [`emission_curve`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_curve) multiplies the particle mesh's vertex colors. To have a visible effect on a [`BaseMaterial3D`](class_basematerial3d.md), [`BaseMaterial3D.vertex_color_use_as_albedo`](class_basematerial3d.md#class_basematerial3d_property_vertex_color_use_as_albedo) *must* be `true`. For a [`ShaderMaterial`](class_shadermaterial.md), `ALBEDO *= COLOR.rgb;` must be inserted in the shader's `fragment()` function. Otherwise, [`emission_curve`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_curve) will have no visible effect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -911,6 +914,21 @@ Particles will be emitted at positions determined by sampling this texture at a 
 - [`Vector3`](class_vector3.md) **get_emission_ring_axis** ( )
 
 The axis of the ring when using the emitter [`EMISSION_SHAPE_RING`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_emission_shape_ring).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_particleprocessmaterial_property_emission_ring_cone_angle"></div>
+
+[`float`](class_float.md) **emission_ring_cone_angle** <div id="class_particleprocessmaterial_property_emission_ring_cone_angle"></div>
+
+- `void` **set_emission_ring_cone_angle** ( value: [`float`](class_float.md) )
+- [`float`](class_float.md) **get_emission_ring_cone_angle** ( )
+
+The angle of the cone when using the emitter [`EMISSION_SHAPE_RING`](class_particleprocessmaterial.md#class_particleprocessmaterial_constant_emission_shape_ring). The default angle of 90 degrees results in a ring, while an angle of 0 degrees results in a cone. Intermediate values will result in a ring where one end is larger than the other.
+
+ **Note:** Depending on [`emission_ring_height`](class_particleprocessmaterial.md#class_particleprocessmaterial_property_emission_ring_height), the angle may be clamped if the ring's end is reached to form a perfect cone.
 
 <!-- rst-class:: classref-item-separator -->
 

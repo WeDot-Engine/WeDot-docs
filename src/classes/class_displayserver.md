@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/DisplayServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/DisplayServer.xml。 -->
 
 <div id="_class_displayserver"></div>
 
@@ -102,6 +102,7 @@ A server interface for low-level window management.
 | `void`                                                      | [`global_menu_set_popup_callbacks`](class_displayserver.md#class_displayserver_method_global_menu_set_popup_callbacks) ( menu_root: [`String`](class_string.md), open_callback: [`Callable`](class_callable.md), close_callback: [`Callable`](class_callable.md) )                                                                                                                                                                                                                                                                                                 |
 | [`bool`](class_bool.md)                                     | [`has_additional_outputs`](class_displayserver.md#class_displayserver_method_has_additional_outputs) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [`bool`](class_bool.md)                                     | [`has_feature`](class_displayserver.md#class_displayserver_method_has_feature) ( feature: [Feature](#enum_displayserver_feature) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [`bool`](class_bool.md)                                     | [`has_hardware_keyboard`](class_displayserver.md#class_displayserver_method_has_hardware_keyboard) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `void`                                                      | [`help_set_search_callbacks`](class_displayserver.md#class_displayserver_method_help_set_search_callbacks) ( search_callback: [`Callable`](class_callable.md), action_callback: [`Callable`](class_callable.md) )                                                                                                                                                                                                                                                                                                                                                  |
 | [`Vector2i`](class_vector2i.md)                             | [`ime_get_selection`](class_displayserver.md#class_displayserver_method_ime_get_selection) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | [`String`](class_string.md)                                 | [`ime_get_text`](class_displayserver.md#class_displayserver_method_ime_get_text) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -366,7 +367,13 @@ Display server supports spawning text input dialogs using the operating system's
 
 [Feature](#enum_displayserver_feature) **FEATURE_NATIVE_DIALOG_FILE** = ``25``
 
-Display server supports spawning dialogs for selecting files or directories using the operating system's native look-and-feel. See [`file_dialog_show`](class_displayserver.md#class_displayserver_method_file_dialog_show) and [`file_dialog_with_options_show`](class_displayserver.md#class_displayserver_method_file_dialog_with_options_show). **Windows, macOS, Linux (X11/Wayland)**
+Display server supports spawning dialogs for selecting files or directories using the operating system's native look-and-feel. See [`file_dialog_show`](class_displayserver.md#class_displayserver_method_file_dialog_show). **Windows, macOS, Linux (X11/Wayland), Android**
+
+<div id="_class_displayserver_constant_feature_native_dialog_file_extra"></div>
+
+[Feature](#enum_displayserver_feature) **FEATURE_NATIVE_DIALOG_FILE_EXTRA** = ``26``
+
+The display server supports all features of [`FEATURE_NATIVE_DIALOG_FILE`](class_displayserver.md#class_displayserver_constant_feature_native_dialog_file), with the added functionality of Options and native dialog file access to `res://` and `user://` paths. See [`file_dialog_show`](class_displayserver.md#class_displayserver_method_file_dialog_show) and [`file_dialog_with_options_show`](class_displayserver.md#class_displayserver_method_file_dialog_with_options_show). **Windows, macOS, Linux (X11/Wayland)**
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -704,6 +711,8 @@ Full screen mode with full multi-window support.
 
 Full screen window covers the entire display area of a screen and has no decorations. The display's video mode is not changed.
 
+ **On Android:** This enables immersive mode.
+
  **On Windows:** Multi-window full-screen mode has a 1px border of the [`ProjectSettings.rendering/environment/defaults/default_clear_color`](class_projectsettings.md#class_projectsettings_property_rendering/environment/defaults/default_clear_color) color.
 
  **On macOS:** A new desktop is used to display the running project.
@@ -717,6 +726,8 @@ Full screen window covers the entire display area of a screen and has no decorat
 A single window full screen mode. This mode has less overhead, but only one window can be open on a given screen at a time (opening a child window or application switching will trigger a full screen transition).
 
 Full screen window covers the entire display area of a screen and has no border or decorations. The display's video mode is not changed.
+
+ **On Android:** This enables immersive mode.
 
  **On Windows:** Depending on video driver, full screen transition might cause screens to go black for a moment.
 
@@ -792,9 +803,17 @@ Use [`window_get_safe_title_margins`](class_displayserver.md#class_displayserver
 
 All mouse events are passed to the underlying window of the same application.
 
+<div id="_class_displayserver_constant_window_flag_sharp_corners"></div>
+
+[WindowFlags](#enum_displayserver_windowflags) **WINDOW_FLAG_SHARP_CORNERS** = ``8``
+
+Window style is overridden, forcing sharp corners.
+
+ **Note:** This flag is implemented only on Windows (11).
+
 <div id="_class_displayserver_constant_window_flag_max"></div>
 
-[WindowFlags](#enum_displayserver_windowflags) **WINDOW_FLAG_MAX** = ``8``
+[WindowFlags](#enum_displayserver_windowflags) **WINDOW_FLAG_MAX** = ``9``
 
 Max value of the [WindowFlags](#enum_displayserver_windowflags).
 
@@ -910,6 +929,8 @@ Display handle:
 
 - Linux (X11): `X11::Display*` for the display.
 
+- Linux (Wayland): `wl_display` for the display.
+
 - Android: `EGLDisplay` for the display.
 
 <div id="_class_displayserver_constant_window_handle"></div>
@@ -921,6 +942,8 @@ Window handle:
 - Windows: `HWND` for the window.
 
 - Linux (X11): `X11::Window*` for the window.
+
+- Linux (Wayland): `wl_surface` for the window.
 
 - macOS: `NSWindow*` for the window.
 
@@ -950,9 +973,31 @@ OpenGL context (only with the GL Compatibility renderer):
 
 - Linux (X11): `GLXContext*` for the window.
 
+- Linux (Wayland): `EGLContext` for the window.
+
 - macOS: `NSOpenGLContext*` for the window (native GL), or `EGLContext` for the window (ANGLE).
 
 - Android: `EGLContext` for the window.
+
+<div id="_class_displayserver_constant_egl_display"></div>
+
+[HandleType](#enum_displayserver_handletype) **EGL_DISPLAY** = ``4``
+
+- Windows: `EGLDisplay` for the window (ANGLE).
+
+- macOS: `EGLDisplay` for the window (ANGLE).
+
+- Linux (Wayland): `EGLDisplay` for the window.
+
+<div id="_class_displayserver_constant_egl_config"></div>
+
+[HandleType](#enum_displayserver_handletype) **EGL_CONFIG** = ``5``
+
+- Windows: `EGLConfig` for the window (ANGLE).
+
+- macOS: `EGLConfig` for the window (ANGLE).
+
+- Linux (Wayland): `EGLConfig` for the window.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1184,7 +1229,7 @@ Removes the application status indicator.
 
 Shows a text input dialog which uses the operating system's native look-and-feel. `callback` should accept a single [`String`](class_string.md) parameter which contains the text field's contents.
 
- **Note:** This method is implemented if the display server has the [`FEATURE_NATIVE_DIALOG_INPUT`](class_displayserver.md#class_displayserver_constant_feature_native_dialog_input) feature. Supported platforms include macOS and Windows.
+ **Note:** This method is implemented if the display server has the [`FEATURE_NATIVE_DIALOG_INPUT`](class_displayserver.md#class_displayserver_constant_feature_native_dialog_input) feature. Supported platforms include macOS, Windows, and Android.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1222,15 +1267,17 @@ Displays OS native dialog for selecting files or directories in the file system.
 
 Each filter string in the `filters` array should be formatted like this: `*.txt,*.doc;Text Files`. The description text of the filter is optional and can be omitted. See also [`FileDialog.filters`](class_filedialog.md#class_filedialog_property_filters).
 
-Callbacks have the following arguments: `status: bool, selected_paths: PackedStringArray, selected_filter_index: int`.
+Callbacks have the following arguments: `status: bool, selected_paths: PackedStringArray, selected_filter_index: int`. **On Android,** callback argument `selected_filter_index` is always zero.
 
- **Note:** This method is implemented if the display server has the [`FEATURE_NATIVE_DIALOG_FILE`](class_displayserver.md#class_displayserver_constant_feature_native_dialog_file) feature. Supported platforms include Linux (X11/Wayland), Windows, and macOS.
+ **Note:** This method is implemented if the display server has the [`FEATURE_NATIVE_DIALOG_FILE`](class_displayserver.md#class_displayserver_constant_feature_native_dialog_file) feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
 
  **Note:** `current_directory` might be ignored.
 
- **Note:** On Linux, `show_hidden` is ignored.
+ **Note:** On Android, the filter strings in the `filters` array should be specified using MIME types, for example:`image/png, image/jpeg"`. Additionally, the `mode` [`FILE_DIALOG_MODE_OPEN_ANY`](class_displayserver.md#class_displayserver_constant_file_dialog_mode_open_any) is not supported on Android.
 
- **Note:** On macOS, native file dialogs have no title.
+ **Note:** On Android and Linux, `show_hidden` is ignored.
+
+ **Note:** On Android and macOS, native file dialogs have no title.
 
  **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use [`OS.get_granted_permissions`](class_os.md#class_os_method_get_granted_permissions) to get a list of saved bookmarks.
 
@@ -1256,7 +1303,7 @@ Each filter string in the `filters` array should be formatted like this: `*.txt,
 
 Callbacks have the following arguments: `status: bool, selected_paths: PackedStringArray, selected_filter_index: int, selected_option: Dictionary`.
 
- **Note:** This method is implemented if the display server has the [`FEATURE_NATIVE_DIALOG_FILE`](class_displayserver.md#class_displayserver_constant_feature_native_dialog_file) feature. Supported platforms include Linux (X11/Wayland), Windows, and macOS.
+ **Note:** This method is implemented if the display server has the [`FEATURE_NATIVE_DIALOG_FILE_EXTRA`](class_displayserver.md#class_displayserver_constant_feature_native_dialog_file_extra) feature. Supported platforms include Linux (X11/Wayland), Windows, and macOS.
 
  **Note:** `current_directory` might be ignored.
 
@@ -1288,7 +1335,7 @@ Forces window manager processing while ignoring all [`InputEvent`](class_inputev
 
 Returns OS theme accent color. Returns `Color(0, 0, 0, 0)`, if accent color is unknown.
 
- **Note:** This method is implemented on macOS and Windows.
+ **Note:** This method is implemented on macOS, Windows, and Android.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2327,6 +2374,18 @@ Returns `true` if any additional outputs have been registered via [`register_add
 [`bool`](class_bool.md) **has_feature** ( feature: [Feature](#enum_displayserver_feature) ) const[^const]<div id="class_displayserver_method_has_feature"></div>
 
 Returns `true` if the specified `feature` is supported by the current **DisplayServer**, `false` otherwise.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_displayserver_method_has_hardware_keyboard"></div>
+
+[`bool`](class_bool.md) **has_hardware_keyboard** ( ) const[^const]<div id="class_displayserver_method_has_hardware_keyboard"></div>
+
+Returns `true` if hardware keyboard is connected.
+
+ **Note:** This method is implemented on Android and iOS, on other platforms this method always returns `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3505,6 +3564,8 @@ Sets the minimum size for the given window to `min_size` in pixels. Normally, th
 
 Sets window mode for the given window to `mode`. See [WindowMode](#enum_displayserver_windowmode) for possible values and how each mode behaves.
 
+ **Note:** On Android, setting it to [`WINDOW_MODE_FULLSCREEN`](class_displayserver.md#class_displayserver_constant_window_mode_fullscreen) or [`WINDOW_MODE_EXCLUSIVE_FULLSCREEN`](class_displayserver.md#class_displayserver_constant_window_mode_exclusive_fullscreen) will enable immersive mode.
+
  **Note:** Setting the window to full screen forcibly sets the borderless flag to `true`, so make sure to set it back to `false` when not wanted.
 
 <!-- rst-class:: classref-item-separator -->
@@ -3639,7 +3700,7 @@ Sets the title of the given window to `title`.
 
 `void` **window_set_transient** ( window_id: [`int`](class_int.md), parent_window_id: [`int`](class_int.md) )<div id="class_displayserver_method_window_set_transient"></div>
 
-Sets window transient parent. Transient window is will be destroyed with its transient parent and will return focus to their parent when closed. The transient window is displayed on top of a non-exclusive full-screen parent window. Transient windows can't enter full-screen mode.
+Sets window transient parent. Transient window will be destroyed with its transient parent and will return focus to their parent when closed. The transient window is displayed on top of a non-exclusive full-screen parent window. Transient windows can't enter full-screen mode.
 
  **Note:** It's recommended to change this value using [`Window.transient`](class_window.md#class_window_property_transient) instead.
 

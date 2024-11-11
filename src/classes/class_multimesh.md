@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/MultiMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/MultiMesh.xml。 -->
 
 <div id="_class_multimesh"></div>
 
@@ -29,32 +29,35 @@ Since instances may have any behavior, the AABB used for visibility must be prov
 
 |||
 |:-:|:--|
-| [`PackedFloat32Array`](class_packedfloat32array.md) | [`buffer`](class_multimesh.md#class_multimesh_property_buffer)                                 | ``PackedFloat32Array()``   |
-| [`PackedColorArray`](class_packedcolorarray.md)     | [`color_array`](class_multimesh.md#class_multimesh_property_color_array)                       |                            |
-| [`AABB`](class_aabb.md)                             | [`custom_aabb`](class_multimesh.md#class_multimesh_property_custom_aabb)                       | ``AABB(0, 0, 0, 0, 0, 0)`` |
-| [`PackedColorArray`](class_packedcolorarray.md)     | [`custom_data_array`](class_multimesh.md#class_multimesh_property_custom_data_array)           |                            |
-| [`int`](class_int.md)                               | [`instance_count`](class_multimesh.md#class_multimesh_property_instance_count)                 | ``0``                      |
-| [`Mesh`](class_mesh.md)                             | [`mesh`](class_multimesh.md#class_multimesh_property_mesh)                                     |                            |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`transform_2d_array`](class_multimesh.md#class_multimesh_property_transform_2d_array)         |                            |
-| [`PackedVector3Array`](class_packedvector3array.md) | [`transform_array`](class_multimesh.md#class_multimesh_property_transform_array)               |                            |
-| [TransformFormat](#enum_multimesh_transformformat)  | [`transform_format`](class_multimesh.md#class_multimesh_property_transform_format)             | ``0``                      |
-| [`bool`](class_bool.md)                             | [`use_colors`](class_multimesh.md#class_multimesh_property_use_colors)                         | ``false``                  |
-| [`bool`](class_bool.md)                             | [`use_custom_data`](class_multimesh.md#class_multimesh_property_use_custom_data)               | ``false``                  |
-| [`int`](class_int.md)                               | [`visible_instance_count`](class_multimesh.md#class_multimesh_property_visible_instance_count) | ``-1``                     |
+| [`PackedFloat32Array`](class_packedfloat32array.md)                        | [`buffer`](class_multimesh.md#class_multimesh_property_buffer)                                               | ``PackedFloat32Array()``   |
+| [`PackedColorArray`](class_packedcolorarray.md)                            | [`color_array`](class_multimesh.md#class_multimesh_property_color_array)                                     |                            |
+| [`AABB`](class_aabb.md)                                                    | [`custom_aabb`](class_multimesh.md#class_multimesh_property_custom_aabb)                                     | ``AABB(0, 0, 0, 0, 0, 0)`` |
+| [`PackedColorArray`](class_packedcolorarray.md)                            | [`custom_data_array`](class_multimesh.md#class_multimesh_property_custom_data_array)                         |                            |
+| [`int`](class_int.md)                                                      | [`instance_count`](class_multimesh.md#class_multimesh_property_instance_count)                               | ``0``                      |
+| [`Mesh`](class_mesh.md)                                                    | [`mesh`](class_multimesh.md#class_multimesh_property_mesh)                                                   |                            |
+| [PhysicsInterpolationQuality](#enum_multimesh_physicsinterpolationquality) | [`physics_interpolation_quality`](class_multimesh.md#class_multimesh_property_physics_interpolation_quality) | ``0``                      |
+| [`PackedVector2Array`](class_packedvector2array.md)                        | [`transform_2d_array`](class_multimesh.md#class_multimesh_property_transform_2d_array)                       |                            |
+| [`PackedVector3Array`](class_packedvector3array.md)                        | [`transform_array`](class_multimesh.md#class_multimesh_property_transform_array)                             |                            |
+| [TransformFormat](#enum_multimesh_transformformat)                         | [`transform_format`](class_multimesh.md#class_multimesh_property_transform_format)                           | ``0``                      |
+| [`bool`](class_bool.md)                                                    | [`use_colors`](class_multimesh.md#class_multimesh_property_use_colors)                                       | ``false``                  |
+| [`bool`](class_bool.md)                                                    | [`use_custom_data`](class_multimesh.md#class_multimesh_property_use_custom_data)                             | ``false``                  |
+| [`int`](class_int.md)                                                      | [`visible_instance_count`](class_multimesh.md#class_multimesh_property_visible_instance_count)               | ``-1``                     |
 
 ## 方法
 
 |||
 |:-:|:--|
-| [`AABB`](class_aabb.md)               | [`get_aabb`](class_multimesh.md#class_multimesh_method_get_aabb) ( ) const[^const]                                                                                                       |
-| [`Color`](class_color.md)             | [`get_instance_color`](class_multimesh.md#class_multimesh_method_get_instance_color) ( instance: [`int`](class_int.md) ) const[^const]                                                   |
-| [`Color`](class_color.md)             | [`get_instance_custom_data`](class_multimesh.md#class_multimesh_method_get_instance_custom_data) ( instance: [`int`](class_int.md) ) const[^const]                                       |
-| [`Transform3D`](class_transform3d.md) | [`get_instance_transform`](class_multimesh.md#class_multimesh_method_get_instance_transform) ( instance: [`int`](class_int.md) ) const[^const]                                           |
-| [`Transform2D`](class_transform2d.md) | [`get_instance_transform_2d`](class_multimesh.md#class_multimesh_method_get_instance_transform_2d) ( instance: [`int`](class_int.md) ) const[^const]                                     |
-| `void`                                | [`set_instance_color`](class_multimesh.md#class_multimesh_method_set_instance_color) ( instance: [`int`](class_int.md), color: [`Color`](class_color.md) )                               |
-| `void`                                | [`set_instance_custom_data`](class_multimesh.md#class_multimesh_method_set_instance_custom_data) ( instance: [`int`](class_int.md), custom_data: [`Color`](class_color.md) )             |
-| `void`                                | [`set_instance_transform`](class_multimesh.md#class_multimesh_method_set_instance_transform) ( instance: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )       |
-| `void`                                | [`set_instance_transform_2d`](class_multimesh.md#class_multimesh_method_set_instance_transform_2d) ( instance: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) ) |
+| [`AABB`](class_aabb.md)               | [`get_aabb`](class_multimesh.md#class_multimesh_method_get_aabb) ( ) const[^const]                                                                                                                                                    |
+| [`Color`](class_color.md)             | [`get_instance_color`](class_multimesh.md#class_multimesh_method_get_instance_color) ( instance: [`int`](class_int.md) ) const[^const]                                                                                                |
+| [`Color`](class_color.md)             | [`get_instance_custom_data`](class_multimesh.md#class_multimesh_method_get_instance_custom_data) ( instance: [`int`](class_int.md) ) const[^const]                                                                                    |
+| [`Transform3D`](class_transform3d.md) | [`get_instance_transform`](class_multimesh.md#class_multimesh_method_get_instance_transform) ( instance: [`int`](class_int.md) ) const[^const]                                                                                        |
+| [`Transform2D`](class_transform2d.md) | [`get_instance_transform_2d`](class_multimesh.md#class_multimesh_method_get_instance_transform_2d) ( instance: [`int`](class_int.md) ) const[^const]                                                                                  |
+| `void`                                | [`reset_instance_physics_interpolation`](class_multimesh.md#class_multimesh_method_reset_instance_physics_interpolation) ( instance: [`int`](class_int.md) )                                                                          |
+| `void`                                | [`set_buffer_interpolated`](class_multimesh.md#class_multimesh_method_set_buffer_interpolated) ( buffer_curr: [`PackedFloat32Array`](class_packedfloat32array.md), buffer_prev: [`PackedFloat32Array`](class_packedfloat32array.md) ) |
+| `void`                                | [`set_instance_color`](class_multimesh.md#class_multimesh_method_set_instance_color) ( instance: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                            |
+| `void`                                | [`set_instance_custom_data`](class_multimesh.md#class_multimesh_method_set_instance_custom_data) ( instance: [`int`](class_int.md), custom_data: [`Color`](class_color.md) )                                                          |
+| `void`                                | [`set_instance_transform`](class_multimesh.md#class_multimesh_method_set_instance_transform) ( instance: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )                                                    |
+| `void`                                | [`set_instance_transform_2d`](class_multimesh.md#class_multimesh_method_set_instance_transform_2d) ( instance: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                              |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -77,6 +80,26 @@ Use this when using 2D transforms.
 [TransformFormat](#enum_multimesh_transformformat) **TRANSFORM_3D** = ``1``
 
 Use this when using 3D transforms.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_enum_multimesh_physicsinterpolationquality"></div>
+
+enum **PhysicsInterpolationQuality**: <div id="enum_multimesh_physicsinterpolationquality"></div>
+
+<div id="_class_multimesh_constant_interp_quality_fast"></div>
+
+[PhysicsInterpolationQuality](#enum_multimesh_physicsinterpolationquality) **INTERP_QUALITY_FAST** = ``0``
+
+Always interpolate using Basis lerping, which can produce warping artifacts in some situations.
+
+<div id="_class_multimesh_constant_interp_quality_high"></div>
+
+[PhysicsInterpolationQuality](#enum_multimesh_physicsinterpolationquality) **INTERP_QUALITY_HIGH** = ``1``
+
+Attempt to interpolate using Basis slerping (spherical linear interpolation) where possible, otherwise fall back to lerping.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -163,6 +186,23 @@ By default, all instances are drawn but you can limit this with [`visible_instan
 [`Mesh`](class_mesh.md) resource to be instanced.
 
 The looks of the individual instances can be modified using [`set_instance_color`](class_multimesh.md#class_multimesh_method_set_instance_color) and [`set_instance_custom_data`](class_multimesh.md#class_multimesh_method_set_instance_custom_data).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_multimesh_property_physics_interpolation_quality"></div>
+
+[PhysicsInterpolationQuality](#enum_multimesh_physicsinterpolationquality) **physics_interpolation_quality** = ``0`` <div id="class_multimesh_property_physics_interpolation_quality"></div>
+
+- `void` **set_physics_interpolation_quality** ( value: [PhysicsInterpolationQuality](#enum_multimesh_physicsinterpolationquality) )
+- [PhysicsInterpolationQuality](#enum_multimesh_physicsinterpolationquality) **get_physics_interpolation_quality** ( )
+
+Choose whether to use an interpolation method that favors speed or quality.
+
+When using low physics tick rates (typically below 20) or high rates of object rotation, you may get better results from the high quality setting.
+
+ **Note:** Fast quality does not equate to low quality. Except in the special cases mentioned above, the quality should be comparable to high quality.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -295,6 +335,32 @@ Returns the [`Transform3D`](class_transform3d.md) of a specific instance.
 [`Transform2D`](class_transform2d.md) **get_instance_transform_2d** ( instance: [`int`](class_int.md) ) const[^const]<div id="class_multimesh_method_get_instance_transform_2d"></div>
 
 Returns the [`Transform2D`](class_transform2d.md) of a specific instance.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_multimesh_method_reset_instance_physics_interpolation"></div>
+
+`void` **reset_instance_physics_interpolation** ( instance: [`int`](class_int.md) )<div id="class_multimesh_method_reset_instance_physics_interpolation"></div>
+
+When using *physics interpolation*, this function allows you to prevent interpolation on an instance in the current physics tick.
+
+This allows you to move instances instantaneously, and should usually be used when initially placing an instance such as a bullet to prevent graphical glitches.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_multimesh_method_set_buffer_interpolated"></div>
+
+`void` **set_buffer_interpolated** ( buffer_curr: [`PackedFloat32Array`](class_packedfloat32array.md), buffer_prev: [`PackedFloat32Array`](class_packedfloat32array.md) )<div id="class_multimesh_method_set_buffer_interpolated"></div>
+
+An alternative to setting the [`buffer`](class_multimesh.md#class_multimesh_property_buffer) property, which can be used with *physics interpolation*. This method takes two arrays, and can set the data for the current and previous tick in one go. The renderer will automatically interpolate the data at each frame.
+
+This is useful for situations where the order of instances may change from physics tick to tick, such as particle systems.
+
+When the order of instances is coherent, the simpler alternative of setting [`buffer`](class_multimesh.md#class_multimesh_property_buffer) can still be used with interpolation.
 
 <!-- rst-class:: classref-item-separator -->
 

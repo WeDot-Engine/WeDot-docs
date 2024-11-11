@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Control.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Control.xml。 -->
 
 <div id="_class_control"></div>
 
@@ -78,6 +78,7 @@ Sets [`mouse_filter`](class_control.md#class_control_property_mouse_filter) to [
 | [SizeFlags](#enum_control_sizeflags)                            | [`size_flags_vertical`](class_control.md#class_control_property_size_flags_vertical)                       | ``1``                                                                                    |
 | [`Theme`](class_theme.md)                                       | [`theme`](class_control.md#class_control_property_theme)                                                   |                                                                                          |
 | [`StringName`](class_stringname.md)                             | [`theme_type_variation`](class_control.md#class_control_property_theme_type_variation)                     | ``&""``                                                                                  |
+| [AutoTranslateMode](#enum_node_autotranslatemode)               | [`tooltip_auto_translate_mode`](class_control.md#class_control_property_tooltip_auto_translate_mode)       | ``0``                                                                                    |
 | [`String`](class_string.md)                                     | [`tooltip_text`](class_control.md#class_control_property_tooltip_text)                                     | ``""``                                                                                   |
 
 ## 方法
@@ -610,19 +611,21 @@ enum **MouseFilter**: <div id="enum_control_mousefilter"></div>
 
 [MouseFilter](#enum_control_mousefilter) **MOUSE_FILTER_STOP** = ``0``
 
-The control will receive mouse movement input events and mouse button input events if clicked on through [`_gui_input`](class_control.md#class_control_private_method__gui_input). And the control will receive the [`mouse_entered`](class_control.md#class_control_signal_mouse_entered) and [`mouse_exited`](class_control.md#class_control_signal_mouse_exited) signals. These events are automatically marked as handled, and they will not propagate further to other controls. This also results in blocking signals in other controls.
+The control will receive mouse movement input events and mouse button input events if clicked on through [`_gui_input`](class_control.md#class_control_private_method__gui_input). The control will also receive the [`mouse_entered`](class_control.md#class_control_signal_mouse_entered) and [`mouse_exited`](class_control.md#class_control_signal_mouse_exited) signals. These events are automatically marked as handled, and they will not propagate further to other controls. This also results in blocking signals in other controls.
 
 <div id="_class_control_constant_mouse_filter_pass"></div>
 
 [MouseFilter](#enum_control_mousefilter) **MOUSE_FILTER_PASS** = ``1``
 
-The control will receive mouse movement input events and mouse button input events if clicked on through [`_gui_input`](class_control.md#class_control_private_method__gui_input). And the control will receive the [`mouse_entered`](class_control.md#class_control_signal_mouse_entered) and [`mouse_exited`](class_control.md#class_control_signal_mouse_exited) signals. If this control does not handle the event, the parent control (if any) will be considered, and so on until there is no more parent control to potentially handle it. This also allows signals to fire in other controls. If no control handled it, the event will be passed to [`Node._shortcut_input`](class_node.md#class_node_private_method__shortcut_input) for further processing.
+The control will receive mouse movement input events and mouse button input events if clicked on through [`_gui_input`](class_control.md#class_control_private_method__gui_input). The control will also receive the [`mouse_entered`](class_control.md#class_control_signal_mouse_entered) and [`mouse_exited`](class_control.md#class_control_signal_mouse_exited) signals.
+
+If this control does not handle the event, the event will propagate up to its parent control if it has one. The event is bubbled up the node hierarchy until it reaches a non-[`CanvasItem`](class_canvasitem.md), a control with [`MOUSE_FILTER_STOP`](class_control.md#class_control_constant_mouse_filter_stop), or a [`CanvasItem`](class_canvasitem.md) with [`CanvasItem.top_level`](class_canvasitem.md#class_canvasitem_property_top_level) enabled. This will allow signals to fire in all controls it reaches. If no control handled it, the event will be passed to [`Node._shortcut_input`](class_node.md#class_node_private_method__shortcut_input) for further processing.
 
 <div id="_class_control_constant_mouse_filter_ignore"></div>
 
 [MouseFilter](#enum_control_mousefilter) **MOUSE_FILTER_IGNORE** = ``2``
 
-The control will not receive mouse movement input events and mouse button input events if clicked on through [`_gui_input`](class_control.md#class_control_private_method__gui_input). The control will also not receive the [`mouse_entered`](class_control.md#class_control_signal_mouse_entered) nor [`mouse_exited`](class_control.md#class_control_signal_mouse_exited) signals. This will not block other controls from receiving these events or firing the signals. Ignored events will not be handled automatically.
+The control will not receive any mouse movement input events nor mouse button input events through [`_gui_input`](class_control.md#class_control_private_method__gui_input). The control will also not receive the [`mouse_entered`](class_control.md#class_control_signal_mouse_entered) nor [`mouse_exited`](class_control.md#class_control_signal_mouse_exited) signals. This will not block other controls from receiving these events or firing the signals. Ignored events will not be handled automatically. If a child has [`MOUSE_FILTER_PASS`](class_control.md#class_control_constant_mouse_filter_pass) and an event was passed to this control, the event will further propagate up to the control's parent.
 
  **Note:** If the control has received [`mouse_entered`](class_control.md#class_control_signal_mouse_entered) but not [`mouse_exited`](class_control.md#class_control_signal_mouse_exited), changing the [`mouse_filter`](class_control.md#class_control_property_mouse_filter) to [`MOUSE_FILTER_IGNORE`](class_control.md#class_control_constant_mouse_filter_ignore) will cause [`mouse_exited`](class_control.md#class_control_signal_mouse_exited) to be emitted.
 
@@ -686,9 +689,9 @@ enum **LayoutDirection**: <div id="enum_control_layoutdirection"></div>
 
 Automatic layout direction, determined from the parent control layout direction.
 
-<div id="_class_control_constant_layout_direction_locale"></div>
+<div id="_class_control_constant_layout_direction_application_locale"></div>
 
-[LayoutDirection](#enum_control_layoutdirection) **LAYOUT_DIRECTION_LOCALE** = ``1``
+[LayoutDirection](#enum_control_layoutdirection) **LAYOUT_DIRECTION_APPLICATION_LOCALE** = ``1``
 
 Automatic layout direction, determined from the current locale.
 
@@ -703,6 +706,26 @@ Left-to-right layout direction.
 [LayoutDirection](#enum_control_layoutdirection) **LAYOUT_DIRECTION_RTL** = ``3``
 
 Right-to-left layout direction.
+
+<div id="_class_control_constant_layout_direction_system_locale"></div>
+
+[LayoutDirection](#enum_control_layoutdirection) **LAYOUT_DIRECTION_SYSTEM_LOCALE** = ``4``
+
+Automatic layout direction, determined from the system locale.
+
+<div id="_class_control_constant_layout_direction_max"></div>
+
+[LayoutDirection](#enum_control_layoutdirection) **LAYOUT_DIRECTION_MAX** = ``5``
+
+Represents the size of the [LayoutDirection](#enum_control_layoutdirection) enum.
+
+<div id="_class_control_constant_layout_direction_locale"></div>
+
+[LayoutDirection](#enum_control_layoutdirection) **LAYOUT_DIRECTION_LOCALE** = ``1``
+
+**已弃用：** Use [`LAYOUT_DIRECTION_APPLICATION_LOCALE`](class_control.md#class_control_constant_layout_direction_application_locale) instead.
+
+
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1384,6 +1407,21 @@ When set, this property gives the highest priority to the type of the specified 
 
 ---
 
+<div id="_class_control_property_tooltip_auto_translate_mode"></div>
+
+[AutoTranslateMode](#enum_node_autotranslatemode) **tooltip_auto_translate_mode** = ``0`` <div id="class_control_property_tooltip_auto_translate_mode"></div>
+
+- `void` **set_tooltip_auto_translate_mode** ( value: [AutoTranslateMode](#enum_node_autotranslatemode) )
+- [AutoTranslateMode](#enum_node_autotranslatemode) **get_tooltip_auto_translate_mode** ( )
+
+Defines if tooltip text should automatically change to its translated version depending on the current locale. Uses the same auto translate mode as this control when set to [`Node.AUTO_TRANSLATE_MODE_INHERIT`](class_node.md#class_node_constant_auto_translate_mode_inherit).
+
+ **Note:** Tooltips customized using [`_make_custom_tooltip`](class_control.md#class_control_private_method__make_custom_tooltip) do not use this auto translate mode automatically.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_control_property_tooltip_text"></div>
 
 [`String`](class_string.md) **tooltip_text** = ``""`` <div id="class_control_property_tooltip_text"></div>
@@ -1488,7 +1526,7 @@ Godot calls this method to pass you the `data` from a control's [`_get_drag_data
 
     public override bool _CanDropData(Vector2 atPosition, Variant data)
     {
-        return data.VariantType == Variant.Type.Dictionary && dict.AsGodotDictionary().ContainsKey("color");
+        return data.VariantType == Variant.Type.Dictionary && data.AsGodotDictionary().ContainsKey("color");
     }
     
     public override void _DropData(Vector2 atPosition, Variant data)

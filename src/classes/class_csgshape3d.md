@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/csg/doc_classes/CSGShape3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/csg/doc_classes/CSGShape3D.xml。 -->
 
 <div id="_class_csgshape3d"></div>
 
@@ -17,7 +17,15 @@ The CSG base class.
 
 This is the CSG base class that provides CSG operation support to the various CSG nodes in Godot.
 
- **Note:** CSG nodes are intended to be used for level prototyping. Creating CSG nodes has a significant CPU cost compared to creating a [`MeshInstance3D`](class_meshinstance3d.md) with a [`PrimitiveMesh`](class_primitivemesh.md). Moving a CSG node within another CSG node also has a significant CPU cost, so it should be avoided during gameplay.
+ **Performance:** CSG nodes are only intended for prototyping as they have a significant CPU performance cost.
+
+Consider baking final CSG operation results into static geometry that replaces the CSG nodes.
+
+Individual CSG root node results can be baked to nodes with static resources with the editor menu that appears when a CSG root node is selected.
+
+Individual CSG root nodes can also be baked to static resources with scripts by calling [`bake_static_mesh`](class_csgshape3d.md#class_csgshape3d_method_bake_static_mesh) for the visual mesh or [`bake_collision_shape`](class_csgshape3d.md#class_csgshape3d_method_bake_collision_shape) for the physics collision.
+
+Entire scenes of CSG nodes can be baked to static geometry and exported with the editor gltf scene exporter.
 
 ## 属性
 
@@ -35,12 +43,14 @@ This is the CSG base class that provides CSG operation support to the various CS
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)   | [`get_collision_layer_value`](class_csgshape3d.md#class_csgshape3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
-| [`bool`](class_bool.md)   | [`get_collision_mask_value`](class_csgshape3d.md#class_csgshape3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
-| [`Array`](class_array.md) | [`get_meshes`](class_csgshape3d.md#class_csgshape3d_method_get_meshes) ( ) const[^const]                                                                                     |
-| [`bool`](class_bool.md)   | [`is_root_shape`](class_csgshape3d.md#class_csgshape3d_method_is_root_shape) ( ) const[^const]                                                                               |
-| `void`                    | [`set_collision_layer_value`](class_csgshape3d.md#class_csgshape3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
-| `void`                    | [`set_collision_mask_value`](class_csgshape3d.md#class_csgshape3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )   |
+| [`ConcavePolygonShape3D`](class_concavepolygonshape3d.md) | [`bake_collision_shape`](class_csgshape3d.md#class_csgshape3d_method_bake_collision_shape) ( )                                                                               |
+| [`ArrayMesh`](class_arraymesh.md)                         | [`bake_static_mesh`](class_csgshape3d.md#class_csgshape3d_method_bake_static_mesh) ( )                                                                                       |
+| [`bool`](class_bool.md)                                   | [`get_collision_layer_value`](class_csgshape3d.md#class_csgshape3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                   |
+| [`bool`](class_bool.md)                                   | [`get_collision_mask_value`](class_csgshape3d.md#class_csgshape3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                     |
+| [`Array`](class_array.md)                                 | [`get_meshes`](class_csgshape3d.md#class_csgshape3d_method_get_meshes) ( ) const[^const]                                                                                     |
+| [`bool`](class_bool.md)                                   | [`is_root_shape`](class_csgshape3d.md#class_csgshape3d_method_is_root_shape) ( ) const[^const]                                                                               |
+| `void`                                                    | [`set_collision_layer_value`](class_csgshape3d.md#class_csgshape3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) ) |
+| `void`                                                    | [`set_collision_mask_value`](class_csgshape3d.md#class_csgshape3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )   |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -172,6 +182,28 @@ Adds a collision shape to the physics engine for our CSG shape. This will always
 ---
 
 ## 方法说明
+
+<div id="_class_csgshape3d_method_bake_collision_shape"></div>
+
+[`ConcavePolygonShape3D`](class_concavepolygonshape3d.md) **bake_collision_shape** ( )<div id="class_csgshape3d_method_bake_collision_shape"></div>
+
+Returns a baked physics [`ConcavePolygonShape3D`](class_concavepolygonshape3d.md) of this node's CSG operation result. Returns an empty shape if the node is not a CSG root node or has no valid geometry.
+
+ **Performance:** If the CSG operation results in a very detailed geometry with many faces physics performance will be very slow. Concave shapes should in general only be used for static level geometry and not with dynamic objects that are moving.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_csgshape3d_method_bake_static_mesh"></div>
+
+[`ArrayMesh`](class_arraymesh.md) **bake_static_mesh** ( )<div id="class_csgshape3d_method_bake_static_mesh"></div>
+
+Returns a baked static [`ArrayMesh`](class_arraymesh.md) of this node's CSG operation result. Materials from involved CSG nodes are added as extra mesh surfaces. Returns an empty mesh if the node is not a CSG root node or has no valid geometry.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_csgshape3d_method_get_collision_layer_value"></div>
 

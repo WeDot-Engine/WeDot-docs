@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SplitContainer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SplitContainer.xml。 -->
 
 <div id="_class_splitcontainer"></div>
 
@@ -21,16 +21,22 @@ A container that accepts only two child controls, then arranges them horizontall
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                     | [`collapsed`](class_splitcontainer.md#class_splitcontainer_property_collapsed)                   | ``false`` |
-| [DraggerVisibility](#enum_splitcontainer_draggervisibility) | [`dragger_visibility`](class_splitcontainer.md#class_splitcontainer_property_dragger_visibility) | ``0``     |
-| [`int`](class_int.md)                                       | [`split_offset`](class_splitcontainer.md#class_splitcontainer_property_split_offset)             | ``0``     |
-| [`bool`](class_bool.md)                                     | [`vertical`](class_splitcontainer.md#class_splitcontainer_property_vertical)                     | ``false`` |
+| [`bool`](class_bool.md)                                     | [`collapsed`](class_splitcontainer.md#class_splitcontainer_property_collapsed)                                         | ``false`` |
+| [`bool`](class_bool.md)                                     | [`drag_area_highlight_in_editor`](class_splitcontainer.md#class_splitcontainer_property_drag_area_highlight_in_editor) | ``false`` |
+| [`int`](class_int.md)                                       | [`drag_area_margin_begin`](class_splitcontainer.md#class_splitcontainer_property_drag_area_margin_begin)               | ``0``     |
+| [`int`](class_int.md)                                       | [`drag_area_margin_end`](class_splitcontainer.md#class_splitcontainer_property_drag_area_margin_end)                   | ``0``     |
+| [`int`](class_int.md)                                       | [`drag_area_offset`](class_splitcontainer.md#class_splitcontainer_property_drag_area_offset)                           | ``0``     |
+| [DraggerVisibility](#enum_splitcontainer_draggervisibility) | [`dragger_visibility`](class_splitcontainer.md#class_splitcontainer_property_dragger_visibility)                       | ``0``     |
+| [`bool`](class_bool.md)                                     | [`dragging_enabled`](class_splitcontainer.md#class_splitcontainer_property_dragging_enabled)                           | ``true``  |
+| [`int`](class_int.md)                                       | [`split_offset`](class_splitcontainer.md#class_splitcontainer_property_split_offset)                                   | ``0``     |
+| [`bool`](class_bool.md)                                     | [`vertical`](class_splitcontainer.md#class_splitcontainer_property_vertical)                                           | ``false`` |
 
 ## 方法
 
 |||
 |:-:|:--|
-| `void` | [`clamp_split_offset`](class_splitcontainer.md#class_splitcontainer_method_clamp_split_offset) ( ) |
+| `void`                        | [`clamp_split_offset`](class_splitcontainer.md#class_splitcontainer_method_clamp_split_offset) ( )       |
+| [`Control`](class_control.md) | [`get_drag_area_control`](class_splitcontainer.md#class_splitcontainer_method_get_drag_area_control) ( ) |
 
 ## 主题属性
 
@@ -42,12 +48,33 @@ A container that accepts only two child controls, then arranges them horizontall
 | [`Texture2D`](class_texture2d.md) | [`grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_grabber)                                   |        |
 | [`Texture2D`](class_texture2d.md) | [`h_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_h_grabber)                               |        |
 | [`Texture2D`](class_texture2d.md) | [`v_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_v_grabber)                               |        |
+| [`StyleBox`](class_stylebox.md)   | [`split_bar_background`](class_splitcontainer.md#class_splitcontainer_theme_style_split_bar_background)        |        |
 
 <!-- rst-class:: classref-section-separator -->
 
 ---
 
 ## 信号
+
+<div id="_class_class_splitcontainer_signal_drag_ended"></div>
+
+**drag_ended** ( ) <div id="class_splitcontainer_signal_drag_ended"></div>
+
+Emitted when the user ends dragging.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_class_splitcontainer_signal_drag_started"></div>
+
+**drag_started** ( ) <div id="class_splitcontainer_signal_drag_started"></div>
+
+Emitted when the user starts dragging.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_class_splitcontainer_signal_dragged"></div>
 
@@ -69,19 +96,25 @@ enum **DraggerVisibility**: <div id="enum_splitcontainer_draggervisibility"></di
 
 [DraggerVisibility](#enum_splitcontainer_draggervisibility) **DRAGGER_VISIBLE** = ``0``
 
-The split dragger is visible when the cursor hovers it.
+The split dragger icon is always visible when [`autohide`](class_splitcontainer.md#class_splitcontainer_theme_constant_autohide) is `false`, otherwise visible only when the cursor hovers it.
+
+The size of the grabber icon determines the minimum [`separation`](class_splitcontainer.md#class_splitcontainer_theme_constant_separation).
+
+The dragger icon is automatically hidden if the length of the grabber icon is longer than the split bar.
 
 <div id="_class_splitcontainer_constant_dragger_hidden"></div>
 
 [DraggerVisibility](#enum_splitcontainer_draggervisibility) **DRAGGER_HIDDEN** = ``1``
 
-The split dragger is never visible.
+The split dragger icon is never visible regardless of the value of [`autohide`](class_splitcontainer.md#class_splitcontainer_theme_constant_autohide).
+
+The size of the grabber icon determines the minimum [`separation`](class_splitcontainer.md#class_splitcontainer_theme_constant_separation).
 
 <div id="_class_splitcontainer_constant_dragger_hidden_collapsed"></div>
 
 [DraggerVisibility](#enum_splitcontainer_draggervisibility) **DRAGGER_HIDDEN_COLLAPSED** = ``2``
 
-The split dragger is never visible and its space collapsed.
+The split dragger icon is not visible, and the split bar is collapsed to zero thickness.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -102,6 +135,58 @@ If `true`, the area of the first [`Control`](class_control.md) will be collapsed
 
 ---
 
+<div id="_class_splitcontainer_property_drag_area_highlight_in_editor"></div>
+
+[`bool`](class_bool.md) **drag_area_highlight_in_editor** = ``false`` <div id="class_splitcontainer_property_drag_area_highlight_in_editor"></div>
+
+- `void` **set_drag_area_highlight_in_editor** ( value: [`bool`](class_bool.md) )
+- [`bool`](class_bool.md) **is_drag_area_highlight_in_editor_enabled** ( )
+
+Highlights the drag area [`Rect2`](class_rect2.md) so you can see where it is during development. The drag area is gold if [`dragging_enabled`](class_splitcontainer.md#class_splitcontainer_property_dragging_enabled) is `true`, and red if `false`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_splitcontainer_property_drag_area_margin_begin"></div>
+
+[`int`](class_int.md) **drag_area_margin_begin** = ``0`` <div id="class_splitcontainer_property_drag_area_margin_begin"></div>
+
+- `void` **set_drag_area_margin_begin** ( value: [`int`](class_int.md) )
+- [`int`](class_int.md) **get_drag_area_margin_begin** ( )
+
+Reduces the size of the drag area and split bar [`split_bar_background`](class_splitcontainer.md#class_splitcontainer_theme_style_split_bar_background) at the beginning of the container.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_splitcontainer_property_drag_area_margin_end"></div>
+
+[`int`](class_int.md) **drag_area_margin_end** = ``0`` <div id="class_splitcontainer_property_drag_area_margin_end"></div>
+
+- `void` **set_drag_area_margin_end** ( value: [`int`](class_int.md) )
+- [`int`](class_int.md) **get_drag_area_margin_end** ( )
+
+Reduces the size of the drag area and split bar [`split_bar_background`](class_splitcontainer.md#class_splitcontainer_theme_style_split_bar_background) at the end of the container.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_splitcontainer_property_drag_area_offset"></div>
+
+[`int`](class_int.md) **drag_area_offset** = ``0`` <div id="class_splitcontainer_property_drag_area_offset"></div>
+
+- `void` **set_drag_area_offset** ( value: [`int`](class_int.md) )
+- [`int`](class_int.md) **get_drag_area_offset** ( )
+
+Shifts the drag area in the axis of the container to prevent the drag area from overlapping the [`ScrollBar`](class_scrollbar.md) or other selectable [`Control`](class_control.md) of a child node.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_splitcontainer_property_dragger_visibility"></div>
 
 [DraggerVisibility](#enum_splitcontainer_draggervisibility) **dragger_visibility** = ``0`` <div id="class_splitcontainer_property_dragger_visibility"></div>
@@ -109,7 +194,20 @@ If `true`, the area of the first [`Control`](class_control.md) will be collapsed
 - `void` **set_dragger_visibility** ( value: [DraggerVisibility](#enum_splitcontainer_draggervisibility) )
 - [DraggerVisibility](#enum_splitcontainer_draggervisibility) **get_dragger_visibility** ( )
 
-Determines the dragger's visibility. See [DraggerVisibility](#enum_splitcontainer_draggervisibility) for details.
+Determines the dragger's visibility. See [DraggerVisibility](#enum_splitcontainer_draggervisibility) for details. This property does not determine whether dragging is enabled or not. Use [`dragging_enabled`](class_splitcontainer.md#class_splitcontainer_property_dragging_enabled) for that.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_splitcontainer_property_dragging_enabled"></div>
+
+[`bool`](class_bool.md) **dragging_enabled** = ``true`` <div id="class_splitcontainer_property_dragging_enabled"></div>
+
+- `void` **set_dragging_enabled** ( value: [`bool`](class_bool.md) )
+- [`bool`](class_bool.md) **is_dragging_enabled** ( )
+
+Enables or disables split dragging.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -151,6 +249,27 @@ Can't be changed when using [`HSplitContainer`](class_hsplitcontainer.md) and [`
 
 Clamps the [`split_offset`](class_splitcontainer.md#class_splitcontainer_property_split_offset) value to not go outside the currently possible minimal and maximum values.
 
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_splitcontainer_method_get_drag_area_control"></div>
+
+[`Control`](class_control.md) **get_drag_area_control** ( )<div id="class_splitcontainer_method_get_drag_area_control"></div>
+
+Returns the drag area [`Control`](class_control.md). For example, you can move a pre-configured button into the drag area [`Control`](class_control.md) so that it rides along with the split bar. Try setting the [`Button`](class_button.md) anchors to `center` prior to the `reparent()` call.
+
+```
+
+    $BarnacleButton.reparent($SplitContainer.get_drag_area_control())
+```
+
+ **Note:** The drag area [`Control`](class_control.md) is drawn over the **SplitContainer**'s children, so [`CanvasItem`](class_canvasitem.md) draw objects called from the [`Control`](class_control.md) and children added to the [`Control`](class_control.md) will also appear over the **SplitContainer**'s children. Try setting [`Control.mouse_filter`](class_control.md#class_control_property_mouse_filter) of custom children to [`Control.MOUSE_FILTER_IGNORE`](class_control.md#class_control_constant_mouse_filter_ignore) to prevent blocking the mouse from dragging if desired.
+
+ **Warning:** This is a required internal node, removing and freeing it may cause a crash.
+
+
+
 <!-- rst-class:: classref-section-separator -->
 
 ---
@@ -161,7 +280,7 @@ Clamps the [`split_offset`](class_splitcontainer.md#class_splitcontainer_propert
 
 [`int`](class_int.md) **autohide** = ``1`` <div id="class_splitcontainer_theme_constant_autohide"></div>
 
-Boolean value. If 1 (`true`), the grabber will hide automatically when it isn't under the cursor. If 0 (`false`), it's always visible.
+Boolean value. If `1` (`true`), the grabber will hide automatically when it isn't under the cursor. If `0` (`false`), it's always visible. The [`dragger_visibility`](class_splitcontainer.md#class_splitcontainer_property_dragger_visibility) must be [`DRAGGER_VISIBLE`](class_splitcontainer.md#class_splitcontainer_constant_dragger_visible).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -171,7 +290,7 @@ Boolean value. If 1 (`true`), the grabber will hide automatically when it isn't 
 
 [`int`](class_int.md) **minimum_grab_thickness** = ``6`` <div id="class_splitcontainer_theme_constant_minimum_grab_thickness"></div>
 
-The minimum thickness of the area users can click on to grab the splitting line. If [`separation`](class_splitcontainer.md#class_splitcontainer_theme_constant_separation) or [`h_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_h_grabber) / [`v_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_v_grabber)'s thickness are too small, this ensure that the splitting line can still be dragged.
+The minimum thickness of the area users can click on to grab the split bar. This ensures that the split bar can still be dragged if [`separation`](class_splitcontainer.md#class_splitcontainer_theme_constant_separation) or [`h_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_h_grabber) / [`v_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_v_grabber)'s size is too narrow to easily select.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -181,7 +300,9 @@ The minimum thickness of the area users can click on to grab the splitting line.
 
 [`int`](class_int.md) **separation** = ``12`` <div id="class_splitcontainer_theme_constant_separation"></div>
 
-The space between sides of the container.
+The split bar thickness, i.e., the gap between the two children of the container. This is overridden by the size of the grabber icon if [`dragger_visibility`](class_splitcontainer.md#class_splitcontainer_property_dragger_visibility) is set to [`DRAGGER_VISIBLE`](class_splitcontainer.md#class_splitcontainer_constant_dragger_visible), or [`DRAGGER_HIDDEN`](class_splitcontainer.md#class_splitcontainer_constant_dragger_hidden), and [`separation`](class_splitcontainer.md#class_splitcontainer_theme_constant_separation) is smaller than the size of the grabber icon in the same axis.
+
+ **Note:** To obtain [`separation`](class_splitcontainer.md#class_splitcontainer_theme_constant_separation) values less than the size of the grabber icon, for example a `1 px` hairline, set [`h_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_h_grabber) or [`v_grabber`](class_splitcontainer.md#class_splitcontainer_theme_icon_v_grabber) to a new [`ImageTexture`](class_imagetexture.md), which effectively sets the grabber icon size to `0 px`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -212,6 +333,16 @@ The icon used for the grabber drawn in the middle area when [`vertical`](class_s
 [`Texture2D`](class_texture2d.md) **v_grabber** <div id="class_splitcontainer_theme_icon_v_grabber"></div>
 
 The icon used for the grabber drawn in the middle area when [`vertical`](class_splitcontainer.md#class_splitcontainer_property_vertical) is `true`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_splitcontainer_theme_style_split_bar_background"></div>
+
+[`StyleBox`](class_stylebox.md) **split_bar_background** <div id="class_splitcontainer_theme_style_split_bar_background"></div>
+
+Determines the background of the split bar if its thickness is greater than zero.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

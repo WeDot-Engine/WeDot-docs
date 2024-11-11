@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/InputEvent.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/InputEvent.xml。 -->
 
 <div id="_class_inputevent"></div>
 
@@ -187,6 +187,8 @@ Returns `true` if this input event is an echo event (only for events of type [`I
 Returns `true` if the specified `event` matches this event. Only valid for action events i.e key ([`InputEventKey`](class_inputeventkey.md)), button ([`InputEventMouseButton`](class_inputeventmousebutton.md) or [`InputEventJoypadButton`](class_inputeventjoypadbutton.md)), axis [`InputEventJoypadMotion`](class_inputeventjoypadmotion.md) or action ([`InputEventAction`](class_inputeventaction.md)) events.
 
 If `exact_match` is `false`, it ignores additional input modifiers for [`InputEventKey`](class_inputeventkey.md) and [`InputEventMouseButton`](class_inputeventmousebutton.md) events, and the direction for [`InputEventJoypadMotion`](class_inputeventjoypadmotion.md) events.
+
+ **Note:** Only considers the event configuration (such as the keyboard key or joypad axis), not state information like [`is_pressed`](class_inputevent.md#class_inputevent_method_is_pressed), [`is_released`](class_inputevent.md#class_inputevent_method_is_released), [`is_echo`](class_inputevent.md#class_inputevent_method_is_echo), or [`is_canceled`](class_inputevent.md#class_inputevent_method_is_canceled).
 
 <!-- rst-class:: classref-item-separator -->
 

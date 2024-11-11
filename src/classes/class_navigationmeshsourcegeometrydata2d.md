@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/NavigationMeshSourceGeometryData2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/NavigationMeshSourceGeometryData2D.xml。 -->
 
 <div id="_class_navigationmeshsourcegeometrydata2d"></div>
 
@@ -28,6 +28,7 @@ Container for parsed source geometry data used in navigation mesh baking.
 | `void`                                                                      | [`append_traversable_outlines`](class_navigationmeshsourcegeometrydata2d.md#class_navigationmeshsourcegeometrydata2d_method_append_traversable_outlines) ( traversable_outlines: [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) ) |
 | `void`                                                                      | [`clear`](class_navigationmeshsourcegeometrydata2d.md#class_navigationmeshsourcegeometrydata2d_method_clear) ( )                                                                                                                                               |
 | `void`                                                                      | [`clear_projected_obstructions`](class_navigationmeshsourcegeometrydata2d.md#class_navigationmeshsourcegeometrydata2d_method_clear_projected_obstructions) ( )                                                                                                 |
+| [`Rect2`](class_rect2.md)                                                   | [`get_bounds`](class_navigationmeshsourcegeometrydata2d.md#class_navigationmeshsourcegeometrydata2d_method_get_bounds) ( )                                                                                                                                     |
 | [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`get_obstruction_outlines`](class_navigationmeshsourcegeometrydata2d.md#class_navigationmeshsourcegeometrydata2d_method_get_obstruction_outlines) ( ) const[^const]                                                                                           |
 | [`Array`](class_array.md)                                                   | [`get_projected_obstructions`](class_navigationmeshsourcegeometrydata2d.md#class_navigationmeshsourcegeometrydata2d_method_get_projected_obstructions) ( ) const[^const]                                                                                       |
 | [Array](class_array.md) [`PackedVector2Array`](class_packedvector2array.md) | [`get_traversable_outlines`](class_navigationmeshsourcegeometrydata2d.md#class_navigationmeshsourcegeometrydata2d_method_get_traversable_outlines) ( ) const[^const]                                                                                           |
@@ -108,6 +109,16 @@ Clears the internal data.
 `void` **clear_projected_obstructions** ( )<div id="class_navigationmeshsourcegeometrydata2d_method_clear_projected_obstructions"></div>
 
 Clears all projected obstructions.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_navigationmeshsourcegeometrydata2d_method_get_bounds"></div>
+
+[`Rect2`](class_rect2.md) **get_bounds** ( )<div id="class_navigationmeshsourcegeometrydata2d_method_get_bounds"></div>
+
+Returns an axis-aligned bounding box that covers all the stored geometry data. The bounds are calculated when calling this function with the result cached until further geometry changes are made.
 
 <!-- rst-class:: classref-item-separator -->
 

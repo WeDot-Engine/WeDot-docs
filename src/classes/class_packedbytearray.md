@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedByteArray.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedByteArray.xml。 -->
 
 <div id="_class_packedbytearray"></div>
 
@@ -67,6 +67,7 @@ An array specifically designed to hold bytes. Packs data tightly, so it saves me
 | [`int`](class_int.md)                               | [`encode_var`](class_packedbytearray.md#class_packedbytearray_method_encode_var) ( byte_offset: [`int`](class_int.md), value: [`Variant`](class_variant.md), allow_objects: [`bool`](class_bool.md) = false ) |
 | `void`                                              | [`fill`](class_packedbytearray.md#class_packedbytearray_method_fill) ( value: [`int`](class_int.md) )                                                                                                         |
 | [`int`](class_int.md)                               | [`find`](class_packedbytearray.md#class_packedbytearray_method_find) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                          |
+| [`int`](class_int.md)                               | [`get`](class_packedbytearray.md#class_packedbytearray_method_get) ( index: [`int`](class_int.md) ) const[^const]                                                                                             |
 | [`String`](class_string.md)                         | [`get_string_from_ascii`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_ascii) ( ) const[^const]                                                                                      |
 | [`String`](class_string.md)                         | [`get_string_from_utf8`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf8) ( ) const[^const]                                                                                        |
 | [`String`](class_string.md)                         | [`get_string_from_utf16`](class_packedbytearray.md#class_packedbytearray_method_get_string_from_utf16) ( ) const[^const]                                                                                      |
@@ -499,6 +500,16 @@ Assigns the given value to all elements in the array. This can typically be used
 [`int`](class_int.md) **find** ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]<div id="class_packedbytearray_method_find"></div>
 
 Searches the array for a value and returns its index or `-1` if not found. Optionally, the initial search index can be passed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_packedbytearray_method_get"></div>
+
+[`int`](class_int.md) **get** ( index: [`int`](class_int.md) ) const[^const]<div id="class_packedbytearray_method_get"></div>
+
+Returns the byte at the given `index` in the array. This is the same as using the `[]` operator (`array[index]`).
 
 <!-- rst-class:: classref-item-separator -->
 

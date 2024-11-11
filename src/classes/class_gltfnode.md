@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFNode.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFNode.xml。 -->
 
 <div id="_class_gltfnode"></div>
 
@@ -9,13 +9,13 @@
 
 **继承：** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-GLTF node class.
+glTF node class.
 
 ## 描述
 
-Represents a GLTF node. GLTF nodes may have names, transforms, children (other GLTF nodes), and more specialized properties (represented by their own classes).
+Represents a glTF node. glTF nodes may have names, transforms, children (other glTF nodes), and more specialized properties (represented by their own classes).
 
-GLTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which represents all data of a GLTF file. Most of GLTFNode's properties are indices of other data in the GLTF file. You can extend a GLTF node with additional properties by using [`get_additional_data`](class_gltfnode.md#class_gltfnode_method_get_additional_data) and [`set_additional_data`](class_gltfnode.md#class_gltfnode_method_set_additional_data).
+glTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which represents all data of a glTF file. Most of GLTFNode's properties are indices of other data in the glTF file. You can extend a glTF node with additional properties by using [`get_additional_data`](class_gltfnode.md#class_gltfnode_method_get_additional_data) and [`set_additional_data`](class_gltfnode.md#class_gltfnode_method_set_additional_data).
 
 ## 属性
 
@@ -39,8 +39,10 @@ GLTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which rep
 
 |||
 |:-:|:--|
-| [`Variant`](class_variant.md) | [`get_additional_data`](class_gltfnode.md#class_gltfnode_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| `void`                        | [`set_additional_data`](class_gltfnode.md#class_gltfnode_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
+| `void`                          | [`append_child_index`](class_gltfnode.md#class_gltfnode_method_append_child_index) ( child_index: [`int`](class_int.md) )                                                                    |
+| [`Variant`](class_variant.md)   | [`get_additional_data`](class_gltfnode.md#class_gltfnode_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
+| [`NodePath`](class_nodepath.md) | [`get_scene_node_path`](class_gltfnode.md#class_gltfnode_method_get_scene_node_path) ( gltf_state: [`GLTFState`](class_gltfstate.md), handle_skeletons: [`bool`](class_bool.md) = true )     |
+| `void`                          | [`set_additional_data`](class_gltfnode.md#class_gltfnode_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -55,7 +57,7 @@ GLTF nodes generally exist inside of [`GLTFState`](class_gltfstate.md) which rep
 - `void` **set_camera** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_camera** ( )
 
-If this GLTF node is a camera, the index of the [`GLTFCamera`](class_gltfcamera.md) in the [`GLTFState`](class_gltfstate.md) that describes the camera's properties. If -1, this node is not a camera.
+If this glTF node is a camera, the index of the [`GLTFCamera`](class_gltfcamera.md) in the [`GLTFState`](class_gltfstate.md) that describes the camera's properties. If -1, this node is not a camera.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -68,7 +70,7 @@ If this GLTF node is a camera, the index of the [`GLTFCamera`](class_gltfcamera.
 - `void` **set_children** ( value: [`PackedInt32Array`](class_packedint32array.md) )
 - [`PackedInt32Array`](class_packedint32array.md) **get_children** ( )
 
-The indices of the child nodes in the [`GLTFState`](class_gltfstate.md). If this GLTF node has no children, this will be an empty array.
+The indices of the child nodes in the [`GLTFState`](class_gltfstate.md). If this glTF node has no children, this will be an empty array.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedInt32Array`](class_packedint32array.md) for more details.
 
@@ -96,7 +98,7 @@ How deep into the node hierarchy this node is. A root node will have a height of
 - `void` **set_light** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_light** ( )
 
-If this GLTF node is a light, the index of the [`GLTFLight`](class_gltflight.md) in the [`GLTFState`](class_gltfstate.md) that describes the light's properties. If -1, this node is not a light.
+If this glTF node is a light, the index of the [`GLTFLight`](class_gltflight.md) in the [`GLTFState`](class_gltfstate.md) that describes the light's properties. If -1, this node is not a light.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -109,7 +111,7 @@ If this GLTF node is a light, the index of the [`GLTFLight`](class_gltflight.md)
 - `void` **set_mesh** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_mesh** ( )
 
-If this GLTF node is a mesh, the index of the [`GLTFMesh`](class_gltfmesh.md) in the [`GLTFState`](class_gltfstate.md) that describes the mesh's properties. If -1, this node is not a mesh.
+If this glTF node is a mesh, the index of the [`GLTFMesh`](class_gltfmesh.md) in the [`GLTFState`](class_gltfstate.md) that describes the mesh's properties. If -1, this node is not a mesh.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -148,7 +150,7 @@ The index of the parent node in the [`GLTFState`](class_gltfstate.md). If -1, th
 - `void` **set_position** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_position** ( )
 
-The position of the GLTF node relative to its parent.
+The position of the glTF node relative to its parent.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -161,7 +163,7 @@ The position of the GLTF node relative to its parent.
 - `void` **set_rotation** ( value: [`Quaternion`](class_quaternion.md) )
 - [`Quaternion`](class_quaternion.md) **get_rotation** ( )
 
-The rotation of the GLTF node relative to its parent.
+The rotation of the glTF node relative to its parent.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -174,7 +176,7 @@ The rotation of the GLTF node relative to its parent.
 - `void` **set_scale** ( value: [`Vector3`](class_vector3.md) )
 - [`Vector3`](class_vector3.md) **get_scale** ( )
 
-The scale of the GLTF node relative to its parent.
+The scale of the glTF node relative to its parent.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -187,7 +189,7 @@ The scale of the GLTF node relative to its parent.
 - `void` **set_skeleton** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_skeleton** ( )
 
-If this GLTF node has a skeleton, the index of the [`GLTFSkeleton`](class_gltfskeleton.md) in the [`GLTFState`](class_gltfstate.md) that describes the skeleton's properties. If -1, this node does not have a skeleton.
+If this glTF node has a skeleton, the index of the [`GLTFSkeleton`](class_gltfskeleton.md) in the [`GLTFState`](class_gltfstate.md) that describes the skeleton's properties. If -1, this node does not have a skeleton.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -200,7 +202,7 @@ If this GLTF node has a skeleton, the index of the [`GLTFSkeleton`](class_gltfsk
 - `void` **set_skin** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_skin** ( )
 
-If this GLTF node has a skin, the index of the [`GLTFSkin`](class_gltfskin.md) in the [`GLTFState`](class_gltfstate.md) that describes the skin's properties. If -1, this node does not have a skin.
+If this glTF node has a skin, the index of the [`GLTFSkin`](class_gltfskin.md) in the [`GLTFState`](class_gltfstate.md) that describes the skin's properties. If -1, this node does not have a skin.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -213,7 +215,7 @@ If this GLTF node has a skin, the index of the [`GLTFSkin`](class_gltfskin.md) i
 - `void` **set_xform** ( value: [`Transform3D`](class_transform3d.md) )
 - [`Transform3D`](class_transform3d.md) **get_xform** ( )
 
-The transform of the GLTF node relative to its parent. This property is usually unused since the position, rotation, and scale properties are preferred.
+The transform of the glTF node relative to its parent. This property is usually unused since the position, rotation, and scale properties are preferred.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -221,13 +223,35 @@ The transform of the GLTF node relative to its parent. This property is usually 
 
 ## 方法说明
 
+<div id="_class_gltfnode_method_append_child_index"></div>
+
+`void` **append_child_index** ( child_index: [`int`](class_int.md) )<div id="class_gltfnode_method_append_child_index"></div>
+
+Appends the given child node index to the [`children`](class_gltfnode.md#class_gltfnode_property_children) array.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_gltfnode_method_get_additional_data"></div>
 
 [`Variant`](class_variant.md) **get_additional_data** ( extension_name: [`StringName`](class_stringname.md) )<div id="class_gltfnode_method_get_additional_data"></div>
 
 Gets additional arbitrary data in this **GLTFNode** instance. This can be used to keep per-node state data in [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes, which is important because they are stateless.
 
-The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the GLTF file), and the return value can be anything you set. If nothing was set, the return value is null.
+The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is null.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_gltfnode_method_get_scene_node_path"></div>
+
+[`NodePath`](class_nodepath.md) **get_scene_node_path** ( gltf_state: [`GLTFState`](class_gltfstate.md), handle_skeletons: [`bool`](class_bool.md) = true )<div id="class_gltfnode_method_get_scene_node_path"></div>
+
+Returns the [`NodePath`](class_nodepath.md) that this GLTF node will have in the Godot scene tree after being imported. This is useful when importing glTF object model pointers with [`GLTFObjectModelProperty`](class_gltfobjectmodelproperty.md), for handling extensions such as `KHR_animation_pointer` or `KHR_interactivity`.
+
+If `handle_skeletons` is true, paths to skeleton bone glTF nodes will be resolved properly. For example, a path that would be `^"A/B/C/Bone1/Bone2/Bone3"` if false will become `^"A/B/C/Skeleton3D:Bone3"`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -239,7 +263,7 @@ The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension
 
 Sets additional arbitrary data in this **GLTFNode** instance. This can be used to keep per-node state data in [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes, which is important because they are stateless.
 
-The first argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the GLTF file), and the second argument can be anything you want.
+The first argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TranslationServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TranslationServer.xml。 -->
 
 <div id="_class_translationserver"></div>
 
@@ -13,7 +13,9 @@ The server responsible for language translations.
 
 ## 描述
 
-The server that manages all language translations. Translations can be added to or removed from it.
+The translation server is the API backend that manages all language translations.
+
+Translations are stored in [`TranslationDomain`](class_translationdomain.md) s, which can be accessed by name. The most commonly used translation domain is the main translation domain. It always exists and can be accessed using an empty [`StringName`](class_stringname.md). The translation server provides wrapper methods for accessing the main translation domain directly, without having to fetch the translation domain first. Custom translation domains are mainly for advanced usages like editor plugins. Names starting with `godot.` are reserved for engine internals.
 
 ## 属性
 
@@ -36,11 +38,14 @@ The server that manages all language translations. Translations can be added to 
 | [`PackedStringArray`](class_packedstringarray.md) | [`get_loaded_locales`](class_translationserver.md#class_translationserver_method_get_loaded_locales) ( ) const[^const]                                                                                                                                                                             |
 | [`String`](class_string.md)                       | [`get_locale`](class_translationserver.md#class_translationserver_method_get_locale) ( ) const[^const]                                                                                                                                                                                             |
 | [`String`](class_string.md)                       | [`get_locale_name`](class_translationserver.md#class_translationserver_method_get_locale_name) ( locale: [`String`](class_string.md) ) const[^const]                                                                                                                                               |
+| [`TranslationDomain`](class_translationdomain.md) | [`get_or_add_domain`](class_translationserver.md#class_translationserver_method_get_or_add_domain) ( domain: [`StringName`](class_stringname.md) )                                                                                                                                                 |
 | [`String`](class_string.md)                       | [`get_script_name`](class_translationserver.md#class_translationserver_method_get_script_name) ( script: [`String`](class_string.md) ) const[^const]                                                                                                                                               |
 | [`String`](class_string.md)                       | [`get_tool_locale`](class_translationserver.md#class_translationserver_method_get_tool_locale) ( )                                                                                                                                                                                                 |
 | [`Translation`](class_translation.md)             | [`get_translation_object`](class_translationserver.md#class_translationserver_method_get_translation_object) ( locale: [`String`](class_string.md) )                                                                                                                                               |
+| [`bool`](class_bool.md)                           | [`has_domain`](class_translationserver.md#class_translationserver_method_has_domain) ( domain: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                 |
 | [`StringName`](class_stringname.md)               | [`pseudolocalize`](class_translationserver.md#class_translationserver_method_pseudolocalize) ( message: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                        |
 | `void`                                            | [`reload_pseudolocalization`](class_translationserver.md#class_translationserver_method_reload_pseudolocalization) ( )                                                                                                                                                                             |
+| `void`                                            | [`remove_domain`](class_translationserver.md#class_translationserver_method_remove_domain) ( domain: [`StringName`](class_stringname.md) )                                                                                                                                                         |
 | `void`                                            | [`remove_translation`](class_translationserver.md#class_translationserver_method_remove_translation) ( translation: [`Translation`](class_translation.md) )                                                                                                                                        |
 | `void`                                            | [`set_locale`](class_translationserver.md#class_translationserver_method_set_locale) ( locale: [`String`](class_string.md) )                                                                                                                                                                       |
 | [`String`](class_string.md)                       | [`standardize_locale`](class_translationserver.md#class_translationserver_method_standardize_locale) ( locale: [`String`](class_string.md) ) const[^const]                                                                                                                                         |
@@ -60,7 +65,7 @@ The server that manages all language translations. Translations can be added to 
 - `void` **set_pseudolocalization_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_pseudolocalization_enabled** ( )
 
-If `true`, enables the use of pseudolocalization. See [`ProjectSettings.internationalization/pseudolocalization/use_pseudolocalization`](class_projectsettings.md#class_projectsettings_property_internationalization/pseudolocalization/use_pseudolocalization) for details.
+If `true`, enables the use of pseudolocalization on the main translation domain. See [`ProjectSettings.internationalization/pseudolocalization/use_pseudolocalization`](class_projectsettings.md#class_projectsettings_property_internationalization/pseudolocalization/use_pseudolocalization) for details.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -72,7 +77,7 @@ If `true`, enables the use of pseudolocalization. See [`ProjectSettings.internat
 
 `void` **add_translation** ( translation: [`Translation`](class_translation.md) )<div id="class_translationserver_method_add_translation"></div>
 
-Adds a [`Translation`](class_translation.md) resource.
+Adds a translation to the main translation domain.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -82,7 +87,7 @@ Adds a [`Translation`](class_translation.md) resource.
 
 `void` **clear** ( )<div id="class_translationserver_method_clear"></div>
 
-Clears the server from all translations.
+Removes all translations from the main translation domain.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -180,6 +185,16 @@ Returns a locale's language and its variant (e.g. `"en_US"` would return `"Engli
 
 ---
 
+<div id="_class_translationserver_method_get_or_add_domain"></div>
+
+[`TranslationDomain`](class_translationdomain.md) **get_or_add_domain** ( domain: [`StringName`](class_stringname.md) )<div id="class_translationserver_method_get_or_add_domain"></div>
+
+Returns the translation domain with the specified name. An empty translation domain will be created and added if it does not exist.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_translationserver_method_get_script_name"></div>
 
 [`String`](class_string.md) **get_script_name** ( script: [`String`](class_string.md) ) const[^const]<div id="class_translationserver_method_get_script_name"></div>
@@ -206,9 +221,17 @@ Returns the current locale of the editor.
 
 [`Translation`](class_translation.md) **get_translation_object** ( locale: [`String`](class_string.md) )<div id="class_translationserver_method_get_translation_object"></div>
 
-Returns the [`Translation`](class_translation.md) instance based on the `locale` passed in.
+Returns the [`Translation`](class_translation.md) instance that best matches `locale` in the main translation domain. Returns `null` if there are no matches.
 
-It will return `null` if there is no [`Translation`](class_translation.md) instance that matches the `locale`.
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_translationserver_method_has_domain"></div>
+
+[`bool`](class_bool.md) **has_domain** ( domain: [`StringName`](class_stringname.md) ) const[^const]<div id="class_translationserver_method_has_domain"></div>
+
+Returns `true` if a translation domain with the specified name exists.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -220,6 +243,8 @@ It will return `null` if there is no [`Translation`](class_translation.md) insta
 
 Returns the pseudolocalized string based on the `message` passed in.
 
+ **Note:** This method always uses the main translation domain.
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -228,7 +253,19 @@ Returns the pseudolocalized string based on the `message` passed in.
 
 `void` **reload_pseudolocalization** ( )<div id="class_translationserver_method_reload_pseudolocalization"></div>
 
-Reparses the pseudolocalization options and reloads the translation.
+Reparses the pseudolocalization options and reloads the translation for the main translation domain.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_translationserver_method_remove_domain"></div>
+
+`void` **remove_domain** ( domain: [`StringName`](class_stringname.md) )<div id="class_translationserver_method_remove_domain"></div>
+
+Removes the translation domain with the specified name.
+
+ **Note:** Trying to remove the main translation domain is an error.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -238,7 +275,7 @@ Reparses the pseudolocalization options and reloads the translation.
 
 `void` **remove_translation** ( translation: [`Translation`](class_translation.md) )<div id="class_translationserver_method_remove_translation"></div>
 
-Removes the given translation from the server.
+Removes the given translation from the main translation domain.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -270,7 +307,9 @@ Returns a `locale` string standardized to match known locales (e.g. `en-US` woul
 
 [`StringName`](class_stringname.md) **translate** ( message: [`StringName`](class_stringname.md), context: [`StringName`](class_stringname.md) = &"" ) const[^const]<div id="class_translationserver_method_translate"></div>
 
-Returns the current locale's translation for the given message (key) and context.
+Returns the current locale's translation for the given message and context.
+
+ **Note:** This method always uses the main translation domain.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -280,9 +319,11 @@ Returns the current locale's translation for the given message (key) and context
 
 [`StringName`](class_stringname.md) **translate_plural** ( message: [`StringName`](class_stringname.md), plural_message: [`StringName`](class_stringname.md), n: [`int`](class_int.md), context: [`StringName`](class_stringname.md) = &"" ) const[^const]<div id="class_translationserver_method_translate_plural"></div>
 
-Returns the current locale's translation for the given message (key), plural message and context.
+Returns the current locale's translation for the given message, plural message and context.
 
 The number `n` is the number or quantity of the plural object. It will be used to guide the translation system to fetch the correct plural form for the selected language.
+
+ **Note:** This method always uses the main translation domain.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

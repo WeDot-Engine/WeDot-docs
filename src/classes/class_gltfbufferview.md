@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFBufferView.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFBufferView.xml。 -->
 
 <div id="_class_gltfbufferview"></div>
 
@@ -9,11 +9,11 @@
 
 **继承：** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Represents a GLTF buffer view.
+Represents a glTF buffer view.
 
 ## 描述
 
-GLTFBufferView is a data structure representing GLTF a `bufferView` that would be found in the `"bufferViews"` array. A buffer is a blob of binary data. A buffer view is a slice of a buffer that can be used to identify and extract data from the buffer.
+GLTFBufferView is a data structure representing a glTF `bufferView` that would be found in the `"bufferViews"` array. A buffer is a blob of binary data. A buffer view is a slice of a buffer that can be used to identify and extract data from the buffer.
 
 Most custom uses of buffers only need to use the [`buffer`](class_gltfbufferview.md#class_gltfbufferview_property_buffer), [`byte_length`](class_gltfbufferview.md#class_gltfbufferview_property_byte_length), and [`byte_offset`](class_gltfbufferview.md#class_gltfbufferview_property_byte_offset). The [`byte_stride`](class_gltfbufferview.md#class_gltfbufferview_property_byte_stride) and [`indices`](class_gltfbufferview.md#class_gltfbufferview_property_indices) properties are for more advanced use cases such as interleaved mesh data encoded for the GPU.
 

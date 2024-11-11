@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CanvasItem.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CanvasItem.xml。 -->
 
 <div id="_class_canvasitem"></div>
 
@@ -99,7 +99,7 @@ Note that properties like transform, modulation, and visibility are only propaga
 | [`bool`](class_bool.md)               | [`is_local_transform_notification_enabled`](class_canvasitem.md#class_canvasitem_method_is_local_transform_notification_enabled) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | [`bool`](class_bool.md)               | [`is_transform_notification_enabled`](class_canvasitem.md#class_canvasitem_method_is_transform_notification_enabled) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | [`bool`](class_bool.md)               | [`is_visible_in_tree`](class_canvasitem.md#class_canvasitem_method_is_visible_in_tree) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [`Vector2`](class_vector2.md)         | [`make_canvas_position_local`](class_canvasitem.md#class_canvasitem_method_make_canvas_position_local) ( screen_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [`Vector2`](class_vector2.md)         | [`make_canvas_position_local`](class_canvasitem.md#class_canvasitem_method_make_canvas_position_local) ( viewport_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | [`InputEvent`](class_inputevent.md)   | [`make_input_local`](class_canvasitem.md#class_canvasitem_method_make_input_local) ( event: [`InputEvent`](class_inputevent.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | `void`                                | [`move_to_front`](class_canvasitem.md#class_canvasitem_method_move_to_front) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | `void`                                | [`queue_redraw`](class_canvasitem.md#class_canvasitem_method_queue_redraw) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -130,7 +130,7 @@ Emitted when the **CanvasItem** must redraw, *after* the related [`NOTIFICATION_
 
 **hidden** ( ) <div id="class_canvasitem_signal_hidden"></div>
 
-Emitted when becoming hidden.
+Emitted when the **CanvasItem** is hidden, i.e. it's no longer visible in the tree (see [`is_visible_in_tree`](class_canvasitem.md#class_canvasitem_method_is_visible_in_tree)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -140,7 +140,7 @@ Emitted when becoming hidden.
 
 **item_rect_changed** ( ) <div id="class_canvasitem_signal_item_rect_changed"></div>
 
-Emitted when the item's [`Rect2`](class_rect2.md) boundaries (position or size) have changed, or when an action is taking place that may have impacted these boundaries (e.g. changing [`Sprite2D.texture`](class_sprite2d.md#class_sprite2d_property_texture)).
+Emitted when the **CanvasItem**'s boundaries (position or size) change, or when an action took place that may have affected these boundaries (e.g. changing [`Sprite2D.texture`](class_sprite2d.md#class_sprite2d_property_texture)).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -150,7 +150,7 @@ Emitted when the item's [`Rect2`](class_rect2.md) boundaries (position or size) 
 
 **visibility_changed** ( ) <div id="class_canvasitem_signal_visibility_changed"></div>
 
-Emitted when the visibility (hidden/visible) changes.
+Emitted when the **CanvasItem**'s visibility changes, either because its own [`visible`](class_canvasitem.md#class_canvasitem_property_visible) property changed or because its visibility in the tree changed (see [`is_visible_in_tree`](class_canvasitem.md#class_canvasitem_method_is_visible_in_tree)).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -494,7 +494,7 @@ The rendering layer in which this **CanvasItem** is rendered by [`Viewport`](cla
 - `void` **set_visible** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_visible** ( )
 
-If `true`, this **CanvasItem** is drawn. The node is only visible if all of its ancestors are visible as well (in other words, [`is_visible_in_tree`](class_canvasitem.md#class_canvasitem_method_is_visible_in_tree) must return `true`).
+If `true`, this **CanvasItem** may be drawn. Whether this **CanvasItem** is actually drawn depends on the visibility of all of its **CanvasItem** ancestors. In other words: this **CanvasItem** will be drawn when [`is_visible_in_tree`](class_canvasitem.md#class_canvasitem_method_is_visible_in_tree) returns `true` and all **CanvasItem** ancestors share at least one [`visibility_layer`](class_canvasitem.md#class_canvasitem_property_visibility_layer) with this **CanvasItem**.
 
  **Note:** For controls that inherit [`Popup`](class_popup.md), the correct way to make them visible is to call one of the multiple `popup*()` functions instead.
 
@@ -628,6 +628,8 @@ If `antialiased` is `true`, half transparent "feathers" will be attached to the 
 `void` **draw_colored_polygon** ( points: [`PackedVector2Array`](class_packedvector2array.md), color: [`Color`](class_color.md), uvs: [`PackedVector2Array`](class_packedvector2array.md) = PackedVector2Array(), texture: [`Texture2D`](class_texture2d.md) = null )<div id="class_canvasitem_method_draw_colored_polygon"></div>
 
 Draws a colored polygon of any number of points, convex or concave. Unlike [`draw_polygon`](class_canvasitem.md#class_canvasitem_method_draw_polygon), a single color must be specified for the whole polygon.
+
+ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with [`Geometry2D.triangulate_polygon`](class_geometry2d.md#class_geometry2d_method_triangulate_polygon) and using [`draw_mesh`](class_canvasitem.md#class_canvasitem_method_draw_mesh), [`draw_multimesh`](class_canvasitem.md#class_canvasitem_method_draw_multimesh), or [`RenderingServer.canvas_item_add_triangle_array`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_triangle_array).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -780,6 +782,8 @@ Draws a [`MultiMesh`](class_multimesh.md) in 2D with the provided texture. See [
 `void` **draw_polygon** ( points: [`PackedVector2Array`](class_packedvector2array.md), colors: [`PackedColorArray`](class_packedcolorarray.md), uvs: [`PackedVector2Array`](class_packedvector2array.md) = PackedVector2Array(), texture: [`Texture2D`](class_texture2d.md) = null )<div id="class_canvasitem_method_draw_polygon"></div>
 
 Draws a solid polygon of any number of points, convex or concave. Unlike [`draw_colored_polygon`](class_canvasitem.md#class_canvasitem_method_draw_colored_polygon), each point's color can be changed individually. See also [`draw_polyline`](class_canvasitem.md#class_canvasitem_method_draw_polyline) and [`draw_polyline_colors`](class_canvasitem.md#class_canvasitem_method_draw_polyline_colors). If you need more flexibility (such as being able to use bones), use [`RenderingServer.canvas_item_add_triangle_array`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_triangle_array) instead.
+
+ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with [`Geometry2D.triangulate_polygon`](class_geometry2d.md#class_geometry2d_method_triangulate_polygon) and using [`draw_mesh`](class_canvasitem.md#class_canvasitem_method_draw_mesh), [`draw_multimesh`](class_canvasitem.md#class_canvasitem_method_draw_multimesh), or [`RenderingServer.canvas_item_add_triangle_array`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_triangle_array).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1143,15 +1147,26 @@ Returns `true` if the node is present in the [`SceneTree`](class_scenetree.md), 
 
 Visibility is checked only in parent nodes that inherit from **CanvasItem**, [`CanvasLayer`](class_canvaslayer.md), and [`Window`](class_window.md). If the parent is of any other type (such as [`Node`](class_node.md), [`AnimationPlayer`](class_animationplayer.md), or [`Node3D`](class_node3d.md)), it is assumed to be visible.
 
+ **Note:** This method does not take [`visibility_layer`](class_canvasitem.md#class_canvasitem_property_visibility_layer) into account, so even if this method returns `true` the node might end up not being rendered.
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
 
 <div id="_class_canvasitem_method_make_canvas_position_local"></div>
 
-[`Vector2`](class_vector2.md) **make_canvas_position_local** ( screen_point: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_canvasitem_method_make_canvas_position_local"></div>
+[`Vector2`](class_vector2.md) **make_canvas_position_local** ( viewport_point: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_canvasitem_method_make_canvas_position_local"></div>
 
-Assigns `screen_point` as this node's new local transform.
+Transforms `viewport_point` from the viewport's coordinates to this node's local coordinates.
+
+For the opposite operation, use [`get_global_transform_with_canvas`](class_canvasitem.md#class_canvasitem_method_get_global_transform_with_canvas).
+
+```
+
+    var viewport_point = get_global_transform_with_canvas() * local_point
+```
+
+
 
 <!-- rst-class:: classref-item-separator -->
 

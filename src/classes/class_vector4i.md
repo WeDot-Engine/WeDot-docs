@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Vector4i.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Vector4i.xml。 -->
 
 <div id="_class_vector4i"></div>
 
@@ -415,7 +415,7 @@ Gets the remainder of each component of the **Vector4i** with the components of 
 
 [`Vector4i`](class_vector4i.md) **operator %** ( right: [`int`](class_int.md) ) <div id="class_vector4i_operator_mod_int"></div>
 
-Gets the remainder of each component of the **Vector4i** with the the given [`int`](class_int.md). This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using [`@GlobalScope.posmod`](class_@globalscope.md#class_@globalscope_method_posmod) instead if you want to handle negative numbers.
+Gets the remainder of each component of the **Vector4i** with the given [`int`](class_int.md). This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using [`@GlobalScope.posmod`](class_@globalscope.md#class_@globalscope_method_posmod) instead if you want to handle negative numbers.
 
 ```
 

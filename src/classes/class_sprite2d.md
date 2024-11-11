@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Sprite2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Sprite2D.xml。 -->
 
 <div id="_class_sprite2d"></div>
 
@@ -180,7 +180,7 @@ If `true`, texture is cut from a larger atlas texture. See [`region_rect`](class
 - `void` **set_region_filter_clip_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_region_filter_clip_enabled** ( )
 
-If `true`, the outermost pixels get blurred out. [`region_enabled`](class_sprite2d.md#class_sprite2d_property_region_enabled) must be `true`.
+If `true`, the area outside of the [`region_rect`](class_sprite2d.md#class_sprite2d_property_region_rect) is clipped to avoid bleeding of the surrounding texture pixels. [`region_enabled`](class_sprite2d.md#class_sprite2d_property_region_enabled) must be `true`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -231,9 +231,9 @@ The number of rows in the sprite sheet. When this property is changed, [`frame`]
 
 [`Rect2`](class_rect2.md) **get_rect** ( ) const[^const]<div id="class_sprite2d_method_get_rect"></div>
 
-Returns a [`Rect2`](class_rect2.md) representing the Sprite2D's boundary in local coordinates. Can be used to detect if the Sprite2D was clicked.
+Returns a [`Rect2`](class_rect2.md) representing the Sprite2D's boundary in local coordinates.
 
- **Example:** 
+ **Example:** Detect if the Sprite2D was clicked:
 
 
 

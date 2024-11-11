@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SurfaceTool.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SurfaceTool.xml。 -->
 
 <div id="_class_surfacetool"></div>
 
@@ -475,7 +475,7 @@ Specifies a normal to use for the *next* vertex. If every vertex needs to have t
 
 Set to [`SKIN_8_WEIGHTS`](class_surfacetool.md#class_surfacetool_constant_skin_8_weights) to indicate that up to 8 bone influences per vertex may be used.
 
-By default, only 4 bone influences are used ([`SKIN_4_WEIGHTS`](class_surfacetool.md#class_surfacetool_constant_skin_4_weights))
+By default, only 4 bone influences are used ([`SKIN_4_WEIGHTS`](class_surfacetool.md#class_surfacetool_constant_skin_4_weights)).
 
  **Note:** This function takes an enum, not the exact number of weights.
 

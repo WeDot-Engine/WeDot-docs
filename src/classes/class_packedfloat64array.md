@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedFloat64Array.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedFloat64Array.xml。 -->
 
 <div id="_class_packedfloat64array"></div>
 
@@ -41,6 +41,7 @@ If you only need to pack 32-bit floats tightly, see [`PackedFloat32Array`](class
 | [`PackedFloat64Array`](class_packedfloat64array.md) | [`duplicate`](class_packedfloat64array.md#class_packedfloat64array_method_duplicate) ( )                                                                             |
 | `void`                                              | [`fill`](class_packedfloat64array.md#class_packedfloat64array_method_fill) ( value: [`float`](class_float.md) )                                                      |
 | [`int`](class_int.md)                               | [`find`](class_packedfloat64array.md#class_packedfloat64array_method_find) ( value: [`float`](class_float.md), from: [`int`](class_int.md) = 0 ) const[^const]       |
+| [`float`](class_float.md)                           | [`get`](class_packedfloat64array.md#class_packedfloat64array_method_get) ( index: [`int`](class_int.md) ) const[^const]                                              |
 | [`bool`](class_bool.md)                             | [`has`](class_packedfloat64array.md#class_packedfloat64array_method_has) ( value: [`float`](class_float.md) ) const[^const]                                          |
 | [`int`](class_int.md)                               | [`insert`](class_packedfloat64array.md#class_packedfloat64array_method_insert) ( at_index: [`int`](class_int.md), value: [`float`](class_float.md) )                 |
 | [`bool`](class_bool.md)                             | [`is_empty`](class_packedfloat64array.md#class_packedfloat64array_method_is_empty) ( ) const[^const]                                                                 |
@@ -181,6 +182,16 @@ Assigns the given value to all elements in the array. This can typically be used
 Searches the array for a value and returns its index or `-1` if not found. Optionally, the initial search index can be passed.
 
  **Note:** [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_packedfloat64array_method_get"></div>
+
+[`float`](class_float.md) **get** ( index: [`int`](class_int.md) ) const[^const]<div id="class_packedfloat64array_method_get"></div>
+
+Returns the 64-bit float at the given `index` in the array. This is the same as using the `[]` operator (`array[index]`).
 
 <!-- rst-class:: classref-item-separator -->
 

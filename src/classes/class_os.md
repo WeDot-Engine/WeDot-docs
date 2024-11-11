@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/OS.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/OS.xml。 -->
 
 <div id="_class_os"></div>
 
@@ -37,7 +37,7 @@ The **OS** class wraps the most common functionalities for communicating with th
 | `void`                                            | [`delay_msec`](class_os.md#class_os_method_delay_msec) ( msec: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                             |
 | `void`                                            | [`delay_usec`](class_os.md#class_os_method_delay_usec) ( usec: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                             |
 | [`int`](class_int.md)                             | [`execute`](class_os.md#class_os_method_execute) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md), output: [`Array`](class_array.md) = [], read_stderr: [`bool`](class_bool.md) = false, open_console: [`bool`](class_bool.md) = false )                                                                                                        |
-| [`Dictionary`](class_dictionary.md)               | [`execute_with_pipe`](class_os.md#class_os_method_execute_with_pipe) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md) )                                                                                                                                                                                                                         |
+| [`Dictionary`](class_dictionary.md)               | [`execute_with_pipe`](class_os.md#class_os_method_execute_with_pipe) ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md), blocking: [`bool`](class_bool.md) = true )                                                                                                                                                                               |
 | [Key](#enum_@globalscope_key)                     | [`find_keycode_from_string`](class_os.md#class_os_method_find_keycode_from_string) ( string: [`String`](class_string.md) ) const[^const]                                                                                                                                                                                                                                                         |
 | [`String`](class_string.md)                       | [`get_cache_dir`](class_os.md#class_os_method_get_cache_dir) ( ) const[^const]                                                                                                                                                                                                                                                                                                                   |
 | [`PackedStringArray`](class_packedstringarray.md) | [`get_cmdline_args`](class_os.md#class_os_method_get_cmdline_args) ( )                                                                                                                                                                                                                                                                                                                           |
@@ -125,6 +125,12 @@ The OpenGL 3 rendering driver. It uses OpenGL 3.3 Core Profile on desktop platfo
 [RenderingDriver](#enum_os_renderingdriver) **RENDERING_DRIVER_D3D12** = ``2``
 
 The Direct3D 12 rendering driver.
+
+<div id="_class_os_constant_rendering_driver_metal"></div>
+
+[RenderingDriver](#enum_os_renderingdriver) **RENDERING_DRIVER_METAL** = ``3``
+
+The Metal rendering driver.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -429,9 +435,11 @@ If you wish to access a shell built-in or execute a composite command, a platfor
 
 <div id="_class_os_method_execute_with_pipe"></div>
 
-[`Dictionary`](class_dictionary.md) **execute_with_pipe** ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md) )<div id="class_os_method_execute_with_pipe"></div>
+[`Dictionary`](class_dictionary.md) **execute_with_pipe** ( path: [`String`](class_string.md), arguments: [`PackedStringArray`](class_packedstringarray.md), blocking: [`bool`](class_bool.md) = true )<div id="class_os_method_execute_with_pipe"></div>
 
 Creates a new process that runs independently of Godot with redirected IO. It will not terminate when Godot terminates. The path specified in `path` must exist and be an executable file or macOS `.app` bundle. The path is resolved based on the current platform. The `arguments` are used in the given order and separated by a space.
+
+If `blocking` is `false`, created pipes work in non-blocking mode, i.e. read and write operations will return immediately. Use [`FileAccess.get_error`](class_fileaccess.md#class_fileaccess_method_get_error) to check if the last read/write operation was successful.
 
 If the process cannot be created, this method returns an empty [`Dictionary`](class_dictionary.md). Otherwise, this method returns a [`Dictionary`](class_dictionary.md) with the following keys:
 

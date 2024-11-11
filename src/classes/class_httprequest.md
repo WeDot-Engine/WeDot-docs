@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/HTTPRequest.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/HTTPRequest.xml。 -->
 
 <div id="_class_httprequest"></div>
 
@@ -245,9 +245,7 @@ Request successful.
 
 [Result](#enum_httprequest_result) **RESULT_CHUNKED_BODY_SIZE_MISMATCH** = ``1``
 
-该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
-
-
+Request failed due to a mismatch between the expected and actual chunked body size during transfer. Possible causes include network errors, server misconfiguration, or issues with chunked encoding.
 
 <div id="_class_httprequest_constant_result_cant_connect"></div>
 
@@ -289,9 +287,7 @@ Request exceeded its maximum size limit, see [`body_size_limit`](class_httpreque
 
 [Result](#enum_httprequest_result) **RESULT_BODY_DECOMPRESS_FAILED** = ``8``
 
-该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
-
-
+Request failed due to an error while decompressing the response body. Possible causes include unsupported or incorrect compression format, corrupted data, or incomplete transfer.
 
 <div id="_class_httprequest_constant_result_request_failed"></div>
 

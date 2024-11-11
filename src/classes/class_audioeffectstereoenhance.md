@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioEffectStereoEnhance.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioEffectStereoEnhance.xml。 -->
 
 <div id="_class_audioeffectstereoenhance"></div>
 
@@ -36,7 +36,7 @@ An audio effect that can be used to adjust the intensity of stereo panning.
 - `void` **set_pan_pullout** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_pan_pullout** ( )
 
-Values greater than 1.0 increase intensity of any panning on audio passing through this effect, whereas values less than 1.0 will decrease the panning intensity. A value of 0.0 will downmix audio to mono.
+Amplifies the difference between stereo channels, increasing or decreasing existing panning. A value of 0.0 will downmix stereo to mono. Does not affect a mono signal.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -49,7 +49,7 @@ Values greater than 1.0 increase intensity of any panning on audio passing throu
 - `void` **set_surround** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_surround** ( )
 
-该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+Widens sound stage through phase shifting in conjunction with [`time_pullout_ms`](class_audioeffectstereoenhance.md#class_audioeffectstereoenhance_property_time_pullout_ms). Just pans sound to the left channel if [`time_pullout_ms`](class_audioeffectstereoenhance.md#class_audioeffectstereoenhance_property_time_pullout_ms) is 0.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -62,7 +62,7 @@ Values greater than 1.0 increase intensity of any panning on audio passing throu
 - `void` **set_time_pullout** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_time_pullout** ( )
 
-该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+Widens sound stage through phase shifting in conjunction with [`surround`](class_audioeffectstereoenhance.md#class_audioeffectstereoenhance_property_surround). Just delays the right channel if [`surround`](class_audioeffectstereoenhance.md#class_audioeffectstereoenhance_property_surround) is 0.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

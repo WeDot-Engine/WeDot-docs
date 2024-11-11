@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ImporterMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ImporterMesh.xml。 -->
 
 <div id="_class_importermesh"></div>
 
@@ -16,12 +16,6 @@ A [`Resource`](class_resource.md) that contains vertex array-based geometry duri
 ImporterMesh is a type of [`Resource`](class_resource.md) analogous to [`ArrayMesh`](class_arraymesh.md). It contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials.
 
 Unlike its runtime counterpart, **ImporterMesh** contains mesh data before various import steps, such as lod and shadow mesh generation, have taken place. Modify surface data by calling [`clear`](class_importermesh.md#class_importermesh_method_clear), followed by [`add_surface`](class_importermesh.md#class_importermesh_method_add_surface) for each surface.
-
-## 属性
-
-|||
-|:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`_data`](class_importermesh.md#class_importermesh_property__data) | ``{ "surfaces": [] }`` |
 
 ## 方法
 
@@ -50,18 +44,6 @@ Unlike its runtime counterpart, **ImporterMesh** contains mesh data before vario
 | `void`                                          | [`set_lightmap_size_hint`](class_importermesh.md#class_importermesh_method_set_lightmap_size_hint) ( size: [`Vector2i`](class_vector2i.md) )                                                                                                                                                                                                                                                                               |
 | `void`                                          | [`set_surface_material`](class_importermesh.md#class_importermesh_method_set_surface_material) ( surface_idx: [`int`](class_int.md), material: [`Material`](class_material.md) )                                                                                                                                                                                                                                           |
 | `void`                                          | [`set_surface_name`](class_importermesh.md#class_importermesh_method_set_surface_name) ( surface_idx: [`int`](class_int.md), name: [`String`](class_string.md) )                                                                                                                                                                                                                                                           |
-
-<!-- rst-class:: classref-section-separator -->
-
----
-
-## 属性说明
-
-<div id="_class_importermesh_property__data"></div>
-
-[`Dictionary`](class_dictionary.md) **_data** = ``{ "surfaces": [] }`` <div id="class_importermesh_property__data"></div>
-
-该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -117,7 +99,9 @@ Removes all surfaces and blend shapes from this **ImporterMesh**.
 
 Generates all lods for this ImporterMesh.
 
- `normal_merge_angle` and `normal_split_angle` are in degrees and used in the same way as the importer settings in `lods`. As a good default, use 25 and 60 respectively.
+ `normal_merge_angle` is in degrees and used in the same way as the importer settings in `lods`.
+
+ `normal_split_angle` is not used and only remains for compatibility with older versions of the API.
 
 The number of generated lods can be accessed using [`get_surface_lod_count`](class_importermesh.md#class_importermesh_method_get_surface_lod_count), and each LOD is available in [`get_surface_lod_size`](class_importermesh.md#class_importermesh_method_get_surface_lod_size) and [`get_surface_lod_indices`](class_importermesh.md#class_importermesh_method_get_surface_lod_indices).
 

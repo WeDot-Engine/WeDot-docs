@@ -1,6 +1,6 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
 
 <div id="_doc_class_reference"></div>
 
@@ -163,6 +163,7 @@
 - [OpenXRCompositionLayerEquirect](class_openxrcompositionlayerequirect.md)
 - [OpenXRCompositionLayerQuad](class_openxrcompositionlayerquad.md)
 - [OpenXRHand](class_openxrhand.md)
+- [OpenXRVisibilityMask](class_openxrvisibilitymask.md)
 - [OptionButton](class_optionbutton.md)
 - [Panel](class_panel.md)
 - [PanelContainer](class_panelcontainer.md)
@@ -378,6 +379,7 @@
 - [EditorSettings](class_editorsettings.md)
 - [EditorSyntaxHighlighter](class_editorsyntaxhighlighter.md)
 - [Environment](class_environment.md)
+- [ExternalTexture](class_externaltexture.md)
 - [FastNoiseLite](class_fastnoiselite.md)
 - [FBXDocument](class_fbxdocument.md)
 - [FBXState](class_fbxstate.md)
@@ -387,6 +389,7 @@
 - [FontVariation](class_fontvariation.md)
 - [GDExtension](class_gdextension.md)
 - [GDScript](class_gdscript.md)
+- [GDScriptSyntaxHighlighter](class_gdscriptsyntaxhighlighter.md)
 - [GLTFAccessor](class_gltfaccessor.md)
 - [GLTFAnimation](class_gltfanimation.md)
 - [GLTFBufferView](class_gltfbufferview.md)
@@ -698,10 +701,12 @@
 - [DirAccess](class_diraccess.md)
 - [DisplayServer](class_displayserver.md)
 - [DTLSServer](class_dtlsserver.md)
+- [EditorContextMenuPlugin](class_editorcontextmenuplugin.md)
 - [EditorDebuggerPlugin](class_editordebuggerplugin.md)
 - [EditorDebuggerSession](class_editordebuggersession.md)
 - [EditorExportPlatform](class_editorexportplatform.md)
 - [EditorExportPlatformAndroid](class_editorexportplatformandroid.md)
+- [EditorExportPlatformExtension](class_editorexportplatformextension.md)
 - [EditorExportPlatformIOS](class_editorexportplatformios.md)
 - [EditorExportPlatformLinuxBSD](class_editorexportplatformlinuxbsd.md)
 - [EditorExportPlatformMacOS](class_editorexportplatformmacos.md)
@@ -709,6 +714,7 @@
 - [EditorExportPlatformWeb](class_editorexportplatformweb.md)
 - [EditorExportPlatformWindows](class_editorexportplatformwindows.md)
 - [EditorExportPlugin](class_editorexportplugin.md)
+- [EditorExportPreset](class_editorexportpreset.md)
 - [EditorFeatureProfile](class_editorfeatureprofile.md)
 - [EditorFileSystemDirectory](class_editorfilesystemdirectory.md)
 - [EditorFileSystemImportFormatSupportQuery](class_editorfilesystemimportformatsupportquery.md)
@@ -745,6 +751,7 @@
 - [GDExtensionManager](class_gdextensionmanager.md)
 - [Geometry2D](class_geometry2d.md)
 - [Geometry3D](class_geometry3d.md)
+- [GLTFObjectModelProperty](class_gltfobjectmodelproperty.md)
 - [HashingContext](class_hashingcontext.md)
 - [HMACContext](class_hmaccontext.md)
 - [HTTPClient](class_httpclient.md)
@@ -756,6 +763,7 @@
 - [IP](class_ip.md)
 - [JavaClass](class_javaclass.md)
 - [JavaClassWrapper](class_javaclasswrapper.md)
+- [JavaObject](class_javaobject.md)
 - [JavaScriptBridge](class_javascriptbridge.md)
 - [JavaScriptObject](class_javascriptobject.md)
 - [JNISingleton](class_jnisingleton.md)
@@ -909,6 +917,7 @@
 - [TileData](class_tiledata.md)
 - [Time](class_time.md)
 - [TLSOptions](class_tlsoptions.md)
+- [TranslationDomain](class_translationdomain.md)
 - [TranslationServer](class_translationserver.md)
 - [TreeItem](class_treeitem.md)
 - [TriangleMesh](class_trianglemesh.md)
@@ -947,10 +956,12 @@
 ## 编辑器专用
 
 - [EditorCommandPalette](class_editorcommandpalette.md)
+- [EditorContextMenuPlugin](class_editorcontextmenuplugin.md)
 - [EditorDebuggerPlugin](class_editordebuggerplugin.md)
 - [EditorDebuggerSession](class_editordebuggersession.md)
 - [EditorExportPlatform](class_editorexportplatform.md)
 - [EditorExportPlatformAndroid](class_editorexportplatformandroid.md)
+- [EditorExportPlatformExtension](class_editorexportplatformextension.md)
 - [EditorExportPlatformIOS](class_editorexportplatformios.md)
 - [EditorExportPlatformLinuxBSD](class_editorexportplatformlinuxbsd.md)
 - [EditorExportPlatformMacOS](class_editorexportplatformmacos.md)
@@ -958,6 +969,7 @@
 - [EditorExportPlatformWeb](class_editorexportplatformweb.md)
 - [EditorExportPlatformWindows](class_editorexportplatformwindows.md)
 - [EditorExportPlugin](class_editorexportplugin.md)
+- [EditorExportPreset](class_editorexportpreset.md)
 - [EditorFeatureProfile](class_editorfeatureprofile.md)
 - [EditorFileDialog](class_editorfiledialog.md)
 - [EditorFileSystem](class_editorfilesystem.md)

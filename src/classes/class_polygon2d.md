@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Polygon2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Polygon2D.xml。 -->
 
 <div id="_class_polygon2d"></div>
 
@@ -20,7 +20,6 @@ A Polygon2D is defined by a set of points. Each point is connected to the next, 
 |||
 |:-:|:--|
 | [`bool`](class_bool.md)                             | [`antialiased`](class_polygon2d.md#class_polygon2d_property_antialiased)                     | ``false``                |
-| [`Array`](class_array.md)                           | [`bones`](class_polygon2d.md#class_polygon2d_property_bones)                                 | ``[]``                   |
 | [`Color`](class_color.md)                           | [`color`](class_polygon2d.md#class_polygon2d_property_color)                                 | ``Color(1, 1, 1, 1)``    |
 | [`int`](class_int.md)                               | [`internal_vertex_count`](class_polygon2d.md#class_polygon2d_property_internal_vertex_count) | ``0``                    |
 | [`float`](class_float.md)                           | [`invert_border`](class_polygon2d.md#class_polygon2d_property_invert_border)                 | ``100.0``                |
@@ -63,16 +62,6 @@ A Polygon2D is defined by a set of points. Each point is connected to the next, 
 - [`bool`](class_bool.md) **get_antialiased** ( )
 
 If `true`, polygon edges will be anti-aliased.
-
-<!-- rst-class:: classref-item-separator -->
-
----
-
-<div id="_class_polygon2d_property_bones"></div>
-
-[`Array`](class_array.md) **bones** = ``[]`` <div id="class_polygon2d_property_bones"></div>
-
-Internal list of [`Bone2D`](class_bone2d.md) nodes used by the assigned [`skeleton`](class_polygon2d.md#class_polygon2d_property_skeleton). Edited using the Polygon2D editor ("UV" button on the top toolbar).
 
 <!-- rst-class:: classref-item-separator -->
 

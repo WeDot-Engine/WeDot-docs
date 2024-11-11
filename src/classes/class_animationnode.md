@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationNode.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationNode.xml。 -->
 
 <div id="_class_animationnode"></div>
 
@@ -49,7 +49,7 @@ You can access the time information as read-only parameter which is processed an
 | [`Array`](class_array.md)                 | [`_get_parameter_list`](class_animationnode.md#class_animationnode_private_method__get_parameter_list) ( ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                                                                                                  |
 | [`bool`](class_bool.md)                   | [`_has_filter`](class_animationnode.md#class_animationnode_private_method__has_filter) ( ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                                                                                                                  |
 | [`bool`](class_bool.md)                   | [`_is_parameter_read_only`](class_animationnode.md#class_animationnode_private_method__is_parameter_read_only) ( parameter: [`StringName`](class_stringname.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                                           |
-| [`float`](class_float.md)                 | [`_process`](class_animationnode.md#class_animationnode_private_method__process) ( time: [`float`](class_float.md), seek: [`bool`](class_bool.md), is_external_seeking: [`bool`](class_bool.md), test_only: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                       |
+| [`float`](class_float.md)                 | [`_process`](class_animationnode.md#class_animationnode_private_method__process) ( time: [`float`](class_float.md), seek: [`bool`](class_bool.md), is_external_seeking: [`bool`](class_bool.md), test_only: [`bool`](class_bool.md) ) virtual[^virtual]                                                                                                                                                                                                                     |
 | [`bool`](class_bool.md)                   | [`add_input`](class_animationnode.md#class_animationnode_method_add_input) ( name: [`String`](class_string.md) )                                                                                                                                                                                                                                                                                                                                                            |
 | `void`                                    | [`blend_animation`](class_animationnode.md#class_animationnode_method_blend_animation) ( animation: [`StringName`](class_stringname.md), time: [`float`](class_float.md), delta: [`float`](class_float.md), seeked: [`bool`](class_bool.md), is_external_seeking: [`bool`](class_bool.md), blend: [`float`](class_float.md), looped_flag: [LoopedFlag](#enum_animation_loopedflag) = 0 )                                                                                    |
 | [`float`](class_float.md)                 | [`blend_input`](class_animationnode.md#class_animationnode_method_blend_input) ( input_index: [`int`](class_int.md), time: [`float`](class_float.md), seek: [`bool`](class_bool.md), is_external_seeking: [`bool`](class_bool.md), blend: [`float`](class_float.md), filter: [FilterAction](#enum_animationnode_filteraction) = 0, sync: [`bool`](class_bool.md) = true, test_only: [`bool`](class_bool.md) = false )                                                       |
@@ -223,7 +223,7 @@ When inheriting from [`AnimationRootNode`](class_animationrootnode.md), implemen
 
 <div id="_class_animationnode_private_method__process"></div>
 
-[`float`](class_float.md) **_process** ( time: [`float`](class_float.md), seek: [`bool`](class_bool.md), is_external_seeking: [`bool`](class_bool.md), test_only: [`bool`](class_bool.md) ) virtual[^virtual] const[^const]<div id="class_animationnode_private_method__process"></div>
+[`float`](class_float.md) **_process** ( time: [`float`](class_float.md), seek: [`bool`](class_bool.md), is_external_seeking: [`bool`](class_bool.md), test_only: [`bool`](class_bool.md) ) virtual[^virtual]<div id="class_animationnode_private_method__process"></div>
 
 **已弃用：** Currently this is mostly useless as there is a lack of many APIs to extend AnimationNode by GDScript. It is planned that a more flexible API using structures will be provided in the future.
 

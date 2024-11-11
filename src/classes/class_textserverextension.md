@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TextServerExtension.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TextServerExtension.xml。 -->
 
 <div id="_class_textserverextension"></div>
 
@@ -76,6 +76,7 @@ External [`TextServer`](class_textserver.md) implementations should inherit from
 | [`String`](class_string.md)                                 | [`_font_get_style_name`](class_textserverextension.md#class_textserverextension_private_method__font_get_style_name) ( font_rid: [`RID`](class_rid.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                                 |
 | [SubpixelPositioning](#enum_textserver_subpixelpositioning) | [`_font_get_subpixel_positioning`](class_textserverextension.md#class_textserverextension_private_method__font_get_subpixel_positioning) ( font_rid: [`RID`](class_rid.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                                             |
 | [`String`](class_string.md)                                 | [`_font_get_supported_chars`](class_textserverextension.md#class_textserverextension_private_method__font_get_supported_chars) ( font_rid: [`RID`](class_rid.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                       |
+| [`PackedInt32Array`](class_packedint32array.md)             | [`_font_get_supported_glyphs`](class_textserverextension.md#class_textserverextension_private_method__font_get_supported_glyphs) ( font_rid: [`RID`](class_rid.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                                                     |
 | [`int`](class_int.md)                                       | [`_font_get_texture_count`](class_textserverextension.md#class_textserverextension_private_method__font_get_texture_count) ( font_rid: [`RID`](class_rid.md), size: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]                                                                                                                                                                                                    |
 | [`Image`](class_image.md)                                   | [`_font_get_texture_image`](class_textserverextension.md#class_textserverextension_private_method__font_get_texture_image) ( font_rid: [`RID`](class_rid.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                                                                                                                                              |
 | [`PackedInt32Array`](class_packedint32array.md)             | [`_font_get_texture_offsets`](class_textserverextension.md#class_textserverextension_private_method__font_get_texture_offsets) ( font_rid: [`RID`](class_rid.md), size: [`Vector2i`](class_vector2i.md), texture_index: [`int`](class_int.md) ) virtual[^virtual] const[^const]                                                                                                                                                          |
@@ -899,6 +900,18 @@ Returns font subpixel glyph positioning mode.
 **Required.** 
 
 Returns a string containing all the characters available in the font.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_textserverextension_private_method__font_get_supported_glyphs"></div>
+
+[`PackedInt32Array`](class_packedint32array.md) **_font_get_supported_glyphs** ( font_rid: [`RID`](class_rid.md) ) virtual[^virtual] const[^const]<div id="class_textserverextension_private_method__font_get_supported_glyphs"></div>
+
+**Required.** 
+
+Returns an array containing all glyph indices in the font.
 
 <!-- rst-class:: classref-item-separator -->
 

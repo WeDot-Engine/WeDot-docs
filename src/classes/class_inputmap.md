@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/InputMap.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/InputMap.xml。 -->
 
 <div id="_class_inputmap"></div>
 
@@ -26,7 +26,7 @@ Manages all [`InputEventAction`](class_inputeventaction.md) which can be created
 | [Array](class_array.md) [`InputEvent`](class_inputevent.md) | [`action_get_events`](class_inputmap.md#class_inputmap_method_action_get_events) ( action: [`StringName`](class_stringname.md) )                                                                                                     |
 | [`bool`](class_bool.md)                                     | [`action_has_event`](class_inputmap.md#class_inputmap_method_action_has_event) ( action: [`StringName`](class_stringname.md), event: [`InputEvent`](class_inputevent.md) )                                                           |
 | `void`                                                      | [`action_set_deadzone`](class_inputmap.md#class_inputmap_method_action_set_deadzone) ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) )                                                            |
-| `void`                                                      | [`add_action`](class_inputmap.md#class_inputmap_method_add_action) ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) = 0.5 )                                                                        |
+| `void`                                                      | [`add_action`](class_inputmap.md#class_inputmap_method_add_action) ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) = 0.2 )                                                                        |
 | `void`                                                      | [`erase_action`](class_inputmap.md#class_inputmap_method_erase_action) ( action: [`StringName`](class_stringname.md) )                                                                                                               |
 | [`bool`](class_bool.md)                                     | [`event_is_action`](class_inputmap.md#class_inputmap_method_event_is_action) ( event: [`InputEvent`](class_inputevent.md), action: [`StringName`](class_stringname.md), exact_match: [`bool`](class_bool.md) = false ) const[^const] |
 | [Array](class_array.md) [`StringName`](class_stringname.md) | [`get_actions`](class_inputmap.md#class_inputmap_method_get_actions) ( )                                                                                                                                                             |
@@ -113,7 +113,7 @@ Sets a deadzone value for the action.
 
 <div id="_class_inputmap_method_add_action"></div>
 
-`void` **add_action** ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) = 0.5 )<div id="class_inputmap_method_add_action"></div>
+`void` **add_action** ( action: [`StringName`](class_stringname.md), deadzone: [`float`](class_float.md) = 0.2 )<div id="class_inputmap_method_add_action"></div>
 
 Adds an empty action to the **InputMap** with a configurable `deadzone`.
 

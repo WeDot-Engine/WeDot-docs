@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AStarGrid2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AStarGrid2D.xml。 -->
 
 <div id="_class_astargrid2d"></div>
 
@@ -65,22 +65,23 @@ To remove a point from the pathfinding grid, it must be set as "solid" with [`se
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                               | [`_compute_cost`](class_astargrid2d.md#class_astargrid2d_private_method__compute_cost) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]                |
-| [`float`](class_float.md)                               | [`_estimate_cost`](class_astargrid2d.md#class_astargrid2d_private_method__estimate_cost) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]              |
-| `void`                                                  | [`clear`](class_astargrid2d.md#class_astargrid2d_method_clear) ( )                                                                                                                                                         |
-| `void`                                                  | [`fill_solid_region`](class_astargrid2d.md#class_astargrid2d_method_fill_solid_region) ( region: [`Rect2i`](class_rect2i.md), solid: [`bool`](class_bool.md) = true )                                                      |
-| `void`                                                  | [`fill_weight_scale_region`](class_astargrid2d.md#class_astargrid2d_method_fill_weight_scale_region) ( region: [`Rect2i`](class_rect2i.md), weight_scale: [`float`](class_float.md) )                                      |
-| [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_id_path`](class_astargrid2d.md#class_astargrid2d_method_get_id_path) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md), allow_partial_path: [`bool`](class_bool.md) = false )       |
-| [`PackedVector2Array`](class_packedvector2array.md)     | [`get_point_path`](class_astargrid2d.md#class_astargrid2d_method_get_point_path) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md), allow_partial_path: [`bool`](class_bool.md) = false ) |
-| [`Vector2`](class_vector2.md)                           | [`get_point_position`](class_astargrid2d.md#class_astargrid2d_method_get_point_position) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                             |
-| [`float`](class_float.md)                               | [`get_point_weight_scale`](class_astargrid2d.md#class_astargrid2d_method_get_point_weight_scale) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                     |
-| [`bool`](class_bool.md)                                 | [`is_dirty`](class_astargrid2d.md#class_astargrid2d_method_is_dirty) ( ) const[^const]                                                                                                                                     |
-| [`bool`](class_bool.md)                                 | [`is_in_bounds`](class_astargrid2d.md#class_astargrid2d_method_is_in_bounds) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]                                                                          |
-| [`bool`](class_bool.md)                                 | [`is_in_boundsv`](class_astargrid2d.md#class_astargrid2d_method_is_in_boundsv) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                       |
-| [`bool`](class_bool.md)                                 | [`is_point_solid`](class_astargrid2d.md#class_astargrid2d_method_is_point_solid) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                     |
-| `void`                                                  | [`set_point_solid`](class_astargrid2d.md#class_astargrid2d_method_set_point_solid) ( id: [`Vector2i`](class_vector2i.md), solid: [`bool`](class_bool.md) = true )                                                          |
-| `void`                                                  | [`set_point_weight_scale`](class_astargrid2d.md#class_astargrid2d_method_set_point_weight_scale) ( id: [`Vector2i`](class_vector2i.md), weight_scale: [`float`](class_float.md) )                                          |
-| `void`                                                  | [`update`](class_astargrid2d.md#class_astargrid2d_method_update) ( )                                                                                                                                                       |
+| [`float`](class_float.md)                                   | [`_compute_cost`](class_astargrid2d.md#class_astargrid2d_private_method__compute_cost) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]                |
+| [`float`](class_float.md)                                   | [`_estimate_cost`](class_astargrid2d.md#class_astargrid2d_private_method__estimate_cost) ( from_id: [`Vector2i`](class_vector2i.md), end_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]             |
+| `void`                                                      | [`clear`](class_astargrid2d.md#class_astargrid2d_method_clear) ( )                                                                                                                                                         |
+| `void`                                                      | [`fill_solid_region`](class_astargrid2d.md#class_astargrid2d_method_fill_solid_region) ( region: [`Rect2i`](class_rect2i.md), solid: [`bool`](class_bool.md) = true )                                                      |
+| `void`                                                      | [`fill_weight_scale_region`](class_astargrid2d.md#class_astargrid2d_method_fill_weight_scale_region) ( region: [`Rect2i`](class_rect2i.md), weight_scale: [`float`](class_float.md) )                                      |
+| [Array](class_array.md) [`Vector2i`](class_vector2i.md)     | [`get_id_path`](class_astargrid2d.md#class_astargrid2d_method_get_id_path) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md), allow_partial_path: [`bool`](class_bool.md) = false )       |
+| [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_point_data_in_region`](class_astargrid2d.md#class_astargrid2d_method_get_point_data_in_region) ( region: [`Rect2i`](class_rect2i.md) ) const[^const]                                                                 |
+| [`PackedVector2Array`](class_packedvector2array.md)         | [`get_point_path`](class_astargrid2d.md#class_astargrid2d_method_get_point_path) ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md), allow_partial_path: [`bool`](class_bool.md) = false ) |
+| [`Vector2`](class_vector2.md)                               | [`get_point_position`](class_astargrid2d.md#class_astargrid2d_method_get_point_position) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                             |
+| [`float`](class_float.md)                                   | [`get_point_weight_scale`](class_astargrid2d.md#class_astargrid2d_method_get_point_weight_scale) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                     |
+| [`bool`](class_bool.md)                                     | [`is_dirty`](class_astargrid2d.md#class_astargrid2d_method_is_dirty) ( ) const[^const]                                                                                                                                     |
+| [`bool`](class_bool.md)                                     | [`is_in_bounds`](class_astargrid2d.md#class_astargrid2d_method_is_in_bounds) ( x: [`int`](class_int.md), y: [`int`](class_int.md) ) const[^const]                                                                          |
+| [`bool`](class_bool.md)                                     | [`is_in_boundsv`](class_astargrid2d.md#class_astargrid2d_method_is_in_boundsv) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                       |
+| [`bool`](class_bool.md)                                     | [`is_point_solid`](class_astargrid2d.md#class_astargrid2d_method_is_point_solid) ( id: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                     |
+| `void`                                                      | [`set_point_solid`](class_astargrid2d.md#class_astargrid2d_method_set_point_solid) ( id: [`Vector2i`](class_vector2i.md), solid: [`bool`](class_bool.md) = true )                                                          |
+| `void`                                                      | [`set_point_weight_scale`](class_astargrid2d.md#class_astargrid2d_method_set_point_weight_scale) ( id: [`Vector2i`](class_vector2i.md), weight_scale: [`float`](class_float.md) )                                          |
+| `void`                                                      | [`update`](class_astargrid2d.md#class_astargrid2d_method_update) ( )                                                                                                                                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -376,7 +377,7 @@ Note that this function is hidden in the default **AStarGrid2D** class.
 
 <div id="_class_astargrid2d_private_method__estimate_cost"></div>
 
-[`float`](class_float.md) **_estimate_cost** ( from_id: [`Vector2i`](class_vector2i.md), to_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]<div id="class_astargrid2d_private_method__estimate_cost"></div>
+[`float`](class_float.md) **_estimate_cost** ( from_id: [`Vector2i`](class_vector2i.md), end_id: [`Vector2i`](class_vector2i.md) ) virtual[^virtual] const[^const]<div id="class_astargrid2d_private_method__estimate_cost"></div>
 
 Called when estimating the cost between a point and the path's ending point.
 
@@ -428,6 +429,18 @@ Returns an array with the IDs of the points that form the path found by AStar2D 
 
 If there is no valid path to the target, and `allow_partial_path` is `true`, returns a path to the point closest to the target that can be reached.
 
+ **Note:** When `allow_partial_path` is `true` and `to_id` is solid the search may take an unusually long time to finish.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_astargrid2d_method_get_point_data_in_region"></div>
+
+[Array](class_array.md) [`Dictionary`](class_dictionary.md) **get_point_data_in_region** ( region: [`Rect2i`](class_rect2i.md) ) const[^const]<div id="class_astargrid2d_method_get_point_data_in_region"></div>
+
+Returns an array of dictionaries with point data (`id`: [`Vector2i`](class_vector2i.md), `position`: [`Vector2`](class_vector2.md), `solid`: [`bool`](class_bool.md), `weight_scale`: [`float`](class_float.md)) within a `region`.
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -441,6 +454,8 @@ Returns an array with the points that are in the path found by **AStarGrid2D** b
 If there is no valid path to the target, and `allow_partial_path` is `true`, returns a path to the point closest to the target that can be reached.
 
  **Note:** This method is not thread-safe. If called from a [`Thread`](class_thread.md), it will return an empty array and will print an error message.
+
+Additionally, when `allow_partial_path` is `true` and `to_id` is solid the search may take an unusually long time to finish.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Resource.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Resource.xml。 -->
 
 <div id="_class_resource"></div>
 
@@ -36,15 +36,22 @@ The engine keeps a global cache of all loaded resources, referenced by paths (se
 
 |||
 |:-:|:--|
-| [`RID`](class_rid.md)           | [`_get_rid`](class_resource.md#class_resource_private_method__get_rid) ( ) virtual[^virtual]                                     |
-| `void`                          | [`_setup_local_to_scene`](class_resource.md#class_resource_private_method__setup_local_to_scene) ( ) virtual[^virtual]           |
-| [`Resource`](class_resource.md) | [`duplicate`](class_resource.md#class_resource_method_duplicate) ( subresources: [`bool`](class_bool.md) = false ) const[^const] |
-| `void`                          | [`emit_changed`](class_resource.md#class_resource_method_emit_changed) ( )                                                       |
-| [`String`](class_string.md)     | [`generate_scene_unique_id`](class_resource.md#class_resource_method_generate_scene_unique_id) ( ) static[^static]               |
-| [`Node`](class_node.md)         | [`get_local_scene`](class_resource.md#class_resource_method_get_local_scene) ( ) const[^const]                                   |
-| [`RID`](class_rid.md)           | [`get_rid`](class_resource.md#class_resource_method_get_rid) ( ) const[^const]                                                   |
-| `void`                          | [`setup_local_to_scene`](class_resource.md#class_resource_method_setup_local_to_scene) ( )                                       |
-| `void`                          | [`take_over_path`](class_resource.md#class_resource_method_take_over_path) ( path: [`String`](class_string.md) )                 |
+| [`RID`](class_rid.md)           | [`_get_rid`](class_resource.md#class_resource_private_method__get_rid) ( ) virtual[^virtual] const[^const]                                                 |
+| `void`                          | [`_reset_state`](class_resource.md#class_resource_private_method__reset_state) ( ) virtual[^virtual]                                                       |
+| `void`                          | [`_set_path_cache`](class_resource.md#class_resource_private_method__set_path_cache) ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const] |
+| `void`                          | [`_setup_local_to_scene`](class_resource.md#class_resource_private_method__setup_local_to_scene) ( ) virtual[^virtual]                                     |
+| [`Resource`](class_resource.md) | [`duplicate`](class_resource.md#class_resource_method_duplicate) ( subresources: [`bool`](class_bool.md) = false ) const[^const]                           |
+| `void`                          | [`emit_changed`](class_resource.md#class_resource_method_emit_changed) ( )                                                                                 |
+| [`String`](class_string.md)     | [`generate_scene_unique_id`](class_resource.md#class_resource_method_generate_scene_unique_id) ( ) static[^static]                                         |
+| [`String`](class_string.md)     | [`get_id_for_path`](class_resource.md#class_resource_method_get_id_for_path) ( path: [`String`](class_string.md) ) const[^const]                           |
+| [`Node`](class_node.md)         | [`get_local_scene`](class_resource.md#class_resource_method_get_local_scene) ( ) const[^const]                                                             |
+| [`RID`](class_rid.md)           | [`get_rid`](class_resource.md#class_resource_method_get_rid) ( ) const[^const]                                                                             |
+| [`bool`](class_bool.md)         | [`is_built_in`](class_resource.md#class_resource_method_is_built_in) ( ) const[^const]                                                                     |
+| `void`                          | [`reset_state`](class_resource.md#class_resource_method_reset_state) ( )                                                                                   |
+| `void`                          | [`set_id_for_path`](class_resource.md#class_resource_method_set_id_for_path) ( path: [`String`](class_string.md), id: [`String`](class_string.md) )        |
+| `void`                          | [`set_path_cache`](class_resource.md#class_resource_method_set_path_cache) ( path: [`String`](class_string.md) )                                           |
+| `void`                          | [`setup_local_to_scene`](class_resource.md#class_resource_method_setup_local_to_scene) ( )                                                                 |
+| `void`                          | [`take_over_path`](class_resource.md#class_resource_method_take_over_path) ( path: [`String`](class_string.md) )                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -146,9 +153,29 @@ An unique identifier relative to the this resource's scene. If left empty, the I
 
 <div id="_class_resource_private_method__get_rid"></div>
 
-[`RID`](class_rid.md) **_get_rid** ( ) virtual[^virtual]<div id="class_resource_private_method__get_rid"></div>
+[`RID`](class_rid.md) **_get_rid** ( ) virtual[^virtual] const[^const]<div id="class_resource_private_method__get_rid"></div>
 
 Override this method to return a custom [`RID`](class_rid.md) when [`get_rid`](class_resource.md#class_resource_method_get_rid) is called.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resource_private_method__reset_state"></div>
+
+`void` **_reset_state** ( ) virtual[^virtual]<div id="class_resource_private_method__reset_state"></div>
+
+For resources that use a variable number of properties, either via [`Object._validate_property`](class_object.md#class_object_private_method__validate_property) or [`Object._get_property_list`](class_object.md#class_object_private_method__get_property_list), this method should be implemented to correctly clear the resource's state.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resource_private_method__set_path_cache"></div>
+
+`void` **_set_path_cache** ( path: [`String`](class_string.md) ) virtual[^virtual] const[^const]<div id="class_resource_private_method__set_path_cache"></div>
+
+Sets the resource's path to `path` without involving the resource cache.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -233,6 +260,18 @@ Generates a unique identifier for a resource to be contained inside a [`PackedSc
 
 ---
 
+<div id="_class_resource_method_get_id_for_path"></div>
+
+[`String`](class_string.md) **get_id_for_path** ( path: [`String`](class_string.md) ) const[^const]<div id="class_resource_method_get_id_for_path"></div>
+
+Returns the unique identifier for the resource with the given `path` from the resource cache. If the resource is not loaded and cached, an empty string is returned.
+
+ **Note:** This method is only implemented when running in an editor context. At runtime, it returns an empty string.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_resource_method_get_local_scene"></div>
 
 [`Node`](class_node.md) **get_local_scene** ( ) const[^const]<div id="class_resource_method_get_local_scene"></div>
@@ -248,6 +287,48 @@ If [`resource_local_to_scene`](class_resource.md#class_resource_property_resourc
 [`RID`](class_rid.md) **get_rid** ( ) const[^const]<div id="class_resource_method_get_rid"></div>
 
 Returns the [`RID`](class_rid.md) of this resource (or an empty RID). Many resources (such as [`Texture2D`](class_texture2d.md), [`Mesh`](class_mesh.md), and so on) are high-level abstractions of resources stored in a specialized server ([`DisplayServer`](class_displayserver.md), [`RenderingServer`](class_renderingserver.md), etc.), so this function will return the original [`RID`](class_rid.md).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resource_method_is_built_in"></div>
+
+[`bool`](class_bool.md) **is_built_in** ( ) const[^const]<div id="class_resource_method_is_built_in"></div>
+
+Returns `true` if the resource is built-in (from the engine) or `false` if it is user-defined.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resource_method_reset_state"></div>
+
+`void` **reset_state** ( )<div id="class_resource_method_reset_state"></div>
+
+For resources that use a variable number of properties, either via [`Object._validate_property`](class_object.md#class_object_private_method__validate_property) or [`Object._get_property_list`](class_object.md#class_object_private_method__get_property_list), override [`_reset_state`](class_resource.md#class_resource_private_method__reset_state) to correctly clear the resource's state.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resource_method_set_id_for_path"></div>
+
+`void` **set_id_for_path** ( path: [`String`](class_string.md), id: [`String`](class_string.md) )<div id="class_resource_method_set_id_for_path"></div>
+
+Sets the unique identifier to `id` for the resource with the given `path` in the resource cache. If the unique identifier is empty, the cache entry using `path` is removed if it exists.
+
+ **Note:** This method is only implemented when running in an editor context.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resource_method_set_path_cache"></div>
+
+`void` **set_path_cache** ( path: [`String`](class_string.md) )<div id="class_resource_method_set_path_cache"></div>
+
+Sets the resource's path to `path` without involving the resource cache.
 
 <!-- rst-class:: classref-item-separator -->
 

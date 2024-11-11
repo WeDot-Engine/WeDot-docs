@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationPlayer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationPlayer.xml。 -->
 
 <div id="_class_animationplayer"></div>
 
@@ -51,17 +51,27 @@ Updating the target properties of animations occurs at the process frame.
 | [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) | [`get_process_callback`](class_animationplayer.md#class_animationplayer_method_get_process_callback) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                |
 | [`PackedStringArray`](class_packedstringarray.md)                          | [`get_queue`](class_animationplayer.md#class_animationplayer_method_get_queue) ( )                                                                                                                                                                                                                                                                                                                                                                    |
 | [`NodePath`](class_nodepath.md)                                            | [`get_root`](class_animationplayer.md#class_animationplayer_method_get_root) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                        |
+| [`float`](class_float.md)                                                  | [`get_section_end_time`](class_animationplayer.md#class_animationplayer_method_get_section_end_time) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                |
+| [`float`](class_float.md)                                                  | [`get_section_start_time`](class_animationplayer.md#class_animationplayer_method_get_section_start_time) ( ) const[^const]                                                                                                                                                                                                                                                                                                                            |
+| [`bool`](class_bool.md)                                                    | [`has_section`](class_animationplayer.md#class_animationplayer_method_has_section) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                  |
 | [`bool`](class_bool.md)                                                    | [`is_playing`](class_animationplayer.md#class_animationplayer_method_is_playing) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                    |
 | `void`                                                                     | [`pause`](class_animationplayer.md#class_animationplayer_method_pause) ( )                                                                                                                                                                                                                                                                                                                                                                            |
 | `void`                                                                     | [`play`](class_animationplayer.md#class_animationplayer_method_play) ( name: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false )                                                                                                                                                                                      |
 | `void`                                                                     | [`play_backwards`](class_animationplayer.md#class_animationplayer_method_play_backwards) ( name: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1 )                                                                                                                                                                                                                                                            |
+| `void`                                                                     | [`play_section`](class_animationplayer.md#class_animationplayer_method_play_section) ( name: [`StringName`](class_stringname.md) = &"", start_time: [`float`](class_float.md) = -1, end_time: [`float`](class_float.md) = -1, custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false )                                                                                |
+| `void`                                                                     | [`play_section_backwards`](class_animationplayer.md#class_animationplayer_method_play_section_backwards) ( name: [`StringName`](class_stringname.md) = &"", start_time: [`float`](class_float.md) = -1, end_time: [`float`](class_float.md) = -1, custom_blend: [`float`](class_float.md) = -1 )                                                                                                                                                      |
+| `void`                                                                     | [`play_section_with_markers`](class_animationplayer.md#class_animationplayer_method_play_section_with_markers) ( name: [`StringName`](class_stringname.md) = &"", start_marker: [`StringName`](class_stringname.md) = &"", end_marker: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false )                            |
+| `void`                                                                     | [`play_section_with_markers_backwards`](class_animationplayer.md#class_animationplayer_method_play_section_with_markers_backwards) ( name: [`StringName`](class_stringname.md) = &"", start_marker: [`StringName`](class_stringname.md) = &"", end_marker: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1 )                                                                                                  |
 | `void`                                                                     | [`play_with_capture`](class_animationplayer.md#class_animationplayer_method_play_with_capture) ( name: [`StringName`](class_stringname.md) = &"", duration: [`float`](class_float.md) = -1.0, custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false, trans_type: [TransitionType](#enum_tween_transitiontype) = 0, ease_type: [EaseType](#enum_tween_easetype) = 0 ) |
 | `void`                                                                     | [`queue`](class_animationplayer.md#class_animationplayer_method_queue) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                                                                                                                                                  |
+| `void`                                                                     | [`reset_section`](class_animationplayer.md#class_animationplayer_method_reset_section) ( )                                                                                                                                                                                                                                                                                                                                                            |
 | `void`                                                                     | [`seek`](class_animationplayer.md#class_animationplayer_method_seek) ( seconds: [`float`](class_float.md), update: [`bool`](class_bool.md) = false, update_only: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                    |
 | `void`                                                                     | [`set_blend_time`](class_animationplayer.md#class_animationplayer_method_set_blend_time) ( animation_from: [`StringName`](class_stringname.md), animation_to: [`StringName`](class_stringname.md), sec: [`float`](class_float.md) )                                                                                                                                                                                                                   |
 | `void`                                                                     | [`set_method_call_mode`](class_animationplayer.md#class_animationplayer_method_set_method_call_mode) ( mode: [AnimationMethodCallMode](#enum_animationplayer_animationmethodcallmode) )                                                                                                                                                                                                                                                               |
 | `void`                                                                     | [`set_process_callback`](class_animationplayer.md#class_animationplayer_method_set_process_callback) ( mode: [AnimationProcessCallback](#enum_animationplayer_animationprocesscallback) )                                                                                                                                                                                                                                                             |
 | `void`                                                                     | [`set_root`](class_animationplayer.md#class_animationplayer_method_set_root) ( path: [`NodePath`](class_nodepath.md) )                                                                                                                                                                                                                                                                                                                                |
+| `void`                                                                     | [`set_section`](class_animationplayer.md#class_animationplayer_method_set_section) ( start_time: [`float`](class_float.md) = -1, end_time: [`float`](class_float.md) = -1 )                                                                                                                                                                                                                                                                           |
+| `void`                                                                     | [`set_section_with_markers`](class_animationplayer.md#class_animationplayer_method_set_section_with_markers) ( start_marker: [`StringName`](class_stringname.md) = &"", end_marker: [`StringName`](class_stringname.md) = &"" )                                                                                                                                                                                                                       |
 | `void`                                                                     | [`stop`](class_animationplayer.md#class_animationplayer_method_stop) ( keep_state: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                  |
 
 <!-- rst-class:: classref-section-separator -->
@@ -416,6 +426,36 @@ Returns the node which node path references will travel from.
 
 ---
 
+<div id="_class_animationplayer_method_get_section_end_time"></div>
+
+[`float`](class_float.md) **get_section_end_time** ( ) const[^const]<div id="class_animationplayer_method_get_section_end_time"></div>
+
+Returns the end time of the section currently being played.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animationplayer_method_get_section_start_time"></div>
+
+[`float`](class_float.md) **get_section_start_time** ( ) const[^const]<div id="class_animationplayer_method_get_section_start_time"></div>
+
+Returns the start time of the section currently being played.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animationplayer_method_has_section"></div>
+
+[`bool`](class_bool.md) **has_section** ( ) const[^const]<div id="class_animationplayer_method_has_section"></div>
+
+Returns `true` if an animation is currently playing with section.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_animationplayer_method_is_playing"></div>
 
 [`bool`](class_bool.md) **is_playing** ( ) const[^const]<div id="class_animationplayer_method_is_playing"></div>
@@ -466,6 +506,54 @@ This method is a shorthand for [`play`](class_animationplayer.md#class_animation
 
 ---
 
+<div id="_class_animationplayer_method_play_section"></div>
+
+`void` **play_section** ( name: [`StringName`](class_stringname.md) = &"", start_time: [`float`](class_float.md) = -1, end_time: [`float`](class_float.md) = -1, custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false )<div id="class_animationplayer_method_play_section"></div>
+
+Plays the animation with key `name` and the section starting from `start_time` and ending on `end_time`. See also [`play`](class_animationplayer.md#class_animationplayer_method_play).
+
+Setting `start_time` to a value outside the range of the animation means the start of the animation will be used instead, and setting `end_time` to a value outside the range of the animation means the end of the animation will be used instead. `start_time` cannot be equal to `end_time`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animationplayer_method_play_section_backwards"></div>
+
+`void` **play_section_backwards** ( name: [`StringName`](class_stringname.md) = &"", start_time: [`float`](class_float.md) = -1, end_time: [`float`](class_float.md) = -1, custom_blend: [`float`](class_float.md) = -1 )<div id="class_animationplayer_method_play_section_backwards"></div>
+
+Plays the animation with key `name` and the section starting from `start_time` and ending on `end_time` in reverse.
+
+This method is a shorthand for [`play_section`](class_animationplayer.md#class_animationplayer_method_play_section) with `custom_speed = -1.0` and `from_end = true`, see its description for more information.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animationplayer_method_play_section_with_markers"></div>
+
+`void` **play_section_with_markers** ( name: [`StringName`](class_stringname.md) = &"", start_marker: [`StringName`](class_stringname.md) = &"", end_marker: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false )<div id="class_animationplayer_method_play_section_with_markers"></div>
+
+Plays the animation with key `name` and the section starting from `start_marker` and ending on `end_marker`.
+
+If the start marker is empty, the section starts from the beginning of the animation. If the end marker is empty, the section ends on the end of the animation. See also [`play`](class_animationplayer.md#class_animationplayer_method_play).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animationplayer_method_play_section_with_markers_backwards"></div>
+
+`void` **play_section_with_markers_backwards** ( name: [`StringName`](class_stringname.md) = &"", start_marker: [`StringName`](class_stringname.md) = &"", end_marker: [`StringName`](class_stringname.md) = &"", custom_blend: [`float`](class_float.md) = -1 )<div id="class_animationplayer_method_play_section_with_markers_backwards"></div>
+
+Plays the animation with key `name` and the section starting from `start_marker` and ending on `end_marker` in reverse.
+
+This method is a shorthand for [`play_section_with_markers`](class_animationplayer.md#class_animationplayer_method_play_section_with_markers) with `custom_speed = -1.0` and `from_end = true`, see its description for more information.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_animationplayer_method_play_with_capture"></div>
 
 `void` **play_with_capture** ( name: [`StringName`](class_stringname.md) = &"", duration: [`float`](class_float.md) = -1.0, custom_blend: [`float`](class_float.md) = -1, custom_speed: [`float`](class_float.md) = 1.0, from_end: [`bool`](class_bool.md) = false, trans_type: [TransitionType](#enum_tween_transitiontype) = 0, ease_type: [EaseType](#enum_tween_easetype) = 0 )<div id="class_animationplayer_method_play_with_capture"></div>
@@ -499,6 +587,16 @@ If `duration` is a negative value, the duration is set to the interval between t
 Queues an animation for playback once the current animation and all previously queued animations are done.
 
  **Note:** If a looped animation is currently playing, the queued animation will never play unless the looped animation is stopped somehow.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animationplayer_method_reset_section"></div>
+
+`void` **reset_section** ( )<div id="class_animationplayer_method_reset_section"></div>
+
+Resets the current section if section is set.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -559,6 +657,28 @@ Sets the process notification in which to update animations.
 **已弃用：** Use [`AnimationMixer.root_node`](class_animationmixer.md#class_animationmixer_property_root_node) instead.
 
 Sets the node which node path references will travel from.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animationplayer_method_set_section"></div>
+
+`void` **set_section** ( start_time: [`float`](class_float.md) = -1, end_time: [`float`](class_float.md) = -1 )<div id="class_animationplayer_method_set_section"></div>
+
+Changes the start and end times of the section being played. The current playback position will be clamped within the new section. See also [`play_section`](class_animationplayer.md#class_animationplayer_method_play_section).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animationplayer_method_set_section_with_markers"></div>
+
+`void` **set_section_with_markers** ( start_marker: [`StringName`](class_stringname.md) = &"", end_marker: [`StringName`](class_stringname.md) = &"" )<div id="class_animationplayer_method_set_section_with_markers"></div>
+
+Changes the start and end markers of the section being played. The current playback position will be clamped within the new section. See also [`play_section_with_markers`](class_animationplayer.md#class_animationplayer_method_play_section_with_markers).
+
+If the argument is empty, the section uses the beginning or end of the animation. If both are empty, it means that the section is not set.
 
 <!-- rst-class:: classref-item-separator -->
 

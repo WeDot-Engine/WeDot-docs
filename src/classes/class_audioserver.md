@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioServer.xml。 -->
 
 <div id="_class_audioserver"></div>
 
@@ -41,7 +41,9 @@ Server interface for low-level audio access.
 | [`float`](class_float.md)                             | [`get_bus_peak_volume_right_db`](class_audioserver.md#class_audioserver_method_get_bus_peak_volume_right_db) ( bus_idx: [`int`](class_int.md), channel: [`int`](class_int.md) ) const[^const]                |
 | [`StringName`](class_stringname.md)                   | [`get_bus_send`](class_audioserver.md#class_audioserver_method_get_bus_send) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                                |
 | [`float`](class_float.md)                             | [`get_bus_volume_db`](class_audioserver.md#class_audioserver_method_get_bus_volume_db) ( bus_idx: [`int`](class_int.md) ) const[^const]                                                                      |
+| [`String`](class_string.md)                           | [`get_driver_name`](class_audioserver.md#class_audioserver_method_get_driver_name) ( ) const[^const]                                                                                                         |
 | [`PackedStringArray`](class_packedstringarray.md)     | [`get_input_device_list`](class_audioserver.md#class_audioserver_method_get_input_device_list) ( )                                                                                                           |
+| [`float`](class_float.md)                             | [`get_input_mix_rate`](class_audioserver.md#class_audioserver_method_get_input_mix_rate) ( ) const[^const]                                                                                                   |
 | [`float`](class_float.md)                             | [`get_mix_rate`](class_audioserver.md#class_audioserver_method_get_mix_rate) ( ) const[^const]                                                                                                               |
 | [`PackedStringArray`](class_packedstringarray.md)     | [`get_output_device_list`](class_audioserver.md#class_audioserver_method_get_output_device_list) ( )                                                                                                         |
 | [`float`](class_float.md)                             | [`get_output_latency`](class_audioserver.md#class_audioserver_method_get_output_latency) ( ) const[^const]                                                                                                   |
@@ -362,6 +364,16 @@ Returns the volume of the bus at index `bus_idx` in dB.
 
 ---
 
+<div id="_class_audioserver_method_get_driver_name"></div>
+
+[`String`](class_string.md) **get_driver_name** ( ) const[^const]<div id="class_audioserver_method_get_driver_name"></div>
+
+Returns the name of the current audio driver. The default usually depends on the operating system, but may be overridden via the `--audio-driver` [*command line argument*](../tutorials/editor/command_line_tutorial). `--headless` also automatically sets the audio driver to `Dummy`. See also [`ProjectSettings.audio/driver/driver`](class_projectsettings.md#class_projectsettings_property_audio/driver/driver).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_audioserver_method_get_input_device_list"></div>
 
 [`PackedStringArray`](class_packedstringarray.md) **get_input_device_list** ( )<div id="class_audioserver_method_get_input_device_list"></div>
@@ -369,6 +381,16 @@ Returns the volume of the bus at index `bus_idx` in dB.
 Returns the names of all audio input devices detected on the system.
 
  **Note:** [`ProjectSettings.audio/driver/enable_input`](class_projectsettings.md#class_projectsettings_property_audio/driver/enable_input) must be `true` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audioserver_method_get_input_mix_rate"></div>
+
+[`float`](class_float.md) **get_input_mix_rate** ( ) const[^const]<div id="class_audioserver_method_get_input_mix_rate"></div>
+
+Returns the sample rate at the input of the **AudioServer**.
 
 <!-- rst-class:: classref-item-separator -->
 

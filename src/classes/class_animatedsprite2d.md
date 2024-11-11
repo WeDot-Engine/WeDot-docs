@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimatedSprite2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimatedSprite2D.xml。 -->
 
 <div id="_class_animatedsprite2d"></div>
 
@@ -300,17 +300,14 @@ This method is a shorthand for [`play`](class_animatedsprite2d.md#class_animated
 
 `void` **set_frame_and_progress** ( frame: [`int`](class_int.md), progress: [`float`](class_float.md) )<div id="class_animatedsprite2d_method_set_frame_and_progress"></div>
 
-The setter of [`frame`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame) resets the [`frame_progress`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame_progress) to `0.0` implicitly, but this method avoids that.
+Sets [`frame`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame) the [`frame_progress`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame_progress) to the given values. Unlike setting [`frame`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame), this method does not reset the [`frame_progress`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame_progress) to `0.0` implicitly.
 
-This is useful when you want to carry over the current [`frame_progress`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame_progress) to another [`frame`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame).
-
- **Example:** 
+ **Example:** Change the animation while keeping the same [`frame`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame) and [`frame_progress`](class_animatedsprite2d.md#class_animatedsprite2d_property_frame_progress).
 
 
 
 ```gdscript
 
-    # Change the animation with keeping the frame index and progress.
     var current_frame = animated_sprite.get_frame()
     var current_progress = animated_sprite.get_frame_progress()
     animated_sprite.play("walk_another_skin")

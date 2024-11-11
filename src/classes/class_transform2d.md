@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Transform2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Transform2D.xml。 -->
 
 <div id="_class_transform2d"></div>
 
@@ -95,7 +95,7 @@ The identity **Transform2D**. A transform with no translation, no rotation, and 
 
 - The [`x`](class_transform2d.md#class_transform2d_property_x) points right ([`Vector2.RIGHT`](class_vector2.md#class_vector2_constant_right));
 
-- The [`y`](class_transform2d.md#class_transform2d_property_y) points up ([`Vector2.UP`](class_vector2.md#class_vector2_constant_up)).
+- The [`y`](class_transform2d.md#class_transform2d_property_y) points down ([`Vector2.DOWN`](class_vector2.md#class_vector2_constant_down)).
 
 ```
 
@@ -163,7 +163,7 @@ On the identity transform, this vector points right ([`Vector2.RIGHT`](class_vec
 
 The transform basis's Y axis, and the column `1` of the matrix. Combined with [`x`](class_transform2d.md#class_transform2d_property_x), this represents the transform's rotation, scale, and skew.
 
-On the identity transform, this vector points up ([`Vector2.UP`](class_vector2.md#class_vector2_constant_up)).
+On the identity transform, this vector points down ([`Vector2.DOWN`](class_vector2.md#class_vector2_constant_down)).
 
 <!-- rst-class:: classref-section-separator -->
 

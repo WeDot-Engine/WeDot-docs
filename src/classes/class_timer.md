@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Timer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Timer.xml。 -->
 
 <div id="_class_timer"></div>
 
@@ -189,7 +189,7 @@ Returns `true` if the timer is stopped or has not started.
 
 `void` **start** ( time_sec: [`float`](class_float.md) = -1 )<div id="class_timer_method_start"></div>
 
-Starts the timer, if it was not started already. Fails if the timer is not inside the tree. If `time_sec` is greater than `0`, this value is used for the [`wait_time`](class_timer.md#class_timer_property_wait_time).
+Starts the timer, or resets the timer if it was started already. Fails if the timer is not inside the tree. If `time_sec` is greater than `0`, this value is used for the [`wait_time`](class_timer.md#class_timer_property_wait_time).
 
  **Note:** This method does not resume a paused timer. See [`paused`](class_timer.md#class_timer_property_paused).
 

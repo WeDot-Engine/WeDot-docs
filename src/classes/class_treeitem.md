@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TreeItem.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TreeItem.xml。 -->
 
 <div id="_class_treeitem"></div>
 
@@ -40,6 +40,7 @@ To create a **TreeItem**, use [`Tree.create_item`](class_tree.md#class_tree_meth
 | [`TreeItem`](class_treeitem.md)                               | [`create_child`](class_treeitem.md#class_treeitem_method_create_child) ( index: [`int`](class_int.md) = -1 )                                                                                                                                                               |
 | `void`                                                        | [`deselect`](class_treeitem.md#class_treeitem_method_deselect) ( column: [`int`](class_int.md) )                                                                                                                                                                           |
 | `void`                                                        | [`erase_button`](class_treeitem.md#class_treeitem_method_erase_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) )                                                                                                                              |
+| [AutoTranslateMode](#enum_node_autotranslatemode)             | [`get_auto_translate_mode`](class_treeitem.md#class_treeitem_method_get_auto_translate_mode) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                               |
 | [AutowrapMode](#enum_textserver_autowrapmode)                 | [`get_autowrap_mode`](class_treeitem.md#class_treeitem_method_get_autowrap_mode) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
 | [`Texture2D`](class_texture2d.md)                             | [`get_button`](class_treeitem.md#class_treeitem_method_get_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) ) const[^const]                                                                                                                    |
 | [`int`](class_int.md)                                         | [`get_button_by_id`](class_treeitem.md#class_treeitem_method_get_button_by_id) ( column: [`int`](class_int.md), id: [`int`](class_int.md) ) const[^const]                                                                                                                  |
@@ -61,6 +62,7 @@ To create a **TreeItem**, use [`Tree.create_item`](class_tree.md#class_tree_meth
 | [`Texture2D`](class_texture2d.md)                             | [`get_icon`](class_treeitem.md#class_treeitem_method_get_icon) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                             |
 | [`int`](class_int.md)                                         | [`get_icon_max_width`](class_treeitem.md#class_treeitem_method_get_icon_max_width) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                         |
 | [`Color`](class_color.md)                                     | [`get_icon_modulate`](class_treeitem.md#class_treeitem_method_get_icon_modulate) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
+| [`Texture2D`](class_texture2d.md)                             | [`get_icon_overlay`](class_treeitem.md#class_treeitem_method_get_icon_overlay) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                             |
 | [`Rect2`](class_rect2.md)                                     | [`get_icon_region`](class_treeitem.md#class_treeitem_method_get_icon_region) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
 | [`int`](class_int.md)                                         | [`get_index`](class_treeitem.md#class_treeitem_method_get_index) ( )                                                                                                                                                                                                       |
 | [`String`](class_string.md)                                   | [`get_language`](class_treeitem.md#class_treeitem_method_get_language) ( column: [`int`](class_int.md) ) const[^const]                                                                                                                                                     |
@@ -98,6 +100,7 @@ To create a **TreeItem**, use [`Tree.create_item`](class_tree.md#class_tree_meth
 | `void`                                                        | [`propagate_check`](class_treeitem.md#class_treeitem_method_propagate_check) ( column: [`int`](class_int.md), emit_signal: [`bool`](class_bool.md) = true )                                                                                                                |
 | `void`                                                        | [`remove_child`](class_treeitem.md#class_treeitem_method_remove_child) ( child: [`TreeItem`](class_treeitem.md) )                                                                                                                                                          |
 | `void`                                                        | [`select`](class_treeitem.md#class_treeitem_method_select) ( column: [`int`](class_int.md) )                                                                                                                                                                               |
+| `void`                                                        | [`set_auto_translate_mode`](class_treeitem.md#class_treeitem_method_set_auto_translate_mode) ( column: [`int`](class_int.md), mode: [AutoTranslateMode](#enum_node_autotranslatemode) )                                                                                    |
 | `void`                                                        | [`set_autowrap_mode`](class_treeitem.md#class_treeitem_method_set_autowrap_mode) ( column: [`int`](class_int.md), autowrap_mode: [AutowrapMode](#enum_textserver_autowrapmode) )                                                                                           |
 | `void`                                                        | [`set_button`](class_treeitem.md#class_treeitem_method_set_button) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), button: [`Texture2D`](class_texture2d.md) )                                                                                       |
 | `void`                                                        | [`set_button_color`](class_treeitem.md#class_treeitem_method_set_button_color) ( column: [`int`](class_int.md), button_index: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                    |
@@ -119,6 +122,7 @@ To create a **TreeItem**, use [`Tree.create_item`](class_tree.md#class_tree_meth
 | `void`                                                        | [`set_icon`](class_treeitem.md#class_treeitem_method_set_icon) ( column: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )                                                                                                                               |
 | `void`                                                        | [`set_icon_max_width`](class_treeitem.md#class_treeitem_method_set_icon_max_width) ( column: [`int`](class_int.md), width: [`int`](class_int.md) )                                                                                                                         |
 | `void`                                                        | [`set_icon_modulate`](class_treeitem.md#class_treeitem_method_set_icon_modulate) ( column: [`int`](class_int.md), modulate: [`Color`](class_color.md) )                                                                                                                    |
+| `void`                                                        | [`set_icon_overlay`](class_treeitem.md#class_treeitem_method_set_icon_overlay) ( column: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )                                                                                                               |
 | `void`                                                        | [`set_icon_region`](class_treeitem.md#class_treeitem_method_set_icon_region) ( column: [`int`](class_int.md), region: [`Rect2`](class_rect2.md) )                                                                                                                          |
 | `void`                                                        | [`set_indeterminate`](class_treeitem.md#class_treeitem_method_set_indeterminate) ( column: [`int`](class_int.md), indeterminate: [`bool`](class_bool.md) )                                                                                                                 |
 | `void`                                                        | [`set_language`](class_treeitem.md#class_treeitem_method_set_language) ( column: [`int`](class_int.md), language: [`String`](class_string.md) )                                                                                                                            |
@@ -150,13 +154,13 @@ enum **TreeCellMode**: <div id="enum_treeitem_treecellmode"></div>
 
 [TreeCellMode](#enum_treeitem_treecellmode) **CELL_MODE_STRING** = ``0``
 
-Cell shows a string label. When editable, the text can be edited using a [`LineEdit`](class_lineedit.md), or a [`TextEdit`](class_textedit.md) popup if [`set_edit_multiline`](class_treeitem.md#class_treeitem_method_set_edit_multiline) is used.
+Cell shows a string label, optionally with an icon. When editable, the text can be edited using a [`LineEdit`](class_lineedit.md), or a [`TextEdit`](class_textedit.md) popup if [`set_edit_multiline`](class_treeitem.md#class_treeitem_method_set_edit_multiline) is used.
 
 <div id="_class_treeitem_constant_cell_mode_check"></div>
 
 [TreeCellMode](#enum_treeitem_treecellmode) **CELL_MODE_CHECK** = ``1``
 
-Cell shows a checkbox, optionally with text. The checkbox can be pressed, released, or indeterminate (via [`set_indeterminate`](class_treeitem.md#class_treeitem_method_set_indeterminate)). The checkbox can't be clicked unless the cell is editable.
+Cell shows a checkbox, optionally with text and an icon. The checkbox can be pressed, released, or indeterminate (via [`set_indeterminate`](class_treeitem.md#class_treeitem_method_set_indeterminate)). The checkbox can't be clicked unless the cell is editable.
 
 <div id="_class_treeitem_constant_cell_mode_range"></div>
 
@@ -170,7 +174,7 @@ This cell can also be used in a text dropdown mode when you assign a text with [
 
 [TreeCellMode](#enum_treeitem_treecellmode) **CELL_MODE_ICON** = ``3``
 
-Cell shows an icon. It can't be edited nor display text.
+Cell shows an icon. It can't be edited nor display text. The icon is always centered within the cell.
 
 <div id="_class_treeitem_constant_cell_mode_custom"></div>
 
@@ -246,7 +250,7 @@ Note that if a **TreeItem** is set to not be visible, none of its children will 
 
 `void` **add_button** ( column: [`int`](class_int.md), button: [`Texture2D`](class_texture2d.md), id: [`int`](class_int.md) = -1, disabled: [`bool`](class_bool.md) = false, tooltip_text: [`String`](class_string.md) = "" )<div id="class_treeitem_method_add_button"></div>
 
-Adds a button with [`Texture2D`](class_texture2d.md) `button` at column `column`. The `id` is used to identify the button in the according [`Tree.button_clicked`](class_tree.md#class_tree_signal_button_clicked) signal and can be different from the buttons index. If not specified, the next available index is used, which may be retrieved by calling [`get_button_count`](class_treeitem.md#class_treeitem_method_get_button_count) immediately before this method. Optionally, the button can be `disabled` and have a `tooltip_text`.
+Adds a button with [`Texture2D`](class_texture2d.md) `button` to the end of the cell at column `column`. The `id` is used to identify the button in the according [`Tree.button_clicked`](class_tree.md#class_tree_signal_button_clicked) signal and can be different from the buttons index. If not specified, the next available index is used, which may be retrieved by calling [`get_button_count`](class_treeitem.md#class_treeitem_method_get_button_count) immediately before this method. Optionally, the button can be `disabled` and have a `tooltip_text`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -319,6 +323,16 @@ Deselects the given column.
 `void` **erase_button** ( column: [`int`](class_int.md), button_index: [`int`](class_int.md) )<div id="class_treeitem_method_erase_button"></div>
 
 Removes the button at index `button_index` in column `column`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_treeitem_method_get_auto_translate_mode"></div>
+
+[AutoTranslateMode](#enum_node_autotranslatemode) **get_auto_translate_mode** ( column: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_get_auto_translate_mode"></div>
+
+Returns the column's auto translate mode.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -531,6 +545,16 @@ Returns the maximum allowed width of the icon in the given `column`.
 [`Color`](class_color.md) **get_icon_modulate** ( column: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_get_icon_modulate"></div>
 
 Returns the [`Color`](class_color.md) modulating the column's icon.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_treeitem_method_get_icon_overlay"></div>
+
+[`Texture2D`](class_texture2d.md) **get_icon_overlay** ( column: [`int`](class_int.md) ) const[^const]<div id="class_treeitem_method_get_icon_overlay"></div>
+
+Returns the given column's icon overlay [`Texture2D`](class_texture2d.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -922,6 +946,18 @@ Selects the given `column`.
 
 ---
 
+<div id="_class_treeitem_method_set_auto_translate_mode"></div>
+
+`void` **set_auto_translate_mode** ( column: [`int`](class_int.md), mode: [AutoTranslateMode](#enum_node_autotranslatemode) )<div id="class_treeitem_method_set_auto_translate_mode"></div>
+
+Sets the given column's auto translate mode to `mode`.
+
+All columns use [`Node.AUTO_TRANSLATE_MODE_INHERIT`](class_node.md#class_node_constant_auto_translate_mode_inherit) by default, which uses the same auto translate mode as the [`Tree`](class_tree.md) itself.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_treeitem_method_set_autowrap_mode"></div>
 
 `void` **set_autowrap_mode** ( column: [`int`](class_int.md), autowrap_mode: [AutowrapMode](#enum_textserver_autowrapmode) )<div id="class_treeitem_method_set_autowrap_mode"></div>
@@ -1114,7 +1150,7 @@ If `enable` is `true`, the given `column` is expanded to the right.
 
 `void` **set_icon** ( column: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )<div id="class_treeitem_method_set_icon"></div>
 
-Sets the given cell's icon [`Texture2D`](class_texture2d.md). The cell has to be in [`CELL_MODE_ICON`](class_treeitem.md#class_treeitem_constant_cell_mode_icon) mode.
+Sets the given cell's icon [`Texture2D`](class_texture2d.md). If the cell is in [`CELL_MODE_ICON`](class_treeitem.md#class_treeitem_constant_cell_mode_icon) mode, the icon is displayed in the center of the cell. Otherwise, the icon is displayed before the cell's text. [`CELL_MODE_RANGE`](class_treeitem.md#class_treeitem_constant_cell_mode_range) does not display an icon.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1135,6 +1171,16 @@ Sets the maximum allowed width of the icon in the given `column`. This limit is 
 `void` **set_icon_modulate** ( column: [`int`](class_int.md), modulate: [`Color`](class_color.md) )<div id="class_treeitem_method_set_icon_modulate"></div>
 
 Modulates the given column's icon with `modulate`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_treeitem_method_set_icon_overlay"></div>
+
+`void` **set_icon_overlay** ( column: [`int`](class_int.md), texture: [`Texture2D`](class_texture2d.md) )<div id="class_treeitem_method_set_icon_overlay"></div>
+
+Sets the given cell's icon overlay [`Texture2D`](class_texture2d.md). The cell has to be in [`CELL_MODE_ICON`](class_treeitem.md#class_treeitem_constant_cell_mode_icon) mode, and icon has to be set. Overlay is drawn on top of icon, in the bottom left corner.
 
 <!-- rst-class:: classref-item-separator -->
 

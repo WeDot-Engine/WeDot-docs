@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Light3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Light3D.xml。 -->
 
 <div id="_class_light3d"></div>
 
@@ -42,6 +42,7 @@ Light3D is the *abstract* base class for light nodes. As it can't be instantiate
 | [`float`](class_float.md)          | [`light_volumetric_fog_energy`](class_light3d.md#class_light3d_property_light_volumetric_fog_energy) | ``1.0``               |
 | [`float`](class_float.md)          | [`shadow_bias`](class_light3d.md#class_light3d_property_shadow_bias)                                 | ``0.1``               |
 | [`float`](class_float.md)          | [`shadow_blur`](class_light3d.md#class_light3d_property_shadow_blur)                                 | ``1.0``               |
+| [`int`](class_int.md)              | [`shadow_caster_mask`](class_light3d.md#class_light3d_property_shadow_caster_mask)                   | ``4294967295``        |
 | [`bool`](class_bool.md)            | [`shadow_enabled`](class_light3d.md#class_light3d_property_shadow_enabled)                           | ``false``             |
 | [`float`](class_float.md)          | [`shadow_normal_bias`](class_light3d.md#class_light3d_property_shadow_normal_bias)                   | ``2.0``               |
 | [`float`](class_float.md)          | [`shadow_opacity`](class_light3d.md#class_light3d_property_shadow_opacity)                           | ``1.0``               |
@@ -536,6 +537,19 @@ Used to adjust shadow appearance. Too small a value results in self-shadowing ("
 - [`float`](class_float.md) **get_param** ( param: [Param](#enum_light3d_param) ) const[^const]
 
 Blurs the edges of the shadow. Can be used to hide pixel artifacts in low-resolution shadow maps. A high value can impact performance, make shadows appear grainy and can cause other unwanted artifacts. Try to keep as near default as possible.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_light3d_property_shadow_caster_mask"></div>
+
+[`int`](class_int.md) **shadow_caster_mask** = ``4294967295`` <div id="class_light3d_property_shadow_caster_mask"></div>
+
+- `void` **set_shadow_caster_mask** ( value: [`int`](class_int.md) )
+- [`int`](class_int.md) **get_shadow_caster_mask** ( )
+
+The light will only cast shadows using objects in the selected layers.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationMixer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationMixer.xml。 -->
 
 <div id="_class_animationmixer"></div>
 
@@ -207,7 +207,31 @@ An [`Animation.UPDATE_CONTINUOUS`](class_animation.md#class_animation_constant_u
 
 Always treat the [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete) track value as [`Animation.UPDATE_CONTINUOUS`](class_animation.md#class_animation_constant_update_continuous) with [`Animation.INTERPOLATION_NEAREST`](class_animation.md#class_animation_constant_interpolation_nearest). This is the default behavior for [`AnimationTree`](class_animationtree.md).
 
-If a value track has non-numeric type key values, it is internally converted to use [`ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_discrete_recessive) with [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete).
+If a value track has un-interpolatable type key values, it is internally converted to use [`ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE`](class_animationmixer.md#class_animationmixer_constant_animation_callback_mode_discrete_recessive) with [`Animation.UPDATE_DISCRETE`](class_animation.md#class_animation_constant_update_discrete).
+
+Un-interpolatable type list:
+
+- [`@GlobalScope.TYPE_NIL`](class_@globalscope.md#class_@globalscope_constant_type_nil) 
+
+- [`@GlobalScope.TYPE_NODE_PATH`](class_@globalscope.md#class_@globalscope_constant_type_node_path) 
+
+- [`@GlobalScope.TYPE_RID`](class_@globalscope.md#class_@globalscope_constant_type_rid) 
+
+- [`@GlobalScope.TYPE_OBJECT`](class_@globalscope.md#class_@globalscope_constant_type_object) 
+
+- [`@GlobalScope.TYPE_CALLABLE`](class_@globalscope.md#class_@globalscope_constant_type_callable) 
+
+- [`@GlobalScope.TYPE_SIGNAL`](class_@globalscope.md#class_@globalscope_constant_type_signal) 
+
+- [`@GlobalScope.TYPE_DICTIONARY`](class_@globalscope.md#class_@globalscope_constant_type_dictionary) 
+
+- [`@GlobalScope.TYPE_PACKED_BYTE_ARRAY`](class_@globalscope.md#class_@globalscope_constant_type_packed_byte_array) 
+
+ [`@GlobalScope.TYPE_BOOL`](class_@globalscope.md#class_@globalscope_constant_type_bool) and [`@GlobalScope.TYPE_INT`](class_@globalscope.md#class_@globalscope_constant_type_int) are treated as [`@GlobalScope.TYPE_FLOAT`](class_@globalscope.md#class_@globalscope_constant_type_float) during blending and rounded when the result is retrieved.
+
+It is same for arrays and vectors with them such as [`@GlobalScope.TYPE_PACKED_INT32_ARRAY`](class_@globalscope.md#class_@globalscope_constant_type_packed_int32_array) or [`@GlobalScope.TYPE_VECTOR2I`](class_@globalscope.md#class_@globalscope_constant_type_vector2i), they are treated as [`@GlobalScope.TYPE_PACKED_FLOAT32_ARRAY`](class_@globalscope.md#class_@globalscope_constant_type_packed_float32_array) or [`@GlobalScope.TYPE_VECTOR2`](class_@globalscope.md#class_@globalscope_constant_type_vector2). Also note that for arrays, the size is also interpolated.
+
+ [`@GlobalScope.TYPE_STRING`](class_@globalscope.md#class_@globalscope_constant_type_string) and [`@GlobalScope.TYPE_STRING_NAME`](class_@globalscope.md#class_@globalscope_constant_type_string_name) are interpolated between character codes and lengths, but note that there is a difference in algorithm between interpolation between keys and interpolation by blending.
 
 <!-- rst-class:: classref-section-separator -->
 

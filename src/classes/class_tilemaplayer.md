@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TileMapLayer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TileMapLayer.xml。 -->
 
 <div id="_class_tilemaplayer"></div>
 
@@ -28,6 +28,7 @@ To force an update earlier on, call [`update_internals`](class_tilemaplayer.md#c
 | [`bool`](class_bool.md)                                       | [`enabled`](class_tilemaplayer.md#class_tilemaplayer_property_enabled)                                       | ``true``              |
 | [`bool`](class_bool.md)                                       | [`navigation_enabled`](class_tilemaplayer.md#class_tilemaplayer_property_navigation_enabled)                 | ``true``              |
 | [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) | [`navigation_visibility_mode`](class_tilemaplayer.md#class_tilemaplayer_property_navigation_visibility_mode) | ``0``                 |
+| [`bool`](class_bool.md)                                       | [`occlusion_enabled`](class_tilemaplayer.md#class_tilemaplayer_property_occlusion_enabled)                   | ``true``              |
 | [`int`](class_int.md)                                         | [`rendering_quadrant_size`](class_tilemaplayer.md#class_tilemaplayer_property_rendering_quadrant_size)       | ``16``                |
 | [`PackedByteArray`](class_packedbytearray.md)                 | [`tile_map_data`](class_tilemaplayer.md#class_tilemaplayer_property_tile_map_data)                           | ``PackedByteArray()`` |
 | [`TileSet`](class_tileset.md)                                 | [`tile_set`](class_tilemaplayer.md#class_tilemaplayer_property_tile_set)                                     |                       |
@@ -57,6 +58,9 @@ To force an update earlier on, call [`update_internals`](class_tilemaplayer.md#c
 | [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells_by_id`](class_tilemaplayer.md#class_tilemaplayer_method_get_used_cells_by_id) ( source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 ) const[^const]                                 |
 | [`Rect2i`](class_rect2i.md)                             | [`get_used_rect`](class_tilemaplayer.md#class_tilemaplayer_method_get_used_rect) ( ) const[^const]                                                                                                                                                                                                     |
 | [`bool`](class_bool.md)                                 | [`has_body_rid`](class_tilemaplayer.md#class_tilemaplayer_method_has_body_rid) ( body: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                           |
+| [`bool`](class_bool.md)                                 | [`is_cell_flipped_h`](class_tilemaplayer.md#class_tilemaplayer_method_is_cell_flipped_h) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                     |
+| [`bool`](class_bool.md)                                 | [`is_cell_flipped_v`](class_tilemaplayer.md#class_tilemaplayer_method_is_cell_flipped_v) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                     |
+| [`bool`](class_bool.md)                                 | [`is_cell_transposed`](class_tilemaplayer.md#class_tilemaplayer_method_is_cell_transposed) ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                   |
 | [`Vector2i`](class_vector2i.md)                         | [`local_to_map`](class_tilemaplayer.md#class_tilemaplayer_method_local_to_map) ( local_position: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                         |
 | [`Vector2i`](class_vector2i.md)                         | [`map_pattern`](class_tilemaplayer.md#class_tilemaplayer_method_map_pattern) ( position_in_tilemap: [`Vector2i`](class_vector2i.md), coords_in_pattern: [`Vector2i`](class_vector2i.md), pattern: [`TileMapPattern`](class_tilemappattern.md) )                                                        |
 | [`Vector2`](class_vector2.md)                           | [`map_to_local`](class_tilemaplayer.md#class_tilemaplayer_method_map_to_local) ( map_position: [`Vector2i`](class_vector2i.md) ) const[^const]                                                                                                                                                         |
@@ -176,6 +180,19 @@ If `true`, navigation regions are enabled.
 - [DebugVisibilityMode](#enum_tilemaplayer_debugvisibilitymode) **get_navigation_visibility_mode** ( )
 
 Show or hide the **TileMapLayer**'s navigation meshes. If set to [`DEBUG_VISIBILITY_MODE_DEFAULT`](class_tilemaplayer.md#class_tilemaplayer_constant_debug_visibility_mode_default), this depends on the show navigation debug settings.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tilemaplayer_property_occlusion_enabled"></div>
+
+[`bool`](class_bool.md) **occlusion_enabled** = ``true`` <div id="class_tilemaplayer_property_occlusion_enabled"></div>
+
+- `void` **set_occlusion_enabled** ( value: [`bool`](class_bool.md) )
+- [`bool`](class_bool.md) **is_occlusion_enabled** ( )
+
+Enable or disable light occlusion.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -471,6 +488,36 @@ Returns a rectangle enclosing the used (non-empty) tiles of the map.
 [`bool`](class_bool.md) **has_body_rid** ( body: [`RID`](class_rid.md) ) const[^const]<div id="class_tilemaplayer_method_has_body_rid"></div>
 
 Returns whether the provided `body` [`RID`](class_rid.md) belongs to one of this **TileMapLayer**'s cells.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tilemaplayer_method_is_cell_flipped_h"></div>
+
+[`bool`](class_bool.md) **is_cell_flipped_h** ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]<div id="class_tilemaplayer_method_is_cell_flipped_h"></div>
+
+Returns `true` if the cell at coordinates `coords` is flipped horizontally. The result is valid only for atlas sources.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tilemaplayer_method_is_cell_flipped_v"></div>
+
+[`bool`](class_bool.md) **is_cell_flipped_v** ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]<div id="class_tilemaplayer_method_is_cell_flipped_v"></div>
+
+Returns `true` if the cell at coordinates `coords` is flipped vertically. The result is valid only for atlas sources.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tilemaplayer_method_is_cell_transposed"></div>
+
+[`bool`](class_bool.md) **is_cell_transposed** ( coords: [`Vector2i`](class_vector2i.md) ) const[^const]<div id="class_tilemaplayer_method_is_cell_transposed"></div>
+
+Returns `true` if the cell at coordinates `coords` is transposed. The result is valid only for atlas sources.
 
 <!-- rst-class:: classref-item-separator -->
 

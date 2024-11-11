@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderingServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderingServer.xml。 -->
 
 <div id="_class_renderingserver"></div>
 
@@ -79,6 +79,7 @@ Similarly, in 2D, a canvas is needed to draw all canvas items.
 | `void`                                                                       | [`canvas_item_add_texture_rect`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_texture_rect) ( item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md), texture: [`RID`](class_rid.md), tile: [`bool`](class_bool.md) = false, modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1), transpose: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                         |
 | `void`                                                                       | [`canvas_item_add_texture_rect_region`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_texture_rect_region) ( item: [`RID`](class_rid.md), rect: [`Rect2`](class_rect2.md), texture: [`RID`](class_rid.md), src_rect: [`Rect2`](class_rect2.md), modulate: [`Color`](class_color.md) = Color(1, 1, 1, 1), transpose: [`bool`](class_bool.md) = false, clip_uv: [`bool`](class_bool.md) = true )                                                                                                                                                                                                                                                                                    |
 | `void`                                                                       | [`canvas_item_add_triangle_array`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_triangle_array) ( item: [`RID`](class_rid.md), indices: [`PackedInt32Array`](class_packedint32array.md), points: [`PackedVector2Array`](class_packedvector2array.md), colors: [`PackedColorArray`](class_packedcolorarray.md), uvs: [`PackedVector2Array`](class_packedvector2array.md) = PackedVector2Array(), bones: [`PackedInt32Array`](class_packedint32array.md) = PackedInt32Array(), weights: [`PackedFloat32Array`](class_packedfloat32array.md) = PackedFloat32Array(), texture: [`RID`](class_rid.md) = RID(), count: [`int`](class_int.md) = -1 )                                    |
+| `void`                                                                       | [`canvas_item_attach_skeleton`](class_renderingserver.md#class_renderingserver_method_canvas_item_attach_skeleton) ( item: [`RID`](class_rid.md), skeleton: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `void`                                                                       | [`canvas_item_clear`](class_renderingserver.md#class_renderingserver_method_canvas_item_clear) ( item: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | [`RID`](class_rid.md)                                                        | [`canvas_item_create`](class_renderingserver.md#class_renderingserver_method_canvas_item_create) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | `void`                                                                       | [`canvas_item_reset_physics_interpolation`](class_renderingserver.md#class_renderingserver_method_canvas_item_reset_physics_interpolation) ( item: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -182,6 +183,7 @@ Similarly, in 2D, a canvas is needed to draw all canvas items.
 | `void`                                                                       | [`environment_set_background`](class_renderingserver.md#class_renderingserver_method_environment_set_background) ( env: [`RID`](class_rid.md), bg: [EnvironmentBG](#enum_renderingserver_environmentbg) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `void`                                                                       | [`environment_set_bg_color`](class_renderingserver.md#class_renderingserver_method_environment_set_bg_color) ( env: [`RID`](class_rid.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `void`                                                                       | [`environment_set_bg_energy`](class_renderingserver.md#class_renderingserver_method_environment_set_bg_energy) ( env: [`RID`](class_rid.md), multiplier: [`float`](class_float.md), exposure_value: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `void`                                                                       | [`environment_set_camera_id`](class_renderingserver.md#class_renderingserver_method_environment_set_camera_id) ( env: [`RID`](class_rid.md), id: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `void`                                                                       | [`environment_set_canvas_max_layer`](class_renderingserver.md#class_renderingserver_method_environment_set_canvas_max_layer) ( env: [`RID`](class_rid.md), max_layer: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `void`                                                                       | [`environment_set_fog`](class_renderingserver.md#class_renderingserver_method_environment_set_fog) ( env: [`RID`](class_rid.md), enable: [`bool`](class_bool.md), light_color: [`Color`](class_color.md), light_energy: [`float`](class_float.md), sun_scatter: [`float`](class_float.md), density: [`float`](class_float.md), height: [`float`](class_float.md), height_density: [`float`](class_float.md), aerial_perspective: [`float`](class_float.md), sky_affect: [`float`](class_float.md), fog_mode: [EnvironmentFogMode](#enum_renderingserver_environmentfogmode) = 0 )                                                                                                                         |
 | `void`                                                                       | [`environment_set_glow`](class_renderingserver.md#class_renderingserver_method_environment_set_glow) ( env: [`RID`](class_rid.md), enable: [`bool`](class_bool.md), levels: [`PackedFloat32Array`](class_packedfloat32array.md), intensity: [`float`](class_float.md), strength: [`float`](class_float.md), mix: [`float`](class_float.md), bloom_threshold: [`float`](class_float.md), blend_mode: [EnvironmentGlowBlendMode](#enum_renderingserver_environmentglowblendmode), hdr_bleed_threshold: [`float`](class_float.md), hdr_bleed_scale: [`float`](class_float.md), hdr_luminance_cap: [`float`](class_float.md), glow_map_strength: [`float`](class_float.md), glow_map: [`RID`](class_rid.md) ) |
@@ -247,11 +249,13 @@ Similarly, in 2D, a canvas is needed to draw all canvas items.
 | `void`                                                                       | [`instance_geometry_set_shader_parameter`](class_renderingserver.md#class_renderingserver_method_instance_geometry_set_shader_parameter) ( instance: [`RID`](class_rid.md), parameter: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `void`                                                                       | [`instance_geometry_set_transparency`](class_renderingserver.md#class_renderingserver_method_instance_geometry_set_transparency) ( instance: [`RID`](class_rid.md), transparency: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `void`                                                                       | [`instance_geometry_set_visibility_range`](class_renderingserver.md#class_renderingserver_method_instance_geometry_set_visibility_range) ( instance: [`RID`](class_rid.md), min: [`float`](class_float.md), max: [`float`](class_float.md), min_margin: [`float`](class_float.md), max_margin: [`float`](class_float.md), fade_mode: [VisibilityRangeFadeMode](#enum_renderingserver_visibilityrangefademode) )                                                                                                                                                                                                                                                                                           |
+| `void`                                                                       | [`instance_reset_physics_interpolation`](class_renderingserver.md#class_renderingserver_method_instance_reset_physics_interpolation) ( instance: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `void`                                                                       | [`instance_set_base`](class_renderingserver.md#class_renderingserver_method_instance_set_base) ( instance: [`RID`](class_rid.md), base: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `void`                                                                       | [`instance_set_blend_shape_weight`](class_renderingserver.md#class_renderingserver_method_instance_set_blend_shape_weight) ( instance: [`RID`](class_rid.md), shape: [`int`](class_int.md), weight: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `void`                                                                       | [`instance_set_custom_aabb`](class_renderingserver.md#class_renderingserver_method_instance_set_custom_aabb) ( instance: [`RID`](class_rid.md), aabb: [`AABB`](class_aabb.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `void`                                                                       | [`instance_set_extra_visibility_margin`](class_renderingserver.md#class_renderingserver_method_instance_set_extra_visibility_margin) ( instance: [`RID`](class_rid.md), margin: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `void`                                                                       | [`instance_set_ignore_culling`](class_renderingserver.md#class_renderingserver_method_instance_set_ignore_culling) ( instance: [`RID`](class_rid.md), enabled: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `void`                                                                       | [`instance_set_interpolated`](class_renderingserver.md#class_renderingserver_method_instance_set_interpolated) ( instance: [`RID`](class_rid.md), interpolated: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `void`                                                                       | [`instance_set_layer_mask`](class_renderingserver.md#class_renderingserver_method_instance_set_layer_mask) ( instance: [`RID`](class_rid.md), mask: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `void`                                                                       | [`instance_set_pivot_data`](class_renderingserver.md#class_renderingserver_method_instance_set_pivot_data) ( instance: [`RID`](class_rid.md), sorting_offset: [`float`](class_float.md), use_aabb_center: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `void`                                                                       | [`instance_set_scenario`](class_renderingserver.md#class_renderingserver_method_instance_set_scenario) ( instance: [`RID`](class_rid.md), scenario: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -278,6 +282,7 @@ Similarly, in 2D, a canvas is needed to draw all canvas items.
 | `void`                                                                       | [`light_set_projector`](class_renderingserver.md#class_renderingserver_method_light_set_projector) ( light: [`RID`](class_rid.md), texture: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `void`                                                                       | [`light_set_reverse_cull_face_mode`](class_renderingserver.md#class_renderingserver_method_light_set_reverse_cull_face_mode) ( light: [`RID`](class_rid.md), enabled: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `void`                                                                       | [`light_set_shadow`](class_renderingserver.md#class_renderingserver_method_light_set_shadow) ( light: [`RID`](class_rid.md), enabled: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `void`                                                                       | [`light_set_shadow_caster_mask`](class_renderingserver.md#class_renderingserver_method_light_set_shadow_caster_mask) ( light: [`RID`](class_rid.md), mask: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | [`RID`](class_rid.md)                                                        | [`lightmap_create`](class_renderingserver.md#class_renderingserver_method_lightmap_create) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | [`PackedInt32Array`](class_packedint32array.md)                              | [`lightmap_get_probe_capture_bsp_tree`](class_renderingserver.md#class_renderingserver_method_lightmap_get_probe_capture_bsp_tree) ( lightmap: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | [`PackedVector3Array`](class_packedvector3array.md)                          | [`lightmap_get_probe_capture_points`](class_renderingserver.md#class_renderingserver_method_lightmap_get_probe_capture_points) ( lightmap: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -289,6 +294,7 @@ Similarly, in 2D, a canvas is needed to draw all canvas items.
 | `void`                                                                       | [`lightmap_set_probe_capture_update_speed`](class_renderingserver.md#class_renderingserver_method_lightmap_set_probe_capture_update_speed) ( speed: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `void`                                                                       | [`lightmap_set_probe_interior`](class_renderingserver.md#class_renderingserver_method_lightmap_set_probe_interior) ( lightmap: [`RID`](class_rid.md), interior: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `void`                                                                       | [`lightmap_set_textures`](class_renderingserver.md#class_renderingserver_method_lightmap_set_textures) ( lightmap: [`RID`](class_rid.md), light: [`RID`](class_rid.md), uses_sh: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `void`                                                                       | [`lightmaps_set_bicubic_filter`](class_renderingserver.md#class_renderingserver_method_lightmaps_set_bicubic_filter) ( enable: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | [`RID`](class_rid.md)                                                        | [`make_sphere_mesh`](class_renderingserver.md#class_renderingserver_method_make_sphere_mesh) ( latitudes: [`int`](class_int.md), longitudes: [`int`](class_int.md), radius: [`float`](class_float.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | [`RID`](class_rid.md)                                                        | [`material_create`](class_renderingserver.md#class_renderingserver_method_material_create) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | [`Variant`](class_variant.md)                                                | [`material_get_param`](class_renderingserver.md#class_renderingserver_method_material_get_param) ( material: [`RID`](class_rid.md), parameter: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -333,13 +339,17 @@ Similarly, in 2D, a canvas is needed to draw all canvas items.
 | [`Color`](class_color.md)                                                    | [`multimesh_instance_get_custom_data`](class_renderingserver.md#class_renderingserver_method_multimesh_instance_get_custom_data) ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | [`Transform3D`](class_transform3d.md)                                        | [`multimesh_instance_get_transform`](class_renderingserver.md#class_renderingserver_method_multimesh_instance_get_transform) ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [`Transform2D`](class_transform2d.md)                                        | [`multimesh_instance_get_transform_2d`](class_renderingserver.md#class_renderingserver_method_multimesh_instance_get_transform_2d) ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `void`                                                                       | [`multimesh_instance_reset_physics_interpolation`](class_renderingserver.md#class_renderingserver_method_multimesh_instance_reset_physics_interpolation) ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `void`                                                                       | [`multimesh_instance_set_color`](class_renderingserver.md#class_renderingserver_method_multimesh_instance_set_color) ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `void`                                                                       | [`multimesh_instance_set_custom_data`](class_renderingserver.md#class_renderingserver_method_multimesh_instance_set_custom_data) ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md), custom_data: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `void`                                                                       | [`multimesh_instance_set_transform`](class_renderingserver.md#class_renderingserver_method_multimesh_instance_set_transform) ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md), transform: [`Transform3D`](class_transform3d.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | `void`                                                                       | [`multimesh_instance_set_transform_2d`](class_renderingserver.md#class_renderingserver_method_multimesh_instance_set_transform_2d) ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md), transform: [`Transform2D`](class_transform2d.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `void`                                                                       | [`multimesh_set_buffer`](class_renderingserver.md#class_renderingserver_method_multimesh_set_buffer) ( multimesh: [`RID`](class_rid.md), buffer: [`PackedFloat32Array`](class_packedfloat32array.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `void`                                                                       | [`multimesh_set_buffer_interpolated`](class_renderingserver.md#class_renderingserver_method_multimesh_set_buffer_interpolated) ( multimesh: [`RID`](class_rid.md), buffer: [`PackedFloat32Array`](class_packedfloat32array.md), buffer_previous: [`PackedFloat32Array`](class_packedfloat32array.md) )                                                                                                                                                                                                                                                                                                                                                                                                    |
 | `void`                                                                       | [`multimesh_set_custom_aabb`](class_renderingserver.md#class_renderingserver_method_multimesh_set_custom_aabb) ( multimesh: [`RID`](class_rid.md), aabb: [`AABB`](class_aabb.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `void`                                                                       | [`multimesh_set_mesh`](class_renderingserver.md#class_renderingserver_method_multimesh_set_mesh) ( multimesh: [`RID`](class_rid.md), mesh: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `void`                                                                       | [`multimesh_set_physics_interpolated`](class_renderingserver.md#class_renderingserver_method_multimesh_set_physics_interpolated) ( multimesh: [`RID`](class_rid.md), interpolated: [`bool`](class_bool.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `void`                                                                       | [`multimesh_set_physics_interpolation_quality`](class_renderingserver.md#class_renderingserver_method_multimesh_set_physics_interpolation_quality) ( multimesh: [`RID`](class_rid.md), quality: [MultimeshPhysicsInterpolationQuality](#enum_renderingserver_multimeshphysicsinterpolationquality) )                                                                                                                                                                                                                                                                                                                                                                                                      |
 | `void`                                                                       | [`multimesh_set_visible_instances`](class_renderingserver.md#class_renderingserver_method_multimesh_set_visible_instances) ( multimesh: [`RID`](class_rid.md), visible: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | [`RID`](class_rid.md)                                                        | [`occluder_create`](class_renderingserver.md#class_renderingserver_method_occluder_create) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | `void`                                                                       | [`occluder_set_mesh`](class_renderingserver.md#class_renderingserver_method_occluder_set_mesh) ( occluder: [`RID`](class_rid.md), vertices: [`PackedVector3Array`](class_packedvector3array.md), indices: [`PackedInt32Array`](class_packedint32array.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -450,6 +460,7 @@ Similarly, in 2D, a canvas is needed to draw all canvas items.
 | [Array](class_array.md) [`Image`](class_image.md)                            | [`texture_3d_get`](class_renderingserver.md#class_renderingserver_method_texture_3d_get) ( texture: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | [`RID`](class_rid.md)                                                        | [`texture_3d_placeholder_create`](class_renderingserver.md#class_renderingserver_method_texture_3d_placeholder_create) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `void`                                                                       | [`texture_3d_update`](class_renderingserver.md#class_renderingserver_method_texture_3d_update) ( texture: [`RID`](class_rid.md), data: [Array](class_array.md) [`Image`](class_image.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [`RID`](class_rid.md)                                                        | [`texture_create_from_native_handle`](class_renderingserver.md#class_renderingserver_method_texture_create_from_native_handle) ( type: [TextureType](#enum_renderingserver_texturetype), format: [Format](#enum_image_format), native_handle: [`int`](class_int.md), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), layers: [`int`](class_int.md) = 1, layered_type: [TextureLayeredType](#enum_renderingserver_texturelayeredtype) = 0 )                                                                                                                                                                                                                     |
 | [Format](#enum_image_format)                                                 | [`texture_get_format`](class_renderingserver.md#class_renderingserver_method_texture_get_format) ( texture: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | [`int`](class_int.md)                                                        | [`texture_get_native_handle`](class_renderingserver.md#class_renderingserver_method_texture_get_native_handle) ( texture: [`RID`](class_rid.md), srgb: [`bool`](class_bool.md) = false ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | [`String`](class_string.md)                                                  | [`texture_get_path`](class_renderingserver.md#class_renderingserver_method_texture_get_path) ( texture: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -561,6 +572,32 @@ Emitted at the beginning of the frame, before the RenderingServer updates all th
 ---
 
 ## 枚举
+
+<div id="_class_enum_renderingserver_texturetype"></div>
+
+enum **TextureType**: <div id="enum_renderingserver_texturetype"></div>
+
+<div id="_class_renderingserver_constant_texture_type_2d"></div>
+
+[TextureType](#enum_renderingserver_texturetype) **TEXTURE_TYPE_2D** = ``0``
+
+2D texture.
+
+<div id="_class_renderingserver_constant_texture_type_layered"></div>
+
+[TextureType](#enum_renderingserver_texturetype) **TEXTURE_TYPE_LAYERED** = ``1``
+
+Layered texture.
+
+<div id="_class_renderingserver_constant_texture_type_3d"></div>
+
+[TextureType](#enum_renderingserver_texturetype) **TEXTURE_TYPE_3D** = ``2``
+
+3D texture.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_enum_renderingserver_texturelayeredtype"></div>
 
@@ -1135,6 +1172,26 @@ Use [`Transform2D`](class_transform2d.md) to store MultiMesh transform.
 [MultimeshTransformFormat](#enum_renderingserver_multimeshtransformformat) **MULTIMESH_TRANSFORM_3D** = ``1``
 
 Use [`Transform3D`](class_transform3d.md) to store MultiMesh transform.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_enum_renderingserver_multimeshphysicsinterpolationquality"></div>
+
+enum **MultimeshPhysicsInterpolationQuality**: <div id="enum_renderingserver_multimeshphysicsinterpolationquality"></div>
+
+<div id="_class_renderingserver_constant_multimesh_interp_quality_fast"></div>
+
+[MultimeshPhysicsInterpolationQuality](#enum_renderingserver_multimeshphysicsinterpolationquality) **MULTIMESH_INTERP_QUALITY_FAST** = ``0``
+
+MultiMesh physics interpolation favors speed over quality.
+
+<div id="_class_renderingserver_constant_multimesh_interp_quality_high"></div>
+
+[MultimeshPhysicsInterpolationQuality](#enum_renderingserver_multimeshphysicsinterpolationquality) **MULTIMESH_INTERP_QUALITY_HIGH** = ``1``
+
+MultiMesh physics interpolation favors quality over speed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2608,7 +2665,7 @@ The callback is called before our transparent rendering pass, but after our sky 
 
 [CompositorEffectCallbackType](#enum_renderingserver_compositoreffectcallbacktype) **COMPOSITOR_EFFECT_CALLBACK_TYPE_POST_TRANSPARENT** = ``4``
 
-The callback is called after our transparent rendering pass, but before any build in post effects and output to our render target.
+The callback is called after our transparent rendering pass, but before any built-in post-processing effects and output to our render target.
 
 <div id="_class_renderingserver_constant_compositor_effect_callback_type_any"></div>
 
@@ -2802,7 +2859,7 @@ Output color as they came in. This can cause bright lighting to look blown out, 
 
 [EnvironmentToneMapper](#enum_renderingserver_environmenttonemapper) **ENV_TONE_MAPPER_REINHARD** = ``1``
 
-Use the Reinhard tonemapper. Performs a variation on rendered pixels' colors by this formula: `color = color / (1 + color)`. This avoids clipping bright highlights, but the resulting image can look a bit dull.
+Use the Reinhard tonemapper. Performs a variation on rendered pixels' colors by this formula: `color = color * (1 + color / (white * white)) / (1 + color)`. This avoids clipping bright highlights, but the resulting image can look a bit dull. When [`Environment.tonemap_white`](class_environment.md#class_environment_property_tonemap_white) is left at the default value of `1.0` this is identical to [`ENV_TONE_MAPPER_LINEAR`](class_renderingserver.md#class_renderingserver_constant_env_tone_mapper_linear) while also being slightly less performant.
 
 <div id="_class_renderingserver_constant_env_tone_mapper_filmic"></div>
 
@@ -3886,9 +3943,15 @@ Color global shader parameter (`global uniform vec4 ...`). Equivalent to [`GLOBA
 
 Cubemap sampler global shader parameter (`global uniform samplerCube ...`). Exposed as a [`Cubemap`](class_cubemap.md) in the editor UI.
 
+<div id="_class_renderingserver_constant_global_var_type_samplerext"></div>
+
+[GlobalShaderParameterType](#enum_renderingserver_globalshaderparametertype) **GLOBAL_VAR_TYPE_SAMPLEREXT** = ``28``
+
+External sampler global shader parameter (`global uniform samplerExternalOES ...`). Exposed as a [`ExternalTexture`](class_externaltexture.md) in the editor UI.
+
 <div id="_class_renderingserver_constant_global_var_type_max"></div>
 
-[GlobalShaderParameterType](#enum_renderingserver_globalshaderparametertype) **GLOBAL_VAR_TYPE_MAX** = ``28``
+[GlobalShaderParameterType](#enum_renderingserver_globalshaderparametertype) **GLOBAL_VAR_TYPE_MAX** = ``29``
 
 Represents the size of the [GlobalShaderParameterType](#enum_renderingserver_globalshaderparametertype) enum.
 
@@ -3935,6 +3998,80 @@ Buffer memory used (in bytes). This includes vertex data, uniform buffers, and m
 [RenderingInfo](#enum_renderingserver_renderinginfo) **RENDERING_INFO_VIDEO_MEM_USED** = ``5``
 
 Video memory used (in bytes). When using the Forward+ or mobile rendering backends, this is always greater than the sum of [`RENDERING_INFO_TEXTURE_MEM_USED`](class_renderingserver.md#class_renderingserver_constant_rendering_info_texture_mem_used) and [`RENDERING_INFO_BUFFER_MEM_USED`](class_renderingserver.md#class_renderingserver_constant_rendering_info_buffer_mem_used), since there is miscellaneous data not accounted for by those two metrics. When using the GL Compatibility backend, this is equal to the sum of [`RENDERING_INFO_TEXTURE_MEM_USED`](class_renderingserver.md#class_renderingserver_constant_rendering_info_texture_mem_used) and [`RENDERING_INFO_BUFFER_MEM_USED`](class_renderingserver.md#class_renderingserver_constant_rendering_info_buffer_mem_used).
+
+<div id="_class_renderingserver_constant_rendering_info_pipeline_compilations_canvas"></div>
+
+[RenderingInfo](#enum_renderingserver_renderinginfo) **RENDERING_INFO_PIPELINE_COMPILATIONS_CANVAS** = ``6``
+
+Number of pipeline compilations that were triggered by the 2D canvas renderer.
+
+<div id="_class_renderingserver_constant_rendering_info_pipeline_compilations_mesh"></div>
+
+[RenderingInfo](#enum_renderingserver_renderinginfo) **RENDERING_INFO_PIPELINE_COMPILATIONS_MESH** = ``7``
+
+Number of pipeline compilations that were triggered by loading meshes. These compilations will show up as longer loading times the first time a user runs the game and the pipeline is required.
+
+<div id="_class_renderingserver_constant_rendering_info_pipeline_compilations_surface"></div>
+
+[RenderingInfo](#enum_renderingserver_renderinginfo) **RENDERING_INFO_PIPELINE_COMPILATIONS_SURFACE** = ``8``
+
+Number of pipeline compilations that were triggered by building the surface cache before rendering the scene. These compilations will show up as a stutter when loading an scene the first time a user runs the game and the pipeline is required.
+
+<div id="_class_renderingserver_constant_rendering_info_pipeline_compilations_draw"></div>
+
+[RenderingInfo](#enum_renderingserver_renderinginfo) **RENDERING_INFO_PIPELINE_COMPILATIONS_DRAW** = ``9``
+
+Number of pipeline compilations that were triggered while drawing the scene. These compilations will show up as stutters during gameplay the first time a user runs the game and the pipeline is required.
+
+<div id="_class_renderingserver_constant_rendering_info_pipeline_compilations_specialization"></div>
+
+[RenderingInfo](#enum_renderingserver_renderinginfo) **RENDERING_INFO_PIPELINE_COMPILATIONS_SPECIALIZATION** = ``10``
+
+Number of pipeline compilations that were triggered to optimize the current scene. These compilations are done in the background and should not cause any stutters whatsoever.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_enum_renderingserver_pipelinesource"></div>
+
+enum **PipelineSource**: <div id="enum_renderingserver_pipelinesource"></div>
+
+<div id="_class_renderingserver_constant_pipeline_source_canvas"></div>
+
+[PipelineSource](#enum_renderingserver_pipelinesource) **PIPELINE_SOURCE_CANVAS** = ``0``
+
+Pipeline compilation that was triggered by the 2D canvas renderer.
+
+<div id="_class_renderingserver_constant_pipeline_source_mesh"></div>
+
+[PipelineSource](#enum_renderingserver_pipelinesource) **PIPELINE_SOURCE_MESH** = ``1``
+
+Pipeline compilation that was triggered by loading a mesh.
+
+<div id="_class_renderingserver_constant_pipeline_source_surface"></div>
+
+[PipelineSource](#enum_renderingserver_pipelinesource) **PIPELINE_SOURCE_SURFACE** = ``2``
+
+Pipeline compilation that was triggered by building the surface cache before rendering the scene.
+
+<div id="_class_renderingserver_constant_pipeline_source_draw"></div>
+
+[PipelineSource](#enum_renderingserver_pipelinesource) **PIPELINE_SOURCE_DRAW** = ``3``
+
+Pipeline compilation that was triggered while drawing the scene.
+
+<div id="_class_renderingserver_constant_pipeline_source_specialization"></div>
+
+[PipelineSource](#enum_renderingserver_pipelinesource) **PIPELINE_SOURCE_SPECIALIZATION** = ``4``
+
+Pipeline compilation that was triggered to optimize the current scene.
+
+<div id="_class_renderingserver_constant_pipeline_source_max"></div>
+
+[PipelineSource](#enum_renderingserver_pipelinesource) **PIPELINE_SOURCE_MAX** = ``5``
+
+Represents the size of the [PipelineSource](#enum_renderingserver_pipelinesource) enum.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4433,6 +4570,8 @@ Draws particles on the [`CanvasItem`](class_canvasitem.md) pointed to by the `it
 
 Draws a 2D polygon on the [`CanvasItem`](class_canvasitem.md) pointed to by the `item` [`RID`](class_rid.md). If you need more flexibility (such as being able to use bones), use [`canvas_item_add_triangle_array`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_triangle_array) instead. See also [`CanvasItem.draw_polygon`](class_canvasitem.md#class_canvasitem_method_draw_polygon).
 
+ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with [`Geometry2D.triangulate_polygon`](class_geometry2d.md#class_geometry2d_method_triangulate_polygon) and using [`CanvasItem.draw_mesh`](class_canvasitem.md#class_canvasitem_method_draw_mesh), [`CanvasItem.draw_multimesh`](class_canvasitem.md#class_canvasitem_method_draw_multimesh), or [`canvas_item_add_triangle_array`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_triangle_array).
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -4504,6 +4643,16 @@ Draws the specified region of a 2D textured rectangle on the [`CanvasItem`](clas
 Draws a triangle array on the [`CanvasItem`](class_canvasitem.md) pointed to by the `item` [`RID`](class_rid.md). This is internally used by [`Line2D`](class_line2d.md) and [`StyleBoxFlat`](class_styleboxflat.md) for rendering. [`canvas_item_add_triangle_array`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_triangle_array) is highly flexible, but more complex to use than [`canvas_item_add_polygon`](class_renderingserver.md#class_renderingserver_method_canvas_item_add_polygon).
 
  **Note:** `count` is unused and can be left unspecified.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingserver_method_canvas_item_attach_skeleton"></div>
+
+`void` **canvas_item_attach_skeleton** ( item: [`RID`](class_rid.md), skeleton: [`RID`](class_rid.md) )<div id="class_renderingserver_method_canvas_item_attach_skeleton"></div>
+
+Attaches a skeleton to the [`CanvasItem`](class_canvasitem.md). Removes the previous skeleton.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -5133,7 +5282,7 @@ Sets the Z range of objects that will be affected by this light. Equivalent to [
 
 Transforms both the current and previous stored transform for a canvas light.
 
-This allows transforming a light without creating a "glitch" in the interpolation, which is is particularly useful for large worlds utilizing a shifting origin.
+This allows transforming a light without creating a "glitch" in the interpolation, which is particularly useful for large worlds utilizing a shifting origin.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -5602,6 +5751,16 @@ Color displayed for clear areas of the scene. Only effective if using the [`ENV_
 `void` **environment_set_bg_energy** ( env: [`RID`](class_rid.md), multiplier: [`float`](class_float.md), exposure_value: [`float`](class_float.md) )<div id="class_renderingserver_method_environment_set_bg_energy"></div>
 
 Sets the intensity of the background color.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingserver_method_environment_set_camera_id"></div>
+
+`void` **environment_set_camera_id** ( env: [`RID`](class_rid.md), id: [`int`](class_int.md) )<div id="class_renderingserver_method_environment_set_camera_id"></div>
+
+Sets the camera ID to be used as environment background.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -6336,6 +6495,18 @@ Sets the visibility range values for the given geometry instance. Equivalent to 
 
 ---
 
+<div id="_class_renderingserver_method_instance_reset_physics_interpolation"></div>
+
+`void` **instance_reset_physics_interpolation** ( instance: [`RID`](class_rid.md) )<div id="class_renderingserver_method_instance_reset_physics_interpolation"></div>
+
+Prevents physics interpolation for the current physics tick.
+
+This is useful when moving an instance to a new location, to give an instantaneous change rather than interpolation from the previous location.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingserver_method_instance_set_base"></div>
 
 `void` **instance_set_base** ( instance: [`RID`](class_rid.md), base: [`RID`](class_rid.md) )<div id="class_renderingserver_method_instance_set_base"></div>
@@ -6381,6 +6552,16 @@ Sets a margin to increase the size of the AABB when culling objects from the vie
 `void` **instance_set_ignore_culling** ( instance: [`RID`](class_rid.md), enabled: [`bool`](class_bool.md) )<div id="class_renderingserver_method_instance_set_ignore_culling"></div>
 
 If `true`, ignores both frustum and occlusion culling on the specified 3D geometry instance. This is not the same as [`GeometryInstance3D.ignore_occlusion_culling`](class_geometryinstance3d.md#class_geometryinstance3d_property_ignore_occlusion_culling), which only ignores occlusion culling and leaves frustum culling intact.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingserver_method_instance_set_interpolated"></div>
+
+`void` **instance_set_interpolated** ( instance: [`RID`](class_rid.md), interpolated: [`bool`](class_bool.md) )<div id="class_renderingserver_method_instance_set_interpolated"></div>
+
+Turns on and off physics interpolation for the instance.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -6652,6 +6833,16 @@ If `true`, light will cast shadows. Equivalent to [`Light3D.shadow_enabled`](cla
 
 ---
 
+<div id="_class_renderingserver_method_light_set_shadow_caster_mask"></div>
+
+`void` **light_set_shadow_caster_mask** ( light: [`RID`](class_rid.md), mask: [`int`](class_int.md) )<div id="class_renderingserver_method_light_set_shadow_caster_mask"></div>
+
+Sets the shadow caster mask for this 3D light. Shadows will only be cast using objects in the selected layers. Equivalent to [`Light3D.shadow_caster_mask`](class_light3d.md#class_light3d_property_shadow_caster_mask).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingserver_method_lightmap_create"></div>
 
 [`RID`](class_rid.md) **lightmap_create** ( )<div id="class_renderingserver_method_lightmap_create"></div>
@@ -6761,6 +6952,16 @@ Used to inform the renderer what exposure normalization value was used while bak
 `void` **lightmap_set_textures** ( lightmap: [`RID`](class_rid.md), light: [`RID`](class_rid.md), uses_sh: [`bool`](class_bool.md) )<div id="class_renderingserver_method_lightmap_set_textures"></div>
 
 Set the textures on the given `lightmap` GI instance to the texture array pointed to by the `light` RID. If the lightmap texture was baked with [`LightmapGI.directional`](class_lightmapgi.md#class_lightmapgi_property_directional) set to `true`, then `uses_sh` must also be `true`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingserver_method_lightmaps_set_bicubic_filter"></div>
+
+`void` **lightmaps_set_bicubic_filter** ( enable: [`bool`](class_bool.md) )<div id="class_renderingserver_method_lightmaps_set_bicubic_filter"></div>
+
+Toggles whether a bicubic filter should be used when lightmaps are sampled. This smoothens their appearance at a performance cost.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -7224,6 +7425,18 @@ Returns the [`Transform2D`](class_transform2d.md) of the specified instance. For
 
 ---
 
+<div id="_class_renderingserver_method_multimesh_instance_reset_physics_interpolation"></div>
+
+`void` **multimesh_instance_reset_physics_interpolation** ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md) )<div id="class_renderingserver_method_multimesh_instance_reset_physics_interpolation"></div>
+
+Prevents physics interpolation for the specified instance during the current physics tick.
+
+This is useful when moving an instance to a new location, to give an instantaneous change rather than interpolation from the previous location.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingserver_method_multimesh_instance_set_color"></div>
 
 `void` **multimesh_instance_set_color** ( multimesh: [`RID`](class_rid.md), index: [`int`](class_int.md), color: [`Color`](class_color.md) )<div id="class_renderingserver_method_multimesh_instance_set_color"></div>
@@ -7286,7 +7499,25 @@ The per-instance data size and expected data order is:
       - Position + Vertex color + Custom data: 20 floats (12 floats for Transform3D, 4 floats for Color, 4 floats of custom data)
 ```
 
+Instance transforms are in row-major order. Specifically:
 
+- For [`Transform2D`](class_transform2d.md) the float-order is: `(x.x, y.x, padding_float, origin.x, x.y, y.y, padding_float, origin.y)`.
+
+- For [`Transform3D`](class_transform3d.md) the float-order is: `(basis.x.x, basis.y.x, basis.z.x, origin.x, basis.x.y, basis.y.y, basis.z.y, origin.y, basis.x.z, basis.y.z, basis.z.z, origin.z)`.
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingserver_method_multimesh_set_buffer_interpolated"></div>
+
+`void` **multimesh_set_buffer_interpolated** ( multimesh: [`RID`](class_rid.md), buffer: [`PackedFloat32Array`](class_packedfloat32array.md), buffer_previous: [`PackedFloat32Array`](class_packedfloat32array.md) )<div id="class_renderingserver_method_multimesh_set_buffer_interpolated"></div>
+
+Alternative version of [`multimesh_set_buffer`](class_renderingserver.md#class_renderingserver_method_multimesh_set_buffer) for use with physics interpolation.
+
+Takes both an array of current data and an array of data for the previous physics tick.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -7307,6 +7538,28 @@ Sets the custom AABB for this MultiMesh resource.
 `void` **multimesh_set_mesh** ( multimesh: [`RID`](class_rid.md), mesh: [`RID`](class_rid.md) )<div id="class_renderingserver_method_multimesh_set_mesh"></div>
 
 Sets the mesh to be drawn by the multimesh. Equivalent to [`MultiMesh.mesh`](class_multimesh.md#class_multimesh_property_mesh).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingserver_method_multimesh_set_physics_interpolated"></div>
+
+`void` **multimesh_set_physics_interpolated** ( multimesh: [`RID`](class_rid.md), interpolated: [`bool`](class_bool.md) )<div id="class_renderingserver_method_multimesh_set_physics_interpolated"></div>
+
+Turns on and off physics interpolation for this MultiMesh resource.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingserver_method_multimesh_set_physics_interpolation_quality"></div>
+
+`void` **multimesh_set_physics_interpolation_quality** ( multimesh: [`RID`](class_rid.md), quality: [MultimeshPhysicsInterpolationQuality](#enum_renderingserver_multimeshphysicsinterpolationquality) )<div id="class_renderingserver_method_multimesh_set_physics_interpolation_quality"></div>
+
+Sets the physics interpolation quality for the [`MultiMesh`](class_multimesh.md).
+
+A value of [`MULTIMESH_INTERP_QUALITY_FAST`](class_renderingserver.md#class_renderingserver_constant_multimesh_interp_quality_fast) gives fast but low quality interpolation, a value of [`MULTIMESH_INTERP_QUALITY_HIGH`](class_renderingserver.md#class_renderingserver_constant_multimesh_interp_quality_high) gives slower but higher quality interpolation.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -8431,7 +8684,7 @@ Creates a placeholder for a 2-dimensional layered texture and adds it to the Ren
 
 [`RID`](class_rid.md) **texture_2d_placeholder_create** ( )<div id="class_renderingserver_method_texture_2d_placeholder_create"></div>
 
-Creates a placeholder for a 2-dimensional layered texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all `texture_2d_layered_*` RenderingServer functions, although it does nothing when used. See also [`texture_2d_layered_placeholder_create`](class_renderingserver.md#class_renderingserver_method_texture_2d_layered_placeholder_create) 
+Creates a placeholder for a 2-dimensional layered texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all `texture_2d_layered_*` RenderingServer functions, although it does nothing when used. See also [`texture_2d_layered_placeholder_create`](class_renderingserver.md#class_renderingserver_method_texture_2d_layered_placeholder_create).
 
 Once finished with your RID, you will want to free the RID using the RenderingServer's [`free_rid`](class_renderingserver.md#class_renderingserver_method_free_rid) method.
 
@@ -8494,6 +8747,18 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 Updates the texture specified by the `texture` [`RID`](class_rid.md)'s data with the data in `data`. All the texture's layers must be replaced at once.
 
  **Note:** The `texture` must have the same width, height, depth and format as the current texture data. Otherwise, an error will be printed and the original texture won't be modified. If you need to use different width, height, depth or format, use [`texture_replace`](class_renderingserver.md#class_renderingserver_method_texture_replace) instead.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingserver_method_texture_create_from_native_handle"></div>
+
+[`RID`](class_rid.md) **texture_create_from_native_handle** ( type: [TextureType](#enum_renderingserver_texturetype), format: [Format](#enum_image_format), native_handle: [`int`](class_int.md), width: [`int`](class_int.md), height: [`int`](class_int.md), depth: [`int`](class_int.md), layers: [`int`](class_int.md) = 1, layered_type: [TextureLayeredType](#enum_renderingserver_texturelayeredtype) = 0 )<div id="class_renderingserver_method_texture_create_from_native_handle"></div>
+
+Creates a texture based on a native handle that was created outside of Godot's renderer.
+
+ **Note:** If using the rendering device renderer, using [`RenderingDevice.texture_create_from_extension`](class_renderingdevice.md#class_renderingdevice_method_texture_create_from_extension) rather than this method is recommended. It will give you much more control over the texture's format and usage.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -8694,7 +8959,7 @@ Returns the CPU time taken to render the last frame in milliseconds. This *only*
 
 [`float`](class_float.md) **viewport_get_measured_render_time_gpu** ( viewport: [`RID`](class_rid.md) ) const[^const]<div id="class_renderingserver_method_viewport_get_measured_render_time_gpu"></div>
 
-Returns the GPU time taken to render the last frame in milliseconds. To get a complete readout of GPU time spent to render the scene, sum the render times of all viewports that are drawn every frame. Unlike [`Engine.get_frames_per_second`](class_engine.md#class_engine_method_get_frames_per_second), this method accurately reflects GPU utilization even if framerate is capped via V-Sync or [`Engine.max_fps`](class_engine.md#class_engine_property_max_fps). See also [`viewport_get_measured_render_time_gpu`](class_renderingserver.md#class_renderingserver_method_viewport_get_measured_render_time_gpu).
+Returns the GPU time taken to render the last frame in milliseconds. To get a complete readout of GPU time spent to render the scene, sum the render times of all viewports that are drawn every frame. Unlike [`Engine.get_frames_per_second`](class_engine.md#class_engine_method_get_frames_per_second), this method accurately reflects GPU utilization even if framerate is capped via V-Sync or [`Engine.max_fps`](class_engine.md#class_engine_property_max_fps). See also [`viewport_get_measured_render_time_cpu`](class_renderingserver.md#class_renderingserver_method_viewport_get_measured_render_time_cpu).
 
  **Note:** Requires measurements to be enabled on the specified `viewport` using [`viewport_set_measure_render_time`](class_renderingserver.md#class_renderingserver_method_viewport_set_measure_render_time). Otherwise, this method returns `0.0`.
 
@@ -8921,7 +9186,7 @@ Sets the measurement for the given `viewport` RID (obtained using [`Viewport.get
 
 `void` **viewport_set_msaa_2d** ( viewport: [`RID`](class_rid.md), msaa: [ViewportMSAA](#enum_renderingserver_viewportmsaa) )<div id="class_renderingserver_method_viewport_set_msaa_2d"></div>
 
-Sets the multisample anti-aliasing mode for 2D/Canvas on the specified `viewport` RID. See [ViewportMSAA](#enum_renderingserver_viewportmsaa) for options.
+Sets the multisample antialiasing mode for 2D/Canvas on the specified `viewport` RID. See [ViewportMSAA](#enum_renderingserver_viewportmsaa) for options. Equivalent to [`ProjectSettings.rendering/anti_aliasing/quality/msaa_2d`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/msaa_2d) or [`Viewport.msaa_2d`](class_viewport.md#class_viewport_property_msaa_2d).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -8931,7 +9196,7 @@ Sets the multisample anti-aliasing mode for 2D/Canvas on the specified `viewport
 
 `void` **viewport_set_msaa_3d** ( viewport: [`RID`](class_rid.md), msaa: [ViewportMSAA](#enum_renderingserver_viewportmsaa) )<div id="class_renderingserver_method_viewport_set_msaa_3d"></div>
 
-Sets the multisample anti-aliasing mode for 3D on the specified `viewport` RID. See [ViewportMSAA](#enum_renderingserver_viewportmsaa) for options.
+Sets the multisample antialiasing mode for 3D on the specified `viewport` RID. See [ViewportMSAA](#enum_renderingserver_viewportmsaa) for options. Equivalent to [`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/msaa_3d) or [`Viewport.msaa_3d`](class_viewport.md#class_viewport_property_msaa_3d).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -9035,7 +9300,7 @@ Sets a viewport's scenario. The scenario contains information about environment 
 
 `void` **viewport_set_screen_space_aa** ( viewport: [`RID`](class_rid.md), mode: [ViewportScreenSpaceAA](#enum_renderingserver_viewportscreenspaceaa) )<div id="class_renderingserver_method_viewport_set_screen_space_aa"></div>
 
-Sets the viewport's screen-space antialiasing mode.
+Sets the viewport's screen-space antialiasing mode. Equivalent to [`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/screen_space_aa) or [`Viewport.screen_space_aa`](class_viewport.md#class_viewport_property_screen_space_aa).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -9117,7 +9382,7 @@ Sets when the viewport should be updated. See [ViewportUpdateMode](#enum_renderi
 
 `void` **viewport_set_use_debanding** ( viewport: [`RID`](class_rid.md), enable: [`bool`](class_bool.md) )<div id="class_renderingserver_method_viewport_set_use_debanding"></div>
 
-If `true`, enables debanding on the specified viewport. Equivalent to [`ProjectSettings.rendering/anti_aliasing/quality/use_debanding`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/use_debanding).
+If `true`, enables debanding on the specified viewport. Equivalent to [`ProjectSettings.rendering/anti_aliasing/quality/use_debanding`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/use_debanding) or [`Viewport.use_debanding`](class_viewport.md#class_viewport_property_use_debanding).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -9149,7 +9414,7 @@ If `true`, enables occlusion culling on the specified viewport. Equivalent to [`
 
 `void` **viewport_set_use_taa** ( viewport: [`RID`](class_rid.md), enable: [`bool`](class_bool.md) )<div id="class_renderingserver_method_viewport_set_use_taa"></div>
 
-If `true`, use Temporal Anti-Aliasing. Equivalent to [`ProjectSettings.rendering/anti_aliasing/quality/use_taa`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/use_taa).
+If `true`, use temporal antialiasing. Equivalent to [`ProjectSettings.rendering/anti_aliasing/quality/use_taa`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/use_taa) or [`Viewport.use_taa`](class_viewport.md#class_viewport_property_use_taa).
 
 <!-- rst-class:: classref-item-separator -->
 

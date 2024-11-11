@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFAccessor.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFAccessor.xml。 -->
 
 <div id="_class_gltfaccessor"></div>
 
@@ -9,13 +9,13 @@
 
 **继承：** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Represents a GLTF accessor.
+Represents a glTF accessor.
 
 ## 描述
 
-GLTFAccessor is a data structure representing GLTF a `accessor` that would be found in the `"accessors"` array. A buffer is a blob of binary data. A buffer view is a slice of a buffer. An accessor is a typed interpretation of the data in a buffer view.
+GLTFAccessor is a data structure representing a glTF `accessor` that would be found in the `"accessors"` array. A buffer is a blob of binary data. A buffer view is a slice of a buffer. An accessor is a typed interpretation of the data in a buffer view.
 
-Most custom data stored in GLTF does not need accessors, only buffer views (see [`GLTFBufferView`](class_gltfbufferview.md)). Accessors are for more advanced use cases such as interleaved mesh data encoded for the GPU.
+Most custom data stored in glTF does not need accessors, only buffer views (see [`GLTFBufferView`](class_gltfbufferview.md)). Accessors are for more advanced use cases such as interleaved mesh data encoded for the GPU.
 
 ## 属性
 
@@ -89,6 +89,86 @@ Accessor type "MAT3". For the glTF object model, this maps to "float3x3", repres
 
 Accessor type "MAT4". For the glTF object model, this maps to "float4x4", represented in the glTF JSON as an array of sixteen floats.
 
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_enum_gltfaccessor_gltfcomponenttype"></div>
+
+enum **GLTFComponentType**: <div id="enum_gltfaccessor_gltfcomponenttype"></div>
+
+<div id="_class_gltfaccessor_constant_component_type_none"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_NONE** = ``0``
+
+Component type "NONE". This is not a valid component type, and is used to indicate that the component type is not set.
+
+<div id="_class_gltfaccessor_constant_component_type_signed_byte"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_SIGNED_BYTE** = ``5120``
+
+Component type "BYTE". The value is `0x1400` which comes from OpenGL. This indicates data is stored in 1-byte or 8-bit signed integers. This is a core part of the glTF specification.
+
+<div id="_class_gltfaccessor_constant_component_type_unsigned_byte"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_UNSIGNED_BYTE** = ``5121``
+
+Component type "UNSIGNED_BYTE". The value is `0x1401` which comes from OpenGL. This indicates data is stored in 1-byte or 8-bit unsigned integers. This is a core part of the glTF specification.
+
+<div id="_class_gltfaccessor_constant_component_type_signed_short"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_SIGNED_SHORT** = ``5122``
+
+Component type "SHORT". The value is `0x1402` which comes from OpenGL. This indicates data is stored in 2-byte or 16-bit signed integers. This is a core part of the glTF specification.
+
+<div id="_class_gltfaccessor_constant_component_type_unsigned_short"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_UNSIGNED_SHORT** = ``5123``
+
+Component type "UNSIGNED_SHORT". The value is `0x1403` which comes from OpenGL. This indicates data is stored in 2-byte or 16-bit unsigned integers. This is a core part of the glTF specification.
+
+<div id="_class_gltfaccessor_constant_component_type_signed_int"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_SIGNED_INT** = ``5124``
+
+Component type "INT". The value is `0x1404` which comes from OpenGL. This indicates data is stored in 4-byte or 32-bit signed integers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including `KHR_interactivity`.
+
+<div id="_class_gltfaccessor_constant_component_type_unsigned_int"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_UNSIGNED_INT** = ``5125``
+
+Component type "UNSIGNED_INT". The value is `0x1405` which comes from OpenGL. This indicates data is stored in 4-byte or 32-bit unsigned integers. This is a core part of the glTF specification.
+
+<div id="_class_gltfaccessor_constant_component_type_single_float"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_SINGLE_FLOAT** = ``5126``
+
+Component type "FLOAT". The value is `0x1406` which comes from OpenGL. This indicates data is stored in 4-byte or 32-bit floating point numbers. This is a core part of the glTF specification.
+
+<div id="_class_gltfaccessor_constant_component_type_double_float"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_DOUBLE_FLOAT** = ``5130``
+
+Component type "DOUBLE". The value is `0x140A` which comes from OpenGL. This indicates data is stored in 8-byte or 64-bit floating point numbers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including `KHR_interactivity`.
+
+<div id="_class_gltfaccessor_constant_component_type_half_float"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_HALF_FLOAT** = ``5131``
+
+Component type "HALF_FLOAT". The value is `0x140B` which comes from OpenGL. This indicates data is stored in 2-byte or 16-bit floating point numbers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including `KHR_interactivity`.
+
+<div id="_class_gltfaccessor_constant_component_type_signed_long"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_SIGNED_LONG** = ``5134``
+
+Component type "LONG". The value is `0x140E` which comes from OpenGL. This indicates data is stored in 8-byte or 64-bit signed integers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including `KHR_interactivity`.
+
+<div id="_class_gltfaccessor_constant_component_type_unsigned_long"></div>
+
+[GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) **COMPONENT_TYPE_UNSIGNED_LONG** = ``5135``
+
+Component type "UNSIGNED_LONG". The value is `0x140F` which comes from OpenGL. This indicates data is stored in 8-byte or 64-bit unsigned integers. This is NOT a core part of the glTF specification, and may not be supported by all glTF importers. May be used by some extensions including `KHR_interactivity`.
+
 <!-- rst-class:: classref-section-separator -->
 
 ---
@@ -102,7 +182,7 @@ Accessor type "MAT4". For the glTF object model, this maps to "float4x4", repres
 - `void` **set_accessor_type** ( value: [GLTFAccessorType](#enum_gltfaccessor_gltfaccessortype) )
 - [GLTFAccessorType](#enum_gltfaccessor_gltfaccessortype) **get_accessor_type** ( )
 
-The GLTF accessor type as an enum. Possible values are 0 for "SCALAR", 1 for "VEC2", 2 for "VEC3", 3 for "VEC4", 4 for "MAT2", 5 for "MAT3", and 6 for "MAT4".
+The glTF accessor type as an enum. Possible values are 0 for "SCALAR", 1 for "VEC2", 2 for "VEC3", 3 for "VEC4", 4 for "MAT2", 5 for "MAT3", and 6 for "MAT4".
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -141,7 +221,7 @@ The offset relative to the start of the buffer view in bytes.
 - `void` **set_component_type** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_component_type** ( )
 
-The GLTF component type as an enum. Possible values are 5120 for "BYTE", 5121 for "UNSIGNED_BYTE", 5122 for "SHORT", 5123 for "UNSIGNED_SHORT", 5125 for "UNSIGNED_INT", and 5126 for "FLOAT". A value of 5125 or "UNSIGNED_INT" must not be used for any accessor that is not referenced by mesh.primitive.indices.
+The glTF component type as an enum. See [GLTFComponentType](#enum_gltfaccessor_gltfcomponenttype) for possible values. Within the core glTF specification, a value of 5125 or "UNSIGNED_INT" must not be used for any accessor that is not referenced by mesh.primitive.indices.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -286,7 +366,7 @@ The offset relative to the start of the bufferView in bytes.
 
 **已弃用：** Use [`accessor_type`](class_gltfaccessor.md#class_gltfaccessor_property_accessor_type) instead.
 
-The GLTF accessor type as an enum. Use [`accessor_type`](class_gltfaccessor.md#class_gltfaccessor_property_accessor_type) instead.
+The glTF accessor type as an enum. Use [`accessor_type`](class_gltfaccessor.md#class_gltfaccessor_property_accessor_type) instead.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

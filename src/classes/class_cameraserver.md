@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CameraServer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CameraServer.xml。 -->
 
 <div id="_class_cameraserver"></div>
 
@@ -17,7 +17,7 @@ The **CameraServer** keeps track of different cameras accessible in Godot. These
 
 It is notably used to provide AR modules with a video feed from the camera.
 
- **Note:** This class is currently only implemented on macOS and iOS. To get a [`CameraFeed`](class_camerafeed.md) on iOS, the camera plugin from [*godot-ios-plugins*](https://github.com/godotengine/godot-ios-plugins) is required. On other platforms, no [`CameraFeed`](class_camerafeed.md) s will be available.
+ **Note:** This class is currently only implemented on Linux, macOS, and iOS, on other platforms no [`CameraFeed`](class_camerafeed.md) s will be available. To get a [`CameraFeed`](class_camerafeed.md) on iOS, the camera plugin from [*godot-ios-plugins*](https://github.com/godotengine/godot-ios-plugins) is required.
 
 ## 方法
 

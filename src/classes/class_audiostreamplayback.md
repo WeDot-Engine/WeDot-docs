@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioStreamPlayback.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioStreamPlayback.xml。 -->
 
 <div id="_class_audiostreamplayback"></div>
 
@@ -31,8 +31,15 @@ Can play, loop, pause a scroll through audio. See [`AudioStream`](class_audiostr
 | `void`                                                | [`_start`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__start) ( from_pos: [`float`](class_float.md) ) virtual[^virtual]                                                             |
 | `void`                                                | [`_stop`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__stop) ( ) virtual[^virtual]                                                                                                   |
 | `void`                                                | [`_tag_used_streams`](class_audiostreamplayback.md#class_audiostreamplayback_private_method__tag_used_streams) ( ) virtual[^virtual]                                                                           |
+| [`int`](class_int.md)                                 | [`get_loop_count`](class_audiostreamplayback.md#class_audiostreamplayback_method_get_loop_count) ( ) const[^const]                                                                                             |
+| [`float`](class_float.md)                             | [`get_playback_position`](class_audiostreamplayback.md#class_audiostreamplayback_method_get_playback_position) ( ) const[^const]                                                                               |
 | [`AudioSamplePlayback`](class_audiosampleplayback.md) | [`get_sample_playback`](class_audiostreamplayback.md#class_audiostreamplayback_method_get_sample_playback) ( ) const[^const]                                                                                   |
+| [`bool`](class_bool.md)                               | [`is_playing`](class_audiostreamplayback.md#class_audiostreamplayback_method_is_playing) ( ) const[^const]                                                                                                     |
+| [`PackedVector2Array`](class_packedvector2array.md)   | [`mix_audio`](class_audiostreamplayback.md#class_audiostreamplayback_method_mix_audio) ( rate_scale: [`float`](class_float.md), frames: [`int`](class_int.md) )                                                |
+| `void`                                                | [`seek`](class_audiostreamplayback.md#class_audiostreamplayback_method_seek) ( time: [`float`](class_float.md) = 0.0 )                                                                                         |
 | `void`                                                | [`set_sample_playback`](class_audiostreamplayback.md#class_audiostreamplayback_method_set_sample_playback) ( playback_sample: [`AudioSamplePlayback`](class_audiosampleplayback.md) )                          |
+| `void`                                                | [`start`](class_audiostreamplayback.md#class_audiostreamplayback_method_start) ( from_pos: [`float`](class_float.md) = 0.0 )                                                                                   |
+| `void`                                                | [`stop`](class_audiostreamplayback.md#class_audiostreamplayback_method_stop) ( )                                                                                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -142,6 +149,26 @@ Overridable method. Called whenever the audio stream is mixed if the playback is
 
 ---
 
+<div id="_class_audiostreamplayback_method_get_loop_count"></div>
+
+[`int`](class_int.md) **get_loop_count** ( ) const[^const]<div id="class_audiostreamplayback_method_get_loop_count"></div>
+
+Returns the number of times the stream has looped.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_get_playback_position"></div>
+
+[`float`](class_float.md) **get_playback_position** ( ) const[^const]<div id="class_audiostreamplayback_method_get_playback_position"></div>
+
+Returns the current position in the stream, in seconds.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_audiostreamplayback_method_get_sample_playback"></div>
 
 [`AudioSamplePlayback`](class_audiosampleplayback.md) **get_sample_playback** ( ) const[^const]<div id="class_audiostreamplayback_method_get_sample_playback"></div>
@@ -154,6 +181,40 @@ Returns the [`AudioSamplePlayback`](class_audiosampleplayback.md) associated wit
 
 ---
 
+<div id="_class_audiostreamplayback_method_is_playing"></div>
+
+[`bool`](class_bool.md) **is_playing** ( ) const[^const]<div id="class_audiostreamplayback_method_is_playing"></div>
+
+Returns `true` if the stream is playing.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_mix_audio"></div>
+
+[`PackedVector2Array`](class_packedvector2array.md) **mix_audio** ( rate_scale: [`float`](class_float.md), frames: [`int`](class_int.md) )<div id="class_audiostreamplayback_method_mix_audio"></div>
+
+Mixes up to `frames` of audio from the stream from the current position, at a rate of `rate_scale`, advancing the stream.
+
+Returns a [`PackedVector2Array`](class_packedvector2array.md) where each element holds the left and right channel volume levels of each frame.
+
+ **Note:** Can return fewer frames than requested, make sure to use the size of the return value.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_seek"></div>
+
+`void` **seek** ( time: [`float`](class_float.md) = 0.0 )<div id="class_audiostreamplayback_method_seek"></div>
+
+Seeks the stream at the given `time`, in seconds.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_audiostreamplayback_method_set_sample_playback"></div>
 
 `void` **set_sample_playback** ( playback_sample: [`AudioSamplePlayback`](class_audiosampleplayback.md) )<div id="class_audiostreamplayback_method_set_sample_playback"></div>
@@ -161,6 +222,26 @@ Returns the [`AudioSamplePlayback`](class_audiosampleplayback.md) associated wit
 **实验性：** 未来版本中可能会修改或移除该方法。
 
 Associates [`AudioSamplePlayback`](class_audiosampleplayback.md) to this **AudioStreamPlayback** for playing back the audio sample of this stream.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_start"></div>
+
+`void` **start** ( from_pos: [`float`](class_float.md) = 0.0 )<div id="class_audiostreamplayback_method_start"></div>
+
+Starts the stream from the given `from_pos`, in seconds.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_audiostreamplayback_method_stop"></div>
+
+`void` **stop** ( )<div id="class_audiostreamplayback_method_stop"></div>
+
+Stops the stream.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

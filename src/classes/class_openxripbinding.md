@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/openxr/doc_classes/OpenXRIPBinding.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/openxr/doc_classes/OpenXRIPBinding.xml。 -->
 
 <div id="_class_openxripbinding"></div>
 
@@ -13,14 +13,15 @@ Defines a binding between an [`OpenXRAction`](class_openxraction.md) and an XR i
 
 ## 描述
 
-This binding resource binds an [`OpenXRAction`](class_openxraction.md) to inputs or outputs. As most controllers have left hand and right versions that are handled by the same interaction profile we can specify multiple bindings. For instance an action "Fire" could be bound to both "/user/hand/left/input/trigger" and "/user/hand/right/input/trigger".
+This binding resource binds an [`OpenXRAction`](class_openxraction.md) to an input or output. As most controllers have left hand and right versions that are handled by the same interaction profile we can specify multiple bindings. For instance an action "Fire" could be bound to both "/user/hand/left/input/trigger" and "/user/hand/right/input/trigger". This would require two binding entries.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`OpenXRAction`](class_openxraction.md)           | [`action`](class_openxripbinding.md#class_openxripbinding_property_action) |                         |
-| [`PackedStringArray`](class_packedstringarray.md) | [`paths`](class_openxripbinding.md#class_openxripbinding_property_paths)   | ``PackedStringArray()`` |
+| [`OpenXRAction`](class_openxraction.md)           | [`action`](class_openxripbinding.md#class_openxripbinding_property_action)             |        |
+| [`String`](class_string.md)                       | [`binding_path`](class_openxripbinding.md#class_openxripbinding_property_binding_path) | ``""`` |
+| [`PackedStringArray`](class_packedstringarray.md) | [`paths`](class_openxripbinding.md#class_openxripbinding_property_paths)               |        |
 
 ## 方法
 
@@ -44,7 +45,22 @@ This binding resource binds an [`OpenXRAction`](class_openxraction.md) to inputs
 - `void` **set_action** ( value: [`OpenXRAction`](class_openxraction.md) )
 - [`OpenXRAction`](class_openxraction.md) **get_action** ( )
 
-[`OpenXRAction`](class_openxraction.md) that is bound to these paths.
+[`OpenXRAction`](class_openxraction.md) that is bound to [`binding_path`](class_openxripbinding.md#class_openxripbinding_property_binding_path).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_openxripbinding_property_binding_path"></div>
+
+[`String`](class_string.md) **binding_path** = ``""`` <div id="class_openxripbinding_property_binding_path"></div>
+
+- `void` **set_binding_path** ( value: [`String`](class_string.md) )
+- [`String`](class_string.md) **get_binding_path** ( )
+
+Binding path that defines the input or output bound to [`action`](class_openxripbinding.md#class_openxripbinding_property_action).
+
+ **Note:** Binding paths are suggestions, an XR runtime may choose to bind the action to a different input or output emulating this input or output.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -52,10 +68,12 @@ This binding resource binds an [`OpenXRAction`](class_openxraction.md) to inputs
 
 <div id="_class_openxripbinding_property_paths"></div>
 
-[`PackedStringArray`](class_packedstringarray.md) **paths** = ``PackedStringArray()`` <div id="class_openxripbinding_property_paths"></div>
+[`PackedStringArray`](class_packedstringarray.md) **paths** <div id="class_openxripbinding_property_paths"></div>
 
 - `void` **set_paths** ( value: [`PackedStringArray`](class_packedstringarray.md) )
 - [`PackedStringArray`](class_packedstringarray.md) **get_paths** ( )
+
+**已弃用：** Use [`binding_path`](class_openxripbinding.md#class_openxripbinding_property_binding_path) instead.
 
 Paths that define the inputs or outputs bound on the device.
 
@@ -71,6 +89,8 @@ Paths that define the inputs or outputs bound on the device.
 
 `void` **add_path** ( path: [`String`](class_string.md) )<div id="class_openxripbinding_method_add_path"></div>
 
+**已弃用：** Binding is for a single path.
+
 Add an input/output path to this binding.
 
 <!-- rst-class:: classref-item-separator -->
@@ -80,6 +100,8 @@ Add an input/output path to this binding.
 <div id="_class_openxripbinding_method_get_path_count"></div>
 
 [`int`](class_int.md) **get_path_count** ( ) const[^const]<div id="class_openxripbinding_method_get_path_count"></div>
+
+**已弃用：** Binding is for a single path.
 
 Get the number of input/output paths in this binding.
 
@@ -91,6 +113,8 @@ Get the number of input/output paths in this binding.
 
 [`bool`](class_bool.md) **has_path** ( path: [`String`](class_string.md) ) const[^const]<div id="class_openxripbinding_method_has_path"></div>
 
+**已弃用：** Binding is for a single path.
+
 Returns `true` if this input/output path is part of this binding.
 
 <!-- rst-class:: classref-item-separator -->
@@ -100,6 +124,8 @@ Returns `true` if this input/output path is part of this binding.
 <div id="_class_openxripbinding_method_remove_path"></div>
 
 `void` **remove_path** ( path: [`String`](class_string.md) )<div id="class_openxripbinding_method_remove_path"></div>
+
+**已弃用：** Binding is for a single path.
 
 Removes this input/output path from this binding.
 

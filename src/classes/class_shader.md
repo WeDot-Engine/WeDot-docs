@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Shader.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Shader.xml。 -->
 
 <div id="_class_shader"></div>
 
@@ -29,10 +29,11 @@ This class is used by a [`ShaderMaterial`](class_shadermaterial.md) and allows y
 
 |||
 |:-:|:--|
-| [`Texture2D`](class_texture2d.md) | [`get_default_texture_parameter`](class_shader.md#class_shader_method_get_default_texture_parameter) ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]                               |
-| [Mode](#enum_shader_mode)         | [`get_mode`](class_shader.md#class_shader_method_get_mode) ( ) const[^const]                                                                                                                                                     |
-| [`Array`](class_array.md)         | [`get_shader_uniform_list`](class_shader.md#class_shader_method_get_shader_uniform_list) ( get_groups: [`bool`](class_bool.md) = false )                                                                                         |
-| `void`                            | [`set_default_texture_parameter`](class_shader.md#class_shader_method_set_default_texture_parameter) ( name: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), index: [`int`](class_int.md) = 0 ) |
+| [`Texture`](class_texture.md) | [`get_default_texture_parameter`](class_shader.md#class_shader_method_get_default_texture_parameter) ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]                           |
+| [Mode](#enum_shader_mode)     | [`get_mode`](class_shader.md#class_shader_method_get_mode) ( ) const[^const]                                                                                                                                                 |
+| [`Array`](class_array.md)     | [`get_shader_uniform_list`](class_shader.md#class_shader_method_get_shader_uniform_list) ( get_groups: [`bool`](class_bool.md) = false )                                                                                     |
+| `void`                        | [`inspect_native_shader_code`](class_shader.md#class_shader_method_inspect_native_shader_code) ( )                                                                                                                           |
+| `void`                        | [`set_default_texture_parameter`](class_shader.md#class_shader_method_set_default_texture_parameter) ( name: [`StringName`](class_stringname.md), texture: [`Texture`](class_texture.md), index: [`int`](class_int.md) = 0 ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -97,7 +98,7 @@ Returns the shader's code as the user has written it, not the full generated cod
 
 <div id="_class_shader_method_get_default_texture_parameter"></div>
 
-[`Texture2D`](class_texture2d.md) **get_default_texture_parameter** ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]<div id="class_shader_method_get_default_texture_parameter"></div>
+[`Texture`](class_texture.md) **get_default_texture_parameter** ( name: [`StringName`](class_stringname.md), index: [`int`](class_int.md) = 0 ) const[^const]<div id="class_shader_method_get_default_texture_parameter"></div>
 
 Returns the texture that is set as default for the specified parameter.
 
@@ -131,9 +132,19 @@ If argument `get_groups` is true, parameter grouping hints will be provided.
 
 ---
 
+<div id="_class_shader_method_inspect_native_shader_code"></div>
+
+`void` **inspect_native_shader_code** ( )<div id="class_shader_method_inspect_native_shader_code"></div>
+
+Only available when running in the editor. Opens a popup that visualizes the generated shader code, including all variants and internal shader code. See also [`Material.inspect_native_shader_code`](class_material.md#class_material_method_inspect_native_shader_code).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_shader_method_set_default_texture_parameter"></div>
 
-`void` **set_default_texture_parameter** ( name: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), index: [`int`](class_int.md) = 0 )<div id="class_shader_method_set_default_texture_parameter"></div>
+`void` **set_default_texture_parameter** ( name: [`StringName`](class_stringname.md), texture: [`Texture`](class_texture.md), index: [`int`](class_int.md) = 0 )<div id="class_shader_method_set_default_texture_parameter"></div>
 
 Sets the default texture to be used with a texture uniform. The default is used if a texture is not set in the [`ShaderMaterial`](class_shadermaterial.md).
 

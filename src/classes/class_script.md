@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Script.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Script.xml。 -->
 
 <div id="_class_script"></div>
 
@@ -36,6 +36,7 @@ The `new` method of a script subclass creates a new instance. [`Object.set_scrip
 | [`StringName`](class_stringname.md)                         | [`get_global_name`](class_script.md#class_script_method_get_global_name) ( ) const[^const]                                                       |
 | [`StringName`](class_stringname.md)                         | [`get_instance_base_type`](class_script.md#class_script_method_get_instance_base_type) ( ) const[^const]                                         |
 | [`Variant`](class_variant.md)                               | [`get_property_default_value`](class_script.md#class_script_method_get_property_default_value) ( property: [`StringName`](class_stringname.md) ) |
+| [`Variant`](class_variant.md)                               | [`get_rpc_config`](class_script.md#class_script_method_get_rpc_config) ( ) const[^const]                                                         |
 | [`Dictionary`](class_dictionary.md)                         | [`get_script_constant_map`](class_script.md#class_script_method_get_script_constant_map) ( )                                                     |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_method_list`](class_script.md#class_script_method_get_script_method_list) ( )                                                       |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_script_property_list`](class_script.md#class_script_method_get_script_property_list) ( )                                                   |
@@ -139,6 +140,16 @@ Returns the script's base type.
 [`Variant`](class_variant.md) **get_property_default_value** ( property: [`StringName`](class_stringname.md) )<div id="class_script_method_get_property_default_value"></div>
 
 Returns the default value of the specified property.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_script_method_get_rpc_config"></div>
+
+[`Variant`](class_variant.md) **get_rpc_config** ( ) const[^const]<div id="class_script_method_get_rpc_config"></div>
+
+Returns a [`Dictionary`](class_dictionary.md) mapping method names to their RPC configuration defined by this script.
 
 <!-- rst-class:: classref-item-separator -->
 

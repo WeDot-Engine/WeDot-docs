@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedVector3Array.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedVector3Array.xml。 -->
 
 <div id="_class_packedvector3array"></div>
 
@@ -39,6 +39,7 @@ An array specifically designed to hold [`Vector3`](class_vector3.md). Packs data
 | [`PackedVector3Array`](class_packedvector3array.md) | [`duplicate`](class_packedvector3array.md#class_packedvector3array_method_duplicate) ( )                                                                              |
 | `void`                                              | [`fill`](class_packedvector3array.md#class_packedvector3array_method_fill) ( value: [`Vector3`](class_vector3.md) )                                                   |
 | [`int`](class_int.md)                               | [`find`](class_packedvector3array.md#class_packedvector3array_method_find) ( value: [`Vector3`](class_vector3.md), from: [`int`](class_int.md) = 0 ) const[^const]    |
+| [`Vector3`](class_vector3.md)                       | [`get`](class_packedvector3array.md#class_packedvector3array_method_get) ( index: [`int`](class_int.md) ) const[^const]                                               |
 | [`bool`](class_bool.md)                             | [`has`](class_packedvector3array.md#class_packedvector3array_method_has) ( value: [`Vector3`](class_vector3.md) ) const[^const]                                       |
 | [`int`](class_int.md)                               | [`insert`](class_packedvector3array.md#class_packedvector3array_method_insert) ( at_index: [`int`](class_int.md), value: [`Vector3`](class_vector3.md) )              |
 | [`bool`](class_bool.md)                             | [`is_empty`](class_packedvector3array.md#class_packedvector3array_method_is_empty) ( ) const[^const]                                                                  |
@@ -189,6 +190,16 @@ Assigns the given value to all elements in the array. This can typically be used
 Searches the array for a value and returns its index or `-1` if not found. Optionally, the initial search index can be passed.
 
  **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_packedvector3array_method_get"></div>
+
+[`Vector3`](class_vector3.md) **get** ( index: [`int`](class_int.md) ) const[^const]<div id="class_packedvector3array_method_get"></div>
+
+Returns the [`Vector3`](class_vector3.md) at the given `index` in the array. This is the same as using the `[]` operator (`array[index]`).
 
 <!-- rst-class:: classref-item-separator -->
 

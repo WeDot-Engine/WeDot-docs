@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceImporterWAV.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceImporterWAV.xml。 -->
 
 <div id="_class_resourceimporterwav"></div>
 
@@ -13,13 +13,15 @@ Imports a WAV audio file for playback.
 
 ## 描述
 
-WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It also has the lowest CPU cost to decode. This means high numbers of WAV sounds can be played at the same time, even on low-end deviceS.
+WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It also has the lowest CPU cost to decode. This means high numbers of WAV sounds can be played at the same time, even on low-end devices.
+
+By default, Godot imports WAV files using the lossy Quite OK Audio compression. You may change this by setting the [`compress/mode`](class_resourceimporterwav.md#class_resourceimporterwav_property_compress/mode) property.
 
 ## 属性
 
 |||
 |:-:|:--|
-| [`int`](class_int.md)     | [`compress/mode`](class_resourceimporterwav.md#class_resourceimporterwav_property_compress/mode)         | ``0``     |
+| [`int`](class_int.md)     | [`compress/mode`](class_resourceimporterwav.md#class_resourceimporterwav_property_compress/mode)         | ``2``     |
 | [`int`](class_int.md)     | [`edit/loop_begin`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_begin)     | ``0``     |
 | [`int`](class_int.md)     | [`edit/loop_end`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_end)         | ``-1``    |
 | [`int`](class_int.md)     | [`edit/loop_mode`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_mode)       | ``0``     |
@@ -38,15 +40,15 @@ WAV is an uncompressed format, which can provide higher quality compared to Ogg 
 
 <div id="_class_resourceimporterwav_property_compress/mode"></div>
 
-[`int`](class_int.md) **compress/mode** = ``0`` <div id="class_resourceimporterwav_property_compress/mode"></div>
+[`int`](class_int.md) **compress/mode** = ``2`` <div id="class_resourceimporterwav_property_compress/mode"></div>
 
 The compression mode to use on import.
 
- **Disabled:** Imports audio data without any compression. This results in the highest possible quality.
+- **PCM (Uncompressed):** Imports audio data without any form of compression, preserving the highest possible quality. It has the lowest CPU cost, but the highest memory usage.
 
- **RAM (Ima-ADPCM):** Performs fast lossy compression on import. Low CPU cost, but quality is noticeably decreased compared to Ogg Vorbis or even MP3.
+- **IMA ADPCM:** Applies fast, lossy compression during import, noticeably decreasing the quality, but with low CPU cost and memory usage. Does not support seeking and only Forward loop mode is supported.
 
- **QOA ([*Quite OK Audio*](https://qoaformat.org/)):** Performs lossy compression on import. CPU cost is slightly higher than IMA-ADPCM, but quality is much higher.
+- ** [*Quite OK Audio*](https://qoaformat.org/):** Also applies lossy compression on import, having a slightly higher CPU cost compared to IMA ADPCM, but much higher quality and the lowest memory usage.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -76,15 +78,17 @@ The end loop point to use when [`edit/loop_mode`](class_resourceimporterwav.md#c
 
 [`int`](class_int.md) **edit/loop_mode** = ``0`` <div id="class_resourceimporterwav_property_edit/loop_mode"></div>
 
-Controls how audio should loop. This is automatically read from the WAV metadata on import.
+Controls how audio should loop.
 
- **Disabled:** Don't loop audio, even if metadata indicates the file should be played back looping.
+- **Detect From WAV:** Uses loop information from the WAV metadata.
 
- **Forward:** Standard audio looping.
+- **Disabled:** Don't loop audio, even if the metadata indicates the file playback should loop.
 
- **Ping-Pong:** Play audio forward until it's done playing, then play it backward and repeat. This is similar to mirrored texture repeat, but for audio.
+- **Forward:** Standard audio looping. Plays the audio forward from the beginning to [`edit/loop_end`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_end), then returns to [`edit/loop_begin`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_begin) and repeats.
 
- **Backward:** Play audio in reverse and loop back to the end when done playing.
+- **Ping-Pong:** Plays the audio forward until [`edit/loop_end`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_end), then backwards to [`edit/loop_begin`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_begin), repeating this cycle.
+
+- **Backward:** Plays the audio backwards from [`edit/loop_end`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_end) to [`edit/loop_begin`](class_resourceimporterwav.md#class_resourceimporterwav_property_edit/loop_begin), then repeats.
 
  **Note:** In [`AudioStreamPlayer`](class_audiostreamplayer.md), the [`AudioStreamPlayer.finished`](class_audiostreamplayer.md#class_audiostreamplayer_signal_finished) signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 

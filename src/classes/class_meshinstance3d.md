@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/MeshInstance3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/MeshInstance3D.xml。 -->
 
 <div id="_class_meshinstance3d"></div>
 
@@ -30,6 +30,7 @@ MeshInstance3D is a node that takes a [`Mesh`](class_mesh.md) resource and adds 
 |||
 |:-:|:--|
 | [`ArrayMesh`](class_arraymesh.md)         | [`bake_mesh_from_current_blend_shape_mix`](class_meshinstance3d.md#class_meshinstance3d_method_bake_mesh_from_current_blend_shape_mix) ( existing: [`ArrayMesh`](class_arraymesh.md) = null )                                   |
+| [`ArrayMesh`](class_arraymesh.md)         | [`bake_mesh_from_current_skeleton_pose`](class_meshinstance3d.md#class_meshinstance3d_method_bake_mesh_from_current_skeleton_pose) ( existing: [`ArrayMesh`](class_arraymesh.md) = null )                                       |
 | `void`                                    | [`create_convex_collision`](class_meshinstance3d.md#class_meshinstance3d_method_create_convex_collision) ( clean: [`bool`](class_bool.md) = true, simplify: [`bool`](class_bool.md) = false )                                   |
 | `void`                                    | [`create_debug_tangents`](class_meshinstance3d.md#class_meshinstance3d_method_create_debug_tangents) ( )                                                                                                                        |
 | `void`                                    | [`create_multiple_convex_collisions`](class_meshinstance3d.md#class_meshinstance3d_method_create_multiple_convex_collisions) ( settings: [`MeshConvexDecompositionSettings`](class_meshconvexdecompositionsettings.md) = null ) |
@@ -98,6 +99,18 @@ The [`Skin`](class_skin.md) to be used by this instance.
 Takes a snapshot from the current [`ArrayMesh`](class_arraymesh.md) with all blend shapes applied according to their current weights and bakes it to the provided `existing` mesh. If no `existing` mesh is provided a new [`ArrayMesh`](class_arraymesh.md) is created, baked and returned. Mesh surface materials are not copied.
 
  **Performance:** [`Mesh`](class_mesh.md) data needs to be received from the GPU, stalling the [`RenderingServer`](class_renderingserver.md) in the process.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_meshinstance3d_method_bake_mesh_from_current_skeleton_pose"></div>
+
+[`ArrayMesh`](class_arraymesh.md) **bake_mesh_from_current_skeleton_pose** ( existing: [`ArrayMesh`](class_arraymesh.md) = null )<div id="class_meshinstance3d_method_bake_mesh_from_current_skeleton_pose"></div>
+
+Takes a snapshot of the current animated skeleton pose of the skinned mesh and bakes it to the provided `existing` mesh. If no `existing` mesh is provided a new [`ArrayMesh`](class_arraymesh.md) is created, baked, and returned. Requires a skeleton with a registered skin to work. Blendshapes are ignored. Mesh surface materials are not copied.
+
+ **Performance:** [`Mesh`](class_mesh.md) data needs to be retrieved from the GPU, stalling the [`RenderingServer`](class_renderingserver.md) in the process.
 
 <!-- rst-class:: classref-item-separator -->
 

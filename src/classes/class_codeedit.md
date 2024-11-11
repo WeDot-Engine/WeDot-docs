@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CodeEdit.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CodeEdit.xml。 -->
 
 <div id="_class_codeedit"></div>
 
@@ -145,6 +145,7 @@ CodeEdit is a specialized [`TextEdit`](class_textedit.md) designed for editing p
 | [`Texture2D`](class_texture2d.md) | [`breakpoint`](class_codeedit.md#class_codeedit_theme_icon_breakpoint)                                            |                                   |
 | [`Texture2D`](class_texture2d.md) | [`can_fold`](class_codeedit.md#class_codeedit_theme_icon_can_fold)                                                |                                   |
 | [`Texture2D`](class_texture2d.md) | [`can_fold_code_region`](class_codeedit.md#class_codeedit_theme_icon_can_fold_code_region)                        |                                   |
+| [`Texture2D`](class_texture2d.md) | [`completion_color_bg`](class_codeedit.md#class_codeedit_theme_icon_completion_color_bg)                          |                                   |
 | [`Texture2D`](class_texture2d.md) | [`executing_line`](class_codeedit.md#class_codeedit_theme_icon_executing_line)                                    |                                   |
 | [`Texture2D`](class_texture2d.md) | [`folded`](class_codeedit.md#class_codeedit_theme_icon_folded)                                                    |                                   |
 | [`Texture2D`](class_texture2d.md) | [`folded_code_region`](class_codeedit.md#class_codeedit_theme_icon_folded_code_region)                            |                                   |
@@ -1514,6 +1515,16 @@ Sets a custom [`Texture2D`](class_texture2d.md) to draw in the line folding gutt
 [`Texture2D`](class_texture2d.md) **can_fold_code_region** <div id="class_codeedit_theme_icon_can_fold_code_region"></div>
 
 Sets a custom [`Texture2D`](class_texture2d.md) to draw in the line folding gutter when a code region can be folded.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_codeedit_theme_icon_completion_color_bg"></div>
+
+[`Texture2D`](class_texture2d.md) **completion_color_bg** <div id="class_codeedit_theme_icon_completion_color_bg"></div>
+
+Background panel for the color preview box in autocompletion (visible when the color is translucent).
 
 <!-- rst-class:: classref-item-separator -->
 

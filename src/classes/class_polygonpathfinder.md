@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PolygonPathFinder.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PolygonPathFinder.xml。 -->
 
 <div id="_class_polygonpathfinder"></div>
 
@@ -84,7 +84,40 @@
 
 [`bool`](class_bool.md) **is_point_inside** ( point: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_polygonpathfinder_method_is_point_inside"></div>
 
-该方法目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+Returns `true` if `point` falls inside the polygon area.
+
+
+
+```gdscript
+
+    var polygon_path_finder = PolygonPathFinder.new()
+    var points = [Vector2(0.0, 0.0), Vector2(1.0, 0.0), Vector2(0.0, 1.0)]
+    var connections = [0, 1, 1, 2, 2, 0]
+    polygon_path_finder.setup(points, connections)
+    print(polygon_path_finder.is_point_inside(Vector2(0.2, 0.2))) # Prints true
+    print(polygon_path_finder.is_point_inside(Vector2(1.0, 1.0))) # Prints false
+```
+
+```csharp
+
+    var polygonPathFinder = new PolygonPathFinder();
+    var points = new Vector2[]
+    {
+        new Vector2(0.0f, 0.0f),
+        new Vector2(1.0f, 0.0f),
+        new Vector2(0.0f, 1.0f)
+    };
+    var connections = new int[] { 0, 1, 1, 2, 2, 0 };
+    polygonPathFinder.Setup(points, connections);
+    GD.Print(polygonPathFinder.IsPointInside(new Vector2(0.2f, 0.2f))); // Prints true
+    GD.Print(polygonPathFinder.IsPointInside(new Vector2(1.0f, 1.0f))); // Prints false
+```
+
+
+
+
+
+
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -104,7 +137,38 @@
 
 `void` **setup** ( points: [`PackedVector2Array`](class_packedvector2array.md), connections: [`PackedInt32Array`](class_packedint32array.md) )<div id="class_polygonpathfinder_method_setup"></div>
 
-该方法目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+Sets up **PolygonPathFinder** with an array of points that define the vertices of the polygon, and an array of indices that determine the edges of the polygon.
+
+The length of `connections` must be even, returns an error if odd.
+
+
+
+```gdscript
+
+    var polygon_path_finder = PolygonPathFinder.new()
+    var points = [Vector2(0.0, 0.0), Vector2(1.0, 0.0), Vector2(0.0, 1.0)]
+    var connections = [0, 1, 1, 2, 2, 0]
+    polygon_path_finder.setup(points, connections)
+```
+
+```csharp
+
+    var polygonPathFinder = new PolygonPathFinder();
+    var points = new Vector2[]
+    {
+        new Vector2(0.0f, 0.0f),
+        new Vector2(1.0f, 0.0f),
+        new Vector2(0.0f, 1.0f)
+    };
+    var connections = new int[] { 0, 1, 1, 2, 2, 0 };
+    polygonPathFinder.Setup(points, connections);
+```
+
+
+
+
+
+
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

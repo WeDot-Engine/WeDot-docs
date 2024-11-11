@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/@GlobalScope.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/@GlobalScope.xml。 -->
 
 <div id="_class_@globalscope"></div>
 
@@ -15,7 +15,7 @@ A list of global scope enumerated constants and built-in functions. This is all 
 
 Singletons are also documented here, since they can be accessed from anywhere.
 
-For the entries related to GDScript which can be accessed in any script see [`@GDScript`](class_@gdscript.md).
+For the entries that can only be accessed from scripts written in GDScript, see [`@GDScript`](class_@gdscript.md).
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
@@ -2208,9 +2208,7 @@ enum **Error**: <div id="enum_@globalscope_error"></div>
 
 Methods that return [Error](#enum_@globalscope_error) return [`OK`](class_@globalscope.md#class_@globalscope_constant_ok) when no error occurred.
 
-Since [`OK`](class_@globalscope.md#class_@globalscope_constant_ok) has value 0, and all other error constants are positive integers, it can also be used in boolean checks.
-
- **Example:** 
+Since [`OK`](class_@globalscope.md#class_@globalscope_constant_ok) has value `0`, and all other error constants are positive integers, it can also be used in boolean checks.
 
 ```
 
@@ -2721,7 +2719,7 @@ If a property is [`Array`](class_array.md), hints the editor how to show element
 
 
 
-Examples:
+ **Examples:** 
 
 
 
@@ -2818,6 +2816,12 @@ Hints that an [`int`](class_int.md) property is a pointer. Used by GDExtension.
 
 Hints that a property is an [`Array`](class_array.md) with the stored type specified in the hint string.
 
+<div id="_class_@globalscope_constant_property_hint_dictionary_type"></div>
+
+[PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_DICTIONARY_TYPE** = ``38``
+
+Hints that a property is a [`Dictionary`](class_dictionary.md) with the stored types specified in the hint string.
+
 <div id="_class_@globalscope_constant_property_hint_locale_id"></div>
 
 [PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_LOCALE_ID** = ``32``
@@ -2848,9 +2852,25 @@ Hints that a quaternion property should disable the temporary euler editor.
 
 Hints that a string property is a password, and every character is replaced with the secret character.
 
+<div id="_class_@globalscope_constant_property_hint_tool_button"></div>
+
+[PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_TOOL_BUTTON** = ``39``
+
+Hints that a [`Callable`](class_callable.md) property should be displayed as a clickable button. When the button is pressed, the callable is called. The hint string specifies the button text and optionally an icon from the `"EditorIcons"` theme type.
+
+```text
+
+    "Click me!" - A button with the text "Click me!" and the default "Callable" icon.
+    "Click me!,ColorRect" - A button with the text "Click me!" and the "ColorRect" icon.
+```
+
+ **Note:** A [`Callable`](class_callable.md) cannot be properly serialized and stored in a file, so it is recommended to use [`PROPERTY_USAGE_EDITOR`](class_@globalscope.md#class_@globalscope_constant_property_usage_editor) instead of [`PROPERTY_USAGE_DEFAULT`](class_@globalscope.md#class_@globalscope_constant_property_usage_default).
+
+
+
 <div id="_class_@globalscope_constant_property_hint_max"></div>
 
-[PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_MAX** = ``38``
+[PropertyHint](#enum_@globalscope_propertyhint) **PROPERTY_HINT_MAX** = ``40``
 
 Represents the size of the [PropertyHint](#enum_@globalscope_propertyhint) enum.
 
@@ -4025,7 +4045,7 @@ Returns the hyperbolic arc (also called inverse) cosine of `x`, returning a valu
 
 [`float`](class_float.md) **angle_difference** ( from: [`float`](class_float.md), to: [`float`](class_float.md) )<div id="class_@globalscope_method_angle_difference"></div>
 
-Returns the difference between the two angles, in the range of `[-PI, +PI]`. When `from` and `to` are opposite, returns `-PI` if `from` is smaller than `to`, or `PI` otherwise.
+Returns the difference between the two angles (in radians), in the range of `[-PI, +PI]`. When `from` and `to` are opposite, returns `-PI` if `from` is smaller than `to`, or `PI` otherwise.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4774,9 +4794,9 @@ This function is faster than using [`is_equal_approx`](class_@globalscope.md#cla
 
 [`Variant`](class_variant.md) **lerp** ( from: [`Variant`](class_variant.md), to: [`Variant`](class_variant.md), weight: [`Variant`](class_variant.md) )<div id="class_@globalscope_method_lerp"></div>
 
-Linearly interpolates between two values by the factor defined in `weight`. To perform interpolation, `weight` should be between `0.0` and `1.0` (inclusive). However, values outside this range are allowed and can be used to perform *extrapolation*. If this is not desired, use [`clamp`](class_@globalscope.md#class_@globalscope_method_clamp) on the result of this function.
+Linearly interpolates between two values by the factor defined in `weight`. To perform interpolation, `weight` should be between `0.0` and `1.0` (inclusive). However, values outside this range are allowed and can be used to perform *extrapolation*. If this is not desired, use [`clampf`](class_@globalscope.md#class_@globalscope_method_clampf) to limit `weight`.
 
-Both `from` and `to` must be the same type. Supported types: [`int`](class_int.md), [`float`](class_float.md), [`Vector2`](class_vector2.md), [`Vector3`](class_vector3.md), [`Vector4`](class_vector4.md), [`Color`](class_color.md), [`Quaternion`](class_quaternion.md), [`Basis`](class_basis.md).
+Both `from` and `to` must be the same type. Supported types: [`int`](class_int.md), [`float`](class_float.md), [`Vector2`](class_vector2.md), [`Vector3`](class_vector3.md), [`Vector4`](class_vector4.md), [`Color`](class_color.md), [`Quaternion`](class_quaternion.md), [`Basis`](class_basis.md), [`Transform2D`](class_transform2d.md), [`Transform3D`](class_transform3d.md).
 
 ```
 
@@ -4785,7 +4805,7 @@ Both `from` and `to` must be the same type. Supported types: [`int`](class_int.m
 
 See also [`inverse_lerp`](class_@globalscope.md#class_@globalscope_method_inverse_lerp) which performs the reverse of this operation. To perform eased interpolation with [`lerp`](class_@globalscope.md#class_@globalscope_method_lerp), combine it with [`ease`](class_@globalscope.md#class_@globalscope_method_ease) or [`smoothstep`](class_@globalscope.md#class_@globalscope_method_smoothstep). See also [`remap`](class_@globalscope.md#class_@globalscope_method_remap) to map a continuous series of values to another.
 
- **Note:** For better type safety, use [`lerpf`](class_@globalscope.md#class_@globalscope_method_lerpf), [`Vector2.lerp`](class_vector2.md#class_vector2_method_lerp), [`Vector3.lerp`](class_vector3.md#class_vector3_method_lerp), [`Vector4.lerp`](class_vector4.md#class_vector4_method_lerp), [`Color.lerp`](class_color.md#class_color_method_lerp), [`Quaternion.slerp`](class_quaternion.md#class_quaternion_method_slerp) or [`Basis.slerp`](class_basis.md#class_basis_method_slerp).
+ **Note:** For better type safety, use [`lerpf`](class_@globalscope.md#class_@globalscope_method_lerpf), [`Vector2.lerp`](class_vector2.md#class_vector2_method_lerp), [`Vector3.lerp`](class_vector3.md#class_vector3_method_lerp), [`Vector4.lerp`](class_vector4.md#class_vector4_method_lerp), [`Color.lerp`](class_color.md#class_color_method_lerp), [`Quaternion.slerp`](class_quaternion.md#class_quaternion_method_slerp), [`Basis.slerp`](class_basis.md#class_basis_method_slerp), [`Transform2D.interpolate_with`](class_transform2d.md#class_transform2d_method_interpolate_with), or [`Transform3D.interpolate_with`](class_transform3d.md#class_transform3d_method_interpolate_with).
 
 
 
@@ -4843,15 +4863,12 @@ See also [`inverse_lerp`](class_@globalscope.md#class_@globalscope_method_invers
 
 [`float`](class_float.md) **linear_to_db** ( lin: [`float`](class_float.md) )<div id="class_@globalscope_method_linear_to_db"></div>
 
-Converts from linear energy to decibels (audio). This can be used to implement volume sliders that behave as expected (since volume isn't linear).
+Converts from linear energy to decibels (audio). Since volume is not normally linear, this can be used to implement volume sliders that behave as expected.
 
- **Example:** 
+ **Example:** Change the Master bus's volume through a [`Slider`](class_slider.md) node, which ranges from `0.0` to `1.0`:
 
 ```
 
-    # "Slider" refers to a node that inherits Range such as HSlider or VSlider.
-    # Its range must be configured to go from 0 to 1.
-    # Change the bus name if you'd like to change the volume of a specific bus only.
     AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), linear_to_db($Slider.value))
 ```
 
@@ -5141,7 +5158,7 @@ Converts one or more arguments of any type to string in the best way possible an
 
 
 
- **Note:** Consider using [`push_error`](class_@globalscope.md#class_@globalscope_method_push_error) and [`push_warning`](class_@globalscope.md#class_@globalscope_method_push_warning) to print error and warning messages instead of [`print`](class_@globalscope.md#class_@globalscope_method_print) or [`print_rich`](class_@globalscope.md#class_@globalscope_method_print_rich). This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed.
+ **Note:** Consider using [`push_error`](class_@globalscope.md#class_@globalscope_method_push_error) and [`push_warning`](class_@globalscope.md#class_@globalscope_method_push_warning) to print error and warning messages instead of [`print`](class_@globalscope.md#class_@globalscope_method_print) or [`print_rich`](class_@globalscope.md#class_@globalscope_method_print_rich). This distinguishes them from print messages used for debugging purposes, while also displaying a stack trace when an error or warning is printed. See also [`Engine.print_to_stdout`](class_engine.md#class_engine_property_print_to_stdout) and [`ProjectSettings.application/run/disable_stdout`](class_projectsettings.md#class_projectsettings_property_application/run/disable_stdout).
 
 
 
@@ -5758,7 +5775,7 @@ Returns `-1.0` if `x` is negative, `1.0` if `x` is positive, and `0.0` if `x` is
 
 [`int`](class_int.md) **signi** ( x: [`int`](class_int.md) )<div id="class_@globalscope_method_signi"></div>
 
-Returns `-1` if `x` is negative, `1` if `x` is positive, and `0` if if `x` is zero.
+Returns `-1` if `x` is negative, `1` if `x` is positive, and `0` if `x` is zero.
 
 ```
 
@@ -5813,9 +5830,11 @@ Returns the hyperbolic sine of `x`.
 
 [`float`](class_float.md) **smoothstep** ( from: [`float`](class_float.md), to: [`float`](class_float.md), x: [`float`](class_float.md) )<div id="class_@globalscope_method_smoothstep"></div>
 
-Returns the result of smoothly interpolating the value of `x` between `0` and `1`, based on the where `x` lies with respect to the edges `from` and `to`.
+Returns a smooth cubic Hermite interpolation between `0` and `1`.
 
-The return value is `0` if `x <= from`, and `1` if `x >= to`. If `x` lies between `from` and `to`, the returned value follows an S-shaped curve that maps `x` between `0` and `1`.
+For positive ranges (when `from <= to`) the return value is `0` when `x <= from`, and `1` when `x >= to`. If `x` lies between `from` and `to`, the return value follows an S-shaped curve that smoothly transitions from `0` to `1`.
+
+For negative ranges (when `from > to`) the function is mirrored and returns `1` when `x <= to` and `0` when `x >= from`.
 
 This S-shaped curve is the cubic Hermite interpolator, given by `f(y) = 3*y^2 - 2*y^3` where `y = (x-from) / (to-from)`.
 
@@ -5830,6 +5849,8 @@ This S-shaped curve is the cubic Hermite interpolator, given by `f(y) = 3*y^2 - 
 Compared to [`ease`](class_@globalscope.md#class_@globalscope_method_ease) with a curve value of `-1.6521`, [`smoothstep`](class_@globalscope.md#class_@globalscope_method_smoothstep) returns the smoothest possible curve with no sudden changes in the derivative. If you need to perform more advanced transitions, use [`Tween`](class_tween.md) or [`AnimationPlayer`](class_animationplayer.md).
 
  [*Comparison between smoothstep() and ease(x, -1.6521) return values*](https://raw.githubusercontent.com/godotengine/godot-docs/master/img/smoothstep_ease_comparison.png) 
+
+ [*Smoothstep() return values with positive, zero, and negative ranges*](https://raw.githubusercontent.com/godotengine/godot-docs/master/img/smoothstep_range.webp) 
 
 
 

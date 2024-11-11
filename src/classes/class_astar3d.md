@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AStar3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AStar3D.xml。 -->
 
 <div id="_class_astar3d"></div>
 
@@ -64,7 +64,7 @@ If the default [`_estimate_cost`](class_astar3d.md#class_astar3d_private_method_
 |||
 |:-:|:--|
 | [`float`](class_float.md)                           | [`_compute_cost`](class_astar3d.md#class_astar3d_private_method__compute_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                               |
-| [`float`](class_float.md)                           | [`_estimate_cost`](class_astar3d.md#class_astar3d_private_method__estimate_cost) ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                             |
+| [`float`](class_float.md)                           | [`_estimate_cost`](class_astar3d.md#class_astar3d_private_method__estimate_cost) ( from_id: [`int`](class_int.md), end_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]                            |
 | `void`                                              | [`add_point`](class_astar3d.md#class_astar3d_method_add_point) ( id: [`int`](class_int.md), position: [`Vector3`](class_vector3.md), weight_scale: [`float`](class_float.md) = 1.0 )                          |
 | [`bool`](class_bool.md)                             | [`are_points_connected`](class_astar3d.md#class_astar3d_method_are_points_connected) ( id: [`int`](class_int.md), to_id: [`int`](class_int.md), bidirectional: [`bool`](class_bool.md) = true ) const[^const] |
 | `void`                                              | [`clear`](class_astar3d.md#class_astar3d_method_clear) ( )                                                                                                                                                    |
@@ -109,7 +109,7 @@ Note that this function is hidden in the default **AStar3D** class.
 
 <div id="_class_astar3d_private_method__estimate_cost"></div>
 
-[`float`](class_float.md) **_estimate_cost** ( from_id: [`int`](class_int.md), to_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]<div id="class_astar3d_private_method__estimate_cost"></div>
+[`float`](class_float.md) **_estimate_cost** ( from_id: [`int`](class_int.md), end_id: [`int`](class_int.md) ) virtual[^virtual] const[^const]<div id="class_astar3d_private_method__estimate_cost"></div>
 
 Called when estimating the cost between a point and the path's ending point.
 
@@ -285,6 +285,8 @@ Returns an array with the IDs of the points that form the path found by AStar3D 
 
 If there is no valid path to the target, and `allow_partial_path` is `true`, returns a path to the point closest to the target that can be reached.
 
+ **Note:** When `allow_partial_path` is `true` and `to_id` is disabled the search may take an unusually long time to finish.
+
 
 
 ```gdscript
@@ -413,6 +415,8 @@ Returns an array with the points that are in the path found by AStar3D between t
 If there is no valid path to the target, and `allow_partial_path` is `true`, returns a path to the point closest to the target that can be reached.
 
  **Note:** This method is not thread-safe. If called from a [`Thread`](class_thread.md), it will return an empty array and will print an error message.
+
+Additionally, when `allow_partial_path` is `true` and `to_id` is disabled the search may take an unusually long time to finish.
 
 <!-- rst-class:: classref-item-separator -->
 

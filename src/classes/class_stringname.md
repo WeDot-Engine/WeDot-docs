@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/StringName.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/StringName.xml。 -->
 
 <div id="_class_stringname"></div>
 
@@ -21,7 +21,7 @@ All of [`String`](class_string.md)'s methods are available in this class too. Th
 
  **Note:** In C#, an explicit conversion to `System.String` is required to use the methods listed on this page. Use the `ToString()` method to cast a **StringName** to a string, and then use the equivalent methods in `System.String` or `StringExtensions`.
 
- **Note:** In a boolean context, a **StringName** will evaluate to `false` if it is empty (`StringName("")`). Otherwise, a **StringName** will always evaluate to `true`. The `not` operator cannot be used. Instead, [`is_empty`](class_stringname.md#class_stringname_method_is_empty) should be used to check for empty **StringName** s.
+ **Note:** In a boolean context, a **StringName** will evaluate to `false` if it is empty (`StringName("")`). Otherwise, a **StringName** will always evaluate to `true`.
 
 通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
@@ -73,6 +73,7 @@ All of [`String`](class_string.md)'s methods are available in this class too. Th
 | [`bool`](class_bool.md)                             | [`is_relative_path`](class_stringname.md#class_stringname_method_is_relative_path) ( ) const[^const]                                                                                                           |
 | [`bool`](class_bool.md)                             | [`is_subsequence_of`](class_stringname.md#class_stringname_method_is_subsequence_of) ( text: [`String`](class_string.md) ) const[^const]                                                                       |
 | [`bool`](class_bool.md)                             | [`is_subsequence_ofn`](class_stringname.md#class_stringname_method_is_subsequence_ofn) ( text: [`String`](class_string.md) ) const[^const]                                                                     |
+| [`bool`](class_bool.md)                             | [`is_valid_ascii_identifier`](class_stringname.md#class_stringname_method_is_valid_ascii_identifier) ( ) const[^const]                                                                                         |
 | [`bool`](class_bool.md)                             | [`is_valid_filename`](class_stringname.md#class_stringname_method_is_valid_filename) ( ) const[^const]                                                                                                         |
 | [`bool`](class_bool.md)                             | [`is_valid_float`](class_stringname.md#class_stringname_method_is_valid_float) ( ) const[^const]                                                                                                               |
 | [`bool`](class_bool.md)                             | [`is_valid_hex_number`](class_stringname.md#class_stringname_method_is_valid_hex_number) ( with_prefix: [`bool`](class_bool.md) = false ) const[^const]                                                        |
@@ -80,6 +81,7 @@ All of [`String`](class_string.md)'s methods are available in this class too. Th
 | [`bool`](class_bool.md)                             | [`is_valid_identifier`](class_stringname.md#class_stringname_method_is_valid_identifier) ( ) const[^const]                                                                                                     |
 | [`bool`](class_bool.md)                             | [`is_valid_int`](class_stringname.md#class_stringname_method_is_valid_int) ( ) const[^const]                                                                                                                   |
 | [`bool`](class_bool.md)                             | [`is_valid_ip_address`](class_stringname.md#class_stringname_method_is_valid_ip_address) ( ) const[^const]                                                                                                     |
+| [`bool`](class_bool.md)                             | [`is_valid_unicode_identifier`](class_stringname.md#class_stringname_method_is_valid_unicode_identifier) ( ) const[^const]                                                                                     |
 | [`String`](class_string.md)                         | [`join`](class_stringname.md#class_stringname_method_join) ( parts: [`PackedStringArray`](class_packedstringarray.md) ) const[^const]                                                                          |
 | [`String`](class_string.md)                         | [`json_escape`](class_stringname.md#class_stringname_method_json_escape) ( ) const[^const]                                                                                                                     |
 | [`String`](class_string.md)                         | [`left`](class_stringname.md#class_stringname_method_left) ( length: [`int`](class_int.md) ) const[^const]                                                                                                     |
@@ -606,8 +608,6 @@ Splits the string using a `delimiter` and returns the substring at index `slice`
 
 This is faster than [`split`](class_stringname.md#class_stringname_method_split), if you only need one substring.
 
- **Example:** 
-
 ```
 
     print("i/am/example/hi".get_slice("/", 2)) # Prints "example"
@@ -801,6 +801,28 @@ Returns `true` if all characters of this string can be found in `text` in their 
 
 ---
 
+<div id="_class_stringname_method_is_valid_ascii_identifier"></div>
+
+[`bool`](class_bool.md) **is_valid_ascii_identifier** ( ) const[^const]<div id="class_stringname_method_is_valid_ascii_identifier"></div>
+
+Returns `true` if this string is a valid ASCII identifier. A valid ASCII identifier may contain only letters, digits, and underscores (`_`), and the first character may not be a digit.
+
+```
+
+    print("node_2d".is_valid_ascii_identifier())    # Prints true
+    print("TYPE_FLOAT".is_valid_ascii_identifier()) # Prints true
+    print("1st_method".is_valid_ascii_identifier()) # Prints false
+    print("MyMethod#2".is_valid_ascii_identifier()) # Prints false
+```
+
+See also [`is_valid_unicode_identifier`](class_stringname.md#class_stringname_method_is_valid_unicode_identifier).
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_stringname_method_is_valid_filename"></div>
 
 [`bool`](class_bool.md) **is_valid_filename** ( ) const[^const]<div id="class_stringname_method_is_valid_filename"></div>
@@ -868,6 +890,8 @@ Returns `true` if this string is a valid color in hexadecimal HTML notation. The
 
 [`bool`](class_bool.md) **is_valid_identifier** ( ) const[^const]<div id="class_stringname_method_is_valid_identifier"></div>
 
+**已弃用：** Use [`is_valid_ascii_identifier`](class_stringname.md#class_stringname_method_is_valid_ascii_identifier) instead.
+
 Returns `true` if this string is a valid identifier. A valid identifier may contain only letters, digits and underscores (`_`), and the first character may not be a digit.
 
 ```
@@ -915,13 +939,39 @@ Returns `true` if this string represents a well-formatted IPv4 or IPv6 address. 
 
 ---
 
+<div id="_class_stringname_method_is_valid_unicode_identifier"></div>
+
+[`bool`](class_bool.md) **is_valid_unicode_identifier** ( ) const[^const]<div id="class_stringname_method_is_valid_unicode_identifier"></div>
+
+Returns `true` if this string is a valid Unicode identifier.
+
+A valid Unicode identifier must begin with a Unicode character of class `XID_Start` or `"_"`, and may contain Unicode characters of class `XID_Continue` in the other positions.
+
+```
+
+    print("node_2d".is_valid_unicode_identifier())      # Prints true
+    print("1st_method".is_valid_unicode_identifier())   # Prints false
+    print("MyMethod#2".is_valid_unicode_identifier())   # Prints false
+    print("állóképesség".is_valid_unicode_identifier()) # Prints true
+    print("выносливость".is_valid_unicode_identifier()) # Prints true
+    print("体力".is_valid_unicode_identifier())         # Prints true
+```
+
+See also [`is_valid_ascii_identifier`](class_stringname.md#class_stringname_method_is_valid_ascii_identifier).
+
+ **Note:** This method checks identifiers the same way as GDScript. See [`TextServer.is_valid_identifier`](class_textserver.md#class_textserver_method_is_valid_identifier) for more advanced checks.
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_stringname_method_join"></div>
 
 [`String`](class_string.md) **join** ( parts: [`PackedStringArray`](class_packedstringarray.md) ) const[^const]<div id="class_stringname_method_join"></div>
 
 Returns the concatenation of `parts`' elements, with each element separated by the string calling this method. This method is the opposite of [`split`](class_stringname.md#class_stringname_method_split).
-
- **Example:** 
 
 
 
@@ -1228,8 +1278,6 @@ If `allow_empty` is `false`, empty strings between adjacent delimiters are exclu
 
 If `maxsplit` is greater than `0`, the number of splits may not exceed `maxsplit`. By default, the entire string is split, which is mostly identical to [`split`](class_stringname.md#class_stringname_method_split).
 
- **Example:** 
-
 
 
 ```gdscript
@@ -1356,8 +1404,6 @@ Splits the string using a `delimiter` and returns an array of the substrings. If
 If `allow_empty` is `false`, empty strings between adjacent delimiters are excluded from the array.
 
 If `maxsplit` is greater than `0`, the number of splits may not exceed `maxsplit`. By default, the entire string is split.
-
- **Example:** 
 
 
 

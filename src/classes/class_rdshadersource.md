@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RDShaderSource.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RDShaderSource.xml。 -->
 
 <div id="_class_rdshadersource"></div>
 
@@ -136,6 +136,8 @@ Returns source code for the specified shader `stage`. Equivalent to getting one 
 `void` **set_stage_source** ( stage: [ShaderStage](#enum_renderingdevice_shaderstage), source: [`String`](class_string.md) )<div id="class_rdshadersource_method_set_stage_source"></div>
 
 Sets `source` code for the specified shader `stage`. Equivalent to setting one of [`source_compute`](class_rdshadersource.md#class_rdshadersource_property_source_compute), [`source_fragment`](class_rdshadersource.md#class_rdshadersource_property_source_fragment), [`source_tesselation_control`](class_rdshadersource.md#class_rdshadersource_property_source_tesselation_control), [`source_tesselation_evaluation`](class_rdshadersource.md#class_rdshadersource_property_source_tesselation_evaluation) or [`source_vertex`](class_rdshadersource.md#class_rdshadersource_property_source_vertex).
+
+ **Note:** If you set the compute shader source code using this method directly, remember to remove the Godot-specific hint `#[compute]`.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

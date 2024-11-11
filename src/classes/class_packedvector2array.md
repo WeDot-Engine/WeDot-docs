@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedVector2Array.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedVector2Array.xml。 -->
 
 <div id="_class_packedvector2array"></div>
 
@@ -13,7 +13,7 @@ A packed array of [`Vector2`](class_vector2.md) s.
 
 An array specifically designed to hold [`Vector2`](class_vector2.md). Packs data tightly, so it saves memory for large array sizes.
 
- **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. [`PackedVector3Array`](class_packedvector3array.md) versus `Array[Vector2]`). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as [`Array.map`](class_array.md#class_array_method_map). Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedVector2Array** versus `Array[Vector2]`). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as [`Array.map`](class_array.md#class_array_method_map). Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
  **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use [`duplicate`](class_packedvector2array.md#class_packedvector2array_method_duplicate). This is *not* the case for built-in properties and methods. The returned packed array of these are a copies, and changing it will *not* affect the original value. To update a built-in property you need to modify the returned array, and then assign it to the property again.
 
@@ -39,6 +39,7 @@ An array specifically designed to hold [`Vector2`](class_vector2.md). Packs data
 | [`PackedVector2Array`](class_packedvector2array.md) | [`duplicate`](class_packedvector2array.md#class_packedvector2array_method_duplicate) ( )                                                                              |
 | `void`                                              | [`fill`](class_packedvector2array.md#class_packedvector2array_method_fill) ( value: [`Vector2`](class_vector2.md) )                                                   |
 | [`int`](class_int.md)                               | [`find`](class_packedvector2array.md#class_packedvector2array_method_find) ( value: [`Vector2`](class_vector2.md), from: [`int`](class_int.md) = 0 ) const[^const]    |
+| [`Vector2`](class_vector2.md)                       | [`get`](class_packedvector2array.md#class_packedvector2array_method_get) ( index: [`int`](class_int.md) ) const[^const]                                               |
 | [`bool`](class_bool.md)                             | [`has`](class_packedvector2array.md#class_packedvector2array_method_has) ( value: [`Vector2`](class_vector2.md) ) const[^const]                                       |
 | [`int`](class_int.md)                               | [`insert`](class_packedvector2array.md#class_packedvector2array_method_insert) ( at_index: [`int`](class_int.md), value: [`Vector2`](class_vector2.md) )              |
 | [`bool`](class_bool.md)                             | [`is_empty`](class_packedvector2array.md#class_packedvector2array_method_is_empty) ( ) const[^const]                                                                  |
@@ -189,6 +190,16 @@ Assigns the given value to all elements in the array. This can typically be used
 Searches the array for a value and returns its index or `-1` if not found. Optionally, the initial search index can be passed.
 
  **Note:** Vectors with [`@GDScript.NAN`](class_@gdscript.md#class_@gdscript_constant_nan) elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_packedvector2array_method_get"></div>
+
+[`Vector2`](class_vector2.md) **get** ( index: [`int`](class_int.md) ) const[^const]<div id="class_packedvector2array_method_get"></div>
+
+Returns the [`Vector2`](class_vector2.md) at the given `index` in the array. This is the same as using the `[]` operator (`array[index]`).
 
 <!-- rst-class:: classref-item-separator -->
 

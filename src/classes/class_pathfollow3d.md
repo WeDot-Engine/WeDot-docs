@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PathFollow3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PathFollow3D.xml。 -->
 
 <div id="_class_pathfollow3d"></div>
 
@@ -147,6 +147,8 @@ The distance from the first vertex, measured in 3D units along the path. Changin
 - [`float`](class_float.md) **get_progress_ratio** ( )
 
 The distance from the first vertex, considering 0.0 as the first vertex and 1.0 as the last. This is just another way of expressing the progress within the path, as the progress supplied is multiplied internally by the path's length.
+
+It can be set or get only if the **PathFollow3D** is the child of a [`Path3D`](class_path3d.md) which is part of the scene tree, and that this [`Path3D`](class_path3d.md) has a [`Curve3D`](class_curve3d.md) with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return `0.0`.
 
 <!-- rst-class:: classref-item-separator -->
 

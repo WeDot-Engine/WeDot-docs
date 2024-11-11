@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/NavigationMeshSourceGeometryData3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/NavigationMeshSourceGeometryData3D.xml。 -->
 
 <div id="_class_navigationmeshsourcegeometrydata3d"></div>
 
@@ -28,6 +28,7 @@ Container for parsed source geometry data used in navigation mesh baking.
 | `void`                                              | [`append_arrays`](class_navigationmeshsourcegeometrydata3d.md#class_navigationmeshsourcegeometrydata3d_method_append_arrays) ( vertices: [`PackedFloat32Array`](class_packedfloat32array.md), indices: [`PackedInt32Array`](class_packedint32array.md) )                                                                        |
 | `void`                                              | [`clear`](class_navigationmeshsourcegeometrydata3d.md#class_navigationmeshsourcegeometrydata3d_method_clear) ( )                                                                                                                                                                                                                |
 | `void`                                              | [`clear_projected_obstructions`](class_navigationmeshsourcegeometrydata3d.md#class_navigationmeshsourcegeometrydata3d_method_clear_projected_obstructions) ( )                                                                                                                                                                  |
+| [`AABB`](class_aabb.md)                             | [`get_bounds`](class_navigationmeshsourcegeometrydata3d.md#class_navigationmeshsourcegeometrydata3d_method_get_bounds) ( )                                                                                                                                                                                                      |
 | [`PackedInt32Array`](class_packedint32array.md)     | [`get_indices`](class_navigationmeshsourcegeometrydata3d.md#class_navigationmeshsourcegeometrydata3d_method_get_indices) ( ) const[^const]                                                                                                                                                                                      |
 | [`Array`](class_array.md)                           | [`get_projected_obstructions`](class_navigationmeshsourcegeometrydata3d.md#class_navigationmeshsourcegeometrydata3d_method_get_projected_obstructions) ( ) const[^const]                                                                                                                                                        |
 | [`PackedFloat32Array`](class_packedfloat32array.md) | [`get_vertices`](class_navigationmeshsourcegeometrydata3d.md#class_navigationmeshsourcegeometrydata3d_method_get_vertices) ( ) const[^const]                                                                                                                                                                                    |
@@ -108,6 +109,16 @@ Clears the internal data.
 `void` **clear_projected_obstructions** ( )<div id="class_navigationmeshsourcegeometrydata3d_method_clear_projected_obstructions"></div>
 
 Clears all projected obstructions.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_navigationmeshsourcegeometrydata3d_method_get_bounds"></div>
+
+[`AABB`](class_aabb.md) **get_bounds** ( )<div id="class_navigationmeshsourcegeometrydata3d_method_get_bounds"></div>
+
+Returns an axis-aligned bounding box that covers all the stored geometry data. The bounds are calculated when calling this function with the result cached until further geometry changes are made.
 
 <!-- rst-class:: classref-item-separator -->
 

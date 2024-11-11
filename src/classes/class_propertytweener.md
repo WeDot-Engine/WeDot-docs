@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PropertyTweener.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PropertyTweener.xml。 -->
 
 <div id="_class_propertytweener"></div>
 
@@ -14,6 +14,8 @@ Interpolates an [`Object`](class_object.md)'s property over time.
 ## 描述
 
 **PropertyTweener** is used to interpolate a property in an object. See [`Tween.tween_property`](class_tween.md#class_tween_method_tween_property) for more usage information.
+
+The tweener will finish automatically if the target object is freed.
 
  **Note:** [`Tween.tween_property`](class_tween.md#class_tween_method_tween_property) is the only correct way to create **PropertyTweener**. Any **PropertyTweener** created manually will not function correctly.
 
@@ -41,12 +43,12 @@ Interpolates an [`Object`](class_object.md)'s property over time.
 
 When called, the final value will be used as a relative value instead.
 
- **Example:** 
+ **Example:** Move the node by `100` pixels to the right.
 
 ```
 
     var tween = get_tree().create_tween()
-    tween.tween_property(self, "position", Vector2.RIGHT * 100, 1).as_relative() #the node will move by 100 pixels to the right
+    tween.tween_property(self, "position", Vector2.RIGHT * 100, 1).as_relative()
 ```
 
 
@@ -61,12 +63,12 @@ When called, the final value will be used as a relative value instead.
 
 Sets a custom initial value to the **PropertyTweener**.
 
- **Example:** 
+ **Example:** Move the node from position `(100, 100)` to `(200, 100)`.
 
 ```
 
     var tween = get_tree().create_tween()
-    tween.tween_property(self, "position", Vector2(200, 100), 1).from(Vector2(100, 100)) #this will move the node from position (100, 100) to (200, 100)
+    tween.tween_property(self, "position", Vector2(200, 100), 1).from(Vector2(100, 100))
 ```
 
 
@@ -98,8 +100,6 @@ Makes the **PropertyTweener** use the current property value (i.e. at the time o
 [`PropertyTweener`](class_propertytweener.md) **set_custom_interpolator** ( interpolator_method: [`Callable`](class_callable.md) )<div id="class_propertytweener_method_set_custom_interpolator"></div>
 
 Allows interpolating the value with a custom easing function. The provided `interpolator_method` will be called with a value ranging from `0.0` to `1.0` and is expected to return a value within the same range (values outside the range can be used for overshoot). The return value of the method is then used for interpolation between initial and final value. Note that the parameter passed to the method is still subject to the tweener's own easing.
-
- **Example:** 
 
 ```
 

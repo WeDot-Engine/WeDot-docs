@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Material.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Material.xml。 -->
 
 <div id="_class_material"></div>
 
@@ -151,7 +151,7 @@ Creates a placeholder version of this resource ([`PlaceholderMaterial`](class_pl
 
 `void` **inspect_native_shader_code** ( )<div id="class_material_method_inspect_native_shader_code"></div>
 
-Only available when running in the editor. Opens a popup that visualizes the generated shader code, including all variants and internal shader code.
+Only available when running in the editor. Opens a popup that visualizes the generated shader code, including all variants and internal shader code. See also [`Shader.inspect_native_shader_code`](class_shader.md#class_shader_method_inspect_native_shader_code).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/noise/doc_classes/FastNoiseLite.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/noise/doc_classes/FastNoiseLite.xml。 -->
 
 <div id="_class_fastnoiselite"></div>
 
@@ -83,13 +83,13 @@ Cellular includes both Worley noise and Voronoi diagrams which creates various r
 
 [NoiseType](#enum_fastnoiselite_noisetype) **TYPE_SIMPLEX** = ``0``
 
-As opposed to [`TYPE_PERLIN`](class_fastnoiselite.md#class_fastnoiselite_constant_type_perlin), gradients exist in a simplex lattice rather than a grid lattice, avoiding directional artifacts.
+As opposed to [`TYPE_PERLIN`](class_fastnoiselite.md#class_fastnoiselite_constant_type_perlin), gradients exist in a simplex lattice rather than a grid lattice, avoiding directional artifacts. Internally uses FastNoiseLite's OpenSimplex2 noise type.
 
 <div id="_class_fastnoiselite_constant_type_simplex_smooth"></div>
 
 [NoiseType](#enum_fastnoiselite_noisetype) **TYPE_SIMPLEX_SMOOTH** = ``1``
 
-Modified, higher quality version of [`TYPE_SIMPLEX`](class_fastnoiselite.md#class_fastnoiselite_constant_type_simplex), but slower.
+Modified, higher quality version of [`TYPE_SIMPLEX`](class_fastnoiselite.md#class_fastnoiselite_constant_type_simplex), but slower. Internally uses FastNoiseLite's OpenSimplex2S noise type.
 
 <!-- rst-class:: classref-item-separator -->
 

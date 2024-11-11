@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorInspector.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorInspector.xml。 -->
 
 <div id="_class_editorinspector"></div>
 
@@ -29,6 +29,7 @@ If a property has [`@GlobalScope.PROPERTY_USAGE_SUBGROUP`](class_@globalscope.md
 
 |||
 |:-:|:--|
+| [`bool`](class_bool.md)                        | follow_focus           | ``true`` (overrides [`ScrollContainer`](class_scrollcontainer.md#class_scrollcontainer_property_follow_focus))        |
 | [ScrollMode](#enum_scrollcontainer_scrollmode) | horizontal_scroll_mode | ``0`` (overrides [`ScrollContainer`](class_scrollcontainer.md#class_scrollcontainer_property_horizontal_scroll_mode)) |
 
 ## 方法

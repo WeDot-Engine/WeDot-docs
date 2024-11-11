@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Window.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Window.xml。 -->
 
 <div id="_class_window"></div>
 
@@ -44,6 +44,7 @@ At runtime, **Window** s will not close automatically when requested. You need t
 | [`PackedVector2Array`](class_packedvector2array.md)         | [`mouse_passthrough_polygon`](class_window.md#class_window_property_mouse_passthrough_polygon) | ``PackedVector2Array()`` |
 | [`bool`](class_bool.md)                                     | [`popup_window`](class_window.md#class_window_property_popup_window)                           | ``false``                |
 | [`Vector2i`](class_vector2i.md)                             | [`position`](class_window.md#class_window_property_position)                                   | ``Vector2i(0, 0)``       |
+| [`bool`](class_bool.md)                                     | [`sharp_corners`](class_window.md#class_window_property_sharp_corners)                         | ``false``                |
 | [`Vector2i`](class_vector2i.md)                             | [`size`](class_window.md#class_window_property_size)                                           | ``Vector2i(100, 100)``   |
 | [`Theme`](class_theme.md)                                   | [`theme`](class_window.md#class_window_property_theme)                                         |                          |
 | [`StringName`](class_stringname.md)                         | [`theme_type_variation`](class_window.md#class_window_property_theme_type_variation)           | ``&""``                  |
@@ -426,9 +427,19 @@ All mouse events are passed to the underlying window of the same application.
 
  **Note:** This flag has no effect in embedded windows.
 
+<div id="_class_window_constant_flag_sharp_corners"></div>
+
+[Flags](#enum_window_flags) **FLAG_SHARP_CORNERS** = ``8``
+
+Window style is overridden, forcing sharp corners.
+
+ **Note:** This flag has no effect in embedded windows.
+
+ **Note:** This flag is implemented only on Windows (11).
+
 <div id="_class_window_constant_flag_max"></div>
 
-[Flags](#enum_window_flags) **FLAG_MAX** = ``8``
+[Flags](#enum_window_flags) **FLAG_MAX** = ``9``
 
 Max value of the [Flags](#enum_window_flags).
 
@@ -530,9 +541,9 @@ enum **LayoutDirection**: <div id="enum_window_layoutdirection"></div>
 
 Automatic layout direction, determined from the parent window layout direction.
 
-<div id="_class_window_constant_layout_direction_locale"></div>
+<div id="_class_window_constant_layout_direction_application_locale"></div>
 
-[LayoutDirection](#enum_window_layoutdirection) **LAYOUT_DIRECTION_LOCALE** = ``1``
+[LayoutDirection](#enum_window_layoutdirection) **LAYOUT_DIRECTION_APPLICATION_LOCALE** = ``1``
 
 Automatic layout direction, determined from the current locale.
 
@@ -547,6 +558,26 @@ Left-to-right layout direction.
 [LayoutDirection](#enum_window_layoutdirection) **LAYOUT_DIRECTION_RTL** = ``3``
 
 Right-to-left layout direction.
+
+<div id="_class_window_constant_layout_direction_system_locale"></div>
+
+[LayoutDirection](#enum_window_layoutdirection) **LAYOUT_DIRECTION_SYSTEM_LOCALE** = ``4``
+
+Automatic layout direction, determined from the system locale.
+
+<div id="_class_window_constant_layout_direction_max"></div>
+
+[LayoutDirection](#enum_window_layoutdirection) **LAYOUT_DIRECTION_MAX** = ``5``
+
+Represents the size of the [LayoutDirection](#enum_window_layoutdirection) enum.
+
+<div id="_class_window_constant_layout_direction_locale"></div>
+
+[LayoutDirection](#enum_window_layoutdirection) **LAYOUT_DIRECTION_LOCALE** = ``1``
+
+**已弃用：** Use [`LAYOUT_DIRECTION_APPLICATION_LOCALE`](class_window.md#class_window_constant_layout_direction_application_locale) instead.
+
+
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -958,6 +989,23 @@ The window's position in pixels.
 If [`ProjectSettings.display/window/subwindows/embed_subwindows`](class_projectsettings.md#class_projectsettings_property_display/window/subwindows/embed_subwindows) is `false`, the position is in absolute screen coordinates. This typically applies to editor plugins. If the setting is `true`, the window's position is in the coordinates of its parent [`Viewport`](class_viewport.md).
 
  **Note:** This property only works if [`initial_position`](class_window.md#class_window_property_initial_position) is set to [`WINDOW_INITIAL_POSITION_ABSOLUTE`](class_window.md#class_window_constant_window_initial_position_absolute).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_window_property_sharp_corners"></div>
+
+[`bool`](class_bool.md) **sharp_corners** = ``false`` <div id="class_window_property_sharp_corners"></div>
+
+- `void` **set_flag** ( flag: [Flags](#enum_window_flags), enabled: [`bool`](class_bool.md) )
+- [`bool`](class_bool.md) **get_flag** ( flag: [Flags](#enum_window_flags) ) const[^const]
+
+If `true`, the **Window** will override the OS window style to display sharp corners.
+
+ **Note:** This property is implemented only on Windows (11).
+
+ **Note:** This property only works with native windows.
 
 <!-- rst-class:: classref-item-separator -->
 

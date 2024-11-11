@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/XRHandTracker.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/XRHandTracker.xml。 -->
 
 <div id="_class_xrhandtracker"></div>
 
@@ -69,9 +69,15 @@ The source of hand tracking data is unobstructed, meaning that an accurate metho
 
 The source of hand tracking data is a controller, meaning that joint positions are inferred from controller inputs.
 
+<div id="_class_xrhandtracker_constant_hand_tracking_source_not_tracked"></div>
+
+[HandTrackingSource](#enum_xrhandtracker_handtrackingsource) **HAND_TRACKING_SOURCE_NOT_TRACKED** = ``3``
+
+No hand tracking data is tracked, this either means the hand is obscured, the controller is turned off, or tracking is not supported for the current input type.
+
 <div id="_class_xrhandtracker_constant_hand_tracking_source_max"></div>
 
-[HandTrackingSource](#enum_xrhandtracker_handtrackingsource) **HAND_TRACKING_SOURCE_MAX** = ``3``
+[HandTrackingSource](#enum_xrhandtracker_handtrackingsource) **HAND_TRACKING_SOURCE_MAX** = ``4``
 
 Represents the size of the [HandTrackingSource](#enum_xrhandtracker_handtrackingsource) enum.
 
