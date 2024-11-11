@@ -30,6 +30,12 @@ jobs:
       # - uses: docker://devatherock/minify-js:2.0.0
       #   with:
       #     add_suffix: false     # Optional
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifact
+          path: |
+            ./build/**
 
       - name: 部署
         uses: cloudflare/wrangler-action@v3
@@ -37,9 +43,3 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy ./build --project-name=wedot-docs
-      
-      - uses: actions/upload-artifact@v4
-        with:
-          name: artifact
-          path: |
-            ./build/**

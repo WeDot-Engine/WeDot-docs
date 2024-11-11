@@ -2,7 +2,16 @@ name: 检查
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches: [ 'latest' ]
+    paths:
+      - 'src/**'
+  merge_group:
+    branches: [ 'latest' ]
+    paths:
+      - 'src/**'
   push:
+    branches: [ 'latest' ]
     paths:
       - 'src/**'
 
