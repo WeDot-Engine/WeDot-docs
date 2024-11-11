@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/platform/android/doc_classes/EditorExportPlatformAndroid.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/platform/android/doc_classes/EditorExportPlatformAndroid.xml。 -->
 
 <div id="_class_editorexportplatformandroid"></div>
 
@@ -41,6 +41,7 @@ Exporter for Android.
 | [`String`](class_string.md)                       | [`keystore/release_user`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_keystore/release_user)                                                   |
 | [`String`](class_string.md)                       | [`launcher_icons/adaptive_background_432x432`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_launcher_icons/adaptive_background_432x432)         |
 | [`String`](class_string.md)                       | [`launcher_icons/adaptive_foreground_432x432`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_launcher_icons/adaptive_foreground_432x432)         |
+| [`String`](class_string.md)                       | [`launcher_icons/adaptive_monochrome_432x432`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_launcher_icons/adaptive_monochrome_432x432)         |
 | [`String`](class_string.md)                       | [`launcher_icons/main_192x192`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_launcher_icons/main_192x192)                                       |
 | [`int`](class_int.md)                             | [`package/app_category`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/app_category)                                                     |
 | [`bool`](class_bool.md)                           | [`package/exclude_from_recents`](class_editorexportplatformandroid.md#class_editorexportplatformandroid_property_package/exclude_from_recents)                                     |
@@ -496,6 +497,16 @@ Background layer of the application adaptive icon file. See [*Design adaptive ic
 [`String`](class_string.md) **launcher_icons/adaptive_foreground_432x432** <div id="class_editorexportplatformandroid_property_launcher_icons/adaptive_foreground_432x432"></div>
 
 Foreground layer of the application adaptive icon file. See [*Design adaptive icons*](https://developer.android.com/develop/ui/views/launch/icon_design_adaptive#design-adaptive-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformandroid_property_launcher_icons/adaptive_monochrome_432x432"></div>
+
+[`String`](class_string.md) **launcher_icons/adaptive_monochrome_432x432** <div id="class_editorexportplatformandroid_property_launcher_icons/adaptive_monochrome_432x432"></div>
+
+Monochrome layer of the application adaptive icon file. See [*Design adaptive icons*](https://developer.android.com/develop/ui/views/launch/icon_design_adaptive#design-adaptive-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2101,7 +2112,7 @@ Allows an application to write to the user dictionary.
 
 [`bool`](class_bool.md) **screen/immersive_mode** <div id="class_editorexportplatformandroid_property_screen/immersive_mode"></div>
 
-If `true`, hides navigation and status bar.
+If `true`, hides navigation and status bar. See [`DisplayServer.window_set_mode`](class_displayserver.md#class_displayserver_method_window_set_mode) to toggle it at runtime.
 
 <!-- rst-class:: classref-item-separator -->
 

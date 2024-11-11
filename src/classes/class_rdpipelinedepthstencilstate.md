@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RDPipelineDepthStencilState.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RDPipelineDepthStencilState.xml。 -->
 
 <div id="_class_rdpipelinedepthstencilstate"></div>
 
@@ -93,7 +93,7 @@ The operation to perform on the stencil buffer for back pixels that pass the ste
 - `void` **set_back_op_fail** ( value: [StencilOperation](#enum_renderingdevice_stenciloperation) )
 - [StencilOperation](#enum_renderingdevice_stenciloperation) **get_back_op_fail** ( )
 
-The operation to perform on the stencil buffer for back pixels that fail the stencil test
+The operation to perform on the stencil buffer for back pixels that fail the stencil test.
 
 <!-- rst-class:: classref-item-separator -->
 

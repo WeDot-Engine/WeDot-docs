@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RenderingDevice.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RenderingDevice.xml。 -->
 
 <div id="_class_renderingdevice"></div>
 
@@ -47,7 +47,7 @@ On startup, Godot creates a global **RenderingDevice** which can be retrieved us
 | `void`                                                 | [`draw_command_begin_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_begin_label) ( name: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | `void`                                                 | [`draw_command_end_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_end_label) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `void`                                                 | [`draw_command_insert_label`](class_renderingdevice.md#class_renderingdevice_method_draw_command_insert_label) ( name: [`String`](class_string.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [`int`](class_int.md)                                  | [`draw_list_begin`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin) ( framebuffer: [`RID`](class_rid.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0) )                                                                                                                                                                                                                                                                                |
+| [`int`](class_int.md)                                  | [`draw_list_begin`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin) ( framebuffer: [`RID`](class_rid.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0), breadcrumb: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                         |
 | [`int`](class_int.md)                                  | [`draw_list_begin_for_screen`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin_for_screen) ( screen: [`int`](class_int.md) = 0, clear_color: [`Color`](class_color.md) = Color(0, 0, 0, 1) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | [`PackedInt64Array`](class_packedint64array.md)        | [`draw_list_begin_split`](class_renderingdevice.md#class_renderingdevice_method_draw_list_begin_split) ( framebuffer: [`RID`](class_rid.md), splits: [`int`](class_int.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0), storage_textures: [Array](class_array.md) [`RID`](class_rid.md) = [] )                                                                                                                                                               |
 | `void`                                                 | [`draw_list_bind_index_array`](class_renderingdevice.md#class_renderingdevice_method_draw_list_bind_index_array) ( draw_list: [`int`](class_int.md), index_array: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -56,6 +56,7 @@ On startup, Godot creates a global **RenderingDevice** which can be retrieved us
 | `void`                                                 | [`draw_list_bind_vertex_array`](class_renderingdevice.md#class_renderingdevice_method_draw_list_bind_vertex_array) ( draw_list: [`int`](class_int.md), vertex_array: [`RID`](class_rid.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `void`                                                 | [`draw_list_disable_scissor`](class_renderingdevice.md#class_renderingdevice_method_draw_list_disable_scissor) ( draw_list: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `void`                                                 | [`draw_list_draw`](class_renderingdevice.md#class_renderingdevice_method_draw_list_draw) ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), instances: [`int`](class_int.md), procedural_vertex_count: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `void`                                                 | [`draw_list_draw_indirect`](class_renderingdevice.md#class_renderingdevice_method_draw_list_draw_indirect) ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md) = 0, draw_count: [`int`](class_int.md) = 1, stride: [`int`](class_int.md) = 0 )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `void`                                                 | [`draw_list_enable_scissor`](class_renderingdevice.md#class_renderingdevice_method_draw_list_enable_scissor) ( draw_list: [`int`](class_int.md), rect: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `void`                                                 | [`draw_list_end`](class_renderingdevice.md#class_renderingdevice_method_draw_list_end) ( )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | `void`                                                 | [`draw_list_set_blend_constants`](class_renderingdevice.md#class_renderingdevice_method_draw_list_set_blend_constants) ( draw_list: [`int`](class_int.md), color: [`Color`](class_color.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -78,12 +79,24 @@ On startup, Godot creates a global **RenderingDevice** which can be retrieved us
 | [`String`](class_string.md)                            | [`get_captured_timestamp_name`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamp_name) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [`int`](class_int.md)                                  | [`get_captured_timestamps_count`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamps_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | [`int`](class_int.md)                                  | [`get_captured_timestamps_frame`](class_renderingdevice.md#class_renderingdevice_method_get_captured_timestamps_frame) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`int`](class_int.md)                                  | [`get_device_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocation_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                  | [`get_device_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocs_by_object_type) ( type: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                  | [`get_device_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_memory_by_object_type) ( type: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | [`String`](class_string.md)                            | [`get_device_name`](class_renderingdevice.md#class_renderingdevice_method_get_device_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | [`String`](class_string.md)                            | [`get_device_pipeline_cache_uuid`](class_renderingdevice.md#class_renderingdevice_method_get_device_pipeline_cache_uuid) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                  | [`get_device_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_device_total_memory) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | [`String`](class_string.md)                            | [`get_device_vendor_name`](class_renderingdevice.md#class_renderingdevice_method_get_device_vendor_name) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`int`](class_int.md)                                  | [`get_driver_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocation_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                  | [`get_driver_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocs_by_object_type) ( type: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [`String`](class_string.md)                            | [`get_driver_and_device_memory_report`](class_renderingdevice.md#class_renderingdevice_method_get_driver_and_device_memory_report) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [`int`](class_int.md)                                  | [`get_driver_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_memory_by_object_type) ( type: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | [`int`](class_int.md)                                  | [`get_driver_resource`](class_renderingdevice.md#class_renderingdevice_method_get_driver_resource) ( resource: [DriverResource](#enum_renderingdevice_driverresource), rid: [`RID`](class_rid.md), index: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [`int`](class_int.md)                                  | [`get_driver_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_driver_total_memory) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | [`int`](class_int.md)                                  | [`get_frame_delay`](class_renderingdevice.md#class_renderingdevice_method_get_frame_delay) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | [`int`](class_int.md)                                  | [`get_memory_usage`](class_renderingdevice.md#class_renderingdevice_method_get_memory_usage) ( type: [MemoryType](#enum_renderingdevice_memorytype) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [`String`](class_string.md)                            | [`get_perf_report`](class_renderingdevice.md#class_renderingdevice_method_get_perf_report) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [`String`](class_string.md)                            | [`get_tracked_object_name`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_name) ( type_index: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [`int`](class_int.md)                                  | [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | [`RID`](class_rid.md)                                  | [`index_array_create`](class_renderingdevice.md#class_renderingdevice_method_index_array_create) ( index_buffer: [`RID`](class_rid.md), index_offset: [`int`](class_int.md), index_count: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [`RID`](class_rid.md)                                  | [`index_buffer_create`](class_renderingdevice.md#class_renderingdevice_method_index_buffer_create) ( size_indices: [`int`](class_int.md), format: [IndexBufferFormat](#enum_renderingdevice_indexbufferformat), data: [`PackedByteArray`](class_packedbytearray.md) = PackedByteArray(), use_restart_indices: [`bool`](class_bool.md) = false )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | [`int`](class_int.md)                                  | [`limit_get`](class_renderingdevice.md#class_renderingdevice_method_limit_get) ( limit: [Limit](#enum_renderingdevice_limit) ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -3350,6 +3363,118 @@ Memory taken by buffers.
 
 Total memory taken. This is greater than the sum of [`MEMORY_TEXTURES`](class_renderingdevice.md#class_renderingdevice_constant_memory_textures) and [`MEMORY_BUFFERS`](class_renderingdevice.md#class_renderingdevice_constant_memory_buffers), as it also includes miscellaneous memory usage.
 
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_enum_renderingdevice_breadcrumbmarker"></div>
+
+enum **BreadcrumbMarker**: <div id="enum_renderingdevice_breadcrumbmarker"></div>
+
+<div id="_class_renderingdevice_constant_none"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **NONE** = ``0``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_reflection_probes"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **REFLECTION_PROBES** = ``65536``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_sky_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **SKY_PASS** = ``131072``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_lightmapper_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **LIGHTMAPPER_PASS** = ``196608``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_shadow_pass_directional"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **SHADOW_PASS_DIRECTIONAL** = ``262144``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_shadow_pass_cube"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **SHADOW_PASS_CUBE** = ``327680``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_opaque_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **OPAQUE_PASS** = ``393216``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_alpha_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **ALPHA_PASS** = ``458752``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_transparent_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **TRANSPARENT_PASS** = ``524288``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_post_processing_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **POST_PROCESSING_PASS** = ``589824``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_blit_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **BLIT_PASS** = ``655360``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_ui_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **UI_PASS** = ``720896``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
+<div id="_class_renderingdevice_constant_debug_pass"></div>
+
+[BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) **DEBUG_PASS** = ``786432``
+
+该枚举目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+
+
+
 <!-- rst-class:: classref-section-separator -->
 
 ---
@@ -3633,7 +3758,7 @@ This method does nothing.
 
 <div id="_class_renderingdevice_method_draw_list_begin"></div>
 
-[`int`](class_int.md) **draw_list_begin** ( framebuffer: [`RID`](class_rid.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0) )<div id="class_renderingdevice_method_draw_list_begin"></div>
+[`int`](class_int.md) **draw_list_begin** ( framebuffer: [`RID`](class_rid.md), initial_color_action: [InitialAction](#enum_renderingdevice_initialaction), final_color_action: [FinalAction](#enum_renderingdevice_finalaction), initial_depth_action: [InitialAction](#enum_renderingdevice_initialaction), final_depth_action: [FinalAction](#enum_renderingdevice_finalaction), clear_color_values: [`PackedColorArray`](class_packedcolorarray.md) = PackedColorArray(), clear_depth: [`float`](class_float.md) = 1.0, clear_stencil: [`int`](class_int.md) = 0, region: [`Rect2`](class_rect2.md) = Rect2(0, 0, 0, 0), breadcrumb: [`int`](class_int.md) = 0 )<div id="class_renderingdevice_method_draw_list_begin"></div>
 
 Starts a list of raster drawing commands created with the `draw_*` methods. The returned value should be passed to other `draw_list_*` functions.
 
@@ -3645,7 +3770,7 @@ A simple drawing operation might look like this (code is not a complete example)
 
     var rd = RenderingDevice.new()
     var clear_colors = PackedColorArray([Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 0)])
-    var draw_list = rd.draw_list_begin(framebuffers[i], RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_READ, RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_DISCARD, clear_colors)
+    var draw_list = rd.draw_list_begin(framebuffers[i], RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_READ, RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_DISCARD, clear_colors, RenderingDevice.OPAQUE_PASS)
     
     # Draw opaque.
     rd.draw_list_bind_render_pipeline(draw_list, raster_pipeline)
@@ -3660,6 +3785,17 @@ A simple drawing operation might look like this (code is not a complete example)
     
     rd.draw_list_end()
 ```
+
+The `breadcrumb` parameter can be an arbitrary 32-bit integer that is useful to diagnose GPU crashes. If Godot is built in dev or debug mode; when the GPU crashes Godot will dump all shaders that were being executed at the time of the crash and the breadcrumb is useful to diagnose what passes did those shaders belong to.
+
+It does not affect rendering behavior and can be set to 0. It is recommended to use [BreadcrumbMarker](#enum_renderingdevice_breadcrumbmarker) enumerations for consistency but it's not required. It is also possible to use bitwise operations to add extra data. e.g.
+
+```
+
+    rd.draw_list_begin(fb[i], RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_READ, RenderingDevice.INITIAL_ACTION_CLEAR, RenderingDevice.FINAL_ACTION_DISCARD, clear_colors, RenderingDevice.OPAQUE_PASS | 5)
+```
+
+
 
 
 
@@ -3746,6 +3882,16 @@ Removes and disables the scissor rectangle for the specified `draw_list`. See al
 `void` **draw_list_draw** ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), instances: [`int`](class_int.md), procedural_vertex_count: [`int`](class_int.md) = 0 )<div id="class_renderingdevice_method_draw_list_draw"></div>
 
 Submits `draw_list` for rendering on the GPU. This is the raster equivalent to [`compute_list_dispatch`](class_renderingdevice.md#class_renderingdevice_method_compute_list_dispatch).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_draw_list_draw_indirect"></div>
+
+`void` **draw_list_draw_indirect** ( draw_list: [`int`](class_int.md), use_indices: [`bool`](class_bool.md), buffer: [`RID`](class_rid.md), offset: [`int`](class_int.md) = 0, draw_count: [`int`](class_int.md) = 1, stride: [`int`](class_int.md) = 0 )<div id="class_renderingdevice_method_draw_list_draw_indirect"></div>
+
+Submits `draw_list` for rendering on the GPU with the given parameters stored in the `buffer` at `offset`. Parameters being integers: vertex count, instance count, first vertex, first instance. And when using indices: index count, instance count, first index, vertex offset, first instance. Buffer must have been created with [`STORAGE_BUFFER_USAGE_DISPATCH_INDIRECT`](class_renderingdevice.md#class_renderingdevice_constant_storage_buffer_usage_dispatch_indirect) flag.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -3985,6 +4131,46 @@ Returns the index of the last frame rendered that has rendering timestamps avail
 
 ---
 
+<div id="_class_renderingdevice_method_get_device_allocation_count"></div>
+
+[`int`](class_int.md) **get_device_allocation_count** ( ) const[^const]<div id="class_renderingdevice_method_get_device_allocation_count"></div>
+
+Returns how many allocations the GPU has performed for internal driver structures.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_device_allocs_by_object_type"></div>
+
+[`int`](class_int.md) **get_device_allocs_by_object_type** ( type: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_device_allocs_by_object_type"></div>
+
+Same as [`get_device_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocation_count) but filtered for a given object type.
+
+The type argument must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns 0.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_device_memory_by_object_type"></div>
+
+[`int`](class_int.md) **get_device_memory_by_object_type** ( type: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_device_memory_by_object_type"></div>
+
+Same as [`get_device_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_device_total_memory) but filtered for a given object type.
+
+The type argument must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns 0.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingdevice_method_get_device_name"></div>
 
 [`String`](class_string.md) **get_device_name** ( ) const[^const]<div id="class_renderingdevice_method_get_device_name"></div>
@@ -4005,6 +4191,18 @@ Returns the universally unique identifier for the pipeline cache. This is used t
 
 ---
 
+<div id="_class_renderingdevice_method_get_device_total_memory"></div>
+
+[`int`](class_int.md) **get_device_total_memory** ( ) const[^const]<div id="class_renderingdevice_method_get_device_total_memory"></div>
+
+Returns how much bytes the GPU is using.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingdevice_method_get_device_vendor_name"></div>
 
 [`String`](class_string.md) **get_device_vendor_name** ( ) const[^const]<div id="class_renderingdevice_method_get_device_vendor_name"></div>
@@ -4015,11 +4213,95 @@ Returns the vendor of the video adapter (e.g. "NVIDIA Corporation"). Equivalent 
 
 ---
 
+<div id="_class_renderingdevice_method_get_driver_allocation_count"></div>
+
+[`int`](class_int.md) **get_driver_allocation_count** ( ) const[^const]<div id="class_renderingdevice_method_get_driver_allocation_count"></div>
+
+Returns how many allocations the GPU driver has performed for internal driver structures.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_allocs_by_object_type"></div>
+
+[`int`](class_int.md) **get_driver_allocs_by_object_type** ( type: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_driver_allocs_by_object_type"></div>
+
+Same as [`get_driver_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocation_count) but filtered for a given object type.
+
+The type argument must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns 0.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_and_device_memory_report"></div>
+
+[`String`](class_string.md) **get_driver_and_device_memory_report** ( ) const[^const]<div id="class_renderingdevice_method_get_driver_and_device_memory_report"></div>
+
+Returns string report in CSV format using the following methods:
+
+- [`get_tracked_object_name`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_name) 
+
+- [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) 
+
+- [`get_driver_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_driver_total_memory) 
+
+- [`get_driver_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocation_count) 
+
+- [`get_driver_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_memory_by_object_type) 
+
+- [`get_driver_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocs_by_object_type) 
+
+- [`get_device_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_device_total_memory) 
+
+- [`get_device_allocation_count`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocation_count) 
+
+- [`get_device_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_memory_by_object_type) 
+
+- [`get_device_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocs_by_object_type) 
+
+This is only used by Vulkan in debug builds. Godot must also be started with the `--extra-gpu-memory-tracking` [*command line argument*](../tutorials/editor/command_line_tutorial).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_memory_by_object_type"></div>
+
+[`int`](class_int.md) **get_driver_memory_by_object_type** ( type: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_driver_memory_by_object_type"></div>
+
+Same as [`get_driver_total_memory`](class_renderingdevice.md#class_renderingdevice_method_get_driver_total_memory) but filtered for a given object type.
+
+The type argument must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns 0.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_renderingdevice_method_get_driver_resource"></div>
 
 [`int`](class_int.md) **get_driver_resource** ( resource: [DriverResource](#enum_renderingdevice_driverresource), rid: [`RID`](class_rid.md), index: [`int`](class_int.md) )<div id="class_renderingdevice_method_get_driver_resource"></div>
 
 Returns the unique identifier of the driver `resource` for the specified `rid`. Some driver resource types ignore the specified `rid` (see [DriverResource](#enum_renderingdevice_driverresource) descriptions). `index` is always ignored but must be specified anyway.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_driver_total_memory"></div>
+
+[`int`](class_int.md) **get_driver_total_memory** ( ) const[^const]<div id="class_renderingdevice_method_get_driver_total_memory"></div>
+
+Returns how much bytes the GPU driver is using for internal driver structures.
+
+This is only used by Vulkan in debug builds and can return 0 when this information is not tracked or unknown.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4040,6 +4322,52 @@ Returns the frame count kept by the graphics API. Higher values result in higher
 [`int`](class_int.md) **get_memory_usage** ( type: [MemoryType](#enum_renderingdevice_memorytype) ) const[^const]<div id="class_renderingdevice_method_get_memory_usage"></div>
 
 Returns the memory usage in bytes corresponding to the given `type`. When using Vulkan, these statistics are calculated by [*Vulkan Memory Allocator*](https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_perf_report"></div>
+
+[`String`](class_string.md) **get_perf_report** ( ) const[^const]<div id="class_renderingdevice_method_get_perf_report"></div>
+
+Returns a string with a performance report from the past frame. Updates every frame.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_tracked_object_name"></div>
+
+[`String`](class_string.md) **get_tracked_object_name** ( type_index: [`int`](class_int.md) ) const[^const]<div id="class_renderingdevice_method_get_tracked_object_name"></div>
+
+Returns the name of the type of object for the given `type_index`. This value must be in range `[0; get_tracked_object_type_count - 1]`. If [`get_tracked_object_type_count`](class_renderingdevice.md#class_renderingdevice_method_get_tracked_object_type_count) is 0, then type argument is ignored and always returns the same string.
+
+The return value is important because it gives meaning to the types passed to [`get_driver_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_memory_by_object_type), [`get_driver_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_driver_allocs_by_object_type), [`get_device_memory_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_memory_by_object_type), and [`get_device_allocs_by_object_type`](class_renderingdevice.md#class_renderingdevice_method_get_device_allocs_by_object_type). Examples of strings it can return (not exhaustive):
+
+- DEVICE_MEMORY
+
+- PIPELINE_CACHE
+
+- SWAPCHAIN_KHR
+
+- COMMAND_POOL
+
+Thus if e.g. `get_tracked_object_name(5)` returns "COMMAND_POOL", then `get_device_memory_by_object_type(5)` returns the bytes used by the GPU for command pools.
+
+This is only used by Vulkan in debug builds. Godot must also be started with the `--extra-gpu-memory-tracking` [*command line argument*](../tutorials/editor/command_line_tutorial).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_renderingdevice_method_get_tracked_object_type_count"></div>
+
+[`int`](class_int.md) **get_tracked_object_type_count** ( ) const[^const]<div id="class_renderingdevice_method_get_tracked_object_type_count"></div>
+
+Returns how many types of trackable objects are.
+
+This is only used by Vulkan in debug builds. Godot must also be started with the `--extra-gpu-memory-tracking` [*command line argument*](../tutorials/editor/command_line_tutorial).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4363,7 +4691,7 @@ Creates a shared texture using the specified `view` and the texture information 
 
 [`RID`](class_rid.md) **texture_create_shared_from_slice** ( view: [`RDTextureView`](class_rdtextureview.md), with_texture: [`RID`](class_rid.md), layer: [`int`](class_int.md), mipmap: [`int`](class_int.md), mipmaps: [`int`](class_int.md) = 1, slice_type: [TextureSliceType](#enum_renderingdevice_textureslicetype) = 0 )<div id="class_renderingdevice_method_texture_create_shared_from_slice"></div>
 
-Creates a shared texture using the specified `view` and the texture information from `with_texture`'s `layer` and `mipmap`. The number of included mipmaps from the original texture can be controlled using the `mipmaps` parameter. Only relevant for textures with multiple layers, such as 3D textures, texture arrays and cubemaps. For single-layer textures, use [`texture_create_shared`](class_renderingdevice.md#class_renderingdevice_method_texture_create_shared) 
+Creates a shared texture using the specified `view` and the texture information from `with_texture`'s `layer` and `mipmap`. The number of included mipmaps from the original texture can be controlled using the `mipmaps` parameter. Only relevant for textures with multiple layers, such as 3D textures, texture arrays and cubemaps. For single-layer textures, use [`texture_create_shared`](class_renderingdevice.md#class_renderingdevice_method_texture_create_shared).
 
 For 2D textures (which only have one layer), `layer` must be `0`.
 

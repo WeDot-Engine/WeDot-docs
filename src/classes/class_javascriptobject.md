@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/JavaScriptObject.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/JavaScriptObject.xml。 -->
 
 <div id="_class_javascriptobject"></div>
 
@@ -14,8 +14,6 @@ A wrapper class for web native JavaScript objects.
 ## 描述
 
 JavaScriptObject is used to interact with JavaScript objects retrieved or created via [`JavaScriptBridge.get_interface`](class_javascriptbridge.md#class_javascriptbridge_method_get_interface), [`JavaScriptBridge.create_object`](class_javascriptbridge.md#class_javascriptbridge_method_create_object), or [`JavaScriptBridge.create_callback`](class_javascriptbridge.md#class_javascriptbridge_method_create_callback).
-
- **Example:** 
 
 ```
 

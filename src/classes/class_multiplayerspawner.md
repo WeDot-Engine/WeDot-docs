@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/multiplayer/doc_classes/MultiplayerSpawner.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/multiplayer/doc_classes/MultiplayerSpawner.xml。 -->
 
 <div id="_class_multiplayerspawner"></div>
 
@@ -47,7 +47,7 @@ Internally, **MultiplayerSpawner** uses [`MultiplayerAPI.object_configuration_ad
 
 **despawned** ( node: [`Node`](class_node.md) ) <div id="class_multiplayerspawner_signal_despawned"></div>
 
-Emitted when a spawnable scene or custom spawn was despawned by the multiplayer authority. Only called on puppets.
+Emitted when a spawnable scene or custom spawn was despawned by the multiplayer authority. Only called on remote peers.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -57,7 +57,7 @@ Emitted when a spawnable scene or custom spawn was despawned by the multiplayer 
 
 **spawned** ( node: [`Node`](class_node.md) ) <div id="class_multiplayerspawner_signal_spawned"></div>
 
-Emitted when a spawnable scene or custom spawn was spawned by the multiplayer authority. Only called on puppets.
+Emitted when a spawnable scene or custom spawn was spawned by the multiplayer authority. Only called on remote peers.
 
 <!-- rst-class:: classref-section-separator -->
 

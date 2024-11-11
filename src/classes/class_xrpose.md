@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/XRPose.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/XRPose.xml。 -->
 
 <div id="_class_xrpose"></div>
 
@@ -114,15 +114,15 @@ The linear velocity of this pose.
 - `void` **set_name** ( value: [`StringName`](class_stringname.md) )
 - [`StringName`](class_stringname.md) **get_name** ( )
 
-The name of this pose. Pose names are often driven by an action map setup by the user. Godot does suggest a number of pose names that it expects [`XRInterface`](class_xrinterface.md) s to implement:
+The name of this pose. Usually, this name is derived from an action map set up by the user. Godot also suggests some pose names that [`XRInterface`](class_xrinterface.md) objects are expected to implement:
 
-- `root` defines a root location, often used for tracked objects that do not have further nodes.
+- `root` is the root location, often used for tracked objects that do not have further nodes.
 
-- `aim` defines the tip of a controller with the orientation pointing outwards, for example: add your raycasts to this.
+- `aim` is the tip of a controller with its orientation pointing outwards, often used for raycasts.
 
-- `grip` defines the location where the user grips the controller
+- `grip` is the location where the user grips the controller.
 
-- `skeleton` defines the root location a hand mesh should be placed when using hand tracking and the animated skeleton supplied by the XR runtime.
+- `skeleton` is the root location for a hand mesh, when using hand tracking and an animated skeleton is supplied by the XR runtime.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Rect2.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Rect2.xml。 -->
 
 <div id="_class_rect2"></div>
 
@@ -48,6 +48,7 @@ For integer coordinates, use [`Rect2i`](class_rect2i.md). The 3D equivalent to *
 | [`Rect2`](class_rect2.md)     | [`expand`](class_rect2.md#class_rect2_method_expand) ( to: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                      |
 | [`float`](class_float.md)     | [`get_area`](class_rect2.md#class_rect2_method_get_area) ( ) const[^const]                                                                                                                                                    |
 | [`Vector2`](class_vector2.md) | [`get_center`](class_rect2.md#class_rect2_method_get_center) ( ) const[^const]                                                                                                                                                |
+| [`Vector2`](class_vector2.md) | [`get_support`](class_rect2.md#class_rect2_method_get_support) ( direction: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                     |
 | [`Rect2`](class_rect2.md)     | [`grow`](class_rect2.md#class_rect2_method_grow) ( amount: [`float`](class_float.md) ) const[^const]                                                                                                                          |
 | [`Rect2`](class_rect2.md)     | [`grow_individual`](class_rect2.md#class_rect2_method_grow_individual) ( left: [`float`](class_float.md), top: [`float`](class_float.md), right: [`float`](class_float.md), bottom: [`float`](class_float.md) ) const[^const] |
 | [`Rect2`](class_rect2.md)     | [`grow_side`](class_rect2.md#class_rect2_method_grow_side) ( side: [`int`](class_int.md), amount: [`float`](class_float.md) ) const[^const]                                                                                   |
@@ -242,6 +243,16 @@ Returns the rectangle's area. This is equivalent to `size.x * size.y`. See also 
 [`Vector2`](class_vector2.md) **get_center** ( ) const[^const]<div id="class_rect2_method_get_center"></div>
 
 Returns the center point of the rectangle. This is the same as `position + (size / 2.0)`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_rect2_method_get_support"></div>
+
+[`Vector2`](class_vector2.md) **get_support** ( direction: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_rect2_method_get_support"></div>
+
+Returns the vertex's position of this rect that's the farthest in the given direction. This point is commonly known as the support point in collision detection algorithms.
 
 <!-- rst-class:: classref-item-separator -->
 

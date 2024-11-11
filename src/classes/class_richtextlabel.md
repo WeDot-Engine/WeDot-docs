@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/RichTextLabel.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/RichTextLabel.xml。 -->
 
 <div id="_class_richtextlabel"></div>
 
@@ -36,6 +36,8 @@ A control for displaying text that can contain custom fonts, images, and basic f
 | [`bool`](class_bool.md)                                                 | [`drag_and_drop_selection_enabled`](class_richtextlabel.md#class_richtextlabel_property_drag_and_drop_selection_enabled)             | ``true``                                                                                |
 | [`bool`](class_bool.md)                                                 | [`fit_content`](class_richtextlabel.md#class_richtextlabel_property_fit_content)                                                     | ``false``                                                                               |
 | [`bool`](class_bool.md)                                                 | [`hint_underlined`](class_richtextlabel.md#class_richtextlabel_property_hint_underlined)                                             | ``true``                                                                                |
+| [HorizontalAlignment](#enum_@globalscope_horizontalalignment)           | [`horizontal_alignment`](class_richtextlabel.md#class_richtextlabel_property_horizontal_alignment)                                   | ``0``                                                                                   |
+| [JustificationFlag](#enum_textserver_justificationflag)                 | [`justification_flags`](class_richtextlabel.md#class_richtextlabel_property_justification_flags)                                     | ``163``                                                                                 |
 | [`String`](class_string.md)                                             | [`language`](class_richtextlabel.md#class_richtextlabel_property_language)                                                           | ``""``                                                                                  |
 | [`bool`](class_bool.md)                                                 | [`meta_underlined`](class_richtextlabel.md#class_richtextlabel_property_meta_underlined)                                             | ``true``                                                                                |
 | [`int`](class_int.md)                                                   | [`progress_bar_delay`](class_richtextlabel.md#class_richtextlabel_property_progress_bar_delay)                                       | ``1000``                                                                                |
@@ -46,6 +48,7 @@ A control for displaying text that can contain custom fonts, images, and basic f
 | [StructuredTextParser](#enum_textserver_structuredtextparser)           | [`structured_text_bidi_override`](class_richtextlabel.md#class_richtextlabel_property_structured_text_bidi_override)                 | ``0``                                                                                   |
 | [`Array`](class_array.md)                                               | [`structured_text_bidi_override_options`](class_richtextlabel.md#class_richtextlabel_property_structured_text_bidi_override_options) | ``[]``                                                                                  |
 | [`int`](class_int.md)                                                   | [`tab_size`](class_richtextlabel.md#class_richtextlabel_property_tab_size)                                                           | ``4``                                                                                   |
+| [`PackedFloat32Array`](class_packedfloat32array.md)                     | [`tab_stops`](class_richtextlabel.md#class_richtextlabel_property_tab_stops)                                                         | ``PackedFloat32Array()``                                                                |
 | [`String`](class_string.md)                                             | [`text`](class_richtextlabel.md#class_richtextlabel_property_text)                                                                   | ``""``                                                                                  |
 | [TextDirection](#enum_control_textdirection)                            | [`text_direction`](class_richtextlabel.md#class_richtextlabel_property_text_direction)                                               | ``0``                                                                                   |
 | [`bool`](class_bool.md)                                                 | [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded)                                                           | ``false``                                                                               |
@@ -81,6 +84,7 @@ A control for displaying text that can contain custom fonts, images, and basic f
 | [`int`](class_int.md)               | [`get_visible_paragraph_count`](class_richtextlabel.md#class_richtextlabel_method_get_visible_paragraph_count) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | `void`                              | [`install_effect`](class_richtextlabel.md#class_richtextlabel_method_install_effect) ( effect: [`Variant`](class_variant.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | [`bool`](class_bool.md)             | [`invalidate_paragraph`](class_richtextlabel.md#class_richtextlabel_method_invalidate_paragraph) ( paragraph: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [`bool`](class_bool.md)             | [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | [`bool`](class_bool.md)             | [`is_menu_visible`](class_richtextlabel.md#class_richtextlabel_method_is_menu_visible) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | [`bool`](class_bool.md)             | [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) ( ) const[^const]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | `void`                              | [`menu_option`](class_richtextlabel.md#class_richtextlabel_method_menu_option) ( option: [`int`](class_int.md) )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -476,6 +480,32 @@ If `true`, the label underlines hint tags such as `[hint=description]{text}[/hin
 
 ---
 
+<div id="_class_richtextlabel_property_horizontal_alignment"></div>
+
+[HorizontalAlignment](#enum_@globalscope_horizontalalignment) **horizontal_alignment** = ``0`` <div id="class_richtextlabel_property_horizontal_alignment"></div>
+
+- `void` **set_horizontal_alignment** ( value: [HorizontalAlignment](#enum_@globalscope_horizontalalignment) )
+- [HorizontalAlignment](#enum_@globalscope_horizontalalignment) **get_horizontal_alignment** ( )
+
+Controls the text's horizontal alignment. Supports left, center, right, and fill, or justify. Set it to one of the [HorizontalAlignment](#enum_@globalscope_horizontalalignment) constants.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_richtextlabel_property_justification_flags"></div>
+
+[JustificationFlag](#enum_textserver_justificationflag) **justification_flags** = ``163`` <div id="class_richtextlabel_property_justification_flags"></div>
+
+- `void` **set_justification_flags** ( value: [JustificationFlag](#enum_textserver_justificationflag) )
+- [JustificationFlag](#enum_textserver_justificationflag) **get_justification_flags** ( )
+
+Line fill alignment rules. See [JustificationFlag](#enum_textserver_justificationflag) for more information.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_richtextlabel_property_language"></div>
 
 [`String`](class_string.md) **language** = ``""`` <div id="class_richtextlabel_property_language"></div>
@@ -603,6 +633,21 @@ Set additional options for BiDi override.
 - [`int`](class_int.md) **get_tab_size** ( )
 
 The number of spaces associated with a single tab length. Does not affect `\t` in text tags, only indent tags.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_richtextlabel_property_tab_stops"></div>
+
+[`PackedFloat32Array`](class_packedfloat32array.md) **tab_stops** = ``PackedFloat32Array()`` <div id="class_richtextlabel_property_tab_stops"></div>
+
+- `void` **set_tab_stops** ( value: [`PackedFloat32Array`](class_packedfloat32array.md) )
+- [`PackedFloat32Array`](class_packedfloat32array.md) **get_tab_stops** ( )
+
+Aligns text to the given tab-stops.
+
+**Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedFloat32Array`](class_packedfloat32array.md) for more details.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -764,7 +809,7 @@ Clears the current selection.
 
 Returns the line number of the character position provided. Line and character numbers are both zero-indexed.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -776,7 +821,7 @@ Returns the line number of the character position provided. Line and character n
 
 Returns the paragraph number of the character position provided. Paragraph and character numbers are both zero-indexed.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -788,7 +833,7 @@ Returns the paragraph number of the character position provided. Paragraph and c
 
 Returns the height of the content.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -800,7 +845,7 @@ Returns the height of the content.
 
 Returns the width of the content.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -812,7 +857,7 @@ Returns the width of the content.
 
 Returns the total number of lines in the text. Wrapped text is counted as multiple lines.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -824,7 +869,7 @@ Returns the total number of lines in the text. Wrapped text is counted as multip
 
 Returns the vertical offset of the line found at the provided index.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -908,7 +953,7 @@ Returns the total number of paragraphs (newlines or `p` tags in the tag stack's 
 
 Returns the vertical offset of the paragraph found at the provided index.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -982,7 +1027,7 @@ Returns the vertical scrollbar.
 
 Returns the number of visible lines.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -994,7 +1039,7 @@ Returns the number of visible lines.
 
 Returns the number of visible paragraphs. A paragraph is considered visible if at least one of its lines is visible.
 
- **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_ready`](class_richtextlabel.md#class_richtextlabel_method_is_ready) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
+ **Note:** If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, this method returns a value for the loaded part of the document. Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) or [`finished`](class_richtextlabel.md#class_richtextlabel_signal_finished) to determine whether document is fully loaded.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1051,6 +1096,16 @@ Invalidates `paragraph` and all subsequent paragraphs cache.
 
 ---
 
+<div id="_class_richtextlabel_method_is_finished"></div>
+
+[`bool`](class_bool.md) **is_finished** ( ) const[^const]<div id="class_richtextlabel_method_is_finished"></div>
+
+If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, returns `true` if the background thread has finished text processing, otherwise always return `true`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_richtextlabel_method_is_menu_visible"></div>
 
 [`bool`](class_bool.md) **is_menu_visible** ( ) const[^const]<div id="class_richtextlabel_method_is_menu_visible"></div>
@@ -1064,6 +1119,8 @@ Returns whether the menu is visible. Use this instead of `get_menu().visible` to
 <div id="_class_richtextlabel_method_is_ready"></div>
 
 [`bool`](class_bool.md) **is_ready** ( ) const[^const]<div id="class_richtextlabel_method_is_ready"></div>
+
+**已弃用：** Use [`is_finished`](class_richtextlabel.md#class_richtextlabel_method_is_finished) instead.
 
 If [`threaded`](class_richtextlabel.md#class_richtextlabel_property_threaded) is enabled, returns `true` if the background thread has finished text processing, otherwise always return `true`.
 

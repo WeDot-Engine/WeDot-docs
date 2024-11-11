@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ShapeCast2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ShapeCast2D.xml。 -->
 
 <div id="_class_shapecast2d"></div>
 
@@ -95,7 +95,7 @@ If `true`, collisions with [`PhysicsBody2D`](class_physicsbody2d.md) s will be r
 - `void` **set_collision_mask** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_collision_mask** ( )
 
-The shape's collision mask. Only objects in at least one collision layer enabled in the mask will be detected.
+The shape's collision mask. Only objects in at least one collision layer enabled in the mask will be detected. See [*Collision layers and masks*](../tutorials/physics/physics_introduction.md#collision-layers-and-masks) in the documentation for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -104,6 +104,8 @@ The shape's collision mask. Only objects in at least one collision layer enabled
 <div id="_class_shapecast2d_property_collision_result"></div>
 
 [`Array`](class_array.md) **collision_result** = ``[]`` <div id="class_shapecast2d_property_collision_result"></div>
+
+- [`Array`](class_array.md) **get_collision_result** ( )
 
 Returns the complete collision information from the collision sweep. The data returned is the same as in the [`PhysicsDirectSpaceState2D.get_rest_info`](class_physicsdirectspacestate2d.md#class_physicsdirectspacestate2d_method_get_rest_info) method.
 
@@ -170,7 +172,7 @@ The number of intersections can be limited with this parameter, to reduce the pr
 - `void` **set_shape** ( value: [`Shape2D`](class_shape2d.md) )
 - [`Shape2D`](class_shape2d.md) **get_shape** ( )
 
-The [`Shape2D`](class_shape2d.md)-derived shape to be used for collision queries.
+The shape to be used for collision queries.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -183,7 +185,7 @@ The [`Shape2D`](class_shape2d.md)-derived shape to be used for collision queries
 - `void` **set_target_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_target_position** ( )
 
-The shape's destination point, relative to this node's `position`.
+The shape's destination point, relative to this node's [`Node2D.position`](class_node2d.md#class_node2d_property_position).
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -195,7 +197,7 @@ The shape's destination point, relative to this node's `position`.
 
 `void` **add_exception** ( node: [`CollisionObject2D`](class_collisionobject2d.md) )<div id="class_shapecast2d_method_add_exception"></div>
 
-Adds a collision exception so the shape does not report collisions with the specified [`CollisionObject2D`](class_collisionobject2d.md) node.
+Adds a collision exception so the shape does not report collisions with the specified node.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -227,7 +229,7 @@ Removes all collision exceptions for this shape.
 
 Updates the collision information for the shape immediately, without waiting for the next `_physics_process` call. Use this method, for example, when the shape or its parent has changed state.
 
- **Note:** `enabled == true` is not required for this to work.
+ **Note:** Setting [`enabled`](class_shapecast2d.md#class_shapecast2d_property_enabled) to `true` is not required for this to work.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -237,7 +239,7 @@ Updates the collision information for the shape immediately, without waiting for
 
 [`float`](class_float.md) **get_closest_collision_safe_fraction** ( ) const[^const]<div id="class_shapecast2d_method_get_closest_collision_safe_fraction"></div>
 
-The fraction from the **ShapeCast2D**'s origin to its [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position) (between 0 and 1) of how far the shape can move without triggering a collision.
+Returns the fraction from this cast's origin to its [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position) of how far the shape can move without triggering a collision, as a value between `0.0` and `1.0`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -247,7 +249,7 @@ The fraction from the **ShapeCast2D**'s origin to its [`target_position`](class_
 
 [`float`](class_float.md) **get_closest_collision_unsafe_fraction** ( ) const[^const]<div id="class_shapecast2d_method_get_closest_collision_unsafe_fraction"></div>
 
-The fraction from the **ShapeCast2D**'s origin to its [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position) (between 0 and 1) of how far the shape must move to trigger a collision.
+Returns the fraction from this cast's origin to its [`target_position`](class_shapecast2d.md#class_shapecast2d_property_target_position) of how far the shape must move to trigger a collision, as a value between `0.0` and `1.0`.
 
 In ideal conditions this would be the same as [`get_closest_collision_safe_fraction`](class_shapecast2d.md#class_shapecast2d_method_get_closest_collision_safe_fraction), however shape casting is calculated in discrete steps, so the precise point of collision can occur between two calculated positions.
 
@@ -321,7 +323,7 @@ Returns the normal of one of the multiple collisions at `index` of the intersect
 
 Returns the collision point of one of the multiple collisions at `index` where the shape intersects the colliding object.
 
- **Note:** this point is in the **global** coordinate system.
+ **Note:** This point is in the **global** coordinate system.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -341,7 +343,7 @@ Returns whether any object is intersecting with the shape's vector (considering 
 
 `void` **remove_exception** ( node: [`CollisionObject2D`](class_collisionobject2d.md) )<div id="class_shapecast2d_method_remove_exception"></div>
 
-Removes a collision exception so the shape does report collisions with the specified [`CollisionObject2D`](class_collisionobject2d.md) node.
+Removes a collision exception so the shape does report collisions with the specified node.
 
 <!-- rst-class:: classref-item-separator -->
 

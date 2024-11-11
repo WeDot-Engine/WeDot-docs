@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorDebuggerPlugin.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorDebuggerPlugin.xml。 -->
 
 <div id="_class_editordebuggerplugin"></div>
 
@@ -30,18 +30,20 @@ You can retrieve the available [`EditorDebuggerSession`](class_editordebuggerses
     
     class ExampleEditorDebugger extends EditorDebuggerPlugin:
     
-        func _has_capture(prefix):
-            # Return true if you wish to handle message with this prefix.
-            return prefix == "my_plugin"
+        func _has_capture(capture):
+            # Return true if you wish to handle messages with the prefix "my_plugin:".
+            return capture == "my_plugin"
     
         func _capture(message, data, session_id):
             if message == "my_plugin:ping":
                 get_session(session_id).send_message("my_plugin:echo", data)
+                return true
+            return false
     
         func _setup_session(session_id):
             # Add a new tab in the debugger session UI containing a label.
             var label = Label.new()
-            label.name = "Example plugin"
+            label.name = "Example plugin" # Will be used as the tab title.
             label.text = "Example plugin"
             var session = get_session(session_id)
             # Listens to the session started and stopped signals.
@@ -57,6 +59,32 @@ You can retrieve the available [`EditorDebuggerSession`](class_editordebuggerses
     func _exit_tree():
         remove_debugger_plugin(debugger)
 ```
+
+
+
+To connect on the running game side, use the [`EngineDebugger`](class_enginedebugger.md) singleton:
+
+
+
+```gdscript
+
+    extends Node
+    
+    func _ready():
+        EngineDebugger.register_message_capture("my_plugin", _capture)
+        EngineDebugger.send_message("my_plugin:ping", ["test"])
+    
+    func _capture(message, data):
+        # Note that the "my_plugin:" prefix is not used here.
+        if message == "echo":
+            prints("Echo received:", data)
+            return true
+        return false
+```
+
+
+
+ **Note:** While the game is running, [`@GlobalScope.print`](class_@globalscope.md#class_@globalscope_method_print) and similar functions *called in the editor* do not print anything, the Output Log prints only game messages.
 
 
 
@@ -105,7 +133,7 @@ Override this method to be notified when all breakpoints are cleared in the edit
 
 [`bool`](class_bool.md) **_capture** ( message: [`String`](class_string.md), data: [`Array`](class_array.md), session_id: [`int`](class_int.md) ) virtual[^virtual]<div id="class_editordebuggerplugin_private_method__capture"></div>
 
-Override this method to process incoming messages. The `session_id` is the ID of the [`EditorDebuggerSession`](class_editordebuggersession.md) that received the message (which you can retrieve via [`get_session`](class_editordebuggerplugin.md#class_editordebuggerplugin_method_get_session)).
+Override this method to process incoming messages. The `session_id` is the ID of the [`EditorDebuggerSession`](class_editordebuggersession.md) that received the `message`. Use [`get_session`](class_editordebuggerplugin.md#class_editordebuggerplugin_method_get_session) to retrieve the session. This method should return `true` if the message is recognized.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -135,7 +163,7 @@ Override this method to enable receiving messages from the debugger. If `capture
 
 `void` **_setup_session** ( session_id: [`int`](class_int.md) ) virtual[^virtual]<div id="class_editordebuggerplugin_private_method__setup_session"></div>
 
-Override this method to be notified whenever a new [`EditorDebuggerSession`](class_editordebuggersession.md) is created (the session may be inactive during this stage).
+Override this method to be notified whenever a new [`EditorDebuggerSession`](class_editordebuggersession.md) is created. Note that the session may be inactive during this stage.
 
 <!-- rst-class:: classref-item-separator -->
 

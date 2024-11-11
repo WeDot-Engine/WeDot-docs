@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Viewport.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Viewport.xml。 -->
 
 <div id="_class_viewport"></div>
 
@@ -29,52 +29,53 @@ Finally, viewports can also behave as render targets, in which case they will no
 
 |||
 |:-:|:--|
-| [`bool`](class_bool.md)                                                                   | [`audio_listener_enable_2d`](class_viewport.md#class_viewport_property_audio_listener_enable_2d)                     | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`audio_listener_enable_3d`](class_viewport.md#class_viewport_property_audio_listener_enable_3d)                     | ``false``      |
-| [`int`](class_int.md)                                                                     | [`canvas_cull_mask`](class_viewport.md#class_viewport_property_canvas_cull_mask)                                     | ``4294967295`` |
-| [DefaultCanvasItemTextureFilter](#enum_viewport_defaultcanvasitemtexturefilter)           | [`canvas_item_default_texture_filter`](class_viewport.md#class_viewport_property_canvas_item_default_texture_filter) | ``1``          |
-| [DefaultCanvasItemTextureRepeat](#enum_viewport_defaultcanvasitemtexturerepeat)           | [`canvas_item_default_texture_repeat`](class_viewport.md#class_viewport_property_canvas_item_default_texture_repeat) | ``0``          |
-| [`Transform2D`](class_transform2d.md)                                                     | [`canvas_transform`](class_viewport.md#class_viewport_property_canvas_transform)                                     |                |
-| [DebugDraw](#enum_viewport_debugdraw)                                                     | [`debug_draw`](class_viewport.md#class_viewport_property_debug_draw)                                                 | ``0``          |
-| [`bool`](class_bool.md)                                                                   | [`disable_3d`](class_viewport.md#class_viewport_property_disable_3d)                                                 | ``false``      |
-| [`float`](class_float.md)                                                                 | [`fsr_sharpness`](class_viewport.md#class_viewport_property_fsr_sharpness)                                           | ``0.2``        |
-| [`Transform2D`](class_transform2d.md)                                                     | [`global_canvas_transform`](class_viewport.md#class_viewport_property_global_canvas_transform)                       |                |
-| [`bool`](class_bool.md)                                                                   | [`gui_disable_input`](class_viewport.md#class_viewport_property_gui_disable_input)                                   | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`gui_embed_subwindows`](class_viewport.md#class_viewport_property_gui_embed_subwindows)                             | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`gui_snap_controls_to_pixels`](class_viewport.md#class_viewport_property_gui_snap_controls_to_pixels)               | ``true``       |
-| [`bool`](class_bool.md)                                                                   | [`handle_input_locally`](class_viewport.md#class_viewport_property_handle_input_locally)                             | ``true``       |
-| [`float`](class_float.md)                                                                 | [`mesh_lod_threshold`](class_viewport.md#class_viewport_property_mesh_lod_threshold)                                 | ``1.0``        |
-| [MSAA](#enum_viewport_msaa)                                                               | [`msaa_2d`](class_viewport.md#class_viewport_property_msaa_2d)                                                       | ``0``          |
-| [MSAA](#enum_viewport_msaa)                                                               | [`msaa_3d`](class_viewport.md#class_viewport_property_msaa_3d)                                                       | ``0``          |
-| [`bool`](class_bool.md)                                                                   | [`own_world_3d`](class_viewport.md#class_viewport_property_own_world_3d)                                             | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`physics_object_picking`](class_viewport.md#class_viewport_property_physics_object_picking)                         | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`physics_object_picking_first_only`](class_viewport.md#class_viewport_property_physics_object_picking_first_only)   | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`physics_object_picking_sort`](class_viewport.md#class_viewport_property_physics_object_picking_sort)               | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`positional_shadow_atlas_16_bits`](class_viewport.md#class_viewport_property_positional_shadow_atlas_16_bits)       | ``true``       |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_0`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_0)         | ``2``          |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_1`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_1)         | ``2``          |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_2`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_2)         | ``3``          |
-| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_3`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_3)         | ``4``          |
-| [`int`](class_int.md)                                                                     | [`positional_shadow_atlas_size`](class_viewport.md#class_viewport_property_positional_shadow_atlas_size)             | ``2048``       |
-| [Scaling3DMode](#enum_viewport_scaling3dmode)                                             | [`scaling_3d_mode`](class_viewport.md#class_viewport_property_scaling_3d_mode)                                       | ``0``          |
-| [`float`](class_float.md)                                                                 | [`scaling_3d_scale`](class_viewport.md#class_viewport_property_scaling_3d_scale)                                     | ``1.0``        |
-| [ScreenSpaceAA](#enum_viewport_screenspaceaa)                                             | [`screen_space_aa`](class_viewport.md#class_viewport_property_screen_space_aa)                                       | ``0``          |
-| [SDFOversize](#enum_viewport_sdfoversize)                                                 | [`sdf_oversize`](class_viewport.md#class_viewport_property_sdf_oversize)                                             | ``1``          |
-| [SDFScale](#enum_viewport_sdfscale)                                                       | [`sdf_scale`](class_viewport.md#class_viewport_property_sdf_scale)                                                   | ``1``          |
-| [`bool`](class_bool.md)                                                                   | [`snap_2d_transforms_to_pixel`](class_viewport.md#class_viewport_property_snap_2d_transforms_to_pixel)               | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`snap_2d_vertices_to_pixel`](class_viewport.md#class_viewport_property_snap_2d_vertices_to_pixel)                   | ``false``      |
-| [`float`](class_float.md)                                                                 | [`texture_mipmap_bias`](class_viewport.md#class_viewport_property_texture_mipmap_bias)                               | ``0.0``        |
-| [`bool`](class_bool.md)                                                                   | [`transparent_bg`](class_viewport.md#class_viewport_property_transparent_bg)                                         | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_debanding`](class_viewport.md#class_viewport_property_use_debanding)                                           | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_hdr_2d`](class_viewport.md#class_viewport_property_use_hdr_2d)                                                 | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_occlusion_culling`](class_viewport.md#class_viewport_property_use_occlusion_culling)                           | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_taa`](class_viewport.md#class_viewport_property_use_taa)                                                       | ``false``      |
-| [`bool`](class_bool.md)                                                                   | [`use_xr`](class_viewport.md#class_viewport_property_use_xr)                                                         | ``false``      |
-| [VRSMode](#enum_viewport_vrsmode)                                                         | [`vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode)                                                     | ``0``          |
-| [`Texture2D`](class_texture2d.md)                                                         | [`vrs_texture`](class_viewport.md#class_viewport_property_vrs_texture)                                               |                |
-| [VRSUpdateMode](#enum_viewport_vrsupdatemode)                                             | [`vrs_update_mode`](class_viewport.md#class_viewport_property_vrs_update_mode)                                       | ``1``          |
-| [`World2D`](class_world2d.md)                                                             | [`world_2d`](class_viewport.md#class_viewport_property_world_2d)                                                     |                |
-| [`World3D`](class_world3d.md)                                                             | [`world_3d`](class_viewport.md#class_viewport_property_world_3d)                                                     |                |
+| [`bool`](class_bool.md)                                                                   | [`audio_listener_enable_2d`](class_viewport.md#class_viewport_property_audio_listener_enable_2d)                     | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`audio_listener_enable_3d`](class_viewport.md#class_viewport_property_audio_listener_enable_3d)                     | ``false``                                                                                |
+| [`int`](class_int.md)                                                                     | [`canvas_cull_mask`](class_viewport.md#class_viewport_property_canvas_cull_mask)                                     | ``4294967295``                                                                           |
+| [DefaultCanvasItemTextureFilter](#enum_viewport_defaultcanvasitemtexturefilter)           | [`canvas_item_default_texture_filter`](class_viewport.md#class_viewport_property_canvas_item_default_texture_filter) | ``1``                                                                                    |
+| [DefaultCanvasItemTextureRepeat](#enum_viewport_defaultcanvasitemtexturerepeat)           | [`canvas_item_default_texture_repeat`](class_viewport.md#class_viewport_property_canvas_item_default_texture_repeat) | ``0``                                                                                    |
+| [`Transform2D`](class_transform2d.md)                                                     | [`canvas_transform`](class_viewport.md#class_viewport_property_canvas_transform)                                     |                                                                                          |
+| [DebugDraw](#enum_viewport_debugdraw)                                                     | [`debug_draw`](class_viewport.md#class_viewport_property_debug_draw)                                                 | ``0``                                                                                    |
+| [`bool`](class_bool.md)                                                                   | [`disable_3d`](class_viewport.md#class_viewport_property_disable_3d)                                                 | ``false``                                                                                |
+| [`float`](class_float.md)                                                                 | [`fsr_sharpness`](class_viewport.md#class_viewport_property_fsr_sharpness)                                           | ``0.2``                                                                                  |
+| [`Transform2D`](class_transform2d.md)                                                     | [`global_canvas_transform`](class_viewport.md#class_viewport_property_global_canvas_transform)                       |                                                                                          |
+| [`bool`](class_bool.md)                                                                   | [`gui_disable_input`](class_viewport.md#class_viewport_property_gui_disable_input)                                   | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`gui_embed_subwindows`](class_viewport.md#class_viewport_property_gui_embed_subwindows)                             | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`gui_snap_controls_to_pixels`](class_viewport.md#class_viewport_property_gui_snap_controls_to_pixels)               | ``true``                                                                                 |
+| [`bool`](class_bool.md)                                                                   | [`handle_input_locally`](class_viewport.md#class_viewport_property_handle_input_locally)                             | ``true``                                                                                 |
+| [`float`](class_float.md)                                                                 | [`mesh_lod_threshold`](class_viewport.md#class_viewport_property_mesh_lod_threshold)                                 | ``1.0``                                                                                  |
+| [MSAA](#enum_viewport_msaa)                                                               | [`msaa_2d`](class_viewport.md#class_viewport_property_msaa_2d)                                                       | ``0``                                                                                    |
+| [MSAA](#enum_viewport_msaa)                                                               | [`msaa_3d`](class_viewport.md#class_viewport_property_msaa_3d)                                                       | ``0``                                                                                    |
+| [`bool`](class_bool.md)                                                                   | [`own_world_3d`](class_viewport.md#class_viewport_property_own_world_3d)                                             | ``false``                                                                                |
+| [PhysicsInterpolationMode](#enum_node_physicsinterpolationmode)                           | physics_interpolation_mode                                                                                           | ``1`` (overrides [`Node`](class_node.md#class_node_property_physics_interpolation_mode)) |
+| [`bool`](class_bool.md)                                                                   | [`physics_object_picking`](class_viewport.md#class_viewport_property_physics_object_picking)                         | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`physics_object_picking_first_only`](class_viewport.md#class_viewport_property_physics_object_picking_first_only)   | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`physics_object_picking_sort`](class_viewport.md#class_viewport_property_physics_object_picking_sort)               | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`positional_shadow_atlas_16_bits`](class_viewport.md#class_viewport_property_positional_shadow_atlas_16_bits)       | ``true``                                                                                 |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_0`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_0)         | ``2``                                                                                    |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_1`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_1)         | ``2``                                                                                    |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_2`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_2)         | ``3``                                                                                    |
+| [PositionalShadowAtlasQuadrantSubdiv](#enum_viewport_positionalshadowatlasquadrantsubdiv) | [`positional_shadow_atlas_quad_3`](class_viewport.md#class_viewport_property_positional_shadow_atlas_quad_3)         | ``4``                                                                                    |
+| [`int`](class_int.md)                                                                     | [`positional_shadow_atlas_size`](class_viewport.md#class_viewport_property_positional_shadow_atlas_size)             | ``2048``                                                                                 |
+| [Scaling3DMode](#enum_viewport_scaling3dmode)                                             | [`scaling_3d_mode`](class_viewport.md#class_viewport_property_scaling_3d_mode)                                       | ``0``                                                                                    |
+| [`float`](class_float.md)                                                                 | [`scaling_3d_scale`](class_viewport.md#class_viewport_property_scaling_3d_scale)                                     | ``1.0``                                                                                  |
+| [ScreenSpaceAA](#enum_viewport_screenspaceaa)                                             | [`screen_space_aa`](class_viewport.md#class_viewport_property_screen_space_aa)                                       | ``0``                                                                                    |
+| [SDFOversize](#enum_viewport_sdfoversize)                                                 | [`sdf_oversize`](class_viewport.md#class_viewport_property_sdf_oversize)                                             | ``1``                                                                                    |
+| [SDFScale](#enum_viewport_sdfscale)                                                       | [`sdf_scale`](class_viewport.md#class_viewport_property_sdf_scale)                                                   | ``1``                                                                                    |
+| [`bool`](class_bool.md)                                                                   | [`snap_2d_transforms_to_pixel`](class_viewport.md#class_viewport_property_snap_2d_transforms_to_pixel)               | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`snap_2d_vertices_to_pixel`](class_viewport.md#class_viewport_property_snap_2d_vertices_to_pixel)                   | ``false``                                                                                |
+| [`float`](class_float.md)                                                                 | [`texture_mipmap_bias`](class_viewport.md#class_viewport_property_texture_mipmap_bias)                               | ``0.0``                                                                                  |
+| [`bool`](class_bool.md)                                                                   | [`transparent_bg`](class_viewport.md#class_viewport_property_transparent_bg)                                         | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`use_debanding`](class_viewport.md#class_viewport_property_use_debanding)                                           | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`use_hdr_2d`](class_viewport.md#class_viewport_property_use_hdr_2d)                                                 | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`use_occlusion_culling`](class_viewport.md#class_viewport_property_use_occlusion_culling)                           | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`use_taa`](class_viewport.md#class_viewport_property_use_taa)                                                       | ``false``                                                                                |
+| [`bool`](class_bool.md)                                                                   | [`use_xr`](class_viewport.md#class_viewport_property_use_xr)                                                         | ``false``                                                                                |
+| [VRSMode](#enum_viewport_vrsmode)                                                         | [`vrs_mode`](class_viewport.md#class_viewport_property_vrs_mode)                                                     | ``0``                                                                                    |
+| [`Texture2D`](class_texture2d.md)                                                         | [`vrs_texture`](class_viewport.md#class_viewport_property_vrs_texture)                                               |                                                                                          |
+| [VRSUpdateMode](#enum_viewport_vrsupdatemode)                                             | [`vrs_update_mode`](class_viewport.md#class_viewport_property_vrs_update_mode)                                       | ``1``                                                                                    |
+| [`World2D`](class_world2d.md)                                                             | [`world_2d`](class_viewport.md#class_viewport_property_world_2d)                                                     |                                                                                          |
+| [`World3D`](class_world3d.md)                                                             | [`world_3d`](class_viewport.md#class_viewport_property_world_3d)                                                     |                                                                                          |
 
 ## 方法
 
@@ -82,6 +83,8 @@ Finally, viewports can also behave as render targets, in which case they will no
 |:-:|:--|
 | [`World2D`](class_world2d.md)                                                             | [`find_world_2d`](class_viewport.md#class_viewport_method_find_world_2d) ( ) const[^const]                                                                                                                                                                                  |
 | [`World3D`](class_world3d.md)                                                             | [`find_world_3d`](class_viewport.md#class_viewport_method_find_world_3d) ( ) const[^const]                                                                                                                                                                                  |
+| [`AudioListener2D`](class_audiolistener2d.md)                                             | [`get_audio_listener_2d`](class_viewport.md#class_viewport_method_get_audio_listener_2d) ( ) const[^const]                                                                                                                                                                  |
+| [`AudioListener3D`](class_audiolistener3d.md)                                             | [`get_audio_listener_3d`](class_viewport.md#class_viewport_method_get_audio_listener_3d) ( ) const[^const]                                                                                                                                                                  |
 | [`Camera2D`](class_camera2d.md)                                                           | [`get_camera_2d`](class_viewport.md#class_viewport_method_get_camera_2d) ( ) const[^const]                                                                                                                                                                                  |
 | [`Camera3D`](class_camera3d.md)                                                           | [`get_camera_3d`](class_viewport.md#class_viewport_method_get_camera_3d) ( ) const[^const]                                                                                                                                                                                  |
 | [`bool`](class_bool.md)                                                                   | [`get_canvas_cull_mask_bit`](class_viewport.md#class_viewport_method_get_canvas_cull_mask_bit) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                               |
@@ -94,6 +97,7 @@ Finally, viewports can also behave as render targets, in which case they will no
 | [`ViewportTexture`](class_viewporttexture.md)                                             | [`get_texture`](class_viewport.md#class_viewport_method_get_texture) ( ) const[^const]                                                                                                                                                                                      |
 | [`RID`](class_rid.md)                                                                     | [`get_viewport_rid`](class_viewport.md#class_viewport_method_get_viewport_rid) ( ) const[^const]                                                                                                                                                                            |
 | [`Rect2`](class_rect2.md)                                                                 | [`get_visible_rect`](class_viewport.md#class_viewport_method_get_visible_rect) ( ) const[^const]                                                                                                                                                                            |
+| `void`                                                                                    | [`gui_cancel_drag`](class_viewport.md#class_viewport_method_gui_cancel_drag) ( )                                                                                                                                                                                            |
 | [`Variant`](class_variant.md)                                                             | [`gui_get_drag_data`](class_viewport.md#class_viewport_method_gui_get_drag_data) ( ) const[^const]                                                                                                                                                                          |
 | [`Control`](class_control.md)                                                             | [`gui_get_focus_owner`](class_viewport.md#class_viewport_method_gui_get_focus_owner) ( ) const[^const]                                                                                                                                                                      |
 | [`Control`](class_control.md)                                                             | [`gui_get_hovered_control`](class_viewport.md#class_viewport_method_gui_get_hovered_control) ( ) const[^const]                                                                                                                                                              |
@@ -952,7 +956,9 @@ To control this property on the root viewport, set the [`ProjectSettings.renderi
 - `void` **set_msaa_2d** ( value: [MSAA](#enum_viewport_msaa) )
 - [MSAA](#enum_viewport_msaa) **get_msaa_2d** ( )
 
-The multisample anti-aliasing mode for 2D/Canvas rendering. A higher number results in smoother edges at the cost of significantly worse performance. A value of 2 or 4 is best unless targeting very high-end systems. This has no effect on shader-induced aliasing or texture aliasing.
+The multisample antialiasing mode for 2D/Canvas rendering. A higher number results in smoother edges at the cost of significantly worse performance. A value of [`MSAA_2X`](class_viewport.md#class_viewport_constant_msaa_2x) or [`MSAA_4X`](class_viewport.md#class_viewport_constant_msaa_4x) is best unless targeting very high-end systems. This has no effect on shader-induced aliasing or texture aliasing.
+
+See also [`ProjectSettings.rendering/anti_aliasing/quality/msaa_2d`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/msaa_2d) and [`RenderingServer.viewport_set_msaa_2d`](class_renderingserver.md#class_renderingserver_method_viewport_set_msaa_2d).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -965,7 +971,9 @@ The multisample anti-aliasing mode for 2D/Canvas rendering. A higher number resu
 - `void` **set_msaa_3d** ( value: [MSAA](#enum_viewport_msaa) )
 - [MSAA](#enum_viewport_msaa) **get_msaa_3d** ( )
 
-The multisample anti-aliasing mode for 3D rendering. A higher number results in smoother edges at the cost of significantly worse performance. A value of 2 or 4 is best unless targeting very high-end systems. See also bilinear scaling 3d [`scaling_3d_mode`](class_viewport.md#class_viewport_property_scaling_3d_mode) for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
+The multisample antialiasing mode for 3D rendering. A higher number results in smoother edges at the cost of significantly worse performance. A value of [`MSAA_2X`](class_viewport.md#class_viewport_constant_msaa_2x) or [`MSAA_4X`](class_viewport.md#class_viewport_constant_msaa_4x) is best unless targeting very high-end systems. See also bilinear scaling 3d [`scaling_3d_mode`](class_viewport.md#class_viewport_property_scaling_3d_mode) for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
+
+See also [`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/msaa_3d) and [`RenderingServer.viewport_set_msaa_3d`](class_renderingserver.md#class_renderingserver_method_viewport_set_msaa_3d).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1154,6 +1162,8 @@ To control this property on the root viewport, set the [`ProjectSettings.renderi
 
 Sets the screen-space antialiasing method used. Screen-space antialiasing works by selectively blurring edges in a post-process shader. It differs from MSAA which takes multiple coverage samples while rendering objects. Screen-space AA methods are typically faster than MSAA and will smooth out specular aliasing, but tend to make scenes appear blurry.
 
+See also [`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/screen_space_aa) and [`RenderingServer.viewport_set_screen_space_aa`](class_renderingserver.md#class_renderingserver_method_viewport_set_screen_space_aa).
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -1251,9 +1261,11 @@ If `true`, the viewport should render its background as transparent.
 - `void` **set_use_debanding** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_debanding** ( )
 
-If `true`, uses a fast post-processing filter to make banding significantly less visible in 3D. 2D rendering is *not* affected by debanding unless the [`Environment.background_mode`](class_environment.md#class_environment_property_background_mode) is [`Environment.BG_CANVAS`](class_environment.md#class_environment_constant_bg_canvas). See also [`ProjectSettings.rendering/anti_aliasing/quality/use_debanding`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/use_debanding).
+If `true`, uses a fast post-processing filter to make banding significantly less visible in 3D. 2D rendering is *not* affected by debanding unless the [`Environment.background_mode`](class_environment.md#class_environment_property_background_mode) is [`Environment.BG_CANVAS`](class_environment.md#class_environment_constant_bg_canvas).
 
 In some cases, debanding may introduce a slightly noticeable dithering pattern. It's recommended to enable debanding only when actually needed since the dithering pattern will make lossless-compressed screenshots larger.
+
+See also [`ProjectSettings.rendering/anti_aliasing/quality/use_debanding`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/use_debanding) and [`RenderingServer.viewport_set_use_debanding`](class_renderingserver.md#class_renderingserver_method_viewport_set_use_debanding).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1298,9 +1310,11 @@ If `true`, [`OccluderInstance3D`](class_occluderinstance3d.md) nodes will be usa
 - `void` **set_use_taa** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_using_taa** ( )
 
-Enables Temporal Anti-Aliasing for this viewport. TAA works by jittering the camera and accumulating the images of the last rendered frames, motion vector rendering is used to account for camera and object motion.
+Enables temporal antialiasing for this viewport. TAA works by jittering the camera and accumulating the images of the last rendered frames, motion vector rendering is used to account for camera and object motion.
 
  **Note:** The implementation is not complete yet, some visual instances such as particles and skinned meshes may show artifacts.
+
+See also [`ProjectSettings.rendering/anti_aliasing/quality/use_taa`](class_projectsettings.md#class_projectsettings_property_rendering/anti_aliasing/quality/use_taa) and [`RenderingServer.viewport_set_use_taa`](class_renderingserver.md#class_renderingserver_method_viewport_set_use_taa).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1424,6 +1438,26 @@ Returns the first valid [`World3D`](class_world3d.md) for this viewport, searchi
 
 ---
 
+<div id="_class_viewport_method_get_audio_listener_2d"></div>
+
+[`AudioListener2D`](class_audiolistener2d.md) **get_audio_listener_2d** ( ) const[^const]<div id="class_viewport_method_get_audio_listener_2d"></div>
+
+Returns the currently active 2D audio listener. Returns `null` if there are no active 2D audio listeners, in which case the active 2D camera will be treated as listener.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_viewport_method_get_audio_listener_3d"></div>
+
+[`AudioListener3D`](class_audiolistener3d.md) **get_audio_listener_3d** ( ) const[^const]<div id="class_viewport_method_get_audio_listener_3d"></div>
+
+Returns the currently active 3D audio listener. Returns `null` if there are no active 3D audio listeners, in which case the active 3D camera will be treated as listener.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_viewport_method_get_camera_2d"></div>
 
 [`Camera2D`](class_camera2d.md) **get_camera_2d** ( ) const[^const]<div id="class_viewport_method_get_camera_2d"></div>
@@ -1531,6 +1565,8 @@ Returns the viewport's texture.
         $Viewport.get_texture().get_image().save_png("user://Screenshot.png")
 ```
 
+ **Note:** When [`use_hdr_2d`](class_viewport.md#class_viewport_property_use_hdr_2d) is `true` the returned texture will be an HDR image encoded in linear space.
+
 
 
 <!-- rst-class:: classref-item-separator -->
@@ -1552,6 +1588,16 @@ Returns the viewport's RID from the [`RenderingServer`](class_renderingserver.md
 [`Rect2`](class_rect2.md) **get_visible_rect** ( ) const[^const]<div id="class_viewport_method_get_visible_rect"></div>
 
 Returns the visible rectangle in global screen coordinates.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_viewport_method_gui_cancel_drag"></div>
+
+`void` **gui_cancel_drag** ( )<div id="class_viewport_method_gui_cancel_drag"></div>
+
+Cancels the drag operation that was previously started through [`Control._get_drag_data`](class_control.md#class_control_private_method__get_drag_data) or forced with [`Control.force_drag`](class_control.md#class_control_method_force_drag).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1603,7 +1649,7 @@ Returns `true` if the drag operation is successful.
 
 [`bool`](class_bool.md) **gui_is_dragging** ( ) const[^const]<div id="class_viewport_method_gui_is_dragging"></div>
 
-Returns `true` if the viewport is currently performing a drag operation.
+Returns `true` if a drag operation is currently ongoing and where the drop action could happen in this viewport.
 
 Alternative to [`Node.NOTIFICATION_DRAG_BEGIN`](class_node.md#class_node_constant_notification_drag_begin) and [`Node.NOTIFICATION_DRAG_END`](class_node.md#class_node_constant_notification_drag_end) when you prefer polling the value.
 

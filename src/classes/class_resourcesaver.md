@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceSaver.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceSaver.xml。 -->
 
 <div id="_class_resourcesaver"></div>
 
@@ -23,6 +23,7 @@ It uses the many [`ResourceFormatSaver`](class_resourceformatsaver.md) classes r
 |:-:|:--|
 | `void`                                            | [`add_resource_format_saver`](class_resourcesaver.md#class_resourcesaver_method_add_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md), at_front: [`bool`](class_bool.md) = false ) |
 | [`PackedStringArray`](class_packedstringarray.md) | [`get_recognized_extensions`](class_resourcesaver.md#class_resourcesaver_method_get_recognized_extensions) ( type: [`Resource`](class_resource.md) )                                                                          |
+| [`int`](class_int.md)                             | [`get_resource_id_for_path`](class_resourcesaver.md#class_resourcesaver_method_get_resource_id_for_path) ( path: [`String`](class_string.md), generate: [`bool`](class_bool.md) = false )                                     |
 | `void`                                            | [`remove_resource_format_saver`](class_resourcesaver.md#class_resourcesaver_method_remove_resource_format_saver) ( format_saver: [`ResourceFormatSaver`](class_resourceformatsaver.md) )                                      |
 | [Error](#enum_@globalscope_error)                 | [`save`](class_resourcesaver.md#class_resourcesaver_method_save) ( resource: [`Resource`](class_resource.md), path: [`String`](class_string.md) = "", flags: [SaverFlags](#enum_resourcesaver_saverflags) = 0 )               |
 
@@ -107,6 +108,16 @@ This method is performed implicitly for ResourceFormatSavers written in GDScript
 [`PackedStringArray`](class_packedstringarray.md) **get_recognized_extensions** ( type: [`Resource`](class_resource.md) )<div id="class_resourcesaver_method_get_recognized_extensions"></div>
 
 Returns the list of extensions available for saving a resource of a given type.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resourcesaver_method_get_resource_id_for_path"></div>
+
+[`int`](class_int.md) **get_resource_id_for_path** ( path: [`String`](class_string.md), generate: [`bool`](class_bool.md) = false )<div id="class_resourcesaver_method_get_resource_id_for_path"></div>
+
+Returns the resource ID for the given path. If `generate` is `true`, a new resource ID will be generated if one for the path is not found. If `generate` is `false` and the path is not found, [`ResourceUID.INVALID_ID`](class_resourceuid.md#class_resourceuid_constant_invalid_id) is returned.
 
 <!-- rst-class:: classref-item-separator -->
 

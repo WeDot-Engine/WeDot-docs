@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorResourcePreviewGenerator.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorResourcePreviewGenerator.xml。 -->
 
 <div id="_class_editorresourcepreviewgenerator"></div>
 
@@ -49,7 +49,7 @@ By default, it returns `false`.
 
 Generate a preview from a given resource with the specified size. This must always be implemented.
 
-Returning an empty texture is an OK way to fail and let another generator take care.
+Returning `null` is an OK way to fail and let another generator take care.
 
 Care must be taken because this function is always called from a thread (not the main thread).
 
@@ -65,7 +65,7 @@ Care must be taken because this function is always called from a thread (not the
 
 Generate a preview directly from a path with the specified size. Implementing this is optional, as default code will load and call [`_generate`](class_editorresourcepreviewgenerator.md#class_editorresourcepreviewgenerator_private_method__generate).
 
-Returning an empty texture is an OK way to fail and let another generator take care.
+Returning `null` is an OK way to fail and let another generator take care.
 
 Care must be taken because this function is always called from a thread (not the main thread).
 

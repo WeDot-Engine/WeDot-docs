@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Node2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Node2D.xml。 -->
 
 <div id="_class_node2d"></div>
 
@@ -63,7 +63,7 @@ A 2D game object, with a transform (position, rotation, and scale). All 2D nodes
 - `void` **set_global_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_global_position** ( )
 
-Global position.
+Global position. See also [`position`](class_node2d.md#class_node2d_property_position).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -76,7 +76,7 @@ Global position.
 - `void` **set_global_rotation** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_global_rotation** ( )
 
-Global rotation in radians.
+Global rotation in radians. See also [`rotation`](class_node2d.md#class_node2d_property_rotation).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -89,7 +89,7 @@ Global rotation in radians.
 - `void` **set_global_rotation_degrees** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_global_rotation_degrees** ( )
 
-Helper property to access [`global_rotation`](class_node2d.md#class_node2d_property_global_rotation) in degrees instead of radians.
+Helper property to access [`global_rotation`](class_node2d.md#class_node2d_property_global_rotation) in degrees instead of radians. See also [`rotation_degrees`](class_node2d.md#class_node2d_property_rotation_degrees).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -102,7 +102,7 @@ Helper property to access [`global_rotation`](class_node2d.md#class_node2d_prope
 - `void` **set_global_scale** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_global_scale** ( )
 
-Global scale.
+Global scale. See also [`scale`](class_node2d.md#class_node2d_property_scale).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -115,7 +115,7 @@ Global scale.
 - `void` **set_global_skew** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_global_skew** ( )
 
-Global skew in radians.
+Global skew in radians. See also [`skew`](class_node2d.md#class_node2d_property_skew).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -128,7 +128,7 @@ Global skew in radians.
 - `void` **set_global_transform** ( value: [`Transform2D`](class_transform2d.md) )
 - [`Transform2D`](class_transform2d.md) **get_global_transform** ( )
 
-Global [`Transform2D`](class_transform2d.md).
+Global [`Transform2D`](class_transform2d.md). See also [`transform`](class_node2d.md#class_node2d_property_transform).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -141,7 +141,7 @@ Global [`Transform2D`](class_transform2d.md).
 - `void` **set_position** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_position** ( )
 
-Position, relative to the node's parent.
+Position, relative to the node's parent. See also [`global_position`](class_node2d.md#class_node2d_property_global_position).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -154,7 +154,7 @@ Position, relative to the node's parent.
 - `void` **set_rotation** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_rotation** ( )
 
-Rotation in radians, relative to the node's parent.
+Rotation in radians, relative to the node's parent. See also [`global_rotation`](class_node2d.md#class_node2d_property_global_rotation).
 
  **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use [`rotation_degrees`](class_node2d.md#class_node2d_property_rotation_degrees).
 
@@ -169,7 +169,7 @@ Rotation in radians, relative to the node's parent.
 - `void` **set_rotation_degrees** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_rotation_degrees** ( )
 
-Helper property to access [`rotation`](class_node2d.md#class_node2d_property_rotation) in degrees instead of radians.
+Helper property to access [`rotation`](class_node2d.md#class_node2d_property_rotation) in degrees instead of radians. See also [`global_rotation_degrees`](class_node2d.md#class_node2d_property_global_rotation_degrees).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -182,7 +182,7 @@ Helper property to access [`rotation`](class_node2d.md#class_node2d_property_rot
 - `void` **set_scale** ( value: [`Vector2`](class_vector2.md) )
 - [`Vector2`](class_vector2.md) **get_scale** ( )
 
-The node's scale. Unscaled value: `(1, 1)`.
+The node's scale, relative to the node's parent. Unscaled value: `(1, 1)`. See also [`global_scale`](class_node2d.md#class_node2d_property_global_scale).
 
  **Note:** Negative X scales in 2D are not decomposable from the transformation matrix. Due to the way scale is represented with transformation matrices in Godot, negative scales on the X axis will be changed to negative scales on the Y axis and a rotation of 180 degrees when decomposed.
 
@@ -197,9 +197,11 @@ The node's scale. Unscaled value: `(1, 1)`.
 - `void` **set_skew** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_skew** ( )
 
-Slants the node.
+If set to a non-zero value, slants the node in one direction or another. This can be used for pseudo-3D effects. See also [`global_skew`](class_node2d.md#class_node2d_property_global_skew).
 
- **Note:** Skew is X axis only.
+ **Note:** Skew is performed on the X axis only, and *between* rotation and scaling.
+
+ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use `skew = deg_to_rad(value_in_degrees)`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -212,7 +214,7 @@ Slants the node.
 - `void` **set_transform** ( value: [`Transform2D`](class_transform2d.md) )
 - [`Transform2D`](class_transform2d.md) **get_transform** ( )
 
-Local [`Transform2D`](class_transform2d.md).
+The node's [`Transform2D`](class_transform2d.md), relative to the node's parent. See also [`global_transform`](class_node2d.md#class_node2d_property_global_transform).
 
 <!-- rst-class:: classref-section-separator -->
 

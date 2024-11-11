@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorUndoRedoManager.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorUndoRedoManager.xml。 -->
 
 <div id="_class_editorundoredomanager"></div>
 
@@ -39,6 +39,7 @@ The manager's API is mostly the same as in [`UndoRedo`](class_undoredo.md), so y
 | `void`                          | [`add_undo_method`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_undo_method) ( object: [`Object`](class_object.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                                        |
 | `void`                          | [`add_undo_property`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_undo_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                 |
 | `void`                          | [`add_undo_reference`](class_editorundoredomanager.md#class_editorundoredomanager_method_add_undo_reference) ( object: [`Object`](class_object.md) )                                                                                                                                                    |
+| `void`                          | [`clear_history`](class_editorundoredomanager.md#class_editorundoredomanager_method_clear_history) ( id: [`int`](class_int.md) = -99, increase_version: [`bool`](class_bool.md) = true )                                                                                                                |
 | `void`                          | [`commit_action`](class_editorundoredomanager.md#class_editorundoredomanager_method_commit_action) ( execute: [`bool`](class_bool.md) = true )                                                                                                                                                          |
 | `void`                          | [`create_action`](class_editorundoredomanager.md#class_editorundoredomanager_method_create_action) ( name: [`String`](class_string.md), merge_mode: [MergeMode](#enum_undoredo_mergemode) = 0, custom_context: [`Object`](class_object.md) = null, backward_undo_ops: [`bool`](class_bool.md) = false ) |
 | `void`                          | [`force_fixed_history`](class_editorundoredomanager.md#class_editorundoredomanager_method_force_fixed_history) ( )                                                                                                                                                                                      |
@@ -165,6 +166,29 @@ If this is the first operation, the `object` will be used to deduce target undo 
 `void` **add_undo_reference** ( object: [`Object`](class_object.md) )<div id="class_editorundoredomanager_method_add_undo_reference"></div>
 
 Register a reference for "undo" that will be erased if the "undo" history is lost. This is useful mostly for nodes removed with the "do" call (not the "undo" call!).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorundoredomanager_method_clear_history"></div>
+
+`void` **clear_history** ( id: [`int`](class_int.md) = -99, increase_version: [`bool`](class_bool.md) = true )<div id="class_editorundoredomanager_method_clear_history"></div>
+
+Clears the given undo history. You can clear history for a specific scene, global history, or for all scenes at once if `id` is [`INVALID_HISTORY`](class_editorundoredomanager.md#class_editorundoredomanager_constant_invalid_history).
+
+If `increase_version` is `true`, the undo history version will be increased, marking it as unsaved. Useful for operations that modify the scene, but don't support undo.
+
+```
+
+    var scene_root = EditorInterface.get_edited_scene_root()
+    var undo_redo = EditorInterface.get_editor_undo_redo()
+    undo_redo.clear_history(undo_redo.get_object_history_id(scene_root))
+```
+
+ **Note:** If you want to mark an edited scene as unsaved without clearing its history, use [`EditorInterface.mark_scene_as_unsaved`](class_editorinterface.md#class_editorinterface_method_mark_scene_as_unsaved) instead.
+
+
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ClassDB.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ClassDB.xml。 -->
 
 <div id="_class_classdb"></div>
 
@@ -20,7 +20,9 @@ Provides access to metadata stored for every available class.
 |||
 |:-:|:--|
 | [`bool`](class_bool.md)                                     | [`can_instantiate`](class_classdb.md#class_classdb_method_can_instantiate) ( class: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                               |
+| [`Variant`](class_variant.md)                               | [`class_call_static`](class_classdb.md#class_classdb_method_class_call_static) ( class: [`StringName`](class_stringname.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]                                                                       |
 | [`bool`](class_bool.md)                                     | [`class_exists`](class_classdb.md#class_classdb_method_class_exists) ( class: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                     |
+| [APIType](#enum_classdb_apitype)                            | [`class_get_api_type`](class_classdb.md#class_classdb_method_class_get_api_type) ( class: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                         |
 | [`PackedStringArray`](class_packedstringarray.md)           | [`class_get_enum_constants`](class_classdb.md#class_classdb_method_class_get_enum_constants) ( class: [`StringName`](class_stringname.md), enum: [`StringName`](class_stringname.md), no_inheritance: [`bool`](class_bool.md) = false ) const[^const]                 |
 | [`PackedStringArray`](class_packedstringarray.md)           | [`class_get_enum_list`](class_classdb.md#class_classdb_method_class_get_enum_list) ( class: [`StringName`](class_stringname.md), no_inheritance: [`bool`](class_bool.md) = false ) const[^const]                                                                      |
 | [`int`](class_int.md)                                       | [`class_get_integer_constant`](class_classdb.md#class_classdb_method_class_get_integer_constant) ( class: [`StringName`](class_stringname.md), name: [`StringName`](class_stringname.md) ) const[^const]                                                              |
@@ -30,7 +32,9 @@ Provides access to metadata stored for every available class.
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`class_get_method_list`](class_classdb.md#class_classdb_method_class_get_method_list) ( class: [`StringName`](class_stringname.md), no_inheritance: [`bool`](class_bool.md) = false ) const[^const]                                                                  |
 | [`Variant`](class_variant.md)                               | [`class_get_property`](class_classdb.md#class_classdb_method_class_get_property) ( object: [`Object`](class_object.md), property: [`StringName`](class_stringname.md) ) const[^const]                                                                                 |
 | [`Variant`](class_variant.md)                               | [`class_get_property_default_value`](class_classdb.md#class_classdb_method_class_get_property_default_value) ( class: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md) ) const[^const]                                              |
+| [`StringName`](class_stringname.md)                         | [`class_get_property_getter`](class_classdb.md#class_classdb_method_class_get_property_getter) ( class: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md) )                                                                          |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`class_get_property_list`](class_classdb.md#class_classdb_method_class_get_property_list) ( class: [`StringName`](class_stringname.md), no_inheritance: [`bool`](class_bool.md) = false ) const[^const]                                                              |
+| [`StringName`](class_stringname.md)                         | [`class_get_property_setter`](class_classdb.md#class_classdb_method_class_get_property_setter) ( class: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md) )                                                                          |
 | [`Dictionary`](class_dictionary.md)                         | [`class_get_signal`](class_classdb.md#class_classdb_method_class_get_signal) ( class: [`StringName`](class_stringname.md), signal: [`StringName`](class_stringname.md) ) const[^const]                                                                                |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`class_get_signal_list`](class_classdb.md#class_classdb_method_class_get_signal_list) ( class: [`StringName`](class_stringname.md), no_inheritance: [`bool`](class_bool.md) = false ) const[^const]                                                                  |
 | [`bool`](class_bool.md)                                     | [`class_has_enum`](class_classdb.md#class_classdb_method_class_has_enum) ( class: [`StringName`](class_stringname.md), name: [`StringName`](class_stringname.md), no_inheritance: [`bool`](class_bool.md) = false ) const[^const]                                     |
@@ -50,6 +54,46 @@ Provides access to metadata stored for every available class.
 
 ---
 
+## 枚举
+
+<div id="_class_enum_classdb_apitype"></div>
+
+enum **APIType**: <div id="enum_classdb_apitype"></div>
+
+<div id="_class_classdb_constant_api_core"></div>
+
+[APIType](#enum_classdb_apitype) **API_CORE** = ``0``
+
+Native Core class type.
+
+<div id="_class_classdb_constant_api_editor"></div>
+
+[APIType](#enum_classdb_apitype) **API_EDITOR** = ``1``
+
+Native Editor class type.
+
+<div id="_class_classdb_constant_api_extension"></div>
+
+[APIType](#enum_classdb_apitype) **API_EXTENSION** = ``2``
+
+GDExtension class type.
+
+<div id="_class_classdb_constant_api_editor_extension"></div>
+
+[APIType](#enum_classdb_apitype) **API_EDITOR_EXTENSION** = ``3``
+
+GDExtension Editor class type.
+
+<div id="_class_classdb_constant_api_none"></div>
+
+[APIType](#enum_classdb_apitype) **API_NONE** = ``4``
+
+Unknown class type.
+
+<!-- rst-class:: classref-section-separator -->
+
+---
+
 ## 方法说明
 
 <div id="_class_classdb_method_can_instantiate"></div>
@@ -62,11 +106,31 @@ Returns `true` if objects can be instantiated from the specified `class`, otherw
 
 ---
 
+<div id="_class_classdb_method_class_call_static"></div>
+
+[`Variant`](class_variant.md) **class_call_static** ( class: [`StringName`](class_stringname.md), method: [`StringName`](class_stringname.md), ... ) vararg[^vararg]<div id="class_classdb_method_class_call_static"></div>
+
+Calls a static method on a class.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_classdb_method_class_exists"></div>
 
 [`bool`](class_bool.md) **class_exists** ( class: [`StringName`](class_stringname.md) ) const[^const]<div id="class_classdb_method_class_exists"></div>
 
 Returns whether the specified `class` is available or not.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_classdb_method_class_get_api_type"></div>
+
+[APIType](#enum_classdb_apitype) **class_get_api_type** ( class: [`StringName`](class_stringname.md) ) const[^const]<div id="class_classdb_method_class_get_api_type"></div>
+
+Returns the API type of `class`. See [APIType](#enum_classdb_apitype).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -164,11 +228,31 @@ Returns the default value of `property` of `class` or its ancestor classes.
 
 ---
 
+<div id="_class_classdb_method_class_get_property_getter"></div>
+
+[`StringName`](class_stringname.md) **class_get_property_getter** ( class: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md) )<div id="class_classdb_method_class_get_property_getter"></div>
+
+Returns the getter method name of `property` of `class`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_classdb_method_class_get_property_list"></div>
 
 [Array](class_array.md) [`Dictionary`](class_dictionary.md) **class_get_property_list** ( class: [`StringName`](class_stringname.md), no_inheritance: [`bool`](class_bool.md) = false ) const[^const]<div id="class_classdb_method_class_get_property_list"></div>
 
 Returns an array with all the properties of `class` or its ancestry if `no_inheritance` is `false`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_classdb_method_class_get_property_setter"></div>
+
+[`StringName`](class_stringname.md) **class_get_property_setter** ( class: [`StringName`](class_stringname.md), property: [`StringName`](class_stringname.md) )<div id="class_classdb_method_class_get_property_setter"></div>
+
+Returns the setter method name of `property` of `class`.
 
 <!-- rst-class:: classref-item-separator -->
 

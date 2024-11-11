@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VehicleWheel3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VehicleWheel3D.xml。 -->
 
 <div id="_class_vehiclewheel3d"></div>
 
@@ -40,10 +40,12 @@ A node used as a child of a [`VehicleBody3D`](class_vehiclebody3d.md) parent to 
 
 |||
 |:-:|:--|
-| [`Node3D`](class_node3d.md) | [`get_contact_body`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_get_contact_body) ( ) const[^const] |
-| [`float`](class_float.md)   | [`get_rpm`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_get_rpm) ( ) const[^const]                   |
-| [`float`](class_float.md)   | [`get_skidinfo`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_get_skidinfo) ( ) const[^const]         |
-| [`bool`](class_bool.md)     | [`is_in_contact`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_is_in_contact) ( ) const[^const]       |
+| [`Node3D`](class_node3d.md)   | [`get_contact_body`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_get_contact_body) ( ) const[^const]     |
+| [`Vector3`](class_vector3.md) | [`get_contact_normal`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_get_contact_normal) ( ) const[^const] |
+| [`Vector3`](class_vector3.md) | [`get_contact_point`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_get_contact_point) ( ) const[^const]   |
+| [`float`](class_float.md)     | [`get_rpm`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_get_rpm) ( ) const[^const]                       |
+| [`float`](class_float.md)     | [`get_skidinfo`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_get_skidinfo) ( ) const[^const]             |
+| [`bool`](class_bool.md)       | [`is_in_contact`](class_vehiclewheel3d.md#class_vehiclewheel3d_method_is_in_contact) ( ) const[^const]           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -71,7 +73,7 @@ Slows down the wheel by applying a braking force. The wheel is only slowed down 
 - `void` **set_damping_compression** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_damping_compression** ( )
 
-The damping applied to the spring when the spring is being compressed. This value should be between 0.0 (no damping) and 1.0. A value of 0.0 means the car will keep bouncing as the spring keeps its energy. A good value for this is around 0.3 for a normal car, 0.5 for a race car.
+The damping applied to the suspension spring when being compressed, meaning when the wheel is moving up relative to the vehicle. It is measured in Newton-seconds per millimeter (N⋅s/mm), or megagrams per second (Mg/s). This value should be between 0.0 (no damping) and 1.0, but may be more. A value of 0.0 means the car will keep bouncing as the spring keeps its energy. A good value for this is around 0.3 for a normal car, 0.5 for a race car.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -84,7 +86,7 @@ The damping applied to the spring when the spring is being compressed. This valu
 - `void` **set_damping_relaxation** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_damping_relaxation** ( )
 
-The damping applied to the spring when relaxing. This value should be between 0.0 (no damping) and 1.0. This value should always be slightly higher than the [`damping_compression`](class_vehiclewheel3d.md#class_vehiclewheel3d_property_damping_compression) property. For a [`damping_compression`](class_vehiclewheel3d.md#class_vehiclewheel3d_property_damping_compression) value of 0.3, try a relaxation value of 0.5.
+The damping applied to the suspension spring when rebounding or extending, meaning when the wheel is moving down relative to the vehicle. It is measured in Newton-seconds per millimeter (N⋅s/mm), or megagrams per second (Mg/s). This value should be between 0.0 (no damping) and 1.0, but may be more. This value should always be slightly higher than the [`damping_compression`](class_vehiclewheel3d.md#class_vehiclewheel3d_property_damping_compression) property. For a [`damping_compression`](class_vehiclewheel3d.md#class_vehiclewheel3d_property_damping_compression) value of 0.3, try a relaxation value of 0.5.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -140,7 +142,7 @@ The maximum force the spring can resist. This value should be higher than a quar
 - `void` **set_suspension_stiffness** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_suspension_stiffness** ( )
 
-This value defines the stiffness of the suspension. Use a value lower than 50 for an off-road car, a value between 50 and 100 for a race car and try something around 200 for something like a Formula 1 car.
+The stiffness of the suspension, measured in Newtons per millimeter (N/mm), or megagrams per second squared (Mg/s²). Use a value lower than 50 for an off-road car, a value between 50 and 100 for a race car and try something around 200 for something like a Formula 1 car.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -248,6 +250,26 @@ This value affects the roll of your vehicle. If set to 1.0 for all wheels, your 
 Returns the contacting body node if valid in the tree, as [`Node3D`](class_node3d.md). At the moment, [`GridMap`](class_gridmap.md) is not supported so the node will be always of type [`PhysicsBody3D`](class_physicsbody3d.md).
 
 Returns `null` if the wheel is not in contact with a surface, or the contact body is not a [`PhysicsBody3D`](class_physicsbody3d.md).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_vehiclewheel3d_method_get_contact_normal"></div>
+
+[`Vector3`](class_vector3.md) **get_contact_normal** ( ) const[^const]<div id="class_vehiclewheel3d_method_get_contact_normal"></div>
+
+Returns the normal of the suspension's collision in world space if the wheel is in contact. If the wheel isn't in contact with anything, returns a vector pointing directly along the suspension axis toward the vehicle in world space.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_vehiclewheel3d_method_get_contact_point"></div>
+
+[`Vector3`](class_vector3.md) **get_contact_point** ( ) const[^const]<div id="class_vehiclewheel3d_method_get_contact_point"></div>
+
+Returns the point of the suspension's collision in world space if the wheel is in contact. If the wheel isn't in contact with anything, returns the maximum point of the wheel's ray cast in world space, which is defined by `wheel_rest_length + wheel_radius`.
 
 <!-- rst-class:: classref-item-separator -->
 

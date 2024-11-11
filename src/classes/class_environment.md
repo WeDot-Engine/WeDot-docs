@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Environment.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Environment.xml。 -->
 
 <div id="_class_environment"></div>
 
@@ -261,7 +261,7 @@ Linear tonemapper operator. Reads the linear data and passes it on unmodified. T
 
 [ToneMapper](#enum_environment_tonemapper) **TONE_MAPPER_REINHARDT** = ``1``
 
-Reinhardt tonemapper operator. Performs a variation on rendered pixels' colors by this formula: `color = color / (1 + color)`. This avoids clipping bright highlights, but the resulting image can look a bit dull.
+Reinhard tonemapper operator. Performs a variation on rendered pixels' colors by this formula: `color = color * (1 + color / (white * white)) / (1 + color)`. This avoids clipping bright highlights, but the resulting image can look a bit dull. When [`tonemap_white`](class_environment.md#class_environment_property_tonemap_white) is left at the default value of `1.0` this is identical to [`TONE_MAPPER_LINEAR`](class_environment.md#class_environment_constant_tone_mapper_linear) while also being slightly less performant.
 
 <div id="_class_environment_constant_tone_mapper_filmic"></div>
 
@@ -571,9 +571,11 @@ The background mode. See [BGMode](#enum_environment_bgmode) for possible values.
 - `void` **set_fog_aerial_perspective** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_fog_aerial_perspective** ( )
 
-If set above `0.0` (exclusive), blends between the fog's color and the color of the background [`Sky`](class_sky.md). This has a small performance cost when set above `0.0`. Must have [`background_mode`](class_environment.md#class_environment_property_background_mode) set to [`BG_SKY`](class_environment.md#class_environment_constant_bg_sky).
+If set above `0.0` (exclusive), blends between the fog's color and the color of the background [`Sky`](class_sky.md), as read from the radiance cubemap. This has a small performance cost when set above `0.0`. Must have [`background_mode`](class_environment.md#class_environment_property_background_mode) set to [`BG_SKY`](class_environment.md#class_environment_constant_bg_sky).
 
 This is useful to simulate [*aerial perspective*](https://en.wikipedia.org/wiki/Aerial_perspective) in large scenes with low density fog. However, it is not very useful for high-density fog, as the sky will shine through. When set to `1.0`, the fog color comes completely from the [`Sky`](class_sky.md). If set to `0.0`, aerial perspective is disabled.
+
+Notice that this does not sample the [`Sky`](class_sky.md) directly, but rather the radiance cubemap. The cubemap is sampled at a mipmap level depending on the depth of the rendered pixel; the farther away, the higher the resolution of the sampled mipmap. This results in the actual color being a blurred version of the sky, with more blur closer to the camera. The highest mipmap resolution is used at a depth of [`Camera3D.far`](class_camera3d.md#class_camera3d_property_far).
 
 <!-- rst-class:: classref-item-separator -->
 

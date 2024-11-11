@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/upnp/doc_classes/UPNP.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/upnp/doc_classes/UPNP.xml。 -->
 
 <div id="_class_upnp"></div>
 
@@ -49,13 +49,13 @@ To close a specific port (e.g. after you have finished using it):
     
         if err != OK:
             push_error(str(err))
-            emit_signal("upnp_completed", err)
+            upnp_completed.emit(err)
             return
     
         if upnp.get_gateway() and upnp.get_gateway().is_valid_gateway():
             upnp.add_port_mapping(server_port, server_port, ProjectSettings.get_setting("application/config/name"), "UDP")
             upnp.add_port_mapping(server_port, server_port, ProjectSettings.get_setting("application/config/name"), "TCP")
-            emit_signal("upnp_completed", OK)
+            upnp_completed.emit(OK)
     
     func _ready():
         thread = Thread.new()

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/GDExtensionManager.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/GDExtensionManager.xml。 -->
 
 <div id="_class_gdextensionmanager"></div>
 
@@ -33,6 +33,30 @@ The GDExtensionManager loads, initializes, and keeps track of all available [`GD
 ---
 
 ## 信号
+
+<div id="_class_class_gdextensionmanager_signal_extension_loaded"></div>
+
+**extension_loaded** ( extension: [`GDExtension`](class_gdextension.md) ) <div id="class_gdextensionmanager_signal_extension_loaded"></div>
+
+Emitted after the editor has finished loading a new extension.
+
+ **Note:** This signal is only emitted in editor builds.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_class_gdextensionmanager_signal_extension_unloading"></div>
+
+**extension_unloading** ( extension: [`GDExtension`](class_gdextension.md) ) <div id="class_gdextensionmanager_signal_extension_unloading"></div>
+
+Emitted before the editor starts unloading an extension.
+
+ **Note:** This signal is only emitted in editor builds.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_class_gdextensionmanager_signal_extensions_reloaded"></div>
 

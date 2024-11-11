@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/InputEventMouseMotion.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/InputEventMouseMotion.xml。 -->
 
 <div id="_class_inputeventmousemotion"></div>
 
@@ -15,7 +15,9 @@ Represents a mouse or a pen movement.
 
 Stores information about a mouse or a pen motion. This includes relative position, absolute position, and velocity. See [`Node._input`](class_node.md#class_node_private_method__input).
 
- **Note:** By default, this event is only emitted once per frame rendered at most. If you need more precise input reporting, set [`Input.use_accumulated_input`](class_input.md#class_input_property_use_accumulated_input) to `false` to make events emitted as often as possible. If you use InputEventMouseMotion to draw lines, consider implementing [*Bresenham's line algorithm*](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm) as well to avoid visible gaps in lines if the user is moving the mouse quickly.
+ **Note:** By default, this event is only emitted once per frame rendered at most. If you need more precise input reporting, set [`Input.use_accumulated_input`](class_input.md#class_input_property_use_accumulated_input) to `false` to make events emitted as often as possible. If you use InputEventMouseMotion to draw lines, consider using [`Geometry2D.bresenham_line`](class_geometry2d.md#class_geometry2d_method_bresenham_line) as well to avoid visible gaps in lines if the user is moving the mouse quickly.
+
+ **Note:** This event may be emitted even when the mouse hasn't moved, either by the operating system or by Godot itself. If you really need to know if the mouse has moved (e.g. to suppress displaying a tooltip), you should check that `relative.is_zero_approx()` is `false`.
 
 ## 属性
 
@@ -72,7 +74,7 @@ Represents the pressure the user puts on the pen. Ranges from `0.0` to `1.0`.
 
 The mouse position relative to the previous position (position at the last frame).
 
- **Note:** Since **InputEventMouseMotion** is only emitted when the mouse moves, the last event won't have a relative position of `Vector2(0, 0)` when the user stops moving the mouse.
+ **Note:** Since **InputEventMouseMotion** may only be emitted when the mouse moves, it is not possible to reliably detect when the mouse has stopped moving by checking this property. A separate, short timer may be necessary.
 
  **Note:** [`relative`](class_inputeventmousemotion.md#class_inputeventmousemotion_property_relative) is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means mouse sensitivity will appear different depending on resolution when using [`relative`](class_inputeventmousemotion.md#class_inputeventmousemotion_property_relative) in a script that handles mouse aiming with the [`Input.MOUSE_MODE_CAPTURED`](class_input.md#class_input_constant_mouse_mode_captured) mouse mode. To avoid this, use [`screen_relative`](class_inputeventmousemotion.md#class_inputeventmousemotion_property_screen_relative) instead.
 
@@ -89,7 +91,9 @@ The mouse position relative to the previous position (position at the last frame
 
 The unscaled mouse position relative to the previous position in the coordinate system of the screen (position at the last frame).
 
- **Note:** Since **InputEventMouseMotion** is only emitted when the mouse moves, the last event won't have a relative position of `Vector2(0, 0)` when the user stops moving the mouse. This coordinate is *not* scaled according to the content scale factor or calls to [`InputEvent.xformed_by`](class_inputevent.md#class_inputevent_method_xformed_by). This should be preferred over [`relative`](class_inputeventmousemotion.md#class_inputeventmousemotion_property_relative) for mouse aiming when using the [`Input.MOUSE_MODE_CAPTURED`](class_input.md#class_input_constant_mouse_mode_captured) mouse mode, regardless of the project's stretch mode.
+ **Note:** Since **InputEventMouseMotion** may only be emitted when the mouse moves, it is not possible to reliably detect when the mouse has stopped moving by checking this property. A separate, short timer may be necessary.
+
+ **Note:** This coordinate is *not* scaled according to the content scale factor or calls to [`InputEvent.xformed_by`](class_inputevent.md#class_inputevent_method_xformed_by). This should be preferred over [`relative`](class_inputeventmousemotion.md#class_inputeventmousemotion_property_relative) for mouse aiming when using the [`Input.MOUSE_MODE_CAPTURED`](class_input.md#class_input_constant_mouse_mode_captured) mouse mode, regardless of the project's stretch mode.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Image.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Image.xml。 -->
 
 <div id="_class_image"></div>
 
@@ -70,6 +70,7 @@ An **Image** cannot be assigned to a texture property of an object directly (suc
 | [`bool`](class_bool.md)                       | [`is_compressed`](class_image.md#class_image_method_is_compressed) ( ) const[^const]                                                                                                                                                                                                      |
 | [`bool`](class_bool.md)                       | [`is_empty`](class_image.md#class_image_method_is_empty) ( ) const[^const]                                                                                                                                                                                                                |
 | [`bool`](class_bool.md)                       | [`is_invisible`](class_image.md#class_image_method_is_invisible) ( ) const[^const]                                                                                                                                                                                                        |
+| `void`                                        | [`linear_to_srgb`](class_image.md#class_image_method_linear_to_srgb) ( )                                                                                                                                                                                                                  |
 | [Error](#enum_@globalscope_error)             | [`load`](class_image.md#class_image_method_load) ( path: [`String`](class_string.md) )                                                                                                                                                                                                    |
 | [Error](#enum_@globalscope_error)             | [`load_bmp_from_buffer`](class_image.md#class_image_method_load_bmp_from_buffer) ( buffer: [`PackedByteArray`](class_packedbytearray.md) )                                                                                                                                                |
 | [`Image`](class_image.md)                     | [`load_from_file`](class_image.md#class_image_method_load_from_file) ( path: [`String`](class_string.md) ) static[^static]                                                                                                                                                                |
@@ -1041,6 +1042,16 @@ Returns `true` if all the image's pixels have an alpha value of 0. Returns `fals
 
 ---
 
+<div id="_class_image_method_linear_to_srgb"></div>
+
+`void` **linear_to_srgb** ( )<div id="class_image_method_linear_to_srgb"></div>
+
+Converts the entire image from the linear colorspace to the sRGB colorspace. Only works on images with [`FORMAT_RGB8`](class_image.md#class_image_constant_format_rgb8) or [`FORMAT_RGBA8`](class_image.md#class_image_constant_format_rgba8) formats.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_image_method_load"></div>
 
 [Error](#enum_@globalscope_error) **load** ( path: [`String`](class_string.md) )<div id="class_image_method_load"></div>
@@ -1339,8 +1350,6 @@ Overwrites data of an existing **Image**. Non-static equivalent of [`create_from
 
 Sets the [`Color`](class_color.md) of the pixel at `(x, y)` to `color`.
 
- **Example:** 
-
 
 
 ```gdscript
@@ -1378,8 +1387,6 @@ This is the same as [`set_pixelv`](class_image.md#class_image_method_set_pixelv)
 `void` **set_pixelv** ( point: [`Vector2i`](class_vector2i.md), color: [`Color`](class_color.md) )<div id="class_image_method_set_pixelv"></div>
 
 Sets the [`Color`](class_color.md) of the pixel at `point` to `color`.
-
- **Example:** 
 
 
 
@@ -1427,7 +1434,7 @@ Shrinks the image by a factor of 2 on each axis (this divides the pixel count by
 
 `void` **srgb_to_linear** ( )<div id="class_image_method_srgb_to_linear"></div>
 
-Converts the raw data from the sRGB colorspace to a linear scale.
+Converts the raw data from the sRGB colorspace to a linear scale. Only works on images with [`FORMAT_RGB8`](class_image.md#class_image_constant_format_rgb8) or [`FORMAT_RGBA8`](class_image.md#class_image_constant_format_rgba8) formats.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

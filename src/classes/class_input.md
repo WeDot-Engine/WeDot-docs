@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Input.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Input.xml。 -->
 
 <div id="_class_input"></div>
 
@@ -487,6 +487,8 @@ On Linux:
 
  `steam_input_index`: The Steam Input gamepad index, if the device is not a Steam Input device this key won't be present.
 
+ **Note:** The returned dictionary is always empty on Web, iOS, Android, and macOS.
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -710,8 +712,6 @@ Returns `true` if you are pressing the key in the physical location on the 101/1
 `void` **parse_input_event** ( event: [`InputEvent`](class_inputevent.md) )<div id="class_input_method_parse_input_event"></div>
 
 Feeds an [`InputEvent`](class_inputevent.md) to the game. Can be used to artificially trigger input events from code. Also generates [`Node._input`](class_node.md#class_node_private_method__input) calls.
-
- **Example:** 
 
 
 

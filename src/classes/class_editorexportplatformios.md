@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/platform/ios/doc_classes/EditorExportPlatformIOS.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/platform/ios/doc_classes/EditorExportPlatformIOS.xml。 -->
 
 <div id="_class_editorexportplatformios"></div>
 
@@ -41,17 +41,56 @@ Exporter for iOS.
 | [`String`](class_string.md)                       | [`custom_template/debug`](class_editorexportplatformios.md#class_editorexportplatformios_property_custom_template/debug)                                                                                           |
 | [`String`](class_string.md)                       | [`custom_template/release`](class_editorexportplatformios.md#class_editorexportplatformios_property_custom_template/release)                                                                                       |
 | [`String`](class_string.md)                       | [`icons/app_store_1024x1024`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/app_store_1024x1024)                                                                                   |
-| [`String`](class_string.md)                       | [`icons/ipad_76x76`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_76x76)                                                                                                     |
+| [`String`](class_string.md)                       | [`icons/app_store_1024x1024_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/app_store_1024x1024_dark)                                                                         |
+| [`String`](class_string.md)                       | [`icons/app_store_1024x1024_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/app_store_1024x1024_tinted)                                                                     |
+| [`String`](class_string.md)                       | [`icons/icon_1024x1024`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/icon_1024x1024)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/icon_1024x1024_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/icon_1024x1024_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/icon_1024x1024_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/icon_1024x1024_tinted)                                                                               |
+| [`String`](class_string.md)                       | [`icons/ios_128x128`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_128x128)                                                                                                   |
+| [`String`](class_string.md)                       | [`icons/ios_128x128_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_128x128_dark)                                                                                         |
+| [`String`](class_string.md)                       | [`icons/ios_128x128_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_128x128_tinted)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/ios_136x136`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_136x136)                                                                                                   |
+| [`String`](class_string.md)                       | [`icons/ios_136x136_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_136x136_dark)                                                                                         |
+| [`String`](class_string.md)                       | [`icons/ios_136x136_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_136x136_tinted)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/ios_192x192`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_192x192)                                                                                                   |
+| [`String`](class_string.md)                       | [`icons/ios_192x192_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_192x192_dark)                                                                                         |
+| [`String`](class_string.md)                       | [`icons/ios_192x192_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ios_192x192_tinted)                                                                                     |
 | [`String`](class_string.md)                       | [`icons/ipad_152x152`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_152x152)                                                                                                 |
+| [`String`](class_string.md)                       | [`icons/ipad_152x152_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_152x152_dark)                                                                                       |
+| [`String`](class_string.md)                       | [`icons/ipad_152x152_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_152x152_tinted)                                                                                   |
 | [`String`](class_string.md)                       | [`icons/ipad_167x167`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_167x167)                                                                                                 |
+| [`String`](class_string.md)                       | [`icons/ipad_167x167_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_167x167_dark)                                                                                       |
+| [`String`](class_string.md)                       | [`icons/ipad_167x167_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/ipad_167x167_tinted)                                                                                   |
 | [`String`](class_string.md)                       | [`icons/iphone_120x120`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_120x120)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/iphone_120x120_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_120x120_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/iphone_120x120_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_120x120_tinted)                                                                               |
 | [`String`](class_string.md)                       | [`icons/iphone_180x180`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_180x180)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/iphone_180x180_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_180x180_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/iphone_180x180_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/iphone_180x180_tinted)                                                                               |
 | [`String`](class_string.md)                       | [`icons/notification_40x40`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_40x40)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/notification_40x40_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_40x40_dark)                                                                           |
+| [`String`](class_string.md)                       | [`icons/notification_40x40_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_40x40_tinted)                                                                       |
 | [`String`](class_string.md)                       | [`icons/notification_60x60`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_60x60)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/notification_60x60_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_60x60_dark)                                                                           |
+| [`String`](class_string.md)                       | [`icons/notification_60x60_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_60x60_tinted)                                                                       |
+| [`String`](class_string.md)                       | [`icons/notification_76x76`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_76x76)                                                                                     |
+| [`String`](class_string.md)                       | [`icons/notification_76x76_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_76x76_dark)                                                                           |
+| [`String`](class_string.md)                       | [`icons/notification_76x76_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_76x76_tinted)                                                                       |
+| [`String`](class_string.md)                       | [`icons/notification_114x114`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_114x114)                                                                                 |
+| [`String`](class_string.md)                       | [`icons/notification_114x114_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_114x114_dark)                                                                       |
+| [`String`](class_string.md)                       | [`icons/notification_114x114_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/notification_114x114_tinted)                                                                   |
 | [`String`](class_string.md)                       | [`icons/settings_58x58`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_58x58)                                                                                             |
+| [`String`](class_string.md)                       | [`icons/settings_58x58_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_58x58_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/settings_58x58_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_58x58_tinted)                                                                               |
 | [`String`](class_string.md)                       | [`icons/settings_87x87`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_87x87)                                                                                             |
-| [`String`](class_string.md)                       | [`icons/spotlight_40x40`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_40x40)                                                                                           |
+| [`String`](class_string.md)                       | [`icons/settings_87x87_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_87x87_dark)                                                                                   |
+| [`String`](class_string.md)                       | [`icons/settings_87x87_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/settings_87x87_tinted)                                                                               |
 | [`String`](class_string.md)                       | [`icons/spotlight_80x80`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_80x80)                                                                                           |
+| [`String`](class_string.md)                       | [`icons/spotlight_80x80_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_80x80_dark)                                                                                 |
+| [`String`](class_string.md)                       | [`icons/spotlight_80x80_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_80x80_tinted)                                                                             |
+| [`String`](class_string.md)                       | [`icons/spotlight_120x120`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_120x120)                                                                                       |
+| [`String`](class_string.md)                       | [`icons/spotlight_120x120_dark`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_120x120_dark)                                                                             |
+| [`String`](class_string.md)                       | [`icons/spotlight_120x120_tinted`](class_editorexportplatformios.md#class_editorexportplatformios_property_icons/spotlight_120x120_tinted)                                                                         |
 | [`int`](class_int.md)                             | [`privacy/active_keyboard_access_reasons`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/active_keyboard_access_reasons)                                                         |
 | [`String`](class_string.md)                       | [`privacy/camera_usage_description`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/camera_usage_description)                                                                     |
 | [`Dictionary`](class_dictionary.md)               | [`privacy/camera_usage_description_localized`](class_editorexportplatformios.md#class_editorexportplatformios_property_privacy/camera_usage_description_localized)                                                 |
@@ -495,11 +534,141 @@ App Store application icon file. If left empty, it will fallback to [`ProjectSet
 
 ---
 
-<div id="_class_editorexportplatformios_property_icons/ipad_76x76"></div>
+<div id="_class_editorexportplatformios_property_icons/app_store_1024x1024_dark"></div>
 
-[`String`](class_string.md) **icons/ipad_76x76** <div id="class_editorexportplatformios_property_icons/ipad_76x76"></div>
+[`String`](class_string.md) **icons/app_store_1024x1024_dark** <div id="class_editorexportplatformios_property_icons/app_store_1024x1024_dark"></div>
 
-Home screen application icon file on iPad (1x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+App Store application icon file, dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/app_store_1024x1024_tinted"></div>
+
+[`String`](class_string.md) **icons/app_store_1024x1024_tinted** <div id="class_editorexportplatformios_property_icons/app_store_1024x1024_tinted"></div>
+
+App Store application icon file, tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/icon_1024x1024"></div>
+
+[`String`](class_string.md) **icons/icon_1024x1024** <div id="class_editorexportplatformios_property_icons/icon_1024x1024"></div>
+
+Base application icon used to generate other icons. If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/icon_1024x1024_dark"></div>
+
+[`String`](class_string.md) **icons/icon_1024x1024_dark** <div id="class_editorexportplatformios_property_icons/icon_1024x1024_dark"></div>
+
+Base application icon used to generate other icons, dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/icon_1024x1024_tinted"></div>
+
+[`String`](class_string.md) **icons/icon_1024x1024_tinted** <div id="class_editorexportplatformios_property_icons/icon_1024x1024_tinted"></div>
+
+Base application icon used to generate other icons, tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_128x128"></div>
+
+[`String`](class_string.md) **icons/ios_128x128** <div id="class_editorexportplatformios_property_icons/ios_128x128"></div>
+
+iOS application 64x64 icon file (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_128x128_dark"></div>
+
+[`String`](class_string.md) **icons/ios_128x128_dark** <div id="class_editorexportplatformios_property_icons/ios_128x128_dark"></div>
+
+iOS application 64x64 icon file (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_128x128_tinted"></div>
+
+[`String`](class_string.md) **icons/ios_128x128_tinted** <div id="class_editorexportplatformios_property_icons/ios_128x128_tinted"></div>
+
+iOS application 64x64 icon file (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_136x136"></div>
+
+[`String`](class_string.md) **icons/ios_136x136** <div id="class_editorexportplatformios_property_icons/ios_136x136"></div>
+
+iOS application 68x68 icon file (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_136x136_dark"></div>
+
+[`String`](class_string.md) **icons/ios_136x136_dark** <div id="class_editorexportplatformios_property_icons/ios_136x136_dark"></div>
+
+iOS application 68x68 icon file (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_136x136_tinted"></div>
+
+[`String`](class_string.md) **icons/ios_136x136_tinted** <div id="class_editorexportplatformios_property_icons/ios_136x136_tinted"></div>
+
+iOS application 68x68 icon file (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_192x192"></div>
+
+[`String`](class_string.md) **icons/ios_192x192** <div id="class_editorexportplatformios_property_icons/ios_192x192"></div>
+
+iOS application 64x64 icon file (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_192x192_dark"></div>
+
+[`String`](class_string.md) **icons/ios_192x192_dark** <div id="class_editorexportplatformios_property_icons/ios_192x192_dark"></div>
+
+iOS application 64x64 icon file (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ios_192x192_tinted"></div>
+
+[`String`](class_string.md) **icons/ios_192x192_tinted** <div id="class_editorexportplatformios_property_icons/ios_192x192_tinted"></div>
+
+iOS application 64x64 icon file (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -515,11 +684,51 @@ Home screen application icon file on iPad (2x DPI). If left empty, it will fallb
 
 ---
 
+<div id="_class_editorexportplatformios_property_icons/ipad_152x152_dark"></div>
+
+[`String`](class_string.md) **icons/ipad_152x152_dark** <div id="class_editorexportplatformios_property_icons/ipad_152x152_dark"></div>
+
+Home screen application icon file on iPad (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ipad_152x152_tinted"></div>
+
+[`String`](class_string.md) **icons/ipad_152x152_tinted** <div id="class_editorexportplatformios_property_icons/ipad_152x152_tinted"></div>
+
+Home screen application icon file on iPad (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorexportplatformios_property_icons/ipad_167x167"></div>
 
 [`String`](class_string.md) **icons/ipad_167x167** <div id="class_editorexportplatformios_property_icons/ipad_167x167"></div>
 
 Home screen application icon file on iPad (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ipad_167x167_dark"></div>
+
+[`String`](class_string.md) **icons/ipad_167x167_dark** <div id="class_editorexportplatformios_property_icons/ipad_167x167_dark"></div>
+
+Home screen application icon file on iPad (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/ipad_167x167_tinted"></div>
+
+[`String`](class_string.md) **icons/ipad_167x167_tinted** <div id="class_editorexportplatformios_property_icons/ipad_167x167_tinted"></div>
+
+Home screen application icon file on iPad (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -535,11 +744,51 @@ Home screen application icon file on iPhone (2x DPI). If left empty, it will fal
 
 ---
 
+<div id="_class_editorexportplatformios_property_icons/iphone_120x120_dark"></div>
+
+[`String`](class_string.md) **icons/iphone_120x120_dark** <div id="class_editorexportplatformios_property_icons/iphone_120x120_dark"></div>
+
+Home screen application icon file on iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/iphone_120x120_tinted"></div>
+
+[`String`](class_string.md) **icons/iphone_120x120_tinted** <div id="class_editorexportplatformios_property_icons/iphone_120x120_tinted"></div>
+
+Home screen application icon file on iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorexportplatformios_property_icons/iphone_180x180"></div>
 
 [`String`](class_string.md) **icons/iphone_180x180** <div id="class_editorexportplatformios_property_icons/iphone_180x180"></div>
 
 Home screen application icon file on iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/iphone_180x180_dark"></div>
+
+[`String`](class_string.md) **icons/iphone_180x180_dark** <div id="class_editorexportplatformios_property_icons/iphone_180x180_dark"></div>
+
+Home screen application icon file on iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/iphone_180x180_tinted"></div>
+
+[`String`](class_string.md) **icons/iphone_180x180_tinted** <div id="class_editorexportplatformios_property_icons/iphone_180x180_tinted"></div>
+
+Home screen application icon file on iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -555,11 +804,111 @@ Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallb
 
 ---
 
+<div id="_class_editorexportplatformios_property_icons/notification_40x40_dark"></div>
+
+[`String`](class_string.md) **icons/notification_40x40_dark** <div id="class_editorexportplatformios_property_icons/notification_40x40_dark"></div>
+
+Notification icon file on iPad and iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_40x40_tinted"></div>
+
+[`String`](class_string.md) **icons/notification_40x40_tinted** <div id="class_editorexportplatformios_property_icons/notification_40x40_tinted"></div>
+
+Notification icon file on iPad and iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorexportplatformios_property_icons/notification_60x60"></div>
 
 [`String`](class_string.md) **icons/notification_60x60** <div id="class_editorexportplatformios_property_icons/notification_60x60"></div>
 
 Notification icon file on iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_60x60_dark"></div>
+
+[`String`](class_string.md) **icons/notification_60x60_dark** <div id="class_editorexportplatformios_property_icons/notification_60x60_dark"></div>
+
+Notification icon file on iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_60x60_tinted"></div>
+
+[`String`](class_string.md) **icons/notification_60x60_tinted** <div id="class_editorexportplatformios_property_icons/notification_60x60_tinted"></div>
+
+Notification icon file on iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_76x76"></div>
+
+[`String`](class_string.md) **icons/notification_76x76** <div id="class_editorexportplatformios_property_icons/notification_76x76"></div>
+
+Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_76x76_dark"></div>
+
+[`String`](class_string.md) **icons/notification_76x76_dark** <div id="class_editorexportplatformios_property_icons/notification_76x76_dark"></div>
+
+Notification icon file on iPad and iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_76x76_tinted"></div>
+
+[`String`](class_string.md) **icons/notification_76x76_tinted** <div id="class_editorexportplatformios_property_icons/notification_76x76_tinted"></div>
+
+Notification icon file on iPad and iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_114x114"></div>
+
+[`String`](class_string.md) **icons/notification_114x114** <div id="class_editorexportplatformios_property_icons/notification_114x114"></div>
+
+Notification icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_114x114_dark"></div>
+
+[`String`](class_string.md) **icons/notification_114x114_dark** <div id="class_editorexportplatformios_property_icons/notification_114x114_dark"></div>
+
+Notification icon file on iPad and iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/notification_114x114_tinted"></div>
+
+[`String`](class_string.md) **icons/notification_114x114_tinted** <div id="class_editorexportplatformios_property_icons/notification_114x114_tinted"></div>
+
+Notification icon file on iPad and iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -575,6 +924,26 @@ Application settings icon file on iPad and iPhone (2x DPI). If left empty, it wi
 
 ---
 
+<div id="_class_editorexportplatformios_property_icons/settings_58x58_dark"></div>
+
+[`String`](class_string.md) **icons/settings_58x58_dark** <div id="class_editorexportplatformios_property_icons/settings_58x58_dark"></div>
+
+Application settings icon file on iPad and iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/settings_58x58_tinted"></div>
+
+[`String`](class_string.md) **icons/settings_58x58_tinted** <div id="class_editorexportplatformios_property_icons/settings_58x58_tinted"></div>
+
+Application settings icon file on iPad and iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorexportplatformios_property_icons/settings_87x87"></div>
 
 [`String`](class_string.md) **icons/settings_87x87** <div id="class_editorexportplatformios_property_icons/settings_87x87"></div>
@@ -585,11 +954,21 @@ Application settings icon file on iPhone (3x DPI). If left empty, it will fallba
 
 ---
 
-<div id="_class_editorexportplatformios_property_icons/spotlight_40x40"></div>
+<div id="_class_editorexportplatformios_property_icons/settings_87x87_dark"></div>
 
-[`String`](class_string.md) **icons/spotlight_40x40** <div id="class_editorexportplatformios_property_icons/spotlight_40x40"></div>
+[`String`](class_string.md) **icons/settings_87x87_dark** <div id="class_editorexportplatformios_property_icons/settings_87x87_dark"></div>
 
-Spotlight icon file on iPad (1x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+Application settings icon file on iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/settings_87x87_tinted"></div>
+
+[`String`](class_string.md) **icons/settings_87x87_tinted** <div id="class_editorexportplatformios_property_icons/settings_87x87_tinted"></div>
+
+Application settings icon file on iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -600,6 +979,56 @@ Spotlight icon file on iPad (1x DPI). If left empty, it will fallback to [`Proje
 [`String`](class_string.md) **icons/spotlight_80x80** <div id="class_editorexportplatformios_property_icons/spotlight_80x80"></div>
 
 Spotlight icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_80x80_dark"></div>
+
+[`String`](class_string.md) **icons/spotlight_80x80_dark** <div id="class_editorexportplatformios_property_icons/spotlight_80x80_dark"></div>
+
+Spotlight icon file on iPad and iPhone (2x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_80x80_tinted"></div>
+
+[`String`](class_string.md) **icons/spotlight_80x80_tinted** <div id="class_editorexportplatformios_property_icons/spotlight_80x80_tinted"></div>
+
+Spotlight icon file on iPad and iPhone (2x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_120x120"></div>
+
+[`String`](class_string.md) **icons/spotlight_120x120** <div id="class_editorexportplatformios_property_icons/spotlight_120x120"></div>
+
+Spotlight icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to [`ProjectSettings.application/config/icon`](class_projectsettings.md#class_projectsettings_property_application/config/icon). See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_120x120_dark"></div>
+
+[`String`](class_string.md) **icons/spotlight_120x120_dark** <div id="class_editorexportplatformios_property_icons/spotlight_120x120_dark"></div>
+
+Spotlight icon file on iPad and iPhone (3x DPI), dark version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformios_property_icons/spotlight_120x120_tinted"></div>
+
+[`String`](class_string.md) **icons/spotlight_120x120_tinted** <div id="class_editorexportplatformios_property_icons/spotlight_120x120_tinted"></div>
+
+Spotlight icon file on iPad and iPhone (3x DPI), tinted version. See [*App icons*](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons).
 
 <!-- rst-class:: classref-item-separator -->
 

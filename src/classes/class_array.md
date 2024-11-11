@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Array.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Array.xml。 -->
 
 <div id="_class_array"></div>
 
@@ -11,9 +11,7 @@ A built-in data structure that holds a sequence of elements.
 
 ## 描述
 
-An array data structure that can contain a sequence of elements of any [`Variant`](class_variant.md) type. Elements are accessed by a numerical index starting at 0. Negative indices are used to count from the back (-1 is the last element, -2 is the second to last, etc.).
-
- **Example:** 
+An array data structure that can contain a sequence of elements of any [`Variant`](class_variant.md) type. Elements are accessed by a numerical index starting at `0`. Negative indices are used to count from the back (`-1` is the last element, `-2` is the second to last, etc.).
 
 
 
@@ -92,7 +90,9 @@ An array data structure that can contain a sequence of elements of any [`Variant
 | `void`                              | [`fill`](class_array.md#class_array_method_fill) ( value: [`Variant`](class_variant.md) )                                                                                                                          |
 | [`Array`](class_array.md)           | [`filter`](class_array.md#class_array_method_filter) ( method: [`Callable`](class_callable.md) ) const[^const]                                                                                                     |
 | [`int`](class_int.md)               | [`find`](class_array.md#class_array_method_find) ( what: [`Variant`](class_variant.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                                            |
+| [`int`](class_int.md)               | [`find_custom`](class_array.md#class_array_method_find_custom) ( method: [`Callable`](class_callable.md), from: [`int`](class_int.md) = 0 ) const[^const]                                                          |
 | [`Variant`](class_variant.md)       | [`front`](class_array.md#class_array_method_front) ( ) const[^const]                                                                                                                                               |
+| [`Variant`](class_variant.md)       | [`get`](class_array.md#class_array_method_get) ( index: [`int`](class_int.md) ) const[^const]                                                                                                                      |
 | [`int`](class_int.md)               | [`get_typed_builtin`](class_array.md#class_array_method_get_typed_builtin) ( ) const[^const]                                                                                                                       |
 | [`StringName`](class_stringname.md) | [`get_typed_class_name`](class_array.md#class_array_method_get_typed_class_name) ( ) const[^const]                                                                                                                 |
 | [`Variant`](class_variant.md)       | [`get_typed_script`](class_array.md#class_array_method_get_typed_script) ( ) const[^const]                                                                                                                         |
@@ -118,6 +118,8 @@ An array data structure that can contain a sequence of elements of any [`Variant
 | [`int`](class_int.md)               | [`resize`](class_array.md#class_array_method_resize) ( size: [`int`](class_int.md) )                                                                                                                               |
 | `void`                              | [`reverse`](class_array.md#class_array_method_reverse) ( )                                                                                                                                                         |
 | [`int`](class_int.md)               | [`rfind`](class_array.md#class_array_method_rfind) ( what: [`Variant`](class_variant.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                                         |
+| [`int`](class_int.md)               | [`rfind_custom`](class_array.md#class_array_method_rfind_custom) ( method: [`Callable`](class_callable.md), from: [`int`](class_int.md) = -1 ) const[^const]                                                       |
+| `void`                              | [`set`](class_array.md#class_array_method_set) ( index: [`int`](class_int.md), value: [`Variant`](class_variant.md) )                                                                                              |
 | `void`                              | [`shuffle`](class_array.md#class_array_method_shuffle) ( )                                                                                                                                                         |
 | [`int`](class_int.md)               | [`size`](class_array.md#class_array_method_size) ( ) const[^const]                                                                                                                                                 |
 | [`Array`](class_array.md)           | [`slice`](class_array.md#class_array_method_slice) ( begin: [`int`](class_int.md), end: [`int`](class_int.md) = 2147483647, step: [`int`](class_int.md) = 1, deep: [`bool`](class_bool.md) = false ) const[^const] |
@@ -527,6 +529,8 @@ Removes all elements from the array. This is equivalent to using [`resize`](clas
 
 Returns the number of times an element is in the array.
 
+To count how many elements in an array satisfy a condition, see [`reduce`](class_array.md#class_array_method_reduce).
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -639,6 +643,35 @@ Returns the index of the **first** occurrence of `what` in this array, or `-1` i
 
 ---
 
+<div id="_class_array_method_find_custom"></div>
+
+[`int`](class_int.md) **find_custom** ( method: [`Callable`](class_callable.md), from: [`int`](class_int.md) = 0 ) const[^const]<div id="class_array_method_find_custom"></div>
+
+Returns the index of the **first** element in the array that causes `method` to return `true`, or `-1` if there are none. The search's start can be specified with `from`, continuing to the end of the array.
+
+ `method` is a callable that takes an element of the array, and returns a [`bool`](class_bool.md).
+
+ **Note:** If you just want to know whether the array contains *anything* that satisfies `method`, use [`any`](class_array.md#class_array_method_any).
+
+
+
+```gdscript
+
+    func is_even(number):
+        return number % 2 == 0
+    
+    func _ready():
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # prints 2
+```
+
+
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_array_method_front"></div>
 
 [`Variant`](class_variant.md) **front** ( ) const[^const]<div id="class_array_method_front"></div>
@@ -646,6 +679,16 @@ Returns the index of the **first** occurrence of `what` in this array, or `-1` i
 Returns the first element of the array. If the array is empty, fails and returns `null`. See also [`back`](class_array.md#class_array_method_back).
 
  **Note:** Unlike with the `[]` operator (`array[0]`), an error is generated without stopping project execution.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_array_method_get"></div>
+
+[`Variant`](class_variant.md) **get** ( index: [`int`](class_int.md) ) const[^const]<div id="class_array_method_get"></div>
+
+Returns the element at the given `index` in the array. This is the same as using the `[]` operator (`array[index]`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -992,7 +1035,23 @@ If [`max`](class_array.md#class_array_method_max) is not desirable, this method 
         return a.length() > b.length()
 ```
 
+This method can also be used to count how many elements in an array satisfy a certain condition, similar to [`count`](class_array.md#class_array_method_count):
+
+```
+
+    func is_even(number):
+        return number % 2 == 0
+    
+    func _ready():
+        var arr = [1, 2, 3, 4, 5]
+        # Increment count if it's even, else leaves count the same.
+        var even_count = arr.reduce(func(count, next): return count + 1 if is_even(next) else count, 0)
+        print(even_count) # Prints 2
+```
+
 See also [`map`](class_array.md#class_array_method_map), [`filter`](class_array.md#class_array_method_filter), [`any`](class_array.md#class_array_method_any) and [`all`](class_array.md#class_array_method_all).
+
+
 
 
 
@@ -1047,6 +1106,26 @@ Reverses the order of all elements in the array.
 [`int`](class_int.md) **rfind** ( what: [`Variant`](class_variant.md), from: [`int`](class_int.md) = -1 ) const[^const]<div id="class_array_method_rfind"></div>
 
 Returns the index of the **last** occurrence of `what` in this array, or `-1` if there are none. The search's start can be specified with `from`, continuing to the beginning of the array. This method is the reverse of [`find`](class_array.md#class_array_method_find).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_array_method_rfind_custom"></div>
+
+[`int`](class_int.md) **rfind_custom** ( method: [`Callable`](class_callable.md), from: [`int`](class_int.md) = -1 ) const[^const]<div id="class_array_method_rfind_custom"></div>
+
+Returns the index of the **last** element of the array that causes `method` to return `true`, or `-1` if there are none. The search's start can be specified with `from`, continuing to the beginning of the array. This method is the reverse of [`find_custom`](class_array.md#class_array_method_find_custom).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_array_method_set"></div>
+
+`void` **set** ( index: [`int`](class_int.md), value: [`Variant`](class_variant.md) )<div id="class_array_method_set"></div>
+
+Sets the value of the element at the given `index` to the given `value`. This will not change the size of the array, it only changes the value at an index already in the array. This is the same as using the `[]` operator (`array[index] = value`).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceImporterScene.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceImporterScene.xml。 -->
 
 <div id="_class_resourceimporterscene"></div>
 
@@ -41,6 +41,7 @@ Additional options (such as extracting individual meshes or materials to files) 
 | [`String`](class_string.md)         | [`nodes/root_name`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/root_name)                                     | ``""``    |
 | [`float`](class_float.md)           | [`nodes/root_scale`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/root_scale)                                   | ``1.0``   |
 | [`String`](class_string.md)         | [`nodes/root_type`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/root_type)                                     | ``""``    |
+| [`bool`](class_bool.md)             | [`nodes/use_node_type_suffixes`](class_resourceimporterscene.md#class_resourceimporterscene_property_nodes/use_node_type_suffixes)           | ``true``  |
 | [`bool`](class_bool.md)             | [`skins/use_named_skins`](class_resourceimporterscene.md#class_resourceimporterscene_property_skins/use_named_skins)                         | ``true``  |
 
 <!-- rst-class:: classref-section-separator -->
@@ -228,6 +229,16 @@ The uniform scale to use for the scene root. The default value of `1.0` will not
 [`String`](class_string.md) **nodes/root_type** = ``""`` <div id="class_resourceimporterscene_property_nodes/root_type"></div>
 
 Override for the root node type. If empty, the root node will use what the scene specifies, or [`Node3D`](class_node3d.md) if the scene does not specify a root type. Using a node type that inherits from [`Node3D`](class_node3d.md) is recommended. Otherwise, you'll lose the ability to position the node directly in the 3D editor.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_resourceimporterscene_property_nodes/use_node_type_suffixes"></div>
+
+[`bool`](class_bool.md) **nodes/use_node_type_suffixes** = ``true`` <div id="class_resourceimporterscene_property_nodes/use_node_type_suffixes"></div>
+
+If `true`, use suffixes in the node names to determine the node type, such as `-col` for collision shapes. Disabling this makes editor-imported files more similar to the original files, and more similar to importing files at runtime. See [*Node type customization using name suffixes*](../tutorials/assets_pipeline/importing_3d_scenes/node_type_customization) for more information.
 
 <!-- rst-class:: classref-item-separator -->
 

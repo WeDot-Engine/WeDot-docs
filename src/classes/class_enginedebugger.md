@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EngineDebugger.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EngineDebugger.xml。 -->
 
 <div id="_class_enginedebugger"></div>
 
@@ -167,7 +167,7 @@ Returns `true` if the debugger is skipping breakpoints otherwise `false`.
 
 `void` **line_poll** ( )<div id="class_enginedebugger_method_line_poll"></div>
 
-Forces a processing loop of debugger events. The purpose of this method is just processing events every now and then when the script might get too busy, so that bugs like infinite loops can be caught
+Forces a processing loop of debugger events. The purpose of this method is just processing events every now and then when the script might get too busy, so that bugs like infinite loops can be caught.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -199,7 +199,9 @@ Calls the `toggle` callable of the profiler with given `name` and `arguments`. E
 
 Registers a message capture with given `name`. If `name` is "my_message" then messages starting with "my_message:" will be called with the given callable.
 
-Callable must accept a message string and a data array as argument. If the message and data are valid then callable must return `true` otherwise `false`.
+The callable must accept a message string and a data array as argument. The callable should return `true` if the message is recognized.
+
+ **Note:** The callable will receive the message with the prefix stripped, unlike [`EditorDebuggerPlugin._capture`](class_editordebuggerplugin.md#class_editordebuggerplugin_private_method__capture). See the [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) description for an example.
 
 <!-- rst-class:: classref-item-separator -->
 

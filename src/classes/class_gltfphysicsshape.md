@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFPhysicsShape.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFPhysicsShape.xml。 -->
 
 <div id="_class_gltfphysicsshape"></div>
 
@@ -9,11 +9,11 @@
 
 **继承：** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Represents a GLTF physics shape.
+Represents a glTF physics shape.
 
 ## 描述
 
-Represents a physics shape as defined by the `OMI_physics_shape` or `OMI_collider` GLTF extensions. This class is an intermediary between the GLTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different GLTF physics extensions in the future.
+Represents a physics shape as defined by the `OMI_physics_shape` or `OMI_collider` glTF extensions. This class is an intermediary between the glTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different glTF physics extensions in the future.
 
 ## 属性
 
@@ -92,7 +92,7 @@ This is the only variable not used in the [`to_node`](class_gltfphysicsshape.md#
 - `void` **set_mesh_index** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_mesh_index** ( )
 
-The index of the shape's mesh in the GLTF file. This is only used when the shape type is "hull" (convex hull) or "trimesh" (concave trimesh).
+The index of the shape's mesh in the glTF file. This is only used when the shape type is "hull" (convex hull) or "trimesh" (concave trimesh).
 
 <!-- rst-class:: classref-item-separator -->
 

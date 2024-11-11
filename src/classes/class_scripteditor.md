@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ScriptEditor.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ScriptEditor.xml。 -->
 
 <div id="_class_scripteditor"></div>
 
@@ -21,6 +21,7 @@ Godot editor's script editor.
 
 |||
 |:-:|:--|
+| [`PackedStringArray`](class_packedstringarray.md)                       | [`get_breakpoints`](class_scripteditor.md#class_scripteditor_method_get_breakpoints) ( )                                                                                                               |
 | [`ScriptEditorBase`](class_scripteditorbase.md)                         | [`get_current_editor`](class_scripteditor.md#class_scripteditor_method_get_current_editor) ( ) const[^const]                                                                                           |
 | [`Script`](class_script.md)                                             | [`get_current_script`](class_scripteditor.md#class_scripteditor_method_get_current_script) ( )                                                                                                         |
 | [Array](class_array.md) [`ScriptEditorBase`](class_scripteditorbase.md) | [`get_open_script_editors`](class_scripteditor.md#class_scripteditor_method_get_open_script_editors) ( ) const[^const]                                                                                 |
@@ -30,6 +31,7 @@ Godot editor's script editor.
 | `void`                                                                  | [`open_script_create_dialog`](class_scripteditor.md#class_scripteditor_method_open_script_create_dialog) ( base_name: [`String`](class_string.md), base_path: [`String`](class_string.md) )            |
 | `void`                                                                  | [`register_syntax_highlighter`](class_scripteditor.md#class_scripteditor_method_register_syntax_highlighter) ( syntax_highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) )     |
 | `void`                                                                  | [`unregister_syntax_highlighter`](class_scripteditor.md#class_scripteditor_method_unregister_syntax_highlighter) ( syntax_highlighter: [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) ) |
+| `void`                                                                  | [`update_docs_from_script`](class_scripteditor.md#class_scripteditor_method_update_docs_from_script) ( script: [`Script`](class_script.md) )                                                           |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -58,6 +60,16 @@ Emitted when editor is about to close the active script. Argument is a [`Script`
 ---
 
 ## 方法说明
+
+<div id="_class_scripteditor_method_get_breakpoints"></div>
+
+[`PackedStringArray`](class_packedstringarray.md) **get_breakpoints** ( )<div id="class_scripteditor_method_get_breakpoints"></div>
+
+Returns array of breakpoints.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_scripteditor_method_get_current_editor"></div>
 
@@ -106,8 +118,6 @@ Returns an array with all [`Script`](class_script.md) objects which are currentl
 Opens help for the given topic. The `topic` is an encoded string that controls which class, method, constant, signal, annotation, property, or theme item should be focused.
 
 The supported `topic` formats include `class_name:class`, `class_method:class:method`, `class_constant:class:constant`, `class_signal:class:signal`, `class_annotation:class:@annotation`, `class_property:class:property`, and `class_theme_item:class:item`, where `class` is the class name, `method` is the method name, `constant` is the constant name, `signal` is the signal name, `annotation` is the annotation name, `property` is the property name, and `item` is the theme item.
-
- **Examples:** 
 
 ```
 
@@ -176,6 +186,18 @@ Registers the [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) to t
 Unregisters the [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) from the editor.
 
  **Note:** The [`EditorSyntaxHighlighter`](class_editorsyntaxhighlighter.md) will still be applied to scripts that are already opened.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_scripteditor_method_update_docs_from_script"></div>
+
+`void` **update_docs_from_script** ( script: [`Script`](class_script.md) )<div id="class_scripteditor_method_update_docs_from_script"></div>
+
+Updates the documentation for the given `script` if the script's documentation is currently open.
+
+ **Note:** This should be called whenever the script is changed to keep the open documentation state up to date.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

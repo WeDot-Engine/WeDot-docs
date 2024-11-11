@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PathFollow2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PathFollow2D.xml。 -->
 
 <div id="_class_pathfollow2d"></div>
 
@@ -99,6 +99,8 @@ The distance along the path, in pixels. Changing this value sets this node's pos
 - [`float`](class_float.md) **get_progress_ratio** ( )
 
 The distance along the path as a number in the range 0.0 (for the first vertex) to 1.0 (for the last). This is just another way of expressing the progress within the path, as the offset supplied is multiplied internally by the path's length.
+
+It can be set or get only if the **PathFollow2D** is the child of a [`Path2D`](class_path2d.md) which is part of the scene tree, and that this [`Path2D`](class_path2d.md) has a [`Curve2D`](class_curve2d.md) with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return `0.0`.
 
 <!-- rst-class:: classref-item-separator -->
 

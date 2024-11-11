@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AtlasTexture.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AtlasTexture.xml。 -->
 
 <div id="_class_atlastexture"></div>
 
@@ -17,7 +17,7 @@ A texture that crops out part of another Texture2D.
 
 Multiple **AtlasTexture** resources can be cropped from the same [`atlas`](class_atlastexture.md#class_atlastexture_property_atlas). Packing many smaller textures into a singular large texture helps to optimize video memory costs and render calls.
 
- **Note:** **AtlasTexture** cannot be used in an [`AnimatedTexture`](class_animatedtexture.md), and may not tile properly in nodes such as [`TextureRect`](class_texturerect.md), when inside other **AtlasTexture** resources.
+ **Note:** **AtlasTexture** cannot be used in an [`AnimatedTexture`](class_animatedtexture.md), and will not tile properly in nodes such as [`TextureRect`](class_texturerect.md) or [`Sprite2D`](class_sprite2d.md). To tile an **AtlasTexture**, modify its [`region`](class_atlastexture.md#class_atlastexture_property_region) instead.
 
 ## 属性
 

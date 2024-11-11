@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFState.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFState.xml。 -->
 
 <div id="_class_gltfstate"></div>
 
@@ -11,13 +11,13 @@
 
 **派生：** [`FBXState`](class_fbxstate.md)
 
-Represents all data of a GLTF file.
+Represents all data of a glTF file.
 
 ## 描述
 
-Contains all nodes and resources of a GLTF file. This is used by [`GLTFDocument`](class_gltfdocument.md) as data storage, which allows [`GLTFDocument`](class_gltfdocument.md) and all [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes to remain stateless.
+Contains all nodes and resources of a glTF file. This is used by [`GLTFDocument`](class_gltfdocument.md) as data storage, which allows [`GLTFDocument`](class_gltfdocument.md) and all [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes to remain stateless.
 
-GLTFState can be populated by [`GLTFDocument`](class_gltfdocument.md) reading a file or by converting a Godot scene. Then the data can either be used to create a Godot scene or save to a GLTF file. The code that converts to/from a Godot scene can be intercepted at arbitrary points by [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes. This allows for custom data to be stored in the GLTF file or for custom data to be converted to/from Godot nodes.
+GLTFState can be populated by [`GLTFDocument`](class_gltfdocument.md) reading a file or by converting a Godot scene. Then the data can either be used to create a Godot scene or save to a glTF file. The code that converts to/from a Godot scene can be intercepted at arbitrary points by [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes. This allows for custom data to be stored in the glTF file or for custom data to be converted to/from Godot nodes.
 
 ## 属性
 
@@ -42,46 +42,47 @@ GLTFState can be populated by [`GLTFDocument`](class_gltfdocument.md) reading a 
 
 |||
 |:-:|:--|
-| `void`                                                                      | [`add_used_extension`](class_gltfstate.md#class_gltfstate_method_add_used_extension) ( extension_name: [`String`](class_string.md), required: [`bool`](class_bool.md) )                        |
-| [`int`](class_int.md)                                                       | [`append_data_to_buffers`](class_gltfstate.md#class_gltfstate_method_append_data_to_buffers) ( data: [`PackedByteArray`](class_packedbytearray.md), deduplication: [`bool`](class_bool.md) )   |
-| [Array](class_array.md) [`GLTFAccessor`](class_gltfaccessor.md)             | [`get_accessors`](class_gltfstate.md#class_gltfstate_method_get_accessors) ( )                                                                                                                 |
-| [`Variant`](class_variant.md)                                               | [`get_additional_data`](class_gltfstate.md#class_gltfstate_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                 |
-| [`AnimationPlayer`](class_animationplayer.md)                               | [`get_animation_player`](class_gltfstate.md#class_gltfstate_method_get_animation_player) ( idx: [`int`](class_int.md) )                                                                        |
-| [`int`](class_int.md)                                                       | [`get_animation_players_count`](class_gltfstate.md#class_gltfstate_method_get_animation_players_count) ( idx: [`int`](class_int.md) )                                                          |
-| [Array](class_array.md) [`GLTFAnimation`](class_gltfanimation.md)           | [`get_animations`](class_gltfstate.md#class_gltfstate_method_get_animations) ( )                                                                                                               |
-| [Array](class_array.md) [`GLTFBufferView`](class_gltfbufferview.md)         | [`get_buffer_views`](class_gltfstate.md#class_gltfstate_method_get_buffer_views) ( )                                                                                                           |
-| [Array](class_array.md) [`GLTFCamera`](class_gltfcamera.md)                 | [`get_cameras`](class_gltfstate.md#class_gltfstate_method_get_cameras) ( )                                                                                                                     |
-| [`int`](class_int.md)                                                       | [`get_handle_binary_image`](class_gltfstate.md#class_gltfstate_method_get_handle_binary_image) ( )                                                                                             |
-| [Array](class_array.md) [`Texture2D`](class_texture2d.md)                   | [`get_images`](class_gltfstate.md#class_gltfstate_method_get_images) ( )                                                                                                                       |
-| [Array](class_array.md) [`GLTFLight`](class_gltflight.md)                   | [`get_lights`](class_gltfstate.md#class_gltfstate_method_get_lights) ( )                                                                                                                       |
-| [Array](class_array.md) [`Material`](class_material.md)                     | [`get_materials`](class_gltfstate.md#class_gltfstate_method_get_materials) ( )                                                                                                                 |
-| [Array](class_array.md) [`GLTFMesh`](class_gltfmesh.md)                     | [`get_meshes`](class_gltfstate.md#class_gltfstate_method_get_meshes) ( )                                                                                                                       |
-| [`int`](class_int.md)                                                       | [`get_node_index`](class_gltfstate.md#class_gltfstate_method_get_node_index) ( scene_node: [`Node`](class_node.md) )                                                                           |
-| [Array](class_array.md) [`GLTFNode`](class_gltfnode.md)                     | [`get_nodes`](class_gltfstate.md#class_gltfstate_method_get_nodes) ( )                                                                                                                         |
-| [`Node`](class_node.md)                                                     | [`get_scene_node`](class_gltfstate.md#class_gltfstate_method_get_scene_node) ( idx: [`int`](class_int.md) )                                                                                    |
-| [Array](class_array.md) [`GLTFSkeleton`](class_gltfskeleton.md)             | [`get_skeletons`](class_gltfstate.md#class_gltfstate_method_get_skeletons) ( )                                                                                                                 |
-| [Array](class_array.md) [`GLTFSkin`](class_gltfskin.md)                     | [`get_skins`](class_gltfstate.md#class_gltfstate_method_get_skins) ( )                                                                                                                         |
-| [Array](class_array.md) [`GLTFTextureSampler`](class_gltftexturesampler.md) | [`get_texture_samplers`](class_gltfstate.md#class_gltfstate_method_get_texture_samplers) ( )                                                                                                   |
-| [Array](class_array.md) [`GLTFTexture`](class_gltftexture.md)               | [`get_textures`](class_gltfstate.md#class_gltfstate_method_get_textures) ( )                                                                                                                   |
-| [Array](class_array.md) [`String`](class_string.md)                         | [`get_unique_animation_names`](class_gltfstate.md#class_gltfstate_method_get_unique_animation_names) ( )                                                                                       |
-| [Array](class_array.md) [`String`](class_string.md)                         | [`get_unique_names`](class_gltfstate.md#class_gltfstate_method_get_unique_names) ( )                                                                                                           |
-| `void`                                                                      | [`set_accessors`](class_gltfstate.md#class_gltfstate_method_set_accessors) ( accessors: [Array](class_array.md) [`GLTFAccessor`](class_gltfaccessor.md) )                                      |
-| `void`                                                                      | [`set_additional_data`](class_gltfstate.md#class_gltfstate_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) ) |
-| `void`                                                                      | [`set_animations`](class_gltfstate.md#class_gltfstate_method_set_animations) ( animations: [Array](class_array.md) [`GLTFAnimation`](class_gltfanimation.md) )                                 |
-| `void`                                                                      | [`set_buffer_views`](class_gltfstate.md#class_gltfstate_method_set_buffer_views) ( buffer_views: [Array](class_array.md) [`GLTFBufferView`](class_gltfbufferview.md) )                         |
-| `void`                                                                      | [`set_cameras`](class_gltfstate.md#class_gltfstate_method_set_cameras) ( cameras: [Array](class_array.md) [`GLTFCamera`](class_gltfcamera.md) )                                                |
-| `void`                                                                      | [`set_handle_binary_image`](class_gltfstate.md#class_gltfstate_method_set_handle_binary_image) ( method: [`int`](class_int.md) )                                                               |
-| `void`                                                                      | [`set_images`](class_gltfstate.md#class_gltfstate_method_set_images) ( images: [Array](class_array.md) [`Texture2D`](class_texture2d.md) )                                                     |
-| `void`                                                                      | [`set_lights`](class_gltfstate.md#class_gltfstate_method_set_lights) ( lights: [Array](class_array.md) [`GLTFLight`](class_gltflight.md) )                                                     |
-| `void`                                                                      | [`set_materials`](class_gltfstate.md#class_gltfstate_method_set_materials) ( materials: [Array](class_array.md) [`Material`](class_material.md) )                                              |
-| `void`                                                                      | [`set_meshes`](class_gltfstate.md#class_gltfstate_method_set_meshes) ( meshes: [Array](class_array.md) [`GLTFMesh`](class_gltfmesh.md) )                                                       |
-| `void`                                                                      | [`set_nodes`](class_gltfstate.md#class_gltfstate_method_set_nodes) ( nodes: [Array](class_array.md) [`GLTFNode`](class_gltfnode.md) )                                                          |
-| `void`                                                                      | [`set_skeletons`](class_gltfstate.md#class_gltfstate_method_set_skeletons) ( skeletons: [Array](class_array.md) [`GLTFSkeleton`](class_gltfskeleton.md) )                                      |
-| `void`                                                                      | [`set_skins`](class_gltfstate.md#class_gltfstate_method_set_skins) ( skins: [Array](class_array.md) [`GLTFSkin`](class_gltfskin.md) )                                                          |
-| `void`                                                                      | [`set_texture_samplers`](class_gltfstate.md#class_gltfstate_method_set_texture_samplers) ( texture_samplers: [Array](class_array.md) [`GLTFTextureSampler`](class_gltftexturesampler.md) )     |
-| `void`                                                                      | [`set_textures`](class_gltfstate.md#class_gltfstate_method_set_textures) ( textures: [Array](class_array.md) [`GLTFTexture`](class_gltftexture.md) )                                           |
-| `void`                                                                      | [`set_unique_animation_names`](class_gltfstate.md#class_gltfstate_method_set_unique_animation_names) ( unique_animation_names: [Array](class_array.md) [`String`](class_string.md) )           |
-| `void`                                                                      | [`set_unique_names`](class_gltfstate.md#class_gltfstate_method_set_unique_names) ( unique_names: [Array](class_array.md) [`String`](class_string.md) )                                         |
+| `void`                                                                      | [`add_used_extension`](class_gltfstate.md#class_gltfstate_method_add_used_extension) ( extension_name: [`String`](class_string.md), required: [`bool`](class_bool.md) )                                              |
+| [`int`](class_int.md)                                                       | [`append_data_to_buffers`](class_gltfstate.md#class_gltfstate_method_append_data_to_buffers) ( data: [`PackedByteArray`](class_packedbytearray.md), deduplication: [`bool`](class_bool.md) )                         |
+| [`int`](class_int.md)                                                       | [`append_gltf_node`](class_gltfstate.md#class_gltfstate_method_append_gltf_node) ( gltf_node: [`GLTFNode`](class_gltfnode.md), godot_scene_node: [`Node`](class_node.md), parent_node_index: [`int`](class_int.md) ) |
+| [Array](class_array.md) [`GLTFAccessor`](class_gltfaccessor.md)             | [`get_accessors`](class_gltfstate.md#class_gltfstate_method_get_accessors) ( )                                                                                                                                       |
+| [`Variant`](class_variant.md)                                               | [`get_additional_data`](class_gltfstate.md#class_gltfstate_method_get_additional_data) ( extension_name: [`StringName`](class_stringname.md) )                                                                       |
+| [`AnimationPlayer`](class_animationplayer.md)                               | [`get_animation_player`](class_gltfstate.md#class_gltfstate_method_get_animation_player) ( idx: [`int`](class_int.md) )                                                                                              |
+| [`int`](class_int.md)                                                       | [`get_animation_players_count`](class_gltfstate.md#class_gltfstate_method_get_animation_players_count) ( idx: [`int`](class_int.md) )                                                                                |
+| [Array](class_array.md) [`GLTFAnimation`](class_gltfanimation.md)           | [`get_animations`](class_gltfstate.md#class_gltfstate_method_get_animations) ( )                                                                                                                                     |
+| [Array](class_array.md) [`GLTFBufferView`](class_gltfbufferview.md)         | [`get_buffer_views`](class_gltfstate.md#class_gltfstate_method_get_buffer_views) ( )                                                                                                                                 |
+| [Array](class_array.md) [`GLTFCamera`](class_gltfcamera.md)                 | [`get_cameras`](class_gltfstate.md#class_gltfstate_method_get_cameras) ( )                                                                                                                                           |
+| [`int`](class_int.md)                                                       | [`get_handle_binary_image`](class_gltfstate.md#class_gltfstate_method_get_handle_binary_image) ( )                                                                                                                   |
+| [Array](class_array.md) [`Texture2D`](class_texture2d.md)                   | [`get_images`](class_gltfstate.md#class_gltfstate_method_get_images) ( )                                                                                                                                             |
+| [Array](class_array.md) [`GLTFLight`](class_gltflight.md)                   | [`get_lights`](class_gltfstate.md#class_gltfstate_method_get_lights) ( )                                                                                                                                             |
+| [Array](class_array.md) [`Material`](class_material.md)                     | [`get_materials`](class_gltfstate.md#class_gltfstate_method_get_materials) ( )                                                                                                                                       |
+| [Array](class_array.md) [`GLTFMesh`](class_gltfmesh.md)                     | [`get_meshes`](class_gltfstate.md#class_gltfstate_method_get_meshes) ( )                                                                                                                                             |
+| [`int`](class_int.md)                                                       | [`get_node_index`](class_gltfstate.md#class_gltfstate_method_get_node_index) ( scene_node: [`Node`](class_node.md) )                                                                                                 |
+| [Array](class_array.md) [`GLTFNode`](class_gltfnode.md)                     | [`get_nodes`](class_gltfstate.md#class_gltfstate_method_get_nodes) ( )                                                                                                                                               |
+| [`Node`](class_node.md)                                                     | [`get_scene_node`](class_gltfstate.md#class_gltfstate_method_get_scene_node) ( idx: [`int`](class_int.md) )                                                                                                          |
+| [Array](class_array.md) [`GLTFSkeleton`](class_gltfskeleton.md)             | [`get_skeletons`](class_gltfstate.md#class_gltfstate_method_get_skeletons) ( )                                                                                                                                       |
+| [Array](class_array.md) [`GLTFSkin`](class_gltfskin.md)                     | [`get_skins`](class_gltfstate.md#class_gltfstate_method_get_skins) ( )                                                                                                                                               |
+| [Array](class_array.md) [`GLTFTextureSampler`](class_gltftexturesampler.md) | [`get_texture_samplers`](class_gltfstate.md#class_gltfstate_method_get_texture_samplers) ( )                                                                                                                         |
+| [Array](class_array.md) [`GLTFTexture`](class_gltftexture.md)               | [`get_textures`](class_gltfstate.md#class_gltfstate_method_get_textures) ( )                                                                                                                                         |
+| [Array](class_array.md) [`String`](class_string.md)                         | [`get_unique_animation_names`](class_gltfstate.md#class_gltfstate_method_get_unique_animation_names) ( )                                                                                                             |
+| [Array](class_array.md) [`String`](class_string.md)                         | [`get_unique_names`](class_gltfstate.md#class_gltfstate_method_get_unique_names) ( )                                                                                                                                 |
+| `void`                                                                      | [`set_accessors`](class_gltfstate.md#class_gltfstate_method_set_accessors) ( accessors: [Array](class_array.md) [`GLTFAccessor`](class_gltfaccessor.md) )                                                            |
+| `void`                                                                      | [`set_additional_data`](class_gltfstate.md#class_gltfstate_method_set_additional_data) ( extension_name: [`StringName`](class_stringname.md), additional_data: [`Variant`](class_variant.md) )                       |
+| `void`                                                                      | [`set_animations`](class_gltfstate.md#class_gltfstate_method_set_animations) ( animations: [Array](class_array.md) [`GLTFAnimation`](class_gltfanimation.md) )                                                       |
+| `void`                                                                      | [`set_buffer_views`](class_gltfstate.md#class_gltfstate_method_set_buffer_views) ( buffer_views: [Array](class_array.md) [`GLTFBufferView`](class_gltfbufferview.md) )                                               |
+| `void`                                                                      | [`set_cameras`](class_gltfstate.md#class_gltfstate_method_set_cameras) ( cameras: [Array](class_array.md) [`GLTFCamera`](class_gltfcamera.md) )                                                                      |
+| `void`                                                                      | [`set_handle_binary_image`](class_gltfstate.md#class_gltfstate_method_set_handle_binary_image) ( method: [`int`](class_int.md) )                                                                                     |
+| `void`                                                                      | [`set_images`](class_gltfstate.md#class_gltfstate_method_set_images) ( images: [Array](class_array.md) [`Texture2D`](class_texture2d.md) )                                                                           |
+| `void`                                                                      | [`set_lights`](class_gltfstate.md#class_gltfstate_method_set_lights) ( lights: [Array](class_array.md) [`GLTFLight`](class_gltflight.md) )                                                                           |
+| `void`                                                                      | [`set_materials`](class_gltfstate.md#class_gltfstate_method_set_materials) ( materials: [Array](class_array.md) [`Material`](class_material.md) )                                                                    |
+| `void`                                                                      | [`set_meshes`](class_gltfstate.md#class_gltfstate_method_set_meshes) ( meshes: [Array](class_array.md) [`GLTFMesh`](class_gltfmesh.md) )                                                                             |
+| `void`                                                                      | [`set_nodes`](class_gltfstate.md#class_gltfstate_method_set_nodes) ( nodes: [Array](class_array.md) [`GLTFNode`](class_gltfnode.md) )                                                                                |
+| `void`                                                                      | [`set_skeletons`](class_gltfstate.md#class_gltfstate_method_set_skeletons) ( skeletons: [Array](class_array.md) [`GLTFSkeleton`](class_gltfskeleton.md) )                                                            |
+| `void`                                                                      | [`set_skins`](class_gltfstate.md#class_gltfstate_method_set_skins) ( skins: [Array](class_array.md) [`GLTFSkin`](class_gltfskin.md) )                                                                                |
+| `void`                                                                      | [`set_texture_samplers`](class_gltfstate.md#class_gltfstate_method_set_texture_samplers) ( texture_samplers: [Array](class_array.md) [`GLTFTextureSampler`](class_gltftexturesampler.md) )                           |
+| `void`                                                                      | [`set_textures`](class_gltfstate.md#class_gltfstate_method_set_textures) ( textures: [Array](class_array.md) [`GLTFTexture`](class_gltftexture.md) )                                                                 |
+| `void`                                                                      | [`set_unique_animation_names`](class_gltfstate.md#class_gltfstate_method_set_unique_animation_names) ( unique_animation_names: [Array](class_array.md) [`String`](class_string.md) )                                 |
+| `void`                                                                      | [`set_unique_names`](class_gltfstate.md#class_gltfstate_method_set_unique_names) ( unique_names: [Array](class_array.md) [`String`](class_string.md) )                                                               |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -139,7 +140,7 @@ The baking fps of the animation for either import or export.
 - `void` **set_base_path** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_base_path** ( )
 
-The folder path associated with this GLTF data. This is used to find other files the GLTF file references, like images or binary buffers. This will be set during import when appending from a file, and will be set during export when writing to a file.
+The folder path associated with this glTF data. This is used to find other files the glTF file references, like images or binary buffers. This will be set during import when appending from a file, and will be set during export when writing to a file.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -165,7 +166,7 @@ The folder path associated with this GLTF data. This is used to find other files
 - `void` **set_copyright** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_copyright** ( )
 
-The copyright string in the asset header of the GLTF file. This is set during import if present and export if non-empty. See the GLTF asset header documentation for more information.
+The copyright string in the asset header of the glTF file. This is set during import if present and export if non-empty. See the glTF asset header documentation for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -191,7 +192,7 @@ The copyright string in the asset header of the GLTF file. This is set during im
 - `void` **set_filename** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_filename** ( )
 
-The file name associated with this GLTF data. If it ends with `.gltf`, this is text-based GLTF, otherwise this is binary GLB. This will be set during import when appending from a file, and will be set during export when writing to a file. If writing to a buffer, this will be an empty string.
+The file name associated with this glTF data. If it ends with `.gltf`, this is text-based glTF, otherwise this is binary GLB. This will be set during import when appending from a file, and will be set during export when writing to a file. If writing to a buffer, this will be an empty string.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -271,7 +272,7 @@ The original raw JSON document corresponding to this GLTFState.
 - `void` **set_root_nodes** ( value: [`PackedInt32Array`](class_packedint32array.md) )
 - [`PackedInt32Array`](class_packedint32array.md) **get_root_nodes** ( )
 
-The root nodes of the GLTF file. Typically, a GLTF file will only have one scene, and therefore one root node. However, a GLTF file may have multiple scenes and therefore multiple root nodes, which will be generated as siblings of each other and as children of the root node of the generated Godot scene.
+The root nodes of the glTF file. Typically, a glTF file will only have one scene, and therefore one root node. However, a glTF file may have multiple scenes and therefore multiple root nodes, which will be generated as siblings of each other and as children of the root node of the generated Godot scene.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedInt32Array`](class_packedint32array.md) for more details.
 
@@ -286,7 +287,7 @@ The root nodes of the GLTF file. Typically, a GLTF file will only have one scene
 - `void` **set_scene_name** ( value: [`String`](class_string.md) )
 - [`String`](class_string.md) **get_scene_name** ( )
 
-The name of the scene. When importing, if not specified, this will be the file name. When exporting, if specified, the scene name will be saved to the GLTF file.
+The name of the scene. When importing, if not specified, this will be the file name. When exporting, if specified, the scene name will be saved to the glTF file.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -311,7 +312,7 @@ The name of the scene. When importing, if not specified, this will be the file n
 
 `void` **add_used_extension** ( extension_name: [`String`](class_string.md), required: [`bool`](class_bool.md) )<div id="class_gltfstate_method_add_used_extension"></div>
 
-Appends an extension to the list of extensions used by this GLTF file during serialization. If `required` is true, the extension will also be added to the list of required extensions. Do not run this in [`GLTFDocumentExtension._export_post`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_post), as that stage is too late to add extensions. The final list is sorted alphabetically.
+Appends an extension to the list of extensions used by this glTF file during serialization. If `required` is true, the extension will also be added to the list of required extensions. Do not run this in [`GLTFDocumentExtension._export_post`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_post), as that stage is too late to add extensions. The final list is sorted alphabetically.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -322,6 +323,20 @@ Appends an extension to the list of extensions used by this GLTF file during ser
 [`int`](class_int.md) **append_data_to_buffers** ( data: [`PackedByteArray`](class_packedbytearray.md), deduplication: [`bool`](class_bool.md) )<div id="class_gltfstate_method_append_data_to_buffers"></div>
 
 Appends the given byte array data to the buffers and creates a [`GLTFBufferView`](class_gltfbufferview.md) for it. The index of the destination [`GLTFBufferView`](class_gltfbufferview.md) is returned. If `deduplication` is true, the buffers will first be searched for duplicate data, otherwise new bytes will always be appended.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_gltfstate_method_append_gltf_node"></div>
+
+[`int`](class_int.md) **append_gltf_node** ( gltf_node: [`GLTFNode`](class_gltfnode.md), godot_scene_node: [`Node`](class_node.md), parent_node_index: [`int`](class_int.md) )<div id="class_gltfstate_method_append_gltf_node"></div>
+
+Append the given [`GLTFNode`](class_gltfnode.md) to the state, and return its new index. This can be used to export one Godot node as multiple glTF nodes, or inject new glTF nodes at import time. On import, this must be called before [`GLTFDocumentExtension._generate_scene_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__generate_scene_node) finishes for the parent node. On export, this must be called before [`GLTFDocumentExtension._export_node`](class_gltfdocumentextension.md#class_gltfdocumentextension_private_method__export_node) runs for the parent node.
+
+The `godot_scene_node` parameter is the Godot scene node that corresponds to this glTF node. This is highly recommended to be set to a valid node, but may be null if there is no corresponding Godot scene node. One Godot scene node may be used for multiple glTF nodes, so if exporting multiple glTF nodes for one Godot scene node, use the same Godot scene node for each.
+
+The `parent_node_index` parameter is the index of the parent [`GLTFNode`](class_gltfnode.md) in the state. If `-1`, the node will be a root node, otherwise the new node will be added to the parent's list of children. The index will also be written to the [`GLTFNode.parent`](class_gltfnode.md#class_gltfnode_property_parent) property of the new node.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -343,7 +358,7 @@ Appends the given byte array data to the buffers and creates a [`GLTFBufferView`
 
 Gets additional arbitrary data in this **GLTFState** instance. This can be used to keep per-file state data in [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes, which is important because they are stateless.
 
-The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the GLTF file), and the return value can be anything you set. If nothing was set, the return value is null.
+The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is null.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -353,7 +368,7 @@ The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension
 
 [`AnimationPlayer`](class_animationplayer.md) **get_animation_player** ( idx: [`int`](class_int.md) )<div id="class_gltfstate_method_get_animation_player"></div>
 
-Returns the [`AnimationPlayer`](class_animationplayer.md) node with the given index. These nodes are only used during the export process when converting Godot [`AnimationPlayer`](class_animationplayer.md) nodes to GLTF animations.
+Returns the [`AnimationPlayer`](class_animationplayer.md) node with the given index. These nodes are only used during the export process when converting Godot [`AnimationPlayer`](class_animationplayer.md) nodes to glTF animations.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -363,7 +378,7 @@ Returns the [`AnimationPlayer`](class_animationplayer.md) node with the given in
 
 [`int`](class_int.md) **get_animation_players_count** ( idx: [`int`](class_int.md) )<div id="class_gltfstate_method_get_animation_players_count"></div>
 
-Returns the number of [`AnimationPlayer`](class_animationplayer.md) nodes in this **GLTFState**. These nodes are only used during the export process when converting Godot [`AnimationPlayer`](class_animationplayer.md) nodes to GLTF animations.
+Returns the number of [`AnimationPlayer`](class_animationplayer.md) nodes in this **GLTFState**. These nodes are only used during the export process when converting Godot [`AnimationPlayer`](class_animationplayer.md) nodes to glTF animations.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -373,7 +388,7 @@ Returns the number of [`AnimationPlayer`](class_animationplayer.md) nodes in thi
 
 [Array](class_array.md) [`GLTFAnimation`](class_gltfanimation.md) **get_animations** ( )<div id="class_gltfstate_method_get_animations"></div>
 
-Returns an array of all [`GLTFAnimation`](class_gltfanimation.md) s in the GLTF file. When importing, these will be generated as animations in an [`AnimationPlayer`](class_animationplayer.md) node. When exporting, these will be generated from Godot [`AnimationPlayer`](class_animationplayer.md) nodes.
+Returns an array of all [`GLTFAnimation`](class_gltfanimation.md) s in the glTF file. When importing, these will be generated as animations in an [`AnimationPlayer`](class_animationplayer.md) node. When exporting, these will be generated from Godot [`AnimationPlayer`](class_animationplayer.md) nodes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -393,7 +408,7 @@ Returns an array of all [`GLTFAnimation`](class_gltfanimation.md) s in the GLTF 
 
 [Array](class_array.md) [`GLTFCamera`](class_gltfcamera.md) **get_cameras** ( )<div id="class_gltfstate_method_get_cameras"></div>
 
-Returns an array of all [`GLTFCamera`](class_gltfcamera.md) s in the GLTF file. These are the cameras that the [`GLTFNode.camera`](class_gltfnode.md#class_gltfnode_property_camera) index refers to.
+Returns an array of all [`GLTFCamera`](class_gltfcamera.md) s in the glTF file. These are the cameras that the [`GLTFNode.camera`](class_gltfnode.md#class_gltfnode_property_camera) index refers to.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -413,7 +428,7 @@ Returns an array of all [`GLTFCamera`](class_gltfcamera.md) s in the GLTF file. 
 
 [Array](class_array.md) [`Texture2D`](class_texture2d.md) **get_images** ( )<div id="class_gltfstate_method_get_images"></div>
 
-Gets the images of the GLTF file as an array of [`Texture2D`](class_texture2d.md) s. These are the images that the [`GLTFTexture.src_image`](class_gltftexture.md#class_gltftexture_property_src_image) index refers to.
+Gets the images of the glTF file as an array of [`Texture2D`](class_texture2d.md) s. These are the images that the [`GLTFTexture.src_image`](class_gltftexture.md#class_gltftexture_property_src_image) index refers to.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -423,7 +438,7 @@ Gets the images of the GLTF file as an array of [`Texture2D`](class_texture2d.md
 
 [Array](class_array.md) [`GLTFLight`](class_gltflight.md) **get_lights** ( )<div id="class_gltfstate_method_get_lights"></div>
 
-Returns an array of all [`GLTFLight`](class_gltflight.md) s in the GLTF file. These are the lights that the [`GLTFNode.light`](class_gltfnode.md#class_gltfnode_property_light) index refers to.
+Returns an array of all [`GLTFLight`](class_gltflight.md) s in the glTF file. These are the lights that the [`GLTFNode.light`](class_gltfnode.md#class_gltfnode_property_light) index refers to.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -443,7 +458,7 @@ Returns an array of all [`GLTFLight`](class_gltflight.md) s in the GLTF file. Th
 
 [Array](class_array.md) [`GLTFMesh`](class_gltfmesh.md) **get_meshes** ( )<div id="class_gltfstate_method_get_meshes"></div>
 
-Returns an array of all [`GLTFMesh`](class_gltfmesh.md) es in the GLTF file. These are the meshes that the [`GLTFNode.mesh`](class_gltfnode.md#class_gltfnode_property_mesh) index refers to.
+Returns an array of all [`GLTFMesh`](class_gltfmesh.md) es in the glTF file. These are the meshes that the [`GLTFNode.mesh`](class_gltfnode.md#class_gltfnode_property_mesh) index refers to.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -465,7 +480,7 @@ Returns the index of the [`GLTFNode`](class_gltfnode.md) corresponding to this G
 
 [Array](class_array.md) [`GLTFNode`](class_gltfnode.md) **get_nodes** ( )<div id="class_gltfstate_method_get_nodes"></div>
 
-Returns an array of all [`GLTFNode`](class_gltfnode.md) s in the GLTF file. These are the nodes that [`GLTFNode.children`](class_gltfnode.md#class_gltfnode_property_children) and [`root_nodes`](class_gltfstate.md#class_gltfstate_property_root_nodes) refer to. This includes nodes that may not be generated in the Godot scene, or nodes that may generate multiple Godot scene nodes.
+Returns an array of all [`GLTFNode`](class_gltfnode.md) s in the glTF file. These are the nodes that [`GLTFNode.children`](class_gltfnode.md#class_gltfnode_property_children) and [`root_nodes`](class_gltfstate.md#class_gltfstate_property_root_nodes) refer to. This includes nodes that may not be generated in the Godot scene, or nodes that may generate multiple Godot scene nodes.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -487,7 +502,7 @@ Returns the Godot scene node that corresponds to the same index as the [`GLTFNod
 
 [Array](class_array.md) [`GLTFSkeleton`](class_gltfskeleton.md) **get_skeletons** ( )<div id="class_gltfstate_method_get_skeletons"></div>
 
-Returns an array of all [`GLTFSkeleton`](class_gltfskeleton.md) s in the GLTF file. These are the skeletons that the [`GLTFNode.skeleton`](class_gltfnode.md#class_gltfnode_property_skeleton) index refers to.
+Returns an array of all [`GLTFSkeleton`](class_gltfskeleton.md) s in the glTF file. These are the skeletons that the [`GLTFNode.skeleton`](class_gltfnode.md#class_gltfnode_property_skeleton) index refers to.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -497,7 +512,7 @@ Returns an array of all [`GLTFSkeleton`](class_gltfskeleton.md) s in the GLTF fi
 
 [Array](class_array.md) [`GLTFSkin`](class_gltfskin.md) **get_skins** ( )<div id="class_gltfstate_method_get_skins"></div>
 
-Returns an array of all [`GLTFSkin`](class_gltfskin.md) s in the GLTF file. These are the skins that the [`GLTFNode.skin`](class_gltfnode.md#class_gltfnode_property_skin) index refers to.
+Returns an array of all [`GLTFSkin`](class_gltfskin.md) s in the glTF file. These are the skins that the [`GLTFNode.skin`](class_gltfnode.md#class_gltfnode_property_skin) index refers to.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -507,7 +522,7 @@ Returns an array of all [`GLTFSkin`](class_gltfskin.md) s in the GLTF file. Thes
 
 [Array](class_array.md) [`GLTFTextureSampler`](class_gltftexturesampler.md) **get_texture_samplers** ( )<div id="class_gltfstate_method_get_texture_samplers"></div>
 
-Retrieves the array of texture samplers that are used by the textures contained in the GLTF.
+Retrieves the array of texture samplers that are used by the textures contained in the glTF.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -559,7 +574,7 @@ Returns an array of unique node names. This is used in both the import process a
 
 Sets additional arbitrary data in this **GLTFState** instance. This can be used to keep per-file state data in [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes, which is important because they are stateless.
 
-The first argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the GLTF file), and the second argument can be anything you want.
+The first argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -679,7 +694,7 @@ Sets the [`GLTFSkin`](class_gltfskin.md) s in the state. These are the skins tha
 
 `void` **set_texture_samplers** ( texture_samplers: [Array](class_array.md) [`GLTFTextureSampler`](class_gltftexturesampler.md) )<div id="class_gltfstate_method_set_texture_samplers"></div>
 
-Sets the array of texture samplers that are used by the textures contained in the GLTF.
+Sets the array of texture samplers that are used by the textures contained in the glTF.
 
 <!-- rst-class:: classref-item-separator -->
 

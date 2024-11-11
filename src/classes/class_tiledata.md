@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TileData.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TileData.xml。 -->
 
 <div id="_class_tiledata"></div>
 
@@ -35,31 +35,37 @@ Settings for a single tile in a [`TileSet`](class_tileset.md).
 
 |||
 |:-:|:--|
-| `void`                                              | [`add_collision_polygon`](class_tiledata.md#class_tiledata_method_add_collision_polygon) ( layer_id: [`int`](class_int.md) )                                                                                                                                               |
-| [`float`](class_float.md)                           | [`get_collision_polygon_one_way_margin`](class_tiledata.md#class_tiledata_method_get_collision_polygon_one_way_margin) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]                                                             |
-| [`PackedVector2Array`](class_packedvector2array.md) | [`get_collision_polygon_points`](class_tiledata.md#class_tiledata_method_get_collision_polygon_points) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]                                                                             |
-| [`int`](class_int.md)                               | [`get_collision_polygons_count`](class_tiledata.md#class_tiledata_method_get_collision_polygons_count) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                   |
-| [`float`](class_float.md)                           | [`get_constant_angular_velocity`](class_tiledata.md#class_tiledata_method_get_constant_angular_velocity) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                 |
-| [`Vector2`](class_vector2.md)                       | [`get_constant_linear_velocity`](class_tiledata.md#class_tiledata_method_get_constant_linear_velocity) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                   |
-| [`Variant`](class_variant.md)                       | [`get_custom_data`](class_tiledata.md#class_tiledata_method_get_custom_data) ( layer_name: [`String`](class_string.md) ) const[^const]                                                                                                                                     |
-| [`Variant`](class_variant.md)                       | [`get_custom_data_by_layer_id`](class_tiledata.md#class_tiledata_method_get_custom_data_by_layer_id) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                     |
-| [`NavigationPolygon`](class_navigationpolygon.md)   | [`get_navigation_polygon`](class_tiledata.md#class_tiledata_method_get_navigation_polygon) ( layer_id: [`int`](class_int.md), flip_h: [`bool`](class_bool.md) = false, flip_v: [`bool`](class_bool.md) = false, transpose: [`bool`](class_bool.md) = false ) const[^const] |
-| [`OccluderPolygon2D`](class_occluderpolygon2d.md)   | [`get_occluder`](class_tiledata.md#class_tiledata_method_get_occluder) ( layer_id: [`int`](class_int.md), flip_h: [`bool`](class_bool.md) = false, flip_v: [`bool`](class_bool.md) = false, transpose: [`bool`](class_bool.md) = false ) const[^const]                     |
-| [`int`](class_int.md)                               | [`get_terrain_peering_bit`](class_tiledata.md#class_tiledata_method_get_terrain_peering_bit) ( peering_bit: [CellNeighbor](#enum_tileset_cellneighbor) ) const[^const]                                                                                                     |
-| [`bool`](class_bool.md)                             | [`is_collision_polygon_one_way`](class_tiledata.md#class_tiledata_method_is_collision_polygon_one_way) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]                                                                             |
-| [`bool`](class_bool.md)                             | [`is_valid_terrain_peering_bit`](class_tiledata.md#class_tiledata_method_is_valid_terrain_peering_bit) ( peering_bit: [CellNeighbor](#enum_tileset_cellneighbor) ) const[^const]                                                                                           |
-| `void`                                              | [`remove_collision_polygon`](class_tiledata.md#class_tiledata_method_remove_collision_polygon) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) )                                                                                                   |
-| `void`                                              | [`set_collision_polygon_one_way`](class_tiledata.md#class_tiledata_method_set_collision_polygon_one_way) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), one_way: [`bool`](class_bool.md) )                                                       |
-| `void`                                              | [`set_collision_polygon_one_way_margin`](class_tiledata.md#class_tiledata_method_set_collision_polygon_one_way_margin) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), one_way_margin: [`float`](class_float.md) )                                |
-| `void`                                              | [`set_collision_polygon_points`](class_tiledata.md#class_tiledata_method_set_collision_polygon_points) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                             |
-| `void`                                              | [`set_collision_polygons_count`](class_tiledata.md#class_tiledata_method_set_collision_polygons_count) ( layer_id: [`int`](class_int.md), polygons_count: [`int`](class_int.md) )                                                                                          |
-| `void`                                              | [`set_constant_angular_velocity`](class_tiledata.md#class_tiledata_method_set_constant_angular_velocity) ( layer_id: [`int`](class_int.md), velocity: [`float`](class_float.md) )                                                                                          |
-| `void`                                              | [`set_constant_linear_velocity`](class_tiledata.md#class_tiledata_method_set_constant_linear_velocity) ( layer_id: [`int`](class_int.md), velocity: [`Vector2`](class_vector2.md) )                                                                                        |
-| `void`                                              | [`set_custom_data`](class_tiledata.md#class_tiledata_method_set_custom_data) ( layer_name: [`String`](class_string.md), value: [`Variant`](class_variant.md) )                                                                                                             |
-| `void`                                              | [`set_custom_data_by_layer_id`](class_tiledata.md#class_tiledata_method_set_custom_data_by_layer_id) ( layer_id: [`int`](class_int.md), value: [`Variant`](class_variant.md) )                                                                                             |
-| `void`                                              | [`set_navigation_polygon`](class_tiledata.md#class_tiledata_method_set_navigation_polygon) ( layer_id: [`int`](class_int.md), navigation_polygon: [`NavigationPolygon`](class_navigationpolygon.md) )                                                                      |
-| `void`                                              | [`set_occluder`](class_tiledata.md#class_tiledata_method_set_occluder) ( layer_id: [`int`](class_int.md), occluder_polygon: [`OccluderPolygon2D`](class_occluderpolygon2d.md) )                                                                                            |
-| `void`                                              | [`set_terrain_peering_bit`](class_tiledata.md#class_tiledata_method_set_terrain_peering_bit) ( peering_bit: [CellNeighbor](#enum_tileset_cellneighbor), terrain: [`int`](class_int.md) )                                                                                   |
+| `void`                                              | [`add_collision_polygon`](class_tiledata.md#class_tiledata_method_add_collision_polygon) ( layer_id: [`int`](class_int.md) )                                                                                                                                                                                 |
+| `void`                                              | [`add_occluder_polygon`](class_tiledata.md#class_tiledata_method_add_occluder_polygon) ( layer_id: [`int`](class_int.md) )                                                                                                                                                                                   |
+| [`float`](class_float.md)                           | [`get_collision_polygon_one_way_margin`](class_tiledata.md#class_tiledata_method_get_collision_polygon_one_way_margin) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]                                                                                               |
+| [`PackedVector2Array`](class_packedvector2array.md) | [`get_collision_polygon_points`](class_tiledata.md#class_tiledata_method_get_collision_polygon_points) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]                                                                                                               |
+| [`int`](class_int.md)                               | [`get_collision_polygons_count`](class_tiledata.md#class_tiledata_method_get_collision_polygons_count) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                     |
+| [`float`](class_float.md)                           | [`get_constant_angular_velocity`](class_tiledata.md#class_tiledata_method_get_constant_angular_velocity) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                   |
+| [`Vector2`](class_vector2.md)                       | [`get_constant_linear_velocity`](class_tiledata.md#class_tiledata_method_get_constant_linear_velocity) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                     |
+| [`Variant`](class_variant.md)                       | [`get_custom_data`](class_tiledata.md#class_tiledata_method_get_custom_data) ( layer_name: [`String`](class_string.md) ) const[^const]                                                                                                                                                                       |
+| [`Variant`](class_variant.md)                       | [`get_custom_data_by_layer_id`](class_tiledata.md#class_tiledata_method_get_custom_data_by_layer_id) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                       |
+| [`NavigationPolygon`](class_navigationpolygon.md)   | [`get_navigation_polygon`](class_tiledata.md#class_tiledata_method_get_navigation_polygon) ( layer_id: [`int`](class_int.md), flip_h: [`bool`](class_bool.md) = false, flip_v: [`bool`](class_bool.md) = false, transpose: [`bool`](class_bool.md) = false ) const[^const]                                   |
+| [`OccluderPolygon2D`](class_occluderpolygon2d.md)   | [`get_occluder`](class_tiledata.md#class_tiledata_method_get_occluder) ( layer_id: [`int`](class_int.md), flip_h: [`bool`](class_bool.md) = false, flip_v: [`bool`](class_bool.md) = false, transpose: [`bool`](class_bool.md) = false ) const[^const]                                                       |
+| [`OccluderPolygon2D`](class_occluderpolygon2d.md)   | [`get_occluder_polygon`](class_tiledata.md#class_tiledata_method_get_occluder_polygon) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), flip_h: [`bool`](class_bool.md) = false, flip_v: [`bool`](class_bool.md) = false, transpose: [`bool`](class_bool.md) = false ) const[^const] |
+| [`int`](class_int.md)                               | [`get_occluder_polygons_count`](class_tiledata.md#class_tiledata_method_get_occluder_polygons_count) ( layer_id: [`int`](class_int.md) ) const[^const]                                                                                                                                                       |
+| [`int`](class_int.md)                               | [`get_terrain_peering_bit`](class_tiledata.md#class_tiledata_method_get_terrain_peering_bit) ( peering_bit: [CellNeighbor](#enum_tileset_cellneighbor) ) const[^const]                                                                                                                                       |
+| [`bool`](class_bool.md)                             | [`is_collision_polygon_one_way`](class_tiledata.md#class_tiledata_method_is_collision_polygon_one_way) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]                                                                                                               |
+| [`bool`](class_bool.md)                             | [`is_valid_terrain_peering_bit`](class_tiledata.md#class_tiledata_method_is_valid_terrain_peering_bit) ( peering_bit: [CellNeighbor](#enum_tileset_cellneighbor) ) const[^const]                                                                                                                             |
+| `void`                                              | [`remove_collision_polygon`](class_tiledata.md#class_tiledata_method_remove_collision_polygon) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) )                                                                                                                                     |
+| `void`                                              | [`remove_occluder_polygon`](class_tiledata.md#class_tiledata_method_remove_occluder_polygon) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) )                                                                                                                                       |
+| `void`                                              | [`set_collision_polygon_one_way`](class_tiledata.md#class_tiledata_method_set_collision_polygon_one_way) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), one_way: [`bool`](class_bool.md) )                                                                                         |
+| `void`                                              | [`set_collision_polygon_one_way_margin`](class_tiledata.md#class_tiledata_method_set_collision_polygon_one_way_margin) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), one_way_margin: [`float`](class_float.md) )                                                                  |
+| `void`                                              | [`set_collision_polygon_points`](class_tiledata.md#class_tiledata_method_set_collision_polygon_points) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), polygon: [`PackedVector2Array`](class_packedvector2array.md) )                                                               |
+| `void`                                              | [`set_collision_polygons_count`](class_tiledata.md#class_tiledata_method_set_collision_polygons_count) ( layer_id: [`int`](class_int.md), polygons_count: [`int`](class_int.md) )                                                                                                                            |
+| `void`                                              | [`set_constant_angular_velocity`](class_tiledata.md#class_tiledata_method_set_constant_angular_velocity) ( layer_id: [`int`](class_int.md), velocity: [`float`](class_float.md) )                                                                                                                            |
+| `void`                                              | [`set_constant_linear_velocity`](class_tiledata.md#class_tiledata_method_set_constant_linear_velocity) ( layer_id: [`int`](class_int.md), velocity: [`Vector2`](class_vector2.md) )                                                                                                                          |
+| `void`                                              | [`set_custom_data`](class_tiledata.md#class_tiledata_method_set_custom_data) ( layer_name: [`String`](class_string.md), value: [`Variant`](class_variant.md) )                                                                                                                                               |
+| `void`                                              | [`set_custom_data_by_layer_id`](class_tiledata.md#class_tiledata_method_set_custom_data_by_layer_id) ( layer_id: [`int`](class_int.md), value: [`Variant`](class_variant.md) )                                                                                                                               |
+| `void`                                              | [`set_navigation_polygon`](class_tiledata.md#class_tiledata_method_set_navigation_polygon) ( layer_id: [`int`](class_int.md), navigation_polygon: [`NavigationPolygon`](class_navigationpolygon.md) )                                                                                                        |
+| `void`                                              | [`set_occluder`](class_tiledata.md#class_tiledata_method_set_occluder) ( layer_id: [`int`](class_int.md), occluder_polygon: [`OccluderPolygon2D`](class_occluderpolygon2d.md) )                                                                                                                              |
+| `void`                                              | [`set_occluder_polygon`](class_tiledata.md#class_tiledata_method_set_occluder_polygon) ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), polygon: [`OccluderPolygon2D`](class_occluderpolygon2d.md) )                                                                                 |
+| `void`                                              | [`set_occluder_polygons_count`](class_tiledata.md#class_tiledata_method_set_occluder_polygons_count) ( layer_id: [`int`](class_int.md), polygons_count: [`int`](class_int.md) )                                                                                                                              |
+| `void`                                              | [`set_terrain_peering_bit`](class_tiledata.md#class_tiledata_method_set_terrain_peering_bit) ( peering_bit: [CellNeighbor](#enum_tileset_cellneighbor), terrain: [`int`](class_int.md) )                                                                                                                     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -234,6 +240,16 @@ Adds a collision polygon to the tile on the given TileSet physics layer.
 
 ---
 
+<div id="_class_tiledata_method_add_occluder_polygon"></div>
+
+`void` **add_occluder_polygon** ( layer_id: [`int`](class_int.md) )<div id="class_tiledata_method_add_occluder_polygon"></div>
+
+Adds an occlusion polygon to the tile on the TileSet occlusion layer with index `layer_id`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_tiledata_method_get_collision_polygon_one_way_margin"></div>
 
 [`float`](class_float.md) **get_collision_polygon_one_way_margin** ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) ) const[^const]<div id="class_tiledata_method_get_collision_polygon_one_way_margin"></div>
@@ -320,9 +336,33 @@ Returns the navigation polygon of the tile for the TileSet navigation layer with
 
 [`OccluderPolygon2D`](class_occluderpolygon2d.md) **get_occluder** ( layer_id: [`int`](class_int.md), flip_h: [`bool`](class_bool.md) = false, flip_v: [`bool`](class_bool.md) = false, transpose: [`bool`](class_bool.md) = false ) const[^const]<div id="class_tiledata_method_get_occluder"></div>
 
+**已弃用：** Use [`get_occluder_polygon`](class_tiledata.md#class_tiledata_method_get_occluder_polygon) instead.
+
 Returns the occluder polygon of the tile for the TileSet occlusion layer with index `layer_id`.
 
  `flip_h`, `flip_v`, and `transpose` allow transforming the returned polygon.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tiledata_method_get_occluder_polygon"></div>
+
+[`OccluderPolygon2D`](class_occluderpolygon2d.md) **get_occluder_polygon** ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), flip_h: [`bool`](class_bool.md) = false, flip_v: [`bool`](class_bool.md) = false, transpose: [`bool`](class_bool.md) = false ) const[^const]<div id="class_tiledata_method_get_occluder_polygon"></div>
+
+Returns the occluder polygon at index `polygon_index` from the TileSet occlusion layer with index `layer_id`.
+
+The `flip_h`, `flip_v`, and `transpose` parameters can be `true` to transform the returned polygon.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tiledata_method_get_occluder_polygons_count"></div>
+
+[`int`](class_int.md) **get_occluder_polygons_count** ( layer_id: [`int`](class_int.md) ) const[^const]<div id="class_tiledata_method_get_occluder_polygons_count"></div>
+
+Returns the number of occluder polygons of the tile in the TileSet occlusion layer with index `layer_id`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -368,6 +408,16 @@ Removes the polygon at index `polygon_index` for TileSet physics layer with inde
 
 ---
 
+<div id="_class_tiledata_method_remove_occluder_polygon"></div>
+
+`void` **remove_occluder_polygon** ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md) )<div id="class_tiledata_method_remove_occluder_polygon"></div>
+
+Removes the polygon at index `polygon_index` for TileSet occlusion layer with index `layer_id`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_tiledata_method_set_collision_polygon_one_way"></div>
 
 `void` **set_collision_polygon_one_way** ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), one_way: [`bool`](class_bool.md) )<div id="class_tiledata_method_set_collision_polygon_one_way"></div>
@@ -382,7 +432,7 @@ Enables/disables one-way collisions on the polygon at index `polygon_index` for 
 
 `void` **set_collision_polygon_one_way_margin** ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), one_way_margin: [`float`](class_float.md) )<div id="class_tiledata_method_set_collision_polygon_one_way_margin"></div>
 
-Enables/disables one-way collisions on the polygon at index `polygon_index` for TileSet physics layer with index `layer_id`.
+Sets the one-way margin (for one-way platforms) of the polygon at index `polygon_index` for TileSet physics layer with index `layer_id`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -462,7 +512,29 @@ Sets the navigation polygon for the TileSet navigation layer with index `layer_i
 
 `void` **set_occluder** ( layer_id: [`int`](class_int.md), occluder_polygon: [`OccluderPolygon2D`](class_occluderpolygon2d.md) )<div id="class_tiledata_method_set_occluder"></div>
 
+**已弃用：** Use [`set_occluder_polygon`](class_tiledata.md#class_tiledata_method_set_occluder_polygon) instead.
+
 Sets the occluder for the TileSet occlusion layer with index `layer_id`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tiledata_method_set_occluder_polygon"></div>
+
+`void` **set_occluder_polygon** ( layer_id: [`int`](class_int.md), polygon_index: [`int`](class_int.md), polygon: [`OccluderPolygon2D`](class_occluderpolygon2d.md) )<div id="class_tiledata_method_set_occluder_polygon"></div>
+
+Sets the occluder for polygon with index `polygon_index` in the TileSet occlusion layer with index `layer_id`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tiledata_method_set_occluder_polygons_count"></div>
+
+`void` **set_occluder_polygons_count** ( layer_id: [`int`](class_int.md), polygons_count: [`int`](class_int.md) )<div id="class_tiledata_method_set_occluder_polygons_count"></div>
+
+Sets the occluder polygon count in the TileSet occlusion layer with index `layer_id`.
 
 <!-- rst-class:: classref-item-separator -->
 

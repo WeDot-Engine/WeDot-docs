@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TextMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TextMesh.xml。 -->
 
 <div id="_class_textmesh"></div>
 
@@ -133,7 +133,7 @@ Controls the text's horizontal alignment. Supports left, center, right, and fill
 - `void` **set_justification_flags** ( value: [JustificationFlag](#enum_textserver_justificationflag) )
 - [JustificationFlag](#enum_textserver_justificationflag) **get_justification_flags** ( )
 
-Line fill alignment rules. For more info see [JustificationFlag](#enum_textserver_justificationflag).
+Line fill alignment rules. See [JustificationFlag](#enum_textserver_justificationflag) for more information.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorImportPlugin.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorImportPlugin.xml。 -->
 
 <div id="_class_editorimportplugin"></div>
 
@@ -169,7 +169,9 @@ To use **EditorImportPlugin**, register it using the [`EditorPlugin.add_import_p
 
 Tells whether this importer can be run in parallel on threads, or, on the contrary, it's only safe for the editor to call it from the main thread, for one file at a time.
 
-If this method is not overridden, it will return `true` by default (i.e., safe for parallel importing).
+If this method is not overridden, it will return `false` by default.
+
+If this importer's implementation is thread-safe and can be run in parallel, override this with `true` to optimize for concurrency.
 
 <!-- rst-class:: classref-item-separator -->
 

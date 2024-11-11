@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/NavigationPolygon.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/NavigationPolygon.xml。 -->
 
 <div id="_class_navigationpolygon"></div>
 
@@ -79,15 +79,16 @@ Adding vertices and polygon indices manually.
 
 |||
 |:-:|:--|
-| [`float`](class_float.md)                                        | [`agent_radius`](class_navigationpolygon.md#class_navigationpolygon_property_agent_radius)                             | ``10.0``                                        |
-| [`Rect2`](class_rect2.md)                                        | [`baking_rect`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect)                               | ``Rect2(0, 0, 0, 0)``                           |
-| [`Vector2`](class_vector2.md)                                    | [`baking_rect_offset`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect_offset)                 | ``Vector2(0, 0)``                               |
-| [`float`](class_float.md)                                        | [`border_size`](class_navigationpolygon.md#class_navigationpolygon_property_border_size)                               | ``0.0``                                         |
-| [`float`](class_float.md)                                        | [`cell_size`](class_navigationpolygon.md#class_navigationpolygon_property_cell_size)                                   | ``1.0``                                         |
-| [`int`](class_int.md)                                            | [`parsed_collision_mask`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_collision_mask)           | ``4294967295``                                  |
-| [ParsedGeometryType](#enum_navigationpolygon_parsedgeometrytype) | [`parsed_geometry_type`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_geometry_type)             | ``2``                                           |
-| [`StringName`](class_stringname.md)                              | [`source_geometry_group_name`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_group_name) | ``&"navigation_polygon_source_geometry_group"`` |
-| [SourceGeometryMode](#enum_navigationpolygon_sourcegeometrymode) | [`source_geometry_mode`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_mode)             | ``0``                                           |
+| [`float`](class_float.md)                                          | [`agent_radius`](class_navigationpolygon.md#class_navigationpolygon_property_agent_radius)                             | ``10.0``                                        |
+| [`Rect2`](class_rect2.md)                                          | [`baking_rect`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect)                               | ``Rect2(0, 0, 0, 0)``                           |
+| [`Vector2`](class_vector2.md)                                      | [`baking_rect_offset`](class_navigationpolygon.md#class_navigationpolygon_property_baking_rect_offset)                 | ``Vector2(0, 0)``                               |
+| [`float`](class_float.md)                                          | [`border_size`](class_navigationpolygon.md#class_navigationpolygon_property_border_size)                               | ``0.0``                                         |
+| [`float`](class_float.md)                                          | [`cell_size`](class_navigationpolygon.md#class_navigationpolygon_property_cell_size)                                   | ``1.0``                                         |
+| [`int`](class_int.md)                                              | [`parsed_collision_mask`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_collision_mask)           | ``4294967295``                                  |
+| [ParsedGeometryType](#enum_navigationpolygon_parsedgeometrytype)   | [`parsed_geometry_type`](class_navigationpolygon.md#class_navigationpolygon_property_parsed_geometry_type)             | ``2``                                           |
+| [SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) | [`sample_partition_type`](class_navigationpolygon.md#class_navigationpolygon_property_sample_partition_type)           | ``0``                                           |
+| [`StringName`](class_stringname.md)                                | [`source_geometry_group_name`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_group_name) | ``&"navigation_polygon_source_geometry_group"`` |
+| [SourceGeometryMode](#enum_navigationpolygon_sourcegeometrymode)   | [`source_geometry_mode`](class_navigationpolygon.md#class_navigationpolygon_property_source_geometry_mode)             | ``0``                                           |
 
 ## 方法
 
@@ -117,6 +118,32 @@ Adding vertices and polygon indices manually.
 ---
 
 ## 枚举
+
+<div id="_class_enum_navigationpolygon_samplepartitiontype"></div>
+
+enum **SamplePartitionType**: <div id="enum_navigationpolygon_samplepartitiontype"></div>
+
+<div id="_class_navigationpolygon_constant_sample_partition_convex_partition"></div>
+
+[SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) **SAMPLE_PARTITION_CONVEX_PARTITION** = ``0``
+
+Convex partitioning that yields navigation mesh with convex polygons.
+
+<div id="_class_navigationpolygon_constant_sample_partition_triangulate"></div>
+
+[SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) **SAMPLE_PARTITION_TRIANGULATE** = ``1``
+
+Triangulation partitioning that yields navigation mesh with triangle polygons.
+
+<div id="_class_navigationpolygon_constant_sample_partition_max"></div>
+
+[SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) **SAMPLE_PARTITION_MAX** = ``2``
+
+Represents the size of the [SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) enum.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_enum_navigationpolygon_parsedgeometrytype"></div>
 
@@ -276,6 +303,19 @@ Only used when [`parsed_geometry_type`](class_navigationpolygon.md#class_navigat
 - [ParsedGeometryType](#enum_navigationpolygon_parsedgeometrytype) **get_parsed_geometry_type** ( )
 
 Determines which type of nodes will be parsed as geometry. See [ParsedGeometryType](#enum_navigationpolygon_parsedgeometrytype) for possible values.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_navigationpolygon_property_sample_partition_type"></div>
+
+[SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) **sample_partition_type** = ``0`` <div id="class_navigationpolygon_property_sample_partition_type"></div>
+
+- `void` **set_sample_partition_type** ( value: [SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) )
+- [SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) **get_sample_partition_type** ( )
+
+Partitioning algorithm for creating the navigation mesh polys. See [SamplePartitionType](#enum_navigationpolygon_samplepartitiontype) for possible values.
 
 <!-- rst-class:: classref-item-separator -->
 

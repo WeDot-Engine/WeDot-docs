@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gdscript/doc_classes/@GDScript.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gdscript/doc_classes/@GDScript.xml。 -->
 
 <div id="_class_@gdscript"></div>
 
@@ -11,9 +11,9 @@ Built-in GDScript constants, functions, and annotations.
 
 ## 描述
 
-A list of GDScript-specific utility functions and annotations accessible from any script.
+A list of utility functions and annotations accessible from any script written in GDScript.
 
-For the list of the global functions and constants see [`@GlobalScope`](class_@globalscope.md).
+For the list of global functions and constants that can be accessed in any scripting language, see [`@GlobalScope`](class_@globalscope.md).
 
 ## 方法
 
@@ -22,7 +22,7 @@ For the list of the global functions and constants see [`@GlobalScope`](class_@g
 | [`Color`](class_color.md)           | [`Color8`](class_@gdscript.md#class_@gdscript_method_color8) ( r8: [`int`](class_int.md), g8: [`int`](class_int.md), b8: [`int`](class_int.md), a8: [`int`](class_int.md) = 255 ) |
 | `void`                              | [`assert`](class_@gdscript.md#class_@gdscript_method_assert) ( condition: [`bool`](class_bool.md), message: [`String`](class_string.md) = "" )                                    |
 | [`String`](class_string.md)         | [`char`](class_@gdscript.md#class_@gdscript_method_char) ( char: [`int`](class_int.md) )                                                                                          |
-| [`Variant`](class_variant.md)       | [`convert`](class_@gdscript.md#class_@gdscript_method_convert) ( what: [`Variant`](class_variant.md), type: [`int`](class_int.md) )                                               |
+| [`Variant`](class_variant.md)       | [`convert`](class_@gdscript.md#class_@gdscript_method_convert) ( what: [`Variant`](class_variant.md), type: [Variant.Type](#enum_@globalscope_variant.type) )                     |
 | [`Object`](class_object.md)         | [`dict_to_inst`](class_@gdscript.md#class_@gdscript_method_dict_to_inst) ( dictionary: [`Dictionary`](class_dictionary.md) )                                                      |
 | [`Array`](class_array.md)           | [`get_stack`](class_@gdscript.md#class_@gdscript_method_get_stack) ( )                                                                                                            |
 | [`Dictionary`](class_dictionary.md) | [`inst_to_dict`](class_@gdscript.md#class_@gdscript_method_inst_to_dict) ( instance: [`Object`](class_object.md) )                                                                |
@@ -709,6 +709,57 @@ See also [`@GlobalScope.PROPERTY_USAGE_SUBGROUP`](class_@globalscope.md#class_@g
 
 ---
 
+<div id="_class_@gdscript_annotation_@export_tool_button"></div>
+
+**@export_tool_button** ( text: [`String`](class_string.md), icon: [`String`](class_string.md) = "" )<div id="class_@gdscript_annotation_@export_tool_button"></div>
+
+Export a [`Callable`](class_callable.md) property as a clickable button with the label `text`. When the button is pressed, the callable is called.
+
+If `icon` is specified, it is used to fetch an icon for the button via [`Control.get_theme_icon`](class_control.md#class_control_method_get_theme_icon), from the `"EditorIcons"` theme type. If `icon` is omitted, the default `"Callable"` icon is used instead.
+
+Consider using the [`EditorUndoRedoManager`](class_editorundoredomanager.md) to allow the action to be reverted safely.
+
+See also [`@GlobalScope.PROPERTY_HINT_TOOL_BUTTON`](class_@globalscope.md#class_@globalscope_constant_property_hint_tool_button).
+
+```
+
+    @tool
+    extends Sprite2D
+    
+    @export_tool_button("Hello") var hello_action = hello
+    @export_tool_button("Randomize the color!", "ColorRect")
+    var randomize_color_action = randomize_color
+    
+    func hello():
+        print("Hello world!")
+    
+    func randomize_color():
+        var undo_redo = EditorInterface.get_editor_undo_redo()
+        undo_redo.create_action("Randomized Sprite2D Color")
+        undo_redo.add_do_property(self, &"self_modulate", Color(randf(), randf(), randf()))
+        undo_redo.add_undo_property(self, &"self_modulate", self_modulate)
+        undo_redo.commit_action()
+```
+
+ **Note:** The property is exported without the [`@GlobalScope.PROPERTY_USAGE_STORAGE`](class_@globalscope.md#class_@globalscope_constant_property_usage_storage) flag because a [`Callable`](class_callable.md) cannot be properly serialized and stored in a file.
+
+ **Note:** In an exported project neither [`EditorInterface`](class_editorinterface.md) nor [`EditorUndoRedoManager`](class_editorundoredomanager.md) exist, which may cause some scripts to break. To prevent this, you can use [`Engine.get_singleton`](class_engine.md#class_engine_method_get_singleton) and omit the static type from the variable declaration:
+
+```
+
+    var undo_redo = Engine.get_singleton(&"EditorInterface").get_editor_undo_redo()
+```
+
+ **Note:** Avoid storing lambda callables in member variables of [`RefCounted`](class_refcounted.md)-based classes (e.g. resources), as this can lead to memory leaks. Use only method callables and optionally [`Callable.bind`](class_callable.md#class_callable_method_bind) or [`Callable.unbind`](class_callable.md#class_callable_method_unbind).
+
+
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_@gdscript_annotation_@icon"></div>
 
 **@icon** ( icon_path: [`String`](class_string.md) )<div id="class_@gdscript_annotation_@icon"></div>
@@ -897,9 +948,9 @@ Returns a single character (as a [`String`](class_string.md)) of the given Unico
 
 ```
 
-    a = char(65)      # a is "A"
-    a = char(65 + 32) # a is "a"
-    a = char(8364)    # a is "€"
+    var upper = char(65)      # upper is "A"
+    var lower = char(65 + 32) # lower is "a"
+    var euro = char(8364)     # euro is "€"
 ```
 
 
@@ -910,7 +961,7 @@ Returns a single character (as a [`String`](class_string.md)) of the given Unico
 
 <div id="_class_@gdscript_method_convert"></div>
 
-[`Variant`](class_variant.md) **convert** ( what: [`Variant`](class_variant.md), type: [`int`](class_int.md) )<div id="class_@gdscript_method_convert"></div>
+[`Variant`](class_variant.md) **convert** ( what: [`Variant`](class_variant.md), type: [Variant.Type](#enum_@globalscope_variant.type) )<div id="class_@gdscript_method_convert"></div>
 
 **已弃用：** Use [`@GlobalScope.type_convert`](class_@globalscope.md#class_@globalscope_method_type_convert) instead.
 
@@ -1026,7 +1077,7 @@ Returns `true` if `value` is an instance of `type`. The `type` value must be one
 
 Unlike the right operand of the `is` operator, `type` can be a non-constant value. The `is` operator supports more features (such as typed arrays). Use the operator instead of this method if you do not need dynamic type checking.
 
-Examples:
+ **Examples:** 
 
 ```
 
@@ -1054,10 +1105,10 @@ Returns the length of the given Variant `var`. The length can be the character c
 
 ```
 
-    a = [1, 2, 3, 4]
+    var a = [1, 2, 3, 4]
     len(a) # Returns 4
     
-    b = "Hello!"
+    var b = "Hello!"
     len(b) # Returns 6
 ```
 
@@ -1178,7 +1229,7 @@ Returns an array with the given range. [`range`](class_@gdscript.md#class_@gdscr
 
  **Note:** Returns an empty array if no value meets the value constraint (e.g. `range(2, 5, -1)` or `range(5, 5, 1)`).
 
-Examples:
+ **Examples:** 
 
 ```
 

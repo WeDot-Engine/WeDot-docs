@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SoftBody3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SoftBody3D.xml。 -->
 
 <div id="_class_softbody3d"></div>
 
@@ -39,17 +39,17 @@ Additionally, **SoftBody3D** is subject to wind forces defined in [`Area3D`](cla
 
 |||
 |:-:|:--|
-| `void`                                                            | [`add_collision_exception_with`](class_softbody3d.md#class_softbody3d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                |
-| [Array](class_array.md) [`PhysicsBody3D`](class_physicsbody3d.md) | [`get_collision_exceptions`](class_softbody3d.md#class_softbody3d_method_get_collision_exceptions) ( )                                                                                                                      |
-| [`bool`](class_bool.md)                                           | [`get_collision_layer_value`](class_softbody3d.md#class_softbody3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                  |
-| [`bool`](class_bool.md)                                           | [`get_collision_mask_value`](class_softbody3d.md#class_softbody3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                    |
-| [`RID`](class_rid.md)                                             | [`get_physics_rid`](class_softbody3d.md#class_softbody3d_method_get_physics_rid) ( ) const[^const]                                                                                                                          |
-| [`Vector3`](class_vector3.md)                                     | [`get_point_transform`](class_softbody3d.md#class_softbody3d_method_get_point_transform) ( point_index: [`int`](class_int.md) )                                                                                             |
-| [`bool`](class_bool.md)                                           | [`is_point_pinned`](class_softbody3d.md#class_softbody3d_method_is_point_pinned) ( point_index: [`int`](class_int.md) ) const[^const]                                                                                       |
-| `void`                                                            | [`remove_collision_exception_with`](class_softbody3d.md#class_softbody3d_method_remove_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                          |
-| `void`                                                            | [`set_collision_layer_value`](class_softbody3d.md#class_softbody3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                |
-| `void`                                                            | [`set_collision_mask_value`](class_softbody3d.md#class_softbody3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                  |
-| `void`                                                            | [`set_point_pinned`](class_softbody3d.md#class_softbody3d_method_set_point_pinned) ( point_index: [`int`](class_int.md), pinned: [`bool`](class_bool.md), attachment_path: [`NodePath`](class_nodepath.md) = NodePath("") ) |
+| `void`                                                            | [`add_collision_exception_with`](class_softbody3d.md#class_softbody3d_method_add_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                       |
+| [Array](class_array.md) [`PhysicsBody3D`](class_physicsbody3d.md) | [`get_collision_exceptions`](class_softbody3d.md#class_softbody3d_method_get_collision_exceptions) ( )                                                                                                                                                             |
+| [`bool`](class_bool.md)                                           | [`get_collision_layer_value`](class_softbody3d.md#class_softbody3d_method_get_collision_layer_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                                                         |
+| [`bool`](class_bool.md)                                           | [`get_collision_mask_value`](class_softbody3d.md#class_softbody3d_method_get_collision_mask_value) ( layer_number: [`int`](class_int.md) ) const[^const]                                                                                                           |
+| [`RID`](class_rid.md)                                             | [`get_physics_rid`](class_softbody3d.md#class_softbody3d_method_get_physics_rid) ( ) const[^const]                                                                                                                                                                 |
+| [`Vector3`](class_vector3.md)                                     | [`get_point_transform`](class_softbody3d.md#class_softbody3d_method_get_point_transform) ( point_index: [`int`](class_int.md) )                                                                                                                                    |
+| [`bool`](class_bool.md)                                           | [`is_point_pinned`](class_softbody3d.md#class_softbody3d_method_is_point_pinned) ( point_index: [`int`](class_int.md) ) const[^const]                                                                                                                              |
+| `void`                                                            | [`remove_collision_exception_with`](class_softbody3d.md#class_softbody3d_method_remove_collision_exception_with) ( body: [`Node`](class_node.md) )                                                                                                                 |
+| `void`                                                            | [`set_collision_layer_value`](class_softbody3d.md#class_softbody3d_method_set_collision_layer_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                                                       |
+| `void`                                                            | [`set_collision_mask_value`](class_softbody3d.md#class_softbody3d_method_set_collision_mask_value) ( layer_number: [`int`](class_int.md), value: [`bool`](class_bool.md) )                                                                                         |
+| `void`                                                            | [`set_point_pinned`](class_softbody3d.md#class_softbody3d_method_set_point_pinned) ( point_index: [`int`](class_int.md), pinned: [`bool`](class_bool.md), attachment_path: [`NodePath`](class_nodepath.md) = NodePath(""), insert_at: [`int`](class_int.md) = -1 ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -334,7 +334,7 @@ Based on `value`, enables or disables the specified layer in the [`collision_mas
 
 <div id="_class_softbody3d_method_set_point_pinned"></div>
 
-`void` **set_point_pinned** ( point_index: [`int`](class_int.md), pinned: [`bool`](class_bool.md), attachment_path: [`NodePath`](class_nodepath.md) = NodePath("") )<div id="class_softbody3d_method_set_point_pinned"></div>
+`void` **set_point_pinned** ( point_index: [`int`](class_int.md), pinned: [`bool`](class_bool.md), attachment_path: [`NodePath`](class_nodepath.md) = NodePath(""), insert_at: [`int`](class_int.md) = -1 )<div id="class_softbody3d_method_set_point_pinned"></div>
 
 Sets the pinned state of a surface vertex. When set to `true`, the optional `attachment_path` can define a [`Node3D`](class_node3d.md) the pinned vertex will be attached to.
 

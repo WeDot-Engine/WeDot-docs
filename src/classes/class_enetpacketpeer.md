@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/enet/doc_classes/ENetPacketPeer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/enet/doc_classes/ENetPacketPeer.xml。 -->
 
 <div id="_class_enetpacketpeer"></div>
 
@@ -24,6 +24,7 @@ This class cannot be instantiated directly but can be retrieved during [`ENetCon
 |||
 |:-:|:--|
 | [`int`](class_int.md)                       | [`get_channels`](class_enetpacketpeer.md#class_enetpacketpeer_method_get_channels) ( ) const[^const]                                                                                                         |
+| [`int`](class_int.md)                       | [`get_packet_flags`](class_enetpacketpeer.md#class_enetpacketpeer_method_get_packet_flags) ( ) const[^const]                                                                                                 |
 | [`String`](class_string.md)                 | [`get_remote_address`](class_enetpacketpeer.md#class_enetpacketpeer_method_get_remote_address) ( ) const[^const]                                                                                             |
 | [`int`](class_int.md)                       | [`get_remote_port`](class_enetpacketpeer.md#class_enetpacketpeer_method_get_remote_port) ( ) const[^const]                                                                                                   |
 | [PeerState](#enum_enetpacketpeer_peerstate) | [`get_state`](class_enetpacketpeer.md#class_enetpacketpeer_method_get_state) ( ) const[^const]                                                                                                               |
@@ -248,6 +249,16 @@ Mark the packet to be sent unreliable even if the packet is too big and needs fr
 [`int`](class_int.md) **get_channels** ( ) const[^const]<div id="class_enetpacketpeer_method_get_channels"></div>
 
 Returns the number of channels allocated for communication with peer.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_enetpacketpeer_method_get_packet_flags"></div>
+
+[`int`](class_int.md) **get_packet_flags** ( ) const[^const]<div id="class_enetpacketpeer_method_get_packet_flags"></div>
+
+Returns the ENet flags of the next packet in the received queue. See `FLAG_*` constants for available packet flags. Note that not all flags are replicated from the sending peer to the receiving peer.
 
 <!-- rst-class:: classref-item-separator -->
 

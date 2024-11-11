@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Node3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Node3D.xml。 -->
 
 <div id="_class_node3d"></div>
 
@@ -54,6 +54,7 @@ Affine operations (rotate, scale, translate) happen in parent's local coordinate
 | `void`                                                        | [`clear_subgizmo_selection`](class_node3d.md#class_node3d_method_clear_subgizmo_selection) ( )                                                                                                                                                                                  |
 | `void`                                                        | [`force_update_transform`](class_node3d.md#class_node3d_method_force_update_transform) ( )                                                                                                                                                                                      |
 | [Array](class_array.md) [`Node3DGizmo`](class_node3dgizmo.md) | [`get_gizmos`](class_node3d.md#class_node3d_method_get_gizmos) ( ) const[^const]                                                                                                                                                                                                |
+| [`Transform3D`](class_transform3d.md)                         | [`get_global_transform_interpolated`](class_node3d.md#class_node3d_method_get_global_transform_interpolated) ( )                                                                                                                                                                |
 | [`Node3D`](class_node3d.md)                                   | [`get_parent_node_3d`](class_node3d.md#class_node3d_method_get_parent_node_3d) ( ) const[^const]                                                                                                                                                                                |
 | [`World3D`](class_world3d.md)                                 | [`get_world_3d`](class_node3d.md#class_node3d_method_get_world_3d) ( ) const[^const]                                                                                                                                                                                            |
 | `void`                                                        | [`global_rotate`](class_node3d.md#class_node3d_method_global_rotate) ( axis: [`Vector3`](class_vector3.md), angle: [`float`](class_float.md) )                                                                                                                                  |
@@ -452,6 +453,20 @@ Forces the transform to update. Transform changes in physics are not instant for
 [Array](class_array.md) [`Node3DGizmo`](class_node3dgizmo.md) **get_gizmos** ( ) const[^const]<div id="class_node3d_method_get_gizmos"></div>
 
 Returns all the gizmos attached to this **Node3D**.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_node3d_method_get_global_transform_interpolated"></div>
+
+[`Transform3D`](class_transform3d.md) **get_global_transform_interpolated** ( )<div id="class_node3d_method_get_global_transform_interpolated"></div>
+
+When using physics interpolation, there will be circumstances in which you want to know the interpolated (displayed) transform of a node rather than the standard transform (which may only be accurate to the most recent physics tick).
+
+This is particularly important for frame-based operations that take place in [`Node._process`](class_node.md#class_node_private_method__process), rather than [`Node._physics_process`](class_node.md#class_node_private_method__physics_process). Examples include [`Camera3D`](class_camera3d.md) s focusing on a node, or finding where to fire lasers from on a frame rather than physics tick.
+
+ **Note:** This function creates an interpolation pump on the **Node3D** the first time it is called, which can respond to physics interpolation resets. If you get problems with "streaking" when initially following a **Node3D**, be sure to call [`get_global_transform_interpolated`](class_node3d.md#class_node3d_method_get_global_transform_interpolated) at least once *before* resetting the **Node3D** physics interpolation.
 
 <!-- rst-class:: classref-item-separator -->
 

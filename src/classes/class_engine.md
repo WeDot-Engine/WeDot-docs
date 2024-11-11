@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Engine.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Engine.xml。 -->
 
 <div id="_class_engine"></div>
 
@@ -24,6 +24,7 @@ The **Engine** singleton allows you to query and modify the project's run-time p
 | [`float`](class_float.md) | [`physics_jitter_fix`](class_engine.md#class_engine_property_physics_jitter_fix)                   | ``0.5``  |
 | [`int`](class_int.md)     | [`physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second)       | ``60``   |
 | [`bool`](class_bool.md)   | [`print_error_messages`](class_engine.md#class_engine_property_print_error_messages)               | ``true`` |
+| [`bool`](class_bool.md)   | [`print_to_stdout`](class_engine.md#class_engine_property_print_to_stdout)                         | ``true`` |
 | [`float`](class_float.md) | [`time_scale`](class_engine.md#class_engine_property_time_scale)                                   | ``1.0``  |
 
 ## 方法
@@ -146,6 +147,21 @@ If `false`, stops printing error and warning messages to the console and editor 
  **Note:** This property does not impact the editor's Errors tab when running a project from the editor.
 
  **Warning:** If set to `false` anywhere in the project, important error messages may be hidden even if they are emitted from other scripts. In a `@tool` script, this will also impact the editor itself. Do *not* report bugs before ensuring error messages are enabled (as they are by default).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_engine_property_print_to_stdout"></div>
+
+[`bool`](class_bool.md) **print_to_stdout** = ``true`` <div id="class_engine_property_print_to_stdout"></div>
+
+- `void` **set_print_to_stdout** ( value: [`bool`](class_bool.md) )
+- [`bool`](class_bool.md) **is_printing_to_stdout** ( )
+
+If `false`, stops printing messages (for example using [`@GlobalScope.print`](class_@globalscope.md#class_@globalscope_method_print)) to the console, log files, and editor Output log. This property is equivalent to the [`ProjectSettings.application/run/disable_stdout`](class_projectsettings.md#class_projectsettings_property_application/run/disable_stdout) project setting.
+
+ **Note:** This does not stop printing errors or warnings produced by scripts to the console or log files, for more details see [`print_error_messages`](class_engine.md#class_engine_property_print_error_messages).
 
 <!-- rst-class:: classref-item-separator -->
 

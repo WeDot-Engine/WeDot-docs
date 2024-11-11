@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/BaseButton.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/BaseButton.xml。 -->
 
 <div id="_class_basebutton"></div>
 
@@ -205,7 +205,7 @@ To allow both left-click and right-click, use `MOUSE_BUTTON_MASK_LEFT | MOUSE_BU
 
 If `true`, the button's state is pressed. Means the button is pressed down or toggled (if [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is active). Only works if [`toggle_mode`](class_basebutton.md#class_basebutton_property_toggle_mode) is `true`.
 
- **Note:** Setting [`button_pressed`](class_basebutton.md#class_basebutton_property_button_pressed) will result in [`toggled`](class_basebutton.md#class_basebutton_signal_toggled) to be emitted. If you want to change the pressed state without emitting that signal, use [`set_pressed_no_signal`](class_basebutton.md#class_basebutton_method_set_pressed_no_signal).
+ **Note:** Changing the value of [`button_pressed`](class_basebutton.md#class_basebutton_property_button_pressed) will result in [`toggled`](class_basebutton.md#class_basebutton_signal_toggled) to be emitted. If you want to change the pressed state without emitting that signal, use [`set_pressed_no_signal`](class_basebutton.md#class_basebutton_method_set_pressed_no_signal).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -273,6 +273,8 @@ If `true`, the button will highlight for a short amount of time when its shortcu
 - [`bool`](class_bool.md) **is_shortcut_in_tooltip_enabled** ( )
 
 If `true`, the button will add information about its shortcut in the tooltip.
+
+ **Note:** This property does nothing when the tooltip control is customized using [`Control._make_custom_tooltip`](class_control.md#class_control_private_method__make_custom_tooltip).
 
 <!-- rst-class:: classref-item-separator -->
 

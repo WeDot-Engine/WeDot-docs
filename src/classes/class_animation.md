@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Animation.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Animation.xml。 -->
 
 <div id="_class_animation"></div>
 
@@ -64,6 +64,7 @@ Animations are just data containers, and must be added to nodes such as an [`Ani
 
 |||
 |:-:|:--|
+| `void`                                                 | [`add_marker`](class_animation.md#class_animation_method_add_marker) ( name: [`StringName`](class_stringname.md), time: [`float`](class_float.md) )                                                                                                                                                                         |
 | [`int`](class_int.md)                                  | [`add_track`](class_animation.md#class_animation_method_add_track) ( type: [TrackType](#enum_animation_tracktype), at_position: [`int`](class_int.md) = -1 )                                                                                                                                                                |
 | [`StringName`](class_stringname.md)                    | [`animation_track_get_key_animation`](class_animation.md#class_animation_method_animation_track_get_key_animation) ( track_idx: [`int`](class_int.md), key_idx: [`int`](class_int.md) ) const[^const]                                                                                                                       |
 | [`int`](class_int.md)                                  | [`animation_track_insert_key`](class_animation.md#class_animation_method_animation_track_insert_key) ( track_idx: [`int`](class_int.md), time: [`float`](class_float.md), animation: [`StringName`](class_stringname.md) )                                                                                                  |
@@ -91,16 +92,26 @@ Animations are just data containers, and must be added to nodes such as an [`Ani
 | `void`                                                 | [`compress`](class_animation.md#class_animation_method_compress) ( page_size: [`int`](class_int.md) = 8192, fps: [`int`](class_int.md) = 120, split_tolerance: [`float`](class_float.md) = 4.0 )                                                                                                                            |
 | `void`                                                 | [`copy_track`](class_animation.md#class_animation_method_copy_track) ( track_idx: [`int`](class_int.md), to_animation: [`Animation`](class_animation.md) )                                                                                                                                                                  |
 | [`int`](class_int.md)                                  | [`find_track`](class_animation.md#class_animation_method_find_track) ( path: [`NodePath`](class_nodepath.md), type: [TrackType](#enum_animation_tracktype) ) const[^const]                                                                                                                                                  |
+| [`StringName`](class_stringname.md)                    | [`get_marker_at_time`](class_animation.md#class_animation_method_get_marker_at_time) ( time: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                      |
+| [`Color`](class_color.md)                              | [`get_marker_color`](class_animation.md#class_animation_method_get_marker_color) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                |
+| [`PackedStringArray`](class_packedstringarray.md)      | [`get_marker_names`](class_animation.md#class_animation_method_get_marker_names) ( ) const[^const]                                                                                                                                                                                                                          |
+| [`float`](class_float.md)                              | [`get_marker_time`](class_animation.md#class_animation_method_get_marker_time) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                  |
+| [`StringName`](class_stringname.md)                    | [`get_next_marker`](class_animation.md#class_animation_method_get_next_marker) ( time: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                            |
+| [`StringName`](class_stringname.md)                    | [`get_prev_marker`](class_animation.md#class_animation_method_get_prev_marker) ( time: [`float`](class_float.md) ) const[^const]                                                                                                                                                                                            |
 | [`int`](class_int.md)                                  | [`get_track_count`](class_animation.md#class_animation_method_get_track_count) ( ) const[^const]                                                                                                                                                                                                                            |
+| [`bool`](class_bool.md)                                | [`has_marker`](class_animation.md#class_animation_method_has_marker) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                                                                                            |
 | [`StringName`](class_stringname.md)                    | [`method_track_get_name`](class_animation.md#class_animation_method_method_track_get_name) ( track_idx: [`int`](class_int.md), key_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                               |
 | [`Array`](class_array.md)                              | [`method_track_get_params`](class_animation.md#class_animation_method_method_track_get_params) ( track_idx: [`int`](class_int.md), key_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                           |
+| `void`                                                 | [`optimize`](class_animation.md#class_animation_method_optimize) ( allowed_velocity_err: [`float`](class_float.md) = 0.01, allowed_angular_err: [`float`](class_float.md) = 0.01, precision: [`int`](class_int.md) = 3 )                                                                                                    |
 | [`int`](class_int.md)                                  | [`position_track_insert_key`](class_animation.md#class_animation_method_position_track_insert_key) ( track_idx: [`int`](class_int.md), time: [`float`](class_float.md), position: [`Vector3`](class_vector3.md) )                                                                                                           |
 | [`Vector3`](class_vector3.md)                          | [`position_track_interpolate`](class_animation.md#class_animation_method_position_track_interpolate) ( track_idx: [`int`](class_int.md), time_sec: [`float`](class_float.md), backward: [`bool`](class_bool.md) = false ) const[^const]                                                                                     |
+| `void`                                                 | [`remove_marker`](class_animation.md#class_animation_method_remove_marker) ( name: [`StringName`](class_stringname.md) )                                                                                                                                                                                                    |
 | `void`                                                 | [`remove_track`](class_animation.md#class_animation_method_remove_track) ( track_idx: [`int`](class_int.md) )                                                                                                                                                                                                               |
 | [`int`](class_int.md)                                  | [`rotation_track_insert_key`](class_animation.md#class_animation_method_rotation_track_insert_key) ( track_idx: [`int`](class_int.md), time: [`float`](class_float.md), rotation: [`Quaternion`](class_quaternion.md) )                                                                                                     |
 | [`Quaternion`](class_quaternion.md)                    | [`rotation_track_interpolate`](class_animation.md#class_animation_method_rotation_track_interpolate) ( track_idx: [`int`](class_int.md), time_sec: [`float`](class_float.md), backward: [`bool`](class_bool.md) = false ) const[^const]                                                                                     |
 | [`int`](class_int.md)                                  | [`scale_track_insert_key`](class_animation.md#class_animation_method_scale_track_insert_key) ( track_idx: [`int`](class_int.md), time: [`float`](class_float.md), scale: [`Vector3`](class_vector3.md) )                                                                                                                    |
 | [`Vector3`](class_vector3.md)                          | [`scale_track_interpolate`](class_animation.md#class_animation_method_scale_track_interpolate) ( track_idx: [`int`](class_int.md), time_sec: [`float`](class_float.md), backward: [`bool`](class_bool.md) = false ) const[^const]                                                                                           |
+| `void`                                                 | [`set_marker_color`](class_animation.md#class_animation_method_set_marker_color) ( name: [`StringName`](class_stringname.md), color: [`Color`](class_color.md) )                                                                                                                                                            |
 | [`int`](class_int.md)                                  | [`track_find_key`](class_animation.md#class_animation_method_track_find_key) ( track_idx: [`int`](class_int.md), time: [`float`](class_float.md), find_mode: [FindMode](#enum_animation_findmode) = 0, limit: [`bool`](class_bool.md) = false, backward: [`bool`](class_bool.md) = false ) const[^const]                    |
 | [`bool`](class_bool.md)                                | [`track_get_interpolation_loop_wrap`](class_animation.md#class_animation_method_track_get_interpolation_loop_wrap) ( track_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                       |
 | [InterpolationType](#enum_animation_interpolationtype) | [`track_get_interpolation_type`](class_animation.md#class_animation_method_track_get_interpolation_type) ( track_idx: [`int`](class_int.md) ) const[^const]                                                                                                                                                                 |
@@ -403,6 +414,16 @@ The animation step value.
 
 ## 方法说明
 
+<div id="_class_animation_method_add_marker"></div>
+
+`void` **add_marker** ( name: [`StringName`](class_stringname.md), time: [`float`](class_float.md) )<div id="class_animation_method_add_marker"></div>
+
+Adds a marker to this Animation.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_animation_method_add_track"></div>
 
 [`int`](class_int.md) **add_track** ( type: [TrackType](#enum_animation_tracktype), at_position: [`int`](class_int.md) = -1 )<div id="class_animation_method_add_track"></div>
@@ -683,11 +704,81 @@ Returns the index of the specified track. If the track is not found, return -1.
 
 ---
 
+<div id="_class_animation_method_get_marker_at_time"></div>
+
+[`StringName`](class_stringname.md) **get_marker_at_time** ( time: [`float`](class_float.md) ) const[^const]<div id="class_animation_method_get_marker_at_time"></div>
+
+Returns the name of the marker located at the given time.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animation_method_get_marker_color"></div>
+
+[`Color`](class_color.md) **get_marker_color** ( name: [`StringName`](class_stringname.md) ) const[^const]<div id="class_animation_method_get_marker_color"></div>
+
+Returns the given marker's color.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animation_method_get_marker_names"></div>
+
+[`PackedStringArray`](class_packedstringarray.md) **get_marker_names** ( ) const[^const]<div id="class_animation_method_get_marker_names"></div>
+
+Returns every marker in this Animation, sorted ascending by time.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animation_method_get_marker_time"></div>
+
+[`float`](class_float.md) **get_marker_time** ( name: [`StringName`](class_stringname.md) ) const[^const]<div id="class_animation_method_get_marker_time"></div>
+
+Returns the given marker's time.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animation_method_get_next_marker"></div>
+
+[`StringName`](class_stringname.md) **get_next_marker** ( time: [`float`](class_float.md) ) const[^const]<div id="class_animation_method_get_next_marker"></div>
+
+Returns the closest marker that comes after the given time. If no such marker exists, an empty string is returned.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animation_method_get_prev_marker"></div>
+
+[`StringName`](class_stringname.md) **get_prev_marker** ( time: [`float`](class_float.md) ) const[^const]<div id="class_animation_method_get_prev_marker"></div>
+
+Returns the closest marker that comes before the given time. If no such marker exists, an empty string is returned.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_animation_method_get_track_count"></div>
 
 [`int`](class_int.md) **get_track_count** ( ) const[^const]<div id="class_animation_method_get_track_count"></div>
 
 Returns the amount of tracks in the animation.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animation_method_has_marker"></div>
+
+[`bool`](class_bool.md) **has_marker** ( name: [`StringName`](class_stringname.md) ) const[^const]<div id="class_animation_method_has_marker"></div>
+
+Returns `true` if this Animation contains a marker with the given name.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -713,6 +804,16 @@ Returns the arguments values to be called on a method track for a given key in a
 
 ---
 
+<div id="_class_animation_method_optimize"></div>
+
+`void` **optimize** ( allowed_velocity_err: [`float`](class_float.md) = 0.01, allowed_angular_err: [`float`](class_float.md) = 0.01, precision: [`int`](class_int.md) = 3 )<div id="class_animation_method_optimize"></div>
+
+Optimize the animation and all its tracks in-place. This will preserve only as many keys as are necessary to keep the animation within the specified bounds.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_animation_method_position_track_insert_key"></div>
 
 [`int`](class_int.md) **position_track_insert_key** ( track_idx: [`int`](class_int.md), time: [`float`](class_float.md), position: [`Vector3`](class_vector3.md) )<div id="class_animation_method_position_track_insert_key"></div>
@@ -728,6 +829,16 @@ Inserts a key in a given 3D position track. Returns the key index.
 [`Vector3`](class_vector3.md) **position_track_interpolate** ( track_idx: [`int`](class_int.md), time_sec: [`float`](class_float.md), backward: [`bool`](class_bool.md) = false ) const[^const]<div id="class_animation_method_position_track_interpolate"></div>
 
 Returns the interpolated position value at the given time (in seconds). The `track_idx` must be the index of a 3D position track.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animation_method_remove_marker"></div>
+
+`void` **remove_marker** ( name: [`StringName`](class_stringname.md) )<div id="class_animation_method_remove_marker"></div>
+
+Removes the marker with the given name from this Animation.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -778,6 +889,16 @@ Inserts a key in a given 3D scale track. Returns the key index.
 [`Vector3`](class_vector3.md) **scale_track_interpolate** ( track_idx: [`int`](class_int.md), time_sec: [`float`](class_float.md), backward: [`bool`](class_bool.md) = false ) const[^const]<div id="class_animation_method_scale_track_interpolate"></div>
 
 Returns the interpolated scale value at the given time (in seconds). The `track_idx` must be the index of a 3D scale track.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_animation_method_set_marker_color"></div>
+
+`void` **set_marker_color** ( name: [`StringName`](class_stringname.md), color: [`Color`](class_color.md) )<div id="class_animation_method_set_marker_color"></div>
+
+Sets the given marker's color.
 
 <!-- rst-class:: classref-item-separator -->
 

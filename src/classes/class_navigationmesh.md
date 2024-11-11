@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/NavigationMesh.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/NavigationMesh.xml。 -->
 
 <div id="_class_navigationmesh"></div>
 
@@ -38,7 +38,7 @@ A navigation mesh is a collection of polygons that define which areas of an envi
 | [`bool`](class_bool.md)                                         | [`filter_low_hanging_obstacles`](class_navigationmesh.md#class_navigationmesh_property_filter_low_hanging_obstacles)         | ``false``                           |
 | [`bool`](class_bool.md)                                         | [`filter_walkable_low_height_spans`](class_navigationmesh.md#class_navigationmesh_property_filter_walkable_low_height_spans) | ``false``                           |
 | [`int`](class_int.md)                                           | [`geometry_collision_mask`](class_navigationmesh.md#class_navigationmesh_property_geometry_collision_mask)                   | ``4294967295``                      |
-| [ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype)   | [`geometry_parsed_geometry_type`](class_navigationmesh.md#class_navigationmesh_property_geometry_parsed_geometry_type)       | ``0``                               |
+| [ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype)   | [`geometry_parsed_geometry_type`](class_navigationmesh.md#class_navigationmesh_property_geometry_parsed_geometry_type)       | ``2``                               |
 | [SourceGeometryMode](#enum_navigationmesh_sourcegeometrymode)   | [`geometry_source_geometry_mode`](class_navigationmesh.md#class_navigationmesh_property_geometry_source_geometry_mode)       | ``0``                               |
 | [`StringName`](class_stringname.md)                             | [`geometry_source_group_name`](class_navigationmesh.md#class_navigationmesh_property_geometry_source_group_name)             | ``&"navigation_mesh_source_group"`` |
 | [`float`](class_float.md)                                       | [`region_merge_size`](class_navigationmesh.md#class_navigationmesh_property_region_merge_size)                               | ``20.0``                            |
@@ -402,7 +402,7 @@ Only used when [`geometry_parsed_geometry_type`](class_navigationmesh.md#class_n
 
 <div id="_class_navigationmesh_property_geometry_parsed_geometry_type"></div>
 
-[ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype) **geometry_parsed_geometry_type** = ``0`` <div id="class_navigationmesh_property_geometry_parsed_geometry_type"></div>
+[ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype) **geometry_parsed_geometry_type** = ``2`` <div id="class_navigationmesh_property_geometry_parsed_geometry_type"></div>
 
 - `void` **set_parsed_geometry_type** ( value: [ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype) )
 - [ParsedGeometryType](#enum_navigationmesh_parsedgeometrytype) **get_parsed_geometry_type** ( )

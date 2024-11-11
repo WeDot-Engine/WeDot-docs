@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/JSON.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/JSON.xml。 -->
 
 <div id="_class_json"></div>
 
@@ -17,9 +17,7 @@ The **JSON** class enables all data types to be converted to and from a JSON str
 
  [`stringify`](class_json.md#class_json_method_stringify) is used to convert any data type into a JSON string.
 
- [`parse`](class_json.md#class_json_method_parse) is used to convert any existing JSON data into a [`Variant`](class_variant.md) that can be used within Godot. If successfully parsed, use [`data`](class_json.md#class_json_property_data) to retrieve the [`Variant`](class_variant.md), and use `typeof` to check if the Variant's type is what you expect. JSON Objects are converted into a [`Dictionary`](class_dictionary.md), but JSON data can be used to store [`Array`](class_array.md) s, numbers, [`String`](class_string.md) s and even just a boolean.
-
- **Example** 
+ [`parse`](class_json.md#class_json_method_parse) is used to convert any existing JSON data into a [`Variant`](class_variant.md) that can be used within Godot. If successfully parsed, use [`data`](class_json.md#class_json_property_data) to retrieve the [`Variant`](class_variant.md), and use [`@GlobalScope.typeof`](class_@globalscope.md#class_@globalscope_method_typeof) to check if the Variant's type is what you expect. JSON Objects are converted into a [`Dictionary`](class_dictionary.md), but JSON data can be used to store [`Array`](class_array.md) s, numbers, [`String`](class_string.md) s and even just a boolean.
 
 ```
 
@@ -55,7 +53,7 @@ Alternatively, you can parse strings using the static [`parse_string`](class_jso
 
 - Numbers are parsed using [`String.to_float`](class_string.md#class_string_method_to_float) which is generally more lax than the JSON specification.
 
-- Certain errors, such as invalid Unicode sequences, do not cause a parser error. Instead, the string is cleansed and an error is logged to the console.
+- Certain errors, such as invalid Unicode sequences, do not cause a parser error. Instead, the string is cleaned up and an error is logged to the console.
 
 
 
@@ -71,12 +69,14 @@ Alternatively, you can parse strings using the static [`parse_string`](class_jso
 
 |||
 |:-:|:--|
+| [`Variant`](class_variant.md)     | [`from_native`](class_json.md#class_json_method_from_native) ( variant: [`Variant`](class_variant.md), allow_classes: [`bool`](class_bool.md) = false, allow_scripts: [`bool`](class_bool.md) = false ) static[^static]                                |
 | [`int`](class_int.md)             | [`get_error_line`](class_json.md#class_json_method_get_error_line) ( ) const[^const]                                                                                                                                                                   |
 | [`String`](class_string.md)       | [`get_error_message`](class_json.md#class_json_method_get_error_message) ( ) const[^const]                                                                                                                                                             |
 | [`String`](class_string.md)       | [`get_parsed_text`](class_json.md#class_json_method_get_parsed_text) ( ) const[^const]                                                                                                                                                                 |
 | [Error](#enum_@globalscope_error) | [`parse`](class_json.md#class_json_method_parse) ( json_text: [`String`](class_string.md), keep_text: [`bool`](class_bool.md) = false )                                                                                                                |
 | [`Variant`](class_variant.md)     | [`parse_string`](class_json.md#class_json_method_parse_string) ( json_string: [`String`](class_string.md) ) static[^static]                                                                                                                            |
 | [`String`](class_string.md)       | [`stringify`](class_json.md#class_json_method_stringify) ( data: [`Variant`](class_variant.md), indent: [`String`](class_string.md) = "", sort_keys: [`bool`](class_bool.md) = true, full_precision: [`bool`](class_bool.md) = false ) static[^static] |
+| [`Variant`](class_variant.md)     | [`to_native`](class_json.md#class_json_method_to_native) ( json: [`Variant`](class_variant.md), allow_classes: [`bool`](class_bool.md) = false, allow_scripts: [`bool`](class_bool.md) = false ) static[^static]                                       |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -98,6 +98,18 @@ Contains the parsed JSON data in [`Variant`](class_variant.md) form.
 ---
 
 ## 方法说明
+
+<div id="_class_json_method_from_native"></div>
+
+[`Variant`](class_variant.md) **from_native** ( variant: [`Variant`](class_variant.md), allow_classes: [`bool`](class_bool.md) = false, allow_scripts: [`bool`](class_bool.md) = false ) static[^static]<div id="class_json_method_from_native"></div>
+
+Converts a native engine type to a JSON-compliant dictionary.
+
+By default, classes and scripts are ignored for security reasons, unless `allow_classes` or `allow_scripts` are specified.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_json_method_get_error_line"></div>
 
@@ -208,6 +220,18 @@ The `indent` parameter controls if and how something is indented; its contents w
 ```
 
 
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_json_method_to_native"></div>
+
+[`Variant`](class_variant.md) **to_native** ( json: [`Variant`](class_variant.md), allow_classes: [`bool`](class_bool.md) = false, allow_scripts: [`bool`](class_bool.md) = false ) static[^static]<div id="class_json_method_to_native"></div>
+
+Converts a JSON-compliant dictionary that was created with [`from_native`](class_json.md#class_json_method_from_native) back to native engine types.
+
+By default, classes and scripts are ignored for security reasons, unless `allow_classes` or `allow_scripts` are specified.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

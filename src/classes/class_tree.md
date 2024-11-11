@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Tree.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Tree.xml。 -->
 
 <div id="_class_tree"></div>
 
@@ -125,6 +125,8 @@ To iterate over all the [`TreeItem`](class_treeitem.md) objects in a **Tree** ob
 | [`Color`](class_color.md)         | [`drop_position_color`](class_tree.md#class_tree_theme_color_drop_position_color)                   | ``Color(1, 1, 1, 1)``               |
 | [`Color`](class_color.md)         | [`font_color`](class_tree.md#class_tree_theme_color_font_color)                                     | ``Color(0.7, 0.7, 0.7, 1)``         |
 | [`Color`](class_color.md)         | [`font_disabled_color`](class_tree.md#class_tree_theme_color_font_disabled_color)                   | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+| [`Color`](class_color.md)         | [`font_hovered_color`](class_tree.md#class_tree_theme_color_font_hovered_color)                     | ``Color(0.95, 0.95, 0.95, 1)``      |
+| [`Color`](class_color.md)         | [`font_hovered_dimmed_color`](class_tree.md#class_tree_theme_color_font_hovered_dimmed_color)       | ``Color(0.875, 0.875, 0.875, 1)``   |
 | [`Color`](class_color.md)         | [`font_outline_color`](class_tree.md#class_tree_theme_color_font_outline_color)                     | ``Color(0, 0, 0, 1)``               |
 | [`Color`](class_color.md)         | [`font_selected_color`](class_tree.md#class_tree_theme_color_font_selected_color)                   | ``Color(1, 1, 1, 1)``               |
 | [`Color`](class_color.md)         | [`guide_color`](class_tree.md#class_tree_theme_color_guide_color)                                   | ``Color(0.7, 0.7, 0.7, 0.25)``      |
@@ -170,6 +172,7 @@ To iterate over all the [`TreeItem`](class_treeitem.md) objects in a **Tree** ob
 | [`Texture2D`](class_texture2d.md) | [`unchecked`](class_tree.md#class_tree_theme_icon_unchecked)                                        |                                     |
 | [`Texture2D`](class_texture2d.md) | [`unchecked_disabled`](class_tree.md#class_tree_theme_icon_unchecked_disabled)                      |                                     |
 | [`Texture2D`](class_texture2d.md) | [`updown`](class_tree.md#class_tree_theme_icon_updown)                                              |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`button_hover`](class_tree.md#class_tree_theme_style_button_hover)                                 |                                     |
 | [`StyleBox`](class_stylebox.md)   | [`button_pressed`](class_tree.md#class_tree_theme_style_button_pressed)                             |                                     |
 | [`StyleBox`](class_stylebox.md)   | [`cursor`](class_tree.md#class_tree_theme_style_cursor)                                             |                                     |
 | [`StyleBox`](class_stylebox.md)   | [`cursor_unfocused`](class_tree.md#class_tree_theme_style_cursor_unfocused)                         |                                     |
@@ -177,6 +180,8 @@ To iterate over all the [`TreeItem`](class_treeitem.md) objects in a **Tree** ob
 | [`StyleBox`](class_stylebox.md)   | [`custom_button_hover`](class_tree.md#class_tree_theme_style_custom_button_hover)                   |                                     |
 | [`StyleBox`](class_stylebox.md)   | [`custom_button_pressed`](class_tree.md#class_tree_theme_style_custom_button_pressed)               |                                     |
 | [`StyleBox`](class_stylebox.md)   | [`focus`](class_tree.md#class_tree_theme_style_focus)                                               |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`hovered`](class_tree.md#class_tree_theme_style_hovered)                                           |                                     |
+| [`StyleBox`](class_stylebox.md)   | [`hovered_dimmed`](class_tree.md#class_tree_theme_style_hovered_dimmed)                             |                                     |
 | [`StyleBox`](class_stylebox.md)   | [`panel`](class_tree.md#class_tree_theme_style_panel)                                               |                                     |
 | [`StyleBox`](class_stylebox.md)   | [`selected`](class_tree.md#class_tree_theme_style_selected)                                         |                                     |
 | [`StyleBox`](class_stylebox.md)   | [`selected_focus`](class_tree.md#class_tree_theme_style_selected_focus)                             |                                     |
@@ -1046,6 +1051,26 @@ Text [`Color`](class_color.md) for a [`TreeItem.CELL_MODE_CHECK`](class_treeitem
 
 ---
 
+<div id="_class_tree_theme_color_font_hovered_color"></div>
+
+[`Color`](class_color.md) **font_hovered_color** = ``Color(0.95, 0.95, 0.95, 1)`` <div id="class_tree_theme_color_font_hovered_color"></div>
+
+Text [`Color`](class_color.md) used when the item is hovered.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tree_theme_color_font_hovered_dimmed_color"></div>
+
+[`Color`](class_color.md) **font_hovered_dimmed_color** = ``Color(0.875, 0.875, 0.875, 1)`` <div id="class_tree_theme_color_font_hovered_dimmed_color"></div>
+
+Text [`Color`](class_color.md) used when the item is hovered, while a button of the same item is hovered as the same time.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_tree_theme_color_font_outline_color"></div>
 
 [`Color`](class_color.md) **font_outline_color** = ``Color(0, 0, 0, 1)`` <div id="class_tree_theme_color_font_outline_color"></div>
@@ -1498,6 +1523,16 @@ The updown arrow icon to display for the [`TreeItem.CELL_MODE_RANGE`](class_tree
 
 ---
 
+<div id="_class_tree_theme_style_button_hover"></div>
+
+[`StyleBox`](class_stylebox.md) **button_hover** <div id="class_tree_theme_style_button_hover"></div>
+
+[`StyleBox`](class_stylebox.md) used when a button in the tree is hovered.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_tree_theme_style_button_pressed"></div>
 
 [`StyleBox`](class_stylebox.md) **button_pressed** <div id="class_tree_theme_style_button_pressed"></div>
@@ -1563,6 +1598,26 @@ Default [`StyleBox`](class_stylebox.md) for a [`TreeItem.CELL_MODE_CUSTOM`](clas
 [`StyleBox`](class_stylebox.md) **focus** <div id="class_tree_theme_style_focus"></div>
 
 The focused style for the **Tree**, drawn on top of everything.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tree_theme_style_hovered"></div>
+
+[`StyleBox`](class_stylebox.md) **hovered** <div id="class_tree_theme_style_hovered"></div>
+
+[`StyleBox`](class_stylebox.md) for the item being hovered.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tree_theme_style_hovered_dimmed"></div>
+
+[`StyleBox`](class_stylebox.md) **hovered_dimmed** <div id="class_tree_theme_style_hovered_dimmed"></div>
+
+[`StyleBox`](class_stylebox.md) for the item being hovered, while a button of the same item is hovered as the same time.
 
 <!-- rst-class:: classref-item-separator -->
 

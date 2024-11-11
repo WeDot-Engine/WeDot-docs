@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/VisualShaderNodeTexture2DArray.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/VisualShaderNodeTexture2DArray.xml。 -->
 
 <div id="_class_visualshadernodetexture2darray"></div>
 
@@ -19,7 +19,7 @@ Translated to `uniform sampler2DArray` in the shader language.
 
 |||
 |:-:|:--|
-| [`Texture2DArray`](class_texture2darray.md) | [`texture_array`](class_visualshadernodetexture2darray.md#class_visualshadernodetexture2darray_property_texture_array) |
+| [`TextureLayered`](class_texturelayered.md) | [`texture_array`](class_visualshadernodetexture2darray.md#class_visualshadernodetexture2darray_property_texture_array) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -29,10 +29,10 @@ Translated to `uniform sampler2DArray` in the shader language.
 
 <div id="_class_visualshadernodetexture2darray_property_texture_array"></div>
 
-[`Texture2DArray`](class_texture2darray.md) **texture_array** <div id="class_visualshadernodetexture2darray_property_texture_array"></div>
+[`TextureLayered`](class_texturelayered.md) **texture_array** <div id="class_visualshadernodetexture2darray_property_texture_array"></div>
 
-- `void` **set_texture_array** ( value: [`Texture2DArray`](class_texture2darray.md) )
-- [`Texture2DArray`](class_texture2darray.md) **get_texture_array** ( )
+- `void` **set_texture_array** ( value: [`TextureLayered`](class_texturelayered.md) )
+- [`TextureLayered`](class_texturelayered.md) **get_texture_array** ( )
 
 A source texture array. Used if [`VisualShaderNodeSample3D.source`](class_visualshadernodesample3d.md#class_visualshadernodesample3d_property_source) is set to [`VisualShaderNodeSample3D.SOURCE_TEXTURE`](class_visualshadernodesample3d.md#class_visualshadernodesample3d_constant_source_texture).
 

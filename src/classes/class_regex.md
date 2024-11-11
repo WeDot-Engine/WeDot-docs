@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/regex/doc_classes/RegEx.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/regex/doc_classes/RegEx.xml。 -->
 
 <div id="_class_regex"></div>
 
@@ -89,8 +89,8 @@ If you need to process multiple results, [`search_all`](class_regex.md#class_reg
 |||
 |:-:|:--|
 | `void`                                                      | [`clear`](class_regex.md#class_regex_method_clear) ( )                                                                                                                                                                                                    |
-| [Error](#enum_@globalscope_error)                           | [`compile`](class_regex.md#class_regex_method_compile) ( pattern: [`String`](class_string.md) )                                                                                                                                                           |
-| [`RegEx`](class_regex.md)                                   | [`create_from_string`](class_regex.md#class_regex_method_create_from_string) ( pattern: [`String`](class_string.md) ) static[^static]                                                                                                                     |
+| [Error](#enum_@globalscope_error)                           | [`compile`](class_regex.md#class_regex_method_compile) ( pattern: [`String`](class_string.md), show_error: [`bool`](class_bool.md) = true )                                                                                                               |
+| [`RegEx`](class_regex.md)                                   | [`create_from_string`](class_regex.md#class_regex_method_create_from_string) ( pattern: [`String`](class_string.md), show_error: [`bool`](class_bool.md) = true ) static[^static]                                                                         |
 | [`int`](class_int.md)                                       | [`get_group_count`](class_regex.md#class_regex_method_get_group_count) ( ) const[^const]                                                                                                                                                                  |
 | [`PackedStringArray`](class_packedstringarray.md)           | [`get_names`](class_regex.md#class_regex_method_get_names) ( ) const[^const]                                                                                                                                                                              |
 | [`String`](class_string.md)                                 | [`get_pattern`](class_regex.md#class_regex_method_get_pattern) ( ) const[^const]                                                                                                                                                                          |
@@ -117,9 +117,9 @@ This method resets the state of the object, as if it was freshly created. Namely
 
 <div id="_class_regex_method_compile"></div>
 
-[Error](#enum_@globalscope_error) **compile** ( pattern: [`String`](class_string.md) )<div id="class_regex_method_compile"></div>
+[Error](#enum_@globalscope_error) **compile** ( pattern: [`String`](class_string.md), show_error: [`bool`](class_bool.md) = true )<div id="class_regex_method_compile"></div>
 
-Compiles and assign the search pattern to use. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if the compilation is successful. If an error is encountered, details are printed to standard output and an error is returned.
+Compiles and assign the search pattern to use. Returns [`@GlobalScope.OK`](class_@globalscope.md#class_@globalscope_constant_ok) if the compilation is successful. If compilation fails, returns [`@GlobalScope.FAILED`](class_@globalscope.md#class_@globalscope_constant_failed) and when `show_error` is `true`, details are printed to standard output.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -127,9 +127,9 @@ Compiles and assign the search pattern to use. Returns [`@GlobalScope.OK`](class
 
 <div id="_class_regex_method_create_from_string"></div>
 
-[`RegEx`](class_regex.md) **create_from_string** ( pattern: [`String`](class_string.md) ) static[^static]<div id="class_regex_method_create_from_string"></div>
+[`RegEx`](class_regex.md) **create_from_string** ( pattern: [`String`](class_string.md), show_error: [`bool`](class_bool.md) = true ) static[^static]<div id="class_regex_method_create_from_string"></div>
 
-Creates and compiles a new **RegEx** object.
+Creates and compiles a new **RegEx** object. See also [`compile`](class_regex.md#class_regex_method_compile).
 
 <!-- rst-class:: classref-item-separator -->
 

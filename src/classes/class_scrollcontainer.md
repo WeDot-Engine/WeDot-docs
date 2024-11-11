@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ScrollContainer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ScrollContainer.xml。 -->
 
 <div id="_class_scrollcontainer"></div>
 
@@ -104,6 +104,12 @@ Scrolling enabled, scrollbar will be always visible.
 [ScrollMode](#enum_scrollcontainer_scrollmode) **SCROLL_MODE_SHOW_NEVER** = ``3``
 
 Scrolling enabled, scrollbar will be hidden.
+
+<div id="_class_scrollcontainer_constant_scroll_mode_reserve"></div>
+
+[ScrollMode](#enum_scrollcontainer_scrollmode) **SCROLL_MODE_RESERVE** = ``4``
+
+Combines [`SCROLL_MODE_AUTO`](class_scrollcontainer.md#class_scrollcontainer_constant_scroll_mode_auto) and [`SCROLL_MODE_SHOW_ALWAYS`](class_scrollcontainer.md#class_scrollcontainer_constant_scroll_mode_show_always). The scrollbar is only visible if necessary, but the content size is adjusted as if it was always visible. It's useful for ensuring that content size stays the same regardless if the scrollbar is visible.
 
 <!-- rst-class:: classref-section-separator -->
 

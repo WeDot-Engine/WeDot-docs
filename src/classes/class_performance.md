@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Performance.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Performance.xml。 -->
 
 <div id="_class_performance"></div>
 
@@ -243,9 +243,45 @@ Number of polygon edges that are considered connected by edge proximity [`Naviga
 
 Number of navigation mesh polygon edges that could not be merged in the [`NavigationServer3D`](class_navigationserver3d.md). The edges still may be connected by edge proximity or with links.
 
+<div id="_class_performance_constant_navigation_obstacle_count"></div>
+
+[Monitor](#enum_performance_monitor) **NAVIGATION_OBSTACLE_COUNT** = ``33``
+
+Number of active navigation obstacles in the [`NavigationServer3D`](class_navigationserver3d.md).
+
+<div id="_class_performance_constant_pipeline_compilations_canvas"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_CANVAS** = ``34``
+
+Number of pipeline compilations that were triggered by the 2D canvas renderer.
+
+<div id="_class_performance_constant_pipeline_compilations_mesh"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_MESH** = ``35``
+
+Number of pipeline compilations that were triggered by loading meshes. These compilations will show up as longer loading times the first time a user runs the game and the pipeline is required.
+
+<div id="_class_performance_constant_pipeline_compilations_surface"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_SURFACE** = ``36``
+
+Number of pipeline compilations that were triggered by building the surface cache before rendering the scene. These compilations will show up as a stutter when loading an scene the first time a user runs the game and the pipeline is required.
+
+<div id="_class_performance_constant_pipeline_compilations_draw"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_DRAW** = ``37``
+
+Number of pipeline compilations that were triggered while drawing the scene. These compilations will show up as stutters during gameplay the first time a user runs the game and the pipeline is required.
+
+<div id="_class_performance_constant_pipeline_compilations_specialization"></div>
+
+[Monitor](#enum_performance_monitor) **PIPELINE_COMPILATIONS_SPECIALIZATION** = ``38``
+
+Number of pipeline compilations that were triggered to optimize the current scene. These compilations are done in the background and should not cause any stutters whatsoever.
+
 <div id="_class_performance_constant_monitor_max"></div>
 
-[Monitor](#enum_performance_monitor) **MONITOR_MAX** = ``33``
+[Monitor](#enum_performance_monitor) **MONITOR_MAX** = ``39``
 
 Represents the size of the [Monitor](#enum_performance_monitor) enum.
 

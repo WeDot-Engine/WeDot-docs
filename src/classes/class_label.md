@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Label.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Label.xml。 -->
 
 <div id="_class_label"></div>
 
@@ -133,7 +133,7 @@ Controls the text's horizontal alignment. Supports left, center, right, and fill
 - `void` **set_justification_flags** ( value: [JustificationFlag](#enum_textserver_justificationflag) )
 - [JustificationFlag](#enum_textserver_justificationflag) **get_justification_flags** ( )
 
-Line fill alignment rules. For more info see [JustificationFlag](#enum_textserver_justificationflag).
+Line fill alignment rules. See [JustificationFlag](#enum_textserver_justificationflag) for more information.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -346,7 +346,7 @@ The fraction of characters to display, relative to the total number of character
 
 [`Rect2`](class_rect2.md) **get_character_bounds** ( pos: [`int`](class_int.md) ) const[^const]<div id="class_label_method_get_character_bounds"></div>
 
-Returns the bounding rectangle of the character at position `pos`. If the character is a non-visual character or `pos` is outside the valid range, an empty [`Rect2`](class_rect2.md) is returned. If the character is a part of a composite grapheme, the bounding rectangle of the whole grapheme is returned.
+Returns the bounding rectangle of the character at position `pos` in the label's local coordinate system. If the character is a non-visual character or `pos` is outside the valid range, an empty [`Rect2`](class_rect2.md) is returned. If the character is a part of a composite grapheme, the bounding rectangle of the whole grapheme is returned.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/SpriteFrames.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/SpriteFrames.xml。 -->
 
 <div id="_class_spriteframes"></div>
 
@@ -23,6 +23,7 @@ Sprite frame library for an [`AnimatedSprite2D`](class_animatedsprite2d.md) or [
 | `void`                                            | [`add_frame`](class_spriteframes.md#class_spriteframes_method_add_frame) ( anim: [`StringName`](class_stringname.md), texture: [`Texture2D`](class_texture2d.md), duration: [`float`](class_float.md) = 1.0, at_position: [`int`](class_int.md) = -1 ) |
 | `void`                                            | [`clear`](class_spriteframes.md#class_spriteframes_method_clear) ( anim: [`StringName`](class_stringname.md) )                                                                                                                                         |
 | `void`                                            | [`clear_all`](class_spriteframes.md#class_spriteframes_method_clear_all) ( )                                                                                                                                                                           |
+| `void`                                            | [`duplicate_animation`](class_spriteframes.md#class_spriteframes_method_duplicate_animation) ( anim_from: [`StringName`](class_stringname.md), anim_to: [`StringName`](class_stringname.md) )                                                          |
 | [`bool`](class_bool.md)                           | [`get_animation_loop`](class_spriteframes.md#class_spriteframes_method_get_animation_loop) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                                 |
 | [`PackedStringArray`](class_packedstringarray.md) | [`get_animation_names`](class_spriteframes.md#class_spriteframes_method_get_animation_names) ( ) const[^const]                                                                                                                                         |
 | [`float`](class_float.md)                         | [`get_animation_speed`](class_spriteframes.md#class_spriteframes_method_get_animation_speed) ( anim: [`StringName`](class_stringname.md) ) const[^const]                                                                                               |
@@ -78,6 +79,16 @@ Removes all frames from the `anim` animation.
 `void` **clear_all** ( )<div id="class_spriteframes_method_clear_all"></div>
 
 Removes all animations. An empty `default` animation will be created.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_spriteframes_method_duplicate_animation"></div>
+
+`void` **duplicate_animation** ( anim_from: [`StringName`](class_stringname.md), anim_to: [`StringName`](class_stringname.md) )<div id="class_spriteframes_method_duplicate_animation"></div>
+
+Duplicates the animation `anim_from` to a new animation named `anim_to`. Fails if `anim_to` already exists, or if `anim_from` does not exist.
 
 <!-- rst-class:: classref-item-separator -->
 

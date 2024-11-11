@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/MenuBar.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/MenuBar.xml。 -->
 
 <div id="_class_menubar"></div>
 
@@ -9,11 +9,11 @@
 
 **继承：** [`Control`](class_control.md) **<** [`CanvasItem`](class_canvasitem.md) **<** [`Node`](class_node.md) **<** [`Object`](class_object.md)
 
-A horizontal menu bar that creates a [`MenuButton`](class_menubutton.md) for each [`PopupMenu`](class_popupmenu.md) child.
+A horizontal menu bar that creates a menu for each [`PopupMenu`](class_popupmenu.md) child.
 
 ## 描述
 
-A horizontal menu bar that creates a [`MenuButton`](class_menubutton.md) for each [`PopupMenu`](class_popupmenu.md) child. New items are created by adding [`PopupMenu`](class_popupmenu.md) s to this node.
+A horizontal menu bar that creates a menu for each [`PopupMenu`](class_popupmenu.md) child. New items are created by adding [`PopupMenu`](class_popupmenu.md) s to this node.
 
 ## 属性
 
@@ -110,6 +110,10 @@ Language code used for line-breaking and text shaping algorithms, if left empty 
 
 If `true`, **MenuBar** will use system global menu when supported.
 
+ **Note:** If `true` and global menu is supported, this node is not displayed, has zero size, and all its child nodes except [`PopupMenu`](class_popupmenu.md) s are inaccessible.
+
+ **Note:** This property overrides the value of the [`PopupMenu.prefer_native_menu`](class_popupmenu.md#class_popupmenu_property_prefer_native_menu) property of the child nodes.
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -121,7 +125,7 @@ If `true`, **MenuBar** will use system global menu when supported.
 - `void` **set_start_index** ( value: [`int`](class_int.md) )
 - [`int`](class_int.md) **get_start_index** ( )
 
-Position in the global menu to insert first **MenuBar** item at.
+Position order in the global menu to insert **MenuBar** items at. All menu items in the **MenuBar** are always inserted as a continuous range. Menus with lower [`start_index`](class_menubar.md#class_menubar_property_start_index) are inserted first. Menus with [`start_index`](class_menubar.md#class_menubar_property_start_index) equal to `-1` are inserted last.
 
 <!-- rst-class:: classref-item-separator -->
 

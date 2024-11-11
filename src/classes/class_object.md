@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Object.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Object.xml。 -->
 
 <div id="_class_object"></div>
 
@@ -53,6 +53,9 @@ Lastly, every object can also contain metadata (data about data). [`set_meta`](c
 | [`Variant`](class_variant.md)                               | [`_get`](class_object.md#class_object_private_method__get) ( property: [`StringName`](class_stringname.md) ) virtual[^virtual]                                                                                                                       |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`_get_property_list`](class_object.md#class_object_private_method__get_property_list) ( ) virtual[^virtual]                                                                                                                                         |
 | `void`                                                      | [`_init`](class_object.md#class_object_private_method__init) ( ) virtual[^virtual]                                                                                                                                                                   |
+| [`Variant`](class_variant.md)                               | [`_iter_get`](class_object.md#class_object_private_method__iter_get) ( iter: [`Variant`](class_variant.md) ) virtual[^virtual]                                                                                                                       |
+| [`bool`](class_bool.md)                                     | [`_iter_init`](class_object.md#class_object_private_method__iter_init) ( iter: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                                         |
+| [`bool`](class_bool.md)                                     | [`_iter_next`](class_object.md#class_object_private_method__iter_next) ( iter: [`Array`](class_array.md) ) virtual[^virtual]                                                                                                                         |
 | `void`                                                      | [`_notification`](class_object.md#class_object_private_method__notification) ( what: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                       |
 | [`bool`](class_bool.md)                                     | [`_property_can_revert`](class_object.md#class_object_private_method__property_can_revert) ( property: [`StringName`](class_stringname.md) ) virtual[^virtual]                                                                                       |
 | [`Variant`](class_variant.md)                               | [`_property_get_revert`](class_object.md#class_object_private_method__property_get_revert) ( property: [`StringName`](class_stringname.md) ) virtual[^virtual]                                                                                       |
@@ -82,6 +85,8 @@ Lastly, every object can also contain metadata (data about data). [`set_meta`](c
 | [`Variant`](class_variant.md)                               | [`get_script`](class_object.md#class_object_method_get_script) ( ) const[^const]                                                                                                                                                                     |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_signal_connection_list`](class_object.md#class_object_method_get_signal_connection_list) ( signal: [`StringName`](class_stringname.md) ) const[^const]                                                                                         |
 | [Array](class_array.md) [`Dictionary`](class_dictionary.md) | [`get_signal_list`](class_object.md#class_object_method_get_signal_list) ( ) const[^const]                                                                                                                                                           |
+| [`StringName`](class_stringname.md)                         | [`get_translation_domain`](class_object.md#class_object_method_get_translation_domain) ( ) const[^const]                                                                                                                                             |
+| [`bool`](class_bool.md)                                     | [`has_connections`](class_object.md#class_object_method_has_connections) ( signal: [`StringName`](class_stringname.md) ) const[^const]                                                                                                               |
 | [`bool`](class_bool.md)                                     | [`has_meta`](class_object.md#class_object_method_has_meta) ( name: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                               |
 | [`bool`](class_bool.md)                                     | [`has_method`](class_object.md#class_object_method_has_method) ( method: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                         |
 | [`bool`](class_bool.md)                                     | [`has_signal`](class_object.md#class_object_method_has_signal) ( signal: [`StringName`](class_stringname.md) ) const[^const]                                                                                                                         |
@@ -103,6 +108,7 @@ Lastly, every object can also contain metadata (data about data). [`set_meta`](c
 | `void`                                                      | [`set_message_translation`](class_object.md#class_object_method_set_message_translation) ( enable: [`bool`](class_bool.md) )                                                                                                                         |
 | `void`                                                      | [`set_meta`](class_object.md#class_object_method_set_meta) ( name: [`StringName`](class_stringname.md), value: [`Variant`](class_variant.md) )                                                                                                       |
 | `void`                                                      | [`set_script`](class_object.md#class_object_method_set_script) ( script: [`Variant`](class_variant.md) )                                                                                                                                             |
+| `void`                                                      | [`set_translation_domain`](class_object.md#class_object_method_set_translation_domain) ( domain: [`StringName`](class_stringname.md) )                                                                                                               |
 | [`String`](class_string.md)                                 | [`to_string`](class_object.md#class_object_method_to_string) ( )                                                                                                                                                                                     |
 | [`String`](class_string.md)                                 | [`tr`](class_object.md#class_object_method_tr) ( message: [`StringName`](class_stringname.md), context: [`StringName`](class_stringname.md) = &"" ) const[^const]                                                                                    |
 | [`String`](class_string.md)                                 | [`tr_n`](class_object.md#class_object_method_tr_n) ( message: [`StringName`](class_stringname.md), plural_message: [`StringName`](class_stringname.md), n: [`int`](class_int.md), context: [`StringName`](class_stringname.md) = &"" ) const[^const] |
@@ -181,7 +187,7 @@ Notification received when the object is initialized, before its script is attac
 
 **NOTIFICATION_PREDELETE** = ``1`` <div id="class_object_constant_notification_predelete"></div>
 
-Notification received when the object is about to be deleted. Can act as the deconstructor of some programming languages.
+Notification received when the object is about to be deleted. Can be used like destructors in object-oriented programming languages.
 
 <div id="_class_object_constant_notification_extension_reloaded"></div>
 
@@ -391,6 +397,70 @@ The example below displays a list of numbers shown as words going from `ZERO` to
 Called when the object's script is instantiated, oftentimes after the object is initialized in memory (through `Object.new()` in GDScript, or `new GodotObject` in C#). It can be also defined to take in parameters. This method is similar to a constructor in most programming languages.
 
  **Note:** If [`_init`](class_object.md#class_object_private_method__init) is defined with *required* parameters, the Object with script may only be created directly. If any other means (such as [`PackedScene.instantiate`](class_packedscene.md#class_packedscene_method_instantiate) or [`Node.duplicate`](class_node.md#class_node_method_duplicate)) are used, the script's initialization will fail.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_object_private_method__iter_get"></div>
+
+[`Variant`](class_variant.md) **_iter_get** ( iter: [`Variant`](class_variant.md) ) virtual[^virtual]<div id="class_object_private_method__iter_get"></div>
+
+Returns the current iterable value. `iter` stores the iteration state, but unlike [`_iter_init`](class_object.md#class_object_private_method__iter_init) and [`_iter_next`](class_object.md#class_object_private_method__iter_next) the state is supposed to be read-only, so there is no [`Array`](class_array.md) wrapper.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_object_private_method__iter_init"></div>
+
+[`bool`](class_bool.md) **_iter_init** ( iter: [`Array`](class_array.md) ) virtual[^virtual]<div id="class_object_private_method__iter_init"></div>
+
+Initializes the iterator. `iter` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns `true` so long as the iterator has not reached the end.
+
+Example:
+
+```
+
+    class MyRange:
+        var _from
+        var _to
+    
+        func _init(from, to):
+            assert(from <= to)
+            _from = from
+            _to = to
+    
+        func _iter_init(iter):
+            iter[0] = _from
+            return iter[0] < _to
+    
+        func _iter_next(iter):
+            iter[0] += 1
+            return iter[0] < _to
+    
+        func _iter_get(iter):
+            return iter
+    
+    func _ready():
+        var my_range = MyRange.new(2, 5)
+        for x in my_range:
+            print(x) # Prints 2, 3, 4.
+```
+
+ **Note:** Alternatively, you can ignore `iter` and use the object's state instead, see [*online docs*](../tutorials/scripting/gdscript/gdscript_advanced.md#custom-iterators) for an example. Note that in this case you will not be able to reuse the same iterator instance in nested loops. Also, make sure you reset the iterator state in this method if you want to reuse the same instance multiple times.
+
+
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_object_private_method__iter_next"></div>
+
+[`bool`](class_bool.md) **_iter_next** ( iter: [`Array`](class_array.md) ) virtual[^virtual]<div id="class_object_private_method__iter_next"></div>
+
+Moves the iterator to the next iteration. `iter` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns `true` so long as the iterator has not reached the end.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1256,6 +1326,28 @@ Returns the list of existing signals as an [`Array`](class_array.md) of dictiona
 
 ---
 
+<div id="_class_object_method_get_translation_domain"></div>
+
+[`StringName`](class_stringname.md) **get_translation_domain** ( ) const[^const]<div id="class_object_method_get_translation_domain"></div>
+
+Returns the name of the translation domain used by [`tr`](class_object.md#class_object_method_tr) and [`tr_n`](class_object.md#class_object_method_tr_n). See also [`TranslationServer`](class_translationserver.md).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_object_method_has_connections"></div>
+
+[`bool`](class_bool.md) **has_connections** ( signal: [`StringName`](class_stringname.md) ) const[^const]<div id="class_object_method_has_connections"></div>
+
+Returns `true` if any connection exists on the given `signal` name.
+
+ **Note:** In C#, `signal` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the `SignalName` class to avoid allocating a new [`StringName`](class_stringname.md) on each call.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_object_method_has_meta"></div>
 
 [`bool`](class_bool.md) **has_meta** ( name: [`StringName`](class_stringname.md) ) const[^const]<div id="class_object_method_has_meta"></div>
@@ -1631,6 +1723,16 @@ If `value` is `null`, the entry is removed. This is the equivalent of using [`re
 Attaches `script` to the object, and instantiates it. As a result, the script's [`_init`](class_object.md#class_object_private_method__init) is called. A [`Script`](class_script.md) is used to extend the object's functionality.
 
 If a script already exists, its instance is detached, and its property values and state are lost. Built-in property values are still kept.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_object_method_set_translation_domain"></div>
+
+`void` **set_translation_domain** ( domain: [`StringName`](class_stringname.md) )<div id="class_object_method_set_translation_domain"></div>
+
+Sets the name of the translation domain used by [`tr`](class_object.md#class_object_method_tr) and [`tr_n`](class_object.md#class_object_method_tr_n). See also [`TranslationServer`](class_translationserver.md).
 
 <!-- rst-class:: classref-item-separator -->
 

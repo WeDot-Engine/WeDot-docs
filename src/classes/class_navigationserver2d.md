@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/NavigationServer2D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/NavigationServer2D.xml。 -->
 
 <div id="_class_navigationserver2d"></div>
 
@@ -134,6 +134,7 @@ This server keeps tracks of any call and executes them during the sync phase. Th
 | `void`                                              | [`parse_source_geometry_data`](class_navigationserver2d.md#class_navigationserver2d_method_parse_source_geometry_data) ( navigation_polygon: [`NavigationPolygon`](class_navigationpolygon.md), source_geometry_data: [`NavigationMeshSourceGeometryData2D`](class_navigationmeshsourcegeometrydata2d.md), root_node: [`Node`](class_node.md), callback: [`Callable`](class_callable.md) = Callable() ) |
 | `void`                                              | [`query_path`](class_navigationserver2d.md#class_navigationserver2d_method_query_path) ( parameters: [`NavigationPathQueryParameters2D`](class_navigationpathqueryparameters2d.md), result: [`NavigationPathQueryResult2D`](class_navigationpathqueryresult2d.md) ) const[^const]                                                                                                                       |
 | [`RID`](class_rid.md)                               | [`region_create`](class_navigationserver2d.md#class_navigationserver2d_method_region_create) ( )                                                                                                                                                                                                                                                                                                        |
+| [`Vector2`](class_vector2.md)                       | [`region_get_closest_point`](class_navigationserver2d.md#class_navigationserver2d_method_region_get_closest_point) ( region: [`RID`](class_rid.md), to_point: [`Vector2`](class_vector2.md) ) const[^const]                                                                                                                                                                                             |
 | [`Vector2`](class_vector2.md)                       | [`region_get_connection_pathway_end`](class_navigationserver2d.md#class_navigationserver2d_method_region_get_connection_pathway_end) ( region: [`RID`](class_rid.md), connection: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                 |
 | [`Vector2`](class_vector2.md)                       | [`region_get_connection_pathway_start`](class_navigationserver2d.md#class_navigationserver2d_method_region_get_connection_pathway_start) ( region: [`RID`](class_rid.md), connection: [`int`](class_int.md) ) const[^const]                                                                                                                                                                             |
 | [`int`](class_int.md)                               | [`region_get_connections_count`](class_navigationserver2d.md#class_navigationserver2d_method_region_get_connections_count) ( region: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                              |
@@ -823,7 +824,7 @@ Returns the map cell size used to rasterize the navigation mesh vertices.
 
 [`Vector2`](class_vector2.md) **map_get_closest_point** ( map: [`RID`](class_rid.md), to_point: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_navigationserver2d_method_map_get_closest_point"></div>
 
-Returns the point closest to the provided `to_point` on the navigation mesh surface.
+Returns the navigation mesh surface point closest to the provided `to_point` on the navigation `map`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -833,7 +834,7 @@ Returns the point closest to the provided `to_point` on the navigation mesh surf
 
 [`RID`](class_rid.md) **map_get_closest_point_owner** ( map: [`RID`](class_rid.md), to_point: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_navigationserver2d_method_map_get_closest_point_owner"></div>
 
-Returns the owner region RID for the point returned by [`map_get_closest_point`](class_navigationserver2d.md#class_navigationserver2d_method_map_get_closest_point).
+Returns the owner region RID for the navigation mesh surface point closest to the provided `to_point` on the navigation `map`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1194,6 +1195,16 @@ Queries a path in a given navigation map. Start and target position and other pa
 [`RID`](class_rid.md) **region_create** ( )<div id="class_navigationserver2d_method_region_create"></div>
 
 Creates a new region.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_navigationserver2d_method_region_get_closest_point"></div>
+
+[`Vector2`](class_vector2.md) **region_get_closest_point** ( region: [`RID`](class_rid.md), to_point: [`Vector2`](class_vector2.md) ) const[^const]<div id="class_navigationserver2d_method_region_get_closest_point"></div>
+
+Returns the navigation mesh surface point closest to the provided `to_point` on the navigation `region`.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/interactive_music/doc_classes/AudioStreamInteractive.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/interactive_music/doc_classes/AudioStreamInteractive.xml。 -->
 
 <div id="_class_audiostreaminteractive"></div>
 
@@ -13,7 +13,7 @@ Audio stream that can playback music interactively, combining clips and a transi
 
 ## 描述
 
-This is an audio stream that can playback music interactively, combining clips and a transition table. Clips must be added first, and the transition rules via the [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition). Additionally, this stream export a property parameter to control the playback via [`AudioStreamPlayer`](class_audiostreamplayer.md), [`AudioStreamPlayer2D`](class_audiostreamplayer2d.md), or [`AudioStreamPlayer3D`](class_audiostreamplayer3d.md).
+This is an audio stream that can playback music interactively, combining clips and a transition table. Clips must be added first, and then the transition rules via the [`add_transition`](class_audiostreaminteractive.md#class_audiostreaminteractive_method_add_transition). Additionally, this stream exports a property parameter to control the playback via [`AudioStreamPlayer`](class_audiostreamplayer.md), [`AudioStreamPlayer2D`](class_audiostreamplayer2d.md), or [`AudioStreamPlayer3D`](class_audiostreamplayer3d.md).
 
 The way this is used is by filling a number of clips, then configuring the transition table. From there, clips are selected for playback and the music will smoothly go from the current to the new one while using the corresponding transition rule defined in the transition table.
 

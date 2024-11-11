@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioStreamPlayer3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioStreamPlayer3D.xml。 -->
 
 <div id="_class_audiostreamplayer3d"></div>
 
@@ -352,6 +352,7 @@ The playback type of the stream player. If set other than to the default value, 
 
 [`bool`](class_bool.md) **playing** = ``false`` <div id="class_audiostreamplayer3d_property_playing"></div>
 
+- `void` **set_playing** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_playing** ( )
 
 If `true`, audio is playing or is queued to be played (see [`play`](class_audiostreamplayer3d.md#class_audiostreamplayer3d_method_play)).

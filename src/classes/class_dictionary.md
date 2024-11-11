@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/Dictionary.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/Dictionary.xml。 -->
 
 <div id="_class_dictionary"></div>
 
@@ -219,30 +219,46 @@ The keys of a dictionary can be iterated with the `for` keyword:
 
 |||
 |:-:|:--|
-| [`Dictionary`](class_dictionary.md) | [`Dictionary`](class_dictionary.md#class_dictionary_constructor_dictionary) ( )                                           |
-| [`Dictionary`](class_dictionary.md) | [`Dictionary`](class_dictionary.md#class_dictionary_constructor_dictionary) ( from: [`Dictionary`](class_dictionary.md) ) |
+| [`Dictionary`](class_dictionary.md) | [`Dictionary`](class_dictionary.md#class_dictionary_constructor_dictionary) ( )                                                                                                                                                                                                                                                                                                                   |
+| [`Dictionary`](class_dictionary.md) | [`Dictionary`](class_dictionary.md#class_dictionary_constructor_dictionary) ( base: [`Dictionary`](class_dictionary.md), key_type: [`int`](class_int.md), key_class_name: [`StringName`](class_stringname.md), key_script: [`Variant`](class_variant.md), value_type: [`int`](class_int.md), value_class_name: [`StringName`](class_stringname.md), value_script: [`Variant`](class_variant.md) ) |
+| [`Dictionary`](class_dictionary.md) | [`Dictionary`](class_dictionary.md#class_dictionary_constructor_dictionary) ( from: [`Dictionary`](class_dictionary.md) )                                                                                                                                                                                                                                                                         |
 
 ## 方法
 
 |||
 |:-:|:--|
+| `void`                              | [`assign`](class_dictionary.md#class_dictionary_method_assign) ( dictionary: [`Dictionary`](class_dictionary.md) )                                                                         |
 | `void`                              | [`clear`](class_dictionary.md#class_dictionary_method_clear) ( )                                                                                                                           |
 | [`Dictionary`](class_dictionary.md) | [`duplicate`](class_dictionary.md#class_dictionary_method_duplicate) ( deep: [`bool`](class_bool.md) = false ) const[^const]                                                               |
 | [`bool`](class_bool.md)             | [`erase`](class_dictionary.md#class_dictionary_method_erase) ( key: [`Variant`](class_variant.md) )                                                                                        |
 | [`Variant`](class_variant.md)       | [`find_key`](class_dictionary.md#class_dictionary_method_find_key) ( value: [`Variant`](class_variant.md) ) const[^const]                                                                  |
 | [`Variant`](class_variant.md)       | [`get`](class_dictionary.md#class_dictionary_method_get) ( key: [`Variant`](class_variant.md), default: [`Variant`](class_variant.md) = null ) const[^const]                               |
 | [`Variant`](class_variant.md)       | [`get_or_add`](class_dictionary.md#class_dictionary_method_get_or_add) ( key: [`Variant`](class_variant.md), default: [`Variant`](class_variant.md) = null )                               |
+| [`int`](class_int.md)               | [`get_typed_key_builtin`](class_dictionary.md#class_dictionary_method_get_typed_key_builtin) ( ) const[^const]                                                                             |
+| [`StringName`](class_stringname.md) | [`get_typed_key_class_name`](class_dictionary.md#class_dictionary_method_get_typed_key_class_name) ( ) const[^const]                                                                       |
+| [`Variant`](class_variant.md)       | [`get_typed_key_script`](class_dictionary.md#class_dictionary_method_get_typed_key_script) ( ) const[^const]                                                                               |
+| [`int`](class_int.md)               | [`get_typed_value_builtin`](class_dictionary.md#class_dictionary_method_get_typed_value_builtin) ( ) const[^const]                                                                         |
+| [`StringName`](class_stringname.md) | [`get_typed_value_class_name`](class_dictionary.md#class_dictionary_method_get_typed_value_class_name) ( ) const[^const]                                                                   |
+| [`Variant`](class_variant.md)       | [`get_typed_value_script`](class_dictionary.md#class_dictionary_method_get_typed_value_script) ( ) const[^const]                                                                           |
 | [`bool`](class_bool.md)             | [`has`](class_dictionary.md#class_dictionary_method_has) ( key: [`Variant`](class_variant.md) ) const[^const]                                                                              |
 | [`bool`](class_bool.md)             | [`has_all`](class_dictionary.md#class_dictionary_method_has_all) ( keys: [`Array`](class_array.md) ) const[^const]                                                                         |
 | [`int`](class_int.md)               | [`hash`](class_dictionary.md#class_dictionary_method_hash) ( ) const[^const]                                                                                                               |
 | [`bool`](class_bool.md)             | [`is_empty`](class_dictionary.md#class_dictionary_method_is_empty) ( ) const[^const]                                                                                                       |
 | [`bool`](class_bool.md)             | [`is_read_only`](class_dictionary.md#class_dictionary_method_is_read_only) ( ) const[^const]                                                                                               |
+| [`bool`](class_bool.md)             | [`is_same_typed`](class_dictionary.md#class_dictionary_method_is_same_typed) ( dictionary: [`Dictionary`](class_dictionary.md) ) const[^const]                                             |
+| [`bool`](class_bool.md)             | [`is_same_typed_key`](class_dictionary.md#class_dictionary_method_is_same_typed_key) ( dictionary: [`Dictionary`](class_dictionary.md) ) const[^const]                                     |
+| [`bool`](class_bool.md)             | [`is_same_typed_value`](class_dictionary.md#class_dictionary_method_is_same_typed_value) ( dictionary: [`Dictionary`](class_dictionary.md) ) const[^const]                                 |
+| [`bool`](class_bool.md)             | [`is_typed`](class_dictionary.md#class_dictionary_method_is_typed) ( ) const[^const]                                                                                                       |
+| [`bool`](class_bool.md)             | [`is_typed_key`](class_dictionary.md#class_dictionary_method_is_typed_key) ( ) const[^const]                                                                                               |
+| [`bool`](class_bool.md)             | [`is_typed_value`](class_dictionary.md#class_dictionary_method_is_typed_value) ( ) const[^const]                                                                                           |
 | [`Array`](class_array.md)           | [`keys`](class_dictionary.md#class_dictionary_method_keys) ( ) const[^const]                                                                                                               |
 | `void`                              | [`make_read_only`](class_dictionary.md#class_dictionary_method_make_read_only) ( )                                                                                                         |
 | `void`                              | [`merge`](class_dictionary.md#class_dictionary_method_merge) ( dictionary: [`Dictionary`](class_dictionary.md), overwrite: [`bool`](class_bool.md) = false )                               |
 | [`Dictionary`](class_dictionary.md) | [`merged`](class_dictionary.md#class_dictionary_method_merged) ( dictionary: [`Dictionary`](class_dictionary.md), overwrite: [`bool`](class_bool.md) = false ) const[^const]               |
 | [`bool`](class_bool.md)             | [`recursive_equal`](class_dictionary.md#class_dictionary_method_recursive_equal) ( dictionary: [`Dictionary`](class_dictionary.md), recursion_count: [`int`](class_int.md) ) const[^const] |
+| [`bool`](class_bool.md)             | [`set`](class_dictionary.md#class_dictionary_method_set) ( key: [`Variant`](class_variant.md), value: [`Variant`](class_variant.md) )                                                      |
 | [`int`](class_int.md)               | [`size`](class_dictionary.md#class_dictionary_method_size) ( ) const[^const]                                                                                                               |
+| `void`                              | [`sort`](class_dictionary.md#class_dictionary_method_sort) ( )                                                                                                                             |
 | [`Array`](class_array.md)           | [`values`](class_dictionary.md#class_dictionary_method_values) ( ) const[^const]                                                                                                           |
 
 ## 运算符
@@ -269,6 +285,14 @@ Constructs an empty **Dictionary**.
 
 ---
 
+[`Dictionary`](class_dictionary.md) **Dictionary** ( base: [`Dictionary`](class_dictionary.md), key_type: [`int`](class_int.md), key_class_name: [`StringName`](class_stringname.md), key_script: [`Variant`](class_variant.md), value_type: [`int`](class_int.md), value_class_name: [`StringName`](class_stringname.md), value_script: [`Variant`](class_variant.md) )
+
+Creates a typed dictionary from the `base` dictionary. A typed dictionary can only contain keys and values of the given types, or that inherit from the given classes, as described by this constructor's parameters.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 [`Dictionary`](class_dictionary.md) **Dictionary** ( from: [`Dictionary`](class_dictionary.md) )
 
 Returns the same dictionary as `from`. If you need a copy of the dictionary, use [`duplicate`](class_dictionary.md#class_dictionary_method_duplicate).
@@ -278,6 +302,16 @@ Returns the same dictionary as `from`. If you need a copy of the dictionary, use
 ---
 
 ## 方法说明
+
+<div id="_class_dictionary_method_assign"></div>
+
+`void` **assign** ( dictionary: [`Dictionary`](class_dictionary.md) )<div id="class_dictionary_method_assign"></div>
+
+Assigns elements of another `dictionary` into the dictionary. Resizes the dictionary to match `dictionary`. Performs type conversions if the dictionary is typed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_dictionary_method_clear"></div>
 
@@ -338,6 +372,66 @@ Returns the corresponding value for the given `key` in the dictionary. If the `k
 [`Variant`](class_variant.md) **get_or_add** ( key: [`Variant`](class_variant.md), default: [`Variant`](class_variant.md) = null )<div id="class_dictionary_method_get_or_add"></div>
 
 Gets a value and ensures the key is set. If the `key` exists in the dictionary, this behaves like [`get`](class_dictionary.md#class_dictionary_method_get). Otherwise, the `default` value is inserted into the dictionary and returned.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_get_typed_key_builtin"></div>
+
+[`int`](class_int.md) **get_typed_key_builtin** ( ) const[^const]<div id="class_dictionary_method_get_typed_key_builtin"></div>
+
+Returns the built-in [`Variant`](class_variant.md) type of the typed dictionary's keys as a [Variant.Type](#enum_@globalscope_variant.type) constant. If the keys are not typed, returns [`@GlobalScope.TYPE_NIL`](class_@globalscope.md#class_@globalscope_constant_type_nil). See also [`is_typed_key`](class_dictionary.md#class_dictionary_method_is_typed_key).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_get_typed_key_class_name"></div>
+
+[`StringName`](class_stringname.md) **get_typed_key_class_name** ( ) const[^const]<div id="class_dictionary_method_get_typed_key_class_name"></div>
+
+Returns the **built-in** class name of the typed dictionary's keys, if the built-in [`Variant`](class_variant.md) type is [`@GlobalScope.TYPE_OBJECT`](class_@globalscope.md#class_@globalscope_constant_type_object). Otherwise, returns an empty [`StringName`](class_stringname.md). See also [`is_typed_key`](class_dictionary.md#class_dictionary_method_is_typed_key) and [`Object.get_class`](class_object.md#class_object_method_get_class).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_get_typed_key_script"></div>
+
+[`Variant`](class_variant.md) **get_typed_key_script** ( ) const[^const]<div id="class_dictionary_method_get_typed_key_script"></div>
+
+Returns the [`Script`](class_script.md) instance associated with this typed dictionary's keys, or `null` if it does not exist. See also [`is_typed_key`](class_dictionary.md#class_dictionary_method_is_typed_key).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_get_typed_value_builtin"></div>
+
+[`int`](class_int.md) **get_typed_value_builtin** ( ) const[^const]<div id="class_dictionary_method_get_typed_value_builtin"></div>
+
+Returns the built-in [`Variant`](class_variant.md) type of the typed dictionary's values as a [Variant.Type](#enum_@globalscope_variant.type) constant. If the values are not typed, returns [`@GlobalScope.TYPE_NIL`](class_@globalscope.md#class_@globalscope_constant_type_nil). See also [`is_typed_value`](class_dictionary.md#class_dictionary_method_is_typed_value).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_get_typed_value_class_name"></div>
+
+[`StringName`](class_stringname.md) **get_typed_value_class_name** ( ) const[^const]<div id="class_dictionary_method_get_typed_value_class_name"></div>
+
+Returns the **built-in** class name of the typed dictionary's values, if the built-in [`Variant`](class_variant.md) type is [`@GlobalScope.TYPE_OBJECT`](class_@globalscope.md#class_@globalscope_constant_type_object). Otherwise, returns an empty [`StringName`](class_stringname.md). See also [`is_typed_value`](class_dictionary.md#class_dictionary_method_is_typed_value) and [`Object.get_class`](class_object.md#class_object_method_get_class).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_get_typed_value_script"></div>
+
+[`Variant`](class_variant.md) **get_typed_value_script** ( ) const[^const]<div id="class_dictionary_method_get_typed_value_script"></div>
+
+Returns the [`Script`](class_script.md) instance associated with this typed dictionary's values, or `null` if it does not exist. See also [`is_typed_value`](class_dictionary.md#class_dictionary_method_is_typed_value).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -475,6 +569,66 @@ Returns `true` if the dictionary is read-only. See [`make_read_only`](class_dict
 
 ---
 
+<div id="_class_dictionary_method_is_same_typed"></div>
+
+[`bool`](class_bool.md) **is_same_typed** ( dictionary: [`Dictionary`](class_dictionary.md) ) const[^const]<div id="class_dictionary_method_is_same_typed"></div>
+
+Returns `true` if the dictionary is typed the same as `dictionary`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_is_same_typed_key"></div>
+
+[`bool`](class_bool.md) **is_same_typed_key** ( dictionary: [`Dictionary`](class_dictionary.md) ) const[^const]<div id="class_dictionary_method_is_same_typed_key"></div>
+
+Returns `true` if the dictionary's keys are typed the same as `dictionary`'s keys.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_is_same_typed_value"></div>
+
+[`bool`](class_bool.md) **is_same_typed_value** ( dictionary: [`Dictionary`](class_dictionary.md) ) const[^const]<div id="class_dictionary_method_is_same_typed_value"></div>
+
+Returns `true` if the dictionary's values are typed the same as `dictionary`'s values.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_is_typed"></div>
+
+[`bool`](class_bool.md) **is_typed** ( ) const[^const]<div id="class_dictionary_method_is_typed"></div>
+
+Returns `true` if the dictionary is typed. Typed dictionaries can only store keys/values of their associated type and provide type safety for the `[]` operator. Methods of typed dictionary still return [`Variant`](class_variant.md).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_is_typed_key"></div>
+
+[`bool`](class_bool.md) **is_typed_key** ( ) const[^const]<div id="class_dictionary_method_is_typed_key"></div>
+
+Returns `true` if the dictionary's keys are typed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_is_typed_value"></div>
+
+[`bool`](class_bool.md) **is_typed_value** ( ) const[^const]<div id="class_dictionary_method_is_typed_value"></div>
+
+Returns `true` if the dictionary's values are typed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_dictionary_method_keys"></div>
 
 [`Array`](class_array.md) **keys** ( ) const[^const]<div id="class_dictionary_method_keys"></div>
@@ -586,11 +740,31 @@ Returns `true` if the two dictionaries contain the same keys and values, inner *
 
 ---
 
+<div id="_class_dictionary_method_set"></div>
+
+[`bool`](class_bool.md) **set** ( key: [`Variant`](class_variant.md), value: [`Variant`](class_variant.md) )<div id="class_dictionary_method_set"></div>
+
+Sets the value of the element at the given `key` to the given `value`. This is the same as using the `[]` operator (`array[index] = value`).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_dictionary_method_size"></div>
 
 [`int`](class_int.md) **size** ( ) const[^const]<div id="class_dictionary_method_size"></div>
 
 Returns the number of entries in the dictionary. Empty dictionaries (`{ }`) always return `0`. See also [`is_empty`](class_dictionary.md#class_dictionary_method_is_empty).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_dictionary_method_sort"></div>
+
+`void` **sort** ( )<div id="class_dictionary_method_sort"></div>
+
+Sorts the dictionary in-place by key. This can be used to ensure dictionaries with the same contents produce equivalent results when getting the [`keys`](class_dictionary.md#class_dictionary_method_keys), getting the [`values`](class_dictionary.md#class_dictionary_method_values), and converting to a string. This is also useful when wanting a JSON representation consistent with what is in memory, and useful for storing on a database that requires dictionaries to be sorted.
 
 <!-- rst-class:: classref-item-separator -->
 

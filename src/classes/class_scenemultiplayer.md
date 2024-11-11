@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/multiplayer/doc_classes/SceneMultiplayer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/multiplayer/doc_classes/SceneMultiplayer.xml。 -->
 
 <div id="_class_scenemultiplayer"></div>
 
@@ -107,7 +107,7 @@ If `true`, the MultiplayerAPI will allow encoding and decoding of object during 
 - `void` **set_auth_callback** ( value: [`Callable`](class_callable.md) )
 - [`Callable`](class_callable.md) **get_auth_callback** ( )
 
-The callback to execute when when receiving authentication data sent via [`send_auth`](class_scenemultiplayer.md#class_scenemultiplayer_method_send_auth). If the [`Callable`](class_callable.md) is empty (default), peers will be automatically accepted as soon as they connect.
+The callback to execute when receiving authentication data sent via [`send_auth`](class_scenemultiplayer.md#class_scenemultiplayer_method_send_auth). If the [`Callable`](class_callable.md) is empty (default), peers will be automatically accepted as soon as they connect.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -120,7 +120,7 @@ The callback to execute when when receiving authentication data sent via [`send_
 - `void` **set_auth_timeout** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_auth_timeout** ( )
 
-If set to a value greater than `0.0`, the maximum amount of time peers can stay in the authenticating state, after which the authentication will automatically fail. See the [`peer_authenticating`](class_scenemultiplayer.md#class_scenemultiplayer_signal_peer_authenticating) and [`peer_authentication_failed`](class_scenemultiplayer.md#class_scenemultiplayer_signal_peer_authentication_failed) signals.
+If set to a value greater than `0.0`, the maximum duration in seconds peers can stay in the authenticating state, after which the authentication will automatically fail. See the [`peer_authenticating`](class_scenemultiplayer.md#class_scenemultiplayer_signal_peer_authenticating) and [`peer_authentication_failed`](class_scenemultiplayer.md#class_scenemultiplayer_signal_peer_authentication_failed) signals.
 
 <!-- rst-class:: classref-item-separator -->
 

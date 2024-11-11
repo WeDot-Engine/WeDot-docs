@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AudioStreamPlayer.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AudioStreamPlayer.xml。 -->
 
 <div id="_class_audiostreamplayer"></div>
 
@@ -177,6 +177,7 @@ The playback type of the stream player. If set other than to the default value, 
 
 [`bool`](class_bool.md) **playing** = ``false`` <div id="class_audiostreamplayer_property_playing"></div>
 
+- `void` **set_playing** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_playing** ( )
 
 If `true`, this node is playing sounds. Setting this property has the same effect as [`play`](class_audiostreamplayer.md#class_audiostreamplayer_method_play) and [`stop`](class_audiostreamplayer.md#class_audiostreamplayer_method_stop).

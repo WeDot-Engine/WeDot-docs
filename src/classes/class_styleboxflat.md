@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/StyleBoxFlat.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/StyleBoxFlat.xml。 -->
 
 <div id="_class_styleboxflat"></div>
 
@@ -15,9 +15,7 @@ A customizable [`StyleBox`](class_stylebox.md) that doesn't use a texture.
 
 By configuring various properties of this style box, you can achieve many common looks without the need of a texture. This includes optionally rounded borders, antialiasing, shadows, and skew.
 
-Setting corner radius to high values is allowed. As soon as corners overlap, the stylebox will switch to a relative system.
-
- **Example:** 
+Setting corner radius to high values is allowed. As soon as corners overlap, the stylebox will switch to a relative system:
 
 ```text
 

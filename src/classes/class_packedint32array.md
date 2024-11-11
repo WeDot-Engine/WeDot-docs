@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedInt32Array.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedInt32Array.xml。 -->
 
 <div id="_class_packedint32array"></div>
 
@@ -39,6 +39,7 @@ An array specifically designed to hold 32-bit integer values. Packs data tightly
 | [`PackedInt32Array`](class_packedint32array.md) | [`duplicate`](class_packedint32array.md#class_packedint32array_method_duplicate) ( )                                                                             |
 | `void`                                          | [`fill`](class_packedint32array.md#class_packedint32array_method_fill) ( value: [`int`](class_int.md) )                                                          |
 | [`int`](class_int.md)                           | [`find`](class_packedint32array.md#class_packedint32array_method_find) ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]           |
+| [`int`](class_int.md)                           | [`get`](class_packedint32array.md#class_packedint32array_method_get) ( index: [`int`](class_int.md) ) const[^const]                                              |
 | [`bool`](class_bool.md)                         | [`has`](class_packedint32array.md#class_packedint32array_method_has) ( value: [`int`](class_int.md) ) const[^const]                                              |
 | [`int`](class_int.md)                           | [`insert`](class_packedint32array.md#class_packedint32array_method_insert) ( at_index: [`int`](class_int.md), value: [`int`](class_int.md) )                     |
 | [`bool`](class_bool.md)                         | [`is_empty`](class_packedint32array.md#class_packedint32array_method_is_empty) ( ) const[^const]                                                                 |
@@ -173,6 +174,16 @@ Assigns the given value to all elements in the array. This can typically be used
 [`int`](class_int.md) **find** ( value: [`int`](class_int.md), from: [`int`](class_int.md) = 0 ) const[^const]<div id="class_packedint32array_method_find"></div>
 
 Searches the array for a value and returns its index or `-1` if not found. Optionally, the initial search index can be passed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_packedint32array_method_get"></div>
+
+[`int`](class_int.md) **get** ( index: [`int`](class_int.md) ) const[^const]<div id="class_packedint32array_method_get"></div>
+
+Returns the 32-bit integer at the given `index` in the array. This is the same as using the `[]` operator (`array[index]`).
 
 <!-- rst-class:: classref-item-separator -->
 

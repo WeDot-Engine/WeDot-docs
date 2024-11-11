@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFAnimation.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFAnimation.xml。 -->
 
 <div id="_class_gltfanimation"></div>
 
@@ -65,7 +65,7 @@ The original name of the animation.
 
 Gets additional arbitrary data in this **GLTFAnimation** instance. This can be used to keep per-node state data in [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes, which is important because they are stateless.
 
-The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the GLTF file), and the return value can be anything you set. If nothing was set, the return value is null.
+The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is null.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -77,7 +77,7 @@ The argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension
 
 Sets additional arbitrary data in this **GLTFAnimation** instance. This can be used to keep per-node state data in [`GLTFDocumentExtension`](class_gltfdocumentextension.md) classes, which is important because they are stateless.
 
-The first argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the GLTF file), and the second argument can be anything you want.
+The first argument should be the [`GLTFDocumentExtension`](class_gltfdocumentextension.md) name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

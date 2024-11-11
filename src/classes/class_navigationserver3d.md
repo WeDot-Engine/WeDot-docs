@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/NavigationServer3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/NavigationServer3D.xml。 -->
 
 <div id="_class_navigationserver3d"></div>
 
@@ -152,6 +152,9 @@ This server keeps tracks of any call and executes them during the sync phase. Th
 | `void`                                              | [`query_path`](class_navigationserver3d.md#class_navigationserver3d_method_query_path) ( parameters: [`NavigationPathQueryParameters3D`](class_navigationpathqueryparameters3d.md), result: [`NavigationPathQueryResult3D`](class_navigationpathqueryresult3d.md) ) const[^const]                                                                                                              |
 | `void`                                              | [`region_bake_navigation_mesh`](class_navigationserver3d.md#class_navigationserver3d_method_region_bake_navigation_mesh) ( navigation_mesh: [`NavigationMesh`](class_navigationmesh.md), root_node: [`Node`](class_node.md) )                                                                                                                                                                  |
 | [`RID`](class_rid.md)                               | [`region_create`](class_navigationserver3d.md#class_navigationserver3d_method_region_create) ( )                                                                                                                                                                                                                                                                                               |
+| [`Vector3`](class_vector3.md)                       | [`region_get_closest_point`](class_navigationserver3d.md#class_navigationserver3d_method_region_get_closest_point) ( region: [`RID`](class_rid.md), to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                                    |
+| [`Vector3`](class_vector3.md)                       | [`region_get_closest_point_normal`](class_navigationserver3d.md#class_navigationserver3d_method_region_get_closest_point_normal) ( region: [`RID`](class_rid.md), to_point: [`Vector3`](class_vector3.md) ) const[^const]                                                                                                                                                                      |
+| [`Vector3`](class_vector3.md)                       | [`region_get_closest_point_to_segment`](class_navigationserver3d.md#class_navigationserver3d_method_region_get_closest_point_to_segment) ( region: [`RID`](class_rid.md), start: [`Vector3`](class_vector3.md), end: [`Vector3`](class_vector3.md), use_collision: [`bool`](class_bool.md) = false ) const[^const]                                                                             |
 | [`Vector3`](class_vector3.md)                       | [`region_get_connection_pathway_end`](class_navigationserver3d.md#class_navigationserver3d_method_region_get_connection_pathway_end) ( region: [`RID`](class_rid.md), connection: [`int`](class_int.md) ) const[^const]                                                                                                                                                                        |
 | [`Vector3`](class_vector3.md)                       | [`region_get_connection_pathway_start`](class_navigationserver3d.md#class_navigationserver3d_method_region_get_connection_pathway_start) ( region: [`RID`](class_rid.md), connection: [`int`](class_int.md) ) const[^const]                                                                                                                                                                    |
 | [`int`](class_int.md)                               | [`region_get_connections_count`](class_navigationserver3d.md#class_navigationserver3d_method_region_get_connections_count) ( region: [`RID`](class_rid.md) ) const[^const]                                                                                                                                                                                                                     |
@@ -275,6 +278,12 @@ Constant to get the number of navigation mesh polygon edges that are considered 
 [ProcessInfo](#enum_navigationserver3d_processinfo) **INFO_EDGE_FREE_COUNT** = ``8``
 
 Constant to get the number of navigation mesh polygon edges that could not be merged but may be still connected by edge proximity or with links.
+
+<div id="_class_navigationserver3d_constant_info_obstacle_count"></div>
+
+[ProcessInfo](#enum_navigationserver3d_processinfo) **INFO_OBSTACLE_COUNT** = ``9``
+
+Constant to get the number of active navigation obstacles.
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -980,7 +989,7 @@ Returns the map cell size used to rasterize the navigation mesh vertices on the 
 
 [`Vector3`](class_vector3.md) **map_get_closest_point** ( map: [`RID`](class_rid.md), to_point: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_navigationserver3d_method_map_get_closest_point"></div>
 
-Returns the point closest to the provided `to_point` on the navigation mesh surface.
+Returns the navigation mesh surface point closest to the provided `to_point` on the navigation `map`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -990,7 +999,7 @@ Returns the point closest to the provided `to_point` on the navigation mesh surf
 
 [`Vector3`](class_vector3.md) **map_get_closest_point_normal** ( map: [`RID`](class_rid.md), to_point: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_navigationserver3d_method_map_get_closest_point_normal"></div>
 
-Returns the normal for the point returned by [`map_get_closest_point`](class_navigationserver3d.md#class_navigationserver3d_method_map_get_closest_point).
+Returns the navigation mesh surface normal closest to the provided `to_point` on the navigation `map`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1000,7 +1009,7 @@ Returns the normal for the point returned by [`map_get_closest_point`](class_nav
 
 [`RID`](class_rid.md) **map_get_closest_point_owner** ( map: [`RID`](class_rid.md), to_point: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_navigationserver3d_method_map_get_closest_point_owner"></div>
 
-Returns the owner region RID for the point returned by [`map_get_closest_point`](class_navigationserver3d.md#class_navigationserver3d_method_map_get_closest_point).
+Returns the owner region RID for the navigation mesh surface point closest to the provided `to_point` on the navigation `map`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1010,7 +1019,9 @@ Returns the owner region RID for the point returned by [`map_get_closest_point`]
 
 [`Vector3`](class_vector3.md) **map_get_closest_point_to_segment** ( map: [`RID`](class_rid.md), start: [`Vector3`](class_vector3.md), end: [`Vector3`](class_vector3.md), use_collision: [`bool`](class_bool.md) = false ) const[^const]<div id="class_navigationserver3d_method_map_get_closest_point_to_segment"></div>
 
-Returns the closest point between the navigation surface and the segment.
+Returns the navigation mesh surface point closest to the provided `start` and `end` segment on the navigation `map`.
+
+If `use_collision` is `true`, a closest point test is only done when the segment intersects with the navigation mesh surface.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1473,6 +1484,38 @@ Bakes the `navigation_mesh` with bake source geometry collected starting from th
 [`RID`](class_rid.md) **region_create** ( )<div id="class_navigationserver3d_method_region_create"></div>
 
 Creates a new region.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_navigationserver3d_method_region_get_closest_point"></div>
+
+[`Vector3`](class_vector3.md) **region_get_closest_point** ( region: [`RID`](class_rid.md), to_point: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_navigationserver3d_method_region_get_closest_point"></div>
+
+Returns the navigation mesh surface point closest to the provided `to_point` on the navigation `region`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_navigationserver3d_method_region_get_closest_point_normal"></div>
+
+[`Vector3`](class_vector3.md) **region_get_closest_point_normal** ( region: [`RID`](class_rid.md), to_point: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_navigationserver3d_method_region_get_closest_point_normal"></div>
+
+Returns the navigation mesh surface normal closest to the provided `to_point` on the navigation `region`.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_navigationserver3d_method_region_get_closest_point_to_segment"></div>
+
+[`Vector3`](class_vector3.md) **region_get_closest_point_to_segment** ( region: [`RID`](class_rid.md), start: [`Vector3`](class_vector3.md), end: [`Vector3`](class_vector3.md), use_collision: [`bool`](class_bool.md) = false ) const[^const]<div id="class_navigationserver3d_method_region_get_closest_point_to_segment"></div>
+
+Returns the navigation mesh surface point closest to the provided `start` and `end` segment on the navigation `region`.
+
+If `use_collision` is `true`, a closest point test is only done when the segment intersects with the navigation mesh surface.
 
 <!-- rst-class:: classref-item-separator -->
 

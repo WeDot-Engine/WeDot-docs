@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/CPUParticles3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/CPUParticles3D.xml。 -->
 
 <div id="_class_cpuparticles3d"></div>
 
@@ -47,6 +47,7 @@ See also [`GPUParticles3D`](class_gpuparticles3d.md), which provides the same fu
 | [`PackedVector3Array`](class_packedvector3array.md) | [`emission_normals`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_normals)                     |                            |
 | [`PackedVector3Array`](class_packedvector3array.md) | [`emission_points`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_points)                       |                            |
 | [`Vector3`](class_vector3.md)                       | [`emission_ring_axis`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_axis)                 |                            |
+| [`float`](class_float.md)                           | [`emission_ring_cone_angle`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_cone_angle)     |                            |
 | [`float`](class_float.md)                           | [`emission_ring_height`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_height)             |                            |
 | [`float`](class_float.md)                           | [`emission_ring_inner_radius`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_inner_radius) |                            |
 | [`float`](class_float.md)                           | [`emission_ring_radius`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_radius)             |                            |
@@ -100,6 +101,7 @@ See also [`GPUParticles3D`](class_gpuparticles3d.md), which provides the same fu
 
 |||
 |:-:|:--|
+| [`AABB`](class_aabb.md)   | [`capture_aabb`](class_cpuparticles3d.md#class_cpuparticles3d_method_capture_aabb) ( ) const[^const]                                                                                                 |
 | `void`                    | [`convert_from_particles`](class_cpuparticles3d.md#class_cpuparticles3d_method_convert_from_particles) ( particles: [`Node`](class_node.md) )                                                        |
 | [`Curve`](class_curve.md) | [`get_param_curve`](class_cpuparticles3d.md#class_cpuparticles3d_method_get_param_curve) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                        |
 | [`float`](class_float.md) | [`get_param_max`](class_cpuparticles3d.md#class_cpuparticles3d_method_get_param_max) ( param: [Parameter](#enum_cpuparticles3d_parameter) ) const[^const]                                            |
@@ -678,6 +680,21 @@ Sets the initial positions to spawn particles when using [`EMISSION_SHAPE_POINTS
 - [`Vector3`](class_vector3.md) **get_emission_ring_axis** ( )
 
 The axis of the ring when using the emitter [`EMISSION_SHAPE_RING`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_ring).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_cpuparticles3d_property_emission_ring_cone_angle"></div>
+
+[`float`](class_float.md) **emission_ring_cone_angle** <div id="class_cpuparticles3d_property_emission_ring_cone_angle"></div>
+
+- `void` **set_emission_ring_cone_angle** ( value: [`float`](class_float.md) )
+- [`float`](class_float.md) **get_emission_ring_cone_angle** ( )
+
+The angle of the cone when using the emitter [`EMISSION_SHAPE_RING`](class_cpuparticles3d.md#class_cpuparticles3d_constant_emission_shape_ring). The default angle of 90 degrees results in a ring, while an angle of 0 degrees results in a cone. Intermediate values will result in a ring where one end is larger than the other.
+
+ **Note:** Depending on [`emission_ring_height`](class_cpuparticles3d.md#class_cpuparticles3d_property_emission_ring_height), the angle may be clamped if the ring's end is reached to form a perfect cone.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1310,6 +1327,16 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 ---
 
 ## 方法说明
+
+<div id="_class_cpuparticles3d_method_capture_aabb"></div>
+
+[`AABB`](class_aabb.md) **capture_aabb** ( ) const[^const]<div id="class_cpuparticles3d_method_capture_aabb"></div>
+
+Returns the axis-aligned bounding box that contains all the particles that are active in the current frame.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
 
 <div id="_class_cpuparticles3d_method_convert_from_particles"></div>
 

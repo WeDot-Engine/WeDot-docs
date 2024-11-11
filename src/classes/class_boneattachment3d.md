@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/BoneAttachment3D.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/BoneAttachment3D.xml。 -->
 
 <div id="_class_boneattachment3d"></div>
 
@@ -27,11 +27,12 @@ This node selects a bone in a [`Skeleton3D`](class_skeleton3d.md) and attaches t
 
 |||
 |:-:|:--|
-| [`NodePath`](class_nodepath.md) | [`get_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_get_external_skeleton) ( ) const[^const]                                          |
-| [`bool`](class_bool.md)         | [`get_use_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_get_use_external_skeleton) ( ) const[^const]                                  |
-| `void`                          | [`on_skeleton_update`](class_boneattachment3d.md#class_boneattachment3d_method_on_skeleton_update) ( )                                                              |
-| `void`                          | [`set_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_set_external_skeleton) ( external_skeleton: [`NodePath`](class_nodepath.md) )     |
-| `void`                          | [`set_use_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_set_use_external_skeleton) ( use_external_skeleton: [`bool`](class_bool.md) ) |
+| [`NodePath`](class_nodepath.md)     | [`get_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_get_external_skeleton) ( ) const[^const]                                          |
+| [`Skeleton3D`](class_skeleton3d.md) | [`get_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_get_skeleton) ( )                                                                          |
+| [`bool`](class_bool.md)             | [`get_use_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_get_use_external_skeleton) ( ) const[^const]                                  |
+| `void`                              | [`on_skeleton_update`](class_boneattachment3d.md#class_boneattachment3d_method_on_skeleton_update) ( )                                                              |
+| `void`                              | [`set_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_set_external_skeleton) ( external_skeleton: [`NodePath`](class_nodepath.md) )     |
+| `void`                              | [`set_use_external_skeleton`](class_boneattachment3d.md#class_boneattachment3d_method_set_use_external_skeleton) ( use_external_skeleton: [`bool`](class_bool.md) ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -87,6 +88,16 @@ Whether the BoneAttachment3D node will override the bone pose of the bone it is 
 [`NodePath`](class_nodepath.md) **get_external_skeleton** ( ) const[^const]<div id="class_boneattachment3d_method_get_external_skeleton"></div>
 
 Returns the [`NodePath`](class_nodepath.md) to the external [`Skeleton3D`](class_skeleton3d.md) node, if one has been set.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_boneattachment3d_method_get_skeleton"></div>
+
+[`Skeleton3D`](class_skeleton3d.md) **get_skeleton** ( )<div id="class_boneattachment3d_method_get_skeleton"></div>
+
+Get parent or external [`Skeleton3D`](class_skeleton3d.md) node if found.
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PCKPacker.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PCKPacker.xml。 -->
 
 <div id="_class_pckpacker"></div>
 
@@ -47,7 +47,7 @@ The above **PCKPacker** creates package `test.pck`, then adds a file named `text
 |:-:|:--|
 | [Error](#enum_@globalscope_error) | [`add_file`](class_pckpacker.md#class_pckpacker_method_add_file) ( pck_path: [`String`](class_string.md), source_path: [`String`](class_string.md), encrypt: [`bool`](class_bool.md) = false )                                                                                                                 |
 | [Error](#enum_@globalscope_error) | [`flush`](class_pckpacker.md#class_pckpacker_method_flush) ( verbose: [`bool`](class_bool.md) = false )                                                                                                                                                                                                        |
-| [Error](#enum_@globalscope_error) | [`pck_start`](class_pckpacker.md#class_pckpacker_method_pck_start) ( pck_name: [`String`](class_string.md), alignment: [`int`](class_int.md) = 32, key: [`String`](class_string.md) = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory: [`bool`](class_bool.md) = false ) |
+| [Error](#enum_@globalscope_error) | [`pck_start`](class_pckpacker.md#class_pckpacker_method_pck_start) ( pck_path: [`String`](class_string.md), alignment: [`int`](class_int.md) = 32, key: [`String`](class_string.md) = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory: [`bool`](class_bool.md) = false ) |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -77,9 +77,9 @@ Writes the files specified using all [`add_file`](class_pckpacker.md#class_pckpa
 
 <div id="_class_pckpacker_method_pck_start"></div>
 
-[Error](#enum_@globalscope_error) **pck_start** ( pck_name: [`String`](class_string.md), alignment: [`int`](class_int.md) = 32, key: [`String`](class_string.md) = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory: [`bool`](class_bool.md) = false )<div id="class_pckpacker_method_pck_start"></div>
+[Error](#enum_@globalscope_error) **pck_start** ( pck_path: [`String`](class_string.md), alignment: [`int`](class_int.md) = 32, key: [`String`](class_string.md) = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory: [`bool`](class_bool.md) = false )<div id="class_pckpacker_method_pck_start"></div>
 
-Creates a new PCK file with the name `pck_name`. The `.pck` file extension isn't added automatically, so it should be part of `pck_name` (even though it's not required).
+Creates a new PCK file at the file path `pck_path`. The `.pck` file extension isn't added automatically, so it should be part of `pck_path` (even though it's not required).
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

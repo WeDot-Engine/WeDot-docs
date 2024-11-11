@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/PackedColorArray.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/PackedColorArray.xml。 -->
 
 <div id="_class_packedcolorarray"></div>
 
@@ -39,6 +39,7 @@ An array specifically designed to hold [`Color`](class_color.md). Packs data tig
 | [`PackedColorArray`](class_packedcolorarray.md) | [`duplicate`](class_packedcolorarray.md#class_packedcolorarray_method_duplicate) ( )                                                                             |
 | `void`                                          | [`fill`](class_packedcolorarray.md#class_packedcolorarray_method_fill) ( value: [`Color`](class_color.md) )                                                      |
 | [`int`](class_int.md)                           | [`find`](class_packedcolorarray.md#class_packedcolorarray_method_find) ( value: [`Color`](class_color.md), from: [`int`](class_int.md) = 0 ) const[^const]       |
+| [`Color`](class_color.md)                       | [`get`](class_packedcolorarray.md#class_packedcolorarray_method_get) ( index: [`int`](class_int.md) ) const[^const]                                              |
 | [`bool`](class_bool.md)                         | [`has`](class_packedcolorarray.md#class_packedcolorarray_method_has) ( value: [`Color`](class_color.md) ) const[^const]                                          |
 | [`int`](class_int.md)                           | [`insert`](class_packedcolorarray.md#class_packedcolorarray_method_insert) ( at_index: [`int`](class_int.md), value: [`Color`](class_color.md) )                 |
 | [`bool`](class_bool.md)                         | [`is_empty`](class_packedcolorarray.md#class_packedcolorarray_method_is_empty) ( ) const[^const]                                                                 |
@@ -182,6 +183,16 @@ Assigns the given value to all elements in the array. This can typically be used
 [`int`](class_int.md) **find** ( value: [`Color`](class_color.md), from: [`int`](class_int.md) = 0 ) const[^const]<div id="class_packedcolorarray_method_find"></div>
 
 Searches the array for a value and returns its index or `-1` if not found. Optionally, the initial search index can be passed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_packedcolorarray_method_get"></div>
+
+[`Color`](class_color.md) **get** ( index: [`int`](class_int.md) ) const[^const]<div id="class_packedcolorarray_method_get"></div>
+
+Returns the [`Color`](class_color.md) at the given `index` in the array. This is the same as using the `[]` operator (`array[index]`).
 
 <!-- rst-class:: classref-item-separator -->
 

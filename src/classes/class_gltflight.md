@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/gltf/doc_classes/GLTFLight.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/gltf/doc_classes/GLTFLight.xml。 -->
 
 <div id="_class_gltflight"></div>
 
@@ -9,11 +9,11 @@
 
 **继承：** [`Resource`](class_resource.md) **<** [`RefCounted`](class_refcounted.md) **<** [`Object`](class_object.md)
 
-Represents a GLTF light.
+Represents a glTF light.
 
 ## 描述
 
-Represents a light as defined by the `KHR_lights_punctual` GLTF extension.
+Represents a light as defined by the `KHR_lights_punctual` glTF extension.
 
 ## 属性
 
@@ -119,7 +119,7 @@ At this angle, the light drops off to zero brightness. Between the inner and out
 - `void` **set_range** ( value: [`float`](class_float.md) )
 - [`float`](class_float.md) **get_range** ( )
 
-The range of the light, beyond which the light has no effect. GLTF lights with no range defined behave like physical lights (which have infinite range). When creating a Godot light, the range is clamped to 4096.
+The range of the light, beyond which the light has no effect. glTF lights with no range defined behave like physical lights (which have infinite range). When creating a Godot light, the range is clamped to 4096.
 
 <!-- rst-class:: classref-section-separator -->
 

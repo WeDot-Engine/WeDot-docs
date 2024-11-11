@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AnimationNodeStateMachine.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AnimationNodeStateMachine.xml。 -->
 
 <div id="_class_animationnodestatemachine"></div>
 
@@ -14,8 +14,6 @@ A state machine with multiple [`AnimationRootNode`](class_animationrootnode.md) 
 ## 描述
 
 Contains multiple [`AnimationRootNode`](class_animationrootnode.md) s representing animation states, connected in a graph. State transitions can be configured to happen automatically or via code, using a shortest-path algorithm. Retrieve the [`AnimationNodeStateMachinePlayback`](class_animationnodestatemachineplayback.md) object from the [`AnimationTree`](class_animationtree.md) node to control it programmatically.
-
- **Example:** 
 
 
 

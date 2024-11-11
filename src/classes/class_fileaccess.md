@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/FileAccess.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/FileAccess.xml。 -->
 
 <div id="_class_fileaccess"></div>
 
@@ -957,7 +957,7 @@ Stores a floating-point number as 32 bits in the file.
 
 `void` **store_line** ( line: [`String`](class_string.md) )<div id="class_fileaccess_method_store_line"></div>
 
-Appends `line` to the file followed by a line return character (`\n`), encoding the text as UTF-8.
+Stores `line` in the file followed by a newline character (`\n`), encoding the text as UTF-8.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -989,7 +989,7 @@ Stores a floating-point number in the file.
 
 `void` **store_string** ( string: [`String`](class_string.md) )<div id="class_fileaccess_method_store_string"></div>
 
-Appends `string` to the file without a line return, encoding the text as UTF-8.
+Stores `string` in the file without a newline character (`\n`), encoding the text as UTF-8.
 
  **Note:** This method is intended to be used to write text files. The string is stored as a UTF-8 encoded buffer without string length or terminating zero, which means that it can't be loaded back easily. If you want to store a retrievable string in a binary file, consider using [`store_pascal_string`](class_fileaccess.md#class_fileaccess_method_store_pascal_string) instead. For retrieving strings from a text file, you can use `get_buffer(length).get_string_from_utf8()` (if you know the length) or [`get_as_text`](class_fileaccess.md#class_fileaccess_method_get_as_text).
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TileMap.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TileMap.xml。 -->
 
 <div id="_class_tilemap"></div>
 
@@ -62,6 +62,9 @@ To force an update earlier on, call [`update_internals`](class_tilemap.md#class_
 | [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells`](class_tilemap.md#class_tilemap_method_get_used_cells) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                    |
 | [Array](class_array.md) [`Vector2i`](class_vector2i.md) | [`get_used_cells_by_id`](class_tilemap.md#class_tilemap_method_get_used_cells_by_id) ( layer: [`int`](class_int.md), source_id: [`int`](class_int.md) = -1, atlas_coords: [`Vector2i`](class_vector2i.md) = Vector2i(-1, -1), alternative_tile: [`int`](class_int.md) = -1 ) const[^const]                                 |
 | [`Rect2i`](class_rect2i.md)                             | [`get_used_rect`](class_tilemap.md#class_tilemap_method_get_used_rect) ( ) const[^const]                                                                                                                                                                                                                                   |
+| [`bool`](class_bool.md)                                 | [`is_cell_flipped_h`](class_tilemap.md#class_tilemap_method_is_cell_flipped_h) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                                       |
+| [`bool`](class_bool.md)                                 | [`is_cell_flipped_v`](class_tilemap.md#class_tilemap_method_is_cell_flipped_v) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                                       |
+| [`bool`](class_bool.md)                                 | [`is_cell_transposed`](class_tilemap.md#class_tilemap_method_is_cell_transposed) ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]                                                                                                     |
 | [`bool`](class_bool.md)                                 | [`is_layer_enabled`](class_tilemap.md#class_tilemap_method_is_layer_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                                |
 | [`bool`](class_bool.md)                                 | [`is_layer_navigation_enabled`](class_tilemap.md#class_tilemap_method_is_layer_navigation_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                          |
 | [`bool`](class_bool.md)                                 | [`is_layer_y_sort_enabled`](class_tilemap.md#class_tilemap_method_is_layer_y_sort_enabled) ( layer: [`int`](class_int.md) ) const[^const]                                                                                                                                                                                  |
@@ -541,6 +544,36 @@ If `layer` is negative, the layers are accessed from the last one.
 [`Rect2i`](class_rect2i.md) **get_used_rect** ( ) const[^const]<div id="class_tilemap_method_get_used_rect"></div>
 
 Returns a rectangle enclosing the used (non-empty) tiles of the map, including all layers.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tilemap_method_is_cell_flipped_h"></div>
+
+[`bool`](class_bool.md) **is_cell_flipped_h** ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]<div id="class_tilemap_method_is_cell_flipped_h"></div>
+
+Returns `true` if the cell on layer `layer` at coordinates `coords` is flipped horizontally. The result is valid only for atlas sources.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tilemap_method_is_cell_flipped_v"></div>
+
+[`bool`](class_bool.md) **is_cell_flipped_v** ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]<div id="class_tilemap_method_is_cell_flipped_v"></div>
+
+Returns `true` if the cell on layer `layer` at coordinates `coords` is flipped vertically. The result is valid only for atlas sources.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_tilemap_method_is_cell_transposed"></div>
+
+[`bool`](class_bool.md) **is_cell_transposed** ( layer: [`int`](class_int.md), coords: [`Vector2i`](class_vector2i.md), use_proxies: [`bool`](class_bool.md) = false ) const[^const]<div id="class_tilemap_method_is_cell_transposed"></div>
+
+Returns `true` if the cell on layer `layer` at coordinates `coords` is transposed. The result is valid only for atlas sources.
 
 <!-- rst-class:: classref-item-separator -->
 

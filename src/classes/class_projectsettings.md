@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ProjectSettings.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ProjectSettings.xml。 -->
 
 <div id="_class_projectsettings"></div>
 
@@ -108,6 +108,7 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`int`](class_int.md)                             | [`debug/gdscript/warnings/int_as_enum_without_cast`](class_projectsettings.md#class_projectsettings_property_debug/gdscript/warnings/int_as_enum_without_cast)                                                                   | ``1``                                                                                            |
 | [`int`](class_int.md)                             | [`debug/gdscript/warnings/int_as_enum_without_match`](class_projectsettings.md#class_projectsettings_property_debug/gdscript/warnings/int_as_enum_without_match)                                                                 | ``1``                                                                                            |
 | [`int`](class_int.md)                             | [`debug/gdscript/warnings/integer_division`](class_projectsettings.md#class_projectsettings_property_debug/gdscript/warnings/integer_division)                                                                                   | ``1``                                                                                            |
+| [`int`](class_int.md)                             | [`debug/gdscript/warnings/missing_tool`](class_projectsettings.md#class_projectsettings_property_debug/gdscript/warnings/missing_tool)                                                                                           | ``1``                                                                                            |
 | [`int`](class_int.md)                             | [`debug/gdscript/warnings/narrowing_conversion`](class_projectsettings.md#class_projectsettings_property_debug/gdscript/warnings/narrowing_conversion)                                                                           | ``1``                                                                                            |
 | [`int`](class_int.md)                             | [`debug/gdscript/warnings/native_method_override`](class_projectsettings.md#class_projectsettings_property_debug/gdscript/warnings/native_method_override)                                                                       | ``2``                                                                                            |
 | [`int`](class_int.md)                             | [`debug/gdscript/warnings/onready_with_export`](class_projectsettings.md#class_projectsettings_property_debug/gdscript/warnings/onready_with_export)                                                                             | ``2``                                                                                            |
@@ -140,6 +141,7 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`String`](class_string.md)                       | [`debug/settings/crash_handler/message`](class_projectsettings.md#class_projectsettings_property_debug/settings/crash_handler/message)                                                                                           | ``"Please include this when reporting the bug to the project developer."``                       |
 | [`String`](class_string.md)                       | [`debug/settings/crash_handler/message.editor`](class_projectsettings.md#class_projectsettings_property_debug/settings/crash_handler/message.editor)                                                                             | ``"Please include this when reporting the bug on: https://github.com/godotengine/godot/issues"`` |
 | [`int`](class_int.md)                             | [`debug/settings/gdscript/max_call_stack`](class_projectsettings.md#class_projectsettings_property_debug/settings/gdscript/max_call_stack)                                                                                       | ``1024``                                                                                         |
+| [`bool`](class_bool.md)                           | [`debug/settings/physics_interpolation/enable_warnings`](class_projectsettings.md#class_projectsettings_property_debug/settings/physics_interpolation/enable_warnings)                                                           | ``true``                                                                                         |
 | [`int`](class_int.md)                             | [`debug/settings/profiler/max_functions`](class_projectsettings.md#class_projectsettings_property_debug/settings/profiler/max_functions)                                                                                         | ``16384``                                                                                        |
 | [`int`](class_int.md)                             | [`debug/settings/profiler/max_timestamp_query_elements`](class_projectsettings.md#class_projectsettings_property_debug/settings/profiler/max_timestamp_query_elements)                                                           | ``256``                                                                                          |
 | [`bool`](class_bool.md)                           | [`debug/settings/stdout/print_fps`](class_projectsettings.md#class_projectsettings_property_debug/settings/stdout/print_fps)                                                                                                     | ``false``                                                                                        |
@@ -201,7 +203,8 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`Vector2`](class_vector2.md)                     | [`display/mouse_cursor/tooltip_position_offset`](class_projectsettings.md#class_projectsettings_property_display/mouse_cursor/tooltip_position_offset)                                                                           | ``Vector2(10, 10)``                                                                              |
 | [`bool`](class_bool.md)                           | [`display/window/dpi/allow_hidpi`](class_projectsettings.md#class_projectsettings_property_display/window/dpi/allow_hidpi)                                                                                                       | ``true``                                                                                         |
 | [`bool`](class_bool.md)                           | [`display/window/energy_saving/keep_screen_on`](class_projectsettings.md#class_projectsettings_property_display/window/energy_saving/keep_screen_on)                                                                             | ``true``                                                                                         |
-| [`bool`](class_bool.md)                           | [`display/window/energy_saving/keep_screen_on.editor_hint`](class_projectsettings.md#class_projectsettings_property_display/window/energy_saving/keep_screen_on.editor_hint)                                                     | ``false``                                                                                        |
+| [`bool`](class_bool.md)                           | [`display/window/frame_pacing/android/enable_frame_pacing`](class_projectsettings.md#class_projectsettings_property_display/window/frame_pacing/android/enable_frame_pacing)                                                     | ``true``                                                                                         |
+| [`int`](class_int.md)                             | [`display/window/frame_pacing/android/swappy_mode`](class_projectsettings.md#class_projectsettings_property_display/window/frame_pacing/android/swappy_mode)                                                                     | ``2``                                                                                            |
 | [`int`](class_int.md)                             | [`display/window/handheld/orientation`](class_projectsettings.md#class_projectsettings_property_display/window/handheld/orientation)                                                                                             | ``0``                                                                                            |
 | [`bool`](class_bool.md)                           | [`display/window/ios/allow_high_refresh_rate`](class_projectsettings.md#class_projectsettings_property_display/window/ios/allow_high_refresh_rate)                                                                               | ``true``                                                                                         |
 | [`bool`](class_bool.md)                           | [`display/window/ios/hide_home_indicator`](class_projectsettings.md#class_projectsettings_property_display/window/ios/hide_home_indicator)                                                                                       | ``true``                                                                                         |
@@ -217,6 +220,7 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`int`](class_int.md)                             | [`display/window/size/mode`](class_projectsettings.md#class_projectsettings_property_display/window/size/mode)                                                                                                                   | ``0``                                                                                            |
 | [`bool`](class_bool.md)                           | [`display/window/size/no_focus`](class_projectsettings.md#class_projectsettings_property_display/window/size/no_focus)                                                                                                           | ``false``                                                                                        |
 | [`bool`](class_bool.md)                           | [`display/window/size/resizable`](class_projectsettings.md#class_projectsettings_property_display/window/size/resizable)                                                                                                         | ``true``                                                                                         |
+| [`bool`](class_bool.md)                           | [`display/window/size/sharp_corners`](class_projectsettings.md#class_projectsettings_property_display/window/size/sharp_corners)                                                                                                 | ``false``                                                                                        |
 | [`bool`](class_bool.md)                           | [`display/window/size/transparent`](class_projectsettings.md#class_projectsettings_property_display/window/size/transparent)                                                                                                     | ``false``                                                                                        |
 | [`int`](class_int.md)                             | [`display/window/size/viewport_height`](class_projectsettings.md#class_projectsettings_property_display/window/size/viewport_height)                                                                                             | ``648``                                                                                          |
 | [`int`](class_int.md)                             | [`display/window/size/viewport_width`](class_projectsettings.md#class_projectsettings_property_display/window/size/viewport_width)                                                                                               | ``1152``                                                                                         |
@@ -353,6 +357,7 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`Dictionary`](class_dictionary.md)               | [`input/ui_text_submit`](class_projectsettings.md#class_projectsettings_property_input/ui_text_submit)                                                                                                                           |                                                                                                  |
 | [`Dictionary`](class_dictionary.md)               | [`input/ui_text_toggle_insert_mode`](class_projectsettings.md#class_projectsettings_property_input/ui_text_toggle_insert_mode)                                                                                                   |                                                                                                  |
 | [`Dictionary`](class_dictionary.md)               | [`input/ui_undo`](class_projectsettings.md#class_projectsettings_property_input/ui_undo)                                                                                                                                         |                                                                                                  |
+| [`Dictionary`](class_dictionary.md)               | [`input/ui_unicode_start`](class_projectsettings.md#class_projectsettings_property_input/ui_unicode_start)                                                                                                                       |                                                                                                  |
 | [`Dictionary`](class_dictionary.md)               | [`input/ui_up`](class_projectsettings.md#class_projectsettings_property_input/ui_up)                                                                                                                                             |                                                                                                  |
 | [`bool`](class_bool.md)                           | [`input_devices/buffering/agile_event_flushing`](class_projectsettings.md#class_projectsettings_property_input_devices/buffering/agile_event_flushing)                                                                           | ``false``                                                                                        |
 | [`bool`](class_bool.md)                           | [`input_devices/compatibility/legacy_just_pressed_behavior`](class_projectsettings.md#class_projectsettings_property_input_devices/compatibility/legacy_just_pressed_behavior)                                                   | ``false``                                                                                        |
@@ -363,6 +368,10 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`int`](class_int.md)                             | [`input_devices/pointing/android/rotary_input_scroll_axis`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/android/rotary_input_scroll_axis)                                                     | ``1``                                                                                            |
 | [`bool`](class_bool.md)                           | [`input_devices/pointing/emulate_mouse_from_touch`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/emulate_mouse_from_touch)                                                                     | ``true``                                                                                         |
 | [`bool`](class_bool.md)                           | [`input_devices/pointing/emulate_touch_from_mouse`](class_projectsettings.md#class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse)                                                                     | ``false``                                                                                        |
+| [`bool`](class_bool.md)                           | [`input_devices/sensors/enable_accelerometer`](class_projectsettings.md#class_projectsettings_property_input_devices/sensors/enable_accelerometer)                                                                               | ``false``                                                                                        |
+| [`bool`](class_bool.md)                           | [`input_devices/sensors/enable_gravity`](class_projectsettings.md#class_projectsettings_property_input_devices/sensors/enable_gravity)                                                                                           | ``false``                                                                                        |
+| [`bool`](class_bool.md)                           | [`input_devices/sensors/enable_gyroscope`](class_projectsettings.md#class_projectsettings_property_input_devices/sensors/enable_gyroscope)                                                                                       | ``false``                                                                                        |
+| [`bool`](class_bool.md)                           | [`input_devices/sensors/enable_magnetometer`](class_projectsettings.md#class_projectsettings_property_input_devices/sensors/enable_magnetometer)                                                                                 | ``false``                                                                                        |
 | [`String`](class_string.md)                       | [`internationalization/locale/fallback`](class_projectsettings.md#class_projectsettings_property_internationalization/locale/fallback)                                                                                           | ``"en"``                                                                                         |
 | [`bool`](class_bool.md)                           | [`internationalization/locale/include_text_server_data`](class_projectsettings.md#class_projectsettings_property_internationalization/locale/include_text_server_data)                                                           | ``false``                                                                                        |
 | [`String`](class_string.md)                       | [`internationalization/locale/test`](class_projectsettings.md#class_projectsettings_property_internationalization/locale/test)                                                                                                   | ``""``                                                                                           |
@@ -638,6 +647,8 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`bool`](class_bool.md)                           | [`physics/common/physics_interpolation`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_interpolation)                                                                                           | ``false``                                                                                        |
 | [`float`](class_float.md)                         | [`physics/common/physics_jitter_fix`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_jitter_fix)                                                                                                 | ``0.5``                                                                                          |
 | [`int`](class_int.md)                             | [`physics/common/physics_ticks_per_second`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_ticks_per_second)                                                                                     | ``60``                                                                                           |
+| [`int`](class_int.md)                             | [`rendering/2d/batching/item_buffer_size`](class_projectsettings.md#class_projectsettings_property_rendering/2d/batching/item_buffer_size)                                                                                       | ``16384``                                                                                        |
+| [`int`](class_int.md)                             | [`rendering/2d/batching/uniform_set_cache_size`](class_projectsettings.md#class_projectsettings_property_rendering/2d/batching/uniform_set_cache_size)                                                                           | ``256``                                                                                          |
 | [`int`](class_int.md)                             | [`rendering/2d/sdf/oversize`](class_projectsettings.md#class_projectsettings_property_rendering/2d/sdf/oversize)                                                                                                                 | ``1``                                                                                            |
 | [`int`](class_int.md)                             | [`rendering/2d/sdf/scale`](class_projectsettings.md#class_projectsettings_property_rendering/2d/sdf/scale)                                                                                                                       | ``1``                                                                                            |
 | [`int`](class_int.md)                             | [`rendering/2d/shadow_atlas/size`](class_projectsettings.md#class_projectsettings_property_rendering/2d/shadow_atlas/size)                                                                                                       | ``2048``                                                                                         |
@@ -710,6 +721,7 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`int`](class_int.md)                             | [`rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count)                                 | ``2048``                                                                                         |
 | [`int`](class_int.md)                             | [`rendering/lightmapping/bake_quality/ultra_quality_ray_count`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/bake_quality/ultra_quality_ray_count)                                             | ``2048``                                                                                         |
 | [`int`](class_int.md)                             | [`rendering/lightmapping/denoising/denoiser`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/denoising/denoiser)                                                                                 | ``0``                                                                                            |
+| [`bool`](class_bool.md)                           | [`rendering/lightmapping/lightmap_gi/use_bicubic_filter`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/lightmap_gi/use_bicubic_filter)                                                         | ``true``                                                                                         |
 | [`float`](class_float.md)                         | [`rendering/lightmapping/primitive_meshes/texel_size`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/primitive_meshes/texel_size)                                                               | ``0.2``                                                                                          |
 | [`float`](class_float.md)                         | [`rendering/lightmapping/probe_capture/update_speed`](class_projectsettings.md#class_projectsettings_property_rendering/lightmapping/probe_capture/update_speed)                                                                 | ``15``                                                                                           |
 | [`bool`](class_bool.md)                           | [`rendering/lights_and_shadows/directional_shadow/16_bits`](class_projectsettings.md#class_projectsettings_property_rendering/lights_and_shadows/directional_shadow/16_bits)                                                     | ``true``                                                                                         |
@@ -764,6 +776,7 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`String`](class_string.md)                       | [`rendering/rendering_device/driver.macos`](class_projectsettings.md#class_projectsettings_property_rendering/rendering_device/driver.macos)                                                                                     |                                                                                                  |
 | [`String`](class_string.md)                       | [`rendering/rendering_device/driver.windows`](class_projectsettings.md#class_projectsettings_property_rendering/rendering_device/driver.windows)                                                                                 |                                                                                                  |
 | [`bool`](class_bool.md)                           | [`rendering/rendering_device/fallback_to_d3d12`](class_projectsettings.md#class_projectsettings_property_rendering/rendering_device/fallback_to_d3d12)                                                                           | ``true``                                                                                         |
+| [`bool`](class_bool.md)                           | [`rendering/rendering_device/fallback_to_opengl3`](class_projectsettings.md#class_projectsettings_property_rendering/rendering_device/fallback_to_opengl3)                                                                       | ``true``                                                                                         |
 | [`bool`](class_bool.md)                           | [`rendering/rendering_device/fallback_to_vulkan`](class_projectsettings.md#class_projectsettings_property_rendering/rendering_device/fallback_to_vulkan)                                                                         | ``true``                                                                                         |
 | [`bool`](class_bool.md)                           | [`rendering/rendering_device/pipeline_cache/enable`](class_projectsettings.md#class_projectsettings_property_rendering/rendering_device/pipeline_cache/enable)                                                                   | ``true``                                                                                         |
 | [`float`](class_float.md)                         | [`rendering/rendering_device/pipeline_cache/save_chunk_size_mb`](class_projectsettings.md#class_projectsettings_property_rendering/rendering_device/pipeline_cache/save_chunk_size_mb)                                           | ``3.0``                                                                                          |
@@ -784,7 +797,6 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`bool`](class_bool.md)                           | [`rendering/shading/overrides/force_lambert_over_burley`](class_projectsettings.md#class_projectsettings_property_rendering/shading/overrides/force_lambert_over_burley)                                                         | ``false``                                                                                        |
 | [`bool`](class_bool.md)                           | [`rendering/shading/overrides/force_lambert_over_burley.mobile`](class_projectsettings.md#class_projectsettings_property_rendering/shading/overrides/force_lambert_over_burley.mobile)                                           | ``true``                                                                                         |
 | [`bool`](class_bool.md)                           | [`rendering/shading/overrides/force_vertex_shading`](class_projectsettings.md#class_projectsettings_property_rendering/shading/overrides/force_vertex_shading)                                                                   | ``false``                                                                                        |
-| [`bool`](class_bool.md)                           | [`rendering/shading/overrides/force_vertex_shading.mobile`](class_projectsettings.md#class_projectsettings_property_rendering/shading/overrides/force_vertex_shading.mobile)                                                     | ``true``                                                                                         |
 | [`int`](class_int.md)                             | [`rendering/textures/canvas_textures/default_texture_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/canvas_textures/default_texture_filter)                                                 | ``1``                                                                                            |
 | [`int`](class_int.md)                             | [`rendering/textures/canvas_textures/default_texture_repeat`](class_projectsettings.md#class_projectsettings_property_rendering/textures/canvas_textures/default_texture_repeat)                                                 | ``0``                                                                                            |
 | [`int`](class_int.md)                             | [`rendering/textures/decals/filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/decals/filter)                                                                                                   | ``3``                                                                                            |
@@ -793,6 +805,8 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`bool`](class_bool.md)                           | [`rendering/textures/default_filters/use_nearest_mipmap_filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter)                                           | ``false``                                                                                        |
 | [`int`](class_int.md)                             | [`rendering/textures/light_projectors/filter`](class_projectsettings.md#class_projectsettings_property_rendering/textures/light_projectors/filter)                                                                               | ``3``                                                                                            |
 | [`bool`](class_bool.md)                           | [`rendering/textures/lossless_compression/force_png`](class_projectsettings.md#class_projectsettings_property_rendering/textures/lossless_compression/force_png)                                                                 | ``false``                                                                                        |
+| [`bool`](class_bool.md)                           | [`rendering/textures/vram_compression/cache_gpu_compressor`](class_projectsettings.md#class_projectsettings_property_rendering/textures/vram_compression/cache_gpu_compressor)                                                   | ``true``                                                                                         |
+| [`bool`](class_bool.md)                           | [`rendering/textures/vram_compression/compress_with_gpu`](class_projectsettings.md#class_projectsettings_property_rendering/textures/vram_compression/compress_with_gpu)                                                         | ``true``                                                                                         |
 | [`bool`](class_bool.md)                           | [`rendering/textures/vram_compression/import_etc2_astc`](class_projectsettings.md#class_projectsettings_property_rendering/textures/vram_compression/import_etc2_astc)                                                           | ``false``                                                                                        |
 | [`bool`](class_bool.md)                           | [`rendering/textures/vram_compression/import_s3tc_bptc`](class_projectsettings.md#class_projectsettings_property_rendering/textures/vram_compression/import_s3tc_bptc)                                                           | ``false``                                                                                        |
 | [`int`](class_int.md)                             | [`rendering/textures/webp_compression/compression_method`](class_projectsettings.md#class_projectsettings_property_rendering/textures/webp_compression/compression_method)                                                       | ``2``                                                                                            |
@@ -806,9 +820,13 @@ When naming a Project Settings property, use the full path to the setting includ
 | [`String`](class_string.md)                       | [`xr/openxr/default_action_map`](class_projectsettings.md#class_projectsettings_property_xr/openxr/default_action_map)                                                                                                           | ``"res://openxr_action_map.tres"``                                                               |
 | [`bool`](class_bool.md)                           | [`xr/openxr/enabled`](class_projectsettings.md#class_projectsettings_property_xr/openxr/enabled)                                                                                                                                 | ``false``                                                                                        |
 | [`int`](class_int.md)                             | [`xr/openxr/environment_blend_mode`](class_projectsettings.md#class_projectsettings_property_xr/openxr/environment_blend_mode)                                                                                                   | ``"0"``                                                                                          |
+| [`int`](class_int.md)                             | [`xr/openxr/extensions/debug_message_types`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/debug_message_types)                                                                                   | ``"15"``                                                                                         |
+| [`int`](class_int.md)                             | [`xr/openxr/extensions/debug_utils`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/debug_utils)                                                                                                   | ``"0"``                                                                                          |
 | [`bool`](class_bool.md)                           | [`xr/openxr/extensions/eye_gaze_interaction`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/eye_gaze_interaction)                                                                                 | ``false``                                                                                        |
 | [`bool`](class_bool.md)                           | [`xr/openxr/extensions/hand_interaction_profile`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_interaction_profile)                                                                         | ``false``                                                                                        |
-| [`bool`](class_bool.md)                           | [`xr/openxr/extensions/hand_tracking`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_tracking)                                                                                               | ``true``                                                                                         |
+| [`bool`](class_bool.md)                           | [`xr/openxr/extensions/hand_tracking`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_tracking)                                                                                               | ``false``                                                                                        |
+| [`bool`](class_bool.md)                           | [`xr/openxr/extensions/hand_tracking_controller_data_source`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_tracking_controller_data_source)                                                 | ``false``                                                                                        |
+| [`bool`](class_bool.md)                           | [`xr/openxr/extensions/hand_tracking_unobstructed_data_source`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source)                                             | ``false``                                                                                        |
 | [`int`](class_int.md)                             | [`xr/openxr/form_factor`](class_projectsettings.md#class_projectsettings_property_xr/openxr/form_factor)                                                                                                                         | ``"0"``                                                                                          |
 | [`bool`](class_bool.md)                           | [`xr/openxr/foveation_dynamic`](class_projectsettings.md#class_projectsettings_property_xr/openxr/foveation_dynamic)                                                                                                             | ``false``                                                                                        |
 | [`int`](class_int.md)                             | [`xr/openxr/foveation_level`](class_projectsettings.md#class_projectsettings_property_xr/openxr/foveation_level)                                                                                                                 | ``"0"``                                                                                          |
@@ -1111,7 +1129,7 @@ It may take several seconds at a stable frame rate before the smoothing is initi
 
 If `true`, disables printing to standard error. If `true`, this also hides error and warning messages printed by [`@GlobalScope.push_error`](class_@globalscope.md#class_@globalscope_method_push_error) and [`@GlobalScope.push_warning`](class_@globalscope.md#class_@globalscope_method_push_warning). See also [`application/run/disable_stdout`](class_projectsettings.md#class_projectsettings_property_application/run/disable_stdout).
 
-Changes to this setting will only be applied upon restarting the application.
+Changes to this setting will only be applied upon restarting the application. To control this at runtime, use [`Engine.print_error_messages`](class_engine.md#class_engine_property_print_error_messages).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1123,7 +1141,7 @@ Changes to this setting will only be applied upon restarting the application.
 
 If `true`, disables printing to standard output. This is equivalent to starting the editor or project with the `--quiet` [*command line argument*](../tutorials/editor/command_line_tutorial). See also [`application/run/disable_stderr`](class_projectsettings.md#class_projectsettings_property_application/run/disable_stderr).
 
-Changes to this setting will only be applied upon restarting the application.
+Changes to this setting will only be applied upon restarting the application. To control this at runtime, use [`Engine.print_to_stdout`](class_engine.md#class_engine_property_print_to_stdout).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1294,6 +1312,8 @@ Default [`AudioBusLayout`](class_audiobuslayout.md) resource file to use in the 
 Specifies the audio driver to use. This setting is platform-dependent as each platform supports different audio drivers. If left empty, the default audio driver will be used.
 
 The `Dummy` audio driver disables all audio playback and recording, which is useful for non-game applications as it reduces CPU usage. It also prevents the engine from appearing as an application playing audio in the OS' audio mixer.
+
+To query the value that is being used at run-time (which may be overridden by command-line arguments or headless mode), use [`AudioServer.get_driver_name`](class_audioserver.md#class_audioserver_method_get_driver_name).
 
  **Note:** The driver in use can be overridden at runtime via the `--audio-driver` [*command line argument*](../tutorials/editor/command_line_tutorial).
 
@@ -1789,6 +1809,16 @@ When set to `warn` or `error`, produces a warning or an error respectively when 
 
 ---
 
+<div id="_class_projectsettings_property_debug/gdscript/warnings/missing_tool"></div>
+
+[`int`](class_int.md) **debug/gdscript/warnings/missing_tool** = ``1`` <div id="class_projectsettings_property_debug/gdscript/warnings/missing_tool"></div>
+
+When set to `warn` or `error`, produces a warning or an error respectively when the base class script has the `@tool` annotation, but the current class script does not have it.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_projectsettings_property_debug/gdscript/warnings/narrowing_conversion"></div>
 
 [`int`](class_int.md) **debug/gdscript/warnings/narrowing_conversion** = ``1`` <div id="class_projectsettings_property_debug/gdscript/warnings/narrowing_conversion"></div>
@@ -1885,7 +1915,7 @@ When set to `warn` or `error`, produces a warning or an error respectively when 
 
 [`int`](class_int.md) **debug/gdscript/warnings/shadowed_variable** = ``1`` <div id="class_projectsettings_property_debug/gdscript/warnings/shadowed_variable"></div>
 
-When set to `warn` or `error`, produces a warning or an error respectively when defining a local or member variable that would shadow a member variable that the class defines.
+When set to `warn` or `error`, produces a warning or an error respectively when a local variable or local constant shadows a member declared in the current class.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1895,7 +1925,7 @@ When set to `warn` or `error`, produces a warning or an error respectively when 
 
 [`int`](class_int.md) **debug/gdscript/warnings/shadowed_variable_base_class** = ``1`` <div id="class_projectsettings_property_debug/gdscript/warnings/shadowed_variable_base_class"></div>
 
-When set to `warn` or `error`, produces a warning or an error respectively when defining a local or subclass member variable that would shadow a variable that is inherited from a parent class.
+When set to `warn` or `error`, produces a warning or an error respectively when a local variable or local constant shadows a member declared in a base class.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2108,6 +2138,18 @@ Editor-only override for [`debug/settings/crash_handler/message`](class_projects
 [`int`](class_int.md) **debug/settings/gdscript/max_call_stack** = ``1024`` <div id="class_projectsettings_property_debug/settings/gdscript/max_call_stack"></div>
 
 Maximum call stack allowed for debugging GDScript.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_debug/settings/physics_interpolation/enable_warnings"></div>
+
+[`bool`](class_bool.md) **debug/settings/physics_interpolation/enable_warnings** = ``true`` <div id="class_projectsettings_property_debug/settings/physics_interpolation/enable_warnings"></div>
+
+If `true`, enables warnings which can help pinpoint where nodes are being incorrectly updated, which will result in incorrect interpolation and visual glitches.
+
+When a node is being interpolated, it is essential that the transform is set during [`Node._physics_process`](class_node.md#class_node_private_method__physics_process) (during a physics tick) rather than [`Node._process`](class_node.md#class_node_private_method__process) (during a frame).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2725,11 +2767,31 @@ If `true`, keeps the screen on (even in case of inactivity), so the screensaver 
 
 ---
 
-<div id="_class_projectsettings_property_display/window/energy_saving/keep_screen_on.editor_hint"></div>
+<div id="_class_projectsettings_property_display/window/frame_pacing/android/enable_frame_pacing"></div>
 
-[`bool`](class_bool.md) **display/window/energy_saving/keep_screen_on.editor_hint** = ``false`` <div id="class_projectsettings_property_display/window/energy_saving/keep_screen_on.editor_hint"></div>
+[`bool`](class_bool.md) **display/window/frame_pacing/android/enable_frame_pacing** = ``true`` <div id="class_projectsettings_property_display/window/frame_pacing/android/enable_frame_pacing"></div>
 
-Editor-only override for [`display/window/energy_saving/keep_screen_on`](class_projectsettings.md#class_projectsettings_property_display/window/energy_saving/keep_screen_on). Does not affect running project.
+Enable Swappy for stable frame pacing on Android. Highly recommended.
+
+ **Note:** This option will be forced off when using OpenXR.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_display/window/frame_pacing/android/swappy_mode"></div>
+
+[`int`](class_int.md) **display/window/frame_pacing/android/swappy_mode** = ``2`` <div id="class_projectsettings_property_display/window/frame_pacing/android/swappy_mode"></div>
+
+Swappy mode to use. The options are:
+
+- pipeline_forced_on: Try to honor [`Engine.max_fps`](class_engine.md#class_engine_property_max_fps). Pipelining is always on. This is the same behavior as Desktop PC.
+
+- auto_fps_pipeline_forced_on: Autocalculate max fps. Actual max_fps will be between 0 and [`Engine.max_fps`](class_engine.md#class_engine_property_max_fps). While this sounds convenient, beware that Swappy will often downgrade max fps until it finds something that can be met and sustained. That means if your game runs between 40fps and 60fps on a 60hz screen, after some time Swappy will downgrade max fps so that the game renders at perfect 30fps.
+
+- auto_fps_auto_pipeline: Same as auto_fps_pipeline_forced_on, but if Swappy detects that rendering is very fast (e.g. it takes < 8ms to render on a 60hz screen) Swappy will disable pipelining to minimize input latency. This is the default.
+
+ **Note:** If [`Engine.max_fps`](class_engine.md#class_engine_property_max_fps) is 0, actual max_fps will considered as to be the screen's refresh rate (often 60hz, 90hz or 120hz depending on device model and OS settings).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -2908,6 +2970,18 @@ If `true`, allows the window to be resizable by default.
  **Note:** Certain window managers can be configured to ignore the non-resizable status of a window. Do not rely on this setting as a guarantee that the window will *never* be resizable.
 
  **Note:** This setting is ignored on iOS.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_display/window/size/sharp_corners"></div>
+
+[`bool`](class_bool.md) **display/window/size/sharp_corners** = ``false`` <div id="class_projectsettings_property_display/window/size/sharp_corners"></div>
+
+If `true`, the main window uses sharp corners by default.
+
+ **Note:** This property is implemented only on Windows (11).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -4444,7 +4518,7 @@ macOS specific override for the shortcut to select the word currently under the 
 
 [`Dictionary`](class_dictionary.md) **input/ui_text_skip_selection_for_next_occurrence** <div id="class_projectsettings_property_input/ui_text_skip_selection_for_next_occurrence"></div>
 
-If no selection is currently active with the last caret in text fields, searches for the next occurrence of the the word currently under the caret and moves the caret to the next occurrence. The action can be performed sequentially for other occurrences of the word under the last caret.
+If no selection is currently active with the last caret in text fields, searches for the next occurrence of the word currently under the caret and moves the caret to the next occurrence. The action can be performed sequentially for other occurrences of the word under the last caret.
 
 If a selection is currently active with the last caret in text fields, searches for the next occurrence of the selection, adds a caret, selects the next occurrence then deselects the previous selection and its associated caret. The action can be performed sequentially for other occurrences of the selection of the last caret.
 
@@ -4485,6 +4559,18 @@ Default [`InputEventAction`](class_inputeventaction.md) to toggle *insert mode* 
 [`Dictionary`](class_dictionary.md) **input/ui_undo** <div id="class_projectsettings_property_input/ui_undo"></div>
 
 Default [`InputEventAction`](class_inputeventaction.md) to undo the most recent action.
+
+ **Note:** Default `ui_*` actions cannot be removed as they are necessary for the internal logic of several [`Control`](class_control.md) s. The events assigned to the action can however be modified.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_input/ui_unicode_start"></div>
+
+[`Dictionary`](class_dictionary.md) **input/ui_unicode_start** <div id="class_projectsettings_property_input/ui_unicode_start"></div>
+
+Default [`InputEventAction`](class_inputeventaction.md) to start Unicode character hexadecimal code input in a text field.
 
  **Note:** Default `ui_*` actions cannot be removed as they are necessary for the internal logic of several [`Control`](class_control.md) s. The events assigned to the action can however be modified.
 
@@ -4601,6 +4687,46 @@ If `true`, sends mouse input events when tapping or swiping on the touchscreen.
 [`bool`](class_bool.md) **input_devices/pointing/emulate_touch_from_mouse** = ``false`` <div id="class_projectsettings_property_input_devices/pointing/emulate_touch_from_mouse"></div>
 
 If `true`, sends touch input events when clicking or dragging the mouse.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_input_devices/sensors/enable_accelerometer"></div>
+
+[`bool`](class_bool.md) **input_devices/sensors/enable_accelerometer** = ``false`` <div id="class_projectsettings_property_input_devices/sensors/enable_accelerometer"></div>
+
+If `true`, the accelerometer sensor is enabled and [`Input.get_accelerometer`](class_input.md#class_input_method_get_accelerometer) returns valid data.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_input_devices/sensors/enable_gravity"></div>
+
+[`bool`](class_bool.md) **input_devices/sensors/enable_gravity** = ``false`` <div id="class_projectsettings_property_input_devices/sensors/enable_gravity"></div>
+
+If `true`, the gravity sensor is enabled and [`Input.get_gravity`](class_input.md#class_input_method_get_gravity) returns valid data.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_input_devices/sensors/enable_gyroscope"></div>
+
+[`bool`](class_bool.md) **input_devices/sensors/enable_gyroscope** = ``false`` <div id="class_projectsettings_property_input_devices/sensors/enable_gyroscope"></div>
+
+If `true`, the gyroscope sensor is enabled and [`Input.get_gyroscope`](class_input.md#class_input_method_get_gyroscope) returns valid data.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_input_devices/sensors/enable_magnetometer"></div>
+
+[`bool`](class_bool.md) **input_devices/sensors/enable_magnetometer** = ``false`` <div id="class_projectsettings_property_input_devices/sensors/enable_magnetometer"></div>
+
+If `true`, the magnetometer sensor is enabled and [`Input.get_magnetometer`](class_input.md#class_input_method_get_magnetometer) returns valid data.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -7140,6 +7266,8 @@ Sets which physics engine to use for 2D physics.
 
 "DEFAULT" and "GodotPhysics2D" are the same, as there is currently no alternative 2D physics server implemented.
 
+"Dummy" is a 2D physics server that does nothing and returns only dummy values, effectively disabling all 2D physics functionality.
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -7356,6 +7484,8 @@ Sets which physics engine to use for 3D physics.
 
 "DEFAULT" and "GodotPhysics3D" are the same, as there is currently no alternative 3D physics server implemented.
 
+"Dummy" is a 3D physics server that does nothing and returns only dummy values, effectively disabling all 3D physics functionality.
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -7484,8 +7614,6 @@ If `true`, the renderer will interpolate the transforms of physics objects betwe
 
  **Note:** This property is only read when the project starts. To toggle physics interpolation at runtime, set [`SceneTree.physics_interpolation`](class_scenetree.md#class_scenetree_property_physics_interpolation) instead.
 
- **Note:** This feature is currently only implemented in the 2D renderer.
-
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -7496,7 +7624,9 @@ If `true`, the renderer will interpolate the transforms of physics objects betwe
 
 Controls how much physics ticks are synchronized with real time. For 0 or less, the ticks are synchronized. Such values are recommended for network games, where clock synchronization matters. Higher values cause higher deviation of in-game clock and real clock, but allows smoothing out framerate jitters. The default value of 0.5 should be good enough for most; values above 2 could cause the game to react to dropped frames with a noticeable delay and are not recommended.
 
- **Note:** When using a physics interpolation solution (such as enabling [`physics/common/physics_interpolation`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_interpolation) or using a custom solution), the physics jitter fix should be disabled by setting [`physics/common/physics_jitter_fix`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_jitter_fix) to `0.0`.
+ **Note:** Jitter fix is automatically disabled at runtime when [`physics/common/physics_interpolation`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_interpolation) is enabled.
+
+ **Note:** When using a custom physics interpolation solution, the physics jitter fix should be disabled by setting [`physics/common/physics_jitter_fix`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_jitter_fix) to `0.0`.
 
  **Note:** This property is only read when the project starts. To change the physics jitter fix at runtime, set [`Engine.physics_jitter_fix`](class_engine.md#class_engine_property_physics_jitter_fix) instead.
 
@@ -7513,6 +7643,28 @@ The number of fixed iterations per second. This controls how often physics simul
  **Note:** This property is only read when the project starts. To change the physics FPS at runtime, set [`Engine.physics_ticks_per_second`](class_engine.md#class_engine_property_physics_ticks_per_second) instead.
 
  **Note:** Only [`physics/common/max_physics_steps_per_frame`](class_projectsettings.md#class_projectsettings_property_physics/common/max_physics_steps_per_frame) physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if `delta` is used consistently in physics calculations). Therefore, it is recommended to also increase [`physics/common/max_physics_steps_per_frame`](class_projectsettings.md#class_projectsettings_property_physics/common/max_physics_steps_per_frame) if increasing [`physics/common/physics_ticks_per_second`](class_projectsettings.md#class_projectsettings_property_physics/common/physics_ticks_per_second) significantly above its default value.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_rendering/2d/batching/item_buffer_size"></div>
+
+[`int`](class_int.md) **rendering/2d/batching/item_buffer_size** = ``16384`` <div id="class_projectsettings_property_rendering/2d/batching/item_buffer_size"></div>
+
+Maximum number of canvas item commands that can be batched into a single draw call.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_rendering/2d/batching/uniform_set_cache_size"></div>
+
+[`int`](class_int.md) **rendering/2d/batching/uniform_set_cache_size** = ``256`` <div id="class_projectsettings_property_rendering/2d/batching/uniform_set_cache_size"></div>
+
+Maximum number of uniform sets that will be cached by the 2D renderer when batching draw calls.
+
+ **Note:** A project that uses a large number of unique sprite textures per frame may benefit from increasing this value.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -7592,9 +7744,11 @@ If `true`, vertices of [`CanvasItem`](class_canvasitem.md) nodes will snap to fu
 
 [`int`](class_int.md) **rendering/anti_aliasing/quality/msaa_2d** = ``0`` <div id="class_projectsettings_property_rendering/anti_aliasing/quality/msaa_2d"></div>
 
-Sets the number of MSAA samples to use for 2D/Canvas rendering (as a power of two). MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware, especially integrated graphics due to their limited memory bandwidth. This has no effect on shader-induced aliasing or texture aliasing.
+Sets the number of multisample antialiasing (MSAA) samples to use for 2D/Canvas rendering (as a power of two). MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware, especially integrated graphics due to their limited memory bandwidth. This has no effect on shader-induced aliasing or texture aliasing.
 
  **Note:** MSAA is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+
+ **Note:** This property is only read when the project starts. To set the number of 2D MSAA samples at runtime, set [`Viewport.msaa_2d`](class_viewport.md#class_viewport_property_msaa_2d) or use [`RenderingServer.viewport_set_msaa_2d`](class_renderingserver.md#class_renderingserver_method_viewport_set_msaa_2d).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -7604,7 +7758,9 @@ Sets the number of MSAA samples to use for 2D/Canvas rendering (as a power of tw
 
 [`int`](class_int.md) **rendering/anti_aliasing/quality/msaa_3d** = ``0`` <div id="class_projectsettings_property_rendering/anti_aliasing/quality/msaa_3d"></div>
 
-Sets the number of MSAA samples to use for 3D rendering (as a power of two). MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware, especially integrated graphics due to their limited memory bandwidth. See also [`rendering/scaling_3d/mode`](class_projectsettings.md#class_projectsettings_property_rendering/scaling_3d/mode) for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
+Sets the number of multisample antialiasing (MSAA) samples to use for 3D rendering (as a power of two). MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware, especially integrated graphics due to their limited memory bandwidth. See also [`rendering/scaling_3d/mode`](class_projectsettings.md#class_projectsettings_property_rendering/scaling_3d/mode) for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
+
+ **Note:** This property is only read when the project starts. To set the number of 3D MSAA samples at runtime, set [`Viewport.msaa_3d`](class_viewport.md#class_viewport_property_msaa_3d) or use [`RenderingServer.viewport_set_msaa_3d`](class_renderingserver.md#class_renderingserver_method_viewport_set_msaa_3d).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -7620,6 +7776,8 @@ Another way to combat specular aliasing is to enable [`rendering/anti_aliasing/s
 
  **Note:** Screen-space antialiasing is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
+ **Note:** This property is only read when the project starts. To set the screen-space antialiasing mode at runtime, set [`Viewport.screen_space_aa`](class_viewport.md#class_viewport_property_screen_space_aa) on the root [`Viewport`](class_viewport.md) instead, or use [`RenderingServer.viewport_set_screen_space_aa`](class_renderingserver.md#class_renderingserver_method_viewport_set_screen_space_aa).
+
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -7632,7 +7790,7 @@ If `true`, uses a fast post-processing filter to make banding significantly less
 
 In some cases, debanding may introduce a slightly noticeable dithering pattern. It's recommended to enable debanding only when actually needed since the dithering pattern will make lossless-compressed screenshots larger.
 
- **Note:** This property is only read when the project starts. To set debanding at run-time, set [`Viewport.use_debanding`](class_viewport.md#class_viewport_property_use_debanding) on the root [`Viewport`](class_viewport.md) instead.
+ **Note:** This property is only read when the project starts. To set debanding at runtime, set [`Viewport.use_debanding`](class_viewport.md#class_viewport_property_use_debanding) on the root [`Viewport`](class_viewport.md) instead, or use [`RenderingServer.viewport_set_use_debanding`](class_renderingserver.md#class_renderingserver_method_viewport_set_use_debanding).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -7642,11 +7800,13 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 [`bool`](class_bool.md) **rendering/anti_aliasing/quality/use_taa** = ``false`` <div id="class_projectsettings_property_rendering/anti_aliasing/quality/use_taa"></div>
 
-Enables Temporal Anti-Aliasing for the default screen [`Viewport`](class_viewport.md). TAA works by jittering the camera and accumulating the images of the last rendered frames, motion vector rendering is used to account for camera and object motion. Enabling TAA can make the image blurrier, which is partially counteracted by automatically using a negative mipmap LOD bias (see [`rendering/textures/default_filters/texture_mipmap_bias`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/texture_mipmap_bias)).
+Enables temporal antialiasing for the default screen [`Viewport`](class_viewport.md). TAA works by jittering the camera and accumulating the images of the last rendered frames, motion vector rendering is used to account for camera and object motion. Enabling TAA can make the image blurrier, which is partially counteracted by automatically using a negative mipmap LOD bias (see [`rendering/textures/default_filters/texture_mipmap_bias`](class_projectsettings.md#class_projectsettings_property_rendering/textures/default_filters/texture_mipmap_bias)).
 
  **Note:** The implementation is not complete yet. Some visual instances such as particles and skinned meshes may show ghosting artifacts in motion.
 
  **Note:** TAA is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+
+ **Note:** This property is only read when the project starts. To set TAA at runtime, set [`Viewport.use_taa`](class_viewport.md#class_viewport_property_use_taa) on the root [`Viewport`](class_viewport.md) instead, or use [`RenderingServer.viewport_set_use_taa`](class_renderingserver.md#class_renderingserver_method_viewport_set_use_taa).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -8084,9 +8244,9 @@ If `true`, the compatibility renderer will fall back to OpenGLES if desktop Open
 
 [`bool`](class_bool.md) **rendering/gl_compatibility/fallback_to_native** = ``true`` <div id="class_projectsettings_property_rendering/gl_compatibility/fallback_to_native"></div>
 
-If `true`, the compatibility renderer will fall back to native OpenGL if ANGLE over Metal is not supported.
+If `true`, the compatibility renderer will fall back to native OpenGL if ANGLE is not supported, or ANGLE dynamic libraries aren't found.
 
- **Note:** This setting is implemented only on macOS.
+ **Note:** This setting is implemented on macOS and Windows.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -8317,6 +8477,18 @@ OIDN will use GPU acceleration when available. Unlike JNLM which uses compute sh
 - Intel GPUs: SYCL libraries
 
 If no GPU acceleration is configured on the system, multi-threaded CPU-based denoising will be performed instead. This CPU-based denoising is significantly slower than the JNLM denoiser in most cases.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_rendering/lightmapping/lightmap_gi/use_bicubic_filter"></div>
+
+[`bool`](class_bool.md) **rendering/lightmapping/lightmap_gi/use_bicubic_filter** = ``true`` <div id="class_projectsettings_property_rendering/lightmapping/lightmap_gi/use_bicubic_filter"></div>
+
+If `true`, applies a bicubic filter during lightmap sampling. This makes lightmaps look much smoother, at a moderate performance cost.
+
+ **Note:** The bicubic filter exaggerates the 'bleeding' effect that occurs when a lightmap's resolution is low enough.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -8598,7 +8770,9 @@ The minimum number of instances that must be present in a scene to enable cullin
 
 [`float`](class_float.md) **rendering/limits/time/time_rollover_secs** = ``3600`` <div id="class_projectsettings_property_rendering/limits/time/time_rollover_secs"></div>
 
-该属性目前没有描述，请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ 吧！
+Maximum time (in seconds) before the `TIME` shader built-in variable rolls over. The `TIME` variable increments by `delta` each frame, and when it exceeds this value, it rolls over to `0.0`. Since large floating-point values are less precise than small floating-point values, this should be set as low as possible to maximize the precision of the `TIME` built-in variable in shaders. This is especially important on mobile platforms where precision in shaders is significantly reduced. However, if this is set too low, shader animations may appear to restart from the beginning while the project is running.
+
+On desktop platforms, values below `4096` are recommended, ideally below `2048`. On mobile platforms, values below `64` are recommended, ideally below `32`.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -8910,6 +9084,18 @@ If `true`, the forward renderer will fall back to Direct3D 12 if Vulkan is not s
 
 ---
 
+<div id="_class_projectsettings_property_rendering/rendering_device/fallback_to_opengl3"></div>
+
+[`bool`](class_bool.md) **rendering/rendering_device/fallback_to_opengl3** = ``true`` <div id="class_projectsettings_property_rendering/rendering_device/fallback_to_opengl3"></div>
+
+If `true`, the forward renderer will fall back to OpenGL 3 if both Direct3D 12, Metal and Vulkan are not supported.
+
+ **Note:** This setting is implemented only on Windows, Android, macOS, iOS, and Linux/X11.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_projectsettings_property_rendering/rendering_device/fallback_to_vulkan"></div>
 
 [`bool`](class_bool.md) **rendering/rendering_device/fallback_to_vulkan** = ``true`` <div id="class_projectsettings_property_rendering/rendering_device/fallback_to_vulkan"></div>
@@ -9128,20 +9314,6 @@ Lower-end override for [`rendering/shading/overrides/force_lambert_over_burley`]
 
 If `true`, forces vertex shading for all rendering. This can increase performance a lot, but also reduces quality immensely. Can be used to optimize performance on low-end mobile devices.
 
- **Note:** This setting currently has no effect, as vertex shading is not implemented yet.
-
-<!-- rst-class:: classref-item-separator -->
-
----
-
-<div id="_class_projectsettings_property_rendering/shading/overrides/force_vertex_shading.mobile"></div>
-
-[`bool`](class_bool.md) **rendering/shading/overrides/force_vertex_shading.mobile** = ``true`` <div id="class_projectsettings_property_rendering/shading/overrides/force_vertex_shading.mobile"></div>
-
-Lower-end override for [`rendering/shading/overrides/force_vertex_shading`](class_projectsettings.md#class_projectsettings_property_rendering/shading/overrides/force_vertex_shading) on mobile devices, due to performance concerns or driver support.
-
- **Note:** This setting currently has no effect, as vertex shading is not implemented yet.
-
 <!-- rst-class:: classref-item-separator -->
 
 ---
@@ -9240,6 +9412,30 @@ If `true`, the texture importer will import lossless textures using the PNG form
 
 ---
 
+<div id="_class_projectsettings_property_rendering/textures/vram_compression/cache_gpu_compressor"></div>
+
+[`bool`](class_bool.md) **rendering/textures/vram_compression/cache_gpu_compressor** = ``true`` <div id="class_projectsettings_property_rendering/textures/vram_compression/cache_gpu_compressor"></div>
+
+If `true`, the GPU texture compressor will cache the local RenderingDevice and its resources (shaders and pipelines), allowing for faster subsequent imports at a memory cost.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_rendering/textures/vram_compression/compress_with_gpu"></div>
+
+[`bool`](class_bool.md) **rendering/textures/vram_compression/compress_with_gpu** = ``true`` <div id="class_projectsettings_property_rendering/textures/vram_compression/compress_with_gpu"></div>
+
+If `true`, the texture importer will utilize the GPU for compressing textures, improving the import time of large images.
+
+ **Note:** This only functions on a device which supports either Vulkan, D3D12, or Metal available as a rendering backend.
+
+ **Note:** Currently this only affects certain compressed formats (BC1, BC4, and BC6), all of which are exclusive to desktop platforms and consoles.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_projectsettings_property_rendering/textures/vram_compression/import_etc2_astc"></div>
 
 [`bool`](class_bool.md) **rendering/textures/vram_compression/import_etc2_astc** = ``false`` <div id="class_projectsettings_property_rendering/textures/vram_compression/import_etc2_astc"></div>
@@ -9292,7 +9488,11 @@ The default compression factor for lossless WebP. Decompression speed is mostly 
 
 [`bool`](class_bool.md) **rendering/viewport/hdr_2d** = ``false`` <div id="class_projectsettings_property_rendering/viewport/hdr_2d"></div>
 
-If `true`, enables [`Viewport.use_hdr_2d`](class_viewport.md#class_viewport_property_use_hdr_2d) on the root viewport. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow).
+If `true`, enables [`Viewport.use_hdr_2d`](class_viewport.md#class_viewport_property_use_hdr_2d) on the root viewport. 2D rendering will use an high dynamic range (HDR) format framebuffer matching the bit depth of the 3D framebuffer. When using the Forward+ renderer this will be an `RGBA16` framebuffer, while when using the Mobile renderer it will be an `RGB10_A2` framebuffer. Additionally, 2D rendering will take place in linear color space and will be converted to sRGB space immediately before blitting to the screen. Practically speaking, this means that the end result of the Viewport will not be clamped into the `0-1` range and can be used in 3D rendering without color space adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+
+ **Note:** This setting will have no effect when using the GL Compatibility renderer as the GL Compatibility renderer always renders in low dynamic range for performance reasons.
+
+ **Note:** This property is only read when the project starts. To toggle HDR 2D at runtime, set [`Viewport.use_hdr_2d`](class_viewport.md#class_viewport_property_use_hdr_2d) on the root [`Viewport`](class_viewport.md).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -9396,6 +9596,26 @@ Specify how OpenXR should blend in the environment. This is specific to certain 
 
 ---
 
+<div id="_class_projectsettings_property_xr/openxr/extensions/debug_message_types"></div>
+
+[`int`](class_int.md) **xr/openxr/extensions/debug_message_types** = ``"15"`` <div id="class_projectsettings_property_xr/openxr/extensions/debug_message_types"></div>
+
+Specifies the message types for which we request debug messages. Requires [`xr/openxr/extensions/debug_utils`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/debug_utils) to be set and the extension to be supported by the XR runtime.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_xr/openxr/extensions/debug_utils"></div>
+
+[`int`](class_int.md) **xr/openxr/extensions/debug_utils** = ``"0"`` <div id="class_projectsettings_property_xr/openxr/extensions/debug_utils"></div>
+
+Enables debug utilities on XR runtimes that supports the debug utils extension. Sets the maximum severity being reported (0 = disabled, 1 = error, 2 = warning, 3 = info, 4 = verbose).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_projectsettings_property_xr/openxr/extensions/eye_gaze_interaction"></div>
 
 [`bool`](class_bool.md) **xr/openxr/extensions/eye_gaze_interaction** = ``false`` <div id="class_projectsettings_property_xr/openxr/extensions/eye_gaze_interaction"></div>
@@ -9410,7 +9630,7 @@ Specify whether to enable eye tracking for this project. Depending on the platfo
 
 [`bool`](class_bool.md) **xr/openxr/extensions/hand_interaction_profile** = ``false`` <div id="class_projectsettings_property_xr/openxr/extensions/hand_interaction_profile"></div>
 
-If true the hand interaction profile extension will be activated if supported by the platform.
+If `true` the hand interaction profile extension will be activated if supported by the platform.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -9418,9 +9638,35 @@ If true the hand interaction profile extension will be activated if supported by
 
 <div id="_class_projectsettings_property_xr/openxr/extensions/hand_tracking"></div>
 
-[`bool`](class_bool.md) **xr/openxr/extensions/hand_tracking** = ``true`` <div id="class_projectsettings_property_xr/openxr/extensions/hand_tracking"></div>
+[`bool`](class_bool.md) **xr/openxr/extensions/hand_tracking** = ``false`` <div id="class_projectsettings_property_xr/openxr/extensions/hand_tracking"></div>
 
-If true we enable the hand tracking extension if available.
+If `true`, the hand tracking extension is enabled if available.
+
+ **Note:** By default hand tracking will only work for data sources chosen by the XR runtime. For SteamVR this is the controller inferred data source, for most other runtimes this is the unobstructed data source. There is no way to query this. If a runtime supports the OpenXR data source extension you can use the [`xr/openxr/extensions/hand_tracking_controller_data_source`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_tracking_controller_data_source) and/or [`xr/openxr/extensions/hand_tracking_unobstructed_data_source`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source) to indicate you wish to enable these data sources. If neither is selected the data source extension is not enabled and the XR runtimes default behavior persists.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_xr/openxr/extensions/hand_tracking_controller_data_source"></div>
+
+[`bool`](class_bool.md) **xr/openxr/extensions/hand_tracking_controller_data_source** = ``false`` <div id="class_projectsettings_property_xr/openxr/extensions/hand_tracking_controller_data_source"></div>
+
+If `true`, support for the controller inferred data source is requested. If supported, you will receive hand tracking data even if the user has a controller in hand, with finger positions automatically inferred from controller input and/or sensors.
+
+ **Node:** This requires the OpenXR data source extension and controller inferred handtracking to be supported by the XR runtime. If not supported this setting will be ignored. [`xr/openxr/extensions/hand_tracking`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_tracking) must be enabled for this setting to be used.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_projectsettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source"></div>
+
+[`bool`](class_bool.md) **xr/openxr/extensions/hand_tracking_unobstructed_data_source** = ``false`` <div id="class_projectsettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source"></div>
+
+If `true`, support for the unobstructed data source is requested. If supported, you will receive hand tracking data based on the actual finger positions of the user often determined by optical tracking.
+
+ **Node:** This requires the OpenXR data source extension and unobstructed handtracking to be supported by the XR runtime. If not supported this setting will be ignored. [`xr/openxr/extensions/hand_tracking`](class_projectsettings.md#class_projectsettings_property_xr/openxr/extensions/hand_tracking) must be enabled for this setting to be used.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -9524,8 +9770,6 @@ Adds a custom property info to a property. The dictionary must contain:
 
 - optionally `"hint"`: [`int`](class_int.md) (see [PropertyHint](#enum_@globalscope_propertyhint)) and `"hint_string"`: [`String`](class_string.md) 
 
- **Example:** 
-
 
 
 ```gdscript
@@ -9615,8 +9859,6 @@ Returns the order of a configuration value (influences when saved to the config 
 
 Returns the value of the setting identified by `name`. If the setting doesn't exist and `default_value` is specified, the value of `default_value` is returned. Otherwise, `null` is returned.
 
- **Example:** 
-
 
 
 ```gdscript
@@ -9649,9 +9891,7 @@ Returns the value of the setting identified by `name`. If the setting doesn't ex
 
 Similar to [`get_setting`](class_projectsettings.md#class_projectsettings_method_get_setting), but applies feature tag overrides if any exists and is valid.
 
- **Example:** 
-
-If the following setting override exists "application/config/name.windows", and the following code is executed:
+ **Example:** 	If the setting override `"application/config/name.windows"` exists, and the following code is executed on a *Windows* operating system, the overridden setting is printed instead:
 
 
 
@@ -9666,8 +9906,6 @@ If the following setting override exists "application/config/name.windows", and 
 ```
 
 
-
-Then the overridden setting will be returned instead if the project is running on the *Windows* operating system.
 
 
 
@@ -9819,8 +10057,6 @@ Sets whether a setting requires restarting the editor to properly take effect.
 `void` **set_setting** ( name: [`String`](class_string.md), value: [`Variant`](class_variant.md) )<div id="class_projectsettings_method_set_setting"></div>
 
 Sets the value of a setting.
-
- **Example:** 
 
 
 

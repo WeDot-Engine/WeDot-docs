@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorDebuggerSession.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorDebuggerSession.xml。 -->
 
 <div id="_class_editordebuggersession"></div>
 
@@ -82,7 +82,7 @@ Emitted when a remote instance is detached from this session (i.e. the session b
 
 `void` **add_session_tab** ( control: [`Control`](class_control.md) )<div id="class_editordebuggersession_method_add_session_tab"></div>
 
-Adds the given `control` to the debug session UI in the debugger bottom panel.
+Adds the given `control` to the debug session UI in the debugger bottom panel. The `control`'s node name will be used as the tab title.
 
 <!-- rst-class:: classref-item-separator -->
 

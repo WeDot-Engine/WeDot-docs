@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/modules/openxr/doc_classes/OpenXRExtensionWrapperExtension.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/modules/openxr/doc_classes/OpenXRExtensionWrapperExtension.xml。 -->
 
 <div id="_class_openxrextensionwrapperextension"></div>
 
@@ -31,6 +31,8 @@ Allows clients to implement OpenXR extensions with GDExtension.
 | `void`                                                      | [`_on_instance_created`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_instance_created) ( instance: [`int`](class_int.md) ) virtual[^virtual]                                                                                                                                   |
 | `void`                                                      | [`_on_instance_destroyed`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_instance_destroyed) ( ) virtual[^virtual]                                                                                                                                                               |
 | `void`                                                      | [`_on_main_swapchains_created`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_main_swapchains_created) ( ) virtual[^virtual]                                                                                                                                                     |
+| `void`                                                      | [`_on_post_draw_viewport`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_post_draw_viewport) ( viewport: [`RID`](class_rid.md) ) virtual[^virtual]                                                                                                                               |
+| `void`                                                      | [`_on_pre_draw_viewport`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_pre_draw_viewport) ( viewport: [`RID`](class_rid.md) ) virtual[^virtual]                                                                                                                                 |
 | `void`                                                      | [`_on_pre_render`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_pre_render) ( ) virtual[^virtual]                                                                                                                                                                               |
 | `void`                                                      | [`_on_process`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_process) ( ) virtual[^virtual]                                                                                                                                                                                     |
 | `void`                                                      | [`_on_register_metadata`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_register_metadata) ( ) virtual[^virtual]                                                                                                                                                                 |
@@ -45,6 +47,7 @@ Allows clients to implement OpenXR extensions with GDExtension.
 | `void`                                                      | [`_on_state_synchronized`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_state_synchronized) ( ) virtual[^virtual]                                                                                                                                                               |
 | `void`                                                      | [`_on_state_visible`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_state_visible) ( ) virtual[^virtual]                                                                                                                                                                         |
 | `void`                                                      | [`_on_viewport_composition_layer_destroyed`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__on_viewport_composition_layer_destroyed) ( layer: `const void*` ) virtual[^virtual]                                                                                                      |
+| [`int`](class_int.md)                                       | [`_set_android_surface_swapchain_create_info_and_get_next_pointer`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__set_android_surface_swapchain_create_info_and_get_next_pointer) ( property_values: [`Dictionary`](class_dictionary.md), next_pointer: `void*` ) virtual[^virtual] |
 | [`int`](class_int.md)                                       | [`_set_hand_joint_locations_and_get_next_pointer`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__set_hand_joint_locations_and_get_next_pointer) ( hand_index: [`int`](class_int.md), next_pointer: `void*` ) virtual[^virtual]                                                      |
 | [`int`](class_int.md)                                       | [`_set_instance_create_info_and_get_next_pointer`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__set_instance_create_info_and_get_next_pointer) ( next_pointer: `void*` ) virtual[^virtual]                                                                                         |
 | [`int`](class_int.md)                                       | [`_set_session_create_and_get_next_pointer`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__set_session_create_and_get_next_pointer) ( next_pointer: `void*` ) virtual[^virtual]                                                                                                     |
@@ -190,6 +193,28 @@ Called right after the main swapchains are (re)created.
 
 ---
 
+<div id="_class_openxrextensionwrapperextension_private_method__on_post_draw_viewport"></div>
+
+`void` **_on_post_draw_viewport** ( viewport: [`RID`](class_rid.md) ) virtual[^virtual]<div id="class_openxrextensionwrapperextension_private_method__on_post_draw_viewport"></div>
+
+Called right after the given viewport is rendered.
+
+ **Note:** The draw commands might only be queued at this point, not executed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_openxrextensionwrapperextension_private_method__on_pre_draw_viewport"></div>
+
+`void` **_on_pre_draw_viewport** ( viewport: [`RID`](class_rid.md) ) virtual[^virtual]<div id="class_openxrextensionwrapperextension_private_method__on_pre_draw_viewport"></div>
+
+Called right before the given viewport is rendered.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_openxrextensionwrapperextension_private_method__on_pre_render"></div>
 
 `void` **_on_pre_render** ( ) virtual[^virtual]<div id="class_openxrextensionwrapperextension_private_method__on_pre_render"></div>
@@ -329,6 +354,18 @@ Called when the OpenXR session state is changed to visible. This means OpenXR is
 Called when a composition layer created via [`OpenXRCompositionLayer`](class_openxrcompositionlayer.md) is destroyed.
 
  `layer` is a pointer to an `XrCompositionLayerBaseHeader` struct.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_openxrextensionwrapperextension_private_method__set_android_surface_swapchain_create_info_and_get_next_pointer"></div>
+
+[`int`](class_int.md) **_set_android_surface_swapchain_create_info_and_get_next_pointer** ( property_values: [`Dictionary`](class_dictionary.md), next_pointer: `void*` ) virtual[^virtual]<div id="class_openxrextensionwrapperextension_private_method__set_android_surface_swapchain_create_info_and_get_next_pointer"></div>
+
+Adds additional data structures to Android surface swapchains created by [`OpenXRCompositionLayer`](class_openxrcompositionlayer.md).
+
+ `property_values` contains the values of the properties returned by [`_get_viewport_composition_layer_extension_properties`](class_openxrextensionwrapperextension.md#class_openxrextensionwrapperextension_private_method__get_viewport_composition_layer_extension_properties).
 
 <!-- rst-class:: classref-item-separator -->
 

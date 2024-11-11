@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/OptimizedTranslation.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/OptimizedTranslation.xml。 -->
 
 <div id="_class_optimizedtranslation"></div>
 
@@ -32,6 +32,8 @@ An optimized translation, used by default for CSV Translations. Uses real-time c
 `void` **generate** ( from: [`Translation`](class_translation.md) )<div id="class_optimizedtranslation_method_generate"></div>
 
 Generates and sets an optimized translation from the given [`Translation`](class_translation.md) resource.
+
+ **Note:** This method is intended to be used in the editor. It does nothing when called from an exported project.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

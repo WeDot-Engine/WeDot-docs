@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/JavaScriptBridge.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/JavaScriptBridge.xml。 -->
 
 <div id="_class_javascriptbridge"></div>
 
@@ -27,6 +27,8 @@ The JavaScriptBridge singleton is implemented only in the Web export. It's used 
 | [`Variant`](class_variant.md)                   | [`eval`](class_javascriptbridge.md#class_javascriptbridge_method_eval) ( code: [`String`](class_string.md), use_global_execution_context: [`bool`](class_bool.md) = false )                                                                               |
 | `void`                                          | [`force_fs_sync`](class_javascriptbridge.md#class_javascriptbridge_method_force_fs_sync) ( )                                                                                                                                                              |
 | [`JavaScriptObject`](class_javascriptobject.md) | [`get_interface`](class_javascriptbridge.md#class_javascriptbridge_method_get_interface) ( interface: [`String`](class_string.md) )                                                                                                                       |
+| [`bool`](class_bool.md)                         | [`is_js_buffer`](class_javascriptbridge.md#class_javascriptbridge_method_is_js_buffer) ( javascript_object: [`JavaScriptObject`](class_javascriptobject.md) )                                                                                             |
+| [`PackedByteArray`](class_packedbytearray.md)   | [`js_buffer_to_packed_byte_array`](class_javascriptbridge.md#class_javascriptbridge_method_js_buffer_to_packed_byte_array) ( javascript_buffer: [`JavaScriptObject`](class_javascriptobject.md) )                                                         |
 | [`bool`](class_bool.md)                         | [`pwa_needs_update`](class_javascriptbridge.md#class_javascriptbridge_method_pwa_needs_update) ( ) const[^const]                                                                                                                                          |
 | [Error](#enum_@globalscope_error)               | [`pwa_update`](class_javascriptbridge.md#class_javascriptbridge_method_pwa_update) ( )                                                                                                                                                                    |
 
@@ -113,6 +115,26 @@ Force synchronization of the persistent file system (when enabled).
 [`JavaScriptObject`](class_javascriptobject.md) **get_interface** ( interface: [`String`](class_string.md) )<div id="class_javascriptbridge_method_get_interface"></div>
 
 Returns an interface to a JavaScript object that can be used by scripts. The `interface` must be a valid property of the JavaScript `window`. The callback must accept a single [`Array`](class_array.md) argument, which will contain the JavaScript `arguments`. See [`JavaScriptObject`](class_javascriptobject.md) for usage.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_javascriptbridge_method_is_js_buffer"></div>
+
+[`bool`](class_bool.md) **is_js_buffer** ( javascript_object: [`JavaScriptObject`](class_javascriptobject.md) )<div id="class_javascriptbridge_method_is_js_buffer"></div>
+
+Returns `true` if the given `javascript_object` is of type [*[code]ArrayBuffer[/code]*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer), [*[code]DataView[/code]*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView), or one of the many [*typed array objects*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_javascriptbridge_method_js_buffer_to_packed_byte_array"></div>
+
+[`PackedByteArray`](class_packedbytearray.md) **js_buffer_to_packed_byte_array** ( javascript_buffer: [`JavaScriptObject`](class_javascriptobject.md) )<div id="class_javascriptbridge_method_js_buffer_to_packed_byte_array"></div>
+
+Returns a copy of `javascript_buffer`'s contents as a [`PackedByteArray`](class_packedbytearray.md). See also [`is_js_buffer`](class_javascriptbridge.md#class_javascriptbridge_method_is_js_buffer).
 
 <!-- rst-class:: classref-item-separator -->
 

@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/EditorPlugin.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/EditorPlugin.xml。 -->
 
 <div id="_class_editorplugin"></div>
 
@@ -46,11 +46,13 @@ Plugins are used by the editor to extend functionality. The most common types of
 | `void`                                                    | [`_set_state`](class_editorplugin.md#class_editorplugin_private_method__set_state) ( state: [`Dictionary`](class_dictionary.md) ) virtual[^virtual]                                                                                                                  |
 | `void`                                                    | [`_set_window_layout`](class_editorplugin.md#class_editorplugin_private_method__set_window_layout) ( configuration: [`ConfigFile`](class_configfile.md) ) virtual[^virtual]                                                                                          |
 | `void`                                                    | [`add_autoload_singleton`](class_editorplugin.md#class_editorplugin_method_add_autoload_singleton) ( name: [`String`](class_string.md), path: [`String`](class_string.md) )                                                                                          |
+| `void`                                                    | [`add_context_menu_plugin`](class_editorplugin.md#class_editorplugin_method_add_context_menu_plugin) ( slot: [ContextMenuSlot](#enum_editorcontextmenuplugin_contextmenuslot), plugin: [`EditorContextMenuPlugin`](class_editorcontextmenuplugin.md) )               |
 | [`Button`](class_button.md)                               | [`add_control_to_bottom_panel`](class_editorplugin.md#class_editorplugin_method_add_control_to_bottom_panel) ( control: [`Control`](class_control.md), title: [`String`](class_string.md), shortcut: [`Shortcut`](class_shortcut.md) = null )                        |
 | `void`                                                    | [`add_control_to_container`](class_editorplugin.md#class_editorplugin_method_add_control_to_container) ( container: [CustomControlContainer](#enum_editorplugin_customcontrolcontainer), control: [`Control`](class_control.md) )                                    |
 | `void`                                                    | [`add_control_to_dock`](class_editorplugin.md#class_editorplugin_method_add_control_to_dock) ( slot: [DockSlot](#enum_editorplugin_dockslot), control: [`Control`](class_control.md), shortcut: [`Shortcut`](class_shortcut.md) = null )                             |
 | `void`                                                    | [`add_custom_type`](class_editorplugin.md#class_editorplugin_method_add_custom_type) ( type: [`String`](class_string.md), base: [`String`](class_string.md), script: [`Script`](class_script.md), icon: [`Texture2D`](class_texture2d.md) )                          |
 | `void`                                                    | [`add_debugger_plugin`](class_editorplugin.md#class_editorplugin_method_add_debugger_plugin) ( script: [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) )                                                                                                     |
+| `void`                                                    | [`add_export_platform`](class_editorplugin.md#class_editorplugin_method_add_export_platform) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md) )                                                                                                   |
 | `void`                                                    | [`add_export_plugin`](class_editorplugin.md#class_editorplugin_method_add_export_plugin) ( plugin: [`EditorExportPlugin`](class_editorexportplugin.md) )                                                                                                             |
 | `void`                                                    | [`add_import_plugin`](class_editorplugin.md#class_editorplugin_method_add_import_plugin) ( importer: [`EditorImportPlugin`](class_editorimportplugin.md), first_priority: [`bool`](class_bool.md) = false )                                                          |
 | `void`                                                    | [`add_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_add_inspector_plugin) ( plugin: [`EditorInspectorPlugin`](class_editorinspectorplugin.md) )                                                                                                 |
@@ -71,11 +73,13 @@ Plugins are used by the editor to extend functionality. The most common types of
 | `void`                                                    | [`make_bottom_panel_item_visible`](class_editorplugin.md#class_editorplugin_method_make_bottom_panel_item_visible) ( item: [`Control`](class_control.md) )                                                                                                           |
 | `void`                                                    | [`queue_save_layout`](class_editorplugin.md#class_editorplugin_method_queue_save_layout) ( )                                                                                                                                                                         |
 | `void`                                                    | [`remove_autoload_singleton`](class_editorplugin.md#class_editorplugin_method_remove_autoload_singleton) ( name: [`String`](class_string.md) )                                                                                                                       |
+| `void`                                                    | [`remove_context_menu_plugin`](class_editorplugin.md#class_editorplugin_method_remove_context_menu_plugin) ( plugin: [`EditorContextMenuPlugin`](class_editorcontextmenuplugin.md) )                                                                                 |
 | `void`                                                    | [`remove_control_from_bottom_panel`](class_editorplugin.md#class_editorplugin_method_remove_control_from_bottom_panel) ( control: [`Control`](class_control.md) )                                                                                                    |
 | `void`                                                    | [`remove_control_from_container`](class_editorplugin.md#class_editorplugin_method_remove_control_from_container) ( container: [CustomControlContainer](#enum_editorplugin_customcontrolcontainer), control: [`Control`](class_control.md) )                          |
 | `void`                                                    | [`remove_control_from_docks`](class_editorplugin.md#class_editorplugin_method_remove_control_from_docks) ( control: [`Control`](class_control.md) )                                                                                                                  |
 | `void`                                                    | [`remove_custom_type`](class_editorplugin.md#class_editorplugin_method_remove_custom_type) ( type: [`String`](class_string.md) )                                                                                                                                     |
 | `void`                                                    | [`remove_debugger_plugin`](class_editorplugin.md#class_editorplugin_method_remove_debugger_plugin) ( script: [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) )                                                                                               |
+| `void`                                                    | [`remove_export_platform`](class_editorplugin.md#class_editorplugin_method_remove_export_platform) ( platform: [`EditorExportPlatform`](class_editorexportplatform.md) )                                                                                             |
 | `void`                                                    | [`remove_export_plugin`](class_editorplugin.md#class_editorplugin_method_remove_export_plugin) ( plugin: [`EditorExportPlugin`](class_editorexportplugin.md) )                                                                                                       |
 | `void`                                                    | [`remove_import_plugin`](class_editorplugin.md#class_editorplugin_method_remove_import_plugin) ( importer: [`EditorImportPlugin`](class_editorimportplugin.md) )                                                                                                     |
 | `void`                                                    | [`remove_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_remove_inspector_plugin) ( plugin: [`EditorInspectorPlugin`](class_editorinspectorplugin.md) )                                                                                           |
@@ -467,8 +471,6 @@ You need to enable calling of this method by using [`set_force_draw_over_forward
 
 Called when there is a root node in the current edited scene, [`_handles`](class_editorplugin.md#class_editorplugin_private_method__handles) is implemented, and an [`InputEvent`](class_inputevent.md) happens in the 3D viewport. The return value decides whether the [`InputEvent`](class_inputevent.md) is consumed or forwarded to other **EditorPlugin** s. See [AfterGUIInput](#enum_editorplugin_afterguiinput) for options.
 
- **Example:** 
-
 
 
 ```gdscript
@@ -489,9 +491,7 @@ Called when there is a root node in the current edited scene, [`_handles`](class
 
 
 
-Must `return EditorPlugin.AFTER_GUI_INPUT_PASS` in order to forward the [`InputEvent`](class_inputevent.md) to other Editor classes.
-
- **Example:** 
+This method must return [`AFTER_GUI_INPUT_PASS`](class_editorplugin.md#class_editorplugin_constant_after_gui_input_pass) in order to forward the [`InputEvent`](class_inputevent.md) to other Editor classes.
 
 
 
@@ -593,9 +593,7 @@ You need to enable calling of this method by using [`set_force_draw_over_forward
 
 [`bool`](class_bool.md) **_forward_canvas_gui_input** ( event: [`InputEvent`](class_inputevent.md) ) virtual[^virtual]<div id="class_editorplugin_private_method__forward_canvas_gui_input"></div>
 
-Called when there is a root node in the current edited scene, [`_handles`](class_editorplugin.md#class_editorplugin_private_method__handles) is implemented and an [`InputEvent`](class_inputevent.md) happens in the 2D viewport. Intercepts the [`InputEvent`](class_inputevent.md), if `return true` **EditorPlugin** consumes the `event`, otherwise forwards `event` to other Editor classes.
-
- **Example:** 
+Called when there is a root node in the current edited scene, [`_handles`](class_editorplugin.md#class_editorplugin_private_method__handles) is implemented, and an [`InputEvent`](class_inputevent.md) happens in the 2D viewport. If this method returns `true`, `event` is intercepted by this **EditorPlugin**, otherwise `event` is forwarded to other Editor classes.
 
 
 
@@ -617,9 +615,7 @@ Called when there is a root node in the current edited scene, [`_handles`](class
 
 
 
-Must `return false` in order to forward the [`InputEvent`](class_inputevent.md) to other Editor classes.
-
- **Example:** 
+This method must return `false` in order to forward the [`InputEvent`](class_inputevent.md) to other Editor classes.
 
 
 
@@ -933,6 +929,18 @@ Adds a script at `path` to the Autoload list as `name`.
 
 ---
 
+<div id="_class_editorplugin_method_add_context_menu_plugin"></div>
+
+`void` **add_context_menu_plugin** ( slot: [ContextMenuSlot](#enum_editorcontextmenuplugin_contextmenuslot), plugin: [`EditorContextMenuPlugin`](class_editorcontextmenuplugin.md) )<div id="class_editorplugin_method_add_context_menu_plugin"></div>
+
+Adds a plugin to the context menu. `slot` is the context menu where the plugin will be added.
+
+See [ContextMenuSlot](#enum_editorcontextmenuplugin_contextmenuslot) for available context menus. A plugin instance can belong only to a single context menu slot.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorplugin_method_add_control_to_bottom_panel"></div>
 
 [`Button`](class_button.md) **add_control_to_bottom_panel** ( control: [`Control`](class_control.md), title: [`String`](class_string.md), shortcut: [`Shortcut`](class_shortcut.md) = null )<div id="class_editorplugin_method_add_control_to_bottom_panel"></div>
@@ -1000,6 +1008,16 @@ During run-time, this will be a simple object with a script so this function doe
 `void` **add_debugger_plugin** ( script: [`EditorDebuggerPlugin`](class_editordebuggerplugin.md) )<div id="class_editorplugin_method_add_debugger_plugin"></div>
 
 Adds a [`Script`](class_script.md) as debugger plugin to the Debugger. The script must extend [`EditorDebuggerPlugin`](class_editordebuggerplugin.md).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorplugin_method_add_export_platform"></div>
+
+`void` **add_export_platform** ( platform: [`EditorExportPlatform`](class_editorexportplatform.md) )<div id="class_editorplugin_method_add_export_platform"></div>
+
+Registers a new [`EditorExportPlatform`](class_editorexportplatform.md). Export platforms provides functionality of exporting to the specific platform.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1249,6 +1267,16 @@ Removes an Autoload `name` from the list.
 
 ---
 
+<div id="_class_editorplugin_method_remove_context_menu_plugin"></div>
+
+`void` **remove_context_menu_plugin** ( plugin: [`EditorContextMenuPlugin`](class_editorcontextmenuplugin.md) )<div id="class_editorplugin_method_remove_context_menu_plugin"></div>
+
+Removes the specified context menu plugin.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorplugin_method_remove_control_from_bottom_panel"></div>
 
 `void` **remove_control_from_bottom_panel** ( control: [`Control`](class_control.md) )<div id="class_editorplugin_method_remove_control_from_bottom_panel"></div>
@@ -1299,6 +1327,16 @@ Removes the debugger plugin with given script from the Debugger.
 
 ---
 
+<div id="_class_editorplugin_method_remove_export_platform"></div>
+
+`void` **remove_export_platform** ( platform: [`EditorExportPlatform`](class_editorexportplatform.md) )<div id="class_editorplugin_method_remove_export_platform"></div>
+
+Removes an export platform registered by [`add_export_platform`](class_editorplugin.md#class_editorplugin_method_add_export_platform).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_editorplugin_method_remove_export_plugin"></div>
 
 `void` **remove_export_plugin** ( plugin: [`EditorExportPlugin`](class_editorexportplugin.md) )<div id="class_editorplugin_method_remove_export_plugin"></div>
@@ -1323,7 +1361,7 @@ Removes an import plugin registered by [`add_import_plugin`](class_editorplugin.
 
 `void` **remove_inspector_plugin** ( plugin: [`EditorInspectorPlugin`](class_editorinspectorplugin.md) )<div id="class_editorplugin_method_remove_inspector_plugin"></div>
 
-Removes an inspector plugin registered by [`add_import_plugin`](class_editorplugin.md#class_editorplugin_method_add_import_plugin)
+Removes an inspector plugin registered by [`add_inspector_plugin`](class_editorplugin.md#class_editorplugin_method_add_inspector_plugin).
 
 <!-- rst-class:: classref-item-separator -->
 

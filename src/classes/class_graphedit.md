@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/GraphEdit.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/GraphEdit.xml。 -->
 
 <div id="_class_graphedit"></div>
 
@@ -181,6 +181,16 @@ Emitted when user drags a connection from an output port into the empty space of
 **copy_nodes_request** ( ) <div id="class_graphedit_signal_copy_nodes_request"></div>
 
 Emitted when this **GraphEdit** captures a `ui_copy` action (<i class="fa fa-gamepad"></i>`Ctrl + C` by default). In general, this signal indicates that the selected [`GraphElement`](class_graphelement.md) s should be copied.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_class_graphedit_signal_cut_nodes_request"></div>
+
+**cut_nodes_request** ( ) <div id="class_graphedit_signal_cut_nodes_request"></div>
+
+Emitted when this **GraphEdit** captures a `ui_cut` action (<i class="fa fa-gamepad"></i>`Ctrl + X` by default). In general, this signal indicates that the selected [`GraphElement`](class_graphelement.md) s should be cut.
 
 <!-- rst-class:: classref-item-separator -->
 

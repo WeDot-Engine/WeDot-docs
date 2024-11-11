@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/TextEdit.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/TextEdit.xml。 -->
 
 <div id="_class_textedit"></div>
 
@@ -42,6 +42,7 @@ A multiline text editor. It also has limited facilities for editing code, such a
 | [`bool`](class_bool.md)                                       | [`draw_spaces`](class_textedit.md#class_textedit_property_draw_spaces)                                                     | ``false``                                                                                         |
 | [`bool`](class_bool.md)                                       | [`draw_tabs`](class_textedit.md#class_textedit_property_draw_tabs)                                                         | ``false``                                                                                         |
 | [`bool`](class_bool.md)                                       | [`editable`](class_textedit.md#class_textedit_property_editable)                                                           | ``true``                                                                                          |
+| [`bool`](class_bool.md)                                       | [`empty_selection_clipboard_enabled`](class_textedit.md#class_textedit_property_empty_selection_clipboard_enabled)         | ``true``                                                                                          |
 | [FocusMode](#enum_control_focusmode)                          | focus_mode                                                                                                                 | ``2`` (overrides [`Control`](class_control.md#class_control_property_focus_mode))                 |
 | [`bool`](class_bool.md)                                       | [`highlight_all_occurrences`](class_textedit.md#class_textedit_property_highlight_all_occurrences)                         | ``false``                                                                                         |
 | [`bool`](class_bool.md)                                       | [`highlight_current_line`](class_textedit.md#class_textedit_property_highlight_current_line)                               | ``false``                                                                                         |
@@ -53,6 +54,7 @@ A multiline text editor. It also has limited facilities for editing code, such a
 | [CursorShape](#enum_control_cursorshape)                      | mouse_default_cursor_shape                                                                                                 | ``1`` (overrides [`Control`](class_control.md#class_control_property_mouse_default_cursor_shape)) |
 | [`String`](class_string.md)                                   | [`placeholder_text`](class_textedit.md#class_textedit_property_placeholder_text)                                           | ``""``                                                                                            |
 | [`bool`](class_bool.md)                                       | [`scroll_fit_content_height`](class_textedit.md#class_textedit_property_scroll_fit_content_height)                         | ``false``                                                                                         |
+| [`bool`](class_bool.md)                                       | [`scroll_fit_content_width`](class_textedit.md#class_textedit_property_scroll_fit_content_width)                           | ``false``                                                                                         |
 | [`int`](class_int.md)                                         | [`scroll_horizontal`](class_textedit.md#class_textedit_property_scroll_horizontal)                                         | ``0``                                                                                             |
 | [`bool`](class_bool.md)                                       | [`scroll_past_end_of_file`](class_textedit.md#class_textedit_property_scroll_past_end_of_file)                             | ``false``                                                                                         |
 | [`bool`](class_bool.md)                                       | [`scroll_smooth`](class_textedit.md#class_textedit_property_scroll_smooth)                                                 | ``false``                                                                                         |
@@ -910,6 +912,19 @@ If `false`, existing text cannot be modified and new text cannot be added.
 
 ---
 
+<div id="_class_textedit_property_empty_selection_clipboard_enabled"></div>
+
+[`bool`](class_bool.md) **empty_selection_clipboard_enabled** = ``true`` <div id="class_textedit_property_empty_selection_clipboard_enabled"></div>
+
+- `void` **set_empty_selection_clipboard_enabled** ( value: [`bool`](class_bool.md) )
+- [`bool`](class_bool.md) **is_empty_selection_clipboard_enabled** ( )
+
+If `true`, copying or cutting without a selection is performed on all lines with a caret. Otherwise, copy and cut require a selection.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
 <div id="_class_textedit_property_highlight_all_occurrences"></div>
 
 [`bool`](class_bool.md) **highlight_all_occurrences** = ``false`` <div id="class_textedit_property_highlight_all_occurrences"></div>
@@ -1023,7 +1038,20 @@ Text shown when the **TextEdit** is empty. It is **not** the **TextEdit**'s defa
 - `void` **set_fit_content_height_enabled** ( value: [`bool`](class_bool.md) )
 - [`bool`](class_bool.md) **is_fit_content_height_enabled** ( )
 
-If `true`, **TextEdit** will disable vertical scroll and fit minimum height to the number of visible lines.
+If `true`, **TextEdit** will disable vertical scroll and fit minimum height to the number of visible lines. When both this property and [`scroll_fit_content_width`](class_textedit.md#class_textedit_property_scroll_fit_content_width) are `true`, no scrollbars will be displayed.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_textedit_property_scroll_fit_content_width"></div>
+
+[`bool`](class_bool.md) **scroll_fit_content_width** = ``false`` <div id="class_textedit_property_scroll_fit_content_width"></div>
+
+- `void` **set_fit_content_width_enabled** ( value: [`bool`](class_bool.md) )
+- [`bool`](class_bool.md) **is_fit_content_width_enabled** ( )
+
+If `true`, **TextEdit** will disable horizontal scroll and fit minimum width to the widest line in the text. When both this property and [`scroll_fit_content_height`](class_textedit.md#class_textedit_property_scroll_fit_content_height) are `true`, no scrollbars will be displayed.
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -1155,7 +1183,9 @@ Set additional options for BiDi override.
 - `void` **set_syntax_highlighter** ( value: [`SyntaxHighlighter`](class_syntaxhighlighter.md) )
 - [`SyntaxHighlighter`](class_syntaxhighlighter.md) **get_syntax_highlighter** ( )
 
-Sets the [`SyntaxHighlighter`](class_syntaxhighlighter.md) to use.
+The syntax highlighter to use.
+
+ **Note:** A [`SyntaxHighlighter`](class_syntaxhighlighter.md) instance should not be used across multiple **TextEdit** nodes.
 
 <!-- rst-class:: classref-item-separator -->
 

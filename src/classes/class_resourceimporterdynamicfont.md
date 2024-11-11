@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/ResourceImporterDynamicFont.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/ResourceImporterDynamicFont.xml。 -->
 
 <div id="_class_resourceimporterdynamicfont"></div>
 
@@ -39,7 +39,7 @@ See also [`ResourceImporterBMFont`](class_resourceimporterbmfont.md) and [`Resou
 | [`float`](class_float.md)           | [`oversampling`](class_resourceimporterdynamicfont.md#class_resourceimporterdynamicfont_property_oversampling)                                             | ``0.0``   |
 | [`Array`](class_array.md)           | [`preload`](class_resourceimporterdynamicfont.md#class_resourceimporterdynamicfont_property_preload)                                                       | ``[]``    |
 | [`Dictionary`](class_dictionary.md) | [`script_support`](class_resourceimporterdynamicfont.md#class_resourceimporterdynamicfont_property_script_support)                                         | ``{}``    |
-| [`int`](class_int.md)               | [`subpixel_positioning`](class_resourceimporterdynamicfont.md#class_resourceimporterdynamicfont_property_subpixel_positioning)                             | ``1``     |
+| [`int`](class_int.md)               | [`subpixel_positioning`](class_resourceimporterdynamicfont.md#class_resourceimporterdynamicfont_property_subpixel_positioning)                             | ``4``     |
 
 <!-- rst-class:: classref-section-separator -->
 
@@ -177,7 +177,7 @@ Source font size used to generate MSDF textures. Higher values allow for more pr
 
 [`bool`](class_bool.md) **multichannel_signed_distance_field** = ``false`` <div id="class_resourceimporterdynamicfont_property_multichannel_signed_distance_field"></div>
 
-If set to `true`, the default font will use multichannel signed distance field (MSDF) for crisp rendering at any size. Since this approach does not rely on rasterizing the font every time its size changes, this allows for resizing the font in real-time without any performance penalty. Text will also not look grainy for [`Control`](class_control.md) s that are scaled down (or for [`Label3D`](class_label3d.md) s viewed from a long distance).
+If set to `true`, the font will use multichannel signed distance field (MSDF) for crisp rendering at any size. Since this approach does not rely on rasterizing the font every time its size changes, this allows for resizing the font in real-time without any performance penalty. Text will also not look grainy for [`Control`](class_control.md) s that are scaled down (or for [`Label3D`](class_label3d.md) s viewed from a long distance).
 
 MSDF font rendering can be combined with [`generate_mipmaps`](class_resourceimporterdynamicfont.md#class_resourceimporterdynamicfont_property_generate_mipmaps) to further improve font rendering quality when scaled down.
 
@@ -227,7 +227,7 @@ Override the list of language scripts supported by this font. If left empty, thi
 
 <div id="_class_resourceimporterdynamicfont_property_subpixel_positioning"></div>
 
-[`int`](class_int.md) **subpixel_positioning** = ``1`` <div id="class_resourceimporterdynamicfont_property_subpixel_positioning"></div>
+[`int`](class_int.md) **subpixel_positioning** = ``4`` <div id="class_resourceimporterdynamicfont_property_subpixel_positioning"></div>
 
 Subpixel positioning improves font rendering appearance, especially at smaller font sizes. The downside is that it takes more time to initially render the font, which can cause stuttering during gameplay, especially if used with large font sizes. This should be set to **Disabled** for fonts with a pixel art appearance.
 
@@ -238,6 +238,8 @@ Subpixel positioning improves font rendering appearance, especially at smaller f
  **One Half of a Pixel:** Always perform intermediate subpixel positioning regardless of font size. High quality, slow rendering.
 
  **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
+
+ **Auto (Except Pixel Fonts):** **Disabled** for the pixel style fonts (each glyph contours contain only straight horizontal and vertical lines), **Auto** for the other fonts.
 
 [^virtual]: 本方法通常需要用户覆盖才能生效。
 [^const]: 本方法无副作用，不会修改该实例的任何成员变量。

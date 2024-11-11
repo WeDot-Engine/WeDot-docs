@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/platform/macos/doc_classes/EditorExportPlatformMacOS.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/platform/macos/doc_classes/EditorExportPlatformMacOS.xml。 -->
 
 <div id="_class_editorexportplatformmacos"></div>
 
@@ -23,7 +23,8 @@ Exporter for macOS.
 | [`int`](class_int.md)                             | [`application/export_angle`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/export_angle)                                                                                     |
 | [`String`](class_string.md)                       | [`application/icon`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/icon)                                                                                                     |
 | [`int`](class_int.md)                             | [`application/icon_interpolation`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/icon_interpolation)                                                                         |
-| [`String`](class_string.md)                       | [`application/min_macos_version`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/min_macos_version)                                                                           |
+| [`String`](class_string.md)                       | [`application/min_macos_version_arm64`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/min_macos_version_arm64)                                                               |
+| [`String`](class_string.md)                       | [`application/min_macos_version_x86_64`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/min_macos_version_x86_64)                                                             |
 | [`String`](class_string.md)                       | [`application/short_version`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/short_version)                                                                                   |
 | [`String`](class_string.md)                       | [`application/signature`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/signature)                                                                                           |
 | [`String`](class_string.md)                       | [`application/version`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_application/version)                                                                                               |
@@ -33,6 +34,7 @@ Exporter for macOS.
 | [`String`](class_string.md)                       | [`codesign/certificate_password`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_codesign/certificate_password)                                                                           |
 | [`int`](class_int.md)                             | [`codesign/codesign`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_codesign/codesign)                                                                                                   |
 | [`PackedStringArray`](class_packedstringarray.md) | [`codesign/custom_options`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_codesign/custom_options)                                                                                       |
+| [`String`](class_string.md)                       | [`codesign/entitlements/additional`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_codesign/entitlements/additional)                                                                     |
 | [`bool`](class_bool.md)                           | [`codesign/entitlements/address_book`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_codesign/entitlements/address_book)                                                                 |
 | [`bool`](class_bool.md)                           | [`codesign/entitlements/allow_dyld_environment_variables`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_codesign/entitlements/allow_dyld_environment_variables)                         |
 | [`bool`](class_bool.md)                           | [`codesign/entitlements/allow_jit_code_execution`](class_editorexportplatformmacos.md#class_editorexportplatformmacos_property_codesign/entitlements/allow_jit_code_execution)                                         |
@@ -343,11 +345,21 @@ Interpolation method used to resize application icon.
 
 ---
 
-<div id="_class_editorexportplatformmacos_property_application/min_macos_version"></div>
+<div id="_class_editorexportplatformmacos_property_application/min_macos_version_arm64"></div>
 
-[`String`](class_string.md) **application/min_macos_version** <div id="class_editorexportplatformmacos_property_application/min_macos_version"></div>
+[`String`](class_string.md) **application/min_macos_version_arm64** <div id="class_editorexportplatformmacos_property_application/min_macos_version_arm64"></div>
 
-Minimum version of macOS required for this application to run in the `major.minor.patch` or `major.minor` format, can only contain numeric characters (`0-9`) and periods (`.`).
+Minimum version of macOS required for this application to run on Apple Silicon Macs, in the `major.minor.patch` or `major.minor` format, can only contain numeric characters (`0-9`) and periods (`.`).
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformmacos_property_application/min_macos_version_x86_64"></div>
+
+[`String`](class_string.md) **application/min_macos_version_x86_64** <div id="class_editorexportplatformmacos_property_application/min_macos_version_x86_64"></div>
+
+Minimum version of macOS required for this application to run on Intel Macs, in the `major.minor.patch` or `major.minor` format, can only contain numeric characters (`0-9`) and periods (`.`).
 
 <!-- rst-class:: classref-item-separator -->
 
@@ -448,6 +460,24 @@ Tool to use for code signing.
 Array of the additional command line arguments passed to the code signing tool.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See [`PackedStringArray`](class_packedstringarray.md) for more details.
+
+<!-- rst-class:: classref-item-separator -->
+
+---
+
+<div id="_class_editorexportplatformmacos_property_codesign/entitlements/additional"></div>
+
+[`String`](class_string.md) **codesign/entitlements/additional** <div id="class_editorexportplatformmacos_property_codesign/entitlements/additional"></div>
+
+Additional data added to the root `<dict>` section of the [*.entitlements*](https://developer.apple.com/documentation/bundleresources/entitlements) file. The value should be an XML section with pairs of key-value elements, e.g.:
+
+```text
+
+    <key>key_name</key>
+    <string>value</string>
+```
+
+
 
 <!-- rst-class:: classref-item-separator -->
 

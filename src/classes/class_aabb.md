@@ -1,7 +1,7 @@
 <!-- ⚠ 请勿编辑本文件 ⚠ -->
 <!-- 本文档使用脚本从 WeDot 引擎源码仓库生成。 -->
-<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/tools/make_md.py； -->
-<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/4.3/doc/classes/AABB.xml。 -->
+<!-- 生成脚本：https://github.com/WeDot-Engine/WeDot/tree/master/doc/tools/make_md.py； -->
+<!-- 原文件：https://github.com/WeDot-Engine/WeDot/tree/master/doc/classes/AABB.xml。 -->
 
 <div id="_class_aabb"></div>
 
@@ -52,7 +52,7 @@ It uses floating-point coordinates. The 2D counterpart to **AABB** is [`Rect2`](
 | [`Vector3`](class_vector3.md) | [`get_shortest_axis`](class_aabb.md#class_aabb_method_get_shortest_axis) ( ) const[^const]                                                                          |
 | [`int`](class_int.md)         | [`get_shortest_axis_index`](class_aabb.md#class_aabb_method_get_shortest_axis_index) ( ) const[^const]                                                              |
 | [`float`](class_float.md)     | [`get_shortest_axis_size`](class_aabb.md#class_aabb_method_get_shortest_axis_size) ( ) const[^const]                                                                |
-| [`Vector3`](class_vector3.md) | [`get_support`](class_aabb.md#class_aabb_method_get_support) ( dir: [`Vector3`](class_vector3.md) ) const[^const]                                                   |
+| [`Vector3`](class_vector3.md) | [`get_support`](class_aabb.md#class_aabb_method_get_support) ( direction: [`Vector3`](class_vector3.md) ) const[^const]                                             |
 | [`float`](class_float.md)     | [`get_volume`](class_aabb.md#class_aabb_method_get_volume) ( ) const[^const]                                                                                        |
 | [`AABB`](class_aabb.md)       | [`grow`](class_aabb.md#class_aabb_method_grow) ( by: [`float`](class_float.md) ) const[^const]                                                                      |
 | [`bool`](class_bool.md)       | [`has_point`](class_aabb.md#class_aabb_method_has_point) ( point: [`Vector3`](class_vector3.md) ) const[^const]                                                     |
@@ -409,7 +409,7 @@ For an example, see [`get_shortest_axis`](class_aabb.md#class_aabb_method_get_sh
 
 <div id="_class_aabb_method_get_support"></div>
 
-[`Vector3`](class_vector3.md) **get_support** ( dir: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_aabb_method_get_support"></div>
+[`Vector3`](class_vector3.md) **get_support** ( direction: [`Vector3`](class_vector3.md) ) const[^const]<div id="class_aabb_method_get_support"></div>
 
 Returns the vertex's position of this bounding box that's the farthest in the given direction. This point is commonly known as the support point in collision detection algorithms.
 
