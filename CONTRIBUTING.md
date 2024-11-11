@@ -27,7 +27,7 @@
 
 1. 确保您已安装 [mdbook](https://github.com/rust-lang/mdBook)；
 2. Fork 此仓库，对文档或代码进行更改，并检查语法是否存在任何问题；
-3. 将 `/book.toml` 文件中的 `{site.url}` 替换为 `main`；
+3. 将 `/book.toml` 文件中的 `{site.url}` 替换为 `latest`；
 4. 在仓库下执行 `mdbook build && mdbook test`、`mdbook serve` 命令，检查生成的 HTML 是否存在任何问题；
 5. 将更改推送到您的分支，并向我们的仓库提交拉取请求；
 6. 我们将定期审查拉取请求，并告知您我们的问题以及在合并您的拉取请求之前需要进行的任何更改；
