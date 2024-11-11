@@ -35,6 +35,6 @@ copyable = true
 [preprocessor.links]
 
 [output.html.search]
-heading-split-level = 0  # 将结果链接到标题级别，默认 3
-teaser-word-count = 10   # 用于搜索结果摘要的字数，默认 30
-limit-results = 15       # 最大搜索结果数，默认 30
+heading-split-level = 4  # 将结果链接到标题级别，默认 3
+teaser-word-count = 30   # 用于搜索结果摘要的字数，默认 30
+limit-results = 30       # 最大搜索结果数，默认 30
