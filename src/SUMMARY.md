@@ -1047,3 +1047,13 @@
   - [Vector4i](classes/class_vector4i.md)
 
 <!-- 类结束 -->
+
+# 贡献
+
+- [如何贡献](contributing/index.md)
+  - [工作流](contributing/workflow/index.md)
+    - [代码贡献](code_contribution.md)
+    - [测试并报告问题](testing_and_reporting.md)
+    - [文档贡献](documentation_contribution.md)
+    - [翻译贡献](translation_contribution.md)
+    - [定位回归](bisecting_regressions.md)
