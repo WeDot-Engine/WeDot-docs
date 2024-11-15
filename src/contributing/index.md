@@ -8,10 +8,10 @@ WeDot 是一个免费、开源的引擎。WeDot 引擎之下的所有项目都�
 - **社区管理**：
   帮忙公布 WeDot 最新动态，管理群组和 Discord 服务器，主持社区活动。
   
-  请联系我们，加入我们的 [Discord](https://discord.com/invite/MRssAz6Pe3) 或 [QQ 群组](https://qm.qq.com/cgi-bin/qm/qr?authKey=G%2BR%2FKlLQBeH71b1Mhe4t2gM%2B8rLXndOEPhPtDgWgTudLUtGUgpMrNAWD87x%2F64ta&k=IPTGQ3zH_W8IAzaFrnLLGF2kplhv-EeM&noverify=0&group_code=670915303)。
+  请联系我们，加入我们的 [Discord](https://discord.com/invite/MDDHEQNJaY) 或 [QQ 群组](https://qm.qq.com/cgi-bin/qm/qr?authKey=G%2BR%2FKlLQBeH71b1Mhe4t2gM%2B8rLXndOEPhPtDgWgTudLUtGUgpMrNAWD87x%2F64ta&k=IPTGQ3zH_W8IAzaFrnLLGF2kplhv-EeM&noverify=0&group_code=670915303)。
 - **技术问答**：
   提供技术支持，解答开发者在使用 WeDot 过程中遇到的技术问题，促进知识分享和交流。
-  寻求答案的灵魂遍布 [Discord](https://discord.com/invite/MRssAz6Pe3)、[QQ 群组](https://qm.qq.com/cgi-bin/qm/qr?authKey=G%2BR%2FKlLQBeH71b1Mhe4t2gM%2B8rLXndOEPhPtDgWgTudLUtGUgpMrNAWD87x%2F64ta&k=IPTGQ3zH_W8IAzaFrnLLGF2kplhv-EeM&noverify=0&group_code=670915303)和 [Github issues](https://github.com/WeDot-Engine/WeDot/issues)，等待您的指引。
+  寻求答案的灵魂遍布 [Discord](https://discord.com/invite/MDDHEQNJaY)、[QQ 群组](https://qm.qq.com/cgi-bin/qm/qr?authKey=G%2BR%2FKlLQBeH71b1Mhe4t2gM%2B8rLXndOEPhPtDgWgTudLUtGUgpMrNAWD87x%2F64ta&k=IPTGQ3zH_W8IAzaFrnLLGF2kplhv-EeM&noverify=0&group_code=670915303)和 [Github issues](https://github.com/WeDot-Engine/WeDot/issues)，等待您的指引。
 - **文档教程**：
   编写和维护详细的文档和教程，帮助新用户快速上手 WeDot，同时为高级用户提供进阶指导。
   详见[《编写文档》](documentation/index.md)。
@@ -22,7 +22,7 @@ WeDot 是一个免费、开源的引擎。WeDot 引擎之下的所有项目都�
   如果您发现了错误或其他问题，甚至是潜在的危险、漏洞等；莫犹豫，请立即报告。
   欲报告，请在我们的 [Github issues](https://github.com/WeDot-Engine/WeDot/issues) 上填写此错误报告表。确保包含尽可能多的信息，以确保其他人可以轻松复现这些问题。
 
-  如果您乐意帮我们跟踪并标记错误，可在 [Discord](https://discord.com/invite/MRssAz6Pe3) 和 [QQ 群组](https://qm.qq.com/cgi-bin/qm/qr?authKey=G%2BR%2FKlLQBeH71b1Mhe4t2gM%2B8rLXndOEPhPtDgWgTudLUtGUgpMrNAWD87x%2F64ta&k=IPTGQ3zH_W8IAzaFrnLLGF2kplhv-EeM&noverify=0&group_code=670915303)联系加入 *Bug 跟踪队*。
+  如果您乐意帮我们跟踪并标记错误，可在 [Discord](https://discord.com/invite/MDDHEQNJaY) 和 [QQ 群组](https://qm.qq.com/cgi-bin/qm/qr?authKey=G%2BR%2FKlLQBeH71b1Mhe4t2gM%2B8rLXndOEPhPtDgWgTudLUtGUgpMrNAWD87x%2F64ta&k=IPTGQ3zH_W8IAzaFrnLLGF2kplhv-EeM&noverify=0&group_code=670915303)联系加入 *Bug 跟踪队*。
 - **测试开发版引擎**：
   相较于稳定版引擎，开发版引擎有更丰富的功能，但存在更多潜在的问题。
   您可以在开发版引擎上运行并测试您的项目的副本，并反馈任何问题。
