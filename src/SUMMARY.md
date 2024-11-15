@@ -1057,3 +1057,4 @@
   - [文档贡献](contributing/workflow/documentation_contribution.md)
   - [翻译贡献](contributing/workflow/translation_contribution.md)
   - [定位回归](contributing/workflow/bisecting_regressions.md)
+  - [Bug 分类](contributing/workflow/bug_triage_guidelines.md)

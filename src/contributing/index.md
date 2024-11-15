@@ -37,7 +37,7 @@ WeDot 是一个免费、开源的引擎。WeDot 引擎之下的所有项目都�
 
   要开始，请选择开放状态的的[合并请求](https://github.com/Wedot-Engine/WeDot/pulls)并参考[合并请求审核流程](workflow/pr_review_guidelines.md)检查完善合并请求。
 - **编写插件**：
-  我们并不提供社区插件的托管，但我们建立了 [WeDot 资产库](https://assets.wedot.top)。您可以在资产库上搜索其它开发者注册的素材、插件和作品。将您的插件上传到 [WeDot 资产库](https://assets.wedot.top)，以供其他人使用。
+  我们并不直接提供社区插件的托管，我们建立了 [WeDot 资产库](https://assets.wedot.top)。您可以在资产库上搜索其它开发者注册的素材、插件和作品。将您的插件注册到 [WeDot 资产库](https://assets.wedot.top)，以供其他人使用。
 - **奇思妙想**：
   您有一个炫酷的想法？快说来听听，说不定您的想法能带领引擎和社区走向新的巅峰。
 
