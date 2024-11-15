@@ -9,3 +9,4 @@ WeDot 引擎不是个小项目了。
 - [翻译贡献](translation_contribution.md)
 - [定位回归](bisecting_regressions.md)
 - [Bug 分类](bug_triage_guidelines.md)
+- [合并请求工作流](pr_workflow.md)
