@@ -1,221 +1,161 @@
-# Bug triage guidelines
+# Bug 分类
 
-This page describes the typical workflow of the bug triage team aka
-bugsquad when handling issues and pull requests on Godot's
-`GitHub repository <https://github.com/godotengine/godot>`__.
-It is bound to evolve together with the bugsquad, so do not
-hesitate to propose modifications to the following guidelines.
+本页面描述了 WeDot 引擎的 Bug 分类团队在处理 [GitHub 仓库](https://github.com/WeDot-Engine/WeDot)中的问题和拉取请求时的参考工作流程。
+欢迎各位提出对以下指南的修改建议。
 
-Issues management
------------------
+## 问题管理
 
-GitHub proposes various features to manage issues:
+我们通过以下操作标注和管理问题（issue）：
 
--  Set one or several labels from a predefined list
--  Set one milestone from a predefined list
--  Keep track of the issue in the project dashboard
--  Define one contributor as "assignee" among the Godot engine
-   organization members
+- 从列表中设置一个或多个标签
+- 从列表中设置一个里程碑
+- 在项目 dashboard 中跟踪问题
+- 定义一位贡献者作为“指派者”，从 WeDot 引擎组织成员中选择
 
-As the Godot engine organization on GitHub currently has a restricted
-number of contributors, we do not use assignees extensively for now. All
-contributors are welcome to take on any issue, if relevant after mentioning
-it on the issue ticket and/or discussing the best way to resolve it with
-other developers.
+目前 WeDot 引擎组织在 GitHub 上的贡献者人数有限，我们暂时没有自动指派审核和负责人。所有贡献者都可以接手任何问题，只需在决定接手后在问题工单上提及，并与其他开发人员讨论解决该问题的最佳方法。
 
-For the time being, we do not use the project dashboard feature either.
+目前我们不使用项目 dashboard 功能。
 
-As far as possible, we try to assign labels (and milestones, when relevant)
-to both issues and pull requests.
+我们希望尽可能地为问题和拉取请求分配标签和相关的里程碑。
 
-Labels
-~~~~~~
+### 标签
 
-The following `labels <https://github.com/godotengine/godot/labels>`__ are
-currently defined in the Godot repository:
+WeDot 仓库中当前定义了以下[标签](https://github.com/WeDot-Engine/WeDot/labels)：
 
-**Categories:**
+**类别**：
 
--  *Archived*: either a duplicate of another issue, or invalid. Such an
-   issue would also be closed.
--  *Breaks compat*: describes something that can only be fixed by breaking
-   compatibility with existing projects.
--  *Bug*: describes something that is not working properly.
--  *Cherrypick*: describes something that can be backported to a stable branch
-   after being merged in the ``master`` branch.
--  *Confirmed*: has been confirmed by at least one other contributor
-   than the bug reporter (typically for *Bug* reports).
-   The purpose of this label is to let developers know which issues are
-   still reproducible when they want to select what to work on. It is
-   therefore a good practice to add in a comment on what platform and
-   what version or commit of Godot the issue could be reproduced; if a
-   developer looks at the issue one year later, the *Confirmed* label
-   may not be relevant anymore.
--  *Crash:* describes a bug that causes the engine to crash.
-   This label is only used for "hard" crashes, not freezes.
--  *Discussion*: the issue is not consensual and needs further
-   discussion to define what exactly should be done to address the
-   topic.
--  *Documentation*: related to the documentation. PRs with this label improve the
-   class reference. Issues with this label are either for wrong documentation, or
-   are user-reported "bugs" that are actually limitations to be further documented.
-   Often paired with *Discussion*. Issues related to the ReadTheDocs documentation
-   should be filed on the `godot-docs <https://github.com/godotengine/godot-docs>`_ repository.
--  *Enhancement*: describes a proposed enhancement to an existing
-   functionality.
--  *Feature proposal*: describes a wish for a new feature to be
-   implemented. Note that the main Godot repository no longer accepts
-   feature requests. Please use
-   `godot-proposals <https://github.com/godotengine/godot-proposals>`__ instead.
-   PRs which add new features but do not have a corresponding proposal use this
-   label.
--  *For PR meeting*: the issue needs to be discussed in a pull request meeting.
-   These meetings are public and are held on the `Godot Contributors Chat <https://chat.godotengine.org/>`_.
--  *Good first issue*: the issue is *assumed* to be an easy one to fix, which makes
-   it a great fit for new contributors who want to become familiar with
-   the code base. It should be removed while an active PR is available, that
-   resolves this issue.
--  *High priority:* the issue is particularly important as it can
-   prevent people from releasing their projects or cause data loss.
--  *Needs testing*: the issue/pull request could not be completely tested
-   and thus need further testing. This can mean that it needs to be tested
-   on different hardware/software configurations or even that the steps to
-   reproduce are not certain.
--  *Needs work*: the pull request needs additional work before it can be merged.
-   Also for issues that are very incomplete, such as missing reproduction steps.
--  *Performance*: issues that directly impact engine or editor performance.
-   Can also be used for pull requests that improve performance or add low-end-friendly options.
-   Should not be coupled with *Usability*.
--  *Production*: Relates to the production team.
--  *Regression*: the bug appeared after a stable release not exhibiting
-   the bug was released.
--  *Salvageable*: the pull request can't be merged due to design issues or
-   merge conflicts and its author is not active anymore. However, it can still
-   be picked up by an external contributor to bring it to a mergeable state.
-   To do so, you need to open a new pull request based on the original pull request.
--  *Tracker*: issue used to track other issues (like all issues related to
-   the plugin system).
--  *Usability*: issues that directly impact user usability. Should not be coupled with *Performance*.
+- **【错误】bug**：
+  描述未正常工作的功能。
+- **【文档】documentation**：
+  与文档相关；带有此标签的合并请求改进了类引用文档；文档内容错误。
+  与 mdbook 文档相关的问题应在 [WeDot-docs](https://github.com/WeDot-Engine/WeDot-docs) 仓库中提交。
+- **【重复】duplicate**：
+  另一个问题的重复。这样的问题应该关闭。
+- **【新增】enhancement**：
+  希望实现的新功能或对现有功能的改进提议。
+  主 WeDot 仓库不再接受功能请求，请前往 [To-Do 仓库](https://github.com/WeDot-Engine/To-Do/issues)。
+  添加新功能但没有相应提议的合并请求应使用此标签。
+- **【首次】good first issue**：
+  假定这是一个容易解决的问题，非常适合新贡献者熟悉代码库。如果有正在处理的合并请求解决了这个问题，应移除此标签。
+- **【求助】help wanted**：
+  很可能是一个难以解决的问题，需要高优先级地额外关注。
+- **【无效】invalid**：
+  无效的问题。
+- **【提问】question**：
+  即使我们已经有用于讨论问题的社区，当有人在问题工单提问，我们也有义务解答。
+- **【忽略】wontfix**：
+  当我们不打算修复该问题时，应使用此标签。
 
-The categories are used for general triage of the issues. They can be
-combined in some way when relevant, e.g. an issue can be labelled
-*Enhancement* and *Usability* at the same time if it's an issue to improve
-usability. Or *Feature proposal* and *Discussion* if it's a non-consensual
-feature request, or one that is not precise enough to be worked on.
-At least one of the categories *Bug*, *Enhancement* or *Discussion* is used to
-describe an issue or pull request.
+这些类别用于问题工单的一般分类，在相关时可以组合使用。
+一个不明确的请求也至少用*【错误】bug*、*【新增】enhancement* 或*【提问】question* 中的一个类别来标记问题或合并请求。
 
-**Topics:**
+[**范围**](https://github.com/PJ-568/git-commit-regulation?tab=readme-ov-file#%E8%8C%83%E5%9B%B4)：
 
--  *2D*: relates to 2D-specific issues. Should be coupled with one of the labels below, and should not be coupled with *3D*.
--  *3D*: relates to 3D-specific issues. Should be coupled with one of the labels below, and should not be coupled with *2D*.
--  *Animation*: relates to the Animation system, editors and importers.
--  *Assetlib*: relates to issues with the asset library.
--  *Audio*: relates to the audio features (low and high level).
--  *Buildsystem*: relates to building issues, either linked to the SCons
-   buildsystem or to compiler peculiarities.
--  *Codestyle*: relates to the programming style used within the codebase.
--  *Core*: anything related to the core engine. Specific topics are split off separately as they crop up.
--  *Dotnet*: relates to the C# / Dotnet bindings.
--  *Editor*: relates to issues in the editor (mainly UI).
--  *Export*: relates to the export system and templates.
--  *GDExtension*: relates to the GDExtension system for native extensions.
--  *GDScript*: relates to GDScript.
--  *GUI*: relates to GUI (Control) nodes or to Nodes that compose user interfaces.
--  *Import*: relates to the resource import system.
--  *Input*: relates to the input system.
--  *Multiplayer*: relates to multiplayer (high-level networking) systems.
--  *Navigation*: relates to the navigation system (including A* and navmeshes).
--  *Network*: relates to (low-level) networking.
--  *Particles*: particles, particle systems and their editors.
--  *Physics*: relates to the physics engine (2D/3D).
--  *Plugin*: relates to problems encountered while writing plugins.
--  *Porting*: relates to some specific platforms or exporting projects.
--  *Rendering*: relates to the 2D and 3D rendering engines.
--  *Shaders*: relates to the Godot shader language or visual shaders.
--  *Tests*: relates to unit tests.
--  *Thirdparty*: relates to third-party libraries used in Godot.
--  *XR*: relates to Augmented Reality or Virtual Reality.
+- **2D**：
+  与 2D 特定问题相关。应与以下标签之一结合使用，且不应与 *3D* 结合使用。
+- **3D**：
+  与 3D 特定问题相关。应与以下标签之一结合使用，且不应与 *2D* 结合使用。
+- **动画**：
+  与动画系统、编辑器和导入器相关。
+- **资源库**：
+  与资源库中的问题相关。
+- **音频**：
+  与音频功能（低级和高级）相关。
+- **构建系统**：
+  与构建问题相关，无论是与 SCons 构建系统还是编译器特性相关。
+- **代码风格**：
+  与代码库中使用的编程风格相关。
+- **核心**：
+  与核心引擎相关。具体主题会单独列出。
+- **Dotnet**：
+  与 C# / Dotnet 绑定相关。
+- **编辑器**：
+  与编辑器中的问题（主要是 UI）相关。
+- **导出**：
+  与导出系统和模板相关。
+- **GDExtension**：
+  与原生扩展的 GDExtension 系统相关。
+- **GDScript**：
+  与 GDScript 相关。
+- **GUI**：
+  与 GUI（Control）节点或组成用户界面的节点相关。
+- **导入**
+  与资源导入系统相关。
+- **输入**
+  与输入系统相关。
+- **多人游戏**：
+  与多人游戏（高级网络）系统相关。
+- **导航**：
+  与导航系统（包括 A* 和导航网格）相关。
+- **网络**：
+  与（低级）网络相关。
+- **粒子**：
+  与粒子、粒子系统及其编辑器相关。
+- **物理**：
+  与物理引擎（2D/3D）相关。
+- **插件**：
+  与编写插件时遇到的问题相关。
+- **移植**：
+  与某些特定平台或导出项目相关。
+- **渲染**：
+  与 2D 和 3D 渲染引擎相关。
+- **着色器**：
+  与 WeDot 着色器语言或视觉着色器相关。
+- **测试**：
+  与单元测试相关。
+- **第三方**：
+  与 WeDot 中使用的第三方库相关。
+- **XR**：
+  与增强现实或虚拟现实相关。
 
-Issues would typically correspond to only one topic, though it's not
-unthinkable to see issues that fit two bills. The general idea is that
-there will be specialized contributors teams behind all topics, so they
-can focus on the issues labelled with their team's topic.
+问题通常对应于一个主题。默认情况下，每个主题背后都会有专门的贡献者团队，我们会通过主题标签优先通知相关的团队。
 
-**Platforms:**
+**平台**：
 
-*Android*, *iOS*, *Linux*, *macOS*, *Web*, *Windows*
+`Android`, `iOS`, `Linux`, `macOS`, `Web`, `Windows`
 
-By default, it is assumed that a given issue applies to all platforms.
-If one of the platform labels is used, it is then exclusive and the
-previous assumption doesn't stand anymore (so if it's a bug on e.g.
-Android and Linux exclusively, select those two platforms).
+默认情况下，问题在所有平台出现。如果使用了其中一个平台标签，则之前的假设不再成立（所以如果它是一个仅在 Android 和 Linux 上出现的 Bug，选择这两个平台）。
 
-Documentation labels
-~~~~~~~~~~~~~~~~~~~~
+### 文档标签和范围
 
-In the `documentation repository <https://github.com/godotengine/godot-docs>`__, we
-use the following `labels <https://github.com/godotengine/godot-docs/labels>`__:
+在[文档仓库](https://github.com/WeDot-Engine/WeDot-docs)中，我们使用以下[标签](https://github.com/WeDot-Engine/WeDot-docs/labels)：
 
--  *Archived*: either a duplicate of another issue, or invalid. Such an
-   issue would also be closed.
--  *Bug*: Incorrect information in an existing page. Not to be used for
-   *missing* information.
--  *Cherrypick*: describes something that can be backported to a stable branch
-   after being merged in the ``master`` branch.
--  *Dependencies*: describes pull requests that update a dependency file.
--  *Discussion*: the issue is not consensual and needs further
-   discussion to define what exactly should be done to address the
-   topic.
--  *Enhancement*: new information to be added in an existing page.
--  *Good first issue*: the issue is *assumed* to be an easy one to fix, which makes
-   it a great fit for new contributors who want to become familiar with
-   the code base. It should be removed while an active PR is available, that
-   resolves this issue.
--  *Needs work*: the pull request needs additional work before it can be merged.
--  *Python*: Pull requests that update Python code.
--  *Salvageable*: the pull request can't be merged due to design issues or
-   merge conflicts and its author is not active anymore. However, it can still
-   be picked up by an external contributor to bring it to a mergeable state.
-   To do so, you need to open a new pull request based on the original pull request.
--  *Tracker*: issue used to track other issues (like all issues related to
-   the plugin system).
+- **【错误】bug**：
+  现有页面中的错误信息或代码相关的错误。不用于“*缺失*”信息。
+- **【文档】documentation**：
+  与文档相关；带有此标签的合并请求改进了类引用文档；文档内容错误。
+- **【重复】duplicate**：
+  另一个问题的重复。这样的问题应该关闭。
+- **【新增】enhancement**：
+  在现有页面中添加的新信息或脚本从引起主仓库同步类参考相关文档。
+- **【首次】good first issue**：
+  假定这是一个容易解决的问题，非常适合新贡献者熟悉代码库。如果有正在处理的合并请求解决了这个问题，应移除此标签。
+- **【求助】help wanted**：
+  很可能是一个难以解决的问题，需要高优先级地额外关注。
+- **【无效】invalid**：
+  无效的问题。
+- **【提问】question**：
+  即使我们已经有用于讨论问题的社区，当有人在问题工单提问，我们也有义务解答。
+- **【忽略】wontfix**：
+  当我们不打算修复该问题时，应使用此标签。
 
-**Area:**
+[**范围**](https://github.com/PJ-568/git-commit-regulation?tab=readme-ov-file#%E8%8C%83%E5%9B%B4)：
 
--  *About*: Issues and PRs related to the About section of the documentation and other general articles.
--  *Class reference*: the issue is about the class reference, not a documentation page.
--  *Community*: Issues and PRs related to the Community section of the documentation.
--  *Contributing*: Issues and PRs related to the Contributing/Development section of the documentation.
--  *Getting started*: Issues and PRs related to the Getting Started section of the documentation.
--  *Manual*: Issues and PRs related to the Manual/Tutorials section of the documentation.
+- **关于**：
+  与文档的“关于”部分和其他文章相关的合并请求。
+- **类引用**：
+  问题与类引用相关，而不是文档页面。
+- **社区**：
+  与文档的社区部分相关的合并请求。
+- **贡献**：
+  与文档的贡献或开发部分相关的合并请求。
+- **入门**：
+  与文档的入门部分相关的合并请求。
+- **手册**：
+  与文档的手册或教程部分相关的合并请求。
 
-**Content:**
+### 里程碑
 
--  *Images*: Issues and PRs involving outdated or incorrect images in articles.
--  *New page*: Issues and PRs related to creation of new documentation pages for new or undocumented features.
--  *Organization*: Issues and PRs related to reorganizing the content.
--  *Proofreading*: Issues and PRs related to proofreading the documentation.
--  *Redirect*: Issues and PRs involving moving content and adding a redirect rule on the backend.
--  *Website*: Issues related to adding website features and fixing bugs, whether on the front or back-end,
+[里程碑](https://github.com/WeDot-Engine/WeDot/milestones) 对应于 WeDot 的计划未来版本，这些版本已有路线图。符合所述路线图的问题应归档在相应的里程碑下；如果它们不符合任何当前路线图，则应留空。一般来说，如果一个问题是新功能的一部分，或者是一个不能接受在任何未来稳定版本中的关键 Bug，那么它就对应于某个里程碑。
 
-**Topic:**
-
-The available topics describe the same content as the topics in the main
-repository.
-
-Milestones
-~~~~~~~~~~
-
-`Milestones <https://github.com/godotengine/godot/milestones>`_ correspond to
-planned future versions of Godot for which there is an existing roadmap. Issues
-that fit in the said roadmap should be filed under the corresponding milestone;
-if they don't correspond to any current roadmap, they should be left without
-milestone. As a rule of thumb, an issue corresponds to a given milestone if it
-concerns a feature that is new in the milestone, or a critical bug that can't be
-accepted in any future stable release, or anything that Juan wants to work on
-right now. :)
-
-Contributors are free to pick issues regardless of their assigned milestone;
-if a fix is proposed for a bug that was not deemed urgent and thus without
-milestone, it would likely still be very welcome.
+贡献者可以自由选择任何里程碑的问题；即使为一个未被视为重点关注对象且因此没有里程碑的 Bug 提出了修复方案，我们也很很欢迎。
