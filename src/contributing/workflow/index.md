@@ -10,3 +10,6 @@ WeDot 引擎不是个小项目了。
 - [定位回归](bisecting_regressions.md)
 - [Bug 分类](bug_triage_guidelines.md)
 - [合并请求工作流](pr_workflow.md)
+- [合并请求审核工作流](pr_review_guidelines.md)
+
+<!-- TODO：https://docs.godotengine.org/en/latest/contributing/workflow/index.html -->
