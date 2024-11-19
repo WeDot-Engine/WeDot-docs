@@ -1059,3 +1059,4 @@
   - [定位回归](contributing/workflow/bisecting_regressions.md)
   - [Bug 分类](contributing/workflow/bug_triage_guidelines.md)
   - [合并请求工作流](contributing/workflow/pr_workflow.md)
+  - [测试合并请求](contributing/workflow/testing_pull_requests.md)

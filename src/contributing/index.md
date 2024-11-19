@@ -15,6 +15,7 @@ WeDot 是一个免费、开源的引擎。WeDot 引擎之下的所有项目都�
 - **文档教程**：
   编写和维护详细的文档和教程，帮助新用户快速上手 WeDot，同时为高级用户提供进阶指导。
   详见[《编写文档》](documentation/index.md)。
+  <!-- TODO：documentation/index.md -->
 
 ## 技术支持
 
@@ -28,6 +29,7 @@ WeDot 是一个免费、开源的引擎。WeDot 引擎之下的所有项目都�
   您可以在开发版引擎上运行并测试您的项目的副本，并反馈任何问题。
 
   开发版引擎可以在[下载](https://WeDot.top/download)页面找到。
+  <!-- TODO：https://WeDot.top/download -->
 - **代码贡献**：
   引擎开发主要在我们的 [QQ 群组](https://qm.qq.com/cgi-bin/qm/qr?authKey=G%2BR%2FKlLQBeH71b1Mhe4t2gM%2B8rLXndOEPhPtDgWgTudLUtGUgpMrNAWD87x%2F64ta&k=IPTGQ3zH_W8IAzaFrnLLGF2kplhv-EeM&noverify=0&group_code=670915303)上协调，如果你提交合并请求，你应该加入我们！
 
@@ -38,6 +40,7 @@ WeDot 是一个免费、开源的引擎。WeDot 引擎之下的所有项目都�
   要开始，请选择开放状态的的[合并请求](https://github.com/Wedot-Engine/WeDot/pulls)并参考[合并请求审核流程](workflow/pr_review_guidelines.md)检查完善合并请求。
 - **编写插件**：
   我们并不直接提供社区插件的托管，我们建立了 [WeDot 资产库](https://assets.wedot.top)。您可以在资产库上搜索其它开发者注册的素材、插件和作品。将您的插件注册到 [WeDot 资产库](https://assets.wedot.top)，以供其他人使用。
+  <!-- TODO：https://assets.wedot.top -->
 - **奇思妙想**：
   您有一个炫酷的想法？快说来听听，说不定您的想法能带领引擎和社区走向新的巅峰。
 
