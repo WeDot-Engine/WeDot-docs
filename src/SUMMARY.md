@@ -1060,3 +1060,7 @@
   - [Bug 分类](contributing/workflow/bug_triage_guidelines.md)
   - [合并请求工作流](contributing/workflow/pr_workflow.md)
   - [测试合并请求](contributing/workflow/testing_pull_requests.md)
+- [编写文档](contributing/documentation/index.md)
+  - [为文档贡献](contributing/documentation/contributing_to_the_documentation.md)
+  - [更新类参考文档](contributing/documentation/updating_the_class_reference.md)
+  - [类参考入门](contributing/documentation/class_reference_primer.md)
