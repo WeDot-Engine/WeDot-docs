@@ -1,4 +1,4 @@
-# [WeDot 引擎](https://wedot.top)文档
+# [WeDot 引擎](https://wedot.pj568.sbs)文档
 
 > [Github](https://github.com/Wedot-Engine/WeDot-docs) | [Gitee](https://gitee.com/Wedot-Engine/WeDot-docs)
 
